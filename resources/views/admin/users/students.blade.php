@@ -109,12 +109,12 @@
                                                             <span class="user-email">{{ $studentObj->email }}</span>
                                                         </span>
                                                         </strong>
-                                                    </div> 
+                                                    </div>
                                                 </td>
                                                 <td data-th="Last Login">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         {{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}
-                                                    </div> 
+                                                    </div>
                                                 </td>
                                                 <td data-th="School">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
@@ -168,7 +168,7 @@
                                         @if($joining_requests->count() > 0)
                                             @foreach($joining_requests as $joiningRequestObj)
                                                 <tr>
-                                                    <td data-th="Teacher/Admin"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> 
+                                                    <td data-th="Teacher/Admin"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
                                                         <div class="check-box">
                                                             <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
                                                         </div>
@@ -481,7 +481,7 @@
                             </div>
                             <div class="import-heading">
                                 <h4>Spreadsheet Example:</h4>
-                                <a href="#" class="download-link"><img src="/assets/default/svgs/download.svg" alt="download"> Download Sample CSV File</a>
+                                <a href="{{url('/students-example-sheet.xlsx')}}" class="download-link"><img src="/assets/default/svgs/download.svg" alt="download"> Download Sample CSV File</a>
                             </div>
                             <div class="table-sm">
                                 <table>
@@ -618,7 +618,7 @@
         });
 
         $(document).on('submit', '.add-student-single', function (e) {
-            //rurera_loader($(".student-modal-box"), 'div');
+            rurera_loader($(".student-modal-box"), 'div');
             var formData = new FormData($('.add-student-single')[0]);
 
             $.ajax({
@@ -628,6 +628,7 @@
                 processData: false,
                 contentType: false,
                 success: function (return_data) {
+                    rurera_remove_loader($(".student-modal-box"), 'div');
                     $(".messages-layout-block").html(return_data);
                     $(".messages-layout-block").removeClass('rurera-hide');
                     $(".add-student-single-block").addClass('rurera-hide');
@@ -638,7 +639,7 @@
         });
 
         $(document).on('submit', '.import-students-list', function (e) {
-            //rurera_loader($(".student-modal-box"), 'div');
+            rurera_loader($(".student-modal-box"), 'div');
             var formData = new FormData($('.import-students-list')[0]);
             $.ajax({
                 type: "POST",
@@ -647,6 +648,7 @@
                 processData: false,
                 contentType: false,
                 success: function (return_data) {
+                    rurera_remove_loader($(".student-modal-box"), 'div');
                     $(".messages-layout-block").html(return_data);
                     $(".messages-layout-block").removeClass('rurera-hide');
                     $(".import-students-list-block").addClass('rurera-hide');
@@ -658,7 +660,7 @@
         });
 
         $(document).on('submit', '.import-students-file', function (e) {
-            //rurera_loader($(".student-modal-box"), 'div');
+            rurera_loader($(".student-modal-box"), 'div');
             var formData = new FormData($('.import-students-file')[0]);
             $.ajax({
                 type: "POST",
@@ -667,6 +669,7 @@
                 processData: false,
                 contentType: false,
                 success: function (return_data) {
+                    rurera_remove_loader($(".student-modal-box"), 'div');
                     $(".messages-layout-block").html(return_data);
                     $(".messages-layout-block").removeClass('rurera-hide');
                     $(".import-students-file-block").addClass('rurera-hide');
