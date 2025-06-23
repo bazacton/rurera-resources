@@ -186,49 +186,60 @@
 
                                     @foreach($quizzes as $quiz)
                                     <tr>
-                                        <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <span>{{ $quiz->title }}</span>
-                                            @if(!empty($quiz->webinar))
-                                            <small class="d-block text-left text-primary">{{ $quiz->webinar->title
-                                                }}</small>
-                                            @endif
+                                        <td>
+                                            
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <span>{{ $quiz->title }}</span>
+                                                @if(!empty($quiz->webinar))
+                                                <small class="d-block text-left text-primary">{{ $quiz->webinar->title
+                                                    }}</small>
+                                                @endif
+                                            </div>
                                         </td>
 
-                                        <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->creator->get_full_name() }}</td>
-
-                                        <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
-                                            {{ $quiz->quizQuestionsList->count() }}
+                                        <td class="text-left">
+                                            
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->creator->get_full_name() }}</div>
                                         </td>
 
-                                        <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
-                                            @if($quiz->status === \App\Models\Quiz::ACTIVE)
-                                            <span class="text-success">{{ trans('admin/main.active') }}</span>
-                                            @else
-                                            <span class="text-warning">{{ trans('admin/main.inactive') }}</span>
-                                            @endif
+                                        <td class="text-center">
+                                            
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->quizQuestionsList->count() }}</div>
                                         </td>
 
-                                        <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            @can('admin_quizzes_results')
-                                            <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
-                                            class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
-                                            title="{{ trans('admin/main.quiz_results') }}">
-                                                <i class="fa fa-poll fa-1x"></i>
-                                            </a>
-                                            @endcan
+                                        <td class="text-center">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                @if($quiz->status === \App\Models\Quiz::ACTIVE)
+                                                <span class="text-success">{{ trans('admin/main.active') }}</span>
+                                                @else
+                                                <span class="text-warning">{{ trans('admin/main.inactive') }}</span>
+                                                @endif
+                                            </div>
+                                        </td>
 
-                                            @can('admin_assignments_edit')
-                                            <a href="{{ getAdminPanelUrl() }}/custom_quiz/{{ $quiz->id }}/edit"
-                                            class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
-                                            data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            @endcan
+                                        <td>
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                @can('admin_quizzes_results')
+                                                <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
+                                                class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
+                                                title="{{ trans('admin/main.quiz_results') }}">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                @endcan
 
-                                            @can('admin_assignments_delete')
-                                            @include('admin.includes.delete_button',['url' =>
-                                            getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
-                                            @endcan
+                                                @can('admin_assignments_edit')
+                                                <a href="{{ getAdminPanelUrl() }}/custom_quiz/{{ $quiz->id }}/edit"
+                                                class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
+                                                data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                @endcan
+
+                                                @can('admin_assignments_delete')
+                                                @include('admin.includes.delete_button',['url' =>
+                                                getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
+                                                @endcan
+                                            </div>
                                         </td>
                                     </tr>
                                     @endforeach
