@@ -619,7 +619,7 @@
             @can('admin_classes')
                 <li class="nav-item {{ (request()->is('admin/classes')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/classes') }}" class="nav-link">
-                        <img src="/assets/default/svgs/Classes.svg" alt="Classes">
+                        <img src="/assets/default/img/sidebar/classes-color.svg" alt="Classes">
                         <span>Classes</span>
                     </a>
                 </li>
@@ -628,7 +628,7 @@
 
                         <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
                             <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
-                                <img src="/assets/default/svgs/school-2.svg" alt="school-2">
+                                <img src="/assets/default/img/sidebar/school-color.svg" alt="school-2">
                                 <span>Schools</span>
                             </a>
                         </li>
@@ -636,7 +636,7 @@
                     @can('admin_users_list')
                     <li class="nav-item {{ (request()->is('admin/students')) ? 'active' : '' }}">
                         <a href="{{ getAdminPanelUrl('/students') }}" class="nav-link">
-                            <i class="fas fa-chalkboard-teacher"></i>
+                            <img src="/assets/default/img/sidebar/school-color.svg" alt="student-color">
                             <span>Students</span>
                         </a>
                     </li>
@@ -646,7 +646,7 @@
             @can('admin_teachers_list')
                 <li class="nav-item {{ (request()->is('admin/teachers')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/teachers') }}" class="nav-link">
-                        <i class="fas fa-users"></i>
+                        <img src="/assets/default/img/sidebar/teachers-color.svg" alt="teacher-color">
                         <span>Teachers</span>
                     </a>
                 </li>
