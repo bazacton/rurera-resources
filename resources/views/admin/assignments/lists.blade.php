@@ -396,18 +396,10 @@
                                     <th class="text-center">Tables</th>
                                     <th class="text-center">Total Questions</th>
                                     <th class="text-left">Start Date</th>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
-                                    </th>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Recurring</div>
-                                    </th>
-                                    <th class="text-center">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</div>
-                                    </th>
-                                    <th>
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</div>
-                                    </th>
+                                    <th class="text-left">End Date</th>
+                                    <th class="text-left">Recurring</th>
+                                    <th class="text-center">{{ trans('admin/main.status') }}</th>
+                                    <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
                                 @foreach($assignments as $assignmentObj)
