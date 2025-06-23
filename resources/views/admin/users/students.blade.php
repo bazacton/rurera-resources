@@ -49,18 +49,16 @@
                                 </div>
                             </div>
                             <div class="card-header">
-                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                    <div class="bulk-actions">
-                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                                </a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                    <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                </div>
+                                <div class="bulk-actions">
+                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                    <div class="dropdown-box">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                             </div>
                                         </div>
                                     </div>
@@ -79,20 +77,20 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
-                                </div>
+                                <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
                             </div>
                             <div class="card-body p-0 table-sm">
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                        <th>
                                             <div class="check-box">
                                                 <input type="checkbox" class="check-uncheck-all" data-target_class="sections-users" name="check-two">
-                                            </div> Student</div></th>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</div></th>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">School</div></th>
+                                            </div> 
+                                            Student
+                                        </th>
+                                        <th>Last Login</th>
+                                        <th>School</th>
                                     </tr>
                                     </thead>
                                     <tbody class="students-list">
