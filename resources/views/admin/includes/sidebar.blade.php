@@ -303,7 +303,7 @@
 
                 <li class="nav-item {{ (request()->is('admin/assignments')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/assignments') }}" class="nav-link">
-                        <img src="/assets/default/svgs/assignments.svg" alt="">
+                        <img src="/assets/default/img/sidebar/assignment.jpg" alt="">
                         <span>Assignments</span>
                     </a>
                 </li>
