@@ -1,8 +1,3 @@
-<style>
-    .rurera-hide{
-        display:none !important;
-    }
-</style>
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand mt-10">
