@@ -646,7 +646,7 @@
             @can('admin_teachers_list')
                 <li class="nav-item {{ (request()->is('admin/teachers')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/teachers') }}" class="nav-link">
-                        <img src="/assets/default/img/sidebar/School.jpg" alt="School">
+                        <i class="fas fa-users"></i>
                         <span>Teachers</span>
                     </a>
                 </li>
