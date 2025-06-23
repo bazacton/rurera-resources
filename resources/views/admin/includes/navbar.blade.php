@@ -72,11 +72,11 @@
                     <img src="/assets/default/svgs/report-menu.svg" alt="report-menu"> Track
                 </a>
                 <a href="{{ getAdminPanelUrl() }}/custom_page/tailer_hub" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> Tailor Hub
+                    <img src="/assets/default/svgs/customize-menu.svg" alt="customize-menu"> Tailor Hub
                 </a>
 
                 <a href="{{ getAdminPanelUrl() }}/users/{{ $authUser->id }}/edit" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> Account
+                    <img src="/assets/default/svgs/account-menu.svg" alt="account-menu"> Account
                 </a>
 
                 <div class="dropdown-divider"></div>
