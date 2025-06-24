@@ -158,11 +158,9 @@
                                     <table class="table mb-0">
                                         <thead class="thead-light">
                                         <tr>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
-                                                 Student
-                                            </th>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Last Login</th>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Action</th>
+                                            <th>Student</th>
+                                            <th>Last Login</th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="students-list">
