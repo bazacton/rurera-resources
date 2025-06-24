@@ -174,10 +174,10 @@
                     <div class="elements-holder bg-white panel-border rounded-sm p-15 mb-30">
                         <div class="questions-header">
                             <div class="questions-header-inner">
-                                <div class="text-holder skelton-hide">
+                                <div class="text-holder skelton-hide skelton-height-lg">
                                     <h5 class="font-16 font-weight-bold"><span contenteditable="true">Exploring Magnetic Matrials and Their Uses</span><small>(18 questions)</small></h5>
                                 </div>
-                                <div class="questions-header-controls skelton-hide">
+                                <div class="questions-header-controls skelton-hide skelton-height-lg">
                                     <button type="button"><i class="fas fa-plus"></i> Add All</button>
                                 </div>
                             </div>
@@ -190,11 +190,11 @@
                         <div class="class-controls">
                             <div class="left-area d-inline-flex align-items-center">
                                 <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy &amp; edit</button>
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
-                                    <div class="dropdown-box skelton-hide">
+                                    <button class="skelton-hide skelton-height-lg" type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy &amp; edit</button>
+                                    <button class="skelton-hide skelton-height-lg" type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
+                                    <button class="skelton-hide skelton-height-lg" type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
+                                    <button class="skelton-hide skelton-height-lg" type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
+                                    <div class="dropdown-box skelton-hide skelton-height-lg">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
@@ -209,17 +209,17 @@
                                 </div>
                             </div>
                             <div class="right-area w-auto">
-                                <button type="button" class="assignment-btn skelton-hide"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
-                                <button type="button" class="perview-btn skelton-hide" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
+                                <button type="button" class="assignment-btn skelton-hide skelton-height-lg"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
+                                <button type="button" class="perview-btn skelton-hide skelton-height-lg" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
                             </div>
                         </div>
                     </div>
                     <div class="q-ai-nav-controls">
-                        <a href="#home" class="active skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt="add-question"> Add Question</a>
-                        <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt="add-question"> Add question from Collection</a>
-                        <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt="ai"> Generate quiz using AI</a>
-                        <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt="import-worksheet"> Import Worksheets</a>
-                        <a href="javascript:;" class="assignment-save-button skelton-hide">Create Assignment</a>
+                        <a href="#home" class="active skelton-hide skelton-height-lg" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt="add-question"> Add Question</a>
+                        <a href="#q-collections" class="skelton-hide skelton-height-lg" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt="add-question"> Add question from Collection</a>
+                        <a href="#generate-ai" class="skelton-hide skelton-height-lg" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt="ai"> Generate quiz using AI</a>
+                        <a href="#import-q" class="skelton-hide skelton-height-lg" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt="import-worksheet"> Import Worksheets</a>
+                        <a href="javascript:;" class="assignment-save-button skelton-hide skelton-height-lg">Create Assignment</a>
                     </div>
                     <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
                         <h6 class="search-lable">Search question from library</h6>
@@ -262,18 +262,18 @@
                         </div>
                     </div>
                     <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
-                        <div class="bulk-heading skelton-hide">
+                        <div class="bulk-heading skelton-hide skelton-height-lg">
                             <h6>Bulk Settings</h6>
                         </div>
                         <div class="bulk-ai">
-                            <div class="bulk-ai-box skelton-hide">
+                            <div class="bulk-ai-box skelton-hide skelton-height-lg">
                                 <span class="bulk-lable">Rendomize</span>
                                 <div class="btn-field">
                                     <a href="#">Question order</a>
                                     <a href="#">Options order</a>
                                 </div>
                             </div>
-                            <div class="bulk-ai-box skelton-hide">
+                            <div class="bulk-ai-box skelton-hide skelton-height-lg">
                                 <span class="bulk-lable">Estimation time</span>
                                 <div class="select-field">
                                     <select>
@@ -285,7 +285,7 @@
                                     <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
                                 </div>
                             </div>
-                            <div class="bulk-ai-box skelton-hide">
+                            <div class="bulk-ai-box skelton-hide skelton-height-lg">
                                 <span class="bulk-lable">Mark as point</span>
                                 <div class="select-field">
                                     <select>
@@ -297,13 +297,13 @@
                                     <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
                                 </div>
                             </div>
-                            <div class="bulk-ai-box skelton-hide">
+                            <div class="bulk-ai-box skelton-hide skelton-height-lg">
                                 <span class="bulk-lable">Questions Order</span>
                                 <div class="btn-field">
                                     <a href="#" class="delete-btn" data-toggle="modal" data-target="#dragModal">Rearrange</a>
                                 </div>
                             </div>
-                            <div class="bulk-ai-box skelton-hide">
+                            <div class="bulk-ai-box skelton-hide skelton-height-lg">
                                 <span class="bulk-lable">Bulk Delete</span>
                                 <div class="btn-field">
                                     <a href="#" class="delete-btn">Delete All Questions</a>
@@ -315,17 +315,17 @@
                         <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <h6 class="search-lable skelton-hide">Enhance this quiz using AI</h6>
+                        <h6 class="search-lable skelton-hide skelton-height-lg">Enhance this quiz using AI</h6>
                         <ul>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
-                            <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add answer's explanation</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add answer's explanation</a></li>
+                            <li class="skelton-hide skelton-height-lg"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
                         </ul>
                     </div>
                     <div class="quiz-setup-listings">
