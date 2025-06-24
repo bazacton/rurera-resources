@@ -4213,6 +4213,14 @@ Qustions AI Tabs Style End
     height: 15px;
     width: 15px;
 }
+.requests-count {
+    display: block;
+    line-height: normal;
+    padding: 15px 15px;
+    color: #34395e;
+    font-weight: 600;
+    border-top: 1px solid #ddd;
+}
 .pending-invites-controls button {
     background-color: #fff;
     border: 1px solid #007bff;
