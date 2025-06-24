@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="search-filters mb-0">
-                            <div class="select-field skelton-hide">
+                            <div class="select-field skelton-hide skelton-height-lg">
                                 <span>By:</span>
                                 <select>
                                     <option value="All providers">All providers</option>
@@ -75,7 +75,7 @@
                                     <option value="All providers">All providers</option>
                                 </select>
                             </div>
-                            <div class="select-field skelton-hide">
+                            <div class="select-field skelton-hide skelton-height-lg">
                                 <span>Capability:</span>
                                 <select>
                                     <option value="All providers">Embeddings</option>
@@ -83,7 +83,7 @@
                                     <option value="All providers">Embeddings</option>
                                 </select>
                             </div>
-                            <div class="select-field skelton-hide">
+                            <div class="select-field skelton-hide skelton-height-lg">
                                 <span>Tag:</span>
                                 <select>
                                     <option value="All">All</option>
@@ -112,180 +112,180 @@
                                 <div class="featured-list-sidebar-inner">
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm active">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="go-jetters-hero-academy-cc-v2">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">Sciency Science</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">Sciency Science</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
-                                                        <span class="skelton-hide">Kaiser K</span>
-                                                        <span class="skelton-hide">2 hours ago</span>
+                                                        <span class="skelton-hide skelton-height-lg">Kaiser K</span>
+                                                        <span class="skelton-hide skelton-height-lg">2 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                             </ul>
                                         </a>
                                     </div>
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">Maths Magic Adventure</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">Maths Magic Adventure</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
-                                                        <span class="skelton-hide">Jane D</span>
-                                                        <span class="skelton-hide">5 hours ago</span>
+                                                        <span class="skelton-hide skelton-height-lg">Jane D</span>
+                                                        <span class="skelton-hide skelton-height-lg">5 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
-                                            </ul>
-                                        </a>
-                                    </div>
-
-                                    <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
-                                                <figure>
-                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="text-holder">
-                                                <h3 class="skelton-hide">Grammar Genius Challenge</h3>
-                                                <div class="author-info">
-                                                    <span class="info-text">
-                                                        <span class="skelton-hide">Mark T</span>
-                                                        <span class="skelton-hide">1 day ago</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 15 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 4th-6th Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> English</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
                                             </ul>
                                         </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">History Trivia Quest</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">Grammar Genius Challenge</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
-                                                        <span class="skelton-hide">Lucy W</span>
-                                                        <span class="skelton-hide">2 days ago</span>
+                                                        <span class="skelton-hide skelton-height-lg">Mark T</span>
+                                                        <span class="skelton-hide skelton-height-lg">1 day ago</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 15 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 4th-6th Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> English</li>
                                             </ul>
                                         </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">Artistic Impressions Puzzle</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">History Trivia Quest</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
-                                                        <span class="skelton-hide">Sara L</span>
-                                                        <span class="skelton-hide">3 days ago</span>
+                                                        <span class="skelton-hide skelton-height-lg">Lucy W</span>
+                                                        <span class="skelton-hide skelton-height-lg">2 days ago</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
                                             </ul>
                                         </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">Science Exploration Mission</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">Artistic Impressions Puzzle</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
-                                                        <span class="skelton-hide">Alex P</span>
-                                                        <span class="skelton-hide">5 hours ago</span>
+                                                        <span class="skelton-hide skelton-height-lg">Sara L</span>
+                                                        <span class="skelton-hide skelton-height-lg">3 days ago</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
                                             </ul>
                                         </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">Geography World Challenges</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">Science Exploration Mission</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
-                                                        <span class="skelton-hide">Chris B</span>
-                                                        <span class="skelton-hide">4 hours ago</span>
+                                                        <span class="skelton-hide skelton-height-lg">Alex P</span>
+                                                        <span class="skelton-hide skelton-height-lg">5 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
-                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Geography</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                             </ul>
                                         </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder skelton-hide">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3 class="skelton-hide">Robotics Mind Challenges</h3>
+                                                <h3 class="skelton-hide skelton-height-lg">Geography World Challenges</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span class="skelton-hide skelton-height-lg">Chris B</span>
+                                                        <span class="skelton-hide skelton-height-lg">4 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
+                                                <li class="skelton-hide skelton-height-lg"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Geography</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+
+                                    <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder skelton-hide skelton-height-lg">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide skelton-height-lg">Robotics Mind Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
                                                         <span class="skelton-hide">David H</span>
