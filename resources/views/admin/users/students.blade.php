@@ -49,16 +49,18 @@
                                 </div>
                             </div>
                             <div class="card-header">
-                                <div class="bulk-actions">
-                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <div class="bulk-actions">
+                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                    <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -77,20 +79,20 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
+                                </div>
                             </div>
                             <div class="card-body p-0 table-sm">
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th>
+                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <div class="check-box">
                                                 <input type="checkbox" class="check-uncheck-all" data-target_class="sections-users" name="check-two">
-                                            </div> 
-                                            Student
-                                        </th>
-                                        <th>Last Login</th>
-                                        <th>School</th>
+                                            </div> Student</div></th>
+                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</div></th>
+                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">School</div></th>
                                     </tr>
                                     </thead>
                                     <tbody class="students-list">
@@ -158,9 +160,11 @@
                                     <table class="table mb-0">
                                         <thead class="thead-light">
                                         <tr>
-                                            <th>Student</th>
-                                            <th>Last Login</th>
-                                            <th>Action</th>
+                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                                 Student
+                                            </th>
+                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Last Login</th>
+                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="students-list">
@@ -168,33 +172,25 @@
                                         @if($joining_requests->count() > 0)
                                             @foreach($joining_requests as $joiningRequestObj)
                                                 <tr>
-                                                    <td data-th="Teacher/Admin">
-                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                            <div class="check-box">
-                                                                <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
-                                                            </div>
-                                                            <strong>
-                                                                <span class="user-lable">
-                                                                    {{ $joiningRequestObj->student->get_full_name() }}
-                                                                    <span class="user-email">{{ isset( $joiningRequestObj->section->sectionClass->title)? $joiningRequestObj->section->sectionClass->title : '' }}</span>
-                                                                </span>
-                                                            </strong>
+                                                    <td data-th="Teacher/Admin"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                                        <div class="check-box">
+                                                            <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
                                                         </div>
+                                                        <strong>
+                                                    <span class="user-lable">
+                                                        {{ $joiningRequestObj->student->get_full_name() }}
+                                                        <span class="user-email">{{ isset( $joiningRequestObj->section->sectionClass->title)? $joiningRequestObj->section->sectionClass->title : '' }}</span>
+                                                    </span>
+                                                        </strong>
                                                     </td>
-                                                    <td data-th="Last Login">
-                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                            {{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}
-                                                        </div>
-                                                    </td>
+                                                    <td data-th="Last Login"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> {{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</td>
                                                     <td>
-                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
-                                                                <i class="fa fa-check"></i>
-                                                            </a>
-                                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
-                                                                <i class="fa fa-times"></i>
-                                                            </a>
-                                                        </div>
+                                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             @endforeach
@@ -202,7 +198,7 @@
 
                                         </tbody>
                                     </table>
-                                    <span class="requests-count">{{$joining_requests->count()}} Requests</span>
+                                    {{$joining_requests->count()}} Requests
                                 </div>
                             </div>
                         </div>
@@ -636,7 +632,7 @@
                 },
                 data: {'action_type':action_type,'request_id':request_id},
                 success: function (return_data) {
-                    window.location.href = '/admin/sections/joining-requests';
+                    window.location.href = '/admin/students#joining-tab-students';
                 }
             });
 
@@ -797,6 +793,12 @@
         $('.modal-section').removeClass('active');
         $('#modalNav').addClass('active');
         sectionHistory = [];
+    });
+    $(document).ready(function() {
+        var hash = window.location.hash;
+        if (hash) {
+            $(hash + '.nav-link').trigger('click');
+        }
     });
 </script>
 @endpush
