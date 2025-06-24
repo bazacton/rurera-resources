@@ -208,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-12 col-lg-12 col-md-12">
+                    <div class="col-12 col-lg-12 col-md-12 rurera-hide">
                         <div class="preferences panel-border bg-white rounded-sm p-20">
                             <h5 class="font-19 font-weight-bold">Preferences</h5>
                             <h6 class="font-weight-500 mb-20">Lesson experience</h6>
@@ -277,7 +277,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     </div>
                     <div class="timestables-mode-block">
