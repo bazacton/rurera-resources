@@ -145,27 +145,13 @@
                         <table class="table mb-0">
                             <thead class="thead-light">
                                 <tr>
-                                    <th>
-                                    Type
-                                    </th>
-                                    <th>
-                                    Questions
-                                    </th>
-                                    <th>
-                                    Participations
-                                    </th>
-                                    <th>
-                                    Start & End Date
-                                    </th>
-                                    <th>
-                                    Accuracy
-                                    </th>
-                                    <th>
-                                    Status
-                                    </th>
-                                    <th>
-                                    Actions
-                                    </th>
+                                    <th>Type</th>
+                                    <th>Questions</th>
+                                    <th>Participations</th>
+                                    <th>Start & End Date</th>
+                                    <th>Accuracy</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
