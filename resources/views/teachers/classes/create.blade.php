@@ -303,7 +303,7 @@
 
                                                     </tbody>
                                                 </table>
-                                                {{$class->students->where('status','active')->count()}} Students
+                                                <span class="table-counts">{{$class->students->where('status','active')->count()}} Students</span>
                                             </div>
                                         </div>
                                     </div>
@@ -408,7 +408,7 @@
 
                                                         </tbody>
                                                     </table>
-                                                    {{$class->students->where('status','active')->count()}} Students
+                                                    <span class="table-counts">{{$class->students->where('status','active')->count()}} Students</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -757,7 +757,7 @@
 
                                                     </tbody>
                                                 </table>
-                                                {{$class->teachers->where('status','active')->count()}} Teachers
+                                                <span class="table-counts">{{$class->teachers->where('status','active')->count()}} Teachers</span>
                                             </div>
                                         </div>
                                     </div>
@@ -886,7 +886,7 @@
 
                                                         </tbody>
                                                     </table>
-                                                    {{$class->teachers->where('status','active')->count()}} Teachers
+                                                    <span class="table-counts">{{$class->teachers->where('status','active')->count()}} Teachers</span>
                                                 </div>
                                             </div>
                                         </div>
