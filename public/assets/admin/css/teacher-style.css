@@ -4892,6 +4892,9 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 .messages-layout-block br {
     display: none;
 }
+.messages-layout-block h3 {
+    font-weight: 600;
+}
 /* Student-Successfull-Modal Style End */
 
 /* Import CSV Modal Style Start */
