@@ -449,7 +449,7 @@
 
                         </form>
                     </div>
-                    <div class="messages-layout-block rurera-hide"></div>
+                    <div class="messages-layout-block rurera-hide mt-30"></div>
                     <div id="section2" class="modal-section import-students-list-block">
                         <form action="javascript:;" method="POST" class="mb-0 import-students-list">
                             {{ csrf_field() }}
