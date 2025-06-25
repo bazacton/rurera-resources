@@ -232,9 +232,9 @@
                                         <div class="card">
                                             <div class="teacher-search-filter">
                                                 <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
+                                                    <span class="icon-box">
+                                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                                    </span>
                                                     <input type="text" class="search-students" placeholder="Search Students">
                                                 </div>
                                             </div>
@@ -260,12 +260,13 @@
                                                 <table class="table mb-0">
                                                     <thead class="thead-light">
                                                     <tr>
-                                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                <div class="check-box">
-                                                                    <input type="checkbox" class="check-uncheck-all" data-target_class="sections-students" name="check-two">
-                                                                </div> Student</div></th>
-                                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</div></th>
-                                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">School</div></th>
+                                                        <th>
+                                                            <div class="check-box">
+                                                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-students" name="check-two">
+                                                            </div> Student
+                                                        </th>
+                                                        <th>Last Login</th>
+                                                        <th>School</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody class="students-list">
@@ -327,9 +328,9 @@
                                                 <div class="teacher-search-filter">
 
                                                     <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
+                                                        <span class="icon-box">
+                                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                                        </span>
                                                         <input type="text" class="search-students" placeholder="Search Students">
                                                     </div>
                                                 </div>
@@ -368,9 +369,9 @@
                                                     <table class="table mb-0">
                                                         <thead class="thead-light">
                                                         <tr>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Student</th>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</th>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">School</th>
+                                                            <th>Student</th>
+                                                            <th>Last Login</th>
+                                                            <th>School</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody class="students-list">
@@ -378,19 +379,29 @@
                                                         @if($class->students->where('status','active')->count() > 0)
                                                             @foreach($class->students->where('status','active') as $studentObj)
                                                                 <tr>
-                                                                    <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        <div class="check-box">
-                                                                            <input type="checkbox" class="sections-users" value="{{ $studentObj->id }}">
+                                                                    <td data-th="Teacher/Admin">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            <div class="check-box">
+                                                                                <input type="checkbox" class="sections-users" value="{{ $studentObj->id }}">
+                                                                            </div>
+                                                                            <strong>
+                                                                                <span class="user-lable">
+                                                                                    {{ $studentObj->get_full_name() }}
+                                                                                    <span class="user-email">{{ $studentObj->email }}</span>
+                                                                                </span>
+                                                                            </strong>
                                                                         </div>
-                                                                        <strong>
-                                                    <span class="user-lable">
-                                                        {{ $studentObj->get_full_name() }}
-                                                        <span class="user-email">{{ $studentObj->email }}</span>
-                                                    </span>
-                                                                        </strong>
                                                                     </td>
-                                                                    <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</td>
-                                                                    <td data-th="School" class="skelton-hide skelton-height-lg skelton-mb-0">{{$studentObj->userSchool->title}}</td>
+                                                                    <td data-th="Last Login">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            {{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}
+                                                                        </div>
+                                                                    </td>
+                                                                    <td data-th="School">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            {{$studentObj->userSchool->title}}
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                             @endforeach
                                                         @endif
@@ -652,9 +663,9 @@
                                             <div class="teacher-search-filter">
 
                                                 <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
+                                                    <span class="icon-box">
+                                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                                    </span>
                                                     <input type="text" class="search-teachers" placeholder="Search Teachers">
                                                 </div>
                                             </div>
@@ -715,15 +726,14 @@
                                                                             <input type="checkbox" class="sections-teachers" value="{{ $teacherObj->user->id }}">
                                                                         </div>
                                                                         <strong>
-                                                        <span class="user-lable">
-                                                            <a href="javascript:;" class="edit-teacher-btn" data-id="{{$teacherObj->user->id}}">{{ $teacherObj->user->get_full_name() }}</a>
-                                                            <span class="user-email">{{ $teacherObj->user->email }}</span>
-                                                        </span>
+                                                                            <span class="user-lable">
+                                                                                <a href="javascript:;" class="edit-teacher-btn" data-id="{{$teacherObj->user->id}}">{{ $teacherObj->user->get_full_name() }}</a>
+                                                                                <span class="user-email">{{ $teacherObj->user->email }}</span>
+                                                                            </span>
                                                                         </strong>
                                                                     </div>
                                                                 </td>
                                                                 <td data-th="Role">
-
                                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->user->role->caption)? $teacherObj->user->role->caption : '-'}}</div>
                                                                 </td>
                                                                 <td data-th="Last Login">
@@ -733,11 +743,9 @@
                                                                     </div>
                                                                 </td>
                                                                 <td data-th="Classes">
-
                                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$teacherObj->user->getTeacherClasses->count()}}</div>
                                                                 </td>
                                                                 <td data-th="School">
-
                                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}</div>
                                                                 </td>
 
