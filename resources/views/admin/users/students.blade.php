@@ -87,12 +87,13 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                        <th>
                                             <div class="check-box">
                                                 <input type="checkbox" class="check-uncheck-all" data-target_class="sections-users" name="check-two">
-                                            </div> Student</div></th>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</div></th>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">School</div></th>
+                                            </div> Student
+                                        </th>
+                                        <th>Last Login</th>
+                                        <th>School</th>
                                     </tr>
                                     </thead>
                                     <tbody class="students-list">
@@ -160,11 +161,11 @@
                                     <table class="table mb-0">
                                         <thead class="thead-light">
                                         <tr>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                            <th>
                                                  Student
                                             </th>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Last Login</th>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Action</th>
+                                            <th>Last Login</th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="students-list">
@@ -172,25 +173,33 @@
                                         @if($joining_requests->count() > 0)
                                             @foreach($joining_requests as $joiningRequestObj)
                                                 <tr>
-                                                    <td data-th="Teacher/Admin"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
-                                                        <div class="check-box">
-                                                            <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
+                                                    <td data-th="Teacher/Admin">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <div class="check-box">
+                                                                <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
+                                                            </div>
+                                                            <strong>
+                                                                <span class="user-lable">
+                                                                    {{ $joiningRequestObj->student->get_full_name() }}
+                                                                    <span class="user-email">{{ isset( $joiningRequestObj->section->sectionClass->title)? $joiningRequestObj->section->sectionClass->title : '' }}</span>
+                                                                </span>
+                                                            </strong>
                                                         </div>
-                                                        <strong>
-                                                    <span class="user-lable">
-                                                        {{ $joiningRequestObj->student->get_full_name() }}
-                                                        <span class="user-email">{{ isset( $joiningRequestObj->section->sectionClass->title)? $joiningRequestObj->section->sectionClass->title : '' }}</span>
-                                                    </span>
-                                                        </strong>
                                                     </td>
-                                                    <td data-th="Last Login"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> {{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</td>
+                                                    <td data-th="Last Login">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            {{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}
+                                                        </div> 
+                                                    </td>
                                                     <td>
-                                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
-                                                            <i class="fa fa-check"></i>
-                                                        </a>
-                                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
-                                                            <i class="fa fa-times"></i>
-                                                        </a>
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
+                                                                <i class="fa fa-times"></i>
+                                                            </a>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             @endforeach
