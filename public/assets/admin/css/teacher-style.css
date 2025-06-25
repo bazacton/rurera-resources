@@ -4226,14 +4226,6 @@ Qustions AI Tabs Style End
     height: 15px;
     width: 15px;
 }
-.requests-count {
-    display: block;
-    line-height: normal;
-    padding: 15px 15px;
-    color: #34395e;
-    font-weight: 600;
-    border-top: 1px solid #ddd;
-}
 .pending-invites-controls button {
     background-color: #fff;
     border: 1px solid #007bff;
@@ -4328,7 +4320,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 .review-btn:hover {
     background: linear-gradient(to bottom, #5fa8e1, #3d7fcc);
 }
-.teacher-counts {
+.table-counts {
     display: inline-block;
     line-height: normal;
     padding: 15px 15px;
