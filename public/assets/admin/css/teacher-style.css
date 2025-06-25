@@ -302,6 +302,15 @@
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
     opacity: 0;
 }
+.create-class-modal .modal-dialog {
+    max-width: 600px;
+}
+.create-class-modal .admin-rurera-tabs.nav-pills li .nav-link {
+    padding-bottom: 5px;
+}
+.create-class-modal .admin-rurera-tabs {
+    margin: 0 0 20px;
+}
 .questions-select-number ul {
     line-height: normal;
     align-items: flex-end;
