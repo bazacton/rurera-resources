@@ -134,6 +134,10 @@
 .class-edit-modal .modal-footer {
     padding-top: 0;
 }
+.create-class-modal .modal-footer {
+    padding-left: 0;
+    padding-right: 0;
+}
 .create-class-modal .modal-footer button[type="button"],
 .class-edit-modal .modal-footer button[type="button"] {
     background-color: #fedfdf;
