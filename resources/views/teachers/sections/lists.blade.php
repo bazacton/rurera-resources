@@ -40,21 +40,33 @@
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
-                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
-                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Curriculum</th>
-                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">No of Students</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Class Code</th>
+                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-left">Curriculum</th>
+                                    <th class="text-left">No of Students</th>
+                                    <th>Class Code</th>
                                 </tr>
 
                                 @foreach($sections as $sectionData)
                                 <tr>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <span>{{ $sectionData->title }} {{ isset( $sectionData->sectionClass->title )? '('.$sectionData->sectionClass->title.')' : '' }}</span>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $sectionData->title }} {{ isset( $sectionData->sectionClass->title )? '('.$sectionData->sectionClass->title.')' : '' }}</span>
+                                        </div>
                                     </td>
-                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ $sectionData->category->getTitleAttribute() }}</td>
-                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/sections/users?section={{$sectionData->id}}">{{ $sectionData->users->count() }}</a></td>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        {{ $sectionData->class_code }}
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ $sectionData->category->getTitleAttribute() }}
+                                        </div>
+                                    </td>
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <a href="/admin/sections/users?section={{$sectionData->id}}">{{ $sectionData->users->count() }}</a>
+                                        </div>
+                                    </td>
+                                    <td> 
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ $sectionData->class_code }}
+                                        </div>
                                     </td>
                                 </tr>
                                 @endforeach
