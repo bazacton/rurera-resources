@@ -207,7 +207,7 @@
 
                                         </tbody>
                                     </table>
-                                    {{$joining_requests->count()}} Requests
+                                    <span class="table-counts">{{$joining_requests->count()}} Requests</span>
                                 </div>
                             </div>
                         </div>
