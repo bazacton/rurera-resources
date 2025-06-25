@@ -4882,12 +4882,6 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 .student-successfull-modal:has(.img-holder) .modal-dialog {
     max-width: 800px;
 }
-.student-modal-box:has(.messages-layout-block) [class*="section"] {
-    display: none;
-}
-.student-modal-box:has(.messages-layout-block.rurera-hide) [class*="section"] {
-    display: block;
-}
 .messages-layout-block p {
     font-size: 16px;
 }
