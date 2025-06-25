@@ -791,9 +791,9 @@
                                                 <div class="teacher-search-filter">
 
                                                     <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
+                                                        <span class="icon-box">
+                                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                                        </span>
                                                         <input type="text" class="search-teachers" placeholder="Search Teachers">
                                                     </div>
                                                 </div>
