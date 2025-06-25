@@ -832,11 +832,11 @@
                                                     <table class="table mb-0">
                                                         <thead class="thead-light">
                                                         <tr>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</th>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Role</th>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</th>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Classes</th>
-                                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">School</th>
+                                                            <th>Teacher</th>
+                                                            <th>Role</th>
+                                                            <th>Last Login</th>
+                                                            <th>Classes</th>
+                                                            <th>School</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody class="teachers-list">
@@ -844,21 +844,39 @@
                                                         @if($class->teachers->where('status','active')->count() > 0)
                                                             @foreach($class->teachers->where('status','active') as $teacherObj)
                                                                 <tr>
-                                                                    <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        <div class="check-box">
-                                                                            <input type="checkbox" class="sections-users" value="{{ $teacherObj->user->id }}">
+                                                                    <td data-th="Teacher/Admin">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            <div class="check-box">
+                                                                                <input type="checkbox" class="sections-users" value="{{ $teacherObj->user->id }}">
+                                                                            </div>
+                                                                            <strong>
+                                                                                <span class="user-lable">
+                                                                                    <a href="javascript:;" data-class_id="{{$class->id}}" class="edit-teacher-btn" data-id="{{$teacherObj->user->id}}">{{ $teacherObj->user->get_full_name() }}</a>
+                                                                                    <span class="user-email">{{ $teacherObj->user->email }}</span>
+                                                                                </span>
+                                                                            </strong>
                                                                         </div>
-                                                                        <strong>
-                                                    <span class="user-lable">
-                                                        <a href="javascript:;" data-class_id="{{$class->id}}" class="edit-teacher-btn" data-id="{{$teacherObj->user->id}}">{{ $teacherObj->user->get_full_name() }}</a>
-                                                        <span class="user-email">{{ $teacherObj->user->email }}</span>
-                                                    </span>
-                                                                        </strong>
                                                                     </td>
-                                                                    <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
-                                                                    <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($teacherObj->user->last_login > 0)? dateTimeFormat($teacherObj->user->last_login, 'j M y | H:i') : '-'}}</td>
-                                                                    <td data-th="Classes" class="skelton-hide skelton-height-lg skelton-mb-0">{{$teacherObj->user->getTeacherClasses->count()}}</td>
-                                                                    <td data-th="School" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}</td>
+                                                                    <td data-th="Role">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            Teacher
+                                                                        </div>
+                                                                    </td>
+                                                                    <td data-th="Last Login">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            {{($teacherObj->user->last_login > 0)? dateTimeFormat($teacherObj->user->last_login, 'j M y | H:i') : '-'}}
+                                                                        </div>
+                                                                    </td>
+                                                                    <td data-th="Classes">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            {{$teacherObj->user->getTeacherClasses->count()}}
+                                                                        </div>
+                                                                    </td>
+                                                                    <td data-th="School">
+                                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                                            {{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}
+                                                                        </div>
+                                                                    </td>
 
                                                                 </tr>
                                                             @endforeach
