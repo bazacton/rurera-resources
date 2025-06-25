@@ -48,17 +48,29 @@
                                 @foreach($joining_requests as $requestObj)
                                 <tr>
                                     <td>
-                                        <span>{{ $requestObj->student->get_full_name() }}</span>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $requestObj->student->get_full_name() }}</span>
+                                        </div>
                                     </td>
-                                    <td class="text-left">{{ isset( $requestObj->section->sectionClass->title)? $requestObj->section->sectionClass->title : '' }}</td>
-                                    <td class="text-left">{{ $requestObj->section->title }}</td>
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ isset( $requestObj->section->sectionClass->title)? $requestObj->section->sectionClass->title : '' }}
+                                        </div>
+                                    </td>
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ $requestObj->section->title }}
+                                        </div>
+                                    </td>
                                     <td>
-                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$requestObj->id}}">
-                                            <i class="fa fa-check"></i>
-                                        </a>
-                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$requestObj->id}}">
-                                            <i class="fa fa-times"></i>
-                                        </a>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$requestObj->id}}">
+                                                <i class="fa fa-check"></i>
+                                            </a>
+                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$requestObj->id}}">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                                 @endforeach
