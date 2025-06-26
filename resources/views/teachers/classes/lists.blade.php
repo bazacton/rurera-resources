@@ -429,8 +429,10 @@
                 <div class="col-12 col-md-12 d-flex align-items-center flex-wrap px-1">
                     @foreach($classes as $classData)
                         @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
+
+                        $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
     @endphp
-                        <div class="card text-white classes-card bg-teal mb-3 mx-10 disabled" disabled style="position: relative; background-color:{{$class_color}}">
+                        <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
                             <!-- Dropdown Menu -->
                             <div class="card-options dropdown">
                                 <button

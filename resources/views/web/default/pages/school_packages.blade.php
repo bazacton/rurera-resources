@@ -6,7 +6,7 @@
     <section class="mb-0 pt-70 pb-60">
         <div class="container">
             <div class="row">
-                <!-- <div class="purchase-classroom">
+                <div class="purchase-classroom">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="classroom-content-box">
@@ -256,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
