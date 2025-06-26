@@ -71,15 +71,15 @@
 .admin_teacher_role .bottom-controls .btn.user-btn:hover {background-color: inherit !important;}
 .admin_teacher_role .bottom-controls .btn i {font-size: 16px;}
 .admin_teacher_role .right-area {display: inline-flex; align-items: center; gap: 10px;}
-.admin_teacher_role .classes-card.disabled:last-child {
+.admin_teacher_role .classes-card.disabled {
     position: relative;
     opacity: 0.2;
     cursor: no-drop;
 }
-.admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
+.admin_teacher_role .classes-card.disabled .bottom-controls {
     background-color: #efefef;
 }
-.admin_teacher_role .classes-card.disabled:last-child:before {
+.admin_teacher_role .classes-card.disabled:before {
     position: absolute;
     left: 0;
     top: 0;
@@ -90,10 +90,10 @@
     z-index: 1;
     border-radius: 8px;
 }
-.admin_teacher_role .classes-card.disabled:last-child .progress-bar.progress-bar-custom {
+.admin_teacher_role .classes-card.disabled .progress-bar.progress-bar-custom {
     background-color: #e7e7e7;
 }
-.admin_teacher_role .classes-card.disabled:last-child:hover {
+.admin_teacher_role .classes-card.disabled:hover {
     box-shadow: none;
 }
 
