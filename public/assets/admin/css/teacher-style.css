@@ -4820,6 +4820,26 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     vertical-align: middle;
     margin: 0 5px 0 0;
 }
+.add-student-modal table td input[type=radio]:checked ~ label:before {
+    border-color: var(--blue);
+}
+
+.add-student-modal table td label:after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: var(--blue);
+    display: inline-block;
+    position: absolute;
+    left: 2.3px;
+    top: 50%;
+    margin-top: -4px;
+    border-radius: 100%;
+    opacity: 0;
+}
+.add-student-modal table td input[type=radio]:checked ~ label:after {
+    opacity: 1;
+}
 
 /* Student-Successfull-Modal Style Start */
 .student-successfull-modal .modal-dialog {
