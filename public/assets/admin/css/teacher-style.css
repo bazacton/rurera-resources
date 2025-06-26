@@ -4821,7 +4821,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     vertical-align: middle;
     margin: 0 5px 0 0;
 }
-.add-student-modal table td input[type=radio]:checked ~ label:before {
+.add-student-modal table td input[type=radio]:checked + label:before {
     border-color: var(--blue);
 }
 
@@ -4838,7 +4838,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     border-radius: 100%;
     opacity: 0;
 }
-.add-student-modal table td input[type=radio]:checked ~ label:after {
+.add-student-modal table td input[type=radio]:checked + label:after {
     opacity: 1;
 }
 
