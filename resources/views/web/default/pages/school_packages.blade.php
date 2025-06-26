@@ -14,7 +14,7 @@
                                     <h2>Purchase a Classroom Licence</h2>
                                     <p>Get full access to 10,000+ interactive learning resources with real-time performance tracking.</p>
                                 </div>
-                                <div class="choose-subjects">
+                                <!-- <div class="choose-subjects">
                                     <div class="row">
                                         <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
@@ -166,7 +166,7 @@
 
 
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="num-students">
                                     <h3>Specify total # of students</h3>
                                     <div class="increase-decrease-box">
