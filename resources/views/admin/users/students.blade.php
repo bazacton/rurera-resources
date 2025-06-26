@@ -69,7 +69,7 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <div class="teacher-search-filter">
+                                <div class="teacher-search-filter d-inline-flex">
                                     <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
                                     <div class="search-field">
                                         <span class="icon-box">
