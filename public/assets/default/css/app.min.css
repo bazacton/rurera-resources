@@ -3465,6 +3465,8 @@ School Packges Style Start
 }
 .purchase-heading {
   margin: 0 0 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
 }
 .purchase-heading h2 {
   margin: 0 0 5px;
