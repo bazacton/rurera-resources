@@ -11,10 +11,10 @@
         <input type="hidden" name="school_id" value="{{$userObj->school_id}}">
         <table>
             <thead>
-            <tr>
-                <th>Email</th>
-                <th>Status</th>
-            </tr>
+                <tr>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
             </thead>
             <tbody>
 
