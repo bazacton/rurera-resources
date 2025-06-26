@@ -4098,6 +4098,9 @@ Qustions AI Tabs Style End
     -o-transition: all 0.3s ease-out; 
     transition: all 0.3s ease-out;
 }
+.add-student-btn ~ .search-field input[type="text"] {
+    height: 40px;
+}
 .search-field input[type="text"]:focus {
     min-width: 300px;
 }
