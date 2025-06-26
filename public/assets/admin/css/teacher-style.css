@@ -4809,6 +4809,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     position: relative;
     margin: 0 5px;
     line-height: normal;
+    cursor: pointer;
 }
 .add-student-modal table td label:before {
     height: 15px;
