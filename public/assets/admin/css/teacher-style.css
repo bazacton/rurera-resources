@@ -4261,6 +4261,18 @@ Qustions AI Tabs Style End
     visibility: visible;
     opacity: 1;
 }
+.invite-teacher-modal.invite-teacher-modal .modal-dialog {
+    background-color: inherit;
+}
+.invite-teacher-modal.invite-teacher-modal .modal-dialog .modal-content {
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+}
+.invite-teacher-modal.invite-teacher-modal .close {
+    right: 10px;
+    top: 5px;
+}
 .invite-teacher-modal .modal-title img {
     width: 22px;
     height: 22px;
@@ -4275,9 +4287,6 @@ Qustions AI Tabs Style End
     gap: 10px;
     color: #333;
     font-size: 28px;
-}
-.invite-teacher-modal .modal-dialog {
-    max-width: 700px;
 }
 .invite-text-field .textarea-field {
     border: 1px solid #ddd;
