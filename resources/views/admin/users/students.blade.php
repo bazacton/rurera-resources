@@ -40,14 +40,6 @@
                     <div class="admin-rurera-tabs-students students-tab-students">
                     <div class="teacher-table">
                         <div class="card">
-                            <div class="teacher-search-filter">
-                                <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
-                                    <input type="text" class="search-students" placeholder="Search Students">
-                                </div>
-                            </div>
                             <div class="card-header">
                                 <div class="bulk-actions">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
@@ -77,7 +69,15 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
+                                <div class="teacher-search-filter">
+                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
+                                    <div class="search-field">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                        </span>
+                                        <input type="text" class="search-students" placeholder="Search Students">
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body p-0 table-sm">
                                 <table class="table mb-0">
