@@ -4798,6 +4798,28 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 }
 .modal-section { display: none; }
 .modal-section.active { display: block; }
+.add-student-modal table td input[type=radio] {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.add-student-modal table td label {
+    position: relative;
+    margin: 0 5px;
+    line-height: normal;
+}
+.add-student-modal table td label:before {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #666;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
 
 /* Student-Successfull-Modal Style Start */
 .student-successfull-modal .modal-dialog {
