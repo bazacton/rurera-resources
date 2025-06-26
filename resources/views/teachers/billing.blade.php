@@ -417,68 +417,68 @@
                 </div>
                 <div class="modal-body">
                     <div class="error-alert">
-                    Errors have occurred with 4 students imported.
-                    <a href="#">Go back and fix errors.</a>
+                        Errors have occurred with 4 students imported.
+                        <a href="#">Go back and fix errors.</a>
                     </div>
                     <div class="table-sm">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Student Username</th>
-                            <th>Password</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>billy.173</td>
-                            <td>bluegem</td>
-                            <td>Billy</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>billymadison.26</td>
-                            <td>yellowflower</td>
-                            <td>Billy</td>
-                            <td>Madison</td>
-                            <td></td>
-                        </tr>
-                        <tr class="error-row">
-                            <td>
-                            <span class="error-highlight">billymadison.26</span>
-                            <div class="error-message">This is duplicated within the file</div>
-                            </td>
-                            <td>bluebubble</td>
-                            <td>Billy</td>
-                            <td>Madison</td>
-                            <td>
-                            <span class="error-highlight">billym@school.edu</span>
-                            <div class="error-message">This email is already in use by another account.</div>
-                            </td>
-                        </tr>
-                        <tr class="error-row">
-                            <td>
-                            <span class="error-highlight">billym@school.edu</span>
-                            <div class="error-message">
-                                This username is already in use. Usernames must be unique across all of Typing.com.
-                            </div>
-                            </td>
-                            <td>purpleflower</td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                            <span class="error-highlight">billym@school.edu</span>
-                            <div class="error-message">
-                                This email is already in use by another account.<br>
-                                This is duplicated within the file.
-                            </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Student Username</th>
+                                    <th>Password</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>billy.173</td>
+                                    <td>bluegem</td>
+                                    <td>Billy</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>billymadison.26</td>
+                                    <td>yellowflower</td>
+                                    <td>Billy</td>
+                                    <td>Madison</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="error-row">
+                                    <td>
+                                        <span class="error-highlight">billymadison.26</span>
+                                        <div class="error-message">This is duplicated within the file</div>
+                                    </td>
+                                    <td>bluebubble</td>
+                                    <td>Billy</td>
+                                    <td>Madison</td>
+                                    <td>
+                                        <span class="error-highlight">billym@school.edu</span>
+                                        <div class="error-message">This email is already in use by another account.</div>
+                                    </td>
+                                </tr>
+                                <tr class="error-row">
+                                    <td>
+                                        <span class="error-highlight">billym@school.edu</span>
+                                        <div class="error-message">
+                                            This username is already in use. Usernames must be unique across all of Typing.com.
+                                        </div>
+                                    </td>
+                                    <td>purpleflower</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <span class="error-highlight">billym@school.edu</span>
+                                        <div class="error-message">
+                                            This email is already in use by another account.<br>
+                                            This is duplicated within the file.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
