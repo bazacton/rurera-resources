@@ -319,11 +319,11 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name" required>
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Please enter the teacher's name" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control " id="email" value="" required>
+                            <input name="email" type="text" class="form-control" placeholder="Teacher's email for updates" id="email" value="" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
@@ -333,7 +333,7 @@
                                 <i class="fa fa-lock"></i>
                                 </span>
                             </div>
-                            <input type="password" name="password" class="form-control ">
+                            <input type="password" name="password" class="form-control" placeholder="Create a strong password" autocomplete="off">
                             </div>
                         </div>
                         <div class="text-right mt-4">
