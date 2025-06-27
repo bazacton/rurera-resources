@@ -320,18 +320,20 @@
             @endif
             @if(session()->has('toasts'))
             @foreach(session('toasts') as $toast)
-            $.toast({
-                heading: '{{ $toast['title'] ?? '' }}',
-                text: '{{ $toast['msg'] ?? '' }}',
-                bgColor: @if($toast['status'] == 'success') '#43d477'
-                @elseif($toast['status'] == 'warning') '#f0ad4e'
-                @elseif($toast['status'] == 'error') '#f63c3c'
-                @else '#5bc0de' @endif,
-                textColor: 'white',
-                hideAfter: 10000,
-                position: 'bottom-right',
-                icon: '{{ $toast['status'] }}'
-            });
+            @if(isset($toast['status']))
+                $.toast({
+                    heading: '{{ $toast['title'] ?? '' }}',
+                    text: '{{ $toast['msg'] ?? '' }}',
+                    bgColor: @if($toast['status'] == 'success') '#43d477'
+                    @elseif($toast['status'] == 'warning') '#f0ad4e'
+                    @elseif($toast['status'] == 'error') '#f63c3c'
+                    @else '#5bc0de' @endif,
+                    textColor: 'white',
+                    hideAfter: 10000,
+                    position: 'bottom-right',
+                    icon: '{{ $toast['status'] }}'
+                });
+            @endif
             @endforeach
             @endif
         })(jQuery);
