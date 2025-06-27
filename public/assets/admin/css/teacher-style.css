@@ -4295,6 +4295,9 @@ Qustions AI Tabs Style End
     color: #333;
     font-size: 28px;
 }
+.invite-teacher-modal .modal-title span {
+    color: var(--blue);
+}
 .invite-text-field .textarea-field {
     border: 1px solid #ddd;
     margin: 0 0 30px;
