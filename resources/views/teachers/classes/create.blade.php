@@ -230,14 +230,6 @@
                                 <div class="admin-rurera-tabs-page-edit rurera-hide students-tab-page-edit">
                                     <div class="teacher-table">
                                         <div class="card">
-                                            <div class="teacher-search-filter">
-                                                <div class="search-field">
-                                                    <span class="icon-box">
-                                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                                    </span>
-                                                    <input type="text" class="search-students" placeholder="Search Students">
-                                                </div>
-                                            </div>
                                             <div class="card-header">
                                                 <div class="bulk-actions">
                                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
@@ -251,6 +243,14 @@
                                                                 <a data-class_id="{{$class->id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teacher-search-filter border-0 p-0">
+                                                    <div class="search-field">
+                                                        <span class="icon-box">
+                                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                                        </span>
+                                                        <input type="text" class="search-students" placeholder="Search Students">
                                                     </div>
                                                 </div>
                                             </div>
