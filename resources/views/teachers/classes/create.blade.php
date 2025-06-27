@@ -239,18 +239,16 @@
                                                 </div>
                                             </div>
                                             <div class="card-header">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                    <div class="bulk-actions">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                                        <div class="dropdown-box">
-                                                            <div class="dropdown">
-                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                                                </a>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                                    <a data-class_id="{{$class->id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                                </div>
+                                                <div class="bulk-actions">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                                    <div class="dropdown-box">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                            </a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                <a data-class_id="{{$class->id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                             </div>
                                                         </div>
                                                     </div>
