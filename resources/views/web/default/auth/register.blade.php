@@ -49,7 +49,7 @@
                             <label class="input-label" for="full_name">{{ trans('auth.full_name') }}:</label>
                             <div class="form-field">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/hand.jpg" alt="hand">
+                                    <img src="/assets/default/img/user.png" alt="user">
                                 </span>
                                 <input name="full_name" type="text" value="{{ old('full_name') }}" class="form-control @error('full_name') is-invalid @enderror" autocomplete="off" placeholder="What should we call you?">
                             </div>
