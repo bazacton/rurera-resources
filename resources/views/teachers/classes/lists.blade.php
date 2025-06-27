@@ -194,43 +194,41 @@
 
                                         <ul class="draggable-lists list-group">
 
-                                                    <li class="form-group list-group">
+                                            <li class="form-group list-group">
 
-                                                        <div class="p-2 border rounded-sm">
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text cursor-pointer move-icon">
-                                                                        <i class="fa fa-arrows-alt"></i>
-                                                                    </div>
-                                                                </div>
-
-                                                                <input type="text" name="sections[cbDpiRTAiUoGuWfB][title]"
-                                                                       class="form-control w-auto flex-grow-1"
-                                                                       value="222"
-                                                                       placeholder="{{ trans('admin/main.choose_title') }}"/>
-
-                                                                <input type="text" name="section_code"
-                                                                       class="form-control"
-                                                                       value="222" readonly disabled/>
-
-                                                                <select class="form-control select2" name="sections[section_code][class_teachers][]" multiple="multiple">
-
-                                                                </select>
-
-
-
-                                                                <div class="input-group-append">
-                                                                    @include('admin.includes.delete_button',[
-                                                                    'url' => getAdminPanelUrl("/classes/111/delete"),
-                                                                    'deleteConfirmMsg' => trans('update.category_delete_confirm_msg'),
-                                                                    'btnClass' => 'btn btn-danger text-white',
-                                                                    'noBtnTransparent' => true
-                                                                    ])
-                                                                </div>
+                                                <div class="p-2 border rounded-sm">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text cursor-pointer move-icon">
+                                                                <i class="fa fa-arrows-alt"></i>
                                                             </div>
-
                                                         </div>
-                                                    </li>
+
+                                                        <input type="text" name="sections[cbDpiRTAiUoGuWfB][title]"
+                                                                class="form-control w-auto flex-grow-1"
+                                                                value="222"
+                                                                placeholder="{{ trans('admin/main.choose_title') }}"/>
+
+                                                        <input type="text" name="section_code"
+                                                                class="form-control"
+                                                                value="222" readonly disabled/>
+
+                                                        <select class="form-control select2" name="sections[section_code][class_teachers][]" multiple="multiple">
+
+                                                        </select>
+
+                                                        <div class="input-group-append">
+                                                            @include('admin.includes.delete_button',[
+                                                            'url' => getAdminPanelUrl("/classes/111/delete"),
+                                                            'deleteConfirmMsg' => trans('update.category_delete_confirm_msg'),
+                                                            'btnClass' => 'btn btn-danger text-white',
+                                                            'noBtnTransparent' => true
+                                                            ])
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
 
