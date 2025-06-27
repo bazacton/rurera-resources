@@ -600,7 +600,7 @@
             @can('admin_classes')
                 <li class="nav-item {{ (request()->is('admin/classes')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/classes') }}" class="nav-link">
-                        <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
+                        <img src="/assets/default/img/class-new.png" alt="class-new">
                         <span>Classes</span>
                     </a>
                 </li>
