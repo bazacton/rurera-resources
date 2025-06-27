@@ -187,7 +187,7 @@
                                                     </td>
                                                     <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($invitationObj->role->caption)? $invitationObj->role->caption : '-'}}</td>
                                                     <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($invitationObj->created_at > 0)? dateTimeFormat($invitationObj->created_at, 'j M y | H:i') : '-'}}</td>
-                                                    <td>
+                                                    <td class="has-controls">
                                                         <div class="pending-invites-controls">
                                                             <button class="copy-to-text" data-copy_to="invitation-link-{{$invitationObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
                                                                 <img src="/assets/default/svgs/link-file.svg" alt="link-file">
