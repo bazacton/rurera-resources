@@ -4190,6 +4190,9 @@ Qustions AI Tabs Style End
     color: var(--blue);
     font-size: 14px;
 }
+.teacher-table table td.has-controls {
+    min-width: 135px;
+}
 .teacher-table table td strong {
     display: inline-flex;
     align-items: center;
