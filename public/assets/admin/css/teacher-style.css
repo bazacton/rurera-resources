@@ -4767,7 +4767,8 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     font-size: 24px;
     margin: 0 0 12px;
 }
-.add-student-btn {
+.add-student-btn,
+.invitation-response-block input[type="submit"] {
     background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
     color: white;
     border: none;
