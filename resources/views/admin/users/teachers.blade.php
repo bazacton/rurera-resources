@@ -99,7 +99,6 @@
                                         @foreach($users as $user)
                                             <tr>
                                                 <td data-th="Teacher/Admin">
-
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div class="check-box">
                                                             <input type="checkbox" class="sections-teachers" value="{{ $user->id }}">
@@ -113,42 +112,32 @@
                                                     </div>
                                                 </td>
                                                 <td data-th="Role">
-
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($user->role->caption)? $user->role->caption : '-'}}</div>
                                                 </td>
                                                 <td data-th="Last Login">
-
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         {{($user->last_login > 0)? dateTimeFormat($user->last_login, 'j M y | H:i') : '-'}}
                                                     </div>
                                                 </td>
                                                 <td data-th="Classes">
-
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$user->getTeacherClasses->count()}}</div>
                                                 </td>
                                                 <td data-th="School">
-
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</div>
                                                 </td>
 
                                             </tr>
                                         @endforeach
                                     @endif
-
-
-
                                     </tbody>
                                 </table>
                                 <span class="table-counts">{{$users->count()}} Teachers</span>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
-                    <div class="admin-rurera-tabs-teachers invites-tab-teachers rurera-hide">
+                <div class="admin-rurera-tabs-teachers invites-tab-teachers rurera-hide">
                     <div class="teacher-table">
                         <div class="card">
                             <div class="card-header">
