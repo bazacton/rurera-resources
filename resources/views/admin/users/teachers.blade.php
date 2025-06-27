@@ -40,9 +40,9 @@
                     <div class="teacher-table">
                         <div class="card">
                             <div class="card-header justify-content-end">
-                                <div class="bulk-actions">
+                                <div class="bulk-actions mr-auto">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                    <div class="dropdown-box mr-auto">
+                                    <div class="dropdown-box">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
