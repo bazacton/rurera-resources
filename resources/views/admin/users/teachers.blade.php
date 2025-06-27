@@ -39,19 +39,10 @@
                 <div class="admin-rurera-tabs-teachers teachers-tab-teachers">
                     <div class="teacher-table">
                         <div class="card">
-                            <div class="teacher-search-filter">
-
-                                <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
-                                    <input type="text" class="search-teachers" placeholder="Search Teachers">
-                                </div>
-                            </div>
-                            <div class="card-header">
+                            <div class="card-header justify-content-end">
                                 <div class="bulk-actions">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                    <div class="dropdown-box">
+                                    <div class="dropdown-box mr-auto">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
@@ -74,6 +65,15 @@
                                                 <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="teacher-search-filter border-0 p-0">
+                                    <div class="search-field">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                        </span>
+                                        <input type="text" class="search-teachers" placeholder="Search Teachers">
                                     </div>
                                 </div>
                             </div>
