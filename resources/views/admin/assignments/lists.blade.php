@@ -108,27 +108,27 @@
         </div>
         <div class="col-12 col-md-12">
             <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                <li class="nav-item skelton-hide skelton-height-lg">
+                <li class="nav-item">
                     <a class="nav-link active" id="topics-tab" href="/admin/assignments">
                         <span class="tab-title">All assignments</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide skelton-height-lg">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
                         <span class="tab-title">Scheduled</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide skelton-height-lg">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
                         <span class="tab-title">Running</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide skelton-height-lg">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
                         <span class="tab-title">Completed</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide skelton-height-lg">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
                         <span class="tab-title">Paused</span>
                     </a>
@@ -139,7 +139,7 @@
             <div class="assignments-table">
                 <div class="card">
                     <div class="card-header bg-light">
-                        <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
+                        <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
                     </div>
                     <div class="card-body p-0 table-sm">
                         <table class="table mb-0">
