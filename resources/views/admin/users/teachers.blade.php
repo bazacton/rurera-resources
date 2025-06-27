@@ -150,9 +150,6 @@
 
                     <div class="admin-rurera-tabs-teachers invites-tab-teachers rurera-hide">
                     <div class="teacher-table">
-                        <div class="element-heading mb-15">
-                            <h2 class="font-22 font-weight-bold">Pending Invites</h2>
-                        </div>
                         <div class="card">
                             <div class="card-header">
                                 <div class="bulk-actions">
