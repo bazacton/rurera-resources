@@ -627,7 +627,7 @@
             @can('admin_teachers_list')
                 <li class="nav-item {{ (request()->is('admin/teachers')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/teachers') }}" class="nav-link">
-                        <img src="/assets/default/img/sidebar/teacher.svg" alt="teacher">
+                        <img src="/assets/default/img/sidebar/teacher.png" alt="teacher">
                         <span>Teachers</span>
                     </a>
                 </li>
