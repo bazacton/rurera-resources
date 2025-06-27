@@ -4297,6 +4297,11 @@ Qustions AI Tabs Style End
 }
 .invite-teacher-modal .modal-title span {
     color: var(--blue);
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
+    text-decoration: underline;
 }
 .invite-text-field .textarea-field {
     border: 1px solid #ddd;
