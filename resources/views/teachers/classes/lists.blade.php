@@ -431,6 +431,7 @@
                                     <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }}</a></h5>
                                 </div>
                                 <div class="card-description-holder">
+                                    <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
                                     <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
                                 </div>
                                 <div class="progress-holder">
