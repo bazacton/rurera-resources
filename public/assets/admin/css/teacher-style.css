@@ -4643,6 +4643,9 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     width: 400px;
     word-wrap: break-word;
 }
+.add-student-modal table .error-row td:has(.error-message) .error-message {
+    text-align: center;
+}
 .add-student-modal table .error-row {
     background-color: #fff1ea;
 }
