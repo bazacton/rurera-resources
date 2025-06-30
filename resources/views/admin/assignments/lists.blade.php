@@ -181,7 +181,7 @@
                                         </div>
                                     </td>
                                     <td data-th="Status" class="text-success font-weight-bold">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Activ e</div>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Active</div>
                                     </td>
                                     <td data-th="Actions">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
