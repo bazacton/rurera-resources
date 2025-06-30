@@ -157,6 +157,24 @@
     margin-bottom: 15px;
     padding-left: 0;
 }
+.admin_teacher_role .form-field {
+    position: relative;
+}
+.admin_teacher_role .form-field .icon-box {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.admin_teacher_role .form-field .icon-box img {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    border-radius: 0;
+}
+.admin_teacher_role .form-field .icon-box ~ .form-control {
+    padding-left: 35px;
+}
 .admin_teacher_role .create-class-modal .modal-title {
     color: #333;
 }
