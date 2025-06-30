@@ -229,7 +229,7 @@
             @can('admin_assignments')
             <li class="nav-item {{ (request()->is('admin/custom_quiz')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_quiz') }}" class="nav-link">
-                    <img src="/assets/default/img/sidebar/custom-quiz-color.png" alt="custom-quiz">
+                    <img src="/assets/default/img/sidebar/custom-quiz-color.svg" alt="custom-quiz">
                     <span>Custom Quiz</span>
                 </a>
             </li>
