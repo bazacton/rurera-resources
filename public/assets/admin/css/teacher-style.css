@@ -4638,6 +4638,11 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     font-size: 14px;
     border-bottom: 1px solid #e2d7c2;
 }
+.add-student-modal table td.has-email span {
+    display: block;
+    width: 400px;
+    word-wrap: break-word;
+}
 .add-student-modal table .error-row {
     background-color: #fff1ea;
 }
