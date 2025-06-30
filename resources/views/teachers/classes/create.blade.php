@@ -1083,20 +1083,28 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control" value="" placeholder="Full name of the new member" required autocomplete="off">
+                            <div class="form-field">
+                                <span class="icon-box">
+                                    <img src="/assets/default/img/user.png" alt="user">
+                                </span>
+                                <input type="text" name="full_name" class="form-control" value="" placeholder="Full name of the new member" required autocomplete="off">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control" id="email" value="" placeholder="Email for login & updates" required autocomplete="off">
+                            <div class="form-field">
+                                <span class="icon-box">
+                                    <img src="/assets/default/img/envelope.jpg" alt="envelope">
+                                </span>
+                                <input name="email" type="text" class="form-control" id="email" value="" placeholder="Email for login & updates" required autocomplete="off">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
                             <div class="input-group">
-                                <div class="input-group-prepend">
-                                <span type="button" class="input-group-text">
-                                <i class="fa fa-lock"></i>
+                                <span class="icon-box">
+                                    <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
-                                </div>
                                 <input type="password" name="password" class="form-control" placeholder="Create a strong password" autocomplete="off">
                             </div>
                         </div>
