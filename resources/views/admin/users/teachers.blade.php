@@ -319,11 +319,11 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Enter the teacher Full Name" required autocomplete="off">
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full name of the new member" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control" placeholder="Teacher email for updates" id="email" value="" required autocomplete="off">
+                            <input name="email" type="text" class="form-control" placeholder="Email for login & updates" id="email" value="" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
