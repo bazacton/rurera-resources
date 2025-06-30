@@ -615,7 +615,7 @@
                             <form action="javascript:;" method="POST" class="mb-0 edit-student-single">
                                 {{ csrf_field() }}
                                 <div class="edit-student-block"></div>
-                                <div class="teacher-buttons mt-30">
+                                <div class="teacher-buttons mt-10">
                                     <button type="submit" class="btn btn-primary edit-single-student-btn">Edit Single Student</button>
                                 </div>
                             </form>
