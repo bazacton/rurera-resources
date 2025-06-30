@@ -30,10 +30,10 @@
                         <input type="hidden" name="invitation_emails[]" value="{{$email}}">
                     @endif
                     <tr class="{{$tr_class}}">
-                        <td>
+                        <td class="has-email">
                             <span class="{{($status == 'error')? 'error-highlight' : ''}}">{{$email}}</span>
                         </td>
-                        <td><div class="{{($status == 'error')? 'error-message' : ''}}">{{$toastData['msg']}}</div></td>
+                        <td class="has-error"><div class="{{($status == 'error')? 'error-message' : ''}}">{{$toastData['msg']}}</div></td>
                     </tr>
                 @endforeach
             @endif
