@@ -157,22 +157,26 @@
     margin-bottom: 15px;
     padding-left: 0;
 }
-.admin_teacher_role .form-field {
+.admin_teacher_role .form-field,
+.admin_teacher_role .input-group {
     position: relative;
 }
-.admin_teacher_role .form-field .icon-box {
+.admin_teacher_role .form-field .icon-box,
+.admin_teacher_role .input-group .icon-box {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
 }
-.admin_teacher_role .form-field .icon-box img {
+.admin_teacher_role .form-field .icon-box img,
+.admin_teacher_role .input-group .icon-box img {
     height: 15px;
     width: 15px;
     object-fit: contain;
     border-radius: 0;
 }
-.admin_teacher_role .form-field .icon-box ~ .form-control {
+.admin_teacher_role .form-field .icon-box ~ .form-control,
+.admin_teacher_role .input-group .icon-box ~ .form-control {
     padding-left: 35px;
 }
 .admin_teacher_role .create-class-modal .modal-title {
