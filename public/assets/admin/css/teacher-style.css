@@ -4615,6 +4615,10 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     font-weight: 600;
     text-decoration: underline;
 }
+.invitation-response-block .table-sm {
+    overflow: hidden;
+    overflow-x: auto;
+}
 .add-student-modal table {
     width: 100%;
     border-collapse: collapse;
