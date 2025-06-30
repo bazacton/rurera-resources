@@ -19,28 +19,6 @@
     <div class="row">
        <div class="col-12 col-md-12">
             <div class="nav-area">
-                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="topics-tab" href="/admin/classes">
-                            <span class="tab-title">Classes</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/sections" >
-                            <span class="tab-title">Sections</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests" >
-                            <span class="tab-title">Joining Requests</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="#" >
-                            <span class="tab-title">Archived Classes</span>
-                        </a>
-                    </li>
-                </ul>
                 <div class="teacher-controls">
                     <button type="button" class="google_classroom_btn" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
                     @can('admin_classes_create')
@@ -104,6 +82,21 @@
 
                                     <div class="admin-rurera-tabs-details details-tab">
                                         <div class="form-group">
+                                            <label for="SchoolName">Select School</label>
+                                            <div class="select-holder input-group">
+                                                <div class="select-box">
+                                                    <select class="student-school-change" name="school_id">
+                                                        @if($schools_list->count() > 0)
+                                                            @php $row_no = 0; @endphp
+                                                            @foreach($schools_list as $schoolObj)
+                                                                @php $is_checked = ($row_no == 0)? 'selected' : ''; @endphp
+                                                                <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                                                @php $row_no++; @endphp
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                            </div>
                                             <label for="className">Enter class name (Required)</label>
                                             <div class="input-group">
                                                 <input
@@ -432,25 +425,6 @@
     @endphp
                         <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
                             <!-- Dropdown Menu -->
-                            <div class="card-options dropdown">
-                                <button
-                                    class="btn btn-link text-white dropdown-toggle"
-                                    type="button"
-                                    id="dropdownMenuButton"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                >
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a data-class_id="{{$classData->id}}" class="dropdown-item co-teacher-modal-btn" href="javascript:;"><i class="fas fa-user"></i> Add a co-teacher <i class="fas fa-lock"></i></a>
-                                    <a data-class_id="{{$classData->id}}" class="dropdown-item edit-class-modal-btn" href="javascript:;"><i class="fas fa-edit"></i> Edit class details</a>
-                                    <a data-class_id="{{$classData->id}}" class="dropdown-item " href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
-                                    <a data-class_id="{{$classData->id}}" class="dropdown-item archive-class" href="#"><i class="fa fa-archive"></i> Archive Class</a>
-                                    <a data-class_id="{{$classData->id}}" class="dropdown-item text-danger delete-class" href="#"><i class="fa fa-trash"></i> Delete Class</a>
-                                </div>
-                            </div>
 
                             <div class="card-body">
                                 <div class="card-title-holder">
