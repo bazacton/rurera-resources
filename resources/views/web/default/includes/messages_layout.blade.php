@@ -33,7 +33,7 @@
                         <td class="has-email">
                             <span class="{{($status == 'error')? 'error-highlight' : ''}}">{{$email}}</span>
                         </td>
-                        <td class="has-error"><div class="{{($status == 'error')? 'error-message' : ''}}">{{$toastData['msg']}}</div></td>
+                        <td><div class="{{($status == 'error')? 'error-message' : ''}}">{{$toastData['msg']}}</div></td>
                     </tr>
                 @endforeach
             @endif
