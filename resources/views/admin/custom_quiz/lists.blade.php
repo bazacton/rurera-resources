@@ -211,22 +211,24 @@
 
                                         <td>
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                @can('admin_quizzes_results')
-                                                <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
-                                                class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
-                                                title="{{ trans('admin/main.quiz_results') }}">
-                                                    <i class="fa fa-poll fa-1x"></i>
-                                                </a>
-                                                @endcan
+                                                <div class="quiz-controls">
+                                                    @can('admin_quizzes_results')
+                                                    <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
+                                                    class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
+                                                    title="{{ trans('admin/main.quiz_results') }}">
+                                                        <i class="fa fa-poll fa-1x"></i>
+                                                    </a>
+                                                    @endcan
 
-                                                @can('admin_assignments_edit')
-                                                <a href="{{ getAdminPanelUrl() }}/custom_quiz/{{ $quiz->id }}/edit"
-                                                class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
-                                                data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                                    <i class="fa fa-edit"></i>
-                                                </a>
-                                                @endcan
-
+                                                    @can('admin_assignments_edit')
+                                                    <a href="{{ getAdminPanelUrl() }}/custom_quiz/{{ $quiz->id }}/edit"
+                                                    class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
+                                                    data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    @endcan
+                                                </div>
+                                                
                                                 @can('admin_assignments_delete')
                                                 @include('admin.includes.delete_button',['url' =>
                                                 getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
