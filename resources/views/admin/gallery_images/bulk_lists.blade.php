@@ -184,20 +184,23 @@ ul.crop_sizes {
                     <div class="col-md-4">
                         <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'gallery_images_search')}}">
-                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                <optgroup label="{{  $category->title }}">
-                                    @foreach($category->subCategories as $subCategory)
-                                    <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'gallery_images_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                            <div class="select-holder">
+                                <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'gallery_images_search')}}">
+                                    <option value="">{{trans('admin/main.all_categories')}}</option>
+                                    @foreach($categories as $category)
+                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                    <optgroup label="{{  $category->title }}">
+                                        @foreach($category->subCategories as $subCategory)
+                                        <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'gallery_images_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                        @endforeach
+                                    </optgroup>
+                                    @else
+                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'gallery_images_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                    @endif
                                     @endforeach
-                                </optgroup>
-                                @else
-                                <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'gallery_images_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                @endif
-                                @endforeach
-                            </select>
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -222,11 +225,14 @@ ul.crop_sizes {
 					<div class="col-md-4">
 					<div class="form-group skelton-hide skelton-height-lg">
 						<label class="input-label">Topic</label>
-						<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'gallery_images_search')}}" id="chapter_id"
-								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-								name="chapter_id">
-							<option value="">Please select year, subject</option>
-						</select>
+                        <div class="select-holder">
+                            <select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'gallery_images_search')}}" id="chapter_id"
+                                    class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+                                    name="chapter_id">
+                                <option value="">Please select year, subject</option>
+                            </select>
+                        </div>
+						
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -240,11 +246,14 @@ ul.crop_sizes {
 					<div class="col-md-3">
 					<div class="form-group skelton-hide skelton-height-lg">
 						<label class="input-label">Sub Topic</label>
-						<select id="chapter_id"
-							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id">
-						<option value="">Please select year, subject, Topic</option>
-					</select>
+                        <div class="select-holder">
+                            <select id="chapter_id"
+                                class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                name="sub_chapter_id">
+                                <option value="">Please select year, subject, Topic</option>
+                            </select>
+                        </div>
+						
 					@error('sub_chapter_id')
 					<div class="invalid-feedback">
 						{{ $message }}
@@ -257,30 +266,36 @@ ul.crop_sizes {
 					<div class="col-md-3">
 						<div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
 							<label class="input-label">Status</label>
-							<select name="status" data-search-option="status" class="form-control "
-									data-placeholder="Search Status">
-									<option value="">Select All</option>
-									<option value="Pending">Pending</option>
-									<option value="Generated">Generated</option>
-									<option value="Reset">Removed</option>
-                                <option value="Rejected">Rejected</option>
-							</select>
+                            <div class="select-holder">
+                                <select name="status" data-search-option="status" class="form-control "
+                                        data-placeholder="Search Status">
+                                        <option value="">Select All</option>
+                                        <option value="Pending">Pending</option>
+                                        <option value="Generated">Generated</option>
+                                        <option value="Reset">Removed</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                            </div>
+							
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
 							<label class="input-label">Author</label>
-							<select name="user_id" data-search-option="display_name" class="form-control "
-									data-placeholder="Search author">
+                            <div class="select-holder">
+                                <select name="user_id" data-search-option="display_name" class="form-control "
+                                        data-placeholder="Search author">
 
-									<option value="">Select Author</option>
-								@if(!empty($users_list) and $users_list->count() > 0)
-									@foreach($users_list as $userObj)
-										@php $checked = (get_filter_request('user_id', 'gallery_images_search') == $userObj->id)? 'selected' : ''; @endphp
-										<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
-									@endforeach
-								@endif
-							</select>
+                                        <option value="">Select Author</option>
+                                    @if(!empty($users_list) and $users_list->count() > 0)
+                                        @foreach($users_list as $userObj)
+                                            @php $checked = (get_filter_request('user_id', 'gallery_images_search') == $userObj->id)? 'selected' : ''; @endphp
+                                            <option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
+                            </div>
+							
 						</div>
 					</div>
 
