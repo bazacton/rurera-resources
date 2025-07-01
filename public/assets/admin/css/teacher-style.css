@@ -41,7 +41,7 @@
 
 /* Admin Classes Style Start */
 .admin_teacher_role .nav-area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid #f6f6f6;}
-.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 10px; margin-left: auto;}
+.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 25px; margin-left: auto;}
 .admin_teacher_role .admin-rurera-tabs {width: auto; max-width: none; margin-bottom: 0; flex: 0 0 auto; border: 0;}
 .admin_teacher_role .nav-area:has(.teacher-controls) .admin-rurera-tabs {margin-bottom: -8px;}
 .admin_teacher_role .classes-card {background-color: #009788; border-radius: 8px; overflow: hidden; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; width: 23.111%; box-sizing: border-box;}
@@ -1693,9 +1693,6 @@ New Quiz Page Style End
 Tailer Hub Style Start
 **************************************/
 .admin_teacher_role {
-    background-color: #f7f7f7;
-}
-.admin_teacher_role .main-content {
     background-color: #f7f7f7;
 }
 .admin_teacher_role .question-layout.row {
@@ -3859,7 +3856,6 @@ Qustions AI Tabs Style End
     background-color: #fff;
     border-radius: 5px;
     position: relative;
-    z-index: 1;
     padding: 25px;
 }
 .listing-grid-card {
@@ -4214,19 +4210,22 @@ Qustions AI Tabs Style End
 .teacher-table .user-email {
     display: block;
     font-weight: 400;
+    font-size: 14px;
+    color: var(--blue);
 }
 .teacher-table table td {
     color: var(--blue);
-    font-size: 14px;
 }
 .teacher-table table td.has-controls {
-    min-width: 135px;
+    min-width: 160px;
 }
 .teacher-table table td strong {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     vertical-align: middle;
+    font-weight: 500;
+    color: #333;
 }
 .teacher-table table td em {
     font-size: 12px;
@@ -4240,16 +4239,19 @@ Qustions AI Tabs Style End
     display: block;
 }
 .teacher-table table th {
-    height: auto !important;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
 }
 .teacher-table table tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.04);
-    border-top: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.01);
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
-.teacher-table table tr:nth-child(odd) {}
+.teacher-table table tr:nth-child(odd) {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
 .teacher-table .check-box {
     display: inline-block;
     vertical-align: middle;
@@ -4261,7 +4263,8 @@ Qustions AI Tabs Style End
     height: 15px;
     width: 15px;
 }
-.pending-invites-controls button {
+.pending-invites-controls button,
+.quiz-table-controls .btn-sm {
     background-color: #fff;
     border: 1px solid #007bff;
     padding: 6px 10px;
@@ -4273,7 +4276,8 @@ Qustions AI Tabs Style End
     gap: 8px;
     color: var(--blue);
 }
-.pending-invites-controls img {
+.pending-invites-controls img,
+.quiz-table-controls .btn-sm img {
     height: 15px;
     width: 15px;
     filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);
@@ -4384,6 +4388,30 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 }
 
 /* Teacher Search Style End */
+
+/* Rurera-admin-pagination Style Start */
+.rurera-admin-pagination {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+.rurera-admin-pagination .table-counts {
+    padding: 0;
+    color: #666;
+    font-weight: 500;
+}
+.admin_teacher_role .page-item .page-link {
+    border-radius: 0;
+    background-color: inherit;
+    border: 0;
+    color: #666;
+}
+.admin_teacher_role .page-item.active .page-link {
+    background-color: rgba(0,0,0,0.2);
+}
+/* Rurera-admin-pagination Style End */
 
 /* Admin-Rurera-Tabs-Billing Style Start */
 .admin-rurera-tabs-billing .card .card-header {
@@ -4694,7 +4722,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     right: 15px;
     top: 15px;
     content: "";
-    border: 2px solid #333;
+    border: 2px solid #666;
     height: 8px;
     width: 8px;
     border-top: 0;
@@ -4809,7 +4837,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     background: var(--blue);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
@@ -6607,6 +6635,30 @@ button.print-download-btn {
 .quiz-table-controls .btn-sm {
     color: var(--blue) !important;
 }
+
+/* Teacher Dashboard Header Style Start */
+.admin_teacher_role .navbar {
+    height: auto;
+    min-height: 250px;
+    z-index: auto;
+    background-color: var(--blue);
+    border-bottom: 1px solid #f6f6f6;
+    align-items: flex-start;
+}
+.admin_teacher_role .navbar .nav-link,
+.admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
+.admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item,
+.admin_teacher_role .section .section-header .breadcrumb-item+.breadcrumb-item::before,
+.admin_teacher_role .navbar .nav-link.nav-link-user,
+.admin_teacher_role .section .section-header h1 {
+    color: #fff;
+}
+.admin_teacher_role .navbar .nav-link.nav-link-user,
+.admin_teacher_role .navbar .nav-link {
+    position: relative;
+    z-index: 1;
+}
+/* Teacher Dashboard Header Style End */
 
 @media screen and (max-width: 992px) {
     .table-sm table thead {display: none;}

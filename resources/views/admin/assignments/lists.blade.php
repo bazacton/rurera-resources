@@ -443,7 +443,7 @@
                                                 <a href="{{ getAdminPanelUrl() }}/assignments/{{ $assignmentObj->id }}/edit"
                                                 class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
                                                 data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                                    <i class="fa fa-edit"></i>
+                                                    <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
                                                 </a>
                                                 <a href="{{ getAdminPanelUrl() }}/assignments/{{ $assignmentObj->id }}/progress"
                                                 class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
