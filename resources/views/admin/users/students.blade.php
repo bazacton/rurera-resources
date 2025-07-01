@@ -712,6 +712,7 @@
             $("."+target_div).removeClass('rurera-hide');
             $(this).closest('.admin-rurera-tabs').find('li').find('a').removeClass('active');
             $(this).addClass('active');
+            window.location.hash = target_div;
         });
 
         $('body').on('click', '.print-users-logins', function (e) {
