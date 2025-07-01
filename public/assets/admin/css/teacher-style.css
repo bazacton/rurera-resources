@@ -6575,6 +6575,18 @@ button.print-download-btn {
 .admin_teacher_role .skeleton table tr .skelton-hide.skelton-height-lg {min-height: 15px; max-height: 15px;}
 /* Skeleton Loading Style End */
 
+/* custom_quiz srach form Style Start */
+.admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    margin: 0;
+    font-size: 1rem;
+}
+.admin_teacher_role .select2-container--default .select2-selection--multiple {
+    padding-bottom: 0;
+}
+/* custom_quiz srach form Style End */
+
 @media screen and (max-width: 992px) {
     .table-sm table thead {display: none;}
     .table-sm table.table tbody tr {display: block; margin-bottom: 15px;}
