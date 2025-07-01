@@ -6653,6 +6653,11 @@ button.print-download-btn {
 .admin_teacher_role .section .section-header h1 {
     color: #fff;
 }
+.admin_teacher_role .navbar .nav-link.nav-link-user,
+.admin_teacher_role .navbar .nav-link {
+    position: relative;
+    z-index: 1;
+}
 /* Teacher Dashboard Header Style End */
 
 @media screen and (max-width: 992px) {
