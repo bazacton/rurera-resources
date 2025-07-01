@@ -4385,6 +4385,29 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 
 /* Teacher Search Style End */
 
+/* Rurera-admin-pagination Style Start */
+.rurera-admin-pagination {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+.rurera-admin-pagination .table-counts {
+    padding: 0;
+    color: #666;
+}
+.admin_teacher_role .page-item .page-link {
+    border-radius: 0;
+    background-color: inherit;
+    border: 0;
+    color: #666;
+}
+.admin_teacher_role .page-item.active .page-link {
+    background-color: rgba(0,0,0,0.2);
+}
+/* Rurera-admin-pagination Style End */
+
 /* Admin-Rurera-Tabs-Billing Style Start */
 .admin-rurera-tabs-billing .card .card-header {
     min-height: auto;
