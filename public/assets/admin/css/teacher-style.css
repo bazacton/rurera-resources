@@ -4211,6 +4211,7 @@ Qustions AI Tabs Style End
     display: block;
     font-weight: 400;
     font-size: 14px;
+    color: var(--blue);
 }
 .teacher-table table td {
     color: var(--blue);
@@ -4223,6 +4224,8 @@ Qustions AI Tabs Style End
     align-items: center;
     gap: 10px;
     vertical-align: middle;
+    font-weight: 500;
+    color: #333;
 }
 .teacher-table table td em {
     font-size: 12px;
