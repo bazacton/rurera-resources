@@ -669,7 +669,6 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
     padding-bottom: 0 !important;
     height: 100%;
 }
-.navbar .nav-link:hover {color: var(--white);}
 .navbar .nav-link.nav-link-lg div {margin-top: 3px;}
 .navbar .nav-link.nav-link-lg i {margin-left: 0 !important; font-size: 18px; line-height: 32px;}
 .navbar .nav-link.nav-link-user {
