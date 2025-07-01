@@ -193,7 +193,7 @@
                                         </td>
 
                                         <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <div class="quiz-controls">
+                                            <div class="quiz-table-controls">
                                                 @can('admin_quizzes_results')
                                                 <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
                                                 class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
@@ -209,12 +209,13 @@
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                                 @endcan
+                                                
+                                                @can('admin_assignments_delete')
+                                                @include('admin.includes.delete_button',['url' =>
+                                                getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
+                                                @endcan
                                             </div>
                                             
-                                            @can('admin_assignments_delete')
-                                            @include('admin.includes.delete_button',['url' =>
-                                            getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
-                                            @endcan
                                         </td>
                                     </tr>
                                     @endforeach
