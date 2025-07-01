@@ -101,12 +101,15 @@
                         <div class="col-12 col-lg-4">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('public.status') }}</label>
-                                <select class="form-control" id="status" name="status">
-                                    <option value="">{{ trans('public.all') }}</option>
-                                    @foreach(\App\Models\WebinarAssignmentHistory::$assignmentHistoryStatus as $status)
-                                        <option value="{{ $status }}" {{ (request()->get('status') == $status) ? 'selected' : '' }}>{{ trans('update.assignment_history_status_'.$status) }}</option>
-                                    @endforeach
-                                </select>
+                                <div class="select-holder">
+                                    <select class="form-control" id="status" name="status">
+                                        <option value="">{{ trans('public.all') }}</option>
+                                        @foreach(\App\Models\WebinarAssignmentHistory::$assignmentHistoryStatus as $status)
+                                            <option value="{{ $status }}" {{ (request()->get('status') == $status) ? 'selected' : '' }}>{{ trans('update.assignment_history_status_'.$status) }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
