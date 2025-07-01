@@ -657,11 +657,13 @@ $rand_id = rand(999,99999);
                                                                 <div class="row">
                                                                     <div class="col-12">
                                                                         <div class="form-group">
-                                                                            <select class="form-control">
-                                                                                <option value="Accepted">Accepted</option>
-                                                                                <option value="Rejected">Rejected</option>
-                                                                                <option value="Deleted">Deleted</option>
-                                                                            </select>
+																			<div class="select-holder">
+																				<select class="form-control">
+																					<option value="Accepted">Accepted</option>
+																					<option value="Rejected">Rejected</option>
+																					<option value="Deleted">Deleted</option>
+																				</select>
+																			</div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12">
