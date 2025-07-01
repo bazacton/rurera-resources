@@ -429,7 +429,6 @@ table tr:hover .table-links {opacity: 1;}
 .table td:has(.btn-transparent) {min-width: 150px;}
 .card .card-body table th {
     color: #333;
-    font-size: 1rem;
 }
 
 @media (max-width: 575.98px) {
