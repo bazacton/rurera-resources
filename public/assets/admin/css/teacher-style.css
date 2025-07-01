@@ -4210,6 +4210,7 @@ Qustions AI Tabs Style End
 .teacher-table .user-email {
     display: block;
     font-weight: 400;
+    font-size: 14px;
 }
 .teacher-table table td {
     color: var(--blue);
