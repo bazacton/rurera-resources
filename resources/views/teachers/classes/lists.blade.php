@@ -16,7 +16,7 @@
             <div class="breadcrumb-item">Classes</div>
         </div>
     </div>
-    <div class="content-holder">
+    <div class="content-holder card p-25">
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="nav-area">
