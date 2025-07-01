@@ -406,6 +406,7 @@
     border: 0;
     font-size: 1rem;
     color: #495057;
+    cursor: pointer;
 }
 .create-class-modal .select-holder {
     margin-bottom: 15px;
