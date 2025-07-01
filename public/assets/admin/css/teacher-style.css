@@ -6620,20 +6620,6 @@ button.print-download-btn {
     font-size: 1rem;
 }
 /* custom_quiz srach form Style End */
-.quiz-table-controls {
-    opacity: 0;
-    visibility: visible;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-.table-responsive table tbody tr:hover .quiz-table-controls {
-    opacity: 1;
-    visibility: visible;
-}
-.quiz-table-controls .btn-sm {
-    color: var(--blue) !important;
-}
 
 /* Teacher Dashboard Header Style Start */
 .admin_teacher_role .navbar {
