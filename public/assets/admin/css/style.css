@@ -415,6 +415,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 15px; height: auto; vertical-align: middle;}
 .table:not(.table-sm):not(.table-md):not(.dataTable) th {
     text-transform: uppercase;
+    padding: 10px 15px;
 }
 .table:not(.table-sm) thead th {border-bottom: none; background-color: rgba(0, 0, 0, 0.04); color: #666; padding-top: 15px; padding-bottom: 15px;}
 .table.table-md th,
