@@ -72,18 +72,23 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="form-group col-md-6" id="expiration-date">
-                                                        <label>Expiration Date</label><br/>
-                                                        <select class="form-control" id="expiration-month" name="expiration-month" style="float: left; width: 100px; margin-right: 10px;">
-                                                            @foreach($months as $k=>$v)
-                                                                <option value="{{ $k }}" {{ old('expiration-month') == $k ? 'selected' : '' }}>{{ $v }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                        <select class="form-control" id="expiration-year" name="expiration-year"  style="float: left; width: 100px;">
+                                                        <label>Expiration Date</label>
+                                                        <div class="select-holder">
+                                                            <select class="form-control" id="expiration-month" name="expiration-month" style="float: left; width: 100px; margin-right: 10px;">
+                                                                @foreach($months as $k=>$v)
+                                                                    <option value="{{ $k }}" {{ old('expiration-month') == $k ? 'selected' : '' }}>{{ $v }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </div>
+                                                        <div class="select-holder">
+                                                            <select class="form-control" id="expiration-year" name="expiration-year"  style="float: left; width: 100px;">
 
                                                             @for($i = date('Y'); $i <= (date('Y') + 15); $i++)
                                                                 <option value="{{ $i }}">{{ $i }}</option>
                                                             @endfor
-                                                        </select>
+                                                            </select>
+                                                        </div>
+                                                        
                                                     </div>
                                                     <!--<div class="form-group col-md-6" id="credit_cards" style="margin-top: 22px;">-->
                                                 <!--    <img src="{{ asset('images/visa.jpg') }}" id="visa">-->
