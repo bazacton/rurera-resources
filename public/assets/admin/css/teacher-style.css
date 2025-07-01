@@ -4264,8 +4264,7 @@ Qustions AI Tabs Style End
     height: 15px;
     width: 15px;
 }
-.pending-invites-controls button,
-.quiz-table-controls .btn-sm {
+.pending-invites-controls button {
     background-color: #fff;
     border: 1px solid #007bff;
     padding: 6px 10px;
@@ -4277,8 +4276,7 @@ Qustions AI Tabs Style End
     gap: 8px;
     color: var(--blue);
 }
-.pending-invites-controls img,
-.quiz-table-controls .btn-sm img {
+.pending-invites-controls img {
     height: 15px;
     width: 15px;
     filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);
