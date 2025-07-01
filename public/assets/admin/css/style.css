@@ -627,7 +627,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 
 /* 3.18 Navbar */
 .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {display: flex;}
-.navbar {height: auto; min-height: 250px; align-items: flex-start !important; left: 250px; right: 5px; position: absolute; z-index: 1; background-color: var(--blue); border-bottom: 1px solid #f6f6f6;}
+.navbar {height: auto; min-height: 250px; align-items: flex-start !important; left: 250px; right: 5px; position: absolute; background-color: var(--blue); border-bottom: 1px solid #f6f6f6;}
 .navbar.active {background-color: var(--primary); box-shadow: rgba(103, 119, 239, 0.2), rgba(0, 0, 0, 0.03);}
 .navbar-bg {content: ' '; position: absolute; top: 0; left: 0; width: 100%; height: 115px; background-color: var(--primary); z-index: -1;}
 .navbar-bg:empty {display: none;}
@@ -651,7 +651,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .navbar .form-inline .search-result .search-item .search-icon {width: 35px; height: 35px; line-height: 35px; text-align: center; border-radius: 50%;}
 .navbar .active .nav-link {color: var(--white); font-weight: 700;}
 .navbar .navbar-text {color: var(--white);}
-.navbar .nav-link {background-color: inherit; color: var(--white); padding-left: 15px !important; padding-right: 15px !important; padding-top: 0 !important; padding-bottom: 0 !important; height: 100%;}
+.navbar .nav-link {background-color: inherit; color: var(--white); padding-left: 15px !important; padding-right: 15px !important; padding-top: 0 !important; padding-bottom: 0 !important; height: 100%; position: relative; z-index: 1;}
 .navbar .nav-link:hover {color: var(--white);}
 .navbar .nav-link.nav-link-lg div {margin-top: 3px;}
 .navbar .nav-link.nav-link-lg i {margin-left: 0 !important; font-size: 18px; line-height: 32px;}
