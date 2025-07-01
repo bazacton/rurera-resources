@@ -124,7 +124,7 @@
 
                                     </tbody>
                                 </table>
-                                <div class="rurera-admin-pagination mt-30">
+                                <div class="rurera-admin-pagination">
                                     <span class="table-counts">{{$school->students->count()}} Students</span>
                                     {{ $students->links() }}
                                 </div>
