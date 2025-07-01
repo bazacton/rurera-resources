@@ -117,20 +117,23 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{$subject_id}}">
-                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                <optgroup label="{{  $category->title }}">
-                                    @foreach($category->subCategories as $subCategory)
-                                    <option value="{{ $subCategory->id }}" @if($category_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                    @endforeach
-                                </optgroup>
-                                @else
-                                <option value="{{ $category->id }}" @if($category_id == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                @endif
-                                @endforeach
-                            </select>
+							<div class="select-holder">
+								<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{$subject_id}}">
+									<option value="">{{trans('admin/main.all_categories')}}</option>
+									@foreach($categories as $category)
+									@if(!empty($category->subCategories) and count($category->subCategories))
+									<optgroup label="{{  $category->title }}">
+										@foreach($category->subCategories as $subCategory)
+										<option value="{{ $subCategory->id }}" @if($category_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+										@endforeach
+									</optgroup>
+									@else
+									<option value="{{ $category->id }}" @if($category_id == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+									@endif
+									@endforeach
+								</select>
+							</div>
+                            
                         </div>
                     </div>
 
@@ -155,11 +158,14 @@
 					<div class="col-md-2">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
-						<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'sub_parts_questions_report')}}" id="chapter_id"
-								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-								name="chapter_id">
-							<option value="">Please select year, subject</option>
-						</select>
+						<div class="select-holder">
+							<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'sub_parts_questions_report')}}" id="chapter_id"
+									class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+									name="chapter_id">
+								<option value="">Please select year, subject</option>
+							</select>
+						</div>
+						
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -173,11 +179,14 @@
 					<div class="col-md-2">
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
-						<select id="chapter_id"
-							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id">
-						<option value="">Please select year, subject, Topic</option>
-					</select>
+						<div class="select-holder">
+							<select id="chapter_id"
+								class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+								name="sub_chapter_id">
+							<option value="">Please select year, subject, Topic</option>
+						</select>
+						</div>
+						
 					@error('sub_chapter_id')
 					<div class="invalid-feedback">
 						{{ $message }}
