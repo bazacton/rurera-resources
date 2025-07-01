@@ -684,6 +684,12 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .remove-caret:after {display: none;}
 .navbar .nav-link.disabled {color: var(--white); opacity: .6;}
 .nav-collapse {display: flex;}
+.main-wrapper nav.navbar .notification-toggle.disabled img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: none;
+}
 
 @media (max-width: 575.98px) {
     body.search-show .navbar .form-inline .search-element {display: block;}
