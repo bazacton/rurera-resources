@@ -115,15 +115,18 @@
                                 <div class="col-12 col-lg-4">
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('public.type') }}</label>
-                                        <select class="form-control" id="type" name="type">
-                                            <option value="all"
-                                                    @if(request()->get('type',null) == 'all') selected="selected" @endif>{{ trans('public.all') }}</option>
-                                            <option value="webinar"
-                                                    @if(request()->get('type',null) == 'webinar') selected="selected" @endif>{{ trans('webinars.webinar') }}</option>
-                                            <option value="meeting"
-                                                    @if(request()->get('type',null) == 'meeting') selected="selected" @endif>{{ trans('public.meeting') }}</option>
+                                        <div class="select-holder">
+                                            <select class="form-control" id="type" name="type">
+                                                <option value="all"
+                                                        @if(request()->get('type',null) == 'all') selected="selected" @endif>{{ trans('public.all') }}</option>
+                                                <option value="webinar"
+                                                        @if(request()->get('type',null) == 'webinar') selected="selected" @endif>{{ trans('webinars.webinar') }}</option>
+                                                <option value="meeting"
+                                                        @if(request()->get('type',null) == 'meeting') selected="selected" @endif>{{ trans('public.meeting') }}</option>
 
-                                        </select>
+                                            </select>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
