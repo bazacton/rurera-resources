@@ -47,13 +47,16 @@
 
                     <div class="form-group">
                         <label class="input-label">{{ trans('/admin/main.category') }}</label>
-                        <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
-                            <option selected disabled>{{ trans('admin/main.choose_category') }}</option>
+                        <div class="select-holder">
+                            <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
+                                <option selected disabled>{{ trans('admin/main.choose_category') }}</option>
 
-                            @foreach($blogCategories as $blogCategory)
-                                <option value="{{ $blogCategory->id }}" {{ (((!empty($post) and $post->category_id == $blogCategory->id) or (old('category_id') == $blogCategory->id)) ? 'selected="selected"' : '') }}>{{ $blogCategory->title }}</option>
-                            @endforeach
-                        </select>
+                                @foreach($blogCategories as $blogCategory)
+                                    <option value="{{ $blogCategory->id }}" {{ (((!empty($post) and $post->category_id == $blogCategory->id) or (old('category_id') == $blogCategory->id)) ? 'selected="selected"' : '') }}>{{ $blogCategory->title }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        
 
                         @error('category_id')
                         <div class="invalid-feedback">
