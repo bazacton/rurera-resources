@@ -4398,6 +4398,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 .rurera-admin-pagination .table-counts {
     padding: 0;
     color: #666;
+    font-weight: 500;
 }
 .admin_teacher_role .page-item .page-link {
     border-radius: 0;
