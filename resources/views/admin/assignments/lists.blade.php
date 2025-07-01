@@ -21,7 +21,7 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="input-label">{{trans('admin/main.category')}}</label>
-                        <div class="select-box">
+                        <div class="select-holder">
                             <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
                                 <option value="">{{trans('admin/main.all_categories')}}</option>
                                 @foreach($categories as $category)
