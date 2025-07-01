@@ -130,50 +130,22 @@
 /* Admin Classes Style End */
 
 /* Admin Create-Class-Modal Style Start */
-.class-edit-modal .modal-footer {
-    padding-top: 0;
-}
-.create-class-modal .modal-footer {
-    padding: 0;
-}
+.class-edit-modal .modal-footer {padding-top: 0;}
+.create-class-modal .modal-footer {padding: 0;}
 .create-class-modal .modal-footer button[type="button"],
-.class-edit-modal .modal-footer button[type="button"] {
-    background-color: #fedfdf;
-    border-color: #b43939;
-    color: #d21b1b;
-}
+.class-edit-modal .modal-footer button[type="button"] {background-color: #fedfdf; border-color: #b43939; color: #d21b1b;}
 .create-class-modal .modal-footer button,
-.class-edit-modal .modal-footer button {
-    box-shadow: none;
-}
+.class-edit-modal .modal-footer button {box-shadow: none;}
 .admin_teacher_role .create-class-modal .form-control,
-.admin_teacher_role .class-edit-modal .form-control  {
-    background-color: inherit;
-}
+.admin_teacher_role .class-edit-modal .form-control  {background-color: inherit;}
 .admin_teacher_role .create-class-modal .form-group,
-.admin_teacher_role .class-edit-modal .form-group {
-    margin-bottom: 15px;
-    padding-left: 0;
-}
+.admin_teacher_role .class-edit-modal .form-group {margin-bottom: 15px; padding-left: 0;}
 .admin_teacher_role .form-field,
-.admin_teacher_role .input-group {
-    position: relative;
-}
+.admin_teacher_role .input-group {position: relative;}
 .admin_teacher_role .form-field .icon-box,
-.admin_teacher_role .input-group .icon-box {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    z-index: 4;
-}
+.admin_teacher_role .input-group .icon-box {position: absolute; top: 50%; left: 12px; transform: translateY(-50%); z-index: 4;}
 .admin_teacher_role .form-field .icon-box img,
-.admin_teacher_role .input-group .icon-box img {
-    height: 15px;
-    width: 15px;
-    object-fit: contain;
-    border-radius: 0;
-}
+.admin_teacher_role .input-group .icon-box img {height: 15px; width: 15px; object-fit: contain; border-radius: 0;}
 .admin_teacher_role .form-field .icon-box ~ .form-control,
 .admin_teacher_role .input-group .icon-box ~ .form-control {
     padding-left: 35px;
@@ -410,7 +382,7 @@
     margin-bottom: 15px;
 }
 .create-class-modal .form-group .input-group:has(select):before {
-    margin-top: -5px;
+    margin-top: -6px;
     border-top: 2px solid #aaa;
     border-right: 2px solid #aaa;
     border-left: 0;
