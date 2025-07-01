@@ -227,12 +227,12 @@
                                                         <i class="fa fa-edit"></i>
                                                     </a>
                                                     @endcan
+                                                    
+                                                    @can('admin_assignments_delete')
+                                                    @include('admin.includes.delete_button',['url' =>
+                                                    getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
+                                                    @endcan
                                                 </div>
-                                                
-                                                @can('admin_assignments_delete')
-                                                @include('admin.includes.delete_button',['url' =>
-                                                getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
-                                                @endcan
                                             </div>
                                         </td>
                                     </tr>
