@@ -6589,6 +6589,14 @@ button.print-download-btn {
     font-size: 1rem;
 }
 /* custom_quiz srach form Style End */
+.quiz-table-controls {
+    opacity: 0;
+    visibility: visible;
+}
+.table-responsive table tbody tr:hover .quiz-table-controls {
+    opacity: 1;
+    visibility: visible;
+}
 
 @media screen and (max-width: 992px) {
     .table-sm table thead {display: none;}
