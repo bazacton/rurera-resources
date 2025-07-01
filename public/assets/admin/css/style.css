@@ -1429,7 +1429,7 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 #question_preview .left-content {position: relative; width: 100%; max-width: 875px; overflow: inherit; margin: 0 auto; min-height: 150px;}
 #question_preview .question-layout {padding-left: 10px;}
 #question_preview .marks {right: 30px; top: 20px; bottom: auto;}
-#question_preview .question-layout-block .prev-next-controls {position: absolute;}
+#question_preview .question-layout-block .prev-next-controls {position: relative; bottom: 0;}
 .topic-parts-options .form-field {margin-bottom: 15px;}
 .topic-parts-options label h5 {color: #999 !important;}
 .lms-quiz-create .lms-dashboard-card {box-shadow: none;}
