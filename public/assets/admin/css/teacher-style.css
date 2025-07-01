@@ -6636,6 +6636,23 @@ button.print-download-btn {
     color: var(--blue) !important;
 }
 
+/* Teacher Dashboard Header Style Start */
+.admin_teacher_role .navbar {
+    height: auto;
+    min-height: 250px;
+    z-index: 1;
+    background-color: var(--blue);
+    border-bottom: 1px solid #f6f6f6;
+}
+.admin_teacher_role .navbar .nav-link,
+.admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
+.admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item,
+.admin_teacher_role .section .section-header .breadcrumb-item+.breadcrumb-item::before,
+.admin_teacher_role .navbar .nav-link.nav-link-user {
+    color: #fff;
+}
+/* Teacher Dashboard Header Style End */
+
 @media screen and (max-width: 992px) {
     .table-sm table thead {display: none;}
     .table-sm table.table tbody tr {display: block; margin-bottom: 15px;}
