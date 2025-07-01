@@ -54,20 +54,23 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
-                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                <optgroup label="{{  $category->title }}">
-                                    @foreach($category->subCategories as $subCategory)
-                                    <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                    @endforeach
-                                </optgroup>
-                                @else
-                                <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                @endif
-                                @endforeach
-                            </select>
+							<div class="select-holder">
+								<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
+									<option value="">{{trans('admin/main.all_categories')}}</option>
+									@foreach($categories as $category)
+									@if(!empty($category->subCategories) and count($category->subCategories))
+									<optgroup label="{{  $category->title }}">
+										@foreach($category->subCategories as $subCategory)
+										<option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+										@endforeach
+									</optgroup>
+									@else
+									<option value="{{ $category->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+									@endif
+									@endforeach
+								</select>
+							</div>
+                            
                         </div>
                     </div>
 					
