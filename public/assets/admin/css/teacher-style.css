@@ -6585,6 +6585,9 @@ button.print-download-btn {
 .admin_teacher_role .select2-container--default .select2-selection--multiple {
     padding-bottom: 0;
 }
+.admin_teacher_role select.form-control:not([size]):not([multiple]) {
+    font-size: 1rem;
+}
 /* custom_quiz srach form Style End */
 
 @media screen and (max-width: 992px) {
