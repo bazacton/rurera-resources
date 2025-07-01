@@ -632,7 +632,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
     left: 250px;
     right: 5px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     background-color: transparent;
     background-color: #fff;
     border-bottom: 1px solid #f6f6f6;
