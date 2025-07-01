@@ -1697,9 +1697,6 @@ Admin Questions Generator Page Style End
 .similarity-serial.red span {background-color: var(--red);}
 .similarity-content-block .card .card-body p {line-height: 22px;}
 .similarity-content-block ul {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
-.admin_teacher_role .main-content {
-    background-color: #f7f7f7;
-}
 .similarity-content-block .rureraform-toolbar-list {gap: 5px;}
 .similarity-content-block-data .card .card-body ul {margin-bottom: 10px;}
 .similarity-content-block ul:has(li .rurera-hide),
