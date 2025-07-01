@@ -6643,12 +6643,14 @@ button.print-download-btn {
     z-index: 1;
     background-color: var(--blue);
     border-bottom: 1px solid #f6f6f6;
+    align-items: flex-start;
 }
 .admin_teacher_role .navbar .nav-link,
 .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
 .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item,
 .admin_teacher_role .section .section-header .breadcrumb-item+.breadcrumb-item::before,
-.admin_teacher_role .navbar .nav-link.nav-link-user {
+.admin_teacher_role .navbar .nav-link.nav-link-user,
+.admin_teacher_role .section .section-header h1 {
     color: #fff;
 }
 /* Teacher Dashboard Header Style End */
