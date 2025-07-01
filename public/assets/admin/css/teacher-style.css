@@ -4716,7 +4716,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     right: 15px;
     top: 15px;
     content: "";
-    border: 2px solid #333;
+    border: 2px solid #666;
     height: 8px;
     width: 8px;
     border-top: 0;
