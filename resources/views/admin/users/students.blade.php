@@ -41,16 +41,18 @@
                     <div class="teacher-table">
                         <div class="card">
                             <div class="card-header">
-                                <div class="bulk-actions">
-                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <div class="bulk-actions">
+                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                    <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -322,9 +324,25 @@
                             </button>
                         </div>
                         <div class="select-holder">
+                            <h5>Select School</h5>
+                            <div class="select-box">
+                                <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
+                                    @if($schools_list->count() > 0)
+                                        @php $row_no = 0; @endphp
+                                        @foreach($schools_list as $schoolObj)
+                                            @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
+                                            <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                            @php $row_no++; @endphp
+                                        @endforeach
+                                    @endif
+                                </select>
+                            </div>
+                        </div>
+                        <div class="select-holder ">
                             <h5>Select a Class</h5>
                             <div class="select-box">
-                                <select class="student-class-change">
+                                <select name="class_id" class="student-class-change school-classes-list">
+                                    <option value="">Select Class</option>
                                     @if($classes->count() > 0)
                                         @php $row_no = 0; @endphp
                                         @foreach($classes as $classObj)
@@ -471,8 +489,60 @@
                         </div>
                         <div class="student-form">
                             <div class="textarea-heading">
+                                <h5>Username Pattern</h5>
+                            </div>
+
+                            <div class="username-type-selection">
+                                <div class="form-check mt-1">
+                                    <input type="radio" name="username_type" id="username_type_first_last_initials" value="first_last_initials" class="form-check-input section-child" checked>
+                                    <label class="form-check-label cursor-pointer mt-0" for="username_type_first_last_initials">
+                                        First + Last Initial – <small>Full first name + first letter of last name</small>
+                                    </label>
+                                </div>
+                                <div class="form-check mt-1">
+                                    <input type="radio" name="username_type" id="username_type_initial_plus_last" value="initial_plus_last" class="form-check-input section-child">
+                                    <label class="form-check-label cursor-pointer mt-0" for="username_type_initial_plus_last">
+                                        Initial + Last – <small>First letter of first name + full last name</small>
+                                    </label>
+                                </div>
+                                <div class="form-check mt-1">
+                                    <input type="radio" name="username_type" id="username_type_first_last_three" value="first_last_three" class="form-check-input section-child">
+                                    <label class="form-check-label cursor-pointer mt-0" for="username_type_first_last_three">
+                                        First3 + Last3 – <small>First 3 letters of first name + first 3 letters of last name</small>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="textarea-heading">
+                                <h5>Password Pattern</h5>
+                            </div>
+
+                            <div class="username-type-selection">
+                                <div class="form-check mt-1">
+                                    <input type="radio" name="password_type" id="password_type_random" value="random" class="form-check-input section-child" checked>
+                                    <label class="form-check-label cursor-pointer mt-0" for="password_type_random">
+                                        Random – <small>Using Captial + Small + Numbers + Special Characters</small>
+                                    </label>
+                                </div>
+                                <div class="form-check mt-1">
+                                    <input type="radio" name="password_type" id="password_type_vegetables" value="vegetables" class="form-check-input section-child">
+                                    <label class="form-check-label cursor-pointer mt-0" for="password_type_vegetables">
+                                        Vegetables – <small>Combining vegetables names for a password</small>
+                                    </label>
+                                </div>
+                                <div class="form-check mt-1">
+                                    <input type="radio" name="password_type" id="password_type_fruits" value="fruits" class="form-check-input section-child">
+                                    <label class="form-check-label cursor-pointer mt-0" for="password_type_fruits">
+                                        Fruits – <small>Combining Fruits Names for a passwore</small>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="textarea-heading">
                                 <h5>Student Full Names</h5>
                             </div>
+
+
+
+
                             <div class="textarea-field">
                                 <textarea name="students_full_name" placeholder="Enter Student Full name per line."></textarea>
                                 <p>List one student per line. You can also copy/paste your student list from&nbsp;Word&nbsp;or&nbsp;Excel.</p>
@@ -490,7 +560,7 @@
                             <input type="hidden" name="class_id" class="student_class_id" value="0">
                         <div class="teacher-header">
                             <h2 class="modal-title">Import CSV</h2>
-                            <p class="subheading">Roots International – 5th Grade</p>
+                            <p class="subheading class-name-full">Roots International – 5th Grade</p>
                         </div>
                         <div class="import-csv">
                             <div class="import-csv-list">
@@ -511,10 +581,11 @@
                                 <table>
                                 <thead>
                                     <tr>
-                                    <th>STUDENT_USERNAME*</th>
+                                    <th>STUDENT_USERNAME</th>
                                     <th>PASSWORD*</th>
                                     <th>FULL_NAME*</th>
                                     <th>EMAIL</th>
+                                    <th>CLASS_CODE</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -523,18 +594,28 @@
                                     <td>mypass123</td>
                                     <td>Butler</td>
                                     <td>jonny@myschool.edu</td>
+                                    <td>TIN9JN6FBB94H</td>
                                     </tr>
                                     <tr>
                                     <td>student123</td>
                                     <td>h@ll0</td>
                                     <td>Jenny</td>
-                                    <td>j.jones@myschool.edu</td>
+                                    <td></td>
+                                    <td>TIN9JN6FBB94H</td>
                                     </tr>
                                     <tr>
-                                    <td>kelly-jones</td>
+                                    <td></td>
                                     <td>Str0Ngp@$$w0Rdd</td>
                                     <td>Kelly</td>
                                     <td>k.jones@myschool.edu</td>
+                                    <td>TIN9JN6FBB94H</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>wPrleNp@@4wuRdd</td>
+                                        <td>Steven Sim</td>
+                                        <td>steven.sim@schoo.edu</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                                 </table>
@@ -548,7 +629,7 @@
                                     <strong>Drag your CSV file here or...</strong>
                                     <input type="file" id="csv-file" name="import-spreadsheet">
                                     <label for="csv-file">Choose file</label>
-                                    <span>no file choosen</span>
+                                    <span class="choosen-file-name">no file choosen</span>
                                 </div>
                                 </div>
                             </div>
@@ -562,7 +643,7 @@
                     <div id="section4" class="modal-section class-join-modal">
                         <div class="teacher-header">
                             <h2 class="modal-title">Class Join Link</h2>
-                            <p class="subheading">Roots International – 5th Grade</p>
+                            <p class="subheading class-name-full">Roots International – 5th Grade</p>
                         </div>
                         <div class="class-join">
                             <p class="instruction">
@@ -571,8 +652,8 @@
                             <div class="link-box">
                                 <div class="link">
                                 <span class="link-icon">📋</span>
-                                <a href="https://rurera.com/join#64907A2E31D12" class="class-join-link" target="_blank">
-                                    https://rurera.com/join#64907A2E31D12
+                                <a href="https://rurera.com/join/64907A2E31D12" class="class-join-link" target="_blank">
+                                    https://rurera.com/join/64907A2E31D12
                                 </a>
                                 </div>
                                 <button class="copy-btn copy-to-text" data-copy_to="class-join-link" type="button">Copy Link</button>
@@ -613,7 +694,7 @@
                             <form action="javascript:;" method="POST" class="mb-0 edit-student-single">
                                 {{ csrf_field() }}
                                 <div class="edit-student-block"></div>
-                                <div class="teacher-buttons mt-10">
+                                <div class="teacher-buttons mt-30">
                                     <button type="submit" class="btn btn-primary edit-single-student-btn">Edit Single Student</button>
                                 </div>
                             </form>
@@ -695,6 +776,7 @@
                     $(".messages-layout-student-block").removeClass('rurera-hide');
                     $(".edit-student-form-block").addClass('rurera-hide');
                     $(".edit-student-form-block").removeClass('active');
+                    $(".edit-student-form-block").addClass('active');
                 }
             });
             return false;
@@ -715,6 +797,7 @@
                     $(".messages-layout-block").html(return_data);
                     $(".messages-layout-block").removeClass('rurera-hide');
                     $(".add-student-single-block").addClass('rurera-hide');
+                    $(".add-student-single-block").removeClass('active');
 
                 }
             });
@@ -735,6 +818,7 @@
                     $(".messages-layout-block").html(return_data);
                     $(".messages-layout-block").removeClass('rurera-hide');
                     $(".import-students-list-block").addClass('rurera-hide');
+                    $(".import-students-list-block").removeClass('active');
 
                 }
             });
@@ -756,6 +840,7 @@
                     $(".messages-layout-block").html(return_data);
                     $(".messages-layout-block").removeClass('rurera-hide');
                     $(".import-students-file-block").addClass('rurera-hide');
+                    $(".import-students-file-block").removeClass('active');
 
                 }
             });
@@ -775,6 +860,16 @@
             $("."+target_class).addClass('active');
         });
 
+        $(document).on('change', '#csv-file', function (e) {
+            var fileName = $(this).val().split('\\').pop(); // Get file name from full path
+
+            if (fileName) {
+                $('.choosen-file-name').html(fileName);
+            } else {
+                $('.choosen-file-name').html('no file chosen');
+            }
+        });
+
         $(document).on('click', '.reset-form', function (e) {
             var form_class = $(this).attr('data-form_class');
             $("."+form_class)[0].reset();
@@ -785,8 +880,8 @@
         $(document).on('change', '.student-class-change', function (e) {
             var class_title = $(this).find('option:selected').attr('data-class_title');
             var class_code = $(this).find('option:selected').attr('data-class_code');
-            $(".class-join-link").html("{{ url('/join#') }}"+class_code);
-            $(".class-join-link").attr('href', "{{ url('/join#') }}"+class_code);
+            $(".class-join-link").html("{{ url('/join') }}/"+class_code);
+            $(".class-join-link").attr('href', "{{ url('/join') }}/"+class_code);
             $(".student_class_id").val($(this).val());
             $(".class-name-full").html(class_title);
         });
@@ -890,6 +985,8 @@
         sectionHistory = [];
     });
     $(document).ready(function() {
+
+        $(".schools-list-ajax").change();
         var hash = window.location.hash;
         if (hash) {
             $(hash + '.nav-link').trigger('click');

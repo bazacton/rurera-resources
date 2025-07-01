@@ -62,6 +62,9 @@
                             <table class="table table-striped font-14">
                                 <tr>
                                     <th class="text-left">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-left">No of Classes</th>
+                                    <th class="text-left">No of Faculty</th>
+                                    <th class="text-left">No of Students</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
@@ -72,6 +75,21 @@
                                     <td>
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span>{{ $schoolData->title }}</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $schoolData->schoolClasses->count() }}</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $schoolData->teachers->count() }}</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $schoolData->students->count() }}</span>
                                         </div>
                                     </td>
                                     <td class="text-left">
@@ -85,6 +103,7 @@
                                         </div>
                                     </td>
                                     <td>
+                                        @if($schoolData->id != $userObj->school_id)
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             @can('admin_schools_edit')
                                             <a href="/admin/schools/{{ $schoolData->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
@@ -96,6 +115,7 @@
                                             @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
                                             @endcan
                                         </div>
+                                        @endif
                                     </td>
 
                                 </tr>

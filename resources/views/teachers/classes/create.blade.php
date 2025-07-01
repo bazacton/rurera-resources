@@ -1023,7 +1023,7 @@
                                 </div>
                             </div>
                             <div class="textarea-field">
-                                <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite"></textarea>
+                                <textarea name="teachers_email" class="teachers_email_input" placeholder="Enter your teachers work email address."></textarea>
                                 <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
                                 <p>Maximum no of emails allowed is 20</p>
                             </div>
@@ -1083,29 +1083,21 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <div class="form-field">
-                                <span class="icon-box">
-                                    <img src="/assets/default/img/user.png" alt="user">
-                                </span>
-                                <input type="text" name="full_name" class="form-control" value="" placeholder="Full name of the new member" required autocomplete="off">
-                            </div>
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <div class="form-field">
-                                <span class="icon-box">
-                                    <img src="/assets/default/img/envelope.jpg" alt="envelope">
-                                </span>
-                                <input name="email" type="text" class="form-control" id="email" value="" placeholder="Email for login & updates" required autocomplete="off">
-                            </div>
+                            <input name="email" type="text" class="form-control " id="email" value="" required>
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
                             <div class="input-group">
-                                <span class="icon-box">
-                                    <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
+                                <div class="input-group-prepend">
+                                <span type="button" class="input-group-text">
+                                <i class="fa fa-lock"></i>
                                 </span>
-                                <input type="password" name="password" class="form-control" placeholder="Create a strong password" autocomplete="off">
+                                </div>
+                                <input type="password" name="password" class="form-control ">
                             </div>
                         </div>
                         <div class="text-right mt-4">

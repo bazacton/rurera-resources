@@ -165,8 +165,10 @@
                                                 </div>
                                                 Teacher/Admin
                                             </th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">School - Class</th>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">Role</th>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">Date Invited</th>
+
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -185,6 +187,7 @@
                                                     </span>
                                                         </strong>
                                                     </td>
+                                                    <td data-th="SchoolClass" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($invitationObj->InvitationSchool->title)? $invitationObj->InvitationSchool->title : '-'}} - {{isset($invitationObj->InvitationClass->title)? $invitationObj->InvitationClass->title : '-'}}</td>
                                                     <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($invitationObj->role->caption)? $invitationObj->role->caption : '-'}}</td>
                                                     <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($invitationObj->created_at > 0)? dateTimeFormat($invitationObj->created_at, 'j M y | H:i') : '-'}}</td>
                                                     <td class="has-controls">
@@ -258,6 +261,33 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="select-holder">
+                                    <h5>Select School</h5>
+                                    <div class="select-box">
+                                        <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
+                                            @if($schools_list->count() > 0)
+                                                @php $row_no = 0; @endphp
+                                                @foreach($schools_list as $schoolObj)
+                                                    @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
+                                                    <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                                    @php $row_no++; @endphp
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="select-holder">
+                                    <h5>Select a Class</h5>
+                                    <div class="select-box">
+                                        <select name="class_id" class="student-class-change school-classes-list">
+                                            <option value="">Select Class</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         <div class="textarea-field">
                             <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite"></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
@@ -289,7 +319,6 @@
                         {{ csrf_field() }}
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
-                        <input type="hidden" name="school_id" value="{{$userObj->school_id}}">
 
                         <div class="form-group">
                             <label class="input-label">Role</label>
@@ -314,6 +343,33 @@
                                     <input type="radio" id="school_admin_role-add" name="role_id"
                                            class="assignment_subject_check" value="14">
                                     <label for="school_admin_role-add">School Admin</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-holder">
+                                <h5>Select School</h5>
+                                <div class="select-box">
+                                    <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
+                                        @if($schools_list->count() > 0)
+                                            @php $row_no = 0; @endphp
+                                            @foreach($schools_list as $schoolObj)
+                                                @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
+                                                <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                                @php $row_no++; @endphp
+                                            @endforeach
+                                        @endif
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-holder">
+                                <h5>Select a Class</h5>
+                                <div class="select-box">
+                                    <select name="class_id" class="student-class-change school-classes-list">
+                                        <option value="">Select Class</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -476,6 +532,7 @@
     });
 
     $(document).ready(function() {
+        $(".schools-list-ajax").change();
         var hash = window.location.hash;
         if (hash) {
             $(hash + '.nav-link').trigger('click');

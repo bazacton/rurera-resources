@@ -1489,3 +1489,22 @@ $(document).on('change', '.check-uncheck-all', function (e) {
     var isChecked = $(this).is(':checked');
     $('.' + target_class).prop('checked', isChecked);
 });
+
+$(document).on('change', '.schools-list-ajax', function (e) {
+
+    var next_target = $(this).attr('data-next_target');
+    var selected_value = $(this).attr('data-selected_value');
+    var school_id = $(this).val();
+
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/schools/get_schools_classes',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {'school_id':school_id, 'selected_value': selected_value},
+        success: function (return_data) {
+            $("."+next_target).html(return_data);
+        }
+    });
+});

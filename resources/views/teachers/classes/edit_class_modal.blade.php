@@ -74,6 +74,21 @@
 
     <!-- Class Name with Color -->
     <div class="form-group">
+        <label for="SchoolName">Select School</label>
+        <div class="select-holder input-group">
+            <div class="select-box">
+                <select class="student-school-change" name="school_id">
+                    @if($schools_list->count() > 0)
+                        @php $row_no = 0; @endphp
+                        @foreach($schools_list as $schoolObj)
+                            @php $is_checked = ($schoolObj->id == $class->school_id)? 'selected' : ''; @endphp
+                            <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                            @php $row_no++; @endphp
+                        @endforeach
+                    @endif
+                </select>
+            </div>
+        </div>
         <label for="className">Enter class name (Required)</label>
         <div class="input-group">
             <input
