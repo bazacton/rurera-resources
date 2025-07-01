@@ -421,8 +421,16 @@ table td .dropdown-toggle {cursor: pointer;}
 .table-links {color: #34395e; font-size: 12px; margin-top: 5px; opacity: 0; transition: all .3s;}
 .table-links a {color: #666;}
 table tr:hover .table-links {opacity: 1;}
-.table-striped tbody tr:nth-of-type(odd) {background-color: rgba(0, 0, 0, 0.02);}
+.table-striped tbody tr:nth-of-type(odd) {background-color: rgba(0, 0, 0, 0.01);}
 .table td:has(.btn-transparent) {min-width: 150px;}
+.card .card-body table th {
+    color: #333;
+    font-size: 1rem;
+}
+.card .card-body table th,
+.card .card-body table td {
+    height: auto !important;
+}
 
 @media (max-width: 575.98px) {
     .table-responsive table {min-width: 800px;}
