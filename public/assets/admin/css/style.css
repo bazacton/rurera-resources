@@ -941,7 +941,11 @@ pre {border-radius: 3px;}
 .section-header .text-left {position: absolute; right: 30px; top: 0;}
 .section .section-header h1,
 .title-search-field h1,
-.title-search-field h2 {display: inline-block; margin-top: 3px; color: #fff;}
+.title-search-field h2 {
+    display: inline-block;
+    margin-top: 3px;
+    color: #34395e;
+}
 .section-header .journey-settings {position: absolute; top: 0; right: 30px;}
 .section .section-header .section-header-back {margin-right: 15px;}
 .section .section-header .section-header-back .btn:hover {background-color: var(--primary); color: #fff;}
