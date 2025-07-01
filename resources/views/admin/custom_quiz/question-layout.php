@@ -64,79 +64,87 @@
                         <div class="col-md-3">
                             <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.filters') }}</label>
-                                <select name="sort" data-plugin-selectTwo class="form-control populate">
-                                    <option value="">{{ trans('admin/main.filter_type') }}</option>
-                                    <option value="have_certificate" @if(request()->get('sort') == 'have_certificate')
-                                        selected @endif>{{ trans('admin/main.quizzes_have_certificate') }}
-                                    </option>
-                                    <option value="students_count_asc" @if(request()->get('sort') == 'students_count_asc')
-                                        selected @endif>{{ trans('admin/main.students_ascending') }}
-                                    </option>
-                                    <option value="students_count_desc" @if(request()->get('sort') == 'students_count_desc')
-                                        selected @endif>{{ trans('admin/main.students_descending') }}
-                                    </option>
-                                    <option value="passed_count_asc" @if(request()->get('sort') == 'passed_count_asc')
-                                        selected @endif>{{ trans('admin/main.passed_students_ascending') }}
-                                    </option>
-                                    <option value="passed_count_desc" @if(request()->get('sort') == 'passed_count_desc')
-                                        selected @endif>{{ trans('admin/main.passes_students_descending') }}
-                                    </option>
-                                    <option value="grade_avg_asc" @if(request()->get('sort') == 'grade_avg_asc') selected
-                                        @endif>{{ trans('admin/main.grades_average_ascending') }}
-                                    </option>
-                                    <option value="grade_avg_desc" @if(request()->get('sort') == 'grade_avg_desc') selected
-                                        @endif>{{ trans('admin/main.grades_average_descending') }}
-                                    </option>
-                                    <option value="created_at_asc" @if(request()->get('sort') == 'created_at_asc') selected
-                                        @endif>{{ trans('admin/main.create_date_ascending') }}
-                                    </option>
-                                    <option value="created_at_desc" @if(request()->get('sort') == 'created_at_desc')
-                                        selected @endif>{{ trans('admin/main.create_date_descending') }}
-                                    </option>
-                                </select>
+                                <div class="select-holder">
+                                    <select name="sort" data-plugin-selectTwo class="form-control populate">
+                                        <option value="">{{ trans('admin/main.filter_type') }}</option>
+                                        <option value="have_certificate" @if(request()->get('sort') == 'have_certificate')
+                                            selected @endif>{{ trans('admin/main.quizzes_have_certificate') }}
+                                        </option>
+                                        <option value="students_count_asc" @if(request()->get('sort') == 'students_count_asc')
+                                            selected @endif>{{ trans('admin/main.students_ascending') }}
+                                        </option>
+                                        <option value="students_count_desc" @if(request()->get('sort') == 'students_count_desc')
+                                            selected @endif>{{ trans('admin/main.students_descending') }}
+                                        </option>
+                                        <option value="passed_count_asc" @if(request()->get('sort') == 'passed_count_asc')
+                                            selected @endif>{{ trans('admin/main.passed_students_ascending') }}
+                                        </option>
+                                        <option value="passed_count_desc" @if(request()->get('sort') == 'passed_count_desc')
+                                            selected @endif>{{ trans('admin/main.passes_students_descending') }}
+                                        </option>
+                                        <option value="grade_avg_asc" @if(request()->get('sort') == 'grade_avg_asc') selected
+                                            @endif>{{ trans('admin/main.grades_average_ascending') }}
+                                        </option>
+                                        <option value="grade_avg_desc" @if(request()->get('sort') == 'grade_avg_desc') selected
+                                            @endif>{{ trans('admin/main.grades_average_descending') }}
+                                        </option>
+                                        <option value="created_at_asc" @if(request()->get('sort') == 'created_at_asc') selected
+                                            @endif>{{ trans('admin/main.create_date_ascending') }}
+                                        </option>
+                                        <option value="created_at_desc" @if(request()->get('sort') == 'created_at_desc')
+                                            selected @endif>{{ trans('admin/main.create_date_descending') }}
+                                        </option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                                 <label class="input-label">{{ trans('admin/main.instructor') }}</label>
-                                <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
-                                        class="form-control search-user-select2"
-                                        data-placeholder="Search teachers">
+                                <div class="select-holder">
+                                    <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
+                                            class="form-control search-user-select2"
+                                            data-placeholder="Search teachers">
 
-                                    @if(!empty($teachers) and $teachers->count() > 0)
-                                    @foreach($teachers as $teacher)
-                                    <option value="{{ $teacher->id }}" selected>{{ $teacher->get_full_name() }}</option>
-                                    @endforeach
-                                    @endif
-                                </select>
+                                        @if(!empty($teachers) and $teachers->count() > 0)
+                                        @foreach($teachers as $teacher)
+                                        <option value="{{ $teacher->id }}" selected>{{ $teacher->get_full_name() }}</option>
+                                        @endforeach
+                                        @endif
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                                 <label class="input-label">{{ trans('admin/main.class') }}</label>
-                                <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
-                                        data-placeholder="Search classes">
+                                <div class="select-holder">
+                                    <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
+                                            data-placeholder="Search classes">
 
-                                    @if(!empty($webinars) and $webinars->count() > 0)
-                                    @foreach($webinars as $webinar)
-                                    <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
-                                    @endforeach
-                                    @endif
-                                </select>
+                                        @if(!empty($webinars) and $webinars->count() > 0)
+                                        @foreach($webinars as $webinar)
+                                        <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
+                                        @endforeach
+                                        @endif
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                                 <label class="input-label">{{ trans('admin/main.status') }}</label>
-                                <select name="statue" data-plugin-selectTwo class="form-control populate">
-                                    <option value="">{{ trans('admin/main.all_status') }}</option>
-                                    <option value="active" @if(request()->get('status') == 'active') selected @endif>{{
-                                        trans('admin/main.active') }}
-                                    </option>
-                                    <option value="inactive" @if(request()->get('status') == 'inactive') selected @endif>{{
-                                        trans('admin/main.inactive') }}
-                                    </option>
-                                </select>
+                                <div class="select-holder">
+                                    <select name="statue" data-plugin-selectTwo class="form-control populate">
+                                        <option value="">{{ trans('admin/main.all_status') }}</option>
+                                        <option value="active" @if(request()->get('status') == 'active') selected @endif>{{
+                                            trans('admin/main.active') }}
+                                        </option>
+                                        <option value="inactive" @if(request()->get('status') == 'inactive') selected @endif>{{
+                                            trans('admin/main.inactive') }}
+                                        </option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
@@ -209,7 +217,7 @@
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                                 @endcan
-                                                
+
                                                 @can('admin_assignments_delete')
                                                 @include('admin.includes.delete_button',['url' =>
                                                 getAdminPanelUrl().'/quizzes/'.$quiz->id.'/delete' , 'btnClass' => 'btn-sm'])
