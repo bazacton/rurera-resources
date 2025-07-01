@@ -248,6 +248,8 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card .card-header .btn:not(.note-btn) {border-radius: 30px;}
 .card .card-body select.form-control {
     height: 38px;
+    appearance: none;
+    cursor: pointer;
 }
 .card .card-body .select-holder {
     position: relative;
@@ -263,6 +265,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     width: 8px;
     transform: rotate(-45deg) translateY(-50%);
     margin-top: -3px;
+    pointer-events: none;
 }
 .card .card-header .btn:hover {box-shadow: none;}
 .card .card-header .form-control {height: 31px; font-size: 13px; border-radius: 30px;}
