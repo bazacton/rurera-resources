@@ -39,7 +39,7 @@
 
 /* Admin Classes Style Start */
 .admin_teacher_role .nav-area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid #f6f6f6;}
-.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 10px;}
+.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 10px; margin-left: auto;}
 .admin_teacher_role .admin-rurera-tabs {width: auto; max-width: none; margin-bottom: 0; flex: 0 0 auto; border: 0;}
 .admin_teacher_role .nav-area:has(.teacher-controls) .admin-rurera-tabs {margin-bottom: -8px;}
 .admin_teacher_role .classes-card {background-color: #009788; border-radius: 8px; overflow: hidden; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; width: 23.333%; box-sizing: border-box;}
@@ -5097,27 +5097,23 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     justify-content: center;
     gap: 15px;
 }
-
 .drag-box .img-holder img {
     width: 80px;
     height: 80px;
     object-fit: contain;
 }
-
 .drag-box strong {
     display: block;
     line-height: normal;
     color: #999;
     margin: 0 0 5px;
 }
-
 .drag-box input[type="file"] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 .drag-box label {
     margin: 0;
     background-color: #ded8d8;
