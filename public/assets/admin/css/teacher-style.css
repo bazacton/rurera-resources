@@ -4241,12 +4241,13 @@ Qustions AI Tabs Style End
     font-weight: 600;
 }
 .teacher-table table tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.04);
-    border-top: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.01);
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 .teacher-table table tr:nth-child(odd) {
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 .teacher-table .check-box {
     display: inline-block;
