@@ -55,20 +55,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="invite-faculty">
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                <a data-class_id="{{$userObj->class_id}}" class="dropdown-item unlink-students" href="javascript:;"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                                 <div class="teacher-search-filter d-inline-flex p-0 border-0">
                                     <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
                                     <div class="search-field">
