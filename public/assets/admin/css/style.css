@@ -952,7 +952,6 @@ pre {border-radius: 3px;}
 .section .section-header .section-header-button {margin-left: 20px;}
 .section .section-header .section-header-breadcrumb {display: flex; align-items: center;}
 .section .section-header .section-header-breadcrumb .breadcrumb-item {font-size: 12px;}
-.section .section-header .breadcrumb-item+.breadcrumb-item::before {color: #fff;}
 .section .section-header .btn {font-size: 12px;}
 .section .section-title {font-size: 18px; color: #191d21; font-weight: 600; position: relative; margin: 30px 0 25px 0;}
 .section h2.section-title {display: flex; align-items: center;}
