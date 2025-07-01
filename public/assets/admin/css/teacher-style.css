@@ -4799,7 +4799,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 }
 .add-student-btn,
 .invitation-response-block input[type="submit"] {
-    background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
+    background: var(--blue);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -4807,7 +4807,6 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease;
     line-height: normal;
     display: inline-flex;
