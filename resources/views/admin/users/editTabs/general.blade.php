@@ -420,16 +420,19 @@
 
                     <div class="form-group">
                         <label>{{ trans('/admin/main.status') }}</label>
-                        <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
-                            <option disabled {{ empty($user) ?
-                        'selected' : '' }}>{{ trans('admin/main.select_status') }}</option>
+                        <div class="select-holder">
+                            <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
+                                <option disabled {{ empty($user) ?
+                            'selected' : '' }}>{{ trans('admin/main.select_status') }}</option>
 
-                            @foreach (\App\User::$statuses as $status)
-                                <option value="{{ $status }}" {{ !empty($user) && $user->status === $status ? 'selected'
-                            :''}}>{{ $status }}
-                                </option>
-                            @endforeach
-                        </select>
+                                @foreach (\App\User::$statuses as $status)
+                                    <option value="{{ $status }}" {{ !empty($user) && $user->status === $status ? 'selected'
+                                :''}}>{{ $status }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        
                         @error('status')
                         <div class="invalid-feedback">
                             {{ $message }}
