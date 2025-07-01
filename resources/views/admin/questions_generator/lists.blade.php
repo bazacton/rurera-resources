@@ -74,10 +74,6 @@
                         </div>
                     </div>
 					
-					
-					
-					
-
 					<div class="col-md-4">
 					<div class="form-group">
 						<label>Subjects</label>
@@ -99,11 +95,14 @@
 					<div class="col-md-4">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
-						<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'bulk_list_search')}}" id="chapter_id"
-								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-								name="chapter_id">
-							<option value="">Please select year, subject</option>
-						</select>
+						<div class="select-holder">
+							<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'bulk_list_search')}}" id="chapter_id"
+									class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+									name="chapter_id">
+								<option value="">Please select year, subject</option>
+							</select>
+						</div>
+						
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -117,11 +116,14 @@
 					<div class="col-md-4">
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
-						<select id="chapter_id"
-							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id">
-						<option value="">Please select year, subject, Topic</option>
-					</select>
+						<div class="select-holder">
+							<select id="chapter_id"
+								class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+								name="sub_chapter_id">
+								<option value="">Please select year, subject, Topic</option>
+							</select>
+						</div>
+						
 					@error('sub_chapter_id')
 					<div class="invalid-feedback">
 						{{ $message }}
@@ -135,17 +137,20 @@
 					<div class="col-md-4">
 						<div class="form-group">	
 							<label class="input-label">Author</label>
-							<select name="user_id" data-search-option="display_name" class="form-control "
-									data-placeholder="Search author">
+							<div class="select-holder">
+								<select name="user_id" data-search-option="display_name" class="form-control "
+										data-placeholder="Search author">
 
-									<option value="">Select Author</option>
-								@if(!empty($users_list) and $users_list->count() > 0)
-									@foreach($users_list as $userObj)
-										@php $checked = (get_filter_request('user_id', 'bulk_list_search') == $userObj->id)? 'selected' : ''; @endphp
-										<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
-									@endforeach
-								@endif
-							</select>
+										<option value="">Select Author</option>
+									@if(!empty($users_list) and $users_list->count() > 0)
+										@foreach($users_list as $userObj)
+											@php $checked = (get_filter_request('user_id', 'bulk_list_search') == $userObj->id)? 'selected' : ''; @endphp
+											<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
+										@endforeach
+									@endif
+								</select>
+							</div>
+							
 						</div>
 					</div>
 
