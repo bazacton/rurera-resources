@@ -3,6 +3,9 @@
 
 @push('libraries_top')
 
+    <style>
+        .modal-backdrop.show{display:none}
+    </style>
 @endpush
 
 @section('content')
@@ -56,20 +59,20 @@
 		<div class="col-12 col-md-12">
 			<div class="card">
 				<div class="card-body px-0 pt-0">
-				
-					
 
-	
+
+
+
 	<div class="row">
 		<div class="col-md-12 col-lg-12">
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
-					
+
 				</div>
-				
+
 				<div class="col-md-12 col-lg-12">
 						<pre class="prompt-text"></pre>
-						
+
 						<div id="accordion" class="topic-parts-data">
 							<div class="table-responsive">
 								<table class="table">
@@ -114,7 +117,7 @@
 									  <tbody id="topic_part_1">
 											@if($sub_topic_parts->count() > 0 )
 												@foreach($sub_topic_parts as $subTopicObj)
-													@php 
+													@php
 													$total_pending_questions = $total_unreviewed_questions = 0;
 													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
 													$expected_part_questions = ($expected_part_questions*$subTopicObj->topicPartItemPrompts->count());
@@ -150,12 +153,12 @@
 														<td data-label="Action">&nbsp;</td>
 													</tr>
 													@if($subTopicObj->topicPartItemPrompts->count() > 0 )
-														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)			
+														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)
 															@php $prompt_title = isset($promptObj->prompt_title )? $promptObj->prompt_title : '';
 															$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
 															$unreviewed_questions = $promptObj->promptQuestions->where('question_status', 'api_pending')->count();
 															@endphp
-															
+
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
 															  <td data-label="Topic Part Item">{{$prompt_title}}</td>
 															  <td data-label="Created Date">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
@@ -176,7 +179,7 @@
 															  <td data-label="Total">{{$unreviewed_questions}}</td>
 															  <td data-label="Actions">
 																<div class="actions">
-																	<a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
+																	<a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a>
 																	<a title="Search on ChatGPT" href="https://chat.openai.com/?model=gpt-4&q={{ urlencode($promptObj->prompt_text) }}" target="_blank" class="btn-transparent btn-sm text-primary" title="" data-original-title="Search"><i class="fas fa-search"></i></a>
 																	<a title="Import Questions" href="javascript:;" class="btn-transparent btn-sm text-primary import-questions" data-prompt_id="{{$promptObj->id}}" title="" data-original-title="Import Questions" data-toggle="modal" data-target="#multi-choice-template-modal"><i class="fas fa-download"></i></a>
 																	<a target="_blank" href="/admin/questions-generator/view-api-response/{{$promptObj->questions_bulk_list_id}}/{{$promptObj->topic_part}}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Questions List"><i class="fas fa-sitemap"></i></a>
@@ -200,7 +203,7 @@
 
 				</div>
 				<div class="col-md-12 col-lg-12">
-					
+
 					<div class="multi-choice-template-modal modal fade" id="multi-choice-template-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<form action="javascript:;" method="POST" id="question-generator-form" class="px-25 question-generator-form">
 						@csrf
@@ -235,7 +238,7 @@
                                                        aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a>
                                                 </li>
                                             </ul>
-											
+
 											<div class="tab-content" id="myTabContent2">
                                                 <div class="tab-pane mt-3 fade in active show" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
 													<div class="row">
@@ -249,7 +252,7 @@
 														</div>
 														@if($emerging_example_questions->count() > 0)
 															@php $counter = 1; @endphp
-															@foreach($emerging_example_questions as $exampleQuestionObj)	
+															@foreach($emerging_example_questions as $exampleQuestionObj)
 																@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
 																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
@@ -279,7 +282,7 @@
 														@endif
 													</div>
                                                 </div>
-												
+
 												<div class="tab-pane mt-3 fade" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
                                                    <div class="row">
 														<div class="col-12">
@@ -292,7 +295,7 @@
 														</div>
 														@if($expected_example_questions->count() > 0)
 															@php $counter = 1; @endphp
-															@foreach($expected_example_questions as $exampleQuestionObj)	
+															@foreach($expected_example_questions as $exampleQuestionObj)
 															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
 																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
@@ -322,7 +325,7 @@
 														@endif
 													</div>
                                                 </div>
-												
+
 												<div class="tab-pane mt-3 fade" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
                                                    <div class="row">
 														<div class="col-12">
@@ -335,7 +338,7 @@
 														</div>
 														@if($exceeding_example_questions->count() > 0)
 															@php $counter = 1; @endphp
-															@foreach($exceeding_example_questions as $exampleQuestionObj)	
+															@foreach($exceeding_example_questions as $exampleQuestionObj)
 															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
 																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
@@ -368,12 +371,12 @@
 
                                             </div>
                                             </div>
-										
-										
-											
+
+
+
 										<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered">
-												<div class="modal-content">              
+												<div class="modal-content">
 													<div class="modal-body">
 														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 														<img src="" class="imagepreview">
@@ -387,7 +390,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="api-response-block rurera-hide">
 									<div class="modal-header">
 										<div class="section-header p-0 ml-0">
@@ -415,18 +418,18 @@
 					</div>
 					</form>
 				</div>
-				
-				
-					
+
+
+
 				</div>
 			</div>
 			</div>
-									
+
 			</div>
 		</div>
 
         <!-- Other fields (ranges, difficulty, language) are the same as before -->
-		
+
 	</div>
 	</div>
 	</div>
@@ -464,7 +467,7 @@ function validateJSON() {
 		const tempTextarea = $('<textarea>');
 		tempTextarea.val(promptText);
 		$('body').append(tempTextarea);
-		
+
 		// Select the text and copy it
 		tempTextarea.select();
 		tempTextarea[0].setSelectionRange(0, 99999); // For mobile devices
@@ -478,7 +481,7 @@ function validateJSON() {
 		tempTextarea.remove();
 	});
     $(document).ready(function () {
-		
+
 		$(document).on('click', '.accordion-parent', function () {
 			var child_class = $(this).attr('data-child_class');
 			if($('.'+child_class).is(":visible")) {
@@ -492,43 +495,43 @@ function validateJSON() {
 				$(this).find('.fas').removeClass('fa-chevron-right').addClass('fa-chevron-down');
 			}
 			$('.'+child_class).toggle(300);
-			
+
 		});
-		
+
 		$(document).on('click', '.template-btn', function () {
 			var template_image = $(this).attr('data-template_image');
 			var template_name = $(this).attr('data-template_name');
 			var template_id = $(this).attr('data-template_id');
-			$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');			
+			$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
 			$(this).closest('.template-item').addClass('active');
 			//$(".template-selection").addClass('rurera-hide');
-			//$(".api-response-block").removeClass('rurera-hide');			
+			//$(".api-response-block").removeClass('rurera-hide');
 			//$(".multi-choice-template-modal").modal('hide');
 		});
-		
-		
+
+
 		$(document).on('click', '.template-selection-btn', function () {
 			var example_questions_ids = $('[name="example_question_id[]"]').val();
 			if($('[name="example_question_id[]"]').length > 0){
 				$(".template-selection").addClass('rurera-hide');
-				$(".api-response-block").removeClass('rurera-hide');			
+				$(".api-response-block").removeClass('rurera-hide');
 			}else{
 				alert('Please Choose Example Question');
 				return false; // Prevents form submission if JSON is invalid
 			}
 		});
 
-		
+
 		$(document).on('click', '.import-questions', function () {
 			$(".template-selection").removeClass('rurera-hide');
-			$(".api-response-block").addClass('rurera-hide');			
+			$(".api-response-block").addClass('rurera-hide');
 			var prompt_id = $(this).attr('data-prompt_id');
 			$(".prompt_id").val(prompt_id);
 		});
-		
-		
+
+
 		$(document).on('submit', '.question-generator-form', function () {
-			
+
 			var prompt_id = $('input[name="prompt_id"]').val();
 			if(prompt_id == 0 || prompt_id == 'undefined' || prompt_id == undefined){
 				alert('Please Choose Prompt');
@@ -545,7 +548,7 @@ function validateJSON() {
 				alert("Please enter valid JSON.");
 				return false; // Prevents form submission if JSON is invalid
 			}
-			
+
 			var formData = new FormData($('#question-generator-form')[0]);
 			var loaderDiv = $(".submit-btn");
 			rurera_loader(loaderDiv, 'button');
@@ -563,19 +566,19 @@ function validateJSON() {
 				}
 			});
 		});
-		
+
 
 		$(".circle_percent").each(function() {
 			var $this = $(this),
 			$dataV = $this.data("percent"),
 			$dataDeg = $dataV * 3.6,
 			$round = $this.find(".round_per");
-		$round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)"); 
+		$round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
 		$this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
 		$this.prop('Counter', 0).animate({Counter: $dataV},
 		{
-			duration: 2000, 
-			easing: 'swing', 
+			duration: 2000,
+			easing: 'swing',
 			step: function (now) {
 					$this.find(".percent_text").text(Math.ceil(now)+"%");
 				}
@@ -588,19 +591,19 @@ function validateJSON() {
 			setTimeout(function(){
 			$round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
 			},1000);
-		} 
+		}
 		});
-		
+
     });
-	
-	
+
+
 </script>
 <script>
 	$(function() {
 		$('.pop').on('click', function() {
 			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-			$('#imagemodal').modal('show');   
-		});		
+			$('#imagemodal').modal('show');
+		});
 	});
 </script>
 
