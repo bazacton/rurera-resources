@@ -67,7 +67,7 @@
                                     <th class="text-left">No of Students</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
-                                    <th>{{ trans('admin/main.actions') }}</th>
+                                     <th><!--{{ trans('admin/main.actions') }}--></th>
                                 </tr>
 
                                 @foreach($schools as $schoolData)
@@ -105,15 +105,17 @@
                                     <td>
                                         @if($schoolData->id != $userObj->school_id)
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            @can('admin_schools_edit')
-                                            <a href="/admin/schools/{{ $schoolData->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            @endcan
+                                            <div class="quiz-table-controls">
+                                                @can('admin_schools_edit')
+                                                <a href="/admin/schools/{{ $schoolData->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                @endcan
 
-                                            @can('admin_schools_delete')
-                                            @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
-                                            @endcan
+                                                @can('admin_schools_delete')
+                                                @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
+                                                @endcan
+                                            </div>
                                         </div>
                                         @endif
                                     </td>
