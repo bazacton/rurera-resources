@@ -6640,7 +6640,7 @@ button.print-download-btn {
 .admin_teacher_role .navbar {
     height: auto;
     min-height: 250px;
-    z-index: 1;
+    z-index: auto;
     background-color: var(--blue);
     border-bottom: 1px solid #f6f6f6;
     align-items: flex-start;
