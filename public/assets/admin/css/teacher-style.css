@@ -130,13 +130,11 @@
 /* Admin Classes Style End */
 
 /* Admin Create-Class-Modal Style Start */
-.create-class-modal .modal-footer,
 .class-edit-modal .modal-footer {
     padding-top: 0;
 }
 .create-class-modal .modal-footer {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 .create-class-modal .modal-footer button[type="button"],
 .class-edit-modal .modal-footer button[type="button"] {
