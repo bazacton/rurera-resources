@@ -115,17 +115,20 @@
 
                         <div class="form-group">
                             <label>Teacher</label>
-                            <select class="form-control @error('teacher_id') is-invalid @enderror"
-                                    name="teacher_id">
-                                <option {{ !empty($trend) ?
-                                    '' : 'selected' }} disabled>Choose Teacher</option>
+                            <div class="select-holder">
+                                <select class="form-control @error('teacher_id') is-invalid @enderror"
+                                        name="teacher_id">
+                                    <option {{ !empty($trend) ?
+                                        '' : 'selected' }} disabled>Choose Teacher</option>
 
-                                @foreach($teachers as $teacherObj)
-                                    <option value="{{ $teacherObj->id }}" class="font-weight-bold">{{
-                                        $teacherObj->get_full_name() }}
-                                    </option>
-                                @endforeach
-                            </select>
+                                    @foreach($teachers as $teacherObj)
+                                        <option value="{{ $teacherObj->id }}" class="font-weight-bold">{{
+                                            $teacherObj->get_full_name() }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            
                             @error('category_id')
                             <div class="invalid-feedback">
                                 {{ $message }}
