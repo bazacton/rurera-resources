@@ -4213,7 +4213,6 @@ Qustions AI Tabs Style End
 }
 .teacher-table table td {
     color: var(--blue);
-    font-size: 14px;
 }
 .teacher-table table td.has-controls {
     min-width: 160px;
