@@ -385,7 +385,7 @@
                                     <th class="text-left">End Date</th>
                                     <th class="text-left">Recurring</th>
                                     <th class="text-center">{{ trans('admin/main.status') }}</th>
-                                    <th>{{ trans('admin/main.actions') }}</th>
+                                     <th> <!--{{ trans('admin/main.actions') }}--> </th> 
                                 </tr>
 
                                 @foreach($assignments as $assignmentObj)
