@@ -998,7 +998,7 @@ body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fal {margin: 0; font-siz
 body.sidebar-mini .main-sidebar .sidebar-menu > li > a span {display: none;}
 body.sidebar-mini .main-sidebar .sidebar-menu > li > a .badge {padding: 5px; position: absolute; top: 4px; right: 4px; font-size: 10px;}
 body.sidebar-mini .main-sidebar .sidebar-menu > li > a.has-dropdown:after {content: initial;}
-body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {box-shadow: 0 4px 8px #acb5f6; background-color: var(--primary); color: #fff;}
+body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {color: #fff;}
 body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu {position: absolute; background-color: #fff; left: 65px; top: 10px; width: 200px; display: none; box-shadow: 0 0 30px rgba(0, 0, 0, 0.03);}
 body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li > a:focus,
 body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li.active > a,
