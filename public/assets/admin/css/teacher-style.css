@@ -19,7 +19,6 @@
     height: auto;
     padding: 12px 20px;
 }
-.admin_teacher_role .main-sidebar .sidebar-menu li a span {margin-top: 0;}
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo {
     display: flex;
     flex-direction: column;
