@@ -1204,21 +1204,23 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                 <form name="question_status_action_form" id="question_status_action_form">
                     <div class="form-group">
                         <label>{{ trans('/admin/main.category') }}</label>
-                        <select class="form-control @error('category_id') is-invalid @enderror year_subject_ajax_select"
-                                name="ajax[category_id]">
-                            <option {{ !empty($trend) ?
-                            '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
+                        <div class="select-holder">
+                            <select class="form-control @error('category_id') is-invalid @enderror year_subject_ajax_select"
+                                    name="ajax[category_id]">
+                                <option {{ !empty($trend) ?
+                                '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
 
-                            @foreach($categories as $category)
-                            @if(!empty($category->subCategories) and count($category->subCategories))
-                            <optgroup label="{{  $category->title }}">
-                                @foreach($category->subCategories as $subCategory)
-                                <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                @foreach($categories as $category)
+                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                <optgroup label="{{  $category->title }}">
+                                    @foreach($category->subCategories as $subCategory)
+                                    <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                    @endforeach
+                                </optgroup>
+                                @endif
                                 @endforeach
-                            </optgroup>
-                            @endif
-                            @endforeach
-                        </select>
+                            </select>
+                        </div>
                         @error('category_id')
                         <div class="invalid-feedback">
                             {{ $message }}
