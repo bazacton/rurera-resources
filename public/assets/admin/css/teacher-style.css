@@ -6592,6 +6592,9 @@ button.print-download-btn {
 .quiz-table-controls {
     opacity: 0;
     visibility: visible;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 .table-responsive table tbody tr:hover .quiz-table-controls {
     opacity: 1;
