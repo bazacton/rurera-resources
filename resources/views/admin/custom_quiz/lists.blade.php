@@ -175,7 +175,7 @@
                                         {{ trans('admin/main.status') }}
                                         </th>
                                         <th>
-                                        {{ trans('admin/main.actions') }}
+                                        <!--{{ trans('admin/main.actions') }}-->
                                         </th>
                                     </tr>
 
