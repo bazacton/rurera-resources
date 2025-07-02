@@ -48,35 +48,37 @@
     <section class="section">
         <div class="section-body" style="margin-top: 50px;">
             <div class="row col-12 col-md-12 col-lg-12">
+                <div class="admin-rurera-tabs-holder">
+                    <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                        @php $tab_active_class = ($assignment->subtopic_id > 0)? '' : 'active'; @endphp
+                        <li class="nav-item">
+                            <a class="nav-link {{$tab_active_class}}" id="topics-tab" data-toggle="tab" href="#topics" role="tab"
+                            aria-controls="basic" aria-selected="true">
+                                <span class="tab-title">Topic</span>
+                                <span class="tab-detail">Choose Subject Topic</span>
+                            </a>
+                        </li>
 
-                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    @php $tab_active_class = ($assignment->subtopic_id > 0)? '' : 'active'; @endphp
-                    <li class="nav-item">
-                        <a class="nav-link {{$tab_active_class}}" id="topics-tab" data-toggle="tab" href="#topics" role="tab"
-                           aria-controls="basic" aria-selected="true">
-                            <span class="tab-title">Topic</span>
-                            <span class="tab-detail">Choose Subject Topic</span>
-                        </a>
-                    </li>
+                        @php $tab_active_class = ($assignment->subtopic_id > 0)? 'active' : ''; @endphp
+                        <li class="nav-item {{($tab_active_class == 'active')? '' : 'disabled'}}">
+                            <a class="nav-link {{$tab_active_class}}" id="questions-tab" data-toggle="tab" href="#questions" role="tab"
+                            aria-controls="socials" aria-selected="false"><span
+                                        class="tab-title">Choose Questions</span>
+                                <span class="tab-detail">Choose Questions from topics</span></a>
+                        </li>
 
-                    @php $tab_active_class = ($assignment->subtopic_id > 0)? 'active' : ''; @endphp
-                    <li class="nav-item {{($tab_active_class == 'active')? '' : 'disabled'}}">
-                        <a class="nav-link {{$tab_active_class}}" id="questions-tab" data-toggle="tab" href="#questions" role="tab"
-                           aria-controls="socials" aria-selected="false"><span
-                                    class="tab-title">Choose Questions</span>
-                            <span class="tab-detail">Choose Questions from topics</span></a>
-                    </li>
+                        @php  $is_disable_preview = (!empty($assignment->quizQuestionsList) && count($assignment->quizQuestionsList) > 0)? '' : 'disabled'; @endphp
 
-                    @php  $is_disable_preview = (!empty($assignment->quizQuestionsList) && count($assignment->quizQuestionsList) > 0)? '' : 'disabled'; @endphp
-
-                    <li class="nav-item {{$is_disable_preview}}">
-                        <a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview"
-                           role="tab"
-                           aria-controls="features" aria-selected="false"><span
-                                    class="tab-title">Test preview</span>
-                            <span class="tab-detail">Preview assignment</span></a>
-                    </li>
-                </ul>
+                        <li class="nav-item {{$is_disable_preview}}">
+                            <a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview"
+                            role="tab"
+                            aria-controls="features" aria-selected="false"><span
+                                        class="tab-title">Test preview</span>
+                                <span class="tab-detail">Preview assignment</span></a>
+                        </li>
+                    </ul>
+                </div>
+                
                 <a href="javascript:;" class="col-2 col-md-2 col-lg-2 rurera-btn-grn rurera-confirm-dialog" data-title="Are you sure?" data-subtitle="You will not be able to edit the assignment after publishing." data-on_confirm="publish_assignment();">Publish</a>
             </div>
             <div class="row">
