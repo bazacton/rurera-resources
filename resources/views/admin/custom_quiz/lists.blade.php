@@ -183,7 +183,6 @@
                                     @foreach($quizzes as $quiz)
                                     <tr>
                                         <td>
-                                            
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <span>{{ $quiz->title }}</span>
                                                 @if(!empty($quiz->webinar))
@@ -194,12 +193,10 @@
                                         </td>
 
                                         <td class="text-left">
-                                            
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->creator->get_full_name() }}</div>
                                         </td>
 
                                         <td class="text-center">
-                                            
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->quizQuestionsList->count() }}</div>
                                         </td>
 
