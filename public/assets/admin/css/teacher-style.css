@@ -6665,6 +6665,13 @@ button.print-download-btn {
 .admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
     font-size: 14px;
 }
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active {
+    border-bottom-color: var(--blue);
+}
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active .tab-title,
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active i {
+    color: var(--blue);
+}
 /* Teacher Dashboard Tabs Style End */
 
 @media screen and (max-width: 992px) {
