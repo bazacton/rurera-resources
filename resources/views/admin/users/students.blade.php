@@ -21,19 +21,20 @@
 
             <div class="row w-100">
                 <div class="col-12 col-md-12">
-
-                    <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                        <li class="nav-item skelton-height-lg">
-                            <a class="nav-link active" id="students-tab-students" href="javascript:;">
-                                <span class="tab-title">Students</span>
-                            </a>
-                        </li>
-                        <li class="nav-item skelton-height-lg">
-                            <a class="nav-link" id="joining-tab-students" href="javascript:;">
-                                <span class="tab-title">Joining Requests</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="admin-rurera-tabs-holder">
+                        <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                            <li class="nav-item skelton-height-lg">
+                                <a class="nav-link active" id="students-tab-students" href="javascript:;">
+                                    <span class="tab-title">Students</span>
+                                </a>
+                            </li>
+                            <li class="nav-item skelton-height-lg">
+                                <a class="nav-link" id="joining-tab-students" href="javascript:;">
+                                    <span class="tab-title">Joining Requests</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-12">
