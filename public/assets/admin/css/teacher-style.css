@@ -6658,12 +6658,12 @@ button.print-download-btn {
     align-items: center;
     gap: 5px 10px;
 }
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link img {
-    height: 15px;
-    width: 15px;
-}
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title {
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title,
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
     color: #333;
+}
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
+    font-size: 14px;
 }
 /* Teacher Dashboard Tabs Style End */
 
