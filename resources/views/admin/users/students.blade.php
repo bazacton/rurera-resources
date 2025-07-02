@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                                 <div class="teacher-search-filter d-inline-flex p-0 border-0">
-                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"></span> Add Student</button>
+                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
                                     <div class="search-field">
                                         <span class="icon-box">
                                             <img src="/assets/default/svgs/search.svg" alt="search">
