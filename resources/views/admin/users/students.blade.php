@@ -25,13 +25,13 @@
                         <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item skelton-height-lg">
                                 <a class="nav-link active" id="students-tab-students" href="javascript:;">
-                                    <img src="/assets/default/img/sidebar/student-color.svg" alt="student-color">
+                                    <i class="fas fa-users mx-0"></i>
                                     <span class="tab-title">Students</span>
                                 </a>
                             </li>
                             <li class="nav-item skelton-height-lg">
                                 <a class="nav-link" id="joining-tab-students" href="javascript:;">
-                                    <img src="/assets/default/svgs/joining.svg" alt="joining">
+                                    <i class="fas fa-address-card mx-0"></i>
                                     <span class="tab-title">Joining Requests</span>
                                 </a>
                             </li>
