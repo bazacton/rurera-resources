@@ -143,7 +143,7 @@
 @endpush
 
 @section('content')
-    <section class="section">
+    <section class="section mt-50">
 
         <form action="/admin/custom_quiz/{{ !empty($assignment) ? $assignment->id.'/store' : 'store' }}"
               method="Post" class="custom_quiz_form" enctype="multipart/form-data">
