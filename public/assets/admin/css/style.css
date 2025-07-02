@@ -1541,7 +1541,7 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 .template-controls .template-btn {background-color: inherit; border: 1px solid var(--blue); padding: 6px 10px; border-radius: 5px; color: var(--blue); outline: none; white-space: nowrap;}
 .template-controls .template-btn:hover,
 .template-item.active .template-controls .template-btn {background-color: var(--blue); color: var(--white);}
-.template-controls .preview-template-btn {color: var(--purple); outline: none; padding: 0; background-color: inherit; border: 0;}
+.template-controls .preview-template-btn {color: var(--purple); outline: none; padding: 0; background-color: inherit; border: 0; text-align: left; line-height: normal;}
 .multi-choice-template-modal .form-control {width: auto; max-width: 350px; min-width: 350px;}
 .search-filed {display: inline-block; position: relative;}
 .search-filed i {position: absolute; right: 15px; top: 50%; font-size: 16px; color: #bbb; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
@@ -1554,7 +1554,7 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 .multi-choice-template-modal .modal-body,
 .multi-choice-template-modal .modal-content {background-color: #fcfcfc;}
 .multi-choice-template-modal #imagemodal .modal-body {background-color: #fff;}
-.template-controls {display: flex; align-items: center; justify-content: space-between; margin-top: auto;}
+.template-controls {display: flex; align-items: center; justify-content: space-between; margin-top: auto; gap: 0 10px;}
 .multi-choice-template-modal #imagemodal .modal-content {height: auto;}
 .multi-choice-template-modal #imagemodal .modal-body {border-radius: 8px;}
 .template-data-info span {font-size: 13px; color: #bbb;}
