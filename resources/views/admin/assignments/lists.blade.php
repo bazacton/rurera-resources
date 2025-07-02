@@ -111,27 +111,27 @@
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="topics-tab" href="/admin/assignments">
-                            <span class="tab-title">All assignments</span>
+                            <span class="tab-title"><i class="fas fa-file mx-0"></i> All assignments</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
-                            <span class="tab-title">Scheduled</span>
+                            <span class="tab-title"><i class="fas fa-calendar-week mx-0"></i> Scheduled</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
-                            <span class="tab-title">Running</span>
+                            <span class="tab-title"><i class="fas fa-car mx-0"></i> Running</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
-                            <span class="tab-title">Completed</span>
+                            <span class="tab-title"><i class="fas fa-thumbs-up mx-0"></i> Completed</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
-                            <span class="tab-title">Paused</span>
+                            <span class="tab-title"><i class="fas fa-pause mx-0"></i> Paused</span>
                         </a>
                     </li>
                 </ul>
