@@ -24,11 +24,13 @@
                         <ul data-target_class="admin-rurera-tabs-teachers" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item skelton-height-lg">
                                 <a class="nav-link active" id="teachers-tab-teachers" href="javascript:;">
+                                    <i class="fas fa-chalkboard-teacher mx-0"></i>
                                     <span class="tab-title">Teachers / Admins</span>
                                 </a>
                             </li>
                             <li class="nav-item skelton-height-lg">
                                 <a class="nav-link" id="invites-tab-teachers" href="javascript:;">
+                                    <i class="fas fa-envelope-open-text mx-o"></i>
                                     <span class="tab-title">Pending invites</span>
                                 </a>
                             </li>
