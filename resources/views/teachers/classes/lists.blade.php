@@ -28,445 +28,447 @@
             </div>
        </div>
     </div>
-    <div class="section-body">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <!-- Modal -->
-                <div class="modal fade create-class-modal" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="createClassModalLabel">Create a New Class</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="{{ getAdminPanelUrl() }}/classes/store"
-                                      method="POST">
-                                    @csrf
-
-                                    <ul data-target_class="admin-rurera-tabs-details" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                                        <li class="nav-item skelton-height-lg">
-                                            <a class="nav-link active" id="details-tab" href="javascript:;">
-                                                <span class="tab-title">Details</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item skelton-height-lg">
-                                            <a class="nav-link" id="curriculum-tab" href="javascript:;">
-                                                <span class="tab-title">Curriculum</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item skelton-height-lg">
-                                            <a class="nav-link" id="games-tab" href="javascript:;">
-                                                <span class="tab-title">Games</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item skelton-height-lg rurera-hide">
-                                            <a class="nav-link" id="teachers-tab" href="javascript:;">
-                                                <span class="tab-title">Teachers</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item skelton-height-lg">
-                                            <a class="nav-link" id="announcement-tab" href="javascript:;">
-                                                <span class="tab-title">Announcement</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item skelton-height-lg">
-                                            <a class="nav-link" id="advance-tab" href="javascript:;">
-                                                <span class="tab-title">Advanced Options</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <!-- Class Name with Color -->
-
-                                    <div class="admin-rurera-tabs-details details-tab">
-                                        <div class="form-group">
-                                            <label for="SchoolName">Select School</label>
-                                            <div class="select-holder input-group">
-                                                <div class="select-box">
-                                                    <select class="student-school-change" name="school_id">
-                                                        @if($schools_list->count() > 0)
-                                                            @php $row_no = 0; @endphp
-                                                            @foreach($schools_list as $schoolObj)
-                                                                @php $is_checked = ($row_no == 0)? 'selected' : ''; @endphp
-                                                                <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
-                                                                @php $row_no++; @endphp
-                                                            @endforeach
-                                                        @endif
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <label for="className">Enter class name (Required)</label>
-                                            <div class="input-group">
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="className"
-                                                    name="title"
-                                                    placeholder="E.g., Math Club"
-                                                    required
-                                                />
-                                                <div class="input-group-append">
-                                                    <button
-                                                        class="btn btn-light dropdown-toggle"
-                                                        type="button"
-                                                        name="class_color"
-                                                        id="colorPickerDropdown"
-                                                        data-toggle="dropdown"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false"
-                                                        style="border: 1px solid #ccc;"
-                                                    >
-                                                        <span
-                                                            class="color-indicator"
-                                                            style="background-color: #bcdad7;"
-                                                        ></span>
-                                                    </button>
-                                                    <div class="dropdown-menu">
-                                                        <h5>Class Color Code</h5>
-                                                        <input type="text" name="class_color" class="class_color">
-                                                        <div class="class-color-box">
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#bcdad7" style="background-color: #bcdad7;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#fbcdb3" style="background-color: #fbcdb3;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f7efe3" style="background-color: #f7efe3;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f1d276" style="background-color: #f1d276;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#ef8b8a" style="background-color: #ef8b8a;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#e5d7bb" style="background-color: #e5d7bb;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#bd7967" style="background-color: #bd7967;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f870b3" style="background-color: #f870b3;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#acd5cd" style="background-color: #acd5cd;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#733a4d" style="background-color: #733a4d;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#4f408e" style="background-color: #4f408e;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#3eb9bd" style="background-color: #3eb9bd;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#e2cd82" style="background-color: #e2cd82;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f6e9c3" style="background-color: #f6e9c3;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#efebe4" style="background-color: #efebe4;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#cda4ad" style="background-color: #cda4ad;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#edc9a7" style="background-color: #edc9a7;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#dad3c5" style="background-color: #dad3c5;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#a96eb0" style="background-color: #a96eb0;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#deb9ae" style="background-color: #deb9ae;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#7d9897" style="background-color: #7d9897;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#6d4e88" style="background-color: #6d4e88;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#a46f82" style="background-color: #a46f82;" ></button>
-                                                            <button type="button" class="dropdown-item color-set" data-color_code="#465c60" style="background-color: #465c60;" ></button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div class="form-group">
-                                        <label for="ClassNickName">Class Nick Name (Required)</label>
-                                        <input
-                                            name="class_nick_name"
-                                            type="text"
-                                            class="form-control"
-                                            id="ClassNickName"
-                                            placeholder="Class Nick Name" required
-                                        />
-                                    </div>
-
-                                    <div class="form-group rurera-hide">
-                                        <div class="custom-control custom-checkbox">
-                                            <input id="hasSubCategory" type="checkbox" name="has_sub"
-                                                   class="custom-control-input" checked>
-                                            <label class="custom-control-label"
-                                                   for="hasSubCategory">Sections</label>
-                                        </div>
-                                    </div>
-
-                                    <div id="subCategories"
-                                         class="ml-0  rurera-hide">
-                                        <div class="d-flex align-items-center justify-content-between mb-4">
-                                            <strong class="d-block">Sections</strong>
-
-                                            <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i></button>
-                                        </div>
-
-                                        <ul class="draggable-lists list-group">
-
-                                            <li class="form-group list-group">
-
-                                                <div class="p-2 border rounded-sm">
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <div class="input-group-text cursor-pointer move-icon">
-                                                                <i class="fa fa-arrows-alt"></i>
-                                                            </div>
-                                                        </div>
-
-                                                        <input type="text" name="sections[cbDpiRTAiUoGuWfB][title]"
-                                                                class="form-control w-auto flex-grow-1"
-                                                                value="222"
-                                                                placeholder="{{ trans('admin/main.choose_title') }}"/>
-
-                                                        <input type="text" name="section_code"
-                                                                class="form-control"
-                                                                value="222" readonly disabled/>
-
-                                                        <select class="form-control select2" name="sections[section_code][class_teachers][]" multiple="multiple">
-
-                                                        </select>
-
-                                                        <div class="input-group-append">
-                                                            @include('admin.includes.delete_button',[
-                                                            'url' => getAdminPanelUrl("/classes/111/delete"),
-                                                            'deleteConfirmMsg' => trans('update.category_delete_confirm_msg'),
-                                                            'btnClass' => 'btn btn-danger text-white',
-                                                            'noBtnTransparent' => true
-                                                            ])
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    @php $tables_no = isset( $class->timestables_no)? json_decode($class->timestables_no) : array(); @endphp
-                                    <div class="form-group assignment_topic_type_fields timestables_fields ">
-                                        <label>Timestables</label>
-                                        <div class="questions-select-number">
-                                            <ul class="d-flex flex-wrap mb-30">
-                                                <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
-                                            'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                                                <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
-                                            'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
-                                                <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
-                                            'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                                                <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
-                                            'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
-                                                <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
-                                            'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                                                <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
-                                            'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                                                <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
-                                            'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                                                <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
-                                            'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                                                <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
-                                            'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                                                <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
-                                            'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                                                <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
-                                            'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                                                <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
-                                            'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                                                <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
-                                            'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                                                <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
-                                            'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                                                <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
-                                            'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Room -->
-                                    <div class="form-group">
-                                        <label for="roomName">Room</label>
-                                        <input
-                                            name="room_no"
-                                            type="text"
-                                            class="form-control"
-                                            id="roomName"
-                                            placeholder="E.g., Room 101"
-                                        />
-                                    </div>
-
-                                    <!-- Checkboxes -->
-                                    <div class="form-group form-check">
-                                        <input
-                                            type="checkbox"
-                                            class="form-check-input"
-                                            id="requireGuardianEmail"
-                                        />
-                                        <label class="form-check-label custom-checkbox-label" for="requireGuardianEmail">
-                                            Require students to enter a guardian's email address
-                                        </label>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input
-                                            type="checkbox"
-                                            class="form-check-input"
-                                            id="requireClassCode"
-                                        />
-                                        <label class="form-check-label custom-checkbox-label" for="requireClassCode">
-                                            Require students to enter a class code
-                                        </label>
-                                    </div>
-                                    <div class="option-field-item mt-20 mb-20">
-                                        <label class="custom-switch pl-0">
-
-                                            <input type="checkbox" name="class_status" id="class_status" value="1" class="custom-switch-input">
-                                            <span class="custom-switch-indicator"></span>
-                                            <label class="custom-switch-description mb-0 cursor-pointer" for="class_status">Active / Paused</label>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary">Create class</button>
-                                </div>
-                                </form>
-                                <li class="form-group main-row list-group d-none">
-                                    <div class="p-2 border rounded-sm">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text cursor-pointer move-icon">
-                                                    <i class="fa fa-arrows-alt"></i>
-                                                </div>
-                                            </div>
-
-                                            <input type="text" name="sections[record][title]"
-                                                class="form-control w-auto flex-grow-1"
-                                                placeholder="{{ trans('admin/main.choose_title') }}"/>
-
-                                            <div class="input-group-append">
-                                                <button type="button" class="btn remove-btn btn-danger"><i
-                                                        class="fa fa-times"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade create-google-class-modal" id="createGoogleClassModal" tabindex="-1" role="dialog" aria-labelledby="createGoogleClassModal" aria-hidden="true">
+    <div class="content-holder card p-25">
+        <div class="section-body">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <!-- Modal -->
+                    <div class="modal fade create-class-modal" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="createClassModalLabel">Select Classes to Import</h5>
+                                    <h5 class="modal-title" id="createClassModalLabel">Create a New Class</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        @if($userObj->google_account_data != '')
-                                            @php $google_account_data = json_decode($userObj->google_account_data); @endphp
-                                        <div class="user-info">
-                                            <span class="img-box"><img src="{{isset($google_account_data->picture)? $google_account_data->picture : '/assets/default/img/class-user-icon.png'}}" alt=""></span>
-                                            <div class="text-holder">
-                                                <h5>{{isset($google_account_data->name)? $google_account_data->name : ''}}</h5>
-                                                <a href="#">{{isset($google_account_data->email)? $google_account_data->email : ''}}</a>
+                                    <form action="{{ getAdminPanelUrl() }}/classes/store"
+                                        method="POST">
+                                        @csrf
+
+                                        <ul data-target_class="admin-rurera-tabs-details" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                                            <li class="nav-item skelton-height-lg">
+                                                <a class="nav-link active" id="details-tab" href="javascript:;">
+                                                    <span class="tab-title">Details</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item skelton-height-lg">
+                                                <a class="nav-link" id="curriculum-tab" href="javascript:;">
+                                                    <span class="tab-title">Curriculum</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item skelton-height-lg">
+                                                <a class="nav-link" id="games-tab" href="javascript:;">
+                                                    <span class="tab-title">Games</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item skelton-height-lg rurera-hide">
+                                                <a class="nav-link" id="teachers-tab" href="javascript:;">
+                                                    <span class="tab-title">Teachers</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item skelton-height-lg">
+                                                <a class="nav-link" id="announcement-tab" href="javascript:;">
+                                                    <span class="tab-title">Announcement</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item skelton-height-lg">
+                                                <a class="nav-link" id="advance-tab" href="javascript:;">
+                                                    <span class="tab-title">Advanced Options</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- Class Name with Color -->
+
+                                        <div class="admin-rurera-tabs-details details-tab">
+                                            <div class="form-group">
+                                                <label for="SchoolName">Select School</label>
+                                                <div class="select-holder input-group">
+                                                    <div class="select-box">
+                                                        <select class="student-school-change" name="school_id">
+                                                            @if($schools_list->count() > 0)
+                                                                @php $row_no = 0; @endphp
+                                                                @foreach($schools_list as $schoolObj)
+                                                                    @php $is_checked = ($row_no == 0)? 'selected' : ''; @endphp
+                                                                    <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                                                    @php $row_no++; @endphp
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <label for="className">Enter class name (Required)</label>
+                                                <div class="input-group">
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="className"
+                                                        name="title"
+                                                        placeholder="E.g., Math Club"
+                                                        required
+                                                    />
+                                                    <div class="input-group-append">
+                                                        <button
+                                                            class="btn btn-light dropdown-toggle"
+                                                            type="button"
+                                                            name="class_color"
+                                                            id="colorPickerDropdown"
+                                                            data-toggle="dropdown"
+                                                            aria-haspopup="true"
+                                                            aria-expanded="false"
+                                                            style="border: 1px solid #ccc;"
+                                                        >
+                                                            <span
+                                                                class="color-indicator"
+                                                                style="background-color: #bcdad7;"
+                                                            ></span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <h5>Class Color Code</h5>
+                                                            <input type="text" name="class_color" class="class_color">
+                                                            <div class="class-color-box">
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#bcdad7" style="background-color: #bcdad7;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#fbcdb3" style="background-color: #fbcdb3;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#f7efe3" style="background-color: #f7efe3;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#f1d276" style="background-color: #f1d276;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#ef8b8a" style="background-color: #ef8b8a;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#e5d7bb" style="background-color: #e5d7bb;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#bd7967" style="background-color: #bd7967;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#f870b3" style="background-color: #f870b3;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#acd5cd" style="background-color: #acd5cd;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#733a4d" style="background-color: #733a4d;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#4f408e" style="background-color: #4f408e;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#3eb9bd" style="background-color: #3eb9bd;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#e2cd82" style="background-color: #e2cd82;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#f6e9c3" style="background-color: #f6e9c3;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#efebe4" style="background-color: #efebe4;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#cda4ad" style="background-color: #cda4ad;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#edc9a7" style="background-color: #edc9a7;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#dad3c5" style="background-color: #dad3c5;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#a96eb0" style="background-color: #a96eb0;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#deb9ae" style="background-color: #deb9ae;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#7d9897" style="background-color: #7d9897;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#6d4e88" style="background-color: #6d4e88;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#a46f82" style="background-color: #a46f82;" ></button>
+                                                                <button type="button" class="dropdown-item color-set" data-color_code="#465c60" style="background-color: #465c60;" ></button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <button class="user-btn google_classroom_btn" type="button">Switch account</button>
+                                        <div class="form-group">
+                                            <label for="ClassNickName">Class Nick Name (Required)</label>
+                                            <input
+                                                name="class_nick_name"
+                                                type="text"
+                                                class="form-control"
+                                                id="ClassNickName"
+                                                placeholder="Class Nick Name" required
+                                            />
                                         </div>
-                                        @else
+
+                                        <div class="form-group rurera-hide">
+                                            <div class="custom-control custom-checkbox">
+                                                <input id="hasSubCategory" type="checkbox" name="has_sub"
+                                                    class="custom-control-input" checked>
+                                                <label class="custom-control-label"
+                                                    for="hasSubCategory">Sections</label>
+                                            </div>
+                                        </div>
+
+                                        <div id="subCategories"
+                                            class="ml-0  rurera-hide">
+                                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                                <strong class="d-block">Sections</strong>
+
+                                                <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i></button>
+                                            </div>
+
+                                            <ul class="draggable-lists list-group">
+
+                                                <li class="form-group list-group">
+
+                                                    <div class="p-2 border rounded-sm">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text cursor-pointer move-icon">
+                                                                    <i class="fa fa-arrows-alt"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <input type="text" name="sections[cbDpiRTAiUoGuWfB][title]"
+                                                                    class="form-control w-auto flex-grow-1"
+                                                                    value="222"
+                                                                    placeholder="{{ trans('admin/main.choose_title') }}"/>
+
+                                                            <input type="text" name="section_code"
+                                                                    class="form-control"
+                                                                    value="222" readonly disabled/>
+
+                                                            <select class="form-control select2" name="sections[section_code][class_teachers][]" multiple="multiple">
+
+                                                            </select>
+
+                                                            <div class="input-group-append">
+                                                                @include('admin.includes.delete_button',[
+                                                                'url' => getAdminPanelUrl("/classes/111/delete"),
+                                                                'deleteConfirmMsg' => trans('update.category_delete_confirm_msg'),
+                                                                'btnClass' => 'btn btn-danger text-white',
+                                                                'noBtnTransparent' => true
+                                                                ])
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        @php $tables_no = isset( $class->timestables_no)? json_decode($class->timestables_no) : array(); @endphp
+                                        <div class="form-group assignment_topic_type_fields timestables_fields ">
+                                            <label>Timestables</label>
+                                            <div class="questions-select-number">
+                                                <ul class="d-flex flex-wrap mb-30">
+                                                    <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
+                                                'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                                    <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
+                                                'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                                    <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
+                                                'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                                    <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
+                                                'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                                    <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
+                                                'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                                    <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
+                                                'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                                    <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
+                                                'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                                    <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
+                                                'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                                    <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
+                                                'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                                    <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
+                                                'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                                    <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
+                                                'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                                    <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
+                                                'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                                    <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
+                                                'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                                    <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
+                                                'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                                    <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
+                                                'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Room -->
+                                        <div class="form-group">
+                                            <label for="roomName">Room</label>
+                                            <input
+                                                name="room_no"
+                                                type="text"
+                                                class="form-control"
+                                                id="roomName"
+                                                placeholder="E.g., Room 101"
+                                            />
+                                        </div>
+
+                                        <!-- Checkboxes -->
+                                        <div class="form-group form-check">
+                                            <input
+                                                type="checkbox"
+                                                class="form-check-input"
+                                                id="requireGuardianEmail"
+                                            />
+                                            <label class="form-check-label custom-checkbox-label" for="requireGuardianEmail">
+                                                Require students to enter a guardian's email address
+                                            </label>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input
+                                                type="checkbox"
+                                                class="form-check-input"
+                                                id="requireClassCode"
+                                            />
+                                            <label class="form-check-label custom-checkbox-label" for="requireClassCode">
+                                                Require students to enter a class code
+                                            </label>
+                                        </div>
+                                        <div class="option-field-item mt-20 mb-20">
+                                            <label class="custom-switch pl-0">
+
+                                                <input type="checkbox" name="class_status" id="class_status" value="1" class="custom-switch-input">
+                                                <span class="custom-switch-indicator"></span>
+                                                <label class="custom-switch-description mb-0 cursor-pointer" for="class_status">Active / Paused</label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Create class</button>
+                                    </div>
+                                    </form>
+                                    <li class="form-group main-row list-group d-none">
+                                        <div class="p-2 border rounded-sm">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text cursor-pointer move-icon">
+                                                        <i class="fa fa-arrows-alt"></i>
+                                                    </div>
+                                                </div>
+
+                                                <input type="text" name="sections[record][title]"
+                                                    class="form-control w-auto flex-grow-1"
+                                                    placeholder="{{ trans('admin/main.choose_title') }}"/>
+
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn remove-btn btn-danger"><i
+                                                            class="fa fa-times"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade create-google-class-modal" id="createGoogleClassModal" tabindex="-1" role="dialog" aria-labelledby="createGoogleClassModal" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="createClassModalLabel">Select Classes to Import</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            @if($userObj->google_account_data != '')
+                                                @php $google_account_data = json_decode($userObj->google_account_data); @endphp
                                             <div class="user-info">
-                                                <span class="img-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span>
+                                                <span class="img-box"><img src="{{isset($google_account_data->picture)? $google_account_data->picture : '/assets/default/img/class-user-icon.png'}}" alt=""></span>
                                                 <div class="text-holder">
-                                                    <h5>Kaiser K</h5>
-                                                    <a href="#">kaiser.can@gamil.com</a>
+                                                    <h5>{{isset($google_account_data->name)? $google_account_data->name : ''}}</h5>
+                                                    <a href="#">{{isset($google_account_data->email)? $google_account_data->email : ''}}</a>
                                                 </div>
                                                 <button class="user-btn google_classroom_btn" type="button">Switch account</button>
                                             </div>
-                                        @endif
-                                        <div class="form-group">
-                                            <i class="fas fa-search"></i>
-                                            <input type="text" class="form-control" id="sectionName" placeholder="Search for a course">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="user-list-options">
-                                                <ul>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input type="checkbox" class="form-check-input check-uncheck-all" data-target_class="google-classes" name="check-two">
-                                                            <label class="form-check-label custom-checkbox-label" for="all-classes">
-                                                                Select all classes
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    @if(!empty($google_classes))
-                                                        @foreach($google_classes as $googleClassData)
-                                                            @php $google_class_id = isset($googleClassData['id'])? $googleClassData['id'] : 0; @endphp
-                                                            <li>
-                                                                <div class="form-check">
-                                                                    <input type="checkbox" class="form-check-input google-classes" name="google-classes[]" id="{{$google_class_id}}" value="{{$google_class_id}}">
-                                                                    <label class="form-check-label custom-checkbox-label" for="{{$google_class_id}}">
-                                                                        {{isset($googleClassData['name'])? $googleClassData['name'] : ''}}
-                                                                        <em>{{isset($googleClassData['studentCount'])? $googleClassData['studentCount'] : 0}} students</em>
-                                                                        <em>{{isset($googleClassData['teachersCount'])? $googleClassData['teachersCount'] : 0}} faculty</em>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                        @endforeach
-                                                    @endif
-                                                </ul>
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="require">
-                                                    <label class="form-check-label custom-checkbox-label" for="require">
-                                                        Require a parent to guardian's email address
-                                                        <small>Instandly share student progress report</small>
-                                                    </label>
+                                            @else
+                                                <div class="user-info">
+                                                    <span class="img-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span>
+                                                    <div class="text-holder">
+                                                        <h5>Kaiser K</h5>
+                                                        <a href="#">kaiser.can@gamil.com</a>
+                                                    </div>
+                                                    <button class="user-btn google_classroom_btn" type="button">Switch account</button>
+                                                </div>
+                                            @endif
+                                            <div class="form-group">
+                                                <i class="fas fa-search"></i>
+                                                <input type="text" class="form-control" id="sectionName" placeholder="Search for a course">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="user-list-options">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input check-uncheck-all" data-target_class="google-classes" name="check-two">
+                                                                <label class="form-check-label custom-checkbox-label" for="all-classes">
+                                                                    Select all classes
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        @if(!empty($google_classes))
+                                                            @foreach($google_classes as $googleClassData)
+                                                                @php $google_class_id = isset($googleClassData['id'])? $googleClassData['id'] : 0; @endphp
+                                                                <li>
+                                                                    <div class="form-check">
+                                                                        <input type="checkbox" class="form-check-input google-classes" name="google-classes[]" id="{{$google_class_id}}" value="{{$google_class_id}}">
+                                                                        <label class="form-check-label custom-checkbox-label" for="{{$google_class_id}}">
+                                                                            {{isset($googleClassData['name'])? $googleClassData['name'] : ''}}
+                                                                            <em>{{isset($googleClassData['studentCount'])? $googleClassData['studentCount'] : 0}} students</em>
+                                                                            <em>{{isset($googleClassData['teachersCount'])? $googleClassData['teachersCount'] : 0}} faculty</em>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            @endforeach
+                                                        @endif
+                                                    </ul>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="require">
+                                                        <label class="form-check-label custom-checkbox-label" for="require">
+                                                            Require a parent to guardian's email address
+                                                            <small>Instandly share student progress report</small>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary import-google-classes">Import</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary import-google-classes">Import</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-12 d-flex align-items-center flex-wrap px-1">
-                    @foreach($classes as $classData)
-                        @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
+                    <div class="col-12 col-md-12 d-flex align-items-center flex-wrap px-1">
+                        @foreach($classes as $classData)
+                            @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
 
-                        $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
-    @endphp
-                        <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
-                            <!-- Dropdown Menu -->
+                            $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
+        @endphp
+                            <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
+                                <!-- Dropdown Menu -->
 
-                            <div class="card-body">
-                                <div class="card-title-holder">
-                                    <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }} @if($classData->class_nick_name != '')({{ $classData->class_nick_name }})@endif</a></h5>
-                                </div>
-                                <div class="card-description-holder">
-                                    <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
-                                    <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
-                                </div>
-                                <div class="progress-holder">
-                                    <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
-                                    <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
-                                        <div
-                                            class="progress-bar progress-bar-custom"
-                                            role="progressbar"
-                                            style="width: 75%;"
-                                            aria-valuenow="75"
-                                            aria-valuemin="0"
-                                            aria-valuemax="100"
-                                        >
-                                            75%
+                                <div class="card-body">
+                                    <div class="card-title-holder">
+                                        <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }} @if($classData->class_nick_name != '')({{ $classData->class_nick_name }})@endif</a></h5>
+                                    </div>
+                                    <div class="card-description-holder">
+                                        <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
+                                        <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
+                                    </div>
+                                    <div class="progress-holder">
+                                        <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
+                                        <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
+                                            <div
+                                                class="progress-bar progress-bar-custom"
+                                                role="progressbar"
+                                                style="width: 75%;"
+                                                aria-valuenow="75"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            >
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3 bottom-controls">
+                                        @if($classData->google_id > 0)
+                                            <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
+                                                <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
+                                            </button>
+                                        @endif
+                                        <div class="right-area">
+                                            <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
+                                                <i class="fas fa-chart-line"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                                <i class="fas fa-folder-open"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between mt-3 bottom-controls">
-                                    @if($classData->google_id > 0)
-                                        <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
-                                            <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
-                                        </button>
-                                    @endif
-                                    <div class="right-area">
-                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
-                                            <i class="fas fa-chart-line"></i>
-                                        </button>
-                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
-                                            <i class="fas fa-folder-open"></i>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
