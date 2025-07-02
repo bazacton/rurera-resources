@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css"/>
     <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
-
+    @if(isset($alertModule) && $alertModule == true)
+        <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+    @endif
 
     @stack('libraries_top')
 
@@ -341,6 +343,10 @@
 
     <script src="/assets/admin/vendor/daterangepicker/daterangepicker.min.js"></script>
     <script src="/assets/default/vendors/select2/select2.min.js"></script>
+
+    @if(isset($alertModule) && $alertModule == true)
+        <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
+    @endif
 
     <script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
     <!-- Template JS File -->

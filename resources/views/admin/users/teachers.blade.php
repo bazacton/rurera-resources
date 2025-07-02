@@ -44,7 +44,7 @@
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                     <div class="dropdown-box">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
@@ -101,7 +101,9 @@
                                                 <td data-th="Teacher/Admin">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div class="check-box">
+                                                            @if($user->id != $userObj->id)
                                                             <input type="checkbox" class="sections-teachers" value="{{ $user->id }}">
+                                                            @endif
                                                         </div>
                                                         <strong>
                                                         <span class="user-lable">
@@ -145,7 +147,7 @@
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                     <div class="dropdown-box">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
@@ -224,7 +226,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"><img src="/assets/default/svgs/user-alt-2-svgrepo-com.svg" alt="user-account"> Invite New Teachers to <span>{{$userObj->userSchool->title}}</span></h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle"><img src="/assets/default/svgs/user-alt-2-svgrepo-com.svg" alt="user-account"> Invite New Teachers</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -233,34 +235,6 @@
                     <div class="invite-text-field invitation-form-area">
                         <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form">
                             {{ csrf_field() }}
-                        <h6>Invite Teacher by Email</h6>
-
-                            <div class="form-group">
-                                <label class="input-label">Role</label>
-                                <div class="input-group">
-                                    <div class="radio-buttons">
-                                            <input type="radio" id="teacher_role" name="role_id"
-                                                   class="assignment_subject_check" value="7" checked>
-                                        <label for="teacher_role">Teacher</label>
-                                    </div>
-                                </div>
-                                @if(auth()->user()->isDistricAdmin())
-                                <div class="input-group">
-                                    <div class="radio-buttons">
-                                        <input type="radio" id="district_teacher_role" name="role_id"
-                                               class="assignment_subject_check" value="11">
-                                        <label for="district_teacher_role">District Admin</label>
-                                    </div>
-                                </div>
-                                @endif
-                                <div class="input-group">
-                                    <div class="radio-buttons">
-                                        <input type="radio" id="school_admin_role" name="role_id"
-                                               class="assignment_subject_check" value="14">
-                                        <label for="school_admin_role">School Admin</label>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="form-group">
                                 <div class="select-holder">
                                     <h5>Select School</h5>
@@ -288,8 +262,36 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="form-group">
+                                <h6>Choose Faculty Role</h6>
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                            <input type="radio" id="teacher_role" name="role_id"
+                                                   class="assignment_subject_check" value="7" checked>
+                                        <label for="teacher_role">Teacher</label>
+                                    </div>
+                                </div>
+                                @if(auth()->user()->isDistricAdmin())
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <input type="radio" id="district_teacher_role" name="role_id"
+                                               class="assignment_subject_check" value="11">
+                                        <label for="district_teacher_role">District Admin</label>
+                                    </div>
+                                </div>
+                                @endif
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <input type="radio" id="school_admin_role" name="role_id"
+                                               class="assignment_subject_check" value="14">
+                                        <label for="school_admin_role">School Admin</label>
+                                    </div>
+                                </div>
+                            </div>
+
                         <div class="textarea-field">
-                            <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite"></textarea>
+                            <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite" required></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
                             <p>Maximum no of emails allowed is 20</p>
                         </div>
@@ -319,33 +321,6 @@
                         {{ csrf_field() }}
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
-
-                        <div class="form-group">
-                            <label class="input-label">Role</label>
-                            <div class="input-group">
-                                <div class="radio-buttons">
-                                    <input type="radio" id="teacher_role-add" name="role_id"
-                                           class="assignment_subject_check" value="7" checked>
-                                    <label for="teacher_role-add">Teacher</label>
-                                </div>
-                            </div>
-                            @if(auth()->user()->isDistricAdmin())
-                            <div class="input-group">
-                                <div class="radio-buttons">
-                                    <input type="radio" id="district_teacher_role-add" name="role_id"
-                                           class="assignment_subject_check" value="11">
-                                    <label for="district_teacher_role-add">District Admin</label>
-                                </div>
-                            </div>
-                            @endif
-                            <div class="input-group">
-                                <div class="radio-buttons">
-                                    <input type="radio" id="school_admin_role-add" name="role_id"
-                                           class="assignment_subject_check" value="14">
-                                    <label for="school_admin_role-add">School Admin</label>
-                                </div>
-                            </div>
-                        </div>
                         <div class="form-group">
                             <div class="select-holder">
                                 <h5>Select School</h5>
@@ -373,6 +348,33 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="input-label">Role</label>
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <input type="radio" id="teacher_role-add" name="role_id"
+                                           class="assignment_subject_check" value="7" checked>
+                                    <label for="teacher_role-add">Teacher</label>
+                                </div>
+                            </div>
+                            @if(auth()->user()->isDistricAdmin())
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <input type="radio" id="district_teacher_role-add" name="role_id"
+                                           class="assignment_subject_check" value="11">
+                                    <label for="district_teacher_role-add">District Admin</label>
+                                </div>
+                            </div>
+                            @endif
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <input type="radio" id="school_admin_role-add" name="role_id"
+                                           class="assignment_subject_check" value="14">
+                                    <label for="school_admin_role-add">School Admin</label>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <label>Full Name</label>
                             <div class="form-field">
@@ -460,6 +462,7 @@
             $("."+target_div).removeClass('rurera-hide');
             $(this).closest('.admin-rurera-tabs').find('li').find('a').removeClass('active');
             $(this).addClass('active');
+            window.location.hash = target_div;
         });
 
         $(document).on('click', '.delete-invitation', function (e) {
@@ -497,6 +500,13 @@
         });
         $(document).on('click', '.teacher-invites-btn', function (e) {
             //
+            var form = $(this).closest('form')[0];
+
+            // Manually trigger HTML5 validation
+            if (!form.checkValidity()) {
+                form.reportValidity(); // shows the validation error messages
+                return;
+            }
             var formData = new FormData($(this).closest('form')[0]);
             $.ajax({
                 type: "POST",
@@ -526,6 +536,8 @@
             $(".teachers_email_input").val('');
         });
 
+
+        //bulk-actions-btn
 
 
 

@@ -1,3 +1,6 @@
+@php
+    $alertModule = true;
+@endphp
 @extends('admin.layouts.app')
 
 @push('styles_top')
@@ -235,7 +238,7 @@
                                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                                     <div class="dropdown-box">
                                                         <div class="dropdown">
-                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                             </a>
                                                             <div class="dropdown-menu">
@@ -265,6 +268,7 @@
                                                         </th>
                                                         <th>Last Login</th>
                                                         <th>School</th>
+                                                        <th></th>
                                                     </tr>
                                                     </thead>
                                                     <tbody class="students-list">
@@ -293,6 +297,16 @@
                                                                 <td data-th="School">
                                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                                         {{$studentObj->userSchool->title}}
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="pending-invites-controls">
+                                                                        <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
+                                                                            <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                                        </button>
+                                                                        <button data-id="{{$studentObj->id}}" class="delete-student" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete Student">
+                                                                            <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
+                                                                        </button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -337,7 +351,7 @@
                                                         <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                                         <div class="dropdown-box">
                                                             <div class="dropdown">
-                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                                     Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                                 </a>
                                                                 <div class="dropdown-menu">
@@ -672,7 +686,7 @@
                                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                                     <div class="dropdown-box">
                                                         <div class="dropdown">
-                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                             </a>
                                                             <div class="dropdown-menu">
@@ -721,7 +735,9 @@
 
                                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                                         <div class="check-box">
-                                                                            <input type="checkbox" class="sections-teachers" value="{{ $teacherObj->user->id }}">
+                                                                            @if($teacherObj->user->id != $userObj->id)
+                                                                                <input type="checkbox" class="sections-teachers" value="{{ $teacherObj->user->id }}">
+                                                                            @endif
                                                                         </div>
                                                                         <strong>
                                                                             <span class="user-lable">
@@ -800,7 +816,7 @@
                                                         <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                                         <div class="dropdown-box">
                                                             <div class="dropdown">
-                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                                     Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                                 </a>
                                                                 <div class="dropdown-menu">
@@ -1108,6 +1124,25 @@
             </div>
         </div>
     </div>
+    <div class="modal fade edit-student-modal add-student-modal" id="edit-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body student-modal-box">
+
+                    <div id="section4" class="modal-section edit-student-form-block active">
+                        <form action="javascript:;" method="POST" class="mb-0 edit-student-single">
+                            {{ csrf_field() }}
+                            <div class="edit-student-block"></div>
+                            <div class="teacher-buttons mt-30">
+                                <button type="submit" class="btn btn-primary edit-single-student-btn">Edit Single Student</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-layout-student-block rurera-hide mt-30"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
@@ -1119,7 +1154,7 @@
 
         $(document).ready(function () {
 
-            render_rurera_tabs();
+            //render_rurera_tabs();
             $(document).on('click', '.admin-rurera-tabs li a', function (e) {
                 var target_class = $(this).closest('.admin-rurera-tabs').attr('data-target_class');
                 var target_div = $(this).attr('id');
@@ -1127,9 +1162,10 @@
                 $("."+target_div).removeClass('rurera-hide');
                 $(this).closest('.admin-rurera-tabs').find('li').find('a').removeClass('active');
                 $(this).addClass('active');
+                window.location.hash = target_div;
             });
 
-            render_rurera_tabs();
+            //render_rurera_tabs();
 
             $(document).on('click', '.edit-teacher-btn', function (e) {
                 //rurera_loader($("#userSettingForm"), 'div');
@@ -1281,6 +1317,59 @@
                 $(".admin-rurera-tabs li a.active").click();
             }
         }
+
+        $('body').on('click', '.delete-student', function (e) {
+            var student_id = $(this).attr('data-id');
+            $(".confirm-title").html('Are you sure you want to remove?');
+            $(".confirm-approve-btn").attr('href', '/admin/users/delete_student?student_id='+student_id);
+            $(".rurera-confirm-modal").modal('show');
+        });
+
+        $('body').on('click', '.student-edit-modal', function (e) {
+
+            $(".edit-student-form-block").addClass('active');
+            $(".edit-student-form-block").removeClass('rurera-hide');
+            $(".messages-layout-student-block").removeClass('active');
+            $(".messages-layout-student-block").addClass('rurera-hide');
+            var student_id = $(this).attr('data-id');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/users/edit_student_modal',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'student_id':student_id},
+                success: function (return_data) {
+                    $(".edit-student-modal").modal('show');
+                    $('.edit-student-block').html(return_data);
+                }
+            });
+            console.log(student_id);
+        });
+
+        $(document).on('submit', '.edit-student-single', function (e) {
+            rurera_loader($(".edit-student-form-block"), 'div');
+
+
+            var formData = new FormData($('.edit-student-single')[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/users/edit_student_submit',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+
+                    rurera_modal_alert(
+                        'success',
+                        'Student Successfully Updated!',
+                        false, //confirmButton
+                    );
+                    window.location.reload();
+                }
+            });
+            return false;
+        });
 
         $(document).ready(function() {
             var hash = window.location.hash;
