@@ -210,7 +210,7 @@
                                                 <a href="{{ getAdminPanelUrl() }}/custom_quiz/{{ $quiz->id }}/edit"
                                                 class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
                                                 data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                                    <i class="fa fa-edit"></i>
+                                                    <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
                                                 </a>
                                                 @endcan
 
