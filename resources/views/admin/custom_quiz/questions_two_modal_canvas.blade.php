@@ -16,7 +16,7 @@
     </div>
 
 
-    <div class="section-controls px-15 pb-30">
+    <div class="section-controls px-15 pb-30 pb-30">
         <button type="button" class="save-btn">Save</button>
         <button type="button" class="cancel-btn">Cancel</button>
     </div>
