@@ -2121,6 +2121,7 @@ Tailer Hub Style Start
 .dropdown-menu > ul > li img {
     margin-right: 5px;
 }
+.edit-options-controls .dropdown-menu > ul > li img {margin-right: 0; margin-left: 5px;}
 .question-content-header {
     background-color: #fff;
     display: flex;
