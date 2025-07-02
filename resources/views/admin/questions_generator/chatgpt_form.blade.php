@@ -210,7 +210,7 @@
 						<input type="hidden" name="bulk_id" value="{{$QuestionsBulkListObj->id}}">
 						<div class="example-selected-questions"></div>
 						<input type="hidden" name="prompt_id" class="prompt_id" value="0">
-						<div class="modal-dialog modal-xl">
+						<div class="modal-dialog modal-xl modal-dialog-centered">
 							<div class="modal-content">
 								<div class="template-selection">
 									<div class="modal-header">
