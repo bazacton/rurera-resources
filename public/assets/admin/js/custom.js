@@ -1485,10 +1485,84 @@ function rureraform_decode64(input) {
     return output;
 }
 $(document).on('change', '.check-uncheck-all', function (e) {
+
     var target_class = $(this).attr('data-target_class');
     var isChecked = $(this).is(':checked');
     $('.' + target_class).prop('checked', isChecked);
+    var checkedCount = $('.' + target_class + ':checked').length;
+
+    if(checkedCount > 0){
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").removeClass('disabled')
+        }
+    }else{
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").addClass('disabled')
+        }
+    }
 });
+$(document).on('change', '.sections-teachers', function (e) {
+    var target_class = 'sections-teachers';
+    var checkedCount = $('.' + target_class + ':checked').length;
+
+    if(checkedCount > 0){
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").removeClass('disabled')
+        }
+    }else{
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").addClass('disabled')
+        }
+    }
+});
+
+$(document).on('change', '.sections-users', function (e) {
+    var target_class = 'sections-users';
+    var checkedCount = $('.' + target_class + ':checked').length;
+
+    if(checkedCount > 0){
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").removeClass('disabled')
+        }
+    }else{
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").addClass('disabled')
+        }
+    }
+});
+
+$(document).on('change', '.sections-students', function (e) {
+    var target_class = 'sections-students';
+    var checkedCount = $('.' + target_class + ':checked').length;
+
+    if(checkedCount > 0){
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").removeClass('disabled')
+        }
+    }else{
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").addClass('disabled')
+        }
+    }
+});
+
+
+
+$(document).on('change', '.invitations_list', function (e) {
+    var target_class = 'invitations_list';
+    var checkedCount = $('.' + target_class + ':checked').length;
+
+    if(checkedCount > 0){
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").removeClass('disabled')
+        }
+    }else{
+        if($(".bulk-actions-btn").length > 0){
+            $(".bulk-actions-btn").addClass('disabled')
+        }
+    }
+});
+
 
 $(document).on('change', '.schools-list-ajax', function (e) {
 
@@ -1508,3 +1582,10 @@ $(document).on('change', '.schools-list-ajax', function (e) {
         }
     });
 });
+
+
+function rurera_modal_alert(msg_type, msg_title, confirmButton){
+
+    Swal.fire({icon: msg_type, html: '<h3 class="font-20 text-center text-dark-blue">'+msg_title+'</h3>', showConfirmButton: confirmButton});
+
+}

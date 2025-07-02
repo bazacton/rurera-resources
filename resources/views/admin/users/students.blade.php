@@ -45,7 +45,7 @@
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                     <div class="dropdown-box">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                                 <div class="teacher-search-filter d-inline-flex p-0 border-0">
-                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"></span> Add Student</button>
+                                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
                                     <div class="search-field">
                                         <span class="icon-box">
                                             <img src="/assets/default/svgs/search.svg" alt="search">
@@ -81,7 +81,7 @@
                                     </thead>
                                     <tbody class="students-list">
 
-                                    @php $students = $school->students()->paginate(10); @endphp
+                                    @php $students = $school->students()->paginate(50); @endphp
                                     @if($students->count() > 0)
                                         @foreach($students as $studentObj)
                                             <tr>
@@ -124,10 +124,10 @@
 
                                     </tbody>
                                 </table>
-                                <div class="rurera-admin-pagination">
-                                    <span class="table-counts">{{$school->students->count()}} Students</span>
+                                <div class="rurera-admin-pagination mt-30">
                                     {{ $students->links() }}
                                 </div>
+                                <span class="table-counts">{{$school->students->count()}} Students</span>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                                         <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                         <div class="dropdown-box">
                                             <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
                                                     Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                 </a>
                                                 <div class="dropdown-menu">
