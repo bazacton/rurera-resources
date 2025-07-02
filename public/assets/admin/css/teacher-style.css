@@ -2101,6 +2101,8 @@ Tailer Hub Style Start
     border-bottom: 2px solid #ddd;
     border-top: 0;
     border-right: 0;
+    left: 15px;
+    right: auto;
 }
 .dropdown-menu ul > li:hover .sub-dropdown {
     opacity: 1;
