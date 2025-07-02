@@ -6645,6 +6645,28 @@ button.print-download-btn {
 }
 /* Teacher Dashboard Header Style End */
 
+/* Teacher Dashboard Tabs Style Start */
+.admin_teacher_role .admin-rurera-tabs-holder {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+    padding: 15px 25px 0;
+    margin: 0 0 30px;
+    border-radius: 10px;
+}
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link {
+    padding: 0 0 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px 10px;
+}
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link img {
+    height: 15px;
+    width: 15px;
+}
+.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title {
+    color: #333;
+}
+/* Teacher Dashboard Tabs Style End */
+
 @media screen and (max-width: 992px) {
     .table-sm table thead {display: none;}
     .table-sm table.table tbody tr {display: block; margin-bottom: 15px;}
