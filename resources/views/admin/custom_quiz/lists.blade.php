@@ -187,7 +187,7 @@
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <span>{{ $quiz->title }}</span>
                                                 @if(!empty($quiz->webinar))
-                                                <small class="d-block text-left text-primary">{{ $quiz->webinar->title
+                                                <small class="d-block text-left text-primary mt-1">{{ $quiz->webinar->title
                                                     }}</small>
                                                 @endif
                                             </div>
