@@ -17,7 +17,7 @@
             </div>
         </section>
 
-        <div class="teacher-listing d-flex align-items-center flex-wrap">
+        <div class="teacher-listing d-flex align-items-center flex-wrap justify-content-center">
 
             <div class="row w-100">
                 <div class="col-12 col-md-12">
