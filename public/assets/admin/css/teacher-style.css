@@ -2086,6 +2086,22 @@ Tailer Hub Style Start
     visibility: hidden;
     opacity: 0;
 }
+.edit-options-controls .dropdown-menu li .sub-dropdown {
+    right: 100%;
+    left: auto;
+}
+.edit-options-controls a.dropdown-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0 8px;
+}
+.edit-options-controls .dropdown-menu > ul > li:has(.sub-dropdown):after {
+    border-left: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-top: 0;
+    border-right: 0;
+}
 .dropdown-menu ul > li:hover .sub-dropdown {
     opacity: 1;
     visibility: visible;
