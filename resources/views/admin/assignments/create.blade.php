@@ -865,17 +865,18 @@
                                                 </div>
                                             </div>
 
-
-                                            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                                                @if( !empty( $sections) )
-                                                @foreach( $sections as $sectionObj)
-                                                <li class="nav-item conditional_sections rurera-hide class_sections_{{$sectionObj->parent_id}}">
-                                                    <a class="nav-link" id="section-tabid-{{$sectionObj->id}}" data-toggle="tab" href="#section-tab-{{$sectionObj->id}}" role="tab"
-                                                       aria-controls="section-tab-{{$sectionObj->id}}" aria-selected="true"><span class="tab-title">{{$sectionObj->title}}</span></a>
-                                                </li>
-                                                @endforeach
-                                                @endif
-                                            </ul>
+                                            <div class="admin-rurera-tabs-holder">
+                                                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                                                    @if( !empty( $sections) )
+                                                    @foreach( $sections as $sectionObj)
+                                                    <li class="nav-item conditional_sections rurera-hide class_sections_{{$sectionObj->parent_id}}">
+                                                        <a class="nav-link" id="section-tabid-{{$sectionObj->id}}" data-toggle="tab" href="#section-tab-{{$sectionObj->id}}" role="tab"
+                                                        aria-controls="section-tab-{{$sectionObj->id}}" aria-selected="true"><span class="tab-title">{{$sectionObj->title}}</span></a>
+                                                    </li>
+                                                    @endforeach
+                                                    @endif
+                                                </ul>
+                                            </div>
 
                                             <div class="tab-content" id="myTabContent2">
                                                 @if( !empty( $sections) )
