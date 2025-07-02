@@ -690,7 +690,7 @@
                                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                             </a>
                                                             <div class="dropdown-menu">
-                                                                <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Unlink</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1272,8 +1272,9 @@
                     teachers_ids.push($(this).val());
                 });
 
-                $(".confirm-title").html('Are you sure you want to remove?');
-                $(".confirm-approve-btn").attr('href', '/admin/users/unlink_teachers?teachers_ids='+teachers_ids);
+                $(".confirm-title").html('Are you sure you want to unlink?');
+                $(".confirm-approve-btn").html('Yes to Unlink');
+                $(".confirm-approve-btn").attr('href', '/admin/users/unlink_teachers_from_class?teachers_ids='+teachers_ids);
                 $(".rurera-confirm-modal").modal('show');
             });
 
