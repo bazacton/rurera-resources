@@ -877,6 +877,7 @@
                                                     @endif
                                                 </ul>
                                             </div>
+                                            
 
                                             <div class="tab-content" id="myTabContent2">
                                                 @if( !empty( $sections) )
