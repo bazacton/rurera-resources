@@ -596,11 +596,14 @@ ul.crop_sizes {
 <div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
 <div class="form-group">
 <label class="input-label">Topic</label>
-<select data-sub_chapter_id="" id="chapter_id"
-class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
-<option value="">Please select year, subject</option>
-</select>
+<div class="select-holder">
+    <select data-sub_chapter_id="" id="chapter_id"
+    class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+    name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+        <option value="">Please select year, subject</option>
+    </select>
+</div>
+
 @error('chapter_id')
 <div class="invalid-feedback">
 {{ $message }}
@@ -612,11 +615,14 @@ name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_enco
 <div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
 <div class="form-group">
 <label class="input-label">Sub Topic</label>
-<select id="sub_chapter_id"
-class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
-<option value="">Please select year, subject, Topic</option>
-</select>
+<div class="select-holder">
+    <select id="sub_chapter_id"
+    class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+        <option value="">Please select year, subject, Topic</option>
+    </select>
+</div>
+
 @error('sub_chapter_id')
 <div class="invalid-feedback">
 {{ $message }}
