@@ -369,7 +369,7 @@
     border-radius: .25rem;
     width: 100%;
 }
-.student-school-change {
+.create-class-modal .select-box select {
     background-color: inherit;
     border-radius: .25rem;
     width: 100%;
