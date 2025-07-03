@@ -78,7 +78,7 @@
                     </span>
                 </div>
 
-                <input type="number" name="duration" value="{{ (!empty($upcomingCourse) and !empty($upcomingCourse->duration)) ? $upcomingCourse->duration : old('duration') }}" class="form-control @error('duration')  is-invalid @enderror" min="0"/>
+                <input type="number" name="duration" value="{{ (!empty($upcomingCourse) and !empty($upcomingCourse->duration)) ? $upcomingCourse->duration : old('duration') }}" class="form-control @error('duration')  is-invalid @enderror mt-0" min="0"/>
                 @error('duration')
                 <div class="invalid-feedback">
                     {{ $message }}
