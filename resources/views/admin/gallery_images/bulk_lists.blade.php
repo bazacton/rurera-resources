@@ -555,20 +555,23 @@ ul.crop_sizes {
 <div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
 <div class="form-group">
 <label class="input-label">{{trans('admin/main.category')}}</label>
-<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-<option value="">{{trans('admin/main.all_categories')}}</option>
-@foreach($categories as $category)
-@if(!empty($category->subCategories) and count($category->subCategories))
-<optgroup label="{{  $category->title }}">
-@foreach($category->subCategories as $subCategory)
-<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-@endforeach
-</optgroup>
-@else
-<option value="{{ $category->id }}">{{ $category->title }}</option>
-@endif
-@endforeach
-</select>
+<div class="select-holder">
+    <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+        <option value="">{{trans('admin/main.all_categories')}}</option>
+        @foreach($categories as $category)
+        @if(!empty($category->subCategories) and count($category->subCategories))
+        <optgroup label="{{  $category->title }}">
+        @foreach($category->subCategories as $subCategory)
+        <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+        @endforeach
+        </optgroup>
+        @else
+        <option value="{{ $category->id }}">{{ $category->title }}</option>
+        @endif
+        @endforeach
+    </select>
+</div>
+
 </div>
 </div>
 <div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
