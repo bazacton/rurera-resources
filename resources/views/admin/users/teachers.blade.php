@@ -258,7 +258,7 @@
                             <div class="form-group">
                                 <div class="select-holder">
                                     <h5>Select a Class</h5>
-                                    <div class="select-box">
+                                    <div class="select-box input-group">
                                         <select name="class_id" class="student-class-change school-classes-list">
                                             <option value="">Select Class</option>
                                         </select>
@@ -344,7 +344,7 @@
                         <div class="form-group">
                             <div class="select-holder">
                                 <h5>Select a Class</h5>
-                                <div class="select-box">
+                                <div class="select-box input-group">
                                     <select name="class_id" class="student-class-change school-classes-list">
                                         <option value="">Select Class</option>
                                     </select>
