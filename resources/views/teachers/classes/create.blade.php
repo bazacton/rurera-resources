@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <div class="admin-rurera-tabs-holder">
+        <div class="admin-rurera-tabs-holder mt-30">
             <ul data-target_class="admin-rurera-tabs-page-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                 <li class="nav-item skelton-height-lg">
                     <a class="nav-link active" id="dashboard-tab-page-edit" href="javascript:;">
