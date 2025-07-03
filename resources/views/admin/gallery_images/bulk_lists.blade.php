@@ -575,42 +575,42 @@ ul.crop_sizes {
 </div>
 </div>
 <div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
-<div class="form-group">
-<label class="input-label">Subjects</label>
-<div class="select-holder">
-    <select data-chapter_id="" id="subject_id"
-    class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
-    name="subject_id" data-next_index="chapter_id" data-next_value="">
-        <option value="">Please select year, subject</option>
-    </select>
-</div>
+    <div class="form-group">
+        <label class="input-label">Subjects</label>
+        <div class="select-holder">
+            <select data-chapter_id="" id="subject_id"
+            class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+            name="subject_id" data-next_index="chapter_id" data-next_value="">
+                <option value="">Please select year, subject</option>
+            </select>
+        </div>
 
-@error('subject_id')
-<div class="invalid-feedback">
-{{ $message }}
-</div>
-@enderror
+        @error('subject_id')
+        <div class="invalid-feedback">
+        {{ $message }}
+        </div>
+        @enderror
 
-</div>
+    </div>
 </div>
 <div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
-<div class="form-group">
-<label class="input-label">Topic</label>
-<div class="select-holder">
-    <select data-sub_chapter_id="" id="chapter_id"
-    class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-    name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
-        <option value="">Please select year, subject</option>
-    </select>
-</div>
+    <div class="form-group">
+        <label class="input-label">Topic</label>
+        <div class="select-holder">
+            <select data-sub_chapter_id="" id="chapter_id"
+            class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+            name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+                <option value="">Please select year, subject</option>
+            </select>
+        </div>
 
-@error('chapter_id')
-<div class="invalid-feedback">
-{{ $message }}
-</div>
-@enderror
+        @error('chapter_id')
+        <div class="invalid-feedback">
+        {{ $message }}
+        </div>
+        @enderror
 
-</div>
+    </div>
 </div>
 <div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
     <div class="form-group">
