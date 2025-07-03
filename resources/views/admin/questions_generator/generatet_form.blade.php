@@ -53,7 +53,7 @@
 								@endif
 						@endforeach
 						@endif
-						<button type="button" class="btn btn-success save-template" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Form</button>
+						<button type="button" class="btn btn-success save-template test@" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Form</button>
 					</div>
 
 	<form action="/admin/questions-generator/generate-questions/{{$questionsBulkListObj->id}}" method="POST" id="question-generator-form" class="px-25 question-generator-form">
