@@ -165,7 +165,7 @@
 				$saved_templates = json_decode( $saved_templates );
 				$saved_templates = isset( $saved_templates->bulk_list_search )? $saved_templates->bulk_list_search : array();
 				@endphp
-				<div class="defined-searches mt-20 123" style="display:none">
+				<div class="defined-searches mt-20" style="display:none">
 				<span><strong>Defined Searches:</strong></span>
 					@if( !empty( $saved_templates ) )
 						@foreach( $saved_templates  as $template_name => $template_data)
@@ -178,7 +178,7 @@
 							<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
 						@endforeach
 					@endif
-					<button type="button" class="btn btn-success save-template test@" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
+					<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
 				</div>
         </section>
 
