@@ -165,7 +165,7 @@
 							<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="topics_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
 						@endforeach
 					@endif
-					<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="topics_search" ><i class="fas fa-save"></i> Save Template</button>
+					<button type="button" class="btn btn-success save-template test@" data-form_id="topic_parts_search_form" data-template_type="topics_search" ><i class="fas fa-save"></i> Save Template</button>
 				</div>
         </section>
 
