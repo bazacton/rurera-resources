@@ -177,34 +177,36 @@
                 </div>
             </div>
         </div>
-        <ul data-target_class="admin-rurera-tabs-page-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-            <li class="nav-item skelton-height-lg">
-                <a class="nav-link active" id="dashboard-tab-page-edit" href="javascript:;">
-                    <span class="tab-title">Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item skelton-height-lg">
-                <a class="nav-link" id="students-tab-page-edit" href="javascript:;">
-                    <span class="tab-title">Students</span>
-                </a>
-            </li>
-            <li class="nav-item skelton-height-lg">
-                <a class="nav-link" id="teachers-tab-page-edit" href="javascript:;">
-                    <span class="tab-title">Teachers</span>
-                </a>
-            </li>
-            <li class="nav-item skelton-height-lg">
-                <a class="nav-link" id="assignments-tab-page-edit" href="javascript:;">
-                    <span class="tab-title">Assignments</span>
-                </a>
-            </li>
-            <li class="nav-item skelton-height-lg">
-                <a class="nav-link" id="reports-tab-page-edit" href="javascript:;">
-                    <span class="tab-title">Reports</span>
-                </a>
-            </li>
-        </ul>
-
+        <div class="admin-rurera-tabs-holder">
+            <ul data-target_class="admin-rurera-tabs-page-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                <li class="nav-item skelton-height-lg">
+                    <a class="nav-link active" id="dashboard-tab-page-edit" href="javascript:;">
+                        <span class="tab-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item skelton-height-lg">
+                    <a class="nav-link" id="students-tab-page-edit" href="javascript:;">
+                        <span class="tab-title">Students</span>
+                    </a>
+                </li>
+                <li class="nav-item skelton-height-lg">
+                    <a class="nav-link" id="teachers-tab-page-edit" href="javascript:;">
+                        <span class="tab-title">Teachers</span>
+                    </a>
+                </li>
+                <li class="nav-item skelton-height-lg">
+                    <a class="nav-link" id="assignments-tab-page-edit" href="javascript:;">
+                        <span class="tab-title">Assignments</span>
+                    </a>
+                </li>
+                <li class="nav-item skelton-height-lg">
+                    <a class="nav-link" id="reports-tab-page-edit" href="javascript:;">
+                        <span class="tab-title">Reports</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
         <div class="section-body populated-data">
 
             <div class="row">
