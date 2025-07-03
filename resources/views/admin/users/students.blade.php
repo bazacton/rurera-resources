@@ -161,9 +161,7 @@
                                     <table class="table mb-0">
                                         <thead class="thead-light">
                                         <tr>
-                                            <th>
-                                                 Student
-                                            </th>
+                                            <th>Student</th>
                                             <th>Last Login</th>
                                             <th>Action</th>
                                         </tr>
