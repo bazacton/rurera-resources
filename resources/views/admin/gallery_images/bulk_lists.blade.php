@@ -577,11 +577,14 @@ ul.crop_sizes {
 <div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
 <div class="form-group">
 <label class="input-label">Subjects</label>
-<select data-chapter_id="" id="subject_id"
-class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
-name="subject_id" data-next_index="chapter_id" data-next_value="">
-<option value="">Please select year, subject</option>
-</select>
+<div class="select-holder">
+    <select data-chapter_id="" id="subject_id"
+    class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+    name="subject_id" data-next_index="chapter_id" data-next_value="">
+        <option value="">Please select year, subject</option>
+    </select>
+</div>
+
 @error('subject_id')
 <div class="invalid-feedback">
 {{ $message }}
