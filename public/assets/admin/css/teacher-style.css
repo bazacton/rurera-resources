@@ -1706,6 +1706,9 @@ Tailer Hub Style Start
 .admin_teacher_role .section .section-header {
     background-color: inherit;
 }
+.admin_teacher_role .section .section-header h1 i {
+    color: var(--white);
+}
 .admin_teacher_role .question-layout {
     padding-bottom: 0;
 }
