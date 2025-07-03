@@ -4328,10 +4328,8 @@ Qustions AI Tabs Style End
     position: relative;
 }
 .invite-teacher-modal.invite-teacher-modal .close {
-    right: 10px;
-    top: 5px;
+    position: inherit;
 }
-
 .invite-teacher-modal .modal-title img {
     width: 22px;
     height: 22px;
