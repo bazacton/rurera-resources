@@ -229,16 +229,84 @@
 
         <div class="row">
 		
-				<div class="col-md-12 col-lg-12">
-						<pre class="prompt-text"></pre>
-						
-						<div id="accordion" class="topic-parts-data">
-							<div class="table-responsive">
-								<table class="table">
-									<thead>
-										<tr class="topic-heading-top">
-											<th class="font-14">&nbsp;</th>
-											<th class="warning font-14">&nbsp;</th>
+			<div class="col-md-12 col-lg-12">
+				<pre class="prompt-text"></pre>
+				
+				<div id="accordion" class="topic-parts-data">
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr class="topic-heading-top">
+									<th class="font-14">&nbsp;</th>
+									<th class="warning font-14">&nbsp;</th>
+									@if(!empty($difficulty_levels))
+										@foreach($difficulty_levels as $difficulty_level)
+											@php $difficulty_level_class = '';
+											$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
+											$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
+											$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
+											@endphp
+											<th colspan="3" class="{{$difficulty_level_class}}">{{$difficulty_level}}</th>
+										@endforeach
+									@endif
+									<th class="font-14">&nbsp;</th>
+									<th class="font-14">&nbsp;</th>
+								</tr>
+								<tr>
+									<th>Topic Part Item</th>
+									<th>Created Date</th>
+									@if(!empty($difficulty_levels))
+										@foreach($difficulty_levels as $difficulty_level)
+											@php $difficulty_level_class = '';
+												$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
+												$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
+												$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
+											@endphp
+											<th class="{{$difficulty_level_class}}">Expected</th>
+											<th class="{{$difficulty_level_class}}">Total</th>
+											<th class="{{$difficulty_level_class}}">Pending</th>
+										@endforeach
+									@endif
+									<th>Total Pending Questions</th>
+									<th>Total unreviewed Questions</th>
+								</tr>
+								</thead>
+								<tbody id="topic_part_1">
+								@if($WebinarChapters->count() > 0 )
+									@php $chapter_counter = 0; @endphp
+										@foreach($WebinarChapters as $WebinarChapterObj)
+										@php $chapter_counter++; @endphp
+										<tr class="topic_parts_parent accordion-parent" data-child_class="topic_parts_{{$WebinarChapterObj->id}}">
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
+											<td>-</td>
+											@if(!empty($difficulty_levels))
+												@foreach($difficulty_levels as $difficulty_level)
+													<td class="{{$difficulty_level_class}} 1expected-questions-{{$difficulty_level}}">0</td>
+													<td class="{{$difficulty_level_class}} 1total-questions-{{$difficulty_level}}">0</td>
+													<td class="{{$difficulty_level_class}} 1pending-questions-{{$difficulty_level}} table-col-pending">0</td>
+												@endforeach
+											@endif
+											<td class="1total-pending-questions">0</td>
+											<td class="1total-unreviewed-questions">0</td>
+										</tr>
+										
+									@if($WebinarChapterObj->ChapterTopicParts->count() > 0 )
+										@php $part_counter = 0; @endphp
+										@foreach($WebinarChapterObj->ChapterTopicParts as $TopicPartObj)
+										@php $part_counter++; @endphp
+										
+										@php 
+										$total_pending_questions = $total_unreviewed_questions = 0;
+										$expected_part_questions = 0;
+										$total_part_questions = $TopicPartObj->topicPartQuestions->count();
+										$pending_part_questions = $expected_part_questions-$total_part_questions;
+										$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
+										$total_unreviewed_questions = $TopicPartObj->topicPartQuestions->where('question_status', 'api_pending')->count();
+										@endphp
+										
+										<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}}</span></td>
+											<td>-</td>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
 													@php $difficulty_level_class = '';
@@ -246,132 +314,64 @@
 													$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 													$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 													@endphp
-													<th colspan="3" class="{{$difficulty_level_class}}">{{$difficulty_level}}</th>
+													@php $total_questions = $TopicPartObj->topicPartQuestions->where('question_difficulty_level', $difficulty_level)->count();
+													$pending_questions = $expected_part_questions-$total_questions;
+													$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
+													$total_pending_questions += $pending_questions;
+													@endphp
+													<td class="{{$difficulty_level_class}} expected-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
+													<td class="{{$difficulty_level_class}} total-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
+													<td class="{{$difficulty_level_class}} pending-questions-{{$difficulty_level}} value-for-parent table-col-pending" data-parent_key="1pending-questions-{{$difficulty_level}}">{{$pending_questions}}</td>
 												@endforeach
 											@endif
-											<th class="font-14">&nbsp;</th>
-											<th class="font-14">&nbsp;</th>
+											<td class="total-pending-questions value-for-parent" data-parent_key="1total-pending-questions">{{$total_pending_questions}}</td>
+											<td class="total-unreviewed-questions value-for-parent" data-parent_key="1total-unreviewed-questions">{{$total_unreviewed_questions}}</td>
 										</tr>
-										<tr>
-											<th>Topic Part Item</th>
-											<th>Created Date</th>
-											@if(!empty($difficulty_levels))
-												@foreach($difficulty_levels as $difficulty_level)
-													@php $difficulty_level_class = '';
+										
+										@if($TopicPartObj->topicSubParts->count() > 0 )
+										@foreach($TopicPartObj->topicSubParts as $subTopicObj)
+											@php 
+											$total_pending_questions = $total_unreviewed_questions = 0;
+											$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
+											$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
+											$pending_part_questions = $expected_part_questions-$total_part_questions;
+											$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
+											$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
+											@endphp
+											<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
+												<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
+												<td>-</td>
+												@if(!empty($difficulty_levels))
+													@foreach($difficulty_levels as $difficulty_level)
+														@php $difficulty_level_class = '';
 														$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
 														$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 														$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
-													@endphp
-													<th class="{{$difficulty_level_class}}">Expected</th>
-													<th class="{{$difficulty_level_class}}">Total</th>
-													<th class="{{$difficulty_level_class}}">Pending</th>
-												@endforeach
-											@endif
-											<th>Total Pending Questions</th>
-											<th>Total unreviewed Questions</th>
-										</tr>
-									 </thead>
-									  <tbody id="topic_part_1">
-									  @if($WebinarChapters->count() > 0 )
-										  @php $chapter_counter = 0; @endphp
-												@foreach($WebinarChapters as $WebinarChapterObj)
-												@php $chapter_counter++; @endphp
-												<tr class="topic_parts_parent accordion-parent" data-child_class="topic_parts_{{$WebinarChapterObj->id}}">
-													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
-													<td>-</td>
-													@if(!empty($difficulty_levels))
-														@foreach($difficulty_levels as $difficulty_level)
-															<td class="{{$difficulty_level_class}} 1expected-questions-{{$difficulty_level}}">0</td>
-															<td class="{{$difficulty_level_class}} 1total-questions-{{$difficulty_level}}">0</td>
-															<td class="{{$difficulty_level_class}} 1pending-questions-{{$difficulty_level}} table-col-pending">0</td>
-														@endforeach
-													@endif
-													<td class="1total-pending-questions">0</td>
-													<td class="1total-unreviewed-questions">0</td>
-												</tr>
-												
-											@if($WebinarChapterObj->ChapterTopicParts->count() > 0 )
-												@php $part_counter = 0; @endphp
-												@foreach($WebinarChapterObj->ChapterTopicParts as $TopicPartObj)
-												@php $part_counter++; @endphp
-												
-												@php 
-												$total_pending_questions = $total_unreviewed_questions = 0;
-												$expected_part_questions = 0;
-												$total_part_questions = $TopicPartObj->topicPartQuestions->count();
-												$pending_part_questions = $expected_part_questions-$total_part_questions;
-												$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-												$total_unreviewed_questions = $TopicPartObj->topicPartQuestions->where('question_status', 'api_pending')->count();
-												@endphp
-												
-												<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
-													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}}</span></td>
-													<td>-</td>
-													@if(!empty($difficulty_levels))
-														@foreach($difficulty_levels as $difficulty_level)
-															@php $difficulty_level_class = '';
-															$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
-															$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
-															$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
-															@endphp
-															@php $total_questions = $TopicPartObj->topicPartQuestions->where('question_difficulty_level', $difficulty_level)->count();
-															$pending_questions = $expected_part_questions-$total_questions;
-															$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
-															$total_pending_questions += $pending_questions;
-															@endphp
-															<td class="{{$difficulty_level_class}} expected-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
-															<td class="{{$difficulty_level_class}} total-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
-															<td class="{{$difficulty_level_class}} pending-questions-{{$difficulty_level}} value-for-parent table-col-pending" data-parent_key="1pending-questions-{{$difficulty_level}}">{{$pending_questions}}</td>
-														@endforeach
-													@endif
-													<td class="total-pending-questions value-for-parent" data-parent_key="1total-pending-questions">{{$total_pending_questions}}</td>
-													<td class="total-unreviewed-questions value-for-parent" data-parent_key="1total-unreviewed-questions">{{$total_unreviewed_questions}}</td>
-												</tr>
-												
-												@if($TopicPartObj->topicSubParts->count() > 0 )
-												@foreach($TopicPartObj->topicSubParts as $subTopicObj)
-													@php 
-													$total_pending_questions = $total_unreviewed_questions = 0;
-													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
-													$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
-													$pending_part_questions = $expected_part_questions-$total_part_questions;
-													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-													$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
-													@endphp
-													<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
-														<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
-														<td>-</td>
-														@if(!empty($difficulty_levels))
-															@foreach($difficulty_levels as $difficulty_level)
-																@php $difficulty_level_class = '';
-																$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
-																$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
-																$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
-																@endphp
-																@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
-																$pending_questions = $expected_part_questions-$total_questions;
-																$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
-																$total_pending_questions += $pending_questions;
-																@endphp
-																<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
-																<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
-																<td class="{{$difficulty_level_class}} value-for-parent table-col-pending" data-parent_key="pending-questions-{{$difficulty_level}}">{{$pending_questions}}</td>
-															@endforeach
-														@endif
-														<td class="value-for-parent" data-parent_key="total-pending-questions">{{$total_pending_questions}}</td>
-														<td class="value-for-parent" data-parent_key="total-unreviewed-questions">{{$total_unreviewed_questions}}</td>
-													</tr>
-													
-												@endforeach
-											@endif
-												@endforeach
-											@endif
-												@endforeach
-											@endif
-										</tbody>
-									</table>
-								</div>
-							</div>
+														@endphp
+														@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
+														$pending_questions = $expected_part_questions-$total_questions;
+														$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
+														$total_pending_questions += $pending_questions;
+														@endphp
+														<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
+														<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
+														<td class="{{$difficulty_level_class}} value-for-parent table-col-pending" data-parent_key="pending-questions-{{$difficulty_level}}">{{$pending_questions}}</td>
+													@endforeach
+												@endif
+												<td class="value-for-parent" data-parent_key="total-pending-questions">{{$total_pending_questions}}</td>
+												<td class="value-for-parent" data-parent_key="total-unreviewed-questions">{{$total_unreviewed_questions}}</td>
+											</tr>
+											
+										@endforeach
+									@endif
+										@endforeach
+									@endif
+										@endforeach
+									@endif
+								</tbody>
+							</table>
+						</div>
+					</div>
 
 				</div>
 		
