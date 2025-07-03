@@ -36,7 +36,8 @@
                 @can('admin_general_dashboard_show')
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }}">
                         <a href="/admin" class="nav-link">
-                            <img src="/assets/default/img/sidebar/home.svg" alt="home">
+                            <!-- <img src="/assets/default/img/sidebar/home.svg" alt="home"> -->
+                            <i class="fas fa-home"></i>
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
                     </li>
