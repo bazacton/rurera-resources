@@ -165,7 +165,7 @@
 				$saved_templates = json_decode( $saved_templates );
 				$saved_templates = isset( $saved_templates->bulk_list_search )? $saved_templates->bulk_list_search : array();
 				@endphp
-				<div class="defined-searches mt-20" style="display:none">
+				<div class="defined-searches mt-20 123" style="display:none">
 				<span><strong>Defined Searches:</strong></span>
 					@if( !empty( $saved_templates ) )
 						@foreach( $saved_templates  as $template_name => $template_data)
