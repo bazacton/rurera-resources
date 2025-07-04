@@ -4062,7 +4062,8 @@ Qustions AI Tabs Style End
 .bulk-actions .dropdown-box {
     padding: 0;
 }
-.teacher-table .dropdown-box .dropdown-toggle {
+.teacher-table .dropdown-box .dropdown-toggle,
+.admin_teacher_role .simple-btn {
     width: auto;
     height: auto;
     background-color: #ddd;
