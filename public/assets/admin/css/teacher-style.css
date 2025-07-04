@@ -12,6 +12,7 @@
 }
 .admin_teacher_role .main-sidebar {background-color: #fff; border-right: 1px solid #f2f2f2; z-index: 6;}
 .admin_teacher_role .main-sidebar .sidebar-brand {padding: 15px 15px 0; margin: 0 0 15px; display: inline-flex; align-items: center;}
+.admin_teacher_role .main-sidebar .sidebar-brand.sidebar-brand-sm {display: none;}
 .admin_teacher_role .main-sidebar .sidebar-menu {border-top: 1px solid #f2f2f2; padding-top: 10px; margin-top: 10px;}
 .main-sidebar .sidebar-menu li.menu-header {border-top: 1px solid #ddd; padding-top: 15px;}
 .admin_teacher_role .main-sidebar .sidebar-menu li a {font-size: 16px; font-weight: 600; color: #343434;}
@@ -27,13 +28,23 @@
 }
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo-text {
     line-height: normal;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: #989898;
     text-transform: uppercase;
 }
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo img {
     margin: 0;
+    height: 30px;
+    width: 30px;
+}
+.admin_teacher_role .role-title {
+    font-size: 10px;
+    line-height: normal;
+    background-color: #f0f0fd;
+    color: var(--blue);
+    padding: 5px 5px;
+    border-radius: 3px;
 }
 /* Admin Left Menue Style End */
 
