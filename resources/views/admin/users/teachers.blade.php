@@ -254,13 +254,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="select-holder">
-                                    <label>Select a Class</label>
-                                    <div class="select-box input-group">
-                                        <select name="class_id" class="student-class-change school-classes-list">
-                                            <option value="">Select Class</option>
-                                        </select>
-                                    </div>
+                                <label>Select a Class</label>
+                                <div class="select-box input-group">
+                                    <select name="class_id" class="student-class-change school-classes-list">
+                                        <option value="">Select Class</option>
+                                    </select>
                                 </div>
                             </div>
 
