@@ -4084,6 +4084,9 @@ Qustions AI Tabs Style End
     color: var(--white);
     border-color: transparent;
 }
+.admin_teacher_role .simple-btn {
+    padding: 8px 15px;
+}
 .teacher-table .invite-faculty .dropdown-box .dropdown-toggle img {
     filter: invert(99%) sepia(12%) saturate(35%) hue-rotate(289deg) brightness(113%) contrast(95%);
 }
