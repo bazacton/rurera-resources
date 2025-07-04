@@ -1014,7 +1014,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="invite-text-field invitation-form-area">
-                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form">
+                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
                             {{ csrf_field() }}
 
                             <h6>Invite Teacher by Email</h6>
@@ -1106,11 +1106,11 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name" required>
+                            <input type="text" name="full_name" class="form-control" value="" placeholder="Full Name" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control " id="email" value="" required>
+                            <input name="email" type="text" class="form-control" id="email" value="" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
@@ -1120,7 +1120,7 @@
                                 <i class="fa fa-lock"></i>
                                 </span>
                                 </div>
-                                <input type="password" name="password" class="form-control ">
+                                <input type="password" name="password" class="form-control" autocomplete="new-password">
                             </div>
                         </div>
                         <div class="text-right mt-4">
