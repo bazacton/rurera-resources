@@ -6554,6 +6554,7 @@ button.print-download-btn {
     display: inline-flex;
     align-items: center;
     gap: 5px 10px;
+    background-color: inherit;
 }
 .admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title,
 .admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
