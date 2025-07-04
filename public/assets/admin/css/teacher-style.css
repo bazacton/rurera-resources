@@ -150,58 +150,19 @@
 .admin_teacher_role .form-field .icon-box img,
 .admin_teacher_role .input-group .icon-box img {height: 15px; width: 15px; object-fit: contain; border-radius: 0;}
 .admin_teacher_role .form-field .icon-box ~ .form-control,
-.admin_teacher_role .input-group .icon-box ~ .form-control {
-    padding-left: 35px;
-}
-.admin_teacher_role .class-edit-modal .form-group select {
-    appearance: none;
-}
-.admin_teacher_role .create-class-modal .modal-title {
-    color: #333;
-}
-.admin_teacher_role .input-group-append .dropdown-toggle {
-    background: none;
-    box-shadow: none;
-    border-color: #e4e6fc !important;
-}
+.admin_teacher_role .input-group .icon-box ~ .form-control {padding-left: 35px;}
+.admin_teacher_role .class-edit-modal .form-group select {appearance: none;}
+.admin_teacher_role .create-class-modal .modal-title {color: #333;}
+.admin_teacher_role .input-group-append .dropdown-toggle {background: none; box-shadow: none; border-color: #e4e6fc !important;}
 .admin_teacher_role .input-group-append .dropdown-toggle:hover,
-.admin_teacher_role .input-group-append .dropdown-toggle:focus {
-    background-color: inherit !important;
-    border-color: #e4e6fc !important;
-}
+.admin_teacher_role .input-group-append .dropdown-toggle:focus {background-color: inherit !important; border-color: #e4e6fc !important;}
 .admin_teacher_role .create-class-modal .input-group-append .color-indicator,
-.admin_teacher_role .class-edit-modal .input-group-append .color-indicator {
-    height: 18px;
-    width: 18px;
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-.admin_teacher_role .class-color-box {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+.admin_teacher_role .class-edit-modal .input-group-append .color-indicator {height: 18px; width: 18px; border-radius: 100%; display: inline-block; vertical-align: middle; margin-right: 5px;}
+.admin_teacher_role .class-color-box {display: flex; align-items: center; gap: 5px; flex-wrap: wrap; justify-content: center;}
 .admin_teacher_role .create-class-modal .dropdown-menu h5,
-.admin_teacher_role .class-edit-modal .dropdown-menu h5 {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #555;
-}
+.admin_teacher_role .class-edit-modal .dropdown-menu h5 {font-size: 14px; text-align: center; margin-bottom: 10px; color: #555;}
 .admin_teacher_role .create-class-modal .dropdown-menu .class_color,
-.admin_teacher_role .class-edit-modal .dropdown-menu .class_color {
-    width: 100%;
-    margin: 0 0 10px;
-    border: 1px solid #ddd;
-    padding: 2px 5px;
-    font-size: 14px;
-    border-radius: 3px;
-    outline: none;
-}
+.admin_teacher_role .class-edit-modal .dropdown-menu .class_color {width: 100%; margin: 0 0 10px; border: 1px solid #ddd; padding: 2px 5px; font-size: 14px; border-radius: 3px; outline: none;}
 .admin_teacher_role .create-class-modal .dropdown-menu .dropdown-item,
 .admin_teacher_role .class-edit-modal .dropdown-menu .dropdown-item {
     margin: 0;
