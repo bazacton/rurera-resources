@@ -21,7 +21,6 @@
 }
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 8px;
 }
