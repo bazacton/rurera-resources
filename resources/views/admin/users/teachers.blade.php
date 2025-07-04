@@ -255,7 +255,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Select a Class</label>
-                                <div class="select-box input-group">
+                                <div class="select-box">
                                     <select name="class_id" class="student-class-change school-classes-list">
                                         <option value="">Select Class</option>
                                     </select>
