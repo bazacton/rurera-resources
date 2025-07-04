@@ -164,122 +164,29 @@
 .admin_teacher_role .create-class-modal .dropdown-menu .class_color,
 .admin_teacher_role .class-edit-modal .dropdown-menu .class_color {width: 100%; margin: 0 0 10px; border: 1px solid #ddd; padding: 2px 5px; font-size: 14px; border-radius: 3px; outline: none;}
 .admin_teacher_role .create-class-modal .dropdown-menu .dropdown-item,
-.admin_teacher_role .class-edit-modal .dropdown-menu .dropdown-item {
-    margin: 0;
-    height: 20px;
-    width: 20px;
-    max-width: none;
-    border-radius: 100%;
-    display: inline-block;
-    min-width: auto;
-    padding: 0;
-}
-.admin_teacher_role .create-class-modal .input-group-append {
-    position: relative;
-}
-.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append .btn {
-    border-radius: 0 5px 5px 0;
-    padding: 12px 12px;
-    box-shadow: none;
-}
-.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append {
-    position: absolute;
-    right: 0;
-}
-.admin_teacher_role .create-class-modal input[name="section_code"] {
-    border-radius: 0 5px 5px 0;
-    border-left: 0;
-}
+.admin_teacher_role .class-edit-modal .dropdown-menu .dropdown-item {margin: 0; height: 20px; width: 20px; max-width: none; border-radius: 100%; display: inline-block; min-width: auto; padding: 0;}
+.admin_teacher_role .create-class-modal .input-group-append {position: relative;}
+.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append .btn {border-radius: 0 5px 5px 0; padding: 12px 12px; box-shadow: none;}
+.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append {position: absolute; right: 0;}
+.admin_teacher_role .create-class-modal input[name="section_code"] {border-radius: 0 5px 5px 0; border-left: 0;}
 .admin_teacher_role .create-class-modal .dropdown-menu,
-.admin_teacher_role .class-edit-modal .dropdown-menu {
-    min-width: auto;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 15px 10px;
-    right: 0;
-    left: auto !important;
-    box-shadow: none;
-}
-.admin_teacher_role .custom-checkbox-label {
-    color: #333;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-}
-.admin_teacher_role .form-check input[type="checkbox"] {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
-.admin_teacher_role .custom-checkbox-label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 20px;
-    width: 20px;
-    background-color: #f3f3f3;
-    border-radius: 3px;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    line-height: 20px;
-}
-.admin_teacher_role input[type="checkbox"]:checked ~ .custom-checkbox-label:before {
-    background-color: #00a269;
-    content: "\2713";
-}
-.admin_teacher_role .modal-footer .btn-primary {
-    background-color: #6bd700;
-    border-color: #6bd700;
-}
+.admin_teacher_role .class-edit-modal .dropdown-menu {min-width: auto; border: 1px solid #ddd; border-radius: 3px; padding: 15px 10px; right: 0; left: auto !important; box-shadow: none;}
+.admin_teacher_role .custom-checkbox-label {color: #333; position: relative; padding-left: 30px; cursor: pointer;}
+.admin_teacher_role .form-check input[type="checkbox"] {position: absolute; width: 0; height: 0; opacity: 0;}
+.admin_teacher_role .custom-checkbox-label:before {content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 20px; width: 20px; background-color: #f3f3f3; border-radius: 3px; color: #fff; text-align: center; font-size: 12px; line-height: 20px;}
+.admin_teacher_role input[type="checkbox"]:checked ~ .custom-checkbox-label:before {background-color: #00a269; content: "\2713";}
+.admin_teacher_role .modal-footer .btn-primary {background-color: #6bd700; border-color: #6bd700;}
 .create-class-modal .add-btn,
-.class-edit-modal .add-btn {
-    background-color: #47c363;
-    border-color: #47c363;
-    box-shadow: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    width: auto;
-    border-radius: 3px;
-    height: auto;
-    line-height: normal;
-}
-.create-class-modal .add-btn {
-    border-radius: 50%;
-    box-shadow: 0 2px 6px #81d694;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-}
+.class-edit-modal .add-btn {background-color: #47c363; border-color: #47c363; box-shadow: none; font-size: 14px; padding: 5px 10px; width: auto; border-radius: 3px; height: auto; line-height: normal;}
+.create-class-modal .add-btn {border-radius: 50%; box-shadow: 0 2px 6px #81d694; padding: 0; width: 24px; height: 24px;}
 .create-class-modal .add-btn i {font-size: 12px;margin-right: 0;}
-#subCategories strong {
-    color: #cbcbcb;
-}
-.admin_teacher_role .create-class-modal .select2-container .select2-selection {
-    padding: 0;
-    margin: 10px 0 0;
-    border-color: #e4e6fc;
-}
-.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
-    opacity: 0;
-}
-.create-class-modal .modal-dialog {
-    max-width: 600px;
-}
-.create-class-modal .admin-rurera-tabs.nav-pills li .nav-link {
-    padding-bottom: 5px;
-}
-.create-class-modal .admin-rurera-tabs {
-    margin: 0 0 20px;
-}
-.questions-select-number ul {
-    line-height: normal;
-    align-items: flex-end;
-    gap: 8px 0;
-}
+#subCategories strong {color: #cbcbcb;}
+.admin_teacher_role .create-class-modal .select2-container .select2-selection {padding: 0; margin: 10px 0 0; border-color: #e4e6fc;}
+.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {opacity: 0;}
+.create-class-modal .modal-dialog {max-width: 600px;}
+.create-class-modal .admin-rurera-tabs.nav-pills li .nav-link {padding-bottom: 5px;}
+.create-class-modal .admin-rurera-tabs {margin: 0 0 20px;}
+.questions-select-number ul {line-height: normal; align-items: flex-end; gap: 8px 0;}
 .questions-select-number label {
     position: relative;
     margin:0 2px;
