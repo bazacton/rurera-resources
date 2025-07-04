@@ -5086,7 +5086,9 @@ Overview Questions Style Start
 .overview-content ul li:nth-child(even) {
     background-color: #ddd;
 }
-
+.admin_teacher_role .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
 
 .questions-overview .row {
     align-items: center;
