@@ -76,7 +76,7 @@
     <div class="form-group">
         <label for="SchoolName">Select School</label>
         <div class="select-holder input-group mb-15">
-            <div class="select-box">
+            <div class="select-box w-100">
                 <select class="student-school-change form-control" name="school_id">
                     @if($schools_list->count() > 0)
                         @php $row_no = 0; @endphp
