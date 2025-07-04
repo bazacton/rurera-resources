@@ -5087,6 +5087,8 @@ Overview Questions Style Start
 }
 .admin_teacher_role .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .questions-overview .row {
