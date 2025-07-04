@@ -4171,6 +4171,10 @@ Qustions AI Tabs Style End
     visibility: visible;
     opacity: 1;
 }
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) th {
+    color: #333;
+}
 .invite-teacher-modal.invite-teacher-modal .modal-dialog {
     background-color: inherit;
 }
