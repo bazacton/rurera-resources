@@ -239,20 +239,18 @@
                         <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <div class="select-holder">
-                                    <label>Select School</label>
-                                    <div class="select-box">
-                                        <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
-                                            @if($schools_list->count() > 0)
-                                                @php $row_no = 0; @endphp
-                                                @foreach($schools_list as $schoolObj)
-                                                    @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
-                                                    <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
-                                                    @php $row_no++; @endphp
-                                                @endforeach
-                                            @endif
-                                        </select>
-                                    </div>
+                                <label>Select School</label>
+                                <div class="select-box">
+                                    <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
+                                        @if($schools_list->count() > 0)
+                                            @php $row_no = 0; @endphp
+                                            @foreach($schools_list as $schoolObj)
+                                                @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
+                                                <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                                @php $row_no++; @endphp
+                                            @endforeach
+                                        @endif
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">
