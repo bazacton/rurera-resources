@@ -1558,9 +1558,7 @@ Tailer Hub Style Start
     padding-top: 100px;
 }
 .admin_teacher_role .section .section-header {
-    padding: 0 15px 20px 15px;
-    margin-left: -15px;
-    margin-right: -15px;
+    background-color: inherit;
 }
 .admin_teacher_role .section .section-header h1 i {
     color: var(--white);
