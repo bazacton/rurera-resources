@@ -156,7 +156,7 @@
                         <div class="card-header">
                             @can('admin_assignments_create')
                             <div class="text-right skelton-hide skelton-height-lg skelton-mb-0">
-                                <a href="{{ getAdminPanelUrl() }}/custom_quiz/create" class="btn btn-primary ml-2">Create
+                                <a href="{{ getAdminPanelUrl() }}/custom_quiz/create" class="simple-btn">Create
                                     Custom Quiz</a>
                             </div>
                             @endcan
