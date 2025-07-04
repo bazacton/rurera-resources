@@ -24,16 +24,16 @@
                     <div class="admin-rurera-tabs-holder">
                         <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item skelton-height-lg">
-                                <a class="nav-link active" id="students-tab-students" href="javascript:;">
+                                <button class="nav-link active" id="students-tab-students" type="button">
                                     <i class="fas fa-users mx-0"></i>
                                     <span class="tab-title">Students</span>
-                                </a>
+                                </button>
                             </li>
                             <li class="nav-item skelton-height-lg">
-                                <a class="nav-link" id="joining-tab-students" href="javascript:;">
+                                <button class="nav-link" id="joining-tab-students" type="button">
                                     <i class="fas fa-address-card mx-0"></i>
                                     <span class="tab-title">Joining Requests</span>
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
