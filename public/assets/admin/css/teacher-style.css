@@ -4146,6 +4146,8 @@ Qustions AI Tabs Style End
     vertical-align: middle;
     margin-right: 10px;
 }
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) th {text-align: left !important;}
 .teacher-table .check-box input[type="checkbox"] {
     border: 1px solid #ddd;
     outline: none;
