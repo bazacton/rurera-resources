@@ -4090,25 +4090,9 @@ Qustions AI Tabs Style End
 }
 
 /* Teacher Search Style Start */
-.teacher-search-filter {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 15px;
-    gap: 10px;
-    justify-content: end;
-}
-.sorting-filters img {
-    height: 15px;
-    width: 15px;
-}
-.sorting-filters {
-    position: relative;
-    padding: 0 5px 0 28px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: auto;
-}
+.teacher-search-filter {display: flex; align-items: center; border-bottom: 1px solid #ddd; padding: 15px 15px; gap: 10px; justify-content: end;}
+.sorting-filters img {height: 15px; width: 15px;}
+.sorting-filters {position: relative; padding: 0 5px 0 28px; border: 1px solid #ddd; border-radius: 5px; margin-right: auto;}
 .sorting-filters .icon-box {
     position: absolute;
     left: 10px;
