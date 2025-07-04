@@ -54,7 +54,7 @@
                 <div class="card">
                     @can('admin_schools_create')
                     <div class="card-header">
-                        <div class="text-right">
+                        <div class="text-right ml-auto">
                             <a href="/admin/schools/create" class="simple-btn">New School</a>
                         </div>
                     </div>
