@@ -6543,6 +6543,14 @@ button.print-download-btn {
     color: var(--blue);
 }
 /* Teacher Dashboard Tabs Style End */
+.admin_teacher_role .main-content {
+    padding-right: 20px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1850px) {
+    .admin_teacher_role .main-sidebar ~ .main-content {
+        padding-left: 265px;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .table-sm table thead {display: none;}
