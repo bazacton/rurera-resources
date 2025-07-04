@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    width: 100%;
 }
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo-text {
     line-height: normal;
@@ -45,6 +46,7 @@
     color: var(--blue);
     padding: 5px 5px;
     border-radius: 3px;
+    margin-left: auto;
 }
 /* Admin Left Menue Style End */
 
