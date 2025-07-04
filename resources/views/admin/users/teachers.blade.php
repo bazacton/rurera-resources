@@ -236,7 +236,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="invite-text-field invitation-form-area">
-                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form">
+                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <div class="select-holder">
