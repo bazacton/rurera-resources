@@ -55,7 +55,7 @@
                     @can('admin_schools_create')
                     <div class="card-header">
                         <div class="text-right">
-                            <a href="/admin/schools/create" class="btn btn-primary">New School</a>
+                            <a href="/admin/schools/create" class="btn btn-primary simple-btn">New School</a>
                         </div>
                     </div>
                     @endcan
