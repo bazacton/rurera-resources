@@ -320,7 +320,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="/admin/users/store" method="POST" class="mb-0">
+                    <form action="/admin/users/store" method="POST" class="mb-0" autocomplete="off">
                         {{ csrf_field() }}
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
@@ -402,7 +402,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
-                                <input type="password" name="password" class="form-control" placeholder="Create a strong password" autocomplete="off">
+                                <input type="password" name="password" class="form-control" placeholder="Create a strong password" autocomplete="new-password">
                             </div>
                         </div>
                         <div class="text-right mt-4">
