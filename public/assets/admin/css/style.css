@@ -450,9 +450,10 @@ table tr:hover .table-links {opacity: 1;}
 .quiz-table-controls {
     opacity: 0;
     visibility: visible;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: flex-end;
 }
 .table-responsive table tbody tr:hover .quiz-table-controls {
     opacity: 1;
