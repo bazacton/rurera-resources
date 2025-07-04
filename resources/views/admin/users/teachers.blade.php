@@ -234,7 +234,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body mx-0">
                     <div class="invite-text-field invitation-form-area">
                         <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
                             {{ csrf_field() }}
