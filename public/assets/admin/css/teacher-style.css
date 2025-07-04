@@ -4096,9 +4096,6 @@ Qustions AI Tabs Style End
     font-size: 14px;
     color: var(--blue);
 }
-.teacher-table table td {
-    color: var(--blue);
-}
 .teacher-table table td.has-controls {
     min-width: 230px;
 }
