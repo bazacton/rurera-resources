@@ -380,7 +380,7 @@
                 <div class="card">
                     <div class="card-header">
                         @can('admin_assignments_create')
-                        <div class="text-right">
+                        <div class="text-right ml-auto">
                             <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
                         </div>
                         @endcan
