@@ -153,6 +153,9 @@
 .admin_teacher_role .input-group .icon-box ~ .form-control {
     padding-left: 35px;
 }
+.admin_teacher_role .class-edit-modal .form-group select {
+    appearance: none;
+}
 .admin_teacher_role .create-class-modal .modal-title {
     color: #333;
 }
