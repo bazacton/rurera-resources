@@ -417,7 +417,7 @@ table td .dropdown-toggle {cursor: pointer;}
     text-transform: uppercase;
     padding: 10px 15px;
 }
-.table:not(.table-sm) thead th {border-bottom: none; background-color: rgba(0, 0, 0, 0.01); color: #666; padding-top: 15px; padding-bottom: 15px;}
+.table:not(.table-sm) tr th {border-bottom: none; background-color: rgba(0, 0, 0, 0.01); color: #666; padding-top: 15px; padding-bottom: 15px;}
 .table.table-md th,
 .table.table-md td {padding: 10px 15px;}
 .table.table-bordered td,
