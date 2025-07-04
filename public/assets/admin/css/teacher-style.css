@@ -4078,7 +4078,8 @@ Qustions AI Tabs Style End
     height: 16px;
     margin-left: 5px;
 }
-.teacher-table .invite-faculty .dropdown-box .dropdown-toggle {
+.teacher-table .invite-faculty .dropdown-box .dropdown-toggle,
+.admin_teacher_role .simple-btn {
     background-color: var(--blue);
     color: var(--white);
     border-color: transparent;
