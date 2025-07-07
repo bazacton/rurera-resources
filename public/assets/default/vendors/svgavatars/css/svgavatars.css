@@ -1067,7 +1067,7 @@ p.svga-credit {
 		width: 100%;
 		position: initial;
 		height: auto !important;
-		padding-top: 830px;
+		padding-top: 810px;
 		padding-left: 0;
 		padding-right: 0;
 		display: table;
@@ -1076,7 +1076,10 @@ p.svga-credit {
 		width: 100%;
 		position: absolute;
 		top: 0;
-		padding-top: 400px;
+		padding-top: 380px;
+		display: table;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.mobile-avar-view .svga-vert-order-svgcanvas {
 		position: absolute;
@@ -1156,11 +1159,6 @@ p.svga-credit {
 		width: 100%;
 		padding-bottom: 100%;
 		margin: 10px 0;
-	}
-	.mobile-avar-view .svga-col-right {
-		display: table;
-		padding-left: 0;
-		padding-right: 0;
 	}
 	.mobile-avar-view .svga-vert-order-controls {
 		display: table-row-group;
