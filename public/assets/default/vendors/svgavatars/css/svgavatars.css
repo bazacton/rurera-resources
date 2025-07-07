@@ -1205,6 +1205,9 @@ p.svga-credit {
 	.mobile-avar-view .svga-mobilehidden {
         display: block !important;
     }
+	#svgAvatars.mobile-avar-view .scroll-simple_outer > .scroll-element.scroll-x {
+        height: 0px !important;
+    }
 }
 
 
