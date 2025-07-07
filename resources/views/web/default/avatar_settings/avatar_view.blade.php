@@ -80,10 +80,13 @@
                 }
             }
             setMobilePadding();
-            });
+            
             $(window).on('resize', function () {
                 setMobilePadding();
             });
+
+            });
+            
         });
         </script>
         <script src="/assets/default/js/panel/user_setting.min.js"></script>
