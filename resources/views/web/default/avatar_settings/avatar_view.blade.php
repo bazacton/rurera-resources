@@ -53,24 +53,6 @@
         $(document).ready(function () {
             function setMobilePadding() {
             if ($(window).width() <= 767) {
-                var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
-                $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
-            } else {
-                $('.svga-col-left').css('padding-top', '');
-            }
-            }
-
-            setMobilePadding();
-
-            $(window).on('resize', function () {
-            setMobilePadding();
-            });
-        });
-        </script>
-        <script>
-        $(document).ready(function () {
-            function setMobilePadding() {
-            if ($(window).width() <= 767) {
                 var adjacentHeight = $('.svga-col-left').outerHeight();
                 $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentHeight + 'px');
             } else {
