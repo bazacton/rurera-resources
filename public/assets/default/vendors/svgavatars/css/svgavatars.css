@@ -1088,6 +1088,8 @@ p.svga-credit {
 	}
 	.mobile-avar-view #svga-container {
 		margin: 30px 0 30px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
