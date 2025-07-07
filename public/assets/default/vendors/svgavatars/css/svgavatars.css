@@ -1068,9 +1068,10 @@ p.svga-credit {
 		position: initial;
 		/* padding-top: 1850px; */
 		height: auto !important;
-		padding-top: 830px;
+		padding-top: 865px;
 		padding-left: 0;
 		padding-right: 0;
+		display: table;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
@@ -1102,9 +1103,6 @@ p.svga-credit {
 	.mobile-avar-view .svga-row {
 		margin: 0;
 		border-spacing: 0;
-	}
-	.mobile-avar-view .svga-col-left {
-		display: table;
 	}
 	.mobile-avar-view .svga-vert-order-glob-controls {
 		width: 100%;
