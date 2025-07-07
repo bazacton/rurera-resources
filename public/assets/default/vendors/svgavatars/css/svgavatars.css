@@ -1088,20 +1088,15 @@ p.svga-credit {
 		padding-top: 0;
 		margin: 0 0 0;
 	}
-	.mobile-avar-view #svga-container {
-		margin: 30px 0 30px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	
 	.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
 		height: auto !important;
 	}
 	.mobile-avar-view #svga-container {
-		padding-left: 0px;
-		padding-right: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
 		min-width: 375px;
 		min-height: 400px;
+		margin: 30px 0;
 	}
 	.mobile-avar-view .svga-row {
 		margin: 0;
