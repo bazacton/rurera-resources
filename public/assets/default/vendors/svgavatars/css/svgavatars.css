@@ -1059,38 +1059,39 @@ p.svga-credit {
 
 /* Mobile View Style Start */
 @media(max-width: 768px) {
-	.mobile-avar-view .svga-row {
-		position: relative;
-		padding-top: 0;
-	}
-	.mobile-avar-view .svga-col-left {
-		width: 100%;
-		position: initial;
-		padding-top: 1850px;
-		height: auto !important;
-	}
-	.mobile-avar-view .svga-col-right {
-		width: 100%;
-		position: absolute;
-		top: 0;
-		padding-top: 950px;
-	}
-	.mobile-avar-view .svga-vert-order-svgcanvas {
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-	.mobile-avar-view .svga-row.svga-row-holder {
-		padding-top: 0;
-		margin: 0 0 0;
-	}
-	.mobile-avar-view #svga-container {
-		margin: 30px 0 30px;
-	}
 	
-	.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
-		height: auto !important;
-	}
+}
+.mobile-avar-view .svga-row {
+	position: relative;
+	padding-top: 0;
+}
+.mobile-avar-view .svga-col-left {
+	width: 100%;
+	position: initial;
+	padding-top: 1850px;
+	height: auto !important;
+}
+.mobile-avar-view .svga-col-right {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	padding-top: 950px;
+}
+.mobile-avar-view .svga-vert-order-svgcanvas {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.mobile-avar-view .svga-row.svga-row-holder {
+	padding-top: 0;
+	margin: 0 0 0;
+}
+.mobile-avar-view #svga-container {
+	margin: 30px 0 30px;
+}
+
+.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
+	height: auto !important;
 }
 /* Mobile View Style End */
 
