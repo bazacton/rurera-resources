@@ -1246,6 +1246,12 @@ p.svga-credit {
 	#svgAvatars.mobile-avar-view .scroll-simple_outer > .scroll-element.scroll-x {
         height: 0px !important;
     }
+	.mobile-avar-view .svga-blocks {
+		border: none;
+		min-width: 0;
+		width: 19.999999999%;
+		padding: 0;
+	}
 }
 
 /* Mobile View Style End */
