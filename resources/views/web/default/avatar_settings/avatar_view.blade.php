@@ -8,7 +8,6 @@
 
 @endphp
 <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 @push('styles_top')
         <link rel="stylesheet" href="/assets/default/vendors/select2/select2.min.css">
 
