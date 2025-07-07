@@ -1163,6 +1163,8 @@ p.svga-credit {
 	}
 	.mobile-avar-view .svga-col-right {
 		display: table;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.mobile-avar-view .svga-vert-order-controls {
 		display: table-row-group;
