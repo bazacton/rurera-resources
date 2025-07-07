@@ -1058,8 +1058,10 @@ p.svga-credit {
 }
 
 /* Mobile View Style Start */
-@media(max-width: 768px) {
-	
+@media screen and (max-width: 767px) {
+	.mobile-avar-view .svga-col-left {
+		height: auto;
+	}
 }
 .mobile-avar-view .svga-row {
 	position: relative;
