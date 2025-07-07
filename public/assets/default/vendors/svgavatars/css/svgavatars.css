@@ -814,7 +814,7 @@ p.svga-credit {
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-element.scroll-x .scroll-bar { top: 0px; height: 12px;}
 
 /******************* Media queries *******************/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 	#svga-container {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -1044,12 +1044,12 @@ p.svga-credit {
 		font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	}
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 	#svga-container {
 		font-family: 'Roboto Condensed', 'Helvetica Condensed', 'Arial Narrow', sans-serif;
 	}
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	#svga-container {
 		font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		padding-left: 15px;
