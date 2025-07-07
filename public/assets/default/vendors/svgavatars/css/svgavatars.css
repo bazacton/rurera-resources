@@ -1069,6 +1069,8 @@ p.svga-credit {
 		/* padding-top: 1850px; */
 		height: auto !important;
 		padding-top: 830px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
