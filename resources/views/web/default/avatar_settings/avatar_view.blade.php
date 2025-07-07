@@ -79,8 +79,10 @@
                     $('.svga-col-left').css('padding-top', '');
                 }
             }
-
             setMobilePadding();
+            });
+            $(window).on('resize', function () {
+                setMobilePadding();
             });
         });
         </script>
