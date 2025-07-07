@@ -69,18 +69,17 @@
         </script>
         <script>
         $(document).ready(function () {
-            function setMobilePadding() {
-            if ($(window).width() <= 767) {
-                var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
-                $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
-            } else {
-                $('.svga-col-left').css('padding-top', '');
-            }
+            
+            $(document).on('click', '.svga-bodyzones', function (e) {
+                function setMobilePadding() {
+                if ($(window).width() <= 767) {
+                    var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
+                    $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
+                } else {
+                    $('.svga-col-left').css('padding-top', '');
+                }
             }
 
-            setMobilePadding();
-
-            $(window).on('resize', function () {
             setMobilePadding();
             });
         });
