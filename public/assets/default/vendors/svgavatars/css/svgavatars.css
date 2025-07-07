@@ -1212,6 +1212,21 @@ p.svga-credit {
 		border: 2px solid;
 		float: left;
 	}
+	.mobile-avar-view #svga-colors-wrap {
+		width: 100%;
+		float: left;
+	}
+	.mobile-avar-view .svga-colors-set > div {
+		display: block;
+		width: 14.2857142857142%;
+		padding-bottom: 13.2%;
+		margin: 0;
+		float: left;
+		border: 2px solid;
+		-webkit-box-sizing: border-box !important;
+		-moz-box-sizing: border-box!important;
+		box-sizing: border-box !important;
+	}
 }
 
 
