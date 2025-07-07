@@ -1250,6 +1250,7 @@ p.svga-credit {
 	}
 	#svgAvatars.mobile-avar-view .scroll-wrapper > .scroll-content {
 		max-height: 250px !important;
+		height: auto !important;
 	}
 }
 
