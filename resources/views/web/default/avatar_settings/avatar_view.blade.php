@@ -53,10 +53,10 @@
         $(document).ready(function () {
             function setMobilePadding() {
             if ($(window).width() <= 767) {
-                var adjacentHeight = $('.svga-col-left').outerHeight();
-                $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentHeight + 'px');
+                var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
+                $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
             } else {
-                $('.mobile-avar-view .svga-col-right').css('padding-top', '');
+                $('.svga-col-left').css('padding-top', '');
             }
             }
 
