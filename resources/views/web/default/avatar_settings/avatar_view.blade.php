@@ -26,12 +26,7 @@
 <div id="svgAvatars" class="mobile-avar-view" data-token_id="{{$token_id}}" data-user_pref="{{$user->user_preference}}">ssssss</div>
 
     @push('scripts_bottom')
-    <script>
-    $(document).ready(function () {
-        var adjacentDivHeight = $('.svga-col-left').outerHeight();
-        $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentDivHeight + 'px');
-    });
-    </script>
+    
     @endpush
         <script type="text/javascript">
             var user_avatar_settings = '<?php echo $avatar_settings; ?>';
@@ -52,6 +47,11 @@
                 $("#svga-saveavatar-token").removeClass('svga-saveavatar-token');
             });
 
-
+        </script>
+        <script>
+        $(document).ready(function () {
+            var adjacentDivHeight = $('.svga-col-left').outerHeight();
+            $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentDivHeight + 'px');
+        });
         </script>
         <script src="/assets/default/js/panel/user_setting.min.js"></script>
