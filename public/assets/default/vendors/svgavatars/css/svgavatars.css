@@ -1094,6 +1094,7 @@ p.svga-credit {
 	.mobile-avar-view #svga-container {
 		padding-left: 10px;
 		padding-right: 10px;
+		padding-top: 0;
 		min-width: 375px;
 		min-height: 400px;
 		margin: 30px 0;
