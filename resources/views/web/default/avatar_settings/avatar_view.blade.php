@@ -71,7 +71,7 @@
         $(document).ready(function () {
             function setMobilePadding() {
             if ($(window).width() <= 767) {
-                var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
+                var adjacentHeight = $('.mobile-avar-view .svga-col-right').innerHeight();;
                 $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
             } else {
                 $('.svga-col-left').css('padding-top', '');
