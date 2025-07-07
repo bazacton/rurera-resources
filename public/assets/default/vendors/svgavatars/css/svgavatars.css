@@ -1055,6 +1055,10 @@ p.svga-credit {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+}
+
+/* Mobile View Style Start */
+@media screen and (max-width: 767px) {
 	.mobile-avar-view .svga-row {
 		position: relative;
 		padding-top: 0;
@@ -1088,9 +1092,6 @@ p.svga-credit {
 		height: auto !important;
 	}
 }
-
-/* Mobile View Style Start */
-
 
 /* Mobile View Style End */
 
