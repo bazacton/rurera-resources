@@ -1097,7 +1097,7 @@ p.svga-credit {
 		padding-left: 10px;
 		padding-right: 10px;
 		padding-top: 0;
-		min-width: 375px;
+		min-width: 100%;
 		min-height: 400px;
 		margin: 0 0 30px;
 	}
