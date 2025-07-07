@@ -48,23 +48,4 @@
             });
 
         </script>
-
-        <script>
-        $(document).ready(function () {
-            function setMobilePadding() {
-            if ($(window).width() <= 767) {
-                var adjacentHeight = $('.svga-col-left').outerHeight();
-                $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentHeight + 'px');
-            } else {
-                $('.mobile-avar-view .svga-col-right').css('padding-top', '');
-            }
-            }
-
-            setMobilePadding();
-
-            $(window).on('resize', function () {
-            setMobilePadding();
-            });
-        });
-        </script>
         <script src="/assets/default/js/panel/user_setting.min.js"></script>
