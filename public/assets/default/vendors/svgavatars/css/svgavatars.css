@@ -1248,6 +1248,9 @@ p.svga-credit {
 		width: 19.999999999%;
 		padding: 0;
 	}
+	#svgAvatars.mobile-avar-view .scroll-wrapper > .scroll-content {
+		max-height: 250px !important;
+	}
 }
 
 /* Mobile View Style End */
