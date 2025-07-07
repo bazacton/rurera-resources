@@ -1058,7 +1058,6 @@ p.svga-credit {
 }
 
 /* Mobile View Style Start */
-@media screen and (max-width: 767px) {
 	.mobile-avar-view .svga-row {
 		position: relative;
 		padding-top: 0;
@@ -1091,7 +1090,6 @@ p.svga-credit {
 	.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
 		height: auto !important;
 	}
-}
 
 /* Mobile View Style End */
 
