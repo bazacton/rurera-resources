@@ -1075,7 +1075,7 @@ p.svga-credit {
 		top: 0;
 		padding-top: 950px;
 	}
-	.svga-vert-order-svgcanvas {
+	.mobile-avar-view .svga-vert-order-svgcanvas {
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -1088,7 +1088,7 @@ p.svga-credit {
 		margin: 30px 0 30px;
 	}
 	
-	#svgAvatars .scroll-wrapper > .scroll-content {
+	.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
 		height: auto !important;
 	}
 }
