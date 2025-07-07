@@ -814,7 +814,7 @@ p.svga-credit {
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-element.scroll-x .scroll-bar { top: 0px; height: 12px;}
 
 /******************* Media queries *******************/
-@media (max-width: 576px) {
+@media (min-width: 576px) {
 	#svga-container {
 		padding-left: 0px;
 		padding-right: 0px;
