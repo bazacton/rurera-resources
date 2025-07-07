@@ -1238,14 +1238,16 @@ p.svga-credit {
 	.mobile-avar-view .svga-col-left {
 		width: 100%;
 		position: initial;
-		padding-top: 1850px;
+		/* padding-top: 1850px; */
 		height: auto !important;
+		padding-top: 830px;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
 		position: absolute;
 		top: 0;
-		padding-top: 950px;
+		/* padding-top: 950px; */
+		padding-top: 400px;
 	}
 	.mobile-avar-view .svga-vert-order-svgcanvas {
 		position: absolute;
