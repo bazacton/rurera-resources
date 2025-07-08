@@ -850,7 +850,7 @@
                                 </div>
                             </div>
                             <div class="textarea-field">
-                                <textarea name="teachers_email" class="teachers_email_input" placeholder="Enter your teachers work email address."></textarea>
+                                <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite"></textarea>
                                 <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
                                 <p>Maximum no of emails allowed is 20</p>
                             </div>
