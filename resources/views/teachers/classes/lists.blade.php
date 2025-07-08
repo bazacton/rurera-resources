@@ -418,7 +418,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="simple-btn import-google-classes">Import</button>
+                                        <button type="button" class="btn btn-primary import-google-classes">Import</button>
                                     </div>
                                 </div>
                             </div>
@@ -772,6 +772,7 @@
         });
 
         $(document).on('click', '.import-google-classes', function (e) {
+            rurera_loader($(".create-google-class-modal .modal-content"), 'div');
             var id = $(this).attr('data-id');
             var google_class_ids = [];
             $('input.google-classes:checked').each(function() {
@@ -786,7 +787,12 @@
                 },
                 data: {'google_class_ids':google_class_ids},
                 success: function (return_data) {
-                    console.log(return_data);
+                    rurera_modal_alert(
+                        'success',
+                        'Imported Successfully',
+                        false, //confirmButton
+                    );
+                    window.location.reload();
                 }
             });
 
