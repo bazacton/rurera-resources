@@ -396,7 +396,7 @@
                                                                         <input type="checkbox" class="form-check-input google-classes" name="google-classes[]" id="{{$google_class_id}}" value="{{$google_class_id}}">
                                                                         @endif
                                                                         <label class="form-check-label custom-checkbox-label" for="{{$google_class_id}}">
-                                                                            {{isset($googleClassData['name'])? $googleClassData['name'] : ''}} {{$already_text}}
+                                                                            <span class="checkbox-label">{{isset($googleClassData['name'])? $googleClassData['name'] : ''}} {{$already_text}}</span>
                                                                             <em>{{isset($googleClassData['studentCount'])? $googleClassData['studentCount'] : 0}} students</em>
                                                                             <em>{{isset($googleClassData['teachersCount'])? $googleClassData['teachersCount'] : 0}} faculty</em>
                                                                         </label>
