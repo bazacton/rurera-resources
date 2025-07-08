@@ -462,7 +462,7 @@
                                                 <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
                                             </button>
                                         @endif
-                                        <div class="right-area">
+                                        <div class="right-area ml-auto">
                                             <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
                                                 <i class="fas fa-chart-line"></i>
                                             </button>
