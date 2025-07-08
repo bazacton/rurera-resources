@@ -1582,6 +1582,29 @@ $(document).on('change', '.schools-list-ajax', function (e) {
         }
     });
 });
+$(document).on('click', '.rurera-ajax-tabs', function (e) {
+    var ajax_url = $(this).attr('data-ajax_url');
+    var target_class = $(this).attr('id');
+    var passing_data = $(this).attr('data-passing_data');
+    rurera_loader($("."+target_class), 'div');
+    if(passing_data != '') {
+        passing_data = JSON.parse($(this).attr('data-passing_data'));
+    }
+    console.log(passing_data);
+    jQuery.ajax({
+        type: "GET",
+        url: ajax_url,
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: passing_data,
+        success: function (return_data) {
+            rurera_remove_loader($("."+target_class), 'div');
+            $("."+target_class).html(return_data);
+        }
+    });
+});
+
 
 
 function rurera_modal_alert(msg_type, msg_title, confirmButton){
