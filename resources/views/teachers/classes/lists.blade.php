@@ -16,7 +16,7 @@
             <div class="breadcrumb-item">Classes</div>
         </div>
     </div>
-    
+
     <div class="content-holder card p-25">
         <div class="row">
             <div class="col-12 col-md-12">
@@ -85,9 +85,9 @@
                                         <div class="admin-rurera-tabs-details details-tab">
                                             <div class="form-group">
                                                 <label for="SchoolName">Select School</label>
-                                                <div class="select-holder input-group mb-15">
+                                                <div class="select-holder input-group">
                                                     <div class="select-box">
-                                                        <select class="student-school-change form-control" name="school_id">
+                                                        <select class="student-school-change" name="school_id">
                                                             @if($schools_list->count() > 0)
                                                                 @php $row_no = 0; @endphp
                                                                 @foreach($schools_list as $schoolObj)
@@ -363,8 +363,8 @@
                                                 <div class="user-info">
                                                     <span class="img-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span>
                                                     <div class="text-holder">
-                                                        <h5>Kaiser K</h5>
-                                                        <a href="#">kaiser.can@gamil.com</a>
+                                                        <h5>Email A</h5>
+                                                        <a href="#">test.account@test.com</a>
                                                     </div>
                                                     <button class="user-btn google_classroom_btn" type="button">Switch account</button>
                                                 </div>
@@ -378,7 +378,7 @@
                                                     <ul>
                                                         <li>
                                                             <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input check-uncheck-all" data-target_class="google-classes" name="check-two">
+                                                                <input type="checkbox" class="form-check-input check-uncheck-all" id="all-classes" data-target_class="google-classes" name="check-two">
                                                                 <label class="form-check-label custom-checkbox-label" for="all-classes">
                                                                     Select all classes
                                                                 </label>
@@ -386,12 +386,17 @@
                                                         </li>
                                                         @if(!empty($google_classes))
                                                             @foreach($google_classes as $googleClassData)
-                                                                @php $google_class_id = isset($googleClassData['id'])? $googleClassData['id'] : 0; @endphp
+                                                                @php $google_class_id = isset($googleClassData['id'])? $googleClassData['id'] : 0;
+
+                                                                $already_text = (in_array($google_class_id, $google_classes_list))? 'Already Imported' : '';
+                                                                @endphp
                                                                 <li>
                                                                     <div class="form-check">
+                                                                        @if(!in_array($google_class_id, $google_classes_list))
                                                                         <input type="checkbox" class="form-check-input google-classes" name="google-classes[]" id="{{$google_class_id}}" value="{{$google_class_id}}">
+                                                                        @endif
                                                                         <label class="form-check-label custom-checkbox-label" for="{{$google_class_id}}">
-                                                                            {{isset($googleClassData['name'])? $googleClassData['name'] : ''}}
+                                                                            {{isset($googleClassData['name'])? $googleClassData['name'] : ''}} {{$already_text}}
                                                                             <em>{{isset($googleClassData['studentCount'])? $googleClassData['studentCount'] : 0}} students</em>
                                                                             <em>{{isset($googleClassData['teachersCount'])? $googleClassData['teachersCount'] : 0}} faculty</em>
                                                                         </label>
@@ -413,7 +418,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="simple-btn import-google-classes">Import</button>
+                                        <button type="button" class="btn btn-primary import-google-classes">Import</button>
                                     </div>
                                 </div>
                             </div>
@@ -457,13 +462,18 @@
                                                 <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
                                             </button>
                                         @endif
-                                        <div class="right-area ml-auto">
+                                        <div class="right-area">
                                             <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
                                                 <i class="fas fa-chart-line"></i>
                                             </button>
                                             <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
                                                 <i class="fas fa-folder-open"></i>
                                             </button>
+                                            @if($classData->google_id > 0)
+                                                <button data-google_class_id="{{$classData->google_id}}" class="google-refresh-roaster btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                                    <i class="fas fa-recycle"></i>
+                                                </button>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -760,6 +770,52 @@
             });
 
         });
+
+        $(document).on('click', '.import-google-classes', function (e) {
+            var id = $(this).attr('data-id');
+            var google_class_ids = [];
+            $('input.google-classes:checked').each(function() {
+                google_class_ids.push($(this).val());
+            });
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/classes/import_google_classes',
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'google_class_ids':google_class_ids},
+                success: function (return_data) {
+                    console.log(return_data);
+                }
+            });
+
+
+        });
+
+        $(document).on('click', '.google-refresh-roaster', function (e) {
+            var google_class_id = $(this).attr('data-google_class_id');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/classes/refresh_google_roaster',
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'google_class_id':google_class_id},
+                success: function (return_data) {
+                    rurera_modal_alert(
+                        return_data.status,
+                        return_data.msg,
+                        true, //confirmButton
+                    );
+                }
+            });
+
+
+        });
+
+
 
     });
 </script>
