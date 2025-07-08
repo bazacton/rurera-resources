@@ -230,7 +230,7 @@
                             {{ csrf_field() }}
                         <h6>Invite Teacher by Email</h6>
                         <div class="textarea-field">
-                            <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
+                            <textarea name="teachers_email" placeholder="Add Email address of the Member you want to invite"></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
                         </div>
                         <div class="review-btn-holder d-flex align-items-center justify-content-end">
