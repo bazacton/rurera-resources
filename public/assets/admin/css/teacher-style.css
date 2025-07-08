@@ -351,9 +351,15 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .create-google-class-modal .user-list-options li:last-child {
     margin-bottom: 0;
 }
+.admin_teacher_role .user-list-options .custom-checkbox-label .checkbox-label {
+    max-width: 175px;
+    flex: 0 0 100%;
+}
 .admin_teacher_role .create-google-class-modal .user-list-options li em {
     font-style: normal;
     color: #787d84;
+    text-align: right;
+    width: 100%;
 }
 .admin_teacher_role .create-google-class-modal .modal-footer {
     padding: 0 0;
