@@ -928,7 +928,7 @@
                             </div>
                         </div>
                         <div class="text-right mt-4">
-                            <button class="btn btn-primary">Save</button>
+                            <button class="simple-btn">Save</button>
                         </div>
                     </form>
                 </div>
