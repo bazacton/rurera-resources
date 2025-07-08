@@ -876,7 +876,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="/admin/users/store" method="POST" class="mb-0">
+                    <form action="/admin/users/store" method="POST" class="mb-0" autocomplete="off">
                         {{ csrf_field() }}
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
@@ -910,11 +910,11 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Enter the teacher Full Name" required>
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Enter the teacher Full Name" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control " id="email" value="" required placeholder="Teacher email for updates">
+                            <input name="email" type="text" class="form-control " id="email" value="" required placeholder="Teacher email for updates" autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
@@ -924,7 +924,7 @@
                                 <i class="fa fa-lock"></i>
                                 </span>
                                 </div>
-                                <input type="password" name="password" class="form-control" placeholder="Create a strong password">
+                                <input type="password" name="password" class="form-control" placeholder="Create a strong password" autocomplete="new-password">
                             </div>
                         </div>
                         <div class="text-right mt-4">
