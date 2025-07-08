@@ -4056,6 +4056,10 @@ Qustions AI Tabs Style End
     border-radius: 5px;
     text-decoration: none;
 }
+.admin_teacher_role .simple-btn.import-google-classes {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 .teacher-table .dropdown-box .dropdown-toggle img {
     width: 16px;
     height: 16px;
