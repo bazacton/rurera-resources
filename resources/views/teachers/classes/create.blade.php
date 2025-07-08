@@ -910,7 +910,7 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <div>
+                            <div class="input-group">
                                 <span class="icon-box">
                                     <img src="/assets/default/img/user.png" alt="user">
                                 </span>
