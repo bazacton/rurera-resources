@@ -151,7 +151,13 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{$class->title}} <a href="javascript:;" class="edit-class-btn ml-2 font-20" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a></h1>
+            <h1>{{$class->title}}
+                @if($class->google_id > 0)
+                    <a href="javascript:;" data-google_class_id="{{$class->google_id}}" class="google-refresh-roaster ml-2 font-20"><i class="fa fa-recycle"></i></a>
+                @else
+                    <a href="javascript:;" class="edit-class-btn ml-2 font-20" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a>
+                @endif
+            </h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
                     }}</a>
@@ -186,13 +192,17 @@
                     </a>
                 </li>
                 <li class="nav-item skelton-height-lg">
-                    <a class="nav-link" id="students-tab-page-edit" href="javascript:;">
+                    @php $passing_data = array(
+                            'class_id' => isset($class->id)? $class->id : 0,
+                    );
+                    @endphp
+                    <a class="nav-link rurera-ajax-tabs" data-passing_data="{{json_encode($passing_data)}}" data-ajax_url="/admin/users/class_students_listings" id="students-tab-page-edit" href="javascript:;">
                         <i class="fas fa-users mx-0"></i>
                         <span class="tab-title">Students</span>
                     </a>
                 </li>
                 <li class="nav-item skelton-height-lg">
-                    <a class="nav-link" id="teachers-tab-page-edit" href="javascript:;">
+                    <a class="nav-link rurera-ajax-tabs" data-passing_data="{{json_encode($passing_data)}}" data-ajax_url="/admin/users/class_teachers_listings" id="teachers-tab-page-edit" href="javascript:;">
                         <i class="fas fa-chalkboard-teacher mx-0"></i>
                         <span class="tab-title">Teachers</span>
                     </a>
@@ -211,7 +221,7 @@
                 </li>
             </ul>
         </div>
-        
+
         <div class="section-body populated-data">
 
             <div class="row">
@@ -238,94 +248,7 @@
 
 
                                 <div class="admin-rurera-tabs-page-edit rurera-hide students-tab-page-edit">
-                                    <div class="teacher-table">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="bulk-actions">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                                    <div class="dropdown-box">
-                                                        <div class="dropdown">
-                                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                                            </a>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                                <a data-class_id="{{$class->id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="teacher-search-filter border-0 p-0">
-                                                    <div class="search-field">
-                                                        <span class="icon-box">
-                                                            <img src="/assets/default/svgs/search.svg" alt="search">
-                                                        </span>
-                                                        <input type="text" class="search-students" placeholder="Search Students">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body p-0 table-sm">
-                                                <table class="table mb-0">
-                                                    <thead class="thead-light">
-                                                    <tr>
-                                                        <th>
-                                                            <div class="check-box">
-                                                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-students" name="check-two">
-                                                            </div> Student
-                                                        </th>
-                                                        <th>Last Login</th>
-                                                        <th>School</th>
-                                                        <th></th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody class="students-list">
 
-                                                    @if($class->students->where('status','active')->count() > 0)
-                                                        @foreach($class->students->where('status','active') as $studentObj)
-                                                            <tr>
-                                                                <td data-th="Teacher/Admin">
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        <div class="check-box">
-                                                                            <input type="checkbox" class="sections-students" value="{{ $studentObj->id }}">
-                                                                        </div>
-                                                                        <strong>
-                                                                            <span class="user-lable">
-                                                                                {{ $studentObj->get_full_name() }}
-                                                                                <span class="user-email">{{ $studentObj->email }}</span>
-                                                                            </span>
-                                                                        </strong>
-                                                                    </div>
-                                                                </td>
-                                                                <td data-th="Last Login">
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        {{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}
-                                                                    </div>
-                                                                </td>
-                                                                <td data-th="School">
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        {{$studentObj->userSchool->title}}
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="pending-invites-controls">
-                                                                        <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
-                                                                            <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
-                                                                        </button>
-                                                                        <button data-id="{{$studentObj->id}}" class="delete-student" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete Student">
-                                                                            <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        @endforeach
-                                                    @endif
-
-                                                    </tbody>
-                                                </table>
-                                                <span class="table-counts">{{$class->students->where('status','active')->count()}} Students</span>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
 
@@ -664,126 +587,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
                                 <div class="admin-rurera-tabs-page-edit rurera-hide teachers-tab-page-edit">
-                                    <div class="teacher-table">
-                                        <div class="card">
-                                            <div class="teacher-search-filter">
-
-                                                <div class="search-field">
-                                                    <span class="icon-box">
-                                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                                    </span>
-                                                    <input type="text" class="search-teachers" placeholder="Search Teachers">
-                                                </div>
-                                            </div>
-                                            <div class="card-header">
-                                                <div class="bulk-actions">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                                    <div class="dropdown-box">
-                                                        <div class="dropdown">
-                                                            <a class="dropdown-toggle bulk-actions-btn disabled" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                                            </a>
-                                                            <div class="dropdown-menu">
-                                                                <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Unlink</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="invite-faculty">
-                                                    <div class="dropdown-box">
-                                                        <div class="dropdown">
-                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                                            </a>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                                                                <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body p-0 table-sm">
-                                                <table class="table mb-0">
-                                                    <thead class="thead-light">
-                                                    <tr>
-                                                        <th>
-                                                            <div class="check-box">
-                                                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-teachers" name="check-two">
-                                                            </div>
-                                                            Teacher
-                                                        </th>
-                                                        <th>Role</th>
-                                                        <th>Last Login</th>
-                                                        <th>Classes</th>
-                                                        <th>School</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody class="teachers-list">
-
-                                                    @if($class->teachers->where('status','active')->count() > 0)
-                                                        @foreach($class->teachers->where('status','active') as $teacherObj)
-                                                            <tr>
-                                                                <td data-th="Teacher/Admin">
-
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        <div class="check-box">
-                                                                            @if($teacherObj->user->id != $userObj->id)
-                                                                                <input type="checkbox" class="sections-teachers" value="{{ $teacherObj->user->id }}">
-                                                                            @endif
-                                                                        </div>
-                                                                        <strong>
-                                                                            <span class="user-lable">
-                                                                                <a href="javascript:;" class="edit-teacher-btn" data-id="{{$teacherObj->user->id}}">{{ $teacherObj->user->get_full_name() }}</a>
-                                                                                <span class="user-email">{{ $teacherObj->user->email }}</span>
-                                                                            </span>
-                                                                        </strong>
-                                                                    </div>
-                                                                </td>
-                                                                <td data-th="Role">
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->user->role->caption)? $teacherObj->user->role->caption : '-'}}</div>
-                                                                </td>
-                                                                <td data-th="Last Login">
-
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                        {{($teacherObj->user->last_login > 0)? dateTimeFormat($teacherObj->user->last_login, 'j M y | H:i') : '-'}}
-                                                                    </div>
-                                                                </td>
-                                                                <td data-th="Classes">
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$teacherObj->user->getTeacherClasses->count()}}</div>
-                                                                </td>
-                                                                <td data-th="School">
-                                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}</div>
-                                                                </td>
-
-                                                            </tr>
-                                                        @endforeach
-                                                    @endif
-
-
-
-                                                    </tbody>
-                                                </table>
-                                                <span class="table-counts">{{$class->teachers->where('status','active')->count()}} Teachers</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
 
                                 </div>
 
@@ -1014,7 +818,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="invite-text-field invitation-form-area">
-                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
+                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form">
                             {{ csrf_field() }}
 
                             <h6>Invite Teacher by Email</h6>
@@ -1106,11 +910,11 @@
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control" value="" placeholder="Full Name" required autocomplete="off">
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control" id="email" value="" required autocomplete="off">
+                            <input name="email" type="text" class="form-control " id="email" value="" required>
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>
@@ -1120,7 +924,7 @@
                                 <i class="fa fa-lock"></i>
                                 </span>
                                 </div>
-                                <input type="password" name="password" class="form-control" autocomplete="new-password">
+                                <input type="password" name="password" class="form-control ">
                             </div>
                         </div>
                         <div class="text-right mt-4">
@@ -1377,6 +1181,29 @@
                 }
             });
             return false;
+        });
+
+        $(document).on('click', '.google-refresh-roaster', function (e) {
+            //rurera_loader($(".google-refresh-roaster"), 'div');
+            var google_class_id = $(this).attr('data-google_class_id');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/classes/refresh_google_roaster',
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'google_class_id':google_class_id},
+                success: function (return_data) {
+                    rurera_modal_alert(
+                        return_data.status,
+                        return_data.msg,
+                        false, //confirmButton
+                    );
+                    //window.location.reload();
+                }
+            });
+
         });
 
         $(document).ready(function() {
