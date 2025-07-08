@@ -418,7 +418,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-primary import-google-classes">Import</button>
+                                        <button type="button" class="simple-btn import-google-classes">Import</button>
                                     </div>
                                 </div>
                             </div>
