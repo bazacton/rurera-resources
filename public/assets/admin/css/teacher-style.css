@@ -354,6 +354,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .user-list-options .custom-checkbox-label .checkbox-label {
     max-width: 175px;
     flex: 0 0 100%;
+    line-height: normal;
 }
 .admin_teacher_role .create-google-class-modal .user-list-options li em {
     font-style: normal;
