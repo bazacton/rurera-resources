@@ -429,55 +429,61 @@
                             @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
 
                             $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
-        @endphp
-                            <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
-                                <!-- Dropdown Menu -->
+                            
+                            @endphp
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
+                                    <!-- Dropdown Menu -->
 
-                                <div class="card-body">
-                                    <div class="card-title-holder">
-                                        <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }} @if($classData->class_nick_name != '')({{ $classData->class_nick_name }})@endif</a></h5>
-                                    </div>
-                                    <div class="card-description-holder">
-                                        <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
-                                        <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
-                                    </div>
-                                    <div class="progress-holder">
-                                        <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
-                                        <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
-                                            <div
-                                                class="progress-bar progress-bar-custom"
-                                                role="progressbar"
-                                                style="width: 75%;"
-                                                aria-valuenow="75"
-                                                aria-valuemin="0"
-                                                aria-valuemax="100"
-                                            >
-                                                75%
+                                    <div class="card-body">
+                                        <div class="card-title-holder">
+                                            <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }} @if($classData->class_nick_name != '')({{ $classData->class_nick_name }})@endif</a></h5>
+                                        </div>
+                                        <div class="card-description-holder">
+                                            <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
+                                            <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
+                                        </div>
+                                        <div class="progress-holder">
+                                            <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
+                                            <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
+                                                <div
+                                                    class="progress-bar progress-bar-custom"
+                                                    role="progressbar"
+                                                    style="width: 75%;"
+                                                    aria-valuenow="75"
+                                                    aria-valuemin="0"
+                                                    aria-valuemax="100"
+                                                >
+                                                    75%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3 bottom-controls">
+                                            @if($classData->google_id > 0)
+                                                <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
+                                                    <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
+                                                </button>
+                                            @endif
+                                            <div class="right-area ml-auto">
+                                                <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </button>
+                                                <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                                    <i class="fas fa-folder-open"></i>
+                                                </button>
+                                                @if($classData->google_id > 0)
+                                                    <button data-google_class_id="{{$classData->google_id}}" class="google-refresh-roaster btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                                        <i class="fas fa-recycle"></i>
+                                                    </button>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-between mt-3 bottom-controls">
-                                        @if($classData->google_id > 0)
-                                            <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
-                                                <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
-                                            </button>
-                                        @endif
-                                        <div class="right-area ml-auto">
-                                            <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
-                                                <i class="fas fa-chart-line"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
-                                                <i class="fas fa-folder-open"></i>
-                                            </button>
-                                            @if($classData->google_id > 0)
-                                                <button data-google_class_id="{{$classData->google_id}}" class="google-refresh-roaster btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
-                                                    <i class="fas fa-recycle"></i>
-                                                </button>
-                                            @endif
-                                        </div>
-                                    </div>
+                                </div>
                                 </div>
                             </div>
+                            
                         @endforeach
                     </div>
                 </div>
