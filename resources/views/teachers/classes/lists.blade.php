@@ -435,7 +435,7 @@
                             <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
                                 <!-- Dropdown Menu -->
 
-                                <div class="card-body">
+                                <div class="card-body d-flex flex-column">
                                     <div class="card-title-holder">
                                         <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }} @if($classData->class_nick_name != '')({{ $classData->class_nick_name }})@endif</a></h5>
                                     </div>
@@ -443,7 +443,7 @@
                                         <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
                                         <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
                                     </div>
-                                    <div class="progress-holder">
+                                    <div class="progress-holder mb-30">
                                         <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
                                         <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
                                             <div
@@ -458,7 +458,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-between mt-3 bottom-controls">
+                                    <div class="d-flex justify-content-between mt-auto bottom-controls">
                                         @if($classData->google_id > 0)
                                             <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
                                                 <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
