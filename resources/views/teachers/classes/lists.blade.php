@@ -433,7 +433,7 @@
                             @endphp
                             <div class="row">
                                 <div class="col-md-3">
-                                    <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
+                                    <div class="card text-white classes-card bg-teal mb-3 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
                                     <!-- Dropdown Menu -->
 
                                     <div class="card-body">
