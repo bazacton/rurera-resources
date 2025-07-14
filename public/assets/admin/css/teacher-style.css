@@ -1296,6 +1296,13 @@ New Quiz Page Style Start
     gap: 10px;
     margin-bottom: 15px;
 }
+.quiz-data-filters .select-field:after {
+    top: 50%;
+    margin-top: -2px;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+        -ms-transform: rotate(45deg) translateY(-50%);
+            transform: rotate(45deg) translateY(-50%);
+}
 .quiz-data-filters select {
     border: 1px solid #ddd;
     min-width: 180px;
