@@ -684,22 +684,22 @@
                                                                     </td>
                                                                     <td data-th="Role">
                                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                            Teacher
+                                                                            <span>Teacher</span>
                                                                         </div>
                                                                     </td>
                                                                     <td data-th="Last Login">
                                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                            {{($teacherObj->user->last_login > 0)? dateTimeFormat($teacherObj->user->last_login, 'j M y | H:i') : '-'}}
+                                                                            <span>{{($teacherObj->user->last_login > 0)? dateTimeFormat($teacherObj->user->last_login, 'j M y | H:i') : '-'}}</span>
                                                                         </div>
                                                                     </td>
                                                                     <td data-th="Classes">
                                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                            {{$teacherObj->user->getTeacherClasses->count()}}
+                                                                            <span>{{$teacherObj->user->getTeacherClasses->count()}}</span>
                                                                         </div>
                                                                     </td>
                                                                     <td data-th="School">
                                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                            {{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}
+                                                                            <span>{{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}</span>
                                                                         </div>
                                                                     </td>
 
