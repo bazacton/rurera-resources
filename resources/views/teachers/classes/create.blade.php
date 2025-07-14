@@ -567,36 +567,13 @@
                                     </div>
                                 </div>
 
-
-
-                                <div class="admin-rurera-tabs-page-edit rurera-hide teachers-tab-page-edit">
-
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                <div class="admin-rurera-tabs-page-edit rurera-hide teachers-tab-page-edit"></div>
 
                                 <div class="admin-rurera-tabs-page-edit rurera-hide teachers-tab-page-edit11">
-
                                     <div class="col-12">
                                         <div class="teacher-table">
                                             <div class="card">
                                                 <div class="teacher-search-filter">
-
                                                     <div class="search-field">
                                                         <span class="icon-box">
                                                             <img src="/assets/default/svgs/search.svg" alt="search">
