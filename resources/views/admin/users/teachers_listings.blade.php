@@ -69,10 +69,10 @@
                                         @endif
                                     </div>
                                     <strong>
-                                                                            <span class="user-lable">
-                                                                                <a href="javascript:;" class="edit-teacher-btn" data-id="{{$teacherObj->id}}">{{ $teacherObj->get_full_name() }}</a>
-                                                                                <span class="user-email">{{ $teacherObj->email }}</span>
-                                                                            </span>
+                                        <span class="user-lable">
+                                            <a href="javascript:;" class="edit-teacher-btn" data-id="{{$teacherObj->id}}">{{ $teacherObj->get_full_name() }}</a>
+                                            <span class="user-email">{{ $teacherObj->email }}</span>
+                                        </span>
                                     </strong>
                                 </div>
                             </td>
