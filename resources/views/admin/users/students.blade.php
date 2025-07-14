@@ -163,7 +163,7 @@
                                         <tr>
                                             <th>Student</th>
                                             <th>Last Login</th>
-                                            <th>Action</th>
+                                            <th></th>
                                         </tr>
                                         </thead>
                                         <tbody class="students-list">
