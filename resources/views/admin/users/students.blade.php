@@ -103,12 +103,12 @@
                                                 </td>
                                                 <td data-th="Last Login">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                        {{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}
+                                                        <span>{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</span>
                                                     </div>
                                                 </td>
                                                 <td data-th="School">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                        {{$studentObj->userSchool->title}}
+                                                        <span>{{$studentObj->userSchool->title}}</span>
                                                     </div>
                                                 </td>
                                                 <td>
