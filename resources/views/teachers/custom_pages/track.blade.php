@@ -65,26 +65,26 @@
                                 <thead>
                                     <tr>
                                         <th>
-                                            <div class="checkbox-field skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="checkbox-field">
                                                 <input type="checkbox" id="q-type">
                                                 <label for="q-type">Type</label>
                                             </div>
                                         </th>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Quiz Name</div></th>
+                                        <th><div class="d-inline-block">Quiz Name</div></th>
                                         <th>
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Total <br> Participants</div>
+                                            <div class="d-inline-block">Total <br> Participants</div>
                                         </th>
                                         <th>
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Accuracy</div>
+                                            <div class="d-inline-block">Accuracy</div>
                                         </th>
                                         <th>
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Code</div>
+                                            <div class="d-inline-block">Code</div>
                                         </th>
                                         <th>
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Class</div> 
+                                        <div class="d-inline-block">Class</div> 
                                         </th>
                                         <th>
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Actions</div>
+                                            <div class="d-inline-block">Actions</div>
                                         </th>
                                     </tr>
                                 </thead>
