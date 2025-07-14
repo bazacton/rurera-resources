@@ -170,16 +170,15 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <th>
                                                 <div class="check-box">
                                                     <input type="checkbox" class="check-uncheck-all" data-target_class="invitations_list" name="check-two">
                                                 </div>
                                                 Teacher/Admin
                                             </th>
-                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">School - Class</th>
-                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Role</th>
-                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Date Invited</th>
-
+                                            <th>School - Class</th>
+                                            <th>Role</th>
+                                            <th>Date Invited</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -188,32 +187,48 @@
                                         @if($invitations->count() > 0)
                                             @foreach($invitations as $invitationObj)
                                                 <tr>
-                                                    <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                        <div class="check-box">
-                                                            <input type="checkbox" name="check-one" class="invitations_list" value="{{$invitationObj->id}}">
+                                                    <td data-th="Teacher/Admin">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <div class="check-box">
+                                                                <input type="checkbox" name="check-one" class="invitations_list" value="{{$invitationObj->id}}">
+                                                            </div>
+                                                            <strong>
+                                                                <span class="user-lable">
+                                                                    <span class="user-email">{{$invitationObj->email}}</span>
+                                                                </span>
+                                                            </strong>
                                                         </div>
-                                                        <strong>
-                                                    <span class="user-lable">
-                                                        <span class="user-email">{{$invitationObj->email}}</span>
-                                                    </span>
-                                                        </strong>
                                                     </td>
-                                                    <td data-th="SchoolClass" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($invitationObj->InvitationSchool->title)? $invitationObj->InvitationSchool->title : '-'}} - {{isset($invitationObj->InvitationClass->title)? $invitationObj->InvitationClass->title : '-'}}</td>
-                                                    <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($invitationObj->role->caption)? $invitationObj->role->caption : '-'}}</td>
-                                                    <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($invitationObj->created_at > 0)? dateTimeFormat($invitationObj->created_at, 'j M y | H:i') : '-'}}</td>
+                                                    <td data-th="SchoolClass">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>{{isset($invitationObj->InvitationSchool->title)? $invitationObj->InvitationSchool->title : '-'}} - {{isset($invitationObj->InvitationClass->title)? $invitationObj->InvitationClass->title : '-'}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Role">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>{{isset($invitationObj->role->caption)? $invitationObj->role->caption : '-'}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Last Login">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>{{($invitationObj->created_at > 0)? dateTimeFormat($invitationObj->created_at, 'j M y | H:i') : '-'}}</span>
+                                                        </div>
+                                                    </td>
                                                     <td class="has-controls">
-                                                        <div class="pending-invites-controls">
-                                                            <button class="copy-to-text" data-copy_to="invitation-link-{{$invitationObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
-                                                                <img src="/assets/default/svgs/link-file.svg" alt="link-file">
-                                                                <span class="rurera-hide invitation-link-{{$invitationObj->id}}">{{url('signup-teacher?token='.$invitationObj->invitation_token.'&email='.$invitationObj->email)}}</span>
-                                                            </button>
-                                                            <button data-id="{{$invitationObj->id}}" class="delete-invitation" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete invite">
-                                                                <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
-                                                            </button>
-                                                            <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
-                                                                <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
-                                                                Re-send Invite
-                                                            </button>
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <div class="pending-invites-controls">
+                                                                <button class="copy-to-text" data-copy_to="invitation-link-{{$invitationObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
+                                                                    <img src="/assets/default/svgs/link-file.svg" alt="link-file">
+                                                                    <span class="rurera-hide invitation-link-{{$invitationObj->id}}">{{url('signup-teacher?token='.$invitationObj->invitation_token.'&email='.$invitationObj->email)}}</span>
+                                                                </button>
+                                                                <button data-id="{{$invitationObj->id}}" class="delete-invitation" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete invite">
+                                                                    <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
+                                                                </button>
+                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
+                                                                    <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
+                                                                    Re-send Invite
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </td>
 
