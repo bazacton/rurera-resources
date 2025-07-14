@@ -244,31 +244,13 @@
                                     Reports
                                 </div>
 
-
-
-
-                                <div class="admin-rurera-tabs-page-edit rurera-hide students-tab-page-edit">
-
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
+                                <div class="admin-rurera-tabs-page-edit rurera-hide students-tab-page-edit"></div>
 
                                 <div class="admin-rurera-tabs-page-edit rurera-hide students-tab-page-edit11">
                                     <div class="col-12">
                                         <div class="teacher-table">
                                             <div class="card">
                                                 <div class="teacher-search-filter">
-
                                                     <div class="search-field">
                                                         <span class="icon-box">
                                                             <img src="/assets/default/svgs/search.svg" alt="search">
@@ -336,12 +318,12 @@
                                                                     </td>
                                                                     <td data-th="Last Login">
                                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                            {{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}
+                                                                            <span>{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</span>
                                                                         </div>
                                                                     </td>
                                                                     <td data-th="School">
                                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                                            {{$studentObj->userSchool->title}}
+                                                                            <span>{{$studentObj->userSchool->title}}</span>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
