@@ -1,6 +1,7 @@
 <div class="teacher-table">
     <div class="card">
         <div class="card-header">
+            @if(!isset($class) || $class->google_id == 0)
             <div class="bulk-actions">
                 <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                 <div class="dropdown-box">
@@ -15,9 +16,12 @@
                     </div>
                 </div>
             </div>
+            @endif
             <div class="teacher-search-filter border-0 p-0">
+                @if(!isset($class) || $class->google_id == 0)
                 @if(isset($is_add_button) && $is_add_button == true)
                     <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
+                @endif
                 @endif
                 <div class="search-field">
                     <span class="icon-box">
@@ -33,7 +37,9 @@
                 <tr>
                     <th>
                         <div class="check-box">
+                            @if(!isset($class) || $class->google_id == 0)
                             <input type="checkbox" class="check-uncheck-all" data-target_class="sections-students" name="check-two">
+                            @endif
                         </div> Student
                     </th>
                     <th>Last Login</th>
@@ -49,7 +55,9 @@
                             <td data-th="Teacher/Admin">
                                 <div class=" skelton-hide skelton-height-lg skelton-mb-0">
                                     <div class="check-box">
+                                        @if($studentObj->google_class_id == 0)
                                         <input type="checkbox" class="sections-students" value="{{ $studentObj->id }}">
+                                        @endif
                                     </div>
                                     <strong>
                                                                             <span class="user-lable">
@@ -70,6 +78,7 @@
                                 </div>
                             </td>
                             <td>
+                                @if($studentObj->google_class_id == 0)
                                 <div class="pending-invites-controls">
                                     <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
                                         <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
@@ -78,6 +87,7 @@
                                         <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
                                     </button>
                                 </div>
+                                @endif
                             </td>
                         </tr>
                     @endforeach

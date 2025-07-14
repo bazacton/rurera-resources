@@ -10,6 +10,7 @@
             </div>
         </div>
         <div class="card-header">
+            @if(!isset($class) || $class->google_id == 0)
             <div class="bulk-actions">
                 <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                 <div class="dropdown-box">
@@ -23,7 +24,9 @@
                     </div>
                 </div>
             </div>
+            @endif
 
+            @if(!isset($class) || $class->google_id == 0)
             <div class="invite-faculty">
                 <div class="dropdown-box">
                     <div class="dropdown">
@@ -37,6 +40,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         </div>
         <div class="card-body p-0 table-sm">
             <table class="table mb-0">
@@ -44,7 +48,9 @@
                 <tr>
                     <th>
                         <div class="check-box">
-                            <input type="checkbox" class="check-uncheck-all" data-target_class="sections-teachers" name="check-two">
+                            @if(!isset($class) || $class->google_id == 0)
+                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-teachers" name="check-two">
+                            @endif
                         </div>
                         Teacher
                     </th>
@@ -64,7 +70,7 @@
 
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                     <div class="check-box">
-                                        @if($teacherObj->id != $userObj->id)
+                                        @if($teacherObj->id != $userObj->id && $teacherObj->google_class_id == 0)
                                             <input type="checkbox" class="sections-teachers" value="{{ $teacherObj->id }}">
                                         @endif
                                     </div>
