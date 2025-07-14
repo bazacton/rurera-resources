@@ -195,16 +195,19 @@
                 </div>
                 <div class="form-group">
                     <label class="input-label">{{ trans('update.timezone') }}</label>
-                    <select name="timezone" class="form-control select2" data-allow-clear="false">
-                        <option value="" {{ empty($user->timezone) ? 'selected' : '' }} disabled>{{
-                            trans('public.select') }}
-                        </option>
-                        @foreach(getListOfTimezones() as $timezone)
-                            <option value="{{ $timezone }}" @if(!empty($user) and $user->timezone == $timezone) selected
-                                @endif>{{ $timezone }}
+                    <div class="select-holder">
+                        <select name="timezone" class="form-control select2" data-allow-clear="false">
+                            <option value="" {{ empty($user->timezone) ? 'selected' : '' }} disabled>{{
+                                trans('public.select') }}
                             </option>
-                        @endforeach
-                    </select>
+                            @foreach(getListOfTimezones() as $timezone)
+                                <option value="{{ $timezone }}" @if(!empty($user) and $user->timezone == $timezone) selected
+                                    @endif>{{ $timezone }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    
                     @error('timezone')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -237,26 +240,29 @@
 
                     <div class="form-group">
                         <label>Year</label>
-                        <select data-default_id="{{isset( $user->id)? $user->year_id : 0}}"
-                                class="form-control year_class_ajax_select @error('year_id') is-invalid @enderror"
-                                name="year_id">
-                            <option {{ !empty($trend) ?
-                        '' : 'selected' }} disabled>Select Year</option>
+                        <div class="select-holder">
+                            <select data-default_id="{{isset( $user->id)? $user->year_id : 0}}"
+                                    class="form-control year_class_ajax_select @error('year_id') is-invalid @enderror"
+                                    name="year_id">
+                                <option {{ !empty($trend) ?
+                            '' : 'selected' }} disabled>Select Year</option>
 
-                            @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                    <optgroup label="{{  $category->title }}">
-                                        @foreach($category->subCategories as $subCategory)
-                                            <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                        @endforeach
-                                    </optgroup>
-                                @else
-                                    <option value="{{ $category->id }}" class="font-weight-bold">{{
-                            $category->title }}
-                                    </option>
-                                @endif
-                            @endforeach
-                        </select>
+                                @foreach($categories as $category)
+                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                        <optgroup label="{{  $category->title }}">
+                                            @foreach($category->subCategories as $subCategory)
+                                                <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                            @endforeach
+                                        </optgroup>
+                                    @else
+                                        <option value="{{ $category->id }}" class="font-weight-bold">{{
+                                $category->title }}
+                                        </option>
+                                    @endif
+                                @endforeach
+                            </select>
+                        </div>
+                        
                         @error('year_id')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -266,11 +272,14 @@
 
                     <div class="form-group">
                         <label>Student Class</label>
-                        <select data-default_id="{{isset( $user->id)? $user->class_id : 0}}"
-                                class="class_section_ajax_select student_section form-control select2 @error('class_id') is-invalid @enderror"
-                                id="class_id" name="class_id">
-                            <option disabled selected>Class</option>
-                        </select>
+                        <div class="select-holder">
+                            <select data-default_id="{{isset( $user->id)? $user->class_id : 0}}"
+                                    class="class_section_ajax_select student_section form-control select2 @error('class_id') is-invalid @enderror"
+                                    id="class_id" name="class_id">
+                                <option disabled selected>Class</option>
+                            </select>
+                        </div>
+                        
                         @error('class_id')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -318,11 +327,14 @@
 
                     <div class="form-group">
                         <label>Class Section</label>
-                        <select data-default_id="{{isset( $user->id)? $user->section_id : 0}}"
-                                class="section_ajax_select student_section form-control select2 @error('section_id') is-invalid @enderror"
-                                id="section_id" name="section_id">
-                            <option disabled selected>Section</option>
-                        </select>
+                        <div class="select-holder">
+                            <select data-default_id="{{isset( $user->id)? $user->section_id : 0}}"
+                                    class="section_ajax_select student_section form-control select2 @error('section_id') is-invalid @enderror"
+                                    id="section_id" name="section_id">
+                                <option disabled selected>Section</option>
+                            </select>
+                        </div>
+                        
                         @error('section_id')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -365,14 +377,17 @@
 
                         <div class="form-group">
                             <label class="input-label">{{ trans('update.currency') }}</label>
-                            <select name="currency" class="form-control select2" data-allow-clear="false">
-                                @foreach($currencies as $currencyItem)
-                                    <option value="{{ $currencyItem->currency }}" {{ ($userCurrency== $currencyItem->currency) ?
-                            'selected' : '' }}>{{ currenciesLists($currencyItem->currency) }} ({{
-                            currencySign($currencyItem->currency) }})
-                                    </option>
-                                @endforeach
-                            </select>
+                            <div class="select-holder">
+                                <select name="currency" class="form-control select2" data-allow-clear="false">
+                                    @foreach($currencies as $currencyItem)
+                                        <option value="{{ $currencyItem->currency }}" {{ ($userCurrency== $currencyItem->currency) ?
+                                'selected' : '' }}>{{ currenciesLists($currencyItem->currency) }} ({{
+                                currencySign($currencyItem->currency) }})
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            
                             @error('currency')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -380,12 +395,6 @@
                             @enderror
                         </div>
                     @endif
-
-
-
-
-
-
 
                     <div class="form-group">
                         <label>{{ trans('admin/main.bio') }}</label>
@@ -443,14 +452,17 @@
 
                 <div class="form-group">
                     <label class="input-label">{{ trans('auth.language') }}</label>
-                    <select name="language" class="form-control">
-                        <option value="">{{ trans('auth.language') }}</option>
-                        @foreach($userLanguages as $lang => $language)
-                            <option value="{{ $lang }}" @if(!empty($user) and mb_strtolower($user->language) ==
-                            mb_strtolower($lang)) selected @endif>{{ $language }}
-                            </option>
-                        @endforeach
-                    </select>
+                    <div class="select-holder">
+                        <select name="language" class="form-control">
+                            <option value="">{{ trans('auth.language') }}</option>
+                            @foreach($userLanguages as $lang => $language)
+                                <option value="{{ $lang }}" @if(!empty($user) and mb_strtolower($user->language) ==
+                                mb_strtolower($lang)) selected @endif>{{ $language }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    
                     @error('language')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -462,25 +474,29 @@
 
                     <div class="form-group rurera-hide">
                         <label class="input-label">{{ trans('admin/main.organization') }}</label>
-                        <select name="organ_id" data-search-option="just_organization_role"
-                                class="form-control search-user-select2"
-                                data-placeholder="{{ trans('admin/main.search') }} {{ trans('admin/main.organization') }}">
+                        <div class="select-holder">
+                            <select name="organ_id" data-search-option="just_organization_role"
+                                    class="form-control search-user-select2"
+                                    data-placeholder="{{ trans('admin/main.search') }} {{ trans('admin/main.organization') }}">
 
-                            @if(!empty($user) and !empty($user->organization))
-                                <option value="{{ $user->organization->id }}" selected>{{ $user->organization->get_full_name() }}
-                                </option>
-                            @endif
-                        </select>
+                                @if(!empty($user) and !empty($user->organization))
+                                    <option value="{{ $user->organization->id }}" selected>{{ $user->organization->get_full_name() }}
+                                    </option>
+                                @endif
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Organization / School Name</label>
-                        <select name="school_id" class="form-control">
-                            <option value="">Select School</option>
-                            @foreach($schools as $schoolObj)
-                                <option value="{{ $schoolObj->id }}" {{($schoolObj->id == $user->school_id)? 'selected' : ''}}>{{ $schoolObj->title }}
-                                </option>
-                            @endforeach
-                        </select>
+                        <div class="select-holder">
+                            <select name="school_id" class="form-control">
+                                <option value="">Select School</option>
+                                @foreach($schools as $schoolObj)
+                                    <option value="{{ $schoolObj->id }}" {{($schoolObj->id == $user->school_id)? 'selected' : ''}}>{{ $schoolObj->title }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Full Mailing Address</label>
@@ -496,20 +512,17 @@
                     </div>
                     <div class="form-group">
                         <label>Country</label>
-                        <select name="country_id" class="form-control">
-                            <option value="">Country</option>
-                            @foreach($countries as $countryObj)
-                                <option value="{{ $countryObj->id }}" {{($countryObj->id == $user->country_id)? 'selected' : ''}}>{{ $countryObj->title }}
-                                </option>
-                            @endforeach
-                        </select>
+                        <div class="select-holder">
+                            <select name="country_id" class="form-control">
+                                <option value="">Country</option>
+                                @foreach($countries as $countryObj)
+                                    <option value="{{ $countryObj->id }}" {{($countryObj->id == $user->country_id)? 'selected' : ''}}>{{ $countryObj->title }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
-
-
                 @endif
-
-
-
 
                 <div class=" mt-4">
                     <button class="btn btn-primary">{{ trans('admin/main.submit') }}</button>
