@@ -1359,7 +1359,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .populated-data .select2-container--default .select2-selection--single .select2-selection__arrow b {border: 0; }
 .populated-data .select2-selection__arrow {position: relative;}
 .populated-data .select2-selection__arrow:before,
-.form-group .input-group:has(select):before {position: absolute; right: 15px; top: 50%; margin-top: -8px; height: 8px; width: 8px; content: ""; border-top: 1px solid #aaa; border-left: 1px solid #aaa; transform: rotate(-140deg); z-index: 1;}
+.form-group .input-group:has(select):before {position: absolute; right: 15px; top: 50%; margin-top: -8px; height: 8px; width: 8px; content: ""; border-bottom: 1px solid #aaa; border-right: 1px solid #aaa; transform: rotate(45deg); z-index: 1;}
 .select2-container--default .select2-search--dropdown .select2-search__field {outline: none;}
 .populated-data .select2-container .select2-selection--single .select2-selection__rendered {height: 38px !important; line-height: 38px !important;}
 .populated-data .select2-container--default .select2-selection--single {height: 38px !important; border-color: #ced4da;}
