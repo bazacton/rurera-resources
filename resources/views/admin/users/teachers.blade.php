@@ -312,7 +312,7 @@
 
                         <div class="textarea-field">
                             <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite" required></textarea>
-                            <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
+                            <p>List one member work email per line. You can also copy/paste from Word Exel</p>
                             <p>Maximum no of emails allowed is 20</p>
                         </div>
                         <div class="review-btn-holder d-flex align-items-center justify-content-end">
