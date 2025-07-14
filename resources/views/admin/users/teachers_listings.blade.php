@@ -77,19 +77,23 @@
                                 </div>
                             </td>
                             <td data-th="Role">
-                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->role->caption)? $teacherObj->role->caption : '-'}}</div>
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>{{isset($teacherObj->role->caption)? $teacherObj->role->caption : '-'}}</span>
+                                </div>
                             </td>
                             <td data-th="Last Login">
 
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                    {{($teacherObj->last_login > 0)? dateTimeFormat($teacherObj->last_login, 'j M y | H:i') : '-'}}
+                                    <span>{{($teacherObj->last_login > 0)? dateTimeFormat($teacherObj->last_login, 'j M y | H:i') : '-'}}</span>
                                 </div>
                             </td>
                             <td data-th="Classes">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$teacherObj->getTeacherClasses->count()}}</div>
                             </td>
                             <td data-th="School">
-                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($teacherObj->userSchool->id)? $teacherObj->userSchool->title : '-'}}</div>
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>{{isset($teacherObj->userSchool->id)? $teacherObj->userSchool->title : '-'}}</span>
+                                </div>
                             </td>
 
                         </tr>
