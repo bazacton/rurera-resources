@@ -186,7 +186,7 @@
                                                     </td>
                                                     <td data-th="Last Login">
                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                            {{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}
+                                                            <span>{{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</span>
                                                         </div>
                                                     </td>
                                                     <td>
