@@ -25,8 +25,8 @@
                 <div class="quiz-data-holder skeleton mb-30">
                     <div class="content-holder card p-25">
                         <div class="quiz-data-filters">
-                            <span class="sorting-lable skelton-hide skelton-height-lg skelton-mb-0">Filter by:</span>
-                            <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                            <span class="sorting-lable">Filter by:</span>
+                            <div class="select-field">
                                 <select>
                                     <option value="All Games">All Games</option>
                                     <option value="Footbal">Footbal</option>
@@ -35,7 +35,7 @@
                                     <option value="Hockey">Hockey</option>
                                 </select>
                             </div>
-                            <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="select-field">
                                 <select>
                                     <option value="All Reports">All Reports</option>
                                     <option value="Weekly Reports">Weekly Reports</option>
@@ -43,7 +43,7 @@
                                     <option value="Yearly Reports">Yearly Reports</option>
                                 </select>
                             </div>
-                            <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="select-field">
                                 <select>
                                     <option value="All Classes">All Classes</option>
                                     <option value="Grade 1">Grade 1</option>
@@ -51,7 +51,7 @@
                                     <option value="Grade 3">Grade 3</option>
                                 </select>
                             </div>
-                            <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="select-field">
                                 <select>
                                     <option value="All Classes">Filter by Date</option>
                                     <option value="04/12/2024">04/12/2024</option>
