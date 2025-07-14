@@ -117,7 +117,9 @@
                                                     </div>
                                                 </td>
                                                 <td data-th="Role">
-                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($user->role->caption)? $user->role->caption : '-'}}</div>
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>{{isset($user->role->caption)? $user->role->caption : '-'}}</span>
+                                                    </div>
                                                 </td>
                                                 <td data-th="Last Login">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
