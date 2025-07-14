@@ -121,14 +121,18 @@
                                                 </td>
                                                 <td data-th="Last Login">
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                        {{($user->last_login > 0)? dateTimeFormat($user->last_login, 'j M y | H:i') : '-'}}
+                                                        <span>{{($user->last_login > 0)? dateTimeFormat($user->last_login, 'j M y | H:i') : '-'}}</span>
                                                     </div>
                                                 </td>
                                                 <td data-th="Classes">
-                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$user->getTeacherClasses->count()}}</div>
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>{{$user->getTeacherClasses->count()}}</span>
+                                                    </div>
                                                 </td>
                                                 <td data-th="School">
-                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</div>
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</span>
+                                                    </div>
                                                 </td>
 
                                             </tr>
