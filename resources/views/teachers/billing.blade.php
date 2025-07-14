@@ -52,7 +52,7 @@
                         </div>
                     </div>
 
-                    <ul data-target_class="admin-rurera-tabs-billing" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-20" id="assignment_tabs" role="tablist">
+                    <ul data-target_class="admin-rurera-tabs-billing" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-20 mt-50 pt-50" id="assignment_tabs" role="tablist">
                         <li class="nav-item skelton-height-lg">
                             <a class="nav-link active" id="membership-tab" href="javascript:;">
                                 <span class="tab-title">Membership Details</span>
