@@ -190,7 +190,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <div class="pending-invites-controls">
                                                             <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
                                                                 <i class="fa fa-check"></i>
                                                             </a>
