@@ -242,8 +242,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin-top: -6px;
     border-bottom: 2px solid #aaa;
     border-right: 2px solid #aaa;
-    border-left: 0;
-    transform: rotate(45deg);
     pointer-events: none;
 }
 /* Admin Create-Class-Modal Style End */
