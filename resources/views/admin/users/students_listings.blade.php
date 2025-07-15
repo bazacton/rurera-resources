@@ -1,7 +1,7 @@
 <div class="teacher-table">
     <div class="card">
         <div class="card-header">
-            @if(!isset($class) || $class->google_id == 0)
+
             <div class="bulk-actions">
                 <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                 <div class="dropdown-box">
@@ -11,12 +11,14 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                            @if(!isset($class) || $class->google_id == 0)
                             <a data-class_id="{{isset($class->id)? $class->id : 0}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                            @endif
                         </div>
                     </div>
                 </div>
             </div>
-            @endif
+
             <div class="teacher-search-filter border-0 p-0">
                 @if(!isset($class) || $class->google_id == 0)
                 @if(isset($is_add_button) && $is_add_button == true)
