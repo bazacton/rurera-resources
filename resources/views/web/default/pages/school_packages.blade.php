@@ -499,4 +499,23 @@
     }
     updatePackageDisplay();
 </script>
+<script>
+    function openModal() {
+      document.getElementById('paymentModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('paymentModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    // Close modal on ESC key
+    window.addEventListener('keydown', function(e){
+      if(e.key === "Escape") closeModal();
+    });
+
+    // Update selectPackage to open modal
+    function selectPackage() {
+        openModal();
+    }
+</script>
 @endpush
