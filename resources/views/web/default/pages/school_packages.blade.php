@@ -353,7 +353,7 @@
         const pricePerStudent = (totalPrice / currentStudentCount).toFixed(2);
         document.getElementById('packageTier').textContent = pkg.name;
         document.getElementById('studentCount').textContent = currentStudentCount;
-        document.getElementById('price').textContent = `$${totalPrice}`;
+        document.getElementById('price').textContent = `€${totalPrice}`;
         document.getElementById('pricePerStudent').textContent = `€${pricePerStudent} per student`;
         const featuresList = document.getElementById('featuresList');
         featuresList.innerHTML = '';
