@@ -317,7 +317,7 @@
         document.getElementById('packageTier').textContent = pkg.name;
         document.getElementById('studentCount').textContent = currentStudentCount;
         document.getElementById('price').textContent = `$${totalPrice}`;
-        document.getElementById('pricePerStudent').textContent = `$${pricePerStudent} per student`;
+        document.getElementById('pricePerStudent').textContent = `€${pricePerStudent} per student`;
         const featuresList = document.getElementById('featuresList');
         featuresList.innerHTML = '';
         pkg.features.forEach(feature => {
@@ -342,7 +342,7 @@
     function selectPackage() {
         const pkg = getCurrentPackage(currentStudentCount);
         const totalPrice = calculatePrice(currentStudentCount);
-        const message = `Package: ${pkg.name}\nStudents: ${currentStudentCount}\nPrice: $${totalPrice}/month\n\nProceed to checkout?`;
+        const message = `Package: ${pkg.name}\nStudents: ${currentStudentCount}\nPrice: €${totalPrice}/month\n\nProceed to checkout?`;
         if (confirm(message)) {
             alert(`Redirecting to payment for ${pkg.name}...`);
             // In real app: window.location.href = `/checkout?students=${currentStudentCount}&package=${pkg.name}`;
