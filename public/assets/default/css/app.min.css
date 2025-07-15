@@ -3811,6 +3811,68 @@ School Packges Style Start
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+/* Modal Styles */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(44,62,80,0.18);
+  justify-content: center;
+  align-items: center;
+}
+.modal-box {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+  padding: 36px 32px 32px 32px;
+  min-width: 320px;
+  max-width: 95vw;
+  position: relative;
+  text-align: center;
+  animation: modalIn 0.25s;
+}
+@keyframes modalIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 1.7rem;
+  color: #888;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.modal-close:hover { color: #3498db; }
+.payment-methods {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.payment-btn {
+  background: #f8f9fa;
+  border: 1.5px solid #d0d7de;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 0.18s, border 0.18s, color 0.18s;
+}
+.payment-btn:hover {
+  background: #e8f5e8;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+@media (max-width: 500px) {
+  .modal-box { padding: 20px 8px 18px 8px; min-width: 0; }
+  .payment-methods { flex-direction: column; gap: 10px; }
+}
 /*********************************
 School Packges Style End
 **********************************/
