@@ -3727,6 +3727,11 @@ School Packges Style Start
   justify-content: center;
   margin-top: 10px;
 }
+.purchase-classroom .payment-method h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 10px;
+}
 .choose-subjects input[type=checkbox], .payment-card input[type=checkbox], 
 .choose-subjects input[type=radio], .payment-card input[type=radio] {
     position: absolute;
