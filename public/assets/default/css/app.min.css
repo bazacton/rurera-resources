@@ -3772,6 +3772,17 @@ School Packges Style Start
 .payment-card input[type=radio]:checked ~ label img {
     filter: invert(67%) sepia(35%) saturate(6151%) hue-rotate(175deg) brightness(100%) contrast(102%);
 }
+.payment-method .btn-holder {
+  text-align: center;
+  margin-top: 30px;
+}
+.payment-method .continue-btn {
+  border: 0;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
 @media (max-width: 500px) {
   .modal-box { padding: 20px 8px 18px 8px; min-width: 0; }
   .payment-methods { flex-direction: column; gap: 10px; }
