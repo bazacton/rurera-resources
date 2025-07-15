@@ -1269,10 +1269,10 @@ p.svga-credit {
 		border-radius: 3px;
 		color: #e74c3c;
 	}
-	.svga-row.rurera-hide {
+	.mobile-avar-view .svga-row.rurera-hide {
 		display: block;
 	}
-	.svga-row.rurera-hide-sm {
+	.mobile-avar-view .svga-row.rurera-hide-sm {
 		display: none;
 	}
 }
