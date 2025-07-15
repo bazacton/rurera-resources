@@ -377,6 +377,18 @@
       </div>
     </div>
 </div> -->
+<!-- Modal HTML (add just before </body>) -->
+<div id="paymentModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <h3 style="margin-bottom: 18px; color: #222;">Select payment method</h3>
+    <div class="payment-methods">
+      <button class="payment-btn">Credit card</button>
+      <button class="payment-btn">Purchase order</button>
+      <button class="payment-btn">Cheque</button>
+    </div>
+  </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
