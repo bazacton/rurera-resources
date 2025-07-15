@@ -57,9 +57,9 @@
                                         </div>
                                     </div>
                                     <div class="price-section" id="priceSection">
-                                        <div class="price" id="price">$29</div>
+                                        <div class="price" id="price">€29</div>
                                         <div class="price-period">per month</div>
-                                        <div class="price-per-student" id="pricePerStudent">$1.93 per student</div>
+                                        <div class="price-per-student" id="pricePerStudent">€1.93 per student</div>
                                     </div>
                                     <div class="package-features">
                                         <h3>What's Included:</h3>
