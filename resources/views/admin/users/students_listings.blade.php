@@ -62,7 +62,7 @@
                                     </div>
                                     <strong>
                                                                             <span class="user-lable">
-                                                                                {{ $studentObj->get_full_name() }}
+                                                                                {{ $studentObj->get_full_name() }} -- {{ $studentObj->id }}
                                                                                 <span class="user-email">{{ $studentObj->email }}</span>
                                                                             </span>
                                     </strong>
