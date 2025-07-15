@@ -382,19 +382,121 @@
 @push('scripts_bottom')
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
 <script src="/assets/default/vendors/parallax/parallax.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(".increase-students").click(function() {
-            let value = parseInt($(".student-val").text());
-            $(".student-val").text(value + 1);
-        });
-
-        $(".decrease-students").click(function() {
-            let value = parseInt($(".student-val").text());
-            if (value > 0) {
-                $(".student-val").text(value - 1);
+<script>
+    let currentStudentCount = 15;
+    const packages = {
+        starter: {
+            name: "Starter Plan",
+            minStudents: 1,
+            maxStudents: 25,
+            pricePerStudent: 1.93,
+            basePrice: 29,
+            features: [
+                "Basic quiz creation",
+                "Student progress tracking", 
+                "Email support",
+                "Basic analytics",
+                "Mobile app access"
+            ]
+        },
+        professional: {
+            name: "Professional Plan",
+            minStudents: 26,
+            maxStudents: 75,
+            pricePerStudent: 1.58,
+            basePrice: 79,
+            features: [
+                "Advanced quiz features",
+                "Detailed analytics",
+                "Priority support",
+                "Custom branding",
+                "Grade book integration",
+                "Video tutorials"
+            ]
+        },
+        enterprise: {
+            name: "Enterprise Plan", 
+            minStudents: 76,
+            maxStudents: 200,
+            pricePerStudent: 1.33,
+            basePrice: 199,
+            features: [
+                "Unlimited quiz creation",
+                "Advanced reporting",
+                "24/7 phone support",
+                "API access",
+                "Multi-teacher accounts",
+                "Custom integrations",
+                "Training sessions"
+            ]
+        },
+        premium: {
+            name: "Premium Plan",
+            minStudents: 201,
+            maxStudents: 1000,
+            pricePerStudent: 1.00,
+            basePrice: 399,
+            features: [
+                "Everything in Enterprise",
+                "White-label solution",
+                "Dedicated account manager",
+                "Custom development",
+                "Advanced security",
+                "SLA guarantee",
+                "On-site training"
+            ]
+        }
+    };
+    function getCurrentPackage(studentCount) {
+        for (const [key, pkg] of Object.entries(packages)) {
+            if (studentCount >= pkg.minStudents && studentCount <= pkg.maxStudents) {
+                return pkg;
             }
+        }
+        return packages.premium;
+    }
+    function calculatePrice(studentCount) {
+        const pkg = getCurrentPackage(studentCount);
+        return Math.round(pkg.basePrice + (studentCount - pkg.minStudents) * pkg.pricePerStudent);
+    }
+    function updatePackageDisplay() {
+        const pkg = getCurrentPackage(currentStudentCount);
+        const totalPrice = calculatePrice(currentStudentCount);
+        const pricePerStudent = (totalPrice / currentStudentCount).toFixed(2);
+        document.getElementById('packageTier').textContent = pkg.name;
+        document.getElementById('studentCount').textContent = currentStudentCount;
+        document.getElementById('price').textContent = `$${totalPrice}`;
+        document.getElementById('pricePerStudent').textContent = `$${pricePerStudent} per student`;
+        const featuresList = document.getElementById('featuresList');
+        featuresList.innerHTML = '';
+        pkg.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
         });
-    });
+        document.getElementById('priceSection').classList.add('price-update');
+        setTimeout(() => {
+            document.getElementById('priceSection').classList.remove('price-update');
+        }, 500);
+        document.getElementById('decreaseBtn').disabled = currentStudentCount <= 1;
+        document.getElementById('increaseBtn').disabled = currentStudentCount >= 1000;
+    }
+    function changeStudentCount(change) {
+        const newCount = currentStudentCount + change;
+        if (newCount >= 1 && newCount <= 1000) {
+            currentStudentCount = newCount;
+            updatePackageDisplay();
+        }
+    }
+    function selectPackage() {
+        const pkg = getCurrentPackage(currentStudentCount);
+        const totalPrice = calculatePrice(currentStudentCount);
+        const message = `Package: ${pkg.name}\nStudents: ${currentStudentCount}\nPrice: $${totalPrice}/month\n\nProceed to checkout?`;
+        if (confirm(message)) {
+            alert(`Redirecting to payment for ${pkg.name}...`);
+            // In real app: window.location.href = `/checkout?students=${currentStudentCount}&package=${pkg.name}`;
+        }
+    }
+    updatePackageDisplay();
 </script>
 @endpush
