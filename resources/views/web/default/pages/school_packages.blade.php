@@ -220,11 +220,48 @@
 <div id="paymentModal" class="modal-overlay">
   <div class="modal-box">
     <span class="modal-close" onclick="closeModal()">&times;</span>
-    <h3 style="margin-bottom: 18px; color: #222;">Select payment method</h3>
-    <div class="payment-methods">
-      <button class="payment-btn">Credit card</button>
-      <button class="payment-btn">Purchase order</button>
-      <button class="payment-btn">Cheque</button>
+    <div class="payment-method">
+        <h3>Select payment method</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="payment-card">
+                    <input type="radio" id="credit" name="payment">
+                    <label for="credit">
+                        <div class="icon-box">
+                            <img src="/assets/default/svgs/credit.svg" alt="credit">
+                        </div>
+                        <strong>Credit card</strong>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-card">
+                    <input type="radio" id="purchase" name="payment">
+                    <label for="purchase">
+                        <div class="icon-box">
+                            <img src="/assets/default/svgs/purchase.svg" alt="purchase">
+                        </div>
+                        <strong>Purchase order</strong>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-card">
+                    <input type="radio" id="cheque" name="payment">
+                    <label for="cheque">
+                        <div class="icon-box">
+                            <img src="/assets/default/svgs/cheque.svg" alt="cheque">
+                        </div>
+                        <strong>Cheque</strong>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="btn-holder">
+                    <button type="button" class="continue-btn">Continue</button>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </div>
