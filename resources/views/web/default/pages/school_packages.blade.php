@@ -224,34 +224,34 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="purchase-sidebar">
-                                <div class="sidebar-content">
-                                    <div class="sidebar-icon">
-                                        <img src="/assets/default/svgs/gift.svg" alt="gift">
+                            <div class="right-package">
+                                <div class="package-card">
+                                    <div class="package-tier" id="packageTier">Starter Plan</div>
+                                    <h3 class="package-title">Classroom Package</h3>
+                                    <div class="student-selector">
+                                        <label>Number of Students:</label>
+                                        <div class="student-counter">
+                                            <button class="counter-btn" id="decreaseBtn" onclick="changeStudentCount(-1)">−</button>
+                                            <div class="student-count" id="studentCount">15</div>
+                                            <button class="counter-btn" id="increaseBtn" onclick="changeStudentCount(1)">+</button>
+                                        </div>
                                     </div>
-                                    <h3>Licences include</h3>
-                                    <ul>
-                                        <li><span class="icon-box">📚</span> Full Curriculum Access</li>
-                                        <li><span class="icon-box">🧠</span> SATs & 11+ Practice</li>
-                                        <li><span class="icon-box">🔢</span> Times Tables & Spelling</li>
-                                        <li><span class="icon-box">❓</span> 10,000+ Questions</li>
-                                        <li><span class="icon-box">📖</span> Online Bookshelf</li>
-                                        <li><span class="icon-box">✍️</span> Spelling Exercises</li>
-                                        <li><span class="icon-box">🏅</span> Rewards & Badges</li>
-                                        <li><span class="icon-box">📊</span> Progress Reports</li>
-                                    </ul>
-                                    <div class="purchase-price">
-                                        <span>Starting at</span>
-                                        <strong>£299 <em>per year</em></strong>
+                                    <div class="price-section" id="priceSection">
+                                        <div class="price" id="price">$29</div>
+                                        <div class="price-period">per month</div>
+                                        <div class="price-per-student" id="pricePerStudent">$1.93 per student</div>
                                     </div>
-                                    <div class="contact-info">
-                                        <span class="icon-box">
-                                            <img src="/assets/default/svgs/phone-class.svg" alt="phone-class">
-                                        </span>
-                                        <strong>Questions?</strong>
-                                        <a href="#">orders@rurera.com</a>
-                                        <a href="#">Subscription FAQ</a>
+                                    <div class="package-features">
+                                        <h3>What's Included:</h3>
+                                        <ul id="featuresList">
+                                            <li>Basic quiz creation</li>
+                                            <li>Student progress tracking</li>
+                                            <li>Email support</li>
+                                            <li>Basic analytics</li>
+                                            <li>Mobile app access</li>
+                                        </ul>
                                     </div>
+                                    <button class="select-btn" onclick="selectPackage()">Get Started Now</button>
                                 </div>
                             </div>
                         </div>
