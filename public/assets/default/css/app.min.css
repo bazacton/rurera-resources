@@ -3640,117 +3640,176 @@ School Packges Style Start
   padding: 10px 25px;
   border-radius: 5px;
 }
-.purchase-sidebar {
-  border: 2px solid #e7e5e4;
-  background-color: #fcfcfc;
-  padding: 25px;
-  border-radius: 5px;
+/* School Packages Sidebar Style */
+.right-package {
   position: sticky;
   top: 20px;
+  height: fit-content;
 }
-.purchase-sidebar .sidebar-icon {
+.package-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 0 10px;
+  border: 3px solid #3498db;
 }
-.purchase-sidebar .sidebar-icon img {
-  height: 45px;
-  width: 45px;
-  filter: invert(54%) sepia(44%) saturate(3346%) hue-rotate(181deg) brightness(107%) contrast(101%);
+.package-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 20px;
 }
-.purchase-sidebar h3 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 25px;
+.student-selector {
+  margin: 25px 0;
 }
-.purchase-sidebar ul {
-  margin: 0;
-  padding: 0;
+.student-selector label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
-.purchase-sidebar ul li {
+.student-counter {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin: 0 0 20px;
-}
-.purchase-sidebar ul li .icon-box {
-  font-size: 14px;
-}
-.purchase-price {
-  margin: 30px 0 25px;
-  text-align: center;
-}
-.purchase-price span {
-  display: block;
-  line-height: normal;
-  padding: 0 0 10px;
-  color: #666;
-}
-.purchase-price strong {
-  font-size: 28px;
-  color: #333;
-}
-.purchase-price strong em {
-  font-weight: 400;
-  color: #666;
-  font-style: normal;
-  font-size: 18px;
-}
-.sats .tests-list {
-  width: 100%;
-  display: flex;
-  gap: 8px;
-  padding: 0;
-  flex-wrap: wrap;
-}
-.sats .tests-list li {
-  font-size: 15px;
-  cursor: pointer;
-  border: 1px dashed #ddd;
-  margin-bottom: -1px;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 5px;
   justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.counter-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
   align-items: center;
-  padding: 0 5px;
-  min-height: 100px;
-  border-radius: 5px;
-  min-width: 140px;
-  max-width: 140px;
-  text-align: center;
-  box-sizing: border-box;
+  justify-content: center;
 }
-.sats .tests-list img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
+.counter-btn:hover {
+  background: #2980b9;
+  transform: scale(1.1);
 }
-.purchase-sidebar .contact-info {
-  text-align: center;
-}
-.purchase-sidebar .contact-info strong {
-  display: block;
-  font-size: 20px;
-  line-height: normal;
-  margin: 0 0 15px;
-}
-.purchase-sidebar .contact-info a {
-  display: block;
-  line-height: normal;
-  font-size: 18px;
-  margin: 0 0 5px;
-  color: var(--blue);
-}
-.purchase-sidebar .contact-info .icon-box {
-    display: block;
-    margin: 0 0 15px;
-}
-.purchase-sidebar .contact-info .icon-box img {
-  filter: invert(54%) sepia(44%) saturate(3346%) hue-rotate(181deg) brightness(107%) contrast(101%);
-}
-.choose-subjects .categories-card:hover {
+.counter-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
   transform: none;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.student-count {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  min-width: 80px;
+  padding: 10px;
+  border: 2px solid #ecf0f1;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+.price-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+.price-period {
+  font-size: 1rem;
+  color: #95a5a6;
+  margin-bottom: 10px;
+}
+.price-per-student {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+.package-features {
+  text-align: left;
+  margin: 25px 0;
+}
+.package-features h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.package-features ul {
+  list-style: none;
+}
+.package-features li {
+  padding: 8px 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+.package-features li:before {
+  content: "✓";
+  color: #27ae60;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+.select-btn {
+  width: 100%;
+  padding: 18px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+.select-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+.package-tier {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background: #ecf0f1;
+  border-radius: 20px;
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  .main-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+  .left-content {
+      padding: 25px;
+  }
+  .left-content h1 {
+      font-size: 2rem;
+  }
+  .package-card {
+      padding: 20px;
+  }
+  .right-package {
+      position: relative;
+      top: 0;
+  }
+}
+.price-update {
+  animation: priceUpdate 0.5s ease;
+}
+@keyframes priceUpdate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 /*********************************
 School Packges Style End
