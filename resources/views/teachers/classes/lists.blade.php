@@ -429,9 +429,9 @@
                             @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
 
                             $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
-                            
+
                             @endphp
-                            
+
                             <div class="card text-white classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
                                 <!-- Dropdown Menu -->
 
@@ -656,20 +656,22 @@
             }
         }, 500);
 
-        /*var class_id = $(this).attr('data-class_id');
-        $(".class_id").val(class_id);
-        $(".class-edit-modal").modal('show');
-        jQuery.ajax({
-            type: "GET",
-            url: '/google/login',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            data: {'class_id':0},
-            success: function (return_data) {
-                console.log(return_data);
-            }
-        });*/
+        var loginCheckInterval = setInterval(function () {
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/users/google_login_check',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {},
+                success: function (return_data) {
+                    if (return_data === 'loggedin') {
+                        clearInterval(loginCheckInterval); // Stop the interval
+                        window.location.reload(); // Refresh the page
+                    }
+                }
+            });
+        }, 2000);
 
     });
 
