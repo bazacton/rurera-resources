@@ -944,11 +944,13 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
     var alert_messages = new Array();
     var radio_fields = new Array();
     var checkbox_fields = new Array();
+    var error_objects = new Array();
     form_name.find('.rurera-req-field:not(img), .editor-field:not(img), .editor-fields:not(img)').each(function (index_no) {
         is_visible = true;
         var thisObj = jQuery(this);
         index_no = rurera_is_field(index_no) ? index_no : 0;
         var visible_id = thisObj.data('visible');
+        error_objects[index_no] = new Array();
         has_empty[index_no] = false;
         checkbox_fields[index_no] = false;
         if (rurera_is_field(visible_id) == true) {
@@ -970,6 +972,8 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
             var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
             if (is_field_checked == false) {
                 radio_fields[index_no] = thisObj;
+                error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'radio');
+                error_objects[index_no]['error_obj'] = thisObj;
             }
             //has_empty[index_no] = true;
             is_visible = false;
@@ -988,10 +992,14 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
                 array_length = alert_messages.length;
                 alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, '');
                 has_empty[index_no] = true;
+
+                error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '');
+                error_objects[index_no]['error_obj'] = thisObj;
             }
         } else {
             if (is_visible == true) {
                 has_empty[index_no] = rurera_check_field_type(thisObj, alert_messages, has_empty[index_no]);
+
             }
         }
         if (has_empty[index_no] == false) {
