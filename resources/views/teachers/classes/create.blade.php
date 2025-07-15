@@ -1150,7 +1150,7 @@
         });
 
         $(document).on('click', '.google-refresh-roaster', function (e) {
-            //rurera_loader($(".google-refresh-roaster"), 'div');
+            rurera_loader($(".main-content"), 'div');
             var google_class_id = $(this).attr('data-google_class_id');
             jQuery.ajax({
                 type: "GET",
@@ -1161,6 +1161,7 @@
                 },
                 data: {'google_class_id':google_class_id},
                 success: function (return_data) {
+                    rurera_remove_loader($(".main-content"), 'div');
                     rurera_modal_alert(
                         return_data.status,
                         return_data.msg,
