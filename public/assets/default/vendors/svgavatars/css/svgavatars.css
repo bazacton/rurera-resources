@@ -1111,6 +1111,7 @@ p.svga-credit {
 	.mobile-avar-view .svga-vert-order-glob-controls {
 		width: 100%;
 		height: auto;
+		margin-top: 10px;
 	}
 	.mobile-avar-view .row-glob-controls {
 		border: none;
