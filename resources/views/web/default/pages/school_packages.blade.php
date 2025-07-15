@@ -47,7 +47,7 @@
                             <div class="right-package">
                                 <div class="package-card">
                                     <div class="package-tier" id="packageTier">Starter Plan</div>
-                                    <h3 class="package-title">Classroom Package</h3>
+                                    <h3 class="package-title">School Package</h3>
                                     <div class="student-selector">
                                         <label>Number of Students:</label>
                                         <div class="student-counter">
