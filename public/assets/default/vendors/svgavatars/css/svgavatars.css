@@ -1058,6 +1058,9 @@ p.svga-credit {
 }
 
 /* Mobile View Style Start */
+.svga-row.rurera-hide {
+    display: none;
+}
 @media (max-width: 768px) {
 	.mobile-avar-view .svga-row {
 		position: relative;
@@ -1265,6 +1268,12 @@ p.svga-credit {
 		border: 1px solid #e74c3c !important;
 		border-radius: 3px;
 		color: #e74c3c;
+	}
+	.svga-row.rurera-hide {
+		display: block;
+	}
+	.svga-row.rurera-hide-sm {
+		display: none;
 	}
 }
 
