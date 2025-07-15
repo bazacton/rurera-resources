@@ -57,9 +57,8 @@
                             <td data-th="Teacher/Admin">
                                 <div class=" skelton-hide skelton-height-lg skelton-mb-0">
                                     <div class="check-box">
-                                        @if($studentObj->google_class_id == 0)
+
                                         <input type="checkbox" class="sections-students" value="{{ $studentObj->id }}">
-                                        @endif
                                     </div>
                                     <strong>
                                                                             <span class="user-lable">
