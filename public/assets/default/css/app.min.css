@@ -3703,7 +3703,6 @@ School Packges Style Start
   min-width: 320px;
   max-width: 95vw;
   position: relative;
-  text-align: center;
   animation: modalIn 0.25s;
 }
 @keyframes modalIn {
