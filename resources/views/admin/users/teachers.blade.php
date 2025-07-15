@@ -343,8 +343,8 @@
                         <input type="hidden" name="page_type" value="teachers">
                         <div class="form-group">
                             <div class="select-holder">
-                                <label class="input-label">Select School</label>
-                                <div class="select-box input-group">
+                                <h5>Select School</h5>
+                                <div class="select-box">
                                     <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
                                         @if($schools_list->count() > 0)
                                             @php $row_no = 0; @endphp
@@ -360,7 +360,7 @@
                         </div>
                         <div class="form-group">
                             <div class="select-holder">
-                                <label class="input-label">Select a Class</label>
+                                <h5>Select a Class</h5>
                                 <div class="select-box input-group">
                                     <select name="class_id" class="student-class-change school-classes-list">
                                         <option value="">Select Class</option>
