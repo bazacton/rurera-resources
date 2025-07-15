@@ -38,7 +38,7 @@
                                     <option value="inactive" @if(request()->get('status') == 'inactive') selected @endif>{{ trans('admin/main.inactive') }}</option>
                                 </select>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -55,7 +55,8 @@
                     @can('admin_schools_create')
                     <div class="card-header">
                         <div class="text-right ml-auto">
-                            <a href="/admin/schools/create" class="simple-btn">New School</a>
+                            <a href="javascript:;" class="simple-btn new-school-btn reset-form" data-form_class="school-form">New School</a>
+
                         </div>
                     </div>
                     @endcan
@@ -110,13 +111,13 @@
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <div class="quiz-table-controls">
                                                 @can('admin_schools_edit')
-                                                <a href="/admin/schools/{{ $schoolData->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                                    <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
-                                                </a>
+                                                    <a data-id="{{ $schoolData->id }}" href="javascript:;" class="btn-transparent btn-sm text-primary edit-school-model" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                                        <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                    </a>
                                                 @endcan
 
                                                 @can('admin_schools_delete')
-                                                @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
+                                                    @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
                                                 @endcan
                                             </div>
                                         </div>
@@ -138,6 +139,48 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade school-add-edit-modal" id="edit-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body student-modal-box">
+
+                <div id="section4" class="modal-section add-edit-schoo-block active">
+
+                </div>
+                <div class="messages-layout-student-block rurera-hide mt-30"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade school-add-modal" id="school-add-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body student-modal-box">
+
+                <div id="section4" class="modal-section add-edit-schoo-block active">
+                    <form action="/admin/schools/store"
+                          method="Post" class="school-form">
+                        {{csrf_field()}}
+                        <input type="hidden" name="redirect_url" class="redirect_url" value="">
+                        <div class="form-group">
+                            <label>School Name</label>
+                            <input type="text" name="title" required
+                                   class="form-control"
+                                   value=""
+                                   placeholder=""/>
+                        </div>
+                        <div class="teacher-buttons mt-30">
+                            <button type="submit" class="btn btn-primary edit-single-student-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="messages-layout-student-block rurera-hide mt-30"></div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -152,6 +195,42 @@
             .querySelectorAll(".skelton-hide")
             .forEach((el) => el.classList.remove("skelton-hide"));
         }, 3000);
+
+
+        $(document).on('click', '.reset-form', function (e) {
+            var form_class = $(this).attr('data-form_class');
+            $("."+form_class)[0].reset();
+        });
+
+        $('body').on('click', '.new-school-btn', function (e) {
+            $(".school-add-modal").modal('show');
+            var redirect_url = window.location.href;
+            $(".redirect_url").val(redirect_url);
+        });
+
+        $('body').on('click', '.edit-school-model', function (e) {
+            var school_id = $(this).attr('data-id');
+            var redirect_url = window.location.href;
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/schools/edit_school_modal',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'school_id':school_id, 'redirect_url': redirect_url},
+                success: function (return_data) {
+                    $(".school-add-edit-modal").modal('show');
+                    $('.add-edit-schoo-block').html(return_data);
+                }
+            });
+        });
+
+
+        $('body').on('submit', '.school-form', function (e) {
+            rurera_loader($(".add-edit-schoo-block"), 'div');
+        });
+
+
     });
 </script>
 @endpush

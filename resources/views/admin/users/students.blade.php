@@ -163,7 +163,7 @@
                                         <tr>
                                             <th>Student</th>
                                             <th>Last Login</th>
-                                            <th></th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="students-list">
@@ -190,11 +190,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="pending-invites-controls">
-                                                            <a href="javascript:;" class="btn-transparent btn-sm request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
+                                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
                                                                 <i class="fa fa-check"></i>
                                                             </a>
-                                                            <a href="javascript:;" class="btn-transparent btn-sm request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
+                                                            <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
                                                                 <i class="fa fa-times"></i>
                                                             </a>
                                                         </div>
