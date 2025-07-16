@@ -410,7 +410,7 @@
                                         Username<em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" name="username" placeholder="Create a unique username (e.g Daniel_243)" autocomplete="off" required>
+                                        <input class="rurera-req-field" type="text" name="username" placeholder="Create a unique username (e.g Daniel_243)" autocomplete="off" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -418,7 +418,7 @@
                                         Password <em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="password" name="password" placeholder="Create a secure password" autocomplete="off" required>
+                                        <input class="rurera-req-field" type="password" name="password" placeholder="Create a secure password" autocomplete="off" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -426,7 +426,7 @@
                                         First Name <em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" name="first_name" placeholder="Enter student first name (e.g. Daniel)" autocomplete="off" required>
+                                        <input class="rurera-req-field" type="text" name="first_name" placeholder="Enter student first name (e.g. Daniel)" autocomplete="off" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -434,7 +434,7 @@
                                         Last Name <em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" name="last_name" placeholder="Enter student last name? (e.g. Wilson)" autocomplete="off" required>
+                                        <input class="rurera-req-field" type="text" name="last_name" placeholder="Enter student last name? (e.g. Wilson)" autocomplete="off" >
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -442,7 +442,7 @@
                                         Email
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" name="email" placeholder="Student Valid email address" autocomplete="off">
+                                        <input  type="text" name="email" placeholder="Student Valid email address" autocomplete="off">
                                     </div>
                                 </div>
                             </div>
@@ -521,7 +521,7 @@
 
 
                             <div class="textarea-field">
-                                <textarea name="students_full_name" placeholder="Enter Student Full name per line."></textarea>
+                                <textarea class="rurera-req-field" name="students_full_name" placeholder="Enter Student Full name per line."></textarea>
                                 <p>List one student per line. You can also copy/paste your student list from&nbsp;Word&nbsp;or&nbsp;Excel.</p>
                             </div>
                         </div>
@@ -761,8 +761,13 @@
         });
 
         $(document).on('submit', '.add-student-single', function (e) {
-            rurera_loader($(".student-modal-box"), 'div');
             var formData = new FormData($('.add-student-single')[0]);
+
+            returnType = rurera_validation_process($('.add-student-single'));
+            if (returnType == false) {
+                return false;
+            }
+            rurera_loader($(".student-modal-box"), 'div');
 
             $.ajax({
                 type: "POST",
@@ -783,6 +788,10 @@
         });
 
         $(document).on('submit', '.import-students-list', function (e) {
+            returnType = rurera_validation_process($('.import-students-list'));
+            if (returnType == false) {
+                return false;
+            }
             rurera_loader($(".student-modal-box"), 'div');
             var formData = new FormData($('.import-students-list')[0]);
             $.ajax({
