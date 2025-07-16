@@ -556,7 +556,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="select-holder">
-                    <h5>Select a Class</h5>
+                    <label class="input-label">Select a Class</label>
                     <div class="select-box">
                         <select>
                         <option value="Orange - 5th Grade">Orange - 5th Grade</option>
