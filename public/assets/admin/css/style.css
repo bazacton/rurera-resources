@@ -1342,7 +1342,8 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .lms-quiz-create .add-glossary-modal {margin-top: 10px; display: inline-block;}
 .years-group.populated-data {-webkit-user-select: none; -khtml-user-select: none; -moz-user-select: -moz-none; -o-user-select: none; user-select: none;}
 .years-group.populated-data .form-group img {max-width: 70%; margin-bottom: 15px; object-fit: contain;}
-.radio-buttons {display: flex; flex-wrap: wrap; gap: 15px; width: 100%;}
+.radio-buttons {display: flex; flex-wrap: wrap; gap: 15px; width: 100%; margin-bottom: 5px;}
+.radio-buttons label {margin: 0;}
 .radio-buttons .card-radio {width: 11.111%; margin-bottom: 0;}
 .populated-data .radio-btn {background-color: #fff; border: 2px solid transparent; border-radius: 10px; display: flex; position: relative; text-align: center; box-shadow: 0 0 10px #c3c3c367; cursor: pointer; padding: 15px 12px; min-height: 111px; align-items: center; justify-content: center;}
 .card-radio input {display: none;}
