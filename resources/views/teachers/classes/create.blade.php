@@ -1167,7 +1167,7 @@
                         return_data.msg,
                         false, //confirmButton
                     );
-                    //window.location.reload();
+                    window.location.reload();
                 }
             });
 
