@@ -222,7 +222,7 @@
             </ul>
         </div>
 
-        <div class="section-body populated-data">
+        <div class="section-body populated-data skeleton">
 
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
