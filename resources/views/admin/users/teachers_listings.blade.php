@@ -1,4 +1,4 @@
-<div class="teacher-table">
+<div class="teacher-table skeleton">
     <div class="card">
         <div class="teacher-search-filter">
 
