@@ -822,6 +822,7 @@
                         return_data.msg,
                         true, //confirmButton
                     );
+                    window.location.reload();
                 }
             });
 
