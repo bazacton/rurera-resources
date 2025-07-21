@@ -10,8 +10,6 @@
         background-color: var(--blue);
         color: var(--white);
         border-color: transparent;
-        width: auto;
-        height: auto;
         padding: 8px 15px;
         border-radius: 5px;
         text-decoration: none;
