@@ -136,7 +136,7 @@
 
                                                 @if(auth()->user()->isAdminRole())
                                                     <a data-id="{{ $schoolData->id }}" href="javascript:;" class="btn-transparent btn-sm text-primary custom-package-modal-btn" data-toggle="tooltip" data-placement="top" title="Custom Package">
-                                                        <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                        <i class="fas fa-cube ml-0"></i>
                                                     </a>
                                                 @endif
                                             </div>
