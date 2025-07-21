@@ -17,28 +17,32 @@
                                 <div class="left-content">
                                     <h1>Transform Your School with Rurera</h1>
                                     <p>Create engaging quizzes, track student progress, and enhance learning outcomes with our comprehensive educational platform designed specifically for modern classrooms.</p>
-                                    <h2>Why Choose Rurera?</h2>
+                                    <h2>Why Choose This Package?</h2>
                                     <ul class="features-list">
-                                        <li>Easy-to-use quiz creation tools</li>
-                                        <li>Real-time student progress tracking</li>
-                                        <li>Comprehensive analytics and reporting</li>
-                                        <li>Mobile-friendly interface for students</li>
-                                        <li>Secure and reliable platform</li>
-                                        <li>24/7 customer support</li>
+                                        <li>Scales from 15 to 1000+ students</li>
+                                        <li>Transparent monthly pricing pay for what you use</li>
+                                        <li>Perfect for private schools, academies, chains</li>
+                                        <li>Includes Google Classroom&nbsp;integration</li>
                                     </ul>
                                     <div class="highlight-box">
-                                        <h3>Perfect for All Classroom Sizes</h3>
-                                        <p>Whether you're teaching a small group or managing a large lecture hall, our flexible pricing adapts to your needs. Pay only for what you use!</p>
+                                        <h3>Get Started from Just €52/month</h3>
+                                        <p>Includes 15 students. Flexible pricing as you grow.&nbsp;No&nbsp;hidden&nbsp;fees.</p>
                                     </div>
+                                    <h2>How It Works</h2>
+                                    <ul class="features-list">
+                                        <li>Admin purchases package based on student count</li>
+                                        <li>Add multiple teachers to manage classes</li>
+                                        <li>Enroll students and assign activities</li>
+                                        <li>Track school-wide performance&nbsp;and&nbsp;analytics</li>
+                                    </ul>
                                     <h2>Key Features</h2>
                                     <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
                                     <ul class="features-list">
-                                        <li>Multiple question types (MCQ, True/False, Fill-in-the-blank)</li>
-                                        <li>Automated grading and instant feedback</li>
-                                        <li>Customizable quiz settings and time limits</li>
-                                        <li>Student performance analytics</li>
-                                        <li>Export results to various formats</li>
-                                        <li>Integration with popular LMS platforms</li>
+                                        <li>Overview of classes, faculty, and students</li>
+                                        <li>Real-time tracking and billing visibility</li>
+                                        <li>Role-based permissions for teachers and students</li>
+                                        <li>Access to Collections, Billing, and Tailor Hub</li>
+                                        <li>Create Custom Quiz and Enhance&nbsp;quiz&nbsp;using&nbsp;AI</li>
                                     </ul>
                                     <h2>Getting Started</h2>
                                     <p>Setting up your classroom is quick and easy. Simply select the number of students you'll be teaching, choose your package, and start creating engaging quizzes within minutes.</p>
