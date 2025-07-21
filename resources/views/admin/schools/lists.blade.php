@@ -12,7 +12,7 @@
         border-color: transparent;
         width: auto;
         height: auto;
-        padding: 0 8px 0 10px;
+        padding: 8px 15px;
         border-radius: 5px;
         text-decoration: none;
     }
