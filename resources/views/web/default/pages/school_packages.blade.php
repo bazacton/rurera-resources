@@ -1,5 +1,8 @@
 @extends(getTemplate().'.layouts.app')
-
+@push('styles_top')
+    <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+@endpush
 @section('content')
 
 <section class="content-section">
@@ -8,36 +11,34 @@
             <div class="row">
                 <div class="purchase-classroom">
                     <div class="row">
+                        <form class="package-register-form" method="post" action="javascript:;" data-user_subscribed_for="{{isset( $user_subscribed_for )? $user_subscribed_for : 1}}">
+                            {{ csrf_field() }}
                         <div class="col-md-8">
                             <div class="left-content">
-                                <h1>Transform Your School with Rurera</h1>
-                                <p>Empower your educational institution with Rurera all-in-one platform! As a school admin, you can purchase a custom plan that enables you to manage your schools, teachers, and students all in one place.</p>
-                                <h2>Why Choose This Package?</h2>
+                                <h1>Transform Your Classroom with Rurera</h1>
+                                <p>Create engaging quizzes, track student progress, and enhance learning outcomes with our comprehensive educational platform designed specifically for modern classrooms.</p>
+                                <h2>Why Choose Rurera?</h2>
                                 <ul class="features-list">
-                                    <li>Scales from 15 to 1000+ students</li>
-                                    <li>Transparent monthly pricing pay for what you use</li>
-                                    <li>Perfect for private schools, academies, chains</li>
-                                    <li>Includes Google Classroom integration</li>
+                                    <li>Easy-to-use quiz creation tools</li>
+                                    <li>Real-time student progress tracking</li>
+                                    <li>Comprehensive analytics and reporting</li>
+                                    <li>Mobile-friendly interface for students</li>
+                                    <li>Secure and reliable platform</li>
+                                    <li>24/7 customer support</li>
                                 </ul>
                                 <div class="highlight-box">
-                                    <h3>Get Started from Just €52/month</h3>
-                                    <p>Includes 15 students. Flexible pricing as you grow. No hidden fees.</p>
+                                    <h3>Perfect for All Classroom Sizes</h3>
+                                    <p>Whether you're teaching a small group or managing a large lecture hall, our flexible pricing adapts to your needs. Pay only for what you use!</p>
                                 </div>
-                                <h2>How It Works</h2>
-                                <ul class="features-list">
-                                    <li>Admin purchases package based on student count</li>
-                                    <li>Add multiple teachers to manage classes</li>
-                                    <li>Enroll students and assign activities</li>
-                                    <li>Track school-wide performance and analytics</li>
-                                </ul>
                                 <h2>Key Features</h2>
                                 <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
                                 <ul class="features-list">
-                                    <li>Overview of classes, faculty, and students</li>
-                                    <li>Real-time tracking and billing visibility</li>
-                                    <li>Role-based permissions for teachers and students</li>
-                                    <li>Access to Collections, Billing, and Tailor Hub</li>
-                                    <li>Create Custom Quiz and Enhance quiz using AI</li>
+                                    <li>Multiple question types (MCQ, True/False, Fill-in-the-blank)</li>
+                                    <li>Automated grading and instant feedback</li>
+                                    <li>Customizable quiz settings and time limits</li>
+                                    <li>Student performance analytics</li>
+                                    <li>Export results to various formats</li>
+                                    <li>Integration with popular LMS platforms</li>
                                 </ul>
                                 <h2>Getting Started</h2>
                                 <p>Setting up your classroom is quick and easy. Simply select the number of students you'll be teaching, choose your package, and start creating engaging quizzes within minutes.</p>
@@ -75,10 +76,17 @@
                                             <li>Mobile app access</li>
                                         </ul>
                                     </div>
+                                    @php
+                                    $selection_class = (auth()->user())? 'school-package-selection' : 'subscription-school-modal';
+                                    @endphp
+                                    <button itemprop="button" type="submit"  data-type="package_selection"
+                                            class="select-btn {{$selection_class}} btn w-100 " data-toggle="modal" data-target="#subscriptionModal">Get Started Now
+                                    </button>
                                     <button class="select-btn" onclick="selectPackage()">Get Started Now</button>
                                 </div>
                             </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -269,6 +277,41 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade lms-choose-membership" id="subscriptionModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-toggle="modal" data-target="#leave-option-modal"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+                <div class="tab-content subscription-content" id="nav-tabContent">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade leave-option-modal" id="leave-option-modal" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body p-30">
+                <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
+                    <span class="img-box">
+                        <img src="/assets/default/img/leave-img.png" height="128" width="128" alt="leave-image">
+                    </span>
+                    <h2 class="mb-10">Wait! Don’t Miss Out on Your Free Access!</h2>
+                    <p class="mb-30">Leaving now means losing your complimentary access . Are you sure you want to continue?</p>
+                    <div class="leave-option-control d-flex align-items-center justify-content-center">
+                        <button type="button" data-toggle="modal" data-target="#subscriptionModal" data-dismiss="modal">Leave Anyway</button>
+                        <button type="button" class="stay-btn" data-target="#leave-option-modal" data-toggle="modal">Keep My Free Access</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -277,67 +320,28 @@
 <script>
     let currentStudentCount = 15;
     const packages = {
-        starter: {
-            name: "Starter Plan",
-            minStudents: 1,
-            maxStudents: 25,
-            pricePerStudent: 1.93,
-            basePrice: 29,
-            features: [
-                "Basic quiz creation",
-                "Student progress tracking", 
-                "Email support",
-                "Basic analytics",
-                "Mobile app access"
-            ]
-        },
-        professional: {
-            name: "Professional Plan",
-            minStudents: 26,
-            maxStudents: 75,
-            pricePerStudent: 1.58,
-            basePrice: 79,
-            features: [
-                "Advanced quiz features",
-                "Detailed analytics",
-                "Priority support",
-                "Custom branding",
-                "Grade book integration",
-                "Video tutorials"
-            ]
-        },
-        enterprise: {
-            name: "Enterprise Plan", 
-            minStudents: 76,
-            maxStudents: 200,
-            pricePerStudent: 1.33,
-            basePrice: 199,
-            features: [
-                "Unlimited quiz creation",
-                "Advanced reporting",
-                "24/7 phone support",
-                "API access",
-                "Multi-teacher accounts",
-                "Custom integrations",
-                "Training sessions"
-            ]
-        },
-        premium: {
-            name: "Premium Plan",
-            minStudents: 201,
-            maxStudents: 1000,
-            pricePerStudent: 1.00,
-            basePrice: 399,
-            features: [
-                "Everything in Enterprise",
-                "White-label solution",
-                "Dedicated account manager",
-                "Custom development",
-                "Advanced security",
-                "SLA guarantee",
-                "On-site training"
-            ]
-        }
+        @if(!empty($subscribes))
+            @foreach( $subscribes as $subscribeObj)
+        {{$subscribeObj->id}}: {
+                name: "{{$subscribeObj->getTitleAttribute()}}",
+                minStudents: {{$subscribeObj->min_students}},
+                maxStudents: {{$subscribeObj->max_students}},
+                pricePerStudent: {{$subscribeObj->price_per_student}},
+                basePrice: {{$subscribeObj->base_price}}/30,
+                package_id: {{$subscribeObj->id}},
+                features: [
+                    "Timestables",
+                    "Books",
+                    "SATS",
+                    "Spells",
+                    "Student progress tracking",
+                    "Email support",
+                    "Basic analytics",
+                    "Mobile app access"
+                ]
+            },
+            @endforeach
+        @endif
     };
     function getCurrentPackage(studentCount) {
         for (const [key, pkg] of Object.entries(packages)) {
@@ -349,12 +353,14 @@
     }
     function calculatePrice(studentCount) {
         const pkg = getCurrentPackage(studentCount);
-        return Math.round(pkg.basePrice + (studentCount - pkg.minStudents) * pkg.pricePerStudent);
+        var basePrice = parseFloat(pkg.basePrice).toFixed(2);
+        return Math.round(((studentCount*pkg.pricePerStudent)+parseFloat(basePrice))*30);
+        //return Math.round(pkg.basePrice + (studentCount) * pkg.pricePerStudent);
     }
     function updatePackageDisplay() {
         const pkg = getCurrentPackage(currentStudentCount);
         const totalPrice = calculatePrice(currentStudentCount);
-        const pricePerStudent = (totalPrice / currentStudentCount).toFixed(2);
+        const pricePerStudent = pkg.pricePerStudent.toFixed(2);//(totalPrice / currentStudentCount).toFixed(2);
         document.getElementById('packageTier').textContent = pkg.name;
         document.getElementById('studentCount').textContent = currentStudentCount;
         document.getElementById('price').textContent = `€${totalPrice}`;
@@ -370,7 +376,7 @@
         setTimeout(() => {
             document.getElementById('priceSection').classList.remove('price-update');
         }, 500);
-        document.getElementById('decreaseBtn').disabled = currentStudentCount <= 15;
+        document.getElementById('decreaseBtn').disabled = currentStudentCount <= 1;
         document.getElementById('increaseBtn').disabled = currentStudentCount >= 1000;
     }
     function changeStudentCount(change) {
