@@ -10,84 +10,84 @@
         <div class="container">
             <div class="row">
                 <div class="purchase-classroom">
-                    <div class="row">
                         <form class="package-register-form" method="post" action="javascript:;" data-user_subscribed_for="{{isset( $user_subscribed_for )? $user_subscribed_for : 1}}">
                             {{ csrf_field() }}
-                        <div class="col-md-8">
-                            <div class="left-content">
-                                <h1>Transform Your Classroom with Rurera</h1>
-                                <p>Create engaging quizzes, track student progress, and enhance learning outcomes with our comprehensive educational platform designed specifically for modern classrooms.</p>
-                                <h2>Why Choose Rurera?</h2>
-                                <ul class="features-list">
-                                    <li>Easy-to-use quiz creation tools</li>
-                                    <li>Real-time student progress tracking</li>
-                                    <li>Comprehensive analytics and reporting</li>
-                                    <li>Mobile-friendly interface for students</li>
-                                    <li>Secure and reliable platform</li>
-                                    <li>24/7 customer support</li>
-                                </ul>
-                                <div class="highlight-box">
-                                    <h3>Perfect for All Classroom Sizes</h3>
-                                    <p>Whether you're teaching a small group or managing a large lecture hall, our flexible pricing adapts to your needs. Pay only for what you use!</p>
-                                </div>
-                                <h2>Key Features</h2>
-                                <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
-                                <ul class="features-list">
-                                    <li>Multiple question types (MCQ, True/False, Fill-in-the-blank)</li>
-                                    <li>Automated grading and instant feedback</li>
-                                    <li>Customizable quiz settings and time limits</li>
-                                    <li>Student performance analytics</li>
-                                    <li>Export results to various formats</li>
-                                    <li>Integration with popular LMS platforms</li>
-                                </ul>
-                                <h2>Getting Started</h2>
-                                <p>Setting up your classroom is quick and easy. Simply select the number of students you'll be teaching, choose your package, and start creating engaging quizzes within minutes.</p>
-                                <div class="highlight-box">
-                                    <h3>Free Trial Available</h3>
-                                    <p>Try Rurera risk-free for 14 days. No credit card required. Experience all features and see how it transforms your teaching.</p>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="left-content">
+                                    <h1>Transform Your Classroom with Rurera</h1>
+                                    <p>Create engaging quizzes, track student progress, and enhance learning outcomes with our comprehensive educational platform designed specifically for modern classrooms.</p>
+                                    <h2>Why Choose Rurera?</h2>
+                                    <ul class="features-list">
+                                        <li>Easy-to-use quiz creation tools</li>
+                                        <li>Real-time student progress tracking</li>
+                                        <li>Comprehensive analytics and reporting</li>
+                                        <li>Mobile-friendly interface for students</li>
+                                        <li>Secure and reliable platform</li>
+                                        <li>24/7 customer support</li>
+                                    </ul>
+                                    <div class="highlight-box">
+                                        <h3>Perfect for All Classroom Sizes</h3>
+                                        <p>Whether you're teaching a small group or managing a large lecture hall, our flexible pricing adapts to your needs. Pay only for what you use!</p>
+                                    </div>
+                                    <h2>Key Features</h2>
+                                    <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
+                                    <ul class="features-list">
+                                        <li>Multiple question types (MCQ, True/False, Fill-in-the-blank)</li>
+                                        <li>Automated grading and instant feedback</li>
+                                        <li>Customizable quiz settings and time limits</li>
+                                        <li>Student performance analytics</li>
+                                        <li>Export results to various formats</li>
+                                        <li>Integration with popular LMS platforms</li>
+                                    </ul>
+                                    <h2>Getting Started</h2>
+                                    <p>Setting up your classroom is quick and easy. Simply select the number of students you'll be teaching, choose your package, and start creating engaging quizzes within minutes.</p>
+                                    <div class="highlight-box">
+                                        <h3>Free Trial Available</h3>
+                                        <p>Try Rurera risk-free for 14 days. No credit card required. Experience all features and see how it transforms your teaching.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="right-package">
-                                <div class="package-card">
-                                    <div class="package-tier" id="packageTier">Starter Plan</div>
-                                    <h3 class="package-title">School Package</h3>
-                                    <div class="student-selector">
-                                        <label>Number of Students:</label>
-                                        <div class="student-counter">
-                                            <button class="counter-btn" id="decreaseBtn" onclick="changeStudentCount(-1)">−</button>
-                                            <div class="student-count" id="studentCount">15</div>
-                                            <button class="counter-btn" id="increaseBtn" onclick="changeStudentCount(1)">+</button>
+                            <div class="col-md-4">
+                                <div class="right-package">
+                                    <div class="package-card">
+                                        <div class="package-tier" id="packageTier">Starter Plan</div>
+                                        <h3 class="package-title">School Package</h3>
+                                        <div class="student-selector">
+                                            <label>Number of Students:</label>
+                                            <div class="student-counter">
+                                                <button class="counter-btn" id="decreaseBtn" onclick="changeStudentCount(-1)">−</button>
+                                                <div class="student-count" id="studentCount">15</div>
+                                                <button class="counter-btn" id="increaseBtn" onclick="changeStudentCount(1)">+</button>
+                                            </div>
                                         </div>
+                                        <div class="price-section" id="priceSection">
+                                            <div class="price" id="price">€29</div>
+                                            <div class="price-period">per month</div>
+                                            <div class="price-per-student" id="pricePerStudent">€1.93 per student</div>
+                                        </div>
+                                        <div class="package-features">
+                                            <h3>What's Included:</h3>
+                                            <ul id="featuresList">
+                                                <li>Basic quiz creation</li>
+                                                <li>Student progress tracking</li>
+                                                <li>Email support</li>
+                                                <li>Basic analytics</li>
+                                                <li>Mobile app access</li>
+                                            </ul>
+                                        </div>
+                                        @php
+                                        $selection_class = (auth()->user())? 'school-package-selection' : 'subscription-school-modal';
+                                        @endphp
+                                        <button itemprop="button" type="submit"  data-type="package_selection"
+                                                class="select-btn {{$selection_class}} btn w-100 " data-toggle="modal" data-target="#subscriptionModal">Get Started Now
+                                        </button>
+                                        <button class="select-btn" onclick="selectPackage()">Get Started Now</button>
                                     </div>
-                                    <div class="price-section" id="priceSection">
-                                        <div class="price" id="price">€29</div>
-                                        <div class="price-period">per month</div>
-                                        <div class="price-per-student" id="pricePerStudent">€1.93 per student</div>
-                                    </div>
-                                    <div class="package-features">
-                                        <h3>What's Included:</h3>
-                                        <ul id="featuresList">
-                                            <li>Basic quiz creation</li>
-                                            <li>Student progress tracking</li>
-                                            <li>Email support</li>
-                                            <li>Basic analytics</li>
-                                            <li>Mobile app access</li>
-                                        </ul>
-                                    </div>
-                                    @php
-                                    $selection_class = (auth()->user())? 'school-package-selection' : 'subscription-school-modal';
-                                    @endphp
-                                    <button itemprop="button" type="submit"  data-type="package_selection"
-                                            class="select-btn {{$selection_class}} btn w-100 " data-toggle="modal" data-target="#subscriptionModal">Get Started Now
-                                    </button>
-                                    <button class="select-btn" onclick="selectPackage()">Get Started Now</button>
                                 </div>
                             </div>
                         </div>
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
