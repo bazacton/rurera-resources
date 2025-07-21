@@ -4,6 +4,21 @@
 
 @endpush
 
+@push('styles_top')
+<style type="text/css">
+    .admin_role .simple-btn {
+        background-color: var(--blue);
+        color: var(--white);
+        border-color: transparent;
+        width: auto;
+        height: auto;
+        padding: 0 8px 0 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+</style>
+@endpush
+
 @section('content')
 <section class="section skeleton">
     <div class="section-header">
