@@ -370,7 +370,7 @@
         setTimeout(() => {
             document.getElementById('priceSection').classList.remove('price-update');
         }, 500);
-        document.getElementById('decreaseBtn').disabled = currentStudentCount <= 1;
+        document.getElementById('decreaseBtn').disabled = currentStudentCount <= 15;
         document.getElementById('increaseBtn').disabled = currentStudentCount >= 1000;
     }
     function changeStudentCount(change) {
