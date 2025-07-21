@@ -10,11 +10,11 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="left-content">
-                                <h1>Transform Your Classroom with Rurera</h1>
+                                <h1>Transform Your School with Rurera</h1>
                                 <p>Empower your educational institution with Rurera all-in-one platform! As a school admin, you can purchase a custom plan that enables you to manage your schools, teachers, and students all in one place.</p>
                                 <h2>Why Choose This Package?</h2>
                                 <ul class="features-list">
-                                    <li>Scales from 10 to 1000+ students</li>
+                                    <li>Scales from 15 to 1000+ students</li>
                                     <li>Transparent monthly pricing pay for what you use</li>
                                     <li>Perfect for private schools, academies, chains</li>
                                     <li>Includes Google Classroom integration</li>
