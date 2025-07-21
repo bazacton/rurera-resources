@@ -23,6 +23,13 @@
                                     <h3>Get Started from Just €52/month</h3>
                                     <p>Includes 15 students. Flexible pricing as you grow. No hidden fees.</p>
                                 </div>
+                                <h2>How It Works</h2>
+                                <ul class="features-list">
+                                    <li>Admin purchases package based on student count</li>
+                                    <li>Add multiple teachers to manage classes</li>
+                                    <li>Enroll students and assign activities</li>
+                                    <li>Track school-wide performance and analytics</li>
+                                </ul>
                                 <h2>Key Features</h2>
                                 <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
                                 <ul class="features-list">
