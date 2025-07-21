@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="left-content">
-                                    <h1>Transform Your Classroom with Rurera</h1>
+                                    <h1>Transform Your School with Rurera</h1>
                                     <p>Create engaging quizzes, track student progress, and enhance learning outcomes with our comprehensive educational platform designed specifically for modern classrooms.</p>
                                     <h2>Why Choose Rurera?</h2>
                                     <ul class="features-list">
