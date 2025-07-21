@@ -12,18 +12,16 @@
                             <div class="left-content">
                                 <h1>Transform Your Classroom with Rurera</h1>
                                 <p>Empower your educational institution with Rurera all-in-one platform! As a school admin, you can purchase a custom plan that enables you to manage your schools, teachers, and students all in one place.</p>
-                                <h2>Why Choose Rurera?</h2>
+                                <h2>Why Choose This Package?</h2>
                                 <ul class="features-list">
-                                    <li>Easy-to-use quiz creation tools</li>
-                                    <li>Real-time student progress tracking</li>
-                                    <li>Comprehensive analytics and reporting</li>
-                                    <li>Mobile-friendly interface for students</li>
-                                    <li>Secure and reliable platform</li>
-                                    <li>24/7 customer support</li>
+                                    <li>Scales from 10 to 1000+ students</li>
+                                    <li>Transparent monthly pricing pay for what you use</li>
+                                    <li>Perfect for private schools, academies, chains</li>
+                                    <li>Includes Google Classroom integration</li>
                                 </ul>
                                 <div class="highlight-box">
-                                    <h3>Perfect for All Classroom Sizes</h3>
-                                    <p>Whether you're teaching a small group or managing a large lecture hall, our flexible pricing adapts to your needs. Pay only for what you use!</p>
+                                    <h3>Get Started from Just €52/month</h3>
+                                    <p>Includes 15 students. Flexible pricing as you grow. No hidden fees.</p>
                                 </div>
                                 <h2>Key Features</h2>
                                 <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
