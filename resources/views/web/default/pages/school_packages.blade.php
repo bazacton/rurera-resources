@@ -11,7 +11,7 @@
                         <div class="col-md-8">
                             <div class="left-content">
                                 <h1>Transform Your Classroom with Rurera</h1>
-                                <p>Create engaging quizzes, track student progress, and enhance learning outcomes with our comprehensive educational platform designed specifically for modern classrooms.</p>
+                                <p>Empower your educational institution with Rurera all-in-one platform! As a school admin, you can purchase a custom plan that enables you to manage your schools, teachers, and students all in one place.</p>
                                 <h2>Why Choose Rurera?</h2>
                                 <ul class="features-list">
                                     <li>Easy-to-use quiz creation tools</li>
