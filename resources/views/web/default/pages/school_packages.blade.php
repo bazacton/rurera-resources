@@ -33,12 +33,11 @@
                                 <h2>Key Features</h2>
                                 <p>Our platform includes everything you need to create, manage, and analyze student assessments:</p>
                                 <ul class="features-list">
-                                    <li>Multiple question types (MCQ, True/False, Fill-in-the-blank)</li>
-                                    <li>Automated grading and instant feedback</li>
-                                    <li>Customizable quiz settings and time limits</li>
-                                    <li>Student performance analytics</li>
-                                    <li>Export results to various formats</li>
-                                    <li>Integration with popular LMS platforms</li>
+                                    <li>Overview of classes, faculty, and students</li>
+                                    <li>Real-time tracking and billing visibility</li>
+                                    <li>Role-based permissions for teachers and students</li>
+                                    <li>Access to Collections, Billing, and Tailor Hub</li>
+                                    <li>Create Custom Quiz and Enhance quiz using AI</li>
                                 </ul>
                                 <h2>Getting Started</h2>
                                 <p>Setting up your classroom is quick and easy. Simply select the number of students you'll be teaching, choose your package, and start creating engaging quizzes within minutes.</p>
