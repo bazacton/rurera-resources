@@ -69,6 +69,7 @@
                                     <th class="text-left">No of Classes</th>
                                     <th class="text-left">No of Faculty</th>
                                     <th class="text-left">No of Students</th>
+                                    <th class="text-left">Membership</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
                                      <th><!--{{ trans('admin/main.actions') }}--></th>
@@ -98,6 +99,19 @@
                                     </td>
                                     <td class="text-left">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            @if(isset($schoolData->schoolSubscriptions->id))
+                                                {{$schoolData->schoolSubscriptions->subscribe->title}}
+                                            @else
+                                                @if(isset($schoolData->schoolSubscriptionInvoice->id))
+                                                    <a target="_blank" href="{{$schoolData->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
+                                                        Invoice
+                                                    </a>
+                                                @endif
+                                            @endif
+                                        </div>
+                                    </td>
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             {{ $schoolData->user->get_full_name() }}
                                         </div>
                                     </td>
@@ -119,6 +133,12 @@
                                                 @can('admin_schools_delete')
                                                     @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
                                                 @endcan
+
+                                                @if(auth()->user()->isAdminRole())
+                                                    <a data-id="{{ $schoolData->id }}" href="javascript:;" class="btn-transparent btn-sm text-primary custom-package-modal-btn" data-toggle="tooltip" data-placement="top" title="Custom Package">
+                                                        <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                         @endif
@@ -181,6 +201,29 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade custom-package-modal" id="custom-package-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body student-modal-box">
+
+                <div id="section4" class="modal-section custom-package-block active">
+                    <form action="/admin/schools/store"
+                          method="Post" class="school-form">
+                        {{csrf_field()}}
+                        <input type="hidden" name="redirect_url" class="redirect_url" value="">
+                        sdfsdf
+                        <div class="teacher-buttons mt-30">
+                            <button type="submit" class="btn btn-primary edit-single-student-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="messages-layout-student-block rurera-hide mt-30"></div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -202,11 +245,30 @@
             $("."+form_class)[0].reset();
         });
 
+        $('body').on('click', '.custom-package-modal-btn', function (e) {
+            var school_id = $(this).attr('data-id');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/schools/edit_school_package',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'school_id':school_id},
+                success: function (return_data) {
+                    $(".custom-package-modal").modal('show');
+                    $('.custom-package-block').html(return_data);
+                }
+            });
+
+        });
+
         $('body').on('click', '.new-school-btn', function (e) {
             $(".school-add-modal").modal('show');
             var redirect_url = window.location.href;
             $(".redirect_url").val(redirect_url);
         });
+
+
 
         $('body').on('click', '.edit-school-model', function (e) {
             var school_id = $(this).attr('data-id');
