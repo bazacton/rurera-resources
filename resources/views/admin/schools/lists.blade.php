@@ -4,19 +4,6 @@
 
 @endpush
 
-@push('styles_top')
-<style type="text/css">
-    .admin_role .simple-btn {
-        background-color: var(--blue);
-        color: var(--white);
-        border-color: transparent;
-        padding: 8px 15px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-</style>
-@endpush
-
 @section('content')
 <section class="section skeleton">
     <div class="section-header">
@@ -92,7 +79,7 @@
                                 <tr>
                                     <td>
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <span>{{ $schoolData->title }}</span>
+                                            <span><a href="/admin/schools/{{$schoolData->id}}/edit">{{ $schoolData->title }}</a></span>
                                         </div>
                                     </td>
                                     <td>
@@ -117,7 +104,7 @@
                                             @else
                                                 @if(isset($schoolData->schoolSubscriptionInvoice->id))
                                                     <a target="_blank" href="{{$schoolData->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
-                                                        Invoice
+                                                        Invoice - {{$schoolData->schoolSubscriptionInvoice->id}}
                                                     </a>
                                                 @endif
                                             @endif
@@ -149,7 +136,7 @@
 
                                                 @if(auth()->user()->isAdminRole())
                                                     <a data-id="{{ $schoolData->id }}" href="javascript:;" class="btn-transparent btn-sm text-primary custom-package-modal-btn" data-toggle="tooltip" data-placement="top" title="Custom Package">
-                                                        <i class="fas fa-cube ml-0"></i>
+                                                        <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
                                                     </a>
                                                 @endif
                                             </div>
@@ -217,7 +204,7 @@
 
 
 <div class="modal fade custom-package-modal" id="custom-package-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body student-modal-box">
 
