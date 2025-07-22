@@ -2566,6 +2566,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .admin_teacher_role .select2-container {
     z-index: 99999 !important;
 }
+.admin_teacher_role.sidebar-show .select2-container {
+    z-index: 0 !important;
+}
 .admin_teacher_role .select2-container .select2-dropdown {
     border-color: #ddd;
 }
