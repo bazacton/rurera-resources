@@ -1070,22 +1070,22 @@ p.svga-credit {
 		width: 100%;
 		position: initial;
 		height: auto !important;
-		padding-top: 810px;
+		padding-top: 0;
 		padding-left: 0;
 		padding-right: 0;
 		display: table;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
-		position: absolute;
+		position: relative;
 		top: 0;
-		padding-top: 380px;
+		padding-top: 0;
 		display: table;
 		padding-left: 0;
 		padding-right: 0;
 	}
 	.mobile-avar-view .svga-vert-order-svgcanvas {
-		position: absolute;
+		position: relative;
 		top: 0;
 		width: 100%;
 	}
@@ -1139,7 +1139,7 @@ p.svga-credit {
 	.mobile-avar-view .row-colors #svga-custom-color {
 		width: 12.5%;
 		padding-bottom: 13%;
-		position: absolute;
+		position: relative;
 		z-index: 100;
 		bottom: 3px;
 		right: 3px;
