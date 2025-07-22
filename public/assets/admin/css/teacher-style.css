@@ -6571,6 +6571,9 @@ button.print-download-btn {
     .admin_teacher_role .main-sidebar ~ .main-content {
         padding-left: 265px;
     }
+    .admin_teacher_role.sidebar-mini .main-sidebar ~ .main-content {
+        padding-left: 90px;
+    }
 }
 
 @media screen and (max-width: 992px) {
