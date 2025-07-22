@@ -52,15 +52,24 @@
         <script>
         $(document).ready(function () {
             function setMobilePadding() {
-            if ($(window).width() <= 767) {
-                var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
-                $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentHeight + 'px');
-            } else {
-                $('.mobile-avar-view .svga-col-right').css('padding-top', '');
-            }
+                if ($(window).width() <= 767) {
+                    var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
+                    $('.mobile-avar-view .svga-col-right').css('padding-top', adjacentHeight + 'px');
+                } else {
+                    $('.mobile-avar-view .svga-col-right').css('padding-top', '');
+                }
             }
 
             setMobilePadding();
+
+            function setMobilePadding() {
+                if ($(window).width() <= 767) {
+                    var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
+                    $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', adjacentHeight + 'px');
+                } else {
+                    $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
+                }
+            }
 
             $(window).on('resize', function () {
             setMobilePadding();
