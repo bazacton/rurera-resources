@@ -1113,6 +1113,7 @@ p.svga-credit {
 		height: auto;
 		margin-top: 10px;
 		position: absolute;
+		z-index: 1;
 	}
 	.mobile-avar-view .row-glob-controls {
 		border: none;
