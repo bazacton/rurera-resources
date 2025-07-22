@@ -1878,7 +1878,9 @@ Tailer Hub Style Start
     border-radius: 5px;
 }
 .bulk-ai-box .select-field:has(.bulk-text) select {
-    padding-right: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
 }
 .bulk-ai-box .select-field:has(.bulk-text):after {
     display: none;
