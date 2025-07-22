@@ -1139,7 +1139,7 @@ p.svga-credit {
 	.mobile-avar-view .row-colors #svga-custom-color {
 		width: 12.5%;
 		padding-bottom: 13%;
-		position: relative;
+		position: absolute;
 		z-index: 100;
 		bottom: 3px;
 		right: 3px;
