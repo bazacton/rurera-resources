@@ -1070,23 +1070,22 @@ p.svga-credit {
 		width: 100%;
 		position: initial;
 		height: auto !important;
-		padding-top: 0;
+		padding-top: 810px;
 		padding-left: 0;
 		padding-right: 0;
 		display: table;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
-		position: relative;
+		position: absolute;
 		top: 0;
-		padding-top: 0;
+		padding-top: 380px;
 		display: table;
 		padding-left: 0;
 		padding-right: 0;
-		height: auto !important;
 	}
 	.mobile-avar-view .svga-vert-order-svgcanvas {
-		position: relative;
+		position: absolute;
 		top: 0;
 		width: 100%;
 	}
@@ -1250,7 +1249,7 @@ p.svga-credit {
 		padding: 0;
 	}
 	#svgAvatars.mobile-avar-view .scroll-wrapper > .scroll-content {
-		max-height: fit-content !important;
+		max-height: 250px !important;
 		height: auto !important;
 	}
 	.mobile-avar-view  #svga-message, .mobile-avar-view  #svga-gravatar-message {
