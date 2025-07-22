@@ -1074,6 +1074,7 @@ p.svga-credit {
 		padding-left: 0;
 		padding-right: 0;
 		display: table;
+		margin-top: 45px;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
@@ -1283,7 +1284,8 @@ p.svga-credit {
 	}
 }
 @media (max-width: 576px) {
-	.mobile-avar-view .svga-col-right {
+	.mobile-avar-view .svga-col-right,
+	.mobile-avar-view .svga-col-left {
 		margin-top: 0;
 	}
 }
