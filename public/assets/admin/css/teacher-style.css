@@ -6585,6 +6585,7 @@ button.print-download-btn {
     .admin_teacher_role .navbar {min-height: auto;}
     .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item,
     .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
+    .admin_teacher_role .section .section-header .breadcrumb-item+.breadcrumb-item::before,
     .admin_teacher_role .section .section-header h1 {color: currentcolor;}
 }
 
