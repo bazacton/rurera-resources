@@ -1292,6 +1292,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 }
 .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active {
     border-bottom-color: var(--blue);
+    outline: none;
 }
 .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active .tab-title,
 .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active i {
