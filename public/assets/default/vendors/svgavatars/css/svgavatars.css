@@ -1083,6 +1083,7 @@ p.svga-credit {
 		display: table;
 		padding-left: 0;
 		padding-right: 0;
+		height: auto !important;
 	}
 	.mobile-avar-view .svga-vert-order-svgcanvas {
 		position: relative;
