@@ -6583,7 +6583,7 @@ button.print-download-btn {
     .admin_teacher_role .main-sidebar {z-index: 891;}
     .admin_teacher_role .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {z-index: 10;}
     .admin_teacher_role .navbar {min-height: auto;}
-    .section .section-header .section-header-breadcrumb .breadcrumb-item,
+    .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item,
     .admin_teacher_role .section .section-header h1 {color: currentcolor;}
 }
 
