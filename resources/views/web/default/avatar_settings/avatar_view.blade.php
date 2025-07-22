@@ -62,7 +62,7 @@
 
             setMobilePadding();
 
-            function setMobilePadding() {
+            function setMobilePosition() {
                 if ($(window).width() <= 767) {
                     var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
                     $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', adjacentHeight + 'px');
@@ -70,9 +70,11 @@
                     $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
                 }
             }
+            setMobilePosition();
 
             $(window).on('resize', function () {
-            setMobilePadding();
+                setMobilePadding();
+                setMobilePosition();
             });
         });
         </script>
