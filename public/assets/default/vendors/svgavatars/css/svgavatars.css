@@ -1284,9 +1284,11 @@ p.svga-credit {
 	}
 }
 @media (max-width: 576px) {
-	.mobile-avar-view .svga-col-right,
-	.mobile-avar-view .svga-col-left {
+	.mobile-avar-view .svga-col-right {
 		margin-top: 0;
+	}
+	.mobile-avar-view .svga-col-left {
+		margin-top: 10px;
 	}
 }
 
