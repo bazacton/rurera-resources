@@ -1083,6 +1083,7 @@ p.svga-credit {
 		display: table;
 		padding-left: 0;
 		padding-right: 0;
+		margin-top: 30px;
 	}
 	.mobile-avar-view .svga-vert-order-svgcanvas {
 		position: absolute;
@@ -1279,6 +1280,11 @@ p.svga-credit {
 	}
 	.mobile-avar-view .svga-row.rurera-hide-sm {
 		display: none;
+	}
+}
+@media (max-width: 576px) {
+	.mobile-avar-view .svga-col-right {
+		margin-top: 0;
 	}
 }
 
