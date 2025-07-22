@@ -2541,7 +2541,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     line-height: normal !important;
     color: #495057;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 .general-knowledge-modal .text-holder > ul li .form-group .select2-selection__arrow {
     top: 50% !important;
@@ -2567,6 +2567,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 .admin_teacher_role .select2-container {
     z-index: 99999 !important;
+    min-width: 150px;
 }
 .admin_teacher_role.sidebar-show .select2-container {
     z-index: 0 !important;
