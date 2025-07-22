@@ -1115,6 +1115,9 @@ p.svga-credit {
 		position: absolute;
 		z-index: 1;
 	}
+	.mobile-avar-view.svga-vert-order-bodyzones {
+		margin-top: 15px;
+	}
 	.mobile-avar-view .row-glob-controls {
 		border: none;
 	}
