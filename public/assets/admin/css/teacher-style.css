@@ -6372,37 +6372,6 @@ button.print-download-btn {
     z-index: 1;
 }
 /* Teacher Dashboard Header Style End */
-
-/* Teacher Dashboard Tabs Style Start */
-.admin_teacher_role .admin-rurera-tabs-holder {
-    background-color: var(--white);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
-    padding: 15px 25px 0;
-    margin: 0 0 30px;
-    border-radius: 10px;
-}
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link {
-    padding: 0 0 10px;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px 10px;
-    background-color: inherit;
-}
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title,
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
-    color: #333;
-}
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
-    font-size: 14px;
-}
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active {
-    border-bottom-color: var(--blue);
-}
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active .tab-title,
-.admin_teacher_role .admin-rurera-tabs-holder .admin-rurera-tabs.nav-pills li .nav-link.active i {
-    color: var(--blue);
-}
-/* Teacher Dashboard Tabs Style End */
 .admin_teacher_role .main-content {
     padding-right: 20px;
     background-color: inherit;
