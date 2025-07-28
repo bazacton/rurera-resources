@@ -3066,6 +3066,9 @@ span.field-separated span:after {
     max-height: 1390px;
     padding: 0 15px 15px;
 }
+.featured-list-sidebar .text-box {
+    width: calc(100% - 100px);
+}
 .listing-card {
     position: relative;
 }
