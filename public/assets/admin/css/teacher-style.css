@@ -1741,7 +1741,7 @@ Tailer Hub Style Start
 }
 .rureraform-search-field {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-between;
@@ -3231,7 +3231,8 @@ span.field-separated span:after {
     line-height: normal;
 }
 .rureraform-search-field:has(.search-filters) .input-field {
-    width: 100%;
+    width: 33%;
+    flex: 0 0 33%;
 }
 .rureraform-search-field:has(.search-filters) {
     flex-wrap: nowrap;
