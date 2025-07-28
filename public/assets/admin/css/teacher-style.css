@@ -3231,14 +3231,14 @@ span.field-separated span:after {
     line-height: normal;
 }
 .rureraform-search-field:has(.search-filters) .input-field {
-    width: 33%;
-    flex: 0 0 33%;
+    width: 37%;
+    flex: 0 0 37%;
 }
 .rureraform-search-field:has(.search-filters) {
     flex-wrap: nowrap;
 }
 .rureraform-search-field .search-filters {
-    width: 100%;
+    width: calc(100% - 38%);
     flex-wrap: nowrap;
 }
 .rureraform-search-field .search-filters .select-field {
