@@ -3181,7 +3181,7 @@ span.field-separated span:after {
 .featured-filters select {
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     min-width: 120px;
 }
 .featured-controls {
