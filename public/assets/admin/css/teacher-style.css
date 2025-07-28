@@ -3252,7 +3252,7 @@ span.field-separated span:after {
 }
 .questions-header-inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 15px;
@@ -3261,6 +3261,7 @@ span.field-separated span:after {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
+    width: calc(100% - 95px);
 }
 .questions-header-inner h5 {
     display: inline-flex;
