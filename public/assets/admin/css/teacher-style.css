@@ -3244,7 +3244,6 @@ span.field-separated span:after {
 }
 .rureraform-search-field .search-filters {
     width: calc(100% - 38%);
-    flex-wrap: nowrap;
 }
 .rureraform-search-field .search-filters .select-field {
     padding: 11px 10px;
