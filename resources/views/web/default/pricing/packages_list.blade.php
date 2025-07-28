@@ -6,17 +6,17 @@ if( empty( $subscribes )){
 		$subscribes = $subscribes->whereIn('id', $packages_only);
 	}
 	$subscribes = $subscribes->get();
-	
+
 }
 
 
-$selected_package = isset( $selected_package )? $selected_package : 0; $subscribed_childs = isset( $subscribed_childs )? $subscribed_childs : 0; $purchase_title = ( $subscribed_childs == 0)? 'Try for free' : 'Subscribe'; 
+$selected_package = isset( $selected_package )? $selected_package : 0; $subscribed_childs = isset( $subscribed_childs )? $subscribed_childs : 0; $purchase_title = ( $subscribed_childs == 0)? 'Try for free' : 'Subscribe';
 @endphp
 @if(!empty($subscribes) and !$subscribes->isEmpty())
 @foreach($subscribes as $subscribe)
-@php 
-$purchase_title = ( $subscribed_childs == 0)? 'Try for free' : 'Subscribe'; 
-$is_subscribed = (isset( $selected_package ) && $selected_package == $subscribe->id)? true : false; 
+@php
+$purchase_title = ( $subscribed_childs == 0)? 'Try for free' : 'Subscribe';
+$is_subscribed = (isset( $selected_package ) && $selected_package == $subscribe->id)? true : false;
 $purchase_title = ($is_subscribed == true)? 'Subscribed' : $purchase_title;
 $subscribe_btn_class = ($is_subscribed == true)? 'disabled-style disabled-div' : '';
 $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
@@ -40,11 +40,11 @@ $show_details = isset( $show_details )? $show_details : true;
                     class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / month</span>
         </div>
         <button itemprop="button" type="submit" data-user_id="{{isset($childObj->id)?$childObj->id : 0}}" data-type="package_selection" data-id="{{$subscribe->id}}"
-                class="{{$selection_class}} btn w-100 {{$subscribe_btn_class}}" data-toggle="modal" data-target="#subscriptionModal">{{$purchase_title}}
+                class="{{$selection_class}} btn w-100 {{$subscribe_btn_class}}">{{$purchase_title}}
         </button>
-		
+
 		@if($show_details === true)
-		
+
 			<span class="plan-label d-block font-weight-500 pt-20">
 												Suitable for:
 											</span>
@@ -100,12 +100,12 @@ $show_details = isset( $show_details )? $show_details : true;
         $(".packages-prices").each(function(){
            var package_price = $(this).attr('data-package_price');
 		   var package_id = $(this).attr('data-package_id');
-		   
+
 		   if(package_id == selected_package && user_subscribed_for == package_month){
 			   $(this).closest('.subscribe-plan').find('.package-selection').addClass('disabled-style');
 			   $(this).closest('.subscribe-plan').find('.package-selection').addClass('disabled-div');
 		   }
-		   
+
            var package_price_org = package_price;
            var discount_price = parseFloat(parseFloat(package_price))*package_discount / 100;
            var package_price = parseFloat(parseFloat(package_price))-discount_price;
