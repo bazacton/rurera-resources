@@ -1466,6 +1466,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     text-transform: uppercase;
     font-weight: 600;
 }
+.teacher-table table th:has(.check-box), .teacher-table table td:has(.check-box) {
+    white-space: nowrap;
+}
 .teacher-table table tr:nth-child(even) {
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
