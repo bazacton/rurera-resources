@@ -2054,8 +2054,8 @@ output {font-weight: bold; color: #333;}
 .topic-parts-data .table-responsive:after {
     content: "";
     position: absolute;
-    right: 10px;
-    top: 0;
+    right: -10px;
+    top: 50px;
     height: 12px;
     width: 12px;
     border: 2px solid #ccc;
@@ -2073,7 +2073,7 @@ output {font-weight: bold; color: #333;}
     visibility: hidden;
 }
 .topic-parts-data .table-responsive:after {
-    right: 20px;
+    right: 0;
 }
 
 @-webkit-keyframes bounceAlpha {
