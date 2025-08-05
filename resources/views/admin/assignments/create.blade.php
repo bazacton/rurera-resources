@@ -391,8 +391,101 @@
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                                         <div class="quiz-ajax-fields"></div>
                                                     </div>
+
+
+
                                                 </div>
                                             </div>
+
+                                            <div class="assignment_topic_type_fields vocabulary_fields">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="form-group">
+                                                            <label class="input-label">Practice Type</label>
+                                                            <div class="input-group">
+                                                                <div class="radio-buttons">
+
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Hunts" checked>
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Word Hunts</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Search">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Word Search</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Cloud">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Word Cloud</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Missing">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Word Missing</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Cards">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Cards</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="form-group">
+                                                            <label class="input-label">Show Words</label>
+                                                            <div class="input-group">
+                                                                <div class="radio-buttons">
+
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][show_words]" value="words" checked>
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Just Words</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][show_words]" value="words_sentences">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <h3>Words with Sentences</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="practice-quiz-ajax-fields assignment_topic_type_fields practice_fields"></div>
 
 
@@ -823,7 +916,7 @@
                                                     <div class="radio-buttons">
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
-                                                                   class="duration_conditional_check" value="Individual">
+                                                                   class="assignment_type_check" value="Individual">
                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
                                                                     <h3>Individual</h3>
@@ -834,7 +927,7 @@
 
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
-                                                                   class="duration_conditional_check" value="Class" checked>
+                                                                   class="assignment_type_check" value="Class" checked>
                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
                                                                     <h3>Class</h3>
@@ -856,7 +949,7 @@
                                                         @if( !empty( $classes) )
                                                         @foreach( $classes as $classObj)
                                                         <option value="{{$classObj->id}}" @if(!empty($assignment) && $assignment->assignment_type == 'Individual') selected @endif>
-                                                            {{$classObj->title}}
+                                                            {{$classObj->class_nick_name}}
                                                         </option>
                                                         @endforeach
                                                         @endif
@@ -865,20 +958,32 @@
                                                 </div>
                                             </div>
 
-                                            <div class="admin-rurera-tabs-holder">
-                                                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                                                    @if( !empty( $sections) )
-                                                    @foreach( $sections as $sectionObj)
-                                                    <li class="nav-item conditional_sections rurera-hide class_sections_{{$sectionObj->parent_id}}">
-                                                        <a class="nav-link" id="section-tabid-{{$sectionObj->id}}" data-toggle="tab" href="#section-tab-{{$sectionObj->id}}" role="tab"
-                                                        aria-controls="section-tab-{{$sectionObj->id}}" aria-selected="true"><span class="tab-title">{{$sectionObj->title}}</span></a>
-                                                    </li>
-                                                    @endforeach
-                                                    @endif
-                                                </ul>
-                                            </div>
 
                                             <div class="tab-content" id="myTabContent2">
+
+                                                @if( !empty( $classes) )
+                                                    @foreach( $classes as $classObj)
+                                                <div class="conditional_sections rurera-hide class_sections_{{$classObj->id}}" id="section-tab-{{$classObj->id}}" role="tabpanel" aria-labelledby="section-tab-{{$classObj->id}}-tab">
+                                                    @if( !empty( $classObj->students) )
+                                                        <div class="users_list_block">
+                                                        <span><input type="checkbox" class="select_all" id="select_all_{{$classObj->id}}" value="{{$classObj->id}}"
+                                                                     name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][class_ids][]"><label for="select_all_{{$classObj->id}}">Select All</label></span>
+                                                            <ul class="users-list">
+                                                                @foreach( $classObj->students as $userObj)
+                                                                    <li data-user_id="{{$userObj->id}}">
+                                                                <span><input type="checkbox" id="select_user{{$userObj->id}}" value="{{$userObj->id}}"
+                                                                             name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"><label
+                                                                        for="select_user{{$userObj->id}}">{{$userObj->get_full_name()}}</label></span>
+                                                                    </li>
+                                                                @endforeach
+                                                            </ul>
+                                                        </div>
+                                                    @endif
+                                                </div>
+
+                                                    @endforeach
+                                                @endif
+
                                                 @if( !empty( $sections) )
                                                 @foreach( $sections as $sectionObj)
                                                 <div class="tab-pane mt-3 fade" id="section-tab-{{$sectionObj->id}}" role="tabpanel" aria-labelledby="section-tab-{{$sectionObj->id}}-tab">
@@ -1154,10 +1259,21 @@
             $('.' + current_value + '_field').removeClass('rurera-hide');
         });
 
+
+        $('body').on('change', '.assignment_type_check', function (e) {
+            $(".class_condition").change();
+        });
         $('body').on('change', '.class_condition', function (e) {
             var current_value = $(this).val();
-            $(".conditional_sections").addClass('rurera-hide');
-            $('.class_sections_' + current_value).removeClass('rurera-hide');
+            var assigned_type = $(".assignment_type_check:checked").val();
+            console.log(assigned_type);
+            if(assigned_type == 'Individual') {
+                $(".conditional_sections").addClass('rurera-hide');
+                $('.class_sections_' + current_value).removeClass('rurera-hide');
+            }else{
+                $(".conditional_sections").addClass('rurera-hide');
+                $('.class_sections_' + current_value).addClass('rurera-hide');
+            }
         });
 
         $('body').on('change', '.duration_conditional_check', function (e) {
