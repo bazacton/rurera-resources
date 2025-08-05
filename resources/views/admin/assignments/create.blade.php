@@ -406,51 +406,24 @@
                                                             <div class="input-group">
                                                                 <div class="radio-buttons">
 
-                                                                    <label class="card-radio">
-                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Hunts" checked>
-                                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                            <div class="card-icon">
-                                                                                <h3>Word Hunts</h3>
-                                                                            </div>
+                                                                    @php $spell_counter = 1;$spell_modes = get_spell_modes(); @endphp
 
-                                                                        </span>
-                                                                    </label>
-                                                                    <label class="card-radio">
-                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Search">
-                                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                            <div class="card-icon">
-                                                                                <h3>Word Search</h3>
-                                                                            </div>
+                                                                    @if(!empty($spell_modes))
+                                                                        @foreach($spell_modes as $spell_mode_key => $spell_mode_value)
+                                                                            @php $is_checked = ($spell_counter == 1)? 'checked' : ''; @endphp
+                                                                            <label class="card-radio">
+                                                                                <input type="radio" name="ajax[new][spell_practice_type]" value="{{$spell_mode_key}}"
+                                                                                       {{$is_checked}}>
+                                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                    <div class="card-icon">
+                                                                                        <h3>{{$spell_mode_value}}</h3>
+                                                                                    </div>
 
-                                                                        </span>
-                                                                    </label>
-                                                                    <label class="card-radio">
-                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Cloud">
-                                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                            <div class="card-icon">
-                                                                                <h3>Word Cloud</h3>
-                                                                            </div>
-
-                                                                        </span>
-                                                                    </label>
-                                                                    <label class="card-radio">
-                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Word Missing">
-                                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                            <div class="card-icon">
-                                                                                <h3>Word Missing</h3>
-                                                                            </div>
-
-                                                                        </span>
-                                                                    </label>
-                                                                    <label class="card-radio">
-                                                                        <input type="radio" name="ajax[new][spell_practice_type]" value="Cards">
-                                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                            <div class="card-icon">
-                                                                                <h3>Cards</h3>
-                                                                            </div>
-
-                                                                        </span>
-                                                                    </label>
+                                                                                </span>
+                                                                            </label>
+                                                                            @php $spell_counter++; @endphp
+                                                                        @endforeach
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
