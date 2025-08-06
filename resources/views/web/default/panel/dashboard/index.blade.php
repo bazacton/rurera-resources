@@ -118,7 +118,7 @@
                             </div>
                             <div class="plan-progress text-right">
                                 <i>&#10003;</i>
-                                <strong>5<em>/5</em></strong> 
+                                <strong>5<em>/5</em></strong>
                                 <span>islands done this week</span>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                 VR
                             </div>
                             <div class="plan-progress text-right">
-                                <strong>1<em>/2</em></strong> 
+                                <strong>1<em>/2</em></strong>
                                 <span>islands done this week</span>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                 Maths
                             </div>
                             <div class="plan-progress">
-                                <strong>1<em>/4</em></strong> 
+                                <strong>1<em>/4</em></strong>
                                 <span>islands done this week</span>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                                 NVR
                             </div>
                             <div class="plan-progress">
-                                <strong>1<em>/4</em></strong> 
+                                <strong>1<em>/4</em></strong>
                                 <span>islands done this week</span>
                             </div>
                         </div>
@@ -296,7 +296,7 @@
 </div>
 @endif
 @if(auth()->user()->isUser())
-	
+
 @if( $continueTests->count() > 0 || $assignmentsArray->count() > 0)
 
 	<div class="quests-list quests-learning mt-30">
@@ -328,10 +328,13 @@
 						@if( $assignmentsArray->count() > 0 )
 						@foreach( $assignmentsArray as $assignmentObj)
 						@php
+                        if(!isset($assignmentObj->StudentAssignmentData->id)){
+                            continue;
+                        }
 						$assignmentTitle = $assignmentObj->StudentAssignmentData->title;
 						$assignmentLink = '/assignment/'.$assignmentObj->id;
 						@endphp
-						
+
 						<div class="col-12 col-lg-12 students-requests-list-item">
 							<div class="notification-card mb-20 rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-40">
 								<div class="row align-items-center">
@@ -364,20 +367,20 @@
     </div>
 	<ul>
 		@foreach( $quests as $questObj)
-		
+
 			@php
 
 			$questUserData = $DailyQuestsController->getQuestUserData($questObj);
 			$resultsRecords = isset( $questUserData['resultsRecords'] )? $questUserData['resultsRecords'] : array();
 			$no_of_practices = isset( $questUserData['no_of_practices'] )? $questUserData['no_of_practices'] : 0;
-			
-			
+
+
 			$quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.png';
 			$quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
 			@endphp
 			@php $link = isset( $questObj->learningJourney->subject->slug )? $questObj->learningJourney->subject->slug : ''; @endphp
-		
-			
+
+
 			<li class="d-flex align-items-center justify-content-between flex-wrap bg-white p-20 mb-20 bg-danger">
 				<div class="quests-item">
 					<div class="icon-box d-inline-flex justify-content-center align-items-center mr-10" >
@@ -398,7 +401,7 @@
 							<strong>{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</strong> Stages Completed
 						</span>
 					</div>
-				</div>	
+				</div>
 				<div class="icon-box mt-20 stages-items ">
 					@php $attempted_count = 0; @endphp
 					@if( !empty($resultsRecords))
@@ -410,8 +413,8 @@
 									<img src="{{$quest_icon}}" alt="{{$quest_icon}}">
 									<div class="lms-tooltip">
 										<div class="tooltip-box">
-											<h5 class="font-18 font-weight-bold text-white mb-5">															
-											Active practice: 11<br> 
+											<h5 class="font-18 font-weight-bold text-white mb-5">
+											Active practice: 11<br>
 											Questions answered: 11 <br>
 											<img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30">Coins earned:11
 											</h5>
@@ -422,9 +425,9 @@
 							@endif
 						@endforeach
 					@endif
-					
+
 					@php $remaining_attempts = $no_of_practices - $attempted_count; @endphp
-					
+
 					@if( $questObj->quest_topic_type == 'learning_journey')
     					@while( $remaining_attempts >= 1)
     						<a href="/learning-journey/{{$link}}" class="locked_nugget">
@@ -433,16 +436,16 @@
     						@php $remaining_attempts--; @endphp
     					@endwhile
 					@endif
-				</div>			
+				</div>
 			</li>
 		@endforeach
-		
+
 	</ul>
 	@endif
 </div>
 
 <div class="quests-list quests-learning rurera-hide">
-	
+
 	@if( $LearningJourneys->count() > 0)
 	<div class="section-title text-left mb-30">
 		<h2 class="font-22">Learning Journeys</h2>
@@ -487,11 +490,11 @@
 										@if(isset( $resultObj->id))
 										<li class="intermediate completed " data-id="nugget_1_1_1" data-quiz_level="medium">
 											<a href="javascript:;" class="locked_nugget rurera-tooltip" data-id="nugget_1_1_1" title="1Plant cells"><img src="/assets/default/img/tick-white.png" alt="">
-											
+
 												<div class="lms-tooltip">
 													<div class="tooltip-box">
-														<h5 class="font-18 font-weight-bold text-white mb-5">															
-														Active practice: {{getTimeWithText($resultObj->quizz_result_questions_list->where('status', '!=', 'waiting')->sum('time_consumed'))}}<br> 
+														<h5 class="font-18 font-weight-bold text-white mb-5">
+														Active practice: {{getTimeWithText($resultObj->quizz_result_questions_list->where('status', '!=', 'waiting')->sum('time_consumed'))}}<br>
 														Questions answered: {{$resultObj->quizz_result_questions_list->where('status', '!=', 'waiting')->count()}} <br>
 														<img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30">Coins earned:{{$resultObj->quizz_result_questions_list->where('status', 'correct')->sum('quiz_grade')}}
 														</h5>
@@ -506,13 +509,13 @@
 							</div>
 						</div>
 					</div>
-				@endif			
+				@endif
 			</li>
 		@endforeach
 	</ul>
 	@endif
 </div>
-				
+
 @endif
 <div class="dashboard rurera-hide">
     @if(auth()->check() && (auth()->user()->isUser()))
@@ -712,7 +715,7 @@
                 @endforeach
 
             </div>
-        </div> 
+        </div>
     </div>
     </section>
     <section style="padding: 0 0 60px;">
@@ -875,14 +878,14 @@ $(document).ready(function () {
             $dataDeg = $dataV * 3.6,
             $round = $this.find(".round_per");
 
-        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)"); 
+        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
 
         // Append circle_inbox outside of circle_percent
         $this.after('<div class="circle_inbox"><span class="percent_text"></span></div>');
 
         $this.prop('Counter', 0).animate({ Counter: $dataV }, {
-            duration: 2000, 
-            easing: 'swing', 
+            duration: 2000,
+            easing: 'swing',
             step: function (now) {
                 $this.next(".circle_inbox").find(".percent_text").text(Math.ceil(now) + "%");
             }
@@ -896,7 +899,7 @@ $(document).ready(function () {
             setTimeout(function() {
                 $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
             }, 1000);
-        } 
+        }
     });
 });
 </script>
