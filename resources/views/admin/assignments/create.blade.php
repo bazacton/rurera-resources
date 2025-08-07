@@ -1321,6 +1321,7 @@
                 $(".no_of_questions").attr('max', total_questions);
                 $(".no_of_questions").val(current_questions);
                 slider_fields_refresh();
+                $(".assignment_quiz_type:checked").change();
             });
 
             $('body').on('change', '.assignment_method_check', function (e) {
