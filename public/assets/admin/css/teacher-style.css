@@ -6045,6 +6045,9 @@ button.print-download-btn {
     font-size: 14px;
     background-color: #fdfdff;
 }
+.admin_teacher_role .populated-data .select2-selection__arrow:before {
+    right: 10px;
+}
 /* custom_quiz srach form Style End */
 
 /* Teacher Dashboard Header Style Start */
