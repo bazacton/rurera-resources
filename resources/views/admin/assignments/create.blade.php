@@ -696,7 +696,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4 col-md-4 col-sm-12 col-4">
-                                                            <div class="form-group conditional_fields Daily_field Weekly_field Monthly_field">
+                                                            <div class="form-group">
                                                                 <label class="input-label">Practice Due Date</label>
                                                                 <div class="input-group">
                                                                     <div class="input-group-prepend">
@@ -960,7 +960,7 @@
 
                                                             <div class="radio-buttons">
                                                                 <label class="card-radio">
-                                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
+                                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_assign_type]"
                                                                            class="conditional_check assignment_type_check" value="Individual">
                                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
@@ -971,7 +971,7 @@
                                                                 </label>
 
                                                                 <label class="card-radio">
-                                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
+                                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_assign_type]"
                                                                            class="conditional_check assignment_type_check" value="Class" checked>
                                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
@@ -988,7 +988,7 @@
 
 
                                                     <div class="rurera-notes conditional_fields Individual_field">You must manually select specific students. Only those selected will have access to the assignment. Class changes will not affect this.</div>
-                                                    <div class="rurera-notes conditional_fields Class_field mb-15">The assignment will be visible to all students currently in the selected class. If any student is added or removed from the class later, their access to assignment will update automatically.</div>
+                                                    <div class="rurera-notes conditional_fields Class_field">The assignment will be visible to all students currently in the selected class. If any student is added or removed from the class later, their access to assignment will update automatically.</div>
                                                     <div class="form-group {{($schools_list->count() < 2 )? 'rurera-hide' : ''}}">
                                                         <label class="input-label">School</label>
                                                         <div class="input-group">
