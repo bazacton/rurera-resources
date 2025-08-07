@@ -199,7 +199,7 @@
                                   method="Post" class="rurera-form-validation">
                                 {{ csrf_field() }}
 
-                                <div class="row col-lg-12 col-md-12 col-sm-4 col-12">
+                                <div class="row">
                                     <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
 
 
