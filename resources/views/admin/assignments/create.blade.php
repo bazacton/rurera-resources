@@ -445,6 +445,33 @@
 
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                                 <div class="form-group">
+                                                                    <label class="input-label">Assignment Type</label>
+                                                                    <div class="input-group">
+                                                                        <div class="radio-buttons">
+
+                                                                            <label class="card-radio">
+                                                                                <input type="radio" class="conditional_check assignment_quiz_type" name="ajax[new][assignment_quiz_type]" value="practice" checked>
+                                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                    <div class="card-icon">
+                                                                                        <h3>Practice</h3>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </label>
+                                                                            <label class="card-radio">
+                                                                                <input type="radio" class="conditional_check assignment_quiz_type" name="ajax[new][assignment_quiz_type]" value="test">
+                                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                    <div class="card-icon">
+                                                                                        <h3>Test</h3>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields practice_field">
+                                                                <div class="form-group">
                                                                     <label class="input-label">Practice Type</label>
                                                                     <div class="input-group">
                                                                         <div class="radio-buttons">
@@ -1461,6 +1488,7 @@
             $(".assignment_method_check:checked").change();
             $(".year_quiz_ajax_select").change();
             $(".year_group_quiz_ajax_select").change();
+            $(".assignment_quiz_type:checked").change();
 
 
 
