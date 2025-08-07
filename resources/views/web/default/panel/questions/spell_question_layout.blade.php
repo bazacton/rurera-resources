@@ -79,37 +79,37 @@ shuffle($characters_list);
                 </div>
                 <div class="spells-quiz-from question-layout row d-flex align-items-center ">
                     <div class="form-field">
-					
-					
+
+
 						@php $words_counter = 0; $field_html = ''; @endphp
                         @while($words_counter < $no_of_words)
                             @php $words_counterplus = $words_counter+1;
                             $field_width = ($words_counterplus >= $no_of_words)? '1.5' : '1.5';
 							$word_character = substr($correct_answer, $words_counter, 1);
 							$word_character = in_array($words_counter, $hidden_indexes)? '' : $word_character;
-                            
+
                             $field_html .= '<input type="text" value="" maxlength="1" data-counter_id="'.$words_counter.'" class="rurera-req-field editor-field-inputs drop-target'.$question->id.'" style="width: '.$field_width.'ch;
                                                     background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;
                                                     font: 1.2rem buntu Mono, monospace;
                                                     letter-spacing: 0.5ch;">';
                         $words_counter++;@endphp
                         @endwhile
-					
-					@php 
+
+					@php
 					$sentence_value = isset( $word_data['audio_sentense'] )? $word_data['audio_sentense'] : '';
 					$sentence_value = str_replace($correct_answer,'[BLANK]',$sentence_value);
 					$sentence_value = str_replace(ucfirst($correct_answer),'[BLANK]',$sentence_value);
 					$sentence_value = str_replace(strtolower($correct_answer),'[BLANK]',$sentence_value);
 					$exam_sentenses = array($sentence_value);
 					@endphp
-					
+
 						@if( !empty( $exam_sentenses ) )
 						@php $random_index = array_rand($exam_sentenses);
-							$sentenceValue = $exam_sentenses[$random_index]; 
+							$sentenceValue = $exam_sentenses[$random_index];
 							$sentenceValue = str_replace('[BLANK]','________',$sentenceValue);
-							
+
 							@endphp
-							
+
 							<div class="question-label"><span>{!! $sentenceValue !!}</span></div>
 						@endif
 						<br>
@@ -117,8 +117,8 @@ shuffle($characters_list);
 						<div class="quiz-input-fields">
 						{!! $field_html !!}
 						</div>
-						
-						
+
+
 						<div class="rurera-virtual-keyboard">
 							<button type="button" class="keyboard-btn">Keyboard <span class="icon-box"><img src="/assets/default/svgs/keyboard.svg" alt=""></span> </button>
 							<div class="virtual-keyboard rurera-hide">
@@ -161,9 +161,9 @@ shuffle($characters_list);
 								</div>
 						  </div>
 						</div>
-						
+
 						<input type="text" class="editor-field hide " data-field_id="{{$field_id}}" data-id="{{$field_id}}" id="field-{{$field_id}}">
-					
+
                     </div>
 
 
@@ -224,7 +224,7 @@ shuffle($characters_list);
         userInput = false;
         hint_counter = 0;
     });
-	
+
 	$(document).on('change', ".editor-field-option", function (e) {
         var current_option = $(this).val();
 		$(".editor-field-inputs").val('');
@@ -233,8 +233,8 @@ shuffle($characters_list);
 			$(inputs[i]).val(current_option.charAt(i)); // Set each character
 		}
     });
-	
-	
+
+
 
     $(document).on('input keydown paste', ".editor-field-inputs", function (event) {
         var $this = $(this);
@@ -263,9 +263,9 @@ shuffle($characters_list);
             $this.prev('.editor-field-inputs').focus();
         }
     });
-	
-	
-	
+
+
+
 
     function getRandomNumberNotInArray(maxNumber, excludeArray) {
       var randomNumber;
@@ -287,13 +287,13 @@ shuffle($characters_list);
         $(this).closest('.spell-question-area').find('.question-correct-answere').removeClass('rurera-hide');
 
     });
-	
+
 	function onQuestionLoad(){
 		console.log('onQuestionLoad');
 		$('.editor-field-inputs:eq(0)').focus();
-		
+
 	}
-	
+
 	document.addEventListener('click', function() {
 		const inputs = document.querySelectorAll('.quiz-input-fields .editor-field-inputs');
 		for (let input of inputs) {
@@ -303,11 +303,12 @@ shuffle($characters_list);
 			}
 		}
 	});
-	
-	
-	
+
+
+
 
     $(document).on('click', '#sound-icon-{{ $question->id }}', function (e) {
+        console.log('sdfsdfsdfsdfsdfsdfdfsffsdf');
         var context = new AudioContext();
         $('.editor-field-inputs:eq(0)').focus();
         //$('#field-{{$field_id}}').focus();
@@ -316,10 +317,10 @@ shuffle($characters_list);
         }
         //SpellQuestionintervalFunc();
         var player_id = $(this).attr('data-id');
-		
+
 		document.getElementById(player_id).play();
 		$(this).addClass("pause");
-        
+
 
         /*if ($(this).hasClass('pause')) {
             document.getElementById(player_id).play();
@@ -329,11 +330,11 @@ shuffle($characters_list);
     });
     var audio = document.getElementById("audio_file_{{ $question->id }}");
 
-    audio.addEventListener('ended', function () {	
+    audio.addEventListener('ended', function () {
         $('#sound-icon-{{ $question->id }}').toggleClass("pause");
     });
-	
-	
+
+
 	$(document).on('click', '#sound-icon-{{ $question->id }}-word', function (e) {
         var context = new AudioContext();
         $('.editor-field-inputs:eq(0)').focus();
@@ -343,7 +344,7 @@ shuffle($characters_list);
         }
         //SpellQuestionintervalFunc();
         var player_id = $(this).attr('data-id');
-        
+
 
         document.getElementById(player_id).play();
 		$(this).addClass("pause");
@@ -358,6 +359,7 @@ shuffle($characters_list);
     });
 
     $(document).on('click', '.start-spell-quiz', function (e) {
+        console.log('sdfsdfsdfsdfsdfsdf0000000');
     //jQuery(document).ready(function() {
 
         console.log('focus-field');

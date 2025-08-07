@@ -68,33 +68,21 @@ shuffle($characters_list);
          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
         <div class="question-layout-block">
             <form class="question-fields" action="javascript:;" data-defination="{{isset($word_data['audio_defination'])? $word_data['audio_defination'] : ''}}" data-question_id="{{ $question->id }}">
-                <div class="spells-quiz-info">
-                    <ul>
-                        <li class="show-correct-answer">
-                            <span>{{$question_no}}</span> Of {{$total_questions_count}}
-                        </li>
-                        <li>
-                            <span class="nub-of-sec question-time-remaining-{{ $question->id }}" data-remaining="{{($question->question_average_time*60)}}"></span>
-                        </li>
-                        <li class="total-points" data-total_points="{{isset( $total_points )? $total_points : 0}}">
-                            <span>{{(isset( $total_points ) && $total_points > 0)? $total_points : '--'}}</span> <img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="25">
-                        </li>
-                        <li class="play-time" data-play_time="{{isset( $total_points )? $total_points : 0}}">
-                            <span>{{(isset( $total_points ) && $total_points > 0)? $total_points : '--'}}</span> <img src="/assets/default/img/sidebar/games.svg" alt="" width="25">
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="left-content has-bg">
 				<div class="question-label"><span>Complete the sentence.</span></div>
 				{!! isset( $layout_data )? $layout_data : ''!!}
                 <div class="spells-quiz-sound">
-                    <strong>Word <a href="javascript:;"  id="sound-icon-{{ $question->id }}-word" data-id="audio_file_{{ $question->id }}-word" class="play-btn sound-icon">
+                    <strong>Word <a href="javascript:;"  id="sound-icon-{{ $question->id }}-word" data-id="audio_file_{{ $question->id }}-word" class="play-btn sound-icon play-word-btn">
                       <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
                       <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                    </a> Sentence <a href="javascript:;"  id="sound-icon-{{ $question->id }}" data-id="audio_file_{{ $question->id }}" class="play-btn sound-icon play-sentence-sound pause">
+                    </a>
+                        @php $is_sentence_show = isset($is_sentence_show)? $is_sentence_show : false; @endphp
+                        @if($is_sentence_show == true)
+                            Sentence <a href="javascript:;"  id="sound-icon-{{ $question->id }}" data-id="audio_file_{{ $question->id }}" class="play-btn sound-icon play-sentence-sound">
                       <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
                       <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                    </a> </strong>
+                    </a> @endif</strong>
                 </div>
                 <div class="player-box hide">
 				   <audio  class="player-box-audio" id="audio_file_{{ $question->id }}-word" src="{{isset($word_data['word_audio'])? $word_data['word_audio'] : ''}}"> </audio>
@@ -102,36 +90,36 @@ shuffle($characters_list);
                 </div>
                 <div class="spells-quiz-from question-layout">
                     <div class="form-field">
-					
+
 						@php $words_counter = 0; $field_html = ''; @endphp
                         @while($words_counter < $no_of_words)
                             @php $words_counterplus = $words_counter+1;
                             $field_width = ($words_counterplus >= $no_of_words)? '1.5' : '1.5';
 							$word_character = substr($correct_answer, $words_counter, 1);
 							$word_character = in_array($words_counter, $hidden_indexes)? '' : $word_character;
-                            
+
                             $field_html .= '<input type="text" value="" maxlength="1" data-counter_id="'.$words_counter.'" class="rurera-req-field editor-field-inputs drop-target'.$question->id.'" style="width: '.$field_width.'ch;
                                                     background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;
                                                     font: 1.2rem buntu Mono, monospace;
                                                     letter-spacing: 0.5ch;">';
                         $words_counter++;@endphp
                         @endwhile
-					
-					@php 
+
+					@php
 					$sentence_value = isset( $word_data['audio_sentense'] )? $word_data['audio_sentense'] : '';
 					$sentence_value = str_replace($correct_answer,'[BLANK]',$sentence_value);
 					$sentence_value = str_replace(ucfirst($correct_answer),'[BLANK]',$sentence_value);
 					$sentence_value = str_replace(strtolower($correct_answer),'[BLANK]',$sentence_value);
 					$exam_sentenses = array($sentence_value);
 					@endphp
-					
+
 						@if( !empty( $exam_sentenses ) )
 						@php $random_index = array_rand($exam_sentenses);
-							$sentenceValue = $exam_sentenses[$random_index]; 
+							$sentenceValue = $exam_sentenses[$random_index];
 							$sentenceValue = str_replace('[BLANK]','________',$sentenceValue);
-							
+
 							@endphp
-							
+
 							<div class="question-label"><span>{!! $sentenceValue !!}</span></div>
 						@endif
 						<br>
@@ -139,7 +127,7 @@ shuffle($characters_list);
 						<div class="quiz-input-fields">
 						{!! $field_html !!}
 						</div>
-						
+
 						<div class="rurera-virtual-keyboard">
 							<button type="button" class="keyboard-btn">Keyboard <span class="icon-box"><img src="/assets/default/svgs/keyboard.svg" alt=""></span> </button>
 							<div class="virtual-keyboard rurera-hide">
@@ -187,45 +175,8 @@ shuffle($characters_list);
                     <div class="question-correct-answere rurera-hide">
                         {{$correct_answer}} - {{$question->id}}
                     </div>
-					<div class="question-populated-response"></div>
-                    <div class="form-btn-field">
-                        <button type="button" class="question-review-btn" data-id="{{ $question->id }}">Finish</button>
-                        <button type="submit" class="question-submit-btn">Enter</button>
-                        <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                            Next
-                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                        </a>
-                    </div>
                 </div>
 
-                    <div class="prev-next-controls text-center mb-50 questions-nav-controls  rurera-hide">
-                        @if( !isset( $disable_finish ) || $disable_finish == 'false')
-                        <a href="javascript:;" id="review-btn_{{ $question->id }}" data-toggle="modal" class="review-btn" data-target="#review_submit">
-                            Finish
-                            <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                        </a>
-                        @endif
-                        @php $prev_class = (isset( $prev_question ) && $prev_question > 0)? '' : 'disable-btn'; @endphp
-                        @if( !isset( $disable_prev ) || $disable_prev == 'false')
-                        <a href="javascript:;" id="prev-btn" class="{{$prev_class}} prev-btn" data-question_id="{{$prev_question}}">
-                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                        </a>
-                        @endif
-                        @php $next_class = (isset( $next_question ) && $next_question > 0)? '' : 'disable-btn'; @endphp
-                        @if( !isset( $disable_next ) || $disable_next == 'false')
-                        <a href="javascript:;" id="next-btn" class="{{$next_class}} next-btn" data-question_id="{{$next_question}}">
-                            Next
-                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                        </a>
-                        @else
-                        <a href="javascript:;" id="next-btn" class="{{$next_class}} next-btn rurera-hide" data-question_id="{{$next_question}}" data-actual_question_id="{{$next_question}}">&nbsp;</a>
-                        @endif
-                        @if( !isset( $disable_submit ) || $disable_submit == 'false')
-                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                            mark answer
-                        </a>
-                        @endif
-                    </div>
                 </div>
             </form>
         </div>
@@ -259,7 +210,7 @@ shuffle($characters_list);
         userInput = false;
         hint_counter = 0;
     });
-	
+
 	$(document).on('change', ".editor-field-option", function (e) {
         var current_option = $(this).val();
 		$(".editor-field-inputs").val('');
@@ -268,8 +219,8 @@ shuffle($characters_list);
 			$(inputs[i]).val(current_option.charAt(i)); // Set each character
 		}
     });
-	
-	
+
+
 
     $(document).on('input keydown paste', ".editor-field-inputs", function (event) {
         var $this = $(this);
@@ -298,9 +249,9 @@ shuffle($characters_list);
             $this.prev('.editor-field-inputs').focus();
         }
     });
-	
-	
-	
+
+
+
 
     function getRandomNumberNotInArray(maxNumber, excludeArray) {
       var randomNumber;
@@ -322,13 +273,13 @@ shuffle($characters_list);
         $(this).closest('.spell-question-area').find('.question-correct-answere').removeClass('rurera-hide');
 
     });
-	
+
 	function onQuestionLoad(){
 		console.log('onQuestionLoad');
 		$('.editor-field-inputs:eq(0)').focus();
-		
+
 	}
-	
+
 	document.addEventListener('click', function() {
 		const inputs = document.querySelectorAll('.quiz-input-fields .editor-field-inputs');
 		for (let input of inputs) {
@@ -338,9 +289,9 @@ shuffle($characters_list);
 			}
 		}
 	});
-	
-	
-	
+
+
+
 
     $(document).on('click', '#sound-icon-{{ $question->id }}', function (e) {
         var context = new AudioContext();
@@ -351,10 +302,10 @@ shuffle($characters_list);
         }
         //SpellQuestionintervalFunc();
         var player_id = $(this).attr('data-id');
-		
+
 		document.getElementById(player_id).play();
 		$(this).addClass("pause");
-        
+
 
         /*if ($(this).hasClass('pause')) {
             document.getElementById(player_id).play();
@@ -364,11 +315,11 @@ shuffle($characters_list);
     });
     var audio = document.getElementById("audio_file_{{ $question->id }}");
 
-    audio.addEventListener('ended', function () {	
+    audio.addEventListener('ended', function () {
         $('#sound-icon-{{ $question->id }}').toggleClass("pause");
     });
-	
-	
+
+
 	$(document).on('click', '#sound-icon-{{ $question->id }}-word', function (e) {
         var context = new AudioContext();
         $('.editor-field-inputs:eq(0)').focus();
@@ -378,7 +329,7 @@ shuffle($characters_list);
         }
         //SpellQuestionintervalFunc();
         var player_id = $(this).attr('data-id');
-        
+
 
         document.getElementById(player_id).play();
 		$(this).addClass("pause");
@@ -392,69 +343,5 @@ shuffle($characters_list);
 
     });
 
-    $(document).on('click', '.start-spell-quiz', function (e) {
-    //jQuery(document).ready(function() {
-
-        console.log('focus-field');
-		onQuestionLoad();
-
-        $('.editor-field-inputs:eq(0)').focus();
-        //$('#field-{{$field_id}}').focus();
-        $('#sound-icon-{{ $question->id }}').click();
-          var $keyboardWrapper = $('.virtual-keyboard'),
-          $key = $keyboardWrapper.find("input"),
-          $key_delete = $('.delete'),
-          $key_shift = $('.shift'),
-          $outputField = $('#field-{{$field_id}}'),
-          $currentValue = $outputField.val(),
-          actionKeys = $(".delete,.shift")
-          activeShiftClass = "shift-activated";
-
-          function _keystroke(keyCase){
-            $key.not(actionKeys).on('click',function(e){
-              e.preventDefault();
-
-              if($key_shift.hasClass(activeShiftClass)){
-                keyCase = 'upper';
-                $key_shift.removeClass(activeShiftClass);
-              }else{
-                keyCase = 'lower';
-              }
-
-              if(keyCase == 'upper'){
-                var keyValue = $(this).val().toUpperCase();
-              }else{
-                var keyValue = $(this).val().toLowerCase();
-              }
-
-              var output = $('#field-{{$field_id}}').val();
-                  $outputField.val(output + keyValue);
-                  getCurrentVal();
-                  focusOutputField();
-            });
-
-            }
-            $key_delete.on('click',function(e){
-            e.preventDefault();
-            $outputField.val($currentValue.substr(0,$currentValue.length - 1));
-            getCurrentVal();
-            focusOutputField();
-            });
-
-            $key_shift.on('click',function(e){
-            e.preventDefault();
-            $(this).toggleClass(activeShiftClass);
-            });
-
-            function getCurrentVal(){
-            $currentValue = $outputField.val();
-            }
-
-            function focusOutputField(){
-            $outputField.focus();
-            }
-
-            _keystroke("lower");
-        });
 </script>
 

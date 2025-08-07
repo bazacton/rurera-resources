@@ -16,6 +16,7 @@ if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
 
+
 $total_questions = count(json_decode($newQuizStart->questions_list));
 $total_corrects = $newQuizStart->quizz_result_questions_list->where('status','correct')->count();
 $total_incorrects = $newQuizStart->quizz_result_questions_list->where('status','incorrect')->count();
@@ -82,7 +83,7 @@ $target_score = 90;
         @endif
 
         <div class="container-fluid questions-data-block read-quiz-content"
-             data-total_questions="{{$quizQuestions->count()}}">
+             data-total_questions="{{$total_questions_count}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
 
             <section class="quiz-topbar {{$top_bar_class}}">
@@ -98,7 +99,7 @@ $target_score = 90;
                         <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
                             <div class="topbar-right">
                                 <div class="quiz-timer">
-                                    <span class="timer-number"><div class="quiz-timer-counter" data-total_time_counter="{{isset( $total_time_consumed )? $total_time_consumed : 0}}" data-time_counter="{{isset( $total_time_consumed )? $total_time_consumed : 0}}">0S</div></span>
+                                    <span class="timer-number"><div class="quiz-timer-counter" data-total_time_counter="{{isset( $total_time_consumed )? $total_time_consumed : 0}}" data-time_counter="{{isset( $timer_counter )? $timer_counter : 0}}">0S</div></span>
                                 </div>
                                 <div class="instruction-controls">
                                     <div class="font-setting">
@@ -249,7 +250,7 @@ $target_score = 90;
 
                     <div class="question-area-block" data-quiz_result_id="{{isset( $newQuizStart->id )? $newQuizStart->id : 0}}" data-duration_type="{{isset( $duration_type )? $duration_type : 'no_time_limit'}}" data-time_interval="{{isset( $time_interval )? $time_interval : 0}}" data-practice_time="{{isset( $practice_time )? $practice_time : 0}}"
                          data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-					@php $timer_counter = 0; $total_questions_count = 10; $total_points = 10; $total_play_time = 10; @endphp
+					@php $timer_counter = 0; $total_play_time = 10; @endphp
 					<div class="question-area spell-question-area">
 						<div class="correct-appriciate" style="display:none"></div>
 
@@ -257,7 +258,7 @@ $target_score = 90;
 							<div class="spells-quiz-info">
 							<ul>
 								<li class="show-correct-answer">
-									<span>{{$question_no}}</span> Of {{$total_questions_count}}
+									<span>1</span> Of {{$total_questions_count}}
 								</li>
 								<li>
 									<span class="nub-of-sec " data-remaining="10">10</span>
@@ -275,15 +276,26 @@ $target_score = 90;
                         @php $question_no = 1; @endphp
 
                         @foreach( $question as $questionObj)
-                        @include('web.default.panel.questions.question_layout',[
+                        @php $correct_answers = isset( $questionObj->correct_answer )? json_decode($questionObj->correct_answer, true) : '';
+                        [$field_id, $correct_answer] = [key($correct_answers), current($correct_answers)[0]];
+                        @endphp
+                        <div class="question-step question-step-' . $questionObj->id . '" data-qattempt="' . $qattempt_id . '" data-start_time="0" data-qresult="' . $newQuestionResult->id . '" data-quiz_result_id="' . $QuizzesResult->id . '">
+                            <div class="question-layout-block">
+                                <div class="correct-appriciate" style="display:none"></div>
+                        @include('web.default.panel.questions.spell_word_hunts_question_layout',[
                         'question'=> $questionObj,
                         'prev_question' => 0,
                         'next_question' => 0,
                         'question_no' => $question_no,
                         'quizAttempt' => $quizAttempt,
                         'newQuestionResult' => $newQuestionResult,
+                        'correct_answer' => $correct_answer,
+                        'field_id' => $field_id,
+
                         'quizResultObj' => $newQuizStart
-                        ])
+                        ]);
+                            </div>
+                        </div>
                         @php $question_no++; @endphp
                         @endforeach
                         @else
@@ -300,7 +312,7 @@ $target_score = 90;
 							 data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
 							 data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
 							 data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-								{!! html_entity_decode(json_decode(base64_decode(trim(stripslashes($questionLayout))))); !!}
+								{!! $questionLayout !!}
 								</div>
 
 								@php $question_counter++; @endphp
@@ -546,6 +558,16 @@ $target_score = 90;
 		}
 	}, 5000);
 
+    $(document).on('click', '.start-spell-quiz', function (e) {
+        //jQuery(document).ready(function() {
+
+        console.log('focus-field');
+
+        $('.editor-field-inputs:eq(0)').focus();
+        $('.rurera-question-block.active').find('.play-word-btn').click();
+
+    });
+
     function quiz_default_functions() {
 		window.addEventListener('blur', function () {
             //var attempt_id = $(".question-area .question-step").attr('data-qattempt');
@@ -636,8 +658,15 @@ $target_score = 90;
         });
 
         $("body").on("click", ".question-next-btn", function (e) {
+
+            var current_number = $('.show-correct-answer span').html();
+            var current_number = parseInt(current_number)+1;
+            $('.show-correct-answer span').html(current_number);
             timePaused = false;
+
         });
+
+
 
         $("body").on("click", ".increasetext", function (e) {
             curSize = parseInt($('.learning-page').css('font-size')) + 2;
@@ -715,6 +744,9 @@ $target_score = 90;
         return return_string;
     }
 
+    function afterNextQuestion(){
+        $('.rurera-question-block.active').find('.play-word-btn').click();
+    }
 	var spell_play_time = "{{gameTime('vocabulary')}}";
 	function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
 		var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
