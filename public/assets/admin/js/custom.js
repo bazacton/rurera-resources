@@ -228,6 +228,7 @@
                 placeholder: $(this).data('placeholder'),
                 allowClear: true,
                 width: '100%',
+                dropdownParent: $('.main-content')
             });
         }
     };
