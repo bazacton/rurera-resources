@@ -1697,14 +1697,14 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .years-group .card-icon img {max-width: 100%;}
 .radio-btn .card-icon h3 {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0;}
 .populated-data .input-label {font-size: 14px; color: #666; font-weight: 400;}
-.rurera-notes.Class_field {
+.rurera-notes {
     background-color: #edf3fa;
     border-left: 5px solid var(--blue);
     padding: 25px 15px;
     margin: 0 0 20px;
     line-height: 26px;
 }
-.rurera-notes.Class_field i {
+.rurera-notes i {
     color: var(--blue);
     font-size: 24px;
     vertical-align: middle;
