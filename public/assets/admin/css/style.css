@@ -1718,8 +1718,8 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .card-icon svg {max-width: 35px; max-height: 35px; fill: #495057; vertical-align: top; margin: 0 0 10px; }
 .card-icon path {fill: #495057;}
 body.admin_role {position: relative;}
-.admin_role .select2-container {width: auto !important;}
-.admin_role .form-group .select2-container {width: 100% !important;}
+body .select2-container {width: auto !important;}
+body .form-group .select2-container {width: 100% !important;}
 /*Range Slider Style Start*/
 .range-slider {position: relative; width: 100%;	height: auto; min-height: 80px;}
 .range-slider-field {width: 100%; position: absolute; top: 50%; z-index: 3; transform: translateY(-50%); -webkit-appearance: none; appearance: none; width: 100%; height: 4px; opacity: 0; margin: 0;}
