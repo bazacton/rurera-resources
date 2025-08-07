@@ -6041,6 +6041,10 @@ button.print-download-btn {
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
     font-size: 1rem;
 }
+.card .card-body .class-section-data select.form-control {
+    font-size: 15px;
+    background-color: #fdfdff;
+}
 /* custom_quiz srach form Style End */
 
 /* Teacher Dashboard Header Style Start */
