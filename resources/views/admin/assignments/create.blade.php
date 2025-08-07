@@ -445,6 +445,33 @@
 
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                                 <div class="form-group">
+                                                                    <label class="input-label">Assignment Type</label>
+                                                                    <div class="input-group">
+                                                                        <div class="radio-buttons">
+
+                                                                            <label class="card-radio">
+                                                                                <input type="radio" class="conditional_check assignment_quiz_type" name="ajax[new][assignment_quiz_type]" value="practice" checked>
+                                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                    <div class="card-icon">
+                                                                                        <h3>Practice</h3>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </label>
+                                                                            <label class="card-radio">
+                                                                                <input type="radio" class="conditional_check assignment_quiz_type" name="ajax[new][assignment_quiz_type]" value="test">
+                                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                    <div class="card-icon">
+                                                                                        <h3>Test</h3>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields practice_field">
+                                                                <div class="form-group">
                                                                     <label class="input-label">Practice Type</label>
                                                                     <div class="input-group">
                                                                         <div class="radio-buttons">
@@ -934,7 +961,7 @@
                                                             <div class="radio-buttons">
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
-                                                                           class="assignment_type_check" value="Individual">
+                                                                           class="conditional_check assignment_type_check" value="Individual">
                                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
                                                                     <h3>Individual</h3>
@@ -945,7 +972,7 @@
 
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
-                                                                           class="assignment_type_check" value="Class" checked>
+                                                                           class="conditional_check assignment_type_check" value="Class" checked>
                                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
                                                                     <h3>Class</h3>
@@ -960,6 +987,8 @@
                                                     </div>
 
 
+                                                    <div class="rurera-notes conditional_fields Individual_field">You must manually select specific students. Only those selected will have access to the assignment. Class changes will not affect this.</div>
+                                                    <div class="rurera-notes conditional_fields Class_field">The assignment will be visible to all students currently in the selected class. If any student is added or removed from the class later, their access to assignment will update automatically.</div>
                                                     <div class="form-group {{($schools_list->count() < 2 )? 'rurera-hide' : ''}}">
                                                         <label class="input-label">School</label>
                                                         <div class="input-group">
@@ -1461,7 +1490,8 @@
             $(".assignment_method_check:checked").change();
             $(".year_quiz_ajax_select").change();
             $(".year_group_quiz_ajax_select").change();
-
+            $(".assignment_quiz_type:checked").change();
+            $(".assignment_type_check:checked").change();
 
 
             $('body').on('change', '.topic-section-parent', function (e) {
