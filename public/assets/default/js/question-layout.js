@@ -38,7 +38,7 @@ quiz_user_data[0]['incorrect'] = {};
 quiz_user_data[0]['correct'] = {};
 var QuestionSubmitRequest = null;
 var question_submit_process = false;
-let Questioninterval = null;
+//let Questioninterval = null;
 var correctInRow = 0;
 var totalCorrectCount = 0;
 var totalInCorrectCount = 0;
@@ -47,20 +47,22 @@ var totalInCorrectCount = 0;
 $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn", function (e) {
 //$(document).on('click', '.question-submit-btn', function (e) {
     e.preventDefault();
+    console.log('submit-----------');
 	if( $(this).hasClass('rurera-processing')){
 		return false;
 	}
+    console.log('length----'+$('.spells-quiz-from').length);
     if($('.spells-quiz-from').length > 0){
         var editor_field_value = '';
-        var thisObj = $(this);
-        var thisValue = thisObj.closest('.spells-quiz-from').find('.editor-field').val();
-        thisObj.closest('.spells-quiz-from').find('.editor-field-inputs').each(function() {
+        var thisObj = $(".question-step.active");
+        var thisValue = thisObj.find('.spells-quiz-from').find('.editor-field').val();
+        thisObj.find('.spells-quiz-from').find('.editor-field-inputs').each(function() {
             editor_field_value += $(this).val();
         });
-        thisObj.closest('.spells-quiz-from').find('.editor-field').val(editor_field_value);
+        thisObj.find('.spells-quiz-from').find('.editor-field').val(editor_field_value);
         //timePaused = true;
         if( thisValue == '' && editor_field_value != ''){
-            thisObj.closest('.spells-quiz-from').find('.question-submit-btn').click();
+            thisObj.find('.spells-quiz-from').find('.question-submit-btn').click();
         }
     }
 
@@ -77,6 +79,8 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     question_submit_process = true;
     returnType = rurera_validation_process(thisForm, 'quiz_page');
 
+
+    console.log('returnType-----='+returnType)
 
     if( rurera_is_field(bypass_validation) && bypass_validation == 'yes' ){
         returnType = true;
@@ -916,6 +920,7 @@ function init_question_functions() {
 
 
 	$("body").on('click', '.questions-nav-controls .next-btn', function (e) {
+
 		if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
 			$(".question-area-block").find('.show-notifications').html('');
 			$('.rurera-question-block.active').removeClass('active').next().addClass('active');
@@ -923,6 +928,9 @@ function init_question_functions() {
 			$('.question-next-btn').addClass('rurera-hide');
 			$('.question-submit-btn').removeClass('rurera-hide');
 			rurera_question_timer('.rurera-question-block.active', 'seconds');
+            if (typeof afterNextQuestion === "function") {
+                afterNextQuestion();
+            }
 		}
 	});
 
