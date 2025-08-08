@@ -358,7 +358,36 @@
                                                     <div class="form-section assignment_topic_type_fields assignment_fields">
                                                         <h2 class="section-title">Custom Assignment</h2>
                                                     </div>
+                                                    <div class="assignment_topic_type_fields vocabulary_fields sats_fields practice_fields assignment_fields">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="input-label">Year Group</label>
+                                                                    <select data-default_id="{{isset( $quiz->id)? $quiz->year_id : 0}}"
+                                                                            class="form-control year_quiz_ajax_select select2 @error('year_id') is-invalid @enderror"
+                                                                            name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]">
+                                                                        <option value="0">Select Year Group</option>
 
+                                                                        @foreach($categories as $category)
+                                                                            @if(!empty($category->subCategories) and
+                                                                            count($category->subCategories))
+                                                                                @foreach($category->subCategories as $subCategory)
+                                                                                    <option value="{{ $subCategory->id }}" @if(!empty($quiz) and $quiz->year_id == $subCategory->id) selected="selected" @endif>
+                                                                                        {{$subCategory->title}}
+                                                                                    </option>
+                                                                                @endforeach
+                                                                            @endif
+                                                                        @endforeach
+                                                                    </select>
+                                                                    @error('year_id')
+                                                                    <div class="invalid-feedback">
+                                                                        {{ $message }}
+                                                                    </div>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                     <div class="assignment_topic_type_fields vocabulary_fields">
                                                         <div class="row">
@@ -405,33 +434,7 @@
 
                                                     <div class="assignment_topic_type_fields vocabulary_fields sats_fields practice_fields assignment_fields">
                                                         <div class="row">
-                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                                                <div class="form-group">
-                                                                    <label class="input-label">Year Group</label>
-                                                                    <select data-default_id="{{isset( $quiz->id)? $quiz->year_id : 0}}"
-                                                                            class="form-control year_quiz_ajax_select select2 @error('year_id') is-invalid @enderror"
-                                                                            name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]">
-                                                                        <option value="0">Select Year Group</option>
-
-                                                                        @foreach($categories as $category)
-                                                                            @if(!empty($category->subCategories) and
-                                                                            count($category->subCategories))
-                                                                                @foreach($category->subCategories as $subCategory)
-                                                                                    <option value="{{ $subCategory->id }}" @if(!empty($quiz) and $quiz->year_id == $subCategory->id) selected="selected" @endif>
-                                                                                        {{$subCategory->title}}
-                                                                                    </option>
-                                                                                @endforeach
-                                                                            @endif
-                                                                        @endforeach
-                                                                    </select>
-                                                                    @error('year_id')
-                                                                    <div class="invalid-feedback">
-                                                                        {{ $message }}
-                                                                    </div>
-                                                                    @enderror
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                                 <div class="quiz-ajax-fields"></div>
                                                             </div>
 
@@ -498,7 +501,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera-hide">
                                                                 <div class="form-group">
                                                                     <label class="input-label">Show Words</label>
                                                                     <div class="input-group">
