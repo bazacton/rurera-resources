@@ -6048,6 +6048,9 @@ button.print-download-btn {
 .admin_teacher_role .populated-data .select2-selection__arrow:before {
     right: 10px;
 }
+.admin_teacher_role .assignment_topic_type_fields .rurera-button-loader {
+    margin-top: 18px;
+}
 /* custom_quiz srach form Style End */
 
 /* Teacher Dashboard Header Style Start */
