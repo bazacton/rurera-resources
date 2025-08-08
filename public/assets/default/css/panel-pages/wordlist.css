@@ -94,8 +94,6 @@ Sub Pages Style
 .spells-quiz-sound strong .sound-icon,
 .question-status-modal .modal-title h3 .sound-icon {background-color: #fff; display: inline-block; vertical-align: middle; color: #9c0e28; font-size: 22px; height: 26px; width: 26px; box-shadow: 0 0 4px rgba(0,0,0,0.4); line-height: 26px; border-radius: 100%; cursor: pointer;}
 .spells-quiz-sound strong .sound-icon {margin-right: 10px;}
-.spell-question-area .spells-quiz-sound strong {display: inline-flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid #ddd; position: relative; border-radius: 5px; overflow: hidden; padding: 15px 5px; background-color: #f6f6f6; font-size: 12px;}
-.spell-question-area .spells-quiz-sound strong .play-word-btn {margin-right: 0; margin-top: 10px; box-shadow: none; padding: 0;}
 .spells-quiz-from button svg {vertical-align: middle; height: 18px !important; width: 18px !important; margin-left: 5px;}
 .spells-quiz-from button svg g {fill: #929198;}
 .spells-quiz-from button:hover svg g {fill: #fff;}
