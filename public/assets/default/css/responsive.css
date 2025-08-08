@@ -1435,7 +1435,7 @@ Lms Responsive Style Start
     .spell-question-area form.question-fields .left-content:has(.question-populated-response),
     .spell-question-area form.question-fields:has(.question-populated-response){height: auto !important;}
     body .spell-question-area .question-label span {font-size: 18px; line-height: 24px;}
-    .spell-question-area .question-layout-block form.question-fields {height: calc(100vh - 120px); margin-bottom: 0; padding-top: 0;}
+    .spell-question-area .question-layout-block form.question-fields {height: auto; margin-bottom: 0; padding-top: 0;}
     .spell-question-area .question-layout-block form.question-fields:has(#rf-searchgamecontainer) {height: auto; margin-bottom: 30px;}
     .left-content:has(#rurera-words-search) {height: auto !important;}
     .spells-quiz-sound,
