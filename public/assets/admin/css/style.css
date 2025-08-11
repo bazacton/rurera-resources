@@ -1402,7 +1402,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     padding: 0;
 }
 .teacher-table .dropdown-box .dropdown-toggle,
-.admin_teacher_role .simple-btn {
+.admin_teacher_role .simple-btn,
+.admin_role .simple-btn {
     width: auto;
     height: auto;
     background-color: #ddd;
@@ -1412,7 +1413,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     border-radius: 5px;
     text-decoration: none;
 }
-.admin_teacher_role .simple-btn.import-google-classes {
+.admin_teacher_role .simple-btn.import-google-classes,
+.admin_role .simple-btn.import-google-classes {
     padding-top: 6px;
     padding-bottom: 6px;
 }
