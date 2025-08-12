@@ -196,7 +196,7 @@
                             <div class="card-body">
 
                                 <form action="/admin/assignments/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}"
-                                      method="Post" class="rurera-form-validation">
+                                      method="Post" class="rurera-form-validation create-assignment-form">
                                     {{ csrf_field() }}
 
                                     <div class="row">
@@ -680,7 +680,7 @@
                                                                 <label class="input-label">Practice Start Date</label>
                                                                 <div class="input-group">
                                                                     <div class="input-group-prepend">
-                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="logo" data-preview="holder">
+                                                                        <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
                                                                             <i class="fa fa-calendar-week"></i>
                                                                         </button>
                                                                     </div>
@@ -703,7 +703,7 @@
                                                                 <label class="input-label">Practice Due Date</label>
                                                                 <div class="input-group">
                                                                     <div class="input-group-prepend">
-                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="logo" data-preview="holder">
+                                                                        <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
                                                                             <i class="fa fa-calendar-week"></i>
                                                                         </button>
                                                                     </div>
@@ -721,7 +721,7 @@
                                                                 <label class="input-label">Review Due Date</label>
                                                                 <div class="input-group">
                                                                     <div class="input-group-prepend">
-                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="logo" data-preview="holder">
+                                                                        <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
                                                                             <i class="fa fa-calendar-week"></i>
                                                                         </button>
                                                                     </div>
@@ -940,7 +940,7 @@
                                                         <label class="input-label">Assignment Reviewer</label>
                                                         <div class="input-group">
                                                             <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_reviewer]"
-                                                                    class="form-control select2 rurera-req-field">
+                                                                    class="form-control select2 assignment-reviewer-field">
                                                                 <option value="">Select Reviewer</option>
                                                                 @if( !empty( $teachers ) )
                                                                     @foreach( $teachers as $teacherObj)
@@ -1512,6 +1512,17 @@
                 $(".topics_multi_selection").change();
 
             });
+
+            $('body').on('submit', '.create-assignment-form', function (e) {
+                var review_date = $(".reviewer-date").val();
+                $(".assignment-reviewer-field").removeClass('rurera-req-field');
+                $(".assignment-reviewer-field").removeClass('backend-field-error');
+                if(review_date != ''){
+                    $(".assignment-reviewer-field").addClass('rurera-req-field');
+                }
+            });
+
+
 
             $('body').on('apply.daterangepicker', '.practice-start-date', function (ev, picker) {
                 $(".practice-due-date").attr('min', picker.startDate.format('YYYY-MM-DD'));

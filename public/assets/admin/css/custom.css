@@ -1323,6 +1323,9 @@ Lms Card Style End
     border: 1px solid;
     border-color: #ff0000 !important;
 }
+select.backend-field-error + .select2 .select2-selection {
+    border: 1px solid #f00000 !important;
+}
 /* Learning Start New Style Start */
 .learning-start {background: url(/assets/default/img/learning-bg.png) no-repeat #faf2db bottom; border: 1px solid #f3c766;background-size: contain; border-top-width: 9px; border-radius: 10px; padding: 50px 60px 0; text-align: center; overflow: hidden;}
 .learning-start .learning-icon {display: flex; flex-direction: column; flex-wrap: wrap; margin-bottom: 20px;}
