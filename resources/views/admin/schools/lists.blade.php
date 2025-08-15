@@ -111,7 +111,7 @@
                                             <span>{{ $schoolData->students->count() }}</span>
                                         </div>
                                     </td>
-                                    @if($user->isAdminRole())
+                                    @if($userObj->isAdminRole())
                                         <td class="text-left">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 @if(isset($schoolData->schoolSubscriptions->id))
