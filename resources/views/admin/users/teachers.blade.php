@@ -347,7 +347,7 @@
                         <input type="hidden" name="page_type" value="teachers">
                         <div class="form-group">
                             <div class="select-holder">
-                                <label class="input-label">Select School</label>
+                                <label class="input-label">Select School 222</label>
                                 <div class="select-box input-group">
                                     <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
                                         @if($schools_list->count() > 0)
