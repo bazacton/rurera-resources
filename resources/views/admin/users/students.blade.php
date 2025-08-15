@@ -949,6 +949,7 @@
 
 
     });
+    $(".student-class-change").change();
     /*Skelton Loading Fungtion End*/
 </script>
 
