@@ -11,8 +11,10 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                            @if(!auth()->user()->isTeacherPanel())
                             @if(!isset($class) || $class->google_id == 0)
                             <a data-class_id="{{isset($class->id)? $class->id : 0}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                            @endif
                             @endif
                         </div>
                     </div>
@@ -81,6 +83,9 @@
                             <td>
                                 @if($studentObj->google_class_id == 0)
                                 <div class="pending-invites-controls">
+                                    <a title="Print Student" href="admin/students/print_details?users={{$studentObj->id}}" target="_blank">
+                                        <img src="//assets/default/svgs/print.svg" alt="print-menu">
+                                    </a>
                                     <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
                                         <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
                                     </button>
