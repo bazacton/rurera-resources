@@ -66,7 +66,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/envelope.jpg" alt="envelope">
                                 </span>
-                                <input name="email" type="text" class="form-control" autocomplete="new email" placeholder="Where can we reach you? (e.g., you@gmail.com)">
+                                <input name="email" type="text" class="form-control" autocomplete="new-email" placeholder="Where can we reach you? (e.g., you@gmail.com)">
                             </div>
                         </div>
 
@@ -78,7 +78,7 @@
                                 </span>
                                 <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
-                                   aria-describedby="passwordHelp" autocomplete="new password" placeholder="Make a strong password">
+                                   aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password">
                             </div>
                             @error('password')
                             <div class="invalid-feedback">
