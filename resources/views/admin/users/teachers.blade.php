@@ -259,7 +259,7 @@
                     <div class="invite-text-field invitation-form-area">
                         <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
                             {{ csrf_field() }}
-                            <div class="form-group">
+                            <div class="form-group {{(!auth()->user()->isDistricAdmin() && !auth()->user()->isAdminRole())? 'rurera-hide' : ''}}">
                                 <label>Select School 1</label>
                                 <div class="select-box">
                                     <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
