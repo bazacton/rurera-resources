@@ -300,7 +300,6 @@
                                         <label for="district_teacher_role">District Admin</label>
                                     </div>
                                 </div>
-                                @endif
                                 <div class="input-group">
                                     <div class="radio-buttons">
                                         <input type="radio" id="school_admin_role" name="role_id"
@@ -308,6 +307,7 @@
                                         <label for="school_admin_role">School Admin</label>
                                     </div>
                                 </div>
+                                @endif
                             </div>
 
                         <div class="textarea-field">
