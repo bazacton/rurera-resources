@@ -385,7 +385,6 @@
                                     <label for="district_teacher_role-add">District Admin</label>
                                 </div>
                             </div>
-                            @endif
                             <div class="input-group">
                                 <div class="radio-buttons">
                                     <input type="radio" id="school_admin_role-add" name="role_id"
@@ -393,6 +392,7 @@
                                     <label for="school_admin_role-add">School Admin</label>
                                 </div>
                             </div>
+                            @endif
                         </div>
 
                         <div class="form-group">
