@@ -79,7 +79,6 @@
                                     <th class="text-left">No of Classes</th>
                                     <th class="text-left">No of Faculty</th>
                                     <th class="text-left">No of Students</th>
-                                    <th class="text-left">Membership</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
                                      <th><!--{{ trans('admin/main.actions') }}--></th>
@@ -107,19 +106,7 @@
                                             <span>{{ $schoolData->students->count() }}</span>
                                         </div>
                                     </td>
-                                    <td class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            @if(isset($schoolData->schoolSubscriptions->id))
-                                                {{$schoolData->schoolSubscriptions->subscribe->title}}
-                                            @else
-                                                @if(isset($schoolData->schoolSubscriptionInvoice->id))
-                                                    <a target="_blank" href="{{$schoolData->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
-                                                        Invoice - {{$schoolData->schoolSubscriptionInvoice->id}}
-                                                    </a>
-                                                @endif
-                                            @endif
-                                        </div>
-                                    </td>
+
                                     <td class="text-left">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             {{ $schoolData->user->get_full_name() }}
