@@ -424,48 +424,4 @@
     var redirect_url = window.location.href;
     $(".redirect_url").val(redirect_url);
 
-    $(document).ready(function () {
-
-        if ($(".start_date").length) {
-            $('.start_date').daterangepicker({
-                locale: {
-                    format: 'YYYY-MM-DD',
-                },
-
-                singleDatePicker: true,
-                showDropdowns: false,
-                autoApply: true,
-                startDate: moment(),
-                minDate: moment()
-            });
-
-            $('.start_date').on('apply.daterangepicker', function(ev, picker) {
-                let startDate = picker.startDate.clone().add(1, 'days');
-
-                if ($('.expiry_date').data('daterangepicker')) {
-                    $('.expiry_date').data('daterangepicker').minDate = startDate;
-                    $('.expiry_date').data('daterangepicker').setStartDate(startDate);
-                }
-            });
-        }
-
-
-
-        if ($(".expiry_date").length) {
-            let initialMinDate = $('.start_date').val()
-                ? moment($('.start_date').val(), 'YYYY-MM-DD').add(1, 'days')
-                : moment().add(1, 'days');
-
-            $('.expiry_date').daterangepicker({
-                locale: {
-                    format: 'YYYY-MM-DD',
-                },
-                singleDatePicker: true,
-                showDropdowns: false,
-                autoApply: true,
-                startDate: initialMinDate,
-                minDate: initialMinDate
-            });
-        }
-    });
 </script>
