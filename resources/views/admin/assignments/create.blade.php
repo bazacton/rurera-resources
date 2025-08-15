@@ -716,7 +716,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4 rurera-hide">
                                                             <div class="form-group">
                                                                 <label class="input-label">Review Due Date</label>
                                                                 <div class="input-group">
