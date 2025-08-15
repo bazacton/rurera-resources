@@ -870,6 +870,7 @@
             $(".class-join-link").html("{{ url('/join') }}/"+class_code);
             $(".class-join-link").attr('href', "{{ url('/join') }}/"+class_code);
             $(".student_class_id").val($(this).val());
+            console.log('sdfsdf---'+$(this).val());
             $(".class-name-full").html(class_title);
         });
 
@@ -911,7 +912,6 @@
             $(".rurera-confirm-modal").modal('show');
         });
 
-        $(".student-class-change").change();
         $('body').on('click', '.student-edit-modal', function (e) {
 
             $(".edit-student-form-block").addClass('active');
