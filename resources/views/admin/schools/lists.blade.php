@@ -7,7 +7,17 @@
 @section('content')
 <section class="section skeleton">
     <div class="section-header">
-        <h1>Schools</h1>
+        <h1>Schools
+            @if(isset($schoolData->schoolSubscriptions->id))
+                {{$schoolData->schoolSubscriptions->subscribe->title}}
+            @else
+                @if(isset($schoolData->schoolSubscriptionInvoice->id))
+                    <a target="_blank" href="{{$schoolData->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
+                        Invoice - {{$schoolData->schoolSubscriptionInvoice->id}}
+                    </a>
+                @endif
+            @endif
+        </h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
             </div>
