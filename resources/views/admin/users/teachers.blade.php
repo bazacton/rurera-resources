@@ -260,7 +260,7 @@
                         <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form" autocomplete="off">
                             {{ csrf_field() }}
                             <div class="form-group {{(!auth()->user()->isDistricAdmin() && !auth()->user()->isAdminRole())? 'rurera-hide' : ''}}">
-                                <label>Select School 1</label>
+                                <label>Select School</label>
                                 <div class="select-box">
                                     <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
                                         @if($schools_list->count() > 0)
@@ -345,21 +345,23 @@
                         {{ csrf_field() }}
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
-                        <div class="form-group">
-                            <div class="select-holder">
-                                <label class="input-label">Select School 222</label>
-                                <div class="select-box input-group">
-                                    <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
-                                        @if($schools_list->count() > 0)
-                                            @php $row_no = 0; @endphp
-                                            @foreach($schools_list as $schoolObj)
-                                                @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
-                                                <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
-                                                @php $row_no++; @endphp
-                                            @endforeach
-                                        @endif
-                                    </select>
-                                </div>
+                        <div class="form-group {{(!auth()->user()->isDistricAdmin() && !auth()->user()->isAdminRole())? 'rurera-hide' : ''}}">
+                            <label>Select School</label>
+                            <div class="select-box">
+                                <select name="school_id" class="student-school-change schools-list-ajax" data-next_target="school-classes-list" data-selected_value="0">
+                                    @if($schools_list->count() > 0)
+                                        @php $row_no = 0; @endphp
+                                        @foreach($schools_list as $schoolObj)
+                                            @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
+                                            @if(!auth()->user()->isDistricAdmin() && !auth()->user()->isAdminRole())
+                                                @php $is_checked = ($schoolObj->id == $userObj->school_id)? 'checked' : $is_checked; @endphp
+                                            @else @php continue; @endphp
+                                            @endif
+                                            <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
+                                            @php $row_no++; @endphp
+                                        @endforeach
+                                    @endif
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
