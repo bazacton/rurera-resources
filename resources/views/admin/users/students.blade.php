@@ -870,6 +870,7 @@
             $(".class-join-link").html("{{ url('/join') }}/"+class_code);
             $(".class-join-link").attr('href', "{{ url('/join') }}/"+class_code);
             $(".student_class_id").val($(this).val());
+            console.log('sdfsdf'+$(this).val());
             $(".class-name-full").html(class_title);
         });
 
@@ -879,6 +880,7 @@
             $(".import-students-file")[0].reset();
             $(".student-modal-box .modal-section").removeClass('active');
             $(".student-modal-main").addClass('active');
+            $(".student-class-change").change();
         });
 
 
