@@ -81,7 +81,7 @@
                                     <th class="text-left">No of Classes</th>
                                     <th class="text-left">No of Faculty</th>
                                     <th class="text-left">No of Students</th>
-                                    @if($user->isAdminRole())
+                                    @if($userObj->isAdminRole())
                                         <th class="text-left">Membership</th>
                                     @endif
                                     <th class="text-left">Added by</th>
