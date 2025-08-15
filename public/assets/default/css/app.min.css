@@ -1534,7 +1534,7 @@ Lms Books Listing Style End
 .lms-choose-membership .input-field {border: 0;border-radius: 0;background: none;padding: 0;height: auto;width: 100%;position: relative;}
 .lms-choose-membership .input-field input[type="text"],
 .lms-choose-membership .select-box select,
-.edit-user-modal select.form-control {background: #fff; border-radius: 6px;height: 52px;width: 100%;padding: 11px;border: 1px solid #ddd;color: #b5b8bf;}
+.edit-user-modal select.form-control {background: #fff; border-radius: 6px;height: 52px;width: 100%;padding: 11px;border: 1px solid #ddd;}
 .edit-user-modal select.form-control {font-size: inherit; padding-left: 10px;}
 .book-form label .icon-box {height: 18px; width: 18px; display: inline-block; }
 .book-form label .icon-box img {max-width: 100%;}
