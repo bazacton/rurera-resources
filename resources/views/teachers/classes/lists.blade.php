@@ -83,9 +83,9 @@
                                         <!-- Class Name with Color -->
 
                                         <div class="admin-rurera-tabs-details details-tab">
-                                            <div class="form-group">
+                                            <div class="form-group {{($schools_list->count() < 2)? 'rurera-hide' : ''}}">
                                                 <label for="SchoolName">Select School</label>
-                                                <div class="select-holder input-group {{($schools_list->count() < 2)? 'rurera-hide' : ''}}">
+                                                <div class="select-holder input-group">
                                                     <div class="select-box">
                                                         <select class="student-school-change" name="school_id">
                                                             @if($schools_list->count() > 0)
@@ -99,6 +99,8 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                            </div>
+                                                <div class="form-group">
                                                 <label for="className">Enter class name (Required)</label>
                                                 <div class="input-group">
                                                     <input
