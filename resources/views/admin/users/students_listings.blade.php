@@ -89,9 +89,11 @@
                                     <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
                                         <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
                                     </button>
+                                    @if(!auth()->user()->isTeacherPanel())
                                     <button data-id="{{$studentObj->id}}" class="delete-student" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete Student">
                                         <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
                                     </button>
+                                    @endif
                                 </div>
                                 @endif
                             </td>
