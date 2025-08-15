@@ -18,18 +18,18 @@
     </div>
 
     <div class="content-holder card p-25">
+        @can('admin_classes_create')
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="nav-area">
                     <div class="teacher-controls">
                         <button type="button" class="google_classroom_btn1" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
-                        @can('admin_classes_create')
                         <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
-                        @endcan
                     </div>
                 </div>
             </div>
         </div>
+        @endcan
         <div class="section-body">
             <div class="row">
                 <div class="col-12 col-md-12">
