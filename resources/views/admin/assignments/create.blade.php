@@ -661,7 +661,7 @@
                                                                placeholder=""/>
                                                     </div>
 
-                                                    <div class="form-group">
+                                                    <div class="form-group rurera-hide">
                                                         <label class="input-label">Practice Description</label>
                                                         <textarea
                                                             name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][description]"
@@ -675,7 +675,7 @@
                                                     </div>
 
                                                     <div class="row">
-                                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                                             <div class="form-group">
                                                                 <label class="input-label">Practice Start Date</label>
                                                                 <div class="input-group">
@@ -698,7 +698,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                                             <div class="form-group">
                                                                 <label class="input-label">Practice Due Date</label>
                                                                 <div class="input-group">
@@ -716,7 +716,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4 rurera-hide">
                                                             <div class="form-group">
                                                                 <label class="input-label">Review Due Date</label>
                                                                 <div class="input-group">
@@ -936,7 +936,7 @@
                                                     </div>
 
 
-                                                    <div class="form-group">
+                                                    <div class="form-group rurera-hide">
                                                         <label class="input-label">Assignment Reviewer</label>
                                                         <div class="input-group">
                                                             <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_reviewer]"
