@@ -687,6 +687,17 @@
 
 <script>
     /*Skelton Loading Fungtion Start*/
+
+    $(document).on('change', '.student-class-change', function (e) {
+        var class_title = $(this).find('option:selected').attr('data-class_title');
+        var class_code = $(this).find('option:selected').attr('data-class_code');
+        $(".class-join-link").html("{{ url('/join') }}/"+class_code);
+        $(".class-join-link").attr('href', "{{ url('/join') }}/"+class_code);
+        var this_value = $(this).find('option:selected').val();
+        $(".student_class_id").val($(this).val());
+        console.log('sdfsdf---'+this_value);
+        $(".class-name-full").html(class_title);
+    });
     $(document).ready(function () {
         const $el = document.querySelector(".section-body");
 
@@ -864,16 +875,7 @@
 
 
 
-        $(document).on('change', '.student-class-change', function (e) {
-            var class_title = $(this).find('option:selected').attr('data-class_title');
-            var class_code = $(this).find('option:selected').attr('data-class_code');
-            $(".class-join-link").html("{{ url('/join') }}/"+class_code);
-            $(".class-join-link").attr('href', "{{ url('/join') }}/"+class_code);
-            var this_value = $(this).find('option:selected').val();
-            $(".student_class_id").val($(this).val());
-            console.log('sdfsdf---'+this_value);
-            $(".class-name-full").html(class_title);
-        });
+
 
         $(document).on('click', '.add-student-btn', function (e) {
             $(".add-student-single")[0].reset();
@@ -949,7 +951,6 @@
 
 
     });
-    $(".student-class-change").change();
     /*Skelton Loading Fungtion End*/
 </script>
 
