@@ -798,7 +798,6 @@
                                             <label for="district_teacher_role">District Admin</label>
                                         </div>
                                     </div>
-                                @endif
                                 <div class="input-group">
                                     <div class="radio-buttons">
                                         <input type="radio" id="school_admin_role" name="role_id"
@@ -806,6 +805,7 @@
                                         <label for="school_admin_role">School Admin</label>
                                     </div>
                                 </div>
+                                @endif
                             </div>
                             <div class="textarea-field">
                                 <textarea name="teachers_email" class="teachers_email_input" placeholder="Add Email address of the Member you want to invite"></textarea>
@@ -857,7 +857,6 @@
                                         <label for="district_teacher_role-add">District Admin</label>
                                     </div>
                                 </div>
-                            @endif
                             <div class="input-group">
                                 <div class="radio-buttons">
                                     <input type="radio" id="school_admin_role-add" name="role_id"
@@ -865,6 +864,7 @@
                                     <label for="school_admin_role-add">School Admin</label>
                                 </div>
                             </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label>Full Name</label>
