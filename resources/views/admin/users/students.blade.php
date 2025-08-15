@@ -911,6 +911,7 @@
             $(".rurera-confirm-modal").modal('show');
         });
 
+        $(".student-class-change").change();
         $('body').on('click', '.student-edit-modal', function (e) {
 
             $(".edit-student-form-block").addClass('active');
