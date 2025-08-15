@@ -869,8 +869,9 @@
             var class_code = $(this).find('option:selected').attr('data-class_code');
             $(".class-join-link").html("{{ url('/join') }}/"+class_code);
             $(".class-join-link").attr('href', "{{ url('/join') }}/"+class_code);
+            var this_value = $(this).find('option:selected').val();
             $(".student_class_id").val($(this).val());
-            console.log('sdfsdf---'+$(this).val());
+            console.log('sdfsdf---'+this_value);
             $(".class-name-full").html(class_title);
         });
 
