@@ -84,7 +84,7 @@
                                     </thead>
                                     <tbody class="students-list">
 
-                                    @php $students = $school->students()->paginate(50); @endphp
+                                    @php //$students = $school->students()->paginate(50); @endphp
                                     @if($students->count() > 0)
                                         @foreach($students as $studentObj)
                                             <tr>
