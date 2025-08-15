@@ -9,6 +9,10 @@
         {{ csrf_field() }}
         <input type="hidden" name="role_id" value="{{$role_id}}">
         <input type="hidden" name="school_id" value="{{$userObj->school_id}}">
+        @if(isset($class_id))
+            <input type="hidden" name="class_id" value="{{$class_id}}">
+        @endif
+
         <table>
             <thead>
                 <tr>

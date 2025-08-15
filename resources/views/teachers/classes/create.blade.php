@@ -839,6 +839,8 @@
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
                         <input type="hidden" name="school_id" value="{{$class->school_id}}">
+                        <input type="hidden" name="class_id" value="{{$class->id}}">
+
 
                         <div class="form-group">
                             <label class="input-label">Role</label>
