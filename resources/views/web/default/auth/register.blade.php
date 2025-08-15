@@ -29,7 +29,7 @@
                 <div class="login-card mt-20 mb-10">
                     <h1 class="font-20 font-weight-bold">{{ trans('auth.signup') }} as Tutor</h1>
 
-                    <form method="post" action="/register" class="mt-35">
+                    <form method="post" action="/register" class="mt-35" autocomplete="off">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <!-- @if($registerMethod == 'mobile')
                             @include('web.default.auth.register_includes.mobile_field') 
