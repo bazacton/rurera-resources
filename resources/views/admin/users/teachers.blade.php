@@ -269,7 +269,6 @@
                                                 @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
                                                 @if(!auth()->user()->isDistricAdmin() && !auth()->user()->isAdminRole())
                                                     @php $is_checked = ($schoolObj->id == $userObj->school_id)? 'checked' : $is_checked; @endphp
-                                                @else @php continue; @endphp
                                                 @endif
                                                 <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
                                                 @php $row_no++; @endphp
@@ -355,7 +354,6 @@
                                             @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
                                             @if(!auth()->user()->isDistricAdmin() && !auth()->user()->isAdminRole())
                                                 @php $is_checked = ($schoolObj->id == $userObj->school_id)? 'checked' : $is_checked; @endphp
-                                            @else @php continue; @endphp
                                             @endif
                                             <option value="{{$schoolObj->id}}" {{$is_checked}}>{{$schoolObj->title}}</option>
                                             @php $row_no++; @endphp
