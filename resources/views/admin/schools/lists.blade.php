@@ -7,23 +7,24 @@
 @section('content')
 <section class="section skeleton">
     <div class="section-header">
-        <h1>Schools
-            @if($userObj->isDistricAdmin())
-            @if(isset($userObj->userSchool->schoolSubscriptions->id))
-                {{$userObj->userSchool->schoolSubscriptions->subscribe->title}}
-            @else
-                @if(isset($userObj->userSchool->schoolSubscriptionInvoice->id))
-                    <a target="_blank" href="{{$userObj->userSchool->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
-                        Invoice - {{$userObj->userSchool->schoolSubscriptionInvoice->id}}
-                    </a>
-                @endif
-            @endif
-            @endif
-        </h1>
+        <h1>Schools</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
             </div>
             <div class="breadcrumb-item">Schools</div>
+        </div>
+        <div class="school-membership">
+            @if($userObj->isDistricAdmin())
+                @if(isset($userObj->userSchool->schoolSubscriptions->id))
+                    {{$userObj->userSchool->schoolSubscriptions->subscribe->title}}
+                @else
+                    @if(isset($userObj->userSchool->schoolSubscriptionInvoice->id))
+                        <a target="_blank" href="{{$userObj->userSchool->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
+                            Invoice - {{$userObj->userSchool->schoolSubscriptionInvoice->id}}
+                        </a>
+                    @endif
+                @endif
+            @endif
         </div>
     </div>
 
