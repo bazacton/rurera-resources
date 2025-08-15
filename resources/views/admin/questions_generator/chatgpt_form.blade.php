@@ -124,6 +124,7 @@
 													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
 													$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
 													@endphp
+
 													<tr class="topic_parts accordion-parent" data-child_class="subtopic_prompts_{{$subTopicObj->id}}">
 														<td data-label="Topic Part Item">
 															<span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$subTopicObj->title}}</span>
