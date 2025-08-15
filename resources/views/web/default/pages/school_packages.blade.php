@@ -86,7 +86,6 @@
                                         <button itemprop="button" type="submit"  data-type="package_selection"
                                                 class="select-btn {{$selection_class}} btn w-100 " data-toggle="modal" data-target="#subscriptionModal">Get Started Now
                                         </button>
-                                        <button class="select-btn" onclick="selectPackage()">Get Started Now</button>
                                     </div>
                                 </div>
                             </div>
