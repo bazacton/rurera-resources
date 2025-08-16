@@ -211,16 +211,20 @@
                                                         <div class="input-group">
 
                                                             <div class="radio-buttons">
-                                                                <label class="card-radio">
-                                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                                           class="assignment_topic_type_check" value="practice" checked>
-                                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                 <img src="/assets/default/img/assignment-logo/practice.png">
-                                                                    <h3>Courses</h3>
-                                                               </div>
-                                                          </span>
-                                                                </label>
+
+                                                                @if(auth()->user()->subscription('courses'))
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                               class="assignment_topic_type_check" value="practice" checked>
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                 <img src="/assets/default/img/assignment-logo/practice.png">
+                                                                                    <h3>Courses</h3>
+                                                                               </div>
+                                                                        </span>
+                                                                    </label>
+                                                                @endif
+                                                                    @if(auth()->user()->subscription('sats'))
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                            class="assignment_topic_type_check" value="sats">
@@ -231,6 +235,9 @@
                                                                </div>
                                                           </span>
                                                                 </label>
+                                                                @endif
+
+                                                                @if(auth()->user()->subscription('11plus'))
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                            class="assignment_topic_type_check" value="11plus">
@@ -242,6 +249,9 @@
 
                                                           </span>
                                                                 </label>
+                                                                    @endif
+
+                                                                    @if(auth()->user()->subscription('11plus'))
 
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
@@ -254,6 +264,9 @@
 
                                                               </span>
                                                                 </label>
+                                                                    @endif
+
+                                                                    @if(auth()->user()->subscription('11plus'))
 
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
@@ -266,6 +279,9 @@
 
                                                               </span>
                                                                 </label>
+                                                                    @endif
+
+                                                                    @if(auth()->user()->subscription('11plus'))
 
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
@@ -278,6 +294,9 @@
 
                                                               </span>
                                                                 </label>
+                                                                    @endif
+
+                                                                    @if(auth()->user()->subscription('vocabulary'))
 
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
@@ -290,6 +309,9 @@
 
                                                               </span>
                                                                 </label>
+                                                                    @endif
+
+                                                                    @if(auth()->user()->subscription('timestables'))
 
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
@@ -302,6 +324,8 @@
 
                                                               </span>
                                                                 </label>
+                                                                    @endif
+
                                                                 <label class="card-radio">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                            class="assignment_topic_type_check" value="assignment">

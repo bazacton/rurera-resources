@@ -233,9 +233,10 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                                                         if( $parent_type == 'timestables' || $parent_type == 'timestables_assignment'){
                                                             $detail_link = '/panel/results/'.$resultObj->id.'/timetables';
                                                         }
+                                                        $assignment_percentage = $QuestionsAttemptController->get_percetange_corrct_answer($resultObj);
                                                         @endphp
 
-                                                       <a href="{{$detail_link}}" class="progrss-bar"><span class="progrss-bar-span" style="width:{{$QuestionsAttemptController->get_percetange_corrct_answer($resultObj)}}%"></span></a>
+                                                       <a href="{{$detail_link}}" class="progrss-bar"><span class="progrss-bar-span" style="width:{{$assignment_percentage}}%" title="{{$assignment_percentage}}%"></span></a>
                                                        @php $attempt_counter++; @endphp
 
                                                     @endforeach
