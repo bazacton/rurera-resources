@@ -292,7 +292,9 @@
         </div>
     </div>
 	@include('web.default.flash_message')
-	@include('web.default.panel.set_work.set_work_listing',['assignments' => $assignments])
+    @if(isset($assignments))
+	    @include('web.default.panel.set_work.set_work_listing',['assignments' => $assignments])
+    @endif
 </div>
 @endif
 @if(auth()->user()->isUser())
