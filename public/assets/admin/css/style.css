@@ -1354,7 +1354,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     width: 20px;
 }
 .form-group:has(.classes_filter) {
-    margin: 0;
+    margin: 0 0 0 10px;
 }
 .select-holder:has(.classes_filter) {
     position: relative;
