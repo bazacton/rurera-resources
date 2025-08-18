@@ -202,7 +202,7 @@
                                         <div class="pending-invites-controls">
                                             <a class="dropdown-item" href="/admin/assignments/{{$assignmentObj->id}}/progress"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Progress</a>
                                             <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete-menu.svg" alt="trash-bin"> Delete</a>
                                             <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                         </div>
                                     </td>
