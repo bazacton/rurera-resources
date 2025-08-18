@@ -3981,13 +3981,14 @@ Qustions AI Tabs Style End
 }
 .teacher-header:after {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    background: url(/assets/default/img/modal-head-img.png) no-repeat 95% 1px;
+    right: 20px;
+    bottom: -50px;
+    background: url(/assets/default/img/modal-head-img.png) no-repeat;
     background-size: contain;
-    height: 176px;
-    width: 176px;
+    width: 130px;
     content: "";
+    z-index: 3;
+    height: 100px;
 }
 .teacher-header .close {
     position: absolute;
