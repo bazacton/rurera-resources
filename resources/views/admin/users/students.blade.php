@@ -93,6 +93,8 @@
                                         <tr>
                                             <th>Student</th>
                                             <th>Last Login</th>
+                                            <th>School</th>
+                                            <th>Class</th>
                                             <th>Action</th>
                                         </tr>
                                         </thead>
@@ -117,6 +119,17 @@
                                                     <td data-th="Last Login">
                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                             <span>{{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</span>
+                                                        </div>
+                                                    </td>
+
+                                                    <td data-th="School">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>{{isset($joiningRequestObj->student->userSchool->id)? $joiningRequestObj->student->userSchool->title : '-'}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Class">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>{{isset($joiningRequestObj->student->userClass->id)? $joiningRequestObj->student->userClass->title : '-'}}</span>
                                                         </div>
                                                     </td>
                                                     <td>
