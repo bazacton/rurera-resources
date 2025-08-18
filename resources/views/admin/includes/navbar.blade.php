@@ -49,6 +49,28 @@
             </li>
         @endcan
 
+
+
+
+
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                <div class="d-sm-none d-lg-inline-block">{{ $default_school_selected }}</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+
+                @if($main_schools_list->count() > 0)
+                    @foreach($main_schools_list as $schoolObj)
+                        <a href="/admin/change_default_school/{{$schoolObj->id}}" class="dropdown-item has-icon">
+                            {{$schoolObj->title}}
+                        </a>
+                    @endforeach
+                @endif
+            </div>
+        </li>
+
+
+
         <li class="dropdown">
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                 <img alt="image" src="{{ $authUser->getAvatar() }}" class="rounded-circle mr-1">
