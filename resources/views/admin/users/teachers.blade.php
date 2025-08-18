@@ -58,7 +58,7 @@
 
             <div class="row w-100">
                 <div class="col-12 col-md-12">
-                    <div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap justify-content-center pb-15">
+                    <div class="admin-rurera-tabs-holder">
                         <ul data-target_class="admin-rurera-tabs-teachers" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="teachers-tab-teachers" href="javascript:;">
@@ -73,29 +73,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="teacher-search-filter-holder ml-auto">
-                            <div class="invite-faculty">
-                                <div class="dropdown-box">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                            Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                                            <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="teacher-search-filter border-0 p-0">
-                                <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
-                                    <input type="text" class="search-teachers" placeholder="Search Teachers">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -115,6 +92,29 @@
                                                 <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                 </div>
                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="invite-faculty">
+                                    <div class="dropdown-box">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+                                                <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="teacher-search-filter border-0 p-0">
+                                    <div class="search-field">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                        </span>
+                                        <input type="text" class="search-teachers" placeholder="Search Teachers">
                                     </div>
                                 </div>
                             </div>
