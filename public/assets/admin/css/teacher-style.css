@@ -6110,6 +6110,13 @@ button.print-download-btn {
 }
 .admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user {
     padding-left: 0 !important;
+    padding-right: 25px !important;
+}
+.admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 /* Teacher Dashboard Header Style End */
 .admin_teacher_role .main-content {
