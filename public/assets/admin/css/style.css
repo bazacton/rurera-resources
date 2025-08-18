@@ -1375,6 +1375,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     justify-content: space-between;
     padding: 15px;
 }
+.teacher-table .teacher-search-filter-holder {
+    gap: 10px;
+}
 .bulk-actions {
     position: relative;
     display: flex;
