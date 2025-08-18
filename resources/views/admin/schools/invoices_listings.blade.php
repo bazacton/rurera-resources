@@ -132,7 +132,7 @@
             $el
                 .querySelectorAll(".skelton-hide")
                 .forEach((el) => el.classList.remove("skelton-hide"));
-        }, 2000);
+        }, 1000);
     });
 
     $(document).on('change', '.mark-invoice-paid', function (e) {

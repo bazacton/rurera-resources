@@ -470,7 +470,7 @@
         $el
             .querySelectorAll(".skelton-hide")
             .forEach((el) => el.classList.remove("skelton-hide"));
-        }, 3000);
+        }, 1000);
 
         $('body').on('click', '.unlink-teachers', function (e) {
             var type_class = $(this).attr('data-type_class');

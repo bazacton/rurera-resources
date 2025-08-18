@@ -123,6 +123,6 @@
             $el
                 .querySelectorAll(".skelton-hide")
                 .forEach((el) => el.classList.remove("skelton-hide"));
-        }, 2000);
+        }, 1000);
     });
 </script>

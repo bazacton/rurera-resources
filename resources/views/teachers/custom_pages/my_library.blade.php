@@ -2208,7 +2208,7 @@ $(document).ready(function () {
     $el
         .querySelectorAll(".skelton-hide")
         .forEach((el) => el.classList.remove("skelton-hide"));
-    }, 3000);
+    }, 1000);
 /*Skelton Loading Fungtion End*/
 
 });
