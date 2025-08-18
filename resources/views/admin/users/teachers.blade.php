@@ -80,7 +80,6 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="input-label">Classes</label>
                                         <div class="select-holder">
                                             <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
                                                 <option value="all">All Classes</option>
