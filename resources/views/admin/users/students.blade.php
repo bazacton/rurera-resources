@@ -21,7 +21,7 @@
 
             <div class="row w-100">
                 <div class="col-12 col-md-12">
-                    <div class="admin-rurera-tabs-holder">
+                    <div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap justify-content-center">
                         <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item skelton-height-lg">
                                 <a class="nav-link active" id="students-tab-students" href="javascript:;">
@@ -36,7 +36,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="teacher-search-filter d-inline-flex p-0 border-0">
+                        <div class="teacher-search-filter d-inline-flex p-0 border-0 ml-auto">
                             <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
                             <div class="search-field">
                                 <span class="icon-box">
