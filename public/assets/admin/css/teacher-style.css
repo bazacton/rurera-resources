@@ -6146,6 +6146,9 @@ button.print-download-btn {
     transform: translateY(-50%);
     right: 0;
 }
+.main-navbar.navbar-expand-lg .navbar-nav {
+    align-items: center;
+}
 /* Teacher Dashboard Header Style End */
 .admin_teacher_role .main-content {
     padding-right: 20px;
