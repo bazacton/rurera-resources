@@ -200,10 +200,10 @@
                                     </td>
                                     <td data-th="Actions">
                                         <div class="pending-invites-controls">
-                                            <a class="dropdown-item" href="/admin/assignments/{{$assignmentObj->id}}/progress"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Progress</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete-menu.svg" alt="trash-bin"> Delete</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                            <a class="dropdown-item" href="/admin/assignments/{{$assignmentObj->id}}/progress"><img src="/assets/default/svgs/envelope.svg" alt="envelope" class="mr-0"> Progress</a>
+                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print" class="mr-0"> Print</a>
+                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete-menu.svg" alt="trash-bin" class="mr-0"> Delete</a>
+                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope" class="mr-0"> Email To Prent</a>
                                         </div>
                                     </td>
                                 </tr>
