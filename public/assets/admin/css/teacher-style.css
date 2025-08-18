@@ -4057,7 +4057,7 @@ Qustions AI Tabs Style End
     box-shadow: none;
 }
 .add-student-modal .modal-dialog .modal-content {
-    box-shadow: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .add-student-modal .modal-body {
     background-color: #fff;
