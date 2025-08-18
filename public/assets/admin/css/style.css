@@ -1523,7 +1523,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     opacity: 0;
     border-radius: 5px;
 }
-.teacher-table table tr:hover .pending-invites-controls {
+.teacher-table table tr:hover .pending-invites-controls,
+.assignments-table table tr:hover .pending-invites-controls {
     visibility: visible;
     opacity: 1;
 }
