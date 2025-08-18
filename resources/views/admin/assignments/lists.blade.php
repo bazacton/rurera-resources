@@ -110,34 +110,44 @@
             <div class="admin-rurera-tabs-holder">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link {{($assignment_tab == 'all')? 'active' : ''}}" id="topics-tab" href="/admin/assignments">
-                            <i class="fas fa-file mx-0"></i>
-                            <span class="tab-title">All Assignments</span>
-                        </a>
+                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                            <a class="nav-link {{($assignment_tab == 'all')? 'active' : ''}}" id="topics-tab" href="/admin/assignments">
+                                <i class="fas fa-file mx-0"></i>
+                                <span class="tab-title">All Assignments</span>
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{($assignment_tab == 'scheduled')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/scheduled" >
-                            <i class="fas fa-calendar-week mx-0"></i>
-                            <span class="tab-title">Scheduled</span>
-                        </a>
+                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                            <a class="nav-link {{($assignment_tab == 'scheduled')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/scheduled" >
+                                <i class="fas fa-calendar-week mx-0"></i>
+                                <span class="tab-title">Scheduled</span>
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{($assignment_tab == 'running')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/running" >
-                            <i class="fas fa-car mx-0"></i>
-                            <span class="tab-title">Running</span>
-                        </a>
+                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                            <a class="nav-link {{($assignment_tab == 'running')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/running" >
+                                <i class="fas fa-car mx-0"></i>
+                                <span class="tab-title">Running</span>
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{($assignment_tab == 'completed')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/completed" >
-                            <i class="fas fa-thumbs-up mx-0"></i>
-                            <span class="tab-title">Completed</span>
-                        </a>
+                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                            <a class="nav-link {{($assignment_tab == 'completed')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/completed" >
+                                <i class="fas fa-thumbs-up mx-0"></i>
+                                <span class="tab-title">Completed</span>
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{($assignment_tab == 'paused')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/paused" >
-                            <i class="fas fa-pause mx-0"></i>
-                            <span class="tab-title">Paused</span>
-                        </a>
+                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                            <a class="nav-link {{($assignment_tab == 'paused')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/paused" >
+                                <i class="fas fa-pause mx-0"></i>
+                                <span class="tab-title">Paused</span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
