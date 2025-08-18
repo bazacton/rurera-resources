@@ -4280,6 +4280,11 @@ Qustions AI Tabs Style End
     align-items: center;
     gap: 6px;
 }
+.add-student-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 31.6px;
+}
 .add-student-btn img {
     height: 18px;
     width: 18px;
