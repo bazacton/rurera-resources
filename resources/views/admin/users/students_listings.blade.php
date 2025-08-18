@@ -82,10 +82,10 @@
                                         <input type="checkbox" class="sections-students" value="{{ $studentObj->id }}">
                                     </div>
                                     <strong>
-                                                                            <span class="user-lable">
-                                                                                {{ $studentObj->get_full_name() }} -- {{ $studentObj->id }}
-                                                                                <span class="user-email">{{ $studentObj->email }}</span>
-                                                                            </span>
+                                        <span class="user-lable">
+                                            <a href="/admin/students/{{ $studentObj->id }}/edit">{{ $studentObj->get_full_name() }}</a>
+                                            <span class="user-email">{{ $studentObj->email }}</span>
+                                        </span>
                                     </strong>
                                 </div>
                             </td>
