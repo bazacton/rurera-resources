@@ -1350,6 +1350,17 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     height: 20px;
     width: 20px;
 }
+.teacher-search-filter-holder .form-group {
+    margin: 0;
+}
+.teacher-table .classes_filter.form-control:not([size]):not([multiple]) {
+    height: 31px;
+    line-height: normal;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+}
 .export-btn {
     color: var(--blue);
     display: inline-flex;
