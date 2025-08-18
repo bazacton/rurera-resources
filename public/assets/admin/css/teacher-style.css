@@ -3977,9 +3977,17 @@ Qustions AI Tabs Style End
     border-bottom: 1px solid #ddd;
     padding: 0 0 10px;
     box-sizing: border-box;
+    margin: 0 0 30px;
+}
+.teacher-header:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     background: url(/assets/default/img/modal-head-img.png) no-repeat 95% 1px;
     background-size: contain;
-    margin: 0 0 30px;
+    height: 176px;
+    width: 176px;
+    content: "";
 }
 .teacher-header .close {
     position: absolute;
