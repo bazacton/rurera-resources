@@ -384,9 +384,8 @@ table td .dropdown-toggle {cursor: pointer;}
 .dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], 
 .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {right: 0; bottom: auto; left: auto !important; top: auto !important; transform: none !important;}
 .assignments-table table.table tbody tr td[data-th="no-records"] {
-    padding: 15px !important;
+    padding: 25px !important;
 }
-.assignments-table table.table tbody tr td
 
 /* Assignments New Table Style End */
 
