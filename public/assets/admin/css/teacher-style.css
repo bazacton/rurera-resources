@@ -160,7 +160,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role input[type="checkbox"]:checked ~ .custom-checkbox-label:before {background-color: #00a269; content: "\2713";}
 .admin_teacher_role .modal-footer .btn-primary {background-color: #6bd700; border-color: #6bd700;}
 .create-class-modal .add-btn,
-.class-edit-modal .add-btn {background-color: #47c363; border-color: #47c363; box-shadow: none; font-size: 14px; padding: 5px 10px; width: auto; border-radius: 3px; height: auto; line-height: normal;}
+.class-edit-modal .add-btn {background-color: #47c363; border-color: #47c363; box-shadow: none; font-size: 14px; padding: 5px 10px; width: auto; border-radius: 3px; height: auto; line-height: normal; }
 .create-class-modal .add-btn {border-radius: 50%; box-shadow: 0 2px 6px #81d694; padding: 0; width: 24px; height: 24px;}
 .create-class-modal .add-btn i {font-size: 12px;margin-right: 0;}
 #subCategories strong {color: #cbcbcb;}
