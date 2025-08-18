@@ -58,23 +58,14 @@
                 <div class="d-sm-none d-lg-inline-block"><span>School Selection <em>{{ $default_school_selected }}</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg"></div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-box average-grade-dropdown">
-                    <div class="dropdown">
-                        <div class="dropdown-menu">
-                            <ul>
-                                @if($main_schools_list->count() > 0)
-                                    @foreach($main_schools_list as $schoolObj)
-                                        <li><a href="/admin/change_default_school/{{$schoolObj->id}}" class="dropdown-item has-icon">
-                                                {{$schoolObj->title}}
-                                            </a>
-                                        </li>
-                                    @endforeach
-                                @endif
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                @if($main_schools_list->count() > 0)
+                    @foreach($main_schools_list as $schoolObj)
+                        <a href="/admin/change_default_school/{{$schoolObj->id}}" class="dropdown-item has-icon">
+                            {{$schoolObj->title}}
+                        </a>
+                    @endforeach
+                @endif
             </div>
         </li>
 
