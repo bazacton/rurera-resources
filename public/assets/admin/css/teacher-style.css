@@ -244,6 +244,12 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border-right: 2px solid #aaa;
     pointer-events: none;
 }
+.class-edit-content input[type=checkbox] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
 /* Admin Create-Class-Modal Style End */
 
 /* Admin Create-Google-Class-Modal Style Start */
