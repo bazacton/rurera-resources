@@ -6109,6 +6109,20 @@ button.print-download-btn {
 }
 .dropdown.average-grade-dropdown {
     margin-right: 10px;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.dropdown.average-grade-dropdown span {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+.dropdown.average-grade-dropdown span em {
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
 }
 .navbar .average-grade-dropdown .nav-link.nav-link-user img {
     display: none;
@@ -6124,6 +6138,7 @@ button.print-download-btn {
 .admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user {
     padding-left: 0 !important;
     padding-right: 25px !important;
+    color: currentcolor;
 }
 .admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user:after {
     position: absolute;
