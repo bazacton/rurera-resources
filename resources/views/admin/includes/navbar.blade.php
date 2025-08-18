@@ -58,14 +58,26 @@
                 <div class="d-sm-none d-lg-inline-block">{{ $default_school_selected }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-
-                @if($main_schools_list->count() > 0)
-                    @foreach($main_schools_list as $schoolObj)
-                        <a href="/admin/change_default_school/{{$schoolObj->id}}" class="dropdown-item has-icon">
-                            {{$schoolObj->title}}
+                <div class="dropdown-box average-grade-dropdown">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <span>Average Grade <em>Individual and want spread knowledge</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                         </a>
-                    @endforeach
-                @endif
+                        <div class="dropdown-menu">
+                            <ul>
+                                @if($main_schools_list->count() > 0)
+                                    @foreach($main_schools_list as $schoolObj)
+                                        <li><a href="/admin/change_default_school/{{$schoolObj->id}}" class="dropdown-item has-icon">
+                                                {{$schoolObj->title}}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                @endif
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </li>
 
