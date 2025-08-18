@@ -164,7 +164,7 @@
                                     <th>Start & End Date</th>
                                     <th>Accuracy</th>
                                     <th>Status</th>
-                                    <th>Actions</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
