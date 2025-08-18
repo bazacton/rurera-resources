@@ -61,7 +61,7 @@
                 <div class="dropdown-box average-grade-dropdown">
                     <div class="dropdown">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <span>Average Grade <em>Individual and want spread knowledge</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                            <span>School Selection <em>{{ $default_school_selected }}</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                         </a>
                         <div class="dropdown-menu">
                             <ul>
