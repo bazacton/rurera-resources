@@ -454,6 +454,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-12 d-flex flex-wrap px-1">
+                        @if($classes->count() > 0)
                         @foreach($classes as $classData)
                             @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
 
@@ -510,6 +511,9 @@
                                 </div>
                             </div>
                         @endforeach
+                        @else
+                            <div class="sr-no text-center"><span>No records found</span></div>
+                        @endif
                     </div>
                 </div>
             </div>
