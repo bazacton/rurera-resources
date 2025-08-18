@@ -383,7 +383,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .hide-lg {display: none;}
 .dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], 
 .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {right: 0; bottom: auto; left: auto !important; top: auto !important; transform: none !important;}
-.assignments-table table.table:has(.skelton-hide) thead tr .no-records {
+.assignments-table table.table tr .no-records {
     padding: 15px !important;
 }
 .assignments-table table.table tbody tr td
