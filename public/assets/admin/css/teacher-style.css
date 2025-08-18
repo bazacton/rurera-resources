@@ -6067,7 +6067,7 @@ button.print-download-btn {
 .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item,
 .admin_teacher_role .section .section-header .breadcrumb-item+.breadcrumb-item::before,
 .admin_teacher_role .navbar .nav-link.nav-link-user,
-.admin_teacher_role .section .section-header h1 {
+.admin_teacher_role .section .section-header h1, .admin_teacher_role .section-header .school-membership {
     color: #fff;
 }
 .admin_teacher_role .navbar .nav-link.nav-link-user,
