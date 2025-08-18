@@ -6097,6 +6097,20 @@ button.print-download-btn {
     position: relative;
     z-index: 1;
 }
+.navbar .average-grade-dropdown .nav-link.nav-link-user img {
+    display: none;
+}
+.average-grade-dropdown em {
+    display: block;
+    line-height: normal;
+    font-style: normal;
+}
+.average-grade-dropdown .nav-link.nav-link-lg div {
+    margin: 0;
+}
+.admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user {
+    padding-left: 0 !important;
+}
 /* Teacher Dashboard Header Style End */
 .admin_teacher_role .main-content {
     padding-right: 20px;
