@@ -53,16 +53,13 @@
 
 
 
-        <li class="dropdown">
+        <li class="dropdown average-grade-dropdown">
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                <div class="d-sm-none d-lg-inline-block">{{ $default_school_selected }}</div>
+                <div class="d-sm-none d-lg-inline-block"><span>School Selection <em>{{ $default_school_selected }}</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg"></div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-box average-grade-dropdown">
                     <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <span>School Selection <em>{{ $default_school_selected }}</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                        </a>
                         <div class="dropdown-menu">
                             <ul>
                                 @if($main_schools_list->count() > 0)
