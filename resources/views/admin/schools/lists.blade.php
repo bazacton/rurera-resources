@@ -90,6 +90,7 @@
                                      <th><!--{{ trans('admin/main.actions') }}--></th>
                                 </tr>
 
+                                @if($schools->count() > 0)
                                 @foreach($schools as $schoolData)
                                 <tr>
                                     <td>
@@ -163,6 +164,12 @@
 
                                 </tr>
                                 @endforeach
+                                @else
+                                    <tr>
+                                        <td colspan="7" class="text-center">No Records Found</td>
+                                    </tr>
+
+                                @endif
 
                             </table>
                         </div>
