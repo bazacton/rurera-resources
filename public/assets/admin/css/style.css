@@ -1350,7 +1350,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     height: 20px;
     width: 20px;
 }
-.teacher-search-filter-holder .form-group {
+.form-group:has(.classes_filter) {
     margin: 0;
 }
 .select-holder:has(.classes_filter) {
