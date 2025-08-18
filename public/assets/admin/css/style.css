@@ -1493,7 +1493,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     width: 15px;
 }
 .pending-invites-controls button,
-.pending-invites-controls .request-action {
+.pending-invites-controls .request-action,
+.pending-invites-controls a {
     background-color: #fff;
     border: 1px solid #007bff;
     padding: 6px 10px;
