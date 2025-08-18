@@ -1,4 +1,5 @@
 <div class="teacher-table skeleton">
+    @php $search_field = isset($search_field)? $search_field : true; @endphp
     <div class="card">
         <div class="card-header">
 
@@ -10,7 +11,7 @@
                             Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print-action.svg" alt="print"> Print</a>
+                            <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
                             @if(!auth()->user()->isTeacherPanel())
                             @if(!isset($class) || $class->google_id == 0)
                             <a data-class_id="{{isset($class->id)? $class->id : 0}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
@@ -27,13 +28,30 @@
                     <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
                 @endif
                 @endif
+                @if($search_field == true)
                 <div class="search-field">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/search.svg" alt="search">
                     </span>
                     <input type="text" class="search-students" placeholder="Search Students">
                 </div>
+                @endif
             </div>
+            @if(isset($classes_filter) && $classes_filter == true)
+            <div class="form-group">
+                <div class="select-holder">
+                    <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
+                        <option value="all">All Classes</option>
+                        @if( isset($filter_classes_list) && $filter_classes_list->count() > 0)
+                            @foreach($filter_classes_list as $classObj)
+                                <option value="{{$classObj->id}}" @if(request()->get('class_id') == $classObj->id)
+                                    selected @endif>{{$classObj->title}}</option>
+                            @endforeach
+                        @endif
+                    </select>
+                </div>
+            </div>
+            @endif
         </div>
         <div class="card-body p-0 table-sm">
             <table class="table mb-0">
@@ -83,8 +101,8 @@
                             <td>
                                 @if($studentObj->google_class_id == 0)
                                 <div class="pending-invites-controls">
-                                    <a title="Print Student" href="/admin/students/print_details?users={{$studentObj->id}}" target="_blank" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Print Student">
-                                        <img src="/assets/default/svgs/print-action.svg" alt="print-menu">
+                                    <a title="Print Student" href="/admin/students/print_details?users={{$studentObj->id}}" target="_blank">
+                                        <img src="/assets/default/svgs/print.svg" alt="print-menu">
                                     </a>
                                     <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
                                         <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
@@ -116,6 +134,6 @@
             $el
                 .querySelectorAll(".skelton-hide")
                 .forEach((el) => el.classList.remove("skelton-hide"));
-        }, 1000);
+        }, 2000);
     });
 </script>
