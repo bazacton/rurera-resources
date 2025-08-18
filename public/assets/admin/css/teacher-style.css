@@ -6048,6 +6048,16 @@ button.print-download-btn {
 .admin_teacher_role .classes-card .progress-holder:has(.skelton-hide) {margin-top: 15px;}
 .skeleton table tr .skelton-hide {min-width: 20px; display: inline-block;}
 .admin_teacher_role .skeleton table tr .skelton-hide.skelton-height-lg {min-height: 15px; max-height: 15px;}
+.admin_teacher_role .skelton-hide a {
+    padding-bottom: 0;
+}
+.admin-rurera-tabs-holder:has(.skelton-hide) {
+    padding-bottom: 15px;
+}
+.admin_teacher_role .admin-rurera-tabs-holder .skelton-hide {
+    max-height: 15px;
+    min-height: 15px;
+}
 /* Skeleton Loading Style End */
 
 /* custom_quiz srach form Style Start */
