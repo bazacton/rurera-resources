@@ -1371,12 +1371,12 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     pointer-events: none;
 }
 .classes_filter.form-control:not([size]):not([multiple]) {
-    height: 31px;
+    height: 31.6px;
     line-height: normal;
     border-radius: 5px;
     background-color: #fff;
-    font-size: 14px;
-    padding: 5px 10px;
+    font-size: 14px !important;
+    padding: 5px 25px 5px 10px;
     border: 1px solid #ddd;
     appearance: none;
 }
