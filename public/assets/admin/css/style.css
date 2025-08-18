@@ -1360,6 +1360,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     background-color: #fff;
     font-size: 14px;
     padding: 5px 10px;
+    border: 1px solid #ddd;
+    appearance: none;
 }
 .export-btn {
     color: var(--blue);
