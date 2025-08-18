@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
 
-                                <div class="teacher-search-filter-holder ml-auto">
+                                <div class="teacher-search-filter-holder ml-auto d-inline-flex align-items-center flex-wrap">
                                     <div class="invite-faculty">
                                         <div class="dropdown-box">
                                             <div class="dropdown">
