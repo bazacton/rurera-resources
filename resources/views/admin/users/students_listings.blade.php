@@ -66,6 +66,7 @@
                     </th>
                     <th>Last Login</th>
                     <th>School</th>
+                    <th>Class</th>
                     <th></th>
                 </tr>
                 </thead>
@@ -96,6 +97,11 @@
                             <td data-th="School">
                                 <div class=" skelton-hide skelton-height-lg skelton-mb-0">
                                     <span>{{$studentObj->userSchool->title}}</span>
+                                </div>
+                            </td>
+                            <td data-th="Class">
+                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>{{$studentObj->userClass->title}}</span>
                                 </div>
                             </td>
                             <td>
