@@ -6097,6 +6097,9 @@ button.print-download-btn {
     position: relative;
     z-index: 1;
 }
+.dropdown.average-grade-dropdown {
+    margin-right: 10px;
+}
 .navbar .average-grade-dropdown .nav-link.nav-link-user img {
     display: none;
 }
