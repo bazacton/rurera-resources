@@ -16,6 +16,33 @@
             <div class="breadcrumb-item">Classes</div>
         </div>
     </div>
+    @if($schools_list->count() > 1)
+    <section class="card">
+        <div class="card-body">
+            <form action="/admin/classes" id="classes_search_form" method="get" class="row mb-0">
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label class="input-label">Schools</label>
+                        <div class="select-holder">
+                            <select name="school_id" data-plugin-selectTwo class="form-control populate form-control">
+                                <option value="all">All Schools</option>
+                                @if($schools_list->count() > 0)
+                                    @foreach($schools_list as $schoolObj)
+                                        <option value="{{$schoolObj->id}}" @if(request()->get('school_id') == $schoolObj->id)
+                                            selected @endif>{{$schoolObj->title}}</option>
+                                    @endforeach
+                                @endif
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                    <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    @endif
 
     <div class="content-holder card p-25">
         @can('admin_classes_create')
