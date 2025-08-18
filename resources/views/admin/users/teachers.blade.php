@@ -16,49 +16,11 @@
             </div>
         </section>
 
-        @if($schools_list->count() > 1)
-            <section class="card">
-                <div class="card-body">
-                    <form action="/admin/teachers" id="classes_search_form" method="get" class="row mb-0">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="input-label">Schools</label>
-                                <div class="select-holder">
-                                    <select name="school_id" data-plugin-selectTwo class="form-control schools_ajax_field populate form-control" data-next_class="classes_filter" data-next_value="0">
-                                        <option value="all">All Schools</option>
-                                        @if($schools_list->count() > 0)
-                                            @foreach($schools_list as $schoolObj)
-                                                <option value="{{$schoolObj->id}}" @if(request()->get('school_id') == $schoolObj->id)
-                                                    selected @endif>{{$schoolObj->title}}</option>
-                                            @endforeach
-                                        @endif
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="input-label">Classes</label>
-                                <div class="select-holder">
-                                    <select name="class_id" data-plugin-selectTwo class="form-control populate classes_ajax_field form-control classes_filter">
-                                        <option value="all">All Classes</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                            <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        @endif
-
         <div class="teacher-listing d-flex align-items-center flex-wrap">
 
             <div class="row w-100">
                 <div class="col-12 col-md-12">
-                    <div class="admin-rurera-tabs-holder">
+                    <div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap justify-content-center pb-15">
                         <ul data-target_class="admin-rurera-tabs-teachers" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="teachers-tab-teachers" href="javascript:;">
@@ -95,28 +57,47 @@
                                     </div>
                                 </div>
 
-                                <div class="invite-faculty">
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                                                <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                <div class="teacher-search-filter-holder ml-auto">
+                                    <div class="invite-faculty">
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+                                                    <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-search-filter border-0 p-0">
+                                        <div class="search-field">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                    </span>
+                                            <input type="text" class="search-teachers" placeholder="Search Teachers">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="input-label">Classes</label>
+                                            <div class="select-holder">
+                                                <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
+                                                    <option value="all">All Classes</option>
+                                                    @if( $filter_classes_list->count() > 0)
+                                                        @foreach($filter_classes_list as $classObj)
+                                                            <option value="{{$classObj->id}}" @if(request()->get('class_id') == $classObj->id)
+                                                                selected @endif>{{$classObj->title}}</option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="teacher-search-filter border-0 p-0">
-                                    <div class="search-field">
-                                        <span class="icon-box">
-                                            <img src="/assets/default/svgs/search.svg" alt="search">
-                                        </span>
-                                        <input type="text" class="search-teachers" placeholder="Search Teachers">
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="card-body p-0 table-sm">
                                 <table class="table mb-0">

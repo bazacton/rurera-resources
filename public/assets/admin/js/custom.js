@@ -1634,6 +1634,14 @@ $(document).on('change', '.schools_ajax_field', function (e) {
 if($(".schools_ajax_field").length > 0){
     $(".schools_ajax_field").change();
 }
+$(document).on('change', '.rurera_self_submitted_field', function (e) {
+    var field_key = $(this).attr('data-field_key');
+    var field_value = $(this).val();
+    var currentUrl = window.location.href;
+    var url = new URL(currentUrl);
+    url.searchParams.set(field_key, field_value);
+    window.location.href = url.toString();
+});
 
 
 
