@@ -6115,6 +6115,9 @@ button.print-download-btn {
     border-radius: 5px;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
+.average-grade-dropdown .dropdown-item {
+    padding: 5px 20px;
+}
 .dropdown.average-grade-dropdown span {
     font-weight: 600;
     color: #333;
