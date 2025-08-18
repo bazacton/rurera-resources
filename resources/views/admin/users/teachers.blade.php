@@ -16,6 +16,44 @@
             </div>
         </section>
 
+        @if($schools_list->count() > 1)
+            <section class="card">
+                <div class="card-body">
+                    <form action="/admin/teachers" id="classes_search_form" method="get" class="row mb-0">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="input-label">Schools</label>
+                                <div class="select-holder">
+                                    <select name="school_id" data-plugin-selectTwo class="form-control schools_ajax_field populate form-control" data-next_class="classes_filter" data-next_value="0">
+                                        <option value="all">All Schools</option>
+                                        @if($schools_list->count() > 0)
+                                            @foreach($schools_list as $schoolObj)
+                                                <option value="{{$schoolObj->id}}" @if(request()->get('school_id') == $schoolObj->id)
+                                                    selected @endif>{{$schoolObj->title}}</option>
+                                            @endforeach
+                                        @endif
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="input-label">Classes</label>
+                                <div class="select-holder">
+                                    <select name="class_id" data-plugin-selectTwo class="form-control populate classes_ajax_field form-control classes_filter">
+                                        <option value="all">All Classes</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                            <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        @endif
+
         <div class="teacher-listing d-flex align-items-center flex-wrap">
 
             <div class="row w-100">
@@ -375,7 +413,7 @@
                                 </div>
                             </div>
                             @if(auth()->user()->isDistricAdmin())
-                            
+
                             <div class="input-group">
                                 <div class="radio-buttons">
                                     <input type="radio" id="school_admin_role-add" name="role_id"

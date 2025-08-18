@@ -1613,6 +1613,29 @@ $(document).on('click', '.rurera-ajax-tabs', function (e) {
         }
     });
 });
+$(document).on('change', '.schools_ajax_field', function (e) {
+    var school_id = $(this).val();
+    var target_class = $(this).attr('data-next_class');
+    var next_value = $(this).attr('data-next_value');
+    rurera_loader($("."+target_class), 'div');
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/common/get_school_classes_field',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"school_id": school_id, "next_value": next_value},
+        success: function (return_data) {
+            rurera_remove_loader($("."+target_class), 'div');
+            $("."+target_class).html(return_data);
+        }
+    });
+});
+if($(".schools_ajax_field").length > 0){
+    $(".schools_ajax_field").change();
+}
+
+
 
 
 
