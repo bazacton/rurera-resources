@@ -6093,6 +6093,7 @@ button.print-download-btn {
     background-color: var(--blue);
     border-bottom: 1px solid #f6f6f6;
     align-items: flex-start;
+    padding-top: 15px;
 }
 .admin_teacher_role .navbar .nav-link,
 .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
