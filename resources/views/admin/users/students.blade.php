@@ -99,7 +99,7 @@
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print-action.svg" alt="print"> Print</a>
                                                 <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@
                                                 <td>
                                                     <div class="pending-invites-controls">
                                                         <a title="Print Student" href="/admin/students/print_details?users={{$studentObj->id}}" target="_blank" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Print Student">
-                                                            <img src="/assets/default/svgs/print.svg" alt="print-menu">
+                                                            <img src="/assets/default/svgs/print-action.svg" alt="print-menu">
                                                         </a>
                                                         <button class="student-edit-modal" data-id="{{$studentObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Student">
                                                             <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
@@ -191,7 +191,7 @@
                                                     Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                 </a>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item print-users-logins1" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Accept</a>
+                                                    <a class="dropdown-item print-users-logins1" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print-action.svg" alt="print"> Accept</a>
                                                     <a data-class_id="{{$userObj->class_id}}" class="dropdown-item unlink-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                 </div>
                                             </div>

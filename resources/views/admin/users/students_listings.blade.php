@@ -10,7 +10,7 @@
                             Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                            <a class="dropdown-item print-users-logins" data-type_class="sections-students" href="javascript:;"><img src="/assets/default/svgs/print-action.svg" alt="print"> Print</a>
                             @if(!auth()->user()->isTeacherPanel())
                             @if(!isset($class) || $class->google_id == 0)
                             <a data-class_id="{{isset($class->id)? $class->id : 0}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-students"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>

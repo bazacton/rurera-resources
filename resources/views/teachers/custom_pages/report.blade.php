@@ -294,7 +294,7 @@
                         <div class="right-area">
                             <div class="class-controls-option">
                                 <button type="button"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                <button type="button"><img src="/assets/default/svgs/print.svg" alt=""></button>
+                                <button type="button"><img src="/assets/default/svgs/print-action.svg" alt=""></button>
                                 <button type="button"><img src="/assets/default/svgs/download.svg" alt=""></button>
                             </div>
                             <button type="button"><span class="icon-box"><img src="/assets/default/svgs/envelope.svg" alt=""></span>Email all parents</button>
@@ -454,7 +454,7 @@
                                                                         <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
                                                                     </a>
                                                                     <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print-action.svg" alt=""> Print</a>
                                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
                                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
                                                                     </div>
@@ -523,7 +523,7 @@
                                                                         <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
                                                                     </a>
                                                                     <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print-action.svg" alt=""> Print</a>
                                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
                                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
                                                                     </div>
