@@ -57,7 +57,7 @@
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                 <div class="d-sm-none d-lg-inline-block"><span>School Selection <em>{{ $default_school_selected }}</em></span> <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg"></div>
             </a>
-            <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-menu">
 
                 @if($main_schools_list->count() > 0)
                     @foreach($main_schools_list as $schoolObj)
