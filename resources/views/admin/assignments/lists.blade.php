@@ -200,10 +200,10 @@
                                     </td>
                                     <td data-th="Actions">
                                         <div class="pending-invites-controls">
-                                            <a class="dropdown-item" href="/admin/assignments/{{$assignmentObj->id}}/progress"><img src="/assets/default/svgs/action-progress.svg" alt="envelope" class="mr-0" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Progress"> Progress</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print-action.svg" alt="print" class="mr-0" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Print"> Print</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete-menu.svg" alt="trash-bin" class="mr-0" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete"> Delete</a>
-                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope" class="mr-0" data-placement="top" data-trigger="hover" data-original-title="Email To Prent"> Email To Prent</a>
+                                            <a class="dropdown-item" href="/admin/assignments/{{$assignmentObj->id}}/progress" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Progress"><img src="/assets/default/svgs/action-progress.svg" alt="envelope" class="mr-0"> Progress</a>
+                                            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Print"><img src="/assets/default/svgs/print-action.svg" alt="print" class="mr-0"> Print</a>
+                                            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete"><img src="/assets/default/svgs/delete-menu.svg" alt="trash-bin" class="mr-0"> Delete</a>
+                                            <a class="dropdown-item" href="#" data-placement="top" data-trigger="hover" data-original-title="Email To Prent"><img src="/assets/default/svgs/envelope.svg" alt="envelope" class="mr-0"> Email To Prent</a>
                                         </div>
                                     </td>
                                 </tr>
