@@ -267,6 +267,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     margin-top: -3px;
     pointer-events: none;
 }
+.card .card-body .select-holder .select2-selection__arrow {
+    opacity: 0;
+}
 .card .card-header .btn:hover {box-shadow: none;}
 .card .card-header .form-control {height: 31px; font-size: 13px; border-radius: 30px;}
 .card .card-header .form-control + .input-group-btn .btn {margin-top: -1px;}
