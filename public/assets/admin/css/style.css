@@ -246,30 +246,10 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card .card-header {border-bottom-color: #f9f9f9; line-height: 30px; -ms-grid-row-align: center; align-self: center; width: 100%; min-height: 70px; padding: 15px 25px; display: flex; align-items: center; gap: 5px;}
 .card .card-header .btn {margin-top: 1px; padding: 2px 15px;}
 .card .card-header .btn:not(.note-btn) {border-radius: 30px;}
-.card .card-body select.form-control {
-    height: 38px;
-    appearance: none;
-    cursor: pointer;
-}
-.card .card-body .select-holder {
-    position: relative;
-}
-.card .card-body .select-holder:after {
-    content: "";
-    border-bottom: 2px solid #666;
-    border-left: 2px solid #666;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    height: 8px;
-    width: 8px;
-    transform: rotate(-45deg) translateY(-50%);
-    margin-top: -3px;
-    pointer-events: none;
-}
-.card .card-body .select-holder .select2-selection__arrow {
-    opacity: 0;
-}
+.card .card-body select.form-control {height: 38px; appearance: none; cursor: pointer;}
+.card .card-body .select-holder {position: relative;}
+.card .card-body .select-holder:after {content: ""; border-bottom: 2px solid #666; border-left: 2px solid #666; position: absolute; right: 10px; top: 50%; height: 8px; width: 8px; transform: rotate(-45deg) translateY(-50%); margin-top: -3px; pointer-events: none;}
+.card .card-body .select-holder .select2-selection__arrow {opacity: 0;}
 .card .card-header .btn:hover {box-shadow: none;}
 .card .card-header .form-control {height: 31px; font-size: 13px; border-radius: 30px;}
 .card .card-header .form-control + .input-group-btn .btn {margin-top: -1px;}
