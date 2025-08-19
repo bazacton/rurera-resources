@@ -1,6 +1,9 @@
 <div class="student-form">
 
     <input type="hidden" name="student_id" value="{{$studentObj->id}}">
+    <div class="col-md-12">
+        <h3>{{$studentObj->get_full_name()}}</h3>
+    </div>
     <div class="row">
         <div class="col-md-12">
         <div class="select-holder">
@@ -28,9 +31,6 @@
                 </select>
             </div>
         </div>
-        </div>
-        <div class="col-md-12">
-            <h3>{{$studentObj->get_full_name()}}</h3>
         </div>
         <div class="col-md-6">
             <span class="field-lable">
