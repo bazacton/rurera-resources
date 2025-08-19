@@ -237,6 +237,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .create-class-modal .select-holder {
     margin-bottom: 15px;
+    position: relative;
 }
 .create-class-modal .select-holder select {
     appearance: none;
