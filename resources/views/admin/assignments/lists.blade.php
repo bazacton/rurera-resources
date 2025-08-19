@@ -220,7 +220,7 @@
                             @endforeach
                             @else
                                 <tr>
-                                    <td data-th="no-records" colspan="7">
+                                    <td data-th="no-records" class="no-records-found" colspan="7">
                                         No Records Found!
                                     </td>
                                 </tr>

@@ -238,7 +238,7 @@
                                                     @endif
                                                     </tbody>
                                                 </table>
-                                                <div class="sats-listing-empty rurera-hidden"><p>No Records Found</p></div>
+                                                <div class="sats-listing-empty rurera-hidden"><p class="no-records-found">No Records Found</p></div>
                                             </div>
                                         </div>
                                     </div>

@@ -109,7 +109,7 @@
                     @endforeach
                 @else
                     <tr>
-                        <td data-th="no-records-found">
+                        <td data-th="no-records-found" class="no-records-found">
                             No records found
                         </td>
                     </tr>

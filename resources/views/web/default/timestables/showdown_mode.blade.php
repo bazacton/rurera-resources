@@ -68,7 +68,7 @@
                         @endforeach
                     @else
                     <li class="lms-performace-des leaderboard-des">
-                       <div class="sr-no text-center"><span>No records found</span></div>
+                       <div class="sr-no text-center"><span class="no-records-found">No records found</span></div>
                    </li>
                        @endif
                 </ul>

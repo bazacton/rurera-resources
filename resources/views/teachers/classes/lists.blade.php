@@ -546,7 +546,7 @@
                             </div>
                         @endforeach
                         @else
-                            <div class="sr-no text-center"><span>No records found</span></div>
+                            <div class="sr-no text-center no-records-found"><span>No records found</span></div>
                         @endif
                     </div>
                 </div>

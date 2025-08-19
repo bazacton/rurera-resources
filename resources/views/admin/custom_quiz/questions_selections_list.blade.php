@@ -31,5 +31,5 @@
 
   @endforeach
 @else
-    <h3>No Records Found!</h3>
+    <h3 class="no-records-found">No Records Found!</h3>
 @endif
