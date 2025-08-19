@@ -6118,6 +6118,9 @@ button.print-download-btn {
 .average-grade-dropdown .dropdown-item {
     padding: 5px 20px;
 }
+.admin_teacher_role a.dropdown-item:focus, 
+.admin_teacher_role a.dropdown-item:active, 
+.admin_teacher_role a.dropdown-item.active {color: #16181b; background-color: #f8f9fa;}
 .dropdown.average-grade-dropdown span {
     font-weight: 600;
     color: #333;
