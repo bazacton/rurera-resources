@@ -1613,6 +1613,64 @@ $(document).on('click', '.rurera-ajax-tabs', function (e) {
         }
     });
 });
+
+$(document).on('change', '.rurera-ajax-tabs-change', function (e) {
+    var ajax_url = $(this).attr('data-ajax_url');
+    var target_class = $(this).attr('data-target_class');
+    var passing_data = $(this).attr('data-passing_data');
+    var this_key = $(this).attr('data-field_key');
+    var this_value = $(this).val();
+
+    rurera_loader($("."+target_class), 'div');
+
+    // Parse existing data or initialize empty object
+    if(passing_data != '') {
+        passing_data = JSON.parse(passing_data);
+    } else {
+        passing_data = {};
+    }
+
+    // Add/replace key-value
+    passing_data[this_key] = this_value;
+
+    console.log(passing_data);
+
+    jQuery.ajax({
+        type: "GET",
+        url: ajax_url,
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: passing_data,
+        success: function (return_data) {
+            rurera_remove_loader($("."+target_class), 'div');
+            $("."+target_class).html(return_data);
+        }
+    });
+});
+
+$(document).on('change', '.rurera-ajax-submission', function (e) {
+    var ajax_url = $(this).attr('data-ajax_url');
+    var target_class = $(this).attr('data-target_class');
+    var passing_data = $(this).attr('data-passing_data');
+    rurera_loader($("."+target_class), 'div');
+    if(passing_data != '') {
+        passing_data = JSON.parse($(this).attr('data-passing_data'));
+    }
+    console.log(passing_data);
+    jQuery.ajax({
+        type: "GET",
+        url: ajax_url,
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: passing_data,
+        success: function (return_data) {
+            rurera_remove_loader($("."+target_class), 'div');
+            $("."+target_class).html(return_data);
+        }
+    });
+});
 $(document).on('change', '.schools_ajax_field', function (e) {
     var school_id = $(this).val();
     var target_class = $(this).attr('data-next_class');
