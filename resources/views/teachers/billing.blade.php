@@ -306,7 +306,7 @@
                         </div>
                         <div class="admin-rurera-tabs-billing rurera-hide transactions-tab ">
                             <h2 class="mb-1 font-weight-bold mb-15">Transactions</h2>
-                            <div class="card">
+                            <div class="card skeleton">
                                 <div class="table-sm">
                                     <table class="table mb-0">
                                         <thead class="thead-light">
@@ -794,14 +794,26 @@
 @push('scripts_bottom')
 <script>
     $(document).ready(function () {
-    $(document).on('click', '.admin-rurera-tabs li a', function (e) {
-        var target_class = $(this).closest('.admin-rurera-tabs').attr('data-target_class');
-        var target_div = $(this).attr('id');
-        $("."+target_class).addClass('rurera-hide');
-        $("."+target_div).removeClass('rurera-hide');
-        $(this).closest('.admin-rurera-tabs').find('li').find('a').removeClass('active');
-        $(this).addClass('active');
+        $(document).on('click', '.admin-rurera-tabs li a', function (e) {
+            var target_class = $(this).closest('.admin-rurera-tabs').attr('data-target_class');
+            var target_div = $(this).attr('id');
+            $("."+target_class).addClass('rurera-hide');
+            $("."+target_div).removeClass('rurera-hide');
+            $(this).closest('.admin-rurera-tabs').find('li').find('a').removeClass('active');
+            $(this).addClass('active');
+        });
     });
+</script>
+<script>
+    $(document).ready(function () {
+        const $el = document.querySelector(".section-body");
+
+        setTimeout(() => {
+            $el.classList.remove("skeleton");
+            $el
+                .querySelectorAll(".skelton-hide")
+                .forEach((el) => el.classList.remove("skelton-hide"));
+        }, 1000);
     });
 </script>
 @endpush
