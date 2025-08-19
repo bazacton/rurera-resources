@@ -110,6 +110,7 @@
                                         <th>Last Login</th>
                                         <th>Classes</th>
                                         <th>School</th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody class="teachers-list">
@@ -152,7 +153,19 @@
                                                         <span>{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</span>
                                                     </div>
                                                 </td>
+                                                <td>
+                                                <div class="pending-invites-controls">
+                                                    @if(!auth()->user()->isTeacherPanel())
+                                                        <button class="teacher-edit-modal" data-id="{{$user->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Teacher">
+                                                            <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                        </button>
 
+                                                        <button data-id="{{$user->id}}" class="delete-teacher" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete Teacher">
+                                                            <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
+                                                        </button>
+                                                    @endif
+                                                </div>
+                                                </td>
                                             </tr>
                                         @endforeach
                                     @endif
@@ -250,6 +263,10 @@
 
                                                 </tr>
                                             @endforeach
+                                        @else
+                                            <tr>
+                                                <td data-th="no-records" colspan="5" class="no-records-found">No Records Found!</td>
+                                            </tr>
                                         @endif
                                     </tbody>
                                 </table>
@@ -437,6 +454,26 @@
             </div>
         </div>
     </div>
+
+        <div class="modal fade edit-teacher-modal add-student-modal" id="edit-teacher-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body student-modal-box">
+
+                        <div id="section4" class="modal-section edit-teacher-form-block active">
+                            <form action="/admin/users/update_faculty" method="POST" class="mb-0 edit-teacher-form">
+                                {{ csrf_field() }}
+                                <div class="edit-teacher-block"></div>
+                                <div class="teacher-buttons mt-30">
+                                    <button type="submit" class="btn btn-primary edit-teacher-btn">Update Teacher</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="messages-layout-teacher-block rurera-hide mt-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal fade rurera-confirm-modal" id="rurera-confirm-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -512,6 +549,15 @@
             $(".rurera-confirm-modal").modal('show');
         });
 
+
+        $(document).on('click', '.delete-teacher', function (e) {
+            var teachers_ids = $(this).attr('data-id');
+            $(".confirm-title").html('Are you sure you want to remove?');
+            $(".confirm-approve-btn").attr('href', '/admin/users/unlink_teachers?teachers_ids='+teachers_ids);
+            $(".rurera-confirm-modal").modal('show');
+        });
+
+
         $(document).on('change', '.check-uncheck-all', function (e) {
             var target_class = $(this).attr('data-target_class');
             var isChecked = $(this).is(':checked');
@@ -576,6 +622,37 @@
         if (hash) {
             $(hash + '.nav-link').trigger('click');
         }
+    });
+
+    $('body').on('click', '.teacher-edit-modal', function (e) {
+
+        $(".edit-teacher-form-block").addClass('active');
+        $(".edit-teacher-form-block").removeClass('rurera-hide');
+        $(".messages-layout-teacher-block").removeClass('active');
+        $(".messages-layout-teacher-block").addClass('rurera-hide');
+        var teacher_id = $(this).attr('data-id');
+        jQuery.ajax({
+            type: "GET",
+            url: '/admin/users/edit_teacher_modal',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {'teacher_id':teacher_id},
+            success: function (return_data) {
+                $(".edit-teacher-modal").modal('show');
+                $('.edit-teacher-block').html(return_data);
+            }
+        });
+        console.log(teacher_id);
+    });
+
+    $(document).on('submit', '.edit-teacher-form', function (e) {
+        returnType = rurera_validation_process($(this));
+        if (returnType == false) {
+            return false;
+        }
+        rurera_loader($(this).find('.edit-teacher-btn'), 'div');
+        return true;
     });
     /*Skelton Loading Fungtion End*/
 </script>
