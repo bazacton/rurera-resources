@@ -1365,6 +1365,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     margin-top: -4px;
     pointer-events: none;
 }
+.create-class-modal .select-holder:has(.select-box):after {
+    display: none;
+}
 .classes_filter.form-control:not([size]):not([multiple]) {
     height: 30.6px;
     line-height: normal;
