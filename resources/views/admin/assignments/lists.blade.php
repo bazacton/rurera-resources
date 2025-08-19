@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-group">
+                    <div class="form-group test">
                         <label>Subjects</label>
                         <div class="select-box">
                             <select data-return_type="option"
