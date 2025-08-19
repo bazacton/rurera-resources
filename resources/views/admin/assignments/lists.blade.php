@@ -40,9 +40,9 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-group test">
+                    <div class="form-group">
                         <label>Subjects</label>
-                        <div class="select-box">
+                        <div class="select-holder">
                             <select data-return_type="option"
                                     data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
                                     class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
