@@ -89,6 +89,39 @@
                 </select>
             </div>
         </div>
+
+
+
+
+            <label>Curriculum</label>
+            <div class="select-holder">
+                <select class="form-control @error('category_id') is-invalid @enderror"
+                        name="category_id">
+                    <option {{ !empty($trend) ?
+                                        '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
+
+                    @foreach($categories as $category)
+                        @if(!empty($category->subCategories) and count($category->subCategories))
+                            <optgroup label="{{  $category->title }}">
+                                @foreach($category->subCategories as $subCategory)
+                                    <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
+                                                category_id == $subCategory->id) selected="selected" @endif>{{
+                                                $subCategory->title }}
+                                    </option>
+                                @endforeach
+                            </optgroup>
+                        @else
+                            <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
+                                                and $class->category_id == $category->id) selected="selected" @endif>{{
+                                            $category->title }}
+                            </option>
+                        @endif
+                    @endforeach
+                </select>
+            </div>
+
+
+
         <label for="className">Enter class name (Required)</label>
         <div class="input-group">
             <input
