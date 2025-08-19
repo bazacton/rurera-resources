@@ -17,7 +17,7 @@
     </div>
     <div class="skeleton-holder skeleton">
         <div class="section-body">
-            
+
             <div class="row">
                 <div class="col-12 col-md-12">
                     <section class="card">
@@ -193,7 +193,7 @@
                                         </td>
 
                                         <td class="text-left">
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->creator->get_full_name() }}</div>
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ isset($quiz->creator->id)?$quiz->creator->get_full_name() : '' }}</div>
                                         </td>
 
                                         <td class="text-center">
