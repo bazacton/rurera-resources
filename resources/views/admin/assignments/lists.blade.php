@@ -61,7 +61,7 @@
                     <div class="form-group">
                         <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                         <div class="input-group">
-                            <input type="date" id="lsdate" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
+                            <input type="date" id="lsdate" class="form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                         </div>
                     </div>
                 </div>
