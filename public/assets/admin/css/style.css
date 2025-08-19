@@ -1273,7 +1273,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     display: inline-flex;
     align-items: center;
     gap: 5px 10px;
-    background-color: inherit;
+    background-color: initial;
 }
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title,
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
