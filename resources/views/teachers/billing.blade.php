@@ -323,43 +323,139 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td data-th="Transaction ID">#95954</td>
-                                                <td data-th="Date">10/08/2022</td>
-                                                <td data-th="Account Holder">Ron Vargas</td>
-                                                <td data-th="Status"><span class="status-paid">Paid</span></td>
-                                                <td data-th="Package Type">Test Prep Plus</td>
-                                                <td data-th="Payment Method">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
-                                                    •••• 6165
+                                                <td data-th="Transaction ID">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>#95954</span>
+                                                    </div>
                                                 </td>
-                                                <td data-th="Total">$168.00</td>
-                                                <td data-th="Eye"><span class="icon-eye"></span></td>
+                                                <td data-th="Date">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>10/08/2022</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Account Holder">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>Ron Vargas</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Status">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span class="status-paid">Paid</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Package Type">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>Test Prep Plus</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Payment Method">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                                                            •••• 6165
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Total">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>$168.00</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Eye">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span class="icon-eye"></span>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td data-th="Transaction ID">#95423</td>
-                                                <td data-th="Date">30/07/2022</td>
-                                                <td data-th="Account Holder">Carolyn Hanso</td>
-                                                <td data-th="Status"><span class="status-paid">Paid</span></td>
-                                                <td data-th="Package Type">Home learning and exam revision</td>
-                                                <td data-th="Payment Method">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
-                                                    •••• 7128
+                                                <td data-th="Transaction ID">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>#95423</span>
+                                                    </div>
                                                 </td>
-                                                <td data-th="Total">$523.00</td>
-                                                <td data-th="Eye"><span class="icon-eye"></span></td>
+                                                <td data-th="Date">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>30/07/2022</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Account Holder">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>Carolyn Hanso</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Status">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span class="status-paid">Paid</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Package Type">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>Home learning and exam revision</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Payment Method">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                                                            •••• 7128
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Total">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>$523.00</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Eye">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span class="icon-eye"></span>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td data-th="Transaction ID">#92903</td>
-                                                <td data-th="Date">18/07/2022</td>
-                                                <td data-th="Account Holder">Gabriella May</td>
-                                                <td data-th="Status"><span class="status-pending">Pending</span></td>
-                                                <td data-th="Package Type">Home learning</td>
-                                                <td data-th="Payment Method">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
-                                                    ••••@gmail.com
+                                                <td data-th="Transaction ID">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>#92903</span>
+                                                    </div>
                                                 </td>
-                                                <td data-th="Total">$81.00</td>
-                                                <td data-th="Eye"><span class="icon-eye"></span></td>
+                                                <td data-th="Date">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>18/07/2022</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Account Holder">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>Gabriella May</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Status">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span class="status-pending">Pending</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Package Type">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>Home learning</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Payment Method">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
+                                                            ••••@gmail.com
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Total">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span>$81.00</span>
+                                                    </div>
+                                                </td>
+                                                <td data-th="Eye">
+                                                    <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <span class="icon-eye"></span>
+                                                    </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
