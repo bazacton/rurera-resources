@@ -2109,30 +2109,8 @@ output {font-weight: bold; color: #333;}
 .columns-settings .dropdown-toggle::after {display: none;}
 .columns-settings .dropdown-toggle {padding: 8px 10px; background-color: var(--primary);}
 .topic-parts-data .table-responsive:before,
-.topic-parts-data .table-responsive:after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: 50px;
-    height: 12px;
-    width: 12px;
-    border: 2px solid #ccc;
-    border-left: 0;
-    border-bottom: 0;
-    transform: rotate(45deg);
-    -webkit-animation-name: bounceAlpha;
-    animation-name: bounceAlpha;
-    -webkit-animation-duration: 1.4s;
-    animation-duration: 1.4s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    visibility: hidden;
-}
-.topic-parts-data .table-responsive:after {
-    right: 0;
-}
+.topic-parts-data .table-responsive:after {content: ""; position: absolute; right: -10px; top: 50px; height: 12px; width: 12px; border: 2px solid #ccc; border-left: 0; border-bottom: 0; transform: rotate(45deg); -webkit-animation-name: bounceAlpha; animation-name: bounceAlpha; -webkit-animation-duration: 1.4s; animation-duration: 1.4s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: linear; animation-timing-function: linear; visibility: hidden;}
+.topic-parts-data .table-responsive:after {right: 0;}
 
 @-webkit-keyframes bounceAlpha {
     0% {
