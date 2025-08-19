@@ -705,12 +705,12 @@
                 processData: false,
                 contentType: false,
                 success: function (return_data) {
+                    refresh_students();
                     rurera_remove_loader($(".edit-student-form-block"), 'div');
                     $(".messages-layout-student-block").html(return_data);
                     $(".messages-layout-student-block").removeClass('rurera-hide');
                     $(".edit-student-form-block").addClass('rurera-hide');
                     $(".edit-student-form-block").removeClass('active');
-                    $(".edit-student-form-block").addClass('active');
                 }
             });
             return false;
