@@ -6076,6 +6076,7 @@ button.print-download-btn {
 .card .card-body .class-section-data select.form-control {
     font-size: 14px;
     background-color: #fdfdff;
+    z-index: auto;
 }
 .admin_teacher_role .populated-data .select2-selection__arrow:before {
     right: 10px;
