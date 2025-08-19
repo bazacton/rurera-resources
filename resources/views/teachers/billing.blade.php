@@ -305,7 +305,7 @@
 
                         </div>
                         <div class="admin-rurera-tabs-billing rurera-hide transactions-tab ">
-                            <h2 class="mb-1 font-weight-bold">Transactions</h2>
+                            <h2 class="mb-1 font-weight-bold mb-15">Transactions</h2>
                             <div class="card">
                                 <div class="table-sm">
                                     <table class="table mb-0">
