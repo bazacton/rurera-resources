@@ -6147,8 +6147,14 @@ button.print-download-btn {
 .admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user:after {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     right: 0;
+    border: 2px solid #333;
+    border-left: 0;
+    border-top: 0;
+    background-color: inherit;
+    height: 9px;
+    width: 9px;
+    transform: rotate(45deg) translateY(-50%);
 }
 .main-navbar.navbar-expand-lg .navbar-nav {
     align-items: center;
