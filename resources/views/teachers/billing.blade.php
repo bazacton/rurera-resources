@@ -308,7 +308,7 @@
                             <h2 class="mb-1 font-weight-bold">Transactions</h2>
                             <div class="card">
                                 <div class="table-sm">
-                                    <table class="table">
+                                    <table class="table mb-0">
                                         <thead class="thead-light">
                                             <tr>
                                                 <th>Transaction ID</th>
