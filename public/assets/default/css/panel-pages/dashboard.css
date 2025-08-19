@@ -675,6 +675,11 @@ Right SideBar Style Start
     display: block;
     margin: 0 0 15px;
 }
+.dropdown-list-content .dropdown-item:active {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
 .user-profile-icons .notifications-lable {
     display: block;
     margin: 0 0 5px;
