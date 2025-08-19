@@ -1350,7 +1350,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .select-holder:has(.classes_filter) {
     position: relative;
 }
-.select-holder:has(.classes_filter):after {
+.select-holder:has(.classes_filter):after,
+.create-class-modal .select-holder:after {
     position: absolute;
     right: 10px;
     top: 50%;
