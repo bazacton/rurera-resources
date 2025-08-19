@@ -1521,6 +1521,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 }
+.admin_teacher_role .table td:has(.pending-invites-controls) {
+    min-width: 100px;
+}
 .teacher-table .check-box {
     display: inline-block;
     vertical-align: middle;
