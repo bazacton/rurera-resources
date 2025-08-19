@@ -203,6 +203,8 @@
         <div class="modal-content">
             <div class="modal-body student-modal-box">
 
+
+                <h5 class="modal-title">Create New School</h5>
                 <div id="section4" class="modal-section add-edit-schoo-block active">
                     <form action="/admin/schools/store"
                           method="Post" class="school-form">
