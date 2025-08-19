@@ -1376,7 +1376,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     pointer-events: none;
 }
 .classes_filter.form-control:not([size]):not([multiple]) {
-    height: 31.6px;
+    height: 30.6px;
     line-height: normal;
     border-radius: 5px;
     background-color: #fff;
