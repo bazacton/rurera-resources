@@ -388,6 +388,9 @@ table td .dropdown-toggle {cursor: pointer;}
 .assignments-table table.table tbody tr td[data-th="no-records"] {
     padding: 25px !important;
 }
+.assignments-table .table:not(.table-sm):not(.table-md):not(.dataTable) td {
+    text-align: center !important;
+}
 
 /* Assignments New Table Style End */
 
