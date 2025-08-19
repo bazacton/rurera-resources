@@ -144,6 +144,10 @@
                                                     </td>
                                                 </tr>
                                             @endforeach
+                                        @else
+                                            <tr>
+                                                <td data-th="no-records" colspan="5" class="no-records-found">No Records Found!</td>
+                                            </tr>
                                         @endif
 
                                         </tbody>
