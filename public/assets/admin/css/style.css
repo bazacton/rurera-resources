@@ -415,7 +415,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .table {color: inherit;}
 .table td, .table:not(.table-bordered) th {border-top: none;}
 .table:not(.table-sm):not(.table-md):not(.dataTable) td,
-.table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 15px; height: 60px; vertical-align: middle;}
+.table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 15px; height: 60px; vertical-align: middle; text-align: left !important;}
 .table:not(.table-sm):not(.table-md):not(.dataTable) th {
     text-transform: uppercase;
     padding: 10px 15px;
@@ -1512,11 +1512,13 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .teacher-table table th:has(.check-box), .teacher-table table td:has(.check-box) {
     white-space: nowrap;
 }
-.teacher-table table tr:nth-child(even) {
+.teacher-table table tr:nth-child(even),
+.table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(even) {
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 }
-.teacher-table table tr:nth-child(odd) {
+.teacher-table table tr:nth-child(odd),
+.table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(odd) {
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 }
