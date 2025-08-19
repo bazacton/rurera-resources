@@ -153,7 +153,9 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{$studentObj->get_full_name()}}</h1>
+            <h1>{{$studentObj->get_full_name()}}
+                <a href="javascript:;" class="student-edit-modal ml-2 font-20" data-id="{{$studentObj->id}}"><i class="fa fa-cog"></i></a>
+            </h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
                     }}</a>
@@ -334,7 +336,25 @@
         </div>
     </div>
 
+    <div class="modal fade edit-student-modal add-student-modal" id="edit-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body student-modal-box">
 
+                    <div id="section4" class="modal-section edit-student-form-block active">
+                        <form action="javascript:;" method="POST" class="mb-0 edit-student-single">
+                            {{ csrf_field() }}
+                            <div class="edit-student-block"></div>
+                            <div class="teacher-buttons mt-30">
+                                <button type="submit" class="btn btn-primary edit-single-student-btn">Edit Single Student</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-layout-student-block rurera-hide mt-30"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')

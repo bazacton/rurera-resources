@@ -23,42 +23,22 @@
             <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="javascript:;" id="students-tab-analytics" class="rurera-ajax-tabs" data-passing_data="{{json_encode($passing_data)}}" data-ajax_url="/admin/students/student_analytics" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> TEST</a></li>
         </ul>
     </div>
+
     <ul class="analytics-data-ul">
-        <li><a href="javascript:;" class=" hide graph_Custom" data-graph_id="graph_id_Custom">September 20, 2023 - September 26, 2023</a>
+        <li><a href="javascript:;" class=" hide graph_Custom" data-graph_id="graph_id_Custom">{{dateTimeFormat($start_date, 'F d, Y')}} - {{dateTimeFormat($end_date, 'F d, Y')}}</a>
         </li>
     </ul>
 </div>
 <div class="analytics-dropdown">
-    <div class="select-holder">
-        <h5>Subject</h5>
-        <div class="select-box">
-            <select>
-                <option value="All subjects">All subjects</option>
-                <option value="Math">Math</option>
-                <option value="Science">Science</option>
-            </select>
-        </div>
-    </div>
-    <div class="select-holder">
-        <h5>Skill Year</h5>
-        <div class="select-box">
-            <select>
-                <option value="All Year">All Years</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-        </div>
-    </div>
     <div class="date-range-holder">
         <h5>Date Range</h5>
         <div class="date-range-box">
-            <input type="text" id="reportrange1">
+            @php $passing_data = array(
+               'student_id' => isset($studentObj->id)? $studentObj->id : 0,
+               'type' => $type_selected
+            );
+            @endphp
+            <input type="text" data-field_key="analytics_date" id="reportrange1" value="{{$analytics_date}}" data-target_class="students-tab-analytics" class="rurera-ajax-tabs-change" data-passing_data="{{json_encode($passing_data)}}" data-ajax_url="/admin/students/student_analytics" >
         </div>
     </div>
 </div>
@@ -197,10 +177,16 @@
             ranges: dateRanges,
             autoApply: false,
             drops: "auto",
+            autoUpdateInput: false, // ✅ prevent auto filling
             isInvalidDate: function (date) {
                 // Sunday Disabled
                 return date.day() == 0;
             }
+        },
+        function(start, end) {
+            // ✅ manually update field when applied
+            $("#reportrange1").val(start.format("MM/DD/YYYY") + " - " + end.format("MM/DD/YYYY"));
+            $("#reportrange1").change();
         }
     );
 </script>
