@@ -6074,12 +6074,15 @@ button.print-download-btn {
 .admin_teacher_role .select2-container--default .select2-selection--multiple {
     padding-bottom: 0;
     border-radius: 10px;
+    background-color: #ebebeb;
+    border-color: transparent;
 }
 .card-body form .form-group {
     margin-bottom: 15px;
 }
 .card-body form .form-group .form-control {
     border-radius: 10px;
+    background-color: #ebebeb;
 }
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
     font-size: 1rem;
