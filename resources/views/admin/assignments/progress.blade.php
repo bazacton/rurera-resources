@@ -209,7 +209,14 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                             <h4>Overall Accuracy</h4>
                         </div>
                         <div class="card-body skelton-height-lg skelton-mb-0">
-                            20%
+                            <div class="circle_percent circle-green" data-percent="50">
+                                <div class="circle_inner">
+                                    <div class="round_per" style="transform: rotate(360deg);"></div>
+                                </div>
+                                <div class="circle_inbox">
+                                    <span class="percent_text">50%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
