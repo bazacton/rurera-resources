@@ -6086,7 +6086,8 @@ form#topic_parts_search_form .col-md-3 {
     padding-right: 5px;
 }
 #topic_parts_search_form select.form-control,
-#topic_parts_search_form .select2-container--default .select2-selection--single {
+#topic_parts_search_form .select2-container--default .select2-selection--single,
+#topic_parts_search_form .input-group .form-control {
     border: 0;
     background-color: #f9f9f9;
     border-radius: 10px;
