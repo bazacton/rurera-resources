@@ -6105,7 +6105,7 @@ button.print-download-btn {
     color: #1e1e1e;
 }
 .card-body form .select-holder:after {
-    right: 18px;
+    right: 17px;
     border-bottom-color: #ccc;
     border-left-color: #ccc;
     pointer-events: none;
@@ -6116,8 +6116,8 @@ button.print-download-btn {
     top: 50%;
     background-color: #fff;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     transform: translateY(-50%);
     border-radius: 3px;
     pointer-events: none;
