@@ -372,7 +372,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .admin_teacher_role .no-records-found {
     padding: 25px !important;
 }
-.assignments-table .table:not(.table-sm):not(.table-md):not(.dataTable) td,
+
 .admin_teacher_role .no-records-found, 
 .table:not(.table-sm):not(.table-md):not(.dataTable) td.no-records-found,
 .teacher-table .table:not(.table-sm):not(.table-md):not(.dataTable) td.no-records-found {
