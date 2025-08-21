@@ -363,6 +363,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .assignments-table table.table .circle_percent .percent_text {font-size: 10px;}
 .assignments-table table.table tbody tr td:last-child,
 .assignments-table table.table thead tr th:last-child {text-align: center !important;}
+.assignments-table .table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(even):last-child {border-bottom: 0;}
 .assignments-table .circle-green .round_per, 
 .assignments-table .circle-green.percent_more:after {background: #47c363;}
 .hide-lg {display: none;}
@@ -2285,7 +2286,6 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {display: none;}
     .assignments-table .card {box-shadow: none; border: 0;}
     .assignments-table .card .card-body {padding: 0 !important;}
-    .assignments-table .table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(even):last-child {border-bottom: 0;}
     .table-sm table thead {display: none;}
     .table-sm table.table tbody tr {display: block; margin-bottom: 15px}
     .table-sm table.table tbody tr:last-child {margin-bottom: 0;}
