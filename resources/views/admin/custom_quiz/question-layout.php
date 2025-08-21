@@ -37,13 +37,13 @@
             <section class="card">
                 <div class="card-body">
                     <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0 skelton-hide">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.search') }}</label>
                                 <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                                 <div class="input-group">
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                 <div class="input-group">
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.filters') }}</label>
                                 <div class="select-holder">
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                                 <label class="input-label">{{ trans('admin/main.instructor') }}</label>
                                 <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
@@ -113,7 +113,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                                 <label class="input-label">{{ trans('admin/main.class') }}</label>
                                 <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
@@ -127,7 +127,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                                 <label class="input-label">{{ trans('admin/main.status') }}</label>
                                 <div class="select-holder">
