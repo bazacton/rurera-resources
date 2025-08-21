@@ -6,7 +6,7 @@
 
 
 @section('content')
-<section class="section skeleton">
+<div class="section skeleton">
     <div class="section-header">
         <h1>Assignments</h1>
         <div class="section-header-breadcrumb">
@@ -15,81 +15,7 @@
             <div class="breadcrumb-item">Timestables Assignments</div>
         </div>
     </div>
-    <section class="card">
-        <div class="card-body">
-            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label class="input-label">{{trans('admin/main.category')}}</label>
-                        <div class="select-holder">
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
-                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                @foreach($categories as $category)
-                                    @if(!empty($category->subCategories) and count($category->subCategories))
-                                        <optgroup label="{{  $category->title }}">
-                                            @foreach($category->subCategories as $subCategory)
-                                                <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                            @endforeach
-                                        </optgroup>
-                                    @else
-                                        <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                    @endif
-                                @endforeach
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label>Subjects</label>
-                        <div class="select-holder">
-                            <select data-return_type="option"
-                                    data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
-                                    class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-                                    id="subject_id" name="subject_id">
-                                <option disabled selected>Subject</option>
-                            </select>
-                        </div>
-                        @error('subject_id')
-                        <div class="invalid-feedback">
-                            {{ $message }}
-                        </div>
-                        @enderror
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label class="input-label">{{ trans('admin/main.end_date') }}</label>
-                        <div class="input-group">
-                            <input type="date" id="lsdate" class="form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                    <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
-                </div>
-            </form>
-        </div>
-        @php $saved_templates = $user->saved_templates;
-				$saved_templates = json_decode( $saved_templates );
-				$saved_templates = isset( $saved_templates->assignments_search )? $saved_templates->assignments_search : array();
-        @endphp
-        <div class="defined-searches mt-20" style="display:none">
-            <span><strong>Defined Searches:</strong></span>
-            @if( !empty( $saved_templates ) )
-                @foreach( $saved_templates  as $template_name => $template_data)
-                    @php $template_array = json_decode($template_data);
-                        $url_params = '<span>'.$template_name.'</span>';
-                        if( isset( $template_array->url_params )){
-                            $url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
-                        }
-                    @endphp
-                    <span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="assignments_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
-                @endforeach
-            @endif
-            <button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="assignments_search" ><i class="fas fa-save"></i> Save Template</button>
-        </div>
-    </section>
+
     <div class="row">
 
         <div class="col-12 col-md-12">
@@ -142,6 +68,59 @@
                     <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
                 </div>
             @endcan
+        </div>
+        <div class="col-12 col-md-12">
+            <div class="card-body">
+                <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="input-label">{{trans('admin/main.category')}}</label>
+                            <div class="select-holder">
+                                <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
+                                    <option value="">{{trans('admin/main.all_categories')}}</option>
+                                    @foreach($categories as $category)
+                                        @if(!empty($category->subCategories) and count($category->subCategories))
+                                            <optgroup label="{{  $category->title }}">
+                                                @foreach($category->subCategories as $subCategory)
+                                                    <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                @endforeach
+                                            </optgroup>
+                                        @else
+                                            <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Subjects</label>
+                            <div class="select-holder">
+                                <select data-return_type="option"
+                                        data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
+                                        class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                        id="subject_id" name="subject_id">
+                                    <option disabled selected>Subject</option>
+                                </select>
+                            </div>
+                            @error('subject_id')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="input-label">{{ trans('admin/main.end_date') }}</label>
+                            <div class="input-group">
+                                <input type="date" id="lsdate" class="form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="col-12">
             <div class="assignments-table">
