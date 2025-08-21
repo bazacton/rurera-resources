@@ -191,11 +191,52 @@ $QuestionsAttemptController = new QuestionsAttemptController();
 
 <section class="section">
     <div class="section-header">
-        <h1>Assignment Progress</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
             </div>
             <div class="breadcrumb-item active"><a href="/admin/assignments">Assignment</a>
+            </div>
+        </div>
+        <div class="assignment-details-block">
+        <h3>{{ucfirst($assignmentObj->assignment_type)}} ({{$assignmentObj->status}})</h3>
+        <h3>Assessment Title</h3>
+        <h3>Tags: <span class="rurera-tags">Science</span> <span class="rurera-tags">Year 8</span><span class="rurera-tags">5 Questions</span></h3>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-wrap">
+                        <div class="card-header skelton-height-lg skelton-mb-0">
+                            <h4>Overall Accuracy</h4>
+                        </div>
+                        <div class="card-body skelton-height-lg skelton-mb-0">
+                            20%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-wrap">
+                        <div class="card-header skelton-height-lg skelton-mb-0">
+                            <h4>Completed Tasks (Percentage)</h4>
+                        </div>
+                        <div class="card-body skelton-height-lg skelton-mb-0">
+                            20%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-wrap">
+                        <div class="card-header skelton-height-lg skelton-mb-0">
+                            <h4>Average Completion Time</h4>
+                        </div>
+                        <div class="card-body skelton-height-lg skelton-mb-0">
+                            5 Minutes
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
