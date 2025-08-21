@@ -6084,6 +6084,10 @@ button.print-download-btn {
     border-radius: 10px;
     background-color: #ebebeb;
 }
+.card-body form .form-group input[type="text"]:focus {
+    background-color: #fff;
+    border-color: #e4e6fc;
+}
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
     font-size: 1rem;
 }
