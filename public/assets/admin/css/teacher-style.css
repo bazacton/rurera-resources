@@ -6096,6 +6096,9 @@ form#topic_parts_search_form [class*="col-"] {
     font-weight: 600;
     appearance: none;
 }
+#topic_parts_search_form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #1e1e1e;
+}
 #topic_parts_search_form .select-holder:after {
     right: 18px;
     border-bottom-color: #ccc;
