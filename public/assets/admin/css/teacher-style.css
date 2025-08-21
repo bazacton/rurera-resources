@@ -6077,6 +6077,30 @@ button.print-download-btn {
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
     font-size: 1rem;
 }
+#topic_parts_search_form select.form-control,
+#topic_parts_search_form .select2-container--default .select2-selection--single {
+    border: 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #1e1e1e;
+    font-weight: 600;
+}
+.card .card-body #topic_parts_search_form .select-holder:after {
+    right: 18px;
+    border-bottom-color: #ccc;
+    border-left-color: #ccc;
+}
+.card .card-body #topic_parts_search_form .select-holder:before {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    background-color: #fff;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: translateY(-50%);
+    border-radius: 3px;
+}
 .card .card-body .class-section-data select.form-control {
     font-size: 14px;
     background-color: #fdfdff;
