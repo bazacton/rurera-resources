@@ -6094,13 +6094,13 @@ form#topic_parts_search_form .col-md-3 {
     color: #1e1e1e;
     font-weight: 600;
 }
-.card .card-body #topic_parts_search_form .select-holder:after {
+#topic_parts_search_form .select-holder:after {
     right: 18px;
     border-bottom-color: #ccc;
     border-left-color: #ccc;
     pointer-events: none;
 }
-.card .card-body #topic_parts_search_form .select-holder:before {
+#topic_parts_search_form .select-holder:before {
     position: absolute;
     right: 15px;
     top: 50%;
