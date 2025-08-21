@@ -6077,6 +6077,10 @@ button.print-download-btn {
     background-color: #ebebeb;
     border-color: transparent;
 }
+.admin_teacher_role .select2-container--default .select2-selection--multiple:has(.select2-search__field:focus) {
+    background-color: #fff;
+    border-color: #e4e6fc;
+}
 .card-body form .form-group {
     margin-bottom: 15px;
 }
