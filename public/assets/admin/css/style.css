@@ -247,13 +247,13 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card .card-header .btn {margin-top: 1px; padding: 2px 15px;}
 .card .card-header .btn:not(.note-btn) {border-radius: 30px;}
 .card .card-body select.form-control {height: 38px; appearance: none; cursor: pointer;}
-.card .card-body .select-holder {position: relative;}
-.card .card-body .select-holder:after {content: ""; border-bottom: 2px solid #666; border-left: 2px solid #666; position: absolute; right: 10px; top: 50%; height: 8px; width: 8px; transform: rotate(-45deg) translateY(-50%); margin-top: -3px; pointer-events: none;}
-.card .card-body .select-holder .select2-selection__arrow {opacity: 0;}
-.card .card-header .btn:hover {box-shadow: none;}
-.card .card-header .form-control {height: 31px; font-size: 13px; border-radius: 30px;}
-.card .card-header .form-control + .input-group-btn .btn {margin-top: -1px;}
-.card .card-header h4 {font-size: 16px; line-height: 28px; color: var(--primary); padding-right: 10px; margin-bottom: 0;}
+.card-body .select-holder {position: relative;}
+.card-body .select-holder:after {content: ""; border-bottom: 2px solid #666; border-left: 2px solid #666; position: absolute; right: 10px; top: 50%; height: 8px; width: 8px; transform: rotate(-45deg) translateY(-50%); margin-top: -3px; pointer-events: none;}
+.card-body .select-holder .select2-selection__arrow {opacity: 0;}
+.card-header .btn:hover {box-shadow: none;}
+.card-header .form-control {height: 31px; font-size: 13px; border-radius: 30px;}
+.card-header .form-control + .input-group-btn .btn {margin-top: -1px;}
+.card-header h4 {font-size: 16px; line-height: 28px; color: var(--primary); padding-right: 10px; margin-bottom: 0;}
 .card .card-header h4 + .card-header-action,
 .card .card-header h4 + .card-header-form {margin-left: auto;}
 .card .card-header h4 + .card-header-action .btn,
