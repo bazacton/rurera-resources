@@ -20,7 +20,7 @@
             <div class="row">
 
                 <div class="col-12 col-md-12">
-                    <div class="admin-rurera-tabs-holder">
+                    <div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap pb-15">
                         <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
@@ -63,12 +63,13 @@
                                 </div>
                             </li>
                         </ul>
+                        @can('admin_assignments_create')
+                            <div class="text-right ml-auto">
+                                <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
+                            </div>
+                        @endcan
                     </div>
-                    @can('admin_assignments_create')
-                        <div class="text-right ml-auto">
-                            <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
-                        </div>
-                    @endcan
+                    
                 </div>
                 <div class="col-12 col-md-12">
                     <div class="card-body pl-0 pr-0 pt-0">
