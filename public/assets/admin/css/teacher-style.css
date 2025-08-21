@@ -6081,18 +6081,20 @@ form#topic_parts_search_form {
     margin-left: -5px;
     margin-right: -5px;
 }
-form#topic_parts_search_form .col-md-3 {
+form#topic_parts_search_form [class*="col-"] {
     padding-left: 5px;
     padding-right: 5px;
 }
+.select-holder {position: relative;}
 #topic_parts_search_form select.form-control,
 #topic_parts_search_form .select2-container--default .select2-selection--single,
 #topic_parts_search_form .input-group .form-control {
     border: 0;
-    background-color: #f9f9f9;
+    background-color: #ebebeb;
     border-radius: 10px;
     color: #1e1e1e;
     font-weight: 600;
+    appearance: none;
 }
 #topic_parts_search_form .select-holder:after {
     right: 18px;
