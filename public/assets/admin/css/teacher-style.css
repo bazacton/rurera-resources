@@ -6113,6 +6113,7 @@ form#topic_parts_search_form [class*="col-"] {
     transform: translateY(-50%);
     border-radius: 3px;
     pointer-events: none;
+    z-index: 1;
 }
 .card .card-body .class-section-data select.form-control {
     font-size: 14px;
