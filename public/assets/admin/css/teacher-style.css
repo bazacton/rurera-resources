@@ -6075,6 +6075,9 @@ button.print-download-btn {
     padding-bottom: 0;
     border-radius: 10px;
 }
+.card-body form .form-group {
+    margin-bottom: 15px;
+}
 .card-body form .form-group .form-control {
     border-radius: 10px;
 }
