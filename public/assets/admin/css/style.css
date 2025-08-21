@@ -1137,7 +1137,7 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-menu li a .badge {float: right; padding: 5px 10px; margin-top: 2px;}
 .main-sidebar .sidebar-menu li a i { margin-right: 12px; text-align: center;}
 .main-sidebar .sidebar-menu li a span img {margin-left: 5px; }
-.main-sidebar .sidebar-menu li img {width: 25px; height: 25px; margin-right: 10px; object-fit: contain;}
+.main-sidebar .sidebar-menu li img {width: 25px; height: 25px; margin-right: 10px; object-fit: contain; filter: grayscale(100%);}
 .sidebar-mini .main-sidebar .sidebar-menu li img {margin-right: 0;}
 .main-sidebar .sidebar-menu li a span {width: 100%;}
 .main-sidebar .sidebar-menu li a:hover {background-color: #f8fafb;}
