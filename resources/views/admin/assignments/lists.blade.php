@@ -72,7 +72,7 @@
         <div class="col-12 col-md-12">
             <div class="card-body pl-0 pr-0">
                 <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
                             <div class="select-holder">
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>Subjects</label>
                             <div class="select-holder">
@@ -111,7 +111,7 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
