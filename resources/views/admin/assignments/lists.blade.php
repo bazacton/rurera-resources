@@ -69,7 +69,7 @@
                 @endcan
             </div>
             <div class="col-12 col-md-12">
-                <div class="card-body pl-0 pr-0">
+                <div class="card-body">
                     <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
                         <div class="col-md-2">
                             <div class="form-group">
