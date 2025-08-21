@@ -91,21 +91,7 @@
         </div>
     </section>
     <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="card card-statistic-1">
-                <div class="card-icon bg-primary skelton-hide">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <div class="card-wrap">
-                    <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
-                        <h4>Total Assignments</h4>
-                    </div>
-                    <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
-                        {{ $totalAssignments }}
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="col-12 col-md-12">
             <div class="admin-rurera-tabs-holder">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
@@ -151,18 +137,15 @@
                     </li>
                 </ul>
             </div>
+            @can('admin_assignments_create')
+                <div class="text-right ml-auto">
+                    <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
+                </div>
+            @endcan
         </div>
         <div class="col-12">
             <div class="assignments-table">
                 <div class="card">
-                    <div class="card-header bg-light">
-                        <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Assignments</h6>
-                        @can('admin_assignments_create')
-                            <div class="text-right ml-auto">
-                                <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
-                            </div>
-                        @endcan
-                    </div>
 
                     <div class="card-body p-0 table-sm">
                         <table class="table mb-0">
