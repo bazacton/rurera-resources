@@ -6077,6 +6077,14 @@ button.print-download-btn {
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
     font-size: 1rem;
 }
+form#topic_parts_search_form {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+form#topic_parts_search_form .col-md-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 #topic_parts_search_form select.form-control,
 #topic_parts_search_form .select2-container--default .select2-selection--single {
     border: 0;
