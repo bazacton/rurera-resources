@@ -1338,6 +1338,10 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     transition: all 0.3s ease-out;
     background-color: #ebebeb;
 }
+.search-field input[type="text"]:focus,
+.search-field:has(input[type="text"]:focus) {
+    background-color: #fff;
+}
 .add-student-btn ~ .search-field input[type="text"] {
     height: 30.6px;
 }
