@@ -1317,6 +1317,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     border-radius: 5px;
     overflow: hidden;
     height: 30.6px;
+    background-color: #ebebeb;
 }
 .search-field .icon-box {
     position: absolute;
@@ -1335,6 +1336,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     -ms-transition: all 0.3s ease-out; 
     -o-transition: all 0.3s ease-out; 
     transition: all 0.3s ease-out;
+    background-color: #ebebeb;
 }
 .add-student-btn ~ .search-field input[type="text"] {
     height: 30.6px;
@@ -1374,7 +1376,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     height: 30.6px;
     line-height: normal;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #ebebeb;
     font-size: 14px !important;
     padding: 5px 25px 5px 10px;
     border: 1px solid #ddd;
