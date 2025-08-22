@@ -222,11 +222,9 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                                                         <div class="circle_inner">
                                                             <div class="round_per" style="transform: rotate(360deg);"></div>
                                                         </div>
-                                                        
+                                                        <div class="circle_inbox"></div>
                                                     </div>
-                                                    <div class="circle_inbox">
-                                                        <span class="percent_text">50%</span>
-                                                    </div>
+                                                    <span class="percent_text">50%</span>
                                                 </div>
                                             </div>
                                         </div>
