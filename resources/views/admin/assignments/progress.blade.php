@@ -205,7 +205,11 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                             <div class="assignment-details-content">
                                 <h3>{{ucfirst($assignmentObj->assignment_type)}} ({{$assignmentObj->status}})</h3>
                                 <h3>Assessment Title</h3>
-                                <h3>Tags: <span class="rurera-tags">Science</span> <span class="rurera-tags">Year 8</span><span class="rurera-tags">5 Questions</span></h3>
+                                <div class="detail-tags">
+                                    <span class="rurera-tags">Science</span> 
+                                    <span class="rurera-tags">Year 8</span>
+                                    <span class="rurera-tags">5 Questions</span>
+                                </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                                         <div class="card card-statistic-1">
