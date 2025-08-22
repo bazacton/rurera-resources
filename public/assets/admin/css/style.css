@@ -402,7 +402,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     font-size: 14px;
 }
 .assignment-details-block .card.card-statistic-1 .card-header {
-    margin: 0 0 10px;
+    margin: 0 0 5px;
 }
 .assignment-details-block .circle_percent {
     font-size: 40px;
@@ -410,6 +410,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 }
 .assignment-details-block .card.card-statistic-1 .card-body {
     flex: auto;
+    color: #1e1e1e;
 }
 .assignment-details-block .percent_text {
     position: relative;
