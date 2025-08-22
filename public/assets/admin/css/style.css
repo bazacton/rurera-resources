@@ -341,44 +341,12 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card.bg-primary, .card.bg-danger, .card.bg-success, .card.bg-info, .card.bg-dark, .card.bg-warning {color: #fff;}
 .card.bg-primary .card-header, .card.bg-danger .card-header, .card.bg-success .card-header, 
 .card.bg-info .card-header, .card.bg-dark .card-header, .card.bg-warning .card-header {color: #fff; opacity: .9;}
-.assignment-details-block {
-    width: 100%;
-    margin-top: 30px;
-}
-.assignment-details-block .media-holder {
-    background-color: #f9f9f9;
-    height: 180px;
-}
-.assignment-details-block .media-holder img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.rurera-tags {
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #f2f2f2;
-    padding: 3px 10px;
-    line-height: normal;
-    border-radius: 30px;
-}
-.detail-tags {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.vocabulary-status {
-    display: inline-block;
-    background-color: #daffda;
-    padding: 4px 12px;
-    border-radius: 30px;
-    color: #164e16;
-    font-size: 13px;
-    font-weight: 600;
-    position: relative;
-}
+.assignment-details-block {width: 100%; margin-top: 30px;}
+.assignment-details-block .media-holder {background-color: #f9f9f9; height: 180px;}
+.assignment-details-block .media-holder img {max-width: 100%; height: 100%; object-fit: cover; border-radius: 5px;}
+.rurera-tags {display: inline-block; vertical-align: middle; background-color: #f2f2f2; padding: 3px 10px; line-height: normal; border-radius: 30px;}
+.detail-tags {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
+.vocabulary-status {display: inline-block; background-color: #daffda; padding: 4px 12px; border-radius: 30px; color: #164e16; font-size: 13px; font-weight: 600; position: relative;}
 .vocabulary-status:before {
     content: "\2713";
     vertical-align: middle;
