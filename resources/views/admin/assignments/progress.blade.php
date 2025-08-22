@@ -261,7 +261,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                         <div class="col-lg-3 col-md-3 col-12">
                             <div class="media-holder">
                                 <figure>
-                                    <img src="/assets/default/img/imgecommerce-img.webp" alt="ecommerce-img">
+                                    <img src="/assets/default/img/ecommerce-img.webp" alt="ecommerce-img">
                                 </figure>
                             </div>
                         </div>
