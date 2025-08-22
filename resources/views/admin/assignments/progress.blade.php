@@ -203,7 +203,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                     <div class="row">
                         <div class="col-lg-9 col-md-9 col-12">
                             <div class="assignment-details-content">
-                                <h3>{{ucfirst($assignmentObj->assignment_type)}} ({{$assignmentObj->status}})</h3>
+                                <span class="vocabulary-status">{{ucfirst($assignmentObj->assignment_type)}} ({{$assignmentObj->status}})</span>
                                 <h3>Assessment Title</h3>
                                 <div class="detail-tags mb-30">
                                     <span class="rurera-tags">Science</span> 
