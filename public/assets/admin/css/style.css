@@ -347,7 +347,13 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 }
 .assignment-details-block .media-holder {
     background-color: #f9f9f9;
-    height: 200px;
+    height: 180px;
+}
+.assignment-details-block .media-holder img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 .rurera-tags {
     display: inline-block;
