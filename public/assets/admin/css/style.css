@@ -1421,7 +1421,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     background-color: #fff;
 }
 .search-field input[type="text"]:focus {
-    min-width: 230px;
+    min-width: 220px;
 }
 .search-field .icon-box img {
     height: 20px;
