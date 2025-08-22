@@ -407,7 +407,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     margin: 0 0 5px;
 }
 .assignment-details-block .circle_percent {
-    font-size: 40px;
+    font-size: 35px;
     vertical-align: middle;
 }
 .assignment-details-block .card.card-statistic-1 .card-body {
