@@ -423,6 +423,11 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     line-height: normal;
     vertical-align: middle;
 }
+.student-attempt-info [class*="col-"] {
+    width: auto;
+    max-width: none;
+    flex: 0 0 auto;
+}
 .assignment-details-block [class*="col-"]:has(.card-statistic-1):last-child .card-wrap {border-right: 0;}
 /* Assignments New Table Style Start */
 .assignments-table .card {border: 0; border-radius: 5px; background-color: inherit; box-shadow: none; margin: 0;}
