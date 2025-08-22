@@ -200,53 +200,63 @@ $QuestionsAttemptController = new QuestionsAttemptController();
         <div class="assignment-details-block">
             <div class="card">
                 <div class="card-body">
-                    <h3>{{ucfirst($assignmentObj->assignment_type)}} ({{$assignmentObj->status}})</h3>
-                    <h3>Assessment Title</h3>
-                    <h3>Tags: <span class="rurera-tags">Science</span> <span class="rurera-tags">Year 8</span><span class="rurera-tags">5 Questions</span></h3>
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <div class="assignment-details-content">
+                                <h3>{{ucfirst($assignmentObj->assignment_type)}} ({{$assignmentObj->status}})</h3>
+                                <h3>Assessment Title</h3>
+                                <h3>Tags: <span class="rurera-tags">Science</span> <span class="rurera-tags">Year 8</span><span class="rurera-tags">5 Questions</span></h3>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <div class="card card-statistic-1">
-                            <div class="card-wrap">
-                                <div class="card-header skelton-height-lg skelton-mb-0">
-                                    <h4>Overall Accuracy</h4>
-                                </div>
-                                <div class="card-body skelton-height-lg skelton-mb-0">
-                                    <div class="circle_percent circle-green" data-percent="50">
-                                        <div class="circle_inner">
-                                            <div class="round_per" style="transform: rotate(360deg);"></div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                    <div class="card card-statistic-1">
+                                        <div class="card-wrap">
+                                            <div class="card-header skelton-height-lg skelton-mb-0">
+                                                <h4>Overall Accuracy</h4>
+                                            </div>
+                                            <div class="card-body skelton-height-lg skelton-mb-0">
+                                                <div class="circle_percent circle-green" data-percent="50">
+                                                    <div class="circle_inner">
+                                                        <div class="round_per" style="transform: rotate(360deg);"></div>
+                                                    </div>
+                                                    <div class="circle_inbox">
+                                                        <span class="percent_text">50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="circle_inbox">
-                                            <span class="percent_text">50%</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                    <div class="card card-statistic-1">
+                                        <div class="card-wrap">
+                                            <div class="card-header skelton-height-lg skelton-mb-0">
+                                                <h4>Completed Tasks (Percentage)</h4>
+                                            </div>
+                                            <div class="card-body skelton-height-lg skelton-mb-0">
+                                                20%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                    <div class="card card-statistic-1">
+                                        <div class="card-wrap">
+                                            <div class="card-header skelton-height-lg skelton-mb-0">
+                                                <h4>Average Completion Time</h4>
+                                            </div>
+                                            <div class="card-body skelton-height-lg skelton-mb-0">
+                                                5 Minutes
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <div class="card card-statistic-1">
-                            <div class="card-wrap">
-                                <div class="card-header skelton-height-lg skelton-mb-0">
-                                    <h4>Completed Tasks (Percentage)</h4>
-                                </div>
-                                <div class="card-body skelton-height-lg skelton-mb-0">
-                                    20%
-                                </div>
-                            </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <div class="media-holder"></div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <div class="card card-statistic-1">
-                            <div class="card-wrap">
-                                <div class="card-header skelton-height-lg skelton-mb-0">
-                                    <h4>Average Completion Time</h4>
-                                </div>
-                                <div class="card-body skelton-height-lg skelton-mb-0">
-                                    5 Minutes
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
