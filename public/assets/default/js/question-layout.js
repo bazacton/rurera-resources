@@ -60,7 +60,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             editor_field_value += $(this).val();
         });
         thisObj.find('.spells-quiz-from').find('.editor-field').val(editor_field_value);
-        //timePaused = true;
+        timePaused = true;
         if( thisValue == '' && editor_field_value != ''){
             thisObj.find('.spells-quiz-from').find('.question-submit-btn').click();
         }
@@ -253,7 +253,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
 
 
-            if(return_data.incorrect_flag == true ){
+            /*if(return_data.incorrect_flag == true ){
                 correctInRow = 0;
                 totalInCorrectCount = totalInCorrectCount+1;
             }else{
@@ -262,17 +262,6 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             }
             if( $(".correct-in-row").length > 0){
                 $(".correct-in-row").html(correctInRow+' IN A ROW');
-            }
-
-            if( $(".quiz-corrects").length > 0){
-                //$(".quiz-corrects").html(totalCorrectCount);
-            }
-
-            if( $(".quiz-incorrects").length > 0){
-                //$(".quiz-incorrects").html(totalInCorrectCount);
-            }
-            if( $(".coin-numbers").length > 0){
-                //$(".coin-numbers span").html('+'+totalCorrectCount);
             }
 
             var total_questions = $(".question-area").attr('data-total_questions');
@@ -301,13 +290,12 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             if (rurera_is_field(return_data.total_points)) {
                 $(".lms-quiz-section").attr('data-total_points', return_data.total_points);
             }
-            var quiz_type = return_data.quiz_type;
+            var quiz_type = return_data.quiz_type;*/
 
             if( return_data.is_complete == true) {
-                //$(".question-area-block").html('Thank you for attempting!');
 
 
-                thisObj.closest('.questions-data-block').find('.right-content').addClass('hide');
+                /*thisObj.closest('.questions-data-block').find('.right-content').addClass('hide');
                 $(".quiz-complete").show(2000);
 
 
@@ -321,14 +309,14 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                 }
                 if (quiz_type == 'vocabulary') {
                     //$("#spell_test_complete_modal").modal('show');
-                }
+                }*/
 
 
 
             } else {
 
             if (return_data.incorrect_flag == true && return_data.show_fail_message == true) {
-                var question_response_layout = return_data.question_response_layout;
+                /*var question_response_layout = return_data.question_response_layout;
 
 				var correct_answers_html2 = '';
 				var correct_answers_html = '';
@@ -347,241 +335,28 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                         user_answers_html += '<li>' + user_value + '</li>';
                     });
 
-                });
-				correct_answers_html = (correct_answers_html != '')? '<h5>Correct Answer: </h5><ul class="correct-answers-block">'+correct_answers_html+'</ul>' : '';
-                /*
-                if (question_response_layout != '') {
-                    var question_response_layout = return_data.question_response_layout;
-                    $(".question-area-temp").html(question_response_layout);
-                }
-                var question_result_id = return_data.question_result_id;
-                thisObj.closest('.question-step').attr('data-qresult', question_result_id);
-                var qresult_id = thisObj.closest('.question-step').attr('data-qresult');
-                quiz_user_data[0]['incorrect'][question_id] = question_data_array;
+                });*/
+				//correct_answers_html = (correct_answers_html != '')? '<h5>Correct Answer: </h5><ul class="correct-answers-block">'+correct_answers_html+'</ul>' : '';
 
-                var correct_answers_html = '';
-                var user_answers_html = '';
-                $.each(return_data.incorrect_array, function (field_id, value) {
-                    thisForm.find('#field-' + field_id).addClass('validate-error');
-                    $.each(value.correct, function (correct_index, correct_value) {
-                        correct_answers_html += '<li><label class="lms-question-label" for="radio2"><span>' + correct_value + '</span></label></li>';
-                    });
-                    $.each(value.user_input, function (user_index, user_value) {
-                        user_answers_html += '<li><label class="lms-question-label" for="radio2"><span>' + user_value + '</span></label></li>';
-                    });
 
-                });
-                */
-                /*var fail_page_link = '/panel/questions/' + question_id + '/fail';
-                fetch(fail_page_link)
-                    .then((response) => response.text())
-                    .then((html) => {
-                        thisObj.closest('.question-step').append(html);
-                        thisObj.closest('.question-step').find('.lms-explanation-block').html(question_layout);
-                        thisObj.closest('.question-step').find('.lms-explanation-block').find('.editor-field').attr('disabled', 'disabled');
-                        thisObj.closest('.question-step').find('.lms-explanation-block').find('.editor-field').attr('readonly', 'readonly');
-                        thisObj.closest('.question-step').find('.lms-explanation-block').find('.editor-field').attr('name', 'disable_name');
-                        thisObj.closest('.question-step').find('.lms-explanation-block').find('.marks').remove();
-                        thisObj.closest('.question-step').find('.lms-explanation-block').find('label').attr('for', 'disable_for');
-                        thisObj.closest('.question-step').find('.lms-correct-answer-block').html(correct_answers_html);
-                        thisObj.closest('.question-step').find('.lms-user-answer-block').html(user_answers_html);
-                        thisObj.closest('.question-layout-block').addClass('hide');
-                        thisObj.closest('.questions-data-block').find('.right-content').addClass('hide');
-                    })
-                    .catch((error) => {
-                        console.warn(error);
-                    });*/
-
-                if (quiz_type == 'book') {
+                /*if (quiz_type == 'book') {
                     if (question_response_layout != '') {
                         var question_response_layout = return_data.question_response_layout;
                         $(".question-area-block").html(question_response_layout);
                     }
                 } else {
-                    //$(".question-layout-block").html(return_data.question_response_layout);
 
-
-
-                    if (quiz_type == 'vocabulary') {
-                        if (rurera_is_field(return_data.question_correct_answere)) {
-                            if (return_data.question_correct_answere != '') {
-                                //$(".question-correct-answere").html(return_data.question_correct_answere);
-                                $(".editor-field").addClass(question_status_class);
-                                //$(".nub-of-sec").html('');
-                                clearInterval(Questioninterval);
-                                //jQuery.noConflict();
-                                $(".question-status-modal .modal-box .modal-title span.inc").html(return_data.question_user_input);
-                                $(".question-status-modal .modal-box .modal-title span.cor").html(return_data.question_correct_answere);
-
-                                $(".question-status-modal .modal-box p").html(defination_text);
-                                $(".question-status-modal .modal-box p").html(defination_text+'<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/wrong-answer.mp3"></audio>');
-
-                                //$("#question_status_modal").modal('show');
-                                $(".confirm-btn").focus();
-                            }
-                        }
-                    } else{
-
-                        //thisForm.find('.question-submit-btn').remove();
-                        if (quiz_type == 'practice') {
-                            //$("#quiz_question_status_modal").modal('show');
-                            $(".question-area-block").find('.show-notifications').html('<span class="question-status-wrong">Thats incorrect, but well done for trying</span>'+correct_answers_html);
-                            $(".question-area-block").find('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/wrong-answer.mp3"></audio>');
-                            if (rurera_is_field(return_data.question_solution)) {
-                                $(".question-area-block").find('.show-notifications').append(return_data.question_solution);
-                            }
-                            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
-                            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
-                            $(".quiz-status-bar").removeClass('rurera-hide');
-
-
-                        }else {
-                            const interval = setInterval(() => {
-
-                                $('#next-btn')[0].click();
-                                clearInterval(interval);
-                            }, 3000);
-                        }
-                    }
-                }
+                    console.log('after validation');
+                }*/
             } else {
 
-                quiz_user_data[0]['correct'][question_id] = question_data_array;
-
-                /*var marks_count = thisForm.find('.marks').attr('data-marks');
-                var marks_counter = 1;
-                var markscoin_html = '';
-                if (marks_count > 0) {
-                    while (marks_counter <= marks_count) {
-                        markscoin_html += '<div class="markscoin">';
-                        marks_counter++;
-                    }
-
-                }
-                $btn = $('.coin-marks-label');
-                var $coin = $(markscoin_html)
-                    .insertAfter($btn)
-                    .css({
-                        "left": 150,
-                        "top": 105
-                    })
-                    .animate({
-                        "top": 93,
-                        "left": 390
-                    }, 1000, function () {
-                        $coin.remove();
-                        var points_value = $(".range-value-count span").html();
-                        var points_value = parseInt(points_value) + parseInt(marks_count);
-                        $(".range-value-count span").html(points_value);
-                        $("#range").val(points_value);
-                    });
-
-                thisForm.find('.form-btn').append('<span class="question-all-good">All Good</span>');
-                var next_question_no = parseInt(question_no) + 1;
-
-
-                thisObj.closest('.questions-data-block').find('.question-fields').hide();
-                thisObj.closest('.question-area').find('.correct-appriciate').html(appricate_word);
-                thisObj.closest('.question-area').find('.correct-appriciate').addClass(appricate_color);
-                thisObj.closest('.question-area').find('.correct-appriciate').show(300).delay(2000).hide(300);*/
-                var next_question_no = parseInt(question_no) + 1;
-
-                if (quiz_type == 'vocabulary') {
+                /*if (quiz_type == 'vocabulary11') {
                     $(".spells-quiz-sound").append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/correct-answer.mp3"></audio>');
                 }else{
-                    if (quiz_type == 'practice') {
+                    if (quiz_type == 'practice11') {
                         $(".question-layout-block").append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/correct-answer.mp3"></audio>');
                     }
-                }
-
-                if (quiz_type != 'book') {
-                    //$(".question-area-block").find('.question-submit-btn').remove();
-                }
-                if (return_data.incorrect_flag == true) {
-
-                    if (quiz_type == 'practice') {
-                        $(".question-area-block").find('.show-notifications').html('<span class="question-status-wrong">Thats incorrect, but well done for trying</span>');
-
-                    }else {
-                        if (quiz_type == 'book') {
-                            if (question_response_layout != '') {
-                                var question_response_layout = return_data.question_response_layout;
-                                $(".question-area-block").html(question_response_layout);
-                            }
-                        } else {
-                            const interval = setInterval(() => {
-                                $('#next-btn')[0].click();
-                                clearInterval(interval);
-                            }, 3000);
-                        }
-                    }
-
-                } else {
-
-                    if (quiz_type == 'book') {
-                        if (question_response_layout != '') {
-                            var question_response_layout = return_data.question_response_layout;
-                            $(".question-area-block").html(question_response_layout);
-                        }
-                    }
-
-                    if (quiz_type == 'practice') {
-                        $(".question-area-block").find('.show-notifications').html('<span class="question-status-correct">Well done! Thats exactly right.</span>');
-                        if (rurera_is_field(return_data.question_solution)) {
-                            thisForm.find('.show-notifications').append(return_data.question_solution);
-                        }
-                        $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
-                        $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
-                        $(".quiz-status-bar").removeClass('rurera-hide');
-                    }
-                    else {
-                        /*const interval = setInterval(() => {
-                            $('#next-btn')[0].click();
-                            clearInterval(interval);
-                        }, 3000);*/
-                    }
-
-
-                    /*
-                    var question_response_layout = return_data.question_response_layout;
-                    if (question_response_layout != '') {
-                        $(".question-step").css({display: "none"}).hide().animate({opacity: 0});
-                        thisObj.closest('.questions-data-block').find('.question-fields').show(2500);
-                        $(".question-step.question-step-" + next_question_no).css({display: "block"}).show(3000).animate({opacity: 1});
-
-                        var question_response_layout = return_data.question_response_layout;
-                        var messageInterval = setTimeout(function () {
-                            $(".question-area-block").html(question_response_layout);
-                            clearInterval(messageInterval);
-                        }, 2000);
-
-
-                        var total_elapsed_time = $(".range-price").attr('data-time_elapsed');
-                        $(".question-step").attr('data-start_time', total_elapsed_time);
-                        */
-
-                    if (question_response_layout == '') {
-                        thisObj.closest('.questions-data-block').find('.right-content').addClass('hide');
-                        $(".quiz-complete").show(2000);
-
-                        quiz_user_data = chimp_encode64(JSON.stringify(quiz_user_data));
-                        //quiz_user_data = JSON.stringify(quiz_user_data);
-                        jQuery.ajax({
-                            type: "POST",
-                            url: '/question_attempt/test_complete',
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            },
-                            data: {"attempt_id": qattempt_id, "quiz_user_data": quiz_user_data},
-                            success: function (return_data) {
-
-                                $(".quiz-complete").css({display: "block"}).show(10).animate({opacity: 1});
-                                $(".quiz-complete").find(".question-layout").html(return_data);
-                                $(".quiz-complete").children().unbind('click');
-                            }
-                        });
-                    }
-                }
+                }*/
 
             }
         }
