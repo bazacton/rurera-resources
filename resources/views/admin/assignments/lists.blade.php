@@ -149,7 +149,21 @@
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->title}} ({{ getQuizTypeTitle($assignmentObj->assignment_type) }})</div>
                                             </td>
                                             <td data-th="Learners">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->students->where('status', '!=', 'inactive')->count()}}</div>
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                    @php
+                                                        $UserAssignedTopics = $assignmentObj->students()->where('status', '!=', 'inactive')->get();
+                                                    @endphp
+                                                    @if($UserAssignedTopics->count() > 0)
+                                                        <div class="user-thumbs">
+                                                        @foreach($UserAssignedTopics as $UserAssignedTopicObj)
+                                                            @php $assignmentStudentObj = $UserAssignedTopicObj->user; @endphp
+                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
+                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
+                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
+                                                        @endforeach
+                                                        </div>
+                                                    @endif
+                                                </div>
                                             </td>
                                             <td data-th="Accuracy">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
