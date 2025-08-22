@@ -363,6 +363,43 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     flex-wrap: wrap;
     gap: 10px;
 }
+.vocabulary-status {
+    display: inline-block;
+    background-color: #daffda;
+    padding: 4px 12px;
+    border-radius: 30px;
+    color: #164e16;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+}
+.vocabulary-status:before {
+    content: "\2713";
+    vertical-align: middle;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+.assignment-details-content h3 {
+    color: #333;
+    margin: 10px 0 15px;
+}
+.assignment-details-block .card.card-statistic-1 {
+    box-shadow: none;
+    padding: 0;
+}
+.assignment-details-block .card.card-statistic-1 .card-wrap {
+    width: 100%;
+}
+.assignment-details-block .card.card-statistic-1 h4 {
+    padding: 0;
+    font-weight: bold;
+    color: #4c5966;
+    font-size: 14px;
+}
+.assignment-details-block .card.card-statistic-1 .card-header {
+    margin: 0 0 10px;
+}
 /* Assignments New Table Style Start */
 .assignments-table .card {border: 0; border-radius: 5px; background-color: inherit; box-shadow: none; margin: 0;}
 .assignments-table .card h6 {display: flex; align-items: center; gap: 10px; font-size: 14px; color: #333;}
