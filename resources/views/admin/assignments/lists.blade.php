@@ -69,7 +69,7 @@
                             </div>
                         @endcan
                     </div>
-                    
+
                 </div>
                 <div class="col-12 col-md-12">
                     <div class="card-body pl-0 pr-0 pt-0">
@@ -132,11 +132,11 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th>Type</th>
-                                            <th>Questions</th>
-                                            <th>Participations</th>
-                                            <th>Start & End Date</th>
+                                            <th>Assignment</th>
+                                            <th>Learners</th>
                                             <th>Accuracy</th>
+                                            <th>Assigned</th>
+                                            <th>Assigned By</th>
                                             <th>Status</th>
                                             <th></th>
                                         </tr>
@@ -146,16 +146,10 @@
                                     @foreach($assignments as $assignmentObj)
                                         <tr>
                                             <td data-th="Type">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ getQuizTypeTitle($assignmentObj->assignment_type) }}</div>
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->title}} ({{ getQuizTypeTitle($assignmentObj->assignment_type) }})</div>
                                             </td>
-                                            <td data-th="Questions">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->no_of_questions}}</div>
-                                            </td>
-                                            <td data-th="Participations">
+                                            <td data-th="Learners">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->students->where('status', '!=', 'inactive')->count()}}</div>
-                                            </td>
-                                            <td data-th="Start & End Date">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y')}} / {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</div>
                                             </td>
                                             <td data-th="Accuracy">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
@@ -168,6 +162,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </td>
+                                            <td data-th="Assigned">
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y')}} / {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</div>
+                                            </td>
+                                            <td data-th="AssignedBy">
+                                                {{$assignmentObj->creatorUser->get_full_name()}}
                                             </td>
                                             <td data-th="Status" class="text-success font-weight-bold">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->status}}</div>
@@ -201,7 +201,7 @@
             </div>
         </div>
     </div>
-    
+
 </section>
 @endsection
 

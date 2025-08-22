@@ -27,6 +27,8 @@ if( $total_corrects > 0){
 	$attempt_percentage = round($attempt_percentage);
 }
 $target_score = 90;
+$correct_answer_explaination = isset($correct_answer_explaination)? $correct_answer_explaination : 0;
+$incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 <div class="content-section">
 	<form class="spell-test-quiz-form rurera-hide" action="/{{isset( $quiz->quizYear->slug )? $quiz->quizYear->slug : ''}}/{{$quiz->quiz_slug}}/spelling/exercise" method="POST">
@@ -248,9 +250,9 @@ $target_score = 90;
                     </div>
 					 <div class="question-attempt-block rurera-hide"><h2>Another session is active in a different location. Please continue from there.</h2></div>
 
-                    <div class="question-area-block" data-quiz_result_id="{{isset( $newQuizStart->id )? $newQuizStart->id : 0}}" data-duration_type="{{isset( $duration_type )? $duration_type : 'no_time_limit'}}" data-time_interval="{{isset( $time_interval )? $time_interval : 0}}" data-practice_time="{{isset( $practice_time )? $practice_time : 0}}"
+                    <div class="question-area-block" data-quiz_result_id="{{isset( $newQuizStart->id )? $newQuizStart->id : 0}}" data-duration_type="{{isset( $duration_type )? $duration_type : 'no_time_limit'}}" data-time_interval="{{isset( $timer_counter )? $timer_counter : 0}}" data-practice_time="{{isset( $timer_counter )? $timer_counter : 0}}"
                          data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-					@php $timer_counter = 0; $total_play_time = 10; @endphp
+					@php $total_play_time = 10; @endphp
 					<div class="question-area spell-question-area">
 						<div class="correct-appriciate" style="display:none"></div>
 
@@ -519,7 +521,10 @@ $target_score = 90;
 
     var Quizintervals = null;
 
+    var correct_answer_explaination = '{{$correct_answer_explaination}}';
+    var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
     var duration_type = '{{$duration_type}}';
+    var timer_counter = '{{$timer_counter}}';
     var timePaused = false;
 
 	var focusInterval = null;
@@ -556,7 +561,7 @@ $target_score = 90;
 				});
 			}
 		}
-	}, 5000);
+	}, 10000);
 
     $(document).on('click', '.start-spell-quiz', function (e) {
         //jQuery(document).ready(function() {
@@ -568,7 +573,72 @@ $target_score = 90;
 
     });
 
+
+    $("body").on("click", ".question-next-btn", function (e) {
+
+        var current_number = $('.show-correct-answer span').html();
+        var current_number = parseInt(current_number)+1;
+        $('.show-correct-answer span').html(current_number);
+        timePaused = false;
+
+    });
+
     function quiz_default_functions() {
+
+        var active_question_id = $(".question-area-block").attr('data-active_question_id');
+        $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
+
+        Quizintervals = setInterval(function () {
+            var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
+            if (duration_type == 'no_time_limit') {
+                quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
+            } else {
+                quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
+            }
+            $('.quiz-timer-counter').html(getTime(quiz_timer_counter));
+            if ($('.nub-of-sec').length > 0) {
+                $('.nub-of-sec').html(getTime(quiz_timer_counter));
+            }
+            $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
+            if (duration_type == 'per_question') {
+                if (parseInt(quiz_timer_counter) == 0) {
+                    clearInterval(Quizintervals);
+                    $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+                    $('#question-submit-btn')[0].click();
+                }
+            }
+            if (duration_type == 'total_practice') {
+                if (parseInt(quiz_timer_counter) == 0) {
+                    clearInterval(Quizintervals);
+                    $(".review-btn").click();
+                    if ($('.question-review-btn').length > 0) {
+                        $('.question-review-btn').click();
+                    }
+                }
+            }
+
+        }, 1000);
+
+        $("body").on("click", ".increasetext", function (e) {
+            curSize = parseInt($('.learning-page').css('font-size')) + 2;
+            if (curSize <= 32)
+                $('.learning-page').css('font-size', curSize);
+        });
+
+        $("body").on("click", ".resettext", function (e) {
+            if (curSize != 16)
+                $('.learning-page').css('font-size', 18);
+        });
+
+        $("body").on("click", ".decreasetext", function (e) {
+            curSize = parseInt($('.learning-page').css('font-size')) - 2;
+            if (curSize >= 16)
+                $('.learning-page').css('font-size', curSize);
+        });
+    }
+
+
+    function quiz_default_functions111() {
 		window.addEventListener('blur', function () {
             //var attempt_id = $(".question-area .question-step").attr('data-qattempt');
             //inactivity-timer
@@ -657,14 +727,7 @@ $target_score = 90;
             }
         });
 
-        $("body").on("click", ".question-next-btn", function (e) {
 
-            var current_number = $('.show-correct-answer span').html();
-            var current_number = parseInt(current_number)+1;
-            $('.show-correct-answer span').html(current_number);
-            timePaused = false;
-
-        });
 
 
 
@@ -719,6 +782,8 @@ $target_score = 90;
 
     }
 
+
+
 	var active_question_id = $(".question-area-block").attr('data-active_question_id');
 	if( active_question_id > 0){
 		$('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
@@ -745,10 +810,48 @@ $target_score = 90;
     }
 
     function afterNextQuestion(){
+        if (duration_type == 'per_question') {
+            $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
+            quiz_default_functions();
+        }
         $('.rurera-question-block.active').find('.play-word-btn').click();
     }
 	var spell_play_time = "{{gameTime('vocabulary')}}";
-	function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
+
+
+    function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
+        var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
+        $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
+        var notifications_settings_show_message = $(".show-notifications").attr('data-show_message');
+
+        $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
+        $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+
+        if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
+            var question_solution = return_data.question_solution;
+            var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
+            var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect11, but well done for trying' : 'Well done! Thats exactly right.';
+            var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
+            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+        if(return_data.incorrect_flag == false && correct_answer_explaination == 1){
+            var notification_class = 'correct';
+            var notification_label = 'Well done! Thats exactly right.';
+            var notification_sound = 'correct-answer.mp3';
+            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+
+        //$('#ne0xt-btn')[0].click();
+    }
+
+
+
+	function afterQuestionValidation11(return_data, thisForm, question_id, thisBlock) {
 		var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
 		$(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").removeClass('waiting');
 		$(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);

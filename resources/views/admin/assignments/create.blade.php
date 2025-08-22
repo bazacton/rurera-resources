@@ -206,13 +206,44 @@
 
                                             <div class="years-group populated-data">
                                                 <div class="form-group">
+                                                    <label class="input-label">Assignment Type</label>
+                                                    <div class="input-group">
+
+
+                                                        <div class="radio-buttons">
+                                                            <label class="card-radio">
+                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_practice_type]"
+                                                                       class="assignment_practice_type conditional_field_check" value="practice" checked>
+                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <h3>Practice</h3>
+                                                            </div>
+
+                                                        </span>
+                                                            </label>
+                                                            <label class="card-radio">
+                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_practice_type]"
+                                                                       class="assignment_practice_type conditional_field_check" value="test">
+                                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <h3>Test</h3>
+                                                            </div>
+
+                                                        </span>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="invalid-feedback"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
                                                     <label class="input-label">Practice Type</label>
                                                     <div class="input-group">
 
                                                         <div class="radio-buttons">
 
                                                             @if(auth()->user()->subscription('courses'))
-                                                                <label class="card-radio">
+                                                                <label class="card-radio conditional_fields_block practice_fields_block">
                                                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                             class="assignment_topic_type_check" value="practice" checked>
                                                                     <span class="radio-btn"><i class="las la-check"></i>
@@ -224,7 +255,7 @@
                                                                 </label>
                                                             @endif
                                                                 @if(auth()->user()->subscription('sats'))
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="sats">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -237,7 +268,7 @@
                                                             @endif
 
                                                             @if(auth()->user()->subscription('11plus'))
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="11plus">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -252,7 +283,7 @@
 
                                                                 @if(auth()->user()->subscription('11plus'))
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="independent_exams">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -267,7 +298,7 @@
 
                                                                 @if(auth()->user()->subscription('11plus'))
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="iseb">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -282,7 +313,7 @@
 
                                                                 @if(auth()->user()->subscription('11plus'))
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="cat4">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -297,7 +328,7 @@
 
                                                                 @if(auth()->user()->subscription('vocabulary'))
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block test_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="vocabulary">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -312,7 +343,7 @@
 
                                                                 @if(auth()->user()->subscription('timestables'))
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block practice_fields_block test_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="timestables">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -325,7 +356,7 @@
                                                             </label>
                                                                 @endif
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio conditional_fields_block test_fields_block">
                                                                 <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="assignment">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -453,6 +484,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
 
                                                 <div class="assignment_topic_type_fields vocabulary_fields sats_fields practice_fields assignment_fields">
@@ -460,43 +492,13 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="quiz-ajax-fields"></div>
                                                         </div>
-
-
-
+                                                        <div class="spell-questions-list"></div>
                                                     </div>
                                                 </div>
 
                                                 <div class="assignment_topic_type_fields vocabulary_fields">
                                                     <div class="row">
-
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                                            <div class="form-group">
-                                                                <label class="input-label">Assignment Type</label>
-                                                                <div class="input-group">
-                                                                    <div class="radio-buttons">
-
-                                                                        <label class="card-radio">
-                                                                            <input type="radio" class="conditional_check assignment_quiz_type" name="ajax[new][assignment_quiz_type]" value="practice" checked>
-                                                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                                                <div class="card-icon">
-                                                                                    <h3>Practice</h3>
-                                                                                </div>
-                                                                            </span>
-                                                                        </label>
-                                                                        <label class="card-radio">
-                                                                            <input type="radio" class="conditional_check assignment_quiz_type" name="ajax[new][assignment_quiz_type]" value="test">
-                                                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                                                <div class="card-icon">
-                                                                                    <h3>Test</h3>
-                                                                                </div>
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields practice_field">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                                                             <div class="form-group">
                                                                 <label class="input-label">Practice Type</label>
                                                                 <div class="input-group">
@@ -880,7 +882,30 @@
                                                     </div>
                                                 </div>
 
-
+                                                <div class="form-group">
+                                                    <label class="input-label">Assignment Settings</label>
+                                                    <div class="option-field-item mt-20 mb-20">
+                                                    <label class="custom-switch pl-0">
+                                                        <input type="checkbox" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][shuffle_questions]" id="shuffle_questions" value="1" class="custom-switch-input">
+                                                        <span class="custom-switch-indicator"></span>
+                                                        <label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
+                                                    </label>
+                                                    </div>
+                                                    <div class="option-field-item mt-20 mb-20">
+                                                    <label class="custom-switch pl-0">
+                                                        <input type="checkbox" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][correct_answer_explaination]" id="correct_answer_explaination" value="1" class="custom-switch-input">
+                                                        <span class="custom-switch-indicator"></span>
+                                                        <label class="custom-switch-description mb-0 cursor-pointer" for="correct_answer_explaination">Correct Answer Explaination</label>
+                                                    </label>
+                                                    </div>
+                                                    <div class="option-field-item mt-20 mb-20">
+                                                    <label class="custom-switch pl-0">
+                                                        <input type="checkbox" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][incorrect_answer_explaination]" id="incorrect_answer_explaination" value="1" class="custom-switch-input">
+                                                        <span class="custom-switch-indicator"></span>
+                                                        <label class="custom-switch-description mb-0 cursor-pointer" for="incorrect_answer_explaination">Incorrect Answer Explaination</label>
+                                                    </label>
+                                                    </div>
+                                                </div>
 
                                                 <div class="form-group assignment_method_check_fields practice_fields target_improvements_fields">
                                                     <label class="input-label">Duration Type</label>
@@ -1281,6 +1306,14 @@
                 }
             });
 
+
+
+            $('body').on('change', '.conditional_field_check', function (e) {
+                var current_value = $(this).val();
+                $(".conditional_fields_block").addClass('rurera-hide');
+                $('.' + current_value + '_fields_block').removeClass('rurera-hide');
+            });
+
             $('body').on('change', '.conditional_check', function (e) {
                 var current_value = $(this).val();
                 $(".conditional_fields").addClass('rurera-hide');
@@ -1354,6 +1387,16 @@
                 $(".assignment_method_check_fields").addClass('rurera-hide');
                 $('.assignment_method_check_fields.' + current_value + '_fields').removeClass('rurera-hide');
             });
+            $('body').on('change', '.questions-selection', function (e) {
+                var no_of_selections = $(".questions-selection:checked").length;
+                $(".max_questions").html('Max: ' + no_of_selections);
+                $(".no_of_questions").attr('max', no_of_selections);
+                $(".no_of_questions").attr('min', no_of_selections);
+                $(".no_of_questions").val(no_of_selections);
+                slider_fields_refresh();
+            });
+
+
 
 
             $('body').on('change', '.no_of_attempts', function (e) {
@@ -1370,7 +1413,10 @@
             $('body').on('change', '.year_quiz_ajax_select', function (e) {
                 var year_id = $(this).val();
                 var quiz_type = $(".assignment_topic_type_check:checked").val();
-                var vocabulary_type = $(".vocabulary_type:checked").val();
+                var vocabulary_type = '';
+                if(quiz_type == 'vocabulary') {
+                    var vocabulary_type = $(".vocabulary_type:checked").val();
+                }
                 var thisObj = $(this);//$(".quiz-ajax-fields");
                 $(".yeargroup-ajax-fields").html('');
                 rurera_loader(thisObj, 'button');
@@ -1494,6 +1540,28 @@
                 $(".no_of_questions").attr('max', total_questions);
                 //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
                 $(".no_of_questions").val(0);
+
+
+
+
+                var assignment_practice_type = $(".assignment_practice_type:checked").val();
+                var assignment_topic_type_check = $(".assignment_topic_type_check:checked").val();
+                if(assignment_practice_type == 'test' && assignment_topic_type_check == 'vocabulary'){
+                    rurera_loader($(".spell-questions-list"), 'div');
+                    jQuery.ajax({
+                        type: "GET",
+                        url: '/admin/common/spell_questions_list_by_quiz',
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        data: {"quiz_id": current_value},
+                        success: function (return_data) {
+                            rurera_remove_loader($(".spell-questions-list"), 'button');
+                            $(".spell-questions-list").html(return_data);
+                        }
+                    });
+                }
+
             });
 
             $('body').on('change', '.topics_multi_selection', function (e) {

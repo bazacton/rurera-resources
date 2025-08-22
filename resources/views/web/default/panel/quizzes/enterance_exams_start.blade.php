@@ -16,6 +16,8 @@ $timer_counter = $time_interval;
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
+$correct_answer_explaination = isset($correct_answer_explaination)? $correct_answer_explaination : 0;
+$incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 <div class="content-section">
 
@@ -68,50 +70,23 @@ $timer_counter = $practice_time;
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-            <section class="quiz-topbar {{$top_bar_class}}">
+            <section class="quiz-topbar {{$top_bar_class}}" style="display:block !important">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
                             @if( isset( $quiz->quiz_type ))
                                <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
                            @endif
-						   
+
                             <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
                             <div class="topbar-right">
                                 <div class="quiz-pagination">
-                                    <div class="swiper-container">
-                                    <ul class="swiper-wrapper">
-                                        @if( !empty( $questions_list ) )
-                                        @php $question_count = 1; @endphp
-                                        @foreach( $questions_list as $question_id)
-                                        @php $is_flagged = false;
-                                        $flagged_questions = ($newQuizStart->flagged_questions != '')? json_decode
-                                        ($newQuizStart->flagged_questions) : array();
-                                        $actual_question_id = isset( $actual_question_ids[$question_id] )? $actual_question_ids[$question_id] : 0;
-                                        @endphp
-                                        @if( is_array( $flagged_questions ) && in_array( $actual_question_id,
-                                        $flagged_questions))
-                                        @php $is_flagged = true;
-                                        @endphp
-                                        @endif
-                                        @php $question_status_class = isset( $questions_status_array[$question_id] )? $questions_status_array[$question_id] : 'waiting'; @endphp
-                                        <li data-question_id="{{$question_id}}" data-actual_question_id="{{$actual_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
-                                                'has-flag' : ''}} "><a
-                                                href="javascript:;">
-                                                {{$question_count}}</a></li>
-                                        @php $question_count++; @endphp
-                                        @endforeach
-                                        @endif
-                                    </ul>
-                                    </div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
                                 </div>
                                 <div class="quiz-timer">
-                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($practice_time*60)}}">0s</div></span>
+                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
                                 </div>
                             </div>
                         </div>
@@ -171,10 +146,9 @@ $timer_counter = $practice_time;
                                                 data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                 data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
                                                 data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-                                                
+
                                                 {!! $questionLayout !!}
-                                                
-                                                Question ID: {{$active_actual_question_id}}
+
                                                 </div>
 
                                                 @php $question_counter++; @endphp
@@ -263,8 +237,10 @@ $timer_counter = $practice_time;
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
 
-
+<script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
+    var correct_answer_explaination = '{{$correct_answer_explaination}}';
+    var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
     //init_question_functions();
     $('body').addClass('quiz-show');
     var header = document.getElementById("navbar");
@@ -273,9 +249,12 @@ $timer_counter = $practice_time;
 
 	var attempted_questions = '{{count(array_filter($questions_status_array, fn($value) => $value !== "waiting"))}}';
 
+    var Questioninterval = null;
     var Quizintervals = null;
 
     var duration_type = '{{$duration_type}}';
+    var timer_counter = '{{$timer_counter}}';
+
 
     function quiz_default_functions() {
 
@@ -294,10 +273,21 @@ $timer_counter = $practice_time;
                 $('.nub-of-sec').html(getTime(quiz_timer_counter));
             }
             $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
-            if( quiz_timer_counter == 0){
-                clearInterval(Quizintervals);
-                rurera_loader($(".lms-quiz-section"), 'div');
-                $(".submit_quiz_final").click();
+            if (duration_type == 'per_question') {
+                if (parseInt(quiz_timer_counter) == 0) {
+                    clearInterval(Quizintervals);
+                    $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+                    $('#question-submit-btn')[0].click();
+                }
+            }
+            if (duration_type == 'total_practice') {
+                if (parseInt(quiz_timer_counter) == 0) {
+                    clearInterval(Quizintervals);
+                    $(".review-btn").click();
+                    if ($('.question-review-btn').length > 0) {
+                        $('.question-review-btn').click();
+                    }
+                }
             }
 
         }, 1000);
@@ -337,22 +327,47 @@ $timer_counter = $practice_time;
         return_string = return_string + 's';
         return return_string;
     }
-	
-	
+
+
 	function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
 		var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
 		$(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
         var notifications_settings_show_message = $(".show-notifications").attr('data-show_message');
-		if( notifications_settings_show_message == 'yes'){
-			var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
+
+        $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
+        $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+
+        if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
+            var question_solution = return_data.question_solution;
+            var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
             var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
-			var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
-			thisForm.find('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-			thisForm.find('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
-		}
-		$('#next-btn')[0].click();
+            var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
+            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+        if(return_data.incorrect_flag == false && correct_answer_explaination == 1){
+            var notification_class = 'correct';
+            var notification_label = 'Well done! Thats exactly right.';
+            var notification_sound = 'correct-answer.mp3';
+            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+
+		//$('#ne0xt-btn')[0].click();
     }
-	
+
+    function afterNextQuestion(){
+        if (duration_type == 'per_question') {
+            $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
+            quiz_default_functions();
+        }
+    }
+
+
+
 	function afterQuestionValidation_bk(return_data, thisForm, question_id) {
 		var current_question_layout = getDivWithValues().html();//$(".question-area-block").html();
 		//console.log(current_question_layout.html());
@@ -371,19 +386,19 @@ $timer_counter = $practice_time;
 		console.log('afterQuestionValidation');
 		console.log('questions_layout.length===='+question_local_id);
 		questions_layout[question_local_id] = current_question_layout;
-		
+
 		let questions_layout_object = {};
-		
+
 		$.each(questions_layout, function(question_index, question_value) {
 			if (typeof question_value !== 'undefined') {
 				questions_layout_object[question_index] = questions_layout[question_index];
 			}
 		});
 		$('.question-area-block').attr('data-questions_layout', JSON.stringify(questions_layout_object))
-		
+
 	}
-	
-	
+
+
 	function getDivWithValues() {
         // Clone the original div
         let clonedDiv = $('.question-area-block').clone();
@@ -442,7 +457,7 @@ $timer_counter = $practice_time;
                 }
             });
         });
-		
+
 		clonedDiv.find('.question-submit-btn').removeClass('rurera-processing');
 		clonedDiv.find('.rurera-button-loader').remove();
 
