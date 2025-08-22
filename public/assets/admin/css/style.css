@@ -341,7 +341,10 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card.bg-primary, .card.bg-danger, .card.bg-success, .card.bg-info, .card.bg-dark, .card.bg-warning {color: #fff;}
 .card.bg-primary .card-header, .card.bg-danger .card-header, .card.bg-success .card-header, 
 .card.bg-info .card-header, .card.bg-dark .card-header, .card.bg-warning .card-header {color: #fff; opacity: .9;}
-
+.assignment-details-block {
+    width: 100%;
+    margin-top: 30px;
+}
 /* Assignments New Table Style Start */
 .assignments-table .card {border: 0; border-radius: 5px; background-color: inherit; box-shadow: none; margin: 0;}
 .assignments-table .card h6 {display: flex; align-items: center; gap: 10px; font-size: 14px; color: #333;}
