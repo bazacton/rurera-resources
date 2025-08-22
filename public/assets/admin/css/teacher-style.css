@@ -6138,6 +6138,9 @@ button.print-download-btn {
     pointer-events: none;
     z-index: 1;
 }
+.select-holder:has(.classes_filter):before {
+    right: 10px;
+}
 .card .card-body .class-section-data select.form-control {
     font-size: 14px;
     background-color: #fdfdff;
