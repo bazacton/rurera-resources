@@ -158,6 +158,8 @@
                                                         @foreach($UserAssignedTopics as $UserAssignedTopicObj)
                                                             @php $assignmentStudentObj = $UserAssignedTopicObj->user; @endphp
                                                             <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
+                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
+                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
                                                         @endforeach
                                                         </div>
                                                     @endif
