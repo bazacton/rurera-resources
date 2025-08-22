@@ -161,6 +161,7 @@
                                                             <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
                                                             <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
                                                         @endforeach
+                                                            <div class="more-users-no">+5</div>
                                                         </div>
                                                     @endif
                                                 </div>
