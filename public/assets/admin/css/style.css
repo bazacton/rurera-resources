@@ -1372,6 +1372,10 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     margin-top: -4px;
     pointer-events: none;
 }
+.select-holder:has(.classes_filter):after {
+    right: 15px;
+    z-index: 2;
+}
 .create-class-modal .select-holder:has(.select-box):after {
     display: none;
 }
