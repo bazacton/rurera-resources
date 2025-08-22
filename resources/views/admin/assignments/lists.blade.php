@@ -182,7 +182,7 @@
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y')}} / {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</div>
                                             </td>
                                             <td data-th="AssignedBy">
-                                                {{$assignmentObj->creatorUser->get_full_name()}}
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->creatorUser->get_full_name()}}</div>
                                             </td>
                                             <td data-th="Status" class="text-success font-weight-bold">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->status}}</div>
