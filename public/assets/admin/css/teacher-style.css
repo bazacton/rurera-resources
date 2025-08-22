@@ -6088,6 +6088,9 @@ button.print-download-btn {
     border-radius: 10px;
     background-color: #ebebeb;
 }
+.card-body form .form-group select.form-control {
+    padding-right: 40px;
+}
 .card-body form .form-group input[type="text"]:focus {
     background-color: #fff;
     border-color: #e4e6fc;
@@ -6117,6 +6120,7 @@ button.print-download-btn {
 }
 .card-body form .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #1e1e1e;
+    padding-right: 40px;
 }
 .card-body form .select-holder:after {
     right: 17px;
