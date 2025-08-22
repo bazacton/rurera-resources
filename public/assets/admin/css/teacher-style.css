@@ -6124,7 +6124,8 @@ button.print-download-btn {
     border-left-color: #ccc;
     pointer-events: none;
 }
-.card-body form .select-holder:before {
+.card-body form .select-holder:before,
+.select-holder:has(.classes_filter):before {
     position: absolute;
     right: 15px;
     top: 50%;
