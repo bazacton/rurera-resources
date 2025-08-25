@@ -6106,7 +6106,7 @@ button.print-download-btn {
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
     font-size: 1rem;
 }
-.card-body form {
+.card-body form .row {
     margin-left: -5px;
     margin-right: -5px;
 }
