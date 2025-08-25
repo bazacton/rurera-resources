@@ -94,7 +94,7 @@
 
 
             <label>Curriculum</label>
-            <div class="select-holder">
+            <div class="select-holder input-group mb-15">
                 <select class="form-control @error('category_id') is-invalid @enderror"
                         name="category_id">
                     <option {{ !empty($trend) ?
