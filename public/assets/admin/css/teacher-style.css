@@ -6087,6 +6087,7 @@ button.print-download-btn {
 .card-body form .form-group .form-control {
     border-radius: 10px;
     background-color: #ebebeb;
+    font-weight: 600;
 }
 .card-body form .form-group input.form-control[type="text"]::-moz-placeholder {color: #1e1e1e;}
 .card-body form .form-group input.form-control[type="text"]:-ms-input-placeholder {color: #1e1e1e;}
