@@ -355,22 +355,8 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignment-details-block .card.card-statistic-1 .card-header {margin: 0 0 5px;}
 .assignment-details-block .circle_percent {font-size: 35px; vertical-align: middle;}
 .assignment-details-block .card.card-statistic-1 .card-body {flex: auto; color: #1e1e1e;}
-.assignment-details-block .percent_text {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-left: 5px;
-    line-height: normal;
-    vertical-align: middle;
-}
-.student-attempt-info [class*="col-"] {
-    width: auto;
-    max-width: none;
-    flex: 0 0 auto;
-}
+.assignment-details-block .percent_text {position: relative; left: auto; top: auto; transform: none; display: inline-block; font-size: 20px; margin-left: 5px; line-height: normal; vertical-align: middle;}
+.student-attempt-info [class*="col-"] {width: auto; max-width: none; flex: 0 0 auto;}
 .assignment-details-block [class*="col-"]:has(.card-statistic-1):last-child .card-wrap {border-right: 0;}
 /* Assignments New Table Style Start */
 .assignments-table .card {border: 0; border-radius: 5px; background-color: inherit; box-shadow: none; margin: 0;}
@@ -1290,66 +1276,20 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .teacher-search-filter {display: flex; align-items: center; border-bottom: 1px solid #ddd; padding: 15px 15px; gap: 10px; justify-content: end;}
 .sorting-filters img {height: 15px; width: 15px;}
 .sorting-filters {position: relative; padding: 0 5px 0 28px; border: 1px solid #ddd; border-radius: 5px; margin-right: auto;}
-.sorting-filters .icon-box {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.sorting-filters select {
-    border: 0;
-    background-color: inherit;
-    height: 30px;
-}
-.search-field {
-    position: relative;
-    padding: 0 0 0 35px;
-    width: auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 38px;
-    background-color: #ebebeb;
-}
-.search-field .icon-box {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.search-field input[type="text"] {
-    border: 0;
-    outline: none;
-    width: 100%;
-    height: 38px;
-    min-width: 200px;
-    -webkit-transition: all 0.3s ease-out; 
-    -moz-transition: all 0.3s ease-out; 
-    -ms-transition: all 0.3s ease-out; 
-    -o-transition: all 0.3s ease-out; 
-    transition: all 0.3s ease-out;
-    background-color: #ebebeb;
-}
+.sorting-filters .icon-box {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+.sorting-filters select {border: 0; background-color: inherit; height: 30px;}
+.search-field {position: relative; padding: 0 0 0 35px; width: auto; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; height: 38px; background-color: #ebebeb;}
+.search-field .icon-box {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+.search-field input[type="text"] {border: 0; outline: none; width: 100%; height: 38px; min-width: 200px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; background-color: #ebebeb;}
 .search-field input[type="text"]::-moz-placeholder {color: #1e1e1e;}
 .search-field input[type="text"]:-ms-input-placeholder {color: #1e1e1e;}
 .search-field input[type="text"]::-webkit-input-placeholder {color: #1e1e1e;}
 .search-field input[type="text"]:focus,
-.search-field:has(input[type="text"]:focus) {
-    background-color: #fff;
-}
-.search-field input[type="text"]:focus {
-    min-width: 220px;
-}
-.search-field .icon-box img {
-    height: 20px;
-    width: 20px;
-}
-.form-group:has(.classes_filter) {
-    margin: 0 0 0 10px;
-}
-.select-holder:has(.classes_filter) {
-    position: relative;
-}
+.search-field:has(input[type="text"]:focus) {background-color: #fff;}
+.search-field input[type="text"]:focus {min-width: 220px;}
+.search-field .icon-box img {height: 20px; width: 20px;}
+.form-group:has(.classes_filter) {margin: 0 0 0 10px;}
+.select-holder:has(.classes_filter) {position: relative;}
 .select-holder:has(.classes_filter):after,
 .create-class-modal .select-holder:after {
     position: absolute;
