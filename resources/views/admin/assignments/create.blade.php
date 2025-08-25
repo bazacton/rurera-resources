@@ -492,7 +492,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="quiz-ajax-fields"></div>
                                                         </div>
-                                                        <div class="spell-questions-list p-reletive"></div>
+                                                        <div class="spell-questions-list position-relative"></div>
                                                     </div>
                                                 </div>
 
