@@ -6070,6 +6070,7 @@ button.print-download-btn {
     padding: .375rem .75rem;
     margin: 0;
     font-size: 1rem;
+    font-weight: 600;
 }
 .admin_teacher_role .select2-container--default .select2-selection--multiple {
     padding-bottom: 0;
@@ -6089,9 +6090,12 @@ button.print-download-btn {
     background-color: #ebebeb;
     font-weight: 600;
 }
-.card-body form .form-group input.form-control[type="text"]::-moz-placeholder {color: #1e1e1e;}
-.card-body form .form-group input.form-control[type="text"]:-ms-input-placeholder {color: #1e1e1e;}
-.card-body form .form-group input.form-control[type="text"]::-webkit-input-placeholder {color: #1e1e1e;}
+.card-body form .form-group input.form-control[type="text"]::-moz-placeholder,
+.admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {color: #1e1e1e;}
+.card-body form .form-group input.form-control[type="text"]:-ms-input-placeholder,
+.admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {color: #1e1e1e;}
+.card-body form .form-group input.form-control[type="text"]::-webkit-input-placeholder,
+.admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {color: #1e1e1e;}
 .card-body form .form-group select.form-control {
     padding-right: 40px;
 }
