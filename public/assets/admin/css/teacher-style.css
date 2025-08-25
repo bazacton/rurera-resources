@@ -6088,6 +6088,9 @@ button.print-download-btn {
     border-radius: 10px;
     background-color: #ebebeb;
 }
+.card-body form .form-group input.form-control[type="text"]::-moz-placeholder {color: #1e1e1e;}
+.card-body form .form-group input.form-control[type="text"]:-ms-input-placeholder {color: #1e1e1e;}
+.card-body form .form-group input.form-control[type="text"]::-webkit-input-placeholder {color: #1e1e1e;}
 .card-body form .form-group select.form-control {
     padding-right: 40px;
 }
