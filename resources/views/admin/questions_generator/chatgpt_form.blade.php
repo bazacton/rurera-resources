@@ -137,7 +137,7 @@
 																$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 																$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 																@endphp
-																@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
+																@php $total_questions = 0;//$subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
 																$pending_questions = $expected_part_questions-$total_questions;
 																$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 																$total_pending_questions += $pending_questions;
