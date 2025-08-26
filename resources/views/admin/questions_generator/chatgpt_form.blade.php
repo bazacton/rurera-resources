@@ -118,7 +118,7 @@
 													@php
 													$total_pending_questions = $total_unreviewed_questions = 0;
 													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
-													$expected_part_questions = ($expected_part_questions*$subTopicObj->topicPartItemPrompts->count());
+													$expected_part_questions = 0;//($expected_part_questions*$subTopicObj->topicPartItemPrompts->count());
 													$total_part_questions = 0;//$subTopicObj->topicPartItemQuestions->count();
 													$pending_part_questions = $expected_part_questions-$total_part_questions;
 													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
@@ -155,7 +155,7 @@
 														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)
 															@php $prompt_title = isset($promptObj->prompt_title )? $promptObj->prompt_title : '';
 															$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
-															$unreviewed_questions = $promptObj->promptQuestions->where('question_status', 'api_pending')->count();
+															$unreviewed_questions = 0;//$promptObj->promptQuestions->where('question_status', 'api_pending')->count();
 															@endphp
 
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
@@ -163,7 +163,7 @@
 															  <td data-label="Created Date">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
-																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
+																	@php $total_questions = 0;//$promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
 																	@php $difficulty_level_class = '';
 																	$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
 																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
