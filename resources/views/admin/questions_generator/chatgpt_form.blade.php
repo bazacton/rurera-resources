@@ -118,11 +118,11 @@
 													@php
 													$total_pending_questions = $total_unreviewed_questions = 0;
 													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
-													$expected_part_questions = 0;//($expected_part_questions*$subTopicObj->topicPartItemPrompts->count());
-													$total_part_questions = 0;//$subTopicObj->topicPartItemQuestions->count();
+													$expected_part_questions = ($expected_part_questions*$subTopicObj->topicPartItemPrompts->count());
+													$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
 													$pending_part_questions = $expected_part_questions-$total_part_questions;
 													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-													$total_unreviewed_questions = 0;//$subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
+													$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
 													@endphp
 
 													<tr class="topic_parts accordion-parent" data-child_class="subtopic_prompts_{{$subTopicObj->id}}">
@@ -137,12 +137,12 @@
 																$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 																$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 																@endphp
-																@php $total_questions = 0;//$subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
+																@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
 																$pending_questions = $expected_part_questions-$total_questions;
 																$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 																$total_pending_questions += $pending_questions;
 																@endphp
-																<td class="{{$difficulty_level_class}}" data-label="Expected">{{$expected_part_questions}}</td>
+																<td class="{{$difficulty_level_class}}" data-label="Expected">--{{$expected_part_questions}}</td>
 																<td class="{{$difficulty_level_class}}" data-label="Total">{{$total_questions}}</td>
 																<td class="{{$difficulty_level_class}} table-col-pending" data-label="Pending">{{$pending_questions}}</td>
 															@endforeach
@@ -155,7 +155,7 @@
 														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)
 															@php $prompt_title = isset($promptObj->prompt_title )? $promptObj->prompt_title : '';
 															$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
-															$unreviewed_questions = 0;//$promptObj->promptQuestions->where('question_status', 'api_pending')->count();
+															$unreviewed_questions = $promptObj->promptQuestions->where('question_status', 'api_pending')->count();
 															@endphp
 
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
@@ -163,7 +163,7 @@
 															  <td data-label="Created Date">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
-																	@php $total_questions = 0;//$promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
+																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
 																	@php $difficulty_level_class = '';
 																	$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
 																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
