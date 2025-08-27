@@ -6178,7 +6178,7 @@ button.print-download-btn {
     height: auto;
     min-height: 250px;
     z-index: auto;
-    background-color: var(--blue);
+    background-color: #fff;
     border-bottom: 1px solid #f6f6f6;
     align-items: flex-start;
     padding-top: 15px;
