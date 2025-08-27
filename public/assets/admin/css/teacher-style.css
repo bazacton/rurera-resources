@@ -6176,12 +6176,13 @@ button.print-download-btn {
 /* Teacher Dashboard Header Style Start */
 .admin_teacher_role .navbar {
     height: auto;
-    min-height: 250px;
+    min-height: auto;
     z-index: auto;
     background-color: #fff;
     border-bottom: 1px solid #f6f6f6;
     align-items: flex-start;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* .admin_teacher_role .navbar .nav-link,
 .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
