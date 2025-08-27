@@ -1745,6 +1745,8 @@ Tailer Hub Style Start
     display: flex !important;
     align-items: center;
     gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
 }
 .section-header .setting-btn {
     height: 30px;
