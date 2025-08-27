@@ -1629,6 +1629,7 @@ Tailer Hub Style Start
     align-items: center;
     justify-content: space-between;
     margin-right: 0;
+    padding-right: 30px;
 }
 .admin_teacher_role .section .section-header .heading-holder {
     flex-direction: column-reverse;
