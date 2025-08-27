@@ -85,7 +85,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .bottom-controls .btn:hover {background: #f2f2f2 !important;}
 .admin_teacher_role .bottom-controls .btn:focus {background-color: inherit !important;}
 .admin_teacher_role .bottom-controls .btn.user-btn:hover {background-color: inherit !important;}
-.admin_teacher_role .bottom-controls .btn i {font-size: 16px;}
+.admin_teacher_role .bottom-controls .btn i {font-size: 16px; color: #009788;}
 .admin_teacher_role .right-area {display: inline-flex; align-items: center; gap: 10px;}
 .admin_teacher_role .classes-card.disabled {
     position: relative;
