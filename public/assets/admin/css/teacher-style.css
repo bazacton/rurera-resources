@@ -6200,8 +6200,8 @@ button.print-download-btn {
     background-color: #fff;
     border-bottom: 1px solid #f6f6f6;
     align-items: flex-start;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /* .admin_teacher_role .navbar .nav-link,
 .admin_teacher_role .section .section-header .section-header-breadcrumb .breadcrumb-item a,
@@ -6279,6 +6279,7 @@ button.print-download-btn {
 .admin_teacher_role .main-content {
     padding-right: 20px;
     background-color: inherit;
+    padding-top: 120px;
 }
 @media screen and (min-width: 1200px) and (max-width: 1850px) {
     .admin_teacher_role .main-sidebar ~ .main-content {
