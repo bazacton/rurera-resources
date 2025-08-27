@@ -24,8 +24,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 /* Admin Left Menue Style End */
 
 /* Admin Classes Style Start */
-.admin_teacher_role .nav-area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; border-bottom: 0;}
-.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 25px; margin-left: auto;}
+.admin_teacher_role .nav-area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 0; border-bottom: 0;}
+.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 0; margin-left: auto;}
 .admin_teacher_role .admin-rurera-tabs {width: auto; max-width: none; margin-bottom: 0; flex: 0 0 auto; border: 0;}
 .admin_teacher_role .nav-area:has(.teacher-controls) .admin-rurera-tabs {margin-bottom: -8px;}
 .admin_teacher_role .classes-card {background-color: #009788; border-radius: 8px; overflow: hidden; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; width: 23%; flex: 0 0 23%; box-sizing: border-box;}
@@ -1595,6 +1595,13 @@ Tailer Hub Style Start
 }
 .admin_teacher_role .section .section-header {
     background-color: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin_teacher_role .section .section-header .heading-holder {
+    flex-direction: column-reverse;
+    display: inline-flex;
 }
 .admin_teacher_role .section .section-header h1 i {
     color: var(--white);
