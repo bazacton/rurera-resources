@@ -1633,9 +1633,6 @@ Tailer Hub Style Start
     flex-direction: column-reverse;
     display: inline-flex;
 }
-.admin_teacher_role .section .section-header h1 i {
-    color: var(--white);
-}
 .admin_teacher_role .question-layout {
     padding-bottom: 0;
 }
