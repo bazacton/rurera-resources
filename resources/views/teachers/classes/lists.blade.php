@@ -482,7 +482,7 @@
                                         <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->teachers->count()}} Faculty</p>
                                         <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
                                     </div>
-                                    <div class="progress-holder mb-30">
+                                    <div class="progress-holder mb-15">
                                         <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
                                         <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
                                             <div
