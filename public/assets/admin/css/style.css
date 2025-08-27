@@ -630,7 +630,10 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .sm-gutters > .col, .sm-gutters > [class*=col-] {padding-left: 5px; padding-right: 5px;}
 
 /* 3.18 Navbar */
-.main-wrapper nav.navbar.navbar-expand-lg.main-navbar {display: flex;}
+.main-wrapper nav.navbar.navbar-expand-lg.main-navbar {display: flex; align-items: center;}
+.main-wrapper nav.navbar.navbar-expand-lg.main-navbar .form-inline {
+    margin-bottom: 0;
+}
 .navbar {
     height: 70px;
     left: 250px;
