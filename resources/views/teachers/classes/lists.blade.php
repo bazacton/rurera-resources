@@ -7,17 +7,15 @@
 @section('content')
 <section class="section skeleton">
     <div class="section-header">
-        <h1>Classes</h1>
-
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active">
-                <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+        <div class="heading-holder">
+            <h1>Classes</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active">
+                    <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+                </div>
+                <div class="breadcrumb-item">Classes</div>
             </div>
-            <div class="breadcrumb-item">Classes</div>
         </div>
-    </div>
-
-    <div class="content-holder card p-25">
         @can('admin_classes_create')
         <div class="row">
             <div class="col-12 col-md-12">
@@ -30,6 +28,10 @@
             </div>
         </div>
         @endcan
+    </div>
+
+    <div class="content-holder card p-25">
+        
         <div class="section-body">
             <div class="row">
                 <div class="col-12 col-md-12">
