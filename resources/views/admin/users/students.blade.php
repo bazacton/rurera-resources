@@ -8,11 +8,23 @@
     <div class="section-body skeleton">
         <section class="section">
             <div class="section-header">
-                <h1>Students {{ trans('admin/main.list') }}</h1>
-                <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a>Students</a></div>
-                    <div class="breadcrumb-item"><a href="#">{{ trans('admin/main.users_list') }}</a></div>
-                    <div class="breadcrumb-item"><a href="/admin/students">Students</a></div>
+                <div class="heading-holder">
+                    <h1>Students {{ trans('admin/main.list') }}</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a>Students</a></div>
+                        <div class="breadcrumb-item"><a href="#">{{ trans('admin/main.users_list') }}</a></div>
+                        <div class="breadcrumb-item"><a href="/admin/students">Students</a></div>
+                    </div>
+                </div>
+                
+                <div class="teacher-search-filter d-inline-flex p-0 border-0 ml-auto">
+                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
+                    <div class="search-field">
+                        <span class="icon-box">
+                            <img src="/assets/default/svgs/search.svg" alt="search">
+                        </span>
+                        <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
+                    </div>
                 </div>
             </div>
         </section>
@@ -36,15 +48,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="teacher-search-filter d-inline-flex p-0 border-0 ml-auto">
-                            <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
-                            <div class="search-field">
-                                <span class="icon-box">
-                                    <img src="/assets/default/svgs/search.svg" alt="search">
-                                </span>
-                                <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
-                            </div>
-                        </div>
+                        
                         <div class="form-group">
                             <div class="select-holder">
                                 <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
