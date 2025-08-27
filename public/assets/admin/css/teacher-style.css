@@ -1628,6 +1628,7 @@ Tailer Hub Style Start
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-right: 0;
 }
 .admin_teacher_role .section .section-header .heading-holder {
     flex-direction: column-reverse;
