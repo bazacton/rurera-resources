@@ -6126,6 +6126,9 @@ button.print-download-btn {
     font-weight: 600;
     appearance: none;
 }
+.card .card-body .create-assignment-form .class-section-data select.form-control {
+    border-radius: 4px;
+}
 .card-body form .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #1e1e1e;
     padding-right: 40px;
