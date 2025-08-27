@@ -493,7 +493,7 @@
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                             >
-                                                75%
+                                                <span>75%</span>
                                             </div>
                                         </div>
                                     </div>
