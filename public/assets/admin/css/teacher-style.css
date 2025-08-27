@@ -58,10 +58,13 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .classes-card .dropdown-item i {margin-right: 5px;}
 .admin_teacher_role .classes-card .card-title,
 .admin_teacher_role .classes-card .card-body p {margin-bottom: 0;}
-.admin_teacher_role .classes-card .card-title a {margin: 0 0 5px; display: block;}
+.admin_teacher_role .classes-card .card-title {
+    font-size: 18px;
+}
+.admin_teacher_role .classes-card .card-title a {color: #53719f; margin: 0 0 5px; display: block; font-weight: 600;}
 .admin_teacher_role .classes-card .grade-text {font-weight: bold;}
-.admin_teacher_role .classes-card .card-students {line-height: normal; font-weight: bold;}
-.admin_teacher_role .classes-card .progress {margin-top: 10px; border-radius: 30px;}
+.admin_teacher_role .classes-card .card-students {line-height: normal;}
+.admin_teacher_role .classes-card .progress {margin-top: 10px; border-radius: 30px; height: 8px !important;}
 .admin_teacher_role .classes-card .progress-bar.progress-bar-custom {background-color: #6bd700;}
 .admin_teacher_role .classes-card .progress-holder {margin-top: 30px;}
 .admin_teacher_role .classes-card .bottom-controls {background-color: #fff; padding: 10px 10px 10px 15px; margin: 0 -25px -20px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; border-left: 1px solid #ddd; border-radius: 0;}
