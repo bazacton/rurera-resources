@@ -82,7 +82,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .classes-card.disabled:hover {
     box-shadow: none;
 }
-
+.admin_teacher_role .container {
+    max-width: 100%;
+}
 /* Rurera-Confirm-Modal Style Start */
 .inactivity-controls {
     display: flex;
