@@ -32,7 +32,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .classes-card:hover {box-shadow: 0 0 10px rgba(0,0,0,0.5);}
 .admin_teacher_role .teacher-controls button {background-color: inherit; border: 0; padding: 6px 10px; border-radius: 5px; font-size: 14px; margin: 0 0 0 5px; display: inline-flex; align-items: center; border: 1px solid #ddd; outline: none;}
 .admin_teacher_role .teacher-controls button:focus {outline: none;}
-.admin_teacher_role .teacher-controls .create-class-btn {background-color: #6bd700; color: #fff; border-color: transparent;}
+.admin_teacher_role .teacher-controls .create-class-btn {background-color: var(--blue); color: #fff; border-color: transparent;}
 .admin_teacher_role .teacher-controls .create-class-btn i {margin-right: 8px; font-size: 15px;}
 .admin_teacher_role .teacher-controls button img {height: 20px; width: 20px;}
 .admin_teacher_role .teacher-controls button .icon-box {margin-right: 8px;}
