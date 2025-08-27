@@ -6118,7 +6118,7 @@ button.print-download-btn {
 .card-body form select.form-control,
 .card-body form .select2-container--default .select2-selection--single,
 #topic_parts_search_form .select2-container--default .select2-selection--single,
-.card-body form .input-group .form-control {
+.card-body form .input-group .form-control, .card .card-body .create-assignment-form .class-section-data select.form-control {
     border: 0;
     background-color: #ebebeb;
     border-radius: 10px;
