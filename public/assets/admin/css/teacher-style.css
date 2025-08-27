@@ -6260,12 +6260,14 @@ button.print-download-btn {
 .dropdown.average-grade-dropdown span {
     font-weight: 600;
     color: #333;
-    font-size: 1rem;
+    line-height: normal;
 }
 .dropdown.average-grade-dropdown span em {
     color: #999;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    padding-top: 2px;
 }
 .navbar .average-grade-dropdown .nav-link.nav-link-user img {
     display: none;
