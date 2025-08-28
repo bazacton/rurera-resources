@@ -6169,12 +6169,13 @@ button.print-download-btn {
 .card-body form .select2-container--default .select2-selection--single,
 #topic_parts_search_form .select2-container--default .select2-selection--single,
 .card-body form .input-group .form-control, .card .card-body .create-assignment-form .class-section-data select.form-control {
-    border: 0;
-    background-color: #ebebeb;
-    border-radius: 10px;
+    border: 1px dashed #cad5e2;
+    background-color: #fff;
+    border-radius: 5px;
     color: #1e1e1e;
     font-weight: 600;
     appearance: none;
+    height: 32px;
 }
 .admin_teacher_role .jq-toast-wrap {
     z-index: 99999 !important;
