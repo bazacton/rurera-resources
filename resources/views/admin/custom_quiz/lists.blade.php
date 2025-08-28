@@ -28,7 +28,7 @@
 
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <section class="card">
+                    <section class="card mb-0">
                         <div class="card-body">
                             <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
                                 <div class="col-md-2">
