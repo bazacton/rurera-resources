@@ -6233,6 +6233,13 @@ button.print-download-btn {
     font-size: 14px;
     appearance: none;
 }
+.card-body form .input-group input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    cursor: pointer;
+}
 .admin_teacher_role .jq-toast-wrap {
     z-index: 99999 !important;
 }
