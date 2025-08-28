@@ -8,12 +8,20 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>Custom Quizzes</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+        <div class="heading-holder">
+            <h1>Custom Quizzes</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+                </div>
+                <div class="breadcrumb-item">Custom Quizzes</div>
             </div>
-            <div class="breadcrumb-item">Custom Quizzes</div>
         </div>
+        @can('admin_assignments_create')
+        <div class="text-right ml-auto">
+            <a href="{{ getAdminPanelUrl() }}/custom_quiz/create" class="simple-btn">Create
+                Custom Quiz</a>
+        </div>
+        @endcan
     </div>
     <div class="skeleton-holder skeleton">
         <div class="section-body">
@@ -117,14 +125,6 @@
                         </div>
                     </section>
                     <div class="card">
-                        <div class="card-header">
-                            @can('admin_assignments_create')
-                            <div class="text-right ml-auto">
-                                <a href="{{ getAdminPanelUrl() }}/custom_quiz/create" class="simple-btn">Create
-                                    Custom Quiz</a>
-                            </div>
-                            @endcan
-                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
