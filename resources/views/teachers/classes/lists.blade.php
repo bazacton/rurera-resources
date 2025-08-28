@@ -470,8 +470,11 @@
                             $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
 
                             @endphp
+                            <style>
+                                --color_color: {{$class_color}}
+                            </style>
 
-                            <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; background-color:{{$class_color}}">
+                            <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative;>
                                 <!-- Dropdown Menu -->
 
                                 <div class="card-body d-flex flex-column">
