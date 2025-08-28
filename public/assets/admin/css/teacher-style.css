@@ -6133,9 +6133,12 @@ button.print-download-btn {
     margin-bottom: 15px;
 }
 .card-body form .form-group .form-control {
-    border-radius: 10px;
-    background-color: #ebebeb;
-    font-weight: 600;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 500;
+    border-color: #cad5e2;
+    height: 32px;
+    font-size: 14px;
 }
 .card-body form .form-group input.form-control[type="text"]::-moz-placeholder,
 .admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {color: #1e1e1e;}
