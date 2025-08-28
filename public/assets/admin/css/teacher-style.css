@@ -6182,6 +6182,8 @@ button.print-download-btn {
     transform: translateY(-50%);
     color: #e2e8f0;
     z-index: 999991 !important;
+    width: 16px;
+    height: 16px;
 }
 .card-body form .form-group .input-field:has(i) .form-control,
 .card-body form .form-group .input-field:has(img) .form-control,
