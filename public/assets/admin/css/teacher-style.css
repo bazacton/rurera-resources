@@ -123,6 +123,17 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .card-body {
     padding: 0;
 }
+.admin_teacher_role table.table {
+    border: 1px solid #cad5e2;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) th {
+    background-color: #e2e8f0;
+    font-weight: bold;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
