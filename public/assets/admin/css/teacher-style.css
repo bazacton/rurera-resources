@@ -6113,11 +6113,11 @@ button.print-download-btn {
 
 /* custom_quiz srach form Style Start */
 .admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field {
-    height: calc(1.5em + .75rem + 2px);
+    height: 32px;
     padding: .375rem .75rem;
     margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
 }
 .admin_teacher_role .select2-container--default .select2-selection--multiple {
     padding-bottom: 0;
