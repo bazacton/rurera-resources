@@ -6154,7 +6154,8 @@ button.print-download-btn {
     border-color: #e4e6fc;
 }
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
-    font-size: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .card-body form .row {
     margin-left: -5px;
