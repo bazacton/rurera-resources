@@ -151,22 +151,25 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{$class->title}}
-                @if($class->google_id > 0)
-                    <a href="javascript:;" data-google_class_id="{{$class->google_id}}" class="google-refresh-roaster ml-2 font-20"><i class="fa fa-recycle"></i></a>
-                @else
-                    <a href="javascript:;" class="edit-class-btn ml-2 font-20" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a>
-                @endif
-            </h1>
-            <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
-                    }}</a>
+            <div class="heading-holder">
+                <h1>{{$class->title}}
+                    @if($class->google_id > 0)
+                        <a href="javascript:;" data-google_class_id="{{$class->google_id}}" class="google-refresh-roaster ml-2 font-20"><i class="fa fa-recycle"></i></a>
+                    @else
+                        <a href="javascript:;" class="edit-class-btn ml-2 font-20" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a>
+                    @endif
+                </h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
+                        }}</a>
+                    </div>
+                    <div class="breadcrumb-item active">
+                        <a href="{{ getAdminPanelUrl() }}/classes">Classes</a>
+                    </div>
+                    <div class="breadcrumb-item">{{!empty($class) ?trans('/admin/main.edit'): trans('admin/main.new') }}</div>
                 </div>
-                <div class="breadcrumb-item active">
-                    <a href="{{ getAdminPanelUrl() }}/classes">Classes</a>
-                </div>
-                <div class="breadcrumb-item">{{!empty($class) ?trans('/admin/main.edit'): trans('admin/main.new') }}</div>
             </div>
+            
         </div>
         <div id="class-edit-modal" class="class-edit-modal modal fade" role="dialog">
             <div class="modal-dialog">
@@ -187,7 +190,6 @@
             <ul data-target_class="admin-rurera-tabs-page-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                 <li class="nav-item skelton-height-lg">
                     <a class="nav-link active" id="dashboard-tab-page-edit" href="javascript:;">
-                        <i class="fas fa-home mx-0"></i>
                         <span class="tab-title">Dashboard</span>
                     </a>
                 </li>
@@ -197,27 +199,23 @@
                     );
                     @endphp
                     <a class="nav-link rurera-ajax-tabs" data-passing_data="{{json_encode($passing_data)}}" data-ajax_url="/admin/users/class_students_listings" id="students-tab-page-edit" href="javascript:;">
-                        <i class="fas fa-users mx-0"></i>
                         <span class="tab-title">Students</span>
                     </a>
                 </li>
                 @if(!auth()->user()->isTeacherPanel())
                     <li class="nav-item skelton-height-lg">
                         <a class="nav-link rurera-ajax-tabs" data-passing_data="{{json_encode($passing_data)}}" data-ajax_url="/admin/users/class_teachers_listings" id="teachers-tab-page-edit" href="javascript:;">
-                            <i class="fas fa-chalkboard-teacher mx-0"></i>
                             <span class="tab-title">Teachers</span>
                         </a>
                     </li>
                 @endif
                 <li class="nav-item skelton-height-lg">
                     <a class="nav-link" id="assignments-tab-page-edit" href="javascript:;">
-                        <i class="fas fa-sticky-note mx-0"></i>
                         <span class="tab-title">Assignments</span>
                     </a>
                 </li>
                 <li class="nav-item skelton-height-lg">
                     <a class="nav-link" id="reports-tab-page-edit" href="javascript:;">
-                        <i class="fas fa-notes-medical mx-0"></i>
                         <span class="tab-title">Reports</span>
                     </a>
                 </li>
