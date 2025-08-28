@@ -43,7 +43,7 @@
                     </li>
                 @endcan
             @endif
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a href="/admin/collections" class="nav-link">
                     <img src="/assets/default/img/sidebar/collections.svg" alt="collections">
                     <span>Collections</span>
