@@ -43,6 +43,12 @@
                     </li>
                 @endcan
             @endif
+            <li class="nav-item active">
+                <a href="/admin/collections" class="nav-link">
+                    <img src="/assets/default/img/sidebar/student-color.svg" alt="student-color">
+                    <span>Collections</span>
+                </a>
+            </li>
 
             @can('admin_marketing_dashboard')
                 <li class="nav-item {{ (request()->is(getAdminPanelUrl('/marketing', false))) ? 'active' : '' }}">
