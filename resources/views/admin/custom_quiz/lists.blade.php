@@ -125,7 +125,7 @@
                                         <label class="input-label">{{ trans('admin/main.status') }}</label>
                                         <div class="select-holder">
                                             <div class="input-field">
-                                                <img src="/assets/default/svgs/filters.svg" alt="filter">
+                                                <img src="/assets/default/svgs/status.svg" alt="status">
                                                 <select name="statue" data-plugin-selectTwo class="form-control populate">
                                                     <option value="">{{ trans('admin/main.all_status') }}</option>
                                                     <option value="active" @if(request()->get('status') == 'active') selected @endif>{{
