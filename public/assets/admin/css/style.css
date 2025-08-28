@@ -397,6 +397,16 @@ table td .dropdown-toggle {cursor: pointer;}
     right: 3px;
     bottom: 3px;
 }
+.assignments-table .status-lable {
+    padding: 4px 15px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.assignments-table .status-lable.active {
+    color: #007a55;
+    background-color: #007a550f;
+}
 /* Assignments New Table Style End */
 
 @media (max-width: 575.98px) {
