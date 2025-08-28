@@ -14,7 +14,7 @@
                 <div class="breadcrumb-item active">
                     <a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
                 </div>
-                <div class="breadcrumb-item">Timestables Assignments</div>
+                <div class="breadcrumb-item">Assignments</div>
             </div>
         </div>
         @can('admin_assignments_create')
