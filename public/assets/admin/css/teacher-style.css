@@ -6121,9 +6121,9 @@ button.print-download-btn {
 }
 .admin_teacher_role .select2-container--default .select2-selection--multiple {
     padding-bottom: 0;
-    border-radius: 10px;
-    background-color: #ebebeb;
-    border-color: transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    border-color: #cad5e2;
 }
 .admin_teacher_role .select2-container--default .select2-selection--multiple:has(.select2-search__field:focus) {
     background-color: #fff;
