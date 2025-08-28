@@ -99,7 +99,7 @@
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('admin/main.class') }}</label>
                                         <div class="input-field">
-                                            <i class="fa fa-search"></i>
+                                            <img src="/assets/default/svgs/search.svg" alt="search">
                                             <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
                                                 @if(!empty($webinars) and $webinars->count() > 0)
                                                 @foreach($webinars as $webinar)
