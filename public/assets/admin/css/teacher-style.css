@@ -6189,7 +6189,8 @@ button.print-download-btn {
 .card-body form .form-group .input-field:has(i) .form-control,
 .card-body form .form-group .input-field:has(img) .form-control,
 .admin_teacher_role .input-field:has(img) .select2-container--default .select2-search--inline .select2-search__field,
-.admin_teacher_role .input-field:has(i) .select2-container--default .select2-search--inline .select2-search__field {
+.admin_teacher_role .input-field:has(i) .select2-container--default .select2-search--inline .select2-search__field,
+.card-body form .input-field:has(img) .select2-container--default .select2-selection--single .select2-selection__rendered {
     padding-left: 35px;
 }
 .card-body form .form-group input.form-control[type="text"]::-moz-placeholder,
