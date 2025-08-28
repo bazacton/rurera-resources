@@ -1269,7 +1269,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     background-color: initial;
     outline: none;
     border-bottom-width: 2px;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 }
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title,
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
