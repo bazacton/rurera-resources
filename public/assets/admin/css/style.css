@@ -1262,7 +1262,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     margin: 0 0 30px;
 }
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link {
-    padding: 0 15 10px;
+    padding: 0 15 15px;
     display: inline-flex;
     align-items: center;
     gap: 5px 10px;
