@@ -1256,6 +1256,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     gap: 5px 10px;
     background-color: initial;
     outline: none;
+    border-bottom-width: 1px;
 }
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link .tab-title,
 .admin-rurera-tabs-holder .admin-rurera-tabs .nav-link i {
