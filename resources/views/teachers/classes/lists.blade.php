@@ -472,11 +472,11 @@
                             @endphp
                             <style>
                                 :root {
-                                    --color_color: {{ $class_color }};
+                                    --class_color: {{ $class_color }};
                                 }
                             </style>
 
-                            <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative;>
+                            <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative;">
                                 <!-- Dropdown Menu -->
 
                                 <div class="card-body d-flex flex-column">
