@@ -81,20 +81,24 @@
                                 <div class="form-group">
                                     <label class="input-label">{{trans('admin/main.category')}}</label>
                                     <div class="select-holder">
-                                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
-                                            <option value="">{{trans('admin/main.all_categories')}}</option>
-                                            @foreach($categories as $category)
-                                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                                    <optgroup label="{{  $category->title }}">
-                                                        @foreach($category->subCategories as $subCategory)
-                                                            <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                                        @endforeach
-                                                    </optgroup>
-                                                @else
-                                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                                @endif
-                                            @endforeach
-                                        </select>
+                                        <div class="input-holder">
+                                            <img src="/assets/default/svgs/category.svg" alt="category">
+                                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
+                                                <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                @foreach($categories as $category)
+                                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                                        <optgroup label="{{  $category->title }}">
+                                                            @foreach($category->subCategories as $subCategory)
+                                                                <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                            @endforeach
+                                                        </optgroup>
+                                                    @else
+                                                        <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                    @endif
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
