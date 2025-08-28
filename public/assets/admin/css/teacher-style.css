@@ -143,6 +143,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr td {
     border-bottom: 1px solid #cad5e2;
+    color: #314158;
+    font-weight: 500;
+    font-size: 14px;
 }
 .admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:last-child td {
     border-bottom: 0;
