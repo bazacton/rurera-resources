@@ -6179,6 +6179,7 @@ button.print-download-btn {
     padding-top: 0;
     padding-bottom: 0;
     font-size: 14px;
+    appearance: none;
 }
 .admin_teacher_role .jq-toast-wrap {
     z-index: 99999 !important;
