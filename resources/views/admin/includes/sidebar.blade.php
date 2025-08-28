@@ -621,7 +621,7 @@
                             </a>
                         </li>
                     @endif
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="/admin/analytics" class="nav-link">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
