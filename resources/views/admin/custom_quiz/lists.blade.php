@@ -98,14 +98,16 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('admin/main.class') }}</label>
-                                        <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
-
-                                            @if(!empty($webinars) and $webinars->count() > 0)
-                                            @foreach($webinars as $webinar)
-                                            <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
-                                            @endforeach
-                                            @endif
-                                        </select>
+                                        <div class="input-field">
+                                            <i class="fa fa-search"></i>
+                                            <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
+                                                @if(!empty($webinars) and $webinars->count() > 0)
+                                                @foreach($webinars as $webinar)
+                                                <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
+                                                @endforeach
+                                                @endif
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
