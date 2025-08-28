@@ -59,8 +59,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .classes-card .card-title,
 .admin_teacher_role .classes-card .card-body p {margin-bottom: 0;}
 .admin_teacher_role .classes-card .card-body {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 .admin_teacher_role .classes-card .card-title {
     font-size: 16px;
