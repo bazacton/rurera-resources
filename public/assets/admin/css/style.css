@@ -841,7 +841,6 @@ ul.nav-tabs li.nav-item a.nav-link.active i {color: #191d21;}
     --danger: #fc544b;
     --light: #e3eaef;
     --dark: #191d21;
-    --class_color: #009788; 
 }
 
 body, html {min-height: 100%;}
