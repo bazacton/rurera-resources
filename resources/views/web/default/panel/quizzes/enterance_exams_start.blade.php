@@ -158,7 +158,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                                         @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
                                             <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                                <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+                                                <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide" data-target="#review_submit">
                                                     Finish
                                                     <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                 </a>
@@ -354,9 +354,19 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
             $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
         }
+        if( return_data.is_complete == true) {
+                var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
+                window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+
+        }
 
 
 		//$('#ne0xt-btn')[0].click();
+    }
+
+    function afterJumpReview(return_data){
+        var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
+        window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
     }
 
     function afterNextQuestion(){
