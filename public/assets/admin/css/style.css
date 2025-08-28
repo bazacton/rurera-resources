@@ -1387,8 +1387,8 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     border-color: transparent;
 }
 .teacher-table .invite-faculty .dropdown-box .dropdown-toggle {
-    height: 38px;
-    border-radius: 10px;
+    height: 32px;
+    border-radius: 5px;
 }
 .admin_teacher_role .simple-btn,
 .admin_role .simple-btn {
