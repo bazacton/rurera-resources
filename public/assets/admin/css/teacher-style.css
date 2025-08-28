@@ -132,6 +132,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) th {
     background-color: #e2e8f0;
     font-weight: bold;
+    height: auto;
+    padding: 15px;
 }
 .admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(even) {
     border: 0;
