@@ -6180,8 +6180,10 @@ button.print-download-btn {
     top: 50%;
     transform: translateY(-50%);
     color: #e2e8f0;
+    z-index: 999991 !important;
 }
-.card-body form .form-group .input-field:has(i) .form-control {
+.card-body form .form-group .input-field:has(i) .form-control,
+.admin_teacher_role .input-field:has(i) .select2-container--default .select2-search--inline .select2-search__field {
     padding-left: 35px;
 }
 .card-body form .form-group input.form-control[type="text"]::-moz-placeholder,
