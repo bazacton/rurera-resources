@@ -6176,7 +6176,9 @@ button.print-download-btn {
     color: #1e1e1e;
     font-weight: 600;
     appearance: none;
-    height: 32px;
+    height: 32px !important;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .admin_teacher_role .jq-toast-wrap {
     z-index: 99999 !important;
@@ -6188,6 +6190,9 @@ button.print-download-btn {
     color: #1e1e1e;
     padding-right: 40px;
     padding-left: 15px;
+    line-height: normal !important;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .card-body form .select-holder:after {
     right: 17px;
