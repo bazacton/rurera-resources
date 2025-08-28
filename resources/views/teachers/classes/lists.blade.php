@@ -472,7 +472,7 @@
                             @endphp
                             <style>
                                 :root {
-                                    --color_color: {{ $class_color }};
+                                    --class_color: {{ $class_color }};
                                 }
                             </style>
 
