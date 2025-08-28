@@ -6171,6 +6171,19 @@ button.print-download-btn {
     height: 32px;
     font-size: 14px;
 }
+.input-field {
+    position: relative;
+}
+.input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e2e8f0;
+}
+.card-body form .form-group .input-field:has(i) .form-control {
+    padding-left: 35px;
+}
 .card-body form .form-group input.form-control[type="text"]::-moz-placeholder,
 .admin_teacher_role .select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {color: #1e1e1e;}
 .card-body form .form-group input.form-control[type="text"]:-ms-input-placeholder,
