@@ -120,6 +120,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding: 0 !important;
     box-shadow: none;
 }
+.admin_teacher_role .card-body {
+    padding: 0;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
@@ -6157,7 +6160,8 @@ button.print-download-btn {
     padding-top: 0;
     padding-bottom: 0;
 }
-.card-body form .row {
+.card-body form .row,
+.card-body form.row {
     margin-left: -5px;
     margin-right: -5px;
 }
