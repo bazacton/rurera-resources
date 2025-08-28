@@ -33,40 +33,40 @@
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                     <a class="nav-link {{($assignment_tab == 'all')? 'active' : ''}}" id="topics-tab" href="/admin/assignments">
-                                        
                                         <span class="tab-title">All Assignments</span>
+                                        <span class="nav-counts">100</span>
                                     </a>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                     <a class="nav-link {{($assignment_tab == 'scheduled')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/scheduled" >
-                                        
                                         <span class="tab-title">Scheduled</span>
+                                        <span class="nav-counts">90</span>
                                     </a>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                     <a class="nav-link {{($assignment_tab == 'running')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/running" >
-                                        
                                         <span class="tab-title">Running</span>
+                                        <span class="nav-counts">1</span>
                                     </a>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                     <a class="nav-link {{($assignment_tab == 'completed')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/completed" >
-                                      
                                         <span class="tab-title">Completed</span>
+                                        <span class="nav-counts">5</span>
                                     </a>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                     <a class="nav-link {{($assignment_tab == 'paused')? 'active' : ''}}" id="topics-tab" href="/admin/assignments/paused" >
-                                        
                                         <span class="tab-title">Paused</span>
+                                        <span class="nav-counts">1</span>
                                     </a>
                                 </div>
                             </li>
