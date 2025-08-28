@@ -6191,9 +6191,9 @@ button.print-download-btn {
     color: #1e1e1e;
     padding-right: 40px;
     padding-left: 15px;
-    line-height: normal !important;
     padding-top: 0;
     padding-bottom: 0;
+    line-height: 30px !important;
 }
 .card-body form .select-holder:after {
     right: 17px;
