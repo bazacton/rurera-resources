@@ -44,8 +44,11 @@
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                                         <div class="input-group">
-                                            <input type="date" id="fsdate" class="text-left form-control" name="from"
+                                            <div class="input-field">
+                                                <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
+                                                <input type="date" id="fsdate" class="text-left form-control" name="from"
                                                 value="{{ request()->get('from') }}" placeholder="Start Date">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -53,8 +56,11 @@
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                         <div class="input-group">
-                                            <input type="date" id="lsdate" class="text-left form-control" name="to"
+                                            <div class="input-field">
+                                                <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
+                                                <input type="date" id="lsdate" class="text-left form-control" name="to"
                                                 value="{{ request()->get('to') }}" placeholder="End Date">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
