@@ -150,6 +150,34 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:last-child td {
     border-bottom: 0;
 }
+.input-field .input-label {
+    margin: 0;
+}
+#topic_parts_search_form .input-field {
+    display: flex;
+    align-items: center;
+    border: 1px dashed #cad5e2;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+#topic_parts_search_form .input-field select.form-control {
+    border: 0;
+}
+#topic_parts_search_form .input-field .select2-selection.select2-selection--single {
+    border: 0;
+}
+#topic_parts_search_form .input-field label {
+    margin: 0;
+}
+.card-body #topic_parts_search_form [class*="col-"] {
+    flex: 0 0 auto;
+    max-width: none;
+    width: auto;
+}
+.card-body #topic_parts_search_form .input-group .form-control {
+    width: auto;
+    border: 0;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
