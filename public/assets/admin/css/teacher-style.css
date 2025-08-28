@@ -6194,14 +6194,6 @@ button.print-download-btn {
 .card-body form .form-group {
     margin-bottom: 15px;
 }
-.card-body form .form-group .form-control {
-    border-radius: 5px;
-    background-color: #fff;
-    font-weight: 500;
-    border-color: #cad5e2;
-    height: 32px;
-    font-size: 14px;
-}
 .input-field {
     position: relative;
     width: 100%;
