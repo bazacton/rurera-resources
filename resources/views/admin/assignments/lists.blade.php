@@ -188,7 +188,9 @@
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->creatorUser->get_full_name()}}</div>
                                             </td>
                                             <td data-th="Status" class="text-success font-weight-bold">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->status}}</div>
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                    <span class="status-lable active">{{$assignmentObj->status}}</span>
+                                                </div>
                                             </td>
                                             <td data-th="Actions">
                                                 <div class="pending-invites-controls">
