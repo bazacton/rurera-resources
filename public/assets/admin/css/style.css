@@ -1329,7 +1329,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .export-btn {color: var(--blue); display: inline-flex; align-items: center; gap: 5px; margin-left: 5px; margin-right: 10px;}
 .teacher-search-filter a {text-decoration: none; outline: none;}
 .export-btn img {height: 12px; width: 12px; object-fit: contain; filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);}
-.teacher-table .card .card-header {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; padding: 15px;}
+.teacher-table .card .card-header {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; padding: 0;}
 .teacher-table .teacher-search-filter-holder {gap: 10px;}
 .bulk-actions {
     position: relative;
