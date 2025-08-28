@@ -6212,9 +6212,6 @@ button.print-download-btn {
 .card-body form [class*="col-"] {
     padding-left: 5px;
     padding-right: 5px;
-    width: auto;
-    max-width: initial;
-    flex: 0 0 auto;
 }
 .select-holder {position: relative;}
 .card-body form select.form-control,
