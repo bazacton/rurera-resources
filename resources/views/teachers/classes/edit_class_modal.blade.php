@@ -146,12 +146,12 @@
                 >
                                                     <span
                                                         class="color-indicator"
-                                                        style="background-color: #bcdad7;"
+                                                        style="background-color: {{$class->class_color}};"
                                                     ></span>
                 </button>
                 <div class="dropdown-menu">
                     <h5>Class Color Code</h5>
-                    <input type="text" name="class_color" class="class_color">
+                    <input type="text" name="class_color" class="class_color" value="{{$class->class_color}}">
                     <div class="class-color-box">
                         <button type="button" class="dropdown-item color-set" data-color_code="#bcdad7" style="background-color: #bcdad7;" ></button>
                         <button type="button" class="dropdown-item color-set" data-color_code="#fbcdb3" style="background-color: #fbcdb3;" ></button>
@@ -447,3 +447,11 @@
         </div>
     </div>
 </li>
+<script>
+    $(document).on('click', '.color-set', function (e) {
+
+        var color_code = $(this).attr('data-color_code');
+        $(".color-indicator").css('background-color', color_code);
+        $(".class_color").val(color_code);
+    });
+</script>
