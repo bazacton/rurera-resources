@@ -471,7 +471,9 @@
 
                             @endphp
                             <style>
-                                --color_color: {{$class_color}}
+                                :root {
+                                    --color_color: {{ $class_color }};
+                                }
                             </style>
 
                             <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative;>
