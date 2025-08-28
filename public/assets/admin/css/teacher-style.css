@@ -178,6 +178,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     width: auto;
     border: 0;
 }
+.admin_teacher_role #topic_parts_search_form .select2-container {
+    min-width: auto;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
