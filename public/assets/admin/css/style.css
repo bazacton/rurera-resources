@@ -1413,7 +1413,6 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 }
 .teacher-table table tr:nth-child(odd),
 .table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(odd) {
-    border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 }
 .admin_teacher_role .table td:has(.pending-invites-controls) {
