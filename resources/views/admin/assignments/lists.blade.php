@@ -8,19 +8,27 @@
 @section('content')
 <div class="section skeleton">
     <div class="section-header">
-        <h1>Assignments</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+        <div class="heading-holder">
+            <h1>Assignments</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active">
+                    <a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+                </div>
+                <div class="breadcrumb-item">Timestables Assignments</div>
             </div>
-            <div class="breadcrumb-item">Timestables Assignments</div>
         </div>
+        @can('admin_assignments_create')
+            <div class="text-right ml-auto">
+                <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
+            </div>
+        @endcan
     </div>
     <div class="card">
         <div class="card-body">
             <div class="row">
 
                 <div class="col-12 col-md-12">
-                    <div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap pb-15">
+                    <div class="admin-rurera-tabs-holder">
                         <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                             <li class="nav-item">
                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
@@ -63,11 +71,6 @@
                                 </div>
                             </li>
                         </ul>
-                        @can('admin_assignments_create')
-                            <div class="text-right ml-auto">
-                                <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
-                            </div>
-                        @endcan
                     </div>
 
                 </div>
