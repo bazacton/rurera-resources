@@ -304,7 +304,7 @@
             if (returnType == false) {
                 return false;//
             }*/
-            //rurera_loader($('.analytics-form'), 'div');
+           rurera_loader($('.analytics-form'), 'div');
             $.ajax({
                 type: "POST",
                 url: '/admin/analytics/analytics_data_callback',
@@ -319,7 +319,7 @@
                         headers += '<th class="text-center">Q' + i + '</th>';
                     }
                     $(".no_of_attempts_column").after(headers);
-                    //rurera_remove_loader($(".analytics-form"), 'div');
+                    rurera_remove_loader($(".analytics-form"), 'div');
                 }
             });
             return false;
