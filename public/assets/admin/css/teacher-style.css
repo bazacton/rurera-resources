@@ -6174,11 +6174,11 @@ button.print-download-btn {
     background-color: #fff;
     border-radius: 5px;
     color: #1e1e1e;
-    font-weight: 600;
-    appearance: none;
+    font-weight: 500;
     height: 32px !important;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 14px;
 }
 .admin_teacher_role .jq-toast-wrap {
     z-index: 99999 !important;
