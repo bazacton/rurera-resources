@@ -623,7 +623,7 @@
                     @endif
                     <li class="nav-item active">
                         <a href="/admin/analytics" class="nav-link">
-                            <img src="/assets/default/img/sidebar/student-color.svg" alt="student-color">
+                            <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
                         </a>
                     </li>
