@@ -6174,7 +6174,8 @@ button.print-download-btn {
 .input-field {
     position: relative;
 }
-.input-field i {
+.input-field i,
+.input-field img {
     position: absolute;
     left: 15px;
     top: 50%;
