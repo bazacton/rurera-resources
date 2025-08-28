@@ -35,7 +35,7 @@
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('admin/main.search') }}</label>
                                         <div class="input-field">
-                                            <i class="fa fa-search"></i>
+                                            <img src="/assets/default/svgs/search.svg" alt="search">
                                             <input type="text" placeholder="Search Quizzes" class="form-control" name="title" value="{{ request()->get('title') }}">
                                         </div>
                                     </div>
