@@ -45,7 +45,7 @@
             @endif
             <li class="nav-item active">
                 <a href="/admin/collections" class="nav-link">
-                    <img src="/assets/default/img/sidebar/student-color.svg" alt="student-color">
+                    <img src="/assets/default/img/sidebar/collections.svg" alt="collections">
                     <span>Collections</span>
                 </a>
             </li>
