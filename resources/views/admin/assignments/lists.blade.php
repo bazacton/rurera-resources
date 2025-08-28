@@ -107,6 +107,7 @@
                                     <label>Subjects</label>
                                     <div class="select-holder">
                                         <div class="input-field">
+                                            <img src="/assets/default/svgs/subject.svg" alt="subject">
                                             <select data-return_type="option"
                                                 data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
                                                 class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
