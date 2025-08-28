@@ -132,6 +132,7 @@
                 </tbody>
             </table>
             <span class="table-counts">{{$students->count()}} Students</span>
+            {!! $students->links() !!}
         </div>
     </div>
 </div>
