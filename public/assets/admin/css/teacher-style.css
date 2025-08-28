@@ -133,6 +133,18 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     background-color: #e2e8f0;
     font-weight: bold;
 }
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(even) {
+    border: 0;
+}
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:nth-child(odd) {
+    border: 0;
+}
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr td {
+    border-bottom: 1px solid #cad5e2;
+}
+.admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:last-child td {
+    border-bottom: 0;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
