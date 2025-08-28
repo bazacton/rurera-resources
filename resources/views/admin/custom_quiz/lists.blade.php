@@ -34,7 +34,10 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('admin/main.search') }}</label>
-                                        <input type="text" placeholder="Search Quizzes" class="form-control" name="title" value="{{ request()->get('title') }}">
+                                        <div class="input-field">
+                                            <i class="fa fa-search"></i>
+                                            <input type="text" placeholder="Search Quizzes" class="form-control" name="title" value="{{ request()->get('title') }}">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
