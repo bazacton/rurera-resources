@@ -374,6 +374,16 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-weight: 600;
     font-size: 14px;
 }
+.rurera-search-filters .year-select > .year-dropdown > .dropdown-menu {
+    overflow: initial;
+}
+.rurera-search-filters .year-select .dropdown-submenu .dropdown-menu {
+    left: 100% !important;
+    right: auto !important;
+    top: 0;
+    margin-top: 0;
+    margin-left: 10px;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
