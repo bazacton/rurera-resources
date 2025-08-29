@@ -172,7 +172,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     position: relative;
 }
 .rurera-search-filters .input-field label:after,
-.rurera-search-filters .btn-text:after {
+.rurera-search-filters .selected-labels:after {
     content: "";
     height: calc(100% - 5px);
     width: 1px;
@@ -239,6 +239,11 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     flex-wrap: wrap;
     gap: 5px;
     margin-left: 10px;
+    position: relative;
+}
+.rurera-search-filters .selected-labels:after {
+    left: 0;
+    right: auto;
 }
 .rurera-search-filters .badge {
     font-size: 0.8rem;
