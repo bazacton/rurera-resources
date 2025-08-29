@@ -162,6 +162,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .rurera-search-filters .input-field select.form-control {
     border: 0;
+    max-width: 150px;
 }
 .rurera-search-filters .input-field .select2-selection.select2-selection--single {
     border: 0;
@@ -180,6 +181,23 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .admin_teacher_role .rurera-search-filters .select2-container {
     min-width: auto;
+}
+.admin_teacher_role .rurera-search-filters .select2-container--default .select2-selection--multiple {
+    height: 32px;
+    border: 0;
+}
+.admin_teacher_role .rurera-search-filters .select2-container--default .select2-search--inline .select2-search__field {
+    max-width: 120px;
+}
+.rurera-search-filters input.form-control {
+    height: 32px;
+    background-color: inherit;
+    width: auto;
+    display: inline-block;
+    max-width: 120px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
 }
 /* Admin_teacher new Style End */
 
