@@ -64,6 +64,9 @@
                             @endif
                         </div> Student
                     </th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Guardian</th>
                     <th>Last Login</th>
                     <th>School</th>
                     <th>Class</th>
@@ -87,6 +90,26 @@
                                             <span class="user-email">{{ $studentObj->email }}</span>
                                         </span>
                                     </strong>
+                                </div>
+                            </td>
+                            <td data-th="Age">
+                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>----</span>
+                                </div>
+                            </td>
+                            <td data-th="Gender">
+                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>{{$studentObj->user_preference}}</span>
+                                </div>
+                            </td>
+                            <td data-th="Guardian">
+                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>
+                                        @if(isset($studentObj->userParent->id))
+                                            {{$studentObj->userParent->get_full_name()}}
+                                            <span class="user-email">{{$studentObj->userParent->email}}</span>
+                                        @endif
+                                    </span>
                                 </div>
                             </td>
                             <td data-th="Last Login">
