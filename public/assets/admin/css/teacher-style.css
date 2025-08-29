@@ -256,6 +256,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
         .rurera-search-filters .dropdown button i {
     vertical-align: middle;
 }
+.rurera-search-filters .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
