@@ -242,7 +242,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     position: relative;
 }
 .rurera-search-filters .selected-labels:after {
-    left: 0;
+    left: -8px;
     right: auto;
 }
 .rurera-search-filters .badge {
