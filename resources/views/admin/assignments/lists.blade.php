@@ -168,6 +168,12 @@
                                                             <ul class="dropdown-menu">
                                                                 <li>
                                                                     <div class="select-list">
+                                                                        <div class="dropdown-search">
+                                                                            <div class="input-holder">
+                                                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                                <input type="text" placeholder="Level">
+                                                                            </div>
+                                                                        </div>
                                                                         <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
                                                                         <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
                                                                         <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
