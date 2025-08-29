@@ -131,6 +131,7 @@
 
                                         <div class="input-group">
                                             <div class="input-field">
+                                                <img src="/assets/default/svgs/subject.svg" alt="subject">
                                                 <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                                 <input type="date" id="lsdate" class="form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                                             </div>
