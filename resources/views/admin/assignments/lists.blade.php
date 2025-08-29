@@ -173,7 +173,7 @@
                                                                         <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
                                                                         <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
                                                                         <div class="dropdown-divider"></div>
-                                                                        <button class="btn btn-sm btn-danger ml-3" id="clearSelection">Clear Filter</button>
+                                                                        <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
                                                             </ul>
