@@ -3936,13 +3936,20 @@ Qustions AI Tabs Style End
     font-weight: 500;
 }
 .admin_teacher_role .page-item .page-link {
-    border-radius: 0;
     background-color: inherit;
     border: 0;
-    color: #666;
+    color: #314158;
+    padding: .4rem .70rem;
+    border-radius: .5rem;
+    margin: 0;
 }
-.admin_teacher_role .page-item.active .page-link {
-    background-color: rgba(0,0,0,0.2);
+.admin_teacher_role .page-item.active .page-link,
+.admin_teacher_role .page-item.active .page-link:hover {
+    background-color: var(--blue);
+    color: #fff;
+} 
+.admin_teacher_role .page-item .page-link:hover {
+    background-color: #cad5e2;
 }
 /* Rurera-admin-pagination Style End */
 
