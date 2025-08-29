@@ -6313,7 +6313,8 @@ button.print-download-btn {
     font-size: 14px;
     appearance: none;
 }
-.card-body form .rurera-search-filters .select2-container--default .select2-selection--single {
+.card-body form .rurera-search-filters .select2-container--default .select2-selection--single,
+.card-body form .rurera-search-filters .input-group .form-control {
     background-color: inherit;
 }
 .card-body form .input-group input[type="date"]::-webkit-calendar-picker-indicator {
