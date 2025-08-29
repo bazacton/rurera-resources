@@ -179,7 +179,7 @@
                                                                         <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
                                                                         <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
                                                                         <div class="dropdown-divider"></div>
-                                                                        <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
+                                                                        <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
                                                             </ul>
@@ -485,7 +485,7 @@
     </script>
     <script>
         $(document).ready(function () {
-            const selectedLabelsContainer = $('#selectedLabels, #yearSelectedLabels');
+            const selectedLabelsContainer = $('#selectedLabels');
             const checkboxes = $('.dropdown-menu input[type="checkbox"]');
 
             checkboxes.change(function () {
@@ -505,6 +505,32 @@
             });
 
             $('#clearSelection').click(function () {
+                checkboxes.prop('checked', false);
+                selectedLabelsContainer.html('');
+            });
+        });
+
+        $(document).ready(function () {
+            const selectedLabelsContainer = $('#yearSelectedLabels');
+            const yearCheckboxes = $('.year-select .dropdown-menu input[type="checkbox"]');
+
+            yearCheckboxes.change(function () {
+                const selected = [];
+                yearCheckboxes.each(function () {
+                    if (this.checked) {
+                        selected.push($(this).val());
+                    }
+                });
+
+                if (selected.length > 0) {
+                    let badges = selected.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
+                    selectedLabelsContainer.html(badges);
+                } else {
+                    selectedLabelsContainer.html('');
+                }
+            });
+
+            $('#yearClearSelection').click(function () {
                 checkboxes.prop('checked', false);
                 selectedLabelsContainer.html('');
             });
