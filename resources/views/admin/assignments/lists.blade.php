@@ -19,7 +19,7 @@
         </div>
         @can('admin_assignments_create')
             <div class="text-right ml-auto">
-                <a href="{{ getAdminPanelUrl() }}/assignments/create" class="simple-btn">Create Assignment</a>
+                <a href="javascript:;" class="create-assignment-btn simple-btn">Create Assignment</a>
             </div>
         @endcan
     </div>
@@ -97,13 +97,13 @@
                                                 @endforeach
                                             </select>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    
+
                                     <div class="select-holder">
                                         <div class="input-field">
                                             <label>Subjects</label>
@@ -114,7 +114,7 @@
                                                 <option disabled selected>Subject</option>
                                             </select>
                                         </div>
-                                        
+
                                     </div>
                                     @error('subject_id')
                                     <div class="invalid-feedback">
@@ -125,13 +125,13 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    
+
                                     <div class="input-group">
                                         <div class="input-field">
                                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                             <input type="date" id="lsdate" class="form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -234,6 +234,121 @@
     </div>
 
 </section>
+
+
+
+    <div class="modal fade assignment-create-modal" id="assignment-create-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <form action="/admin/assignments/create_assignment"
+                          method="Post" class="rurera-form-validation create-assignment-form">
+                        {{ csrf_field() }}
+
+                    <div class="row">
+                        <h3>Create Assignment</h3>
+                    <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="years-group populated-data">
+                        <div class="form-group">
+                            <label class="input-label">Assignment Type</label>
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_practice_type]"
+                                               class="assignment_practice_type conditional_field_check" value="practice" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Practice</h3>
+                                            </div>
+
+                                        </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_practice_type]"
+                                               class="assignment_practice_type conditional_field_check" value="test">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Test</h3>
+                                            </div>
+
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label class="input-label">Practice Title</label>
+                                <input type="text"
+                                       name="ajax[new][title]"
+                                       value=""
+                                       class="js-ajax-title form-control rurera-req-field"
+                                       placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                            <div class="form-group">
+                                <label class="input-label">Practice Start Date</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
+                                            <i class="fa fa-calendar-week"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" autocomplete="off"
+                                           name="ajax[new][assignment_start_date]"
+                                           value=""
+                                           class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
+                                           min="{{date('Y-m-d')}}"
+                                           placeholder="" required/>
+                                    @error('assignment_start_date')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                            <div class="form-group">
+                                <label class="input-label">Practice Due Date</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
+                                            <i class="fa fa-calendar-week"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" autocomplete="off"
+                                           name="ajax[new][assignment_end_date]"
+                                           value=""
+                                           class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
+                                           placeholder="" required/>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-20 mb-20">
+                            <button type="submit"
+                                    class="js-submit-quiz-form btn btn-sm btn-primary">Submit
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
@@ -254,6 +369,10 @@
                 });
             });
         });
+        $(document).on('click', '.create-assignment-btn', function () {
+            $(".assignment-create-modal").modal('show');
+        });
+
     </script>
     <script>
         /*Skelton Loading Fungtion Start*/

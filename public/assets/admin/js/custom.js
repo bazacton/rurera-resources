@@ -183,6 +183,55 @@
     };
     resetRureraDatePickers();
 
+    window.resetRureraDateRangePickers = () => {
+        if (jQuery().daterangepicker) {
+
+            if( $(".rureradaterangepicker").length > 0){
+
+                $(".rureradaterangepicker").each(function () {
+                    const $datepicker = $(this);
+                    const drops3 = $datepicker.attr('data-drops') ?? 'down';
+                    const minValue = $datepicker.attr('min');
+                    const maxValue = $datepicker.attr('max');
+
+                    var configOptions = {
+                        locale: {
+                            format: 'YYYY-MM-DD',
+                        },
+                        // singleDatePicker: true, // enable this only if you want single date
+                        timePicker: false,
+                        autoApply: true,
+                        autoUpdateInput: false, // we'll handle manually
+                        drops: drops3,
+                    };
+
+                    if (rurera_is_field(minValue)) {
+                        configOptions.minDate = minValue;
+                    }
+                    if (rurera_is_field(maxValue)) {
+                        configOptions.maxDate = maxValue;
+                    }
+
+                    $datepicker.daterangepicker(configOptions);
+
+                    $datepicker.on('apply.daterangepicker', function (ev, picker) {
+                        // populate both start and end date
+                        $(this).val(
+                            picker.startDate.format('YYYY-MM-DD') +
+                            ' - ' +
+                            picker.endDate.format('YYYY-MM-DD')
+                        );
+                    });
+
+                    $datepicker.on('cancel.daterangepicker', function (ev, picker) {
+                        $(this).val('');
+                    });
+                });
+            }
+        }
+    };
+    resetRureraDateRangePickers();
+
     window.resetRureraMultiDatesPickers = () => {
         if (jQuery().daterangepicker) {
 
@@ -1653,9 +1702,23 @@ $(document).on('change', '.rurera-ajax-submission', function (e) {
     var ajax_url = $(this).attr('data-ajax_url');
     var target_class = $(this).attr('data-target_class');
     var passing_data = $(this).attr('data-passing_data');
+    var passing_vars = $(this).attr('data-passing_vars');
+    passing_vars = passing_vars.replace(/[\[\]\s]/g, '').split(',');
     rurera_loader($("."+target_class), 'div');
     if(passing_data != '') {
         passing_data = JSON.parse($(this).attr('data-passing_data'));
+    }
+    var passing_data = passing_data || {};
+    if (passing_vars != '') {
+        $.each(passing_vars, function (index, passingClass) {
+            var passingValue = $('.' + passingClass).val();
+            var passingType = $('.' + passingClass).attr('type');
+            if(passingType == 'radio' || passingType == 'checkbox'){
+                var passingValue = $('.' + passingClass+':checked').val();
+            }
+
+            passing_data[passingClass] = passingValue;
+        });
     }
     console.log(passing_data);
     jQuery.ajax({
@@ -1668,6 +1731,7 @@ $(document).on('change', '.rurera-ajax-submission', function (e) {
         success: function (return_data) {
             rurera_remove_loader($("."+target_class), 'div');
             $("."+target_class).html(return_data);
+            resetRureraDateRangePickers();
         }
     });
 });
@@ -1701,8 +1765,22 @@ $(document).on('change', '.rurera_self_submitted_field', function (e) {
     window.location.href = url.toString();
 });
 
+$(document).on('change', '.rurera_conditional_field', function (e) {
+    var common_class = $(this).attr('data-common_class');
+    var target_class = $(this).attr('data-target_class');
+    console.log(common_class);
+    console.log(target_class);
+    $("."+common_class).addClass('rurera-hide');
+    $("."+target_class).removeClass('rurera-hide');
+    if (typeof common_fields_check === "function") {
+        common_fields_check();
+    }
+});
 
 
+if($(".rurera_conditional_field").length > 0){
+    $(".rurera_conditional_field:checked").change();
+}
 
 
 function rurera_modal_alert(msg_type, msg_title, confirmButton){

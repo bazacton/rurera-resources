@@ -31,7 +31,7 @@
     </div>
 
     <div class="content-holder card p-25">
-        
+
         <div class="section-body">
             <div class="row">
                 <div class="col-12 col-md-12">
@@ -470,13 +470,8 @@
                             $disable_class = (($allowed_classes != null) && !in_array($classData->id, $allowed_classes))? 'disabled' : '';
 
                             @endphp
-                            <style>
-                                :root {
-                                    --class_color: {{ $class_color }};
-                                }
-                            </style>
 
-                            <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative;">
+                            <div class="card classes-card bg-teal mb-3 mx-10 {{$disable_class}}" style="position: relative; --class_color: {{ $class_color }}">
                                 <!-- Dropdown Menu -->
 
                                 <div class="card-body d-flex flex-column">

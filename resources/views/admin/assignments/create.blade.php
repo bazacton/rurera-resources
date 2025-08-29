@@ -177,14 +177,13 @@
 
     <section class="section">
         <div class="section-header">
-            <h1>{{!empty($assignment) ?trans('/admin/main.edit'): trans('admin/main.new') }} Assignment</h1>
+            <h1>{{$assignmentObj->title}}</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
                 </div>
                 <div class="breadcrumb-item active"><a href="/admin/assignments">Assignment</a>
                 </div>
-                <div class="breadcrumb-item">{{!empty($assignment) ?trans('/admin/main.edit'): trans('admin/main.new')
-                }}
+                <div class="breadcrumb-item">Edit
                 </div>
             </div>
         </div>
@@ -194,26 +193,28 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <form action="/admin/assignments/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}"
+                            <form action="/admin/assignments/{{ !empty($assignment) ? $assignmentObj->id.'/update' : 'store' }}"
                                     method="Post" class="rurera-form-validation create-assignment-form">
                                 {{ csrf_field() }}
 
                                 <div class="row">
                                     <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
 
+                                        <input type="hidden" name="ajax[new][assignment_id]" value="{{$assignmentObj->id}}">
 
                                         @if( !empty($categories ))
 
                                             <div class="years-group populated-data">
-                                                <div class="form-group">
+                                                <div class="form-group  rurera-hide">
                                                     <label class="input-label">Assignment Type</label>
                                                     <div class="input-group">
-
-
                                                         <div class="radio-buttons">
+
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_practice_type]"
-                                                                       class="assignment_practice_type conditional_field_check" value="practice" checked>
+                                                                @php $is_checked = (isset($assignmentObj->assignment_practice_type) && $assignmentObj->assignment_practice_type == 'practice')? 'checked' : ''; @endphp
+                                                                <input type="radio" name="ajax[new][assignment_practice_type]"
+                                                                       class="assignment_practice_type conditional_field_check" value="practice"
+                                                                    {{$is_checked}}>
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
                                                                 <h3>Practice</h3>
@@ -222,8 +223,9 @@
                                                         </span>
                                                             </label>
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_practice_type]"
-                                                                       class="assignment_practice_type conditional_field_check" value="test">
+                                                                @php $is_checked = (isset($assignmentObj->assignment_practice_type) && $assignmentObj->assignment_practice_type == 'test')? 'checked' : ''; @endphp
+                                                                <input type="radio" name="ajax[new][assignment_practice_type]"
+                                                                       class="assignment_practice_type conditional_field_check" value="test" {{$is_checked}}>
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
                                                                 <h3>Test</h3>
@@ -244,7 +246,7 @@
 
                                                             @if(auth()->user()->subscription('courses'))
                                                                 <label class="card-radio conditional_fields_block practice_fields_block">
-                                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                    <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                             class="assignment_topic_type_check" value="practice" checked>
                                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                                             <div class="card-icon">
@@ -255,21 +257,21 @@
                                                                 </label>
                                                             @endif
                                                                 @if(auth()->user()->subscription('sats'))
-                                                            <label class="card-radio conditional_fields_block practice_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                                        class="assignment_topic_type_check" value="sats">
-                                                                <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/sats.png">
-                                                                <h3>SATs</h3>
-                                                            </div>
-                                                        </span>
-                                                            </label>
+                                                                <label class="card-radio conditional_fields_block practice_fields_block">
+                                                                    <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                                            class="assignment_topic_type_check" value="sats">
+                                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/sats.png">
+                                                                    <h3>SATs</h3>
+                                                                </div>
+                                                            </span>
+                                                                </label>
                                                             @endif
 
                                                             @if(auth()->user()->subscription('11plus'))
                                                             <label class="card-radio conditional_fields_block practice_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="11plus">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -284,7 +286,7 @@
                                                                 @if(auth()->user()->subscription('11plus'))
 
                                                             <label class="card-radio conditional_fields_block practice_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="independent_exams">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -299,7 +301,7 @@
                                                                 @if(auth()->user()->subscription('11plus'))
 
                                                             <label class="card-radio conditional_fields_block practice_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="iseb">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -314,7 +316,7 @@
                                                                 @if(auth()->user()->subscription('11plus'))
 
                                                             <label class="card-radio conditional_fields_block practice_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="cat4">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -329,7 +331,7 @@
                                                                 @if(auth()->user()->subscription('vocabulary'))
 
                                                             <label class="card-radio conditional_fields_block practice_fields_block test_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="vocabulary">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -344,7 +346,7 @@
                                                                 @if(auth()->user()->subscription('timestables'))
 
                                                             <label class="card-radio conditional_fields_block practice_fields_block test_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="timestables">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -357,7 +359,7 @@
                                                                 @endif
 
                                                             <label class="card-radio conditional_fields_block test_fields_block">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="assignment">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -492,7 +494,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="quiz-ajax-fields"></div>
                                                         </div>
-                                                        <div class="spell-questions-list position-relative d-inline-block w-100"></div>
+                                                        <div class="spell-questions-list"></div>
                                                     </div>
                                                 </div>
 
@@ -557,7 +559,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="practice-quiz-ajax-fields assignment_topic_type_fields practice_fields"></div>
+                                                <div class="practice-quiz-ajax-fields assignment_topic_type_fields conditional_fields_block practice_fields_block"></div>
 
 
                                                 <div class="assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
@@ -565,7 +567,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="form-group">
                                                                 <label class="input-label d-block">Year Group</label>
-                                                                <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][year_group]"
+                                                                <select name="ajax[new][year_group]"
                                                                         class="form-control select2 " data-placeholder="Select Year Group">
                                                                     <option value="">Select Year Group</option>
                                                                     <option value="All">All</option>
@@ -631,57 +633,230 @@
 
                                                 <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
 
+
+                                                <div class="hide_check_field assignment_topic_type_fields timestables_fields conditional_fields_block practice_fields_block">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <div class="form-group">
+                                                                <label class="input-label">Timestables Mode</label>
+                                                                <div class="input-group">
+                                                                    <div class="radio-buttons">
+
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" class="rurera_conditional_field" data-target_class="freedom_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="freedom_mode" checked>
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Freedom Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" data-rurera_hide_class="[no_of_questions,duration_type]" class="rurera_conditional_field" data-target_class="powerup_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="powerup_mode">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Powerup Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" data-rurera_hide_class="[no_of_questions,duration_type]" class="rurera_conditional_field" data-target_class="trophy_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="trophy_mode">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Trophy Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" data-rurera_hide_class="[no_of_questions,duration_type]" class="rurera_conditional_field" data-target_class="treasure_mission_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="treasure_mission">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Treasure Mission Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" data-rurera_hide_class="no_of_questions" name="ajax[new][timestables_type]" value="showdown_mode">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Showdown Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group freedom_mode_fields timestables_conditional_fields">
+                                                                <label class="input-label">Select Arithmetic Operations</label>
+                                                                <div class="input-group">
+                                                                    <div class="radio-buttons">
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication_division">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Multiplication and Division</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication" checked>
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Multiplication only</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][arthmetic_operations]" value="division">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Division only</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group powerup_mode_fields timestables_conditional_fields">
+                                                                <label class="input-label">Select Table Group</label>
+                                                                <div class="input-group">
+                                                                    <div class="radio-buttons">
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][table_group]" value="1">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-3</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][table_group]" value="2" checked>
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-6</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][table_group]" value="3">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-9</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][table_group]" value="4">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-12</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][table_group]" value="5">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-15</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][table_group]" value="6">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-18</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group powerup_mode_fields timestables_conditional_fields">
+                                                                <label class="input-label">Select Practice Duration</label>
+                                                                <div class="input-group">
+                                                                    <div class="radio-buttons">
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][powerup_practice_duration]" value="1" checked>
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1 Minute</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][powerup_practice_duration]" value="3" >
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>3 Minutes</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][powerup_practice_duration]" value="5">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>5 Minutes</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 @php
-                                                    $tables_no = isset( $assignment->tables_no )? json_decode($assignment->tables_no) : array();
+                                                    $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
                                                 @endphp
 
 
-                                                <div class="form-group assignment_topic_type_fields timestables_fields">
+                                                <div class="form-group freedom_mode_fields powerup_mode_fields timestables_conditional_fields assignment_topic_type_fields timestables_fields">
                                                     <div class="questions-select-number">
                                                         <ul class="d-flex justify-content-center flex-wrap mb-30">
-                                                            <li><input type="checkbox" value="10" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(10,$tables_no)?
+                                                            <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
                                                         'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                                                            <li><input type="checkbox" value="2" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(2,$tables_no)?
+                                                            <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
                                                         'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
-                                                            <li><input type="checkbox" value="5" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(5,$tables_no)?
+                                                            <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
                                                         'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                                                            <li><input type="checkbox" value="3" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(3,$tables_no)?
+                                                            <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
                                                         'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
-                                                            <li><input type="checkbox" value="4" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(4,$tables_no)?
+                                                            <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
                                                         'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                                                            <li><input type="checkbox" value="8" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(8,$tables_no)?
+                                                            <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
                                                         'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                                                            <li><input type="checkbox" value="6" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(6,$tables_no)?
+                                                            <li><input type="checkbox" value="6" name="ajax[new][tables_no][]" {{in_array(6,$tables_no)?
                                                         'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                                                            <li><input type="checkbox" value="7" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(7,$tables_no)?
+                                                            <li><input type="checkbox" value="7" name="ajax[new][tables_no][]" {{in_array(7,$tables_no)?
                                                         'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                                                            <li><input type="checkbox" value="9" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(9,$tables_no)?
+                                                            <li><input type="checkbox" value="9" name="ajax[new][tables_no][]" {{in_array(9,$tables_no)?
                                                         'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                                                            <li><input type="checkbox" value="11" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(11,$tables_no)?
+                                                            <li><input type="checkbox" value="11" name="ajax[new][tables_no][]" {{in_array(11,$tables_no)?
                                                         'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                                                            <li><input type="checkbox" value="12" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(12,$tables_no)?
+                                                            <li><input type="checkbox" value="12" name="ajax[new][tables_no][]" {{in_array(12,$tables_no)?
                                                         'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                                                            <li><input type="checkbox" value="13" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(13,$tables_no)?
+                                                            <li><input type="checkbox" value="13" name="ajax[new][tables_no][]" {{in_array(13,$tables_no)?
                                                         'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                                                            <li><input type="checkbox" value="14" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(14,$tables_no)?
+                                                            <li><input type="checkbox" value="14" name="ajax[new][tables_no][]" {{in_array(14,$tables_no)?
                                                         'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                                                            <li><input type="checkbox" value="15" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(15,$tables_no)?
+                                                            <li><input type="checkbox" value="15" name="ajax[new][tables_no][]" {{in_array(15,$tables_no)?
                                                         'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                                                            <li><input type="checkbox" value="16" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(16,$tables_no)?
+                                                            <li><input type="checkbox" value="16" name="ajax[new][tables_no][]" {{in_array(16,$tables_no)?
                                                         'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
-                                                <div class="form-section">
+                                                <div class="form-section rurera-hide">
                                                     <h2 class="section-title">General information</h2>
                                                 </div>
 
-                                                <div class="form-group">
+                                                <div class="form-group rurera-hide">
                                                     <label class="input-label">Practice Title</label>
                                                     <input type="text"
-                                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][title]"
-                                                            value="{{ !empty($assignment) ? $assignment->title : old('title') }}"
+                                                            name="ajax[new][title]"
+                                                            value="{{ !empty($assignmentObj) ? $assignmentObj->title : old('title') }}"
                                                             class="js-ajax-title form-control rurera-req-field"
                                                             placeholder=""/>
                                                 </div>
@@ -689,7 +864,7 @@
                                                 <div class="form-group rurera-hide">
                                                     <label class="input-label">Practice Description</label>
                                                     <textarea
-                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][description]"
+                                                        name="ajax[new][description]"
                                                         class="form-control summernote-editor-mintool"
                                                         placeholder="" rows="20"></textarea>
                                                     <div class="invalid-feedback"></div>
@@ -699,7 +874,7 @@
                                                     <h2 class="section-title">Schedule</h2>
                                                 </div>
 
-                                                <div class="row">
+                                                <div class="row rurera-hide">
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                                         <div class="form-group">
                                                             <label class="input-label">Practice Start Date</label>
@@ -710,8 +885,8 @@
                                                                     </button>
                                                                 </div>
                                                                 <input type="text" autocomplete="off"
-                                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_start_date]"
-                                                                        value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
+                                                                        name="ajax[new][assignment_start_date]"
+                                                                        value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
                                                                         class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
                                                                         min="{{date('Y-m-d')}}"
                                                                         placeholder=""/>
@@ -733,8 +908,8 @@
                                                                     </button>
                                                                 </div>
                                                                 <input type="text" autocomplete="off"
-                                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_end_date]"
-                                                                        value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
+                                                                        name="ajax[new][assignment_end_date]"
+                                                                        value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
                                                                         class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
                                                                         placeholder=""/>
                                                                 <div class="invalid-feedback"></div>
@@ -751,8 +926,8 @@
                                                                     </button>
                                                                 </div>
                                                                 <input type="text" autocomplete="off"
-                                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_review_due_date]"
-                                                                        value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_review_due_date, 'Y-m-d', false) : old('assignment_review_due_date') }}"
+                                                                        name="ajax[new][assignment_review_due_date]"
+                                                                        value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_review_due_date, 'Y-m-d', false) : old('assignment_review_due_date') }}"
                                                                         class="form-control reviewer-date rureradatepicker" min="{{date('Y-m-d')}}"
                                                                         placeholder=""/>
                                                                 <div class="invalid-feedback"></div>
@@ -767,7 +942,7 @@
 
                                                         <div class="radio-buttons">
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_method]"
+                                                                <input type="radio" name="ajax[new][assignment_method]"
                                                                         class="assignment_method_check" value="practice" checked>
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                                     <div class="card-icon">
@@ -777,7 +952,7 @@
                                                                 </span>
                                                             </label>
                                                             <label class="card-radio assignment_topic_type_fields practice_fields vocabulary_fields timestables_fields assignment_fields">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_method]"
+                                                                <input type="radio" name="ajax[new][assignment_method]"
                                                                         class="assignment_method_check" value="target_improvements">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                                     <div class="card-icon">
@@ -787,7 +962,7 @@
                                                                 </span>
                                                             </label>
                                                             <label class="card-radio assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_method]"
+                                                                <input type="radio" name="ajax[new][assignment_method]"
                                                                         class="assignment_method_check" value="mock_exam">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                                     <div class="card-icon">
@@ -806,7 +981,7 @@
 
 
                                                 <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_method_check_fields practice_fields target_improvements_fields">
+                                                    <div data-recieve_class="no_of_questions" class="rurera_js_hide_field col-lg-6 col-md-6 col-sm-12 col-6  assignment_method_check_fields practice_fields target_improvements_fields">
                                                         <div class="form-group">
                                                             <label class="input-label">Show No of Questions <span class="max_questions"></span></label>
 
@@ -815,7 +990,7 @@
                                                                 <div class="range-slider_line">
                                                                     <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                                                 </div>
-                                                                <input type="range" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_questions]" value="0"
+                                                                <input type="range" name="ajax[new][no_of_questions]" value="0"
                                                                         class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
                                                             </div>
 
@@ -835,7 +1010,7 @@
                                                                     <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                                                 </div>
                                                                 <input type="range"
-                                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_attempts]"
+                                                                        name="ajax[new][no_of_attempts]"
                                                                         value="0"
                                                                         class="js-ajax-title form-control no_of_attempts range-slider-field"
                                                                         placeholder="" min="1" max="10"/>
@@ -853,7 +1028,7 @@
                                                                     <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                                                 </div>
                                                                 <input type="range"
-                                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
+                                                                        name="ajax[new][target_percentage]"
                                                                         value="0" data-label="%"
                                                                         class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
                                                                         placeholder=""/>
@@ -872,7 +1047,7 @@
                                                                     <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                                                 </div>
                                                                 <input type="range"
-                                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_average_time]"
+                                                                        name="ajax[new][target_average_time]"
                                                                         value="0"
                                                                         class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
                                                                         placeholder=""/>
@@ -886,35 +1061,35 @@
                                                     <label class="input-label">Assignment Settings</label>
                                                     <div class="option-field-item mt-20 mb-20">
                                                     <label class="custom-switch pl-0">
-                                                        <input type="checkbox" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][shuffle_questions]" id="shuffle_questions" value="1" class="custom-switch-input">
+                                                        <input type="checkbox" name="ajax[new][shuffle_questions]" id="shuffle_questions" value="1" class="custom-switch-input">
                                                         <span class="custom-switch-indicator"></span>
                                                         <label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
                                                     </label>
                                                     </div>
                                                     <div class="option-field-item mt-20 mb-20">
                                                     <label class="custom-switch pl-0">
-                                                        <input type="checkbox" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][correct_answer_explaination]" id="correct_answer_explaination" value="1" class="custom-switch-input">
+                                                        <input type="checkbox" name="ajax[new][correct_answer_explaination]" id="correct_answer_explaination" value="1" class="custom-switch-input">
                                                         <span class="custom-switch-indicator"></span>
                                                         <label class="custom-switch-description mb-0 cursor-pointer" for="correct_answer_explaination">Correct Answer Explaination</label>
                                                     </label>
                                                     </div>
                                                     <div class="option-field-item mt-20 mb-20">
                                                     <label class="custom-switch pl-0">
-                                                        <input type="checkbox" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][incorrect_answer_explaination]" id="incorrect_answer_explaination" value="1" class="custom-switch-input">
+                                                        <input type="checkbox" name="ajax[new][incorrect_answer_explaination]" id="incorrect_answer_explaination" value="1" class="custom-switch-input">
                                                         <span class="custom-switch-indicator"></span>
                                                         <label class="custom-switch-description mb-0 cursor-pointer" for="incorrect_answer_explaination">Incorrect Answer Explaination</label>
                                                     </label>
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group assignment_method_check_fields practice_fields target_improvements_fields">
+                                                <div data-recieve_class="duration_type" class="rurera_js_hide_field form-group assignment_method_check_fields practice_fields target_improvements_fields">
                                                     <label class="input-label">Duration Type</label>
                                                     <div class="input-group">
 
 
                                                         <div class="radio-buttons">
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                                                <input type="radio" name="ajax[new][duration_type]"
                                                                         class="duration_conditional_check" value="no_time_limit" checked>
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -924,7 +1099,7 @@
                                                         </span>
                                                             </label>
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                                                <input type="radio" name="ajax[new][duration_type]"
                                                                         class="duration_conditional_check" value="total_practice">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -934,7 +1109,7 @@
                                                         </span>
                                                             </label>
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                                                <input type="radio" name="ajax[new][duration_type]"
                                                                         class="duration_conditional_check" value="per_question">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -957,7 +1132,7 @@
                                                             <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                                         </div>
                                                         <input type="range"
-                                                                name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
+                                                                name="ajax[new][practice_time]"
                                                                 value="0"
                                                                 class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
                                                                 placeholder=""/>
@@ -974,7 +1149,7 @@
                                                             <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                                         </div>
                                                         <input type="range"
-                                                                name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
+                                                                name="ajax[new][time_interval]"
                                                                 value="0"
                                                                 class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
                                                                 placeholder=""/>
@@ -987,7 +1162,7 @@
                                                 <div class="form-group rurera-hide">
                                                     <label class="input-label">Assignment Reviewer</label>
                                                     <div class="input-group">
-                                                        <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_reviewer]"
+                                                        <select name="ajax[new][assignment_reviewer]"
                                                                 class="form-control select2 assignment-reviewer-field">
                                                             <option value="">Select Reviewer</option>
                                                             @if( !empty( $teachers ) )
@@ -1011,7 +1186,7 @@
 
                                                         <div class="radio-buttons">
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_assign_type]"
+                                                                <input type="radio" name="ajax[new][assignment_assign_type]"
                                                                         class="conditional_check assignment_type_check" value="Individual">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -1022,7 +1197,7 @@
                                                             </label>
 
                                                             <label class="card-radio">
-                                                                <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_assign_type]"
+                                                                <input type="radio" name="ajax[new][assignment_assign_type]"
                                                                         class="conditional_check assignment_type_check" value="Class" checked>
                                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -1043,7 +1218,7 @@
                                                 <div class="form-group {{($schools_list->count() < 2 )? 'rurera-hide' : ''}}">
                                                     <label class="input-label">School</label>
                                                     <div class="input-group">
-                                                        <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_school]" class="form-control select2 school_condition">
+                                                        <select name="ajax[new][assignment_school]" class="form-control select2 school_condition">
                                                             <option value="">Select</option>
                                                             @if( $schools_list->count() > 0 )
                                                                 @php $school_counter = 1; @endphp
@@ -1100,6 +1275,37 @@
     <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
     <script type="text/javascript">
 
+
+        function common_fields_check(){
+            if ($(".rurera_js_hide_field").length > 0) {
+
+                var hideList = [];
+
+                // Step 1: collect all classes to hide from checked inputs
+                $('[data-rurera_hide_class]:checked').each(function () {
+                    if($(this).closest('.hide_check_field').hasClass('rurera-hide')){
+                        return;
+                    }
+                    var classes = $(this).attr('data-rurera_hide_class');
+                    classes = classes.replace(/[\[\]\s]/g, '').split(',');
+                    hideList = hideList.concat(classes);
+                });
+
+                console.log("Hide List:", hideList);
+
+                // Step 2: loop all hide fields
+                $('.rurera_js_hide_field').each(function () {
+                    var HideFieldObj = $(this);
+                    var recieve_class = HideFieldObj.attr('data-recieve_class');
+
+                    if (hideList.includes(recieve_class)) {
+                        HideFieldObj.addClass('rurera-hide');
+                    } else {
+                        HideFieldObj.removeClass('rurera-hide');
+                    }
+                });
+            }
+        }
         $(document).ready(function () {
 
             if ($('.summernote-editor-mintool').length) {
@@ -1380,6 +1586,7 @@
                 $(".no_of_questions").val(current_questions);
                 slider_fields_refresh();
                 $(".assignment_quiz_type:checked").change();
+                common_fields_check();
             });
 
             $('body').on('change', '.assignment_method_check', function (e) {
@@ -1625,7 +1832,13 @@
                 resetRureraDatePickers();
             });
 
+
+            $(".assignment_practice_type:checked").change();
+
         });
+
+
+
 
     </script>
 @endpush
