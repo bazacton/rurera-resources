@@ -153,7 +153,7 @@
                                             
                                             <div class="dropdown year-dropdown">
                                                 <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <img src="/assets/default/svgs/book-open.svg" alt="book-open"> 
+                                                    <img src="/assets/default/svgs/book-filter.svg" alt="book-filter"> 
                                                     <span class="btn-text">Year Subject</span>
                                                     <span class="selected-labels" id="yearSelectedLabels"></span>
                                                 </button>
@@ -187,7 +187,7 @@
                                                                         <div class="dropdown-search">
                                                                             <div class="input-holder">
                                                                                 <img src="/assets/default/svgs/search.svg" alt="search">
-                                                                                <input type="text" placeholder="Level">
+                                                                                <input type="text" placeholder="Subject">
                                                                             </div>
                                                                         </div>
                                                                         <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
@@ -226,7 +226,7 @@
                                                                         <div class="dropdown-search">
                                                                             <div class="input-holder">
                                                                                 <img src="/assets/default/svgs/search.svg" alt="search">
-                                                                                <input type="text" placeholder="Level">
+                                                                                <input type="text" placeholder="Subject">
                                                                             </div>
                                                                         </div>
                                                                         <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
@@ -245,7 +245,7 @@
                                                                         <div class="dropdown-search">
                                                                             <div class="input-holder">
                                                                                 <img src="/assets/default/svgs/search.svg" alt="search">
-                                                                                <input type="text" placeholder="Level">
+                                                                                <input type="text" placeholder="Subject">
                                                                             </div>
                                                                         </div>
                                                                         <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
