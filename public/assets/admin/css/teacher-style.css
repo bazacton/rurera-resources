@@ -269,6 +269,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .rurera-search-filters .dropdown-menu .dropdown-item input[type="checkbox"] {
     vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    border-color: #cad5e2;
 }
 /* Admin_teacher new Style End */
 
