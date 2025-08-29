@@ -117,8 +117,6 @@
                                                 <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
                                                 <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
                                                 <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                <div class="dropdown-divider"></div>
-                                                
                                             </div>
                                         </div>
 
