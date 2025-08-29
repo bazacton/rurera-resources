@@ -109,7 +109,7 @@
                                             
                                             <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/subject.svg" alt="subject"> Level
+                                                <img src="/assets/default/svgs/subject.svg" alt="subject"> <span>Level</span>
                                                 <span class="selected-labels" id="selectedLabels"></span>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="multiSelectDropdown">
