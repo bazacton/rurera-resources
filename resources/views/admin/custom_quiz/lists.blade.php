@@ -152,13 +152,16 @@
                                         <th class="text-left">
                                         {{ trans('admin/main.title') }}
                                         </th>
-                                        <th class="text-left">Created By</th>
                                         <th class="text-center">
                                         {{ trans('admin/main.question_count') }}
                                         </th>
+                                        <th class="text-left">Year Group / Subject</th>
                                         <th class="text-center">
                                         {{ trans('admin/main.status') }}
                                         </th>
+                                        <th class="text-left">Visibility</th>
+                                        <th class="text-left">Created At</th>
+                                        <th class="text-left">Created By</th>
                                         <th>
                                         <!--{{ trans('admin/main.actions') }}-->
                                         </th>
@@ -176,12 +179,14 @@
                                             </div>
                                         </td>
 
-                                        <td class="text-left">
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ isset($quiz->creator->id)?$quiz->creator->get_full_name() : '' }}</div>
-                                        </td>
+
 
                                         <td class="text-center">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->quizQuestionsList->count() }}</div>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ isset($quiz->quizYear->id)? $quiz->quizYear->getTitleAttribute() : '-' }} / {{ isset($quiz->subject->id)? $quiz->subject->getTitleAttribute() : '-' }}</div>
                                         </td>
 
                                         <td class="text-center">
@@ -193,7 +198,15 @@
                                                 @endif
                                             </div>
                                         </td>
-
+                                        <td class="text-left">
+                                            -
+                                        </td>
+                                        <td class="text-left">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{($quiz->created_at > 0)? dateTimeFormat($quiz->created_at, 'j M y') : '-'}}</div>
+                                        </td>
+                                        <td class="text-left">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ isset($quiz->creator->id)?$quiz->creator->get_full_name() : '' }}</div>
+                                        </td>
                                         <td>
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <div class="quiz-table-controls">
@@ -236,33 +249,51 @@
     </div>
 </section>
 
-<div class="modal fade quiz-create-modal" id="quiz-create-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
+<div class="modal fade quiz-create-modal general-knowledge-modal" id="quiz-create-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+            <div class="modal-header">
+                <input type="hidden"
+                       name="quiz_title"
+                       value="Create Custom Quiz"
+                       class="js-ajax-title form-control rurera-req-field"
+                       placeholder=""/>
+                <h2 class="editable-content editable" data-edit_field="quiz_title" contenteditable="true">Create Custom Quiz</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="book-btn">
+                    <div class="upload-box">
+                        <input type="file" id="upload-thumbnail" name="quiz_image" class="assignment-img-upload">
+                        <label for="upload-thumbnail"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></label>
+                    </div>
+                    <button type="button"><img src="/assets/default/svgs/book-saved.svg'" class="assignment_img" alt="book-saved"></button>
+                </div>
+            </div>
             <div class="modal-body">
 
                 <form action="/admin/custom_quiz/create_custom_quiz"
-                      method="Post" class="rurera-form-validation create-assignment-form">
+                      method="Post" class="rurera-form-validation create-assignment-form" enctype="multipart/form-data">
                     {{ csrf_field() }}
 
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>Create Custom Quiz</h3>
-                        </div>
-                        <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="years-group populated-data">
+
+                    <div class="text-holder">
+
+                        <ul>
+                            <li>
+                                <img src="/assets/default/svgs/grades.svg" alt="grades">
 
                                 <div class="form-group">
                                     <label>{{ trans('/admin/main.category') }}</label>
                                     <div class="select-holder">
-                                        <select class="form-control @error('year_id') is-invalid @enderror ajax-category-courses" name="year_id" data-course_id="{{isset( $assignment->subject_id )? $assignment->subject_id : 0}}">
-                                            <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category')  }}</option>
+                                        <select class="form-control ajax-category-courses" name="year_id" data-course_id="0">
+                                            <option selected disabled>{{ trans('admin/main.choose_category')  }}</option>
 
                                             @foreach($categories as $category)
                                                 @if(!empty($category->subCategories) and count($category->subCategories))
                                                     <optgroup label="{{  $category->title }}">
                                                         @foreach($category->subCategories as $subCategory)
-                                                            <option value="{{ $subCategory->id }}" @if(!empty($assignment) and $assignment->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                            <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
                                                         @endforeach
                                                     </optgroup>
                                                 @else
@@ -271,32 +302,34 @@
                                             @endforeach
                                         </select>
                                     </div>
-
                                 </div>
-                            </div>
+                            </li>
+                            <li>
+                                <img src="/assets/default/svgs/book-saved.svg" alt="book-saved">
+                                <div class="form-group">
+                                    <label>Subjects</label>
+                                    <select data-return_type="option"
+                                            data-default_id="0" data-chapter_id="0"
+                                            class=" ajax-courses-dropdown year_subjects form-control select2r"
+                                            id="subject_id" name="subject_id">
+                                        <option disabled selected>Subject</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="description-field">
+                            <textarea name="quiz_instructions" class="quiz_instructions" placeholder="Type description here..."></textarea>
+                            <span class="description-count">0/400</span>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label class="input-label">Quiz Title</label>
-                                <input type="text"
-                                       name="quiz_title"
-                                       value=""
-                                       class="js-ajax-title form-control rurera-req-field"
-                                       placeholder=""/>
+                        <div class="general-knowledge-footer">
+                            <p>Let your learner know a title about the learning path</p>
+                            <div class="footer-controls">
+                                <button type="submit" class="apply-btn apply-assignment-btn">Submit</button>
+                                <button type="button" class="cancel-btn">Cancel</button>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit"
-                                    class="js-submit-quiz-form btn btn-sm btn-primary">Submit
-                            </button>
                         </div>
                     </div>
                 </form>
-
-
-
-
-
 
             </div>
         </div>
@@ -319,9 +352,64 @@
 
     });
 
+    $(document).on('change', '#upload-thumbnail', function () {
+        const file = this.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                $(".assignment_img").attr("src", e.target.result);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    $(document).on('change', '.ajax-category-courses', function () {
+        var category_id = $(this).val();
+        var course_id = $(this).attr('data-course_id');
+        $.ajax({
+            type: "GET",
+            url: '/admin/webinars/courses_by_categories',
+            data: {'category_id': category_id, 'course_id': course_id},
+            success: function (return_data) {
+                $(".ajax-courses-dropdown").html(return_data);
+                $(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
+                $('.ajax-courses-dropdown').change();
+            }
+        });
+    });
+
     $(document).on('click', '.create-quiz-btn', function () {
         $(".quiz-create-modal").modal('show');
     });
     /*Skelton Loading Fungtion End*/
+
+    $(document).ready(function () {
+        const textarea = $('.quiz_instructions');
+        const countDisplay = $('.description-count');
+        const maxLength = parseInt(textarea.attr('maxlength')) || 400;
+
+        // Set initial count
+        countDisplay.text(`${textarea.val().length}/${maxLength}`);
+
+        // Update count on input
+        textarea.on('input', function () {
+            let content = $(this).val();
+
+            // Prevent exceeding the max length
+            if (content.length > maxLength) {
+                content = content.substring(0, maxLength);
+                $(this).val(content);
+            }
+
+            // Update the count display
+            countDisplay.text(`${content.length}/${maxLength}`);
+        });
+    });
+
+    $(document).on('click change keyup keydown keypress', '.editable-content', function () {
+        var editable_field_name = $(this).attr('data-edit_field');
+        var new_value = $(this).html();
+        $('[name="'+editable_field_name+'"]').val(new_value);
+    });
 </script>
 @endpush
