@@ -283,7 +283,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding: 5px 15px;
     font-size: 14px;
     margin: 0;
-    color: #1d293d;
+    display: flex;
+    align-items: center;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item input[type="checkbox"] {
     vertical-align: middle;
@@ -291,6 +292,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     width: 18px;
     margin-right: 5px;
     border-color: #cad5e2;
+}
+.rurera-search-filters .counts {
+    font-size: 12px;
+    margin-left: auto;
 }
 .rurera-search-filters .dropdown button img {
     width: 18px;
@@ -301,6 +306,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .dropdown-search {
     background-color: #f7f8fa;
     padding: 10px;
+    margin-bottom: 5px;
 }
 .dropdown-search .input-holder {
     position: relative;
@@ -321,6 +327,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding: 0 0 0 25px;
     outline: none;
     font-weight: 400;
+    font-size: 14px;
 }
 .rurera-search-filters .dropdown button.clear-filter-btn {
     box-shadow: none;
