@@ -171,7 +171,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin: 0;
     position: relative;
 }
-.rurera-search-filters .input-field label:after {
+.rurera-search-filters .input-field label:after,
+.rurera-search-filters .btn-text:after {
     content: "";
     height: calc(100% - 5px);
     width: 1px;
@@ -257,6 +258,11 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .rurera-search-filters .dropdown.show button {
     box-shadow: 0 0 0 3px rgba(43,127,255,0.6) !important;
     border-style: solid;
+}
+.rurera-search-filters .btn-text {
+    font-weight: 600;
+    color: #0f172b;
+    position: relative;
 }
 .rurera-search-filters .dropdown-menu {
     left: 0 !important;
