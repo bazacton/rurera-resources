@@ -83,7 +83,7 @@
                 <div class="card populated-data">
                     <div class="card-body ">
                         <form action="javascript;"
-                              method="Post" class="rurera-form-validation analytics-form">
+                              method="Post" class="rurera-form-validation analytics-form row">
                             {{ csrf_field() }}
 
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
