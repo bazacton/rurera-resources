@@ -16,32 +16,6 @@
                         <div class="breadcrumb-item"><a href="/admin/students">Students</a></div>
                     </div>
                 </div>
-                
-                <div class="teacher-search-filter d-inline-flex p-0 border-0 ml-auto">
-                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
-                    <div class="search-field">
-                        <span class="icon-box">
-                            <img src="/assets/default/svgs/search.svg" alt="search">
-                        </span>
-                        <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="select-holder">
-                        <div class="input-field">
-                            <img src="/assets/default/svgs/filters.svg" alt="filters">
-                            <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
-                                <option value="all">All Classes</option>
-                                @if( $filter_classes_list->count() > 0)
-                                    @foreach($filter_classes_list as $classObj)
-                                        <option value="{{$classObj->id}}" @if(request()->get('class_id') == $classObj->id)
-                                            selected @endif>{{$classObj->title}}</option>
-                                    @endforeach
-                                @endif
-                            </select>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
