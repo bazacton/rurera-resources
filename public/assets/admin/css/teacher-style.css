@@ -3935,6 +3935,14 @@ Qustions AI Tabs Style End
     color: #666;
     font-weight: 500;
 }
+.rurera-admin-pagination .pagination {
+    background-color: #e9eef5;
+    display: inline-flex;
+    margin: 0 auto;
+}
+.rurera-admin-pagination nav:has(.pagination) {
+    text-align: center;
+}
 .admin_teacher_role .page-item .page-link {
     background-color: inherit;
     border: 0;
