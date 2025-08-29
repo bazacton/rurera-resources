@@ -325,10 +325,12 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin-left: auto;
 }
 .rurera-search-filters .dropdown button img {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
+    top: -2px;
 }
 .dropdown-search {
     background-color: #e9eef5;
