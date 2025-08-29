@@ -64,13 +64,15 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>Analytics</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
-            </div>
-            <div class="breadcrumb-item active"><a href="/admin/analytics">Analytics</a>
-            </div>
-            <div class="breadcrumb-item">{{!empty($assignment) ?trans('/admin/main.edit'): trans('admin/main.new') }}
+        <div class="heading-holder">
+            <h1>Analytics</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
+                </div>
+                <div class="breadcrumb-item active"><a href="/admin/analytics">Analytics</a>
+                </div>
+                <div class="breadcrumb-item">{{!empty($assignment) ?trans('/admin/main.edit'): trans('admin/main.new') }}
+                </div>
             </div>
         </div>
     </div>
