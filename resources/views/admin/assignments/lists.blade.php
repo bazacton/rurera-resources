@@ -105,7 +105,7 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <div class="select-holder">
+                                        <div class="select-holder level-select">
                                             
                                             <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -486,7 +486,7 @@
     <script>
         $(document).ready(function () {
             const selectedLabelsContainer = $('#selectedLabels');
-            const checkboxes = $('.dropdown-menu input[type="checkbox"]');
+            const checkboxes = $('.level-select .dropdown-menu input[type="checkbox"]');
 
             checkboxes.change(function () {
                 const selected = [];
