@@ -254,7 +254,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     outline: none;
     background-color: inherit;
 }
-.rurera-search-filters .dropdown button:focus {
+.rurera-search-filters .dropdown.show button {
     box-shadow: 0 0 0 3px rgba(43,127,255,0.6) !important;
     border-style: solid;
 }
