@@ -29,11 +29,8 @@
             @endif
         </div>
         @can('admin_schools_create')
-        <div class="card-header">
-            <div class="text-right ml-auto">
-                <a href="javascript:;" class="simple-btn new-school-btn reset-form" data-form_class="school-form">New School</a>
-
-            </div>
+        <div class="text-right ml-auto">
+            <a href="javascript:;" class="simple-btn new-school-btn reset-form" data-form_class="school-form">New School</a>
         </div>
         @endcan
     </div>
