@@ -285,6 +285,25 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin: 0;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.rurera-search-filters .dropdown-menu .dropdown-item::before {
+  content: "";
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #cad5e2;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.rurera-search-filters .dropdown-menu .dropdown-item:has(input[type="checkbox"]:checked)::before {
+  content: "✔";
+  background-color:var(--blue);
+  border-color: transparent;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item input[type="checkbox"] {
     vertical-align: middle;
@@ -296,7 +315,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  opacity: 0;
 }
 .rurera-search-filters .counts {
     font-size: 12px;
