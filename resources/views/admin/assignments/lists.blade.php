@@ -109,10 +109,17 @@
                                             
                                             <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/subject.svg" alt="subject"> <span>Level</span>
+                                                <img src="/assets/default/svgs/subject.svg" alt="subject"> 
+                                                <span class="btn-text">Level</span>
                                                 <span class="selected-labels" id="selectedLabels"></span>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="multiSelectDropdown">
+                                                <div class="dropdown-search">
+                                                    <div class="input-holder">
+                                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                                        <input type="text" placeholder="Level">
+                                                    </div>
+                                                </div>
                                                 <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
                                                 <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
                                                 <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
