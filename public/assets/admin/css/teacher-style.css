@@ -343,6 +343,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     transform: translateY(-50%);
     height: 18px;
     width: 18px;
+    opacity: .4;
     filter: invert(69%) sepia(17%) saturate(409%) hue-rotate(176deg) brightness(89%) contrast(89%);
 }
 .dropdown-search .input-holder input[type="text"] {
