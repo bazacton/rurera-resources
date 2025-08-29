@@ -199,6 +199,16 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-weight: 500;
     border: 0;
 }
+.school-membership-holder {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.school-membership {
+    font-size: 16px;
+    color: var(--primary);
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
