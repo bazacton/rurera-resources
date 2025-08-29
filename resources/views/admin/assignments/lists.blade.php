@@ -170,11 +170,10 @@
                                                                                 <input type="text" placeholder="Level">
                                                                             </div>
                                                                         </div>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                                        <div class="dropdown-divider"></div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Math"> Math</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="History"> History</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Science"> Science</label>
                                                                         <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
@@ -191,11 +190,9 @@
                                                                                 <input type="text" placeholder="Level">
                                                                             </div>
                                                                         </div>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                                        <div class="dropdown-divider"></div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Math"> Math</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="History"> History</label>
                                                                         <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
@@ -212,11 +209,10 @@
                                                                                 <input type="text" placeholder="Level">
                                                                             </div>
                                                                         </div>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                                        <div class="dropdown-divider"></div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Math"> Math</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="History"> History</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Science"> Science</label>
                                                                         <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
@@ -233,11 +229,9 @@
                                                                                 <input type="text" placeholder="Level">
                                                                             </div>
                                                                         </div>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                                        <div class="dropdown-divider"></div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="History"> History</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Science"> Science</label>
                                                                         <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
@@ -254,11 +248,8 @@
                                                                                 <input type="text" placeholder="Level">
                                                                             </div>
                                                                         </div>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                                        <div class="dropdown-divider"></div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Math"> Math</label>
                                                                         <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
                                                                     </div>
                                                                 </li>
