@@ -358,6 +358,14 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignment-details-block .percent_text {position: relative; left: auto; top: auto; transform: none; display: inline-block; font-size: 20px; margin-left: 5px; line-height: normal; vertical-align: middle;}
 .student-attempt-info [class*="col-"] {width: auto; max-width: none; flex: 0 0 auto;}
 .assignment-details-block [class*="col-"]:has(.card-statistic-1):last-child .card-wrap {border-right: 0;}
+.assignment-create-modal .radio-buttons .card-radio {
+    width: auto;
+    min-width: 76px;
+}
+.assignment-create-modal .radio-buttons .card-radio .radio-btn {
+    min-height: auto;
+    border-radius: 5px;
+}
 /* Assignments New Table Style Start */
 .assignments-table .card {border: 0; border-radius: 5px; background-color: inherit; box-shadow: none; margin: 0;}
 .assignments-table .card h6 {display: flex; align-items: center; gap: 10px; font-size: 14px; color: #333;}
