@@ -155,7 +155,6 @@
                                         <th class="text-center">
                                         {{ trans('admin/main.question_count') }}
                                         </th>
-                                        <th class="text-left">Year Group / Subject</th>
                                         <th class="text-center">
                                         {{ trans('admin/main.status') }}
                                         </th>
@@ -172,9 +171,11 @@
                                         <td>
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <span>{{ $quiz->title }}</span>
+                                                @if(isset($quiz->quizYear->id))
+                                                    <small class="d-block text-left text-primary mt-1">{{ $quiz->quizYear->getTitleAttribute()}}</small>
+                                                @endif
                                                 @if(!empty($quiz->webinar))
-                                                <small class="d-block text-left text-primary mt-1">{{ $quiz->webinar->title
-                                                    }}</small>
+                                                <small class="d-block text-left text-primary mt-1">{{ $quiz->webinar->title}}</small>
                                                 @endif
                                             </div>
                                         </td>
@@ -183,10 +184,6 @@
 
                                         <td class="text-center">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->quizQuestionsList->count() }}</div>
-                                        </td>
-
-                                        <td class="text-center">
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ isset($quiz->quizYear->id)? $quiz->quizYear->getTitleAttribute() : '-' }} / {{ isset($quiz->subject->id)? $quiz->subject->getTitleAttribute() : '-' }}</div>
                                         </td>
 
                                         <td class="text-center">
