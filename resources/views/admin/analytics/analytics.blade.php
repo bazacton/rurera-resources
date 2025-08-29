@@ -109,8 +109,7 @@
                                 </div>
                             </div>
 
-                            <div class="class_students_multi_select">
-                            </div>
+                            <div class="class_students_multi_select"></div>
 
                             <div class="col-12 col-md-12 col-lg-12">
                                 <div class="form-group">
@@ -160,8 +159,7 @@
                                             @endif
                                             @if(auth()->user()->subscription('sats'))
                                                 <label class="card-radio">
-                                                    <input type="radio" name="practice_type"
-                                                           class="practice_type rurera-ajax-submission" value="test" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="test" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/sats.png">
@@ -214,25 +212,14 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="analytics_type_fields">
+                            <div class="analytics_type_fields"></div>
+                            <div class="mt-20 mb-20">
+                                <button type="submit" class="btn btn-sm btn-primary">Analytics</button>
                             </div>
-
-
-
-
-
-                        <div class="mt-20 mb-20">
-                            <button type="submit" class="btn btn-sm btn-primary">Analytics</button>
-                        </div>
-
-                            <div class="analytics_data_block">
-                            </div>
+                            <div class="analytics_data_block"></div>
 
                             <input type="hidden" name="attempt_to_show" class="attempt_to_show" value="last_attempt">
-
-                    </form>
-
+                        </form>
                     </div>
                 </div>
             </div>
