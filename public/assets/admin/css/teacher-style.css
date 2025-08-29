@@ -199,6 +199,12 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-weight: 500;
     border: 0;
 }
+.card-body form .rurera-search-filters .select-holder:after {
+    display: none;
+}
+.card-body form .rurera-search-filters .form-group select.form-control {
+    padding-right: 15px;
+}
 .school-membership-holder {
     display: inline-flex;
     align-items: center;
