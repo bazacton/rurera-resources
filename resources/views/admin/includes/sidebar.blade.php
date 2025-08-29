@@ -44,7 +44,7 @@
                 @endcan
             @endif
             <li class="nav-item">
-                <a href="/admin/collections" class="nav-link">
+                <a href="/admin/custom_page/my_library" class="nav-link">
                     <img src="/assets/default/img/sidebar/collections.svg" alt="collections">
                     <span>Collections</span>
                 </a>
