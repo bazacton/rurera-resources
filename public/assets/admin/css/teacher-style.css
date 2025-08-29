@@ -3948,9 +3948,12 @@ Qustions AI Tabs Style End
     background-color: inherit;
     border: 0;
     color: #314158;
-    padding: .4rem .70rem;
+    padding: .4rem .5rem;
     border-radius: .5rem;
     margin: 0;
+    font-size: .875rem;
+    min-width: 30px;
+    text-align: center;
 }
 .admin_teacher_role .page-item.active .page-link,
 .admin_teacher_role .page-item.active .page-link:hover {
