@@ -18,7 +18,7 @@
         </div>
         @can('admin_assignments_create')
         <div class="text-right ml-auto">
-            <a href="{{ getAdminPanelUrl() }}/custom_quiz/create" class="simple-btn">Create
+            <a href="javascript:;" class="create-quiz-btn simple-btn">Create
                 Custom Quiz</a>
         </div>
         @endcan
@@ -34,7 +34,7 @@
                                 <div class="rurera-search-filters row">
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            
+
                                             <div class="input-field">
                                                 <label class="input-label">{{ trans('admin/main.search') }}</label>
                                                 <input type="text" placeholder="Search Quizzes" class="form-control" name="title" value="{{ request()->get('title') }}">
@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            
+
                                             <div class="input-group">
                                                 <div class="input-field">
                                                     <label class="input-label">{{ trans('admin/main.start_date') }}</label>
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            
+
                                             <div class="input-group">
                                                 <div class="input-field">
                                                     <label class="input-label">{{ trans('admin/main.end_date') }}</label>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            
+
                                             <div class="select-holder">
                                                 <div class="input-field">
                                                     <label class="input-label">{{ trans('admin/main.filters') }}</label>
@@ -102,13 +102,13 @@
                                                         </option>
                                                     </select>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            
+
                                             <div class="input-field">
                                             <label class="input-label">{{ trans('admin/main.class') }}</label>
                                                 <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
@@ -123,7 +123,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            
+
                                             <div class="select-holder">
                                                 <div class="input-field">
                                                     <label class="input-label">{{ trans('admin/main.status') }}</label>
@@ -235,6 +235,73 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade quiz-create-modal" id="quiz-create-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <form action="/admin/custom_quiz/create_custom_quiz"
+                      method="Post" class="rurera-form-validation create-assignment-form">
+                    {{ csrf_field() }}
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Create Custom Quiz</h3>
+                        </div>
+                        <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="years-group populated-data">
+
+                                <div class="form-group">
+                                    <label>{{ trans('/admin/main.category') }}</label>
+                                    <div class="select-holder">
+                                        <select class="form-control @error('year_id') is-invalid @enderror ajax-category-courses" name="year_id" data-course_id="{{isset( $assignment->subject_id )? $assignment->subject_id : 0}}">
+                                            <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category')  }}</option>
+
+                                            @foreach($categories as $category)
+                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                    <optgroup label="{{  $category->title }}">
+                                                        @foreach($category->subCategories as $subCategory)
+                                                            <option value="{{ $subCategory->id }}" @if(!empty($assignment) and $assignment->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                        @endforeach
+                                                    </optgroup>
+                                                @else
+                                                    <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($assignment) and $assignment->year_id == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                @endif
+                                            @endforeach
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label class="input-label">Quiz Title</label>
+                                <input type="text"
+                                       name="quiz_title"
+                                       value=""
+                                       class="js-ajax-title form-control rurera-req-field"
+                                       placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit"
+                                    class="js-submit-quiz-form btn btn-sm btn-primary">Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -249,6 +316,11 @@
             .querySelectorAll(".skelton-hide")
             .forEach((el) => el.classList.remove("skelton-hide"));
         }, 3000);
+
+    });
+
+    $(document).on('click', '.create-quiz-btn', function () {
+        $(".quiz-create-modal").modal('show');
     });
     /*Skelton Loading Fungtion End*/
 </script>
