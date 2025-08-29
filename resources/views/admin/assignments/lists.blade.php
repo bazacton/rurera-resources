@@ -154,37 +154,31 @@
                                             <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
-                                                <span class="btn-text">Level</span>
+                                                <span class="btn-text">Year Subject</span>
                                                 <span class="selected-labels" id="selectedLabels"></span>
                                             </button>
-                                            <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
-                                                <div class="dropdown-search">
-                                                    <div class="input-holder">
-                                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                                        <input type="text" placeholder="Level">
-                                                    </div>
-                                                </div>
-                                                <label class="dropdown-item">
-                                                    <input type="checkbox" value="Beginner"> 
-                                                    Beginner
-                                                    <span class="counts">20</span>
-                                                </label>
-                                                <label class="dropdown-item">
-                                                    <input type="checkbox" value="Intermediate"> 
-                                                    Intermediate
-                                                    <span class="counts">18</span>
-                                                </label>
-                                                <label class="dropdown-item">
-                                                    <input type="checkbox" value="Upper Intermediate"> 
-                                                    Upper Intermediate
-                                                    <span class="counts">22</span>
-                                                </label>
-                                                <label class="dropdown-item">
-                                                    <input type="checkbox" value="Advanced"> 
-                                                    Advanced
-                                                    <span class="counts">10</span>
-                                                </label>
-                                                <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
+                                            <div lass="dropdown-menu" aria-labelledby="multiSelectDropdown2">
+                                                <ul>
+                                                    <li><a class="dropdown-link" href="#">Year 1</a></li>
+                                                    <li><a class="dropdown-link" href="#">Year 2</a></li>
+                                                    <li><a class="dropdown-link" href="#">Year 3</a></li>
+                                                    <li><a class="dropdown-link" href="#">Year 4</a></li>
+                                                    <li class="dropdown-submenu">
+                                                        <a class="dropdown-link dropdown-toggle" href="#">Year 5</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <div class="select-list">
+                                                                    <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                                    <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                                    <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                                    <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <button class="btn btn-sm btn-danger ml-3" id="clearSelection">Clear Filter</button>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
 
