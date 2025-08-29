@@ -108,7 +108,7 @@
                                         <div class="select-holder">
                                             
                                             <div class="dropdown">
-                                            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button class="dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="fas fa-filter"></i> Level
                                                 <span class="selected-labels" id="selectedLabels"></span>
                                             </button>
