@@ -230,6 +230,22 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     color: var(--primary);
     font-weight: 600;
 }
+.rurera-search-filters .dropdown-menu {
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .rurera-search-filters .dropdown-toggle::after {
+            margin-left: 10px;
+        }
+        .rurera-search-filters .selected-labels {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-left: 10px;
+        }
+        .rurera-search-filters .badge {
+            font-size: 0.8rem;
+        }
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
