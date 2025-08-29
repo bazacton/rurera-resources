@@ -253,6 +253,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
             height: 32px;
             outline: none;
         }
+        .rurera-search-filters .dropdown button i {
+    vertical-align: middle;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
