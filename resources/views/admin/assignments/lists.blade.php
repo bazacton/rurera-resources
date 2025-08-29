@@ -82,6 +82,7 @@
                                     <div class="form-group">
                                         <div class="select-holder">
                                             <div class="input-field">
+                                                <img src="/assets/default/svgs/category.svg" alt="category">
                                                 <label class="input-label">{{trans('admin/main.category')}}</label>
                                                 <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
                                                     <option value="">{{trans('admin/main.all_categories')}}</option>
@@ -107,6 +108,7 @@
 
                                         <div class="select-holder">
                                             <div class="input-field">
+                                                <img src="/assets/default/svgs/subject.svg" alt="subject">
                                                 <label>Subjects</label>
                                                 <select data-return_type="option"
                                                     data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
