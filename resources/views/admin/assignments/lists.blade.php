@@ -417,4 +417,31 @@
         });
         /*Skelton Loading Fungtion End*/
     </script>
+    <script>
+        $(document).ready(function () {
+            const selectedLabelsContainer = $('#selectedLabels');
+            const checkboxes = $('.dropdown-menu input[type="checkbox"]');
+
+            checkboxes.change(function () {
+                const selected = [];
+                checkboxes.each(function () {
+                    if (this.checked) {
+                        selected.push($(this).val());
+                    }
+                });
+
+                if (selected.length > 0) {
+                    let badges = selected.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
+                    selectedLabelsContainer.html(badges);
+                } else {
+                    selectedLabelsContainer.html('');
+                }
+            });
+
+            $('#clearSelection').click(function () {
+                checkboxes.prop('checked', false);
+                selectedLabelsContainer.html('');
+            });
+        });
+    </script>
 @endpush
