@@ -153,7 +153,7 @@
                                             
                                             <div class="dropdown year-dropdown">
                                                 <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
+                                                    <img src="/assets/default/svgs/book-open.svg" alt="book-open"> 
                                                     <span class="btn-text">Year Subject</span>
                                                     <span class="selected-labels" id="yearSelectedLabels"></span>
                                                 </button>
