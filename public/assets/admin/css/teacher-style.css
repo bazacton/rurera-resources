@@ -230,32 +230,33 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     color: var(--primary);
     font-weight: 600;
 }
-        .rurera-search-filters .dropdown-toggle::after {
-            display: none;
-        }
-        .rurera-search-filters .selected-labels {
-            display: inline-flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-left: 10px;
-        }
-        .rurera-search-filters .badge {
-                font-size: 0.8rem;
-                background-color: #e2e8f0;
-                color: #0f172b;
-                border-radius: 3px;
-                padding: 4px 8px;
-        }
-        .rurera-search-filters .dropdown button {
-            border: 1px dashed #cad5e2;
-            border-radius: 10px;
-            padding: 0 10px;
-            height: 32px;
-            outline: none;
-            background-color: inherit;
-        }
-        .rurera-search-filters .dropdown button i {
-    vertical-align: middle;
+.rurera-search-filters .dropdown-toggle::after {
+    display: none;
+}
+.rurera-search-filters .selected-labels {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+}
+.rurera-search-filters .badge {
+    font-size: 0.8rem;
+    background-color: #e2e8f0;
+    color: #0f172b;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+.rurera-search-filters .dropdown button {
+    border: 1px dashed #cad5e2;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 32px;
+    outline: none;
+    background-color: inherit;
+}
+.rurera-search-filters .dropdown button:focus {
+    box-shadow: 0 0 0 3px rgba(43,127,255,0.6) !important;
+    border-style: solid;
 }
 .rurera-search-filters .dropdown-menu {
     left: 0 !important;
