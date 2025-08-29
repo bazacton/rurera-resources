@@ -159,10 +159,90 @@
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
                                                     <ul>
-                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 1</a></li>
-                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 2</a></li>
-                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 3</a></li>
-                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 4</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-link dropdown-toggle" href="#">Year 1</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <div class="select-list">
+                                                                        <div class="dropdown-search">
+                                                                            <div class="input-holder">
+                                                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                                <input type="text" placeholder="Level">
+                                                                            </div>
+                                                                        </div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-link dropdown-toggle" href="#">Year 2</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <div class="select-list">
+                                                                        <div class="dropdown-search">
+                                                                            <div class="input-holder">
+                                                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                                <input type="text" placeholder="Level">
+                                                                            </div>
+                                                                        </div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-link dropdown-toggle" href="#">Year 3</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <div class="select-list">
+                                                                        <div class="dropdown-search">
+                                                                            <div class="input-holder">
+                                                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                                <input type="text" placeholder="Level">
+                                                                            </div>
+                                                                        </div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-link dropdown-toggle" href="#">Year 4</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <div class="select-list">
+                                                                        <div class="dropdown-search">
+                                                                            <div class="input-holder">
+                                                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                                <input type="text" placeholder="Level">
+                                                                            </div>
+                                                                        </div>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <button class="clear-filter-btn" id="yearClearSelection">Clear Filter</button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
                                                         <li class="dropdown-submenu">
                                                             <a class="dropdown-link dropdown-toggle" href="#">Year 5</a>
                                                             <ul class="dropdown-menu">
