@@ -81,7 +81,7 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <div class="select-holder">
-                                            <div class="input-field">
+                                            <!-- <div class="input-field">
                                                 <img src="/assets/default/svgs/category.svg" alt="category">
                                                 <label class="input-label">{{trans('admin/main.category')}}</label>
                                                 <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
@@ -98,7 +98,21 @@
                                                         @endif
                                                     @endforeach
                                                 </select>
+                                            </div> -->
+                                            <div class="dropdown">
+                                            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-filter"></i> Level
+                                                <span class="selected-labels" id="selectedLabels"></span>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="multiSelectDropdown">
+                                                <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                <div class="dropdown-divider"></div>
+                                                <button class="btn btn-sm btn-danger ml-3" id="clearSelection">Clear Filter</button>
                                             </div>
+                                        </div>
 
                                         </div>
                                     </div>
