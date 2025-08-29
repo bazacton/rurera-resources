@@ -15,24 +15,27 @@
                 <div class="breadcrumb-item">Schools</div>
             </div>
         </div>
-        <div class="school-membership">
-            @if($userObj->isDistricAdmin())
-                @if(isset($userObj->userSchool->schoolSubscriptions->id))
-                    {{$userObj->userSchool->schoolSubscriptions->subscribe->title}}
-                @else
-                    @if(isset($userObj->userSchool->schoolSubscriptionInvoice->id))
-                        <a target="_blank" href="{{$userObj->userSchool->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
-                            Invoice - {{$userObj->userSchool->schoolSubscriptionInvoice->id}}
-                        </a>
+        <div class="school-membership-holder">
+            <div class="school-membership">
+                @if($userObj->isDistricAdmin())
+                    @if(isset($userObj->userSchool->schoolSubscriptions->id))
+                        {{$userObj->userSchool->schoolSubscriptions->subscribe->title}}
+                    @else
+                        @if(isset($userObj->userSchool->schoolSubscriptionInvoice->id))
+                            <a target="_blank" href="{{$userObj->userSchool->schoolSubscriptionInvoice->stripe_invoice_url}}" class="btn-transparent btn-sm text-primary "  data-placement="top" title="Invoice Link">
+                                Invoice - {{$userObj->userSchool->schoolSubscriptionInvoice->id}}
+                            </a>
+                        @endif
                     @endif
                 @endif
-            @endif
+            </div>
+            @can('admin_schools_create')
+            <div class="text-right ml-auto">
+                <a href="javascript:;" class="simple-btn new-school-btn reset-form" data-form_class="school-form">New School</a>
+            </div>
+            @endcan
         </div>
-        @can('admin_schools_create')
-        <div class="text-right ml-auto">
-            <a href="javascript:;" class="simple-btn new-school-btn reset-form" data-form_class="school-form">New School</a>
-        </div>
-        @endcan
+        
     </div>
 
 
