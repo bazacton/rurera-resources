@@ -28,15 +28,18 @@
                 </div>
                 <div class="form-group">
                     <div class="select-holder">
-                        <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
-                            <option value="all">All Classes</option>
-                            @if( $filter_classes_list->count() > 0)
-                                @foreach($filter_classes_list as $classObj)
-                                    <option value="{{$classObj->id}}" @if(request()->get('class_id') == $classObj->id)
-                                        selected @endif>{{$classObj->title}}</option>
-                                @endforeach
-                            @endif
-                        </select>
+                        <div class="input-field">
+                            <img src="/assets/default/svgs/filters.svg" alt="filters">
+                            <select name="class_id" data-plugin-selectTwo class="form-control populate rurera_self_submitted_field form-control classes_filter" data-field_key="class_id">
+                                <option value="all">All Classes</option>
+                                @if( $filter_classes_list->count() > 0)
+                                    @foreach($filter_classes_list as $classObj)
+                                        <option value="{{$classObj->id}}" @if(request()->get('class_id') == $classObj->id)
+                                            selected @endif>{{$classObj->title}}</option>
+                                    @endforeach
+                                @endif
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
