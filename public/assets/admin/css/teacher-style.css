@@ -264,8 +264,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding: 15px 0;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item {
-    padding: 0 15px;
+    padding: 5px 15px;
     font-size: 14px;
+    margin: 0;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item input[type="checkbox"] {
     vertical-align: middle;
