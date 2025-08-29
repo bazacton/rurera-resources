@@ -282,7 +282,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin-top: 10px;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item {
-    padding: 8px 15px;
+    padding: 8px 12px;
     font-size: 14px;
     margin: 0;
     display: flex;
@@ -332,7 +332,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .dropdown-search {
     background-color: #f7f8fa;
-    padding: 10px;
+    padding: 10px 12px;
     margin-bottom: 5px;
 }
 .dropdown-search .input-holder {
