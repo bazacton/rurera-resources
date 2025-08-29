@@ -357,6 +357,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-weight: 400;
     font-size: 14px;
 }
+.card-body form .form-group .dropdown-search .input-holder input[type="text"]:focus {
+    background-color: inherit;
+}
 .rurera-search-filters .dropdown button.clear-filter-btn {
     box-shadow: none;
     border: 0;
