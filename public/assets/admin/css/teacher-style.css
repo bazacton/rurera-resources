@@ -199,12 +199,15 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-weight: 500;
     border: 0;
 }
-.card-body form .rurera-search-filters .select-holder:after {
+.card-body form .rurera-search-filters .select-holder:after,
+.card-body .rurera-search-filters .select-holder .select2-selection__arrow {
     display: none;
 }
-.card-body form .rurera-search-filters .form-group select.form-control {
+.card-body form .rurera-search-filters .form-group select.form-control,
+.card-body form .rurera-search-filters .select2-container--default .select2-selection--single .select2-selection__rendered {
     padding-right: 15px;
 }
+
 .school-membership-holder {
     display: inline-flex;
     align-items: center;
