@@ -12,18 +12,27 @@
     <link rel="stylesheet" href="/assets/default/css/panel-pages/timestable.css">
     <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 <style>
+    .class_students_multi_select {
+        width: 100%;
+    }
+    .users-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0 10px;
+    }
     .users-list li {
         background: #efefef;
         margin-bottom: 10px;
         padding: 5px 10px;
+        flex: 0 0 10.3333%;
+        max-width: 10.3333%;
     }
-
     .users-list li a.parent-remove {
         float: right;
         margin: 8px 0 0 0;
         color: #ff0000;
     }
-
     .rurera-timeline.timeline-container {
         display: flex;
         align-items: center;
