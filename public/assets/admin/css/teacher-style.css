@@ -153,32 +153,32 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .input-field .input-label {
     margin: 0;
 }
-#topic_parts_search_form .input-field {
+.rurera-search-filters .input-field {
     display: flex;
     align-items: center;
     border: 1px dashed #cad5e2;
     border-radius: 5px;
     padding: 0 0 0 10px;
 }
-#topic_parts_search_form .input-field select.form-control {
+.rurera-search-filters .input-field select.form-control {
     border: 0;
 }
-#topic_parts_search_form .input-field .select2-selection.select2-selection--single {
+.rurera-search-filters .input-field .select2-selection.select2-selection--single {
     border: 0;
 }
-#topic_parts_search_form .input-field label {
+.rurera-search-filters .input-field label {
     margin: 0;
 }
-.card-body #topic_parts_search_form [class*="col-"] {
+.card-body .rurera-search-filters [class*="col-"] {
     flex: 0 0 auto;
     max-width: none;
     width: auto;
 }
-.card-body #topic_parts_search_form .input-group .form-control {
+.card-body .rurera-search-filters .input-group .form-control {
     width: auto;
     border: 0;
 }
-.admin_teacher_role #topic_parts_search_form .select2-container {
+.admin_teacher_role .rurera-search-filters .select2-container {
     min-width: auto;
 }
 /* Admin_teacher new Style End */
