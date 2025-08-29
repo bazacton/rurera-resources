@@ -235,7 +235,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
             overflow-y: auto;
         }
         .rurera-search-filters .dropdown-toggle::after {
-            margin-left: 10px;
+            display: none;
         }
         .rurera-search-filters .selected-labels {
             display: inline-flex;
@@ -245,6 +245,13 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
         }
         .rurera-search-filters .badge {
             font-size: 0.8rem;
+        }
+        .rurera-search-filters .dropdown button {
+            border: 1px dashed #cad5e2;
+            border-radius: 10px;
+            padding: 0 10px;
+            height: 32px;
+            outline: none;
         }
 /* Admin_teacher new Style End */
 
