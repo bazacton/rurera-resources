@@ -157,7 +157,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     display: flex;
     align-items: center;
     border: 1px dashed #cad5e2;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0 0 0 10px;
 }
 .rurera-search-filters .input-field select.form-control {
@@ -6313,6 +6313,9 @@ button.print-download-btn {
     padding-bottom: 0;
     font-size: 14px;
     appearance: none;
+}
+.card-body form .rurera-search-filters .select2-container--default .select2-selection--single {
+    background-color: inherit;
 }
 .card-body form .input-group input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
