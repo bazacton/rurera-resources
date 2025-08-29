@@ -384,6 +384,16 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin-top: 0;
     margin-left: 10px;
 }
+.rurera-search-filters .year-select .dropdown-link {
+    display: block;
+    line-height: normal;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #16181b;
+}
+.rurera-search-filters .year-select .dropdown-link:hover {
+    background-color: #f8f9fa;
+}
 /* Admin_teacher new Style End */
 
 /* Rurera-Confirm-Modal Style Start */
