@@ -157,7 +157,7 @@
                                                 <span class="btn-text">Year Subject</span>
                                                 <span class="selected-labels" id="selectedLabels"></span>
                                             </button>
-                                            <div lass="dropdown-menu" aria-labelledby="multiSelectDropdown2">
+                                            <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
                                                 <ul>
                                                     <li><a class="dropdown-link" href="#">Year 1</a></li>
                                                     <li><a class="dropdown-link" href="#">Year 2</a></li>
