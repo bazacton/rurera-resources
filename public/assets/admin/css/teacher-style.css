@@ -6267,6 +6267,7 @@ button.print-download-btn {
     border-color: #e4e6fc;
 }
 .admin_teacher_role select.form-control:not([size]):not([multiple]) {
+    background-color: inherit;
     padding-top: 0;
     padding-bottom: 0;
 }
