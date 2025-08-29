@@ -249,7 +249,9 @@
                         {{ csrf_field() }}
 
                     <div class="row">
+                    <div class="col-12">
                         <h3>Create Assignment</h3>
+                    </div>
                     <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="years-group populated-data">
                         <div class="form-group">
@@ -334,7 +336,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-20 mb-20">
+                        <div class="col-12">
                             <button type="submit"
                                     class="js-submit-quiz-form btn btn-sm btn-primary">Submit
                             </button>
