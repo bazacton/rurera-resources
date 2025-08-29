@@ -120,10 +120,26 @@
                                                         <input type="text" placeholder="Level">
                                                     </div>
                                                 </div>
-                                                <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Beginner"> 
+                                                    Beginner
+                                                    <span class="counts">20</span>
+                                                </label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Intermediate"> 
+                                                    Intermediate
+                                                    <span class="counts">18</span>
+                                                </label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Upper Intermediate"> 
+                                                    Upper Intermediate
+                                                    <span class="counts">22</span>
+                                                </label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Advanced"> 
+                                                    Advanced
+                                                    <span class="counts">10</span>
+                                                </label>
                                                 <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
                                             </div>
                                         </div>
