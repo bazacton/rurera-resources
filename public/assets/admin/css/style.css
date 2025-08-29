@@ -1326,6 +1326,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .select-holder:has(.classes_filter):after {right: 15px; z-index: 2;}
 .create-class-modal .select-holder:has(.select-box):after {display: none;}
 .classes_filter.form-control:not([size]):not([multiple]) {height: 32px; line-height: normal; border-radius: 5px; font-size: 14px !important; padding: 5px 40px 5px 10px; border: 1px dashed #ddd; appearance: none; color: #1e1e1e;}
+.input-field:has(img) .classes_filter.form-control:not([size]):not([multiple]) {padding-left: 38px;}
 .export-btn {color: var(--blue); display: inline-flex; align-items: center; gap: 5px; margin-left: 5px; margin-right: 10px;}
 .teacher-search-filter a {text-decoration: none; outline: none;}
 .export-btn img {height: 12px; width: 12px; object-fit: contain; filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);}
