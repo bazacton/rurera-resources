@@ -259,6 +259,12 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .rurera-search-filters .dropdown-menu {
     left: 0 !important;
     right: auto !important;
+    border: 1px solid #cad5e2;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+.rurera-search-filters .dropdown-menu .dropdown-item {
+    padding: 0 15px;
 }
 /* Admin_teacher new Style End */
 
