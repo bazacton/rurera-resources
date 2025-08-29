@@ -149,38 +149,38 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <div class="select-holder">
+                                        <div class="select-holder year-select">
                                             
-                                            <div class="dropdown">
-                                            <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
-                                                <span class="btn-text">Year Subject</span>
-                                                <span class="selected-labels" id="selectedLabels"></span>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
-                                                <ul>
-                                                    <li><a class="dropdown-link" href="#">Year 1</a></li>
-                                                    <li><a class="dropdown-link" href="#">Year 2</a></li>
-                                                    <li><a class="dropdown-link" href="#">Year 3</a></li>
-                                                    <li><a class="dropdown-link" href="#">Year 4</a></li>
-                                                    <li class="dropdown-submenu">
-                                                        <a class="dropdown-link dropdown-toggle" href="#">Year 5</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-                                                                <div class="select-list">
-                                                                    <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
-                                                                    <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
-                                                                    <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
-                                                                    <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <button class="btn btn-sm btn-danger ml-3" id="clearSelection">Clear Filter</button>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                            <div class="dropdown year-dropdown">
+                                                <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
+                                                    <span class="btn-text">Year Subject</span>
+                                                    <span class="selected-labels" id="selectedLabels"></span>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
+                                                    <ul>
+                                                        <li><a class="dropdown-link" href="#">Year 1</a></li>
+                                                        <li><a class="dropdown-link" href="#">Year 2</a></li>
+                                                        <li><a class="dropdown-link" href="#">Year 3</a></li>
+                                                        <li><a class="dropdown-link" href="#">Year 4</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-link dropdown-toggle" href="#">Year 5</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <div class="select-list">
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Beginner"> Beginner</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Intermediate"> Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Upper Intermediate"> Upper Intermediate</label>
+                                                                        <label class="dropdown-item"><input type="checkbox" value="Advanced"> Advanced</label>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <button class="btn btn-sm btn-danger ml-3" id="clearSelection">Clear Filter</button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                        </div>
 
                                         </div>
                                     </div>
@@ -503,5 +503,22 @@
                 selectedLabelsContainer.html('');
             });
         });
+    </script>
+
+    <script>
+    $('.year-select .dropdown-menu a.dropdown-toggle').on('click', function(e) {
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.year-select .dropdown-menu').first().find('.show').removeClass('show');
+        }
+        var $subMenu = $(this).next('.year-select .dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parents('.year-dropdown.dropdown.show').on('hidden.bs.dropdown', function(e) {
+            $('.dropdown-submenu .show').removeClass('show');
+        });
+
+
+        return false;
+    });
     </script>
 @endpush
