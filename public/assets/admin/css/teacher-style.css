@@ -230,10 +230,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     color: var(--primary);
     font-weight: 600;
 }
-.rurera-search-filters .dropdown-menu {
-            max-height: 250px;
-            overflow-y: auto;
-        }
         .rurera-search-filters .dropdown-toggle::after {
             display: none;
         }
@@ -267,6 +263,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border: 1px solid #cad5e2;
     border-radius: 10px;
     padding: 0 0 15px;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 230px;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item {
     padding: 5px 15px;
