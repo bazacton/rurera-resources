@@ -155,14 +155,14 @@
                                                 <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
                                                     <span class="btn-text">Year Subject</span>
-                                                    <span class="selected-labels" id="selectedLabels"></span>
+                                                    <span class="selected-labels" id="yearSelectedLabels"></span>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
                                                     <ul>
-                                                        <li><a class="dropdown-link" href="#">Year 1</a></li>
-                                                        <li><a class="dropdown-link" href="#">Year 2</a></li>
-                                                        <li><a class="dropdown-link" href="#">Year 3</a></li>
-                                                        <li><a class="dropdown-link" href="#">Year 4</a></li>
+                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 1</a></li>
+                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 2</a></li>
+                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 3</a></li>
+                                                        <li class="dropdown-submenu"><a class="dropdown-link" href="#">Year 4</a></li>
                                                         <li class="dropdown-submenu">
                                                             <a class="dropdown-link dropdown-toggle" href="#">Year 5</a>
                                                             <ul class="dropdown-menu">
@@ -485,7 +485,7 @@
     </script>
     <script>
         $(document).ready(function () {
-            const selectedLabelsContainer = $('#selectedLabels');
+            const selectedLabelsContainer = $('#selectedLabels, #yearSelectedLabels');
             const checkboxes = $('.dropdown-menu input[type="checkbox"]');
 
             checkboxes.change(function () {
