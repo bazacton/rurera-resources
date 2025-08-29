@@ -2568,7 +2568,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .general-knowledge-modal .text-holder > ul li .form-group .select2-selection__arrow {top: 50% !important; height: auto; transform: translateY(-50%); right: 0;}
 .general-knowledge-modal .text-holder > ul li .select2-container--default .select2-selection--single .select2-selection__arrow b {border: 2px solid #495057; height: 6px; width: 6px; border-top: 0; border-right: 0; transform: rotate(-45deg); margin-top: -4px;}
 .general-knowledge-modal .text-holder > ul li .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {border: 2px solid #495057; border-bottom: 0; border-right: 0; transform: rotate(45deg); margin-top: 0;}
-.admin_teacher_role .select2-container {z-index: 99999 !important; min-width: 150px;}
+.admin_teacher_role .select2-container {min-width: 150px;}
 .admin_teacher_role.sidebar-show .select2-container {z-index: 0 !important;}
 .admin_teacher_role .select2-container .select2-dropdown {border-color: #ddd;}
 .admin_teacher_role .select2-container .select2-dropdown input.select2-search__field {border-color: #ddd; height: 25px; min-height: auto;}
