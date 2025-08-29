@@ -6340,20 +6340,6 @@ button.print-download-btn {
     border-left-color: #ccc;
     pointer-events: none;
 }
-.card-body form .select-holder:before,
-.select-holder:has(.classes_filter):before {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    background-color: #fff;
-    content: "";
-    height: 18px;
-    width: 18px;
-    transform: translateY(-50%);
-    border-radius: 3px;
-    pointer-events: none;
-    z-index: 1;
-}
 .select-holder:has(.classes_filter):before {
     right: 10px;
 }
