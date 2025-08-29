@@ -33,19 +33,19 @@
                             <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="input-label">{{ trans('admin/main.search') }}</label>
+                                        
                                         <div class="input-field">
-                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                            <label class="input-label">{{ trans('admin/main.search') }}</label>
                                             <input type="text" placeholder="Search Quizzes" class="form-control" name="title" value="{{ request()->get('title') }}">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="input-label">{{ trans('admin/main.start_date') }}</label>
+                                        
                                         <div class="input-group">
                                             <div class="input-field">
-                                                <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
+                                                <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                                                 <input type="date" id="fsdate" class="text-left form-control" name="from"
                                                 value="{{ request()->get('from') }}" placeholder="Start Date">
                                             </div>
@@ -54,10 +54,10 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="input-label">{{ trans('admin/main.end_date') }}</label>
+                                        
                                         <div class="input-group">
                                             <div class="input-field">
-                                                <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
+                                                <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                                 <input type="date" id="lsdate" class="text-left form-control" name="to"
                                                 value="{{ request()->get('to') }}" placeholder="End Date">
                                             </div>
@@ -66,10 +66,10 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="input-label">{{ trans('admin/main.filters') }}</label>
+                                        
                                         <div class="select-holder">
                                             <div class="input-field">
-                                                <img src="/assets/default/svgs/filters.svg" alt="filter">
+                                                <label class="input-label">{{ trans('admin/main.filters') }}</label>
                                                 <select name="sort" data-plugin-selectTwo class="form-control populate">
                                                     <option value="">{{ trans('admin/main.filter_type') }}</option>
                                                     <option value="have_certificate" @if(request()->get('sort') == 'have_certificate')
@@ -107,9 +107,9 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="input-label">{{ trans('admin/main.class') }}</label>
+                                        
                                         <div class="input-field">
-                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                           <label class="input-label">{{ trans('admin/main.class') }}</label>
                                             <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
                                                 @if(!empty($webinars) and $webinars->count() > 0)
                                                 @foreach($webinars as $webinar)
@@ -122,10 +122,10 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="input-label">{{ trans('admin/main.status') }}</label>
+                                        
                                         <div class="select-holder">
                                             <div class="input-field">
-                                                <img src="/assets/default/svgs/status.svg" alt="status">
+                                                <label class="input-label">{{ trans('admin/main.status') }}</label>
                                                 <select name="statue" data-plugin-selectTwo class="form-control populate">
                                                     <option value="">{{ trans('admin/main.all_status') }}</option>
                                                     <option value="active" @if(request()->get('status') == 'active') selected @endif>{{
