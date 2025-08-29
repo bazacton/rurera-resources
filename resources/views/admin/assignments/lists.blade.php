@@ -167,7 +167,7 @@
                                                                         <div class="dropdown-search">
                                                                             <div class="input-holder">
                                                                                 <img src="/assets/default/svgs/search.svg" alt="search">
-                                                                                <input type="text" placeholder="Level">
+                                                                                <input type="text" placeholder="Subject">
                                                                             </div>
                                                                         </div>
                                                                         <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
@@ -206,7 +206,7 @@
                                                                         <div class="dropdown-search">
                                                                             <div class="input-holder">
                                                                                 <img src="/assets/default/svgs/search.svg" alt="search">
-                                                                                <input type="text" placeholder="Level">
+                                                                                <input type="text" placeholder="Subject">
                                                                             </div>
                                                                         </div>
                                                                         <label class="dropdown-item"><input type="checkbox" value="English"> English</label>
