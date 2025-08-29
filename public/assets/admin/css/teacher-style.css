@@ -265,6 +265,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .rurera-search-filters .dropdown-menu .dropdown-item {
     padding: 0 15px;
+    font-size: 14px;
+}
+.rurera-search-filters .dropdown-menu .dropdown-item input[type="checkbox"] {
+    vertical-align: middle;
 }
 /* Admin_teacher new Style End */
 
