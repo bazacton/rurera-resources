@@ -169,6 +169,15 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .rurera-search-filters .input-field label {
     margin: 0;
+    position: relative;
+}
+.rurera-search-filters .input-field label:after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #cad5e2;
+    position: absolute;
+    right: -7px;
 }
 .card-body .rurera-search-filters [class*="col-"] {
     flex: 0 0 auto;
