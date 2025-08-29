@@ -149,6 +149,50 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
+                                        <div class="select-holder">
+                                            
+                                            <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
+                                                <span class="btn-text">Level</span>
+                                                <span class="selected-labels" id="selectedLabels"></span>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="multiSelectDropdown2">
+                                                <div class="dropdown-search">
+                                                    <div class="input-holder">
+                                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                                        <input type="text" placeholder="Level">
+                                                    </div>
+                                                </div>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Beginner"> 
+                                                    Beginner
+                                                    <span class="counts">20</span>
+                                                </label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Intermediate"> 
+                                                    Intermediate
+                                                    <span class="counts">18</span>
+                                                </label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Upper Intermediate"> 
+                                                    Upper Intermediate
+                                                    <span class="counts">22</span>
+                                                </label>
+                                                <label class="dropdown-item">
+                                                    <input type="checkbox" value="Advanced"> 
+                                                    Advanced
+                                                    <span class="counts">10</span>
+                                                </label>
+                                                <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
 
                                         <div class="select-holder">
                                             <div class="input-field">
