@@ -278,6 +278,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     max-height: 250px;
     overflow-y: auto;
     width: 230px;
+    box-shadow: none;
+    margin-top: 10px;
 }
 .rurera-search-filters .dropdown-menu .dropdown-item {
     padding: 8px 15px;
