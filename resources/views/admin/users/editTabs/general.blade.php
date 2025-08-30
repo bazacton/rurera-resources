@@ -214,6 +214,42 @@
                         </div>
                     </div>
                 </div>
+                <div class="user-social-contect">
+                    <div class="user-title">
+                        <h3>Linked Accounts</h3>
+                        <span>Manage your linked accounts and their permissions.</span>
+                    </div>
+                    <div class="social-list">
+                        <div class="list-item">
+                            <div class="social-logo">
+                                <img src="/assets/default/svgs/google-icon.svg" alt="google-icon">
+                                <span>Sign In with Google</span>
+                            </div>
+                            <button type="button" class="connect-btn">Connect</button>
+                        </div>
+                        <div class="list-item">
+                            <div class="social-logo">
+                                <img src="/assets/default/svgs/github-logo.svg" alt="github-logo">
+                                <span>Sign In with Github</span>
+                            </div>
+                            <button type="button" class="connect-btn">Connect</button>
+                        </div>
+                        <div class="list-item">
+                            <div class="social-logo">
+                                <img src="/assets/default/svgs/instagram-logo.svg" alt="instagram-logo">
+                                <span>Sign In with Instagram</span>
+                            </div>
+                            <button type="button" class="connect-btn">Connect</button>
+                        </div>
+                        <div class="list-item">
+                            <div class="social-logo">
+                                <img src="/assets/default/svgs/discord-logo.svg" alt="discord-logo">
+                                <span>Sign In with Discord</span>
+                            </div>
+                            <button type="button" class="connect-btn">Connect</button>
+                        </div>
+                    </div>
+                </div>
                 
 
                 <div class="form-group rurera-hide">
