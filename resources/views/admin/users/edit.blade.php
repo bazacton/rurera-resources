@@ -104,7 +104,7 @@
                                         <h4>Avatar</h4>
                                         <div class="avatar-media-box">
                                             <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
-                                            <button class="edit-btn"><input type="file" name="avatar"><img src="/assets/default/img/pencil-f.svg" alt="pencil-f"></button>
+                                            <button class="edit-btn"><input type="file" name="avatar"><img src="/assets/default/svgs/pencil-f.svg" alt="pencil-f"></button>
                                         </div>
                                     </div>
                                     @include('admin.users.editTabs.general')
