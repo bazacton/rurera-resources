@@ -214,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="user-social-contect">
+                <div class="user-social-contact">
                     <div class="user-title">
                         <h3>Linked Accounts</h3>
                         <span>Manage your linked accounts and their permissions.</span>
