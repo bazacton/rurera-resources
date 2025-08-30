@@ -265,7 +265,7 @@
                 @if(auth()->user()->isAdminRole())
 
 
-                    <div class="form-group rurera-hide">
+                    <div class="form-group">
                         <label>Year</label>
                         <div class="select-holder">
                             <select data-default_id="{{isset( $user->id)? $user->year_id : 0}}"
@@ -297,7 +297,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>Student Class</label>
                         <div class="select-holder">
                             <select data-default_id="{{isset( $user->id)? $user->class_id : 0}}"
@@ -314,7 +314,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group assignment_topic_type_fields timestables_fields ">
+                    <div class="form-group assignment_topic_type_fields timestables_fields rurera-hide">
                         <label>Timestables</label>
                         <div class="questions-select-number">
                             <ul class="d-flex justify-content-center flex-wrap mb-30">
@@ -352,7 +352,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>Class Section</label>
                         <div class="select-holder">
                             <select data-default_id="{{isset( $user->id)? $user->section_id : 0}}"
@@ -373,7 +373,7 @@
                         <input type="hidden" id="roleId" name="role_id" value="1">
                     @else
 
-                        <div class="form-group">
+                        <div class="form-group rurera-hide">
                             <label>{{ trans('/admin/main.role_name') }}</label>
                             <div class="select-holder">
                                 <select class="form-control @error('role_id') is-invalid @enderror" id="roleId" name="role_id">
@@ -402,7 +402,7 @@
                             $userCurrency = currency($user);
                         @endphp
 
-                        <div class="form-group">
+                        <div class="form-group rurera-hide">
                             <label class="input-label">{{ trans('update.currency') }}</label>
                             <div class="select-holder">
                                 <select name="currency" class="form-control select2" data-allow-clear="false">
@@ -423,7 +423,7 @@
                         </div>
                     @endif
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>{{ trans('admin/main.bio') }}</label>
                         <textarea name="bio" rows="3" class="form-control @error('bio') is-invalid @enderror">{{ $user->bio }}</textarea>
                         @error('bio')
@@ -433,7 +433,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>{{ trans('site.about') }}</label>
                         <textarea name="about" rows="6" class="form-control @error('about') is-invalid @enderror">{{ $user->about }}</textarea>
                         @error('about')
@@ -443,7 +443,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>{{ trans('update.certificate_additional') }}</label>
                         <input name="certificate_additional" value="{{ $user->certificate_additional }}"
                                class="form-control @error('certificate_additional') is-invalid @enderror"/>
@@ -454,7 +454,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>{{ trans('/admin/main.status') }}</label>
                         <div class="select-holder">
                             <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
@@ -477,7 +477,7 @@
                     </div>
                 @endif
 
-                <div class="form-group">
+                <div class="form-group rurera-hide">
                     <label class="input-label">{{ trans('auth.language') }}</label>
                     <div class="select-holder">
                         <select name="language" class="form-control">
@@ -513,7 +513,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>Organization / School Name</label>
                         <div class="select-holder">
                             <select name="school_id" class="form-control">
@@ -525,7 +525,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>Full Mailing Address</label>
                         <input type="text" name="full_mailing_address"
                                class="form-control  @error('full_mailing_address') is-invalid @enderror"
@@ -537,7 +537,7 @@
                         </div>
                         @enderror
                     </div>
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>Country</label>
                         <div class="select-holder">
                             <select name="country_id" class="form-control">
