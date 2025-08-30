@@ -551,8 +551,9 @@
                     </div>
                 @endif
 
-                <div class=" mt-4">
-                    <button class="btn btn-primary">{{ trans('admin/main.submit') }}</button>
+                <div class="mt-4 form-actions text-right">
+                    <button class="btn btn-primary">Cancel</button>
+                    <button class="btn btn-primary save-btn">{{ trans('admin/main.submit') }}</button>
                 </div>
             </form>
         </div>
