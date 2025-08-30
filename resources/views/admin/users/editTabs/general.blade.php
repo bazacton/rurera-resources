@@ -144,34 +144,79 @@
         <div class="col-12 col-md-6 populated-data">
             <form action="{{ getAdminPanelUrl() }}/users/{{ $user->id .'/update' }}" method="Post">
                 {{ csrf_field() }}
-
-                <div class="form-group">
-                    <label>First Name</label>
-                    <input type="text" name="first_name"
-                           class="form-control  @error('first_name') is-invalid @enderror"
-                           value="{{ !empty($user) ? $user->first_name : old('first_name') }}"
-                           placeholder="First Name"/>
-                    @error('first_name')
-                    <div class="invalid-feedback">
-                        {{ $message }}
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label>Display name</label>
+                            <div class="form-field">
+                                <img src="/assets/default/svgs/user.svg" alt="user">
+                                <input type="text" name="first_name"
+                                class="form-control  @error('first_name') is-invalid @enderror"
+                                value="{{ !empty($user) ? $user->first_name : old('first_name') }}"
+                                placeholder="Enter Nickname"/>
+                            </div>
+                            
+                            @error('first_name')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
                     </div>
-                    @enderror
-                </div>
-
-                <div class="form-group">
-                    <label>Last Name</label>
-                    <input type="text" name="last_name"
-                           class="form-control  @error('last_name') is-invalid @enderror"
-                           value="{{ !empty($user) ? $user->last_name : old('last_name') }}"
-                           placeholder="Last Name"/>
-                    @error('last_name')
-                    <div class="invalid-feedback">
-                        {{ $message }}
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label>Full name</label>
+                            <div class="form-field">
+                                <img src="/assets/default/svgs/user.svg" alt="user">
+                                <input type="text" name="last_name"
+                                class="form-control  @error('last_name') is-invalid @enderror"
+                                value="{{ !empty($user) ? $user->last_name : old('last_name') }}"
+                                placeholder="Enter FullName"/>
+                            </div>
+                            
+                            @error('last_name')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
                     </div>
-                    @enderror
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="username"><!--{{ trans('admin/main.email') }}:--> Email</label>
+                            <div class="form-field">
+                                <img src="/assets/default/svgs/envelope2.svg" alt="envelope2">
+                                <input name="email" type="text" id="username" value="{{ $user->email }}"
+                                class="form-control @error('email') is-invalid @enderror" placeholder="Enter Email">
+                            </div>
+                            
+                            @error('email')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="username"><!--{{ trans('admin/main.mobile') }}:--> Phone Number</label>
+                            <div class="form-field">
+                                <img src="/assets/default/svgs/phone.svg" alt="phone">
+                                <input name="mobile" type="text" value="{{ $user->mobile }}"
+                                class="form-control @error('mobile') is-invalid @enderror" placeholder="Phone Number">
+                            </div>
+                            
+                            @error('mobile')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                    </div>
                 </div>
+                
 
-                <div class="form-group">
+                <div class="form-group rurera-hide">
                     <label>{{ trans('admin/main.password') }}</label>
                     <input type="password" name="password"
                            class="form-control @error('password') is-invalid @enderror"/>
@@ -181,7 +226,8 @@
                     </div>
                     @enderror
                 </div>
-                <div class="form-group">
+
+                <div class="form-group rurera-hide">
                     <label>Display Name</label>
                     <input type="text" name="display_name"
                            class="form-control  @error('display_name') is-invalid @enderror"
@@ -193,7 +239,8 @@
                     </div>
                     @enderror
                 </div>
-                <div class="form-group">
+
+                <div class="form-group rurera-hide">
                     <label class="input-label">{{ trans('update.timezone') }}</label>
                     <div class="select-holder">
                         <select name="timezone" class="form-control select2" data-allow-clear="false">
@@ -214,27 +261,7 @@
                     </div>
                     @enderror
                 </div>
-                <div class="form-group">
-                    <label for="username">{{ trans('admin/main.email') }}:</label>
-                    <input name="email" type="text" id="username" value="{{ $user->email }}"
-                           class="form-control @error('email') is-invalid @enderror" readonly>
-                    @error('email')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
 
-                <div class="form-group">
-                    <label for="username">{{ trans('admin/main.mobile') }}:</label>
-                    <input name="mobile" type="text" value="{{ $user->mobile }}"
-                           class="form-control @error('mobile') is-invalid @enderror">
-                    @error('mobile')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
                 @if(auth()->user()->isAdminRole())
 
 
