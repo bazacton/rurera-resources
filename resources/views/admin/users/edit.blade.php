@@ -7,7 +7,7 @@
 
 @section('content')
     <section class="section">
-        <div class="section-header rurera-hide">
+        <div class="section-header rurera-hide" style="display: none;">
             <div class="heading-holder">
                 <h1>{{ trans('/admin/main.edit') }} {{ trans('admin/main.user') }}</h1>
                 <div class="section-header-breadcrumb">
