@@ -33,7 +33,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="user-edit-holder">
-                                <!-- <ul class="nav nav-pills" id="myTab3" role="tablist">
+                                <ul class="nav nav-pills rurera-hide" id="myTab3" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link @if(empty($becomeInstructor)) active @endif" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">{{ trans('admin/main.main_general') }}</a>
                                     </li>
@@ -93,7 +93,7 @@
                                             <a class="nav-link" id="topics-tab" data-toggle="tab" href="#topics" role="tab" aria-controls="topics" aria-selected="true">{{ trans('update.forum_topics') }}</a>
                                         </li>
                                     @endif
-                                </ul> -->
+                                </ul>
                                 <div class="tab-content" id="myTabContent2">
                                     
                                     <div class="user-title">

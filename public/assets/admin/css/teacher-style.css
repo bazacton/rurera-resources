@@ -432,6 +432,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-size: 1rem;
     color: #1d293d;
     margin: 0 0 10px;
+    font-weight: 600;
 }
 .avatar-media-box {
     display: inline-block;
