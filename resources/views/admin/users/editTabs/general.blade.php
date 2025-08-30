@@ -265,7 +265,7 @@
                 @if(auth()->user()->isAdminRole())
 
 
-                    <div class="form-group">
+                    <div class="form-group rurera-hide">
                         <label>Year</label>
                         <div class="select-holder">
                             <select data-default_id="{{isset( $user->id)? $user->year_id : 0}}"
