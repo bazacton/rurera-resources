@@ -569,6 +569,37 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     font-weight: 600;
     height: 32px;
 }
+.user-edit-holder form {
+    margin: 0;
+}
+.user-edit-holder .form-actions.text-right:has(button) {
+    text-align: right !important;
+    width: 100%;
+}
+.form-actions .btn {
+    background-color: #e9eef5;
+    min-width: 112px;
+    box-shadow: none;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #0f172b;
+    border: 0;
+    padding: 0;
+    min-height: 37px;
+}
+.form-actions .save-btn {
+    background-color: var(--blue);
+    color: #fff;
+    margin-left: 8px;
+}
+.form-actions .btn:not(.btn-social):not(.btn-social-icon):hover {
+    background-color: #e9eef5 !important;
+    color: #0f172b;
+}
+.form-actions .save-btn.btn:not(.btn-social):not(.btn-social-icon):hover {
+    background-color: var(--blue) !important;
+    color: #fff;
+}
 /* User Setting Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
