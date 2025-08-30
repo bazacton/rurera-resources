@@ -402,6 +402,84 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 /* Admin_teacher new Style End */
 
+/* User Setting Page Style Start */
+.user-edit-holder {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 25px;
+}
+.user-title {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 0 25px;
+    margin: 0 0 25px;
+}
+.user-title h3 {
+    color: #1d293d;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 0 5px;
+}
+.user-title span {
+    color: #62748e;
+    display: block;
+    line-height: normal;
+    font-weight: 500;
+}
+.user-avatar {
+    
+}
+.user-avatar h4 {
+    font-size: 1rem;
+    color: #1d293d;
+    margin: 0 0 10px;
+}
+.avatar-media-box {
+    display: inline-block;
+    position: relative;
+    margin: -3px 0 0 -3px;
+}
+.avatar-media-box .avatar-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 3px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -webkit-box-sizing: border-box;
+}
+.user-avatar .edit-btn {
+    background-color: #e9eef5;
+    border: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+}
+.user-avatar .edit-btn img {
+    height: 14px;
+    width: 14px;
+    pointer-events: none;
+}
+.user-avatar .edit-btn input[type="file"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.avatar-media-box .avatar-img:hover {
+    box-shadow: 0 0 0 3px #155dfc, 0 0 0 3px #fff inset;
+}
+/* User Setting Page Style End */
+
 /* Rurera-Confirm-Modal Style Start */
 .inactivity-controls {
     display: flex;
