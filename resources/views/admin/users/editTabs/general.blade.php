@@ -141,7 +141,7 @@
 <div class="tab-pane mt-3 fade @if(empty($becomeInstructor)) active show @endif" id="general" role="tabpanel"
      aria-labelledby="general-tab">
     <div class="row">
-        <div class="col-12 col-md-6 populated-data">
+        <div class="col-12 col-md-12 populated-data">
             <form action="{{ getAdminPanelUrl() }}/users/{{ $user->id .'/update' }}" method="Post">
                 {{ csrf_field() }}
                 <div class="row">
