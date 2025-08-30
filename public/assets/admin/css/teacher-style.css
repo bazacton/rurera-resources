@@ -425,9 +425,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     line-height: normal;
     font-weight: 500;
 }
-.user-avatar {
-    
-}
 .user-avatar h4 {
     font-size: 1rem;
     color: #1d293d;
@@ -478,6 +475,99 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .avatar-media-box .avatar-img:hover {
     box-shadow: 0 0 0 3px #155dfc, 0 0 0 3px #fff inset;
+}
+.user-edit-holder .tab-pane {
+    padding: 0;
+}
+.user-edit-holder label {
+    color: #314158;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+.user-edit-holder .form-field img {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    filter: invert(72%) sepia(9%) saturate(834%) hue-rotate(176deg) brightness(88%) contrast(84%);
+}
+.user-edit-holder .form-field:has(img) input {
+    padding-left: 35px;
+}
+.user-edit-holder .form-field .form-control {
+    font-size: 14px;
+    font-weight: 400;
+    height: 39px;
+    border-color: #cad5e2;
+    border-radius: 10px !important;
+}
+body .user-edit-holder form .form-group .form-field .form-control::-webkit-input-placeholder {
+  color: #90a1b9;
+  opacity: 1;
+}
+body .user-edit-holder form .form-group .form-field .form-control::-moz-placeholder {
+  color: #90a1b9;
+  opacity: 1;
+}
+body .user-edit-holder form .form-group .form-field .form-control:-ms-input-placeholder {
+  color: #90a1b9;
+  opacity: 1;
+}
+body .user-edit-holder form .form-group .form-field .form-control:-moz-placeholder {
+  color: #90a1b9;
+  opacity: 1;
+}
+.card-body .user-edit-holder form [class*="col-"] {
+    padding: 0 10px;
+}
+.card-body .user-edit-holder .row {
+    margin: 0 -10px;
+}
+.card-body .user-edit-holder form .form-group {
+    margin-bottom: 20px;
+}
+.user-social-contact .user-title {
+    border: 0;
+    padding: 0;
+}
+.user-social-contact {
+    border-top: 1px solid #e2e8f0;
+    margin: 10px 0 0
+    ;padding-top: 30px;
+}
+.social-list .list-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 15px;
+}
+.social-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.social-logo img {
+    height: 48px;
+    width: 48px;
+}
+.social-logo span {
+    line-height: normal;
+    color: #314158;
+    font-weight: 600;
+    font-size: 15px;
+}
+.list-item .connect-btn {
+    background-color: #fff;
+    border-radius: 30px;
+    line-height: normal;
+    border: 1px solid #cad5e2;
+    padding: 5px 15px;
+    font-size: .8125rem;
+    font-weight: 600;
+    height: 32px;
 }
 /* User Setting Page Style End */
 
