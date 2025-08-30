@@ -102,9 +102,9 @@
                                     </div>
                                     <div class="user-avatar">
                                         <h4>Avatar</h4>
-                                        <div class="media-avatar">
-                                            <img src="" alt="">
-                                            <button><input type="file" name="avatar"></button>
+                                        <div class="avatar-media-box">
+                                            <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                            <button class="edit-btn"><input type="file" name="avatar"><img src="/assets/default/img/pencil-f.svg" alt="pencil-f"></button>
                                         </div>
                                     </div>
                                     @include('admin.users.editTabs.general')
