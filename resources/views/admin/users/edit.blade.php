@@ -32,7 +32,7 @@
                         <div class="card-body">
 
                             <ul class="nav nav-pills" id="myTab3" role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item dddd">
                                     <a class="nav-link @if(empty($becomeInstructor)) active @endif" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">{{ trans('admin/main.main_general') }}</a>
                                 </li>
                                 @if(auth()->user()->isAdminRole())
