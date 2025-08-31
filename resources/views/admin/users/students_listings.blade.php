@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="teacher-search-filter border-0 p-0">
+            <div class="teacher-search-filter border-0 p-0 ml-auto">
                 @if(!isset($class) || $class->google_id == 0)
                 @if(isset($is_add_button) && $is_add_button == true)
                     <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
