@@ -152,6 +152,15 @@
                                     <h3>Invoices</h3>
                                     <span>List of invoices. You can view and download them from here.</span>
                                 </div>
+                                <div class="rurera-search-filters">
+                                    <div class="search-filters-holder">
+                                        <div class="input-holder">
+                                            <img src="/assets/default/svgs/search.svg" alt="search">
+                                            <input type="text" placeholder="Level" fdprocessedid="mstitq">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
 
                             <div class="row mb-30">
