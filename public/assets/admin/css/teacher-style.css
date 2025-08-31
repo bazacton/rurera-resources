@@ -607,7 +607,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
 .rurera-billing {
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-    padding: 20px 25px;
+    padding: 20px;
 }
 .rurera-billing .section-heading h2 {
     font-size: 1.125rem;
@@ -880,6 +880,14 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
 .amount-fields-holder {
     padding: 0 12px;
     gap: 10px;
+}
+.billing-invoice .card {
+    margin: 0 -20px;
+    border-radius: 0;
+}
+.billing-invoice .card table.table {
+    border-radius: 0;
+    border: 0;
 }
 /* User Billing Page Style End */
 
