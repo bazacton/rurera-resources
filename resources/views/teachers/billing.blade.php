@@ -1040,8 +1040,10 @@
 <script>
     $(document).ready(function () {
         const selectedLabelsContainer = $('#amountSelectedLabels');
+        const defaultLabel = $('.default-label');
         const minInput = $('#minAmount');
         const maxInput = $('#maxAmount');
+        const clearBtn = $('#clearAmounts');
 
         function updateLabels() {
             let min = minInput.val();
@@ -1049,18 +1051,25 @@
             let text = '';
 
             if (min && max) {
-                text = `<span class="badge badge-primary">${min} - ${max}</span>`;
+                text = `| From $${min} - To $${max}`;
             } else if (min) {
-                text = `<span class="badge badge-primary">Min: ${min}</span>`;
+                text = `| From $${min}`;
             } else if (max) {
-                text = `<span class="badge badge-primary">Max: ${max}</span>`;
+                text = `| To $${max}`;
             }
 
-            selectedLabelsContainer.html(text);
+            selectedLabelsContainer.text(text);
         }
 
         minInput.on('input', updateLabels);
         maxInput.on('input', updateLabels);
+
+        // Clear button
+        clearBtn.on('click', function () {
+            minInput.val('');
+            maxInput.val('');
+            selectedLabelsContainer.text('');
+        });
     });
 </script>
 @endpush
