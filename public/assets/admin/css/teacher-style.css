@@ -788,6 +788,51 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     width: 18px;
     margin-right: 8px;
 }
+.filter-box-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter-box-holder .filter-left {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filter-box-holder button {
+    height: 32px;
+    color: #0f172b;
+    font-size: .75rem;
+    font-weight: 700;
+    background-color: #e9eef5;
+    border: 0;
+    border-radius: 10px;
+    min-width: 75px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.rurera-search-filters .filter-box-holder button img {
+    top: 0;
+    filter: invert(0%) sepia(3%) saturate(7487%) hue-rotate(178deg) brightness(99%) contrast(104%);
+}
+.rurera-search-filters .filter-box-holder .export-btn {
+    background-color: #e9eef5;
+    border: 0;
+    box-shadow: none;
+}
+.filter-box-holder .search-field {
+    border-radius: 10px;
+}
+.rurera-search-filters .filter-right .dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+}
+.rurera-search-filters .filter-box-holder .dropdown.show button {
+    box-shadow: none;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
