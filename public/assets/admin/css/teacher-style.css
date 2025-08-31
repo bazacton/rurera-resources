@@ -823,6 +823,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     background-color: #e9eef5;
     border: 0;
     box-shadow: none;
+    margin: 0;
 }
 .filter-box-holder .search-field {
     border-radius: 10px;
