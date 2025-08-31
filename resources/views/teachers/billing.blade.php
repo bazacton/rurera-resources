@@ -153,11 +153,11 @@
                                     <span>List of invoices. You can view and download them from here.</span>
                                 </div>
                                 <div class="rurera-search-filters">
-                                    <div class="search-filters-holder">
-                                        <div class="input-holder">
+                                    <div class="search-field">
+                                        <span class="icon-box">
                                             <img src="/assets/default/svgs/search.svg" alt="search">
-                                            <input type="text" placeholder="Level" fdprocessedid="mstitq">
-                                        </div>
+                                        </span>
+                                        <input type="text" class="search-students" placeholder="Search Students" fdprocessedid="u62ae">
                                     </div>
                                     
                                 </div>
