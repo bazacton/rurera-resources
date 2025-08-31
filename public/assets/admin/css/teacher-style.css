@@ -377,27 +377,27 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .rurera-search-filters .year-select > .year-dropdown > .dropdown-menu {
     overflow: initial;
 }
-.rurera-search-filters .year-select .dropdown-submenu .dropdown-menu {
+.rurera-search-filters .dropdown-submenu .dropdown-menu {
     left: 100% !important;
     right: auto !important;
     top: 0;
     margin-top: 0;
     margin-left: 10px;
 }
-.rurera-search-filters .year-select .dropdown-link {
+.rurera-search-filters .dropdown-link {
     display: block;
     line-height: normal;
     padding: 8px 12px;
     text-decoration: none;
     color: #16181b;
 }
-.rurera-search-filters .year-select .dropdown-link:hover {
+.rurera-search-filters .dropdown-link:hover {
     background-color: #f8f9fa;
 }
-.rurera-search-filters .year-select .dropdown-submenu:first-child .dropdown-link {
+.rurera-search-filters .dropdown-submenu:first-child .dropdown-link {
     border-radius: 10px 10px 0 0;
 }
-.rurera-search-filters .year-select .dropdown-submenu:last-child .dropdown-link {
+.rurera-search-filters .dropdown-submenu:last-child .dropdown-link {
     border-radius: 0 0 10px 10px;
 }
 /* Admin_teacher new Style End */
