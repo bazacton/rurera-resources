@@ -184,7 +184,6 @@
                                         </div>
                                         <div class="filter-toggle-holder collapse" id="filter-toggle-box" data-parent="#accordion">
                                             <div class="filter-toggle-actions">
-
                                                 <div class="dropdown status">
                                                     <button type="button" class="dropdown-toggle" id="Status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status
@@ -194,7 +193,7 @@
                                                         <div class="dropdown-search">
                                                             <div class="input-holder">
                                                                 <img src="/assets/default/svgs/search.svg" alt="search">
-                                                                <input type="text" placeholder="Level">
+                                                                <input type="text" placeholder="Status">
                                                             </div>
                                                         </div>
                                                         <label class="dropdown-item">
