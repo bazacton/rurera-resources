@@ -759,8 +759,8 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     outline: none;
 }
 .card-expiry .setting-btn img {
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     filter: invert(22%) sepia(17%) saturate(1121%) hue-rotate(176deg) brightness(94%) contrast(89%);
 }
 .billing-payment-method {
