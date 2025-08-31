@@ -162,6 +162,9 @@
                                                     </span>
                                                     <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
                                                 </div>
+                                                <div class="filter-action-holder">
+                                                    <button type="button" class="filter-btn"><img src="/assets/default/svgs/filter-alt.svg" alt="filter-alt">Filter</button>
+                                                </div>
                                             </div>
                                             <div class="filter-right"></div>
                                         </div>
