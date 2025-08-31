@@ -72,7 +72,7 @@
                                 <h2>Billing & Payments</h2>
                                 <p>Manage Your Billing and Payments from here. You can also manage your payment methods from here.</p>
                             </div>
-                            <div class="premium-plan">
+                            <div class="premium-plan mb-20">
                                 <div class="premium-text">
                                     <strong>Premium Plan</strong>
                                     <div class="premium-days">
@@ -88,8 +88,8 @@
                                 <button type="button" class="ppgrade-btn">Upgrade</button>
                             </div>
 
-                            <div class="billing-payment-method">
-                                <div class="element-heading">
+                            <div class="billing-payment-method mb-20">
+                                <div class="element-heading mb-20">
                                     <div class="heading-holder">
                                         <h3>Payment Methods</h3>
                                         <span>Manage your payment methods from here.</span>
