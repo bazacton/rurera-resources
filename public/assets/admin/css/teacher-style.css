@@ -779,7 +779,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     align-items: center;
     justify-content: center;
 }
-.billing-payment-method button img {
+.billing-payment-method .method-btn img {
     height: 18px;
     width: 18px;
     margin-right: 8px;
