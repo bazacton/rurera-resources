@@ -231,14 +231,14 @@
                                                                 <span>Min</span>
                                                                 <label for="minAmount">
                                                                     <em>$</em>
-                                                                    <input type="number" id="minAmount" placeholder="Min">
+                                                                    <input type="number" id="minAmount" placeholder="2.56">
                                                                 </label>
                                                             </div>
                                                             <div class="max-val">
                                                                 <span>Max</span>
                                                                 <label for="maxAmount">
                                                                     <em>$</em>
-                                                                    <input type="number" id="maxAmount" placeholder="Max">
+                                                                    <input type="number" id="maxAmount" placeholder="49.66">
                                                                 </label>
                                                             </div>
                                                         </div>
