@@ -188,6 +188,7 @@
                                                 <div class="dropdown status">
                                                     <button type="button" class="dropdown-toggle" id="Status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status
+                                                        <span class="selected-labels" id="statusSelectedLabels"></span>
                                                     </button>
                                                     <div class="dropdown-menu" aria-labelledby="Status">
                                                         <div class="dropdown-search">
@@ -977,7 +978,7 @@
 </script>
 <script>
     $(document).ready(function () {
-        const selectedLabelsContainer = $('#yearSelectedLabels');
+        const selectedLabelsContainer = $('#statusSelectedLabels');
         const yearCheckboxes = $('.status .dropdown-menu input[type="checkbox"]');
 
         yearCheckboxes.change(function () {
