@@ -42,15 +42,18 @@
             <div class="row">
                 <div class="col-12">
 
-                    <div class="section-header">
-                        <h1>Billing</h1>
-                        <div class="section-header-breadcrumb">
-                            <div class="breadcrumb-item active">
-                                <a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')}}</a>
+                    <div class="section-header rurera-hide">
+                        <div class="heading-holder">
+                            <h1>Billing</h1>
+                            <div class="section-header-breadcrumb">
+                                <div class="breadcrumb-item active">
+                                    <a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')}}</a>
+                                </div>
+                                <div class="breadcrumb-item">Billing</div>
                             </div>
-                            <div class="breadcrumb-item">Billing</div>
                         </div>
                     </div>
+
                     <div class="content-holder card p-25">
                         <ul data-target_class="admin-rurera-tabs-billing" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-20" id="assignment_tabs" role="tablist">
                             <li class="nav-item skelton-height-lg">
