@@ -831,7 +831,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     left: auto !important;
     right: 0 !important;
 }
-.rurera-search-filters .filter-box-holder .dropdown.show button {
+.rurera-search-filters .filter-box-holder .dropdown.show .export-btn {
     box-shadow: none;
 }
 .filter-toggle-actions button {
@@ -851,8 +851,8 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     margin-top: 15px;
 }
 .filter-toggle-actions button img {
-    height: 16px;
-    width: 16px;
+    top: 0;
+    margin: 0;
 }
 /* User Billing Page Style End */
 
