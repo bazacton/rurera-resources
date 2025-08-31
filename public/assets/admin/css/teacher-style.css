@@ -744,6 +744,10 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     height: 15px;
     width: 15px;
 }
+.billing-payment-method {
+    border-bottom: 2px solid #e2e8f0;
+    padding: 0 0 25px;
+}
 .rurera-billing .heading-holder h3 {
     font-size: 1rem;
     color: #1d293d;
