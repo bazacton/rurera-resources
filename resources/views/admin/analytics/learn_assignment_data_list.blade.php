@@ -69,12 +69,8 @@
         <tr class="topic-heading-top">
             <th class="font-14">Student</th>
             <th class="font-14">Attempts</th>
-            @if($quizQuestionsListIds->count() > 0)
-                @foreach($quizQuestionsListIds as $quizQuestionsListIdsObj)
-                    <th class="font-14">{{$quizQuestionsListIdsObj->question_id}}</th>
-                @endforeach
-            @endif
 
+            <th class="font-14">Questions</th>
             <th class="font-14">Activity Time</th>
             <th class="font-14">Progress</th>
         </tr>
@@ -86,45 +82,41 @@
                 @php $AssignmentFetchAttempt = isset($assignments_data_array[$studentObj->id])? $assignments_data_array[$studentObj->id] : (object) array();
                 $assignmentTopicObj = isset($assignment_topics_array[$studentObj->id])? $assignment_topics_array[$studentObj->id] : (object) array();
 
-                $quizz_result_questions_list = isset($assignment_questions_list[$studentObj->id])? $assignment_questions_list[$studentObj->id] : (object) array();
+                //$quizz_result_questions_list = isset($assignment_questions_list[$studentObj->id])? $assignment_questions_list[$studentObj->id] : (object) array();
 
 
-                //$quizz_result_questions_list = isset($AssignmentFetchAttempt->id)? $AssignmentFetchAttempt->quizz_result_questions_list : (object) array();
+                $quizz_result_questions_list = isset($AssignmentFetchAttempt->id)? $AssignmentFetchAttempt->quizz_result_questions_list : (object) array();
                 @endphp
                 <tr>
                     <td>{{$studentObj->get_full_name()}}</td>
 
                     @php $questions_time_consumed_total = 0; @endphp
                     <td>{{isset($assignmentTopicObj->id)? $assignmentTopicObj->AssignmentResults->count() : 0}}</td>
+                    <td class="">
 
-                    @if(isset($assignmentTopicObj->id))
-                        @if(!empty($quizz_result_questions_list))
-                            @foreach($quizz_result_questions_list as $questionResultObj)
-                                @php
-                                    $question_text = isset($questionResultObj->question_text)? $questionResultObj->question_text : 'testing';
-                                    if($question_text == 'no_found'){
-                                        $question_status_response = '<span class="status-not_attempted"><i class="fas fa-dot-circle"></i></span>';
-                                        $time_consumed = 0;
-                                    }else{
-                                        $status_label = 'Pending';
-                                        $status_label = ($questionResultObj->status == 'not_attempted')? 'Not Attempted' : $status_label;
-                                        $status_label = ($questionResultObj->status == 'correct')? 'Correct' : $status_label;
-                                        $status_label = ($questionResultObj->status == 'incorrect')? 'Incorrect' : $status_label;
+                        @if(isset($assignmentTopicObj->id))
+                            @if(!empty($quizz_result_questions_list))
+                                @foreach($quizz_result_questions_list as $questionResultObj)
+                                    @php $status_label = '';
+                                             $status_label = ($questionResultObj->status == 'not_attempted')? 'Not Attempted' : $status_label;
+                                             $status_label = ($questionResultObj->status == 'correct')? 'Correct' : $status_label;
+                                             $status_label = ($questionResultObj->status == 'incorrect')? 'Incorrect' : $status_label;
 
-                                        $time_consumed = $questionResultObj->time_consumed;
-                                        $class = $questionResultObj->status;
+                                             $time_consumed = $questionResultObj->time_consumed;
+                                              $class = $questionResultObj->status;
 
-                                        $question_status_response = '<span class="status-'.$class.'"><i class="fas fa-dot-circle"></i></span>';
-                                        if($questionResultObj->status == 'in_review'){
-                                           $question_status_response = '<a href="javascript:;" class="review-question" data-question_id="'.$questionResultObj->id.'"><span class="status-in_review"><i class="fas fa-dot-circle"></i></span></a>';
-                                        }
-                                    }
-                                    $questions_time_consumed_total += $time_consumed;
-                                @endphp
-                                <td>{!! $question_status_response !!}</td>
-                            @endforeach
+                                                $question_status_response = '<span class="status-'.$class.'" title="'.$questionResultObj->question_id.'"><i class="fas fa-dot-circle"></i></span>';
+                                                if($questionResultObj->status == 'in_review'){
+                                                    $question_status_response = '<a href="javascript:;" class="review-question" data-question_id="'.$questionResultObj->id.'"><span class="status-in_review"><i class="fas fa-dot-circle"></i></span></a>';
+                                                }
+                                                $questions_time_consumed_total += $time_consumed;
+
+                                    @endphp
+                                    {!! $question_status_response !!}
+                                @endforeach
+                            @endif
                         @endif
-                    @endif
+                    </td>
                     <td>{{getTimeWithText($questions_time_consumed_total)}}</td>
                     <td><div class="circle_percent circle-green" data-percent="50">
                             <div class="circle_inner">

@@ -126,6 +126,14 @@
                                             </span>
                                             </label>
                                             <label class="card-radio">
+                                                <input type="radio" name="attempt_type" class="attempt_type" value="mock_tests">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                <div class="card-icon">
+                                                    <h3>Mock Tests</h3>
+                                                </div>
+                                            </span>
+                                            </label>
+                                            <label class="card-radio">
                                                 <input type="radio" name="attempt_type" class="attempt_type" value="assignment">
                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                 <div class="card-icon">
@@ -302,7 +310,7 @@
             if (returnType == false) {
                 return false;//
             }*/
-           rurera_loader($('.analytics-form'), 'div');
+           //rurera_loader($('.analytics-form'), 'div');
             $.ajax({
                 type: "POST",
                 url: '/admin/analytics/analytics_data_callback',
@@ -317,7 +325,7 @@
                         headers += '<th class="text-center">Q' + i + '</th>';
                     }
                     $(".no_of_attempts_column").after(headers);
-                    rurera_remove_loader($(".analytics-form"), 'div');
+                    //rurera_remove_loader($(".analytics-form"), 'div');
                 }
             });
             return false;

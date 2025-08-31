@@ -17,13 +17,12 @@
                         </label>
                     @endforeach
                 @endif
-
             </div>
         </div>
     </div>
 </div>
 <div class="subject_topics_list"></div>
-<div class="rurera-timeline timeline-container rurera-hide">
+<div class="rurera-timeline timeline-container">
     <input type="range" name="timeline_date" id="dateRange" min="0" value="0">
     <div class="date-label" id="dateLabel"></div>
 </div>

@@ -17,6 +17,49 @@
         color: #d6d6d6;
         font-size: 20px;
     }
+
+
+
+    .split-progress.progress-container {
+        display: flex;
+        width: 600px; /* total width */
+        height: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #eee;
+    }
+
+    .split-progress .progress {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .split-progress .progress.green {
+        background: #72d075;
+        flex: 1; /* each section gets equal space */
+    }
+    .split-progress .progress.orange {
+        background: #fbbf67;
+        flex: 1;
+    }
+    .split-progress .progress.red {
+        background: #f7837b;
+        flex: 1;
+    }
+
+    /* Fill widths relative to each section */
+    .split-progress .fill {
+        height: 100%;
+        background: rgba(255,255,255,0.2);
+    }
+
+    .split-progress .green .fill { background: #4caf50; width: 0%; }
+    .split-progress .orange .fill { background: #ff9800; width: 0%; }
+    .split-progress .red .fill { background: #f44336; width: 0%; }
 </style>
 @php $colors_array = array('table-col-yellow', 'table-col-red', 'table-col-orange'); @endphp
 
@@ -33,7 +76,7 @@
             @php $total_sub_topics_count = 0; @endphp
             @if(!empty($topics_list_array))
                 @foreach($topics_list_array as $topics_list_id => $topics_list_title)
-                    <th class="font-14" colspan="4"> {{$topics_list_title}}</th>
+                    <th class="font-14" colspan="2"> {{$topics_list_title}}</th>
                 @endforeach
             @endif
         </tr>
@@ -42,9 +85,7 @@
             @php $topic_counter = 1; @endphp
             @while($topic_counter <= count($topics_list_array))
                 <th class="font-14">Attempts</th>
-                <th class="font-14 table-col-red">Emerging</th>
-                <th class="font-14 table-col-orange">Expected</th>
-                <th class="font-14 table-col-yellow">Exceeding</th>
+                <th class="font-14 table-col-red">Emerging / Expected / Exceeding</th>
                 @php $topic_counter++; @endphp
             @endwhile
         </tr>
@@ -69,19 +110,25 @@
                                  $emerging_performance = isset($sub_chapter_data[$topic_part_item_id]['emerging_performance'])? $sub_chapter_data[$topic_part_item_id]['emerging_performance'] : 0;
                                  $expected_performance = isset($sub_chapter_data[$topic_part_item_id]['expected_performance'])? $sub_chapter_data[$topic_part_item_id]['expected_performance'] : 0;
                                  $exceeding_performance = isset($sub_chapter_data[$topic_part_item_id]['exceeding_performance'])? $sub_chapter_data[$topic_part_item_id]['exceeding_performance'] : 0;
-                                 $questionAnalyticResult = isset($sub_chapter_data[$topic_part_item_id]['students_questions_result'])? $sub_chapter_data[$topic_part_item_id]['students_questions_result'] : array();
-                                 $attempt_question_ids = isset($questionAnalyticResult[$topic_part_item_id]['attempt_question_ids'])? $questionAnalyticResult[$topic_part_item_id]['attempt_question_ids'] : array();
-                                 $questions_attempts = isset($questionAnalyticResult[$topic_part_item_id]['questions_attempts'])? $questionAnalyticResult[$topic_part_item_id]['questions_attempts'] : array();
-
                                     @endphp
-                                    <td>{{$quizObj->parentResults->where('status', 'passed')->count()}}</td>
-                                    <td class="">
-                                        {{$emerging_performance}}%
-                                    </td>
-                                    <td>{{$expected_performance}}%</td>
-                                    <td>{{$exceeding_performance}}%</td>
+                                    <td>
 
+                                        {{$quizObj->parentResults->where('status', 'passed')->count()}}</td>
 
+                                    <td><div class="progress-container split-progress">
+                                            <div class="progress green">
+                                                <div class="fill" style="width: {{$emerging_performance}}%"></div>
+                                                <span style="position:absolute;">&nbsp;&nbsp;&nbsp;&nbsp;{{$emerging_performance}}%</span>
+                                            </div>
+                                            <div class="progress orange">
+                                                <div class="fill" style="width: {{$expected_performance}}%"></div>
+                                                <span style="position:absolute;">&nbsp;&nbsp;&nbsp;&nbsp;{{$expected_performance}}%</span>
+                                            </div>
+                                            <div class="progress red">
+                                                <div class="fill" style="width: {{$exceeding_performance}}%"></div>
+                                                <span style="position:absolute;">&nbsp;&nbsp;&nbsp;&nbsp;{{$exceeding_performance}}%</span>
+                                            </div>
+                                        </div></td>
                                 @endforeach
                             @endif
                         @endforeach

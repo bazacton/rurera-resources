@@ -1,4 +1,7 @@
-
+<div class="rurera-timeline timeline-container">
+    <input type="range" name="timeline_date" id="dateRange" min="0" value="0">
+    <div class="date-label" id="dateLabel"></div>
+</div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
     <div class="row form-group col-lg-12 col-md-12 col-sm-12 col-12">
         @if($vocabulary_list->count() > 0)

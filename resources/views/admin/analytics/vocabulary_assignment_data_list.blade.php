@@ -64,14 +64,25 @@
         <thead>
         <tr class="topic-heading-top">
             <th class="font-14"> &nbsp;</th>
-            <th class="font-14" colspan="4"> {{$assignmentObj->title}}</th>
+            <th class="font-14" colspan="{{$quizQuestionsListIds->count()+4}}"> {{$assignmentObj->title}}</th>
         </tr>
         <tr class="topic-heading-top">
             <th class="font-14">Student</th>
             <th class="font-14">Attempts</th>
             @if($quizQuestionsListIds->count() > 0)
                 @foreach($quizQuestionsListIds as $quizQuestionsListIdsObj)
-                    <th class="font-14">{{$quizQuestionsListIdsObj->question_id}}</th>
+                    @php
+                        $SingleQuestionDataObj = $quizQuestionsListIdsObj->SingleQuestionData;
+                        if(!isset($SingleQuestionDataObj->id)){ continue; }
+                        $layout_elements = isset($SingleQuestionDataObj->layout_elements) ? json_decode($SingleQuestionDataObj->layout_elements) : array();
+                        $spell_word = '';
+                        if (!empty($layout_elements)) {
+                            foreach ($layout_elements as $elementData) {
+                                $spell_word = isset($elementData->correct_answer) ? $elementData->correct_answer : $spell_word;
+                            }
+                        }
+                    @endphp
+                    <th class="font-14">{{$spell_word}}</th>
                 @endforeach
             @endif
 
@@ -97,11 +108,11 @@
                     @php $questions_time_consumed_total = 0; @endphp
                     <td>{{isset($assignmentTopicObj->id)? $assignmentTopicObj->AssignmentResults->count() : 0}}</td>
 
-                    @if(isset($assignmentTopicObj->id))
                         @if(!empty($quizz_result_questions_list))
                             @foreach($quizz_result_questions_list as $questionResultObj)
                                 @php
                                     $question_text = isset($questionResultObj->question_text)? $questionResultObj->question_text : 'testing';
+                                    $question_id = isset($questionResultObj->id)? $questionResultObj->id : 0;
                                     if($question_text == 'no_found'){
                                         $question_status_response = '<span class="status-not_attempted"><i class="fas fa-dot-circle"></i></span>';
                                         $time_consumed = 0;
@@ -124,7 +135,6 @@
                                 <td>{!! $question_status_response !!}</td>
                             @endforeach
                         @endif
-                    @endif
                     <td>{{getTimeWithText($questions_time_consumed_total)}}</td>
                     <td><div class="circle_percent circle-green" data-percent="50">
                             <div class="circle_inner">
