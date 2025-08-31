@@ -217,26 +217,9 @@
                                                     <button type="button"><img src="/assets/default/svgs/filter-calendar.svg" alt="filter-calendar">Date Range</button>
                                                 </div>
 
-                                                <!-- <div class="dropdown">
-                                                    <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
-                                                </div> -->
-                                                <!-- <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle" id="amount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Amount
-                                                        <span class="selected-labels" id="amountSelectedLabels"></span>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="amount">
-                                                        <div class="min-val mb-2">
-                                                            <input type="number" id="minAmount" placeholder="Min">
-                                                        </div>
-                                                        <div class="max-val">
-                                                            <input type="number" id="maxAmount" placeholder="Max">
-                                                        </div>
-                                                    </div>
-                                                </div> -->
                                                 <div class="dropdown">
                                                     <button type="button" class="dropdown-toggle" id="amount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <span class="default-label">Amount</span>
+                                                        <span class="default-label"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</span>
                                                         <span class="selected-labels" id="amountSelectedLabels"></span>
                                                     </button>
                                                     <div class="dropdown-menu p-2" aria-labelledby="amount">
@@ -1051,11 +1034,11 @@
             let text = '';
 
             if (min && max) {
-                text = `| From $${min} - To $${max}`;
+                text = `From $${min} - To $${max}`;
             } else if (min) {
-                text = `| From $${min}`;
+                text = `From $${min}`;
             } else if (max) {
-                text = `| To $${max}`;
+                text = `To $${max}`;
             }
 
             selectedLabelsContainer.text(text);
