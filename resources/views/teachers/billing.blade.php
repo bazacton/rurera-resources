@@ -234,6 +234,26 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="dropdown">
+                                                    <button type="button" class="dropdown-toggle" id="amount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="default-label">Amount</span>
+                                                        <span class="selected-labels" id="amountSelectedLabels"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu p-2" aria-labelledby="amount">
+                                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                                            <strong>Amount</strong>
+                                                            <a href="javascript:void(0)" id="clearAmounts">Clear</a>
+                                                        </div>
+                                                        <div class="d-flex gap-2">
+                                                            <div class="min-val">
+                                                                <input type="number" id="minAmount" placeholder="Min">
+                                                            </div>
+                                                            <div class="max-val">
+                                                                <input type="number" id="maxAmount" placeholder="Max">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
