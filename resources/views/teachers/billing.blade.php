@@ -166,7 +166,17 @@
                                                     <button type="button" class="filter-btn"><img src="/assets/default/svgs/filter-alt.svg" alt="filter-alt">Filter</button>
                                                 </div>
                                             </div>
-                                            <div class="filter-right"></div>
+                                            <div class="filter-right">
+                                                <div class="dropdown">
+                                                    <button class="dropdown-toggle export-btn"><img src="/assets/default/svgs/export-alt.svg" alt="export-alt">Export</button>
+                                                    <div class="dropdown-menu">
+                                                        <ul>
+                                                            <li><a class="dropdown-link" href="#">Export as CSV</a></li>
+                                                            <li><a class="dropdown-link" href="#">Export as PDF</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         
                                     </form>
