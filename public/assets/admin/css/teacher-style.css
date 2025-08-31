@@ -854,6 +854,10 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     top: 0;
     margin: 0;
 }
+.rurera-search-filters .dropdown-search .input-holder {
+    border: 0;
+    margin: 0;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
