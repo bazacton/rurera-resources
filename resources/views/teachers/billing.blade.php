@@ -162,8 +162,11 @@
                                                     </span>
                                                     <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
                                                 </div>
-                                                <div class="filter-action-holder">
-                                                    <button type="button" class="filter-btn"><img src="/assets/default/svgs/filter-alt.svg" alt="filter-alt">Filter</button>
+                                                <div class="filter-action-holder" id="accordion">
+                                                    <button type="button" class="filter-btn" data-toggle="collapse" data-target="#filter-toggle-box" aria-expanded="true" aria-controls="collapse-1">
+                                                        <img src="/assets/default/svgs/filter-alt.svg" alt="filter-alt">Filter
+                                                    </button>
+                                                    <div class="filter-toggle-holder" id="filter-toggle-box" class="collapse show" data-parent="#accordion"></div>
                                                 </div>
                                             </div>
                                             <div class="filter-right">
