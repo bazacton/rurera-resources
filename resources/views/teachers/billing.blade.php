@@ -222,17 +222,25 @@
                                                         <span class="default-label"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</span>
                                                         <span class="selected-labels" id="amountSelectedLabels"></span>
                                                     </button>
-                                                    <div class="dropdown-menu p-2" aria-labelledby="amount">
-                                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="dropdown-menu" aria-labelledby="amount">
+                                                        <div class="dropdown-top d-flex justify-content-between align-items-center mb-2">
                                                             <strong>Amount</strong>
-                                                            <a href="javascript:void(0)" id="clearAmounts">Clear</a>
+                                                            <a href="javascript:void(0)" class="clear-amount-btn" id="clearAmounts">Clear</a>
                                                         </div>
                                                         <div class="d-flex gap-2">
                                                             <div class="min-val">
-                                                                <input type="number" id="minAmount" placeholder="Min">
+                                                                <span>Min</span>
+                                                                <label for="minAmount">
+                                                                    <em>$</em>
+                                                                    <input type="number" id="minAmount" placeholder="Min">
+                                                                </label>
                                                             </div>
                                                             <div class="max-val">
-                                                                <input type="number" id="maxAmount" placeholder="Max">
+                                                                <span>Max</span>
+                                                                <label for="maxAmount">
+                                                                    <em>$</em>
+                                                                    <input type="number" id="maxAmount" placeholder="Max">
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </div>
