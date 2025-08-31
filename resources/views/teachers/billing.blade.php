@@ -184,9 +184,48 @@
                                         </div>
                                         <div class="filter-toggle-holder collapse" id="filter-toggle-box" data-parent="#accordion">
                                             <div class="filter-toggle-actions">
-                                                <button type="button"><img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status</button>
-                                                <button type="button"><img src="/assets/default/svgs/filter-calendar.svg" alt="filter-calendar">Date Range</button>
-                                                <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
+
+                                                <div class="dropdown">
+                                                    <button type="button" id="Status"><img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status</button>
+                                                    <div class="dropdown-menu" aria-labelledby="Status">
+                                                        <div class="dropdown-search">
+                                                            <div class="input-holder">
+                                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                <input type="text" placeholder="Level">
+                                                            </div>
+                                                        </div>
+                                                        <label class="dropdown-item">
+                                                            <input type="checkbox" value="Beginner"> 
+                                                            Beginner
+                                                            <span class="counts">20</span>
+                                                        </label>
+                                                        <label class="dropdown-item">
+                                                            <input type="checkbox" value="Intermediate"> 
+                                                            Intermediate
+                                                            <span class="counts">18</span>
+                                                        </label>
+                                                        <label class="dropdown-item">
+                                                            <input type="checkbox" value="Upper Intermediate"> 
+                                                            Upper Intermediate
+                                                            <span class="counts">22</span>
+                                                        </label>
+                                                        <label class="dropdown-item">
+                                                            <input type="checkbox" value="Advanced"> 
+                                                            Advanced
+                                                            <span class="counts">10</span>
+                                                        </label>
+                                                        <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown">
+                                                    <button type="button"><img src="/assets/default/svgs/filter-calendar.svg" alt="filter-calendar">Date Range</button>
+                                                </div>
+
+                                                <div class="dropdown">
+                                                    <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </form>
