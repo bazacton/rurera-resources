@@ -889,6 +889,43 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     border-radius: 0;
     border: 0;
 }
+.billing-invoice {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.rurera-search-filters .dropdown-menu:has(.amount-fields-holder) {
+    width: 290px;
+    margin-top: 15px;
+}
+.amount-fields-holder label {
+    margin: 0;
+    position: relative;
+}
+.amount-fields-holder label em {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-style: normal;
+    font-weight: 600;
+    color: #90a1b9;
+    margin-top: 2px;
+    line-height: normal;
+    font-size: .875rem;
+}
+.amount-fields-holder input[type="number"] {
+    height: 38px;
+    padding-left: 30px;
+    border-color: #cad5e2;
+    font-size: .875rem;
+    font-weight: 500;
+}
+.amount-fields-holder span {
+    color: #314158;
+    font-size: .857rem;
+    display: block;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
