@@ -217,8 +217,22 @@
                                                     <button type="button"><img src="/assets/default/svgs/filter-calendar.svg" alt="filter-calendar">Date Range</button>
                                                 </div>
 
-                                                <div class="dropdown">
+                                                <!-- <div class="dropdown">
                                                     <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
+                                                </div> -->
+                                                <div class="dropdown">
+                                                    <button type="button" class="dropdown-toggle" id="Status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Amount
+                                                        <span class="selected-labels" id="amountSelectedLabels"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu p-2">
+                                                        <div class="min-val mb-2">
+                                                            <input type="number" id="minAmount" placeholder="Min">
+                                                        </div>
+                                                        <div class="max-val">
+                                                            <input type="number" id="maxAmount" placeholder="Max">
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -1001,6 +1015,32 @@
             checkboxes.prop('checked', false);
             selectedLabelsContainer.html('');
         });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        const selectedLabelsContainer = $('#amountSelectedLabels');
+        const minInput = $('#minAmount');
+        const maxInput = $('#maxAmount');
+
+        function updateLabels() {
+            let min = minInput.val();
+            let max = maxInput.val();
+            let text = '';
+
+            if (min && max) {
+                text = `<span class="badge badge-primary">${min} - ${max}</span>`;
+            } else if (min) {
+                text = `<span class="badge badge-primary">Min: ${min}</span>`;
+            } else if (max) {
+                text = `<span class="badge badge-primary">Max: ${max}</span>`;
+            }
+
+            selectedLabelsContainer.html(text);
+        }
+
+        minInput.on('input', updateLabels);
+        maxInput.on('input', updateLabels);
     });
 </script>
 @endpush
