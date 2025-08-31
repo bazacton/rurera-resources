@@ -220,7 +220,7 @@
                                                 <!-- <div class="dropdown">
                                                     <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
                                                 </div> -->
-                                                <div class="dropdown">
+                                                <!-- <div class="dropdown">
                                                     <button type="button" class="dropdown-toggle" id="amount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         Amount
                                                         <span class="selected-labels" id="amountSelectedLabels"></span>
@@ -233,7 +233,7 @@
                                                             <input type="number" id="maxAmount" placeholder="Max">
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <div class="dropdown">
                                                     <button type="button" class="dropdown-toggle" id="amount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <span class="default-label">Amount</span>
