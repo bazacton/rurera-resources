@@ -878,7 +878,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     text-decoration: none;
 }
 .amount-fields-holder {
-    padding: 0 12px;
+    padding: 0 12px 12px;
     gap: 10px;
 }
 .billing-invoice .card {
