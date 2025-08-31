@@ -736,6 +736,11 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.card-expiry span {
+    font-size: .75rem;
+    color: #314158;
+    font-weight: 600;
+}
 .card-expiry .setting-btn {
     background-color: inherit;
     border: 0;
@@ -744,6 +749,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
 .card-expiry .setting-btn img {
     height: 15px;
     width: 15px;
+    filter: invert(22%) sepia(17%) saturate(1121%) hue-rotate(176deg) brightness(94%) contrast(89%);
 }
 .billing-payment-method {
     border-bottom: 2px solid #e2e8f0;
