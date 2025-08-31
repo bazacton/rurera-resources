@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="billing-invoice">
-                                <div class="heading-holder">
+                                <div class="heading-holder mb-20">
                                     <h3>Invoices</h3>
                                     <span>List of invoices. You can view and download them from here.</span>
                                 </div>
