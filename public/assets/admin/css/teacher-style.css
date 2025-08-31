@@ -674,10 +674,22 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     height: 37px;
     font-weight: 600;
 }
+.payment-card-holder .row {
+    margin: 0 -5px;
+}
+.payment-card-holder [class*="col-"] {
+    padding: 0 5px;
+    flex: 0 0 auto;
+    max-width: none;
+    width: auto;
+}
 .payment-card {
     border-radius: 10px;
     border: 3px solid #F54A00;
     padding: 15px;
+    max-width: 340px;
+    min-width: 340px;
+    height: 100%;
 }
 .payment-logo img {object-fit: contain;}
 .payment-logo img[alt="visa"] {
