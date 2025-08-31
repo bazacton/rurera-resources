@@ -221,11 +221,11 @@
                                                     <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
                                                 </div> -->
                                                 <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle" id="Status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button type="button" class="dropdown-toggle" id="amount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         Amount
                                                         <span class="selected-labels" id="amountSelectedLabels"></span>
                                                     </button>
-                                                    <div class="dropdown-menu p-2">
+                                                    <div class="dropdown-menu" aria-labelledby="amount">
                                                         <div class="min-val mb-2">
                                                             <input type="number" id="minAmount" placeholder="Min">
                                                         </div>
