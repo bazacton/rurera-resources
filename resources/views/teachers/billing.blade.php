@@ -84,8 +84,8 @@
                                         </div>
                                         <span>136 / 300 Days left</span>
                                     </div>
-                                    <button type="button" class="ppgrade-btn">Upgrade</button>
                                 </div>
+                                <button type="button" class="ppgrade-btn">Upgrade</button>
                             </div>
 
                             <div class="billing-payment-method">
