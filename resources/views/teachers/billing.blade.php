@@ -227,7 +227,7 @@
                                                             <strong>Amount</strong>
                                                             <a href="javascript:void(0)" class="clear-amount-btn" id="clearAmounts">Clear</a>
                                                         </div>
-                                                        <div class="d-flex gap-2">
+                                                        <div class="d-flex amount-fields-holder">
                                                             <div class="min-val">
                                                                 <span>Min</span>
                                                                 <label for="minAmount">
