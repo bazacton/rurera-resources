@@ -168,8 +168,10 @@
                                             </div>
                                             <div class="filter-right">
                                                 <div class="dropdown">
-                                                    <button class="dropdown-toggle export-btn"><img src="/assets/default/svgs/export-alt.svg" alt="export-alt">Export</button>
-                                                    <div class="dropdown-menu">
+                                                    <button class="dropdown-toggle export-btn" id="export" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <img src="/assets/default/svgs/export-alt.svg" alt="export-alt">Export
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="export">
                                                         <ul>
                                                             <li><a class="dropdown-link" href="#">Export as CSV</a></li>
                                                             <li><a class="dropdown-link" href="#">Export as PDF</a></li>
