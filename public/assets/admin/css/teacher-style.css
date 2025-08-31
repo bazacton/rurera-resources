@@ -669,6 +669,78 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     height: 37px;
     font-weight: 600;
 }
+.billing-payment-method {}
+.payment-card {
+    border-radius: 10px;
+    border: 3px solid #F54A00;
+    padding: 15px;
+}
+.payment-logo img {object-fit: contain;}
+.payment-logo img[alt="visa"] {
+    max-width: 44px;
+}
+.payment-logo img[alt="mastercard"] {
+    max-width: 32px;
+}
+.payment-logo img[alt="paypal"] {
+    max-width: 20px;
+}
+.payment-card:has(img[alt="mastercard"]) {
+    border-color: #0069a8;
+}
+.payment-card:has(img[alt="paypal"]) {
+    border-color: #ad46ff;
+}
+.payment-card .payment-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 8px;
+}
+.badge-base {
+    background-color: #155dfc;
+    color: #fff;
+    font-size: .6875rem;
+    padding: 3px 10px;
+    display: inline-flex;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: normal;
+}
+.card-detail p {
+    margin: 0;
+    color: #1d293d;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.card-detail span {
+    font-size: .75rem;
+    color: #314158;
+    display: block;
+    line-height: normal;
+    margin-top: 2px;
+}
+.card-detail {
+    margin: 0 0 10px;
+}
+.card-expiry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-expiry .setting-btn {
+    background-color: inherit;
+    border: 0;
+    outline: none;
+}
+.card-expiry .setting-btn img {
+    height: 15px;
+    width: 15px;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
