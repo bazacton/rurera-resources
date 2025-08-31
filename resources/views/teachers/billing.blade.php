@@ -96,6 +96,56 @@
                                     </div>
                                     <button><img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt"> New Method</button>
                                 </div>
+                                <div class="payment-card-holder">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-12">
+                                            <div class="payment-card">
+                                                <div class="payment-logo">
+                                                    <img src="/assets/default/svgs/visa.svg" alt="visa">
+                                                    <span class="badge-base">Primary</span>
+                                                </div>
+                                                <div class="card-detail">
+                                                    <p>Travis Fuller</p>
+                                                    <span>•••• 6988</span>
+                                                </div>
+                                                <div class="card-expiry">
+                                                    <span>Expired 02.06.2024</span>
+                                                    <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt="settings"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-12">
+                                            <div class="payment-card">
+                                                <div class="payment-logo">
+                                                    <img src="/assets/default/svgs/mastercard.svg" alt="mastercard">
+                                                </div>
+                                                <div class="card-detail">
+                                                    <p>Samantha Shelton</p>
+                                                    <span>•••• 6988</span>
+                                                </div>
+                                                <div class="card-expiry">
+                                                    <span>Expired 02.06.2025</span>
+                                                    <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt="settings"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-12">
+                                            <div class="payment-card">
+                                                <div class="payment-logo">
+                                                    <img src="/assets/default/svgs/paypal.svg" alt="paypal">
+                                                </div>
+                                                <div class="card-detail">
+                                                    <p>John Doe</p>
+                                                    <span>John@gmail.com</span>
+                                                </div>
+                                                <div class="card-expiry">
+                                                    <span>Expired 02.06.2025</span>
+                                                    <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt="settings"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="row mb-30">
