@@ -72,7 +72,31 @@
                                 <h2>Membership Details</h2>
                                 <p>A demo Message regarding the memberships and a welcoming message</p>
                             </div>
-                            
+                            <div class="premium-plan">
+                                <div class="premium-text">
+                                    <strong>Premium Plan</strong>
+                                    <div class="premium-days">
+                                        <div class="circle_percent circle-green" data-percent="50">
+                                            <div class="circle_inner">
+                                                <div class="round_per" style="transform: rotate(360deg);"></div>
+                                            </div>
+                                            <div class="circle_inbox"></div>
+                                        </div>
+                                        <span>136 / 300 Days left</span>
+                                    </div>
+                                    <button type="button" class="ppgrade-btn">Upgrade</button>
+                                </div>
+                            </div>
+
+                            <div class="billing-payment-method">
+                                <div class="element-heading">
+                                    <div class="heading-holder">
+                                        <h3>Payment Methods</h3>
+                                        <span>Manage your payment methods from here.</span>
+                                    </div>
+                                    <button>New Method</button>
+                                </div>
+                            </div>
 
                             <div class="row mb-30">
                                 <div class="col-md-4">
