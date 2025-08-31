@@ -858,6 +858,28 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     border: 0;
     margin: 0;
 }
+.rurera-search-filters .amount-box .dropdown-menu {
+    width: 290px;
+}
+.dropdown-top {
+    background-color: #e9eef5;
+    padding: 10px 12px;
+}
+.dropdown-top strong {
+    color: #1d293d;
+    font-size: .875rem;
+    font-weight: 600;
+}
+.rurera-search-filters .clear-amount-btn {
+    color: #1d293d;
+    font-weight: 600;
+    font-size: .75rem;
+    text-decoration: none;
+}
+.amount-fields-holder {
+    padding: 0 12px;
+    gap: 10px;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
