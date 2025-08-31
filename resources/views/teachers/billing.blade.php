@@ -76,7 +76,7 @@
                                 <div class="premium-text">
                                     <strong>Premium Plan</strong>
                                     <div class="premium-days">
-                                        <div class="circle_percent circle-green" data-percent="50">
+                                        <div class="circle_percent" data-percent="50">
                                             <div class="circle_inner">
                                                 <div class="round_per" style="transform: rotate(360deg);"></div>
                                             </div>
