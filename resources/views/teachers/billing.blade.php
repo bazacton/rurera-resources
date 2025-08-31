@@ -186,7 +186,9 @@
                                             <div class="filter-toggle-actions">
 
                                                 <div class="dropdown">
-                                                    <button type="button" id="Status"><img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status</button>
+                                                    <button type="button" class="dropdown-toggle" id="Status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status
+                                                    </button>
                                                     <div class="dropdown-menu" aria-labelledby="Status">
                                                         <div class="dropdown-search">
                                                             <div class="input-holder">
