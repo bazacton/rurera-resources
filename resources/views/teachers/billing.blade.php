@@ -154,12 +154,18 @@
                                 </div>
                                 <div class="rurera-search-filters">
                                     <form autocomplete="off">
-                                        <div class="search-field">
-                                            <span class="icon-box">
-                                                <img src="/assets/default/svgs/search.svg" alt="search">
-                                            </span>
-                                            <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
+                                        <div class="filter-box-holder">
+                                            <div class="filter-left">
+                                                <div class="search-field">
+                                                    <span class="icon-box">
+                                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                                    </span>
+                                                    <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="filter-right"></div>
                                         </div>
+                                        
                                     </form>
                                     
                                 </div>
