@@ -152,7 +152,7 @@
                                     <h3>Invoices</h3>
                                     <span>List of invoices. You can view and download them from here.</span>
                                 </div>
-                                <div class="rurera-search-filters" id="accordion">
+                                <div class="rurera-search-filters mb-15" id="accordion">
                                     <form autocomplete="off">
                                         <div class="filter-box-holder">
                                             <div class="filter-left">
