@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="content-holder card p-25">
-                        <ul data-target_class="admin-rurera-tabs-billing" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-20" id="assignment_tabs" role="tablist">
+                        <ul data-target_class="admin-rurera-tabs-billing rurera-hide" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-20" id="assignment_tabs" role="tablist">
                             <li class="nav-item skelton-height-lg">
                                 <a class="nav-link active" id="membership-tab" href="javascript:;">
                                     <span class="tab-title">Membership Details</span>
@@ -68,8 +68,11 @@
                             </li>
                         </ul>
                         <div class="admin-rurera-tabs-billing membership-tab ">
-                            <h2 class="mb-1 font-weight-bold">Membership Details</h2>
-                            <p class="text-muted">A demo Message regarding the memberships and a welcoming message</p>
+                            <div class="section-heading">
+                                <h2>Membership Details</h2>
+                                <p>A demo Message regarding the memberships and a welcoming message</p>
+                            </div>
+                            
 
                             <div class="row mb-30">
                                 <div class="col-md-4">
