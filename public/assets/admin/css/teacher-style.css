@@ -252,7 +252,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border-radius: 3px;
     padding: 4px 8px;
 }
-.rurera-search-filters .dropdown button {
+.rurera-search-filters .dropdown button,
+.filter-toggle-actions button {
     border: 1px dashed #cad5e2;
     border-radius: 10px;
     padding: 0 10px;
