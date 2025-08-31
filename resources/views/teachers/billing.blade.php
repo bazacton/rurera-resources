@@ -248,163 +248,163 @@
 
                                             </div>
                                         </div>
-                                        <div class="card skeleton">
-                                            <div class="table-sm">
-                                                <table class="table mb-0">
-                                                    <thead class="thead-light">
-                                                        <tr>
-                                                            <th>Transaction ID</th>
-                                                            <th>Date</th>
-                                                            <th>Account Holder</th>
-                                                            <th>Status</th>
-                                                            <th>Package Type</th>
-                                                            <th>Payment Method</th>
-                                                            <th>Total</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td data-th="Transaction ID">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>#95954</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Date">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>10/08/2022</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Account Holder">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>Ron Vargas</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Status">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span class="status-paid">Paid</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Package Type">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>Test Prep Plus</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Payment Method">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>
-                                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
-                                                                        •••• 6165
-                                                                    </span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Total">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>$168.00</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Eye">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span class="icon-eye"></span>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td data-th="Transaction ID">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>#95423</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Date">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>30/07/2022</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Account Holder">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>Carolyn Hanso</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Status">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span class="status-paid">Paid</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Package Type">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>Home learning and exam revision</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Payment Method">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>
-                                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
-                                                                        •••• 7128
-                                                                    </span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Total">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>$523.00</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Eye">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span class="icon-eye"></span>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td data-th="Transaction ID">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>#92903</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Date">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>18/07/2022</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Account Holder">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>Gabriella May</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Status">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span class="status-pending">Pending</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Package Type">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>Home learning</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Payment Method">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>
-                                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
-                                                                        ••••@gmail.com
-                                                                    </span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Total">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span>$81.00</span>
-                                                                </div>
-                                                            </td>
-                                                            <td data-th="Eye">
-                                                                <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                                                    <span class="icon-eye"></span>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
                                     </form>
                                     
+                                </div>
+                                <div class="card skeleton">
+                                    <div class="table-sm">
+                                        <table class="table mb-0">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th>Transaction ID</th>
+                                                    <th>Date</th>
+                                                    <th>Account Holder</th>
+                                                    <th>Status</th>
+                                                    <th>Package Type</th>
+                                                    <th>Payment Method</th>
+                                                    <th>Total</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-th="Transaction ID">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>#95954</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Date">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>10/08/2022</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Account Holder">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>Ron Vargas</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Status">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span class="status-paid">Paid</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Package Type">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>Test Prep Plus</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Payment Method">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                                                                •••• 6165
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Total">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>$168.00</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Eye">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span class="icon-eye"></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-th="Transaction ID">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>#95423</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Date">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>30/07/2022</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Account Holder">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>Carolyn Hanso</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Status">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span class="status-paid">Paid</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Package Type">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>Home learning and exam revision</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Payment Method">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                                                                •••• 7128
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Total">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>$523.00</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Eye">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span class="icon-eye"></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-th="Transaction ID">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>#92903</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Date">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>18/07/2022</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Account Holder">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>Gabriella May</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Status">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span class="status-pending">Pending</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Package Type">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>Home learning</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Payment Method">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
+                                                                ••••@gmail.com
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Total">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span>$81.00</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Eye">
+                                                        <div class=" skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <span class="icon-eye"></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
 
