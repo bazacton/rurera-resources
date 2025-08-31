@@ -152,7 +152,7 @@
                                     <h3>Invoices</h3>
                                     <span>List of invoices. You can view and download them from here.</span>
                                 </div>
-                                <div class="rurera-search-filters">
+                                <div class="rurera-search-filters" id="accordion">
                                     <form autocomplete="off">
                                         <div class="filter-box-holder">
                                             <div class="filter-left">
@@ -162,17 +162,10 @@
                                                     </span>
                                                     <input type="text" class="search-students" placeholder="Search Students" autocomplete="off">
                                                 </div>
-                                                <div class="filter-action-holder" id="accordion">
+                                                <div class="filter-action-holder">
                                                     <button type="button" class="filter-btn" data-toggle="collapse" data-target="#filter-toggle-box" aria-expanded="true" aria-controls="collapse-1">
                                                         <img src="/assets/default/svgs/filter-alt.svg" alt="filter-alt">Filter
                                                     </button>
-                                                    <div class="filter-toggle-holder collapse" id="filter-toggle-box" data-parent="#accordion">
-                                                        <div class="filter-toggle-actions">
-                                                            <button type="button"><img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status</button>
-                                                            <button type="button"><img src="/assets/default/svgs/filter-calendar.svg" alt="filter-calendar">Date Range</button>
-                                                            <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="filter-right">
@@ -189,7 +182,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+                                        <div class="filter-toggle-holder collapse" id="filter-toggle-box" data-parent="#accordion">
+                                            <div class="filter-toggle-actions">
+                                                <button type="button"><img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status</button>
+                                                <button type="button"><img src="/assets/default/svgs/filter-calendar.svg" alt="filter-calendar">Date Range</button>
+                                                <button type="button"><img src="/assets/default/svgs/dollar-sign.svg" alt="dollar-sign">Amount</button>
+                                            </div>
+                                        </div>
                                     </form>
                                     
                                 </div>
