@@ -107,7 +107,7 @@
                                 </div>
                             </div>
 
-                            <div class="row align-items-start mb-30">
+                            <div class="row align-items-start mb-30 rurera-hide">
                                 <div class="col-md-12 mb-30">
                                     <h4 class="mb-0">FAQ</h4>
                                 </div>
