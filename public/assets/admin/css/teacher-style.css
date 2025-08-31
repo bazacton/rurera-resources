@@ -602,6 +602,75 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
 }
 /* User Setting Page Style End */
 
+/* User Billing Page Style Start */
+.rurera-billing .section-heading h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #1d293d;
+}
+.rurera-billing .section-heading p {
+    font-size: .875rem;
+    font-weight: 500;
+    color: #62748e;
+    margin: 0;
+    line-height: normal;
+}
+.rurera-billing .section-heading {
+    margin: 0 0 25px;
+}
+
+.premium-plan {
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.premium-plan strong {
+    color: #1d293d;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 0 10px;
+    display: block;
+}
+.premium-days {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.premium-plan .circle_percent {
+    font-size: 22px;
+    background: #dad9d9;
+}
+.premium-days .circle_inbox {
+    background-color: #f1f5f9;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+.premium-days .round_per {
+    background: #155dfc;
+}
+.premium-days span {
+    color: #314158;
+    font-size: .875rem;
+    font-weight: 500;
+}
+.ppgrade-btn {
+    border: 0;
+    background-color: var(--blue);
+    color: #fff;
+    border-radius: 10px;
+    min-width: 100px;
+    height: 37px;
+    font-weight: 600;
+}
+/* User Billing Page Style End */
+
 /* Rurera-Confirm-Modal Style Start */
 .inactivity-controls {
     display: flex;
