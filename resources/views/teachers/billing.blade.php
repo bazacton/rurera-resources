@@ -185,7 +185,7 @@
                                         <div class="filter-toggle-holder collapse" id="filter-toggle-box" data-parent="#accordion">
                                             <div class="filter-toggle-actions">
 
-                                                <div class="dropdown">
+                                                <div class="dropdown status">
                                                     <button type="button" class="dropdown-toggle" id="Status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <img src="/assets/default/svgs/filter-status.svg" alt="filter-status">Status
                                                     </button>
@@ -208,7 +208,7 @@
                                                             <input type="checkbox" value="Paid"> 
                                                             Paid
                                                         </label>
-                                                        <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
+                                                        <button class="clear-filter-btn clearSelection">Clear Filter</button>
                                                     </div>
                                                 </div>
 
@@ -973,6 +973,33 @@
                 .querySelectorAll(".skelton-hide")
                 .forEach((el) => el.classList.remove("skelton-hide"));
         }, 1000);
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        const selectedLabelsContainer = $('#yearSelectedLabels');
+        const yearCheckboxes = $('.status .dropdown-menu input[type="checkbox"]');
+
+        yearCheckboxes.change(function () {
+            const selected = [];
+            yearCheckboxes.each(function () {
+                if (this.checked) {
+                    selected.push($(this).val());
+                }
+            });
+
+            if (selected.length > 0) {
+                let badges = selected.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
+                selectedLabelsContainer.html(badges);
+            } else {
+                selectedLabelsContainer.html('');
+            }
+        });
+
+        $('.clearSelection').click(function () {
+            checkboxes.prop('checked', false);
+            selectedLabelsContainer.html('');
+        });
     });
 </script>
 @endpush
