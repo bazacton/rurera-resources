@@ -741,6 +741,46 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     height: 15px;
     width: 15px;
 }
+.rurera-billing .heading-holder h3 {
+    font-size: 1rem;
+    color: #1d293d;
+    font-weight: 600;
+    margin: 0;
+}
+.rurera-billing .heading-holder span {
+    font-size: .875rem;
+    color: #314158;
+    font-weight: 600;
+    display: block;
+    line-height: normal;
+    margin-top: 2px;
+}
+.billing-payment-method .element-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.billing-payment-method button {
+    background-color: #e9eef5;
+    border: 0;
+    border-radius: 10px;
+    padding: 0;
+    font-size: .78rem;
+    color: #0f172b;
+    font-weight: 600;
+    min-width: 120px;
+    text-align: center;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.billing-payment-method button img {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
