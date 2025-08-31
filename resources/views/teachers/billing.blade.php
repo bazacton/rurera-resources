@@ -94,7 +94,7 @@
                                         <h3>Payment Methods</h3>
                                         <span>Manage your payment methods from here.</span>
                                     </div>
-                                    <button><img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="method-btn"> New Method</button>
+                                    <button type="button" class="method-btn"><img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt"> New Method</button>
                                 </div>
                                 <div class="payment-card-holder">
                                     <div class="row">
