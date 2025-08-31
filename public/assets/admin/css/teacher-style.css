@@ -764,7 +764,7 @@ body .user-edit-holder form .form-group .form-field .form-control:-moz-placehold
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.billing-payment-method button {
+.billing-payment-method .method-btn {
     background-color: #e9eef5;
     border: 0;
     border-radius: 10px;
