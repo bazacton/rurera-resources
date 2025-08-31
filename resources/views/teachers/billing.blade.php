@@ -197,24 +197,16 @@
                                                             </div>
                                                         </div>
                                                         <label class="dropdown-item">
-                                                            <input type="checkbox" value="Beginner"> 
-                                                            Beginner
-                                                            <span class="counts">20</span>
+                                                            <input type="checkbox" value="Unfunded"> 
+                                                            Unfunded
                                                         </label>
                                                         <label class="dropdown-item">
-                                                            <input type="checkbox" value="Intermediate"> 
-                                                            Intermediate
-                                                            <span class="counts">18</span>
+                                                            <input type="checkbox" value="Pending"> 
+                                                            Pending
                                                         </label>
                                                         <label class="dropdown-item">
-                                                            <input type="checkbox" value="Upper Intermediate"> 
-                                                            Upper Intermediate
-                                                            <span class="counts">22</span>
-                                                        </label>
-                                                        <label class="dropdown-item">
-                                                            <input type="checkbox" value="Advanced"> 
-                                                            Advanced
-                                                            <span class="counts">10</span>
+                                                            <input type="checkbox" value="Paid"> 
+                                                            Paid
                                                         </label>
                                                         <button class="clear-filter-btn" id="clearSelection">Clear Filter</button>
                                                     </div>
