@@ -449,7 +449,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 }
 .rurera-timeline input[type="range"]::-webkit-slider-runnable-track {
   height: 6px;
-  background: #2196f3;
+  background: #ddd;
   border-radius: 5px;
 }
 
