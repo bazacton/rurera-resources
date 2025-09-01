@@ -1788,3 +1788,14 @@ function rurera_modal_alert(msg_type, msg_title, confirmButton){
     Swal.fire({icon: msg_type, html: '<h3 class="font-20 text-center text-dark-blue">'+msg_title+'</h3>', showConfirmButton: confirmButton});
 
 }
+
+
+$('body').on('change', '.conditional_field_parent', function (e) {
+    var target_field_class = $(this).attr('data-target_field_class');
+    var target_common_class = $(this).attr('data-target_common_class');
+    $('.'+target_common_class).addClass('rurera-hide');
+    $('.'+target_field_class).removeClass('rurera-hide');
+});
+if($(".conditional_field_parent").length > 0){
+    $(".conditional_field_parent:checked").change();
+}
