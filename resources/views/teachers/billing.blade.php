@@ -1146,7 +1146,7 @@
                                 <div class="form-group">
                                     <label>Card Holder Name:</label>
                                     <div class="form-field">
-                                        <img src="/assets/default/svgs/card-credit.svg" alt="card-credit">
+                                        <img src="/assets/default/svgs/user.svg" alt="user">
                                         <input type="text" name="card_name" class="form-control" placeholder="Enter Caed Holder Name">
                                     </div>
                                 </div>
@@ -1155,7 +1155,7 @@
                                 <div class="form-group">
                                     <label>Card Number:</label>
                                     <div class="form-field">
-                                        <img src="/assets/default/svgs/user.svg" alt="user">
+                                        <img src="/assets/default/svgs/card-credit.svg" alt="card-credit">
                                         <input type="text" name="card_number" class="form-control" placeholder="4444 4444 4444 4444">
                                     </div>
                                 </div>
