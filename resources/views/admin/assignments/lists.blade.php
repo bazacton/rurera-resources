@@ -101,15 +101,15 @@
                                         </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <div class="select-holder level-select">
-                                            
+
                                             <div class="dropdown">
                                             <button class="dropdown-toggle" type="button" id="multiSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/skill-level.svg" alt="skill-level"> 
+                                                <img src="/assets/default/svgs/skill-level.svg" alt="skill-level">
                                                 <span class="btn-text">Level</span>
                                                 <span class="selected-labels" id="selectedLabels"></span>
                                             </button>
@@ -121,22 +121,22 @@
                                                     </div>
                                                 </div>
                                                 <label class="dropdown-item">
-                                                    <input type="checkbox" value="Beginner"> 
+                                                    <input type="checkbox" value="Beginner">
                                                     Beginner
                                                     <span class="counts">20</span>
                                                 </label>
                                                 <label class="dropdown-item">
-                                                    <input type="checkbox" value="Intermediate"> 
+                                                    <input type="checkbox" value="Intermediate">
                                                     Intermediate
                                                     <span class="counts">18</span>
                                                 </label>
                                                 <label class="dropdown-item">
-                                                    <input type="checkbox" value="Upper Intermediate"> 
+                                                    <input type="checkbox" value="Upper Intermediate">
                                                     Upper Intermediate
                                                     <span class="counts">22</span>
                                                 </label>
                                                 <label class="dropdown-item">
-                                                    <input type="checkbox" value="Advanced"> 
+                                                    <input type="checkbox" value="Advanced">
                                                     Advanced
                                                     <span class="counts">10</span>
                                                 </label>
@@ -150,10 +150,10 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <div class="select-holder year-select">
-                                            
+
                                             <div class="dropdown year-dropdown">
                                                 <button class="dropdown-toggle" type="button" id="multiSelectDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <img src="/assets/default/svgs/book-filter.svg" alt="book-filter"> 
+                                                    <img src="/assets/default/svgs/book-filter.svg" alt="book-filter">
                                                     <span class="btn-text">Year Subject</span>
                                                     <span class="selected-labels" id="yearSelectedLabels"></span>
                                                 </button>
@@ -311,6 +311,7 @@
                                     <thead class="thead-light">
                                         <tr>
                                             <th>Assignment</th>
+                                            <th>Assignment Type</th>
                                             <th>Learners</th>
                                             <th>Accuracy</th>
                                             <th>Assigned</th>
@@ -323,8 +324,11 @@
                                     @if($assignments->count() > 0)
                                     @foreach($assignments as $assignmentObj)
                                         <tr>
+                                            <td data-th="Assignment">
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->title}}</div>
+                                            </td>
                                             <td data-th="Type">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->title}} ({{ getQuizTypeTitle($assignmentObj->assignment_type) }})</div>
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ getQuizTypeTitle($assignmentObj->assignment_type) }}</div>
                                             </td>
                                             <td data-th="Learners">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">
@@ -336,10 +340,10 @@
                                                         @foreach($UserAssignedTopics as $UserAssignedTopicObj)
                                                             @php $assignmentStudentObj = $UserAssignedTopicObj->user; @endphp
                                                             <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
-                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
-                                                            <img src="{{url('/').$assignmentStudentObj->getAvatar()}}" alt="">
                                                         @endforeach
-                                                            <div class="more-users-no">+5</div>
+                                                            @if($UserAssignedTopics->count() > 5)
+                                                                <div class="more-users-no">+5</div>
+                                                            @endif
                                                         </div>
                                                     @endif
                                                 </div>
@@ -357,7 +361,8 @@
                                                 </div>
                                             </td>
                                             <td data-th="Assigned">
-                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y')}} / {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</div>
+                                                <div class="skelton-hide skelton-height-lg skelton-mb-0">{{dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y')}}
+                                                    <span class="deadline-date"><b>Deadline:</b> {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</span></div>
                                             </td>
                                             <td data-th="AssignedBy">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->creatorUser->get_full_name()}}</div>
