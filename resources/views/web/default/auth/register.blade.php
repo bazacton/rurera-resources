@@ -66,6 +66,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/envelope.jpg" alt="envelope">
                                 </span>
+                                <input style="display: none;" name="email" type="text" class="form-control" autocomplete="new-email" placeholder="Where can we reach you? (e.g., you@gmail.com)">
                                 <input name="email" type="text" class="form-control" autocomplete="new-email" placeholder="Where can we reach you? (e.g., you@gmail.com)">
                             </div>
                         </div>
@@ -76,6 +77,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
+                                <input style="display: none;" name="password" type="password" class="form-control" autocomplete="new-password" placeholder="Make a strong password">
                                 <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
                                    aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password">
@@ -93,10 +95,10 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/refresh.jpg" alt="refresh">
                                 </span>
-                                <input type="password" style="display:none" autocomplete="new-password" />
+                                <input style="display: none;" name="password_confirmation" type="password" class="form-control" autocomplete="new-password" placeholder="Make a strong password">
                                 <input name="password_confirmation" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
-                                   aria-describedby="confirmPasswordHelp" autocomplete="off" placeholder="Re-enter your password">
+                                   aria-describedby="confirmPasswordHelp" autocomplete="new-password" placeholder="Re-enter your password">
                             </div>
                             @error('password_confirmation')
                             <div class="invalid-feedback">
