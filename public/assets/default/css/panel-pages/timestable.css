@@ -441,6 +441,9 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .rurera-timeline input[type="range"] {
     margin-top: 0;
 }
+.analytics_type_fields {
+    width: 100%;
+}
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
