@@ -470,6 +470,13 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     background-color: #f7f7f7 !important;
     border-bottom: 1px solid #ddd;
 }
+.statuses-list span i {
+    margin-right: 5px;
+}
+.statuses-list span {
+    display: inline-flex;
+    align-items: center;
+}
 /*Analytics_Data_Block Style End*/
 /*****************************
 TimesTable Page | Student Panel Style End
