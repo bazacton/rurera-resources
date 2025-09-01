@@ -93,6 +93,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/refresh.jpg" alt="refresh">
                                 </span>
+                                <input type="password" style="display:none" autocomplete="new-password" />
                                 <input name="password_confirmation" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
                                    aria-describedby="confirmPasswordHelp" autocomplete="off" placeholder="Re-enter your password">
