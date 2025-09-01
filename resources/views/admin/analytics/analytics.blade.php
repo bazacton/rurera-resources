@@ -26,7 +26,6 @@
         margin-bottom: 10px;
         padding: 5px 10px;
         flex: 0 0 10.3333%;
-        max-width: 10.3333%;
     }
     .users-list li a.parent-remove {
         float: right;
@@ -37,10 +36,79 @@
         display: flex;
         align-items: center;
         gap: 15px;
+        width: 100%;
+        overflow: hidden;
+        padding: 5px 15px 5px 25px;
+        margin: 0 0 25px;
     }
     .rurera-timeline input[type="range"] {
         flex: 1;
-        accent-color: #4a6cff; /* slider color */
+        accent-color: #4a6cff;
+        margin-top: 0;
+        background: none;
+        padding: 0;
+        border: 0;
+    }
+    .rurera-timeline input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #2196f3;
+    border-radius: 5px;
+    }
+
+    .rurera-timeline input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    transition: 0.3s;
+    }
+    .rurera-timeline input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    }
+    .rurera-timeline input[type="range"]::-moz-range-track {
+    height: 6px;
+    background: linear-gradient(90deg, #4caf50, #2196f3);
+    border-radius: 5px;
+    }
+    .rurera-timeline input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+    .rurera-timeline input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    }
+    .rurera-timeline input[type="range"]::-ms-track {
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    }
+    .rurera-timeline input[type="range"]::-ms-fill-lower {
+    background: #4caf50;
+    border-radius: 5px;
+    }
+    .rurera-timeline input[type="range"]::-ms-fill-upper {
+    background: #2196f3;
+    border-radius: 5px;
+    }
+    .rurera-timeline input[type="range"]::-ms-thumb {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    cursor: pointer;
     }
     .rurera-timeline .date-label {
         background: #e6e6e6;
