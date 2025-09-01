@@ -94,7 +94,9 @@
                                         <h3>Payment Methods</h3>
                                         <span>Manage your payment methods from here.</span>
                                     </div>
-                                    <button type="button" class="method-btn"><img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt"> New Method</button>
+                                    <button type="button" class="method-btn" data-toggle="modal" data-target="#newMethod">
+                                        <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt"> New Method
+                                    </button>
                                 </div>
                                 <div class="payment-card-holder">
                                     <div class="row">
@@ -1126,6 +1128,65 @@
         </div>
     </div>
 
+    <!-- Add New Billing Card Modal  -->
+    <div class="modal fade" id="newMethod" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newMethodLabel">Add Card</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-form">
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Card Holder Name:</label>
+                                    <div class="form-field">
+                                        <img src="/assets/default/svgs/card-credit.svg" alt="card-credit">
+                                        <input type="text" name="card_name" class="form-control" placeholder="Enter Caed Holder Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Card Number:</label>
+                                    <div class="form-field">
+                                        <img src="/assets/default/svgs/user.svg" alt="user">
+                                        <input type="text" name="card_number" class="form-control" placeholder="4444 4444 4444 4444">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Expires:</label>
+                                    <div class="form-field">
+                                        <input type="text" name="card_expires" class="form-control" placeholder="mm/yy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>CVC:</label>
+                                    <div class="form-field">
+                                        <input type="text" name="card_cvc" class="form-control" placeholder="***">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection
