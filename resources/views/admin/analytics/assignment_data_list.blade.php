@@ -25,7 +25,7 @@
     <span class="status-correct"><i class="fas fa-dot-circle"></i> Correct</span> &nbsp;&nbsp;&nbsp;
     <span class="status-not_attempted"><i class="fas fa-dot-circle"></i> Not Attempted</span>
 </div>
-<div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap pb-15">
+<div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap">
     <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
         <li class="nav-item">
             <div class="skelton-height-lg skelton-mb-0">

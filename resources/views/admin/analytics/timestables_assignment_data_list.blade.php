@@ -17,36 +17,37 @@
         background: #ff4b4b;
     }
 </style>
-<div class="table-responsive">
-    <div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap pb-15">
-        <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-            <li class="nav-item">
-                <div class="skelton-height-lg skelton-mb-0">
-                    <a class="nav-link attempt-type-btn {{($attempt_to_show == 'last_attempt')? 'active' : ''}}" data-attempt_type="last_attempt" id="topics-tab" href="javascript:;">
-                        <i class="fas fa-file mx-0"></i>
-                        <span class="tab-title">Last Attempt</span>
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="skelton-height-lg skelton-mb-0">
-                    <a class="nav-link attempt-type-btn {{($attempt_to_show == 'first_attempt')? 'active' : ''}}" data-attempt_type="first_attempt" id="topics-tab" href="javascript:;">
-                        <i class="fas fa-calendar-week mx-0"></i>
-                        <span class="tab-title">First Attempt</span>
-                    </a>
-                </div>
-            </li>
+<div class="admin-rurera-tabs-holder d-flex align-items-center flex-wrap">
+    <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+        <li class="nav-item">
+            <div class="skelton-height-lg skelton-mb-0">
+                <a class="nav-link attempt-type-btn {{($attempt_to_show == 'last_attempt')? 'active' : ''}}" data-attempt_type="last_attempt" id="topics-tab" href="javascript:;">
+                    <i class="fas fa-file mx-0"></i>
+                    <span class="tab-title">Last Attempt</span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="skelton-height-lg skelton-mb-0">
+                <a class="nav-link attempt-type-btn {{($attempt_to_show == 'first_attempt')? 'active' : ''}}" data-attempt_type="first_attempt" id="topics-tab" href="javascript:;">
+                    <i class="fas fa-calendar-week mx-0"></i>
+                    <span class="tab-title">First Attempt</span>
+                </a>
+            </div>
+        </li>
 
-            <li class="nav-item">
-                <div class="skelton-height-lg skelton-mb-0">
-                    <a class="nav-link attempt-type-btn {{($attempt_to_show == 'best_attempt')? 'active' : ''}}" data-attempt_type="best_attempt" id="topics-tab" href="javascript:;">
-                        <i class="fas fa-calendar-week mx-0"></i>
-                        <span class="tab-title">Best Attempt</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
+        <li class="nav-item">
+            <div class="skelton-height-lg skelton-mb-0">
+                <a class="nav-link attempt-type-btn {{($attempt_to_show == 'best_attempt')? 'active' : ''}}" data-attempt_type="best_attempt" id="topics-tab" href="javascript:;">
+                    <i class="fas fa-calendar-week mx-0"></i>
+                    <span class="tab-title">Best Attempt</span>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="table-responsive">
+    
     <table class="table table-striped font-14">
         <tr>
             <th class="text-center">Student</th>
