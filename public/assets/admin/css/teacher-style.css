@@ -480,12 +480,14 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .user-edit-holder .tab-pane {
     padding: 0;
 }
-.user-edit-holder label {
+.user-edit-holder label,
+.add-new-card label {
     color: #314158;
     font-weight: 500;
     margin: 0 0 8px;
 }
-.user-edit-holder .form-field img {
+.user-edit-holder .form-field img,
+.add-new-card .form-field img {
     position: absolute;
     height: 18px;
     width: 18px;
@@ -494,29 +496,35 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     transform: translateY(-50%);
     filter: invert(72%) sepia(9%) saturate(834%) hue-rotate(176deg) brightness(88%) contrast(84%);
 }
-.user-edit-holder .form-field:has(img) input {
+.user-edit-holder .form-field:has(img) input,
+.add-new-card .form-field:has(img) input {
     padding-left: 35px;
 }
-.user-edit-holder .form-field .form-control {
+.user-edit-holder .form-field .form-control,
+.add-new-card .form-field .form-control {
     font-size: 14px;
     font-weight: 400;
     height: 39px;
     border-color: #cad5e2;
     border-radius: 10px !important;
 }
-body .user-edit-holder form .form-group .form-field .form-control::-webkit-input-placeholder {
+body .user-edit-holder form .form-group .form-field .form-control::-webkit-input-placeholder,
+body .add-new-card form .form-group .form-field .form-control::-webkit-input-placeholder {
   color: #90a1b9;
   opacity: 1;
 }
-body .user-edit-holder form .form-group .form-field .form-control::-moz-placeholder {
+body .user-edit-holder form .form-group .form-field .form-control::-moz-placeholder,
+body .add-new-card form .form-group .form-field .form-control::-moz-placeholder {
   color: #90a1b9;
   opacity: 1;
 }
-body .user-edit-holder form .form-group .form-field .form-control:-ms-input-placeholder {
+body .user-edit-holder form .form-group .form-field .form-control:-ms-input-placeholder,
+body .add-new-card form .form-group .form-field .form-control:-ms-input-placeholder {
   color: #90a1b9;
   opacity: 1;
 }
-body .user-edit-holder form .form-group .form-field .form-control:-moz-placeholder {
+body .user-edit-holder form .form-group .form-field .form-control:-moz-placeholder,
+body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
   color: #90a1b9;
   opacity: 1;
 }
