@@ -431,6 +431,9 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .hide {
     display: none !important;
 }
+.subject_topics_list {
+    width: 100%;
+}
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
