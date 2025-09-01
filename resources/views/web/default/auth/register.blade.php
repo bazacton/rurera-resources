@@ -78,8 +78,8 @@
                                 </span>
                                 <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
-                                   aria-describedby="passwordHelp" autocomplete="new-password" autocomplete="off" readonly
-       onfocus="this.removeAttribute('readonly');" placeholder="Make a strong password">
+                                   aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password" autocomplete="new-password" aria-autocomplete="none"
+       autocapitalize="off" spellcheck="false">
                             </div>
                             @error('password')
                             <div class="invalid-feedback">
