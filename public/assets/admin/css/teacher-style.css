@@ -952,6 +952,14 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     font-size: .857rem;
     display: block;
 }
+.add-new-card .modal-header {
+    background-color: #e2e8f0;
+    padding: 12px 25px;
+}
+.add-new-card .modal-header .modal-title {
+    font-size: 1rem;
+    color: #1d293d;
+}
 /* User Billing Page Style End */
 
 /* Rurera-Confirm-Modal Style Start */
