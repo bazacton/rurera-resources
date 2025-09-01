@@ -142,4 +142,38 @@
 
 @push('scripts_bottom')
     <script src="/assets/default/vendors/select2/select2.min.js"></script>
+    <script>
+        (() => {
+  const el = document.getElementById('pwd');
+
+  // Keep it readonly initially so browsers don't show suggestions
+  el.readOnly = true;
+
+  // Unlock on any user intent *before* focus happens
+  const unlockPointer = (e) => {
+    e.preventDefault();               // stop the default focus while readonly
+    el.readOnly = false;              // now it's a normal field
+    setTimeout(() => el.focus({preventScroll: true}), 0); // focus cleanly
+    cleanup();
+  };
+
+  // If user tabs into the field, unlock on focus/keydown
+  const unlockOnFocus = () => { el.readOnly = false; cleanup(); };
+  const unlockOnKeydown = () => { el.readOnly = false; cleanup(); };
+
+  const cleanup = () => {
+    el.removeEventListener('pointerdown', unlockPointer);
+    el.removeEventListener('mousedown', unlockPointer);
+    el.removeEventListener('touchstart', unlockPointer);
+    el.removeEventListener('focus', unlockOnFocus);
+    el.removeEventListener('keydown', unlockOnKeydown);
+  };
+
+  el.addEventListener('pointerdown', unlockPointer, {passive: false});
+  el.addEventListener('mousedown', unlockPointer, {passive: false});
+  el.addEventListener('touchstart', unlockPointer, {passive: false});
+  el.addEventListener('focus', unlockOnFocus, {once: true});
+  el.addEventListener('keydown', unlockOnKeydown, {once: true});
+})();
+    </script>
 @endpush
