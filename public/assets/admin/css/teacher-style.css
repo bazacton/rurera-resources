@@ -7054,7 +7054,7 @@ button.print-download-btn {
     padding-top: 0;
     padding-bottom: 0;
 }
-.card-body form .row,
+/* .card-body form .row,
 .card-body form.row {
     margin-left: -5px;
     margin-right: -5px;
@@ -7062,7 +7062,7 @@ button.print-download-btn {
 .card-body form [class*="col-"] {
     padding-left: 5px;
     padding-right: 5px;
-}
+} */
 .select-holder {position: relative;}
 .card-body form select.form-control,
 .card-body form .select2-container--default .select2-selection--single,
