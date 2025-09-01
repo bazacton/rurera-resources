@@ -76,7 +76,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
-                                <input name="password" type="password"
+                                <input name="password" type="password" id="pwd"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
                                    aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password" autocomplete="new-password" aria-autocomplete="none"
        autocapitalize="off" spellcheck="false" readonly
