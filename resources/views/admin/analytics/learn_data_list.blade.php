@@ -66,9 +66,6 @@
 
 
 <div class="topic-parts-data table-responsive">
-
-
-
     <table class="table heatmap-table">
         <thead>
         <tr class="topic-heading-top">

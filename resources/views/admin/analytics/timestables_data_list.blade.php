@@ -1,7 +1,6 @@
 
 
 <div class="heatmap-table-holder mb-20">
-
     <table class="table heatmap-table">
         <tr class="topic-heading-top">
             <th class="font-14">Student</th>
@@ -53,8 +52,6 @@
 
 
     </table>
-
-
 </div>
 <div class="status-in-words">
     <span class="st-wrong">Wrong</span>

@@ -30,7 +30,6 @@
         <li class="nav-item">
             <div class="skelton-height-lg skelton-mb-0">
                 <a class="nav-link attempt-type-btn {{($attempt_to_show == 'last_attempt')? 'active' : ''}}" data-attempt_type="last_attempt" id="topics-tab" href="javascript:;">
-                    <i class="fas fa-file mx-0"></i>
                     <span class="tab-title">Last Attempt</span>
                 </a>
             </div>
@@ -38,7 +37,6 @@
         <li class="nav-item">
             <div class="skelton-height-lg skelton-mb-0">
                 <a class="nav-link attempt-type-btn {{($attempt_to_show == 'first_attempt')? 'active' : ''}}" data-attempt_type="first_attempt" id="topics-tab" href="javascript:;">
-                    <i class="fas fa-calendar-week mx-0"></i>
                     <span class="tab-title">First Attempt</span>
                 </a>
             </div>
@@ -47,7 +45,6 @@
         <li class="nav-item">
             <div class="skelton-height-lg skelton-mb-0">
                 <a class="nav-link attempt-type-btn {{($attempt_to_show == 'best_attempt')? 'active' : ''}}" data-attempt_type="best_attempt" id="topics-tab" href="javascript:;">
-                    <i class="fas fa-calendar-week mx-0"></i>
                     <span class="tab-title">Best Attempt</span>
                 </a>
             </div>
