@@ -1815,7 +1815,7 @@
                 $(".assignment-reviewer-field").removeClass('rurera-req-field');
                 $(".assignment-reviewer-field").removeClass('backend-field-error');
                 if(review_date != ''){
-                    $(".assignment-reviewer-field").addClass('rurera-req-field');
+                    //$(".assignment-reviewer-field").addClass('rurera-req-field');
                 }
             });
 
