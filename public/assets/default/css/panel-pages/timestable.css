@@ -456,6 +456,16 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     margin: 0 0 15px;
 }
 /*Subject Topics List Style End*/
+
+/*Analytics_Data_Block Style Start*/
+.analytics_data_block {
+    width: 100%;
+    padding: 0 15px;
+}
+.analytics_data_block .statuses-list {
+    margin: 0 0 25px;
+}
+/*Analytics_Data_Block Style End*/
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
