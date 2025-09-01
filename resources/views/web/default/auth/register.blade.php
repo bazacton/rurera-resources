@@ -76,11 +76,9 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
-                                <input name="password" type="password" id="pwd"
+                                <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
-                                   aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password" autocomplete="new-password" aria-autocomplete="none"
-       autocapitalize="off" spellcheck="false" readonly
-       onfocus="this.removeAttribute('readonly');">
+                                   aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password">
                             </div>
                             @error('password')
                             <div class="invalid-feedback">
@@ -97,7 +95,7 @@
                                 </span>
                                 <input name="password_confirmation" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
-                                   aria-describedby="confirmPasswordHelp" autocomplete="off" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" placeholder="Re-enter your password">
+                                   aria-describedby="confirmPasswordHelp" autocomplete="off" placeholder="Re-enter your password">
                             </div>
                             @error('password_confirmation')
                             <div class="invalid-feedback">
@@ -143,38 +141,4 @@
 
 @push('scripts_bottom')
     <script src="/assets/default/vendors/select2/select2.min.js"></script>
-    <script>
-        (() => {
-  const el = document.getElementById('pwd');
-
-  // Keep it readonly initially so browsers don't show suggestions
-  el.readOnly = true;
-
-  // Unlock on any user intent *before* focus happens
-  const unlockPointer = (e) => {
-    e.preventDefault();               // stop the default focus while readonly
-    el.readOnly = false;              // now it's a normal field
-    setTimeout(() => el.focus({preventScroll: true}), 0); // focus cleanly
-    cleanup();
-  };
-
-  // If user tabs into the field, unlock on focus/keydown
-  const unlockOnFocus = () => { el.readOnly = false; cleanup(); };
-  const unlockOnKeydown = () => { el.readOnly = false; cleanup(); };
-
-  const cleanup = () => {
-    el.removeEventListener('pointerdown', unlockPointer);
-    el.removeEventListener('mousedown', unlockPointer);
-    el.removeEventListener('touchstart', unlockPointer);
-    el.removeEventListener('focus', unlockOnFocus);
-    el.removeEventListener('keydown', unlockOnKeydown);
-  };
-
-  el.addEventListener('pointerdown', unlockPointer, {passive: false});
-  el.addEventListener('mousedown', unlockPointer, {passive: false});
-  el.addEventListener('touchstart', unlockPointer, {passive: false});
-  el.addEventListener('focus', unlockOnFocus, {once: true});
-  el.addEventListener('keydown', unlockOnKeydown, {once: true});
-})();
-    </script>
 @endpush
