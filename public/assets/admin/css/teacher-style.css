@@ -585,7 +585,8 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     text-align: right !important;
     width: 100%;
 }
-.form-actions .btn {
+.form-actions .btn,
+.add-new-card .modal-footer button {
     background-color: #e9eef5;
     min-width: 112px;
     box-shadow: none;
@@ -596,7 +597,8 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     padding: 0;
     min-height: 37px;
 }
-.form-actions .save-btn {
+.form-actions .save-btn,
+.add-new-card .modal-footer .save-btn {
     background-color: var(--blue);
     color: #fff;
     margin-left: 8px;
