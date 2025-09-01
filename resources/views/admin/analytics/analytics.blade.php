@@ -356,7 +356,7 @@
                                 </div>
                             </div>
                             <div class="analytics_type_fields"></div>
-                            <div class="mt-20 mb-20">
+                            <div class="mt-20 mb-20 col-12">
                                 <button type="submit" class="btn btn-sm btn-primary">Analytics</button>
                             </div>
                             <div class="analytics_data_block"></div>
