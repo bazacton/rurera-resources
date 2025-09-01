@@ -446,8 +446,10 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .subject_topics_list .card.card-primary {
     border-top: 2px solid var(--primary);
 }
-.subject_topics_list .card-body {
-    padding: 0;
+.subject_topics_list .card > .card-body {
+    max-height: 160px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .subject_topics_list .card .card-header {
     min-height: auto;
