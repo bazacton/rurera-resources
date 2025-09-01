@@ -362,7 +362,7 @@
                                             </td>
                                             <td data-th="Assigned">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y')}}
-                                                    <span class="deadline-date"><b>Deadline:</b> {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</span></div>
+                                                    <br><span class="deadline-date"><b>Deadline:</b> {{dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y')}}</span></div>
                                             </td>
                                             <td data-th="AssignedBy">
                                                 <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$assignmentObj->creatorUser->get_full_name()}}</div>
