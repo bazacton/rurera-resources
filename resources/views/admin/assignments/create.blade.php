@@ -559,7 +559,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="practice-quiz-ajax-fields assignment_topic_type_fields conditional_fields_block practice_fields_block"></div>
+                                                <div class="practice-quiz-ajax-fields assignment_topic_type_fields conditional_fields_block practice_fields practice_fields_block"></div>
 
 
                                                 <div class="assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
@@ -1815,7 +1815,7 @@
                 $(".assignment-reviewer-field").removeClass('rurera-req-field');
                 $(".assignment-reviewer-field").removeClass('backend-field-error');
                 if(review_date != ''){
-                    $(".assignment-reviewer-field").addClass('rurera-req-field');
+                    //$(".assignment-reviewer-field").addClass('rurera-req-field');
                 }
             });
 
