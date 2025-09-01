@@ -78,7 +78,8 @@
                                 </span>
                                 <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
-                                   aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password">
+                                   aria-describedby="passwordHelp" autocomplete="new-password" autocomplete="off" readonly
+       onfocus="this.removeAttribute('readonly');" placeholder="Make a strong password">
                             </div>
                             @error('password')
                             <div class="invalid-feedback">
@@ -95,7 +96,7 @@
                                 </span>
                                 <input name="password_confirmation" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
-                                   aria-describedby="confirmPasswordHelp" autocomplete="off" placeholder="Re-enter your password">
+                                   aria-describedby="confirmPasswordHelp" autocomplete="off" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" placeholder="Re-enter your password">
                             </div>
                             @error('password_confirmation')
                             <div class="invalid-feedback">
