@@ -79,7 +79,8 @@
                                 <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
                                    aria-describedby="passwordHelp" autocomplete="new-password" placeholder="Make a strong password" autocomplete="new-password" aria-autocomplete="none"
-       autocapitalize="off" spellcheck="false">
+       autocapitalize="off" spellcheck="false" readonly
+       onfocus="this.removeAttribute('readonly');">
                             </div>
                             @error('password')
                             <div class="invalid-feedback">
