@@ -440,19 +440,17 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 }
 .rurera-timeline input[type="range"] {
     margin-top: 0;
+    background: none;
     padding: 0;
     border: 0;
-    -webkit-appearance: none;
-    width: 100%;
-    height: 6px;
-    border-radius: 5px;
-    background: linear-gradient(to right, #4caf50 40%, #ddd 40%);
-    outline: none;
-    cursor: pointer;
-    transition: background 0.3s;
 }
 .analytics_type_fields {
     width: 100%;
+}
+.rurera-timeline input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #2196f3;
+  border-radius: 5px;
 }
 
 .rurera-timeline input[type="range"]::-webkit-slider-thumb {
@@ -460,43 +458,56 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
   appearance: none;
   width: 18px;
   height: 18px;
+  background: #fff;
+  border: 2px solid #2196f3;
   border-radius: 50%;
-  background: #2196f3;
-  border: 2px solid #fff;
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
   cursor: pointer;
   margin-top: -6px;
+  transition: 0.3s;
+}
+.rurera-timeline input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+.rurera-timeline input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  border-radius: 5px;
 }
 .rurera-timeline input[type="range"]::-moz-range-thumb {
   width: 18px;
   height: 18px;
+  background: #fff;
+  border: 2px solid #2196f3;
   border-radius: 50%;
-  background: #2196f3;
-  border: 2px solid #fff;
   cursor: pointer;
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
-
-.rurera-timeline input[type="range"]::-moz-range-progress {
-  background: #4caf50;
+.rurera-timeline input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+.rurera-timeline input[type="range"]::-ms-track {
+  width: 100%;
   height: 6px;
-  border-radius: 5px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
 }
-.rurera-timeline input[type="range"]::-moz-range-track {
-  background: #ddd;
-  height: 6px;
-  border-radius: 5px;
-}
-
 .rurera-timeline input[type="range"]::-ms-fill-lower {
   background: #4caf50;
   border-radius: 5px;
 }
 .rurera-timeline input[type="range"]::-ms-fill-upper {
-  background: #ddd;
+  background: #2196f3;
   border-radius: 5px;
 }
-
+.rurera-timeline input[type="range"]::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
