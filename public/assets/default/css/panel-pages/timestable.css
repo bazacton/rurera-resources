@@ -444,6 +444,67 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .analytics_type_fields {
     width: 100%;
 }
+.rurera-timeline input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #2196f3;
+  border-radius: 5px;
+}
+
+.rurera-timeline input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+  transition: 0.3s;
+}
+.rurera-timeline input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+.rurera-timeline input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  border-radius: 5px;
+}
+.rurera-timeline input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.rurera-timeline input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+.rurera-timeline input[type="range"]::-ms-track {
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.rurera-timeline input[type="range"]::-ms-fill-lower {
+  background: #4caf50;
+  border-radius: 5px;
+}
+.rurera-timeline input[type="range"]::-ms-fill-upper {
+  background: #2196f3;
+  border-radius: 5px;
+}
+.rurera-timeline input[type="range"]::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
