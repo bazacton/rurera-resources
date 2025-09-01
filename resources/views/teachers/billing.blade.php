@@ -1129,7 +1129,7 @@
     </div>
 
     <!-- Add New Billing Card Modal  -->
-    <div class="modal fade" id="newMethod" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade add-new-card" id="newMethod" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
