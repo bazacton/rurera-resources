@@ -466,6 +466,10 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .analytics_data_block .statuses-list {
     margin: 0 0 25px;
 }
+.heatmap-table tr.topic-heading-top:first-child th {
+    background-color: #f7f7f7 !important;
+    border-bottom: 1px solid #ddd;
+}
 /*Analytics_Data_Block Style End*/
 /*****************************
 TimesTable Page | Student Panel Style End
