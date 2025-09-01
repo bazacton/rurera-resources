@@ -1138,7 +1138,7 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pb-0">
                 <div class="card-form">
                     <form>
                         <div class="row">
@@ -1180,9 +1180,9 @@
                     </form>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
+            <div class="modal-footer pt-0">
+                <button type="button" class="cancel-btn" data-dismiss="modal">Cancel</button>
+                <button type="button" class="save-btn">Save</button>
             </div>
             </div>
         </div>
