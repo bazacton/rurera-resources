@@ -435,6 +435,25 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .subject_topics_list {
     width: 100%;
 }
+/*Subject Topics List Style Start*/
+.subject_topics_list {
+    padding: 0 15px;
+}
+.subject_topics_list .card {
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 0 20px 20px !important;
+}
+.subject_topics_list .card.card-primary {
+    border-top: 2px solid var(--primary);
+}
+.subject_topics_list .card-body {
+    padding: 0;
+}
+.subject_topics_list .card .card-header {
+    min-height: auto;
+    margin: 0 0 15px;
+}
+/*Subject Topics List Style End*/
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
