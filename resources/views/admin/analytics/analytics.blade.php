@@ -26,6 +26,7 @@
         margin-bottom: 10px;
         padding: 5px 10px;
         flex: 0 0 10.3333%;
+        line-height: normal;
     }
     .users-list li a.parent-remove {
         float: right;
