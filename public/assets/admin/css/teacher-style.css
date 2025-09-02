@@ -108,7 +108,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border-right: 2px solid #333;
     margin-top: -5px;
 }
-.dropdown-content {
+.sub-menu-sidebar .dropdown-content {
     display: flex;
     flex-direction: column;
     height: 100%;
