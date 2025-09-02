@@ -1405,7 +1405,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         position: absolute;
         right: 0;
         min-width: 290px;
-        z-index: 1;
+        z-index: 9995;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1800px) {
