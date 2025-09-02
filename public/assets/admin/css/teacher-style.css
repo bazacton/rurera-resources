@@ -182,10 +182,14 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     top: 50%;
     transform: translateY(-50%);
 }
+.card-body .rurera-search-filters.row {
+    margin:  0 -5px;
+}
 .card-body .rurera-search-filters [class*="col-"] {
     flex: 0 0 auto;
     max-width: none;
     width: auto;
+    padding: 0 5px;
 }
 .card-body .rurera-search-filters .input-group .form-control {
     width: auto;
