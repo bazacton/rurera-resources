@@ -1858,38 +1858,38 @@
         </ul>
         <br><br><br>
     </aside>
-    <div class="menu-dropdown">
-        <div class="dropdown-content">
-            <h5>Tables</h5>
-            <ul class="sub-menu">
-                <li>
-                    <a href="#">Orders Datatable v1</a>
-                </li>
-                <li>
-                    <a href="#">Orders Datatable v2</a>
-                </li>
-                <li>
-                    <a href="#">Courses Datatable</a>
-                </li>
-                <li>
-                    <a href="#">User Datatable</a>
-                </li>
-                <li>
-                    <a href="#">Courses Datatable</a>
-                </li>
-            </ul>
-            <ul class="sub-menu">
-                <li>
-                    <a href="#">Basic Table</a>
-                </li>
-                <li>
-                    <a href="#">React Table</a>
-                </li>
-                <li>
-                    <a href="#">Advanced Table</a>
-                </li>
-            </ul>
-        </div>
+</div>
+<div class="menu-dropdown">
+    <div class="dropdown-content">
+        <h5>Tables</h5>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">Orders Datatable v1</a>
+            </li>
+            <li>
+                <a href="#">Orders Datatable v2</a>
+            </li>
+            <li>
+                <a href="#">Courses Datatable</a>
+            </li>
+            <li>
+                <a href="#">User Datatable</a>
+            </li>
+            <li>
+                <a href="#">Courses Datatable</a>
+            </li>
+        </ul>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">Basic Table</a>
+            </li>
+            <li>
+                <a href="#">React Table</a>
+            </li>
+            <li>
+                <a href="#">Advanced Table</a>
+            </li>
+        </ul>
     </div>
 </div>
 
