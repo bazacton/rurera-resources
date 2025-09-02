@@ -74,6 +74,7 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
     height: auto;
     border-radius: 0;
     padding: 12px 20px;
+    color: #45556c;
 }
 body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar ~ .main-content {
     padding-left: 515px;
