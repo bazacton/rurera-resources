@@ -36,40 +36,42 @@
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }}">
-                        <a href="/admin" class="nav-link">
-                            <img src="/assets/default/img/sidebar/home.svg" alt="home">
-                            <span>{{ trans('admin/main.dashboard') }}</span>
-                        </a>
-                        <div class="menu-dropdown">
-                            <h5>Tables</h5>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">Orders Datatable v1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Orders Datatable v2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Courses Datatable</a>
-                                </li>
-                                <li>
-                                    <a href="#">User Datatable</a>
-                                </li>
-                                <li>
-                                    <a href="#">Courses Datatable</a>
-                                </li>
-                            </ul>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">Basic Table</a>
-                                </li>
-                                <li>
-                                    <a href="#">React Table</a>
-                                </li>
-                                <li>
-                                    <a href="#">Advanced Table</a>
-                                </li>
-                            </ul>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="subdropdoen" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/default/img/sidebar/home.svg" alt="home">
+                                <span>{{ trans('admin/main.dashboard') }}</span>
+                            </a>
+                            <div class="menu-dropdown" aria-labelledby="subdropdoen">
+                                <h5>Tables</h5>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Orders Datatable v1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Orders Datatable v2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Courses Datatable</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">User Datatable</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Courses Datatable</a>
+                                    </li>
+                                </ul>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Basic Table</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">React Table</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Advanced Table</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 @endcan
