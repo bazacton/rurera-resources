@@ -68,6 +68,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     top: 0 !important;
     
 }
+.admin_teacher_role:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
+    padding-left: 500px;
+}
 /* Admin Left Sub Menue Style End */
 
 /* Admin Classes Style Start */
