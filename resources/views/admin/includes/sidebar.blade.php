@@ -70,8 +70,11 @@
                                 </div>
                                 <div class="get-ai">
                                     <span class="ai-icon-box">
-
+                                        <img src="/assets/default/svgs/magic-hat.svg" alt="magic-hat">
                                     </span>
+                                    <h5>Get Trenning Ai</h5>
+                                    <p>Use Ai in every action on trenning webapp</p>
+                                    <button type="button" class="try-btn">Try it now</button>
                                 </div>
                             </div>
                         </div>
