@@ -54,10 +54,10 @@
                                         <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Users</a>
                                     </li>
                                 </ul>
-                                <ul class="sub-menu">
+                                <ul class="sub-menu" id="accordion">
                                     <li>
                                         <a href="#" data-toggle="collapse" href="#learning" aria-expanded="false" aria-controls="learning">Learning Content</a>
-                                        <div class="collapse" id="learning">
+                                        <div class="collapse" id="learning" data-parent="#accordion">
                                             <div class="dropdown-toggle-content">
                                                 <ul>
                                                     <li>
