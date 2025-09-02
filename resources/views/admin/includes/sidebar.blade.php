@@ -52,13 +52,11 @@
                             <!-- Accordion -->
                             <ul class="sub-menu" id="accordion">
                                 <li>
-                                    <h5 id="headingTwo">
-                                        <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="false" aria-controls="learning">
+                                    <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="false" aria-controls="learning">
                                         Learning Content
-                                        </a>
-                                    </h5>
+                                    </a>
 
-                                    <div id="learning" class="collapse" data-parent="#accordion" aria-labelledby="headingTwo">
+                                    <div id="learning" class="collapse" data-parent="#accordion">
                                         <div class="dropdown-toggle-content">
                                             <ul>
                                                 <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Course</a></li>
