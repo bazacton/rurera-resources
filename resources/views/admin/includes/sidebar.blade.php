@@ -40,6 +40,26 @@
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
+                        <div class="menu-dropdown">
+                            <h5>Tables</h5>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Orders Datatable v1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders Datatable v2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Courses Datatable</a>
+                                </li>
+                                <li>
+                                    <a href="#">User Datatable</a>
+                                </li>
+                                <li>
+                                    <a href="#">Courses Datatable</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 @endcan
             @endif
