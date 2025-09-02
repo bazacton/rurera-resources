@@ -65,26 +65,6 @@
                         </span>
                         <span class="nav-sub-title font-16">Home</span>
                     </a>
-                    <div class="menu-dropdown">
-                        <h5>Tables</h5>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#">Orders Datatable v1</a>
-                            </li>
-                            <li>
-                                <a href="#">Orders Datatable v2</a>
-                            </li>
-                            <li>
-                                <a href="#">Courses Datatable</a>
-                            </li>
-                            <li>
-                                <a href="#">User Datatable</a>
-                            </li>
-                            <li>
-                                <a href="#">Courses Datatable</a>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
                 <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
                     <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Collections">
