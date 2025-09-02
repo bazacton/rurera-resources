@@ -1893,6 +1893,7 @@
 
 
 @push('scripts_bottom')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script>
     $('.dropdown-menu').on('click', function (e) {
         e.stopPropagation();
