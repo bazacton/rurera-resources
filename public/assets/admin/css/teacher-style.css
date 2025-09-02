@@ -59,7 +59,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     margin: 15px 0 0;
 }
 body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar {
-    width: 260px;
+    width: 250px;
     position: fixed;
     overflow: auto visible !important;
 }
@@ -102,7 +102,7 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
     padding: 0;
 }
 .admin_teacher_role.sidebar-mini .sub-menu-sidebar {
-    left: 260px;
+    left: 250px;
     opacity: 1;
 }
 .admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) nav.navbar {
