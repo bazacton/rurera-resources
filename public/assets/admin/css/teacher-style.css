@@ -104,7 +104,7 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
     opacity: 1;
 }
 .admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) nav.navbar {
-    padding-left: 260px;
+    padding-left: 440px;
 }
 .admin_role .sub-menu-sidebar {
     display: none;
