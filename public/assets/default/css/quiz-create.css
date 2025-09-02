@@ -1389,6 +1389,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         max-width: calc(100% - 872px);
     }
     .builder-right-sidebar-expand {display: none;}
+    .tab-content > #question_design.tab-pane {position: relative;}
     .lms-quiz-create #question_design [class*="col-"]:has(.lms-element-properties) {
         position: absolute;
         right: 0;
