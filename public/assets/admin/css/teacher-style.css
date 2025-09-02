@@ -40,7 +40,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     box-shadow: none;
     margin-top: 0;
 }
-.admin_teacher_role .sub-menu-sidebar li a {
+.admin_teacher_role .main-sidebar .sub-menu-sidebar li a {
     padding: 6px 0;
     line-height: normal;
     font-size: .8125rem;
