@@ -108,7 +108,8 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
 .admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) nav.navbar {
     padding-left: 440px;
 }
-.admin_role .sub-menu-sidebar {
+.admin_role .sub-menu-sidebar,
+.admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) .tooltip {
     display: none;
 }
 /* Admin Left Sub Menue Style End */
