@@ -105,6 +105,9 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
 .admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) nav.navbar {
     padding-left: 260px;
 }
+.admin_role .sub-menu-sidebar {
+    display: none;
+}
 /* Admin Left Sub Menue Style End */
 
 /* Admin Classes Style Start */
