@@ -59,6 +59,17 @@
                                     <a href="#">Courses Datatable</a>
                                 </li>
                             </ul>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Basic Table</a>
+                                </li>
+                                <li>
+                                    <a href="#">React Table</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advanced Table</a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 @endcan
