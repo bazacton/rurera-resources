@@ -24,7 +24,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 /* Admin Left Menue Style End */
 
 /* Admin Left Sub Menue Style Start */
-.sub-menu-sidebar {
+.admin_teacher_role .sub-menu-sidebar {
     position: fixed;
     left: 0;
     top: 0;
@@ -37,26 +37,36 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     height: 100%;
     opacity: 0;
     transition: all .5s;
+    box-shadow: none;
+    margin-top: 0;
 }
-.sub-menu-sidebar li a {
+.admin_teacher_role .sub-menu-sidebar li a {
     padding: 6px 0;
     line-height: normal;
     font-size: .8125rem;
     font-weight: 600;
 }
-.sub-menu-sidebar h5 {
+.admin_teacher_role .sub-menu-sidebar h5 {
     font-size: 1rem;
     color: #1d293d;
     margin: 0 0 18px;
 }
-.sub-menu-sidebar li a:hover {
+.admin_teacher_role .sub-menu-sidebar li a:hover {
     background-color: inherit;
     color: var(--blue);
 }
-.sub-menu-sidebar .dropdown-content .sub-menu:last-child {
+.admin_teacher_role .sub-menu-sidebar .dropdown-content .sub-menu:last-child {
     border-top: 1px solid #f2f2f2;
     padding: 15px 0 0;
     margin: 15px 0 0;
+}
+.admin_teacher_role .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
+    position: fixed !important;
+    left: 250px !important;
+    opacity: 1;
+    right: auto !important;
+    top: 0 !important;
+    
 }
 /* Admin Left Sub Menue Style End */
 
