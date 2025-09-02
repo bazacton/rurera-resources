@@ -1894,8 +1894,19 @@
 
 @push('scripts_bottom')
 <script>
-    $('.dropdown-menu').on('click', function (e) {
+    function toggleAccordion(triggerSelector, targetSelector) {
+    $(triggerSelector).on('click', function (e) {
+        e.preventDefault();
         e.stopPropagation();
+
+        // Close other items inside same accordion
+        var parent = $(targetSelector).closest('.collapse').parent().parent();
+        parent.find('.collapse.show').not(targetSelector).collapse('hide');
+
+        // Toggle this one
+        $(targetSelector).collapse('toggle');
     });
+    }
+
 </script>
 @endpush
