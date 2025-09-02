@@ -726,6 +726,9 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .main-wrapper nav.navbar .notification-toggle.disabled img {
     display: none;
 }
+.admin_role .sub-menu-sidebar {
+    display: none;
+}
 
 @media (max-width: 575.98px) {
     body.search-show .navbar .form-inline .search-element {display: block;}
