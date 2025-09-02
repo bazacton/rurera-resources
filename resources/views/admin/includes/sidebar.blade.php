@@ -1894,9 +1894,7 @@
 
 @push('scripts_bottom')
 <script>
-    $('.dropdown-menu').on('click', function (e) {
-        e.stopPropagation();
-    });
+
     function toggleAccordion(triggerSelector, targetSelector) {
     $(triggerSelector).on('click', function (e) {
         e.preventDefault();
@@ -1908,6 +1906,9 @@
 
         // Toggle this one
         $(targetSelector).collapse('toggle');
+    });
+    $('.dropdown-menu').on('click', function (e) {
+        e.stopPropagation();
     });
     }
 
