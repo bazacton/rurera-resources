@@ -42,33 +42,37 @@
                         </a>
                         <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
                             <div class="dropdown-content">
-                            <h5>Reports</h5>
-                            <ul class="sub-menu">
-                                <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a></li>
-                                <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Leaderboard</a></li>
-                                <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Users</a></li>
-                            </ul>
+                                <div class="dropdown-nav-area">
+                                    <h5>Reports</h5>
+                                    <ul class="sub-menu">
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a></li>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Leaderboard</a></li>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Users</a></li>
+                                    </ul>
 
-                            <!-- Accordion -->
-                            <ul class="sub-menu" id="accordion">
-                                <li>
-                                    <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="true" aria-controls="learning">
-                                        Learning Content
-                                    </a>
+                                    <ul class="sub-menu" id="accordion">
+                                        <li>
+                                            <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="true" aria-controls="learning">
+                                                Choose Type
+                                            </a>
 
-                                    <div id="learning" class="collapse show" data-parent="#accordion">
-                                        <div class="dropdown-toggle-content">
-                                            <ul>
-                                                <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Course</a></li>
-                                                <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Page</a></li>
-                                                <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Assignment</a></li>
-                                                <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Quiz</a></li>
-                                                <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Learning Path</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    </li>
-                                </ul>
+                                            <div id="learning" class="collapse show" data-parent="#accordion">
+                                                <div class="dropdown-toggle-content">
+                                                    <ul>
+                                                        <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Self Learning</a></li>
+                                                        <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Mock Tests</a></li>
+                                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Assignment</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="get-ai">
+                                    <span class="ai-icon-box">
+
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </li>
