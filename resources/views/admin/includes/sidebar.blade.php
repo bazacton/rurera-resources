@@ -57,7 +57,7 @@
                                 <ul class="sub-menu" id="accordion">
                                     <li>
                                         <a href="#" data-toggle="collapse" data-target="#learning" aria-expanded="true" aria-controls="learning">Learning Content</a>
-                                        <div class="collapse" id="learning" data-parent="#accordion">
+                                        <div class="collapse" id="learning" data-parent="#accordion" aria-labelledby="learning">
                                             <div class="dropdown-toggle-content">
                                                 <ul>
                                                     <li>
