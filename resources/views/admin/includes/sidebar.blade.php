@@ -37,41 +37,10 @@
                 @can('admin_general_dashboard_show')
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }}">
                         <div class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="subdropdoen" aria-haspopup="true" aria-expanded="false">
+                            <a href="/admin" class="nav-link">
                                 <img src="/assets/default/img/sidebar/home.svg" alt="home">
                                 <span>{{ trans('admin/main.dashboard') }}</span>
                             </a>
-                            <div class="menu-dropdown dropdown-menu" aria-labelledby="subdropdoen">
-                                <h5>Tables</h5>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Orders Datatable v1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Orders Datatable v2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Courses Datatable</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">User Datatable</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Courses Datatable</a>
-                                    </li>
-                                </ul>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Basic Table</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">React Table</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Advanced Table</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </li>
                 @endcan
@@ -1889,5 +1858,38 @@
         </ul>
         <br><br><br>
     </aside>
+    <div class="menu-dropdown">
+        <div class="dropdown-content">
+            <h5>Tables</h5>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">Orders Datatable v1</a>
+                </li>
+                <li>
+                    <a href="#">Orders Datatable v2</a>
+                </li>
+                <li>
+                    <a href="#">Courses Datatable</a>
+                </li>
+                <li>
+                    <a href="#">User Datatable</a>
+                </li>
+                <li>
+                    <a href="#">Courses Datatable</a>
+                </li>
+            </ul>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">Basic Table</a>
+                </li>
+                <li>
+                    <a href="#">React Table</a>
+                </li>
+                <li>
+                    <a href="#">Advanced Table</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
