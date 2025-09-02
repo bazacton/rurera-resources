@@ -47,7 +47,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a></li>
                                         <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Leaderboard</a></li>
-                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Users</a></li>
+                                        <li><a href="#"><img src="/assets/default/svgs/user.svg" alt="user"> Users</a></li>
                                     </ul>
 
                                     <ul class="sub-menu" id="accordion">
