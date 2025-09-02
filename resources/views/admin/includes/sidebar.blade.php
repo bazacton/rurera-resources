@@ -1901,3 +1901,10 @@
 </div>
 
 
+@push('scripts_bottom')
+<script>
+    $('.dropdown-menu').on('click', function(e) {
+        e.stopPropagation();
+    });
+</script>
+@endpush
