@@ -41,7 +41,7 @@
                                 <img src="/assets/default/img/sidebar/home.svg" alt="home">
                                 <span>{{ trans('admin/main.dashboard') }}</span>
                             </a>
-                            <div class="menu-dropdown" aria-labelledby="subdropdoen">
+                            <div class="menu-dropdown dropdown-menu" aria-labelledby="subdropdoen">
                                 <h5>Tables</h5>
                                 <ul class="sub-menu">
                                     <li>
