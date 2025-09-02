@@ -35,12 +35,12 @@
         <ul class="sidebar-menu">
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
-                    <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }} menu">
+                    <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }} menu show">
                         <a href="#" class="nav-link dropdown-toggle" id="sub-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
-                        <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="sub-menu">
+                        <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
                             <div class="dropdown-content">
                             <h5>Reports</h5>
                             <ul class="sub-menu">
@@ -52,7 +52,7 @@
                             <!-- Accordion -->
                             <ul class="sub-menu" id="accordion">
                                 <li>
-                                    <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="false" aria-controls="learning">
+                                    <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="true" aria-controls="learning">
                                         Learning Content
                                     </a>
 
