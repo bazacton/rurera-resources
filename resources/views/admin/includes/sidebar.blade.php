@@ -1894,10 +1894,13 @@
 
 @push('scripts_bottom')
 <script>
+    $('.dropdown-menu').on('click', function (e) {
+        e.stopPropagation();
+    });
     function toggleAccordion(triggerSelector, targetSelector) {
     $(triggerSelector).on('click', function (e) {
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // keeps dropdown open
 
         // Close other items inside same accordion
         var parent = $(targetSelector).closest('.collapse').parent().parent();
