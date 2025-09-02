@@ -1389,6 +1389,11 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         max-width: calc(100% - 872px);
     }
     .builder-right-sidebar-expand {display: none;}
+    .lms-quiz-create #question_design [class*="col-"]:has(.lms-element-properties) {
+        position: absolute;
+        right: 0;
+        min-width: 290px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1800px) {
     .builder-right-sidebar-expand {display: inline-flex;}
