@@ -80,7 +80,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .sidebar-menu li.menu .dropdown-toggle:after {transform: rotate(-90deg);}
 .admin_teacher_role.sidebar-mini .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
-    left: 65px !important;
+    transform: translateX(65px) !important;
 }
 .admin_teacher_role.sidebar-mini:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
     padding-left: 315px;
