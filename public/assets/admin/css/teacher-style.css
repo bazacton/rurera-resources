@@ -23,6 +23,35 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role .role-title {font-size: 10px; line-height: normal; background-color: #f0f0fd; color: var(--blue); padding: 5px 5px; border-radius: 3px; margin-left: auto;}
 /* Admin Left Menue Style End */
 
+/* Admin Left Sub Menue Style Start */
+.menu-dropdown {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    margin-left: 5px;
+    min-width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.admin_teacher_role .main-sidebar:has(.menu-dropdown) {
+    overflow: inherit !important;
+}
+.admin_teacher_role .main-sidebar .sidebar-menu .menu-dropdown a {
+    padding: 6px 0;
+    line-height: normal;
+}
+.menu-dropdown h5 {
+    font-size: 1rem;
+    color: #1d293d;
+    margin: 0 0 15px;
+}
+.admin_teacher_role .main-sidebar .sidebar-menu .menu-dropdown a:hover {
+    background-color: inherit;
+    color: var(--blue);
+}
+/* Admin Left Sub Menue Style End */
+
 /* Admin Classes Style Start */
 .admin_teacher_role .nav-area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 0; border-bottom: 0;}
 .admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 0; margin-left: auto;}
