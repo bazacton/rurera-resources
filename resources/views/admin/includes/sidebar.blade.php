@@ -56,7 +56,7 @@
                                 </ul>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#" data-toggle="collapse" href="#learning" role="button" aria-expanded="false" aria-controls="learning">Learning Content</a>
+                                        <a href="#" data-toggle="collapse" href="#learning" aria-expanded="false" aria-controls="learning">Learning Content</a>
                                         <div class="collapse" id="learning">
                                             <div class="dropdown-toggle-content">
                                                 <ul>
