@@ -723,6 +723,9 @@ Questions Builder Right Sidebar Style Start
 .lms-element-properties .note-editor .note-btn-group.btn-group.note-list {
     margin: 5px 0 0;
 }
+.lms-element-properties .note-editor .note-toolbar .note-para .note-dropdown-menu {
+    min-width: auto;
+}
 /*Admin Popup Style End*/
 
 /* Admin Popup Tabs Style Start */
