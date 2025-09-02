@@ -53,7 +53,7 @@
                             <ul class="sub-menu" id="accordion">
                                 <li>
                                     <h5 id="headingTwo">
-                                        <a href="#" data-target="#learning" data-toggle="collapse" aria-expanded="false" aria-controls="learning">
+                                        <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="false" aria-controls="learning">
                                         Learning Content
                                         </a>
                                     </h5>
@@ -1896,21 +1896,22 @@
 <script>
 
     function toggleAccordion(triggerSelector, targetSelector) {
-    $(triggerSelector).on('click', function (e) {
+        $(triggerSelector).on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation(); // keeps dropdown open
+
+            // Close other items inside same accordion
+            var parent = $(targetSelector).closest('.collapse').parent().parent();
+            parent.find('.collapse.show').not(targetSelector).collapse('hide');
+
+            // Toggle this one
+            $(targetSelector).collapse('toggle');
+        });
+    }
+    $(document).on('click', '.dropdown-menu a[data-toggle="collapse"], .dropdown-menu a.accordion-toggle-btn', function (e) {
         e.preventDefault();
-        e.stopPropagation(); // keeps dropdown open
-
-        // Close other items inside same accordion
-        var parent = $(targetSelector).closest('.collapse').parent().parent();
-        parent.find('.collapse.show').not(targetSelector).collapse('hide');
-
-        // Toggle this one
-        $(targetSelector).collapse('toggle');
-    });
-    $('.dropdown-menu').on('click', function (e) {
         e.stopPropagation();
     });
-    }
 
 </script>
 @endpush
