@@ -72,7 +72,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding-left: 500px;
 }
 .admin_teacher_role:has(.sidebar-menu li.menu.show) nav.navbar {
-    padding-left: 440px;
+    padding-left: 240px;
 }
 .sidebar-menu li.menu .dropdown-toggle:after {transform: rotate(-90deg);}
 /* Admin Left Sub Menue Style End */
