@@ -1859,7 +1859,7 @@
         <br><br><br>
     </aside>
 </div>
-<div class="menu-dropdown">
+<div class="sub-menu-sidebar">
     <div class="dropdown-content">
         <h5>Tables</h5>
         <ul class="sub-menu">
