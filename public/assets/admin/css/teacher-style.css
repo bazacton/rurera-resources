@@ -2699,6 +2699,10 @@ Tailer Hub Style Start
 .rureraform-search-field button i {
     color: #999;
     margin: 0 5px 0 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
 }
 .search-option-btn .search-or-lable {
     margin-right: 10px;
