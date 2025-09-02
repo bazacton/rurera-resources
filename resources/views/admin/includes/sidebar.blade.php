@@ -59,9 +59,9 @@
                                             <div id="learning" class="collapse show" data-parent="#accordion">
                                                 <div class="dropdown-toggle-content">
                                                     <ul>
-                                                        <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Self Learning</a></li>
-                                                        <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Mock Tests</a></li>
-                                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Assignment</a></li>
+                                                        <li><a href="#"><img src="/assets/default/img/assignment-logo/practice.png" alt="practice"> Self Learning</a></li>
+                                                        <li><a href="#"><img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables"> Mock Tests</a></li>
+                                                        <li><a href="#"><img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary"> Assignment</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
