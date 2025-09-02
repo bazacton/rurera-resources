@@ -77,7 +77,7 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
     color: #45556c;
 }
 body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar ~ .main-content {
-    padding-left: 515px;
+    padding-left: 500px;
 }
 
 body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-brand {
