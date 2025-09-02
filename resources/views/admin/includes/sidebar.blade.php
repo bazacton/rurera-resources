@@ -56,7 +56,7 @@
                                         Learning Content
                                     </a>
 
-                                    <div id="learning" class="collapse" data-parent="#accordion">
+                                    <div id="learning" class="collapse show" data-parent="#accordion">
                                         <div class="dropdown-toggle-content">
                                             <ul>
                                                 <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Course</a></li>
