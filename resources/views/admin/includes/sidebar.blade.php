@@ -74,7 +74,7 @@
                                     </span>
                                     <h5>Get Trenning Ai</h5>
                                     <p>Use Ai in every action on trenning webapp</p>
-                                    <button type="button" class="try-btn">Try it now</button>
+                                    <button type="button" class="try-btn">Try it now <img src="/assets/default/svgs/arrow-up-right.svg" alt="arrow-up-right"></button>
                                 </div>
                             </div>
                         </div>
