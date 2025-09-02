@@ -42,33 +42,42 @@
                         </a>
                         <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="sub-menu">
                             <div class="dropdown-content">
-                                <h5>Tables</h5>
+                                <h5>Reports</h5>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">Orders Datatable v1</a>
+                                        <a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a>
                                     </li>
                                     <li>
-                                        <a href="#">Orders Datatable v2</a>
+                                        <a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment">Leaderboard</a>
                                     </li>
                                     <li>
-                                        <a href="#">Courses Datatable</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">User Datatable</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Courses Datatable</a>
+                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Users</a>
                                     </li>
                                 </ul>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">Basic Table</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">React Table</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Advanced Table</a>
+                                        <a href="#" data-toggle="collapse" href="#learning" role="button" aria-expanded="false" aria-controls="learning">Learning Content</a>
+                                        <div class="collapse" id="learning">
+                                            <div class="dropdown-toggle-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Course</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment">Page</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Assignment</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Quiz</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Learning Path</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
