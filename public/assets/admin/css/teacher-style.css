@@ -58,60 +58,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding: 15px 0 0;
     margin: 15px 0 0;
 }
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar {
-    width: 250px;
-    position: fixed;
-    overflow: auto visible !important;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-menu {
-    padding-top: 10px;
-    margin-top: 10px;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-menu > li > a span {
-    display: inline-block;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-menu > li > a {
-    height: auto;
-    border-radius: 0;
-    padding: 12px 20px;
-    color: #45556c;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar ~ .main-content {
-    padding-left: 500px;
-}
-
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-brand {
-    display: inline-flex;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-brand-sm {
-    display: none;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar:after {
-    display: none;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .create-modal-btn .text-btn {
-    display: inline-flex;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .create-modal-btn .icon-box {
-    display: none;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-menu li img {
-    margin-right: 10px;
-}
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sidebar-menu > li {
-    padding: 0;
-}
-.admin_teacher_role.sidebar-mini .sub-menu-sidebar {
-    left: 250px;
-    opacity: 1;
-}
-.admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) nav.navbar {
-    padding-left: 440px;
-}
-.admin_role .sub-menu-sidebar,
-.admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar) .tooltip {
-    display: none;
-}
 /* Admin Left Sub Menue Style End */
 
 /* Admin Classes Style Start */
