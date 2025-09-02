@@ -1903,7 +1903,7 @@
 
 @push('scripts_bottom')
 <script>
-    $('.dropdown-menu').on('click', function(e) {
+    $('.dropdown-menu').on('click', function (e) {
         e.stopPropagation();
     });
 </script>
