@@ -87,7 +87,7 @@ body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar .sideb
 body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .main-sidebar:after {
     display: none;
 }
-body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .create-modal-btn .text-btn, .create-modal-btn .icon-box {
+body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .create-modal-btn .text-btn {
     display: inline-flex;
 }
 body.sidebar-mini.admin_teacher_role:has(.sub-menu-sidebar) .create-modal-btn .icon-box {
