@@ -35,7 +35,7 @@
         <ul class="sidebar-menu">
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
-                    <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }}">
+                    <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }} menu">
                         <a href="#" class="nav-link dropdown-toggle" id="sub-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
@@ -1893,6 +1893,9 @@
 
 
 @push('scripts_bottom')
-
-
+<script>
+    $('.dropdown-menu').on('click', function (e) {
+        e.stopPropagation();
+    });
+</script>
 @endpush
