@@ -34,7 +34,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     background-color: #fff;
     margin-left: 0;
     min-width: 240px;
-    padding: 15px;
+    padding: 20px 15px 15px;
     border: 1px solid #f2f2f2;
 }
 .admin_teacher_role .main-sidebar:has(.menu-dropdown) {
@@ -49,7 +49,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .menu-dropdown h5 {
     font-size: 1rem;
     color: #1d293d;
-    margin: 0 0 15px;
+    margin: 0 0 18px;
 }
 .admin_teacher_role .main-sidebar .sidebar-menu .menu-dropdown a:hover {
     background-color: inherit;
