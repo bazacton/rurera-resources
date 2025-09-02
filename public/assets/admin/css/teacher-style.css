@@ -85,6 +85,29 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role.sidebar-mini:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
     padding-left: 315px;
 }
+.admin_teacher_role .main-sidebar .sub-menu-sidebar .accordion-toggle-btn {
+    font-size: .85rem;
+    color: #1d293d;
+}
+.sub-menu-sidebar .accordion-toggle-btn:after {
+    content: "";
+    position:absolute;
+    right: 0;
+    top: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    width: 8px;
+    transform: rotate(45deg);
+}
+.sub-menu-sidebar .accordion-toggle-btn.collapsed:after {
+    transform:rotate(45deg);
+    border: 0;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    margin-top: -6px;
+}
 /* Admin Left Sub Menue Style End */
 
 /* Admin Classes Style Start */
