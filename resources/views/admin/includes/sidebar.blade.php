@@ -42,45 +42,35 @@
                         </a>
                         <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="sub-menu">
                             <div class="dropdown-content">
-                                <h5>Reports</h5>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment">Leaderboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Users</a>
-                                    </li>
-                                </ul>
-                                <ul class="sub-menu" id="accordion">
-                                    <li>
-                                        <h5 id="headingTwo"><a href="#learning" data-toggle="collapse" data-target="#learning" aria-expanded="true" aria-controls="learning">Learning Content</a></h5>
-                                        
-                                        <div class="collapse" id="learning" data-parent="#accordion" aria-labelledby="headingTwo">
-                                            <div class="dropdown-toggle-content">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Course</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment">Page</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Assignment</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Quiz</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home">Learning Path</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <h5>Reports</h5>
+                            <ul class="sub-menu">
+                                <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a></li>
+                                <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Leaderboard</a></li>
+                                <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Users</a></li>
+                            </ul>
+
+                            <!-- Accordion -->
+                            <ul class="sub-menu" id="accordion">
+                                <li>
+                                <h5 id="headingTwo">
+                                    <a href="#learning" data-toggle="collapse" aria-expanded="false" aria-controls="learning">
+                                    Learning Content
+                                    </a>
+                                </h5>
+
+                                <div id="learning" class="collapse" data-parent="#accordion" aria-labelledby="headingTwo">
+                                    <div class="dropdown-toggle-content">
+                                    <ul>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Course</a></li>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Page</a></li>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Assignment</a></li>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Quiz</a></li>
+                                        <li><a href="#"><img src="/assets/default/img/sidebar/home.svg" alt="home"> Learning Path</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
                             </div>
                         </div>
                     </li>
