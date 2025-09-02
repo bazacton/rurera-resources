@@ -37,9 +37,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     padding: 20px 15px 15px;
     border: 1px solid #f2f2f2;
 }
-.admin_teacher_role .main-sidebar:has(.menu-dropdown) {
-    overflow: inherit !important;
-}
 .admin_teacher_role .main-sidebar .sidebar-menu .menu-dropdown a {
     padding: 6px 0;
     line-height: normal;
