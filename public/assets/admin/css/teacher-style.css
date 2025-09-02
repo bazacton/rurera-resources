@@ -33,13 +33,14 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     min-width: 240px;
     padding: 20px 15px 15px;
     border: 1px solid #f2f2f2;
-    z-index: 2;
+    z-index: 0;
     height: 100%;
     opacity: 0;
     box-shadow: none;
     margin-top: 0;
-    transform: translateX(-100%);
+    transform: translateX(-100%) !important;
     transition: transform 0.5s ease;
+    display: block !important;
 }
 .admin_teacher_role .main-sidebar .sub-menu-sidebar li a {
     padding: 6px 0;
@@ -63,11 +64,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .admin_teacher_role .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
     position: fixed !important;
-    left: 0 !important;
     opacity: 1;
     right: auto !important;
     top: 0 !important;
-    transform: translateX(0);
+    transform: translateX(100%) !important;
     
 }
 .admin_teacher_role:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
