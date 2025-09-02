@@ -223,9 +223,10 @@
                                     <td>
                                         <span>{{ $TopicPartsData->title }}</span>
                                     </td>
-									<td class="text-left">{{ $TopicPartsData->topicSubParts->count() }}</td>
+									@php $no_records = 0; @endphp
+									<td class="text-left">{{ $no_records }}</td>
 									<td class="text-left">{{$expected_questions}}</td>
-									<td class="text-left">{{ $TopicPartsData->topicPartQuestions->count() }}</td>
+									<td class="text-left">{{ $no_records }}</td>
                                     <td class="text-left">{{ (isset($TopicPartsData->category->id))? $TopicPartsData->category->getTitleAttribute() : '-' }}
 									<br>
 										<small>
@@ -244,9 +245,7 @@
                                         @endcan
 
                                         @can('admin_topic_parts_delete')
-											@if( $TopicPartsData->topicPartQuestions->count() == 0)
-												@include('admin.includes.delete_button',['url' => '/admin/topics_parts/'.$TopicPartsData->id.'/delete' , 'btnClass' => 'btn-sm'])
-											@endif
+											
                                         @endcan
                                     </td>
 
