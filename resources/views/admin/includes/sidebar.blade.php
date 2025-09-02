@@ -36,12 +36,10 @@
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }}">
-                        <div class="dropdown">
-                            <a href="/admin" class="nav-link">
-                                <img src="/assets/default/img/sidebar/home.svg" alt="home">
-                                <span>{{ trans('admin/main.dashboard') }}</span>
-                            </a>
-                        </div>
+                        <a href="/admin" class="nav-link">
+                            <img src="/assets/default/img/sidebar/home.svg" alt="home">
+                            <span>{{ trans('admin/main.dashboard') }}</span>
+                        </a>
                     </li>
                 @endcan
             @endif
