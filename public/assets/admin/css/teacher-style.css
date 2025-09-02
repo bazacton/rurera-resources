@@ -151,6 +151,11 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-weight: 700;
     padding: 6px 15px;
 }
+.main-sidebar .get-ai .try-btn img {
+    margin: 0;
+    height: 15px;
+    width: 15px;
+}
 /* Admin Left Sub Menue Style End */
 
 /* Admin Classes Style Start */
