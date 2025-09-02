@@ -726,7 +726,10 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .main-wrapper nav.navbar .notification-toggle.disabled img {
     display: none;
 }
-.admin_role .sub-menu-sidebar {
+.admin_role .sidebar-menu .menu .sub-menu-sidebar {
+    display: none !important;
+}
+.admin_role .dropdown-toggle::after {
     display: none;
 }
 
