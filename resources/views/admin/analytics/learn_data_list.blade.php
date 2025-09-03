@@ -73,7 +73,7 @@
             @php $total_sub_topics_count = 0; @endphp
             @if(!empty($topics_list_array))
                 @foreach($topics_list_array as $topics_list_id => $topics_list_title)
-                    <th class="font-14" colspan="2"> {{$topics_list_title}}</th>
+                    <th class="font-14" colspan="2"> <span>{{$topics_list_title}}</span></th>
                 @endforeach
             @endif
         </tr>
