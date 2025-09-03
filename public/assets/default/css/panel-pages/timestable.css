@@ -525,9 +525,14 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     border-top: none !important;
 }
 .heatmap-table .split-progress.progress-container {
-    gap: 5px;
+    gap: 0;
     background: none;
     width: 250px;
+    border-radius: 0;
+    height: 20px;
+}
+.split-progress .progress {
+    border-radius: 0;
 }
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(odd) th:nth-child(even) {
     background-color: #ffcf8a !important;
