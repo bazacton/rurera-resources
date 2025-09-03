@@ -527,6 +527,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .heatmap-table .split-progress.progress-container {
     gap: 5px;
     background: none;
+    width: 250px;
 }
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(odd) th:nth-child(even) {
     background-color: #ffcf8a !important;
