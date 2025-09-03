@@ -85,7 +85,7 @@
 													$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 													$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 													@endphp
-													<th colspan="3" class="{{$difficulty_level_class}}">{{$difficulty_level}}</th>
+													<th colspan="3" class="{{$difficulty_level_class}}"><span>{{$difficulty_level}}</span></th>
 												@endforeach
 											@endif
 											<th class="font-14">&nbsp;</th>

@@ -56,7 +56,7 @@
         <thead>
         <tr class="topic-heading-top">
             <th class="font-14"> &nbsp;</th>
-            <th class="font-14" colspan="{{$quizQuestionsListIds->count()+4}}"> {{$assignmentObj->title}}</th>
+            <th class="font-14" colspan="{{$quizQuestionsListIds->count()+4}}"> <span>{{$assignmentObj->title}}</span></th>
         </tr>
         <tr class="topic-heading-top">
             <th class="font-14">Student</th>

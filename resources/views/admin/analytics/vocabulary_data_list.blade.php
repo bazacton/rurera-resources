@@ -32,7 +32,7 @@
             <th class="font-14"> &nbsp;</th>
             @if($vocabulary_list->count() > 0)
                 @foreach($vocabulary_list as $vocabularyObj)
-                    <th class="font-14" colspan="{{$vocabularyObj->quizQuestionsList->count()+2}}"> {{$vocabularyObj->getTitleAttribute()}}</th>
+                    <th class="font-14" colspan="{{$vocabularyObj->quizQuestionsList->count()+2}}"> <span>{{$vocabularyObj->getTitleAttribute()}}</span></th>
                 @endforeach
             @endif
         </tr>

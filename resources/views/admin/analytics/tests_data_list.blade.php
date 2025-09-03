@@ -58,7 +58,7 @@
             <th class="font-14"> &nbsp;</th>
             @if($tests_list->count() > 0)
                 @foreach($tests_list as $testObj)
-                     <th class="font-14" colspan="4"> {{$testObj->getTitleAttribute()}}</th>
+                     <th class="font-14" colspan="4"> <span>{{$testObj->getTitleAttribute()}}</span></th>
                 @endforeach
             @endif
         </tr>
