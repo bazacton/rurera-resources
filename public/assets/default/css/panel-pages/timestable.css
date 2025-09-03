@@ -469,6 +469,11 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .heatmap-table tr.topic-heading-top:first-child th {
     background-color: #f7f7f7 !important;
     border-bottom: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
 }
 .statuses-list span i {
     margin-right: 5px;
@@ -476,6 +481,46 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .statuses-list span {
     display: inline-flex;
     align-items: center;
+}
+.topic-parts-data tr.topic-heading-top:first-child th span {
+    text-align: center;
+    display: block;
+}
+.topic-parts-data tr.topic-heading-top:first-child th {
+    text-align: center;
+    vertical-align: middle;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+.topic-parts-data .table:not(.table-sm) thead .topic-heading-top th {
+    background-color: #ffdfb1 !important;
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+    border: 1px solid rgba(0,0,0,0.050) !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+.topic-parts-data .table:not(.table-sm) thead .topic-heading-top th:first-child {
+    background-color: #f5f8fb !important;
+}
+.topic-parts-data .table:not(.table-sm) tbody td:first-child {
+    background-color: #f5f8fb !important;
+}
+.topic-parts-data .table:not(.table-sm) tbody td {
+    background-color: #ffdfb1 !important;
+    border: 1px solid rgba(0,0,0,0.050);
+    border-right: 0;
+    border-radius: 0 !important;
+}
+.topic-parts-data .table:not(.table-sm) tbody tr:last-child td {
+    border-radius: 0 !important;
+}
+.topic-parts-data .table:not(.table-sm):not(.table-md):not(.dataTable) td {
+    text-align: center !important;
+}
+.topic-parts-data .table:not(.table-sm) thead .topic-heading-top:last-child th {
+    border-top: none !important;
 }
 /*Analytics_Data_Block Style End*/
 /*****************************
