@@ -497,19 +497,21 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     background-color: #ffdfb1 !important;
     font-size: 14px !important;
     text-transform: capitalize !important;
-    border: 1px solid rgba(0,0,0,0.050) !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
     border-right: none !important;
     border-bottom: none !important;
 }
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top th:first-child {
     background-color: #f5f8fb !important;
+    border-left: 0 !important;
 }
 .topic-parts-data .table:not(.table-sm) tbody td:first-child {
     background-color: #f5f8fb !important;
+    border-left: 0;
 }
 .topic-parts-data .table:not(.table-sm) tbody td {
     background-color: #ffdfb1 !important;
-    border: 1px solid rgba(0,0,0,0.050);
+    border: 1px solid rgba(0,0,0,0.1);
     border-right: 0;
     border-radius: 0 !important;
 }
