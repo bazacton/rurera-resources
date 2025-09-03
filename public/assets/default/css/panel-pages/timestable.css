@@ -540,7 +540,17 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(even) th:nth-of-type(14),
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(even) th:nth-of-type(15),
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(even) th:nth-of-type(18),
-.topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(even) th:nth-of-type(19) {
+.topic-parts-data .table:not(.table-sm) thead .topic-heading-top:nth-child(even) th:nth-of-type(19),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(2),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(3),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(6),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(7),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(10),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(11),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(14),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(15),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(18),
+.topic-parts-data .table:not(.table-sm) tbody tr td:nth-of-type(19 ){
     background-color: #ffcf8a !important;
 }
 /*Analytics_Data_Block Style End*/
