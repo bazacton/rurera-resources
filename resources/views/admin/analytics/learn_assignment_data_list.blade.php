@@ -54,7 +54,7 @@
 <div class="table-responsive">
     <table class="table heatmap-table">
         <thead>
-        <tr class="topic-heading-top">
+        <tr class="topic-heading-top 33333">
             <th class="font-14"> &nbsp;</th>
             <th class="font-14" colspan="4"> {{$assignmentObj->title}}</th>
         </tr>
