@@ -36,6 +36,7 @@
         justify-content: left;
         color: #fff;
         font-weight: bold;
+        position: relative;
     }
 
     .split-progress .progress.green {
