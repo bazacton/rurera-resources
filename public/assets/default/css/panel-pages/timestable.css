@@ -524,6 +524,10 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top:last-child th {
     border-top: none !important;
 }
+.heatmap-table .split-progress.progress-container {
+    gap: 5px;
+    background: none;
+}
 /*Analytics_Data_Block Style End*/
 /*****************************
 TimesTable Page | Student Panel Style End
