@@ -36,13 +36,13 @@
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
                     {{ request()->path() }}
-                    @if(request()->is('/admin/*'))
+                    @if(request()->is('admin'))
                     -----{{getAdminPanelUrl('/')}}-----testing
                     @endif
                     @if(request()->is('/admin/'))
                         -----{{getAdminPanelUrl('/')}}-----testing11
                     @endif
-                    <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }} nav-item">
+                    <li class="{{ (request()->is('admin')) ? 'active' : '' }} nav-item">
                         <a href="/admin" class="nav-link dropdown-toggle11" >
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
