@@ -1793,6 +1793,13 @@ function rurera_modal_alert(msg_type, msg_title, confirmButton){
 $('body').on('change', '.conditional_field_parent', function (e) {
     var target_field_class = $(this).attr('data-target_field_class');
     var target_common_class = $(this).attr('data-target_common_class');
+    if ($(this).is('select')) {
+        var selected_option = $(this).find('option:selected');
+        var target_field_class = selected_option.attr('data-target_field_class');
+        var target_common_class = selected_option.attr('data-target_common_class');
+    }
+    console.log(target_field_class);
+    console.log(target_common_class);
     $('.'+target_common_class).addClass('rurera-hide');
     $('.'+target_field_class).removeClass('rurera-hide');
 });
