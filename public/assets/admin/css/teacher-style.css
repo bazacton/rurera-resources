@@ -40,8 +40,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     transition: all .5s;
     box-shadow: none;
     margin-top: 0;
-    transform: translateX(-250px) !important;
+    transform: translateX(180px) !important;
     transition: transform 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
 }
 .admin_teacher_role.admin-page .sub-menu-sidebar {
     display: block !important;
@@ -68,6 +70,8 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 }
 .admin_teacher_role.admin-page .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
     transform: translateX(250px) !important;
+    opacity: 1;
+    visibility: visible;
 }
 .admin-page.admin_teacher_role:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
     padding-left: 500px;
@@ -79,12 +83,23 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin-page .sidebar-menu li.menu .dropdown-toggle:after {
     opacity: 1;
 }
-
 .admin-page.admin_teacher_role.sidebar-mini .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
     transform: translateX(65px) !important;
 }
 .admin-page.admin_teacher_role.sidebar-mini:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
     padding-left: 315px;
+}
+.sub-menu-sidebar .dropdown-nav-area {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity .5s ease, transform .5s ease;
+    transition-delay: .5s;
+}
+
+.sub-menu-sidebar.dropdown-menu.show .dropdown-nav-area,
+.sub-menu-sidebar.dropdown-menu.show .get-ai{
+    opacity: 1;
+    transform: translateX(0);
 }
 .admin_teacher_role .main-sidebar .sub-menu-sidebar .accordion-toggle-btn {
     font-size: .8rem;
@@ -122,6 +137,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border: 1px solid #f2f2f2;
     border-radius: 5px;
     padding: 15px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity .4s ease, transform .4s ease;
+    transition-delay: .6s;
 }
 .main-sidebar .get-ai .ai-icon-box img {
     height: 40px;
