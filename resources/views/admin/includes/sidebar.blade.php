@@ -1,7 +1,7 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand mt-10">
-            <a class="sidebar-logo" href="/" itemscope="" itemprop="url">
+            <a class="sidebar-logo" href="/admin" itemscope="" itemprop="url">
                 <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text">Rurera</span>
                 <span class="role-title">{{auth()->user()->role->caption}}</span>
             </a>
