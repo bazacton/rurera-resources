@@ -1915,16 +1915,9 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    $('.sidebar-menu .menu .dropdown-toggle').on('click', function (e) {
+    $('.sidebar-menu .menu').on('hide.bs.dropdown', function (e) {
+        if (e.clickEvent) {
         e.preventDefault();
-        let $parent = $(this).parent();
-
-        if ($parent.hasClass('show')) {
-            $parent.removeClass('show')
-                .find('.dropdown-menu').removeClass('show');
-        } else {
-            $parent.addClass('show')
-                .find('.dropdown-menu').addClass('show');
         }
     });
 
