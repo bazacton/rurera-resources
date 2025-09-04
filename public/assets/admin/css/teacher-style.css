@@ -322,9 +322,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     background-color: #fff;
 }
 .add-members-list .list-card input[type=checkbox]:checked ~ label {
-	background-color:#dfdfff;
-	border-bottom-color:var(--blue);
-	border-top-color:var(--blue);
+	background-color: #f2f2f2;
+    border-bottom-color: #ddd;
+    border-top-color: #ddd;
 }
 .add-member-count-holder {
     text-align: right;
