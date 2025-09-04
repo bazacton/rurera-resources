@@ -354,6 +354,7 @@ button.member-selected-btn {
     line-height: normal;
 }
 .selection-controls button {
+    color: var(--blue);
     font-size: 12px;
     border: 0;
     background-color: inherit;
