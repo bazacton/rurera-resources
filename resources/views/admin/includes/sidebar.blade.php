@@ -81,7 +81,7 @@
                     </li>
                 @endcan
             @endif
-            @if(!auth()->user()->isDistricAdmin())
+            @if(auth()->user()->isDistricAdmin())
             <li class="nav-item">
                 <a href="/admin/custom_page/my_library" class="nav-link">
                     <img src="/assets/default/img/sidebar/collections.svg" alt="collections">
@@ -661,7 +661,7 @@
                             </a>
                         </li>
                     @endif
-                    @if(!auth()->user()->isDistricAdmin())
+                    @if(auth()->user()->isDistricAdmin())
                     <li class="nav-item">
                         <a href="/admin/analytics" class="nav-link">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
