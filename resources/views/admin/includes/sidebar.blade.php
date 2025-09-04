@@ -1915,7 +1915,7 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    $('.sidebar-menu .menu > .dropdown-toggle').on('click', function (e) {
+    $('.sidebar-menu .menu .dropdown-toggle').on('click', function (e) {
         e.preventDefault();
         let $parent = $(this).parent();
 
