@@ -1911,7 +1911,7 @@
             $(targetSelector).collapse('toggle');
         });
     }
-    $(document).on('click', '.dropdown-menu a.accordion-toggle-btn[data-toggle="collapse"], .dropdown-menu a.accordion-toggle-btn', function (e) {
+    $(document).on('click', '.dropdown-menu a.accordion-toggle-btn[data-toggle="collapse"], .dropdown-menu a.accordion-toggle-btn', 'body' function (e) {
         e.preventDefault();
         e.stopPropagation();
     });
