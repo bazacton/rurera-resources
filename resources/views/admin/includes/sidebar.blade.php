@@ -1915,6 +1915,9 @@
         e.preventDefault();
         e.stopPropagation();
     });
+    $(document).on('click', '.sub-menu-sidebar.dropdown-menu', function (e) {
+        e.stopPropagation();
+    });
 
 </script>
 <script>
