@@ -36,7 +36,7 @@
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }} menu show">
-                        <a href="#" class="nav-link dropdown-toggle" id="sub-menu" data-toggle="dropdown" aria-haspopup="true">
+                        <a href="/admin" class="nav-link dropdown-toggle" id="sub-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
@@ -81,12 +81,14 @@
                     </li>
                 @endcan
             @endif
+            @if(!auth()->user()->isDistricAdmin())
             <li class="nav-item">
                 <a href="/admin/custom_page/my_library" class="nav-link">
                     <img src="/assets/default/img/sidebar/collections.svg" alt="collections">
                     <span>Collections</span>
                 </a>
             </li>
+            @endif
 
             @can('admin_marketing_dashboard')
                 <li class="nav-item {{ (request()->is(getAdminPanelUrl('/marketing', false))) ? 'active' : '' }}">
@@ -659,12 +661,14 @@
                             </a>
                         </li>
                     @endif
+                    @if(!auth()->user()->isDistricAdmin())
                     <li class="nav-item">
                         <a href="/admin/analytics" class="nav-link">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
                         </a>
                     </li>
+                    @endif
                     @can('admin_users_list')
                     <li class="nav-item {{ (request()->is('admin/students')) ? 'active' : '' }}">
                         <a href="{{ getAdminPanelUrl('/students') }}" class="nav-link">
