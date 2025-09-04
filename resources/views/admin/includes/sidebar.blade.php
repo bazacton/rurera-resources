@@ -665,13 +665,11 @@
                         </li>
                     @endif
                     @if(auth()->user()->isDistricAdmin())
-                    <li class="{{ (request()->is('admin/analytics')) ? 'active' : '' }} {{ (request()->is('admin/analytics')) ? 'menu show' : 'nav-item' }}">
-                        <a href="/admin/analytics" class="nav-link {{ (request()->is('admin/analytics')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin/analytics')) ? 'id=sub-menu data-toggle=dropdown aria-haspopup=true' : '' }}>
+                    <li class="{{ (request()->is('admin/analytics')) ? 'active' : '' }} {{ (request()->is('admin/analytics')) ? 'menu show' : 'menu nav-item' }}">
+                        <a href="/admin/analytics" class="nav-link dropdown-toggle" id="analytics-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
-
-                            @if(request()->is('admin/analytics'))
-                                <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
+                                <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="analytics-menu">
                                     <div class="dropdown-content">
                                         <div class="dropdown-nav-area">
                                             <h5>Analytics Reports</h5>
@@ -709,7 +707,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endif
                         </a>
                     </li>
                     @endif
