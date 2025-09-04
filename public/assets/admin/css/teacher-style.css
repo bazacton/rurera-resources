@@ -340,7 +340,6 @@ button.member-selected-btn {
     border-radius: 3px;
 }
 .member-selection-info {
-    background-color: var(--blue);
     border-radius: 10px 10px 0 0;
     margin: 0 -4px 0 0;
     padding: 10px 10px;
@@ -350,13 +349,11 @@ button.member-selected-btn {
     flex-wrap: wrap;
 }
 .selection-text span {
-    color: #fff;
     font-size: 12px;
     display: block;
     line-height: normal;
 }
 .selection-controls button {
-    color: #fff;
     font-size: 12px;
     border: 0;
     background-color: inherit;
