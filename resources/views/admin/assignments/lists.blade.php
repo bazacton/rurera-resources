@@ -451,9 +451,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
-                            </div>
                         </label>
                     </div>
                     <div class="list-card">
@@ -469,9 +466,6 @@
                                         <span>marvinmckinney@mail.com</span>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
                             </div>
                         </label>
                     </div>
@@ -489,9 +483,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
-                            </div>
                         </label>
                     </div>
                     <div class="list-card">
@@ -507,9 +498,6 @@
                                         <span>marvinmckinney@mail.com</span>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
                             </div>
                         </label>
                     </div>
@@ -527,9 +515,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
-                            </div>
                         </label>
                     </div>
                     <div class="list-card">
@@ -545,9 +530,6 @@
                                         <span>marvinmckinney@mail.com</span>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
                             </div>
                         </label>
                     </div>
@@ -565,9 +547,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
-                            </div>
                         </label>
                     </div>
                     <div class="list-card">
@@ -583,9 +562,6 @@
                                         <span>marvinmckinney@mail.com</span>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
                             </div>
                         </label>
                     </div>
@@ -603,9 +579,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
-                            </div>
                         </label>
                     </div>
                     <div class="list-card">
@@ -621,9 +594,6 @@
                                         <span>marvinmckinney@mail.com</span>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="member-btn">
-                                <button type="button" class="add-member-btn">Add member</button>
                             </div>
                         </label>
                     </div>
