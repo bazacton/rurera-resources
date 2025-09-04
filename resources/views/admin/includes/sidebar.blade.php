@@ -674,7 +674,7 @@
                                 <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
                                     <div class="dropdown-content">
                                         <div class="dropdown-nav-area">
-                                            <h5>Reports</h5>
+                                            <h5>Analytics Reports</h5>
                                             <ul class="sub-menu">
                                                 <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a></li>
                                                 <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Leaderboard</a></li>
