@@ -665,7 +665,7 @@
                         </li>
                     @endif
                     @if(auth()->user()->isDistricAdmin())
-                    <li class="nav-item">
+                    <li class="{{ (request()->is('admin/analytics')) ? 'active' : '' }} {{ (request()->is('admin/analytics')) ? 'menu show' : 'nav-item' }}">
                         <a href="/admin/analytics" class="nav-link">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
