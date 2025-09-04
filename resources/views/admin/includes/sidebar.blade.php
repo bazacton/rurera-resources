@@ -41,7 +41,7 @@
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
-                        @if(request()->is('admin')){
+                        @if(request()->is('admin'))
                         <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
                             <div class="dropdown-content">
                                 <div class="dropdown-nav-area">
