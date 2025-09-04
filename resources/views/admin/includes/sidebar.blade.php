@@ -1915,13 +1915,8 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    $('.sidebar-menu .menu > .dropdown-toggle').on('click', function (e) {
-        e.preventDefault();
-
-        var $parent = $(this).parent('.menu');
-
-        $parent.toggleClass('show');
-        $parent.find('.dropdown-menu').toggleClass('show');
+    $(document).on('click', '.sub-menu-sidebar.dropdown-menu', function (e) {
+        e.stopPropagation();
     });
 
 </script>
