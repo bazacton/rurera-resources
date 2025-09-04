@@ -1915,8 +1915,11 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    $(document).on('click', '.sub-menu-sidebar.dropdown-menu', function (e) {
-        e.stopPropagation();
+    
+    $('body').on('.sub-menu-sidebar hide.dropdown', function (e) {
+        if (e.clickEvent) {
+        e.preventDefault();
+        }
     });
 
 </script>
