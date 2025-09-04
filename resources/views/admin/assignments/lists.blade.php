@@ -19,15 +19,15 @@
         </div>
         @can('admin_assignments_create')
             <div class="text-right ml-auto">
+                <button type="button" class="simple-btn" data-toggle="modal" data-target="#add-member-modal" fdprocessedid="ce95ne">
+                Add member
+                </button>
                 <a href="javascript:;" class="create-assignment-btn simple-btn">Create Assignment</a>
             </div>
         @endcan
     </div>
     <div class="card">
         <div class="card-body">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-member-modal">
-            Add member
-            </button>
             <div class="row">
 
                 <div class="col-12 col-md-12">
