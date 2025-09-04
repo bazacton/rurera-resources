@@ -1915,8 +1915,10 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    
-    $('body').on('.sub-menu-sidebar hide.dropdown', function (e) {
+    $(document).on('click', '.sub-menu-sidebar.dropdown-menu', function (e) {
+        e.stopPropagation();
+    });
+    $('.sidebar-menu .menu').on('hide.bs.dropdown', function (e) {
         if (e.clickEvent) {
         e.preventDefault();
         }
