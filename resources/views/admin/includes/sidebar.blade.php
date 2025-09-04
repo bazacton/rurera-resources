@@ -666,9 +666,50 @@
                     @endif
                     @if(auth()->user()->isDistricAdmin())
                     <li class="{{ (request()->is('admin/analytics')) ? 'active' : '' }} {{ (request()->is('admin/analytics')) ? 'menu show' : 'nav-item' }}">
-                        <a href="/admin/analytics" class="nav-link">
+                        <a href="/admin/analytics" class="nav-link {{ (request()->is('admin/analytics')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin/analytics')) ? 'id=sub-menu data-toggle=dropdown aria-haspopup=true' : '' }}>
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
+
+                            @if(request()->is('admin/analytics'))
+                                <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-nav-area">
+                                            <h5>Reports</h5>
+                                            <ul class="sub-menu">
+                                                <li><a href="#"><img src="/assets/default/img/sidebar/class-new.svg" alt="class-new"> Learning</a></li>
+                                                <li><a href="#"><img src="/assets/default/img/sidebar/assignments-color.svg" alt="assessment"> Leaderboard</a></li>
+                                                <li><a href="#"><img src="/assets/default/svgs/user.svg" alt="user"> Users</a></li>
+                                            </ul>
+
+                                            <ul class="sub-menu" id="accordion">
+                                                <li>
+                                                    <a href="#" class="accordion-toggle-btn" data-target="#learning" data-toggle="collapse" aria-expanded="true" aria-controls="learning">
+                                                        Choose Type
+                                                    </a>
+
+                                                    <div id="learning" class="collapse show" data-parent="#accordion">
+                                                        <div class="dropdown-toggle-content">
+                                                            <ul>
+                                                                <li><a href="#"><img src="/assets/default/img/assignment-logo/practice.png" alt="practice"> Self Learning</a></li>
+                                                                <li><a href="#"><img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables"> Mock Tests</a></li>
+                                                                <li><a href="#"><img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary"> Assignment</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="get-ai">
+                                    <span class="ai-icon-box">
+                                        <img src="/assets/default/svgs/magic-hat.svg" alt="magic-hat">
+                                    </span>
+                                            <h5>Get Trenning Ai</h5>
+                                            <p>Use Ai in every action on trenning webapp</p>
+                                            <button type="button" class="try-btn">Try it now <img src="/assets/default/svgs/arrow-up-right.svg" alt="arrow-up-right"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
                         </a>
                     </li>
                     @endif
