@@ -1924,11 +1924,4 @@
     });
 
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.location.href === "https://rurera.com/admin") {
-      document.body.classList.add("admin-page");
-    }
-  });
-</script>
 @endpush
