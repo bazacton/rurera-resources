@@ -35,18 +35,13 @@
         <ul class="sidebar-menu">
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
-                    {{ request()->path() }}
-                    @if(request()->is('admin'))
-                    -----{{getAdminPanelUrl('/')}}-----testing
-                    @endif
-                    @if(request()->is('/admin/'))
-                        -----{{getAdminPanelUrl('/')}}-----testing11
-                    @endif
+
                     <li class="{{ (request()->is('admin')) ? 'active' : '' }} nav-item">
-                        <a href="/admin" class="nav-link dropdown-toggle11" >
+                        <a href="/admin" class="nav-link {{ (request()->is('admin')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin')) ? 'id="sub-menu" data-toggle="dropdown" aria-haspopup="true"' : '' }}>
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
+                        @if(request()->is('admin')){
                         <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
                             <div class="dropdown-content">
                                 <div class="dropdown-nav-area">
@@ -85,6 +80,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </li>
                 @endcan
             @endif
