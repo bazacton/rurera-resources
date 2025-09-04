@@ -1915,10 +1915,13 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    $('.sidebar-menu .menu').on('hide.bs.dropdown', function (e) {
-        if (e.clickEvent && $(e.clickEvent.target).closest('.sidebar-menu .menu').length) {
-            e.preventDefault();
-        }
+    $('.sidebar-menu .menu > .dropdown-toggle').on('click', function (e) {
+        e.preventDefault();
+
+        var $parent = $(this).parent('.menu');
+
+        $parent.toggleClass('show');
+        $parent.find('.dropdown-menu').toggleClass('show');
     });
 
 </script>
