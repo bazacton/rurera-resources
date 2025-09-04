@@ -35,6 +35,7 @@
         <ul class="sidebar-menu">
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
+                    {{ request()->path() }}
                     @if(request()->is('/admin/*'))
                     -----{{getAdminPanelUrl('/')}}-----testing
                     @endif
