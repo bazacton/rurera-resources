@@ -35,7 +35,7 @@
         <ul class="sidebar-menu">
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
-                    {{request()->is(getAdminPanelUrl('/'))}}
+                    {{getAdminPanelUrl('/')}}
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }} nav-item">
                         <a href="/admin" class="nav-link dropdown-toggle11" >
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
