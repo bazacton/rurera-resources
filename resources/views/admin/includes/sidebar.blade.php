@@ -1900,8 +1900,8 @@
 @push('scripts_bottom')
 <script>
 
-    function toggleAccordion('.dropdown-toggle', targetSelector) {
-        $('.dropdown-toggle').on('click', function (e) {
+    function toggleAccordion(triggerSelector, targetSelector) {
+        $(triggerSelector).on('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
 
@@ -1911,7 +1911,7 @@
             $(targetSelector).collapse('toggle');
         });
     }
-    $(document).on('click', '.dropdown-menu a[data-toggle="collapse"], .dropdown-menu a.accordion-toggle-btn', function (e) {
+    $(document).on('click', '.dropdown-menu a.accordion-toggle-btn[data-toggle="collapse"], .dropdown-menu a.accordion-toggle-btn', function (e) {
         e.preventDefault();
         e.stopPropagation();
     });
