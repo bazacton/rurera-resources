@@ -1916,8 +1916,8 @@
         e.stopPropagation();
     });
     $('.sidebar-menu .menu').on('hide.bs.dropdown', function (e) {
-        if (e.clickEvent) {
-        e.preventDefault();
+        if ($(e.clickEvent && e.clickEvent.target).closest('.menu').length) {
+            e.preventDefault(); // stop closing when clicking another menu
         }
     });
 
