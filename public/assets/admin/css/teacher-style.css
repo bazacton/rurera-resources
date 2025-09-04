@@ -187,29 +187,24 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     transform: translateY(-50%);
     filter: invert(72%) sepia(9%) saturate(834%) hue-rotate(176deg) brightness(88%) contrast(84%);
 }
-
 .add-member-content .form-field:has(img) .form-control {
     padding-left: 32px;
 }
-
 .add-member-content input.form-control {
     height: 34px;
     font-size: 12px;
     background-color: inherit;
     font-weight: 600;
 }
-
 .add-members-list .list-card {
     position: relative;
 }
-
 .add-members-list .list-card input[type=checkbox] {
     position: absolute;
     width: 0;
     height: 0;
     opacity: 0;
 }
-
 .add-members-list .list-card label {
     display: flex;
     align-items: center;
@@ -222,7 +217,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border-top: 1px solid transparent;
     margin-bottom: -1px;
 }
-
+.add-members-list .list-card:last-child label {
+    border-bottom: 0;
+}
 .list-card .member-info {
     display: inline-flex;
     align-items: center;
@@ -230,13 +227,11 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     gap: 10px;
     position: relative;
 }
-
 .list-card .member-info img {
     height: 35px;
     width: 35px;
     border-radius: 100%;
 }
-
 .list-card .member-info .text-holder a {
     font-size: .8125rem;
     font-weight: 700;
@@ -244,7 +239,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     color: #1d293d;
     text-decoration: none;
 }
-
 .list-card .member-info .text-holder a span {
     display: block;
     font-size: .75rem;
@@ -262,20 +256,17 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 	border-radius: 10px;
 	background-color: inherit;
 }
-
 .add-members-list::-webkit-scrollbar
 {
 	width: 6px;
 	background-color: inherit;
 }
-
 .add-members-list::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: none;
 	background-color: rgba(0,0,0,.1);
 }
-
 .add-member-btn {
     background-color: inherit;
     font-size: .8rem;
@@ -283,7 +274,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     border: 1px solid transparent;
     border-radius: 3px;
 }
-
 .add-member-modal .modal-header {
     padding: 15px 15px 0;
 }
@@ -291,21 +281,17 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .add-member-modal .modal-header h5 {
     color: #1d293d;
 }
-
 .add-member-modal .modal-body {
     padding: 25px 15px 15px;
 }
-
 .add-member-content .form-group {
     margin-bottom: 18px;
 }
-
 .add-members-list-holder {
     padding: 0 4px 4px 0;
     border: 2px solid #e4e6fc;
     border-radius: 10px;
 }
-
 .add-members-list .list-card label:before {
     content: "";
     position: absolute;
@@ -328,7 +314,6 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 	border-color:var(--blue);
 	color: #fff;
 }
-
 .add-members-list .list-card label:hover {
     background-color: rgba(0,0,0,0.01);
 }
@@ -341,12 +326,10 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 	border-bottom-color:var(--blue);
 	border-top-color:var(--blue);
 }
-
 .add-member-count-holder {
     text-align: right;
     padding: 15px 0 0;
 }
-
 button.member-selected-btn {
     background-color: var(--blue);
     color: #fff;
@@ -356,7 +339,6 @@ button.member-selected-btn {
     padding: 6px 10px;
     border-radius: 3px;
 }
-
 .member-selection-info {
     background-color: var(--blue);
     border-radius: 10px 10px 0 0;
@@ -367,14 +349,12 @@ button.member-selected-btn {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .selection-text span {
     color: #fff;
     font-size: 12px;
     display: block;
     line-height: normal;
 }
-
 .selection-controls button {
     color: #fff;
     font-size: 12px;
