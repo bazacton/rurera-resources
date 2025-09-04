@@ -36,13 +36,12 @@
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
 
-                    <li class="{{ (request()->is('admin')) ? 'active' : '' }} {{ (request()->is('admin')) ? 'menu show' : 'nav-item' }}">
-                        <a href="/admin" class="nav-link {{ (request()->is('admin')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin')) ? 'id=sub-menu data-toggle=dropdown aria-haspopup=true' : '' }}>
+                    <li class="{{ (request()->is('admin')) ? 'active' : '' }} {{ (request()->is('admin')) ? 'menu' : ' menu nav-item' }}">
+                        <a href="/admin" class="nav-link dropdown-toggle" id="dashboard-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
-                        @if(request()->is('admin'))
-                        <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="sub-menu">
+                        <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="dashboard-menu">
                             <div class="dropdown-content">
                                 <div class="dropdown-nav-area">
                                     <h5>Reports</h5>
@@ -80,7 +79,6 @@
                                 </div>
                             </div>
                         </div>
-                        @endif
                     </li>
                 @endcan
             @endif
