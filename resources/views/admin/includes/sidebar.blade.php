@@ -1900,16 +1900,14 @@
 @push('scripts_bottom')
 <script>
 
-    function toggleAccordion(triggerSelector, targetSelector) {
-        $(triggerSelector).on('click', function (e) {
+    function toggleAccordion('.dropdown-toggle', targetSelector) {
+        $('.dropdown-toggle').on('click', function (e) {
             e.preventDefault();
-            e.stopPropagation(); // keeps dropdown open
+            e.stopPropagation();
 
-            // Close other items inside same accordion
             var parent = $(targetSelector).closest('.collapse').parent().parent();
             parent.find('.collapse.show').not(targetSelector).collapse('hide');
 
-            // Toggle this one
             $(targetSelector).collapse('toggle');
         });
     }
