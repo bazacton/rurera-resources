@@ -25,6 +25,9 @@
     </div>
     <div class="card">
         <div class="card-body">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-member-modal">
+            Add member
+            </button>
             <div class="row">
 
                 <div class="col-12 col-md-12">
@@ -405,7 +408,235 @@
 </section>
 
 
-
+<div class="modal fade add-member-modal" id="add-member-modal" tabindex="-1" role="dialog" aria-labelledby="add-member-modalModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Members</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="add-member-content">
+            <div class="form-group">
+                <div class="form-field">
+                    <img src="/assets/default/svgs/user.svg" alt="user">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                            
+            </div>
+            <div class="add-members-list-holder">
+                <div class="member-selection-info">
+                    <div class="selection-text">
+                        <span>4 members selected</span>
+                    </div>
+                    <div class="selection-controls">
+                        <button type="button" class="select-all-btn">Select all</button>
+                        <button type="button" class="unselect-all-btn">Unselect all</button>
+                    </div>
+                </div>
+                <div class="add-members-list">
+                    <div class="list-card">
+                        <input type="checkbox" id="list1">
+                        <label for="list1">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list11">
+                        <label for="list11">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list2">
+                        <label for="list2">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list3">
+                        <label for="list3">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list4">
+                        <label for="list4">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list5">
+                        <label for="list5">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list6">
+                        <label for="list6">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list7">
+                        <label for="list7">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list8">
+                        <label for="list8">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="list-card">
+                        <input type="checkbox" id="list9">
+                        <label for="list9">
+                            <div class="member-info">
+                                <div class="img-holder">
+                                    <img class="avatar-img" src="/assets/default/img/avatar-20.jpg" alt="avatar-20">
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">
+                                        Marvin Mckinney
+                                        <span>marvinmckinney@mail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="member-btn">
+                                <button type="button" class="add-member-btn">Add member</button>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="add-member-count-holder">
+                <button type="button" class="member-selected-btn">Add selected <span>(4)</span></button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="modal fade assignment-create-modal" id="assignment-create-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
