@@ -36,7 +36,7 @@
             @if(!auth()->user()->isAuthor() && !auth()->user()->isReviewer())
                 @can('admin_general_dashboard_show')
 
-                    <li class="{{ (request()->is('admin')) ? 'active' : '' }} {{ (request()->is('admin')) ? 'menu' : 'nav-item' }}">
+                    <li class="{{ (request()->is('admin')) ? 'active' : '' }} {{ (request()->is('admin')) ? 'menu show' : 'nav-item' }}">
                         <a href="/admin" class="nav-link {{ (request()->is('admin')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin')) ? 'id=sub-menu data-toggle=dropdown aria-haspopup=true' : '' }}>
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
