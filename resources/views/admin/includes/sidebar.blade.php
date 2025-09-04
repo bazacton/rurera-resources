@@ -1915,9 +1915,6 @@
         e.preventDefault();
         e.stopPropagation();
     });
-    $(document).on('click', '.sub-menu-sidebar.dropdown-menu', function (e) {
-        e.stopPropagation();
-    });
     $('.sidebar-menu .menu').on('hide.bs.dropdown', function (e) {
         if (e.clickEvent) {
         e.preventDefault();
