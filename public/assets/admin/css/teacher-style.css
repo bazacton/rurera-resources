@@ -252,7 +252,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     line-height: normal;
 }
 .add-members-list {
-    max-height: 580px;
+    max-height: 400px;
     overflow: hidden;
     overflow-y: auto;
 }
