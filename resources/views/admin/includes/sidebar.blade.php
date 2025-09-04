@@ -37,7 +37,7 @@
                 @can('admin_general_dashboard_show')
 
                     <li class="{{ (request()->is('admin')) ? 'active' : '' }} nav-item">
-                        <a href="/admin" class="nav-link {{ (request()->is('admin')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin')) ? 'id="sub-menu" data-toggle="dropdown" aria-haspopup="true"' : '' }}>
+                        <a href="/admin" class="nav-link {{ (request()->is('admin')) ? 'dropdown-toggle' : '' }}" {{ (request()->is('admin')) ? 'id=sub-menu data-toggle=dropdown aria-haspopup=true' : '' }}>
                             <img src="/assets/default/img/sidebar/home.svg" alt="home">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
