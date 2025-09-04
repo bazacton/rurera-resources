@@ -79,7 +79,9 @@
                     <div class="sats-listing-card medium">
                         <table class="simple-table">
                             <tbody>
-							
+
+                            {!! $practice_response_layout !!}
+
 							{!! $response_layout !!}
 
                             </tbody>
