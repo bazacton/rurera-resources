@@ -920,7 +920,7 @@ $(document).ready(function () {
     $btn = $('.navbar-nav li .nav-link[data-toggle="sidebar"]');
 
     // Read cookie on page load
-    var menu_state = $.cookie('my_cookie_name');
+    var menu_state = $.cookie('sidebar_state');
 
     if (menu_state === 'close') {
         $body.addClass('sidebar-mini');
@@ -942,7 +942,7 @@ $(document).ready(function () {
             menu_state = 'open';
         }
 
-        $.cookie('my_cookie_name', menu_state, { path: '/', expires: 7 }); 
+        $.cookie('sidebar_state', menu_state, { path: '/', expires: 7 }); 
         // path: '/' ensures cookie works across all pages
         // expires: 7 keeps it for 7 days (you can change)
 
