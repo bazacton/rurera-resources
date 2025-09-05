@@ -1930,6 +1930,18 @@
     $(document).on('click', '.sub-menu-sidebar.dropdown-menu', function (e) {
         e.stopPropagation();
     });
+    
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("sidebar-mini") === "true") {
+        document.body.classList.add("sidebar-mini");
+        }
+    });
+
+    function toggleSidebarMini() {
+        document.body.classList.toggle("sidebar-mini");
+        localStorage.setItem("sidebar-mini", document.body.classList.contains("sidebar-mini"));
+    }
 
 </script>
 @endpush
