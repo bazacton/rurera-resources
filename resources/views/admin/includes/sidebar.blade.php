@@ -1932,21 +1932,45 @@
     });
     
 
-    document.addEventListener("DOMContentLoaded", function () {
-    if (document.cookie.indexOf("sidebar-mini=true") !== -1) {
-      document.body.classList.add("sidebar-mini");
-    }
-  });
-
-  function toggleSidebarMini() {
-    document.body.classList.toggle("sidebar-mini");
-
-    if (document.body.classList.contains("sidebar-mini")) {
-      document.cookie = "sidebar-mini=true; path=/";
-    } else {
-      document.cookie = "sidebar-mini=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    }
+    $(document).ready(function(){
+  
+  var $body = $('body'),
+      $btn = $('.navbar-nav li .nav-link[data-toggle="sidebar"]'),
+      menu_state = $.cookie('my_cookie_name'),
+      viewportX = $(window).width();
+  
+  var cookieValue = $.cookie('my_cookie_name');
+  
+  if ( cookieValue === 'close' ) {
+    $body.addClass('sidebar-mini');
+  } else {
+    $body.removeClass('sidebar-mini');
   }
+   
+  $.cookie('my_cookie_name', menu_state);
+  
+  $('.cookie-is').find('em').remove();
+  $('.cookie-is').prepend().html( '<em>' + $.cookie('my_cookie_name') + '</em>');
+     
+  $btn.click(function(){
+        
+    $body.toggleClass('sidebar-mini');
+    
+    $.removeCookie('my_cookie_name');
+    
+    if ( $body.hasClass('sidebar-mini') ) {
+      menu_state = 'close';
+    } else {
+      menu_state = 'open';
+    }
+    
+    $.cookie('my_cookie_name', menu_state);
+  
+    $('.cookie-is').find('em').remove();
+    $('.cookie-is').prepend().html( '<em>' + $.cookie('my_cookie_name') + '</em>');
+  });
+
+});
 
 </script>
 @endpush
