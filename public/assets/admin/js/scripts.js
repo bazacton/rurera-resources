@@ -213,29 +213,102 @@ $(function () {
 
     //     return false;
     // });
+
+
+    // Main Sidebar Function Start
     $(document).ready(function () {
         var $body = $('body');
 
-        // ✅ Restore sidebar state on page load
-        if (localStorage.getItem('sidebar_state') === 'close') {
-            $body.addClass('sidebar-mini');
-            init_sidebar_tooltips(); // 🔥 initialize tooltips immediately
+        // Ensure globals exist (safe guards)
+        window.sidebar_nicescroll = window.sidebar_nicescroll || null;
+        window.sidebar_nicescroll_opts = window.sidebar_nicescroll_opts || {};
+
+        // --- Tooltip helpers ---
+        function init_sidebar_tooltips() {
+            var $els = $(".main-sidebar [data-toggle='tooltip']");
+            if (!$els.length) return;
+            // dispose existing tooltips (prevent duplicates)
+            if ($.fn.tooltip) $els.tooltip('dispose');
+
+            // ensure title attribute present (Bootstrap reads title)
+            $els.each(function () {
+            var $a = $(this);
+            var text = $a.attr('title') || $a.data('original-title') || $a.text().trim();
+            $a.attr('title', text);
+            });
+
+            // init tooltips appended to body so they are not clipped
+            $els.tooltip({
+            placement: 'right',
+            trigger: 'hover',
+            container: 'body'
+            });
         }
 
-        // ✅ One handler for all sidebar toggle buttons
+        function destroy_sidebar_tooltips() {
+            var $els = $(".main-sidebar [data-toggle='tooltip']");
+            if (!$els.length || !$.fn.tooltip) return;
+            $els.tooltip('dispose');
+            $els.removeAttr('title data-original-title');
+        }
+
+        // --- Mini toggle (keeps behavior you had) ---
+        function toggle_sidebar_mini(mini) {
+            if (!mini) {
+            // switch to normal
+            $body.removeClass('sidebar-mini');
+            $(".main-sidebar").css({ overflow: 'hidden' });
+
+            setTimeout(function () {
+                if ($.fn.niceScroll) {
+                $(".main-sidebar").niceScroll(sidebar_nicescroll_opts);
+                sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
+                }
+            }, 500);
+
+            $(".main-sidebar .sidebar-menu > li > ul .dropdown-title").remove();
+
+            // remove tooltip attributes + destroy any tooltips
+            destroy_sidebar_tooltips();
+            $(".main-sidebar .sidebar-menu > li > a")
+                .removeAttr('data-toggle data-original-title title');
+            } else {
+            // switch to mini
+            $body.addClass('sidebar-mini').removeClass('sidebar-show');
+
+            if (typeof sidebar_nicescroll !== "undefined" && sidebar_nicescroll) {
+                sidebar_nicescroll.remove();
+                sidebar_nicescroll = null;
+            }
+
+            $(".main-sidebar .sidebar-menu > li").each(function () {
+                var me = $(this);
+                var $a = me.find('> a');
+
+                if (me.find('> .dropdown-menu').length) {
+                me.find('> .dropdown-menu').hide();
+                me.find('> .dropdown-menu').prepend(
+                    '<li class="dropdown-title pt-3">' + $a.text().trim() + '</li>'
+                );
+                } else {
+                // set attributes needed for bootstrap tooltip to work
+                $a.attr('data-toggle', 'tooltip');
+                $a.attr('title', $a.text().trim());
+                $a.attr('data-original-title', $a.text().trim());
+                }
+            });
+
+            // initialize tooltips (appended to body)
+            init_sidebar_tooltips();
+            }
+        }
+
+        // --- Main toggle handler (desktop vs mobile) ---
         $("[data-toggle='sidebar']").on('click', function (e) {
             e.preventDefault();
-            toggle_sidebar();
-        });
 
-        // ==============================
-        // MAIN TOGGLE HANDLER
-        // ==============================
-        function toggle_sidebar() {
             var w = $(window);
-
             if (w.outerWidth() <= 1200) {
-            // 👉 Mobile / Tablet
             $body.removeClass('search-show search-gone');
             if ($body.hasClass('sidebar-gone')) {
                 $body.removeClass('sidebar-gone').addClass('sidebar-show');
@@ -244,7 +317,6 @@ $(function () {
             }
             update_sidebar_nicescroll();
             } else {
-            // 👉 Desktop
             $body.removeClass('search-show search-gone');
             if ($body.hasClass('sidebar-mini')) {
                 toggle_sidebar_mini(false);
@@ -254,63 +326,16 @@ $(function () {
                 localStorage.setItem('sidebar_state', 'close');
             }
             }
-        }
+        });
 
-        // ==============================
-        // MINI SIDEBAR FUNCTION
-        // ==============================
-        function toggle_sidebar_mini(mini) {
-            if (!mini) {
-            $body.removeClass('sidebar-mini');
-            $(".main-sidebar").css({ overflow: 'hidden' });
-
-            setTimeout(function () {
-                $(".main-sidebar").niceScroll(sidebar_nicescroll_opts);
-                sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
-            }, 500);
-
-            $(".main-sidebar .sidebar-menu > li > ul .dropdown-title").remove();
-            $(".main-sidebar .sidebar-menu > li > a")
-                .removeAttr('data-toggle data-original-title title');
-            } else {
-            $body.addClass('sidebar-mini').removeClass('sidebar-show');
-
-            if (typeof sidebar_nicescroll !== "undefined" && sidebar_nicescroll) {
-                sidebar_nicescroll.remove();
-                sidebar_nicescroll = null;
-            }
-
-            $(".main-sidebar .sidebar-menu > li").each(function () {
-                let me = $(this);
-
-                if (me.find('> .dropdown-menu').length) {
-                me.find('> .dropdown-menu').hide();
-                me.find('> .dropdown-menu').prepend(
-                    '<li class="dropdown-title pt-3">' + me.find('> a').text() + '</li>'
-                );
-                } else {
-                me.find('> a')
-                    .attr('data-toggle', 'tooltip')
-                    .attr('data-original-title', me.find('> a').text());
-                }
-            });
-
-            // 🔥 initialize tooltips every time we go mini
-            init_sidebar_tooltips();
-            }
-        }
-
-        // ==============================
-        // TOOLTIP INITIALIZER
-        // ==============================
-        function init_sidebar_tooltips() {
-            $("[data-toggle='tooltip']").tooltip({
-            placement: 'right',
-            trigger: 'hover'
-            });
+        // --- Restore saved state on load ---
+        if (localStorage.getItem('sidebar_state') === 'close') {
+            // run the full mini setup so tooltips and markup are prepared
+            toggle_sidebar_mini(true);
         }
         });
 
+    // Main Sidebar Function End
 
     var toggleLayout = function () {
         var w = $(window),
