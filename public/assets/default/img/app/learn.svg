@@ -1,0 +1,14 @@
+<svg width="800" height="800" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-1{fill:#203442}
+        </style>
+    </defs>
+    <g id="Education">
+        <path class="cls-1" d="M24.5 34C15.94 34 9 30.154 9 24V14h31v10c0 5.171-6.94 10-15.5 10Z"/>
+        <path d="M46.171 9.991 27.3.764a7.518 7.518 0 0 0-6.6 0L1.829 9.991a3.26 3.26 0 0 0 .15 5.927L4.5 17l16.543 7.079a7.517 7.517 0 0 0 5.914 0L43.5 17l2.521-1.078a3.26 3.26 0 0 0 .15-5.931Z" style="fill:#4c5665"/>
+        <path d="M40 38a1 1 0 0 1-1-1V19.361L24.918 12.14a1 1 0 1 1 .914-1.78L41 18.139V37a1 1 0 0 1-1 1Z" style="fill:#ecf0f1"/>
+        <ellipse class="cls-1" cx="24.5" cy="11" rx="4.5" ry="3"/>
+        <circle cx="40" cy="39" r="4" style="fill:#face53"/>
+    </g>
+</svg>
