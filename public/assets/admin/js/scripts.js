@@ -219,6 +219,7 @@ $(function () {
         // ✅ Restore sidebar state on page load
         if (localStorage.getItem('sidebar_state') === 'close') {
             $body.addClass('sidebar-mini');
+            init_sidebar_tooltips(); // 🔥 initialize tooltips immediately
         }
 
         // ✅ One handler for all sidebar toggle buttons
@@ -291,10 +292,22 @@ $(function () {
                 me.find('> a')
                     .attr('data-toggle', 'tooltip')
                     .attr('data-original-title', me.find('> a').text());
-                $("[data-toggle='tooltip']").tooltip({ placement: 'right' });
                 }
             });
+
+            // 🔥 initialize tooltips every time we go mini
+            init_sidebar_tooltips();
             }
+        }
+
+        // ==============================
+        // TOOLTIP INITIALIZER
+        // ==============================
+        function init_sidebar_tooltips() {
+            $("[data-toggle='tooltip']").tooltip({
+            placement: 'right',
+            trigger: 'hover'
+            });
         }
         });
 
