@@ -916,38 +916,70 @@ $(document).ready(function() {
 });
 $(document).ready(function () {
   var $body = $('body');
-  var $btn = $(".navbar-nav li .nav-link[data-toggle='sidebar']");
   var $allBtns = $("[data-toggle='sidebar']");
-  var $w = $(window);
 
-  // read saved state
-  var menu_state = localStorage.getItem('sidebar_state');
-  if (menu_state === 'close') {
-    $body.addClass('sidebar-mini');
+  // helper: set sidebar-mini state (uses existing function if present)
+  function setSidebarMini(isMini) {
+    if (typeof toggle_sidebar_mini === 'function') {
+      // existing site function expects true/false
+      toggle_sidebar_mini(isMini);
+    } else {
+      // fallback: directly add/remove class
+      if (isMini) $body.addClass('sidebar-mini');
+      else $body.removeClass('sidebar-mini');
+    }
   }
 
-  // merged click handler
+  // helper: save state to localStorage
+  function saveState(state) {
+    try {
+      localStorage.setItem('sidebar_state', state);
+    } catch (err) {
+      // localStorage might be blocked in very strict browsers, ignore
+      console.warn('Could not save sidebar_state', err);
+    }
+  }
+
+  // Restore on load (if saved)
+  var menu_state = localStorage.getItem('sidebar_state');
+  if (menu_state === 'close') {
+    setSidebarMini(true);
+  } else if (menu_state === 'open') {
+    setSidebarMini(false);
+  }
+
+  // single click handler for all [data-toggle="sidebar"] triggers
   $allBtns.on('click', function (e) {
     e.preventDefault();
 
+    // remove search classes (as your other handler did)
     $body.removeClass('search-show search-gone');
 
-    if ($w.outerWidth() <= 1200) {
+    var w = $(window).outerWidth();
+
+    if (w <= 1200) {
       if ($body.hasClass('sidebar-gone')) {
         $body.removeClass('sidebar-gone').addClass('sidebar-show');
       } else {
         $body.addClass('sidebar-gone').removeClass('sidebar-show');
       }
 
-      update_sidebar_nicescroll();
+      // call update_sidebar_nicescroll if available
+      if (typeof update_sidebar_nicescroll === 'function') {
+        update_sidebar_nicescroll();
+      }
     } else {
+      // desktop behavior: use site function if present, else toggle class
       if ($body.hasClass('sidebar-mini')) {
-        toggle_sidebar_mini(false);
-        localStorage.setItem('sidebar_state', 'open');
+        setSidebarMini(false);    // open
+        saveState('open');
       } else {
-        toggle_sidebar_mini(true);
-        localStorage.setItem('sidebar_state', 'close');
+        setSidebarMini(true);     // close
+        saveState('close');
       }
     }
+
+    return false;
   });
 });
+
