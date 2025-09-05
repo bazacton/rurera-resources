@@ -16,7 +16,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .main-sidebar .sidebar-menu li.menu-header {border-top: 1px solid #ddd; padding-top: 15px;}
 .admin_teacher_role .main-sidebar .sidebar-menu li a span {line-height: normal;}
 .admin_teacher_role .sidebar-brand.sidebar-brand-sm img {margin-right: 0;}
-.admin_teacher_role .main-sidebar .sidebar-menu li a {background-color: inherit; font-size: 14px; font-weight: 400; color: #45556c; height: auto; padding: 12px 20px;}
+.admin_teacher_role .main-sidebar .sidebar-menu li a {font-size: 14px; font-weight: 400; color: #45556c; height: auto; padding: 12px 20px;}
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo {display: flex; align-items: center; gap: 8px; width: 100%;}
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo-text {line-height: normal; font-size: 12px; font-weight: 700; color: #989898; text-transform: uppercase;}
 .admin_teacher_role .main-sidebar .sidebar-brand .sidebar-logo img {margin: 0; height: 30px; width: 30px;}
@@ -53,6 +53,9 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     line-height: normal;
     font-size: .8125rem;
     font-weight: 600;
+}
+.admin_teacher_role .main-sidebar .sub-menu-sidebar li a img {
+    margin-right: 10px;
 }
 .admin_teacher_role .sub-menu-sidebar h5 {
     font-size: 1rem;
