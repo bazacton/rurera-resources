@@ -83,6 +83,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .sidebar-menu li.menu .dropdown-toggle:after {
     opacity: 1;
 }
+.sidebar-mini .sidebar-menu li.menu .dropdown-toggle:after {display: none;}
 .admin_teacher_role.sidebar-mini .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
     transform: translateX(65px) !important;
 }
