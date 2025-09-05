@@ -158,7 +158,7 @@ Sub Pages Style
 .categories-card.active .categories-icon,
 .categories-card:hover .categories-icon {background-color: #4986d9;}
 .categories-boxes .categories-icon {padding: 35px 35px; background: var(--primary); color: #fff; border-radius: 10px 10px 0 0; transition: all 0.3s ease-in-out; display: flex; align-items: center; justify-content: center; min-height: 126px;}
-.categories-boxes .categories-icon img{width: 100%; position: absolute; left: 50%; top: 50%; height: 100%; -o-object-fit: contain; object-fit: contain; transform: translate(-50%, -50%);}
+.categories-boxes .categories-icon img{width: 100%; position: absolute; left: 50%; top: 50%; -o-object-fit: contain; object-fit: contain; transform: translate(-50%, -50%);}
 .categories-boxes .categories-icon {position: relative; }
 .categories-boxes .categories-icon svg {width: 64px; height: 56px;}
 .categories-boxes .categories-icon path {stroke: #fff;}
@@ -176,7 +176,7 @@ Sub Pages Style
 .categories-card.medium {display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; box-shadow: none; border-radius: 0; align-items: center; padding:20px; margin: 0; transform: none;}
 .categories-card.medium:first-child {border-top: 1px solid #ddd;}
 .categories-card.medium .categories-icon,
-.quests-learning .quests-item .icon-box {min-height: 80px; border-radius: 14px; box-shadow: none; background: none !important; min-width: 70px; max-width: 70px; padding: 0;}
+.quests-learning .quests-item .icon-box {min-height: 80px; border-radius: 14px; box-shadow: none; min-width: 70px; max-width: 70px; padding: 0;}
 .categories-card.medium .categories-icon svg {width: 40px; height: 40px;}
 .categories-card.medium .categories-text {width: calc(100% - 70px); padding-left: 25px; line-height: normal; position: relative;}
 .categories-card.medium .categories-text .categories-title {padding: 0; text-align: left; margin: 0 0 12px; }
