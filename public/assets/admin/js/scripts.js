@@ -149,7 +149,7 @@ $(function () {
     });
 
     var toggle_sidebar_mini = function (mini) {
-        let body = $('body');
+        var body = $('body');
 
         if (!mini) {
             body.removeClass('sidebar-mini');
