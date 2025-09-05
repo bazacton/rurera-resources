@@ -1933,15 +1933,20 @@
     
 
     document.addEventListener("DOMContentLoaded", function () {
-        if (localStorage.getItem("sidebar-mini") === "true") {
-        document.body.classList.add("sidebar-mini");
-        }
-    });
-
-    function toggleSidebarMini() {
-        document.body.classList.toggle("sidebar-mini");
-        localStorage.setItem("sidebar-mini", document.body.classList.contains("sidebar-mini"));
+    if (document.cookie.indexOf("sidebar-mini=true") !== -1) {
+      document.body.classList.add("sidebar-mini");
     }
+  });
+
+  function toggleSidebarMini() {
+    document.body.classList.toggle("sidebar-mini");
+
+    if (document.body.classList.contains("sidebar-mini")) {
+      document.cookie = "sidebar-mini=true; path=/";
+    } else {
+      document.cookie = "sidebar-mini=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+  }
 
 </script>
 @endpush
