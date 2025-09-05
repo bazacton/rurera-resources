@@ -1083,10 +1083,7 @@ scrollbar-gutter: stable both-edges;
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 0;}
 .question-layout .rureraform-col {padding:0 15px 20px !important;}
 .rurera-question-block:has(.question-number-holder) .question-layout {display: inline-block;width: 100%;padding-bottom: 0;}
-.rurera-question-block:has(.question-number-holder) .question-layout.row {
-    display: flex;
-    align-items: flex-start !important;
-}
+.rurera-question-block:has(.question-number-holder) .question-layout.row {display: flex; align-items: flex-start !important;}
 body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bottom: 130px;}
 .question-layout {padding: 0; display: inline-block; width: 100%;}
 .question-layout.row {align-items: center !important;}
@@ -1121,9 +1118,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .numeric-list-style > .form-field:before,
 .numeric-list-style > .option-group:before {content: counter(listStyle); position:absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 0; color: #999; margin-top: -12px; z-index: 1; display: inline-flex; justify-content: center; align-items: center;}
 .numeric-list-style .form-field label {padding-left: 45px;}
-.numeric-list-style > .correct.form-field:before {
-    color: #fff;
-}
+.numeric-list-style > .correct.form-field:before {color: #fff;}
 /*Quistions Type numeric-list style End*/
 
 /*Quistions Type numeric-list with image-top style Start*/
@@ -1143,9 +1138,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .alphabet-list-style .field-holder:has(input),
 .alphabet-list-style .form-field:has(input){padding-left: 0;}
 .alphabet-list-style .field-holder:before,
-.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 1; display: inline-flex;
-    justify-content: center;
-    align-items: center;}
+.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 1; display: inline-flex; justify-content: center; align-items: center;}
 .alphabet-list-style .form-field input[type="checkbox"] ~ label {padding-left: 45px;}
 .alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
 .numeric-list-style .lms-radio-select .field-holder label,
