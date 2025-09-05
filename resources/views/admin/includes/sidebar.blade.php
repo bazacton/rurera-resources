@@ -1932,26 +1932,26 @@
     });
 
 
-$(document).ready(function () {
-  var $body = $('body');
-  var $btn = $('.main-navbar .nav-link');
+// $(document).ready(function () {
+//   var $body = $('body');
+//   var $btn = $('.main-navbar .nav-link');
 
-  var menu_state = localStorage.getItem('sidebar_state');
-  if (menu_state === 'close') {
-    $body.addClass('sidebar-mini');
-  }
+//   var menu_state = localStorage.getItem('sidebar_state');
+//   if (menu_state === 'close') {
+//     $body.addClass('sidebar-mini');
+//   }
 
-  $btn.on('click', function (e) {
-    e.preventDefault();
+//   $btn.on('click', function (e) {
+//     e.preventDefault();
 
-    $body.toggleClass('sidebar-mini');
+//     $body.toggleClass('sidebar-mini');
 
-    if ($body.hasClass('sidebar-mini')) {
-      localStorage.setItem('sidebar_state', 'close');
-    } else {
-      localStorage.setItem('sidebar_state', 'open');
-    }
-  });
-});
+//     if ($body.hasClass('sidebar-mini')) {
+//       localStorage.setItem('sidebar_state', 'close');
+//     } else {
+//       localStorage.setItem('sidebar_state', 'open');
+//     }
+//   });
+// });
 </script>
 @endpush
