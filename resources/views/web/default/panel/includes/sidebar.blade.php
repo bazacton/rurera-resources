@@ -66,14 +66,7 @@
                         <span class="nav-sub-title font-16">Home</span>
                     </a>
                 </li>
-                <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
-                    <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Collections">
-                        <span class="sidenav-item-icon mr-20">
-                            <img src="/assets/default/img/sidebar/home.svg" alt="home">
-                        </span>
-                        <span class="nav-sub-title font-16">Collections</span>
-                    </a>
-                </li>
+                
                 @if(auth()->user()->isParent() || auth()->user()->isTutor())
                 <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
