@@ -667,7 +667,7 @@
                         <a href="/admin/analytics" class="nav-link dropdown-toggle" id="analytics-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
-                                <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="analytics-menu">
+                                <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="analytics-menu">
                                         @if(!empty($school_years))
                                             @foreach($school_years as $categoryObj)
                                                 <span><a href="/admin/analytics/{{$categoryObj->id}}"><img src="{{$categoryObj->icon}}" alt="practice"> {{$categoryObj->getTitleAttribute()}}</a></span>
