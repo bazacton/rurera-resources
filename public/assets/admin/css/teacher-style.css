@@ -3563,6 +3563,9 @@ Tailer Hub Style Start
 body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     display: none;
 }
+.sidebar-mini .nicescroll-rails {
+    visibility: hidden;
+}
 .admin_teacher_role .nicescroll-cursors {
     background-color: #ddd !important;
 }
