@@ -915,37 +915,23 @@ $(document).ready(function() {
 
 });
 $(document).ready(function () {
+  var $body = $('body');
+  var $btn = $('.nav-link[data-toggle="sidebar"]');
 
-    var $body = $('body'),
-    $btn = $('.navbar-nav li .nav-link[data-toggle="sidebar"]');
+  // read saved state
+  var menu_state = localStorage.getItem('sidebar_state');
+  if (menu_state === 'close') {
+    $body.addClass('sidebar-mini');
+  }
 
-    // Read cookie on page load
-    var menu_state = $.cookie('sidebar_state');
-
-    if (menu_state === 'close') {
-        $body.addClass('sidebar-mini');
+  // button click
+  $btn.on('click', function () {
+    $body.toggleClass('sidebar-mini');
+    if ($body.hasClass('sidebar-mini')) {
+      localStorage.setItem('sidebar_state', 'close');
     } else {
-        $body.removeClass('sidebar-mini');
+      localStorage.setItem('sidebar_state', 'open');
     }
-
-    // Update UI for debug (optional)
-    $('.cookie-is').html('<em>' + (menu_state || 'open') + '</em>');
-
-    // Button click handler
-    $btn.on('click', function () {
-        $body.toggleClass('sidebar-mini');
-
-        // Save state in cookie
-        if ($body.hasClass('sidebar-mini')) {
-            menu_state = 'close';
-        } else {
-            menu_state = 'open';
-        }
-
-        $.cookie('sidebar_state', menu_state, { path: '/', expires: 7 }); 
-        // path: '/' ensures cookie works across all pages
-        // expires: 7 keeps it for 7 days (you can change)
-
-        $('.cookie-is').html('<em>' + menu_state + '</em>');
-    });
+  });
 });
+
