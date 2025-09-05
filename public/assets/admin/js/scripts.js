@@ -148,43 +148,43 @@ $(function () {
         $(".nav-collapse .navbar-nav").removeClass('show');
     });
 
-    var toggle_sidebar_mini = function (mini) {
-        let body = $('body');
+    // var toggle_sidebar_mini = function (mini) {
+    //     let body = $('body');
 
-        if (!mini) {
-            body.removeClass('sidebar-mini');
-            $(".main-sidebar").css({
-                overflow: 'hidden'
-            });
-            setTimeout(function () {
-                $(".main-sidebar").niceScroll(sidebar_nicescroll_opts);
-                sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
-            }, 500);
-            $(".main-sidebar .sidebar-menu > li > ul .dropdown-title").remove();
-            $(".main-sidebar .sidebar-menu > li > a").removeAttr('data-toggle');
-            $(".main-sidebar .sidebar-menu > li > a").removeAttr('data-original-title');
-            $(".main-sidebar .sidebar-menu > li > a").removeAttr('title');
-        } else {
-            body.addClass('sidebar-mini');
-            body.removeClass('sidebar-show');
-            sidebar_nicescroll.remove();
-            sidebar_nicescroll = null;
-            $(".main-sidebar .sidebar-menu > li").each(function () {
-                let me = $(this);
+    //     if (!mini) {
+    //         body.removeClass('sidebar-mini');
+    //         $(".main-sidebar").css({
+    //             overflow: 'hidden'
+    //         });
+    //         setTimeout(function () {
+    //             $(".main-sidebar").niceScroll(sidebar_nicescroll_opts);
+    //             sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
+    //         }, 500);
+    //         $(".main-sidebar .sidebar-menu > li > ul .dropdown-title").remove();
+    //         $(".main-sidebar .sidebar-menu > li > a").removeAttr('data-toggle');
+    //         $(".main-sidebar .sidebar-menu > li > a").removeAttr('data-original-title');
+    //         $(".main-sidebar .sidebar-menu > li > a").removeAttr('title');
+    //     } else {
+    //         body.addClass('sidebar-mini');
+    //         body.removeClass('sidebar-show');
+    //         sidebar_nicescroll.remove();
+    //         sidebar_nicescroll = null;
+    //         $(".main-sidebar .sidebar-menu > li").each(function () {
+    //             let me = $(this);
 
-                if (me.find('> .dropdown-menu').length) {
-                    me.find('> .dropdown-menu').hide();
-                    me.find('> .dropdown-menu').prepend('<li class="dropdown-title pt-3">' + me.find('> a').text() + '</li>');
-                } else {
-                    me.find('> a').attr('data-toggle', 'tooltip');
-                    me.find('> a').attr('data-original-title', me.find('> a').text());
-                    $("[data-toggle='tooltip']").tooltip({
-                        placement: 'right'
-                    });
-                }
-            });
-        }
-    }
+    //             if (me.find('> .dropdown-menu').length) {
+    //                 me.find('> .dropdown-menu').hide();
+    //                 me.find('> .dropdown-menu').prepend('<li class="dropdown-title pt-3">' + me.find('> a').text() + '</li>');
+    //             } else {
+    //                 me.find('> a').attr('data-toggle', 'tooltip');
+    //                 me.find('> a').attr('data-original-title', me.find('> a').text());
+    //                 $("[data-toggle='tooltip']").tooltip({
+    //                     placement: 'right'
+    //                 });
+    //             }
+    //         });
+    //     }
+    // }
 
     // $("[data-toggle='sidebar']").on('click', function () {
 
@@ -213,6 +213,100 @@ $(function () {
 
     //     return false;
     // });
+    $(document).ready(function () {
+  var $body = $('body');
+
+  // ✅ Restore sidebar state from localStorage
+  var menu_state = localStorage.getItem('sidebar_state');
+  if (menu_state === 'close') {
+    $body.addClass('sidebar-mini');
+  }
+
+  // ✅ Handle navbar toggle button
+  $('.main-navbar .nav-link[data-toggle="sidebar"]').on('click', function (e) {
+    e.preventDefault();
+    toggle_sidebar();
+  });
+
+  // ✅ Handle sidebar toggle for mobile/desktop
+  $("[data-toggle='sidebar']").on('click', function () {
+    toggle_sidebar();
+    return false;
+  });
+
+  // ==============================
+  // MAIN TOGGLE HANDLER
+  // ==============================
+  function toggle_sidebar() {
+    var w = $(window);
+
+    if (w.outerWidth() <= 1200) {
+      // 👉 Mobile / Tablet
+      $body.removeClass('search-show search-gone');
+      if ($body.hasClass('sidebar-gone')) {
+        $body.removeClass('sidebar-gone').addClass('sidebar-show');
+      } else {
+        $body.addClass('sidebar-gone').removeClass('sidebar-show');
+      }
+      update_sidebar_nicescroll();
+    } else {
+      // 👉 Desktop
+      $body.removeClass('search-show search-gone');
+      if ($body.hasClass('sidebar-mini')) {
+        toggle_sidebar_mini(false);
+        localStorage.setItem('sidebar_state', 'open');
+      } else {
+        toggle_sidebar_mini(true);
+        localStorage.setItem('sidebar_state', 'close');
+      }
+    }
+  }
+
+  // ==============================
+  // MINI SIDEBAR FUNCTION
+  // ==============================
+  function toggle_sidebar_mini(mini) {
+    if (!mini) {
+      $body.removeClass('sidebar-mini');
+      $(".main-sidebar").css({ overflow: 'hidden' });
+
+      setTimeout(function () {
+        $(".main-sidebar").niceScroll(sidebar_nicescroll_opts);
+        sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
+      }, 500);
+
+      $(".main-sidebar .sidebar-menu > li > ul .dropdown-title").remove();
+      $(".main-sidebar .sidebar-menu > li > a")
+        .removeAttr('data-toggle')
+        .removeAttr('data-original-title')
+        .removeAttr('title');
+    } else {
+      $body.addClass('sidebar-mini').removeClass('sidebar-show');
+
+      if (sidebar_nicescroll) {
+        sidebar_nicescroll.remove();
+        sidebar_nicescroll = null;
+      }
+
+      $(".main-sidebar .sidebar-menu > li").each(function () {
+        let me = $(this);
+
+        if (me.find('> .dropdown-menu').length) {
+          me.find('> .dropdown-menu').hide();
+          me.find('> .dropdown-menu').prepend(
+            '<li class="dropdown-title pt-3">' + me.find('> a').text() + '</li>'
+          );
+        } else {
+          me.find('> a')
+            .attr('data-toggle', 'tooltip')
+            .attr('data-original-title', me.find('> a').text());
+          $("[data-toggle='tooltip']").tooltip({ placement: 'right' });
+        }
+      });
+    }
+  }
+});
+
 
     var toggleLayout = function () {
         var w = $(window),
