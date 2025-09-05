@@ -916,7 +916,7 @@ $(document).ready(function() {
 });
 $(document).ready(function () {
   var $body = $('body');
-  var $btn = $('.nav-link[data-toggle="sidebar"]');
+  var $btn = $('.navbar-nav li .nav-link[data-toggle="sidebar"]');
 
   // read saved state
   var menu_state = localStorage.getItem('sidebar_state');
