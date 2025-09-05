@@ -916,17 +916,15 @@ $(document).ready(function() {
 });
 $(document).ready(function () {
   var $body = $('body');
-  var $btn = $('.nav-link[data-toggle="sidebar"]'); // simpler selector
+  var $btn = $('.nav-link[data-toggle="sidebar"]');
 
-  // read saved state
   var menu_state = localStorage.getItem('sidebar_state');
   if (menu_state === 'close') {
     $body.addClass('sidebar-mini');
   }
 
-  // button click
   $btn.on('click', function (e) {
-    e.preventDefault(); // stop link navigation / page reload
+    e.preventDefault();
 
     $body.toggleClass('sidebar-mini');
 
