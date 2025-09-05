@@ -49,6 +49,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     display: block !important;
 }
 .admin_teacher_role .main-sidebar .sub-menu-sidebar li a {
+    background-color: inherit;
     padding: 6px 0;
     line-height: normal;
     font-size: .8125rem;
