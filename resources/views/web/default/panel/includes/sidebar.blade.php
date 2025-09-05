@@ -81,7 +81,7 @@
                     <li class="sidenav-item {{ (request()->is('learn') or request()->is('learn/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/learn" data-toggle="tooltip" data-placement="left" title="Learn">
                             <span class="sidenav-item-icon mr-20">
-                                <img src="/assets/default/img/sidebar/learn.svg" alt="learn" width="800" height="800">
+                                <img src="/assets/default/img/sidebar/learn.png" alt="learn" width="800" height="800">
                             </span>
                         </a>
                             <a href="/learn" class="font-16 nav-sub-title">Learn @if(!auth()->subscription('courses'))<img src="/assets/default/svgs/crown.svg" alt="crown" class="crown-icon">@endif</a>
