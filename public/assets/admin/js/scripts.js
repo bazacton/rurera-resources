@@ -914,42 +914,38 @@ $(document).ready(function() {
     });
 
 });
-$(document).ready(function(){
-  
-  var $body = $('body'),
-      $btn = $('.navbar-nav li .nav-link[data-toggle="sidebar"]'),
-      menu_state = $.cookie('my_cookie_name'),
-      viewportX = $(window).width();
-  
-  var cookieValue = $.cookie('my_cookie_name');
-  
-  if ( cookieValue === 'close' ) {
-    $body.addClass('sidebar-mini');
+$(document).ready(function () {
+
+    var $body = $('body'),
+    $btn = $('.navbar-nav li .nav-link[data-toggle="sidebar"]');
+
+    // Read cookie on page load
+    var menu_state = $.cookie('my_cookie_name');
+
+    if (menu_state === 'close') {
+        $body.addClass('sidebar-mini');
     } else {
         $body.removeClass('sidebar-mini');
     }
-    
-    $.cookie('my_cookie_name', menu_state);
-    
-    $('.cookie-is').find('em').remove();
-    $('.cookie-is').prepend().html( '<em>' + $.cookie('my_cookie_name') + '</em>');
-        
-    $btn.click(function(){
-            
-        $body.toggleClass('sidebar-mini');
-        
-        $.removeCookie('my_cookie_name');
-        
-        if ( $body.hasClass('sidebar-mini') ) {
-        menu_state = 'close';
-        } else {
-        menu_state = 'open';
-        }
-        
-        $.cookie('my_cookie_name', menu_state);
-    
-        $('.cookie-is').find('em').remove();
-        $('.cookie-is').prepend().html( '<em>' + $.cookie('my_cookie_name') + '</em>');
-      });
 
+    // Update UI for debug (optional)
+    $('.cookie-is').html('<em>' + (menu_state || 'open') + '</em>');
+
+    // Button click handler
+    $btn.on('click', function () {
+        $body.toggleClass('sidebar-mini');
+
+        // Save state in cookie
+        if ($body.hasClass('sidebar-mini')) {
+            menu_state = 'close';
+        } else {
+            menu_state = 'open';
+        }
+
+        $.cookie('my_cookie_name', menu_state, { path: '/', expires: 7 }); 
+        // path: '/' ensures cookie works across all pages
+        // expires: 7 keeps it for 7 days (you can change)
+
+        $('.cookie-is').html('<em>' + menu_state + '</em>');
+    });
 });
