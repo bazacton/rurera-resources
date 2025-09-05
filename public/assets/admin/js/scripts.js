@@ -300,7 +300,15 @@ $(function () {
             }
         }
 
-        
+        // ==============================
+        // TOOLTIP INITIALIZER
+        // ==============================
+        function init_sidebar_tooltips() {
+            $("[data-toggle='tooltip']").tooltip({
+            placement: 'right',
+            trigger: 'hover'
+            });
+        }
         });
 
 
