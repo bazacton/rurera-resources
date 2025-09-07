@@ -668,11 +668,12 @@
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
                                 <div class="sub-menu-sidebar dropdown-menu show" aria-labelledby="analytics-menu">
-                                        @if(!empty($school_years))
-                                            @foreach($school_years as $categoryObj)
-                                                <span><a href="/admin/analytics/{{$categoryObj->id}}"><img src="{{$categoryObj->icon}}" alt="practice"> {{$categoryObj->getTitleAttribute()}}</a></span>
-                                            @endforeach
-                                        @endif
+
+                                    @if(!empty($school_classes))
+                                        @foreach($school_classes as $classObj)
+                                            <span><a href="/admin/analytics/{{$classObj->id}}">{{$classObj->title}}</a></span>
+                                        @endforeach
+                                    @endif
                                 </div>
                         </a>
                     </li>
