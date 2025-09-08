@@ -955,25 +955,27 @@
             }
 
             $("#justAnInputBox1").on("change", function () {
-            var ids = comboTree3.getSelectedIds();
-            var names = comboTree3.getSelectedNames();
+                var ids = comboTree3.getSelectedIds();
+                var names = comboTree3.getSelectedNames();
 
-            $("#justAnInputBox1").val("");
-            if (ids.length === 0) {
+                // always clear the input field
+                $("#justAnInputBox1").val("");
 
-                $("#selected-tags").html("");
-                return;
-            }
+                if (ids.length === 0) {
+                    // nothing selected → clear tags
+                    $("#selected-tags").html("");
+                    return;
+                }
 
-            var html = "";
-            ids.forEach(function (id, index) {
-                var node = findNodeById(SampleJSONData, id);
-                var extraClass = (node && node.subs) ? " parent" : ""; // add parent class if it has subs
-                html += `<span class="badge badge-primary mr-1${extraClass}">${names[index]}</span>`;
-            });
+                var html = "";
+                ids.forEach(function (id, index) {
+                    var node = findNodeById(SampleJSONData, id);
+                    var extraClass = (node && node.subs) ? " parent" : "";
+                    html += `<span class="badge badge-primary mr-1${extraClass}">${names[index]}</span>`;
+                });
 
-            $("#selected-tags").html(html);
-            });
+                $("#selected-tags").html(html);
+                });
         
 
         // comboTree3.setSource(SampleJSONData2);
