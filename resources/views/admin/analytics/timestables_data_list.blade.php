@@ -47,10 +47,6 @@
             @endforeach
             </tbody>
         @endif
-
-
-
-
     </table>
 </div>
 <div class="status-in-words">
