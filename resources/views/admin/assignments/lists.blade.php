@@ -301,6 +301,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-2">
+                                    <div class="test-div">
+                                        <input
+                                            type="text"
+                                            id="justAnInputBox"
+                                            placeholder="Select"
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -830,5 +840,34 @@
 
         return false;
     });
+    </script>
+    <script>
+        var comboTree1, comboTree2, comboTree3;
+
+        jQuery(document).ready(function ($) {
+            comboTree1 = $("#justAnInputBox").comboTree({
+            source: SampleJSONData,
+            isMultiple: true,
+            cascadeSelect: false,
+            collapse: false,
+            selectAll: true,
+            });
+
+            comboTree3 = $("#justAnInputBox1").comboTree({
+            source: SampleJSONData,
+            isMultiple: true,
+            cascadeSelect: true,
+            collapse: false,
+            });
+
+            // comboTree3.setSource(SampleJSONData2);
+
+            comboTree2 = $("#justAnotherInputBox").comboTree({
+            source: SampleJSONData,
+            isMultiple: false,
+            });
+
+            comboTree1.toggleDropDown();
+        });
     </script>
 @endpush
