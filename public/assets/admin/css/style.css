@@ -2174,6 +2174,7 @@ Admin Questions Generator Page Style End
 .rureraform-context-menu {display: none;}
 /* Webinars Page style start */
 .draggable-lists-chapter li {border: 1px solid #ddd;}
+.draggable-content-lists .input-label {color: #fff;}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
