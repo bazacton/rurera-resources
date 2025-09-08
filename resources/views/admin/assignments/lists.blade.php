@@ -838,34 +838,7 @@
     </script>
     <script type="text/javascript">
       const SampleJSONData = [
-        {
-          id: 0,
-          title: "Horse",
-        },
-        {
-          id: 1,
-          title: "Birds",
-          isSelectable: false,
-          subs: [
-            {
-              id: 10,
-              title: "Pigeon",
-              isSelectable: false,
-            },
-            {
-              id: 11,
-              title: "Parrot",
-            },
-            {
-              id: 12,
-              title: "Owl",
-            },
-            {
-              id: 13,
-              title: "Falcon",
-            },
-          ],
-        },
+
         {
           id: 2,
           title: "Rabbit",
