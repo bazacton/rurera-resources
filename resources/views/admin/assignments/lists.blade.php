@@ -941,10 +941,8 @@
             collapse: true
             });
 
-            // insert tags container inside ct-wrapper
-            $(".ct-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
+            $(".ct-input-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
 
-            // helper function to find node by id in JSON
             function findNodeById(data, id) {
             for (var i = 0; i < data.length; i++) {
                 if (data[i].id == id) return data[i];
@@ -956,12 +954,10 @@
             return null;
             }
 
-            // update tags on selection
             $("#justAnInputBox1").on("change", function () {
             var ids = comboTree3.getSelectedIds();
             var names = comboTree3.getSelectedNames();
 
-            // keep input always empty
             $("#justAnInputBox1").val("");
 
             var html = "";
