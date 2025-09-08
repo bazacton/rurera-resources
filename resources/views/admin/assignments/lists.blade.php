@@ -959,6 +959,11 @@
             var names = comboTree3.getSelectedNames();
 
             $("#justAnInputBox1").val("");
+            if (ids.length === 0) {
+
+                $("#selected-tags").html("");
+                return;
+            }
 
             var html = "";
             ids.forEach(function (id, index) {
