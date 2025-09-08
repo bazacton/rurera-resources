@@ -304,7 +304,6 @@
                                 <div class="col-md-2">
                                     <div class="test-div">
                                         <input type="text" id="justAnInputBox1" placeholder="Select" autocomplete="off" />
-                                        <div id="selected-tags"></div>
                                     </div>
                                 </div>
                             </div>
