@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @push('libraries_top')
-
+<link rel="stylesheet" href="/assets/admin/vendor/multi-select/comboTreeStyle.css">
 @endpush
 
 
@@ -724,6 +724,7 @@
 @endsection
 
 @push('scripts_bottom')
+    <script src="/assets/admin/vendor/multi-select/comboTreePlugin.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $(document).on('change', '.ajax-category-courses', function () {
