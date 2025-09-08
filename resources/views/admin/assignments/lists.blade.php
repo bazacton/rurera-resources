@@ -938,6 +938,7 @@
           isMultiple: true,
           cascadeSelect: true,
           collapse: true,
+          selected: ['0']
         });
 
         // comboTree3.setSource(SampleJSONData2);
