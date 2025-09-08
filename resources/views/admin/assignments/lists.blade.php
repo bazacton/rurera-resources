@@ -939,35 +939,50 @@
             isMultiple: true,
             cascadeSelect: true,
             collapse: true
-        });
+            });
 
-        // insert tags container inside ct-wrapper
-        $(".ct-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
+            // insert tags container inside ct-wrapper
+            $(".ct-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
 
-        // update tags on selection
-        $("#justAnInputBox1").on("change", function () {
-            var values = comboTree3.getSelectedNames();
+            // helper function to find node by id in JSON
+            function findNodeById(data, id) {
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].id == id) return data[i];
+                if (data[i].subs) {
+                var found = findNodeById(data[i].subs, id);
+                if (found) return found;
+                }
+            }
+            return null;
+            }
+
+            // update tags on selection
+            $("#justAnInputBox1").on("change", function () {
+            var ids = comboTree3.getSelectedIds();
+            var names = comboTree3.getSelectedNames();
 
             // keep input always empty
             $("#justAnInputBox1").val("");
 
             var html = "";
-            values.forEach(function (val) {
-            html += `<span class="badge badge-primary mr-1">${val}</span>`;
+            ids.forEach(function (id, index) {
+                var node = findNodeById(SampleJSONData, id);
+                var extraClass = (node && node.subs) ? " parent" : ""; // add parent class if it has subs
+                html += `<span class="badge badge-primary mr-1${extraClass}">${names[index]}</span>`;
             });
 
             $("#selected-tags").html(html);
-        });
+            });
         
 
         // comboTree3.setSource(SampleJSONData2);
 
-        comboTree2 = $("#justAnotherInputBox").comboTree({
+        comboTree3 = $("#justAnotherInputBox").comboTree({
           source: SampleJSONData,
           isMultiple: false,
         });
 
-        comboTree3.toggleDropDown();
+        comboTree1.toggleDropDown();
       });
       
     </script>
