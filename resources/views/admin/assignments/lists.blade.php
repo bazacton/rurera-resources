@@ -303,12 +303,7 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="test-div">
-                                        <input
-                                            type="text"
-                                            id="justAnInputBox"
-                                            placeholder="Select"
-                                            autocomplete="off"
-                                        />
+                                        <input type="text" id="justAnInputBox1" placeholder="Select" autocomplete="off" />
                                     </div>
                                 </div>
                             </div>
