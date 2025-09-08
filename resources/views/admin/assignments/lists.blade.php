@@ -941,13 +941,21 @@
             collapse: true
         });
 
-        // Listen for selection changes
+        // insert tags container inside ct-wrapper
+        $(".ct-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
+
+        // update tags on selection
         $("#justAnInputBox1").on("change", function () {
-            var values = comboTree3.getSelectedNames(); // <-- safe here
+            var values = comboTree3.getSelectedNames();
+
+            // keep input always empty
+            $("#justAnInputBox1").val("");
+
             var html = "";
             values.forEach(function (val) {
             html += `<span class="badge badge-primary mr-1">${val}</span>`;
             });
+
             $("#selected-tags").html(html);
         });
         
