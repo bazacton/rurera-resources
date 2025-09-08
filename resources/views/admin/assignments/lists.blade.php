@@ -938,43 +938,45 @@
             isMultiple: true,
             cascadeSelect: true,
             collapse: true
+        });
+
+        $(".ct-input-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
+
+        function findNodeById(data, id) {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].id == id) return data[i];
+            if (data[i].subs) {
+            var found = findNodeById(data[i].subs, id);
+            if (found) return found;
+            }
+        }
+        return null;
+        }
+
+        $("#justAnInputBox1").on("change", function () {
+            var ids = comboTree3.getSelectedIds();
+            var names = comboTree3.getSelectedNames();
+
+            // always clear the input field
+            $("#justAnInputBox1").val("");
+
+            if (ids.length === 0) {
+                // nothing selected → clear tags
+                $("#selected-tags").html("");
+                return;
+            }
+
+            var html = "";
+            ids.forEach(function (id, index) {
+                var node = findNodeById(SampleJSONData, id);
+                var extraClass = (node && node.subs) ? " parent" : "";
+                html += `<span class="badge badge-primary mr-1${extraClass}">${names[index]}</span>`;
             });
 
-            $(".ct-input-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
-
-            function findNodeById(data, id) {
-            for (var i = 0; i < data.length; i++) {
-                if (data[i].id == id) return data[i];
-                if (data[i].subs) {
-                var found = findNodeById(data[i].subs, id);
-                if (found) return found;
-                }
-            }
-            return null;
-            }
-
-            $("#justAnInputBox1").on("change", function () {
-                var ids = comboTree3.getSelectedIds();
-                var names = comboTree3.getSelectedNames();
-
-                // always clear the input field
-                $("#justAnInputBox1").val("");
-
-                if (ids.length === 0) {
-                    // nothing selected → clear tags
-                    $("#selected-tags").html("");
-                    return;
-                }
-
-                var html = "";
-                ids.forEach(function (id, index) {
-                    var node = findNodeById(SampleJSONData, id);
-                    var extraClass = (node && node.subs) ? " parent" : "";
-                    html += `<span class="badge badge-primary mr-1${extraClass}">${names[index]}</span>`;
-                });
-
-                $("#selected-tags").html(html);
-                });
+            $("#selected-tags").html(html);
+            comboTree3.clearSelection();
+            $("#selected-tags").html("");
+        });
         
 
         // comboTree3.setSource(SampleJSONData2);
