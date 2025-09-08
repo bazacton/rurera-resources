@@ -10,7 +10,7 @@
                  class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
                  _data-parent="1"
                  _data-parent-col="0" style="display: block;">
-                <div class="question-layout row"></div>
+                <div class="question-layout"></div>
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@ $total_questions = countSubItems(json_decode($quizAttempt->questions_list));
                          class="{{$classes}} rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
                          _data-parent="1"
                          _data-parent-col="0" style="display: block;">
-                        <div class="question-layout row">
+                        <div class="question-layout">
                             @if($layout_type != 'results')
                             <span class="marks" data-marks="{{$question->question_score}}">{{$question->question_score}} marks</span>
                             @endif
