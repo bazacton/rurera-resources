@@ -838,15 +838,6 @@
     </script>
     <script type="text/javascript">
       const SampleJSONData = [
-
-        {
-          id: 2,
-          title: "Rabbit",
-        },
-        {
-          id: 3,
-          title: "Fox",
-        },
         {
           id: 5,
           title: "Cats",
