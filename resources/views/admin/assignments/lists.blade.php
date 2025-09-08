@@ -973,7 +973,7 @@
           source: SampleJSONData,
           isMultiple: true,
           cascadeSelect: true,
-          collapse: false,
+          collapse: true,
         });
 
         // comboTree3.setSource(SampleJSONData2);
