@@ -977,12 +977,12 @@
 
         // comboTree3.setSource(SampleJSONData2);
 
-        comboTree3 = $("#justAnotherInputBox").comboTree({
+        comboTree2 = $("#justAnotherInputBox").comboTree({
           source: SampleJSONData,
           isMultiple: false,
         });
 
-        comboTree1.toggleDropDown();
+        comboTree3.toggleDropDown();
       });
       
     </script>
