@@ -160,3 +160,27 @@ span.ct-list-item-title,
 .ct-source-ul-main .ct-item-parent > .ct-list-item-title {
     color: red;
 }
+.rurera-search-filters #selected-tags .badge {
+    padding: 0;
+    background-color: inherit;
+    border-radius: 0;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.ct-input-wrapper:has(#selected-tags span) .ct-input-box {
+    opacity: 0;
+}
+.ct-input-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+div#selected-tags {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-right: 25px;
+}
+#selected-tags .badge.parent {
+    color: red;
+}
