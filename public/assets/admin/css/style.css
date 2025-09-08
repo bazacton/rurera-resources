@@ -2175,6 +2175,7 @@ Admin Questions Generator Page Style End
 /* Webinars Page style start */
 .draggable-lists-chapter li {border: 1px solid #ddd;}
 .draggable-content-lists .input-label {color: #fff;}
+li.sub-chapter-parent .btn svg {stroke: #fff;}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
