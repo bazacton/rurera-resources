@@ -959,7 +959,7 @@
           isMultiple: false,
         });
 
-        comboTree1.toggleDropDown();
+        comboTree3.toggleDropDown();
       });
       
     </script>
