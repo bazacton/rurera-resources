@@ -959,7 +959,7 @@
 
             // always clear the input field
             $("#justAnInputBox1").val("");
-            $("#selected-tags").html(html);
+
             if (ids.length === 0) {
                 // nothing selected → clear tags
                 $("#selected-tags").html("");
@@ -972,6 +972,9 @@
                 var extraClass = (node && node.subs) ? " parent" : "";
                 html += `<span class="badge badge-primary mr-1${extraClass}">${names[index]}</span>`;
             });
+
+            $("#selected-tags").html(html);
+
         });
         
 
