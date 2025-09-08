@@ -954,14 +954,14 @@
         }
 
         $("#justAnInputBox1").on("change", function () {
-            var ids = comboTree3.getSelectedIds();
-            var names = comboTree3.getSelectedNames();
+            var ids = comboTree3.getSelectedIds() || [];
+            var names = comboTree3.getSelectedNames() || [];
 
-            // always clear the input field
+            // always clear the input box
             $("#justAnInputBox1").val("");
 
+            // if nothing selected → clear tags
             if (ids.length === 0) {
-                // nothing selected → clear tags
                 $("#selected-tags").html("");
                 return;
             }
@@ -974,7 +974,6 @@
             });
 
             $("#selected-tags").html(html);
-
         });
         
 
