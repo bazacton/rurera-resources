@@ -157,3 +157,6 @@ span.ct-list-item-title,
   border: none;
   border-bottom: 1px solid var(--ct-border-color);
 }
+.ct-source-ul-main .ct-item-parent > .ct-list-item-title {
+    color: red;
+}
