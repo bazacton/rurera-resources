@@ -11,7 +11,7 @@
                  class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
                  _data-parent="1"
                  _data-parent-col="0" style="display: block;">
-                <div class="question-layout">
+                <div class="question-layout row">
 
                 </div>
             </div>
