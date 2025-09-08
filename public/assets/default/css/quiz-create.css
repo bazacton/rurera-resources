@@ -1721,19 +1721,11 @@ Inline-Style From Php Files Style End
 Question Result Page Style Start
 ******************************************/
 .question-result-layout .rureraform-element:has(.input-holder.input_box ~ .input-holder.input_box),
-.question-result-layout .rureraform-element:has(select ~ select) {
-    line-height: 44px;
-}
+.question-result-layout .rureraform-element:has(select ~ select) {line-height: 44px;}
 .question-result-layout .alphabet-list-style .wrong.form-field:before,
-.question-result-layout .alphabet-list-style .correct.form-field:before {
-    color: #fff;
-}
-.question-result-layout .rureraform-element {
-    outline: none !important;
-}
-.question-result-layout .rureraform-col-12 {
-    padding: 0 0 10px;
-}
+.question-result-layout .alphabet-list-style .correct.form-field:before {color: #fff;}
+.question-result-layout .rureraform-element {outline: none !important;}
+.question-result-layout .rureraform-col-12 {padding: 0 0 10px;}
 /****************************************** 
 Question Result Page Style End
 ******************************************/
