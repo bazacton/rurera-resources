@@ -934,20 +934,23 @@
           selectAll: true,
         });
 
-        comboTree3 = $("#justAnInputBox1").comboTree({
-          source: SampleJSONData,
-          isMultiple: true,
-          cascadeSelect: true,
-          collapse: true,
-          selected: function () {
-            var values = comboTree3.getSelectedNames(); // safe to call here
+        var comboTree3 = $("#justAnInputBox1").comboTree({
+            source: SampleJSONData,
+            isMultiple: true,
+            cascadeSelect: true,
+            collapse: true
+        });
+
+        // Listen for selection changes
+        $("#justAnInputBox1").on("change", function () {
+            var values = comboTree3.getSelectedNames(); // <-- safe here
             var html = "";
             values.forEach(function (val) {
-                html += `<span class="badge badge-primary mr-1">${val}</span>`;
+            html += `<span class="badge badge-primary mr-1">${val}</span>`;
             });
             $("#selected-tags").html(html);
-            }
         });
+        
 
         // comboTree3.setSource(SampleJSONData2);
 
