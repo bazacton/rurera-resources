@@ -939,7 +939,14 @@
           isMultiple: true,
           cascadeSelect: true,
           collapse: true,
-          selected: ['0']
+          selected: function () {
+            var values = comboTree3.getSelectedNames(); // safe to call here
+            var html = "";
+            values.forEach(function (val) {
+                html += `<span class="badge badge-primary mr-1">${val}</span>`;
+            });
+            $("#selected-tags").html(html);
+            }
         });
 
         // comboTree3.setSource(SampleJSONData2);
@@ -951,13 +958,6 @@
 
         comboTree1.toggleDropDown();
       });
-      $("#justAnInputBox1").on("change", function () {
-            var values = comboTree3.getSelectedNames(); // get selected item titles
-            var html = "";
-            values.forEach(function (val) {
-            html += `<span class="badge badge-primary mr-1">${val}</span>`;
-            });
-            $("#selected-tags").html(html);
-        });
+      
     </script>
 @endpush
