@@ -164,14 +164,15 @@
                               method="Post" class="rurera-form-validation analytics-form row">
                             {{ csrf_field() }}
 
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera-hide">
                                 <div class="form-group">
                                     <label class="input-label d-block">Class</label>
                                     <select name="class_id" data-target_class="class_students_multi_select" data-passing_vars="[class_id]" data-passing_data="" data-ajax_url="/admin/common/class_students_multi_select" class="form-control class_id select2 rurera-ajax-submission" data-placeholder="Select Class">
                                         <option value="">Select Class</option>
                                         @if($classes->count() > 0)
                                             @foreach($classes as $classObj)
-                                                <option value="{{$classObj->id}}">{{$classObj->title}}</option>
+                                                @php $is_selected = ($classObj->id == $class_id)? 'selected' : ''; @endphp
+                                                <option value="{{$classObj->id}}" {{$is_selected}}>{{$classObj->title}}</option>
                                             @endforeach
                                         @endif
                                     </select>
@@ -388,6 +389,7 @@
     $(document).ready(function () {
 
 
+        $(".class_id").change();
         $(document).on('click', '.attempt-type-btn', function (e) {
             $(".attempt-type-btn").removeClass('active');
             $(this).addClass('active');
@@ -445,7 +447,7 @@
             if (returnType == false) {
                 return false;//
             }*/
-           rurera_loader($('.analytics-form'), 'div');
+           //rurera_loader($('.analytics-form'), 'div');
             $.ajax({
                 type: "POST",
                 url: '/admin/analytics/analytics_data_callback',
@@ -460,7 +462,7 @@
                         headers += '<th class="text-center">Q' + i + '</th>';
                     }
                     $(".no_of_attempts_column").after(headers);
-                    rurera_remove_loader($(".analytics-form"), 'div');
+                    //rurera_remove_loader($(".analytics-form"), 'div');
                 }
             });
             return false;
