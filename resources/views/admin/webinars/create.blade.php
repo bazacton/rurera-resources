@@ -50,7 +50,7 @@
                                         <div class="col-12 col-md-12">
 
                                             <div class="row">
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     @if(!empty(getGeneralSettings('content_translate')))
                                                     <div class="form-group">
                                                         <label class="input-label">{{ trans('auth.language') }}</label>
@@ -69,7 +69,7 @@
                                                         <input type="hidden" name="locale" value="{{ getDefaultLocale() }}">
                                                     @endif
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     @if( !empty(auth()->user()::$country_location) )
                                                     <div class="form-group">
                                                         <label class="input-label">Country</label>
@@ -87,7 +87,7 @@
                                                     </div>
                                                     @endif
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('public.title') }}</label>
                                                         <input type="text" name="title" value="{{ !empty($webinar) ? $webinar->title : old('title') }}" class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
@@ -98,7 +98,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 ">
                                                         <label class="input-label d-block">Subject Type</label>
                                                         <select name="subject_type" class="custom-select @error('subject_type')  is-invalid @enderror">
@@ -113,7 +113,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 ">
                                                         <label class="input-label d-block">{{ trans('panel.course_type') }}</label>
 
@@ -130,7 +130,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label d-block">Type</label>
                                                         <select name="webinar_type" class="conditional_field_parent custom-select @error('type')  is-invalid @enderror">
@@ -145,7 +145,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 webinar_type_fields test_total_time_field">
                                                         <label class="input-label">Mock Test Image</label>
                                                         <div class="input-group">
@@ -168,7 +168,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Practice Type</label>
                                                         <select name="webinar_practice_type" class="webinar_practice_type conditional_field_parent custom-select @error('type')  is-invalid @enderror">
@@ -185,7 +185,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Questions Type</label>
                                                         <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
@@ -202,7 +202,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Test Total Time (in minutes)</label>
                                                         <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
@@ -213,7 +213,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('update.points') }}</label>
                                                         <input type="number" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
@@ -224,7 +224,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('admin/main.class_url') }}</label>
                                                         <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
@@ -236,7 +236,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">Custom URL</label>
                                                         <input type="text" name="custom_url" value="{{ !empty($webinar) ? $webinar->custom_url : old('custom_url') }}" class="form-control @error('custom_url')  is-invalid @enderror" placeholder=""/>
@@ -247,7 +247,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     @if(!empty($webinar) and $webinar->creator->isOrganization())
                                                         <div class="form-group mt-15 ">
                                                             <label class="input-label d-block">{{ trans('admin/main.organization') }}</label>
@@ -258,7 +258,7 @@
                                                         </div>
                                                     @endif
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15 ">
                                                         <label class="input-label d-block">{{ trans('admin/main.select_a_instructor') }}</label>
 
@@ -279,7 +279,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">SEO Title</label>
                                                         <input type="text" name="seo_title" value="{{ !empty($webinar) ? $webinar->seo_title : old('seo_title') }}" class="form-control @error('seo_title')  is-invalid @enderror"/>
@@ -291,7 +291,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('public.seo_description') }}</label>
                                                         <input type="text" name="seo_description" value="{{ !empty($webinar) ? $webinar->seo_description : old('seo_description') }}" class="form-control @error('seo_description')  is-invalid @enderror"/>
@@ -303,7 +303,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group custom-switches-stacked">
                                                         <label class="input-label">{{ trans('admin/main.robot') }}:</label>
                                                         <label class="custom-switch pl-0">
@@ -315,7 +315,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group custom-switches-stacked">
                                                         <label class="input-label">Include In XML:</label>
                                                         <label class="custom-switch pl-0">
@@ -327,7 +327,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
                                                         <div class="input-group">
@@ -350,7 +350,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('public.cover_image') }}</label>
                                                         <div class="input-group">
@@ -373,7 +373,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group">
                                                         <label>Icon Code</label>
                                                         <div class="input-group">
@@ -381,7 +381,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group">
                                                         <label>Background Color</label>
                                                         <div class="input-group colorpickerinput">
@@ -395,7 +395,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group">
                                                         <label>Learn Background Color</label>
                                                         <div class="input-group colorpickerinput">
@@ -409,7 +409,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">Learn Icon</label>
                                                         <div class="input-group">
@@ -432,7 +432,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-25">
                                                         <label class="input-label">{{ trans('public.demo_video') }} ({{ trans('public.optional') }})</label>
 
@@ -449,7 +449,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-3 col-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-0">
                                                         <label class="input-label font-12">{{ trans('update.path') }}</label>
                                                         <div class="input-group js-video-demo-path-input">
