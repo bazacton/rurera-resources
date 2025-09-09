@@ -13,10 +13,6 @@
         .bootstrap-timepicker-widget table td input {
             width: 35px !important;
         }
-
-        .select2-container {
-            z-index: 1212 !important;
-        }
     </style>
 @endpush
 
