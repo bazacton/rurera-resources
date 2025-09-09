@@ -27,25 +27,26 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">Year</label>
-                            <select name="key_stage" data-plugin-selectTwo
-                                    class="category-id-field form-control populate ajax-category-courses">
-                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                <optgroup label="{{  $category->title }}">
-                                    @foreach($category->subCategories as $subCategory)
-                                    <option value="{{ $subCategory->id }}" @if(request()->get('key_stage') ==
-                                        $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}
+                            <div class="select-holder">
+                                <select name="key_stage" data-plugin-selectTwo class="category-id-field form-control populate ajax-category-courses">
+                                    <option value="">{{trans('admin/main.all_categories')}}</option>
+                                    @foreach($categories as $category)
+                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                    <optgroup label="{{  $category->title }}">
+                                        @foreach($category->subCategories as $subCategory)
+                                        <option value="{{ $subCategory->id }}" @if(request()->get('key_stage') ==
+                                            $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}
+                                        </option>
+                                        @endforeach
+                                    </optgroup>
+                                    @else
+                                    <option value="{{ $category->id }}" @if(request()->get('key_stage') == $category->id)
+                                        selected="selected" @endif>{{ $category->title }}
                                     </option>
+                                    @endif
                                     @endforeach
-                                </optgroup>
-                                @else
-                                <option value="{{ $category->id }}" @if(request()->get('key_stage') == $category->id)
-                                    selected="selected" @endif>{{ $category->title }}
-                                </option>
-                                @endif
-                                @endforeach
-                            </select>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">

@@ -110,23 +110,24 @@
                                         <div class="form-group">
 
                                             <div class="input-field">
-                                            <label class="input-label">{{ trans('admin/main.class') }}</label>
-                                                <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
-                                                    @if(!empty($webinars) and $webinars->count() > 0)
-                                                    @foreach($webinars as $webinar)
-                                                    <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
-                                                    @endforeach
-                                                    @endif
-                                                </select>
+                                                <label class="input-label">{{ trans('admin/main.class') }}</label>
+                                                <div class="select-holder">
+                                                    <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
+                                                        @if(!empty($webinars) and $webinars->count() > 0)
+                                                        @foreach($webinars as $webinar)
+                                                        <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
+                                                        @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-
-                                            <div class="select-holder">
-                                                <div class="input-field">
-                                                    <label class="input-label">{{ trans('admin/main.status') }}</label>
+                                            <div class="input-field">
+                                                <label class="input-label">{{ trans('admin/main.status') }}</label>
+                                                <div class="select-holder">
                                                     <select name="statue" data-plugin-selectTwo class="form-control populate">
                                                         <option value="">{{ trans('admin/main.all_status') }}</option>
                                                         <option value="active" @if(request()->get('status') == 'active') selected @endif>{{
@@ -137,6 +138,7 @@
                                                         </option>
                                                     </select>
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                     </div>

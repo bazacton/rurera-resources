@@ -504,7 +504,7 @@
                                     </div>
                                     </section>
 
-                                    <section class="mt-3">
+                                    <section class="mt-3 rurera-hide">
                                         <h2 class="section-title after-line">{{ trans('public.additional_information') }}</h2>
                                         <div class="row">
                                             <div class="col-12 col-md-6">
@@ -757,7 +757,7 @@
                                 </section>
 
                                 @if(!empty($webinar))
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('admin/main.price_plans') }}</h2>
                                             <button id="webinarAddTicket" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('admin/main.add_price_plan') }}</button>
@@ -811,7 +811,7 @@
                                     @include('admin.webinars.create_includes.contents')
 
 
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('public.prerequisites') }}</h2>
                                             <button id="webinarAddPrerequisites" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('public.add_prerequisites') }}</button>
@@ -865,7 +865,7 @@
                                         </div>
                                     </section>
 
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('public.faq') }}</h2>
                                             <button id="webinarAddFAQ" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('public.add_faq') }}</button>
@@ -915,7 +915,7 @@
                                     </section>
 
                                     @foreach(\App\Models\WebinarExtraDescription::$types as $webinarExtraDescriptionType)
-                                        <section class="mt-30">
+                                        <section class="mt-30 rurera-hide">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <h2 class="section-title after-line">{{ trans('update.'.$webinarExtraDescriptionType) }}</h2>
                                                 <button id="add_new_{{ $webinarExtraDescriptionType }}" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('update.add_'.$webinarExtraDescriptionType) }}</button>
@@ -974,7 +974,7 @@
                                         </section>
                                     @endforeach
 
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('public.quiz_certificate') }}</h2>
                                             <button id="webinarAddQuiz" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('public.add_quiz') }}</button>
@@ -1025,7 +1025,7 @@
                                     </section>
                                 @endif
 
-                                <section class="mt-3">
+                                <section class="mt-3 rurera-hide">
                                     <h2 class="section-title after-line">{{ trans('public.message_to_reviewer') }}</h2>
                                     <div class="row">
                                         <div class="col-12">
@@ -1038,7 +1038,7 @@
 
                                 <input type="hidden" name="draft" value="no" id="forDraft"/>
 
-                                <div class="row">
+                                <div class="row mt-30">
                                     <div class="col-12">
                                         <button type="button" id="saveAndPublish" class="btn btn-success">{{ !empty($webinar) ? trans('admin/main.save_and_publish') : trans('admin/main.save_and_continue') }}</button>
 

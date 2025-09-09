@@ -209,12 +209,15 @@ ul.crop_sizes {
 					<div class="col-md-4">
 					<div class="form-group skelton-hide skelton-height-lg">
 						<label>Subjects</label>
-						<select data-return_type="option"
-								data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'gallery_images_search')}}"
-								class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-								id="subject_id" name="subject_id">
-							<option disabled selected>Subject</option>
-						</select>
+                        <div class="select-holder">
+                            <select data-return_type="option"
+                                data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'gallery_images_search')}}"
+                                class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                id="subject_id" name="subject_id">
+                                <option disabled selected>Subject</option>
+                            </select>
+                        </div>
+						
 						@error('subject_id')
 						<div class="invalid-feedback">
 							{{ $message }}
