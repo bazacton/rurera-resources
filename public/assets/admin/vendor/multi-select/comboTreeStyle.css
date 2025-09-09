@@ -144,7 +144,7 @@ span.ct-list-item-title,
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
-  left: 20px;
+  margin-left: 10px;
 }
 
 .ct-input-box:focus {
@@ -202,5 +202,5 @@ div#selected-tags {
     color: currentcolor;
 }
 .multi-selection-dropdown .ct-drop-down-container > .ct-source-ul-main {
-    padding: 10px;
+    padding: 10px 0;
 }
