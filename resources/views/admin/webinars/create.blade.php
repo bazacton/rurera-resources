@@ -758,7 +758,7 @@
                                 </section>
 
                                 @if(!empty($webinar))
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('admin/main.price_plans') }}</h2>
                                             <button id="webinarAddTicket" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('admin/main.add_price_plan') }}</button>
@@ -916,7 +916,7 @@
                                     </section>
 
                                     @foreach(\App\Models\WebinarExtraDescription::$types as $webinarExtraDescriptionType)
-                                        <section class="mt-30">
+                                        <section class="mt-30 rurera-hide">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <h2 class="section-title after-line">{{ trans('update.'.$webinarExtraDescriptionType) }}</h2>
                                                 <button id="add_new_{{ $webinarExtraDescriptionType }}" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('update.add_'.$webinarExtraDescriptionType) }}</button>
@@ -1026,7 +1026,7 @@
                                     </section>
                                 @endif
 
-                                <section class="mt-3">
+                                <section class="mt-3 rurera-hide">
                                     <h2 class="section-title after-line">{{ trans('public.message_to_reviewer') }}</h2>
                                     <div class="row">
                                         <div class="col-12">
