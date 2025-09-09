@@ -36,12 +36,14 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>AI prompt</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
-            </div>
-            <div class="breadcrumb-item">AI prompt</div>
-        </div>
+        <div class="heading-holder">
+			<h1>AI prompt</h1>
+			<div class="section-header-breadcrumb">
+				<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+				</div>
+				<div class="breadcrumb-item">AI prompt</div>
+			</div>
+		</div>
     </div>
 
 
