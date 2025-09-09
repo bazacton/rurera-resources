@@ -1039,7 +1039,7 @@
 
                                 <input type="hidden" name="draft" value="no" id="forDraft"/>
 
-                                <div class="row">
+                                <div class="row mt-30">
                                     <div class="col-12">
                                         <button type="button" id="saveAndPublish" class="btn btn-success">{{ !empty($webinar) ? trans('admin/main.save_and_publish') : trans('admin/main.save_and_continue') }}</button>
 
