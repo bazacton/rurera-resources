@@ -1806,3 +1806,22 @@ $('body').on('change', '.conditional_field_parent', function (e) {
 if($(".conditional_field_parent").length > 0){
     $(".conditional_field_parent:checked").change();
 }
+
+
+$(document).on('click', '.generate-subtopic-part', function (e) {
+    var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+    var parentObj = $(this).closest('.subtopic-parts-block');
+    rurera_loader(parentObj, 'div');
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/topics_parts/generate_sub_chapter_topic_part',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"sub_chapter_id": sub_chapter_id},
+        success: function (return_data) {
+            rurera_remove_loader(parentObj, 'div');
+            parentObj.html(return_data);
+        }
+    });
+});

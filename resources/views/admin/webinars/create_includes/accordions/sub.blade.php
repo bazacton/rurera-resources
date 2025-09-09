@@ -17,7 +17,14 @@ $chapter  = isset( $chapter )? $chapter : '';
             </span>
 
             <span class="font-weight-bold text-dark-blue d-block cursor-pointer">
+
+                @php $part_items_count = isset($subChapterInfo->id)? $subChapterInfo->topicParts->count() : 0; @endphp
                 {{ !empty($subChapterInfo) ? $subChapterInfo->sub_chapter_title : trans('public.add_new_quizzes') }}
+                @if($part_items_count == 0)
+                    <span class="subtopic-parts-block"><a href="javascript:;" class="generate-subtopic-part" data-sub_chapter_id="{{isset($subChapterInfo->id)? $subChapterInfo->id : 0}}">Generate</a></span>
+                @else
+                    <span class="subtopic-parts-block"><img src="/assets/default/img/tick-white.png"></span>
+                @endif
             </span>
         </div>
 
