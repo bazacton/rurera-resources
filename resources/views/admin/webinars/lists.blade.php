@@ -7,13 +7,15 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{ trans('admin/main.type_'.$classesType.'s') }} {{trans('admin/main.list')}}</h1>
-            <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
-                </div>
-                <div class="breadcrumb-item">{{trans('admin/main.classes')}}</div>
+            <div class="heading-holder">
+                <h1>{{ trans('admin/main.type_'.$classesType.'s') }} {{trans('admin/main.list')}}</h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+                    </div>
+                    <div class="breadcrumb-item">{{trans('admin/main.classes')}}</div>
 
-                <div class="breadcrumb-item">{{ trans('admin/main.type_'.$classesType.'s') }}</div>
+                    <div class="breadcrumb-item">{{ trans('admin/main.type_'.$classesType.'s') }}</div>
+                </div>
             </div>
         </div>
 
