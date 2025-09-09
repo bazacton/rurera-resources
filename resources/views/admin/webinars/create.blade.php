@@ -84,7 +84,7 @@
                                                     @endif
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">{{ trans('public.title') }}</label>
                                                         <input type="text" name="title" value="{{ !empty($webinar) ? $webinar->title : old('title') }}" class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
                                                         @error('title')
@@ -95,7 +95,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
-                                                    <div class="form-group mt-15 ">
+                                                    <div class="form-group">
                                                         <label class="input-label d-block">Subject Type</label>
                                                         <select name="subject_type" class="custom-select @error('subject_type')  is-invalid @enderror">
                                                             <option value="Course" @if((!empty($webinar) and $webinar->subject_type == 'Course') or old('subject_type') == 'Course') selected @endif>Course</option>
@@ -110,7 +110,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
-                                                    <div class="form-group mt-15 ">
+                                                    <div class="form-group">
                                                         <label class="input-label d-block">{{ trans('panel.course_type') }}</label>
 
                                                         <select name="type" class="custom-select @error('type')  is-invalid @enderror">
@@ -127,7 +127,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label d-block">Type</label>
                                                         <select name="webinar_type" class="conditional_field_parent custom-select @error('type')  is-invalid @enderror">
                                                             <option data-target_common_class="webinar_type_fields" data-target_field_class="" value="Course" @if( !empty($webinar) and $webinar->webinar_type == 'Course') selected @endif>Course</option>
@@ -146,7 +146,7 @@
                                                 
                                                 
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">{{ trans('update.points') }}</label>
                                                         <input type="number" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
                                                         @error('points')
@@ -158,7 +158,7 @@
                                                 </div>
                                                 
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">Custom URL</label>
                                                         <input type="text" name="custom_url" value="{{ !empty($webinar) ? $webinar->custom_url : old('custom_url') }}" class="form-control @error('custom_url')  is-invalid @enderror" placeholder=""/>
                                                         @error('custom_url')
@@ -170,7 +170,7 @@
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     @if(!empty($webinar) and $webinar->creator->isOrganization())
-                                                        <div class="form-group mt-15 ">
+                                                        <div class="form-group">
                                                             <label class="input-label d-block">{{ trans('admin/main.organization') }}</label>
 
                                                             <select name="organ_id" data-search-option="just_organization_role" class="form-control search-user-select2" data-placeholder="{{ trans('search_organization') }}">
@@ -180,7 +180,7 @@
                                                     @endif
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
-                                                    <div class="form-group mt-15 ">
+                                                    <div class="form-group">
                                                         <label class="input-label d-block">{{ trans('admin/main.select_a_instructor') }}</label>
 
                                                         <select name="teacher_id" data-search-option="except_user" class="form-control search-user-select22"
@@ -205,7 +205,7 @@
                                                 
                                                 
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
@@ -228,7 +228,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">{{ trans('public.cover_image') }}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
@@ -287,7 +287,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">Learn Icon</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
@@ -377,7 +377,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                    <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Practice Type</label>
                                                         <select name="webinar_practice_type" class="webinar_practice_type conditional_field_parent custom-select @error('type')  is-invalid @enderror">
                                                             <option value="sats" @if( !empty($webinar) and $webinar->webinar_practice_type == 'sats') selected @endif>SATs</option>
@@ -394,7 +394,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                    <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Questions Type</label>
                                                         <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
                                                             @if(!empty($questions_types))
@@ -411,7 +411,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                    <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Test Total Time (in minutes)</label>
                                                         <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
                                                         @error('total_time')
@@ -428,7 +428,7 @@
                                                     <h2 class="section-title after-line">SEO Fields</h2>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">{{ trans('admin/main.class_url') }}</label>
                                                         <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
                                                         <div class="text-muted text-small mt-1">{{ trans('admin/main.class_url_hint') }}</div>
@@ -440,7 +440,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">SEO Title</label>
                                                         <input type="text" name="seo_title" value="{{ !empty($webinar) ? $webinar->seo_title : old('seo_title') }}" class="form-control @error('seo_title')  is-invalid @enderror"/>
                                                         <div class="text-muted text-small mt-1">Will be displayed on the search engine result page</div>
@@ -452,7 +452,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">{{ trans('public.seo_description') }}</label>
                                                         <input type="text" name="seo_description" value="{{ !empty($webinar) ? $webinar->seo_description : old('seo_description') }}" class="form-control @error('seo_description')  is-invalid @enderror"/>
                                                         <div class="text-muted text-small mt-1">{{ trans('admin/main.seo_description_hint') }}</div>
@@ -507,7 +507,7 @@
 
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="form-group mt-15">
+                                                <div class="form-group">
                                                     <label class="input-label">{{ trans('public.description') }}</label>
                                                     <textarea id="summernote" name="description" class="form-control @error('description')  is-invalid @enderror" placeholder="{{ trans('forms.webinar_description_placeholder') }}">{!! !empty($webinar) ? $webinar->description : old('description')  !!}</textarea>
                                                     @error('description')
@@ -518,7 +518,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <div class="form-group mt-15">
+                                    <div class="form-group">
                                         <label class="input-label">Categories</label>
 
                                         <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
