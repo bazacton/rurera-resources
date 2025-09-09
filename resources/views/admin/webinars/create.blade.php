@@ -203,18 +203,7 @@
                                                 
                                                 
                                                 
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group custom-switches-stacked">
-                                                        <label class="input-label">Include In XML:</label>
-                                                        <label class="custom-switch pl-0">
-                                                            <label class="custom-switch-description mb-0 mr-2">Not Include</label>
-                                                            <input type="hidden" name="include_xml" value="0">
-                                                            <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($webinar) and $webinar->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
-                                                            <span class="custom-switch-indicator"></span>
-                                                            <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
@@ -483,6 +472,18 @@
                                                             <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($webinar) and $webinar->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
                                                             <span class="custom-switch-indicator"></span>
                                                             <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group custom-switches-stacked">
+                                                        <label class="input-label">Include In XML:</label>
+                                                        <label class="custom-switch pl-0">
+                                                            <label class="custom-switch-description mb-0 mr-2">Not Include</label>
+                                                            <input type="hidden" name="include_xml" value="0">
+                                                            <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($webinar) and $webinar->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                                            <span class="custom-switch-indicator"></span>
+                                                            <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
                                                         </label>
                                                     </div>
                                                 </div>
