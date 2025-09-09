@@ -184,3 +184,14 @@ div#selected-tags {
 #selected-tags .badge.parent {
     color: red;
 }
+.multi-selection-dropdown {
+    min-width: 300px;
+}
+.multi-selection-dropdown .ct-input-box {
+    border: 0;
+}
+.multi-selection-dropdown .ct-arrow-btn {
+    font-size: 12px;
+    padding: 0 15px;
+    border-left: 1px solid #ddd;
+}
