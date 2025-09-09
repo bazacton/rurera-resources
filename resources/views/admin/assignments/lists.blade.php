@@ -940,7 +940,7 @@
             collapse: true
         });
 
-        $(".ct-input-wrapper").append('<div id="selected-tags" class="mt-2"></div>');
+        $(".ct-input-wrapper").append('<div id="selected-tags" class="selected-tags"></div>');
 
         function findNodeById(data, id) {
         for (var i = 0; i < data.length; i++) {
