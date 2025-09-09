@@ -2197,6 +2197,9 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li.sub-chapter-parent:first-child {
     margin-top: 0 !important;
 }
+.draggable-content-lists button {
+    outline: none;
+}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
