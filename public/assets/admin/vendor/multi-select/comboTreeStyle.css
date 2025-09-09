@@ -195,3 +195,8 @@ div#selected-tags {
     padding: 0 15px;
     border-left: 1px solid #ddd;
 }
+.multi-selection-dropdown .ct-drop-down-container li span.ct-list-item-title.ct-tree-item-hover, 
+.multi-selection-dropdown .ct-drop-down-container label.ct-tree-item-hover {
+    background-color: inherit;
+    color: currentcolor;
+}
