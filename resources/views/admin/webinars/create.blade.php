@@ -812,7 +812,7 @@
                                     @include('admin.webinars.create_includes.contents')
 
 
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('public.prerequisites') }}</h2>
                                             <button id="webinarAddPrerequisites" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('public.add_prerequisites') }}</button>
@@ -866,7 +866,7 @@
                                         </div>
                                     </section>
 
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('public.faq') }}</h2>
                                             <button id="webinarAddFAQ" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('public.add_faq') }}</button>
