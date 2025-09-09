@@ -98,7 +98,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15 ">
                                                         <label class="input-label d-block">Subject Type</label>
                                                         <select name="subject_type" class="custom-select @error('subject_type')  is-invalid @enderror">
@@ -113,7 +113,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15 ">
                                                         <label class="input-label d-block">{{ trans('panel.course_type') }}</label>
 
@@ -213,7 +213,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('update.points') }}</label>
                                                         <input type="number" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
@@ -236,7 +236,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">Custom URL</label>
                                                         <input type="text" name="custom_url" value="{{ !empty($webinar) ? $webinar->custom_url : old('custom_url') }}" class="form-control @error('custom_url')  is-invalid @enderror" placeholder=""/>
