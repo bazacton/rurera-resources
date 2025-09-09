@@ -990,6 +990,9 @@ pre {border-radius: 3px;}
     display: inline-flex;
     flex-direction: column-reverse;
 }
+.admin_role .section-header .heading-holder h1 {
+    margin-bottom: 0;
+}
 .section-header .text-left {position: absolute; right: 30px; top: 0;}
 .section .section-header h1,
 .title-search-field h1,
