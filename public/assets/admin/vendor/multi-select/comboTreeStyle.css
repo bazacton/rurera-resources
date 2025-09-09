@@ -144,6 +144,7 @@ span.ct-list-item-title,
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
+  left: 20px;
 }
 
 .ct-input-box:focus {
@@ -199,4 +200,7 @@ div#selected-tags {
 .multi-selection-dropdown .ct-drop-down-container label.ct-tree-item-hover {
     background-color: inherit;
     color: currentcolor;
+}
+.multi-selection-dropdown .ct-drop-down-container > .ct-source-ul-main {
+    padding: 10px;
 }
