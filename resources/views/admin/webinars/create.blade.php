@@ -47,136 +47,432 @@
                                     <h2 class="section-title after-line">{{ trans('public.basic_information') }}</h2>
 
                                     <div class="row">
-                                        <div class="col-12 col-md-5">
+                                        <div class="col-12 col-md-12">
 
-
-                                            @if(!empty(getGeneralSettings('content_translate')))
-                                                <div class="form-group">
-                                                    <label class="input-label">{{ trans('auth.language') }}</label>
-                                                    <select name="locale" class="form-control {{ !empty($webinar) ? 'js-edit-content-locale' : '' }}">
-                                                        @foreach($userLanguages as $lang => $language)
-                                                            <option value="{{ $lang }}" @if(mb_strtolower(request()->get('locale', app()->getLocale())) == mb_strtolower($lang)) selected @endif>{{ $language }}</option>
-                                                        @endforeach
-                                                    </select>
-                                                    @error('locale')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
+                                            <div class="row">
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    @if(!empty(getGeneralSettings('content_translate')))
+                                                    <div class="form-group">
+                                                        <label class="input-label">{{ trans('auth.language') }}</label>
+                                                        <select name="locale" class="form-control {{ !empty($webinar) ? 'js-edit-content-locale' : '' }}">
+                                                            @foreach($userLanguages as $lang => $language)
+                                                                <option value="{{ $lang }}" @if(mb_strtolower(request()->get('locale', app()->getLocale())) == mb_strtolower($lang)) selected @endif>{{ $language }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                        @error('locale')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
                                                     </div>
-                                                    @enderror
+                                                    @else
+                                                        <input type="hidden" name="locale" value="{{ getDefaultLocale() }}">
+                                                    @endif
                                                 </div>
-                                            @else
-                                                <input type="hidden" name="locale" value="{{ getDefaultLocale() }}">
-                                            @endif
-
-                                            @if( !empty(auth()->user()::$country_location) )
-                                                <div class="form-group">
-                                                    <label class="input-label">Country</label>
-                                                    <select name="country_location[]" class="form-control authors_select {{ !empty($webinar) ? 'js-edit-content-locale' : '' }}" multiple="multiple">
-                                                        @foreach(auth()->user()::$country_location as $country_code => $country_name)
-                                                            @php $selected = (isset( $webinar->country_location) && in_array($country_code, json_decode($webinar->country_location)))? 'selected' : ''; @endphp
-                                                            <option value="{{ $country_code }}" {{$selected}}>{{ $country_name }}</option>
-                                                        @endforeach
-                                                    </select>
-                                                    @error('locale')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    @if( !empty(auth()->user()::$country_location) )
+                                                    <div class="form-group">
+                                                        <label class="input-label">Country</label>
+                                                        <select name="country_location[]" class="form-control authors_select {{ !empty($webinar) ? 'js-edit-content-locale' : '' }}" multiple="multiple">
+                                                            @foreach(auth()->user()::$country_location as $country_code => $country_name)
+                                                                @php $selected = (isset( $webinar->country_location) && in_array($country_code, json_decode($webinar->country_location)))? 'selected' : ''; @endphp
+                                                                <option value="{{ $country_code }}" {{$selected}}>{{ $country_name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                        @error('locale')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
                                                     </div>
-                                                    @enderror
+                                                    @endif
                                                 </div>
-                                                @endif
-
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">{{ trans('public.title') }}</label>
-                                                    <input type="text" name="title" value="{{ !empty($webinar) ? $webinar->title : old('title') }}" class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
-                                                    @error('title')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('public.title') }}</label>
+                                                        <input type="text" name="title" value="{{ !empty($webinar) ? $webinar->title : old('title') }}" class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
+                                                        @error('title')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
                                                     </div>
-                                                    @enderror
                                                 </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 ">
+                                                        <label class="input-label d-block">Subject Type</label>
+                                                        <select name="subject_type" class="custom-select @error('subject_type')  is-invalid @enderror">
+                                                            <option value="Course" @if((!empty($webinar) and $webinar->subject_type == 'Course') or old('subject_type') == 'Course') selected @endif>Course</option>
+                                                            <option value="Other" @if((!empty($webinar) and $webinar->subject_type == 'Other') or old('subject_type') == 'Other') selected @endif>Other</option>
+                                                        </select>
 
-                                            <div class="form-group mt-15 ">
-                                                <label class="input-label d-block">Subject Type</label>
-                                                <select name="subject_type" class="custom-select @error('subject_type')  is-invalid @enderror">
-                                                    <option value="Course" @if((!empty($webinar) and $webinar->subject_type == 'Course') or old('subject_type') == 'Course') selected @endif>Course</option>
-                                                    <option value="Other" @if((!empty($webinar) and $webinar->subject_type == 'Other') or old('subject_type') == 'Other') selected @endif>Other</option>
-                                                </select>
-
-                                                @error('subject_type')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
+                                                        @error('subject_type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
                                                 </div>
-                                                @enderror
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 ">
+                                                        <label class="input-label d-block">{{ trans('panel.course_type') }}</label>
+
+                                                        <select name="type" class="custom-select @error('type')  is-invalid @enderror">
+                                                            <option value="webinar" @if((!empty($webinar) and $webinar->isWebinar()) or old('type') == \App\Models\Webinar::$webinar) selected @endif>{{ trans('webinars.webinar') }}</option>
+                                                            <option value="course" @if((!empty($webinar) and $webinar->isCourse()) or old('type') == \App\Models\Webinar::$course) selected @endif>{{ trans('product.video_course') }}</option>
+                                                            <option>{{ trans('product.text_course') }}</option>
+                                                        </select>
+
+                                                        @error('type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label d-block">Type</label>
+                                                        <select name="webinar_type" class="conditional_field_parent custom-select @error('type')  is-invalid @enderror">
+                                                            <option data-target_common_class="webinar_type_fields" data-target_field_class="" value="Course" @if( !empty($webinar) and $webinar->webinar_type == 'Course') selected @endif>Course</option>
+                                                            <option data-target_common_class="webinar_type_fields" data-target_field_class="test_total_time_field" value="Mock Exams" @if( !empty($webinar) and $webinar->webinar_type == 'Mock Exams') selected @endif>Practice Mock Exams</option>
+                                                            <option data-target_common_class="webinar_type_fields" data-target_field_class="test_total_time_field" value="Both" @if( !empty($webinar) and $webinar->webinar_type == 'Both') selected @endif>Both</option>
+                                                        </select>
+                                                        @error('type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label">Mock Test Image</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="mock_test_image" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" name="mock_test_image" id="mock_test_image" value="{{ !empty($webinar) ? $webinar->mock_test_image : old('mock_test_image') }}" class="form-control @error('mock_test_image')  is-invalid @enderror"/>
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="input-group-text admin-file-view" data-input="mock_test_image">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </button>
+                                                            </div>
+                                                            @error('mock_test_image')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label d-block">Practice Type</label>
+                                                        <select name="webinar_practice_type" class="webinar_practice_type conditional_field_parent custom-select @error('type')  is-invalid @enderror">
+                                                            <option value="sats" @if( !empty($webinar) and $webinar->webinar_practice_type == 'sats') selected @endif>SATs</option>
+                                                            <option value="11plus" @if( !empty($webinar) and $webinar->webinar_practice_type == '11plus') selected @endif>11 Plus</option>
+                                                            <option value="independent_exams" @if( !empty($webinar) and $webinar->webinar_practice_type == 'independent_exams') selected @endif>Independent Exams</option>
+                                                            <option value="iseb" @if( !empty($webinar) and $webinar->webinar_practice_type == 'iseb') selected @endif>ISEB</option>
+                                                            <option value="cat4" @if( !empty($webinar) and $webinar->webinar_practice_type == 'cat4') selected @endif>CAT4</option>
+                                                        </select>
+                                                        @error('type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label d-block">Questions Type</label>
+                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
+                                                            @if(!empty($questions_types))
+                                                                @foreach( $questions_types as $questions_type_slug => $questions_type_title)
+                                                                    <option value="{{$questions_type_slug}}" {{in_array($questions_type_slug, $selected_questions_types)? 'selected' : ''}}>{{$questions_type_title}}</option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                        @error('type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label d-block">Test Total Time (in minutes)</label>
+                                                        <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
+                                                        @error('total_time')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('update.points') }}</label>
+                                                        <input type="number" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
+                                                        @error('points')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('admin/main.class_url') }}</label>
+                                                        <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
+                                                        <div class="text-muted text-small mt-1">{{ trans('admin/main.class_url_hint') }}</div>
+                                                        @error('slug')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">Custom URL</label>
+                                                        <input type="text" name="custom_url" value="{{ !empty($webinar) ? $webinar->custom_url : old('custom_url') }}" class="form-control @error('custom_url')  is-invalid @enderror" placeholder=""/>
+                                                        @error('custom_url')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    @if(!empty($webinar) and $webinar->creator->isOrganization())
+                                                        <div class="form-group mt-15 ">
+                                                            <label class="input-label d-block">{{ trans('admin/main.organization') }}</label>
+
+                                                            <select name="organ_id" data-search-option="just_organization_role" class="form-control search-user-select2" data-placeholder="{{ trans('search_organization') }}">
+                                                                <option value="{{ $webinar->creator->id }}" selected>{{ $webinar->creator->get_full_name() }}</option>
+                                                            </select>
+                                                        </div>
+                                                    @endif
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15 ">
+                                                        <label class="input-label d-block">{{ trans('admin/main.select_a_instructor') }}</label>
+
+                                                        <select name="teacher_id" data-search-option="except_user" class="form-control search-user-select22"
+                                                                data-placeholder="{{ trans('public.select_a_teacher') }}"
+                                                        >
+                                                            @if(!empty($webinar))
+                                                                <option value="{{ $webinar->teacher->id }}" selected>{{ $webinar->teacher->get_full_name() }}</option>
+                                                            @else
+                                                                <option selected disabled>{{ trans('public.select_a_teacher') }}</option>
+                                                            @endif
+                                                        </select>
+
+                                                        @error('teacher_id')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">SEO Title</label>
+                                                        <input type="text" name="seo_title" value="{{ !empty($webinar) ? $webinar->seo_title : old('seo_title') }}" class="form-control @error('seo_title')  is-invalid @enderror"/>
+                                                        <div class="text-muted text-small mt-1">Will be displayed on the search engine result page</div>
+                                                        @error('seo_title')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('public.seo_description') }}</label>
+                                                        <input type="text" name="seo_description" value="{{ !empty($webinar) ? $webinar->seo_description : old('seo_description') }}" class="form-control @error('seo_description')  is-invalid @enderror"/>
+                                                        <div class="text-muted text-small mt-1">{{ trans('admin/main.seo_description_hint') }}</div>
+                                                        @error('seo_description')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group custom-switches-stacked">
+                                                        <label class="input-label">{{ trans('admin/main.robot') }}:</label>
+                                                        <label class="custom-switch pl-0">
+                                                            <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
+                                                            <input type="hidden" name="seo_robot_access" value="0">
+                                                            <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($webinar) and $webinar->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                                            <span class="custom-switch-indicator"></span>
+                                                            <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group custom-switches-stacked">
+                                                        <label class="input-label">Include In XML:</label>
+                                                        <label class="custom-switch pl-0">
+                                                            <label class="custom-switch-description mb-0 mr-2">Not Include</label>
+                                                            <input type="hidden" name="include_xml" value="0">
+                                                            <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($webinar) and $webinar->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                                            <span class="custom-switch-indicator"></span>
+                                                            <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="thumbnail" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" name="thumbnail" id="thumbnail" value="{{ !empty($webinar) ? $webinar->thumbnail : old('thumbnail') }}" class="form-control @error('thumbnail')  is-invalid @enderror"/>
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="input-group-text admin-file-view" data-input="thumbnail">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </button>
+                                                            </div>
+                                                            @error('thumbnail')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('public.cover_image') }}</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="cover_image" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" name="image_cover" id="cover_image" value="{{ !empty($webinar) ? $webinar->image_cover : old('image_cover') }}" class="form-control @error('image_cover')  is-invalid @enderror"/>
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="input-group-text admin-file-view" data-input="cover_image">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </button>
+                                                            </div>
+                                                            @error('image_cover')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group">
+                                                        <label>Icon Code</label>
+                                                        <div class="input-group">
+                                                            <textarea name="icon_code" class="form-control">{{ !empty($webinar) ? $webinar->icon_code : '' }}</textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group">
+                                                        <label>Background Color</label>
+                                                        <div class="input-group colorpickerinput">
+                                                            <input type="text" name="background_color" class="form-control"
+                                                                value="{{ !empty($webinar) ? $webinar->background_color : '' }}">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <i class="fas fa-fill-drip"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group">
+                                                        <label>Learn Background Color</label>
+                                                        <div class="input-group colorpickerinput">
+                                                            <input type="text" name="learn_background_color" class="form-control"
+                                                                value="{{ !empty($webinar) ? $webinar->learn_background_color : '' }}">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <i class="fas fa-fill-drip"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">Learn Icon</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="learn_icon" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" name="learn_icon" id="learn_icon" value="{{ !empty($webinar) ? $webinar->learn_icon : old('learn_icon') }}" class="form-control @error('learn_icon')  is-invalid @enderror"/>
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="input-group-text admin-file-view" data-input="learn_icon">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </button>
+                                                            </div>
+                                                            @error('learn_icon')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-25">
+                                                        <label class="input-label">{{ trans('public.demo_video') }} ({{ trans('public.optional') }})</label>
+
+
+                                                        <div class="">
+                                                            <label class="input-label font-12">{{ trans('public.source') }}</label>
+                                                            <select name="video_demo_source"
+                                                                    class="js-video-demo-source form-control"
+                                                            >
+                                                                @foreach(\App\Models\Webinar::$videoDemoSource as $source)
+                                                                    <option value="{{ $source }}" @if(!empty($webinar) and $webinar->video_demo_source == $source) selected @endif>{{ trans('update.file_source_'.$source) }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="form-group mt-0">
+                                                        <label class="input-label font-12">{{ trans('update.path') }}</label>
+                                                        <div class="input-group js-video-demo-path-input">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="js-video-demo-path-upload input-group-text admin-file-manager {{ (empty($webinar) or empty($webinar->video_demo_source) or $webinar->video_demo_source == 'upload') ? '' : 'd-none' }}" data-input="demo_video" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                </button>
+
+                                                                <button type="button" class="js-video-demo-path-links rounded-left input-group-text input-group-text-rounded-left  {{ (empty($webinar) or empty($webinar->video_demo_source) or $webinar->video_demo_source == 'upload') ? 'd-none' : '' }}">
+                                                                    <i class="fa fa-link"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" name="video_demo" id="demo_video" value="{{ !empty($webinar) ? $webinar->video_demo : old('video_demo') }}" class="form-control @error('video_demo')  is-invalid @enderror"/>
+                                                            @error('video_demo')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-
-
-											<div class="form-group mt-15 ">
-                                                <label class="input-label d-block">{{ trans('panel.course_type') }}</label>
-
-                                                <select name="type" class="custom-select @error('type')  is-invalid @enderror">
-                                                    <option value="webinar" @if((!empty($webinar) and $webinar->isWebinar()) or old('type') == \App\Models\Webinar::$webinar) selected @endif>{{ trans('webinars.webinar') }}</option>
-                                                    <option value="course" @if((!empty($webinar) and $webinar->isCourse()) or old('type') == \App\Models\Webinar::$course) selected @endif>{{ trans('product.video_course') }}</option>
-                                                    <option>{{ trans('product.text_course') }}</option>
-                                                </select>
-
-                                                @error('type')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                                @enderror
-                                            </div>
-                                            <div class="form-group mt-15">
-                                                <label class="input-label d-block">Type</label>
-                                                <select name="webinar_type" class="conditional_field_parent custom-select @error('type')  is-invalid @enderror">
-                                                    <option data-target_common_class="webinar_type_fields" data-target_field_class="" value="Course" @if( !empty($webinar) and $webinar->webinar_type == 'Course') selected @endif>Course</option>
-                                                    <option data-target_common_class="webinar_type_fields" data-target_field_class="test_total_time_field" value="Mock Exams" @if( !empty($webinar) and $webinar->webinar_type == 'Mock Exams') selected @endif>Practice Mock Exams</option>
-                                                    <option data-target_common_class="webinar_type_fields" data-target_field_class="test_total_time_field" value="Both" @if( !empty($webinar) and $webinar->webinar_type == 'Both') selected @endif>Both</option>
-                                                </select>
-                                                @error('type')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                                @enderror
-                                            </div>
-
-                                            <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                <label class="input-label">Mock Test Image</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button type="button" class="input-group-text admin-file-manager" data-input="mock_test_image" data-preview="holder">
-                                                            <i class="fa fa-upload"></i>
-                                                        </button>
-                                                    </div>
-                                                    <input type="text" name="mock_test_image" id="mock_test_image" value="{{ !empty($webinar) ? $webinar->mock_test_image : old('mock_test_image') }}" class="form-control @error('mock_test_image')  is-invalid @enderror"/>
-                                                    <div class="input-group-append">
-                                                        <button type="button" class="input-group-text admin-file-view" data-input="mock_test_image">
-                                                            <i class="fa fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                    @error('mock_test_image')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                <label class="input-label d-block">Practice Type</label>
-                                                <select name="webinar_practice_type" class="webinar_practice_type conditional_field_parent custom-select @error('type')  is-invalid @enderror">
-                                                    <option value="sats" @if( !empty($webinar) and $webinar->webinar_practice_type == 'sats') selected @endif>SATs</option>
-                                                    <option value="11plus" @if( !empty($webinar) and $webinar->webinar_practice_type == '11plus') selected @endif>11 Plus</option>
-                                                    <option value="independent_exams" @if( !empty($webinar) and $webinar->webinar_practice_type == 'independent_exams') selected @endif>Independent Exams</option>
-                                                    <option value="iseb" @if( !empty($webinar) and $webinar->webinar_practice_type == 'iseb') selected @endif>ISEB</option>
-                                                    <option value="cat4" @if( !empty($webinar) and $webinar->webinar_practice_type == 'cat4') selected @endif>CAT4</option>
-                                                </select>
-                                                @error('type')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                                @enderror
-                                            </div>
+                                            
 
                                                 @php
                                                     $toolbar_tools = toolbar_tools();
@@ -190,277 +486,7 @@
                                                     $selected_questions_types = isset($webinar->questions_types)? json_decode($webinar->questions_types) : array();
                                                 @endphp
 
-                                                <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                    <label class="input-label d-block">Questions Type</label>
-                                                    <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
-                                                        @if(!empty($questions_types))
-                                                            @foreach( $questions_types as $questions_type_slug => $questions_type_title)
-                                                                <option value="{{$questions_type_slug}}" {{in_array($questions_type_slug, $selected_questions_types)? 'selected' : ''}}>{{$questions_type_title}}</option>
-                                                            @endforeach
-                                                        @endif
-                                                    </select>
-                                                    @error('type')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
 
-                                                <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                    <label class="input-label d-block">Test Total Time (in minutes)</label>
-                                                    <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
-                                                    @error('total_time')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">{{ trans('update.points') }}</label>
-                                                    <input type="number" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
-                                                    @error('points')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">{{ trans('admin/main.class_url') }}</label>
-                                                    <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
-                                                    <div class="text-muted text-small mt-1">{{ trans('admin/main.class_url_hint') }}</div>
-                                                    @error('slug')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <div class="form-group mt-15">
-                                                   <label class="input-label">Custom URL</label>
-                                                   <input type="text" name="custom_url" value="{{ !empty($webinar) ? $webinar->custom_url : old('custom_url') }}" class="form-control @error('custom_url')  is-invalid @enderror" placeholder=""/>
-                                                   @error('custom_url')
-                                                   <div class="invalid-feedback">
-                                                       {{ $message }}
-                                                   </div>
-                                                   @enderror
-                                               </div>
-
-                                                @if(!empty($webinar) and $webinar->creator->isOrganization())
-                                                    <div class="form-group mt-15 ">
-                                                        <label class="input-label d-block">{{ trans('admin/main.organization') }}</label>
-
-                                                        <select name="organ_id" data-search-option="just_organization_role" class="form-control search-user-select2" data-placeholder="{{ trans('search_organization') }}">
-                                                            <option value="{{ $webinar->creator->id }}" selected>{{ $webinar->creator->get_full_name() }}</option>
-                                                        </select>
-                                                    </div>
-                                                @endif
-
-
-                                                <div class="form-group mt-15 ">
-                                                    <label class="input-label d-block">{{ trans('admin/main.select_a_instructor') }}</label>
-
-                                                    <select name="teacher_id" data-search-option="except_user" class="form-control search-user-select22"
-                                                            data-placeholder="{{ trans('public.select_a_teacher') }}"
-                                                    >
-                                                        @if(!empty($webinar))
-                                                            <option value="{{ $webinar->teacher->id }}" selected>{{ $webinar->teacher->get_full_name() }}</option>
-                                                        @else
-                                                            <option selected disabled>{{ trans('public.select_a_teacher') }}</option>
-                                                        @endif
-                                                    </select>
-
-                                                    @error('teacher_id')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">SEO Title</label>
-                                                    <input type="text" name="seo_title" value="{{ !empty($webinar) ? $webinar->seo_title : old('seo_title') }}" class="form-control @error('seo_title')  is-invalid @enderror"/>
-                                                    <div class="text-muted text-small mt-1">Will be displayed on the search engine result page</div>
-                                                    @error('seo_title')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">{{ trans('public.seo_description') }}</label>
-                                                    <input type="text" name="seo_description" value="{{ !empty($webinar) ? $webinar->seo_description : old('seo_description') }}" class="form-control @error('seo_description')  is-invalid @enderror"/>
-                                                    <div class="text-muted text-small mt-1">{{ trans('admin/main.seo_description_hint') }}</div>
-                                                    @error('seo_description')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <div class="form-group custom-switches-stacked">
-                                                   <label class="input-label">{{ trans('admin/main.robot') }}:</label>
-                                                   <label class="custom-switch pl-0">
-                                                       <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
-                                                       <input type="hidden" name="seo_robot_access" value="0">
-                                                       <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($webinar) and $webinar->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
-                                                       <span class="custom-switch-indicator"></span>
-                                                       <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
-                                                   </label>
-                                               </div>
-                                               <div class="form-group custom-switches-stacked">
-                                                   <label class="input-label">Include In XML:</label>
-                                                   <label class="custom-switch pl-0">
-                                                       <label class="custom-switch-description mb-0 mr-2">Not Include</label>
-                                                       <input type="hidden" name="include_xml" value="0">
-                                                       <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($webinar) and $webinar->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
-                                                       <span class="custom-switch-indicator"></span>
-                                                       <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
-                                                   </label>
-                                               </div>
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button type="button" class="input-group-text admin-file-manager" data-input="thumbnail" data-preview="holder">
-                                                                <i class="fa fa-upload"></i>
-                                                            </button>
-                                                        </div>
-                                                        <input type="text" name="thumbnail" id="thumbnail" value="{{ !empty($webinar) ? $webinar->thumbnail : old('thumbnail') }}" class="form-control @error('thumbnail')  is-invalid @enderror"/>
-                                                        <div class="input-group-append">
-                                                            <button type="button" class="input-group-text admin-file-view" data-input="thumbnail">
-                                                                <i class="fa fa-eye"></i>
-                                                            </button>
-                                                        </div>
-                                                        @error('thumbnail')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">{{ trans('public.cover_image') }}</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button type="button" class="input-group-text admin-file-manager" data-input="cover_image" data-preview="holder">
-                                                                <i class="fa fa-upload"></i>
-                                                            </button>
-                                                        </div>
-                                                        <input type="text" name="image_cover" id="cover_image" value="{{ !empty($webinar) ? $webinar->image_cover : old('image_cover') }}" class="form-control @error('image_cover')  is-invalid @enderror"/>
-                                                        <div class="input-group-append">
-                                                            <button type="button" class="input-group-text admin-file-view" data-input="cover_image">
-                                                                <i class="fa fa-eye"></i>
-                                                            </button>
-                                                        </div>
-                                                        @error('image_cover')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label>Icon Code</label>
-                                                    <div class="input-group">
-                                                        <textarea name="icon_code" class="form-control">{{ !empty($webinar) ? $webinar->icon_code : '' }}</textarea>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="form-group">
-                                                    <label>Background Color</label>
-                                                    <div class="input-group colorpickerinput">
-                                                        <input type="text" name="background_color" class="form-control"
-                                                               value="{{ !empty($webinar) ? $webinar->background_color : '' }}">
-                                                        <div class="input-group-append">
-                                                            <div class="input-group-text">
-                                                                <i class="fas fa-fill-drip"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="form-group">
-                                                    <label>Learn Background Color</label>
-                                                    <div class="input-group colorpickerinput">
-                                                        <input type="text" name="learn_background_color" class="form-control"
-                                                               value="{{ !empty($webinar) ? $webinar->learn_background_color : '' }}">
-                                                        <div class="input-group-append">
-                                                            <div class="input-group-text">
-                                                                <i class="fas fa-fill-drip"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="form-group mt-15">
-                                                    <label class="input-label">Learn Icon</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <button type="button" class="input-group-text admin-file-manager" data-input="learn_icon" data-preview="holder">
-                                                                <i class="fa fa-upload"></i>
-                                                            </button>
-                                                        </div>
-                                                        <input type="text" name="learn_icon" id="learn_icon" value="{{ !empty($webinar) ? $webinar->learn_icon : old('learn_icon') }}" class="form-control @error('learn_icon')  is-invalid @enderror"/>
-                                                        <div class="input-group-append">
-                                                            <button type="button" class="input-group-text admin-file-view" data-input="learn_icon">
-                                                                <i class="fa fa-eye"></i>
-                                                            </button>
-                                                        </div>
-                                                        @error('learn_icon')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group mt-25">
-                                                    <label class="input-label">{{ trans('public.demo_video') }} ({{ trans('public.optional') }})</label>
-
-
-                                                    <div class="">
-                                                        <label class="input-label font-12">{{ trans('public.source') }}</label>
-                                                        <select name="video_demo_source"
-                                                                class="js-video-demo-source form-control"
-                                                        >
-                                                            @foreach(\App\Models\Webinar::$videoDemoSource as $source)
-                                                                <option value="{{ $source }}" @if(!empty($webinar) and $webinar->video_demo_source == $source) selected @endif>{{ trans('update.file_source_'.$source) }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group mt-0">
-                                                    <label class="input-label font-12">{{ trans('update.path') }}</label>
-                                                    <div class="input-group js-video-demo-path-input">
-                                                        <div class="input-group-prepend">
-                                                            <button type="button" class="js-video-demo-path-upload input-group-text admin-file-manager {{ (empty($webinar) or empty($webinar->video_demo_source) or $webinar->video_demo_source == 'upload') ? '' : 'd-none' }}" data-input="demo_video" data-preview="holder">
-                                                                <i class="fa fa-upload"></i>
-                                                            </button>
-
-                                                            <button type="button" class="js-video-demo-path-links rounded-left input-group-text input-group-text-rounded-left  {{ (empty($webinar) or empty($webinar->video_demo_source) or $webinar->video_demo_source == 'upload') ? 'd-none' : '' }}">
-                                                                <i class="fa fa-link"></i>
-                                                            </button>
-                                                        </div>
-                                                        <input type="text" name="video_demo" id="demo_video" value="{{ !empty($webinar) ? $webinar->video_demo : old('video_demo') }}" class="form-control @error('video_demo')  is-invalid @enderror"/>
-                                                        @error('video_demo')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
 
