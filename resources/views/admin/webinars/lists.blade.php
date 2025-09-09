@@ -264,7 +264,7 @@
                                         <tr class="text-center">
                                             <td>{{ $webinar->id }}</td>
                                             <td width="18%" class="text-left">
-                                                <a class="text-primary mt-0 mb-1 font-weight-bold" href="{{ $webinar->getUrl() }}">{{ $webinar->title }}</a>
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold" href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/edit">{{ $webinar->title }}</a>
 												@php $webinar_categories = $webinar->categories();@endphp
                                                 @if(!empty($webinar_categories))
 													<br>
