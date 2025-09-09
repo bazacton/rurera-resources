@@ -44,7 +44,59 @@
 
                                     <div class="row">
                                         <div class="col-12 col-md-12">
-
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h2 class="section-title after-line">SEO Fields</h2>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('admin/main.class_url') }}</label>
+                                                        <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
+                                                        <div class="text-muted text-small mt-1">{{ trans('admin/main.class_url_hint') }}</div>
+                                                        @error('slug')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">SEO Title</label>
+                                                        <input type="text" name="seo_title" value="{{ !empty($webinar) ? $webinar->seo_title : old('seo_title') }}" class="form-control @error('seo_title')  is-invalid @enderror"/>
+                                                        <div class="text-muted text-small mt-1">Will be displayed on the search engine result page</div>
+                                                        @error('seo_title')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">{{ trans('public.seo_description') }}</label>
+                                                        <input type="text" name="seo_description" value="{{ !empty($webinar) ? $webinar->seo_description : old('seo_description') }}" class="form-control @error('seo_description')  is-invalid @enderror"/>
+                                                        <div class="text-muted text-small mt-1">{{ trans('admin/main.seo_description_hint') }}</div>
+                                                        @error('seo_description')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group custom-switches-stacked">
+                                                        <label class="input-label">{{ trans('admin/main.robot') }}:</label>
+                                                        <label class="custom-switch pl-0">
+                                                            <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
+                                                            <input type="hidden" name="seo_robot_access" value="0">
+                                                            <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($webinar) and $webinar->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                                            <span class="custom-switch-indicator"></span>
+                                                            <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     @if(!empty(getGeneralSettings('content_translate')))
@@ -220,18 +272,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
-                                                        <label class="input-label">{{ trans('admin/main.class_url') }}</label>
-                                                        <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
-                                                        <div class="text-muted text-small mt-1">{{ trans('admin/main.class_url_hint') }}</div>
-                                                        @error('slug')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">Custom URL</label>
@@ -275,42 +316,9 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
-                                                        <label class="input-label">SEO Title</label>
-                                                        <input type="text" name="seo_title" value="{{ !empty($webinar) ? $webinar->seo_title : old('seo_title') }}" class="form-control @error('seo_title')  is-invalid @enderror"/>
-                                                        <div class="text-muted text-small mt-1">Will be displayed on the search engine result page</div>
-                                                        @error('seo_title')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15">
-                                                        <label class="input-label">{{ trans('public.seo_description') }}</label>
-                                                        <input type="text" name="seo_description" value="{{ !empty($webinar) ? $webinar->seo_description : old('seo_description') }}" class="form-control @error('seo_description')  is-invalid @enderror"/>
-                                                        <div class="text-muted text-small mt-1">{{ trans('admin/main.seo_description_hint') }}</div>
-                                                        @error('seo_description')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group custom-switches-stacked">
-                                                        <label class="input-label">{{ trans('admin/main.robot') }}:</label>
-                                                        <label class="custom-switch pl-0">
-                                                            <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
-                                                            <input type="hidden" name="seo_robot_access" value="0">
-                                                            <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($webinar) and $webinar->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
-                                                            <span class="custom-switch-indicator"></span>
-                                                            <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                
+                                                
+                                                
                                                 <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group custom-switches-stacked">
                                                         <label class="input-label">Include In XML:</label>
