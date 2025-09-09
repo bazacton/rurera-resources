@@ -32,7 +32,7 @@
 .ct-input-box {
   padding: var(--ct-padding) 1.5rem var(--ct-padding) var(--ct-padding);
   border-radius: var(--ct-border-radius);
-  border: 1px solid var(--ct-border-color);
+  border: 0;
   width: 100%;
 }
 
