@@ -2184,11 +2184,18 @@ Admin Questions Generator Page Style End
 .rureraform-context-menu {display: none;}
 /* Webinars Page style start */
 .draggable-lists-chapter li {border: 1px solid #ddd;}
-.draggable-content-lists .sub-chapter-parent .input-label {color: #fff;}
-li.sub-chapter-parent .btn svg {stroke: #fff;}
+
 .draggable-lists-chapter .btn svg,
 .draggable-lists-chapter button svg {
     stroke: #6c757d;
+}
+.draggable-content-lists li.sub-chapter-parent {
+    background-color: inherit !important;
+    color: currentColor;
+}
+.accordion-content-wrapper li .draggable-content-lists {
+    background-color: #fcfcfc;
+    padding: 15px;
 }
 /* Webinars Page style End */
 
