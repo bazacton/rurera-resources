@@ -3,11 +3,13 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{ trans('admin/main.feature_webinars') }}</h1>
-            <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+            <div class="heading-holder">
+                <h1>{{ trans('admin/main.feature_webinars') }}</h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{trans('admin/main.dashboard')}}</a>
+                    </div>
+                    <div class="breadcrumb-item">{{ trans('admin/main.feature_webinars') }}</div>
                 </div>
-                <div class="breadcrumb-item">{{ trans('admin/main.feature_webinars') }}</div>
             </div>
         </div>
 
