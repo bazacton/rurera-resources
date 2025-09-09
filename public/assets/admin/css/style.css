@@ -2195,7 +2195,11 @@ Admin Questions Generator Page Style End
 }
 .accordion-content-wrapper li .draggable-content-lists {
     background-color: #fcfcfc;
+    border-radius: 5px;
     padding: 15px;
+}
+.draggable-content-lists li.sub-chapter-parent:first-child {
+    margin-top: 0 !important;
 }
 /* Webinars Page style End */
 
