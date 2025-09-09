@@ -594,23 +594,26 @@
                     <div class="col-md-3">
                         <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.instructor') }}</label>
-                            <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
-                                    class="form-control search-user-select2"
-                                    data-placeholder="Search teachers">
+                            <div class="select-holder">
+                                <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
+                                      class="form-control search-user-select2"
+                                      data-placeholder="Search teachers">
 
-                                @if(!empty($teachers) and $teachers->count() > 0)
-                                @foreach($teachers as $teacher)
-                                <option value="{{ $teacher->id }}" selected>{{ $teacher->get_full_name() }}</option>
-                                @endforeach
-                                @endif
-                            </select>
+                                  @if(!empty($teachers) and $teachers->count() > 0)
+                                  @foreach($teachers as $teacher)
+                                  <option value="{{ $teacher->id }}" selected>{{ $teacher->get_full_name() }}</option>
+                                  @endforeach
+                                  @endif
+                              </select>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.class') }}</label>
-                            <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
+                            <div class="select-holder">
+                              <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
                                     data-placeholder="Search classes">
 
                                 @if(!empty($webinars) and $webinars->count() > 0)
@@ -618,7 +621,9 @@
                                 <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
                                 @endforeach
                                 @endif
-                            </select>
+                              </select>
+                            </div>
+                            
                         </div>
                     </div>
 
