@@ -48,7 +48,7 @@
                 <input type="hidden" name="ajax[chapter_id]" value="{{ !empty($chapter) ? $chapter->id :'' }}" class="chapter-input">
                 <input type="hidden" name="ajax[quiz_type]" value="auto_builder">
 
-                <div class="form-group">
+                <div class="form-group rurera-hide">
                     <label class="input-label">Sub Chapter Title</label>
                     <input type="text" value="{{ !empty($subChapter) ? $subChapter->sub_chapter_title : old('title') }}" name="ajax[title]" class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
                     @error('title')
@@ -59,7 +59,7 @@
                 </div>
 
                 @php $random_id = rand(99,9999); @endphp
-                <div class="form-group">
+                <div class="form-group rurera-hide">
                     <label class="input-label">Sub Chapter Image</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group rurera-hide">
                     <label class="input-label">Sub Chapter Slug</label>
                     <input type="text" value="{{ !empty($subChapter) ? $subChapter->sub_chapter_slug : old('sub_chapter_slug') }}" name="ajax[sub_chapter_slug]" class="form-control" placeholder=""/>
                 </div>
