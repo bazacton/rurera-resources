@@ -125,11 +125,13 @@ ul.crop_sizes {
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>Gallery Images</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+        <div class="heading-holder">
+            <h1>Gallery Images</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+                </div>
+                <div class="breadcrumb-item">Gallery Images</div>
             </div>
-            <div class="breadcrumb-item">Gallery Images</div>
         </div>
     </div>
 

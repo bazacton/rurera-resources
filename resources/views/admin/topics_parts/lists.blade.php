@@ -23,12 +23,14 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>Topics Parts</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
-            </div>
-            <div class="breadcrumb-item">Topics Parts</div>
-        </div>
+		<div class="heading-holder">
+			<h1>Topics Parts</h1>
+			<div class="section-header-breadcrumb">
+				<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+				</div>
+				<div class="breadcrumb-item">Topics Parts</div>
+			</div>
+		</div>
     </div>
 
 

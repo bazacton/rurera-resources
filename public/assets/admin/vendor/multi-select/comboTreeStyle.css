@@ -32,7 +32,7 @@
 .ct-input-box {
   padding: var(--ct-padding) 1.5rem var(--ct-padding) var(--ct-padding);
   border-radius: var(--ct-border-radius);
-  border: 1px solid var(--ct-border-color);
+  border: 0;
   width: 100%;
 }
 
@@ -144,6 +144,7 @@ span.ct-list-item-title,
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
+  margin-left: 10px;
 }
 
 .ct-input-box:focus {
@@ -183,4 +184,23 @@ div#selected-tags {
 }
 #selected-tags .badge.parent {
     color: red;
+}
+.multi-selection-dropdown {
+    min-width: 300px;
+}
+.multi-selection-dropdown .ct-input-box {
+    border: 0;
+}
+.multi-selection-dropdown .ct-arrow-btn {
+    font-size: 12px;
+    padding: 0 15px;
+    border-left: 1px solid #ddd;
+}
+.multi-selection-dropdown .ct-drop-down-container li span.ct-list-item-title.ct-tree-item-hover, 
+.multi-selection-dropdown .ct-drop-down-container label.ct-tree-item-hover {
+    background-color: inherit;
+    color: currentcolor;
+}
+.multi-selection-dropdown .ct-drop-down-container > .ct-source-ul-main {
+    padding: 10px 0;
 }

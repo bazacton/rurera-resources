@@ -4,11 +4,13 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{ trans('admin/main.subscribe_packages') }}</h1>
-            <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+            <div class="heading-holder">
+                <h1>{{ trans('admin/main.subscribe_packages') }}</h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+                    </div>
+                    <div class="breadcrumb-item">{{ trans('admin/main.subscribe_packages') }}</div>
                 </div>
-                <div class="breadcrumb-item">{{ trans('admin/main.subscribe_packages') }}</div>
             </div>
         </div>
 

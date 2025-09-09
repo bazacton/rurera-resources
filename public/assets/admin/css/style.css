@@ -985,7 +985,14 @@ pre {border-radius: 3px;}
 
 /* 4.2 Section */
 .section {position: relative;}
-.section .section-header {background-color: #fff; border: none; position: relative; padding: 0 20px 20px 30px; display: flex; align-items: flex-start; margin-left: -30px; margin-right: -30px; flex-direction: column-reverse;}
+.section .section-header {background-color: #fff; border: none; position: relative; padding: 0 30px 20px 30px; display: flex; align-items: center; margin-left: -30px; margin-right: -30px; justify-content: space-between;}
+.admin_role .section-header .heading-holder {
+    display: inline-flex;
+    flex-direction: column-reverse;
+}
+.admin_role .section-header .heading-holder h1 {
+    margin-bottom: 0;
+}
 .section-header .text-left {position: absolute; right: 30px; top: 0;}
 .section .section-header h1,
 .title-search-field h1,
@@ -1150,6 +1157,9 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-menu li.menu-header {padding: 3px 15px; color: #a1a8ae; font-size: 10px; text-transform: uppercase; letter-spacing: 1.3px; font-weight: 600;}
 .main-sidebar .sidebar-menu li.menu-header:not(:first-child) {margin-top: 10px;}
 .main-sidebar .sidebar-menu li a {position: relative; display: flex; align-items: center; height: 50px; padding: 0 20px; width: 100%; letter-spacing: .3px; color: #78828a; text-decoration: none;}
+.main-sidebar .sidebar-menu li .dropdown-toggle {
+    background-color: inherit;
+}
 .main-sidebar .sidebar-menu li a .badge {float: right; padding: 5px 10px; margin-top: 2px;}
 .main-sidebar .sidebar-menu li a i { margin-right: 12px; text-align: center;}
 .main-sidebar .sidebar-menu li a span img {margin-left: 5px; }
