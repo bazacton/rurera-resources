@@ -7,12 +7,14 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>Sections</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active">
-                <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+        <div class="heading-holder">
+            <h1>Sections</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active">
+                    <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+                </div>
+                <div class="breadcrumb-item">Sections </div>
             </div>
-            <div class="breadcrumb-item">Sections </div>
         </div>
     </div>
     <div class="section-body skeleton">
