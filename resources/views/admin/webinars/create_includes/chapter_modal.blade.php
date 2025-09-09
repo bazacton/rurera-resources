@@ -34,19 +34,19 @@
                 <span class="invalid-feedback"></span>
             </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                <label class="input-label">Challenge Slug</label>
                <input type="text" name="ajax[chapter][chapter_slug]" class="form-control js-ajax-chapter_slug" value=""/>
                <span class="invalid-feedback"></span>
            </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                <label class="input-label">Challenge Title</label>
                <input type="text" name="ajax[chapter][challenge_title]" class="form-control js-ajax-challenge_title" value=""/>
                <span class="invalid-feedback"></span>
            </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                <label class="input-label">Challenge Quiz</label>
 
                 <select name="ajax[chapter][challenge_quiz][]"
@@ -60,7 +60,7 @@
            </div>
 
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                 <label class="input-label">Challenge Image</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                 <label>Challenge Background Color</label>
                 <div class="input-group colorpickerinput">
                     <input type="text" name="ajax[chapter][challenge_background_color]" class="form-control js-ajax-challenge_background_color">
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                 <label>Challenge border Color</label>
                 <div class="input-group colorpickerinput">
                     <input type="text" name="ajax[chapter][challenge_border_color]" class="form-control js-ajax-challenge_border_color">
@@ -104,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                 <label class="input-label d-block">Type</label>
                 <select name="ajax[chapter][chapter_type]" class="custom-select js-ajax-chapter_type">
                     <option value="Course" selected>Course</option>
@@ -113,13 +113,13 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group rurera-hide">
                <label class="input-label">Custom Link</label>
                <input type="text" name="ajax[chapter][custom_link]" class="form-control js-ajax-custom_link" value=""/>
                <span class="invalid-feedback"></span>
            </div>
 
-            <div class="form-group mt-2 d-flex align-items-center justify-content-between js-switch-parent">
+            <div class="form-group mt-2 d-flex align-items-center justify-content-between js-switch-parent rurera-hide">
                 <label class="js-switch cursor-pointer" for="chapterStatus_record">{{ trans('public.active') }}</label>
 
                 <div class="custom-control custom-switch">
@@ -129,7 +129,7 @@
             </div>
 
             @if(getFeaturesSettings('sequence_content_status'))
-                <div class="form-group mt-2 d-flex align-items-center justify-content-between js-switch-parent">
+                <div class="form-group mt-2 d-flex align-items-center justify-content-between js-switch-parent rurera-hide">
                     <label class="js-switch cursor-pointer" for="checkAllContentsPassSwitch_record">{{ trans('update.check_all_contents_pass') }}</label>
 
                     <div class="custom-control custom-switch">
