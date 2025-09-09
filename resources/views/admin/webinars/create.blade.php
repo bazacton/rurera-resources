@@ -247,7 +247,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     @if(!empty($webinar) and $webinar->creator->isOrganization())
                                                         <div class="form-group mt-15 ">
                                                             <label class="input-label d-block">{{ trans('admin/main.organization') }}</label>
@@ -258,7 +258,7 @@
                                                         </div>
                                                     @endif
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15 ">
                                                         <label class="input-label d-block">{{ trans('admin/main.select_a_instructor') }}</label>
 
@@ -350,7 +350,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('public.cover_image') }}</label>
                                                         <div class="input-group">
@@ -373,7 +373,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group">
                                                         <label>Icon Code</label>
                                                         <div class="input-group">
@@ -381,7 +381,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group">
                                                         <label>Background Color</label>
                                                         <div class="input-group colorpickerinput">
@@ -395,7 +395,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group">
                                                         <label>Learn Background Color</label>
                                                         <div class="input-group colorpickerinput">
@@ -432,7 +432,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-25">
                                                         <label class="input-label">{{ trans('public.demo_video') }} ({{ trans('public.optional') }})</label>
 
@@ -449,7 +449,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-0">
                                                         <label class="input-label font-12">{{ trans('update.path') }}</label>
                                                         <div class="input-group js-video-demo-path-input">
