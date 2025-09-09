@@ -23,16 +23,14 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <div class="heading-holder">
-                <h1>{{!empty($webinar) ?trans('/admin/main.edit'): trans('admin/main.new') }} {{ trans('admin/main.class') }}</h1>
-                <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard') }}</a>
-                    </div>
-                    <div class="breadcrumb-item active">
-                        <a href="{{ getAdminPanelUrl() }}/webinars">{{ trans('admin/main.classes') }}</a>
-                    </div>
-                    <div class="breadcrumb-item">{{!empty($webinar) ?trans('/admin/main.edit'): trans('admin/main.new') }}</div>
+            <h1>{{!empty($webinar) ?trans('/admin/main.edit'): trans('admin/main.new') }} {{ trans('admin/main.class') }}</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard') }}</a>
                 </div>
+                <div class="breadcrumb-item active">
+                    <a href="{{ getAdminPanelUrl() }}/webinars">{{ trans('admin/main.classes') }}</a>
+                </div>
+                <div class="breadcrumb-item">{{!empty($webinar) ?trans('/admin/main.edit'): trans('admin/main.new') }}</div>
             </div>
         </div>
 
@@ -479,6 +477,31 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    <div class="form-group mt-15">
+                                        <label class="input-label">Categories</label>
+
+                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
+                                            <option {{ !empty($webinar) ? '' : 'selected' }} disabled>{{ trans('public.choose_category') }}</option>
+                                            @foreach($categories as $category)
+                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                    <optgroup label="{{  $category->title }}">
+                                                        @foreach($category->subCategories as $subCategory)
+                                                            @php $webinar_categories = isset( $webinar->category_id )? json_decode($webinar->category_id) : array(); @endphp
+                                                            <option value="{{ $subCategory->id }}" @if(in_array($subCategory->id, $webinar_categories)) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                        @endforeach
+                                                    </optgroup>
+                                                @else
+                                                    <option value="{{ $category->id }}" {{ (!empty($webinar) and $webinar->category_id == $category->id) ? 'selected' : '' }}>{{ $category->title }}</option>
+                                                @endif
+                                            @endforeach
+                                        </select>
+
+                                        @error('category_id')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
                                     </section>
 
                                     <section class="mt-3">
@@ -699,31 +722,7 @@
                                             </div>
 
 
-                                            <div class="form-group mt-15">
-                                                <label class="input-label">Categories</label>
 
-                                                <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
-                                                    <option {{ !empty($webinar) ? '' : 'selected' }} disabled>{{ trans('public.choose_category') }}</option>
-                                                    @foreach($categories as $category)
-                                                        @if(!empty($category->subCategories) and count($category->subCategories))
-                                                            <optgroup label="{{  $category->title }}">
-                                                                @foreach($category->subCategories as $subCategory)
-																	@php $webinar_categories = isset( $webinar->category_id )? json_decode($webinar->category_id) : array(); @endphp
-                                                                    <option value="{{ $subCategory->id }}" @if(in_array($subCategory->id, $webinar_categories)) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                                                @endforeach
-                                                            </optgroup>
-                                                        @else
-                                                            <option value="{{ $category->id }}" {{ (!empty($webinar) and $webinar->category_id == $category->id) ? 'selected' : '' }}>{{ $category->title }}</option>
-                                                        @endif
-                                                    @endforeach
-                                                </select>
-
-                                                @error('category_id')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                                @enderror
-                                            </div>
 
                                         </div>
                                     </div>
