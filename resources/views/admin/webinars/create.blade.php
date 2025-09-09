@@ -141,74 +141,10 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                        <label class="input-label">Mock Test Image</label>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                                <button type="button" class="input-group-text admin-file-manager" data-input="mock_test_image" data-preview="holder">
-                                                                    <i class="fa fa-upload"></i>
-                                                                </button>
-                                                            </div>
-                                                            <input type="text" name="mock_test_image" id="mock_test_image" value="{{ !empty($webinar) ? $webinar->mock_test_image : old('mock_test_image') }}" class="form-control @error('mock_test_image')  is-invalid @enderror"/>
-                                                            <div class="input-group-append">
-                                                                <button type="button" class="input-group-text admin-file-view" data-input="mock_test_image">
-                                                                    <i class="fa fa-eye"></i>
-                                                                </button>
-                                                            </div>
-                                                            @error('mock_test_image')
-                                                            <div class="invalid-feedback">
-                                                                {{ $message }}
-                                                            </div>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                        <label class="input-label d-block">Practice Type</label>
-                                                        <select name="webinar_practice_type" class="webinar_practice_type conditional_field_parent custom-select @error('type')  is-invalid @enderror">
-                                                            <option value="sats" @if( !empty($webinar) and $webinar->webinar_practice_type == 'sats') selected @endif>SATs</option>
-                                                            <option value="11plus" @if( !empty($webinar) and $webinar->webinar_practice_type == '11plus') selected @endif>11 Plus</option>
-                                                            <option value="independent_exams" @if( !empty($webinar) and $webinar->webinar_practice_type == 'independent_exams') selected @endif>Independent Exams</option>
-                                                            <option value="iseb" @if( !empty($webinar) and $webinar->webinar_practice_type == 'iseb') selected @endif>ISEB</option>
-                                                            <option value="cat4" @if( !empty($webinar) and $webinar->webinar_practice_type == 'cat4') selected @endif>CAT4</option>
-                                                        </select>
-                                                        @error('type')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                        <label class="input-label d-block">Questions Type</label>
-                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
-                                                            @if(!empty($questions_types))
-                                                                @foreach( $questions_types as $questions_type_slug => $questions_type_title)
-                                                                    <option value="{{$questions_type_slug}}" {{in_array($questions_type_slug, $selected_questions_types)? 'selected' : ''}}>{{$questions_type_title}}</option>
-                                                                @endforeach
-                                                            @endif
-                                                        </select>
-                                                        @error('type')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
-                                                        <label class="input-label d-block">Test Total Time (in minutes)</label>
-                                                        <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
-                                                        @error('total_time')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
+                                                
+                                                
+                                                
+                                                
                                                 <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">{{ trans('update.points') }}</label>
@@ -424,6 +360,80 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h2 class="section-title after-line">Mock Test Settings</h2>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label">Mock Test Image</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="mock_test_image" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" name="mock_test_image" id="mock_test_image" value="{{ !empty($webinar) ? $webinar->mock_test_image : old('mock_test_image') }}" class="form-control @error('mock_test_image')  is-invalid @enderror"/>
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="input-group-text admin-file-view" data-input="mock_test_image">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </button>
+                                                            </div>
+                                                            @error('mock_test_image')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label d-block">Practice Type</label>
+                                                        <select name="webinar_practice_type" class="webinar_practice_type conditional_field_parent custom-select @error('type')  is-invalid @enderror">
+                                                            <option value="sats" @if( !empty($webinar) and $webinar->webinar_practice_type == 'sats') selected @endif>SATs</option>
+                                                            <option value="11plus" @if( !empty($webinar) and $webinar->webinar_practice_type == '11plus') selected @endif>11 Plus</option>
+                                                            <option value="independent_exams" @if( !empty($webinar) and $webinar->webinar_practice_type == 'independent_exams') selected @endif>Independent Exams</option>
+                                                            <option value="iseb" @if( !empty($webinar) and $webinar->webinar_practice_type == 'iseb') selected @endif>ISEB</option>
+                                                            <option value="cat4" @if( !empty($webinar) and $webinar->webinar_practice_type == 'cat4') selected @endif>CAT4</option>
+                                                        </select>
+                                                        @error('type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label d-block">Questions Type</label>
+                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
+                                                            @if(!empty($questions_types))
+                                                                @foreach( $questions_types as $questions_type_slug => $questions_type_title)
+                                                                    <option value="{{$questions_type_slug}}" {{in_array($questions_type_slug, $selected_questions_types)? 'selected' : ''}}>{{$questions_type_title}}</option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                        @error('type')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <div class="form-group mt-15 webinar_type_fields test_total_time_field">
+                                                        <label class="input-label d-block">Test Total Time (in minutes)</label>
+                                                        <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
+                                                        @error('total_time')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="row">
                                                 <div class="col-12">
                                                     <h2 class="section-title after-line">SEO Fields</h2>
