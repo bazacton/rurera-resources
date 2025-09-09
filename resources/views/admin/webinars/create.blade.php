@@ -975,7 +975,7 @@
                                         </section>
                                     @endforeach
 
-                                    <section class="mt-30">
+                                    <section class="mt-30 rurera-hide">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('public.quiz_certificate') }}</h2>
                                             <button id="webinarAddQuiz" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('public.add_quiz') }}</button>
