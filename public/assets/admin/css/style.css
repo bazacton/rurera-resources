@@ -2193,11 +2193,7 @@ Admin Questions Generator Page Style End
     background-color: inherit !important;
     color: currentColor;
 }
-.accordion-content-wrapper li .draggable-content-lists {
-    background-color: #fcfcfc;
-    border-radius: 5px;
-    padding: 15px;
-}
+
 .draggable-content-lists li.sub-chapter-parent:first-child {
     margin-top: 0 !important;
 }
