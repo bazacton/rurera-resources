@@ -4,7 +4,7 @@ $chapter  = isset( $chapter )? $chapter : '';
 @endphp
 
 <li data-id="{{ !empty($chapterItem) ? $chapterItem->id :'' }}"
-    class="sub-chapter-parent accordion-row bg-white rounded-sm border border-gray300 mt-20 py-15 py-lg-30 px-10 px-lg-20">
+    class="sub-chapter-parent accordion-row bg-white rounded-sm border border-gray300 mt-20 pt-20 py-lg-30 px-20 px-lg-20">
     <div class="d-flex align-items-center justify-content-between " role="tab"
          id="quiz_{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}">
         <div class="d-flex align-items-center"
