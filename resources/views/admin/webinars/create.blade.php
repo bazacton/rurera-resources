@@ -486,7 +486,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group custom-switches-stacked">
                                                         <label class="input-label">Include In XML:</label>
                                                         <label class="custom-switch pl-0">
