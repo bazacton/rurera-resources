@@ -204,7 +204,7 @@
                                                 
                                                 
                                                 
-                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
+                                                <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
                                                         <div class="input-group">
