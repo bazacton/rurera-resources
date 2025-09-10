@@ -381,7 +381,7 @@
                                                     <h2 class="section-title after-line">Mock Test Settings</h2>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
-                                                    <div class="form-group webinar_type_fields test_total_time_field">
+                                                    <div class="form-group webinar_type_fields test_total_time_field webinar_type_fields test_total_time_field">
                                                         <label class="input-label">Mock Test Image</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
