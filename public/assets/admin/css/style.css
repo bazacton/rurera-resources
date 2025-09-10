@@ -2203,6 +2203,9 @@ Admin Questions Generator Page Style End
 .form-group select.questions_types.custom-select {
     height: calc(2.25rem + 2px);
 }
+.webinar-form .form-group textarea.form-control {
+    max-height: 38px;
+}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
