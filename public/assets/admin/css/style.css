@@ -2213,6 +2213,7 @@ Admin Questions Generator Page Style End
 .webinar-form .form-group .select2-container--default .select2-selection--multiple .select2-selection__choice {
     margin-bottom: 5px;
     line-height: normal;
+    vertical-align: middle;
 }
 /* Webinars Page style End */
 
