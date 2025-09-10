@@ -1298,7 +1298,7 @@
                                                 @foreach( $sections as $sectionObj)
                                                 <div class="tab-pane mt-3 fade" id="section-tab-{{$sectionObj->id}}" role="tabpanel" aria-labelledby="section-tab-{{$sectionObj->id}}-tab">
                                                     @if( !empty( $sectionObj->users) )
-                                                    <div class="users_list_block">
+                                                    <div class="users_list_block 1122">
                                                         <span><input type="checkbox" class="select_all" id="select_all_{{$sectionObj->id}}" value="{{$sectionObj->id}}"
                                                                      name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][class_ids][]"><label for="select_all_{{$sectionObj->id}}">Select All</label></span>
                                                         <ul class="users-list">
