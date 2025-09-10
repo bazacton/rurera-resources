@@ -349,7 +349,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-12 col-lg-12">
-                                                    <div class="form-group mt-15">
+                                                    <div class="form-group">
                                                         <label class="input-label">Categories</label>
 
                                                         <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
