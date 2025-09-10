@@ -77,7 +77,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     opacity: 1;
     visibility: visible;
 }
-.admin_teacher_role:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
+.admin_teacher_role:has(.sub-menu-sidebar.dropdown-menu.show) .main-sidebar ~ .main-content {
     padding-left: 500px;
 }
 .admin_teacher_role:has(.sidebar-menu li.menu.show) nav.navbar {
