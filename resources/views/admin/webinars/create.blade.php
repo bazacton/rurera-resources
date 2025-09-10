@@ -432,7 +432,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-12 col-lg-12">
                                                     <div class="form-group mt-15">
                                                         <label class="input-label">Categories</label>
 
