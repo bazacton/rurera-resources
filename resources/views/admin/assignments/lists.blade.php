@@ -806,7 +806,18 @@
                 });
 
                 if (selected.length > 0) {
-                    let badges = selected.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
+                    let badges = '';
+                    const maxBadgesToShow = 3;
+
+                    if (selected.length <= maxBadgesToShow) {
+                        badges = selected.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
+                    } else {
+                        const shown = selected.slice(0, 2); // show only 2
+                        const remainingCount = selected.length - 2;
+                        badges = shown.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
+                        badges += ` <span class="badge badge-secondary">+${remainingCount} more</span>`;
+                    }
+
                     selectedLabelsContainer.html(badges);
                 } else {
                     selectedLabelsContainer.html('');
@@ -814,10 +825,11 @@
             });
 
             $('#yearClearSelection').click(function () {
-                checkboxes.prop('checked', false);
+                yearCheckboxes.prop('checked', false); // fixed typo: was `checkboxes`
                 selectedLabelsContainer.html('');
             });
         });
+
     </script>
 
     <script>
