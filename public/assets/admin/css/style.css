@@ -2212,10 +2212,14 @@ Admin Questions Generator Page Style End
 .webinar-form .form-group .select2-container--default .select2-selection--multiple .select2-selection__choice {
     margin-bottom: 5px;
     line-height: normal;
-    vertical-align: middle;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 2px 5px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
-
-
 .admin_role:has(.webinar-form) .select2-results__option {
   padding-right: 20px;
   vertical-align: middle;
@@ -2287,6 +2291,12 @@ Admin Questions Generator Page Style End
 }
 .admin_role:has(.webinar-form) .select2-container--default .select2-results__option--group:before {
     display: none;
+}
+.admin_role:has(.webinar-form) .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    border: 0;
+    margin-top: -1px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 /* Webinars Page style End */
