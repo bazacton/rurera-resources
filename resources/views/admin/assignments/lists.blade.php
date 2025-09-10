@@ -807,7 +807,7 @@
 
                 if (selected.length > 0) {
                     let badges = '';
-                    const maxBadgesToShow = 3;
+                    const maxBadgesToShow = 2;
 
                     if (selected.length <= maxBadgesToShow) {
                         badges = selected.map(item => `<span class="badge badge-primary">${item}</span>`).join(' ');
