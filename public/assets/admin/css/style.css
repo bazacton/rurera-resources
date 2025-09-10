@@ -2200,6 +2200,9 @@ Admin Questions Generator Page Style End
 .draggable-content-lists button {
     outline: none;
 }
+.form-group select.questions_types.custom-select {
+    height: calc(2.25rem + 2px);
+}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
