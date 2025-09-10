@@ -2289,7 +2289,8 @@ Admin Questions Generator Page Style End
     display: inline-block;
     vertical-align: middle;
 }
-.admin_role:has(.webinar-form) .select2-container--default .select2-results__option--group:before {
+.admin_role:has(.webinar-form) .select2-container--default .select2-results__option--group:before,
+.admin_role:has(.webinar-form) .select2-results__option.select2-results__option--disabled:before {
     display: none;
 }
 .admin_role:has(.webinar-form) .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
