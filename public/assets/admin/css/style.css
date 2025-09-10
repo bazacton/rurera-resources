@@ -2253,9 +2253,6 @@ Admin Questions Generator Page Style End
 	background-color: #eaeaeb;
 	color: #272727;
 }
-.admin_role:has(.webinar-form) .select2-container--default .select2-selection--multiple {
-	margin-bottom: 10px;
-}
 .admin_role:has(.webinar-form) .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
 	border-radius: 4px;
 }
@@ -2265,7 +2262,7 @@ Admin Questions Generator Page Style End
     background-color: #fefeff;
 }
 .admin_role:has(.webinar-form) .select2-container--default .select2-selection--multiple {
-	border-width: 2px;
+	border-width: 1px;
 }
 .admin_role:has(.webinar-form) .select2-container--open .select2-dropdown--below {
 	border-radius: 6px;
