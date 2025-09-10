@@ -71,7 +71,7 @@
                                                     @if( !empty(auth()->user()::$country_location) )
                                                     <div class="form-group">
                                                         <label class="input-label">Country</label>
-                                                        <select name="country_location[]" class="form-control authors_select {{ !empty($webinar) ? 'js-edit-content-locale' : '' }}" multiple="multiple">
+                                                        <select name="country_location[]" class="form-control authors_select {{ !empty($webinar) ? 'js-edit-content-locale' : '' }} select2" multiple="multiple">
                                                             @foreach(auth()->user()::$country_location as $country_code => $country_name)
                                                                 @php $selected = (isset( $webinar->country_location) && in_array($country_code, json_decode($webinar->country_location)))? 'selected' : ''; @endphp
                                                                 <option value="{{ $country_code }}" {{$selected}}>{{ $country_name }}</option>
