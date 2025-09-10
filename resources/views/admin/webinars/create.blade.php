@@ -252,7 +252,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4 col-lg-4">
+                                                <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                     <div class="form-group">
                                                         <label>Icon Code</label>
                                                         <div class="input-group">
