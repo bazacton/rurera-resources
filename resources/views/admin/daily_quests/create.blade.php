@@ -1301,7 +1301,7 @@
                                                     <div class="users_list_block">
                                                         <span><input type="checkbox" class="select_all" id="select_all_{{$sectionObj->id}}" value="{{$sectionObj->id}}"
                                                                      name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][class_ids][]"><label for="select_all_{{$sectionObj->id}}">Select All</label></span>
-                                                        <ul class="users-list 6677">
+                                                        <ul class="users-list">
                                                             @foreach( $sectionObj->users as $userObj)
                                                             <li data-user_id="{{$userObj->id}}">
                                                                 <span><input type="checkbox" id="select_user{{$userObj->id}}" value="{{$userObj->id}}"

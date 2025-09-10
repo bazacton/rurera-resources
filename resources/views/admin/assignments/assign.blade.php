@@ -135,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-6 col-lg-6">
-                                    <ul class="users-list 1122">
+                                    <ul class="users-list">
                                     </ul>
                                 </div>
                             </div>
