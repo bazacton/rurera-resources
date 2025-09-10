@@ -34,7 +34,7 @@ $chapter  = isset( $chapter )? $chapter : '';
             <span class="disabled-content-badge mr-10">{{ trans('public.disabled') }}</span>
             @endif
 
-            <div class="btn-group dropdown table-actions">
+            <div class="btn-group dropdown table-actions rurera-hide">
                 <button type="button" class="add-course-content-btn mr-10 dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                     <i data-feather="plus" class=""></i>
