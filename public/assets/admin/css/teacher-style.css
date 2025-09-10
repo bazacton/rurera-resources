@@ -80,7 +80,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role:has(.sub-menu-sidebar.dropdown-menu.show) .main-sidebar ~ .main-content {
     padding-left: 500px;
 }
-.admin_teacher_role:has(.sidebar-menu li.menu.show) nav.navbar {
+.admin_teacher_role:has(.sub-menu-sidebar.dropdown-menu.show) nav.navbar {
     padding-left: 240px;
 }
 .sidebar-menu li.menu .dropdown-toggle:after {transform: rotate(-90deg); opacity: 0;}
@@ -91,7 +91,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
 .admin_teacher_role.sidebar-mini .main-sidebar .sidebar-menu li.menu.show .sub-menu-sidebar.dropdown-menu.show {
     transform: translateX(65px) !important;
 }
-.admin_teacher_role.sidebar-mini:has(.sidebar-menu li.menu.show) .main-sidebar ~ .main-content {
+.admin_teacher_role.sidebar-mini:has(.sub-menu-sidebar.dropdown-menu.show) .main-sidebar ~ .main-content {
     padding-left: 315px;
 }
 .sub-menu-sidebar .dropdown-nav-area {
