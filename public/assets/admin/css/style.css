@@ -2285,6 +2285,9 @@ Admin Questions Generator Page Style End
     display: inline-block;
     vertical-align: middle;
 }
+.admin_role:has(.webinar-form) .select2-container--default .select2-results__option--group:before {
+    display: none;
+}
 
 /* Webinars Page style End */
 
