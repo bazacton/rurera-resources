@@ -348,6 +348,33 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-12 col-md-12 col-lg-12">
+                                                    <div class="form-group mt-15">
+                                                        <label class="input-label">Categories</label>
+
+                                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
+                                                            <option {{ !empty($webinar) ? '' : 'selected' }} disabled>{{ trans('public.choose_category') }}</option>
+                                                            @foreach($categories as $category)
+                                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                    <optgroup label="{{  $category->title }}">
+                                                                        @foreach($category->subCategories as $subCategory)
+                                                                            @php $webinar_categories = isset( $webinar->category_id )? json_decode($webinar->category_id) : array(); @endphp
+                                                                            <option value="{{ $subCategory->id }}" @if(in_array($subCategory->id, $webinar_categories)) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                                        @endforeach
+                                                                    </optgroup>
+                                                                @else
+                                                                    <option value="{{ $category->id }}" {{ (!empty($webinar) and $webinar->category_id == $category->id) ? 'selected' : '' }}>{{ $category->title }}</option>
+                                                                @endif
+                                                            @endforeach
+                                                        </select>
+
+                                                        @error('category_id')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
@@ -426,33 +453,6 @@
                                                         <label class="input-label d-block">Test Total Time (in minutes)</label>
                                                         <input type="number" name="total_time" value="{{ !empty($webinar) ? $webinar->total_time : old('total_time') }}" class="form-control @error('total_time')  is-invalid @enderror" placeholder=""/>
                                                         @error('total_time')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-12 col-lg-12">
-                                                    <div class="form-group mt-15">
-                                                        <label class="input-label">Categories</label>
-
-                                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
-                                                            <option {{ !empty($webinar) ? '' : 'selected' }} disabled>{{ trans('public.choose_category') }}</option>
-                                                            @foreach($categories as $category)
-                                                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                                                    <optgroup label="{{  $category->title }}">
-                                                                        @foreach($category->subCategories as $subCategory)
-                                                                            @php $webinar_categories = isset( $webinar->category_id )? json_decode($webinar->category_id) : array(); @endphp
-                                                                            <option value="{{ $subCategory->id }}" @if(in_array($subCategory->id, $webinar_categories)) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                                                        @endforeach
-                                                                    </optgroup>
-                                                                @else
-                                                                    <option value="{{ $category->id }}" {{ (!empty($webinar) and $webinar->category_id == $category->id) ? 'selected' : '' }}>{{ $category->title }}</option>
-                                                                @endif
-                                                            @endforeach
-                                                        </select>
-
-                                                        @error('category_id')
                                                         <div class="invalid-feedback">
                                                             {{ $message }}
                                                         </div>
