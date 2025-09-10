@@ -276,9 +276,6 @@
             $(".select2").select2({
                 placeholder: $(this).data('placeholder'),
                 allowClear: true,
-                closeOnSelect : false,
-                allowClear: true,
-			    tags: true,
                 width: '100%',
                 dropdownParent: $('.main-content')
             });
