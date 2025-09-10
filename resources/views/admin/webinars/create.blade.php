@@ -423,6 +423,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
+                                                    @php
+                                                        $toolbar_tools = toolbar_tools();
+                                                        $questions_types = array();
+                                                            foreach( $toolbar_tools as $element_slug => $toolObj){
+                                                                $element_type = isset( $toolObj['element_type'] )? $toolObj['element_type'] : '';
+                                                                if( $element_type == 'main'){
+                                                                    $questions_types[$element_slug] = isset( $toolObj['title'] )? $toolObj['title'] : '';
+                                                                }
+                                                            }
+                                                            $selected_questions_types = isset($webinar->questions_types)? json_decode($webinar->questions_types) : array();
+                                                    @endphp
                                                     <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Questions Type</label>
                                                         <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror select2" multiple>
@@ -438,17 +449,7 @@
                                                         </div>
                                                         @enderror
                                                     </div>
-                                                    @php
-                                                    $toolbar_tools = toolbar_tools();
-                                                    $questions_types = array();
-                                                        foreach( $toolbar_tools as $element_slug => $toolObj){
-                                                            $element_type = isset( $toolObj['element_type'] )? $toolObj['element_type'] : '';
-                                                            if( $element_type == 'main'){
-                                                                $questions_types[$element_slug] = isset( $toolObj['title'] )? $toolObj['title'] : '';
-                                                            }
-                                                        }
-                                                        $selected_questions_types = isset($webinar->questions_types)? json_decode($webinar->questions_types) : array();
-                                                    @endphp
+
                                                 </div>
                                                 <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group webinar_type_fields test_total_time_field">
