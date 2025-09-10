@@ -425,7 +425,7 @@
                                                 <div class="col-12 col-md-4 col-lg-4">
                                                     <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Questions Type</label>
-                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror" multiple>
+                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror select2" multiple>
                                                             @if(!empty($questions_types))
                                                                 @foreach( $questions_types as $questions_type_slug => $questions_type_title)
                                                                     <option value="{{$questions_type_slug}}" {{in_array($questions_type_slug, $selected_questions_types)? 'selected' : ''}}>{{$questions_type_title}}</option>
