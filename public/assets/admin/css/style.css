@@ -2265,8 +2265,8 @@ Admin Questions Generator Page Style End
 	border-width: 1px;
 }
 .admin_role:has(.webinar-form) .select2-container--open .select2-dropdown--below {
-	border-radius: 6px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-color: #95a0f4;
+    border-radius: 0;
 }
 .admin_role:has(.webinar-form) .select2-selection .select2-selection--multiple:after {
 	content: 'hhghgh';
