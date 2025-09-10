@@ -53,11 +53,15 @@
                                 $questions_list = isset($chapterStudentData['questions_list'])? $chapterStudentData['questions_list'] : array();
                                 $questions_list = is_array($questions_list)? $questions_list : json_decode($questions_list, true);
 
+                                $result_questions_list = isset($chapterStudentData['result_questions_list'])? $chapterStudentData['result_questions_list'] : array();
                             @endphp
                             <th class="font-14">Attempts</th>
-                            @if(!empty($questions_list))
-                                @foreach($questions_list as $question_id)
-                                    <th class="font-14">{{$question_id}}</th>
+                            @if(!empty($result_questions_list))
+                                @php $question_counter = 1; @endphp
+                                @foreach($result_questions_list as $question_id => $question_data)
+                                    @php $question_result_id  = isset($question_data['result_question_id'])? $question_data['result_question_id'] : 0; @endphp
+                                    <th class="font-14"><a href="javascript:;" class="review-question" data-question_id="{{$question_result_id}}">Q{{$question_counter}}</a></th>
+                                    @php $question_counter++; @endphp
                                 @endforeach
                             @endif
 
