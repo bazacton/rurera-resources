@@ -503,7 +503,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row mt-30">
+                                        <div class="row mt-30 rurera-hide">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label class="input-label">{{ trans('public.description') }}</label>
