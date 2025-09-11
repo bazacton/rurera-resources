@@ -72,7 +72,7 @@ $chapter  = isset( $chapter )? $chapter : '';
                data-parent="#chapterContentAccordion{{ !empty($chapter) ? $chapter->id :'' }}" role="button"
                data-toggle="collapse" aria-expanded="true"></i> -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                <i class="fa fa-edit"></i>
+                <i data-feather="edit-3" class="cursor-pointer" height="20"></i>
             </button>
         </div>
     </div>
