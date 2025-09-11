@@ -1837,13 +1837,9 @@ $(document).ready(function() {
   }
 
   $('.icons_select2').select2({
-    width: "100%",
     templateSelection: formatOption,
     templateResult: formatOption,
     allowHtml: true,
-    placeholder: "Select your OS",
-    dropdownParent: $('.select-icon'),
-    allowClear: true,
-    multiple: true // Enable multi-selection for checkboxes
+    multiple: true
   });
 });
