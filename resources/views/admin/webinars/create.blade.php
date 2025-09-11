@@ -71,7 +71,7 @@
                                                     @if( !empty(auth()->user()::$country_location) )
                                                     <div class="form-group">
                                                         <label class="input-label">Country</label>
-                                                        <select name="country_location[]" class="form-control authors_select {{ !empty($webinar) ? 'js-edit-content-locale' : '' }} select2" multiple="multiple">
+                                                        <select name="country_location[]" class="form-control authors_select {{ !empty($webinar) ? 'js-edit-content-locale' : '' }} select2 closeOnSelect-false" multiple="multiple">
                                                             @foreach(auth()->user()::$country_location as $country_code => $country_name)
                                                                 @php $selected = (isset( $webinar->country_location) && in_array($country_code, json_decode($webinar->country_location)))? 'selected' : ''; @endphp
                                                                 <option value="{{ $country_code }}" {{$selected}}>{{ $country_name }}</option>
@@ -354,7 +354,7 @@
                                                     <div class="form-group">
                                                         <label class="input-label">Categories</label>
 
-                                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2 icons_select2" name="category_id[]" required multiple="multiple">
+                                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2 closeOnSelect-false" name="category_id[]" required multiple="multiple">
                                                             <option {{ !empty($webinar) ? '' : 'selected' }} disabled>{{ trans('public.choose_category') }}</option>
                                                             @foreach($categories as $category)
                                                                 @if(!empty($category->subCategories) and count($category->subCategories))
@@ -436,7 +436,7 @@
                                                     @endphp
                                                     <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Questions Type</label>
-                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror select2" multiple>
+                                                        <select name="questions_types[]" class="questions_types conditional_field_parent custom-select @error('type')  is-invalid @enderror select2 closeOnSelect-false" multiple>
                                                             @if(!empty($questions_types))
                                                                 @foreach( $questions_types as $questions_type_slug => $questions_type_title)
                                                                     <option value="{{$questions_type_slug}}" {{in_array($questions_type_slug, $selected_questions_types)? 'selected' : ''}}>{{$questions_type_title}}</option>
