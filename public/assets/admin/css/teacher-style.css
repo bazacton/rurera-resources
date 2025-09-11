@@ -1475,6 +1475,12 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     padding: 0;
     margin: 0 0 15px;
 }
+.class-edit-modal .admin-rurera-tabs li {
+    margin: 0 15px 0 0;
+}
+.class-edit-modal .admin-rurera-tabs li .nav-link {
+    padding: 0 0 10px;
+}
 .create-class-modal .select-box {
     border: 1px solid #e4e6fc;
     border-radius: .25rem;
