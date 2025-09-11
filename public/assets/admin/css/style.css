@@ -2340,6 +2340,7 @@ Admin Questions Generator Page Style End
     line-height: normal;
     border-bottom: 2px solid transparent;
     margin-bottom: -2px;
+    outline: none;
 }
 .rurera-webinar-tabs .nav-link.active {
     color: var(--blue);
