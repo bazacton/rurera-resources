@@ -1002,46 +1002,37 @@
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // All checkboxes inside the list
+   
         const checkboxes = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]');
 
-        // Top count display: "4 members selected"
         const selectionTextSpan = document.querySelector('.selection-text span');
 
-        // Bottom button count display: "Add selected (4)"
         const memberSelectedBtnSpan = document.querySelector('.member-selected-btn span');
 
-        // Buttons
         const selectAllBtn = document.querySelector('.select-all-btn');
         const unselectAllBtn = document.querySelector('.unselect-all-btn');
 
-        // Function to update both counts
         function updateSelectedCount() {
             const selectedCount = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]:checked').length;
             
-            // Update both span elements
             selectionTextSpan.textContent = `${selectedCount} members selected`;
             memberSelectedBtnSpan.textContent = `(${selectedCount})`;
         }
 
-        // Add event listeners to checkboxes
         checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('change', updateSelectedCount);
         });
 
-        // Select All
         selectAllBtn.addEventListener('click', function () {
             checkboxes.forEach(checkbox => checkbox.checked = true);
             updateSelectedCount();
         });
 
-        // Unselect All
         unselectAllBtn.addEventListener('click', function () {
             checkboxes.forEach(checkbox => checkbox.checked = false);
             updateSelectedCount();
         });
 
-        // Initialize count on page load
         updateSelectedCount();
     });
 </script>
