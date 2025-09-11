@@ -361,7 +361,7 @@
                                                                     <optgroup label="{{  $category->title }}">
                                                                         @foreach($category->subCategories as $subCategory)
                                                                             @php $webinar_categories = isset( $webinar->category_id )? json_decode($webinar->category_id) : array(); @endphp
-                                                                            <option data-icon="fa fa-home" value="{{ $subCategory->id }}" @if(in_array($subCategory->id, $webinar_categories)) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                                            <option value="{{ $subCategory->id }}" @if(in_array($subCategory->id, $webinar_categories)) selected="selected" @endif>{{ $subCategory->title }}</option>
                                                                         @endforeach
                                                                     </optgroup>
                                                                 @else
