@@ -7572,6 +7572,90 @@ button.print-download-btn {
 }
 /* Teacher Dashboard Header Style End */
 
+/* Analytics Progress List Style Start */
+.analytics-progress-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+}
+.progress-media {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.progress-media .img-holder {
+    width: 170px;
+    height: 100px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-media .img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.analytics-progress-card h5 {
+    margin: 0 0 5px;
+}
+.analytics-progress-card h5 a {
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+.metrics {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+.metric-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+.progress-bar {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 4px;
+    flex-direction: row;
+    background-color: inherit;
+}
+.progress-block {
+    width: 10px;
+    height: 30px;
+    background: #f4f4f4;
+    border-radius: 2px;
+}
+.progress-block.filled {
+    background: #83e5c5;
+}
+.progress-block.partial {
+    background: linear-gradient(to top, #ffacac 50%, #e5e7eb 50%);
+}
+.metric-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+.analytics-progress-card .text-holder span {
+    display: block;
+    line-height: normal;
+    font-size: 16px;
+}
+/* Analytics Progress List Style End */
+
 .admin_teacher_role .main-content {
     padding-right: 20px;
     background-color: inherit;
