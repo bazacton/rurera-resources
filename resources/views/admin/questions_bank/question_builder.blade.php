@@ -609,7 +609,7 @@ $rand_id = rand(999,99999);
 														@endforeach
 													@endif
 													<div class="text-center">
-														<button id="toggleViewBtn" class="cards-view-more-btn" style="display: none;">View More</button>
+														<button id="toggleViewBtn" class="cards-view-more-btn mt-10" style="display: none;">View More</button>
 													</div>
 													</div>
 													
