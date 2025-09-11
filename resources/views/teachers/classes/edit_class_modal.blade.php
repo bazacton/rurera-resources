@@ -1,38 +1,41 @@
 <form action="{{ getAdminPanelUrl() }}/classes/{{$class->id}}/store"
       method="POST" class="mb-0">
     @csrf
-    <ul data-target_class="admin-rurera-tabs-details-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-        <li class="nav-item skelton-height-lg">
-            <a class="nav-link active" id="details-tab-edit" href="javascript:;">
-                <span class="tab-title">Details</span>
-            </a>
-        </li>
-        <li class="nav-item skelton-height-lg">
-            <a class="nav-link" id="curriculum-tab-edit" href="javascript:;">
-                <span class="tab-title">Curriculum</span>
-            </a>
-        </li>
-        <li class="nav-item skelton-height-lg">
-            <a class="nav-link" id="games-tab-edit" href="javascript:;">
-                <span class="tab-title">Games</span>
-            </a>
-        </li>
-        <li class="nav-item skelton-height-lg rurera-hide">
-            <a class="nav-link" id="teachers-tab-edit" href="javascript:;">
-                <span class="tab-title">Teachers</span>
-            </a>
-        </li>
-        <li class="nav-item skelton-height-lg ">
-            <a class="nav-link" id="announcement-tab-edit" href="javascript:;">
-                <span class="tab-title">Announcement</span>
-            </a>
-        </li>
-        <li class="nav-item skelton-height-lg">
-            <a class="nav-link" id="advance-tab-edit" href="javascript:;">
-                <span class="tab-title">Advanced Options</span>
-            </a>
-        </li>
-    </ul>
+    <div class="admin-rurera-tabs-holder">
+        <ul data-target_class="admin-rurera-tabs-details-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-0" id="assignment_tabs" role="tablist">
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link active" id="details-tab-edit" href="javascript:;">
+                    <span class="tab-title">Details</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="curriculum-tab-edit" href="javascript:;">
+                    <span class="tab-title">Curriculum</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="games-tab-edit" href="javascript:;">
+                    <span class="tab-title">Games</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg rurera-hide">
+                <a class="nav-link" id="teachers-tab-edit" href="javascript:;">
+                    <span class="tab-title">Teachers</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg ">
+                <a class="nav-link" id="announcement-tab-edit" href="javascript:;">
+                    <span class="tab-title">Announcement</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="advance-tab-edit" href="javascript:;">
+                    <span class="tab-title">Advanced Options</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
     <div class="admin-rurera-tabs-details-edit rurera-hide curriculum-tab-edit">
 
 
