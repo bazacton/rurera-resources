@@ -2311,9 +2311,15 @@ Admin Questions Generator Page Style End
     position: absolute;
     right: 10px;
     top: 10px;
+    z-index: 1;
 }
 .sub-topic-modal .mt-20:has(.js-submit-quiz-form) {
     margin-top: 0 !important;
+}
+.sub-topic-modal-btn {
+    border: 0;
+    padding: 0;
+    background-color: inherit;
 }
 /* Webinars Page style End */
 
