@@ -18,7 +18,7 @@
             </div>
         </section>
 
-        <div class="teacher-listing d-flex align-items-center flex-wrap">
+        <div class="teacher-listing">
 
             <div class="row w-100">
                 <div class="col-12 col-md-12">
@@ -276,7 +276,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="analytics-progress-list">
             <div class="row">
                 <div class="col-12">
