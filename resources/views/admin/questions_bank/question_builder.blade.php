@@ -999,37 +999,34 @@ $(".summernote").summernote({
 </script>
 
 <script>
-    function setupCardToggle() {
-        const cards = document.querySelectorAll("#accordion .card");
-        const toggleBtn = document.getElementById("toggleViewBtn");
-        const maxVisible = 5;
+$(document).ready(function () {
+    const $cards = $("#accordion .card");
+    const $toggleBtn = $("#toggleViewBtn");
+    const maxVisible = 5;
 
-        if (cards.length <= maxVisible) {
-            toggleBtn.style.display = "none"; // Hide button if 5 or fewer cards
-            return;
-        }
+    if ($cards.length <= maxVisible) {
+        $toggleBtn.hide(); // Hide button if 5 or fewer cards
+        return;
+    }
 
-        let expanded = false;
+    let expanded = false;
 
-        function updateCardVisibility(showAll = false) {
-            cards.forEach((card, index) => {
-                card.style.display = (showAll || index < maxVisible) ? "block" : "none";
-            });
-        }
-
-        // Initial setup
-        updateCardVisibility(false);
-        toggleBtn.style.display = "inline-block";
-
-        toggleBtn.addEventListener("click", function () {
-            expanded = !expanded;
-            updateCardVisibility(expanded);
-            toggleBtn.textContent = expanded ? "View Less" : "View More";
+    function updateCardVisibility(showAll = false) {
+        $cards.each(function (index) {
+            $(this).toggle(showAll || index < maxVisible);
         });
     }
 
-    // Run setup after DOM load
-    document.addEventListener("DOMContentLoaded", setupCardToggle);
+    // Initial setup
+    updateCardVisibility(false);
+    $toggleBtn.show(); // Only shows if > 5 cards, due to earlier check
+
+    $toggleBtn.on("click", function () {
+        expanded = !expanded;
+        updateCardVisibility(expanded);
+        $toggleBtn.text(expanded ? "View Less" : "View More");
+    });
+});
 </script>
 
 
