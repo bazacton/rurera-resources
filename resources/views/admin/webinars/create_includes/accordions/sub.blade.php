@@ -103,6 +103,14 @@ $chapter  = isset( $chapter )? $chapter : '';
                         'creator' => $webinar->creator
                         ]
                         )
+                        <div class="form-group mt-0 d-flex align-items-center justify-content-between js-switch-parent">
+                            <label class="js-switch cursor-pointer" for="checkAllContentsPassSwitch_record">{{ trans('update.check_all_contents_pass') }}</label>
+
+                            <div class="custom-control custom-switch">
+                                <input id="checkAllContentsPassSwitch_record" type="checkbox" name="ajax[chapter][check_all_contents_pass]" class="custom-control-input js-chapter-check-all-contents-pass">
+                                <label class="custom-control-label" for="checkAllContentsPassSwitch_record"></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
