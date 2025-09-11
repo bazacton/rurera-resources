@@ -1035,19 +1035,19 @@ $(".summernote").summernote({
     }
 
     // Load the cards via AJAX
-    document.addEventListener("DOMContentLoaded", function () {
-        $.ajax({
-            url: '/cards', // Replace with your actual URL
-            method: 'GET',
-            success: function (response) {
-                $('#accordion').html(response);
-                setupCardToggle(); // Must run AFTER content is injected
-            },
-            error: function (xhr, status, error) {
-                console.error("AJAX failed:", status, error);
-            }
-        });
-    });
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     $.ajax({
+    //         url: '/cards', // Replace with your actual URL
+    //         method: 'GET',
+    //         success: function (response) {
+    //             $('#accordion').html(response);
+    //             setupCardToggle(); // Must run AFTER content is injected
+    //         },
+    //         error: function (xhr, status, error) {
+    //             console.error("AJAX failed:", status, error);
+    //         }
+    //     });
+    // });
 </script>
 
 
