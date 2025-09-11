@@ -1026,6 +1026,14 @@ $(".summernote").summernote({
         });
     }
     document.addEventListener("DOMContentLoaded", setupCardToggle);
-	
+	$.ajax({
+		url: '/cards',
+		method: 'GET',
+		success: function (response) {
+			$('#accordion').html(response); // Load new cards into the accordion
+			setupCardToggle(); // Reapply the "View More / Less" logic
+		}
+	});
+
 </script>
 
