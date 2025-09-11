@@ -66,30 +66,53 @@ $chapter  = isset( $chapter )? $chapter : '';
             </a>
             @endif
 
-            <i class="collapse-chevron-icon" data-feather="chevron-down" height="20"
+            <!-- <i class="collapse-chevron-icon" data-feather="chevron-down" height="20"
                href="#collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
                aria-controls="collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
                data-parent="#chapterContentAccordion{{ !empty($chapter) ? $chapter->id :'' }}" role="button"
-               data-toggle="collapse" aria-expanded="true"></i>
+               data-toggle="collapse" aria-expanded="true"></i> -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa fa-edit"></i>
+            </button>
         </div>
     </div>
 
-
-    <div id="collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
-         aria-labelledby="quiz_{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
-         class=" collapse @if(empty($subChapterInfo)) show @endif" role="tabpanel">
-        <div class="panel-collapse text-gray">
-            @include('admin.quizzes.create_sub_chapter_form',
-            [
-            'inWebinarPage' => true,
-            'selectedWebinar' => $webinar,
-            'subChapter' => $subChapterInfo ?? null,
-            'quizQuestions' => !empty($subChapterInfo) ? $subChapterInfo->quizQuestions : [],
-            'chapters' => $webinar->chapters,
-            'webinarChapterPages' => !empty($webinarChapterPages),
-            'creator' => $webinar->creator
-            ]
-            )
+    
+    
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
+                    aria-labelledby="quiz_{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
+                    class=" collapse @if(empty($subChapterInfo)) show @endif" role="tabpanel">
+                    <div class="panel-collapse text-gray">
+                        @include('admin.quizzes.create_sub_chapter_form',
+                        [
+                        'inWebinarPage' => true,
+                        'selectedWebinar' => $webinar,
+                        'subChapter' => $subChapterInfo ?? null,
+                        'quizQuestions' => !empty($subChapterInfo) ? $subChapterInfo->quizQuestions : [],
+                        'chapters' => $webinar->chapters,
+                        'webinarChapterPages' => !empty($webinarChapterPages),
+                        'creator' => $webinar->creator
+                        ]
+                        )
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
         </div>
     </div>
 
