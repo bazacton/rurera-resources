@@ -42,8 +42,8 @@
                             <form method="post" action="{{ getAdminPanelUrl() }}/webinars/{{ !empty($webinar) ? $webinar->id.'/update' : 'store' }}" id="webinarForm" class="webinar-form">
                                 {{ csrf_field() }}
                                 
-                                <div class="admin-rurera-tabs-holder">
-                                    <ul class="nav nav-tabs admin-rurera-tabs" id="myTab" role="tablist">
+                                <div class="rurera-webinar-tabs">
+                                    <ul class="nav" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" id="mock-test-tab" data-toggle="tab" data-target="#mock-test" type="button" role="tab" aria-controls="mock-test" aria-selected="true">Mock Test Settings</button>
                                         </li>
