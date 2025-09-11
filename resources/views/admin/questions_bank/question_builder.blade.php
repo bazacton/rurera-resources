@@ -1005,7 +1005,7 @@ $(document).ready(function () {
     const maxVisible = 5;
 
     if ($cards.length <= maxVisible) {
-        $toggleBtn.hide(); // Hide button if 5 or fewer cards
+        $toggleBtn.hide();
         return;
     }
 
@@ -1013,13 +1013,17 @@ $(document).ready(function () {
 
     function updateCardVisibility(showAll = false) {
         $cards.each(function (index) {
-            $(this).toggle(showAll || index < maxVisible);
+            if (showAll || index < maxVisible) {
+                $(this).stop(true, true).slideDown(300);
+            } else {
+                $(this).stop(true, true).slideUp(300);
+            }
         });
     }
 
-    // Initial setup
+    $cards.hide();
     updateCardVisibility(false);
-    $toggleBtn.show(); // Only shows if > 5 cards, due to earlier check
+    $toggleBtn.show();
 
     $toggleBtn.on("click", function () {
         expanded = !expanded;
@@ -1028,6 +1032,3 @@ $(document).ready(function () {
     });
 });
 </script>
-
-
-
