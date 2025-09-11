@@ -2301,7 +2301,7 @@ Admin Questions Generator Page Style End
 
 .accordion-row .sub-topic-modal .panel-collapse {
     border: 0;
-    padding: 0;
+    padding: 0 0 35px;
     margin: 0;
 }
 .accordion-row .sub-topic-modal .modal-body {
@@ -2315,6 +2315,8 @@ Admin Questions Generator Page Style End
 }
 .sub-topic-modal .mt-20:has(.js-submit-quiz-form) {
     margin-top: 0 !important;
+    position: absolute;
+    bottom: 0;
 }
 .sub-topic-modal-btn {
     border: 0;
