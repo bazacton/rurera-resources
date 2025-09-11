@@ -276,6 +276,157 @@
                 </div>
             </div>
         </div>
+        <div class="analytics-progress-list">
+            <div class="row">
+                <div class="col-12">
+                    <div class="analytics-progress-card">
+                        <div class="progress-media">
+                            <div class="img-holder">
+                                <img src="/assets/default/img/ecommerce-img.webp" alt="ecommerce">
+                            </div>
+                            <div class="text-holder">
+                                <h5><a href="#">Discord Homepage</a></h5>
+                                <span>discord.com</span>
+                            </div>
+                        </div>
+                        <div class="analytics-progress">
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-label">GOOD (CRUX)</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block"></div>
+                                    </div>
+                                    <span class="metric-value">87%</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">FCP</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block"></div>
+                                        <div class="progress-block"></div>
+                                        <div class="progress-block"></div>
+                                    </div>
+                                    <span class="metric-value">1.2s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="analytics-progress-card">
+                        <div class="progress-media">
+                            <div class="img-holder">
+                                <img src="/assets/default/img/quiz-start.webp" alt="quiz-start">
+                            </div>
+                            <div class="text-holder">
+                                <h5><a href="#">Quickbooks Homepage</a></h5>
+                                <span>quickbooks.com</span>
+                            </div>
+                        </div>
+                        <div class="analytics-progress">
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-label">GOOD (CRUX)</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                    </div>
+                                    <span class="metric-value">94%</span>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">FCP</div>
+                                    <div class="progress-bar">
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block"></div>
+                                    </div>
+                                    <span class="metric-value">0.9s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="analytics-progress-card">
+                        <div class="progress-media">
+                            <div class="img-holder">
+                                <img src="/assets/default/img/video.png" alt="video">
+                            </div>
+                            <div class="text-holder">
+                                <h5><a href="#">web.dev - Desktop</a></h5>
+                                <span>web.dev.com</span>
+                            </div>
+                        </div>
+                        <div class="analytics-progress">
+                            <div class="metrics">
+                                <div class="metric">
+                                    <div class="metric-label">GOOD (CRUX)</div>
+                                    <div class="progress-bar">
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block partial"></div>
+                                        <div class="progress-block partial"></div>
+                                        <div class="progress-block partial"></div>
+                                        <div class="progress-block"></div>
+                                    </div>
+                                    <div class="metric-value">68%</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">FCP</div>
+                                    <div class="progress-bar">
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block filled"></div>
+                                        <div class="progress-block"></div>
+                                        <div class="progress-block"></div>
+                                        <div class="progress-block"></div>
+                                        <div class="progress-block"></div>
+                                        <div class="progress-block"></div>
+                                    </div>
+                                    <div class="metric-value">2.1s</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Modal -->
