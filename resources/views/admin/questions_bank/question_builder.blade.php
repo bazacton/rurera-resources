@@ -611,7 +611,7 @@ $rand_id = rand(999,99999);
 													
 													</div>
 													<div class="text-center mt-3">
-														<button id="toggleViewBtn" class="cards-view-more-btn">View More</button>
+														<button id="toggleViewBtn" class="cards-view-more-btn" style="display: none;">View More</button>
 													</div>
 												</div>
 												
@@ -997,29 +997,34 @@ $(".summernote").summernote({
 			}
 		});
 </script>
+
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    function setupCardToggle() {
         const cards = document.querySelectorAll(".similarity-content-block-data .card");
         const toggleBtn = document.getElementById("toggleViewBtn");
         const maxVisible = 5;
 
+        if (cards.length <= maxVisible) {
+            toggleBtn.style.display = "none";
+            return;
+        }
+
+        let expanded = false;
+
         function updateCardVisibility(showAll = false) {
             cards.forEach((card, index) => {
-                if (showAll || index < maxVisible) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
+                card.style.display = (showAll || index < maxVisible) ? "block" : "none";
             });
         }
         updateCardVisibility(false);
-
-        let expanded = false;
+        toggleBtn.style.display = "inline-block";
 
         toggleBtn.addEventListener("click", function () {
             expanded = !expanded;
             updateCardVisibility(expanded);
             toggleBtn.textContent = expanded ? "View Less" : "View More";
         });
-    });
+    }
+    document.addEventListener("DOMContentLoaded", setupCardToggle);
 </script>
+
