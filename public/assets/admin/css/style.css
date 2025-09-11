@@ -2346,6 +2346,12 @@ Admin Questions Generator Page Style End
     color: var(--blue);
     border-bottom-color: var(--blue);
 }
+.rurera-webinar-tabs section[class*="mt-"] {
+    margin-top: 30px !important;
+}
+.rurera-webinar-tabs .tab-pane {
+    padding: 0;
+}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
