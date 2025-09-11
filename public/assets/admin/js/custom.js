@@ -1825,8 +1825,38 @@ $(document).on('click', '.generate-subtopic-part', function (e) {
         }
     });
 });
-$(document).ready(function() {
-  $('.icons_select2').select2({
-    closeOnSelect : false,
-  });
+// $(document).ready(function() {
+//   $('.icons_select2').select2({
+//     closeOnSelect : false,
+//   });
+// });
+
+$(document).ready(function () {
+    // Initialize Select2
+    $('.icons_select2').select2();
+
+    // MutationObserver to monitor aria-selected changes
+    const observer = new MutationObserver(function(mutationsList) {
+        mutationsList.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'aria-selected') {
+                const target = mutation.target;
+                // Set aria-selected to false
+                target.setAttribute('aria-selected', 'false');
+            }
+        });
+    });
+
+    // Start observing when dropdown opens
+    $('icons_select2').on('select2:open', function () {
+        setTimeout(function () {
+            $('.select2-results__option').each(function () {
+                observer.observe(this, { attributes: true });
+            });
+        }, 100); // slight delay to ensure dropdown is rendered
+    });
+
+    // Optional: disconnect observer when closed
+    $('#your-select-id').on('select2:close', function () {
+        observer.disconnect();
+    });
 });
