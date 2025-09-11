@@ -594,8 +594,8 @@ $rand_id = rand(999,99999);
 												</div>
 												
 												<h3>Similiarity Content</h3>
-												<div id="accordion">
-													<div class="similarity-content-block-data">
+												<div >
+													<div class="similarity-content-block-data" id="accordion">
 													
 													@php
 													
@@ -1004,6 +1004,13 @@ $(".summernote").summernote({
         const toggleBtn = document.getElementById("toggleViewBtn");
         const maxVisible = 5;
 
+        console.log("setupCardToggle - cards found:", cards.length);
+
+        if (!toggleBtn) {
+            console.warn("Toggle button not found!");
+            return;
+        }
+
         if (cards.length <= maxVisible) {
             toggleBtn.style.display = "none";
             return;
@@ -1016,24 +1023,31 @@ $(".summernote").summernote({
                 card.style.display = (showAll || index < maxVisible) ? "block" : "none";
             });
         }
+
         updateCardVisibility(false);
         toggleBtn.style.display = "inline-block";
 
-        toggleBtn.addEventListener("click", function () {
+        toggleBtn.onclick = function () {
             expanded = !expanded;
             updateCardVisibility(expanded);
             toggleBtn.textContent = expanded ? "View Less" : "View More";
-        });
+        };
     }
-    document.addEventListener("DOMContentLoaded", setupCardToggle);
-	$.ajax({
-		url: '/cards',
-		method: 'GET',
-		success: function (response) {
-			$('#accordion').html(response); // Load new cards into the accordion
-			setupCardToggle(); // Reapply the "View More / Less" logic
-		}
-	});
 
+    // Load the cards via AJAX
+    document.addEventListener("DOMContentLoaded", function () {
+        $.ajax({
+            url: '/cards', // Replace with your actual URL
+            method: 'GET',
+            success: function (response) {
+                $('#accordion').html(response);
+                setupCardToggle(); // Must run AFTER content is injected
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX failed:", status, error);
+            }
+        });
+    });
 </script>
+
 
