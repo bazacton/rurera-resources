@@ -312,6 +312,7 @@ body.sidebar-mini.admin_teacher_role .main-sidebar .sidebar-brand-sm {display: i
     font-size: 9px;
     line-height: 12px;
     font-weight: 700;
+    pointer-events: none;
 }
 .add-members-list .list-card input[type=checkbox]:checked ~ label:before {
 	content: "\2713";
