@@ -354,7 +354,7 @@
                                                     <div class="form-group">
                                                         <label class="input-label">Categories</label>
 
-                                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2" name="category_id[]" required multiple>
+                                                        <select id="categories" class="custom-select @error('category_id')  is-invalid @enderror select2 icons_select2" name="category_id[]" required multiple="multiple">
                                                             <option {{ !empty($webinar) ? '' : 'selected' }} disabled>{{ trans('public.choose_category') }}</option>
                                                             @foreach($categories as $category)
                                                                 @if(!empty($category->subCategories) and count($category->subCategories))
