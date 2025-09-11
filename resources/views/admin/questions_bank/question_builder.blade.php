@@ -1026,14 +1026,6 @@ $(".summernote").summernote({
         });
     }
     document.addEventListener("DOMContentLoaded", setupCardToggle);
-	$.ajax({
-		url: '/your-endpoint',
-		method: 'GET',
-		success: function (response) {
-			$('#accordion').html(response); // Inject new cards
-			setupCardToggle(); // Re-initialize toggle logic
-		}
-	});
-
+	
 </script>
 
