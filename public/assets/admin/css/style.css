@@ -2173,7 +2173,7 @@ Admin Questions Generator Page Style End
 .similarity-tab-data .card .card-header button .d-flex {align-items: center;}
 .similarity-tab-data .card {border: 1px solid #ddd; border-radius: 6px; overflow: hidden; margin-bottom: 5px;}
 .similarity-tab-data h3 {font-size: 18px;}
-.cards-view-more-btn {
+.similarity-content-block-data .cards-view-more-btn {
     border: 0;
     background-color: inherit;
     padding: 0;
