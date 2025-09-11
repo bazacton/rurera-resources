@@ -1000,19 +1000,12 @@ $(".summernote").summernote({
 
 <script>
     function setupCardToggle() {
-        const cards = document.querySelectorAll(".similarity-content-block-data .card");
+        const cards = document.querySelectorAll("#accordion .card");
         const toggleBtn = document.getElementById("toggleViewBtn");
         const maxVisible = 5;
 
-        console.log("setupCardToggle - cards found:", cards.length);
-
-        if (!toggleBtn) {
-            console.warn("Toggle button not found!");
-            return;
-        }
-
         if (cards.length <= maxVisible) {
-            toggleBtn.style.display = "none";
+            toggleBtn.style.display = "none"; // Hide button if 5 or fewer cards
             return;
         }
 
@@ -1024,30 +1017,20 @@ $(".summernote").summernote({
             });
         }
 
+        // Initial setup
         updateCardVisibility(false);
         toggleBtn.style.display = "inline-block";
 
-        toggleBtn.onclick = function () {
+        toggleBtn.addEventListener("click", function () {
             expanded = !expanded;
             updateCardVisibility(expanded);
             toggleBtn.textContent = expanded ? "View Less" : "View More";
-        };
+        });
     }
 
-    // Load the cards via AJAX
-    document.addEventListener("DOMContentLoaded", function () {
-        $.ajax({
-            url: '/cards', // Replace with your actual URL
-            method: 'GET',
-            success: function (response) {
-                $('#accordion').html(response);
-                setupCardToggle(); // Must run AFTER content is injected
-            },
-            error: function (xhr, status, error) {
-                console.error("AJAX failed:", status, error);
-            }
-        });
-    });
+    // Run setup after DOM load
+    document.addEventListener("DOMContentLoaded", setupCardToggle);
 </script>
+
 
 
