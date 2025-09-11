@@ -608,11 +608,11 @@ $rand_id = rand(999,99999);
 															{!! $similiarity_html !!}
 														@endforeach
 													@endif
-													
-													</div>
-													<div class="text-center mt-3">
+													<div class="text-center">
 														<button id="toggleViewBtn" class="cards-view-more-btn" style="display: none;">View More</button>
 													</div>
+													</div>
+													
 												</div>
 												
 												<h3>Activity Wall</h3>
