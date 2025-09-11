@@ -1002,40 +1002,42 @@
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Get all checkboxes
+        // All checkboxes inside the list
         const checkboxes = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]');
 
-        // Get the span where the count is displayed
-        const selectionText = document.querySelector('.selection-text span, .member-selected-btn span');
+        // Top count display: "4 members selected"
+        const selectionTextSpan = document.querySelector('.selection-text span');
 
-        // Select All and Unselect All buttons
+        // Bottom button count display: "Add selected (4)"
+        const memberSelectedBtnSpan = document.querySelector('.member-selected-btn span');
+
+        // Buttons
         const selectAllBtn = document.querySelector('.select-all-btn');
         const unselectAllBtn = document.querySelector('.unselect-all-btn');
 
-        // Function to update selected count
+        // Function to update both counts
         function updateSelectedCount() {
             const selectedCount = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]:checked').length;
-            selectionText.textContent = `${selectedCount} members selected`;
+            
+            // Update both span elements
+            selectionTextSpan.textContent = `${selectedCount} members selected`;
+            memberSelectedBtnSpan.textContent = `(${selectedCount})`;
         }
 
-        // Add event listener to each checkbox
+        // Add event listeners to checkboxes
         checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('change', updateSelectedCount);
         });
 
-        // Handle "Select all" button
+        // Select All
         selectAllBtn.addEventListener('click', function () {
-            checkboxes.forEach(function (checkbox) {
-                checkbox.checked = true;
-            });
+            checkboxes.forEach(checkbox => checkbox.checked = true);
             updateSelectedCount();
         });
 
-        // Handle "Unselect all" button
+        // Unselect All
         unselectAllBtn.addEventListener('click', function () {
-            checkboxes.forEach(function (checkbox) {
-                checkbox.checked = false;
-            });
+            checkboxes.forEach(checkbox => checkbox.checked = false);
             updateSelectedCount();
         });
 
