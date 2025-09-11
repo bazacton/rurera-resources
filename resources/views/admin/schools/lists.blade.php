@@ -211,7 +211,7 @@
                           method="Post" class="school-form mb-0">
                         {{csrf_field()}}
                         <input type="hidden" name="redirect_url" class="redirect_url" value="">
-                        <div class="form-group">
+                        <div class="form-group mb-20">
                             <label>School Name</label>
                             <input type="text" name="title" required
                                    class="form-control"
