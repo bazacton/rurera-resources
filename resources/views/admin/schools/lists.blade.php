@@ -208,7 +208,7 @@
                 <h5 class="modal-title">Create New School</h5>
                 <div id="section4" class="modal-section add-edit-schoo-block active">
                     <form action="/admin/schools/store"
-                          method="Post" class="school-form">
+                          method="Post" class="school-form mb-0">
                         {{csrf_field()}}
                         <input type="hidden" name="redirect_url" class="redirect_url" value="">
                         <div class="form-group">
@@ -218,7 +218,7 @@
                                    value=""
                                    placeholder=""/>
                         </div>
-                        <div class="teacher-buttons mt-30">
+                        <div class="teacher-buttons mt-0">
                             <button type="submit" class="btn btn-primary edit-single-student-btn">Submit</button>
                         </div>
                     </form>
