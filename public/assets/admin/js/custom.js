@@ -1826,20 +1826,7 @@ $(document).on('click', '.generate-subtopic-part', function (e) {
     });
 });
 $(document).ready(function() {
-  function formatOption(option) {
-    if (!option.id) {
-      return option.text;
-    }
-    var originalOption = option.element;
-    var iconClass = $(originalOption).data('icon');
-    var iconColor = $(originalOption).data('color');
-    return $('<span><i class="' + iconClass + '" style="color:' + iconColor + ';"></i> ' + option.text + '</span>');
-  }
-
   $('.icons_select2').select2({
-    templateSelection: formatOption,
-    templateResult: formatOption,
-    allowHtml: true,
-    multiple: true
+    closeOnSelect : false,
   });
 });
