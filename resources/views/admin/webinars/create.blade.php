@@ -426,13 +426,14 @@
                                                     @php
                                                         $toolbar_tools = toolbar_tools();
                                                         $questions_types = array();
-                                                            foreach( $toolbar_tools as $element_slug => $toolObj){
-                                                                $element_type = isset( $toolObj['element_type'] )? $toolObj['element_type'] : '';
-                                                                if( $element_type == 'main'){
-                                                                    $questions_types[$element_slug] = isset( $toolObj['title'] )? $toolObj['title'] : '';
-                                                                }
+                                                        foreach( $toolbar_tools as $element_slug => $toolObj){
+                                                            $element_type = isset( $toolObj['element_type'] )? $toolObj['element_type'] : '';
+                                                            if( $element_type == 'main'){
+                                                                $questions_types[$element_slug] = isset( $toolObj['title'] )? $toolObj['title'] : '';
                                                             }
-                                                            $selected_questions_types = isset($webinar->questions_types)? json_decode($webinar->questions_types) : array();
+                                                        }
+                                                        $selected_questions_types = isset($webinar->questions_types)? json_decode($webinar->questions_types) : array();
+                                                        $selected_questions_types = is_array($selected_questions_types)? $selected_questions_types : array();
                                                     @endphp
                                                     <div class="form-group webinar_type_fields test_total_time_field">
                                                         <label class="input-label d-block">Questions Type</label>
