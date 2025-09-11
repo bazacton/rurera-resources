@@ -92,7 +92,7 @@ $chapter  = isset( $chapter )? $chapter : '';
             <div class="modal-body">
                 <div id="collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
                     aria-labelledby="quiz_{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
-                    class=" collapse @if(empty($subChapterInfo)) show @endif" role="tabpanel">
+                    class=" @if(empty($subChapterInfo)) @endif" role="tabpanel">
                     <div class="panel-collapse text-gray">
                         @include('admin.quizzes.create_sub_chapter_form',
                         [
