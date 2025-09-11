@@ -1826,7 +1826,7 @@ $(document).on('click', '.generate-subtopic-part', function (e) {
     });
 });
 $(document).ready(function() {
-  $('.icons_select2').select2({
+  $('.closeOnSelect-false').select2({
     closeOnSelect : false,
   });
 });
