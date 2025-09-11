@@ -1006,7 +1006,7 @@
         const checkboxes = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]');
 
         // Get the span where the count is displayed
-        const selectionText = document.querySelector('.selection-text span');
+        const selectionText = document.querySelector('.selection-text span, .member-selected-btn span');
 
         // Select All and Unselect All buttons
         const selectAllBtn = document.querySelector('.select-all-btn');
