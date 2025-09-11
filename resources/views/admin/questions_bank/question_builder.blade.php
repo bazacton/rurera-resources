@@ -610,6 +610,9 @@ $rand_id = rand(999,99999);
 													@endif
 													
 													</div>
+													<div class="text-center mt-3">
+														<button id="toggleViewBtn" class="cards-view-more-btn">View More</button>
+													</div>
 												</div>
 												
 												<h3>Activity Wall</h3>
@@ -993,4 +996,30 @@ $(".summernote").summernote({
 				}
 			}
 		});
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".similarity-content-block-data .card");
+        const toggleBtn = document.getElementById("toggleViewBtn");
+        const maxVisible = 5;
+
+        function updateCardVisibility(showAll = false) {
+            cards.forEach((card, index) => {
+                if (showAll || index < maxVisible) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+        updateCardVisibility(false);
+
+        let expanded = false;
+
+        toggleBtn.addEventListener("click", function () {
+            expanded = !expanded;
+            updateCardVisibility(expanded);
+            toggleBtn.textContent = expanded ? "View Less" : "View More";
+        });
+    });
 </script>
