@@ -2298,6 +2298,23 @@ Admin Questions Generator Page Style End
     padding-left: 2px;
 }
 
+
+.accordion-row .sub-topic-modal .panel-collapse {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.accordion-row .sub-topic-modal .modal-body {
+    padding: 0 20px 10px;
+}
+.accordion-row .sub-topic-modal .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.sub-topic-modal .mt-0:has(.js-submit-quiz-form) {
+    margin-top: 0 !important;
+}
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
