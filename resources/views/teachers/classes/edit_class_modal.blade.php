@@ -1,7 +1,7 @@
 <form action="{{ getAdminPanelUrl() }}/classes/{{$class->id}}/store"
       method="POST" class="mb-0">
     @csrf
-    <div class="admin-rurera-tabs-holder">
+    <div class="admin-rurera-tabs-holder mb-20">
         <ul data-target_class="admin-rurera-tabs-details-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mb-0" id="assignment_tabs" role="tablist">
             <li class="nav-item skelton-height-lg">
                 <a class="nav-link active" id="details-tab-edit" href="javascript:;">
