@@ -276,6 +276,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="analytics-progress-list">
             <div class="row">
                 <div class="col-12">
