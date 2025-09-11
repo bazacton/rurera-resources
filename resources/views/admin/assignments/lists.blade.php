@@ -1000,4 +1000,48 @@
       });
       
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all checkboxes
+        const checkboxes = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]');
+
+        // Get the span where the count is displayed
+        const selectionText = document.querySelector('.selection-text span');
+
+        // Select All and Unselect All buttons
+        const selectAllBtn = document.querySelector('.select-all-btn');
+        const unselectAllBtn = document.querySelector('.unselect-all-btn');
+
+        // Function to update selected count
+        function updateSelectedCount() {
+            const selectedCount = document.querySelectorAll('.add-members-list-holder input[type="checkbox"]:checked').length;
+            selectionText.textContent = `${selectedCount} members selected`;
+        }
+
+        // Add event listener to each checkbox
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', updateSelectedCount);
+        });
+
+        // Handle "Select all" button
+        selectAllBtn.addEventListener('click', function () {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = true;
+            });
+            updateSelectedCount();
+        });
+
+        // Handle "Unselect all" button
+        unselectAllBtn.addEventListener('click', function () {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+            updateSelectedCount();
+        });
+
+        // Initialize count on page load
+        updateSelectedCount();
+    });
+</script>
+
 @endpush
