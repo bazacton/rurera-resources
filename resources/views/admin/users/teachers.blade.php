@@ -447,7 +447,7 @@
                 </div>
                 <div class="classroom-card" data-label="help">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/warning.svg" alt="">
+                        <img src="/assets/default/svgs/warning.svg" alt="warning">
                         <em>2</em>
                     </span>
                     <p>Students May <br /> need help</p>
