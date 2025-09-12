@@ -428,6 +428,158 @@
                 </div>
             </div>
         </div>
+
+        <div class="students-classroom-activity">
+            <div class="students-classroom">
+                <div class="classroom-card" data-label="total">
+                    <span class="icon-box">
+                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <em>15</em>
+                    </span>
+                    <p>Total Students</p>
+                </div>
+                <div class="classroom-card" data-label="idle">
+                    <span class="icon-box">
+                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <em>2</em>
+                    </span>
+                    <p>Students Idle</p>
+                </div>
+                <div class="classroom-card" data-label="help">
+                    <span class="icon-box">
+                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <em>2</em>
+                    </span>
+                    <p>Students May need help</p>
+                </div>
+                <div class="classroom-card" data-label="skill">
+                    <span class="icon-box">
+                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <em>2</em>
+                    </span>
+                    <p>Skills in Practice</p>
+                </div>
+                <div class="classroom-card" data-label="questions">
+                    <span class="icon-box">
+                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <em>2</em>
+                    </span>
+                    <p>Questions Practiced (Past Hour)</p>
+                </div>
+            </div>
+            <div class="students-activity">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="activity-filter-area">
+                            <div class="activity-heading">
+                                <h3>Student activity wall</h3>
+                            </div>
+                            <div class="activity-filters">
+                                <div class="sort-by">
+                                    <div class="select-holder">
+                                        <select>
+                                            <option value="Sort by">Sort by</option>
+                                            <option value="Sort by">Sort by</option>
+                                            <option value="Sort by">Sort by</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="js-switch-parent">
+                                    <label class="js-switch cursor-pointer" for="skill">Group by skill:</label>
+                                    <div class="custom-control custom-switch">
+                                        <input id="skill" type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label" for="skill"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card alert">
+                            <div class="card-heading-area">
+                                <h5>Bryce Carlson</h5>
+                                <span>5th (BB.3) Choose the antonym</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>11 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>38</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-card medium">
+                            <div class="card-heading-area">
+                                <h5>Jessica Moore</h5>
+                                <span>5th (BB.3) Choose the antonym</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>15 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>67</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card paused">
+                            <div class="card-heading-area">
+                                <h5>Jessica Moore</h5>
+                                <span>5th (BB.3) Choose the antonym</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>15 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>67</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card low">
+                            <div class="card-heading-area">
+                                <h5>Katie Cho</h5>
+                                <span>5th (J.1) Divide by powers of ten</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>6 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>67</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card low">
+                            <div class="card-heading-area">
+                                <h5>Craig Garza</h5>
+                                <span>5th (J.1) Divide by powers of ten</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>12 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>60</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Modal -->
