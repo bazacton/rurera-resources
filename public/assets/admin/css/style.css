@@ -1843,6 +1843,7 @@ table#outputTable thead th {padding-bottom: 15px;}
 .card-body .modal-footer .text-right:has(button) {margin-bottom: 0;}
 .question_part_modal .modal-content,
 .question_part_modal .modal-fullscreen {height: 100%; border-radius: 0;}
+.question_part_modal .modal-content {height: auto;}
 /*Topics Parts Create Output Table End*/
 /*Topics Parts Form Table Style Start*/
 .topic-parts-form .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
