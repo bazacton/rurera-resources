@@ -496,6 +496,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="activity-card alert">
+                            <span class="icon-box"><img src="/assets/default/svgs/warning.svg" alt="warning"></span>
                             <div class="card-heading-area">
                                 <h5>Bryce Carlson</h5>
                                 <span>5th (BB.3) Choose the antonym</span>
