@@ -510,21 +510,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="activity-card medium">
-                            <div class="card-heading-area">
-                                <h5>Jessica Moore</h5>
-                                <span>5th (BB.3) Choose the antonym</span>
-                            </div>
-                            <div class="card-footer-area">
-                                <div class="student-q-progress">
-                                    <span>15 questions answered</span>
-                                    <div class=""></div>
-                                </div>
-                                <div class="num-of-q">
-                                    <span>67</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="activity-card paused">
