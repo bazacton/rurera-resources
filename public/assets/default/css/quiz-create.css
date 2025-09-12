@@ -1411,6 +1411,21 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         min-width: 290px;
         z-index: 9995;
     }
+    .lms-quiz-create #question_design [class*="col-"]:has(.lms-element-properties) {
+        height: 100%;
+    }
+    .lms-quiz-create #question_design .rureraform-admin-popup {
+        height: 100%;
+    }
+    .lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner {
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .lms-quiz-create #question_design .rureraform-admin-popup-content {
+        padding: 10px 10px 0;
+    }
+
 }
 @media screen and (min-width: 1024px) and (max-width: 1800px) {
     .builder-right-sidebar-expand {display: inline-flex;}
