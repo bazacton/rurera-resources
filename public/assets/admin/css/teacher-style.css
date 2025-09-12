@@ -7672,9 +7672,9 @@ button.print-download-btn {
     background-color: #fff;
     border-top: 4px solid;
     border-right: 1px solid #ddd;
-    padding: 25px;
+    padding: 25px 15px;
     text-align: center;
-    min-width: 170px;
+    width: 100%;
 }
 .classroom-card:last-child {border-right: 0;}
 .classroom-card .icon-box {
