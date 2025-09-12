@@ -7824,6 +7824,16 @@ button.print-download-btn {
     border-color: #c5c5c5;
     background-color: #fbfbfb;
 }
+.activity-card .metric {
+    flex-direction: row;
+}
+.activity-card .metric .progress-block {
+    width: 25px;
+    height: 3px;
+}
+.activity-card .metric .progress-block.partial {
+    background: linear-gradient(to right, #ffacac 50%, #e5e7eb 50%);
+}
 /* Students-Classroom-Activity Style End */
 
 .admin_teacher_role .main-content {
