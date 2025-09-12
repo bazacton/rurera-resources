@@ -523,6 +523,9 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="activity-card paused">
+                            <span class="icon-box">
+                                <img src="/assets/default/svgs/pause-outline.svg" alt="pause-outline">
+                            </span>
                             <div class="card-heading-area">
                                 <h5>Jessica Moore</h5>
                                 <span>5th (BB.3) Choose the antonym</span>
