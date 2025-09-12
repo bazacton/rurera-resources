@@ -1833,6 +1833,16 @@ table#outputTable {width: 100%;}
 table#outputTable thead th {padding-bottom: 15px;}
 #outputTable td {padding: 0 15px 15px; vertical-align: top;}
 #outputTable td:first-child {padding-left: 0;}
+.question_status_action_modal #question_status_action_form button {
+    border: 0;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.question_status_action_modal #question_status_action_form table#outputTable {
+    margin-top: 15px;
+}
 .remove-btn {background-color: #ffe1e1; border: 1px solid #e60909; box-shadow: none; color: #e60909; padding: 6px 18px; font-size: 14px; border-radius: 3px;}
 .card-body .text-right:has(button),
 .card-body .text-left:has(button) {text-align: left !important; display: inline-block; vertical-align: middle; margin-bottom: 20px;}
