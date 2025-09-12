@@ -1834,9 +1834,9 @@ table#outputTable thead th {padding-bottom: 15px;}
 #outputTable td {padding: 0 15px 15px; vertical-align: top;}
 #outputTable td:first-child {padding-left: 0;}
 .question_status_action_modal #question_status_action_form button {
-    border: 0;
-    background-color: var(--blue);
-    color: #fff;
+    border: 1px solid var(--blue);
+    background-color: inherit;
+    color: var(--blue);
     padding: 5px 10px;
     border-radius: 3px;
 }
