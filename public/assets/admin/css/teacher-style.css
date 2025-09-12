@@ -7656,6 +7656,52 @@ button.print-download-btn {
 }
 /* Analytics Progress List Style End */
 
+/* Students-Classroom-Activity Style Start */
+.students-classroom-activity {
+    background-color: #d2f4ee;
+    padding: 25px;
+}
+.students-classroom {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+.classroom-card {
+    background-color: #fff;
+    border-top: 4px solid;
+    border-right: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+    min-width: 170px;
+}
+.classroom-card:last-child {border-right: 0;}
+.classroom-card .icon-box {
+    display: inline-flex;
+    line-height: normal;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 15px;
+}
+.classroom-card .icon-box img {
+    height: 30px;
+    width: 30px;
+}
+.classroom-card .icon-box em {
+    font-size: 30px;
+    font-style: normal;
+    color: currentColor;
+}
+.classroom-card p {
+    margin: 0;
+    line-height: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333;
+}
+/* Students-Classroom-Activity Style End */
+
 .admin_teacher_role .main-content {
     padding-right: 20px;
     background-color: inherit;
