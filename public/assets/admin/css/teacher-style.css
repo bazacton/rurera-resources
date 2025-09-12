@@ -7845,6 +7845,18 @@ button.print-download-btn {
 .activity-card .metric .progress-block.partial.partial-filled {
     background: linear-gradient(to right, #ffacac 100%, #e5e7eb 50%);
 }
+.activity-card .icon-box {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.activity-card .icon-box img {
+    height: 25px;
+    width: 25px;
+}
+.activity-card.alert .icon-box img {
+    filter: invert(44%) sepia(77%) saturate(2223%) hue-rotate(349deg) brightness(93%) contrast(89%);
+}
 /* Students-Classroom-Activity Style End */
 
 .admin_teacher_role .main-content {
