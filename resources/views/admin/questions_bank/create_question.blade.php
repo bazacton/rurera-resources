@@ -1266,7 +1266,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                 <div class="text-right">
                     <a href="javascript:;" class="btn btn-primary question_glossary_submit_btn">Submit</a>
                 </div>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
