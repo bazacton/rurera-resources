@@ -462,7 +462,7 @@
                 <div class="classroom-card" data-label="questions">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/pencil-f.svg" alt="pencil-f">
-                        <em>2</em>
+                        <em>237</em>
                     </span>
                     <p>Questions Practiced <br /> (Past Hour)</p>
                 </div>
