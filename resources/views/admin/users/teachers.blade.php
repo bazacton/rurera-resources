@@ -433,7 +433,7 @@
             <div class="students-classroom">
                 <div class="classroom-card" data-label="total">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/user.svg" alt="user">
+                        <img src="/assets/default/svgs/user-outline.svg" alt="user-outline">
                         <em>15</em>
                     </span>
                     <p>Total <br /> Students</p>
