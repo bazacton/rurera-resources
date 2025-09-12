@@ -433,14 +433,14 @@
             <div class="students-classroom">
                 <div class="classroom-card" data-label="total">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <img src="/assets/default/svgs/user.svg" alt="user">
                         <em>15</em>
                     </span>
                     <p>Total <br /> Students</p>
                 </div>
                 <div class="classroom-card" data-label="idle">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <img src="/assets/default/svgs/pause-button.svg" alt="pause-button">
                         <em>2</em>
                     </span>
                     <p>Students <br /> Idle</p>
@@ -454,14 +454,14 @@
                 </div>
                 <div class="classroom-card" data-label="skill">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <img src="/assets/default/svgs/skill-level.svg" alt="skill-level">
                         <em>2</em>
                     </span>
                     <p>Skills <br /> in Practice</p>
                 </div>
                 <div class="classroom-card" data-label="questions">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <img src="/assets/default/svgs/pencil-f.svg" alt="pencil-f">
                         <em>2</em>
                     </span>
                     <p>Questions Practiced <br /> (Past Hour)</p>
