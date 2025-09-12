@@ -440,14 +440,14 @@
                 </div>
                 <div class="classroom-card" data-label="idle">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/pause-button.svg" alt="pause-button">
+                        <img src="/assets/default/svgs/pause-outline.svg" alt="pause-outline">
                         <em>2</em>
                     </span>
                     <p>Students <br /> Idle</p>
                 </div>
                 <div class="classroom-card" data-label="help">
                     <span class="icon-box">
-                        <img src="/assets/default/svgs/user.svg" alt="">
+                        <img src="/assets/default/svgs/warning.svg" alt="">
                         <em>2</em>
                     </span>
                     <p>Students May <br /> need help</p>
