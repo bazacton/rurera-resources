@@ -1413,7 +1413,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         position: absolute;
         right: 0;
         min-width: 290px;
-        z-index: 9995;
     }
     .lms-quiz-create #question_design [class*="col-"]:has(.lms-element-properties) {
         height: 100%;
