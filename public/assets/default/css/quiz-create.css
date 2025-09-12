@@ -1320,6 +1320,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     border-bottom: 1px solid;
     outline: none;
     background-color: inherit;
+    text-align: center;
 }
 #question_preview .question-layout .input_line:has(input) {
     padding: 0;
