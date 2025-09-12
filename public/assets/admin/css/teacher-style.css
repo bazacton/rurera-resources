@@ -7747,27 +7747,23 @@ button.print-download-btn {
     border-bottom: 2px solid rgba(0,0,0,0.1);
     padding: 0 0 15px;
 }
-
 .activity-heading h3 {
     margin: 0;
     font-weight: 500;
     color: #333;
 }
-
 .activity-filters {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px 30px;
 }
-
 .activity-filters select {
     background-color: inherit;
     height: auto;
     border: 0;
     appearance: none;
 }
-
 .sort-by .select-holder:after {
     content: "";
     height: 8px;
@@ -7779,18 +7775,15 @@ button.print-download-btn {
     border-left: 0;
     margin-left: 5px;
 }
-
 .activity-filters .js-switch-parent {
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
-
 .activity-filters .js-switch-parent label {
     margin: 0;
     color: #333;
 }
-
 .activity-card {
     background-color: #fff;
     color: currentColor;
@@ -7828,7 +7821,8 @@ button.print-download-btn {
     line-height: normal;
 }
 .activity-card.paused {
-    border-color: #8d8e8f;
+    border-color: #c5c5c5;
+    background-color: #fbfbfb;
 }
 /* Students-Classroom-Activity Style End */
 
