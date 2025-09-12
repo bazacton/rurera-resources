@@ -503,7 +503,16 @@
                             <div class="card-footer-area">
                                 <div class="student-q-progress">
                                     <span>11 questions answered</span>
-                                    <div class=""></div>
+                                    <div class="metric">
+                                        <div class="progress-bar">
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block partial"></div>
+                                            <div class="progress-block"></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="num-of-q">
                                     <span>38</span>
