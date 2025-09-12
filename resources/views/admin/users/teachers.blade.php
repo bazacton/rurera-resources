@@ -436,35 +436,35 @@
                         <img src="/assets/default/svgs/user.svg" alt="">
                         <em>15</em>
                     </span>
-                    <p>Total Students</p>
+                    <p>Total <br /> Students</p>
                 </div>
                 <div class="classroom-card" data-label="idle">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/user.svg" alt="">
                         <em>2</em>
                     </span>
-                    <p>Students Idle</p>
+                    <p>Students <br /> Idle</p>
                 </div>
                 <div class="classroom-card" data-label="help">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/user.svg" alt="">
                         <em>2</em>
                     </span>
-                    <p>Students May need help</p>
+                    <p>Students May <br /> need help</p>
                 </div>
                 <div class="classroom-card" data-label="skill">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/user.svg" alt="">
                         <em>2</em>
                     </span>
-                    <p>Skills in Practice</p>
+                    <p>Skills <br /> in Practice</p>
                 </div>
                 <div class="classroom-card" data-label="questions">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/user.svg" alt="">
                         <em>2</em>
                     </span>
-                    <p>Questions Practiced (Past Hour)</p>
+                    <p>Questions Practiced <br /> (Past Hour)</p>
                 </div>
             </div>
             <div class="students-activity">
