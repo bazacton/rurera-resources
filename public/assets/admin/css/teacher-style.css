@@ -7809,6 +7809,7 @@ button.print-download-btn {
 .card-footer-area {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .student-q-progress span {
