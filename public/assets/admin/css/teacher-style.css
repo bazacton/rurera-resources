@@ -7831,6 +7831,9 @@ button.print-download-btn {
 .activity-card .progress-block {
     background: #dbd6d6;
 }
+.activity-card .progress-block.filled {
+    background: #83e5c5;
+}
 .activity-card .metric .progress-block {
     width: 25px;
     height: 3px;
