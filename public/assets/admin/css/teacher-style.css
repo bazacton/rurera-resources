@@ -7737,6 +7737,16 @@ button.print-download-btn {
 .classroom-card[data-label="questions"] .icon-box img {
     filter: invert(88%) sepia(25%) saturate(732%) hue-rotate(39deg) brightness(90%) contrast(94%);
 }
+
+.activity-filter-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 15px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding: 0 0 15px;
+}
 /* Students-Classroom-Activity Style End */
 
 .admin_teacher_role .main-content {
