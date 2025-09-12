@@ -7700,6 +7700,26 @@ button.print-download-btn {
     text-transform: uppercase;
     color: #333;
 }
+.classroom-card[data-label="total"] {
+    border-top-color: var(--blue);
+    color: var(--blue);
+}
+.classroom-card[data-label="idle"] {
+    border-top-color: #8d8e8f;
+    color: #8d8e8f;
+}
+.classroom-card[data-label="help"] {
+    border-top-color: #e05e24;
+    color: #e05e24;
+}
+.classroom-card[data-label="skill"] {
+    border-top-color: #f1b61b;
+    color: #f1b61b;
+}
+.classroom-card[data-label="questions"] {
+    border-top-color: #a2de76;
+    color: #a2de76;
+}
 /* Students-Classroom-Activity Style End */
 
 .admin_teacher_role .main-content {
