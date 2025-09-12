@@ -7826,6 +7826,7 @@ button.print-download-btn {
 }
 .activity-card .metric {
     flex-direction: row;
+    padding-top: 8px;
 }
 .activity-card .progress-block {
     background: #dbd6d6;
