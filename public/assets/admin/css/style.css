@@ -2326,9 +2326,6 @@ Admin Questions Generator Page Style End
 .sub-topic-modal .js-switch-parent .js-switch {
     margin: 0;
 }
-.sub-topic-modal .form-group.rurera-hide {
-    display: block;
-}
 .rurera-webinar-tabs .nav {
     gap: 0 30px;
     border-bottom: 2px solid #f6f6f6;
