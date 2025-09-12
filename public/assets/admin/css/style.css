@@ -1839,6 +1839,7 @@ table#outputTable thead th {padding-bottom: 15px;}
     color: var(--blue);
     padding: 5px 10px;
     border-radius: 3px;
+    outline: none;
 }
 .question_status_action_modal #question_status_action_form table#outputTable {
     margin-top: 15px;
