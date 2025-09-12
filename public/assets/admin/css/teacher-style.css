@@ -7743,7 +7743,7 @@ button.print-download-btn {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 15px;
+    margin: 0 0 30px;
     border-bottom: 2px solid rgba(0,0,0,0.1);
     padding: 0 0 15px;
 }
@@ -7767,6 +7767,7 @@ button.print-download-btn {
     border: 0;
     appearance: none;
 }
+
 .sort-by .select-holder:after {
     content: "";
     height: 8px;
@@ -7778,14 +7779,56 @@ button.print-download-btn {
     border-left: 0;
     margin-left: 5px;
 }
+
 .activity-filters .js-switch-parent {
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
+
 .activity-filters .js-switch-parent label {
     margin: 0;
     color: #333;
+}
+
+.activity-card {
+    background-color: #fff;
+    color: currentColor;
+    padding: 15px;
+    margin: 0;
+    min-height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border: 2px solid transparent;
+}
+.activity-card h5 {
+    color: #333;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.activity-card.alert {
+    border-color: #ffaaaa;
+    background-color: #fdf7f4;
+}
+.card-footer-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.student-q-progress span {
+    color: #333;
+}
+.num-of-q span {
+    font-size: 38px;
+    color: var(--blue);
+    display: inline-block;
+    line-height: normal;
+}
+.activity-card.paused {
+    border-color: #8d8e8f;
 }
 /* Students-Classroom-Activity Style End */
 
