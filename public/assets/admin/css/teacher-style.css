@@ -7723,7 +7723,8 @@ button.print-download-btn {
     filter: invert(30%) sepia(90%) saturate(2696%) hue-rotate(200deg) brightness(102%) contrast(108%);
 }
 
-.classroom-card[data-label="idle"] .icon-box img {
+.classroom-card[data-label="idle"] .icon-box img,
+.activity-card.paused .icon-box img {
     filter: invert(61%) sepia(8%) saturate(31%) hue-rotate(169deg) brightness(92%) contrast(84%);
 }
 
@@ -7796,6 +7797,7 @@ button.print-download-btn {
     justify-content: space-between;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
     border: 2px solid transparent;
+    position: relative;
 }
 .activity-card h5 {
     color: #333;
