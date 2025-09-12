@@ -1273,7 +1273,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 </div>
 
 <div id="add-part-modal-box" class="question_part_modal modal fade question_status_action_modal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
                 <form name="question_status_action_form" id="question_status_action_form">
