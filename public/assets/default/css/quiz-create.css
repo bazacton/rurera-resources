@@ -1057,7 +1057,12 @@ overflow-y: auto;
 scrollbar-gutter: stable both-edges;
 }
 .quiz-topbar, .read-quiz-info ~ .read-quiz-content .quiz-topbar {background-color: #4c5387; padding: 15px 0 15px; position: relative; z-index: 1; width: 100%; }
-.quiz-topbar .row {align-items: center;}
+.quiz-topbar .row {align-items: center; justify-content: space-between;}
+.quiz-topbar .row [class*="col"] {
+    max-width: none;
+    flex: 0 0 auto;
+    width: auto;
+}
 .quiz-top-info p,
 .read-quiz-info ~ .read-quiz-content .quiz-top-info p {font-size: 18px; color: #fff; margin: 0;}
 .topbar-right {display: flex; align-items: center; justify-content: flex-end;}
