@@ -584,6 +584,69 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card low">
+                            <div class="card-heading-area">
+                                <h5>Kim Perkins <i class="fa fa-paper-plane"></i></h5>
+                                <span>5th (J.1) Divide by powers of ten</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>20 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>91</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card paused">
+                            <span class="icon-box">
+                                <img src="/assets/default/svgs/pause-outline.svg" alt="pause-outline">
+                            </span>
+                            <div class="card-heading-area">
+                                <h5>Warren Salinas <i class="fa fa-paper-plane"></i></h5>
+                                <span>5th (J.1) Divide by powers of ten</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>15 questions answered</span>
+                                    <div class="metric">
+                                        <div class="progress-bar">
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block"></div>
+                                            <div class="progress-block filled"></div>
+                                            <div class="progress-block partial partial-filled"></div>
+                                            <div class="progress-block partial partial-filled"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>73</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="activity-card low">
+                            <div class="card-heading-area">
+                                <h5>Sierra Herrera <i class="fa fa-paper-plane"></i></h5>
+                                <span>5th (BB.3) Choose the antonym</span>
+                            </div>
+                            <div class="card-footer-area">
+                                <div class="student-q-progress">
+                                    <span>17 questions answered</span>
+                                    <div class=""></div>
+                                </div>
+                                <div class="num-of-q">
+                                    <span>85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
