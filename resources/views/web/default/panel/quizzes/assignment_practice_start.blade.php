@@ -72,7 +72,7 @@ $section_class = ($quiz->quiz_type == 'vocabulary')? 'lms-quiz-section1' : $sect
              data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
 
-            <section class="quiz-topbar {{$top_bar_class}}">
+            <section class="quiz-topbar {{$top_bar_class}} test1">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">

@@ -75,7 +75,7 @@ $rand_id = rand(99,9999);
              data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
 
-            <section class="quiz-topbar {{$top_bar_class}}">
+            <section class="quiz-topbar {{$top_bar_class}} test5">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
