@@ -66,7 +66,7 @@
     <section class="lms-quiz-section">
         <div class="read-quiz-info quiz-show"></div>
         <div class="container-fluid read-quiz-content">
-            <section class="quiz-topbar test@">
+            <section class="quiz-topbar">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
