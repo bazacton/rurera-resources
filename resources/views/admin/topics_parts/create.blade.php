@@ -282,58 +282,52 @@
 										</div>
 									</div>
 								</div>
-
-
-
-
                             </form>
 
 							<div id="edit-part-modal-box" class="modal fade" role="dialog" data-backdrop="static">
-									<div class="modal-dialog">
-										<div class="modal-content">
-										<form class="topic-subparts-form" action="/admin/topics_parts/update_topic_sub_part"
-                                  method="Post">
-								  {{ csrf_field() }}
-											<div class="modal-body">
-
-
-												<input type="hidden" class="topic_part_item_id" name="topic_part_item_id" value="0">
-												<input type="hidden" class="topic_part_id" name="topic_part_id" value="{{$TopicParts->id}}">
-												<div class="form-group">
-													<label>Title</label>
-													<input type="text" name="title" data-id="0" class="form-control part-part_title">
-												</div>
-												<div class="form-group">
-													<label>Difficulty Level</label>
-													<select data-id="0" class="select2 part-difficulty_level"
-															id="difficulty_level" name="difficulty_level">
-														<option value="Easy">Easy</option>
-														<option value="Moderate">Moderate</option>
-														<option value="Hard">Hard</option>
-													</select>
-													@error('subject_id')
-													<div class="invalid-feedback">
-														{{ $message }}
-													</div>
-													@enderror
-												</div>
-
-												<div class="form-group">
-													<label>Paragraph</label>
-													<textarea data-id="0" name="description" class="form-control part-paragraph" rows="10" placeholder="Enter the paragraph here..."></textarea>
-												</div>
-
+								<div class="modal-dialog">
+									<div class="modal-content">
+									<form class="topic-subparts-form" action="/admin/topics_parts/update_topic_sub_part"
+								method="Post">
+								{{ csrf_field() }}
+										<div class="modal-body">
+											<input type="hidden" class="topic_part_item_id" name="topic_part_item_id" value="0">
+											<input type="hidden" class="topic_part_id" name="topic_part_id" value="{{$TopicParts->id}}">
+											<div class="form-group">
+												<label>Title</label>
+												<input type="text" name="title" data-id="0" class="form-control part-part_title">
 											</div>
-											<div class="modal-footer">
-												<div class="text-right">
-													<button type="button" class="part-edit-submit btn btn-primary">{{ trans('admin/main.submit') }}</button>
+											<div class="form-group">
+												<label>Difficulty Level</label>
+												<select data-id="0" class="select2 part-difficulty_level"
+														id="difficulty_level" name="difficulty_level">
+													<option value="Easy">Easy</option>
+													<option value="Moderate">Moderate</option>
+													<option value="Hard">Hard</option>
+												</select>
+												@error('subject_id')
+												<div class="invalid-feedback">
+													{{ $message }}
 												</div>
-												<button type="button" class="btn btn-default close-modal-box" data-dismiss="modal">Close</button>
+												@enderror
 											</div>
-											</form>
+
+											<div class="form-group">
+												<label>Paragraph</label>
+												<textarea data-id="0" name="description" class="form-control part-paragraph" rows="10" placeholder="Enter the paragraph here..."></textarea>
+											</div>
+
 										</div>
+										<div class="modal-footer">
+											<div class="text-right">
+												<button type="button" class="part-edit-submit btn btn-primary">{{ trans('admin/main.submit') }}</button>
+											</div>
+											<button type="button" class="btn btn-default close-modal-box" data-dismiss="modal">Close</button>
+										</div>
+										</form>
 									</div>
 								</div>
+							</div>
                         </div>
                     </div>
                 </div>
