@@ -73,7 +73,7 @@ $timer_counter = $practice_time;
              data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide1' : ''; @endphp
 
-            <section class="quiz-topbar {{$top_bar_class}} test4">
+            <section class="quiz-topbar {{$top_bar_class}}">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
