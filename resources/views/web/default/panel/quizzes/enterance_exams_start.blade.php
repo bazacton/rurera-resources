@@ -70,7 +70,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-            <section class="quiz-topbar {{$top_bar_class}}" style="display:block !important">
+            <section class="quiz-topbar {{$top_bar_class}} test3" style="display:block !important">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
