@@ -7804,6 +7804,12 @@ button.print-download-btn {
     font-weight: 600;
     margin: 0 0 10px;
 }
+.activity-card h5 i {
+    font-size: 14px;
+    color: var(--blue);
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+}
 .activity-card.alert {
     border-color: #ffaaaa;
     background-color: #fdf7f4;
