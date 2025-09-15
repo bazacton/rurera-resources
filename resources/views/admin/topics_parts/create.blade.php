@@ -33,11 +33,6 @@
 
 								<div class="col-6 col-md-6 col-lg-6">
 
-
-
-
-
-
 								<div id="imagesBlock" class="form-group mt-15">
 									<label class="input-label mb-0">{{ trans('update.images') }}</label>
 
@@ -78,18 +73,6 @@
 									</div>
 									@enderror
 								</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 								@if($TopicParts->category_id == 0 )
@@ -165,17 +148,14 @@
 
 								@else
 									<input type="hidden" name="category_id" value="{{$TopicParts->category_id}}">
-								<input type="hidden" name="subject_id" value="{{$TopicParts->subject_id}}">
-								<input type="hidden" name="chapter_id" value="{{$TopicParts->chapter_id}}">
-								<input type="hidden" name="sub_chapter_id" value="{{$TopicParts->sub_chapter_id}}">
+									<input type="hidden" name="subject_id" value="{{$TopicParts->subject_id}}">
+									<input type="hidden" name="chapter_id" value="{{$TopicParts->chapter_id}}">
+									<input type="hidden" name="sub_chapter_id" value="{{$TopicParts->sub_chapter_id}}">
 								@endif
 
 								</div>
 
-								<div class="col-6 col-md-6 col-lg-6">
-
-
-								</div>
+								<div class="col-6 col-md-6 col-lg-6"></div>
 								</div>
 
 								<div class="text-left">
@@ -183,7 +163,7 @@
 								</div>
 								@if($TopicParts->category_id > 0 )
                                 <div class="text-right mt-4">
-										<a href="javascript:;" class="btn btn-primary add-part-modal">Add New Part</a>
+									<a href="javascript:;" class="btn btn-primary add-part-modal">Add New Part</a>
                                 </div>
 								@endif
 
@@ -231,10 +211,6 @@
 									</table>
 								</div>
 								@endif
-
-
-
-
 
 
 								<div id="add-part-modal-box" class="modal fade question_edit_part_modal" role="dialog" data-backdrop="static">
