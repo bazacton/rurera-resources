@@ -667,14 +667,14 @@
                         <a href="/admin/analytics" class="nav-link dropdown-toggle" id="analytics-menu" data-toggle="dropdown" aria-haspopup="true">
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
-                                <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="analytics-menu">
+                            <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="analytics-menu">
 
-                                    @if(!empty($school_classes))
-                                        @foreach($school_classes as $classObj)
-                                            <span><a href="/admin/analytics/{{$classObj->id}}">{{$classObj->title}}</a></span>
-                                        @endforeach
-                                    @endif
-                                </div>
+                                @if(!empty($school_classes))
+                                    @foreach($school_classes as $classObj)
+                                        <span><a href="/admin/analytics/{{$classObj->id}}">{{$classObj->title}}</a></span>
+                                    @endforeach
+                                @endif
+                            </div>
                         </a>
                     </li>
                     @endif
