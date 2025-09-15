@@ -495,7 +495,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
-                        <div class="activity-card alert">
+                        <div class="activity-card alert mb-30">
                             <span class="icon-box"><img src="/assets/default/svgs/warning.svg" alt="warning"></span>
                             <div class="card-heading-area">
                                 <h5>Bryce Carlson <i class="fa fa-paper-plane"></i></h5>
@@ -522,7 +522,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
-                        <div class="activity-card paused">
+                        <div class="activity-card paused mb-30">
                             <span class="icon-box">
                                 <img src="/assets/default/svgs/pause-outline.svg" alt="pause-outline">
                             </span>
@@ -551,7 +551,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
-                        <div class="activity-card low">
+                        <div class="activity-card low mb-30">
                             <div class="card-heading-area">
                                 <h5>Katie Cho <i class="fa fa-paper-plane"></i></h5>
                                 <span>5th (J.1) Divide by powers of ten</span>
@@ -568,7 +568,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
-                        <div class="activity-card low">
+                        <div class="activity-card low mb-30">
                             <div class="card-heading-area">
                                 <h5>Craig Garza <i class="fa fa-paper-plane"></i></h5>
                                 <span>5th (J.1) Divide by powers of ten</span>
