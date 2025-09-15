@@ -498,7 +498,7 @@
                         <div class="activity-card alert">
                             <span class="icon-box"><img src="/assets/default/svgs/warning.svg" alt="warning"></span>
                             <div class="card-heading-area">
-                                <h5>Bryce Carlson</h5>
+                                <h5>Bryce Carlson <i class="fa fa-paper-plane"></i></h5>
                                 <span>5th (BB.3) Choose the antonym</span>
                             </div>
                             <div class="card-footer-area">
@@ -527,7 +527,7 @@
                                 <img src="/assets/default/svgs/pause-outline.svg" alt="pause-outline">
                             </span>
                             <div class="card-heading-area">
-                                <h5>Jessica Moore</h5>
+                                <h5>Jessica Moore <i class="fa fa-paper-plane"></i></h5>
                                 <span>5th (BB.3) Choose the antonym</span>
                             </div>
                             <div class="card-footer-area">
@@ -553,7 +553,7 @@
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="activity-card low">
                             <div class="card-heading-area">
-                                <h5>Katie Cho</h5>
+                                <h5>Katie Cho <i class="fa fa-paper-plane"></i></h5>
                                 <span>5th (J.1) Divide by powers of ten</span>
                             </div>
                             <div class="card-footer-area">
@@ -570,7 +570,7 @@
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="activity-card low">
                             <div class="card-heading-area">
-                                <h5>Craig Garza</h5>
+                                <h5>Craig Garza <i class="fa fa-paper-plane"></i></h5>
                                 <span>5th (J.1) Divide by powers of ten</span>
                             </div>
                             <div class="card-footer-area">
