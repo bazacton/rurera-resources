@@ -1428,6 +1428,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     .lms-quiz-create #question_design .rureraform-admin-popup-content {
         padding: 10px 10px 0;
     }
+    #assignment_tabs .nav-item {
+        margin-right: 0;
+    }
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1800px) {
