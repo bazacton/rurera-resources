@@ -116,24 +116,24 @@
 					
 					
 					<div class="col-md-4">
-					<div class="form-group">
-						<label class="input-label">Sub Topic</label>
-						<div class="select-holder">
-							<select id="chapter_id"
-								class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-								name="sub_chapter_id">
-								<option value="">Please select year, subject, Topic</option>
-							</select>
+						<div class="form-group">
+							<label class="input-label">Sub Topic</label>
+							<div class="select-holder">
+								<select id="chapter_id"
+									class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+									name="sub_chapter_id">
+									<option value="">Please select year, subject, Topic</option>
+								</select>
+							</div>
+							
+						@error('sub_chapter_id')
+						<div class="invalid-feedback">
+							{{ $message }}
 						</div>
+						@enderror
 						
-					@error('sub_chapter_id')
-					<div class="invalid-feedback">
-						{{ $message }}
-					</div>
-					@enderror
-					
 
-					</div>
+						</div>
 					</div>
 					
 					<div class="col-md-4">
@@ -163,25 +163,25 @@
                     </div>
                 </form>
             </div>
-				@php $saved_templates = $user->saved_templates;
-				$saved_templates = json_decode( $saved_templates );
-				$saved_templates = isset( $saved_templates->bulk_list_search )? $saved_templates->bulk_list_search : array();
-				@endphp
-				<div class="defined-searches mt-20" style="display:none">
-				<span><strong>Defined Searches:</strong></span>
-					@if( !empty( $saved_templates ) )
-						@foreach( $saved_templates  as $template_name => $template_data)
-							@php $template_array = json_decode($template_data); 
-							$url_params = '<span>'.$template_name.'</span>'; 
-							if( isset( $template_array->url_params )){
-								$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
-							}
-							@endphp
-							<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
-						@endforeach
-					@endif
-					<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
-				</div>
+			@php $saved_templates = $user->saved_templates;
+			$saved_templates = json_decode( $saved_templates );
+			$saved_templates = isset( $saved_templates->bulk_list_search )? $saved_templates->bulk_list_search : array();
+			@endphp
+			<div class="defined-searches mt-20" style="display:none">
+			<span><strong>Defined Searches:</strong></span>
+				@if( !empty( $saved_templates ) )
+					@foreach( $saved_templates  as $template_name => $template_data)
+						@php $template_array = json_decode($template_data); 
+						$url_params = '<span>'.$template_name.'</span>'; 
+						if( isset( $template_array->url_params )){
+							$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
+						}
+						@endphp
+						<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
+					@endforeach
+				@endif
+				<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
+			</div>
         </section>
 
         <div class="row">
@@ -209,11 +209,11 @@
 							</div>
 
 						</div>
-                    @can('admin_topic_parts_create')
-						<div class="text-right">
-                            <a href="javascript:;" class="create-questions-bulk-list-btn btn btn-primary">Create Question Bulk List</a>
-                        </div>
-                    @endcan
+						@can('admin_topic_parts_create')
+							<div class="text-right">
+								<a href="javascript:;" class="create-questions-bulk-list-btn btn btn-primary">Create Question Bulk List</a>
+							</div>
+						@endcan
                     </div>
 
                     <div class="card-body">
