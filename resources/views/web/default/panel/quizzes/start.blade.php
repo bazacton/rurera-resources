@@ -76,7 +76,7 @@ $timer_counter = $practice_time;
             $top_rightbar_class = ($quiz->quiz_type == 'practice')? 'rurera-hide' : '';
             @endphp
 
-            <section class="quiz-topbar {{$top_bar_class}}">
+            <section class="quiz-topbar test@ {{$top_bar_class}}">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
