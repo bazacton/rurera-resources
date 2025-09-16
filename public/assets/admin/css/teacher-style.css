@@ -7969,6 +7969,7 @@ button.print-download-btn {
     align-items: center;
     justify-content: space-between;
 }
+
 .checkboxes-group .checkboxes-holder {
     max-width: 50%;
     flex: 0 0 50%;
@@ -7976,6 +7977,7 @@ button.print-download-btn {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .test-card .answer-number em {
     font-style: normal;
 }
