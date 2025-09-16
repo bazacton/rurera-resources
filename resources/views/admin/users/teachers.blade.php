@@ -651,7 +651,7 @@
             </div>
         </div>
 
-        <div class="verbel-resoning-test">
+        <div class="verbal-reasoning-test">
             <div class="test-top">
                 <div class="test-heading"></div>
                 <div class="test-logo"></div>
