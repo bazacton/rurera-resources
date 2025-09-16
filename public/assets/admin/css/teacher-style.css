@@ -7892,15 +7892,15 @@ button.print-download-btn {
 .test-card .answer-number {
     background-color: #f0f0fd;
     display: block;
-    vertical-align: top;
     color: var(--blue);
-    padding: 10px 10px;
+    padding: 8px 10px;
     min-width: 38px;
     text-align: center;
     margin: 0;
     font-size: 20px;
     position: relative;
     z-index: 1;
+    line-height: normal;
 }
 .checkbox-field {
     position: relative;
@@ -7976,10 +7976,6 @@ button.print-download-btn {
     border-left: 0;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.test-card .answer-number em {
-    font-style: normal;
 }
 /* verbal-reasoning-test Style End */
 
