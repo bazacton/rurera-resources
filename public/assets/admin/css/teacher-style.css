@@ -7978,6 +7978,63 @@ button.print-download-btn {
     padding-left: 10px;
     padding-right: 10px;
 }
+.verbal-reasoning-test .test-top {
+    background-color: #007bff;
+    color: var(--white);
+    position: relative;
+    min-height: 250px;
+    margin: 0 0 30px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.test-top .test-heading {
+    padding: 50px 50px 50px;
+    margin-top: auto;
+}
+.test-logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.test-logo img {
+    width: 38px;
+}
+.cloud-background {
+  width: 200px;
+  height: 55px;
+  background: #e9f4ff;
+  border-radius: 100px;
+  position: relative;
+  text-align: center;
+}
+.cloud-background::before,
+.cloud-background::after {
+  content: '';
+  position: absolute;
+  background: #e9f4ff;
+  border-radius: 50%;
+}
+.cloud-background::before {
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  left: 39px;
+}
+.cloud-background::after {
+  width: 90px;
+  height: 90px;
+  top: -40px;
+  right: 40px;
+}
+.cloud-background .sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    gap: 10px;
+}
 /* verbal-reasoning-test Style End */
 
 @media screen and (min-width: 1200px) and (max-width: 1850px) {
