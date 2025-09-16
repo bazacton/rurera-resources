@@ -660,7 +660,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="test-card">
-                            <span class="answer-number">30</span>
+                            <span class="answer-number">1</span>
                             <div class="checkboxes-holder">
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans1">
@@ -714,7 +714,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="test-card">
-                            <span class="answer-number">2</span>
+                            <span class="answer-number">3</span>
                             <div class="checkboxes-holder">
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans11">
@@ -741,7 +741,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="test-card">
-                            <span class="answer-number">2</span>
+                            <span class="answer-number">4</span>
                             <div class="checkboxes-holder">
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans16">
@@ -762,6 +762,115 @@
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans20">
                                     <label for="ans20">stool</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">5</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans17">
+                                    <label for="ans17">a</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans18">
+                                    <label for="ans18">b</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans19">
+                                    <label for="ans19">c</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans20">
+                                    <label for="ans20">d</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans21">
+                                    <label for="ans21">e</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">6</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans22">
+                                    <label for="ans22">a</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans23">
+                                    <label for="ans23">b</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans24">
+                                    <label for="ans24">sofa</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans25">
+                                    <label for="ans25">c</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans26">
+                                    <label for="ans26">d</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">7</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans27">
+                                    <label for="ans27">a</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans28">
+                                    <label for="ans28">b</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans29">
+                                    <label for="ans29">c</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans30">
+                                    <label for="ans30">d</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans31">
+                                    <label for="ans31">e</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">8</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans32">
+                                    <label for="ans32">a</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans33">
+                                    <label for="ans33">b</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans34">
+                                    <label for="ans34">c</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans35">
+                                    <label for="ans35">d</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans36">
+                                    <label for="ans36">e</label>
                                 </div>
                             </div>
                         </div>
