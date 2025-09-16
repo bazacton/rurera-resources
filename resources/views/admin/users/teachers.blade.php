@@ -796,24 +796,24 @@
                             <span class="answer-number">5</span>
                             <div class="checkboxes-holder">
                                 <div class="checkbox-field">
-                                    <input type="checkbox" id="ans17">
-                                    <label for="ans17">a</label>
+                                    <input type="checkbox" id="ans-a">
+                                    <label for="ans-a">a</label>
                                 </div>
                                 <div class="checkbox-field">
-                                    <input type="checkbox" id="ans18">
-                                    <label for="ans18">b</label>
+                                    <input type="checkbox" id="ans-b">
+                                    <label for="ans-b">b</label>
                                 </div>
                                 <div class="checkbox-field">
-                                    <input type="checkbox" id="ans19">
-                                    <label for="ans19">c</label>
+                                    <input type="checkbox" id="ans-c">
+                                    <label for="ans-c">c</label>
                                 </div>
                                 <div class="checkbox-field">
-                                    <input type="checkbox" id="ans20">
-                                    <label for="ans20">d</label>
+                                    <input type="checkbox" id="ans-d">
+                                    <label for="ans-d">d</label>
                                 </div>
                                 <div class="checkbox-field">
-                                    <input type="checkbox" id="ans21">
-                                    <label for="ans21">e</label>
+                                    <input type="checkbox" id="ans-e">
+                                    <label for="ans-e">e</label>
                                 </div>
                             </div>
                         </div>
