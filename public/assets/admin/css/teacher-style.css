@@ -7923,6 +7923,7 @@ button.print-download-btn {
     color: #333;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 .checkbox-field label:after {
     height: 15px;
