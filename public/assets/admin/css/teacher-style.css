@@ -420,6 +420,10 @@ button.member-selected-btn {
 .admin_teacher_role .classes-card .progress {margin-top: 10px; border-radius: 30px; height: 8px !important;overflow: unset; position: relative;}
 .admin_teacher_role .classes-card .progress-bar.progress-bar-custom {background-color: var(--class_color); border-radius: 30px; color: currentcolor; margin-bottom: 0;}
 .admin_teacher_role .classes-card .progress-holder {margin-top: 25px;}
+.admin_teacher_role .classes-card .card-body .progress-holder p {
+    line-height: normal;
+    padding-right: 32px;
+}
 .admin_teacher_role .classes-card .progress-bar.progress-bar-custom span {
     position: absolute;
     right: 0;
