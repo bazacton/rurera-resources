@@ -832,15 +832,15 @@
                                 </div>
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans24">
-                                    <label for="ans24">sofa</label>
+                                    <label for="ans24">c</label>
                                 </div>
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans25">
-                                    <label for="ans25">c</label>
+                                    <label for="ans25">d</label>
                                 </div>
                                 <div class="checkbox-field">
                                     <input type="checkbox" id="ans26">
-                                    <label for="ans26">d</label>
+                                    <label for="ans26">e</label>
                                 </div>
                             </div>
                         </div>
