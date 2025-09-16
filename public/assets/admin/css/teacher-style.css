@@ -7891,14 +7891,16 @@ button.print-download-btn {
 }
 .test-card .answer-number {
     background-color: #f0f0fd;
-    display: inline-block;
+    display: block;
     vertical-align: top;
     color: var(--blue);
-    padding: 5px 10px;
+    padding: 10px 10px;
     min-width: 38px;
     text-align: center;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
 }
 .checkbox-field {
     position: relative;
