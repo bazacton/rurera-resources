@@ -688,28 +688,53 @@
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="test-card">
                             <span class="answer-number">2</span>
-                            <div class="checkboxes-holder">
-                                <div class="checkbox-field">
-                                    <input type="checkbox" id="ans6">
-                                    <label for="ans6">myth</label>
+                            <div class="checkboxes-group">
+                                <div class="checkboxes-holder">
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans6">
+                                        <label for="ans6">myth</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans7">
+                                        <label for="ans7">fable</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans8">
+                                        <label for="ans8">note</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans9">
+                                        <label for="ans9">tale</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans10">
+                                        <label for="ans10">magazine</label>
+                                    </div>
                                 </div>
-                                <div class="checkbox-field">
-                                    <input type="checkbox" id="ans7">
-                                    <label for="ans7">fable</label>
-                                </div>
-                                <div class="checkbox-field">
-                                    <input type="checkbox" id="ans8">
-                                    <label for="ans8">note</label>
-                                </div>
-                                <div class="checkbox-field">
-                                    <input type="checkbox" id="ans9">
-                                    <label for="ans9">tale</label>
-                                </div>
-                                <div class="checkbox-field">
-                                    <input type="checkbox" id="ans10">
-                                    <label for="ans10">magazine</label>
+                                <div class="checkboxes-holder">
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans66">
+                                        <label for="ans66">myth</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans77">
+                                        <label for="ans77">fable</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans88">
+                                        <label for="ans88">note</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans99">
+                                        <label for="ans99">tale</label>
+                                    </div>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="ans100">
+                                        <label for="ans100">magazine</label>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
