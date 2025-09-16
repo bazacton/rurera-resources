@@ -665,6 +665,12 @@
                     </div>
                 </div>
             </div>
+            <div class="test-name-search">
+                <div class="input-field">
+                    <button type="submit" class="search-btn">Name</button>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
             <div class="test-cards">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-12">
