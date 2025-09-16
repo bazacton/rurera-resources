@@ -7876,6 +7876,71 @@ button.print-download-btn {
     background-color: inherit;
     padding-top: 120px;
 }
+
+
+
+
+.test-card {
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.verbal-reasoning-test {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.test-card .answer-number {
+    display: inline-block;
+    vertical-align: top;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 5px 10px;
+    min-width: 38px;
+    text-align: center;
+    margin: 0 0 15px;
+}
+.checkbox-field {
+    position: relative;
+    padding: 5px 10px 5px;
+    z-index: 1;
+}
+.checkbox-field input[type=checkbox] {
+    position: absolute;
+    margin: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkbox-field label {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+.checkbox-field label:after {
+    height: 15px;
+    width: 30px;
+    border: 2px solid var(--blue);
+    content:"";
+}
+.checkboxes-holder {
+    padding: 15px 0;
+}
+.checkboxes-holder:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: #d3e8ff;
+    pointer-events: none;
+}
 @media screen and (min-width: 1200px) and (max-width: 1850px) {
     .admin_teacher_role .main-sidebar ~ .main-content {
         padding-left: 265px;
