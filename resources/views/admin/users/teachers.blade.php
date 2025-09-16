@@ -654,7 +654,7 @@
         <div class="verbal-reasoning-test">
             <div class="test-top">
                 <div class="test-heading">
-                    <h2>Bond 11+ Verbal Reasoning Test 1</h2>
+                    <h2>Bond 11+ Verbal Reasoning <br /> Test 1</h2>
                 </div>
                 <div class="test-logo">
                     <div class="cloud-background">
