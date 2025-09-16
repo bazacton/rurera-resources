@@ -7878,30 +7878,9 @@ button.print-download-btn {
 }
 
 /* verbal-reasoning-test Style Start */
-.test-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 0 30px;
-}
-.verbal-reasoning-test {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.test-card .answer-number {
-    background-color: #f0f0fd;
-    display: block;
-    color: var(--blue);
-    padding: 8px 10px;
-    min-width: 38px;
-    text-align: center;
-    margin: 0;
-    font-size: 20px;
-    position: relative;
-    z-index: 1;
-    line-height: normal;
-}
+.test-card {border: 1px solid #ddd; border-radius: 5px; overflow: hidden; position: relative; margin: 0 0 30px;}
+.verbal-reasoning-test {margin-top: 30px; margin-bottom: 30px;}
+.test-card .answer-number {background-color: #f0f0fd; display: block; color: var(--blue); padding: 8px 10px; min-width: 38px; text-align: center; margin: 0; font-size: 20px; position: relative; z-index: 1; line-height: normal;}
 .checkbox-field {
     position: relative;
     padding: 5px 10px 5px;
@@ -7970,7 +7949,6 @@ button.print-download-btn {
     align-items: center;
     justify-content: space-between;
 }
-
 .checkboxes-group .checkboxes-holder {
     max-width: 50%;
     flex: 0 0 50%;
@@ -8049,6 +8027,7 @@ button.print-download-btn {
 }
 .test-name-search:has(.search-btn) input.form-control {
     padding-left: 80px;
+    border-color: #ddd;
 }
 /* verbal-reasoning-test Style End */
 
