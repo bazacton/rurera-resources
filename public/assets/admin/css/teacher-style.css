@@ -8035,6 +8035,20 @@ button.print-download-btn {
     z-index: 1;
     gap: 10px;
 }
+.test-name-search {
+    margin: 0 0 30px;
+}
+.test-name-search .search-btn {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 0;
+    padding: 0 15px;
+}
+.test-name-search:has(.search-btn) input.form-control {
+    padding-left: 80px;
+}
 /* verbal-reasoning-test Style End */
 
 @media screen and (min-width: 1200px) and (max-width: 1850px) {
