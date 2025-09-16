@@ -650,6 +650,125 @@
                 </div>
             </div>
         </div>
+
+        <div class="verbel-resoning-test">
+            <div class="test-top">
+                <div class="test-heading"></div>
+                <div class="test-logo"></div>
+            </div>
+            <div class="test-cards">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">30</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans1">
+                                    <label for="ans1">encourage</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans2">
+                                    <label for="ans2">Improve</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans3">
+                                    <label for="ans3">expect</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans4">
+                                    <label for="ans4">urge</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans5">
+                                    <label for="ans5">inspire</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">2</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans6">
+                                    <label for="ans6">myth</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans7">
+                                    <label for="ans7">fable</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans8">
+                                    <label for="ans8">note</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans9">
+                                    <label for="ans9">tale</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans10">
+                                    <label for="ans10">magazine</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">2</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans11">
+                                    <label for="ans11">wolf</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans12">
+                                    <label for="ans12">tiger</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans13">
+                                    <label for="ans13">loin</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans14">
+                                    <label for="ans14">panther</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans15">
+                                    <label for="ans15">bear</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="test-card">
+                            <span class="answer-number">2</span>
+                            <div class="checkboxes-holder">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans16">
+                                    <label for="ans16">chair</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans17">
+                                    <label for="ans17">table</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans18">
+                                    <label for="ans18">sofa</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans19">
+                                    <label for="ans19">window</label>
+                                </div>
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="ans20">
+                                    <label for="ans20">stool</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Modal -->
