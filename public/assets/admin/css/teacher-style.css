@@ -8045,6 +8045,7 @@ button.print-download-btn {
     top: 0;
     border: 0;
     padding: 0 15px;
+    border-radius: .25rem 0 0 .25rem;
 }
 .test-name-search:has(.search-btn) input.form-control {
     padding-left: 80px;
