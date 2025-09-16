@@ -7928,6 +7928,20 @@ button.print-download-btn {
     border: 2px solid var(--blue);
     content:"";
 }
+.checkbox-field label:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    width: 0;
+    background-color: #333;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.checkbox-field input[type=checkbox]:checked ~ label:before {
+    width: 30px;
+}
 .checkboxes-holder {
     padding: 15px 0;
 }
@@ -7941,6 +7955,7 @@ button.print-download-btn {
     background-color: #d3e8ff;
     pointer-events: none;
 }
+
 @media screen and (min-width: 1200px) and (max-width: 1850px) {
     .admin_teacher_role .main-sidebar ~ .main-content {
         padding-left: 265px;
