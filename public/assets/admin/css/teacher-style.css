@@ -7877,11 +7877,9 @@ button.print-download-btn {
     padding-top: 120px;
 }
 
-
-
-
+/* verbal-reasoning-test Style Start */
 .test-card {
-    border: 2px solid var(--blue);
+    border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -7892,14 +7890,15 @@ button.print-download-btn {
     margin-bottom: 30px;
 }
 .test-card .answer-number {
+    background-color: #f0f0fd;
     display: inline-block;
     vertical-align: top;
-    background-color: var(--blue);
-    color: #fff;
+    color: var(--blue);
     padding: 5px 10px;
     min-width: 38px;
     text-align: center;
-    margin: 0 0 15px;
+    margin: 0;
+    font-size: 18px;
 }
 .checkbox-field {
     position: relative;
@@ -7947,18 +7946,21 @@ button.print-download-btn {
     width: 30px;
 }
 .checkboxes-holder {
-    padding: 15px 0;
+    padding: 15px 10px;
     position: relative;
 }
-.checkboxes-holder:after {
+.checkboxes-group .checkboxes-holder:after {
     content: "";
     position: absolute;
     right: 0;
     top: -100%;
     height: 3000px;
-    width: 50px;
-    background-color: #d3e8ff;
+    width: 1px;
     pointer-events: none;
+    border: 1px dashed #ddd;
+}
+.checkboxes-group .checkboxes-holder:last-child:after {
+    display: none;
 }
 .checkboxes-group {
     display: flex;
@@ -7968,7 +7970,14 @@ button.print-download-btn {
 .checkboxes-group .checkboxes-holder {
     max-width: 50%;
     flex: 0 0 50%;
+    border-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.test-card .answer-number em {
+    font-style: normal;
+}
+/* verbal-reasoning-test Style End */
 
 @media screen and (min-width: 1200px) and (max-width: 1850px) {
     .admin_teacher_role .main-sidebar ~ .main-content {
