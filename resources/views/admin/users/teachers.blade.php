@@ -657,10 +657,12 @@
                     <h2>Bond 11+ Verbal Reasoning Test 1</h2>
                 </div>
                 <div class="test-logo">
-                    <a class="sidebar-logo" href="/admin" itemscope="" itemprop="url">
-                        <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38">
-                        <span class="sidebar-logo-text">Rurera</span>
-                    </a>
+                    <div class="cloud-background">
+                        <a class="sidebar-logo" href="/admin" itemscope="" itemprop="url">
+                            <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38">
+                            <span class="sidebar-logo-text">Rurera</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="test-cards">
