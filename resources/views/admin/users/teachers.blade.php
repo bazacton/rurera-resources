@@ -658,7 +658,7 @@
             </div>
             <div class="test-cards">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div class="col-lg-3 col-md-3 col-12">
                         <div class="test-card">
                             <span class="answer-number">1</span>
                             <div class="checkboxes-holder">
@@ -685,7 +685,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-12">
+                    <div class="col-lg-6 col-md-6 col-12">
                         <div class="test-card">
                             <span class="answer-number">2</span>
                             <div class="checkboxes-group">
