@@ -298,7 +298,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                 </div>
                               </div>
                             </div>
-                            <div class="tab-pane mt-3 fade" id="question_design" role="tabpanel" aria-labelledby="question_design-tab">
+                            <div class="tab-pane fade" id="question_design" role="tabpanel" aria-labelledby="question_design-tab">
                                 <div class="row">
                                     <div class="col-7 col-md-7">
                                         <div class="hap-container">
