@@ -7149,10 +7149,28 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 				case "question_label_matching_template":
 
 					var label_type = rureraform_form_elements[i]["label_type"];
-					var label_data = "<div class='question-label " + label_type + "'><span>" + rureraform_form_elements[i]["content"] + "</span></div>";
+                    var label_type_heading = '';
+                    if(label_type == 'question_hint'){
+                        var label_type_heading = '<span class="question_hint_heading">Hint: </span>';
+                    }
+                    if(label_type == 'example_text'){
+                        var label_type_heading = '<span class="question_example_heading">Example: </span>';
+                    }
+					var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + rureraform_form_elements[i]["content"] + "</span></div>";
 					if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
 						var label_data = "<" + label_type + ">" + rureraform_form_elements[i]["content"] + "</" + label_type + ">";
 					}
+                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
+                    break;
+
+
+                case "example_text":
+
+                    var label_type = '';
+                    var label_data = "<div class='example-heading " + label_type + "'><span>" + rureraform_form_elements[i]["content"] + "</span></div>";
+                    if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
+                        var label_data = "<" + label_type + ">" + rureraform_form_elements[i]["content"] + "</" + label_type + ">";
+                    }
                     html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
                     break;
 
