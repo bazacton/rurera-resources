@@ -30,7 +30,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas, 
 .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal, 
 .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {margin-left: 0;}
-.rureraform-toolbar-list>li>a:hover {color: #169F85;background: #f8f8f8;}
+.rureraform-toolbar-list>li>a:hover {color: #169F85;background: hsl(0, 0%, 97%);}
 .rureraform-toolbar-list>li>ul {position: absolute;z-index: 99;top: 38px;left: 0;display: none;background: #fff;border: 1px solid #ccc;	box-sizing: border-box;	width: 120px;box-shadow: 2px 2px 10px -5px rgba(0,0,0,0.9);white-space: nowrap;overflow: hidden;height: auto;margin: 0;padding: 0;}
 .rureraform-toolbar-list>li:hover>ul {display: block;}
 .rureraform-toolbar-list>li>ul>li {text-align: left;position: relative;	height: 32px;display: block;line-height: 32px;margin: 0;padding: 0;}
@@ -701,7 +701,7 @@ Questions Builder Right Sidebar Style Start
 .card .card-header .note-dropdown-menu h4 {
     font-size: 14px;
 }
-.lms-quiz-create .rureraform-admin-popup-inner {height: auto; position: relative; box-sizing: border-box; border: 1px solid #ccc;}
+.lms-quiz-create .rureraform-admin-popup-inner {height: auto; position: relative; box-sizing: border-box; border: 1px solid #ccc; border-radius: 0 0 3px 3px;}
 .lms-quiz-create .rureraform-admin-popup-title {box-sizing: border-box;	height: 52px; line-height: 52px; padding: 0 0 0 20px; text-align: left;	border-bottom: 1px solid #f0f0f0; background: #f8f8f8; overflow: hidden;}
 .lms-quiz-create .rureraform-admin-popup-title>span {float: right; display: block; width: 52px;	height: 52px; line-height: 52px; text-align: center; font-size: 20px; color: #555;	transition-property: color;	transition-timing-function: ease-in-out; transition-duration: 300ms; cursor: pointer;}
 .lms-quiz-create .rureraform-admin-popup-title>span.rureraform-preview-size-mobile {font-size: 20px; width: 40px;}
