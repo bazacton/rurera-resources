@@ -7484,6 +7484,9 @@ button.print-download-btn {
 .admin_teacher_role .populated-data .select2-selection__arrow:before {
     right: 10px;
 }
+.admin_teacher_role .populated-data.years-group .input-group .select2-selection__arrow:before {
+    display: none;
+}
 .admin_teacher_role .assignment_topic_type_fields .rurera-button-loader {
     margin-top: 18px;
 }
