@@ -706,7 +706,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-admin-popup-title>span.rureraform-preview-size-mobile {font-size: 20px; width: 40px;}
 .lms-quiz-create .rureraform-admin-popup-title>span:hover,
 .lms-quiz-create .rureraform-admin-popup-title>span.rureraform-preview-size-active {color: #26B99A;}
-.lms-quiz-create .rureraform-admin-popup-title h3 {font-weight: normal; font-size: 20px; font-family: arial; color: #202020; letter-spacing: 0; text-transform: none; margin: 0 !important; padding: 0 !important;	line-height: inherit;}
+.lms-quiz-create .rureraform-admin-popup-title h3 {font-weight: 600; font-size: 16px; font-family: arial; color: #202020; letter-spacing: 0; text-transform: none; margin: 0 !important; padding: 0 !important;	line-height: inherit;}
 .lms-quiz-create .rureraform-admin-popup-title h3 span {font-size: 16px; color: #a0a0a0; display: inline-block; margin-left: 20px;	padding-left: 20px;	border-left: 1px dashed #e0e0e0; line-height: 25px; height: 25px; vertical-align: middle;}
 .lms-quiz-create .rureraform-admin-popup-title a {display: block; float: right;	font-size: 20px; width: 52px; height: 52px;	color: #202020; text-align: center; text-shadow: none !important; box-shadow: none !important; outline: none !important; border: none !important; margin: 0 0 0 20px !important; padding: 0 !important; transition-property: all; transition-timing-function: ease-in-out;	transition-duration: 300ms;}
 .lms-quiz-create .rureraform-admin-popup-title a i {line-height: 50px;}
