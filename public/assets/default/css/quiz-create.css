@@ -707,11 +707,14 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-admin-popup-title a:hover {color: #26B99A;}
 .lms-quiz-create .rureraform-admin-popup-content {height: auto; overflow-x: hidden; overflow-y: hidden; background: #ffffff; position: relative; padding: 15px 20px 0;}
 .lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar,
-.lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar {width: 5px; height: 5px;}
+.lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar,
+.lms-quiz-create #question_design .topic-parts-block::-webkit-scrollbar {width: 5px; height: 5px;}
 .lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar-track,
-.lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.1);}
+.lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar-track,
+.lms-quiz-create #question_design .topic-parts-block::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.1);}
 .lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar-thumb,
-.lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar-thumb {background-color: #26B99A;}
+.lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar-thumb,
+.lms-quiz-create #question_design .topic-parts-block::-webkit-scrollbar-thumb {background-color: #26B99A;}
 .lms-quiz-create .rureraform-admin-popup-content hr {margin: 0 30px;}
 .lms-quiz-create .rureraform-admin-popup-loading {position: absolute; background: #fff; top: 52px;	left: 0; z-index: 99982; width: 100%; bottom: 0; right: 0;}
 .lms-quiz-create .rureraform-admin-popup-loading i {position: absolute;	z-index: 99983;	top: 50%; left: 50%; font-size: 24px; margin-top: -12px; margin-left: -12px;}
@@ -1425,7 +1428,8 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     .lms-quiz-create #question_design .rureraform-admin-popup {
         height: 100%;
     }
-    .lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner {
+    .lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner,
+    .lms-quiz-create #question_design .topic-parts-block {
         height: 100%;
         overflow: hidden;
         overflow-y: auto;
