@@ -1423,7 +1423,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     .lms-quiz-create #question_design [class*="col-"]:has(.lms-element-properties) {
         position: absolute;
         right: 0;
-        min-width: 290px;
+        min-width: 180px;
         height: 100%;
         z-index: 1;
         padding: 0 10px 0 0;
