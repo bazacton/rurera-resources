@@ -1125,6 +1125,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .correct-answers-block {margin: 10px 0 15px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px;}
 .correct-answers-block li {display: inline-block; line-height: normal; background-color: #e3ebfc; color: var(--blue); padding: 4px 10px; border-radius: 3px;}
 #question_properties .select2-container--default .select2-selection--multiple {padding-bottom: 4px;}
+#question_properties .select2-container--default.select2-container--focus .select2-selection--multiple {border-color: #95a0f4;}
 /*Quistions Type Content Default Style End*/
 
 /*Quistions Type numeric-list style Start*/
