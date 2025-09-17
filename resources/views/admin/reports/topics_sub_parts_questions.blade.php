@@ -6,7 +6,7 @@
 <style>
 .table-responsive {
     max-height: 800px;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 .freeze-row th {
     position: sticky;
@@ -17,12 +17,12 @@
 .freeze-cols {
 	 left: 0;
     position: sticky;
-    z-index: 9; 
+    z-index: 9;
 	 background-color: #fafafa;
 }
 .scrolled{position:fixed !important;}
 .top-row {
-    z-index: 11 !important; 
+    z-index: 11 !important;
 }
 .col-1 {
     left: 0;
@@ -80,7 +80,7 @@
         }
     </style>
 	<style>
-	
+
 	.defined-searches {
 		background: #efefef;
 		padding: 10px;
@@ -135,7 +135,7 @@
 									@endforeach
 								</select>
 							</div>
-                            
+
                         </div>
                     </div>
 
@@ -155,8 +155,8 @@
 						@enderror
 					</div>
 					</div>
-					
-					
+
+
 					<div class="col-md-2">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
@@ -167,7 +167,7 @@
 								<option value="">Please select year, subject</option>
 							</select>
 						</div>
-						
+
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -176,8 +176,8 @@
 
 					</div>
 					</div>
-					
-					
+
+
 					<div class="col-md-2">
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
@@ -188,23 +188,23 @@
 							<option value="">Please select year, subject, Topic</option>
 						</select>
 						</div>
-						
+
 					@error('sub_chapter_id')
 					<div class="invalid-feedback">
 						{{ $message }}
 					</div>
 					@enderror
-					
+
 
 					</div>
 					</div>
-					
-					
+
+
 
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                         <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
-						
+
                     </div>
                 </form>
             </div>
@@ -216,8 +216,8 @@
 			<span><strong>Defined Searches:</strong></span>
 				@if( !empty( $saved_templates ) )
 					@foreach( $saved_templates  as $template_name => $template_data)
-						@php $template_array = json_decode($template_data); 
-						$url_params = '<span>'.$template_name.'</span>'; 
+						@php $template_array = json_decode($template_data);
+						$url_params = '<span>'.$template_name.'</span>';
 						if( isset( $template_array->url_params )){
 							$url_params = '<a href="'.(string) url("").'/admin/reports/topics_questions/?'.$template_array->url_params.'">'.$template_name.'</a>';
 						}
@@ -230,10 +230,10 @@
         </section>
 
         <div class="row">
-		
+
 			<div class="col-md-12 col-lg-12">
 				<pre class="prompt-text"></pre>
-				
+
 				<div id="accordion" class="topic-parts-data">
 					<div class="table-responsive">
 						<table class="table">
@@ -291,21 +291,21 @@
 											<td class="1total-pending-questions">0</td>
 											<td class="1total-unreviewed-questions">0</td>
 										</tr>
-										
+
 									@if($WebinarChapterObj->ChapterTopicParts->count() > 0 )
 										@php $part_counter = 0; @endphp
 										@foreach($WebinarChapterObj->ChapterTopicParts as $TopicPartObj)
 										@php $part_counter++; @endphp
-										
-										@php 
+
+										@php
 										$total_pending_questions = $total_unreviewed_questions = 0;
 										$expected_part_questions = 0;
-										$total_part_questions = $TopicPartObj->topicPartQuestions->count();
+										$total_part_questions = $TopicPartObj->topicPartQuestions()->count();
 										$pending_part_questions = $expected_part_questions-$total_part_questions;
 										$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-										$total_unreviewed_questions = $TopicPartObj->topicPartQuestions->where('question_status', 'api_pending')->count();
+										$total_unreviewed_questions = $TopicPartObj->topicPartQuestions()->where('question_status', 'api_pending')->count();
 										@endphp
-										
+
 										<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
 											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}}</span></td>
 											<td>-</td>
@@ -316,7 +316,7 @@
 													$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 													$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 													@endphp
-													@php $total_questions = $TopicPartObj->topicPartQuestions->where('question_difficulty_level', $difficulty_level)->count();
+													@php $total_questions = $TopicPartObj->topicPartQuestions()->where('question_difficulty_level', $difficulty_level)->count();
 													$pending_questions = $expected_part_questions-$total_questions;
 													$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 													$total_pending_questions += $pending_questions;
@@ -329,16 +329,16 @@
 											<td class="total-pending-questions value-for-parent" data-parent_key="1total-pending-questions">{{$total_pending_questions}}</td>
 											<td class="total-unreviewed-questions value-for-parent" data-parent_key="1total-unreviewed-questions">{{$total_unreviewed_questions}}</td>
 										</tr>
-										
+
 										@if($TopicPartObj->topicSubParts->count() > 0 )
 										@foreach($TopicPartObj->topicSubParts as $subTopicObj)
-											@php 
+											@php
 											$total_pending_questions = $total_unreviewed_questions = 0;
 											$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
-											$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
+											$total_part_questions = $subTopicObj->topicPartItemQuestions()->count();
 											$pending_part_questions = $expected_part_questions-$total_part_questions;
 											$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-											$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
+											$total_unreviewed_questions = 0;//$subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
 											@endphp
 											<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
 												<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
@@ -350,7 +350,7 @@
 														$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 														$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 														@endphp
-														@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
+														@php $total_questions = $subTopicObj->topicPartItemQuestions()->where('question_difficulty_level', $difficulty_level)->count();
 														$pending_questions = $expected_part_questions-$total_questions;
 														$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 														$total_pending_questions += $pending_questions;
@@ -363,7 +363,7 @@
 												<td class="value-for-parent" data-parent_key="total-pending-questions">{{$total_pending_questions}}</td>
 												<td class="value-for-parent" data-parent_key="total-unreviewed-questions">{{$total_unreviewed_questions}}</td>
 											</tr>
-											
+
 										@endforeach
 									@endif
 										@endforeach
@@ -376,7 +376,7 @@
 					</div>
 
 				</div>
-		
+
         </div>
     </div>
 </section>
@@ -393,7 +393,7 @@
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				<input type="hidden" name="template_type" class="template_type">
 				<input type="hidden" name="form_id" class="form_id">
-				
+
 				<div class="inactivity-controls">
 					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
@@ -411,8 +411,8 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-		
-		
+
+
 		$(document).on('change', '.ajax-category-courses', function () {
 			var category_id = $(this).val();
 			var course_id = $(this).attr('data-course_id');
@@ -456,7 +456,7 @@
 			});
 		});
         $(".ajax-category-courses").change();
-		
+
 		$(document).on('change', 'select[name="columns_to_show[]"]', function () {
 			/*var columns_to_show = $(this).val();
 			$('.column-condition').addClass('rurera-hide');
@@ -469,10 +469,10 @@
 			});*/
 		});
         $('select[name="columns_to_show[]"]').change();
-		
-		
-		
-		
+
+
+
+
 		$(document).on('click', '.show_hide_table td span', function () {
 			var column_id = $(this).attr('data-col_id');
 			$(this).toggleClass('active');
@@ -482,24 +482,24 @@
 			$('select[name="columns_to_show[]"]').change();
 			$('.column-condition[data-col_id="'+column_id+'"]').toggleClass('rurera-hide');
 		});
-		
-		
+
+
 		$(document).on('click', '.show_hide_table td span.remove-all', function () {
-			
+
 			$.each($(this).closest('td').find('span'), function() {
 				var column_id = $(this).attr('data-col_id');
 				$(this).removeClass('active');
 				$('.column-condition[data-col_id="'+column_id+'"]').addClass('rurera-hide');
-				
+
 				$('select[name="columns_to_show[]"]').find('option[value="'+column_id+'"]').prop('selected', false);
 				$('select[name="columns_to_show[]"]').change();
-				
+
 			});
 		});
-		
-		
+
+
 		$(document).on('click', '.show_hide_table td span.reset', function () {
-			
+
 			$.each($(this).closest('td').find('span'), function() {
 				var column_id = $(this).attr('data-col_id');
 				$(this).addClass('active');
@@ -508,14 +508,14 @@
 				$('select[name="columns_to_show[]"]').change();
 			});
 		});
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
     });
-	
+
 		$(document).on('click', '.topic_sub_parts', function () {
 			var pId = $(this).attr("id");
 			if($('.'+pId).is(":visible")) {
@@ -527,11 +527,11 @@
 			}
 
 		});
-		
+
 		$(document).on('click', '.accordion-parent', function () {
 			var thisObj = $(this);
 			var child_class = thisObj.attr('data-child_class');
-			
+
 			// Toggle the visibility of the child class elements
 			$('.' + child_class).toggle(300, function () {
 				if ($('.' + child_class).is(':visible')) {
@@ -551,18 +551,18 @@
 			thisObj.each(function () {
 				var childElement = $(this);
 				var child_sub_class = childElement.attr('data-child_class');
-				
+
 				// Hide the current child element
 				$('.' + child_sub_class).hide(300);
 				childElement.find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right');
-				
+
 				// Recursive call if further child elements exist
 				if ($('.' + child_sub_class).length > 0) {
 					toggleChild($('.' + child_sub_class));
 				}
 			});
 		}
-		
+
 		$(document).on('click', '.accordion-parent11', function () {
 			var is_visible = $(this).find('.fas').hasClass('fa-chevron-down');
 			$(this).find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right');
@@ -579,8 +579,8 @@
 			}
 			$('.'+child_class).toggle(300);
 		});
-		
-		
+
+
 
 		$(document).on('click', '.topic_parts12', function () {
 			var practiceId = $(this).parent('tbody').attr("id") + "_subpart";
@@ -591,21 +591,21 @@
 			$(this).find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right')
 			} else {
 			$('.'+practiceId).show(300);
-			
-			
+
+
 			$(this).find('.fas').removeClass('fa-chevron-right').addClass('fa-chevron-down')
 			}
 		});
-		
-		
+
+
 		$.each($('.topic_parts'), function() {
-			var topic_object = $(this); 
-			var childs_class = topic_object.attr('data-child_class'); 
-			var parent_values = {}; 
+			var topic_object = $(this);
+			var childs_class = topic_object.attr('data-child_class');
+			var parent_values = {};
 
 			$.each($('.' + childs_class), function() {
 				$.each($(this).find('.value-for-parent'), function() {
-					var parent_key = $(this).attr('data-parent_key'); 
+					var parent_key = $(this).attr('data-parent_key');
 					if (parent_values[parent_key] === undefined) {
 						parent_values[parent_key] = 0;
 					}
@@ -618,13 +618,13 @@
 			});
 		});
 		$.each($('.topic_parts_parent'), function() {
-			var topic_object = $(this); 
-			var childs_class = topic_object.attr('data-child_class'); 
-			var parent_values = {}; 
+			var topic_object = $(this);
+			var childs_class = topic_object.attr('data-child_class');
+			var parent_values = {};
 
 			$.each($('.' + childs_class), function() {
 				$.each($(this).find('.value-for-parent'), function() {
-					var parent_key = $(this).attr('data-parent_key'); 
+					var parent_key = $(this).attr('data-parent_key');
 					if (parent_values[parent_key] === undefined) {
 						parent_values[parent_key] = 0;
 					}
@@ -636,8 +636,8 @@
 				topic_object.find('.' + field_class).html(field_value);
 			});
 		});
-		
-	
+
+
 </script>
 
 @endpush
