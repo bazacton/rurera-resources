@@ -2138,7 +2138,7 @@ Admin Questions Generator Page Style End
 .similarity-content-tabs .card .card-header {width: 100%; padding: 5px 0 15px; min-height: auto; border: 0;}
 .similarity-content-tabs .card .card-header .btn-link {padding: 0; width: 100%; position: relative; color: #000; font-weight: 600; font-size: 15px; border: 0; text-decoration: none; outline: none; background: none; cursor: pointer;}
 .similarity-content-tabs .card .card-header h5 {width: 100%;}
-.btn-link .similarity-serial { color: #999; font-size: 14px;}
+.btn-link .similarity-serial { color: #999; font-size: 14px; flex-wrap: wrap;}
 .similarity-content-tabs .card .card-body {border: 0; padding: 5px 0 20px; background-color: inherit;}
 .similarity-content-tabs .card .card-header .d-flex {align-items: center;}
 .similarity-content-block .similarity-percentage {margin-right: 10px; line-height: normal; border-radius: 3px; padding: 4px 5px; font-size: 14px;}
@@ -2185,7 +2185,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block-data {margin-bottom: 30px;}
 .similarity-tab-data .card .card-header {padding: 15px; background-color: inherit;}
 .similarity-tab-data .card .card-header button {outline: none; text-decoration: none; padding: 0;}
-.similarity-tab-data .card .card-header button .d-flex {align-items: center;}
+.similarity-tab-data .card .card-header button .d-flex {align-items: flex-start;}
 .similarity-tab-data .card {border: 1px solid #ddd; border-radius: 6px; overflow: hidden; margin-bottom: 5px;}
 .similarity-tab-data h3 {font-size: 18px;}
 .similarity-content-block-data .cards-view-more-btn {
