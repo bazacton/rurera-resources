@@ -294,10 +294,11 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /*.question_label span {background-color: rgb(200,210,237);  margin: 0;padding: 10px 5px 10px 10px;  border-radius: 13px; line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 16px;}*/
 .question_label span {background-color: rgb(200,210,237); padding: 10px 5px 10px 13px;  border-radius: 13px; display: inline-block;width: 100%; font-weight: 600; font-size:18px;}
 .question_heading span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 26px; outline: none;}
-.rureraform-element h5 {
+.rureraform-builder .rureraform-element h5 {
     color: #999;
-    background-color: #fcfcfc;
+    background-color: #f1f1f1;
     padding: 8px 10px;
+    margin-bottom: 0;
 }
 /* .question-label span, */
 /* .lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;} */
@@ -1411,21 +1412,21 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         position: relative;
     }
     .lms-quiz-create .col-md-7 {
-        -ms-flex: 0 0 872px;
-        flex: 0 0 872px;
-        max-width: 872px;
+        -ms-flex: 0 0 830px;
+        flex: 0 0 830px;
+        max-width: 830px;
     }
     .lms-quiz-create .col-md-5 {
-        -ms-flex: 0 0 calc(100% - 872px);
-        flex: 0 0 calc(100% - 872px);
-        max-width: calc(100% - 872px);
+        -ms-flex: 0 0 calc(100% - 830px);
+        flex: 0 0 calc(100% - 830px);
+        max-width: calc(100% - 830px);
     }
     .builder-right-sidebar-expand {display: none;}
     .tab-content > #question_design.tab-pane {position: relative;}
     .lms-quiz-create #question_design [class*="col-"]:has(.lms-element-properties) {
         position: absolute;
         right: 0;
-        min-width: 180px;
+        min-width: 200px;
         height: 100%;
         z-index: 1;
         padding: 0 10px 0 0;
