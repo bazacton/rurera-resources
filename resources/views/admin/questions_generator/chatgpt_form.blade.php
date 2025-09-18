@@ -505,8 +505,13 @@ function validateJSON() {
 			var template_image = $(this).attr('data-template_image');
 			var template_name = $(this).attr('data-template_name');
 			var template_id = $(this).attr('data-template_id');
-			$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
-			$(this).closest('.template-item').addClass('active');
+            if($('[name="example_question_id[]"][value="'+template_id+'"]').length > 0){
+                $('[name="example_question_id[]"][value="'+template_id+'"]').remove();
+                $(this).closest('.template-item').removeClass('active');
+            }else {
+                $(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="' + template_id + '">');
+                $(this).closest('.template-item').addClass('active');
+            }
 			//$(".template-selection").addClass('rurera-hide');
 			//$(".api-response-block").removeClass('rurera-hide');
 			//$(".multi-choice-template-modal").modal('hide');
