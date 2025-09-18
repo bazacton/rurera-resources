@@ -7151,10 +7151,10 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 					var label_type = rureraform_form_elements[i]["label_type"];
                     var label_type_heading = '';
                     if(label_type == 'question_hint'){
-                        var label_type_heading = '<span class="question_hint_heading">Hint: </span>';
+                        //var label_type_heading = '<span class="question_hint_heading">Hint: </span>';
                     }
                     if(label_type == 'example_text'){
-                        var label_type_heading = '<span class="question_example_heading">Example: </span>';
+                        //var label_type_heading = '<span class="question_example_heading">Example: </span>';
                     }
 					var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + rureraform_form_elements[i]["content"] + "</span></div>";
 					if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
