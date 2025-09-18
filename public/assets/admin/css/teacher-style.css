@@ -1614,8 +1614,8 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     padding-top: 2px;
 }
 .admin_teacher_role .create-google-class-modal .user-list-options ul {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
     padding: 0 0 15px;
 }
 .admin_teacher_role .create-google-class-modal .user-list-options li:first-child {
