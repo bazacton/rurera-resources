@@ -250,14 +250,7 @@
                                     <div class="col-12">
                                         <div class="teacher-table">
                                             <div class="card">
-                                                <div class="teacher-search-filter">
-                                                    <div class="search-field">
-                                                        <span class="icon-box">
-                                                            <img src="/assets/default/svgs/search.svg" alt="search">
-                                                        </span>
-                                                        <input type="text" class="search-students" placeholder="Search Students">
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="card-header">
                                                     <div class="bulk-actions">
                                                         <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
@@ -274,20 +267,32 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="invite-faculty">
-                                                        <div class="dropdown-box">
-                                                            <div class="dropdown">
-                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                    Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                                                </a>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                                    <a data-class_id="{{$class->id}}" class="dropdown-item unlink-students" href="javascript:;"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                    <div class="teacher-search-filter-holder ml-auto d-inline-flex align-items-center">
+                                                        <div class="teacher-search-filter border-0 p-0">
+                                                            <div class="search-field">
+                                                                <span class="icon-box">
+                                                                    <img src="/assets/default/svgs/search.svg" alt="search">
+                                                                </span>
+                                                                <input type="text" class="search-students" placeholder="Search Students">
+                                                            </div>
+                                                        </div>
+                                                        <div class="invite-faculty">
+                                                            <div class="dropdown-box">
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                        Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                                    </a>
+                                                                    <div class="dropdown-menu">
+                                                                        <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                        <a data-class_id="{{$class->id}}" class="dropdown-item unlink-students" href="javascript:;"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    
+                                                    
                                                 </div>
                                                 <div class="card-body p-0 table-sm">
                                                     <table class="table mb-0">
