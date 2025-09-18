@@ -2036,9 +2036,9 @@ output {font-weight: bold; color: #333;}
 .topic-parts-data .part-tr td:first-child {padding-left: 55px !important;}
 .topic-parts-data .levels-tr td:first-child {padding-left: 55px !important;}
 .topic-parts-data .table:not(.table-sm) thead th {text-transform: uppercase; font-weight: 600; font-size: 14px;}
-.topic-parts-data .table:not(.table-sm) thead th.table-col-orange {background-color: #fff3cd; border-bottom: 2px solid #f6b700;}
-.topic-parts-data .table:not(.table-sm) thead th.table-col-red {background-color: #f8d7da; border-bottom: 2px solid #721c24;}
-.topic-parts-data .table:not(.table-sm) thead th.table-col-yellow {background-color: #f3f374; border-bottom: 2px solid #74741e;}
+.topic-parts-data .table:not(.table-sm) thead th.table-col-orange {background-color: #fff3cd; border-bottom: 2px solid #f6b700 !important;}
+.topic-parts-data .table:not(.table-sm) thead th.table-col-red {background-color: #f8d7da; border-bottom: 2px solid #721c24 !important;}
+.topic-parts-data .table:not(.table-sm) thead th.table-col-yellow {background-color: #f3f374; border-bottom: 2px solid #74741e !important;}
 .topic-parts-data table tr td.table-col-pending {background-color: #fcfcfc;}
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top th {text-align: left !important; font-weight: bold; font-size: 15px; border-bottom: 0; height: auto; padding-bottom: 5px; padding-top: 15px; color: #333;}
 .prompt-text:empty{display: none;}
