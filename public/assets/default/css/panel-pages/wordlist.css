@@ -117,7 +117,7 @@ body .spell-question-area .question-label span {text-align: center;}
 /*Spells, rurera.com/spells/ Subscription-Modal Style End*/
 
 /*Spellings Landing page Style Start*/
-.spell-levels .progress-star {height: 20px; width: 20px; border-radius: 100%; text-align: center; display: inline-flex; align-items: center; justify-content: center; position: absolute; padding: 0; margin: 4px 0 0 8px;}
+.spell-levels .progress-star {background-color: var(--blue); height: 20px; width: 20px; border-radius: 100%; text-align: center; display: inline-flex; align-items: center; justify-content: center; position: absolute; padding: 0; margin: 4px 0 0 8px;}
 .progress-star img {max-width: 100%; width: 10px; height: 10px; object-fit: contain;}
 .spell-levels .progress-star.success {background-color: #7aaf77;}
 .spell-levels .progress-star.danger {background-color: #eb4343;}
@@ -159,7 +159,7 @@ body .spell-question-area .question-label span {text-align: center;}
 .words-count {background-color: #fff; border: 1px solid #e5e5e5; border-radius: 8px; min-width: 160px; text-align: center; min-height: 46px; display: inline-flex; align-items: center; justify-content: center; line-height: normal; border-bottom-width: 4px; color: #9b9b9b; font-weight: 700;}
 .words-count span {margin-right: 5px;}
 .words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
-.spell-links {display: flex; gap: 15px 40px; align-items: center; margin-top: 20px; margin-bottom: 10px;}
+.spell-links {display: flex; gap: 15px 40px; align-items: center; margin-top: 10px; margin-bottom: 10px;}
 .spell-links a {color: var(--primary);}
 .spell-links .rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {margin-top: 15px;}
 /*Spellings Landing page Style End*/
