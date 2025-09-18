@@ -1911,7 +1911,7 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 .template-box .card-icon {height: calc(100% - 50px); display: flex; flex-direction: column; position: relative; margin-bottom: 25px; overflow: hidden; cursor: pointer; border-bottom: 1px solid #ddd; padding-bottom: 25px;}
 .template-box .card-icon:before {content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 100%; pointer-events: none; display: flex; justify-content: center; align-items: center; background-image: url(/assets/default/svgs/zoom2.svg); transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s; background-size: 10%; background-repeat: no-repeat; background-position: center; opacity: 0; visibility: hidden; margin-top: -10px;}
 .template-box .card-icon:hover:before {opacity: 0.3; visibility: visible; margin-top: 0;}
-.template-controls .template-btn {background-color: inherit; border: 1px solid var(--blue); padding: 6px 10px; border-radius: 5px; color: var(--blue); outline: none; white-space: nowrap;}
+.template-controls .template-btn {background-color: inherit; border: 1px solid var(--blue); padding: 6px 10px; border-radius: 5px; color: var(--blue); outline: none; white-space: nowrap; line-height: normal;}
 .template-controls .template-btn:hover,
 .template-item.active .template-controls .template-btn {background-color: var(--blue); color: var(--white);}
 .template-controls .preview-template-btn {color: var(--purple); outline: none; padding: 0; background-color: inherit; border: 0; text-align: left; line-height: normal;}
