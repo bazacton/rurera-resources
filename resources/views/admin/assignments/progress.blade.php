@@ -274,70 +274,69 @@ $QuestionsAttemptController = new QuestionsAttemptController();
         </div>
     </div>
     <div class="section-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped font-14">
-                                    <tr>
-                                        <th class="text-center">Student</th>
-                                        <th class="text-center">Attempts</th>
-                                        <th class="text-center">Last Activity</th>
-                                    </tr>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped font-14">
+                                <tr>
+                                    <th class="text-center">Student</th>
+                                    <th class="text-center">Attempts</th>
+                                    <th class="text-center">Last Activity</th>
+                                </tr>
 
-                                    @if( $assignmentObj->students->count() > 0)
-                                        @foreach( $assignmentObj->students as $assignmentTopicObj)
-                                            <tr>
-                                                <td>
-                                                    <span>{{$assignmentTopicObj->user->get_full_name()}}</span>
-                                                </td>
-                                                <td>
-                                                    @php $attempt_counter = 1; $counter = 1; @endphp
-                                                    @foreach( $assignmentTopicObj->AssignmentResults as $resultObj)
+                                @if( $assignmentObj->students->count() > 0)
+                                    @foreach( $assignmentObj->students as $assignmentTopicObj)
+                                        <tr>
+                                            <td>
+                                                <span>{{$assignmentTopicObj->user->get_full_name()}}</span>
+                                            </td>
+                                            <td>
+                                                @php $attempt_counter = 1; $counter = 1; @endphp
+                                                @foreach( $assignmentTopicObj->AssignmentResults as $resultObj)
 
-                                                        @php
-                                                        $parent_type = isset( $resultObj->quiz_result_type )? $resultObj->quiz_result_type : '';
+                                                    @php
+                                                    $parent_type = isset( $resultObj->quiz_result_type )? $resultObj->quiz_result_type : '';
 
-                                                        $detail_link = '';
-                                                        if( $parent_type == 'practice' || $parent_type == 'sats' || $parent_type == '11plus' || $parent_type == 'assessment' || $parent_type == 'book_page' || $parent_type == 'vocabulary' || $parent_type == 'assignment'){
-                                                            $detail_link = '/panel/quizzes/'.$resultObj->id.'/check_answers';
-                                                        }
-                                                        if( $parent_type == 'timestables' || $parent_type == 'timestables_assignment'){
-                                                            $detail_link = '/panel/results/'.$resultObj->id.'/timetables';
-                                                        }
-                                                        $assignment_percentage = $QuestionsAttemptController->get_percetange_corrct_answer($resultObj);
-                                                        @endphp
+                                                    $detail_link = '';
+                                                    if( $parent_type == 'practice' || $parent_type == 'sats' || $parent_type == '11plus' || $parent_type == 'assessment' || $parent_type == 'book_page' || $parent_type == 'vocabulary' || $parent_type == 'assignment'){
+                                                        $detail_link = '/panel/quizzes/'.$resultObj->id.'/check_answers';
+                                                    }
+                                                    if( $parent_type == 'timestables' || $parent_type == 'timestables_assignment'){
+                                                        $detail_link = '/panel/results/'.$resultObj->id.'/timetables';
+                                                    }
+                                                    $assignment_percentage = $QuestionsAttemptController->get_percetange_corrct_answer($resultObj);
+                                                    @endphp
 
-                                                       <a href="{{$detail_link}}" class="progrss-bar"><span class="progrss-bar-span" style="width:{{$assignment_percentage}}%" title="{{$assignment_percentage}}%"></span></a>
-                                                       @php $attempt_counter++; @endphp
+                                                    <a href="{{$detail_link}}" class="progrss-bar"><span class="progrss-bar-span" style="width:{{$assignment_percentage}}%" title="{{$assignment_percentage}}%"></span></a>
+                                                    @php $attempt_counter++; @endphp
 
-                                                    @endforeach
-                                                    @while($counter <= ($assignmentObj->no_of_attempts - $assignmentTopicObj->AssignmentResults->count()))
-                                                        <a href="javascript:;" class="progrss-bar"><span class="progrss-bar-span" style="width:0%"></span></a>
-                                                    @php $counter++; @endphp
-                                                    @endwhile
-                                                </td>
+                                                @endforeach
+                                                @while($counter <= ($assignmentObj->no_of_attempts - $assignmentTopicObj->AssignmentResults->count()))
+                                                    <a href="javascript:;" class="progrss-bar"><span class="progrss-bar-span" style="width:0%"></span></a>
+                                                @php $counter++; @endphp
+                                                @endwhile
+                                            </td>
 
-                                                <td>
-                                                    @if( $assignmentTopicObj->updated_at != '')
-                                                        <span>{{ dateTimeFormat($assignmentTopicObj->updated_at, 'j M y') }}</span>
-                                                    @endif
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    @endif
+                                            <td>
+                                                @if( $assignmentTopicObj->updated_at != '')
+                                                    <span>{{ dateTimeFormat($assignmentTopicObj->updated_at, 'j M y') }}</span>
+                                                @endif
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @endif
 
 
-                                </table>
-                            </div>
-
+                            </table>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </section>
 @endsection
 
