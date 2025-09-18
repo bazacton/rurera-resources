@@ -92,10 +92,10 @@
 </section>
 
 <section class="mb-0 school-zone-data leaderboard-data rurera-hide">
-    <div class="container">
+    <div class="container px-0">
         <div class="row">
             <div class="col-12">
-                <div class="section-title mb-30 text-center"><h2>Ranking</h2></div>
+                <div class="section-title mb-30"><h2>Ranking</h2></div>
             </div>
             @if( (5 - $results_data->count()) > 0)
                 <div class="col-12">
