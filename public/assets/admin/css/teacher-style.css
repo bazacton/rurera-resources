@@ -1515,8 +1515,9 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     height: 0;
     opacity: 0;
 }
-.create-class-modal .admin-rurera-tabs li {margin-right: 0;}
-.create-class-modal .admin-rurera-tabs .nav-link, .create-class-modal .admin-rurera-tabs.nav-pills .nav-link {padding-left: 10px; padding-right: 10px;}
+.create-class-modal .admin-rurera-tabs li {margin-right: 20px;}
+.create-class-modal .admin-rurera-tabs li:last-child {margin-right: 0;}
+.create-class-modal .admin-rurera-tabs .nav-link, .create-class-modal .admin-rurera-tabs.nav-pills .nav-link {padding-left: 0; padding-right: 0;}
 /* Admin Create-Class-Modal Style End */
 
 /* Admin Create-Google-Class-Modal Style Start */
