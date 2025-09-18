@@ -9,23 +9,27 @@
 @section('content')
 
 <section class="section">
+	<div class="section-header pb-0">
+		<div class="heading-holder">
+			<h1 class="mb-0">Import Questions</h1>
+			<div class="section-header-breadcrumb mt-10 hide-for-mobile">
+				<div class="breadcrumb-item">{{$QuestionsBulkListObj->category->getTitleAttribute()}}</div>
+				<div class="breadcrumb-item">{{$QuestionsBulkListObj->subject->getTitleAttribute()}}</div>
+				<div class="breadcrumb-item">{{$QuestionsBulkListObj->chapter->title}}</div>
+				<div class="breadcrumb-item active">{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</div>
+			</div>
+			<div class="section-header-breadcrumb">
+				<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+				</div>
+				<div class="breadcrumb-item">Import Questions</div>
+			</div>
+		</div>
+		
+	</div>
 	<div class="row">
 		<div class="col-md-12 col-lg-12">
 			<div class="progress-wrapper mb-30">
-				<div class="section-header pb-0">
-					<h1 class="mb-0">Import Questions</h1>
-					<div class="section-header-breadcrumb mt-10 hide-for-mobile">
-						<div class="breadcrumb-item">{{$QuestionsBulkListObj->category->getTitleAttribute()}}</div>
-						<div class="breadcrumb-item">{{$QuestionsBulkListObj->subject->getTitleAttribute()}}</div>
-						<div class="breadcrumb-item">{{$QuestionsBulkListObj->chapter->title}}</div>
-						<div class="breadcrumb-item active">{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</div>
-					</div>
-					<div class="section-header-breadcrumb">
-						<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
-						</div>
-						<div class="breadcrumb-item">Import Questions</div>
-					</div>
-				</div>
+				
 				<div class="progress-holder">
 					<div class="progress-box">
 						<div class="circle_percent" data-percent="35">
