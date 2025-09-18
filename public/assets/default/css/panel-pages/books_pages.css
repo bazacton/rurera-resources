@@ -74,7 +74,10 @@ Sub Pages Style
 .panel-content .lms-books-listing .listing-card {border-bottom: 1px solid #ddd; padding: 0 0 25px; margin-bottom: 20px; position: relative;}
 .lms-books-listing .listing-card .img-holder {height: 100%;}
 .lms-books-listing .listing-card figure {position: relative; overflow: hidden; border-radius: 5px; text-align: center; height: 100%;display: flex;align-items: center;}
-.lms-books-listing .listing-card .img-holder img {border-radius: 5px; max-width: 100%; object-fit: contain; height: auto;}
+.lms-books-listing .listing-card .img-holder figure > a {
+    height: 100%;
+}
+.lms-books-listing .listing-card .img-holder img {border-radius: 5px; max-width: 100%; object-fit: cover; height: 100%;}
 .lms-books-listing .listing-card .text-holder li img {width: 20px; display: inline-block; vertical-align: bottom;}
 .lms-books-listing .listing-card .text-holder {position: relative;}
 .lms-books-listing .listing-card .text-holder ul { margin: 0; padding: 0;}
