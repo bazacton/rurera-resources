@@ -1320,20 +1320,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .rureraform-element input.input-simple:focus::-webkit-input-placeholder {color: transparent;}
 .input-holder .input-label {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
 .input_line {border-right: 0 !important; border-top: 0 !important; border-left: 0 !important; border-color: #000; border-radius: 0;}
-#question_preview .question-layout .input_line input[type="text"] {
-    height: auto;
-    padding: 0;
-    border-radius: 0;
-    border-bottom: 1px solid;
-    outline: none;
-    background-color: inherit;
-    text-align: center;
-}
-#question_preview .question-layout .input_line:has(input) {
-    padding: 0;
-    border-radius: 0;
-    background-color: inherit;
-}
+#question_preview .question-layout .input_line input[type="text"] {height: auto; padding: 0; border-radius: 0; border-bottom: 1px solid; outline: none; background-color: inherit; text-align: center;}
+#question_preview .question-layout .input_line:has(input) {padding: 0; border-radius: 0; background-color: inherit;}
 .input-holder .input-label.right,
 .input-holder input ~ .input-label {right: 10px;left: auto;}
 .input-holder input[type="number"] ~ .input-label {right: 10px;}
@@ -1637,23 +1625,11 @@ body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin
 .keyword-buttons button {border: none; border-radius: 4px; cursor: pointer; font-size: 16px; background: none; line-height: 16px; outline: none;}
 .question-keywords-block .keyword-buttons {margin-left: auto; display: inline-flex; align-items: center; gap: 4px;}
 /* Up button questions-generator/view-api style */
-.move-up-keyword {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    transition: background-color 0.2s ease;
-}
-.move-up-keyword:hover {
-    background-color: #45a049;
-}
+.move-up-keyword {background-color: #4CAF50; color: white; transition: background-color 0.2s ease;}
+.move-up-keyword:hover {background-color: #45a049;}
 /* Down button questions-generator/view-api style */
-.move-down-keyword {
-    background-color: #2196F3; /* Blue */
-    color: white;
-    transition: background-color 0.2s ease;
-}
-.move-down-keyword:hover {
-    background-color: #1976D2;
-}
+.move-down-keyword {background-color: #2196F3; color: white; transition: background-color 0.2s ease;}
+.move-down-keyword:hover {background-color: #1976D2;}
 /* Delete button questions-generator/view-api style */
 .remove-keyword {
     color: #f44336;
