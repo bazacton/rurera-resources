@@ -179,21 +179,18 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-radio-select label {margin: 0; border: 2px solid #ddd; border-bottom-width: 4px; min-height: 50px; display: inline-flex; align-items: center; border-radius: 8px; cursor: pointer; overflow: hidden; position: relative; z-index: 1; padding: 0 15px; -webkit-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;width: 100%;}
 .lms-radio-select.inline-fields .field-holder label {width: 100%;}
 .lms-radio-select label:hover {background-color: rgba(0,0,0,0.05);}
-.lms-radio-select .field-holder.wrong label {border-color: #E85656;}
+.lms-radio-select .field-holder.wrong label {border-color: #ff4a4a;}
 .lms-radio-select .wrong input[type=radio]:checked~label,
 .question-result-layout .form-field.wrong label,
 .form-field.wrong input[type="checkbox"]:checked ~ label {
-    border-color: #E85656;
-    background: #FDEBEB !important;
+    border-color: #c23131;
 }
 .lms-radio-select .correct input[type=radio] ~ label,
 .lms-radio-select .correct input[type=radio]:checked~label,
 .question-result-layout .form-field.correct ,
 .form-field.correct input[type="checkbox"]:checked ~ label,
 .question-result-layout .form-field.correct label {
-    border-color: #44ae54;
-    background-color: #c3f7cb !important;
-    color: #333;
+    border-color: #287834;
 }
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
 .lms-radio-select input[type=radio]:checked~label {background-color: #e8e8e8; border-color: #a0a0a0;}
@@ -1696,7 +1693,7 @@ Question Result Page Style Start
 .question-result-layout .rureraform-element:has(.input-holder.input_box ~ .input-holder.input_box),
 .question-result-layout .rureraform-element:has(select ~ select) {line-height: 44px;}
 .question-result-layout .alphabet-list-style .wrong.form-field:before,
-.question-result-layout .alphabet-list-style .correct.form-field:before {color: #333; border-color: #333;}
+.question-result-layout .alphabet-list-style .correct.form-field:before {color: #fff;}
 .question-result-layout .rureraform-element {outline: none !important;}
 .question-result-layout .rureraform-col-12 {padding: 0 0 10px;}
 /****************************************** 
