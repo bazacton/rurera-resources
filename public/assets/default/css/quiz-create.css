@@ -771,6 +771,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-properties-label label {font-weight: 400; margin-bottom: 0;}
 .lms-quiz-create .rureraform-properties-tooltip {display: inline-block;	font-size: 18px;width: 2em;	min-width: 2em;	text-align: left; vertical-align: middle;}
 .lms-quiz-create .rureraform-tooltip-content {display: none;}
+.lms-quiz-create .rureraform-properties-content .note-editor.card {margin: 0;}
 /* Admin Popup properties Item Style End */
 /* Admin Popup properties Content Style Start */
 .lms-quiz-create .rureraform-properties-content>div.rureraform-properties-line:last-of-type {margin-bottom: 0;}
