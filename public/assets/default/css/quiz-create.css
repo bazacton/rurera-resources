@@ -696,7 +696,8 @@ Questions Builder Right Sidebar Style Start
     transform: scale(-1);
 }
 .lms-quiz-create .rureraform-admin-popup-overlay {position: fixed !important; z-index: 99980; top: 0;	left: 0; height: 100%; width: 100%; background-position: center center; background: rgba(0,0,0,0.8);display: none;}
-.lms-quiz-create .rureraform-admin-popup {box-sizing: border-box; z-index: 99981; width: 100%; height: auto; background: #ffffff; display: none; overflow: hidden;}
+.lms-quiz-create .rureraform-admin-popup {box-sizing: border-box; z-index: 99981; width: 100%; height: auto; background: #ffffff; display: block !important; overflow: hidden; opacity: 0; transition: 0.5s ease-in;}
+.lms-quiz-create .rureraform-admin-popup.active {opacity: 1;}
 .lms-quiz-create .rureraform-admin-popup * {box-sizing: border-box;}
 .note-dropdown-menu h1, 
 .note-dropdown-menu h2, 
