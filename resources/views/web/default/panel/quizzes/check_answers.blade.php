@@ -20,12 +20,14 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <style>
 .field-holder.correct, .form-field.correct, .form-field.correct label {
-    background: #70c17c !important;
-    color: #fff;
+    background: #d7fbdf !important;
+    color: #333;
+    border-color: #5ace75;
 }
 .field-holder.wrong, .form-field.wrong, .form-field.wrong label {
-    background: #ff4a4a !important;
-    color: #fff;
+    background: #fae3e5 !important;
+    color: #333;
+    border-color: #f97d89;
 }
 </style>
 @endpush
