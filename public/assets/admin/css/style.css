@@ -1285,6 +1285,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .edit-questions-difficulty-data .admin-rurera-tabs li {margin-right: 0;}
 .edit-questions-difficulty-data .admin-rurera-tabs.nav-pills li .nav-link.active {border-bottom: 1px solid #fff; background-color: #fff;}
 .edit-questions-difficulty-tabs {margin-top: 30px;}
+.rurera-processing .edit-questions-difficulty-tabs {padding: 25px;}
 .edit-questions-difficulty-tabs .questions-nav-bar {padding: 25px; background-color: #FFF; border: 1px solid #ddd;}
 .edit-questions-difficulty-tabs .lms-quiz-create > .row {margin: 0;}
 .edit-questions-difficulty-tabs .admin-rurera-tabs {margin: 0 0 -1px !important; border: 1px solid #ddd; display: inline-flex; width: auto; padding-right: 0; border-right: 0; border-bottom: 0;}
