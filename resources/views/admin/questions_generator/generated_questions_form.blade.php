@@ -146,7 +146,7 @@ $rand_id = rand(999,99999);
 	<h2>{{$QuestionsBulkListObj->quizData->getTitleAttribute()}}</h2>
 @else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
-<div class="title-search-field d-flex align-items-center justify-content-between mt-30">
+<div class="title-search-field d-flex align-items-center justify-content-between mt-10">
 <h1>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h1>  <div class="form-group mb-0">
         <label>Select Topic Part</label>
         <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
