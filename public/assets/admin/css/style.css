@@ -2236,60 +2236,19 @@ Admin Questions Generator Page Style End
 .admin_role:has(.webinar-form) .select-icon .select2-selection__placeholder .badge {display: none;}
 .admin_role:has(.webinar-form) .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {border: 0; margin-top: -1px; padding-right: 2px; padding-left: 2px;}
 
-
-.accordion-row .sub-topic-modal .panel-collapse {
-    border: 0;
-    padding: 0 0 35px;
-    margin: 0;
-}
-.accordion-row .sub-topic-modal .modal-body {
-    padding: 0 20px 10px;
-}
-.accordion-row .sub-topic-modal .close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 1;
-}
-.sub-topic-modal .mt-20:has(.js-submit-quiz-form) {
-    margin-top: 0 !important;
-    position: absolute;
-    bottom: 0;
-}
-.sub-topic-modal-btn {
-    border: 0;
-    padding: 0;
-    background-color: inherit;
-}
-.sub-topic-modal .js-switch-parent .js-switch {
-    margin: 0;
-}
-.rurera-webinar-tabs .nav {
-    gap: 0 30px;
-    border-bottom: 2px solid #f6f6f6;
-}
-.rurera-webinar-tabs .nav-link {
-    font-size: 15px;
-    border: 0;
-    padding: 0 0 12px;
-    background-color: inherit;
-    color: #6c6b71;
-    font-weight: 600;
-    line-height: normal;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -2px;
-    outline: none;
-}
-.rurera-webinar-tabs .nav-link.active {
-    color: var(--blue);
-    border-bottom-color: var(--blue);
-}
-.rurera-webinar-tabs section[class*="mt-"] {
-    margin-top: 30px !important;
-}
-.rurera-webinar-tabs .tab-pane {
-    padding: 0;
-}
+/* Admin Webinars Topics Accrdions Style Start */
+.accordion-row .sub-topic-modal .panel-collapse {border: 0; padding: 0 0 35px; margin: 0;}
+.accordion-row .sub-topic-modal .modal-body {padding: 0 20px 10px;}
+.accordion-row .sub-topic-modal .close {position: absolute; right: 10px; top: 10px; z-index: 1;}
+.sub-topic-modal .mt-20:has(.js-submit-quiz-form) {margin-top: 0 !important; position: absolute; bottom: 0;}
+.sub-topic-modal-btn {border: 0; padding: 0; background-color: inherit;}
+.sub-topic-modal .js-switch-parent .js-switch {margin: 0;}
+.rurera-webinar-tabs .nav {gap: 0 30px; border-bottom: 2px solid #f6f6f6;}
+.rurera-webinar-tabs .nav-link {font-size: 15px; border: 0; padding: 0 0 12px; background-color: inherit; color: #6c6b71; font-weight: 600; line-height: normal; border-bottom: 2px solid transparent; margin-bottom: -2px; outline: none;}
+.rurera-webinar-tabs .nav-link.active {color: var(--blue); border-bottom-color: var(--blue);}
+.rurera-webinar-tabs section[class*="mt-"] {margin-top: 30px !important;}
+.rurera-webinar-tabs .tab-pane {padding: 0;}
+/* Admin Webinars Topics Accrdions Style End */
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
