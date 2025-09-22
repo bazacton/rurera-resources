@@ -760,6 +760,19 @@ button.member-selected-btn {
 .rurera-search-filters .dropdown-submenu:last-child .dropdown-link {
     border-radius: 0 0 10px 10px;
 }
+.school-add-edit-modal .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  margin-bottom: 5px;
+}
+.school-add-edit-modal .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  border-left: 1px solid #aaa;
+  border-right: 0;
+}
+.school-add-edit-modal .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 /* Admin_teacher new Style End */
 
 /* User Setting Page Style Start */
