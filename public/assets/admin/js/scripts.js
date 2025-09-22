@@ -452,6 +452,16 @@ $(function () {
     if (jQuery().select2) {
         $(".select2").select2();
     }
+    $('#edit-student-modal').on('shown.bs.modal', function () {
+        if ($.fn.select2) {
+            $(".select2").select2({
+                dropdownParent: $('#edit-student-modal')
+            }).on('change', function (e) {
+                const selectedValue = $(this).val();
+                console.log("Selected value:", selectedValue);
+            });
+        }
+    });
 
     // Selectric
     if (jQuery().selectric) {
