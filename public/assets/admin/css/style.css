@@ -2210,78 +2210,20 @@ Admin Questions Generator Page Style End
 .rureraform-context-menu {display: none;}
 /* Webinars Page style start */
 .draggable-lists-chapter li {border: 1px solid #ddd;}
-
 .draggable-lists-chapter .btn svg,
-.draggable-lists-chapter button svg {
-    stroke: #6c757d;
-}
-.draggable-content-lists li.sub-chapter-parent {
-    background-color: inherit !important;
-    color: currentColor;
-}
-
-.draggable-content-lists li.sub-chapter-parent:first-child {
-    margin-top: 0 !important;
-}
-.draggable-content-lists button {
-    outline: none;
-}
-.form-group select.questions_types.custom-select {
-    height: calc(2.25rem + 2px);
-}
-.webinar-form .form-group textarea.form-control {
-    max-height: 38px;
-}
-.webinar-form .form-group .select2-container--default .select2-selection--multiple {
-    padding-bottom: 0;
-    min-height: 38px;
-}
-.webinar-form .form-group .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    margin-bottom: 5px;
-    line-height: normal;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0.08);
-    padding: 2px 5px;
-    border-radius: 30px;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-.admin_role:has(.webinar-form) .select2-results__option {
-  padding-right: 20px;
-  vertical-align: middle;
-}
-.admin_role:has(.webinar-form) .select2-results__option:before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  height: 18px;
-  width: 18px;
-  border: 2px solid #e9e9e9;
-  border-radius: 4px;
-  background-color: #fff;
-  margin-right: 10px;
-  vertical-align: middle;
-  margin-left: 10px;
-  line-height: 20px;
-  text-align: center;
-}
-.admin_role:has(.webinar-form) .select2-results__option.select2-results__option--selected:before {
-  content: "\2713";
-  color: #fff;
-  background-color: var(--blue);
-  border: 0;
-  display: inline-block;
-}
-.admin_role:has(.webinar-form) .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
-	border-radius: 4px 4px 0 0;
-    border-color: #95a0f4;
-}
-.admin_role:has(.webinar-form) .select2-container--default.select2-container--focus .select2-selection--multiple {
-	border-color: #95a0f4;
-	border-width: 1px;
-    background-color: #fefeff;
-}
+.draggable-lists-chapter button svg {stroke: #6c757d;}
+.draggable-content-lists li.sub-chapter-parent {background-color: inherit !important; color: currentColor;}
+.draggable-content-lists li.sub-chapter-parent:first-child {margin-top: 0 !important;}
+.draggable-content-lists button {outline: none;}
+.form-group select.questions_types.custom-select {height: calc(2.25rem + 2px);}
+.webinar-form .form-group textarea.form-control {max-height: 38px;}
+.webinar-form .form-group .select2-container--default .select2-selection--multiple {padding-bottom: 0; min-height: 38px;}
+.webinar-form .form-group .select2-container--default .select2-selection--multiple .select2-selection__choice {margin-bottom: 5px; line-height: normal; border: 0; background-color: rgba(0, 0, 0, 0.08); padding: 2px 5px; border-radius: 30px; display: inline-flex; align-items: center; flex-direction: row-reverse;}
+.admin_role:has(.webinar-form) .select2-results__option {padding-right: 20px; vertical-align: middle;}
+.admin_role:has(.webinar-form) .select2-results__option:before {content: ""; display: inline-block; position: relative; height: 18px; width: 18px; border: 2px solid #e9e9e9; border-radius: 4px; background-color: #fff; margin-right: 10px; vertical-align: middle; margin-left: 10px; line-height: 20px; text-align: center;}
+.admin_role:has(.webinar-form) .select2-results__option.select2-results__option--selected:before {content: "\2713"; color: #fff; background-color: var(--blue); border: 0; display: inline-block;}
+.admin_role:has(.webinar-form) .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {border-radius: 4px 4px 0 0; border-color: #95a0f4;}
+.admin_role:has(.webinar-form) .select2-container--default.select2-container--focus .select2-selection--multiple {border-color: #95a0f4; border-width: 1px; background-color: #fefeff;}
 .admin_role:has(.webinar-form) .select2-container--default .select2-selection--multiple {
 	border-width: 1px;
 }
