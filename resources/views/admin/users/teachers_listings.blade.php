@@ -1,14 +1,6 @@
 <div class="teacher-table skeleton">
     <div class="card">
-        <div class="teacher-search-filter">
-
-            <div class="search-field">
-                                                    <span class="icon-box">
-                                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                                    </span>
-                <input type="text" class="search-teachers" placeholder="Search Teachers">
-            </div>
-        </div>
+        
         <div class="card-header">
             @if(!isset($class) || $class->google_id == 0)
             <div class="bulk-actions">
@@ -26,21 +18,32 @@
             </div>
             @endif
 
-            @if(!isset($class) || $class->google_id == 0)
-            <div class="invite-faculty">
-                <div class="dropdown-box">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                            Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                            <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+            
+            <div class="teacher-search-filter-holder ml-auto d-inline-flex align-items-center">
+                @if(!isset($class) || $class->google_id == 0)
+                <div class="invite-faculty">
+                    <div class="dropdown-box">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+                                <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                @endif
+                <div class="teacher-search-filter border-0 p-0">
+                    <div class="search-field">
+                        <span class="icon-box">
+                            <img src="/assets/default/svgs/search.svg" alt="search">
+                        </span>
+                        <input type="text" class="search-teachers" placeholder="Search Teachers">
+                    </div>
+                </div>
             </div>
-            @endif
         </div>
         <div class="card-body p-0 table-sm">
             <table class="table mb-0">
