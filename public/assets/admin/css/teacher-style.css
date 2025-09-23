@@ -2706,6 +2706,7 @@ New Quiz Page Style Start
     background-color: #fff;
     padding: 6px 25px;
     border-radius: 3px;
+    white-space: nowrap;
 }
 .quiz-data-slide {
     transition: 0.5s ease-in;
