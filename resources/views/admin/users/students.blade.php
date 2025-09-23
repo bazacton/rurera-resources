@@ -16,10 +16,6 @@
                         <div class="breadcrumb-item"><a href="/admin/students">Students</a></div>
                     </div>
                 </div>
-
-                <div class="teacher-search-filter d-inline-flex p-0 border-0 ml-auto">
-                    <button type="button" class="add-student-btn" data-toggle="modal" data-target="#add-student-modal"> Add Student</button>
-                </div>
             </div>
         </section>
 
