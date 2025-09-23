@@ -2704,7 +2704,7 @@ New Quiz Page Style Start
 .quiz-data-controls button {
     border: 1px solid #ddd;
     background-color: #fff;
-    padding: 6px 25px;
+    padding: 6px 15px;
     border-radius: 3px;
     white-space: nowrap;
 }
