@@ -1067,8 +1067,6 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     border-radius: 10px;
     border: 3px solid #F54A00;
     padding: 15px;
-    max-width: 340px;
-    min-width: 340px;
     height: 100%;
 }
 .payment-logo img {object-fit: contain;}
