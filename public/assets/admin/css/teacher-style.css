@@ -4551,6 +4551,7 @@ span.field-separated span:after {
 }
 .rureraform-search-field:has(.search-filters) {
     flex-wrap: nowrap;
+    align-items: center;
 }
 .rureraform-search-field .search-filters {
     max-width: 65%;
