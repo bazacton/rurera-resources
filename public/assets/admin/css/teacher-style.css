@@ -7903,19 +7903,19 @@ button.print-download-btn {
 .test-card {border: 1px solid #ddd; border-radius: 5px; overflow: hidden; position: relative; margin: 0 0 30px;}
 .verbal-reasoning-test {margin-top: 30px; margin-bottom: 30px;}
 .test-card .answer-number {background-color: #f0f0fd; display: block; color: var(--blue); padding: 8px 10px; min-width: 38px; text-align: center; margin: 0; font-size: 20px; position: relative; z-index: 1; line-height: normal;}
-.checkbox-field {
+.test-card .checkbox-field {
     position: relative;
     padding: 5px 10px 5px;
     z-index: 1;
 }
-.checkbox-field input[type=checkbox] {
+.test-card .checkbox-field input[type=checkbox] {
     position: absolute;
     margin: 0;
     width: 0;
     height: 0;
     opacity: 0;
 }
-.checkbox-field label {
+.test-card .checkbox-field label {
     margin: 0;
     position: relative;
     display: flex;
@@ -7926,13 +7926,13 @@ button.print-download-btn {
     font-weight: 600;
     cursor: pointer;
 }
-.checkbox-field label:after {
+.test-card .checkbox-field label:after {
     height: 15px;
     width: 30px;
     border: 2px solid var(--blue);
     content:"";
 }
-.checkbox-field label:before {
+.test-card .checkbox-field label:before {
     content: "";
     position: absolute;
     right: 0;
@@ -7946,7 +7946,7 @@ button.print-download-btn {
     -o-transition: all .5s;
     transform: translateY(-50%);
 }
-.checkbox-field input[type=checkbox]:checked ~ label:before {
+.test-card .checkbox-field input[type=checkbox]:checked ~ label:before {
     width: 30px;
 }
 .checkboxes-holder {
