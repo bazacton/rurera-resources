@@ -4545,17 +4545,17 @@ span.field-separated span:after {
     line-height: normal;
 }
 .rureraform-search-field:has(.search-filters) .input-field {
-    width: 37%;
-    flex: 0 0 37%;
+    width: 35%;
+    flex: 0 0 35%;
 }
 .rureraform-search-field:has(.search-filters) {
     flex-wrap: nowrap;
 }
 .rureraform-search-field .search-filters {
-    width: calc(100% - 38%);
+    width: calc(100% - 35%);
 }
 .rureraform-search-field .search-filters .select-field {
-    padding: 11px 10px;
+    padding: 10px 8px;
     line-height: normal;
 }
 .questions-header .icon-box img {
