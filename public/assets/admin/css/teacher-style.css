@@ -1061,9 +1061,6 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
 }
 .payment-card-holder [class*="col-"] {
     padding: 0 5px;
-    flex: 0 0 auto;
-    max-width: none;
-    width: auto;
     margin-bottom: 10px;
 }
 .payment-card {
