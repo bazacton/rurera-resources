@@ -1325,7 +1325,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .form-group:has(.classes_filter) {margin: 0 0 0 10px;}
 .select-holder:has(.classes_filter) {position: relative;}
 .select-holder:has(.classes_filter):after,
-.create-class-modal .select-holder:after {position: absolute; right: 10px; top: 50%; height: 7px; width: 7px; border: 2px dashed #ddd; content: ""; transform: rotate(45deg); border-top: 0; border-left: 0; margin-top: -4px; pointer-events: none;}
+.create-class-modal .select-holder:after {position: absolute; right: 10px; top: 50%; height: 7px; width: 7px; border: 2px solid #ddd; content: ""; transform: rotate(45deg); border-top: 0; border-left: 0; margin-top: -4px; pointer-events: none;}
 .create-class-modal .select-holder::after {border: 2px solid #aaa; width: 8px; height: 8px; right: 15px;}
 .select-holder:has(.classes_filter):after {right: 15px; z-index: 2;}
 .create-class-modal .select-holder:has(.select-box):after {display: none;}
