@@ -1072,6 +1072,7 @@ body .add-new-card form .form-group .form-field .form-control:-moz-placeholder {
     max-width: 340px;
     min-width: 340px;
     height: 100%;
+    margin-bottom: 15px;
 }
 .payment-logo img {object-fit: contain;}
 .payment-logo img[alt="visa"] {
