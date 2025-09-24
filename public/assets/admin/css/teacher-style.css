@@ -7395,6 +7395,7 @@ button.print-download-btn {
     background-color: #fff;
     border-color: #cad5e2;
 }
+.admin_teacher_role .has-border-dashed .select2-container--default .select2-selection--multiple {border-style: dashed;}
 .admin_teacher_role .select2-container--default .select2-selection--multiple:has(.select2-search__field:focus) {
     background-color: #fff;
     border-color: #e4e6fc;
