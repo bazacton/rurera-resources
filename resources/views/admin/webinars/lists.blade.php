@@ -351,19 +351,19 @@
                                                             @if($webinar->status == \App\Models\Webinar::$pending)
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/approve',
-                                                                    'btnClass' => 'd-flex align-items-center text-success text-decoration-none btn-transparent btn-sm mt-1',
+                                                                    'btnClass' => 'd-flex align-items-center text-success text-decoration-none btn-transparent btn-sm',
                                                                     'btnText' => '<i class="fa fa-check"></i><!--<span class="ml-2">'. trans("admin/main.approve") .'</span>-->'
                                                                     ])
 
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/reject',
-                                                                    'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm mt-1',
+                                                                    'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm',
                                                                     'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><!--<span>'. trans("admin/main.reject") .'</span>-->'
                                                                     ])
                                                             @elseif($webinar->status == \App\Models\Webinar::$active)
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/unpublish',
-                                                                    'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm mt-1',
+                                                                    'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm',
                                                                     'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><!-- <span> '. trans("admin/main.unpublish") .'</span>-->'
                                                                     ])
                                                             @endif
