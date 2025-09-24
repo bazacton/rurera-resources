@@ -2145,6 +2145,8 @@ Admin Questions Generator Page Style End
     height: auto;
     border: 0;
 }
+.webinars-list-controls a span i,
+.webinars-list-controls button span i {text-align: center;}
 /* Webinars Table Style End */
 
 /* Webinars Page style End */
