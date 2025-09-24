@@ -341,11 +341,11 @@
                                                 @endswitch
                                             </td>
                                             <td width="200" class="test">
-                                                <div class="btn-group dropdown table-actions">
-                                                    <button type="button" class="btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="btn-group table-actions webinars-list-controls">
+                                                    <!-- <button type="button" class="btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="fa fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                    </button> -->
+                                                    <div class="text-left webinars-lists-dropdown">
 
                                                         @can('admin_webinars_edit')
                                                             @if($webinar->status == \App\Models\Webinar::$pending)
