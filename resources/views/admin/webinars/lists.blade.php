@@ -241,7 +241,7 @@
 
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <div class="card px-0">
+                    <div class="card">
                         <div class="card-header">
                             @can('admin_webinars_export_excel')
                                 <div class="text-right">
@@ -250,9 +250,9 @@
                             @endcan
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body px-0">
                             <div>
-                                <table class="table table-striped font-14 ">
+                                <table class="table table-striped font-14">
                                     <tr>
                                         <th>{{trans('admin/main.id')}}</th>
                                         <th class="text-left">{{trans('admin/main.title')}}</th>
