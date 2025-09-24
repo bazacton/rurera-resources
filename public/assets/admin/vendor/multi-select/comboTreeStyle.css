@@ -186,7 +186,8 @@ div#selected-tags {
     color: red;
 }
 .multi-selection-dropdown {
-    min-width: 300px;
+    min-width: 250px;
+    margin-bottom: 15px;
 }
 .multi-selection-dropdown .ct-input-box {
     border: 0;
