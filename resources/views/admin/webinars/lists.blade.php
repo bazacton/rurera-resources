@@ -399,11 +399,9 @@
                                                         @endcan
 
                                                         @can('admin_webinars_edit')
-                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/edit" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary" title="{{ trans('admin/main.edit') }}" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit">
+                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/edit" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary" title="{{ trans('admin/main.edit') }}">
                                                                 <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
-                                                                <!-- <span class="ml-2">
-                                                                    {{ trans('admin/main.edit') }}
-                                                                </span> -->
+                                                                <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="{{ trans('admin/main.edit') }}"></span>
                                                             </a>
                                                         @endcan
 
