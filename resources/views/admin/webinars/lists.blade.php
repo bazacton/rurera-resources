@@ -257,7 +257,7 @@
                                             <th>{{trans('admin/main.updated_at')}}</th>
                                         @endif
                                         <th>{{trans('admin/main.status')}}</th>
-                                        <th width="120">{{trans('admin/main.actions')}}</th>
+                                         <th width="120"><!--{{trans('admin/main.actions')}}--></th> 
                                     </tr>
 
                                     @foreach($webinars as $webinar)
@@ -340,7 +340,7 @@
                                                         @break
                                                 @endswitch
                                             </td>
-                                            <td width="200" class="test">
+                                            <td width="200" class="">
                                                 <div class="btn-group table-actions webinars-list-controls">
                                                     <!-- <button type="button" class="btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="fa fa-ellipsis-v"></i>
