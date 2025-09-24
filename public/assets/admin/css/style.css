@@ -2132,6 +2132,12 @@ Admin Questions Generator Page Style End
 }
 .btn-group.webinars-list-controls {
     width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card-body .table tr:hover td .webinars-list-controls {
+    opacity: 1;
+    visibility: visible;
 }
 .webinars-list-controls button, .webinars-list-controls a {
     padding: 0;
