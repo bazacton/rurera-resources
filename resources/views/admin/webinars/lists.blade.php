@@ -400,8 +400,10 @@
 
                                                         @can('admin_webinars_edit')
                                                             <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/edit" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary" title="{{ trans('admin/main.edit') }}">
-                                                                <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
-                                                                <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="{{ trans('admin/main.edit') }}"></span>
+                                                                <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit">
+                                                                    <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                                    <!-- {{ trans('admin/main.edit') }} -->
+                                                                </span>
                                                             </a>
                                                         @endcan
 
@@ -409,7 +411,7 @@
                                                             @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/delete',
                                                                     'btnClass' => 'd-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm',
-                                                                    'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><!--<span class="ml-2">'. trans("admin/main.delete") .'</span>-->'
+                                                                    'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete"> <!-- '. trans("admin/main.delete") .'--> </span>'
                                                                     ])
                                                         @endcan
                                                     </div>
