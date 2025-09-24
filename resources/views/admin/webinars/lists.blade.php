@@ -231,7 +231,7 @@
                             <div class="col-md-3">
                                 <div class="form-group mt-1">
                                     <label class="input-label mb-4"> </label>
-                                    <input type="submit" class="text-center btn btn-primary w-100" value="{{trans('admin/main.show_results')}}">
+                                    <input type="submit" class="text-center btn btn-primary w-100" value="{{trans('admin/main.show_results')}}" style="height: 32px; box-shadow: none;">
                                 </div>
                             </div>
                         </div>
