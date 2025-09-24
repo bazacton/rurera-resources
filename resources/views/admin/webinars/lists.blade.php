@@ -411,7 +411,7 @@
                                                             @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/delete',
                                                                     'btnClass' => 'd-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm',
-                                                                    'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete"> <!-- '. trans("admin/main.delete") .'--> </span>'
+                                                                    'btnText' => '<span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"> <!-- '. trans("admin/main.delete") .'--> </span>'
                                                                     ])
                                                         @endcan
                                                     </div>
