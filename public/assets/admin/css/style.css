@@ -2120,6 +2120,18 @@ Admin Questions Generator Page Style End
 .rurera-webinar-tabs .tab-pane {padding: 0;}
 /* Admin Webinars Topics Accrdions Style End */
 
+/* Webinars Table Style Start */
+.card-body .webinars-list-controls .webinars-lists-dropdown {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btn-group.webinars-list-controls {
+    width: 100%;
+}
+/* Webinars Table Style End */
+
 /* Webinars Page style End */
 
 /* Admin Books Style Start */
