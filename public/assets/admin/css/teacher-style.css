@@ -7452,7 +7452,8 @@ button.print-download-btn {
 .select-holder {position: relative;}
 .card-body form select.form-control,
 .card-body form .select2-container--default .select2-selection--single,
-.card-body form .input-group .form-control, .card .card-body .create-assignment-form .class-section-data select.form-control {
+.card-body form .input-group .form-control, .card .card-body .create-assignment-form .class-section-data select.form-control,
+.card-body form .form-group .form-control {
     border: 1px dashed #cad5e2;
     background-color: #fff;
     border-radius: 5px;
