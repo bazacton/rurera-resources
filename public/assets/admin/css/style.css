@@ -2121,6 +2121,9 @@ Admin Questions Generator Page Style End
 /* Admin Webinars Topics Accrdions Style End */
 
 /* Webinars Table Style Start */
+.card-body .table td:has(.webinars-list-controls) {
+    min-width: 200px;
+}
 .card-body .webinars-list-controls .webinars-lists-dropdown {
     display: flex;
     margin: 0;
