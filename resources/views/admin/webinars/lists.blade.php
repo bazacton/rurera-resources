@@ -364,7 +364,7 @@
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/unpublish',
                                                                     'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm',
-                                                                    'btnText' => '<span> <!--'. trans("admin/main.unpublish") .'--> <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"></span>'
+                                                                    'btnText' => '<span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete"> <!--'. trans("admin/main.unpublish") .'--> <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"></span>'
                                                                     ])
                                                             @endif
                                                         @endcan
