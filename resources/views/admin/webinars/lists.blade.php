@@ -178,21 +178,24 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="input-label">{{trans('admin/main.category')}}</label>
-                                    <select name="category_id" data-plugin-selectTwo class="form-control populate">
-                                        <option value="">{{trans('admin/main.all_categories')}}</option>
+                                    <div class="select-holder">
+                                        <select name="category_id" data-plugin-selectTwo class="form-control populate">
+                                            <option value="">{{trans('admin/main.all_categories')}}</option>
 
-                                        @foreach($categories as $category)
-                                            @if(!empty($category->subCategories) and count($category->subCategories))
-                                                <optgroup label="{{  $category->title }}">
-                                                    @foreach($category->subCategories as $subCategory)
-                                                        <option value="{{ $subCategory->id }}" @if(request()->get('category_id') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                                    @endforeach
-                                                </optgroup>
-                                            @else
-                                                <option value="{{ $category->id }}" @if(request()->get('category_id') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                            @endif
-                                        @endforeach
-                                    </select>
+                                            @foreach($categories as $category)
+                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                    <optgroup label="{{  $category->title }}">
+                                                        @foreach($category->subCategories as $subCategory)
+                                                            <option value="{{ $subCategory->id }}" @if(request()->get('category_id') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                        @endforeach
+                                                    </optgroup>
+                                                @else
+                                                    <option value="{{ $category->id }}" @if(request()->get('category_id') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                @endif
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    
                                 </div>
                             </div>
 
