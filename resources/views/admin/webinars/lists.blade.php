@@ -410,7 +410,7 @@
                                                         @can('admin_webinars_delete')
                                                             @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/delete',
-                                                                    'btnClass' => 'd-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1',
+                                                                    'btnClass' => 'd-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm',
                                                                     'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><!--<span class="ml-2">'. trans("admin/main.delete") .'</span>-->'
                                                                     ])
                                                         @endcan
