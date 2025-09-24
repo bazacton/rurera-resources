@@ -1375,7 +1375,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 }
 .pending-invites-controls button,
 .pending-invites-controls .request-action,
-.pending-invites-controls a, .webinars-list-controls button, .webinars-list-controls a {
+.pending-invites-controls a, .webinars-list-controls button span, .webinars-list-controls a span {
     background-color: #fff;
     border: 1px solid #007bff;
     padding: 6px 10px;
@@ -2132,6 +2132,12 @@ Admin Questions Generator Page Style End
 }
 .btn-group.webinars-list-controls {
     width: 100%;
+}
+.webinars-list-controls button, .webinars-list-controls a {
+    padding: 0;
+    line-height: normal;
+    height: auto;
+    border: 0;
 }
 /* Webinars Table Style End */
 
