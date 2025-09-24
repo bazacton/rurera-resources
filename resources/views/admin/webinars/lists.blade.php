@@ -164,7 +164,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="input-label">{{trans('admin/main.instructor')}}</label>
-                                    <div class="select-holder">
+                                    <div class="select-holder has-border-dashed">
                                         <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role" class="form-control search-user-select2"
                                             data-placeholder="Search teachers">
 
