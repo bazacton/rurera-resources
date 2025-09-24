@@ -241,7 +241,7 @@
 
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <div class="card">
+                    <div class="card px-0">
                         <div class="card-header">
                             @can('admin_webinars_export_excel')
                                 <div class="text-right">
