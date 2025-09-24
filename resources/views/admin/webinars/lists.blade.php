@@ -358,7 +358,7 @@
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/reject',
                                                                     'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm mt-1',
-                                                                    'btnText' => '<i class="fa fa-times"></i><span class="ml-2">'. trans("admin/main.reject") .'</span>'
+                                                                    'btnText' => '<img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"><span class="ml-2">'. trans("admin/main.reject") .'</span>'
                                                                     ])
                                                             @elseif($webinar->status == \App\Models\Webinar::$active)
                                                                 @include('admin.includes.delete_button',[
@@ -399,9 +399,11 @@
                                                         @endcan
 
                                                         @can('admin_webinars_edit')
-                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/edit" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 " title="{{ trans('admin/main.edit') }}">
-                                                                <i class="fa fa-edit"></i>
-                                                                <span class="ml-2">{{ trans('admin/main.edit') }}</span>
+                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/edit" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 " title="{{ trans('admin/main.edit') }}" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit">
+                                                                <img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil">
+                                                                <!-- <span class="ml-2">
+                                                                    {{ trans('admin/main.edit') }}
+                                                                </span> -->
                                                             </a>
                                                         @endcan
 
