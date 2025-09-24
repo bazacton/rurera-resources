@@ -358,7 +358,7 @@
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/reject',
                                                                     'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm',
-                                                                    'btnText' => '<span><!--'. trans("admin/main.reject") .'--> <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"></span>'
+                                                                    'btnText' => '<span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title=" '. trans('admin/main.reject') .' "><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"></span>'
                                                                     ])
                                                             @elseif($webinar->status == \App\Models\Webinar::$active)
                                                                 @include('admin.includes.delete_button',[
