@@ -250,7 +250,7 @@
                             @endcan
                         </div>
 
-                        <div class="card-body px-0">
+                        <div class="card-body px-0 pt-0">
                             <div>
                                 <table class="table table-striped font-14">
                                     <tr>
