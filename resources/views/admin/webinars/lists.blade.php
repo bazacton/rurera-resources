@@ -382,28 +382,28 @@
 
 
                                                         @can('admin_webinar_notification_to_students')
-                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/sendNotification" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/sendNotification" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary">
                                                                 
                                                                 <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="{{ trans('notification.send_notification') }}"><i class="fa fa-bell"></i></span>
                                                             </a>
                                                         @endcan
 
                                                         @can('admin_webinar_students_lists')
-                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/students" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 " title="{{ trans('admin/main.students') }}">
+                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/students" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary" title="{{ trans('admin/main.students') }}">
                                                                 
                                                                 <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="{{ trans('admin/main.students') }}"><i class="fa fa-users"></i></span>
                                                             </a>
                                                         @endcan
 
                                                         @can('admin_webinar_statistics')
-                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/statistics" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 " title="{{ trans('admin/main.students') }}">
+                                                            <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/statistics" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary" title="{{ trans('admin/main.students') }}">
                                                                 
                                                                 <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="{{ trans('update.statistics') }}"><i class="fa fa-chart-pie"></i></span>
                                                             </a>
                                                         @endcan
 
                                                         @can('admin_support_send')
-                                                            <a href="{{ getAdminPanelUrl() }}/supports/create?user_id={{ $webinar->teacher->id }}" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1" title="{{ trans('admin/main.send_message_to_teacher') }}">
+                                                            <a href="{{ getAdminPanelUrl() }}/supports/create?user_id={{ $webinar->teacher->id }}" target="_blank" class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary" title="{{ trans('admin/main.send_message_to_teacher') }}">
                                                                 
                                                                 <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="{{ trans('site.send_message') }}"><i class="fa fa-comment"></i></span>
                                                             </a>
