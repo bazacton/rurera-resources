@@ -352,7 +352,7 @@
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/approve',
                                                                     'btnClass' => 'd-flex align-items-center text-success text-decoration-none btn-transparent btn-sm',
-                                                                    'btnText' => '<span class="ml-2"><!--'. trans("admin/main.approve") .'--> <i class="fa fa-check"></i></span>'
+                                                                    'btnText' => '<span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title=" '. trans('admin/main.approve') .' "><i class="fa fa-check"></i></span>'
                                                                     ])
 
                                                                 @include('admin.includes.delete_button',[
