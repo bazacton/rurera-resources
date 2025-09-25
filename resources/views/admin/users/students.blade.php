@@ -72,13 +72,13 @@
                                 <div class="card-body p-0 table-sm">
                                     <table class="table mb-0">
                                         <thead class="thead-light">
-                                        <tr>
-                                            <th>Student</th>
-                                            <th>Last Login</th>
-                                            <th>School</th>
-                                            <th>Class</th>
-                                            <th>Action</th>
-                                        </tr>
+                                            <tr>
+                                                <th>Student</th>
+                                                <th>Last Login</th>
+                                                <th>School</th>
+                                                <th>Class</th>
+                                                <th>Action</th>
+                                            </tr>
                                         </thead>
                                         <tbody class="students-list">
 
