@@ -574,42 +574,42 @@
         </div>
     </div>
 
-        <div class="modal fade rurera-confirm-modal" id="rurera-confirm-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="modal-box">
-                            <h3 class="font-24 font-weight-normal mb-10 confirm-title"></h3>
-                            <p class="mb-15 font-16 confirm-detail"></p>
-                            <div class="inactivity-controls">
-                                <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
-                                <a href="javascript:;" class="confirm-approve-btn">Yes to Delete</a>
+    <div class="modal fade rurera-confirm-modal" id="rurera-confirm-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-box">
+                        <h3 class="font-24 font-weight-normal mb-10 confirm-title"></h3>
+                        <p class="mb-15 font-16 confirm-detail"></p>
+                        <div class="inactivity-controls">
+                            <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
+                            <a href="javascript:;" class="confirm-approve-btn">Yes to Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade edit-student-modal add-student-modal" id="edit-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body student-modal-box">
+
+                    <div id="section4" class="modal-section edit-student-form-block active">
+                        <form action="javascript:;" method="POST" class="mb-0 edit-student-single">
+                            {{ csrf_field() }}
+                            <div class="edit-student-block"></div>
+                            <div class="teacher-buttons mt-30">
+                                <button type="submit" class="btn btn-primary edit-single-student-btn">Edit Single Student</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    <div class="messages-layout-student-block rurera-hide mt-30"></div>
                 </div>
             </div>
         </div>
-
-        <div class="modal fade edit-student-modal add-student-modal" id="edit-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body student-modal-box">
-
-                        <div id="section4" class="modal-section edit-student-form-block active">
-                            <form action="javascript:;" method="POST" class="mb-0 edit-student-single">
-                                {{ csrf_field() }}
-                                <div class="edit-student-block"></div>
-                                <div class="teacher-buttons mt-30">
-                                    <button type="submit" class="btn btn-primary edit-single-student-btn">Edit Single Student</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="messages-layout-student-block rurera-hide mt-30"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
