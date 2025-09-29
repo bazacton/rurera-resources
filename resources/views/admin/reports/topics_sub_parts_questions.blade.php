@@ -209,7 +209,7 @@
                 </form>
             </div>
 			@php $saved_templates = $user->saved_templates;
-			$saved_templates = json_decode( $saved_templates );
+			$saved_templates = json_decode( $saved_templates );//whereJsonContains('quest_users', $user_id);
 			$saved_templates = isset( $saved_templates->sub_parts_questions_report )? $saved_templates->sub_parts_questions_report : array();
 			@endphp
 			<div class="defined-searches mt-20">
@@ -300,10 +300,10 @@
 										@php
 										$total_pending_questions = $total_unreviewed_questions = 0;
 										$expected_part_questions = 0;
-										$total_part_questions = $TopicPartObj->topicPartQuestions()->count();
+										$total_part_questions = $TopicPartObj->topicPartQuestions()->whereJsonContains('category_id', $category_id)->count();
 										$pending_part_questions = $expected_part_questions-$total_part_questions;
 										$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-										$total_unreviewed_questions = $TopicPartObj->topicPartQuestions()->where('question_status', 'api_pending')->count();
+										$total_unreviewed_questions = $TopicPartObj->topicPartQuestions()->whereJsonContains('category_id', $category_id)->where('question_status', 'api_pending')->count();
 										@endphp
 
 										<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
@@ -316,7 +316,7 @@
 													$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 													$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 													@endphp
-													@php $total_questions = $TopicPartObj->topicPartQuestions()->where('question_difficulty_level', $difficulty_level)->count();
+													@php $total_questions = $TopicPartObj->topicPartQuestions()->whereJsonContains('category_id', $category_id)->where('question_difficulty_level', $difficulty_level)->count();
 													$pending_questions = $expected_part_questions-$total_questions;
 													$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 													$total_pending_questions += $pending_questions;
@@ -335,10 +335,10 @@
 											@php
 											$total_pending_questions = $total_unreviewed_questions = 0;
 											$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
-											$total_part_questions = $subTopicObj->topicPartItemQuestions()->count();
+											$total_part_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->count();
 											$pending_part_questions = $expected_part_questions-$total_part_questions;
 											$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
-											$total_unreviewed_questions = 0;//$subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
+											$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->where('question_status', 'api_pending')->count();
 											@endphp
 											<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
 												<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
@@ -350,7 +350,7 @@
 														$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 														$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 														@endphp
-														@php $total_questions = $subTopicObj->topicPartItemQuestions()->where('question_difficulty_level', $difficulty_level)->count();
+														@php $total_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->where('question_difficulty_level', $difficulty_level)->count();
 														$pending_questions = $expected_part_questions-$total_questions;
 														$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 														$total_pending_questions += $pending_questions;
