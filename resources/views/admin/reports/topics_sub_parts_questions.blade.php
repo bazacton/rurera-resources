@@ -229,6 +229,7 @@
 			</div>
         </section>
 
+        @if($category_id > 0)
         <div class="row">
 
 			<div class="col-md-12 col-lg-12">
@@ -378,6 +379,7 @@
 				</div>
 
         </div>
+        @endif
     </div>
 </section>
 
