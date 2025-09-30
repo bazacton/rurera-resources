@@ -308,7 +308,7 @@
 										@endphp
 
 										<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
-											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}}</span></td>
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}} - {{$TopicPartObj->id}}</span></td>
 											<td>-</td>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
@@ -342,7 +342,7 @@
 											$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->where('question_status', 'api_pending')->count();
 											@endphp
 											<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
-												<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
+												<td><span class="topic-part-title">{{$subTopicObj->title}} - {{$subTopicObj->id}}</span></td>
 												<td>-</td>
 												@if(!empty($difficulty_levels))
 													@foreach($difficulty_levels as $difficulty_level)
