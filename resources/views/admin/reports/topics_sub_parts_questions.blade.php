@@ -295,7 +295,7 @@
 
 									@if($WebinarChapterObj->ChapterTopicParts()->where('category_id', $category_id)->count() > 0 )
 										@php $part_counter = 0; @endphp
-										@foreach($WebinarChapterObj->ChapterTopicParts()->where('category_id', $category_id) as $TopicPartObj)
+										@foreach($WebinarChapterObj->ChapterTopicParts()->where('category_id', $category_id)->get() as $TopicPartObj)
 										@php $part_counter++; @endphp
 
 										@php
