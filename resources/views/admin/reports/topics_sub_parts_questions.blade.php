@@ -280,7 +280,7 @@
 										@foreach($WebinarChapters as $WebinarChapterObj)
 										@php $chapter_counter++; @endphp
 										<tr class="topic_parts_parent accordion-parent" data-child_class="topic_parts_{{$WebinarChapterObj->id}}">
-											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}} - {{$WebinarChapterObj->id}}</span></td>
 											<td>-</td>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
