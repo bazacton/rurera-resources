@@ -308,7 +308,7 @@
 										@endphp
 
 										<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
-											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}} - {{$TopicPartObj->id}}</span></td>
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}} -=- {{$TopicPartObj->id}}</span></td>
 											<td>-</td>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
