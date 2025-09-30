@@ -293,9 +293,9 @@
 											<td class="1total-unreviewed-questions">0</td>
 										</tr>
 
-									@if($WebinarChapterObj->ChapterTopicParts->count() > 0 )
+									@if($WebinarChapterObj->ChapterTopicParts()->where('category_id', $category_id)->count() > 0 )
 										@php $part_counter = 0; @endphp
-										@foreach($WebinarChapterObj->ChapterTopicParts as $TopicPartObj)
+										@foreach($WebinarChapterObj->ChapterTopicParts()->where('category_id', $category_id) as $TopicPartObj)
 										@php $part_counter++; @endphp
 
 										@php
