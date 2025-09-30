@@ -280,7 +280,7 @@
 										@foreach($WebinarChapters as $WebinarChapterObj)
 										@php $chapter_counter++; @endphp
 										<tr class="topic_parts_parent accordion-parent" data-child_class="topic_parts_{{$WebinarChapterObj->id}}">
-											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}} - {{$WebinarChapterObj->id}}</span></td>
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
 											<td>-</td>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
@@ -308,7 +308,7 @@
 										@endphp
 
 										<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
-											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}} -=- {{$TopicPartObj->id}}</span></td>
+											<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}}</span></td>
 											<td>-</td>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
@@ -342,7 +342,7 @@
 											$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->where('question_status', 'api_pending')->count();
 											@endphp
 											<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
-												<td><span class="topic-part-title">{{$subTopicObj->title}} - {{$subTopicObj->id}}</span></td>
+												<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
 												<td>-</td>
 												@if(!empty($difficulty_levels))
 													@foreach($difficulty_levels as $difficulty_level)
