@@ -95,7 +95,7 @@
 	}
 </style>
 @endpush
-
+@php $subject_ids = array(2136); @endphp
 @section('content')
 <section class="section">
     <div class="section-header">
@@ -318,6 +318,11 @@
 													$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 													@endphp
 													@php $total_questions = $TopicPartObj->topicPartQuestions()->whereJsonContains('category_id', $category_id)->where('question_difficulty_level', $difficulty_level)->count();
+
+
+                                                    if(in_array($TopicPartObj->subject->id, $subject_ids)){
+                                                        $expected_part_questions = ($difficulty_level == 'Emerging')? 0 : $expected_part_questions;
+                                                    }
 													$pending_questions = $expected_part_questions-$total_questions;
 													$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 													$total_pending_questions += $pending_questions;
