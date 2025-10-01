@@ -345,6 +345,7 @@
 											$pending_part_questions = $expected_part_questions-$total_part_questions;
 											$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
 											$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->where('question_status', 'api_pending')->count();
+                                            $expected_part_questions_prev = $expected_part_questions;
 											@endphp
 											<tr class="topic_sub_parts subtopics_{{$TopicPartObj->id}}">
 												<td><span class="topic-part-title">{{$subTopicObj->title}}</span></td>
@@ -361,7 +362,7 @@
 														$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 														$total_pending_questions += $pending_questions;
                                                         if(in_array($TopicPartObj->subject->id, $subject_ids)){
-                                                            $expected_part_questions = ($difficulty_level == 'Emerging')? 0 : $expected_part_questions;
+                                                            $expected_part_questions = ($difficulty_level == 'Emerging')? 0 : $expected_part_questions_prev;
                                                         }
 														@endphp
 														<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
