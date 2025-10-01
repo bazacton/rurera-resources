@@ -323,7 +323,7 @@
 													$total_pending_questions += $pending_questions;
 													@endphp
 													<td class="{{$difficulty_level_class}} expected-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
-													<td class="{{$difficulty_level_class}} total-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
+                                                    <td class="{{$difficulty_level_class}} total-questions-{{$difficulty_level}} value-for-parent" data-parent_key="1total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
 													<td class="{{$difficulty_level_class}} pending-questions-{{$difficulty_level}} value-for-parent table-col-pending" data-parent_key="1pending-questions-{{$difficulty_level}}">{{$pending_questions}}</td>
 												@endforeach
 											@endif
@@ -335,7 +335,7 @@
 										@foreach($TopicPartObj->topicSubParts as $subTopicObj)
 											@php
 											$total_pending_questions = $total_unreviewed_questions = 0;
-											$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
+											$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level, 'Emerging',$TopicPartObj->subject->id);
 											$total_part_questions = $subTopicObj->topicPartItemQuestions()->whereJsonContains('category_id', $category_id)->count();
 											$pending_part_questions = $expected_part_questions-$total_part_questions;
 											$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
