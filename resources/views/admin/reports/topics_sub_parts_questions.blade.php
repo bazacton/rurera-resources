@@ -360,6 +360,9 @@
 														$pending_questions = $expected_part_questions-$total_questions;
 														$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 														$total_pending_questions += $pending_questions;
+                                                        if(in_array($TopicPartObj->subject->id, $subject_ids)){
+                                                            $expected_part_questions = ($difficulty_level == 'Emerging')? 0 : $expected_part_questions;
+                                                        }
 														@endphp
 														<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="expected-questions-{{$difficulty_level}}">{{$expected_part_questions}}</td>
 														<td class="{{$difficulty_level_class}} value-for-parent" data-parent_key="total-questions-{{$difficulty_level}}">{{$total_questions}}</td>
