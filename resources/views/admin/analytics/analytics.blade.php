@@ -164,17 +164,15 @@
                               method="Post" class="rurera-form-validation analytics-form row">
                             {{ csrf_field() }}
 
+
+                            <input type="hidden" name="education_year_id" class="education_year_id" value="{{$educational_year_id}}">
+
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera-hide">
                                 <div class="form-group">
                                     <label class="input-label d-block">Class</label>
-                                    <select name="class_id" data-target_class="class_students_multi_select" data-passing_vars="[class_id]" data-passing_data="" data-ajax_url="/admin/common/class_students_multi_select" class="form-control class_id select2 rurera-ajax-submission" data-placeholder="Select Class">
+                                    <select name="class_id" data-target_class="class_students_multi_select" data-passing_vars="[class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/common/class_students_multi_select" class="form-control class_id select2 rurera-ajax-submission" data-placeholder="Select Class">
                                         <option value="">Select Class</option>
-                                        @if($classes->count() > 0)
-                                            @foreach($classes as $classObj)
-                                                @php $is_selected = ($classObj->id == $class_id)? 'selected' : ''; @endphp
-                                                <option value="{{$classObj->id}}" {{$is_selected}}>{{$classObj->title}}</option>
-                                            @endforeach
-                                        @endif
+                                        <option value="{{$class_id}}" selected>Selected Class</option>
                                     </select>
                                 </div>
                             </div>
@@ -225,7 +223,7 @@
 
                                             @if(auth()->user()->subscription('sats'))
                                                 <label class="card-radio attempt_type_fields attempt_type_mock_test">
-                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="sats" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="sats" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
                                                                 <img src="/assets/default/img/assignment-logo/sats.png">
@@ -236,7 +234,7 @@
                                             @endif
                                             @if(auth()->user()->subscription('11plus'))
                                                 <label class="card-radio attempt_type_fields attempt_type_mock_test">
-                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="11plus" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="11plus" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/11plus.png">
@@ -250,7 +248,7 @@
                                             @if(auth()->user()->subscription('11plus'))
 
                                                 <label class="card-radio attempt_type_fields attempt_type_mock_test">
-                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="independent_exams" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="independent_exams" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/independent-exams.png">
@@ -264,7 +262,7 @@
                                             @if(auth()->user()->subscription('11plus'))
 
                                                 <label class="card-radio attempt_type_fields attempt_type_mock_test">
-                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="iseb" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="iseb" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/iseb.png">
@@ -278,7 +276,7 @@
                                             @if(auth()->user()->subscription('11plus'))
 
                                                 <label class="card-radio attempt_type_fields attempt_type_mock_test">
-                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="cat4" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                    <input type="radio" name="practice_type" class="practice_type rurera-ajax-submission" value="cat4" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/cat4.png">
@@ -291,7 +289,7 @@
                                             @if(auth()->user()->subscription('courses'))
                                                 <label class="card-radio attempt_type_fields attempt_type_self_learning attempt_type_assignment">
                                                     <input type="radio" name="practice_type"
-                                                           class="practice_type rurera-ajax-submission" value="practice" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                           class="practice_type rurera-ajax-submission" value="practice" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
                                                                 <img src="/assets/default/img/assignment-logo/practice.png">
@@ -306,7 +304,7 @@
 
                                                 <label class="card-radio attempt_type_fields attempt_type_self_learning attempt_type_assignment">
                                                     <input type="radio" name="practice_type"
-                                                           class="practice_type rurera-ajax-submission" value="vocabulary" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                           class="practice_type rurera-ajax-submission" value="vocabulary" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/vocabulary.png">
@@ -319,7 +317,7 @@
                                             @if(auth()->user()->subscription('timestables'))
                                                 <label class="card-radio attempt_type_fields attempt_type_self_learning attempt_type_assignment">
                                                     <input type="radio" name="practice_type"
-                                                           class="practice_type rurera-ajax-submission" value="timestables" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                           class="practice_type rurera-ajax-submission" value="timestables" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                             <img src="/assets/default/img/assignment-logo/timestables.png">
@@ -331,7 +329,7 @@
                                                 @if(auth()->user()->subscription('bookshelf'))
                                                 <label class="card-radio attempt_type_fields attempt_type_self_learning attempt_type_assignment">
                                                     <input type="radio" name="practice_type"
-                                                           class="practice_type rurera-ajax-submission" value="books" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                           class="practice_type rurera-ajax-submission" value="books" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
                                                         <img src="/assets/default/img/assignment-logo/practice.png">
@@ -343,7 +341,7 @@
 
                                                 <label class="card-radio attempt_type_fields attempt_type_assignment">
                                                     <input type="radio" name="practice_type"
-                                                           class="practice_type rurera-ajax-submission" value="assignment" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
+                                                           class="practice_type rurera-ajax-submission" value="assignment" data-target_class="analytics_type_fields" data-passing_vars="[practice_type,attempt_type,class_id,education_year_id]" data-passing_data="" data-ajax_url="/admin/analytics/get_type_fields">
                                                     <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
                                                         <img src="/assets/default/img/assignment-logo/practice.png">
