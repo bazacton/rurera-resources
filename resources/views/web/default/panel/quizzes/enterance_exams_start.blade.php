@@ -98,6 +98,25 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                             </div>
                         </div>
                     </div>
+
+                    <div class="quiz-status-bar">
+                        <div class="quiz-questions-bar-holder">
+                            <div class="quiz-questions-bar">
+                                <span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
+                                <span class="bar-fill" title="0%" style="width: 0%;"></span>
+                            </div>
+                            <span class="coin-numbers">
+								<img src="/assets/default/img/quests-coin.png" alt="">
+								<span class="total-earned-coins">0</span>
+							</span>
+                        </div>
+                        <div class="quiz-corrects-incorrects">
+                            <span class="quiz-corrects">0</span>
+                            <span class="quiz-incorrects">0</span>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
             <div class="justify-content-center">
