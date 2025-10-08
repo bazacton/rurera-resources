@@ -2,7 +2,7 @@
 
 @push('styles_top')
     @if($page->id == 11 || $page->id == 50)
-        <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';">
     @endif
 @endpush
 

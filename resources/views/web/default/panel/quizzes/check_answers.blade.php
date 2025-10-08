@@ -17,7 +17,7 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_id}}">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';">
 <style>
 .field-holder.correct, .form-field.correct, .form-field.correct label {
     background: #d7fbdf !important;
