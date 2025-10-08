@@ -115,6 +115,9 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                                 <div class="quiz-timer">
                                     <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
                                 </div>
+                                <div class="close-btn-holder">
+                                    <button class="close-btn review-btn" data-toggle="modal" data-target="#review_submit">&#x2715;</button>
+                                </div>
                             </div>
                         </div>
                     </div>
