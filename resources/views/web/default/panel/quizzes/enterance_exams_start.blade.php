@@ -84,7 +84,10 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                         <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
                             <div class="topbar-right">
                                 <div class="quiz-pagination">
-                                    
+
+                                </div>
+                                <div class="quiz-progress-bar">
+                                    <div class="progress-bar-fill">1 / 100</div>
                                 </div>
                                 <div class="quiz-timer">
                                     <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
