@@ -70,36 +70,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-            <section class="quiz-topbar {{$top_bar_class}}" style="display:block !important">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-6 col-sm-12">
-                            @if( isset( $quiz->quiz_type ))
-                               <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
-                           @endif
 
-                            <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                            <div class="topbar-right">
-                                <div class="quiz-pagination">
-
-                                </div>
-                                <div class="quiz-progress-bar">
-                                    <div class="progress-bar-fill">1 / 100</div>
-                                </div>
-                                <div class="quiz-timer">
-                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
-                                </div>
-                                <div class="close-btn-holder">
-                                    <button class="close-btn review-btn" data-toggle="modal" data-target="#review_submit">&#x2715;</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <div class="justify-content-center">
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
@@ -119,6 +90,24 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                         </div>
                     </div>
                     <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+
+                        <div class="quiz-status-bar">
+                            <div class="quiz-questions-bar-holder">
+                                <div class="quiz-questions-bar">
+                                    <span class="value-lable" data-title="Target" style="left:20%"><span>2 / 10</span></span>
+                                    <span class="bar-fill" title="20%" style="width: 20%;"></span>
+                                </div>
+                                <span class="coin-numbers">
+								<img src="/assets/default/img/quests-coin.png" alt="">
+								<span class="total-earned-coins">0</span>
+							</span>
+                            </div>
+                            <div class="quiz-timer">
+                                <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
+                            </div>
+                        </div>
+
+
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
