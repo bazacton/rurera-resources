@@ -94,7 +94,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                         <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
                                 <div class="quiz-questions-bar">
-                                    <span class="value-lable" data-title="Target" style="left:80%"><span>2 / 10</span></span>
+                                    <span class="value-lable" data-title="Target" style="left:20%"><span>2 / 10</span></span>
                                     <span class="bar-fill" title="20%" style="width: 20%;"></span>
                                 </div>
                                 <span class="coin-numbers">
