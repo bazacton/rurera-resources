@@ -2,7 +2,7 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';"/>
-<link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
+<link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css" media="print" onload="this.onload=null;this.media='all';"/>
 @endpush
 
 @section('content')
