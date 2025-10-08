@@ -33,9 +33,19 @@
                     <span class="tab-title">Advanced Options</span>
                 </a>
             </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="vocabulary-tab-edit" href="javascript:;">
+                    <span class="tab-title">Vocabulary</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="books-tab-edit" href="javascript:;">
+                    <span class="tab-title">Books</span>
+                </a>
+            </li>
         </ul>
     </div>
-    
+
     <div class="admin-rurera-tabs-details-edit rurera-hide curriculum-tab-edit">
 
 
@@ -422,6 +432,68 @@
                                             'checked' : ''}} id="tables_sixteen16" /> <label for="tables_sixteen16">16</label></li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="admin-rurera-tabs-details-edit rurera-hide vocabulary-tab-edit">
+
+
+
+        <div class="row">
+            @if($categories->count() > 0)
+                @foreach($categories as $category)
+                    @if(!empty($category->subCategories) and count($category->subCategories))
+                        @foreach($category->subCategories as $subCategory)
+                            <div class="col-12 col-md-6 col-lg-6">
+                                {{$subCategory->title}}
+                                <div class="form-group">
+                                    @foreach($subCategory->CategoryQuizes()->where('quiz_type','vocabulary')->get() as $quizObj)
+                                        @php $is_selected = in_array($quizObj->id, $class_vocabularies)? 'checked' : ''; @endphp
+                                        <div class="custom-control custom-checkbox">
+                                            <input id="{{$subCategory->id}}_{{$quizObj->id}}" value="{{$quizObj->id}}" type="checkbox" name="vocabulary[]"
+                                                   class="custom-control-input" {{$is_selected}}>
+                                            <label class="custom-control-label"
+                                                   for="{{$subCategory->id}}_{{$quizObj->id}}">{{$quizObj->getTitleAttribute()}}</label>
+                                        </div>
+                                    @endforeach
+                                </div>
+
+                            </div>
+                        @endforeach
+                    @endif
+                @endforeach
+            @endif
+        </div>
+    </div>
+
+    <div class="admin-rurera-tabs-details-edit rurera-hide books-tab-edit">
+
+
+
+        <div class="row">
+            @if($categories->count() > 0)
+                @foreach($categories as $category)
+                    @if(!empty($category->subCategories) and count($category->subCategories))
+                        @foreach($category->subCategories as $subCategory)
+                            <div class="col-12 col-md-6 col-lg-6">
+                                {{$subCategory->title}}
+                                <div class="form-group">
+                                    @foreach($subCategory->CategoryBooks()->get() as $bookObj)
+                                        @php $is_selected = in_array($bookObj->id, $class_books)? 'checked' : ''; @endphp
+                                        <div class="custom-control custom-checkbox">
+                                            <input id="{{$subCategory->id}}_{{$bookObj->id}}" value="{{$bookObj->id}}" type="checkbox" name="books[]"
+                                                   class="custom-control-input" {{$is_selected}}>
+                                            <label class="custom-control-label"
+                                                   for="{{$subCategory->id}}_{{$bookObj->id}}">{{$bookObj->book_title}}</label>
+                                        </div>
+                                    @endforeach
+                                </div>
+
+                            </div>
+                        @endforeach
+                    @endif
+                @endforeach
+            @endif
         </div>
     </div>
     </div>

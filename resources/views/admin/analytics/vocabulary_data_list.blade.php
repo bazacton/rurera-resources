@@ -12,7 +12,10 @@
         color: #c8d022;
         font-size: 20px;
     }
-
+    .status-practiced i{
+        color: #ecf520;
+        font-size: 20px;
+    }
     .status-not_attempted i, .status-pending i{
         color: #d6d6d6;
         font-size: 20px;
@@ -22,6 +25,7 @@
 <div class="statuses-list">
     <span class="status-incorrect"><i class="fas fa-dot-circle"></i> Non Mastered</span> &nbsp;&nbsp;&nbsp;
     <span class="status-correct"><i class="fas fa-dot-circle"></i> Mastered</span> &nbsp;&nbsp;&nbsp;
+    <span class="status-practiced"><i class="fas fa-dot-circle"></i> Practiced</span> &nbsp;&nbsp;&nbsp;
     <span class="status-not_attempted"><i class="fas fa-dot-circle"></i> Not Attempted</span>
 </div>
 <div class="topic-parts-data table-responsive">
@@ -80,23 +84,33 @@
                                 @if($vocabularyObj->quizQuestionsList->count() > 0)
                                     @foreach($vocabularyObj->quizQuestionsList as $quizQuestionsListObj)
 
-
                                     @php
                                        $question_status = 'pending';
                                        $class = '';
                                        $SingleQuestionDataObj = $quizQuestionsListObj->SingleQuestionData;
                                        if(!isset($SingleQuestionDataObj->id)){ continue; }
 
+                                        $questionAnalyticResult = isset($students_questions_result[$studentObj->id][$vocabularyObj->id])? $students_questions_result[$studentObj->id][$vocabularyObj->id] : array();
                                         $userVocabularyObj = isset($users_vocabularies[$studentObj->id])? $users_vocabularies[$studentObj->id] : (object) array();
                                         $mastered_words = isset($userVocabularyObj->mastered_words)? json_decode($userVocabularyObj->mastered_words, true) : array();
                                         $in_progress_words = isset($userVocabularyObj->in_progress_words)? json_decode($userVocabularyObj->in_progress_words, true) : array();
                                         $non_mastered_words = isset($userVocabularyObj->non_mastered_words)? json_decode($userVocabularyObj->non_mastered_words, true) : array();
+
+                                        $resultObj = isset($questionAnalyticResult['resultObj'])? $questionAnalyticResult['resultObj'] : (object) array();
+
+                                        $other_data = isset($resultObj->other_data)? json_decode($resultObj->other_data) : array();
+                                        $mastered_words = isset($other_data->mastered_words)? json_decode($other_data->mastered_words, true) : array();
+                                        $practiced_words = isset($other_data->practiced_words)? json_decode($other_data->practiced_words, true) : array();
+
+                                        $question_practice_status = '';
+                                        $question_practice_status = isset($practiced_words[$SingleQuestionDataObj->id])? '<span class="status-practiced"><i class="fas fa-dot-circle"></i></span>' : $question_practice_status;
 
                                         $question_status = '<span class="status-not_attempted"><i class="fas fa-dot-circle"></i></span>';
                                         $question_status = isset($non_mastered_words[$SingleQuestionDataObj->id])? '<span class="status-incorrect"><i class="fas fa-dot-circle"></i></span>' : $question_status;
                                         $question_status = isset($in_progress_words[$SingleQuestionDataObj->id])? '<span class="status-correct"><i class="fas fa-dot-circle"></i></span>' : $question_status;
                                         $question_status = isset($mastered_words[$SingleQuestionDataObj->id])? '<span class="status-correct"><i class="fas fa-dot-circle"></i></span>' : $question_status;
 
+                                        $question_status = $question_practice_status.$question_status;
 
                                         $class = '';
                                         $class = isset($non_mastered_words[$SingleQuestionDataObj->id])? 'wrong' : $class;
@@ -104,30 +118,26 @@
                                         $class = isset($mastered_words[$SingleQuestionDataObj->id])? 'correct' : $class;
                                     @endphp
 
-                                        @php
+                                    @php
+                                        $class = '';
+                                        $SingleQuestionDataObj = $quizQuestionsListObj->SingleQuestionData;
+                                        if(!isset($SingleQuestionDataObj->id)){ continue; }
 
-                                            $class = '';
-                                            $SingleQuestionDataObj = $quizQuestionsListObj->SingleQuestionData;
-                                            if(!isset($SingleQuestionDataObj->id)){ continue; }
-                                            $questionAnalyticResult = isset($students_questions_result[$studentObj->id][$vocabularyObj->id])? $students_questions_result[$studentObj->id][$vocabularyObj->id] : array();
-                                            $attempt_question_ids = isset($questionAnalyticResult['attempt_question_ids'])? $questionAnalyticResult['attempt_question_ids'] : array();
-                                            $questions_attempts = isset($questionAnalyticResult['questions_attempts'])? $questionAnalyticResult['questions_attempts'] : array();
+                                        $attempt_question_ids = isset($questionAnalyticResult['attempt_question_ids'])? $questionAnalyticResult['attempt_question_ids'] : array();
+                                        $questions_attempts = isset($questionAnalyticResult['questions_attempts'])? $questionAnalyticResult['questions_attempts'] : array();
 
-                                            $currentQuestionData = isset($attempt_question_ids[$SingleQuestionDataObj->id])? $attempt_question_ids[$SingleQuestionDataObj->id] : array();
-                                            $time_consumed = isset($currentQuestionData['time_consumed'])? $currentQuestionData['time_consumed'] : 0;
-                                            $question_result_id = isset($currentQuestionData['question_result_id'])? $currentQuestionData['question_result_id'] : 0;
+                                        $currentQuestionData = isset($attempt_question_ids[$SingleQuestionDataObj->id])? $attempt_question_ids[$SingleQuestionDataObj->id] : array();
+                                        $time_consumed = isset($currentQuestionData['time_consumed'])? $currentQuestionData['time_consumed'] : 0;
+                                        $question_result_id = isset($currentQuestionData['question_result_id'])? $currentQuestionData['question_result_id'] : 0;
 
+                                        $question_status_response = '<span class="status-'.$class.'"><i class="fas fa-dot-circle"></i></span>';
+                                        if($question_status == 'in_review'){
+                                            $question_status_response = '<a href="javascript:;" class="review-question" data-question_id="'.$question_result_id.'"><span class="status-in_review"><i class="fas fa-dot-circle"></i></span></a>';
+                                        }
+                                        $questions_time_consumed_total += $time_consumed;
+                                        $question_status_response = $question_status;
 
-
-                                            $question_status_response = '<span class="status-'.$class.'"><i class="fas fa-dot-circle"></i></span>';
-                                            if($question_status == 'in_review'){
-                                                $question_status_response = '<a href="javascript:;" class="review-question" data-question_id="'.$question_result_id.'"><span class="status-in_review"><i class="fas fa-dot-circle"></i></span></a>';
-                                            }
-                                            $questions_time_consumed_total += $time_consumed;
-
-                                            $question_status_response = $question_status;
-
-                                        @endphp
+                                    @endphp
                                     <td class="{{$class}}">
                                         {!! $question_status_response !!}
                                     </td>

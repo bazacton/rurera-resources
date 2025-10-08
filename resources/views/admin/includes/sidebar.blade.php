@@ -668,12 +668,15 @@
                             <img src="/assets/default/img/sidebar/analytics.svg.svg" alt="analytics">
                             <span>Analytics</span>
                             <div class="sub-menu-sidebar dropdown-menu" aria-labelledby="analytics-menu">
-
-                                @if(!empty($school_classes))
-                                    @foreach($school_classes as $classObj)
-                                        <span><a href="/admin/analytics/{{$classObj->id}}">{{$classObj->title}}</a></span>
+                                <span><a>&nbsp;</a></span>
+                                <select class="educational_year_select rurera-ajax-submission" data-target_class="classes-list-analytics" data-passing_vars="[educational_year_select]" data-passing_data="" data-ajax_url="/admin/analytics/get_year_classes">
+                                @if(!empty($educationalYears))
+                                    @foreach($educationalYears as $educationalYearObj)
+                                        <option value="{{$educationalYearObj->id}}">{{$educationalYearObj->title}}</option>
                                     @endforeach
                                 @endif
+                                </select>
+                                <div class="classes-list-analytics"></div>
                             </div>
                         </a>
                     </li>

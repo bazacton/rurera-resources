@@ -16,3 +16,32 @@
         @endif
     </div>
 </div>
+
+<script>
+    const startDate = new Date("2025-01-01");
+    const endDate = new Date(); // current date
+    const range = document.getElementById("dateRange");
+    const dateLabel = document.getElementById("dateLabel");
+
+    // Calculate total days between start and end
+    const totalDays = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+    range.max = totalDays;
+
+    // Function to format date
+    function formatDate(date) {
+        const options = { day: "numeric", month: "long", year: "numeric" };
+        return date.toLocaleDateString("en-US", options);
+    }
+
+    // Update label on input
+    range.addEventListener("input", () => {
+        const daysFromStart = parseInt(range.value, 10);
+        const currentDate = new Date(startDate);
+        currentDate.setDate(startDate.getDate() + daysFromStart);
+        dateLabel.textContent = formatDate(currentDate);
+    });
+
+    // Initialize with start date
+    range.value = totalDays;
+    range.dispatchEvent(new Event("input"));
+</script>
