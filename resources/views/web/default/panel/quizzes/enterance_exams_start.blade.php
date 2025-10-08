@@ -89,13 +89,13 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
                         </div>
                     </div>
-                    <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+                    <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
 
                         <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
                                 <div class="quiz-questions-bar">
-                                    <span class="value-lable" data-title="Target" style="left:20%"><span>2 / 10</span></span>
-                                    <span class="bar-fill" title="20%" style="width: 20%;"></span>
+                                    <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                                    <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
                                 </div>
                                 <span class="coin-numbers">
 								<img src="/assets/default/img/quests-coin.png" alt="">
@@ -366,6 +366,15 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     }
 
     function afterNextQuestion(){
+        var current_question_serial = $('.rurera-question-block.active').index();
+        current_question_serial =  parseInt(current_question_serial)+1;
+        var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
+        var current_percentage = (current_question_serial*100)/total_questions;
+        console.log(current_question_serial);
+        $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
+        $(".progress-bar-counter").css('left', current_percentage+'%');
+        $(".progress-bar-fill").css('width', current_percentage+'%');
+
         if (duration_type == 'per_question') {
             $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
@@ -373,6 +382,21 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     }
 
 
+    function afterPrevQuestion(){
+        var current_question_serial = $('.rurera-question-block.active').index();
+        current_question_serial =  parseInt(current_question_serial)+1;
+        var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
+        var current_percentage = (current_question_serial*100)/total_questions;
+        console.log(current_question_serial);
+        $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
+        $(".progress-bar-counter").css('left', current_percentage+'%');
+        $(".progress-bar-fill").css('width', current_percentage+'%');
+
+        if (duration_type == 'per_question') {
+            $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
+            quiz_default_functions();
+        }
+    }
 
 	function afterQuestionValidation_bk(return_data, thisForm, question_id) {
 		var current_question_layout = getDivWithValues().html();//$(".question-area-block").html();
@@ -469,4 +493,16 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
         return clonedDiv;
     }
+
+
+
+    $(document).on('keyup', 'body', function (evt) {
+        if (evt.key === 'ArrowLeft') {
+            $('#prev-btn')[0].click();
+        }
+
+        if (evt.key === 'ArrowRight') {
+            $('#next-btn')[0].click();
+        }
+    });
 </script>
