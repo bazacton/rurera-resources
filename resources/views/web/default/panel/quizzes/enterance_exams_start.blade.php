@@ -70,7 +70,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-            
+
             <div class="justify-content-center">
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
@@ -94,16 +94,13 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                         <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
                                 <div class="quiz-questions-bar">
-                                    <span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
-                                    <span class="bar-fill" title="0%" style="width: 0%;"></span>
+                                    <span class="value-lable" data-title="Target" style="left:80%"><span>2 / 10</span></span>
+                                    <span class="bar-fill" title="20%" style="width: 20%;"></span>
                                 </div>
                                 <span class="coin-numbers">
 								<img src="/assets/default/img/quests-coin.png" alt="">
 								<span class="total-earned-coins">0</span>
 							</span>
-                            </div>
-                            <div class="quiz-progress-bar">
-                                <div class="progress-bar-fill">1 / 100</div>
                             </div>
                             <div class="quiz-timer">
                                 <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
