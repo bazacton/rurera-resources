@@ -1,7 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-   <link href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" rel="stylesheet">
+   <link href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.onload=null;this.media='all';">
 @endpush
 
 @section('content')
