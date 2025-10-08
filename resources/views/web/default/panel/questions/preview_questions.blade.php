@@ -104,7 +104,7 @@ $rand_id = rand(99,9999);
 <script src="/assets/default/js/parts/quiz-start.min.js?var={{$rand_id}}"></script>
 
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
 <script>
