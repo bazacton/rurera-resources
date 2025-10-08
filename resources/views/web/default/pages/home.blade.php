@@ -26,7 +26,7 @@
                             <div class="col-12 col-lg-4 col-md-6">
                                 <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
                                     <img src="/store/1/default_images/home_sections_banners/cactus.webp" width="300" height="300" alt="cactus image">
-                                    <span class="mb-10" style="color: #f18700;">Interactive questions</span>
+                                    <span class="mb-10" style="color: #c67309;">Interactive questions</span>
                                     <p>Conquer exams with 5,000+ interactive questions designed for success.</p>
                                 </div>
                             </div>
