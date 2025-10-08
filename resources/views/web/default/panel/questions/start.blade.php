@@ -7,11 +7,11 @@ $rand_id = rand(99,9999);
 @endphp
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
+<link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css" media="print" onload="this.onload=null;this.media='all';">
 @endpush
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" media="print" onload="this.onload=null;this.media='all';">
+<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}" media="print" onload="this.onload=null;this.media='all';">
 
 @section('content')
 
