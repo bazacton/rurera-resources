@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/assets/default/css/responsive.min.css?ver={{$rand_no}}">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
     <link rel="canonical" href="{{url()->current()}}">
 
