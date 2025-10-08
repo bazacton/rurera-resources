@@ -1154,7 +1154,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .quiz-pagination li a:hover,
 .quiz-pagination li.active a {border-color: #7c97f0; box-shadow: 0 0 0 2px #7c97f0;}
 .timer-number em {font-size: 24px; font-style: normal;}
-.quiz-timer {display: flex; align-items: center;}
+.quiz-timer {display: flex; align-items: center; min-width: 200px;}
 .quiz-timer .timer-number {min-width: 140px;}
 .start-landing-page .quiz-timer .timer-number {color: #333; text-align: right;}
 .quiz-pagination .has-flag a {background-color: #fff; color: #4c5387; position: relative;}
