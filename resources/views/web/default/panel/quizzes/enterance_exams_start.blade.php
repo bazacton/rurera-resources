@@ -94,7 +94,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                         <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
                                 <div class="quiz-questions-bar">
-                                    <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}} Questions Done</span></span>
+                                    <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
                                     <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
                                 </div>
                                 <span class="coin-numbers">
