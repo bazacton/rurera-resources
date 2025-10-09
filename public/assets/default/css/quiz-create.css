@@ -1163,7 +1163,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .assignment-questions-preview .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 25px; max-width: 25px;}
 /* pagination Learn Practice Style End */
 /* Quiz Status Bar Style */
-.quiz-status-bar {margin: 0 0 40px 0; padding: 0;}
+.quiz-status-bar {margin: 0 0 40px 20px; padding: 0;}
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
 .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 38px;}
 .correct-in-row {color: #51cd00; font-weight: 500; text-transform: uppercase; }
