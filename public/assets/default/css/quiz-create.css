@@ -1191,7 +1191,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     transform: translateY(-50%);
     margin-left: -26px;
 }
-.quiz-questions-bar-holder .value-lable[style="width: 0%;"] {
+.quiz-questions-bar-holder .value-lable[style="left:0%"] {
     margin-left: 0;
 }
 .quiz-questions-bar-holder .value-lable span {
