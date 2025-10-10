@@ -1,10 +1,11 @@
 @php namespace App\Http\Controllers\Web; @endphp
 @php
-$i = 0; $j = 1;
-$rand_id = rand(99,9999);
+    $i = 0; $j = 1;
+    $rand_id = rand(99,9999);
 
 @endphp
 
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
@@ -16,56 +17,56 @@ $timer_counter = $time_interval;
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
-$correct_answer_explaination = isset($correct_answer_explaination)? $correct_answer_explaination : 0;
-$incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
+$correct_answer_explaination = 1;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
+$incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 <div class="content-section">
 
     <section class="lms-quiz-section">
 
         @if( $quiz->quiz_pdf != '')
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(".read-quiz-info").flipBook({
-                    pdfUrl: '{{$quiz->quiz_pdf}}',
-                    btnZoomIn: {enabled: true},
-                    btnZoomOut: {enabled: true},
-                    btnToc: {enabled: false},
-                    btnShare: {enabled: false},
-                    btnDownloadPages: {enabled: false},
-                    btnDownloadPdf: {enabled: false},
-                    btnSound: {enabled: false},
-                    btnAutoplay: {enabled: false},
-                    btnSelect: {enabled: false},
-                    btnBookmark: {enabled: false},
-                    btnThumbs: {enabled: false},
-                    btnPrint: {enabled: false},
-                    currentPage: {enabled: false},
-                    viewMode: "swipe",
-                    singlePageMode: true,
-                    skin: 'dark',
-                    menuMargin: 10,
-                    menuBackground: 'none',
-                    menuShadow: 'none',
-                    menuAlignHorizontal: 'right',
-                    menuOverBook: true,
-                    btnRadius: 40,
-                    btnMargin: 4,
-                    btnSize: 14,
-                    btnPaddingV: 16,
-                    btnPaddingH: 16,
-                    btnBorder: '2px solid rgba(255,255,255,.7)',
-                    btnBackground: "rgba(0,0,0,.3)",
-                    btnColor: 'rgb(255,120,60)',
-                    sideBtnRadius: 60,
-                    sideBtnSize: 60,
-                    sideBtnBackground: "rgba(0,0,0,.7)",
-                    sideBtnColor: 'rgb(255,120,60)',
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".read-quiz-info").flipBook({
+                        pdfUrl: '{{$quiz->quiz_pdf}}',
+                        btnZoomIn: {enabled: true},
+                        btnZoomOut: {enabled: true},
+                        btnToc: {enabled: false},
+                        btnShare: {enabled: false},
+                        btnDownloadPages: {enabled: false},
+                        btnDownloadPdf: {enabled: false},
+                        btnSound: {enabled: false},
+                        btnAutoplay: {enabled: false},
+                        btnSelect: {enabled: false},
+                        btnBookmark: {enabled: false},
+                        btnThumbs: {enabled: false},
+                        btnPrint: {enabled: false},
+                        currentPage: {enabled: false},
+                        viewMode: "swipe",
+                        singlePageMode: true,
+                        skin: 'dark',
+                        menuMargin: 10,
+                        menuBackground: 'none',
+                        menuShadow: 'none',
+                        menuAlignHorizontal: 'right',
+                        menuOverBook: true,
+                        btnRadius: 40,
+                        btnMargin: 4,
+                        btnSize: 14,
+                        btnPaddingV: 16,
+                        btnPaddingH: 16,
+                        btnBorder: '2px solid rgba(255,255,255,.7)',
+                        btnBackground: "rgba(0,0,0,.3)",
+                        btnColor: 'rgb(255,120,60)',
+                        sideBtnRadius: 60,
+                        sideBtnSize: 60,
+                        sideBtnBackground: "rgba(0,0,0,.7)",
+                        sideBtnColor: 'rgb(255,120,60)',
+                    });
                 });
-            });
 
-        </script>
-        <div class="read-quiz-info quiz-show"></div>
+            </script>
+            <div class="read-quiz-info quiz-show"></div>
         @endif
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
@@ -115,69 +116,71 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                                 <div class="question-layout-block">
                                     <div class="left-content has-bg">
                                         @if( is_array( $question ))
-                                        @php $question_no = 1; @endphp
+                                            @php $question_no = 1; @endphp
 
-                                        @foreach( $question as $questionObj)
-                                        @include('web.default.panel.questions.question_layout',[
-                                        'question'=> $questionObj,
-                                        'prev_question' => 0,
-                                        'next_question' => 0,
-                                        'question_no' => $question_no,
-                                        'quizAttempt' => $quizAttempt,
-                                        'newQuestionResult' => $newQuestionResult,
-                                        'quizResultObj' => $newQuizStart
-                                        ])
-                                        @php $question_no++; @endphp
-                                        @endforeach
+                                            @foreach( $question as $questionObj)
+                                                @include('web.default.panel.questions.question_layout',[
+                                                'question'=> $questionObj,
+                                                'prev_question' => 0,
+                                                'next_question' => 0,
+                                                'question_no' => $question_no,
+                                                'quizAttempt' => $quizAttempt,
+                                                'newQuestionResult' => $newQuestionResult,
+                                                'quizResultObj' => $newQuizStart
+                                                ])
+                                                @php $question_no++; @endphp
+                                            @endforeach
                                         @else
 
-                                        @if( !empty( $questions_layout  ) )
-                                            @php $question_counter  = 1; @endphp
-                                            @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                            @if( !empty( $questions_layout  ) )
+                                                @php $question_counter  = 1; @endphp
+                                                @foreach( $questions_layout as $result_question_id => $questionLayout)
                                                 @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
-                                                $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
-                                                @endphp
-                                                <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
-                                                data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
-                                                data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
-                                                data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
+                                                $active_class = ($question_counter == 1)? 'active' : '';
+                                                if($active_question_id != ''){
+                                                    $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                                }
+                                                    @endphp
+                                                    <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                         data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
+                                                         data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
+                                                         data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
 
-                                                {!! $questionLayout !!}
+                                                        {!! $questionLayout !!}
 
-                                                </div>
+                                                    </div>
 
-                                                @php $question_counter++; @endphp
-                                            @endforeach
-                                        @endif
+                                                    @php $question_counter++; @endphp
+                                                @endforeach
+                                            @endif
 
                                         @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                            <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                                <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
-                                                    Finish
-                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                </a>
-                                                <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
-                                                    Next
-                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                </a>
-                                                <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
-                                                    prev
-                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                </a>
-                                                <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                    mark answer
-                                                </a>
-                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                                    Next
-                                                </a>
-                                            </div>
+                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                            <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
+                                                Finish
+                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                            </a>
+                                            <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
+                                                Next
+                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                            </a>
+                                            <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
+                                                prev
+                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                            </a>
+                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                                mark answer
+                                            </a>
+                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                                Next
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     <div class="question-area-temp hide"></div>
                 </div>
             </div>
@@ -186,49 +189,49 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 </div>
 
 @if($quiz->quiz_type == 'vocabulary')
-<div class="question-status-modal">
-  <div class="modal fade question_status_modal" id="question_status_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="modal-box">
-            <div class="modal-title">
-              <h3>Incorrect!</h3>
-              <span class="inc" style="text-decoration: line-through;">are</span>
-              <span class="cor">are</span>
+    <div class="question-status-modal">
+        <div class="modal fade question_status_modal" id="question_status_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-box">
+                            <div class="modal-title">
+                                <h3>Incorrect!</h3>
+                                <span class="inc" style="text-decoration: line-through;">are</span>
+                                <span class="cor">are</span>
+                            </div>
+                            <p>
+                                <span>verb</span> when more than one person is being something
+                            </p>
+                            <a href="javascript:;" class="confirm-btn" data-dismiss="modal" aria-label="Close">Okay</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>
-              <span>verb</span> when more than one person is being something
-            </p>
-            <a href="javascript:;" class="confirm-btn" data-dismiss="modal" aria-label="Close">Okay</a>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
 @endif
 
 <div class="modal fade review_submit" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-       <div class="modal-content">
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-           <div class="modal-body">
-               <p></p>
-               <a href="javascript:;" class="submit_quiz_final nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> Submit </a>
-           </div>
-       </div>
-   </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+                <p></p>
+                <a href="javascript:;" class="submit_quiz_final nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> Submit </a>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="modal fade validation_error" id="validation_error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-       <div class="modal-content">
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-           <div class="modal-body">
-               <p>Please fill all the required fields before submitting.</p>
-           </div>
-       </div>
-   </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+                <p>Please fill all the required fields before submitting.</p>
+            </div>
+        </div>
+    </div>
 </div>
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
@@ -243,7 +246,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     var headerOffset = (header != null) ? header.offsetHeight : 100;
     var header_height = parseInt(headerOffset) + parseInt(85) + "px";
 
-	var attempted_questions = '{{count(array_filter($questions_status_array, fn($value) => $value !== "waiting"))}}';
+    var attempted_questions = '{{count(array_filter($questions_status_array, fn($value) => $value !== "waiting"))}}';
 
     var Questioninterval = null;
     var Quizintervals = null;
@@ -255,7 +258,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     function quiz_default_functions() {
 
         var active_question_id = $(".question-area-block").attr('data-active_question_id');
-       $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
+        $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
         Quizintervals = setInterval(function () {
             var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
@@ -279,7 +282,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
             if (duration_type == 'total_practice') {
                 if (parseInt(quiz_timer_counter) == 0) {
                     clearInterval(Quizintervals);
-                    $(".review-btn").click();
+                    $(".submit_quiz_final").click();
                     if ($('.question-review-btn').length > 0) {
                         $('.question-review-btn').click();
                     }
@@ -296,13 +299,13 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
         $("body").on("click", ".resettext", function (e) {
             if (curSize != 16)
-            $('.learning-page').css('font-size', 18);
+                $('.learning-page').css('font-size', 18);
         });
 
         $("body").on("click", ".decreasetext", function (e) {
             curSize = parseInt($('.learning-page').css('font-size')) - 2;
             if (curSize >= 16)
-            $('.learning-page').css('font-size', curSize);
+                $('.learning-page').css('font-size', curSize);
         });
     }
 
@@ -325,14 +328,15 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     }
 
 
-	function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
-		var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
-		$(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
+    function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
+        var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
+        $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
         var notifications_settings_show_message = $(".show-notifications").attr('data-show_message');
 
         $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
         $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
 
+        $(".rurera-question-block.active").addClass('disabled-div');
         if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
             var question_solution = return_data.question_solution;
             var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
@@ -351,13 +355,13 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
         }
         if( return_data.is_complete == true) {
-                var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
-                window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+            var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
+            window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
 
         }
 
 
-		//$('#ne0xt-btn')[0].click();
+        //$('#ne0xt-btn')[0].click();
     }
 
     function afterJumpReview(return_data){
@@ -365,16 +369,37 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
         window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
     }
 
+    var currentRequest = null;
     function afterNextQuestion(){
         var current_question_serial = $('.rurera-question-block.active').index();
         current_question_serial =  parseInt(current_question_serial)+1;
         var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
         var current_percentage = (current_question_serial*100)/total_questions;
-        console.log(current_question_serial);
         $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
         $(".progress-bar-counter").css('left', current_percentage+'%');
         $(".progress-bar-fill").css('width', current_percentage+'%');
 
+        var qattempt_id = $('.rurera-question-block.active').attr('data-qattempt');
+        var question_id = $('.rurera-question-block.active').attr('data-qresult');
+        var actual_question_id = $('.rurera-question-block.active').find(".question-fields").attr('data-question_id');
+        currentRequest = jQuery.ajax({
+            type: "POST",
+            dataType: 'json',
+            url: '/question_attempt/mark_as_active',
+            async: true,
+            beforeSend: function () {
+                if (currentRequest != null) {
+                    currentRequest.abort();
+                }
+            },
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"question_id": question_id, "qattempt_id": qattempt_id, "actual_question_id": actual_question_id},
+            success: function (return_data) {
+                console.log(return_data);
+            }
+        });
         if (duration_type == 'per_question') {
             $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
@@ -398,38 +423,38 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
         }
     }
 
-	function afterQuestionValidation_bk(return_data, thisForm, question_id) {
-		var current_question_layout = getDivWithValues().html();//$(".question-area-block").html();
-		//console.log(current_question_layout.html());
-		current_question_layout = JSON.stringify(current_question_layout);
-		current_question_layout = rureraform_encode64(current_question_layout);
-		var questions_layout_obj = JSON.parse($('.question-area-block').attr('data-questions_layout'));
-		console.log(questions_layout_obj);
-		var question_local_id = $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").attr('data-question_id');
-		var questions_layout = [];
+    function afterQuestionValidation_bk(return_data, thisForm, question_id) {
+        var current_question_layout = getDivWithValues().html();//$(".question-area-block").html();
+        //console.log(current_question_layout.html());
+        current_question_layout = JSON.stringify(current_question_layout);
+        current_question_layout = rureraform_encode64(current_question_layout);
+        var questions_layout_obj = JSON.parse($('.question-area-block').attr('data-questions_layout'));
+        console.log(questions_layout_obj);
+        var question_local_id = $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").attr('data-question_id');
+        var questions_layout = [];
         var questions_layout_obj = $.map(questions_layout_obj, function (value, index) {
             questions_layout[index] = value;
         });
         var question_layout = rureraform_decode64(questions_layout[question_local_id]);
 
         var question_layout = JSON.parse(question_layout);
-		console.log('afterQuestionValidation');
-		console.log('questions_layout.length===='+question_local_id);
-		questions_layout[question_local_id] = current_question_layout;
+        console.log('afterQuestionValidation');
+        console.log('questions_layout.length===='+question_local_id);
+        questions_layout[question_local_id] = current_question_layout;
 
-		let questions_layout_object = {};
+        let questions_layout_object = {};
 
-		$.each(questions_layout, function(question_index, question_value) {
-			if (typeof question_value !== 'undefined') {
-				questions_layout_object[question_index] = questions_layout[question_index];
-			}
-		});
-		$('.question-area-block').attr('data-questions_layout', JSON.stringify(questions_layout_object))
+        $.each(questions_layout, function(question_index, question_value) {
+            if (typeof question_value !== 'undefined') {
+                questions_layout_object[question_index] = questions_layout[question_index];
+            }
+        });
+        $('.question-area-block').attr('data-questions_layout', JSON.stringify(questions_layout_object))
 
-	}
+    }
 
 
-	function getDivWithValues() {
+    function getDivWithValues() {
         // Clone the original div
         let clonedDiv = $('.question-area-block').clone();
 
@@ -488,13 +513,19 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
             });
         });
 
-		clonedDiv.find('.question-submit-btn').removeClass('rurera-processing');
-		clonedDiv.find('.rurera-button-loader').remove();
+        clonedDiv.find('.question-submit-btn').removeClass('rurera-processing');
+        clonedDiv.find('.rurera-button-loader').remove();
 
         return clonedDiv;
     }
 
-
+    var current_question_serial = $('.rurera-question-block.active').index();
+    current_question_serial =  parseInt(current_question_serial)+1;
+    var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
+    var current_percentage = (current_question_serial*100)/total_questions;
+    $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
+    $(".progress-bar-counter").css('left', current_percentage+'%');
+    $(".progress-bar-fill").css('width', current_percentage+'%');
 
     $(document).on('keyup', 'body', function (evt) {
         if (evt.key === 'ArrowLeft') {

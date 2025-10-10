@@ -908,7 +908,6 @@ function init_question_functions() {
 
 
         var actual_question_id = $(".question-fields").attr('data-question_id');
-        //Temporary Commented
         currentRequest = jQuery.ajax({
             type: "POST",
             dataType: 'json',
@@ -1018,6 +1017,9 @@ function init_question_functions() {
     $(document).on('click', '.submit_quiz_final', function (e) {
         var qattempt_id = $(".question-area .question-step").attr('data-qattempt');
         var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
+        var result_question_id = $(".rurera-question-block.active").attr('data-qresult');
+        $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+        $('#question-submit-btn')[0].click();
         rurera_loader($(this), 'div');
         var thisObj = $(this);
         jQuery.ajax({
@@ -1027,7 +1029,7 @@ function init_question_functions() {
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            data: {"qattempt_id": qattempt_id},
+            data: {"qattempt_id": qattempt_id, "result_question_id":result_question_id},
             success: function (return_data) {
 				if( return_data.status == 'no_questions_attempted'){
 					window.location.href = '/tests';
