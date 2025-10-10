@@ -213,7 +213,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 @endif
 
 <div class="modal fade review_submit" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <div class="modal-body">
