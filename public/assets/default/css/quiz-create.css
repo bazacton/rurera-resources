@@ -615,13 +615,18 @@ body .learning-page .learning-title {border-color: #ccc;}
     padding: 25px 25px;
     gap: 10px 15px;
 }
+.net-connection-box.lost {
+    border-top-color: #EA4D67;
+}
+.net-connection-box.online {
+    border-top-color: #2ECC71;
+}
 .net-connection-box span {
     display: inline-flex;
     height: 30px;
     width: 30px;
     align-items: center;
     justify-content: center;
-    background-color: #2ECC71;
     border-radius: 100%;
 }
 .net-connection-box span img {
@@ -632,6 +637,9 @@ body .learning-page .learning-title {border-color: #ccc;}
 .net-connection-box.lost span {
     background-color: #EA4D67;
 }
+.net-connection-box.online span {
+    background-color: #2ECC71;
+}
 .reconnect-btn {
     background-color: var(--blue);
     color: var(--white);
@@ -641,9 +649,6 @@ body .learning-page .learning-title {border-color: #ccc;}
 }
 .net-connection-box p {
     margin: 0;
-}
-.net-connection-box.lost {
-    border-top-color: #EA4D67;
 }
 .about-net-connection .modal-content {
     background-color: inherit;
