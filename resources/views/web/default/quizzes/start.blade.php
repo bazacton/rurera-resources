@@ -75,7 +75,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
                     @endif
 
 
-                    <div class="learning-content-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
+                    <div class="learning-content-box learning-start-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
 
                         <div class="container">
                             <div class="row">
