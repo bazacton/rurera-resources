@@ -647,6 +647,9 @@ body .learning-page .learning-title {border-color: #ccc;}
     padding: 8px 15px;
     border-radius: 3px;
 }
+.net-connection-box.online .reconnect-btn {
+    background-color: #b6b6b6;
+}
 .net-connection-box p {
     margin: 0;
 }
