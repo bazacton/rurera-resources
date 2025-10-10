@@ -565,6 +565,20 @@ body .learning-page.type-sats .learning-content .learning-content-box {border-co
 body .learning-page .learning-title {border-color: #ccc;}
 /*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style End*/
 
+/*Question Type Start Page Style Start*/
+.learning-start-box .learning-content-box-icon {
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 0 0 auto;
+}
+.learning-start-box .learning-content-box .row {
+    align-items: center;
+}
+/*Question Type Start Page Style End*/
+
 /*Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play Style Start*/
 .questions-block-numbers {overflow: hidden;}
 .questions-block-numbers ul {border-right: 1px solid #f1f0f5; border-bottom: 1px solid #f1f0f5; margin: 0 -3px;}
