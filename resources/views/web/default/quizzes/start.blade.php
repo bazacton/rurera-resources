@@ -77,56 +77,58 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
                     <div class="learning-content-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
 
-
-						@if( isset( $quiz->quiz_instructions ) && $quiz->quiz_instructions != '')
-							   <div class="instruction-text">
-								<h3>INSTRUCTIONS</h3>
-								{!! $quiz->quiz_instructions !!}
-								</div>
-					   @endif
-                        <div class="instruction-text rurera-hide">
-                            <h3>INSTRUCTIONS</h3>
-                            <h4>Setting Up Your Page</h4>
-                            <p>Before you start the test you can use the buttons on the top right of the screen to choose:</p>
-                            <ul>
-                                <li>a coloured overlay (this will change the background colour and may help you read the questions better)</li>
-                            </ul>
-                            <img src="/assets/default/img/overlay.png" alt="#">
-                            <ul>
-                                <li>the font size</li>
-                            </ul>
-                            <img src="/assets/default/img/font-size.png">
-                            <p>We recommend you setup your page BEFORE the test starts.</p>
-                            <p>Changing these features during the test will reduce the amount of time you have to answer the questions.</p>
-                            <hr style="border-color:rgba(130, 80, 232, 0.15)">
-                            <h4>Navigating The Test</h4>
-                            <p>Read the instructions for each question carefully.</p>
-                            <p>Choose your answer by clicking on it. If you want to change your mind, click on a different answer.</p>
-                            <p>Once you are sure of your answer click ‘Submit Answer’. You will not be able to go back to change your answer.</p>
-                            <img src="/assets/default/img/answer.png" alt="#">
-                            <p>You can use a pen/pencil and paper to make notes if you wish. Your working and notes will not be marked.</p>
-                            <hr style="border-color:rgba(130, 80, 232, 0.15)">
-                            <h4>About The Test</h4>
-                            <p>The Verbal Reasoning Test assesses a range of English language skills including:</p>
-                            <ul>
-                                <li>Comprehension</li>
-                                <li>Reasoning</li>
-                                <li>Logic</li>
-                            </ul>
-                            <p>The questions you see in this Walkthrough are examples of these types.</p>
-                            <p>Some of these types may appear in the test, while others may not.</p>
-                      </div>
-
-                        <div class="learning-content-box-icon">
-                            <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    @if( isset( $quiz->quiz_instructions ) && $quiz->quiz_instructions != '')
+                                        <div class="instruction-text">
+                                            <h3>INSTRUCTIONS</h3>
+                                            {!! $quiz->quiz_instructions !!}
+                                        </div>
+                                    @endif
+                                    <a href="javascript:;" data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
+                                    class="quiz-start-btn start-spell-quiz btn btn-primary btn-sm mt-15">{{isset( $button_label)? $button_label : 'Start Test'}}</a>
+                                    <div class="instruction-text rurera-hide">
+                                        <h3>INSTRUCTIONS</h3>
+                                        <h4>Setting Up Your Page</h4>
+                                        <p>Before you start the test you can use the buttons on the top right of the screen to choose:</p>
+                                        <ul>
+                                            <li>a coloured overlay (this will change the background colour and may help you read the questions better)</li>
+                                        </ul>
+                                        <img src="/assets/default/img/overlay.png" alt="#">
+                                        <ul>
+                                            <li>the font size</li>
+                                        </ul>
+                                        <img src="/assets/default/img/font-size.png">
+                                        <p>We recommend you setup your page BEFORE the test starts.</p>
+                                        <p>Changing these features during the test will reduce the amount of time you have to answer the questions.</p>
+                                        <hr style="border-color:rgba(130, 80, 232, 0.15)">
+                                        <h4>Navigating The Test</h4>
+                                        <p>Read the instructions for each question carefully.</p>
+                                        <p>Choose your answer by clicking on it. If you want to change your mind, click on a different answer.</p>
+                                        <p>Once you are sure of your answer click ‘Submit Answer’. You will not be able to go back to change your answer.</p>
+                                        <img src="/assets/default/img/answer.png" alt="#">
+                                        <p>You can use a pen/pencil and paper to make notes if you wish. Your working and notes will not be marked.</p>
+                                        <hr style="border-color:rgba(130, 80, 232, 0.15)">
+                                        <h4>About The Test</h4>
+                                        <p>The Verbal Reasoning Test assesses a range of English language skills including:</p>
+                                        <ul>
+                                            <li>Comprehension</li>
+                                            <li>Reasoning</li>
+                                            <li>Logic</li>
+                                        </ul>
+                                        <p>The questions you see in this Walkthrough are examples of these types.</p>
+                                        <p>Some of these types may appear in the test, while others may not.</p>
+                                    </div>
+                                    <div class="learning-content-quiz"></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="learning-content-box-icon">
+                                        <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <a href="javascript:;" data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
-                           class="quiz-start-btn start-spell-quiz btn btn-primary btn-sm mt-15">{{isset( $button_label)? $button_label : 'Start Test'}}</a>
-                        <div class="learning-content-quiz">
-                           
-                        </div>
-
                     </div>
                 </div>
 
