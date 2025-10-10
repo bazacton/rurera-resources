@@ -1675,6 +1675,13 @@ Admin API Questions Form Page Style Start
 }
 /*Hide Classes Style Start*/
 
+/*Review Submit Modal Style Start*/
+.review_submit .modal-content {
+    text-align: center;
+    padding: 30px 30px;
+}
+/*Review Submit Modal Style End*/
+
 /****************************************** 
 Inline-Style From Php Files Style Start
 ******************************************/
