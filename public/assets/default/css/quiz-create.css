@@ -596,6 +596,61 @@ body .learning-page .learning-title {border-color: #ccc;}
 }
 /*Question Type Start Page Style End*/
 
+/*About Net Connection Modal Style Start*/
+.about-net-connection .modal-body {
+    padding: 00;
+}
+.about-net-connection .close {
+    top: 8px;
+    right: 10px;
+}
+.net-connection-box {
+    border-top: 4px solid;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px 25px;
+    gap: 10px 15px;
+}
+.net-connection-box span {
+    display: inline-flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ECC71;
+    border-radius: 100%;
+}
+.net-connection-box span img {
+    height: 18px;
+    width: 18px;
+    filter: invert(99%) sepia(92%) saturate(387%) hue-rotate(167deg) brightness(114%) contrast(94%);
+}
+.net-connection-box.lost span {
+    background-color: #EA4D67;
+}
+.reconnect-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+.net-connection-box p {
+    margin: 0;
+}
+.net-connection-box.lost {
+    border-top-color: #EA4D67;
+}
+.about-net-connection .modal-content {
+    background-color: inherit;
+    box-shadow: none;
+}
+/*About Net Connection Modal Style End*/
+
 /*Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play Style Start*/
 .questions-block-numbers {overflow: hidden;}
 .questions-block-numbers ul {border-right: 1px solid #f1f0f5; border-bottom: 1px solid #f1f0f5; margin: 0 -3px;}
