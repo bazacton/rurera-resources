@@ -2035,12 +2035,9 @@ Quiz Check Answers Page Style End
 .log_details .badge {
     margin: 0 !important;
 }
-.question-right-side h3 {
-    font-size: 22px;
-    margin: 0 0 15px;
-}
+.question-right-side h3,
 .questions_logs_block h4 {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0 0 15px;
 }
 .lms-card-timeline .card {
