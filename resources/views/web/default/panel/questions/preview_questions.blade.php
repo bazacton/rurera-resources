@@ -159,6 +159,12 @@ $rand_id = rand(99,9999);
                                                                                                                 <p class="mb-0">
                                                                                                                     The submitted design looks good overall, but needs some color adjustments.
                                                                                                                     Please also align the header properly and add a clear call-to-action button.
+
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
                                                                                                                 </p>
                                                                                                             </div>
                                                                                                         </div>
@@ -179,7 +185,6 @@ $rand_id = rand(99,9999);
                                                                                                                 <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
                                                                                                                 <p class="mb-0">
                                                                                                                     The submitted design looks good overall, but needs some color adjustments.
-                                                                                                                    Please also align the header properly and add a clear call-to-action button.
                                                                                                                 </p>
                                                                                                             </div>
                                                                                                         </div>
