@@ -132,7 +132,7 @@ $rand_id = rand(99,9999);
                                                                                     <div class="card mb-3">
                                                                                         <div class="card-body">
                                                                                             <div class="media">
-                                                                                                <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
                                                                                                 <div class="media-body">
                                                                                                     <div class="d-flex justify-content-between align-items-center">
                                                                                                         <h6 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h6>
