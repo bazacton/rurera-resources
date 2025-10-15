@@ -25,7 +25,7 @@ $rand_id = rand(99,9999);
 						<div class="quiz-questions-bar-holder">
 							<div class="quiz-questions-bar">
 								<span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
-								<span class="bar-fill" title="0%" style="width: 0%;"></span>
+								<span class="bar-fill" title="80%" style="width: 80%;"></span>
 							</div>
 							<span class="coin-numbers">
 								<img src="/assets/default/img/quests-coin.png" alt="">
@@ -176,6 +176,20 @@ $rand_id = rand(99,9999);
                                                                                         <div class="input-group">
                                                                                             <textarea rows="10" name="review_message" class="form-control"></textarea>
                                                                                         </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-md-12">
+                                                                                    <div class="form-group">
+                                                                                        <select name="question_status" class="question_status_update custom-select">
+                                                                                            <option value="">Action</option>
+                                                                                            <option value="Accepted" selected="selected">Accepted</option>
+                                                                                            <option value="On hold">On hold</option>
+                                                                                            <option value="Improvement required">Improvement required</option>
+                                                                                            <option value="Hard reject">Hard reject</option>
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
