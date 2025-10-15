@@ -1861,9 +1861,12 @@ Quiz Check Answers Page Style End
 .approve_modal_box .modal-dialog {
     max-width: 700px;
 }
+.review_submit.approve_modal_box .modal-content {
+    padding: 35px;
+}
 .approve_modal_box .modal-header {
     padding: 0 0 10px;
-    margin: 0 0 15px;
+    margin: 0 0 25px;
 }
 .approve_modal_box .modal-body {
     padding: 0;
@@ -1883,13 +1886,11 @@ Quiz Check Answers Page Style End
     margin: 15px 0 25px;
     font-size: 18px;
 }
-
 .approve_modal_box .lms-card-timeline {
     width: 100%;
     text-align: left;
     margin: 0 0 25px;
 }
-
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
     align-items: center;
@@ -1899,21 +1900,18 @@ Quiz Check Answers Page Style End
     font-size: 16px;
     flex-wrap: wrap;
 }
-
 .lms-card-timeline .lms-card-info .user-avatar {
     height: 40px;
     width: 40px;
     border-radius: 100%;
     overflow: hidden;
 }
-
 .lms-card-timeline .lms-card-info h5 b {
     font-weight: 400;
     font-size: 14px;
     display: block;
     color: #999;
 }
-
 .lms-card-timeline .lms-card-info > b {
     font-size: 14px;
     font-weight: 400;
@@ -1977,6 +1975,7 @@ Quiz Check Answers Page Style End
     font-weight: 600;
 }
 .review-msg-box textarea {
+    background-color: inherit;
     border: 0;
     border-radius: 0;
     width: 100% !important;
@@ -2004,4 +2003,22 @@ Quiz Check Answers Page Style End
     border-radius: 5px;
     border: 0;
     background-color: var(--blue);
+}
+.review-msg-box {
+    background-color: #fafafa;
+    padding: 5px 20px 10px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ececec;
+    border-top: 0;
+}
+.review_submit.approve_modal_box .modal-content {
+    padding: 35px;
+}
+.form-group:has(.btn-group-toggle) {
+    background-color: #fafafa;
+    padding: 15px 20px 15px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ececec;
+    border-bottom: 0;
 }
