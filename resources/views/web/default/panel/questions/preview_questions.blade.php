@@ -79,6 +79,7 @@ $rand_id = rand(99,9999);
                                                     </a>
                                                 @endif
                                                 </div>
+                                                </div>
 
                                                     <div class="question-right-side">
                                                         <h3>Question Review</h3>
