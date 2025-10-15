@@ -92,7 +92,7 @@ $rand_id = rand(99,9999);
 
                                                                                         <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
                                                                                             <label class="btn btn-success">
-                                                                                                <input type="radio" name="question_status" value="Published" autocomplete="off"> Approve
+                                                                                                <input type="radio" name="question_status" value="Published" autocomplete="off" checked> Publish
                                                                                             </label>
                                                                                             <label class="btn btn-warning">
                                                                                                 <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
@@ -344,16 +344,19 @@ $(document).on('submit', '.approve_question_form', function (evt) {
     console.log('sdfsdf');
 
     var thisObj = $('.approve_question_form');
-    rurera_loader(thisObj, 'div');
+    //rurera_loader(thisObj, 'div');
     var formData = new FormData($(this)[0]);
     $.ajax({
         type: 'POST',
         url: '/admin/questions_bank/approve_question',
         data: formData,
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         processData: false,
         contentType: false,
         success: function (response) {
-            rurera_remove_loader(thisObj, 'div');
+            //rurera_remove_loader(thisObj, 'div');
             $(".approve_modal_box").modal('hide');
             rurera_modal_alert(
                 'success',
