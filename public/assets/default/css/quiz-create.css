@@ -1917,9 +1917,9 @@ Quiz Check Answers Page Style End
 }
 .approve_question_form {
     text-align: left;
-}
-.approve_question_form {
-    text-align: left;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    overflow-y: auto;
 }
 .lms-card-timeline .card {
     border: 0;
