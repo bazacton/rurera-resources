@@ -1869,6 +1869,7 @@ Quiz Check Answers Page Style End
 .preview-question-area .rurera-question-block.active {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .preview-question-area .left-content {
     max-width: 750px;
@@ -1877,13 +1878,12 @@ Quiz Check Answers Page Style End
 }
 .preview-question-area .question-right-side {
     max-width: 500px;
-    margin-left: auto;
-    margin-right: -30px;
-    position: relative;
     z-index: 2;
     overflow: hidden;
     padding: 25px;
     border-left: 1px solid #ececec;
+    position: fixed;
+    right: 0;
 }
 .preview-question-area .question-layout-block .prev-next-controls {
     transform: none;
