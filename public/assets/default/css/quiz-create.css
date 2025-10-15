@@ -1878,7 +1878,7 @@ Quiz Check Answers Page Style End
 .approve_modal_box h4 {
     width: 100%;
     text-align: left;
-    margin: 0 0 15px;
+    margin: 15px 0 25px;
     font-size: 18px;
 }
 
@@ -1920,4 +1920,19 @@ Quiz Check Answers Page Style End
 }
 .approve_question_form {
     text-align: left;
+}
+.approve_question_form {
+    text-align: left;
+}
+.lms-card-timeline .card {
+    border: 0;
+    padding: 0;
+}
+.lms-card-timeline .card .card-body {
+    padding: 0;
+}
+.lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;margin: 0 0 10px;}
+
+.lms-card-timeline .card .media .media-body > .d-flex small {
+    width: 100%;
 }
