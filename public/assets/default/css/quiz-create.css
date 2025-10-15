@@ -1932,10 +1932,6 @@ Quiz Check Answers Page Style End
     padding: 0;
 }
 .lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;margin: 0 0 10px;}
-
-.lms-card-timeline .card .media .media-body > .d-flex small {
-    width: 100%;
-}
 .approve_question_form .row:has(.lms-card-timeline) {
     margin: 0;
 }
@@ -1951,10 +1947,10 @@ Quiz Check Answers Page Style End
 }
 .approve_question_form .btn-group-toggle .btn {
     padding: 15px 15px;
-    background-color: inherit;
+    background-color: inherit !important;
     border: 0;
     box-shadow: none;
-    color: var(--blue);
+    color: var(--blue) !important;
     border-right: 1px solid rgba(0,123,151,0.5) !important;
     border-radius: 0 !important;
     margin: 0 !important;
@@ -1970,6 +1966,7 @@ Quiz Check Answers Page Style End
 }
 .approve_question_form .btn-group-toggle .btn.active {
     background-color: var(--blue) !important;
+    color: #fff !important;
 }
 .question-explaination h5 {
     font-weight: 600;
