@@ -2048,6 +2048,12 @@ Quiz Check Answers Page Style End
     font-size: 18px;
     margin: 0 0 15px;
 }
+.preview-question-area .question-layout.row {
+    margin: 0;
+}
+.preview-question-area .question-layout .rureraform-col {
+    padding: 0 0 20px !important;
+}
 @media screen and (max-width: 782px) {
     .preview-question-area .question-right-side {
         max-width: 100%;
