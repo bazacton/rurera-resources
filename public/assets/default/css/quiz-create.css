@@ -1858,6 +1858,9 @@ Quiz Check Answers Page Style Start
 Quiz Check Answers Page Style End
 *****************************/
 
+.approve_modal_box .modal-dialog {
+    max-width: 700px;
+}
 .approve_modal_box .close {
     
 }
