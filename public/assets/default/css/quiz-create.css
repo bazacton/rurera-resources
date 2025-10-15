@@ -1974,3 +1974,32 @@ Quiz Check Answers Page Style End
 .question-explaination h5 {
     font-weight: 600;
 }
+.review-msg-box textarea {
+    border: 0;
+    border-radius: 0;
+    width: 100% !important;
+    resize: none;
+    outline: none !important;
+    padding: 0;
+    box-shadow: none !important;
+}
+.review-msg-box .input-group {
+    border: 1px solid #ececec;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px 15px 15px;
+}
+.review-msg-control {
+    border-top: 1px solid #ececec;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.review-msg-control .btn {
+    height: auto;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--blue);
+}
