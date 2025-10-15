@@ -22,22 +22,7 @@ $rand_id = rand(99,9999);
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-50 mx-auto">
-					<div class="quiz-status-bar">
-						<div class="quiz-questions-bar-holder">
-							<div class="quiz-questions-bar">
-								<span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
-								<span class="bar-fill" title="80%" style="width: 80%;"></span>
-							</div>
-							<span class="coin-numbers">
-								<img src="/assets/default/img/quests-coin.png" alt="">
-								<span class="total-earned-coins">0</span>
-							</span>
-						</div>
-						<div class="quiz-corrects-incorrects">
-							<span class="quiz-corrects">0</span>
-							<span class="quiz-incorrects">0</span>
-						</div>
-					</div>
+
 					<div class="question-area-block" data-active_question_id="0" data-questions_layout="">
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="10">
@@ -58,6 +43,22 @@ $rand_id = rand(99,9999);
 												data-start_time="0" data-qresult="0"
 												data-quiz_result_id="0">
                                                     <div class="left-content has-bg">
+                                                        <div class="quiz-status-bar">
+                                                            <div class="quiz-questions-bar-holder">
+                                                                <div class="quiz-questions-bar">
+                                                                    <span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
+                                                                    <span class="bar-fill" title="80%" style="width: 80%;"></span>
+                                                                </div>
+                                                                <span class="coin-numbers">
+								<img src="/assets/default/img/quests-coin.png" alt="">
+								<span class="total-earned-coins">0</span>
+							</span>
+                                                            </div>
+                                                            <div class="quiz-corrects-incorrects">
+                                                                <span class="quiz-corrects">0</span>
+                                                                <span class="quiz-incorrects">0</span>
+                                                            </div>
+                                                        </div>
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
                                                     <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span>
