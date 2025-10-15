@@ -44,6 +44,7 @@ $rand_id = rand(99,9999);
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
+									<div class="left-content has-bg">
 										@php $is_active = ''; $counter = 0; @endphp
 										@if($questions->count() > 0)
 											@foreach($questions as $questionObj)
@@ -52,8 +53,6 @@ $rand_id = rand(99,9999);
                                                 @php $questionLogs = QuestionLogs::where('question_id', $questionObj->id)->orderBy('id', 'desc')->with('user')
                                                                                 ->get();
                                                 @endphp
-
-                                            <div class="left-content has-bg">
 												<div class="rurera-question-block {{($counter == 1)? 'active' : ''}} question-step question-step-{{ $questionObj->id }}" data-elapsed="0"
 												data-qattempt="0"
 												data-start_time="0" data-qresult="0"
@@ -78,7 +77,7 @@ $rand_id = rand(99,9999);
                                                         Take Action
                                                     </a>
                                                 @endif
-                                                </div>
+
                                                     <div class="question-right-side">
                                                         <h3>Question Review</h3>
                                                         <form action="javascript:;" method="POST" class="row approve_question_form">
@@ -157,6 +156,22 @@ $rand_id = rand(99,9999);
                                                         </form>
                                                     </div>
 
+                                                    <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h3>Question Review</h3>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
 												</div>
 
 											@endforeach
@@ -184,6 +199,7 @@ $rand_id = rand(99,9999);
                                     </a>
 									</div>
 
+								</div>
 								</div>
 							</div>
 						</div>
