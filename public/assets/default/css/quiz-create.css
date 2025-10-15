@@ -1897,6 +1897,9 @@ Quiz Check Answers Page Style End
     bottom: 0;
     margin-top: auto;
 }
+.preview-question-area .prev-next-controls .question-submit-btn {
+    position: relative;
+}
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
     align-items: center;
