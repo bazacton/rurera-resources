@@ -1971,3 +1971,6 @@ Quiz Check Answers Page Style End
 .approve_question_form .btn-group-toggle .btn-success:not(:disabled):not(.disabled).active {
     color: #1c7430;
 }
+.question-explaination h5 {
+    font-weight: 600;
+}
