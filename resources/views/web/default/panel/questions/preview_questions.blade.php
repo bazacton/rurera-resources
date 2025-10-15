@@ -53,7 +53,7 @@ $rand_id = rand(99,9999);
 												data-quiz_result_id="0">
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
-													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) ({{$questionObj->subChapter->sub_chapter_title}})</span>
+													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) ({{$questionObj->subChapter->chapter->title.' / '.$questionObj->subChapter->sub_chapter_title}})</span>
 												</span>
 												<div class="question-layout row">
 													{!! $question_layout !!}
