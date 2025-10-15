@@ -1859,9 +1859,7 @@ Quiz Check Answers Page Style End
 *****************************/
 
 .approve_modal_box .close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    
 }
 .approve_modal_box .modal-body {
     padding: 0;
