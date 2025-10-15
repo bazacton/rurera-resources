@@ -220,7 +220,7 @@ $rand_id = rand(99,9999);
                                                                                                                                    class=""></i></div>
                                                                                                     <div class="lms-card-info">
                                                                                                         <h5>
-                                                                                                            <span class="user-avatar"><img src="{{url('/').$logObj->user->avatar}}"></span>
+                                                                                                            <span class="user-avatar"><img src="{{url('/').$logObj->user->getAvatar(40)}}"></span>
                                                                                                             {{$logObj->user->get_full_name()}} @ <b>{{ dateTimeFormat
                                                         ($logObj->action_at, 'j M y | H:i')
                                                         }} <span><i data-feather="arrow-right" width="20" height="20"
