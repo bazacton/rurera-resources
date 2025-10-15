@@ -72,10 +72,7 @@ $rand_id = rand(99,9999);
 
                                                     <br>
                                                     <a href="javascript:;" id="approve-btn" class="question-approve-btn btn btn-primary" data-toggle="modal" data-target="#approve_modal_{{$questionObj->id}}">
-                                                        Approve
-                                                    </a>
-                                                    <a href="javascript:;" id="question-reject-btn" class="question-reject-btn btn btn-danger"  data-toggle="modal" data-target="#reject_modal_{{$questionObj->id}}">
-                                                        Reject
+                                                        Take Action
                                                     </a>
                                                 @endif
 
