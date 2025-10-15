@@ -96,14 +96,45 @@ $rand_id = rand(99,9999);
                                                                             </div>
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
+
                                                                                     <div class="form-group">
-                                                                                        <select name="question_status" class="question_status_update custom-select">
-                                                                                            <option value="">Action</option>
-                                                                                            <option value="Accepted">Accepted</option>
-                                                                                            <option value="Improvement required">Improvement required</option>
-                                                                                            <option value="Hard reject">Hard reject</option>
-                                                                                        </select>
+                                                                                        <label class="input-label">Action</label>
+                                                                                        <div class="input-group">
+                                                                                            <div class="radio-buttons">
+                                                                                                <label class="card-radio">
+                                                                                                    <input type="radio" name="question_status"
+                                                                                                           class="question_status" value="Published">
+                                                                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                                                        <div class="card-icon">
+                                                                                                            <h3>Approve</h3>
+                                                                                                       </div>
+
+                                                                                                  </span>
+                                                                                                </label>
+                                                                                                <label class="card-radio">
+                                                                                                    <input type="radio" name="question_status"
+                                                                                                           class="question_status" value="Improvement required">
+                                                                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                                                        <div class="card-icon">
+                                                                                                            <h3>Improvement required</h3>
+                                                                                                       </div>
+
+                                                                                                  </span>
+                                                                                                </label>
+                                                                                                <label class="card-radio">
+                                                                                                    <input type="radio" name="question_status"
+                                                                                                           class="question_status" value="Hard reject">
+                                                                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                                                        <div class="card-icon">
+                                                                                                            <h3>Hard reject</h3>
+                                                                                                       </div>
+
+                                                                                                  </span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
+
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row">
@@ -172,7 +203,7 @@ $rand_id = rand(99,9999);
                                                         </div>
                                                     </div>
 
-                                                    
+
 												</div>
 
 											@endforeach
