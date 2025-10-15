@@ -17,11 +17,11 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 @section('content')
-<div class="learning-page type-practice type-sats">
+<div class="learning-page type-practice type-sats preview-question-area">
 	<section class="learning-content lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
-                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-50 mx-auto">
 					<div class="quiz-status-bar">
 						<div class="quiz-questions-bar-holder">
 							<div class="quiz-questions-bar">
