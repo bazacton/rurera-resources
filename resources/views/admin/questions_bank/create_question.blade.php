@@ -59,7 +59,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 	.rureraform-element-helper{
 		width:100% !important;
 	}
-	
+
 	.rureraform-element-helpers {
     width: fit-content !important;
 }
@@ -98,7 +98,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                     <li class="nav-item">
                         <a class="nav-link" id="review_required_tab-tab" data-toggle="tab"
                             href="#review_required_tab" role="tab"
-                            aria-controls="review_required_tab" aria-selected="true"><span class="tab-title">Comments for Reviewer</span></a>
+                            aria-controls="review_required_tab" aria-selected="true"><span class="tab-title">Question Logs</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -331,11 +331,11 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                         <ul class="rureraform-toolbar-list">
                                                                             @php
                                                                             foreach ($toolbar_tools as $key => $value) {
-																				
+
                                                                             if (array_key_exists('options', $value)) {
 																				$classes = isset( $value['classes'] )? $value['classes'] : '';
 																				$options_elements = isset( $value['options_elements'] )? $value['options_elements'] : array();
-																				
+
                                                                             echo '
                                                                             <li class="rureraform-toolbar-tool-' . esc_html($value['type']) . ' '.$classes.'"
                                                                                 class="rureraform-toolbar-list-options"
@@ -348,12 +348,12 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                                     foreach ($value['options'] as
                                                                                     $option_key =>
                                                                                     $option_value) {
-																						
+
 																					$data_options_elements = isset( $options_elements[$option_key] )? $options_elements[$option_key] : '';
 
                                                                                     echo '
                                                                                     <li data-type="' . esc_html($key) . '"
-                                                                                        data-option="' . esc_html($option_key) . '" 
+                                                                                        data-option="' . esc_html($option_key) . '"
                                                                                         data-elements="' . esc_html($data_options_elements) . '"
                                                                                         ><a href="#"
                                                                                                     data-title="' . esc_html($value['title']) . '">'
@@ -367,13 +367,13 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                             ';
                                                                             } else {
                                                                             $classes = isset( $value['classes'] )? $value['classes'] : '';
-																			
+
 																			$icon = '<i class="' . esc_html($value['icon']) . '"></i>';
 																			if( isset( $value['icon_type'] ) && $value['icon_type'] == 'svg'){
 																				$icon = '<img src="/assets/admin/img/tools-elements/' . esc_html($value['icon']) . '" width="15">';
 																			}
-																			
-																			
+
+
                                                                             echo '
                                                                             <li class="rureraform-toolbar-tool-' . esc_html($value['type']) . ' '.$classes.'"
                                                                                 data-title="' . esc_html($value['title']) . '" data-type="' . esc_html($key) . '"><a
@@ -703,7 +703,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                             <button class="btn btn-primary save-template"><i class="fas fa-save"></i> Save Template</button>
                                                             <button class="btn btn-primary activate-template"><i class="fas fa-calendar-week"></i> Activate Template</button>
                                                         </div>
-														
+
                                                         <div class="search-fields-block" style="background: #efefef;padding: 10px;"><div class="row">
 															 <div class="col-lg-6 col-md-6 col-12">
 																	<div class="form-group">
@@ -722,7 +722,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 																@php $categories_ids = isset( $questionObj->category_id )? json_decode($questionObj->category_id) : array();
                                                                 $categories_ids = is_array( $categories_ids )? $categories_ids : array($categories_ids);
                                                                 @endphp
-															 
+
                                                             <div class="col-lg-6 col-md-6 col-12">
                                                                 <div class="form-group">
                                                                     <label class="input-label">Year / Grade *</label>
@@ -792,7 +792,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															@php $question_type = isset( $question_type )? $question_type : '';
 															$question_difficulty_level = isset( $question_difficulty_level )? $question_difficulty_level : '';
 															$reference_type = isset( $reference_type )? $reference_type : '';
-															
+
 															@endphp
 															<div class="col-lg-6 col-md-6 col-12 rurera-hide">
 																<div class="form-group">
@@ -927,7 +927,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															</label>
 														</div>
 													</div>
-													
+
                                                     <div class="col-lg-6 col-md-6 col-12">
                                                         <div class="form-group custom-switches-stacked">
                                                             <label class="custom-switch pl-0">
@@ -959,7 +959,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                             </label>
                                                         </div>
                                                     </div>
-													
+
 													<div class="col-lg-6 col-md-6 col-12">
                                                         <div class="form-group custom-switches-stacked">
                                                             <label class="custom-switch pl-0">
@@ -989,7 +989,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															</select>
                                                         </div>
                                                     </div>
-													
+
 													<div class="col-lg-12 col-md-12 col-12">
 													<div class="form-group">
 														<label class="input-label">Example Thumbnail</label>
@@ -1069,6 +1069,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                             <div class="tab-pane mt-3 fade" id="review_required_tab" role="tabpanel" aria-labelledby="review_required_tab-tab">
                             <div class="col-12 col-md-12">
                                 <div class="row">
+                                    111
 									@php $question_status = isset( $questionObj->question_status )? $questionObj->question_status : ''; @endphp
 									@if(auth()->user()->isReviewer())
 									@if($question_status == 'Submit for review' ||
@@ -1163,7 +1164,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                 </div>
 
                                                 @if( isset( $questionObj->id ))
-                                                    <input type="hidden" name="question_id" value="{{$questionObj->id}}">	
+                                                    <input type="hidden" name="question_id" value="{{$questionObj->id}}">
                                                 @endif
                                             </form>
                                         </div>
@@ -1178,7 +1179,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
     </div>
     <div class="row">
         <div class="col-12 col-md-12">
-            
+
             @include('admin.questions_bank.question_editor_fields_controls')
 
             <div class="mt-5 mb-5 create-question-fields-block">
@@ -1282,11 +1283,11 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 						<textarea class="form-control @error('paragraph') is-invalid @enderror" rows="10" name="paragraph" id="inputText" placeholder="Enter the paragraph here...">{{isset( $TopicParts->paragraph ) ? $TopicParts->paragraph : old('paragraph')}}</textarea>
 					</div>
 					<input type="hidden" name="question_id" value="{{$questionObj->id}}">
-					
+
 					<button id="splitTextBtn" type="button">Split Text into Parts</button>
 					<button id="addMoreBtn" type="button">Add More</button>
 
-					
+
 					<table id="outputTable">
 						<thead>
 							<tr>
@@ -1296,10 +1297,10 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 							</tr>
 						</thead>
 						<tbody id="sortableTableBody">
-							
+
 						</tbody>
 					</table>
-					
+
                 </form>
             </div>
             <div class="modal-footer">
@@ -1329,9 +1330,9 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 							<li data-template_data="{{$template_data}}"> <span>{{$template_name}}</span> <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></li>
 						@endforeach
 					@endif
-					
+
 				</ul>
-				
+
 				<div class="inactivity-controls mt-10">
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
@@ -1351,7 +1352,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
-				
+
 				<div class="inactivity-controls">
 					<a href="javascript:;" class="continue-btn save-template-btn">Save Template</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
@@ -1371,7 +1372,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
             </div>
             <div class="modal-body">
                 <form name="question_reviewer_status_action_form" id="question_reviewer_status_action_form">
-					{{ csrf_field() }}	
+					{{ csrf_field() }}
                     <div class="row">
 
                         <div class="col-12 col-md-12">
@@ -1512,7 +1513,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
         const uniqueID = generateUniqueID();
         const tableBody = document.getElementById('sortableTableBody');
         const row = document.createElement('tr');
-        
+
         row.innerHTML = `
             <td>${uniqueID}</td>
             <td><textarea name="topic_part[${uniqueID}]">${part}</textarea></td>
@@ -1530,13 +1531,13 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
     // Event listener to split the input text into parts
     document.getElementById('splitTextBtn').addEventListener('click', function() {
         const inputText = document.getElementById('inputText').value;
-        
+
         // Split the text into sentences using basic sentence boundary detection
         const parts = inputText.split(/(?<=[.?!])\s+/);
-        
+
         const outputTableBody = document.getElementById('sortableTableBody');
         outputTableBody.innerHTML = '';  // Clear previous output
-        
+
         // Loop through each part and add it as a new row
         parts.forEach(part => {
             addNewRow(part);
@@ -1593,7 +1594,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
     });
 	$(document).ready(function () {
         $('.ajax-category-courses').change();
-        $('.glossary-items').select2(); 
+        $('.glossary-items').select2();
     });
 </script>
 
@@ -1601,19 +1602,19 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
     $("body").on("click", ".add-glossary-modal", function (t) {
         $("#add-glosary-modal-box").modal({backdrop: "static"});
     });
-	
+
 	$("body").on("click", ".add-part-modal", function (t) {
 		$("#inputText").val('');
 		$("#sortableTableBody").html('');
         $("#add-part-modal-box").modal({backdrop: "static"});
     });
-	
+
 	$("body").on("click", ".question-action-btn", function (t) {
         $("#question_status_action_modal").modal({backdrop: "static"});
     });
-		
-	
-	
+
+
+
 	var is_template_active = false;
 	var course_id_template = '';
 	var chapter_id_template = '';
@@ -1662,7 +1663,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
             }
         });
     });
-	
+
     $(document).on('change', '.ajax-subchapter-dropdown', function () {
 		var category_id = $(".ajax-category-courses").val();
 		var subject_id  = $(".ajax-courses-dropdown").val();
@@ -1678,7 +1679,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
             }
         });
     });
-	
+
 
 
 
@@ -1699,8 +1700,8 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
         var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
 
     });
-	
-	
+
+
 	$(document).on('click', '.save-template-btn', function () {
 		$(".template_save_modal").modal('hide');
 		var template_name = $('.template_name').val();
@@ -1715,7 +1716,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
             }
         });
     });
-	
+
 	$(document).on('click', '.save-template', function () {
 		// Select all form fields inside the div with id "question_properties"
 		$(".template_save_modal").modal('show');
@@ -1728,14 +1729,14 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 			var value = $(this).val();
 
 			if (name) {
-				formData[name] = value;	
+				formData[name] = value;
 			}
 		});
-		
+
 		var jsonFormData = JSON.stringify(formData);
 		$(".form_data_encoded").val(jsonFormData);
 	});
-	
+
 	$(document).on('click', '.remove-template', function () {
 		// Select all form fields inside the div with id "question_properties"
 		var template_name = $(this).attr('data-template_name');
@@ -1750,23 +1751,23 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
             }
         });
 	});
-	
-	
-	
+
+
+
 	$(document).on('click', '.activate-template', function () {
 		$(".template_display_modal").modal('show');
 	});
-	
+
 	$(document).on('click', '.apply-template-field li span', function () {
-		
+
 		var formDatajson = $(this).closest('li').attr('data-template_data');//'{"category_id[]":["615"],"course_id":"2065","chapter_id":"406","sub_chapter_id":"1107","search_tags":"test","question_title":"Question Reference","question_score":"10","question_average_time":"10","example_question":null,"question_type":"dropdown","difficulty_level":"Emerging","reference_type":"Both"}';
 		var formDataObj = JSON.parse(formDatajson);
 		$(".template_display_modal").modal('hide');
-		
+
 		course_id_template = formDataObj['course_id'];
 		chapter_id_template = formDataObj['chapter_id'];
 		sub_chapter_id_template = formDataObj['sub_chapter_id'];
-		
+
 		is_template_active = true;
 		// Select all form fields inside the div with id "question_properties"
 		var formFields = $('#question_properties').find('input, select, textarea');
@@ -1777,9 +1778,9 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 		// Iterate over each form field
 		formFields.each(function() {
 			var name = $(this).attr('name');
-			
+
 			var value = $(this).val(formDataObj[name]);
-			
+
 			if ($(this).is('select')) {
 				$('select[name="'+name+'"]').change();
 			}
@@ -1793,9 +1794,9 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 			}
 		});
 	});
-	
-	
-	
+
+
+
 	let isProcessing = false;
 $(document).off('click', 'body').on('click', 'body', function (event) {
     // Check if the click is not inside .rureraform-properties-content
