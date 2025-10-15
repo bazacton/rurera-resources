@@ -1889,9 +1889,11 @@ Quiz Check Answers Page Style End
     right: 0;
 }
 .preview-question-area .question-layout-block .prev-next-controls {
-    transform: none;
-    left: 110px;
     width: 750px;
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 0 auto;
 }
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
