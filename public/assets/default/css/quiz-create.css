@@ -1938,8 +1938,9 @@ Quiz Check Answers Page Style End
     border: 0;
 }
 .lms-card-timeline .card {
-    border: 0;
-    padding: 0;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #ececec;
+    border-radius: 0;
 }
 .lms-card-timeline .card .card-body {
     padding: 0;
@@ -2039,7 +2040,4 @@ Quiz Check Answers Page Style End
 .questions_logs_block h4 {
     font-size: 18px;
     margin: 0 0 15px;
-}
-.lms-card-timeline .card {
-    padding: 15px;
 }
