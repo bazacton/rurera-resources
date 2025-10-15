@@ -53,27 +53,26 @@ $rand_id = rand(99,9999);
 												data-quiz_result_id="0">
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
-													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}})</span>
+													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) ({{$questionObj->topicPartItem->title}})</span>
 												</span>
 												<div class="question-layout row">
 													{!! $question_layout !!}
 												</div>
 
-                                                    @if(ReviewPermission(auth()->user()->id))
-                                                        <div class="question-explaination">
-                                                            Explaination: <br>
-                                                            {!! $questionObj->question_solve !!}</div>
+                                                @if(ReviewPermission(auth()->user()->id))
+                                                    <div class="question-explaination">
+                                                        Explaination: <br>
+                                                        {!! $questionObj->question_solve !!}
+                                                    </div>
 
                                                     <br>
-                                                        <a href="javascript:;" id="approve-btn" class="question-approve-btn btn btn-primary" data-toggle="modal" data-target="#approve_modal_{{$questionObj->id}}">
-                                                            Approve
-                                                        </a>
-
-
-                                                        <a href="javascript:;" id="question-reject-btn" class="question-reject-btn btn btn-danger"  data-toggle="modal" data-target="#reject_modal_{{$questionObj->id}}">
-                                                            Reject
-                                                        </a>
-                                                    @endif
+                                                    <a href="javascript:;" id="approve-btn" class="question-approve-btn btn btn-primary" data-toggle="modal" data-target="#approve_modal_{{$questionObj->id}}">
+                                                        Approve
+                                                    </a>
+                                                    <a href="javascript:;" id="question-reject-btn" class="question-reject-btn btn btn-danger"  data-toggle="modal" data-target="#reject_modal_{{$questionObj->id}}">
+                                                        Reject
+                                                    </a>
+                                                @endif
 
                                                     <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
