@@ -2001,8 +2001,10 @@ Quiz Check Answers Page Style End
     height: auto;
     padding: 8px 20px;
     border-radius: 5px;
-    border: 0;
-    background-color: var(--blue);
+    background-color: initial;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    box-shadow: none;
 }
 .review-msg-box {
     padding: 5px 20px 10px;
