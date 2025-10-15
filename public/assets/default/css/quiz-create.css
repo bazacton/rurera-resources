@@ -1894,6 +1894,7 @@ Quiz Check Answers Page Style End
     transform: none;
     left: 0;
     margin: 0 auto;
+    bottom: 0;
 }
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
@@ -2070,6 +2071,8 @@ Quiz Check Answers Page Style End
         margin-right: 0;
         padding: 0;
         border-left: 0;
+        position: relative;
+        min-width: 100%;
     }
     .approve_question_form .btn-group-toggle .btn {
         padding: 8px 8px;
@@ -2086,6 +2089,9 @@ Quiz Check Answers Page Style End
     }
     .preview-question-area .lms-quiz-section {
         padding: 0;
+    }
+    .preview-question-area {
+        padding-right: 0;
     }
 }
 /* Review Question Right Side Style End */
