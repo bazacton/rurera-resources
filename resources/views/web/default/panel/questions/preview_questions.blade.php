@@ -97,6 +97,22 @@ $rand_id = rand(99,9999);
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
 
+
+                                                                                    <div class="form-group">
+                                                                                        <label for="actionButtons" class="font-weight-bold">Review Status:</label>
+                                                                                        <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
+                                                                                            <label class="btn btn-success">
+                                                                                                <input type="radio" name="question_status" value="Published" autocomplete="off"> Approve
+                                                                                            </label>
+                                                                                            <label class="btn btn-warning">
+                                                                                                <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
+                                                                                            </label>
+                                                                                            <label class="btn btn-danger">
+                                                                                                <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
+                                                                                            </label>
+                                                                                            </div>
+                                                                                    </div>
+
                                                                                     <div class="form-group">
                                                                                         <label class="input-label">Action</label>
                                                                                         <div class="input-group">
@@ -145,6 +161,26 @@ $rand_id = rand(99,9999);
 
                                                                                         @if( !empty( $questionLogs ))
                                                                                             @foreach($questionLogs as $logObj)
+
+
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="https://via.placeholder.com/50" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">John Doe</h5>
+                                                                                                                    <small class="text-muted">15 Oct 2025, 10:45 AM</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">Improvements Required</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                </div>
 
 
                                                                                                 <li class="lms-card-list active">
