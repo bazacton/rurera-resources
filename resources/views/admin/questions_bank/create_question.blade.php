@@ -1220,7 +1220,7 @@
             @include('admin.questions_bank.question_editor_fields_controls')
 
             <div class="mt-5 mb-5 create-question-fields-block">
-                <button type="button" data-status="Draft" class="quiz-stage-generate btn btn-warning">Draft</button>
+                <button type="button" data-status="{{$questionObj->question_status}}" class="quiz-stage-generate btn btn-warning">Save</button>
                 <button type="button" data-status="Submit for review" class="quiz-stage-generate btn btn-primary">
                     Submit for review
                 </button>
