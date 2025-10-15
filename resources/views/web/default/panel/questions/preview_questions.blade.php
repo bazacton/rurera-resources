@@ -141,11 +141,11 @@ $rand_id = rand(99,9999);
                                                                                                             <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <p class="mb-0">
-                                                                                                        {!! $logObj->log_data !!}
-                                                                                                    </p>
                                                                                                 </div>
                                                                                             </div>
+                                                                                            <p class="mb-0">
+                                                                                                {!! $logObj->log_data !!}
+                                                                                            </p>
                                                                                         </div>
                                                                                     </div>
 
