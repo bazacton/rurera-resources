@@ -1,4 +1,6 @@
-@php namespace App\Http\Controllers\Web; @endphp
+@php namespace App\Http\Controllers\Web;
+use App\Models\QuestionLogs;
+@endphp
 @extends(getTemplate().'.layouts.appstart')
 @php
 $i = 0; $j = 1;
