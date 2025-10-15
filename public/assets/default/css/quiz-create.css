@@ -1886,7 +1886,7 @@ Quiz Check Answers Page Style End
 }
 .preview-question-area .question-layout-block .prev-next-controls {
     transform: none;
-    left: 30px;
+    left: 90px;
 }
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
