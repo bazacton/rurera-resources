@@ -2047,4 +2047,20 @@ Quiz Check Answers Page Style End
     font-size: 18px;
     margin: 0 0 15px;
 }
+@media screen and (max-width: 782px) {
+    .preview-question-area .question-right-side {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        border-left: 0;
+    }
+    .approve_question_form .btn-group-toggle .btn {
+        padding: 8px 8px;
+        font-size: 12px !important;
+    }
+    .approve_question_form .btn-group-toggle {
+        margin-top: 0 !important;
+    }
+}
 /* Review Question Right Side Style End */
