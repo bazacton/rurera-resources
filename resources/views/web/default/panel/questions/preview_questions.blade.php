@@ -102,7 +102,7 @@ $rand_id = rand(99,9999);
                                                                                     <div class="form-group">
                                                                                         <select name="question_status" class="question_status_update custom-select">
                                                                                             <option value="">Action</option>
-                                                                                            <option value="Accepted" selected="selected">Accepted</option>
+                                                                                            <option value="Accepted">Accepted</option>
                                                                                             <option value="Improvement required">Improvement required</option>
                                                                                             <option value="Hard reject">Hard reject</option>
                                                                                         </select>
@@ -197,7 +197,7 @@ $rand_id = rand(99,9999);
                                                                                     <div class="form-group">
                                                                                         <select name="question_status" class="question_status_update custom-select">
                                                                                             <option value="">Action</option>
-                                                                                            <option value="Accepted" selected="selected">Accepted</option>
+                                                                                            <option value="Accepted">Accepted</option>
                                                                                             <option value="Improvement required">Improvement required</option>
                                                                                             <option value="Hard reject">Hard reject</option>
                                                                                         </select>
