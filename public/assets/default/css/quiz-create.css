@@ -1858,6 +1858,8 @@ Quiz Check Answers Page Style Start
 Quiz Check Answers Page Style End
 *****************************/
 
+
+/* Review Question Right Side Style Start */
 .preview-question-area .learning-content > .container {
     max-width: 100%;
 }
@@ -1925,13 +1927,11 @@ Quiz Check Answers Page Style End
 	-webkit-box-shadow: none;
 	background-color: #F5F5F5;
 }
-
 .approve_question_form::-webkit-scrollbar
 {
 	width: 8px;
 	background-color: #F5F5F5;
 }
-
 .approve_question_form::-webkit-scrollbar-thumb
 {
 	background-color: rgb(200,210,237);
@@ -2047,3 +2047,4 @@ Quiz Check Answers Page Style End
     font-size: 18px;
     margin: 0 0 15px;
 }
+/* Review Question Right Side Style End */
