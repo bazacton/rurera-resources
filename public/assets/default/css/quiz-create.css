@@ -1860,6 +1860,9 @@ Quiz Check Answers Page Style End
 
 
 /* Review Question Right Side Style Start */
+.preview-question-area {
+    padding-right: 500px;
+}
 .preview-question-area .learning-content > .container {
     max-width: 100%;
 }
