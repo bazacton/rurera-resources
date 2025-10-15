@@ -107,17 +107,21 @@ $rand_id = rand(99,9999);
 
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
-                                                                                    <div class="form-group">
-                                                                                        <label class="input-label">Message</label>
-                                                                                        <div class="input-group">
-                                                                                            <textarea rows="10" name="review_message" required class="form-control"></textarea>
+                                                                                    <div class="review-msg-box">
+                                                                                        <div class="form-group">
+                                                                                            <label class="input-label">Message</label>
+                                                                                            <div class="input-group">
+                                                                                                <textarea rows="10" name="review_message" required class="form-control"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="review-msg-control">
+                                                                                            <button type="submit" class="btn btn-primary">Submit</button>
                                                                                         </div>
                                                                                     </div>
+                                                                                    
                                                                                 </div>
                                                                             </div>
 
-
-                                                                            <button type="submit" class="btn btn-primary">Submit</button>
 
                                                                             <div class="row">
                                                                                 <h4>Question Logs</h4>
