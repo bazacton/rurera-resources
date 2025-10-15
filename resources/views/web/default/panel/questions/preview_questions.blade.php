@@ -110,7 +110,7 @@ $rand_id = rand(99,9999);
                                                                                     <div class="form-group">
                                                                                         <label class="input-label">Message</label>
                                                                                         <div class="input-group">
-                                                                                            <textarea rows="10" name="review_message" class="form-control"></textarea>
+                                                                                            <textarea rows="10" name="review_message" required class="form-control"></textarea>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
