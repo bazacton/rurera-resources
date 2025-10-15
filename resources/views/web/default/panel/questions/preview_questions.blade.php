@@ -350,6 +350,9 @@ $(document).on('submit', '.approve_question_form', function (evt) {
         type: 'POST',
         url: '/admin/questions_bank/approve_question',
         data: formData,
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         processData: false,
         contentType: false,
         success: function (response) {
