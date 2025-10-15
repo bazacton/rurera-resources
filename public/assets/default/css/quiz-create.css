@@ -1857,3 +1857,64 @@ Quiz Check Answers Page Style Start
 /*****************************
 Quiz Check Answers Page Style End
 *****************************/
+
+.approve_modal_box .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.approve_modal_box .modal-body {
+    padding: 0;
+}
+.approve_modal_box .form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.rurera-question-block .approve_modal_box select {
+    height: 38px;
+    font-size: 14px;
+    box-shadow: none;
+}
+.approve_modal_box h4 {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.approve_modal_box .lms-card-timeline {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 25px;
+}
+
+.lms-card-timeline .lms-card-info h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.lms-card-timeline .lms-card-info .user-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.lms-card-timeline .lms-card-info h5 b {
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    color: #999;
+}
+
+.lms-card-timeline .lms-card-info > b {
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin-top: 15px;
+}
