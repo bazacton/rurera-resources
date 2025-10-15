@@ -98,6 +98,18 @@ $rand_id = rand(99,9999);
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row">
+                                                                                <div class="col-12 col-md-12">
+                                                                                    <div class="form-group">
+                                                                                        <select name="question_status" class="question_status_update custom-select">
+                                                                                            <option value="">Action</option>
+                                                                                            <option value="Accepted" selected="selected">Accepted</option>
+                                                                                            <option value="Improvement required">Improvement required</option>
+                                                                                            <option value="Hard reject">Hard reject</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
 
                                                                                 <h4>Question Logs</h4>
                                                                                 @if($questionLogs->count() > 0)
@@ -186,7 +198,6 @@ $rand_id = rand(99,9999);
                                                                                         <select name="question_status" class="question_status_update custom-select">
                                                                                             <option value="">Action</option>
                                                                                             <option value="Accepted" selected="selected">Accepted</option>
-                                                                                            <option value="On hold">On hold</option>
                                                                                             <option value="Improvement required">Improvement required</option>
                                                                                             <option value="Hard reject">Hard reject</option>
                                                                                         </select>
