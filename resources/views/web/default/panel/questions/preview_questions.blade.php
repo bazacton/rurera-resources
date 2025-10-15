@@ -44,7 +44,7 @@ $rand_id = rand(99,9999);
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
-									<div class="left-content has-bg">
+
 										@php $is_active = ''; $counter = 0; @endphp
 										@if($questions->count() > 0)
 											@foreach($questions as $questionObj)
@@ -57,6 +57,7 @@ $rand_id = rand(99,9999);
 												data-qattempt="0"
 												data-start_time="0" data-qresult="0"
 												data-quiz_result_id="0">
+                                                    <div class="left-content has-bg">
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
                                                     <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span>
@@ -78,6 +79,7 @@ $rand_id = rand(99,9999);
                                                     </a>
                                                 @endif
 
+                                                    </div>
                                                     <div class="question-right-side">
                                                         <h3>Question Review</h3>
                                                         <form action="javascript:;" method="POST" class="row approve_question_form">
@@ -199,7 +201,6 @@ $rand_id = rand(99,9999);
                                     </a>
 									</div>
 
-								</div>
 								</div>
 							</div>
 						</div>
