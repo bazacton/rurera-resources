@@ -58,7 +58,7 @@ $rand_id = rand(99,9999);
 												data-quiz_result_id="0">
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
-													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- ({{$questionObj->subChapter->chapter->title.' / '.$questionObj->subChapter->sub_chapter_title}})</span>
+													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- ({{$questionObj->subChapter->chapter->title.' / '.$questionObj->subChapter->sub_chapter_title}}) ---- <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></a></span>
 												</span>
 												<div class="question-layout row">
 													{!! $question_layout !!}
@@ -110,7 +110,7 @@ $rand_id = rand(99,9999);
                                                                                     <div class="form-group">
                                                                                         <label class="input-label">Message</label>
                                                                                         <div class="input-group">
-                                                                                            <textarea rows="10" name="review_message" class="form-control"></textarea>
+                                                                                            <textarea rows="10" name="review_message" required class="form-control"></textarea>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -138,6 +138,119 @@ $rand_id = rand(99,9999);
                                                                                                                 <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
                                                                                                                 <p class="mb-0">
                                                                                                                     {!! $logObj->log_data !!}
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h5>
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h5>
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h5>
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h5>
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h5>
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    The submitted design looks good overall, but needs some color adjustments.
+                                                                                                                    Please also align the header properly and add a clear call-to-action button.
                                                                                                                 </p>
                                                                                                             </div>
                                                                                                         </div>
