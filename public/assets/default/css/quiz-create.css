@@ -1918,3 +1918,6 @@ Quiz Check Answers Page Style End
     display: block;
     margin-top: 15px;
 }
+.approve_question_form {
+    text-align: left;
+}
