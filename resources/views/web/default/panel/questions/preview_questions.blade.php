@@ -11,6 +11,7 @@ $rand_id = rand(99,9999);
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+    <style>.disabled-div {pointer-events: none;}</style>
 @endpush
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -61,7 +62,7 @@ $rand_id = rand(99,9999);
                                                     <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span>
 													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- ({{$questionObj->subChapter->chapter->title.' / '.$questionObj->subChapter->sub_chapter_title}}) ---- <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></a></span>
 												</span>
-												<div class="question-layout row">
+												<div class="question-layout row disabled-div">
 													{!! $question_layout !!}
 												</div>
 
@@ -139,9 +140,11 @@ $rand_id = rand(99,9999);
                                                                                                             <div class="media-body">
                                                                                                                 <div class="d-flex justify-content-between align-items-center">
                                                                                                                     <h6 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h6>
-                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                    <div class="log_details">
+                                                                                                                        <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                        <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                    </div>
                                                                                                                 </div>
-                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
                                                                                                                 <p class="mb-0">
                                                                                                                     {!! $logObj->log_data !!}
                                                                                                                 </p>
