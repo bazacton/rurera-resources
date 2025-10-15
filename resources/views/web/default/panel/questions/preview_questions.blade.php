@@ -112,7 +112,6 @@ $rand_id = rand(99,9999);
                                                                                 <div class="col-12 col-md-12">
                                                                                     <div class="review-msg-box">
                                                                                         <div class="form-group">
-                                                                                            <label class="input-label">Message</label>
                                                                                             <div class="input-group">
                                                                                                 <textarea rows="10" name="review_message" required class="form-control">The content has been reviewed and meets the QA standards. It is now approved for publishing.</textarea>
                                                                                                 <div class="review-msg-control">
