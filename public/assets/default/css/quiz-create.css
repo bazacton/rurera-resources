@@ -1964,3 +1964,7 @@ Quiz Check Answers Page Style End
 .btn-group-toggle .btn:last-child {
     border-right: 0 !important;
 }
+.approve_modal_box h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
