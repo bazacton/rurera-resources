@@ -1934,7 +1934,7 @@ Quiz Check Answers Page Style End
 
 .approve_question_form::-webkit-scrollbar-thumb
 {
-	background-color: #3e7fc5;
+	background-color: rgb(200,210,237);
     border: 0;
 }
 .lms-card-timeline .card {
