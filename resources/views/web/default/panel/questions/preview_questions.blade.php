@@ -58,6 +58,7 @@ $rand_id = rand(99,9999);
 												data-quiz_result_id="0">
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
+                                                    <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span>
 													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- ({{$questionObj->subChapter->chapter->title.' / '.$questionObj->subChapter->sub_chapter_title}}) ---- <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></a></span>
 												</span>
 												<div class="question-layout row">
@@ -83,7 +84,7 @@ $rand_id = rand(99,9999);
                                                                     <h3>Question Review</h3>
                                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                                                 </div>
-                                                                
+
                                                                 <div class="modal-body">
                                                                     <form action="javascript:;" method="POST" class="row approve_question_form">
                                                                         <input type="hidden" name="question_id" value="{{$questionObj->id}}">
@@ -120,12 +121,12 @@ $rand_id = rand(99,9999);
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    
+
                                                                                 </div>
                                                                             </div>
 
 
-                                                                            <div class="row">
+                                                                            <div class="row questions_logs_block">
                                                                                 <h4>Question Logs</h4>
                                                                                 @if($questionLogs->count() > 0)
                                                                                     <ul class="lms-card-timeline">
@@ -244,6 +245,7 @@ $(document).on('submit', '.approve_question_form', function (evt) {
         type: 'POST',
         url: '/admin/questions_bank/approve_question',
         data: formData,
+        dataType: 'json',
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -251,17 +253,15 @@ $(document).on('submit', '.approve_question_form', function (evt) {
         contentType: false,
         success: function (response) {
             //rurera_remove_loader(thisObj, 'div');
-            $(".approve_modal_box").modal('hide');
-            rurera_modal_alert(
-                'success',
-                response,
-                false, //confirmButton
-            );
+            //$(".approve_modal_box").modal('hide');
+            $(".questions_logs_block").html(response.logs_response);
+            var question_id = response.question_id;
+            $(".question_status_"+question_id).html(response.question_status);
         }
     });
 });
 
-$(document).on('submit', '.reject_question_form', function (evt) {
+$(document).on('submit', '.reject_question_form-----', function (evt) {
     console.log('sdfsdf');
 
 
