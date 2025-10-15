@@ -1876,7 +1876,6 @@ Quiz Check Answers Page Style End
 .preview-question-area .question-right-side {
     max-width: 500px;
     margin-left: auto;
-    background-color: #fcfcfc;
     margin-right: -30px;
     position: relative;
     z-index: 2;
@@ -1920,6 +1919,23 @@ Quiz Check Answers Page Style End
     height: calc(100vh - 100px);
     overflow: hidden;
     overflow-y: auto;
+}
+.approve_question_form::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.approve_question_form::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.approve_question_form::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
 }
 .lms-card-timeline .card {
     border: 0;
