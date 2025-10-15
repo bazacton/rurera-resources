@@ -1939,3 +1939,28 @@ Quiz Check Answers Page Style End
 .approve_question_form .row:has(.lms-card-timeline) {
     margin: 0;
 }
+.approve_question_form .row:has(.lms-card-timeline) {
+    margin: 0;
+}
+.btn-group-toggle {
+    display: inline-flex !important;
+    background-color: #dedefd;
+    border: 1px solid rgba(0,123,151,0.5) !important;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.btn-group-toggle .btn {
+    padding: 15px 15px;
+    background-color: inherit;
+    border: 0;
+    box-shadow: none;
+    color: var(--blue);
+    border-right: 1px solid rgba(0,123,151,0.5) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    line-height: normal;
+    height: auto;
+}
+.btn-group-toggle .btn:last-child {
+    border-right: 0 !important;
+}
