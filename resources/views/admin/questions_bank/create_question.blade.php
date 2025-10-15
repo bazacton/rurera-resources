@@ -1,12 +1,13 @@
 @extends('admin.layouts.app')
 @php
-$toolbar_tools  = toolbar_tools();
-$element_properties_meta    = element_properties_meta($chapters);
-$tabs_options    = tabs_options();
-$rand_id = rand(999,99999);
+    use App\Models\QuestionLogs;
+    $toolbar_tools  = toolbar_tools();
+    $element_properties_meta    = element_properties_meta($chapters);
+    $tabs_options    = tabs_options();
+    $rand_id = rand(999,99999);
 
-$sizes_reference = isset( $questionObj->sizes_reference )? json_decode($questionObj->sizes_reference) : array();
-$sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_reference);
+    $sizes_reference = isset( $questionObj->sizes_reference )? json_decode($questionObj->sizes_reference) : array();
+    $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_reference);
 @endphp
 
 
@@ -1069,7 +1070,43 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                             <div class="tab-pane mt-3 fade" id="review_required_tab" role="tabpanel" aria-labelledby="review_required_tab-tab">
                             <div class="col-12 col-md-12">
                                 <div class="row">
-                                    111
+
+                                    @php $questionLogs = QuestionLogs::where('question_id', $questionObj->id)->orderBy('id', 'desc')->with('user')
+                                                                                ->get();
+                                    @endphp
+
+                                    @if($questionLogs->count() > 0)
+                                        <ul class="lms-card-timeline">
+
+                                            @if( !empty( $questionLogs ))
+                                                @foreach($questionLogs as $logObj)
+                                                    <div class="card mb-3">
+                                                        <div class="card-body">
+                                                            <div class="media">
+                                                                <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
+                                                                <div class="media-body">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <h6 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h6>
+                                                                        <div class="log_details">
+                                                                            <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                            <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p class="mb-0">
+                                                                {!! $logObj->log_data !!}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+
+                                                @endforeach
+                                            @endif
+                                        </ul>
+                                    @endif
+
+
 									@php $question_status = isset( $questionObj->question_status )? $questionObj->question_status : ''; @endphp
 									@if(auth()->user()->isReviewer())
 									@if($question_status == 'Submit for review' ||
