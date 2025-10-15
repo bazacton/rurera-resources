@@ -2019,3 +2019,13 @@ Quiz Check Answers Page Style End
     border: 1px solid #ececec;
     border-bottom: 0;
 }
+.log_details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.log_details .badge {
+    margin: 0 !important;
+}
