@@ -93,7 +93,7 @@ $rand_id = rand(99,9999);
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row">
-                                                                                @php $questionLogs = QuestionLogs::where('question_id', $id)->orderBy('id', 'desc')->with('user')
+                                                                                @php $questionLogs = QuestionLogs::where('question_id', $questionObj->id)->orderBy('id', 'desc')->with('user')
                                                                                 ->get();
                                                                                 @endphp
                                                                                 @if($questionLogs->count() > 0)
