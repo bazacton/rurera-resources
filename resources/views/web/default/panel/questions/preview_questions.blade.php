@@ -344,7 +344,7 @@ $(document).on('submit', '.approve_question_form', function (evt) {
     console.log('sdfsdf');
 
     var thisObj = $('.approve_question_form');
-    rurera_loader(thisObj, 'div');
+    //rurera_loader(thisObj, 'div');
     var formData = new FormData($(this)[0]);
     $.ajax({
         type: 'POST',
@@ -353,7 +353,7 @@ $(document).on('submit', '.approve_question_form', function (evt) {
         processData: false,
         contentType: false,
         success: function (response) {
-            rurera_remove_loader(thisObj, 'div');
+            //rurera_remove_loader(thisObj, 'div');
             $(".approve_modal_box").modal('hide');
             rurera_modal_alert(
                 'success',
