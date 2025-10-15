@@ -85,10 +85,11 @@ $rand_id = rand(99,9999);
                                                                         <input type="hidden" name="question_id" value="{{$questionObj->id}}">
                                                                         <div class="col-12 col-lg-12">
 
+                                                                            <h3>Question <Review></Review></h3>
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
                                                                                     <div class="form-group">
-                                                                                        <label for="actionButtons" class="font-weight-bold">Review Status:</label>
+
                                                                                         <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
                                                                                             <label class="btn btn-success">
                                                                                                 <input type="radio" name="question_status" value="Published" autocomplete="off"> Approve
