@@ -2067,5 +2067,8 @@ Quiz Check Answers Page Style End
         z-index: 2;
         padding: 10px;
     }
+    .preview-question-area .lms-quiz-section {
+        padding: 0;
+    }
 }
 /* Review Question Right Side Style End */
