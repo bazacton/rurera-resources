@@ -53,7 +53,6 @@ $rand_id = rand(99,9999);
                                                 @php $questionLogs = QuestionLogs::where('question_id', $questionObj->id)->orderBy('id', 'desc')->with('user')
                                                                                 ->get();
                                                 @endphp
-                                                <div class="question-left-side">
 												<div class="rurera-question-block {{($counter == 1)? 'active' : ''}} question-step question-step-{{ $questionObj->id }}" data-elapsed="0"
 												data-qattempt="0"
 												data-start_time="0" data-qresult="0"
@@ -78,8 +77,6 @@ $rand_id = rand(99,9999);
                                                         Take Action
                                                     </a>
                                                 @endif
-                                                </div>
-                                                </div>
 
                                                     <div class="question-right-side">
                                                         <h3>Question Review</h3>
