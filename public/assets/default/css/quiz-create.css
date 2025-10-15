@@ -1948,8 +1948,8 @@ Quiz Check Answers Page Style End
 }
 .lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;margin: 0 0 10px;}
 .lms-card-timeline .card .card-body h6 {
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 14px;
     color: #000;
 }
 .approve_question_form .row:has(.lms-card-timeline) {
