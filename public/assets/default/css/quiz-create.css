@@ -1874,7 +1874,7 @@ Quiz Check Answers Page Style End
     padding-top: 50px;
 }
 .preview-question-area .question-right-side {
-    max-width: 600px;
+    max-width: 500px;
     margin-left: auto;
     background-color: #fcfcfc;
     margin-right: -30px;
@@ -1888,8 +1888,6 @@ Quiz Check Answers Page Style End
     transform: none;
     left: 30px;
 }
-
-
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
     align-items: center;
@@ -2003,6 +2001,7 @@ Quiz Check Answers Page Style End
     border-radius: 0 0 5px 5px;
     border: 1px solid #ececec;
     border-top: 0;
+    margin-bottom: 15px;
 }
 .form-group:has(.btn-group-toggle) {
     padding: 15px 20px 15px;
@@ -2020,4 +2019,15 @@ Quiz Check Answers Page Style End
 }
 .log_details .badge {
     margin: 0 !important;
+}
+.question-right-side h3 {
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+.questions_logs_block h4 {
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+.lms-card-timeline .card {
+    padding: 15px;
 }
