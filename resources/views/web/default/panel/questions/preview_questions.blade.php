@@ -79,13 +79,15 @@ $rand_id = rand(99,9999);
                                                     <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                <div class="modal-header">
+                                                                    <h3>Question Review</h3>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                </div>
+                                                                
                                                                 <div class="modal-body">
                                                                     <form action="javascript:;" method="POST" class="row approve_question_form">
                                                                         <input type="hidden" name="question_id" value="{{$questionObj->id}}">
                                                                         <div class="col-12 col-lg-12">
-
-                                                                            <h3>Question Review</h3>
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
                                                                                     <div class="form-group">
