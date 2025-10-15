@@ -289,6 +289,30 @@ $(document).on('submit', '.reject_question_form-----', function (evt) {
     });
 });
 
+$(document).on('change', 'input[name="question_status"]', function (evt) {
+    var current_value = $(this).val(); // ✅ Get the selected value correctly
+    var thisParent = $(this).closest('.approve_question_form');
+
+    if (current_value === 'Improvement required') {
+        thisParent.find('textarea[name="review_message"]').val(
+            'The overall work is acceptable but needs minor revisions for better clarity and presentation. Please address the highlighted areas before approval.'
+        );
+    }
+
+    if (current_value === 'Published') {
+        thisParent.find('textarea[name="review_message"]').val(
+            'The content has been reviewed and meets the QA standards. It is now approved for publishing.'
+        );
+    }
+
+    if (current_value === 'Hard reject') {
+        thisParent.find('textarea[name="review_message"]').val(
+            'The submission does not meet the required standards. Please review all feedback carefully and make necessary corrections before resubmitting.'
+        );
+    }
+});
+
+
 
 </script>
 
