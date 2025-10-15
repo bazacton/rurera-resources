@@ -84,20 +84,9 @@ $rand_id = rand(99,9999);
                                                                     <form action="javascript:;" method="POST" class="row approve_question_form">
                                                                         <input type="hidden" name="question_id" value="{{$questionObj->id}}">
                                                                         <div class="col-12 col-lg-12">
+
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
-                                                                                    <div class="form-group">
-                                                                                        <label class="input-label">Message</label>
-                                                                                        <div class="input-group">
-                                                                                            <textarea rows="10" name="review_message" class="form-control"></textarea>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-md-12">
-
-
                                                                                     <div class="form-group">
                                                                                         <label for="actionButtons" class="font-weight-bold">Review Status:</label>
                                                                                         <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
@@ -110,59 +99,32 @@ $rand_id = rand(99,9999);
                                                                                             <label class="btn btn-danger">
                                                                                                 <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
                                                                                             </label>
-                                                                                            </div>
-                                                                                    </div>
-
-                                                                                    <div class="form-group">
-                                                                                        <label class="input-label">Action</label>
-                                                                                        <div class="input-group">
-                                                                                            <div class="radio-buttons">
-                                                                                                <label class="card-radio">
-                                                                                                    <input type="radio" name="question_status"
-                                                                                                           class="question_status" value="Published">
-                                                                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                                                        <div class="card-icon">
-                                                                                                            <h3>Approve</h3>
-                                                                                                       </div>
-
-                                                                                                  </span>
-                                                                                                </label>
-                                                                                                <label class="card-radio">
-                                                                                                    <input type="radio" name="question_status"
-                                                                                                           class="question_status" value="Improvement required">
-                                                                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                                                        <div class="card-icon">
-                                                                                                            <h3>Improvement required</h3>
-                                                                                                       </div>
-
-                                                                                                  </span>
-                                                                                                </label>
-                                                                                                <label class="card-radio">
-                                                                                                    <input type="radio" name="question_status"
-                                                                                                           class="question_status" value="Hard reject">
-                                                                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                                                        <div class="card-icon">
-                                                                                                            <h3>Hard reject</h3>
-                                                                                                       </div>
-
-                                                                                                  </span>
-                                                                                                </label>
-                                                                                            </div>
                                                                                         </div>
                                                                                     </div>
-
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row">
 
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-md-12">
+                                                                                    <div class="form-group">
+                                                                                        <label class="input-label">Message</label>
+                                                                                        <div class="input-group">
+                                                                                            <textarea rows="10" name="review_message" class="form-control"></textarea>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                                                                            <div class="row">
                                                                                 <h4>Question Logs</h4>
                                                                                 @if($questionLogs->count() > 0)
                                                                                     <ul class="lms-card-timeline">
 
                                                                                         @if( !empty( $questionLogs ))
                                                                                             @foreach($questionLogs as $logObj)
-
-
                                                                                                 <div class="card mb-3">
                                                                                                     <div class="card-body">
                                                                                                         <div class="media">
@@ -178,18 +140,14 @@ $rand_id = rand(99,9999);
                                                                                                                 </p>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
-
-
-                                                                                                
 
                                                                                             @endforeach
                                                                                         @endif
                                                                                     </ul>
                                                                                 @endif
                                                                             </div>
-                                                                            <button type="submit" class="btn btn-primary">Submit</button>
                                                                         </div>
                                                                     </form>
                                                                     </div>
