@@ -2007,6 +2007,8 @@ Quiz Check Answers Page Style End
     background-color: #fafafa;
     padding: 5px 20px 10px;
     border-radius: 0 0 5px 5px;
+    border: 1px solid #ececec;
+    border-top: 0;
 }
 .review_submit.approve_modal_box .modal-content {
     padding: 35px;
@@ -2016,4 +2018,6 @@ Quiz Check Answers Page Style End
     padding: 15px 20px 15px;
     margin: 0;
     border-radius: 5px 5px 0 0;
+    border: 1px solid #ececec;
+    border-bottom: 0;
 }
