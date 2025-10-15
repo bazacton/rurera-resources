@@ -2062,5 +2062,10 @@ Quiz Check Answers Page Style End
     .approve_question_form .btn-group-toggle {
         margin-top: 0 !important;
     }
+    .preview-question-area .question-layout-block .prev-next-controls {
+        left: 0;
+        z-index: 2;
+        padding: 10px;
+    }
 }
 /* Review Question Right Side Style End */
