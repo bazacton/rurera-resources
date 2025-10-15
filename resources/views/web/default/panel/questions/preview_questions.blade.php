@@ -72,10 +72,7 @@ $rand_id = rand(99,9999);
 
                                                     <br>
                                                     <a href="javascript:;" id="approve-btn" class="question-approve-btn btn btn-primary" data-toggle="modal" data-target="#approve_modal_{{$questionObj->id}}">
-                                                        Approve
-                                                    </a>
-                                                    <a href="javascript:;" id="question-reject-btn" class="question-reject-btn btn btn-danger"  data-toggle="modal" data-target="#reject_modal_{{$questionObj->id}}">
-                                                        Reject
+                                                        Take Action
                                                     </a>
                                                 @endif
 
@@ -87,6 +84,27 @@ $rand_id = rand(99,9999);
                                                                     <form action="javascript:;" method="POST" class="row approve_question_form">
                                                                         <input type="hidden" name="question_id" value="{{$questionObj->id}}">
                                                                         <div class="col-12 col-lg-12">
+
+                                                                            <h3>Question <Review></Review></h3>
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-md-12">
+                                                                                    <div class="form-group">
+
+                                                                                        <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
+                                                                                            <label class="btn btn-success">
+                                                                                                <input type="radio" name="question_status" value="Published" autocomplete="off"> Approve
+                                                                                            </label>
+                                                                                            <label class="btn btn-warning">
+                                                                                                <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
+                                                                                            </label>
+                                                                                            <label class="btn btn-danger">
+                                                                                                <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
                                                                             <div class="row">
                                                                                 <div class="col-12 col-md-12">
                                                                                     <div class="form-group">
@@ -97,75 +115,40 @@ $rand_id = rand(99,9999);
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-md-12">
-                                                                                    <div class="form-group">
-                                                                                        <select name="question_status" class="question_status_update custom-select">
-                                                                                            <option value="">Action</option>
-                                                                                            <option value="Accepted">Accepted</option>
-                                                                                            <option value="Improvement required">Improvement required</option>
-                                                                                            <option value="Hard reject">Hard reject</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
 
+
+                                                                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                                                                            <div class="row">
                                                                                 <h4>Question Logs</h4>
                                                                                 @if($questionLogs->count() > 0)
                                                                                     <ul class="lms-card-timeline">
 
                                                                                         @if( !empty( $questionLogs ))
                                                                                             @foreach($questionLogs as $logObj)
-
-
-                                                                                                <li class="lms-card-list active">
-                                                                                                    <div class="lms-card-icons"><i data-feather="arrow-right-circle" width="20"
-                                                                                                                                   height="20"
-                                                                                                                                   class=""></i></div>
-                                                                                                    <div class="lms-card-info">
-                                                                                                        <h5>{{$logObj->user->get_full_name()}} @ <b>{{ dateTimeFormat
-                                                        ($logObj->action_at, 'j M y | H:i')
-                                                        }} <span><i data-feather="arrow-right" width="20" height="20"
-                                                                    class=""></i></span>
-                                                                                                        </h5>
-                                                                                                        <p>{{$logObj->action_type}}</p>
-                                                                                                        <p>{!! $logObj->log_data !!}</p>
-                                                                                                        @if($logObj->action_type == 'Status Updated - Published' &&
-                                                                                                        $logObj->action_role ==
-                                                                                                        'reviewer')
-                                                                                                            @php
-                                                                                                                $log_storred_data = json_decode($logObj->log_storred_data, true);
-                                                                                                                $log_storred_data['Difficulty Level']  = isset( $log_storred_data['Difficulty Level'] )? $log_storred_data['Difficulty Level'] : 0;
-
-                                                                                                                if(!empty($log_storred_data)){
-
-                                                                                                                $log_storred_data['Solution'] = $log_storred_data['Solution'].'('.$log_storred_data['Solution Label'].')';
-                                                                                                                $log_storred_data['Difficulty Level'] = $log_storred_data['Difficulty Level'].'('.$log_storred_data['Difficulty Level Label'].')';
-                                                                                                                unset($log_storred_data['Solution Label']);
-                                                                                                                unset($log_storred_data['Difficulty Level Label']);
-                                                                                                                unset($log_storred_data['status_details']);
-                                                                                                                $log_storred_data['Accepted'] = 20;
-                                                                                                                }
-
-                                                                                                            @endphp
-                                                                                                            @if( !empty( $log_storred_data ))
-                                                                                                                @foreach( $log_storred_data as $storred_dataObj_key =>
-                                                                                                                $storred_dataObj_value)
-                                                                                                                    <span>{{$storred_dataObj_key}}: {{$storred_dataObj_value}}</span><br>
-                                                                                                                @endforeach
-                                                                                                            @endif
-
-                                                                                                        @endif
+                                                                                                <div class="card mb-3">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-3 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                                                    <h5 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h5>
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </div>
+                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <p class="mb-0">
+                                                                                                                    {!! $logObj->log_data !!}
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                     </div>
-                                                                                                </li>
+                                                                                                </div>
 
                                                                                             @endforeach
                                                                                         @endif
                                                                                     </ul>
                                                                                 @endif
                                                                             </div>
-                                                                            <button type="submit" class="btn btn-primary">Submit</button>
                                                                         </div>
                                                                     </form>
                                                                     </div>
@@ -173,100 +156,7 @@ $rand_id = rand(99,9999);
                                                         </div>
                                                     </div>
 
-                                                    <div class="modal fade review_submit reject_modal_box" id="reject_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                                <div class="modal-body">
-                                                                    <form action="javascript:;" method="POST" class="row reject_question_form">
-                                                                        <input type="hidden" name="question_id" value="{{$questionObj->id}}">
-                                                                        <div class="col-12 col-lg-12">
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-md-12">
-                                                                                    <div class="form-group">
-                                                                                        <label class="input-label">Message</label>
-                                                                                        <div class="input-group">
-                                                                                            <textarea rows="10" name="review_message" class="form-control"></textarea>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
 
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-md-12">
-                                                                                    <div class="form-group">
-                                                                                        <select name="question_status" class="question_status_update custom-select">
-                                                                                            <option value="">Action</option>
-                                                                                            <option value="Accepted">Accepted</option>
-                                                                                            <option value="Improvement required">Improvement required</option>
-                                                                                            <option value="Hard reject">Hard reject</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
-
-                                                                                <h4>Question Logs</h4>
-                                                                                @if($questionLogs->count() > 0)
-                                                                                    <ul class="lms-card-timeline">
-
-                                                                                        @if( !empty( $questionLogs ))
-                                                                                            @foreach($questionLogs as $logObj)
-
-
-                                                                                                <li class="lms-card-list active">
-                                                                                                    <div class="lms-card-icons"><i data-feather="arrow-right-circle" width="20"
-                                                                                                                                   height="20"
-                                                                                                                                   class=""></i></div>
-                                                                                                    <div class="lms-card-info">
-                                                                                                        <h5>{{$logObj->user->get_full_name()}} @ <b>{{ dateTimeFormat
-                                                        ($logObj->action_at, 'j M y | H:i')
-                                                        }} <span><i data-feather="arrow-right" width="20" height="20"
-                                                                    class=""></i></span>
-                                                                                                        </h5>
-                                                                                                        <p>{{$logObj->action_type}}</p>
-                                                                                                        <p>{!! $logObj->log_data !!}</p>
-                                                                                                        @if($logObj->action_type == 'Status Updated - Published' &&
-                                                                                                        $logObj->action_role ==
-                                                                                                        'reviewer')
-                                                                                                            @php
-                                                                                                                $log_storred_data = json_decode($logObj->log_storred_data, true);
-                                                                                                                $log_storred_data['Difficulty Level']  = isset( $log_storred_data['Difficulty Level'] )? $log_storred_data['Difficulty Level'] : 0;
-
-                                                                                                                if(!empty($log_storred_data)){
-
-                                                                                                                $log_storred_data['Solution'] = $log_storred_data['Solution'].'('.$log_storred_data['Solution Label'].')';
-                                                                                                                $log_storred_data['Difficulty Level'] = $log_storred_data['Difficulty Level'].'('.$log_storred_data['Difficulty Level Label'].')';
-                                                                                                                unset($log_storred_data['Solution Label']);
-                                                                                                                unset($log_storred_data['Difficulty Level Label']);
-                                                                                                                unset($log_storred_data['status_details']);
-                                                                                                                $log_storred_data['Accepted'] = 20;
-                                                                                                                }
-
-                                                                                                            @endphp
-                                                                                                            @if( !empty( $log_storred_data ))
-                                                                                                                @foreach( $log_storred_data as $storred_dataObj_key =>
-                                                                                                                $storred_dataObj_value)
-                                                                                                                    <span>{{$storred_dataObj_key}}: {{$storred_dataObj_value}}</span><br>
-                                                                                                                @endforeach
-                                                                                                            @endif
-
-                                                                                                        @endif
-                                                                                                    </div>
-                                                                                                </li>
-
-                                                                                            @endforeach
-                                                                                        @endif
-                                                                                    </ul>
-                                                                                @endif
-                                                                            </div>
-                                                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
 												</div>
 
 											@endforeach
