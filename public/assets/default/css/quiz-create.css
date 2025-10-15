@@ -1936,3 +1936,6 @@ Quiz Check Answers Page Style End
 .lms-card-timeline .card .media .media-body > .d-flex small {
     width: 100%;
 }
+.approve_question_form .row:has(.lms-card-timeline) {
+    margin: 0;
+}
