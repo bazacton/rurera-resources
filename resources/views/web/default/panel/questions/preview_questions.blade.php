@@ -230,19 +230,32 @@ $rand_id = rand(99,9999);
 
 <script>
 $(document).on('keyup', 'body', function (evt) {
-        if (evt.key === 'ArrowLeft') {
-            if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){
-				$(".question-area-block").find('.show-notifications').html('');
-				$('.rurera-question-block.active').removeClass('active').prev().addClass('active');
-			}
+    if (evt.key === 'ArrowLeft') {
+        if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){
+            $(".question-area-block").find('.show-notifications').html('');
+            $('.rurera-question-block.active').removeClass('active').prev().addClass('active');
         }
-        if (evt.key === 'ArrowRight') {
-            if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
-			$(".question-area-block").find('.show-notifications').html('');
-			$('.rurera-question-block.active').removeClass('active').next().addClass('active');
-		}
-        }
-    });
+    }
+    if (evt.key === 'ArrowRight') {
+        if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
+        $(".question-area-block").find('.show-notifications').html('');
+        $('.rurera-question-block.active').removeClass('active').next().addClass('active');
+    }
+    }
+});
+
+$(document).on('click', '.next-btn', function (e) {
+    if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
+        $(".question-area-block").find('.show-notifications').html('');
+        $('.rurera-question-block.active').removeClass('active').next().addClass('active');
+    }
+});
+$(document).on('click', '.prev-btn', function (e) {
+    if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){
+        $(".question-area-block").find('.show-notifications').html('');
+        $('.rurera-question-block.active').removeClass('active').prev().addClass('active');
+    }
+});
 //
 $(document).on('submit', '.approve_question_form', function (evt) {
     console.log('sdfsdf');
