@@ -91,7 +91,7 @@ $rand_id = rand(99,9999);
                                                                         <div class="form-group">
 
                                                                             <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
-                                                                                <label class="btn btn-success">
+                                                                                <label class="btn btn-success active">
                                                                                     <input type="radio" name="question_status" value="Published" autocomplete="off" checked> Publish
                                                                                 </label>
                                                                                 <label class="btn btn-warning">
