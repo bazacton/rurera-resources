@@ -62,7 +62,11 @@ $rand_id = rand(99,9999);
 												<span class="questions-total-holder d-block mb-15">
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
                                                     <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span>
-													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- ({{$questionObj->subChapter->chapter->title.' / '.$questionObj->subChapter->sub_chapter_title}}) ---- <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></a></span>
+                                                    @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
+
+                                                        $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
+                                                    @endphp
+													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- {{$chapter_title}} / {{$sub_chapter_title}}) ---- <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
 												</span>
 												<div class="question-layout row disabled-div">
 													{!! $question_layout !!}
