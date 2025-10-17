@@ -42,9 +42,18 @@
         </tr>
         <tr class="topic-heading-top">
             <th class="font-14">Student</th>
+            <th class="font-14">Last Activity & duration</th>
+            <th class="font-14">Total Practice Time</th>
+            <th class="font-14">Words Counter</th>
+            <th class="font-14">Total  | Mastered | Practiced</th>
             @php $topic_counter = 1; @endphp
             @if($vocabulary_list->count() > 0)
                 @foreach($vocabulary_list as $vocabularyObj)
+
+                    <th class="font-14">16 October 2025</th>
+                    <th class="font-14">05m 49s</th>
+                    <th class="font-14">20</th>
+                    <th class="font-14">20 | 2 | 5</th>
                     @if($vocabularyObj->quizQuestionsList->count() > 0)
                         @foreach($vocabularyObj->quizQuestionsList as $quizQuestionsListObj)
                             @php
