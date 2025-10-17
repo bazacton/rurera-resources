@@ -50,10 +50,6 @@
             @if($vocabulary_list->count() > 0)
                 @foreach($vocabulary_list as $vocabularyObj)
 
-                    <th class="font-14">16 October 2025</th>
-                    <th class="font-14">05m 49s</th>
-                    <th class="font-14">20</th>
-                    <th class="font-14">20 | 2 | 5</th>
                     @if($vocabularyObj->quizQuestionsList->count() > 0)
                         @foreach($vocabularyObj->quizQuestionsList as $quizQuestionsListObj)
                             @php
@@ -85,6 +81,11 @@
             @foreach($studentsList as $studentObj)
                 <tr>
                     <td>{{$studentObj->get_full_name()}}</td>
+
+                    <th class="font-14">16 October 2025</th>
+                    <th class="font-14">05m 49s</th>
+                    <th class="font-14">20</th>
+                    <th class="font-14">20 | 2 | 5</th>
 
                     @if($vocabulary_list->count() > 0)
                         @foreach($vocabulary_list as $vocabularyObj)
