@@ -431,7 +431,12 @@
                                             <i class="fa fa-clone"></i>
                                         </a>
                                         @endcan
-                                        <a href="/panel/questions/{{ $questionData->id }}/start"
+                                            <a href="/admin/questions_bank/{{ $questionData->id }}/json" target="_blank"
+                                               class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
+                                               data-placement="top" title="json">
+                                                <i class="fa fa-question"></i>
+                                            </a>
+                                            <a href="/panel/questions/{{ $questionData->id }}/start"
                                            class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
                                            data-placement="top" title="View">
                                             <i class="fa fa-eye"></i>
