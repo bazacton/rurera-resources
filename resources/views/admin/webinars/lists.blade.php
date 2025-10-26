@@ -111,76 +111,16 @@
                     <form method="get" class="mb-0">
                         <input type="hidden" name="type" value="{{ request()->get('type') }}">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="input-label">{{trans('admin/main.search')}}</label>
                                     <input name="title" type="text" class="form-control" value="{{ request()->get('title') }}">
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">{{trans('admin/main.start_date')}}</label>
-                                    <div class="input-group">
-                                        <input type="date" id="from" class="text-center form-control" name="from" value="{{ request()->get('from') }}" placeholder="Start Date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">{{trans('admin/main.end_date')}}</label>
-                                    <div class="input-group">
-                                        <input type="date" id="to" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
-                                    </div>
-                                </div>
-                            </div>
 
 
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">{{trans('admin/main.filters')}}</label>
-                                    <div class="select-holder">
-                                        <select name="sort" data-plugin-selectTwo class="form-control populate">
-                                            <option value="">{{trans('admin/main.filter_type')}}</option>
-                                            <option value="has_discount" @if(request()->get('sort') == 'has_discount') selected @endif>{{trans('admin/main.discounted_classes')}}</option>
-                                            <option value="sales_asc" @if(request()->get('sort') == 'sales_asc') selected @endif>{{trans('admin/main.sales_ascending')}}</option>
-                                            <option value="sales_desc" @if(request()->get('sort') == 'sales_desc') selected @endif>{{trans('admin/main.sales_descending')}}</option>
-                                            <option value="price_asc" @if(request()->get('sort') == 'price_asc') selected @endif>{{trans('admin/main.Price_ascending')}}</option>
-                                            <option value="price_desc" @if(request()->get('sort') == 'price_desc') selected @endif>{{trans('admin/main.Price_descending')}}</option>
-                                            <option value="income_asc" @if(request()->get('sort') == 'income_asc') selected @endif>{{trans('admin/main.Income_ascending')}}</option>
-                                            <option value="income_desc" @if(request()->get('sort') == 'income_desc') selected @endif>{{trans('admin/main.Income_descending')}}</option>
-                                            <option value="created_at_asc" @if(request()->get('sort') == 'created_at_asc') selected @endif>{{trans('admin/main.create_date_ascending')}}</option>
-                                            <option value="created_at_desc" @if(request()->get('sort') == 'created_at_desc') selected @endif>{{trans('admin/main.create_date_descending')}}</option>
-                                            <option value="updated_at_asc" @if(request()->get('sort') == 'updated_at_asc') selected @endif>{{trans('admin/main.update_date_ascending')}}</option>
-                                            <option value="updated_at_desc" @if(request()->get('sort') == 'updated_at_desc') selected @endif>{{trans('admin/main.update_date_descending')}}</option>
-                                            <option value="public_courses" @if(request()->get('sort') == 'public_courses') selected @endif>{{trans('update.public_courses')}}</option>
-                                            <option value="courses_private" @if(request()->get('sort') == 'courses_private') selected @endif>{{trans('update.courses_private')}}</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">{{trans('admin/main.instructor')}}</label>
-                                    <div class="select-holder has-border-dashed">
-                                        <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role" class="form-control search-user-select2"
-                                            data-placeholder="Search teachers">
-
-                                            @if(!empty($teachers) and $teachers->count() > 0)
-                                                @foreach($teachers as $teacher)
-                                                    <option value="{{ $teacher->id }}" selected>{{ $teacher->get_full_name() }}</option>
-                                                @endforeach
-                                            @endif
-                                        </select>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="input-label">{{trans('admin/main.category')}}</label>
                                     <div class="select-holder">
@@ -200,35 +140,11 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">{{trans('admin/main.status')}}</label>
-                                    <div class="select-holder">
-                                        <select name="status" data-plugin-selectTwo class="form-control populate">
-                                            <option value="">{{trans('admin/main.all_status')}}</option>
-                                            <option value="pending" @if(request()->get('status') == 'pending') selected @endif>{{trans('admin/main.pending_review')}}</option>
-                                            @if($classesType == 'webinar')
-                                                <option value="active_not_conducted" @if(request()->get('status') == 'active_not_conducted') selected @endif>{{trans('admin/main.publish_not_conducted')}}</option>
-                                                <option value="active_in_progress" @if(request()->get('status') == 'active_in_progress') selected @endif>{{trans('admin/main.publish_inprogress')}}</option>
-                                                <option value="active_finished" @if(request()->get('status') == 'active_finished') selected @endif>{{trans('admin/main.publish_finished')}}</option>
-                                            @else
-                                                <option value="active" @if(request()->get('status') == 'active') selected @endif>{{trans('admin/main.published')}}</option>
-                                            @endif
-                                            <option value="inactive" @if(request()->get('status') == 'inactive') selected @endif>{{trans('admin/main.rejected')}}</option>
-                                            <option value="is_draft" @if(request()->get('status') == 'is_draft') selected @endif>{{trans('admin/main.draft')}}</option>
-                                        </select>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="form-group mt-1">
                                     <label class="input-label mb-4"> </label>
                                     <input type="submit" class="text-center btn btn-primary w-100" value="{{trans('admin/main.show_results')}}" style="height: 32px; box-shadow: none;">
@@ -268,7 +184,7 @@
                                             <th>{{trans('admin/main.updated_at')}}</th>
                                         @endif
                                         <th>{{trans('admin/main.status')}}</th>
-                                         <th width="120"><!--{{trans('admin/main.actions')}}--></th> 
+                                         <th width="120"><!--{{trans('admin/main.actions')}}--></th>
                                     </tr>
 
                                     @foreach($webinars as $webinar)
@@ -374,7 +290,7 @@
                                                             @elseif($webinar->status == \App\Models\Webinar::$active)
                                                                 @include('admin.includes.delete_button',[
                                                                     'url' => getAdminPanelUrl().'/webinars/'.$webinar->id.'/unpublish',
-                                                                    'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm', 
+                                                                    'btnClass' => 'd-flex align-items-center text-danger text-decoration-none btn-transparent btn-sm',
                                                                     'btnText' => '<span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title=" '. trans('admin/main.unpublish') .' "> <!--'. trans("admin/main.unpublish") .'--> <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"></span>'
                                                                     ])
                                                             @endif
