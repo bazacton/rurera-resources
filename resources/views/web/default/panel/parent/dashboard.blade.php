@@ -101,7 +101,7 @@
 
                                     <div class="list-group-item {{$is_cancelled}}">
                                     <div class="emojis-response rurera-hide">{!! $emoji_response !!}</div>
-                                    <span class="pin-response rurera-hide">{{$childObj->login_pin}}</span>
+                                    <span class="pin-response rurera-hide">{{isset($childObj->login_pin)? $childObj->login_pin : ''}}</span>
 
                                         <div class="row align-items-center">
                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto">
