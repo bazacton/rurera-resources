@@ -82,7 +82,9 @@
 
                                     @if( !empty( $childs ) )
                                     @foreach($childs as $childLinkObj)
-                                    @php $childObj = $childLinkObj->user; @endphp
+                                    @php $childObj = $childLinkObj->user;
+                                        if(!isset($childObj->id)){continue;}
+                                    @endphp
                                     @php $is_cancelled = (isset( $childObj->userSubscriptions->subscribe ) && $childObj->userSubscriptions->is_cancelled == 1 )? 'cancelled-membership' : '';
                                     $subscribe = isset( $childObj->userSubscriptions->subscribe)? $childObj->userSubscriptions->subscribe : (object) array();
                                     $emoji_response = '';
