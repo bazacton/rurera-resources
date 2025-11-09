@@ -39,7 +39,7 @@
         <div class="db-form-tabs">
             <div class="db-members">
                 <div class="row g-3 list-unstyled students-requests-list">
-                
+
                     @foreach( $studentsRequests as $studentsRequestObj)
                             <div class="col-12 col-lg-12 students-requests-list-item">
                                 <div class="notification-card rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-40 mt-20">
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                     @endforeach
-                    
+
                 </div>
             </div>
         </div>
@@ -83,10 +83,10 @@
                                     @if( !empty( $childs ) )
                                     @foreach($childs as $childLinkObj)
                                     @php $childObj = $childLinkObj->user; @endphp
-                                    @php $is_cancelled = (isset( $childObj->userSubscriptions->subscribe ) && $childObj->userSubscriptions->is_cancelled == 1 )? 'cancelled-membership' : ''; 
+                                    @php $is_cancelled = (isset( $childObj->userSubscriptions->subscribe ) && $childObj->userSubscriptions->is_cancelled == 1 )? 'cancelled-membership' : '';
                                     $subscribe = isset( $childObj->userSubscriptions->subscribe)? $childObj->userSubscriptions->subscribe : (object) array();
                                     $emoji_response = '';
-                                    $emojisArray = explode('icon', $childObj->login_emoji);
+                                    $emojisArray = isset($childObj->login_emoji)? explode('icon', $childObj->login_emoji) : array();
                                         if( !empty( $emojisArray ) ){
                                             $emoji_response .= '<div class="emoji-icons">';
                                             foreach( $emojisArray as $emojiCode){
@@ -97,12 +97,12 @@
                                             $emoji_response .= '</div>';
                                         }
                                     @endphp
-                                    
+
 
                                     <div class="list-group-item {{$is_cancelled}}">
                                     <div class="emojis-response rurera-hide">{!! $emoji_response !!}</div>
                                     <span class="pin-response rurera-hide">{{$childObj->login_pin}}</span>
-                                    
+
                                         <div class="row align-items-center">
                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto">
                                                 <h6 class="listing-title font-16 font-weight-500">Student</h6>
@@ -114,7 +114,7 @@
 
                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
                                                     <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
-                                                    
+
                                                     <small class="text-muted">
                                                         {{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}} {{isset($childObj->userClass->title)? $childObj->userClass->title : ''}} {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
                                                     </small>
@@ -170,7 +170,7 @@
                                                             <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Update Package
                                                         </a>
                                                     </li>
-                                                    @endif                                             
+                                                    @endif
                                                     <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
                                                 </ul>
                                             </div>
@@ -432,7 +432,7 @@
                                                             @foreach($subscribes as $subscribe)
 
                                                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                                                <div class="select-plan">  
+                                                                <div class="select-plan">
                                                                     <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
                                                                         <input type="radio" class="package_id choose-package update-package-{{$subscribe->id}}" data-label="{{ $subscribe->title }}" id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package_id">
                                                                         <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
@@ -552,7 +552,7 @@
 
                                     <div class="select-plan">
                                         <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
-                                            <input type="radio" class="choose-package update-package-{{$subscribe->id}}" data-label="{{ $subscribe->title }}" id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package">    
+                                            <input type="radio" class="choose-package update-package-{{$subscribe->id}}" data-label="{{ $subscribe->title }}" id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package">
                                             <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                                 <span class="subscribe-icon mb-20">
                                                     <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
@@ -633,7 +633,7 @@
 
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="select-plan">
-                                    
+
                                     <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
                                         <input type="radio" class="choose-package" data-label="{{ $subscribe->title }}" id="{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package">
                                         <label for="{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
@@ -766,13 +766,13 @@
             </div>
             <div class="container">
                 <div class="modal-body pt-50">
-				
-				
 
-                   
-						
+
+
+
+
 				<div class="bg-white panel-border p-25 rounded-sm my-30 mx-auto w-80 user-profile-block">
-				
+
 				</div>
 
                     </div>
@@ -801,13 +801,13 @@
 <div class="modal fade class-connect-modal" id="cancelsubscriptionModal" tabindex="-1" aria-labelledby="cancelsubscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            
+
 			<div class="modal-header">
                 <strong>Cancel Subscription</strong>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">×</span></button>
             </div>
-			
+
             <div class="modal-body">
                 <div class="container container-nosidebar">
                 <div class="tab-content cancel-membership-block" id="nav-tabContent">
@@ -1069,8 +1069,8 @@
             },
         });
     });
-	
-	
+
+
 	$(document).on('click', '.class-student-submit', function (e) {
         var thisObj = $(this);
         var formData = new FormData($(".connect-student-form")[0]);
@@ -1101,8 +1101,8 @@
             },
         });
     });
-	
-	
+
+
 
 
 
@@ -1120,7 +1120,7 @@
         var last_name = $(this).attr('data-last_name');
         var user_id = $(this).attr('data-user_id');
 		$(".user-profile-block").html('');
-		
+
 		rurera_loader($('.user-profile-block'), 'div');
 		$.ajax({
 			type: "GET",
@@ -1132,7 +1132,7 @@
 			}
 		});
     });
-	
+
 	$(document).on('click', '.request-action-btn', function (e) {
         var thisObj = $(this);
 		var request_type = thisObj.attr('data-request_type');
@@ -1156,14 +1156,14 @@
                   width: '25rem'
                 });
 				thisObj.closest('.students-requests-list-item').slideUp();
-				
+
             },
         });
     });
-	
-	
 
-	
+
+
+
 
 	$(document).on('click', '.close-modal', function (e) {
 		$("#subscriptionModal").modal('hide');
@@ -1212,7 +1212,7 @@
             $(".total-amount").html(total_amount);
         }
     }
-	
+
 	function closeModal(modalId) {
 	  $(modalId).modal('hide');
 	}
