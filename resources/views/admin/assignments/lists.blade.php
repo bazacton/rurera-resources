@@ -966,6 +966,10 @@
         }
 
         $("#justAnInputBox1").on("change", function () {
+
+            // CLOSE DROPDOWN
+            comboTree3.closeDropDown();
+
             var ids = comboTree3.getSelectedIds() || [];
             var names = comboTree3.getSelectedNames() || [];
 
