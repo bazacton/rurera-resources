@@ -36,15 +36,21 @@
             avatar_color_settings = JSON.parse(avatar_color_settings);
             token_id = $(".mobile-avar-view").attr('data-token_id');
 
+
+
+
+            $("#svga-saveavatar").addClass('svga-saveavatar-token');
+            $(".svga-saveavatar-token").removeAttr('id'); // removes the id 'svga-saveavatar'
+            $(".svga-saveavatar-token").attr('id', 'svga-saveavatar-token'); // assigns new id
+            $("#svga-saveavatar-token").removeClass('svga-saveavatar-token');
+
+
             $(document).ready(function () {
                 start_id = $("#svgAvatars").attr('data-user_pref');
                 start_id = (start_id == 'female') ? 'girls' : 'boys';
                 console.log(start_id);
                 $("#svga-start-" + start_id).click();
-                $("#svga-saveavatar").addClass('svga-saveavatar-token');
-                $(".svga-saveavatar-token").removeAttr('id'); // removes the id 'svga-saveavatar'
-                $(".svga-saveavatar-token").attr('id', 'svga-saveavatar-token'); // assigns new id
-                $("#svga-saveavatar-token").removeClass('svga-saveavatar-token');
+
             });
 
         </script>
