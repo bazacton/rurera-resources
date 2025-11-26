@@ -948,8 +948,8 @@
         var comboTree3 = $("#justAnInputBox1").comboTree({
             source: SampleJSONData,
             isMultiple: false,
-            cascadeSelect: false,
-            collapse: false
+            cascadeSelect: true,
+            collapse: true
         });
 
         $(".ct-input-wrapper").append('<div id="selected-tags" class="selected-tags"></div>');
@@ -990,6 +990,15 @@
             });
 
             $("#selected-tags").html(html);
+        });
+        $("#justAnInputBox1").on("click", function () {
+            setTimeout(function () {
+                if ($(".comboTreeDropDownContainer").is(":visible")) {
+                    $("#justAnInputBox1").addClass("dropdown-open");
+                } else {
+                    $("#justAnInputBox1").removeClass("dropdown-open");
+                }
+            }, 10);
         });
         
 
