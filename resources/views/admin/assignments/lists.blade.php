@@ -972,13 +972,6 @@
 
             var ids = comboTree3.getSelectedIds() || [];
             var names = comboTree3.getSelectedNames() || [];
-            setTimeout(function () {
-                if ($(".comboTreeDropDownContainer").is(":visible")) {
-                    $("#justAnInputBox1").addClass("dropdown-open");
-                } else {
-                    $("#justAnInputBox1").removeClass("dropdown-open");
-                }
-            }, 10);
 
             // always clear the input box
             $("#justAnInputBox1").val("");
