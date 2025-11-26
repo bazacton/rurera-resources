@@ -949,17 +949,7 @@
             source: SampleJSONData,
             isMultiple: false,
             cascadeSelect: true,
-            collapse: true,
-            
-            // Add class when dropdown opens
-            onOpen: function () {
-                $("#justAnInputBox1").addClass("dropdown-open");
-            },
-
-            // Remove class when dropdown closes
-            onHide: function () {
-                $("#justAnInputBox1").removeClass("dropdown-open");
-            }
+            collapse: true
         });
         setTimeout(function () {
             comboTree3.closeDropDown();  
