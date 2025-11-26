@@ -302,7 +302,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="multi-selection-dropdown">
+                                    <div class="multi-selection-dropdown test">
                                         <input type="text" id="justAnInputBox1" placeholder="Select" autocomplete="off" />
                                     </div>
                                 </div>
