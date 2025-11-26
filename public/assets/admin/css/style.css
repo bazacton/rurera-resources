@@ -135,8 +135,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .form-group .control-label,
 .form-group > label,
 .years-group > .group-lable,
-.choose-types > label, .create-class-modal .input-label,
-.assignment-create-modal .populated-data .input-label {font-weight: 600; color: #cbcbcb; font-size: 14px; letter-spacing: .5px; line-height: normal;}
+.choose-types > label, .create-class-modal .input-label {font-weight: 600; color: #cbcbcb; font-size: 14px; letter-spacing: .5px; line-height: normal;}
 .form-group.floating-addon {position: relative;}
 .form-group.floating-addon .input-group-prepend {position: absolute; top: 0; left: 0; height: 100%; z-index: 5; }
 .form-group.floating-addon:not(.floating-addon-not-append) .input-group-append {position: absolute; top: 0; left: 0; z-index: 5; left: initial; right: 0;}
