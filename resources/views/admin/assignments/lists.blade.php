@@ -939,9 +939,9 @@
       jQuery(document).ready(function ($) {
         comboTree1 = $("#justAnInputBox").comboTree({
           source: SampleJSONData,
-          isMultiple: false,
+          isMultiple: true,
           cascadeSelect: false,
-          collapse: false,
+          collapse: true,
           selectAll: true,
         });
 
@@ -950,6 +950,7 @@
             isMultiple: true,
             cascadeSelect: true,
             collapse: true,
+            comboTree3.closeDropDown();
             // Add class when dropdown opens
             onOpen: function () {
                 $("#justAnInputBox1").addClass("dropdown-open");
@@ -975,9 +976,6 @@
         }
 
         $("#justAnInputBox1").on("change", function () {
-
-            // CLOSE DROPDOWN
-            comboTree3.closeDropDown();
 
             var ids = comboTree3.getSelectedIds() || [];
             var names = comboTree3.getSelectedNames() || [];
