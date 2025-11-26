@@ -945,12 +945,12 @@
           selectAll: true,
         });
 
-        // var comboTree3 = $("#justAnInputBox1").comboTree({
-        //     source: SampleJSONData,
-        //     isMultiple: false,
-        //     cascadeSelect: true,
-        //     collapse: true
-        // });
+        var comboTree3 = $("#justAnInputBox1").comboTree({
+            source: SampleJSONData,
+            isMultiple: false,
+            cascadeSelect: false,
+            collapse: false
+        });
 
         $(".ct-input-wrapper").append('<div id="selected-tags" class="selected-tags"></div>');
 
