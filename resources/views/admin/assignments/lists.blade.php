@@ -950,7 +950,7 @@
             isMultiple: true,
             cascadeSelect: true,
             collapse: true,
-            comboTree3.closeDropDown();
+            
             // Add class when dropdown opens
             onOpen: function () {
                 $("#justAnInputBox1").addClass("dropdown-open");
@@ -961,6 +961,9 @@
                 $("#justAnInputBox1").removeClass("dropdown-open");
             }
         });
+        setTimeout(function () {
+            comboTree3.closeDropDown();  
+        }, 100);
 
         $(".ct-input-wrapper").append('<div id="selected-tags" class="selected-tags"></div>');
 
