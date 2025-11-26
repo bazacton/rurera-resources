@@ -22,7 +22,7 @@
         <script src="/assets/default/vendors/svgavatars/js/languages/svgavatars.en.js"></script>
         <script src="/assets/default/vendors/svgavatars/js/svgavatars.core.min.js"></script>
 
-
+sdd23
 <div id="svgAvatars" class="mobile-avar-view" data-token_id="{{$token_id}}" data-user_pref="{{$user->user_preference}}">ssssss</div>
 
     @push('scripts_bottom')
