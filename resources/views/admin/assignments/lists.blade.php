@@ -951,9 +951,6 @@
             cascadeSelect: true,
             collapse: true
         });
-        setTimeout(function () {
-            comboTree3.closeDropDown();  
-        }, 100);
 
         $(".ct-input-wrapper").append('<div id="selected-tags" class="selected-tags"></div>');
 
