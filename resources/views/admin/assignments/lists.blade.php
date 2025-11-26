@@ -947,7 +947,7 @@
 
         var comboTree3 = $("#justAnInputBox1").comboTree({
             source: SampleJSONData,
-            isMultiple: true,
+            isMultiple: false,
             cascadeSelect: true,
             collapse: true
         });
