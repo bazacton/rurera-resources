@@ -1010,7 +1010,6 @@
           isMultiple: false,
         });
 
-        comboTree3.toggleDropDown();
       });
       
     </script>
