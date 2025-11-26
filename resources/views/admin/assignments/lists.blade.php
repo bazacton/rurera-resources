@@ -939,18 +939,18 @@
       jQuery(document).ready(function ($) {
         comboTree1 = $("#justAnInputBox").comboTree({
           source: SampleJSONData,
-          isMultiple: true,
+          isMultiple: false,
           cascadeSelect: false,
           collapse: false,
           selectAll: true,
         });
 
-        var comboTree3 = $("#justAnInputBox1").comboTree({
-            source: SampleJSONData,
-            isMultiple: false,
-            cascadeSelect: true,
-            collapse: true
-        });
+        // var comboTree3 = $("#justAnInputBox1").comboTree({
+        //     source: SampleJSONData,
+        //     isMultiple: false,
+        //     cascadeSelect: true,
+        //     collapse: true
+        // });
 
         $(".ct-input-wrapper").append('<div id="selected-tags" class="selected-tags"></div>');
 
@@ -972,6 +972,13 @@
 
             var ids = comboTree3.getSelectedIds() || [];
             var names = comboTree3.getSelectedNames() || [];
+            setTimeout(function () {
+                if ($(".comboTreeDropDownContainer").is(":visible")) {
+                    $("#justAnInputBox1").addClass("dropdown-open");
+                } else {
+                    $("#justAnInputBox1").removeClass("dropdown-open");
+                }
+            }, 10);
 
             // always clear the input box
             $("#justAnInputBox1").val("");
