@@ -22,8 +22,6 @@
         <script src="/assets/default/vendors/svgavatars/js/languages/svgavatars.en.js"></script>
         <script src="/assets/default/vendors/svgavatars/js/svgavatars.core.min.js"></script>
 
-sdd23
-        <div id="testing3">testing3</div>
 <div id="svgAvatars" class="mobile-avar-view" data-token_id="{{$token_id}}" data-user_pref="{{$user->user_preference}}">ssssss</div>
 
     @push('scripts_bottom')
@@ -54,12 +52,6 @@ sdd23
                 $(".svga-saveavatar-token").attr('id', 'svga-saveavatar-token'); // assigns new id
                 $("#svga-saveavatar-token").removeClass('svga-saveavatar-token');
 
-
-                $("#testing3").addClass('testing3-token');
-                $(".testing3-token").removeAttr('id'); // removes the id 'svga-saveavatar'
-                $(".testing3-token").attr('id', 'testing3-token'); // assigns new id
-                $("#testing3-token").removeClass('testing3-token');
-                $("#testing3-token").html('testing3-token');
 
             });
 
