@@ -26,7 +26,7 @@
 <div id="svgAvatars" class="mobile-avar-view" data-token_id="{{$token_id}}" data-user_pref="{{$user->user_preference}}">ssssss</div>
 
     @push('scripts_bottom')
-    
+
     @endpush
         <script type="text/javascript">
             var user_avatar_settings = '<?php echo $avatar_settings; ?>';
@@ -34,7 +34,7 @@
 
             user_avatar_settings = JSON.parse(user_avatar_settings);
             avatar_color_settings = JSON.parse(avatar_color_settings);
-            token_id = $("#svgAvatars").attr('data-token_id');
+            token_id = $(".mobile-avar-view").attr('data-token_id');
 
             $(document).ready(function () {
                 start_id = $("#svgAvatars").attr('data-user_pref');
@@ -80,7 +80,7 @@
         </script>
         <script>
         $(document).ready(function () {
-            
+
             $(document).on('click', '.svga-bodyzones', function (e) {
                 function setMobilePadding() {
                 if ($(window).width() <= 767) {
@@ -91,13 +91,13 @@
                 }
             }
             setMobilePadding();
-            
+
             $(window).on('resize', function () {
                 setMobilePadding();
             });
 
             });
-            
+
         });
         </script>
         <script src="/assets/default/js/panel/user_setting.min.js"></script>
