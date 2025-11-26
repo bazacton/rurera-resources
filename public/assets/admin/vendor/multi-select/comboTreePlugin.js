@@ -49,7 +49,7 @@
     this._arrowBtn = $('<button class="ct-arrow-btn" type="button">⯆</button>');
     this._input.after(this._arrowBtn);
 
-    this._wrapper.append('<div class="ct-drop-down-container"></div>');
+    this._wrapper.append('<div class="ct-drop-down-container" style="display: none;"></div>');
 
     // DORP DOWN AREA
     this._dropDownContainer = this._wrapper.find(".ct-drop-down-container");
