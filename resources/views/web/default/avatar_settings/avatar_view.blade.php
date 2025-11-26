@@ -46,14 +46,12 @@
                 $("#svga-start-" + start_id).click();
 
 
-                setTimeout(function () {
-                    $("#svga-saveavatar").addClass('svga-saveavatar-token');
-                    $(".svga-saveavatar-token").removeAttr('id'); // removes the id 'svga-saveavatar'
-                    $(".svga-saveavatar-token").attr('id', 'svga-saveavatar-token'); // assigns new id
-                    $("#svga-saveavatar-token").removeClass('svga-saveavatar-token');
-                }, 5000);
+                
 
-
+                $("#svga-saveavatar").addClass('svga-saveavatar-token');
+                $(".svga-saveavatar-token").removeAttr('id'); // removes the id 'svga-saveavatar'
+                $(".svga-saveavatar-token").attr('id', 'svga-saveavatar-token'); // assigns new id
+                $("#svga-saveavatar-token").removeClass('svga-saveavatar-token');
 
 
             });
