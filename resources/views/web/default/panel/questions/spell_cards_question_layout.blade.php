@@ -147,7 +147,7 @@ shuffle($characters_list);
                             <p>Highly skilled or proficient</p>
                         </div>
                     </div>
-                    <div class="words-list-card">
+                    <div class="words-list-card card-flip">
                         <div class="card-header">
                             <span class="card-number">1</span>
                         </div>
