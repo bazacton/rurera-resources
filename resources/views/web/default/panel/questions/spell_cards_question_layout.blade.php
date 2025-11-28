@@ -66,6 +66,20 @@ shuffle($characters_list);
             <form class="question-fields" action="javascript:;" data-defination="{{isset($word_data['audio_defination'])? $word_data['audio_defination'] : ''}}" data-question_id="{{ $question->id }}">
 
                 <div class="words-list-holder">
+                    <div class="words-list-card card-flip">
+                        <div class="card-header">
+                            <span class="card-number">1</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="word-icon">
+                                <i>&#128360;</i>
+                                <strong class="word-label">adept</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="card-flip-btn"><img src="/assets/default/svgs/bulb.svg" alt="bulb" height="30" width="30"><span>Tip: Tap card to flip</span></button>
+                        </div>
+                    </div>
                     <div class="words-list-card">
                         <div class="card-header">
                             <span class="card-icon">
@@ -147,20 +161,7 @@ shuffle($characters_list);
                             <p>Highly skilled or proficient</p>
                         </div>
                     </div>
-                    <div class="words-list-card card-flip">
-                        <div class="card-header">
-                            <span class="card-number">1</span>
-                        </div>
-                        <div class="card-body">
-                            <div class="word-icon">
-                                <i>&#128360;</i>
-                                <strong class="word-label">adept</strong>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="card-flip-btn"><img src="/assets/default/svgs/bulb.svg" alt="bulb" height="30" width="30"><span>Tip: Tap card to flip</span></button>
-                        </div>
-                    </div>
+                    
                 </div>
             </form>
 
