@@ -523,6 +523,57 @@ body .spell-question-area .question-label span {text-align: center;}
 .spells .dataTable td a {font-weight: 600; font-size: 18px; text-decoration: none; }
 .spells-quiz-from.question-layout.row {margin-left: 0; margin-right: 0;}
 /*Spell Listing page Style End*/
+/*Words Flip Card Listing Style Start*/
+.words-list-card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 25px 125px;
+    min-height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.words-list-holder {
+    text-align: center;
+}
+.words-list-card .card-header {
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.words-list-card .card-header i {
+    font-style: normal;
+    display: inline-block;
+    transform: scale(-1);
+    font-size: 30px;
+    color: #999;
+}
+.words-list-card .card-header .word-label {
+    font-size: 20px;
+    font-weight: 600;
+}
+.words-list-card .card-body {
+    padding: 10px 0 0;
+    text-align: left;
+}
+.words-list-card .word-boxes {
+    margin: 0 0 15px;
+}
+.words-list-card h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 5px;
+}
+.words-list-card p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #999;
+    margin: 0 0 15px;
+    line-height: normal;
+}
+/*Words Flip Card Listing Style End*/
 /* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style End */
 
 /*Spells-Quiz-Info Style Start*/
