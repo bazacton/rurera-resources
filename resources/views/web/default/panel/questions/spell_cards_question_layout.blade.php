@@ -252,16 +252,6 @@ shuffle($characters_list);
         }
     });
 
-
-
-
-
-
-
-
-
-
-
     function getRandomNumberNotInArray(maxNumber, excludeArray) {
       var randomNumber;
       do {
@@ -333,11 +323,6 @@ shuffle($characters_list);
     });
 
 
-
-
-
-
-
     $(document).on('click', '.start-spell-quiz', function (e) {
     //jQuery(document).ready(function() {
 
@@ -405,4 +390,33 @@ shuffle($characters_list);
             _keystroke("lower");
         });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".words-list-card");
+
+    // Auto open first card
+    if (cards[0]) {
+        cards[0].classList.add("flipped");
+    }
+
+    // Flip forward (open) on clicking card-flip-btn
+    document.querySelectorAll(".card-flip-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const card = this.closest(".words-list-card");
+            card.classList.add("flipped");
+        });
+    });
+
+    // Flip backward (close) on clicking back-btn
+    document.querySelectorAll(".back-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const card = this.closest(".words-list-card");
+            card.classList.remove("flipped");
+        });
+    });
+
+});
+</script>
+
 
