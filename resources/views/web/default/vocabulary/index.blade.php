@@ -48,15 +48,15 @@
 
                                 @foreach( $data as $dataObj)
                                 @php
-                                
+
                                 $total_questions = isset( $dataObj->quizQuestionsList )? count($dataObj->quizQuestionsList) : 0;
                                 $spell_test_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'waiting')->count();
                                 $spell_test_completed = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', '!=', 'waiting')->count();
                                 $word_search_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-search')->where('status', 'waiting')->count();
                                 $word_cloud_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-cloud')->where('status', 'waiting')->count();
                                 $word_missing_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-missing')->where('status', 'waiting')->count();
-                                
-                                
+
+
                                 $quizResultObj = $dataObj->parentResults->where('user_id', $user->id)->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'passed')->last();
                                 $percentage_class = '';
                                 if( isset( $quizResultObj->id)){
@@ -68,9 +68,9 @@
 
 
                                 $overall_percentage = 0;
-                                
+
                                 $spell_quiz_completed = '';
-                                
+
 
                                 $treasure_box_closed = '<li class="treasure">
                                                     <a href="#">
@@ -97,9 +97,9 @@
                                                 Practice Words
                                             </a>
                                             <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup">
-                                            <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>                                            
+                                            <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
                                             <div class="lms-tooltip dropdown-menu">
-                                                <div class="tooltip-box">	
+                                                <div class="tooltip-box">
                                                     <button data-heading="Take a test" class="tooltip-btn practice font-16 d-block mb-15 text-center spell-test-btn"  data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test" data-spell_type="test">Take Test</button>
                                                     @if($spell_test_count > 0)
                                                         <button class="tooltip-btn legendary d-block font-16 text-center" onclick='window.location.href = "/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test"'>Continue</button>
@@ -156,6 +156,7 @@
                 <a href="javascript:;" data-href="javascript:;" class="play-again">Play (<span class="selected_questions">All</span>)</a>
                 </div>
             </div>
+            <form class="spell-quiz-form" action="#" method="POST">
             <h3 class="mt-30">Choose Practice Type</h3>
             <div class="tests-list-holder spell-type-check mb-25 mt-20">
                 <a href="#." class="filter-mobile-btn">Filters</a>
@@ -164,31 +165,28 @@
                     <li data-type="word-search">Word Search</li>
                     <li data-type="word-cloud">Word Cloud</li>
                     <li data-type="word-missing">Practice Test</li>
+                    <li data-type="cards">Cards</li>
                 </ul>
                 <input type="text" name="spell_type" class="spell_type_check rurera-hide" value="word-hunts">
             </div>
-            
-            <div class="spell-words-filters" data-spell_id="0" data-spell_type="">
-            <div class="rurera-error mb-30 rurera-hide">Select atleast 15 words to continue!</div>
-            <div class="row">
-                <div class="col-9 col-lg-9 col-md-12">
-                    <h3>Choosen Words (<span class="choosen-words">Default All Selected</span>)</h3>
-                </div>
-                <div class="col-3 col-lg-3 col-md-12">
-                    Sort By
-                    <div class="form-group">
-                        <select name="sort_by" class="sort_by_filter">
-                            <option value="alphabetically">Alphabetically</option>
-                            <option value="attempts">No of Attempts</option>
-                        </select>
-                    </div>
-                </div>
+
+            <h3 class="mt-30">Choose No of Words</h3>
+            <div class="tests-list-holder question_no_check mb-25 mt-20">
+                <a href="#." class="filter-mobile-btn">Filters</a>
+                <ul class="tests-list mb-30">
+                    <li data-type="10" class="active">10</li>
+                    <li data-type="20">20</li>
+                    <li data-type="30">30</li>
+                </ul>
+                <input type="text" name="no_of_questions" class="spell_no_of_questions_check rurera-hide" value="10">
             </div>
-            <form class="spell-quiz-form" action="#" method="POST">
+
+            <div class="spell-words-filters" data-spell_id="0" data-spell_type="">
+
+
             <input type="hidden" name="is_new" value="yes">
             {{ csrf_field() }}
-            
-            <div class="spell-words-data" id="accordion"></div>
+
             </form>
         </div>
         </div>
@@ -284,16 +282,16 @@
         }
 
     });
-	
+
 	var spellPopupRequest = null;
-	
+
 	$(document).on('click', '.spell-test-btn', function (e) {
 		var play_link = $(this).attr('data-play_link');
 		$(".spell-test-quiz-form").attr('action',play_link);
 		$(".spell-test-quiz-form").submit();
 	});
-	
-	
+
+
 	$(document).on('click', '.spell-popup-btn', function (e) {
 		var thisObj = $(this);
 		var spell_id = $(this).attr('data-spell_id');
@@ -302,7 +300,7 @@
 		var spell_type = $(this).attr('data-spell_type');
 		var play_link = $(this).attr('data-play_link');
 		$(".play-again").attr('data-href', play_link);
-			
+
 		rurera_loader(thisObj.closest(".spell-levels "), 'div');
 		//rurera_loader(thisObj, 'div');
 		$(".spell-words-filters").attr('data-spell_id', spell_id);
@@ -332,7 +330,7 @@
 		});
 
     });
-	
+
 	$(document).on('click', '.play-again', function (e) {
 		var selected_words = $('.word-block.active').length;
 		selected_words = (selected_words > 0)? selected_words : 'All';
@@ -351,21 +349,21 @@
 			$(".spell-quiz-form").submit();
 		}
     });
-	
-	
-	
+
+
+
 	var spellFilterRequest = null;
 	$(document).on('change', '.sort_by_filter', function (e) {
 		filter_words();
     });
-	
+
 	function filter_words(){
 		var sort_by = $('.sort_by_filter').val();
 		var spell_id = $(".spell-words-filters").attr('data-spell_id');
 		var spell_type = $(".spell-words-filters").attr('data-spell_type');
-		
+
 		var search_word = '';
-		
+
 
 		var thisObj = $('.spell-words-data');
 		rurera_loader(thisObj, 'div');
@@ -394,9 +392,9 @@
 			}
 		});
 	}
-	
-	
-	
+
+
+
 
 $(document).on('change', '.spell_checkbox', function (e) {
     if ($(this).is(':checked')) {
@@ -463,7 +461,15 @@ $(document).on('click', '.spell-type-check ul li', function (e) {
 	$(".spell-type-check ul li").removeClass('active');
 	$(".spell_type_check").val(spell_type);
 	$(this).addClass('active');
-	
+
+});
+
+$(document).on('click', '.question_no_check ul li', function (e) {
+    var no_of_questions = $(this).attr('data-type');
+    $(".question_no_check ul li").removeClass('active');
+    $(".spell_no_of_questions_check").val(no_of_questions);
+    $(this).addClass('active');
+
 });
 
 /*$(document).on('click', '.lms-tooltip', function (e) {
@@ -488,7 +494,7 @@ $(document).ready(function(){
   //dragArea.addClass("dragArea");
   dragArea.setAttribute('class', 'dragArea');
   document.body.appendChild(dragArea);
-  
+
 });
 
 
@@ -497,39 +503,39 @@ $(document).on("mousemove", function(event){
 	if ($(event.target).closest('.spell_words_popup').length < 1) {
 		return ;
 	}
-  if(drag){  
+  if(drag){
     var flipX = "";
-    var flipY = "";   
+    var flipY = "";
     var top = sy;
     var left = sx;
     var height = event.pageY - sy;
     var width = event.pageX - sx;
-    
+
     if((event.pageX - sx) < 0){
       flipX = "scaleX(-1)";
       width = sx - event.pageX;
       left = event.pageX;
     }
-    
+
     if((event.pageY - sy) < 0){
       flipY = "scaleY(-1)";
       height = sy - event.pageY;
       top = event.pageY;
     }
-    
+
     $(".dragArea").attr("style", "display:block; top:"+ top + "px;  left:" + left + "px; width:"+ width + "px; height: " + height + "px; transform:" + flipX + " " + flipY + ";");
 	console.log('moving');
 	console.log(event.which);
-	
+
 	ex = event.pageX;
 	ey = event.pageY;
-	  
+
 	if(ex < sx){
 		ta = ex;
 		ex = sx;
 		sx = ta;
 	  }
-		
+
 	  if(ey < sy){
 		ta = ey;
 		ey = sy;
@@ -537,27 +543,27 @@ $(document).on("mousemove", function(event){
 	  }
 	  switch (event.which) {
         case 1:
-            //Left Mouse button pressed. Check                   
+            //Left Mouse button pressed. Check
             selectItems(true);
             break;
         case 3:
-            //Right Mouse button pressed. Uncheck       
+            //Right Mouse button pressed. Uncheck
             selectItems(false);
             break;
         default:
-            //do nothing 
+            //do nothing
     }
-	
+
 	/*if ($(event.target).closest('.spell_words_popup').length < 1) {
 		return ;
 	}
-	
+
 	  drag = true;
 	  sx = event.pageX;
 	  sy = event.pageY;
 	  switch (event.which) {
 			case 1:
-				//Left Mouse button pressed.           
+				//Left Mouse button pressed.
 				$(".dragArea").addClass("add");
 				$(".dragArea").removeClass("remove");
 				break;
@@ -569,7 +575,7 @@ $(document).on("mousemove", function(event){
 			default:
 				//do nothing
 		}*/
-	
+
   }
   });
 
@@ -583,8 +589,8 @@ $( document ).on( "mousedown", function( event ) {
 	if ($(event.target).closest('.close').length > 0) {
 		return ;
 	}
-	
-	
+
+
 	if ($(event.target).closest('.spell_words_popup').length < 1) {
 		return ;
 	}
@@ -593,7 +599,7 @@ $( document ).on( "mousedown", function( event ) {
 	  sy = event.pageY;
 	  switch (event.which) {
 			case 1:
-				//Left Mouse button pressed.           
+				//Left Mouse button pressed.
 				$(".dragArea").addClass("add");
 				$(".dragArea").removeClass("remove");
 				break;
@@ -606,26 +612,26 @@ $( document ).on( "mousedown", function( event ) {
 				//do nothing
 		}
 	  $(".dragArea").attr("style", "display:block; top:"+ event.pageY + "px; left:" + event.pageX + "px; width:0; height:0;");
-  
-  
+
+
 });
 
-$( document ).on( "mouseup", function( event ) {  
+$( document ).on( "mouseup", function( event ) {
 if ($(event.target).closest('.spell_words_popup').length < 1) {
 	return ;
 }
   drag = false;
   $(".dragArea").attr("style", "display:none;");
-  
+
   ex = event.pageX;
   ey = event.pageY;
-  
+
   if(ex < sx){
     ta = ex;
     ex = sx;
     sx = ta;
   }
-    
+
   if(ey < sy){
     ta = ey;
     ey = sy;
@@ -633,15 +639,15 @@ if ($(event.target).closest('.spell_words_popup').length < 1) {
   }
   switch (event.which) {
         case 1:
-            //Left Mouse button pressed. Check                   
+            //Left Mouse button pressed. Check
             selectItems(true);
             break;
         case 3:
-            //Right Mouse button pressed. Uncheck       
+            //Right Mouse button pressed. Uncheck
             selectItems(false);
             break;
         default:
-            //do nothing 
+            //do nothing
     }
   $( ".selectedArea" ).text("X-Range: " + sx + ":" + ex + " | Y-Range: " + sy + ":" + ey);
 });
@@ -657,9 +663,9 @@ function selectItems(checked){
       if(cyLow <= sy && sy <= cyHi && cyLow <= ey && ey <= cyHi){
 		  $(this).closest('.word-block').removeClass('active');
         $(this).prop("checked", !$(this).prop("checked"));
-        
+
       }
-    }  
+    }
 	else if(sx <= cxHi && ex >= cxLow ){
       if(sy <= cyHi && ey >= cyLow){
         console.log(checked);
@@ -671,8 +677,8 @@ function selectItems(checked){
 			}
 		//$(".spell_checkbox").change();
       }
-    }	
-    
+    }
+
     //alert("X: " + position.left + " | " + "Y: " + position.top)
   });
   var selected_words = $('.word-block.active').length;
@@ -680,7 +686,7 @@ function selectItems(checked){
   var choosen_words = (selected_words > 0)? selected_words+' Choosen' : 'Default All Selected';
   $(".play-again .selected_questions").html(selected_words);
   $(".choosen-words").html(choosen_words);
-  
+
   //$(".spell_checkbox").change();
 }
     </script>
