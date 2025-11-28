@@ -157,6 +157,9 @@ shuffle($characters_list);
                                 <strong class="word-label">adept</strong>
                             </div>
                         </div>
+                        <div class="card-footer">
+                            <button type="button" class="card-flip-btn"><img src="/assets/default/svgs/bulb.svg" alt="bulb" height="30" width="30"><span>Tip: Tap card to flip</span></button>
+                        </div>
                     </div>
                 </div>
             </form>
