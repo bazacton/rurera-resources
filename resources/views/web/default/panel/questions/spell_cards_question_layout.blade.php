@@ -68,9 +68,9 @@ shuffle($characters_list);
                 <div class="words-list-holder">
                     <div class="words-list-card">
                         <div class="card-header">
-            <span class="card-icon">
-                <i>&#128360;</i>
-            </span>
+                            <span class="card-icon">
+                                <i>&#128360;</i>
+                            </span>
                             <strong class="word-label">adept</strong>
                         </div>
                         <div class="card-body">
@@ -79,66 +79,66 @@ shuffle($characters_list);
                                     <span class="pronounce-letter">a</span>
                                     <span class="pronounce-word">/a/</span>
                                     <span class="pronounce-audio">
-                        <a href="javascript:;" class="play-btn">
-                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
-                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                            <div class="player-box">
-                                <audio class="player-box-audio" id="player-phonics-379674-1" src="/phonics/a.mp3"></audio>
-                            </div>
-                        </a>
-                    </span>
+                                        <a href="javascript:;" class="play-btn">
+                                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
+                                            <div class="player-box">
+                                                <audio class="player-box-audio" id="player-phonics-379674-1" src="/phonics/a.mp3"></audio>
+                                            </div>
+                                        </a>
+                                    </span>
                                 </div>
                                 <div class="word-char">
                                     <span class="pronounce-letter">b</span>
                                     <span class="pronounce-word">/b/</span>
                                     <span class="pronounce-audio">
-                        <a href="javascript:;" class="play-btn">
-                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
-                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                            <div class="player-box">
-                                    <audio class="player-box-audio" id="player-phonics-379674-2" src="/phonics/b.mp3"></audio>
-                            </div>
-                        </a>
-                    </span>
+                                        <a href="javascript:;" class="play-btn">
+                                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
+                                            <div class="player-box">
+                                                    <audio class="player-box-audio" id="player-phonics-379674-2" src="/phonics/b.mp3"></audio>
+                                            </div>
+                                        </a>
+                                    </span>
                                 </div>
                                 <div class="word-char">
                                     <span class="pronounce-letter">a</span>
                                     <span class="pronounce-word">/a/</span>
                                     <span class="pronounce-audio">
-                        <a href="javascript:;" class="play-btn">
-                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
-                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                            <div class="player-box">
-                                <audio class="player-box-audio" id="player-phonics-379674-3" src="/phonics/a.mp3"></audio>
-                            </div>
-                        </a>
-                    </span>
+                                        <a href="javascript:;" class="play-btn">
+                                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
+                                            <div class="player-box">
+                                                <audio class="player-box-audio" id="player-phonics-379674-3" src="/phonics/a.mp3"></audio>
+                                            </div>
+                                        </a>
+                                    </span>
                                 </div>
                                 <div class="word-char">
                                     <span class="pronounce-letter">t</span>
                                     <span class="pronounce-word">/ch/</span>
                                     <span class="pronounce-audio">
-                        <a href="javascript:;" class="play-btn">
-                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
-                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                            <div class="player-box">
-                                <audio class="player-box-audio" id="player-phonics-379674-4" src="/phonics/ch.mp3"></audio>
-                            </div>
-                        </a>
-                    </span>
+                                        <a href="javascript:;" class="play-btn">
+                                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
+                                            <div class="player-box">
+                                                <audio class="player-box-audio" id="player-phonics-379674-4" src="/phonics/ch.mp3"></audio>
+                                            </div>
+                                        </a>
+                                    </span>
                                 </div>
                                 <div class="word-char">
                                     <span class="pronounce-letter">e</span>
                                     <span class="pronounce-word">/e/</span>
                                     <span class="pronounce-audio">
-                        <a href="javascript:;" class="play-btn">
-                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
-                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
-                            <div class="player-box">
-                                <audio class="player-box-audio" id="player-phonics-379674-5" src="/phonics/e.mp3"></audio>
-                            </div>
-                        </a>
-                    </span>
+                                        <a href="javascript:;" class="play-btn">
+                                            <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                                            <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
+                                            <div class="player-box">
+                                                <audio class="player-box-audio" id="player-phonics-379674-5" src="/phonics/e.mp3"></audio>
+                                            </div>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                             <h5>Sentence</h5>
