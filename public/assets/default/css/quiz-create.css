@@ -524,6 +524,10 @@ body .spell-question-area .question-label span {text-align: center;}
 .spells-quiz-from.question-layout.row {margin-left: 0; margin-right: 0;}
 /*Spell Listing page Style End*/
 /*Words Flip Card Listing Style Start*/
+.words-list-holder {
+    text-align: center;
+    position: relative;
+}
 .words-list-card {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -537,9 +541,6 @@ body .spell-question-area .question-label span {text-align: center;}
     transform: translateX(-50%);
     min-width: 500px;
     opacity: 0;
-}
-.words-list-holder {
-    text-align: center;
 }
 .words-list-card .card-header,
 .words-list-card .card-body .word-icon {
