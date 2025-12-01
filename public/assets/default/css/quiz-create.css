@@ -589,6 +589,18 @@ body .spell-question-area .question-label span {text-align: center;}
 .words-list-card .card-footer {
     margin-top: auto;
 }
+.words-list-card .card-number {
+    background-color: #ccc;
+    display: inline-flex;
+    min-width: 35px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
 /*Words Flip Card Listing Style End*/
 /* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style End */
 
