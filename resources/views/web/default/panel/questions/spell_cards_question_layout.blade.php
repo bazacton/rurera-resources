@@ -391,7 +391,7 @@ shuffle($characters_list);
         });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
 
     const cards = document.querySelectorAll(".words-list-card");
 
@@ -401,22 +401,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Flip forward (open) on clicking card-flip-btn
-    document.querySelectorAll(".card-flip-btn").forEach(btn => {
-        btn.addEventListener("click", function () {
-            const card = this.closest(".words-list-card");
-            card.classList.add("flipped");
-        });
+    $(".card-flip-btn").on("click", function () {
+        const card = this.closest(".words-list-card");
+        card.classList.add("flipped");
     });
 
     // Flip backward (close) on clicking back-btn
-    document.querySelectorAll(".back-btn").forEach(btn => {
-        btn.addEventListener("click", function () {
-            const card = this.closest(".words-list-card");
-            card.classList.remove("flipped");
-        });
+    $(".back-btn").on("click", function () {
+        const card = this.closest(".words-list-card");
+        card.classList.remove("flipped");
     });
 
 });
+
 </script>
 
 
