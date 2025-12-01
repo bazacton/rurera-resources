@@ -581,6 +581,9 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .words-list-card.card-flip .card-header {
     width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 .words-list-card.card-flip .card-body {
     width: 100%;
