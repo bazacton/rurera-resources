@@ -593,6 +593,10 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .words-list-card .card-footer {
     margin-top: auto;
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+    width: 100%;
 }
 .words-list-card .card-number {
     background-color: #ccc;
@@ -605,6 +609,21 @@ body .spell-question-area .question-label span {text-align: center;}
     color: #fff;
     font-weight: 500;
     font-size: 18px;
+}
+.words-list-card .card-flip-btn {
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.words-list-card .card-flip-btn img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
 }
 /*Words Flip Card Listing Style End*/
 /* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style End */
