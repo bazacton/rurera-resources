@@ -535,14 +535,16 @@ body .spell-question-area .question-label span {text-align: center;}
 .words-list-holder {
     text-align: center;
 }
-.words-list-card .card-header {
+.words-list-card .card-header,
+.words-list-card .card-body .word-icon {
     padding: 0;
     border: 0;
     background-color: inherit;
     display: flex;
     flex-direction: column;
 }
-.words-list-card .card-header i {
+.words-list-card .card-header i,
+.words-list-card .card-body .word-icon i{
     font-style: normal;
     display: inline-block;
     transform: scale(-1);
