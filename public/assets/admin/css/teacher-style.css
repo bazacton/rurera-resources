@@ -8127,6 +8127,9 @@ button.print-download-btn {
     .analytics-form .radio-buttons .card-radio {
         width: 31%;
     }
+    .admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user:after {
+        right: 5px;
+    }
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}
