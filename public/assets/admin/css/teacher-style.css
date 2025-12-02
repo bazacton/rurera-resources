@@ -8188,7 +8188,8 @@ button.print-download-btn {
         padding-right: 15px;
         gap: 10px;
     }
-    .admin_teacher_role .section .section-header .teacher-search-filter {
+    .admin_teacher_role .section .section-header .teacher-search-filter,
+    .teacher-table .card .card-header .teacher-search-filter {
         margin-left: 0 !important;
     }
 }
