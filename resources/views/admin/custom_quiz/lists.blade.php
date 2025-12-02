@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-12 col-md-12">
                     <section class="card mb-0">
-                        <div class="card-body">
+                        <div class="card-body p-0">
                             <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="mb-0">
                                 <div class="rurera-search-filters row">
                                     <div class="col-md-2">
@@ -147,7 +147,7 @@
                         </div>
                     </section>
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body p-0">
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
                                     <tr>
