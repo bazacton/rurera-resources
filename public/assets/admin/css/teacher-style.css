@@ -581,6 +581,14 @@ button.member-selected-btn {
 .card-body form .rurera-search-filters .form-group select.form-control {
     border: 0;
 }
+.multi-selection-dropdown .ct-input-wrapper {
+    border-radius: 10px;
+    border-style: dashed;
+}
+.multi-selection-dropdown .ct-input-wrapper .ct-input-box {
+    border-radius: 10px;
+    height: 33px;
+}
 .school-membership-holder {
     display: inline-flex;
     align-items: center;
