@@ -42,7 +42,7 @@
 
                     @foreach( $studentsRequests as $studentsRequestObj)
                             <div class="col-12 col-lg-12 students-requests-list-item">
-                                <div class="notification-card rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-40 mt-20">
+                                <div class="notification-card rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-20 mt-20">
                                     <div class="row align-items-center">
                                         <div class="col-12 col-lg-3 mt-10 mt-lg-0 d-flex align-items-start">
                                             <span class="notification-badge badge badge-circle-danger mr-5 mt-5 d-flex align-items-center justify-content-center"></span>
