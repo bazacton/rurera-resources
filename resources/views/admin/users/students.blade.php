@@ -25,7 +25,7 @@
 
         <div class="teacher-listing">
 
-            <div class="row w-100">
+            <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="admin-rurera-tabs-holder">
                         <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
