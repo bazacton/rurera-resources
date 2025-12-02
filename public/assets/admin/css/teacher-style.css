@@ -8120,6 +8120,10 @@ button.print-download-btn {
         padding-top: 80px;
         padding-right: 0;
     }
+    .assignments-table .pending-invites-controls {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}
