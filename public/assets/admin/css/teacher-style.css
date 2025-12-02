@@ -8192,4 +8192,7 @@ button.print-download-btn {
     .teacher-table .card .card-header .teacher-search-filter {
         margin-left: 0 !important;
     }
+    .teacher-table .card .card-header {
+        margin-bottom: 15px;
+    }
 }
