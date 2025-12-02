@@ -409,7 +409,7 @@ button.member-selected-btn {
 .admin_teacher_role .classes-card .card-title,
 .admin_teacher_role .classes-card .card-body p {margin-bottom: 0;}
 .admin_teacher_role .classes-card .card-body {
-    padding: 20px;
+    padding: 20px !important;
 }
 .admin_teacher_role .classes-card .card-title {
     font-size: 16px;
