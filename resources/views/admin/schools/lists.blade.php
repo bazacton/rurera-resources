@@ -39,7 +39,7 @@
     </div>
 
 
-    <div class="section-body">
+    <div class="section-body p-0">
 
         <section class="card rurera-hide">
             <div class="card-body">
