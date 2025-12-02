@@ -114,7 +114,7 @@
                                                             <span>{{isset($joiningRequestObj->student->userClass->id)? $joiningRequestObj->student->userClass->title : '-'}}</span>
                                                         </div>
                                                     </td>
-                                                    <td>
+                                                    <td data-th="Actions">
                                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                             <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
                                                                 <i class="fa fa-check"></i>
