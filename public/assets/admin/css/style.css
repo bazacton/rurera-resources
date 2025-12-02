@@ -1029,6 +1029,14 @@ pre {border-radius: 3px;}
     .section .section-header .float-right {display: inline-block; width: 100%; margin-top: 15px;}
     .section .section-header .section-header-breadcrumb {flex-basis: 100%; margin-top: 10px;}
     .admin_teacher_role .section .section-header .text-right.ml-auto {margin: 10px 0 0 !important;}
+    .admin_teacher_role .admin-rurera-tabs {
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .admin_teacher_role .admin-rurera-tabs li {
+        margin-right: 0;
+    }
 }
 
 /* 4.3 Page */
