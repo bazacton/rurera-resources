@@ -8195,4 +8195,10 @@ button.print-download-btn {
     .teacher-table .card .card-header {
         margin-bottom: 15px;
     }
+    .form-group:has(.classes_filter),
+    .teacher-search-filter,
+    .teacher-search-filter .search-field {
+        margin-left: 0;
+        width: 100%;
+    }
 }
