@@ -8152,9 +8152,13 @@ button.print-download-btn {
     .admin_teacher_role .navbar .average-grade-dropdown .nav-link.nav-link-user:after {
         right: 5px;
     }
+    .section-body .row:has(.classes-card) {
+        margin: 0;
+    }
     .admin_teacher_role .classes-card {
         width: 100%;
         flex: 0 0 100%;
+        margin: 0 0 15px !important;
     }
 }
 @media screen and (max-width: 576px) {
