@@ -141,7 +141,7 @@
                                             {{ dateTimeFormat($schoolData->created_at, 'j M y | H:i') }}
                                         </div>
                                     </td>
-                                    <td>
+                                    <td data-th="Actions">
                                         @if($schoolData->id != $userObj->school_id)
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <div class="quiz-table-controls">
