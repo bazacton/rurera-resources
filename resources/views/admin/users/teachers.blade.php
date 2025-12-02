@@ -73,9 +73,9 @@
                                     </div>
                                     <div class="teacher-search-filter border-0 p-0">
                                         <div class="search-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/search.svg" alt="search">
-                                    </span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/search.svg" alt="search">
+                                            </span>
                                             <input type="text" class="search-teachers" placeholder="Search Teachers">
                                         </div>
                                     </div>
@@ -153,7 +153,7 @@
                                                         <span>{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</span>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <td data-th="Actions">
                                                 <div class="pending-invites-controls">
                                                     @if(!auth()->user()->isTeacherPanel())
                                                         <button class="teacher-edit-modal" data-id="{{$user->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Edit Teacher">
