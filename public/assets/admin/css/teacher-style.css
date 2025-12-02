@@ -409,7 +409,7 @@ button.member-selected-btn {
 .admin_teacher_role .classes-card .card-title,
 .admin_teacher_role .classes-card .card-body p {margin-bottom: 0;}
 .admin_teacher_role .classes-card .card-body {
-    padding: 20px !important;
+    padding: 20px;
 }
 .admin_teacher_role .classes-card .card-title {
     font-size: 16px;
@@ -473,7 +473,7 @@ button.member-selected-btn {
     padding: 0 !important;
     box-shadow: none;
 }
-.admin_teacher_role .card-body {
+.admin_teacher_role .assignments-table .card-body {
     padding: 0 !important;
 }
 .admin_teacher_role table.table {
