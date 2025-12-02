@@ -8119,6 +8119,11 @@ button.print-download-btn {
     .document-modal:has(.document-right-sidebar.active) .document-content {padding-right: 15px;}
     .document-pdf {height: auto; width: 100%;}
     .rureraform-search-field .input-field {width: 100%;}
+    .rureraform-search-field .search-filters,
+    .rureraform-search-field:has(.search-filters) .input-field {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
     .document-content {padding: 25px 10px 0;}
     .student-other-info span {width: 47%;}
     .question-content-header {padding-left: 15px;}
@@ -8204,10 +8209,5 @@ button.print-download-btn {
     }
     .teacher-table .card .card-header .teacher-search-filter-holder {
         flex-wrap: wrap;
-    }
-    .rureraform-search-field .search-filters,
-    .rureraform-search-field:has(.search-filters) .input-field {
-        max-width: 100%;
-        flex: 0 0 100%;
     }
 }
