@@ -578,7 +578,9 @@ button.member-selected-btn {
 .card-body form .rurera-search-filters .select2-container--default .select2-selection--single .select2-selection__rendered {
     padding-right: 15px;
 }
-
+.card-body form .rurera-search-filters .form-group select.form-control {
+    border: 0;
+}
 .school-membership-holder {
     display: inline-flex;
     align-items: center;
