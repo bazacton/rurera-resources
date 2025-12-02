@@ -8116,6 +8116,9 @@ button.print-download-btn {
     .admin_teacher_role .navbar .nav-link.nav-link-user {
         padding-right: 0 !important;
     }
+    .admin_teacher_role .main-content {
+        padding-top: 80px;
+    }
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}
