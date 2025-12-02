@@ -564,7 +564,7 @@ button.member-selected-btn {
     max-width: 120px;
 }
 .rurera-search-filters input.form-control,
-.rurera-search-filters .input-field input.form-control {
+body .rurera-search-filters .input-field input.form-control {
     height: 32px;
     background-color: inherit;
     width: auto;
