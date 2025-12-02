@@ -474,7 +474,7 @@ button.member-selected-btn {
     box-shadow: none;
 }
 .admin_teacher_role .card-body {
-    padding: 0;
+    padding: 0 !important;
 }
 .admin_teacher_role table.table {
     border: 1px solid #cad5e2;
