@@ -585,6 +585,9 @@ button.member-selected-btn {
     border-radius: 10px;
     border-style: dashed;
 }
+.multi-selection-dropdown .ct-arrow-btn {
+    border-left-style: dashed;
+}
 .multi-selection-dropdown .ct-input-wrapper .ct-input-box {
     border-radius: 10px;
     height: 33px;
