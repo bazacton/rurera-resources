@@ -8118,6 +8118,7 @@ button.print-download-btn {
     }
     .admin_teacher_role .main-content {
         padding-top: 80px;
+        padding-right: 0;
     }
 }
 @media screen and (max-width: 576px) {
