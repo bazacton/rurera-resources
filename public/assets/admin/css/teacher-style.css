@@ -8202,4 +8202,7 @@ button.print-download-btn {
         width: 100%;
         justify-content: flex-start;
     }
+    .teacher-table .card .card-header .teacher-search-filter-holder {
+        flex-wrap: wrap;
+    }
 }
