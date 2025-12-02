@@ -464,7 +464,8 @@ table tr:hover .table-links {opacity: 1;}
 .quiz-table-controls .btn-sm {background-color: #fff; border: 1px solid #007bff; padding: 6px 10px; border-radius: 5px; height: 30px; vertical-align: middle; display: inline-flex; align-items: center; gap: 8px; color: var(--blue);}
 .quiz-table-controls .btn-sm img {height: 15px; width: 15px; filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);}
 .quiz-table-controls {opacity: 0; visibility: visible; display: flex; align-items: center; gap: 8px; justify-content: flex-end;}
-.table-responsive table tbody tr:hover .quiz-table-controls {opacity: 1; visibility: visible;}
+.table-responsive table tbody tr:hover .quiz-table-controls,
+.table-sm table tbody tr:hover .quiz-table-controls {opacity: 1; visibility: visible;}
 .quiz-table-controls .btn-sm {color: var(--blue) !important;}
 
 @media (max-width: 575.98px) {
