@@ -8105,6 +8105,9 @@ button.print-download-btn {
     .table-sm table.table tbody tr div:has(.deadline-date) {
         text-align: right;
     }
+    .table-sm table.table tbody tr td .user-thumbs {
+        padding-right: 10px;
+    }
 }
 
 @media screen and (max-width: 767px) {
