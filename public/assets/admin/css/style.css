@@ -1024,10 +1024,11 @@ pre {border-radius: 3px;}
 
 @media (max-width: 575.98px) {
     .section .section-title {font-size: 14px;}
-    .section .section-header {flex-wrap: wrap; margin-bottom: 20px !important;}
+    .section .section-header {flex-wrap: wrap; margin-bottom: 20px !important; padding-bottom: 0;}
     .section .section-header h1 {font-size: 18px;}
     .section .section-header .float-right {display: inline-block; width: 100%; margin-top: 15px;}
     .section .section-header .section-header-breadcrumb {flex-basis: 100%; margin-top: 10px;}
+    .admin_teacher_role .section .section-header .text-right.ml-auto {margin: 10px 0 0 !important;}
 }
 
 /* 4.3 Page */
