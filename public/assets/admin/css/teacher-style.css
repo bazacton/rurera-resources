@@ -501,6 +501,9 @@ button.member-selected-btn {
     font-weight: 500;
     font-size: 14px;
 }
+.table-sm table.table tbody tr td .deadline-date {
+    color: red;
+}
 .admin_teacher_role .table:not(.table-sm):not(.table-md):not(.dataTable) tr:last-child td {
     border-bottom: 0;
 }
@@ -8099,6 +8102,9 @@ button.print-download-btn {
     .table-sm table.table tbody tr td:before {content: attr(data-th); color: #333; font-weight: 600;}
     .table-sm table.table tbody tr td.hide-lg {display: flex;}
     .table-sm table.table tbody tr td.hide-sm {display: none;}
+    .table-sm table.table tbody tr div:has(.deadline-date) {
+        text-align: right;
+    }
 }
 
 @media screen and (max-width: 767px) {
