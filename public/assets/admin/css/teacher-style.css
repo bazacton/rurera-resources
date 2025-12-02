@@ -8124,6 +8124,9 @@ button.print-download-btn {
         visibility: visible;
         opacity: 1;
     }
+    .analytics-form .radio-buttons .card-radio {
+        width: 31%;
+    }
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}
