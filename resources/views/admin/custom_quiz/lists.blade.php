@@ -147,9 +147,9 @@
                         </div>
                     </section>
                     <div class="card">
-                        <div class="card-body p-0">
-                            <div class="table-responsive">
-                                <table class="table table-striped font-14">
+                        <div class="card-body table-sm p-0">
+                            <table class="table table-striped font-14">
+                                <thead class="thead-light">
                                     <tr>
                                         <th class="text-left">
                                         {{ trans('admin/main.title') }}
@@ -167,10 +167,12 @@
                                         <!--{{ trans('admin/main.actions') }}-->
                                         </th>
                                     </tr>
-
+                                </thead>
+                                
+                                <tbody>
                                     @foreach($quizzes as $quiz)
                                     <tr>
-                                        <td>
+                                        <td data-th="{{ trans('admin/main.title') }}">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <span>{{ $quiz->title }}</span>
                                                 @if(isset($quiz->quizYear->id))
@@ -184,11 +186,11 @@
 
 
 
-                                        <td class="text-center">
+                                        <td data-th="{{ trans('admin/main.question_count') }}" class="text-center">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->quizQuestionsList->count() }}</div>
                                         </td>
 
-                                        <td class="text-center">
+                                        <td data-th="{{ trans('admin/main.status') }}" class="text-center">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 @if($quiz->status === \App\Models\Quiz::ACTIVE)
                                                 <span class="text-success">{{ trans('admin/main.active') }}</span>
@@ -197,16 +199,16 @@
                                                 @endif
                                             </div>
                                         </td>
-                                        <td class="text-left">
+                                        <td data-th="Visibility" class="text-left">
                                             -
                                         </td>
-                                        <td class="text-left">
+                                        <td data-th="Created At" class="text-left">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{($quiz->created_at > 0)? dateTimeFormat($quiz->created_at, 'j M y') : '-'}}</div>
                                         </td>
-                                        <td class="text-left">
+                                        <td data-th="Created By" class="text-left">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ isset($quiz->creator->id)?$quiz->creator->get_full_name() : '' }}</div>
                                         </td>
-                                        <td>
+                                        <td data-th="Actions">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <div class="quiz-table-controls">
                                                     @can('admin_quizzes_results')
@@ -234,9 +236,9 @@
                                         </td>
                                     </tr>
                                     @endforeach
-
-                                </table>
-                            </div>
+                                </tbody>
+                                
+                            </table>
                         </div>
                         <div class="card-footer text-center">
                             {{ $quizzes->appends(request()->input())->links() }}
