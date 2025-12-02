@@ -43,7 +43,7 @@
         </div>
         <div class="section-body">
             <section class="card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0 skelton-hide">
                         <div class="col-md-2">
                             <div class="form-group skelton-hide skelton-height-lg">
@@ -161,7 +161,7 @@
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body p-0">
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
                                     <tr>
