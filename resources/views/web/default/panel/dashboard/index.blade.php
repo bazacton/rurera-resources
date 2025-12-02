@@ -311,7 +311,7 @@
 					<div class="row g-3 list-unstyled students-requests-list">
 						@foreach( $continueTests as $resultObj)
 							<div class="col-12 col-lg-12 students-requests-list-item">
-								<div class="notification-card mb-20 rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-40">
+								<div class="notification-card mb-20 rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-20">
 									<div class="row align-items-center">
 										<div class="col-12 col-lg-9 mt-10 mt-lg-0 d-flex align-items-start">
 											<span class="notification-badge badge mr-10 mt-5 d-flex align-items-center justify-content-center"></span>
@@ -338,7 +338,7 @@
 						@endphp
 
 						<div class="col-12 col-lg-12 students-requests-list-item">
-							<div class="notification-card mb-20 rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-40">
+							<div class="notification-card mb-20 rounded-sm panel-shadow bg-white py-15 py-lg-20 px-15 px-lg-20">
 								<div class="row align-items-center">
 									<div class="col-12 col-lg-9 mt-10 mt-lg-0 d-flex align-items-start">
 										<span class="notification-badge badge mr-10 mt-5 d-flex align-items-center justify-content-center"></span>
