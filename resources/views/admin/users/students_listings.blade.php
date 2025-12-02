@@ -127,7 +127,7 @@
                                     <span>{{$studentObj->userClass->title}}</span>
                                 </div>
                             </td>
-                            <td>
+                            <td data-th="Actions">
                                 @if($studentObj->google_class_id == 0)
                                 <div class="pending-invites-controls">
                                     <a title="Print Student" href="/admin/students/print_details?users={{$studentObj->id}}" target="_blank">
