@@ -39,10 +39,10 @@
     </div>
 
 
-    <div class="section-body p-0">
+    <div class="section-body">
 
         <section class="card rurera-hide">
-            <div class="card-body">
+            <div class="card-body p-0">
                 <form action="/admin/schools" method="get" class="row mb-0">
                     <div class="col-md-4">
                         <div class="form-group">
