@@ -76,7 +76,7 @@
             <div class="col-12 col-md-12">
                 <div class="card">
                     <div class="card-body p-0">
-                        <div class="table-responsive">
+                        <div class="table-sm">
                             <table class="table table-striped font-14">
                                 <tr>
                                     <th class="text-left">{{ trans('admin/main.title') }}</th>
@@ -88,34 +88,34 @@
                                     @endif
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
-                                     <th><!--{{ trans('admin/main.actions') }}--></th>
+                                    <th><!--{{ trans('admin/main.actions') }}--></th>
                                 </tr>
 
                                 @if($schools->count() > 0)
                                 @foreach($schools as $schoolData)
                                 <tr>
-                                    <td>
+                                    <td data-th="{{ trans('admin/main.title') }}">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span><a href="/admin/schools/{{$schoolData->id}}/edit">{{ $schoolData->title }}</a></span>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td data-th="No of Classes">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span>{{ $schoolData->schoolClasses->count() }}</span>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td data-th="No of Faculty">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span>{{ $schoolData->teachers->count() }}</span>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td data-th="No of Students">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span>{{ $schoolData->students->count() }}</span>
                                         </div>
                                     </td>
                                     @if($userObj->isAdminRole())
-                                        <td class="text-left">
+                                        <td data-th="Membership" class="text-left">
                                             <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 @if(isset($schoolData->schoolSubscriptions->id))
                                                     {{$schoolData->schoolSubscriptions->subscribe->title}}
@@ -129,12 +129,12 @@
                                             </div>
                                         </td>
                                     @endif
-                                    <td class="text-left">
+                                    <td data-th="Added by" class="text-left">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             {{ $schoolData->user->get_full_name() }}
                                         </div>
                                     </td>
-                                    <td class="text-left">
+                                    <td data-th="Added Date" class="text-left">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             {{ dateTimeFormat($schoolData->created_at, 'j M y | H:i') }}
                                         </div>
