@@ -8100,6 +8100,22 @@ button.print-download-btn {
     .student-other-info span {width: 47%;}
     .question-content-header {padding-left: 15px;}
     .admin-rurera-tabs-billing .card .card-body p {width: 100%;}
+    .admin_teacher_role .navbar {
+        left: 0;
+        padding-left: 0;
+    }
+    .dropdown.average-grade-dropdown {
+        margin-right: 0;
+        padding: 5px 8px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+    .average-grade-dropdown .nav-link.nav-link-lg div {
+        margin: 0;
+        display: inline-block;
+    }
+    .admin_teacher_role .navbar .nav-link.nav-link-user {
+        padding-right: 0 !important;
+    }
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}
