@@ -7,7 +7,7 @@
 
     <div class="section-body skeleton">
         <section class="section">
-            <div class="section-header">
+            <div class="section-header pr-0">
                 <div class="heading-holder">
                     <h1>Students {{ trans('admin/main.list') }}</h1>
                     <div class="section-header-breadcrumb">
