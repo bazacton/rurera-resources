@@ -8193,12 +8193,13 @@ button.print-download-btn {
         margin-left: 0 !important;
     }
     .teacher-table .card .card-header {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .form-group:has(.classes_filter),
     .teacher-search-filter,
     .teacher-search-filter .search-field {
         margin-left: 0;
         width: 100%;
+        justify-content: flex-start;
     }
 }
