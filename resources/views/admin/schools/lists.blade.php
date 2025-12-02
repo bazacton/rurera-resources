@@ -6,7 +6,7 @@
 
 @section('content')
 <section class="section skeleton">
-    <div class="section-header">
+    <div class="section-header pr-0">
         <div class="heading-holder">
             <h1>Schools</h1>
             <div class="section-header-breadcrumb">
