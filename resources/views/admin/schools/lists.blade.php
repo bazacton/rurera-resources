@@ -42,7 +42,7 @@
     <div class="section-body">
 
         <section class="card rurera-hide">
-            <div class="card-body p-0">
+            <div class="card-body">
                 <form action="/admin/schools" method="get" class="row mb-0">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
