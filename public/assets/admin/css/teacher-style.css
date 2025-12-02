@@ -8124,6 +8124,9 @@ button.print-download-btn {
         max-width: 100%;
         flex: 0 0 100%;
     }
+    .rureraform-search-field:has(.search-filters) {
+        flex-wrap: wrap;
+    }
     .document-content {padding: 25px 10px 0;}
     .student-other-info span {width: 47%;}
     .question-content-header {padding-left: 15px;}
