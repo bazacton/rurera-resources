@@ -8205,4 +8205,9 @@ button.print-download-btn {
     .teacher-table .card .card-header .teacher-search-filter-holder {
         flex-wrap: wrap;
     }
+    .rureraform-search-field .search-filters,
+    .rureraform-search-field:has(.search-filters) .input-field {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
