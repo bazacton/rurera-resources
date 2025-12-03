@@ -4145,6 +4145,10 @@
     .login-holder h2.font-24 {
         font-size: 1.5rem !important
     }
+    .spells-quiz-from .rurera-in-row .field-holder, 
+    .spells-quiz-from .rurera-in-row .form-field {
+        width: 31.555%;
+    }
 }
 
 @media screen and (max-width:640px) {
