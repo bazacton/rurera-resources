@@ -2217,5 +2217,21 @@ Quiz Check Answers Page Style End
     .preview-question-area {
         padding-right: 0;
     }
+    .spells-quiz-from .rurera-in-row .field-holder, 
+    .spells-quiz-from .rurera-in-row .form-field {
+        width: 31.555%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .spells-quiz-from .rurera-in-row .field-holder, 
+    .spells-quiz-from .rurera-in-row .form-field {
+        width: 48.555%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .spells-quiz-from .rurera-in-row .field-holder, 
+    .spells-quiz-from .rurera-in-row .form-field {
+        width: 100%;
+    }
 }
 /* Review Question Right Side Style End */
