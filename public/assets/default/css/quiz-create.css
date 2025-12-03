@@ -2233,5 +2233,9 @@ Quiz Check Answers Page Style End
     .spells-quiz-from .rurera-in-row .form-field {
         width: 100%;
     }
+    .droppable-characters li{
+        padding: 10px 15px;
+        min-width: 30px;
+    }
 }
 /* Review Question Right Side Style End */
