@@ -813,7 +813,7 @@ Lms Table Style End
 /*.rurera-in-row .form-field {width: 31.555%;}*/
 .spells-quiz-from .lms-radio-select.rurera-in-row {align-items: center; justify-content: center; padding: 15px 15px 0;}
 .spells-quiz-from .rurera-in-row .field-holder,
-.spells-quiz-from .rurera-in-row .form-field {width: 20%;}
+.spells-quiz-from .rurera-in-row .form-field {width: 20%; margin-bottom: 0; padding: 0;}
 /*Field row style end*/
 
 /*Field row with image style start*/
