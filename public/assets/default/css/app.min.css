@@ -1436,7 +1436,11 @@ nav li {
 .login-password input[type="number"] {
     -webkit-text-security: disc;
 }
-
+.login-password input[type="number"]::-webkit-outer-spin-button,
+.login-password input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .login-card .login-option {
     display: inline-flex;
     width: 100%;
