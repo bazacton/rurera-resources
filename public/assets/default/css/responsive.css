@@ -1337,7 +1337,6 @@ Lms Responsive Style Start
 
 }
 @media screen and (max-width: 575px) {
-    .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
     .spell-question-area .question-label {padding: 15px 15px 25px;} 
     .lms-service-section {margin-top: 80px !important;}
     .lms-text-section .lms-text-holder h2 {font-size: 1.5rem !important; margin-bottom: 10px !important; line-height: 32px;}
