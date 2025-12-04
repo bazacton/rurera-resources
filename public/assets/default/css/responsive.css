@@ -406,7 +406,7 @@ Lms Responsive Style Start
     .db-members .rurera-tabs-frontend li {font-size: 14px !important; padding: 5px 10px;}
     body #progbar {margin-top: 0;}
     .container-fluid.read-quiz-content .quiz-status-bar {padding-top: 30px;}
-    .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 10px;}
+    .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 10px; margin-left: 10px;}
     .read-quiz-content .spell-quiz-page.pt-50 .quiz-status-bar {
         margin-top: 0;
         padding-top: 0;
