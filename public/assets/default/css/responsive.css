@@ -407,6 +407,10 @@ Lms Responsive Style Start
     body #progbar {margin-top: 0;}
     .container-fluid.read-quiz-content .quiz-status-bar {padding-top: 30px;}
     .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 10px;}
+    .read-quiz-content .spell-quiz-page.pt-50 .quiz-status-bar {
+        margin-top: 0;
+        padding-top: 0;
+    }
     .db-members .rurera-tabs-frontend {margin-bottom: 0;}
     body .learning-page.type-sats .left-content {height: auto; overflow: visible;}
     body .populated-data .questions-select-number li {flex-basis: 31%;}
@@ -1458,6 +1462,9 @@ Lms Responsive Style Start
     .virtual-keyboard .row {gap: 5px 2px; flex-wrap: nowrap;}
     .virtual-keyboard .row.spacebar input {min-width: 230px; margin-top: 5px;}
     .spell-quiz-page table[id*='word-search-'] td {font-size: 12px;height: 20px;}
+    .spell-question-area .spells-quiz-from {
+        padding-bottom: 80px;
+    }
     .stats-list ul {align-items: flex-start;}
     .stats-list ul li,
     .stats-list ul li, .lms-chapter-area .stats-list ul li {padding: 0 0 0 15px; margin-right: 15px; margin-left: 0;}
