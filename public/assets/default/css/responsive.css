@@ -1335,6 +1335,8 @@ Lms Responsive Style Start
     body .emoji-icons {gap: 5px;}
     body .emoji-icons .emoji-icon {height: 20px; width: 20px; margin: 0 5px;}
     body .profile-inner {padding: 15px;}
+    .quiz-questions-bar-holder .value-lable {margin-left: -36px;}
+    .question-area-block .quiz-status-bar {padding-left: 15px;}
 
 }
 @media screen and (max-width: 575px) {
