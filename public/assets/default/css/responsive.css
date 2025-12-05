@@ -1175,8 +1175,9 @@ Lms Responsive Style Start
     .level-stage {overflow: hidden;}
     .activities-container .row {gap: 15px 0;}
     .section-title.font-24,
-    .login-holder h2.font-24 {font-size: 1.5rem !important;}
+    .login-holder h2.font-24 {font-size: 1.5rem !important;} 
     .learning-start-box .learning-content-box-icon {margin-top: 30px;}
+    .admin_teacher_role .pagination {flex-wrap: wrap; padding: 10px 0;}
 }
 
 @media screen and (max-width: 640px) {
