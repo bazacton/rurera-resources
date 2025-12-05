@@ -632,7 +632,7 @@
                 </div>
             </div>
         </div>
-        <script>
+        <!-- <script>
             $( window ).on( "load", function() {
                 if(jQuery('.listings-card .swiper-container').length > 0){
                 const swiper = new Swiper(".listings-card .swiper-container", {
@@ -663,7 +663,7 @@
                 });
               }
             });
-        </script>
+        </script> -->
     </section>
     <section class="page-section py-60 no-challeng-sec hide-sec" style="background-color:#333">
         <div class="container">
