@@ -1511,7 +1511,7 @@ Lms Responsive Style Start
     .leave-option-control button {width: 100%;}
     .leave-option-control {flex-wrap: wrap;}
     .analytics-dropdown select {background-position: 98% 50%;}
-    .sats-listing-card.medium table h4 img {top: -2px; right: 0; max-width: 30px; transform: none; margin-right: 0;}
+    .sats-listing-card.medium table h4 img {top: -2px; right: 0; max-width: 50px; transform: none; margin-right: 0;}
     .emoji-passwords {gap: 10px;}
     .emoji-passwords .is_empty {height: 35px; width: 35px;}
     .login-with-emoji form {padding: 20px 0 25px;}
