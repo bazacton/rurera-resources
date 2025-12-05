@@ -733,7 +733,7 @@ Lms Responsive Style Start
     .panel-morehelp .contact-btn p {width: calc(100% - 40px);}
     .heatmap-section-inner {padding: 15px;}
     .sats-listing-card table:not(thead) td {text-align: left;}
-    .sats-listing-card table:not(thead) td h4 {font-size: 1rem !important; line-height: normal;}
+    .sats-listing-card table:not(thead) td h4 {font-size: 1rem !important; line-height: normal; padding-right: 30px;}
     .sats-listing-card table:not(thead) td h4 a {display: block; margin: 0 0 8px;}
     .sats-listing-card table:not(thead) td h4 br {display: none;}
     .sats-listing-card table:not(thead) td img {margin: 0 10px 0 0; vertical-align: top;}
@@ -1511,7 +1511,7 @@ Lms Responsive Style Start
     .leave-option-control button {width: 100%;}
     .leave-option-control {flex-wrap: wrap;}
     .analytics-dropdown select {background-position: 98% 50%;}
-    .sats-listing-card.medium table h4 img {top: -2px; right: 0; max-width: 30px; transform: none;}
+    .sats-listing-card.medium table h4 img {top: -2px; right: 0; max-width: 30px; transform: none; margin-right: 0;}
     .emoji-passwords {gap: 10px;}
     .emoji-passwords .is_empty {height: 35px; width: 35px;}
     .login-with-emoji form {padding: 20px 0 25px;}
