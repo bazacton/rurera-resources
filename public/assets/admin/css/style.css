@@ -2247,6 +2247,7 @@ Admin Questions Generator Page Style End
     .multi-choice-template-modal .search-filed {width: 100%;}
     .multi-choice-template-modal .form-control {width: 100%; max-width: 100%; min-width: 100%;}
     .topic-parts-data .table-responsive:before, .topic-parts-data .table-responsive:after {display: none;}
+    .admin_teacher_role .pagination {flex-wrap: wrap; padding: 10px 0;}
 }
 @media screen and (max-width: 576px) {
     .assignments-table table.table tbody tr td span span {display: block; padding-top: 5px;}
