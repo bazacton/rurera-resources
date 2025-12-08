@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center bg-white py-20 panel-shadow rounded-sm w-100">
-                        <img src="/assets/default/img/activity/41.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/41.svg" width="64" height="64" alt="41">
                         <strong class="font-24 mt-5">{{ $openSupportsCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('panel.open_conversations') }}</span>
                     </div>
@@ -21,7 +21,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center bg-white py-20 panel-shadow rounded-sm w-100">
-                        <img src="/assets/default/img/activity/40.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/40.svg" width="64" height="64" alt="40">
                         <strong class="font-24 mt-5">{{ $closeSupportsCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('panel.closed_conversations') }}</span>
                     </div>
@@ -29,7 +29,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center bg-white py-20 panel-shadow rounded-sm w-100">
-                        <img src="/assets/default/img/activity/39.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/39.svg" width="64" height="64" alt="39">
                         <strong class="font-24 mt-5">{{ $supportsCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('panel.total_conversations') }}</span>
                     </div>
