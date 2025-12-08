@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-6 col-md-3 mt-30 mt-md-0 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/upcoming.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/upcoming.svg" width="64" height="64" alt="upcoming">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $totalCourses }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('update.total_courses') }}</span>
                     </div>
@@ -20,7 +20,7 @@
 
                 <div class="col-6 col-md-3 mt-30 mt-md-0 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="webinars">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $releasedCourses }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('update.released_courses') }}</span>
                     </div>
@@ -28,7 +28,7 @@
 
                 <div class="col-6 col-md-3 mt-30 mt-md-0 d-flex align-items-center justify-content-center mt-5 mt-md-0">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/hours.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/hours.svg" width="64" height="64" alt="hours">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $notReleased }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('update.not_released') }}</span>
                     </div>
@@ -36,7 +36,7 @@
 
                 <div class="col-6 col-md-3 mt-30 mt-md-0 d-flex align-items-center justify-content-center mt-5 mt-md-0">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/49.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/49.svg" width="64" height="64" alt="49">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $followers }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('update.followers') }}</span>
                     </div>
