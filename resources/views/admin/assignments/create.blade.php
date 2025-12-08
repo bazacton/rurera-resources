@@ -559,7 +559,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="practice-quiz-ajax-fields rurera_common_hide_field conditional_fields_block practice_fields practice_fields_block"></div>
+                                                <div class="practice-quiz-ajax-fields rurera_common_hide_field courses_fields"></div>
 
 
                                                 <div class="rurera_common_hide_field">
@@ -631,7 +631,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
+                                                <div class="rurera_common_hide_field practice-quiz-topics-list"></div>
 
 
                                                 <div class="row ">
@@ -1667,7 +1667,7 @@
             });
             $('body').on('change', '.year_quiz_ajax_select', function (e) {
                 var year_id = $(this).val();
-                var quiz_type = $(".assignment_topic_type_check:checked").val();
+                var quiz_type = $(".assignemnet_types_selection:checked").val();
                 var vocabulary_type = '';
                 if(quiz_type == 'vocabulary') {
                     var vocabulary_type = $(".vocabulary_type:checked").val();
@@ -1695,7 +1695,7 @@
 
             $('body').on('change', '.year_group_quiz_ajax_select', function (e) {
                 var year_group = $(this).val();
-                var quiz_type = $(".assignment_topic_type_check:checked").val();
+                var quiz_type = $(".assignemnet_types_selection:checked").val();
                 var thisObj = $(this);//$(".yeargroup-ajax-fields");
                 $(".practice-quiz-ajax-fields").html('');
                 $(".quiz-ajax-fields").html('');
@@ -1800,7 +1800,7 @@
 
 
                 var assignment_practice_type = $(".assignment_practice_type:checked").val();
-                var assignment_topic_type_check = $(".assignment_topic_type_check:checked").val();
+                var assignment_topic_type_check = $(".assignemnet_types_selection:checked").val();
                 if(assignment_practice_type == 'test' && assignment_topic_type_check == 'vocabulary'){
                     rurera_loader($(".spell-questions-list"), 'div');
                     jQuery.ajax({
@@ -1835,7 +1835,7 @@
 
             $(".conditional_check").change();
             $(".duration_conditional_check:checked").change();
-            $(".assignment_topic_type_check:checked").change();
+            $(".assignemnet_types_selection:checked").change();
             $(".assignment_method_check:checked").change();
             $(".year_quiz_ajax_select").change();
             $(".year_group_quiz_ajax_select").change();
@@ -1894,6 +1894,23 @@ timestables
         };
 
         var conditional_parent_data = {
+
+
+            practice_fields_array: [
+                'year_group_field',
+                'courses_fields',
+                'practice-quiz-topics-list',
+                'no_of_attemptes_field',
+            ],
+
+            sats_fields_array: [
+                'year_group_field',
+                'vocabulary_list_data',
+                'no_of_attemptes_field',
+            ],
+
+
+
             timestables_fields_array: [
                 'timestables_type_fields',
                 'timestables_modes_selection',
