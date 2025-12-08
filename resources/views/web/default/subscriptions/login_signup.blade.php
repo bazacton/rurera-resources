@@ -40,7 +40,7 @@
                         <div class="form-group">
                             <div class="input-field">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/hand.jpg" alt="hand">
+                                    <img src="/assets/default/img/hand-removebg-preview.png" alt="hand">
                                 </span>
                                 <input type="text" autocomplete="off" name="first_name" class="rurera-req-field" placeholder="What should we call you?"/>
                             </div>
@@ -51,7 +51,7 @@
                         <div class="form-group">
                             <div class="input-field">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/file.jpg" alt="file">
+                                    <img src="/assets/default/img/file-removebg-preview.png" alt="file">
                                 </span>
                                 <input type="text" autocomplete="off" name="last_name" class="rurera-req-field" placeholder="Your family/last name, please"/>
                             </div>
@@ -62,7 +62,7 @@
                         <div class="form-group">
                             <div class="input-field">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/envelope.jpg" alt="envelope">
+                                    <img src="/assets/default/img/envelope-removebg-preview.png" alt="envelope">
                                 </span>
                                 <input type="text" autocomplete="new-email" name="email" class="rurera-req-field rurera-email-field" placeholder="Where can we reach you? (e.g., you@gmail.com)"/>
                             </div>
@@ -74,7 +74,7 @@
                         <div class="form-group">
                             <div class="input-field mb-15">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
+                                    <img src="/assets/default/img/key-lock-removebg-preview.png" alt="key-lock">
                                 </span>
                                 <input type="password" autocomplete="new-password" name="password" placeholder="Make up a strong secret password!" class="rurera-req-field password-field"/>
                             </div>
