@@ -11,7 +11,7 @@
 
         <div class="activities-container mt-25 p-20 p-lg-35">
             <div class="row">
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center bg-white py-20 panel-shadow rounded-sm w-100">
                         <img src="/assets/default/img/activity/41.svg" width="64" height="64" alt="">
                         <strong class="font-24 mt-5">{{ $openSupportsCount }}</strong>
@@ -19,7 +19,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center bg-white py-20 panel-shadow rounded-sm w-100">
                         <img src="/assets/default/img/activity/40.svg" width="64" height="64" alt="">
                         <strong class="font-24 mt-5">{{ $closeSupportsCount }}</strong>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center bg-white py-20 panel-shadow rounded-sm w-100">
                         <img src="/assets/default/img/activity/39.svg" width="64" height="64" alt="">
                         <strong class="font-24 mt-5">{{ $supportsCount }}</strong>
