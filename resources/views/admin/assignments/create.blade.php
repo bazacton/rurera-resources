@@ -795,6 +795,7 @@
 
 
 
+
                                                             <div class="form-group assignment_types_fields timestables_type_fields timestables_conditional_fields powerup_mode_fields">
                                                                 <label class="input-label">Select Table Group</label>
                                                                 <div class="input-group">
@@ -851,8 +852,7 @@
                                                                 </div>
                                                             </div>
 
-
-                                                            <div class="form-group assignment_types_fields timestables_type_fields timestables_conditional_fields">
+                                                            <div class="form-group assignment_types_fields timestables_type_fields timestables_conditional_fields powerup_mode_fields">
                                                                 <label class="input-label">Select Practice Duration</label>
                                                                 <div class="input-group">
                                                                     <div class="radio-buttons">
@@ -883,6 +883,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+
+
 
 
 
