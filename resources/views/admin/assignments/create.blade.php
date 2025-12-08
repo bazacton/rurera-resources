@@ -245,7 +245,7 @@
                                                         <div class="radio-buttons">
 
                                                             @if(auth()->user()->subscription('courses'))
-                                                                <label class="card-radio conditional_fields_block practice_fields_block">
+                                                                <label class="card-radio rurera_conditional_field" data-target_class="courses_type_fields" data-common_class="assignment_types_fields">
                                                                     <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                             class="assignment_topic_type_check" value="practice" checked>
                                                                     <span class="radio-btn"><i class="las la-check"></i>
@@ -257,7 +257,7 @@
                                                                 </label>
                                                             @endif
                                                                 @if(auth()->user()->subscription('sats'))
-                                                                <label class="card-radio conditional_fields_block practice_fields_block">
+                                                                <label class="card-radio rurera_conditional_field" data-target_class="sats_type_fields" data-common_class="assignment_types_fields">
                                                                     <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                             class="assignment_topic_type_check" value="sats">
                                                                     <span class="radio-btn"><i class="las la-check"></i>
@@ -270,7 +270,7 @@
                                                             @endif
 
                                                             @if(auth()->user()->subscription('11plus'))
-                                                            <label class="card-radio conditional_fields_block practice_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="11plus_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="11plus">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -285,7 +285,7 @@
 
                                                                 @if(auth()->user()->subscription('11plus'))
 
-                                                            <label class="card-radio conditional_fields_block practice_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="independent_exams_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="independent_exams">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -300,7 +300,7 @@
 
                                                                 @if(auth()->user()->subscription('11plus'))
 
-                                                            <label class="card-radio conditional_fields_block practice_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="iseb_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="iseb">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -315,7 +315,7 @@
 
                                                                 @if(auth()->user()->subscription('11plus'))
 
-                                                            <label class="card-radio conditional_fields_block practice_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="cat4_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="cat4">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -330,7 +330,7 @@
 
                                                                 @if(auth()->user()->subscription('vocabulary'))
 
-                                                            <label class="card-radio conditional_fields_block practice_fields_block test_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="vocabulary_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="vocabulary">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -345,7 +345,7 @@
 
                                                                 @if(auth()->user()->subscription('timestables'))
 
-                                                            <label class="card-radio conditional_fields_block practice_fields_block test_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="timestables_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="timestables">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -358,7 +358,7 @@
                                                             </label>
                                                                 @endif
 
-                                                            <label class="card-radio conditional_fields_block test_fields_block">
+                                                            <label class="card-radio rurera_conditional_field" data-target_class="custom_type_fields" data-common_class="assignment_types_fields">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignment_topic_type_check" value="assignment">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -373,48 +373,48 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="form-section assignment_topic_type_fields practice_fields">
+                                                <div class="form-section assignment_types_fields courses_fields">
                                                     <h2 class="section-title">Courses</h2>
                                                 </div>
 
 
-                                                <div class="form-section assignment_topic_type_fields sats_fields">
+                                                <div class="form-section assignment_types_fields sats_fields">
                                                     <h2 class="section-title">Sats</h2>
                                                 </div>
 
 
-                                                <div class="form-section assignment_topic_type_fields 11plus_fields">
+                                                <div class="form-section assignment_types_fields 11plus_fields">
                                                     <h2 class="section-title">11 Plus</h2>
                                                 </div>
 
 
-                                                <div class="form-section assignment_topic_type_fields independent_exams_fields">
+                                                <div class="form-section assignment_types_fields independent_exams_fields">
                                                     <h2 class="section-title">Independent Exams</h2>
                                                 </div>
 
 
-                                                <div class="form-section assignment_topic_type_fields iseb_fields">
+                                                <div class="form-section assignment_types_fields iseb_fields">
                                                     <h2 class="section-title">ISEB</h2>
                                                 </div>
 
 
-                                                <div class="form-section assignment_topic_type_fields cat4_fields">
+                                                <div class="form-section assignment_types_fields cat4_fields">
                                                     <h2 class="section-title">CAT 4</h2>
                                                 </div>
 
 
-                                                <div class="form-section assignment_topic_type_fields vocabulary_fields">
+                                                <div class="form-section assignment_types_fields vocabulary_fields">
                                                     <h2 class="section-title">Vocabulary</h2>
                                                 </div>
 
-                                                <div class="form-section assignment_topic_type_fields timestables_fields">
+                                                <div class="form-section assignment_types_fields timestables_type_fields">
                                                     <h2 class="section-title">Times Tables</h2>
                                                 </div>
 
-                                                <div class="form-section assignment_topic_type_fields assignment_fields">
+                                                <div class="form-section assignment_types_fields assignment_fields">
                                                     <h2 class="section-title">Custom Assignment</h2>
                                                 </div>
-                                                <div class="assignment_topic_type_fields vocabulary_fields sats_fields practice_fields assignment_fields">
+                                                <div class="assignment_types_fields vocabulary_type_fields">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="form-group">
@@ -445,7 +445,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="assignment_topic_type_fields vocabulary_fields">
+                                                <div class="assignment_types_fields vocabulary_type_fields">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="form-group">
@@ -489,7 +489,7 @@
 
                                                 </div>
 
-                                                <div class="assignment_topic_type_fields vocabulary_fields sats_fields practice_fields assignment_fields">
+                                                <div class="assignment_types_fields vocabulary_type_fields">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="quiz-ajax-fields"></div>
@@ -498,7 +498,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="assignment_topic_type_fields vocabulary_fields">
+                                                <div class="assignment_types_fields vocabulary_type_fields">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                                                             <div class="form-group">
@@ -559,10 +559,10 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="practice-quiz-ajax-fields assignment_topic_type_fields conditional_fields_block practice_fields practice_fields_block"></div>
+                                                <div class="practice-quiz-ajax-fields assignment_types_fields conditional_fields_block practice_fields practice_fields_block"></div>
 
 
-                                                <div class="assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
+                                                <div class="assignment_types_fields">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="form-group">
@@ -634,7 +634,7 @@
                                                 <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
 
 
-                                                <div class="hide_check_field assignment_topic_type_fields timestables_fields conditional_fields_block practice_fields_block">
+                                                <div class="assignment_types_fields timestables_type_fields">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="form-group">
@@ -651,7 +651,7 @@
                                                                             </span>
                                                                         </label>
                                                                         <label class="card-radio">
-                                                                            <input type="radio" data-rurera_hide_class="[no_of_questions,duration_type]" class="rurera_conditional_field" data-target_class="powerup_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="powerup_mode">
+                                                                            <input type="radio" class="rurera_conditional_field" data-target_class="powerup_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="powerup_mode">
                                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                                 <div class="card-icon">
                                                                                     <h3>Powerup Mode</h3>
@@ -659,7 +659,7 @@
                                                                             </span>
                                                                         </label>
                                                                         <label class="card-radio">
-                                                                            <input type="radio" data-rurera_hide_class="[no_of_questions,duration_type]" class="rurera_conditional_field" data-target_class="trophy_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="trophy_mode">
+                                                                            <input type="radio" class="rurera_conditional_field" data-target_class="trophy_mode_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="trophy_mode">
                                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                                 <div class="card-icon">
                                                                                     <h3>Trophy Mode</h3>
@@ -667,7 +667,7 @@
                                                                             </span>
                                                                         </label>
                                                                         <label class="card-radio">
-                                                                            <input type="radio" data-rurera_hide_class="[no_of_questions,duration_type]" class="rurera_conditional_field" data-target_class="treasure_mission_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="treasure_mission">
+                                                                            <input type="radio" class="rurera_conditional_field" data-target_class="treasure_mission_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="treasure_mission">
                                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                                 <div class="card-icon">
                                                                                     <h3>Treasure Mission Mode</h3>
@@ -675,13 +675,14 @@
                                                                             </span>
                                                                         </label>
                                                                         <label class="card-radio">
-                                                                            <input type="radio" data-rurera_hide_class="no_of_questions" name="ajax[new][timestables_type]" value="showdown_mode">
+                                                                            <input type="radio" class="rurera_conditional_field" data-target_class="treasure_mission_fields" data-common_class="timestables_conditional_fields" name="ajax[new][timestables_type]" value="showdown_mode">
                                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                                 <div class="card-icon">
                                                                                     <h3>Showdown Mode</h3>
                                                                                 </div>
                                                                             </span>
                                                                         </label>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -716,7 +717,85 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group powerup_mode_fields timestables_conditional_fields">
+
+
+                                                            <div class="form-group assignment_types_fields timestables_type_fields freedom_mode_fields timestables_conditional_fields">
+                                                                <label class="input-label">No of Questions</label>
+                                                                <div class="input-group">
+                                                                    <div class="radio-buttons">
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][no_of_questions]" value="10" checked>
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>10 Questions</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][no_of_questions]" value="20">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>20 Questions</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="card-radio">
+                                                                            <input type="radio" name="ajax[new][no_of_questions]" value="30">
+                                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>30 Questions</h3>
+                                                                                </div>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            @php
+                                                                $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
+                                                            @endphp
+
+
+                                                            <div class="form-group assignment_types_fields timestables_type_fields freedom_mode_fields timestables_conditional_fields">
+                                                                <div class="questions-select-number">
+                                                                    <ul class="d-flex justify-content-center flex-wrap mb-30">
+                                                                        <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
+                                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                                                        <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
+                                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                                                        <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
+                                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                                                        <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
+                                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                                                        <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
+                                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                                                        <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
+                                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                                                        <li><input type="checkbox" value="6" name="ajax[new][tables_no][]" {{in_array(6,$tables_no)?
+                                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                                                        <li><input type="checkbox" value="7" name="ajax[new][tables_no][]" {{in_array(7,$tables_no)?
+                                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                                                        <li><input type="checkbox" value="9" name="ajax[new][tables_no][]" {{in_array(9,$tables_no)?
+                                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                                                        <li><input type="checkbox" value="11" name="ajax[new][tables_no][]" {{in_array(11,$tables_no)?
+                                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                                                        <li><input type="checkbox" value="12" name="ajax[new][tables_no][]" {{in_array(12,$tables_no)?
+                                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                                                        <li><input type="checkbox" value="13" name="ajax[new][tables_no][]" {{in_array(13,$tables_no)?
+                                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                                                        <li><input type="checkbox" value="14" name="ajax[new][tables_no][]" {{in_array(14,$tables_no)?
+                                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                                                        <li><input type="checkbox" value="15" name="ajax[new][tables_no][]" {{in_array(15,$tables_no)?
+                                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                                                        <li><input type="checkbox" value="16" name="ajax[new][tables_no][]" {{in_array(16,$tables_no)?
+                                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="form-group assignment_types_fields timestables_type_fields timestables_conditional_fields powerup_mode_fields">
                                                                 <label class="input-label">Select Table Group</label>
                                                                 <div class="input-group">
                                                                     <div class="radio-buttons">
@@ -772,7 +851,8 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="form-group powerup_mode_fields timestables_conditional_fields">
+
+                                                            <div class="form-group assignment_types_fields timestables_type_fields timestables_conditional_fields">
                                                                 <label class="input-label">Select Practice Duration</label>
                                                                 <div class="input-group">
                                                                     <div class="radio-buttons">
@@ -803,50 +883,13 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+
+
                                                         </div>
                                                     </div>
                                                 </div>
-                                                @php
-                                                    $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
-                                                @endphp
 
-
-                                                <div class="form-group freedom_mode_fields powerup_mode_fields timestables_conditional_fields assignment_topic_type_fields timestables_fields">
-                                                    <div class="questions-select-number">
-                                                        <ul class="d-flex justify-content-center flex-wrap mb-30">
-                                                            <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
-                                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                                                            <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
-                                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
-                                                            <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
-                                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                                                            <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
-                                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
-                                                            <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
-                                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                                                            <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
-                                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                                                            <li><input type="checkbox" value="6" name="ajax[new][tables_no][]" {{in_array(6,$tables_no)?
-                                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                                                            <li><input type="checkbox" value="7" name="ajax[new][tables_no][]" {{in_array(7,$tables_no)?
-                                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                                                            <li><input type="checkbox" value="9" name="ajax[new][tables_no][]" {{in_array(9,$tables_no)?
-                                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                                                            <li><input type="checkbox" value="11" name="ajax[new][tables_no][]" {{in_array(11,$tables_no)?
-                                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                                                            <li><input type="checkbox" value="12" name="ajax[new][tables_no][]" {{in_array(12,$tables_no)?
-                                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                                                            <li><input type="checkbox" value="13" name="ajax[new][tables_no][]" {{in_array(13,$tables_no)?
-                                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                                                            <li><input type="checkbox" value="14" name="ajax[new][tables_no][]" {{in_array(14,$tables_no)?
-                                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                                                            <li><input type="checkbox" value="15" name="ajax[new][tables_no][]" {{in_array(15,$tables_no)?
-                                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                                                            <li><input type="checkbox" value="16" name="ajax[new][tables_no][]" {{in_array(16,$tables_no)?
-                                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
 
                                                 <div class="form-section rurera-hide">
                                                     <h2 class="section-title">General information</h2>
@@ -870,7 +913,7 @@
                                                     <div class="invalid-feedback"></div>
                                                 </div>
 
-                                                <div class="form-section">
+                                                <div class="form-section rurera-hide">
                                                     <h2 class="section-title">Schedule</h2>
                                                 </div>
 
@@ -981,24 +1024,6 @@
 
 
                                                 <div class="row">
-                                                    <div data-recieve_class="no_of_questions" class="rurera_js_hide_field col-lg-6 col-md-6 col-sm-12 col-6  assignment_method_check_fields practice_fields target_improvements_fields">
-                                                        <div class="form-group">
-                                                            <label class="input-label">Show No of Questions <span class="max_questions"></span></label>
-
-                                                            <div class="range-slider">
-                                                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                                <div class="range-slider_line">
-                                                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                                </div>
-                                                                <input type="range" name="ajax[new][no_of_questions]" value="0"
-                                                                        class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
-                                                            </div>
-
-
-                                                            <div class="invalid-feedback"></div>
-
-                                                        </div>
-                                                    </div>
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields practice_fields vocabulary_fields timestables_fields assignment_fields">
                                                         <div class="form-group">
                                                             <label class="input-label">No of Attempts</label>
@@ -1057,7 +1082,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group">
+                                                <div class="form-group rurera-hide">
                                                     <label class="input-label">Assignment Settings</label>
                                                     <div class="option-field-item mt-20 mb-20">
                                                     <label class="custom-switch pl-0">
@@ -1082,7 +1107,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div data-recieve_class="duration_type" class="rurera_js_hide_field form-group assignment_method_check_fields practice_fields target_improvements_fields">
+                                                <div class="rurera-hide rurera_js_hide_field1 form-group ">
                                                     <label class="input-label">Duration Type</label>
                                                     <div class="input-group">
 
@@ -1567,7 +1592,7 @@
                 $('.' + current_value + '_fields').removeClass('rurera-hide');
             });
 
-            $('body').on('change', '.assignment_topic_type_check', function (e) {
+            $('body').on('change', '.assignment_topic_type_check1', function (e) {
                 var current_value = $(this).val();
                 $(".assignment_topic_type_fields").addClass('rurera-hide');
                 $('.' + current_value + '_fields').removeClass('rurera-hide');
