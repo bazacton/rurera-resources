@@ -1913,7 +1913,7 @@ timestables
                 'no_of_attemptes_field',
             ],
             trophy_mode_fields_array: [
-                'no_of_attemptes_field',
+                '',
             ],
             treasure_mission_fields_array: [
                 'no_of_stages_field',
