@@ -64,7 +64,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/envelope.jpg" alt="envelope">
                                 </span>
-                                <input type="text" autocomplete="off" name="email" class="rurera-req-field rurera-email-field" placeholder="Where can we reach you? (e.g., you@gmail.com)"/>
+                                <input type="text" autocomplete="new-email" name="email" class="rurera-req-field rurera-email-field" placeholder="Where can we reach you? (e.g., you@gmail.com)"/>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
-                                <input type="password" autocomplete="off" name="password" placeholder="Make up a strong secret password!" class="rurera-req-field password-field"/>
+                                <input type="password" autocomplete="new-password" name="password" placeholder="Make up a strong secret password!" class="rurera-req-field password-field"/>
                             </div>
                             <button id="generateBtn" class="rurera-hide">Generate Password</button>
                         </div>
