@@ -10,7 +10,7 @@
 
         <div class="activities-container mt-25 p-20 p-lg-35">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/39.svg" width="64" height="64" alt="39">
                         <strong class="font-30 font-weight-bold mt-5">{{ $comments->count() }}</strong>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-12 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/41.svg" width="64" height="64" alt="41">
                         <strong class="font-30 font-weight-bold mt-5">{{ $repliedCommentsCount }}</strong>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-12 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/40.svg" width="64" height="64" alt="40">
                         <strong class="font-30 font-weight-bold mt-5">{{ ($comments->count() - $repliedCommentsCount) }}</strong>
