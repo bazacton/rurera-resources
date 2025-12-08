@@ -358,7 +358,7 @@
                                                             </label>
                                                                 @endif
 
-                                                            <label class="card-radio">
+                                                            <label class="card-radio rurera-hide">
                                                                 <input type="radio" name="ajax[new][assignment_topic_type]"
                                                                         class="assignemnet_types_selection" value="assignment">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -414,7 +414,7 @@
                                                 <div class="form-section rurera_common_hide_field assignment_fields">
                                                     <h2 class="section-title">Custom Assignment</h2>
                                                 </div>
-                                                <div class="rurera_common_hide_field vocabulary_type_fields">
+                                                <div class="rurera_common_hide_field year_group_field">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="form-group">
@@ -489,7 +489,7 @@
 
                                                 </div>
 
-                                                <div class="rurera_common_hide_field vocabulary_type_fields">
+                                                <div class="rurera_common_hide_field vocabulary_list_data">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <div class="quiz-ajax-fields"></div>
@@ -498,7 +498,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="rurera_common_hide_field vocabulary_type_fields">
+                                                <div class="rurera_common_hide_field vocabulary_practice_type_field">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                                                             <div class="form-group">
@@ -528,7 +528,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera-hide">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera_common_hide_field show_words_type_field">
                                                             <div class="form-group">
                                                                 <label class="input-label">Show Words</label>
                                                                 <div class="input-group">
@@ -1014,7 +1014,7 @@
 
                                                                 </span>
                                                             </label>
-                                                            <label class="card-radio assignment_topic_type_fields practice_fields vocabulary_fields timestables_fields assignment_fields">
+                                                            <label class="card-radio assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
                                                                 <input type="radio" name="ajax[new][assignment_method]"
                                                                         class="assignment_method_check" value="target_improvements">
                                                                 <span class="radio-btn"><i class="las la-check"></i>
@@ -1047,7 +1047,7 @@
                                                     <h2 class="section-title">Target</h2>
                                                 </div>
                                                 <div class="row rurera_common_hide_field no_of_attemptes_field">
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields practice_fields vocabulary_fields timestables_fields assignment_fields">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
                                                         <div class="form-group">
                                                             <label class="input-label">No of Attempts</label>
 
@@ -1906,7 +1906,6 @@ timestables
                 'percentage_answer_field',
                 'average_time_field',
             ],
-
             powerup_mode_fields_array: [
                 'table_group_field',
                 'practice_duration_field',
@@ -1922,7 +1921,14 @@ timestables
                 '',
             ],
             vocabulary_fields_array: [
+                'year_group_field',
+                'vocabulary_list_data',
                 'vocabulary_fields',
+                'vocabulary_practice_type_field',
+                'no_of_questions_field',
+                'show_words_type_field',
+                'no_of_attemptes_field',
+
             ],
 
         };
