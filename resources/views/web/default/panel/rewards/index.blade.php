@@ -6,7 +6,7 @@
 
         <div class="activities-container mt-25 p-20 p-lg-35">
             <div class="row">
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/trophy_cup.png" width="64" height="64" alt="">
                         <strong class="font-24 mt-5">{{ $availablePoints }}</strong>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/rank.png" width="64" height="64" alt="">
                         <strong class="font-24 mt-5">{{ $totalPoints }}</strong>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/spent.png" width="64" height="64" alt="">
                         <strong class="font-24 mt-5">{{ $spentPoints }}</strong>
