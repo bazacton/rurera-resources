@@ -194,11 +194,12 @@
     overflow: hidden;
     overflow-x: auto;
 }
-.svga-colors-set > div {
+.mobile-avar-view .svga-colors-set > div {
     height: 54px;
     width: 54px;
     padding: 0;
 }
+.mobile-avar-view #svga-custom-color {}
 .svga-row.row-colors {
 	border-top: 1px solid;
 	margin-top: -1px;
