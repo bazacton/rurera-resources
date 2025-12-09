@@ -1168,9 +1168,9 @@ p.svga-credit {
 		border: 1px solid;
 		float: left;
 	}
-	.mobile-avar-view .svga-vert-order-colors {
+	/* .mobile-avar-view .svga-vert-order-colors {
 		display: table-footer-group;
-	}
+	} */
 	.mobile-avar-view .row-colors {
 		border: none;
 		margin-top: 0;
