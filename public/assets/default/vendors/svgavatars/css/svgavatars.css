@@ -395,6 +395,7 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	background-color: #fff;
 }
 #svga-footermenu ul li {
 	border-right: 1px solid;
@@ -1323,7 +1324,6 @@ p.svga-credit {
 	}
 	.mobile-avar-view .svga-row:has(#svga-footermenu) {
 		top: 0;
-		background: #fff;
 	}
 	.mobile-avar-view .svga-row.rurera-hide-sm {
 		display: none;
