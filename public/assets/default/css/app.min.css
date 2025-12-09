@@ -17447,7 +17447,7 @@ section:has(.trial-steps) .lms-btn-group a small {
 }
 
 .footer-logo-box a span {
-    background-color: #010ed0;
+    background-color: var(--primary);
     border-radius: 3px;
     color: #fff;
     padding: 12px 14px;
