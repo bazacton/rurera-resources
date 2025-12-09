@@ -410,6 +410,14 @@
 	cursor: pointer;
 	font-size: 14px;
 }
+#svga-footermenu ul li#svga-saveavatar2 {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    background-color: #fff;
+    padding: 6px 15px;
+    border-radius: 3px;
+}
 li#svga-downloadavatar {
 	border-right: none!important;
 }
