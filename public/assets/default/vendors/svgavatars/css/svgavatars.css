@@ -1115,6 +1115,9 @@ p.svga-credit {
 		padding-top: 0;
 		overflow: hidden;
 	}
+	.mobile-avar-view .svga-row .svga-row:has(#svga-footermenu) {
+		overflow: visible;
+	}
 	.mobile-avar-view .svga-col-left {
 		width: 100%;
 		position: relative;
