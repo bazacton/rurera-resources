@@ -12169,21 +12169,21 @@ body .flipbook-data {
 }
 
 .top-navbar .login-btn {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     padding: 7px 15px !important;
     border-radius: 3px;
     font-weight: 500;
-    color: var(--primary)
+    color: var(--secondary)
 }
 
 .top-navbar .register-btn {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     padding: 7px 15px !important
 }
 
 .top-navbar .register-btn:hover {
     background-color: #fff;
-    color: var(--primary)
+    color: var(--secondary)
 }
 
 .top-navbar .navbar-order .ml-md-50 {
