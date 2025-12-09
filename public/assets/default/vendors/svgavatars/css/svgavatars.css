@@ -812,7 +812,9 @@ p.svga-credit {
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-content.scroll-scrollx_show { top:  -12px; margin-top: 12px; }
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-element.scroll-x { height: 12px; }
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-element.scroll-x .scroll-bar { top: 0px; height: 12px;}
-
+.mobile-avar-view .svga-col-right .svga-vert-order-controls {
+	display: none;
+}
 /******************* Media queries *******************/
 @media (min-width: 576px) {
 	#svga-container {
@@ -1209,9 +1211,6 @@ p.svga-credit {
 		display: table-footer-group;
 		width: 100%;
 		order: 3;
-	}
-	.mobile-avar-view .svga-col-right .svga-vert-order-controls {
-		display: none;
 	}
 	.mobile-avar-view .svga-row.row-elements {
 		border: none;
