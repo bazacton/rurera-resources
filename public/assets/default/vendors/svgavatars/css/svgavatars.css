@@ -1144,9 +1144,9 @@ p.svga-credit {
 		margin: 0;
         border-spacing: 0;
 	}
-	.mobile-avar-view #svga-container > .svga-row {
+	/* .mobile-avar-view #svga-container > .svga-row {
 		padding-top: 35px;
-	}
+	} */
 	.mobile-avar-view .svga-vert-order-glob-controls {
 		width: 100%;
 		height: auto;
