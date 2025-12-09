@@ -780,8 +780,6 @@ p.svga-credit {
 	position: relative;
 	top: 0;
 	width: auto;
-	overflow: hidden;
-	overflow-x: auto;
 }
 #svgAvatars .scroll-wrapper > .scroll-content::-webkit-scrollbar {
 	height: 0;
