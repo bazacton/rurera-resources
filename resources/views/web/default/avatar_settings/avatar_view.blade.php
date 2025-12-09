@@ -67,14 +67,14 @@
 
             setMobilePadding();
 
-            function setMobilePosition() {
-                if ($(window).width() <= 767) {
-                    var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
-                    $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', adjacentHeight + 'px');
-                } else {
-                    $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
-                }
-            }
+            // function setMobilePosition() {
+            //     if ($(window).width() <= 767) {
+            //         var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
+            //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', adjacentHeight + 'px');
+            //     } else {
+            //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
+            //     }
+            // }
             setMobilePosition();
 
             $(window).on('resize', function () {
