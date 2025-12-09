@@ -75,7 +75,6 @@
             //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
             //     }
             // }
-            setMobilePosition();
 
             $(window).on('resize', function () {
                 setMobilePadding();
