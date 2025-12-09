@@ -1353,6 +1353,11 @@ p.svga-credit {
 .svga-light .svga-input {
 	color: #777;
 }
+.svga-elements-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .svga-light .svga-elements {
 	background-color: inherit;
     border: 1px solid #ddd;
