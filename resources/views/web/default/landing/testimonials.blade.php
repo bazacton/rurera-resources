@@ -195,10 +195,10 @@
       <div class="col-12">
         <div class="testimonial-filters">
           <ul class="testimonial-tabs filters-button" id="filters">
-            <li class="active"><a href="#.">All Testimonials</a></li>
-            <li><a href="#.">Student</a></li>
-            <li><a href="#.">Parent</a></li>
-            <li><a href="#.">Teacher</a></li>
+            <li class="active filter-btn"><a href="#.">All Testimonials</a></li>
+            <li><a href="#." class="filter-btn">Student</a></li>
+            <li><a href="#." class="filter-btn">Parent</a></li>
+            <li><a href="#." class="filter-btn">Teacher</a></li>
           </ul>
         </div>
         <div class="lms-masonry">
@@ -257,7 +257,7 @@
   // Filter buttons callback
   var filtersElem = document.getElementById('filters');
   filtersElem.addEventListener('click', function(event) {
-    if (!event.target.matches('button')) return;
+    if (!event.target.matches('.filter-btn')) return;
 
     var filterValue = event.target.getAttribute('data-filter');
     var items = grid.querySelectorAll('.grid-item');
