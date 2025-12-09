@@ -13,6 +13,7 @@
 									<li itemprop="blog"><a itemprop="url" href="/blog">Blog</a></li>
 									<li itemprop="careers"><a itemprop="url" href="/careers">Careers</a></li>
 									<li itemprop="testimonials"><a itemprop="url" href="/testimonials">Testimonials</a></li>
+									<li itemprop="contact-us"><a itemprop="url" href="/contact-us">Contact Us</a></li>
 								</ul>
 							</div>
 						</div>
