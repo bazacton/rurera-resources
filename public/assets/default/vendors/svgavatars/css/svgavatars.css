@@ -816,6 +816,9 @@ p.svga-credit {
 .mobile-avar-view .svga-vert-order-glob-controls {
 	display: none;
 }
+.svga-vert-order-elements .svga-row.row-elements {
+	margin-top: 15px;
+}
 /******************* Media queries *******************/
 @media (min-width: 576px) {
 	#svga-container {
