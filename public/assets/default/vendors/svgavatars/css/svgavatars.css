@@ -191,7 +191,8 @@
 .svga-colors-set {
     display: flex;
     flex-wrap: nowrap;
-	min-width: 1080px;
+    overflow: hidden;
+    overflow-x: auto;
 }
 .mobile-avar-view .svga-colors-set > div {
     height: 54px;
@@ -210,6 +211,12 @@
 	width: 85%;
 	position: relative;
 	overflow-x: auto;
+}
+#svga-colors {
+	width: 100%;
+	white-space: nowrap;
+
+	overflow-y: hidden;
 }
 .svga-colors-set > div {
 	display: inline-block;
@@ -768,12 +775,13 @@ p.svga-credit {
 	height: auto;
 	left: 0;
 	margin: 0;
-	max-height: none;
-	max-width: none;
+	max-height: none !important;
+	max-width: none !important;
+	overflow: scroll !important;
 	padding: 0;
-	position: relative;
+	position: relative !important;
 	top: 0;
-	width: auto;
+	width: auto !important;
 }
 #svgAvatars .scroll-wrapper > .scroll-content::-webkit-scrollbar {
 	height: 0;
