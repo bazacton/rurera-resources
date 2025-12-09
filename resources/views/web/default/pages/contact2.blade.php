@@ -328,5 +328,34 @@
 @endsection
 
 @push('scripts_bottom')
+<script>
+    $(document).ready(function () {
+
+    // Click on tab link
+    $("#myTab .nav-link").on("click", function (e) {
+        e.preventDefault();
+
+        var tabId = $(this).attr("href"); // #inquires or #feedback
+
+        // Remove active from all tabs
+        $("#myTab .nav-link").removeClass("active").attr("aria-selected", "false");
+
+        // Add active to current tab
+        $(this).addClass("active").attr("aria-selected", "true");
+
+        // Hide all tab panes
+        $(".tab-pane").removeClass("show active");
+
+        // Show the selected tab
+        $(tabId).addClass("show active");
+
+        // ---- CALLBACK ----
+        console.log("Active Tab Link:", this.id);
+        console.log("Active Tab Content:", tabId);
+    });
+
+});
+
+</script>
 <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 @endpush
