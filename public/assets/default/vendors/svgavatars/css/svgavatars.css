@@ -399,7 +399,6 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #fff;
 }
 #svga-footermenu ul li {
 	border-right: 0;
@@ -1114,7 +1113,8 @@ p.svga-credit {
 		padding-left: 0;
 		padding-right: 0;
 		display: table;
-		margin-top: 45px;
+		margin-top: 0;
+		padding-top: 30px;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
