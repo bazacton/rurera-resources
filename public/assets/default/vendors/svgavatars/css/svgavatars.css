@@ -188,6 +188,17 @@
 }
 
 /***************** Color change *****************/
+.svga-colors-set {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.svga-colors-set > div {
+    height: 54px;
+    width: 54px;
+    padding: 0;
+}
 .svga-row.row-colors {
 	border-top: 1px solid;
 	margin-top: -1px;
@@ -196,6 +207,7 @@
 	overflow: hidden;
 	width: 85%;
 	position: relative;
+	overflow-x: auto;
 }
 #svga-colors {
 	width: 100%;
