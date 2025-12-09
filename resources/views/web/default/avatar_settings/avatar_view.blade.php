@@ -59,7 +59,7 @@
             function setMobilePadding() {
                 if ($(window).width() <= 767) {
                     var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
-                    $('.mobile-avar-view .svga-col-right').css('padding-top', (adjacentHeight + 75) + 'px');
+                    $('.mobile-avar-view .svga-col-right').css('padding-top', (adjacentHeight) + 'px');
                 } else {
                     $('.mobile-avar-view .svga-col-right').css('padding-top', '');
                 }
