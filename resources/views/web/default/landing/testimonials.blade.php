@@ -194,7 +194,7 @@
       </div>
       <div class="col-12">
         <div class="testimonial-filters">
-          <ul class="testimonial-tabs filters-button">
+          <ul class="testimonial-tabs filters-button" id="filters">
             <li class="active"><a href="#.">All Testimonials</a></li>
             <li><a href="#.">Student</a></li>
             <li><a href="#.">Parent</a></li>
@@ -251,6 +251,27 @@
       circlePlayButton.style.opacity = 1;
       posterImg.style.opacity = 0
     });
+  });
+</script>
+<script>
+  // Filter buttons callback
+  var filtersElem = document.getElementById('filters');
+  filtersElem.addEventListener('click', function(event) {
+    if (!event.target.matches('button')) return;
+
+    var filterValue = event.target.getAttribute('data-filter');
+    var items = grid.querySelectorAll('.grid-item');
+
+    items.forEach(function(item) {
+      if (filterValue === '*' || item.classList.contains(filterValue.slice(1))) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    // Layout Masonry after changing items
+    msnry.layout();
   });
 </script>
 @endpush
