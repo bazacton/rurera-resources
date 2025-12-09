@@ -571,7 +571,7 @@
 }
 
 .register-btn {
-    background: var(--primary);
+    background: var(--secondary);
     color: #fff;
     border-radius: 4px
 }
