@@ -1117,7 +1117,7 @@ p.svga-credit {
 		position: absolute;
 		top: 0;
 		padding-top: 380px;
-		display: table;
+		/* display: table; */
 		padding-left: 0;
 		padding-right: 0;
 		margin-top: 30px;
@@ -1273,7 +1273,7 @@ p.svga-credit {
 	}
 	.mobile-avar-view .svga-colors-set > div {
 		display: block;
-		width: 14.2857142857142%;
+		/* width: 14.2857142857142%; */
 		/* padding-bottom: 13.2%; */
 		margin: 0;
 		float: left;
