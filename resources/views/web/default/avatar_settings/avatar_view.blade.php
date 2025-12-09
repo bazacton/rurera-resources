@@ -55,53 +55,53 @@
         </script>
 
         <script>
-        $(document).ready(function () {
-            function setMobilePadding() {
-                if ($(window).width() <= 767) {
-                    var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
-                    $('.mobile-avar-view .svga-col-right').css('padding-top', (adjacentHeight) + 'px');
-                } else {
-                    $('.mobile-avar-view .svga-col-right').css('padding-top', '');
-                }
-            }
+        // $(document).ready(function () {
+        //     function setMobilePadding() {
+        //         if ($(window).width() <= 767) {
+        //             var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
+        //             $('.mobile-avar-view .svga-col-right').css('padding-top', (adjacentHeight) + 'px');
+        //         } else {
+        //             $('.mobile-avar-view .svga-col-right').css('padding-top', '');
+        //         }
+        //     }
 
-            setMobilePadding();
+        //     setMobilePadding();
 
-            // function setMobilePosition() {
-            //     if ($(window).width() <= 767) {
-            //         var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
-            //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', adjacentHeight + 'px');
-            //     } else {
-            //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
-            //     }
-            // }
+        //     // function setMobilePosition() {
+        //     //     if ($(window).width() <= 767) {
+        //     //         var adjacentHeight = $('.mobile-avar-view .svga-vert-order-svgcanvas').outerHeight();
+        //     //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', adjacentHeight + 'px');
+        //     //     } else {
+        //     //         $('.mobile-avar-view .svga-vert-order-glob-controls').css('top', '');
+        //     //     }
+        //     // }
 
-            $(window).on('resize', function () {
-                setMobilePadding();
-                setMobilePosition();
-            });
-        });
+        //     $(window).on('resize', function () {
+        //         setMobilePadding();
+        //         setMobilePosition();
+        //     });
+        // });
         </script>
         <script>
-        $(document).ready(function () {
+        // $(document).ready(function () {
 
-            $(document).on('click', '.svga-bodyzones', function (e) {
-                function setMobilePadding() {
-                if ($(window).width() <= 767) {
-                    var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
-                    $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
-                } else {
-                    $('.svga-col-left').css('padding-top', '');
-                }
-            }
-            setMobilePadding();
+        //     $(document).on('click', '.svga-bodyzones', function (e) {
+        //         function setMobilePadding() {
+        //         if ($(window).width() <= 767) {
+        //             var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
+        //             $('.svga-col-left').css('padding-top', adjacentHeight + 'px');
+        //         } else {
+        //             $('.svga-col-left').css('padding-top', '');
+        //         }
+        //     }
+        //     setMobilePadding();
 
-            $(window).on('resize', function () {
-                setMobilePadding();
-            });
+        //     $(window).on('resize', function () {
+        //         setMobilePadding();
+        //     });
 
-            });
+        //     });
 
-        });
+        // });
         </script>
         <script src="/assets/default/js/panel/user_setting.min.js"></script>
