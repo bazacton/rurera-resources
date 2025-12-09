@@ -9545,7 +9545,7 @@ body .flipbook-data {
 
 .lms-faqs .card .card-header .btn-link:before,
 .lms-faqs .card .card-header .btn-link:after {
-    background-color: #2d3d4d;
+    background-color: var(--primary);
     content: " ";
     display: block;
     position: absolute;
