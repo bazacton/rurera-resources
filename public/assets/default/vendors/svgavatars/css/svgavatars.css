@@ -846,6 +846,15 @@ p.svga-credit {
 .svga-vert-order-elements .svga-elements-wrap {
 	margin-top: 15px;
 }
+.element-colors-label {
+    font-size: 15px;
+    color: #333;
+    margin: 10px 0;
+    display: block;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: normal;
+}
 /******************* Media queries *******************/
 @media (min-width: 576px) {
 	#svga-container {
