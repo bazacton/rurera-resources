@@ -51,6 +51,9 @@
 .blog-single-post .post-show p {
     margin-top: 0;
 }
+.blog-single-post .post-show > div {
+    line-height: 26px;
+}
 .blog-sidebar {
     position: -webkit-sticky;
     position: sticky;
