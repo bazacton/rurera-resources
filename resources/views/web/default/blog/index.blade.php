@@ -115,11 +115,11 @@
         </div>
     </section>
 
-    <section class="container mt-10 mt-md-10 lms-blog">
+    <section class="container mt-50 mt-md-50 lms-blog">
         <div class="row">
             <div class="col-12 col-lg-12">
-                <div class="section-title mb-50">
-                    <h2 class="mb-10 font-40">Browse All</h2>
+                <div class="section-title">
+                    <h2 class="mb-0 font-40">Browse All</h2>
                 </div>
             </div>
             <div class="col-12 col-lg-12">
