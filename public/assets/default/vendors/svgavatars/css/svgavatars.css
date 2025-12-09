@@ -1321,9 +1321,6 @@ p.svga-credit {
         position: absolute;
         top: 100%;
 	}
-	.mobile-avar-view .svga-light > .svga-row {
-		padding-top: 50px;
-	}
 	.mobile-avar-view .svga-row:has(#svga-footermenu) {
 		top: 0;
 		background: #fff;
