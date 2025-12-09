@@ -328,28 +328,5 @@
 @endsection
 
 @push('scripts_bottom')
-<script>
-    $(document).ready(function () {
-    // Custom callback whenever any tab is shown
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
-        let activatedTab = $(e.target).attr("href"); 
-        let previousTab = $(e.relatedTarget).attr("href");
-
-        // Write your custom code here
-        console.log("Opened Tab:", activatedTab);
-        console.log("Closed Tab:", previousTab);
-
-        // Example: Add a class when tab opens
-        $(activatedTab).addClass("tab-opened");
-
-        // Example: Remove class from previous tab
-        if (previousTab) {
-            $(previousTab).removeClass("tab-opened");
-        }
-    });
-});
-
-</script>
 <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 @endpush
