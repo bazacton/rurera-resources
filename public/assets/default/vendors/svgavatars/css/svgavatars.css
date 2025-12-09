@@ -1229,9 +1229,8 @@ p.svga-credit {
         width: 100%;
 	}
 	.mobile-avar-view .svga-vert-order-elements {
-		display: table-footer-group;
+		/* display: table-footer-group; */
 		width: 100%;
-		order: 3;
 	}
 	.mobile-avar-view .svga-row.row-elements {
 		border: none;
