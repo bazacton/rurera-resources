@@ -29,12 +29,14 @@
                 @endif
                 @endif
                 @if($search_field == true)
+                <form action="/admin/students" id="questions_search_form" method="get" class="row mb-0">
                 <div class="search-field">
                     <span class="icon-box">
                         <img src="/assets/default/svgs/search.svg" alt="search">
                     </span>
-                    <input type="text" class="search-students" placeholder="Search Students">
+                    <input type="text" class="search-students" value="{{request()->get('student')}}" name="student" placeholder="Search Students">
                 </div>
+                </form>
                 @endif
             </div>
             @if(isset($classes_filter) && $classes_filter == true)
