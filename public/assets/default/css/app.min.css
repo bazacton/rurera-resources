@@ -1486,7 +1486,10 @@ nav li {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
-    text-align: center
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .emoji-icons .emoji-icon {
