@@ -13904,11 +13904,13 @@ body {
     width: calc(100% - 200px);
     border-radius: 8px 0 0 8px
 }
-
+.lms-call-to-action input[type="text"]
 body input[type="text"]:focus::-moz-placeholder {
     color: #fff0
 }
-
+.blog-sub-header.lms-call-to-action input[type="text"] {
+    border: 1px solid #ddd;
+}
 body input[type="text"]:focus::-webkit-input-placeholder {
     color: #fff0
 }
