@@ -1255,6 +1255,9 @@ p.svga-credit {
 	.mobile-avar-view #svga-footermenu ul li#svga-saveavatar2 .svga-mobilehidden {
 		display: block !important;
 	}
+	.mobile-avar-view #svga-footermenu ul li#svga-resetavatar2 {
+		display: none;
+	}
 	/* .mobile-avar-view #svga-randomavatar > div,  */
 	.mobile-avar-view #svga-resetavatar > div, 
 	.mobile-avar-view #svga-saveavatar > div, 
