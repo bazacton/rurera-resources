@@ -1232,6 +1232,9 @@ p.svga-credit {
 		/* display: table-footer-group; */
 		width: 100%;
 	}
+	#svgAvatars #svga-colors-wrap .scroll-wrapper {
+		width: 100%;
+	}
 	.mobile-avar-view .svga-row.row-elements {
 		border: none;
 		padding-top: 0;
