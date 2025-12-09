@@ -16,6 +16,9 @@
 .rurera-blog .badge {
     padding-left: 0;
 }
+.rurera-blog .badge i:empty {
+    display: none;
+}
 .rurera-blog.blog-medium {
     flex-direction: column-reverse;
     box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
