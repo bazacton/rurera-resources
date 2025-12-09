@@ -211,12 +211,6 @@
 	position: relative;
 	overflow-x: auto;
 }
-#svga-colors {
-	width: 100%;
-	white-space: nowrap;
-
-	overflow-y: hidden;
-}
 .svga-colors-set > div {
 	display: inline-block;
 	position: relative;
