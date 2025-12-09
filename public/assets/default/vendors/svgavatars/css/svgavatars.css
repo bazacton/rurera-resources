@@ -200,7 +200,7 @@
     padding: 0;
 }
 .mobile-avar-view #svga-custom-color {
-	display: none;
+	display: none !important;
 }
 .svga-row.row-colors {
 	border-top: 1px solid;
