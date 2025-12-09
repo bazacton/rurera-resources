@@ -397,7 +397,6 @@
 }
 #svga-footermenu ul {
 	display: table-row;
-	width: 100%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -415,7 +414,7 @@
 #svga-footermenu ul li#svga-saveavatar2 {
     position: absolute;
     right: 10px;
-    top: 40px;
+    top: 50px;
     background-color: #fff;
     padding: 6px 15px;
     border-radius: 3px;
