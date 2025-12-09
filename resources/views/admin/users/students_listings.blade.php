@@ -124,7 +124,7 @@
                             </td>
                             <td data-th="Class">
                                 <div class=" skelton-hide skelton-height-lg skelton-mb-0">
-                                    <span>{{$studentObj->userClass->title}}</span>
+                                    <span>{{isset($studentObj->userSchool->id)? $studentObj->userClass->title : '-'}}</span>
                                 </div>
                             </td>
                             <td data-th="Actions">
