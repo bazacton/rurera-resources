@@ -214,10 +214,6 @@
 }
 #svga-colors {
 	width: 100%;
-	white-space: nowrap;
-	font-size: 0;
-	line-height: 0;
-	overflow-y: hidden;
 }
 .svga-colors-set > div {
 	display: inline-block;
@@ -750,17 +746,12 @@ p.svga-credit {
 
 /***************** CUSTOM SCROLLBAR ****************/
 #svgAvatars .scroll-wrapper {
-	overflow: hidden !important;
-	opacity: 1 !important;
-	padding: 0 !important;
 	position: relative;
 }
 .mobile-avar-view #svga-colors-wrap {
 	width: 100%;
 	float: left;
 	max-width: 375px;
-	overflow: hidden;
-	overflow-x: auto;
 }
 .mobile-avar-view .svga-row.row-colors {
 
