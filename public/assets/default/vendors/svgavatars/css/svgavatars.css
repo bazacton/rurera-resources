@@ -386,7 +386,6 @@
 /*************** Footer menu ****************/
 #svga-footermenu {
 	margin-top: 10px;
-	position: relative;
 	margin-bottom: 0;
 	width: 100%;
 	display: table;
@@ -1330,6 +1329,7 @@ p.svga-credit {
 		display: table;
         position: absolute;
         top: 100%;
+		width: 100%;
 	}
 	.mobile-avar-view .svga-row:has(#svga-footermenu) {
 		top: 0;
