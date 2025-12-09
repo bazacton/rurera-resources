@@ -763,7 +763,7 @@ p.svga-credit {
 	overflow-x: auto;
 }
 .mobile-avar-view .svga-row.row-colors {
-	
+
 }
 #svgAvatars #svga-colors-wrap .scroll-wrapper {
     width: 1080px;
@@ -1280,7 +1280,7 @@ p.svga-credit {
 	.mobile-avar-view .svga-colors-set > div {
 		display: block;
 		width: 14.2857142857142%;
-		padding-bottom: 13.2%;
+		/* padding-bottom: 13.2%; */
 		margin: 0;
 		float: left;
 		border: 2px solid;
