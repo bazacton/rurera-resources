@@ -1,7 +1,7 @@
 @php use App\Models\Subscribe;
 $packages_only = isset( $packages_only )? $packages_only : array();
 if( empty( $subscribes )){
-	$subscribes = Subscribe::where('id', '>', 0);
+	$subscribes = Subscribe::where('id', '>', 0)->where('package_type', 'student');
 	if( !empty($packages_only)){
 		$subscribes = $subscribes->whereIn('id', $packages_only);
 	}
