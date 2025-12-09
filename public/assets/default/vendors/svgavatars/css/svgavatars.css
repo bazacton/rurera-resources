@@ -1193,12 +1193,22 @@ p.svga-credit {
 		width: 100%;
 	}
 	.mobile-avar-view .svga-android-hack {
-		display: inline-table;
-		width: 100%;
+		display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 35px;
+        gap: 5px;
+	}
+	.svga-vert-order-blocks {
+		order: 1;
+	}
+	.svga-vert-order-bodyzones {
+		order: 2;
 	}
 	.mobile-avar-view .svga-vert-order-elements {
 		display: table-footer-group;
 		width: 100%;
+		order: 3;
 	}
 	.mobile-avar-view .svga-row.row-elements {
 		border: none;
