@@ -388,9 +388,12 @@
 	margin-top: 10px;
 	margin-bottom: 0;
 	width: 100%;
-	display: table;
+	display: flex;
 	table-layout: fixed;
 	border: 0;
+}
+.avatar-label {
+    margin: 0 auto;
 }
 #svga-footermenu ul {
 	display: table-row;
