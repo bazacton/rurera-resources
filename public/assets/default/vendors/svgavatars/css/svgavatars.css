@@ -1252,6 +1252,9 @@ p.svga-credit {
 		height: 50px;
 		line-height: 48px;
 	}
+	.mobile-avar-view #svga-footermenu ul li#svga-saveavatar2 .svga-mobilehidden {
+		display: block !important;
+	}
 	/* .mobile-avar-view #svga-randomavatar > div,  */
 	.mobile-avar-view #svga-resetavatar > div, 
 	.mobile-avar-view #svga-saveavatar > div, 
