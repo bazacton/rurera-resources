@@ -812,7 +812,8 @@ p.svga-credit {
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-content.scroll-scrollx_show { top:  -12px; margin-top: 12px; }
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-element.scroll-x { height: 12px; }
 #svgAvatars .svga-win8tablet .scroll-simple_outer > .scroll-element.scroll-x .scroll-bar { top: 0px; height: 12px;}
-.mobile-avar-view .svga-col-right .svga-vert-order-controls {
+.mobile-avar-view .svga-col-right .svga-vert-order-controls,
+.svga-vert-order-glob-controls {
 	display: none;
 }
 /******************* Media queries *******************/
