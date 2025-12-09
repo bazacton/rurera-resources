@@ -1113,6 +1113,7 @@ p.svga-credit {
 	.mobile-avar-view .svga-row {
 		position: relative;
 		padding-top: 0;
+		overflow: hidden;
 	}
 	.mobile-avar-view .svga-col-left {
 		width: 100%;
