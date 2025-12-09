@@ -118,6 +118,11 @@
     <section class="container mt-10 mt-md-10 lms-blog">
         <div class="row">
             <div class="col-12 col-lg-12">
+                <div class="section-title mb-50">
+                    <h2 class="mb-10 font-40">Browse All</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12">
                 <div class="row">
                     @foreach($blog as $post)
                         <div class="col-12 col-md-4 col-lg-4 col-sm-6">
