@@ -755,6 +755,19 @@ p.svga-credit {
 	padding: 0 !important;
 	position: relative;
 }
+.mobile-avar-view #svga-colors-wrap {
+	width: 100%;
+	float: left;
+	max-width: 375px;
+	overflow: hidden;
+	overflow-x: auto;
+}
+.mobile-avar-view .svga-row.row-colors {
+	
+}
+#svgAvatars #svga-colors-wrap .scroll-wrapper {
+    width: 1080px;
+}
 #svgAvatars .scroll-wrapper > .scroll-content {
 	border: none !important;
 	-webkit-box-sizing: content-box!important;
