@@ -1534,6 +1534,7 @@ p.svga-credit {
 .svga-boys .svga-colors-set > div.svga-active,
 .svga-boys .svga-elements.svga-active-element {
 	border-color: #3498db;
+	background-color: #3498db3b;
 }
 
 /* COMMON colors */
