@@ -385,13 +385,13 @@
 
 /*************** Footer menu ****************/
 #svga-footermenu {
-	margin-top: 30px;
+	margin-top: 10px;
 	position: relative;
 	margin-bottom: 0;
 	width: 100%;
 	display: table;
 	table-layout: fixed;
-	border: 1px solid;
+	border: 0;
 }
 #svga-footermenu ul {
 	display: table-row;
@@ -402,7 +402,7 @@
 	background-color: #fff;
 }
 #svga-footermenu ul li {
-	border-right: 1px solid;
+	border-right: 0;
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
@@ -410,7 +410,6 @@
 	padding: 0;
 	cursor: pointer;
 	font-size: 14px;
-	height: 60px;
 }
 li#svga-downloadavatar {
 	border-right: none!important;
@@ -1247,14 +1246,6 @@ p.svga-credit {
 		border: none;
 		padding-top: 0;
 		margin-top: 2px;
-	}
-	.mobile-avar-view #svga-footermenu {
-		margin-top: 10px;
-		margin-bottom: 15px;
-	}
-	.mobile-avar-view #svga-footermenu ul li {
-		height: 50px;
-		line-height: 48px;
 	}
 	.mobile-avar-view #svga-footermenu ul li#svga-saveavatar2 .svga-mobilehidden {
 		display: block !important;
