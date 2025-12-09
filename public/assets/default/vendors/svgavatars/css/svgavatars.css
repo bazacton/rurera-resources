@@ -199,7 +199,9 @@
     width: 54px;
     padding: 0;
 }
-.mobile-avar-view #svga-custom-color {}
+.mobile-avar-view #svga-custom-color {
+	display: none;
+}
 .svga-row.row-colors {
 	border-top: 1px solid;
 	margin-top: -1px;
