@@ -500,7 +500,8 @@
                             Swal.fire({
                                 icon: 'error',
                                 html: '<h3 class="font-20 text-center text-dark-blue py-25">Incorrect Emojis</h3>',
-                                showConfirmButton: !1
+                                showConfirmButton: !1,
+                                showCloseButton: true
                             });
                         }
                     }
