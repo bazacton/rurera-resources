@@ -571,7 +571,7 @@
 }
 
 .register-btn {
-    background: var(--secondary);
+    background: var(--primary);
     color: #fff;
     border-radius: 4px
 }
@@ -1722,7 +1722,7 @@ nav li {
 }
 
 .home-banner {
-    background-color: #1c2444;
+    background-color: var(--primary);
     min-height: 650px
 }
 
@@ -12169,21 +12169,21 @@ body .flipbook-data {
 }
 
 .top-navbar .login-btn {
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--primary);
     padding: 7px 15px !important;
     border-radius: 3px;
     font-weight: 500;
-    color: var(--secondary)
+    color: var(--primary)
 }
 
 .top-navbar .register-btn {
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--primary);
     padding: 7px 15px !important
 }
 
 .top-navbar .register-btn:hover {
     background-color: #fff;
-    color: var(--secondary)
+    color: var(--primary)
 }
 
 .top-navbar .navbar-order .ml-md-50 {
@@ -13922,7 +13922,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {
     height: 55px;
     max-width: 200px;
     border: 0;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: #fff;
     border-radius: 0 8px 8px 0;
     font-weight: 500
