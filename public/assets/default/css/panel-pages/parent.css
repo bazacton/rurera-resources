@@ -552,9 +552,9 @@ a.last-activity span strong {color: #343434;}
 body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 
 .class-connect-modal {text-align: center;}
-.class-connect-modal .modal-header { position: relative; border: 0; flex-wrap: wrap;}
+.class-connect-modal .modal-header { position: relative; flex-wrap: wrap;}
 .class-connect-modal .modal-header .close {position: absolute; right: 15px; top: 10px; }
-.class-connect-modal .modal-header strong {font-size: 22px; color: var(--primary); width: 100%;}
+.class-connect-modal .modal-header strong {font-size: 22px; color: var(--primary);}
 .class-connect-modal .user-details-block [class*="col-"] {width: 100%; flex: 0 0 100%; max-width: 100%; }
 .class-connect-modal .user-details-block .form-label {display: block; font-size: 18px; font-weight: 600; margin: 0 0 15px;}
 .class-connect-modal .user-details-block input[type="text"] {width: 100%; border: 1px solid #ddd; font-size: 14px; height: 40px; padding: 0 10px; border-radius: 3px;}
