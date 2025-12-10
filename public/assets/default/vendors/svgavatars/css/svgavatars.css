@@ -859,7 +859,7 @@ p.svga-credit {
 .element-colors-label {
     font-size: 15px;
     color: #333;
-    margin: 10px 0;
+    margin: 15px 0 10px;
     display: block;
     font-weight: 600;
     text-transform: capitalize;
