@@ -395,7 +395,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                     </ul>
                     
                     <div class="edit-profile edit-profile-block mt-20 rurera-hide bg-white p-25">
-                        <form class="child-edit-form" method="post" action="javascript:;">
+                        <form class="child-edit-form test@@" method="post" action="javascript:;">
                             {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-6 col-lg-6 col-md-6">
