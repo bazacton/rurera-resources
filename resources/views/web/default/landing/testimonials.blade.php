@@ -254,32 +254,6 @@
   });
 </script>
 <script>
-  // Initialize Masonry
-  var grid = document.querySelector('.grid');
-  var msnry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    percentPosition: true
-  });
-
-  // Filter buttons callback
-  var filtersElem = document.getElementById('filters');
-  filtersElem.addEventListener('click', function(event) {
-    if (!event.target.matches('.filter-btn')) return;
-
-    var filterValue = event.target.getAttribute('data-filter');
-    var items = grid.querySelectorAll('.grid-item');
-
-    items.forEach(function(item) {
-      if (filterValue === '*' || item.classList.contains(filterValue.slice(1))) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-
-    // Layout Masonry after changing items
-    msnry.layout();
-  });
+  
 </script>
 @endpush
