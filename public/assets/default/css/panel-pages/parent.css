@@ -254,6 +254,12 @@ Assignments Table Style Start
 .db-members:has(.rurera-button-loader) .rurera-pagination {display: none;}
 a.last-activity span {color: #bfbfbf;}
 a.last-activity span strong {color: #343434;}
+.rurera-tables-list .no-record-found .rurera-no-records {
+    display: block;
+    text-align: center;
+    padding: 0 0 30px;
+    font-size: 18px;
+}
 /*Dashboard members list style end*/
 /*dashboard Card Style Start*/
 .lms-dashboard-card {box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);}
