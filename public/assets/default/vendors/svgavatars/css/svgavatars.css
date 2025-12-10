@@ -408,7 +408,7 @@
 #svga-footermenu ul {
 	display: table-row;
 	margin: 0;
-	padding: 0;
+	padding: 0 20px 0 0;
 	list-style: none;
 	order: 2;
 }
@@ -426,7 +426,7 @@
 }
 #svga-footermenu ul li#svga-randomavatar {
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 50px;
     background-color: #fff;
     padding: 6px 15px;
@@ -1147,6 +1147,7 @@ label#svga-elements-faceshape-label {
 		padding-top: 30px;
 		top: 0;
 		left: 0;
+		z-index: 1;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
