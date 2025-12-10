@@ -592,7 +592,14 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .social-info-card .icon-box img {max-width: 100%;}
 .class-connect-modal .unlink-block.rurera-processing .unlink-btn {box-shadow: none;}
 .class-connect-modal .unlink-block .unlink-btn {padding: 14px 30px; display: inline-block;}
-
+.student-link-modal .modal-header .close {
+    position: absolute;
+    right: 15px;
+    width: auto;
+    height: auto;
+    top: 15px;
+    box-shadow: none;
+}
 .reset-btn {color: var(--primary); font-weight: 500; display: inline-flex; align-items: center; gap: 10px;}
 .reset-btn .icon-box img {height: 14px; width: 14px; filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
 .input-field input {border: 0;}
