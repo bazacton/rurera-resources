@@ -767,11 +767,6 @@ p.svga-credit {
 	width: 100%;
 	float: left;
 	max-width: 375px;
-	overflow: hidden;
-	overflow-x: auto;
-}
-.mobile-avar-view .svga-row.row-colors {
-
 }
 #svgAvatars #svga-colors-wrap .scroll-wrapper {
     width: 1080px;
