@@ -200,10 +200,10 @@
   height: 0;
 }
 .mobile-avar-view .svga-colors-set > div {
-    height: 54px;
-    max-width: 54px;
+    height: 53px;
+    max-width: 53px;
     padding: 0;
-    flex: 0 0 54px;
+    flex: 0 0 53px;
 	box-shadow: 0 0 0 2px #ddd;
     border-radius: 15px;
 }
