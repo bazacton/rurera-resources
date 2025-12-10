@@ -56,27 +56,21 @@
                       </select>
                   </div>
           </div>
+              <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+                  <div class="form-group">
+                      <span class="fomr-label">Test Prep School Choice</span>
+                      <select class="form-control rurera-req-field"
+                              name="test_prep_school">
+                          <option value="Not sure" selected>Not sure</option>
+                          <option value="Independent schools">Independent schools</option>
+                          <option value="Grammar schools">Grammar schools</option>
+                          <option value="Independent & grammar schools">Independent & grammar schools</option>
+                      </select>
+                  </div>
+              </div>
 
-		  <div class="col-12">
-			<div class="edit-element-title mb-10 mt-10">
-				<h6 class="font-weight-500">
-					School Preference
-				</h6>
-			</div>
-		</div>
 
-          <div class="col-6 col-sm-12 col-md-6 col-lg-6">
-                    <div class="form-group">
-                        <span class="fomr-label">Test Prep School Choice</span>
-                        <select class="form-control rurera-req-field"
-                                name="test_prep_school">
-                            <option value="Not sure" selected>Not sure</option>
-                            <option value="Independent schools">Independent schools</option>
-                            <option value="Grammar schools">Grammar schools</option>
-                            <option value="Independent & grammar schools">Independent & grammar schools</option>
-                        </select>
-                    </div>
-            </div>
+
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="form-group">
                     <span class="fomr-label">Username</span>
