@@ -1010,7 +1010,7 @@
                                                             <input type="text" autocomplete="off"
                                                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_dates]"
                                                                    value="{{ !empty($assignment) ? dateTimeFormat($assignment->quest_dates, 'Y-m-d', false) : old('quest_dates') }}"
-                                                                   class="form-control practice-start-date daterangepicker rurera-req-field @error('quest_dates') is-invalid @enderror"
+                                                                   class="form-control practice-start-date rureramultidatespicker daterangepicker rurera-req-field @error('quest_dates') is-invalid @enderror"
                                                                    min="{{date('Y-m-d')}}"
                                                                    placeholder=""/>
                                                             @error('quest_dates')
