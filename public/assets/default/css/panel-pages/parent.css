@@ -189,7 +189,7 @@ Assignments Table Style Start
 .db-members .card .column-2 .list-group-item {max-width: 47.5%; width: 47.5%; margin-left: 15px;}
 .dashboard .lms-jobs-form {border: 0; }
 .panel-content .dashboard .lms-jobs-form .input-field:before {display: none;}
-.member-card-header {padding:30px !important; border-bottom: 1px solid #ddd; margin-bottom: 30px; background-color: #fff; border-radius: 10px 10px 0 0;}
+.member-card-header {padding:20px !important; border-bottom: 1px solid #ddd; margin-bottom: 30px; background-color: #fff; border-radius: 10px 10px 0 0;}
 .member-card-header .dropdown {margin-left: auto;}
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
@@ -213,7 +213,7 @@ Assignments Table Style Start
 .db-members .card .list-group-item .detail-btn {border: 0; border-radius: 3px; color: #64748b; display: flex; width: 100%; margin: 0 0 8px 0; align-items: center; gap: 8px;}
 .db-members .card .list-group-item .detail-btn img {min-height: 15px; min-width: 15px; max-width: 15px; max-height: 15px; filter: invert(49%) sepia(11%) saturate(944%) hue-rotate(176deg) brightness(88%) contrast(83%);}
 .db-members .list-group-item .profile-dropdown > a {border: 1px solid #ddd; border-radius: 100%; height: 36px; width: 36px; display: inline-flex; align-items: center; justify-content: center;}
-.db-members .profile-dropdown > a .icon-box {margin-right: 0; height: auto; width: auto;}
+.db-members .profile-dropdown > a .icon-box {margin-right: 0; height: auto; width: auto; line-height: 16px;}
 .db-members .profile-dropdown > a .icon-box img {filter: invert(68%) sepia(19%) saturate(290%) hue-rotate(175deg) brightness(89%) contrast(101%);}
 .db-members .list-group-item .profile-dropdown > a:after {display: none;}
 .db-members .profile-dropdown ul {right: -5px; left: auto;}
@@ -249,11 +249,19 @@ Assignments Table Style Start
 .db-members .card .list-group-item:first-child .listing-title {display: block;}
 .db-members .card .rurera-tables-list .list-group-item .listing-title {display: none;}
 .db-members table {margin: 0;}
-.db-members:has(.no-record-found) .list-group .rurera-tables-list {background-color: inherit; border: 0; width: 100%; padding: 15px 15px 0;}
+.db-members:has(.no-record-found) .list-group .rurera-tables-list {background-color: inherit; border: 0; width: 100%; padding: 15px 35px 0;}
 .db-members .rurera-button-loader {background-color: initial; z-index: 3; height: auto; min-height: 125px; border-radius: 10px;}
 .db-members:has(.rurera-button-loader) .rurera-pagination {display: none;}
 a.last-activity span {color: #bfbfbf;}
 a.last-activity span strong {color: #343434;}
+.rurera-tables-list .no-record-found .rurera-no-records {
+    display: block;
+    text-align: center;
+    padding: 0 0 30px;
+}
+.rurera-tables-list.mb-30 .no-record-found .rurera-no-records {
+    padding-bottom: 0;
+}
 /*Dashboard members list style end*/
 /*dashboard Card Style Start*/
 .lms-dashboard-card {box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);}
@@ -552,16 +560,16 @@ a.last-activity span strong {color: #343434;}
 body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 
 .class-connect-modal {text-align: center;}
-.class-connect-modal .modal-header {text-align: center; justify-content: center; align-items: center; position: relative; border: 0; flex-wrap: wrap; padding-top: 30px;}
+.class-connect-modal .modal-header { position: relative; flex-wrap: wrap;}
 .class-connect-modal .modal-header .close {position: absolute; right: 15px; top: 10px; }
-.class-connect-modal .modal-header strong {font-size: 22px; color: var(--primary); width: 100%;}
+.class-connect-modal .modal-header strong {font-size: 22px; color: var(--primary);}
 .class-connect-modal .user-details-block [class*="col-"] {width: 100%; flex: 0 0 100%; max-width: 100%; }
 .class-connect-modal .user-details-block .form-label {display: block; font-size: 18px; font-weight: 600; margin: 0 0 15px;}
 .class-connect-modal .user-details-block input[type="text"] {width: 100%; border: 1px solid #ddd; font-size: 14px; height: 40px; padding: 0 10px; border-radius: 3px;}
 .class-connect-modal .input-field:has(.frontend-field-error) {padding: 0px; overflow: hidden;}
 .class-connect-modal .input-field:has(.frontend-field-error) input[type="text"] {border-radius: 5px; padding: 0 10px; }
 .class-connect-modal .user-details-block .class-code-submit {width: auto; margin-left: auto; margin-right: auto; margin-top: 20px !important; border-radius: 30px; }
-.class-connect-modal .modal-body {padding-top: 0; padding-bottom: 30px;}
+.class-connect-modal .modal-body {padding-bottom: 30px;}
 .class-connect-modal .modal-body h3 {margin-bottom: 15px;}
 .class-thumb-list ul {margin: 0 0 25px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
 .class-thumb .media-box {border: 1px solid #ddd; height: 100px; width: 100px; border-radius: 100%; background-color: #f4f4f4; padding: 5px; box-shadow: 0 0 0 5px #fff inset; margin: 0 0 10px; display: inline-flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -613,6 +621,11 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     padding-bottom: 0;
 }
 .reset-btn {color: var(--primary); font-weight: 500; display: inline-flex; align-items: center; gap: 10px;}
+.detail-body .student-profile-holder .reset-btn {
+    line-height: normal;
+    margin-right: 15px;
+    gap: 5px;
+}
 .reset-btn .icon-box img {height: 14px; width: 14px; filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
 .input-field input {border: 0;}
 .connect-student-form .input-field input {border: 1px solid #ddd;}
@@ -647,6 +660,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {bottom: 100%; top: auto;}
 .parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {top: auto; bottom: -7px;}
 .parent-panel .sidebar-menu-holder .sidebar-logo {display: none;}
+.parent-panel .sidebar-menu-holder {display: flex; justify-content: flex-end;}
 
 @media screen and (min-width: 992px) and (max-width: 1600px) {
     .parent-panel .sidebar-menu-holder {height: auto; width: auto;}

@@ -408,7 +408,7 @@
 #svga-footermenu ul {
 	display: table-row;
 	margin: 0;
-	padding: 0;
+	padding: 0 20px 0 0;
 	list-style: none;
 	order: 2;
 }
@@ -426,12 +426,13 @@
 }
 #svga-footermenu ul li#svga-randomavatar {
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 50px;
     background-color: #fff;
     padding: 6px 15px;
     border-radius: 3px;
     margin-left: auto;
+	height: auto;
 }
 li#svga-downloadavatar {
 	border-right: none!important;
@@ -501,6 +502,7 @@ p.svga-credit {
 /***************** Hidden on mobile *****************/
 .svga-mobilehidden {
 	display: none!important;
+	line-height: normal;
 }
 
 /******************** All modals ********************/
@@ -1137,14 +1139,17 @@ label#svga-elements-faceshape-label {
 	}
 	.mobile-avar-view .svga-col-left {
 		width: 100%;
-		position: relative;
+		position: fixed;
 		height: auto !important;
 		/* padding-top: 810px; */
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 		display: table;
 		margin-top: 0;
 		padding-top: 30px;
+		top: 0;
+		left: 0;
+		z-index: 1;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
@@ -1174,7 +1179,8 @@ label#svga-elements-faceshape-label {
 		padding-top: 0;
 		min-width: 100%;
 		min-height: 400px;
-		margin: 0 0 30px;
+		margin: 0;
+		padding-bottom: 20px;
 		border: 0;
 	}
 	.mobile-avar-view .svga-row {
@@ -1330,6 +1336,7 @@ label#svga-elements-faceshape-label {
 	#svgAvatars.mobile-avar-view .scroll-wrapper > .scroll-content {
 		max-height: 250px !important;
 		height: auto !important;
+		overflow-y: auto;
 	}
 	.mobile-avar-view  #svga-message, .mobile-avar-view  #svga-gravatar-message {
 		top: 50%;
