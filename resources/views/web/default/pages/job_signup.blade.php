@@ -243,7 +243,7 @@
                         <h2 itemprop="title" class="mb-10 font-40">Open Positions</h2>
                         <p itemprop="description">We are always seeking talented individuals to join our team and contribute <br /> to our success. Explore some new positions:</p>
                     </div>
-                    <div class="lms-accordion-job accordion" id="accordionExample">
+                    <div class="lms-accordion-job accordion test@@" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="heading_1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">Senior Software Developer
@@ -684,7 +684,7 @@
                                     <p itemprop="description">Join our team and contribute to creating exceptional user experiences through innovative UI/UX design. As a Senior UI/UX Designer, you will have the opportunity to shape the digital landscape of our curriculum, champion user-centered design, and drive positive impact for our users and business.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn test">Apply for this position</a></p>
+                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
                             </div>
