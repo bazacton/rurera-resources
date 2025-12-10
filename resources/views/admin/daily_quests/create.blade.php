@@ -1013,6 +1013,7 @@
                                                                    class="form-control practice-start-date rureramultidatespicker rurera-req-field @error('quest_dates') is-invalid @enderror"
                                                                    min="{{date('Y-m-d')}}"
                                                                    placeholder=""/>
+                                                            <input type="text" class="preference-date rureradatepicker" placeholder="Preference 1 Date" value="">
                                                             @error('quest_dates')
                                                             <div class="invalid-feedback">
                                                                 {{ $message }}
