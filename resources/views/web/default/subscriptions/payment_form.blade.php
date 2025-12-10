@@ -70,7 +70,7 @@ button:disabled {
 </style>
 
 <div class="payment-options-holder panel-border bg-white rounded-sm p-25 mb-40 mt-30">
-    <div class="selected-plan-data mb-40">
+    <div class="selected-plan-data mb-30">
         <div class="row">
             <div class="col-12 col-lg-12 col-md-12">
                 <div class="text-box">
@@ -78,7 +78,7 @@ button:disabled {
                     <h5 class="mb-10">{{$packageObj->title}}</h5>
                     <p class="mb-10">Text here</p>
                     <div class="package-price mb-25" data-price_amount="{{$packageObj->price*$subscribed_for_months}}"><strong>{{ addCurrencyToPrice(($selected_package_price)) }}</strong> / {{$subscribed_for_label}}</div>
-                    <div class="packages-back-btn font-weight-500 mb-15 font-16" data-subscribed_for="{{$subscribed_for_months}}" data-user_id="{{$user_id}}"><a href="#">Change Package</a></div>
+                    <div class="packages-back-btn font-weight-500 font-16" data-subscribed_for="{{$subscribed_for_months}}" data-user_id="{{$user_id}}"><a href="#">Change Package</a></div>
                 </div>
             </div>
         </div>
