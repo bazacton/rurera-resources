@@ -501,6 +501,7 @@ p.svga-credit {
 /***************** Hidden on mobile *****************/
 .svga-mobilehidden {
 	display: none!important;
+	line-height: normal;
 }
 
 /******************** All modals ********************/
