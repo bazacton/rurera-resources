@@ -432,6 +432,7 @@
     padding: 6px 15px;
     border-radius: 3px;
     margin-left: auto;
+	height: auto;
 }
 li#svga-downloadavatar {
 	border-right: none!important;
