@@ -106,6 +106,9 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 *************************************/
 
 /* User Detail Style Start */
+.user-profile-block .detail-header {
+    border-bottom: 1px solid #ddd;
+}
 .detail-header-profile {border-bottom: 1px solid #ddd; border-radius: 5px;}
 .detail-header-profile .profile-controls {gap: 18px; }
 .detail-header-profile .profile-controls a {display: flex; align-items: center; gap: 2px;}
