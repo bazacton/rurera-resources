@@ -600,6 +600,15 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     top: 15px;
     box-shadow: none;
 }
+.transactions-table .table thead th {
+    padding-top: 0;
+    padding-bottom: 15px;
+    border-top: 0;
+}
+.transactions-table .no-records-found {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
 .reset-btn {color: var(--primary); font-weight: 500; display: inline-flex; align-items: center; gap: 10px;}
 .reset-btn .icon-box img {height: 14px; width: 14px; filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
 .input-field input {border: 0;}
