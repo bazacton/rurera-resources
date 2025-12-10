@@ -1137,14 +1137,16 @@ label#svga-elements-faceshape-label {
 	}
 	.mobile-avar-view .svga-col-left {
 		width: 100%;
-		position: relative;
+		position: fixed;
 		height: auto !important;
 		/* padding-top: 810px; */
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 		display: table;
 		margin-top: 0;
 		padding-top: 30px;
+		top: 0;
+		left: 0;
 	}
 	.mobile-avar-view .svga-col-right {
 		width: 100%;
