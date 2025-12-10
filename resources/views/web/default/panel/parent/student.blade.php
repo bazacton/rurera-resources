@@ -425,7 +425,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6">
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days"></span>
                                                     <input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
                                                 </div>
                                             </div>
@@ -458,7 +458,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6">
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days"></span>
                                                     <input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
                                                 </div>
                                             </div>
@@ -491,7 +491,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6">
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days"></span>
                                                     <input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
                                                 </div>
                                             </div>
