@@ -23,7 +23,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                     </div>
                 </div>
                 <div class="detail-body">
-                    <div class="row mb-50">
+                    <div class="row mb-15">
                         <div class="rurera-hide col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="info-text">
                                 <h3 class="font-18 font-weight-500 mb-5">General info</h3>
