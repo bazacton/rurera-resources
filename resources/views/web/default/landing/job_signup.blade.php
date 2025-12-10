@@ -255,7 +255,7 @@
                         <h2 itemprop="title" class="mb-10 font-40">Open Positions</h2>
                         <p itemprop="description">We are always seeking talented individuals to join our team and contribute <br /> to our success. Explore some new positions:</p>
                     </div>
-                    <div class="lms-accordion-job accordion test@@" id="accordionExample">
+                    <div class="lms-accordion-job accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="heading_1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">Senior Software Developer
@@ -292,8 +292,10 @@
                                     <p itemprop="description">Join our team and contribute to the development of innovative and impactful software solutions. As a Senior Software Developer, you will have the opportunity to make a significant impact, lead technical initiatives, and contribute to the growth and success of our organization.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -337,8 +339,10 @@
                                     <p itemprop="description">In summary, as a Database Administrator, you will play a crucial role in designing, implementing, and maintaining efficient and secure database systems. You will monitor performance, troubleshoot issues, optimize queries, ensure data integrity, and collaborate with various stakeholders to meet the organization's data management needs.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -382,8 +386,10 @@
                                     <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the improvement of math education through the development and analysis of high-quality assessments. Join our team and make a positive impact on students' learning outcomes.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -426,8 +432,10 @@
                                      <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the development of a high-quality math curriculum that empowers students and supports effective teaching. Join our team and make a positive impact on math education.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -469,8 +477,10 @@
                                     <p itemprop="description">Join our creative team and contribute to the development of visually stunning digital assets that engage and inspire our audience. This is an excellent opportunity to grow your digital design skills and make a significant impact on our brand's digital presence.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -513,8 +523,10 @@
                                     <p itemprop="description">Join our team and contribute to the development of a high-quality science curriculum that sparks students' curiosity, promotes scientific literacy, and fosters a love for learning. This is an exciting opportunity to make a positive impact on science education.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -559,8 +571,10 @@
                                     <p itemprop="description">Join our team and contribute to the production of compelling and engaging content that captivates our audience and supports our brand goals. This is an exciting opportunity to showcase your creativity, writing skills, and attention to detail in a dynamic content production role.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -605,8 +619,10 @@
                                     <p itemprop="description">Join our team and contribute to the development of a high-quality language arts curriculum that nurtures literacy skills and fosters a love for reading and writing. This is an exciting opportunity to make a positive impact on language arts education.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -651,8 +667,10 @@
                                     <p itemprop="description">Join our team and contribute to the delivery of high-quality software solutions. As a QA Analyst, you will have the opportunity to ensure the reliability and functionality of our products through comprehensive testing and quality assurance practices.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -698,8 +716,10 @@
                                     <p itemprop="description">Join our team and contribute to creating exceptional user experiences through innovative UI/UX design. As a Senior UI/UX Designer, you will have the opportunity to shape the digital landscape of our curriculum, champion user-centered design, and drive positive impact for our users and business.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
-                                    <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
+                                    <p itemprop="description accordion-controls">
+                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
+                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
