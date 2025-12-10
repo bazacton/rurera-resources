@@ -1007,13 +1007,19 @@
                                                                     <i class="fa fa-calendar-week"></i>
                                                                 </button>
                                                             </div>
-                                                            <input type="text" autocomplete="off"
+                                                            <!-- <input type="text" autocomplete="off"
                                                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_dates]"
                                                                    value="{{ !empty($assignment) ? dateTimeFormat($assignment->quest_dates, 'Y-m-d', false) : old('quest_dates') }}"
                                                                    class="form-control practice-start-date rureramultidatespicker rurera-req-field @error('quest_dates') is-invalid @enderror"
                                                                    min="{{date('Y-m-d')}}"
-                                                                   placeholder=""/>
-                                                            <input type="text" class="preference-date rureradatepicker" placeholder="Preference 1 Date" value="">
+                                                                   placeholder=""/> -->
+                                                            <input type="text" autocomplete="off"
+                                                                name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_dates]"
+                                                                class="rureradatepicker form-control practice-start-date rureramultidatespicker rurera-req-field @error('quest_dates') is-invalid @enderror"
+                                                                value="{{ !empty($assignment) ? dateTimeFormat($assignment->quest_dates, 'Y-m-d', false) : old('quest_dates') }}"
+                                                                min="{{date('Y-m-d')}}"
+                                                                placeholder=""/>
+
                                                             @error('quest_dates')
                                                             <div class="invalid-feedback">
                                                                 {{ $message }}
