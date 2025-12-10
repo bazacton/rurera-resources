@@ -1015,8 +1015,8 @@
                                                                    placeholder=""/> -->
                                                             <input type="text" autocomplete="off"
                                                                 name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_dates]"
-                                                                class="rureradatepicker form-control practice-start-date rureramultidatespicker rurera-req-field @error('quest_dates') is-invalid @enderror"
                                                                 value="{{ !empty($assignment) ? dateTimeFormat($assignment->quest_dates, 'Y-m-d', false) : old('quest_dates') }}"
+                                                                class="rureradatepicker form-control practice-start-date rurera-req-field @error('quest_dates') is-invalid @enderror"
                                                                 min="{{date('Y-m-d')}}"
                                                                 placeholder=""/>
 
