@@ -1319,7 +1319,7 @@ label#svga-elements-faceshape-label {
 	.mobile-avar-view .svga-blocks {
 		border: none;
 		min-width: 0;
-		width: 19.999999999%;
+		width: 19%;
 		padding: 0;
 	}
 	#svgAvatars.mobile-avar-view .scroll-wrapper > .scroll-content {
