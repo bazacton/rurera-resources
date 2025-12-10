@@ -109,7 +109,7 @@
                 function setMobilePadding() {
                 if ($(window).width() <= 767) {
                     var adjacentHeight = $('.mobile-avar-view .svga-col-right').outerHeight();
-                    $('.first-row').css('padding-top', adjacentHeight + 'px');
+                    $('.first-row').css('padding-top', (adjacentHeight - 50) + 'px');
                 } else {
                     $('.first-row').css('padding-top', '');
                 }
