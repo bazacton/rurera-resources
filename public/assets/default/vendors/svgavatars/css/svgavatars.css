@@ -859,6 +859,7 @@ p.svga-credit {
 }
 .svga-vert-order-elements .svga-elements-wrap {
 	margin-top: 15px;
+	padding-right: 5px;
 }
 .element-colors-label {
     font-size: 15px;
