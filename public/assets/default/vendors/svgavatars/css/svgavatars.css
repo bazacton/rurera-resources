@@ -193,6 +193,7 @@
 	gap: 6px;
 	overflow: hidden;
 	overflow-x: auto;
+	padding: 2px 2px;
 }
 .mobile-avar-view .svga-colors-set > div {
     height: 54px;
@@ -415,7 +416,9 @@
 	position: relative;
 	padding: 0;
 	cursor: pointer;
-	font-size: 14px;
+	color: #333;
+    font-weight: 600;
+    font-size: 15px;
 }
 #svga-footermenu ul li#svga-randomavatar {
     position: absolute;
@@ -1159,6 +1162,7 @@ p.svga-credit {
 		min-width: 100%;
 		min-height: 400px;
 		margin: 0 0 30px;
+		border: 0;
 	}
 	.mobile-avar-view .svga-row {
 		margin: 0;
