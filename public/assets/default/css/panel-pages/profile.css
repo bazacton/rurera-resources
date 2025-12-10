@@ -53,6 +53,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .select-field select{border: 1px solid #ddd; font-size: 16px; height: 40px; padding: 0 0 0 35px; border-radius: 5px; width: 100%;}
 .edit-profile .form-group [class*="col-"] {padding-left: 8px; padding-right: 8px;}
 .edit-profile .form-group .row {margin: 0 -8px;}
+.edit-profile .input-field {position: relative;}
 .edit-profile .form-group .input-field { margin-bottom: 16px; border: 0; padding: 0; height: auto; border-radius: 0; position: relative;}
 .edit-profile .form-group .input-field textarea {border: 1px solid #ddd; border-radius: 5px; padding: 10px 10px; height: 98px; width: 100%;}
 .edit-profile .select-field select {padding: 0 10px; color: #888; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
