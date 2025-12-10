@@ -1174,7 +1174,8 @@ label#svga-elements-faceshape-label {
 		padding-top: 0;
 		min-width: 100%;
 		min-height: 400px;
-		margin: 0 0 30px;
+		margin: 0;
+		padding-bottom: 20px;
 		border: 0;
 	}
 	.mobile-avar-view .svga-row {
