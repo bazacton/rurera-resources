@@ -442,7 +442,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </div>
                                     </div>
                                 </div> -->
-                                <div class="col-6 col-lg-6 col-md-6">
+                                <div class="col-12">
                                     <label>Preference 2</label>
                                     <div class="preference-field-group">
                                         <div class="row">
@@ -475,7 +475,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </div>
                                     </div>
                                 </div> -->
-                                <div class="col-6 col-lg-6 col-md-6">
+                                <div class="col-12">
                                     <label>Preference 3</label>
                                     <div class="preference-field-group">
                                         <div class="row">
