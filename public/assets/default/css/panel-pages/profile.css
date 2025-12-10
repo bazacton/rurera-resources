@@ -48,7 +48,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .profile-image img {border-radius: 100%; height: 96px; width: 96px; object-fit: cover;}
 .edit-profile-image .profile-image-btn {gap: 10px;}
 .edit-profile .form-group .icon-box img {position: absolute; top: 50%;left: 10px; margin-top: -9px; height: 18px; width: 18px;filter: invert(73%) sepia(10%) saturate(638%) hue-rotate(175deg) brightness(88%) contrast(82%);}
-.edit-profile .form-group .input-field input[type="text"],
+.edit-profile .input-field input[type="text"],
 .edit-profile .select-field select{border: 1px solid #ddd; font-size: 16px; height: 40px; padding: 0 0 0 35px; border-radius: 5px; width: 100%;}
 .edit-profile .form-group [class*="col-"] {padding-left: 8px; padding-right: 8px;}
 .edit-profile .form-group .row {margin: 0 -8px;}
