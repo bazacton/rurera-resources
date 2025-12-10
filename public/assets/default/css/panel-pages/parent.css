@@ -260,6 +260,9 @@ a.last-activity span strong {color: #343434;}
     padding: 0 0 30px;
     font-size: 18px;
 }
+.rurera-tables-list.mb-30 .no-record-found .rurera-no-records {
+    padding-bottom: 0;
+}
 /*Dashboard members list style end*/
 /*dashboard Card Style Start*/
 .lms-dashboard-card {box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);}
