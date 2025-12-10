@@ -191,6 +191,8 @@
 .mobile-avar-view .svga-colors-set {
     display: flex;
 	gap: 6px;
+	overflow: hidden;
+	overflow-x: auto;
 }
 .mobile-avar-view .svga-colors-set > div {
     height: 54px;
