@@ -400,26 +400,16 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <div class="row">
                                 <div class="col-6 col-lg-6 col-md-6">
                                     <label>Test Prep School Choice</label>
-                                    <div class="preference-field-group">
-                                        <div class="select-field">
-                                            <select class="form-control rurera-req-field" name="test_prep_school">
-                                                <option value="Not sure" selected>Not sure</option>
-                                                <option value="Independent schools">Independent schools</option>
-                                                <option value="Grammar schools">Grammar schools</option>
-                                                <option value="Independent & grammar schools">Independent & grammar schools</option>
-                                            </select>
-                                        </div>
-                                        <div class="select-field">
-                                            <select class="form-control preference_field rurera-req-field" name="school_preference_1">
-                                                <option value="">Select Preference</option>
-                                                @foreach( $schools as $schoolObj)
-                                                    <option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_1)? 'selected' : ''}}>{{$schoolObj->title}}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
+                                    <div class="select-field">
+                                        <select class="form-control rurera-req-field" name="test_prep_school">
+                                            <option value="Not sure" selected>Not sure</option>
+                                            <option value="Independent schools">Independent schools</option>
+                                            <option value="Grammar schools">Grammar schools</option>
+                                            <option value="Independent & grammar schools">Independent & grammar schools</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <!-- <div class="col-6 col-lg-6 col-md-6">
+                                <div class="col-6 col-lg-6 col-md-6">
                                     <label>Preference 1</label>
                                     <div class="select-field">
                                         <select class="form-control preference_field rurera-req-field" name="school_preference_1">
@@ -429,28 +419,17 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             @endforeach
                                         </select>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="col-6 col-lg-6 col-md-6">
-                                    
                                     <div class="form-group">
                                         <span class="fomr-label mb-10 d-block">Preference 1 Date</span>
-                                        <div class="preference-field-group">
-                                            <div class="input-field">
-                                                <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-                                                <input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
-                                            </div>
-                                            <div class="select-field">
-                                                <select class="form-control preference_field" name="school_preference_2">
-                                                    <option value="">Select Preference</option>
-                                                    @foreach( $schools as $schoolObj)
-                                                        <option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_2)? 'selected' : ''}}>{{$schoolObj->title}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
+                                        <div class="input-field">
+                                            <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                            <input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-6 col-lg-6 col-md-6">
+                                <div class="col-6 col-lg-6 col-md-6">
                                     <label>Preference 2</label>
                                     <div class="select-field">
                                         <select class="form-control preference_field" name="school_preference_2">
@@ -460,28 +439,17 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             @endforeach
                                         </select>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="col-6 col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <span class="fomr-label mb-10 d-block">Preference 2 Date</span>
-                                        <div class="preference-field-group">
-                                            <div class="input-field">
-                                                <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-                                                <input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
-                                            </div>
-                                            <div class="select-field">
-                                                <select class="form-control preference_field rurera-req-field" name="school_preference_3">
-                                                    <option value="">Select Preference</option>
-                                                    @foreach( $schools as $schoolObj)
-                                                        <option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_3)? 'selected' : ''}}>{{$schoolObj->title}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
+                                        <div class="input-field">
+                                            <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                            <input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
                                         </div>
-                                        
                                     </div>
                                 </div>
-                                <!-- <div class="col-6 col-lg-6 col-md-6">
+                                <div class="col-6 col-lg-6 col-md-6">
                                     <label>Preference 3</label>
                                     <div class="select-field">
                                         <select class="form-control preference_field rurera-req-field" name="school_preference_3">
@@ -491,7 +459,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             @endforeach
                                         </select>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="col-6 col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <span class="fomr-label mb-10 d-block">Preference 3 Date</span>
