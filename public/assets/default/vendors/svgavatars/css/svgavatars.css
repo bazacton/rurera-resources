@@ -405,6 +405,7 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	order: 2;
 }
 #svga-footermenu ul li {
 	border-right: 0;
