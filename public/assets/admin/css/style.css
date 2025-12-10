@@ -2175,6 +2175,9 @@ Admin Questions Generator Page Style End
 .editor-objects-block .editor-objects-list li i {padding: 5px 5px 5px; font-size: 14px;}
 .editor-controls-holder .tab-content > .tab-pane:has(.editor-objects) {overflow: hidden; overflow-y: auto; height: 430px;}
 /* Admin Books Style End */
+.main-sidebar .sidebar-menu li.rurera-hide {
+    display: none;
+}
 
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {display: none;}
