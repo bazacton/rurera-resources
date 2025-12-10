@@ -865,6 +865,14 @@ p.svga-credit {
     text-transform: capitalize;
     line-height: normal;
 }
+label#svga-elements-faceshape-label {
+    font-size: 15px;
+    color: #333;
+    display: block;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: normal;
+}
 /******************* Media queries *******************/
 @media (min-width: 576px) {
 	#svga-container {
