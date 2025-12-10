@@ -777,20 +777,19 @@ p.svga-credit {
     width: 1080px;
 }
 #svgAvatars .scroll-wrapper > .scroll-content {
-	border: none !important;
+	border: none;
 	-webkit-box-sizing: content-box!important;
 	-moz-box-sizing: content-box!important;
 	box-sizing: content-box !important;
 	height: auto;
 	left: 0;
 	margin: 0;
-	max-height: none !important;
-	max-width: none !important;
-	overflow: scroll !important;
+	max-height: none;
+	max-width: none;
 	padding: 0;
-	position: relative !important;
+	position: relative;
 	top: 0;
-	width: auto !important;
+	width: auto;
 }
 #svgAvatars .scroll-wrapper > .scroll-content::-webkit-scrollbar {
 	height: 0;
