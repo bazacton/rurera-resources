@@ -410,6 +410,12 @@ a.last-activity span strong {color: #343434;}
 .lms-choose-membership .discount-code-block input[type="text"] {background-color: #fff; border: 1px solid #ddd;}
 .lms-choose-membership .discount-code-block .nav-link {width: auto; background-color: inherit; border-radius: 5px !important; box-shadow: none; color: var(--primary); border: 1px solid var(--primary); text-align: center; height: 52px; line-height: 30px; position: relative; margin-top: 30px; font-weight: 500; margin-bottom: 0; }
 .lms-choose-membership .discount-code-block .nav-link:after {content: "\2192"; display: inline-block; font-weight: 500; font-size: 24px; vertical-align: middle; margin-left: 10px;}
+.lms-choose-membership .discount-code-block .rurera-processing.nav-link:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+}
 .lms-choose-membership .discount-code-block p {margin: 0 0 10px; color: var(--primary); font-weight: 500;}
 .book-form .tests-list li {width: 49%; min-height: auto; justify-content: center; align-items: flex-start; border: 0; background-color: #f3f3f3; height: 52px; padding: 5px 10px; color: #b5b8bf; font-size: 14px;}
 .lms-choose-membership .book-form > .row,
