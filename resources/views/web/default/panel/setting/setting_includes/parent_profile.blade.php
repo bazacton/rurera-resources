@@ -18,7 +18,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                             <img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
                         </span>
                         <h2 class="info-title font-weight-500">
-                            {{$user->display_name}}
+                            {{$user->get_full_name()}}
                         </h2>
                     </div>
                 </div>
@@ -37,8 +37,8 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     <li>
                                         <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                             <span class="info-list-label font-16">
-                                                Display name
-                                                <strong class="d-block font-weight-500">{{$user->display_name}}</strong>
+                                                Full Name
+                                                <strong class="d-block font-weight-500">{{$user->get_full_name()}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
                                                 <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
@@ -64,20 +64,8 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     <li>
                                         <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                             <span class="info-list-label font-16">
-                                                Date of birth
-                                                <strong class="d-block font-weight-500">12/10/1988</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Preference
-                                                <strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
+                                                Contact no
+                                                <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
                                                 <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
@@ -97,18 +85,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             </span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Contact no
-                                                <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li> 
+
                                 </ul>
                             </div>
                         </div>
@@ -124,7 +101,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                             <div class="user-info d-flex align-items-center flex-wrap mb-30">
                                 <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="edit-profile image" height="48" width="48">
                                 <span class="info-text d-inline-flex flex-column font-weight-500">
-                                    {{$user->display_name}}
+                                    {{$user->get_full_name()}}
                                 </span>
                             </div>
                             <div class="edit-profile-menu">
@@ -192,64 +169,34 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>First Name</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="first_name" class="rurera-req-field" placeholder="First Name" value="{{( $user->first_name != '')? $user->first_name : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Last Name</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="last_name" class="rurera-req-field" placeholder="Last Name" value="{{( $user->last_name != '')? $user->last_name : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Display Name</label>
+                                                <label>Contact No</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-                                                    <input type="text" name="display_name" class="rurera-req-field" placeholder="Display Name" value="{{( $user->display_name != '')? $user->display_name : $user->first_name.' '.$user->last_name}}">
+                                                    <input type="text" name="mobile" class="" placeholder="Contact no" value="{{( $user->mobile != '')? $user->mobile : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Email Address</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="email" class="rurera-req-field" placeholder="Email Address" value="{{( $user->email != '')? $user->email : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Password</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-                                                    <input type="text" name="password" placeholder="Password" value="">
+                                                    <input type="password" name="password" placeholder="Password" value="">
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Contact no</label>
-                                                <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/mobile.svg" alt="mobile"></span>
-                                                    <input type="text" name="mobile" class="rurera-req-field" placeholder="Contact no" value="{{( $user->mobile != '')? $user->mobile : ''}}">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 form-group">
-                                                <label>Your Preference</label>
-                                                <div class="select-field">
-                                                    <select name="user_preference" class="rurera-req-field">
-                                                        <option value="male" {{ (!empty($user) && $user->user_preference == 'male') ? 'selected' : '' }}>Male</option>
-                                                        <option value="female" {{ (!empty($user) && $user->user_preference == 'female') ? 'selected' : '' }}>Female</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-											<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-												<div class="form-group custom-switches-stacked">
-													<div class="custom-switch pl-0">
-														<input type="hidden" name="weekly_summary_emails_label" value="0">
-														<input type="checkbox" name="weekly_summary_emails" id="weekly_summary_emails_label" value="1" class="custom-switch-input" {{ (!empty($user) && $user->weekly_summary_emails == '1') ? 'checked' : '' }}/>
-														<span class="custom-switch-indicator"></span>
-														<label class="custom-switch-description mb-0 cursor-pointer" for="weekly_summary_emails_label"><span>Receive weekly summary emails</span></label>
-                                                    </div>
-												</div>
-											</div>
+
                                         </div>
                                     </div>
                                 </div>
