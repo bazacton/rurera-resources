@@ -231,7 +231,7 @@
                                 </div>
                                 @endif
                     
-                                <div class="col-12 col-lg-12 mt-30">
+                                <!-- <div class="col-12 col-lg-12 mt-30">
                                     <div class="spell-widget">
                                         <div id="accordion">
                                             <div class="panel-shadow panel-border rounded-sm pb-10 pt-15" style="background-color: #ddd;">
@@ -274,7 +274,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 
                                 <div class="col-12 col-lg-12 mb-30 mt-25">
                                     <div class="referrals panel-border panel-shadow rounded-sm">
