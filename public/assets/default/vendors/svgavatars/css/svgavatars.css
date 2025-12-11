@@ -781,7 +781,7 @@ p.svga-credit {
 	float: left;
 	max-width: 375px;
 }
-#svgAvatars #svga-colors-wrap .scroll-wrapper {
+.mobile-avar-view #svgAvatars #svga-colors-wrap .scroll-wrapper {
     width: 1080px;
 }
 #svgAvatars .scroll-wrapper > .scroll-content {
