@@ -735,7 +735,7 @@
 
 
 <div id="edit-quest-modal-box" class="edit-quest-modal modal fade" role="dialog" data-backdrop="static">>
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body ">
                 <form name="edit-quest-modal" id="edit-quest-form">
