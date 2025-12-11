@@ -106,7 +106,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->get_first_name()}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -118,7 +117,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->get_last_name()}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -130,7 +128,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->display_name}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
