@@ -6,7 +6,7 @@
 
 @section('content')
     <section>
-        <div class="section-title mb-30" itemscope itemtype="https://schema.org/Program">
+        <div class="section-title mb-15" itemscope itemtype="https://schema.org/Program">
             <h2 itemprop="name" class="font-22 mb-0">Referral program</h2>
         </div>
         <div class="referral-holder panel-border bg-white rounded-sm px-25 pt-25">
