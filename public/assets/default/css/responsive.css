@@ -1530,6 +1530,9 @@ Lms Responsive Style Start
         margin-right: 15px;
         margin-left: 0;
     }
+    .detail-body .profile-view-data .edit-profile-controls {
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
