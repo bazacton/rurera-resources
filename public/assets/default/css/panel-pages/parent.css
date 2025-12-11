@@ -264,7 +264,13 @@ a.last-activity span strong {color: #343434;}
     padding-bottom: 0;
 }
 /*Dashboard members list style end*/
-
+/* Profile Select Gnder Style Start */
+.parent-panel .radio-field label {border: 1px solid #ddd; border-radius: 20px; min-width: 90px; background-color: #f3f1f1; cursor: pointer; padding: 8px 15px; justify-content: center;}
+.parent-panel .radio-field input[type=radio] {position: absolute; opacity: 0; height: 0; width: 0;}
+.parent-panel .select-option {gap: 20px;}
+.parent-panel .radio-field .thumb-box img {border-radius: 100%;}
+.parent-panel .radio-field input[type=radio]:checked ~ label {background-color: var(--primary); color: #fff; border-color: var(--primary);}
+/* Profile Select Gnder Style End */
 /*dashboard Card Style Start*/
 .lms-dashboard-card {box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);}
 .lms-dashboard-card .lms-card-timeline {border-left: 2px dashed #f6f6f6;margin-left: 10px;}
