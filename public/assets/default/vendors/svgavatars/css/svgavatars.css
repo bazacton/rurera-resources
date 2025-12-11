@@ -424,7 +424,7 @@
     font-weight: 600;
     font-size: 15px;
 }
-#svga-footermenu ul li#svga-randomavatar {
+.mobile-avar-view #svga-footermenu ul li#svga-randomavatar {
     position: absolute;
     right: 30px;
     top: 50px;
@@ -437,7 +437,7 @@
 li#svga-downloadavatar {
 	border-right: none!important;
 }
-#svga-footermenu ul li ul {
+.mobile-avar-view #svga-footermenu ul li ul {
 	margin: 0;
 	padding: 0;
 	position: absolute;
