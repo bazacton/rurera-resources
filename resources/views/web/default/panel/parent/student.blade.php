@@ -630,7 +630,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             
-                            <div class="form-group custom-switches-stacked mb-10">
+                            <div class="form-group custom-switches-stacked mb-15">
                                 <label class="custom-switch pl-0 custom-label mb-0">
                                     <span class="display-icon-box">
                                         <img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable">
@@ -644,7 +644,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 
-                                <div class="form-group custom-switches-stacked mb-10">
+                                <div class="form-group custom-switches-stacked mb-15">
                                     <label class="custom-switch pl-0 custom-label mb-0">
                                         <span class="display-icon-box">
                                             <img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell">
@@ -661,7 +661,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 @php $disabled = (!$user->subscription('bookshelf'))? 'disabled' : ''; @endphp
                                 @php $is_disabled_style = (!$user->subscription('bookshelf'))? 'disabled-style' : ''; @endphp
                                 
-                                <div class="form-group custom-switches-stacked mb-10 {{$is_disabled_style}}">
+                                <div class="form-group custom-switches-stacked mb-15 {{$is_disabled_style}}">
                                     <label class="custom-switch pl-0 custom-label mb-0">
                                         <span class="display-icon-box">
                                             <img src="/assets/default/img/sidebar/games.svg" width="150" height="150" alt="games">
@@ -679,7 +679,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 @php $disabled = (!$user->subscription('bookshelf'))? 'disabled' : ''; @endphp
                                 @php $is_disabled_style = (!$user->subscription('bookshelf'))? 'disabled-style' : ''; @endphp
                                 
-                                <div class="form-group custom-switches-stacked mb-10 {{$is_disabled_style}}">
+                                <div class="form-group custom-switches-stacked mb-15 {{$is_disabled_style}}">
                                     <label class="custom-switch pl-0 custom-label mb-0">
                                         <span class="display-icon-box">
                                             <img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books">
@@ -696,7 +696,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 @php $is_disabled = (!$user->subscription('11plus'))? 'disabled' : ''; @endphp
                                 @php $is_disabled_style = (!$user->subscription('11plus'))? 'disabled-style' : ''; @endphp
                                 
-                                <div class="form-group custom-switches-stacked mb-10">
+                                <div class="form-group custom-switches-stacked mb-15">
                                     <label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
                                         <span class="display-icon-box">
                                             <img src="/assets/default/img/assignment-logo/independent_exams.png" height="65" width="142" alt="independent_exams">
@@ -713,7 +713,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 @php $is_disabled = (!$user->subscription('sats'))? 'disabled' : ''; @endphp
                                 @php $is_disabled_style = (!$user->subscription('sats'))? 'disabled-style' : ''; @endphp
                                 
-                                <div class="form-group custom-switches-stacked mb-10">
+                                <div class="form-group custom-switches-stacked mb-15">
                                     <label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
                                         <span class="display-icon-box">
                                             <img src="/assets/default/img/assignment-logo/sats.png" height="65" width="81" alt="sats">
@@ -736,7 +736,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                         
-                                        <div class="form-group custom-switches-stacked mb-10">
+                                        <div class="form-group custom-switches-stacked mb-15">
                                             <span class="display-icon-box">
                                                 
                                             </span>
