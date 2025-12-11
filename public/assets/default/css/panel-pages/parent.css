@@ -1,6 +1,7 @@
 /*************************************
 Dashboard Right Sidebar Pages Style Start
 **************************************/
+body.parent-panel {background-color: #f9fafe;}
 .panel-right-sidebar .card-header {border: 0;}
 .top-navbar .dropdown-menu.user-profile-dropdown {min-width: 250px; border: 1px solid #e1e1e1; border-radius: 10px; padding: 15px 0 10px; visibility: hidden;opacity: 0;display: block !important;transition: all .5s ease;margin-top: 0;text-align: center; top: 100%;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-detail img {margin: 0 0 15px;}
