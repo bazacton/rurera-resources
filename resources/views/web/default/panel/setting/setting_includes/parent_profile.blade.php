@@ -14,9 +14,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
             <div class="user-detail mb-50 bg-white panel-border rounded-sm p-25">
                 <div class="detail-header mb-25 pb-25">
                     <div class="info-media d-flex align-items-center flex-wrap">
-                        <span class="media-box">
-                            <img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
-                        </span>
+
                         <h2 class="info-title font-weight-500">
                             {{$user->get_full_name()}}
                         </h2>
@@ -99,7 +97,6 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                     <div class="col-lg-3 col-md-4 col-12 rurera-hide">
                         <div class="edit-profile-sidebar">
                             <div class="user-info d-flex align-items-center flex-wrap mb-30">
-                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="edit-profile image" height="48" width="48">
                                 <span class="info-text d-inline-flex flex-column font-weight-500">
                                     {{$user->get_full_name()}}
                                 </span>
