@@ -35,21 +35,11 @@
               <div class="select-option d-flex align-items-center flex-wrap">
                   <div class="radio-field">
                       <input type="radio" name="gender" id="male" value="male" checked>
-                      <label for="male" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
-                            <span class="thumb-box float-left mr-10">
-                                <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
-                            </span>
-                          Male
-                      </label>
+                      <label for="male" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">Male</label>
                   </div>
                   <div class="radio-field">
                       <input type="radio" name="gender" id="female" value="female">
-                      <label for="female" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
-                            <span class="thumb-box float-left mr-10">
-                                <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
-                            </span>
-                          Female
-                      </label>
+                      <label for="female" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">Female</label>
                   </div>
               </div>
           </div>
