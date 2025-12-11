@@ -278,18 +278,18 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     <div class="radio-field">
                                         <input type="radio" name="gender" id="male">
                                         <label for="male" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
-                                            <span class="thumb-box float-left mr-10">
+                                            <!-- <span class="thumb-box float-left mr-10">
                                                 <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
-                                            </span>
+                                            </span> -->
                                             Male
                                         </label>
                                     </div>
                                     <div class="radio-field">
                                         <input type="radio" name="gender" id="female">
                                         <label for="female" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
-                                            <span class="thumb-box float-left mr-10">
+                                            <!-- <span class="thumb-box float-left mr-10">
                                                 <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
-                                            </span>
+                                            </span> -->
                                             Female
                                         </label>
                                     </div>
