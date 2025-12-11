@@ -1179,6 +1179,7 @@ Lms Responsive Style Start
     .login-holder h2.font-24 {font-size: 1.5rem !important;} 
     .learning-start-box .learning-content-box-icon {margin-top: 30px;}
     .edit-icon em {visibility: visible; opacity: 1;}
+    .detail-body.p-25 {padding: 0 !important;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1435,7 +1436,8 @@ Lms Responsive Style Start
     .chart-filters .form-group:has(select) .input-label {display: none;}
     .chart-filters .filters-list {margin-bottom: 0; margin-top: 0; width: 100%;}
     .payment-card {min-width: 100%;}
-    .detail-header-profile .profile-controls {gap: 5px 18px; margin-top: 15px;}
+    .detail-header-profile .profile-controls {gap: 5px 15px; margin-top: 15px;}
+    .detail-header-profile {padding: 25px !important;}
     .form-control.child-analytics {height: 49px; border-radius: 5px; border: 1px solid #ddd;}
     .member-card-header .dropdown {margin-left: 0;}
     .lms-quiz-section .input-holder:has(input[type="number"]) {max-width: min-content; min-width: 90px;}
