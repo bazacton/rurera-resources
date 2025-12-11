@@ -74,6 +74,12 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .filters-v2 .analytics-type li a {padding: 0 10px 0 0; border-radius: 50px; border-style: solid; }
 .filters-v2 .analytics-type {gap: 15px;}
 .chart-filters .filters-v2 .analytics-type .active a {box-shadow: none;}
+.edit-profile .input-field:has(.rurera-error-msg) .icon-box img {
+    margin-top: -17px;
+}
+.edit-profile .select-field:has(.rurera-error-msg):before {
+    height: 40px;
+}
 /*Edit Profile Style End*/
 
 /*************************************
