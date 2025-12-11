@@ -132,6 +132,7 @@
                         html: a,
                         showCancelButton: !1,
                         showConfirmButton: !1,
+                        showCloseButton: true,
                         customClass: { content: "p-0 text-left" },
                         width: "48rem",
                         onOpen: function () {
