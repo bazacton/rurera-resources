@@ -740,12 +740,12 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <span class="d-block pt-5 font-12">This is how others will recognize you</span>
                                             </h6>
                                         </div>
-                                        <!-- <div class="profile-image text-center">
+                                        <div class="profile-image text-center">
                                             <figure class="d-inline-flex position-relative">
                                                 <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex align-items-center justify-content-center font-16 bg-white"><img src="/assets/default/svgs/edit-2.svg" alt="" style="width:18px; height:18px"></a>
                                             </figure>
-                                        </div> -->
+                                        </div>
                                     </div>
                                     <div class="mb-0 mt-20">
                                         <div class="row">
