@@ -61,7 +61,7 @@
                 <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
                     <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Home">
                         <span class="sidenav-item-icon mr-20">
-                            <img src="/assets/default/img/sidebar/home-old.png" alt="home-old">
+                            <img src="/assets/default/img/sidebar/home-old.svg" alt="home-old">
                         </span>
                         <span class="nav-sub-title font-16">Home</span>
                     </a>
