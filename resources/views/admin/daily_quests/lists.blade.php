@@ -768,7 +768,7 @@
                                    placeholder=""/> -->
 
                             <input type="text" autocomplete="off"
-                                   class="form-control practice-start-date rureradatepicker rureramultidatespicker rurera-req-field" dataType="quest_date"
+                                   class="form-control practice-start-date rureradatepicker rurera-req-field" dataType="quest_date"
                                    value=""
                                    min="{{date('Y-m-d')}}" 
                                    placeholder=""
