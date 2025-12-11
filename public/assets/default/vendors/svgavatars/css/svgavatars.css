@@ -207,7 +207,7 @@
 	box-shadow: 0 0 0 2px #ddd;
     border-radius: 15px;
 }
-.mobile-avar-view #svga-custom-color {
+#svga-custom-color {
 	display: none !important;
 }
 .svga-row.row-colors {
