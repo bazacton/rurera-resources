@@ -1181,6 +1181,7 @@ Lms Responsive Style Start
     .edit-profile-content-holder {
         padding: 0 30px;
     }
+    .edit-icon em {visibility: visible; opacity: 1;}
 }
 
 @media screen and (max-width: 640px) {
