@@ -413,13 +413,18 @@
 	order: 2;
 }
 #svga-footermenu ul li {
-	border-right: 0;
-	display: inline-block;
+	border-right: 1px solid;
+	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
 	padding: 0;
 	cursor: pointer;
+	
+}
+.mobile-avar-view #svga-footermenu ul li {
+	border-right: 0;
+	display: inline-block;
 	color: #333;
     font-weight: 600;
     font-size: 15px;
