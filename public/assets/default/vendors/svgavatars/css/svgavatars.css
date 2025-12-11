@@ -1021,11 +1021,15 @@ label#svga-elements-faceshape-label {
 	}
 	.svga-elements {
 		display: block;
-        width: 18.222%;
-        padding-bottom: 18.222%;
+        width: 17.777%;
+        padding-bottom: 17.777%;
         margin: 0;
         border: 2px solid;
         float: left;
+	}
+	.mobile-avar-view .svga-elements {
+        width: 18.222%;
+        padding-bottom: 18.222%;
 	}
 	.svga-row.row-controls {
 		border: none;
