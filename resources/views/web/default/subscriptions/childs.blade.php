@@ -56,41 +56,44 @@
             <div class="col-6 col-sm-12 col-md-6 col-lg-6">
                   <div class="form-group">
                       <span class="fomr-label">Year Group</span>
-                      <select class="form-control @error('category_id') is-invalid @enderror rurera-req-field"
-                              name="year_id">
-                          <option {{ !empty($trend) ?
-                          '' : 'selected' }} disabled>Choose Year Group</option>
+                      <div class="select-holder">
+                        <select class="form-control @error('category_id') is-invalid @enderror rurera-req-field"
+                                name="year_id">
+                            <option {{ !empty($trend) ?
+                            '' : 'selected' }} disabled>Choose Year Group</option>
 
-                          @foreach($categories as $category)
-                          @if(!empty($category->subCategories) and count($category->subCategories))
-                          <optgroup label="{{  $category->title }}">
-                              @foreach($category->subCategories as $subCategory)
-                              <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
-                                  category_id == $subCategory->id) selected="selected" @endif>{{
-                                  $subCategory->title }}
-                              </option>
-                              @endforeach
-                          </optgroup>
-                          @else
-                          <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
-                                  and $class->category_id == $category->id) selected="selected" @endif>{{
-                              $category->title }}
-                          </option>
-                          @endif
-                          @endforeach
-                      </select>
+                            @foreach($categories as $category)
+                            @if(!empty($category->subCategories) and count($category->subCategories))
+                            <optgroup label="{{  $category->title }}">
+                                @foreach($category->subCategories as $subCategory)
+                                <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
+                                    category_id == $subCategory->id) selected="selected" @endif>{{
+                                    $subCategory->title }}
+                                </option>
+                                @endforeach
+                            </optgroup>
+                            @else
+                            <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
+                                    and $class->category_id == $category->id) selected="selected" @endif>{{
+                                $category->title }}
+                            </option>
+                            @endif
+                            @endforeach
+                        </select>
+                      </div>
                   </div>
           </div>
               <div class="col-6 col-sm-12 col-md-6 col-lg-6">
                   <div class="form-group">
                       <span class="fomr-label">Test Prep School Choice</span>
-                      <select class="form-control rurera-req-field"
-                              name="test_prep_school">
-                          <option value="Not sure" selected>Not sure</option>
-                          <option value="Independent schools">Independent schools</option>
-                          <option value="Grammar schools">Grammar schools</option>
-                          <option value="Independent & grammar schools">Independent & grammar schools</option>
-                      </select>
+                      <div class="select-holder">
+                        <select class="form-control rurera-req-field" name="test_prep_school">
+                            <option value="Not sure" selected>Not sure</option>
+                            <option value="Independent schools">Independent schools</option>
+                            <option value="Grammar schools">Grammar schools</option>
+                            <option value="Independent & grammar schools">Independent & grammar schools</option>
+                        </select>
+                      </div>
                   </div>
               </div>
 
