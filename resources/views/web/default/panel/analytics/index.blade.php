@@ -13,13 +13,12 @@
 @section('content')
 <section class="member-card-header activities-header pb-20 mb-0">
     <div class="d-flex align-items-start align-items-md-center justify-content-between flex-md-row">
-        <h2 class="section-title font-22">Analytics</h2>
+        <h2 class="section-title font-36">Analytics</h2>
         <div class="dropdown db-members">
             @if(auth()->check() && (auth()->user()->isParent()))
             <div class="ms-auto last-activity profile-dropdown">
-                <a href="#" class="font-16 font-weight-normal">{{$selected_child}}</a>
+                <a href="#" class="font-18 font-weight-normal">{{$selected_child}}</a>
                 <ul>
-                    <li><a href="/{{panelRoute()}}/analytics/?child=all" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt="switch-user" height="800" width="800"></span> All Students</a></li>
                     @if( !empty( $childs ) )
                     @foreach($childs as $childLinkObj)
                     @php $childObj = $childLinkObj->user; @endphp
@@ -280,9 +279,9 @@ $(function () {
     var container = $(".daterangepicker");
     var input = $("#reportrange1");
     if (
-      !container.is(e.target) && 
-      container.has(e.target).length === 0 && 
-      !input.is(e.target) && 
+      !container.is(e.target) &&
+      container.has(e.target).length === 0 &&
+      !input.is(e.target) &&
       input.has(e.target).length === 0
     ) {
       e.stopPropagation();

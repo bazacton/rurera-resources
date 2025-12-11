@@ -22,12 +22,12 @@
 <div class="dashboard-students-holder">
     <section class="member-card-header pb-50">
         <div class="d-flex align-items-center justify-content-between flex-md-row">
-            <h2 class="section-title font-22">Students</h2>
+            <h2 class="section-title font-36">Students</h2>
             <div class="dropdown">
-                <button type="button" class="btn subscription-modal p-0 font-16 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
+                <button type="button" class="btn subscription-modal p-0 font-18 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
                     <img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800"> Add Student
                 </button>
-                <button type="button" class="btn link-student-modal p-0 font-16" data-type="child_register" data-id="0">
+                <button type="button" class="btn link-student-modal p-0 font-18 rurera-hide" data-type="child_register" data-id="0">
                     <img src="/assets/default/img/student.png" width="64" height="64" alt="student"> Link Student
                 </button>
             </div>
@@ -121,6 +121,14 @@
                                                         {{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}} {{isset($childObj->userClass->title)? $childObj->userClass->title : ''}} {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
                                                     </small>
                                             </a>
+
+
+                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto last-activity">
+                                                <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
+                                                <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
+                                                    {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
+                                                </span>
+                                            </a>
                                             <div class="col-auto last-activity">
                                                 <h6 class="listing-title font-16 font-weight-500">Membership</h6>
                                                 <span class="font-16 d-block">
@@ -128,12 +136,13 @@
 
                                                     @endphp
                                                     @if(isset( $childObj->userSubscriptions->subscribe ) )
-                                                    @php $package_id = $childObj->userSubscriptions->subscribe->id;
-                                                    @endphp
-                                                    {{$childObj->userSubscriptions->subscribe->getTitleAttribute()}}
-                                                    @php
-                                                    $expiry_at = $childObj->userSubscriptions->expiry_at;
-                                                    @endphp
+                                                        @php $package_id = $childObj->userSubscriptions->subscribe->id;
+                                                        @endphp
+                                                        {{$childObj->userSubscriptions->subscribe->getTitleAttribute()}}
+                                                        @php
+                                                            $expiry_at = $childObj->userSubscriptions->expiry_at;
+                                                        @endphp
+                                                        <br><span class="expiry-at">{{ dateTimeFormat($expiry_at, 'j M Y') }}</span>
                                                     @else
                                                         @if(!isset( $childObj->userSubscriptions->subscribe ) )
                                                             <a href="javascript:;" class="package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
@@ -143,13 +152,6 @@
                                                     @endif
                                                 </span>
                                             </div>
-
-                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto last-activity">
-                                                <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
-                                                <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
-                                                    {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
-                                                </span>
-                                            </a>
                                             <div class="col-auto ms-auto last-activity profile-dropdown">
                                                 <h6 class="listing-title font-16 font-weight-500">Action</h6>
                                                 <a href="javascript:;" class="font-16 font-weight-normal">
@@ -159,7 +161,7 @@
                                                 </a>
                                                 <ul>
                                                     <li><a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
-                                                    <li><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
+                                                    <li class="rurera-hide"><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
                                                     @if(!isset( $childObj->userSubscriptions->subscribe ) )
                                                     <li>
                                                         <a href="javascript:;" class="package-payment-btn switch-user-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
@@ -762,11 +764,10 @@
      aria-labelledby="edit-user-modallabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <!-- <div class="panel-header">
+            <div class="panel-header">
                 <div class="modal-logo"><img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"></div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">Back to Dashboard <span aria-hidden="true">×</span></button>
-            </div> -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
             <div class="container">
                 <div class="modal-body pt-50">
 
@@ -787,11 +788,10 @@
 <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <!-- <div class="panel-header">
+            <div class="panel-header">
                 <div class="modal-logo"><img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"></div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">Back to Dashboard <span aria-hidden="true">×</span></button>
-            </div> -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
             <div class="modal-body">
                 <div class="container">
                 <div class="tab-content subscription-content" id="nav-tabContent">
