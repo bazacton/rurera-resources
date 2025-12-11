@@ -822,7 +822,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <label>Username</label>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                        <!-- <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span> -->
                                         <input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
                                     </div>
                                 </div>
@@ -831,7 +831,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <label>Password</label>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                        <!-- <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span> -->
                                         <input type="text" name="password" class="" placeholder="Password" value="">
                                     </div>
                                 </div>
