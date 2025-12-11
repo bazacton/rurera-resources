@@ -1528,7 +1528,7 @@ Lms Responsive Style Start
     }
     .member-card-header .dropdown .btn, .member-card-header .db-members .profile-dropdown > a {
         margin-right: 15px;
-        margin-right: 0;
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 480px) {
