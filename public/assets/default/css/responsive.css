@@ -1340,7 +1340,8 @@ Lms Responsive Style Start
     body .profile-inner {padding: 15px;}
     .quiz-questions-bar-holder .value-lable {margin-left: -36px;}
     .question-area-block .quiz-status-bar {padding-left: 15px;}
-    .edit-profile-controls {
+    .edit-profile-controls,
+    .detail-body .edit-profile-controls {
         display: flex;
         align-items: center;
         justify-content: space-between;
