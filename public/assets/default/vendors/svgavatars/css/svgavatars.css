@@ -1177,7 +1177,7 @@ label#svga-elements-faceshape-label {
 		padding-top: 0;
 		margin: 0 0 0;
 	}
-	.mobile-avar-view #svgAvatars .scroll-wrapper > .scroll-content {
+	#svgAvatars .scroll-wrapper > .scroll-content {
 		height: auto !important;
 	}
 	.mobile-avar-view #svga-container {
