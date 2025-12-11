@@ -6865,7 +6865,7 @@ nav li {
 .btn-primary {
     color: var(--primary-btn-color);
     background-color: var(--primary);
-    border-color: var(--primary-border);
+    border-color: var(--primary);
     box-shadow: var(--primary-btn-shadow);
     transition: all .3s
 }
