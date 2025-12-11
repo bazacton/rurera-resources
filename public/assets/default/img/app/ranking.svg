@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1192px" height="466px" viewBox="0 0 1192 466" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group@2x</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0, 0.6732)">
+            <rect id="Rectangle" fill="#9088E6" x="804" y="216.326756" width="388" height="249"></rect>
+            <rect id="Rectangle" fill="#A79FEB" x="388" y="59.3267557" width="416" height="406"></rect>
+            <rect id="Rectangle" fill="#9088E6" x="0" y="161.326756" width="388" height="304"></rect>
+            <polygon id="Path" fill="#CEC9F4" points="1135.9691 152.326756 1192 216.326756 804 216.326756 804 152.326756"></polygon>
+            <polygon id="Path" fill="#CEC9F4" transform="translate(194, 129.3268) scale(-1, 1) translate(-194, -129.3268)" points="331.969102 97.3267557 388 161.326756 4.30766534e-14 161.326756 2.27373675e-13 97.3267557"></polygon>
+            <polygon id="Path" fill="#CEC9F4" points="446.376742 0 388.031525 59.4804353 804.031525 59.4804353 741.318972 0"></polygon>
+            <text id="1" font-family="Helvetica-Bold, Helvetica" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="540" y="336.326756">1</tspan>
+            </text>
+            <text id="3" font-family="Helvetica-Bold, Helvetica" font-size="150" font-weight="bold" fill="#FFFFFF">
+                <tspan x="956" y="397.326756">3</tspan>
+            </text>
+            <text id="2" font-family="Helvetica-Bold, Helvetica" font-size="150" font-weight="bold" fill="#FFFFFF">
+                <tspan x="152" y="369.326756">2</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
