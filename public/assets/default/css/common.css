@@ -1287,6 +1287,25 @@ body:has(.activities-container) .table-responsive {overflow: visible;}
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
+.lms-choose-membership .select-holder {
+    position: relative;
+}
+.lms-choose-membership .select-holder:has(select):after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #ddd;
+    margin-top: -6px;
+    transform: rotate(45deg);
+    border-top: 0;
+    border-left: 0;
+}
+.lms-choose-membership .select-holder:has(select) select {
+    appearance: none;
+}
 @media (prefers-reduced-motion:reduce) {
     .form-control {transition: none;}
 }
