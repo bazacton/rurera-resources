@@ -193,8 +193,8 @@ address .info-list-label {color: #64748b;}
 .custom-switch-description {margin-left: .5rem; color: #6e7687; transition: .3s color;}
 .custom-switch-input:checked ~ .custom-switch-description {color: #495057; }
 .display-icon-box img {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     object-fit: contain;
 }
 /* custom-switch style end */
