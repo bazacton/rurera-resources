@@ -1178,9 +1178,6 @@ Lms Responsive Style Start
     .section-title.font-24,
     .login-holder h2.font-24 {font-size: 1.5rem !important;} 
     .learning-start-box .learning-content-box-icon {margin-top: 30px;}
-    .edit-profile-content-holder {
-        padding: 0 30px;
-    }
     .edit-icon em {visibility: visible; opacity: 1;}
 }
 
