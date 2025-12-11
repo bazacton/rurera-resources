@@ -1181,6 +1181,7 @@ Lms Responsive Style Start
     .edit-icon em {visibility: visible; opacity: 1;}
     .detail-body.p-25 {padding: 0 !important;}
     .preference-field-group {margin: 0 0 20px;}
+    .lms-choose-membership .subscription-content {padding-top: 35px;}
 }
 
 @media screen and (max-width: 640px) {
