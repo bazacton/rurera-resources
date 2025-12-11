@@ -223,6 +223,7 @@
                                 @if( !empty( $profile_navs ) )
                                 <div class="user-nav-list">
                                 @foreach( $profile_navs as $profile_nav)
+                                    @php $profile_nav = $profile_nav->user; @endphp
                                 <a class="dropdown-item " href="/panel/switch_user/{{$profile_nav['id']}}">
                                     <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
                                     alt="rounded circle" loading="eager" title="rounded circle">
