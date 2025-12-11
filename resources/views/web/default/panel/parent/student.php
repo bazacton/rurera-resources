@@ -167,7 +167,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Student's first name</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										
 										<input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
 									</div>
 								</div>
@@ -176,7 +176,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Student's last name</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										
 										<input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
 									</div>
 								</div>
@@ -186,7 +186,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Display name</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										
 										<input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
 									</div>
 								</div>
@@ -737,7 +737,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												<div class="form-group">
 													<span class="fomr-label">Student's first name</span>
 													<div class="input-field">
-														<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+														
 														<input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
 													</div>
 												</div>
@@ -747,7 +747,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												<div class="form-group">
 													<span class="fomr-label">Student's last name</span>
 													<div class="input-field">
-														<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+														
 														<input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
 													</div>
 												</div>
@@ -757,7 +757,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												<div class="form-group">
 													<span class="fomr-label">Display name</span>
 													<div class="input-field">
-														<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+														
 														<input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
 													</div>
 												</div>
