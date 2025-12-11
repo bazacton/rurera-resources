@@ -779,7 +779,7 @@
 
                 </form>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer p-0">
                 <div class="text-right">
                     <a href="javascript:;" class="btn btn-primary edit-quest-submit-btn">Submit</a>
                 </div>
