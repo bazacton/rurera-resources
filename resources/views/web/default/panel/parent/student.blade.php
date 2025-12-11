@@ -632,13 +632,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             
                             <div class="form-group custom-switches-stacked mb-10">
                                 <label class="custom-switch pl-0 custom-label mb-0">
-                                    <input type="checkbox" name="show_timestables"
-                                            id="show_timestables_field" value="1" class="custom-switch-input"  {{($user->show_timestables == 1)? 'checked' : ''}}/>
-                                    <span class="custom-switch-indicator">
-                                            <em class="hide-text">Hide</em>
-                                            <span class="switch-circle"></span>
-                                            <em class="show-text font-style-normal">Show</em>
-                                    </span>
+                                    <input type="checkbox" name="show_timestables" id="show_timestables_field" value="1" class="custom-switch-input"  {{($user->show_timestables == 1)? 'checked' : ''}}/>
+                                    <span class="custom-switch-indicator"></span>
                                     <label class="custom-switch-description mb-0 cursor-pointer mb-0" for="show_timestables_field">Timestables</label>
                                 </label>
                             </div>
@@ -649,13 +644,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group custom-switches-stacked mb-10">
                                 
                                     <label class="custom-switch pl-0 custom-label mb-0">
-                                        <input type="checkbox" name="show_spellings"
-                                                id="show_spellings_field" value="1" class="custom-switch-input"  {{($user->show_spellings == 1)? 'checked' : ''}}/>
-                                        <span class="custom-switch-indicator">
-                                            <em class="hide-text">Hide</em>
-                                            <span class="switch-circle"></span>
-                                            <em class="show-text">Show</em>
-                                        </span>
+                                        <input type="checkbox" name="show_spellings" id="show_spellings_field" value="1" class="custom-switch-input"  {{($user->show_spellings == 1)? 'checked' : ''}}/>
+                                        <span class="custom-switch-indicator"></span>
                                         <label class="custom-switch-description mb-7 cursor-pointer mb-0" for="show_spellings_field">Spellings</label>
                                     </label>
                                 </div>
@@ -668,13 +658,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 
                                 <div class="form-group custom-switches-stacked mb-10 {{$is_disabled_style}}">
                                     <label class="custom-switch pl-0 custom-label mb-0">
-                                        <input type="checkbox" name="show_games"
-                                                id="show_games_field" value="1" class="custom-switch-input"  {{($user->show_games == 1)? 'checked' : ''}}/>
-                                        <span class="custom-switch-indicator">
-                                            <em class="hide-text">Hide</em>
-                                            <span class="switch-circle"></span>
-                                            <em class="show-text">Show</em>
-                                        </span>
+                                        <input type="checkbox" name="show_games" id="show_games_field" value="1" class="custom-switch-input"  {{($user->show_games == 1)? 'checked' : ''}}/>
+                                        <span class="custom-switch-indicator"></span>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_games_field"><span>Games</span></label>
                                     </label>
                                 </div>
@@ -688,13 +673,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 
                                 <div class="form-group custom-switches-stacked mb-10 {{$is_disabled_style}}">
                                     <label class="custom-switch pl-0 custom-label mb-0">
-                                        <input type="checkbox" name="show_books"
-                                                id="show_books_field" value="1" class="custom-switch-input"  {{($user->show_books == 1)? 'checked' : ''}}/>
-                                        <span class="custom-switch-indicator">
-                                            <em class="hide-text">Hide</em>
-                                            <span class="switch-circle"></span>
-                                            <em class="show-text">Show</em>
-                                        </span>
+                                        <input type="checkbox" name="show_books" id="show_books_field" value="1" class="custom-switch-input"  {{($user->show_books == 1)? 'checked' : ''}}/>
+                                        <span class="custom-switch-indicator"></span>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_books_field"><span>Books</span></label>
                                     </label>
                                 </div>
@@ -707,13 +687,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 
                                 <div class="form-group custom-switches-stacked mb-10">
                                     <label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
-                                        <input type="checkbox" name="show_enterance_exams"
-                                                id="show_enterance_exams_field" value="1" class="custom-switch-input"  {{($user->show_enterance_exams == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
-                                        <span class="custom-switch-indicator">
-                                            <em class="hide-text">Hide</em>
-                                            <span class="switch-circle"></span>
-                                            <em class="show-text">Show</em>
-                                        </span>
+                                        <input type="checkbox" name="show_enterance_exams" id="show_enterance_exams_field" value="1" class="custom-switch-input"  {{($user->show_enterance_exams == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
+                                        <span class="custom-switch-indicator"></span>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_enterance_exams_field"><span>Enterance Exams</span></label>
                                     </label>
                                 </div>
@@ -726,13 +701,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 
                                 <div class="form-group custom-switches-stacked mb-10">
                                     <label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
-                                        <input type="checkbox" name="show_sats"
-                                                id="show_sats_field" value="1" class="custom-switch-input"  {{($user->show_sats == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
-                                        <span class="custom-switch-indicator">
-                                            <em class="hide-text">Hide</em>
-                                            <span class="switch-circle"></span>
-                                            <em class="show-text">Show</em>
-                                        </span>
+                                        <input type="checkbox" name="show_sats" id="show_sats_field" value="1" class="custom-switch-input"  {{($user->show_sats == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
+                                        <span class="custom-switch-indicator"></span>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_sats_field"><span>SATs</span></label>
                                     </label>
                                 </div>
@@ -751,13 +721,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         
                                         <div class="form-group custom-switches-stacked mb-10">
                                             <label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
-                                                <input type="checkbox" name="hide_subjects[]"
-                                                        id="hide_{{$courseObj->id}}" value="{{$courseObj->id}}" class="custom-switch-input"  {{!in_array($courseObj->id, $hide_subjects)? 'checked' : ''}} {{$is_disabled}}/>
-                                                <span class="custom-switch-indicator">
-                                                    <em class="hide-text">Hide</em>
-                                                    <span class="switch-circle"></span>
-                                                    <em class="show-text">Show</em>
-                                                </span>
+                                                <input type="checkbox" name="hide_subjects[]" id="hide_{{$courseObj->id}}" value="{{$courseObj->id}}" class="custom-switch-input"  {{!in_array($courseObj->id, $hide_subjects)? 'checked' : ''}} {{$is_disabled}}/>
+                                                <span class="custom-switch-indicator"></span>
                                                 <label class="custom-switch-description mb-7 cursor-pointer" for="hide_{{$courseObj->id}}">{{$courseObj->getTitleAttribute()}}</label>
                                             </label>
                                         </div>
