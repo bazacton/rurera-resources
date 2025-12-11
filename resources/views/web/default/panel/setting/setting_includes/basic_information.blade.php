@@ -298,14 +298,14 @@ if( !empty( $emojisArray ) ){
 																</li>
 															</ul>
 														</div>
-													</div>			
+													</div>
+                                                    <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center">
+                                                        <button type="button" id="saveData" class="save-btn text-center ">Save</button>
+                                                    </div>			
 												</div>
 											</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="edit-profile-controls d-flex justify-content-end align-items-center">
-                                    <button type="button" id="saveData" class="save-btn text-center ">Save</button>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="edit-experience" role="tabpanel" aria-labelledby="edit-experience-tab">Experience</div>
