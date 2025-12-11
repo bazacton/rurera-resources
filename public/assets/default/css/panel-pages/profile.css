@@ -66,11 +66,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .select-field:after {content: "\203A"; position: absolute; right: 0; top: 0; height: 40px; width: 40px; text-align: center; line-height: 40px; font-size: 24px; color: #94a3b8; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); pointer-events: none;}
 .edit-profile .select-field:before {background-color: #ddd; content: ""; position: absolute; top: 0; right: 41px; height: 100%; width: 1px;}
 .edit-profile-content-holder .tab-pane {min-height: 400px;}
-.edit-profile .radio-field label {border: 1px solid #ddd; border-radius: 20px; min-width: 90px; background-color: #f3f1f1; cursor: pointer; padding: 8px 15px; justify-content: center;}
-.edit-profile .radio-field input[type=radio] {position: absolute; opacity: 0; height: 0; width: 0;}
-.edit-profile .select-option {gap: 20px;}
-.edit-profile .radio-field .thumb-box img {border-radius: 100%;}
-.edit-profile .radio-field input[type=radio]:checked ~ label {background-color: var(--primary); color: #fff; border-color: var(--primary);}
 .filters-v2 .analytics-type li {width: 15.555%;}
 .filters-v2 .analytics-type li a img {margin: 0 10px 0 0; height: 38px; width: 38px; }
 .filters-v2 .analytics-type li a {padding: 0 10px 0 0; border-radius: 50px; border-style: solid; }
