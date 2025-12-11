@@ -763,6 +763,7 @@
                             <input type="text" autocomplete="off"
                                    name="s"
                                    value=""
+                                   min="{{date('Y-m-d')}}"
                                    class="form-control practice-start-date rureradatepicker rureramultidatespicker rureradatepicker1 rurera-req-field" dataType="quest_date" min="{{date('Y-m-d')}}"
                                    placeholder=""/>
                         </div>
