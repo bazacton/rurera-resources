@@ -398,8 +398,11 @@
 	margin-top: 10px;
 	margin-bottom: 0;
 	width: 100%;
-	display: flex;
+	display: table;
 	table-layout: fixed;
+}
+.mobile-avar-view #svga-footermenu {
+	display: flex;
 	border: 0;
 }
 .avatar-label {
@@ -411,6 +414,10 @@
 	padding: 0 20px 0 0;
 	list-style: none;
 	order: 2;
+	width: 100%;
+}
+.mobile-avar-view #svga-footermenu ul {
+	width: auto;
 }
 #svga-footermenu ul li {
 	border-right: 1px solid;
