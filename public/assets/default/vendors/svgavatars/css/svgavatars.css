@@ -1017,7 +1017,10 @@ label#svga-elements-faceshape-label {
 	.svga-row.row-elements {
 		border: none;
 		padding-top:0;
-		margin-top: 2px;
+		margin-top: 10px;
+	}
+	.mobile-avar-view .svga-row.row-elements {
+		margin-top: 0;
 	}
 	.svga-elements {
 		display: block;
