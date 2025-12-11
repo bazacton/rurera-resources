@@ -831,6 +831,7 @@
             icon: 'warning',
             showConfirmButton: false,
             showCancelButton: false,
+            showCloseButton: true,
             allowOutsideClick: () => !Swal.isLoading(),
         })
     });
@@ -848,6 +849,7 @@
                     title: (typeof result.title !== "undefined") ? result.title : deleteAlertSuccess,
                     text: (typeof result.text !== "undefined") ? result.text : deleteAlertSuccessHint,
                     showConfirmButton: false,
+                    showCloseButton: true,
                     icon: 'success',
                 });
 
@@ -864,6 +866,7 @@
                 Swal.fire({
                     title: deleteAlertFail,
                     text: deleteAlertFailHint,
+                    showCloseButton: true,
                     icon: 'error',
                 })
             }
@@ -871,6 +874,7 @@
             Swal.fire({
                 title: deleteAlertFail,
                 text: deleteAlertFailHint,
+                showCloseButton: true,
                 icon: 'error',
             })
         }).always(() => {
@@ -1785,7 +1789,7 @@ if($(".rurera_conditional_field").length > 0){
 
 function rurera_modal_alert(msg_type, msg_title, confirmButton){
 
-    Swal.fire({icon: msg_type, html: '<h3 class="font-20 text-center text-dark-blue">'+msg_title+'</h3>', showConfirmButton: confirmButton});
+    Swal.fire({icon: msg_type, html: '<h3 class="font-20 text-center text-dark-blue">'+msg_title+'</h3>', showConfirmButton: confirmButton, showCloseButton: true});
 
 }
 
