@@ -166,31 +166,31 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>First Name</label>
                                                 <div class="input-field">
-                                                    <input type="text" name="first_name" class="rurera-req-field" placeholder="First Name" value="{{( $user->first_name != '')? $user->first_name : ''}}">
+                                                    <input type="text" name="first_name" class="rurera-req-field" placeholder="What should we call you?" value="{{( $user->first_name != '')? $user->first_name : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Last Name</label>
                                                 <div class="input-field">
-                                                    <input type="text" name="last_name" class="rurera-req-field" placeholder="Last Name" value="{{( $user->last_name != '')? $user->last_name : ''}}">
+                                                    <input type="text" name="last_name" class="rurera-req-field" placeholder="Your family/last name" value="{{( $user->last_name != '')? $user->last_name : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
                                                 <label>Contact No</label>
                                                 <div class="input-field">
-                                                    <input type="text" name="mobile" class="" placeholder="Contact no" value="{{( $user->mobile != '')? $user->mobile : ''}}">
+                                                    <input type="text" name="mobile" class="" placeholder="Add your phone number" value="{{( $user->mobile != '')? $user->mobile : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Email Address</label>
                                                 <div class="input-field">
-                                                    <input type="text" name="email" class="rurera-req-field" placeholder="Email Address" value="{{( $user->email != '')? $user->email : ''}}">
+                                                    <input type="text" name="email" class="rurera-req-field" placeholder="Email for important updates" value="{{( $user->email != '')? $user->email : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Password</label>
                                                 <div class="input-field">
-                                                    <input type="password" name="password" placeholder="Password" value="">
+                                                    <input type="password" name="password" placeholder="Choose a secure password" value="">
                                                 </div>
                                             </div>
 
