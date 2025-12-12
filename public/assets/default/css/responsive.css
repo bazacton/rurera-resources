@@ -1184,6 +1184,7 @@ Lms Responsive Style Start
     .lms-choose-membership .subscription-content {padding-top: 35px;}
     .transactions-table .no-records-found {padding: 12px; justify-content: center;}
     .subscription-content .usernames-suggestions {margin-bottom: 15px;}
+    .lms-choose-membership .form-login-reading select.form-control {padding-right: 42px;}
 }
 
 @media screen and (max-width: 640px) {
