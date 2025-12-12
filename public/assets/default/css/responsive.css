@@ -433,6 +433,7 @@ Lms Responsive Style Start
     .top-navbar .nav-icons-or-start-live,
     .page-sub-header h1 br {display: none;}
     .section-title {text-align: center !important;}
+    .parent-panel .section-title {text-align: left !important;}
     .form-section.text-left .section-title {text-align: left !important;}
     .panel-content .section-title.text-left,
     .newsletter-inner .section-title,
@@ -741,6 +742,7 @@ Lms Responsive Style Start
     .wizard-steps .sats-listing-card tbody tr td:has(.mock-test-assign-btn) {padding-top: 0; padding-bottom: 20px; display: inline-block;}
     body .wizard-steps .years-group,
     .panel-content .mock_test_fields .sats-listing-card.medium {margin-bottom: 0;}
+    body.parent-panel .wizard-steps .years-group {margin-bottom: 30px;}
     .results-info {width: auto;}
     .results-revenue-card .text-box,
     .have-question-card .text-box {width: 100%; padding: 20px 0 0 0;}
