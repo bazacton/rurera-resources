@@ -218,6 +218,7 @@ address .info-list-label {color: #64748b;}
     display: flex;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .edit-info-list li .info-list-label {
     border-right: 1px solid #ddd;
