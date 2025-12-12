@@ -283,22 +283,24 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="form-group">
                                         <label class="input-label">Year Group</label>
-                                        <select data-default_id="{{isset( $quiz->id)? $quiz->year_id : 0}}"
+                                        <div class="select-holder">
+                                            <select data-default_id="{{isset( $quiz->id)? $quiz->year_id : 0}}"
                                                 class="form-control year_quiz_ajax_select select2 @error('year_id') is-invalid @enderror"
                                                 name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]">
-                                            <option value="0">Select Year Group</option>
+                                                <option value="0">Select Year Group</option>
 
-                                            @foreach($categories as $category)
-                                                @if(!empty($category->subCategories) and
-                                                count($category->subCategories))
-                                                    @foreach($category->subCategories as $subCategory)
-                                                        <option value="{{ $subCategory->id }}" @if(!empty($quiz) and $quiz->year_id == $subCategory->id) selected="selected" @endif>
-                                                            {{$subCategory->title}}
-                                                        </option>
-                                                    @endforeach
-                                                @endif
-                                            @endforeach
-                                        </select>
+                                                @foreach($categories as $category)
+                                                    @if(!empty($category->subCategories) and
+                                                    count($category->subCategories))
+                                                        @foreach($category->subCategories as $subCategory)
+                                                            <option value="{{ $subCategory->id }}" @if(!empty($quiz) and $quiz->year_id == $subCategory->id) selected="selected" @endif>
+                                                                {{$subCategory->title}}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                @endforeach
+                                            </select>
+                                        </div>
                                         @error('year_id')
                                         <div class="invalid-feedback">
                                             {{ $message }}
