@@ -98,8 +98,8 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 }
 .password-info .item i {
     font-style: normal;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     border: 1px solid;
     border-radius: 100%;
     display: inline-flex;
