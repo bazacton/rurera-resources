@@ -380,13 +380,11 @@ $(document).ready(function () {
 
 
     $(document).on('click', '.edit-profile-btn', function (e) {
-        $(".user-profile-block").addClass('rurera-hide');
-        $(".user-edit-profile").removeClass('rurera-hide');
+        $(".user-edit-profile").addClass('rurera-active');
     });
 
     $(document).on('click', '.cancel-edit-button', function (e) {
-        $(".user-profile-block").removeClass('rurera-hide');
-        $(".user-edit-profile").addClass('rurera-hide');
+        $(".user-edit-profile").removeClass('rurera-active');
     });
 
     // User Loging Detail Function Start
