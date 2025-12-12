@@ -367,9 +367,50 @@ $(document).ready(function () {
 </script>
 <script>
     $(document).ready(function () {
-        $("#password").on("click", function () {
-            $(".password-info").css("display", "flex");
-        });
-    });
 
+        // Show rules when clicked
+        $("#password").on("click", function () {
+            $("#password-info").css("display", "flex");
+        });
+
+        // Live validation
+        $("#password").on("keyup", function () {
+            let val = $(this).val();
+            let hasNumber = /\d/.test(val);
+            let commonPasswords = ["123456", "password", "qwerty", "111111"];
+
+            // Rule 1: Length
+            if (val.length >= 7) {
+                $("#rule-length").removeClass("error").addClass("success");
+            } else {
+                $("#rule-length").removeClass("success").addClass("error");
+            }
+
+            // Rule 2: At least one number
+            if (hasNumber) {
+                $("#rule-number").removeClass("error").addClass("success");
+            } else {
+                $("#rule-number").removeClass("success").addClass("error");
+            }
+
+            // Rule 3: Not common password
+            if (!commonPasswords.includes(val)) {
+                $("#rule-common").removeClass("error").addClass("success");
+            } else {
+                $("#rule-common").removeClass("success").addClass("error");
+            }
+
+            // If ANY rule fails → red input border
+            if (
+                val.length < 7 ||
+                !hasNumber ||
+                commonPasswords.includes(val)
+            ) {
+                $("#password").addClass("input-error");
+            } else {
+                $("#password").removeClass("input-error");
+            }
+        });
+
+    });
 </script>
