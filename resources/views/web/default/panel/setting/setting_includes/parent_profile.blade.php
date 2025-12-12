@@ -46,6 +46,10 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             <strong class="d-block font-weight-500">{{$user->get_full_name()}}</strong>
                                         </span>
                                         <span class="info-list-label font-16">
+                                            Contact no
+                                            <strong class="d-block font-weight-500">+4407*****45</strong>
+                                        </span>
+                                        <span class="info-list-label font-16">
                                             Email
                                             <strong class="d-block font-weight-500">parent5000@test.com</strong>
                                         </span>
