@@ -433,15 +433,17 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="form-group">
                                         <label class="input-label d-block">Year Group</label>
-                                        <select name="ajax[new][year_group]"
+                                        <div class="select-holder">
+                                            <select name="ajax[new][year_group]"
                                                 class="form-control select2 " data-placeholder="Select Year Group">
-                                            <option value="">Select Year Group</option>
-                                            <option value="All">All</option>
-                                            <option value="Year 3" selected>Year 3</option>
-                                            <option value="Year 4">Year 4</option>
-                                            <option value="Year 5">Year 5</option>
-                                            <option value="Year 6">Year 6</option>
-                                        </select>
+                                                <option value="">Select Year Group</option>
+                                                <option value="All">All</option>
+                                                <option value="Year 3" selected>Year 3</option>
+                                                <option value="Year 4">Year 4</option>
+                                                <option value="Year 5">Year 5</option>
+                                                <option value="Year 6">Year 6</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
