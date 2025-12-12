@@ -186,6 +186,19 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     opacity: 0;
 }
 address .info-list-label {color: #64748b;}
+.edit-info-list li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.edit-info-list li .info-list-label {
+    border-right: 1px solid #ddd;
+    padding-right: 30px;
+}
+.edit-info-list li .info-list-label:last-child {
+    border: 0;
+    padding-right: 0;
+}
 .payment-card {border: 1px solid #ddd; border-radius: 10px; max-width: 380px; min-width: 380px; }
 .card-circle span {height: 36px; width: 36px; border-radius: 100%; }
 .card-circle .circle-pink {background-color: #f43f5e99; margin-right: -20px;}
