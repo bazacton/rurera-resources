@@ -435,6 +435,13 @@ a.last-activity span strong {color: #343434;}
 .packages-back-btn a {
     text-decoration: underline;
 }
+.lms-choose-membership .form-group .rurera-error-msg {
+    position: relative;
+    top: 0;
+}
+.lms-choose-membership .form-group:has(.rurera-error-msg) .select-holder:has(select):after {
+    margin-top: -15px;
+}
 .lms-choose-membership .discount-code-block p {margin: 0 0 10px; color: var(--primary); font-weight: 500;}
 .book-form .tests-list li {width: 49%; min-height: auto; justify-content: center; align-items: flex-start; border: 0; background-color: #f3f3f3; height: 52px; padding: 5px 10px; color: #b5b8bf; font-size: 14px;}
 .lms-choose-membership .book-form > .row,
