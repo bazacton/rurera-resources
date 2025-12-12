@@ -47,7 +47,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                         </span>
                                         <span class="info-list-label font-16">
                                             Contact no
-                                            <strong class="d-block font-weight-500">+4407*****45</strong>
+                                            <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
                                         </span>
                                         <span class="info-list-label font-16">
                                             Email
@@ -196,8 +196,8 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                 <ul>
                                     <li>
                                         <span class="info-list-label font-16">
-                                            Contact no
-                                            <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
+                                            Password
+                                            <strong class="d-block font-weight-500">********</strong>
                                         </span>
                                     </li>
                                     <!-- <li>
