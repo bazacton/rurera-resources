@@ -93,7 +93,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 }
 .password-info .item {
     display: inline-flex;
-    margin-bottom: 5px;
     color: #28a745;
     align-items: center;
     gap: 6px;
