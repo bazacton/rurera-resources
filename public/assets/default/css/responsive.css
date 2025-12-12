@@ -1562,6 +1562,7 @@ Lms Responsive Style Start
         border-right: 0;
         padding-right: 0;
     }
+    .edit-info-list li {gap: 20px 30px;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
