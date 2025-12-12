@@ -185,6 +185,9 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     border-bottom: 1px solid #ddd;
     padding: 0 0 15px;
 }
+.edit-info-list h4 {
+    gap: 10px;
+}
 .detail-body .row:last-child .edit-info-list {
     border-bottom: 0;
     padding-bottom: 0;
