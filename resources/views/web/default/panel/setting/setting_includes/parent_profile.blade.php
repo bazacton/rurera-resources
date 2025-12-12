@@ -392,10 +392,12 @@ $(document).ready(function () {
 
 
     $(document).on('click', '.edit-profile-btn', function (e) {
+        $(".edit-info-list").addClass('rurera-hide');
         $(".user-edit-profile").addClass('rurera-active');
     });
 
     $(document).on('click', '.cancel-edit-button', function (e) {
+        $(".edit-info-list").removeClass('rurera-hide');
         $(".user-edit-profile").removeClass('rurera-active');
     });
 
