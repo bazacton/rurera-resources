@@ -403,6 +403,7 @@ $(document).ready(function () {
 
     // User Loging Detail Function Start
     $(document).on('click', '.profile-login-btn', function (e) {
+        $(this).closest('.detail-body .row').find('.edit-info-list').addClass('rurera-hide');
         $(".user-edit-login").addClass('rurera-active');
     });
 
