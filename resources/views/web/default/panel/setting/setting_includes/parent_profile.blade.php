@@ -60,25 +60,23 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                 <h4 class="font-18 font-weight-bold pb-10">Additional info</h4>
                                 <ul>
                                     <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+                                        <a href="javascript:;" class="d-flex align-items-center profile-login-btn justify-content-between p-15">
                                             <span class="info-list-label font-16">
                                                 Contact no
                                                 <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+                                        <a href="javascript:;" class="d-flex align-items-center profile-login-btn justify-content-between p-15">
                                             <span class="info-list-label font-16">
                                                 Email Addres
                                                 <strong class="d-block font-weight-500">{{$user->email}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -390,6 +388,18 @@ $(document).ready(function () {
         $(".user-profile-block").removeClass('rurera-hide');
         $(".user-edit-profile").addClass('rurera-hide');
     });
+
+    // User Loging Detail Function Start
+    $(document).on('click', '.edit-login-btn', function (e) {
+        $(".user-profile-block").addClass('rurera-hide');
+        $(".user-edit-login").removeClass('rurera-hide');
+    });
+
+    $(document).on('click', '.cancel-edit-button', function (e) {
+        $(".user-profile-block").removeClass('rurera-hide');
+        $(".user-edit-login").addClass('rurera-hide');
+    });
+    // User Login Detail Function End
 
     function refresh_preference_field() {
         $('.preference_field option').removeAttr('disabled');
