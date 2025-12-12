@@ -191,10 +191,10 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 												<label>Password</label>
                                                 <div class="input-field">
                                                     <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
-                                                    <div class="password-info">
-                                                        <span class="item"><i>✔</i> 7+ characters</span>
-                                                        <span class="item"><i>✔</i> At least one number</span>
-                                                        <span class="item"><i>✔</i> Not a common password</span>
+                                                    <div class="password-info" id="password-info">
+                                                        <span class="item" id="rule-length"><i>✔</i> 7+ characters</span>
+                                                        <span class="item" id="rule-number"><i>✔</i> At least one number</span>
+                                                        <span class="item" id="rule-common"><i>✔</i> Not a common password</span>
                                                     </div>
                                                 </div>
                                             </div>
