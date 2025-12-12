@@ -368,7 +368,7 @@ $(document).ready(function () {
 <script>
     $(document).ready(function () {
 
-        $("#password").on("focus", function () {
+        $("#password").on("click", function () {
             $(".password-info").slideDown(200);
         });
 
