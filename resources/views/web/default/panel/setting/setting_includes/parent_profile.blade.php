@@ -258,7 +258,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                             <div class="col-6 col-lg-6 col-md-6 form-group">
                                                                 <label>Current Password</label>
                                                                 <div class="input-field">
-                                                                    <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
+                                                                    <input type="password" id="password" name="password" placeholder="Your current password" value="">
                                                                     <div class="password-info" id="password-info">
                                                                         <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
                                                                         <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
