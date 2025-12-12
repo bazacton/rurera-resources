@@ -81,6 +81,20 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .select-field:has(.rurera-error-msg):before {
     height: 40px;
 }
+.password-info {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.password-info .item {
+    display: block;
+    margin-bottom: 5px;
+    color: #28a745;
+}
 /*Edit Profile Style End*/
 
 /*************************************
