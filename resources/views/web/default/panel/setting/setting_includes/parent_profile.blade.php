@@ -157,7 +157,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="edit-element-title mb-20">
-                                                    <h6 class="font-weight-500">
+                                                    <h6 class="font-weight-600">
                                                         Profile Info
                                                         <span class="d-block pt-5 font-12">Others diserve to know you more</span>
                                                     </h6>
