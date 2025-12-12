@@ -46,6 +46,124 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     </li>
                                 </ul>
                             </div>
+                            <div class="col-12 user-edit-profile rurera-hide">
+                                <div class="edit-profile mb-50">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-12 rurera-hide">
+                                            <div class="edit-profile-sidebar">
+                                                <div class="user-info d-flex align-items-center flex-wrap mb-30">
+                                                    <span class="info-text d-inline-flex flex-column font-weight-500">
+                                                        {{$user->get_full_name()}}
+                                                    </span>
+                                                </div>
+                                                <div class="edit-profile-menu">
+                                                    <ul class="nav flex-column" id="myTab" role="tablist">
+                                                        <li>
+                                                            <a class="nav-link active d-flex align-items-center" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt="edit-menu-user"></span> General
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link d-flex align-items-center" id="edit-experience-tab" data-toggle="tab" href="#edit-experience" role="tab" aria-controls="edit-experience" aria-selected="false">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt="edit-menu-home"></span>Experience
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link d-flex align-items-center" id="edit-skills-tab" data-toggle="tab" href="#edit-skills" role="tab" aria-controls="edit-skills" aria-selected="false">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt="edit-menu-diamond"></span>Skills &amp; Tools
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link d-flex align-items-center" id="edit-settings-tab" data-toggle="tab" href="#edit-settings" role="tab" aria-controls="edit-settings" aria-selected="false">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt="edit-menu-setting"></span>Settings
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="edit-profile-content-holder tab-content" id="myTabContent">
+                                                <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
+                                                    <!-- <div class="edit-profile-top d-flex align-items-center flex-wrap justify-content-between mb-50">
+                                                        <div class="top-heading">
+                                                            <h5 class="font-16 font-weight-500">
+                                                                GENERAL INFO
+                                                                <span class="d-block pt-5 font-12">Edit your account's general information</span>
+                                                            </h5>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="edit-profile-body">
+                                                        <div class="edit-profile-image">
+                                                            <!--<div class="edit-element-title mb-20">
+                                                                <h6 class="font-weight-500">
+                                                                    Profile picture
+                                                                    <span class="d-block pt-5 font-12">This is how others will recognize you</span>
+                                                                </h6>
+                                                            </div>
+                                                            <div class="profile-image text-center">
+                                                                <figure class="d-inline-flex position-relative">
+                                                                    <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="profile-image">
+                                                                    <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex align-items-center justify-content-center font-16 bg-white"><img src="/assets/default/svgs/edit-2.svg" alt="" style="width:18px; height:18px"></a>
+                                                                </figure>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="mb-0">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="edit-element-title mb-20">
+                                                                        <h6 class="font-weight-600">
+                                                                            Profile Info
+                                                                            <span class="d-block pt-5 font-12">Others diserve to know you more</span>
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-lg-6 col-md-6 form-group">
+                                                                    <label>First Name</label>
+                                                                    <div class="input-field">
+                                                                        <input type="text" name="first_name" class="rurera-req-field" placeholder="What should we call you?" value="{{( $user->first_name != '')? $user->first_name : ''}}">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-lg-6 col-md-6 form-group">
+                                                                    <label>Last Name</label>
+                                                                    <div class="input-field">
+                                                                        <input type="text" name="last_name" class="rurera-req-field" placeholder="Your family/last name" value="{{( $user->last_name != '')? $user->last_name : ''}}">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-lg-6 col-md-6 form-group">
+                                                                    <label>Contact No</label>
+                                                                    <div class="input-field">
+                                                                        <input type="text" name="mobile" class="" placeholder="Add your phone number" value="{{( $user->mobile != '')? $user->mobile : ''}}">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-lg-6 col-md-6 form-group">
+                                                                    <label>Email Address</label>
+                                                                    <div class="input-field">
+                                                                        <input type="text" name="email" class="rurera-req-field" placeholder="Email for important updates" value="{{( $user->email != '')? $user->email : ''}}">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="edit-profile-footer">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                                <div class="edit-profile-controls text-right">
+                                                                    <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
+                                                                    <button type="button" id="saveData" class="save-btn text-center ">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="edit-experience" role="tabpanel" aria-labelledby="edit-experience-tab">Experience</div>
+                                                <div class="tab-pane fade" id="edit-skills" role="tabpanel" aria-labelledby="edit-skills-tab">Skills</div>
+                                                <div class="tab-pane fade" id="edit-settings" role="tabpanel" aria-labelledby="edit-settings-tab">Settings</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -57,7 +175,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="edit-info-list">
-                                <h4 class="font-18 font-weight-bold pb-10">Your Password</h4>
+                                <h4 class="font-18 font-weight-bold pb-10">Change Password</h4>
                                 <ul>
                                     <li>
                                         <a href="javascript:;" class="d-flex align-items-center profile-login-btn justify-content-between p-15">
@@ -84,203 +202,85 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 user-edit-profile rurera-hide">
-            <div class="edit-profile mb-50">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12 rurera-hide">
-                        <div class="edit-profile-sidebar">
-                            <div class="user-info d-flex align-items-center flex-wrap mb-30">
-                                <span class="info-text d-inline-flex flex-column font-weight-500">
-                                    {{$user->get_full_name()}}
-                                </span>
-                            </div>
-                            <div class="edit-profile-menu">
-                                <ul class="nav flex-column" id="myTab" role="tablist">
-                                    <li>
-                                        <a class="nav-link active d-flex align-items-center" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt="edit-menu-user"></span> General
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" id="edit-experience-tab" data-toggle="tab" href="#edit-experience" role="tab" aria-controls="edit-experience" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt="edit-menu-home"></span>Experience
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" id="edit-skills-tab" data-toggle="tab" href="#edit-skills" role="tab" aria-controls="edit-skills" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt="edit-menu-diamond"></span>Skills &amp; Tools
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" id="edit-settings-tab" data-toggle="tab" href="#edit-settings" role="tab" aria-controls="edit-settings" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt="edit-menu-setting"></span>Settings
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-12">
-                        <div class="edit-profile-content-holder tab-content" id="myTabContent">
-                            <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
-                                <!-- <div class="edit-profile-top d-flex align-items-center flex-wrap justify-content-between mb-50">
-                                    <div class="top-heading">
-                                        <h5 class="font-16 font-weight-500">
-                                            GENERAL INFO
-                                            <span class="d-block pt-5 font-12">Edit your account's general information</span>
-                                        </h5>
-                                    </div>
-                                </div> -->
-                                <div class="edit-profile-body">
-                                    <div class="edit-profile-image">
-                                        <!--<div class="edit-element-title mb-20">
-                                            <h6 class="font-weight-500">
-                                                Profile picture
-                                                <span class="d-block pt-5 font-12">This is how others will recognize you</span>
-                                            </h6>
-                                        </div>
-                                         <div class="profile-image text-center">
-                                            <figure class="d-inline-flex position-relative">
-                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="profile-image">
-                                                <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex align-items-center justify-content-center font-16 bg-white"><img src="/assets/default/svgs/edit-2.svg" alt="" style="width:18px; height:18px"></a>
-                                            </figure>
-                                        </div> -->
-                                    </div>
-                                    <div class="mb-0">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="edit-element-title mb-20">
-                                                    <h6 class="font-weight-600">
-                                                        Profile Info
-                                                        <span class="d-block pt-5 font-12">Others diserve to know you more</span>
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>First Name</label>
-                                                <div class="input-field">
-                                                    <input type="text" name="first_name" class="rurera-req-field" placeholder="What should we call you?" value="{{( $user->first_name != '')? $user->first_name : ''}}">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Last Name</label>
-                                                <div class="input-field">
-                                                    <input type="text" name="last_name" class="rurera-req-field" placeholder="Your family/last name" value="{{( $user->last_name != '')? $user->last_name : ''}}">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-                                                <label>Contact No</label>
-                                                <div class="input-field">
-                                                    <input type="text" name="mobile" class="" placeholder="Add your phone number" value="{{( $user->mobile != '')? $user->mobile : ''}}">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Email Address</label>
-                                                <div class="input-field">
-                                                    <input type="text" name="email" class="rurera-req-field" placeholder="Email for important updates" value="{{( $user->email != '')? $user->email : ''}}">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="edit-profile-footer">
+                            <div class="col-12 user-edit-login rurera-hide">
+                                <div class="edit-profile mb-50">
                                     <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="edit-profile-controls text-right">
-                                                <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
-                                                <button type="button" id="saveData" class="save-btn text-center ">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="edit-experience" role="tabpanel" aria-labelledby="edit-experience-tab">Experience</div>
-                            <div class="tab-pane fade" id="edit-skills" role="tabpanel" aria-labelledby="edit-skills-tab">Skills</div>
-                            <div class="tab-pane fade" id="edit-settings" role="tabpanel" aria-labelledby="edit-settings-tab">Settings</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 user-edit-login rurera-hide">
-            <div class="edit-profile mb-50">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12 rurera-hide">
-                        <div class="edit-profile-sidebar">
-                            <div class="user-info d-flex align-items-center flex-wrap mb-30">
-                                <span class="info-text d-inline-flex flex-column font-weight-500">
-                                    {{$user->get_full_name()}}
-                                </span>
-                            </div>
-                            <div class="edit-profile-menu">
-                                <ul class="nav flex-column" id="myTab" role="tablist">
-                                    <li>
-                                        <a class="nav-link active d-flex align-items-center" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt="edit-menu-user"></span> General
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" id="edit-experience-tab" data-toggle="tab" href="#edit-experience" role="tab" aria-controls="edit-experience" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt="edit-menu-home"></span>Experience
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" id="edit-skills-tab" data-toggle="tab" href="#edit-skills" role="tab" aria-controls="edit-skills" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt="edit-menu-diamond"></span>Skills &amp; Tools
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" id="edit-settings-tab" data-toggle="tab" href="#edit-settings" role="tab" aria-controls="edit-settings" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt="edit-menu-setting"></span>Settings
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-12">
-                        <div class="edit-profile-content-holder tab-content" id="myTabContent">
-                            <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile2" role="tabpanel" aria-labelledby="edit-profile2-tab">
-                                <div class="edit-profile-body">
-                                    <div class="row">
-                                        <div class="col-6 col-lg-6 col-md-6 form-group">
-                                            <label>Current Password</label>
-                                            <div class="input-field">
-                                                <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
-                                                <div class="password-info" id="password-info">
-                                                    <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
-                                                    <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
-                                                    <span class="item" id="rule-common"><i class="info-icon">✔</i> Not a common password</span>
+                                        <div class="col-lg-3 col-md-4 col-12 rurera-hide">
+                                            <div class="edit-profile-sidebar">
+                                                <div class="user-info d-flex align-items-center flex-wrap mb-30">
+                                                    <span class="info-text d-inline-flex flex-column font-weight-500">
+                                                        {{$user->get_full_name()}}
+                                                    </span>
+                                                </div>
+                                                <div class="edit-profile-menu">
+                                                    <ul class="nav flex-column" id="myTab" role="tablist">
+                                                        <li>
+                                                            <a class="nav-link active d-flex align-items-center" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt="edit-menu-user"></span> General
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link d-flex align-items-center" id="edit-experience-tab" data-toggle="tab" href="#edit-experience" role="tab" aria-controls="edit-experience" aria-selected="false">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt="edit-menu-home"></span>Experience
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link d-flex align-items-center" id="edit-skills-tab" data-toggle="tab" href="#edit-skills" role="tab" aria-controls="edit-skills" aria-selected="false">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt="edit-menu-diamond"></span>Skills &amp; Tools
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="nav-link d-flex align-items-center" id="edit-settings-tab" data-toggle="tab" href="#edit-settings" role="tab" aria-controls="edit-settings" aria-selected="false">
+                                                                <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt="edit-menu-setting"></span>Settings
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-lg-6 col-md-6 form-group">
-                                            <label>New Password</label>
-                                            <div class="input-field">
-                                                <input type="password" name="password" placeholder="Choose a secure password" value="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="edit-profile-footer">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="edit-profile-controls text-right">
-                                                <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
-                                                <button type="button" id="saveData" class="save-btn text-center ">Save</button>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="edit-profile-content-holder tab-content" id="myTabContent">
+                                                <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile2" role="tabpanel" aria-labelledby="edit-profile2-tab">
+                                                    <div class="edit-profile-body">
+                                                        <div class="row">
+                                                            <div class="col-6 col-lg-6 col-md-6 form-group">
+                                                                <label>Current Password</label>
+                                                                <div class="input-field">
+                                                                    <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
+                                                                    <div class="password-info" id="password-info">
+                                                                        <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                                                                        <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
+                                                                        <span class="item" id="rule-common"><i class="info-icon">✔</i> Not a common password</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-6 col-md-6 form-group">
+                                                                <label>New Password</label>
+                                                                <div class="input-field">
+                                                                    <input type="password" name="password" placeholder="Choose a secure password" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="edit-profile-footer">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                                <div class="edit-profile-controls text-right">
+                                                                    <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
+                                                                    <button type="button" id="saveData" class="save-btn text-center ">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="edit-experience" role="tabpanel" aria-labelledby="edit-experience-tab">Experience</div>
+                                                <div class="tab-pane fade" id="edit-skills" role="tabpanel" aria-labelledby="edit-skills-tab">Skills</div>
+                                                <div class="tab-pane fade" id="edit-settings" role="tabpanel" aria-labelledby="edit-settings-tab">Settings</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="edit-experience" role="tabpanel" aria-labelledby="edit-experience-tab">Experience</div>
-                            <div class="tab-pane fade" id="edit-skills" role="tabpanel" aria-labelledby="edit-skills-tab">Skills</div>
-                            <div class="tab-pane fade" id="edit-settings" role="tabpanel" aria-labelledby="edit-settings-tab">Settings</div>
                         </div>
                     </div>
                 </div>
