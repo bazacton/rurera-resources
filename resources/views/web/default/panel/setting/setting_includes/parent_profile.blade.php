@@ -192,9 +192,9 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                 <div class="input-field">
                                                     <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
                                                     <div class="password-info" id="password-info">
-                                                        <span class="item" id="rule-length"><i>✔</i> 7+ characters</span>
-                                                        <span class="item" id="rule-number"><i>✔</i> At least one number</span>
-                                                        <span class="item" id="rule-common"><i>✔</i> Not a common password</span>
+                                                        <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                                                        <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
+                                                        <span class="item" id="rule-common"><i class="info-icon">✔</i> Not a common password</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -368,49 +368,60 @@ $(document).ready(function () {
 <script>
     $(document).ready(function () {
 
-        // Show rules when clicked
-        $("#password").on("click", function () {
-            $("#password-info").css("display", "flex");
-        });
-
-        // Live validation
-        $("#password").on("keyup", function () {
-            let val = $(this).val();
-            let hasNumber = /\d/.test(val);
-            let commonPasswords = ["123456", "password", "qwerty", "111111"];
-
-            // Rule 1: Length
-            if (val.length >= 7) {
-                $("#rule-length").removeClass("error").addClass("success");
-            } else {
-                $("#rule-length").removeClass("success").addClass("error");
-            }
-
-            // Rule 2: At least one number
-            if (hasNumber) {
-                $("#rule-number").removeClass("error").addClass("success");
-            } else {
-                $("#rule-number").removeClass("success").addClass("error");
-            }
-
-            // Rule 3: Not common password
-            if (!commonPasswords.includes(val)) {
-                $("#rule-common").removeClass("error").addClass("success");
-            } else {
-                $("#rule-common").removeClass("success").addClass("error");
-            }
-
-            // If ANY rule fails → red input border
-            if (
-                val.length < 7 ||
-                !hasNumber ||
-                commonPasswords.includes(val)
-            ) {
-                $("#password").addClass("input-error");
-            } else {
-                $("#password").removeClass("input-error");
-            }
-        });
-
+    // Show info on click only
+    $("#password").on("click", function () {
+        $("#password-info").css("display", "flex");
     });
+
+    $("#password").on("keyup", function () {
+        let val = $(this).val();
+        let hasNumber = /\d/.test(val);
+        let commonPasswords = ["123456", "password", "qwerty", "111111"];
+
+        // Rule 1 — Length
+        if (val.length >= 7) {
+            $("#rule-length")
+                .removeClass("error").addClass("success")
+                .find(".icon").text("✔");
+        } else {
+            $("#rule-length")
+                .removeClass("success").addClass("error")
+                .find(".icon").text("⚠");
+        }
+
+        // Rule 2 — Number
+        if (hasNumber) {
+            $("#rule-number")
+                .removeClass("error").addClass("success")
+                .find(".info-icon").text("✔");
+        } else {
+            $("#rule-number")
+                .removeClass("success").addClass("error")
+                .find(".info-icon").text("⚠");
+        }
+
+        // Rule 3 — Not common password
+        if (!commonPasswords.includes(val)) {
+            $("#rule-common")
+                .removeClass("error").addClass("success")
+                .find(".info-icon").text("✔");
+        } else {
+            $("#rule-common")
+                .removeClass("success").addClass("error")
+                .find(".info-icon").text("⚠");
+        }
+
+        // Input error border if any rule fails
+        if (
+            val.length < 7 ||
+            !hasNumber ||
+            commonPasswords.includes(val)
+        ) {
+            $("#password").addClass("input-error");
+        } else {
+            $("#password").removeClass("input-error");
+        }
+    });
+});
+
 </script>
