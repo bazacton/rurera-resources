@@ -30,19 +30,25 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="edit-info-list">
-                                <h4 class="font-18 font-weight-bold pb-10">About you</h4>
+                                <h4 class="font-18 font-weight-bold pb-10 d-flex align-items-center">
+                                    About you
+                                    <a href="javascript:;" class="edit-profile-btn"> 
+                                        <span class="edit-icon d-inline-flex align-items-center">
+                                            <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+                                            <em class="font-weight-500">Edit</em>
+                                        </span>
+                                    </a>
+                                </h4>
                                 <ul>
                                     <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Full Name
-                                                <strong class="d-block font-weight-500">{{$user->get_full_name()}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
+                                        <span class="info-list-label font-16">
+                                            Full Name
+                                            <strong class="d-block font-weight-500">{{$user->get_full_name()}}</strong>
+                                        </span>
+                                        <span class="info-list-label font-16">
+                                            Email
+                                            <strong class="d-block font-weight-500">parent5000@test.com</strong>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
@@ -175,18 +181,20 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="edit-info-list">
-                                <h4 class="font-18 font-weight-bold pb-10">Change Password</h4>
+                                <h4 class="font-18 font-weight-bold pb-10 d-flex align-items-center">
+                                    Change Password
+                                    <a href="javascript:;" class="profile-login-btn">
+                                        <span class="edit-icon d-inline-flex align-items-center">
+                                            <em class="font-weight-500">Edit</em>
+                                        </span>
+                                    </a>
+                                </h4>
                                 <ul>
                                     <li>
-                                        <a href="javascript:;" class="d-flex align-items-center profile-login-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Contact no
-                                                <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
+                                        <span class="info-list-label font-16">
+                                            Contact no
+                                            <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
+                                        </span>
                                     </li>
                                     <!-- <li>
                                         <a href="javascript:;" class="d-flex align-items-center profile-login-btn justify-content-between p-15">
