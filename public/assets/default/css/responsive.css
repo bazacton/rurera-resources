@@ -1567,6 +1567,8 @@ Lms Responsive Style Start
     .edit-info-list li {gap: 20px 30px;}
     body.parent-panel .wizard-steps .radio-buttons .card-radio:has(img) {
         width: 47%;
+        max-width: 47%;
+        flex: 0 0 47%;
     }
 }
 @media screen and (max-width: 480px) {
