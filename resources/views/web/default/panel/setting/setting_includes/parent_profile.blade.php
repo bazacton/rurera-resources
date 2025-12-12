@@ -43,15 +43,15 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     <li>
                                         <span class="info-list-label font-16">
                                             Full Name
-                                            <strong class="d-block font-weight-500"><img src="/assets/default/svgs/user-alt-2-svgrepo-com.svg" alt="user-alt-2-svgrepo-com" height="800" width="800"> {{$user->get_full_name()}}</strong>
+                                            <strong class="d-flex font-weight-500"><img src="/assets/default/svgs/user-alt-2-svgrepo-com.svg" alt="user-alt-2-svgrepo-com" height="800" width="800"> {{$user->get_full_name()}}</strong>
                                         </span>
                                         <span class="info-list-label font-16">
                                             Contact no
-                                            <strong class="d-block font-weight-500"><img src="/assets/default/svgs/mobile.svg" alt="mobile" height="800" width="800"> {{$user->mobile}}</strong>
+                                            <strong class="d-flex font-weight-500"><img src="/assets/default/svgs/mobile.svg" alt="mobile" height="800" width="800"> {{$user->mobile}}</strong>
                                         </span>
                                         <span class="info-list-label font-16">
                                             Email
-                                            <strong class="d-block font-weight-500"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2" height="64" width="64"> parent5000@test.com</strong>
+                                            <strong class="d-flex font-weight-500"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2" height="64" width="64"> parent5000@test.com</strong>
                                         </span>
                                     </li>
                                 </ul>
@@ -197,7 +197,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     <li>
                                         <span class="info-list-label font-16">
                                             Password
-                                            <strong class="d-block font-weight-500"><img src="/assets/default/svgs/shield.svg" alt="shield" height="24" width="24"> ********</strong>
+                                            <strong class="d-flex font-weight-500"><img src="/assets/default/svgs/shield.svg" alt="shield" height="24" width="24"> ********</strong>
                                         </span>
                                     </li>
                                     <!-- <li>
