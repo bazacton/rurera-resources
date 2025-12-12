@@ -23,6 +23,15 @@ Sub Pages Style
 #analyticsAccordion .card-header > span {display: flex; align-items: center; gap: 8px; width: 32.555%; justify-content: flex-end; margin-right: 0 !important;}
 #analyticsAccordion .card-header > span:nth-child(2) {justify-content: flex-start; margin-left: -8px;}
 #analyticsAccordion .card-header > span:first-child {justify-content: flex-start;}
+#analyticsAccordion .card .card-header:has(.no-records-found) span {
+    display: none;
+}
+#analyticsAccordion .card .card-header:has(.no-records-found) .analytics-timespend, 
+#analyticsAccordion .card .card-header:has(.no-records-found) .analytics-timespend span {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
 #analyticsAccordion .card-header img {max-width: 25px; max-height: 20px; object-fit: contain;}
 #analyticsAccordion .card-header .analytics-cions-earned span {min-width: 35px;}
 .member-card-header.activities-header {border: 1px solid #ddd; border-bottom: 0; background-color: #fff; border-radius: 8px 8px 0 0; padding-top: 20px; padding-left: 20px;}
