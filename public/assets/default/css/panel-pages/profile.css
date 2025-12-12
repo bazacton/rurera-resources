@@ -228,6 +228,10 @@ address .info-list-label {color: #64748b;}
     border: 0;
     padding-right: 0;
 }
+.user-view-profile .edit-info-list {
+    border: 0;
+    padding: 0;
+}
 .edit-info-list .profile-view-data li .info-list-label {
     border: 0;
     padding: 0;
