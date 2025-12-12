@@ -434,6 +434,7 @@ a.last-activity span strong {color: #343434;}
 }
 .packages-back-btn a {
     text-decoration: underline;
+    color: var(--primary);
 }
 .lms-choose-membership .form-group .rurera-error-msg {
     position: relative;
