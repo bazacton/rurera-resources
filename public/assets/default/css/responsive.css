@@ -1096,7 +1096,6 @@ Lms Responsive Style Start
     .analytics-dropdown .select-holder,
     .date-range-holder {max-width: 100%; width: 100%;}
     .analytics-dropdown select {padding: 10px;}
-    .date-range-holder input {height: 30px;}
     #profile-image-modal .close {right: 5px; top: 5px;}
     #profile-image-modal .svga-glob-controls {width: 12.5%;}
     #userSettingForm #profile-image-modal #svga-container.svga-light {padding-top: 0;}
