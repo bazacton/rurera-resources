@@ -1183,6 +1183,7 @@ Lms Responsive Style Start
     .preference-field-group {margin: 0 0 20px;}
     .lms-choose-membership .subscription-content {padding-top: 35px;}
     .transactions-table .no-records-found {padding: 12px; justify-content: center;}
+    .subscription-content .usernames-suggestions {margin-bottom: 15px;}
 }
 
 @media screen and (max-width: 640px) {
