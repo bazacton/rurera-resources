@@ -1547,6 +1547,15 @@ Lms Responsive Style Start
     .detail-body .profile-view-data .edit-profile-controls {
         margin-top: 20px;
     }
+    #analyticsAccordion .card .card-header:has(.no-records-found) span {
+        display: none;
+    }
+    #analyticsAccordion .card .card-header:has(.no-records-found) .analytics-timespend, 
+    #analyticsAccordion .card .card-header:has(.no-records-found) .analytics-timespend span {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
