@@ -93,7 +93,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 }
 .password-info .item {
     display: inline-flex;
-    color: #28a745;
     align-items: center;
     gap: 6px;
 }
@@ -110,13 +109,9 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 }
 .success {
     color: #28a745;
-    background: #e8f9ee;
-    border: 1px solid #28a745;
 }
 .error {
     color: #d9534f;
-    background: #fde8e7;
-    border: 1px solid #d9534f;
 }
 .input-error {
     border: 2px solid #d9534f !important;
