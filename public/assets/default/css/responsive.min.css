@@ -4140,6 +4140,7 @@
     .spells-quiz-from .rurera-in-row .form-field {
         width: 31.555%;
     }
+    .lms-choose-membership .subscription-content {padding-top: 35px;}
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
