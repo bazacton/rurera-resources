@@ -391,13 +391,11 @@ $(document).ready(function () {
 
     // User Loging Detail Function Start
     $(document).on('click', '.profile-login-btn', function (e) {
-        $(".user-profile-block").addClass('rurera-hide');
-        $(".user-edit-login").removeClass('rurera-hide');
+        $(".user-edit-login").addClass('rurera-active');
     });
 
     $(document).on('click', '.cancel-edit-button', function (e) {
-        $(".user-profile-block").removeClass('rurera-hide');
-        $(".user-edit-login").addClass('rurera-hide');
+        $(".user-edit-login").removeClass('rurera-active');
     });
     // User Login Detail Function End
 
