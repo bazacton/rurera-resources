@@ -382,11 +382,11 @@ $(document).ready(function () {
         if (val.length >= 7) {
             $("#rule-length")
                 .removeClass("error").addClass("success")
-                .find(".icon").text("✔");
+                .find(".info-icon").text("✔");
         } else {
             $("#rule-length")
                 .removeClass("success").addClass("error")
-                .find(".icon").text("⚠");
+                .find(".info-icon").text("⚠");
         }
 
         // Rule 2 — Number
