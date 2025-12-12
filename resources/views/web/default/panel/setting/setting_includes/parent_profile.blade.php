@@ -190,7 +190,12 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Password</label>
                                                 <div class="input-field">
-                                                    <input type="password" name="password" placeholder="Choose a secure password" value="">
+                                                    <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
+                                                    <div class="password-info">
+                                                        <span class="item"><i>✔</i> 7+ characters</span>
+                                                        <span class="item"><i>✔</i> At least one number</span>
+                                                        <span class="item"><i>✔</i> Not a common password</span>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -359,4 +364,21 @@ $(document).ready(function () {
 
     });
 });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#password").on("focus", function () {
+            $(".password-info").slideDown(200);
+        });
+
+        $("#password").on("blur", function () {
+            // hide only if empty
+            if ($(this).val().length === 0) {
+                $(".password-info").slideUp(200);
+            }
+        });
+
+    });
+
 </script>
