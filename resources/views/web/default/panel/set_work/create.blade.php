@@ -781,11 +781,11 @@
                             </div>
                         </div>
 
-                        <div class="form-section rurera-hide">
-                            <h2 class="section-title">General information111111111</h2>
+                        <div class="form-section">
+                            <h2 class="section-title">General information</h2>
                         </div>
 
-                        <div class="form-group rurera-hide">
+                        <div class="form-group">
                             <label class="input-label">Practice Title</label>
                             <input type="text"
                                    name="ajax[new][title]"
@@ -794,7 +794,7 @@
                                    placeholder=""/>
                         </div>
 
-                        <div class="form-group rurera-hide">
+                        <div class="form-group">
                             <label class="input-label">Practice Description</label>
                             <textarea
                                 name="ajax[new][description]"
@@ -803,20 +803,15 @@
                             <div class="invalid-feedback"></div>
                         </div>
 
-                        <div class="form-section rurera-hide">
+                        <div class="form-section">
                             <h2 class="section-title">Schedule</h2>
                         </div>
 
-                        <div class="row rurera-hide">
+                        <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                 <div class="form-group">
                                     <label class="input-label">Practice Start Date</label>
                                     <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
-                                                <i class="fa fa-calendar-week"></i>
-                                            </button>
-                                        </div>
                                         <input type="text" autocomplete="off"
                                                name="ajax[new][assignment_start_date]"
                                                value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
@@ -835,11 +830,6 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Due Date</label>
                                     <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
-                                                <i class="fa fa-calendar-week"></i>
-                                            </button>
-                                        </div>
                                         <input type="text" autocomplete="off"
                                                name="ajax[new][assignment_end_date]"
                                                value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
@@ -1094,44 +1084,22 @@
                             </div>
                         </div>
 
-                        <div class="form-section">
-                            <h2 class="section-title">User Criteria</h2>
+                        <div class="mt-20 mb-20">
+                            <button type="submit"
+                                    class="js-submit-quiz-form btn btn-sm btn-primary">{{
+                                            !empty($assignment) ?
+                                            trans('public.save_change') : trans('public.create') }}
+                            </button>
+
+                            @if(empty($assignment) and !empty($inWebinarPage))
+                                <button type="button"
+                                        class="btn btn-sm btn-danger ml-10 cancel-accordion">{{
+                                            trans('public.close') }}
+                                </button>
+                            @endif
                         </div>
 
-                        <div class="form-group">
-                            <label class="input-label">Assignment Assign Type</label>
-                            <div class="input-group">
 
-
-                                <div class="radio-buttons">
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][assignment_assign_type]"
-                                               class="conditional_check assignment_type_check" value="Individual">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <h3>Individual</h3>
-                                                            </div>
-
-                                                        </span>
-                                    </label>
-
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][assignment_assign_type]"
-                                               class="conditional_check assignment_type_check" value="Class" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <h3>Class</h3>
-                                                            </div>
-
-                                                        </span>
-                                    </label>
-
-                                </div>
-                                <div class="invalid-feedback"></div>
-                            </div>
-                        </div>
-
-                        
                         <div class="class-section-data">
                             New Data Ends 11111111111
                         </div>
