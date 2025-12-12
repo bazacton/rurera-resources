@@ -135,3 +135,11 @@
         </form>
       </div>
     </div>
+
+    <script>
+        $('.select-holder select').on('change', function () {
+            if ($(this).val() !== "") {
+                $(this).addClass('active');
+            }
+        });
+    </script>
