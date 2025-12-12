@@ -1565,6 +1565,9 @@ Lms Responsive Style Start
         padding-right: 0;
     }
     .edit-info-list li {gap: 20px 30px;}
+    body.parent-panel .wizard-steps .radio-buttons .card-radio:has(img) {
+        width: 47%;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
