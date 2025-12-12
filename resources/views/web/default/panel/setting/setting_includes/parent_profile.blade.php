@@ -187,18 +187,85 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                     <input type="text" name="email" class="rurera-req-field" placeholder="Email for important updates" value="{{( $user->email != '')? $user->email : ''}}">
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Password</label>
-                                                <div class="input-field">
-                                                    <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
-                                                    <div class="password-info" id="password-info">
-                                                        <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
-                                                        <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
-                                                        <span class="item" id="rule-common"><i class="info-icon">✔</i> Not a common password</span>
-                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-profile-footer">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="edit-profile-controls text-right">
+                                                <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
+                                                <button type="button" id="saveData" class="save-btn text-center ">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="edit-experience" role="tabpanel" aria-labelledby="edit-experience-tab">Experience</div>
+                            <div class="tab-pane fade" id="edit-skills" role="tabpanel" aria-labelledby="edit-skills-tab">Skills</div>
+                            <div class="tab-pane fade" id="edit-settings" role="tabpanel" aria-labelledby="edit-settings-tab">Settings</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 user-edit-login rurera-hide">
+            <div class="edit-profile mb-50">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12 rurera-hide">
+                        <div class="edit-profile-sidebar">
+                            <div class="user-info d-flex align-items-center flex-wrap mb-30">
+                                <span class="info-text d-inline-flex flex-column font-weight-500">
+                                    {{$user->get_full_name()}}
+                                </span>
+                            </div>
+                            <div class="edit-profile-menu">
+                                <ul class="nav flex-column" id="myTab" role="tablist">
+                                    <li>
+                                        <a class="nav-link active d-flex align-items-center" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt="edit-menu-user"></span> General
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link d-flex align-items-center" id="edit-experience-tab" data-toggle="tab" href="#edit-experience" role="tab" aria-controls="edit-experience" aria-selected="false">
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt="edit-menu-home"></span>Experience
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link d-flex align-items-center" id="edit-skills-tab" data-toggle="tab" href="#edit-skills" role="tab" aria-controls="edit-skills" aria-selected="false">
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt="edit-menu-diamond"></span>Skills &amp; Tools
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link d-flex align-items-center" id="edit-settings-tab" data-toggle="tab" href="#edit-settings" role="tab" aria-controls="edit-settings" aria-selected="false">
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt="edit-menu-setting"></span>Settings
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="edit-profile-content-holder tab-content" id="myTabContent">
+                            <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile2" role="tabpanel" aria-labelledby="edit-profile2-tab">
+                                <div class="edit-profile-body">
+                                    <div class="row">
+                                        <div class="col-6 col-lg-6 col-md-6 form-group">
+                                            <label>Current Password</label>
+                                            <div class="input-field">
+                                                <input type="password" id="password" name="password" placeholder="Choose a secure password" value="">
+                                                <div class="password-info" id="password-info">
+                                                    <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                                                    <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
+                                                    <span class="item" id="rule-common"><i class="info-icon">✔</i> Not a common password</span>
                                                 </div>
                                             </div>
-
+                                        </div>
+                                        <div class="col-6 col-lg-6 col-md-6 form-group">
+                                            <label>New Password</label>
+                                            <div class="input-field">
+                                                <input type="password" name="password" placeholder="Choose a secure password" value="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
