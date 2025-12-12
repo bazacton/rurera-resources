@@ -372,13 +372,6 @@ $(document).ready(function () {
             $(".password-info").slideDown(200);
         });
 
-        $("#password").on("blur", function () {
-            // hide only if empty
-            if ($(this).val().length === 0) {
-                $(".password-info").slideUp(200);
-            }
-        });
-
     });
 
 </script>
