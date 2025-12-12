@@ -392,7 +392,7 @@ $(document).ready(function () {
 
 
     $(document).on('click', '.edit-profile-btn', function (e) {
-        $(this).siblings('.edit-info-list').addClass('rurera-hide');
+        $(this).next('.edit-info-list').addClass('rurera-hide');
         $(".user-edit-profile").addClass('rurera-active');
     });
 
