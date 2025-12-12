@@ -47,7 +47,7 @@
                                             }
                                             $selected_child = ($child_count == 1)? 'checked' : '';
                                             @endphp
-                                            
+
                                                 @if( $is_user_subscribed == true)
                                                     <input type="hidden" class="user-permissions" data-type="sats" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('sats')}}">
                                                     <input type="hidden" class="user-permissions" data-type="11plus" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
@@ -121,221 +121,704 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="years-group populated-data">
-                        <div class="form-section mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">Select Type of Practice</h2>
-                        </div>
+
+
                         <div class="form-group">
+                            <label class="input-label">Practice Type</label>
                             <div class="input-group">
-                                <div class="radio-buttons justify-content-left">
-                                    <label class="card-radio practice-item-active" data-next_step="3">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                            class="assignment_topic_type_check" value="practice" data-tag_title="Courses" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
-                                                <h3>Courses</h3>
-                                            </div>
-                                        </span>
-                                    </label>
-                                    
-                                    <label class="card-radio" data-next_step="3">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                            class="assignment_topic_type_check" value="vocabulary" data-tag_title="Vocabulary">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
-                                                <h3>Vocabulary</h3>
-                                            </div>
-                                        </span>
-                                    </label>
 
-                                    <label class="card-radio " data-next_step="3">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                            class="assignment_topic_type_check" value="timestables" data-tag_title="Timestables">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                        <div class="card-icon">
-                                            <img src="/assets/default/img/assignment-logo/timestables.png" height="65" width="98" alt="timestables">
-                                            <h3>Timestables</h3>
-                                        </div>
+                                <div class="radio-buttons">
 
-                                        </span>
-                                    </label>
-                                    
-                                    <label class="card-radio" data-next_step="3">
-                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                        class="assignment_topic_type_check" value="mock_test" data-tag_title="Mock Test">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams">
-                                                <h3>Mock Test</h3>
-                                            </div>
-                                        </span>
-                                    </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="practice" checked>
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <img src="/assets/default/img/assignment-logo/practice.png">
+                                                                                <h3>Courses</h3>
+                                                                            </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="sats">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/sats.png">
+                                                                    <h3>SATs</h3>
+                                                                </div>
+                                                            </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="11plus">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/11plus.png">
+                                                                <h3>11 Plus</h3>
+                                                            </div>
 
-                                    <label class="card-radio" data-next_step="3">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                            class="assignment_topic_type_check" value="sats" data-tag_title="SATs">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
-                                                <h3>SATs</h3>
-                                            </div>
-                                        </span>
-                                    </label>
+                                                        </span>
+                                        </label>
+                                       <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="independent_exams">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/independent-exams.png">
+                                                                <h3>Independent Exams</h3>
+                                                            </div>
 
-                                    <label class="card-radio " data-next_step="3">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                            class="assignment_topic_type_check" value="books" data-tag_title="Books">
+                                                            </span>
+                                        </label>
+
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="iseb">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/iseb.png">
+                                                                <h3>ISEB</h3>
+                                                            </div>
+
+                                                            </span>
+                                        </label>
+
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="cat4">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/cat4.png">
+                                                                <h3>CAT 4</h3>
+                                                            </div>
+
+                                                            </span>
+                                        </label>
+
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="vocabulary">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/vocabulary.png">
+                                                                <h3>Vocabulary</h3>
+                                                            </div>
+
+                                                            </span>
+                                        </label>
+
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][assignment_topic_type]"
+                                                   class="assignemnet_types_selection" value="timestables">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/timestables.png">
+                                                                <h3>Timestables</h3>
+                                                            </div>
+
+                                                            </span>
+                                        </label>
+
+                                    <label class="card-radio rurera-hide">
+                                        <input type="radio" name="ajax[new][assignment_topic_type]"
+                                               class="assignemnet_types_selection" value="assignment">
                                         <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/types/books.svg" alt="books">
-                                                <h3>Books</h3>
-                                            </div>
-                                        </span>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/practice.png">
+                                                                <h3>Custom Assignment</h3>
+                                                            </div>
+                                                        </span>
                                     </label>
                                 </div>
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="years-group populated-data assignment_topic_type_fields mock_test_fields row">
-                        <div class="col-12 col-lg-12 col-md-12">
-                            <div class="form-section mb-20 text-left 223">
-                                <h2 class="section-title font-18 font-weight-bold">Select a Topic</h2>
-                            </div>
-                            <div class="tests-list-holder mb-25">
-                                <ul class="tests-list mb-30">
-                                    <input type="radio" class="rurera-hide assignment_topic_type_check assignment_topic_type_mock" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]" value="">
-                                    <li data-type="all" data-test_type="all" class="active" data-tag_title="All Tests">All Tests</li>
-                                    <li data-type="11plus" data-test_type="11plus" data-tag_title="11Plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt=""> 11Plus</li>
-                                    <li data-type="iseb" data-test_type="iseb" data-tag_title="ISEB"><img src="/assets/default/img/assignment-logo/iseb.png" alt=""> ISEB</li>
-                                    <li data-type="cat4" data-test_type="cat4" data-tag_title="CAT 4"><img src="/assets/default/img/assignment-logo/cat4.png" alt=""> CAT 4</li>
-                                    <li data-type="independent_exams" data-test_type="independent_exams" data-tag_title="Independent Exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt=""> Independent Exams</li>
-                                </ul>
-                            </div>
-                            <h4 class="total-tests has-border font-18 font-weight-bold">Select Tests: {{$sats->count()}}</h4>
-                        </div>
-                        <div class="col-12 col-lg-12 col-md-12">
-                            <div class="sats-listing-card medium mt-30">
-                                <table class="simple-table">
-                                    <tbody>
-                                    <input type="radio" data-total_questions="0"  name="ajax[new][topic_ids]" class="rurera-hide topic_selection topic_select_radio" value="0">
-                                    @if( !empty( $sats))
-                                    @php $counter = 0; @endphp
-                                        @foreach( $sats as $rowObj)
-                                            @include('web.default.tests.single_item_assignment',['rowObj' => $rowObj])
-                                        @endforeach
-                                    @endif
-                                    </tbody>
-                                </table>
-                                <div class="sats-listing-empty rurera-hidden"><p>No Tests Found</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="years-group populated-data assignment_type_check_fields practice_test_fields">
-                        <div class="form-section assignment_topic_type_fields practice_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                            <h2 class="section-title font-18 font-weight-bold">Select a Subject</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields 11sats_fields mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">Sats</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields 11plus_fields mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">11 Plus</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields independent_exams_fields mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">Independent Exams</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields iseb_fields mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">ISEB</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields cat4_fields mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">CAT 4</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields vocabulary_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                            <h2 class="section-title font-18 font-weight-bold">Select List</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields timestables_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                            <h2 class="section-title font-18 font-weight-bold">Times Tables</h2>
-                        </div>
-                        <div class="form-section assignment_topic_type_fields assignment_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                            <h2 class="section-title font-18 font-weight-bold">Custom Assignment</h2>
-                        </div>
-                        <div class="practice-quiz-ajax-fields setwork-fields"></div>
 
-                        @php
-                        $tables_no = isset( $assignment->tables_no )? json_decode($assignment->tables_no) : array();
-                        @endphp
 
-                        <div class="form-group assignment_topic_type_fields timestables_fields ajax-title show-after-ajax">
-                            <div class="timestables-heatmap"></div>
-                            <div class="questions-select-number">
-                                <ul class="d-flex justify-content-left flex-wrap mb-30">
-                                    <li><input type="checkbox" value="10" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(10,$tables_no)?
-                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                                    <li><input type="checkbox" value="2" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(2,$tables_no)?
-                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
-                                    <li><input type="checkbox" value="5" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(5,$tables_no)?
-                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                                    <li><input type="checkbox" value="3" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(3,$tables_no)?
-                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
-                                    <li><input type="checkbox" value="4" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(4,$tables_no)?
-                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                                    <li><input type="checkbox" value="8" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(8,$tables_no)?
-                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                                    <li><input type="checkbox" value="6" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(6,$tables_no)?
-                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                                    <li><input type="checkbox" value="7" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(7,$tables_no)?
-                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                                    <li><input type="checkbox" value="9" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(9,$tables_no)?
-                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                                    <li><input type="checkbox" value="11" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(11,$tables_no)?
-                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                                    <li><input type="checkbox" value="12" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(12,$tables_no)?
-                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                                    <li><input type="checkbox" value="13" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(13,$tables_no)?
-                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                                    <li><input type="checkbox" value="14" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(14,$tables_no)?
-                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                                    <li><input type="checkbox" value="15" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(15,$tables_no)?
-                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                                    <li><input type="checkbox" value="16" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(16,$tables_no)?
-                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
-                                </ul>
-                            </div>
+
+                        <div class="form-section rurera_common_hide_field courses_fields">
+                            <h2 class="section-title">Courses</h2>
                         </div>
-                        <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
-                    </div>
-                    
-                    <div class="years-group populated-data">
-                        <div class="form-section mb-20 text-left 223">
-                            <h2 class="section-title font-18 font-weight-bold">General information</h2>
+
+
+                        <div class="form-section rurera_common_hide_field sats_fields">
+                            <h2 class="section-title">Sats</h2>
                         </div>
-                        <div class="row mb-15">
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label class="input-label font-weight-bold">Practice Title</label>
-                                    <div class="input-group">
-                                    <input type="text"
-                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][title]"
-                                        value="{{ !empty($assignment) ? $assignment->title : old('title') }}"
-                                        class="js-ajax-title form-control rurera-req-field bg-white"
-                                        placeholder="Practice Title"/>
+
+
+                        <div class="form-section rurera_common_hide_field 11plus_fields">
+                            <h2 class="section-title">11 Plus</h2>
+                        </div>
+
+
+                        <div class="form-section rurera_common_hide_field independent_exams_fields">
+                            <h2 class="section-title">Independent Exams</h2>
+                        </div>
+
+
+                        <div class="form-section rurera_common_hide_field iseb_fields">
+                            <h2 class="section-title">ISEB</h2>
+                        </div>
+
+
+                        <div class="form-section rurera_common_hide_field cat4_fields">
+                            <h2 class="section-title">CAT 4</h2>
+                        </div>
+
+
+                        <div class="form-section rurera_common_hide_field vocabulary_fields">
+                            <h2 class="section-title">Vocabulary</h2>
+                        </div>
+
+                        <div class="form-section rurera_common_hide_field timestables_type_fields">
+                            <h2 class="section-title">Times Tables</h2>
+                        </div>
+
+
+                        <div class="rurera_common_hide_field year_group_field">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label class="input-label">Year Group</label>
+                                        <select data-default_id="{{isset( $quiz->id)? $quiz->year_id : 0}}"
+                                                class="form-control year_quiz_ajax_select select2 @error('year_id') is-invalid @enderror"
+                                                name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]">
+                                            <option value="0">Select Year Group</option>
+
+                                            @foreach($categories as $category)
+                                                @if(!empty($category->subCategories) and
+                                                count($category->subCategories))
+                                                    @foreach($category->subCategories as $subCategory)
+                                                        <option value="{{ $subCategory->id }}" @if(!empty($quiz) and $quiz->year_id == $subCategory->id) selected="selected" @endif>
+                                                            {{$subCategory->title}}
+                                                        </option>
+                                                    @endforeach
+                                                @endif
+                                            @endforeach
+                                        </select>
+                                        @error('year_id')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label class="input-label font-weight-bold">Practice Start Date</label>
+                        </div>
+
+
+                        <div class="rurera_common_hide_field vocabulary_type_fields">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label class="input-label">Vocabulary Type</label>
+                                        <div class="input-group">
+                                            <div class="radio-buttons">
+
+                                                <label class="card-radio">
+                                                    <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Word Lists</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+
+                                                <label class="card-radio">
+                                                    <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Spelling Bee">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Spelling Bee</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                                <label class="card-radio">
+                                                    <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Syllabus">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Syllabus</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rurera_common_hide_field vocabulary_list_data">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="quiz-ajax-fields"></div>
+                                </div>
+                                <div class="spell-questions-list rurera-hide"></div>
+                            </div>
+                        </div>
+
+                        <div class="rurera_common_hide_field vocabulary_practice_type_field">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
+                                    <div class="form-group">
+                                        <label class="input-label">Practice Type</label>
+                                        <div class="input-group">
+                                            <div class="radio-buttons">
+
+                                                @php $spell_counter = 1;$spell_modes = get_spell_modes(); @endphp
+
+                                                @if(!empty($spell_modes))
+                                                    @foreach($spell_modes as $spell_mode_key => $spell_mode_value)
+                                                        @php $is_checked = ($spell_counter == 1)? 'checked' : ''; @endphp
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[new][spell_practice_type]" value="{{$spell_mode_key}}"
+                                                                {{$is_checked}}>
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>{{$spell_mode_value}}</h3>
+                                                                                </div>
+
+                                                                            </span>
+                                                        </label>
+                                                        @php $spell_counter++; @endphp
+                                                    @endforeach
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera_common_hide_field show_words_type_field">
+                                    <div class="form-group">
+                                        <label class="input-label">Show Words</label>
+                                        <div class="input-group">
+                                            <div class="radio-buttons">
+
+                                                <label class="card-radio">
+                                                    <input type="radio" name="ajax[new][show_words]" value="words" checked>
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Just Words</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                                <label class="card-radio">
+                                                    <input type="radio" name="ajax[new][show_words]" value="words_sentences">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Words with Sentences</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practice-quiz-ajax-fields rurera_common_hide_field courses_fields"></div>
+
+
+                        <div class="rurera_common_hide_field">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label class="input-label d-block">Year Group</label>
+                                        <select name="ajax[new][year_group]"
+                                                class="form-control select2 " data-placeholder="Select Year Group">
+                                            <option value="">Select Year Group</option>
+                                            <option value="All">All</option>
+                                            <option value="Year 3" selected>Year 3</option>
+                                            <option value="Year 4">Year 4</option>
+                                            <option value="Year 5">Year 5</option>
+                                            <option value="Year 6">Year 6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label class="input-label">Test Type</label>
+                                        <div class="input-group">
+                                            <div class="radio-buttons">
+
+                                                <label class="card-radio">
+                                                    <input type="radio" name="ajax[new][subject]" value="English">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
+                                                                            <h3>English</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                                <label class="card-radio">
+                                                    <input type="radio" name="ajax[new][subject]" value="Math">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 191.836 191.836" xml:space="preserve" style=""><path d="M70.806,0.975H17.313C7.767,0.975,0,8.741,0,18.288V71.78c0,9.547,7.767,17.314,17.313,17.314h53.492  c9.547,0,17.313-7.767,17.313-17.314V18.288C88.119,8.741,80.353,0.975,70.806,0.975z M61.365,50.034H49.06v12.305  c0,2.761-2.239,5-5,5s-5-2.239-5-5V50.034H26.754c-2.761,0-5-2.239-5-5s2.239-5,5-5H39.06V27.729c0-2.761,2.239-5,5-5s5,2.239,5,5  v12.305h12.305c2.761,0,5,2.239,5,5S64.126,50.034,61.365,50.034z M70.806,102.742H17.313C7.767,102.742,0,110.509,0,120.056v53.492  c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314v-53.492  C88.119,110.509,80.353,102.742,70.806,102.742z M61.365,151.802h-34.61c-2.761,0-5-2.239-5-5s2.239-5,5-5h34.61  c2.761,0,5,2.239,5,5S64.126,151.802,61.365,151.802z M174.523,0.975H121.03c-9.547,0-17.313,7.767-17.313,17.313V71.78  c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314V18.288C191.836,8.741,184.069,0.975,174.523,0.975z   M163.548,53.735c1.953,1.953,1.953,5.119,0,7.071c-0.977,0.976-2.256,1.464-3.536,1.464s-2.559-0.488-3.536-1.464l-8.701-8.701  l-8.701,8.701c-0.977,0.976-2.256,1.464-3.536,1.464s-2.559-0.488-3.536-1.464c-1.953-1.953-1.953-5.119,0-7.071l8.701-8.701  l-8.701-8.701c-1.953-1.953-1.953-5.119,0-7.071c1.953-1.952,5.118-1.952,7.071,0l8.701,8.701l8.701-8.701  c1.953-1.952,5.118-1.952,7.071,0c1.953,1.953,1.953,5.119,0,7.071l-8.701,8.701L163.548,53.735z M174.523,102.742H121.03  c-9.547,0-17.313,7.767-17.313,17.314v53.492c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314  v-53.492C191.836,110.509,184.069,102.742,174.523,102.742z M147.776,123.906c2.807,0,5.083,2.276,5.083,5.083  c0,2.808-2.276,5.083-5.083,5.083c-2.807,0-5.083-2.276-5.083-5.083C142.693,126.182,144.969,123.906,147.776,123.906z   M147.776,169.697c-2.807,0-5.083-2.276-5.083-5.083c0-2.807,2.276-5.083,5.083-5.083c2.807,0,5.083,2.276,5.083,5.083  C152.86,167.422,150.584,169.697,147.776,169.697z M165.082,151.802h-34.61c-2.761,0-5-2.239-5-5s2.239-5,5-5h34.61  c2.761,0,5,2.239,5,5S167.843,151.802,165.082,151.802z"></path></svg>
+                                                                            <h3>Math</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                                <label class="card-radio">
+                                                    <input type="radio" name="ajax[new][subject]" value="Non-Verbal Reasoning">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
+                                                                            <h3>Non-Verbal Reasoning</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                                <label class="card-radio">
+                                                    <input type="radio" name="ajax[new][subject]" value="Verbal Reasoning">
+                                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
+                                                                            <h3>Verbal Reasoning</h3>
+                                                                        </div>
+
+                                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rurera_common_hide_field practice-quiz-topics-list"></div>
+
+
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="form-group rurera_common_hide_field timestables_modes_selection">
+                                    <label class="input-label">Timestables Mode</label>
                                     <div class="input-group">
+                                        <div class="radio-buttons">
+
+                                            <label class="card-radio">
+                                                <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="freedom_mode" checked>
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Freedom Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="powerup_mode">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Powerup Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="trophy_mode">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Trophy Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="treasure_mission">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Treasure Mission Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="showdown_mode">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Showdown Mode</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group rurera_common_hide_field arthmetic_operations">
+                                    <label class="input-label">Select Arithmetic Operations</label>
+                                    <div class="input-group">
+                                        <div class="radio-buttons">
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication_division">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Multiplication and Division</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication" checked>
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Multiplication only</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][arthmetic_operations]" value="division">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>Division only</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group rurera_common_hide_field no_of_questions_field">
+                                    <label class="input-label">No of Questions</label>
+                                    <div class="input-group">
+                                        <div class="radio-buttons">
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][no_of_questions]" value="10" checked>
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>10 Questions</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][no_of_questions]" value="20">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>20 Questions</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][no_of_questions]" value="30">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>30 Questions</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @php
+                                    $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
+                                @endphp
+
+
+                                <div class="form-group rurera_common_hide_field select_tables_field">
+                                    <div class="questions-select-number">
+                                        <ul class="d-flex justify-content-center flex-wrap mb-30">
+                                            <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
+                                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                            <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
+                                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                            <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
+                                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                            <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
+                                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                            <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
+                                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                            <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
+                                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                            <li><input type="checkbox" value="6" name="ajax[new][tables_no][]" {{in_array(6,$tables_no)?
+                                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                            <li><input type="checkbox" value="7" name="ajax[new][tables_no][]" {{in_array(7,$tables_no)?
+                                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                            <li><input type="checkbox" value="9" name="ajax[new][tables_no][]" {{in_array(9,$tables_no)?
+                                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                            <li><input type="checkbox" value="11" name="ajax[new][tables_no][]" {{in_array(11,$tables_no)?
+                                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                            <li><input type="checkbox" value="12" name="ajax[new][tables_no][]" {{in_array(12,$tables_no)?
+                                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                            <li><input type="checkbox" value="13" name="ajax[new][tables_no][]" {{in_array(13,$tables_no)?
+                                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                            <li><input type="checkbox" value="14" name="ajax[new][tables_no][]" {{in_array(14,$tables_no)?
+                                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                            <li><input type="checkbox" value="15" name="ajax[new][tables_no][]" {{in_array(15,$tables_no)?
+                                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                            <li><input type="checkbox" value="16" name="ajax[new][tables_no][]" {{in_array(16,$tables_no)?
+                                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="form-group rurera_common_hide_field table_group_field">
+                                    <label class="input-label">Select Table Group</label>
+                                    <div class="input-group">
+                                        <div class="radio-buttons">
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][table_group]" value="1">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-3</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][table_group]" value="2" checked>
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-6</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][table_group]" value="3">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-9</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][table_group]" value="4">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-12</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][table_group]" value="5">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-15</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][table_group]" value="6">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1-18</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group rurera_common_hide_field practice_duration_field">
+                                    <label class="input-label">Select Practice Duration</label>
+                                    <div class="input-group">
+                                        <div class="radio-buttons">
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][powerup_practice_duration]" value="1" checked>
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>1 Minute</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][powerup_practice_duration]" value="3" >
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>3 Minutes</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][powerup_practice_duration]" value="5">
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                                <div class="card-icon">
+                                                                                    <h3>5 Minutes</h3>
+                                                                                </div>
+                                                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field no_of_stages_field">
+                                        <div class="form-group">
+                                            <label class="input-label">No of Stages</label>
+
+                                            <div class="invalid-feedback"></div>
+                                            <div class="range-slider">
+                                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                <div class="range-slider_line">
+                                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                </div>
+                                                <input type="range"
+                                                       name="ajax[new][no_of_stages]"
+                                                       value="0"
+                                                       class="js-ajax-title form-control no_of_stages range-slider-field"
+                                                       placeholder="" min="1" max="10"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-section rurera-hide">
+                            <h2 class="section-title">General information111111111</h2>
+                        </div>
+
+                        <div class="form-group rurera-hide">
+                            <label class="input-label">Practice Title</label>
+                            <input type="text"
+                                   name="ajax[new][title]"
+                                   value="{{ !empty($assignmentObj) ? $assignmentObj->title : old('title') }}"
+                                   class="js-ajax-title form-control rurera-req-field"
+                                   placeholder=""/>
+                        </div>
+
+                        <div class="form-group rurera-hide">
+                            <label class="input-label">Practice Description</label>
+                            <textarea
+                                name="ajax[new][description]"
+                                class="form-control summernote-editor-mintool"
+                                placeholder="" rows="20"></textarea>
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="form-section rurera-hide">
+                            <h2 class="section-title">Schedule</h2>
+                        </div>
+
+                        <div class="row rurera-hide">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group">
+                                    <label class="input-label">Practice Start Date</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
+                                                <i class="fa fa-calendar-week"></i>
+                                            </button>
+                                        </div>
                                         <input type="text" autocomplete="off"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_start_date]"
-                                            value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
-                                            class="form-control bg-white practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
-                                            min="{{date('Y-m-d')}}"
-                                            placeholder="Practice Start Date"/>
+                                               name="ajax[new][assignment_start_date]"
+                                               value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
+                                               class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
+                                               min="{{date('Y-m-d')}}"
+                                               placeholder=""/>
                                         @error('assignment_start_date')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -344,39 +827,97 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="form-group conditional_fields Daily_field Weekly_field Monthly_field">
-                                    <label class="input-label font-weight-bold">Practice Due Date</label>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group">
+                                    <label class="input-label">Practice Due Date</label>
                                     <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
+                                                <i class="fa fa-calendar-week"></i>
+                                            </button>
+                                        </div>
                                         <input type="text" autocomplete="off"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_end_date]"
-                                            value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
-                                            class="form-control bg-white practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
-                                            placeholder="Practice Due Date"/>
+                                               name="ajax[new][assignment_end_date]"
+                                               value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
+                                               class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
+                                               placeholder=""/>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-4 rurera-hide">
+                                <div class="form-group">
+                                    <label class="input-label">Review Due Date</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
+                                                <i class="fa fa-calendar-week"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" autocomplete="off"
+                                               name="ajax[new][assignment_review_due_date]"
+                                               value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_review_due_date, 'Y-m-d', false) : old('assignment_review_due_date') }}"
+                                               class="form-control reviewer-date rureradatepicker" min="{{date('Y-m-d')}}"
+                                               placeholder=""/>
                                         <div class="invalid-feedback"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row assignment_topic_type_fields1 practice_fields vocabulary_fields1 no-of-questions-fields">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                <div class="form-group">
-                                    <label class="input-label font-weight-bold mb-0">Show No of Questions <span class="max_questions"></span></label>
 
-                                    <div class="range-slider">
-                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                        <div class="range-slider_line">
-                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                        </div>
-                                        <input type="range" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_questions]" value="0"
-                                            class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
-                                    </div>
-                                    <div class="invalid-feedback"></div>
+
+                        <div class="form-group rurera-hide">
+                            <label class="input-label">Practice Method</label>
+                            <div class="input-group">
+
+                                <div class="radio-buttons">
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_method]"
+                                               class="assignment_method_check" value="practice" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                    <div class="card-icon">
+                                                                        <h3>Practice</h3>
+                                                                    </div>
+
+                                                                </span>
+                                    </label>
+                                    <label class="card-radio assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
+                                        <input type="radio" name="ajax[new][assignment_method]"
+                                               class="assignment_method_check" value="target_improvements">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                    <div class="card-icon">
+                                                                        <h3>Target / Improvements</h3>
+                                                                    </div>
+
+                                                                </span>
+                                    </label>
+                                    <label class="card-radio assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
+                                        <input type="radio" name="ajax[new][assignment_method]"
+                                               class="assignment_method_check" value="mock_exam">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                    <div class="card-icon">
+                                                                        <h3>Mock Exam</h3>
+                                                                    </div>
+
+                                                                </span>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields timestables_fields vocabulary_fields mock_test_fields sats_fields books_fields">
+                        </div>
+
+                        <div class="row">
+
+                        </div>
+
+                        <div class="form-section rurera-hide">
+                            <h2 class="section-title">Target</h2>
+                        </div>
+
+                        <div class="row rurera_common_hide_field no_of_attemptes_field">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
                                 <div class="form-group">
-                                    <label class="input-label font-weight-bold mb-0">No of Attempts</label>
+                                    <label class="input-label">No of Attempts</label>
+
                                     <div class="invalid-feedback"></div>
                                     <div class="range-slider">
                                         <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
@@ -384,132 +925,237 @@
                                             <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                         </div>
                                         <input type="range"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_attempts]"
-                                            value="0"
-                                            class="js-ajax-title form-control no_of_attempts range-slider-field"
-                                            placeholder="" min="1" max="10"/>
+                                               name="ajax[new][no_of_attempts]"
+                                               value="0"
+                                               class="js-ajax-title form-control no_of_attempts range-slider-field"
+                                               placeholder="" min="1" max="10"/>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 attempts-fields rurera-hide">
+                                <div class="form-group rurera_common_hide_field percentage_answer_field">
+                                    <label class="input-label">Percentage of Correct Answers</label>
+
+                                    <div class="invalid-feedback"></div>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                               name="ajax[new][target_percentage]"
+                                               value="0" data-label="%"
+                                               class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
+                                               placeholder=""/>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 attempts-fields rurera-hide">
+                                <div class="form-group rurera_common_hide_field average_time_field">
+                                    <label class="input-label">Average Time of Correct Answers (Seconds)</label>
+
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                               name="ajax[new][target_average_time]"
+                                               value="0"
+                                               class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
+                                               placeholder=""/>
+                                    </div>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group assignment_topic_type_fields timestables_fields">
-                            <label class="input-label mb-10 font-weight-bold">Duration Type</label>
-                            <div class="years-group populated-data input-group">
-                                <div class="radio-buttons justify-content-left">
+
+                        <div class="form-group rurera-hide">
+                            <label class="input-label">Assignment Settings</label>
+                            <div class="option-field-item mt-20 mb-20">
+                                <label class="custom-switch pl-0">
+                                    <input type="checkbox" name="ajax[new][shuffle_questions]" id="shuffle_questions" value="1" class="custom-switch-input">
+                                    <span class="custom-switch-indicator"></span>
+                                    <label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
+                                </label>
+                            </div>
+                            <div class="option-field-item mt-20 mb-20">
+                                <label class="custom-switch pl-0">
+                                    <input type="checkbox" name="ajax[new][correct_answer_explaination]" id="correct_answer_explaination" value="1" class="custom-switch-input">
+                                    <span class="custom-switch-indicator"></span>
+                                    <label class="custom-switch-description mb-0 cursor-pointer" for="correct_answer_explaination">Correct Answer Explaination</label>
+                                </label>
+                            </div>
+                            <div class="option-field-item mt-20 mb-20">
+                                <label class="custom-switch pl-0">
+                                    <input type="checkbox" name="ajax[new][incorrect_answer_explaination]" id="incorrect_answer_explaination" value="1" class="custom-switch-input">
+                                    <span class="custom-switch-indicator"></span>
+                                    <label class="custom-switch-description mb-0 cursor-pointer" for="incorrect_answer_explaination">Incorrect Answer Explaination</label>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="rurera-hide rurera_js_hide_field1 form-group ">
+                            <label class="input-label">Duration Type</label>
+                            <div class="input-group">
+
+
+                                <div class="radio-buttons">
                                     <label class="card-radio">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
-                                            class="duration_conditional_check" value="total_practice" checked>
+                                        <input type="radio" name="ajax[new][duration_type]"
+                                               class="duration_conditional_check" value="no_time_limit" checked>
                                         <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <h3>Total Practice</h3>
-                                            </div>
-                                        </span>
+                                                            <div class="card-icon">
+                                                                <h3>No Time Limit</h3>
+                                                            </div>
+
+                                                        </span>
                                     </label>
                                     <label class="card-radio">
-                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
-                                            class="duration_conditional_check" value="per_question">
+                                        <input type="radio" name="ajax[new][duration_type]"
+                                               class="duration_conditional_check" value="total_practice">
                                         <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <h3>Per Question</h3>
-                                            </div>
-                                        </span>
+                                                            <div class="card-icon">
+                                                                <h3>Total Practice</h3>
+                                                            </div>
+
+                                                        </span>
                                     </label>
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][duration_type]"
+                                               class="duration_conditional_check" value="per_question">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <h3>Per Question</h3>
+                                                            </div>
+
+                                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group duration_type_fields total_practice_fields">
+                            <label class="input-label">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
+                            <div class="range-slider">
+                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div class="range-slider_line">
+                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                </div>
+                                <input type="range"
+                                       name="ajax[new][practice_time]"
+                                       value="0"
+                                       class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
+                                       placeholder=""/>
+                            </div>
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="form-group duration_type_fields per_question_fields">
+                            <label class="input-label">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
+
+                            <div class="range-slider">
+                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div class="range-slider_line">
+                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                </div>
+                                <input type="range"
+                                       name="ajax[new][time_interval]"
+                                       value="0"
+                                       class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
+                                       placeholder=""/>
+                            </div>
+
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+
+                        <div class="form-group rurera-hide">
+                            <label class="input-label">Assignment Reviewer</label>
+                            <div class="input-group">
+                                <select name="ajax[new][assignment_reviewer]"
+                                        class="form-control select2 assignment-reviewer-field">
+                                    <option value="">Select Reviewer</option>
+                                    @if( !empty( $teachers ) )
+                                        @foreach( $teachers as $teacherObj)
+                                            <option value="{{$teacherObj->id}}">{{$teacherObj->get_full_name()}}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h2 class="section-title">User Criteria</h2>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="input-label">Assignment Assign Type</label>
+                            <div class="input-group">
+
+
+                                <div class="radio-buttons">
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_assign_type]"
+                                               class="conditional_check assignment_type_check" value="Individual">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <h3>Individual</h3>
+                                                            </div>
+
+                                                        </span>
+                                    </label>
+
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_assign_type]"
+                                               class="conditional_check assignment_type_check" value="Class" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <h3>Class</h3>
+                                                            </div>
+
+                                                        </span>
+                                    </label>
+
                                 </div>
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                <div class="form-group">
-                                    <label class="input-label font-weight-bold mb-0">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
-                                    <div class="range-slider">
-                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                        <div class="range-slider_line">
-                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                        </div>
-                                        <input type="range"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
-                                            value="0"
-                                            class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
-                                            placeholder=""/>
-                                    </div>
-                                    <div class="invalid-feedback"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                <div class="form-group duration_type_fields per_question_fields assignment_topic_type_fields timestables_fields">
-                                    <label class="input-label font-weight-bold">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
-                                    <div class="range-slider">
-                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                        <div class="range-slider_line">
-                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                        </div>
-                                        <input type="range"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
-                                            value="0"
-                                            class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
-                                            placeholder=""/>
-                                    </div>
-                                    <div class="invalid-feedback"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group assignment_topic_type_fields practice_fields1">
-                            <label class="input-label font-weight-bold">Practice Method</label>
-                            <div class="plan-switch-option" style="justify-content: left;">
-                                <span class="switch-label font-18">Completion Target</span> &nbsp;&nbsp;&nbsp;&nbsp;
-                                <div class="plan-switch">
-                                    <div class="custom-control custom-switch"><input type="checkbox" name="auto_generate" class="assignment_method_check custom-control-input" id="method_check" value="target_improvements"><label class="custom-control-label" for="method_check"></label></div>
-                                </div>
-                            </div>
+                        
+                        <div class="class-section-data">
+                            New Data Ends 11111111111
                         </div>
 
-                        <div class="row assignment_topic_type_fields practice_fields1">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                <div class="form-group assignment_method_check_fields target_improvements_fields">
-                                    <label class="input-label font-weight-bold">Percentage of Correct Answers</label>
-                                    <div class="invalid-feedback"></div>
-                                    <div class="range-slider">
-                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                            <div class="range-slider_line">
-                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                            </div>
-                                            <input type="range"
-                                                name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
-                                                value="0" data-label="%"
-                                                class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
-                                                placeholder=""/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                <div class="form-group assignment_method_check_fields target_improvements_fields">
-                                    <label class="input-label font-weight-bold">Average Time of Correct Answers (Seconds)</label>
 
-                                    <div class="range-slider">
-                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                        <div class="range-slider_line">
-                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                        </div>
-                                        <input type="range"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_average_time]"
-                                            value="0"
-                                            class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
-                                            placeholder=""/>
-                                    </div>
-                                    <div class="invalid-feedback"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="form-group mt-30">
-                                <div class="btn-field">
-                                    <button type="submit" class="nav-link js-submit-quiz-form">Create</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
                 <div class="wizard-steps" data-step_id="2"></div>
                 <div class="wizard-pagination1 rurera-hide">
@@ -533,7 +1179,7 @@
                 </div>
             </div>
             <div class="modal-body">
-                
+
             </div>
         </div>
     </div>
@@ -542,11 +1188,10 @@
 <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <!-- <div class="panel-header">
+            <div class="panel-header">
                 <div class="modal-logo"><img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"></div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">Back to Dashboard <span aria-hidden="true">×</span></button>
-            </div> -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
             <div class="modal-body">
                 <div class="container container-nosidebar">
                     <div class="tab-content subscription-content" id="nav-tabContent"></div>
@@ -565,7 +1210,37 @@
 <script src="/assets/vendors/jquerygrowl/jquery.growl.js"></script>
 <script type="text/javascript">
 
-    //$("#assignmentCreateModal").modal('show');
+
+    function common_fields_check(){
+        if ($(".rurera_js_hide_field").length > 0) {
+
+            var hideList = [];
+
+            // Step 1: collect all classes to hide from checked inputs
+            $('[data-rurera_hide_class]:checked').each(function () {
+                if($(this).closest('.hide_check_field').hasClass('rurera-hide')){
+                    return;
+                }
+                var classes = $(this).attr('data-rurera_hide_class');
+                classes = classes.replace(/[\[\]\s]/g, '').split(',');
+                hideList = hideList.concat(classes);
+            });
+
+            console.log("Hide List:", hideList);
+
+            // Step 2: loop all hide fields
+            $('.rurera_js_hide_field').each(function () {
+                var HideFieldObj = $(this);
+                var recieve_class = HideFieldObj.attr('data-recieve_class');
+
+                if (hideList.includes(recieve_class)) {
+                    HideFieldObj.addClass('rurera-hide');
+                } else {
+                    HideFieldObj.removeClass('rurera-hide');
+                }
+            });
+        }
+    }
     $(document).ready(function () {
 
         if ($('.summernote-editor-mintool').length) {
@@ -575,22 +1250,14 @@
                     ['font', ['bold', 'underline']],
                     ['para', ['ul', 'ol', 'paragraph']],
                 ],
+                callbacks: {
+                    onChange: function (contents, $editable) {
+                        $('.summernote-editor_' + parent_field_id).val(EditorValueEnocde(contents));
+                        trigger_field_change($('.summernote-editor_' + parent_field_id));
+                    }
+                }
             });
         }
-		
-		$('body').on('change', '.topics_multi_selection', function (e) {
-
-            var total_questions = 0;
-            $('.topics_multi_selection:checked').each(function () {
-                total_questions = parseInt(total_questions) + parseInt($(this).attr('data-total_questions'));
-            });
-			
-
-            $(".max_questions").html('Max: ' + total_questions);
-            $(".no_of_questions").attr('max', total_questions);
-            //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
-            $(".no_of_questions").val(0);
-        });
 
 
         $('body').on('change', '.select_all', function (e) {
@@ -607,8 +1274,7 @@
         $('body').on('click', '.year-group-select', function (e) {
             var thisObj = $('.populated-content-area');
             var year_id = $(this).attr('data-year_id');
-            //$(".year_id_field").val(year_id);
-            $(".ajax-title").addClass('show-after-ajax');
+            $(".year_id_field").val(year_id);
             rurera_loader(thisObj, 'div');
             jQuery.ajax({
                 type: "GET",
@@ -622,12 +1288,37 @@
                     rurera_remove_loader(thisObj, 'button');
                     if (return_data != '') {
                         $(".populated-content-area").append(return_data);
-                        $(".show-after-ajax").not('.rurera-hide').removeClass('show-after-ajax');
                         subjects_callback();
                     }
                 }
             });
         });
+
+        var subjects_callback_bk = function () {
+            $('body').on('click', '.subject-group-selects', function (e) {
+                var thisObj = $('.populated-content-area');
+                var subject_id = $(this).attr('data-subject_id');
+                $(".subject_id_field").val(subject_id);
+                rurera_loader(thisObj, 'div');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/custom_quiz/topics_subtopics_by_subject',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {"subject_id": subject_id},
+                    success: function (return_data) {
+                        $(".populated-data").addClass('rurera-hide');
+                        rurera_remove_loader(thisObj, 'button');
+                        if (return_data != '') {
+                            //$(".populated-content-area").append(return_data);
+                            $(".topics-subtopics-content-area").append(return_data);
+                            questions_callback();
+                        }
+                    }
+                });
+            });
+        }
 
         var subjects_callback = function () {
             $('body').on('change', '.subject_ajax_select', function (e) {
@@ -656,6 +1347,8 @@
             });
         }
         subjects_callback();
+
+
         var questions_callback = function () {
             $('body').on('click', '.subchapter-group-select li', function (e) {
                 var thisObj = $('.populated-content-area');
@@ -754,16 +1447,53 @@
             }
         });
 
+
+
+        $('body').on('change', '.conditional_field_check', function (e) {
+            var current_value = $(this).val();
+            $(".conditional_fields_block").addClass('rurera-hide');
+            $('.' + current_value + '_fields_block').removeClass('rurera-hide');
+        });
+
         $('body').on('change', '.conditional_check', function (e) {
             var current_value = $(this).val();
             $(".conditional_fields").addClass('rurera-hide');
             $('.' + current_value + '_field').removeClass('rurera-hide');
         });
 
+
+        $('body').on('change', '.assignment_type_check', function (e) {
+            $(".class_condition").change();
+        });
+
+
+        $('body').on('change', '.school_condition', function (e) {
+            var school_id = $(this).val();
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/common/get_school_classes',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"school_id": school_id, "assignment_id": "new"},
+                success: function (return_data) {
+                    console.log(return_data);
+                    $(".class-section-data").html(return_data);
+                }
+            });
+        });
+        $(".school_condition").change();
         $('body').on('change', '.class_condition', function (e) {
             var current_value = $(this).val();
-            $(".conditional_sections").addClass('rurera-hide');
-            $('.class_sections_' + current_value).removeClass('rurera-hide');
+            var assigned_type = $(".assignment_type_check:checked").val();
+            console.log(assigned_type);
+            if(assigned_type == 'Individual') {
+                $(".conditional_sections").addClass('rurera-hide');
+                $('.class_sections_' + current_value).removeClass('rurera-hide');
+            }else{
+                $(".conditional_sections").addClass('rurera-hide');
+                $('.class_sections_' + current_value).addClass('rurera-hide');
+            }
         });
 
         $('body').on('change', '.duration_conditional_check', function (e) {
@@ -772,67 +1502,10 @@
             $('.' + current_value + '_fields').removeClass('rurera-hide');
         });
 
-
-        $('body').on('click', '.mock-test-assign-btn', function (e) {
-            $(".mock-test-assign-btn").removeClass('active');
-            $(this).addClass('active');
-        	var topic_id = $(this).attr('data-id');
-            var topic_type = $(this).attr('data-topic_type');
-            //$(".assignment_topic_type_mock").val(topic_type);
-            //$(".assignment_topic_type_mock").prop('checked', true);
-        	var total_questions = $(this).attr('data-total_questions');
-        	$(".topic_select_radio").val(topic_id);
-        	$(".topic_select_radio").attr('data-total_questions', total_questions);
-        	$(".topic_select_radio").click();
-			var total_questions = $(this).attr('data-total_questions');
-            $(".no_of_questions").attr('max', total_questions);
-            $(".no_of_questions").val(total_questions);
-
-            refresh_tags();
-        });
-
-        $('body').on('click', '.vocabulary-assign-btn', function (e) {
-            $(this).toggleClass('active');
-            var topic_id = $(this).attr('data-id');
-            console.log('topic_id: '+topic_id);
-            var topic_type = $(this).attr('data-topic_type');
-            $(".assignment_topic_type_mock").val(topic_type);
-            /*$('.vocabulary-topic-selection[name="ajax[new][topic_ids][]"][value="'+topic_id+'"]').prop('checked', function(i, oldVal) {
-                return !oldVal;
-            });*/
-            $('.vocabulary-topic-selection[name="ajax[new][topic_ids][]"][value="'+topic_id+'"]').prop('checked', true).change();
-            var total_questions = $(this).attr('data-total_questions');
-            $(".no_of_questions").attr('max', total_questions);
-            $(".no_of_questions").val(total_questions);
-        });
-
-
-
-        $('body').on('click', '.wizard-pagination1 .previous-btn', function (e) {
-        	var next_step = $(this).attr('data-next_step');
-        	prev_step = parseInt(next_step) - 1;
-        	$(".wizard-pagination .previous-btn").attr('data-next_step', prev_step);
-        	$(".wizard-pagination .next-btn").attr('data-next_step', next_step);
-        });
-
-        $('body').on('click', '.wizard-pagination1 .next-btn', function (e) {
-        	var next_step = $(this).attr('data-next_step');
-        	next_step_count = parseInt(next_step) + 1;
-        	$(".wizard-pagination .previous-btn").attr('data-next_step', next_step);
-        	$(".wizard-pagination .next-btn").attr('data-next_step', next_step_count);
-        });
-
-        typeCheckRequest = null;
-        $('body').on('change', '.assignment_topic_type_check', function (e) {
+        $('body').on('change', '.assignment_topic_type_check1', function (e) {
             var current_value = $(this).val();
-			$(this).closest('.radio-buttons').find('.card-radio').removeClass('practice-item-active');
-			$(this).closest('.card-radio').addClass('practice-item-active');
-            $(".ajax-title").addClass('show-after-ajax');
-            $(".practice-quiz-ajax-fields").html('');
-            $(".practice-quiz-topics-list").html('');
             $(".assignment_topic_type_fields").addClass('rurera-hide');
             $('.' + current_value + '_fields').removeClass('rurera-hide');
-			console.log('current_value=='+current_value);
             var total_questions = 0;
             var current_questions = 0;
             if (current_value == 'timestables') {
@@ -847,144 +1520,100 @@
             $(".no_of_questions").attr('max', total_questions);
             $(".no_of_questions").val(current_questions);
             slider_fields_refresh();
-            refresh_tags();
-			var year_id = $(".assignment-user-class:checked").attr('data-year_id');
-			year_id = (year_id > 0)? year_id : 0;
-            $(".year_id_field").val(year_id);
-
-            if( year_id > 0) {
-                var quiz_type = $(".assignment_topic_type_check:checked").val();
-                var thisObj = $(this);//$(".quiz-ajax-fields");
-                $(".yeargroup-ajax-fields").html('');
-                rurera_loader(thisObj.closest('label'), 'div');
-                typeCheckRequest = jQuery.ajax({
-                    type: "GET",
-                    url: '/common/types_quiz_by_year',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    beforeSend: function () {
-                        if (typeCheckRequest != null) {
-                            //rurera_remove_loader(thisObj.closest('label'), 'div');
-                            //typeCheckRequest.abort();
-                        }
-                    },
-                    data: {"quiz_type": quiz_type, "year_id": year_id, "is_frontend": 'yes'},
-                    success: function (return_data) {
-						$(".no-of-questions-fields").removeClass('rurera-hide');
-                        if (quiz_type == 'practice') {
-                            $(".practice-quiz-ajax-fields").html(return_data);
-                            $(".active-subject").find('input').prop('checked', true).change();
-							rurera_remove_loader(thisObj.closest('label'), 'div');
-                        } else {
-                            //$(".quiz-ajax-fields").html(return_data);
-							$(".practice-quiz-ajax-fields").html(return_data);
-							$(".show-after-ajax").not('.rurera-hide').removeClass('show-after-ajax');
-							rurera_remove_loader(thisObj.closest('label'), 'div');
-						}
-						
-						if (quiz_type == 'learning_journey') {
-							$(".no-of-questions-fields").addClass('rurera-hide');
-						}
-						
-						$(".topics_multi_selection").change();
-					}
-                });
-            }else{
-                $(".assignment-user-class:checked").change();
-            }
-
+            $(".assignment_quiz_type:checked").change();
+            common_fields_check();
         });
 
         $('body').on('change', '.assignment_method_check', function (e) {
-            var current_value = $('.assignment_method_check:checked').val();
-            $(".practice-quiz-ajax-fields").html('');
-
+            var current_value = $(this).val();
             $(".assignment_method_check_fields").addClass('rurera-hide');
             $('.assignment_method_check_fields.' + current_value + '_fields').removeClass('rurera-hide');
         });
-        $('body').on('change', '.assignment_type_check', function (e) {
-            $(".practice-quiz-ajax-fields").html('');
-            var current_value = $(this).val();
-            $(".assignment_type_check_fields").addClass('rurera-hide');
-            $('.assignment_type_check_fields.' + current_value + '_fields').removeClass('rurera-hide');
-            if( current_value == 'practice_test'){
-                $(".practice-item-active").click();
-            }
-            refresh_tags();
+        $('body').on('change', '.questions-selection', function (e) {
+            var no_of_selections = $(".questions-selection:checked").length;
+            $(".max_questions").html('Max: ' + no_of_selections);
+            $(".no_of_questions").attr('max', no_of_selections);
+            $(".no_of_questions").attr('min', no_of_selections);
+            $(".no_of_questions").val(no_of_selections);
+            slider_fields_refresh();
         });
 
-        $('body').on('change', '.year_quiz_ajax_select12', function (e) {
+
+
+
+        $('body').on('change', '.no_of_attempts', function (e) {
+            var no_of_attempts = $(this).val();
+            $(".attempts-fields").addClass('rurera-hide');
+            if(no_of_attempts > 1){
+                $(".attempts-fields").removeClass('rurera-hide');
+            }
+        });
+
+        $('body').on('change', '.vocabulary_type', function (e) {
+            $(".year_quiz_ajax_select").change();
+        });
+        $('body').on('change', '.year_quiz_ajax_select', function (e) {
             var year_id = $(this).val();
-            $(".ajax-title").addClass('show-after-ajax');
-            var quiz_type = $(".assignment_topic_type_check:checked").val();
+            var quiz_type = $(".assignemnet_types_selection:checked").val();
+            var vocabulary_type = '';
+            if(quiz_type == 'vocabulary') {
+                var vocabulary_type = $(".vocabulary_type:checked").val();
+            }
             var thisObj = $(this);//$(".quiz-ajax-fields");
             $(".yeargroup-ajax-fields").html('');
             rurera_loader(thisObj, 'button');
             jQuery.ajax({
                 type: "GET",
-                url: '/common/types_quiz_by_year',
+                url: '/admin/common/types_quiz_by_year',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                data: {"quiz_type": quiz_type, "year_id": year_id},
+                data: {"quiz_type": quiz_type, "quiz_category": vocabulary_type, "year_id": year_id},
                 success: function (return_data) {
                     if (quiz_type == 'practice') {
                         $(".practice-quiz-ajax-fields").html(return_data);
                     } else {
                         $(".quiz-ajax-fields").html(return_data);
                     }
-                    $(".show-after-ajax").not('.rurera-hide').removeClass('show-after-ajax');
                     rurera_remove_loader(thisObj, 'button');
-					$(".topics_multi_selection").change();
-                    //$(".topic-item-active").click();
                 }
             });
         });
 
         $('body').on('change', '.year_group_quiz_ajax_select', function (e) {
             var year_group = $(this).val();
-            $(".ajax-title").addClass('show-after-ajax');
-            var quiz_type = $(".assignment_topic_type_check:checked").val();
+            var quiz_type = $(".assignemnet_types_selection:checked").val();
             var thisObj = $(this);//$(".yeargroup-ajax-fields");
             $(".practice-quiz-ajax-fields").html('');
             $(".quiz-ajax-fields").html('');
             rurera_loader(thisObj, 'button');
             jQuery.ajax({
                 type: "GET",
-                url: '/common/types_quiz_by_year_group',
+                url: '/admin/common/types_quiz_by_year_group',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 data: {"quiz_type": quiz_type, "year_group": year_group},
                 success: function (return_data) {
                     $(".yeargroup-ajax-fields").html(return_data);
-                    $(".show-after-ajax").not('.rurera-hide').removeClass('show-after-ajax');
                     rurera_remove_loader(thisObj, 'button');
                 }
             });
         });
 
         $('body').on('change', '.assignment_subject_check', function (e) {
-            //console.log($(".assignment_type_check:checked").val());
-            if( $(".assignment_type_check:checked").val() != 'practice_test' ){
-                $(".practice-quiz-topics-list").html('');
-                return false;
-            }
-            //$(this).prop('checked', true);
             var subject_id = $(this).val();
             var thisObj = $(this);
             rurera_loader($(".practice-quiz-topics-list"), 'div');
-            refresh_tags();
             jQuery.ajax({
                 type: "GET",
-                url: '/common/topics_subtopics_by_subject',
+                url: '/admin/common/topics_subtopics_by_subject',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 data: {"subject_id": subject_id},
                 success: function (return_data) {
-                    rurera_remove_loader($(".practice-quiz-topics-list"), 'div');
+                    rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
                     $(".practice-quiz-topics-list").html(return_data);
                 }
             });
@@ -1021,18 +1650,10 @@
             space = parseInt(space) + parseInt(20);
             var text_to_display = sliderInput.val();
             if (sliderInput.hasClass('time_interval')) {
-                var time_label = 'No Time Limit';
-                if( sliderInput.val() > 0){
-                    var time_label = sliderInput.val() + ' Seconds, ' + formatTime(sliderInput.val(), 'm', 's');
-                }
-                $(".time_interval_data").html(time_label);
+                $(".time_interval_data").html(sliderInput.val() + ' Seconds, ' + formatTime(sliderInput.val(), 'm', 's'));
             }
             if (sliderInput.hasClass('practice_interval')) {
-                var time_label = 'No Time Limit';
-                if( sliderInput.val() > 0){
-                    var time_label = sliderInput.val() + ' Minutes, ' + formatTime(sliderInput.val(), 'h', 'm');
-                }
-                $(".practice_interval_data").html(time_label);
+                $(".practice_interval_data").html(sliderInput.val() + ' Minutes, ' + formatTime(sliderInput.val(), 'h', 'm'));
             }
 
             sliderThumb.css('left', (bulletPosition * space) + 'px');
@@ -1056,220 +1677,59 @@
 
         $('body').on('change', '.topic_selection', function (e) {
             var current_value = $(this).val();
-            //var total_questions = $(this).find('input[name="ajax[new][topic_id]"][value="' + current_value + '"]').attr('data-total_questions');
-            var total_questions = $(this).attr('data-total_questions');
-            var assignment_topic_type_check = $(".assignment_topic_type_check:checked").val();
+            var total_questions = $(this).find('option[value="' + current_value + '"]').attr('data-total_questions');
             $(".max_questions").html('Max: ' + total_questions);
             $(".no_of_questions").attr('max', total_questions);
+            //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
             $(".no_of_questions").val(0);
-            if(assignment_topic_type_check == 'vocabulary' || assignment_topic_type_check == 'sats' || assignment_topic_type_check == '11plus' || assignment_topic_type_check == 'independent_exams' || assignment_topic_type_check == 'iseb' || assignment_topic_type_check == 'cat4') {
-                var practice_time = $(".mock-test-assign-btn.active").attr('data-total_time');
-                $(".practice_interval").attr('min', practice_time);
-                $(".practice_interval").val(practice_time);
-                $(".no_of_questions").attr('min', total_questions);
-                $(".no_of_questions").val(total_questions);
-                slider_fields_refresh();
+
+
+
+
+            var assignment_practice_type = $(".assignment_practice_type:checked").val();
+            var assignment_topic_type_check = $(".assignemnet_types_selection:checked").val();
+            if(assignment_practice_type == 'test' && assignment_topic_type_check == 'vocabulary'){
+                rurera_loader($(".spell-questions-list"), 'div');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/common/spell_questions_list_by_quiz',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {"quiz_id": current_value},
+                    success: function (return_data) {
+                        rurera_remove_loader($(".spell-questions-list"), 'button');
+                        $(".spell-questions-list").html(return_data);
+                    }
+                });
             }
+
         });
 
-        $('body').on('click', '.wizard-step', function (e) {
-            $(".previous-btn").removeClass('disabled-btn');
-            $(".next-btn").removeClass('disabled-btn');
-            var next_step = $(this).attr('data-next_step');
+        $('body').on('change', '.topics_multi_selection', function (e) {
 
+            var total_questions = 0;
+            $('.topics_multi_selection:checked').each(function () {
+                total_questions = parseInt(total_questions) + parseInt($(this).attr('data-total_questions'));
+            });
 
-            if( next_step == 2){
-                var quiz_type = $(".assignment_topic_type_check:checked").val();
-                if(quiz_type != 'timestables'){
-				if ($(".topic_selection").not('.rurera-hide').length > 0) {
-                    //if ($('.assignment-user-class:checked').length > 0 && $('.assignment_type_check:checked').length > 0) {
-                    if ($('.topic_selection:checked').length < 1 || $('.topic_selection:checked').length < 1) {
-                        jQuery.growl.error({
-                            message: 'Please select atleast one topic11',
-                            duration: 10000,
-                        });
-                        return false;
-                    }
-                }else{
-				if ($(".topics_multi_selection").not('.rurera-hide').length > 0) {
-                    //if ($('.assignment-user-class:checked').length > 0 && $('.assignment_type_check:checked').length > 0) {
-                    if ($('.topics_multi_selection:checked').length < 1 || $('.topics_multi_selection:checked').length < 1) {
-                        jQuery.growl.error({
-                            message: 'Please select atleast one topic22',
-                            duration: 10000,
-                        });
-                        return false;
-                    }
-                }
-                }
-                }
-
-
-            }
-
-            var prev_step = parseInt(next_step) - 1;
-            var next_step_counter = parseInt(next_step) + 1;
-            var prev_step_counter = prev_step;
-            $(".previous-btn").attr('data-next_step', prev_step);
-            if( prev_step < 1){
-                $(".previous-btn").addClass('disabled-btn');
-            }
-            if( next_step_counter > 2){
-                $(".next-btn").addClass('disabled-btn');
-            }
-            $(".wizard-steps").removeClass('active');
-            $('.wizard-steps[data-step_id="'+next_step+'"]').addClass('active');
-            $(".wizard-pagination .previous-btn").attr('data-next_step', prev_step_counter);
-            $(".wizard-pagination .next-btn").attr('data-next_step', next_step_counter);
-			
-            if( next_step == 2){
-                $(".practice-item-active").find('input').prop('checked', true).change();
-
-            }
-            //refresh_tags();
+            $(".max_questions").html('Max: ' + total_questions);
+            $(".no_of_questions").attr('max', total_questions);
+            //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
+            $(".no_of_questions").val(0);
         });
+
 
         $(".conditional_check").change();
-        
         $(".duration_conditional_check:checked").change();
-        $(".assignment_topic_type_fields").addClass('rurera-hide');
-        $(".assignment_method_check_fields").addClass('rurera-hide');
-
-        $(".assignment_topic_type_check:checked").change();
+        //$(".assignemnet_types_selection:checked").change();
         $(".assignment_method_check:checked").change();
         $(".year_quiz_ajax_select").change();
         $(".year_group_quiz_ajax_select").change();
+        $(".assignment_quiz_type:checked").change();
         $(".assignment_type_check:checked").change();
 
-        $('body').on('click', '.add-student-modal-bkk', function (e) {
-            var action_type = 'child_register';
-            var action_id = 0;
-            selectedPackage = action_id;
-            $(".set-work-container").addClass('subscription-content');
-            //$(".subscription-content").html('');
-            //$("#subscriptionModal").modal('show');
-            rurera_loader($('.subscription-content'), 'div');
-            subscriptionRequest = jQuery.ajax({
-                type: "GET",
-                url: '/subscribes/apply-subscription',
-                async: true,
-                beforeSend: function () {
-                    if (subscriptionRequest != null) {
-                        subscriptionRequest.abort();
-                    }
-                },
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"action_type": action_type, "action_id": action_id},
-                success: function (return_data) {
-                    rurera_remove_loader($('.subscription-content'), 'div');
-                    $(".subscription-content").html(return_data);
-                }
-            });
-        });
 
-        $('body').on('click', '.update-student-modal', function (e) {
-            var action_type = 'child_payment';
-            var action_id = $(this).attr('data-action_id');
-            selectedPackage = action_id;
-            $(".set-work-container").addClass('subscription-content');
-            //$(".subscription-content").html('');
-            //$("#subscriptionModal").modal('show');
-            rurera_loader($('.subscription-content'), 'div');
-            subscriptionRequest = jQuery.ajax({
-                type: "GET",
-                url: '/subscribes/apply-subscription',
-                async: true,
-                beforeSend: function () {
-                    if (subscriptionRequest != null) {
-                        subscriptionRequest.abort();
-                    }
-                },
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"action_type": action_type, "action_id": action_id},
-                success: function (return_data) {
-                    rurera_remove_loader($('.subscription-content'), 'div');
-                    $(".subscription-content").html(return_data);
-                }
-            });
-        });
-
-
-        var userRequest = null;
-        $('body').on('change', '.assignment-user-class', function (e) {
-            var year_id = $(this).attr('data-year_id');
-			year_id = (year_id > 0)? year_id : 0;
-            $(".year_id_field").val(year_id);
-            $(".assignment_topic_type_check:checked").change();
-            var user_id = $(this).val();
-
-
-            $(".sats-listing-empty").addClass('rurera-hide');
-            $('.sats-listing-card tr').removeClass('rurera-hide');
-            $('.user-permissions[data-user_id="'+user_id+'"]').each(function(){
-                var data_type = $(this).attr('data-type');
-                var is_permission = $(this).val();
-				
-				$('.tests-list li[data-test_type="' + data_type + '"]').removeClass('disabled-style');
-				$('.tests-list li[data-test_type="' + data_type + '"]').removeClass('subscription-modal');
-				$('.tests-list li[data-test_type="' + data_type + '"]').attr('data-type', data_type);
-				
-                if( is_permission != true) {
-                    $('.tests-list li[data-test_type="' + data_type + '"]').addClass('disabled-style');
-                    $('.tests-list li[data-test_type="' + data_type + '"]').addClass('subscription-modal');
-                    $('.tests-list li[data-test_type="' + data_type + '"]').attr('data-reason', 'module_access');
-                    $('.tests-list li[data-test_type="' + data_type + '"]').attr('data-type', 'update_package_confirm');
-                    $('.tests-list li[data-test_type="' + data_type + '"]').attr('data-id', user_id);
-                    $('.sats-listing-card tr[data-assignment_type="'+data_type+'"]').addClass('rurera-hide');
-                }
-
-            });
-            $(".total-tests").html('Total Tests: '+$('.sats-listing-card tr').not('.rurera-hide').length);
-            if($('.sats-listing-card tr').not('.rurera-hide').length == 0){
-                $(".sats-listing-empty").removeClass('rurera-hide');
-            }
-            userRequest = jQuery.ajax({
-                type: "GET",
-                url: '/common/user_heatmap',
-                beforeSend: function () {
-                    if (userRequest != null) {
-                        userRequest.abort();
-                    }
-                },
-                data: {"user_id": user_id},
-                success: function (return_data) {
-                    $(".timestables-heatmap").html(return_data);
-                }
-            });
-        });
-		
-		$(".assignment-user-class:checked").change();
-
-        var searchRequest = null;
-        $('body').on('click', '.mock_test_fields-bkkkk', function (e) {
-            var quiz_type = $(this).attr('data-type');
-
-            searchRequest = jQuery.ajax({
-                type: "GET",
-                url: '/tests/search_tests',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                beforeSend: function () {
-                    if (searchRequest != null) {
-                        searchRequest.abort();
-                    }
-                },
-                data: {"quiz_type": quiz_type},
-                success: function (return_data) {
-                    console.log(return_data);
-                }
-            });
-
-        });
         $('body').on('change', '.topic-section-parent', function (e) {
             let $this = $(this);
             let parent = $this.parent().closest('.section-box');
@@ -1282,7 +1742,18 @@
             }
 
             $(".topics_multi_selection").change();
+
         });
+
+        $('body').on('submit', '.create-assignment-form', function (e) {
+            var review_date = $(".reviewer-date").val();
+            $(".assignment-reviewer-field").removeClass('rurera-req-field');
+            $(".assignment-reviewer-field").removeClass('backend-field-error');
+            if(review_date != ''){
+                //$(".assignment-reviewer-field").addClass('rurera-req-field');
+            }
+        });
+
 
         $('body').on('apply.daterangepicker', '.practice-start-date', function (ev, picker) {
             $(".practice-due-date").attr('min', picker.startDate.format('YYYY-MM-DD'));
@@ -1296,170 +1767,133 @@
         });
 
 
-        function refresh_tags() {
-            $(".set-work-tags").html('');
-            if ($(".assignment-user-class:checked").length > 0) {
-                var current_step = $(".wizard-steps.active").attr('data-step_id');
-                var tag_title = $(".assignment-user-class:checked").attr('data-tag_title');
-                $(".set-work-tags").append('<li>' + tag_title + '</li>');
-                var tag_title = $(".assignment_type_check:checked").attr('data-tag_title');
-                var practice_type = $(".assignment_type_check:checked").val();
-                $(".set-work-tags").append('<li>' + tag_title + '</li>');
-
-                if( current_step > 1) {
-                    if (practice_type == 'mock_test') {
-                        tag_title = $(".tests-list li.active").attr('data-tag_title');
-                        $(".set-work-tags").append('<li>' + tag_title + '</li>');
-                    } else {
-                        var tag_title = $(".assignment_topic_type_check:checked").attr('data-tag_title');
-                        $(".set-work-tags").append('<li>' + tag_title + '</li>');
-                    }
-                    var tag_title = $(".mock-test-assign-btn.active").attr('data-tag_title');
-                    if( tag_title != '' && tag_title != 'undefined' && tag_title != undefined) {
-                        $(".set-work-tags").append('<li>' + tag_title + '</li>');
-                    }
-
-                    var tag_title = $(".assignment_subject_check:checked").attr('data-tag_title');
-                    if( tag_title != '' && tag_title != 'undefined' && tag_title != undefined) {
-                        $(".set-work-tags").append('<li>' + tag_title + '</li>');
-                    }
-
-
-                }
-                $(".set-work-tags").append('<li class="clear-tags">Clear All</li>');
-            }
-        }
-        refresh_tags();
-
-        $('body').on('click', '.clear-tags', function (e) {
-
-            $(".clear-all-btn").click();
-        });
-
-
-        $('body').on('click', '.vocabulary-ul li a', function (e) {
-            rurera_loader($(".simple-table tbody"), 'div');
-            $(".vocabulary-ul li").removeAttr('class');
-            $(this).closest('li').addClass('active');
-            var year_id = $(".year_id_field").val();
-            var quiz_category = $(this).attr('data-category');
-            searchRequest = jQuery.ajax({
-                type: "GET",
-                url: '/spells/search',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                beforeSend: function () {
-                    if (searchRequest != null) {
-                        searchRequest.abort();
-                    }
-                },
-                data: {"quiz_category": quiz_category, "is_assignment": 'yes',  "year_id": year_id},
-                success: function (return_data) {
-                    $(".total-tests").remove();
-                    rurera_remove_loader($(".simple-table tbody"), 'div');
-                    $(".simple-table tbody").html(return_data);
-                }
-            });
-
-        });
-
-        $('body').on('click', '.tests-list li', function (e) {
-            if( $(this).hasClass('subscription-modal')){
-                return;
-            }
-            rurera_loader($(".simple-table tbody"), 'div');
-            $(".tests-list li").removeClass('active');
-            $(this).addClass('active');
-            var year_id = $(".year_id_field").val();
-            var quiz_type = $(this).attr('data-type');
-            $(".assignment_topic_type_mock").val(quiz_type);
-            $(".assignment_topic_type_mock").prop('checked', true);
-            refresh_tags();
-            searchRequest = jQuery.ajax({
-                type: "GET",
-                url: '/tests/search_tests',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                beforeSend: function () {
-                    if (searchRequest != null) {
-                        searchRequest.abort();
-                    }
-                },
-                data: {"quiz_type": quiz_type, "is_assignment": 'yes',  "year_id": year_id},
-                success: function (return_data) {
-                    rurera_remove_loader($(".simple-table tbody"), 'div');
-                    $(".simple-table tbody").html(return_data);
-                }
-            });
-
-        });
-
-        var searchRequest = null;
-        $('body').on('keyup', '.search-tests', function (e) {
-            rurera_loader($(".simple-table tbody"), 'div');
-            var year_id = $(".year_id_field").val();
-            var search_keyword = $(this).val();
-			var quiz_type = $(".assignment_topic_type_check:checked").val();
-            searchRequest = jQuery.ajax({
-                type: "GET",
-                url: '/tests/search_tests',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                beforeSend: function () {
-                    if (searchRequest != null) {
-                        searchRequest.abort();
-                    }
-                },
-                data: {"search_keyword": search_keyword, "is_assignment": 'yes',  "year_id": year_id, "quiz_type" : quiz_type},
-                success: function (return_data) {
-                    rurera_remove_loader($(".simple-table tbody"), 'div');
-                    if (return_data != '') {
-                        $(".simple-table tbody").html(return_data);
-                    }
-                }
-            });
-
-        });
+        $(".assignment_practice_type:checked").change();
 
     });
+
+    var parents_classes = {
+        freedom_mode_parent: 'timestables',
+        powerup_mode_parent: 'timestables',
+        trophy_mode_parent: 'timestables',
+        treasure_mission_parent: 'timestables',
+        showdown_mode_parent: 'timestables',
+    };
+
+    var conditional_parent_data = {
+
+
+        practice_fields_array: [
+            'year_group_field',
+            'courses_fields',
+            'practice-quiz-topics-list',
+            'no_of_attemptes_field',
+        ],
+
+        sats_fields_array: [
+            'year_group_field',
+            'vocabulary_list_data',
+            'no_of_attemptes_field',
+        ],
+
+
+
+        timestables_fields_array: [
+            'timestables_type_fields',
+            'timestables_modes_selection',
+        ],
+        freedom_mode_fields_array: [
+            'arthmetic_operations',
+            'no_of_questions_field',
+            'select_tables_field',
+            'no_of_attemptes_field',
+            'percentage_answer_field',
+            'average_time_field',
+        ],
+        powerup_mode_fields_array: [
+            'table_group_field',
+            'practice_duration_field',
+            'no_of_attemptes_field',
+        ],
+        trophy_mode_fields_array: [
+            '',
+        ],
+        treasure_mission_fields_array: [
+            'no_of_stages_field',
+        ],
+        showdown_mode_fields_array: [
+            '',
+        ],
+        vocabulary_fields_array: [
+            'year_group_field',
+            'vocabulary_list_data',
+            'vocabulary_fields',
+            'vocabulary_practice_type_field',
+            'no_of_questions_field',
+            'show_words_type_field',
+            'no_of_attemptes_field',
+
+        ],
+
+    };
+
+
+
+    $('body').on('change', '.assignemnet_types_selection', function (e) {
+
+        $(".rurera_common_hide_field").addClass('rurera-hide');
+        console.log('assignemnet_types_selection');
+
+        var current_selected_type = $(this).val();
+        var fields_to_show_array = conditional_parent_data[current_selected_type+'_fields_array'];
+        $(fields_to_show_array).each(function (index, field_to_show) {
+            $("."+field_to_show).removeClass('rurera-hide');
+        });
+
+        if(current_selected_type == 'timestables'){
+
+            if($(".sub_types_selection").length > 0){
+                $('.sub_types_selection:checked').each(function () {
+                    $(this).change()
+                });
+            }
+        }
+    });
+
+    $('body').on('change', '.sub_types_selection', function (e) {
+
+        $(".rurera_common_hide_field").addClass('rurera-hide');
+
+        var current_selected_type = $(this).val();
+
+        var parents_class = parents_classes[current_selected_type+'_parent'];
+
+        var show_classes = [];
+        var fields_to_show_array = conditional_parent_data[parents_class+'_fields_array'];
+        $(fields_to_show_array).each(function (index, field_to_show) {
+            //show_classes.push(field_to_show);
+            $("."+field_to_show).removeClass('rurera-hide');
+        });
+
+        var fields_to_show_array = conditional_parent_data[current_selected_type+'_fields_array'];
+        $(fields_to_show_array).each(function (index, field_to_show) {
+            $("."+field_to_show).removeClass('rurera-hide');
+        });
+
+
+    });
+
+
+    $(document).ready(function () {
+
+        if ($(".assignemnet_types_selection").length > 0) {
+            $('.assignemnet_types_selection:checked').each(function () {
+                $(this).change()
+            });
+        }
+    });
+
+
+
 
 </script>
 @endpush
-
-<script type="text/javascript">
-    $(document).on('change', '.subscribed_for-field', function (e) {
-        var package_month = 1;
-        var package_discount = 0;
-        if($(this).is(':checked')) {
-            package_month = 12;
-            package_discount = 25;
-        }
-        var currency_sign = $(".lms-membership-section").attr('data-currency_sign');
-        $(".packages-prices").each(function(){
-           var package_price = $(this).attr('data-package_price');
-            var package_price_org = package_price;
-           var discount_price = parseFloat(parseFloat(package_price))*package_discount / 100;
-           var package_price = parseFloat(parseFloat(package_price))-discount_price;
-           //var package_price = parseInt(package_price)*package_month;
-           package_price_label = currency_sign+parseFloat(parseFloat(package_price).toFixed(2));
-           if( package_month == 12) {
-               var yearly_price = package_price * 12;
-               yearly_price = parseFloat(parseFloat(yearly_price).toFixed(2));
-               $(this).closest('.subscribe-price').find('.yearly-price').html(currency_sign + yearly_price + ' billed yearly');
-           }else{
-               var without_discount = package_price_org*12;
-               var discount_price = parseFloat(parseFloat(package_price))*25 / 100;
-               var yearly_price = parseFloat(parseFloat(package_price_org))-discount_price;
-               yearly_price = without_discount-(yearly_price*12);
-               yearly_price = parseFloat(parseFloat(yearly_price).toFixed(2));
-               $(this).closest('.subscribe-price').find('.yearly-price').html('Save '+currency_sign+yearly_price+' with a yearly plan');
-           }
-
-
-           $(this).html(package_price_label+'/mo');
-        });
-    });
-</script>
