@@ -30,7 +30,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="edit-info-list">
-                                <h4 class="font-20 font-weight-bold pb-15 px-15">About you</h4>
+                                <h4 class="font-20 font-weight-bold pb-15">About you</h4>
                                 <ul>
                                     <li>
                                         <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
