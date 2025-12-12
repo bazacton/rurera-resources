@@ -390,7 +390,7 @@ $(document).ready(function () {
     });
 
     // User Loging Detail Function Start
-    $(document).on('click', '.edit-login-btn', function (e) {
+    $(document).on('click', '.profile-login-btn', function (e) {
         $(".user-profile-block").addClass('rurera-hide');
         $(".user-edit-login").removeClass('rurera-hide');
     });
