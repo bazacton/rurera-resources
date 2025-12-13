@@ -1100,16 +1100,6 @@
                         </div>
 
 
-                        <div class="class-section-data">
-                            New Data Ends 11111111111
-                        </div>
-
-
-
-
-
-
-
 
 
 
@@ -1131,10 +1121,8 @@
                 </div>
                 <div class="wizard-steps" data-step_id="2"></div>
                 <div class="wizard-pagination1 rurera-hide">
-                    <div class="previous-btn wizard-step disabled-btn" data-next_step="0">Previous</div>
                     <div class="next-btn wizard-step" data-next_step="2">Continue</div>
                 </div>
-                <div class="rurera-hide wizard-step clear-all-btn" data-next_step="1">Clear all</div>
             </form>
         </div>
     </div>
@@ -1762,6 +1750,35 @@
         ],
 
         sats_fields_array: [
+            'sats_fields',
+            'year_group_field',
+            'vocabulary_list_data',
+            'no_of_attemptes_field',
+        ],
+        '11plus_fields_array': [
+            '11plus_fields',
+            'year_group_field',
+            'vocabulary_list_data',
+            'no_of_attemptes_field',
+        ],
+
+
+        independent_exams_fields_array: [
+            'independent_exams_fields',
+            'year_group_field',
+            'vocabulary_list_data',
+            'no_of_attemptes_field',
+        ],
+
+        iseb_fields_array: [
+            'iseb_fields',
+            'year_group_field',
+            'vocabulary_list_data',
+            'no_of_attemptes_field',
+        ],
+
+        cat4_fields_array: [
+            'cat4_fields',
             'year_group_field',
             'vocabulary_list_data',
             'no_of_attemptes_field',
