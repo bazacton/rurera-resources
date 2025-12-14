@@ -71,7 +71,7 @@
     border-color: var(--primary);
 }
 .wizard-steps .courses_fields .radio-buttons .card-radio {
-    height: 100%;
+    min-height: 90px;
     max-width: 13%;
     flex: 0 0 13%;
 }
