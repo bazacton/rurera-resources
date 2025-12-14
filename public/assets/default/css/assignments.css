@@ -70,12 +70,12 @@
 .wizard-steps .card-radio input:checked + .radio-btn {
     border-color: var(--primary);
 }
-.wizard-steps .courses_fields .radio-buttons .card-radio {
+.courses_fields .radio-buttons .card-radio {
     min-height: 90px;
     max-width: 13%;
     flex: 0 0 13%;
 }
-.wizard-steps .courses_fields .radio-buttons .card-radio .radio-btn {
+.courses_fields .radio-buttons .card-radio .radio-btn {
     height: 100%;
 }
 /*Range Slider Style Start*/
