@@ -61,7 +61,7 @@
 .wizard-steps .radio-buttons .card-radio {/*min-height: 165px;*/ width: auto;}
 .wizard-steps .radio-buttons .card-radio:has(img) {width: 11.111%;}
 .wizard-steps .radio-buttons .card-radio .radio-btn {border: 1px solid transparent;  min-height: 50px;}
-.wizard-steps form {
+.set-work-container form {
     background-color: #fff;
     padding: 20px 30px 0;
     border-bottom: 1px solid #ddd;
