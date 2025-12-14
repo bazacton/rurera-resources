@@ -1,7 +1,8 @@
 .populated-content-area[class*="col-"] {padding: 0;}
 .radio-buttons {display: flex; flex-wrap: wrap; gap: 15px; width: 100%;}
 .radio-buttons .card-radio {width: 11.111%; margin-bottom: 0;}
-.populated-data .radio-btn {border: 2px solid transparent; border-radius: 6px; display: flex; position: relative; text-align: center; box-shadow: 0 0 10px #c3c3c367; cursor: pointer; padding: 15px 12px; min-height: 111px; align-items: center; justify-content: center; height: auto;}
+.populated-data .radio-btn,
+.wizard-steps .courses_fields .radio-buttons .card-radio .radio-btn {border: 2px solid transparent; border-radius: 6px; display: flex; position: relative; text-align: center; box-shadow: 0 0 10px #c3c3c367; cursor: pointer; padding: 15px 12px; min-height: 111px; align-items: center; justify-content: center; height: auto;}
 .populated-data .radio-btn.disabled-style {opacity: 0.5;}
 .populated-data .radio-btn.disabled-style:hover {opacity: 1;}
 .populated-data .setwork-fields .radio-btn,
