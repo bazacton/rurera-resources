@@ -1571,6 +1571,12 @@ Lms Responsive Style Start
         flex: 0 0 47%;
     }
     body.parent-panel .wizard-steps {padding: 20px 20px 0;}
+    .wizard-steps .courses_fields .radio-buttons .card-radio {
+        height: auto;
+        max-width: 47%;
+        flex: 0 0 50%;
+        min-height: 100px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
