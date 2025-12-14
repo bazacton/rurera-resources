@@ -70,6 +70,14 @@
 .wizard-steps .card-radio input:checked + .radio-btn {
     border-color: var(--primary);
 }
+.wizard-steps .courses_fields .radio-buttons .card-radio {
+    height: 100%;
+    max-width: 13%;
+    flex: 0 0 13%;
+}
+.wizard-steps .courses_fields .radio-buttons .card-radio .radio-btn {
+    height: 100%;
+}
 /*Range Slider Style Start*/
 .range-slider {position: relative; width: 100%;	height: auto; min-height: 80px;}
 .range-slider-field {width: 100%; position: absolute; top: 50%; z-index: 3; transform: translateY(-50%); -webkit-appearance: none; appearance: none; width: 100%; height: 4px; opacity: 0; margin: 0; }
