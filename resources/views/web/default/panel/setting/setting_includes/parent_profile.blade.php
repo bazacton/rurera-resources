@@ -310,7 +310,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                     <a href="#" class="toggle-all">Toggle all</a>
                 </div>
 
-                <div class="notifications-section">
+                <div class="notifications-section panel-section-card bg-white panel-border rounded-sm px-25 pt-25 pb-15">
                     <p class="label">Send me:</p>
 
                     <div class="item">
