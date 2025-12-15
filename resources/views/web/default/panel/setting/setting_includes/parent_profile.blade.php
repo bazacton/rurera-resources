@@ -303,6 +303,84 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                 </div>
             </div>
         </div>
+        <div class="col-12">
+            <div class="notifications-wrap">
+                <div class="notifications-header">
+                    <h2>Alerts & Notifications</h2>
+                    <a href="#" class="toggle-all">Toggle all</a>
+                </div>
+
+                <div class="notifications-section">
+                    <p class="label">Send me:</p>
+
+                    <div class="item">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                        <div class="text">
+                            <h4>Rurera Communication</h4>
+                            <p>Get Rurera news, announcements, and product updates</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                        <div class="text">
+                            <h4>Account Activity</h4>
+                            <p>Get important notifications about you or activity you've missed</p>
+                        </div>
+                    </div>
+
+                    <div class="item disabled">
+                        <label class="checkbox">
+                            <input type="checkbox" disabled>
+                            <span></span>
+                        </label>
+                        <div class="text">
+                            <h4>Draftees</h4>
+                            <p>Once you receive invitations, you can get emails of Prospects looking to be drafted</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                        <div class="text">
+                            <h4>Meetups Near You</h4>
+                            <p>Get an email when a Dribbble Meetup is posted close to my location</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+                        <div class="text">
+                            <h4>Marketing Updates</h4>
+                            <p>Stay informed about our latest products, promotions, and special offers</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                        <div class="text">
+                            <h4>Hiring Manager Alerts</h4>
+                            <p>Get news & announcements for hiring managers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 <div class="modal fade" id="profile-image-modal" tabindex="-1" role="dialog" aria-labelledby="profile-image-modal">
     <div class="modal-dialog modal-lg" role="document">
