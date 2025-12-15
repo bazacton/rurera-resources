@@ -878,7 +878,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
                                     <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
                                     </a>
                                 </div>
