@@ -860,7 +860,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                 <h2 class="font-16 font-weight-500 mb-25 inner-heading pb-15">Subscription Details</h2>
-                <div class="edit-info-list">
+                <div class="edit-info-list d-flex align-items-center flex-wrap">
                     @if( !isset( $user->userSubscriptions->id))<a href="javascript:;" class="membership-btn font-16 float-right package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$user->id}}">+ Subscription</a>@endif
                     @if( isset( $user->userSubscriptions->id))
                         <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
@@ -877,15 +877,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
 
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     @endif
-                    <div class="subscription-controls d-flex align-items-center">
+                    <div class="subscription-controls d-flex align-items-center ml-auto">
+                        <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a>
                         @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )
                         <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
                             <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
