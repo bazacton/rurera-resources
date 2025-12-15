@@ -1743,7 +1743,7 @@
 
 
         practice_fields_array: [
-            'year_group_field',
+            //'year_group_field',
             'courses_fields',
             'practice-quiz-topics-list',
             'no_of_attemptes_field',
@@ -1751,13 +1751,13 @@
 
         sats_fields_array: [
             'sats_fields',
-            'year_group_field',
+            //'year_group_field',
             'vocabulary_list_data',
             'no_of_attemptes_field',
         ],
         '11plus_fields_array': [
             '11plus_fields',
-            'year_group_field',
+            //'year_group_field',
             'vocabulary_list_data',
             'no_of_attemptes_field',
         ],
@@ -1765,21 +1765,21 @@
 
         independent_exams_fields_array: [
             'independent_exams_fields',
-            'year_group_field',
+            //'year_group_field',
             'vocabulary_list_data',
             'no_of_attemptes_field',
         ],
 
         iseb_fields_array: [
             'iseb_fields',
-            'year_group_field',
+            //'year_group_field',
             'vocabulary_list_data',
             'no_of_attemptes_field',
         ],
 
         cat4_fields_array: [
             'cat4_fields',
-            'year_group_field',
+            //'year_group_field',
             'vocabulary_list_data',
             'no_of_attemptes_field',
         ],
