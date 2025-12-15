@@ -311,7 +311,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                 </div>
 
                 <div class="notifications-section panel-section-card bg-white panel-border rounded-sm px-25 pt-25 pb-15">
-                    <p class="label">Send me:</p>
+                    <p class="label font-18 font-weight-bold">Send me:</p>
 
                     <div class="item">
                         <label class="checkbox">
