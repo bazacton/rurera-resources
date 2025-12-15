@@ -84,7 +84,85 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .select-field:has(.rurera-error-msg):before {
     height: 40px;
 }
+.notifications-wrap {
+    max-width: 700px;
+    margin: 40px auto;
+}
 
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.notifications-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.toggle-all {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+.notifications-wrap .label {
+    margin: 25px 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.notifications-wrap .item {
+    display: flex;
+    gap: 15px;
+    padding: 18px 0;
+    border-top: 1px solid #eee;
+}
+.notifications-wrap .item:first-of-type {
+    border-top: none;
+}
+.notifications-wrap .text h4 {
+    font-size: 15px;
+    margin: 0 0 5px;
+    font-weight: 500;
+}
+.notifications-wrap .text p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+/* Custom checkbox */
+.notifications-wrap .checkbox {
+    position: relative;
+}
+.notifications-wrap .checkbox input {
+    display: none;
+}
+.notifications-wrap .checkbox span {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.notifications-wrap .checkbox input:checked + span {
+    background: #ea4c89;
+    border-color: #ea4c89;
+}
+.notifications-wrap .checkbox input:checked + span::after {
+    content: "✓";
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+.notifications-wrap .item.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
 /*Edit Profile Style End*/
 
 /*************************************
