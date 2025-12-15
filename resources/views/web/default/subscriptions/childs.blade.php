@@ -91,6 +91,11 @@
                     <span class="fomr-label">Password</span>
                     <div class="input-field">
                         <input type="text" class="password-field rurera-req-field" name="password" placeholder="Create a password">
+                        <div class="password-info">
+                            <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                            <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
+                            <span class="item rule-common"><i class="info-icon">✔</i> Not a common password</span>
+                        </div>
                         <a href="javascript:;" class="generatePassword" data-input_class="password-field">Generate</a>
                     </div>
                 </div>
@@ -144,3 +149,68 @@
             }
         });
     </script>
+    <script>
+    $(document).ready(function () {
+
+    $(".password").on("click", function () {
+        let wrapper = $(this).closest(".input-field");
+        wrapper.find(".password-info").css("display", "flex");
+    });
+
+    $(".password").on("keyup", function () {
+
+        let $this = $(this);
+        let val = $this.val();
+        let wrapper = $this.closest(".input-field");
+
+        let hasNumber = /\d/.test(val);
+        let commonPasswords = ["123456", "password", "qwerty", "111111"];
+
+        // Rule 1 — Length
+        if (val.length >= 7) {
+            wrapper.find(".rule-length")
+                .removeClass("error").addClass("success")
+                .find(".info-icon").text("✔");
+        } else {
+            wrapper.find(".rule-length")
+                .removeClass("success").addClass("error")
+                .find(".info-icon").text("⚠");
+        }
+
+        // Rule 2 — Number
+        if (hasNumber) {
+            wrapper.find(".rule-number")
+                .removeClass("error").addClass("success")
+                .find(".info-icon").text("✔");
+        } else {
+            wrapper.find(".rule-number")
+                .removeClass("success").addClass("error")
+                .find(".info-icon").text("⚠");
+        }
+
+        // Rule 3 — Not common password
+        if (!commonPasswords.includes(val)) {
+            wrapper.find(".rule-common")
+                .removeClass("error").addClass("success")
+                .find(".info-icon").text("✔");
+        } else {
+            wrapper.find(".rule-common")
+                .removeClass("success").addClass("error")
+                .find(".info-icon").text("⚠");
+        }
+
+        // Input error border
+        if (
+            val.length < 7 ||
+            !hasNumber ||
+            commonPasswords.includes(val)
+        ) {
+            $this.addClass("input-error");
+        } else {
+            $this.removeClass("input-error");
+        }
+    });
+
+});
+
+</script>
