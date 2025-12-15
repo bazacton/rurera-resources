@@ -17,7 +17,7 @@
         <div class="dropdown db-members">
             @if(auth()->check() && (auth()->user()->isParent()))
             <div class="ms-auto last-activity profile-dropdown">
-                <a href="#" class="font-15 font-weight-normal">
+                <a href="#" class="font-14 font-weight-normal">
                     <img src="/assets/default/svgs/students.svg" alt="students"> 
                     {{$selected_child}}
                 </a>
