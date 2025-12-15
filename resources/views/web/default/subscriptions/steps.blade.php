@@ -278,7 +278,7 @@
            <li class="{{$liClass}}">
             <span class="stepname">Choose Plan</span><br>
             <i class="icon-box">
-                <img src="/assets/default/svgs/choose-plan2.svg" alt="choose-plan2">
+                <img src="/assets/default/svgs/choose-plan3.svg" alt="choose-plan3">
             </i>
             <div class="stepline"></div>
           </li>
