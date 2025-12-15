@@ -1846,6 +1846,9 @@
                 });
             }
         }
+
+
+        $(".year_quiz_ajax_select").change();
     });
 
     $('body').on('change', '.sub_types_selection', function (e) {
