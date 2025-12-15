@@ -1303,7 +1303,8 @@ Lms Responsive Style Start
     .withdraw-text {flex: 0 0 85%;}
     .withdraw-btn-holder {margin-left: 0;flex: auto;}
     .login-card .login-option div {margin-left: 0;}
-    .login-controls {width: 100%;}
+    .login-controls,
+    .subscription-controls {width: 100%; justify-content: space-between !important;}
     .login-holder .login-options .social-login {flex-direction: column; gap: 0;}
     .login-holder .login-options span {margin-top: 10px;}
     .benefits-list ul li {width: 100%;}
