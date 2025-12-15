@@ -6,13 +6,22 @@ Sub Pages Style
 .member-card-header .db-members.dropdown .profile-dropdown > a {
   margin-right: 0;
   border: 1px solid #ddd;
-  padding: 8px 30px 8px 15px;
+  padding: 8px 30px 8px 12px;
   border-radius: 5px;
   color: #66667e;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .member-card-header .db-members.dropdown .profile-dropdown > a:before {
   right: 12px;
   border-color: #999;
+}
+.member-card-header .db-members.dropdown .profile-dropdown > a img {
+    height: 20px;
+    width: 20px;
+    filter: invert(76%) sepia(1%) saturate(150%) hue-rotate(1deg) brightness(110%) contrast(100%);
+    object-fit: contain;
 }
 .analytics-header .header-text {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 0 1.25rem .75rem;}
 .analytics-header .header-text > span {width: 33.333%; text-align: right;}
