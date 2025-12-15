@@ -66,7 +66,7 @@
                         <span class="nav-sub-title font-16">Home</span>
                     </a>
                 </li>
-                
+
                 @if(auth()->user()->isParent() || auth()->user()->isTutor())
                 <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
@@ -116,7 +116,7 @@
                         <a href="/books" class="font-16 nav-sub-title">Books @if(!auth()->subscription('bookshelf'))<img src="/assets/default/svgs/crown.svg" class="crown-icon">@endif</a>
                 </li>
                 @endif
-                    
+
                     @if(auth()->user()->show_sats == 1)
                     <li class="sidenav-item {{ (request()->is('tests') or request()->is('tests/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/tests" data-toggle="tooltip" data-placement="left" title="sats">
@@ -141,25 +141,25 @@
                 @endif
 
                     @if(auth()->user()->isUser())
-                        
+
                     @if(auth()->user()->hide_games == 0)
-                    <li class="sidenav-item {{ (request()->is('games') or request()->is('games/*')) ? 'sidenav-item-active' : '' }}">
+                    {{--<li class="sidenav-item rurera-hide {{ (request()->is('games') or request()->is('games/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/games" data-toggle="tooltip" data-placement="left" title="Games">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/games.svg" width="150" height="150" alt="games">
                             </span>
                         </a>
                         <a href="/games" class="font-16 nav-sub-title">Games</a>
-                    </li>
+                    </li>--}}
                     @endif
-                    <li class="sidenav-item {{ (request()->is('shop') or request()->is('shop/*')) ? 'sidenav-item-active' : '' }}">
+                    {{--<li class="sidenav-item {{ (request()->is('shop') or request()->is('shop/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/shop" data-toggle="tooltip" data-placement="left" title="Shop">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/shop.svg" width="150" height="150" alt="shop">
                             </span>
                         </a>
                         <a href="/shop" class="font-16 nav-sub-title">Shop</a>
-                    </li>
+                    </li>--}}
                     @endif
                     <li class="sidenav-item {{ (request()->is('panel/analytics') or request()->is('panel/analytics/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/{{panelRoute()}}/analytics" data-toggle="tooltip" data-placement="left" title="Analytics">
@@ -171,14 +171,14 @@
                     </li>
 
                 @if(auth()->user()->isUser())
-                    <li class="sidenav-item {{ (request()->is('school-zone') or request()->is('school-zone/*')) ? 'sidenav-item-active' : '' }}">
+                    {{--<li class="sidenav-item {{ (request()->is('school-zone') or request()->is('school-zone/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/school-zone" data-toggle="tooltip" data-placement="left" title="School Zone">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/svgs/school-zone.svg" width="150" height="150" alt="school zone">
                             </span>
                         </a>
                         <a href="/school-zone" class="font-16 nav-sub-title">School Zone</a>
-                    </li>
+                    </li>--}}
                 @endif
                 <li class="sidenav-item {{ (request()->is('panel/marketing/affiliates') or request()->is('panel/marketing/affiliates/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/{{panelRoute()}}/marketing/affiliates" data-toggle="tooltip" data-placement="left" title="Referrals">
@@ -199,7 +199,7 @@
                         </a>
                         <a href="/{{panelRoute()}}/students" class="font-16 nav-sub-title">Students</a>
                     </li>
-                    
+
 
                 @endif
 
@@ -343,7 +343,7 @@
 </div>
 @push('scripts_bottom')
 <script>
- 
+
 
   $(document).ready(function() {
       $('[data-toggle="tooltip"]').tooltip({
