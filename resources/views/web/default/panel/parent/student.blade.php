@@ -879,15 +879,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
                                     <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
                                     </a>
                                 </div>
                             </div>
                         </div>
                     @endif
-                    <div class="subscription-controls d-flex align-items-center justify-content-end">
+                    <div class="subscription-controls d-flex align-items-center">
                         @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )
                         <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
                             <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
