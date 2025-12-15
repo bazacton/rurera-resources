@@ -187,6 +187,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     background-color: #fcfdfe;
     border-bottom: 1px solid #ddd;
     padding: 20px;
+    display: none;
 }
 .detail-header-profile {border-bottom: 1px solid #ddd; border-radius: 5px;}
 .detail-header-profile .profile-controls {gap: 18px; }
@@ -221,7 +222,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-info-list li a:hover {background-color: #f1f3f7;}
 .edit-info-list li .edtit-btn {border: 0; color: var(--primary); gap: 8px;}
 .user-detail .detail-body {
-    padding: 0 20px 25px;
+    padding: 20px;
 }
 .user-detail {
     overflow: hidden;
