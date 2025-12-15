@@ -871,7 +871,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 </div>
                             </div>
                             @php //pre($user->userSubscriptions); @endphp
-                            <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+                            <div class="d-flex align-items-start text-dark-charcoal mb-0 subscribe-price">
                                 <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($user->userSubscriptions->charged_amount) }}</span>
                                 <span class="yearly-price">{{ addCurrencyToPrice($user->userSubscriptions->charged_amount) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Yearly' : 'Monthly'}}</span>
                                 <span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
