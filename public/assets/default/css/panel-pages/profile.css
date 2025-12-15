@@ -84,10 +84,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .select-field:has(.rurera-error-msg):before {
     height: 40px;
 }
-.notifications-wrap {
-    max-width: 700px;
-    margin: 40px auto;
-}
 .notifications-header {
     display: flex;
     justify-content: space-between;
