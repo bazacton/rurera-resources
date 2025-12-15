@@ -806,7 +806,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </ul>
                         </div>
                     </div>
-                    <div class="login-controls d-flex align-items-center justify-content-between">
+                    <div class="login-controls d-flex align-items-center justify-content-end">
                         <a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
                             <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji
                         </a>
