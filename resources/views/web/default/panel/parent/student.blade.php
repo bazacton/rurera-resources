@@ -780,7 +780,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                         </a>
                     </h2>
 
-                    <div class="student-profile-holder profile-view-data">
+                    <div class="student-profile-holder profile-view-data d-flex align-items-center">
                     <div class="profile-inner mb-10">
                         <div class="profile-header">
                             <h3>{{$user->get_full_name()}}</h3>
