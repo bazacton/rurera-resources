@@ -258,18 +258,23 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                             <div class="col-6 col-lg-6 col-md-6 form-group">
                                                                 <label>Current Password</label>
                                                                 <div class="input-field">
-                                                                    <input type="password" id="password" name="password" placeholder="Your current password" value="">
-                                                                    <div class="password-info" id="password-info">
-                                                                        <span class="item" id="rule-length"><i class="info-icon">✔</i> 7+ characters</span>
-                                                                        <span class="item" id="rule-number"><i class="info-icon">✔</i> At least one number</span>
-                                                                        <span class="item" id="rule-common"><i class="info-icon">✔</i> Not a common password</span>
+                                                                    <input type="password" class="password" name="password" placeholder="Your current password" value="">
+                                                                    <div class="password-info">
+                                                                        <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                                                                        <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
+                                                                        <span class="item rule-common"><i class="info-icon">✔</i> Not a common password</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-6 col-lg-6 col-md-6 form-group">
                                                                 <label>New Password</label>
                                                                 <div class="input-field">
-                                                                    <input type="password" name="password" placeholder="Choose a secure password" value="">
+                                                                    <input type="password" class="password" name="password" placeholder="Choose a secure password" value="">
+                                                                    <div class="password-info">
+                                                                        <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                                                                        <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
+                                                                        <span class="item rule-common"><i class="info-icon">✔</i> Not a common password</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -456,60 +461,65 @@ $(document).ready(function () {
 <script>
     $(document).ready(function () {
 
-    // Show info on click only
-    $("#password").on("click", function () {
-        $("#password-info").css("display", "flex");
+    $(".password").on("click", function () {
+        let wrapper = $(this).closest(".password-wrapper");
+        wrapper.find(".password-info").css("display", "flex");
     });
 
-    $("#password").on("keyup", function () {
-        let val = $(this).val();
+    $(".password").on("keyup", function () {
+
+        let $this = $(this);
+        let val = $this.val();
+        let wrapper = $this.closest(".password-wrapper");
+
         let hasNumber = /\d/.test(val);
         let commonPasswords = ["123456", "password", "qwerty", "111111"];
 
         // Rule 1 — Length
         if (val.length >= 7) {
-            $("#rule-length")
+            wrapper.find(".rule-length")
                 .removeClass("error").addClass("success")
                 .find(".info-icon").text("✔");
         } else {
-            $("#rule-length")
+            wrapper.find(".rule-length")
                 .removeClass("success").addClass("error")
                 .find(".info-icon").text("⚠");
         }
 
         // Rule 2 — Number
         if (hasNumber) {
-            $("#rule-number")
+            wrapper.find(".rule-number")
                 .removeClass("error").addClass("success")
                 .find(".info-icon").text("✔");
         } else {
-            $("#rule-number")
+            wrapper.find(".rule-number")
                 .removeClass("success").addClass("error")
                 .find(".info-icon").text("⚠");
         }
 
         // Rule 3 — Not common password
         if (!commonPasswords.includes(val)) {
-            $("#rule-common")
+            wrapper.find(".rule-common")
                 .removeClass("error").addClass("success")
                 .find(".info-icon").text("✔");
         } else {
-            $("#rule-common")
+            wrapper.find(".rule-common")
                 .removeClass("success").addClass("error")
                 .find(".info-icon").text("⚠");
         }
 
-        // Input error border if any rule fails
+        // Input error border
         if (
             val.length < 7 ||
             !hasNumber ||
             commonPasswords.includes(val)
         ) {
-            $("#password").addClass("input-error");
+            $this.addClass("input-error");
         } else {
-            $("#password").removeClass("input-error");
+            $this.removeClass("input-error");
         }
     });
+
 });
 
 </script>
