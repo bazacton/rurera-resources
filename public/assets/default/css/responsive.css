@@ -1581,6 +1581,10 @@ Lms Responsive Style Start
     .courses_fields .card-icon svg {
         display: none;
     }
+    .parent-panel:has(.set-work-container) .daterangepicker.opensright:after, 
+    .parent-panel:has(.set-work-container) .daterangepicker.opensright:before {
+        display: none;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
