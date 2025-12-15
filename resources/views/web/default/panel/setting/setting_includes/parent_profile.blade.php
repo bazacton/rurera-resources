@@ -601,3 +601,27 @@ $(document).ready(function () {
 });
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleAllBtn = document.querySelector(".toggle-all");
+    const checkboxes = document.querySelectorAll(
+        '.item:not(.disabled) input[type="checkbox"]'
+    );
+
+    let allChecked = false;
+
+    toggleAllBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        allChecked = !allChecked;
+
+        checkboxes.forEach(cb => {
+            cb.checked = allChecked;
+        });
+
+        // Optional: change button text
+        this.textContent = allChecked ? "Untoggle all" : "Toggle all";
+    });
+});
+</script>
+
