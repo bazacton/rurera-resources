@@ -6,7 +6,7 @@ Sub Pages Style
 .member-card-header .db-members.dropdown .profile-dropdown > a {
   margin-right: 0;
   border: 1px solid #ddd;
-  padding: 8px 30px 8px 12px;
+  padding: 8px 32px 8px 12px;
   border-radius: 5px;
   color: #66667e;
   display: inline-flex;
@@ -14,8 +14,10 @@ Sub Pages Style
   gap: 5px;
 }
 .member-card-header .db-members.dropdown .profile-dropdown > a:before {
-  right: 12px;
+  right: 14px;
   border-color: #999;
+  height: 7px;
+  width: 7px;
 }
 .member-card-header .db-members.dropdown .profile-dropdown > a img {
     height: 20px;
