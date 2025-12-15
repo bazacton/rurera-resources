@@ -43,7 +43,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     <li>
                                         <span class="info-list-label font-16">
                                             Full Name
-                                            <strong class="d-flex font-weight-norma"><img src="/assets/default/svgs/user-alt-2-svgrepo-com.svg" alt="user-alt-2-svgrepo-com" height="800" width="800"> {{$user->get_full_name()}}</strong>
+                                            <strong class="d-flex font-weight-normal"><img src="/assets/default/svgs/user-alt-2-svgrepo-com.svg" alt="user-alt-2-svgrepo-com" height="800" width="800"> {{$user->get_full_name()}}</strong>
                                         </span>
                                         <span class="info-list-label font-16">
                                             Contact no
