@@ -91,10 +91,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 15px;
 }
-.notifications-header h2 {
-    font-size: 20px;
-    font-weight: 600;
-}
 .toggle-all {
     font-size: 14px;
     color: #666;
