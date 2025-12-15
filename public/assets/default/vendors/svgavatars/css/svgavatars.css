@@ -1468,6 +1468,14 @@ label#svga-elements-faceshape-label {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-shadow: 0 2px 0 #ddd;
+    width: 68px;
+    height: 68px;
+    padding: 0;
+}
+.mobile-avar-view .svga-light .svga-elements {
+	width: 17.777%;
+	padding-bottom: 17.777%;
+	height: auto;
 }
 .svga-light #svga-dialog-ok,
 .svga-light #svga-dialog-cancel,
