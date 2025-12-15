@@ -324,7 +324,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                         </div>
                         <div class="edit-profile-controls">
                             <input type="hidden" name="user_id" value="{{$user->id}}">
-                            <a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+                            <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
                             <a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                         </div>
                         </form>
@@ -511,7 +511,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </div>
                             <div class="edit-profile-controls">
                                 <input type="hidden" name="user_id" value="{{$user->id}}">
-                                <a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+                                <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
                                 <a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                             </div>
                         </form>
@@ -754,7 +754,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 
                         <div class="edit-profile-controls">
                             <input type="hidden" name="user_id" value="{{$user->id}}">
-                            <a href="javascript:;" class="text-center cancel-edit-button"><img src="/assets/default/svgs/retry.svg" alt="Retry"> Reset</a>
+                            <a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
                             <a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                         </div>
                         </form>
