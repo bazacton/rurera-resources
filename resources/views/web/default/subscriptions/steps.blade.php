@@ -298,7 +298,7 @@
          <li class="{{$liClass}}">
             <span class="stepname">Finished</span><br>
             <i class="icon-box">
-                <img src="/assets/default/svgs/finish.svg" alt="">
+                <img src="/assets/default/svgs/finish2.svg" alt="finish2">
             </i>
             <div class="stepline"></div>
           </li>
