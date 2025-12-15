@@ -324,6 +324,7 @@ address .info-list-label {color: #64748b;}
 .edit-profile .custom-switch .custom-switch-indicator {margin-left: auto;}
 .transactions-history .table td {
     color: #475569;
+    padding: 1rem .3rem;
 }
 /* User Detail Style End */
 /* custom-switch style start */
