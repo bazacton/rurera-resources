@@ -1871,6 +1871,15 @@
 
     });
 
+    $('body').on('change', '.assignment-user-class', function (e) {
+        var year_id = $(this).attr('data-year_id');
+        $('.year_quiz_ajax_select')
+            .val(year_id)
+            .trigger('change');
+    });
+
+
+
 
     $(document).ready(function () {
 
