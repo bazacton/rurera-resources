@@ -269,7 +269,7 @@
           <li class="{{$liClass}}">
             <span class="stepname">Student Information</span><br>
             <i class="icon-box">
-                <img src="/assets/default/svgs/student-reading.svg" alt="">
+                <img src="/assets/default/svgs/students.svg" alt="students">
             </i>
             <div class="stepline"></div>
           </li>
@@ -278,7 +278,7 @@
            <li class="{{$liClass}}">
             <span class="stepname">Choose Plan</span><br>
             <i class="icon-box">
-                <img src="/assets/default/svgs/student.svg" alt="student">
+                <img src="/assets/default/svgs/choose-plan.svg" alt="">
             </i>
             <div class="stepline"></div>
           </li>
@@ -288,7 +288,7 @@
          <li class="{{$liClass}}">
             <span class="stepname">Payment Options</span><br>
             <i class="icon-box">
-                <img src="/assets/default/svgs/Payment.svg" alt="">
+                <img src="/assets/default/svgs/payment.svg" alt="payment">
             </i>
             <div class="stepline"></div>
           </li>
