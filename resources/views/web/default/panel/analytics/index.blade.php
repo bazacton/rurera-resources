@@ -17,7 +17,10 @@
         <div class="dropdown db-members">
             @if(auth()->check() && (auth()->user()->isParent()))
             <div class="ms-auto last-activity profile-dropdown">
-                <a href="#" class="font-15 font-weight-normal">{{$selected_child}}</a>
+                <a href="#" class="font-15 font-weight-normal">
+                    <span><img src="/assets/default/svgs/students.svg" alt="students"></span> 
+                    {{$selected_child}}
+                </a>
                 <ul>
                     @if( !empty( $childs ) )
                     @foreach($childs as $childLinkObj)
