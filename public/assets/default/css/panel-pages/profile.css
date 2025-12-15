@@ -88,7 +88,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     max-width: 700px;
     margin: 40px auto;
 }
-
 .notifications-header {
     display: flex;
     justify-content: space-between;
@@ -96,7 +95,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 15px;
 }
-
 .notifications-header h2 {
     font-size: 20px;
     font-weight: 600;
