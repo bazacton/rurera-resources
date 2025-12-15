@@ -299,7 +299,7 @@ if( !empty( $emojisArray ) ){
 															</ul>
 														</div>
 													</div>
-                                                    <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center">
+                                                    <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center mt-15">
                                                         <button type="button" id="saveData" class="save-btn text-center ">Save</button>
                                                     </div>			
 												</div>
