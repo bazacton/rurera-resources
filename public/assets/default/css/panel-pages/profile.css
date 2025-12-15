@@ -294,7 +294,7 @@ address .info-list-label {color: #64748b;}
 .detail-body .subscribe-plan .subscribe-price span {color: #596bfd; font-weight: 500; font-size: 18px !important; margin-bottom: 5px;}
 .detail-body .subscribe-plan .subscribe-price .yearly-price {color: #64748b; font-size: 15px !important; font-weight: 400; margin-bottom: 0;}
 .subscription-controls {gap: 10px;}
-.subscription-controls .package-update-btn.btn {background-color: var(--primary); color: #fff; padding: 0 8px; height: 42px; }
+.subscription-controls .package-update-btn.btn {background-color: var(--primary); color: #fff; padding: 0 8px; height: 36px; }
 .detail-body .inner-heading {border-bottom: 1px solid #ddd; width: 100%;}
 .detail-body .inner-heading:hover .edit-icon em {visibility: visible; opacity: 1;}
 .detail-body .edit-profile-controls {display: flex; align-items: center; justify-content: flex-end; gap: 30px;}
