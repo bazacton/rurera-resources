@@ -84,42 +84,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .select-field:has(.rurera-error-msg):before {
     height: 40px;
 }
-.password-info {
-    display: none;
-    background: #fff;
-    padding: 10px 0 0 0;
-    border-radius: 6px;
-    margin-top: 0;
-    font-size: 14px;
-    flex-wrap: wrap;
-    gap: 5px 10px;
-}
-.password-info .item {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-.password-info .item i {
-    font-style: normal;
-    height: 20px;
-    width: 20px;
-    border: 1px solid;
-    border-radius: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    line-height: 18px;
-}
-.success {
-    color: #28a745;
-}
-.error {
-    color: #d9534f;
-}
-.input-error {
-    border: 1px solid #d9534f !important;
-}
+
 /*Edit Profile Style End*/
 
 /*************************************
