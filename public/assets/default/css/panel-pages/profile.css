@@ -299,7 +299,13 @@ address .info-list-label {color: #64748b;}
     font-size: 14px;
     font-weight: normal;
 }
-.subscription-controls .package-update-btn.btn {background-color: var(--primary); color: #fff; padding: 0 8px; height: 36px; font-weight: normal; font-size: 14px; }
+.subscription-controls .package-update-btn.btn {
+    font-weight: normal;
+    font-size: 14px;
+    height: auto;
+    padding: 0;
+    color: var(--primary);
+}
 .detail-body .inner-heading {border-bottom: 1px solid #ddd; width: 100%;}
 .detail-body .inner-heading:hover .edit-icon em {visibility: visible; opacity: 1;}
 .detail-body .edit-profile-controls {display: flex; align-items: center; justify-content: flex-end; gap: 30px;}
