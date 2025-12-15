@@ -1813,7 +1813,7 @@
             '',
         ],
         vocabulary_fields_array: [
-            'year_group_field',
+            //'year_group_field',
             'vocabulary_list_data',
             'vocabulary_fields',
             'vocabulary_practice_type_field',
