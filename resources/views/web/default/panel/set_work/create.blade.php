@@ -239,41 +239,41 @@
 
 
 
-                        <div class="form-section rurera_common_hide_field courses_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">Courses</h2>
                         </div>
 
 
-                        <div class="form-section rurera_common_hide_field sats_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">Sats</h2>
                         </div>
 
 
-                        <div class="form-section rurera_common_hide_field 11plus_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">11 Plus</h2>
                         </div>
 
 
-                        <div class="form-section rurera_common_hide_field independent_exams_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">Independent Exams</h2>
                         </div>
 
 
-                        <div class="form-section rurera_common_hide_field iseb_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">ISEB</h2>
                         </div>
 
 
-                        <div class="form-section rurera_common_hide_field cat4_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">CAT 4</h2>
                         </div>
 
 
-                        <div class="form-section rurera_common_hide_field vocabulary_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">Vocabulary</h2>
                         </div>
 
-                        <div class="form-section rurera_common_hide_field timestables_type_fields">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">Times Tables</h2>
                         </div>
 
@@ -781,7 +781,7 @@
                             </div>
                         </div>
 
-                        <div class="form-section">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">General information</h2>
                         </div>
 
@@ -794,7 +794,7 @@
                                    placeholder=""/>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group rurera-hide">
                             <label class="input-label">Practice Description</label>
                             <textarea
                                 name="ajax[new][description]"
@@ -803,7 +803,7 @@
                             <div class="invalid-feedback"></div>
                         </div>
 
-                        <div class="form-section">
+                        <div class="form-section rurera-hide">
                             <h2 class="section-title">Schedule</h2>
                         </div>
 
