@@ -1464,7 +1464,7 @@ label#svga-elements-faceshape-label {
     gap: 10px;
 }
 .svga-light .svga-elements {
-	background-color: inherit;
+	background-color: rgba(0,0,0,0.05);
     border: 1px solid #ddd;
     border-radius: 15px;
     box-shadow: 0 2px 0 #ddd;
