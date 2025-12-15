@@ -217,7 +217,7 @@ Assignments Table Style Start
 .db-members .profile-dropdown > a .icon-box {margin-right: 0; height: auto; width: auto; line-height: 16px;}
 .db-members .profile-dropdown > a .icon-box img {filter: invert(68%) sepia(19%) saturate(290%) hue-rotate(175deg) brightness(89%) contrast(101%);}
 .db-members .list-group-item .profile-dropdown > a:after {display: none;}
-.db-members .profile-dropdown ul {right: -5px; left: auto;}
+.db-members .profile-dropdown ul {right: 0; left: auto;}
 .member-card-header:hover .db-members .profile-dropdown ul {margin-top: 15px;}
 .profile-menu > ul > li .user-menu-text > a {font-weight: 600; font-size: 18px; display: block;}
 .profile-dropdown {position: relative; padding-top: 5px; display: inline-block;}
