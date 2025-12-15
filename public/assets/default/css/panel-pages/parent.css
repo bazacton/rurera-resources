@@ -197,7 +197,17 @@ Assignments Table Style Start
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid var(--primary); height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
 .member-card-header .db-members .profile-dropdown:hover > a:before {-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 .member-card-header .db-members .profile-dropdown:hover ul {margin-top: 0;}
-.member-card-header .db-members .profile-dropdown li a {display: flex; align-items: center; color: #66667e;}
+.member-card-header .db-members .profile-dropdown li a {display: flex;
+    align-items: center;
+    color: #66667e;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.member-card-header .db-members .profile-dropdown li a:hover {
+    background-color: rgba(52, 52, 52, .03);
+}
 .member-card-header h2 {color: var(--primary);}
 .member-card-header .dropdown .btn,
 .member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
@@ -218,7 +228,7 @@ Assignments Table Style Start
 .db-members .profile-dropdown > a .icon-box {margin-right: 0; height: auto; width: auto; line-height: 16px;}
 .db-members .profile-dropdown > a .icon-box img {filter: invert(68%) sepia(19%) saturate(290%) hue-rotate(175deg) brightness(89%) contrast(101%);}
 .db-members .list-group-item .profile-dropdown > a:after {display: none;}
-.db-members .profile-dropdown ul {right: 0; left: auto; border-radius: 5px;}
+.db-members .profile-dropdown ul {right: 0; left: auto; border-radius: 5px; padding: 10px;}
 .profile-menu > ul > li .user-menu-text > a {font-weight: 600; font-size: 18px; display: block;}
 .profile-dropdown {position: relative; padding-top: 5px; display: inline-block;}
 .member-card-header.activities-header .profile-dropdown {padding-top: 0;}
