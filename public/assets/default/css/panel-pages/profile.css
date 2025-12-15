@@ -95,11 +95,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     color: var(--primary);
     text-decoration: none;
 }
-.notifications-wrap .label {
-    margin: 0 0 10px;
-    font-size: 14px;
-    font-weight: 600;
-}
 .notifications-wrap .item {
     display: flex;
     gap: 15px;
