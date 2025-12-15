@@ -220,8 +220,10 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     vertical-align: middle;
 }
 .edit-icon {gap: 15px;}
-.edit-icon em {font-style: normal; color: var(--primary); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+.edit-icon em {font-style: normal; color: var(--primary); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; opacity: 0; visibility: hidden;}
+
 .edit-info-list li a:hover .edit-icon em {visibility: visible; opacity: 1;}
+.edit-info-list h4 .edit-icon em {visibility: visible; opacity: 1;}
 .edit-info-list li a:hover {background-color: #f1f3f7;}
 .edit-info-list li .edtit-btn {border: 0; color: var(--primary); gap: 8px;}
 .user-detail .detail-body {
