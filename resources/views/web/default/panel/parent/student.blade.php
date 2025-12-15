@@ -1,6 +1,7 @@
 @extends(getTemplate() .'.panel.layouts.panel_layout_full')
 
 @push('styles_top')
+    <link rel="stylesheet" href="/assets/default/css/assignments.css">
 <style type="text/css">
     .frontend-field-error, .field-holder:has(.frontend-field-error),
     .form-field:has(.frontend-field-error), .input-holder:has(.frontend-field-error) {
@@ -603,6 +604,18 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 </span>
                             </a>
                         </li>
+                        <li>
+                            <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+                                <span class="info-list-label font-16">
+                                    Learning Journey
+                                    <strong class="d-block font-weight-500">{{$user->show_sats == 1 ? 'Show' : 'Hide'}}</strong>
+                                </span>
+                                <span class="edit-icon d-inline-flex align-items-center">
+                                    <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
+                                    <em class="font-weight-500">Edit</em>
+                                </span>
+                            </a>
+                        </li>
                         @if( $courses_list->count() > 0)
                             @php $hide_subjects = json_decode($user->hide_subjects);
                             $hide_subjects = is_array( $hide_subjects )? $hide_subjects : array();
@@ -640,6 +653,52 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     <span class="custom-switch-indicator"></span>
                                 </label>
                             </div>
+
+
+
+                                @php
+                                    $tables_no = isset( $user->timestables_no )? json_decode($user->timestables_no) : array();
+                                @endphp
+                                <div class="form-group timestables-selection-tables">
+                                    <div class="timestables-heatmap"></div>
+                                    <div class="questions-select-number">
+                                        <ul class="d-flex justify-content-left flex-wrap mb-30">
+                                            <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
+                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                            <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
+                                        'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                            <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
+                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                            <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
+                                        'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                            <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
+                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                            <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
+                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                            <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
+                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                            <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
+                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                            <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
+                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                            <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
+                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                            <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
+                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                            <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
+                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                            <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
+                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                            <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
+                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                            <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
+                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -720,6 +779,23 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </span>
                                         <input type="checkbox" name="show_sats" id="show_sats_field" value="1" class="custom-switch-input"  {{($user->show_sats == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_sats_field"><span>SATs</span></label>
+                                        <span class="custom-switch-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+
+                                @php $disabled = (!$user->subscription('learningjourney'))? 'disabled' : ''; @endphp
+                                @php $is_disabled_style = (!$user->subscription('learningjourney'))? 'disabled-style' : ''; @endphp
+
+                                <div class="form-group custom-switches-stacked mb-15 {{$is_disabled_style}}">
+                                    <label class="custom-switch pl-0 custom-label mb-0">
+                                        <span class="display-icon-box">
+                                            <img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="Learning Journey">
+                                        </span>
+                                        <input type="checkbox" name="show_learning_journeys" id="show_learning_journeys_field" value="1" class="custom-switch-input"  {{($user->show_learning_journeys == 1)? 'checked' : ''}}/>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="show_learning_journeys_field"><span>Learning Journey</span></label>
                                         <span class="custom-switch-indicator"></span>
                                     </label>
                                 </div>

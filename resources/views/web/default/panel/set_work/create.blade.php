@@ -49,13 +49,16 @@
                                             @endphp
 
                                                 @if( $is_user_subscribed == true)
+                                                <input type="hidden" class="user-permissions" data-type="practice" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('courses')}}">
+                                                <input type="hidden" class="user-permissions" data-type="vocabulary" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('vocabulary')}}">
+                                                <input type="hidden" class="user-permissions" data-type="timestables" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('timestables')}}">
                                                     <input type="hidden" class="user-permissions" data-type="sats" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('sats')}}">
                                                     <input type="hidden" class="user-permissions" data-type="11plus" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
                                                     <input type="hidden" class="user-permissions" data-type="iseb" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
                                                     <input type="hidden" class="user-permissions" data-type="cat4" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
                                                     <input type="hidden" class="user-permissions" data-type="independent_exams" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
                                                     <label class="card-radio">
-                                                        <input type="radio" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
+                                                        <input type="radio" data-timestables_no="{{$childObj->timestables_no}}" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
                                                                 value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
                                                         <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
@@ -507,6 +510,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
                                 <div class="form-group rurera_common_hide_field timestables_modes_selection">
                                     <label class="input-label">Timestables Mode</label>
                                     <div class="input-group">
@@ -627,16 +631,17 @@
 
 
                                 <div class="form-group rurera_common_hide_field select_tables_field">
+
                                     <div class="questions-select-number">
                                         <ul class="d-flex justify-content-center flex-wrap mb-30">
                                             <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
                                                         'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
                                             <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
-                                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                                        'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
                                             <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
                                                         'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
                                             <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
-                                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                                        'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
                                             <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
                                                         'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
                                             <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
@@ -1829,10 +1834,17 @@
 
     $('body').on('change', '.assignemnet_types_selection', function (e) {
 
+        var current_selected_type = $(this).val();
+        if( $(this).hasClass('subscription-modal')){
+            return;
+        }
+
         $(".rurera_common_hide_field").addClass('rurera-hide');
         console.log('assignemnet_types_selection');
 
-        var current_selected_type = $(this).val();
+
+
+
         var fields_to_show_array = conditional_parent_data[current_selected_type+'_fields_array'];
         $(fields_to_show_array).each(function (index, field_to_show) {
             $("."+field_to_show).removeClass('rurera-hide');
@@ -1876,9 +1888,38 @@
 
     $('body').on('change', '.assignment-user-class', function (e) {
         var year_id = $(this).attr('data-year_id');
+        var timestables_no = $(this).data('timestables_no').toString().split(',').map(Number);
+        console.log(timestables_no);
+        $('input[name="ajax[new][tables_no][]"]').each(function () {
+            var val = parseInt($(this).val(), 10);
+            if ($.inArray(val, timestables_no) === -1) {
+                $(this).closest('li').addClass('disable-timetable noselect');
+            }
+        });
         $('.year_quiz_ajax_select')
             .val(year_id)
             .trigger('change');
+        var user_id = $(this).val();
+
+        $('.user-permissions[data-user_id="'+user_id+'"]').each(function(){
+            var data_type = $(this).attr('data-type');
+            var is_permission = $(this).val();
+
+            $('.assignemnet_types_selection[value="' + data_type + '"]').removeClass('disabled-style');
+            $('.assignemnet_types_selection[value="' + data_type + '"]').removeClass('subscription-modal');
+            $('.assignemnet_types_selection[value="' + data_type + '"]').attr('data-type', data_type);
+
+            if( is_permission != true) {
+                $('.assignemnet_types_selection[value="' + data_type + '"]').addClass('disabled-style');
+                $('.assignemnet_types_selection[value="' + data_type + '"]').addClass('subscription-modal');
+                $('.assignemnet_types_selection[value="' + data_type + '"]').attr('data-reason', 'module_access');
+                $('.assignemnet_types_selection[value="' + data_type + '"]').attr('data-type', 'update_package_confirm');
+                $('.assignemnet_types_selection[value="' + data_type + '"]').attr('data-id', user_id);
+                $('.sats-listing-card tr[data-assignment_type="'+data_type+'"]').addClass('rurera-hide');
+            }
+
+        });
+
     });
 
 
