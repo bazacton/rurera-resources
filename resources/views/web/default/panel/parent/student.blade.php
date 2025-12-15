@@ -887,18 +887,18 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </div>
                         </div>
                     @endif
-
-                    @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )
-                    <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
-                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
-                            Cancel Subscription
-                        </a>
-                    @else
-                        @if(isset( $user->userSubscriptions->id))
-                        <div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
+                    <div class="subscription-controls d-flex align-items-center justify-content-end">
+                        @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )
+                        <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
+                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
+                                Cancel Subscription
+                            </a>
+                        @else
+                            @if(isset( $user->userSubscriptions->id))
+                            <div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
+                            @endif
                         @endif
-                    @endif
-
+                    </div>
                 </div>
             </div>
         </div>
