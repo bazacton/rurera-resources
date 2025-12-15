@@ -699,7 +699,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     margin-top: 0;
     font-size: 14px;
     flex-wrap: wrap;
-    gap: 5px 10px;
+    gap: 8px 10px;
 }
 .password-info .item {
     display: inline-flex;
