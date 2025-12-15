@@ -137,8 +137,8 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     position: relative;
 }
 .notifications-wrap .checkbox input:checked + span {
-    background: #ea4c89;
-    border-color: #ea4c89;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 .notifications-wrap .checkbox input:checked + span::after {
     content: "✓";
