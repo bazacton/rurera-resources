@@ -1627,7 +1627,7 @@ Lms Responsive Style Start
     .login-password form {margin-bottom: 15px;}
     .edit-profile-top {gap: 15px;}
     .notification-card .text-right {text-align: center !important;}
-    .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto;}
+    .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto; width: 100%;}
     .home-sections:has(.blog-grid-card) .btn {padding-right: 10px; padding-left: 10px;}
     .referral-text a {padding: 10px;}
     .referral-link input.link-address {width: calc(100% - 82px);}
