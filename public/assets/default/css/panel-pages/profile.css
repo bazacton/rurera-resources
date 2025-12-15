@@ -294,7 +294,8 @@ address .info-list-label {color: #64748b;}
 .detail-body .subscribe-plan .subscribe-price span {color: #596bfd; font-weight: 500; font-size: 18px !important; margin-bottom: 5px;}
 .detail-body .subscribe-plan .subscribe-price .yearly-price {color: #64748b; font-size: 15px !important; font-weight: 400; margin-bottom: 0;}
 .subscription-controls {gap: 15px;}
-.subscription-controls .reset-btn {
+.subscription-controls .reset-btn,
+.subscription-controls .package-update-btn {
     gap: 6px;
     font-size: 14px;
     font-weight: normal;
