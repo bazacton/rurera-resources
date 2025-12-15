@@ -806,12 +806,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </ul>
                         </div>
                     </div>
-                    <a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
-                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji
-                    </a>
-                    <a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Pin
-                    </a>
+                    <div class="login-controls">
+                        <a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
+                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji
+                        </a>
+                        <a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
+                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Pin
+                        </a>
+                    </div>
 
                 </div>
                 <div class="edit-profile edit-profile-block mt-20 rurera-hide bg-white p-25">
