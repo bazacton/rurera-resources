@@ -1450,7 +1450,9 @@ nav li {
     gap: 8px;
     flex-wrap: wrap
 }
-
+.login-card .login-option .text-center a {
+    color: var(--primary);
+}
 .login-card .login-option>span {
     font-size: 18px;
     font-weight: 500;
