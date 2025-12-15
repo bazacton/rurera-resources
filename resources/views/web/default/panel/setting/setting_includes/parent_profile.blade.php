@@ -30,7 +30,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="edit-info-list">
-                                <h4 class="font-18 font-weight-500 pb-10 d-flex align-items-center">
+                                <h4 class="font-15 font-weight-500 pb-10 d-flex align-items-center">
                                     About you
                                     <a href="javascript:;" class="edit-profile-btn"> 
                                         <span class="edit-icon d-inline-flex align-items-center">
@@ -185,7 +185,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="edit-info-list">
-                                <h4 class="font-18 font-weight-500 pb-10 d-flex align-items-center">
+                                <h4 class="font-15 font-weight-500 pb-10 d-flex align-items-center">
                                     Change Password
                                     <a href="javascript:;" class="profile-login-btn">
                                         <span class="edit-icon d-inline-flex align-items-center">
