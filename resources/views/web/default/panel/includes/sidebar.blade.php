@@ -133,7 +133,7 @@
                 <li class="sidenav-item {{ (request()->is('quests') or request()->is('quests/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/quests" data-toggle="tooltip" data-placement="left" title="Quests">
                         <span class="sidenav-item-icon mr-20">
-                            <img src="/assets/default/img/sidebar/quest.svg" width="150" height="150" alt="quests">
+                            <img src="/assets/default/img/sidebar/quests.svg" width="150" height="150" alt="quests">
                         </span>
                     </a>
                     <a href="/quests" class="font-16 nav-sub-title">Quests</a>
