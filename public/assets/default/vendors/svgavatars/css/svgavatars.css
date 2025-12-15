@@ -165,6 +165,7 @@
 /***************** Global controls *******************/
 .svga-row.row-glob-controls {
 	border-top: 1px solid;
+	display: none;
 }
 #svga-glob-controls {
 	width: 100%;
