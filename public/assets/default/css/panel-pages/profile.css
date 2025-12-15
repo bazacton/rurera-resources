@@ -88,7 +88,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 15px;
 }
 .toggle-all {
@@ -97,7 +96,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     text-decoration: none;
 }
 .notifications-wrap .label {
-    margin: 25px 0 10px;
+    margin: 0 0 10px;
     font-size: 14px;
     font-weight: 600;
 }
