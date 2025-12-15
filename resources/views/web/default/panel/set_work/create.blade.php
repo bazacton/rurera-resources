@@ -794,7 +794,7 @@
                                    placeholder=""/>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group rurera-hide">
                             <label class="input-label">Practice Description</label>
                             <textarea
                                 name="ajax[new][description]"
