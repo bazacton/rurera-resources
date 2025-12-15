@@ -808,10 +808,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                     </div>
                     <div class="login-controls d-flex align-items-center justify-content-end ml-auto">
                         <a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
-                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji
+                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Cancel Emoji
                         </a>
                         <a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Pin
+                            <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Cancel Pin
                         </a>
                     </div>
 
