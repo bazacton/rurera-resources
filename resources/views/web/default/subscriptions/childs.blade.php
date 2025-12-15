@@ -91,12 +91,12 @@
                     <span class="fomr-label">Password</span>
                     <div class="input-field">
                         <input type="text" class="password-field rurera-req-field password" name="password" placeholder="Create a password">
-                        <div class="password-info">
-                            <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
-                            <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
-                            <span class="item rule-common"><i class="info-icon">✔</i> Not a common password</span>
-                        </div>
                         <a href="javascript:;" class="generatePassword" data-input_class="password-field">Generate</a>
+                    </div>
+                    <div class="password-info">
+                        <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
+                        <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
+                        <span class="item rule-common"><i class="info-icon">✔</i> Not a common password</span>
                     </div>
                 </div>
                 <div class="password-suggestions">
@@ -153,7 +153,7 @@
     $(document).ready(function () {
 
     $(".password").on("click", function () {
-        let wrapper = $(this).closest(".input-field");
+        let wrapper = $(this).closest(".form-group");
         wrapper.find(".password-info").css("display", "flex");
     });
 
@@ -161,7 +161,7 @@
 
         let $this = $(this);
         let val = $this.val();
-        let wrapper = $this.closest(".input-field");
+        let wrapper = $this.closest(".form-group");
 
         let hasNumber = /\d/.test(val);
         let commonPasswords = ["123456", "password", "qwerty", "111111"];
