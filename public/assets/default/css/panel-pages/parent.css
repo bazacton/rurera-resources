@@ -197,17 +197,8 @@ Assignments Table Style Start
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid var(--primary); height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
 .member-card-header .db-members .profile-dropdown:hover > a:before {-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 .member-card-header .db-members .profile-dropdown:hover ul {margin-top: 0;}
-.member-card-header .db-members .profile-dropdown li a {display: flex;
-    align-items: center;
-    color: #66667e;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 8px 10px;
-    border-radius: 5px;
-}
-.member-card-header .db-members .profile-dropdown li a:hover {
-    background-color: rgba(52, 52, 52, .03);
-}
+.member-card-header .db-members .profile-dropdown li a {display: flex; align-items: center; color: #66667e; font-size: 14px; font-weight: 400; padding: 8px 10px; border-radius: 5px;}
+.member-card-header .db-members .profile-dropdown li a:hover {background-color: rgba(52, 52, 52, .03);}
 .member-card-header h2 {color: var(--primary);}
 .member-card-header .dropdown .btn,
 .member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
@@ -266,14 +257,8 @@ Assignments Table Style Start
 .db-members:has(.rurera-button-loader) .rurera-pagination {display: none;}
 a.last-activity span {color: #bfbfbf;}
 a.last-activity span strong {color: #343434;}
-.rurera-tables-list .no-record-found .rurera-no-records {
-    display: block;
-    text-align: center;
-    padding: 0 0 30px;
-}
-.rurera-tables-list.mb-30 .no-record-found .rurera-no-records {
-    padding-bottom: 0;
-}
+.rurera-tables-list .no-record-found .rurera-no-records {display: block; text-align: center; padding: 0 0 30px;}
+.rurera-tables-list.mb-30 .no-record-found .rurera-no-records {padding-bottom: 0;}
 /*Dashboard members list style end*/
 /* Profile Select Gnder Style Start */
 .parent-panel .radio-field label {border: 1px solid #ddd; border-radius: 20px; min-width: 90px; background-color: #f3f1f1; cursor: pointer; padding: 8px 15px; justify-content: center;}
