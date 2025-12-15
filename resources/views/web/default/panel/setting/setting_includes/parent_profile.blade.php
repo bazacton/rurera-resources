@@ -11,7 +11,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
     <h2 class="section-title font-24">Account Settings</h2>
     <div class="row mt-15">
         <div class="col-12 user-profile-block">
-            <div class="user-detail mb-50 bg-white panel-border rounded-sm">
+            <div class="user-detail mb-30 bg-white panel-border rounded-sm">
                 <div class="detail-header mb-15">
                     <div class="info-media d-flex align-items-center flex-wrap">
 
