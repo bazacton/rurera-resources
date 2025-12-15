@@ -90,7 +90,7 @@
                 <div class="form-group">
                     <span class="fomr-label">Password</span>
                     <div class="input-field">
-                        <input type="text" class="password-field rurera-req-field" name="password" placeholder="Create a password">
+                        <input type="text" class="password-field rurera-req-field password" name="password" placeholder="Create a password">
                         <div class="password-info">
                             <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
                             <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
