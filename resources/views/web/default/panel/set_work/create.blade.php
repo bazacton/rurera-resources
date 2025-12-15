@@ -1888,6 +1888,12 @@
                 $(this).change()
             });
         }
+        if ($(".assignment-user-class").length > 0) {
+            $('.assignment-user-class:checked').each(function () {
+                $(this).change()
+            });
+        }
+
     });
 
 
