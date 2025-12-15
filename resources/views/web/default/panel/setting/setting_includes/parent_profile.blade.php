@@ -462,7 +462,7 @@ $(document).ready(function () {
     $(document).ready(function () {
 
     $(".password").on("click", function () {
-        let wrapper = $(this).closest(".password-wrapper");
+        let wrapper = $(this).closest(".input-field");
         wrapper.find(".password-info").css("display", "flex");
     });
 
@@ -470,7 +470,7 @@ $(document).ready(function () {
 
         let $this = $(this);
         let val = $this.val();
-        let wrapper = $this.closest(".password-wrapper");
+        let wrapper = $this.closest(".input-field");
 
         let hasNumber = /\d/.test(val);
         let commonPasswords = ["123456", "password", "qwerty", "111111"];
