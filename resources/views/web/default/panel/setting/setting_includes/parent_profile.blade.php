@@ -461,60 +461,65 @@ $(document).ready(function () {
 <script>
     $(document).ready(function () {
 
-    // Show info on click only
     $(".password").on("click", function () {
-        $(".password-info").css("display", "flex");
+        let wrapper = $(this).closest(".password-wrapper");
+        wrapper.find(".password-info").css("display", "flex");
     });
 
     $(".password").on("keyup", function () {
-        let val = $(this).val();
+
+        let $this = $(this);
+        let val = $this.val();
+        let wrapper = $this.closest(".password-wrapper");
+
         let hasNumber = /\d/.test(val);
         let commonPasswords = ["123456", "password", "qwerty", "111111"];
 
         // Rule 1 — Length
         if (val.length >= 7) {
-            $(".rule-length")
+            wrapper.find(".rule-length")
                 .removeClass("error").addClass("success")
                 .find(".info-icon").text("✔");
         } else {
-            $(".rule-length")
+            wrapper.find(".rule-length")
                 .removeClass("success").addClass("error")
                 .find(".info-icon").text("⚠");
         }
 
         // Rule 2 — Number
         if (hasNumber) {
-            $(".rule-number")
+            wrapper.find(".rule-number")
                 .removeClass("error").addClass("success")
                 .find(".info-icon").text("✔");
         } else {
-            $(".rule-number")
+            wrapper.find(".rule-number")
                 .removeClass("success").addClass("error")
                 .find(".info-icon").text("⚠");
         }
 
         // Rule 3 — Not common password
         if (!commonPasswords.includes(val)) {
-            $(".rule-common")
+            wrapper.find(".rule-common")
                 .removeClass("error").addClass("success")
                 .find(".info-icon").text("✔");
         } else {
-            $(".rule-common")
+            wrapper.find(".rule-common")
                 .removeClass("success").addClass("error")
                 .find(".info-icon").text("⚠");
         }
 
-        // Input error border if any rule fails
+        // Input error border
         if (
             val.length < 7 ||
             !hasNumber ||
             commonPasswords.includes(val)
         ) {
-            $(".password").addClass("input-error");
+            $this.addClass("input-error");
         } else {
-            $(".password").removeClass("input-error");
+            $this.removeClass("input-error");
         }
     });
+
 });
 
 </script>
