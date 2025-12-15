@@ -780,7 +780,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                         </a>
                     </h2>
 
-                    <div class="student-profile-holder profile-view-data d-flex align-items-center">
+                    <div class="student-profile-holder profile-view-data d-flex align-items-center flex-wrap">
                     <div class="profile-inner mb-10">
                         <div class="profile-header">
                             <h3>{{$user->get_full_name()}}</h3>
@@ -806,7 +806,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </ul>
                         </div>
                     </div>
-                    <div class="login-controls d-flex align-items-center justify-content-end">
+                    <div class="login-controls d-flex align-items-center justify-content-end ml-auto">
                         <a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
                             <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji
                         </a>
