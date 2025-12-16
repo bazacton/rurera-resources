@@ -420,7 +420,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</span>
 							</a>
 						</li>
-						<li>
+						{{--<li>
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
 								<span class="info-list-label font-16">
 									Hide Games
@@ -431,7 +431,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
-						</li>
+						</li>--}}
 						<li>
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
 								<span class="info-list-label font-16">
@@ -475,7 +475,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</div>
 							</div>
 
-							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+							{{--<div class="col-6 col-sm-12 col-md-6 col-lg-6">
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
 										<input type="checkbox" name="hide_games" id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
@@ -483,7 +483,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<label class="custom-switch-description mb-0 cursor-pointer" for="hide_games_field"><span>Hide Games</span></label>
 									</label>
 								</div>
-							</div>
+							</div>--}}
 
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
 								<div class="form-group custom-switches-stacked mb-15">
@@ -897,7 +897,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										</div>
 									</div>
 
-									<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+									{{--<div class="col-6 col-sm-12 col-md-6 col-lg-6">
 
 										<div class="form-group custom-switches-stacked mb-15">
 											<label class="custom-switch pl-0">
@@ -908,7 +908,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													   for="hide_games_field"><span>Hide Games</span></label>
 											</label>
 										</div>
-									</div>
+									</div>--}}
 
 									<div class="col-6 col-sm-12 col-md-6 col-lg-6">
 

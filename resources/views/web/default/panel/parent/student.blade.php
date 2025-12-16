@@ -554,7 +554,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 </span>
                             </a>
                         </li>
-                        <li>
+                        {{--<li>
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Games
@@ -565,7 +565,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     <em class="font-weight-500">Edit</em>
                                 </span>
                             </a>
-                        </li>
+                        </li>--}}
                         <li>
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
@@ -713,7 +713,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 </div>
                             </div>
 
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
                                 @php $disabled = (!$user->subscription('bookshelf'))? 'disabled' : ''; @endphp
                                 @php $is_disabled_style = (!$user->subscription('bookshelf'))? 'disabled-style' : ''; @endphp
@@ -728,7 +728,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         <span class="custom-switch-indicator"></span>
                                     </label>
                                 </div>
-                            </div>
+                            </div>--}}
 
 
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -925,7 +925,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-50">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="info-text">
                     <h3 class="font-18 font-weight-500 mb-5">Subscription Details</h3>
@@ -937,7 +937,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 <div class="edit-info-list d-flex align-items-center flex-wrap">
                     @if( !isset( $user->userSubscriptions->id))<a href="javascript:;" class="membership-btn font-16 float-right package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$user->id}}">+ Subscription</a>@endif
                     @if( isset( $user->userSubscriptions->id))
-                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-0">
+                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
                             <div class="package-block">
                                 <span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
                                 <div class="subscribe-title">
