@@ -1749,6 +1749,7 @@
 
         practice_fields_array: [
             //'year_group_field',
+            'no_of_questions_field',
             'courses_fields',
             'practice-quiz-topics-list',
             'no_of_attemptes_field',
