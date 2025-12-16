@@ -88,7 +88,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 .toggle-all {
     font-size: 14px;
