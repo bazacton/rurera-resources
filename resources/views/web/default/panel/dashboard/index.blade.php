@@ -334,7 +334,7 @@
 @if( $continueTests->count() > 0 || $assignmentsArray->count() > 0)
 
 	<div class="quests-list quests-learning mt-30">
-		<div class="section-title text-left mb-30 d-flex flex-wrap justify-content-between align-items-center mt-5">
+		<div class="section-title text-left mb-15 d-flex flex-wrap justify-content-between align-items-center mt-5">
 			<h2 class="font-22">Continue Learning</h2>
         </div>
 		<section class="dashboard">
@@ -396,7 +396,7 @@
 
 <div class="quests-list quests-learning mt-30">
 	@if( $quests->count() > 0)
-    <div class="section-title text-left mb-30">
+    <div class="section-title text-left mb-15">
         <h2 class="font-22">Weekly Learning Journeys</h2>
     </div>
 	<ul>
