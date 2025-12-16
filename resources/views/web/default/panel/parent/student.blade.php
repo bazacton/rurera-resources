@@ -305,13 +305,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 
                                         @foreach($categories as $category)
                                         @if(!empty($category->subCategories) and count($category->subCategories))
-                                        <optgroup label="{{  $category->title }}">
                                             @foreach($category->subCategories as $subCategory)
                                             <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{
                                                 $subCategory->title }}
                                             </option>
                                             @endforeach
-                                        </optgroup>
                                         @else
                                         <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($user)
                                                 and $user->year_id == $subCategory->id) selected="selected" @endif>{{

@@ -350,11 +350,9 @@
                                                         <option disabled>Choose Year</option>
                                                         @foreach($categories as $category)
                                                         @if(!empty($category->subCategories) and count($category->subCategories))
-                                                        <optgroup label="{{  $category->title }}">
                                                             @foreach($category->subCategories as $subCategory)
                                                             <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
                                                             @endforeach
-                                                        </optgroup>
                                                         @endif
                                                         @endforeach
                                                     </select>

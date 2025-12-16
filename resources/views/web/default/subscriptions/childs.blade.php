@@ -54,14 +54,12 @@
 
                         @foreach($categories as $category)
                         @if(!empty($category->subCategories) and count($category->subCategories))
-                        <optgroup label="{{  $category->title }}">
                             @foreach($category->subCategories as $subCategory)
                             <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
                                 category_id == $subCategory->id) selected="selected" @endif>{{
                                 $subCategory->title }}
                             </option>
                             @endforeach
-                        </optgroup>
                         @else
                         <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
                                 and $class->category_id == $category->id) selected="selected" @endif>{{
@@ -73,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="form-group">

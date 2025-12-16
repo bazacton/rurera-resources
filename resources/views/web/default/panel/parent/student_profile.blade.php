@@ -50,7 +50,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         }
         .emoji-icons .emoji-icon {
             height: 25px;
-            width: 25px; 
+            width: 25px;
         }
         .student-info ul li {
             margin-bottom: 6px;
@@ -87,7 +87,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 		</div>
 	</div>
 	<div class="detail-body">
-	
+
 		<div class="row mb-50">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
 				<div class="info-text">
@@ -158,8 +158,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 						</li>
 					</ul>
 					<div class="edit-profile edit-profile-block mt-10 rurera-hide">
-					
-					
+
+
 						<form class="child-edit-form" method="post" action="javascript:;">
 						{{ csrf_field() }}
 						<div class="row">
@@ -171,7 +171,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<div class="form-group">
 									<span class="fomr-label">Student's last name</span>
@@ -180,8 +180,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</div>
 								</div>
 							</div>
-							
-							
+
+
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<div class="form-group">
 									<span class="fomr-label">Display name</span>
@@ -190,8 +190,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</div>
 								</div>
 							</div>
-							
-							
+
+
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<label>Preference</label>
 								<div class="select-field">
@@ -210,13 +210,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 
 										@foreach($categories as $category)
 										@if(!empty($category->subCategories) and count($category->subCategories))
-										<optgroup label="{{  $category->title }}">
 											@foreach($category->subCategories as $subCategory)
 											<option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{
 												$subCategory->title }}
 											</option>
 											@endforeach
-										</optgroup>
 										@else
 										<option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($user)
 												and $user->year_id == $subCategory->id) selected="selected" @endif>{{
@@ -273,7 +271,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</span>
 							</a>
 						</li>
-						
+
 						<li>
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
 								<span class="info-list-label font-16">
@@ -299,7 +297,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							</a>
 						</li>
 					</ul>
-					
+
 					<div class="edit-profile edit-profile-block mt-10 rurera-hide">
 					<form class="child-edit-form" method="post" action="javascript:;">
 						{{ csrf_field() }}
@@ -374,9 +372,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
 									</div>
 								</div>
-							</div>							
+							</div>
 						</div>
-							
+
 						<div class="edit-profile-controls">
 							<input type="hidden" name="user_id" value="{{$user->id}}">
 							<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
@@ -452,7 +450,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 						{{ csrf_field() }}
 						<div class="row">
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-							
+
 							<div class="form-group custom-switches-stacked mb-15">
 								<label class="custom-switch pl-0">
 									<input type="checkbox" name="hide_timestables"
@@ -463,9 +461,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</label>
 							</div>
 							</div>
-							
+
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-								
+
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
 										<input type="checkbox" name="hide_spellings"
@@ -476,7 +474,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</label>
 								</div>
 							</div>
-							
+
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
@@ -486,7 +484,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</label>
 								</div>
 							</div>
-							
+
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
@@ -497,7 +495,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</div>
 							</div>
 						</div>
-							
+
 						<div class="edit-profile-controls">
 							<input type="hidden" name="user_id" value="{{$user->id}}">
 							<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
@@ -525,7 +523,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							</span>
 						</a>
 					</h2>
-				
+
 					<div class="student-profile-holder profile-view-data">
 					<div class="profile-inner">
 						<div class="profile-header">
@@ -559,7 +557,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 					<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
 						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
 						Reset Pin
-					</a>			
+					</a>
 				</div>
 				<div class="edit-profile edit-profile-block mt-10 rurera-hide">
 						<form class="child-edit-form" method="post" action="javascript:;">
@@ -580,7 +578,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="edit-profile-controls">
 							<input type="hidden" name="user_id" value="{{$user->id}}">
 							<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
@@ -591,7 +589,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			</div>
 		</div>
 		</div>
-		
+
 		<div class="row mb-50">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
 				<div class="info-text">
@@ -615,7 +613,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span>
 									<span class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Monthly' : 'Monthly'}}</span>
 									<span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
-											
+
 								</div>
 								<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-12">
@@ -627,8 +625,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</div>
 							</div>
 						@endif
-						
-						@if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
+
+						@if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )
 						<a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
 							<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
 										&nbsp;&nbsp;Cancel Subscription
@@ -639,13 +637,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							<div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
 							@endif
 						@endif
-						
+
 					</div>
 			</div>
 		</div>
-								
-								
-					
+
+
+
 		    @if( isset( $user->card_last_four ) && $user->card_last_four != '')
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -699,7 +697,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			@endif
                 </div>
             </div>
-			
+
 			<div class="col-12 user-edit-profile rurera-hide">
             <div class="edit-profile mb-50">
                 <div class="row">
@@ -709,7 +707,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="edit-profile-top d-flex align-items-center flex-wrap justify-content-between mb-50">
                                     <div class="top-heading">
                                         <h5 class="font-16 font-weight-500">
-                                            
+
                                         </h5>
                                     </div>
                                     <div class="edit-profile-controls">
@@ -733,7 +731,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     </div>
                                     <div class="mb-0 mt-20">
                                         <div class="row">
-										
+
 										<div class="col-12">
 											<div class="edit-element-title mb-20">
 												<h6 class="font-weight-500">
@@ -741,7 +739,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</h6>
 											</div>
 										</div>
-										
+
 										<div class="col-6 col-lg-6 col-md-6 form-group">
 											<div class="form-group">
 												<span class="fomr-label">Student's first name</span>
@@ -750,7 +748,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="col-6 col-lg-6 col-md-6 form-group">
 											<div class="form-group">
 												<span class="fomr-label">Student's last name</span>
@@ -759,8 +757,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</div>
 											</div>
 										</div>
-										
-										
+
+
 										<div class="col-6 col-lg-6 col-md-6 form-group">
 											<div class="form-group">
 												<span class="fomr-label">Display name</span>
@@ -778,13 +776,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 
 												  @foreach($categories as $category)
 												  @if(!empty($category->subCategories) and count($category->subCategories))
-												  <optgroup label="{{  $category->title }}">
 													  @foreach($category->subCategories as $subCategory)
 													  <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{
 														  $subCategory->title }}
 													  </option>
 													  @endforeach
-												  </optgroup>
 												  @else
 												  <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($user)
 														  and $user->year_id == $subCategory->id) selected="selected" @endif>{{
@@ -795,10 +791,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											  </select>
 											</div>
 										</div>
-										
+
 									</div>
 								</div>
-								
+
 								<div class="mb-0 mt-20">
 									<div class="row">
 										<div class="col-12">
@@ -861,12 +857,12 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</select>
 											</div>
 										</div>
-										
+
 										</div>
 									</div>
 									<div class="mb-0 mt-20">
 										<div class="row">
-										
+
 										<div class="col-12">
 											<div class="edit-element-title mb-20">
 												<h6 class="font-weight-500">
@@ -874,9 +870,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</h6>
 											</div>
 										</div>
-										
+
 										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-										
+
 										<div class="form-group custom-switches-stacked mb-15">
 											<label class="custom-switch pl-0">
 												<input type="checkbox" name="hide_timestables"
@@ -887,9 +883,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											</label>
 										</div>
 									</div>
-									
+
 									<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-										
+
 										<div class="form-group custom-switches-stacked mb-15">
 											<label class="custom-switch pl-0">
 												<input type="checkbox" name="hide_spellings"
@@ -900,9 +896,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											</label>
 										</div>
 									</div>
-									
+
 									<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-										
+
 										<div class="form-group custom-switches-stacked mb-15">
 											<label class="custom-switch pl-0">
 												<input type="checkbox" name="hide_games"
@@ -913,9 +909,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											</label>
 										</div>
 									</div>
-									
+
 									<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-										
+
 										<div class="form-group custom-switches-stacked mb-15">
 											<label class="custom-switch pl-0">
 												<input type="checkbox" name="hide_books"
@@ -926,7 +922,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											</label>
 										</div>
 									</div>
-											
+
 											<div class="col-12">
                                                 <div class="edit-element-title mb-20">
                                                     <h6 class="font-weight-500">
@@ -953,17 +949,17 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												<label>Login Emojis</label>
 												{!! $emoji_response !!}
 												<a class="btn btn-primary d-block mt-15 regenerate-emoji" data-user_id="{{$user->id}}" href="javascript:;">Generate Emoji</a>
-												
+
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Login Pin</label>
 												<div>{{$user->login_pin}}</div>
 												<a class="btn btn-primary d-block mt-15 regenerate-pin" data-user_id="{{$user->id}}" href="javascript:;">Generate Pin</a>
                                             </div>
-											
+
                                         </div>
                                     </div>
-									
+
 									<input type="hidden" name="user_id" value="{{$user->id}}">
 									<div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group mt-20 mb-0">
@@ -979,7 +975,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 </div>
             </div>
         </div>
-		
+
 		<div class="modal fade" id="profile-image-modal" tabindex="-1" role="dialog" aria-labelledby="profile-image-modal">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
@@ -990,13 +986,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 				</div>
 			</div>
 		</div>
-			
+
 			<script>
 			/*$(document).on('click', '.edit-profile-btn', function (e) {
 				$(".user-view-profile").addClass('rurera-hide');
 				$(".user-edit-profile").removeClass('rurera-hide');
 			});*/
-			
+
 			$(document).on('click', '.edit-profile-btn', function (e) {
 				$(this).closest('.edit-info-list').find('.profile-view-data').addClass('rurera-hide');
 				$(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('rurera-hide');
@@ -1006,9 +1002,9 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 				$(this).closest('.edit-info-list').find('.profile-view-data').removeClass('rurera-hide');
 				$(this).closest('.edit-info-list').find('.edit-profile-block').addClass('rurera-hide');
 			});
-			
+
 			var profileSubmission = null;
-			
+
 			$(document).on('click', '.profile-save-btn', function (e) {
 				var user_id = '{{$user->id}}';
 				var thisObj = $(this);
@@ -1045,27 +1041,27 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							rurera_remove_loader($('.user-profile-block'), 'div');
 						}
 					});
-						
+
 						//location.reload();
 					}
 				});
-				
+
 			});
-			
-			
-			
+
+
+
 
 			/*$(document).on('click', '.cancel-edit-button', function (e) {
 				$(".user-view-profile").removeClass('rurera-hide');
 				$(".user-edit-profile").addClass('rurera-hide');
 			});*/
-			
+
 			var user_avatar_settings = '<?php echo $avatar_settings; ?>';
 			var avatar_color_settings = '<?php echo $avatar_color_settings; ?>';
 
 			user_avatar_settings = JSON.parse(user_avatar_settings);
 			avatar_color_settings = JSON.parse(avatar_color_settings);
-			
+
 			var imageClicked = false;
 			$(document).on('click', '.profile-image-btn', function (e) {
 				$("#profile-image-modal").modal('show');
@@ -1076,7 +1072,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 					imageClicked = true;
 				}
 			});
-			
+
 			function refresh_preference_field() {
 				$('.preference_field option').removeAttr('disabled');
 				$('.preference_field').each(function () {
@@ -1093,6 +1089,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			});
 			refresh_preference_field();
 			resetRureraDatePickers();
-			
-			
+
+
 	</script>
