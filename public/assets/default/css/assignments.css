@@ -219,6 +219,9 @@
     border-radius: 6px;
 }
 
+.topics-table-holder {
+    background-color: #fff;
+}
 .topics-table {
     width: 100%;
     border-collapse: collapse;
@@ -234,7 +237,7 @@
 .topics-table th {
     font-weight: bold;
     color: #555;
-    background: #fafafa;
+    background: #fff;
 }
 .topics-table tbody tr:hover {
     background: #f9fbff;
