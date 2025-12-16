@@ -937,7 +937,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 <div class="edit-info-list d-flex align-items-center flex-wrap">
                     @if( !isset( $user->userSubscriptions->id))<a href="javascript:;" class="membership-btn font-16 float-right package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$user->id}}">+ Subscription</a>@endif
                     @if( isset( $user->userSubscriptions->id))
-                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
+                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-0">
                             <div class="package-block">
                                 <span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
                                 <div class="subscribe-title">
