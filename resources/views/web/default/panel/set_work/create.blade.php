@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <link rel="stylesheet" href="/assets/admin/vendor/daterangepicker/daterangepicker.min.css">
 <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
+<link rel="stylesheet" href="/assets/default/css/css-stars.css">
+<link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css">
 <style>
     .wizard-steps{display:none;}
     .wizard-steps.active{display:block;}
@@ -40,7 +42,7 @@
                                             @foreach($childs as $childLinkObj)
                                             @php $childObj = $childLinkObj->user; @endphp
                                             @php
-                                            $userSubscriptions = $childObj->userSubscriptions;
+                                            $userSubscriptions = isset($childObj->id)? $childObj->userSubscriptions : '';
                                             $is_user_subscribed = isset( $userSubscriptions->id )? true : false;
                                             if($is_user_subscribed == true){
                                                 $child_count++;
@@ -68,7 +70,7 @@
                                                         </span>
                                                     </label>
                                                 @else
-                                                <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{$childObj->id}}">
+                                                <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{isset($childObj->id)? $childObj->id : 0}}">
                                                     <span class="radio-btn disabled-style"><i class="las la-check"></i>
                                                         <div class="card-icon">
                                                         <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
@@ -225,6 +227,17 @@
                                                             </span>
                                         </label>
 
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_topic_type]"
+                                               class="assignemnet_types_selection" value="book">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/books.png">
+                                                                <h3>Book</h3>
+                                                            </div>
+
+                                                            </span>
+                                    </label>
                                     <label class="card-radio rurera-hide">
                                         <input type="radio" name="ajax[new][assignment_topic_type]"
                                                class="assignemnet_types_selection" value="assignment">
@@ -786,6 +799,15 @@
                             </div>
                         </div>
 
+                        <div class="form-group rurera_common_hide_field no_of_books_field">
+                            <label class="input-label">No of Books</label>
+                            <input type="number"
+                                   name="ajax[new][no_of_books]" min="1"
+                                   value="{{ !empty($assignmentObj) ? $assignmentObj->no_of_books : 1 }}"
+                                   class="js-ajax-title form-control rurera-req-field"
+                                   placeholder=""/>
+                        </div>
+
                         <div class="form-section rurera-hide">
                             <h2 class="section-title">General information</h2>
                         </div>
@@ -1130,82 +1152,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-12">
-            <div class="select-topics">
-                <h3 class="font-24 mb-15">2. Select topics</h3>
-                <div class="selected-topics" id="selectedTopics">
-                    <span class="count">0 topics selected</span>
-                    <div class="chips"></div>
-                </div>
-                <!-- Top buttons -->
-                <div class="top-actions">
-                    <button class="btn">Full exam curriculum</button>
-                    <button class="btn active">✓ All topics</button>
-                </div>
 
-                <!-- Subject filters -->
-                <div class="subject-filters">
-                    <button class="chip">Algebra</button>
-                    <button class="chip">Data</button>
-                    <button class="chip active">✓ Geometry</button>
-                    <button class="chip">Measurement</button>
-                    <button class="chip">Number</button>
-                    <button class="chip">Ratio and Proportion</button>
-                    <div class="select-holder">
-                        <select class="select">
-                            <option>All performance levels</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="topics-table-holder">
-                    <table class="topics-table">
-                        <thead>
-                            <tr>
-                                <th>Select</th>
-                                <th>Topic</th>
-                                <th>Subtopic</th>
-                                <th>Performance</th>
-                                <th>Last seen</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox" class="topic-check" data-topic="Angles"></td>
-                                <td>Angles</td>
-                                <td>Properties of Shape</td>
-                                <td>Not enough data</td>
-                                <td>Not started</td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox" class="topic-check" data-topic="Triangles"></td>
-                                <td>Triangles</td>
-                                <td>Properties of Shape</td>
-                                <td>Needs Practice</td>
-                                <td>16/12/2025</td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox" class="topic-check" data-topic="Quadrilaterals"></td>
-                                <td>Quadrilaterals</td>
-                                <td>Properties of Shape</td>
-                                <td>Not enough data</td>
-                                <td>Not started</td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox" class="topic-check" data-topic="Polygons and Circles"></td>
-                                <td>Polygons and Circles</td>
-                                <td>Properties of Shape</td>
-                                <td>Not enough data</td>
-                                <td>Not started</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-            </div>
-        </div>
     </div>
 </div>
 <div class="modal fade lms-choose-membership" id="assignmentCreateModal" tabindex="-1" aria-labelledby="assignmentCreateModalLabel" aria-hidden="true">
@@ -1595,11 +1542,13 @@
         });
         $('body').on('change', '.year_quiz_ajax_select', function (e) {
             var year_id = $(this).val();
+            var user_id = $(".assignment-user-class:checked").val();
             var quiz_type = $(".assignemnet_types_selection:checked").val();
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
                 var vocabulary_type = $(".vocabulary_type:checked").val();
             }
+
             var thisObj = $(this);//$(".quiz-ajax-fields");
             $(".yeargroup-ajax-fields").html('');
             rurera_loader(thisObj, 'button');
@@ -1609,7 +1558,7 @@
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                data: {"quiz_type": quiz_type, "quiz_category": vocabulary_type, "year_id": year_id},
+                data: {"quiz_type": quiz_type, "quiz_category": vocabulary_type, "year_id": year_id, "student_id": user_id},
                 success: function (return_data) {
                     if (quiz_type == 'practice') {
                         $(".practice-quiz-ajax-fields").html(return_data);
@@ -1645,6 +1594,7 @@
         $('body').on('change', '.assignment_subject_check', function (e) {
             var subject_id = $(this).val();
             var thisObj = $(this);
+            var user_id = $(".assignment-user-class:checked").val();
             rurera_loader($(".practice-quiz-topics-list"), 'div');
             jQuery.ajax({
                 type: "GET",
@@ -1652,7 +1602,7 @@
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                data: {"subject_id": subject_id},
+                data: {"subject_id": subject_id, "student_id": user_id},
                 success: function (return_data) {
                     rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
                     $(".practice-quiz-topics-list").html(return_data);
@@ -1905,6 +1855,11 @@
 
         ],
 
+        book_fields_array: [
+            //'year_group_field',
+            'no_of_books_field',
+
+        ],
     };
 
 
@@ -2066,6 +2021,7 @@
             updateSelectedTopics();
         }
     });
+
 </script>
 
 @endpush
