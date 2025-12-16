@@ -306,7 +306,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
         <div class="col-12">
             <div class="notifications-wrap mb-30">
                 <div class="notifications-header">
-                    <h2 class="font-24">Alerts & Notifications</h2>
+                    <h2 class="font-22">Alerts & Notifications</h2>
                     <a href="#" class="toggle-all">Toggle all</a>
                 </div>
 
