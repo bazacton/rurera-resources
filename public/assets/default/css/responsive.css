@@ -1354,6 +1354,10 @@ Lms Responsive Style Start
         align-items: center;
         justify-content: space-between;
     }
+    .student-profile-holder {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
 }
 @media screen and (max-width: 575px) {
