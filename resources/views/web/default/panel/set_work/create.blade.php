@@ -1132,7 +1132,7 @@
         </div>
         <div class="col-12">
             <div class="select-topics">
-                <h2>2. Select topics</h2>
+                <h2 class="font-24 mb-15">2. Select topics</h2>
                 <!-- Top buttons -->
                 <div class="top-actions">
                     <button class="btn">Full exam curriculum</button>
