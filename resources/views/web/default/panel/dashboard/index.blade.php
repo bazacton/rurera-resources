@@ -168,6 +168,36 @@
                     </div>
                 </div>
             </div>
+            @if( $LearningJourneys->count() > 0)
+            <div class="col-12">
+                <div class="prep-plan">
+                    <div class="section-title text-left mb-30">
+                        <h2 class="font-22">Learning Journey</h2>
+                    </div>
+                    @foreach( $LearningJourneys as $learningJourneyObj)
+                        <div class="plan-item yellow">
+                            <div class="progress-bar" style="width: 25%;"></div>
+                            <div class="plan-inner">
+                                <div class="subject-title">
+                                    <span class="icon-box">@if($learningJourneyObj->subject->icon_code != '')
+                                        {!! $learningJourneyObj->subject->icon_code !!}
+                                    @else
+                                        <img src="{!! $learningJourneyObj->subject->thumbnail !!}" alt="learning image" width="50" height="50">
+                                    @endif
+                                    </span>
+                                    {{$learningJourneyObj->subject->getTitleAttribute()}}
+                                </div>
+                                <div class="plan-progress">
+                                    <strong>1<em>/4</em></strong>
+                                    <span>islands done this week</span>
+                                </div>
+                            </div>
+                            <span class="arrow"><a href="/learning-journey/{{$learningJourneyObj->subject->slug}}">&#10140;</a></span>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
             <!-- progress-learning -->
             <div class="col-12">
                 <div class="progress-learning">
