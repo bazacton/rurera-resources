@@ -50,7 +50,7 @@ Sub Pages Style
 .simple-table.text-left thead tr th {text-align: left; padding-left: 20px; }
 .simple-table thead tr th:first-child {padding-left: 0;}
 .panel-section-card .simple-table thead tr th:first-child {padding-left: .75rem;}
-.panel-content-holder .section-title::selection {
+.panel-content-holder::selection {
     background: none;
 }
 /* Timestable Freedom Mode End */
