@@ -44,7 +44,7 @@
                 </div>
             </div>
         </li>
-        <li>
+        {{--<li>
             <div class="assignments">
                 <strong>
                     <img src="/assets/default/img/sidebar/games.svg" alt="games">
@@ -55,7 +55,7 @@
 					@endif
                 </strong>
             </div>
-        </li>
+        </li>--}}
 
         <li class="dropdown dropdown-list-toggle">
             <strong>
