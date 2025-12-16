@@ -648,7 +648,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     </span>
                                     <input type="checkbox" name="show_timestables" id="show_timestables_field" value="1" class="custom-switch-input"  {{($user->show_timestables == 1)? 'checked' : ''}}/>
                                     <label class="custom-switch-description mb-0 cursor-pointer mb-0" for="show_timestables_field">Timestables</label>
-                                    <span class="custom-switch-indicator"></span>
+                                    @if(!$user->subscription('timestables'))
+                                        <span class="update-subscription-text"><a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                    @else
+                                        <span class="custom-switch-indicator"></span>
+                                    @endif
                                 </label>
                             </div>
 
@@ -708,7 +712,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </span>
                                         <input type="checkbox" name="show_spellings" id="show_spellings_field" value="1" class="custom-switch-input"  {{($user->show_spellings == 1)? 'checked' : ''}}/>
                                         <label class="custom-switch-description mb-7 cursor-pointer mb-0" for="show_spellings_field">Spellings</label>
-                                        <span class="custom-switch-indicator"></span>
+                                        @if(!$user->subscription('vocabulary'))
+                                            <span class="update-subscription-text"><a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                        @else
+                                            <span class="custom-switch-indicator"></span>
+                                        @endif
                                     </label>
                                 </div>
                             </div>
@@ -743,7 +751,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </span>
                                         <input type="checkbox" name="show_books" id="show_books_field" value="1" class="custom-switch-input"  {{($user->show_books == 1)? 'checked' : ''}}/>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_books_field"><span>Books</span></label>
-                                        <span class="custom-switch-indicator"></span>
+                                        @if(!$user->subscription('bookshelf'))
+                                            <span class="update-subscription-text"><a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                        @else
+                                            <span class="custom-switch-indicator"></span>
+                                        @endif
                                     </label>
                                 </div>
                             </div>
@@ -760,7 +772,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </span>
                                         <input type="checkbox" name="show_enterance_exams" id="show_enterance_exams_field" value="1" class="custom-switch-input"  {{($user->show_enterance_exams == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_enterance_exams_field"><span>Enterance Exams</span></label>
-                                        <span class="custom-switch-indicator"></span>
+                                        @if(!$user->subscription('11plus'))
+                                            <span class="update-subscription-text"><a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                        @else
+                                            <span class="custom-switch-indicator"></span>
+                                        @endif
                                     </label>
                                 </div>
                             </div>
@@ -770,6 +786,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 @php $is_disabled = (!$user->subscription('sats'))? 'disabled' : ''; @endphp
                                 @php $is_disabled_style = (!$user->subscription('sats'))? 'disabled-style' : ''; @endphp
 
+
                                 <div class="form-group custom-switches-stacked mb-15">
                                     <label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
                                         <span class="display-icon-box">
@@ -777,7 +794,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </span>
                                         <input type="checkbox" name="show_sats" id="show_sats_field" value="1" class="custom-switch-input"  {{($user->show_sats == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_sats_field"><span>SATs</span></label>
-                                        <span class="custom-switch-indicator"></span>
+                                        @if(!$user->subscription('sats'))
+                                            <span class="update-subscription-text"><a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                        @else
+                                            <span class="custom-switch-indicator"></span>
+                                        @endif
                                     </label>
                                 </div>
                             </div>
@@ -794,7 +815,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </span>
                                         <input type="checkbox" name="show_learning_journeys" id="show_learning_journeys_field" value="1" class="custom-switch-input"  {{($user->show_learning_journeys == 1)? 'checked' : ''}}/>
                                         <label class="custom-switch-description mb-0 cursor-pointer" for="show_learning_journeys_field"><span>Learning Journey</span></label>
-                                        <span class="custom-switch-indicator"></span>
+                                        @if(!$user->subscription('learningjourney'))
+                                            <span class="update-subscription-text"><a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                        @else
+                                            <span class="custom-switch-indicator"></span>
+                                        @endif
                                     </label>
                                 </div>
                             </div>
