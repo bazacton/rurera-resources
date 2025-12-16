@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 
 <div class="timestables-mode-content">
-<div class="section-title mb-20" itemscope itemtype="https://schema.org/Article">
+<div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
     <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> School Zone</h2>
 </div>
 <ul class="tests-list school-zone-list mb-30">
