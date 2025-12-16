@@ -178,6 +178,46 @@
 /* Timestable Heatmap Table style on set-work-page End */
 
 /*Select Topic Style start*/
+.selected-topics {
+    background: #dfeefe;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.selected-topics .count {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.selected-topics .chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.selected-topics .chip {
+    background: #fff;
+    border: 1px solid #4b84f0;
+    color: #2b6ef3;
+    padding: 6px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.selected-topics .chip button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
 .select-topics .btn {
     border: 1px solid #ccc;
     background: #fff;
