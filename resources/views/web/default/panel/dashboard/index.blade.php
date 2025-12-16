@@ -34,7 +34,7 @@
             <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="dashboard-banner image" class="img-cover">
         </div>
     </div>
-    <div class="mt-15">
+    <div class="mt-15 rurera-hide">
         <div class="section-title text-left mb-30">
             <h2 class="font-22">Subjects Progress <a href="#" class="text-primary">How we calculated?</a></h2>
         </div>
