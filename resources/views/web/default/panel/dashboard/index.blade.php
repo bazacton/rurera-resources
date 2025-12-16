@@ -201,7 +201,7 @@
             </div>
             @endif
             <!-- progress-learning -->
-            <div class="col-12">
+            <div class="col-12 rurera-hide">
                 <div class="progress-learning">
                     <div class="progress-learning-header">
                         <h2 class="font-22">In progress learning content</h2>
