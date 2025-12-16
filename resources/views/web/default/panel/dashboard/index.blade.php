@@ -175,6 +175,8 @@
                         <h2 class="font-22">Learning Journey</h2>
                     </div>
                     @foreach( $LearningJourneys as $learningJourneyObj)
+                        @php $level_stages = $learningJourneyObj->learningJourneyStages->pluck('id')->toArray();
+			            $completed_stages = auth()->user()->studentJourneyItems->where('status', 'completed')->whereIn('learning_journey_item_id', $level_stages)->count() @endphp
                         <div class="plan-item yellow">
                             <div class="progress-bar" style="width: 25%;"></div>
                             <div class="plan-inner">
@@ -188,7 +190,7 @@
                                     {{$learningJourneyObj->subject->getTitleAttribute()}}
                                 </div>
                                 <div class="plan-progress">
-                                    <strong>1<em>/4</em></strong>
+                                    <strong>{{$completed_stages}}/<em>{{$learningJourneyObj->learningJourneyStages->count()}}</em></strong>
                                     <span>islands done this week</span>
                                 </div>
                             </div>
