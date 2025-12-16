@@ -184,6 +184,9 @@
     padding: 8px 14px;
     border-radius: 8px;
     height: auto;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
 }
 .select-topics .btn.active {
     border-color: #2b6ef3;
@@ -208,6 +211,9 @@
     border: 1px solid #ccc;
     background: #fff;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
 }
 .subject-filters .chip.active {
     border-color: #2b6ef3;
@@ -220,11 +226,20 @@
     padding-right: 25px;
     margin-left: auto;
 }
+.lms-choose-membership .subject-filters .select-holder:after {
+    border-color: #666;
+    height: 8px;
+    width: 8px;
+    margin-top: -5px;
+}
 .subject-filters .select {
     padding: 8px 12px;
     border-radius: 6px;
     border: 0;
     background-color: inherit;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
 }
 
 .topics-table-holder {
