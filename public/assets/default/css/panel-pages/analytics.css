@@ -129,7 +129,10 @@ Sub Pages Style
 .date-range-box .daterangepicker .ranges ul {width: 100%;}
 .date-range-box .daterangepicker .ranges {width: 100%;}
 .rurera-hide {display: none;}
-.analytics-dropdown .daterangepicker .ranges li.active {background-color: var(--primary);}
+.analytics-dropdown .daterangepicker .ranges li.active,
+.analytics-dropdown .daterangepicker td.active, 
+.analytics-dropdown .daterangepicker td.active:hover,
+.analytics-dropdown .daterangepicker .drp-buttons .btn {background-color: var(--primary);}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
