@@ -1341,8 +1341,8 @@ Lms Responsive Style Start
     .lms-jobs-form .checkbox-field.privacy-field label {font-size: 14px;}
     .lms-jobs-form .checkbox-field.privacy-field input[type=checkbox] {margin-top: 8px;}
     .referral-price-lists.mb-30 {margin-bottom: 0 !important;}
-    .referral-price-lists .row {justify-content: center; gap: 0 10px;}
-    .referral-price-lists .row [class*="col-"] {width: auto; flex: auto; max-width: fit-content;}
+    .referral-price-lists .row {justify-content: center;}
+    .referral-price-lists .row [class*="col-"] {flex: 0 0 50%; max-width: 50%;}
     body .emoji-icons {gap: 5px;}
     body .emoji-icons .emoji-icon {height: 20px; width: 20px; margin: 0 5px;}
     body .profile-inner {padding: 15px;}
