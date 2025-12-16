@@ -176,3 +176,46 @@
 .questions-select-number input:checked ~ label {box-shadow: 0 3px 0 var(--primary); border-color: var(--primary); color: var(--primary);}
 .questions-select-number ul {margin: 0 0 0 -10px; flex-wrap: wrap;}
 /* Timestable Heatmap Table style on set-work-page End */
+
+/*Select Topic Style start*/
+.select-topics .btn {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.select-topics .btn.active {
+    border-color: #2b6ef3;
+    color: #2b6ef3;
+}
+.select-topics .top-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+/* Chips */
+.subject-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.subject-filters .chip {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+}
+.subject-filters .chip.active {
+    border-color: #2b6ef3;
+    color: #2b6ef3;
+}
+.subject-filters .select {
+    margin-left: auto;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+/*Select Topic Style End*/
