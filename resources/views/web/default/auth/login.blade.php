@@ -106,6 +106,7 @@
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group" id="emailHelp2">
+                                                    <input type="hidden" name="tab_type" value="parent">
                                                     <label class="input-label" for="username">Username:</label>
                                                     <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
                                                            value="{{ old('username') }}" aria-describedby="emailHelp2">
@@ -128,7 +129,7 @@
                                                 <div class="login-option">
                                                     <span>Login with</span>
                                                     <a href="https://google.com/" target="_blank" class="social-login">
-                                                        <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/> 
+                                                        <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
                                                     </a>
                                                     <a href="https://www.facebook.com/" target="_blank" class="social-login">
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
@@ -562,6 +563,11 @@
             // Access the parent window and post a message
             window.opener.postMessage("Response from popup", window.location.origin);
         }
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.location.hash === '#parent') {
+                $('#parent-tab').tab('show');
+            }
+        });
 
     </script>
 @endpush
