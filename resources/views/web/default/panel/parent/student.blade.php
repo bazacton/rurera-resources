@@ -925,7 +925,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         </div>
         </div>
 
-        <div class="row mb-50">
+        <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="info-text">
                     <h3 class="font-18 font-weight-500 mb-5">Subscription Details</h3>
