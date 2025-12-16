@@ -1130,6 +1130,108 @@
                 </div>
             </form>
         </div>
+        <div class="col-12">
+            <div class="select-topics">
+                <h2>2. Select topics</h2>
+                <!-- Top buttons -->
+                <div class="top-actions">
+                    <button class="btn">Full exam curriculum</button>
+                    <button class="btn active">✓ All topics</button>
+                </div>
+
+                <!-- Subject filters -->
+                <div class="subject-filters">
+                    <button class="chip">Algebra</button>
+                    <button class="chip">Data</button>
+                    <button class="chip active">✓ Geometry</button>
+                    <button class="chip">Measurement</button>
+                    <button class="chip">Number</button>
+                    <button class="chip">Ratio and Proportion</button>
+                    <div class="select-holder">
+                        <select class="select">
+                            <option>All performance levels</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="topics-table-holder">
+                    <table class="topics-table">
+                        <thead>
+                            <tr>
+                                <th>Select to practise</th>
+                                <th>Topic</th>
+                                <th>Subtopic</th>
+                                <th>Performance</th>
+                                <th>Last seen</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Angles</td>
+                                <td>Properties of Shape</td>
+                                <td class="muted">Not enough data</td>
+                                <td class="muted">Not started</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Triangles</td>
+                                <td>Properties of Shape</td>
+                                <td>
+                                    <div class="progress">
+                                        <span></span>
+                                    </div>
+                                    <small>Needs Practice</small>
+                                </td>
+                                <td>16/12/2025</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Quadrilaterals</td>
+                                <td>Properties of Shape</td>
+                                <td class="muted">Not enough data</td>
+                                <td class="muted">Not started</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Polygons and Circles</td>
+                                <td>Properties of Shape</td>
+                                <td class="muted">Not enough data</td>
+                                <td class="muted">Not started</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Three-Dimensional Shapes</td>
+                                <td>Properties of Shape</td>
+                                <td class="muted">Not enough data</td>
+                                <td class="muted">Not started</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Transformations</td>
+                                <td>Position and Direction</td>
+                                <td class="muted">Not enough data</td>
+                                <td class="muted">Not started</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Position</td>
+                                <td>Position and Direction</td>
+                                <td class="muted">Not enough data</td>
+                                <td class="muted">Not started</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </div>
 <div class="modal fade lms-choose-membership" id="assignmentCreateModal" tabindex="-1" aria-labelledby="assignmentCreateModalLabel" aria-hidden="true">
