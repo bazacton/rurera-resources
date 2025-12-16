@@ -276,7 +276,7 @@
                                     </div>
                                 </div> -->
                                 
-                                <div class="col-12 col-lg-12 mb-30 mt-25">
+                                <div class="col-12 col-lg-12 mb-30">
                                     <div class="referrals panel-border panel-shadow rounded-sm">
                                         <div class="referral-card">
                                             <h3 class="font-19 font-weight-bold">Link your students and <br /> start earning!</h3>
