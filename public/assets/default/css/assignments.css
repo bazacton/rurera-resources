@@ -183,7 +183,7 @@
     background: #fff;
     padding: 8px 14px;
     border-radius: 8px;
-    cursor: pointer;
+    height: auto;
 }
 .select-topics .btn.active {
     border-color: #2b6ef3;
