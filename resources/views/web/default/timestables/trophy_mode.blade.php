@@ -3,7 +3,7 @@
 @section('content')
 <div class="timestables-mode-block">
 <div class="timestables-mode-content">
-<div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
+<div class="section-title mb-25" itemscope itemtype="https://schema.org/Article">
     <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Trophy Mode</h2>
 </div>
 @if( (5 - $results_data->count()) > 0)
@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 px-0">
-                <div class="referral-withdraw mb-30">
+                <div class="referral-withdraw mb-15">
                     <div class="withdraw-card d-flex align-items-center flex-wrap">
                         <div class="icon-box mr-10">
                             <img src="/assets/default/svgs/shuttlecock.svg" alt="shuttlecock icon" height="30" width="30">
