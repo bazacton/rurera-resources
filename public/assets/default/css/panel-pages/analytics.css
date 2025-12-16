@@ -132,7 +132,11 @@ Sub Pages Style
 .analytics-dropdown .daterangepicker .ranges li.active,
 .analytics-dropdown .daterangepicker td.active, 
 .analytics-dropdown .daterangepicker td.active:hover,
-.analytics-dropdown .daterangepicker .drp-buttons .btn {background-color: var(--primary);}
+.analytics-dropdown .daterangepicker .drp-buttons .btn {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
