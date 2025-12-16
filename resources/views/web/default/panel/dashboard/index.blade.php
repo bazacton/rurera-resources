@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            @if( $LearningJourneys->count() > 0)
+            @if( isset($LearningJourneys) && $LearningJourneys->count() > 0)
             <div class="col-12">
                 <div class="prep-plan">
                     <div class="section-title text-left mb-30">
