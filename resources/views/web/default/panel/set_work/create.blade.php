@@ -1133,6 +1133,10 @@
         <div class="col-12">
             <div class="select-topics">
                 <h3 class="font-24 mb-15">2. Select topics</h3>
+                <div class="selected-topics" id="selectedTopics">
+                    <span class="count">0 topics selected</span>
+                    <div class="chips"></div>
+                </div>
                 <!-- Top buttons -->
                 <div class="top-actions">
                     <button class="btn">Full exam curriculum</button>
@@ -1157,74 +1161,44 @@
                     <table class="topics-table">
                         <thead>
                             <tr>
-                                <th>Select to practise</th>
+                                <th>Select</th>
                                 <th>Topic</th>
                                 <th>Subtopic</th>
                                 <th>Performance</th>
                                 <th>Last seen</th>
                             </tr>
                         </thead>
-
                         <tbody>
                             <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" class="topic-check" data-topic="Angles"></td>
                                 <td>Angles</td>
                                 <td>Properties of Shape</td>
-                                <td class="muted">Not enough data</td>
-                                <td class="muted">Not started</td>
+                                <td>Not enough data</td>
+                                <td>Not started</td>
                             </tr>
 
                             <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" class="topic-check" data-topic="Triangles"></td>
                                 <td>Triangles</td>
                                 <td>Properties of Shape</td>
-                                <td>
-                                    <div class="progress">
-                                        <span></span>
-                                    </div>
-                                    <small>Needs Practice</small>
-                                </td>
+                                <td>Needs Practice</td>
                                 <td>16/12/2025</td>
                             </tr>
 
                             <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" class="topic-check" data-topic="Quadrilaterals"></td>
                                 <td>Quadrilaterals</td>
                                 <td>Properties of Shape</td>
-                                <td class="muted">Not enough data</td>
-                                <td class="muted">Not started</td>
+                                <td>Not enough data</td>
+                                <td>Not started</td>
                             </tr>
 
                             <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" class="topic-check" data-topic="Polygons and Circles"></td>
                                 <td>Polygons and Circles</td>
                                 <td>Properties of Shape</td>
-                                <td class="muted">Not enough data</td>
-                                <td class="muted">Not started</td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Three-Dimensional Shapes</td>
-                                <td>Properties of Shape</td>
-                                <td class="muted">Not enough data</td>
-                                <td class="muted">Not started</td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Transformations</td>
-                                <td>Position and Direction</td>
-                                <td class="muted">Not enough data</td>
-                                <td class="muted">Not started</td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Position</td>
-                                <td>Position and Direction</td>
-                                <td class="muted">Not enough data</td>
-                                <td class="muted">Not started</td>
+                                <td>Not enough data</td>
+                                <td>Not started</td>
                             </tr>
                         </tbody>
                     </table>
@@ -2047,4 +2021,51 @@
 
 
 </script>
+<script>
+    const checkboxes = document.querySelectorAll('.topic-check');
+    const chipsContainer = document.querySelector('.selected-topics .chips');
+    const countText = document.querySelector('.selected-topics .count');
+
+    function updateSelectedTopics() {
+        chipsContainer.innerHTML = '';
+        let selected = [];
+
+        checkboxes.forEach(cb => {
+            if (cb.checked) {
+                selected.push(cb.dataset.topic);
+
+                const chip = document.createElement('div');
+                chip.className = 'chip';
+                chip.innerHTML = `
+                    ${cb.dataset.topic}
+                    <button data-topic="${cb.dataset.topic}">&times;</button>
+                `;
+                chipsContainer.appendChild(chip);
+            }
+        });
+
+        countText.textContent = `${selected.length} topics selected`;
+    }
+
+    /* Checkbox change */
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', updateSelectedTopics);
+    });
+
+    /* Remove chip (× click) */
+    chipsContainer.addEventListener('click', function (e) {
+        if (e.target.tagName === 'BUTTON') {
+            const topic = e.target.dataset.topic;
+
+            checkboxes.forEach(cb => {
+                if (cb.dataset.topic === topic) {
+                    cb.checked = false;
+                }
+            });
+
+            updateSelectedTopics();
+        }
+    });
+</script>
+
 @endpush
