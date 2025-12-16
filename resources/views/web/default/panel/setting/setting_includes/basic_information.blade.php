@@ -28,7 +28,7 @@ if( !empty( $emojisArray ) ){
 <style>
 .rurera-hide{display:none !important;}
     .profile-container {max-width: 1000px; margin: 0 auto; padding-top: 50px;}
-    .student-profile-holder {width: 100%; display: inline-block; margin-right: -4px; padding: 0 8px 15px; box-sizing: border-box;}
+    .student-profile-holder {width: 100%; display: inline-block; margin-right: -4px; padding: 0 8px 0; box-sizing: border-box;}
     .profile-inner {border: 1px dashed #ddd; border-radius: 5px; padding: 20px;}
     .student-profile-holder h3 {font-size: 20px; color: #868686; text-transform: capitalize; margin: 0;}
     .student-info ul {margin: 0; padding: 0;}
@@ -82,7 +82,7 @@ if( !empty( $emojisArray ) ){
 </style>
 <section>
     <h2 class="section-title">{{ trans('financial.account') }}</h2>
-    <div class="row mt-30">
+    <div class="row mt-15">
         <div class="col-12 user-profile-block rurera-hide">
             <div class="user-detail mb-50">
                 <div class="detail-header mb-25 pb-25">
