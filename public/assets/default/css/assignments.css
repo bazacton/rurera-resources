@@ -213,10 +213,18 @@
     border-color: #2b6ef3;
     color: #2b6ef3;
 }
-.subject-filters .select {
+.subject-filters .select-holder {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-right: 25px;
     margin-left: auto;
+}
+.subject-filters .select {
     padding: 8px 12px;
     border-radius: 6px;
+    border: 0;
+    background-color: inherit;
 }
 
 .topics-table-holder {
