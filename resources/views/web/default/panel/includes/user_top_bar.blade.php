@@ -103,11 +103,14 @@
                         <div class="d-md-none border-bottom mb-20 pb-10 text-right">
                             <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
                         </div>
+                        @php $parent_id = 0; @endphp
                         @if( !empty( $profile_navs ) )
                         <div class="user-nav-list">
                             @foreach( $profile_navs as $profile_nav)
 
-                            <a class="dropdown-item " href="/panel/switch_user/{{$profile_nav['id']}}">
+                            @php $parent_id = isset($profile_nav['id'])? $profile_nav['id'] : $parent_id; @endphp
+
+                            <a class="dropdown-item " data-toggle="modal" data-target="#switch_user_modal" href="/panel/switch_user/{{$profile_nav['id']}}">
                                 <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
                                      alt="rounded circle" loading="eager" title="rounded circle">
                                 @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $profile_nav['full_name']; @endphp
@@ -139,4 +142,29 @@
             </button>
         </li>
     </ul>
+</div>
+
+<div class="modal fade switch_user_modal" id="switch_user_modal" tabindex="-1" role="dialog" aria-labelledby="switch_user_modal_label/" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-box">
+                    <div class="modal-title">
+                        <h3>Enter the Password</h3>
+                    </div>
+                    <form method="post" action="javascript:;" class="mt-35 switch_user_login">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <div class="form-group">
+                        <label class="input-label" for="email">Password:</label>
+                        <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password"
+                               aria-describedby="emailHelp">
+                        <input type="hidden" name="user_id" value="{{isset($parent_id)? $parent_id : 0}}">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block mt-20">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

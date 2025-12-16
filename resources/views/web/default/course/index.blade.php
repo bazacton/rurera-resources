@@ -105,8 +105,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
+
+                                    {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
                                         <div class="sorting-filter">
                                             <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
                                                 <span><img src="/assets/default/svgs/grid-view.svg" alt="grid-view"></span>
@@ -115,7 +115,7 @@
                                                 <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"></span>
                                         </a>
                                         </div>
-                                    </div>
+                                    </div>--}}
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-short-view">
                                         <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                                             <ul class="lms-chapter-ul" id="accordion">
@@ -133,15 +133,15 @@
                                                                 @endphp
                                                                 <li>
                                                                 <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true">{{ $sub_chapter['title'] }}</a>
-                                                                
+
                                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
-                                                                
+
                                                                 @if($sub_chapter_item->Quizzes->count() > 0)
                                                                 <ul id="collapse{{$sub_chapter['id']}}" class="collapse" data-parent="#accordion">
                                                                     @foreach($sub_chapter_item->Quizzes as $QuizObj)
-                                                                        @php 
+                                                                        @php
                                                                         $topicPerformData = Quiz::getQuizPercentage($QuizObj->id, true);
-                                                                        
+
                                                                         $topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
                                                                         $topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
                                                                         $total_completion += $topic_completion;
@@ -152,13 +152,13 @@
                                                                             $topic_percentage_flag = ($topic_accuracy > 50)? '<img src="/assets/default/svgs/above_50.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
                                                                             $topic_percentage_flag = ($topic_accuracy > 80)? '<img src="/assets/default/svgs/above_80.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
                                                                         }
-                                                                        
+
                                                                         $topic_percentage_text = ($topic_completion > 0 && $topic_completion < 80)? '('.$topic_completion.')' : '';
 
-                                                                        
+
                                                                         $topic_percentage_text .= $topic_percentage_flag;
                                                                         @endphp
-                                                                    
+
                                                                         <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }} {!! $topic_percentage_text !!}</a></li>
                                                                     @endforeach
                                                                 </ul>
@@ -173,8 +173,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                                
+
+
                                                             </li>
                                                         @endif
                                                         @endforeach
@@ -226,13 +226,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">          
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">
                                         <div class="current-topics-detail bg-white mb-30 mt-15">
                                         <div class="topics-table-group">
-                                    
+
                                         @foreach($course->chapters as $chapter)
                                             @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                            
+
                                                 <div class="topics-table">
                                                     <table class="w-100">
                                                         <thead>
@@ -243,7 +243,7 @@
                                                                 <th class="text-white text-left p-15">Rersources</th>
                                                             </tr>
                                                         </thead>
-                                                        
+
                                                         <tbody>
                                                             @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
                                                                 @foreach($sub_chapters[$chapter->id] as $sub_chapter)
@@ -263,7 +263,7 @@
 
                                                                         $topic_percentage_text .= $topic_percentage_flag;
                                                                         @endphp
-                                                                        
+
                                                                         <tr>
                                                                             <td data-label="{{ $chapter->title }}" class="px-15 py-20">
                                                                                 <div class="checkbox-field mb-0">
@@ -297,9 +297,9 @@
                                                                                 </a>
                                                                             </td>
                                                                         </tr>
-                                                                        
+
                                                                     @endif
-                                                                @endforeach  
+                                                                @endforeach
                                                             @endif
                                                         </tbody>
                                                     </table>
@@ -407,7 +407,7 @@
 
 <script>
 $(document).on('click', '.view-change-btn', function (e) {
-	
+
 	$(".view-change-btn").removeClass('active');
 	$(this).addClass('active');
 	var view_chapter = $(this).attr('data-type');
@@ -422,12 +422,12 @@ $(document).ready(function () {
         $dataV = $this.data("percent"),
         $dataDeg = $dataV * 3.6,
         $round = $this.find(".round_per");
-        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)"); 
+        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
         $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
         $this.prop('Counter', 0).animate({Counter: $dataV},
     {
-        duration: 2000, 
-        easing: 'swing', 
+        duration: 2000,
+        easing: 'swing',
         step: function (now) {
                 $this.find(".percent_text").text(Math.ceil(now));
             }
@@ -440,7 +440,7 @@ $(document).ready(function () {
             setTimeout(function(){
             $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
             },1000);
-        } 
+        }
     });
 });
 /*percent circle function end*/
