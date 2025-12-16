@@ -56,7 +56,7 @@
                 <div class="col-12">
                     <div class="referral-text mb-30">
                         @if(!empty($referralSettings))
-                            <div class="mt-15 text-gray">
+                            <div class="text-gray">
                                 @if(!empty($referralSettings['affiliate_user_amount']))<p>- {{ trans('panel.user_registration_reward') }}: {{ addCurrencyToPrice($referralSettings['affiliate_user_amount']) }}</p>@endif
                                 @if(!empty($referralSettings['referred_user_amount']))<p>- {{ trans('panel.referred_user_registration_reward') }}: {{ addCurrencyToPrice($referralSettings['referred_user_amount']) }}</p>@endif
                                 @if(!empty($referralSettings['affiliate_user_commission']))<p>- {{ trans('panel.referred_user_purchase_commission') }}: {{ $referralSettings['affiliate_user_commission'] }}%</p>@endif
