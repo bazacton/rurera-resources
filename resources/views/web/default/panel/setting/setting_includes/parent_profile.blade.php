@@ -8,7 +8,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 @endphp
 
 <section>
-    <h2 class="section-title font-22">Account Settings</h2>
+    <h2 class="section-title font-20">Account Settings</h2>
     <div class="row mt-10">
         <div class="col-12 user-profile-block">
             <div class="user-detail mb-30 bg-white panel-border rounded-sm">
@@ -306,7 +306,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
         <div class="col-12">
             <div class="notifications-wrap mb-30">
                 <div class="notifications-header">
-                    <h2 class="font-22">Alerts & Notifications</h2>
+                    <h2 class="font-20">Alerts & Notifications</h2>
                     <a href="#" class="toggle-all">Toggle all</a>
                 </div>
 
