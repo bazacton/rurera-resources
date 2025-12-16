@@ -1,5 +1,5 @@
 <section>
-    <h2 class="section-title mb-15">Memberships</h2>
+    <h2 class="section-title mb-10 font-20 font-weight-bold">Memberships</h2>
 
     <div class="panel-section-card bg-white panel-border rounded-sm p-25">
         <div class="row">
