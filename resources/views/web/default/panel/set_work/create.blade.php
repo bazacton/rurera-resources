@@ -606,37 +606,7 @@
                                 </div>
 
 
-                                <div class="form-group rurera_common_hide_field no_of_questions_field">
-                                    <label class="input-label">No of Questions</label>
-                                    <div class="input-group">
-                                        <div class="radio-buttons">
-                                            <label class="card-radio">
-                                                <input type="radio" name="ajax[new][no_of_questions]" value="10" checked>
-                                                <span class="radio-btn"><i class="las la-check"></i>
-                                                                                <div class="card-icon">
-                                                                                    <h3>10 Questions</h3>
-                                                                                </div>
-                                                                            </span>
-                                            </label>
-                                            <label class="card-radio">
-                                                <input type="radio" name="ajax[new][no_of_questions]" value="20">
-                                                <span class="radio-btn"><i class="las la-check"></i>
-                                                                                <div class="card-icon">
-                                                                                    <h3>20 Questions</h3>
-                                                                                </div>
-                                                                            </span>
-                                            </label>
-                                            <label class="card-radio">
-                                                <input type="radio" name="ajax[new][no_of_questions]" value="30">
-                                                <span class="radio-btn"><i class="las la-check"></i>
-                                                                                <div class="card-icon">
-                                                                                    <h3>30 Questions</h3>
-                                                                                </div>
-                                                                            </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 @php
                                     $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
@@ -839,16 +809,12 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Start Date</label>
                                     <div class="input-group">
-                                        <div class="input-holder">
-                                            <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
-                                            <input type="text" autocomplete="off"
+                                        <input type="text" autocomplete="off"
                                                name="ajax[new][assignment_start_date]"
                                                value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
                                                class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
                                                min="{{date('Y-m-d')}}"
                                                placeholder=""/>
-                                        </div>
-                                        
                                         @error('assignment_start_date')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -861,15 +827,11 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Due Date</label>
                                     <div class="input-group">
-                                        <div class="input-holder">
-                                            <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
-                                            <input type="text" autocomplete="off"
+                                        <input type="text" autocomplete="off"
                                                name="ajax[new][assignment_end_date]"
                                                value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
                                                class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
                                                placeholder=""/>
-                                        </div>
-                                        
                                         <div class="invalid-feedback"></div>
                                     </div>
                                 </div>
@@ -940,6 +902,30 @@
 
                         <div class="form-section rurera-hide">
                             <h2 class="section-title">Target</h2>
+                        </div>
+
+
+                        <div class="form-group rurera_common_hide_field no_of_questions_field">
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group">
+                                    <label class="input-label">No of Questions</label>
+
+                                    <div class="invalid-feedback"></div>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                               name="ajax[new][no_of_questions]"
+                                               value="10"
+                                               step="10"
+                                               class="js-ajax-title form-control no_of_questions range-slider-field"
+                                               placeholder="" min="10" max="30"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="row rurera_common_hide_field no_of_attemptes_field">
