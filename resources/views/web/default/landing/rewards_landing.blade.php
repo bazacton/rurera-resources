@@ -60,13 +60,13 @@
                             <div class="reward-box d-flex align-items-center justify-content-center">
                                 <div class="text-holder text-center">
                                     <p itemprop="description">Redeem coins with one click!</p>
-                                    <strong class="mt-10 font-30 font-weight-bold" itemprop="sub title">One Click!</strong>
+                                    <strong class="mt-10 font-30 font-weight-bold">One Click!</strong>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-5 col-lg-3">
                             <div class="reward-box d-flex align-items-center justify-content-center">
-                                <div class="text-holder text-center"><strong itemprop="sub title" class="font-19 font-weight-bold">Trade your coins for toys</strong></div>
+                                <div class="text-holder text-center"><strong class="font-19 font-weight-bold">Trade your coins for toys</strong></div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-7 col-lg-9">
