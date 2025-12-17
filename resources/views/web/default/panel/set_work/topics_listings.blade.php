@@ -1,30 +1,35 @@
 <div class="select-topics">
     <h3 class="font-24 mb-15">Select Topics</h3>
-    <div class="selected-topics" id="selectedTopics">
+    <div class="selected-topics rurera-hide" id="selectedTopics">
         <span class="count selected-topics-count"><span>0</span> topics selected</span>
         <div class="chips selected-topics-chips">
         </div>
     </div>
     <!-- Top buttons -->
-    <div class="top-actions">
-        <button class="btn">Full exam curriculum</button>
-        <button class="btn active">✓ All topics</button>
-    </div>
+    @if(!empty( $parentData))
+        <div class="top-actions">
+            <button class="btn">Full exam curriculum</button>
+            <button class="btn active">✓ All topics</button>
+        </div>
+    @endif
 
     <!-- Subject filters -->
     <div class="subject-filters">
-        <button class="chip parent-filters" data-id="all">All</button>
+
         @if(!empty( $parentData))
+            <button class="chip parent-filters" data-id="all">All</button>
             @foreach( $parentData as $parentObj)
                 <button class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
             @endforeach
         @endif
 
-        <div class="select-holder">
-            <select class="select">
-                <option>All performance levels</option>
-            </select>
-        </div>
+        @if(!empty( $parentData))
+            <div class="select-holder">
+                <select class="select">
+                    <option>All performance levels</option>
+                </select>
+            </div>
+        @endif
     </div>
     <div class="topics-table-holder lms-chapter-ul-outer table-sm">
         <table class="topics-table">
@@ -45,7 +50,6 @@
                         <td data-th="Topic">{{isset($listingObj->title)? $listingObj->title : '-'}}</td>
                         <td data-th="Performance">
                             @if($performance > 0)
-                                {{$performance}}
                                 <div class="percent-holder">
                                     <div class="chapter_percent circle-blue" data-percent="{{$performance}}">
                                         <div class="circle_inner">
@@ -55,13 +59,6 @@
                                 </div>
                             @else
                                 Not enough data
-                                <div class="percent-holder">
-                                    <div class="chapter_percent circle-blue" data-percent="50">
-                                        <div class="circle_inner">
-                                            <div class="round_per"></div>
-                                        </div>
-                                    </div>
-                                </div>
                             @endif
                         </td>
                         <td data-th="Last seen">
@@ -73,6 +70,12 @@
                             </td>
                     </tr>
                 @endforeach
+            @else
+                <tr class="listing-data-row" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
+                    <td colspan="4">
+                        @include('web.default.default.list_no_record')
+                    </td>
+                </tr>
             @endif
 
 
