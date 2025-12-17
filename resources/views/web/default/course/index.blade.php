@@ -491,6 +491,7 @@ $(document).ready(function () {
 /*percent circle function end*/
 </script>
 <script>
+    let subchapterSwiper;
     $('#subchapter-notes-modal').on('shown.bs.modal', function () {
 
         if (!subchapterSwiper) {
