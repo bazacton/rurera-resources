@@ -148,59 +148,13 @@
                                         </label>
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][assignment_topic_type]"
-                                                   class="assignemnet_types_selection" value="sats">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                    <img src="/assets/default/img/assignment-logo/sats.png">
-                                                                    <h3>SATs</h3>
-                                                                </div>
-                                                            </span>
-                                        </label>
-                                        <label class="card-radio">
-                                            <input type="radio" name="ajax[new][assignment_topic_type]"
-                                                   class="assignemnet_types_selection" value="11plus">
+                                                   class="assignemnet_types_selection" value="tests">
                                             <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/11plus.png">
-                                                                <h3>11 Plus</h3>
+                                                                <img src="/assets/default/img/assignment-logo/sats.png">
+                                                                <h3>Tests</h3>
                                                             </div>
-
-                                                        </span>
-                                        </label>
-                                       <label class="card-radio">
-                                            <input type="radio" name="ajax[new][assignment_topic_type]"
-                                                   class="assignemnet_types_selection" value="independent_exams">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/independent-exams.png">
-                                                                <h3>Independent Exams</h3>
-                                                            </div>
-
-                                                            </span>
-                                        </label>
-
-                                        <label class="card-radio">
-                                            <input type="radio" name="ajax[new][assignment_topic_type]"
-                                                   class="assignemnet_types_selection" value="iseb">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/iseb.png">
-                                                                <h3>ISEB</h3>
-                                                            </div>
-
-                                                            </span>
-                                        </label>
-
-                                        <label class="card-radio">
-                                            <input type="radio" name="ajax[new][assignment_topic_type]"
-                                                   class="assignemnet_types_selection" value="cat4">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/cat4.png">
-                                                                <h3>CAT 4</h3>
-                                                            </div>
-
-                                                            </span>
+                                                    </span>
                                         </label>
 
                                         <label class="card-radio">
@@ -238,7 +192,7 @@
 
                                                             </span>
                                     </label>
-                                    <label class="card-radio rurera-hide">
+                                    {{--<label class="card-radio rurera-hide">
                                         <input type="radio" name="ajax[new][assignment_topic_type]"
                                                class="assignemnet_types_selection" value="assignment">
                                         <span class="radio-btn"><i class="las la-check"></i>
@@ -247,6 +201,74 @@
                                                                 <h3>Custom Assignment</h3>
                                                             </div>
                                                         </span>
+                                    </label>--}}
+                                </div>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group rurera_common_hide_field test_types_field">
+                            <label class="input-label">Test Type</label>
+                            <div class="input-group">
+
+                                <div class="radio-buttons">
+
+
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_test_type]"
+                                               class="test_types_selection" value="sats" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/sats.png">
+                                                                    <h3>SATs</h3>
+                                                                </div>
+                                                            </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_test_type]"
+                                               class="test_types_selection" value="11plus">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/11plus.png">
+                                                                <h3>11 Plus</h3>
+                                                            </div>
+
+                                                        </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_test_type]"
+                                               class="test_types_selection" value="independent_exams">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/independent-exams.png">
+                                                                <h3>Independent Exams</h3>
+                                                            </div>
+
+                                                            </span>
+                                    </label>
+
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_test_type]"
+                                               class="test_types_selection" value="iseb">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/iseb.png">
+                                                                <h3>ISEB</h3>
+                                                            </div>
+
+                                                            </span>
+                                    </label>
+
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][assignment_test_type]"
+                                               class="test_types_selection" value="cat4">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                            <div class="card-icon">
+                                                                <img src="/assets/default/img/assignment-logo/cat4.png">
+                                                                <h3>CAT 4</h3>
+                                                            </div>
+
+                                                            </span>
                                     </label>
                                 </div>
                                 <div class="invalid-feedback"></div>
@@ -1541,6 +1563,9 @@
             var year_id = $(this).val();
             var user_id = $(".assignment-user-class:checked").val();
             var quiz_type = $(".assignemnet_types_selection:checked").val();
+            if(quiz_type == 'tests'){
+                var quiz_type = $(".test_types_selection:checked").val();
+            }
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
                 var vocabulary_type = $(".vocabulary_type:checked").val();
@@ -1778,7 +1803,10 @@
             'practice-quiz-topics-list',
             'no_of_attemptes_field',
         ],
-
+        tests_fields_array: [
+            'test_types_field',
+            'vocabulary_list_data',
+        ],
         sats_fields_array: [
             'sats_fields',
             //'year_group_field',
@@ -1870,7 +1898,6 @@
         }
 
         $(".rurera_common_hide_field").addClass('rurera-hide');
-        console.log('assignemnet_types_selection');
 
 
 
@@ -1890,6 +1917,10 @@
         }
 
 
+        $(".year_quiz_ajax_select").change();
+    });
+
+    $('body').on('change', '.test_types_selection', function (e) {
         $(".year_quiz_ajax_select").change();
     });
 
