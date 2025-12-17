@@ -265,7 +265,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
-                    <div class="text-center section-title mb-0"><h2 class="font-40" itemprop="section title">Why choose Rurera assessments ?</h2></div>
+                    <div class="text-center section-title mb-0"><h2 class="font-40">Why choose Rurera assessments ?</h2></div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="accordion lms-accordion-modern" id="accordion-modern" itemscope="" itemtype="https://schema.org/accordion">
