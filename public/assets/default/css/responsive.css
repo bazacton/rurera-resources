@@ -228,6 +228,7 @@ Lms Responsive Style Start
     .rurera-form-validation .col-sm-4 {flex: 0 0 100%; max-width: 100%;}
     .login-container .login-holder {min-width: 100%; max-width: 100%;}
     .panel-right-sidebar.full-width-sidebar {display: block;}
+    .full-width-sidebar .user-profile-icons ul {justify-content: space-between;}
     .navbar-nav .has-mega-menu:hover .nav-link:after {display: none;}
     .navbar-nav .nav-item:hover .sidenav-dropdown li:last-child a {margin-bottom: 20px;}
     .navbar-nav .educator-menu {position: relative; border-right: 0;}
