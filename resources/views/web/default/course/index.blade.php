@@ -519,7 +519,7 @@ $(document).ready(function () {
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
                 centeredSlides: true,
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
 
                 navigation: {
@@ -529,7 +529,7 @@ $(document).ready(function () {
 
                 pagination: {
                     el: '.swiper-pagination',
-                    type: 'progressbar'   // 👈 progress line
+                    type: 'progressbar'
                 },
 
                 breakpoints: {
@@ -544,7 +544,7 @@ $(document).ready(function () {
                         centeredSlides: true
                     },
                     640: {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 30,
                         centeredSlides: true
                     }
