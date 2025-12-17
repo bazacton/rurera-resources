@@ -303,7 +303,7 @@
             <div class="col-12 mx-auto">
                 <div class="mt-0">
                     <div class="lms-faqs mx-w-100 mt-0">
-                        <div id="accordion">
+                        <div id="accordion" itemscope itemtype="https://schema.org/FAQPage">
                             <div class="card">
                                 <div class="card-header active" id="heading11" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <h3 itemprop="name" class="mb-0">
