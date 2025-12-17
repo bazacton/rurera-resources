@@ -839,12 +839,16 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Start Date</label>
                                     <div class="input-group">
-                                        <input type="text" autocomplete="off"
+                                        <div class="input-holder">
+                                            <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
+                                            <input type="text" autocomplete="off"
                                                name="ajax[new][assignment_start_date]"
                                                value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
                                                class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
                                                min="{{date('Y-m-d')}}"
                                                placeholder=""/>
+                                        </div>
+                                        
                                         @error('assignment_start_date')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -857,11 +861,15 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Due Date</label>
                                     <div class="input-group">
-                                        <input type="text" autocomplete="off"
+                                        <div class="input-holder">
+                                            <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
+                                            <input type="text" autocomplete="off"
                                                name="ajax[new][assignment_end_date]"
                                                value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
                                                class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
                                                placeholder=""/>
+                                        </div>
+                                        
                                         <div class="invalid-feedback"></div>
                                     </div>
                                 </div>
