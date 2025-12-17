@@ -818,7 +818,7 @@
                                                    min="{{date('Y-m-d')}}"
                                                    placeholder=""/>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -907,26 +907,24 @@
                         </div>
 
 
-                        <div class="row">
-                            <div class="form-group rurera_common_hide_field no_of_questions_field">
+                        <div class="row form-group rurera_common_hide_field no_of_questions_field">
 
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                    <div class="form-group">
-                                        <label class="input-label">No of Questions</label>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group">
+                                    <label class="input-label">No of Questions</label>
 
-                                        <div class="invalid-feedback"></div>
-                                        <div class="range-slider">
-                                            <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                            <div class="range-slider_line">
-                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                            </div>
-                                            <input type="range"
-                                                   name="ajax[new][no_of_questions]"
-                                                   value="10"
-                                                   step="10"
-                                                   class="js-ajax-title form-control no_of_questions range-slider-field"
-                                                   placeholder="" min="10" max="30"/>
+                                    <div class="invalid-feedback"></div>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
                                         </div>
+                                        <input type="range"
+                                               name="ajax[new][no_of_questions]"
+                                               value="10"
+                                               step="10"
+                                               class="js-ajax-title form-control no_of_questions range-slider-field"
+                                               placeholder="" min="10" max="30"/>
                                     </div>
                                 </div>
                             </div>

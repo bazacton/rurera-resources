@@ -3,7 +3,8 @@
         <h3 class="font-24 mb-15">Select Topics</h3>
         <div class="selected-topics" id="selectedTopics">
             <span class="count selected-topics-count"><span>0</span> topics selected</span>
-            <div class="chips"></div>
+            <div class="chips selected-topics-chips">
+            </div>
         </div>
         <!-- Top buttons -->
         <div class="top-actions">
@@ -13,6 +14,7 @@
 
         <!-- Subject filters -->
         <div class="subject-filters">
+            <button class="chip parent-filters" data-id="all">All</button>
             @if(!empty( $parentData))
                 @foreach( $parentData as $parentObj)
                     <button class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
