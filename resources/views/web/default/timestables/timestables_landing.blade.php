@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/classes" itemprop="url">
                                 <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/11-plus" itemprop="url">
                                 <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
@@ -199,7 +199,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/sats-preparation" itemprop="url">
                                 <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
@@ -212,7 +212,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/analytics" itemprop="url">
                                 <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
@@ -225,7 +225,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
@@ -238,7 +238,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
@@ -264,7 +264,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/book-shelf" itemprop="url">
                                 <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
@@ -277,7 +277,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/timestables-practice" itemprop="url">
                                 <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
@@ -290,7 +290,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/national-curriculum" itemprop="url">
                                 <img src="../assets/default/img/national-curriculum.jpg" alt="feature image" height="143" width="276">
@@ -303,7 +303,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/performance-monitering.jpg" alt="feature image" height="143" width="276">
@@ -316,7 +316,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/progress-tracking.jpg" alt="feature image" height="143" width="276">
@@ -330,7 +330,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/weekly-planner" itemprop="url">
                                 <img src="../assets/default/img/skill-plans-feature.jpg" alt="feature image" height="143" width="276">
@@ -343,7 +343,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/classes?sort=newest" itemprop="url">
                                 <img src="../assets/default/img/advance-learning-feature.jpg" alt="feature image" height="143" width="276">
@@ -356,7 +356,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/features" itemprop="url">
                                 <img src="../assets/default/img/teacher-empowerment-feature.jpg" alt="feature image" height="143" width="276">
@@ -369,7 +369,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/contact-us" itemprop="url">
                                 <img src="../assets/default/img/protection-feature.jpg" alt="feature image" height="143" width="276">
@@ -383,7 +383,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/rewards-features.jpg" alt="feature image" height="143" width="276">
@@ -396,7 +396,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/products" itemprop="url">
                                 <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
