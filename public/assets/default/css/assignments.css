@@ -84,6 +84,12 @@
     margin-bottom: 30px;
     border-radius: 10px 10px 0 0;
 }
+.set-work-container .lms-choose-membership.modal form {
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 .wizard-steps .card-radio:has(input:checked) {
     border-color: var(--primary);
 }
