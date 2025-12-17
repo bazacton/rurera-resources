@@ -494,7 +494,7 @@ $(document).ready(function () {
     $(document).ready(function () {
         jQuery(".subchapter-slider .swiper-container").length > 0 &&
         new Swiper(".subchapter-slider .swiper-container", {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
             navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
             breakpoints: {
