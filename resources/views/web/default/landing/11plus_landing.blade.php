@@ -381,7 +381,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-50 text-center">
-                        <h2 itemprop="section title" class="mb-10 font-40">Real practice, Proven Results</h2>
+                        <h2 class="mb-10 font-40">Real practice, Proven Results</h2>
                         <p itemprop="description" class="font-19 text-gray">It’s hugely trusted by parents, recommended by teachers and loved by students</p>
                     </div>
                 </div>
@@ -389,7 +389,7 @@
                     <div class="counter-holder row mt-100">
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30 position-relative">
                             <div class="lms-counter-card counter-purple-bg text-white">
-                                <strong itemprop="size" class="custom-counter" data-count="100"></strong><span itemprop="plus" class="plus-icons">+</span>
+                                <strong itemprop="size" class="custom-counter" data-count="100"></strong><span class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">
                                     11+ practices
                                 </p>
@@ -402,7 +402,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
                             <div class="lms-counter-card counter-yellow-bg text-white">
-                                <strong itemprop="size" class="custom-counter" data-count="5000"></strong><span itemprop="plus"
+                                <strong itemprop="size" class="custom-counter" data-count="5000"></strong><span
                                     class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">Questions</p>
                             </div>
@@ -414,7 +414,7 @@
                                 </span>
                             </div>
                             <div class="lms-counter-card counter-orange-bg text-white">
-                                <strong itemprop="size" class="custom-counter" data-count="60"></strong><span itemprop="plus" class="plus-icons">+</span>
+                                <strong itemprop="size" class="custom-counter" data-count="60"></strong><span class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">
                                     Cities
                                 </p>
@@ -436,7 +436,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -447,7 +447,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -458,7 +458,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -469,7 +469,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -480,7 +480,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
 
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143"
@@ -495,7 +495,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -506,7 +506,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
 
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143"
@@ -520,7 +520,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -531,7 +531,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course">
+                    <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -549,7 +549,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-35 text-center">
-                        <h2 itemprop="section title" class="font-40">Why choose Rurera assessments ?</h2>
+                        <h2 class="font-40">Why choose Rurera assessments ?</h2>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
