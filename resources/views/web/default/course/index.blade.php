@@ -4,6 +4,7 @@
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/css-stars.css">
     <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
+    <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css"/>
 @endpush
 
 @section('content')
@@ -363,7 +364,29 @@
                 </div>
             </div>
             <div class="modal-body">
-
+                <div class="subchapter-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -377,6 +400,7 @@
     <script src="/assets/default/vendors/video/video.min.js"></script>
     <script src="/assets/default/vendors/video/youtube.min.js"></script>
     <script src="/assets/default/vendors/video/vimeo.js"></script>
+    <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 
     <script>
         var webinarDemoLang = '{{ trans('webinars.webinar_demo') }}';
@@ -465,6 +489,21 @@ $(document).ready(function () {
     });
 });
 /*percent circle function end*/
+</script>
+<script>
+    $(document).ready(function () {
+        jQuery(".subchapter-slider .swiper-container").length > 0 &&
+        new Swiper(".subchapter-slider .swiper-container", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            breakpoints: {
+                320: { slidesPerView: 1, spaceBetween: 0 },
+                480: { slidesPerView: 1, spaceBetween: 0 },
+                640: { slidesPerView: 4, spaceBetween: 30 },
+            },
+        });
+    });
 </script>
 
 @endpush
