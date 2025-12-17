@@ -362,22 +362,22 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                    <img src="/assets/default/img/chap1" alt="chap1">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                    <img src="/assets/default/img/chap2" alt="chap2">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                    <img src="/assets/default/img/chap3" alt="chap3">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                    <img src="/assets/default/img/chap4" alt="chap4">
                                 </div>
                             </div>
                         </div>
