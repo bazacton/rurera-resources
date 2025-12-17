@@ -78,11 +78,11 @@
 .courses_fields .radio-buttons .card-radio .radio-btn {
     height: 100%;
 }
-.populated-data .input-holder {
+.set-work-container .input-holder {
     position: relative;
     width: 100%;
 }
-.years-group.populated-data .input-holder img {
+.set-work-container .input-holder img {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -92,7 +92,7 @@
     filter: invert(60%) sepia(12%) saturate(16%) hue-rotate(347deg) brightness(100%) contrast(86%);
     object-fit: contain;
 }
-.populated-data .input-holder img ~ input {
+.set-work-container .input-holder img ~ input {
     padding-right: 42px;
 }
 /*Range Slider Style Start*/
