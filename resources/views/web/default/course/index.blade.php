@@ -362,22 +362,22 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap1" alt="chap1">
+                                    <img src="/assets/default/img/chap1.jpg" alt="chap1">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap2" alt="chap2">
+                                    <img src="/assets/default/img/chap2.jpg" alt="chap2">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap3" alt="chap3">
+                                    <img src="/assets/default/img/chap3.jpg" alt="chap3">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap4" alt="chap4">
+                                    <img src="/assets/default/img/chap4.jpg" alt="chap4">
                                 </div>
                             </div>
                         </div>
