@@ -494,7 +494,7 @@ $(document).ready(function () {
 <script>
     let subchapterSwiper;
 
-    $('#yourModalId').on('shown.bs.modal', function () {
+    $('#subchapter-notes-modal').on('shown.bs.modal', function () {
 
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
