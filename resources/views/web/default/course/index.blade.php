@@ -489,29 +489,47 @@ $(document).ready(function () {
 /*percent circle function end*/
 </script>
 <script>
+
     let subchapterSwiper;
+
     $('#subchapter-notes-modal').on('shown.bs.modal', function () {
 
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
-                slidesPerView: 3,
                 loop: true,
+                centeredSlides: true,
+                slidesPerView: 3,
                 spaceBetween: 30,
+
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 },
+
                 breakpoints: {
-                    320: { slidesPerView: 1, spaceBetween: 0 },
-                    480: { slidesPerView: 1, spaceBetween: 0 },
-                    640: { slidesPerView: 3, spaceBetween: 30 }
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        centeredSlides: true
+                    },
+                    480: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        centeredSlides: true
+                    },
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        centeredSlides: true
+                    }
                 }
             });
         } else {
-            subchapterSwiper.update(); // important if modal opens again
+            subchapterSwiper.update();
         }
 
     });
+
 </script>
 
 @endpush
