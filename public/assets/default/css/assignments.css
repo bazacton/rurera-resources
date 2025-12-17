@@ -82,7 +82,8 @@
     position: relative;
     width: 100%;
 }
-.set-work-container .input-holder img {
+.set-work-container .input-holder img,
+.years-group.populated-data .input-holder img {
     position: absolute;
     top: 50%;
     right: 15px;
