@@ -146,7 +146,7 @@
                                                     class="font-24 font-weight-500 text-dark-charcoal pt-20">{{
                                                     $subscribe->title }}</h3>
                                                 <div class="d-flex align-items-start text-dark-charcoal mt-10">
-                                                    <span itemprop="price" class="font-36 line-height-1">{{ addCurrencyToPrice($subscribe->price) }}</span>
+                                                    <span class="font-36 line-height-1">{{ addCurrencyToPrice($subscribe->price) }}</span>
                                                 </div>
                                                 <span class="plan-label d-block font-weight-500 pt-20">For Teachers</span>
                                                 <ul class="plan-feature">

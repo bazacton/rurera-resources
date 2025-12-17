@@ -34,7 +34,7 @@
                 <h3 class="product-title font-weight-bold font-18" itemprop="title">{{ $product->title,'title' }}</h3>
             </a>
             <div class="product-price-box mt-15">
-                <span class="real" itemprop="price"><i data-feather="zap" width="20" height="20" class=""></i> {{ $product->point }} Coins</span>
+                <span class="real"><i data-feather="zap" width="20" height="20" class=""></i> {{ $product->point }} Coins</span>
             </div>
         </figcaption>
         <a class="bt-button cart-button" href="{{ $product->getUrl() }}" itemprop="url"><span>BUY</span></a>

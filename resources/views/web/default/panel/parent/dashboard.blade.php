@@ -446,7 +446,7 @@
                                                                                 <span>A simple start for everyone</span>
                                                                             </div>
                                                                             <div class="d-flex align-items-start mt-10 subscribe-price">
-                                                                                <span itemprop="price" class="font-36 line-height-1">
+                                                                                <span class="font-36 line-height-1">
                                                                                     {!! addCurrencyToPrice($subscribe->price, null, 'currency_small') !!}
                                                                                 </span>
                                                                                 <span class="yearly-price">$ 90 / year</span>
@@ -566,7 +566,7 @@
                                                     <span>A simple start for everyone</span>
                                                 </div>
                                                 <div class="d-flex align-items-start mt-10 subscribe-price">
-                                                    <span itemprop="price" class="font-36 line-height-1">
+                                                    <span class="font-36 line-height-1">
                                                         {!! addCurrencyToPrice($subscribe->price, null, 'currency_small') !!}
                                                         <em>/month</em>
                                                     </span>
@@ -647,7 +647,7 @@
                                                 <span>A simple start for everyone</span>
                                             </div>
                                             <div class="d-flex align-items-start mt-10 subscribe-price">
-                                                <span itemprop="price" class="font-36 line-height-1">
+                                                <span class="font-36 line-height-1">
                                                     {!! addCurrencyToPrice($subscribe->price, null, 'currency_small') !!}
                                                 </span>
                                                 <span class="yearly-price">$ 20 / year</span>

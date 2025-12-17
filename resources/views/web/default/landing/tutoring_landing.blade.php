@@ -690,7 +690,7 @@
                                     <input type="radio" id="one">
                                     <label for="one">
                                         <span class="plan-price">1 session per week</span>
-                                        <span itemprop="price" class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
+                                        <span class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
                                 <div class="d-flex align-items-start mb-50 subscribe-price best-price">
@@ -698,7 +698,7 @@
                                     <label for="two">
                                         <span class="best-option">Best Value</span>
                                         <span class="plan-price">1 session per week</span>
-                                        <span itemprop="price" class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
+                                        <span class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
@@ -720,7 +720,7 @@
                                     <input type="radio" id="three">
                                     <label for="three">
                                         <span class="plan-price">1 session per week</span>
-                                        <span itemprop="price" class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
+                                        <span class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
                                 <div class="d-flex align-items-start mb-50 subscribe-price best-price">
@@ -728,7 +728,7 @@
                                     <label for="four">
                                         <span class="best-option">Best Value</span>
                                         <span class="plan-price">2 sessions per week</span>
-                                        <span itemprop="price" class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
+                                        <span class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
@@ -752,7 +752,7 @@
                                     <input type="radio" id="five">
                                     <label for="five">
                                         <span class="plan-price">1 session per week</span>
-                                        <span itemprop="price" class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
+                                        <span class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
                                 <div class="d-flex align-items-start mb-50 subscribe-price best-price">
@@ -760,7 +760,7 @@
                                     <label for="six">
                                         <span class="best-option">Best Value</span>
                                         <span class="plan-price">2 sessions per week</span>
-                                        <span itemprop="price" class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
+                                        <span class="font-30 line-height-1 plan-prices yearly-price">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
