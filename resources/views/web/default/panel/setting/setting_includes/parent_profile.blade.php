@@ -259,11 +259,6 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                                 <label>Current Password</label>
                                                                 <div class="input-field">
                                                                     <input type="password" class="password" name="password" placeholder="Your current password" value="">
-                                                                    <div class="password-info">
-                                                                        <span class="item rule-length"><i class="info-icon">✔</i> 7+ characters</span>
-                                                                        <span class="item rule-number"><i class="info-icon">✔</i> At least one number</span>
-                                                                        <span class="item rule-common"><i class="info-icon">✔</i> Not a common password</span>
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-6 col-lg-6 col-md-6 form-group">
