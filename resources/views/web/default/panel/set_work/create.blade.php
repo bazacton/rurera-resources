@@ -1600,7 +1600,7 @@
                 },
                 data: {"subject_id": subject_id, "student_id": user_id},
                 success: function (return_data) {
-                    rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
+                    //rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
                     $(".practice-quiz-topics-list").html(return_data);
                     progress_cirlce_refresh();
                 }
