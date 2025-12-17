@@ -362,9 +362,11 @@
 }
 .select-topics .topics-table input[type=checkbox]:checked {
     border-color: transparent;
+    background-color: var(--primary);
 }
 .select-topics .topics-table input[type=checkbox]:checked:before {
     content: "✔";
+    color: #fff;
 }
 .select-topics .muted {
     color: #999;
