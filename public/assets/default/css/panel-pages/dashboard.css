@@ -365,7 +365,7 @@ body:has(.edit-profile) {background-color: #f9fafe;}
 .panel-content .spells-page .listing-search .inline-filters {position: relative; margin-bottom: 35px; }
 .panel-content .spells-page .listing-search .inline-filters a {min-height: auto; min-width: auto; border: 0; padding: 0 0 20px; border-radius: 0;}
 .panel-content .spells-page  .listing-search .inline-filters:before {height: 6px; width: 100%; position: absolute; left: 0; bottom: -2px; content: ""; background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%);}
-.panel-content .spells-page  .listing-search .inline-filters .active a {box-shadow: 0 -3px 0 0 #1b85fd inset;}
+.panel-content .spells-page  .listing-search .inline-filters .active a {box-shadow: 0 -3px 0 0 var(--primary) inset;}
 /* Spells Inline Filters Style End */
 /* Panel Stats For Subject and treasure-mission Style Start*/
 .panel-stats {background-color: #ebf3fe; padding: 25px 20px; border-radius: 5px; margin: 0 0 30px; position: relative; overflow: hidden;}
