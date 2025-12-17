@@ -380,6 +380,26 @@
                                     <img src="/assets/default/img/chap4.jpeg" alt="chap4">
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/assets/default/img/chap1.jpeg" alt="chap1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/assets/default/img/chap2.jpeg" alt="chap2">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/assets/default/img/chap3.jpeg" alt="chap3">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/assets/default/img/chap4.jpeg" alt="chap4">
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -498,7 +518,6 @@ $(document).ready(function () {
 
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
-                loop: true,
                 centeredSlides: true,
                 slidesPerView: 3,
                 spaceBetween: 30,
