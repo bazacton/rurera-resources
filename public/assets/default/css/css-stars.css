@@ -179,6 +179,9 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .subchapter-img-block img {
     max-width: 100%;
 }
+.subchapter-slider .swiper-container {
+    padding: 0 50px;
+}
 
 @media (max-width: 992px) {
     /* .lms-chapter-area .lms-chapter-ul {
