@@ -1,12 +1,12 @@
 @extends(getTemplate() .'.panel.layouts.panel_layout_full')
 
-@push('styles_top')
 <link rel="stylesheet" href="/assets/default/css/assignments.css">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <link rel="stylesheet" href="/assets/admin/vendor/daterangepicker/daterangepicker.min.css">
 <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
 <link rel="stylesheet" href="/assets/default/css/css-stars.css">
 <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css">
+@push('styles_top')
 <style>
     .wizard-steps{display:none;}
     .wizard-steps.active{display:block;}
