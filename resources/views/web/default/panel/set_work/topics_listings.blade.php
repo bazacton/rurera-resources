@@ -54,6 +54,13 @@
                                     </div>
                                 @else
                                     Not enough data
+                                    <div class="percent-holder">
+                                        <div class="chapter_percent circle-blue" data-percent="50">
+                                            <div class="circle_inner">
+                                                <div class="round_per"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 @endif
                             </td>
                             <td>
