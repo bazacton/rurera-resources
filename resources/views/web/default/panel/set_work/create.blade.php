@@ -192,7 +192,7 @@
 
                                                             </span>
                                     </label>
-                                    <label class="card-radio rurera-hide">
+                                    {{--<label class="card-radio rurera-hide">
                                         <input type="radio" name="ajax[new][assignment_topic_type]"
                                                class="assignemnet_types_selection" value="assignment">
                                         <span class="radio-btn"><i class="las la-check"></i>
@@ -201,7 +201,7 @@
                                                                 <h3>Custom Assignment</h3>
                                                             </div>
                                                         </span>
-                                    </label>
+                                    </label>--}}
                                 </div>
                                 <div class="invalid-feedback"></div>
                             </div>
