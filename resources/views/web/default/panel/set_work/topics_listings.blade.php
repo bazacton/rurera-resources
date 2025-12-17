@@ -27,7 +27,7 @@
                 </select>
             </div>
         </div>
-        <div class="topics-table-holder lms-chapter-ul-outer">
+        <div class="topics-table-holder lms-chapter-ul-outer table-sm">
             <table class="topics-table">
                 <thead>
                 <tr>
@@ -42,9 +42,9 @@
                     @foreach($listingData as $listingObj)
                         @php $performance = isset($listingObj->performance)? $listingObj->performance : 0; @endphp
                         <tr class="listing-data-row" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
-                            <td><input type="checkbox" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"></td>
-                            <td>{{isset($listingObj->title)? $listingObj->title : '-'}}</td>
-                            <td>
+                            <td data-th="Select"><input type="checkbox" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"></td>
+                            <td data-th="Topic">{{isset($listingObj->title)? $listingObj->title : '-'}}</td>
+                            <td data-th="Performance">
                                 @if($performance > 0)
                                     {{$performance}}
                                     <div class="percent-holder">
@@ -65,7 +65,7 @@
                                     </div>
                                 @endif
                             </td>
-                            <td>
+                            <td data-th="Last seen">
                                 @if(isset($listingObj->last_attempt) && $listingObj->last_attempt > 0)
                                     {{ dateTimeFormat($listingObj->last_attempt, 'j M Y') }}
                                 @else
