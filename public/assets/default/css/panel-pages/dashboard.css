@@ -346,6 +346,7 @@ body:has(.edit-profile) {background-color: #f9fafe;}
 .dashboard-banner-container h2 {position: relative; z-index: 1;}
 .dashboard-banner-container .dashboard-banner {position: absolute; right: 0; bottom: 0; height: 340px;}
 .rtl .dashboard-banner-container .dashboard-banner {left: 0; right: auto}
+.dashboard-banner-container .panel-view-btn {color: var(--primary);}
 .unread-notification-lists {min-height: 120px}
 @media(max-width:1650px) {
     .dashboard-banner-container .dashboard-banner {height: auto; width: 40%;}
