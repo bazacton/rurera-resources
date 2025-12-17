@@ -809,17 +809,16 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Start Date</label>
                                     <div class="input-group">
-                                        <input type="text" autocomplete="off"
-                                               name="ajax[new][assignment_start_date]"
-                                               value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
-                                               class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
-                                               min="{{date('Y-m-d')}}"
-                                               placeholder=""/>
-                                        @error('assignment_start_date')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
+                                        <div class="input-holder">
+                                            <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
+                                            <input type="text" autocomplete="off"
+                                                   name="ajax[new][assignment_start_date]"
+                                                   value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
+                                                   class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
+                                                   min="{{date('Y-m-d')}}"
+                                                   placeholder=""/>
                                         </div>
-                                        @enderror
+
                                     </div>
                                 </div>
                             </div>
@@ -827,12 +826,15 @@
                                 <div class="form-group">
                                     <label class="input-label">Practice Due Date</label>
                                     <div class="input-group">
-                                        <input type="text" autocomplete="off"
-                                               name="ajax[new][assignment_end_date]"
-                                               value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
-                                               class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
-                                               placeholder=""/>
-                                        <div class="invalid-feedback"></div>
+                                        <div class="input-holder">
+                                            <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
+                                            <input type="text" autocomplete="off"
+                                                   name="ajax[new][assignment_end_date]"
+                                                   value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
+                                                   class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
+                                                   placeholder=""/>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -905,7 +907,7 @@
                         </div>
 
 
-                        <div class="form-group rurera_common_hide_field no_of_questions_field">
+                        <div class="row form-group rurera_common_hide_field no_of_questions_field">
 
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                 <div class="form-group">
@@ -1949,8 +1951,6 @@
     });
 
 
-
-
     $(document).ready(function () {
 
         if ($(".assignemnet_types_selection").length > 0) {
@@ -1963,59 +1963,37 @@
                 $(this).change()
             });
         }
-
     });
 
 
 
-
-</script>
-<script>
-    const checkboxes = document.querySelectorAll('.topic-check');
-    const chipsContainer = document.querySelector('.selected-topics .chips');
-    const countText = document.querySelector('.selected-topics .count');
-
-    function updateSelectedTopics() {
-        chipsContainer.innerHTML = '';
-        let selected = [];
-
-        checkboxes.forEach(cb => {
-            if (cb.checked) {
-                selected.push(cb.dataset.topic);
-
-                const chip = document.createElement('div');
-                chip.className = 'chip';
-                chip.innerHTML = `
-                    ${cb.dataset.topic}
-                    <button data-topic="${cb.dataset.topic}">&times;</button>
-                `;
-                chipsContainer.appendChild(chip);
+    $(document).ready(function () {
+        $(".chapter_percent").each(function() {
+            var $this = $(this),
+                $dataV = $this.data("percent"),
+                $dataDeg = $dataV * 3.6,
+                $round = $this.find(".round_per");
+            $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+            $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
+            $this.prop('Counter', 0).animate({Counter: $dataV},
+                {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $this.find(".percent_text").text(Math.ceil(now));
+                    }
+                });
+            if($dataV >= 51){
+                $round.css("transform", "rotate(" + 360 + "deg)");
+                setTimeout(function(){
+                    $this.addClass("percent_more");
+                },1000);
+                setTimeout(function(){
+                    $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+                },1000);
             }
         });
-
-        countText.textContent = `${selected.length} topics selected`;
-    }
-
-    /* Checkbox change */
-    checkboxes.forEach(cb => {
-        cb.addEventListener('change', updateSelectedTopics);
     });
-
-    /* Remove chip (× click) */
-    chipsContainer.addEventListener('click', function (e) {
-        if (e.target.tagName === 'BUTTON') {
-            const topic = e.target.dataset.topic;
-
-            checkboxes.forEach(cb => {
-                if (cb.dataset.topic === topic) {
-                    cb.checked = false;
-                }
-            });
-
-            updateSelectedTopics();
-        }
-    });
-
 </script>
 
 @endpush
