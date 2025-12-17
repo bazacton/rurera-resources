@@ -383,6 +383,9 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
+                        <div class="swiper-progress">
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -489,10 +492,9 @@ $(document).ready(function () {
 /*percent circle function end*/
 </script>
 <script>
-
     let subchapterSwiper;
 
-    $('#subchapter-notes-modal').on('shown.bs.modal', function () {
+    $('#yourModalId').on('shown.bs.modal', function () {
 
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
@@ -504,6 +506,11 @@ $(document).ready(function () {
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar'   // 👈 progress line
                 },
 
                 breakpoints: {
