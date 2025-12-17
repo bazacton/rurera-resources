@@ -5458,3 +5458,10 @@ p {line-height: 1.5;}
 .rurera-list-btn:hover {background-color: #f5f5f5;}
 .resume-test .rurera-list-btn:hover {color: var(--primary);}
 /* Rurera List Button Style End */
+
+/* Date Calendar Style Start */
+.parent-panel .daterangepicker td.active, 
+.parent-panel .daterangepicker td.active:hover {
+    background-color: var(--primary)
+}
+/* Date Calendar Style End */
