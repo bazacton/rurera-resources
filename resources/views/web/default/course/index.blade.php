@@ -353,7 +353,7 @@
 
 
 <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <button type="button" class="close" ><a href="/{{panelRoute()}}/set-work"><span aria-hidden="true">×</span></a></button>
             <div class="modal-body">
