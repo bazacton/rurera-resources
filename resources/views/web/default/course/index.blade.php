@@ -355,14 +355,7 @@
 <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="panel-header">
-                <div class="modal-logo"><img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"></div>
-                <span class="steps-counter">Step 1</span>
-                <button type="button" class="close" ><a href="/{{panelRoute()}}/set-work">Close <span aria-hidden="true">×</span></a></button>
-                <div class="progress-line">
-                    <span class="progress-count" style="width: 30%;"></span>
-                </div>
-            </div>
+            <button type="button" class="close" ><a href="/{{panelRoute()}}/set-work">Close <span aria-hidden="true">×</span></a></button>
             <div class="modal-body">
                 <div class="subchapter-slider">
                     <div class="swiper-container">
