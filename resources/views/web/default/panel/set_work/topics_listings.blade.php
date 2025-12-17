@@ -17,7 +17,7 @@
     <div class="subject-filters">
 
         @if(!empty( $parentData))
-            <button class="chip parent-filters" data-id="all">All</button>
+            <button class="chip parent-filters active" data-id="all"><span class="active-tick">✓</span> All</button>
             @foreach( $parentData as $parentObj)
                 <button class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
             @endforeach
