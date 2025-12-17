@@ -796,7 +796,7 @@
                     <div class="newsletter-inner">
                         <div class="row">
                             <div class="col-12 col-lg-8 col-md-8">
-                                <h2 itemprop="title" class="mb-10 text-white font-40">Kickstart your SATs Exam Prep today</h2>
+                                <h2 class="mb-10 text-white font-40">Kickstart your SATs Exam Prep today</h2>
                                 <p itemprop="description" class="mb-0 text-white font-16">
                                     Let us help you achieve the score you deserve and unlock <br/>
                                     doors to your future academic success.

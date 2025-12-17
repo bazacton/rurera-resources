@@ -8,7 +8,7 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-12 col-md-12 col-lg-7">
-          <h1 itemprop="title" class="font-72 font-weight-bold">Dive into the World of <span class="text-scribble">Books!</span>
+          <h1 class="font-72 font-weight-bold">Dive into the World of <span class="text-scribble">Books!</span>
           </h1>
           <strong class="d-block font-36">Read Anywhere, Anytime!</strong>
           <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading grow every day!</p>
@@ -111,7 +111,7 @@
                 <img src="/assets/default/svgs/book2.svg" alt="support" title="support" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 itemprop="title" class="font-24 mb-10">Book Chapter Quizzes</h2>
+                <h2 class="font-24 mb-10">Book Chapter Quizzes</h2>
                 <p itemprop="description" class="text-dark-charcoal">Your ultimate resource help for resolving quizzes and practices.</p>
               </div>
             </div>
@@ -124,7 +124,7 @@
                 <img src="/assets/default/svgs/analysis.svg" alt="knowledge" title="knowledge" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 itemprop="title" class="font-24 mb-10">Assessments &amp; Tests</h2>
+                <h2 class="font-24 mb-10">Assessments &amp; Tests</h2>
                 <p itemprop="description" class="text-dark-charcoal">Get assessments related to your reading interests and level.</p>
               </div>
             </div>
@@ -137,7 +137,7 @@
                 <img src="/assets/default/svgs/coins-money.svg" alt="technical" title="technical" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 itemprop="title" class="font-24 mb-10">Earn Reading Rewards</h2>
+                <h2 class="font-24 mb-10">Earn Reading Rewards</h2>
                 <p itemprop="description" class="text-dark-charcoal">The more you read, the more you'll earn Coin Points, giving you even more.</p>
               </div>
             </div>
@@ -212,7 +212,7 @@
       <div class="row">
         <div class="col-12 col-lg-12">
           <div class="section-title mb-50">
-            <h2 itemprop="title" class="text-dark-charcoal text-white font-40">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
+            <h2 class="text-dark-charcoal text-white font-40">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
             <p class="font-19 pt-10 text-white"> Discover ebooks, fiction books, board books, kids stories , children books, and more from Rurera book shelf.</p>
           </div>
         </div>
@@ -226,7 +226,7 @@
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" width="20" height="21" itemprop="image" loading="eager">
                       <img src="/assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="#">Enjoy Every E-Book Adventure:</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera lets you access books in various digital. This feature ensures that you can read your ebooks on any device, making reading convenient.</div>
@@ -242,7 +242,7 @@
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Uncover Your Progress:" title="Uncover Your Progress:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="/assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/register">Uncover Your Progress:</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Monitors how much you’ve read, offering detailed insights into your reading habits and growth. It helps you understand your progress and set goals for better reading.</div>
@@ -258,7 +258,7 @@
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Personalized Learning Pathways:" title="Personalized Learning Pathways:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="/assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="#">Personalized Learning Pathways:</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">With Rurera, educators can easily tailor literacy development for each student, regardless of age or skill level. Enjoy targeted support and easy differentiation to boost every student’s progress.</div>
@@ -275,7 +275,7 @@
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Awesome Rewards as You Read:" title="Awesome Rewards as You Read:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="/assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="#">Awesome Rewards as You Read:</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Keep reading to earn Coin Points, which can be exchanged for your favorite toys. The more you read, the more points you earn, leading to even more exciting rewards!</div>
@@ -291,7 +291,7 @@
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Effortless Student Engagement:" title="Effortless Student Engagement:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="/assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/register">Effortless Student Engagement:</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera’s built-in rewards system motivates students by recognizing their achievements. As they learn more, they earn rewards, keeping them excited and engaged with their learning journey.</div>
@@ -307,7 +307,7 @@
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Reporting Made Easy:" title="Reporting Made Easy:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="/assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/rewards">Reporting Made Easy:</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera simplifies task assignments, personalized learning, and reporting. The platform helps teachers efficiently manage literacy across all subjects, saving time and supporting effective instruction.</div>
@@ -451,7 +451,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>

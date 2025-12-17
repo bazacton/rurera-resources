@@ -56,7 +56,7 @@
 </div>
     <div class="col-12 col-lg-12 col-md-12">
         <div class="section-title mb-30">
-            <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a>National Competition</h2>
+            <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a>National Competition</h2>
         </div>
     </div>
     <div class="col-12 col-lg-12 col-md-12">
@@ -98,7 +98,7 @@
     <div class="col-12">
         <div class="group-table timestables-mode-block bg-white panel-border rounded-sm p-20 mb-50">
             <div class="section-title mb-30">
-                <h2 itemprop="title" class="font-22 mb-0">Group A</h2>
+                <h2 class="font-22 mb-0">Group A</h2>
             </div>
             <table class="simple-table text-left">
                 <thead>

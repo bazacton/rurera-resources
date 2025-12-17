@@ -18,7 +18,7 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-12 col-md-12 col-lg-7">
-          <h1 itemprop="title" class="font-50 font-weight-bold"> Empower yourself through <br> reading <span class="text-scribble">books</span>
+          <h1 class="font-50 font-weight-bold"> Empower yourself through <br> reading <span class="text-scribble">books</span>
           </h1>
           <strong class="d-block font-36">Read to lead, read to succeed!</strong>
           <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20"> Access Rurera bookshelf anytime, anywhere, ensuring seamless <br> reading experiences and chance to get rewards. </p>
@@ -144,7 +144,7 @@
                 <img src="../assets/default/svgs/book2.svg" alt="support" title="support" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 itemprop="title" class="font-24 mb-10">Book Chapter Quizzes</h2>
+                <h2 class="font-24 mb-10">Book Chapter Quizzes</h2>
                 <p itemprop="description" class="text-dark-charcoal">Your ultimate resource help for resolving quizzes and practices.</p>
               </div>
             </div>
@@ -157,7 +157,7 @@
                 <img src="../assets/default/svgs/analysis.svg" alt="knowledge" title="knowledge" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 itemprop="title" class="font-24 mb-10">Assessments &amp; Tests</h2>
+                <h2 class="font-24 mb-10">Assessments &amp; Tests</h2>
                 <p itemprop="description" class="text-dark-charcoal">Get assessments related to your reading interests and level.</p>
               </div>
             </div>
@@ -170,7 +170,7 @@
                 <img src="../assets/default/svgs/coins-money.svg" alt="technical" title="technical" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 itemprop="title" class="font-24 mb-10">Earn Reading Rewards</h2>
+                <h2 class="font-24 mb-10">Earn Reading Rewards</h2>
                 <p itemprop="description" class="text-dark-charcoal">The more you read, the more you'll earn Coin Points, giving you even more.</p>
               </div>
             </div>
@@ -190,7 +190,7 @@
                     @if( !empty( $books ))
                     @foreach( $books as $book_category => $category_books)
                     <div class="col-lg-12">
-                        <h3 class="mb-10 font-36" itemprop="title">{{$book_category}}</h3>
+                        <h3 class="mb-10 font-36">{{$book_category}}</h3>
                         <span class="mb-35 d-block" itemprop="sub title">For kids ages 0-3</span>
                     </div>
                     @if( !empty( $category_books ))
@@ -210,7 +210,7 @@
 
                                 <div class="col-12 col-lg-6 col-md-5">
                                     <div class="text-holder">
-                                        <h3 itemprop="title"><a href="/books/{{$bookData->book_slug}}" itemprop="url">{{$bookData->book_title}}</a></h3>
+                                        <h3><a href="/books/{{$bookData->book_slug}}" itemprop="url">{{$bookData->book_title}}</a></h3>
                                         <ul itemprop="books info list">
                                             <li><span itemprop="info text">Reading Level :</span>{{$bookData->reading_level }}</li>
                                             <li><span itemprop="info text">Interest Area :</span>{{$bookData->interest_area }}</li>
@@ -265,7 +265,7 @@
       <div class="row">
         <div class="col-12 col-lg-12">
           <div class="section-title mb-50">
-            <h2 itemprop="title" class="text-dark-charcoal text-white font-40">Inspiring every student to Read and show their <span class="text
+            <h2 class="text-dark-charcoal text-white font-40">Inspiring every student to Read and show their <span class="text
   scribble">best.</span>
             </h2>
             <p class="font-19 pt-10 text-white"> Discover ebooks, fiction books, board books, kids stories , children books, and more from Rurera book shelf. <br> Truly Loved by millions of readers worldwide! </p>
@@ -280,7 +280,7 @@
                     <div class="blog-grid-image">
                       <img src="../assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="https://rurera.chimpstudio.co.uk/activity">Reading Progress and Statistics</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"> It offers reading progress, like percentage of the book read or estimated time remaining to finish a chapter or the entire book along with reading speed or total reading time. </div>
@@ -295,7 +295,7 @@
                     <div class="blog-grid-image">
                       <img src="../assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="https://rurera.chimpstudio.co.uk/register">E-Book Formats</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"> Another exciting feature is an out-stream book reading format for web. It provide an enticing, interactive, silent highlight and scroll through content. </div>
@@ -310,7 +310,7 @@
                     <div class="blog-grid-image">
                       <img src="../assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
-                    <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
+                    <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="https://rurera.chimpstudio.co.uk/rewards">Get Rewards</a>
                     </h3>
                     <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"> Continue Reading the books and earn Coin Points that can be later exchanged with your favorite toys. The more you read, the more you'll earn Coin Points, giving you even more. </div>
@@ -391,7 +391,7 @@
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
           <div class="section-title text-center mb-50">
-            <h2 itemprop="title" class="font-40 mb-10 text-dark-charcoal">Blog</h2>
+            <h2 class="font-40 mb-10 text-dark-charcoal">Blog</h2>
             <p itemprop="description">Get to know more about latest news, resources and much more.</p>
           </div>
         </div>
@@ -490,7 +490,7 @@
       <div class="row">
         <div class="col-12">
           <div class="lms-text-holder d-flex flex-column justify-content-center text-center" itemscope="" itemtype="https://schema.org/lms-text-holder">
-            <h2 itemprop="title" class="mb-20 text-white font-40">Find Your Next Book to Read!</h2>
+            <h2 class="mb-20 text-white font-40">Find Your Next Book to Read!</h2>
             <p class="text-white font-19" itemprop="description"> In the digital realm, students have discovered the convenience and accessibility of online book reading, <br> allowing them to explore a vast library of resources anytime and anywhere. </p>
             <div class="lms-btn-group mt-30 justify-content-center">
               <a itemprop="url" href="https://rurera.chimpstudio.co.uk/register" class="lms-btn rounded-pill text-white border-white">Get Started</a>

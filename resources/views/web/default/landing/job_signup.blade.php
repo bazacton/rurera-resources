@@ -9,7 +9,7 @@
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-12 col-md-12 col-lg-6">
-                <h1 itemprop="title" class="font-72 font-weight-bold"><span class="text-scribble mr-10">Job</span>Opportunities at Rurera</h1>
+                <h1 class="font-72 font-weight-bold"><span class="text-scribble mr-10">Job</span>Opportunities at Rurera</h1>
                 <p itemprop="description">We are a dynamic and innovative company, constantly striving for excellence in everything we do. Joining our team <br> means joining a diverse and inclusive learning environment where collaboration and creativity are valued.</p>
                 <a itemprop="url" href="#job-options" class="btn-primary rounded-pill">Find new positions</a>
             </div>
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="mt-0 mb-10 font-40">Hiring<span class="text-scribble ml-10">Process</span></h2>
+                        <h2 class="mt-0 mb-10 font-40">Hiring<span class="text-scribble ml-10">Process</span></h2>
                         <p itemprop="description">Interested candidates can submit their applications and can apply jobs. The hiring team will review the received <br> resumes and shortlist candidates based on their qualifications, relevant experience, and skills.</p>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="process-card-body">
                             <div class="text-holder">
-                                <h2 itemprop="title" class="post-title">Fill Application</h2>
+                                <h2 class="post-title">Fill Application</h2>
                                 <p itemprop="description" class="mt-15">thoroughly with personal info, work experience, and qualifications.</p>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                         </div>
                         <div class="process-card-body">
                             <div class="text-holder">
-                                <h2 itemprop="title" class="post-title">Get Shortlisted</h2>
+                                <h2 class="post-title">Get Shortlisted</h2>
                                 <p itemprop="description" class="mt-15">if you meet requirements, stay informed about next steps.</p>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                         </div>
                         <div class="process-card-body">
                             <div class="text-holder">
-                                <h2 itemprop="title" class="post-title">Prepare For Interview</h2>
+                                <h2 class="post-title">Prepare For Interview</h2>
                                 <p itemprop="description" class="mt-15">research company, practice common questions, show enthusiasm.</p>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                         </div>
                         <div class="process-card-body">
                             <div class="text-holder">
-                                <h2 itemprop="title" class="post-title">Get Hired</h2>
+                                <h2 class="post-title">Get Hired</h2>
                                 <p itemprop="description" class="mt-15">await official offer letter, join our team. Congratulations!</p>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="mt-0 mb-10 font-40">Job perks</h2>
+                        <h2 class="mt-0 mb-10 font-40">Job perks</h2>
                         <p itemprop="description">Joining a company dedicated to reshaping the teaching and learning process means <br> you have the opportunity to make a meaningful impact on education.</p>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                         <div class="stat-icon-box teacher">
                             <img src="../assets/default/svgs/healthcare.svg" width="60" height="70" itemprop="svg image" alt="Healthcare">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Healthcare benefits</h2>
+                        <h2 class="stat-title">Healthcare benefits</h2>
                         <p itemprop="description" class="stat-desc mt-10">100% medical facility, maternity, and vision</p>
                     </div>
                 </div>
@@ -186,7 +186,7 @@
                         <div class="stat-icon-box student">
                             <img src="../assets/default/svgs/flextime.svg" title="default staff image" width="60" height="70" itemprop="svg image" alt="Healthcare">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Flextime</h2>
+                        <h2 class="stat-title">Flextime</h2>
                         <p itemprop="description" class="stat-desc mt-10">Full time remote and online work opportunity</p>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                         <div class="stat-icon-box video">
                             <img src="../assets/default/svgs/vacations.svg" width="60" height="70" itemprop="svg image" alt="Vacations">    
                         </div>
-                        <h2 itemprop="title" class="stat-title">Vacations</h2>
+                        <h2 class="stat-title">Vacations</h2>
                         <p itemprop="description" class="stat-desc mt-10">Predetermined amount of days each year.</p>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                         <div class="stat-icon-box course">
                             <img src="../assets/default/svgs/competitive.svg" width="60" height="70" itemprop="svg image" alt="Competitive salaries">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Competitive salaries </h2>
+                        <h2 class="stat-title">Competitive salaries </h2>
                         <p itemprop="description" class="stat-desc mt-10">It help and retain valuable employees</p>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                         <div class="stat-icon-box teacher">
                             <img src="../assets/default/svgs/free-meals.svg" width="60" height="70" itemprop="svg image" alt="Free meals">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Free meals</h2>
+                        <h2 class="stat-title">Free meals</h2>
                         <p itemprop="description" class="stat-desc mt-10">Offering healthy meal for employees</p>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                         <div class="stat-icon-box student">
                             <img src="../assets/default/svgs/mental-health.svg" width="60" height="70" itemprop="svg image" alt="Mental health">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Mental health support</h2>
+                        <h2 class="stat-title">Mental health support</h2>
                         <p itemprop="description" class="stat-desc mt-10">Provides counseling services with big changes</p>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
                         <div class="stat-icon-box video">
                             <img src="../assets/default/svgs/continuing-edu.svg" width="60" height="70" itemprop="svg image" alt="Continuing education">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Continuing education</h2>
+                        <h2 class="stat-title">Continuing education</h2>
                         <p itemprop="description" class="stat-desc mt-10">Provide opportunities to complete studies</p>
                     </div>
                 </div>
@@ -240,7 +240,7 @@
                         <div class="stat-icon-box course">
                             <img src="../assets/default/svgs/travel-fund.svg" width="60" height="70" itemprop="svg image" alt="Travel Fund">
                         </div>
-                        <h2 itemprop="title" class="stat-title">Freedom fund to travel</h2>
+                        <h2 class="stat-title">Freedom fund to travel</h2>
                         <p itemprop="description" class="stat-desc mt-10">Chance to travel and enjoy hotel free credits</p>
                     </div>
                 </div>
@@ -252,7 +252,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="mb-10 font-40">Open Positions</h2>
+                        <h2 class="mb-10 font-40">Open Positions</h2>
                         <p itemprop="description">We are always seeking talented individuals to join our team and contribute <br /> to our success. Explore some new positions:</p>
                     </div>
                     <div class="lms-accordion-job accordion" id="accordionExample">
@@ -264,9 +264,9 @@
                             </div>
                             <div id="collapse_1" class="collapse" aria-labelledby="heading_1" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Senior Software Developer to join our dynamic team. As a Senior Software Developer, you will be responsible for designing, developing, and implementing high-quality software solutions. You will collaborate with cross-functional teams to analyze user requirements, create technical specifications, and deliver robust software applications.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design, develop, and maintain efficient and scalable software solutions in accordance with project requirements and coding standards.</li>
                                         <li>Collaborate with product managers, business analysts, and software engineers to gather and analyze user requirements and translate them into technical specifications.</li>
@@ -276,7 +276,7 @@
                                         <li>Participate in Agile/Scrum development processes, including sprint planning, daily stand-ups, and retrospectives.</li>
                                         <li>Collaborate with quality assurance teams to ensure software meets quality standards and is thoroughly tested.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.</li>
                                         <li>Proven work experience as a Senior Software Developer or similar role.</li>
@@ -290,7 +290,7 @@
                                         <li>A passion for continuous learning and staying up-to-date with emerging technologies and industry trends.</li>
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the development of innovative and impactful software solutions. As a Senior Software Developer, you will have the opportunity to make a significant impact, lead technical initiatives, and contribute to the growth and success of our organization.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -308,9 +308,9 @@
                             </div>
                             <div id="collapse_2" class="collapse" aria-labelledby="heading_2" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Database Administrator to join our team. As a Database Administrator, you will be responsible for the performance, integrity, and security of our databases. You will work closely with software developers, system administrators, and other stakeholders to ensure the efficient operation of our database systems.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Install, configure, and maintain database management systems (DBMS) to ensure optimal performance, availability, and security.</li>
                                         <li>Design and implement database structures, schemas, and tables based on application requirements and best practices.</li>
@@ -323,7 +323,7 @@
                                         <li>Troubleshoot and resolve database-related issues, working closely with cross-functional teams to identify root causes and implement solutions.</li>
                                         <li>Document database configurations, procedures, and troubleshooting steps for reference and knowledge sharing.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's degree in Computer Science, Information Technology, or a related field.</li>
                                         <li>Proven work experience as a Database Administrator or in a similar role.</li>
@@ -337,7 +337,7 @@
                                         <li>Strong communication and collaboration skills, with the ability to work effectively with cross-functional teams.</li>
                                     </ul>
                                     <p itemprop="description">In summary, as a Database Administrator, you will play a crucial role in designing, implementing, and maintaining efficient and secure database systems. You will monitor performance, troubleshoot issues, optimize queries, ensure data integrity, and collaborate with various stakeholders to meet the organization's data management needs.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -355,9 +355,9 @@
                             </div>
                             <div id="collapse_3" class="collapse" aria-labelledby="heading_3" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Math Assessment Specialist to join our team. As a Math Assessment Specialist, you will play a crucial role in developing and implementing effective math assessment strategies and materials. You will work closely with curriculum developers, educators, and other stakeholders to ensure high-quality math assessments that align with educational standards.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop math assessment materials, including test items, rubrics, scoring guides, and performance tasks.</li>
                                         <li>Collaborate with curriculum developers to align assessments with educational standards and learning objectives.</li>
@@ -370,7 +370,7 @@
                                         <li>Provide insights and recommendations based on assessment data to inform instructional decisions and improve teaching practices.</li>
                                         <li>Generate reports and visualizations to communicate assessment findings to educators, administrators, and other stakeholders.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Mathematics, Education, or a related field.</li>
                                         <li>Strong knowledge of mathematics curriculum, instructional practices, and educational standards.</li>
@@ -384,7 +384,7 @@
                                         
                                     </ul>
                                     <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the improvement of math education through the development and analysis of high-quality assessments. Join our team and make a positive impact on students' learning outcomes.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -402,9 +402,9 @@
                             </div>
                             <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Math Curriculum Designer to join our education team. As a Math Curriculum Designer, you will play a key role in developing and designing a comprehensive and effective math curriculum that aligns with educational standards and meets the needs of students and educators. You will collaborate with subject matter experts, instructional designers, and educators to create engaging and rigorous math curricula that promote conceptual understanding and support student learning.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based math curriculum for specific grade levels or courses.</li>
                                         <li>Create detailed curriculum maps, scope and sequence documents, and lesson plans that outline learning objectives, instructional strategies, and assessments.</li>
@@ -417,7 +417,7 @@
                                         <li>Integrate formative and summative assessments into the curriculum to monitor student progress and provide timely feedback.</li>
                                         <li>Design and align assessments with learning objectives and curriculum content to measure student mastery of math concepts and skills.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Mathematics, Education, or a related field.</li>
                                         <li>Strong knowledge of math education principles, curriculum development, and educational standards.</li>
@@ -430,7 +430,7 @@
                                         <li>Familiarity with educational technology tools and platforms used in math instruction is a plus.</li>
                                     </ul>
                                      <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the development of a high-quality math curriculum that empowers students and supports effective teaching. Join our team and make a positive impact on math education.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -448,9 +448,9 @@
                             </div>
                             <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking an Associate Digital Designer to join our creative team. As an Associate Digital Designer, you will support the design and production of digital assets for various digital platforms. Your role will involve collaborating with the design team to create visually appealing and engaging digital materials that effectively communicate our brand's message and enhance user experience.</p>  
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Assist in the creation and execution of digital designs, including website graphics, social media assets, email templates, banners, and display ads.</li>
                                         <li>Follow brand guidelines and design principles to ensure consistency and alignment with the brand identity.</li>
@@ -463,7 +463,7 @@
                                         <li>Participate in design discussions, share ideas, and provide input on creative concepts.</li>
                                         <li>Communicate design ideas effectively and present work to internal teams for feedback and review.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's degree in Graphic Design, Digital Design, or a related field (or equivalent experience).</li>
                                         <li>Strong portfolio showcasing digital design skills and proficiency in design software such as Adobe Creative Suite (Photoshop, Illustrator, InDesign).</li>
@@ -475,7 +475,7 @@
                                         <li>Passion for staying updated with industry trends and emerging digital design techniques.</li>
                                     </ul>
                                     <p itemprop="description">Join our creative team and contribute to the development of visually stunning digital assets that engage and inspire our audience. This is an excellent opportunity to grow your digital design skills and make a significant impact on our brand's digital presence.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -493,9 +493,9 @@
                             </div>
                             <div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Science Curriculum Designer to join our education team. As a Science Curriculum Designer, you will play a critical role in developing and designing a comprehensive and engaging science curriculum that aligns with educational standards and promotes inquiry-based learning. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster scientific understanding, critical thinking, and hands-on exploration.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based science curriculum for specific grade levels or courses.</li>
                                         <li>Create detailed curriculum maps, scope and sequence documents, and lesson plans that outline learning objectives, instructional strategies, and assessments.</li>
@@ -508,7 +508,7 @@
                                         <li>Integrate formative and summative assessments into the curriculum to monitor student progress and provide timely feedback.</li>
                                         <li>Design and align assessments with learning objectives and curriculum content to measure student mastery of science concepts and skills.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Science Education, Biology, Chemistry, Physics, or a related field.</li>
                                         <li>Strong knowledge of science education principles, curriculum development, and educational standards.</li>
@@ -521,7 +521,7 @@
                                         <li>Familiarity with educational technology tools and platforms used in science instruction is a plus.</li>
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the development of a high-quality science curriculum that sparks students' curiosity, promotes scientific literacy, and fosters a love for learning. This is an exciting opportunity to make a positive impact on science education.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -539,9 +539,9 @@
                             </div>
                             <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a talented and detail-oriented Content Production Specialist to join our team. As a Content Production Specialist, you will be responsible for creating, editing, and managing various types of content across multiple platforms. Your role will involve working closely with the content team to ensure the production of high-quality and engaging content that meets our brand standards and resonates with our target audience.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Create original content, including articles, blog posts, social media posts, videos, and other multimedia materials.</li>
                                         <li>Edit and proofread content for grammar, clarity, style, and adherence to brand guidelines.</li>
@@ -555,7 +555,7 @@
                                         <li>Implement strategies to maximize content engagement, reach, and conversion.</li>
                                         <li>Generate reports and provide insights to guide content strategy and optimization efforts.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's degree in Communications, Journalism, Marketing, or a related field (or equivalent experience).</li>
                                         <li>Proven experience in content creation, writing, editing, or related roles.</li>
@@ -569,7 +569,7 @@
                                         <li>Good communication skills and ability to work effectively with cross-functional teams.</li>
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the production of compelling and engaging content that captivates our audience and supports our brand goals. This is an exciting opportunity to showcase your creativity, writing skills, and attention to detail in a dynamic content production role.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -587,9 +587,9 @@
                             </div>
                             <div id="collapse_77" class="collapse" aria-labelledby="heading_77" data-parent="#accordionExample">
                                 <div class="card-body">      
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Language Arts Curriculum Designer to join our education team. As a Language Arts Curriculum Designer, you will play a crucial role in developing and designing a comprehensive and engaging language arts curriculum that aligns with educational standards and promotes literacy and language development. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster reading, writing, communication, and critical thinking skills.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based language arts curriculum for specific grade levels or courses.</li>
                                         <li>Create detailed curriculum maps, scope and sequence documents, and lesson plans that outline learning objectives, instructional strategies, and assessments.</li>
@@ -603,7 +603,7 @@
                                         <li>Review and evaluate the effectiveness of the language arts curriculum, solicit feedback from educators, and make revisions as necessary.</li>
                                         <li>Generate reports and provide insights to guide content strategy and optimization efforts.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Education, English, or a related field.</li>
                                         <li>Strong knowledge of language arts education principles, curriculum development, and educational standards.</li>
@@ -617,7 +617,7 @@
                                         <li>Familiarity with educational technology tools and platforms used in language arts instruction is a plus.</li>
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the development of a high-quality language arts curriculum that nurtures literacy skills and fosters a love for reading and writing. This is an exciting opportunity to make a positive impact on language arts education.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -635,9 +635,9 @@
                             </div>
                             <div id="collapse_78" class="collapse" aria-labelledby="heading_78" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and detail-oriented QA Analyst to join our quality assurance team. As a QA Analyst, you will be responsible for ensuring the quality and reliability of our software products through rigorous testing and defect identification. Your role will involve designing and executing test plans, conducting functional and regression testing, and collaborating with cross-functional teams to deliver high-quality software solutions.</p>
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Collaborate with product managers, business analysts, and developers to understand project requirements and define test objectives.</li>
                                         <li>Develop comprehensive test plans, test cases, and test scripts based on functional specifications and user stories.</li>
@@ -651,7 +651,7 @@
                                         <li>Analyze and troubleshoot defects to identify root causes and provide detailed defect reports.</li>
                                         <li>Collaborate with developers to reproduce and debug defects, ensuring accurate and thorough defect information is communicated.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's degree in Computer Science, Information Technology, or a related field.</li>
                                         <li>Proven experience as a QA Analyst or in a similar quality assurance role.</li>
@@ -665,7 +665,7 @@
                                         <li>Strong communication and collaboration skills to work effectively in a team environment.</li>
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the delivery of high-quality software solutions. As a QA Analyst, you will have the opportunity to ensure the reliability and functionality of our products through comprehensive testing and quality assurance practices.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -684,10 +684,10 @@
                             <div id="collapse_8" class="collapse" aria-labelledby="heading_8" data-parent="#accordionExample">
                                 <div class="card-body">
                                     
-                                    <h3 itemprop="title" class="font-24">Overview</h3>
+                                    <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a highly skilled and experienced Senior UI/UX Designer to join our design team. As a Senior UI/UX Designer, you will be responsible for creating intuitive and visually appealing user interfaces and seamless user experiences across various digital platforms. Your role will involve leading the UI/UX design process, collaborating with cross-functional teams, and ensuring the delivery of exceptional design solutions that meet user needs and business objectives.</p>
                                     
-                                    <h3 itemprop="title" class="font-24">Responsibilities</h3>
+                                    <h3 class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Lead the end-to-end UI/UX design process, from conceptualization to execution, for digital products and experiences.</li>
                                         <li>Create wireframes, interactive prototypes, and high-fidelity designs that effectively communicate user flows, interactions, and visual designs.</li>
@@ -701,7 +701,7 @@
                                         <li>Create design assets, including icons, graphics, and visual elements, to support the UI/UX design.</li>
                                         <li>Iteratively refine UI/UX designs based on user feedback, usability findings, and analytics data.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h3>
+                                    <h3 class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Design, Human-Computer Interaction, or a related field.</li>
                                         <li>Extensive experience in UI/UX design, including wireframing, prototyping, and visual design.</li>
@@ -714,7 +714,7 @@
                                         <li>Experience with design systems and familiarity with front-end development concepts are a plus.</li>
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to creating exceptional user experiences through innovative UI/UX design. As a Senior UI/UX Designer, you will have the opportunity to shape the digital landscape of our curriculum, champion user-centered design, and drive positive impact for our users and business.</p>
-                                    <h3 itemprop="title" class="font-24">Hours and schedule</h3>
+                                    <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
                                         <a href="#" class="lms-apply-btn">Apply for this position</a>
@@ -733,7 +733,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="mt-0 mb-10 font-40">Explore our success storiess</h2>
+                        <h2 class="mt-0 mb-10 font-40">Explore our success storiess</h2>
                     </div>
                 </div>
                 <div class="col-12">
@@ -749,7 +749,7 @@
                                         </div>
                                         <div class="text-holder">
                                             <div class="testimonial-top">
-                                                <h3 itemprop="title" class="testimonial-title">
+                                                <h3 class="testimonial-title">
                                                     <a itemprop="url" href="{{url('/')}}">Rurera's Extraordinary Team: A Teacher's Story</a>
                                                 </h3>
                                                 <strong itemprop="Exceeding">A Game-Changer to diagnose and monitor performance</strong>
@@ -769,7 +769,7 @@
                                         </div>
                                         <div class="text-holder">
                                             <div class="testimonial-top">
-                                                <h3 itemprop="title" class="testimonial-title">
+                                                <h3 class="testimonial-title">
                                                     <a itemprop="url" href="{{url('/')}}">Collaborating with an Exceptional Team of Rurera as a Parent</a>
                                                 </h3>
                                                 <strong itemprop="Forever">A Game-Changer for Busy Parents to engage with Child studies.</strong>
@@ -793,7 +793,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="mt-0 mb-10 font-40">Our impact</h2>
+                        <h2 class="mt-0 mb-10 font-40">Our impact</h2>
                         <p itemprop="description">We truly Understand the challenges and limitations faced by educators and learners <br> in the current system.</p>
                     </div>
                 </div>
@@ -829,7 +829,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="mt-0 font-40">Application Form</h2>
+                        <h2 class="mt-0 font-40">Application Form</h2>
                     </div>
                     <div class="lms-jobs-form">
                         <div class="lms-jobs-form-body">
@@ -1045,7 +1045,7 @@
                     <div class="lms-text-holder">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
-                                <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
+                                <h2 class="mb-20 text-white font-40">Ready to start learning?</h2>
                                 <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">

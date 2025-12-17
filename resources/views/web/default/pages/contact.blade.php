@@ -4,7 +4,7 @@
     <section class="pages-sub-header about-sub-header has-bg mb-50 pt-50 pb-50" style="background:url(../assets/default/img/about-image.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center text-left"><div class="col-12 col-md-9 col-lg-9">
-                    <h1 itemprop="title" class="font-30 font-weight-bold text-white">{{ trans('site.contact_us') }}</h1>
+                    <h1 class="font-30 font-weight-bold text-white">{{ trans('site.contact_us') }}</h1>
                     <p itemprop="description" class="text-white font-19">Whether you have a question, feedback, or any other inquiry, we are here to assist you. We have a contact form on our website that you can fill out. This method allows us to gather the necessary details to assist you effectively.</p>
                 </div>
                 <div class="col-12 col-md-9 col-lg-3">
@@ -31,7 +31,7 @@
                                         </g>
                                     </svg></span>
                                 <div class="services-text mt-20">
-                                    <h2 itemprop="title" class="font-24">Address</h2>
+                                    <h2 class="font-24">Address</h2>
                                     <p itemprop="description">64 Kildare Crescent Allerton Bradford, BD15 7EQ Uk</p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                 </svg>
                             </span>
                                 <div class="services-text mt-20">
-                                    <h2 itemprop="title" class="font-24">Time schedule</h2>
+                                    <h2 class="font-24">Time schedule</h2>
                                     <p itemprop="description">Office Hours 09:00-05:00PM Sunday Closed</p>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                                     </g>
                                 </svg></span>
                                 <div class="services-text mt-20">
-                                    <h2 itemprop="title" class="font-24">Call us</h2>
+                                    <h2 class="font-24">Call us</h2>
                                     <p itemprop="description">+44 127 448 1886</p>
                                     <p itemprop="description">+1 204 962 7186</p>
                                 </div>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="element-title mb-50 text-center">
-                            <h2 itemprop="title" class="mb-5">Get in Touch</h2>
+                            <h2 class="mb-5">Get in Touch</h2>
                             <p itemprop="description">Explore and locate us to find the right course for you.</p>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-element-title text-center">
-                                            <h2 itemprop="title">Contact form</h2>
+                                            <h2>Contact form</h2>
                                             <p itemprop="description">Let's explore how Rurera works for you?</p>
                                         </div>
                                     </div>
@@ -210,7 +210,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="lms-text-holder"><strong itemprop="text" class="mb-20">24/7 customer support</strong>
-                            <h2 itemprop="title">Need Help ?<br> We're Here for You.</h2>
+                            <h2>Need Help ?<br> We're Here for You.</h2>
                             <p itemprop="description" class="mt-15 mb-0">Our highly trained support geeks<br>are always ready to help you.</p>
                             <p itemprop="courses" class="mt-15 mb-0">New courses available !</p>
                             <ul class="lms-img-list">

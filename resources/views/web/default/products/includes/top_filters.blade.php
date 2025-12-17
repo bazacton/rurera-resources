@@ -4,7 +4,7 @@
         <div class="col-lg-8 d-block d-md-flex align-items-center justify-content-start my-25 my-lg-0" itemprop="products numbers">
             
             <div class="section-title mb-0">
-                <h2 itemprop="title" class="font-22 mb-0">{{ $productsCount }} products showing</h2>
+                <h2 class="font-22 mb-0">{{ $productsCount }} products showing</h2>
             </div>
         </div>
 

@@ -177,7 +177,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="section-title">
-                        <h2 class="font-40" itemprop="title">Your Ultimate Package for Comprehensive CAT4 Preparation.</h2>
+                        <h2 class="font-40">Your Ultimate Package for Comprehensive CAT4 Preparation.</h2>
                         <p class="font-19 text-gray">Get everything needed for CAT4 prep in one complete package, ensuring thorough readiness and confidence for test day.</p>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                             <i class="svg-icon bg-mdblue" style="background-color: #5e82d8;"><img alt="100+ Expert-Crafted Tests" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title" itemprop="title">100+ Expert-Crafted Tests</h3>
+                            <h3 class="font-30 mb-15 post-title">100+ Expert-Crafted Tests</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Success with Practice Tests</b><br />
                                 Experience real exam conditions with practice tests designed by CAT4 specialists. Build confidence and improve performance with simulated exam scenarios.
@@ -201,7 +201,7 @@
                             <i class="svg-icon bg-green" style="background-color: #3cb46e;"><img alt="Wide Range of Questions" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title" itemprop="title">Wide Range of Questions</h3>
+                            <h3 class="font-30 mb-15 post-title">Wide Range of Questions</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Practices for All CAT4 Sections</b><br />
                                 Access a wide range of questions covering verbal, non-verbal, quantitative, and spatial reasoning. Perfect your skills with targeted practice tailored to the CAT4 exam.
@@ -215,7 +215,7 @@
                             <i class="svg-icon bg-orange" style="background-color: #f35b05;"><img alt="Assess and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title" itemprop="title">Assess and Improve</h3>
+                            <h3 class="font-30 mb-15 post-title">Assess and Improve</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Personalized Skill Enhancement</b><br />
                                 Discover your improvement areas with personalized assessments and enhance those skills with focused practice. Our method ensures you concentrate on key areas, increasing both confidence and performance.
@@ -229,7 +229,7 @@
                             <i class="svg-icon bg-deepskyblue" style="background-color: #46b7e9;"><img alt="Personalized Learning Paths" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title" itemprop="title">Personalized Learning Paths</h3>
+                            <h3 class="font-30 mb-15 post-title">Personalized Learning Paths</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Custom Study Plans</b><br />
                                 Receive custom study plans based on assessment results. Focus on areas needing improvement and enhance your strengths for optimal test preparation.
@@ -254,7 +254,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Game-Based Learning</span>
                         </h3>
                         <p itemprop="description">Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
@@ -265,7 +265,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Essential Mock Exams</span>
                         </h3>
                         <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
@@ -276,7 +276,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
                         <p itemprop="description">Monitor progress with detailed insights to support your child’s academic success.</p>
@@ -287,7 +287,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
                         </h3>
                         <p itemprop="description">Encourage continuous improvement with self-assessment tools and progress tracking.</p>
@@ -298,7 +298,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Top-Tier Study Materials</span>
                         </h3>
                         <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every aspect of the 11+ exam.</p>
@@ -309,7 +309,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Smart Exam Tactics</span>
                         </h3>
                         <p itemprop="description">Learn effective tips for time management, stress reduction, and question strategies.</p>
@@ -320,7 +320,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Adaptive Curriculum</span>
                         </h3>
                         <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
@@ -331,7 +331,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Personalised Practice</span>
                         </h3>
                         <p itemprop="description">Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
@@ -342,7 +342,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Elevate 11 Plus Preparation</span>
                         </h3>
                         <p itemprop="description">Achieve exam success with tailored practice and confidence-building resources.</p>
@@ -776,7 +776,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>

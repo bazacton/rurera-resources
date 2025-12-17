@@ -442,7 +442,7 @@
                                                                                 <img src="../assets/default/img/pig.png" height="104" width="78" alt="Box image">
                                                                             </span>
                                                                             <div class="subscribe-title">
-                                                                                <h3 itemprop="title" class="font-24 font-weight-500">{{$subscribe->title }}</h3>
+                                                                                <h3 class="font-24 font-weight-500">{{$subscribe->title }}</h3>
                                                                                 <span>A simple start for everyone</span>
                                                                             </div>
                                                                             <div class="d-flex align-items-start mt-10 subscribe-price">
@@ -560,7 +560,7 @@
                                                     <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
                                                 </span>
                                                 <div class="subscribe-title">
-                                                    <h3 itemprop="title" class="font-24 font-weight-500 pt-20">
+                                                    <h3 class="font-24 font-weight-500 pt-20">
                                                         {{$subscribe->title }}
                                                     </h3>
                                                     <span>A simple start for everyone</span>
@@ -643,7 +643,7 @@
                                                 <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
                                             </span>
                                             <div class="subscribe-title">
-                                                <h3 itemprop="title" class="font-24 font-weight-500">{{$subscribe->title }}</h3>
+                                                <h3 class="font-24 font-weight-500">{{$subscribe->title }}</h3>
                                                 <span>A simple start for everyone</span>
                                             </div>
                                             <div class="d-flex align-items-start mt-10 subscribe-price">

@@ -14,7 +14,7 @@
                                             <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="64px" height="64px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
                                                 <path id="question--and--answer_1_" d="M10.7,31.199l-3.893-5.844H3c-1.301,0-2.36-1.059-2.36-2.36v-10 c0-1.301,1.059-2.36,2.36-2.36h11.64V3c0-1.301,1.059-2.36,2.36-2.36h12c1.302,0,2.36,1.059,2.36,2.36v8 c0,1.301-1.059,2.36-2.36,2.36h-2.777l-1.9,3.801l-0.645-0.322l2-4C25.74,12.717,25.864,12.64,26,12.64h3 c0.904,0,1.64-0.736,1.64-1.64V3c0-0.904-0.735-1.64-1.64-1.64H17c-0.904,0-1.64,0.736-1.64,1.64v7.635H18 c1.181,0,2.161,0.871,2.333,2.005H23v0.72h-2.64v9.635c0,1.302-1.059,2.36-2.36,2.36h-7v-0.721h7c0.904,0,1.64-0.735,1.64-1.64v-10 c0-0.904-0.735-1.64-1.64-1.64H3c-0.904,0-1.64,0.736-1.64,1.64v10c0,0.904,0.736,1.64,1.64,1.64h4c0.121,0,0.233,0.061,0.3,0.161 l4,6.005L10.7,31.199z M23.378,8.495h-0.721c0-1.219,0.217-1.677,1.008-2.129c0.555-0.317,0.78-0.666,0.78-1.205 c0-0.962-0.776-1.303-1.441-1.303c-0.812,0-1.449,0.573-1.449,1.303h-0.721c0-1.134,0.953-2.023,2.17-2.023 c1.272,0,2.162,0.832,2.162,2.023c0,1.055-0.653,1.549-1.144,1.83C23.5,7.29,23.378,7.464,23.378,8.495z M11.5,18 c0,0.552-0.448,1-1,1s-1-0.448-1-1s0.448-1,1-1S11.5,17.448,11.5,18z M15.5,17c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1 S16.052,17,15.5,17z M5.5,17c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1S6.052,17,5.5,17z M23,10.625 c0.345,0,0.625-0.28,0.625-0.625S23.345,9.375,23,9.375S22.375,9.655,22.375,10S22.655,10.625,23,10.625z"></path> <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"></rect> </g></svg>
                                         </span>
-                                        <h1 itemprop="title" class="font-50 mb-15">Frequently asked<span class="text-scribble ml-10">questions</span></h1>
+                                        <h1 class="font-50 mb-15">Frequently asked<span class="text-scribble ml-10">questions</span></h1>
                                         <p itemprop="description" class="mb-50 font-19">Asking the right questions is indeed a skill that requires careful consideration. Discover a growing collection of ready-made training courses delivered through Rurera.</p>
                                         <form class="w-75 mx-auto">
                                             <div class="field-holder d-flex has-icon">
@@ -47,7 +47,7 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div id="accordion">
-                                    <div class="accordion-section-title"><h2 itemprop="title" class="text-dark-charcoal">General</h2></div>
+                                    <div class="accordion-section-title"><h2 class="text-dark-charcoal">General</h2></div>
                                     <div itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                         <div class="card-header" id="headingon11">
                                             <h3 itemprop="name" class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">How many Courses are available at Rurera ?</button></h3>
@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-section-title">
-                                    <h2 itemprop="title" class="text-dark-charcoal">Login</h2>
+                                    <h2 class="text-dark-charcoal">Login</h2>
                                 </div>
                                 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                     <div class="card-header" id="headingonsix">
@@ -144,7 +144,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-section-title">
-                                    <h2 itemprop="title" class="text-dark-charcoal">Account management</h2>
+                                    <h2 class="text-dark-charcoal">Account management</h2>
                                 </div>
                                 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                     <div class="card-header" id="heading8">
@@ -249,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="parent" role="tabpanel" aria-labelledby="parent-tab">
-                                <div class="accordion-section-title"><h2 itemprop="title" class="text-dark-charcoal">General</h2></div>
+                                <div class="accordion-section-title"><h2 class="text-dark-charcoal">General</h2></div>
                                 <div id="accordion2" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                         <div class="card-header" id="heading4">
@@ -310,7 +310,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-section-title">
-                                    <h2 itemprop="title" class="text-dark-charcoal">Login</h2>
+                                    <h2 class="text-dark-charcoal">Login</h2>
                                 </div>
                                 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                     <div class="card-header" id="headingonsix">
@@ -349,7 +349,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-section-title"><h2 itemprop="title" class="text-dark-charcoal">Account management</h2></div>
+                                <div class="accordion-section-title"><h2 class="text-dark-charcoal">Account management</h2></div>
                                 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                     <div class="card-header" id="heading8">
                                         <h3 itemprop="name" class="mb-0">
@@ -454,7 +454,7 @@
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="accordion-section-title">
-                                    <h2 itemprop="title" class="text-dark-charcoal">General</h2></div>
+                                    <h2 class="text-dark-charcoal">General</h2></div>
                                 <div id="accordion2">
                                     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
                                         <div class="card-header" id="heading4">
@@ -665,7 +665,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-text-holder py-70">
                         <strong itemprop="text" class="mb-20">24/7 customer support</strong>
-                        <h2 itemprop="title">
+                        <h2>
                             Need Help?<br />
                             We're Here for You.
                         </h2>

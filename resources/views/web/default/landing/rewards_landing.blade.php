@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row align-items-center job-singup-sub-header">
             <div class="col-12 col-md-12 col-lg-6">
-                <h1 itemprop="title" class="font-72 font-weight-bold">
+                <h1 class="font-72 font-weight-bold">
                     Learn, Play, and Win <span class="text-scribble">Rewards!</span>
                 </h1>
                 <p class="mt-30">Join our fun learning adventure to master lessons and earn amazing toys and Amazon gift cards!</p>
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="text-white font-40">
+                        <h2 class="text-white font-40">
                             See What Awaits You with Learning and Practice!
                         </h2>
                     </div>
@@ -120,7 +120,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title text-left mb-50">
-                        <h2 itemprop="title" class="font-40">Redeem Rewards Like a Pro! 🎉</h2>
+                        <h2 class="font-40">Redeem Rewards Like a Pro! 🎉</h2>
                         <h2 class="mt-10">Experience the thrill of victory with every win and feel excitement like never before!</h2>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                             <div class="process-card process-one">
                                 <div class="process-card-body d-flex align-items-center justify-content-between">
                                     <div class="text-holder mr-30">
-                                        <h2 itemprop="title" class="post-title">Step 1:</h2>
+                                        <h2 class="post-title">Step 1:</h2>
                                         <p itemprop="description" class="mt-15">Embark on your journey by conquering quizzes,
                                         goals, mastering times tables, and diving into books.
                                         Start earning valuable coin points along the way!
@@ -149,7 +149,7 @@
                                         <figure><img src="../assets/default/img/redeemstep-2.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                     <div class="text-holder ml-30">
-                                        <h2 itemprop="title" class="post-title">Step 2:</h2>
+                                        <h2 class="post-title">Step 2:</h2>
                                         <p itemprop="description" class="mt-15">Gather enough coin points through your activities
                                         and get ready for an exciting redemption journey! 
                                         It's time to turn your hard work into amazing rewards!
@@ -162,7 +162,7 @@
                             <div class="process-card process-three">
                                 <div class="process-card-body d-flex align-items-center justify-content-between">
                                     <div class="text-holder mr-30">
-                                        <h2 itemprop="title" class="post-title">Step 3:</h2>
+                                        <h2 class="post-title">Step 3:</h2>
                                         <p itemprop="description" class="mt-15">Use your hard-earned coin points to choose 
                                         & purchase your favorite toys straight from our store! 
                                         It’s a chance to celebrate your wins with the toys you love!
@@ -181,7 +181,7 @@
                                         <figure><img src="../assets/default/img/redeemstep-4.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                     <div class="text-holder ml-30">
-                                        <h2 itemprop="title" class="post-title">Step 4:</h2>
+                                        <h2 class="post-title">Step 4:</h2>
                                         <p itemprop="description" class="mt-15">Dive into rewards with no additional payments
                                         just pure joy as you play with your exciting new toys.
                                         Enjoy the thrill of learning and celebrating your achievements!
@@ -219,7 +219,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-50">
-                    <h2 itemprop="title" class="text-white font-40">Rewards Categories</h2>
+                    <h2 class="text-white font-40">Rewards Categories</h2>
                     <p itemprop="description" class="mt-10 text-white font-19">
                         Earn these amazing rewards as you embark on your learning journey with Rurera! The more you learn, the more you can win!
                     </p>
@@ -233,7 +233,7 @@
                                 <figure><img src="../assets/default/img/design-tool-1.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
-                                <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Design Tools</a></h3>
+                                <h3 class="post-title text-white"><a href="/pricing" class="text-white">Design Tools</a></h3>
                             </div>
                         </div>
                     </li>
@@ -243,7 +243,7 @@
                                 <figure><img src="../assets/default/img/science-tool.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
-                                <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Science Tools</a></h3>
+                                <h3 class="post-title text-white"><a href="/pricing" class="text-white">Science Tools</a></h3>
                             </div>
                         </div>
                     </li>
@@ -253,7 +253,7 @@
                                 <figure><img src="../assets/default/img/ebook.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
-                                <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">e-book</a></h3>
+                                <h3 class="post-title text-white"><a href="/pricing" class="text-white">e-book</a></h3>
                             </div>
                         </div>
                     </li>
@@ -263,7 +263,7 @@
                                 <figure><img src="../assets/default/img/music.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
-                                <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Musical Instruments</a></h3>
+                                <h3 class="post-title text-white"><a href="/pricing" class="text-white">Musical Instruments</a></h3>
                             </div>
                         </div>
                     </li>
@@ -273,7 +273,7 @@
                                 <figure><img src="../assets/default/img/book.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
-                                <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Books</a></h3>
+                                <h3 class="post-title text-white"><a href="/pricing" class="text-white">Books</a></h3>
                             </div>
                         </div>
                     </li>
@@ -283,7 +283,7 @@
                                 <figure><img src="../assets/default/img/toddler.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
-                                <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Baby and Toddler</a></h3>
+                                <h3 class="post-title text-white"><a href="/pricing" class="text-white">Baby and Toddler</a></h3>
                             </div>
                         </div>
                     </li>
@@ -460,7 +460,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
@@ -501,7 +501,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-7">
                     <div class="banner-holder">
                         <div class="text-holder">
-                            <h2 itemprop="title" class="text-white font-30">
+                            <h2 class="text-white font-30">
                                 Our rewards bring you excitement,<br >
                                 letting you see the results of practice in real time!
                             </h2>

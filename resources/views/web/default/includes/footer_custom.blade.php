@@ -6,7 +6,7 @@
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-4">
 						<div class="widget widget-links">
-							<div class="widget-title"><h2 itemprop="title">Company</h2></div>
+							<div class="widget-title"><h2>Company</h2></div>
 							<div class="widget-body">
 								<ul>
 									<li><a itemprop="url" href="/about-us">About Us</a></li>
@@ -20,7 +20,7 @@
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
 						<div class="widget widget-location">
-							<div class="widget-title"><h2 itemprop="title">What We Offer</h2></div>
+							<div class="widget-title"><h2>What We Offer</h2></div>
 							<div class="widget-body">
 								<ul>
 									<li><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
@@ -35,7 +35,7 @@
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
 						<div class="footer-newsletter">
-							<div class="widget-title"><h2 itemprop="title">Newsletter</h2></div>
+							<div class="widget-title"><h2>Newsletter</h2></div>
 							<div class="widget-body">
 								<div class="form-field">
 									<input type="text" placeholder="Don’t miss out updates">

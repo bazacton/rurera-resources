@@ -179,7 +179,7 @@
                                 <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/classes" itemprop="url" class="text-dark-charcoal">KS1, KS2 Courses</a>
                         </h3>
                         <p itemprop="description">Explore wide range of kS1, KS2 courses, Tests, practices, assessments, resources and much more.</p>
@@ -192,7 +192,7 @@
                                 <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/11-plus" itemprop="url" class="text-dark-charcoal">Entrance Examination Preps</a>
                         </h3>
                         <p itemprop="description">Rurera offers a chance to prepare for 11+ Exam, Independent Exams, ISEB and CAT4.</p>
@@ -205,7 +205,7 @@
                                 <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/sats-preparation" itemprop="url" class="text-dark-charcoal">SATs Exam Preps</a>
                         </h3>
                         <p itemprop="description">We are providing opportunity to practice SATs exam, SATs papers, SATs assessments SATs tests online.</p>
@@ -218,7 +218,7 @@
                                 <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/panel/analytics" itemprop="url" class="text-dark-charcoal">Analytics</a>
                         </h3>
                         <p itemprop="description">It provides complete insights and data analysis of Total scores, Total attempts, Earned Scores and Earned Coins.</p>
@@ -231,7 +231,7 @@
                                 <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Quick Assessments</a>
                         </h3>
                         <p itemprop="description">It offers quick assessments and answers to questions are automatically assessed for personalized feedback.</p>
@@ -244,7 +244,7 @@
                                 <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Automated Marking</a>
                         </h3>
                         <p itemprop="description">Automated marking data allows for quick identification of students who may require additional support or challenges.</p>
@@ -257,7 +257,7 @@
                                 <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Breakthrough insights</a>
                         </h3>
                         <p itemprop="description">It significantly allows to identify student’s learning strengths and areas needing improvement.</p>
@@ -270,7 +270,7 @@
                                 <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/book-shelf" itemprop="url" class="text-dark-charcoal">Children Books Online</a>
                         </h3>
                         <p itemprop="description">Discover vast collection of children books and track reading progress and activity, like percentage and time.</p>
@@ -283,7 +283,7 @@
                                 <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/timestables-practice" itemprop="url" class="text-dark-charcoal">TimeTables Revision</a>
                         </h3>
                         <p itemprop="description">Offering interactive Multiplication and division Practices and challenges to Master TimesTables online.</p>
@@ -296,7 +296,7 @@
                                 <img src="../assets/default/img/national-curriculum.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/national-curriculum" itemprop="url" class="text-dark-charcoal">National Curriculum</a>
                         </h3>
                         <p itemprop="description">If offer Skill plans, Courses Topics and Test preparations as per defined curricula.</p>
@@ -309,7 +309,7 @@
                                 <img src="../assets/default/img/performance-monitering.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Performance Monitoring</a>
                         </h3>
                         <p itemprop="description">It provides an easy overview of performance trends who may need additional support or recognition.</p>
@@ -322,7 +322,7 @@
                                 <img src="../assets/default/img/progress-tracking.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Progress Tracking</a>
                         </h3>
                         <p itemprop="description">Rurera offers a user-friendly platform where teachers can analyze individual and group performance trends.</p>
@@ -336,7 +336,7 @@
                                 <img src="../assets/default/img/skill-plans-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/weekly-planner" itemprop="url" class="text-dark-charcoal">Skills Plan</a>
                         </h3>
                         <p itemprop="description">This involves setting goals, identifying the skills you want to acquire or improve, and planning to achieve those goals weekly or monthly.</p>
@@ -349,7 +349,7 @@
                                 <img src="../assets/default/img/advance-learning-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/classes?sort=newest" itemprop="url" class="text-dark-charcoal">Advance Learning</a>
                         </h3>
                         <p itemprop="description">Rurera empowers students through courses, interactive books, exams practices and rewarding experiences.</p>
@@ -362,7 +362,7 @@
                                 <img src="../assets/default/img/teacher-empowerment-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/features" itemprop="url" class="text-dark-charcoal">Teacher Empowerment Tools</a>
                         </h3>
                         <p itemprop="description">Immediate feedback and assessment tools allow teachers to monitor student progress and identify areas that require improvement.</p>
@@ -375,7 +375,7 @@
                                 <img src="../assets/default/img/protection-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/contact-us" itemprop="url" class="text-dark-charcoal">Security and Privacy</a>
                         </h3>
                         <p itemprop="description">Rurera protect student data, maintain trust and comply with data protection and privacy regulations.</p>
@@ -389,7 +389,7 @@
                                 <img src="../assets/default/img/rewards-features.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Win Rewards</a>
                         </h3>
                         <p itemprop="description">Avail an awesome opportunity to Earn Rewards, Coin points, Win and later redeem to toys.</p>
@@ -402,7 +402,7 @@
                                 <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <a target="_blank" href="{{url('/')}}/products" itemprop="url" class="text-dark-charcoal">Rewards Store</a>
                         </h3>
                         <p itemprop="description">Students can redeem coin points and exchange trending toys with every practice via Rurera toy store.</p>
@@ -997,7 +997,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
@@ -1042,7 +1042,7 @@
                     <div class="lms-text-holder d-flex flex-column justify-content-center text-center">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-12 col-md-12">
-                                <h2 itemprop="title" class="mb-20 text-white font-40">Looking to discover Magic of Multiplication tables?</h2>
+                                <h2 class="mb-20 text-white font-40">Looking to discover Magic of Multiplication tables?</h2>
                                 <p itemprop="description" class="mb-0 text-white font-weight-normal font-24">Practice your times tables now.</p>
                                 <div class="lms-btn-group mt-30 justify-content-center">
                                     <a itemprop="url" href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white">Join Rurera today</a>

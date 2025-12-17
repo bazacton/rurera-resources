@@ -142,7 +142,7 @@
                                                     <img src="../assets/default/svgs/box-color2.svg" alt="#">
                                                     <img src="../assets/default/svgs/box-white.svg" class="box-white-svg" alt="#">
                                                 </span>
-                                                <h3 itemprop="title"
+                                                <h3
                                                     class="font-24 font-weight-500 text-dark-charcoal pt-20">{{
                                                     $subscribe->title }}</h3>
                                                 <div class="d-flex align-items-start text-dark-charcoal mt-10">

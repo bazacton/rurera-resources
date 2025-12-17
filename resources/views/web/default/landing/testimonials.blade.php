@@ -6,7 +6,7 @@
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
         <p itemprop="sub title" class="lms-subtitle">How we've helped others</p>
-        <h1 itemprop="title" class="font-72 font-weight-bold mb-15">
+        <h1 class="font-72 font-weight-bold mb-15">
           Stories of Trust and <span class="text-scribble">Triumph!</span>
         </h1>
         <p itemprop="description" class="font-19">
@@ -27,7 +27,7 @@
             </figure>
           </div>
           <div class="testimonial-body">
-            <h2 itemprop="title" class="post-title">Cristian Miller</h2>
+            <h2 class="post-title">Cristian Miller</h2>
             <span itemprop="sub title" class="sub-title">Teacher</span>
             <p itemprop="description">Rurera is an advance emerging learning platform. Love it!</p>
           </div>
@@ -41,7 +41,7 @@
             </figure>
           </div>
           <div class="testimonial-body">
-            <h2 itemprop="title" class="post-title">Peter J.</h2>
+            <h2 class="post-title">Peter J.</h2>
             <span itemprop="sub title" class="sub-title">Student</span>
             <p itemprop="description">
               My first choice is Rurera when it comes to pro level learning.
@@ -57,7 +57,7 @@
             </figure>
           </div>
           <div class="testimonial-body">
-            <h2 itemprop="title" class="post-title">Fiona Thompson</h2>
+            <h2 class="post-title">Fiona Thompson</h2>
             <span itemprop="sub title" class="sub-title">Parent</span>
             <p itemprop="description">Rurera has recognized itself a great platform. Recommmended</p>
           </div>
@@ -71,7 +71,7 @@
             </figure>
           </div>
           <div class="testimonial-body">
-            <h2 itemprop="title" class="post-title">Kyle Matt</h2>
+            <h2 class="post-title">Kyle Matt</h2>
             <span itemprop="sub title" class="sub-title">Teacher</span>
             <p itemprop="description">As a teacher i would encourage to follow Rurera for sure.</p>
           </div>
@@ -106,7 +106,7 @@
     <div class="row align-items-center">
       <div class="col-12 col-lg-12 mb-50">
         <div class="section-title text-center">
-          <h2 itemprop="title"  class="font-40 font-weight-bold mb-15">Trusted by Many, Loved by All</h2>
+          <h2  class="font-40 font-weight-bold mb-15">Trusted by Many, Loved by All</h2>
           <p itemprop="description"  class="text-center mb-10">
             Hear heartfelt stories from students, teachers, <br> and parents about their experiences.
           </p>
@@ -118,7 +118,7 @@
             <span itemprop="number" class="lms-serial-no">#1</span>
           </div>
           <p itemprop="datePublished" content="2023-06-05">Happy parent / 4 June 2023</p>
-          <h3 itemprop="title" class="font-36 font-weight-bold text-dark">Cristian Miller</h3>
+          <h3 class="font-36 font-weight-bold text-dark">Cristian Miller</h3>
           <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">As a parent, I want to share my incredible experience that has made a significant impact on my child's education. Rurera has truly transformed the way my child learns and engages with educational content. Recommended!</p>
         </div>
       </div>
@@ -154,7 +154,7 @@
             <span itemprop="number" class="lms-serial-no">#2</span>
           </div>
           <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
-          <h3 itemprop="title" class="font-36 font-weight-bold text-dark">Peter J.</h3>
+          <h3 class="font-36 font-weight-bold text-dark">Peter J.</h3>
           <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
         </div>
       </div>
@@ -186,7 +186,7 @@
     <div class="lms-testimonials row">
       <div class="col-12 mb-20">
         <div class="section-title">
-          <h2 itemprop="title" class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal">Discover What Makes Rurera Loved!</h2>
+          <h2 class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal">Discover What Makes Rurera Loved!</h2>
           <p itemprop="description" class="mb-25 text-center">
             Read heartfelt testimonials from our community and see how Rurera has <br > transformed their learning experiences.
           </p>

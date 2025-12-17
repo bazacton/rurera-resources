@@ -605,7 +605,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							<div class="package-block">
 								<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
 								<div class="subscribe-title">
-									<h3 itemprop="title" class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
+									<h3 class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
 								</div>
 							</div>
 							<div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">

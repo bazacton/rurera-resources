@@ -5,7 +5,7 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-10 col-lg-10 mx-0 text-left">
-                    <h1 itemprop="title" class="font-26 font-weight-bold text-white">Exchange Rewards <br />Get more <span class="text-scribble">toys</span> with every practice</h1>
+                    <h1 class="font-26 font-weight-bold text-white">Exchange Rewards <br />Get more <span class="text-scribble">toys</span> with every practice</h1>
                     <p itemprop="description" class="mt-15 mb-40 text-white">Unlock Knowledge and Reward Yourself with Exciting Toys.<br /> Access to the rewards with 3 simple steps</p>
                     <form class="w-75 mx-0 mb-50">
                         <div class="field-holder has-icon d-flex">
@@ -108,7 +108,7 @@
                     <div class="lms-text-holder">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
-                                <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
+                                <h2 class="mb-20 text-white font-40">Ready to start learning?</h2>
                                 <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">

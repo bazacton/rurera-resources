@@ -7,7 +7,7 @@
                         <a href="#" class="back-btn mb-30" style="margin-right: auto;">
                             <span>←</span>
                         </a>
-                        <h2 itemprop="title" class="font-50 font-weight-bold mb-0 text-white">Assignments</h2>
+                        <h2 class="font-50 font-weight-bold mb-0 text-white">Assignments</h2>
                     </div>
                     <div class="challenge-box-outer">
                         <div class="challenge-box">

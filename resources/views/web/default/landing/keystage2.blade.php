@@ -381,7 +381,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="section-title text-center mb-40">
-                        <h2 class="font-40 mb-10 mt-0" itemprop="title">Our impact</h2>
+                        <h2 class="font-40 mb-10 mt-0">Our impact</h2>
                         <p itemprop="description">
                             We truly Understand the challenges and limitations faced by educators and learners<br />
                             in the current system.

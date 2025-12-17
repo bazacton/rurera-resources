@@ -10,7 +10,7 @@
                     <div class="timestables-modes row">
                         <div class="col-12 col-lg-12 col-md-12">
                         <div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="title" class="font-22 mb-0">Time Tables</h2>
+                            <h2 class="font-22 mb-0">Time Tables</h2>
                         </div>
                     </div>
                     <div class="col-12 col-lg-12 col-md-12 rurera-hide">
@@ -63,7 +63,7 @@
                             <a itemprop="url" href="/timestables-practice/freedom-mode">
                                 <div class="grid-card timestables-mode-data" itemscope data-mode_type="freedom_mode" itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Freedom mode
                                         </h3>
                                     </div>
@@ -78,7 +78,7 @@
                             <a itemprop="url" href="/timestables-practice/powerup-mode">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Power-up Heatmap
                                         </h3>
                                     </div>
@@ -93,7 +93,7 @@
                             <a itemprop="url" href="/timestables-practice/trophy-mode">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Trophy Mode
                                         </h3>
                                     </div>
@@ -109,7 +109,7 @@
                             <a itemprop="url" href="/timestables-practice/treasure-mission">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Treasure Mission
                                         </h3>
                                         <div class="coin-counts">
@@ -132,7 +132,7 @@
                             <a itemprop="url" href="/timestables-practice/showdown-mode">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Showdown
                                         </h3>
                                     </div>
@@ -147,7 +147,7 @@
                             <a itemprop="url" href="/timestables-practice/heat-map">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Heat Map
                                         </h3>
                                     </div>
@@ -162,7 +162,7 @@
                             <a itemprop="url" href="/panel/analytics">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Analytics
                                         </h3>
                                     </div>
@@ -180,7 +180,7 @@
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                 <div class="text-holder">
-                                    <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                    <h3 class="blog-grid-title font-18 font-weight-bold">
                                     <a class="grid-btn" href="javascript:;">Tournament</a>
                                         <span class="title-label">Coming Soon</span>
                                     </h3>
@@ -194,7 +194,7 @@
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                 <div class="text-holder">
-                                    <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                    <h3 class="blog-grid-title font-18 font-weight-bold">
                                         <a class="grid-btn" href="javascript:;">Global Arena
                                             <span class="title-label">Coming Soon</span>
                                         </a>
@@ -298,7 +298,7 @@
                       < class="back-btn mb-30" style="margin-right: auto;">
                         <span>←</span>
                     </a>
-                        <h1 itemprop="title" class="font-50 font-weight-bold mb-0 text-white">Tournament Tropics</h1>
+                        <h1 class="font-50 font-weight-bold mb-0 text-white">Tournament Tropics</h1>
                     </div>
                   </div>
                 <div class="col-lg-12">

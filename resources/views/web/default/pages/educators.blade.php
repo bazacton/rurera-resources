@@ -10,7 +10,7 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-7 col-md-7">
-                    <h1 class="font-weight-bold font-72" itemprop="title">Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
+                    <h1 class="font-weight-bold font-72">Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
                     <p itemprop="description" class="font-19">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
                     <ul class="mb-30" itemprop="courses list">
                         <li class="mb-10 font-19" itemprop="course short info"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Enhance teaching skills</li>
@@ -39,7 +39,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                 <div class="section-title mb-50">
-                    <h2 class="font-40 mb-20" itemprop="title">Rurera's Impact on Your School</h2>
+                    <h2 class="font-40 mb-20">Rurera's Impact on Your School</h2>
                     <p itemprop="description" class="font-16 mb-0">
                         Rurera simplifies teaching with user-friendly features that are loved by both teachers and students.<br />
                         Explore the array of flexible benefits below:
@@ -48,7 +48,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div>
-                    <h2 class="font-weight-bold font-36 text-dark" itemprop="title">Ease Teacher's Workload</h2>
+                    <h2 class="font-weight-bold font-36 text-dark">Ease Teacher's Workload</h2>
                     <p itemprop="description" class="font-16 font-weight-normal mt-10 text-gray">
                         Easily Create and personalize Homework and Lessons with Teacher-Created Resources Tailored for KS1, KS2 Courses, 11+, SATs exam, and Entrance Exams preps. Teachers can leverage these resources to enhance their lessons,
                         engage students, and create dynamic learning experiences.
@@ -84,7 +84,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div>
-                    <h2 class="font-weight-bold font-36 text-dark" itemprop="title">Efficiently Track Student Progress</h2>
+                    <h2 class="font-weight-bold font-36 text-dark">Efficiently Track Student Progress</h2>
                     <p itemprop="description" class="font-16 font-weight-normal mt-10 text-gray">
                         Tracking student progress is essential for creating an effective learning environment. Rurera offers a user-friendly platform where teachers can analyze individual and group performance trends. Students can also access
                         their academic progress and compare themselves with their peers.
@@ -97,7 +97,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div>
-                    <h2 class="font-weight-bold font-36 text-dark" itemprop="title">Real-Time diagnostics</h2>
+                    <h2 class="font-weight-bold font-36 text-dark">Real-Time diagnostics</h2>
                     <p itemprop="description" class="font-16 font-weight-normal mt-10 text-gray">
                         Analyze the level of student engagement through interactive tools, quizzes, assessments, SATs practice papers, entrance exams practices. This will ensure immediate feedback to students and detailed insights for teachers.
                     </p>
@@ -147,7 +147,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div>
-                    <h2 class="font-weight-bold font-36 text-dark" itemprop="title">Quick &amp; precise Assessments</h2>
+                    <h2 class="font-weight-bold font-36 text-dark">Quick &amp; precise Assessments</h2>
                     <p itemprop="description" class="font-16 font-weight-normal mt-10 text-gray">
                         Automated marking is implemented, where answers to questions are automatically assessed. Real-time marking data allows for quick identification of students who may require additional support or challenges. Students
                         receive instant personalized feedback for every question and learning nugget.
@@ -160,7 +160,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div>
-                    <h2 class="font-weight-bold font-36 text-dark" itemprop="title">Improved Educational Standard</h2>
+                    <h2 class="font-weight-bold font-36 text-dark">Improved Educational Standard</h2>
                     <p itemprop="description" class="font-16 font-weight-normal mt-10 text-gray">
                         It provide training on new technologies, instructional strategies, and assessment methods specific to the online environment. These opportunities can enhance teachers' skills and keep them up to date with the latest
                         educational trends.
@@ -189,7 +189,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
-                    <div class="text-center section-title mb-40"><h2 class="mb-10 font-40 mt-20" itemprop="title">Schools trusting Ruera for enternace exams preps</h2></div>
+                    <div class="text-center section-title mb-40"><h2 class="mb-10 font-40 mt-20">Schools trusting Ruera for enternace exams preps</h2></div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-3 col-md-6">
                     <div class="fancy testimonial-card">
@@ -197,7 +197,7 @@
                             <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client2.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
-                            <h2 class="post-title" itemprop="title">Cristian Miller</h2>
+                            <h2 class="post-title">Cristian Miller</h2>
                             <span itemprop="sub title" class="sub-title">Teacher</span>
                             <p itemprop="description">Rurera is an advance emerging learning platform. Love it!</p>
                         </div>
@@ -209,7 +209,7 @@
                             <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client1.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
-                            <h2 class="post-title" itemprop="title">Peter J.</h2>
+                            <h2 class="post-title">Peter J.</h2>
                             <span itemprop="sub title" class="sub-title">Student</span>
                             <p itemprop="description">My first choice is Rurera when it comes to pro level learning.</p>
                         </div>
@@ -221,7 +221,7 @@
                             <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client3.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
-                            <h2 class="post-title" itemprop="title">Fiona Thompson</h2>
+                            <h2 class="post-title">Fiona Thompson</h2>
                             <span itemprop="sub title" class="sub-title">Parent</span>
                             <p itemprop="description">Rurera has recognized itself a great platform. Recommmended</p>
                         </div>
@@ -233,7 +233,7 @@
                             <figure><img alt="bran images" height="120" src="../assets/default/img/bri-client6.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
-                            <h2 class="post-title" itemprop="title">Kyle Matt</h2>
+                            <h2 class="post-title">Kyle Matt</h2>
                             <span itemprop="sub title" class="sub-title">Teacher</span>
                             <p itemprop="description">As a teacher i would encourage to follow Rurera for sure.</p>
                         </div>
@@ -515,7 +515,7 @@
                 <div class="col-12 col-lg-8 col-md-8">
                     <div class="d-flex flex-column lms-text-holder">
                         <div class="col-12 col-lg-12 col-md-12">
-                            <h2 class="text-white font-40 mb-20" itemprop="title">Explore Rurera: Schedule Your Demo</h2>
+                            <h2 class="text-white font-40 mb-20">Explore Rurera: Schedule Your Demo</h2>
                             <p itemprop="description" class="font-16 mb-0 text-white">
                                 Interested in how Rurera assessments can benefit your school? Schedule a meeting with our team to explore how our solutions can integrate with your educational approach. Click the button below to book a demo
                                 today!

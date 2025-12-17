@@ -772,7 +772,7 @@
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Key to Effective Learning</span>
                         </h3>
                         <p itemprop="description"> Build knowledge through SATs quizzes, SATs tests and SATs assessments with immediate feedback.
@@ -786,7 +786,7 @@
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">SATs 100s online Assessments</span>
                         </h3>
                         <p itemprop="description">Unlock 100+ Online Assessments for High Achievers .Students can take SATs quizzes and SATs assessments to test their knowledge.</p>
@@ -799,7 +799,7 @@
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Redefining Success with Activity Monitoring</span>
                         </h3>
                         <p itemprop="description">Monitor your SATs practice time and analyze performance with detailed activity logs.
@@ -813,7 +813,7 @@
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Past SATs Papers</span>
                         </h3>
                         <p itemprop="description"> Discover wide range of SATs Papers and SATs resources to improve your learning process and explore the fundamental concepts of SATs exam practice for advanced problem-solving.
@@ -827,7 +827,7 @@
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Learn, Play & Win</span>
                         </h3>
                         <p itemprop="description">Knowledge leads to winning toys. Improve your skills, and earn rewards through continuous learning and engagement.
@@ -841,7 +841,7 @@
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Crafting Insightful Analysis</span>
                         </h3>
                         <p itemprop="description"> It significantly allows to identify student’s learning strengths and areas needing improvement.
@@ -855,7 +855,7 @@
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Ignite Student Engagement</span>
                         </h3>
                         <p itemprop="description"> Attract students with interactive challenges, online test practices, entrance exam prep, and rewards like trending toys.</p>
@@ -868,7 +868,7 @@
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Interactive Learning</span>
                         </h3>
                         <p itemprop="description">Engage with online books, multiplication practices, and more.
@@ -882,7 +882,7 @@
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Quick & Adaptive Assessments</span>
                         </h3>
                         <p itemprop="description">Instant feedback and personalized learning paths.
@@ -1523,7 +1523,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
@@ -1568,7 +1568,7 @@
                     <div class="newsletter-inner">
                         <div class="row">
                             <div class="col-12 col-lg-8 col-md-8">
-                                <h2 itemprop="title" class="mb-10 text-white font-40">Kickstart your SATs Exam Prep today</h2>
+                                <h2 class="mb-10 text-white font-40">Kickstart your SATs Exam Prep today</h2>
                                 <p itemprop="description" class="mb-0 text-white font-16">
                                     Let us help you achieve the score you deserve and unlock <br />
                                     doors to your future academic success.

@@ -38,7 +38,7 @@
                                 @if( !empty( $books ))
                                 @foreach( $books as $book_category => $category_books)
                                 <div class="col-lg-12" itemscope itemtype="https://schema.org/Article">
-                                    <h3 class="mb-10 font-22" itemprop="title">{{$book_category}}</h3>
+                                    <h3 class="mb-10 font-22">{{$book_category}}</h3>
                                     <span class="mb-35 d-block font-16" itemprop="sub title">For kids ages 0-3</span>
                                 </div>
                                 @if( !empty( $category_books ))
@@ -58,7 +58,7 @@
 
                                             <div class="col-12 col-lg-6 col-md-5 col-sm-5">
                                                 <div class="text-holder" itemscope itemtype="https://schema.org/Article">
-                                                    <h3 itemprop="title" class="font-18 font-weight-bold mb-5"><a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}" itemprop="url">{{$bookData->book_title}}</a>
+                                                    <h3 class="font-18 font-weight-bold mb-5"><a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}" itemprop="url">{{$bookData->book_title}}</a>
                                                     </h3>
                                                     <ul itemprop="books info list">
                                                         <li><span itemprop="info text">Reading Level :</span>{{$bookData->reading_level }}</li>

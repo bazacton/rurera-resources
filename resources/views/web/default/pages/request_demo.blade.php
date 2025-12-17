@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h1 itemprop="title" class="text-white font-72 font-weight-bold">We'll help get you started</h1>
+                        <h1 class="text-white font-72 font-weight-bold">We'll help get you started</h1>
                         <p class="font-19 text-white mb-0 pt-15">Schedule a demo with our team today!</p>
                     </div>
                     <div class="lms-btn-group custom-btn">
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="font-40">
+                        <h2 class="font-40">
                             Your free trial<br />
                             made simple.
                         </h2>
@@ -50,19 +50,19 @@
                         <div class="row">
                             <div class="col-12 col-lg-4">
                                 <div class="trial-box">
-                                    <h3 itemprop="title">Today</h3>
+                                    <h3>Today</h3>
                                     <p>You get 14 days of free access to our software including all courses.</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="trial-box">
-                                    <h3 itemprop="title">Day 7</h3>
+                                    <h3>Day 7</h3>
                                     <p>You get 14 days of free access to our software including all courses.</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="trial-box">
-                                    <h3 itemprop="title">Day 14</h3>
+                                    <h3>Day 14</h3>
                                     <p>You get 14 days of free access to our software including all courses.</p>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 col-md-6">
                     <div class="section-title text-left mb-30">
-                        <h2 itemprop="title" class="font-40">
+                        <h2 class="font-40">
                             Want to get<br />
                             started?
                         </h2>
@@ -166,7 +166,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50 d-flex justify-content-between align-items-center">
-                        <h2 itemprop="title" class="font-40">Razorpay grows with<span>you!</span></h2>
+                        <h2 class="font-40">Razorpay grows with<span>you!</span></h2>
                         <span>1,50,000+ businesses</span>
                     </div>
                 </div>
@@ -338,7 +338,7 @@
                         <div class="lms-jobs-form-body">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="form-element-title mb-20"><h2 itemprop="title" class="font-30 text-dark-charcoal">Request a demo</h2></div>
+                                    <div class="form-element-title mb-20"><h2 class="font-30 text-dark-charcoal">Request a demo</h2></div>
                                 </div>
                             </div>
                             <div class="row">

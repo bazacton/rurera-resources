@@ -183,7 +183,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Times Tables Practice</span>
                         </h3>
                         <p itemprop="description">Interactive games and quizzes to help students practice and master their multiplication tables.
@@ -195,7 +195,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Personalised Learning</span>
                         </h3>
                         <p itemprop="description">Adaptive learning paths that adjust to each student's skill level and progress, providing tailored challenges and practice.</p>
@@ -206,7 +206,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Progress Tracking</span>
                         </h3>
                         <p itemprop="description">Detailed reports and statistics to track individual progress, including speed and accuracy.
@@ -218,7 +218,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Learn & Play</span>
                         </h3>
                         <p itemprop="description">Student will have access to both single and multi player games interfaces.</p>
@@ -229,7 +229,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Achievements and Rewards</span>
                         </h3>
                         <p itemprop="description"> Badges and rewards to celebrate milestones and encourage continued practice.
@@ -241,7 +241,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Varied Game Modes</span>
                         </h3>
                         <p itemprop="description">Different modes to keep practice sessions diverse and engaging.</p>
@@ -252,7 +252,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Breakthrough insights</span>
                         </h3>
                         <p itemprop="description">It significantly allows to identify student’s learning strengths and areas needing improvement.</p>
@@ -263,7 +263,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">TimeTables Revision</span>
                         </h3>
                         <p itemprop="description">Offering interactive Multiplication and division Practices and challenges to Master TimesTables online.</p>
@@ -274,7 +274,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Rewards Store</span>
                         </h3>
                         <p itemprop="description">Students can redeem coin points and exchange trending toys with every practice via Rurera toy store.</p>
@@ -586,7 +586,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>

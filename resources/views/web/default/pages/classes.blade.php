@@ -9,7 +9,7 @@
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-12 col-md-7 col-lg-7">
-                <h1 class="font-50 font-weight-bold" itemprop="title">Experience interactive <br />
+                <h1 class="font-50 font-weight-bold">Experience interactive <br />
                     <span class="text-scribble" itemprop="sub title">Courses</span> learning experience</h1>
                 <p class="font-19" itemprop="description">
                 Courses available for Maths, English, English Reading, science and computing
@@ -80,7 +80,7 @@
                     @if( !empty( $parentCategory->subCategories))
                     @foreach( $parentCategory->subCategories as $subCategory)
                     <div class="categories-element-title">
-                        <h2 class="font-36" itemprop="title"><span>{{$parentCategory->getTitleAttribute()}} - {{$subCategory->getTitleAttribute()}}</span></h2>
+                        <h2 class="font-36"><span>{{$parentCategory->getTitleAttribute()}} - {{$subCategory->getTitleAttribute()}}</span></h2>
                         <p itemprop="description">KS1 courses - Comprehensive list of courses for Children Aged 5, 6 and 7.</p></div>
 
 
@@ -111,7 +111,7 @@
        <div class="row">
           <div class="col-12">
             <div class="section-title mb-50">
-                <h2 class="mb-10 text-white font-40" itemprop="title">The next-generation e-learning platform</h2>
+                <h2 class="mb-10 text-white font-40">The next-generation e-learning platform</h2>
                 <p class="font-19 text-white" itemprop="description">Track progress, manage time effectively,<br> and access detailed answer explanations.</p>
             </div>
           </div>
@@ -125,13 +125,13 @@
           </div>
           <div class="col-12 col-lg-7 col-md-7 pl-30">
             <div class="pl-50 ml-50">
-                <h3 class="font-24 mb-5 text-white" itemprop="title">KS1 &amp; KS2 courses available</h3>
+                <h3 class="font-24 mb-5 text-white">KS1 &amp; KS2 courses available</h3>
                 <p class="mb-25 text-white font-18" itemprop="description">create courses, or drip feed your content to build and nurture any students you want.</p>
-                <h3 class="font-24 mb-5 text-white" itemprop="title">Get detailed performance Reports</h3>
+                <h3 class="font-24 mb-5 text-white">Get detailed performance Reports</h3>
                 <p class="mb-25 text-white font-18" itemprop="description">Rurera offers a user-friendly platform where teachers can analyze individual and group performance trends.</p>
-                <h3 class="font-24 mb-5 text-white" itemprop="title">Engage and captivate student attention</h3>
+                <h3 class="font-24 mb-5 text-white">Engage and captivate student attention</h3>
                 <p class="mb-0 text-white font-18 mb-25" itemprop="description">It helps identify students who may need additional support or recognition.</p>
-                <h3 class="font-24 mb-5 text-white" itemprop="title">Learn From Anywhere</h3>
+                <h3 class="font-24 mb-5 text-white">Learn From Anywhere</h3>
                 <p class="mb-0 text-white font-18" itemprop="description">Whether you a student or parent have option to study from home easily.</p>
             </div>
           </div>
@@ -143,7 +143,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-30">
-                    <h2 itemprop="title" class="font-40">Frequently asked questions</h2>
+                    <h2 class="font-40">Frequently asked questions</h2>
                 </div>
             </div>
             <div class="col-12 col-lg-12 col-md-12 mx-auto">
@@ -213,7 +213,7 @@
             <div class="lms-text-holder">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 col-md-8">
-                        <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
+                        <h2 class="mb-20 text-white font-40">Ready to start learning?</h2>
                         <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources
                             delivered through Rurera.</p>
                     </div>

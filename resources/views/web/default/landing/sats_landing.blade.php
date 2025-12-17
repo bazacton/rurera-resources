@@ -741,7 +741,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Key to Effective Learning</span>
                         </h3>
                         <p itemprop="description"> Build knowledge through SATs quizzes, SATs tests and SATs assessments with immediate feedback.
@@ -753,7 +753,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">SATs 100s online Assessments</span>
                         </h3>
                         <p itemprop="description">Unlock 100+ Online SATs Quizzes and Assessments for High Achievers.</p>
@@ -764,7 +764,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Past SATs Papers</span>
                         </h3>
                         <p itemprop="description"> Access SATs papers and resources to boost learning and master key concepts for advanced problem-solving.
@@ -776,7 +776,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Learn, Play & Win</span>
                         </h3>
                         <p itemprop="description">Enhance your skills, earn rewards, and win toys through continuous learning.
@@ -789,7 +789,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Student Engagement</span>
                         </h3>
                         <p itemprop="description"> Engage students with challenges, test practices, and rewards like toys and collectibles.
@@ -801,7 +801,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Activity Monitoring</span>
                         </h3>
                         <p itemprop="description"> Track SATs practice and analyze logs to identify strengths and improve.
@@ -813,7 +813,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
                         <p itemprop="description"> Track progress and support your child's achievements with key learning insights.
@@ -827,7 +827,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Interactive Learning</span>
                         </h3>
                         <p itemprop="description">
@@ -842,7 +842,7 @@
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Adaptive Assessments</span>
                         </h3>
                         <p itemprop="description">Get instant feedback and personalized learning paths with adaptive tests to ensure efficient progress.
@@ -1201,7 +1201,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>

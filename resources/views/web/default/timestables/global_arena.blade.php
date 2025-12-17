@@ -6,7 +6,7 @@
                     <a href="#" class="back-btn mb-30" style="margin-right: auto;">
                         <span>←</span>
                     </a>
-                    <h1 itemprop="title" class="font-50 font-weight-bold mb-0 text-white">Global Arena</h1>
+                    <h1 class="font-50 font-weight-bold mb-0 text-white">Global Arena</h1>
                 </div>
             </div>
             <div class="col-lg-12">

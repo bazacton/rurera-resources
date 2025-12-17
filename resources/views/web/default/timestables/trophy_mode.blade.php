@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 <div class="timestables-mode-content">
 <div class="section-title mb-25" itemscope itemtype="https://schema.org/Article">
-    <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Trophy Mode</h2>
+    <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Trophy Mode</h2>
 </div>
 @if( (5 - $results_data->count()) > 0)
 <section class="border-bottom-4 border-radius-10 mb-5" >
@@ -17,7 +17,7 @@
                             <img src="/assets/default/svgs/shuttlecock.svg" alt="shuttlecock icon" height="30" width="30">
                         </div>
                         <div class="withdraw-text" itemscope itemtype="https://schema.org/Article">
-                            <h3 class="blog-grid-title font-18 font-weight-bold mb-0" itemprop="title">You need to play {{(5 - $results_data->count())}} more games to earn a Badge</h3>
+                            <h3 class="blog-grid-title font-18 font-weight-bold mb-0">You need to play {{(5 - $results_data->count())}} more games to earn a Badge</h3>
                         </div>
                     </div>
                 </div>

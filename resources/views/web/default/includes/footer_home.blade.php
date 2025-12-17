@@ -21,7 +21,7 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="widget widget-links">
                             <div class="widget-title">
-                                <h2 itemprop="title">Company</h2>
+                                <h2>Company</h2>
                             </div>
                             <ul>
                                 <li><a itemprop="url" href="/about-us">About Us</a></li>
@@ -35,7 +35,7 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="widget widget-location">
                             <div class="widget-title">
-                                <h2 itemprop="title">What We Offer</h2>
+                                <h2>What We Offer</h2>
                             </div>
                            <ul>
 								<li><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
@@ -50,7 +50,7 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="widget widget-links">
                             <div class="widget-title">
-                                <h2 itemprop="title">Portal</h2>
+                                <h2>Portal</h2>
                             </div>
                             <ul>
                                 <li><a itemprop="url" href="/register">Register / Signup</a></li>
@@ -58,7 +58,7 @@
                                 <li><a itemprop="url" href="/membership">Membership</a></li>
                             </ul>
                             <div class="widget-title mt-15">
-                                <h2 itemprop="title">Contact</h2>
+                                <h2>Contact</h2>
                             </div>
                             <ul>
                                 <li><a itemprop="url" href="/contact-us">Contact us</a></li>
@@ -70,7 +70,7 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="widget widget-location">
                             <div class="widget-title">
-                                <h2 itemprop="title">Legal Help</h2>
+                                <h2>Legal Help</h2>
                             </div>
                             <ul>
                                 <li><a itemprop="url" href="/privacy-policy">Privacy Policy</a></li>

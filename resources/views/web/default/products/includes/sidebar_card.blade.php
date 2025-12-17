@@ -8,7 +8,7 @@
     <figcaption class="product-card-body">
 
         <a href="{{ $product->getUrl() }}" itemprop="url">
-            <h3 class="product-title font-weight-bold font-16" itemprop="title">{{ $product->title,'title' }}</h3>
+            <h3 class="product-title font-weight-bold font-16">{{ $product->title,'title' }}</h3>
         </a>
 
 

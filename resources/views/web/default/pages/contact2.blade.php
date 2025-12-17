@@ -11,7 +11,7 @@
                 <div class="col-12 col-md-5 col-lg-5">
                     <div class="text-holder has-bg text-white">
                         <strong class="sub-title font-20" itemprop="sub title">contact us</strong>
-                        <h1 itemprop="title" class="mt-15 font-36 font-weight-light">Need Support ?<br>Get the help you need.</h1>
+                        <h1 class="mt-15 font-36 font-weight-light">Need Support ?<br>Get the help you need.</h1>
                         <p itemprop="description" class="mt-20">Whether you have a question, feedback, or any other inquiry, we are here to assist
                             you. We have a contact form on our website that you can fill out.</p>
                             <a itemprop="url" href="#jobsform-section" class="rounded-pill mt-30">Send Inquiry</a>
@@ -28,7 +28,7 @@
                         <div class="services-card-body">
                             <figure><img src="/assets/default/img/support.jpg" alt="support" title="support"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
-                                <h2 itemprop="title" class="font-20 mb-15 text-dark-charcoal"><a href="{{url('/')}}/pricing">24/7 Support</a></h2>
+                                <h2 class="font-20 mb-15 text-dark-charcoal"><a href="{{url('/')}}/pricing">24/7 Support</a></h2>
                                 <p itemprop="description">Experience Uninterrupted 24/7 Support in whole UK</p>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                         <div class="services-card-body">
                             <figure><img src="/assets/default/img/knowledge.jpg" alt="knowledge" title="knowledge"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
-                                <h2 itemprop="title" class="font-20 mb-15 text-dark-charcoal"><a href="{{url('/')}}/pricing">Knowledge Base</a></h2>
+                                <h2 class="font-20 mb-15 text-dark-charcoal"><a href="{{url('/')}}/pricing">Knowledge Base</a></h2>
                                 <p itemprop="description">your key resource for resolving doubts and getting instant guidance.</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="services-card-body">
                             <figure><img src="/assets/default/img/technical.jpg" alt="technical" title="technical"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
-                                <h2 itemprop="title" class="font-20 mb-15 text-dark-charcoal"><a href="#jobsform-section">Feedback / Suggestions</a></h2>
+                                <h2 class="font-20 mb-15 text-dark-charcoal"><a href="#jobsform-section">Feedback / Suggestions</a></h2>
                                 <p itemprop="description">Help us to improve rurera with your valuable suggestions</p>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title text-center mb-50 mt-20">
-                        <h2 itemprop="title" class="font-40 mb-10 text-dark-charcoal">Get In Touch</h2>
+                        <h2 class="font-40 mb-10 text-dark-charcoal">Get In Touch</h2>
                         <p itemprop="description">Explore and locate us to find the right resource for you.</p>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="mt-0 mb-10 text-dark-charcoal" style="font-size: 40px;">Explore our success stories</h2>
+                        <h2 class="mt-0 mb-10 text-dark-charcoal" style="font-size: 40px;">Explore our success stories</h2>
                     </div>
                 </div>
                 <div class="col-12">
@@ -240,7 +240,7 @@
                                         </div>
                                         <div class="text-holder">
                                             <div class="testimonial-top">
-                                                <h3 itemprop="title" class="testimonial-title">
+                                                <h3 class="testimonial-title">
                                                     <a itemprop="url" href="{{url('/')}}">Rurera's Extraordinary Team: A Teacher's Story</a>
                                                 </h3>
                                                 <strong itemprop="Exceeding">A Game-Changer to diagnose and monitor performance</strong>
@@ -261,7 +261,7 @@
                                         </div>
                                         <div class="text-holder">
                                             <div class="testimonial-top">
-                                                <h3 itemprop="title" class="testimonial-title">
+                                                <h3 class="testimonial-title">
                                                     <a itemprop="url" href="{{url('/')}}">Collaborating with an Exceptional Team of Rurera as a Parent</a>
                                                 </h3>
                                                 <strong itemprop="Forever">A Game-Changer for Busy Parents to engage with Child studies.</strong>
@@ -311,7 +311,7 @@
                     <div class="lms-text-holder">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
-                                <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
+                                <h2 class="mb-20 text-white font-40">Ready to start learning?</h2>
                                 <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">

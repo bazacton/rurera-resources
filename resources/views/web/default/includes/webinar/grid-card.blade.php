@@ -5,7 +5,7 @@
             {!! $webinar->icon_code !!}
         </div>
         <a href="{{ $webinar->getUrl() }}" itemprop="url">
-            <h4 class="categories-title" itemprop="title">{{ clean($webinar->title,'title') }}</h4>
+            <h4 class="categories-title">{{ clean($webinar->title,'title') }}</h4>
         </a>
     </div>
 </div>

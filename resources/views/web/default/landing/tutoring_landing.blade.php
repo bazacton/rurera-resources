@@ -285,7 +285,7 @@
                                             <img src="/assets/default/svgs/student-user.svg" alt="Flexible Scheduling" height="50" width="50">
                                         </span>
                                     </div>
-                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                    <h3 class="mb-5 font-20 font-weight-bold">
                                         <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Flexible Scheduling</a>
                                     </h3>
                                     <p itemprop="description">Choose tutoring sessions that fit your schedule, including evenings and weekends</p>
@@ -298,7 +298,7 @@
                                             <img src="/assets/default/svgs/student-user.svg" alt="Personalized Learning Plans" height="50" width="50">
                                         </span>
                                     </div>
-                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                    <h3 class="mb-5 font-20 font-weight-bold">
                                         <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Personalized Learning Plans</a>
                                     </h3>
                                     <p itemprop="description">Tailored lessons based on individual student needs and goals.</p>
@@ -311,7 +311,7 @@
                                             <img src="/assets/default/svgs/student-user.svg" alt="Progress Tracking" height="50" width="50">
                                         </span>
                                     </div>
-                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                    <h3 class="mb-5 font-20 font-weight-bold">
                                         <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Progress Tracking</a>
                                     </h3>
                                     <p itemprop="description">Regular updates on student performance and progress toward goals.</p>
@@ -324,7 +324,7 @@
                                             <img src="/assets/default/svgs/student-user.svg" alt="One-on-One Sessions" height="50" width="50">
                                         </span>
                                     </div>
-                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                    <h3 class="mb-5 font-20 font-weight-bold">
                                         <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">One-on-One Sessions</a>
                                     </h3>
                                     <p itemprop="description">Individual sessions to enhance each child's specific growth and learning.</p>
@@ -337,7 +337,7 @@
                                             <img src="/assets/default/svgs/student-user.svg" alt="Parent Involvement" height="50" width="50">
                                         </span>
                                     </div>
-                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                    <h3 class="mb-5 font-20 font-weight-bold">
                                         <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Parent Involvement</a>
                                     </h3>
                                     <p itemprop="description">Regular reports and feedback for parents to stay informed about their child’s progress.</p>
@@ -350,7 +350,7 @@
                                             <img src="/assets/default/svgs/student-user.svg" alt="Learning Resources" height="50" width="50">
                                         </span>
                                     </div>
-                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                    <h3 class="mb-5 font-20 font-weight-bold">
                                         <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Learning Resources</a>
                                     </h3>
                                     <p itemprop="description">Access to additional notes, practice materials and exercises to reinforce learning.</p>
@@ -472,10 +472,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6">
-                    <h2 itemprop="title" class="font-36 text-secondary mb-15">Why choose us?</h2>
+                    <h2 class="font-36 text-secondary mb-15">Why choose us?</h2>
                     <p class="mb-15">We make your child's educational journey easier by handling the hard work of finding the right tutor.</p>
                     <p class="mb-30">Whether your child needs extra support in math and English, help with exam prep, or is ready for new challenges, you can rely on us to meet their unique learning needs.</p>
-                    <h2 itemprop="title" class="font-36 text-secondary mb-15">Expert Guidance</h2>
+                    <h2 class="font-36 text-secondary mb-15">Expert Guidance</h2>
                     <p>Our tutors are backed by a team of experts who provide ongoing training and development, ensuring they stay up-to-date with the latest teaching methods and curriculum changes.</p>
                 </div>
             </div>
@@ -656,7 +656,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Ideal Tuition for Your Child</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Ideal Tuition for Your Child</h2>
                         <p class="font-16 pt-10" itemprop="description">For Exceptional Value: Choose Our Pre-Selected Package for Maximum Savings! </p>
                     </div>
                 </div>
@@ -678,7 +678,7 @@
                             <div class="subscribe-plan current-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 itemprop="title" class="font-weight-500 text-left">School Entrance Exams</h3>
+                                    <h3 class="font-weight-500 text-left">School Entrance Exams</h3>
                                     <ul class="plan-feature">
                                         <li class="mt-10">Grammar Schools</li>
                                         <li class="mt-10">Independent Schools</li>
@@ -710,7 +710,7 @@
                             <div class="subscribe-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 itemprop="title" class="font-weight-500 text-left">SATs Exam Preparation</h3>
+                                    <h3 class="font-weight-500 text-left">SATs Exam Preparation</h3>
                                     <ul class="plan-feature">
                                         <li class="mt-10">Key Stage 1(year-2)</li>
                                         <li class="mt-10">Key Stage 2(year-6)</li>
@@ -740,7 +740,7 @@
                             <div class="subscribe-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 itemprop="title" class="font-weight-500 text-left">Maths and English Tuition</h3>
+                                    <h3 class="font-weight-500 text-left">Maths and English Tuition</h3>
                                     <ul class="plan-feature">
                                         <li class="mt-10">Math Arithmetic</li>
                                         <li class="mt-10">Math Reasoning</li>
