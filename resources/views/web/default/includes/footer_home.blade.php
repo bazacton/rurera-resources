@@ -24,11 +24,11 @@
                                 <h2 itemprop="title">Company</h2>
                             </div>
                             <ul>
-                                <li itemprop="about"><a itemprop="url" href="/about-us">About Us</a></li>
-                                <li itemprop="blog"><a itemprop="url" href="/blog">Blog</a></li>
-                                <li itemprop="careers"><a itemprop="url" href="/careers">Careers <span class="hiring-label">Hiring!</span></a></li>
-                                <li itemprop="testimonials"><a itemprop="url" href="/testimonials">Testimonials</a></li>
-                                <li itemprop="contact-us"><a itemprop="url" href="/contact-us">Contact Us</a></li>
+                                <li><a itemprop="url" href="/about-us">About Us</a></li>
+                                <li><a itemprop="url" href="/blog">Blog</a></li>
+                                <li><a itemprop="url" href="/careers">Careers <span class="hiring-label">Hiring!</span></a></li>
+                                <li><a itemprop="url" href="/testimonials">Testimonials</a></li>
+                                <li><a itemprop="url" href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -38,12 +38,12 @@
                                 <h2 itemprop="title">What We Offer</h2>
                             </div>
                            <ul>
-								<li itemprop="Courses"><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
-								<li itemprop="Courses"><a itemprop="url" href="/keystage2">KS2 Courses</a></li>
-								<li itemprop="11+ Exams"><a itemprop="url" href="/11-plus">11+ Exams</a></li>
-								<li itemprop="TimeTables"><a itemprop="url" href="/timestables">TimeTables</a></li>
-								<li itemprop="Books Reading"><a itemprop="url" href="/books-shelf">Books Reading</a></li>
-								<li itemprop="Spells/Vocabulary"><a itemprop="url" href="/spelling">Spells/Vocabulary</a></li>
+								<li><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
+								<li><a itemprop="url" href="/keystage2">KS2 Courses</a></li>
+								<li><a itemprop="url" href="/11-plus">11+ Exams</a></li>
+								<li><a itemprop="url" href="/timestables">TimeTables</a></li>
+								<li><a itemprop="url" href="/books-shelf">Books Reading</a></li>
+								<li><a itemprop="url" href="/spelling">Spells/Vocabulary</a></li>
 							</ul>
                         </div>
                     </div>
@@ -53,17 +53,17 @@
                                 <h2 itemprop="title">Portal</h2>
                             </div>
                             <ul>
-                                <li itemprop="Register"><a itemprop="url" href="/register">Register / Signup</a></li>
-                                <li itemprop="Dashboard"><a itemprop="url" href="/register">Sign in / Login</a></li>
-                                <li itemprop="membership"><a itemprop="url" href="/membership">Membership</a></li>
+                                <li><a itemprop="url" href="/register">Register / Signup</a></li>
+                                <li><a itemprop="url" href="/register">Sign in / Login</a></li>
+                                <li><a itemprop="url" href="/membership">Membership</a></li>
                             </ul>
                             <div class="widget-title mt-15">
                                 <h2 itemprop="title">Contact</h2>
                             </div>
                             <ul>
-                                <li itemprop="contact-us"><a itemprop="url" href="/contact-us">Contact us</a></li>
-                                <li itemprop="Support Desk"><a itemprop="url" href="/register">24/7 Support Desk</a></li>
-                                <li itemprop="Login"><a itemprop="url" href="/register">Login</a></li>
+                                <li><a itemprop="url" href="/contact-us">Contact us</a></li>
+                                <li><a itemprop="url" href="/register">24/7 Support Desk</a></li>
+                                <li><a itemprop="url" href="/register">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -73,11 +73,11 @@
                                 <h2 itemprop="title">Legal Help</h2>
                             </div>
                             <ul>
-                                <li itemprop="Privacy Policy"><a itemprop="url" href="/privacy-policy">Privacy Policy</a></li>
-                                <li itemprop="Children's Privacy"><a itemprop="url" href="{{url('/')}}/privacy">Children's Privacy</a></li>
-                                <li itemprop="Legal"><a itemprop="url" href="/terms-and-conditions">Legal</a></li>
-                                <li itemprop="Terms &amp; conditions"><a itemprop="url" href="/terms-and-conditions">Terms &amp; conditions</a></li>
-                                <li itemprop="Cookie Policy"><a itemprop="url" href="/cookies">Cookie Policy</a></li>
+                                <li><a itemprop="url" href="/privacy-policy">Privacy Policy</a></li>
+                                <li><a itemprop="url" href="{{url('/')}}/privacy">Children's Privacy</a></li>
+                                <li><a itemprop="url" href="/terms-and-conditions">Legal</a></li>
+                                <li><a itemprop="url" href="/terms-and-conditions">Terms &amp; conditions</a></li>
+                                <li><a itemprop="url" href="/cookies">Cookie Policy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,14 +89,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-4">
-                    <p itemprop="learning">@ 2023 learning portal</p>
+                    <p>@ 2023 learning portal</p>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="footer-logo">
                         <a itemprop="url"  href="{{url('/')}}/">
                             @if(!empty($generalSettings['logo']))
                             <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="site logo" title="site logo"
-                                 width="100%" height="auto" itemprop="image" loading="eager">
+                                 width="100%" height="auto" loading="eager">
                             @endif
                         </a>
                     </div>
@@ -104,8 +104,8 @@
                 <div class="col-6 col-md-5">
                     <div class="d-flex justify-content-end align-items-center">
                         <ul class="footer-privacy-links d-flex">
-                        <li itemprop="Terms"><a itemprop="url" href="/terms-and-conditions"class="text-dark-charcoal">Terms & Conditions</a></li>
-                        <li itemprop="Terms"><a itemprop="url" href="/privacy" class="text-dark-charcoal">Privacy Policy</a></li>
+                        <li><a itemprop="url" href="/terms-and-conditions"class="text-dark-charcoal">Terms & Conditions</a></li>
+                        <li><a itemprop="url" href="/privacy" class="text-dark-charcoal">Privacy Policy</a></li>
                     </ul>
                     <div class="footer-social d-flex">
                         <a itemprop="url"  href="https://www.instagram.com/rureralearning23/" title="instagram">
