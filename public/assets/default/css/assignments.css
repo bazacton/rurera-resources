@@ -311,6 +311,7 @@
     text-align: left;
     border-bottom: 1px solid #eee;
     vertical-align: middle;
+    position: relative;
 }
 .topics-table th {
     font-weight: bold;
