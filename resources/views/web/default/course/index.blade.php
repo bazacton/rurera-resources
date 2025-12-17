@@ -382,6 +382,11 @@
                                     <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="subchapter-img-block">
+                                    <img src="/store/1/default_images/courses_images/science2.svg" alt="course-icon" width="150" height="150">
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
