@@ -402,8 +402,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next">
+                        <img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right" height="800" width="800">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left" height="800" width="800">
+                    </div>
                     <div class="swiper-progress">
                         <div class="swiper-pagination"></div>
                     </div>
