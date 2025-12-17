@@ -199,6 +199,23 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     height: 4px;
     width: 100%;
 }
+.subchapter-slider .swiper-button-next,
+.subchapter-slider .swiper-button-prev{
+    background-color: var(--primary);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    border-radius: 3px;
+}
+.subchapter-slider .swiper-button-next img,
+.subchapter-slider .swiper-button-prev img{
+    height: 25px;
+    width: 25px;
+}
 
 @media (max-width: 992px) {
     /* .lms-chapter-area .lms-chapter-ul {
