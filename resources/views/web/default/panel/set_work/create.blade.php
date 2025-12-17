@@ -907,9 +907,9 @@
                         </div>
 
 
-                        <div class="row form-group rurera_common_hide_field no_of_questions_field">
+                        <div class="row">
 
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field no_of_questions_field">
                                 <div class="form-group">
                                     <label class="input-label">No of Questions</label>
 
@@ -928,10 +928,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row rurera_common_hide_field no_of_attemptes_field">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field no_of_attemptes_field assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
                                 <div class="form-group">
                                     <label class="input-label">No of Attempts</label>
 
@@ -1298,6 +1296,7 @@
                             //$(".populated-content-area").append(return_data);
                             $(".topics-subtopics-content-area").append(return_data);
                             questions_callback();
+                            progress_cirlce_refresh();
                         }
                     }
                 });
@@ -1325,6 +1324,7 @@
                             $(".topics-subtopics-content-area").append(return_data);
                             $("#questions-tab").click();
                             questions_callback();
+                            progress_cirlce_refresh();
                         }
                     }
                 });
@@ -1600,8 +1600,9 @@
                 },
                 data: {"subject_id": subject_id, "student_id": user_id},
                 success: function (return_data) {
-                    rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
+                    //rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
                     $(".practice-quiz-topics-list").html(return_data);
+                    progress_cirlce_refresh();
                 }
             });
         });
@@ -1967,7 +1968,8 @@
 
 
 
-    $(document).ready(function () {
+
+    function progress_cirlce_refresh(){
         $(".chapter_percent").each(function() {
             var $this = $(this),
                 $dataV = $this.data("percent"),
@@ -1993,7 +1995,8 @@
                 },1000);
             }
         });
-    });
+
+    }
 </script>
 
 @endpush
