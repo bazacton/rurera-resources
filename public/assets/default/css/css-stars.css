@@ -180,8 +180,6 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     max-width: 100%;
 }
 .subchapter-slider {
-    overflow: hidden;
-    padding: 0 35px;
     position: relative;
 }
 .subchapter-slider .swiper-progress {
