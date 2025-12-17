@@ -188,7 +188,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title">
-                        <h2 itemprop="title" class="mb-5 font-40">Comprehensive 11+ Exam Prep with Rurera</h2>
+                        <h2 class="mb-5 font-40">Comprehensive 11+ Exam Prep with Rurera</h2>
                         <p itemprop="description" class="font-19 text-gray">Boost Your Success: Tailored 11+ Practice &
                             Resources
                         </p>
@@ -202,7 +202,7 @@
                             </i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 itemprop="title" class="post-title font-30 mb-15">Mock Exams</h3>
+                            <h3 class="post-title font-30 mb-15">Mock Exams</h3>
                             <p itemprop="description" class="font-18 text-dark">Experience realistic 11+ mock exams
                                 designed to simulate actual test conditions. These practice exams help build your
                                 child's confidence and improve their exam readiness by familiarising them with the
@@ -218,7 +218,7 @@
                             </i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 itemprop="title" class="post-title font-30 mb-15">Timed Practices</h3>
+                            <h3 class="post-title font-30 mb-15">Timed Practices</h3>
                             <p itemprop="description" class="font-18 text-dark">Our timed practice exercises are
                                 specifically designed to develop your child’s time management skills. By working within
                                 set time limits, your child learns to pace themselves effectively, ensuring they can
@@ -234,7 +234,7 @@
                             </i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 itemprop="title" class="post-title font-30 mb-15">Target Identification</h3>
+                            <h3 class="post-title font-30 mb-15">Target Identification</h3>
                             <p itemprop="description" class="font-18 text-dark">We provide personalised strategies to
                                 identify and address your child’s specific weaknesses. By focusing on areas that need
                                 improvement, we help your child overcome challenges and excel in their 11+ exam
@@ -250,7 +250,7 @@
                             </i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 itemprop="title" class="post-title font-30 mb-15">Exam Practice Resources</h3>
+                            <h3 class="post-title font-30 mb-15">Exam Practice Resources</h3>
                             <p itemprop="description" class="font-18 text-dark">Our comprehensive self-assessment tools
                                 offer continuous opportunities for growth and improvement. These resources enable your
                                 child to regularly evaluate their progress and fine-tune their skills, ensuring they
@@ -266,7 +266,7 @@
                             </i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 itemprop="title" class="post-title font-30 mb-15">Progress Reports</h3>
+                            <h3 class="post-title font-30 mb-15">Progress Reports</h3>
                             <p itemprop="description" class="font-18 text-dark">Receive detailed progress reports that
                                 track your child’s development over time. These insights, paired with expert guidance,
                                 help you understand their strengths and areas for improvement, ensuring a targeted and
@@ -282,7 +282,7 @@
                             </i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 itemprop="title" class="post-title font-30 mb-15">Professional Support</h3>
+                            <h3 class="post-title font-30 mb-15">Professional Support</h3>
                             <p itemprop="description" class="font-18 text-dark">Benefit from expert feedback tailored to
                                 refine your child’s skills and guide them toward achieving excellence. Our professional
                                 support ensures that your child is fully prepared to tackle the 11+ exam with
@@ -298,7 +298,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-50 text-center">
-                        <h2 itemprop="title" class="text-white font-40">Discover Top Resources for 11 Plus & Entrance Exams!</h2>
+                        <h2 class="text-white font-40">Discover Top Resources for 11 Plus & Entrance Exams!</h2>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -314,7 +314,7 @@
                                         </figure>
                                     </div>
                                     <div class="text-holder">
-                                        <h3 itemprop="title" class="post-title font-19 font-weight-bold">English</h3>
+                                        <h3 class="post-title font-19 font-weight-bold">English</h3>
                                         <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
                                     </div>
                                 </a>
@@ -329,7 +329,7 @@
                                         </figure>
                                     </div>
                                     <div class="text-holder">
-                                        <h3 itemprop="title" class="post-title font-19 font-weight-bold">
+                                        <h3 class="post-title font-19 font-weight-bold">
                                             Maths
                                         </h3>
                                         <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
@@ -346,7 +346,7 @@
                                         </figure>
                                     </div>
                                     <div class="text-holder">
-                                        <h3 itemprop="title" class="post-title font-19 font-weight-bold">
+                                        <h3 class="post-title font-19 font-weight-bold">
                                             Computing
                                         </h3>
                                         <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
@@ -363,7 +363,7 @@
                                         </figure>
                                     </div>
                                     <div class="text-holder">
-                                        <h3 itemprop="title" class="post-title font-19 font-weight-bold">
+                                        <h3 class="post-title font-19 font-weight-bold">
                                             Science
                                         </h3>
                                         <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
@@ -440,7 +440,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Game-Based Learning</span>
                         </h3>
                         <p itemprop="description">Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
@@ -451,7 +451,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Essential Mock Exams</span>
                         </h3>
                         <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
@@ -462,7 +462,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
                         <p itemprop="description">Monitor progress with detailed insights to support your child’s academic success.</p>
@@ -473,7 +473,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
                         </h3>
                         <p itemprop="description">Encourage continuous improvement with self-assessment tools and progress tracking.</p>
@@ -487,7 +487,7 @@
                                 width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Top-Tier Study Materials</span>
                         </h3>
                         <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every
@@ -499,7 +499,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Smart Exam Tactics</span>
                         </h3>
                         <p itemprop="description">Learn effective tips for time management, stress reduction, and question strategies.</p>
@@ -513,7 +513,7 @@
                                 width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Adaptive Curriculum</span>
                         </h3>
                         <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
@@ -524,7 +524,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Personalised Practice</span>
                         </h3>
                         <p itemprop="description">Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
@@ -535,7 +535,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Elevate 11 Plus Preparation</span>
                         </h3>
                         <p itemprop="description">Achieve exam success with tailored practice and confidence-building resources.</p>
@@ -964,7 +964,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
                         <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
