@@ -27,7 +27,7 @@
             @endif
         </ul>
 
-        <a href="/panel/notifications" class="mt-15 font-weight-500 text-dark-blue d-inline-block">{{
+        <a href="/panel/notifications" class="mt-15 font-weight-500 panel-view-btn d-inline-block">{{
             trans('panel.view_all_events') }}</a>
 
         <div class="dashboard-banner">
