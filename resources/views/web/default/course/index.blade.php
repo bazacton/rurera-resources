@@ -519,7 +519,7 @@ $(document).ready(function () {
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
                 centeredSlides: true,
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30,
 
                 navigation: {
@@ -544,7 +544,7 @@ $(document).ready(function () {
                         centeredSlides: true
                     },
                     640: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                         centeredSlides: true
                     }
