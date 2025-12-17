@@ -101,9 +101,9 @@
 .range-slider-field {width: 100%; position: absolute; top: 50%; z-index: 3; transform: translateY(-50%); -webkit-appearance: none; appearance: none; width: 100%; height: 4px; opacity: 0; margin: 0; }
 .range-slider-field::-webkit-slider-thumb {-webkit-appearance: none; appearance: none; width: 60px; height: 60px; cursor: pointer; border-radius: 50%;opacity: 0;}
 .range-slider-field::-moz-range-thumb {width: 60px; height: 60px;cursor: pointer; border-radius: 50%; opacity: 0;}
-.range-slider_thumb {width: 50px; height: 50px;	border: 3px solid #303030;	border-radius: 50%;	position: absolute;	left: 0; top: 50%; transform: translateY(-50%);	background-color: #f4f4f4;	display: flex;justify-content: center;align-items: center;font-weight: 700;font-size: 14px;color: #303030;z-index: 2; margin-left: 2px;}
+.range-slider_thumb {width: 50px; height: 50px;	border: 3px solid var(--primary);	border-radius: 50%;	position: absolute;	left: 0; top: 50%; transform: translateY(-50%);	background-color: #f4f4f4;	display: flex;justify-content: center;align-items: center;font-weight: 700;font-size: 14px;color: var(--primary);z-index: 2; margin-left: 2px;}
 .range-slider_line {height: 0.5vmin; width: 99.777%; background-color: #e1e1e1; top: 50%; transform: translateY(-50%); left: 2px; position: absolute; z-index: 1;}
-.range-slider_line-fill {position: absolute;height: 0.5vmin;width: 0;background-color: #303030;}
+.range-slider_line-fill {position: absolute;height: 0.5vmin;width: 0;background-color: var(--primary);}
 /*Range Slider Style End*/
 .form-check-input{-webkit-appearance: auto; appearance: auto;}
 .assignment_topic_type_fields .form-check {margin-bottom: 10px; padding-left: 5px;}
