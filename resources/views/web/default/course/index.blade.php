@@ -497,6 +497,7 @@ $(document).ready(function () {
         if (!subchapterSwiper) {
             subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
                 slidesPerView: 3,
+                loop: true,
                 spaceBetween: 30,
                 navigation: {
                     nextEl: '.swiper-button-next',
