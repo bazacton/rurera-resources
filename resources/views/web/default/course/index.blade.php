@@ -133,6 +133,7 @@
                                                                 @endphp
                                                                 <li>
                                                                 <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true">{{ $sub_chapter['title'] }}</a>
+                                                                <a href="" data-toggle="modal" data-target="#subchapter-notes-modal">Modal Box</a>
 
                                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 
@@ -347,6 +348,26 @@
 
     @include('web.default.course.share_modal')
     @include('web.default.course.buy_with_point_modal')
+
+
+
+<div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="panel-header">
+                <div class="modal-logo"><img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"></div>
+                <span class="steps-counter">Step 1</span>
+                <button type="button" class="close" ><a href="/{{panelRoute()}}/set-work">Close <span aria-hidden="true">×</span></a></button>
+                <div class="progress-line">
+                    <span class="progress-count" style="width: 30%;"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
