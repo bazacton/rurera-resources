@@ -345,7 +345,7 @@
     font-size: 12px;
     color: #666;
 }
-.lms-chapter-ul-outer .select-topics .percent-holder {
+.select-topics .lms-chapter-ul-outer .percent-holder {
     top: 50%;
     transform: translateY(-50%);
 }
