@@ -1357,6 +1357,9 @@ Lms Responsive Style Start
         padding-left: 0;
         padding-right: 0;
     }
+    .set-work-container form {
+        padding: 15px 15px 0;
+    }
 
 }
 @media screen and (max-width: 575px) {
