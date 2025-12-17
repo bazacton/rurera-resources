@@ -506,7 +506,7 @@ $(document).ready(function () {
                 breakpoints: {
                     320: { slidesPerView: 1, spaceBetween: 0 },
                     480: { slidesPerView: 1, spaceBetween: 0 },
-                    640: { slidesPerView: 4, spaceBetween: 30 }
+                    640: { slidesPerView: 3, spaceBetween: 30 }
                 }
             });
         } else {
