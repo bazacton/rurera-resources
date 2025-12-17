@@ -4,7 +4,7 @@
             <div class="col-12">
                 <div class="challenge-box-holder">
                     <div class="section-title mb-50">
-                        <a href="#" itemprop="button" class="back-btn mb-30" style="margin-right: auto;">
+                        <a href="#" class="back-btn mb-30" style="margin-right: auto;">
                             <span>←</span>
                         </a>
                         <h2 itemprop="title" class="font-50 font-weight-bold mb-0 text-white">Assignments</h2>

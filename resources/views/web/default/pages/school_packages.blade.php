@@ -83,7 +83,7 @@
                                         @php
                                         $selection_class = (auth()->user())? 'school-package-selection' : 'subscription-school-modal';
                                         @endphp
-                                        <button itemprop="button" type="submit"  data-type="package_selection"
+                                        <button type="submit"  data-type="package_selection"
                                                 class="select-btn {{$selection_class}} btn w-100 " data-toggle="modal" data-target="#subscriptionModal">Get Started Now
                                         </button>
                                     </div>

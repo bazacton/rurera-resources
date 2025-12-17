@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="section-title mb-50">
-                    <a href="#" itemprop="button" class="back-btn mb-30" style="margin-right: auto;">
+                    <a href="#" class="back-btn mb-30" style="margin-right: auto;">
                         <span>←</span>
                     </a>
                     <h1 itemprop="title" class="font-50 font-weight-bold mb-0 text-white">Global Arena</h1>

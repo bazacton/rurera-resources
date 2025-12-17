@@ -374,7 +374,7 @@
                     <div itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
                         <div class="card active" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                                     <span itemprop="size">1</span>Consult with Our Experts
                                 </button>
                             </div>
@@ -391,7 +391,7 @@
                         </div>
                         <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                     <span itemprop="size">2</span>Find Your Ideal Tutor
                                 </button>
                             </div>
@@ -408,7 +408,7 @@
                         </div>
                         <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-3">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                                     <span itemprop="size">3</span>Book a Free Trial
                                 </button>
                             </div>
@@ -425,7 +425,7 @@
                         </div>
                         <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
                                     <span itemprop="size">4</span>Begin Your Learning Journey
                                 </button>
                             </div>
@@ -440,7 +440,7 @@
                         </div>
                         <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
                                     <span itemprop="size">5</span>Continuous Support and Guidance
                                 </button>
                             </div>
@@ -702,7 +702,7 @@
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
-                                    <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                    <button type="submit" class="subscription-modal btn w-100">Get Started</button>
                                 </div>
                             </div>
                         </div>
@@ -732,7 +732,7 @@
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
-                                    <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                    <button type="submit" class="subscription-modal btn w-100">Get Started</button>
                                 </div>
                             </div>
                         </div>
@@ -764,7 +764,7 @@
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
-                                    <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                    <button type="submit" class="subscription-modal btn w-100">Get Started</button>
                                 </div>
                             </div>
                         </div>

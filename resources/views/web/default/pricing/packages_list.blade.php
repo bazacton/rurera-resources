@@ -39,7 +39,7 @@ $show_details = isset( $show_details )? $show_details : true;
             <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
                     class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / month</span>
         </div>
-        <button itemprop="button" type="submit" data-user_id="{{isset($childObj->id)?$childObj->id : 0}}" data-type="package_selection" data-id="{{$subscribe->id}}"
+        <button type="submit" data-user_id="{{isset($childObj->id)?$childObj->id : 0}}" data-type="package_selection" data-id="{{$subscribe->id}}"
                 class="{{$selection_class}} btn w-100 {{$subscribe_btn_class}}">{{$purchase_title}}
         </button>
 

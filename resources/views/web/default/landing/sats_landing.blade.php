@@ -864,7 +864,7 @@
                     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                                     <span itemprop="size">#1</span>Adaptive Assessments Testing
                                 </button>
                             </div>
@@ -882,7 +882,7 @@
                         </div>
                         <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                     <span itemprop="size">#2</span>Quick Results via automated marking
                                 </button>
                             </div>
@@ -899,7 +899,7 @@
                         </div>
                         <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-3">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                                     <span itemprop="size">#3</span>Diverse Question Formats
                                 </button>
                             </div>
@@ -916,7 +916,7 @@
                         </div>
                         <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
                                     <span itemprop="size">#4</span>Timely Reporting
                                 </button>
                             </div>
@@ -931,7 +931,7 @@
                         </div>
                         <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
                                     <span itemprop="size">#5</span>Breakthrough insights at every level
                                 </button>
                             </div>
@@ -949,7 +949,7 @@
                         </div>
                         <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
                                     <span itemprop="size">#6</span>Students Engagement
                                 </button>
                             </div>
@@ -967,7 +967,7 @@
                         </div>
                         <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-7">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
                                     <span itemprop="size">#7</span>Reward points
                                 </button>
                             </div>
