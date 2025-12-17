@@ -9,11 +9,11 @@
 							<div class="widget-title"><h2 itemprop="title">Company</h2></div>
 							<div class="widget-body">
 								<ul>
-									<li itemprop="about"><a itemprop="url" href="/about-us">About Us</a></li>
-									<li itemprop="blog"><a itemprop="url" href="/blog">Blog</a></li>
-									<li itemprop="careers"><a itemprop="url" href="/careers">Careers</a></li>
-									<li itemprop="testimonials"><a itemprop="url" href="/testimonials">Testimonials</a></li>
-									<li itemprop="contact-us"><a itemprop="url" href="/contact-us">Contact Us</a></li>
+									<li><a itemprop="url" href="/about-us">About Us</a></li>
+									<li><a itemprop="url" href="/blog">Blog</a></li>
+									<li><a itemprop="url" href="/careers">Careers</a></li>
+									<li><a itemprop="url" href="/testimonials">Testimonials</a></li>
+									<li><a itemprop="url" href="/contact-us">Contact Us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -23,12 +23,12 @@
 							<div class="widget-title"><h2 itemprop="title">What We Offer</h2></div>
 							<div class="widget-body">
 								<ul>
-									<li itemprop="Courses"><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
-									<li itemprop="Courses"><a itemprop="url" href="/keystage2">KS2 Courses</a></li>
-									<li itemprop="11+ Exams"><a itemprop="url" href="/11-plus">11+ Exams</a></li>
-									<li itemprop="TimeTables"><a itemprop="url" href="/timestables">TimeTables</a></li>
-									<li itemprop="Books Reading"><a itemprop="url" href="/books-shelf">Books Reading</a></li>
-									<li itemprop="Spells/Vocabulary"><a itemprop="url" href="/spelling">Spells/Vocabulary</a></li>
+									<li><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
+									<li><a itemprop="url" href="/keystage2">KS2 Courses</a></li>
+									<li><a itemprop="url" href="/11-plus">11+ Exams</a></li>
+									<li><a itemprop="url" href="/timestables">TimeTables</a></li>
+									<li><a itemprop="url" href="/books-shelf">Books Reading</a></li>
+									<li><a itemprop="url" href="/spelling">Spells/Vocabulary</a></li>
 								</ul>
 							</div>
 						</div>
