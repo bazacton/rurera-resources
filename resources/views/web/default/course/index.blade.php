@@ -525,7 +525,7 @@ $(document).ready(function () {
                 centeredSlides: true,
                 loop: true,
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 0,
 
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -550,7 +550,7 @@ $(document).ready(function () {
                     },
                     640: {
                         slidesPerView: 3,
-                        spaceBetween: 30,
+                        spaceBetween: 0,
                         centeredSlides: true
                     }
                 }
