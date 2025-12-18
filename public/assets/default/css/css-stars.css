@@ -173,9 +173,14 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     background: #f3f374;
 }
 /* Circle Progress style end */
+.subchapter-notes-modal {
+    padding-right: 0 !important;
+}
 .subchapter-notes-modal .modal-dialog {
     max-width: 100%;
     margin: 0;
+    height: 100%;
+    background-color: #fff;
 }
 .subchapter-img-block img {
     max-width: 100%;
@@ -187,7 +192,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     position: relative;
     width: 100%;
     height: 4px;
-    margin-top: 20px;
+    margin-top: 0;
 }
 .subchapter-slider .swiper-pagination-progressbar {
     background: rgba(0, 0, 0, 0.1);
@@ -220,6 +225,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .subchapter-notes-modal .modal-body {
     padding: 0;
+    height: 100%;
 }
 .subchapter-notes-modal .close {
     height: 30px;
@@ -235,6 +241,9 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .subchapter-notes-modal .modal-content {
     border-radius: 0;
+    border-radius: 0;
+    height: 100%;
+    background-color: #fff;
 }
 .subchapter-slider .swiper-slide {
     background-color: #f8f8f8;
