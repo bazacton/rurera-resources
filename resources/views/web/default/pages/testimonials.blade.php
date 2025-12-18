@@ -270,7 +270,45 @@
 @endsection
 
 @push('scripts_bottom')
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+
+    // Init Masonry after images load
+    var $grid = $('.masonry-grid').imagesLoaded(function () {
+        $grid.masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true
+        });
+    });
+
+    // Filter click callback
+    $('.testimonial-tabs li').on('click', function (e) {
+        e.preventDefault();
+
+        // active class toggle
+        $('.testimonial-tabs li').removeClass('active');
+        $(this).addClass('active');
+
+        // filter value
+        var filterValue = $(this).text().toLowerCase();
+
+        // show/hide items
+        if (filterValue === 'all testimonials') {
+            $('.grid-item').show();
+        } else {
+            $('.grid-item').hide();
+            $('.grid-item.' + filterValue).show();
+        }
+
+        // re-layout masonry
+        $grid.masonry('layout');
+    });
+
+});
+</script>
 <script>
   // Play Video Function
   $(document).ready(function () {
