@@ -174,10 +174,10 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     font-weight: 400;
     font-size: 14px;
 }
-.topic-accuracy img {
+.topic-accuracy .icon-box {
     position: relative;
 }
-.topic-accuracy img:before {
+.topic-accuracy .icon-box:before {
     content: '';
     border-width: 8px;
     border-style: solid;
