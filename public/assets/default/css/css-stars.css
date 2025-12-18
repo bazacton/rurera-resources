@@ -188,7 +188,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     transform: translateX(-50%);
     opacity: 0;
 }
-.topic-accuracy:after {
+.topic-accuracy .icon-box:after {
     content: '';
     border-width: 8px;
     border-style: solid;
@@ -205,7 +205,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     transform: translateY(-10px) translateX(-50%);
 }
 .topic-accuracy:hover .icon-box:before,
-.topic-accuracy:hover:after {
+.topic-accuracy:hover .icon-box:after {
     opacity: 1;
 }
 .accuracy-good {
