@@ -181,6 +181,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     margin: 0;
     height: 100%;
     background-color: #fff;
+    align-items: flex-start;
 }
 .subchapter-img-block img {
     max-width: 100%;
@@ -242,6 +243,9 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .subchapter-notes-modal .modal-content {
     border-radius: 0;
     background-color: #fff;
+    box-shadow: none;
+    gap: 0;
+    border: 0;
 }
 .subchapter-slider .swiper-slide {
     background-color: #f8f8f8;
