@@ -323,9 +323,9 @@ span.learn-lable {
 .slider-controls {
     position: relative;
     display: block;
-    min-width: 600px;
+    min-width: 100px;
     margin: 45px auto 0;
-    max-width: 600px;
+    max-width: 100px;
 }
 
 @media (max-width: 992px) {
