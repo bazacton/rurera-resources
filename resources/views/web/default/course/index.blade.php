@@ -144,9 +144,9 @@
                                                                                         <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><img src="/assets/default/svgs/above_80.svg" ></span>
                                                                                     </a>
                                                                                     <ul id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
-                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
-                                                                                        <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
-                                                                                        <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
+                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
+                                                                                        <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
+                                                                                        <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
                                                                                     </ul>
                                                                                     <div class="percent-holder">
                                                                                         <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
