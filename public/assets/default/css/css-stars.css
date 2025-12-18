@@ -97,7 +97,7 @@ body .lms-chapter-area .lms-chapter-ul-outer li ul li a {
     text-decoration: underline;
 }
 body .lms-chapter-area .lms-chapter-ul-outer li ul li {
-    list-style: lower-alpha;
+    list-style: none;
     padding: 5px 0;
     line-height: normal;
 }
