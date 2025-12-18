@@ -258,6 +258,8 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     padding: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 10px;
+    opacity: 0.6;
+    pointer-events: none;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
@@ -268,6 +270,8 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     background-color: #fff;
     transform: scale(1.2);
     z-index: 1;
+    opacity: 1;
+    pointer-events: unset;
 }
 .subchapter-slider .swiper-container {
     padding: 38px 0;
