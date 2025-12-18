@@ -328,6 +328,10 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .subchapter-notes-modal .close a {
     color: #fff;
 }
+.subchapter-notes-modal .close span {
+    display: block;
+    line-height: 30px;
+}
 .subchapter-notes-modal .modal-content {
     border-radius: 0;
     background-color: #fcfcfc;
