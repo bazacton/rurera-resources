@@ -17443,18 +17443,14 @@ section:has(.trial-steps) .lms-btn-group a small {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.footer-logo-box a {
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px
+    padding: 20px 20px;
 }
-
-.footer-logo-box a span {
+.footer-logo-box span {
     background-color: var(--primary);
     border-radius: 3px;
     color: #fff;
