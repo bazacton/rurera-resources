@@ -149,7 +149,10 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .lms-chapter-ul-outer .percent-holder {
     position: absolute;
     right: 15px;
-    top: 12px;
+    top: 5px;
+}
+.lms-chapter-ul-outer .chapter_percent {
+    font-size: 40px;
 }
 .topic-accuracy {
     position: relative;
