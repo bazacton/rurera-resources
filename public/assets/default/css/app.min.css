@@ -11439,7 +11439,10 @@ body .flipbook-data {
 }
 
 .gallery-sub-header .masonry-grid .grid-item {
-    margin-bottom: 0
+    margin-bottom: 0;
+    width: auto;
+    flex: auto;
+    max-width: fit-content;
 }
 
 .gallery-sub-header .masonry-grid figure {
