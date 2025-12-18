@@ -137,10 +137,11 @@
 
                                                                                 <li>
                                                                                     <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}
-                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_0.svg" title="5%"></span>
-                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_25.svg" title="30%"></span>
-                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_50.svg" title="60%"></span>
-                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_80.svg" title="85%"></span>
+                                                                                        <span class="topic-accuracy accuracy-not-started" data-title="Not Started"><img src="/assets/default/svgs/above_0.svg"></span>
+                                                                                        <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"><img src="/assets/default/svgs/above_25.svg"></span>
+                                                                                        <span class="topic-accuracy accuracy-good" data-title="Good"><img src="/assets/default/svgs/above_50.svg" ></span>
+                                                                                        <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><img src="/assets/default/svgs/above_80.svg" ></span>
+                                                                                        <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><img src="/assets/default/svgs/above_80.svg" ></span>
                                                                                     </a>
                                                                                     <ul id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
                                                                                         <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
