@@ -8,72 +8,72 @@
 @endpush
 
 @section('content')
-<section class="container-fluid">
-    <div class="row">
-        <div class="col-12 p-0">
-            <div class="post-show" style="overflow:hidden;">
-                <section class="count-number-wrapp" style="display:none">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-12">
-                                <div class="section-title">
-                                    <h2>{{ $course->title }}</h2>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="post-show" style="overflow:hidden;">
+                    <section class="count-number-wrapp" style="display:none">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class="section-title">
+                                        <h2>{{ $course->title }}</h2>
+                                    </div>
+                                    <ul class="count-number-boxes row">
+                                        <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="count-number-icon">
+                                                <i data-feather="edit-2" width="20" height="20" class="" style="color:#8cc811"></i>
+                                            </div>
+                                            <div class="count-number-body">
+                                                <h5>answered</h5>
+                                                <strong>1,355</strong>
+                                                <h5>questions</h5>
+                                            </div>
+                                        </li>
+                                        <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="count-number-icon">
+                                                <i data-feather="clock" width="20" height="20" class="" style="color:#00aeef"></i>
+                                            </div>
+                                            <div class="count-number-body">
+                                                <h5>spent</h5>
+                                                <strong>11 hr 32 min</strong>
+                                                <h5>practising</h5>
+                                            </div>
+                                        </li>
+                                        <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="count-number-icon">
+                                                <i data-feather="bar-chart" width="20" height="20" class="" style="color:#e67035"></i>
+                                            </div>
+                                            <div class="count-number-body">
+                                                <h5>Made progress in</h5>
+                                                <strong>73</strong>
+                                                <h5>skills</h5>
+                                            </div>
+                                        </li>
+                                        <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="count-number-icon">
+                                                <i data-feather="bar-chart" width="20" height="20" class="" style="color:#e67035"></i>
+                                            </div>
+                                            <div class="count-number-body">
+                                                <h5>Made progress in</h5>
+                                                <strong>73</strong>
+                                                <h5>skills</h5>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="count-number-boxes row">
-                                    <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
-                                        <div class="count-number-icon">
-                                            <i data-feather="edit-2" width="20" height="20" class="" style="color:#8cc811"></i>
-                                        </div>
-                                        <div class="count-number-body">
-                                            <h5>answered</h5>
-                                            <strong>1,355</strong>
-                                            <h5>questions</h5>
-                                        </div>
-                                    </li>
-                                    <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
-                                        <div class="count-number-icon">
-                                            <i data-feather="clock" width="20" height="20" class="" style="color:#00aeef"></i>
-                                        </div>
-                                        <div class="count-number-body">
-                                            <h5>spent</h5>
-                                            <strong>11 hr 32 min</strong>
-                                            <h5>practising</h5>
-                                        </div>
-                                    </li>
-                                    <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
-                                        <div class="count-number-icon">
-                                            <i data-feather="bar-chart" width="20" height="20" class="" style="color:#e67035"></i>
-                                        </div>
-                                        <div class="count-number-body">
-                                            <h5>Made progress in</h5>
-                                            <strong>73</strong>
-                                            <h5>skills</h5>
-                                        </div>
-                                    </li>
-                                    <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
-                                        <div class="count-number-icon">
-                                            <i data-feather="bar-chart" width="20" height="20" class="" style="color:#e67035"></i>
-                                        </div>
-                                        <div class="count-number-body">
-                                            <h5>Made progress in</h5>
-                                            <strong>73</strong>
-                                            <h5>skills</h5>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="lms-chapter-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 lms-chapter-area">
-                                <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="sidebar-nav mb-30 mt-15">
+                    </section>
+                    <section class="lms-chapter-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 lms-chapter-area">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="sidebar-nav mb-30 mt-15">
 
-                                            <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
+                                                <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
                                                     <div class="stats-user">
                                                         <h1>{{ $course->title }}</h1>
                                                     </div>
@@ -97,137 +97,96 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            <ul>
-                                                @foreach($course->chapters as $chapter)
-                                                    @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                                        <li><a href="#subject_{{$chapter->id}}">{{ $chapter->title}}</a></li>
-                                                    @endif
-                                                @endforeach
-                                            </ul>
+                                                <ul>
+                                                    @foreach($course->chapters as $chapter)
+                                                        @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+                                                            <li><a href="#subject_{{$chapter->id}}">{{ $chapter->title}}</a></li>
+                                                        @endif
+                                                    @endforeach
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
-                                        <div class="sorting-filter">
-                                            <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
-                                                <span><img src="/assets/default/svgs/grid-view.svg" alt="grid-view"></span>
+                                        {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
+                                            <div class="sorting-filter">
+                                                <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
+                                                    <span><img src="/assets/default/svgs/grid-view.svg" alt="grid-view"></span>
+                                                </a>
+                                                <a href="javascript:;" class="list-btn view-change-btn" data-type="chapters-detail-view">
+                                                    <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"></span>
                                             </a>
-                                            <a href="javascript:;" class="list-btn view-change-btn" data-type="chapters-detail-view">
-                                                <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"></span>
-                                        </a>
-                                        </div>
-                                    </div>--}}
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-short-view">
-                                        <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
-                                            <ul class="lms-chapter-ul" id="accordion">
-                                                @foreach($course->chapters as $chapter)
+                                            </div>
+                                        </div>--}}
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-short-view">
+                                            <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
+                                                <ul class="lms-chapter-ul" id="accordion">
+                                                    @foreach($course->chapters as $chapter)
+                                                        @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+                                                            <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
-                                                @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                                <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
+                                                                @if($chapter->subChapters->count() > 0)
+                                                                    <div class="lms-chapter-ul-outer">
+                                                                        <ul>
+                                                                            @foreach($chapter->subChapters as $subChapterObj)
+                                                                                @php $total_completion = 0;
+                                                                        $quizObj = isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem : (object) array();
+                                                                        $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
+                                                                        $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
+                                                                                @endphp
 
-                                                    @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                                    <div class="lms-chapter-ul-outer"><ul>
-                                                        @foreach($sub_chapters[$chapter->id] as $sub_chapter)
-                                                        @if(!empty($sub_chapter))
-                                                                @php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
-                                                                $total_completion = 0;
-                                                                @endphp
-                                                                <li>
-                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true">{{ $sub_chapter['title'] }}</a>
+                                                                                <li>
+                                                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}</a>
+                                                                                    <ul id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
+                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
+                                                                                        <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
+                                                                                        <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
+                                                                                    </ul>
+                                                                                    <div class="percent-holder">
+                                                                                        <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+                                                                                            <div class="circle_inner">
+                                                                                                <div class="round_per"></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
 
 
-                                                                {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
-                                                                <ul id="collapse{{$sub_chapter['id']}}" class="collapse" data-parent="#accordion">
-                                                                    <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
-                                                                    <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
-                                                                    <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
-                                                                </ul>
-                                                                @if($total_completion > 0)
-                                                                    @php $total_completion = round($total_completion / $sub_chapter_item->Quizzes->count()); @endphp
-                                                                @endif
-                                                                <div class="percent-holder">
-                                                                    <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
-                                                                        <div class="circle_inner">
-                                                                            <div class="round_per"></div>
-                                                                        </div>
+                                                                                </li>
+
+
+                                                                            @endforeach
+                                                                        </ul>
                                                                     </div>
-                                                                </div>
-
+                                                                @endif
 
                                                             </li>
                                                         @endif
-                                                        @endforeach
-                                                        </ul>
-                                                        @if( $chapter->challenge_title != '')
-                                                        @php $challenge_image = isset( $chapter->challenge_image )? $chapter->challenge_image : '';
-                                                        $challenge_border_color = isset( $chapter->challenge_border_color )? $chapter->challenge_border_color : '#146ebe';
-                                                        $challenge_background_color = isset( $chapter->challenge_background_color )? $chapter->challenge_background_color : '#74c0fc';
-                                                        @endphp
-                                                        <style>
-                                                            .lms-chapter-footer.lms-chapter-bg-blue:before {
-                                                                background: {{$challenge_background_color}};
-                                                            }
-                                                        </style>
-                                                        <div class="lms-chapter-footer lms-chapter-bg-blue" style="background:{{$challenge_border_color}}">
-                                                            @if($challenge_image != '')
-                                                            <span class="lms-chapter-icon">
-                                                                <figure>
-                                                                    <img src="{{$challenge_image}}" alt="{{$challenge_image}}" />
-                                                                </figure>
-                                                            </span>
-                                                            @endif
-                                                            <div class="lms-chapter-widget">
-                                                                <h5 class="lms-widget-title">
-                                                                    {{$chapter->challenge_title}}
-                                                                </h5>
-                                                                @php $challenge_quiz = isset( $chapter->challenge_quiz )? json_decode($chapter->challenge_quiz) : array(); $counter = 1;  @endphp
-
-                                                                @if( !empty( $challenge_quiz ))
-                                                                    <ul class="row">
-                                                                    @foreach( $challenge_quiz as $quiz_id)
-                                                                        @php $quizObj = App\Models\Quiz::find($quiz_id); @endphp
-                                                                        <li class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                                                            {{$quizObj->getTitleAttribute()}} # {{$counter}} ({{$quizObj->mastery_points}} Coins)
-                                                                        </li>
-                                                                        @php $counter++; @endphp
-                                                                    @endforeach
-                                                                    </ul>
-                                                                @endif
-                                                            </div>
-                                                        </div>
-                                                        @endif
-                                                    </div>
-                                                    @endif
-
-                                                </li>
-                                                @endif
-                                                @endforeach
-                                            </ul>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">
-                                        <div class="current-topics-detail bg-white mb-30 mt-15">
-                                        <div class="topics-table-group">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">
+                                            <div class="current-topics-detail bg-white mb-30 mt-15">
+                                                <div class="topics-table-group">
 
-                                        @foreach($course->chapters as $chapter)
-                                            @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+                                                    @foreach($course->chapters as $chapter)
+                                                        @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
 
-                                                <div class="topics-table">
-                                                    <table class="w-100">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="text-white text-left p-15">{{ $chapter->title }}</th>
-                                                                <th class="text-white text-left p-15">Mastery Level</th>
-                                                                <th class="text-white text-left p-15">Questions Count</th>
-                                                                <th class="text-white text-left p-15">Rersources</th>
-                                                            </tr>
-                                                        </thead>
+                                                            <div class="topics-table">
+                                                                <table class="w-100">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th class="text-white text-left p-15">{{ $chapter->title }}</th>
+                                                                        <th class="text-white text-left p-15">Mastery Level</th>
+                                                                        <th class="text-white text-left p-15">Questions Count</th>
+                                                                        <th class="text-white text-left p-15">Rersources</th>
+                                                                    </tr>
+                                                                    </thead>
 
-                                                        <tbody>
-                                                            @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                                                @foreach($sub_chapters[$chapter->id] as $sub_chapter)
-                                                                    @if(!empty($sub_chapter))
-                                                                        @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
+                                                                    <tbody>
+                                                                    @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
+                                                                        @foreach($sub_chapters[$chapter->id] as $sub_chapter)
+                                                                            @if(!empty($sub_chapter))
+                                                                                @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
                                                                         $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
                                                                         $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
 
@@ -241,62 +200,62 @@
                                                                         }
 
                                                                         $topic_percentage_text .= $topic_percentage_flag;
-                                                                        @endphp
+                                                                                @endphp
 
-                                                                        <tr>
-                                                                            <td data-label="{{ $chapter->title }}" class="px-15 py-20">
-                                                                                <div class="checkbox-field mb-0">
-                                                                                    <label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td data-label="Mastery Level" class="px-15 py-20">
+                                                                                <tr>
+                                                                                    <td data-label="{{ $chapter->title }}" class="px-15 py-20">
+                                                                                        <div class="checkbox-field mb-0">
+                                                                                            <label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td data-label="Mastery Level" class="px-15 py-20">
                                                                                 <span>
                                                                                 @if( $topic_percentage > 0)
-                                                                                    <div class="rurera-progress-bar">
+                                                                                        <div class="rurera-progress-bar">
                                                                                         <span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
                                                                                     </div>
-                                                                                @else
-                                                                                    -
-                                                                                @endif
+                                                                                    @else
+                                                                                        -
+                                                                                    @endif
                                                                                 </span>
-                                                                            </td>
-                                                                            <td data-label="Last Seen" class="px-15 py-20">
-                                                                                <span>{{$sub_chapter['total_questions']}}</span>
-                                                                            </td>
-                                                                            <td data-label="Rersources" class="px-15 py-20">
-                                                                                <a href="#" class="video-btn mr-10">
+                                                                                    </td>
+                                                                                    <td data-label="Last Seen" class="px-15 py-20">
+                                                                                        <span>{{$sub_chapter['total_questions']}}</span>
+                                                                                    </td>
+                                                                                    <td data-label="Rersources" class="px-15 py-20">
+                                                                                        <a href="#" class="video-btn mr-10">
                                                                                     <span class="icon-box">
                                                                                         <img src="/assets/default/svgs/play-video.svg" alt="play-video" title="Video">
                                                                                     </span>
-                                                                                </a>
-                                                                                <a href="#" class="file-btn">
+                                                                                        </a>
+                                                                                        <a href="#" class="file-btn">
                                                                                     <span class="icon-box">
                                                                                         <img src="/assets/default/svgs/filesheet.svg" alt="filesheet" title="Helpsheet">
                                                                                     </span>
-                                                                                </a>
-                                                                            </td>
-                                                                        </tr>
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
 
+                                                                            @endif
+                                                                        @endforeach
                                                                     @endif
-                                                                @endforeach
-                                                            @endif
-                                                        </tbody>
-                                                    </table>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
-                                            @endif
-                                        @endforeach
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
-        </section>
-    </div>
-</div>
-</div>
-</section>
+        </div>
+    </section>
     <div id="webinarReportModal" class="d-none">
         <h3 class="section-title after-line font-20 text-dark-blue">{{ trans('product.report_the_course') }}</h3>
         <form action="/course/{{ $course->id }}/report" method="post" class="mt-25">
@@ -329,88 +288,88 @@
 
 
 
-<div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
-            <div class="modal-body">
-                <div class="subchapter-slider">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap1.jpeg" alt="chap1">
+    <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                <div class="modal-body">
+                    <div class="subchapter-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap1.jpeg" alt="chap1">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap2.jpeg" alt="chap2">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap2.jpeg" alt="chap2">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap3.jpeg" alt="chap3">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap3.jpeg" alt="chap3">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap4.jpeg" alt="chap4">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap4.jpeg" alt="chap4">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap1.jpeg" alt="chap1">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap1.jpeg" alt="chap1">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap2.jpeg" alt="chap2">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap2.jpeg" alt="chap2">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap3.jpeg" alt="chap3">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap3.jpeg" alt="chap3">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="subchapter-img-block">
-                                    <img src="/assets/default/img/chap4.jpeg" alt="chap4">
+                                <div class="swiper-slide">
+                                    <div class="subchapter-img-block">
+                                        <img src="/assets/default/img/chap4.jpeg" alt="chap4">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider-controls">
-                        <div class="swiper-button-next">
-                            <img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right" height="800" width="800">
+                        <div class="slider-controls">
+                            <div class="swiper-button-next">
+                                <img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right" height="800" width="800">
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left" height="800" width="800">
+                            </div>
                         </div>
-                        <div class="swiper-button-prev">
-                            <img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left" height="800" width="800">
+
+                    </div>
+                    <div class="subchapter-footer">
+                        <div class="swiper-progress">
+                            <div class="swiper-pagination"></div>
                         </div>
-                    </div>
-                    
-                </div>
-                <div class="subchapter-footer">
-                    <div class="swiper-progress">
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <span class="learn-lable">Learn</span>
-                    <div class="subchapter-compare">
-                        <h4>Order and Compare</h4>
-                        <div class="compare-right">
-                            <span><em class="icon-box q-icon"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></em> 8 questions</span>
-                            <span> <em class="icon-box clock-icon"><img src="/assets/default/svgs/clock.svg" alt="clock"></em> No limit</span>
-                            <a href="#" class="start-btn">Start practicing</a>
+                        <span class="learn-lable">Learn</span>
+                        <div class="subchapter-compare">
+                            <h4>Order and Compare</h4>
+                            <div class="compare-right">
+                                <span><em class="icon-box q-icon"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></em> 8 questions</span>
+                                <span> <em class="icon-box clock-icon"><img src="/assets/default/svgs/clock.svg" alt="clock"></em> No limit</span>
+                                <a href="#" class="start-btn">Start practicing</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/js/helpers.js"></script>
+    <script src="/assets/default/js/helpers.js"></script>
     <script src="/assets/default/js/parts/time-counter-down.min.js"></script>
     <script src="/assets/default/vendors/barrating/jquery.barrating.min.js"></script>
     <script src="/assets/default/vendors/video/video.min.js"></script>
@@ -455,104 +414,104 @@
     <script src="/assets/default/js/parts/video_player_helpers.min.js"></script>
     <script src="/assets/default/js/parts/webinar_show.min.js"></script>
     <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-<script>
-      feather.replace()
-    </script>
-@if (!auth()->subscription('courses'))
     <script>
-        if( $(".subscription-modal").length > 0){
-            $(".subscription-modal").modal('show');
-        }
+        feather.replace()
     </script>
-@endif
-
-<script>
-$(document).on('click', '.view-change-btn', function (e) {
-
-	$(".view-change-btn").removeClass('active');
-	$(this).addClass('active');
-	var view_chapter = $(this).attr('data-type');
-	$(".chapter-views").addClass('rurera-hide');
-	$(".chapter-views."+view_chapter).removeClass('rurera-hide');
-});
-
-/*percent circle function start*/
-$(document).ready(function () {
-    $(".chapter_percent").each(function() {
-        var $this = $(this),
-        $dataV = $this.data("percent"),
-        $dataDeg = $dataV * 3.6,
-        $round = $this.find(".round_per");
-        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
-        $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
-        $this.prop('Counter', 0).animate({Counter: $dataV},
-    {
-        duration: 2000,
-        easing: 'swing',
-        step: function (now) {
-                $this.find(".percent_text").text(Math.ceil(now));
+    @if (!auth()->subscription('courses'))
+        <script>
+            if( $(".subscription-modal").length > 0){
+                $(".subscription-modal").modal('show');
             }
+        </script>
+    @endif
+
+    <script>
+        $(document).on('click', '.view-change-btn', function (e) {
+
+            $(".view-change-btn").removeClass('active');
+            $(this).addClass('active');
+            var view_chapter = $(this).attr('data-type');
+            $(".chapter-views").addClass('rurera-hide');
+            $(".chapter-views."+view_chapter).removeClass('rurera-hide');
         });
-        if($dataV >= 51){
-            $round.css("transform", "rotate(" + 360 + "deg)");
-            setTimeout(function(){
-            $this.addClass("percent_more");
-            },1000);
-            setTimeout(function(){
-            $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
-            },1000);
-        }
-    });
-});
-/*percent circle function end*/
-</script>
-<script>
-    let subchapterSwiper;
 
-    $('#subchapter-notes-modal').on('shown.bs.modal', function () {
-
-        if (!subchapterSwiper) {
-            subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
-                centeredSlides: true,
-                slideToClickedSlide: true,
-                loop: false,
-                slidesPerView: 3,
-                spaceBetween: 0,
-
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'progressbar'
-                },
-
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                        centeredSlides: true
-                    },
-                    480: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                        centeredSlides: true
-                    },
-                    640: {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                        centeredSlides: true
-                    }
+        /*percent circle function start*/
+        $(document).ready(function () {
+            $(".chapter_percent").each(function() {
+                var $this = $(this),
+                    $dataV = $this.data("percent"),
+                    $dataDeg = $dataV * 3.6,
+                    $round = $this.find(".round_per");
+                $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+                $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
+                $this.prop('Counter', 0).animate({Counter: $dataV},
+                    {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $this.find(".percent_text").text(Math.ceil(now));
+                        }
+                    });
+                if($dataV >= 51){
+                    $round.css("transform", "rotate(" + 360 + "deg)");
+                    setTimeout(function(){
+                        $this.addClass("percent_more");
+                    },1000);
+                    setTimeout(function(){
+                        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+                    },1000);
                 }
             });
-        } else {
-            subchapterSwiper.update();
-        }
+        });
+        /*percent circle function end*/
+    </script>
+    <script>
+        let subchapterSwiper;
 
-    });
+        $('#subchapter-notes-modal').on('shown.bs.modal', function () {
 
-</script>
+            if (!subchapterSwiper) {
+                subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
+                    centeredSlides: true,
+                    slideToClickedSlide: true,
+                    loop: false,
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    },
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'progressbar'
+                    },
+
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            centeredSlides: true
+                        },
+                        480: {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            centeredSlides: true
+                        },
+                        640: {
+                            slidesPerView: 3,
+                            spaceBetween: 0,
+                            centeredSlides: true
+                        }
+                    }
+                });
+            } else {
+                subchapterSwiper.update();
+            }
+
+        });
+
+    </script>
 
 @endpush
