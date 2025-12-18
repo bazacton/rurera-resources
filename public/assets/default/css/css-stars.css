@@ -179,14 +179,13 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .topic-accuracy .icon-box:before {
     content: '';
-    border-width: 8px;
+    border-width: 7px;
     border-style: solid;
     border-color: #ddd transparent transparent transparent;
     position: absolute;
-    top: -7px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0;
     opacity: 0;
 }
 .topic-accuracy:after {
@@ -195,16 +194,19 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     border-style: solid;
     border-color: #fff transparent transparent transparent;
     position: absolute;
-    top: -7px;
+    top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0;
     opacity: 0;
 }
 .topic-accuracy:hover:before {
     opacity: 1;
     visibility: visible;
     transform: translateY(-10px) translateX(-50%);
+}
+.topic-accuracy:hover .icon-box:before,
+.topic-accuracy:hover:after {
+    opacity: 1;
 }
 .accuracy-good {
     color: #3ef976;
