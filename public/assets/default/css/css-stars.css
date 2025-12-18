@@ -316,6 +316,13 @@ span.learn-lable {
     padding: 8px 20px;
     border-radius: 5px;
 }
+.slider-controls {
+    position: relative;
+    display: block;
+    min-width: 600px;
+    margin: 45px auto 0;
+    max-width: 600px;
+}
 
 @media (max-width: 992px) {
     /* .lms-chapter-area .lms-chapter-ul {
