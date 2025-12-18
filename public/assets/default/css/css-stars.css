@@ -189,20 +189,20 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .subchapter-slider {
     position: relative;
 }
-.subchapter-slider .swiper-progress {
+.subchapter-notes-modal .swiper-progress {
     position: relative;
     width: 100%;
     height: 4px;
     margin-top: 30px;
 }
-.subchapter-slider .swiper-pagination-progressbar {
+.subchapter-notes-modal .swiper-pagination-progressbar {
     background: rgba(0, 0, 0, 0.1);
 }
-.subchapter-slider .swiper-pagination-progressbar-fill {
+.subchapter-notes-modal .swiper-pagination-progressbar-fill {
     background: var(--primary); /* change color if needed */
     transition: width 0.3s ease;
 }
-.subchapter-slider .swiper-pagination-progressbar {
+.subchapter-notes-modal .swiper-pagination-progressbar {
     height: 4px;
     width: 100%;
 }
