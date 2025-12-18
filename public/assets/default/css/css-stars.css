@@ -174,7 +174,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 /* Circle Progress style end */
 .subchapter-notes-modal .modal-dialog {
-    max-width: 1200px;
+    max-width: 100%;
 }
 .subchapter-img-block img {
     max-width: 100%;
