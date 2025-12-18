@@ -21,8 +21,8 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                             <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
                         </a>
                     </figure>
-                    <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">National Curriculum</a>
+                    <h3 class="mb-5 font-20 font-weight-bold text-dark-charcoal">
+                        National Curriculum
                     </h3>
                     <p itemprop="description">If offer Skill plans, Courses Topics and Test preparations as per defined curricula.</p>
                 </div>
