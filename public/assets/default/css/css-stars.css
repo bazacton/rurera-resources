@@ -179,14 +179,14 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .topic-accuracy .icon-box:before {
     content: '';
-    border-width: 7px;
+    border-width: 8px;
     border-style: solid;
     border-color: #ddd transparent transparent transparent;
     position: absolute;
     top: -10px;
     left: 50%;
-    transform: translateX(-50%);
     opacity: 0;
+    margin-left: -8px;
 }
 .topic-accuracy .icon-box:after {
     content: '';
