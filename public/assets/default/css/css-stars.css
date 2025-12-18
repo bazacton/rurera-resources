@@ -197,6 +197,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     width: 100%;
     height: 4px;
     margin-bottom: 20px;
+    margin: 10px 0 20px;
 }
 .subchapter-notes-modal .swiper-pagination-progressbar {
     background: rgba(0, 0, 0, 0.1);
