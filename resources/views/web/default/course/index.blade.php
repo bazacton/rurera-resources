@@ -397,8 +397,8 @@
                     <div class="subchapter-compare">
                         <h4>Order and Compare</h4>
                         <div class="compare-right">
-                            <span><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"> 8 questions</span>
-                            <span><img src="/assets/default/svgs/clock.svg" alt="clock"> No limit</span>
+                            <span><em class="icon-box q-icon"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></em> 8 questions</span>
+                            <span> <em class="icon-box clock-icon"><img src="/assets/default/svgs/clock.svg" alt="clock"></em> No limit</span>
                             <a href="#" class="start-btn">Start practicing</a>
                         </div>
                     </div>
