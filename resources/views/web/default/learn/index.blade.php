@@ -14,7 +14,7 @@
     <div class="categories-boxes row">
         <div class="col-12">
             <div class="subjects-heading">
-                <h2 class="font-22">Subjects - {{$categoryObj->getTitleAttribute()}}</h2>
+                <h2 class="font-22">Subjects - {{$categoryObj->getTitleAttribute()}} -- {{$categoryObj->id}}</h2>
             </div>
         </div>
         <div class="col-12">
