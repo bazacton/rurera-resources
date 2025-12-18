@@ -137,11 +137,11 @@
 
                                                                                 <li>
                                                                                     <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}
-                                                                                        <span class="topic-accuracy accuracy-not-started" data-title="Not Started"><img src="/assets/default/svgs/above_0.svg"></span>
-                                                                                        <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"><img src="/assets/default/svgs/above_25.svg"></span>
-                                                                                        <span class="topic-accuracy accuracy-good" data-title="Good"><img src="/assets/default/svgs/above_50.svg" ></span>
-                                                                                        <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><img src="/assets/default/svgs/above_80.svg" ></span>
-                                                                                        <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><img src="/assets/default/svgs/above_80.svg" ></span>
+                                                                                        <span class="topic-accuracy accuracy-not-started" data-title="Not Started"> <span class="icon-box"><img src="/assets/default/svgs/above_0.svg"></span> </span>
+                                                                                        <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"> <span class="icon-box"><img src="/assets/default/svgs/above_25.svg"></span></span>
+                                                                                        <span class="topic-accuracy accuracy-good" data-title="Good"><span class="icon-box"><img src="/assets/default/svgs/above_50.svg"></span></span>
+                                                                                        <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><span class="icon-box"><img src="/assets/default/svgs/above_80.svg" ></span></span>
+                                                                                        <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><span class="icon-box"><img src="/assets/default/svgs/above_80.svg" ></span></span>
                                                                                     </a>
                                                                                     <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
                                                                                         <ul>

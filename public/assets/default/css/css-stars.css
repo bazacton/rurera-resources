@@ -174,6 +174,21 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     font-weight: 400;
     font-size: 14px;
 }
+.topic-accuracy img {
+    position: relative;
+}
+.topic-accuracy img:before {
+    content: '';
+    border-width: 8px;
+    border-style: solid;
+    border-color: #ddd transparent transparent transparent;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0;
+    opacity: 0;
+}
 .topic-accuracy:after {
     content: '';
     border-width: 8px;
