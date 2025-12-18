@@ -151,6 +151,30 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     right: 15px;
     top: 12px;
 }
+.topic-accuracy {
+    position: relative;
+}
+.topic-accuracy:before {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.topic-accuracy:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
 /* Circle Progress style start */
 .chapter_percent {font-size:30px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
 .circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
