@@ -17,9 +17,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="#" itemprop="url">
-                            <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold text-dark-charcoal">
                         National Curriculum
@@ -81,12 +79,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="800" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/book-shelf" itemprop="url">
-                            <img src="../assets/default/img/book-shelf-feature.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/book-shelf-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
-                    <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/book-shelf" itemprop="url" class="text-dark-charcoal">Children Books Online</a>
+                    <h3 class="mb-5 font-20 font-weight-bold text-dark-charcoal">
+                        Children Books Online
                     </h3>
                     <p itemprop="description">Discover vast collection of children books and track reading progress and activity, like percentage and time.</p>
                 </div>
@@ -97,12 +93,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="900" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="#" itemprop="url">
-                            <img src="../assets/default/img/teacher-empowerment-feature.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/teacher-empowerment-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
-                    <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Teacher Empowerment Tools</a>
+                    <h3 class="mb-5 font-20 font-weight-bold text-dark-charcoal">
+                        Teacher Empowerment Tools
                     </h3>
                     <p itemprop="description">Immediate feedback and assessment tools allow teachers to monitor student progress and identify areas that require improvement.</p>
                 </div>
@@ -113,12 +107,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/register" itemprop="url">
-                            <img src="../assets/default/img/rewards-features.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/rewards-features.webp" alt="feature image" height="143" width="276">
                     </figure>
-                    <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Win Rewards</a>
+                    <h3 class="mb-5 font-20 font-weight-bold text-dark-charcoal">
+                        Win Rewards
                     </h3>
                     <p itemprop="description">Avail an awesome opportunity to Earn Rewards, Coin points, Win and later redeem to toys.</p>
                 </div>
