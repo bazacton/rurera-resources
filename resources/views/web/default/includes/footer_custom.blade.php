@@ -50,9 +50,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-lg-4"><div class="footer-logo-wrapper"><div class="footer-dots-img"><figure>
-				<img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure></div><div class="footer-logo-box">
-				<a href="#"><img src="/store/1/logo.png" width="185" height="38" alt="footer logo image"><span>Schedule Consultation</span></a></div></div>
+			<div class="col-12 col-lg-4"><div class="footer-logo-wrapper">
+					<div class="footer-dots-img">
+						<figure><img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure>
+					</div>
+					<div class="footer-logo-box">
+						<img src="/store/1/logo.png" width="185" height="38" alt="footer logo image">
+						<span>Schedule Consultation</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
