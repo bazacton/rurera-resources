@@ -136,18 +136,22 @@
                                                                                 @endphp
 
                                                                                 <li>
-                                                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}</a>
-                                                                                    <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
-                                                                                        <ul>
-                                                                                            <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
-                                                                                            <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
-                                                                                            <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
-                                                                                        </ul>
-                                                                                    </div>
+                                                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}
+                                                                                        <span class="topic-accuracy accuracy-not-started" data-title="Not Started"><img src="/assets/default/svgs/above_0.svg"></span>
+                                                                                        <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"><img src="/assets/default/svgs/above_25.svg"></span>
+                                                                                        <span class="topic-accuracy accuracy-good" data-title="Good"><img src="/assets/default/svgs/above_50.svg" ></span>
+                                                                                        <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><img src="/assets/default/svgs/above_80.svg" ></span>
+                                                                                        <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><img src="/assets/default/svgs/above_80.svg" ></span>
+                                                                                    </a>
+                                                                                    <ul id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
+                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
+                                                                                        <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
+                                                                                        <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
+                                                                                    </ul>
                                                                                     <div class="percent-holder">
                                                                                         <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
                                                                                             <div class="circle_inner">
-                                                                                                <div class="round_per"></div>
+                                                                                                <div class="round_per">{{$total_completion}}%</div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
