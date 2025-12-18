@@ -271,7 +271,8 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .subchapter-slider {
     position: relative;
     background-color: #fcfcfc;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .subchapter-notes-modal .swiper-progress {
     position: relative;
