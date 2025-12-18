@@ -136,7 +136,12 @@
                                                                                 @endphp
 
                                                                                 <li>
-                                                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}</a>
+                                                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}
+                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_0.svg" title=""></span>
+                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_25.svg" title=""></span>
+                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_50.svg" title=""></span>
+                                                                                        <span class="topic-accuracy"><img src="/assets/default/svgs/above_80.svg" title=""></span>
+                                                                                    </a>
                                                                                     <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
                                                                                         <ul>
                                                                                             <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
