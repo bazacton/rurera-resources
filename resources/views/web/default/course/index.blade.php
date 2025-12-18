@@ -132,6 +132,7 @@
                                                                         $quizObj = isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem : (object) array();
                                                                         $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
                                                                         $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
+                                                                        $total_completion = 40;
                                                                                 @endphp
 
                                                                                 <li>
