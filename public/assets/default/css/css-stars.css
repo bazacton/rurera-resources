@@ -160,7 +160,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .topic-accuracy:before {
     content: attr(data-title);
     position: absolute;
-    bottom: 135%;
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -189,7 +189,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .topic-accuracy:hover:before {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateX(-50%);
 }
 .accuracy-good {
     color: #3ef976;
