@@ -171,6 +171,18 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     font-weight: 400;
     font-size: 14px;
 }
+.topic-accuracy:after {
+    content: '';
+    border-width: 8px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0;
+    opacity: 0;
+}
 .topic-accuracy:hover:before {
     opacity: 1;
     visibility: visible;
@@ -183,9 +195,18 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: var(--blue); content:'';}
 .circle_inbox {position: absolute;top: 50%; left: 50%; background: #fff; z-index: 3; border-radius: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%);}
 .percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000;
-    font-weight: bold;}
+    font-weight: bold;
+}
+.chapter_percent .chapter_percent {
+    font-size: 35px;
+}
 .chapter_percent .circle_inbox .percent_text {
-    display: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ddd;
+}
+.chapter_percent .round_per {
+    text-indent: -9999px;
 }
 .circle-orange .round_per,
 .circle-orange.percent_more:after {
