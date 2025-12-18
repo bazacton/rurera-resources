@@ -187,6 +187,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     left: 50%;
     opacity: 0;
     margin-left: -8px;
+    transition: all .5s;
 }
 .topic-accuracy .icon-box:after {
     content: '';
@@ -198,6 +199,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
+    transition: all .5s;
 }
 .topic-accuracy:hover:before {
     opacity: 1;
