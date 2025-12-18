@@ -134,37 +134,14 @@
                                                                 @endphp
                                                                 <li>
                                                                 <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true">{{ $sub_chapter['title'] }}</a>
-                                                                <a href="" data-toggle="modal" data-target="#subchapter-notes-modal">Modal Box</a>
+
 
                                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
-
-                                                                @if($sub_chapter_item->Quizzes->count() > 0)
                                                                 <ul id="collapse{{$sub_chapter['id']}}" class="collapse" data-parent="#accordion">
-                                                                    @foreach($sub_chapter_item->Quizzes as $QuizObj)
-                                                                        @php
-                                                                        $topicPerformData = Quiz::getQuizPercentage($QuizObj->id, true);
-
-                                                                        $topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
-                                                                        $topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
-                                                                        $total_completion += $topic_completion;
-                                                                        $topic_percentage_flag = '';
-                                                                        if($topic_completion > 80){
-                                                                            $topic_percentage_flag = ($topic_accuracy > 0)? '<img src="/assets/default/svgs/above_0.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-                                                                            $topic_percentage_flag = ($topic_accuracy > 25)? '<img src="/assets/default/svgs/above_25.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-                                                                            $topic_percentage_flag = ($topic_accuracy > 50)? '<img src="/assets/default/svgs/above_50.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-                                                                            $topic_percentage_flag = ($topic_accuracy > 80)? '<img src="/assets/default/svgs/above_80.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-                                                                        }
-
-                                                                        $topic_percentage_text = ($topic_completion > 0 && $topic_completion < 80)? '('.$topic_completion.')' : '';
-
-
-                                                                        $topic_percentage_text .= $topic_percentage_flag;
-                                                                        @endphp
-
-                                                                        <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }} {!! $topic_percentage_text !!}</a></li>
-                                                                    @endforeach
+                                                                    <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
+                                                                    <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
+                                                                    <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
                                                                 </ul>
-                                                                @endif
                                                                 @if($total_completion > 0)
                                                                     @php $total_completion = round($total_completion / $sub_chapter_item->Quizzes->count()); @endphp
                                                                 @endif
