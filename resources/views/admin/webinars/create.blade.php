@@ -41,7 +41,7 @@
 
                             <form method="post" action="{{ getAdminPanelUrl() }}/webinars/{{ !empty($webinar) ? $webinar->id.'/update' : 'store' }}" id="webinarForm" class="webinar-form">
                                 {{ csrf_field() }}
-                                
+
                                 <div class="rurera-webinar-tabs">
                                     <ul class="nav" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
@@ -58,7 +58,7 @@
 
                                                 <div class="row">
                                                     <div class="col-12 col-md-12">
-                                                        
+
                                                         <div class="row">
                                                             <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                                 @if(!empty(getGeneralSettings('content_translate')))
@@ -155,10 +155,10 @@
                                                                     @enderror
                                                                 </div>
                                                             </div>
-                                                            
-                                                            
-                                                            
-                                                            
+
+
+
+
                                                             <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                                 <div class="form-group">
                                                                     <label class="input-label">{{ trans('update.points') }}</label>
@@ -170,7 +170,7 @@
                                                                     @enderror
                                                                 </div>
                                                             </div>
-                                                            
+
                                                             <div class="col-12 col-md-4 col-lg-4 rurera-hide">
                                                                 <div class="form-group">
                                                                     <label class="input-label">Custom URL</label>
@@ -214,10 +214,10 @@
                                                                     @enderror
                                                                 </div>
                                                             </div>
-                                                            
-                                                            
-                                                            
-                                                            
+
+
+
+
                                                             <div class="col-12 col-md-4 col-lg-4">
                                                                 <div class="form-group">
                                                                     <label class="input-label">{{ trans('public.thumbnail_image') }}</label>
@@ -272,7 +272,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 col-md-4 col-lg-4 rurera-hide">
+                                                            <div class="col-12 col-md-4 col-lg-4">
                                                                 <div class="form-group">
                                                                     <label>Background Color</label>
                                                                     <div class="input-group colorpickerinput">
@@ -559,7 +559,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </section>
 
                                                 <section class="mt-3 rurera-hide">
@@ -1087,7 +1087,7 @@
                                     </div>
                                 </div>
 
-                                
+
 
                                 <section class="mt-3 rurera-hide">
                                     <h2 class="section-title after-line">{{ trans('public.message_to_reviewer') }}</h2>
