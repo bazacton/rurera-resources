@@ -137,11 +137,13 @@
 
                                                                                 <li>
                                                                                     <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}</a>
-                                                                                    <ul id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
-                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
-                                                                                        <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
-                                                                                        <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
-                                                                                    </ul>
+                                                                                    <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
+                                                                                        <ul>
+                                                                                            <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn</a></li>
+                                                                                            <li><a href="javascript:;" class="course-practice-btn">Practice</a></li>
+                                                                                            <li><a href="javascript:;" class="course-progress-btn">Progress</a></li>
+                                                                                        </ul>
+                                                                                    </div>
                                                                                     <div class="percent-holder">
                                                                                         <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
                                                                                             <div class="circle_inner">
