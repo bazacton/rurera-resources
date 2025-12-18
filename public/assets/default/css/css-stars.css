@@ -189,6 +189,8 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .subchapter-slider {
     position: relative;
+    background-color: #fcfcfc;
+    padding-bottom: 40px;
 }
 .subchapter-notes-modal .swiper-progress {
     position: relative;
@@ -245,7 +247,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .subchapter-notes-modal .modal-content {
     border-radius: 0;
-    background-color: #fff;
+    background-color: #fcfcfc;
     box-shadow: none;
     gap: 0;
     border: 0;
@@ -271,6 +273,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     padding: 38px 0;
 }
 .subchapter-footer {
+    background-color: #fff;
     padding: 25px 30px;
     margin-top: auto;
 }
