@@ -399,7 +399,7 @@
                         <div class="compare-right">
                             <span><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"> 8 questions</span>
                             <span><img src="/assets/default/svgs/clock.svg" alt="clock"> No limit</span>
-                            <a href="#" class="start-btn">Start island</a>
+                            <a href="#" class="start-btn">Start practicing</a>
                         </div>
                     </div>
                 </div>
