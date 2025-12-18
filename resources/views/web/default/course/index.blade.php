@@ -411,6 +411,17 @@
                     <div class="swiper-progress">
                         <div class="swiper-pagination"></div>
                     </div>
+                    <div class="subchapter-footer">
+                        <span class="learn-lable">Learn</span>
+                        <div class="subchapter-compare">
+                            <h4>Order and Compare</h4>
+                            <div class="compare-right">
+                                <span><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"> 8 questions</span>
+                                <span><img src="/assets/default/svgs/clock.svg" alt="clock"> No limit</span>
+                                <a href="#" class="start-btn">Start island</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
