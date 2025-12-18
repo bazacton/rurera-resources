@@ -151,7 +151,7 @@
                                                                                     <div class="percent-holder">
                                                                                         <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
                                                                                             <div class="circle_inner">
-                                                                                                <div class="round_per">{{$total_completion}}%</div>
+                                                                                                <div class="round_per"></div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -456,7 +456,7 @@
                         duration: 2000,
                         easing: 'swing',
                         step: function (now) {
-                            $this.find(".percent_text").text(Math.ceil(now));
+                            $this.find(".percent_text").text(Math.ceil(now)+'%');
                         }
                     });
                 if($dataV >= 51){
