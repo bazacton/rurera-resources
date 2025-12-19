@@ -17,50 +17,28 @@
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="https:../assets/default/img/staff-1.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <img src="https:../assets/default/img/staff-1.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                     </figure>
                 </div>
             </div>
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="../assets/default/img/staff-6.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <img src="../assets/default/img/staff-6.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                     </figure>
                 </div>
             </div>
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="../assets/default/img/staff-4.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <img src="../assets/default/img/staff-4.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                     </figure>
                 </div>
             </div>
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="../assets/default/img/staff-5.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
-                    </figure>
-                </div>
-            </div>
-
-            <div class="grid-item col-lg-3 col-md-3 col-sm-6">
-                <div class="img-holder">
-                    <figure>
-                        <a href="#"><img src="../assets/default/img/staff-2.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
-                    </figure>
-                </div>
-            </div>
-            <div class="grid-item col-lg-3 col-md-3 col-sm-6">
-                <div class="img-holder">
-                    <figure>
-                        <a href="#"><img src="../assets/default/img/staff-3.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
-                    </figure>
-                </div>
-            </div>
-            <div class="grid-item col-lg-3 col-md-3 col-sm-6">
-                <div class="img-holder">
-                    <figure>
-                        <a href="#"><img src="https:../assets/default/img/staff-7.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <img src="../assets/default/img/staff-5.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                     </figure>
                 </div>
             </div>
@@ -68,7 +46,29 @@
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="../assets/default/img/staff-5.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <img src="../assets/default/img/staff-2.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                    </figure>
+                </div>
+            </div>
+            <div class="grid-item col-lg-3 col-md-3 col-sm-6">
+                <div class="img-holder">
+                    <figure>
+                        <img src="../assets/default/img/staff-3.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                    </figure>
+                </div>
+            </div>
+            <div class="grid-item col-lg-3 col-md-3 col-sm-6">
+                <div class="img-holder">
+                    <figure>
+                        <img src="https:../assets/default/img/staff-7.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="grid-item col-lg-3 col-md-3 col-sm-6">
+                <div class="img-holder">
+                    <figure>
+                        <img src="../assets/default/img/staff-5.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                     </figure>
                 </div>
             </div>
