@@ -166,8 +166,9 @@
         </div>
     </section>
 @endsection
-<script src="https://unpkg.com/opentype.js@latest/dist/opentype.min.js"></script>
+
 <!-- <script>
+    <script src="https://unpkg.com/opentype.js@latest/dist/opentype.min.js"></script>
 document.addEventListener("DOMContentLoaded", function () {
 
     function convertParagraphsToSVG(fontUrl) {
