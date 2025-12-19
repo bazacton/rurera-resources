@@ -84,7 +84,7 @@
                     <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
                         <img class="mb-15 blue-light-filter" src="../assets/default/svgs/support-white.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Get Rewards</h3>
-                        <p class="pt-10">Have fun learning with Reward Coins, earn rewards, and make lasting memories with favorite toys.</p>
+                        <p class="pt-10">Have fun learning with Reward Coins, earn rewards, and make lasting memories.</p>
                     </div>
                 </div>
             </div>
