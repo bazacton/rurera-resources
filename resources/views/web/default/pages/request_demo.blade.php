@@ -16,7 +16,7 @@
                         <p class="font-19 text-white mb-0 pt-15">Schedule a demo with our team today!</p>
                     </div>
                     <div class="lms-btn-group custom-btn">
-                        <a href="#" class="get-started-btn bg-white text-primary font-14 font-weight-500">Get started<small>for</small>free</a>
+                        <a href="/pricing" class="get-started-btn bg-white text-primary font-14 font-weight-500">Get started<small>for</small>free</a>
                         <a href="#contact-form" class="demo-btn text-white font-14 font-weight-500 btn-outline">Book a demo</a>
                     </div>
                 </div>
@@ -38,13 +38,13 @@
                     <div class="trial-steps mb-50">
                         <ul>
                             <li class="active">
-                                <span class="icon-box"><img src="/assets/default/svgs/icon-lock.svg" alt="" /></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/icon-lock.svg" alt="icon-lock" /></span>
                             </li>
                             <li>
-                                <span class="icon-box"><img src="/assets/default/svgs/icon-bell.svg" alt="" /></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/icon-bell.svg" alt="icon-bell" /></span>
                             </li>
                             <li>
-                                <span class="icon-box"><img src="/assets/default/svgs/icon-star.svg" alt="" /></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/icon-star.svg" alt="icon-star" /></span>
                             </li>
                         </ul>
                         <div class="row">
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lms-btn-group"><a href="#">Get started for free now</a></div>
+                    <div class="lms-btn-group"><a href="/pricing">Get started for free now</a></div>
                 </div>
             </div>
         </div>
