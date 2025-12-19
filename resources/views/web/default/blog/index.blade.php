@@ -168,40 +168,48 @@
 @endsection
 <script src="https://unpkg.com/opentype.js@latest/dist/opentype.min.js"></script>
 <script>
-function convertParagraphsToSVG(fontUrl) {
-    opentype.load(fontUrl, function (err, font) {
-        if (err) {
-            console.error('Font load error:', err);
-            return;
-        }
+document.addEventListener("DOMContentLoaded", function () {
 
-        document.querySelectorAll('p').forEach(p => {
-            const text = p.innerText;
-            const fontSize = parseInt(getComputedStyle(p).fontSize);
-            const color = getComputedStyle(p).color;
+    function convertParagraphsToSVG(fontUrl) {
+        opentype.load(fontUrl, function (err, font) {
+            if (err) {
+                console.error("Font load failed:", err);
+                return;
+            }
 
-            // Create SVG
-            const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-            const path = font.getPath(text, 0, fontSize, fontSize);
-            const bbox = path.getBoundingBox();
+            document.querySelectorAll("p").forEach(p => {
 
-            svg.setAttribute("width", bbox.x2 - bbox.x1);
-            svg.setAttribute("height", bbox.y2 - bbox.y1);
-            svg.setAttribute("viewBox", `${bbox.x1} ${bbox.y1} ${bbox.x2 - bbox.x1} ${bbox.y2 - bbox.y1}`);
+                const text = p.textContent.trim();
+                if (!text) return;
 
-            const pathEl = document.createElementNS("http://www.w3.org/2000/svg", "path");
-            pathEl.setAttribute("d", path.toPathData());
-            pathEl.setAttribute("fill", color);
+                const style = getComputedStyle(p);
+                const fontSize = parseFloat(style.fontSize);
+                const color = style.color;
 
-            svg.appendChild(pathEl);
+                const path = font.getPath(text, 0, fontSize, fontSize);
+                const bbox = path.getBoundingBox();
 
-            // Replace paragraph with SVG
-            p.replaceWith(svg);
+                const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", bbox.x2 - bbox.x1);
+                svg.setAttribute("height", bbox.y2 - bbox.y1);
+                svg.setAttribute("viewBox", `${bbox.x1} ${bbox.y1} ${bbox.x2 - bbox.y1}`);
+
+                const pathEl = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                pathEl.setAttribute("d", path.toPathData(2));
+                pathEl.setAttribute("fill", color);
+
+                svg.appendChild(pathEl);
+                svg.style.display = "block";
+
+                p.replaceWith(svg);
+            });
         });
-    });
-}
+    }
 
-// CALL FUNCTION
-convertParagraphsToSVG('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf');
+    // ✅ USE REAL TTF FONT (IMPORTANT)
+    convertParagraphsToSVG("https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf");
+
+});
 </script>
+
 
