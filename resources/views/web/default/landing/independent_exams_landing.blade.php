@@ -28,140 +28,140 @@
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-16.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-16.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-16.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-16.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-17.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-17.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-17.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-17.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-18.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-18.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-19.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-19.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-18.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-18.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-19.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-19.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-22.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-22.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-22.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-22.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-22.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-22.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-16.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-16.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-18.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-18.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-18.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-18.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-22.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-22.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-19.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-19.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-17.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-17.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="59" src="/store/1/default_images/sats-header/key-19.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="59" src="/store/1/default_images/sats-header/key-19.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-18.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-18.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 grid-item">
                         <div class="img-holder">
                             <figure>
-                                <a href="#"><img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-22.png" width="142" class="rounded" /></a>
+                                <img alt="#" height="46" src="/store/1/default_images/sats-header/ks1-22.png" width="142" class="rounded" />
                             </figure>
                         </div>
                     </div>
