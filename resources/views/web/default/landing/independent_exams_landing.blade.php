@@ -283,7 +283,7 @@
                             </h4>
                             <p class="mb-0 font-16 text-white">Our resources will help you navigate and provide a comprehensive learning experience for your students.</p>
                         </div>
-                        <div class="justify-content-center lms-btn-group"><a href="https://rurera.com" class="text-white border-white lms-btn rounded-pill">Find more</a></div>
+                        <div class="justify-content-center lms-btn-group"><a href="/pricing" class="text-white border-white lms-btn rounded-pill">Find more</a></div>
                     </div>
                 </div>
             </div>
