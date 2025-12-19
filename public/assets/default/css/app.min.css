@@ -11412,8 +11412,7 @@ body .flipbook-data {
 }
 
 .masonry-grid {
-    margin-left: -14px;
-    width: 100% !important
+    margin-left: auto;
 }
 
 .masonry-grid-gallery .find-instructor-section-circle {
