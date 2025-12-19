@@ -185,29 +185,54 @@ document.addEventListener("DOMContentLoaded", function () {
                 const style = getComputedStyle(p);
                 const fontSize = parseFloat(style.fontSize);
                 const color = style.color;
+                const maxWidth = p.clientWidth;
 
-                const path = font.getPath(text, 0, fontSize, fontSize);
-                const bbox = path.getBoundingBox();
+                const words = text.split(" ");
+                let lines = [];
+                let currentLine = "";
 
+                // 🔹 Word wrapping logic
+                words.forEach(word => {
+                    let testLine = currentLine + word + " ";
+                    let testPath = font.getPath(testLine, 0, fontSize, fontSize);
+                    let testWidth = testPath.getBoundingBox().x2;
+
+                    if (testWidth > maxWidth && currentLine !== "") {
+                        lines.push(currentLine);
+                        currentLine = word + " ";
+                    } else {
+                        currentLine = testLine;
+                    }
+                });
+                lines.push(currentLine);
+
+                // 🔹 Create SVG
                 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-                svg.setAttribute("width", bbox.x2 - bbox.x1);
-                svg.setAttribute("height", bbox.y2 - bbox.y1);
-                svg.setAttribute("viewBox", `${bbox.x1} ${bbox.y1} ${bbox.x2 - bbox.y1}`);
+                const lineHeight = fontSize * 1.4;
+                svg.setAttribute("width", maxWidth);
+                svg.setAttribute("height", lines.length * lineHeight);
 
-                const pathEl = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                pathEl.setAttribute("d", path.toPathData(2));
-                pathEl.setAttribute("fill", color);
+                let y = fontSize;
 
-                svg.appendChild(pathEl);
+                lines.forEach(line => {
+                    const path = font.getPath(line, 0, y, fontSize);
+                    const pathEl = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    pathEl.setAttribute("d", path.toPathData(2));
+                    pathEl.setAttribute("fill", color);
+                    svg.appendChild(pathEl);
+                    y += lineHeight;
+                });
+
                 svg.style.display = "block";
-
                 p.replaceWith(svg);
             });
         });
     }
 
-    // ✅ USE REAL TTF FONT (IMPORTANT)
-    convertParagraphsToSVG("https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf");
+    // ✅ REAL TTF FONT
+    convertParagraphsToSVG(
+        "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf"
+    );
 
 });
 </script>
