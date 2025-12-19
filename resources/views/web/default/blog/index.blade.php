@@ -166,7 +166,7 @@
         </div>
     </section>
 @endsection
-
+<script src="https://unpkg.com/opentype.js@latest/dist/opentype.min.js"></script>
 <script>
 function convertParagraphsToSVG(fontUrl) {
     opentype.load(fontUrl, function (err, font) {
