@@ -28,7 +28,7 @@
                         <div class="services-card-body">
                             <figure><img src="/assets/default/img/support.jpg" alt="support" title="support"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
-                                <h2 class="font-20 mb-15 text-dark-charcoal">24/7 Support</h2>
+                                <h2 class="font-20 mb-10 text-dark-charcoal">24/7 Support</h2>
                                 <p itemprop="description">Experience Uninterrupted 24/7 Support in whole UK</p>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                         <div class="services-card-body">
                             <figure><img src="/assets/default/img/knowledge.jpg" alt="knowledge" title="knowledge"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
-                                <h2 class="font-20 mb-15 text-dark-charcoal">Knowledge Base</h2>
+                                <h2 class="font-20 mb-10 text-dark-charcoal">Knowledge Base</h2>
                                 <p itemprop="description">your key resource for resolving doubts and getting instant guidance.</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="services-card-body">
                             <figure><img src="/assets/default/img/technical.jpg" alt="technical" title="technical"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
-                                <h2 class="font-20 mb-15 text-dark-charcoal">Feedback / Suggestions</h2>
+                                <h2 class="font-20 mb-10 text-dark-charcoal">Feedback / Suggestions</h2>
                                 <p itemprop="description">Help us to improve rurera with your valuable suggestions</p>
                             </div>
                         </div>
