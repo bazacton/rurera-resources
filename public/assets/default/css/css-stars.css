@@ -151,6 +151,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     top: 50%;
     margin-top: -20px;
     height: 40px;
+    display: none;
 }
 .lms-chapter-ul-outer .chapter_percent {
     font-size: 40px;
