@@ -195,10 +195,10 @@
       <div class="col-12">
         <div class="testimonial-filters">
           <ul class="testimonial-tabs filters-button" id="filters">
-            <li class="active"><a href="#." class="filter-btn" data-filter="*">All Testimonials</a></li>
-            <li><a href="#." class="filter-btn" data-filter=".student">Student</a></li>
-            <li><a href="#." class="filter-btn" data-filter=".parent">Parent</a></li>
-            <li><a href="#." class="filter-btn" data-filter=".teacher">Teacher</a></li>
+            <li class="active"><a href="javascript:;" class="filter-btn" data-filter="*">All Testimonials</a></li>
+            <li><a href="javascript:;" class="filter-btn" data-filter=".student">Student</a></li>
+            <li><a href="javascript:;" class="filter-btn" data-filter=".parent">Parent</a></li>
+            <li><a href="javascript:;" class="filter-btn" data-filter=".teacher">Teacher</a></li>
           </ul>
         </div>
         <div class="lms-masonry">
