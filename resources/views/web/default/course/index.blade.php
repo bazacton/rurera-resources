@@ -146,8 +146,8 @@
                                                                                     <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
                                                                                         <ul class="topic-activity-details">
                                                                                             <li><span>Questions answered:</span> 10</li>
-                                                                                            <li><span>Time Spent:</span> 15 Minutes</li>
-                                                                                            <li><span>Last practised:</span> 19th December 2025</li>
+                                                                                            <li><span>Time Spent:</span> 15m</li>
+                                                                                            <li><span>Last practised:</span> 19/12/2025</li>
                                                                                         </ul>
                                                                                         <ul>
                                                                                             <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
