@@ -144,6 +144,11 @@
                                                                                         <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><span class="icon-box"><img src="/assets/default/svgs/above_80.svg" ></span></span>
                                                                                     </a>
                                                                                     <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
+                                                                                        <ul class="topic-activity-details">
+                                                                                            <li><span>Questions answered:</span> 10</li>
+                                                                                            <li><span>Time Spent:</span> 15m</li>
+                                                                                            <li><span>Last practised:</span> 19/12/2025</li>
+                                                                                        </ul>
                                                                                         <ul>
                                                                                             <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
                                                                                             <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
