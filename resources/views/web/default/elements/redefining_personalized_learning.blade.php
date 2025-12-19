@@ -68,7 +68,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                         </a>
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/timestables-practice" itemprop="url" class="text-dark-charcoal">TimeTables Revision</a>
+                        TimeTables Revision
                     </h3>
                     <p itemprop="description">Offering interactive Multiplication and division Practices and challenges to Master TimesTables online.</p>
                 </div>
