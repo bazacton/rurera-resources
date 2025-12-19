@@ -106,7 +106,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                     <h3 class="mb-5 font-20 font-weight-bold text-dark-charcoal">
                         Win Rewards
                     </h3>
-                    <p itemprop="description">Avail an awesome opportunity to Earn Rewards, Coin points, Win and later redeem to toys.</p>
+                    <p itemprop="description">Avail an awesome opportunity to Earn Rewards and coin points.</p>
                 </div>
             </div>
             @endif
