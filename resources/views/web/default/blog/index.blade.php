@@ -52,10 +52,10 @@
                             </h2>
                             <p>Publish your story your way with a complete set of tools</p>
                             <div class="categories-tags">
-                                <a href="#">Visual Editor</a>
-                                <a href="">Paywall System</a>
-                                <a href="#">Pay Writer</a>
-                                <a href="#">Pay-To-Submit</a>
+                                <a href="/blog">Visual Editor</a>
+                                <a href="/blog">Paywall System</a>
+                                <a href="/blog">Pay Writer</a>
+                                <a href="/blog">Pay-To-Submit</a>
                             </div>
                         </div>
                     </div>
@@ -69,10 +69,10 @@
                             </h2>
                             <p>Accelerate your project development to the next level.</p>
                             <div class="categories-tags">
-                                <a href="#">Visual Editor</a>
-                                <a href="">Paywall System</a>
-                                <a href="#">Pay Writer</a>
-                                <a href="#">Pay-To-Submit</a>
+                                <a href="/blog">Visual Editor</a>
+                                <a href="/blog">Paywall System</a>
+                                <a href="/blog">Pay Writer</a>
+                                <a href="/blog">Pay-To-Submit</a>
                             </div>
                         </div>
                     </div>
@@ -86,10 +86,10 @@
                             </h2>
                             <p>Generate Leads & conversion the themes to the customers</p>
                             <div class="categories-tags">
-                                <a href="#">Visual Editor</a>
-                                <a href="">Paywall System</a>
-                                <a href="#">Pay Writer</a>
-                                <a href="#">Pay-To-Submit</a>
+                                <a href="/blog">Visual Editor</a>
+                                <a href="/blog">Paywall System</a>
+                                <a href="/blog">Pay Writer</a>
+                                <a href="/blog">Pay-To-Submit</a>
                             </div>
                         </div>
                     </div>
@@ -103,10 +103,10 @@
                             </h2>
                             <p>Make content Convert Traffic with personalize website.</p>
                             <div class="categories-tags">
-                                <a href="#">Visual Editor</a>
-                                <a href="">Paywall System</a>
-                                <a href="#">Pay Writer</a>
-                                <a href="#">Pay-To-Submit</a>
+                                <a href="/blog">Visual Editor</a>
+                                <a href="/blog">Paywall System</a>
+                                <a href="/blog">Pay Writer</a>
+                                <a href="/blog">Pay-To-Submit</a>
                             </div>
                         </div>
                     </div>
