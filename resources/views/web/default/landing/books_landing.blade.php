@@ -22,72 +22,56 @@
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book-masonry1.png" alt="default staff image" title="default staff image" width="192" height="288" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book-masonry1.png" alt="default staff image" title="default staff image" width="192" height="288" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book-masonry4.png" alt="default staff image" title="default staff image" width="192" height="284" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book-masonry4.png" alt="default staff image" title="default staff image" width="192" height="284" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book02.png" alt="default staff image" title="default staff image" width="192" height="294" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book02.png" alt="default staff image" title="default staff image" width="192" height="294" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book03.png" alt="default staff image" title="default staff image" width="192" height="228" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book03.png" alt="default staff image" title="default staff image" width="192" height="228" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
           <div class="grid-item col-lg-3 col-md-3 col-sm-6">
             <div class="img-holder">
               <figure>
-                <a href="#">
-                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
-                </a>
+                <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
               </figure>
             </div>
           </div>
