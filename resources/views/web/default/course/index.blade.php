@@ -122,7 +122,7 @@
                                                 <ul class="lms-chapter-ul" id="accordion">
                                                     @foreach($course->chapters as $chapter)
                                                         @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                                            <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
+                                                            <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-20">{{ $chapter->title }}</h2></div>
 
                                                                 @if($chapter->subChapters->count() > 0)
                                                                     <div class="lms-chapter-ul-outer">
