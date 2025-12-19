@@ -138,50 +138,38 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-12 col-lg-2 col-md-4 col-sm-3">
                 <div class="cat-card text-center">
-                  <a href="#">
                     <img src="/assets/default/svgs/headphone2.svg" height="800" width="800" alt="Phonics image">
                     <h5>Phonics</h5>
-                  </a>
                 </div>
               </div>
               <div class="col-12 col-lg-2 col-md-4 col-sm-3">
                 <div class="cat-card text-center">
-                  <a href="#">
                     <img src="/assets/default/svgs/telescope.svg" height="800" width="800" alt="Sight Words image">
                     <h5>Sight Words</h5>
-                  </a>
                 </div>
               </div>
               <div class="col-12 col-lg-2 col-md-4 col-sm-3">
                 <div class="cat-card text-center">
-                  <a href="#">
                     <img src="/assets/default/svgs/open-book.svg" height="800" width="800" alt="Spelling image">
                     <h5>Spelling</h5>
-                  </a>
                 </div>
               </div>
               <div class="col-12 col-lg-2 col-md-4 col-sm-3">
                 <div class="cat-card text-center">
-                  <a href="#">
                     <img src="/assets/default/svgs/cat-light-bulb.svg" height="150" width="150" alt="Comprehension image">
                     <h5>Comprehension</h5>
-                  </a>
                 </div>
               </div>
               <div class="col-12 col-lg-2 col-md-4 col-sm-3">
                 <div class="cat-card text-center">
-                  <a href="#">
                     <img src="/assets/default/svgs/loupe-search.svg" height="800" width="800" alt="Gramar image">
                     <h5>Gramar & <br> Punctuation</h5>
-                  </a>
                 </div>
               </div>
               <div class="col-12 col-lg-2 col-md-4 col-sm-3">
                 <div class="cat-card text-center">
-                  <a href="#">
                     <img src="/assets/default/svgs/bookshelf2.svg" height="150" width="150" alt="Reading image">
                     <h5>Reading</h5>
-                  </a>
                 </div>
               </div>
             </div>
