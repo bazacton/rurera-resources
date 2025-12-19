@@ -166,3 +166,42 @@
         </div>
     </section>
 @endsection
+
+<script>
+function convertParagraphsToSVG(fontUrl) {
+    opentype.load(fontUrl, function (err, font) {
+        if (err) {
+            console.error('Font load error:', err);
+            return;
+        }
+
+        document.querySelectorAll('p').forEach(p => {
+            const text = p.innerText;
+            const fontSize = parseInt(getComputedStyle(p).fontSize);
+            const color = getComputedStyle(p).color;
+
+            // Create SVG
+            const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            const path = font.getPath(text, 0, fontSize, fontSize);
+            const bbox = path.getBoundingBox();
+
+            svg.setAttribute("width", bbox.x2 - bbox.x1);
+            svg.setAttribute("height", bbox.y2 - bbox.y1);
+            svg.setAttribute("viewBox", `${bbox.x1} ${bbox.y1} ${bbox.x2 - bbox.x1} ${bbox.y2 - bbox.y1}`);
+
+            const pathEl = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            pathEl.setAttribute("d", path.toPathData());
+            pathEl.setAttribute("fill", color);
+
+            svg.appendChild(pathEl);
+
+            // Replace paragraph with SVG
+            p.replaceWith(svg);
+        });
+    });
+}
+
+// CALL FUNCTION
+convertParagraphsToSVG('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf');
+</script>
+
