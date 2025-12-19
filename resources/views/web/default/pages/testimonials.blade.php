@@ -240,10 +240,10 @@
       <div class="col-12">
         <div class="testimonial-filters">
           <ul class="testimonial-tabs filters-button">
-            <li class="active"><a href="#.">All Testimonials</a></li>
-            <li><a href="#.">Student</a></li>
-            <li><a href="#.">Parent</a></li>
-            <li><a href="#.">Teacher</a></li>
+            <li class="active"><a href="javascript:;">All Testimonials</a></li>
+            <li><a href="javascript:;">Student</a></li>
+            <li><a href="javascript:;">Parent</a></li>
+            <li><a href="javascript:;">Teacher</a></li>
           </ul>
         </div>
         <div class="lms-masonry">
