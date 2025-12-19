@@ -114,7 +114,7 @@
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
                                 <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting toys! As you learn and progress, earn coin points that boost your chances of winning amazing rewards. Dive into the fun and collect your coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
-                                    <a href="{{url('/')}}/rewards" class="btn btn-outline-primary font-16 font-weight-500">Rewards</a> 
+                                    <a href="{{url('/')}}/pricing" class="btn btn-outline-primary font-16 font-weight-500">Rewards</a> 
                                     <a href="{{url('/')}}/pricing" class="btn btn-outline-primary font-16 font-weight-500 ml-25">Rewards Store</a> 
                                 </div>
                             </div>
