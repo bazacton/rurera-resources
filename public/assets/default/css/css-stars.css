@@ -157,7 +157,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 }
 .topic-accuracy {
     position: relative;
-    top: -2px;
+    top: -3px;
 }
 .topic-accuracy:before {
     content: attr(data-title);
