@@ -31,12 +31,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/11-plus" itemprop="url">
-                            <img src="../assets/default/img/entrance-exams.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/entrance-exams.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/11-plus" itemprop="url" class="text-dark-charcoal">Entrance Examination Preps</a>
+                        Entrance Examination Preps
                     </h3>
                     <p itemprop="description">Rurera offers a chance to prepare for 11+ Exam, Independent Exams, ISEB and CAT4.</p>
                 </div>
@@ -47,12 +45,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="600" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/sats-preparation" itemprop="url">
-                            <img src="../assets/default/img/sats-home-feature.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/sats-home-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/sats-preparation" itemprop="url" class="text-dark-charcoal">SATs Exam Preps</a>
+                        SATs Exam Preps
                     </h3>
                     <p itemprop="description">We are providing opportunity to practice SATs exam, SATs papers, SATs assessments SATs tests online.</p>
                 </div>
@@ -63,9 +59,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="700" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/timestables-practice" itemprop="url">
-                            <img src="../assets/default/img/timetables-feature.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/timetables-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
                         TimeTables Revision
@@ -121,12 +115,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1100" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/register" itemprop="url">
-                            <img src="../assets/default/img/quick-assesments.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/quick-assesments.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Quick Assessments</a>
+                        Quick Assessments
                     </h3>
                     <p itemprop="description">It offers quick assessments and answers to questions are automatically assessed for personalized feedback.</p>
                 </div>
@@ -137,12 +129,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1200" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/register" itemprop="url">
-                            <img src="../assets/default/img/feature-automated-marking.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/feature-automated-marking.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Automated Marking</a>
+                        Automated Marking
                     </h3>
                     <p itemprop="description">Automated marking data allows for quick identification of students who may require additional support or challenges.</p>
                 </div>
@@ -153,12 +143,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/register" itemprop="url">
-                            <img src="../assets/default/img/performance-monitering.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/performance-monitering.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Performance Monitoring</a>
+                        Performance Monitoring
                     </h3>
                     <p itemprop="description">It provides an easy overview of performance trends who may need additional support or recognition.</p>
                 </div>
@@ -169,12 +157,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1400" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/register" itemprop="url">
-                            <img src="../assets/default/img/insights-feature.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/insights-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Breakthrough insights</a>
+                        Breakthrough insights
                     </h3>
                     <p itemprop="description">It significantly allows to identify student’s learning strengths and areas needing improvement.</p>
                 </div>
@@ -185,12 +171,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/contact-us" itemprop="url">
-                            <img src="../assets/default/img/protection-feature.webp" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/protection-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/contact-us" itemprop="url" class="text-dark-charcoal">Security and Privacy</a>
+                        Security and Privacy
                     </h3>
                     <p itemprop="description">Rurera protect student data, maintain trust and comply with data protection and privacy regulations.</p>
                 </div>
@@ -202,12 +186,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1600" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="#" itemprop="url">
-                            <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">KS1, KS2 Courses</a>
+                        KS1, KS2 Courses
                     </h3>
                     <p itemprop="description">Explore wide range of kS1, KS2 courses, Tests, practices, assessments, resources and much more.</p>
                 </div>
@@ -219,12 +201,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1700" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="#" itemprop="url">
-                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Analytics</a>
+                        Analytics
                     </h3>
                     <p itemprop="description">It provides complete insights and data analysis of Total scores, Total attempts, Earned Scores and Earned Coins.</p>
                 </div>
@@ -236,12 +216,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1800" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/register" itemprop="url">
-                            <img src="../assets/default/img/progress-tracking.jpg" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/progress-tracking.jpg" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/register" itemprop="url" class="text-dark-charcoal">Progress Tracking</a>
+                        Progress Tracking
                     </h3>
                     <p itemprop="description">Rurera offers a user-friendly platform where teachers can analyze individual and group performance trends.</p>
                 </div>
@@ -252,12 +230,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="1900" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="#" itemprop="url">
-                            <img src="../assets/default/img/skill-plans-feature.jpg" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/skill-plans-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Skills Plan</a>
+                        Skills Plan
                     </h3>
                     <p itemprop="description">This involves setting goals, identifying the skills you want to acquire or improve, and planning to achieve those goals weekly or monthly.</p>
                 </div>
@@ -268,12 +244,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="2000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/pricing" itemprop="url">
-                            <img src="../assets/default/img/advance-learning-feature.jpg" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/advance-learning-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/pricing" itemprop="url" class="text-dark-charcoal">Advance Learning</a>
+                        Advance Learning
                     </h3>
                     <p itemprop="description">Rurera empowers students through courses, interactive books, exams practices and rewarding experiences.</p>
                 </div>
@@ -285,12 +259,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="2100" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/products" itemprop="url">
-                            <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/products" itemprop="url" class="text-dark-charcoal">Rewards Store</a>
+                        Rewards Store
                     </h3>
                     <p itemprop="description">Students can redeem coin points and exchange trending toys with every practice via Rurera toy store.</p>
                 </div>
@@ -301,12 +273,10 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" data-aos="zoom-in" data-aos-delay="2200" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
-                        <a href="{{url('/')}}/products" itemprop="url">
-                            <img src="../assets/default/img/gamified-learning.png" alt="feature image" height="143" width="276">
-                        </a>
+                        <img src="../assets/default/img/gamified-learning.png" alt="feature image" height="143" width="276">
                     </figure>
                     <h3 class="mb-5 font-20 font-weight-bold">
-                        <a target="_blank" href="{{url('/')}}/products" itemprop="url" class="text-dark-charcoal">Gamified Learning</a>
+                        Gamified Learning
                     </h3>
                     <p itemprop="description">Make learning exciting with Rurera’s gamified approach, where vocabulary and spelling practice becomes a fun adventure.</p>
                 </div>
