@@ -396,6 +396,7 @@ span.learn-lable {
 .subchapter-compare .compare-right {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px 25px;
 }
 .subchapter-compare span .icon-box {
