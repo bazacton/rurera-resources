@@ -38,7 +38,7 @@
                                     <div class="categories-icon" style="background: #2d6a4f;">
                                         <img src="/assets/default/svgs/categories-science.svg" width="300" height="300" alt="categories-science">
                                     </div>
-                                    <a href="#"><h3 class="categories-title">Science</h3></a>
+                                    <a href="/pricing"><h3 class="categories-title">Science</h3></a>
                                 </div>
                             </div>
                         </div>
