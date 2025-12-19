@@ -112,7 +112,7 @@
                         <div class="col-12 col-lg-6 mt-20 mb-40 mt-lg-0 mb-lg-0">
                             <div class="column-text" data-aos-once="true" data-aos="fade-left" data-aos-anchor=".reward-program-section" data-aos-offset="200" data-aos-duration="3000">
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
-                                <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting toys! As you learn and progress, earn coin points that boost your chances of winning amazing rewards. Dive into the fun and collect your coins today!</p>
+                                <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting rewards! Learn progress, and earn coin points that increase your chances of winning. amazing rewards. Jump into the fun and start collecting coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
                                     <a href="{{url('/')}}/pricing" class="btn btn-outline-primary font-16 font-weight-500">Rewards</a> 
                                     <a href="{{url('/')}}/pricing" class="btn btn-outline-primary font-16 font-weight-500 ml-25">Rewards Store</a> 
