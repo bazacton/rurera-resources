@@ -77,8 +77,6 @@
 											<li><a href="/terms-and-conditions">Terms & Condition</a></li>
 											<li><a href="/terms-of-policy">Terms of Policy</a></li>
 											<li><a href="/acceptable-use">Acceptable Use Policy</a></li>
-											<li><a href="/contact-us">Contact us</a></li>
-
 										</ul>
 									</div>
 									<div class="footer-social-links">
