@@ -12,9 +12,9 @@ $rand_id = rand(999,99999);
     <div class="section-body lms-quiz-create">
 		<input type="hidden" name="question_id" value="{{isset( $questionObj->id )? $questionObj->id : 0 }}">
 		<div>
-									
-									
-									
+
+
+
 							<div class="similarity-content-block mb-30">
 							<ul class="nav" id="myTab" role="tablist">
 								<li class="nav-item" role="presentation">
@@ -29,15 +29,15 @@ $rand_id = rand(999,99999);
 							</ul>
 							<div class="tab-content" id="myTabContent">
 								<div class="tab-pane fade show active py-0 question-details-tab-data" id="question" role="tabpanel" aria-labelledby="question-tab">
-								
+
 									<div class="col-12 col-md-12">
-							
+
 										<div class="row">
 										@php $question_status = ($questionObj->question_status != 'api_pending')? 'Generated' : ''; @endphp
 										@php $question_status = ($questionObj->question_status == 'Hard reject')? 'Rejected' : $question_status; @endphp
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
-											
+
 											@if($questionObj->question_status == 'Submit for review')
 												<div class="alert alert-success" role="alert">
 												<strong>Successful Question</strong>
@@ -49,8 +49,8 @@ $rand_id = rand(999,99999);
 												<p>This question did not meet the required quality standards and was rejected.</p>
 												</div>
 											@endif
-												
-										</div>		
+
+										</div>
 										@endif
 										<div class="col-lg-12 col-md-12 col-12">
 											<div class="form-group">
@@ -98,11 +98,11 @@ $rand_id = rand(999,99999);
 																			<ul class="rureraform-toolbar-list">
 																				@php
 																				foreach ($toolbar_tools as $key => $value) {
-																					
+
 																				if (array_key_exists('options', $value)) {
 																					$classes = isset( $value['classes'] )? $value['classes'] : '';
 																					$options_elements = isset( $value['options_elements'] )? $value['options_elements'] : array();
-																					
+
 																				echo '
 																				<li class="rureraform-toolbar-tool-' . esc_html($value['type']) . ' '.$classes.'"
 																					class="rureraform-toolbar-list-options"
@@ -115,12 +115,12 @@ $rand_id = rand(999,99999);
 																						foreach ($value['options'] as
 																						$option_key =>
 																						$option_value) {
-																							
+
 																						$data_options_elements = isset( $options_elements[$option_key] )? $options_elements[$option_key] : '';
 
 																						echo '
 																						<li data-type="' . esc_html($key) . '"
-																							data-option="' . esc_html($option_key) . '" 
+																							data-option="' . esc_html($option_key) . '"
 																							data-elements="' . esc_html($data_options_elements) . '"
 																							><a href="#"
 																										data-title="' . esc_html($value['title']) . '">'
@@ -134,13 +134,13 @@ $rand_id = rand(999,99999);
 																				';
 																				} else {
 																				$classes = isset( $value['classes'] )? $value['classes'] : '';
-																				
+
 																				$icon = '<i class="' . esc_html($value['icon']) . '"></i>';
 																				if( isset( $value['icon_type'] ) && $value['icon_type'] == 'svg'){
 																					$icon = '<img src="/assets/admin/img/tools-elements/' . esc_html($value['icon']) . '" width="15">';
 																				}
-																				
-																				
+
+
 																				echo '
 																				<li class="rureraform-toolbar-tool-' . esc_html($value['type']) . ' '.$classes.'"
 																					data-title="' . esc_html($value['title']) . '" data-type="' . esc_html($key) . '"><a
@@ -433,15 +433,15 @@ $rand_id = rand(999,99999);
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="col-lg-12 col-md-12 col-12">
 											<div class="question-explain-block">
-										
+
 												<h3 class="font-20 font-weight-bold">Explanation</h3>
 												<textarea class="note-codable summernote" id="question_solve"
 															name="question_solve"
 															aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
-				
+
 											<div class="question-keywords-block">
 												<!-- Keywords Section -->
 												<h3 class="font-20 font-weight-bold">Keywords</h3>
@@ -485,7 +485,7 @@ $rand_id = rand(999,99999);
 														</label>
 													</div>
 												</div>
-												
+
 												<div class="col-lg-4 col-md-4 col-12">
 													<div class="form-group custom-switches-stacked">
 														<label class="custom-switch pl-0">
@@ -501,7 +501,7 @@ $rand_id = rand(999,99999);
 														</label>
 													</div>
 												</div>
-												
+
 												<div class="col-lg-4 col-md-4 col-12">
 													<div class="form-group custom-switches-stacked">
 														<label class="custom-switch pl-0">
@@ -520,7 +520,7 @@ $rand_id = rand(999,99999);
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="col-12 col-md-12">
 											<div class="create-question-fields-block d-flex align-items-center mb-30">
 												<button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary font-16">
@@ -530,7 +530,7 @@ $rand_id = rand(999,99999);
 													Update
 												@endif
 												</button>
-												
+
 													<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
 													Delete Bulk
 												</button>
@@ -544,11 +544,11 @@ $rand_id = rand(999,99999);
 										</div>
 										</div>
 										</div>
-										
+
 										<div class="lms-element-properties">
 											<div class="row">
 												<div class="topic-parts-block" style="display:contents;">
-														
+
 												</div>
 											</div>
 											<div class="rureraform-admin-popup" id="rureraform-element-properties">
@@ -574,31 +574,31 @@ $rand_id = rand(999,99999);
 												</div>
 											</div>
 										</div>
-										
+
 										</div>
-										
+
 										<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
 												<h3>Topic Parts</h3>
 												<div class="topic-parts-block">
-													
+
 												@if(isset( $questionObj->topicPartItem->id))
 													<div class="topic-parts-options">
-														<div class="form-field rureraform-cr-container-medium"> 
+														<div class="form-field rureraform-cr-container-medium">
 														<input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
-														<label for="topics_parts-875"><h5 class="font-16 font-weight-bold text-dark">{{$questionObj->topicPartItem->title}}</h5> 
+														<label for="topics_parts-875"><h5 class="font-16 font-weight-bold text-dark">{{$questionObj->topicPartItem->title}}</h5>
 															{{$questionObj->topicPartItem->description}}
 														.</label>
 														</div>
 													</div>
 												@endif
 												</div>
-												
+
 												<h3>Similiarity Content</h3>
 												<div >
 													<div class="similarity-content-block-data" id="accordion">
-													
+
 													@php
-													
+
 													$similiarity_responses	=	rurera_decode($similiarity_responses);
 													$similiarity_responses = json_decode($similiarity_responses, true);
 													$similiarity_response = isset( $similiarity_responses[$question_index] )? $similiarity_responses[$question_index] : array();
@@ -612,9 +612,9 @@ $rand_id = rand(999,99999);
 														<button id="toggleViewBtn" class="cards-view-more-btn mt-10" style="display: none;">View More</button>
 													</div>
 													</div>
-													
+
 												</div>
-												
+
 												<h3>Activity Wall</h3>
 												<div class="lms-dashboard-card">
 													<div class="lms-card-body">
@@ -639,7 +639,7 @@ $rand_id = rand(999,99999);
 																</div>
 															</li>
 														</ul>
-														
+
 														<div class="text-center mt-4">
 															<a class="lms-card-btn" href="#">View More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
 																<line x1="5" y1="12" x2="19" y2="12"></line>
@@ -647,13 +647,13 @@ $rand_id = rand(999,99999);
 																</svg>
 															</a>
 														</div>
-														
+
 													</div>
 												</div>
-												
-												
+
+
 											</div>
-											
+
 											<div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">
 												<div class="review-form">
 													<form>
@@ -709,7 +709,7 @@ $rand_id = rand(999,99999);
 																		<span class="custom-switch-indicator"></span>
 																		<label class="custom-switch-description mb-0 cursor-pointer" for="publish"><span>Publish</span></label>
 																	</label>
-																</div> 
+																</div>
 															</div>
 															<div class="col-12">
 																<div class="form-group">
@@ -754,9 +754,9 @@ $rand_id = rand(999,99999);
 							<li data-template_data="{{$template_data}}"> <span>{{$template_name}}</span> <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></li>
 						@endforeach
 					@endif
-					
+
 				</ul>
-				
+
 				<div class="inactivity-controls mt-10">
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
@@ -776,7 +776,7 @@ $rand_id = rand(999,99999);
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
-				
+
 				<div class="inactivity-controls">
 					<a href="javascript:;" class="continue-btn save-template-btn">Save Form</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
@@ -923,7 +923,7 @@ $(".summernote").summernote({
 				['font', ['bold', 'underline']],
 				['para', ['paragraph', 'ul', 'ol']],
 				['table', ['table']],
-				['insert', ['link']],
+				['insert', ['link', 'picture']],
 				['history', ['undo']],
 			],
 			callbacks: {
