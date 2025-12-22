@@ -545,7 +545,7 @@ $rand_id = rand(999,99999);
 										</div>
 										</div>
 
-										<div class="lms-element-properties">
+										<div class="lms-element-properties tttt">
 											<div class="row">
 												<div class="topic-parts-block" style="display:contents;">
 
