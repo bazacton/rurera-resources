@@ -398,14 +398,14 @@
                         <div class="col-12 col-md-12">
 
                             <div class="login-card">
-                                <h1 class="font-20 font-weight-bold">{{ trans('auth.forget_password') }}</h1>
-
+                                <h1 class="font-20 font-weight-bold">Your Email</h1>
+                                <p>Enter your email to reset password</p>
                                 <form method="post" action="/send-email" class="mt-15">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <div class="form-group">
                                         <label class="input-label" for="email">{{ trans('auth.email') }}:</label>
                                         <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email"
-                                            aria-describedby="emailHelp">
+                                            aria-describedby="emailHelp" placeholder="email@email.com">
                                         @error('email')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -413,7 +413,7 @@
                                         @enderror
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.reset_password') }}</button>
+                                    <button type="submit" class="btn btn-primary btn-block mt-15">Continue <i>&#8594;</i></button>
                                 </form>
                             </div>
                         </div>
