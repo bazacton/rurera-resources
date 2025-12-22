@@ -1249,6 +1249,13 @@ nav li {
     padding: 50px 15px;
     overflow: hidden;
 }
+.forgot-modal .login-card h1 {
+    text-align: center;
+}
+.forgot-modal .login-card p {
+    margin: 5px 0 0;
+    text-align: center;
+}
 .login-logo {
     gap: 8px
 }
