@@ -119,6 +119,7 @@
     filter: invert(60%) sepia(12%) saturate(16%) hue-rotate(347deg) brightness(100%) contrast(86%);
     object-fit: contain;
 }
+.sats-listing-card.medium .text-holder h4 .sub_label {font-size: 14px; padding-top: 5px;}
 .set-work-container .input-holder img ~ input {
     padding-right: 42px;
 }
