@@ -1682,7 +1682,7 @@ nav li {
 }
 
 .login-option-tabs .nav-tabs .nav-link.active {
-    color: var(--blue)
+    color: var(--primary)
 }
 
 .login-option-tabs .nav-tabs .nav-link.active:hover {
