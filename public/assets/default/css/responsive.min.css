@@ -4176,10 +4176,12 @@
         text-align: center;
     }
     .lms-testimonial-slider .swiper-button-next {
-        right: 0;
+        right: 15px;
+        top: -40px;
     }
     .lms-testimonial-slider .swiper-button-prev {
-        left: 0;
+        left: 15px;
+        top: -40px;
     }
     .action-card {
         flex-direction: column;
