@@ -1085,7 +1085,7 @@ ul.course-info-list li .progress-box .circle_percent:before {
 .referral-form {margin: 0 0 25px;}
 .referral-form .form-feild {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; position: relative; }
 .referral-form input[type="text"] {border: 1px solid #505656; border-radius: 5px; height: 40px; width: calc(100% - 90px); padding: 0 15px; }
-.referral-form .form-feild button {background-color: #a6c7fc; border-radius: 5px; font-weight: 600; font-size: 18px; width: 75px; height: 40px; border: 0; color: rgba(255,255,255,0.9);}
+.referral-form .form-feild button {background-color: var(--primary); border-radius: 5px; font-weight: 600; font-size: 18px; width: 75px; height: 40px; border: 0; color: rgba(255,255,255,0.9);}
 .referral-invites {margin: 0 0 30px;}
 .referral-invites ul {background-color: #f1f1f1; border-radius: 12px; padding: 20px; display: flex;align-items: flex-start; justify-content: space-between;}
 .referral-invites li {display: inline-flex; flex-direction: column; gap: 8px;}
