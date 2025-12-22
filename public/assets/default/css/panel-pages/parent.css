@@ -211,10 +211,16 @@ Assignments Table Style Start
 .dashboard-students-holder .db-members .card .list-group-item {
     border: 0;
 }
+.students-table thead {
+    border-bottom: 2px solid #ddd;
+}
 .students-table thead th {
     padding: 10px 15px;
 }
-.db-form-tabs .totalChilds tbody td {
+.db-form-tabs .students-table tbody {
+    padding-top: 15px;
+}
+.db-form-tabs .students-table .totalChilds tbody td {
     padding: 10px 15px;
 }
 .dashboard-students-holder .db-form-tabs th h6 {
