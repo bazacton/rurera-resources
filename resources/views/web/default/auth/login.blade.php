@@ -195,7 +195,7 @@
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
                                                     </a>
                                                     <div class="text-center">
-                                                        <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
+                                                        <a href="javascript:;" data-toggle="modal" data-target="#forgot-pass-modal">{{ trans('auth.forget_your_password') }}</a>
                                                     </div>
                                                 </div>
                                                 <div class="login-controls">
