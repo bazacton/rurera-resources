@@ -112,13 +112,16 @@
                                                             src="{{$childObj->getAvatar()}}"
                                                             alt="{{$childObj->get_full_name()}}"
                                                             class="avatar rounded-circle">
+                                                <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
                                             </a>
 
                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
-                                                    <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
+                                                    
 
                                                     <small class="text-muted">
-                                                        {{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}} {{isset($childObj->userClass->title)? $childObj->userClass->title : ''}} {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
+                                                        <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
+                                                        <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
+                                                        <span>{{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}</span>
                                                     </small>
                                             </a>
 
