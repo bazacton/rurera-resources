@@ -2089,6 +2089,12 @@ Admin Questions Generator Page Style End
 .similarity-tab-data h3 {font-size: 18px;}
 .similarity-content-block-data .cards-view-more-btn {border: 0; color: #fff; line-height: normal; outline: none; background-color: #556ee6; border-radius: 3px; height: 32px; padding: 0 12px; font-size: 13px;}
 .similarity-tab-data .lms-element-properties .card .card-header button {padding: 2px 15px;}
+.edit-questions-tabs .similarity-tab-data .lms-element-properties {
+    display: none;
+}
+.edit-questions-tabs .similarity-tab-data .lms-element-properties:has(.rureraform-admin-popup.active) {
+    display: block;
+}
 /* Similarity Content Tabs style End */
 
 /* Prompts Tab style start */
