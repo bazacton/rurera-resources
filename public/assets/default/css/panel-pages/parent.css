@@ -208,6 +208,9 @@ Assignments Table Style Start
 .db-members table {
     width: 100%;
 }
+.dashboard-students-holder .db-members .card .list-group-item {
+    border: 0;
+}
 .students-table thead th {
     padding: 10px 15px;
 }
