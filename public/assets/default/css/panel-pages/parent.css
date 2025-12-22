@@ -215,7 +215,7 @@ Assignments Table Style Start
     border-bottom: 2px solid #ddd;
 }
 .students-table tbody tr:hover {
-    background-color: inherit;
+    background-color: inherit !important;
 }
 .students-table thead th {
     padding: 10px 15px;
