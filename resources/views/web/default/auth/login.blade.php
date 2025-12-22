@@ -402,7 +402,7 @@
                         <div class="login-card">
                             <h1 class="font-20 font-weight-bold">{{ trans('auth.forget_password') }}</h1>
 
-                            <form method="post" action="/send-email" class="mt-35">
+                            <form method="post" action="/send-email" class="mt-15">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="form-group">
                                     <label class="input-label" for="email">{{ trans('auth.email') }}:</label>
