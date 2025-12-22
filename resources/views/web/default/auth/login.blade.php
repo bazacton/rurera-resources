@@ -135,13 +135,13 @@
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
                                                     </a>
                                                     <div class="text-center">
-                                                        <a href="javascript:;" data-toggle="modal" data-target="#forgot-pass-modal" target="_blank">{{ trans('auth.forget_your_password') }}</a>
+                                                        <a href="javascript:;" data-toggle="modal" data-target="#forgot-pass-modal">{{ trans('auth.forget_your_password') }}</a>
                                                     </div>
                                                 </div>
                                                 <div class="login-controls">
                                                     <div>
                                                         <span>{{ trans('auth.dont_have_account') }}</span>
-                                                        <a href="/pricing" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
+                                                        <a href="/pricing" class="font-weight-bold">{{ trans('auth.signup') }}</a>
                                                     </div>
                                                 </div>
                                             </form>
@@ -201,7 +201,7 @@
                                                 <div class="login-controls">
                                                     <div>
                                                         <span>{{ trans('auth.dont_have_account') }}</span>
-                                                        <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
+                                                        <a href="/register" class="font-weight-bold">{{ trans('auth.signup') }}</a>
                                                     </div>
                                                 </div>
                                             </form>
@@ -250,7 +250,7 @@
                                                 <div class="login-controls">
                                                     <div>
                                                         <span>{{ trans('auth.dont_have_account') }}</span>
-                                                        <a href="/request-a-demo" class="text-secondary font-weight-bold">Request for demo</a>
+                                                        <a href="/request-a-demo" class="font-weight-bold">Request for demo</a>
                                                     </div>
                                                 </div>
                                             </form>
