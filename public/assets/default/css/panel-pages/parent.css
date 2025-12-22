@@ -275,6 +275,9 @@ Assignments Table Style Start
     background-color: #d2f7d2;
     color: #276427;
 }
+.db-members .students-table .profile-dropdown:hover ul {
+    margin-top: 0;
+}
 .dashboard-students-holder .db-members .card .card-body {
     padding-top: 0;
 }
