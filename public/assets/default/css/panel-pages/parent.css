@@ -205,6 +205,9 @@ Assignments Table Style Start
 .dashboard-students-holder .db-members {
     padding: 45px 45px 25px;
 }
+.db-members table {
+    width: 100%;
+}
 .dashboard-students-holder .db-members .list-group.has-listing-title {
     padding-top: 0;
 }
