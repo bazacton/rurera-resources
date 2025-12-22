@@ -1087,8 +1087,32 @@ ul.course-info-list li .progress-box .circle_percent:before {
 .referral-form input[type="text"] {border: 1px solid #505656; border-radius: 5px; height: 40px; width: calc(100% - 90px); padding: 0 15px; }
 .referral-form .form-feild button {background-color: var(--primary); border-radius: 5px; font-weight: 600; font-size: 18px; width: 75px; height: 40px; border: 0; color: rgba(255,255,255,0.9);}
 .referral-invites {margin: 0 0 30px;}
-.referral-invites ul {background-color: #f1f1f1; border-radius: 12px; padding: 20px; display: flex;align-items: flex-start; justify-content: space-between;}
-.referral-invites li {display: inline-flex; flex-direction: column; gap: 8px;}
+.referral-invites ul {
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 10px;
+}
+.referral-invites li { 
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+    flex: 0 0 48%;
+    max-width: 48%;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+}
+.referral-invites li:first-child {
+    border: 0;
+    padding: 0;
+}
 .referral-invites li strong {font-size: 19px; line-height: normal; text-align: center;}
 .referral-invites li span {line-height: normal;}
 .referral-payment p {background-color: #f1f1f1; border-radius: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-bottom: 0; padding: 20px;}
