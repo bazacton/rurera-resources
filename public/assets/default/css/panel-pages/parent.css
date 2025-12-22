@@ -212,9 +212,7 @@ Assignments Table Style Start
     color: #000;
 }
 .dashboard-students-holder .db-members .card .card-body {
-    background-color: #f2f2f2;
-    padding-top: 50px;
-    border-radius: 10px 10px 0 0;
+    padding-top: 0;
 }
 .dashboard-students-holder .db-members .card .list-group-item .listing-title {
     top: -38px;
