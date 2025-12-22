@@ -235,6 +235,10 @@ Assignments Table Style Start
     color: #fff;
     padding: 8px 15px;
 }
+.dashboard-students-holder .db-members .list-group-item .profile-dropdown > a {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
 .dashboard-students-holder .member-card-header .dropdown .btn img {
     filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(176deg) brightness(106%) contrast(101%);
 }
