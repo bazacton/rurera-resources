@@ -97,7 +97,7 @@
     top: 0;
     height: 100%;
     width: 4px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border-radius: 25px;
     opacity: 0;
     visibility: hidden;
@@ -110,7 +110,7 @@
     display: none;
 }
 .blog-single-post .post-show .wp-block-list li a {
-    color: var(--secondary);
+    color: var(--primary);
 }
 .share-links a {
     display: block;
