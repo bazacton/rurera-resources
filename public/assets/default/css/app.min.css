@@ -1236,6 +1236,13 @@ nav li {
 .modal .login-container {
     margin: 0;
 }
+.forgot-modal .close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    z-index: 1;
+    opacity: 1;
+}
 .login-logo {
     gap: 8px
 }
