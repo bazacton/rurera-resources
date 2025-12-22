@@ -201,9 +201,6 @@
     max-height: 100%;
     filter: invert(88%) sepia(94%) saturate(25%) hue-rotate(321deg) brightness(106%) contrast(100%);
 }
-.blog-newsletter span {
-    color: #b2b2b2;
-}
 .blog-newsletter form {
     max-width: 700px;
     margin: 0 auto;
