@@ -132,16 +132,18 @@
                                             <div class="col-auto last-activity">
                                                 <h6 class="listing-title font-16 font-weight-500">Membership</h6>
                                                 <span class="font-16 d-block">
-                                                    @php $package_id = 0;
+                                                    <strong>
+                                                        @php $package_id = 0;
 
-                                                    @endphp
-                                                    @if(isset( $childObj->userSubscriptions->subscribe ) )
-                                                        @php $package_id = $childObj->userSubscriptions->subscribe->id;
                                                         @endphp
-                                                        {{$childObj->userSubscriptions->subscribe->getTitleAttribute()}}
-                                                        @php
-                                                            $expiry_at = $childObj->userSubscriptions->expiry_at;
-                                                        @endphp
+                                                        @if(isset( $childObj->userSubscriptions->subscribe ) )
+                                                            @php $package_id = $childObj->userSubscriptions->subscribe->id;
+                                                            @endphp
+                                                            {{$childObj->userSubscriptions->subscribe->getTitleAttribute()}}
+                                                            @php
+                                                                $expiry_at = $childObj->userSubscriptions->expiry_at;
+                                                            @endphp
+                                                        </strong>
                                                         <br><span class="expiry-at">{{ dateTimeFormat($expiry_at, 'j M Y') }}</span>
                                                     @else
                                                         @if(!isset( $childObj->userSubscriptions->subscribe ) )
