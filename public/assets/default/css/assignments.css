@@ -123,6 +123,9 @@
 .set-work-container .input-holder img ~ input {
     padding-right: 42px;
 }
+.set-work-container .input-holder:has(.rurera-error-msg) img {
+    margin-top: -18px;
+}
 /*Range Slider Style Start*/
 .range-slider {position: relative; width: 100%;	height: auto; min-height: 80px;}
 .range-slider-field {width: 100%; position: absolute; top: 50%; z-index: 3; transform: translateY(-50%); -webkit-appearance: none; appearance: none; width: 100%; height: 4px; opacity: 0; margin: 0; }
