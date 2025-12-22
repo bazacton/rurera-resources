@@ -246,6 +246,21 @@ Assignments Table Style Start
 .students-table .student-info h6 {
     color: #000;
 }
+.students-table small span {
+    font-weight: 500;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+.students-table .year-lable {
+    background-color: #ffebc4;
+    color: #eaa41d;
+}
+.students-table .class-lable {
+    background-color: #cecefa;
+    color: var(--primary);
+    margin-left: 5px;
+}
 .dashboard-students-holder .db-members .card .card-body {
     padding-top: 0;
 }
