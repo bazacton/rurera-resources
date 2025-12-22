@@ -121,7 +121,7 @@
                                                     <small class="text-muted">
                                                         <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
                                                         <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
-                                                        <span>{{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}</span>
+                                                        {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
                                                     </small>
                                             </a>
 
