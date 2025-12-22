@@ -117,7 +117,7 @@
 
                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
                                                     
-                                                    <h6 class="font-16 font-weight-bold">Year & Class</h6>
+                                                    <h6 class="font-16 font-weight-bold listing-title">Year & Class</h6>
                                                     <small class="text-muted">
                                                         <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
                                                         <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
