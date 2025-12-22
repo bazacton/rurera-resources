@@ -1203,8 +1203,8 @@ Lms Responsive Style Start
     .lms-testimonial-slider .testimonial-card {padding: 15px;}
     .lms-testimonial-slider .img-holder {width: auto;}
     .lms-testimonial-slider .testimonial-card .text-holder {width: 100%; padding: 15px 0 0 0;text-align: center;}
-    .lms-testimonial-slider .swiper-button-next {right: 0px;}
-    .lms-testimonial-slider .swiper-button-prev {left: 0;}
+    .lms-testimonial-slider .swiper-button-next {right: 15px; top: -40px;}
+    .lms-testimonial-slider .swiper-button-prev {left: 15px; top: -40px;}
     .action-card {flex-direction: column;text-align: center;padding: 25px;width: 100%;}
     .action-card .img-holder figure {margin: 0 auto;}
     .action-card .text-holder {width: 100%;padding: 15px 0 0 0;}
