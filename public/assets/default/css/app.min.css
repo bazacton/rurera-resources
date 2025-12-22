@@ -1226,7 +1226,14 @@ nav li {
 .login-container img {
     border-radius: 10px 0 0 10px
 }
-
+.modal .login-container .login-holder {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+.modal .login-container {
+    margin: 0;
+}
 .login-logo {
     gap: 8px
 }
