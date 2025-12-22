@@ -135,7 +135,7 @@
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
                                                     </a>
                                                     <div class="text-center">
-                                                        <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
+                                                        <a href="javascript:;" data-toggle="modal" data-target="#forgot-pass-modal" target="_blank">{{ trans('auth.forget_your_password') }}</a>
                                                     </div>
                                                 </div>
                                                 <div class="login-controls">
@@ -386,6 +386,56 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="forgot-pass-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login-container mt-0">
+                    <div class="login-holder row" style="padding:0;">
+                    <div class="col-12 col-md-12">
+
+                        <div class="login-card mt-20">
+                            <h1 class="font-20 font-weight-bold">{{ trans('auth.forget_password') }}</h1>
+
+                            <form method="post" action="/send-email" class="mt-35">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <div class="form-group">
+                                    <label class="input-label" for="email">{{ trans('auth.email') }}:</label>
+                                    <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email"
+                                        aria-describedby="emailHelp">
+                                    @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.reset_password') }}</button>
+                            </form>
+
+                            <div class="text-center mt-20">
+                                <span class="badge badge-circle-gray300 d-inline-flex align-items-center justify-content-center">or</span>
+                            </div>
+
+                            <div class="text-center mt-20">
+                                <span class="text-secondary">
+                                    <a href="/login" class="font-weight-bold">{{ trans('auth.login') }}</a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
 @endsection
 
 @push('scripts_bottom')
