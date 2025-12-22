@@ -1256,6 +1256,15 @@ nav li {
     margin: 5px 0 0;
     text-align: center;
 }
+.forgot-modal .btn {box-shadow: none;}
+
+.forgot-modal .btn i {
+    font-style: normal;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0 0 8px;
+    font-size: 18px;
+}
 .login-logo {
     gap: 8px
 }
