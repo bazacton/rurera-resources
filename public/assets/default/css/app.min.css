@@ -11480,9 +11480,9 @@ body .flipbook-data {
 
 .gallery-sub-header .masonry-grid .grid-item {
     margin-bottom: 0;
-    width: auto;
+    /* width: auto;
     flex: auto;
-    max-width: fit-content;
+    max-width: fit-content; */
 }
 
 .gallery-sub-header .masonry-grid figure {
