@@ -3611,7 +3611,7 @@ nav li {
 
 .stats-container .stats-item:hover {
     transform: translateY(-25px);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     transition: all .5s ease;
     box-shadow: 0 10px 40px 0 rgb(0 0 0 / .2)
 }
