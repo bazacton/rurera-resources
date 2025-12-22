@@ -299,8 +299,7 @@ Assignments Table Style Start
     padding: 8px 15px;
 }
 .dashboard-students-holder .db-members .list-group-item .profile-dropdown > a {
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    border: 0;
 }
 .dashboard-students-holder .db-members .list-group-item .profile-dropdown > a:before {
     display: none;
