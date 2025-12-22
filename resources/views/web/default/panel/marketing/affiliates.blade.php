@@ -14,14 +14,14 @@
                 <div class="col-12 col-lg-6">
                     <div class="referral-text mb-30" itemscope itemtype="https://schema.org/Program">
                         <h3 class="font-18 font-weight-bold mb-5" itemprop="name">How to use Referral Program</h3>
-                        <p class="text-gray mb-15">Use images to enhance your post, improve its folow, add humor and explain complex topics</p>
+                        <p class="text-gray mb-15">Share your referral link with friends Or family. When someone signs up or makes a purchase using your link, you automatically earn rewards and commissions.</p>
                         <a href="#" class="started-btn font-16 font-weight-500">Get Started</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="referral-text mb-30" itemscope itemtype="https://schema.org/Program">
                         <h3 class="font-18 font-weight-bold mb-5" itemprop="name">Your Referral Link</h3>
-                        <p class="text-gray mb-15">Plan your blog post by choosing a topic, creating an outline conduct <br> research, and checking facts</p>
+                        <p class="text-gray mb-15">Use this link to invite new users to Rurera. Each successful registration or purchase made through your referral link will be tracked and added to your account.</p>
                         <div class="referral-link">
                             <input type="text" class="link-address font-16 font-weight-500" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
                             <a href="javascript:;" class="link-btn font-16 font-weight-500 js-copy" data-input="affiliate_url">Copy Link</a>
