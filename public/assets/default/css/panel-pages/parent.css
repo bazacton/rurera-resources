@@ -203,10 +203,13 @@ Assignments Table Style Start
 .member-card-header .dropdown .btn,
 .member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
 .dashboard-students-holder .db-members {
-    padding: 25px 25px 15px;
+    padding: 45px 45px 25px;
 }
 .dashboard-students-holder .db-members .list-group.has-listing-title {
     padding-top: 0;
+}
+.dashboard-students-holder .db-form-tabs h6 {
+    color: #000;
 }
 .dashboard-students-holder .db-members .card .card-body {
     background-color: #f2f2f2;
