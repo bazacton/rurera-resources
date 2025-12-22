@@ -261,6 +261,20 @@ Assignments Table Style Start
     color: var(--primary);
     margin-left: 5px;
 }
+.status-lable {
+    display: inline-flex;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.status-lable.active {
+    background-color: #d2f7d2;
+    color: #276427;
+}
 .dashboard-students-holder .db-members .card .card-body {
     padding-top: 0;
 }
