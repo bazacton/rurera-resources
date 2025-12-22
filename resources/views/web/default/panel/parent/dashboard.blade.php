@@ -24,7 +24,7 @@
         <div class="d-flex align-items-center justify-content-between flex-md-row">
             <h2 class="section-title font-22">Students</h2>
             <div class="dropdown">
-                <button type="button" class="btn subscription-modal p-0 font-16 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
+                <button type="button" class="btn subscription-modal font-16 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
                     <img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800"> Add Student
                 </button>
                 <button type="button" class="btn link-student-modal p-0 font-16 rurera-hide" data-type="child_register" data-id="0">
