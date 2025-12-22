@@ -1594,7 +1594,9 @@ nav li {
 .login-card select.form-control {
     padding: 0 10px
 }
-
+.login-card a {
+    color: var(--primary);
+}
 .social-login {
     border: 1px dashed #dadada;
     border-radius: 5px;
