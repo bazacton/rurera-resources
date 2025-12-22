@@ -415,17 +415,6 @@
 
                                     <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.reset_password') }}</button>
                                 </form>
-
-                                <div class="text-center mt-20">
-                                    <span class="badge badge-circle-gray300 d-inline-flex align-items-center justify-content-center">or</span>
-                                </div>
-
-                                <div class="text-center mt-20">
-                                    <span class="text-secondary">
-                                        <a href="/login" class="font-weight-bold">{{ trans('auth.login') }}</a>
-                                    </span>
-                                </div>
-
                             </div>
                         </div>
                         </div>
