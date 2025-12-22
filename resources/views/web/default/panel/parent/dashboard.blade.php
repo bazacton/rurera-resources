@@ -104,86 +104,118 @@
                                     <div class="list-group-item {{$is_cancelled}}">
                                     <div class="emojis-response rurera-hide">{!! $emoji_response !!}</div>
                                     <span class="pin-response rurera-hide">{{isset($childObj->login_pin)? $childObj->login_pin : ''}}</span>
-
-                                        <div class="row align-items-center">
-                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto">
-                                                <h6 class="listing-title font-16 font-weight-500">Student</h6>
-                                                <img
-                                                            src="{{$childObj->getAvatar()}}"
-                                                            alt="{{$childObj->get_full_name()}}"
-                                                            class="avatar rounded-circle">
-                                                <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
-                                            </a>
-
-                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
-                                                    
-                                                    <h6 class="font-16 font-weight-bold listing-title">Year & Class</h6>
-                                                    <small class="text-muted">
-                                                        <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
-                                                        <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
-                                                        {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
-                                                    </small>
-                                            </a>
-
-
-                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto last-activity">
-                                                <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
-                                                <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
-                                                    {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
-                                                </span>
-                                            </a>
-                                            <div class="col-auto last-activity">
-                                                <h6 class="listing-title font-16 font-weight-500">Membership</h6>
-                                                <span class="font-16 d-block">
-                                                    <strong>
-                                                        @php $package_id = 0;
-
-                                                        @endphp
-                                                        @if(isset( $childObj->userSubscriptions->subscribe ) )
-                                                            @php $package_id = $childObj->userSubscriptions->subscribe->id;
-                                                            @endphp
-                                                            {{$childObj->userSubscriptions->subscribe->getTitleAttribute()}}
-                                                            @php
-                                                                $expiry_at = $childObj->userSubscriptions->expiry_at;
-                                                            @endphp
-                                                        </strong>
-                                                        <br><span class="expiry-at">{{ dateTimeFormat($expiry_at, 'j M Y') }}</span>
-                                                    @else
-                                                        @if(!isset( $childObj->userSubscriptions->subscribe ) )
-                                                            <a href="javascript:;" class="package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
-                                                                + Add Membership
+                                        <div class="table-sm">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <h6 class="listing-title font-16 font-weight-500">Student</h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="font-16 font-weight-bold listing-title">Year & Class</h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="listing-title font-16 font-weight-500">Membership</h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="listing-title font-16 font-weight-500">Status</h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="listing-title font-16 font-weight-500">Action</h6>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
+                                                
+                                                                <img
+                                                                src="{{$childObj->getAvatar()}}"
+                                                                alt="{{$childObj->get_full_name()}}"
+                                                                class="avatar rounded-circle">
+                                                                <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
                                                             </a>
-                                                        @endif
-                                                    @endif
-                                                </span>
-                                            </div>
-                                            <div class="col-auto ms-auto last-activity profile-dropdown">
-                                                <h6 class="listing-title font-16 font-weight-500">Action</h6>
-                                                <a href="javascript:;" class="font-16 font-weight-normal">
-                                                    <span class="icon-box">
-                                                        <img src="/assets/default/svgs/dots-circle.svg" alt="">
-                                                    </span>
-                                                </a>
-                                                <ul>
-                                                    <li><a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
-                                                    <li class="rurera-hide"><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
-                                                    @if(!isset( $childObj->userSubscriptions->subscribe ) )
-                                                    <li>
-                                                        <a href="javascript:;" class="package-payment-btn switch-user-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
-                                                            <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Add Package
-                                                        </a>
-                                                    </li>
-                                                    @else
-                                                    <li>
-                                                        <a href="javascript:;" class="package-update-btn switch-user-btn subscription-modal" data-type="update_package" data-id="{{$childObj->id}}">
-                                                            <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Update Package
-                                                        </a>
-                                                    </li>
-                                                    @endif
-                                                    <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
-                                                </ul>
-                                            </div>
-                                        </div> <!--[ row end ]-->
+                                                        </td>
+                                                        <td>
+                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
+                                                                <small class="text-muted">
+                                                                    <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
+                                                                    <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
+                                                                    {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
+                                                                </small>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="last-activity">
+                                                                <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
+                                                                    {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="last-activity">
+                                                                <span class="font-16 d-block">
+                                                                    <strong>
+                                                                        @php $package_id = 0;
+
+                                                                        @endphp
+                                                                        @if(isset( $childObj->userSubscriptions->subscribe ) )
+                                                                            @php $package_id = $childObj->userSubscriptions->subscribe->id;
+                                                                            @endphp
+                                                                            {{$childObj->userSubscriptions->subscribe->getTitleAttribute()}}
+                                                                            @php
+                                                                                $expiry_at = $childObj->userSubscriptions->expiry_at;
+                                                                            @endphp
+                                                                        </strong>
+                                                                        <br><span class="expiry-at">{{ dateTimeFormat($expiry_at, 'j M Y') }}</span>
+                                                                    @else
+                                                                        @if(!isset( $childObj->userSubscriptions->subscribe ) )
+                                                                            <a href="javascript:;" class="package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
+                                                                                + Add Membership
+                                                                            </a>
+                                                                        @endif
+                                                                    @endif
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="status-lable">Active</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="last-activity profile-dropdown">
+                                                                <a href="javascript:;" class="font-16 font-weight-normal">
+                                                                    <span class="icon-box">
+                                                                        <img src="/assets/default/svgs/dots-circle.svg" alt="">
+                                                                    </span>
+                                                                </a>
+                                                                <ul>
+                                                                    <li><a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
+                                                                    <li class="rurera-hide"><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
+                                                                    @if(!isset( $childObj->userSubscriptions->subscribe ) )
+                                                                    <li>
+                                                                        <a href="javascript:;" class="package-payment-btn switch-user-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
+                                                                            <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Add Package
+                                                                        </a>
+                                                                    </li>
+                                                                    @else
+                                                                    <li>
+                                                                        <a href="javascript:;" class="package-update-btn switch-user-btn subscription-modal" data-type="update_package" data-id="{{$childObj->id}}">
+                                                                            <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Update Package
+                                                                        </a>
+                                                                    </li>
+                                                                    @endif
+                                                                    <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
 
                                     @endforeach
