@@ -217,6 +217,15 @@ Assignments Table Style Start
 .dashboard-students-holder .db-form-tabs th h6 {
     color: #9e9ec5;
 }
+.students-table .student-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.students-table .student-info h6 {
+    color: #000;
+}
 .dashboard-students-holder .db-members .card .card-body {
     padding-top: 0;
 }
