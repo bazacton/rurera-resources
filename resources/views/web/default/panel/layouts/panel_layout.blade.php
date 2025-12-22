@@ -313,7 +313,7 @@
                                                 <div class="referral-payment">
                                                     <div class="heading">
                                                         <h3 class="font-19 font-weight-bold">Your wallet</h3>
-                                                        <a href="/affiliates">Go to referrals <span>&#8594;</span></a>
+                                                        <a href="https://rurera.com/parent/marketing/affiliates">Go to referrals <span>&#8594;</span></a>
                                                     </div>
                                                     <p>
                                                         <span class="icon-box">
