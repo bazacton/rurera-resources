@@ -105,7 +105,7 @@
                                     <div class="emojis-response rurera-hide">{!! $emoji_response !!}</div>
                                     <span class="pin-response rurera-hide">{{isset($childObj->login_pin)? $childObj->login_pin : ''}}</span>
                                         <div class="table-sm">
-                                            <table>
+                                            <table class="students-table">
                                                 <thead>
                                                     <tr>
                                                         <th>
