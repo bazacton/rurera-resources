@@ -1089,7 +1089,7 @@ ul.course-info-list li .progress-box .circle_percent:before {
 .referral-invites {margin: 0 0 30px;}
 .referral-invites ul {background-color: #f1f1f1; border-radius: 12px; padding: 20px; display: flex;align-items: flex-start; justify-content: space-between;}
 .referral-invites li {display: inline-flex; flex-direction: column; gap: 8px;}
-.referral-invites li strong {font-size: 19px; line-height: normal;}
+.referral-invites li strong {font-size: 19px; line-height: normal; text-align: center;}
 .referral-invites li span {line-height: normal;}
 .referral-payment p {background-color: #f1f1f1; border-radius: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-bottom: 0; padding: 20px;}
 .referral-payment .icon-box {width: 65px; }
