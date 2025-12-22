@@ -220,8 +220,8 @@ Assignments Table Style Start
 .db-form-tabs .students-table tbody {
     padding-top: 15px;
 }
-.db-form-tabs .students-table .totalChilds tbody td {
-    padding: 10px 15px;
+.db-form-tabs .students-table tbody td {
+    padding: 20px 15px;
 }
 .dashboard-students-holder .db-form-tabs th h6 {
     color: #9e9ec5;
