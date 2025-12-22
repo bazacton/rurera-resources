@@ -545,7 +545,35 @@ $rand_id = rand(999,99999);
 										</div>
 										</div>
 
-										
+										<div class="lms-element-properties">
+											<div class="row">
+												<div class="topic-parts-block" style="display:contents;">
+
+												</div>
+											</div>
+											<div class="rureraform-admin-popup" id="rureraform-element-properties">
+												<div class="rureraform-admin-popup-inner">
+													<div class="rureraform-admin-popup-title">
+														<a href="#" title="Close"
+															onclick="return rureraform_properties_close();"><i
+																	class="fas fa-times"></i></a>
+														<h3><i class="fas fa-cog element-properties-label"></i> Element Properties</h3>
+													</div>
+													<div class="rureraform-admin-popup-content">
+														<div class="rureraform-admin-popup-content-form">
+														</div>
+													</div>
+													<div class="rureraform-admin-popup-buttons">
+														<a class="rureraform-admin-button duplicate-element btn btn-primary"
+															href="#"><label>Duplicate</label></a>
+														<a class="rureraform-admin-button remove-element btn btn-danger" href="#"><label>Remove</label></a>
+														<a class="rureraform-admin-button generate-question-code rurera-hide"
+															href="#"><label>Apply Changes</label></a>
+													</div>
+													<div class="rureraform-admin-popup-loading"><i class="fas fa-spinner fa-spin"></i></div>
+												</div>
+											</div>
+										</div>
 
 										</div>
 
@@ -563,35 +591,6 @@ $rand_id = rand(999,99999);
 														</div>
 													</div>
 												@endif
-												</div>
-												<div class="lms-element-properties">
-													<div class="row">
-														<div class="topic-parts-block" style="display:contents;">
-
-														</div>
-													</div>
-													<div class="rureraform-admin-popup" id="rureraform-element-properties">
-														<div class="rureraform-admin-popup-inner">
-															<div class="rureraform-admin-popup-title">
-																<a href="#" title="Close"
-																	onclick="return rureraform_properties_close();"><i
-																			class="fas fa-times"></i></a>
-																<h3><i class="fas fa-cog element-properties-label"></i> Element Properties</h3>
-															</div>
-															<div class="rureraform-admin-popup-content">
-																<div class="rureraform-admin-popup-content-form">
-																</div>
-															</div>
-															<div class="rureraform-admin-popup-buttons">
-																<a class="rureraform-admin-button duplicate-element btn btn-primary"
-																	href="#"><label>Duplicate</label></a>
-																<a class="rureraform-admin-button remove-element btn btn-danger" href="#"><label>Remove</label></a>
-																<a class="rureraform-admin-button generate-question-code rurera-hide"
-																	href="#"><label>Apply Changes</label></a>
-															</div>
-															<div class="rureraform-admin-popup-loading"><i class="fas fa-spinner fa-spin"></i></div>
-														</div>
-													</div>
 												</div>
 
 												<h3>Similiarity Content</h3>
