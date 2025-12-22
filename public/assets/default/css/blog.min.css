@@ -203,7 +203,7 @@
     color: #b2b2b2;
 }
 .blog-newsletter form {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 .blog-newsletter input[type="email"] {
