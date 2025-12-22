@@ -212,13 +212,21 @@ Assignments Table Style Start
     border: 0;
 }
 .students-table thead {
+    background-color: inherit;
     border-bottom: 2px solid #ddd;
+}
+.students-table thead th {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 10px 15px;
+}
+.students-table thead th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.students-table thead th:last-child {
+    border-radius: 0 10px 0 0;
 }
 .students-table tbody tr:hover {
     background-color: inherit !important;
-}
-.students-table thead th {
-    padding: 10px 15px;
 }
 .db-form-tabs .students-table tbody {
     padding-top: 15px;
