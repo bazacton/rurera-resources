@@ -109,22 +109,22 @@
                                                 <thead>
                                                     <tr>
                                                         <th>
-                                                            <h6 class="listing-title font-16 font-weight-500">Student</h6>
+                                                            <h6 class="font-16 font-weight-500">Student</h6>
                                                         </th>
                                                         <th>
-                                                            <h6 class="font-16 font-weight-bold listing-title">Year & Class</h6>
+                                                            <h6 class="font-16 font-weight-bold">Year & Class</h6>
                                                         </th>
                                                         <th>
-                                                            <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
+                                                            <h6 class="font-16 font-weight-500">Last Activity</h6>
                                                         </th>
                                                         <th>
-                                                            <h6 class="listing-title font-16 font-weight-500">Membership</h6>
+                                                            <h6 class="font-16 font-weight-500">Membership</h6>
                                                         </th>
                                                         <th>
-                                                            <h6 class="listing-title font-16 font-weight-500">Status</h6>
+                                                            <h6 class="font-16 font-weight-500">Status</h6>
                                                         </th>
                                                         <th>
-                                                            <h6 class="listing-title font-16 font-weight-500">Action</h6>
+                                                            <h6 class="font-16 font-weight-500">Action</h6>
                                                         </th>
                                                     </tr>
                                                 </thead>
