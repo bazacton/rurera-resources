@@ -215,6 +215,21 @@ Assignments Table Style Start
 }
 .dashboard-students-holder .db-members .card .list-group-item .listing-title {
     top: -38px;
+    font-weight: 600 !important;
+    color: #9e9ec5;
+}
+.dashboard-students-holder .last-activity span strong {
+    font-weight: 600;
+}
+.dashboard-students-holder .last-activity span {
+    font-weight: 600;
+    text-align: center;
+}
+.dashboard-students-holder .last-activity span .expiry-at {
+    font-weight: 400;
+    color: #bfbfbf;
+    display: block;
+    text-align: center;
 }
 .dashboard-students-holder .member-card-header .dropdown .btn {
     background-color: var(--primary);
