@@ -182,6 +182,8 @@
     position: relative;
     background-color: #eee;
     border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .blog-newsletter .icon-box {
     position: absolute;
