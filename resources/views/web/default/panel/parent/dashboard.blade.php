@@ -112,7 +112,7 @@
                                                             <h6 class="font-16 font-weight-500">Student</h6>
                                                         </th>
                                                         <th>
-                                                            <h6 class="font-16 font-weight-bold">Year & Class</h6>
+                                                            <h6 class="font-16 font-weight-500">Year & Class</h6>
                                                         </th>
                                                         <th>
                                                             <h6 class="font-16 font-weight-500">Last Activity</h6>
