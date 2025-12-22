@@ -131,7 +131,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
+                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="student-info">
                                                 
                                                                 <img
                                                                 src="{{$childObj->getAvatar()}}"
@@ -141,7 +141,7 @@
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
+                                                            <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
                                                                 <small class="text-muted">
                                                                     <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
                                                                     <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
