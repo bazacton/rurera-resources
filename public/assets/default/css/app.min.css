@@ -3636,7 +3636,7 @@ nav li {
 .stats-container .stats-item.simple .stat-icon-box img {
     height: 70px;
     width: 60px;
-    filter: invert(26%) sepia(90%) saturate(1600%) hue-rotate(181deg) brightness(96%) contrast(98%)
+    filter: invert(14%) sepia(46%) saturate(1255%) hue-rotate(198deg) brightness(101%) contrast(90%);
 }
 
 .stats-container .stats-item.simple:hover .stat-icon-box img {
