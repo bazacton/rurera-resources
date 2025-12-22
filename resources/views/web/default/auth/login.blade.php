@@ -386,7 +386,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="forgot-pass-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade forgot-modal" id="forgot-pass-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -399,7 +399,7 @@
                     <div class="login-holder row" style="padding:0;">
                     <div class="col-12 col-md-12">
 
-                        <div class="login-card mt-20">
+                        <div class="login-card">
                             <h1 class="font-20 font-weight-bold">{{ trans('auth.forget_password') }}</h1>
 
                             <form method="post" action="/send-email" class="mt-35">
