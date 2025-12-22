@@ -1243,6 +1243,12 @@ nav li {
     z-index: 1;
     opacity: 1;
 }
+.forgot-modal .modal-body {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 50px 15px;
+    overflow: hidden;
+}
 .login-logo {
     gap: 8px
 }
