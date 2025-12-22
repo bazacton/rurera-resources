@@ -183,7 +183,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <span class="status-lable">Active</span>
+                                                            <span class="status-lable active">Active</span>
                                                         </td>
                                                         <td>
                                                             <div class="last-activity profile-dropdown">
