@@ -536,8 +536,9 @@
                         <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="fsdate" class="text-left form-control" name="from"
+                                <input type="text" id="fsdate" class="text-left form-control practice-start-date rureradatepicker" name="from"
                                        value="{{ request()->get('from') }}" placeholder="Start Date">
+                                <i class="fa fa-calendar-week"></i>
                             </div>
                         </div>
                     </div>
@@ -546,8 +547,9 @@
                         <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="lsdate" class="text-left form-control" name="to"
+                                <input type="text" id="lsdate" class="text-left form-control practice-start-date rureradatepicker" name="to"
                                        value="{{ request()->get('to') }}" placeholder="End Date">
+                                <i class="fa fa-calendar-week"></i>
                             </div>
                         </div>
                     </div>
