@@ -13,7 +13,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>
+                    <td data-th="Title">
                         <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png" alt="{{$assignmentObj->assignment_type}}" height="65" width="98">
                             {{$assignmentObj->title}}
                         </a>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                     </td>
-                    <td>
+                    <td data-th="Student">
                         <h6 class="font-16 font-weight-normal">
                             @if( $assignmentObj->students->count() > 0)
                             @foreach($assignmentObj->students as $studentObj)
@@ -41,22 +41,22 @@
                             @endif
                         </h6>
                     </td>
-                    <td>
+                    <td data-th="Type">
                         <h6 class="font-16 font-weight-normal">
                             <span class="font-16">{{ get_topic_type($assignmentObj->assignment_type) }}</span>
                         </h6>
                     </td>
-                    <td>
+                    <td data-th="Due Date">
                         <div class="last-activity activity-date">
                             <span class="font-16 d-block">{{ dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y') }}</span>
                         </div>
                     </td>
-                    <td>
+                    <td data-th="Completion Date">
                         <div class="last-activity activity-date">
                             <span class="font-16 d-block">-</span>
                         </div>
                     </td>
-                    <td>
+                    <td data-th="Action">
                         <div class="last-activity action-activity">
                             <div class="dropdown-box">
                                 <div class="dropdown">
