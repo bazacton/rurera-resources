@@ -436,6 +436,7 @@ Lms Responsive Style Start
     .section-title {text-align: center !important;}
     .parent-panel .section-title {text-align: left !important;}
     .form-section.text-left .section-title {text-align: left !important;}
+    .parent-panel .section-title p {text-align: center;}
     .panel-content .section-title.text-left,
     .newsletter-inner .section-title,
     .home-sections:has(.blog-grid-card) .section-title,
