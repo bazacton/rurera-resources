@@ -262,9 +262,9 @@ $(document).on('click', '.prev-btn', function (e) {
 });
 //
 $(document).on('submit', '.approve_question_form', function (evt) {
-    console.log('sdfsdf');
 
     var thisObj = $('.approve_question_form');
+    var thisParentObj = $('.rurera-question-block.active');
     //rurera_loader(thisObj, 'div');
     var formData = new FormData($(this)[0]);
     $.ajax({
@@ -280,7 +280,7 @@ $(document).on('submit', '.approve_question_form', function (evt) {
         success: function (response) {
             //rurera_remove_loader(thisObj, 'div');
             //$(".approve_modal_box").modal('hide');
-            $(".questions_logs_block").html(response.logs_response);
+            thisParentObj.find(".questions_logs_block").html(response.logs_response);
             var question_id = response.question_id;
             $(".question_status_"+question_id).html(response.question_status);
         }
