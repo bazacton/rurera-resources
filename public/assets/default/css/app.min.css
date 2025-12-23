@@ -12224,7 +12224,10 @@ body .flipbook-data {
     font-weight: 500;
     color: var(--primary)
 }
-
+.top-navbar .login-btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
 .top-navbar .register-btn {
     border: 1px solid var(--primary);
     padding: 7px 15px !important
