@@ -512,6 +512,9 @@ a.last-activity span strong {color: #343434; font-weight: 400;}
 .lms-choose-membership .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; /*height: 100%;*/}
 .lms-choose-membership:has(.form-login-reading) .modal-content,
 .lms-choose-membership .modal-content:has(.subscription-content) {height: 100%;}
+.lms-choose-membership:has(.card-gateway-fields-holder) .modal-content:has(.subscription-content) {
+    height: auto;
+}
 .lms-choose-membership .modal-body{background-color: #fafafa; padding: 0 25px 0;}
 .subscription-content .col-xs-12 {width: 100%;}
 .lms-choose-membership .modal-body .nav-link {width: 300px; margin: 25px auto;height: 60px;line-height: 44px; font-size: 18px;font-weight: bold; text-transform: capitalize;}
