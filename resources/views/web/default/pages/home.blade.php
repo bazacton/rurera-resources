@@ -166,7 +166,7 @@
                                         <div class="testimonials-user-avatar"> 
                                             <img src="/store/923/avatar/testimonial-grid1.webp" alt="James Turner" class="img-cover rounded-circle" height="350" width="350"> 
                                         </div>
-                                        <span class="font-20 font-weight-bold text-secondary mt-30 d-block">Natalie Turner</span> <span class="d-block font-16 text-gray"></span>
+                                        <span class="font-20 font-weight-bold text-primary mt-30 d-block">Natalie Turner</span> <span class="d-block font-16 text-gray"></span>
                                     </div>
                                     <p class="mt-10 font-16">Rurera has been a lifesaver for me in high school. I used to get all F's, but now I have all B's and even a C. My grades have significantly improved, thanks to Rurera.</p>
                                     <div class="bottom-gradient"></div>
@@ -178,7 +178,7 @@
                                         <div class="testimonials-user-avatar"> 
                                             <img src="/store/923/avatar/617a4f9983fe5.webp" alt="James Turner" class="img-cover rounded-circle" height="350" width="350"> 
                                         </div>
-                                        <span class="font-20 font-weight-bold text-secondary mt-30 d-block">Liam Reed</span> <span class="d-block font-16 text-gray"></span>
+                                        <span class="font-20 font-weight-bold text-primary mt-30 d-block">Liam Reed</span> <span class="d-block font-16 text-gray"></span>
                                     </div>
                                     <p class="mt-10 font-16">Thanks to Rurera, my grades have gone up, and I enjoy practicing with the platform. I used to dislike learning, but now I have a thirst for knowledge and want to learn more.</p>
                                     <div class="bottom-gradient"></div>
@@ -190,7 +190,7 @@
                                         <div class="testimonials-user-avatar"> 
                                             <img src="/store/923/avatar/testimonial-grid3.webp" alt="James Turner" class="img-cover rounded-circle" height="350" width="350"> 
                                         </div>
-                                        <span class="font-20 font-weight-bold text-secondary mt-30 d-block">Michael Foster</span> <span class="d-block font-16 text-gray"></span>
+                                        <span class="font-20 font-weight-bold text-primary mt-30 d-block">Michael Foster</span> <span class="d-block font-16 text-gray"></span>
                                     </div>
                                     <p class="mt-10 font-16">It allows students to work on their own levels and at their own pace. I also love that I can see what they are doing when they are doing it, provide feedback or help in real time.</p>
                                     <div class="bottom-gradient"></div>
