@@ -1,68 +1,83 @@
-<div class="list-group-item ttt">
-    <div class="row align-items-center">
-        <div class="col-auto col-lg-2 pr-15">
-            <h6 class="listing-title font-16 font-weight-500">Title</h6>
-            <h6 class="font-16 font-weight-normal">
-                <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png" alt="{{$assignmentObj->assignment_type}}" height="65" width="98">
-                    {{$assignmentObj->title}}</a>
-            </h6>
-            <div class="dropdown-box hide-lg">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three" height="800" width="800"></span>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple" alt="edit-simple" height="64" width="64"> Details</a>
-                        @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
-                        @if( $completed_count == 0 && $assignmentObj->status == 'active')
-                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu" height="800" width="800"> Delete</a>
-                        @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-auto">
-            <h6 class="listing-title font-16 font-weight-500">Student</h6>
-            <h6 class="font-16 font-weight-normal">
-                @if( $assignmentObj->students->count() > 0)
-                @foreach($assignmentObj->students as $studentObj)
-                <span class="font-16">{{$studentObj->user->get_full_name()}}</span>
-                @endforeach
-                @endif
-            </h6>
-        </div>
-        <div class="col-auto">
-            <h6 class="listing-title font-16 font-weight-500">Type</h6>
-            <h6 class="font-16 font-weight-normal">
-                <span class="font-16">{{ get_topic_type($assignmentObj->assignment_type) }}</span>
-            </h6>
-        </div>
-        <div class="col-auto last-activity activity-date">
-            <h6 class="listing-title font-16 font-weight-500">Due Date</h6>
-            <span class="font-16 d-block">{{ dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y') }}</span>
-        </div>
-        <div class="col-auto last-activity activity-date">
-            <h6 class="listing-title font-16 font-weight-500">Completion Date</h6>
-            <span class="font-16 d-block">-</span>
-        </div>
-        <div class="col-auto ms-auto last-activity action-activity">
-            <h6 class="listing-title font-16 font-weight-500">Action</h6>
-            <div class="dropdown-box">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
-                        @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
-                        @if( $completed_count == 0 && $assignmentObj->status == 'active')
-                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"> Delete</a>
-                        @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!--[ row end ]-->
+<div class="list-group-item">
+    <div class="table-sm">
+        <table class="students-table">
+            <thead>
+                <tr>
+                    <th><h6 class="font-16 font-weight-500">Title</h6></th>
+                    <th><h6 class="listing-title font-16 font-weight-500">Student</h6></th>
+                    <th><h6 class="listing-title font-16 font-weight-500">Type</h6></th>
+                    <th><h6 class="listing-title font-16 font-weight-500">Due Date</h6></th>
+                    <th><h6 class="listing-title font-16 font-weight-500">Completion Date</h6></th>
+                    <th><h6 class="listing-title font-16 font-weight-500">Action</h6></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png" alt="{{$assignmentObj->assignment_type}}" height="65" width="98">
+                            {{$assignmentObj->title}}
+                        </a>
+                        <div class="dropdown-box hide-lg">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three" height="800" width="800"></span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple" alt="edit-simple" height="64" width="64"> Details</a>
+                                    @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
+                                    @if( $completed_count == 0 && $assignmentObj->status == 'active')
+                                    <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu" height="800" width="800"> Delete</a>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <h6 class="font-16 font-weight-normal">
+                            @if( $assignmentObj->students->count() > 0)
+                            @foreach($assignmentObj->students as $studentObj)
+                            <span class="font-16">{{$studentObj->user->get_full_name()}}</span>
+                            @endforeach
+                            @endif
+                        </h6>
+                    </td>
+                    <td>
+                        <h6 class="font-16 font-weight-normal">
+                            <span class="font-16">{{ get_topic_type($assignmentObj->assignment_type) }}</span>
+                        </h6>
+                    </td>
+                    <td>
+                        <div class="last-activity activity-date">
+                            <span class="font-16 d-block">{{ dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y') }}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="last-activity activity-date">
+                            <span class="font-16 d-block">-</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="last-activity action-activity">
+                            <div class="dropdown-box">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
+                                        @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
+                                        @if( $completed_count == 0 && $assignmentObj->status == 'active')
+                                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"> Delete</a>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 @push('scripts_bottom')
 <script>
