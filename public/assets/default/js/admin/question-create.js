@@ -7177,7 +7177,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         $("."+class_id).html(svgContent);
                     });
 
-                    var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata>22222</span></div>";
+                    var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></div>";
 					if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
 						var label_data = "<" + label_type + ">" + rureraform_form_elements[i]["content"] + "</" + label_type + ">";
 					}
