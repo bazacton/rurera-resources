@@ -205,6 +205,9 @@ Assignments Table Style Start
 .dashboard-students-holder .db-members {
     padding: 15px 45px 15px;
 }
+.dashboard-students-holder .db-members:has(.rurera-tabs-frontend) {
+    padding: 0;
+}
 .db-members table {
     width: 100%;
 }
