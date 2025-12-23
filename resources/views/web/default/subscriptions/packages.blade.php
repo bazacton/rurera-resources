@@ -176,7 +176,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class="section-title mb-30 text-center"><h2 class="mb-10 font-40">Recent reviews</h2></div>
+                <div class="section-title mb-15 text-center"><h2 class="mb-0 font-40">Recent reviews</h2></div>
             </div>
             <div class="col-12">
                 <div class="swiper-container">
