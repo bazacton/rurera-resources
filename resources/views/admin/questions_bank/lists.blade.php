@@ -126,7 +126,7 @@
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="fsdate" class="text-left form-control" name="from"
+                                <input type="date" id="fsdate" class="text-left form-control practice-start-date rureradatepicker" name="from"
                                        value="{{ get_filter_request('from', 'questions_search') }}" placeholder="Start Date">
                             </div>
                         </div>
