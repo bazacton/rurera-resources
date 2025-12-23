@@ -126,7 +126,7 @@
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="fsdate" class="text-left form-control practice-start-date rureradatepicker" name="from"
+                                <input type="text" id="fsdate" class="text-left form-control practice-start-date rureradatepicker" name="from"
                                        value="{{ get_filter_request('from', 'questions_search') }}" placeholder="Start Date">
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="lsdate" class="text-left form-control" name="to"
+                                <input type="text" id="lsdate" class="text-left form-control practice-start-date rureradatepicker" name="to"
                                        value="{{ get_filter_request('to', 'questions_search') }}" placeholder="End Date">
                             </div>
                         </div>
