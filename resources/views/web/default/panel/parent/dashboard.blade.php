@@ -139,6 +139,31 @@
                                                                 class="avatar rounded-circle">
                                                                 <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
                                                             </a>
+                                                            <div class="last-activity profile-dropdown hide-lg">
+                                                                <a href="javascript:;" class="font-16 font-weight-normal">
+                                                                    <span class="icon-box">
+                                                                        <img src="/assets/default/svgs/dots-circle.svg" alt="">
+                                                                    </span>
+                                                                </a>
+                                                                <ul>
+                                                                    <li><a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
+                                                                    <li class="rurera-hide"><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
+                                                                    @if(!isset( $childObj->userSubscriptions->subscribe ) )
+                                                                    <li>
+                                                                        <a href="javascript:;" class="package-payment-btn switch-user-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
+                                                                            <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Add Package
+                                                                        </a>
+                                                                    </li>
+                                                                    @else
+                                                                    <li>
+                                                                        <a href="javascript:;" class="package-update-btn switch-user-btn subscription-modal" data-type="update_package" data-id="{{$childObj->id}}">
+                                                                            <span class="icon-box"><img src="/assets/default/svgs/package.svg" alt=""></span> Update Package
+                                                                        </a>
+                                                                    </li>
+                                                                    @endif
+                                                                    <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </td>
                                                         <td data-th="Year & Class">
                                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
