@@ -11509,7 +11509,7 @@ body .flipbook-data {
 }
 
 .masonry-grid-gallery.has-bg {
-    padding: 90px 90px 0 0
+    padding: 90px 25px 0 25px;
 }
 
 .masonry-grid-gallery.has-bg:before {
