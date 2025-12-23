@@ -1147,6 +1147,9 @@ Lms Responsive Style Start
     .packages-list-modal .lms-faqs .card {
         margin: 0 0 15px;
     }
+    .packages-list-modal .lms-faqs .card:last-child {
+        margin-bottom: 0;
+    }
     .lms-faqs .card-body p {margin: 10px 0 5px;}
     .reward-process .d-flex:has(.try-rurera-btn) {justify-content: center; margin-left: 0 !important;}
     .categories-list li {flex: 0 0 50%; max-width: 50%;}
