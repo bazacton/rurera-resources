@@ -172,7 +172,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         </div>
     </div>
 </section>
-<section class="recent-reviews-section pt-0 packages-list-modal {{$packages_list_class}} rurera-hide">
+<section class="recent-reviews-section pt-0 pb-30 packages-list-modal {{$packages_list_class}} rurera-hide">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
