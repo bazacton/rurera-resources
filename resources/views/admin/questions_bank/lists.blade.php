@@ -171,12 +171,15 @@
 					<div class="col-md-3">
 					<div class="form-group">
 						<label>Subjects</label>
-						<select data-return_type="option"
+                        <div class="select-holder">
+                            <select data-return_type="option"
 								data-default_id="{{request()->get('subject_id')}}" data-next_index="chapter_id" data-next_value="{{get_filter_request('chapter_id', 'questions_search')}}" data-chapter_id="{{get_filter_request('chapter_id', 'questions_search')}}"
 								class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
 								id="subject_id" name="subject_id">
-							<option disabled selected>Subject</option>
-						</select>
+                                <option disabled selected>Subject</option>
+                            </select>
+                        </div>
+						
 						@error('subject_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -189,11 +192,14 @@
 					<div class="col-md-3">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
-						<select data-next_index="sub_chapter_id" data-next_value="{{get_filter_request('sub_chapter_id', 'questions_search')}}" data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'questions_search')}}" id="chapter_id"
+                        <div class="select-holder">
+                            <select data-next_index="sub_chapter_id" data-next_value="{{get_filter_request('sub_chapter_id', 'questions_search')}}" data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'questions_search')}}" id="chapter_id"
 								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
 								name="chapter_id">
-							<option value="">Please select year, subject</option>
-						</select>
+                                <option value="">Please select year, subject</option>
+                            </select>
+                        </div>
+						
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -207,11 +213,14 @@
 					<div class="col-md-3">
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
-						<select id="chapter_id"
-							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id">
-						<option value="">Please select year, subject, Topic</option>
-					</select>
+                        <div class="select-holder">
+                            <select id="chapter_id"
+                                class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                name="sub_chapter_id">
+                                <option value="">Please select year, subject, Topic</option>
+                            </select>
+                        </div>
+						
 					@error('sub_chapter_id')
 					<div class="invalid-feedback">
 						{{ $message }}
@@ -227,111 +236,129 @@
 					<div class="col-md-3">
 						<div class="form-group">
 							<label class="input-label">Author</label>
-							<select name="user_id" data-search-option="display_name" class="form-control "
+                            <div class="select-holder">
+                                <select name="user_id" data-search-option="display_name" class="form-control "
 									data-placeholder="Search author">
 
 									<option value="">Select Author</option>
-								@if(!empty($users_list) and $users_list->count() > 0)
-									@foreach($users_list as $userObj)
-										@php $checked = (get_filter_request('user_id', 'questions_search') == $userObj->id)? 'selected' : ''; @endphp
-										<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
-									@endforeach
-								@endif
-							</select>
+                                    @if(!empty($users_list) and $users_list->count() > 0)
+                                        @foreach($users_list as $userObj)
+                                            @php $checked = (get_filter_request('user_id', 'questions_search') == $userObj->id)? 'selected' : ''; @endphp
+                                            <option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
+                            </div>
+							
 						</div>
 					</div>
 
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">Difficulty Level</label>
-							@php $get_difficulty_levels = get_difficulty_levels(); @endphp
-                            <select name="difficulty_level" data-plugin-selectTwo class="form-control populate">
-                                <option value="">All Levels</option>
-								@if(!empty($get_difficulty_levels ))
-									@foreach($get_difficulty_levels as $difficulty_level)
-										<option value="{{$difficulty_level}}" @if(get_filter_request('difficulty_level', 'questions_search') == $difficulty_level) selected @endif>{{$difficulty_level}}</option>
-									@endforeach
-								@endif
-                            </select>
+                            <div class="select-holder">
+                                @php $get_difficulty_levels = get_difficulty_levels(); @endphp
+                                <select name="difficulty_level" data-plugin-selectTwo class="form-control populate">
+                                    <option value="">All Levels</option>
+                                    @if(!empty($get_difficulty_levels ))
+                                        @foreach($get_difficulty_levels as $difficulty_level)
+                                            <option value="{{$difficulty_level}}" @if(get_filter_request('difficulty_level', 'questions_search') == $difficulty_level) selected @endif>{{$difficulty_level}}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
+                            </div>
+							
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">Question Type</label>
-                            <select name="question_type" data-plugin-selectTwo class="form-control populate">
-                                <option value="">All Types</option>
-								@if(!empty($questions_types ))
-									@foreach($questions_types as $question_type_slug => $question_type)
-										<option value="{{$question_type_slug}}" @if(get_filter_request('question_type', 'questions_search') == $question_type) selected @endif>{{$question_type}}</option>
-									@endforeach
-								@endif
-                            </select>
+                            <div class="select-holder">
+                                <select name="question_type" data-plugin-selectTwo class="form-control populate">
+                                    <option value="">All Types</option>
+                                    @if(!empty($questions_types ))
+                                        @foreach($questions_types as $question_type_slug => $question_type)
+                                            <option value="{{$question_type_slug}}" @if(get_filter_request('question_type', 'questions_search') == $question_type) selected @endif>{{$question_type}}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">Teacher Review</label>
-                            <select name="review_required" data-plugin-selectTwo class="form-control populate">
-                                <option value="">All</option>
-                                <option value="1" @if(get_filter_request('review_required', 'questions_search') == '1') selected
-                                    @endif>Yes
-                                </option>
-                                <option value="0" @if(get_filter_request('review_required', 'questions_search') == '0') selected
-                                    @endif>No
-                                </option>
+                            <div class="select-holder">
+                                <select name="review_required" data-plugin-selectTwo class="form-control populate">
+                                    <option value="">All</option>
+                                    <option value="1" @if(get_filter_request('review_required', 'questions_search') == '1') selected
+                                        @endif>Yes
+                                    </option>
+                                    <option value="0" @if(get_filter_request('review_required', 'questions_search') == '0') selected
+                                        @endif>No
+                                    </option>
 
-                            </select>
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">Example Question</label>
-                            <select name="is_example_question" data-plugin-selectTwo class="form-control populate">
-                                <option value="">All</option>
-                                <option value="1" @if(get_filter_request('is_example_question', 'questions_search') == '1') selected
-                                    @endif>Yes
-                                </option>
-                                <option value="0" @if(get_filter_request('is_example_question', 'questions_search') == '0') selected
-                                    @endif>No
-                                </option>
+                            <div class="select-holder">
+                                <select name="is_example_question" data-plugin-selectTwo class="form-control populate">
+                                    <option value="">All</option>
+                                    <option value="1" @if(get_filter_request('is_example_question', 'questions_search') == '1') selected
+                                        @endif>Yes
+                                    </option>
+                                    <option value="0" @if(get_filter_request('is_example_question', 'questions_search') == '0') selected
+                                        @endif>No
+                                    </option>
 
-                            </select>
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.status') }}</label>
-                            <select name="question_status" data-plugin-selectTwo class="form-control populate">
-                                <option value="">{{ trans('admin/main.all_status') }}</option>
-                                <option value="Draft" @if(get_filter_request('question_status', 'questions_search') == 'Draft') selected
-                                    @endif>Draft
-                                </option>
-                                <option value="Submit for review" @if(get_filter_request('question_status', 'questions_search') == 'Submit for
-                                    review') selected @endif>Submit for review
-                                </option>
-                                <option value="Hard reject" @if(get_filter_request('question_status', 'questions_search') == 'Hard reject')
-                                    selected @endif>Hard reject
-                                </option>
-                                <option value="Improvement required" @if(get_filter_request('question_status', 'questions_search') ==
-                                    'Improvement required') selected @endif>Improvement required
-                                </option>
-                                <option value="On hold" @if(get_filter_request('question_status', 'questions_search') == 'On hold') selected
-                                    @endif>On hold
-                                </option>
-                                <option value="Accepted" @if(get_filter_request('question_status', 'questions_search') == 'Accepted') selected
-                                    @endif>Accepted
-                                </option>
-                                <option value="Offline" @if(get_filter_request('question_status', 'questions_sear	ch') == 'Offline') selected
-                                    @endif>Offline
-                                </option>
-                                <option value="Published" @if(get_filter_request('question_status', 'questions_search') == 'Published') selected
-                                    @endif>Published
-                                </option>
-                            </select>
+                            <div class="select-holder">
+                                <select name="question_status" data-plugin-selectTwo class="form-control populate">
+                                    <option value="">{{ trans('admin/main.all_status') }}</option>
+                                    <option value="Draft" @if(get_filter_request('question_status', 'questions_search') == 'Draft') selected
+                                        @endif>Draft
+                                    </option>
+                                    <option value="Submit for review" @if(get_filter_request('question_status', 'questions_search') == 'Submit for
+                                        review') selected @endif>Submit for review
+                                    </option>
+                                    <option value="Hard reject" @if(get_filter_request('question_status', 'questions_search') == 'Hard reject')
+                                        selected @endif>Hard reject
+                                    </option>
+                                    <option value="Improvement required" @if(get_filter_request('question_status', 'questions_search') ==
+                                        'Improvement required') selected @endif>Improvement required
+                                    </option>
+                                    <option value="On hold" @if(get_filter_request('question_status', 'questions_search') == 'On hold') selected
+                                        @endif>On hold
+                                    </option>
+                                    <option value="Accepted" @if(get_filter_request('question_status', 'questions_search') == 'Accepted') selected
+                                        @endif>Accepted
+                                    </option>
+                                    <option value="Offline" @if(get_filter_request('question_status', 'questions_sear	ch') == 'Offline') selected
+                                        @endif>Offline
+                                    </option>
+                                    <option value="Published" @if(get_filter_request('question_status', 'questions_search') == 'Published') selected
+                                        @endif>Published
+                                    </option>
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
 
