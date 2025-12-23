@@ -1520,6 +1520,7 @@ Lms Responsive Style Start
     .timeline-text .info-time {display: block; margin-left: 0; margin-top: 5px;}
     .timeline-text img {margin: 0 2px;}
     .db-members .profile-dropdown ul {right: auto; left: -5px;}
+    .db-members .students-table .profile-dropdown ul {left: auto; right: 0;}
     .db-members.dropdown .profile-dropdown ul {right: 0; left: auto;}
     body #rurera-words-search #rf-searchgamecontainer {padding: 8px;}
     body #rurera-words-search #rf-searchgamecontainer .rf-tgrid {padding: 4px 3px;}
