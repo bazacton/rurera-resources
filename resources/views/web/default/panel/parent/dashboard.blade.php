@@ -130,7 +130,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>
+                                                        <td data-th="Student">
                                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="student-info">
                                                 
                                                                 <img
@@ -140,7 +140,7 @@
                                                                 <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
                                                             </a>
                                                         </td>
-                                                        <td>
+                                                        <td data-th="Year & Class">
                                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
                                                                 <small class="text-muted">
                                                                     <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
@@ -149,14 +149,14 @@
                                                                 </small>
                                                             </a>
                                                         </td>
-                                                        <td>
+                                                        <td data-th="Last Activity">
                                                             <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="last-activity">
                                                                 <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
                                                                     {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
                                                                 </span>
                                                             </a>
                                                         </td>
-                                                        <td>
+                                                        <td data-th="Membership">
                                                             <div class="last-activity">
                                                                 <span class="font-16 d-block">
                                                                     <strong>
@@ -182,10 +182,10 @@
                                                                 </span>
                                                             </div>
                                                         </td>
-                                                        <td>
+                                                        <td data-th="Status">
                                                             <span class="status-lable active">Active</span>
                                                         </td>
-                                                        <td>
+                                                        <td data-th="Action">
                                                             <div class="last-activity profile-dropdown">
                                                                 <a href="javascript:;" class="font-16 font-weight-normal">
                                                                     <span class="icon-box">
