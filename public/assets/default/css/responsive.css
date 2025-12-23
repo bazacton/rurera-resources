@@ -870,10 +870,17 @@ Lms Responsive Style Start
     body #progbar {padding-top: 25px;}
     body .flexible-progress-bar {display: inline-flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; overflow: hidden;}
     body .flexible-progress-bar li:first-child .stepline {display: block;}
-    body .flexible-progress-bar li {padding: 0;}
+    body .flexible-progress-bar li {padding: 0 15px; width: auto;}
     body .flexible-progress-bar li i {height: 35px; width: 35px;}
     body .flexible-progress-bar br,
-    body .col-xs-12 .stepline {display: block;}
+    body .col-xs-12 .stepline {display: block; width: 150%;}
+    body .flexible-progress-bar li:first-child {
+            padding-left: 0;
+        }
+        body .flexible-progress-bar li:last-child {
+            padding-right: 0;
+            overflow: hidden;
+        }
     body .stepline {bottom: .80em;}
     .lms-choose-membership .modal-body .nav-link {width: 100%;}
     .panel-stats .course-icon {right: -15px; width: 180px; height: 90px;}
