@@ -870,7 +870,7 @@ Lms Responsive Style Start
     body #progbar {padding-top: 25px;}
     body .flexible-progress-bar {display: inline-flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; overflow: hidden;}
     body .flexible-progress-bar li:first-child .stepline {display: block;}
-    body .flexible-progress-bar li {padding: 0 15px; width: auto;}
+    body .flexible-progress-bar li {padding: 0 15px; width: auto; position: relative;}
     body .flexible-progress-bar li i {height: 35px; width: 35px;}
     body .flexible-progress-bar br,
     body .col-xs-12 .stepline {display: block; width: 150%;}
