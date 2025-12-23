@@ -128,6 +128,7 @@
                             <div class="input-group">
                                 <input type="text" id="fsdate" class="text-left form-control practice-start-date rureradatepicker" name="from"
                                        value="{{ get_filter_request('from', 'questions_search') }}" placeholder="Start Date">
+                                <i class="fa fa-calendar-week"></i>
                             </div>
                         </div>
                     </div>
@@ -138,6 +139,7 @@
                             <div class="input-group">
                                 <input type="text" id="lsdate" class="text-left form-control practice-start-date rureradatepicker" name="to"
                                        value="{{ get_filter_request('to', 'questions_search') }}" placeholder="End Date">
+                                <i class="fa fa-calendar-week"></i>
                             </div>
                         </div>
                     </div>
