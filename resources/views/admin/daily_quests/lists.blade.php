@@ -536,7 +536,7 @@
                         <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="fsdate" class="text-center form-control" name="from"
+                                <input type="date" id="fsdate" class="text-left form-control" name="from"
                                        value="{{ request()->get('from') }}" placeholder="Start Date">
                             </div>
                         </div>
@@ -546,7 +546,7 @@
                         <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="lsdate" class="text-center form-control" name="to"
+                                <input type="date" id="lsdate" class="text-left form-control" name="to"
                                        value="{{ request()->get('to') }}" placeholder="End Date">
                             </div>
                         </div>
