@@ -116,7 +116,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         </div>
     </div>
     </section>
-<section class="container packages-list-modal {{$packages_list_class}} rurera-hide">
+<section class="packages-list-modal {{$packages_list_class}} rurera-hide">
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="section-title text-center mb-50">
