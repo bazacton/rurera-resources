@@ -96,7 +96,7 @@
                 <div class="reward-program-section">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <div class="position-relative reward-program-section-hero-card" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".reward-program-section" data-aos-offset="100" data-aos-duration="3000"> 
+                            <div class="position-relative reward-program-section-hero-card" data-aos-once="true" data-aos="fade-up" data-aos-anchor=".reward-program-section" data-aos-offset="100" data-aos-duration="3000"> 
                                 <img src="/store/1/default_images/home_sections_banners/club_points_banner.webp" class="reward-program-section-hero" alt="You earned 50 points!" height="390" width="570">
                                 <div class="example-reward-card bg-white rounded-sm shadow-lg p-5 p-md-15 d-flex align-items-center">
                                     <div class="example-reward-card-medal"> 
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 mt-20 mb-40 mt-lg-0 mb-lg-0">
-                            <div class="column-text" data-aos-once="true" data-aos="fade-left" data-aos-anchor=".reward-program-section" data-aos-offset="200" data-aos-duration="3000">
+                            <div class="column-text" data-aos-once="true" data-aos="fade-up" data-aos-anchor=".reward-program-section" data-aos-offset="200" data-aos-duration="3000">
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
                                 <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting rewards! Learn progress, and earn coin points that increase your chances of winning. amazing rewards. Jump into the fun and start collecting coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
@@ -127,7 +127,7 @@
     <section class="parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
                         <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
