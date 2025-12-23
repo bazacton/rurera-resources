@@ -183,7 +183,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="masonry-grid">
-                                <div class="grid-item">
+                                <div class="grid-item pl-0">
                                     <div class="reviews-card">
                                         <div class="reviews-top">
                                             <span class="user-img"><img src="/avatar/svgA32101282879304116.png" alt="" /></span>
