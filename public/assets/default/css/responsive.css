@@ -868,7 +868,7 @@ Lms Responsive Style Start
     .lms-choose-membership .close {font-size: 14px;}
     .lms-choose-membership .modal-logo img {height: 35px; width: 35px;}
     body #progbar {padding-top: 25px;}
-    body .flexible-progress-bar {display: inline-flex; align-items: center; justify-content: space-between; flex-wrap: wrap; overflow: hidden;}
+    body .flexible-progress-bar {display: inline-flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; overflow: hidden;}
     body .flexible-progress-bar li:first-child .stepline {display: block;}
     body .flexible-progress-bar li {padding: 0;}
     body .flexible-progress-bar li i {height: 35px; width: 35px;}
