@@ -29,7 +29,7 @@
     .emoji-icons .emoji-icon {border-radius: 100%; display: inline-block; object-fit: contain; height: 28px; width: 28px; }
     .emoji-icons .emoji-icon img {max-width: 100%; }
     .profile-header {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 10px;}
-    .student-qrCode {height: 35px;width: 35px;}
+    .student-qrCode {height: 45px;width: 45px;}
     .student-qrCode img {max-width: 100%;object-fit: contain;}
     @media print {
         .profile-container {
