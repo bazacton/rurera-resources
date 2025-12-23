@@ -126,9 +126,9 @@
                     </form>
 
                     <div class="text-center mt-20">
-                        <span class="text-secondary">
+                        <span class="text-primary">
                             {{ trans('auth.already_have_an_account') }}
-                            <a href="/login" class="text-secondary font-weight-bold">{{ trans('auth.login') }}</a>
+                            <a href="/login" class="text-primary font-weight-bold">{{ trans('auth.login') }}</a>
                         </span>
                     </div>
 
