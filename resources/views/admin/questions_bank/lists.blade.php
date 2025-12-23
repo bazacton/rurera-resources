@@ -145,20 +145,22 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'questions_search')}}" data-next_index="subject_id" data-next_value="{{get_filter_request('subject_id', 'questions_search')}}">
-                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                <optgroup label="{{  $category->title }}">
-                                    @foreach($category->subCategories as $subCategory)
-                                    <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'questions_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                            <div class="select-holder">
+                                <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'questions_search')}}" data-next_index="subject_id" data-next_value="{{get_filter_request('subject_id', 'questions_search')}}">
+                                    <option value="">{{trans('admin/main.all_categories')}}</option>
+                                    @foreach($categories as $category)
+                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                    <optgroup label="{{  $category->title }}">
+                                        @foreach($category->subCategories as $subCategory)
+                                        <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'questions_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                        @endforeach
+                                    </optgroup>
+                                    @else
+                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'questions_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                    @endif
                                     @endforeach
-                                </optgroup>
-                                @else
-                                <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'questions_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                @endif
-                                @endforeach
-                            </select>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
