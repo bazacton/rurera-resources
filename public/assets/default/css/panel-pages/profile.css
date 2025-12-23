@@ -337,6 +337,9 @@ address .info-list-label {color: #64748b;}
     color: #475569;
     padding: 1rem .3rem;
 }
+.edit-profile .custom-switch .subscription-modal {
+    color: var(--primary);
+}
 /* User Detail Style End */
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
