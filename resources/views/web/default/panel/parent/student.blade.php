@@ -649,7 +649,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     <input type="checkbox" name="show_timestables" id="show_timestables_field" value="1" class="custom-switch-input"  {{($user->show_timestables == 1)? 'checked' : ''}}/>
                                     <label class="custom-switch-description mb-0 cursor-pointer mb-0" for="show_timestables_field">Timestables</label>
                                     @if(!$user->subscription('timestables'))
-                                        <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a></span>
+                                        <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
                                     @else
                                         <span class="custom-switch-indicator"></span>
                                     @endif
