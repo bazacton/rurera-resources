@@ -943,7 +943,7 @@
                 <div class="modal-box">
                     <div class="icon-box d-block mb-15 d-flex align-items-center">
                         <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
-                        <span class="ml-10 font-weight-bold font-18">Delete Set Work</span>
+                        <span class="ml-10 font-weight-bold font-22">Delete Set Work</span>
                     </div>
                     <span class="font-16 mb-10 conform-lable">Are you sure you want to remove?</span>
                     <p class="mb-25 font-16">
