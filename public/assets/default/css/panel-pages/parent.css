@@ -233,6 +233,9 @@ Assignments Table Style Start
 .db-form-tabs .students-table tbody {
     padding-top: 15px;
 }
+.db-form-tabs .students-table tbody tr {
+    display: table-row;
+}
 .db-form-tabs .students-table tbody td {
     padding: 20px 15px;
 }
