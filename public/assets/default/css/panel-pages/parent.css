@@ -199,7 +199,6 @@ Assignments Table Style Start
 .member-card-header .db-members .profile-dropdown:hover ul {margin-top: 0;}
 .member-card-header .db-members .profile-dropdown li a {display: flex; align-items: center; color: #66667e; font-size: 14px; font-weight: 400; padding: 8px 10px; border-radius: 5px;}
 .member-card-header .db-members .profile-dropdown li a:hover {background-color: rgba(52, 52, 52, .03);}
-.member-card-header h2 {color: var(--primary);}
 .member-card-header .dropdown .btn,
 .member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
 .dashboard-students-holder .db-members {
