@@ -944,13 +944,14 @@
                         <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
                         <span class="ml-10 font-weight-bold font-18">Delete Set Work</span>
                     </div>
-                    <h3 class="font-24 font-weight-normal mb-10">Are you sure you want to remove?</h3>
+                    <span class="font-16 mb-10 conform-lable">Are you sure you want to remove?</span>
                     <p class="mb-15 font-16">
-                        You've been inactive for a while, and your session was paused. You can continue learning by using the following links
+                        <strong>Times-table-test-2025</strong>
+                        Assigned to: <span>M.Rayan Malik</span>
                     </p>
                     <div class="inactivity-controls">
-                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
-                        <a href="javascript:;" class="rurera-delete-btn">Yes to Delete</a>
+                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Cancel</a>
+                        <a href="javascript:;" class="rurera-delete-btn">Yes, Delete</a>
                     </div>
                 </div>
             </div>
