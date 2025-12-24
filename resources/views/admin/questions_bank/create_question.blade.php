@@ -2080,21 +2080,24 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
             function processNode(node) {
                 node.childNodes.forEach(function (child) {
 
+                    // TEXT NODE
                     if (child.nodeType === 3) {
+
+                        // Skip if already inside equation
                         if (node.closest && node.closest('.math-equation')) return;
 
                         let text = child.nodeValue;
 
-                        // Match math-like expressions
-                        // Examples: 2+3, 4-1, 5×6, 10%, 3=3, 7≤8
-                        const regex = /-?\d+(\.\d+)?([\+\-\×\÷\*\/=\%\^\(\)<≥≤]*-?\d+(\.\d+)?)+| -?\d+(\.\d+)? /g;
+                        // Numbers OR math symbols
+                        const regex = /(-?\d+(\.\d+)?|[%\?\+\-\*\/=<>])/g;
 
                         if (!regex.test(text)) return;
 
                         child.nodeValue = text.replace(regex, function (match) {
-                            return '\\(' + match.trim() + '\\)';
+                            return '\\(' + match + '\\)';
                         });
                     }
+                    // ELEMENT NODE
                     else if (child.nodeType === 1) {
                         processNode(child);
                     }
