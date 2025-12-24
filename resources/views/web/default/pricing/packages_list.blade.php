@@ -47,10 +47,10 @@ $show_details = isset( $show_details )? $show_details : true;
 
 			<span class="plan-label d-block font-weight-500 pb-10 mt-20">Suitable for:</span>
 			<p class="mb-10">{{ $subscribe->description }}</p>
-			<ul class="mt-10 plan-feature">
+			<!-- <ul class="mt-10 plan-feature">
 				<li class="mt-10">Grammar school entrance</li>
 				<li class="mt-10">Independent school entrance</li>
-			</ul>
+			</ul> -->
 			<span class="plan-label d-block font-weight-500 pt-20">Subjects:</span>
 			<ul class="mt-10 plan-feature">
 				@php $is_available = ($subscribe->is_courses > 0)? '' : 'subscribe-no'; @endphp
