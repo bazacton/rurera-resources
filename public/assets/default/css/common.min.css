@@ -4392,8 +4392,8 @@ textarea.form-control.is-invalid {
 
 .custom-control-input:checked~.custom-control-label:before {
     color: #fff;
-    border-color: #27325e;
-    background-color: #27325e;
+    border-color: var(--primary);
+    background-color: var(--primary);
     box-shadow: none
 }
 
@@ -4402,13 +4402,13 @@ textarea.form-control.is-invalid {
 }
 
 .custom-control-input:focus:not(:checked)~.custom-control-label:before {
-    border-color: #27325e
+    border-color: var(--primary);
 }
 
 .custom-control-input:not(:disabled):active~.custom-control-label:before {
     color: #fff;
-    background-color: #27325e;
-    border-color: #27325e;
+    background-color: var(--primary);
+    border-color: var(--primary);
     box-shadow: none
 }
 
