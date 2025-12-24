@@ -164,7 +164,7 @@
                                                                     </ul>
                                                                 </div>
                                                             </td>
-                                                            <td data-th="Year & Class">
+                                                            <td data-th="Years">
                                                                 <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
                                                                     <small class="text-muted">
                                                                         <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
@@ -175,14 +175,14 @@
                                                             </td>
                                                             <td data-th="Last Activity">
                                                                 <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="last-activity">
-                                                                <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
+                                                                <span class="font-14 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
                                                                     {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
                                                                 </span>
                                                                 </a>
                                                             </td>
                                                             <td data-th="Membership">
                                                                 <div class="last-activity">
-                                                                <span class="font-16 d-block">
+                                                                <span class="font-14 d-block">
                                                                     <strong>
                                                                         @php $package_id = 0;
 
@@ -211,7 +211,7 @@
                                                             </td>
                                                             <td data-th="Action">
                                                                 <div class="last-activity profile-dropdown">
-                                                                    <a href="javascript:;" class="font-16 font-weight-normal">
+                                                                    <a href="javascript:;" class="font-14 font-weight-normal">
                                                                     <span class="icon-box">
                                                                         <img src="/assets/default/svgs/dots-circle.svg" alt="">
                                                                     </span>

@@ -271,7 +271,6 @@ Assignments Table Style Start
     border-radius: 30px;
     padding: 5px 15px;
     font-size: 14px;
-    font-weight: 500;
     min-width: 50px;
     align-items: center;
     justify-content: center;
@@ -297,6 +296,7 @@ Assignments Table Style Start
     color: #bfbfbf;
     display: block;
     text-align: center;
+    font-size: 14px;
 }
 .dashboard-students-holder .member-card-header .dropdown .btn {
     background-color: var(--primary);
