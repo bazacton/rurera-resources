@@ -1210,7 +1210,11 @@ label#svga-elements-faceshape-label {
 	#svga-footermenu ul li {
 		padding: 12px 0;
 	}
-	.mobile-avar-view #svga-footermenu ul li {
+	#svgAvatars .scroll-wrapper > #svga-colors {
+		padding: 0 15px;
+	}
+	.mobile-avar-view #svga-footermenu ul li,
+	.mobile-avar-view #svgAvatars .scroll-wrapper > #svga-colors {
 		padding: 0;
 	}
 	#svgAvatars .scroll-wrapper > .scroll-content {
@@ -1412,12 +1416,12 @@ label#svga-elements-faceshape-label {
 		display: none;
 	}
 	.svga-col-right .svga-colors-set {
-		padding: 0 20px 0 15px;
+		padding: 0;
 		overflow: hidden;
 		overflow-x: auto;
 	}
 	.svga-col-right label {
-		padding: 5px 15px 0;
+		padding: 5px 0 0;
 		margin-bottom: 0;
 	}
 	.mobile-avar-view .svga-col-right .svga-colors-set {
