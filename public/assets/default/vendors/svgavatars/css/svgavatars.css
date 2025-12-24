@@ -1419,6 +1419,19 @@ label#svga-elements-faceshape-label {
 		padding: 0;
 		overflow: hidden;
 		overflow-x: auto;
+		scrollbar-width: thin;
+	}
+	.svga-col-right .svga-colors-set::-webkit-scrollbar {
+		width: 12px;
+		background-color: transparent;
+	}
+	.svga-col-right .svga-colors-set::-webkit-scrollbar-thumb {
+		border-radius: 999px;
+		border: 3px solid transparent; 
+		background-clip: padding-box; 
+	}
+	.svga-col-right .svga-colors-set::-webkit-scrollbar-track {
+		background: transparent;
 	}
 	.svga-col-right label {
 		padding: 5px 0 0;
