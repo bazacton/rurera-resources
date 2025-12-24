@@ -938,7 +938,7 @@ label#svga-elements-faceshape-label {
 		width: 100%;
 	}
 	.svga-vert-order-controls {
-		display: table-row-group;
+		display: none;
 		width: 100%;
 	}
 	.svga-android-hack {
