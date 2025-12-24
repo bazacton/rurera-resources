@@ -1438,6 +1438,10 @@ label#svga-elements-faceshape-label {
 	.svga-vert-order-controls {
 		display: none;
 	}
+	#svga-message,
+	#svga-gravatar-message {
+		bottom: 50%;
+	}
 }
 @media (max-width: 576px) {
 	.mobile-avar-view .svga-col-right {
