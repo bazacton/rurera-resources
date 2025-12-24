@@ -4144,6 +4144,9 @@
     .post-show.pr-50 {
         padding-right: 0 !important;
     }
+    .blog-sidebar {
+        margin-top: 25px;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
