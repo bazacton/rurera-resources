@@ -2076,19 +2076,23 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
                 el.innerHTML = '\\(' + latex + '\\)';
             });
 
-            /* 2. Convert ALL numbers (including plain text) */
+            /* 2. Convert numbers + math symbols */
             function processNode(node) {
                 node.childNodes.forEach(function (child) {
 
                     if (child.nodeType === 3) {
                         if (node.closest && node.closest('.math-equation')) return;
 
-                        const text = child.nodeValue;
-                        const regex = /-?\d+(\.\d+)?/g;
+                        let text = child.nodeValue;
+
+                        // Match math-like expressions
+                        // Examples: 2+3, 4-1, 5×6, 10%, 3=3, 7≤8
+                        const regex = /-?\d+(\.\d+)?([\+\-\×\÷\*\/=\%\^\(\)<≥≤]*-?\d+(\.\d+)?)+| -?\d+(\.\d+)? /g;
+
                         if (!regex.test(text)) return;
 
-                        child.nodeValue = text.replace(regex, function (num) {
-                            return '\\(' + num + '\\)';
+                        child.nodeValue = text.replace(regex, function (match) {
+                            return '\\(' + match.trim() + '\\)';
                         });
                     }
                     else if (child.nodeType === 1) {
