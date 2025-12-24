@@ -946,7 +946,7 @@
                         <span class="ml-10 font-weight-bold font-18">Delete Set Work</span>
                     </div>
                     <span class="font-16 mb-10 conform-lable">Are you sure you want to remove?</span>
-                    <p class="mb-15 font-16">
+                    <p class="mb-25 font-16">
                         <strong>Times-table-test-2025</strong>
                         Assigned to: <span>M.Rayan Malik</span>
                     </p>
