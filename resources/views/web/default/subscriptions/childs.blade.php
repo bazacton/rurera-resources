@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="form-group mt-30">
+                <div class="form-group mt-10">
                     <div class="btn-field">
                         <button type="submit" class="nav-link">Create student's profile</button>
                     </div>
