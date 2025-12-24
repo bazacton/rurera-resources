@@ -217,10 +217,11 @@
 }
 #svga-colors-wrap {
 	overflow: hidden;
-	width: 85%;
+	width: 100%;
 	position: relative;
 	overflow-x: auto;
 }
+.mobile-avar-view #svga-colors-wrap {width: 85%;}
 #svga-colors {
 	width: 100%;
 	white-space: nowrap;
@@ -1393,6 +1394,23 @@ label#svga-elements-faceshape-label {
 	}
 	.mobile-avar-view .svga-row.rurera-hide-sm {
 		display: none;
+	}
+	#svga-colors-faceshape {
+		padding: 0 20px 0 15px;
+		overflow: hidden;
+		overflow-x: auto;
+	}
+	.svga-col-right label {
+		padding: 5px 15px 0;
+		margin-bottom: 0;
+	}
+	.mobile-avar-view #svga-colors-faceshape {
+		padding: 0;
+		overflow: unset;
+	}
+	.mobile-avar-view .svga-col-right label {
+		padding:0;
+		margin-bottom: 10px;
 	}
 }
 @media (max-width: 576px) {
