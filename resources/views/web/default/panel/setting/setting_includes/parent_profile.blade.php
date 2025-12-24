@@ -197,7 +197,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     <li>
                                         <span class="info-list-label font-15">
                                             Password
-                                            <strong class="d-flex font-weight-normal"><img src="/assets/default/svgs/shield.svg" alt="shield" height="24" width="24"> ********</strong>
+                                            <strong class="d-flex font-weight-normal align-items-baseline"><img src="/assets/default/svgs/shield.svg" alt="shield" height="24" width="24"> ********</strong>
                                         </span>
                                     </li>
                                     <!-- <li>
