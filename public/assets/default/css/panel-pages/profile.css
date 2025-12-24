@@ -10,7 +10,7 @@ section:has(.edit-profile-content) {overflow: hidden;}
 .svga-light #svga-gender {background-color: #fff;}
 .svga-col-right .svga-elements svg {-webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);left: 50%; top: 50%; display: flex; align-items: center; justify-content: center;}
 .svga-col-right #svga-elements-faceshape svg {
-    margin-top: 0;
+    margin-top: 6px;
 }
 .svga-col-right .svga-elements svg g{transform: none;}
 /* .svga-col-right .svga-elements {padding: 9%;}  */
