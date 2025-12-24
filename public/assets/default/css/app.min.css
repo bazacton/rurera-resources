@@ -1750,7 +1750,9 @@ nav li {
     left: 12px;
     transform: translateY(-50%)
 }
-
+.login-card .form-field .form-control {
+    font-size: 14px;
+}
 .login-card .form-field .icon-box img {
     height: 15px;
     width: 15px;
