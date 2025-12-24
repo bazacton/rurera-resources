@@ -1644,6 +1644,9 @@ Lms Responsive Style Start
     .svga-col-right #svga-elements-eyesfront .svga-elements svg {
         margin-top: 20px;
     }
+    .mobile-avar-view .svga-col-right #svga-elements-eyesfront .svga-elements svg {
+        margin-top: 0;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
