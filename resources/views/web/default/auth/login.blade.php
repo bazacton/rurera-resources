@@ -51,22 +51,26 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/students-colord.svg" alt="students-colord"></span> Students
+                                <!-- <span class="icon-box"><img src="/assets/default/svgs/students-colord.svg" alt="students-colord"></span>  -->
+                                Students
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">
-                                <span class="icon-box"><img src="/assets/default/svgs/parent-colord.svg" alt="parent-colord"></span> Parent
+                                <!-- <span class="icon-box"><img src="/assets/default/svgs/parent-colord.svg" alt="parent-colord"></span>  -->
+                                Parent
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="tutor-tab" data-toggle="tab" data-target="#tutor" type="button" role="tab" aria-controls="tutor" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt="teacher-colord"></span> Tutor
+                                <!-- <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt="teacher-colord"></span>  -->
+                                Tutor
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="teacher-tab" data-toggle="tab" data-target="#teacher" type="button" role="tab" aria-controls="teacher" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt="teacher-colord"></span> Educator
+                                <!-- <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt="teacher-colord"></span>  -->
+                                Educator
                             </button>
                         </li>
                     </ul>
