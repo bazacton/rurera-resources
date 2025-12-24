@@ -46,7 +46,7 @@ $show_details = isset( $show_details )? $show_details : true;
 		@if($show_details === true)
 
 			<span class="plan-label d-block font-weight-500 pb-10 mt-20">Suitable for:</span>
-			<p class="mb-10">{{ $subscribe->description }}</p>
+			<p class="mb-0">{{ $subscribe->description }}</p>
 			<!-- <ul class="mt-10 plan-feature">
 				<li class="mt-10">Grammar school entrance</li>
 				<li class="mt-10">Independent school entrance</li>
