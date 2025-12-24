@@ -1381,146 +1381,136 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 
 </script>
 <script>
-			/*$(document).on('click', '.edit-profile-btn', function (e) {
-				$(".user-view-profile").addClass('rurera-hide');
-				$(".user-edit-profile").removeClass('rurera-hide');
-			});*/
 
-			$(document).on('click', '.edit-profile-btn', function (e) {
-				$('body').addClass('disabled-div');
-				$('body').addClass('disabled-style2');
-				$(this).closest('.edit-info-list').find('.profile-view-data').addClass('rurera-hide');
-				$(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('rurera-hide');
+    $(document).on('click', '.edit-profile-btn', function (e) {
+        $('body').addClass('disabled-div');
+        $('body').addClass('disabled-style2');
+        $(this).closest('.edit-info-list').find('.profile-view-data').addClass('rurera-hide');
+        $(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('rurera-hide');
 
-				$(this).closest('.edit-info-list').find('.edit-profile-block').addClass('no-disabled');
-			});
+        $(this).closest('.edit-info-list').find('.edit-profile-block').addClass('no-disabled');
+    });
 
-			$(document).on('click', '.cancel-edit-button', function (e) {
-				$('body').removeClass('disabled-div');
-				$('body').removeClass('disabled-style2');
-				$(this).closest('.edit-info-list').find('.profile-view-data').removeClass('rurera-hide');
-				$(this).closest('.edit-info-list').find('.edit-profile-block').addClass('rurera-hide');
-				$(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('no-disabled');
-			});
+    $(document).on('click', '.cancel-edit-button', function (e) {
+        $('body').removeClass('disabled-div');
+        $('body').removeClass('disabled-style2');
+        $(this).closest('.edit-info-list').find('.profile-view-data').removeClass('rurera-hide');
+        $(this).closest('.edit-info-list').find('.edit-profile-block').addClass('rurera-hide');
+        $(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('no-disabled');
+    });
 
-			var profileSubmission = null;
+    var profileSubmission = null;
 
-			$(document).on('click', '.profile-save-btn', function (e) {
-				var user_id = '{{$user->id}}';
-				var thisObj = $(this);
-				var formData = new FormData($(this).closest('form')[0]);
-				console.log('submission');
-				returnType = rurera_validation_process($(this).closest('form'), 'under_field');
-				if (returnType == false) {
-					return false;
-				}
-				rurera_loader(thisObj, 'div');
-				profileSubmission = $.ajax({
-					type: "POST",
-					url: '/subscribes/edit-child',
-					data: formData,
-					beforeSend: function () {
-						if (profileSubmission != null) {
-							profileSubmission.abort();
-						}
-					},
-					processData: false,
-					contentType: false,
-					success: function (return_data) {
-						$.ajax({
-						type: "GET",
-						url: '/panel/student-profile/'+user_id,
-						data: {"user_id": user_id},
-						success: function (return_data) {
-							rurera_remove_loader(thisObj, 'div');
-							jQuery.growl.notice({
-								title: '',
-								message: 'Updated Successfully',
-							});
-							$(".user-profile-block").html(return_data);
-							rurera_remove_loader($('.user-profile-block'), 'div');
-							location.reload();
-						}
-					});
+    $(document).on('click', '.profile-save-btn', function (e) {
+        var user_id = '{{$user->id}}';
+        var thisObj = $(this);
+        var formData = new FormData($(this).closest('form')[0]);
+        console.log('submission');
+        returnType = rurera_validation_process($(this).closest('form'), 'under_field');
+        if (returnType == false) {
+            return false;
+        }
+        rurera_loader(thisObj, 'div');
+        profileSubmission = $.ajax({
+            type: "POST",
+            url: '/subscribes/edit-child',
+            data: formData,
+            beforeSend: function () {
+                if (profileSubmission != null) {
+                    profileSubmission.abort();
+                }
+            },
+            processData: false,
+            contentType: false,
+            success: function (return_data) {
+                $.ajax({
+                type: "GET",
+                url: '/panel/student-profile/'+user_id,
+                data: {"user_id": user_id},
+                success: function (return_data) {
+                    rurera_remove_loader(thisObj, 'div');
+                    jQuery.growl.notice({
+                        title: '',
+                        message: 'Updated Successfully',
+                    });
+                    $(".user-profile-block").html(return_data);
+                    rurera_remove_loader($('.user-profile-block'), 'div');
+                    location.reload();
+                }
+            });
 
-						//location.reload();
-					}
-				});
+                //location.reload();
+            }
+        });
 
-			});
+    });
 
 
 
-			$(document).on('click', '.unlink-parent-btn', function (e) {
-				var parent_id = $(this).attr('data-parent_id');
-				var user_id = '{{$user->id}}';
-				var thisObj = $(this);
-				rurera_loader(thisObj, 'div');
-				$.ajax({
-					type: "GET",
-					url: '/panel/setting/unlink-child-parent',
-					data: {"parent_id": parent_id, "user_id": user_id},
-					dataType:'json',
-					success: function (return_data) {
-						rurera_remove_loader(thisObj, 'div');
-						Swal.fire({
-						  icon: return_data.status,
-						  html: '<h3 class="font-20 text-center text-dark-blue py-25">'+return_data.msg+'</h3>',
-						  showConfirmButton: false,
-						  width: '25rem'
-						});
-						location.reload();
-					}
+    $(document).on('click', '.unlink-parent-btn', function (e) {
+        var parent_id = $(this).attr('data-parent_id');
+        var user_id = '{{$user->id}}';
+        var thisObj = $(this);
+        rurera_loader(thisObj, 'div');
+        $.ajax({
+            type: "GET",
+            url: '/panel/setting/unlink-child-parent',
+            data: {"parent_id": parent_id, "user_id": user_id},
+            dataType:'json',
+            success: function (return_data) {
+                rurera_remove_loader(thisObj, 'div');
+                Swal.fire({
+                    icon: return_data.status,
+                    html: '<h3 class="font-20 text-center text-dark-blue py-25">'+return_data.msg+'</h3>',
+                    showConfirmButton: false,
+                    width: '25rem'
+                });
+                location.reload();
+            }
 
-				});
+        });
 
-			});
+    });
 
+    var user_avatar_settings = '<?php echo $avatar_settings; ?>';
+    var avatar_color_settings = '<?php echo $avatar_color_settings; ?>';
 
+    user_avatar_settings = JSON.parse(user_avatar_settings);
+    avatar_color_settings = JSON.parse(avatar_color_settings);
 
+    var imageClicked = false;
+    $(document).on('click', '.profile-image-btn', function (e) {
+        $("#profile-image-modal").modal('show');
+        if( imageClicked == false) {
+            var start_id = '{{$user->user_preference}}';
+            start_id = (start_id == 'female') ? 'girls' : 'boys';
+            $("#svga-start-" + start_id).click();
+            imageClicked = true;
+        }
+    });
 
+    function refresh_preference_field() {
+        $('.preference_field option').removeAttr('disabled');
+        $('.preference_field').each(function () {
+            var current_value = $(this).val();
+            if( current_value != '') {
+                $('.preference_field option[value="' + current_value + '"]').attr('disabled', 'disabled');
+                $(this).find('option[value="' + current_value + '"]').removeAttr('disabled');
+            }
+        });
+    }
 
+    $(document).on('change', '.preference_field', function (e) {
+        refresh_preference_field();
+    });
+    refresh_preference_field();
+    resetRureraDatePickers();
 
-			/*$(document).on('click', '.cancel-edit-button', function (e) {
-				$(".user-view-profile").removeClass('rurera-hide');
-				$(".user-edit-profile").addClass('rurera-hide');
-			});*/
-
-			var user_avatar_settings = '<?php echo $avatar_settings; ?>';
-			var avatar_color_settings = '<?php echo $avatar_color_settings; ?>';
-
-			user_avatar_settings = JSON.parse(user_avatar_settings);
-			avatar_color_settings = JSON.parse(avatar_color_settings);
-
-			var imageClicked = false;
-			$(document).on('click', '.profile-image-btn', function (e) {
-				$("#profile-image-modal").modal('show');
-				if( imageClicked == false) {
-					var start_id = '{{$user->user_preference}}';
-					start_id = (start_id == 'female') ? 'girls' : 'boys';
-					$("#svga-start-" + start_id).click();
-					imageClicked = true;
-				}
-			});
-
-			function refresh_preference_field() {
-				$('.preference_field option').removeAttr('disabled');
-				$('.preference_field').each(function () {
-					var current_value = $(this).val();
-					if( current_value != '') {
-						$('.preference_field option[value="' + current_value + '"]').attr('disabled', 'disabled');
-						$(this).find('option[value="' + current_value + '"]').removeAttr('disabled');
-					}
-				});
-			}
-
-			$(document).on('change', '.preference_field', function (e) {
-				refresh_preference_field();
-			});
-			refresh_preference_field();
-			resetRureraDatePickers();
-
-
+    $('select.form-control').on('change', function () {
+        if ($(this).val() !== "") {
+            $(this).addClass('active');
+        }
+    });
 	</script>
 @endpush
 
