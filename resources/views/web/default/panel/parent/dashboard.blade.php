@@ -136,10 +136,10 @@
                                                                             src="{{$childObj->getAvatar()}}"
                                                                             alt="{{$childObj->get_full_name()}}"
                                                                             class="avatar rounded-circle">
-                                                                    <h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
+                                                                    <h6 class="font-14 font-weight-bold">{{$childObj->get_full_name()}}</h6>
                                                                 </a>
                                                                 <div class="last-activity profile-dropdown hide-lg">
-                                                                    <a href="javascript:;" class="font-16 font-weight-normal">
+                                                                    <a href="javascript:;" class="font-14 font-weight-normal">
                                                                     <span class="icon-box">
                                                                         <img src="/assets/default/svgs/dots-circle.svg" alt="">
                                                                     </span>
