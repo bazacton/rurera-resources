@@ -1201,6 +1201,12 @@ label#svga-elements-faceshape-label {
 		padding-top: 0;
 		margin: 0 0 0;
 	}
+	#svgAvatars .svga-col-right .scroll-wrapper:has(#svga-elements-faceshape) {
+		padding: 0 0 20px 15px !important;
+	}
+	.mobile-avar-view #svgAvatars .svga-col-right .scroll-wrapper:has(#svga-elements-faceshape) {
+		padding: 0 !important;
+	}
 	#svgAvatars .scroll-wrapper > .scroll-content {
 		height: auto !important;
 	}
