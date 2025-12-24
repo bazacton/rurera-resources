@@ -938,6 +938,7 @@
 <div class="modal fade rurera-confirm-delete" id="rurera-confirm-delete" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+            <button type="button" class="close" data-toggle="modal" data-target="#rurera-confirm-delete"><span aria-hidden="true">×</span></button>
             <div class="modal-body">
                 <div class="modal-box">
                     <div class="icon-box d-block mb-15 d-flex align-items-center">
