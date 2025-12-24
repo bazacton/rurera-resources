@@ -20,7 +20,39 @@
 <script src="/assets/default/js/admin/sticky-sidebar.js?ver={{$rand_id}}"></script>
 <script src="/assets/default/js/admin/question-create.js?ver={{$rand_id}}"></script>
 <link rel="stylesheet" href="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 <style>
+    .latex-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .latex-btn {
+        border: 1px solid #ccc;
+        background: #f8f9fa;
+        padding: 6px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .latex-btn:hover {
+        background: #e9ecef;
+    }
+    .math-equation {
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 4px;
+        background: #f4f6f8;
+        cursor: pointer;
+        user-select: all; /* important for copy */
+    }
+
+    .math-equation::selection {
+        background: rgba(0, 123, 255, 0.25);
+    }
+
     .droppable_area {
         width: 150px;
         height: 50px;
@@ -1525,6 +1557,61 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="equationModal" tabindex="-1">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+
+
+            <div class="modal-header">
+                <h5 class="modal-title">Insert Equation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <label>Equation (LaTeX / MathML / SVG)</label>
+
+                <div class="latex-toolbar mt-2">
+
+                    <button type="button" class="latex-btn" data-latex="^{}">
+                        x<sup>2</sup>
+                    </button>
+
+                    <button type="button" class="latex-btn" data-latex="\sqrt{}">
+                        √
+                    </button>
+
+                    <button type="button" class="latex-btn" data-latex="\sum_{}^{}">
+                        ∑
+                    </button>
+
+                    <button type="button" class="latex-btn" data-latex="\int_{}^{}">
+                        ∫
+                    </button>
+
+                    <button type="button" class="latex-btn" data-latex="\pi">
+                        π
+                    </button>
+
+                </div>
+
+                <textarea id="equationInput" class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" id="insertEquation">
+                    Insert
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @push('scripts_bottom')
@@ -1851,6 +1938,183 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
         }
     }
 });
+
+    var savedRange;
+    function uniqueId() {
+        return 'eq-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+    }
+    $('#insertEquation').on('click', function () {
+        var equation = $('#equationInput').val().trim();
+        if (!equation) return;
+
+        if (window.activeEquationId) {
+            var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
+            $el.attr('data-equation', equation).html(equation);
+        } else {
+            var id = uniqueId();
+            var html =
+                '<span class="math-equation" contenteditable="false" ' +
+                'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
+                equation +
+                '</span>';
+
+            // Restore focus and selection
+            $('.summernote-editor').summernote('focus');
+            if (savedRange) {
+                savedRange.select();
+            }
+
+            $('.summernote-editor').summernote('pasteHTML', html);
+        }
+
+        $('#equationModal').modal('hide');
+        $('#equationInput').val('');
+        window.activeEquationId = null;
+    });
+
+
+    // When user clicks the "add/edit equation" button
+    $('#openEquationModal').on('click', function() {
+        // Save the current cursor/selection in Summernote
+        savedRange = $('.summernote-editor').summernote('createRange');
+
+        // Then show modal
+        $('#equationModal').modal('show');
+    });
+
+
+    $(document).on('click', '.math-equation', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var equation = $(this).attr('data-equation');
+        window.activeEquationId = $(this).attr('data-id');
+
+        // Save range **before opening modal** if needed
+        savedRange = $('.summernote-editor').summernote('createRange');
+
+        $('#equationInput').val(equation);
+        $('#equationModal').modal('show');
+    });
+
+    $('.summernote-editor').on('summernote.keyup summernote.mouseup', function () {
+        savedRange = $('.summernote-editor').summernote('createRange');
+    });
+
+    $('#equationModal').on('hidden.bs.modal', function () {
+        window.activeEquationId = null;
+        $('#equationInput').val('');
+    });
+
+
+    $('.summernote-editor').on('keydown', function (e) {
+        var sel = window.getSelection();
+        if (!sel.rangeCount) return;
+
+        var range = sel.getRangeAt(0);
+        var node = range.startContainer;
+
+        // If cursor is right after or before equation
+        if (
+            (e.key === 'Backspace' || e.key === 'Delete') &&
+            node.parentElement &&
+            node.parentElement.classList.contains('math-equation')
+        ) {
+            e.preventDefault();
+            $(node.parentElement).remove();
+        }
+    });
+
+    $(document).on('copy', function (e) {
+        var sel = window.getSelection();
+        if (!sel.rangeCount) return;
+
+        var node = sel.anchorNode;
+        var el = node.nodeType === 3 ? node.parentElement : node;
+
+        if (el && el.classList.contains('math-equation')) {
+            e.preventDefault();
+
+            var html = el.outerHTML;
+            var text = el.innerText;
+
+            e.originalEvent.clipboardData.setData('text/html', html);
+            e.originalEvent.clipboardData.setData('text/plain', text);
+        }
+    });
+
+    $(document).on('click', '.latex-btn', function () {
+        var latex = $(this).data('latex');
+        var textarea = document.getElementById('equationInput');
+
+        var start = textarea.selectionStart;
+        var end = textarea.selectionEnd;
+        var value = textarea.value;
+
+        textarea.value =
+            value.substring(0, start) +
+            latex +
+            value.substring(end);
+
+        // Place cursor inside {}
+        var cursorPos = start + latex.indexOf('{') + 1;
+        textarea.setSelectionRange(cursorPos, cursorPos);
+        textarea.focus();
+    });
+    function getSVGFromEquationHTML(html) {
+        return new Promise(function (resolve) {
+
+            const container = document.createElement('div');
+            container.style.position = 'absolute';
+            container.style.left = '-9999px';
+            container.innerHTML = html;
+            document.body.appendChild(container);
+
+            /* 1. Existing equations */
+            container.querySelectorAll('.math-equation').forEach(function (el) {
+                const latex = el.getAttribute('data-equation');
+                el.innerHTML = '\\(' + latex + '\\)';
+            });
+
+            /* 2. Convert numbers + math symbols */
+            function processNode(node) {
+                node.childNodes.forEach(function (child) {
+
+                    // TEXT NODE
+                    if (child.nodeType === 3) {
+
+                        // Skip if already inside equation
+                        if (node.closest && node.closest('.math-equation')) return;
+
+                        let text = child.nodeValue;
+
+                        // Numbers OR math symbols
+                        const regex = /(-?\d+(\.\d+)?|[%\?\+\-\*\/=<>])/g;
+
+                        if (!regex.test(text)) return;
+
+                        child.nodeValue = text.replace(regex, function (match) {
+                            return '\\(' + match + '\\)';
+                        });
+                    }
+                    // ELEMENT NODE
+                    else if (child.nodeType === 1) {
+                        processNode(child);
+                    }
+                });
+            }
+
+            processNode(container);
+
+            /* 3. Render SVG */
+            MathJax.typesetPromise([container]).then(function () {
+                const result = container.innerHTML;
+                document.body.removeChild(container);
+                resolve(result);
+            });
+        });
+    }
+
 
 </script>
 

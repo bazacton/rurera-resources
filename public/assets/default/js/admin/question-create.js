@@ -2177,6 +2177,18 @@ function _rureraform_properties_prepare(_object) {
     $(".image-field-box").draggable();
 
     if ($('.summernote-editor').length) {
+        var EquationButton = function (context) {
+            var ui = $.summernote.ui;
+
+            return ui.button({
+                contents: '<i class="note-icon-magic"></i> Eq',
+                tooltip: 'Insert Equation',
+                click: function () {
+                    // Open your HTML modal
+                    $('#equationModal').modal('show');
+                }
+            }).render();
+        };
 
         $('.summernote-editor').summernote({
             tabsize: 2,
@@ -2187,15 +2199,14 @@ function _rureraform_properties_prepare(_object) {
             toolbar: [
                 ['style', ['style']],
                 ['font', ['bold', 'underline']],
-                //['fontname', ['fontname']],
-                //['color', ['color']],
                 ['para', ['paragraph', 'ul', 'ol']],
                 ['table', ['table']],
-                //['insert', ['link', 'picture', 'video']],
-                ['insert', ['link']],
+                ['insert', ['link', 'equation']],
 				['history', ['undo']],
-              //['view', ['fullscreen', 'codeview']],
             ],
+            buttons: {
+                equation: EquationButton // 👈 register button
+            },
             popover: {
                 table: [
                     ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
@@ -7156,7 +7167,17 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     if(label_type == 'example_text'){
                         //var label_type_heading = '<span class="question_example_heading">Example: </span>';
                     }
-					var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + rureraform_form_elements[i]["content"] + "</span></div>";
+
+
+                    const rawContent = rureraform_form_elements[i]["content"];
+                    var svgContent = rawContent;
+                    var class_id = 'rurera-svg-data' + i;
+                    getSVGFromEquationHTML(rawContent).then(function(htmlWithSVG) {
+                        svgContent = htmlWithSVG;
+                        $("."+class_id).html(svgContent);
+                    });
+
+                    var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></div>";
 					if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
 						var label_data = "<" + label_type + ">" + rureraform_form_elements[i]["content"] + "</" + label_type + ">";
 					}
@@ -10553,7 +10574,6 @@ $(document).on('click', '.generate-question-code', function () {
     var editorObj2 = thisParentObj.find(".rureraform-admin-popup-content");
 	var editorForm = thisParentObj.find('.rureraform-admin-popup-content-form');
 	//rureraform-properties-options-container
-	console.log(editorForm);
     var question_fields_obj = [];
     question_fields_obj[0] = {};
     editorObj.find('.editor-field').each(function (index) {
