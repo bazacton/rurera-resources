@@ -122,7 +122,7 @@
                         </div>
                         @enderror
                         <button type="submit"
-                                class="btn btn-primary btn-block mt-20">{{ trans('auth.signup') }}</button>
+                                class="btn btn-primary btn-block mt-20 font-16">{{ trans('auth.signup') }}</button>
                     </form>
 
                     <div class="text-center mt-20">
