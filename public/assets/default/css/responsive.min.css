@@ -4141,6 +4141,9 @@
         width: 31.555%;
     }
     .lms-choose-membership .subscription-content {padding-top: 35px;}
+    .post-show.pr-50 {
+        padding-right: 0 !important;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
