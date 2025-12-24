@@ -202,7 +202,7 @@ Assignments Table Style Start
 .member-card-header .dropdown .btn,
 .member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
 .dashboard-students-holder .db-members {
-    padding: 15px 45px 15px;
+    padding: 0 25px 30px;
 }
 .dashboard-students-holder .db-members:has(.rurera-tabs-frontend) {
     padding: 0;
@@ -237,7 +237,7 @@ Assignments Table Style Start
     display: table-row;
 }
 .db-form-tabs .students-table tbody td {
-    padding: 20px 15px;
+    padding: 20px 15px 5px;
 }
 .dashboard-students-holder .db-form-tabs th h6 {
     color: #9e9ec5;
