@@ -71,7 +71,14 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+                <div class="form-group">
+                    <span class="fomr-label">Date of birth</span>
+                    <div class="input-field">
+                        <input type="text" name="date-of-birth" class="date-of-birth-field rurera-req-field rurera-min-char rurera-no-space" data-min="6" placeholder="date of birth">
+                    </div>
+                </div>
+            </div>
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="form-group">
