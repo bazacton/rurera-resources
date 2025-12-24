@@ -1412,6 +1412,9 @@ label#svga-elements-faceshape-label {
 		padding:0;
 		margin-bottom: 10px;
 	}
+	.svga-vert-order-controls {
+		display: none;
+	}
 }
 @media (max-width: 576px) {
 	.mobile-avar-view .svga-col-right {
