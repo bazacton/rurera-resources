@@ -854,3 +854,42 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .input-error {
     border: 1px solid #d9534f !important;
 }
+/* Rurera-Confirm-Delete Modal Style Start */
+.rurera-confirm-delete .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 1;
+}
+.conform-lable {
+    display: block;
+    color: #999;
+}
+.rurera-confirm-delete p {
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 10px;
+}
+.rurera-confirm-delete p strong {
+    display: block;
+    font-size: 18px;
+    margin: 0 0 5px;
+    line-height: normal;
+}
+.rurera-confirm-delete .inactivity-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px 12px;
+}
+.rurera-confirm-delete .inactivity-controls a {
+    background-color: #eae8e8;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.rurera-confirm-delete .inactivity-controls .rurera-delete-btn {
+    background-color: #ff3636;
+    color: #fff;
+}
+/* Rurera-Confirm-Delete Modal Style End */
