@@ -860,6 +860,8 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     right: 10px;
     top: 10px;
     opacity: 1;
+    z-index: 1;
+    color: var(--primary);
 }
 .conform-lable {
     display: block;
