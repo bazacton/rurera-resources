@@ -1395,7 +1395,7 @@ label#svga-elements-faceshape-label {
 	.mobile-avar-view .svga-row.rurera-hide-sm {
 		display: none;
 	}
-	#svga-colors-faceshape {
+	.svga-col-right .svga-colors-set {
 		padding: 0 20px 0 15px;
 		overflow: hidden;
 		overflow-x: auto;
@@ -1404,7 +1404,7 @@ label#svga-elements-faceshape-label {
 		padding: 5px 15px 0;
 		margin-bottom: 0;
 	}
-	.mobile-avar-view #svga-colors-faceshape {
+	.mobile-avar-view .svga-col-right .svga-colors-set {
 		padding: 0;
 		overflow: unset;
 	}
