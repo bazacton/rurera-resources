@@ -1641,6 +1641,9 @@ Lms Responsive Style Start
     .parent-panel:has(.set-work-container) .daterangepicker.opensright:before {
         display: none;
     }
+    .svga-col-right #svga-elements-eyesfront .svga-elements svg {
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
