@@ -948,7 +948,7 @@
                     <span class="font-16 mb-10 conform-lable">Are you sure you want to delete this set work? This action is permanent and cannot be undone.</span>
                     <p class="mb-25 font-16">
                         <strong>Times-table-test-2025</strong>
-                        Assigned to: <span>M.Rayan Malik</span>
+                        Assigned to: <span>M. Rayan Malik</span>
                     </p>
                     <div class="inactivity-controls">
                         <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Cancel</a>
