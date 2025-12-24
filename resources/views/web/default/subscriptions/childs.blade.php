@@ -45,29 +45,9 @@
           </div>
             <div class="col-6 col-sm-12 col-md-6 col-lg-6">
                 <div class="form-group">
-                    <span class="fomr-label">Year Group</span>
-                    <div class="select-holder">
-                    <select class="form-control @error('category_id') is-invalid @enderror rurera-req-field"
-                            name="year_id">
-                        <option {{ !empty($trend) ?
-                        '' : 'selected' }} disabled>Choose Year Group</option>
-
-                        @foreach($categories as $category)
-                        @if(!empty($category->subCategories) and count($category->subCategories))
-                            @foreach($category->subCategories as $subCategory)
-                            <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
-                                category_id == $subCategory->id) selected="selected" @endif>{{
-                                $subCategory->title }}
-                            </option>
-                            @endforeach
-                        @else
-                        <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
-                                and $class->category_id == $category->id) selected="selected" @endif>{{
-                            $category->title }}
-                        </option>
-                        @endif
-                        @endforeach
-                    </select>
+                    <span class="fomr-label">Date of birth</span>
+                    <div class="input-field">
+                        <input type="text" name="date-of-birth" class="date-of-birth-field rurera-req-field rurera-min-char rurera-no-space" data-min="6" placeholder="Date of birth">
                     </div>
                 </div>
             </div>
@@ -102,9 +82,29 @@
             </div>
             <div class="col-6 col-sm-12 col-md-6 col-lg-6">
                 <div class="form-group">
-                    <span class="fomr-label">Date of birth</span>
-                    <div class="input-field">
-                        <input type="text" name="date-of-birth" class="date-of-birth-field rurera-req-field rurera-min-char rurera-no-space" data-min="6" placeholder="Date of birth">
+                    <span class="fomr-label">Year Group</span>
+                    <div class="select-holder">
+                    <select class="form-control @error('category_id') is-invalid @enderror rurera-req-field"
+                            name="year_id">
+                        <option {{ !empty($trend) ?
+                        '' : 'selected' }} disabled>Choose Year Group</option>
+
+                        @foreach($categories as $category)
+                        @if(!empty($category->subCategories) and count($category->subCategories))
+                            @foreach($category->subCategories as $subCategory)
+                            <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
+                                category_id == $subCategory->id) selected="selected" @endif>{{
+                                $subCategory->title }}
+                            </option>
+                            @endforeach
+                        @else
+                        <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
+                                and $class->category_id == $category->id) selected="selected" @endif>{{
+                            $category->title }}
+                        </option>
+                        @endif
+                        @endforeach
+                    </select>
                     </div>
                 </div>
             </div>
