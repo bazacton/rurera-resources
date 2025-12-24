@@ -34,6 +34,7 @@ $show_details = isset( $show_details )? $show_details : true;
 				<h3 class="font-24 font-weight-500 text-left">{{ $subscribe->title }}</h3>
 			</div>
 		</div>
+		<span class="plan-label d-block font-weight-500 pb-10">Suitable for:</span>
 		<p class="mb-15">{{ $subscribe->description }}</p>
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
             <span class="font-36 line-height-1 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
@@ -45,16 +46,12 @@ $show_details = isset( $show_details )? $show_details : true;
 
 		@if($show_details === true)
 
-			<span class="plan-label d-block font-weight-500 pt-20">
-												Suitable for:
-											</span>
+			
 			<ul class="mt-10 plan-feature">
 				<li class="mt-10">Grammar school entrance</li>
 				<li class="mt-10">Independent school entrance</li>
 			</ul>
-			<span class="plan-label d-block font-weight-500 pt-20">
-												Subjects:
-											</span>
+			<span class="plan-label d-block font-weight-500 pt-20">Subjects:</span>
 			<ul class="mt-10 plan-feature">
 				@php $is_available = ($subscribe->is_courses > 0)? '' : 'subscribe-no'; @endphp
 				<li class="mt-10 {{$is_available}}">English, Maths, Science , Computer</li>
