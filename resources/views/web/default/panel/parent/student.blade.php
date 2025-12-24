@@ -1504,7 +1504,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         refresh_preference_field();
     });
     refresh_preference_field();
-    resetRureraDatePickers();
 
     $('select.form-control').on('change', function () {
         if ($(this).val() !== "") {
