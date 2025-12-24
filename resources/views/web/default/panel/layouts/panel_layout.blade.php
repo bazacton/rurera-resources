@@ -940,9 +940,10 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="modal-box">
-                    <span class="icon-box d-block mb-15">
+                    <div class="icon-box d-block mb-15 d-flex align-items-center">
                         <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
-                    </span>
+                        <span class="ml-10 font-weight-bold font-18">Delete Set Work</span>
+                    </div>
                     <h3 class="font-24 font-weight-normal mb-10">Are you sure you want to remove?</h3>
                     <p class="mb-15 font-16">
                         You've been inactive for a while, and your session was paused. You can continue learning by using the following links
