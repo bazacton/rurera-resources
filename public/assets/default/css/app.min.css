@@ -12230,6 +12230,10 @@ body .flipbook-data {
     border: 1px solid var(--primary);
     padding: 7px 15px !important
 }
+.top-navbar .register-btn:hover {
+    background-color: transparent;
+    color: var(--primary);
+}
 .top-navbar .navbar-order .ml-md-50 {
     margin-left: 0 !important
 }
