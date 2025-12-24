@@ -668,7 +668,8 @@ a.last-activity span strong {color: #343434; font-weight: 400;}
 .child-register-form input:-internal-autofill-selected {background-color:  inherit !important; background-image: none !important;}
 .generatePassword, .username-auto-generate {color: var(--primary); position: absolute; right: 12px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
 .usernames-suggestions a {color: var(--primary); text-decoration: underline;}
-.usernames-suggestions {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; line-height: normal;}
+.usernames-suggestions {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; line-height: normal; margin: 0 0 15px;}
+.usernames-suggestions:empty {margin-bottom: 0;}
 .usernames-suggestions br {display: none;}
 .lms-choose-membership .emoji-icons .emoji-icon {padding: 0 5px;}
 .lms-choose-membership .pin-list {min-height: 28px; display: flex; align-items: center; color: #666; font-weight: 500;}
