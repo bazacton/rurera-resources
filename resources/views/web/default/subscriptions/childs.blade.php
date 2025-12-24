@@ -5,7 +5,7 @@
           {{ csrf_field() }}
       <div class="bg-white panel-border p-25 rounded-sm mt-30 mx-auto w-80">
       <div class="row">
-        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mb-10">
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mb-10 ttt">
           <h2 class="font-22">Student's details</h2>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
