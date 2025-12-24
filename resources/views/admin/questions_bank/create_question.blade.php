@@ -2062,29 +2062,53 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
         textarea.focus();
     });
     function getSVGFromEquationHTML(html) {
-        // Returns a Promise that resolves with HTML including SVG
-        return new Promise((resolve) => {
-            // Temporary hidden container
-            var container = document.createElement('div');
+        return new Promise(function (resolve) {
+
+            const container = document.createElement('div');
             container.style.position = 'absolute';
             container.style.left = '-9999px';
             container.innerHTML = html;
             document.body.appendChild(container);
 
-            // Replace equations with TeX wrappers
-            container.querySelectorAll('.math-equation').forEach(function(el) {
-                var latex = el.getAttribute('data-equation');
+            /* 1. Existing equations */
+            container.querySelectorAll('.math-equation').forEach(function (el) {
+                const latex = el.getAttribute('data-equation');
                 el.innerHTML = '\\(' + latex + '\\)';
             });
 
-            // Render MathJax
-            MathJax.typesetPromise([container]).then(function() {
-                var result = container.innerHTML;
+            /* 2. Convert ALL numbers (including plain text) */
+            function processNode(node) {
+                node.childNodes.forEach(function (child) {
+
+                    if (child.nodeType === 3) {
+                        if (node.closest && node.closest('.math-equation')) return;
+
+                        const text = child.nodeValue;
+                        const regex = /-?\d+(\.\d+)?/g;
+                        if (!regex.test(text)) return;
+
+                        child.nodeValue = text.replace(regex, function (num) {
+                            return '\\(' + num + '\\)';
+                        });
+                    }
+                    else if (child.nodeType === 1) {
+                        processNode(child);
+                    }
+                });
+            }
+
+            processNode(container);
+
+            /* 3. Render SVG */
+            MathJax.typesetPromise([container]).then(function () {
+                const result = container.innerHTML;
                 document.body.removeChild(container);
-                resolve(result); // return final HTML with SVG
+                resolve(result);
             });
         });
     }
+
+
 </script>
 
 @endpush
