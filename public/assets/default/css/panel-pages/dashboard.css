@@ -1048,6 +1048,9 @@ ul.course-info-list li .progress-box .circle_percent:before {
 
 /*Sidebar Student-list Style Start*/
 .parent-panel .sidebar-students-list .card {gap: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; max-height: 335px; overflow: hidden;}
+.parent-panel .sidebar-students-list .card:has(.item-control a) {
+    max-height: none;
+}
 .sidebar-students-list .card:has(.item-control) {height: auto; overflow: visible;}
 .sidebar-students-list .card .col-auto {padding: 0 0 0 15px;}
 .sidebar-students-list .card .col-auto:empty {display: none;}
