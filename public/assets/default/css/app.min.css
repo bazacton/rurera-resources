@@ -12279,7 +12279,9 @@ body .flipbook-data {
     background-color: #fff;
     box-shadow: 0 3px 15px 0 rgb(0 0 0 / .1) !important
 }
-
+.lms-testimonials .masonry-grid {
+    width: 100% !important;
+}
 .testimonial-card:before {
     position: absolute;
     bottom: 0;
