@@ -127,10 +127,7 @@
                                                         @endphp
 
 
-                                                        <tr>
-                                                        <div class="list-group-item {{$is_cancelled}}">
-                                                            <div class="emojis-response rurera-hide">{!! $emoji_response !!}</div>
-                                                            <span class="pin-response rurera-hide">{{isset($childObj->login_pin)? $childObj->login_pin : ''}}</span>
+                                                        <tr class="list-group-item {{$is_cancelled}}">
 
                                                             <td data-th="Student">
                                                                 <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="student-info">
@@ -239,8 +236,6 @@
                                                                     </ul>
                                                                 </div>
                                                             </td>
-                                                        </div>
-
                                                         </tr>
                                                     @endforeach
                                                 @endif
