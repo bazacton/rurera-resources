@@ -56,7 +56,7 @@
 					</div>
 					<div class="footer-logo-box">
 						<img src="/store/1/logo.png" width="185" height="38" alt="footer logo image">
-						<a href="/contact-us"><span>Schedule Consultation</span></a>
+						<a href="/contact-us" class="mt-20"><span>Schedule Consultation</span></a>
 					</div>
 				</div>
 			</div>
