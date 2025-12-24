@@ -390,14 +390,18 @@
 .svga-blocks {
 	display: inline-block;
 	text-align: center;
-	padding: 0 20px;
-	min-width: 22%;
+	padding: 0 15px;
+	min-width: 15%;
 	height: 50px;
 	white-space: normal;
 	font-size: 14px;
 	cursor: pointer;
 	line-height: 48px;
 	margin: 0!important;
+}
+.mobile-avar-view .svga-blocks {
+	padding: 0 20px;
+	min-width: 22%;
 }
 
 /*************** Footer menu ****************/
