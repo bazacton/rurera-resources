@@ -4402,7 +4402,7 @@ textarea.form-control.is-invalid {
 }
 
 .custom-control-input:focus:not(:checked)~.custom-control-label:before {
-    border-color: var(--primary);
+    border-color: #adb5bd;
 }
 
 .custom-control-input:not(:disabled):active~.custom-control-label:before {
