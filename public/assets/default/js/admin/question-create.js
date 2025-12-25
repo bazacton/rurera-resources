@@ -412,7 +412,9 @@ function rureraform_builder_save(_object, question_status) {
 				html: '<h3 class="font-20 text-center text-dark-blue">Updated Successfully!</h3>',
 				showConfirmButton: !1
 			});
-			window.location.href = '/admin/questions-generator/view-api-response/'+return_data.questions_bulk_list_id+'/'+return_data.topic_part_id+'/'+return_data.question_id;
+            if($('.single-question-builder').length < 1) {
+                window.location.href = '/admin/questions-generator/view-api-response/' + return_data.questions_bulk_list_id + '/' + return_data.topic_part_id + '/' + return_data.question_id;
+            }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             jQuery(_object).find("i").attr("class", "far fa-save");
@@ -1924,8 +1926,9 @@ function _rureraform_properties_prepare(_object) {
 						if(DataIsEmpty(properties[key][j]["label"])){
 							continue;
 						}
-                        options += "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' type='text' id='image-" + key + "-" + j + "' value='" + rureraform_escape_html(image_url) + "' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div class='rurera-hide'><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
+                        options += "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' type='text' id='image-" + key + "-" + j + "' value='" + rureraform_escape_html(image_url) + "' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div class='rurera-hide'><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'></div><div><span onclick='return rureraform_open_equation_modal(this);' title='Set the option as correct value'><i class='fas fa-square-root-alt'></i></span><span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
                     }
+
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content rureraform-properties-image-options-table'><div class='rureraform-properties-options-table-header'><div>Label</div><div class='rurera-image-depend'>Image</div><div class='rurera-hide'>Value</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + (properties.type == "radio" ? "off" : "on") + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null);'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
                     break;
 
@@ -2185,6 +2188,7 @@ function _rureraform_properties_prepare(_object) {
                 tooltip: 'Insert Equation',
                 click: function () {
                     // Open your HTML modal
+                    $(".equation-insert-btn").attr('id', 'insertEquation');
                     $('#equationModal').modal('show');
                 }
             }).render();
@@ -2215,6 +2219,22 @@ function _rureraform_properties_prepare(_object) {
                 ],
             },
             callbacks: {
+                onChange: function(contents, $editable) {
+                    if (isProcessing) return;
+
+                    isProcessing = true;
+
+                    // Delay to ensure content is fully updated
+                    setTimeout(() => {
+                        const popup = $($editable).closest('.rureraform-admin-popup.active:visible');
+
+                        if (popup.find('.generate-question-code').length) {
+                            popup.find('.generate-question-code').trigger('click');
+                        }
+
+                        isProcessing = false;
+                    }, 0); // 0ms is usually enough
+                },
                 onPaste: function (e) {
 					e.preventDefault();
 
@@ -2278,6 +2298,7 @@ function _rureraform_properties_prepare(_object) {
 
     if ($('.summernote-editor-notool').length) {
 
+
         $('.summernote-editor-notool').summernote({
             tabsize: 2,
             height: 400,
@@ -2293,6 +2314,22 @@ function _rureraform_properties_prepare(_object) {
                 ],
             },
             callbacks: {
+                onChange: function(contents, $editable) {
+                    if (isProcessing) return;
+
+                    isProcessing = true;
+
+                    // Delay to ensure content is fully updated
+                    setTimeout(() => {
+                        const popup = $($editable).closest('.rureraform-admin-popup.active:visible');
+
+                        if (popup.find('.generate-question-code').length) {
+                            popup.find('.generate-question-code').trigger('click');
+                        }
+
+                        isProcessing = false;
+                    }, 0); // 0ms is usually enough
+                },
                 onPaste: function (e) {
                     var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
                     e.preventDefault();
@@ -6118,7 +6155,20 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						}
 						var is_checked = rureraform_form_elements[i]["options"][j]["default"];
 						var is_checked_class = (is_checked == "on")? "active-option" : "";
-                        option = "<input class='editor-field rureraform-checkbox-" + properties["checkbox-size"] + "'  type='checkbox' data-field_id='" + random_id + "' name='field-" + random_id + "' id='field-" + random_id + "-" + j + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["options"][j]["value"]) + "'" + selected + " /><label for='field-" + random_id + "-" + j + "'>" + label_data + "</label>";
+
+
+                        const rawContent = label_data;
+                        var random_id = Math.floor((Math.random() * 99999) + 1);
+                        var class_id = 'rurera-svg-data' + i+'_'+random_id;
+
+                        console.log('checkbox_render');
+
+                        getSVGFromEquationHTML(rawContent, class_id, false).then(function(htmlWithSVG) {
+                            svgContent = htmlWithSVG;
+                            console.log(htmlWithSVG);
+                            //$("."+class_id).html(svgContent);
+                        });
+                        option = "<input class='editor-field rureraform-checkbox-" + properties["checkbox-size"] + "'  type='checkbox' data-field_id='" + random_id + "' name='field-" + random_id + "' id='field-" + random_id + "-" + j + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["options"][j]["value"]) + "'" + selected + " /><label class='"+class_id+"' for='field-" + random_id + "-" + j + "'>" + label_data + "</label>";
                         options += "<div class='form-field "+is_checked_class+" rureraform-cr-container-" + properties["checkbox-size"] + " rureraform-cr-container-" + properties["checkbox-position"] + "'>\n\
 					" + option + "</div>";
                     }
@@ -7171,10 +7221,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     const rawContent = rureraform_form_elements[i]["content"];
                     var svgContent = rawContent;
-                    var class_id = 'rurera-svg-data' + i;
-                    getSVGFromEquationHTML(rawContent).then(function(htmlWithSVG) {
+                    var random_id = Math.floor((Math.random() * 99999) + 1);
+                    var class_id = 'rurera-svg-data' + i+'_'+random_id;
+
+                    getSVGFromEquationHTML(rawContent, class_id).then(function(htmlWithSVG) {
                         svgContent = htmlWithSVG;
-                        $("."+class_id).html(svgContent);
+                        //$("."+class_id).html(svgContent);
                     });
 
                     var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></div>";
@@ -10962,4 +11014,214 @@ $(document).on('click', '.gallery-images img', function () {
 	var image_src = $(this).attr('src');
 	var element_id = $(this).closest('.rureraform-admin-popup').attr('data-element_id');
 	$(this).closest('.rureraform-admin-popup').find('input[name="rureraform-content"]').val(image_src);
+});
+
+
+var savedRange;
+function uniqueId() {
+    return 'eq-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+}
+$(document).on('click', '#insertEquation', function () {
+    var equation = $('#equationInput').val().trim();
+    if (!equation) return;
+
+    if (window.activeEquationId) {
+        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
+        $el.attr('data-equation', equation).html(equation);
+    } else {
+        var id = uniqueId();
+        var html =
+            '<span class="math-equation" contenteditable="false" ' +
+            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
+            equation +
+            '</span>';
+
+        // Restore focus and selection
+        $('.summernote-editor').summernote('focus');
+        if (savedRange) {
+            savedRange.select();
+        }
+
+        $('.summernote-editor').summernote('pasteHTML', html);
+    }
+
+    $('#equationModal').modal('hide');
+    $('#equationInput').val('');
+    window.activeEquationId = null;
+});
+
+
+// When user clicks the "add/edit equation" button
+$('#openEquationModal').on('click', function() {
+    // Save the current cursor/selection in Summernote
+    savedRange = $('.summernote-editor').summernote('createRange');
+
+    // Then show modal
+    $('#equationModal').modal('show');
+});
+
+
+$(document).on('click', '.math-equation', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var equation = $(this).attr('data-equation');
+    window.activeEquationId = $(this).attr('data-id');
+
+    // Save range **before opening modal** if needed
+    savedRange = $('.summernote-editor').summernote('createRange');
+
+    $('#equationInput').val(equation);
+    $('#equationModal').modal('show');
+});
+
+$('.summernote-editor').on('summernote.keyup summernote.mouseup', function () {
+    savedRange = $('.summernote-editor').summernote('createRange');
+});
+
+$('#equationModal').on('hidden.bs.modal', function () {
+    window.activeEquationId = null;
+    $('#equationInput').val('');
+});
+
+
+$('.summernote-editor').on('keydown', function (e) {
+    var sel = window.getSelection();
+    if (!sel.rangeCount) return;
+
+    var range = sel.getRangeAt(0);
+    var node = range.startContainer;
+
+    // If cursor is right after or before equation
+    if (
+        (e.key === 'Backspace' || e.key === 'Delete') &&
+        node.parentElement &&
+        node.parentElement.classList.contains('math-equation')
+    ) {
+        e.preventDefault();
+        $(node.parentElement).remove();
+    }
+});
+
+$(document).on('copy', function (e) {
+    var sel = window.getSelection();
+    if (!sel.rangeCount) return;
+
+    var node = sel.anchorNode;
+    var el = node.nodeType === 3 ? node.parentElement : node;
+
+    if (el && el.classList.contains('math-equation')) {
+        e.preventDefault();
+
+        var html = el.outerHTML;
+        var text = el.innerText;
+
+        e.originalEvent.clipboardData.setData('text/html', html);
+        e.originalEvent.clipboardData.setData('text/plain', text);
+    }
+});
+
+$(document).on('click', '.latex-btn', function () {
+    var latex = $(this).data('latex');
+    var textarea = document.getElementById('equationInput');
+
+    var start = textarea.selectionStart;
+    var end = textarea.selectionEnd;
+    var value = textarea.value;
+
+    textarea.value =
+        value.substring(0, start) +
+        latex +
+        value.substring(end);
+
+    // Place cursor inside {}
+    var cursorPos = start + latex.indexOf('{') + 1;
+    textarea.setSelectionRange(cursorPos, cursorPos);
+    textarea.focus();
+});
+function getSVGFromEquationHTML(html, class_id, is_field = false) {
+    return new Promise(function (resolve) {
+
+        const container = document.createElement('div');
+        container.style.position = 'absolute';
+        container.style.left = '-9999px';
+        container.innerHTML = html;
+        document.body.appendChild(container);
+
+        // Existing equations
+        container.querySelectorAll('.math-equation').forEach(function (el) {
+            const latex = el.getAttribute('data-equation');
+            el.innerHTML = '\\(' + latex + '\\)';
+        });
+
+        function processNode(node) {
+            node.childNodes.forEach(function (child) {
+
+                // TEXT NODE
+                if (child.nodeType === 3) {
+
+                    // Skip existing equations
+                    if (node.closest && node.closest('.math-equation')) return;
+
+                    let text = child.nodeValue;
+
+                    // Must contain math-like content
+                    //if (!/[0-9%?\+\-\*\/=<>]/.test(text)) return;
+                    if (!/\\[a-zA-Z]+|[\{\}]/.test(text)) return;
+
+
+                    // Escape TeX special characters
+                    let latex = text
+                        .replace(/%/g, '\\%')
+                        .replace(/\?/g, '\\text{?}');
+
+                    // Wrap ONCE
+                    const span = document.createElement('span');
+                    span.textContent = '\\(' + latex + '\\)';
+
+                    child.replaceWith(span);
+                }
+                // ELEMENT NODE
+                else if (child.nodeType === 1) {
+                    processNode(child);
+                }
+            });
+        }
+
+        processNode(container);
+
+        MathJax.typesetPromise([container]).then(function () {
+            const result = container.innerHTML;
+            document.body.removeChild(container);
+
+            // ✅ jQuery update here
+            if(is_field == true){
+                $('.' + class_id).val(result);
+            }else {
+                $('.' + class_id).html(result);
+            }
+
+            resolve(result);
+        });
+    });
+}
+
+function rureraform_open_equation_modal(thisObj){
+    $(".rureraform-properties-options-label").removeClass('active-edit');
+    $(thisObj).closest('.rureraform-properties-options-table').find('.rureraform-properties-options-label').addClass('active-edit');
+    $(".equation-insert-btn").attr('id', 'insertOptionEquation');
+    $(".equationInput").val($(".rureraform-properties-options-label.active-edit").val());
+    $('#equationModal').modal('show');
+}
+
+$(document).on('click', '#insertOptionEquation', function () {
+    var equation = $('#equationInput').val().trim();
+    if (!equation) return;
+
+    $(".rureraform-properties-options-label.active-edit").val(equation);
+
+
+    $('#equationModal').modal('hide');
+    $('#equationInput').val('');
+    window.activeEquationId = null;
 });

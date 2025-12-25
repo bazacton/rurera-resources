@@ -19,6 +19,7 @@ $rand_id = rand(999,99999);
 
 
 
+
 <style>
 
     .equationModal button{cursor:pointer;font-family:inherit}
@@ -99,6 +100,7 @@ $rand_id = rand(999,99999);
     /* Tiny help */
     .equationModal .hint{font-size:12px;color:var(--muted);margin:10px 0 0}
 </style>
+
 
 
 <style>
@@ -312,47 +314,23 @@ $rand_id = rand(999,99999);
 
 @php $save_type = isset( $questionObj->id )? 'update_question' : 'store_question'; @endphp
 @section('content')
-@if($QuestionsBulkListObj->quiz_id > 0)
-	<h2>{{$QuestionsBulkListObj->quizData->getTitleAttribute()}}</h2>
-@else
-<span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
-<div class="title-search-field d-flex align-items-center justify-content-between mt-10">
-<h1>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h1>  <div class="form-group mb-0">
-        <label>Select Topic Part</label>
-        <div class="part_item_selection_holder">
-            <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
-                @php $topic_counter = 1; @endphp
-                @if($topic_parts_items->count() > 0)
-                    @foreach($topic_parts_items as $topicPartItemObj)
-                        @php $selected = ($default_topic_part_id == 0 && $topic_counter == 1)? 'selected' : '';
-                        $selected = ($default_topic_part_id == $topicPartItemObj->id)? 'selected' : $selected;
-                        @endphp
-                        <option value="{{$topicPartItemObj->id}}" {{$selected}}>{{$topicPartItemObj->title}}</option>
-                        @php $topic_counter++; @endphp
-                    @endforeach
-                @endif
-            </select>
-        </div>
-    </div>
-		</div>
-@endif
+
 
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-difficulty-tabs">
-<div class="question-types-colors">
-	<span class="checkbox_questions_color">MCQs</span>
-	<span class="true_false_questions_color">True/False</span>
-	<span class="inner_dropdown_questions_color">Inner Dropdown</span>
-	<span class="inner_text_questions_color">Inner Text Fields</span>
-</div>
+
 <div class="edit-questions-difficulty-data">
 </div>
-<div class="edit-questions-tabs">
-</div>
+<div class="edit-questions-tabs single-question-builder">
+    {!! $builder_layout !!}
 </div>
 
-<!-- Edit-questions Tabs End -->
+
+</div>
+
+
+
 
 <div class="modal fade equationModal" id="equationModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
@@ -405,6 +383,10 @@ $rand_id = rand(999,99999);
         </div>
     </div>
 </div>
+
+<!-- Edit-questions Tabs End -->
+
+
 @endsection
 
 @push('scripts_bottom')
@@ -543,24 +525,7 @@ $rand_id = rand(999,99999);
 
 
 
-    $("body").on("change", ".part_item_selection", function (t) {
-	var part_item_id = $(this).val();
-	var bulk_list_id = $(this).attr('data-bulk_list_id');
-	var default_question_id = $(this).attr('data-default_question_id');
-	var loaderDiv = $('.edit-questions-difficulty-tabs');
-	rurera_loader(loaderDiv, 'button');
-	$.ajax({
-		type: "POST",
-		url: '/admin/questions-generator/generate_question_builder_difficulty_layout',
-		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
-		success: function (return_data) {
-			rurera_remove_loader(loaderDiv, 'button');
-			$(".edit-questions-difficulty-data").html(return_data);
-			 $(".difficulty-level-btn.active").click();
-			//$(".question-builder-layout.active").click();
-		}
-	});
-});
+
 $(".part_item_selection").change();
 function decodeHtml(html) {
     var txt = document.createElement("textarea");
@@ -568,60 +533,8 @@ function decodeHtml(html) {
     return txt.value;
 }
 
- $("body").on("click", ".difficulty-level-btn", function (t) {
-	 var thisObj = $(this);
-	 var difficulty_level = $(this).attr('data-difficulty_level');
-	 var bulk_list_id = $(this).attr('data-bulk_list_id');
-	 var part_item_id = $(this).attr('data-part_item_id');
-	 var default_question_id = $('.part_item_selection').attr('data-default_question_id');
-	 var loaderDiv = $('.tab-content');
-		rurera_loader(loaderDiv, 'button');
-		$.ajax({
-			type: "GET",
-			headers: {
-				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-			},
-			url: '/admin/questions-generator/get_questions_list_layout',
-			data: {'difficulty_level': difficulty_level, 'default_question_id': default_question_id, 'bulk_list_id': bulk_list_id, 'part_item_id': part_item_id},
-			success: function (return_data) {
-				$(".edit-questions-tabs").html(return_data);
-				$(".question-builder-layout.active").click();
-			}
-		});
- });
 
- $("body").on("click", ".question-builder-layout", function (t) {
-	 var thisObj = $(this);
-	 var question_id = $(this).attr('data-question_id');
-	 var question_index = $(this).attr('data-question_index');
-	 var is_deleted = $(this).attr('data-is_deleted');
-	 var similiarity_responses1 = $('.questions-nav-bar').attr('data-similiarity_responses');
-	 var similiarity_responses = $('.questions-nav-bar').attr('data-similiarity_responses');
-	 $('.question-builder-area').html('');
-	 var loaderDiv = $('.tab-content');
-	 if(is_deleted == 'yes'){
-		 var return_data = '<div class="col-12 col-md-12 api-question-status"><div class="alert alert-danger" role="alert"><strong>Question Deleted</strong><p>Question was initially imported but has since been removed from the question bank.</p></div></div>';
-		 $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-	 }else{
-		 rurera_loader(loaderDiv, 'button');
-		 $.ajax({
-			type: "POST",
-			headers: {
-				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-			},
-			url: '/admin/questions-generator/generate_question_builder_layout',
-			data: {'question_id': question_id, 'similiarity_responses': similiarity_responses, 'question_index': question_index},
-			success: function (return_data) {
-				rurera_remove_loader(loaderDiv, 'button');
-				$('.question-builder-area').html('');
-				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-			}
-		});
-	 }
- });
 
- $(".difficulty-level-btn.active").click();
- //$(".question-builder-layout.active").click();
 
 $(document).on('click', '.move-up-keyword', function () {
     var $block = $(this).closest('.keyword-item');

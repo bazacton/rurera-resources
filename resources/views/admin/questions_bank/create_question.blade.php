@@ -21,6 +21,93 @@
 <script src="/assets/default/js/admin/question-create.js?ver={{$rand_id}}"></script>
 <link rel="stylesheet" href="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.css">
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
+
+
+
+
+<style>
+
+    .equationModal button{cursor:pointer;font-family:inherit}
+    .equationModal .open-btn{
+        background:var(--blue);color:#fff;border:none;border-radius:8px;
+        padding:12px 20px;font-size:16px
+    }
+
+    /* Modal */
+    .equationModal .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none}
+    .equationModal.modal{
+        position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+        width:min(1250px,calc(100vw - 24px));
+        background:var(--panel);border-radius:10px;
+        box-shadow:0 12px 40px rgba(0,0,0,.28);
+        display:none;overflow:hidden;
+    }
+    .equationModal .header{
+        padding:14px 18px;border-bottom:1px solid var(--line);
+        display:flex;justify-content:space-between;align-items:center
+    }
+    .equationModal .header h3{margin:0;font-weight:700}
+    .equationModal .icon-btn{border:none;background:transparent;font-size:20px;line-height:1;padding:6px 10px;border-radius:8px}
+    .equationModal .icon-btn:hover{background:#f3f4f6}
+
+    /* Toolbar */
+    .equationModal .toolbar{
+        display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;
+        padding:12px 18px;border-bottom:1px solid var(--line);position:relative
+    }
+    .equationModal .tool{
+        padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;
+        background:var(--btn);font-size:13px;color:#111827
+    }
+    .equationModal .tool:hover{background:#f3f4f6}
+    .equationModal .tool.active{background:#eef2ff;border-color:#a5b4fc;color:#1d4ed8}
+
+    /* Dropdown */
+    .equationModal .dropdown{
+        position:absolute;top:56px;left:18px;
+        background:#fff;border:1px solid #ddd;border-radius:12px;
+        box-shadow:0 16px 50px rgba(0,0,0,.18);
+        padding:14px;display:none;min-width:560px;z-index:20
+    }
+    .equationModal .dropdown.show{display:block}
+    .equationModal .dd-title{font-weight:800;margin:0 0 10px 0}
+    .equationModal .dd-section{margin:10px 0 14px}
+    .equationModal .dd-section h4{
+        margin:0 0 8px 0;font-size:13px;color:#374151;
+        background:#f3f4f6;padding:8px 10px;border-radius:10px
+    }
+    .equationModal .dd-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+    .equationModal .sym{
+        border:1px solid #e5e7eb;border-radius:12px;padding:10px 8px;
+        background:#fff;display:flex;flex-direction:column;align-items:center;gap:6px;
+        user-select:none
+    }
+    .equationModal .sym:hover{background:#f9fafb;border-color:#d1d5db}
+    .equationModal .sym .glyph{font-size:22px;line-height:1}
+    .equationModal .sym .code{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+
+    /* Editor Layout */
+    .equationModal .body{padding:16px 18px}
+    .equationModal .editor-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .equationModal textarea{width:100%;height:240px;font-size:15px;padding:10px;border:1px solid #d1d5db;border-radius:10px}
+    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;min-height:240px;overflow:auto}
+
+    /* Footer */
+    .equationModal .footer{
+        padding:12px 18px;border-top:1px solid var(--line);
+        display:flex;justify-content:flex-end;gap:10px;background:#fafafa
+    }
+    .equationModal .btn{border:1px solid #d1d5db;border-radius:10px;padding:10px 14px;background:#fff}
+    .equationModal .btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+    .equationModal .btn:hover{background:#f3f4f6}
+    .equationModal .btn-primary:hover{background:#1d4ed8}
+
+    /* Tiny help */
+    .equationModal .hint{font-size:12px;color:var(--muted);margin:10px 0 0}
+</style>
+
+
+
 <style>
     .latex-toolbar {
         display: flex;
@@ -1558,8 +1645,8 @@
 </div>
 
 
-<div class="modal fade" id="equationModal" tabindex="-1">
-    <div class="modal-dialog modal-md">
+<div class="modal fade equationModal" id="equationModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
 
@@ -1570,43 +1657,45 @@
             </div>
 
             <div class="modal-body">
-                <label>Equation (LaTeX / MathML / SVG)</label>
 
-                <div class="latex-toolbar mt-2">
 
-                    <button type="button" class="latex-btn" data-latex="^{}">
-                        x<sup>2</sup>
-                    </button>
 
-                    <button type="button" class="latex-btn" data-latex="\sqrt{}">
-                        √
-                    </button>
+                <div class="toolbar" id="toolbar">
+                    <button class="tool" data-dd="frac">Frac & Roots</button>
+                    <button class="tool" data-dd="scripts">Exp & Script</button>
+                    <button class="tool" data-dd="calculus">Calculus</button>
+                    <button class="tool" data-dd="bigops">Sum/Product/Limits</button>
+                    <button class="tool" data-dd="sets">Sets</button>
+                    <button class="tool" data-dd="relations">Relations</button>
+                    <button class="tool" data-dd="arrows">Arrows</button>
+                    <button class="tool" data-dd="greeks">Greeks</button>
+                    <button class="tool" data-dd="brackets">Brackets</button>
+                    <button class="tool" data-dd="matrix">Matrix & Cases</button>
+                    <button class="tool" data-dd="funcs">Trig & Log</button>
+                    <button class="tool" data-dd="space">Space</button>
 
-                    <button type="button" class="latex-btn" data-latex="\sum_{}^{}">
-                        ∑
-                    </button>
-
-                    <button type="button" class="latex-btn" data-latex="\int_{}^{}">
-                        ∫
-                    </button>
-
-                    <button type="button" class="latex-btn" data-latex="\pi">
-                        π
-                    </button>
-
+                    <div class="dropdown" id="dropdown"></div>
                 </div>
 
-                <textarea id="equationInput" class="form-control" rows="4"></textarea>
+                <div class="body">
+                    <div class="editor-wrap">
+                        <div>
+                            <textarea id="equationInput" oninput="renderMath()" class="form-control equationInput" rows="4"></textarea>
+                            <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div>
+                        </div>
+                        <div class="preview" id="preview"></div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <button class="btn" onclick="closeModal()">Close</button>
+                    <button type="button" class="btn btn-primary equation-insert-btn" id="insertEquation">Insert</button>
+                </div>
+
+
+
             </div>
 
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    Cancel
-                </button>
-                <button type="button" class="btn btn-primary" id="insertEquation">
-                    Insert
-                </button>
-            </div>
 
         </div>
     </div>
@@ -1938,184 +2027,373 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
         }
     }
 });
+    $(document).on(
+        'input',
+        '.rureraform-admin-popup.active input, .rureraform-admin-popup.active textarea',
+        function () {
 
-    var savedRange;
-    function uniqueId() {
-        return 'eq-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
-    }
-    $('#insertEquation').on('click', function () {
-        var equation = $('#equationInput').val().trim();
-        if (!equation) return;
+            if (isProcessing) return;
 
-        if (window.activeEquationId) {
-            var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
-            $el.attr('data-equation', equation).html(equation);
-        } else {
-            var id = uniqueId();
-            var html =
-                '<span class="math-equation" contenteditable="false" ' +
-                'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
-                equation +
-                '</span>';
+            isProcessing = true;
 
-            // Restore focus and selection
-            $('.summernote-editor').summernote('focus');
-            if (savedRange) {
-                savedRange.select();
+            const popup = $('.rureraform-admin-popup.active:visible');
+
+            if (popup.find('.generate-question-code').length) {
+                popup.find('.generate-question-code').trigger('click');
             }
 
-            $('.summernote-editor').summernote('pasteHTML', html);
+            setTimeout(() => {
+                isProcessing = false;
+            }, 100);
         }
+    );
 
-        $('#equationModal').modal('hide');
-        $('#equationInput').val('');
-        window.activeEquationId = null;
-    });
+    $(document).on(
+        'change',
+        '.rureraform-admin-popup select',
+        function () {
 
+            if (isProcessing) return;
 
-    // When user clicks the "add/edit equation" button
-    $('#openEquationModal').on('click', function() {
-        // Save the current cursor/selection in Summernote
-        savedRange = $('.summernote-editor').summernote('createRange');
+            isProcessing = true;
 
-        // Then show modal
-        $('#equationModal').modal('show');
-    });
+            const popup = $('.rureraform-admin-popup.active:visible');
 
-
-    $(document).on('click', '.math-equation', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        var equation = $(this).attr('data-equation');
-        window.activeEquationId = $(this).attr('data-id');
-
-        // Save range **before opening modal** if needed
-        savedRange = $('.summernote-editor').summernote('createRange');
-
-        $('#equationInput').val(equation);
-        $('#equationModal').modal('show');
-    });
-
-    $('.summernote-editor').on('summernote.keyup summernote.mouseup', function () {
-        savedRange = $('.summernote-editor').summernote('createRange');
-    });
-
-    $('#equationModal').on('hidden.bs.modal', function () {
-        window.activeEquationId = null;
-        $('#equationInput').val('');
-    });
-
-
-    $('.summernote-editor').on('keydown', function (e) {
-        var sel = window.getSelection();
-        if (!sel.rangeCount) return;
-
-        var range = sel.getRangeAt(0);
-        var node = range.startContainer;
-
-        // If cursor is right after or before equation
-        if (
-            (e.key === 'Backspace' || e.key === 'Delete') &&
-            node.parentElement &&
-            node.parentElement.classList.contains('math-equation')
-        ) {
-            e.preventDefault();
-            $(node.parentElement).remove();
-        }
-    });
-
-    $(document).on('copy', function (e) {
-        var sel = window.getSelection();
-        if (!sel.rangeCount) return;
-
-        var node = sel.anchorNode;
-        var el = node.nodeType === 3 ? node.parentElement : node;
-
-        if (el && el.classList.contains('math-equation')) {
-            e.preventDefault();
-
-            var html = el.outerHTML;
-            var text = el.innerText;
-
-            e.originalEvent.clipboardData.setData('text/html', html);
-            e.originalEvent.clipboardData.setData('text/plain', text);
-        }
-    });
-
-    $(document).on('click', '.latex-btn', function () {
-        var latex = $(this).data('latex');
-        var textarea = document.getElementById('equationInput');
-
-        var start = textarea.selectionStart;
-        var end = textarea.selectionEnd;
-        var value = textarea.value;
-
-        textarea.value =
-            value.substring(0, start) +
-            latex +
-            value.substring(end);
-
-        // Place cursor inside {}
-        var cursorPos = start + latex.indexOf('{') + 1;
-        textarea.setSelectionRange(cursorPos, cursorPos);
-        textarea.focus();
-    });
-    function getSVGFromEquationHTML(html) {
-        return new Promise(function (resolve) {
-
-            const container = document.createElement('div');
-            container.style.position = 'absolute';
-            container.style.left = '-9999px';
-            container.innerHTML = html;
-            document.body.appendChild(container);
-
-            /* 1. Existing equations */
-            container.querySelectorAll('.math-equation').forEach(function (el) {
-                const latex = el.getAttribute('data-equation');
-                el.innerHTML = '\\(' + latex + '\\)';
-            });
-
-            /* 2. Convert numbers + math symbols */
-            function processNode(node) {
-                node.childNodes.forEach(function (child) {
-
-                    // TEXT NODE
-                    if (child.nodeType === 3) {
-
-                        // Skip if already inside equation
-                        if (node.closest && node.closest('.math-equation')) return;
-
-                        let text = child.nodeValue;
-
-                        // Numbers OR math symbols
-                        const regex = /(-?\d+(\.\d+)?|[%\?\+\-\*\/=<>])/g;
-
-                        if (!regex.test(text)) return;
-
-                        child.nodeValue = text.replace(regex, function (match) {
-                            return '\\(' + match + '\\)';
-                        });
-                    }
-                    // ELEMENT NODE
-                    else if (child.nodeType === 1) {
-                        processNode(child);
-                    }
-                });
+            if (popup.find('.generate-question-code').length) {
+                popup.find('.generate-question-code').trigger('click');
             }
 
-            processNode(container);
+            setTimeout(() => {
+                isProcessing = false;
+            }, 100);
+        }
+    );
 
-            /* 3. Render SVG */
-            MathJax.typesetPromise([container]).then(function () {
-                const result = container.innerHTML;
-                document.body.removeChild(container);
-                resolve(result);
-            });
-        });
+
+
+
+</script>
+
+<script>
+    /* ---------- editor helpers ---------- */
+    function openModal(){
+        document.getElementById('modal').style.display='block';
+        document.getElementById('backdrop').style.display='block';
+        renderMath();
+    }
+    function closeModal(){
+        $(".equationModal").modal('hide');
+    }
+    function insert(val){
+        const t=document.getElementById('equationInput');
+        t.focus();
+        t.setRangeText(val,t.selectionStart,t.selectionEnd,'end');
+        renderMath();
+    }
+    function renderMath(){
+        const latex=document.getElementById('equationInput').value;
+        document.getElementById('preview').innerHTML='$$'+latex+'$$';
+        MathJax.typesetPromise();
+    }
+    async function copyLatex(){
+        const latex=document.getElementById('equationInput').value;
+        try{
+            await navigator.clipboard.writeText(latex);
+            alert('Copied LaTeX to clipboard.');
+        }catch(e){
+            alert('Copy failed (browser permissions).');
+        }
+    }
+    function clearEditor(){
+        document.getElementById('equationInput').value = '';
+        renderMath();
     }
 
+    /* ---------- dropdown menus: PRIMARY ONLY ---------- */
+    const MENUS = {
+        frac: {
+            title: "Fractions & Roots",
+            sections: [
+                {title:"Fractions", items:[
+                        {glyph:"\\(\\frac{a}{b}\\)", code:"\\frac{}{}"},
+                        {glyph:"\\(\\dfrac{a}{b}\\)", code:"\\dfrac{}{}"},
+                        {glyph:"\\(\\tfrac{a}{b}\\)", code:"\\tfrac{}{}"},
+                        {glyph:"\\(\\binom{n}{k}\\)", code:"\\binom{n}{k}"}
+                    ]},
+                {title:"Roots", items:[
+                        {glyph:"\\(\\sqrt{x}\\)", code:"\\sqrt{}"},
+                        {glyph:"\\(\\sqrt[n]{x}\\)", code:"\\sqrt[]{}"}
+                    ]}
+            ]
+        },
+        scripts: {
+            title: "Exponents & Scripts",
+            sections: [
+                {title:"Scripts", items:[
+                        {glyph:"\\(x^{n}\\)", code:"^{}"},
+                        {glyph:"\\(x_{n}\\)", code:"_{}"},
+                        {glyph:"\\(x^{n}_{k}\\)", code:"^{}_{}"},
+                        {glyph:"\\(e^{x}\\)", code:"e^{}"}
+                    ]},
+                {title:"Accents (common)", items:[
+                        {glyph:"\\(\\hat{x}\\)", code:"\\hat{}"},
+                        {glyph:"\\(\\bar{x}\\)", code:"\\bar{}"},
+                        {glyph:"\\(\\vec{x}\\)", code:"\\vec{}"},
+                        {glyph:"\\(\\tilde{x}\\)", code:"\\tilde{}"}
+                    ]}
+            ]
+        },
+        calculus: {
+            title: "Calculus",
+            sections: [
+                {title:"Integrals", items:[
+                        {glyph:"\\(\\int\\)", code:"\\int"},
+                        {glyph:"\\(\\int_a^b\\)", code:"\\int_a^b"},
+                        {glyph:"\\(\\iint\\)", code:"\\iint"},
+                        {glyph:"\\(\\iiint\\)", code:"\\iiint"},
+                        {glyph:"\\(\\oint\\)", code:"\\oint"},
+                        {glyph:"\\(\\int f(x)\\,dx\\)", code:"\\int f(x)\\,dx"},
+                        {glyph:"\\(\\,dx\\)", code:"\\,dx"},
+                        {glyph:"\\(\\,dy\\)", code:"\\,dy"}
+                    ]},
+                {title:"Derivatives", items:[
+                        {glyph:"\\(\\frac{d}{dx}\\)", code:"\\frac{d}{dx}"},
+                        {glyph:"\\(\\frac{d^2}{dx^2}\\)", code:"\\frac{d^2}{dx^2}"},
+                        {glyph:"\\(\\partial\\)", code:"\\partial"},
+                        {glyph:"\\(\\frac{\\partial}{\\partial x}\\)", code:"\\frac{\\partial}{\\partial x}"},
+                        {glyph:"\\(\\nabla\\)", code:"\\nabla"}
+                    ]}
+            ]
+        },
+        bigops: {
+            title: "Sum / Product / Limits",
+            sections: [
+                {title:"Big operators", items:[
+                        {glyph:"\\(\\sum_{i=1}^n\\)", code:"\\sum_{i=1}^n"},
+                        {glyph:"\\(\\prod_{i=1}^n\\)", code:"\\prod_{i=1}^n"}
+                    ]},
+                {title:"Limits", items:[
+                        {glyph:"\\(\\lim_{x\\to 0}\\)", code:"\\lim_{x\\to 0}"},
+                        {glyph:"\\(\\to\\)", code:"\\to"},
+                        {glyph:"\\(\\infty\\)", code:"\\infty"}
+                    ]}
+            ]
+        },
+        sets: {
+            title: "Sets",
+            sections: [
+                {title:"Operations", items:[
+                        {glyph:"\\(\\in\\)", code:"\\in"},
+                        {glyph:"\\(\\notin\\)", code:"\\notin"},
+                        {glyph:"\\(\\cup\\)", code:"\\cup"},
+                        {glyph:"\\(\\cap\\)", code:"\\cap"},
+                        {glyph:"\\(\\setminus\\)", code:"\\setminus"},
+                        {glyph:"\\(\\subset\\)", code:"\\subset"},
+                        {glyph:"\\(\\subseteq\\)", code:"\\subseteq"},
+                        {glyph:"\\(\\emptyset\\)", code:"\\emptyset"},
+                        {glyph:"\\(\\varnothing\\)", code:"\\varnothing"},
+                        {glyph:"\\(A\\times B\\)", code:"A\\times B"}
+                    ]},
+                {title:"Number sets", items:[
+                        {glyph:"\\(\\mathbb{N}\\)", code:"\\mathbb{N}"},
+                        {glyph:"\\(\\mathbb{Z}\\)", code:"\\mathbb{Z}"},
+                        {glyph:"\\(\\mathbb{Q}\\)", code:"\\mathbb{Q}"},
+                        {glyph:"\\(\\mathbb{R}\\)", code:"\\mathbb{R}"},
+                        {glyph:"\\(\\mathbb{C}\\)", code:"\\mathbb{C}"}
+                    ]}
+            ]
+        },
+        relations: {
+            title: "Relations",
+            sections: [
+                {title:"Comparisons", items:[
+                        {glyph:"\\(=\\)", code:"="},
+                        {glyph:"\\(\\neq\\)", code:"\\neq"},
+                        {glyph:"\\(<\\)", code:"<"},
+                        {glyph:"\\(>\\)", code:">"},
+                        {glyph:"\\(\\le\\)", code:"\\le"},
+                        {glyph:"\\(\\ge\\)", code:"\\ge"}
+                    ]},
+                {title:"Equivalence / approx", items:[
+                        {glyph:"\\(\\approx\\)", code:"\\approx"},
+                        {glyph:"\\(\\equiv\\)", code:"\\equiv"},
+                        {glyph:"\\(\\propto\\)", code:"\\propto"}
+                    ]}
+            ]
+        },
+        arrows: {
+            title: "Arrows",
+            sections: [
+                {title:"Basic", items:[
+                        {glyph:"\\(\\to\\)", code:"\\to"},
+                        {glyph:"\\(\\rightarrow\\)", code:"\\rightarrow"},
+                        {glyph:"\\(\\leftarrow\\)", code:"\\leftarrow"},
+                        {glyph:"\\(\\Rightarrow\\)", code:"\\Rightarrow"},
+                        {glyph:"\\(\\leftrightarrow\\)", code:"\\leftrightarrow"}
+                    ]}
+            ]
+        },
+        greeks: {
+            title: "Greek letters (common)",
+            sections: [
+                {title:"Lowercase", items:[
+                        {glyph:"\\(\\alpha\\)", code:"\\alpha"},
+                        {glyph:"\\(\\beta\\)", code:"\\beta"},
+                        {glyph:"\\(\\gamma\\)", code:"\\gamma"},
+                        {glyph:"\\(\\delta\\)", code:"\\delta"},
+                        {glyph:"\\(\\epsilon\\)", code:"\\epsilon"},
+                        {glyph:"\\(\\varepsilon\\)", code:"\\varepsilon"},
+                        {glyph:"\\(\\theta\\)", code:"\\theta"},
+                        {glyph:"\\(\\lambda\\)", code:"\\lambda"},
+                        {glyph:"\\(\\mu\\)", code:"\\mu"},
+                        {glyph:"\\(\\pi\\)", code:"\\pi"},
+                        {glyph:"\\(\\sigma\\)", code:"\\sigma"},
+                        {glyph:"\\(\\phi\\)", code:"\\phi"},
+                        {glyph:"\\(\\varphi\\)", code:"\\varphi"},
+                        {glyph:"\\(\\omega\\)", code:"\\omega"}
+                    ]}
+            ]
+        },
+        brackets: {
+            title: "Brackets & Absolute Value",
+            sections: [
+                {title:"Basic", items:[
+                        {glyph:"\\((\\;)\\)", code:"()"},
+                        {glyph:"\\([\\;]\\)", code:"[]"},
+                        {glyph:"\\(\\{\\;\\}\\)", code:"\\{\\}"},
+                        {glyph:"\\(|\\;|\\)", code:"||"},
+                        {glyph:"\\(\\langle\\;\\rangle\\)", code:"\\langle\\rangle"}
+                    ]},
+                {title:"Auto-sized", items:[
+                        {glyph:"\\(\\left(\\;\\right)\\)", code:"\\left(\\right)"},
+                        {glyph:"\\(\\left[\\;\\right]\\)", code:"\\left[\\right]"},
+                        {glyph:"\\(\\left\\{\\;\\right\\}\\)", code:"\\left\\{\\right\\}"},
+                        {glyph:"\\(\\left|\\;\\right|\\)", code:"\\left|\\right|"},
+                        {glyph:"\\(\\left\\langle\\;\\right\\rangle\\)", code:"\\left\\langle\\right\\rangle"}
+                    ]}
+            ]
+        },
+        matrix: {
+            title: "Matrix & Cases",
+            sections: [
+                {title:"Matrices", items:[
+                        {glyph:"\\(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\)", code:"\\begin{pmatrix}\n \n\\end{pmatrix}"},
+                        {glyph:"\\(\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}\\)", code:"\\begin{bmatrix}\n \n\\end{bmatrix}"}
+                    ]},
+                {title:"Piecewise", items:[
+                        {glyph:"\\(\\begin{cases}a,&x>0\\\\b,&x\\le 0\\end{cases}\\)", code:"\\begin{cases}\n \n\\end{cases}"}
+                    ]}
+            ]
+        },
+        funcs: {
+            title: "Trig & Log",
+            sections: [
+                {title:"Functions", items:[
+                        {glyph:"\\(\\sin\\)", code:"\\sin"},
+                        {glyph:"\\(\\cos\\)", code:"\\cos"},
+                        {glyph:"\\(\\tan\\)", code:"\\tan"},
+                        {glyph:"\\(\\ln\\)", code:"\\ln"},
+                        {glyph:"\\(\\log\\)", code:"\\log"}
+                    ]}
+            ]
+        },
+        space: {
+            title: "Spacing (minimum)",
+            sections: [
+                {title:"Spaces", items:[
+                        {glyph:"\\(a\\,b\\)", code:"\\,"},
+                        {glyph:"\\(a\\quad b\\)", code:"\\quad"},
+                        {glyph:"\\(a\\!b\\)", code:"\\!"}
+                    ]}
+            ]
+        }
+    };
 
+    /* ---------- dropdown rendering ---------- */
+    const dropdown = document.getElementById('dropdown');
+    const toolbar = document.getElementById('toolbar');
+
+    function showDropdown(menuKey, anchorBtn){
+        const menu = MENUS[menuKey];
+        if(!menu) return;
+
+        // position dropdown under the clicked button (keep within toolbar width)
+        const btnRect = anchorBtn.getBoundingClientRect();
+        const barRect = toolbar.getBoundingClientRect();
+        let left = (btnRect.left - barRect.left);
+        const maxLeft = Math.max(0, toolbar.clientWidth - dropdown.offsetWidth - 18);
+        dropdown.style.left = Math.max(18, Math.min(left + 18, maxLeft)) + "px";
+
+        dropdown.innerHTML = renderMenu(menu);
+        dropdown.classList.add('show');
+        MathJax.typesetPromise([dropdown]);
+    }
+
+    function hideDropdown(){
+        dropdown.classList.remove('show');
+        document.querySelectorAll('.tool.active').forEach(b=>b.classList.remove('active'));
+    }
+
+    function renderMenu(menu){
+        const sections = menu.sections.map(sec => {
+            const items = sec.items.map(it => `
+      <button class="sym" type="button" onclick="insert('${escapeForJS(it.code)}');hideDropdown();">
+        <div class="glyph">${it.glyph}</div>
+        <div class="code">${escapeHTML(it.code)}</div>
+      </button>
+    `).join('');
+            return `
+      <div class="dd-section">
+        <h4>${escapeHTML(sec.title)}</h4>
+        <div class="dd-grid">${items}</div>
+      </div>
+    `;
+        }).join('');
+
+        return `
+    <div class="dd-title">${escapeHTML(menu.title)}</div>
+    ${sections}
+  `;
+    }
+
+    function escapeHTML(s){
+        return (s||'')
+            .replaceAll('&','&amp;')
+            .replaceAll('<','&lt;')
+            .replaceAll('>','&gt;')
+            .replaceAll('"','&quot;')
+            .replaceAll("'","&#39;");
+    }
+    function escapeForJS(s){
+        return (s||'')
+            .replaceAll('\\','\\\\')
+            .replaceAll("'","\\'")
+            .replaceAll('\n','\\n');
+    }
+
+    /* ---------- toolbar interactions ---------- */
+    toolbar.addEventListener('click', (e) => {
+        const btn = e.target.closest('.tool');
+        if(!btn) return;
+
+        const key = btn.getAttribute('data-dd');
+        const isActive = btn.classList.contains('active');
+
+        hideDropdown();
+        if(!isActive){
+            btn.classList.add('active');
+            showDropdown(key, btn);
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        const inToolbar = e.target.closest('#toolbar');
+        const inDropdown = e.target.closest('#dropdown');
+        if(!inToolbar && !inDropdown) hideDropdown();
+    });
+
+    /* initial preview */
+    renderMath();
 </script>
 
 @endpush

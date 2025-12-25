@@ -42,6 +42,7 @@ $rand_id = rand(999,99999);
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
 
+                                            @if($is_single == false)
 											@if($questionObj->question_status == 'Submit for review')
 												<div class="alert alert-success" role="alert">
 												<strong>Successful Question</strong>
@@ -53,6 +54,7 @@ $rand_id = rand(999,99999);
 												<p>This question did not meet the required quality standards and was rejected.</p>
 												</div>
 											@endif
+                                            @endif
 
 										</div>
 										@endif
@@ -442,7 +444,7 @@ $rand_id = rand(999,99999);
 											<div class="question-explain-block">
 
 												<h3 class="font-20 font-weight-bold">Explanation</h3>
-												<textarea class="note-codable summernote" id="question_solve"
+												<textarea class="note-codable eq-summernote" id="question_solve"
 															name="question_solve"
 															aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 
@@ -535,15 +537,19 @@ $rand_id = rand(999,99999);
 												@endif
 												</button>
 
+                                                @if($is_single == false)
 													<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
 													Delete Bulk
 												</button>
+                                                @endif
 												<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question-single btn btn-danger font-16">
 													Delete Single
 												</button>
+                                                @if($is_single == false)
 												<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-entire-batch btn btn-danger font-16">
 													Delete Batch
 												</button>
+                                                @endif
 											</div>
 										</div>
 										</div>
@@ -918,59 +924,7 @@ $rand_id = rand(999,99999);
 
 
 
-<div class="modal fade" id="equationModal" tabindex="-1">
-    <div class="modal-dialog modal-md">
-        <div class="modal-content">
 
-
-
-            <div class="modal-header">
-                <h5 class="modal-title">Insert Equation</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-                <label>Equation (LaTeX / MathML / SVG)</label>
-
-                <div class="latex-toolbar mt-2">
-
-                    <button type="button" class="latex-btn" data-latex="^{}">
-                        x<sup>2</sup>
-                    </button>
-
-                    <button type="button" class="latex-btn" data-latex="\sqrt{}">
-                        √
-                    </button>
-
-                    <button type="button" class="latex-btn" data-latex="\sum_{}^{}">
-                        ∑
-                    </button>
-
-                    <button type="button" class="latex-btn" data-latex="\int_{}^{}">
-                        ∫
-                    </button>
-
-                    <button type="button" class="latex-btn" data-latex="\pi">
-                        π
-                    </button>
-
-                </div>
-
-                <textarea id="equationInput" class="form-control" rows="4"></textarea>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    Cancel
-                </button>
-                <button type="button" class="btn btn-primary" id="insertEquation">
-                    Insert
-                </button>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
 <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
@@ -985,7 +939,7 @@ $(".summernote").summernote({
 				['font', ['bold', 'underline']],
 				['para', ['paragraph', 'ul', 'ol']],
 				['table', ['table']],
-				['insert', ['link', 'picture']],
+				//['insert', ['link', 'picture']],
 				['history', ['undo']],
 			],
 			callbacks: {
@@ -1097,181 +1051,4 @@ $(document).ready(function () {
 
 
 
-
-var savedRange;
-function uniqueId() {
-    return 'eq-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
-}
-$('#insertEquation').on('click', function () {
-    var equation = $('#equationInput').val().trim();
-    if (!equation) return;
-
-    if (window.activeEquationId) {
-        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
-        $el.attr('data-equation', equation).html(equation);
-    } else {
-        var id = uniqueId();
-        var html =
-            '<span class="math-equation" contenteditable="false" ' +
-            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
-            equation +
-            '</span>';
-
-        // Restore focus and selection
-        $('.summernote-editor').summernote('focus');
-        if (savedRange) {
-            savedRange.select();
-        }
-
-        $('.summernote-editor').summernote('pasteHTML', html);
-    }
-
-    $('#equationModal').modal('hide');
-    $('#equationInput').val('');
-    window.activeEquationId = null;
-});
-
-
-// When user clicks the "add/edit equation" button
-$('#openEquationModal').on('click', function() {
-    // Save the current cursor/selection in Summernote
-    savedRange = $('.summernote-editor').summernote('createRange');
-
-    // Then show modal
-    $('#equationModal').modal('show');
-});
-
-
-$(document).on('click', '.math-equation', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    var equation = $(this).attr('data-equation');
-    window.activeEquationId = $(this).attr('data-id');
-
-    // Save range **before opening modal** if needed
-    savedRange = $('.summernote-editor').summernote('createRange');
-
-    $('#equationInput').val(equation);
-    $('#equationModal').modal('show');
-});
-
-$('.summernote-editor').on('summernote.keyup summernote.mouseup', function () {
-    savedRange = $('.summernote-editor').summernote('createRange');
-});
-
-$('#equationModal').on('hidden.bs.modal', function () {
-    window.activeEquationId = null;
-    $('#equationInput').val('');
-});
-
-
-$('.summernote-editor').on('keydown', function (e) {
-    var sel = window.getSelection();
-    if (!sel.rangeCount) return;
-
-    var range = sel.getRangeAt(0);
-    var node = range.startContainer;
-
-    // If cursor is right after or before equation
-    if (
-        (e.key === 'Backspace' || e.key === 'Delete') &&
-        node.parentElement &&
-        node.parentElement.classList.contains('math-equation')
-    ) {
-        e.preventDefault();
-        $(node.parentElement).remove();
-    }
-});
-
-$(document).on('copy', function (e) {
-    var sel = window.getSelection();
-    if (!sel.rangeCount) return;
-
-    var node = sel.anchorNode;
-    var el = node.nodeType === 3 ? node.parentElement : node;
-
-    if (el && el.classList.contains('math-equation')) {
-        e.preventDefault();
-
-        var html = el.outerHTML;
-        var text = el.innerText;
-
-        e.originalEvent.clipboardData.setData('text/html', html);
-        e.originalEvent.clipboardData.setData('text/plain', text);
-    }
-});
-
-$(document).on('click', '.latex-btn', function () {
-    var latex = $(this).data('latex');
-    var textarea = document.getElementById('equationInput');
-
-    var start = textarea.selectionStart;
-    var end = textarea.selectionEnd;
-    var value = textarea.value;
-
-    textarea.value =
-        value.substring(0, start) +
-        latex +
-        value.substring(end);
-
-    // Place cursor inside {}
-    var cursorPos = start + latex.indexOf('{') + 1;
-    textarea.setSelectionRange(cursorPos, cursorPos);
-    textarea.focus();
-});
-function getSVGFromEquationHTML(html) {
-    return new Promise(function (resolve) {
-
-        const container = document.createElement('div');
-        container.style.position = 'absolute';
-        container.style.left = '-9999px';
-        container.innerHTML = html;
-        document.body.appendChild(container);
-
-        /* 1. Existing equations */
-        container.querySelectorAll('.math-equation').forEach(function (el) {
-            const latex = el.getAttribute('data-equation');
-            el.innerHTML = '\\(' + latex + '\\)';
-        });
-
-        /* 2. Convert numbers + math symbols */
-        function processNode(node) {
-            node.childNodes.forEach(function (child) {
-
-                // TEXT NODE
-                if (child.nodeType === 3) {
-
-                    // Skip if already inside equation
-                    if (node.closest && node.closest('.math-equation')) return;
-
-                    let text = child.nodeValue;
-
-                    // Numbers OR math symbols
-                    const regex = /(-?\d+(\.\d+)?|[%\?\+\-\*\/=<>])/g;
-
-                    if (!regex.test(text)) return;
-
-                    child.nodeValue = text.replace(regex, function (match) {
-                        return '\\(' + match + '\\)';
-                    });
-                }
-                // ELEMENT NODE
-                else if (child.nodeType === 1) {
-                    processNode(child);
-                }
-            });
-        }
-
-        processNode(container);
-
-        /* 3. Render SVG */
-        MathJax.typesetPromise([container]).then(function () {
-            const result = container.innerHTML;
-            document.body.removeChild(container);
-            resolve(result);
-        });
-    });
-}
-console.log('generated results 000000000000000');
 </script>
