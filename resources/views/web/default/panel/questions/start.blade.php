@@ -12,7 +12,7 @@ $rand_id = rand(99,9999);
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" media="print" onload="this.onload=null;this.media='all';">
 <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}" media="print" onload="this.onload=null;this.media='all';">
-
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 @section('content')
 
 
@@ -45,7 +45,7 @@ $rand_id = rand(99,9999);
 										<div class="left-content has-bg">
 											<span class="questions-total-holder d-block mb-10"><span class="question-dev-details">({{$question->id}}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span></span>
 											<span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">1</span></span>
-												
+
 											<div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
 												<div class="question-layout row d-flex align-items-start">
 												@php $question_layout = $QuestionsAttemptController->get_question_layout($question); @endphp
@@ -88,5 +88,97 @@ $rand_id = rand(99,9999);
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    function convertAllMathToSVG() {
+        MathJax.startup.promise.then(() => {
 
+            /* 1️⃣ math-equation spans */
+            document.querySelectorAll('.math-equation').forEach(el => {
+                if (el.dataset.converted) return;
+
+                const latex = el.getAttribute('data-equation') || el.textContent.trim();
+                if (!latex) return;
+
+                const wrapper = document.createElement('span');
+                wrapper.innerHTML = `\\(${latex}\\)`;
+
+                MathJax.typesetPromise([wrapper]).then(() => {
+                    const svg = wrapper.querySelector('svg');
+                    if (svg) {
+                        el.innerHTML = '';
+                        el.appendChild(svg.cloneNode(true));
+                        el.dataset.converted = '1';
+                    }
+                });
+            });
+
+            /* 2️⃣ auto-wrap label math */
+            document.querySelectorAll('.rureraform-cr-container-medium label')
+                .forEach(label => {
+                    if (label.dataset.converted) return;
+
+                    const text = label.textContent.trim();
+                    if (!/[a-zA-Z]\s*\^|\{|\}/.test(text)) return;
+
+                    label.innerHTML = `\\(${text}\\)`;
+                    label.dataset.converted = '1';
+                });
+
+            /* 3️⃣ numbers inside .question-layout-block (EXCLUDING labels) */
+            document.querySelectorAll('.question-layout-block').forEach(block => {
+                if (block.dataset.numberWrapped) return;
+
+                wrapNumbersInTextNodes(block);
+                block.dataset.numberWrapped = '1';
+            });
+
+            /* 4️⃣ typeset */
+            MathJax.typesetPromise();
+        });
+    }
+
+    /* ===========================
+       SAFE number wrapper
+    =========================== */
+    function wrapNumbersInTextNodes(root) {
+        const walker = document.createTreeWalker(
+            root,
+            NodeFilter.SHOW_TEXT,
+            {
+                acceptNode(node) {
+
+                    if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+
+                    // ❌ Skip labels completely
+                    if (node.parentNode.closest('label')) return NodeFilter.FILTER_REJECT;
+
+                    // ❌ Skip math-equation & SVG
+                    if (node.parentNode.closest('.math-equation')) return NodeFilter.FILTER_REJECT;
+                    if (node.parentNode.closest('svg')) return NodeFilter.FILTER_REJECT;
+
+                    // ❌ Skip already converted MathJax output
+                    if (node.parentNode.closest('[data-converted]')) return NodeFilter.FILTER_REJECT;
+
+                    return /\b\d+(\.\d+)?\b/.test(node.nodeValue)
+                        ? NodeFilter.FILTER_ACCEPT
+                        : NodeFilter.FILTER_REJECT;
+                }
+            }
+        );
+
+        const nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+
+        nodes.forEach(textNode => {
+            const span = document.createElement('span');
+            span.innerHTML = textNode.nodeValue.replace(
+                /\b\d+(\.\d+)?\b/g,
+                m => `\\(${m}\\)`
+            );
+            textNode.replaceWith(span);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', convertAllMathToSVG);
+</script>
 @endpush
