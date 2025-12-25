@@ -86,6 +86,8 @@ $rand_id = rand(99,9999);
 
                                                     </div>
                                                     <div class="question-right-side">
+                                                        <p>Question {{$counter}} / {{$questions->count()}}</p>
+                                                        <br>
                                                         <h3>Question Review</h3>
                                                         <form action="javascript:;" method="POST" class="row approve_question_form">
                                                             <input type="hidden" name="question_id" value="{{$questionObj->id}}">
