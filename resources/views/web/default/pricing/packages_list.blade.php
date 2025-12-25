@@ -34,10 +34,17 @@ $show_details = isset( $show_details )? $show_details : true;
 				<h3 class="font-20 font-weight-bold text-left">{{ $subscribe->title }}</h3>
 			</div>
 		</div>
-		
+
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
             <span class="font-36 line-height-1 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
-                    class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / month</span>
+                    class="yearly-price">
+
+                @if($subscribe->price > 0)
+                {{ addCurrencyToPrice($subscribe->price) }} / month
+                @else
+                    FREE
+                @endif
+            </span>
         </div>
         <button type="submit" data-user_id="{{isset($childObj->id)?$childObj->id : 0}}" data-type="package_selection" data-id="{{$subscribe->id}}"
                 class="{{$selection_class}} btn w-100 {{$subscribe_btn_class}}">{{$purchase_title}}
@@ -54,26 +61,41 @@ $show_details = isset( $show_details )? $show_details : true;
 			<span class="plan-label d-block font-weight-500 pt-20">Subjects:</span>
 			<ul class="mt-10 plan-feature">
 				@php $is_available = ($subscribe->is_courses > 0)? '' : 'subscribe-no'; @endphp
+                @if($subscribe->is_courses > 0)
 				<li class="mt-10 {{$is_available}}">English, Maths, Science , Computer</li>
 				<li class="mt-10 {{$is_available}}">Verbal reasoning, non-verbal reasoning</li>
+                @endif
+                @if($subscribe->is_timestables > 0)
 				@php $is_available = ($subscribe->is_timestables > 0)? '' : 'subscribe-no'; @endphp
 				<li class="mt-10 {{$is_available}}">Times Tables Practice</li>
+                @endif
+                @if($subscribe->is_vocabulary > 0)
 				@php $is_available = ($subscribe->is_vocabulary > 0)? '' : 'subscribe-no'; @endphp
 				<li class="mt-10 {{$is_available}}">Vocabulary</li>
+                @endif
+                @if($subscribe->is_bookshelf > 0)
 				@php $is_available = ($subscribe->is_bookshelf > 0)? '' : 'subscribe-no'; @endphp
 				<li class="mt-10 {{$is_available}}">Bookshelf</li>
+                @endif
 			</ul>
+
+            @if($subscribe->is_sats > 0 || $subscribe->is_elevenplus > 0)
 			<span class="plan-label d-block font-weight-500 pt-20">
 												Mock Tests Prep:
 											</span>
 			<ul class="mt-10 plan-feature">
+                @if($subscribe->is_sats > 0)
 				@php $is_available = ($subscribe->is_sats > 0)? '' : 'subscribe-no'; @endphp
 				<li class="mt-10 {{$is_available}}">SATs</li>
+                @endif
+                @if($subscribe->is_elevenplus > 0)
 				@php $is_available = ($subscribe->is_elevenplus > 0)? '' : 'subscribe-no'; @endphp
 				<li class="mt-10 {{$is_available}}">ISEB Common Pre-Tests</li>
 				<li class="mt-10 {{$is_available}}">GL 11+</li>
 				<li class="mt-10 {{$is_available}}">CAT4</li>
+                @endif
 			</ul>
+            @endif
 		@endif
     </div>
 </div>
@@ -111,18 +133,26 @@ $show_details = isset( $show_details )? $show_details : true;
            if( package_month == 12) {
                var yearly_price = package_price * 12;
                yearly_price = parseFloat(parseFloat(yearly_price).toFixed(2));
-               $(this).closest('.subscribe-price').find('.yearly-price').html(currency_sign + yearly_price + ' billed yearly');
+               if(yearly_price > 0) {
+                   $(this).closest('.subscribe-price').find('.yearly-price').html(currency_sign + yearly_price + ' billed yearly');
+               }
            }else{
                var without_discount = package_price_org*12;
                var discount_price = parseFloat(parseFloat(package_price))*25 / 100;
                var yearly_price = parseFloat(parseFloat(package_price_org))-discount_price;
                yearly_price = without_discount-(yearly_price*12);
                yearly_price = parseFloat(parseFloat(yearly_price).toFixed(2));
-               $(this).closest('.subscribe-price').find('.yearly-price').html('Save '+currency_sign+yearly_price+' with a yearly plan');
+               if(yearly_price > 0){
+                    $(this).closest('.subscribe-price').find('.yearly-price').html('Save '+currency_sign+yearly_price+' with a yearly plan');
+               }
            }
 
 
-           $(this).html(package_price_label+'/mo');
+           if(package_price > 0) {
+               $(this).html(package_price_label + '/mo');
+           }else{
+               $(this).html('FREE');
+           }
         });
     });
 	$(".subscribed_for-field").change();
