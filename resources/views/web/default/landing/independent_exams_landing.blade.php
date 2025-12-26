@@ -174,8 +174,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="section-title">
-                        <h2 class="font-40">What Our Independent Exam Preparation Offers</h2>
-                        <h3 class="text-gray">Achieve Success with Our Personalized Prep and Guidance</h3>
+                        <h2 class="font-40">Your Path to Independent School Success</h2>
+                        <h3 class="text-gray"><a href="https://rurera.com/testimonials">Achieve Success</a> with Our Personalised Prep and Guidance. We don't use a one-size-fits-all plan. Your preparation is made just for you.</h3>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
