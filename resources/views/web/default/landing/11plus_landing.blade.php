@@ -761,18 +761,13 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapsesix" aria-expanded="true"
-                                                aria-controls="collapsesix">What is the 11 Plus exam?</button>
+                                                aria-controls="collapsesix">What is the 11 Plus exam?test</button>
                                         </h3>
                                     </div>
                                     <div id="collapsesix" class="collapse" aria-labelledby="heading66"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>The 11+ exam is a selective entrance test used by grammar schools and
-                                                some independent schools in the UK to determine which students are
-                                                eligible for admission. Taken by students in their final year of primary
-                                                school (typically around age 10 or 11), the exam assesses a range of
-                                                skills, including English, mathematics, verbal reasoning, and non-verbal
-                                                reasoning.
+                                            <p>The 11 plus examination is a selective <a href="https://rurera.com/blog/unlocking-curiosity-the-power-of-online-courses-for-ks1-and-ks2-students">entrance exam</a> used by many grammar schools in the UK. Children take it in Year 6 (when they are 10 or 11 years old) to see if they can get a place at a selective secondary school.
                                             </p>
                                         </div>
                                     </div>

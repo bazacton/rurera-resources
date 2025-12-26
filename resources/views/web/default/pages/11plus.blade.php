@@ -835,21 +835,18 @@
                                         </div>
                                         <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
                                             data-parent="#accordion">
-                                            <div class="card-body"><p>The 11 Plus exam is a selective entrance examination taken by students around the age of 10 or 11 in uk.
-                                            It assesses students' aptitude in key subjects to determine their suitability for admission to selective
-                                            secondary schools or grammar schools</p></div>
+                                            <div class="card-body"><p>The 11 plus examination is a selective entrance <a href="https://rurera.com/blog/unlocking-curiosity-the-power-of-online-courses-for-ks1-and-ks2-students">entrance exam</a> used by many grammar schools in the UK. Children take it in Year 6 (when they are 10 or 11 years old) to see if they can get a place at a selective secondary school.</p></div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header" id="headingTwo">
                                             <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
                                                     data-target="#collapseTwo" aria-expanded="false"
-                                                    aria-controls="collapseTwo">What subjects are covered in the 11 Plus exam?</button></h3>
+                                                    aria-controls="collapseTwo">When is the 11 plus exam taken?</button></h3>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                             data-parent="#accordion">
-                                            <div class="card-body"><p>The 11 Plus exam typically includes English comprehension, grammar, vocabulary, creative writing,
-                                            mathematics, and reasoning skills.</p></div>
+                                            <div class="card-body"><p>The exams are usually held in September or October of your child’s final primary school year.</p></div>
                                         </div>
                                     </div>
                                     <div class="card">
