@@ -761,7 +761,7 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapsesix" aria-expanded="true"
-                                                aria-controls="collapsesix">What is the 11 Plus exam?test</button>
+                                                aria-controls="collapsesix">What is the 11 Plus exam?</button>
                                         </h3>
                                     </div>
                                     <div id="collapsesix" class="collapse" aria-labelledby="heading66"
@@ -776,18 +776,12 @@
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">How Will Rurera Help in Preparing for the 11
-                                                Plus Exam?</button></h3>
+                                                aria-controls="collapseTwo">When is the 11 plus exam taken?</button></h3>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>Rurera helps students prepare for the 11+ exam by offering tailored
-                                                practice tests, expert-led tutorials, and detailed feedback that covers
-                                                all key subjects—English, mathematics, verbal reasoning, and non-verbal
-                                                reasoning. The platform provides customizable study plans, tracks
-                                                progress, and offers exam strategies to build confidence and reduce
-                                                stress.
+                                            <p>The exams are usually held in September or October of your child’s final primary school year.
                                             </p>
                                         </div>
                                     </div>
@@ -797,21 +791,17 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapseseven"
-                                                aria-expanded="false" aria-controls="collapseseven"> How do I register
-                                                my child for the 11 Plus exam?</button>
+                                                aria-expanded="false" aria-controls="collapseseven">How is the 11 plus exam scored?</button>
                                         </h3>
                                     </div>
                                     <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>To register your child for the 11+ exam, you typically need to apply
-                                                directly to the schools you are interested in or through your local
-                                                education authority. The registration process usually involves filling
-                                                out an application form and, in some cases, paying a registration fee.
-                                                Deadlines for registration vary by region and school, so it's important
-                                                to begin the process early to ensure your child is registered before the
-                                                cutoff date. Some schools may also have online registration systems,
-                                                while others may require paper forms to be submitted.</p>
+                                            <p>After the test, your child will get a standardised score. This score is usually between 70 and
+                                                140. What is the highest 11 plus score? While it can vary, scores above 130 are often considered
+                                                very high. You can look up specific 11 plus results from previous years, like 11 plus results 2024,
+                                                to get an idea of your local schools.</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -820,17 +810,14 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapse8" aria-expanded="false"
-                                                aria-controls="collapse8">What subjects are covered in 11 Plus exam
-                                                preparation?</button>
+                                                aria-controls="collapse8">What subjects are covered?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse8" class="collapse" aria-labelledby="heading8"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>11+ exam preparation includes English, Maths, and Reasoning (if
-                                                applicable), the core subjects assessed in the exams. Our expert tutors
-                                                offer thorough guidance and practice to ensure your child is
-                                                well-prepared in all three areas.</p>
+                                            <p>Our preparation covers all four key areas: Maths, English, Verbal Reasoning, and Non-Verbal Reasoning.
+                                                We have specific 11 plus maths papers and English resources, plus lots of reasoning practice.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -839,17 +826,13 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapse9" aria-expanded="false"
-                                                aria-controls="collapse9"> Do I need to help my child use
-                                                Rurera?</button>
+                                                aria-controls="collapse9"> How will Rurera help in preparing for the 11 plus exam?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse9" class="collapse" aria-labelledby="heading9"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p> No, Rurera is designed to be intuitive and easy for children to use on
-                                                their own. The platform encourages independent learning, helping your
-                                                child build confidence as they navigate and complete their studies
-                                                without needing constant assistance.</p>
+                                            <p> Rurera is your complete preparation partner! We provide tailored practice tests, an adaptive curriculum, realistic mock exams, and detailed progress tracking. We help build confidence and skill in every subject. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -858,20 +841,15 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapse10" aria-expanded="false"
-                                                aria-controls="collapse10"> When are the results of the 11 Plus exam
-                                                released?</button>
+                                                aria-controls="collapse10"> How do I register my child for the 11 plus exam?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse10" class="collapse" aria-labelledby="heading10"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>The results of the 11+ exam are typically released in late October or
-                                                early November, depending on the exam board or school administering the
-                                                test. The timing of the results allows parents and students to know
-                                                whether they have been offered a place at their chosen school in time to
-                                                plan for the next academic year. Each school or local authority will
-                                                provide specific details on when and how results will be communicated,
-                                                so it’s important to stay informed and check for any updates.</p>
+                                            <p>You must register directly with the schools you are applying to or through your local council.
+                                                This usually happens in the spring or summer before the exam.
+                                                It’s very important to check the deadlines for your chosen schools!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -880,19 +858,15 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapse11" aria-expanded="false"
-                                                aria-controls="collapse11">When is the 11 Plus exam taken?</button>
+                                                aria-controls="collapse11">Do I need to help my child use Rurera?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse11" class="collapse" aria-labelledby="heading11"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>The 11+ exam is typically taken in September or October of a student's
-                                                final year of primary school, when they are around 10 or 11 years old.
-                                                This timing allows schools to use the results to offer places for the
-                                                next academic year, beginning the following September. Some areas may
-                                                have slightly different testing dates, so it's essential for parents to
-                                                confirm the specific dates with their local education authority or the
-                                                schools they are applying to.</p>
+                                            <p>Not really! Rurera is designed to be simple and intuitive for children to use on their own,
+                                                which helps build their independence. As a parent, you can use your account to assign activities,
+                                                set learning controls, and easily manage sibling accounts, all with real-time diagnostics.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -901,18 +875,34 @@
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapse12" aria-expanded="false"
-                                                aria-controls="collapse12">How is the 11 Plus Exam scored?</button>
+                                                aria-controls="collapse12">When are the results of the 11 plus exam released?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse12" class="collapse" aria-labelledby="heading12"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p> Students who sit an Eleven Plus Exam will receive a standardised score
-                                                for each paper they sit. Standardised scores are usually between 70 and
-                                                140, but again, these can vary across different areas and schools.</p>
+                                            <p> <b>11 plus results</b> are typically sent out in October or November.
+                                                This gives you time to plan for the next school year.</p>
                                         </div>
                                     </div>
                                 </div>
+                                    <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <div class="card-header" id="heading13">
+                                            <h3 class="mb-0">
+                                                <button class="btn btn-link font-18 font-weight-bold collapsed"
+                                                        data-toggle="collapse" data-target="#collapse13" aria-expanded="false"
+                                                        aria-controls="collapse13">Ready to Start Your Journey?</button>
+                                            </h3>
+                                        </div>
+                                        <div id="collapse13" class="collapse" aria-labelledby="heading13"
+                                             data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p> Don’t just search for “11 plus tuition near me” or “11 plus test online”. Choose the smarter, more engaging way.
+                                                    With Rurera’s personalized 11 plus practice and comprehensive resources, you are giving your child the very best chance
+                                                    to unlock opportunities and succeed.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 @endif
 
                             </div>
