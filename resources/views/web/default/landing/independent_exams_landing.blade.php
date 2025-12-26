@@ -187,8 +187,9 @@
                             <h3 class="font-30 mb-15 post-title">Pretest Activities</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Practice with Rurera.</b><br />
-                                Our assessments inspire students to embrace growth, and help them recognize their potential and continuously improve their performance.
-                            </p>
+                                Before you dive into hard exams, start with our pretest activities. These are like warm-up games for your brain.
+                                They help you see what you already know, get excited to learn more, and continuously improve your performance.
+                                It’s the perfect way to begin your independent school entrance exam practice.</p>
                         </div>
                     </div>
                 </div>
