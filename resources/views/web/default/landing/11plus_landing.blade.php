@@ -897,9 +897,9 @@
                                         <div id="collapse13" class="collapse" aria-labelledby="heading13"
                                              data-parent="#accordion">
                                             <div class="card-body">
-                                                <p> Don’t just search for “11 plus tuition near me” or “11 plus test online”. Choose the smarter, more engaging way.
-                                                    With Rurera’s personalized 11 plus practice and comprehensive resources, you are giving your child the very best chance
-                                                    to unlock opportunities and succeed.</p>
+                                                <p> Don’t just search for <b>“11 plus tuition near me”</b> or <b>“11 plus test online”</b>. Choose the smarter, more engaging way.
+                                                    With Rurera’s <b>personalized 11 plus practice</b> and <b>comprehensive resources</b>, you are giving your child the very best chance
+                                                    to <b>unlock opportunities</b> and succeed.</p>
                                             </div>
                                         </div>
                                     </div>
