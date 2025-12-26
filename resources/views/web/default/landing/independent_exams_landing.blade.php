@@ -14,10 +14,10 @@
                     <p class="font-19">Getting into a top UK independent school is a big dream for many students. But the entrance exams for independent schools can feel tough. Don't worry! Rurera is here to help you master entrance exams with ease. We turn hard work into smart preparation.</p>
                     <p class="font-19">Think of us as your personal guide. We give you all the comprehensive resources and expert support you need to excel effortlessly. Our 100% proven approach is built to help you succeed.</p>
                     <ul class="mb-30 p-0">
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Targeted skill-building sessions.</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Comprehensive exam strategies.</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: Commitment to improved performance.</li>
-                        <li class="font-19"><img alt="#" height="25" src="/assets/default/svgs/book-opend.svg" width="25" />100% Proven Approach: Proven approach to success.</li>
+                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Fun, targeted sessions to build your skills.</li>
+                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Smart strategies for every type of exam question.</li>
+                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: We are committed to your improved performance</li>
+                        <li class="font-19"><img alt="#" height="25" src="/assets/default/svgs/book-opend.svg" width="25" />Proven Success: A method that really works.</li>
                     </ul>
                     <a href="https://rurera.com/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                 </div>
