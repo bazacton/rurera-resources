@@ -11,7 +11,7 @@
                 <div class="col-12 col-lg-6 col-md-6">
                     <h1 class="font-weight-bold font-72"><span class="mr-10 text-scribble">Independent</span>Schools Entrance Exams</h1>
                     <h2 class="font-30 mb-15">Unlock your Dreams: Master Entrance Exams</h2>
-                    <p class="font-19">Getting into a top UK independent school is a big dream for many students. But the entrance exams for independent schools can feel tough. Don't worry! Rurera is here to help you master entrance exams with ease. We turn hard work into smart preparation.</p>
+                    <p class="font-19">Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</p>
                     <ul class="mb-30 p-0">
                         <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Fun, targeted sessions to build your skills.</li>
                         <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Smart strategies for every type of exam question.</li>
