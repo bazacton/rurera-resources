@@ -184,7 +184,7 @@
                             <i class="svg-icon" style="background-color: #5e82d8;"><img alt="Pretest Activities" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Pretest Activities</h3>
+                            <h3 class="font-30 mb-15 post-title">Pretest Activities & Practice</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Practice with Rurera.</b><br />
                                 Before you dive into hard exams, start with our pretest activities. These are like warm-up games for your brain.
@@ -202,8 +202,8 @@
                             <h3 class="font-30 mb-15 post-title">Timed Test Challenges</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Excel with Timed Practice.</b><br />
-                                Rurera offers custom time limits tailored to the specific requirements of different independent school exams to sharpen skills under pressure with timed sessions, helping students boost performance and build
-                                confidence for exam day.
+                                Many independent schools entrance exams are strictly timed. Our timed test challenges prepare you for this pressure. We set custom time limits just like the real exams.
+                                By practising with our timed sessions, you’ll learn to work quickly and accurately, boosting your performance and confidence for the big day.
                             </p>
                         </div>
                     </div>
@@ -214,11 +214,11 @@
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Timed Test Challenges" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Pinpoint and Improve</h3>
+                            <h3 class="font-30 mb-15 post-title">Pinpoint and Improve Your Weak Spots</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Master Your Weak Spots.</b><br />
-                                Identify your areas for improvement through customized assessments, and strengthen those skills with targeted practice. Our approach ensures you focus on what matters most, boosting both confidence and
-                                performance.
+                                You can’t improve what you don’t know! Our smart system uses customised\ assessments to find exactly which topics are tricky for you.
+                                We then give you targeted practice to turn those weak spots into strengths. This focused approach boosts both confidence and performance.
                             </p>
                         </div>
                     </div>
@@ -232,8 +232,9 @@
                             <h3 class="font-30 mb-15 post-title">100+ Practice Resources</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Unlimited Practice, Unlimited Progress</b><br />
-                                Gain access to a wide range of practice resources designed to sharpen your skills. With opportunities to learn and improve, you can build confidence and achieve your academic goals at your own pace.
-                            </p>
+                                Practice makes perfect! We give you unlimited practice with a huge library of resources.
+                                This includes past independent exam papers with solutions and our own independent school entrance exam practice tests.
+                                The more you practice, the more progress you’ll see.</p>
                         </div>
                     </div>
                 </div>
@@ -248,8 +249,9 @@
                             <h3 class="font-30 mb-15 post-title">Frequent Updates &amp; In-Depth Reports</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Track Progress, Achieve More</b><br />
-                                Stay on top of your growth with frequent progress reviews and detailed reports. Our insights help you understand your strengths, identify areas for improvement, and ensure you're always moving towards success.
-                            </p>
+                                You’ll never wonder how you’re doing. We provide frequent progress reviews and detailed reports.
+                                These reports show your strengths and exactly where to improve,
+                                helping you track progress and stay on the path to success.</p>
                         </div>
                     </div>
                 </div>
@@ -264,8 +266,8 @@
                             <h3 class="font-30 mb-15 post-title">Dedicated Professional Support</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Expert Guidance, Independent Success</b><br />
-                                Rurera's Dedicated Professional Support feature provides students with expertly designed practice tests and clear guidelines, offering valuable feedback to help them improve and excel in their exam preparation.
-                                This ensures students have the tools and resources needed to succeed independently.
+                                Get the guidance you need. Our dedicated professional support gives you expertly designed practice tests, clear instructions, and valuable feedback.
+                                It’s like having a top independent exam tutor guiding you every step of the way.
                             </p>
                         </div>
                     </div>
