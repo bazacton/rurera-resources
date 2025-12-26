@@ -444,7 +444,7 @@ $rand_id = rand(999,99999);
 											<div class="question-explain-block">
 
 												<h3 class="font-20 font-weight-bold">Explanation</h3>
-												<textarea class="note-codable eq-summernote" id="question_solve"
+												<textarea class="note-codable summernote" id="question_solve"
 															name="question_solve"
 															aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 
