@@ -603,7 +603,7 @@ $rand_id = rand(999,99999);
 														</div>
 													</div>
 												</div>
-
+                                            @if($is_single == false)
 												<h3>Similiarity Content</h3>
 												<div >
 													<div class="similarity-content-block-data" id="accordion">
@@ -625,7 +625,7 @@ $rand_id = rand(999,99999);
 													</div>
 
 												</div>
-
+                                        @endif
 												<h3>Activity Wall</h3>
 												<div class="lms-dashboard-card">
 													<div class="lms-card-body">
@@ -737,6 +737,9 @@ $rand_id = rand(999,99999);
 											</div>
 										</div>
 									</div>
+
+
+
 								</div>
 							</div>
 						</div>
@@ -928,6 +931,7 @@ $rand_id = rand(999,99999);
 
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
 <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
+@if($is_single == false)
 <script>
 $(".summernote").summernote({
 			dialogsInBody: true,
@@ -1013,7 +1017,7 @@ $(".summernote").summernote({
 			}
 		});
 </script>
-
+@endif
 <script>
 $(document).ready(function () {
     const $cards = $("#accordion .card");
