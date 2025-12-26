@@ -424,10 +424,9 @@
                                  data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
-                                        It helps schools to offer adaptive assessments that adjust the difficulty of
-                                        questions as below, emerging, expected, exceeding and challenge which is based
-                                        on a student's previous responses, history,
-                                        reports and performance providing a more tailored learning experience.
+                                        Our tests aren’t static. They are adaptive assessments that change as you answer.
+                                        If a question is too easy, the next one gets harder. If you struggle, it offers more practice.
+                                        This tailored learning experience matches your exact level.
                                     </p>
                                 </div>
                             </div>
@@ -447,9 +446,8 @@
                                  data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
-                                        Real-time marking data allows for quick identification of students who may
-                                        require additional support or challenges. Students receive instant personalized
-                                        feedback for every question and learning nugget.
+                                        No waiting! Get real-time marking the second you finish a test.
+                                        This quick identification of problems means you can fix mistakes right away with our instant personalised feedback.
                                     </p>
                                 </div>
                             </div>
@@ -466,8 +464,8 @@
                             <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
-                                        Online assessments can include a variety of question types, from multiple choice
-                                        to audio types offering a more comprehensive evaluation of student knowledge.
+                                        Real exams use different question types. So do we! Our practice includes multiple-choice,
+                                        written answers, and even audio types to fully prepare you.
                                     </p>
                                 </div>
                             </div>
@@ -483,9 +481,8 @@
                             </div>
                             <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-modern">
                                 <div class="card-body">
-                                    <p itemprop="description" class="font-16 font-weight-normal">Online platforms often
-                                        provide real-time reporting to both students and teachers, allowing for prompt
-                                        interventions and support.</p>
+                                    <p itemprop="description" class="font-16 font-weight-normal">Our platform provides real-time reporting to you and your parents.
+                                        This allows for prompt interventions and support whenever you need it.</p>
                                 </div>
                             </div>
                             <div class="lms-img-holder">
@@ -501,10 +498,9 @@
                             <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
-                                        Students and their parents can access a dashboard that displays their live
-                                        progress in various subjects. It allows them to identify their strengths and
-                                        areas needing improvement. Parents can monitor
-                                        completed work, track their child's progress, and view assigned tasks.
+                                        <a href="https://rurera.com/login">Log in</a> in to your personal dashboard! It shows your live progress in all subjects.
+                                        You can identify your strengths, see completed work, and know what to practice next.
+                                        Parents can track their child's progress too.
                                     </p>
                                 </div>
                             </div>
@@ -521,10 +517,8 @@
                             <div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
-                                        Ignite student’s passion more to join your school. A fantastic learning
-                                        experience is possible using interactive challenges, Online Test practices,
-                                        Entrance Exams preparations and rewarding them with
-                                        trending toys.
+                                        We make studying enjoyable! Ignite your passion with interactive challenges and games.
+                                        <a href="https://rurera.com/blog/title-the-impact-of-virtual-reality-in-the-classroom-enhancing-learning-experiences">Earn reward points</a> for your hard work. Unlock knowledge and reward yourself—you can even use points to get exciting toys! We believe in celebrating your effort.
                                     </p>
                                 </div>
                             </div>
@@ -574,15 +568,17 @@
                                     <div class="card-header" id="headingsix">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapsesix" aria-expanded="true" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapsesix" data-toggle="collapse">
-                                                What types of vocabulary resources does Rurera provide?
+                                                What is an independent medical exam?
                                             </button>
                                         </h3>
                                     </div>
                                     <div class="collapse" id="collapsesix" aria-labelledby="headingsix" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                Rurera offers a comprehensive curriculum based Word Directory, custom word lists, and sets to expand your child’s word knowledge. These resources are tailored to meet individual learning needs and
-                                                interests.
+                                                (Note: This is a different type of exam, but we’ll clarify!) An independent medical exam is usually a health check by a doctor not chosen by your usual doctor.
+                                                How long does an independent medical exam take? It often takes about 30 minutes to an hour.
+                                                Rurera focuses on academic entrance exams for independent schools.
+
                                             </p>
                                         </div>
                                     </div>
@@ -591,27 +587,26 @@
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapseTwo" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseTwo" data-toggle="collapse">
-                                                What is the importance of vocabulary in language learning?
+                                                How do I find the best independent exam centres in London?
                                             </button>
                                         </h3>
                                     </div>
                                     <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body"><p>Vocabulary is crucial for effective communication and understanding. A strong vocabulary enhances reading comprehension, writing ability, and overall language skills.</p></div>
+                                        <div class="card-body"><p>For school entrance exams, you usually take them at the school you are applying to. For other qualifications, like an independent A Level exam centre, you would need to research certified centres. Rurera prepares you for the test itself.</p></div>
                                     </div>
                                 </div>
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapseseven" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseseven" data-toggle="collapse">
-                                                What are some common strategies for memorizing spelling words?
+                                                Where can I find past papers?
                                             </button>
                                         </h3>
                                     </div>
                                     <div class="collapse" id="collapseseven" aria-labelledby="headingseven" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                Strategies include breaking words into smaller parts, using mnemonic devices, practicing writing words repeatedly, and employing visual aids. Engaging in regular review and practice helps
-                                                reinforce spelling.
+                                                Right here! Rurera provides access to entrance exam papers for independent schools and independent school entrance exam papers as part of our practice resources library.
                                             </p>
                                         </div>
                                     </div>
@@ -620,15 +615,14 @@
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse8" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse8" data-toggle="collapse">
-                                                What are some effective methods for teaching vocabulary?
+                                                Does this help with the 11 plus for private schools?
                                             </button>
                                         </h3>
                                     </div>
                                     <div class="collapse" id="collapse8" aria-labelledby="heading8" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                Effective methods include using flashcards, reading diverse texts, playing word games, and incorporating new words into daily conversations. Creating thematic word lists and practicing in context
-                                                can also help build vocabulary.
+                                                Absolutely! Many independent schools use a similar format to the 11 plus exam. Our preparation is perfect for the <a href="https://rurera.com/11-plus">11 plus exam</a> independent schools use, covering all the same key subjects and skills.
                                             </p>
                                         </div>
                                     </div>
