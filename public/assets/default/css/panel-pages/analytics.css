@@ -3,6 +3,9 @@
 Analytics Page | Student Panel Style Start
 Sub Pages Style
 ************************/
+.member-card-header .db-members.dropdown .profile-dropdown li {
+  margin-bottom: 0;
+}
 .member-card-header .db-members.dropdown .profile-dropdown > a {
   margin-right: 0;
   border: 1px solid #ddd;
