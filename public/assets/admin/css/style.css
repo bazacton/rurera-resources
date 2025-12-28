@@ -101,6 +101,9 @@ p, ul:not(.list-unstyled), ol {line-height: 28px;}
 
 .text-muted {color: #98a6ad !important;}
 
+.admin_role .main-wrapper::selection {
+    background-color: transparent;
+}
 /* 3.2 Form */
 .form-control,
 .input-group-text,
