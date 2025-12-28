@@ -147,6 +147,13 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .form-group.floating-addon .form-control {border-radius: 3px; padding-left: 40px;}
 .form-group.floating-addon .form-control + .form-control {border-radius: 0 3px 3px 0; padding-left: 15px;}
 .input-group-append [class*="btn-outline-"] {background-color: #fdfdff;}
+.input-group button {
+    position: relative;
+}
+.similarity-tab-data .input-group button i {
+    position: inherit;
+    transform: none;
+}
 .input-group i {position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none; z-index: 6;}
 .form-text {font-size: 12px; line-height: 22px;}
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
@@ -2099,6 +2106,13 @@ Admin Questions Generator Page Style End
 .edit-questions-tabs .similarity-tab-data .lms-element-properties:has(.rureraform-admin-popup.active) {
     display: block;
     margin-bottom: 25px;
+}
+.similarity-tab-data .filters-block [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.similarity-tab-data .filters-block {
+    margin: 0 -15px 25px;
 }
 /* Similarity Content Tabs style End */
 
