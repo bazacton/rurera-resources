@@ -1480,8 +1480,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
-.question-layout-block .prev-next-controls {border-top: 2px dashed #ddd; position: fixed; width: 845px; bottom: -50px; left: 50%; transform: translateX(-50%); background-color: #fff; min-height: 100px; padding: 25px 0 25px 15px; justify-content: space-between; z-index: 1;}
-.question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;   margin-left: -15px; background-image: none; box-shadow: none;}
+.question-layout-block .prev-next-controls {border-top: 2px dashed #ddd; position: fixed; width: 845px; bottom: -50px; left: 50%; transform: translateX(-50%); background-color: #fff; min-height: 100px; padding: 25px 0 25px 15px; z-index: 1;}
+.question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500; margin-left: -15px; margin-right: auto; background-image: none; box-shadow: none;}
 
 .review-btn,
 .prev-btn,
@@ -2004,6 +2004,11 @@ Quiz Check Answers Page Style End
     position: fixed;
     right: 0;
 }
+.preview-question-area .question-right-side .review-msg-box .input-group {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
 .preview-question-area .question-layout-block .prev-next-controls {
     width: 750px;
     position: relative;
@@ -2015,6 +2020,7 @@ Quiz Check Answers Page Style End
 }
 .preview-question-area .prev-next-controls .question-submit-btn {
     position: relative;
+    margin-left: auto;
 }
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
