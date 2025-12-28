@@ -2098,6 +2098,7 @@ Admin Questions Generator Page Style End
 }
 .edit-questions-tabs .similarity-tab-data .lms-element-properties:has(.rureraform-admin-popup.active) {
     display: block;
+    margin-bottom: 25px;
 }
 /* Similarity Content Tabs style End */
 
