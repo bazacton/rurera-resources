@@ -149,6 +149,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .input-group-append [class*="btn-outline-"] {background-color: #fdfdff;}
 .input-group button {
     position: relative;
+    outline: none;
 }
 .similarity-tab-data .input-group button i {
     position: initial;
