@@ -151,7 +151,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     position: relative;
 }
 .similarity-tab-data .input-group button i {
-    position: inherit;
+    position: initial;
     transform: none;
 }
 .input-group i {position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none; z-index: 6;}
