@@ -151,7 +151,8 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     position: relative;
     outline: none;
 }
-.similarity-tab-data .input-group button i {
+.similarity-tab-data .input-group button i,
+.rureraform-form-editor .input-group i {
     position: initial;
     transform: none;
 }
