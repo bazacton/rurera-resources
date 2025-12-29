@@ -149,10 +149,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .form-group.floating-addon .form-control {border-radius: 3px; padding-left: 40px;}
 .form-group.floating-addon .form-control + .form-control {border-radius: 0 3px 3px 0; padding-left: 15px;}
 .input-group-append [class*="btn-outline-"] {background-color: #fdfdff;}
-.input-group button {
-    position: relative;
-    outline: none;
-}
+.input-group button {position: relative; outline: none;}
 .input-group i {position: relative; z-index: 6;}
 .form-text {font-size: 12px; line-height: 22px;}
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
