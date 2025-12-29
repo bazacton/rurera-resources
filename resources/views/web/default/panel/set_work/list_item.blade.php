@@ -12,7 +12,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="list-group-item {{$is_cancelled}}">
+                <tr>
                     <td data-th="Title">
                         <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png" alt="{{$assignmentObj->assignment_type}}" height="65" width="98">
                             {{$assignmentObj->title}}
