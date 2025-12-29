@@ -9,6 +9,7 @@ var rureraform_integration_last_id = 0;
 var rureraform_payment_gateway_last_id = 0;
 var rureraform_form_changed = false;
 var rureraform_css_tools = [{}];
+var savedRange = null;
 var rureraform_font_weights = {
     '100': 'Thin',
     '200': 'Extra-light',
@@ -2187,9 +2188,13 @@ function _rureraform_properties_prepare(_object) {
                 contents: '<i class="note-icon-magic"></i> Eq',
                 tooltip: 'Insert Equation',
                 click: function () {
-                    // Open your HTML modal
+
+                    // 🔑 SAVE CURRENT CURSOR POSITION
+                    savedRange = context.invoke('editor.createRange');
+
                     $(".equation-insert-btn").attr('id', 'insertEquation');
                     $('#equationModal').modal('show');
+                    renderMath();
                 }
             }).render();
         };
@@ -2234,6 +2239,10 @@ function _rureraform_properties_prepare(_object) {
 
                         isProcessing = false;
                     }, 0); // 0ms is usually enough
+
+
+
+
                 },
                 onPaste: function (e) {
 					e.preventDefault();
@@ -2241,6 +2250,12 @@ function _rureraform_properties_prepare(_object) {
 					var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
 					var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
 
+                    if (containsMathJax(pastedData)) {
+                        const wrapped = wrapMath(pastedData);
+                        pastedData = wrapped;
+                    } else {
+                        pastedData = pastedData;
+                    }
 					// Create a temporary DOM element to parse the HTML
 					var tempDiv = document.createElement('div');
 					tempDiv.innerHTML = pastedData;
@@ -2288,10 +2303,47 @@ function _rureraform_properties_prepare(_object) {
 
 					// Insert the cleaned content into the editor
 					document.execCommand('insertHTML', false, tempDiv.innerHTML);
+
+
+
 				}
             }
         });
     }
+
+
+
+    $(document).on('click', '#insertEquation', function () {
+        var equation = $('#equationInput').val().trim();
+        if (!equation) return;
+
+        if (window.activeEquationId) {
+            var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
+            $el.attr('data-equation', equation).html(equation);
+        } else {
+            var id = uniqueId();
+            var html =
+                '<span class="math-equation" contenteditable="false" ' +
+                'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
+                equation +
+                '</span>';
+
+            // Restore focus and selection
+            $('.summernote-editor').summernote('focus');
+            if (savedRange) {
+                savedRange.select();
+            }
+
+            $('.summernote-editor').summernote('pasteHTML', html);
+        }
+
+        $('#equationModal').modal('hide');
+        $('#equationInput').val('');
+        window.activeEquationId = null;
+    });
+
+
+
     handleMultiSelect2('search-question-select2', '/admin/questions_bank/search', ['class', 'course', 'subject', 'title']);
 
 
@@ -11021,72 +11073,22 @@ var savedRange;
 function uniqueId() {
     return 'eq-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
 }
-$(document).on('click', '#insertEquation', function () {
-    var equation = $('#equationInput').val().trim();
-    if (!equation) return;
-
-    if (window.activeEquationId) {
-        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
-        $el.attr('data-equation', equation).html(equation);
-    } else {
-        var id = uniqueId();
-        var html =
-            '<span class="math-equation" contenteditable="false" ' +
-            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
-            equation +
-            '</span>';
-
-        // Restore focus and selection
-        $('.summernote-editor').summernote('focus');
-        if (savedRange) {
-            savedRange.select();
-        }
-
-        $('.summernote-editor').summernote('pasteHTML', html);
-    }
-
-    $('#equationModal').modal('hide');
-    $('#equationInput').val('');
-    window.activeEquationId = null;
-});
 
 
-$(document).on('click', '#insertSolveEquation', function () {
-    var equation = $('#equationInput').val().trim();
-    if (!equation) return;
+function containsMathJax(text) {
+    return /\\(d?frac|sqrt|sum|int|lim|alpha|beta|gamma|theta|pi|sigma)\s*\{|\$[^$]+\$/.test(text);
+}
 
-    if (window.activeEquationId) {
-        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
-        $el.attr('data-equation', equation).html(equation);
-    } else {
-        var id = uniqueId();
+function wrapMath(text) {
+    const id = 'eq-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
 
-
-        var random_id = Math.floor((Math.random() * 99999) + 1);
-        var class_id = 'rurera-svg-data' + id+'_'+random_id;
-        var html =
-            '<span class="math-equation '+class_id+'" contenteditable="false" ' +
-            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
-            equation +
-            '</span>';
-
-        getSVGFromEquationHTML(html, class_id, false).then(function(htmlWithSVG) {
-            svgContent = htmlWithSVG;
-        });
-
-        // Restore focus and selection
-        $('.eq-summernote-editor').summernote('focus');
-        if (savedRange) {
-            savedRange.select();
-        }
-
-        $('.eq-summernote-editor').summernote('pasteHTML', html);
-    }
-
-    $('#equationModal').modal('hide');
-    $('#equationInput').val('');
-    window.activeEquationId = null;
-});
+    return `<span class="math-equation"
+                contenteditable="false"
+                data-id="${id}"
+                data-equation="${text.replace(/"/g, '&quot;')}">
+                ${text}
+            </span>`;
+}
 
 
 // When user clicks the "add/edit equation" button
@@ -11109,7 +11111,9 @@ $(document).on('click', '.math-equation', function (e) {
     // Save range **before opening modal** if needed
     savedRange = $('.summernote-editor').summernote('createRange');
 
+
     $('#equationInput').val(equation);
+    renderMath();
     $('#equationModal').modal('show');
 });
 
@@ -11258,6 +11262,71 @@ $(document).on('click', '#insertOptionEquation', function () {
 
     $(".rureraform-properties-options-label.active-edit").val(equation);
 
+
+    $('#equationModal').modal('hide');
+    $('#equationInput').val('');
+    window.activeEquationId = null;
+});
+$(document).on('click', '#insertSolveEquation22', function () {
+    alert('testing');
+    var equation = $('#equationInput').val().trim();
+    if (!equation) return;
+
+    if (window.activeEquationId) {
+        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
+        $el.attr('data-equation', equation).html(equation);
+    } else {
+        var id = uniqueId();
+
+        var random_id = Math.floor((Math.random() * 99999) + 1);
+        var class_id = 'rurera-svg-data' + id+'_'+random_id;
+        var html =
+            '<span class="math-equation '+class_id+'" contenteditable="false" ' +
+            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
+            equation +
+            '</span>';
+
+
+        getSVGFromEquationHTML(html, class_id, false).then(function(htmlWithSVG) {
+        });
+
+        // Restore focus and selection
+        $('.eq-summernote-editor').summernote('focus');
+        if (savedRange) {
+            savedRange.select();
+        }
+
+        $('.eq-summernote-editor').summernote('pasteHTML', html);
+    }
+
+    $('#equationModal').modal('hide');
+    $('#equationInput').val('');
+    window.activeEquationId = null;
+});
+
+$(document).on('click', '#insertSolveEquation', function () {
+    var equation = $('#equationInput').val().trim();
+    if (!equation) return;
+
+    if (window.activeEquationId) {
+        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
+        $el.attr('data-equation', equation).html(equation);
+    } else {
+        var id = uniqueId();
+        var html =
+            '<span class="math-equation" contenteditable="false" ' +
+            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
+            equation +
+            '</span>';
+
+        // Restore focus and selection
+        $('.eq-summernote-editor').summernote('focus');
+        if (savedRange) {
+            savedRange.select();
+        }
+
+        $('.eq-summernote-editor').summernote('pasteHTML', html);
+    }
 
     $('#equationModal').modal('hide');
     $('#equationInput').val('');
