@@ -94,9 +94,9 @@ $rand_id = rand(999,99999);
         display:flex;justify-content:flex-end;gap:10px;background:#fafafa
     }
     .equationModal .btn{border:1px solid #d1d5db;border-radius:10px;padding:10px 14px;background:#fff}
-    .equationModal .btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
-    .equationModal .btn:hover{background:#f3f4f6}
-    .equationModal .btn-primary:hover{background:#1d4ed8}
+    .equationModal .btn-primary{background:var(--primary);color:#fff;border-color:var(--blue)}
+    .equationModal .btn:hover{background:var(--primary);}
+    .equationModal .btn-primary:hover{background:var(--primary);}
 
     /* Tiny help */
     .equationModal .hint{font-size:12px;color:var(--muted);margin:10px 0 0}
