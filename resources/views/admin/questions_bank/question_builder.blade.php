@@ -64,7 +64,7 @@ $rand_id = rand(999,99999);
 												<input type="text" value="{{ isset( $question_title )? $question_title : old('title') }}"
 														name="question_title"
 														class="form-control @error('title')  is-invalid @enderror"
-														placeholder="Add a reference title for this question"/>
+														placeholder=""/>
 												@error('title')
 												<div class="invalid-feedback">
 													{{ $message }}
@@ -444,7 +444,7 @@ $rand_id = rand(999,99999);
 											<div class="question-explain-block">
 
 												<h3 class="font-20 font-weight-bold">Explanation</h3>
-												<textarea class="note-codable summernote" id="question_solve"
+												<textarea class="note-codable eq-summernote-editor" id="question_solve"
 															name="question_solve"
 															aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 
@@ -560,8 +560,9 @@ $rand_id = rand(999,99999);
 										</div>
 
 										<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
-												<div class="topic-parts-block">
 												<h3>Topic Parts</h3>
+												<div class="topic-parts-block">
+
 												@if(isset( $questionObj->topicPartItem->id))
 													<div class="topic-parts-options">
 														<div class="form-field rureraform-cr-container-medium">
@@ -1052,6 +1053,104 @@ $(document).ready(function () {
 });
 
 
+var EquationButton = function (context) {
+    var ui = $.summernote.ui;
 
+    return ui.button({
+        contents: '<i class="note-icon-magic"></i> Eq',
+        tooltip: 'Insert Equation',
+        click: function () {
+            // Open your HTML modal
+            $(".equation-insert-btn").attr('id', 'insertSolveEquation');
+            $('#equationModal').modal('show');
+        }
+    }).render();
+};
+$(".eq-summernote-editor").summernote({
+    dialogsInBody: true,
+    tabsize: 2,
+    height: $(".eq-summernote-editor").attr('data-height') ?? 250,
+    fontNames: [],
+    toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'underline']],
+        ['para', ['paragraph', 'ul', 'ol']],
+        ['table', ['table']],
+        ['insert', ['link', 'equation']],
+        ['history', ['undo']],
+    ],
+    buttons: {
+        equation: EquationButton // 👈 register button
+    },
+    callbacks: {
+        onPaste: function (e) {
+            e.preventDefault();
+
+            var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+            var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+            // Create a temporary DOM element to parse the HTML
+            var tempDiv = document.createElement('div');
+            tempDiv.innerHTML = pastedData;
+
+            // Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
+            function cleanTags(node) {
+                var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
+                var childNodes = Array.from(node.childNodes);
+                childNodes.forEach(function(child) {
+                    if (child.nodeType === 1) { // Element Node
+                        if (!allowedTags.includes(child.nodeName)) {
+                            // Replace disallowed tags with their inner content
+                            while (child.firstChild) {
+                                node.insertBefore(child.firstChild, child);
+                            }
+                            node.removeChild(child);
+                        } else {
+                            // Allowed tag: Clean recursively
+                            cleanTags(child);
+
+                            // Remove all attributes from tables and their children
+                            if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
+                                while (child.attributes.length > 0) {
+                                    child.removeAttribute(child.attributes[0].name);
+                                }
+                            }
+                        }
+                    } else if (child.nodeType === 3) { // Text Node
+                        // Do nothing for text nodes
+                    } else {
+                        // Remove any other type of node
+                        node.removeChild(child);
+                    }
+                });
+            }
+
+            // Remove all inline styles
+            var elementsWithStyles = tempDiv.querySelectorAll('[style]');
+            elementsWithStyles.forEach(function (element) {
+                element.removeAttribute('style');
+            });
+
+            // Remove HTML comments
+            function removeComments(node) {
+                var childNodes = Array.from(node.childNodes);
+                childNodes.forEach(function(child) {
+                    if (child.nodeType === 8) { // Comment Node
+                        node.removeChild(child);
+                    } else if (child.nodeType === 1) {
+                        removeComments(child);
+                    }
+                });
+            }
+            removeComments(tempDiv);
+
+            // Clean unwanted tags
+            cleanTags(tempDiv);
+
+            // Insert the cleaned content into the editor
+            document.execCommand('insertHTML', false, tempDiv.innerHTML);
+        }
+    }
+});
 
 </script>
