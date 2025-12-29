@@ -1587,7 +1587,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     padding: 8px 10px;
 }
 .input_box:has(.input-label) input,
-.input-holder.input_line {
+.input-holder.input_line input {
     background-color: inherit;
     width: 5ch;
     min-width: 2ch;
