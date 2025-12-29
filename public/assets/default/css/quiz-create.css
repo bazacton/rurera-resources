@@ -2041,9 +2041,6 @@ Quiz Check Answers Page Style End
     position: fixed;
     right: 0;
 }
-.preview-question-area .question-right-side::selection {
-    background-color: transparent;
-}
 .preview-question-area .question-right-side .review-msg-box .input-group {
     border: 0;
     border-radius: 0;
