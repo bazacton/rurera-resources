@@ -1808,10 +1808,13 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     cursor: pointer;
     text-decoration: none;
 }
+.add-more-question:hover {
+    text-decoration: none;
+}
 .add-more-question .radio-btn {
     text-align: center;
 }
-.radio-btn img {
+.add-more-question .radio-btn img {
     border: 1px solid var(--primary);
     border-radius: 100%;
     margin-bottom: 10px;
@@ -1821,7 +1824,9 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     padding: 8px;
     filter: invert(43%) sepia(63%) saturate(4197%) hue-rotate(220deg) brightness(100%) contrast(99%);
 }
-
+.add-more-question .radio-btn .card-icon h3 {
+    color: var(--primary);
+}
 .inner_dropdown_questions_color {border-bottom-color: var(--orange) !important; color: var(--orange) !important;}
 .inner_dropdown_questions,
 .inner_dropdown_questions.active {border-bottom-color: var(--red) !important; color: var(--red) !important;}
