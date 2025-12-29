@@ -1595,6 +1595,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     box-sizing: content-box;
     outline: none;
     border-radius: 0;
+    padding: 0;
 }
 .input-holder.input_line {
     border-radius: 0;
