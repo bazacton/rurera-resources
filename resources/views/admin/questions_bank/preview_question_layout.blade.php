@@ -338,7 +338,7 @@ $rand_id = rand(999,99999);
 
             <div class="modal-header">
                 <h5 class="modal-title">Insert Equation1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
 
             <div class="modal-body">
