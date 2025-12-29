@@ -1589,6 +1589,13 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input_box:has(.input-label) input {
     background-color: inherit;
 }
+.input-holder.input_line input.input-simple {
+    background-color: inherit;
+    border-radius: 0;
+}
+.input-holder.input_line {
+    border-radius: 0;
+}
 .input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
 .column-4 .input-holder, 
 .column-3 .input-holder {width: 23.333%; padding: 0; margin: 0 10px 0 0; box-sizing: border-box; display: inline-block;}
