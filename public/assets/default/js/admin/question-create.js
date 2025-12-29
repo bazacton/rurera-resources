@@ -11051,6 +11051,44 @@ $(document).on('click', '#insertEquation', function () {
 });
 
 
+$(document).on('click', '#insertSolveEquation', function () {
+    var equation = $('#equationInput').val().trim();
+    if (!equation) return;
+
+    if (window.activeEquationId) {
+        var $el = $('.math-equation[data-id="' + window.activeEquationId + '"]');
+        $el.attr('data-equation', equation).html(equation);
+    } else {
+        var id = uniqueId();
+
+
+        var random_id = Math.floor((Math.random() * 99999) + 1);
+        var class_id = 'rurera-svg-data' + id+'_'+random_id;
+        var html =
+            '<span class="math-equation '+class_id+'" contenteditable="false" ' +
+            'data-id="' + id + '" data-equation="' + $('<div>').text(equation).html() + '">' +
+            equation +
+            '</span>';
+
+        getSVGFromEquationHTML(html, class_id, false).then(function(htmlWithSVG) {
+            svgContent = htmlWithSVG;
+        });
+
+        // Restore focus and selection
+        $('.eq-summernote-editor').summernote('focus');
+        if (savedRange) {
+            savedRange.select();
+        }
+
+        $('.eq-summernote-editor').summernote('pasteHTML', html);
+    }
+
+    $('#equationModal').modal('hide');
+    $('#equationInput').val('');
+    window.activeEquationId = null;
+});
+
+
 // When user clicks the "add/edit equation" button
 $('#openEquationModal').on('click', function() {
     // Save the current cursor/selection in Summernote
