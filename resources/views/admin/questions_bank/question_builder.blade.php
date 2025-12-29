@@ -635,7 +635,8 @@ $rand_id = rand(999,99999);
 																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
 																</div>
 																<div class="lms-card-info">
-																<h5>Reviewer Demo @ <span class="activity-date">18 Nov 24 | 13:08</span></h5>
+																<h5>Reviewer Demo @</h5>
+																<span class="activity-date">18 Nov 24 | 13:08</span>
 																<p>Status Updated : <span class="activity-status">Improvement required</span></p>
 																<p>Please improve&nbsp;</p>
 																</div>
@@ -645,7 +646,8 @@ $rand_id = rand(999,99999);
 																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
 																</div>
 																<div class="lms-card-info">
-																	<h5>Javy @<span class="activity-date">18 Nov 24 | 13:02</span></h5>
+																	<h5>Javy @</h5>
+																	<span class="activity-date">18 Nov 24 | 13:02</span>
 																	<p>Updated = Submit for review</p>
 																</div>
 															</li>
