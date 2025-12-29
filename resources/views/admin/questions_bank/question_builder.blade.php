@@ -632,7 +632,7 @@ $rand_id = rand(999,99999);
 														<ul class="lms-card-timeline">
 															<li class="lms-card-list active">
 																<div class="lms-card-icons">
-																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
+																	<img src="/assets/default/img/default/avatar-1.png" alt="calendar icon" height="65" width="65">
 																</div>
 																<div class="lms-card-info">
 																<h5>Reviewer Demo @</h5>
@@ -643,7 +643,7 @@ $rand_id = rand(999,99999);
 															</li>
 															<li class="lms-card-list active">
 																<div class="lms-card-icons">
-																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
+																	<img src="/assets/default/img/default/avatar-1.png" alt="calendar icon" height="65" width="65">
 																</div>
 																<div class="lms-card-info">
 																	<h5>Javy @</h5>
