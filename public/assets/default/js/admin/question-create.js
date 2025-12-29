@@ -10888,8 +10888,13 @@ $(document).on('click', '.question_topic_part_submit_btn', function () {
 
 $(document).on('click', '.quiz-group', function () {
 	$(".quiz-group").removeClass('active');
+    var element_type = $(this).attr('data-type');
 	$(this).addClass('active');
 	$(".topic-parts-block").addClass('rurera-hide');
+
+    var element_title = rureraform_toolbar_tools[element_type].title;
+    console.log(element_title)
+    $(".rureraform-admin-popup-title h3").html('<i class="fas fa-cog element-properties-label"></i> '+element_title);
 
     rureraform_properties_open($(this));
 });
