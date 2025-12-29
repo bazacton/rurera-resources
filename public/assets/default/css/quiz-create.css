@@ -1842,7 +1842,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     text-decoration: none;
 }
 .edit-questions-tabs:has(button) .add-more-question {
-    max-width: 0 15px;
+    margin: 0 15px;
 }
 .add-more-question:hover {
     text-decoration: none;
