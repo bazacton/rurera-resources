@@ -158,7 +158,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     position: initial;
     transform: none;
 }
-.input-group i {position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none; z-index: 6;}
+.input-group i {position: relative; z-index: 6;}
 .form-text {font-size: 12px; line-height: 22px;}
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control-input:checked ~ .custom-control-label::before {background-color: var(--primary) !important;}
