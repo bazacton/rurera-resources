@@ -40,7 +40,7 @@ $tabs_options    = tabs_options();
                     <div class="col-6 col-md-6">
                         <div class="form-group">
                             <label class="input-label">Question Title</label>
-                            <input type="text" value="{{ $question_title }}" name="question_title" class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
+                            <input type="text" value="{{ $question_title }}" name="question_title" class="form-control @error('title')  is-invalid @enderror" placeholder="Add a reference title for this question"/>
                             @error('title')
                             <div class="invalid-feedback">
                                 {{ $message }}

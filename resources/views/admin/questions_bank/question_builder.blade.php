@@ -64,7 +64,7 @@ $rand_id = rand(999,99999);
 												<input type="text" value="{{ isset( $question_title )? $question_title : old('title') }}"
 														name="question_title"
 														class="form-control @error('title')  is-invalid @enderror"
-														placeholder=""/>
+														placeholder="Add a reference title for this question"/>
 												@error('title')
 												<div class="invalid-feedback">
 													{{ $message }}
