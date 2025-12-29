@@ -354,7 +354,7 @@ $rand_id = rand(999,99999);
 
 <!-- Edit-questions Tabs End -->
 
-solveEquationModal
+
 <div class="modal fade equationModal" id="equationModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
