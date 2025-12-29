@@ -2059,6 +2059,10 @@ Quiz Check Answers Page Style End
     position: relative;
     margin-left: auto;
 }
+.preview-question-area .draggable-items {
+    display: flex;
+    margin: 15px 0;
+}
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
     align-items: center;
