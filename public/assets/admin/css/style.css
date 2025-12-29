@@ -153,11 +153,6 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     position: relative;
     outline: none;
 }
-.similarity-tab-data .input-group button i,
-.rureraform-form-editor .input-group i {
-    position: initial;
-    transform: none;
-}
 .input-group i {position: relative; z-index: 6;}
 .form-text {font-size: 12px; line-height: 22px;}
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
