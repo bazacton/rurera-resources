@@ -30,13 +30,13 @@ $rand_id = rand(999,99999);
 
     /* Modal */
     .equationModal .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none}
-    .equationModal.modal{
+    /* .equationModal.modal{
         position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
         width:min(1250px,calc(100vw - 24px));
         background:var(--panel);border-radius:10px;
         box-shadow:0 12px 40px rgba(0,0,0,.28);
         display:none;overflow:hidden;
-    }
+    } */
     .equationModal .header{
         padding:14px 18px;border-bottom:1px solid var(--line);
         display:flex;justify-content:space-between;align-items:center
