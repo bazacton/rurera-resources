@@ -1489,7 +1489,14 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
-
+.prev-next-controls .prev-btn {
+    padding: 0 18px 0 50px;
+}
+.prev-next-controls .prev-btn img {
+    left: 10px;
+    right: auto;
+    transform: scale(-1);
+}
 .review-btn svg,
 .prev-btn svg,
 .next-btn svg {height: 15px; width: 15px; margin-left: 5px;} 
