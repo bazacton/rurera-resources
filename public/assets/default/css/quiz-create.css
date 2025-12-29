@@ -1598,7 +1598,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .rurera-question-block .rureraform-column-input .rureraform-description {margin: 15px 0 0;}
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
 /* Textarea Style with lines */
-.rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
+.rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0; border: 0;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_small {width: 50% !important;}
 .rureraform-admin-editor .input-holder.textarea_lines {padding: 0;}
