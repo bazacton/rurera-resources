@@ -61,6 +61,7 @@
     }
     .equationModal .tool:hover{background:#f3f4f6}
     .equationModal .tool.active{background:#eef2ff;border-color:#a5b4fc;color:#1d4ed8}
+    .equationModal .btn-close {border: 0; height: auto; padding: 0; line-height: normal; font-weight: bold; font-size: 18px; background-color: inherit; outline: none;}
 
     /* Dropdown */
     .equationModal .dropdown{
