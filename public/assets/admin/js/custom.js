@@ -1938,6 +1938,9 @@ $(document).ready(function() {
 
 $(document).on('click', '.add-more-question', function (e) {
     var question_id = $(this).attr('data-id');
+    var bulk_id = $(this).attr('data-bulk_id');
+    var part_item_id = $(this).attr('data-part_item_id');
+    var difficulty_level = $(this).attr('data-difficulty_level');
     var parentObj = $(this).closest('.main-content');
     rurera_loader(parentObj, 'div');
     jQuery.ajax({
@@ -1946,11 +1949,11 @@ $(document).on('click', '.add-more-question', function (e) {
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
-        data: {"question_id": question_id},
+        data: {"question_id": question_id, "bulk_id": bulk_id, "part_item_id": part_item_id, "difficulty_level": difficulty_level},
         success: function (return_data) {
             //rurera_remove_loader(parentObj, 'div');
             //parentObj.html(return_data);
-            window.location.reload();
+            window.location.href = return_data;
         }
     });
 });
