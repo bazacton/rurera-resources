@@ -101,7 +101,10 @@ p, ul:not(.list-unstyled), ol {line-height: 28px;}
 
 .text-muted {color: #98a6ad !important;}
 
-.admin_role .main-wrapper::selection {
+.admin_role .hap-content::selection,
+.admin_role .question-explain-block::selection,
+.admin_role .switches-holder::selection,
+.admin_role .create-question-fields-block::selection {
     background-color: transparent;
 }
 /* 3.2 Form */
