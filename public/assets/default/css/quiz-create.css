@@ -1806,6 +1806,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .add-more-question .radio-btn {
     text-align: center;
