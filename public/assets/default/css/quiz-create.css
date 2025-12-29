@@ -1827,7 +1827,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     display: none;
 }
 .add-more-question {
-    margin: 0 20px;
+    margin: 10px 0 0;
     width: 10%;
     margin-bottom: 0;
     box-shadow: 0 0 10px #c3c3c367;
@@ -1840,6 +1840,9 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
+}
+.edit-questions-tabs:has(button) .add-more-question {
+    max-width: 0 15px;
 }
 .add-more-question:hover {
     text-decoration: none;
