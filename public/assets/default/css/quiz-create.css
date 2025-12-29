@@ -1592,7 +1592,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     width: 5ch;
     min-width: 2ch;
     max-width: 100%;
-    padding: 4px 6px;
     box-sizing: content-box;
     outline: none;
     border-radius: 0;
