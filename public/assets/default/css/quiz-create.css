@@ -810,7 +810,7 @@ Lms Table Style
 .rureraform-element table.table td .input-holder {width: 100%; border-width: 0;}
 .rureraform-element table.table td .input-holder input {text-align: center; background-color: initial; border: 1px solid #ddd; height: 38px; min-height: 38px; background-color: #fcfcfc;}
 .rureraform-element table.table td .input_line {width: 100% !important; margin: 0;}
-.rureraform-element table.table th {background-color: #c8d2ec; border-color: #dee2e6;}
+.rureraform-element table.table th {background-color: #c8d2ec;border-color: #dee2e6;}
 .rureraform-element table.table th b {font-weight: 500;}
 /**********************************
 Lms Table Style End
