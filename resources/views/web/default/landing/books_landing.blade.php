@@ -10,7 +10,7 @@
         <div class="col-12 col-md-12 col-lg-7">
           <h1 class="font-72 font-weight-bold">Dive into the World of <span class="text-scribble">Books!</span>
           </h1>
-          <strong class="d-block font-36">Read Anywhere, Anytimes!</strong>
+          <strong class="d-block font-36">Read Anywheres, Anytimes!</strong>
           <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading grow every day!</p>
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
         </div>
