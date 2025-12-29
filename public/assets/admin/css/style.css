@@ -2097,7 +2097,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-info p {padding-top: 0; font-weight: 500; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 5px; align-items: center;}
 .activity-status {background-color: #f3f3f3; color: #333; padding: 2px 10px; border-radius: 3px;}
 .similarity-content-block .lms-dashboard-card .lms-card-list:last-child {padding-bottom: 0; margin-bottom: 0;}
-.lms-dashboard-card .lms-card-info h5 .activity-date {margin-left: 0; color: #999; font-weight: 500; font-size: 12px;}
+.lms-dashboard-card .lms-card-info .activity-date {margin-left: 0; color: #999; font-weight: 500; font-size: 12px;}
 .edit-questions-tabs .similarity-content-tabs .nav {gap: 25px;}
 .similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {padding: 0 15px 0 0;}
 .similarity-content-block-data {margin-bottom: 30px;}
