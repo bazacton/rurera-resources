@@ -560,9 +560,8 @@ $rand_id = rand(999,99999);
 										</div>
 
 										<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
-												<h3>Topic Parts</h3>
 												<div class="topic-parts-block">
-
+												<h3>Topic Parts</h3>
 												@if(isset( $questionObj->topicPartItem->id))
 													<div class="topic-parts-options">
 														<div class="form-field rureraform-cr-container-medium">
