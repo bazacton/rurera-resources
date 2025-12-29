@@ -1793,6 +1793,13 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav br {
     display: none;
 }
+.add-more-question {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    margin: 0 10px;
+}
 .inner_dropdown_questions_color {border-bottom-color: var(--orange) !important; color: var(--orange) !important;}
 .inner_dropdown_questions,
 .inner_dropdown_questions.active {border-bottom-color: var(--red) !important; color: var(--red) !important;}
