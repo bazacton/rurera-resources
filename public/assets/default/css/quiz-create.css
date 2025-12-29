@@ -175,7 +175,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Essay Textarea Field Style End */
 
 /* Input Text Field Style Start */
-.input-holder input.input-simple {border: 3px solid #000; height: 30px; min-height: 30px; color: #000; font-size: 16px; text-align: left; font-weight: 400; border-radius: 5px; display: inline-block; padding: 0 10px; width: 100%; max-width: 170px;}
+.input-holder input.input-simple {border: 3px solid #000; height: 30px; min-height: 30px; color: #000; font-size: 16px; text-align: left; font-weight: 400; border-radius: 5px; display: inline-block; padding: 0 10px; width: 100%; max-width: 170px; margin-top: 0;}
 .input-holder input[type="text"],
 .input-holder input.input-simple {border: 0; background-color: #fcfcfc;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
@@ -1577,12 +1577,18 @@ table.table td .input-holder input[type=number]::-webkit-inner-spin-button,
 table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input-holder input.input_line[type=number]::-webkit-inner-spin-button, 
 .input-holder input.input_line[type=number]::-webkit-outer-spin-button{opacity: 0;}
-.note-editable .input-holder input[type="number"],
-.input-holder .input-label ~ input[type="number"] {text-align: right;}
+/*.input-holder .input-label ~ input[type="number"], */
+.note-editable .input-holder input[type="number"] {text-align: right;}
 /* .input-holder .input-label ~ input.input-simple {padding: 0 5px 0 55px; min-height: 38px;} */
 .input-holder .input-label:empty ~ input.input-simple {padding-left: 5px; min-height: auto;}
 .input-holder .input-label ~ input.input_line {min-height: auto; width: 100%;}
 /* .input-holder .input-label ~ input[type="number"].input-simple  {padding: 0 0 0 36px; text-align: left;} */
+.input_box:has(.input-label) {
+    padding: 8px 10px;
+}
+.input_box:has(.input-label) input {
+    background-color: inherit;
+}
 .input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
 .column-4 .input-holder, 
 .column-3 .input-holder {width: 23.333%; padding: 0; margin: 0 10px 0 0; box-sizing: border-box; display: inline-block;}
