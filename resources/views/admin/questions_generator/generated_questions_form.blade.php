@@ -84,7 +84,7 @@ $rand_id = rand(999,99999);
     .equationModal .body{padding:0 0 25px;}
     .equationModal .editor-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .equationModal textarea{width:100%;height:240px;font-size:15px;padding:10px;border:1px solid #d1d5db;border-radius:10px}
-    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;min-height:240px;overflow:auto}
+    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;overflow:auto}
 
     /* Footer */
     .equationModal .footer{
@@ -361,7 +361,7 @@ $rand_id = rand(999,99999);
 
             <div class="modal-header">
                 <h5 class="modal-title">Insert Equation1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" fdprocessedid="2hduk7"><span aria-hidden="true">×</span></button>
             </div>
 
             <div class="modal-body">
