@@ -55,7 +55,6 @@ $rand_id = rand(999,99999);
     }
     .equationModal .tool:hover{background:#f3f4f6}
     .equationModal .tool.active{background:#eef2ff;border-color:#a5b4fc;color:#1d4ed8}
-    .equationModal .btn-close {border: 0; height: auto; padding: 0; line-height: normal; font-weight: bold; font-size: 18px; background-color: inherit; outline: none;}
 
     /* Dropdown */
     .equationModal .dropdown{
@@ -355,13 +354,14 @@ $rand_id = rand(999,99999);
 
 <!-- Edit-questions Tabs End -->
 
+solveEquationModal
 <div class="modal fade equationModal" id="equationModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <div class="modal-header">
                 <h5 class="modal-title">Insert Equation1</h5>
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
