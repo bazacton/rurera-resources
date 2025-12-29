@@ -1934,3 +1934,23 @@ $(document).ready(function() {
     closeOnSelect : false,
   });
 });
+
+
+$(document).on('click', '.add-more-question', function (e) {
+    var question_id = $(this).attr('data-id');
+    var parentObj = $(this).closest('.main-content');
+    rurera_loader(parentObj, 'div');
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/questions-generator/duplicate_question',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"question_id": question_id},
+        success: function (return_data) {
+            //rurera_remove_loader(parentObj, 'div');
+            //parentObj.html(return_data);
+            window.location.reload();
+        }
+    });
+});
