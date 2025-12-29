@@ -48,7 +48,7 @@ $rand_id = rand(999,99999);
     /* Toolbar */
     .equationModal .toolbar{
         display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;
-        padding:12px 18px;border-bottom:1px solid var(--line);position:relative
+        padding:0 0 25px;border-bottom:1px solid var(--line);position:relative
     }
     .equationModal .tool{
         padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;
@@ -83,7 +83,7 @@ $rand_id = rand(999,99999);
     .equationModal .sym .code{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 
     /* Editor Layout */
-    .equationModal .body{padding:16px 18px}
+    .equationModal .body{padding:0 0 25px;}
     .equationModal .editor-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .equationModal textarea{width:100%;height:240px;font-size:15px;padding:10px;border:1px solid #d1d5db;border-radius:10px}
     .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;min-height:240px;overflow:auto}
