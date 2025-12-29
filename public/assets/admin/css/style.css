@@ -151,6 +151,13 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .input-group-append [class*="btn-outline-"] {background-color: #fdfdff;}
 .input-group button {position: relative; outline: none;}
 .input-group i {position: relative; z-index: 6;}
+.input-group:has(.rureradatepicker) i.fa-calendar-week {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    pointer-events: none;
+}
 .form-text {font-size: 12px; line-height: 22px;}
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control-input:checked ~ .custom-control-label::before {background-color: var(--primary) !important;}
