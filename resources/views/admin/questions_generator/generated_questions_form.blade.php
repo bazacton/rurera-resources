@@ -29,13 +29,7 @@ $rand_id = rand(999,99999);
 
     /* Modal */
     .equationModal .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none}
-    .equationModal.modal{
-        position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
-        width:min(1250px,calc(100vw - 24px));
-        background:var(--panel);border-radius:10px;
-        box-shadow:0 12px 40px rgba(0,0,0,.28);
-        display:none;overflow:hidden;
-    }
+    
     .equationModal .header{
         padding:14px 18px;border-bottom:1px solid var(--line);
         display:flex;justify-content:space-between;align-items:center
@@ -43,7 +37,16 @@ $rand_id = rand(999,99999);
     .equationModal .header h3{margin:0;font-weight:700}
     .equationModal .icon-btn{border:none;background:transparent;font-size:20px;line-height:1;padding:6px 10px;border-radius:8px}
     .equationModal .icon-btn:hover{background:#f3f4f6}
-
+    .equationModal .btn-close {
+        border: 0;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: inherit;
+        outline: none;
+    }
     /* Toolbar */
     .equationModal .toolbar{
         display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;
@@ -388,7 +391,7 @@ $rand_id = rand(999,99999);
                     <div class="editor-wrap">
                         <div>
                             <textarea id="equationInput" oninput="renderMath()" class="form-control equationInput" rows="4"></textarea>
-                            <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div>
+                            <!-- <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div> -->
                         </div>
                         <div class="preview" id="preview"></div>
                     </div>
