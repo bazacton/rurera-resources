@@ -379,7 +379,7 @@
                   </div>
                   <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                     <div class="card-body">
-                      <p>How does reading improve language?</p>
+                      <p>By exposing kids to new words and sentence patterns, reading books for kids naturally builds their speaking, writing, and communication skills.</p>
                     </div>
                   </div>
                 </div>
