@@ -481,6 +481,10 @@ table tr:hover .table-links {opacity: 1;}
 .table-responsive table tbody tr:hover .quiz-table-controls,
 .table-sm table tbody tr:hover .quiz-table-controls {opacity: 1; visibility: visible;}
 .quiz-table-controls .btn-sm {color: var(--blue) !important;}
+.note-editable .table:not(.table-sm) tr th,
+.note-editable table th{
+    background-color: #c8d2ec;
+}
 
 @media (max-width: 575.98px) {
     .table-responsive table {min-width: 800px;}
