@@ -2332,6 +2332,9 @@ Quiz Check Answers Page Style End
 .cloud_text.right_middle .cloud_text_element {
     align-items: center;
 }
+[class*="right_"] .cloud_text_element {
+    flex-direction: row-reverse;
+}
 .cloud_text_element {
     display: flex;
     flex-wrap: wrap;
