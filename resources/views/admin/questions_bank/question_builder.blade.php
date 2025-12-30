@@ -562,19 +562,19 @@ $rand_id = rand(999,99999);
 										</div>
 
 										<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
-												<h3>Topic Parts</h3>
+												
 												<div class="topic-parts-block">
-
-												@if(isset( $questionObj->topicPartItem->id))
-													<div class="topic-parts-options">
-														<div class="form-field rureraform-cr-container-medium">
-														<input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
-														<label for="topics_parts-875"><h5 class="font-16 font-weight-bold text-dark">{{$questionObj->topicPartItem->title}}</h5>
-															{{$questionObj->topicPartItem->description}}
-														.</label>
+													<h3>Topic Parts</h3>
+													@if(isset( $questionObj->topicPartItem->id))
+														<div class="topic-parts-options">
+															<div class="form-field rureraform-cr-container-medium">
+															<input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
+															<label for="topics_parts-875"><h5 class="font-16 font-weight-bold text-dark">{{$questionObj->topicPartItem->title}}</h5>
+																{{$questionObj->topicPartItem->description}}
+															.</label>
+															</div>
 														</div>
-													</div>
-												@endif
+													@endif
 												</div>
 												<div class="lms-element-properties">
 													<div class="row">
