@@ -2389,7 +2389,7 @@ Quiz Check Answers Page Style End
     top: 38px;
     bottom: auto;
     border: 12px solid;
-    border-color: lightyellow lightyellow transparent transparent;
+    border-color: #fff #fff transparent transparent;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -2415,7 +2415,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -20px;
     border: 22px solid;
-    border-color: transparent transparent transparent lightyellow;
+    border-color: transparent transparent transparent #fff;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -2441,7 +2441,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -20px;
     border: 12px solid;
-    border-color: lightyellow transparent transparent lightyellow;
+    border-color: #fff transparent transparent #fff;
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -2465,7 +2465,7 @@ Quiz Check Answers Page Style End
     right: 38px;
     bottom: -20px;
     border: 12px solid;
-    border-color: lightyellow lightyellow transparent transparent;
+    border-color: #fff #fff transparent transparent;
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -2489,7 +2489,7 @@ Quiz Check Answers Page Style End
     right: 0px;
     bottom: -20px;
     border: 12px solid;
-    border-color: lightyellow lightyellow transparent transparent;
+    border-color: #fff #fff transparent transparent;
 }
 
 /* Right triangle, right side slightly down*/
@@ -2515,7 +2515,7 @@ Quiz Check Answers Page Style End
     top: 38px;
     bottom: auto;
     border: 12px solid;
-    border-color: lightyellow transparent transparent lightyellow;
+    border-color: #fff transparent transparent #fff;
 }
 
 /* Right triangle placed top right flush. */
