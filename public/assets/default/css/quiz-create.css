@@ -2371,31 +2371,6 @@ Quiz Check Answers Page Style End
     padding: 25px;
     border: 5px solid #666;
 }
-/* Right triangle placed top left flush. */
-.left_top .cloud_nner_text:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: -40px;
-    right: auto;
-    top: -8px;
-    bottom: auto;
-    border: 32px solid;
-    border-color: #666 transparent transparent transparent;
-}
-.left_top .cloud_nner_text:after{
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: -20px;
-    right: auto;
-    top: 0px;
-    bottom: auto;
-    border: 22px solid;
-    border-color: #fff transparent transparent transparent;
-}
 
 /* Right triangle, left side slightly down */
 .left_top .cloud_nner_text:before {
