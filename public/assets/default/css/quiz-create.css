@@ -2279,7 +2279,6 @@ Quiz Check Answers Page Style End
 .cloud_text {
     display: inline-block;
     position: relative;
-    width: 200px;
     height: auto;
     background-color: lightyellow;
     border-radius: 50px;
