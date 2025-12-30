@@ -100,13 +100,16 @@
                                             <div class="col-12 col-md-6">
                                                 <div class="form-group">
                                                     <label>{{ trans('/admin/main.category') }}</label>
-                                                    <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
-                                                        <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
+                                                    <div class="select-holder">
+                                                        <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
+                                                            <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
 
-                                                        @foreach($categories as $category)
-                                                            <option value="{{ $category->id }}" {{ (((!empty($post) and $post->category_id == $category->id) or (old('category_id') == $category->id)) ? 'selected="selected"' : '') }}>{{ $category->title }}</option>
-                                                        @endforeach
-                                                    </select>
+                                                            @foreach($categories as $category)
+                                                                <option value="{{ $category->id }}" {{ (((!empty($post) and $post->category_id == $category->id) or (old('category_id') == $category->id)) ? 'selected="selected"' : '') }}>{{ $category->title }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                    
 
                                                     @error('category_id')
                                                     <div class="invalid-feedback">
