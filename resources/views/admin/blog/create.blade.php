@@ -186,7 +186,7 @@
                                     @enderror
                                 </div>
 
-                                <div class="form-group custom-switches-stacked">
+                                <div class="form-group custom-switches-stacked flex-row">
                                     <label class="input-label">{{ trans('admin/main.robot') }}:</label>
                                     <label class="custom-switch pl-0">
                                         <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
@@ -197,7 +197,7 @@
                                     </label>
                                 </div>
 
-                                <div class="form-group custom-switches-stacked">
+                                <div class="form-group custom-switches-stacked flex-row">
                                        <label class="input-label">Include In XML:</label>
                                        <label class="custom-switch pl-0">
                                            <label class="custom-switch-description mb-0 mr-2">Not Include</label>
