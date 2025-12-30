@@ -146,7 +146,7 @@
 .post-inner .order-list li {
     position: relative;
     padding-left: 35px;
-    list-style: initial;
+    list-style: none;
 }
 .order-list li:before {
     counter-increment: section;
@@ -284,7 +284,7 @@
     margin: 15px 0 10px;
 }
 .blog-single-post li {
-    list-style: auto;
+    list-style: inherit;
 }
 .blog-single-post .post-show ul li {
     list-style: disc;
