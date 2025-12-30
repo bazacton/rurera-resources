@@ -2274,10 +2274,28 @@ Quiz Check Answers Page Style End
     flex-direction: column;
 }
 /* Questions Cloud Style Start */
-.rureraform-third img {
+.avatar_images .rureraform-third img {
     width: 50px;
     height: auto;
     object-fit: contain;
+}
+.avatar_images .rureraform-third label {
+    margin: 0;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+.avatar_images .rureraform-third label input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.avatar_images .rureraform-third {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 /* CSS talk bubble */
 .cloud_text {
