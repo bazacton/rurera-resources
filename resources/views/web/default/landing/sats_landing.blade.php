@@ -11,15 +11,15 @@
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".gallery-sub-header" data-aos-offset="100" data-aos-duration="3000">
                     <h1 class="font-72 font-weight-bold">Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
-                    <h2 class="mb-15 font-30">Maximize Your Performance: Boost your sats scores.
+                    <h2 class="mb-15 font-30">Maximize Your Performance: Boost Your SATS Scores.
                     </h2>
                     <p class="font-19">
-                        Don't leave your SAT performance to chance! Join us to unlock your full potential and excel on the SATs. Transform your test preparation with our expert guidance and resources—achieve the scores you’ve always dreamed of!
+                        Don't leave your SATs performance to chance! Join us to unlock your full potential and excel on the sats exams. Transform your test preparation with our expert guidance and practice sats papers achieve the scores you’ve always dreamed of!
 
                     </p>
                     <ul class="mb-0 p-0">
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Top Performance: Engaging Quizzes & Assessments
+                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Top Performance: Engaging Quizzes & SAT Assessment Test Prep
                         </li>
                         <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Comprehensive Exam Prep: Tools & Strategies
@@ -250,9 +250,8 @@
                         <h2 class="mt-0 mb-10 text-white font-40">Master the SATs with Rurera
                         </h2>
                         <p class="text-white font-19">
-                            Work through a variety of SATs practice and SATs quizzes questions to improve your skills
-                            and become familiar with the <br />
-                            types of questions you'll encounter on the SATs exam.
+                            Work through a variety of SATs practice and SATs quizzes to improve your skills and become familiar with the<br />
+                            types of questions you'll encounter on the year 6 sats exam.
                         </p>
                     </div>
                 </div>
@@ -277,7 +276,7 @@
                                         <div class="text-holder">
                                             <h3 class="post-title text-white">Learn &amp; Understand</h3>
                                             <p class="mt-15 text-white">
-                                                Build a solid foundation with SATs quizzes, tests, and assessments, and get instant feedback.
+                                                Build a solid foundation with SATs quizzes, SATs tests, and key stage 2 sats papers, and get instant feedback to reinforce learning.
                                             </p>
                                         </div>
                                     </div>
@@ -292,7 +291,7 @@
                                         <div class="text-holder">
                                             <h3 class="post-title text-white"> Practice Tests</h3>
                                             <p class="mt-15 text-white">
-                                                Sharpen your skills with targeted practice tests to strengthen weak areas and boost your scores.
+                                                Sharpen your skills with targeted practice sats papers to strengthen weak areas and boost your scores on the sat exam uk.
                                             </p>
                                         </div>
                                     </div>
@@ -307,7 +306,7 @@
                                         <div class="text-holder">
                                             <h3 class="post-title text-white">Track progress</h3>
                                             <p class="mt-15 text-white">
-                                                Monitor your improvement and pinpoint areas for further development.
+                                                Monitor your improvement and pinpoint areas for further development using detailed analytics from our SATs practice platform.
                                             </p>
                                         </div>
                                     </div>
@@ -326,7 +325,7 @@
                     <div class="section-title text-left mb-40">
                         <h2 class="mb-15 font-40">Endless SATs Resources, Endless Practice Opportunities</h2>
                         <p class="font-19 text-gray">
-                            With consistent effort and top-tier SATs resources, boost your performance on exam day.
+                            Monitor your improvement and pinpoint areas for further development using detailed analytics from our SATs practice platform.
                         </p>
                     </div>
                 </div>
@@ -544,9 +543,8 @@
                     <h2 class="mt-0 mb-10 font-40"> Conquer the SATs with Confidence
                     </h2>
                     <p class="font-19 text-gray">
-                        Rurera offer the capability to track their onscreen and practiced time activity well remaining
-                        on system and <br />
-                        can analyze the performance against each topic.
+                        Rurera offers the capability to track onscreen activity and analyze performance against each topic,<br />
+                        ensuring focused revision for the sats uk assessments.
                     </p>
                 </div>
             </div>
@@ -555,7 +553,7 @@
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">KS1 & KS2 SATs Practice</h2>
                         <p class="font-16 text-gray mt-10">
-                            Rurera offers comprehensive KS1 and KS2 SATs practice, providing interactive exercises and personalized feedback tailored to each student's needs. This helps young learners build confidence and master essential skills for their assessments.
+                            Rurera offers comprehensive KS1 sats papers and KS2 SATs practice, providing interactive exercises and personalized feedback. This helps young learners build confidence for their sats exams, including ks1 sats test papers.
                         </p>
                     </div>
                 </div>
@@ -584,7 +582,7 @@
                         <h2 class="font-40 text-dark">Ace SATs with Quizzes & Assessments!
                         </h2>
                         <p class="font-16 text-gray mt-10">
-                            SATs quizzes and assessments cover key subjects like English, Maths, Science, and Computing. Enhance English reading skills and foster a love for books. Support Design and Technology learning. Ideal for effective SATs exam practice.
+                            Our SATs quizzes and assessments cover key subjects like English and Maths. They are ideal for effective SATs exam practice, helping students tackle year six sats questions with confidence.
 
                         </p>
                     </div>
@@ -599,7 +597,7 @@
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Track Individual Progress with Ease</h2>
                         <p class="font-16 text-gray mt-10">
-                        Rurera makes it simple to track individual progress by offering detailed insights into each student's performance. The platform provides comprehensive activity logs that highlight strengths and areas needing improvement.
+                        Rurera makes it simple to track individual progress by offering detailed insights into each student's performance on year 6 sats practice papers pdf and other resources.
 
                         </p>
                     </div>
@@ -627,7 +625,7 @@
                 <div>
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark"> Effortlessly Track Practice</h2>
-                        <p class="font-16 text-gray mt-10">Easily monitor practice with detailed logs and performance insights, helping you keep track of progress and pinpoint areas needing improvement.</p>
+                        <p class="font-16 text-gray mt-10">Easily monitor SATs practice with detailed logs and performance insights, helping you keep track of progress and pinpoint areas needing improvement.</p>
                     </div>
                 </div>
             </div>
@@ -640,7 +638,7 @@
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Enhance Learning with SATs Papers</h2>
                         <p class="font-16 text-gray mt-10">
-                            Enhance learning by using SATs papers, which provide targeted practice and familiarize students with exam formats. These papers help reinforce key concepts, improve problem-solving skills, and build confidence by simulating real test conditions.
+                            Enhance learning by using sats papers, which provide targeted practice and familiarize students with exam formats. These sat exam past papers help reinforce key concepts and build confidence.
                         </p>
                     </div>
                     <div class="flex-grow-1 ml-15"></div>
@@ -667,8 +665,8 @@
                     <div class="section-title text-center mb-50">
                         <h2 class="mt-0 mb-10 text-white font-40"> Ignite Your Path to Success with 100+ SATs practices</h2>
                         <p class="font-19 text-white">
-                            With engaging learning experiences, proven SATs resources, and SATs practice, you'll be <br />well-prepared to achieve your best scores
-                            on the SATs exam.
+                            With engaging learning experiences and proven SATs resources, you'll be well-prepared to achieve your best scores
+                            on the SATs exams.
                         </p>
                     </div>
                 </div>
@@ -733,7 +731,7 @@
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
                         <h2 class="mb-10 font-40">Personalized SATs Prep with Rurera</h2>
-                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
+                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored SATs practice and assessments that meet their unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -744,7 +742,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Key to Effective Learning</span>
                         </h3>
-                        <p itemprop="description"> Build knowledge through SATs quizzes, SATs tests and SATs assessments with immediate feedback.
+                        <p itemprop="description"> Build knowledge through SATs quizzes, SATs tests, and SATs assessments with immediate feedback.
                         </p>
                     </div>
                 </div>
@@ -756,7 +754,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">SATs 100s online Assessments</span>
                         </h3>
-                        <p itemprop="description">Unlock 100+ Online SATs Quizzes and Assessments for High Achievers.</p>
+                        <p itemprop="description"> Unlock 100+ Online SATs Quizzes and Assessments for high achievers, including preparation for year six sats test papers.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -767,7 +765,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Past SATs Papers</span>
                         </h3>
-                        <p itemprop="description"> Access SATs papers and resources to boost learning and master key concepts for advanced problem-solving.
+                        <p itemprop="description"> Access sats year 6 past papers and resources to boost learning and master key concepts for advanced problem-solving.
                         </p>
                     </div>
                 </div>
@@ -779,7 +777,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Learn, Play & Win</span>
                         </h3>
-                        <p itemprop="description">Enhance your skills, earn rewards, and win toys through continuous learning.
+                        <p itemprop="description">Enhance your skills, earn rewards, and win toys through continuous learning and SATs practice.
 
                         </p>
                     </div>
@@ -792,7 +790,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Student Engagement</span>
                         </h3>
-                        <p itemprop="description"> Engage students with challenges, test practices, and rewards like toys and collectibles.
+                        <p itemprop="description"> Engage students with challenges, practice sats, and rewards like toys and collectibles.
                         </p>
                     </div>
                 </div>
@@ -804,7 +802,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Activity Monitoring</span>
                         </h3>
-                        <p itemprop="description"> Track SATs practice and analyze logs to identify strengths and improve.
+                        <p itemprop="description"> Track progress and support your child's achievements with key learning insights from their work on sats papers.
                         </p>
                     </div>
                 </div>
@@ -831,7 +829,7 @@
                             <span class="text-dark-charcoal">Interactive Learning</span>
                         </h3>
                         <p itemprop="description">
-                            Explore online books, interactive multiplication, and activities that make learning fun and effective.
+                           Explore activities that make mastering year six sats topics fun and effective.
                         </p>
                     </div>
                 </div>
@@ -845,7 +843,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Adaptive Assessments</span>
                         </h3>
-                        <p itemprop="description">Get instant feedback and personalized learning paths with adaptive tests to ensure efficient progress.
+                        <p itemprop="description">Explore activities that make mastering year six sats topics fun and effective.
                         </p>
                     </div>
                 </div>
@@ -1025,12 +1023,12 @@
                                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading7">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">What are SATs in UK?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">Where can I find free SATs papers?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse7" class="collapse" aria-labelledby="heading7">
                                         <div class="card-body">
-                                            <p>SATs (Standard Assessment Tests) are exams administered to primary school children in England to evaluate their academic progress and the quality of education at their schools. These tests are taken at the end of Key Stage 1 (Years 1–2) and Key Stage 2 (Years 3–6). <br>In Key Stage 2, SATs focus on English and mathematics, but do not include science. </p>
+                                            <p>While some previous SATs papers are available on government websites, they typically don't include answer sheets or explanations. <br>Rurera offers both past papers and comprehensive support materials through our subscription platform. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1038,51 +1036,43 @@
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
                                                 data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo"> When do students take their SATs?</button></h3>
+                                                aria-controls="collapseTwo"> Are SATs results important for secondary school?</button></h3>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                The Year 6 SATs in 2025 will take place between <strong>12th May-15th May:</strong>
+                                                Secondary schools receive SATs results but most conduct their own assessments for setting purposes. 
+                                                However, strong SATs performance indicates good foundational knowledge for GCSE subjects years later.
                                             </p>
-                                            <ul>
-                                                <li> <strong>Monday:</strong> English paper 1 and English paper 2</li>
-                                                <li><strong>Tuesday: </strong> English paper 3</li>
-                                                <li><strong>Wednesday: </strong> Maths paper 1 and maths paper 2</li>
-                                                <li> <strong>Thursday:</strong> Maths paper 3</li>
-                                            </ul>
+                                            
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> Which subjects are assessed during the SATs exams?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> How much should my child practice for SATs?</button>
                                         </h3>
                                     </div>
                                     <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p> Year 6 SATs assess the topics taught on the Key Stage 2 national curriculum for English and maths.
+                                            <p> We recommend short, regular sessions (20-30 minutes, 3-4 times weekly) rather than long cramming sessions. Quality of practice matters more than quantity.
 
                                             </p>
-                                            <ul>
-                                                <li><strong>English:</strong> Reading, spelling, vocabulary, grammar and punctuation</li>
-                                                <li><strong>Maths:</strong> Number, data, geometry, algebra, measurement, ratio and proportion</li>
-                                            </ul>
-                                            <p>There are 6 papers in total – 3 for English (grammar and punctuation, spelling, and reading), and 3 for maths (2 reasoning papers and an arithmetic paper)</p>
+                                        
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">Is it compulsory for students to take the SATs exams?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">What's the difference between KS1 and KS2 SATs?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>SATs play a crucial role in providing teachers and parents with an understanding of children's strengths and areas that need improvement. The results help teachers identify which students may require additional support as they transition from primary to secondary school. <br> Additionally, the government uses these results to assess the quality of education in schools nationwide.
+                                            <p>KS1 SATs papers are generally shorter, teacher-administered, and marked in schools. Key Stage 2 SATs papers are externally set, taken under formal conditions, and externally marked (except writing).<br> and externally marked (except writing).
                                             </p>
                                         </div>
                                     </div>
@@ -1090,26 +1080,26 @@
                                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading9">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">What is the process for scoring SATs, and how are student results determined?
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">When will 2025 SATs results be released?
                                             </button>
                                         </h3>
                                     </div>
                                     <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>SATs are scored using scaled scores: A score of 100 represents the expected standard. Scores above 100 indicate higher performance, and below 100 indicate a need for improvement.</p>
-                                            <p><strong>Total score:120</strong></p>
+                                            <p>SATs results 2025 will be released to schools in early July 2025, with parents receiving their child's results before the end of the summer term.</p>
+                                            
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading10">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">Does Rurera align with the national curriculum and standards?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">How can I help my child with SATs anxiety?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>Yes. Our content is created by teachers and grounded in the Key Stage 2 national curriculum in England. Rurera covers all the core topics in English, maths and science for Years 3–6 (ages 7–11).
+                                            <p>Maintain perspective (they're snapshots, not destiny), establish consistent routines, celebrate effort not just results, and use our wellbeing resources designed specifically for SATs preparation.
                                             </p>
                                         </div>
                                     </div>
@@ -1151,7 +1141,7 @@
                                     </div>
                                     <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>Not at all – we've crafted Rurera to be enjoyable and simple for your child to use independently. With helpsheets, they can build new knowledge and gain confidence in learning on their own.
+                                            <p>Not at all, we've crafted Rurera to be enjoyable and simple for your child to use independently. With helpsheets, they can build new knowledge and gain confidence in learning on their own.
 
                                             </p>
                                         </div>
