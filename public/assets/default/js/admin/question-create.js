@@ -10906,6 +10906,11 @@ $(document).on('click', '.quiz-group', function () {
     $(".rureraform-admin-popup-title h3").html('<i class="fas fa-cog element-properties-label"></i> '+element_title);
 
     rureraform_properties_open($(this));
+
+
+    if($('select[name="rureraform-label_type"]').length > 0){
+        $('select[name="rureraform-label_type"]').change();
+    }
 });
 $(document).on('click', '.quiz-column-group', function (e) {
 
