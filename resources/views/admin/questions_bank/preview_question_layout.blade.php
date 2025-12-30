@@ -368,7 +368,7 @@ $rand_id = rand(999,99999);
                     <div class="editor-wrap">
                         <div>
                             <textarea id="equationInput" oninput="renderMath()" class="form-control equationInput" rows="4"></textarea>
-                            <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div>
+                            <!-- <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div> -->
                         </div>
                         <div class="preview" id="preview"></div>
                     </div>
