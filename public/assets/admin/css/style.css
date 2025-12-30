@@ -1702,7 +1702,7 @@ body .form-group .select2-container {width: 100% !important;}
 #question_properties .bootstrap-tagsinput input::-webkit-input-placeholder {color: #495057; opacity: 1}
 #question_properties .select2-container--default .select2-selection--single .select2-selection__rendered {line-height: 38px !important;}
 #question_properties .select2-container--default .select2-selection--single .select2-selection__placeholder {color: #495057;}
-.note-editor li {list-style: auto;}
+.note-editor li {list-style: initial;}
 
 .lms-quiz-create .search-fields-block {margin-bottom: 15px;}
 body:has(.template_display_modal) .modal-backdrop {z-index: 1213;}
