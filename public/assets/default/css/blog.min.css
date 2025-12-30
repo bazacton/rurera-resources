@@ -290,3 +290,7 @@
     gap: 15px 0;
     padding-left: 15px;
 }
+.cart-banner.single-post-subheader {
+    background-color: #fcfcfc;
+    padding-bottom: 50px;
+}
