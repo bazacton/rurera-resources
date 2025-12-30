@@ -2352,7 +2352,7 @@ Quiz Check Answers Page Style End
 }
 
 /* Right triangle, left side slightly down */
-.left_top span:before {
+.left_top .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2364,7 +2364,7 @@ Quiz Check Answers Page Style End
     border: 20px solid;
     border-color: #666 #666 transparent transparent;
 }
-.left_top span:after{
+.left_top .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
