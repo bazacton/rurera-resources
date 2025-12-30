@@ -77,7 +77,7 @@
     background-color: #eee;
     border-radius: 25px;
 }
-.single-post-nav li {
+.blog-single-post .single-post-nav li {
     list-style: none;
 }
 .single-post-nav a {
@@ -143,9 +143,10 @@
     flex-direction: column;
     counter-reset: section;
 }
-.order-list li {
+.post-inner .order-list li {
     position: relative;
     padding-left: 35px;
+    list-style: none;
 }
 .order-list li:before {
     counter-increment: section;
@@ -281,6 +282,9 @@
 .blog-single-post .post-show h3 {
     font-size: 16px;
     margin: 15px 0 10px;
+}
+.blog-single-post li {
+    list-style: auto;
 }
 .blog-single-post .post-show ul li {
     list-style: disc;
