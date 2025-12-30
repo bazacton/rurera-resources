@@ -46,84 +46,92 @@
                                         @else
                                             <input type="hidden" name="locale" value="{{ getDefaultLocale() }}">
                                         @endif
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="input-label d-block">{{ trans('update.author') }}</label>
 
-                                        <div class="form-group mt-15 ">
-                                            <label class="input-label d-block">{{ trans('update.author') }}</label>
+                                                    <select name="author_id" class="form-control search-user-select2"
+                                                            data-placeholder="{{ trans('update.select_a_user') }}"
+                                                            data-search-option="except_user"
+                                                    >
+                                                        @if(!empty($post))
+                                                            <option value="{{ $post->author->id }}" selected>{{ $post->author->get_full_name() }}</option>
+                                                        @else
+                                                            <option selected disabled>{{ trans('update.select_a_user') }}</option>
+                                                        @endif
+                                                    </select>
 
-                                            <select name="author_id" class="form-control search-user-select2"
-                                                    data-placeholder="{{ trans('update.select_a_user') }}"
-                                                    data-search-option="except_user"
-                                            >
-                                                @if(!empty($post))
-                                                    <option value="{{ $post->author->id }}" selected>{{ $post->author->get_full_name() }}</option>
-                                                @else
-                                                    <option selected disabled>{{ trans('update.select_a_user') }}</option>
-                                                @endif
-                                            </select>
-
-                                            @error('teacher_id')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>{{ trans('admin/main.title') }}</label>
-                                            <input type="text" name="title"
-                                                   class="form-control  @error('title') is-invalid @enderror"
-                                                   value="{{ !empty($post) ? $post->title : old('title') }}"
-                                                   placeholder="{{ trans('admin/main.choose_title') }}"/>
-                                            @error('title')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Post URL</label>
-                                            <input type="text" name="slug"
-                                                   class="form-control  @error('slug') is-invalid @enderror"
-                                                   value="{{ !empty($post) ? $post->slug : old('slug') }}"
-                                                   placeholder="Post URL"/>
-                                            @error('slug')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
-                                        </div>
-                                        <div class="form-group">
-                                            <label>{{ trans('/admin/main.category') }}</label>
-                                            <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
-                                                <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
-
-                                                @foreach($categories as $category)
-                                                    <option value="{{ $category->id }}" {{ (((!empty($post) and $post->category_id == $category->id) or (old('category_id') == $category->id)) ? 'selected="selected"' : '') }}>{{ $category->title }}</option>
-                                                @endforeach
-                                            </select>
-
-                                            @error('category_id')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label class="input-label">{{ trans('public.cover_image') }}</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image" data-preview="holder">
-                                                        <i class="fa fa-chevron-up"></i>
-                                                    </button>
+                                                    @error('teacher_id')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
                                                 </div>
-                                                <input type="text" name="image" id="image" value="{{ (!empty($post)) ? $post->image : old('image') }}" class="form-control @error('image') is-invalid @enderror" placeholder="{{ trans('update.blog_cover_image_placeholder') }}"/>
-                                                @error('image')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label>{{ trans('admin/main.title') }}</label>
+                                                    <input type="text" name="title"
+                                                        class="form-control  @error('title') is-invalid @enderror"
+                                                        value="{{ !empty($post) ? $post->title : old('title') }}"
+                                                        placeholder="{{ trans('admin/main.choose_title') }}"/>
+                                                    @error('title')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
                                                 </div>
-                                                @enderror
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Post URL</label>
+                                                    <input type="text" name="slug"
+                                                        class="form-control  @error('slug') is-invalid @enderror"
+                                                        value="{{ !empty($post) ? $post->slug : old('slug') }}"
+                                                        placeholder="Post URL"/>
+                                                    @error('slug')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label>{{ trans('/admin/main.category') }}</label>
+                                                    <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
+                                                        <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
+
+                                                        @foreach($categories as $category)
+                                                            <option value="{{ $category->id }}" {{ (((!empty($post) and $post->category_id == $category->id) or (old('category_id') == $category->id)) ? 'selected="selected"' : '') }}>{{ $category->title }}</option>
+                                                        @endforeach
+                                                    </select>
+
+                                                    @error('category_id')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="input-label">{{ trans('public.cover_image') }}</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button type="button" class="input-group-text admin-file-manager" data-input="image" data-preview="holder">
+                                                                <i class="fa fa-chevron-up"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input type="text" name="image" id="image" value="{{ (!empty($post)) ? $post->image : old('image') }}" class="form-control @error('image') is-invalid @enderror" placeholder="{{ trans('update.blog_cover_image_placeholder') }}"/>
+                                                        @error('image')
+                                                        <div class="invalid-feedback">
+                                                            {{ $message }}
+                                                        </div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
