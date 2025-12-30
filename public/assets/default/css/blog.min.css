@@ -269,3 +269,24 @@
     font-size: 12px;
     font-weight: 500;
 }
+.blog-single-post .post-show h1 {
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+.blog-single-post .post-show h2 {
+    font-size: 18px;
+    margin: 15px 0 0;
+}
+.blog-single-post .post-show h3 {
+    font-size: 16px;
+    margin: 15px 0 15px;
+}
+.blog-single-post .post-show li {
+    list-style: disc;
+}
+.blog-single-post .post-show ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    padding-left: 15px;
+}
