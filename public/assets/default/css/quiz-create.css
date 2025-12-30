@@ -2368,8 +2368,8 @@ Quiz Check Answers Page Style End
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
-    padding: 25px;
-    border: 5px solid #666;
+    padding: 15px 20px;
+    border: 2px solid #666;
 }
 
 /* Right triangle, left side slightly down */
@@ -2378,11 +2378,11 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -40px;
+    left: -32px;
     right: auto;
-    top: 30px;
+    top: 34px;
     bottom: auto;
-    border: 20px solid;
+    border: 16px solid;
     border-color: #666 #666 transparent transparent;
 }
 .left_top .cloud_nner_text:after{
@@ -2390,11 +2390,11 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -20px;
+    left: -30px;
     right: auto;
-    top: 38px;
+    top: 35px;
     bottom: auto;
-    border: 12px solid;
+    border: 16px solid;
     border-color: #fff #fff transparent transparent;
 }
 
@@ -2473,6 +2473,9 @@ Quiz Check Answers Page Style End
     border: 12px solid;
     border-color: #fff transparent transparent #fff;
 }
+.left_middle .cloud_nner_text:before {}
+.left_middle .cloud_nner_text:before {}
+ 
 /* Questions Cloud Style End */
 @media screen and (max-width: 782px) {
     .preview-question-area .question-right-side {
