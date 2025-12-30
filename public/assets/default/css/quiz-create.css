@@ -2517,32 +2517,6 @@ Quiz Check Answers Page Style End
     border: 12px solid;
     border-color: #fff transparent transparent #fff;
 }
-
-/* Right triangle placed top right flush. */
-.right_top .cloud_nner_text:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-    right: -40px;
-    top: -8px;
-    bottom: auto;
-    border: 32px solid;
-    border-color: #666 transparent transparent transparent;
-}
-.right_top .cloud_nner_text:after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-    right: -20px;
-    top: 0px;
-    bottom: auto;
-    border: 20px solid;
-    border-color: lightyellow transparent transparent transparent;
-}
 /* Questions Cloud Style End */
 @media screen and (max-width: 782px) {
     .preview-question-area .question-right-side {
