@@ -2496,7 +2496,30 @@ Quiz Check Answers Page Style End
     border: 16px solid;
     border-color: #fff transparent transparent #fff;
 }
- 
+/* right Center triangle */
+.right_middle .cloud_nner_text:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -44px;
+    left: auto;
+    top: 50%;
+    border: 22px solid;
+    border-color: transparent transparent transparent #666;
+    transform: translateY(-50%);
+}
+.right_middle .cloud_nner_text:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -42px;
+    top: 50%;
+    border: 22px solid;
+    border-color: transparent transparent transparent #fff;
+    transform: translateY(-50%);
+}
 /* Questions Cloud Style End */
 @media screen and (max-width: 782px) {
     .preview-question-area .question-right-side {
