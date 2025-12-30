@@ -2316,9 +2316,13 @@ Quiz Check Answers Page Style End
 .cloud_text {
     display: inline-block;
     position: relative;
-    padding: 15px;
+    padding: 15px 0;
     box-sizing: border-box;
     border-radius: 8px;
+}
+.cloud_text.left_bottom,
+.cloud_text.right_bottom {
+    padding-bottom: 40px;
 }
 .cloud_text_element {
     display: flex;
