@@ -12,8 +12,8 @@
                 <div class="col-12">
                     <h1 class="text-white font-50 font-weight-bold mb-15">Key Stage 2 Learning<span class="text-scribble">(KS2)</span></h1>
                     <p class="text-white font-19 mb-0">
-                        If you are aged between 7 and 11 then have fun and learn with the 5k+ quizzes<br />
-                        that have been written especially for you.
+                        If you are aged between 7 and 11, then have fun and learn with 5k+ KS2 quizzes and interactive<br />
+                        resources written especially for you. Dive into our targeted KS2 tests and assessments.
                     </p>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="col-12">
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 3</span></h2>
-                        <p>KS1 courses - Comprehensive list of courses for Children Aged 5, 6 and 7.</p>
+                        <p>Master the foundational curriculum for Year 3 with engaging KS2 quizzes and practice materials. Build essential skills early.</p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -78,7 +78,7 @@
                     </div>
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 4</span></h2>
-                        <p>KS1 courses - Comprehensive list of courses for Children Aged 5, 6 and 7.</p>
+                        <p>Advance your learning in Year 4 with our comprehensive KS2 practices and resources designed to solidify key concepts.</p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -128,7 +128,7 @@
                     </div>
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 5</span></h2>
-                        <p>KS1 courses - Comprehensive list of courses for Children Aged 5, 6 and 7.</p>
+                        <p>Excel in Year 5 with targeted preparation, including practice that mirrors sats papers to build confidence and ability.</p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -222,7 +222,7 @@
                     </div>
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 6</span></h2>
-                        <p>KS1 courses - Comprehensive list of courses for Children Aged 5, 6 and 7.</p>
+                        <p>Ensure success in Year 6 and beyond with our ultimate preparation tools. Access<a href="https://rurera.com/sats-preparation">year 6 sats papers</a>sats past papers, and full sats mock papers for complete readiness.</p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -310,15 +310,14 @@
                     <div class="section-title">
                         <h2 class="font-40 d-block mb-20">Best Part about KS2?</h2>
                         <p class="font-16 font-weight-normal text-gray mb-30">
-                            Experience a new way of revising with our teacher-written KS2 quizzes designed for years 3, 4, 5, and 6 of the curriculum. Success in the KS2 curriculum is within reach. We bring education to life by incorporating
-                            Key Stage 2 Resources, KS2 quizzes, KS2 practices, KS2 assessments and KS2 Tests.
+                            Experience a new way of revising with our teacher-written KS2 quizzes designed for Years 3, 4, 5, and 6. Success in the KS2 curriculum is within reach. 
+                            We bring education to life with Key Stage 2 Resources, KS2 quizzes, KS2 practices, KS2 assessments, and KS2 Tests.
                         </p>
                     </div>
                     <div class="section-title">
                         <h3 class="font-40 d-block mb-20">The best part about KS2 quizzes?</h3>
                         <p class="font-16 font-weight-normal text-gray">
-                            They're enjoyable! We're like the delightful combination of brownies and ice cream in the world of education, and we can help students discover how rewarding learning can be.
-                        </p>
+                        They're enjoyable! We make mastering maths sats papers and sats english papers engaging. We help students discover how rewarding learning can be while preparing for key milestones.
                     </div>
                     <div class="align-items-center d-flex justify-content-center pt-30"><a href="/pricing" class="btn btn-primary rounded-pill">View all courses</a></div>
                 </div>
@@ -334,23 +333,23 @@
                 <div class="col-12">
                     <ul class="row circle-icon-list">
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Check in with your child regularly to gauge their progress and understanding.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Check progress regularly using our KS2 assessments and trackers.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Offer guidance and support when needed, and help them manage their time effectively.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Offer guidance on using sats past papers and managing study time effectively.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Break down larger tasks into smaller, manageable ones, and help them prioritize their work.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Break down revision of year 6 maths questions into manageable tasks.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Stay in regular contact with your child's teachers to understand their expectations, curriculum, and any specific
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Stay informed about the curriculum and your child's use of KS2 practice resources.
                             guidelines.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative">
-                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Provide an organized space for your child study. Minimize distractions, such as noise or electronic devices during work.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Provide a quiet, organized space for tackling sats maths papers or sats english test papers.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative">
-                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Recognize and celebrate your child's efforts and accomplishments to continue practicing good management skills.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Celebrate efforts and milestones in their KS2 learning journey.
                         </li>
                     </ul>
                 </div>
@@ -364,12 +363,10 @@
                     <div class="section-title">
                         <h2 class="font-40 mb-10">The Importance of KS2</h2>
                         <p>
-                            Year 3, Year 4, Year 5, and Year 6 at primary school are crucial stages. We already understand that KS1 lays the foundation for education, but the transition to KS2 marks a crucial stage where students start setting
-                            the tone for their academic journey throughout their lives.
+                            Years 3 to 6 are crucial stages. While KS1 lays the foundation, KS2 is where students set the tone for their future academic journey. 
                         </p>
                         <p class="pt-20">
-                            A strong beginning sets the foundation for a thriving education, fostering continuous growth year after year and nurturing the inner drive of students, leading them towards achievements in academics that we truly
-                            value.
+                           A strong performance here, supported by practice with previous sats papers ks2 and year 6 sats practice papers, builds the confidence and skills needed for success, including the Year 6 SATs.
                         </p>
                     </div>
                 </div>
@@ -420,10 +417,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="font-40 mb-10">KS1 Expert Resources</h2>
+                        <h2 class="font-40 mb-10">KS2 Expert Resources</h2>
                         <p>
-                            Teachers understand the vital importance of KS1, so they were thrilled when we asked them, "Want to write our KS2 quiz material?" And boy, did they do an amazing job. Each quiz consists of ten questions, with
-                            supportive notes provided at the end of each question. The important thing is that we cover all the requirements specified in the National Curriculum.
+                            Our resources are crafted by teachers who understand the KS2 curriculum. Each KS2 quiz and piece of practice material, from ks2 sats papers revision to topic-specific assessments, is designed to meet
+                            National Curriculum requirements. We provide the essential tools, including sats papers ks2, to ensure thorough preparation.
+                            For comprehensive Key Stage 2 preparation, explore all our resource
                         </p>
                     </div>
                 </div>
