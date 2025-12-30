@@ -54,7 +54,7 @@
 .blog-single-post .post-show > div {
     line-height: 26px;
 }
-.blog-sidebar {
+.blog-single-post .blog-sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
