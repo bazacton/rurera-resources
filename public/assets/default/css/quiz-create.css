@@ -2286,6 +2286,9 @@ Quiz Check Answers Page Style End
     border-radius: 5px;
     padding: 10px;
 }
+.avatar_images .rureraform-third label:has(input:checked) {
+    border-color: var(--primary);
+}
 .avatar_images .rureraform-third label input {
     position: absolute;
     width: 0;
