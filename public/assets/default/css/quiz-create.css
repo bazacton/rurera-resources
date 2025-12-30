@@ -2274,7 +2274,11 @@ Quiz Check Answers Page Style End
     flex-direction: column;
 }
 /* Questions Cloud Style Start */
-
+.rureraform-third img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
 /* CSS talk bubble */
 .cloud_text {
     display: inline-block;
