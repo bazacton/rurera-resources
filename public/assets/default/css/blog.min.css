@@ -164,13 +164,13 @@
 .post-back-btn {
     display: inline-block;
     position: relative;
-    color: var(--secondary);
+    color: var(--primary);
 }
 .post-back-btn:before {
     content: "\2190";
     margin-right: 5px;
     display: inline-block;
-    color: var(--secondary);
+    color: var(--primary);
 }
 .blog-single-post .rurera-blog.blog-medium {
     min-height: 390px;
