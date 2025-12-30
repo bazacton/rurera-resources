@@ -282,7 +282,7 @@
     font-size: 16px;
     margin: 15px 0 10px;
 }
-.blog-single-post .post-show li {
+.blog-single-post .post-show ul li {
     list-style: disc;
 }
 .blog-single-post .post-show ul {
