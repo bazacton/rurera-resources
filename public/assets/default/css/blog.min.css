@@ -146,7 +146,7 @@
 .post-inner .order-list li {
     position: relative;
     padding-left: 35px;
-    list-style: none;
+    list-style: initial;
 }
 .order-list li:before {
     counter-increment: section;
