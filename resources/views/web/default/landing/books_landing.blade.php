@@ -201,7 +201,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Enjoy Every E-Book Adventure:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"><a href="https://rurera.com/" class="btn">Rurera</a> lets you access reading books for kids online in various digital formats, ensuring you can read on any device, making reading convenient and accessible.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"><a href="https://rurera.com/">Rurera</a> lets you access reading books for kids online in various digital formats, ensuring you can read on any device, making reading convenient and accessible.</div>
                   </div>
                 </div>
               </div>
@@ -379,7 +379,7 @@
                   </div>
                   <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                     <div class="card-body">
-                      <p>How does reading improve language?</p>
+                      <p>By exposing kids to new words and sentence patterns, reading books for kids naturally builds their speaking, writing, and communication skills.</p>
                     </div>
                   </div>
                 </div>
