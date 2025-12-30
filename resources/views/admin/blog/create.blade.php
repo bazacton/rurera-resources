@@ -197,7 +197,7 @@
                                     </label>
                                 </div>
 
-                                <div class="form-group custom-switches-stacked flex-row">
+                                <div class="form-group custom-switches-stacked flex-row mt-10">
                                        <label class="input-label">Include In XML:</label>
                                        <label class="custom-switch pl-0">
                                            <label class="custom-switch-description mb-0 mr-2">Not Include</label>
@@ -208,7 +208,7 @@
                                        </label>
                                    </div>
 
-                                <div class="form-group mt-30  d-flex align-items-center cursor-pointer">
+                                <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
                                     <div class="custom-control custom-switch align-items-start">
                                         <input type="checkbox" name="enable_comment" class="custom-control-input" id="commentsSwitch" {{ (!empty($post) and !$post->enable_comment) ? '' : 'checked' }}>
                                         <label class="custom-control-label" for="commentsSwitch"></label>
@@ -216,7 +216,7 @@
                                     <label for="commentsSwitch" class="mb-0">{{ trans('admin/main.comments_section') }}</label>
                                 </div>
 
-                                <div class="form-group mt-30 d-flex align-items-center cursor-pointer">
+                                <div class="form-group mt-0 d-flex align-items-center cursor-pointer">
                                     <div class="custom-control custom-switch align-items-start">
                                         <input type="checkbox" name="status" class="custom-control-input" id="statusSwitch" {{ (!empty($post) and $post->status == 'pending') ? '' : 'checked' }}>
                                         <label class="custom-control-label" for="statusSwitch"></label>
