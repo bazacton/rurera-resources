@@ -1141,7 +1141,7 @@
                                     </div>
                                     <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>Not at all – we've crafted Rurera to be enjoyable and simple for your child to use independently. With helpsheets, they can build new knowledge and gain confidence in learning on their own.
+                                            <p>Not at all, we've crafted Rurera to be enjoyable and simple for your child to use independently. With helpsheets, they can build new knowledge and gain confidence in learning on their own.
 
                                             </p>
                                         </div>
