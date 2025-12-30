@@ -12,9 +12,9 @@
                 <div class="col-11 mx-auto">
                     <h1 class="font-72 font-weight-bold text-white mb-30">Master TimesTables with Fun <span class="text-scribble">Tricks!</span></h1>
                     <p class="text-white font-19 mb-20">
-                        Fun Techniques—Learning Made Exciting and Rewarding! <br />
-                        A brilliant way to learn times tables multiplication and division. With these smart practices, recalling times tables <br />
-                        will be an enjoyable journey filled with excitement and rewards.
+                        Fun Techniques-Learning Made Exciting and Rewarding! <br />
+                        A brilliant way to learn times tables multiplication and division. With these smart practices, recalling maths times tables will be an enjoyable journey filled with excitement and rewards. <br />
+                        recalling maths times tables will be an enjoyable journey filled with excitement and rewards.
                     </p>
                     <div class="row">
                         <div class="col-12 col-lg-4 col-md-4">
@@ -24,7 +24,7 @@
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Treasure Hunt</h2>
-                                    <p class="text-white font-16">Transform the process of memorizing times tables into an adventurous treasure hunt.</p>
+                                    <p class="text-white font-16">Transform learning times tables into an adventurous treasure hunt with our engaging time tables games.</p>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block"> Division Tables Magic</h2>
-                                    <p class="text-white font-16">Bring division and multiplication magic to life by turning it into a storytelling experience.</p>
+                                    <p class="text-white font-16">Bring division and multiplication table magic to life by turning it into a storytelling experience.</p>
                                 </div>
                             </div>
                         </div>
@@ -46,8 +46,7 @@
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Multiplication Challenges</h2>
-                                    <p class="text-white font-16">Offering interactive challenges specifically designed for earning bonus points.</p>
-                                </div>
+                                    <p class="text-white font-16">Offering interactive challenges specifically designed for earning bonus points.Offering interactive multiplication times table games specifically designed for earning bonus points.
                             </div>
                         </div>
                     </div>
@@ -68,12 +67,11 @@
                 <div class="col-12 col-lg-6 col-md-6 text-center">
                     <h2 class="d-block font-40 mb-10">Rurera</h2>
                     <p class="font-16 text-gray mb-30">
-                        Rurera provide awesome and interactive ways for students to learn and memorize times tables while having fun. Immediate feedback helps students identify and correct any mistakes they make while practicing their times
-                        tables.
+                    <a href="https://rurera.com/">Rurera</a>provides awesome and interactive ways for students to learn times tables while having fun. Immediate feedback helps identify and correct mistakes during times table practice.
                     </p>
                     <strong class="font-18 mb-20 d-block">Memorize times tables, Multiply with Ease!</strong>
                     <p class="font-16 text-gray">
-                        Personalized approach allows students to focus on specific times tables they find challenging and spend more time practicing those particular facts until they are confidently memorized.
+                        Our personalized approach allows students to focus on specific times tables they find challenging, spending more time practice times tables on those facts until they are confidently memorized.
                     </p>
                     <div class="d-flex align-items-center justify-content-center pt-30">
                         <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
@@ -113,25 +111,25 @@
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
                         <img class="mb-15" src="/assets/default/svgs/exam-multiple.svg" alt="#" height="50" width="50" /> <span class="font-18">Register / login</span>
-                        <p class="pt-10 font-16 text-dark">Register today via the website and access to learn times tables.</p>
+                        <p class="pt-10 font-16 text-dark">Register today via our website and access tools to learn times tables.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
                         <img class="mb-15" src="/assets/default/svgs/lessons.svg" alt="#" height="50" width="50" /> <span class="font-18">Create Accounts</span>
-                        <p class="pt-10 font-16 text-dark">Easily setup accounts for parents, students and teachers to get benefit from.</p>
+                        <p class="pt-10 font-16 text-dark">Easily setup accounts for parents, students and teachers to benefit from our timetables online game platform.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
                         <img class="mb-15" src="/assets/default/svgs/impact.svg" alt="#" height="50" width="50" /> <span class="font-18">Learn &amp; Play</span>
-                        <p class="pt-10 font-16 text-dark">Student will have access to both single and multi player games interfaces.</p>
+                        <p class="pt-10 font-16 text-dark">Students will have access to both single and multiplayer tables games interfaces.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
                         <img class="mb-15" src="/assets/default/svgs/sav-time.svg" alt="#" height="50" width="50" /> <span class="font-18">Progress Tracking</span>
-                        <p class="pt-10 font-16 text-dark">Use the stats to keep track of your child's progress and celebrate their success.</p>
+                        <p class="pt-10 font-16 text-dark">Use the stats to keep track of your child's math times tables practice and celebrate their success.</p>
                     </div>
                 </div>
             </div>
@@ -143,23 +141,23 @@
                 <div class="col-12 col-lg-6 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent text-left align-items-start" style="background: #f6b801;color: #fff;">
                         <h2 class="mt-0 mb-10 font-24">Essential tool for Maths teachers</h2>
-                        <p class="pt-0 font-16" style="text-align: left;">Rurera provides interactive practice sessions, personalized feedback, and engaging resources to support effective math instruction and student learning:</p><br>
+                        <p class="pt-0 font-16" style="text-align: left;">Rurera provides interactive times table practice sessions, personalized feedback, and engaging timetable games to support effective math instruction:</p><br>
                         <ul style="text-align: left;">
-                            <li>- Progress can be monitored on heatmap while student is practicing their times tables.</li>
-                            <li>- Helps track student progress and evaluate understanding.</li>
-                            <li>- It helps to provide targeted support and resources.</li>
+                            <li>- Progress can be monitored on a heatmap during times table practice.</li>
+                            <li>- Helps track student progress and evaluate understanding of maths time tables.</li>
+                            <li>- Provides targeted support and times tables games resources.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent text-left align-items-start" style="background: #f35b05;color: #fff;">
                         <h2 class="mt-0 mb-10 font-24">Engaging, trusted and easy to use</h2>
-                        <p class="pt-0 font-16" style="text-align: left;">Tailor Multiplication and Division Practice to Your Child’s Needs. Daily Quizzes, Adaptive Learning, and Fun Rewards for Consistent Progress!
+                        <p class="pt-0 font-16" style="text-align: left;">Tailor Multiplication and Division Practice times tables to Your Child’s Needs. Daily Quizzes, Adaptive Learning, and Fun Rewards for Consistent Progress!
                         </p><br>
                         <ul style="text-align: left;">
-                            <li>- Questions and quizzes are easily adapted to each child’s unique learning needs.</li>
-                            <li>- Give your child daily practice and get the results.</li>
-                            <li>- More practicing give more chances to win rewards and toys.</li>
+                            <li>- Times table questions and quizzes adapt to each child’s unique learning needs</li>
+                            <li>- Give your child daily times table practice and see results.</li>
+                            <li>- More practicing gives more chances to win rewards.</li>
                         </ul>
                     </div>
                 </div>
