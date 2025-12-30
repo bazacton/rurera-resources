@@ -2404,32 +2404,6 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -8px;
-    right: auto;
-    top: auto;
-    bottom: -40px;
-    border: 32px solid;
-    border-color: transparent transparent transparent #666;
-}
-.left_bottom .cloud_nner_text:after{
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 0px;
-    right: auto;
-    top: auto;
-    bottom: -20px;
-    border: 22px solid;
-    border-color: transparent transparent transparent #fff;
-}
-
-/*Right triangle, placed bottom left side slightly in*/
-.left_bottom .cloud_nner_text:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: 30px;
     right: auto;
     top: auto;
