@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-    <section class="cart-banner position-relative single-post-subheader pb-0">
+    <section class="cart-banner position-relative single-post-subheader">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
