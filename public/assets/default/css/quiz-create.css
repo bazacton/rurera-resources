@@ -2363,7 +2363,7 @@ Quiz Check Answers Page Style End
     top: 0px;
     bottom: auto;
     border: 22px solid;
-    border-color: lightyellow transparent transparent transparent;
+    border-color: #fff transparent transparent transparent;
 }
 
 /* Right triangle, left side slightly down */
