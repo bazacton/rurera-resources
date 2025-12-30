@@ -30,13 +30,13 @@ $rand_id = rand(999,99999);
 
     /* Modal */
     .equationModal .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none}
-    /* .equationModal.modal{
+    .equationModal.modal{
         position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
         width:min(1250px,calc(100vw - 24px));
         background:var(--panel);border-radius:10px;
         box-shadow:0 12px 40px rgba(0,0,0,.28);
         display:none;overflow:hidden;
-    } */
+    }
     .equationModal .header{
         padding:14px 18px;border-bottom:1px solid var(--line);
         display:flex;justify-content:space-between;align-items:center
@@ -48,7 +48,7 @@ $rand_id = rand(999,99999);
     /* Toolbar */
     .equationModal .toolbar{
         display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;
-        padding:0 0 25px;border-bottom:1px solid var(--line);position:relative
+        padding:12px 18px;border-bottom:1px solid var(--line);position:relative
     }
     .equationModal .tool{
         padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;
@@ -56,7 +56,6 @@ $rand_id = rand(999,99999);
     }
     .equationModal .tool:hover{background:#f3f4f6}
     .equationModal .tool.active{background:#eef2ff;border-color:#a5b4fc;color:#1d4ed8}
-    .equationModal .btn-close {border: 0; height: auto; padding: 0; line-height: normal; font-weight: bold; font-size: 18px; background-color: inherit; outline: none;}
 
     /* Dropdown */
     .equationModal .dropdown{
@@ -83,10 +82,10 @@ $rand_id = rand(999,99999);
     .equationModal .sym .code{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 
     /* Editor Layout */
-    .equationModal .body{padding:0 0 25px;}
+    .equationModal .body{padding:16px 18px}
     .equationModal .editor-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .equationModal textarea{width:100%;height:240px;font-size:15px;padding:10px;border:1px solid #d1d5db;border-radius:10px}
-    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;overflow:auto}
+    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;min-height:240px;overflow:auto}
 
     /* Footer */
     .equationModal .footer{
@@ -94,9 +93,9 @@ $rand_id = rand(999,99999);
         display:flex;justify-content:flex-end;gap:10px;background:#fafafa
     }
     .equationModal .btn{border:1px solid #d1d5db;border-radius:10px;padding:10px 14px;background:#fff}
-    .equationModal .btn-primary{background:var(--primary);color:#fff;border-color:var(--blue)}
-    .equationModal .btn:hover{background:var(--primary);}
-    .equationModal .btn-primary:hover{background:var(--primary);}
+    .equationModal .btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+    .equationModal .btn:hover{background:#f3f4f6}
+    .equationModal .btn-primary:hover{background:#1d4ed8}
 
     /* Tiny help */
     .equationModal .hint{font-size:12px;color:var(--muted);margin:10px 0 0}
@@ -339,7 +338,7 @@ $rand_id = rand(999,99999);
 
             <div class="modal-header">
                 <h5 class="modal-title">Insert Equation1</h5>
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
@@ -366,7 +365,7 @@ $rand_id = rand(999,99999);
                     <div class="editor-wrap">
                         <div>
                             <textarea id="equationInput" oninput="renderMath()" class="form-control equationInput" rows="4"></textarea>
-                            <!-- <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div> -->
+                            <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div>
                         </div>
                         <div class="preview" id="preview"></div>
                     </div>
@@ -797,7 +796,19 @@ $(document).on('click', '.add-keyword-btn', function () {
                         {glyph:"\\(\\cos\\)", code:"\\cos"},
                         {glyph:"\\(\\tan\\)", code:"\\tan"},
                         {glyph:"\\(\\ln\\)", code:"\\ln"},
-                        {glyph:"\\(\\log\\)", code:"\\log"}
+                        {glyph:"\\(\\log\\)", code:"\\log"},
+                        {
+                            glyph: "\\(\\times\\)",
+                            code: "\\begin{array}{r}" +
+                                "\\begin{array}{rrrr}" +
+                                "& 1 & 2 & 4 \\\\ " +
+                                "\\times & & 2 & 6 \\\\ \\hline " +
+                                "& 2 & 4 & 8 & 0 \\\\ " +
+                                "& & 7 & 4 & 4 \\\\ \\hline " +
+                                "& 3 & 2 & 2 & 4" +
+                                "\\end{array}" +
+                                "\\end{array}"
+                        }
                     ]}
             ]
         },

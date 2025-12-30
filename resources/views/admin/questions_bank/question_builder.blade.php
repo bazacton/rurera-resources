@@ -443,6 +443,8 @@ $rand_id = rand(999,99999);
 										<div class="col-lg-12 col-md-12 col-12">
 											<div class="question-explain-block">
 
+                                                <div class="explanation-block-area"></div>
+
 												<h3 class="font-20 font-weight-bold">Explanation</h3>
 												<textarea class="note-codable eq-summernote-editor" id="question_solve"
 															name="question_solve"
@@ -645,7 +647,7 @@ $rand_id = rand(999,99999);
 																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
 																</div>
 																<div class="lms-card-info">
-																	<h5>Javy @ <span class="activity-date">18 Nov 24 | 13:02</span></h5>
+																	<h5>Javy @<span class="activity-date">18 Nov 24 | 13:02</span></h5>
 																	<p>Updated = Submit for review</p>
 																</div>
 															</li>
@@ -1053,20 +1055,202 @@ $(document).ready(function () {
 });
 
 
-var EquationButton = function (context) {
-    var ui = $.summernote.ui;
 
-    return ui.button({
-        contents: '<i class="note-icon-magic"></i> Eq',
-        tooltip: 'Insert Equation',
-        click: function () {
-            // Open your HTML modal
-            $(".equation-insert-btn").attr('id', 'insertSolveEquation');
-            $('#equationModal').modal('show');
+
+if ($('.eq-summernote-editor').length) {
+
+    var EquationButton = function (context) {
+        var ui = $.summernote.ui;
+
+        return ui.button({
+            contents: '<i class="note-icon-magic"></i> Eq',
+            tooltip: 'Insert Equation',
+            click: function () {
+
+                // 🔑 SAVE CURRENT CURSOR POSITION
+                savedRange = context.invoke('editor.createRange');
+
+                $(".equation-insert-btn").attr('id', 'insertSolveEquation');
+                $('#equationModal').modal('show');
+                renderMath();
+            }
+        }).render();
+    };
+
+
+    $('.eq-summernote-editor').summernote({
+        tabsize: 2,
+        height: 400,
+        placeholder: $('.eq-summernote-editor').attr('placeholder'),
+        dialogsInBody: true,
+        blockquoteBreakingLevel: 2,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline']],
+            ['para', ['paragraph', 'ul', 'ol']],
+            ['table', ['table']],
+            ['insert', ['link', 'equation']],
+            ['history', ['undo']],
+        ],
+        buttons: {
+            equation: EquationButton // 👈 register button
+        },
+        popover: {
+            table: [
+                ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
+                ['delete', ['deleteRow', 'deleteCol', 'deleteTable']],
+                ['custom', ['tableHeaders']]
+            ],
+        },
+        callbacks: {
+            onChange: function(contents, $editable) {
+                if (isProcessing) return;
+
+                isProcessing = true;
+
+                // Delay to ensure content is fully updated
+                setTimeout(() => {
+                    const popup = $($editable).closest('.rureraform-admin-popup.active:visible');
+
+                    if (popup.find('.generate-question-code').length) {
+                        popup.find('.generate-question-code').trigger('click');
+                    }
+
+                    isProcessing = false;
+                }, 0); // 0ms is usually enough
+
+
+
+                updateExplanationPreview(contents);
+
+            },
+            onPaste: function (e) {
+                e.preventDefault();
+
+                var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+                var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+                if (containsMathJax(pastedData)) {
+                    const wrapped = wrapMath(pastedData);
+                    pastedData = wrapped;
+                } else {
+                    pastedData = pastedData;
+                }
+                // Create a temporary DOM element to parse the HTML
+                var tempDiv = document.createElement('div');
+                tempDiv.innerHTML = pastedData;
+
+                // Decode HTML entities and remove &nbsp;
+                function decodeHTMLEntitiesAndClean(node) {
+                    // Loop through all child nodes recursively
+                    node.childNodes.forEach(function(child) {
+                        if (child.nodeType === 3) { // NodeType 3 is Text Node
+                            // Replace &nbsp; with regular space and other entities
+                            child.nodeValue = child.nodeValue
+                                .replace(/\u00A0/g, ' ') // Replace non-breaking spaces with a regular space
+                                .replace(/&amp;/g, '&')
+                                .replace(/&lt;/g, '<')
+                                .replace(/&gt;/g, '>')
+                                .replace(/&quot;/g, '"');
+                        } else if (child.nodeType === 1) { // NodeType 1 is Element Node
+                            decodeHTMLEntitiesAndClean(child); // Recurse for element nodes
+                        }
+                    });
+                }
+
+                // Remove all inline styles from elements
+                var elementsWithStyles = tempDiv.querySelectorAll('[style]');
+                elementsWithStyles.forEach(function (element) {
+                    element.removeAttribute('style');
+                });
+
+                // Remove all HTML comments
+                function removeComments(node) {
+                    var childNodes = node.childNodes;
+                    for (var i = childNodes.length - 1; i >= 0; i--) {
+                        var child = childNodes[i];
+                        if (child.nodeType === 8) { // NodeType 8 is Comment
+                            node.removeChild(child);
+                        } else if (child.nodeType === 1) {
+                            removeComments(child); // Recurse for element nodes
+                        }
+                    }
+                }
+                removeComments(tempDiv);
+
+                // Clean all text nodes from unwanted entities
+                decodeHTMLEntitiesAndClean(tempDiv);
+
+                // Insert the cleaned content into the editor
+                document.execCommand('insertHTML', false, tempDiv.innerHTML);
+
+
+
+            }
         }
-    }).render();
-};
-$(".eq-summernote-editor").summernote({
+    });
+}
+
+function updateExplanationPreview(html) {
+    const preview = document.querySelector('.explanation-block-area');
+
+    // Update preview HTML
+    preview.innerHTML = html;
+
+    // Find all spans with math-equation
+    preview.querySelectorAll('.math-equation').forEach(span => {
+
+
+        var id = uniqueId();
+
+        var random_id = Math.floor((Math.random() * 99999) + 1);
+        var class_id = 'rurera-svg-data' + id+'_'+random_id;
+
+        $(span).addClass(class_id);
+
+        getSVGFromEquationHTML($(span).html(), class_id, false).then(function(htmlWithSVG) {
+        });
+    });
+}
+function renderMathEquationsInPreview(containerSelector = '.explanation-block-area') {
+    const container = document.querySelector(containerSelector);
+    if (!container || !window.MathJax) return;
+
+    container.querySelectorAll('.math-equation').forEach(span => {
+
+        const latex = span.dataset.equation;
+        if (!latex) return;
+
+        // Clear previous content
+        span.innerHTML = '';
+
+        // Create MathJax element
+        const mathNode = document.createElement('span');
+        mathNode.textContent = latex;
+        span.appendChild(mathNode);
+
+        // Typeset as SVG
+        MathJax.typesetPromise([mathNode]).then(() => {
+
+            // MathJax will replace mathNode with mjx-container
+            const mjx = mathNode.querySelector('mjx-container');
+            if (!mjx) return;
+
+            const svg = mjx.querySelector('svg');
+            if (!svg) return;
+
+            const clonedSVG = svg.cloneNode(true);
+            clonedSVG.setAttribute('contenteditable', 'false');
+            clonedSVG.classList.add('mathjax-svg');
+
+            // Replace the mjx-container with pure SVG
+            span.innerHTML = '';
+            span.appendChild(clonedSVG);
+
+        });
+    });
+}
+$(".eq-summernote-editor1").summernote({
     dialogsInBody: true,
     tabsize: 2,
     height: $(".eq-summernote-editor").attr('data-height') ?? 250,
