@@ -1,4 +1,4 @@
-<div class="mt-35">
+<div class="mt-20">
     <h2 class="section-title after-line">{{ trans('panel.comments') }} <span class="ml-5">({{ $comments->count() }})</span></h2>
 
     <div class="mt-20 mb-30">
