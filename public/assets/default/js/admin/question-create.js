@@ -2245,68 +2245,19 @@ function _rureraform_properties_prepare(_object) {
 
                 },
                 onPaste: function (e) {
-					e.preventDefault();
+                    e.preventDefault();
 
-					var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-					var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+                    const clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
 
-                    if (containsMathJax(pastedData)) {
-                        const wrapped = wrapMath(pastedData);
-                        pastedData = wrapped;
-                    } else {
-                        pastedData = pastedData;
-                    }
-					// Create a temporary DOM element to parse the HTML
-					var tempDiv = document.createElement('div');
-					tempDiv.innerHTML = pastedData;
+                    // ALWAYS take plain text
+                    let pastedText = clipboardData.getData('text/plain');
 
-					// Decode HTML entities and remove &nbsp;
-					function decodeHTMLEntitiesAndClean(node) {
-						// Loop through all child nodes recursively
-						node.childNodes.forEach(function(child) {
-							if (child.nodeType === 3) { // NodeType 3 is Text Node
-								// Replace &nbsp; with regular space and other entities
-								child.nodeValue = child.nodeValue
-									.replace(/\u00A0/g, ' ') // Replace non-breaking spaces with a regular space
-									.replace(/&amp;/g, '&')
-									.replace(/&lt;/g, '<')
-									.replace(/&gt;/g, '>')
-									.replace(/&quot;/g, '"');
-							} else if (child.nodeType === 1) { // NodeType 1 is Element Node
-								decodeHTMLEntitiesAndClean(child); // Recurse for element nodes
-							}
-						});
-					}
+                    // Convert ONLY LaTeX → HTML
+                    const finalHTML = convertLatexToSpan(pastedText);
 
-					// Remove all inline styles from elements
-					var elementsWithStyles = tempDiv.querySelectorAll('[style]');
-					elementsWithStyles.forEach(function (element) {
-						element.removeAttribute('style');
-					});
-
-					// Remove all HTML comments
-					function removeComments(node) {
-						var childNodes = node.childNodes;
-						for (var i = childNodes.length - 1; i >= 0; i--) {
-							var child = childNodes[i];
-							if (child.nodeType === 8) { // NodeType 8 is Comment
-								node.removeChild(child);
-							} else if (child.nodeType === 1) {
-								removeComments(child); // Recurse for element nodes
-							}
-						}
-					}
-					removeComments(tempDiv);
-
-					// Clean all text nodes from unwanted entities
-					decodeHTMLEntitiesAndClean(tempDiv);
-
-					// Insert the cleaned content into the editor
-					document.execCommand('insertHTML', false, tempDiv.innerHTML);
-
-
-
-				}
+                    // Insert as HTML
+                    document.execCommand('insertHTML', false, finalHTML);
+                }
             }
         });
     }
@@ -11337,3 +11288,19 @@ $(document).on('click', '#insertSolveEquation', function () {
     $('#equationInput').val('');
     window.activeEquationId = null;
 });
+function convertLatexToSpan(text) {
+    const latexRegex = /(\\d?frac\{[^}]+\}\{[^}]+\})/g;
+
+    return text.replace(latexRegex, function (latex) {
+
+        const escapedLatex = latex.replace(/#/g, '\\#');
+
+        return `
+<span class="math-equation"
+      contenteditable="false"
+      data-id="eq-${Date.now()}-${Math.floor(Math.random()*1000)}"
+      data-equation="${escapedLatex}">
+${escapedLatex}
+</span>`;
+    });
+}
