@@ -2316,6 +2316,9 @@ Quiz Check Answers Page Style End
 .cloud_text {
     display: inline-block;
     position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 .cloud_text_element {
     display: flex;
@@ -2327,13 +2330,14 @@ Quiz Check Answers Page Style End
     width: 50px;
 }
 .cloud_nner_text {
-    position: relative;
+        position: relative;
     height: auto;
     background-color: lightyellow;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
+    padding: 25px;
 }
 /* Right triangle placed top left flush. */
 .left_top .cloud_nner_text:before {
