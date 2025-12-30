@@ -28,26 +28,26 @@
 
                                 <div class="row">
                                     <div class="col-12 col-md-6">
+
                                         @if(!empty(getGeneralSettings('content_translate')) and !empty($userLanguages))
-                                        <div class="form-group">
-                                            <label class="input-label">{{ trans('auth.language') }}</label>
-                                            <select name="locale" class="form-control {{ !empty($post) ? 'js-edit-content-locale' : '' }}">
-                                                @foreach($userLanguages as $lang => $language)
-                                                    <option value="{{ $lang }}" @if(mb_strtolower(request()->get('locale', app()->getLocale())) == mb_strtolower($lang)) selected @endif>{{ $language }}</option>
-                                                @endforeach
-                                            </select>
-                                            @error('locale')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
+                                            <div class="form-group">
+                                                <label class="input-label">{{ trans('auth.language') }}</label>
+                                                <select name="locale" class="form-control {{ !empty($post) ? 'js-edit-content-locale' : '' }}">
+                                                    @foreach($userLanguages as $lang => $language)
+                                                        <option value="{{ $lang }}" @if(mb_strtolower(request()->get('locale', app()->getLocale())) == mb_strtolower($lang)) selected @endif>{{ $language }}</option>
+                                                    @endforeach
+                                                </select>
+                                                @error('locale')
+                                                <div class="invalid-feedback">
+                                                    {{ $message }}
+                                                </div>
+                                                @enderror
                                             </div>
-                                            @enderror
-                                        </div>
                                         @else
                                             <input type="hidden" name="locale" value="{{ getDefaultLocale() }}">
                                         @endif
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
+
+                                        <div class="form-group mt-15 ">
                                             <label class="input-label d-block">{{ trans('update.author') }}</label>
 
                                             <select name="author_id" class="form-control search-user-select2"
@@ -67,41 +67,32 @@
                                             </div>
                                             @enderror
                                         </div>
-                                    </div>
-                                        
 
-                                    <div class="col-12 col-md-6">
                                         <div class="form-group">
                                             <label>{{ trans('admin/main.title') }}</label>
                                             <input type="text" name="title"
-                                                class="form-control  @error('title') is-invalid @enderror"
-                                                value="{{ !empty($post) ? $post->title : old('title') }}"
-                                                placeholder="{{ trans('admin/main.choose_title') }}"/>
+                                                   class="form-control  @error('title') is-invalid @enderror"
+                                                   value="{{ !empty($post) ? $post->title : old('title') }}"
+                                                   placeholder="{{ trans('admin/main.choose_title') }}"/>
                                             @error('title')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
                                             </div>
                                             @enderror
                                         </div>
-                                    </div>
-                                        
 
-                                    <div class="col-12 col-md-6">
                                         <div class="form-group">
                                             <label>Post URL</label>
                                             <input type="text" name="slug"
-                                                class="form-control  @error('slug') is-invalid @enderror"
-                                                value="{{ !empty($post) ? $post->slug : old('slug') }}"
-                                                placeholder="Post URL"/>
+                                                   class="form-control  @error('slug') is-invalid @enderror"
+                                                   value="{{ !empty($post) ? $post->slug : old('slug') }}"
+                                                   placeholder="Post URL"/>
                                             @error('slug')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
                                             </div>
                                             @enderror
                                         </div>
-                                    </div>
-                                        
-                                    <div class="col-12 col-md-6">
                                         <div class="form-group">
                                             <label>{{ trans('/admin/main.category') }}</label>
                                             <select class="form-control @error('category_id') is-invalid @enderror" name="category_id">
@@ -118,9 +109,7 @@
                                             </div>
                                             @enderror
                                         </div>
-                                    </div>
-                                        
-                                    <div class="col-12 col-md-6">
+
                                         <div class="form-group">
                                             <label class="input-label">{{ trans('public.cover_image') }}</label>
                                             <div class="input-group">
