@@ -888,7 +888,8 @@ function _rureraform_properties_prepare(_object) {
                     break;
 
                 case 'color':
-                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-content-color'><input type='text' class='rureraform-color' data-alpha='true' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='...' /></div></div></div>";
+                    var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
+                    html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-content-color'><input type='text' class='rureraform-color' data-alpha='true' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='...' /></div></div></div>";
                     break;
 
                 case 'two-colors':
@@ -1532,7 +1533,7 @@ function _rureraform_properties_prepare(_object) {
                                 selected = " checked='checked'";
                             options += "<option" + selected + " value='" + rureraform_escape_html(option_key) + "'>" + rureraform_escape_html(rureraform_meta[type][key]['options'][option_key]) + "</option>";
 
-                            image_options += '<label for="rureraform-' + option_key + '"><input type="radio" name="' + key + '" id="rureraform-' + option_key + '" '+selected+'> <img src="' + rureraform_meta[type][key]['options'][option_key] + '" alt=""></label>';
+                            image_options += '<label for="rureraform-' + option_key + '"><input type="radio" name="' + key + '" value="'+option_key+'" id="rureraform-' + option_key + '" '+selected+'> <img src="' + rureraform_meta[type][key]['options'][option_key] + '" alt=""></label>';
                         }
                     }
                     var field_class = (rureraform_meta[type][key]['class'] != undefined)? rureraform_meta[type][key]['class'] : '';
@@ -7274,6 +7275,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         var cloud_direction = rureraform_form_elements[i]["cloud_direction"];
                         var cloud_size = rureraform_form_elements[i]["cloud_size"];
                         var cloud_avatar = rureraform_form_elements[i]["cloud_avatar"];
+                        var cloud_avatar = $('input[name="cloud_avatar"]:checked').val();
+                        console.log('cloud_avatar');
+                        console.log(cloud_avatar);
                         var cloud_color = rureraform_form_elements[i]["cloud_color"];
 
                         var cloud_avatar_html = '<span class="cloud_avatar"><img src="/assets/default/svgs/cloud-kids-avatars/'+cloud_avatar+'"></span>';
@@ -11359,6 +11363,9 @@ ${escapedLatex}
     });
 }
 
-$(document).on('click', '#insertSolveEquation', function () {
+$(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
+    $(".label_type-depend").addClass('rurera-hide');
+    var label_type = $(this).val();
+    $("."+label_type+'_fields').removeClass('rurera-hide');
 });
