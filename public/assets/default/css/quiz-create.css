@@ -2431,9 +2431,9 @@ Quiz Check Answers Page Style End
     width: 0;
     height: 0;
     left: auto;
-    right: 30px;
-    bottom: -40px;
-    border: 20px solid;
+    right: 33px;
+    bottom: -35px;
+    border: 18px solid;
     border-color: #666 #666 transparent transparent;
 }
 .right_bottom .cloud_nner_text:after{
@@ -2442,9 +2442,9 @@ Quiz Check Answers Page Style End
     width: 0;
     height: 0;
     left: auto;
-    right: 38px;
-    bottom: -20px;
-    border: 12px solid;
+    right: 35px;
+    bottom: -31px;
+    border: 18px solid;
     border-color: #fff #fff transparent transparent;
 }
 
