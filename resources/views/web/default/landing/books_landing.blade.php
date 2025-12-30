@@ -11,7 +11,7 @@
           <h1 class="font-72 font-weight-bold">Dive into the World of <span class="text-scribble">Books!</span>
           </h1>
           <strong class="d-block font-36">Read Anywhere, Anytime!</strong>
-          <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading grow every day!</p>
+          <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day!</p>
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
         </div>
       </div>
@@ -96,7 +96,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Book Chapter Quizzes</h2>
-                <p itemprop="description" class="text-dark-charcoal">Your ultimate resource help for resolving quizzes and practices.</p>
+                <p itemprop="description" class="text-dark-charcoal">Your ultimate resource for resolving quizzes and practices tied directly to the stories your child loves.</p>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Assessments &amp; Tests</h2>
-                <p itemprop="description" class="text-dark-charcoal">Get assessments related to your reading interests and level.</p>
+                <p itemprop="description" class="text-dark-charcoal">Get reading books for kids online assessments tailored to your child's interests and reading level.</p>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Earn Reading Rewards</h2>
-                <p itemprop="description" class="text-dark-charcoal">The more you read, the more you'll earn Coin Points, giving you even more.</p>
+                <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards.</p>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@
         <div class="col-12 col-lg-12">
           <div class="section-title mb-50">
             <h2 class="text-dark-charcoal text-white font-40">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
-            <p class="font-19 pt-10 text-white"> Discover ebooks, fiction books, board books, kids stories , children books, and more from Rurera book shelf.</p>
+            <p class="font-19 pt-10 text-white"> Discover ebooks, fiction books, board books, kids' stories, and reading books for kids 5 year and reading books for kids 6 year old collections from the Rurera bookshelf.</p>
           </div>
         </div>
         <div class="col-12 col-lg-12">
@@ -201,7 +201,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Enjoy Every E-Book Adventure:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera lets you access books in various digital. This feature ensures that you can read your ebooks on any device, making reading convenient.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"><a href="https://rurera.com/" class="btn">Rurera</a> lets you access reading books for kids online in various digital formats, ensuring you can read on any device, making reading convenient and accessible.</div>
                   </div>
                 </div>
               </div>
@@ -217,7 +217,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Uncover Your Progress:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Monitors how much you’ve read, offering detailed insights into your reading habits and growth. It helps you understand your progress and set goals for better reading.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Our platform monitors how much you’ve read, offering detailed insights into your reading habits and growth on our dedicated books reading website.</div>
                   </div>
                 </div>
               </div>
@@ -233,7 +233,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Personalized Learning Pathways:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">With Rurera, educators can easily tailor literacy development for each student, regardless of age or skill level. Enjoy targeted support and easy differentiation to boost every student’s progress.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">With Rurera, educators can easily tailor literacy development for each student, providing targeted support to boost every reader's progress, regardless of starting level.</div>
                   </div>
                 </div>
               </div>
@@ -250,7 +250,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Awesome Rewards as You Read:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Keep reading to earn Coin Points, which can be exchanged for your favorite toys. The more you read, the more points you earn, leading to even more exciting rewards!</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Keep reading books for kids to earn Coin Points, which can be exchanged for favorite toys. The more you read, the more points you earn!</div>
                   </div>
                 </div>
               </div>
@@ -266,7 +266,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Effortless Student Engagement:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera’s built-in rewards system motivates students by recognizing their achievements. As they learn more, they earn rewards, keeping them excited and engaged with their learning journey.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera’s built-in rewards system on our books reading website motivates students by recognizing their reading achievements, keeping them excited and engaged.</div>
                   </div>
                 </div>
               </div>
@@ -282,7 +282,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Reporting Made Easy:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera simplifies task assignments, personalized learning, and reporting. The platform helps teachers efficiently manage literacy across all subjects, saving time and supporting effective instruction.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera simplifies task assignments, personalized learning, and reporting, helping teachers efficiently manage literacy instruction and track the books reading benefits for each student.</div>
                   </div>
                 </div>
               </div>
@@ -309,7 +309,7 @@
                   </div>
                   <div id="collapseOne" class="collapse show" aria-labelledby="heading" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Rurera is a digital reading service that makes reading interactive, motivating and engaging for children aged 4-11. With eBooks and comprehension quizzes to suit all, teachers and parents can also monitor and support each child's personal reading and comprehension progress.</p>
+                      <p>Rurera is a books reading website that makes reading books for kids interactive and fun for ages 4-11. With eBooks and quizzes, parents and teachers can monitor each child's progress.</p>
                     </div>
                   </div>
                 </div>
@@ -319,17 +319,17 @@
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Currently, Rurera requires an internet connection to access and read books. However, you can bookmark books for quick access and view them when you’re online.</p>
+                      <p>Currently, you need an internet connection to read. But you can bookmark your favourite books to read online for instant access when you’re back online.</p>
                     </div>
                   </div>
                 </div>
                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingThree">
-                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I find books that match my reading level?</button>
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How do I find books for my child's age?</button>
                   </div>
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Rurera provides personalized recommendations based on your reading preferences and level. You can use the search and filter options to find books that match your reading ability and interests.</p>
+                      <p>We personalise it! Easily find reading books for kids 5 year, 6 year, or grade1 level using our simple search and recommendations.</p>
                     </div>
                   </div>
                 </div>
@@ -339,47 +339,47 @@
                   </div>
                   <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Book chapter quizzes test your understanding of each chapter. They are designed to reinforce key concepts and ensure comprehension. You can take these quizzes after reading each chapter to check your knowledge.</p>
+                      <p>Quizzes after each chapter check understanding in a fun way, turning book reading for kids online into an active learning game.</p>
                     </div>
                   </div>
                 </div>
                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingfive">
-                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">How do I earn Coin Points through reading?</button>
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">How do I earn Coin Points?</button>
                   </div>
                   <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
                     <div class="card-body">
-                      <p>You earn Coin Points by completing reading milestones and participating in activities. The more books you read and engage with, the more Coin Points you accumulate, which can be exchanged for rewards.</p>
+                      <p>By reading and completing activities! It’s a rewarding part of the books reading benefits on Rurera.</p>
                     </div>
                   </div>
                 </div>
                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingsix">
-                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">How does reading benefit a child's development?</button>
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">What are the main books reading benefits for my child?</button>
                   </div>
                   <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Reading enhances a child’s cognitive skills, including vocabulary, comprehension, and critical thinking. It also fosters imagination, creativity, and empathy by exposing them to diverse perspectives and experiences.</p>
+                      <p>Reading books for kids builds vocabulary, comprehension, critical thinking, creativity, and empathy. It’s a foundation for all learning. For more on childhood literacy. </p>
                     </div>
                   </div>
                 </div>
                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="heading7">
-                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Can reading help with academic performance?</button>
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Can reading help with school?</button>
                   </div>
                   <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Yes, regular reading improves comprehension and analytical skills, which can boost overall academic performance. Children who read often tend to perform better in subjects like reading, writing, and even math.</p>
+                      <p>Absolutely! The books reading benefits extend to all subjects. Strong readers often do better in writing, math, and science because they understand instructions and concepts more easily.</p>
                     </div>
                   </div>
                 </div>
                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="heading8">
-                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">How does reading improve a child's language skills?</button>
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">How does reading improve language?</button>
                   </div>
                   <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Reading helps expand a child’s vocabulary and grammar by exposing them to new words and sentence structures. It also improves their understanding of language through context and usage, aiding in better communication skills.</p>
+                      <p>How does reading improve language?</p>
                     </div>
                   </div>
                 </div>
