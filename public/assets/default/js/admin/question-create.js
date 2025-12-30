@@ -2724,11 +2724,15 @@ function rureraform_properties_open(_object) {
     setTimeout(function () {
         _rureraform_properties_prepare(_object);
         jQuery("#rureraform-element-properties .rureraform-admin-popup-loading").hide();
+        if($('select[name="rureraform-label_type"]').length > 0){
+            $('select[name="rureraform-label_type"]').change();
+        }
     }, 500);
 
 
-
-
+    if($('select[name="rureraform-label_type"]').length > 0){
+        $('select[name="rureraform-label_type"]').change();
+    }
     return false;
 }
 
@@ -7282,7 +7286,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                         var cloud_avatar_html = '<span class="cloud_avatar"><img src="/assets/default/svgs/cloud-kids-avatars/'+cloud_avatar+'"></span>';
 
-                        var label_data = "<div class='question-label " + label_type + " " + cloud_size + " " + cloud_direction + "' style='background:"+cloud_color+"'>"+cloud_avatar_html+"<span>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></div>";
+                        var label_data = "<div class='question-label " + label_type + " " + cloud_size + " " + cloud_direction + "' style='background:"+cloud_color+"'><span class='cloud_text_element'>"+cloud_avatar_html+"<span class='cloud_nner_text'>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></span></div>";
 
                         html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
 
