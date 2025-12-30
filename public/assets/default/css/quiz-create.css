@@ -2404,11 +2404,11 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: 30px;
+    left: 40px;
     right: auto;
     top: auto;
-    bottom: -40px;
-    border: 20px solid;
+    bottom: -35px;
+    border: 18px solid;
     border-color: #666 transparent transparent #666;
 }
 .left_bottom .cloud_nner_text:after{
@@ -2416,11 +2416,11 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: 38px;
+    left: 41px;
     right: auto;
     top: auto;
-    bottom: -20px;
-    border: 12px solid;
+    bottom: -31px;
+    border: 16px solid;
     border-color: #fff transparent transparent #fff;
 }
 
