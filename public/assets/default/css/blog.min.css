@@ -58,6 +58,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
+    margin-top: 22px;
 }
 .single-post-nav ul {
     display: flex;
