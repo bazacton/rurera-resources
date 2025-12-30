@@ -5169,7 +5169,7 @@ nav li {
     transition: all .4s ease;
     top: 0;
     border-radius: 5px !important;
-    min-height: 345px
+    min-height: auto;
 }
 
 .subscribe-plan .badge-popular {
