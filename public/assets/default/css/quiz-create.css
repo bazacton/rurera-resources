@@ -2451,26 +2451,26 @@ Quiz Check Answers Page Style End
 /* Right triangle, right side slightly down*/
 .right_top .cloud_nner_text:before {
 	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
     left: auto;
-    right: -40px;
-    top: 30px;
+    right: -32px;
+    top: 38px;
     bottom: auto;
-    border: 20px solid;
+    border: 16px solid;
     border-color: #666 transparent transparent #666;
 }
 .right_top .cloud_nner_text:after{
 	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
     left: auto;
-    right: -20px;
-    top: 38px;
+    right: -28px;
+    top: 40px;
     bottom: auto;
-    border: 12px solid;
+    border: 16px solid;
     border-color: #fff transparent transparent #fff;
 }
 .left_middle .cloud_nner_text:before {}
