@@ -2323,7 +2323,7 @@ Quiz Check Answers Page Style End
 .cloud_text_element {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 65px;
+    gap: 0 50px;
 }
 .cloud_text_element .cloud_avatar {
     height: 50px;
