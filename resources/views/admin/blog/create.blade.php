@@ -27,7 +27,7 @@
                                 {{ csrf_field() }}
 
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-12">
 
                                         @if(!empty(getGeneralSettings('content_translate')) and !empty($userLanguages))
                                             <div class="form-group">
