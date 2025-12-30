@@ -2468,30 +2468,6 @@ Quiz Check Answers Page Style End
     border-color: #fff #fff transparent transparent;
 }
 
-/*Right triangle, placed bottom right side slightly in*/
-.right_bottom .cloud_nner_text:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-    right: -8px;
-    bottom: -40px;
-    border: 20px solid;
-    border-color: #666 #666 transparent transparent;
-}
-.right_bottom .cloud_nner_text:after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-    right: 0px;
-    bottom: -20px;
-    border: 12px solid;
-    border-color: #fff #fff transparent transparent;
-}
-
 /* Right triangle, right side slightly down*/
 .right_top .cloud_nner_text:before {
 	content: ' ';
