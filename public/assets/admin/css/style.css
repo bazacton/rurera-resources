@@ -484,6 +484,11 @@ table tr:hover .table-links {opacity: 1;}
 .note-editable .table:not(.table-sm) tr th,
 .note-editable table th{
     background-color: #c8d2ec;
+    border-color: #dee2e6;
+}
+.note-editable .table:not(.table-sm) tr td,
+.note-editable table td {
+    border-color: #dee2e6;
 }
 
 @media (max-width: 575.98px) {
