@@ -2323,7 +2323,7 @@ Quiz Check Answers Page Style End
     -moz-border-radius: 50px;
 }
 /* Right triangle placed top left flush. */
-.left_top:before {
+.left_top span:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2335,7 +2335,7 @@ Quiz Check Answers Page Style End
     border: 32px solid;
     border-color: #666 transparent transparent transparent;
 }
-.left_top:after{
+.left_top span:after{
     content: ' ';
     position: absolute;
     width: 0;
