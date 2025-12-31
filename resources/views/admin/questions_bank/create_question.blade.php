@@ -70,15 +70,6 @@
         box-shadow:0 16px 50px rgba(0,0,0,.18);
         padding:14px;display:none;min-width:560px;z-index:20;
     }
-    .equationModal .dropdown:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
     .equationModal .dropdown.show{display:block}
     .equationModal .dd-title{font-weight:800;margin:0 0 10px 0}
     .equationModal .dd-section{margin:10px 0 14px}
