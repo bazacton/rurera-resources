@@ -81,7 +81,7 @@
     .equationModal .sym{
         border:1px solid #e5e7eb;border-radius:12px;padding:10px 8px;
         background:#fff;display:flex;flex-direction:column;align-items:center;gap:6px;
-        user-select:none
+        justify-content: center;
     }
     .equationModal .sym:hover{background:#f9fafb;border-color:#d1d5db}
     .equationModal .sym .glyph{font-size:22px;line-height:1}
@@ -2340,7 +2340,7 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
             const items = sec.items.map(it => `
       <button class="sym" type="button" onclick="insert('${escapeForJS(it.code)}');hideDropdown();">
         <div class="glyph">${it.glyph}</div>
-        <div class="code">${escapeHTML(it.code)}</div>
+        // <div class="code">${escapeHTML(it.code)}</div>
       </button>
     `).join('');
             return `
