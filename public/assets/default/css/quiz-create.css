@@ -2380,11 +2380,11 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -32px;
+    left: -34px;
     right: auto;
     top: 34px;
     bottom: auto;
-    border: 16px solid;
+    border: 18px solid;
     border-color: #666 #666 transparent transparent;
 }
 .left_top .cloud_nner_text:after{
@@ -2409,7 +2409,7 @@ Quiz Check Answers Page Style End
     right: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent #666 transparent transparent;
+    border-color: transparent #ddd transparent transparent;
     transform: translateY(-50%);
 }
 .left_middle .cloud_nner_text:after {
