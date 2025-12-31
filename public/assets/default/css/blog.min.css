@@ -72,9 +72,8 @@
     flex-direction: column;
     gap: 15px;
     position: relative;
-    padding-left: 20px;
 }
-.single-post-nav ul:before {
+/* .single-post-nav ul:before {
     content: "";
     position: absolute;
     left: 0;
@@ -83,7 +82,7 @@
     width: 4px;
     background-color: #eee;
     border-radius: 25px;
-}
+} */
 .blog-single-post .single-post-nav li {
     list-style: none;
 }
@@ -306,6 +305,9 @@
     gap: 15px 0;
     padding-left: 15px;
     margin-bottom: 20px;
+}
+.cart-banner.single-post-subheader {
+    padding-bottom: 25px;
 }
 .cart-banner.single-post-subheader h1 {
     font-size: 45px;
