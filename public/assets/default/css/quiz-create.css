@@ -2405,7 +2405,7 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -44px;
+    left: -42px;
     right: auto;
     top: 50%;
     border: 22px solid;
@@ -2417,7 +2417,7 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -42px;
+    left: -39px;
     top: 50%;
     border: 22px solid;
     border-color: transparent var(--cloud-br-color) transparent transparent;
