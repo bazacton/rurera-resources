@@ -2370,7 +2370,7 @@ Quiz Check Answers Page Style End
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
     padding: 15px 20px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--cloud-br-color);
     min-height: 105px;
 }
 
@@ -2385,7 +2385,7 @@ Quiz Check Answers Page Style End
     top: 34px;
     bottom: auto;
     border: 16px solid;
-    border-color: #ddd #ddd transparent transparent;
+    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
 }
 .left_top .cloud_nner_text:after{
     content: ' ';
