@@ -21,7 +21,7 @@ $rand_id = rand(99,9999);
 @endpush
 @section('content')
 
-<div class="learning-page type-sats" >
+<div class="learning-page type-sats tttt" >
 
 
     <div class="d-flex position-relative">
