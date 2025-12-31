@@ -70,7 +70,6 @@
 .single-post-nav ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     position: relative;
 }
 /* .single-post-nav ul:before {
@@ -90,23 +89,24 @@
     display: block;
     background-color: #fff;
     color: var(--primary);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     position: relative;
+    padding: 10px 10px;
 }
 .single-post-nav a.current {
-    color: var(--primary);
-    font-weight: 600;
+    color: #333;
+    background-color: #2962ff1a;
 }
 .single-post-nav a:before {
     content: "";
     position: absolute;
-    left: -20px;
+    left: 0;
     top: 0;
     height: 100%;
-    width: 4px;
+    width: 1px;
     background-color: var(--primary);
-    border-radius: 25px;
+    border-radius: 0;
     opacity: 0;
     visibility: hidden;
 }
