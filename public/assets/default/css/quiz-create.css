@@ -2409,7 +2409,7 @@ Quiz Check Answers Page Style End
     right: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent #ddd transparent transparent;
+    border-color: transparent #666 transparent transparent;
     transform: translateY(-50%);
 }
 .left_middle .cloud_nner_text:after {
