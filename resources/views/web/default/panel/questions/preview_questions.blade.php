@@ -374,7 +374,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     var btnMidDown = document.getElementById('btn-mid-down');
 
     // Scroll amount
-    var SCROLL_AMOUNT = 400;
+    var SCROLL_AMOUNT = 200;
 
     // Function to update visibility
     function updateScrollState() {
@@ -383,13 +383,13 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         var docHeight = document.documentElement.scrollHeight;
         
         // State 1: Top (less than 200px scrolled)
-        if (scrollTop < 200) {
+        if (scrollTop < 100) {
             btnTop.classList.remove('hidden');
             groupMiddle.classList.add('hidden');
             btnBottom.classList.add('hidden');
         } 
         // State 3: Bottom (within 200px of bottom)
-        else if ((scrollTop + windowHeight) >= (docHeight - 200)) {
+        else if ((scrollTop + windowHeight) >= (docHeight - 100)) {
             btnTop.classList.add('hidden');
             groupMiddle.classList.add('hidden');
             btnBottom.classList.remove('hidden');
