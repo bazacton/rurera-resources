@@ -770,20 +770,35 @@
             callbacks: {
                 onPaste: function (e) {
                     let clipboardData = (e.originalEvent || e).clipboardData;
-                    let text = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+                    let html = clipboardData.getData('text/html');
+                    let text = clipboardData.getData('text/plain');
 
-                    if (text) {
-                        e.preventDefault();
+                    e.preventDefault();
 
-                        // Remove Â character
-                        text = text.replace(/Â/g, '');
+                    let content = html || text;
 
-                        // Convert non-breaking spaces to normal spaces
-                        text = text.replace(/\u00A0/g, ' ');
+                    // Remove Â characters
+                    content = content.replace(/Â/g, '');
 
-                        // Insert cleaned HTML
-                        document.execCommand('insertHTML', false, text);
-                    }
+                    // Convert non-breaking spaces to normal spaces
+                    content = content.replace(/\u00A0/g, ' ');
+
+                    // Create temp container
+                    let tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = content;
+
+                    // 🔥 Remove all inline styles
+                    tempDiv.querySelectorAll('[style]').forEach(el => {
+                        el.removeAttribute('style');
+                    });
+
+                    // Optional: remove Google Docs specific attributes
+                    tempDiv.querySelectorAll('[class]').forEach(el => {
+                        el.removeAttribute('class');
+                    });
+
+                    // Insert cleaned content
+                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
         });
