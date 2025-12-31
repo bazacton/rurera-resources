@@ -43,7 +43,7 @@
 .blog-single-post .post-show {
     border-right: 1px solid #ddd;
 }
-.blog-single-post .post-show > br {
+.blog-single-post .post-show br {
     display: none;
 }
 .post-show p {
