@@ -40,6 +40,12 @@
 .blog-medium .blog-grid-detail {
     padding: 0 20px;
 }
+.blog-single-post .post-show {
+    border-right: 1px solid #ddd;
+}
+.blog-single-post .post-show > br {
+    display: none;
+}
 .post-show p {
     margin-top: 15px;
 }
@@ -59,7 +65,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
-    margin-top: 22px;
+    margin-top: -5px;
 }
 .single-post-nav ul {
     display: flex;
