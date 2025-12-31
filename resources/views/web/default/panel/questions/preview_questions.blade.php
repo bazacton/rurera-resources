@@ -218,6 +218,28 @@ $rand_id = rand(99,9999);
             </div>
         </div>
     </section>
+
+    <div id="scroll-controls" class="page-prev-next-controls">
+        <!-- Top State: Scroll Down Button -->
+        <button id="btn-top" class="scroll-btn pill hidden">
+            Scroll down <i class="arrow down"></i>
+        </button>
+
+        <!-- Middle State: Two Circular Buttons -->
+        <div id="group-middle" class="middle-group hidden">
+            <button id="btn-mid-up" class="scroll-btn circle">
+                <i class="arrow up"></i>
+            </button>
+            <button id="btn-mid-down" class="scroll-btn circle">
+                <i class="arrow down"></i>
+            </button>
+        </div>
+
+        <!-- Bottom State: Scroll Up Button -->
+        <button id="btn-bottom" class="scroll-btn pill hidden">
+            Scroll up <i class="arrow up"></i>
+        </button>
+    </div>
 </div>
 
 
@@ -341,8 +363,65 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     }
 });
 
+</script>
+<script>
+    // Use 'var' as requested
+    var scrollControls = document.getElementById('scroll-controls');
+    var btnTop = document.getElementById('btn-top');
+    var groupMiddle = document.getElementById('group-middle');
+    var btnBottom = document.getElementById('btn-bottom');
+    var btnMidUp = document.getElementById('btn-mid-up');
+    var btnMidDown = document.getElementById('btn-mid-down');
 
+    // Scroll amount
+    var SCROLL_AMOUNT = 400;
 
+    // Function to update visibility
+    function updateScrollState() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var windowHeight = window.innerHeight;
+        var docHeight = document.documentElement.scrollHeight;
+        
+        // State 1: Top (less than 200px scrolled)
+        if (scrollTop < 200) {
+            btnTop.classList.remove('hidden');
+            groupMiddle.classList.add('hidden');
+            btnBottom.classList.add('hidden');
+        } 
+        // State 3: Bottom (within 200px of bottom)
+        else if ((scrollTop + windowHeight) >= (docHeight - 200)) {
+            btnTop.classList.add('hidden');
+            groupMiddle.classList.add('hidden');
+            btnBottom.classList.remove('hidden');
+        } 
+        // State 2: Middle
+        else {
+            btnTop.classList.add('hidden');
+            groupMiddle.classList.remove('hidden');
+            btnBottom.classList.add('hidden');
+        }
+    }
+
+    // Event Listeners for Scrolling
+    function scrollUp() {
+        window.scrollBy(0, -SCROLL_AMOUNT);
+    }
+
+    function scrollDown() {
+        window.scrollBy(0, SCROLL_AMOUNT);
+    }
+
+    // Attach events
+    btnTop.addEventListener('click', scrollDown);
+    btnBottom.addEventListener('click', scrollUp);
+    btnMidUp.addEventListener('click', scrollUp);
+    btnMidDown.addEventListener('click', scrollDown);
+
+    // Update on scroll
+    window.addEventListener('scroll', updateScrollState);
+    
+    // Initial check
+    updateScrollState();
 </script>
 
 @endpush
