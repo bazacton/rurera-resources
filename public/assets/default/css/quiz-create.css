@@ -2319,7 +2319,6 @@ Quiz Check Answers Page Style End
     padding: 15px 0;
     box-sizing: border-box;
     border-radius: 8px;
-    width: 100%;
 }
 .cloud_text.left_bottom,
 .cloud_text.right_bottom {
@@ -2370,8 +2369,7 @@ Quiz Check Answers Page Style End
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
     padding: 15px 20px;
-    border: 2px solid #ddd;
-    min-height: 105px;
+    border: 2px solid #666;
 }
 
 /* Left Top Triangle */
@@ -2385,7 +2383,7 @@ Quiz Check Answers Page Style End
     top: 34px;
     bottom: auto;
     border: 16px solid;
-    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
+    border-color: #666 #666 transparent transparent;
 }
 .left_top .cloud_nner_text:after{
     content: ' ';
@@ -2397,7 +2395,7 @@ Quiz Check Answers Page Style End
     top: 35px;
     bottom: auto;
     border: 16px solid;
-    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
+    border-color: #fff #fff transparent transparent;
 }
 /* Left Center triangle */
 .left_middle .cloud_nner_text:before {
@@ -2409,7 +2407,7 @@ Quiz Check Answers Page Style End
     right: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent #ddd transparent transparent;
+    border-color: transparent #666 transparent transparent;
     transform: translateY(-50%);
 }
 .left_middle .cloud_nner_text:after {
@@ -2420,7 +2418,7 @@ Quiz Check Answers Page Style End
     left: -42px;
     top: 50%;
     border: 22px solid;
-    border-color: transparent currentColor transparent transparent;
+    border-color: transparent #fff transparent transparent;
     transform: translateY(-50%);
 }
 /* Left Bottom Triangle */
@@ -2434,7 +2432,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -35px;
     border: 18px solid;
-    border-color: #ddd transparent transparent #ddd;
+    border-color: #666 transparent transparent #666;
 }
 .left_bottom .cloud_nner_text:after{
     content: ' ';
@@ -2446,7 +2444,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -31px;
     border: 16px solid;
-    border-color: currentColor transparent transparent currentColor;
+    border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
 }
 
 /* Right Bottom Triangle */
@@ -2459,7 +2457,7 @@ Quiz Check Answers Page Style End
     right: 33px;
     bottom: -35px;
     border: 18px solid;
-    border-color: #ddd #ddd transparent transparent;
+    border-color: #666 #666 transparent transparent;
 }
 .right_bottom .cloud_nner_text:after{
     content: ' ';
@@ -2470,7 +2468,7 @@ Quiz Check Answers Page Style End
     right: 35px;
     bottom: -31px;
     border: 18px solid;
-    border-color: currentColor currentColor transparent transparent;
+    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
 }
 
 /* Right Top triangle */
@@ -2484,7 +2482,7 @@ Quiz Check Answers Page Style End
     top: 38px;
     bottom: auto;
     border: 16px solid;
-    border-color: #ddd transparent transparent #ddd;
+    border-color: #666 transparent transparent #666;
 }
 .right_top .cloud_nner_text:after{
 	content: ' ';
@@ -2496,7 +2494,7 @@ Quiz Check Answers Page Style End
     top: 40px;
     bottom: auto;
     border: 16px solid;
-    border-color: currentColor transparent transparent currentColor;
+    border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
 }
 /* right Center triangle */
 .right_middle .cloud_nner_text:before {
@@ -2508,7 +2506,7 @@ Quiz Check Answers Page Style End
     left: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent transparent transparent #ddd;
+    border-color: transparent transparent transparent #666;
     transform: translateY(-50%);
 }
 .right_middle .cloud_nner_text:after {
@@ -2519,7 +2517,7 @@ Quiz Check Answers Page Style End
     right: -42px;
     top: 50%;
     border: 22px solid;
-    border-color: transparent transparent transparent currentColor;
+    border-color: transparent transparent transparent var(--cloud-br-color);
     transform: translateY(-50%);
 }
 /* Questions Cloud Style End */
