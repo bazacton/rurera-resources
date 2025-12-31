@@ -2517,6 +2517,96 @@ Quiz Check Answers Page Style End
     transform: translateY(-50%);
 }
 /* Questions Cloud Style End */
+
+/* Scroll Controls Container */
+#scroll-controls {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+/* Button Base Styles */
+.page-prev-next-controls .scroll-btn {
+    background-color: white;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* Hover Effects: Lift Animation */
+.page-prev-next-controls .scroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+/* Pill Shape for Text Buttons */
+.page-prev-next-controls .pill {
+    padding: 10px 20px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+/* Circular Shape for Icon-only Buttons */
+.page-prev-next-controls .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+}
+/* Arrow Icons */
+.page-prev-next-controls .arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
+    transition: transform 0.2s;
+}
+/* Arrow Rotations */
+.page-prev-next-controls .arrow.up {
+    transform: rotate(135deg);
+}
+.page-prev-next-controls .arrow.down {
+    transform: rotate(-45deg);
+}
+/* Bounce Animation on Hover */
+@keyframes bounce-down {
+    0%, 100% { transform: rotate(-45deg) translate(0, 0); }
+    50% { transform: rotate(-45deg) translate(-2px, 2px); }
+}
+
+@keyframes bounce-up {
+    0%, 100% { transform: rotate(135deg) translate(0, 0); }
+    50% { transform: rotate(135deg) translate(-2px, 2px); }
+}
+.page-prev-next-controls .scroll-btn:hover .arrow.down {
+    animation: bounce-down 1s infinite;
+}
+.page-prev-next-controls .scroll-btn:hover .arrow.up {
+    animation: bounce-up 1s infinite;
+}
+/* Visibility Helper */
+.page-prev-next-controls .hidden {
+    display: none !important;
+}
+/* Middle Group Layout */
+.page-prev-next-controls .middle-group {
+    display: flex;
+    gap: 15px;
+}
+
+
 @media screen and (max-width: 782px) {
     .preview-question-area .question-right-side {
         max-width: 100%;
