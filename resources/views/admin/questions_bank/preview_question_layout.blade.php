@@ -857,7 +857,6 @@ $(document).on('click', '.add-keyword-btn', function () {
             const items = sec.items.map(it => `
       <button class="sym" type="button" onclick="insert('${escapeForJS(it.code)}');hideDropdown();">
         <div class="glyph">${it.glyph}</div>
-        // <div class="code">${escapeHTML(it.code)}</div>
       </button>
     `).join('');
             return `
