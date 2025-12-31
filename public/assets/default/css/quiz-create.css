@@ -2321,10 +2321,6 @@ Quiz Check Answers Page Style End
     border-radius: 8px;
     width: 100%;
 }
-.cloud_text.left_bottom,
-.cloud_text.right_bottom {
-    padding-bottom: 40px;
-}
 .cloud_text.left_bottom .cloud_text_element,
 .cloud_text.right_bottom .cloud_text_element {
     align-items: flex-end;
