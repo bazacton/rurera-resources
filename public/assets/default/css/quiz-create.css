@@ -2425,23 +2425,23 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -19px;
+    left: -18px;
     bottom: -2px;
     border: 26px solid;
     border-color: #ddd transparent transparent;
-    transform: rotate(-60deg);
+    transform: rotate(-58deg);
 }
 .left_bottom .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: -16px;
+    left: -15px;
     top: auto;
-    bottom: 0px;
+    bottom: -1px;
     border: 26px solid;
     border-color: var(--cloud-br-color) transparent transparent;
-    transform: rotate(-60deg);
+    transform: rotate(-57deg);
 }
 
 /* Right Bottom Triangle */
@@ -2450,22 +2450,23 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: auto;
-    right: 33px;
-    bottom: -35px;
-    border: 18px solid;
-    border-color: #ddd #ddd transparent transparent;
+    right: -18px;
+    bottom: -2px;
+    border: 26px solid;
+    border-color: #ddd transparent transparent;
+    transform: rotate(-58deg);
 }
 .right_bottom .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: auto;
-    right: 35px;
-    bottom: -31px;
-    border: 18px solid;
-    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
+    right: -15px;
+    top: auto;
+    bottom: -1px;
+    border: 26px solid;
+    border-color: var(--cloud-br-color) transparent transparent;
+    transform: rotate(-57deg);
 }
 
 /* Right Top triangle */
