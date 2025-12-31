@@ -299,3 +299,6 @@
     background-color: #fcfcfc;
     padding-bottom: 50px;
 }
+.cart-banner.single-post-subheader h1 {
+    font-size: 45px;
+}
