@@ -2434,7 +2434,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -35px;
     border: 18px solid;
-    border-color: #ddd transparent transparent #ddd;
+    border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
 }
 .left_bottom .cloud_nner_text:after{
     content: ' ';
@@ -2459,7 +2459,7 @@ Quiz Check Answers Page Style End
     right: 33px;
     bottom: -35px;
     border: 18px solid;
-    border-color: #ddd #ddd transparent transparent;
+    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
 }
 .right_bottom .cloud_nner_text:after{
     content: ' ';
@@ -2484,7 +2484,7 @@ Quiz Check Answers Page Style End
     top: 38px;
     bottom: auto;
     border: 16px solid;
-    border-color: #ddd transparent transparent #ddd;
+    border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
 }
 .right_top .cloud_nner_text:after{
 	content: ' ';
@@ -2508,7 +2508,7 @@ Quiz Check Answers Page Style End
     left: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent transparent transparent #ddd;
+    border-color: transparent transparent transparent var(--cloud-br-color);
     transform: translateY(-50%);
 }
 .right_middle .cloud_nner_text:after {
