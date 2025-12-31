@@ -291,7 +291,7 @@
 }
 .blog-single-post .post-show h4 {
     font-size: 27px;
-    margin: 10px 0 10px;
+    margin: 20px 0 10px;
 }
 .blog-single-post li {
     list-style: inherit;
@@ -304,7 +304,7 @@
     flex-direction: column;
     gap: 15px 0;
     padding-left: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .cart-banner.single-post-subheader {
     padding-bottom: 25px;
