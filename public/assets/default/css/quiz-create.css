@@ -2370,6 +2370,7 @@ Quiz Check Answers Page Style End
     width: calc(100% - 120px);
     padding: 15px 20px;
     border: 2px solid #666;
+    min-height: 105px;
 }
 
 /* Left Top Triangle */
@@ -2395,7 +2396,7 @@ Quiz Check Answers Page Style End
     top: 35px;
     bottom: auto;
     border: 16px solid;
-    border-color: #fff #fff transparent transparent;
+    border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
 }
 /* Left Center triangle */
 .left_middle .cloud_nner_text:before {
@@ -2418,7 +2419,7 @@ Quiz Check Answers Page Style End
     left: -42px;
     top: 50%;
     border: 22px solid;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent var(--cloud-br-color) transparent transparent;
     transform: translateY(-50%);
 }
 /* Left Bottom Triangle */
