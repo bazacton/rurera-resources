@@ -381,19 +381,19 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         var windowHeight = window.innerHeight;
         var docHeight = document.documentElement.scrollHeight;
-        
-        // State 1: Top (less than 200px scrolled)
+
+        // State 1: Top
         if (scrollTop < 100) {
             btnTop.classList.remove('hidden');
             groupMiddle.classList.add('hidden');
             btnBottom.classList.add('hidden');
-        } 
-        // State 3: Bottom (within 200px of bottom)
+        }
+        // State 3: Bottom
         else if ((scrollTop + windowHeight) >= (docHeight - 100)) {
             btnTop.classList.add('hidden');
             groupMiddle.classList.add('hidden');
             btnBottom.classList.remove('hidden');
-        } 
+        }
         // State 2: Middle
         else {
             btnTop.classList.add('hidden');
@@ -402,7 +402,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         }
     }
 
-    // Event Listeners for Scrolling
+    // Scroll handlers
     function scrollUp() {
         window.scrollBy(0, -SCROLL_AMOUNT);
     }
@@ -411,7 +411,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         window.scrollBy(0, SCROLL_AMOUNT);
     }
 
-    // Attach events
+    // Attach click events
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
     btnMidUp.addEventListener('click', scrollUp);
@@ -419,7 +419,13 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
     // Update on scroll
     window.addEventListener('scroll', updateScrollState);
-    
+
+    // Update on zoom in / zoom out
+    window.addEventListener('resize', updateScrollState);
+
+    // Mobile orientation support
+    window.addEventListener('orientationchange', updateScrollState);
+
     // Initial check
     updateScrollState();
 </script>
