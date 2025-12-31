@@ -50,6 +50,7 @@
 }
 .blog-single-post .post-show p {
     margin-top: 0;
+    font-size: 19px;
 }
 .blog-single-post .post-show > div {
     line-height: 26px;
