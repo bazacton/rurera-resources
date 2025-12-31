@@ -2336,7 +2336,7 @@ Quiz Check Answers Page Style End
 .cloud_text_element {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 50px;
+    gap: 0 40px;
     justify-content: center;
     margin: 0 auto;
 }
