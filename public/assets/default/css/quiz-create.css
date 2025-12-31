@@ -2502,7 +2502,7 @@ Quiz Check Answers Page Style End
     right: -50px;
     top: 50%;
     border: 28px solid;
-    border-color: transparent #ddd transparent transparent;
+    border-color: transparent transparent transparent #ddd;
     transform: translateY(-50%);
 }
 .right_middle .cloud_nner_text:after {
@@ -2513,7 +2513,7 @@ Quiz Check Answers Page Style End
     right: -45px;
     top: 50%;
     border: 26px solid;
-    border-color: transparent var(--cloud-br-color) transparent transparent;
+    border-color: transparent transparent transparent var(--cloud-br-color);
     transform: translateY(-50%);
 }
 /* Questions Cloud Style End */
