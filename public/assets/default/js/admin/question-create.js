@@ -7280,10 +7280,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         var cloud_size = rureraform_form_elements[i]["cloud_size"];
                         var cloud_avatar = rureraform_form_elements[i]["cloud_avatar"];
                         var cloud_avatar = $('input[name="cloud_avatar"]:checked').val();
-                        console.log('cloud_avatar');
-                        console.log(cloud_avatar);
-                        var cloud_color = rureraform_form_elements[i]["cloud_color"];
 
+                        var cloud_color = rureraform_form_elements[i]["cloud_color"];
+                        document.documentElement.style.setProperty(
+                            '--cloud-br-color',
+                            cloud_color
+                        );
                         var cloud_avatar_html = '<span class="cloud_avatar"><img src="/assets/default/svgs/cloud-kids-avatars/'+cloud_avatar+'"></span>';
 
                         var label_data = "<div class='question-label " + label_type + " " + cloud_size + " " + cloud_direction + "'><span class='cloud_text_element'>"+cloud_avatar_html+"<span class='cloud_nner_text' style='background:"+cloud_color+"'>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></span></div>";
