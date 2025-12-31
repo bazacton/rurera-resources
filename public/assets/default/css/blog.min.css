@@ -281,8 +281,12 @@
     margin: 20px 0 10px;
 }
 .blog-single-post .post-show h3 {
-    font-size: 16px;
-    margin: 15px 0 10px;
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+.blog-single-post .post-show h4 {
+    font-size: 27px;
+    margin: 10px 0 10px;
 }
 .blog-single-post li {
     list-style: inherit;
