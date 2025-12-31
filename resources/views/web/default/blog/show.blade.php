@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
                     <a href="/blog" itemprop="url" class="post-back-btn font-18 font-weight-normal">Back to blog</a>
-                    <h1 class="font-30 font-weight-bold my-20">{{ $post->title }}</h1>
+                    <h1 class="font-weight-bold my-20">{{ $post->title }}</h1>
                     <div class="post-date">
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
                     </div>
