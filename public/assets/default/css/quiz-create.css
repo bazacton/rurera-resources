@@ -2397,7 +2397,7 @@ Quiz Check Answers Page Style End
     top: 35px;
     bottom: auto;
     border: 16px solid;
-    border-color: currentColor currentColor transparent transparent;
+    border-color: (--cloud-br-color) (--cloud-br-color) transparent transparent;
 }
 /* Left Center triangle */
 .left_middle .cloud_nner_text:before {
@@ -2420,7 +2420,7 @@ Quiz Check Answers Page Style End
     left: -42px;
     top: 50%;
     border: 22px solid;
-    border-color: transparent currentColor transparent transparent;
+    border-color: transparent (--cloud-br-color) transparent transparent;
     transform: translateY(-50%);
 }
 /* Left Bottom Triangle */
@@ -2446,7 +2446,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -31px;
     border: 16px solid;
-    border-color: currentColor transparent transparent currentColor;
+    border-color: (--cloud-br-color) transparent transparent (--cloud-br-color);
 }
 
 /* Right Bottom Triangle */
@@ -2470,7 +2470,7 @@ Quiz Check Answers Page Style End
     right: 35px;
     bottom: -31px;
     border: 18px solid;
-    border-color: currentColor currentColor transparent transparent;
+    border-color: (--cloud-br-color) (--cloud-br-color) transparent transparent;
 }
 
 /* Right Top triangle */
@@ -2496,7 +2496,7 @@ Quiz Check Answers Page Style End
     top: 40px;
     bottom: auto;
     border: 16px solid;
-    border-color: currentColor transparent transparent currentColor;
+    border-color: (--cloud-br-color) transparent transparent (--cloud-br-color);
 }
 /* right Center triangle */
 .right_middle .cloud_nner_text:before {
@@ -2519,7 +2519,7 @@ Quiz Check Answers Page Style End
     right: -42px;
     top: 50%;
     border: 22px solid;
-    border-color: transparent transparent transparent currentColor;
+    border-color: transparent transparent transparent (--cloud-br-color);
     transform: translateY(-50%);
 }
 /* Questions Cloud Style End */
