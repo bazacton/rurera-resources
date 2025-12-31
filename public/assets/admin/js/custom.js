@@ -769,71 +769,21 @@
             },
             callbacks: {
                 onPaste: function (e) {
-                    e.preventDefault();
+                    let clipboardData = (e.originalEvent || e).clipboardData;
+                    let text = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
 
-                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-                    var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+                    if (text) {
+                        e.preventDefault();
 
-                    // Create a temporary DOM element to parse the HTML
-                    var tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = pastedData;
+                        // Remove Â character
+                        text = text.replace(/Â/g, '');
 
-                    // Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
-                    function cleanTags(node) {
-                        var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
-                        var childNodes = Array.from(node.childNodes);
-                        childNodes.forEach(function(child) {
-                            if (child.nodeType === 1) { // Element Node
-                                if (!allowedTags.includes(child.nodeName)) {
-                                    // Replace disallowed tags with their inner content
-                                    while (child.firstChild) {
-                                        node.insertBefore(child.firstChild, child);
-                                    }
-                                    node.removeChild(child);
-                                } else {
-                                    // Allowed tag: Clean recursively
-                                    cleanTags(child);
+                        // Convert non-breaking spaces to normal spaces
+                        text = text.replace(/\u00A0/g, ' ');
 
-                                    // Remove all attributes from tables and their children
-                                    if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
-                                        while (child.attributes.length > 0) {
-                                            child.removeAttribute(child.attributes[0].name);
-                                        }
-                                    }
-                                }
-                            } else if (child.nodeType === 3) { // Text Node
-                                // Do nothing for text nodes
-                            } else {
-                                // Remove any other type of node
-                                node.removeChild(child);
-                            }
-                        });
+                        // Insert cleaned HTML
+                        document.execCommand('insertHTML', false, text);
                     }
-
-                    // Remove all inline styles
-                    var elementsWithStyles = tempDiv.querySelectorAll('[style]');
-                    elementsWithStyles.forEach(function (element) {
-                        element.removeAttribute('style');
-                    });
-
-                    // Remove HTML comments
-                    function removeComments(node) {
-                        var childNodes = Array.from(node.childNodes);
-                        childNodes.forEach(function(child) {
-                            if (child.nodeType === 8) { // Comment Node
-                                node.removeChild(child);
-                            } else if (child.nodeType === 1) {
-                                removeComments(child);
-                            }
-                        });
-                    }
-                    removeComments(tempDiv);
-
-                    // Clean unwanted tags
-                    cleanTags(tempDiv);
-
-                    // Insert the cleaned content into the editor
-                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
         });
