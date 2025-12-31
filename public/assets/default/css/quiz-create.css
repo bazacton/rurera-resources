@@ -2451,22 +2451,21 @@ Quiz Check Answers Page Style End
     width: 0;
     height: 0;
     right: -18px;
-    bottom: -2px;
+    bottom: -8px;
     border: 26px solid;
-    border-color: #ddd transparent transparent;
-    transform: rotate(-58deg);
+    border-color: transparent transparent #ddd;
+    transform: rotate(-120deg);
 }
 .right_bottom .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    right: -15px;
-    top: auto;
-    bottom: -1px;
+    right: -14px;
+    bottom: -5px;
     border: 26px solid;
-    border-color: var(--cloud-br-color) transparent transparent;
-    transform: rotate(-57deg);
+    border-color: transparent transparent var(--cloud-br-color);
+    transform: rotate(-120deg);
 }
 
 /* Right Top triangle */
