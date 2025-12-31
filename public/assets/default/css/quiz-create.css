@@ -2370,7 +2370,7 @@ Quiz Check Answers Page Style End
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
     padding: 15px 20px;
-    border: 2px solid #666;
+    border: 2px solid #ddd;
     min-height: 105px;
 }
 
@@ -2385,7 +2385,7 @@ Quiz Check Answers Page Style End
     top: 34px;
     bottom: auto;
     border: 18px solid;
-    border-color: #666 #666 transparent transparent;
+    border-color: #ddd #ddd transparent transparent;
 }
 .left_top .cloud_nner_text:after{
     content: ' ';
@@ -2409,7 +2409,7 @@ Quiz Check Answers Page Style End
     right: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent #666 transparent transparent;
+    border-color: transparent #ddd transparent transparent;
     transform: translateY(-50%);
 }
 .left_middle .cloud_nner_text:after {
@@ -2434,7 +2434,7 @@ Quiz Check Answers Page Style End
     top: auto;
     bottom: -35px;
     border: 18px solid;
-    border-color: #666 transparent transparent #666;
+    border-color: #ddd transparent transparent #ddd;
 }
 .left_bottom .cloud_nner_text:after{
     content: ' ';
@@ -2459,7 +2459,7 @@ Quiz Check Answers Page Style End
     right: 33px;
     bottom: -35px;
     border: 18px solid;
-    border-color: #666 #666 transparent transparent;
+    border-color: #ddd #ddd transparent transparent;
 }
 .right_bottom .cloud_nner_text:after{
     content: ' ';
@@ -2484,7 +2484,7 @@ Quiz Check Answers Page Style End
     top: 38px;
     bottom: auto;
     border: 16px solid;
-    border-color: #666 transparent transparent #666;
+    border-color: #ddd transparent transparent #ddd;
 }
 .right_top .cloud_nner_text:after{
 	content: ' ';
@@ -2508,7 +2508,7 @@ Quiz Check Answers Page Style End
     left: auto;
     top: 50%;
     border: 22px solid;
-    border-color: transparent transparent transparent #666;
+    border-color: transparent transparent transparent #ddd;
     transform: translateY(-50%);
 }
 .right_middle .cloud_nner_text:after {
