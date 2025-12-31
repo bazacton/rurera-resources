@@ -2319,6 +2319,7 @@ Quiz Check Answers Page Style End
     padding: 15px 0;
     box-sizing: border-box;
     border-radius: 8px;
+    width: 100%;
 }
 .cloud_text.left_bottom,
 .cloud_text.right_bottom {
@@ -2371,7 +2372,6 @@ Quiz Check Answers Page Style End
     padding: 15px 20px;
     border: 2px solid #666;
     min-height: 105px;
-    width: 100%;
 }
 
 /* Left Top Triangle */
