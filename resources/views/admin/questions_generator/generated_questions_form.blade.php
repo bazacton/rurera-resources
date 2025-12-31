@@ -64,7 +64,8 @@ $rand_id = rand(999,99999);
         position:absolute;top:56px;left:18px;
         background:#fff;border:1px solid #ddd;border-radius:12px;
         box-shadow:0 16px 50px rgba(0,0,0,.18);
-        padding:14px;display:none;min-width:560px;z-index:20
+        padding:14px;display:none;min-width:560px;z-index:20;
+        pointer-events: none;
     }
     .equationModal .dropdown.show{display:block}
     .equationModal .dd-title{font-weight:800;margin:0 0 10px 0}
