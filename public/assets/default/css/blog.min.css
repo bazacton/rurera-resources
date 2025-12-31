@@ -76,26 +76,25 @@
     overflow-y: auto;
 }
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  .single-post-nav ul {
-    scrollbar-width: thin;
-    scrollbar-color: #d1d1d1 #ffffff;
-  }
+.single-post-nav ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
 
-  /* Chrome, Edge, and Safari */
-  .single-post-nav ul::-webkit-scrollbar {
-    width: 5px;
-  }
+.single-post-nav ul::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
 
-  .single-post-nav ul::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-
-  .single-post-nav ul::-webkit-scrollbar-thumb {
-    background-color: #d1d1d1;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
+.single-post-nav ul::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+	background-color: #ccc;
+}
 /* .single-post-nav ul:before {
     content: "";
     position: absolute;
