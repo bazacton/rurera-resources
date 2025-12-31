@@ -91,7 +91,7 @@
     .equationModal .body{padding:0 0 25px;}
     .equationModal .editor-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .equationModal textarea{width:100%;height:240px;font-size:25px;padding:10px;border:1px solid #d1d5db;border-radius:10px}
-    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;overflow:auto; font-size: 20px;}
+    .equationModal .preview{border:1px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;overflow:auto; font-size: 18px;}
     .equationModal mjx-container[has-speech="true"] {
         pointer-events: none;
     }
