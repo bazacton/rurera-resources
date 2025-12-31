@@ -2494,28 +2494,27 @@ Quiz Check Answers Page Style End
     border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
 }
 /* right Center triangle */
-.right_middle .cloud_nner_text:before {
+.right_bottom .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    right: -44px;
-    left: auto;
-    top: 50%;
-    border: 22px solid;
-    border-color: transparent transparent transparent #ddd;
-    transform: translateY(-50%);
+    right: -19px;
+    bottom: -2px;
+    border: 26px solid;
+    border-color: #ddd transparent transparent;
+    transform: rotate(-60deg);
 }
-.right_middle .cloud_nner_text:after {
+.right_bottom .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    right: -42px;
-    top: 50%;
-    border: 22px solid;
-    border-color: transparent transparent transparent var(--cloud-br-color);
-    transform: translateY(-50%);
+    right: -16px;
+    bottom: 0px;
+    border: 26px solid;
+    border-color: var(--cloud-br-color) transparent transparent;
+    transform: rotate(-60deg);
 }
 /* Questions Cloud Style End */
 @media screen and (max-width: 782px) {
