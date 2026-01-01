@@ -14,7 +14,8 @@ $rand_id = rand(99,9999);
 <script>
     window.MathJax = {
         tex: {
-            packages: {'[+]': ['base']}
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$']]
         },
         svg: {
             fontCache: 'global'
@@ -464,12 +465,25 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 <script>
-    function renderRawLatex() {
-        const latexRegex = /\\(dfrac|frac|sqrt|sum|int|left|right|cdot|times|leq|geq)[^<]*/g;
+    function wrapRawLatex() {
+        const latexPattern = /(\\dfrac\{[^}]+\}\{[^}]+\}|\\frac\{[^}]+\}\{[^}]+\}|\\sqrt(\[[^\]]+\])?\{[^}]+\})/g;
 
         document.querySelectorAll('*:not(script):not(style)').forEach(el => {
-            if (el.children.length === 0 && latexRegex.test(el.textContent)) {
-                el.textContent = '$$' + el.textContent.trim() + '$$';
+            if (el.children.length > 0) return;
+
+            let text = el.textContent;
+
+            // Skip already-rendered math
+            if (text.includes('$$') || text.includes('\\(')) return;
+
+            if (latexPattern.test(text)) {
+                const lines = text.split(/\n+/).map(line => {
+                    line = line.trim();
+                    if (!line) return '';
+                    return `$$${line}$$`;
+                });
+
+                el.innerHTML = lines.join('<br>');
             }
         });
 
@@ -479,6 +493,6 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         }
     }
 
-    document.addEventListener('DOMContentLoaded', renderRawLatex);
+    document.addEventListener('DOMContentLoaded', wrapRawLatex);
 </script>
 @endpush
