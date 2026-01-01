@@ -87,6 +87,14 @@ $rand_id = rand(99,9999);
                                                     </div>
                                                     <div class="question-right-side">
                                                         <p>Question {{$counter}} / {{$questions->count()}}</p>
+
+                                                        <ul class="question-details">
+                                                            <li>{{$questionObj->category->getTitleAttribute()}}</li>
+                                                            <li>{{$questionObj->course->getTitleAttribute()}}</li>
+                                                            <li>{{$questionObj->topicPartItem->chapter->getTitleAttribute()}}</li>
+                                                            <li>{{$questionObj->topicPartItem->title}}</li>
+                                                        </ul>
+
                                                         <br>
                                                         <h3>Question Review</h3>
                                                         <form action="javascript:;" method="POST" class="row approve_question_form">
