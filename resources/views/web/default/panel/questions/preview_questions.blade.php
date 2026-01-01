@@ -86,7 +86,7 @@ $rand_id = rand(99,9999);
 
                                                                 $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
                                                             @endphp
-                                                            <span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}}) -- {{$chapter_title}} / {{$sub_chapter_title}}) ---- <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
+                                                            <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
                                                         </span>
 
                                                         <ul class="question-details">
