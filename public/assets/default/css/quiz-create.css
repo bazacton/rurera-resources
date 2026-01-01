@@ -2204,7 +2204,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .lms-card-timeline .card .card-body {
     padding: 0;
 }
-.lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;margin: 0 0 10px;}
+.lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;}
 .lms-card-timeline .card .card-body h6 {
     font-weight: 500;
     font-size: 15px;
