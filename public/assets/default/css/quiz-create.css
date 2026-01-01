@@ -2303,6 +2303,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .log_details .badge {
     margin: 0 !important;
+    font-size: 14px;
+    color: #666;
 }
 .question-right-side h3,
 .questions_logs_block h4 {
