@@ -2116,6 +2116,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 0;
+    padding: 12px 0 5px;
 }
 .question-details li {
     border-bottom: 1px solid #ddd;
