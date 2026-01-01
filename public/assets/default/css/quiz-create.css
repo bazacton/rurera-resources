@@ -2527,6 +2527,11 @@ Quiz Check Answers Page Style End
     width: 100%;
     left: 0;
     padding-right: 500px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 #scroll-controls .controls-inner {
     width: 100%;
@@ -2535,6 +2540,9 @@ Quiz Check Answers Page Style End
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#scroll-controls:has(#btn-bottom.hidden) {
+    bottom: 20px;
 }
 /* Button Base Styles */
 .page-prev-next-controls .scroll-btn {
