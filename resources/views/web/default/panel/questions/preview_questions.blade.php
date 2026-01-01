@@ -11,6 +11,17 @@ $rand_id = rand(99,9999);
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+<script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
     <style>.disabled-div {pointer-events: none;}</style>
 @endpush
@@ -451,5 +462,14 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     /* Initial check */
     updateScrollState();
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        if (!window.MathJax) return;
 
+        await MathJax.startup.promise;
+
+        // Convert everything on the page
+        MathJax.typesetPromise();
+    });
+</script>
 @endpush
