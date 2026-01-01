@@ -1253,12 +1253,21 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .questions-total-holder .question-dev-details {color: #adabab; font-size: 15px;}
 .question-details li span {
     color: #adabab;
-    font-size: 15px;
+    font-size: 14px;
     text-align: right;
     width: calc(100% - 85px);
 }
 .question-dev-details a {
     color: var(--primary);
+}
+.question-details li .question_status_label {
+    background-color: #ffe4e9;
+    border: 1px solid #ffa3b4;
+    color: #f5264c;
+    display: inline-block;
+    max-width: fit-content;
+    padding: 5px 8px;
+    border-radius: 3px;
 }
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 0;}
 .question-layout .rureraform-col {padding:0 15px 20px !important;}
