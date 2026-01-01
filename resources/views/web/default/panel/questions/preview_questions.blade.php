@@ -15,14 +15,13 @@ $rand_id = rand(99,9999);
     window.MathJax = {
         tex: {
             inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            displayMath: [['$$', '$$']]
         },
         svg: {
             fontCache: 'global'
         }
     };
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
     <style>.disabled-div {pointer-events: none;}</style>
 @endpush
@@ -30,7 +29,8 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 @section('content')
-<div class="learning-page type-practice type-sats preview-question-area">
+
+    <div class="learning-page type-practice type-sats preview-question-area">
 	<section class="learning-content lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
@@ -464,11 +464,34 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 <script>
-    console.log('testing');
-    document.addEventListener('DOMContentLoaded', async () => {
-        console.log('testing22');
-        await MathJax.startup.promise;
-        MathJax.typesetPromise();
-    });
+    function wrapRawLatex() {
+        const latexPattern = /(\\dfrac\{[^}]+\}\{[^}]+\}|\\frac\{[^}]+\}\{[^}]+\}|\\sqrt(\[[^\]]+\])?\{[^}]+\})/g;
+
+        document.querySelectorAll('*:not(script):not(style)').forEach(el => {
+            if (el.children.length > 0) return;
+
+            let text = el.textContent;
+
+            // Skip already-rendered math
+            if (text.includes('$$') || text.includes('\\(')) return;
+
+            if (latexPattern.test(text)) {
+                const lines = text.split(/\n+/).map(line => {
+                    line = line.trim();
+                    if (!line) return '';
+                    return `$$${line}$$`;
+                });
+
+                el.innerHTML = lines.join('<br>');
+            }
+        });
+
+        if (window.MathJax?.typesetPromise) {
+            MathJax.typesetClear();
+            MathJax.typesetPromise();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', wrapRawLatex);
 </script>
 @endpush
