@@ -2224,6 +2224,8 @@ function _rureraform_properties_prepare(_object) {
         $('.summernote-editor').summernote({
             tabsize: 2,
             height: null,
+            minHeight: 150,
+            maxHeight: 400,
             placeholder: $('.summernote-editor').attr('placeholder'),
             dialogsInBody: true,
             blockquoteBreakingLevel: 2,
@@ -2327,6 +2329,8 @@ function _rureraform_properties_prepare(_object) {
         $('.summernote-editor-notool').summernote({
             tabsize: 2,
             height: null,
+            minHeight: 150,
+            maxHeight: 400,
             placeholder: $('.summernote-editor-notool').attr('placeholder'),
             dialogsInBody: true,
             blockquoteBreakingLevel: 2,
