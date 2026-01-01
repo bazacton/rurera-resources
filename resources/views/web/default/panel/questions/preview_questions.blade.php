@@ -171,7 +171,7 @@ $rand_id = rand(99,9999);
                                                                                                                 <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
                                                                                                             </h5>
                                                                                                             <div class="log_details">
-                                                                                                                <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+                                                                                                                <span class="badge mb-2">{{$logObj->action_type}}</span>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
