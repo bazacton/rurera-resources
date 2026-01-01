@@ -2403,10 +2403,10 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -50px;
+    left: -42px;
     right: auto;
     top: 50%;
-    border: 28px solid;
+    border: 20px solid;
     border-color: transparent #ddd transparent transparent;
     transform: translateY(-50%);
 }
@@ -2415,9 +2415,9 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -45px;
+    left: -40px;
     top: 50%;
-    border: 26px solid;
+    border: 20px solid;
     border-color: transparent var(--cloud-br-color) transparent transparent;
     transform: translateY(-50%);
 }
