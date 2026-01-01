@@ -99,7 +99,7 @@ Lms Responsive Style Start
 @media (min-width:991px) {
     .top-navbar .top-contact-box {border-bottom: 0 !important;}
     .menu-category>ul>li {background-color: #f1f1f1; padding: 12px 25px 12px 15px;}
-    .navbar-expand-lg .navbar-nav {-ms-flex-direction: row; flex-direction: row;}
+    .navbar-expand-lg .navbar-nav {-ms-flex-direction: row; flex-direction: row; align-items: center;}
 }
 @media (max-width:991px) {
     .top-navbar {height: auto;}
