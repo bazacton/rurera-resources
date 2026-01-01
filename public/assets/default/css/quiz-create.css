@@ -2106,6 +2106,10 @@ Quiz Check Answers Page Style End
     align-items: center;
     justify-content: space-between;
 }
+.question-details li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 .preview-question-area .question-layout-block .prev-next-controls {
     width: 750px;
     position: relative;
