@@ -7,7 +7,6 @@ Sub Pages Style
 .referral-price-lists .row [class*="col-"] {padding-left: 10px; padding-right: 10px;}
 .referral-price-card span {line-height: normal;}
 .referral-text p {margin-bottom: 10px;}
-.referral-text a {background-color: var(--primary); padding: 8px 10px; border-radius: 3px; color: #fff; display: inline-block; line-height: normal;}
 .referral-link input.link-address {border: 0; background-color: #efefef; height: 36px; width: calc(100% - 100px); padding: 0 12px; border-radius: 3px; color: #6c7292;}
 .withdraw-card {background-color: #e9f3ff; border: 1px dashed #3472bb; border-radius: 5px; gap: 20px;}
 .withdraw-card .icon-box {flex: 0 0 32px;}
