@@ -2070,6 +2070,7 @@ Quiz Check Answers Page Style End
     padding-top: 50px;
 }
 .preview-question-area .question-right-side {
+    background-color: #fff;
     max-width: 500px;
     z-index: 2;
     overflow: hidden;
