@@ -2057,8 +2057,16 @@ Quiz Check Answers Page Style End
 
 
 /* Review Question Right Side Style Start */
+body:has(.type-practice.type-sats.preview-question-area) {
+    overflow: hidden;
+}
 .preview-question-area {
     padding-right: 450px;
+}
+.preview-question-area .question-area-block {
+    overflow: hidden;
+    overflow-y: auto;
+    padding-right: 15px;
 }
 .preview-question-area .learning-content > .container {
     max-width: 100%;
