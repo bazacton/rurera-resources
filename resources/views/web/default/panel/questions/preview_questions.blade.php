@@ -22,6 +22,7 @@ $rand_id = rand(99,9999);
         }
     };
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
     <style>.disabled-div {pointer-events: none;}</style>
 @endpush
@@ -463,12 +464,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', async function () {
-        if (!window.MathJax) return;
-
+    document.addEventListener('DOMContentLoaded', async () => {
         await MathJax.startup.promise;
-
-        // Convert everything on the page
         MathJax.typesetPromise();
     });
 </script>
