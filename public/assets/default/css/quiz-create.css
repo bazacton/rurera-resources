@@ -2365,7 +2365,7 @@ Quiz Check Answers Page Style End
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
-    padding: 15px 20px;
+    padding: 15px 30px;
     border: 2px solid #ddd;
     min-height: 105px;
 }
