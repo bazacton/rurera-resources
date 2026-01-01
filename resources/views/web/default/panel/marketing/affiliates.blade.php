@@ -15,7 +15,6 @@
                     <div class="referral-text mb-30" itemscope itemtype="https://schema.org/Program">
                         <h3 class="font-18 font-weight-bold mb-5" itemprop="name">How to use Referral Program</h3>
                         <p class="text-gray mb-15">Share your referral link with friends Or family. When someone signs up or makes a purchase using your link, you automatically earn rewards and commissions.</p>
-                        <a href="#" class="started-btn font-16 font-weight-500">Get Started</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
