@@ -2099,10 +2099,12 @@ Quiz Check Answers Page Style End
     gap: 10px 0;
 }
 .question-details li {
-    flex: 0 0 50%;
-    max-width: 50%;
     border-bottom: 1px solid #ddd;
     padding: 0 0 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .preview-question-area .question-layout-block .prev-next-controls {
     width: 750px;
