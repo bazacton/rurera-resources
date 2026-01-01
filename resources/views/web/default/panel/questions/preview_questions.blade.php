@@ -30,7 +30,10 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 @section('content')
-<div class="learning-page type-practice type-sats preview-question-area">
+
+    $$\dfrac{11}{15k} = \dfrac{55}{75k}$$
+
+    <div class="learning-page type-practice type-sats preview-question-area">
 	<section class="learning-content lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
@@ -464,11 +467,15 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 <script>
-    console.log('testing');
-    document.addEventListener('DOMContentLoaded', async () => {
-        console.log('testing22');
-        await MathJax.startup.promise;
+    function renderLatex() {
+        if (!window.MathJax || !MathJax.typesetPromise) {
+            console.warn('MathJax not ready yet');
+            return;
+        }
+
+        MathJax.typesetClear();
         MathJax.typesetPromise();
-    });
+    }
+    renderLatex();
 </script>
 @endpush
