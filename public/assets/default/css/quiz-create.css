@@ -2224,7 +2224,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow: hidden;
 }
 .approve_question_form .btn-group-toggle .btn {
-    padding: 15px 15px;
+    padding: 10px 15px;
     background-color: inherit !important;
     border: 0;
     box-shadow: none;
