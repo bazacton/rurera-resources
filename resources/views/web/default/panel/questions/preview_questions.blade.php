@@ -165,10 +165,12 @@ $rand_id = rand(99,9999);
                                                                                                 <div class="media">
                                                                                                     <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
                                                                                                     <div class="media-body">
-                                                                                                        <div class="d-flex justify-content-between align-items-center">
-                                                                                                            <h6 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h6>
-                                                                                                            <div class="log_details">
+                                                                                                        <div class="d-flex justify-content-between align-items-center lms-card-info">
+                                                                                                            <h6 class="mt-0 mb-1">
+                                                                                                                {{$logObj->user->get_full_name()}}
                                                                                                                 <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                            </h6>
+                                                                                                            <div class="log_details">
                                                                                                                 <span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
                                                                                                             </div>
                                                                                                         </div>
