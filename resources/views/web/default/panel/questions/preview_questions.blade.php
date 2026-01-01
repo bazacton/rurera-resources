@@ -77,18 +77,19 @@ $rand_id = rand(99,9999);
 
                                                     </div>
                                                     <div class="question-right-side">
-                                                        <p>Question {{$counter}} / {{$questions->count()}}</p>
+                                                        <div class="question-right-header">
+                                                            <p>Question {{$counter}} / {{$questions->count()}}</p>
+                                                            <span class="questions-total-holder d-block mb-15">
+                                                                <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
 
-                                                        <span class="questions-total-holder d-block mb-15">
-                                                             <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
+                                                                @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
 
-                                                            @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
-
-                                                                $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
-                                                            @endphp
-                                                            <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
-                                                        </span>
-
+                                                                    $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
+                                                                @endphp
+                                                                <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
+                                                            </span>
+                                                        </div>
+                                                        
                                                         <ul class="question-details">
                                                             <li>Category: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</li>
                                                             <li>Subject: {{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</li>
