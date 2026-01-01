@@ -464,7 +464,9 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 <script>
+    console.log('testing');
     document.addEventListener('DOMContentLoaded', async () => {
+        console.log('testing22');
         await MathJax.startup.promise;
         MathJax.typesetPromise();
     });
