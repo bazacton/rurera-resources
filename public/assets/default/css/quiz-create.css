@@ -2365,11 +2365,13 @@ Quiz Check Answers Page Style End
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     width: calc(100% - 120px);
-    padding: 15px 20px;
+    padding: 15px 30px;
     border: 2px solid #ddd;
     min-height: 105px;
 }
-
+.cloud_nner_text p {
+    margin: 0;
+}
 /* Left Top Triangle */
 .left_top .cloud_nner_text:before {
     content: ' ';
@@ -2470,25 +2472,25 @@ Quiz Check Answers Page Style End
 
 /* Right Top triangle */
 .right_top .cloud_nner_text:before {
-	content: ' ';
+    content: ' ';
     position: absolute;
     width: 0;
     height: 0;
     left: auto;
-    right: -32px;
-    top: 38px;
+    right: -34px;
+    top: 34px;
     bottom: auto;
-    border: 16px solid;
+    border: 18px solid;
     border-color: #ddd transparent transparent #ddd;
 }
 .right_top .cloud_nner_text:after{
-	content: ' ';
+    content: ' ';
     position: absolute;
     width: 0;
     height: 0;
     left: auto;
-    right: -28px;
-    top: 40px;
+    right: -30px;
+    top: 35px;
     bottom: auto;
     border: 16px solid;
     border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
