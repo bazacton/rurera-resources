@@ -11,6 +11,7 @@ $rand_id = rand(99,9999);
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
     <style>.disabled-div {pointer-events: none;}</style>
 @endpush
 
@@ -451,4 +452,337 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 
+<script>
+    /* ---------- editor helpers ---------- */
+    function openModal(){
+        document.getElementById('modal').style.display='block';
+        document.getElementById('backdrop').style.display='block';
+        renderMath();
+    }
+    function closeModal(){
+        $(".equationModal").modal('hide');
+    }
+    function insert(val){
+        const t=document.getElementById('equationInput');
+        t.focus();
+        t.setRangeText(val,t.selectionStart,t.selectionEnd,'end');
+        renderMath();
+    }
+    function renderMath(){
+        const latex=document.getElementById('equationInput').value;
+        document.getElementById('preview').innerHTML='$$'+latex+'$$';
+        MathJax.typesetPromise();
+    }
+    async function copyLatex(){
+        const latex=document.getElementById('equationInput').value;
+        try{
+            await navigator.clipboard.writeText(latex);
+            alert('Copied LaTeX to clipboard.');
+        }catch(e){
+            alert('Copy failed (browser permissions).');
+        }
+    }
+    function clearEditor(){
+        document.getElementById('equationInput').value = '';
+        renderMath();
+    }
+
+    /* ---------- dropdown menus: PRIMARY ONLY ---------- */
+    const MENUS = {
+        frac: {
+            title: "Fractions & Roots",
+            sections: [
+                {title:"Fractions", items:[
+                        {glyph:"\\(\\frac{a}{b}\\)", code:"\\frac{}{}"},
+                        {glyph:"\\(\\dfrac{a}{b}\\)", code:"\\dfrac{}{}"},
+                        {glyph:"\\(\\tfrac{a}{b}\\)", code:"\\tfrac{}{}"},
+                        {glyph:"\\(\\binom{n}{k}\\)", code:"\\binom{n}{k}"}
+                    ]},
+                {title:"Roots", items:[
+                        {glyph:"\\(\\sqrt{x}\\)", code:"\\sqrt{}"},
+                        {glyph:"\\(\\sqrt[n]{x}\\)", code:"\\sqrt[]{}"}
+                    ]}
+            ]
+        },
+        scripts: {
+            title: "Exponents & Scripts",
+            sections: [
+                {title:"Scripts", items:[
+                        {glyph:"\\(x^{n}\\)", code:"^{}"},
+                        {glyph:"\\(x_{n}\\)", code:"_{}"},
+                        {glyph:"\\(x^{n}_{k}\\)", code:"^{}_{}"},
+                        {glyph:"\\(e^{x}\\)", code:"e^{}"}
+                    ]},
+                {title:"Accents (common)", items:[
+                        {glyph:"\\(\\hat{x}\\)", code:"\\hat{}"},
+                        {glyph:"\\(\\bar{x}\\)", code:"\\bar{}"},
+                        {glyph:"\\(\\vec{x}\\)", code:"\\vec{}"},
+                        {glyph:"\\(\\tilde{x}\\)", code:"\\tilde{}"}
+                    ]}
+            ]
+        },
+        calculus: {
+            title: "Calculus",
+            sections: [
+                {title:"Integrals", items:[
+                        {glyph:"\\(\\int\\)", code:"\\int"},
+                        {glyph:"\\(\\int_a^b\\)", code:"\\int_a^b"},
+                        {glyph:"\\(\\iint\\)", code:"\\iint"},
+                        {glyph:"\\(\\iiint\\)", code:"\\iiint"},
+                        {glyph:"\\(\\oint\\)", code:"\\oint"},
+                        {glyph:"\\(\\int f(x)\\,dx\\)", code:"\\int f(x)\\,dx"},
+                        {glyph:"\\(\\,dx\\)", code:"\\,dx"},
+                        {glyph:"\\(\\,dy\\)", code:"\\,dy"}
+                    ]},
+                {title:"Derivatives", items:[
+                        {glyph:"\\(\\frac{d}{dx}\\)", code:"\\frac{d}{dx}"},
+                        {glyph:"\\(\\frac{d^2}{dx^2}\\)", code:"\\frac{d^2}{dx^2}"},
+                        {glyph:"\\(\\partial\\)", code:"\\partial"},
+                        {glyph:"\\(\\frac{\\partial}{\\partial x}\\)", code:"\\frac{\\partial}{\\partial x}"},
+                        {glyph:"\\(\\nabla\\)", code:"\\nabla"}
+                    ]}
+            ]
+        },
+        bigops: {
+            title: "Sum / Product / Limits",
+            sections: [
+                {title:"Big operators", items:[
+                        {glyph:"\\(\\sum_{i=1}^n\\)", code:"\\sum_{i=1}^n"},
+                        {glyph:"\\(\\prod_{i=1}^n\\)", code:"\\prod_{i=1}^n"}
+                    ]},
+                {title:"Limits", items:[
+                        {glyph:"\\(\\lim_{x\\to 0}\\)", code:"\\lim_{x\\to 0}"},
+                        {glyph:"\\(\\to\\)", code:"\\to"},
+                        {glyph:"\\(\\infty\\)", code:"\\infty"}
+                    ]}
+            ]
+        },
+        sets: {
+            title: "Sets",
+            sections: [
+                {title:"Operations", items:[
+                        {glyph:"\\(\\in\\)", code:"\\in"},
+                        {glyph:"\\(\\notin\\)", code:"\\notin"},
+                        {glyph:"\\(\\cup\\)", code:"\\cup"},
+                        {glyph:"\\(\\cap\\)", code:"\\cap"},
+                        {glyph:"\\(\\setminus\\)", code:"\\setminus"},
+                        {glyph:"\\(\\subset\\)", code:"\\subset"},
+                        {glyph:"\\(\\subseteq\\)", code:"\\subseteq"},
+                        {glyph:"\\(\\emptyset\\)", code:"\\emptyset"},
+                        {glyph:"\\(\\varnothing\\)", code:"\\varnothing"},
+                        {glyph:"\\(A\\times B\\)", code:"A\\times B"}
+                    ]},
+                {title:"Number sets", items:[
+                        {glyph:"\\(\\mathbb{N}\\)", code:"\\mathbb{N}"},
+                        {glyph:"\\(\\mathbb{Z}\\)", code:"\\mathbb{Z}"},
+                        {glyph:"\\(\\mathbb{Q}\\)", code:"\\mathbb{Q}"},
+                        {glyph:"\\(\\mathbb{R}\\)", code:"\\mathbb{R}"},
+                        {glyph:"\\(\\mathbb{C}\\)", code:"\\mathbb{C}"}
+                    ]}
+            ]
+        },
+        relations: {
+            title: "Relations",
+            sections: [
+                {title:"Comparisons", items:[
+                        {glyph:"\\(=\\)", code:"="},
+                        {glyph:"\\(\\neq\\)", code:"\\neq"},
+                        {glyph:"\\(<\\)", code:"<"},
+                        {glyph:"\\(>\\)", code:">"},
+                        {glyph:"\\(\\le\\)", code:"\\le"},
+                        {glyph:"\\(\\ge\\)", code:"\\ge"}
+                    ]},
+                {title:"Equivalence / approx", items:[
+                        {glyph:"\\(\\approx\\)", code:"\\approx"},
+                        {glyph:"\\(\\equiv\\)", code:"\\equiv"},
+                        {glyph:"\\(\\propto\\)", code:"\\propto"}
+                    ]}
+            ]
+        },
+        arrows: {
+            title: "Arrows",
+            sections: [
+                {title:"Basic", items:[
+                        {glyph:"\\(\\to\\)", code:"\\to"},
+                        {glyph:"\\(\\rightarrow\\)", code:"\\rightarrow"},
+                        {glyph:"\\(\\leftarrow\\)", code:"\\leftarrow"},
+                        {glyph:"\\(\\Rightarrow\\)", code:"\\Rightarrow"},
+                        {glyph:"\\(\\leftrightarrow\\)", code:"\\leftrightarrow"}
+                    ]}
+            ]
+        },
+        greeks: {
+            title: "Greek letters (common)",
+            sections: [
+                {title:"Lowercase", items:[
+                        {glyph:"\\(\\alpha\\)", code:"\\alpha"},
+                        {glyph:"\\(\\beta\\)", code:"\\beta"},
+                        {glyph:"\\(\\gamma\\)", code:"\\gamma"},
+                        {glyph:"\\(\\delta\\)", code:"\\delta"},
+                        {glyph:"\\(\\epsilon\\)", code:"\\epsilon"},
+                        {glyph:"\\(\\varepsilon\\)", code:"\\varepsilon"},
+                        {glyph:"\\(\\theta\\)", code:"\\theta"},
+                        {glyph:"\\(\\lambda\\)", code:"\\lambda"},
+                        {glyph:"\\(\\mu\\)", code:"\\mu"},
+                        {glyph:"\\(\\pi\\)", code:"\\pi"},
+                        {glyph:"\\(\\sigma\\)", code:"\\sigma"},
+                        {glyph:"\\(\\phi\\)", code:"\\phi"},
+                        {glyph:"\\(\\varphi\\)", code:"\\varphi"},
+                        {glyph:"\\(\\omega\\)", code:"\\omega"}
+                    ]}
+            ]
+        },
+        brackets: {
+            title: "Brackets & Absolute Value",
+            sections: [
+                {title:"Basic", items:[
+                        {glyph:"\\((\\;)\\)", code:"()"},
+                        {glyph:"\\([\\;]\\)", code:"[]"},
+                        {glyph:"\\(\\{\\;\\}\\)", code:"\\{\\}"},
+                        {glyph:"\\(|\\;|\\)", code:"||"},
+                        {glyph:"\\(\\langle\\;\\rangle\\)", code:"\\langle\\rangle"}
+                    ]},
+                {title:"Auto-sized", items:[
+                        {glyph:"\\(\\left(\\;\\right)\\)", code:"\\left(\\right)"},
+                        {glyph:"\\(\\left[\\;\\right]\\)", code:"\\left[\\right]"},
+                        {glyph:"\\(\\left\\{\\;\\right\\}\\)", code:"\\left\\{\\right\\}"},
+                        {glyph:"\\(\\left|\\;\\right|\\)", code:"\\left|\\right|"},
+                        {glyph:"\\(\\left\\langle\\;\\right\\rangle\\)", code:"\\left\\langle\\right\\rangle"}
+                    ]}
+            ]
+        },
+        matrix: {
+            title: "Matrix & Cases",
+            sections: [
+                {title:"Matrices", items:[
+                        {glyph:"\\(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\)", code:"\\begin{pmatrix}\n \n\\end{pmatrix}"},
+                        {glyph:"\\(\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}\\)", code:"\\begin{bmatrix}\n \n\\end{bmatrix}"}
+                    ]},
+                {title:"Piecewise", items:[
+                        {glyph:"\\(\\begin{cases}a,&x>0\\\\b,&x\\le 0\\end{cases}\\)", code:"\\begin{cases}\n \n\\end{cases}"}
+                    ]}
+            ]
+        },
+        funcs: {
+            title: "Trig & Log",
+            sections: [
+                {title:"Functions", items:[
+                        {glyph:"\\(\\sin\\)", code:"\\sin"},
+                        {glyph:"\\(\\cos\\)", code:"\\cos"},
+                        {glyph:"\\(\\tan\\)", code:"\\tan"},
+                        {glyph:"\\(\\ln\\)", code:"\\ln"},
+                        {glyph:"\\(\\log\\)", code:"\\log"},
+                        {
+                            glyph: "\\(\\times\\)",
+                            code: "\\begin{array}{r}" +
+                                "\\begin{array}{rrrr}" +
+                                "& 1 & 2 & 4 \\\\ " +
+                                "\\times & & 2 & 6 \\\\ \\hline " +
+                                "& 2 & 4 & 8 & 0 \\\\ " +
+                                "& & 7 & 4 & 4 \\\\ \\hline " +
+                                "& 3 & 2 & 2 & 4" +
+                                "\\end{array}" +
+                                "\\end{array}"
+                        }
+                    ]}
+            ]
+        },
+        space: {
+            title: "Spacing (minimum)",
+            sections: [
+                {title:"Spaces", items:[
+                        {glyph:"\\(a\\,b\\)", code:"\\,"},
+                        {glyph:"\\(a\\quad b\\)", code:"\\quad"},
+                        {glyph:"\\(a\\!b\\)", code:"\\!"}
+                    ]}
+            ]
+        }
+    };
+
+    /* ---------- dropdown rendering ---------- */
+    const dropdown = document.getElementById('dropdown');
+    const toolbar = document.getElementById('toolbar');
+
+    function showDropdown(menuKey, anchorBtn){
+        const menu = MENUS[menuKey];
+        if(!menu) return;
+
+        // position dropdown under the clicked button (keep within toolbar width)
+        const btnRect = anchorBtn.getBoundingClientRect();
+        const barRect = toolbar.getBoundingClientRect();
+        let left = (btnRect.left - barRect.left);
+        const maxLeft = Math.max(0, toolbar.clientWidth - dropdown.offsetWidth - 18);
+        dropdown.style.left = Math.max(18, Math.min(left + 18, maxLeft)) + "px";
+
+        dropdown.innerHTML = renderMenu(menu);
+        dropdown.classList.add('show');
+        MathJax.typesetPromise([dropdown]);
+    }
+
+    function hideDropdown(){
+        dropdown.classList.remove('show');
+        document.querySelectorAll('.tool.active').forEach(b=>b.classList.remove('active'));
+    }
+
+    function renderMenu(menu){
+        const sections = menu.sections.map(sec => {
+            const items = sec.items.map(it => `
+      <button class="sym" type="button" onclick="insert('${escapeForJS(it.code)}');hideDropdown();">
+        <div class="glyph">${it.glyph}</div>
+        <div class="code">${escapeHTML(it.code)}</div>
+      </button>
+    `).join('');
+            return `
+      <div class="dd-section">
+        <h4>${escapeHTML(sec.title)}</h4>
+        <div class="dd-grid">${items}</div>
+      </div>
+    `;
+        }).join('');
+
+        return `
+    <div class="dd-title">${escapeHTML(menu.title)}</div>
+    ${sections}
+  `;
+    }
+
+    function escapeHTML(s){
+        return (s||'')
+            .replaceAll('&','&amp;')
+            .replaceAll('<','&lt;')
+            .replaceAll('>','&gt;')
+            .replaceAll('"','&quot;')
+            .replaceAll("'","&#39;");
+    }
+    function escapeForJS(s){
+        return (s||'')
+            .replaceAll('\\','\\\\')
+            .replaceAll("'","\\'")
+            .replaceAll('\n','\\n');
+    }
+
+    /* ---------- toolbar interactions ---------- */
+    toolbar.addEventListener('click', (e) => {
+        const btn = e.target.closest('.tool');
+        if(!btn) return;
+
+        const key = btn.getAttribute('data-dd');
+        const isActive = btn.classList.contains('active');
+
+        hideDropdown();
+        if(!isActive){
+            btn.classList.add('active');
+            showDropdown(key, btn);
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        const inToolbar = e.target.closest('#toolbar');
+        const inDropdown = e.target.closest('#dropdown');
+        if(!inToolbar && !inDropdown) hideDropdown();
+    });
+
+    /* initial preview */
+    renderMath();
+</script>
 @endpush
