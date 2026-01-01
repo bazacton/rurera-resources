@@ -2118,7 +2118,7 @@ Quiz Check Answers Page Style End
     padding-bottom: 0;
 }
 .preview-question-area .question-layout-block .prev-next-controls {
-    width: 750px;
+    width: 100%;
     position: relative;
     transform: none;
     left: 0;
