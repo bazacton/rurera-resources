@@ -14,15 +14,13 @@ $rand_id = rand(99,9999);
 <script>
     window.MathJax = {
         tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            packages: {'[+]': ['base']}
         },
         svg: {
             fontCache: 'global'
         }
     };
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
     <style>.disabled-div {pointer-events: none;}</style>
 @endpush
@@ -466,15 +464,21 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     updateScrollState();
 </script>
 <script>
-    function renderLatex() {
-        if (!window.MathJax || !MathJax.typesetPromise) {
-            console.warn('MathJax not ready yet');
-            return;
-        }
+    function renderRawLatex() {
+        const latexRegex = /\\(dfrac|frac|sqrt|sum|int|left|right|cdot|times|leq|geq)[^<]*/g;
 
-        MathJax.typesetClear();
-        MathJax.typesetPromise();
+        document.querySelectorAll('*:not(script):not(style)').forEach(el => {
+            if (el.children.length === 0 && latexRegex.test(el.textContent)) {
+                el.textContent = '$$' + el.textContent.trim() + '$$';
+            }
+        });
+
+        if (window.MathJax?.typesetPromise) {
+            MathJax.typesetClear();
+            MathJax.typesetPromise();
+        }
     }
-    renderLatex();
+
+    document.addEventListener('DOMContentLoaded', renderRawLatex);
 </script>
 @endpush
