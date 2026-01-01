@@ -617,7 +617,10 @@
 		$(".summernote-editor").summernote({
     dialogsInBody: true,
     tabsize: 2,
-    height: $(".summernote-editor").attr('data-height') ?? 250,
+    //height: $(".summernote-editor").attr('data-height') ?? 250,
+    height: null,
+    minHeight: 150,
+    maxHeight: 400,
     fontNames: [],
     toolbar: [
         ['style', ['style']],
@@ -666,7 +669,10 @@
 		$(".summernote").summernote({
 			dialogsInBody: true,
 			tabsize: 2,
-			height: $(".summernote").attr('data-height') ?? 250,
+			//height: $(".summernote").attr('data-height') ?? 250,
+            height: null,
+            minHeight: 150,
+            maxHeight: 400,
 			fontNames: [],
 			toolbar: [
 				['style', ['style']],
@@ -753,7 +759,10 @@
         $(".summernote-source").summernote({
             dialogsInBody: true,
             tabsize: 2,
-            height: $(".summernote-source").attr('data-height') ?? 250,
+            //height: $(".summernote-source").attr('data-height') ?? 250,
+            height: null,
+            minHeight: 150,
+            maxHeight: 400,
             fontNames: [],
             toolbar: [
                 ['style', ['style']],
@@ -819,7 +828,10 @@
         $(".eq-summernote").summernote({
             dialogsInBody: true,
             tabsize: 2,
-            height: $(".eq-summernote").attr('data-height') ?? 250,
+            //height: $(".eq-summernote").attr('data-height') ?? 250,
+            height: null,
+            minHeight: 150,
+            maxHeight: 400,
             fontNames: [],
             toolbar: [
                 ['style', ['style']],
