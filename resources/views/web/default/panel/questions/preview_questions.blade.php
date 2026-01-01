@@ -375,36 +375,44 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-    // Use 'var' as requested
-    var scrollControls = document.getElementById('scroll-controls');
     var btnTop = document.getElementById('btn-top');
     var groupMiddle = document.getElementById('group-middle');
     var btnBottom = document.getElementById('btn-bottom');
     var btnMidUp = document.getElementById('btn-mid-up');
     var btnMidDown = document.getElementById('btn-mid-down');
 
-    // Scroll amount
     var SCROLL_AMOUNT = 200;
 
-    // Function to update visibility
-    function updateScrollState() {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var windowHeight = window.innerHeight;
-        var docHeight = document.documentElement.scrollHeight;
+    function hideAllButtons() {
+        btnTop.classList.add('hidden');
+        groupMiddle.classList.add('hidden');
+        btnBottom.classList.add('hidden');
+    }
 
-        // State 1: Top
+    function updateScrollState() {
+        var bodyHeight = document.body.scrollHeight;
+        var windowHeight = window.innerHeight;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        /* Content fits screen */
+        if (bodyHeight <= windowHeight + 5) {
+            document.body.classList.add('no-scroll');
+            hideAllButtons();
+            return;
+        }
+
+        document.body.classList.remove('no-scroll');
+
         if (scrollTop < 100) {
             btnTop.classList.remove('hidden');
             groupMiddle.classList.add('hidden');
             btnBottom.classList.add('hidden');
         }
-        // State 3: Bottom
-        else if ((scrollTop + windowHeight) >= (docHeight - 100)) {
+        else if ((scrollTop + windowHeight) >= (bodyHeight - 100)) {
             btnTop.classList.add('hidden');
             groupMiddle.classList.add('hidden');
             btnBottom.classList.remove('hidden');
         }
-        // State 2: Middle
         else {
             btnTop.classList.add('hidden');
             groupMiddle.classList.remove('hidden');
@@ -412,31 +420,22 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         }
     }
 
-    // Scroll handlers
     function scrollUp() {
-        window.scrollBy(0, -SCROLL_AMOUNT);
+        window.scrollBy({ top: -SCROLL_AMOUNT, behavior: 'smooth' });
     }
 
     function scrollDown() {
-        window.scrollBy(0, SCROLL_AMOUNT);
+        window.scrollBy({ top: SCROLL_AMOUNT, behavior: 'smooth' });
     }
 
-    // Attach click events
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
     btnMidUp.addEventListener('click', scrollUp);
     btnMidDown.addEventListener('click', scrollDown);
 
-    // Update on scroll
     window.addEventListener('scroll', updateScrollState);
-
-    // Update on zoom in / zoom out
     window.addEventListener('resize', updateScrollState);
 
-    // Mobile orientation support
-    window.addEventListener('orientationchange', updateScrollState);
-
-    // Initial check
     updateScrollState();
 </script>
 
