@@ -11,6 +11,7 @@ $rand_id = rand(99,9999);
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
     <style>.disabled-div {pointer-events: none;}</style>
 @endpush
 
