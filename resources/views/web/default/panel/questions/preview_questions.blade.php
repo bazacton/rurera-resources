@@ -31,8 +31,7 @@ $rand_id = rand(99,9999);
 
 @section('content')
 
-    $$\dfrac{11}{15k} = \dfrac{55}{75k}$$
-
+    \dfrac{49}{75k}
     <div class="learning-page type-practice type-sats preview-question-area">
 	<section class="learning-content lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
