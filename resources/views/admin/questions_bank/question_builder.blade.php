@@ -938,7 +938,10 @@ $rand_id = rand(999,99999);
 $(".summernote").summernote({
 			dialogsInBody: true,
 			tabsize: 2,
-			height: $(".summernote").attr('data-height') ?? 250,
+			//height: $(".summernote").attr('data-height') ?? 250,
+			height: null,
+			minHeight: 150,
+			maxHeight: 400,
 			fontNames: [],
 			toolbar: [
 				['style', ['style']],
@@ -1080,7 +1083,9 @@ if ($('.eq-summernote-editor').length) {
 
     $('.eq-summernote-editor').summernote({
         tabsize: 2,
-        height: 400,
+		height: null,
+		minHeight: 150,
+		maxHeight: 400,
         placeholder: $('.eq-summernote-editor').attr('placeholder'),
         dialogsInBody: true,
         blockquoteBreakingLevel: 2,
@@ -1247,7 +1252,9 @@ function renderMathEquationsInPreview(containerSelector = '.explanation-block-ar
 $(".eq-summernote-editor1").summernote({
     dialogsInBody: true,
     tabsize: 2,
-    height: $(".eq-summernote-editor").attr('data-height') ?? 250,
+	height: null,
+	minHeight: 150,
+	maxHeight: 400,
     fontNames: [],
     toolbar: [
         ['style', ['style']],
