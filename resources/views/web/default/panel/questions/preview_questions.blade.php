@@ -377,6 +377,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
+    var container = document.querySelector('.question-area-block');
     var btnTop = document.getElementById('btn-top');
     var groupMiddle = document.getElementById('group-middle');
     var btnBottom = document.getElementById('btn-bottom');
@@ -392,29 +393,29 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     }
 
     function updateScrollState() {
-        var bodyHeight = document.body.scrollHeight;
-        var windowHeight = window.innerHeight;
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var contentHeight = container.scrollHeight;
+        var containerHeight = container.clientHeight;
+        var scrollTop = container.scrollTop;
 
-        /* Content fits screen */
-        if (bodyHeight <= windowHeight + 5) {
-            document.body.classList.add('no-scroll');
+        /* Content fits inside div */
+        if (contentHeight <= containerHeight + 5) {
             hideAllButtons();
             return;
         }
 
-        document.body.classList.remove('no-scroll');
-
+        /* At top */
         if (scrollTop < 100) {
-            btnTop.classList.remove('hidden');
+            btnTop.classList.remove('hidden');   // scroll down
             groupMiddle.classList.add('hidden');
             btnBottom.classList.add('hidden');
         }
-        else if ((scrollTop + windowHeight) >= (bodyHeight - 100)) {
+        /* At bottom */
+        else if (scrollTop + containerHeight >= contentHeight - 100) {
             btnTop.classList.add('hidden');
             groupMiddle.classList.add('hidden');
-            btnBottom.classList.remove('hidden');
+            btnBottom.classList.remove('hidden'); // scroll up
         }
+        /* Middle */
         else {
             btnTop.classList.add('hidden');
             groupMiddle.classList.remove('hidden');
@@ -423,21 +424,30 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     }
 
     function scrollUp() {
-        window.scrollBy({ top: -SCROLL_AMOUNT, behavior: 'smooth' });
+        container.scrollBy({
+            top: -SCROLL_AMOUNT,
+            behavior: 'smooth'
+        });
     }
 
     function scrollDown() {
-        window.scrollBy({ top: SCROLL_AMOUNT, behavior: 'smooth' });
+        container.scrollBy({
+            top: SCROLL_AMOUNT,
+            behavior: 'smooth'
+        });
     }
 
+    /* Button events */
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
     btnMidUp.addEventListener('click', scrollUp);
     btnMidDown.addEventListener('click', scrollDown);
 
-    window.addEventListener('scroll', updateScrollState);
+    /* Listen to DIV scroll, not window */
+    container.addEventListener('scroll', updateScrollState);
     window.addEventListener('resize', updateScrollState);
 
+    /* Initial check */
     updateScrollState();
 </script>
 
