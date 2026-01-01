@@ -253,11 +253,11 @@
 											<a href="/admin/questions-generator/add-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Import Questions">
 												<i class="fas fa-download"></i>
 											</a>&nbsp;&nbsp;&nbsp;
-											@if($QuestionsBulkListObj->total_questions > 0)
+
 												<a href="/admin/questions-generator/view-api-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Questions List">
 													<i class="fas fa-sitemap"></i>
 												</a>
-											@endif
+											
 										@endif
                                         @endcan
                                     </td>
