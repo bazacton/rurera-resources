@@ -2091,6 +2091,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border-left: 1px solid #ececec;
     position: fixed;
     right: 0;
+    overflow-y: auto;
+    height: 100%;
 }
 .preview-question-area .question-right-side .review-msg-box .input-group {
     border: 0;
