@@ -751,8 +751,8 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .navbar .nav-link.disabled {color: var(--white); opacity: .6;}
 .nav-collapse {display: flex;}
 .main-wrapper nav.navbar .notification-toggle img {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border-radius: 100%;
 }
 .main-wrapper nav.navbar .notification-toggle.disabled img {
