@@ -2524,11 +2524,17 @@ Quiz Check Answers Page Style End
 #scroll-controls {
     position: fixed;
     bottom: 110px;
-    width: 750px;
-    left: 135px;
-    justify-content: center;
+    width: 100%;
+    left: 0;
+    padding-right: 500px;
+}
+#scroll-controls .controls-inner {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 /* Button Base Styles */
 .page-prev-next-controls .scroll-btn {
