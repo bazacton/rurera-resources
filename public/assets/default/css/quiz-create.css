@@ -2171,9 +2171,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .approve_question_form {
     text-align: left;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px);
     overflow: hidden;
-    overflow-y: auto;
+    overflow-y: auto; */
 }
 .approve_question_form::-webkit-scrollbar-track
 {
