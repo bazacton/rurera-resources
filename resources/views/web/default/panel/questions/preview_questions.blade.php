@@ -79,7 +79,7 @@ $rand_id = rand(99,9999);
                                                     <div class="question-right-side">
                                                         <div class="question-right-header">
                                                             <p>Question {{$counter}} / {{$questions->count()}}</p>
-                                                            <span class="questions-total-holder d-block mb-15">
+                                                            <span class="questions-total-holder d-block">
                                                                 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
 
                                                                 @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
