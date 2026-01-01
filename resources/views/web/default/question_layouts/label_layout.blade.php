@@ -7,7 +7,7 @@
             $cloud_direction = isset($elementObj->cloud_direction)? $elementObj->cloud_direction : 'top_right';
             $cloud_color = isset($elementObj->cloud_color)? $elementObj->cloud_color : '#000000';
             $cloud_size = isset($elementObj->cloud_size)? $elementObj->cloud_size : 'small';
-            $cloud_avatar = isset($elementObj->cloud_avatar)? $elementObj->cloud_avatar : 'boy-svg-1.svg';
+            $cloud_avatar = isset($elementObj->cloud_avatar)? $elementObj->cloud_avatar : 'boy-svg-2.svg';
             $cloud_avatar = '/assets/default/svgs/cloud-kids-avatars/'.$cloud_avatar;
             @endphp
         <div class="question-label {{$label_type}} {{$cloud_size}} {{$cloud_direction}}"><span class="cloud_text_element"><span class="cloud_avatar"><img src="/assets/default/svgs/cloud-kids-avatars/boy-svg-2.svg"></span><span class="cloud_nner_text" style="background:white"><svgdata class="rurera-svg-data0_6684">{!! $elementObj->content !!}</svgdata></span></span></div>
