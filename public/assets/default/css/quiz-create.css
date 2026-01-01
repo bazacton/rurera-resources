@@ -2058,7 +2058,7 @@ Quiz Check Answers Page Style End
 
 /* Review Question Right Side Style Start */
 .preview-question-area {
-    padding-right: 500px;
+    padding-right: 450px;
 }
 .preview-question-area .learning-content > .container {
     max-width: 100%;
@@ -2078,7 +2078,7 @@ Quiz Check Answers Page Style End
 }
 .preview-question-area .question-right-side {
     background-color: #fff;
-    max-width: 500px;
+    max-width: 450px;
     z-index: 2;
     overflow: hidden;
     padding: 25px;
