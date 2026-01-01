@@ -1203,6 +1203,7 @@
 
                                             @if( !empty( $questionLogs ))
                                                 @foreach($questionLogs as $logObj)
+												<li>
                                                     <div class="card mb-3">
                                                         <div class="card-body">
                                                             <div class="media">
@@ -1222,7 +1223,7 @@
                                                             </p>
                                                         </div>
                                                     </div>
-
+												</li>
 
                                                 @endforeach
                                             @endif
