@@ -2586,6 +2586,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    z-index: 5;
 }
 #scroll-controls .controls-inner {
     width: 100%;
