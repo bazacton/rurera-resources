@@ -2571,7 +2571,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 /* Scroll Controls Container */
 #scroll-controls {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     width: 100%;
     left: 0;
     padding-right: 500px;
