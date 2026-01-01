@@ -2378,7 +2378,7 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -34px;
+    left: -35px;
     right: auto;
     top: 34px;
     bottom: auto;
@@ -2390,11 +2390,11 @@ Quiz Check Answers Page Style End
     position: absolute;
     width: 0;
     height: 0;
-    left: -30px;
+    left: -31px;
     right: auto;
-    top: 35px;
+    top: 36px;
     bottom: auto;
-    border: 16px solid;
+    border: 17px solid;
     border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
 }
 /* Left Center triangle */
