@@ -196,6 +196,27 @@ $rand_id = rand(99,9999);
 											@endforeach
 										@endif
 									<div class="show-notifications" data-show_message="yes"></div>
+                                    <div id="scroll-controls" class="page-prev-next-controls">
+                                        <!-- Top State: Scroll Down Button -->
+                                        <button id="btn-top" class="scroll-btn pill hidden">
+                                            Scroll down <i class="arrow down"></i>
+                                        </button>
+
+                                        <!-- Middle State: Two Circular Buttons -->
+                                        <div id="group-middle" class="middle-group hidden">
+                                            <button id="btn-mid-up" class="scroll-btn circle">
+                                                <i class="arrow up"></i>
+                                            </button>
+                                            <button id="btn-mid-down" class="scroll-btn circle">
+                                                <i class="arrow down"></i>
+                                            </button>
+                                        </div>
+
+                                        <!-- Bottom State: Scroll Up Button -->
+                                        <button id="btn-bottom" class="scroll-btn pill hidden">
+                                            Scroll up <i class="arrow up"></i>
+                                        </button>
+                                    </div>
 									<div class="prev-next-controls text-center mb-50 questions-nav-controls disable-div">
 										<a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
 											Finish
@@ -228,28 +249,6 @@ $rand_id = rand(99,9999);
             </div>
         </div>
     </section>
-
-    <div id="scroll-controls" class="page-prev-next-controls">
-        <!-- Top State: Scroll Down Button -->
-        <button id="btn-top" class="scroll-btn pill hidden">
-            Scroll down <i class="arrow down"></i>
-        </button>
-
-        <!-- Middle State: Two Circular Buttons -->
-        <div id="group-middle" class="middle-group hidden">
-            <button id="btn-mid-up" class="scroll-btn circle">
-                <i class="arrow up"></i>
-            </button>
-            <button id="btn-mid-down" class="scroll-btn circle">
-                <i class="arrow down"></i>
-            </button>
-        </div>
-
-        <!-- Bottom State: Scroll Up Button -->
-        <button id="btn-bottom" class="scroll-btn pill hidden">
-            Scroll up <i class="arrow up"></i>
-        </button>
-    </div>
 </div>
 
 
