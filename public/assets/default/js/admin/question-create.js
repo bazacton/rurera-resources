@@ -1526,6 +1526,7 @@ function _rureraform_properties_prepare(_object) {
                 case 'image_radio':
                     options = "";
                     var image_options = '';
+                    var rand_key = Math.floor((Math.random() * 99999) + 1);
                     for (var option_key in rureraform_meta[type][key]['options']) {
                         if (rureraform_meta[type][key]['options'].hasOwnProperty(option_key)) {
                             selected = "";
@@ -1533,14 +1534,14 @@ function _rureraform_properties_prepare(_object) {
                                 selected = " checked='checked'";
                             options += "<option" + selected + " value='" + rureraform_escape_html(option_key) + "'>" + rureraform_escape_html(rureraform_meta[type][key]['options'][option_key]) + "</option>";
 
-                            image_options += '<label for="rureraform-' + option_key + '"><input type="radio" name="' + key + '" value="'+option_key+'" id="rureraform-' + option_key + '" '+selected+'> <img src="' + rureraform_meta[type][key]['options'][option_key] + '" alt=""></label>';
+                            image_options += '<label for="rureraform-' + option_key + '-'+rand_key+'"><input type="radio" name="' + key + '" value="'+option_key+'" id="rureraform-' + option_key + '-'+rand_key+'" '+selected+'> <img src="' + rureraform_meta[type][key]['options'][option_key] + '" alt=""></label>';
                         }
                     }
                     var field_class = (rureraform_meta[type][key]['class'] != undefined)? rureraform_meta[type][key]['class'] : '';
                     var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
                     //html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"'>" + options + "</select></div></div></div>";
 
-                    html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'>"+image_options+"</div></div></div>";
+                    html += "<div class='rureraform-properties-item "+wrapper_class+"' data-rand_id='"+rand_key+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'>"+image_options+"</div></div></div>";
                     break;
 
                 case 'inner_select_field':
@@ -7289,7 +7290,10 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         var cloud_direction = rureraform_form_elements[i]["cloud_direction"];
                         var cloud_size = rureraform_form_elements[i]["cloud_size"];
                         var cloud_avatar = rureraform_form_elements[i]["cloud_avatar"];
-                        var cloud_avatar = $('input[name="cloud_avatar"]:checked').val();
+                        //var cloud_avatar = $('.rureraform-admin-popup[data-element_id="rureraform-element-'+i+'"]').find('input[name="cloud_avatar"]:checked').val();
+
+
+
 
                         var cloud_color = rureraform_form_elements[i]["cloud_color"];
                         document.documentElement.style.setProperty(
