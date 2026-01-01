@@ -2543,8 +2543,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
     width: 0;
     height: 0;
     left: auto;
-    right: -34px;
-    top: 34px;
+    right: -35px;
+    top: 33px;
     bottom: auto;
     border: 18px solid;
     border-color: #ddd transparent transparent #ddd;
@@ -2556,7 +2556,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     height: 0;
     left: auto;
     right: -30px;
-    top: 35px;
+    top: 36px;
     bottom: auto;
     border: 16px solid;
     border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
