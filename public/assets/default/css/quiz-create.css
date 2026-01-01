@@ -2369,7 +2369,9 @@ Quiz Check Answers Page Style End
     border: 2px solid #ddd;
     min-height: 105px;
 }
-
+.cloud_nner_text p {
+    margin: 0;
+}
 /* Left Top Triangle */
 .left_top .cloud_nner_text:before {
     content: ' ';
