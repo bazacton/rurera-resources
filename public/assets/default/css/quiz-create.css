@@ -1254,6 +1254,8 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .question-details li span {
     color: #adabab;
     font-size: 15px;
+    text-align: right;
+    width: calc(100% - 85px);
 }
 .question-dev-details a {
     color: var(--primary);
@@ -2126,6 +2128,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
+    gap: 0 10px;
 }
 .question-details li:last-child {
     border-bottom: 0;
