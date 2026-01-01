@@ -2178,6 +2178,10 @@ function _rureraform_properties_prepare(_object) {
             thisBlock.find('.section-block').filter(function() {
                 return $(this).attr('data-field_option_id') <= no_of_fields;
             }).removeClass('rurera-hide');
+            thisBlock.find('.inner_select_fields').addClass('rurera-hide');
+            thisBlock.find('.inner_select_fields').filter(function() {
+                return $(this).attr('data-field_option_id') <= no_of_fields;
+            }).removeClass('rurera-hide');
         });
     }
 
@@ -6431,8 +6435,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     var content = rureraform_form_elements[i]["content"];
 
+                    var random_id = Math.floor((Math.random() * 99999) + 1);
+                    var class_id = 'rurera-svg-data' + i+'_'+random_id;
 
-                    html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div>"+content+draggable_options+"<div class='rureraform-element-cover'></div></div>";
+                    getSVGFromEquationHTML(content, class_id, false).then(function(htmlWithSVG) {
+                    });
+                    html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><svgdata class='"+class_id+"'>"+content+"</svgdata>"+draggable_options+"<div class='rureraform-element-cover'></div></div>";
                     break;
 
                 case "marking_quiz":
@@ -6832,7 +6840,6 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     getSVGFromEquationHTML(content, class_id, false).then(function(htmlWithSVG) {
                     });
 
-                    console.log('dropdasdfjklsajdflkjs lkdfljs df');
                     var html_data = "<div id='rureraform-element-" + i + "' class='question-fields rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'><svgdata class='"+class_id+"'>" + content + "</svgdata><div class='rureraform-element-cover'></div></div>";
                     html += html_data;
 
@@ -10982,9 +10989,14 @@ $(document).on('keyup change paste checked', 'select[name="rureraform-no_of_opti
 
 $(document).on('keyup change paste checked', 'select[name="rureraform-no_of_fields"]', function () {
     var no_of_fields = $(this).val();
+    console.log(no_of_fields);
     var thisBlock = $(this).closest('.rureraform-tab-content');
     thisBlock.find('.section-block').addClass('rurera-hide');
     thisBlock.find('.section-block').filter(function() {
+        return $(this).attr('data-field_option_id') <= no_of_fields;
+    }).removeClass('rurera-hide');
+    thisBlock.find('.inner_select_fields').addClass('rurera-hide');
+    thisBlock.find('.inner_select_fields').filter(function() {
         return $(this).attr('data-field_option_id') <= no_of_fields;
     }).removeClass('rurera-hide');
 });
