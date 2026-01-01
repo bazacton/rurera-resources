@@ -81,7 +81,7 @@ $rand_id = rand(99,9999);
 
                                                         <span class="questions-total-holder d-block mb-15">
                                                              <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
-                                                            <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span>
+
                                                             @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
 
                                                                 $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
@@ -90,10 +90,11 @@ $rand_id = rand(99,9999);
                                                         </span>
 
                                                         <ul class="question-details">
-                                                            <li>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</li>
-                                                            <li>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</li>
-                                                            <li>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</li>
-                                                            <li>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</li>
+                                                            <li>Category: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</li>
+                                                            <li>Subject: {{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</li>
+                                                            <li>Chapter: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</li>
+                                                            <li>Part Item: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</li>
+                                                            <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
                                                         </ul>
 
                                                         <br>
