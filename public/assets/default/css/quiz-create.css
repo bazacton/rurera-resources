@@ -2523,14 +2523,12 @@ Quiz Check Answers Page Style End
 /* Scroll Controls Container */
 #scroll-controls {
     position: fixed;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 1000;
+    bottom: 110px;
+    width: 750px;
+    left: 135px;
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
 }
 /* Button Base Styles */
 .page-prev-next-controls .scroll-btn {
