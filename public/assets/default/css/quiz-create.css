@@ -2061,7 +2061,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow: hidden;
 }
 .preview-question-area {
-    padding-right: 450px;
+    padding-right: 400px;
 }
 .preview-question-area .question-area-block {
     overflow: hidden;
@@ -2084,7 +2084,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .preview-question-area .question-right-side {
     background-color: #fff;
-    max-width: 450px;
+    max-width: 400px;
     z-index: 2;
     overflow: hidden;
     padding: 25px;
@@ -2138,6 +2138,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     margin: 0 auto;
     bottom: 0;
     margin-top: auto;
+    flex-wrap: wrap;
 }
 .preview-question-area .prev-next-controls .question-submit-btn {
     position: relative;
