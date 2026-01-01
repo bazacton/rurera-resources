@@ -7325,6 +7325,13 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     break;
 
 
+                case "whole_modal_builder":
+
+                    var label_data = rureraform_form_elements[i]["content"];
+                    html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group whole_modal_builder_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
+                    break;
+
+
                 case "example_text":
 
                     var label_type = '';
@@ -7332,7 +7339,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
                         var label_data = "<" + label_type + ">" + rureraform_form_elements[i]["content"] + "</" + label_type + ">";
                     }
-                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
+                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group  rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
                     break;
 
                 case "example_question":
@@ -8304,7 +8311,6 @@ function rureraform_form_ready() {
 
     jQuery(".rureraform-toolbar-list li a").on("click", function (e) {
         e.preventDefault();
-        console.log('rureraform-toolbar-list li a    -click')
 
         var image_styles = [];
 
@@ -10707,6 +10713,7 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '.generate-question-code', function () {
+
         console.log('generated-question-code-function');
         update_content_data();
         var thisParentObj = $(this).closest('.rureraform-admin-popup-inner');
@@ -10921,6 +10928,7 @@ $(document).on('click', '.question_topic_part_submit_btn', function () {
         }
     });
 });
+
 
 $(document).on('click', '.quiz-group', function () {
     $(".quiz-group").removeClass('active');
@@ -11428,4 +11436,17 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
     $(".label_type-depend").addClass('rurera-hide');
     var label_type = $(this).val();
     $("."+label_type+'_fields').removeClass('rurera-hide');
+});
+
+$(document).on('click', '.interactive_elements li', function () {
+    var modal_class = $(this).attr('data-option');
+    $("."+modal_class).modal('show');
+});
+
+
+
+
+
+$(document).on('click', '.close-modal', function () {
+    $(this).closest('.rurera_interactive_elements').modal('hide');
 });

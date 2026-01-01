@@ -564,7 +564,7 @@ $rand_id = rand(999,99999);
 										</div>
 
 										<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
-												
+
 												<div class="topic-parts-block">
 													<h3>Topic Parts</h3>
 													@if(isset( $questionObj->topicPartItem->id))
@@ -923,7 +923,7 @@ $rand_id = rand(999,99999);
                 <div class="text-right">
                     <a href="javascript:;" class="btn btn-primary question_status_submit_btn">Submit</a>
                 </div>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -931,6 +931,7 @@ $rand_id = rand(999,99999);
 
 
 
+@include('admin.questions_bank.interactive_elements.whole_modal_builder')
 
 
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
@@ -1339,5 +1340,6 @@ $(".eq-summernote-editor1").summernote({
         }
     }
 });
-
 </script>
+
+
