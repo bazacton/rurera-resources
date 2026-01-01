@@ -91,9 +91,9 @@ $rand_id = rand(99,9999);
                                                         </div>
                                                         
                                                         <ul class="question-details">
-                                                            <li>Category: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</li>
-                                                            <li>Subject: {{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</li>
-                                                            <li>Chapter: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</li>
+                                                            <li>Category: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</span></li>
+                                                            <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
+                                                            <li>Chapter: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</span></li>
                                                             <li>Part Item: {{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</li>
                                                             <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
                                                         </ul>
