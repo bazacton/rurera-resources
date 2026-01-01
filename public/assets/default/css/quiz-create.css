@@ -2332,25 +2332,25 @@ Quiz Check Answers Page Style End
 [class*="right_"] .cloud_text_element {
     flex-direction: row-reverse;
 }
+.question-label[class*="right_"] .cloud_text_element {
+    margin-left: auto;
+    margin-right: 0;
+}
 
 .cloud_text_element {
     display: flex;
     flex-wrap: wrap;
     gap: 0 40px;
     justify-content: center;
-    margin: 0 auto;
 }
 .small .cloud_text_element {
     width: 50%;
-    margin: 0 auto;
 }
 .medium .cloud_text_element {
     width: 75%;
-    margin: 0 auto;
 }
 .large .cloud_text_element {
     width: 100%;
-    
 }
 
 .cloud_text_element .cloud_avatar {
