@@ -89,10 +89,10 @@ $rand_id = rand(99,9999);
                                                         <p>Question {{$counter}} / {{$questions->count()}}</p>
 
                                                         <ul class="question-details">
-                                                            <li>{{$questionObj->category->getTitleAttribute()}}</li>
-                                                            <li>{{$questionObj->course->getTitleAttribute()}}</li>
-                                                            <li>{{$questionObj->topicPartItem->chapter->getTitleAttribute()}}</li>
-                                                            <li>{{$questionObj->topicPartItem->title}}</li>
+                                                            <li>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</li>
+                                                            <li>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</li>
+                                                            <li>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</li>
+                                                            <li>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</li>
                                                         </ul>
 
                                                         <br>
