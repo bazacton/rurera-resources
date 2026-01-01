@@ -2571,7 +2571,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 /* Scroll Controls Container */
 #scroll-controls {
     position: fixed;
-    bottom: 110px;
+    bottom: 20px;
     width: 100%;
     left: 0;
     padding-right: 500px;
@@ -2588,9 +2588,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#scroll-controls:has(#btn-bottom.hidden) {
-    bottom: 20px;
 }
 /* Button Base Styles */
 .page-prev-next-controls .scroll-btn {
@@ -2617,6 +2614,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     padding: 10px 20px;
     border-radius: 25px;
     gap: 10px;
+}
+#scroll-controls #btn-bottom {
+    margin-top: -230px;
 }
 
 /* Circular Shape for Icon-only Buttons */
