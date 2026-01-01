@@ -2322,6 +2322,10 @@ body:has(.type-practice.type-sats.preview-question-area) {
     display: flex;
     flex-direction: column;
 }
+.lms-card-timeline li {border: 1px solid #ddd; background-color: #fff; padding: 15px; border-radius: 6px; display: flex; gap: 10px; width: 100%; margin-bottom: 5px;}
+.lms-card-timeline li:before {content: ""; position: absolute; left: 50px; top: 100%; height: 100%; width: 2px; background-color: #ddd;}
+.lms-card-timeline li:last-child:before {display: none;}
+
 /* Questions Cloud Style Start */
 .avatar_images .rureraform-third img {
     width: 50px;
