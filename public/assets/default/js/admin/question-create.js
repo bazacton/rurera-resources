@@ -739,6 +739,14 @@ function _rureraform_properties_prepare(_object) {
     if (typeof type == undefined || type == "")
         return false;
 
+    if(type == "whole_modal_builder"){
+        console.log('test');console.log('properties===='+properties);
+        console.log(_object);
+        console.log('testend');
+        var json_code = _object.json_code;
+        console.log(json_code);
+        $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
+    }
 
     if (type == "settings") {
         properties = rureraform_form_options;
@@ -761,6 +769,16 @@ function _rureraform_properties_prepare(_object) {
     }
     console.log(properties);
     console.log('properties===='+properties);
+
+    if(properties.type == "whole_modal_builder"){
+        console.log(properties);
+        var json_code = properties.json_code;
+        document.getElementById('jsonBox').value=json_code;
+
+        $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
+        $(".insert-whole-modal").attr('data-insert_id', properties.id);
+        //$("#jsonBox").html(json_code);
+    }
 
     input_fields = rureraform_input_sort();
 
@@ -7328,6 +7346,11 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                 case "whole_modal_builder":
 
                     var label_data = rureraform_form_elements[i]["content"];
+                    var json_code = rureraform_form_elements[i]["json_code"];
+                    $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
+                    console.log('4444444444444444444444444444');
+
+
                     html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group whole_modal_builder_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
                     break;
 
@@ -11241,90 +11264,175 @@ $(document).on('click', '.latex-btn', function () {
     textarea.focus();
 });
 
+
 function getSVGFromEquationHTML(html, class_id, is_field = false) {
     return new Promise(function (resolve) {
 
-        // STEP 0: Create hidden container
+        // STEP 0: Hidden container
         const container = document.createElement('div');
         container.style.position = 'absolute';
         container.style.left = '-9999px';
         container.innerHTML = html;
         document.body.appendChild(container);
 
-        // STEP 1: Prepare LaTeX safely
-        container.querySelectorAll('.math-equation').forEach(function (el) {
-
+        // STEP 1: Prepare LaTeX
+        container.querySelectorAll('.math-equation').forEach(el => {
             let latex = el.getAttribute('data-equation');
 
-            // Replace input markers like -input_1- with placeholder text
-            latex = latex.replace(/-input_(\d+)-/g, function (_, id) {
-                return '\\text{INPUT' + id + '}';
-            });
+            // Replace -input_1- → INPUT1 (no \text – important!)
+            latex = latex.replace(/-input_(\d+)-/g, 'INPUT$1');
 
-            // Wrap in MathJax delimiters
             el.innerHTML = '\\(' + latex + '\\)';
         });
 
-        // STEP 2: Render MathJax to SVG
-        MathJax.typesetPromise([container]).then(function () {
+        // STEP 2: Render MathJax
+        MathJax.typesetPromise([container]).then(() => {
 
-            // STEP 3: Replace placeholders in SVG with actual input fields
-            container.querySelectorAll('svg').forEach(function (svg) {
+            /*container.querySelectorAll('svg').forEach(svg => {
 
-                const tspans = svg.querySelectorAll('tspan');
+                const parent = svg.parentElement;
+                parent.style.position = 'relative';
 
-                tspans.forEach(function (tspan) {
-                    const text = tspan.textContent || '';
-                    const match = text.match(/^INPUT(\d+)$/);
+                const svgRect = svg.getBoundingClientRect();
+                const ctm = svg.getScreenCTM();
+
+                svg.querySelectorAll('g[data-latex^="INPUT"]').forEach(group => {
+
+                    const latex = group.getAttribute('data-latex'); // INPUT1
+                    const match = latex.match(/^INPUT(\d+)$/);
                     if (!match) return;
 
                     const inputId = match[1];
 
-                    // Get bounding box of placeholder text
-                    const bbox = tspan.getBBox();
+                    // SVG-space bbox
+                    const bbox = group.getBBox();
 
-                    // Create wrapper to hold input on top of SVG
-                    const wrapper = document.createElement('span');
-                    wrapper.style.position = 'relative';
-                    wrapper.style.display = 'inline-block';
-                    wrapper.style.width = bbox.width + 'px';
-                    wrapper.style.height = bbox.height + 'px';
-                    wrapper.style.verticalAlign = 'middle';
+                    // Convert top-left SVG point → screen
+                    const pt = svg.createSVGPoint();
+                    pt.x = bbox.x;
+                    pt.y = bbox.y;
 
-                    // Create input field
+                    const screenPt = pt.matrixTransform(ctm);
+
+// Size in screen space
+                    const widthPx  = bbox.width  * ctm.a;
+                    const heightPx = bbox.height * Math.abs(ctm.d);
+
+// Visual centering correction
+                    const visualTopPx = screenPt.y - heightPx * 0.75;
+
+// Convert to %
+                    const leftPct   = ((screenPt.x - svgRect.left) / svgRect.width) * 100;
+                    const topPct    = ((visualTopPx - svgRect.top) / svgRect.height) * 100;
+                    const widthPct  = (widthPx  / svgRect.width) * 100;
+                    const heightPct = (heightPx / svgRect.height) * 100;
+
+                    // Create input
                     const input = document.createElement('input');
                     input.type = 'text';
                     input.name = 'input_' + inputId;
                     input.className = 'math-input';
+
                     input.style.position = 'absolute';
-                    input.style.top = '0';
-                    input.style.left = '0';
-                    input.style.width = bbox.width + 'px';
-                    input.style.height = bbox.height + 'px';
-                    input.style.fontSize = '16px';
+                    input.style.left   = leftPct   + '%';
+                    input.style.top    = topPct    + '%';
+                    input.style.width  = widthPct  + '%';
+                    input.style.height = heightPct + '%';
+
+                    input.style.fontSize = '0.9em';
                     input.style.textAlign = 'center';
-                    input.style.border = '1px solid #ccc';
+                    input.style.border = '1px solid #666';
+                    input.style.background = '#fff';
                     input.style.boxSizing = 'border-box';
 
-                    // Replace tspan with wrapper containing input
-                    tspan.replaceWith(wrapper);
-                    wrapper.appendChild(input);
+                    // Hide MathJax placeholder
+                    group.style.opacity = '0';
+
+                    parent.appendChild(input);
                 });
+            });*/
 
-            });
-
-            // STEP 4: Get final HTML
             const result = container.innerHTML;
             document.body.removeChild(container);
 
-            // Insert into DOM or store in hidden input
             if (is_field) {
                 $('.' + class_id).val(result);
             } else {
                 $('.' + class_id).html(result);
             }
 
+            const containerEl = document.querySelector('.' + class_id);
+
+            // Wait one frame so layout is finalized
+            requestAnimationFrame(() => {
+                attachMathInputs(containerEl);
+            });
+
             resolve(result);
+        });
+    });
+}
+
+function attachMathInputs(scope) {
+
+    scope.querySelectorAll('svg').forEach(svg => {
+
+        const parent = svg.parentElement;
+        parent.style.position = 'relative';
+
+        const svgRect = svg.getBoundingClientRect();
+        const ctm = svg.getScreenCTM();
+
+        svg.querySelectorAll('g[data-latex^="INPUT"]').forEach(group => {
+
+            const match = group.getAttribute('data-latex').match(/^INPUT(\d+)$/);
+            if (!match) return;
+
+            const inputId = match[1];
+            const bbox = group.getBBox();
+
+            // SVG → screen
+            const pt = svg.createSVGPoint();
+            pt.x = bbox.x;
+            pt.y = bbox.y;
+            const screenPt = pt.matrixTransform(ctm);
+
+            const widthPx  = bbox.width  * ctm.a;
+            const heightPx = bbox.height * Math.abs(ctm.d);
+
+            // TRUE visual center correction
+            let baselineFactor = 0.72;
+
+            if (group.closest('[data-mml-node="mfrac"]')) baselineFactor = 0.55;
+            if (group.closest('[data-mml-node="mroot"]')) baselineFactor = 0.68;
+
+            const visualTopPx = screenPt.y - heightPx * baselineFactor;
+
+            // Convert to %
+            const leftPct   = ((screenPt.x - svgRect.left) / svgRect.width) * 100;
+            const topPct    = ((visualTopPx - svgRect.top) / svgRect.height) * 100;
+            const widthPct  = (widthPx  / svgRect.width) * 100;
+            const heightPct = (heightPx / svgRect.height) * 100;
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'input_' + inputId;
+            input.className = 'math-input';
+
+            input.style.position = 'absolute';
+            input.style.left   = leftPct + '%';
+            input.style.top    = topPct + '%';
+            input.style.width  = widthPct + '%';
+            input.style.height = heightPct + '%';
+
+            input.style.fontSize = '0.9em';
+            input.style.textAlign = 'center';
+            input.style.border = '1px solid #666';
+            input.style.background = '#fff';
+            input.style.boxSizing = 'border-box';
+
+            group.style.opacity = '0';
+            parent.appendChild(input);
         });
     });
 }
@@ -11440,7 +11548,12 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
 $(document).on('click', '.interactive_elements li', function () {
     var modal_class = $(this).attr('data-option');
-    $("."+modal_class).modal('show');
+    if($("."+modal_class).hasClass('show')){
+        console.log('already showing');
+    }else{
+        $(".insert-whole-modal").attr('data-insert_id', -1);
+        $("."+modal_class).modal('show');
+    }
 });
 
 
