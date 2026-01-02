@@ -231,7 +231,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
 @if((!empty($isForumPage) and $isForumPage) or (!empty($isForumAnswersPage) and $isForumAnswersPage))
 <script src="/assets/learning_page/forum.min.js"></script>
 @endif
-@endpush
+
 <script>
     //init_question_functions();
 
@@ -251,3 +251,5 @@ $is_new = isset( $is_new )? $is_new : 'no';
         }, 1000);
     }
 </script>
+@endpush
+
