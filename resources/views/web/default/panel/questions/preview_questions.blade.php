@@ -395,7 +395,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 <script>
     var container = document.querySelector('.question-area-block');
     var btnTop = document.getElementById('btn-top');
-    var groupMiddle = document.getElementById('group-middle');
+    //var groupMiddle = document.getElementById('group-middle');
     var btnBottom = document.getElementById('btn-bottom');
     //var btnMidUp = document.getElementById('btn-mid-up');
     //var btnMidDown = document.getElementById('btn-mid-down');
@@ -404,7 +404,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
     function hideAllButtons() {
         btnTop.classList.add('hidden');
-        groupMiddle.classList.add('hidden');
+        //groupMiddle.classList.add('hidden');
         btnBottom.classList.add('hidden');
     }
 
@@ -422,13 +422,13 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         /* At top */
         if (scrollTop < 100) {
             btnTop.classList.remove('hidden');   // scroll down
-            groupMiddle.classList.add('hidden');
+            //groupMiddle.classList.add('hidden');
             btnBottom.classList.add('hidden');
         }
         /* At bottom */
         else if (scrollTop + containerHeight >= contentHeight - 100) {
             btnTop.classList.add('hidden');
-            groupMiddle.classList.add('hidden');
+            //groupMiddle.classList.add('hidden');
             btnBottom.classList.remove('hidden'); // scroll up
         }
         /* Middle */
