@@ -17341,24 +17341,20 @@ section:has(.trial-steps) .lms-btn-group a small {
     font-weight: 700;
     transition: color 0.2s
 }
-
 .modal-close:hover {
     color: #3498db
 }
-
 .payment-methods {
     display: flex;
     gap: 16px;
     justify-content: center;
     margin-top: 10px
 }
-
 .payment-method h3 {
     font-size: 20px;
     color: #333;
     margin: 0 0 10px
 }
-
 .choose-subjects input[type=checkbox],
 .payment-card input[type=checkbox],
 .choose-subjects input[type=radio],
@@ -17435,24 +17431,10 @@ section:has(.trial-steps) .lms-btn-group a small {
 .cookie-banner .close {height: 35px; width: 35px; text-align: center; border: 1px solid #ddd; border-radius: 3px; background-color: #fcfcfc;}
 .cookie-content p {margin: 0 0 15px;}
 .cookie-content p a {color: var(--primary); text-decoration: underline;}
-.cookie-buttons button {background-color: inherit; border: 1px solid transparent;   border-radius: 5px;
-    padding: 10px 15px;
-    line-height: normal;
-    outline: none;
-}
-.cookie-buttons .accept-all {
-    background-color: var(--primary);
-    color: #fff;
-}
-.cookie-buttons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.cookie-buttons .manage-prefs {
-    border: 1px solid #ddd;
-}
+.cookie-buttons button {background-color: inherit; border: 1px solid transparent; border-radius: 5px; padding: 10px 15px; line-height: normal; outline: none;}
+.cookie-buttons .accept-all {background-color: var(--primary); color: #fff;}
+.cookie-buttons {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
+.cookie-buttons .manage-prefs {border: 1px solid #ddd;}
 /* Cookie Modal Style End */
 
 @media (max-width:500px) {
