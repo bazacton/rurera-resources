@@ -550,4 +550,59 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
         }
     });
 </script>
+<script>
+    var container = document.querySelector('.question-area-block');
+    var btnTop = document.getElementById('btn-top');       // Scroll Down (step)
+    var btnBottom = document.getElementById('btn-bottom'); // Scroll Up (full)
 
+    var SCROLL_AMOUNT = 200;
+
+    function updateScrollState() {
+        var contentHeight = container.scrollHeight;
+        var containerHeight = container.clientHeight;
+        var scrollTop = container.scrollTop;
+
+        // No scroll needed
+        if (contentHeight <= containerHeight + 5) {
+            btnTop.classList.add('hidden');
+            btnBottom.classList.add('hidden');
+            return;
+        }
+
+        // At bottom → show UP button
+        if (scrollTop + containerHeight >= contentHeight - 5) {
+            btnTop.classList.add('hidden');
+            btnBottom.classList.remove('hidden');
+        }
+        // Anywhere else → show DOWN button
+        else {
+            btnTop.classList.remove('hidden');
+            btnBottom.classList.add('hidden');
+        }
+    }
+
+    /* 🔼 Scroll FULL to top */
+    function scrollUp() {
+        container.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    /* 🔽 Scroll STEP by STEP */
+    function scrollDown() {
+        container.scrollBy({
+            top: SCROLL_AMOUNT,
+            behavior: 'smooth'
+        });
+    }
+
+    btnTop.addEventListener('click', scrollDown);
+    btnBottom.addEventListener('click', scrollUp);
+
+    container.addEventListener('scroll', updateScrollState);
+    window.addEventListener('resize', updateScrollState);
+
+    updateScrollState();
+
+</script>
