@@ -2098,12 +2098,13 @@ body:has(.type-practice.type-sats.preview-question-area) {
     max-width: 400px;
     z-index: 2;
     overflow: hidden;
-    padding: 15px 25px 25px;
+    padding: 0 25px 25px;
     border-left: 1px solid #ececec;
     position: fixed;
     right: 0;
     overflow-y: auto;
     height: 100%;
+    margin-top: 25px;
 }
 .preview-question-area .question-right-side .review-msg-box .input-group {
     border: 0;
@@ -2111,12 +2112,12 @@ body:has(.type-practice.type-sats.preview-question-area) {
     padding: 0;
 }
 .question-right-header {
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 25px 12px;
+    padding: 12px 25px;
     margin: 0 -25px 12px;
 }
 .question-right-header p {
