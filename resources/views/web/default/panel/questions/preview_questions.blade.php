@@ -221,14 +221,14 @@ $rand_id = rand(99,9999);
                                             </button>
 
                                             <!-- Middle State: Two Circular Buttons -->
-                                            <div id="group-middle" class="middle-group hidden">
+                                            <!-- <div id="group-middle" class="middle-group hidden">
                                                 <button id="btn-mid-up" class="scroll-btn circle">
                                                     <i class="arrow up"></i>
                                                 </button>
                                                 <button id="btn-mid-down" class="scroll-btn circle">
                                                     <i class="arrow down"></i>
                                                 </button>
-                                            </div>
+                                            </div> -->
 
                                             <!-- Bottom State: Scroll Up Button -->
                                             <button id="btn-bottom" class="scroll-btn pill hidden">
