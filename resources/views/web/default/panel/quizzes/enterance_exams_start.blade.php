@@ -156,7 +156,20 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 
                                         @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls test@@">
+                                        <div id="scroll-controls" class="page-prev-next-controls">
+                                            <div class="controls-inner">
+                                                <!-- Top State: Scroll Down Button -->
+                                                <button id="btn-top" class="scroll-btn pill hidden">
+                                                    Scroll down <i class="arrow down"></i>
+                                                </button>
+
+                                                <!-- Bottom State: Scroll Up Button -->
+                                                <button id="btn-bottom" class="scroll-btn pill hidden">
+                                                    Scroll up <i class="arrow up"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                                             <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
@@ -536,4 +549,60 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
             $('#next-btn')[0].click();
         }
     });
+</script>
+<script>
+    var container = document.querySelector('.question-area-block');
+    var btnTop = document.getElementById('btn-top');       // Scroll Down (step)
+    var btnBottom = document.getElementById('btn-bottom'); // Scroll Up (full)
+
+    var SCROLL_AMOUNT = 200;
+
+    function updateScrollState() {
+        var contentHeight = container.scrollHeight;
+        var containerHeight = container.clientHeight;
+        var scrollTop = container.scrollTop;
+
+        // No scroll needed
+        if (contentHeight <= containerHeight + 5) {
+            btnTop.classList.add('hidden');
+            btnBottom.classList.add('hidden');
+            return;
+        }
+
+        // At bottom → show UP button
+        if (scrollTop + containerHeight >= contentHeight - 5) {
+            btnTop.classList.add('hidden');
+            btnBottom.classList.remove('hidden');
+        }
+        // Anywhere else → show DOWN button
+        else {
+            btnTop.classList.remove('hidden');
+            btnBottom.classList.add('hidden');
+        }
+    }
+
+    /* 🔼 Scroll FULL to top */
+    function scrollUp() {
+        container.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    /* 🔽 Scroll STEP by STEP */
+    function scrollDown() {
+        container.scrollBy({
+            top: SCROLL_AMOUNT,
+            behavior: 'smooth'
+        });
+    }
+
+    btnTop.addEventListener('click', scrollDown);
+    btnBottom.addEventListener('click', scrollUp);
+
+    container.addEventListener('scroll', updateScrollState);
+    window.addEventListener('resize', updateScrollState);
+
+    updateScrollState();
+
 </script>
