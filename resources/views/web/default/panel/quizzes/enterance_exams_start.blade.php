@@ -156,19 +156,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 
                                         @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                        <div id="scroll-controls" class="page-prev-next-controls">
-                                            <div class="controls-inner">
-                                                <!-- Top State: Scroll Down Button -->
-                                                <button id="btn-top" class="scroll-btn pill hidden">
-                                                    Scroll down <i class="arrow down"></i>
-                                                </button>
-
-                                                <!-- Bottom State: Scroll Up Button -->
-                                                <button id="btn-bottom" class="scroll-btn pill hidden">
-                                                    Scroll up <i class="arrow up"></i>
-                                                </button>
-                                            </div>
-                                        </div>
                                         <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                                             <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
                                                 Finish
