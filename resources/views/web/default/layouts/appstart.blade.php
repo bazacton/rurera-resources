@@ -181,6 +181,5 @@ $rand_no = rand(99,9999);
         document.getElementsByTagName("head")[0].appendChild(mf);
      })();
     </script>
-    
 </body>
 </html>
