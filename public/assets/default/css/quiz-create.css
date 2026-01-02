@@ -2626,6 +2626,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     font-weight: bold;
     font-size: 14px;
 }
+.page-prev-next-controls .scroll-btn:hover {
+    background-color: #ffffff;
+}
 /* Hover Effects: Lift Animation */
 .page-prev-next-controls .scroll-btn:hover {
     transform: translateY(-3px);
