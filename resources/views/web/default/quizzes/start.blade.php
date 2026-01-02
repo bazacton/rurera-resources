@@ -6,13 +6,13 @@ $test_type = isset( $test_type )? $test_type : '';
 $question_ids = isset( $question_ids )? $question_ids : array();
 $is_new = isset( $is_new )? $is_new : 'no';
 @endphp
-
-<!-- <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script> -->
-@push('styles_top')
-
 <link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
 <link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
+<link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+@push('styles_top')
+
+
 <style>
     .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate{display:none !important;}
 </style>
@@ -227,67 +227,11 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <script src="/assets/default/js/parts/video_player_helpers.min.js"></script>
 <script src="/assets/default/js/question-layout.js?var={{$rand_id}}"></script>
 <script src="/assets/learning_page/scripts.min.js?var={{$rand_id}}"></script>
-<script>
-    var container = document.querySelector('.question-area-block');
-    var btnTop = document.getElementById('btn-top');       // Scroll Down (step)
-    var btnBottom = document.getElementById('btn-bottom'); // Scroll Up (full)
-
-    var SCROLL_AMOUNT = 200;
-
-    function updateScrollState() {
-        var contentHeight = container.scrollHeight;
-        var containerHeight = container.clientHeight;
-        var scrollTop = container.scrollTop;
-
-        // No scroll needed
-        if (contentHeight <= containerHeight + 5) {
-            btnTop.classList.add('hidden');
-            btnBottom.classList.add('hidden');
-            return;
-        }
-
-        // At bottom → show UP button
-        if (scrollTop + containerHeight >= contentHeight - 5) {
-            btnTop.classList.add('hidden');
-            btnBottom.classList.remove('hidden');
-        }
-        // Anywhere else → show DOWN button
-        else {
-            btnTop.classList.remove('hidden');
-            btnBottom.classList.add('hidden');
-        }
-    }
-
-    /* 🔼 Scroll FULL to top */
-    function scrollUp() {
-        container.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
-    /* 🔽 Scroll STEP by STEP */
-    function scrollDown() {
-        container.scrollBy({
-            top: SCROLL_AMOUNT,
-            behavior: 'smooth'
-        });
-    }
-
-    btnTop.addEventListener('click', scrollDown);
-    btnBottom.addEventListener('click', scrollUp);
-
-    container.addEventListener('scroll', updateScrollState);
-    window.addEventListener('resize', updateScrollState);
-
-    updateScrollState();
-
-</script>
 
 @if((!empty($isForumPage) and $isForumPage) or (!empty($isForumAnswersPage) and $isForumAnswersPage))
 <script src="/assets/learning_page/forum.min.js"></script>
 @endif
-
+@endpush
 <script>
     //init_question_functions();
 
@@ -307,6 +251,3 @@ $is_new = isset( $is_new )? $is_new : 'no';
         }, 1000);
     }
 </script>
-
-@endpush
-
