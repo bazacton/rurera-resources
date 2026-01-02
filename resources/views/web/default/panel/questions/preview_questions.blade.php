@@ -397,26 +397,23 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     var btnTop = document.getElementById('btn-top');       // Scroll Down
     var btnBottom = document.getElementById('btn-bottom'); // Scroll Up
 
-    var SCROLL_AMOUNT = 200;
-
     function updateScrollState() {
         var contentHeight = container.scrollHeight;
         var containerHeight = container.clientHeight;
         var scrollTop = container.scrollTop;
 
-        // No scroll needed
         if (contentHeight <= containerHeight + 5) {
             btnTop.classList.add('hidden');
             btnBottom.classList.add('hidden');
             return;
         }
 
-        // At bottom → show scroll UP
-        if (scrollTop + containerHeight >= contentHeight - 10) {
+        // At bottom → show UP
+        if (scrollTop + containerHeight >= contentHeight - 5) {
             btnTop.classList.add('hidden');
             btnBottom.classList.remove('hidden');
         }
-        // Everywhere else → show scroll DOWN
+        // Else → show DOWN
         else {
             btnTop.classList.remove('hidden');
             btnBottom.classList.add('hidden');
@@ -424,11 +421,14 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     }
 
     function scrollUp() {
-        container.scrollBy({ top: -SCROLL_AMOUNT, behavior: 'smooth' });
+        container.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function scrollDown() {
-        container.scrollBy({ top: SCROLL_AMOUNT, behavior: 'smooth' });
+        container.scrollTo({
+            top: container.scrollHeight,
+            behavior: 'smooth'
+        });
     }
 
     btnTop.addEventListener('click', scrollDown);
