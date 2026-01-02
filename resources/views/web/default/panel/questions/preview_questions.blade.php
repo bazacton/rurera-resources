@@ -394,8 +394,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 </script>
 <script>
     var container = document.querySelector('.question-area-block');
-    var btnTop = document.getElementById('btn-top');       // scroll down
-    var btnBottom = document.getElementById('btn-bottom'); // scroll up
+    var btnTop = document.getElementById('btn-top');       // Scroll Down
+    var btnBottom = document.getElementById('btn-bottom'); // Scroll Up
 
     var SCROLL_AMOUNT = 200;
 
@@ -404,53 +404,39 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         var containerHeight = container.clientHeight;
         var scrollTop = container.scrollTop;
 
-        // If no scrolling needed
+        // No scroll needed
         if (contentHeight <= containerHeight + 5) {
             btnTop.classList.add('hidden');
             btnBottom.classList.add('hidden');
             return;
         }
 
-        // At top → show scroll-down button
-        if (scrollTop <= 10) {
-            btnTop.classList.remove('hidden');
-            btnBottom.classList.add('hidden');
-        }
-        // At bottom → show scroll-up button
-        else if (scrollTop + containerHeight >= contentHeight - 10) {
+        // At bottom → show scroll UP
+        if (scrollTop + containerHeight >= contentHeight - 10) {
             btnTop.classList.add('hidden');
             btnBottom.classList.remove('hidden');
         }
-        // In between → show both (optional, change if needed)
+        // Everywhere else → show scroll DOWN
         else {
             btnTop.classList.remove('hidden');
-            btnBottom.classList.remove('hidden');
+            btnBottom.classList.add('hidden');
         }
     }
 
     function scrollUp() {
-        container.scrollBy({
-            top: -SCROLL_AMOUNT,
-            behavior: 'smooth'
-        });
+        container.scrollBy({ top: -SCROLL_AMOUNT, behavior: 'smooth' });
     }
 
     function scrollDown() {
-        container.scrollBy({
-            top: SCROLL_AMOUNT,
-            behavior: 'smooth'
-        });
+        container.scrollBy({ top: SCROLL_AMOUNT, behavior: 'smooth' });
     }
 
-    /* Button events */
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
 
-    /* Scroll + resize listeners */
     container.addEventListener('scroll', updateScrollState);
     window.addEventListener('resize', updateScrollState);
 
-    /* Initial check */
     updateScrollState();
 
 </script>
