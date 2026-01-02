@@ -5,8 +5,6 @@
 
 @endphp
 
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
-
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
@@ -248,7 +246,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 </div>
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
-
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
