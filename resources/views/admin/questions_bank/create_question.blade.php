@@ -86,7 +86,10 @@
     .equationModal .sym:hover{background:#f9fafb;border-color:#d1d5db}
     .equationModal .sym .glyph{font-size:22px;line-height:1}
     .equationModal .sym .code{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-
+    .equationModal .sym svg {
+        max-width: 100%;
+        object-fit: contain;
+    }
     /* Editor Layout */
     .equationModal .body{padding:0 0 25px;}
     .equationModal .editor-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
