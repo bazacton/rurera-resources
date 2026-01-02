@@ -2095,6 +2095,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .preview-question-area .left-content {
     padding-top: 50px;
+    width: 100%;
 }
 .preview-question-area .question-right-side {
     background-color: #fff;
