@@ -17427,6 +17427,64 @@ section:has(.trial-steps) .lms-btn-group a small {
     padding: 10px 25px;
     border-radius: 5px
 }
+/* Cookie Modal Style Start */
+ .cookie-banner {
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    margin: 0 0 25px;
+    padding: 25px;
+}
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 15px;
+}
+.header-section h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+.cookie-content {
+    margin: 0 0 30px;
+}
+.cookie-banner .close {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+}
+.cookie-content p {
+    margin: 0 0 15px;
+}
+.cookie-content p a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+.cookie-buttons button {
+    background-color: inherit;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    line-height: normal;
+    outline: none;
+}
+.cookie-buttons .accept-all {
+    background-color: var(--primary);
+    color: #fff;
+}
+.cookie-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cookie-buttons .manage-prefs {
+    border: 1px solid #ddd;
+}
+/* Cookie Modal Style End */
 
 @media (max-width:500px) {
     .modal-box {
