@@ -210,6 +210,19 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
         </div>
     </div>
+    <div id="scroll-controls" class="page-prev-next-controls">
+        <div class="controls-inner">
+            <!-- Top State: Scroll Down Button -->
+            <button id="btn-top" class="scroll-btn pill hidden">
+                Scroll down <i class="arrow down"></i>
+            </button>
+
+            <!-- Bottom State: Scroll Up Button -->
+            <button id="btn-bottom" class="scroll-btn pill hidden">
+                Scroll up <i class="arrow up"></i>
+            </button>
+        </div>
+    </div>
 </div>
 
 @endsection
