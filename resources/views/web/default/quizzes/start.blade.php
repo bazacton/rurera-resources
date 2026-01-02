@@ -294,7 +294,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
 
-    container.addEventListener('scroll', updateScrollState);
+    // container.addEventListener('scroll', updateScrollState);
     window.addEventListener('resize', updateScrollState);
 
     updateScrollState();
