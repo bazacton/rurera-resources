@@ -397,8 +397,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     var btnTop = document.getElementById('btn-top');
     var groupMiddle = document.getElementById('group-middle');
     var btnBottom = document.getElementById('btn-bottom');
-    var btnMidUp = document.getElementById('btn-mid-up');
-    var btnMidDown = document.getElementById('btn-mid-down');
+    //var btnMidUp = document.getElementById('btn-mid-up');
+    //var btnMidDown = document.getElementById('btn-mid-down');
 
     var SCROLL_AMOUNT = 200;
 
@@ -456,8 +456,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     /* Button events */
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
-    btnMidUp.addEventListener('click', scrollUp);
-    btnMidDown.addEventListener('click', scrollDown);
+    //btnMidUp.addEventListener('click', scrollUp);
+    //btnMidDown.addEventListener('click', scrollDown);
 
     /* Listen to DIV scroll, not window */
     container.addEventListener('scroll', updateScrollState);
