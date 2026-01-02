@@ -227,30 +227,6 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <script src="/assets/default/js/parts/video_player_helpers.min.js"></script>
 <script src="/assets/default/js/question-layout.js?var={{$rand_id}}"></script>
 <script src="/assets/learning_page/scripts.min.js?var={{$rand_id}}"></script>
-
-@if((!empty($isForumPage) and $isForumPage) or (!empty($isForumAnswersPage) and $isForumAnswersPage))
-<script src="/assets/learning_page/forum.min.js"></script>
-@endif
-
-<script>
-    //init_question_functions();
-
-    if( "{{$quiz->quiz_type}}" == 'vocabulary' || "{{$quiz->quiz_type}}" == 'practice') {
-        var start_counter = 6;
-
-        var Startintervals = setInterval(function () {
-            if (parseInt(start_counter) > 1) {
-                start_counter = parseInt(start_counter) - parseInt(1);
-                $(".start-counter").html(start_counter);
-            } else {
-                $(".start-counter").remove();
-                clearInterval(Startintervals);
-                $(".quiz-start-btn").click();
-                $(".learning-content-box").removeClass('hide')
-            }
-        }, 1000);
-    }
-</script>
 <script>
     var container = document.querySelector('.question-area-block');
     var btnTop = document.getElementById('btn-top');       // Scroll Down (step)
@@ -307,5 +283,30 @@ $is_new = isset( $is_new )? $is_new : 'no';
     updateScrollState();
 
 </script>
+
+@if((!empty($isForumPage) and $isForumPage) or (!empty($isForumAnswersPage) and $isForumAnswersPage))
+<script src="/assets/learning_page/forum.min.js"></script>
+@endif
+
+<script>
+    //init_question_functions();
+
+    if( "{{$quiz->quiz_type}}" == 'vocabulary' || "{{$quiz->quiz_type}}" == 'practice') {
+        var start_counter = 6;
+
+        var Startintervals = setInterval(function () {
+            if (parseInt(start_counter) > 1) {
+                start_counter = parseInt(start_counter) - parseInt(1);
+                $(".start-counter").html(start_counter);
+            } else {
+                $(".start-counter").remove();
+                clearInterval(Startintervals);
+                $(".quiz-start-btn").click();
+                $(".learning-content-box").removeClass('hide')
+            }
+        }, 1000);
+    }
+</script>
+
 @endpush
 
