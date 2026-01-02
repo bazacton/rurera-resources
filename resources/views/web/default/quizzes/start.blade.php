@@ -6,13 +6,13 @@ $test_type = isset( $test_type )? $test_type : '';
 $question_ids = isset( $question_ids )? $question_ids : array();
 $is_new = isset( $is_new )? $is_new : 'no';
 @endphp
-<link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
-<link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
-<!-- <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script> -->
 @push('styles_top')
 
-
+<link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
+<link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
 <style>
     .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate{display:none !important;}
 </style>
