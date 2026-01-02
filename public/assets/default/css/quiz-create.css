@@ -316,6 +316,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .question-area .math-equation mjx-container {
     display: inline-block;
 }
+.math-equation br {display: none;}
 /* .question-label span, */
 /* .lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;} */
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
