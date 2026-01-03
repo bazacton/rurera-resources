@@ -175,8 +175,8 @@
         border:1px dashed rgba(0,0,0,.25);
     }
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <!-- MathJax (SVG output) -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 <script>
     window.MathJax = {
         svg: { fontCache: 'none' },
@@ -184,7 +184,6 @@
         options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
     };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 <div id="rurera_interactive_elements" class="modal-fullscreen-xl rurera_interactive_elements whole-modal-builder modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content edit-quest-modal-div">

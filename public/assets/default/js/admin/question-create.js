@@ -775,8 +775,10 @@ function _rureraform_properties_prepare(_object) {
         var json_code = properties.json_code;
         document.getElementById('jsonBox').value=json_code;
 
+        $(".load-json-btn").click();
         $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
         $(".insert-whole-modal").attr('data-insert_id', properties.id);
+
         //$("#jsonBox").html(json_code);
     }
 
@@ -7347,7 +7349,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     var label_data = rureraform_form_elements[i]["content"];
                     var json_code = rureraform_form_elements[i]["json_code"];
-                    $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
+                    //$(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
                     console.log('4444444444444444444444444444');
 
 
