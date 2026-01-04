@@ -945,19 +945,35 @@ $(document).on('click', '.add-keyword-btn', function () {
     const dropdown = document.getElementById('dropdown');
     const toolbar = document.getElementById('toolbar');
 
-    function showDropdown(menuKey, anchorBtn){
+    function showDropdown(menuKey, anchorBtn) {
         const menu = MENUS[menuKey];
-        if(!menu) return;
+        if (!menu) return;
 
-        // position dropdown under the clicked button (keep within toolbar width)
-        const btnRect = anchorBtn.getBoundingClientRect();
-        const barRect = toolbar.getBoundingClientRect();
-        let left = (btnRect.left - barRect.left);
-        const maxLeft = Math.max(0, toolbar.clientWidth - dropdown.offsetWidth - 18);
-        dropdown.style.left = Math.max(18, Math.min(left + 18, maxLeft)) + "px";
-
+        // Render first so width/height are known
         dropdown.innerHTML = renderMenu(menu);
         dropdown.classList.add('show');
+
+        const btnRect = anchorBtn.getBoundingClientRect();
+        const barRect = toolbar.getBoundingClientRect();
+        const ddRect  = dropdown.getBoundingClientRect();
+
+        const GAP = 8; // spacing from button / edges
+
+        /* ---------- vertical position (below button) ---------- */
+        let top = btnRect.bottom - barRect.top + GAP;
+        dropdown.style.top = `${top}px`;
+
+        /* ---------- horizontal position (auto-adjust) ---------- */
+        let left = btnRect.left - barRect.left;
+
+        const minLeft = GAP;
+        const maxLeft = toolbar.clientWidth - ddRect.width - GAP;
+
+        // Clamp inside toolbar
+        left = Math.max(minLeft, Math.min(left, maxLeft));
+
+        dropdown.style.left = `${left}px`;
+
         MathJax.typesetPromise([dropdown]);
     }
 
