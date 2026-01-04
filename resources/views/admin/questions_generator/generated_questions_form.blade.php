@@ -29,12 +29,6 @@ $single_question = isset($single_question)? $single_question : false;
 
     /* Modal */
     .equationModal .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none}
-    .equationModal.modal{
-        position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
-        width:min(1250px,calc(100vw - 24px));
-        background:var(--panel);border-radius:10px;
-        display:none;overflow:hidden;
-    }
     .equationModal .header{
         padding:14px 18px;border-bottom:1px solid var(--line);
         display:flex;justify-content:space-between;align-items:center
@@ -411,7 +405,7 @@ $single_question = isset($single_question)? $single_question : false;
                     <div class="editor-wrap">
                         <div>
                             <textarea id="equationInput" oninput="renderMath()" class="form-control equationInput" rows="4"></textarea>
-                            <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div>
+                            <!-- <div class="hint">Tip: Click symbols to insert. Use <b>\left(</b> <b>\right)</b> for auto-sized brackets.</div> -->
                         </div>
                         <div class="preview" id="preview"></div>
                     </div>
