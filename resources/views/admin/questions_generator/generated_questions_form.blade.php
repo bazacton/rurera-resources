@@ -33,7 +33,6 @@ $single_question = isset($single_question)? $single_question : false;
         position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
         width:min(1250px,calc(100vw - 24px));
         background:var(--panel);border-radius:10px;
-        box-shadow:0 12px 40px rgba(0,0,0,.28);
         display:none;overflow:hidden;
     }
     .equationModal .header{
@@ -43,7 +42,16 @@ $single_question = isset($single_question)? $single_question : false;
     .equationModal .header h3{margin:0;font-weight:700}
     .equationModal .icon-btn{border:none;background:transparent;font-size:20px;line-height:1;padding:6px 10px;border-radius:8px}
     .equationModal .icon-btn:hover{background:#f3f4f6}
-
+    .equationModal .btn-close {
+        border: 0;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: inherit;
+        outline: none;
+    }
     /* Toolbar */
     .equationModal .toolbar{
         display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;
@@ -376,7 +384,7 @@ $single_question = isset($single_question)? $single_question : false;
 
             <div class="modal-header">
                 <h5 class="modal-title">Insert Equation1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
 
             <div class="modal-body">
