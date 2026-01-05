@@ -11307,8 +11307,13 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
         container.style.position = 'absolute';
         container.style.left = '-9999px';
 
-        // ✅ If plain LaTeX string is passed, wrap it
-        if (typeof html === 'string' && !html.includes('<')) {
+        // ✅ Detect real LaTeX only (not normal text)
+        const looksLikeLatex =
+            typeof html === 'string' &&
+            !html.includes('<') &&
+            /\\[a-zA-Z]+|[_^{}]/.test(html);
+
+        if (looksLikeLatex) {
             html = `
                 <span class="math-equation" data-equation="${html}">
                     ${html}
@@ -11324,7 +11329,7 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
 
             let latex = el.getAttribute('data-equation') || el.textContent;
 
-            // ✅ Normalize unsupported / risky commands
+            // Normalize risky commands
             latex = latex
                 .replace(/\\dfrac/g, '\\frac')
                 .replace(/\\tfrac/g, '\\frac');
@@ -11332,7 +11337,6 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
             // Replace -input_1- → INPUT1
             latex = latex.replace(/-input_(\d+)-/g, 'INPUT$1');
 
-            // Wrap for MathJax inline rendering
             el.innerHTML = '\\(' + latex + '\\)';
         });
 
@@ -11350,7 +11354,6 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
 
             const containerEl = document.querySelector('.' + class_id);
 
-            // Wait one frame so layout is finalized
             requestAnimationFrame(() => {
                 attachMathInputs(containerEl);
             });
