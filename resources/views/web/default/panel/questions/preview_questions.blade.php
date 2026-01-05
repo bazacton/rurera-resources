@@ -452,31 +452,29 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
-        // Generic LaTeX pattern: matches common LaTeX commands, fractions, sqrt, math symbols
-        const latexPattern = /(\\[a-zA-Z]+(\[[^\]]*\])?(\{[^}]*\})*)|(\{[^}]*\})|(\d+(\.\d+)?)/g;
+        // Match any LaTeX command starting with \, with optional [] or {} arguments
+        const latexPattern = /(\\[a-zA-Z]+(\[[^\]]*\])?(\{[^}]*\})*)/g;
 
         document.querySelectorAll('*:not(script):not(style)').forEach(el => {
-            // Skip elements that have children
+            // Skip elements with children
             if (el.children.length > 0) return;
 
             let text = el.textContent;
 
+            if (!text) return;
+
             // Skip already-rendered math
-            if (!text || text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
+            if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
 
-            // Only wrap if LaTeX commands exist
+            // Wrap all matched LaTeX commands
             if (latexPattern.test(text)) {
-                const lines = text.split(/\n+/).map(line => {
-                    line = line.trim();
-                    if (!line) return '';
-                    return `$$${line}$$`;
-                });
-
-                el.innerHTML = lines.join('<br>');
+                // Replace each LaTeX command with $$…$$ to ensure MathJax renders it
+                const newHTML = text.replace(latexPattern, match => `$$${match}$$`);
+                el.innerHTML = newHTML;
             }
         });
 
-        // Trigger MathJax rendering if available
+        // Trigger MathJax typesetting
         if (window.MathJax?.typesetPromise) {
             MathJax.typesetClear();
             MathJax.typesetPromise().catch(err => console.error('MathJax error:', err));
