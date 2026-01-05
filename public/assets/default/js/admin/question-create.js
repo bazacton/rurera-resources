@@ -1540,7 +1540,8 @@ function _rureraform_properties_prepare(_object) {
                     }
                     var field_class = (rureraform_meta[type][key]['class'] != undefined)? rureraform_meta[type][key]['class'] : '';
                     var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
-                    html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"'>" + options + "</select></div></div></div>";
+                    var attr_html = (rureraform_meta[type][key]['attr'] != undefined)? rureraform_meta[type][key]['attr'] : '';
+                    html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"' "+attr_html+">" + options + "</select></div></div></div>";
                     break;
 
                 case 'image_radio':
@@ -2719,6 +2720,10 @@ function _rureraform_properties_prepare(_object) {
     if($('.draggable_options_label .rureraform-properties-options-label').length > 0){
         $('.draggable_options_label .rureraform-properties-options-label').change();
     }
+
+    $('.select-conditional select').each(function () {
+        handleConditionalSelect(this);
+    });
 
     // Prepare editor state - end
     return false;
@@ -6247,7 +6252,11 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     var image_position_class = 'image-'+image_position;
                     var image_class = (is_image == true) ? "lms-checkbox-img "+image_position_class : "";
-                    html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + "><div class='form-box " + template_style + " " + image_class + "'>" + options + "</div></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
+                    var label_title = rureraform_form_elements[i]["label"];
+                    if(label_title == 'custom'){
+                        label_title = rureraform_form_elements[i]["custom_label"];
+                    }
+                    html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(label_title) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + "><div class='form-box " + template_style + " " + image_class + "'>" + options + "</div></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
                     break;
 
                 case "radio":
@@ -11548,8 +11557,66 @@ $(document).on('click', '.interactive_elements li', function () {
 
 
 
+function handleConditionalSelect(select) {
+    const $select = $(select);
+    const selectedValue = $select.val();
+
+    // Normalize child classes
+    let childClasses = $select.attr('data-child_classes');
+    let conditionalFields = $select.attr('data-conditional_fields');
+
+    if (!childClasses || !conditionalFields) return;
+
+    // Convert childClasses to array
+    try {
+        childClasses = JSON.parse(childClasses);
+    } catch (e) {
+        childClasses = [childClasses];
+    }
+
+    // Convert conditionalFields to object
+    try {
+        conditionalFields = JSON.parse(conditionalFields);
+    } catch (e) {
+        conditionalFields = {};
+    }
+
+    // 1️⃣ Hide all child elements
+    childClasses.forEach(cls => {
+        $(cls).addClass('rurera-hide');
+    });
+
+    // 2️⃣ Show conditional fields if matched
+    if (conditionalFields[selectedValue]) {
+        let targets = conditionalFields[selectedValue];
+
+        // Normalize targets to array
+        try {
+            targets = JSON.parse(targets);
+        } catch (e) {
+            targets = [targets];
+        }
+
+        targets.forEach(cls => {
+            $(cls).removeClass('rurera-hide');
+        });
+    }
+}
 
 
 $(document).on('click', '.close-modal', function () {
     $(this).closest('.rurera_interactive_elements').modal('hide');
+});
+$(document).ready(function() {
+
+    $(document).on('change', '.select-conditional select', function () {
+        handleConditionalSelect(this);
+    });
+
+// trigger on page load
+    $('.select-conditional select').each(function () {
+        handleConditionalSelect(this);
+    });
+
+
 });
