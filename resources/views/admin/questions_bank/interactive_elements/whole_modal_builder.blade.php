@@ -205,6 +205,12 @@
         border-radius:14px;
         border:1px dashed rgba(0,0,0,.25);
     }
+    .rurera_interactive_elements button.btn.btn-secondary {
+        background-color: #6c757d;
+    }
+    .rurera_interactive_elements button.btn {
+        box-shadow: none;
+    }
 </style>
 <!-- MathJax (SVG output) -->
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
