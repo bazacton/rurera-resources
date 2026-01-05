@@ -2274,6 +2274,14 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .question-explaination h5 {
     font-weight: 600;
 }
+.question-explaination ol,
+.question-explaination ul {
+    padding-left: 20px;
+}
+.question-explaination li {
+    list-style: auto;
+    margin: 0 0 10px;
+}
 .review-msg-box textarea {
     background-color: inherit;
     border: 0;
