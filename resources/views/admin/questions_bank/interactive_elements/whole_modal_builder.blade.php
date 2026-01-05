@@ -202,11 +202,14 @@
                                         <span class="tiny font-weight-bold">Stage</span>
                                         <span id="stageDimText" class="tiny ml-2">H:400 × W:600</span>
                                     </div>
-                                    <select id="stageWidthPreset" class="form-control form-control-sm" style="width:140px;">
-                                        <option value="400">W:400</option>
-                                        <option value="600" selected>W:600</option>
-                                        <option value="800">W:800</option>
-                                    </select>
+                                    <div class="select-holder">
+                                        <select id="stageWidthPreset" class="form-control form-control-sm" style="width:140px;">
+                                            <option value="400">W:400</option>
+                                            <option value="600" selected>W:600</option>
+                                            <option value="800">W:800</option>
+                                        </select>
+                                    </div>
+                                    
                                     <div class="custom-control custom-switch ml-3">
                                         <input type="checkbox" class="custom-control-input" id="toggleGrid">
                                         <label class="custom-control-label tiny" for="toggleGrid">Grid</label>
