@@ -114,7 +114,7 @@
 
     /* Bottom controls */
     .bottomBar{
-        position:sticky; bottom:0; z-index:5;
+        position:relative; bottom:0; z-index:5;
         padding:12px 14px;
         border-top:1px solid rgba(0,0,0,.08);
         background:rgba(255,255,255,.92);
