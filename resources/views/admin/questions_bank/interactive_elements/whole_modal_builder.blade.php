@@ -346,11 +346,14 @@
                                             </div>
                                             <div class="d-flex mt-2">
                                                 <input id="defBorderW" type="range" min="0" max="10" step="1" value="3" class="mr-2" style="flex:1;">
-                                                <select id="defBorderStyle" class="form-control form-control-sm" style="width:120px;">
-                                                    <option value="solid" selected>Solid</option>
-                                                    <option value="dashed">Dashed</option>
-                                                    <option value="dotted">Dotted</option>
-                                                </select>
+                                                <div class="select-holder">
+                                                    <select id="defBorderStyle" class="form-control form-control-sm" style="width:120px;">
+                                                        <option value="solid" selected>Solid</option>
+                                                        <option value="dashed">Dashed</option>
+                                                        <option value="dotted">Dotted</option>
+                                                    </select>
+                                                </div>
+                                                
                                             </div>
                                         </div>
 
