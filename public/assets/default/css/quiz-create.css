@@ -1262,7 +1262,6 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .question-layout .question-review-required {margin-left: 10px;margin-bottom: 20px;}
 .questions-total-holder .question-dev-details {color: #adabab; font-size: 15px;}
 .question-details li span {
-    color: #adabab;
     font-size: 14px;
     text-align: right;
     width: calc(100% - 85px);
