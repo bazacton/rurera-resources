@@ -1339,4 +1339,7 @@ $(".eq-summernote-editor1").summernote({
         }
     }
 });
+$('.eq-summernote-editor').next('.note-editor')
+    .find('.note-editable')
+    .trigger('input');
 </script>
