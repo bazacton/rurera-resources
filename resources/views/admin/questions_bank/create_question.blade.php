@@ -138,7 +138,6 @@
         display: inline-block;
         padding: 2px 6px;
         border-radius: 4px;
-        background: #f4f6f8;
         cursor: pointer;
         user-select: all; /* important for copy */
     }
