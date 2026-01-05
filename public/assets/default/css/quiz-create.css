@@ -2435,8 +2435,12 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 
 .cloud_text_element .cloud_avatar {
+    text-align: center;
+}
+.cloud_text_element .cloud_avatar img {
     height: 50px;
     width: 50px;
+    object-fit: contain;
 }
 .cloud_nner_text {
     position: relative;
@@ -2445,7 +2449,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
-    width: calc(100% - 120px);
+    width: calc(100% - 150px);
     padding: 15px 30px;
     border: 2px solid #ddd;
     min-height: 140px;
@@ -2453,6 +2457,16 @@ body:has(.type-practice.type-sats.preview-question-area) {
     align-items: center;
     flex-wrap: wrap;
     font-size: 16px;
+}
+.avatar-label {
+    border: 2px solid #ddd;
+    padding: 5px 10px;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 8px;
+    line-height: normal;
+    max-width: 100px;
 }
 .cloud_nner_text p {
     margin: 0;
