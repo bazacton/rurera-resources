@@ -249,7 +249,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-7">
+                                <div class="col-lg-12">
                                     <div class="row">
                                         <div class="col-md-4 mt-2">
                                             <div class="rangeTitle"><div class="tiny">Node size</div><div class="val"><span id="vNodeSize">110</span>px</div></div>
@@ -331,7 +331,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-5 mt-2">
+                                <div class="col-lg-5 mt-2 rurera-hide">
                                     <div class="small font-weight-bold mb-1">Save / load</div>
                                     <div class="mb-2">
                                         <button id="btnSaveJson" class="btn btn-primary btn-sm">Save JSON</button>
