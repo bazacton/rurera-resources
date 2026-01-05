@@ -2135,6 +2135,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border-radius: 5px 5px 0 0;
     border-bottom: 0;
 }
+.review-question-holder .question-right-header h3 {
+    margin-bottom: 0;
+}
 .question-detail-holder {
     border: 1px solid #ddd;
     border-radius: 5px;
