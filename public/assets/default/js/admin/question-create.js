@@ -11303,7 +11303,7 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
         container.style.position = 'absolute';
         container.style.left = '-9999px';
 
-        // ✅ CASE 1: Plain LaTeX string (no HTML tags)
+        // ✅ If plain LaTeX string is passed, wrap it
         if (typeof html === 'string' && !html.includes('<')) {
             html = `
                 <span class="math-equation" data-equation="${html}">
@@ -11317,11 +11317,18 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
 
         // STEP 1: Prepare LaTeX
         container.querySelectorAll('.math-equation').forEach(el => {
+
             let latex = el.getAttribute('data-equation') || el.textContent;
+
+            // ✅ Normalize unsupported / risky commands
+            latex = latex
+                .replace(/\\dfrac/g, '\\frac')
+                .replace(/\\tfrac/g, '\\frac');
 
             // Replace -input_1- → INPUT1
             latex = latex.replace(/-input_(\d+)-/g, 'INPUT$1');
 
+            // Wrap for MathJax inline rendering
             el.innerHTML = '\\(' + latex + '\\)';
         });
 
