@@ -403,7 +403,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     var btnTop = document.getElementById('btn-top');       // Scroll Down (step)
     var btnBottom = document.getElementById('btn-bottom'); // Scroll Up (full)
 
-    var SCROLL_AMOUNT = 200;
+    var SCROLL_AMOUNT = 50;
 
     function updateScrollState() {
         var contentHeight = container.scrollHeight;
