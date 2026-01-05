@@ -304,32 +304,41 @@
 
                                         <div class="col-md-4 mt-2">
                                             <div class="tiny mb-1">Line type</div>
-                                            <select id="lineDash" class="form-control form-control-sm">
-                                                <option value="none" selected>Solid</option>
-                                                <option value="dashed">Dashed</option>
-                                                <option value="dotted">Dotted</option>
-                                            </select>
+                                            <div class="select-holder">
+                                                <select id="lineDash" class="form-control form-control-sm">
+                                                    <option value="none" selected>Solid</option>
+                                                    <option value="dashed">Dashed</option>
+                                                    <option value="dotted">Dotted</option>
+                                                </select>
+                                            </div>
+                                            
                                         </div>
 
                                         <div class="col-md-4 mt-2">
                                             <div class="tiny mb-1">Arrows</div>
-                                            <select id="arrowMode" class="form-control form-control-sm">
-                                                <option value="none">None</option>
-                                                <option value="start">Start</option>
-                                                <option value="end" selected>End</option>
-                                                <option value="both">Both</option>
-                                            </select>
+                                            <div class="select-holder">
+                                                <select id="arrowMode" class="form-control form-control-sm">
+                                                    <option value="none">None</option>
+                                                    <option value="start">Start</option>
+                                                    <option value="end" selected>End</option>
+                                                    <option value="both">Both</option>
+                                                </select>
+                                            </div>
+                                            
                                         </div>
 
                                         <div class="col-md-4 mt-2">
                                             <div class="tiny mb-1">Arrow style</div>
-                                            <select id="arrowStyle" class="form-control form-control-sm">
-                                                <option value="triangle" selected>Triangle</option>
-                                                <option value="wide">Wide</option>
-                                                <option value="chevron">Chevron</option>
-                                                <option value="diamond">Diamond</option>
-                                                <option value="circle">Circle</option>
-                                            </select>
+                                            <div class="select-holder">
+                                                <select id="arrowStyle" class="form-control form-control-sm">
+                                                    <option value="triangle" selected>Triangle</option>
+                                                    <option value="wide">Wide</option>
+                                                    <option value="chevron">Chevron</option>
+                                                    <option value="diamond">Diamond</option>
+                                                    <option value="circle">Circle</option>
+                                                </select>
+                                            </div>
+                                            
                                         </div>
 
                                         <div class="col-md-6 mt-2">
