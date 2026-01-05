@@ -539,8 +539,7 @@ $rand_id = rand(999,99999);
 												@endif
 												</button>
 
-												@if(auth()->user()->isAdminRole() || auth()->user()->id == 1794)
-                                                @if($is_single == false)
+												@if($is_single == false)
 													<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
 													Delete Bulk
 												</button>
@@ -548,12 +547,11 @@ $rand_id = rand(999,99999);
 												<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question-single btn btn-danger font-16">
 													Delete Single
 												</button>
-                                                @if($is_single == false)
+                                                @if(1 == 2)
 												<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-entire-batch btn btn-danger font-16">
 													Delete Batch
 												</button>
                                                 @endif
-												@endif
 											</div>
 										</div>
 										</div>
