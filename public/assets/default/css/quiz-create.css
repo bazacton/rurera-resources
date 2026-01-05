@@ -317,6 +317,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .question_label .math-equation {background-color: inherit; padding: 0 2px 0 0;}
 .question-area .math-equation mjx-container {
     display: inline-block;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .math-equation br {display: none;}
 /* .question-label span, */
