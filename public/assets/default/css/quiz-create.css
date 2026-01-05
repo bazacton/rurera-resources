@@ -837,6 +837,10 @@ Lms Table Style End
 .rurera-in-row .rurera-in-row {width: 100%;}
 .rurera-in-row .form-field label {
     height: 100%;
+    justify-content: center;
+}
+.rurera-in-row .form-field {
+    min-width: 65px;
 }
 /*.rurera-in-row .field-holder,*/
 /*.rurera-in-row .form-field {width: 31.555%;}*/
