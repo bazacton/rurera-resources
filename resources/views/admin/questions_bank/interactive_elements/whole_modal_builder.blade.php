@@ -48,8 +48,9 @@
         pointer-events: none;
         z-index: 1;
     }
-    .rurera_interactive_elements .select-holder select {
+    .rurera_interactive_elements .select-holder select.form-control {
         appearance: none;
+        height: 31px;
     }
     .iconBtn:active{ transform: translateY(1px); }
     .iconBtn svg{ width:18px; height:18px; }
