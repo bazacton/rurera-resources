@@ -2279,7 +2279,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     padding-left: 20px;
 }
 .question-explaination li {
-    list-style: auto;
+    list-style: inherit;
     margin: 0 0 10px;
 }
 .review-msg-box textarea {
