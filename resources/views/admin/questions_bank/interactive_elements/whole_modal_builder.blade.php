@@ -275,7 +275,9 @@
                                 <div id="stage">
                                     <svg id="wires"></svg>
                                 </div>
-                                <div id="stageResizer" title="Drag to change stage height"></div>
+                                <div id="stageResizer" title="Drag to change stage height">
+                                    <img src="/assets/default/svgs/drag-handle.svg" height="64" width="64" alt="drag-handle">
+                                </div>
                             </div>
                         </div>
 
