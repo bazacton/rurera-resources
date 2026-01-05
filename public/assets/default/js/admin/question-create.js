@@ -6236,9 +6236,8 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         var random_id = Math.floor((Math.random() * 99999) + 1);
                         var class_id = 'rurera-svg-data' + i+'_'+random_id;
 
+                        console.log('multicoisdfsdfsdf00');
                         getSVGFromEquationHTML(rawContent, class_id, false).then(function(htmlWithSVG) {
-                            svgContent = htmlWithSVG;
-                            console.log(htmlWithSVG);
                             //$("."+class_id).html(svgContent);
                         });
                         option = "<input class='editor-field rureraform-checkbox-" + properties["checkbox-size"] + "'  type='checkbox' data-field_id='" + random_id + "' name='field-" + random_id + "' id='field-" + random_id + "-" + j + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["options"][j]["value"]) + "'" + selected + " /><label class='"+class_id+"' for='field-" + random_id + "-" + j + "'>" + label_data + "</label>";
@@ -11303,14 +11302,24 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
         const container = document.createElement('div');
         container.style.position = 'absolute';
         container.style.left = '-9999px';
+
+        // ✅ CASE 1: Plain LaTeX string (no HTML tags)
+        if (typeof html === 'string' && !html.includes('<')) {
+            html = `
+                <span class="math-equation" data-equation="${html}">
+                    ${html}
+                </span>
+            `;
+        }
+
         container.innerHTML = html;
         document.body.appendChild(container);
 
         // STEP 1: Prepare LaTeX
         container.querySelectorAll('.math-equation').forEach(el => {
-            let latex = el.getAttribute('data-equation');
+            let latex = el.getAttribute('data-equation') || el.textContent;
 
-            // Replace -input_1- → INPUT1 (no \text – important!)
+            // Replace -input_1- → INPUT1
             latex = latex.replace(/-input_(\d+)-/g, 'INPUT$1');
 
             el.innerHTML = '\\(' + latex + '\\)';
@@ -11318,70 +11327,6 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
 
         // STEP 2: Render MathJax
         MathJax.typesetPromise([container]).then(() => {
-
-            /*container.querySelectorAll('svg').forEach(svg => {
-
-                const parent = svg.parentElement;
-                parent.style.position = 'relative';
-
-                const svgRect = svg.getBoundingClientRect();
-                const ctm = svg.getScreenCTM();
-
-                svg.querySelectorAll('g[data-latex^="INPUT"]').forEach(group => {
-
-                    const latex = group.getAttribute('data-latex'); // INPUT1
-                    const match = latex.match(/^INPUT(\d+)$/);
-                    if (!match) return;
-
-                    const inputId = match[1];
-
-                    // SVG-space bbox
-                    const bbox = group.getBBox();
-
-                    // Convert top-left SVG point → screen
-                    const pt = svg.createSVGPoint();
-                    pt.x = bbox.x;
-                    pt.y = bbox.y;
-
-                    const screenPt = pt.matrixTransform(ctm);
-
-// Size in screen space
-                    const widthPx  = bbox.width  * ctm.a;
-                    const heightPx = bbox.height * Math.abs(ctm.d);
-
-// Visual centering correction
-                    const visualTopPx = screenPt.y - heightPx * 0.75;
-
-// Convert to %
-                    const leftPct   = ((screenPt.x - svgRect.left) / svgRect.width) * 100;
-                    const topPct    = ((visualTopPx - svgRect.top) / svgRect.height) * 100;
-                    const widthPct  = (widthPx  / svgRect.width) * 100;
-                    const heightPct = (heightPx / svgRect.height) * 100;
-
-                    // Create input
-                    const input = document.createElement('input');
-                    input.type = 'text';
-                    input.name = 'input_' + inputId;
-                    input.className = 'math-input';
-
-                    input.style.position = 'absolute';
-                    input.style.left   = leftPct   + '%';
-                    input.style.top    = topPct    + '%';
-                    input.style.width  = widthPct  + '%';
-                    input.style.height = heightPct + '%';
-
-                    input.style.fontSize = '0.9em';
-                    input.style.textAlign = 'center';
-                    input.style.border = '1px solid #666';
-                    input.style.background = '#fff';
-                    input.style.boxSizing = 'border-box';
-
-                    // Hide MathJax placeholder
-                    group.style.opacity = '0';
-
-                    parent.appendChild(input);
-                });
-            });*/
 
             const result = container.innerHTML;
             document.body.removeChild(container);
