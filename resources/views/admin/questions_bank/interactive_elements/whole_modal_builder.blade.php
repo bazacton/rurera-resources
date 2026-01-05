@@ -727,7 +727,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h6 class="modal-title">Edit shape</h6>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close child-close">&times;</button>
             </div>
 
             <div class="modal-body">
@@ -1837,8 +1837,22 @@
         $(".load-json-btn").click();
     })();
 
+    $(document).on('click', '.child-close', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-$('#editModal').on('hidden.bs.modal', function () {
-    $('body').addClass('modal-open');
-});
+        var $childModal = $(this).closest('.modal');
+
+        // Hide only child modal
+        $childModal.removeClass('show');
+        $childModal.css('display', 'none');
+        $childModal.attr('aria-hidden', 'true');
+
+        // Restore parent modal state
+        $('body').addClass('modal-open');
+    });
+
+    $('#editModal').on('hidden.bs.modal', function () {
+        $('body').addClass('modal-open');
+    });
 </script>
