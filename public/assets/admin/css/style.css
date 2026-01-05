@@ -2174,6 +2174,7 @@ Admin Questions Generator Page Style End
 .similarity-content-tabs:has(#prompts-tab) .nav:has(li .rurera-hide) {display: none;}
 .similarity-content-block ul li {line-height: normal; color: #bbb; font-weight: 600;}
 .similarity-content-block ul li.active-option {text-decoration: underline;}
+.similarity-content-block .note-editable ul {flex-direction: column; align-items: flex-start;}
 .edit-questions-tabs .similarity-content-tabs .form-group {padding: 0; border: 0; background-color: inherit;}
 .edit-questions-tabs .review-form {padding: 20px;border: 1px solid #ddd; background-color: #fff; border-radius: 5px;}
 .topic-parts-block {margin: 0 0 15px;}
