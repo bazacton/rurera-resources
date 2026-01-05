@@ -90,6 +90,7 @@ $rand_id = rand(99,9999);
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     function convertAllMathToSVG() {
+        console.log('convertAllMathToSVG');
         MathJax.startup.promise.then(() => {
 
             /* 1️⃣ math-equation spans */
