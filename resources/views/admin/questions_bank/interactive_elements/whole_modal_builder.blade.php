@@ -15,6 +15,7 @@
         background:#eef1f4;
         border-radius:0;
         overflow:hidden;
+        padding: 2px;
     }
     #stageTopBar{
         position:absolute; left:16px; right:16px; top:14px;
