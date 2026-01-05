@@ -31,6 +31,26 @@
         margin-left:8px;
         user-select:none;
     }
+    .rurera_interactive_elements .select-holder {
+        position: relative;
+    }
+    .rurera_interactive_elements .select-holder:after {
+        content: "";
+        border-bottom: 2px solid #666;
+        border-left: 2px solid #666;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        height: 8px;
+        width: 8px;
+        transform: rotate(-45deg) translateY(-50%);
+        margin-top: -3px;
+        pointer-events: none;
+        z-index: 1;
+    }
+    .rurera_interactive_elements .select-holder select {
+        appearance: none;
+    }
     .iconBtn:active{ transform: translateY(1px); }
     .iconBtn svg{ width:18px; height:18px; }
 
