@@ -157,6 +157,14 @@
     .tiny{ font-size:12px; color: rgba(0,0,0,.68); }
     .rangeTitle{ display:flex; justify-content:space-between; align-items:center; }
     .rangeTitle .val{ font-size:12px; color: rgba(0,0,0,.6); }
+    input[type="range"]::-webkit-slider-thumb {
+        background: var(--primary);
+        cursor: pointer;
+        }
+        input[type="range"]::-moz-range-thumb {
+        background: var(--primary);
+        cursor: pointer;
+    }
 
     textarea.form-control{ font-family: ui-monospace, Menlo, Consolas, monospace; font-size:12px; }
 
