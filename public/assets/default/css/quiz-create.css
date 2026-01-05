@@ -1303,7 +1303,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .show-notifications .question-status-wrong {color: #db3a3a; background-color: #fff4f4; border: 1px solid #db3a3a;}
 .show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
 .show-notifications span[class*="question-status-"] {display: block; margin: 0 0 10px; border-radius: 3px; padding: 8px 10px;}
-.show-notifications .question-solution {color: #666; padding: 10px; background-color: #f1f1f1; border: 1px solid #ddd; border-radius: 3px; margin-top: 10px;}
+.show-notifications .question-solution {margin-top: 10px;}
 .correct-answers-block {margin: 10px 0 15px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px;}
 .correct-answers-block li {display: inline-block; line-height: normal; background-color: #e3ebfc; color: var(--blue); padding: 4px 10px; border-radius: 3px;}
 #question_properties .select2-container--default .select2-selection--multiple {padding-bottom: 4px;}
