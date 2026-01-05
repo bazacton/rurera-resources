@@ -91,8 +91,8 @@
         left:50%;
         bottom:0;
         transform: translateX(-50%);
-        width:110px; height:18px;
-        border-radius:999px;
+        width:80px; height:16px;
+        border-radius:8px;
         background: rgba(0,0,0,.07);
         display:flex; align-items:center; justify-content:center;
         cursor: ns-resize;
