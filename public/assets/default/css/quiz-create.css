@@ -2130,7 +2130,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
     justify-content: space-between;
     padding: 12px 25px;
 }
-.question-detail-holder {
+.question-detail-holder,
+.review-question-holder {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0 0 25px;
