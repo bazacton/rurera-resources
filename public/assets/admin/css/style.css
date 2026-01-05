@@ -2179,7 +2179,8 @@ Admin Questions Generator Page Style End
 .explanation-block-area {
     margin: 0 0 15px;
 }
-.similarity-content-block .question-explain-block ul {
+.similarity-content-block .question-explain-block ul,
+.similarity-content-block .question-explain-block ol {
     padding-left: 20px;
 }
 .question-explain-block li {
