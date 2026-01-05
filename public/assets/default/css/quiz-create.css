@@ -2287,6 +2287,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .question-explaination li {
     list-style: inherit;
     margin: 0 0 10px;
+    font-size: 14px;
 }
 .review-msg-box textarea {
     background-color: inherit;
