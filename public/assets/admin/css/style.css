@@ -1018,7 +1018,11 @@ blockquote .blockquote-footer {margin-top: 10px;}
 .note-editor .note-toolbar .note-style .dropdown-style .dropdown-item blockquote {
     outline: none;
     background-color: inherit;
-    padding: 0;
+    padding: 0 0 0 20px;
+}
+.note-editor .note-toolbar .note-style .dropdown-style .dropdown-item blockquote:before {
+    top: 0;
+    left: 0;
 }
 .note-editor .note-toolbar .note-style .dropdown-style .dropdown-item pre {
     padding: 0;
