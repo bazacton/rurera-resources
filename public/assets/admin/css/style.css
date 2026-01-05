@@ -1708,7 +1708,6 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .assignment-questions-preview .prev-next-controls {margin-top: auto; border-top: 1px solid #eee; padding-top: 30px;}
 .questions-group-select {height: 650px;}
 #glossary_solution .select2-container {z-index: auto !important;}
-.lms-quiz-create ol li {list-style: auto;}
 .lms-quiz-create .add-glossary-modal {margin-top: 10px; display: inline-block;}
 .years-group.populated-data {-webkit-user-select: none; -khtml-user-select: none; -moz-user-select: -moz-none; -o-user-select: none; user-select: none;}
 .years-group.populated-data .form-group img {max-width: 70%; margin-bottom: 15px; object-fit: contain;}
