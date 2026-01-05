@@ -1774,5 +1774,7 @@
     })();
 
 
-
+$('#editModal').on('hidden.bs.modal', function () {
+    $('body').addClass('modal-open');
+});
 </script>
