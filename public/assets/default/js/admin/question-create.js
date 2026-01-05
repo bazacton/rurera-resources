@@ -7321,12 +7321,16 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
 
 
+                        var avatar_label = rureraform_form_elements[i]["avatar_label"];
+                        if(avatar_label != '') {
+                            avatar_label = '<span class="avatar-label">'+avatar_label+'</span>';
+                        }
                         var cloud_color = rureraform_form_elements[i]["cloud_color"];
                         document.documentElement.style.setProperty(
                             '--cloud-br-color',
                             cloud_color
                         );
-                        var cloud_avatar_html = '<span class="cloud_avatar"><img src="/assets/default/svgs/cloud-kids-avatars/'+cloud_avatar+'"></span>';
+                        var cloud_avatar_html = '<span class="cloud_avatar"><img src="/assets/default/svgs/cloud-kids-avatars/'+cloud_avatar+'">'+avatar_label+'</span>';
 
                         var label_data = "<div class='question-label " + label_type + " " + cloud_size + " " + cloud_direction + "'><span class='cloud_text_element'>"+cloud_avatar_html+"<span class='cloud_nner_text' style='background:"+cloud_color+"'>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></span></div>";
 
