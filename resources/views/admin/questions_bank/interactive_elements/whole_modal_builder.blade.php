@@ -89,7 +89,7 @@
     #stageResizer{
         position:absolute;
         left:50%;
-        bottom:6px;
+        bottom:0;
         transform: translateX(-50%);
         width:110px; height:18px;
         border-radius:999px;
