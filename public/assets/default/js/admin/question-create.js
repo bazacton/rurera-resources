@@ -740,12 +740,12 @@ function _rureraform_properties_prepare(_object) {
         return false;
 
     if(type == "whole_modal_builder"){
-        console.log('test');console.log('properties===='+properties);
-        console.log(_object);
-        console.log('testend');
         var json_code = _object.json_code;
-        console.log(json_code);
         $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
+    }
+    if(type == "place_value_chart"){
+        var json_code = _object.json_code;
+        $(".interactive_elements").find('li[data-option="place-value-chart"]').click();
     }
 
     if (type == "settings") {
@@ -771,7 +771,6 @@ function _rureraform_properties_prepare(_object) {
     console.log('properties===='+properties);
 
     if(properties.type == "whole_modal_builder"){
-        console.log(properties);
         var json_code = properties.json_code;
         document.getElementById('jsonBox').value=json_code;
 
@@ -780,6 +779,15 @@ function _rureraform_properties_prepare(_object) {
         $(".insert-whole-modal").attr('data-insert_id', properties.id);
 
         //$("#jsonBox").html(json_code);
+    }
+    if(properties.type == "place_value_chart"){
+        var json_code = properties.json_code;
+        document.getElementById('placeValueJsonBox').value=json_code;
+
+        $(".load-json-btn").click();
+        $(".interactive_elements").find('li[data-option="place-value-chart"]').click();
+        $(".insert-place-value-chart").attr('data-insert_id', properties.id);
+        $(".load-json-btn-place-value-chart").click();
     }
 
     input_fields = rureraform_input_sort();
@@ -6236,12 +6244,10 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         var is_checked = rureraform_form_elements[i]["options"][j]["default"];
                         var is_checked_class = (is_checked == "on")? "active-option" : "";
 
-
                         const rawContent = label_data;
                         var random_id = Math.floor((Math.random() * 99999) + 1);
                         var class_id = 'rurera-svg-data' + i+'_'+random_id;
 
-                        console.log('multicoisdfsdfsdf00');
                         getSVGFromEquationHTML(rawContent, class_id, false).then(function(htmlWithSVG) {
                             //$("."+class_id).html(svgContent);
                         });
@@ -7361,11 +7367,16 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     var label_data = rureraform_form_elements[i]["content"];
                     var json_code = rureraform_form_elements[i]["json_code"];
-                    //$(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
-                    console.log('4444444444444444444444444444');
-
 
                     html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group whole_modal_builder_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
+                    break;
+
+                case "place_value_chart":
+
+                    var label_data = rureraform_form_elements[i]["content"];
+                    var json_code = rureraform_form_elements[i]["json_code"];
+
+                    html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group place_value_chart_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
                     break;
 
 
@@ -11551,6 +11562,7 @@ $(document).on('click', '.interactive_elements li', function () {
         console.log('already showing');
     }else{
         $(".insert-whole-modal").attr('data-insert_id', -1);
+        $(".place-value-chart").attr('data-insert_id', -1);
         $("."+modal_class).modal('show');
     }
 });

@@ -930,6 +930,7 @@ $rand_id = rand(999,99999);
 
 
 @include('admin.questions_bank.interactive_elements.whole_modal_builder')
+@include('admin.questions_bank.interactive_elements.place_value_chart')
 
 
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
@@ -1339,5 +1340,3 @@ $(".eq-summernote-editor1").summernote({
     }
 });
 </script>
-
-
