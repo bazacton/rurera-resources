@@ -2185,6 +2185,7 @@ Admin Questions Generator Page Style End
 }
 .question-explain-block li {
     list-style: inherit;
+    color: #333;
 }
 .edit-questions-tabs .similarity-content-tabs .form-group {padding: 0; border: 0; background-color: inherit;}
 .edit-questions-tabs .review-form {padding: 20px;border: 1px solid #ddd; background-color: #fff; border-radius: 5px;}
