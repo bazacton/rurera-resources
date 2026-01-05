@@ -10,6 +10,11 @@
             $cloud_avatar = isset($elementObj->cloud_avatar)? $elementObj->cloud_avatar : 'boy-svg-2.svg';
             $cloud_avatar = '/assets/default/svgs/cloud-kids-avatars/'.$cloud_avatar;
             @endphp
+        <style>
+            :root {
+                --cloud-br-color: {{$cloud_color}}; /* default value */
+            }
+        </style>
         <div class="question-label {{$label_type}} {{$cloud_size}} {{$cloud_direction}}"><span class="cloud_text_element"><span class="cloud_avatar"><img src="{{$cloud_avatar}}"></span><span class="cloud_nner_text" style="background:{{$cloud_color}}"><svgdata class="rurera-svg-data0_6684">{!! $elementObj->content !!}</svgdata></span></span></div>
     @else
 		<div class="question-label {{$label_type}}"><span>{!! $elementObj->content !!}</span></div>
