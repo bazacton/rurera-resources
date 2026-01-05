@@ -2130,6 +2130,11 @@ body:has(.type-practice.type-sats.preview-question-area) {
     justify-content: space-between;
     padding: 12px 25px;
 }
+.review-question-holder .question-right-header {
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+}
 .question-detail-holder {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -2326,7 +2331,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .form-group:has(.btn-group-toggle) {
     padding: 15px 20px 15px;
     margin: 0;
-    border-radius: 5px 5px 0 0;
+    border-radius:0 0 5px 5px;
     border: 1px solid #ececec;
     border-bottom: 0;
 }
