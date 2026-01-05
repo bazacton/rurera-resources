@@ -13,7 +13,7 @@
         padding-left:16px;
         padding-right:16px;
         background:#eef1f4;
-        border-radius:16px;
+        border-radius:0;
         overflow:hidden;
     }
     #stageTopBar{
