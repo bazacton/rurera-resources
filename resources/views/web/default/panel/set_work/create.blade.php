@@ -1022,14 +1022,14 @@
                                 <label class="custom-switch pl-0">
                                     <input type="checkbox" name="ajax[new][correct_answer_explaination]" id="correct_answer_explaination" value="1" class="custom-switch-input">
                                     <span class="custom-switch-indicator"></span>
-                                    <label class="custom-switch-description mb-0 cursor-pointer" for="correct_answer_explaination">Correct Answer Explaination</label>
+                                    <label class="custom-switch-description mb-0 cursor-pointer" for="correct_answer_explaination">Correct Answer Explanation</label>
                                 </label>
                             </div>
                             <div class="option-field-item mt-20 mb-20">
                                 <label class="custom-switch pl-0">
                                     <input type="checkbox" name="ajax[new][incorrect_answer_explaination]" id="incorrect_answer_explaination" value="1" class="custom-switch-input">
                                     <span class="custom-switch-indicator"></span>
-                                    <label class="custom-switch-description mb-0 cursor-pointer" for="incorrect_answer_explaination">Incorrect Answer Explaination</label>
+                                    <label class="custom-switch-description mb-0 cursor-pointer" for="incorrect_answer_explaination">Incorrect Answer Explanation</label>
                                 </label>
                             </div>
                         </div>
