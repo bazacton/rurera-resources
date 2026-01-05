@@ -87,16 +87,19 @@
     }
 
     #stageResizer{
-        position:absolute;
-        left:50%;
-        bottom:0;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
         transform: translateX(-50%);
-        width:80px; height:16px;
-        border-radius:8px;
-        background: rgba(0,0,0,.07);
-        display:flex; align-items:center; justify-content:center;
+        width: 50px;
+        height: 18px;
+        border-radius: 5px 5px 0 0;
+        background: rgba(0, 0, 0, .05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: ns-resize;
-        user-select:none;
+        user-select: none;
     }
     /* #stageResizer:after{
         content:"";
@@ -105,6 +108,7 @@
     } */
     #stageResizer img {
         width: 30px;
+        filter: invert(87%) sepia(1%) saturate(0%) hue-rotate(12deg) brightness(95%) contrast(95%);
     }
 
     /* Nodes */
