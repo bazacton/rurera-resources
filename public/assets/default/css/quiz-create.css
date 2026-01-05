@@ -896,7 +896,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-admin-popup-title a {display: block; float: right;	font-size: 20px; width: 52px; height: 52px;	color: #202020; text-align: center; text-shadow: none !important; box-shadow: none !important; outline: none !important; border: none !important; margin: 0 0 0 20px !important; padding: 0 !important; transition-property: all; transition-timing-function: ease-in-out;	transition-duration: 300ms;}
 .lms-quiz-create .rureraform-admin-popup-title a i {line-height: 50px;}
 .lms-quiz-create .rureraform-admin-popup-title a:hover {color: #26B99A;}
-.lms-quiz-create .rureraform-admin-popup-content {height: auto; overflow-x: hidden; overflow-y: hidden; background: #ffffff; position: relative; padding: 15px 20px 0;}
+.lms-quiz-create .rureraform-admin-popup-content {height: auto; background: #ffffff; position: relative; padding: 15px 20px 0;}
 .lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar,
 .lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar,
 .lms-quiz-create #question_design .topic-parts-block::-webkit-scrollbar {width: 5px; height: 5px;}
