@@ -2452,6 +2452,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 16px;
 }
 .cloud_nner_text p {
     margin: 0;
