@@ -310,6 +310,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .question_heading span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 1.5rem; outline: none;}
 .question_label > span p {
     margin: 0;
+    font-weight: normal;
 }
 .rureraform-element .example_text {color: gray; border: 1px dashed #ccc; padding: 8px 10px; margin-bottom: 0; border-radius: 5px;}
 .question_label .math-equation {background-color: inherit; padding: 0 2px 0 0;}
