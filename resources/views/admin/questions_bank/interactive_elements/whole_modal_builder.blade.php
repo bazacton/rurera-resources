@@ -8,7 +8,7 @@
     /* Stage */
     #stageFrame{
         position: relative;
-        padding-top:60px;
+        padding-top:70px;
         padding-bottom:50px;
         padding-left:16px;
         padding-right:16px;
