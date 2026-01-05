@@ -1352,6 +1352,7 @@ nav li {
   margin-bottom: 5px !important;
   padding: 0 5px;
   text-align: center;
+  vertical-align: top;
 }
 .login-pad-icons {
   display: flex;

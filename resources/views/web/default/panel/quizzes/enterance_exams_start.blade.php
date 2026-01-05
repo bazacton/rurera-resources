@@ -73,7 +73,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
 
             <div class="justify-content-center row">
-                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
+                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
                         <div class="question-layout-block">
                             <div class="left-content has-bg">

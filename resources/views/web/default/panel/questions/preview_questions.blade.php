@@ -90,106 +90,112 @@ $rand_id = rand(99,9999);
 
                                                     </div>
                                                     <div class="question-right-side">
-                                                        <div class="question-right-header">
-                                                            <p>Question {{$counter}} / {{$questions->count()}}</p>
-                                                            <span class="questions-total-holder d-block">
-                                                                <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
+                                                        <div class="question-detail-holder">
+                                                            <div class="question-right-header">
+                                                                <p>Question {{$counter}} / {{$questions->count()}}</p>
+                                                                <span class="questions-total-holder d-block">
+                                                                    <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
 
-                                                                @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
+                                                                    @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
 
-                                                                    $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
-                                                                @endphp
-                                                                <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
-                                                            </span>
+                                                                        $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
+                                                                    @endphp
+                                                                    <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
+                                                                </span>
+                                                            </div>
+                                                            
+                                                            <ul class="question-details">
+                                                                <li>Category: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</span></li>
+                                                                <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
+                                                                <li>Chapter: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</span></li>
+                                                                <li>Part Item: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</span></li>
+                                                                <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
+                                                            </ul>
                                                         </div>
                                                         
-                                                        <ul class="question-details">
-                                                            <li>Category: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</span></li>
-                                                            <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
-                                                            <li>Chapter: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</span></li>
-                                                            <li>Part Item: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</span></li>
-                                                            <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
-                                                        </ul>
-
-                                                        <br>
-                                                        <h3>Question Review</h3>
-                                                        <form action="javascript:;" method="POST" class="row approve_question_form">
-                                                            <input type="hidden" name="question_id" value="{{$questionObj->id}}">
-                                                            <div class="col-12 col-lg-12">
-                                                                <div class="row">
-                                                                    <div class="col-12 col-md-12">
-                                                                        <div class="form-group">
-
-                                                                            <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
-                                                                                <label class="btn btn-success active">
-                                                                                    <input type="radio" name="question_status" value="Published" autocomplete="off" checked> Publish
-                                                                                </label>
-                                                                                <label class="btn btn-warning">
-                                                                                    <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
-                                                                                </label>
-                                                                                <label class="btn btn-danger">
-                                                                                    <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="row">
-                                                                    <div class="col-12 col-md-12">
-                                                                        <div class="review-msg-box">
+                                                        <div class="review-question-holder">
+                                                            <div class="question-right-header">
+                                                                <h3>Question Review</h3>
+                                                            </div>
+                                                            <form action="javascript:;" method="POST" class="row approve_question_form">
+                                                                <input type="hidden" name="question_id" value="{{$questionObj->id}}">
+                                                                <div class="col-12 col-lg-12">
+                                                                    <div class="row">
+                                                                        <div class="col-12 col-md-12">
                                                                             <div class="form-group">
-                                                                                <div class="input-group">
-                                                                                    <textarea rows="10" name="review_message" required class="form-control">The content has been reviewed and meets the QA standards. It is now approved for publishing.</textarea>
-                                                                                    <div class="review-msg-control">
-                                                                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                                                                    </div>
+
+                                                                                <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
+                                                                                    <label class="btn btn-success active">
+                                                                                        <input type="radio" name="question_status" value="Published" autocomplete="off" checked> Publish
+                                                                                    </label>
+                                                                                    <label class="btn btn-warning">
+                                                                                        <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
+                                                                                    </label>
+                                                                                    <label class="btn btn-danger">
+                                                                                        <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
+                                                                                    </label>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
                                                                     </div>
-                                                                </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-12 col-md-12">
+                                                                            <div class="review-msg-box">
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <textarea rows="10" name="review_message" required class="form-control">The content has been reviewed and meets the QA standards. It is now approved for publishing.</textarea>
+                                                                                        <div class="review-msg-control">
+                                                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
 
 
-                                                                <div class="row questions_logs_block">
-                                                                    <h4>Question Logs</h4>
-                                                                    @if($questionLogs->count() > 0)
-                                                                        <ul class="lms-card-timeline">
+                                                                    <div class="row questions_logs_block">
+                                                                        <h4>Question Logs</h4>
+                                                                        @if($questionLogs->count() > 0)
+                                                                            <ul class="lms-card-timeline">
 
-                                                                            @if( !empty( $questionLogs ))
-                                                                                @foreach($questionLogs as $logObj)
-                                                                                    <li>
-                                                                                        <div class="card">
-                                                                                            <div class="card-body">
-                                                                                                <div class="media">
-                                                                                                    <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
-                                                                                                    <div class="media-body">
-                                                                                                        <div class="d-flex justify-content-between align-items-center lms-card-info">
-                                                                                                            <h5 class="mt-0 mb-1">
-                                                                                                                {{$logObj->user->get_full_name()}}
-                                                                                                                <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
-                                                                                                            </h5>
-                                                                                                            <div class="log_details">
-                                                                                                                <span class="badge mb-2">{{$logObj->action_type}}</span>
+                                                                                @if( !empty( $questionLogs ))
+                                                                                    @foreach($questionLogs as $logObj)
+                                                                                        <li>
+                                                                                            <div class="card">
+                                                                                                <div class="card-body">
+                                                                                                    <div class="media">
+                                                                                                        <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
+                                                                                                        <div class="media-body">
+                                                                                                            <div class="d-flex justify-content-between align-items-center lms-card-info">
+                                                                                                                <h5 class="mt-0 mb-1">
+                                                                                                                    {{$logObj->user->get_full_name()}}
+                                                                                                                    <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                </h5>
+                                                                                                                <div class="log_details">
+                                                                                                                    <span class="badge mb-2">{{$logObj->action_type}}</span>
+                                                                                                                </div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
+                                                                                                    <p class="mb-0">
+                                                                                                        {!! $logObj->log_data !!}
+                                                                                                    </p>
                                                                                                 </div>
-                                                                                                <p class="mb-0">
-                                                                                                    {!! $logObj->log_data !!}
-                                                                                                </p>
                                                                                             </div>
-                                                                                        </div>
-                                                                                    </li>
+                                                                                        </li>
 
-                                                                                @endforeach
-                                                                            @endif
-                                                                        </ul>
-                                                                    @endif
+                                                                                    @endforeach
+                                                                                @endif
+                                                                            </ul>
+                                                                        @endif
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </form>
+                                                            </form>
+                                                        </div>
+                                                        
                                                     </div>
 
                                                     <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

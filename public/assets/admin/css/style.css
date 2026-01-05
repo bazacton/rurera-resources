@@ -1015,6 +1015,18 @@ a.bb {text-decoration: none; border-bottom: 1px solid var(--primary); padding-bo
 blockquote {padding: 20px; padding-left: 40px; font-style: oblique; background-color: #f9f9f9; border-radius: 3px; position: relative; font-family: 'Time new Romans'; font-size: 16px; letter-spacing: .3px;}
 blockquote:before {content: '"'; font-size: 30px; position: absolute; top: 10px; left: 20px; opacity: .2;}
 blockquote .blockquote-footer {margin-top: 10px;}
+.note-editor .note-toolbar .note-style .dropdown-style .dropdown-item blockquote {
+    outline: none;
+    background-color: inherit;
+    padding: 0 0 0 20px;
+}
+.note-editor .note-toolbar .note-style .dropdown-style .dropdown-item blockquote:before {
+    top: 0;
+    left: 0;
+}
+.note-editor .note-toolbar .note-style .dropdown-style .dropdown-item pre {
+    padding: 0;
+}
 .bg-whitesmoke {background-color: #f7f9f9 !important;}
 .ion {font-size: 15px;}
 .fas, .far, .fab, .fal {font-size: 13px;}
@@ -2172,18 +2184,20 @@ Admin Questions Generator Page Style End
 .similarity-content-block-data .card .card-body ul {margin-bottom: 10px;}
 .similarity-content-block ul:has(li .rurera-hide),
 .similarity-content-tabs:has(#prompts-tab) .nav:has(li .rurera-hide) {display: none;}
-.similarity-content-block ul li {line-height: normal; color: #bbb; font-weight: 600;}
+.similarity-content-block ul li {line-height: normal; font-weight: 600;}
 .similarity-content-block ul li.active-option {text-decoration: underline;}
 .similarity-content-block .note-editable ul,
 .similarity-content-block .question-explain-block ul {flex-direction: column; align-items: flex-start;}
 .explanation-block-area {
     margin: 0 0 15px;
 }
-.similarity-content-block .question-explain-block ul {
+.similarity-content-block .question-explain-block ul,
+.similarity-content-block .question-explain-block ol {
     padding-left: 20px;
 }
 .question-explain-block li {
     list-style: inherit;
+    color: #333;
 }
 .edit-questions-tabs .similarity-content-tabs .form-group {padding: 0; border: 0; background-color: inherit;}
 .edit-questions-tabs .review-form {padding: 20px;border: 1px solid #ddd; background-color: #fff; border-radius: 5px;}
@@ -2216,7 +2230,7 @@ Admin Questions Generator Page Style End
 .similarity-tab-data .card .card-header {padding: 15px; background-color: inherit;}
 .similarity-tab-data .card .card-header button {outline: none; text-decoration: none; padding: 0;}
 .similarity-tab-data .card .card-header button .d-flex {align-items: flex-start;}
-.similarity-tab-data .card {border: 1px solid #ddd; border-radius: 6px; overflow: hidden; margin-bottom: 5px;}
+.similarity-tab-data .card {border: 1px solid #ddd; border-radius: 6px; margin-bottom: 5px;}
 .similarity-tab-data h3 {font-size: 18px;}
 .similarity-content-block-data .cards-view-more-btn {border: 0; color: #fff; line-height: normal; outline: none; background-color: #556ee6; border-radius: 3px; height: 32px; padding: 0 12px; font-size: 13px;}
 .similarity-tab-data .lms-element-properties .card .card-header button {padding: 2px 15px;}

@@ -310,6 +310,8 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .question_heading span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 1.5rem; outline: none;}
 .question_label > span p {
     margin: 0;
+    font-weight: normal;
+    font-size: 16px;
 }
 .rureraform-element .example_text {color: gray; border: 1px dashed #ccc; padding: 8px 10px; margin-bottom: 0; border-radius: 5px;}
 .question_label .math-equation {background-color: inherit; padding: 0 2px 0 0;}
@@ -894,7 +896,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-admin-popup-title a {display: block; float: right;	font-size: 20px; width: 52px; height: 52px;	color: #202020; text-align: center; text-shadow: none !important; box-shadow: none !important; outline: none !important; border: none !important; margin: 0 0 0 20px !important; padding: 0 !important; transition-property: all; transition-timing-function: ease-in-out;	transition-duration: 300ms;}
 .lms-quiz-create .rureraform-admin-popup-title a i {line-height: 50px;}
 .lms-quiz-create .rureraform-admin-popup-title a:hover {color: #26B99A;}
-.lms-quiz-create .rureraform-admin-popup-content {height: auto; overflow-x: hidden; overflow-y: hidden; background: #ffffff; position: relative; padding: 15px 20px 0;}
+.lms-quiz-create .rureraform-admin-popup-content {height: auto; background: #ffffff; position: relative; padding: 15px 20px 0;}
 .lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar,
 .lms-quiz-create #question_design .rureraform-admin-popup .rureraform-admin-popup-inner::-webkit-scrollbar,
 .lms-quiz-create #question_design .topic-parts-block::-webkit-scrollbar {width: 5px; height: 5px;}
@@ -1262,7 +1264,6 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .question-layout .question-review-required {margin-left: 10px;margin-bottom: 20px;}
 .questions-total-holder .question-dev-details {color: #adabab; font-size: 15px;}
 .question-details li span {
-    color: #adabab;
     font-size: 14px;
     text-align: right;
     width: calc(100% - 85px);
@@ -1303,8 +1304,18 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .show-notifications {display: inline-block; width: 100%; padding-top: 10px;}
 .show-notifications .question-status-wrong {color: #db3a3a; background-color: #fff4f4; border: 1px solid #db3a3a;}
 .show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
-.show-notifications span {display: block; margin: 0 0 10px; border-radius: 3px; padding: 8px 10px;}
-.show-notifications .question-solution {color: #666; padding: 10px; background-color: #f1f1f1; border: 1px solid #ddd; border-radius: 3px; margin-top: 10px;}
+.show-notifications span[class*="question-status-"] {display: block; margin: 0 0 20px; border-radius: 3px; padding: 8px 10px;}
+.show-notifications .question-explaination {
+    background-color: #f2f2f2;
+    padding: 15px 15px;
+}
+.show-notifications .question-explaination h5 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 25px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 15px;
+}
 .correct-answers-block {margin: 10px 0 15px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px;}
 .correct-answers-block li {display: inline-block; line-height: normal; background-color: #e3ebfc; color: var(--blue); padding: 4px 10px; border-radius: 3px;}
 #question_properties .select2-container--default .select2-selection--multiple {padding-bottom: 4px;}
@@ -2111,8 +2122,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     max-width: 400px;
     z-index: 2;
     overflow: hidden;
-    padding: 0 35px 25px 25px;
-    border-left: 1px solid #ececec;
+    padding: 0 15px 25px 0;
     position: fixed;
     right: 0;
     overflow-y: auto;
@@ -2125,14 +2135,25 @@ body:has(.type-practice.type-sats.preview-question-area) {
     padding: 0;
 }
 .question-right-header {
-    border: 1px solid #ddd;
-    border-left: 0;
+    border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 12px 25px;
-    margin: 0 -25px 0;
+}
+.review-question-holder .question-right-header {
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+}
+.review-question-holder .question-right-header h3 {
+    margin-bottom: 0;
+}
+.question-detail-holder {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 0 25px;
 }
 .question-right-header p {
     font-weight: bold;
@@ -2143,9 +2164,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
     flex-wrap: wrap;
     gap: 15px 0;
     padding: 25px 25px;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    margin: 0 -25px;
 }
 .question-details li {
     border-bottom: 1px solid #ddd;
@@ -2281,6 +2299,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .question-explaination li {
     list-style: inherit;
     margin: 0 0 10px;
+    font-size: 14px;
 }
 .review-msg-box textarea {
     background-color: inherit;
@@ -2328,7 +2347,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .form-group:has(.btn-group-toggle) {
     padding: 15px 20px 15px;
     margin: 0;
-    border-radius: 5px 5px 0 0;
+    border-radius:0 0 5px 5px;
     border: 1px solid #ececec;
     border-bottom: 0;
 }
@@ -2356,7 +2375,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     flex-direction: column;
 }
 .lms-card-timeline li {border: 1px solid #ddd; background-color: #fff; padding: 15px; border-radius: 6px; display: flex; gap: 10px; width: 100%; margin-bottom: 15px; position: relative;}
-.lms-card-timeline li:before {content: ""; position: absolute; left: 35px; top: 100%; height: 100%; width: 2px; background-color: #ddd;}
+.lms-card-timeline li:before {content: ""; position: absolute; left: 35px; top: 100%; height: 50px; width: 2px; background-color: #ddd;}
 .lms-card-timeline li:last-child:before {display: none;}
 
 /* Questions Cloud Style Start */
