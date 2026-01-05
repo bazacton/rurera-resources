@@ -1020,6 +1020,9 @@ blockquote .blockquote-footer {margin-top: 10px;}
     background-color: inherit;
     padding: 0;
 }
+.note-editor .note-toolbar .note-style .dropdown-style .dropdown-item pre {
+    padding: 0;
+}
 .bg-whitesmoke {background-color: #f7f9f9 !important;}
 .ion {font-size: 15px;}
 .fas, .far, .fab, .fal {font-size: 13px;}
