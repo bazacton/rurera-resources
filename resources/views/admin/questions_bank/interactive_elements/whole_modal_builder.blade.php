@@ -53,8 +53,10 @@
         background-image:
             linear-gradient(to right, rgba(0,0,0,.08) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(0,0,0,.08) 1px, transparent 1px);
-        background-size: 26px 30px;
+        background-size: 25px 28px;
         border-radius: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+        margin-right: -1px;
     }
 
     #wires{
