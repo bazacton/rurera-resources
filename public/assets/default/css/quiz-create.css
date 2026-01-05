@@ -1312,7 +1312,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .show-notifications .question-explaination h5 {
     font-weight: 500;
     font-size: 18px;
-    margin: 0 0 15px;
+    margin: 0 0 25px;
     border-bottom: 1px solid #ddd;
     padding: 0 0 15px;
 }
