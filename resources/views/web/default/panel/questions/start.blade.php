@@ -90,14 +90,26 @@ $rand_id = rand(99,9999);
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     function convertAllMathToSVG() {
+        console.log('convertAllMathToSVG');
         MathJax.startup.promise.then(() => {
 
             /* 1️⃣ math-equation spans */
             document.querySelectorAll('.math-equation').forEach(el => {
                 if (el.dataset.converted) return;
 
-                const latex = el.getAttribute('data-equation') || el.textContent.trim();
+                let latex = el.getAttribute('data-equation') || el.textContent.trim();
                 if (!latex) return;
+
+                // ✅ Normalize risky commands
+                latex = latex
+                    .replace(/\\dfrac/g, '\\frac')
+                    .replace(/\\tfrac/g, '\\frac');
+
+                // ✅ Fix missing space after fractions ( \frac{..}{..}by )
+                latex = latex.replace(
+                    /(\\(?:dfrac|frac)\{[^}]+\}\{[^}]+\})([a-zA-Z])/g,
+                    '$1 $2'
+                );
 
                 const wrapper = document.createElement('span');
                 wrapper.innerHTML = `\\(${latex}\\)`;
@@ -112,19 +124,26 @@ $rand_id = rand(99,9999);
                 });
             });
 
-            /* 2️⃣ auto-wrap label math */
+            /* 2️⃣ auto-wrap label math (STRICT detection) */
             document.querySelectorAll('.rureraform-cr-container-medium label')
                 .forEach(label => {
                     if (label.dataset.converted) return;
 
                     const text = label.textContent.trim();
-                    if (!/[a-zA-Z]\s*\^|\{|\}/.test(text)) return;
+
+                    // ✅ Only wrap if it REALLY looks like math
+                    const looksLikeLatex =
+                        /\\[a-zA-Z]+/.test(text) ||
+                        /[_^]/.test(text) ||
+                        /\{[^}]+\}/.test(text);
+
+                    if (!looksLikeLatex) return;
 
                     label.innerHTML = `\\(${text}\\)`;
                     label.dataset.converted = '1';
                 });
 
-            /* 3️⃣ numbers inside .question-layout-block (EXCLUDING labels) */
+            /* 3️⃣ numbers inside .question-layout-block (excluding labels) */
             document.querySelectorAll('.question-layout-block').forEach(block => {
                 if (block.dataset.numberWrapped) return;
 
@@ -132,7 +151,7 @@ $rand_id = rand(99,9999);
                 block.dataset.numberWrapped = '1';
             });
 
-            /* 4️⃣ typeset */
+            /* 4️⃣ Final typeset */
             MathJax.typesetPromise();
         });
     }
