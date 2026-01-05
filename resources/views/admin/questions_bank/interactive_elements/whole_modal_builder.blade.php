@@ -98,10 +98,13 @@
         cursor: ns-resize;
         user-select:none;
     }
-    #stageResizer:after{
+    /* #stageResizer:after{
         content:"";
         width:44px; height:4px; border-radius:999px;
         background: rgba(0,0,0,.35);
+    } */
+    #stageResizer img {
+        width: 30px;
     }
 
     /* Nodes */
