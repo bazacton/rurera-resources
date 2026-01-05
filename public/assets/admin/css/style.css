@@ -1015,6 +1015,11 @@ a.bb {text-decoration: none; border-bottom: 1px solid var(--primary); padding-bo
 blockquote {padding: 20px; padding-left: 40px; font-style: oblique; background-color: #f9f9f9; border-radius: 3px; position: relative; font-family: 'Time new Romans'; font-size: 16px; letter-spacing: .3px;}
 blockquote:before {content: '"'; font-size: 30px; position: absolute; top: 10px; left: 20px; opacity: .2;}
 blockquote .blockquote-footer {margin-top: 10px;}
+.note-editor .note-toolbar .note-style .dropdown-style blockquote {
+    outline: none;
+    background-color: inherit;
+    padding: 0;
+}
 .bg-whitesmoke {background-color: #f7f9f9 !important;}
 .ion {font-size: 15px;}
 .fas, .far, .fab, .fal {font-size: 13px;}
