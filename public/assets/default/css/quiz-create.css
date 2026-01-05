@@ -2111,7 +2111,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     max-width: 400px;
     z-index: 2;
     overflow: hidden;
-    padding: 0 25px 25px;
+    padding: 0 35px 25px 25px;
     border-left: 1px solid #ececec;
     position: fixed;
     right: 0;
