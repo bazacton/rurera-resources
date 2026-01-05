@@ -2350,9 +2350,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
     font-size: 18px;
     margin: 0 0 15px;
 }
-.preview-question-area .question-layout.row {
-    margin: 0;
-}
 .preview-question-area .question-layout-block {
     height: 100vh;
     display: flex;
