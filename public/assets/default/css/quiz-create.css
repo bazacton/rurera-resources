@@ -314,12 +314,17 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
     font-size: 16px;
 }
 .rureraform-element .example_text {color: gray; border: 1px dashed #ccc; padding: 8px 10px; margin-bottom: 0; border-radius: 5px;}
-.question_label .math-equation {background-color: inherit; padding: 0 2px 0 0;}
+.question_label .math-equation {background-color: inherit; padding: 10px 2px 0 0;}
 .question-area .math-equation mjx-container {
     display: inline-block;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
+}
+.question-explaination {
+    background-color: #f2f2f2;
+    padding: 15px 15px;
+    border-radius: 5px;
 }
 .math-equation br {display: none;}
 /* .question-label span, */
