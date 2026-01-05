@@ -2111,7 +2111,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     max-width: 400px;
     z-index: 2;
     overflow: hidden;
-    padding: 0 25px 25px;
+    padding: 0 35px 25px 25px;
     border-left: 1px solid #ececec;
     position: fixed;
     right: 0;
@@ -2502,7 +2502,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     position: absolute;
     width: 0;
     height: 0;
-    left: -42px;
+    left: -40px;
     right: auto;
     top: 50%;
     border: 20px solid;
@@ -2514,7 +2514,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     position: absolute;
     width: 0;
     height: 0;
-    left: -40px;
+    left: -38px;
     top: 50%;
     border: 20px solid;
     border-color: transparent var(--cloud-br-color) transparent transparent;
@@ -2600,7 +2600,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     position: absolute;
     width: 0;
     height: 0;
-    right: -42px;
+    right: -40px;
     top: 50%;
     border: 20px solid;
     border-color: transparent transparent transparent #ddd;
@@ -2611,7 +2611,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     position: absolute;
     width: 0;
     height: 0;
-    right: -40px;
+    right: -38px;
     top: 50%;
     border: 20px solid;
     border-color: transparent transparent transparent var(--cloud-br-color);
