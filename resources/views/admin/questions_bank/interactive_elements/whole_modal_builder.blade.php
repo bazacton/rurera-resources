@@ -421,10 +421,13 @@
 
                                     <div class="form-group col-md-6">
                                         <label class="tiny">Shape</label>
-                                        <select id="mShape" class="form-control form-control-sm">
-                                            <option value="circle">Circle</option>
-                                            <option value="rect">Rectangle</option>
-                                        </select>
+                                        <div class="select-holder">
+                                            <select id="mShape" class="form-control form-control-sm">
+                                                <option value="circle">Circle</option>
+                                                <option value="rect">Rectangle</option>
+                                            </select>
+                                        </div>
+                                        
 
                                         <div class="custom-control custom-checkbox mt-2">
                                             <input type="checkbox" class="custom-control-input" id="mLocked">
@@ -456,11 +459,14 @@
 
                                     <div class="form-group col-md-4">
                                         <label class="tiny">Border style</label>
-                                        <select id="mBorderStyle" class="form-control form-control-sm">
-                                            <option value="solid" selected>Solid</option>
-                                            <option value="dashed">Dashed</option>
-                                            <option value="dotted">Dotted</option>
-                                        </select>
+                                        <div class="select-holder">
+                                            <select id="mBorderStyle" class="form-control form-control-sm">
+                                                <option value="solid" selected>Solid</option>
+                                                <option value="dashed">Dashed</option>
+                                                <option value="dotted">Dotted</option>
+                                            </select>
+                                        </div>
+                                        
                                         <div class="tiny mt-2 text-muted">Use border width 0 for no border</div>
                                     </div>
 
