@@ -450,6 +450,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 </script>
 <script>
     function wrapRawLatex() {
+        console.log('wrapRawLatex');
         const latexPattern = /(\\dfrac\{[^}]+\}\{[^}]+\}|\\frac\{[^}]+\}\{[^}]+\}|\\sqrt(\[[^\]]+\])?\{[^}]+\})/g;
 
         document.querySelectorAll('*:not(script):not(style)').forEach(el => {
