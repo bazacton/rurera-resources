@@ -72,7 +72,7 @@ $rand_id = rand(99,9999);
                                                                 <span class="quiz-incorrects">0</span>
                                                             </div>
                                                         </div> -->
-												<div class="question-layout row disabled-div">
+												<div class="question-layout row">
 													{!! $question_layout !!}
 												</div>
 
