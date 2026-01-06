@@ -555,29 +555,24 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 <script>
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-    function smoothText(el, value) {
-    if (el.textContent === value) return;
-
-    setTimeout(function tick() {
-        updateTimer();
-        setTimeout(tick, 1000);
-        }, 1000);
-    }
-
-    function updateTimer() {
+  function updateTimer() {
     if (totalSeconds <= 0) return;
 
     totalSeconds--;
 
-    const h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
-    const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
-    const s = String(totalSeconds % 60).padStart(2, "0");
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
 
-    smoothText(document.getElementById("hh"), h);
-    smoothText(document.getElementById("mm"), m);
-    smoothText(document.getElementById("ss"), s);
-    }
+    document.getElementById("hh").textContent = String(h).padStart(2, "0");
+    document.getElementById("mm").textContent = String(m).padStart(2, "0");
+    document.getElementById("ss").textContent = String(s).padStart(2, "0");
+  }
 
-    setInterval(updateTimer, 1000);
+  // ✔ Accurate 1-second timer (NO setInterval)
+  setTimeout(function tick() {
+    updateTimer();
+    setTimeout(tick, 1000);
+  }, 1000);
 </script>
 
