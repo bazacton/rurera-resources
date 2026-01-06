@@ -552,6 +552,13 @@ $rand_id = rand(999,99999);
 													Delete Batch
 												</button>
                                                 @endif
+                                                <button type="button" onclick="window.open('/panel/questions/{{isset( $questionObj->id )? $questionObj->id : 0 }}/start', '_blank')" data-status="" class="btn btn-primary font-16">
+                                                    View Question
+                                                </button>
+
+                                                <button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="duplicate-question btn btn-success font-16">
+                                                    Duplicate Question
+                                                </button>
 											</div>
 										</div>
 										</div>
