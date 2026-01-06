@@ -650,7 +650,7 @@ $rand_id = rand(999,99999);
 																				<div class="media">
 																					<img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
 																					<div class="media-body">
-																						<div class="d-flex justify-content-between align-items-center">
+																						<div class="d-flex justify-content-between align-items-center lms-card-info">
 																							<h5 class="mt-0 mb-1">
 																								{{$logObj->user->get_full_name()}}
 																								<small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
