@@ -5,7 +5,7 @@
 
 @endphp
 
-
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
@@ -109,13 +109,12 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div> -->
                         <div class="quiz-time-bar">
                             <div class="timer-wrap">
-                                <span class="timer-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-
+                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
                                 <div class="time-box"><span id="hh">00</span></div>
                                 <span class="colon">:</span>
                                 <div class="time-box"><span id="mm">05</span></div>
                                 <span class="colon">:</span>
-                                <div class="time-box"><span id="ss">15</span></div> 
+                                <div class="time-box"><span id="ss">15</span></div>
                             </div>
                             <span class="coin-numbers">
                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
@@ -553,30 +552,43 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-  function updateTimer() {
+  function updateTime(el, value) {
+    const current = el.textContent;
+    if (current === value) return;
+
+    const next = document.createElement("span");
+    next.textContent = value;
+    next.style.transform = "translateY(32px)";
+
+    el.parentElement.appendChild(next);
+
+    requestAnimationFrame(() => {
+      el.style.transform = "translateY(-32px)";
+      next.style.transform = "translateY(0)";
+    });
+
+    setTimeout(() => {
+      el.parentElement.removeChild(el);
+      next.id = el.id;
+    }, 400);
+  }
+
+  function tick() {
     if (totalSeconds <= 0) return;
 
     totalSeconds--;
 
-    const h = Math.floor(totalSeconds / 3600);
-    const m = Math.floor((totalSeconds % 3600) / 60);
-    const s = totalSeconds % 60;
+    let h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    let m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+    let s = String(totalSeconds % 60).padStart(2, "0");
 
-    document.getElementById("hh").textContent = String(h).padStart(2, "0");
-    document.getElementById("mm").textContent = String(m).padStart(2, "0");
-    document.getElementById("ss").textContent = String(s).padStart(2, "0");
+    updateTime(document.getElementById("hh"), h);
+    updateTime(document.getElementById("mm"), m);
+    updateTime(document.getElementById("ss"), s);
   }
 
-  // Accurate 1-second timer (no setInterval)
-  setTimeout(function tick() {
-    updateTimer();
-    setTimeout(tick, 1000);
-  }, 1000);
-
-});
+  setInterval(tick, 1000);
 </script>
 
