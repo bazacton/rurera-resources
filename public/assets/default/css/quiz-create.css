@@ -2556,7 +2556,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     left: 100%;
     margin-left: -12px;
     top: 10px;
-    transform: rotate(-5deg);
+    transform: rotate(-20deg);
 }
 /* Cloud Right Top End */
 
