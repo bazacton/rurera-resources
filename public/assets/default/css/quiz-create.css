@@ -1360,6 +1360,13 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .numeric-list-style > .option-group:before {content: counter(listStyle); position:absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 0; color: #999; margin-top: -12px; z-index: 1; display: inline-flex; justify-content: center; align-items: center;}
 .numeric-list-style .form-field label {padding-left: 45px;}
 .numeric-list-style > .correct.form-field:before {color: #fff;}
+
+.numeric-list-style > .active-option.field-holder:before,
+.numeric-list-style > .active-option.form-field:before,
+.numeric-list-style > .active-option.option-group:before {
+    border-color: #6eb37d;
+    color: #4D8F5B;
+}
 /*Quistions Type numeric-list style End*/
 
 /*Quistions Type numeric-list with image-top style Start*/
