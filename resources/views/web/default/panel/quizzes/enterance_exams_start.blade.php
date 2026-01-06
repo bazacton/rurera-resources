@@ -553,6 +553,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     });
 </script>
 <script>
+$(document).ready(function () {
   // Set countdown time (HH, MM, SS)
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
@@ -571,5 +572,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
   }
 
   setInterval(updateTimer, 1000);
+  });
 </script>
 
