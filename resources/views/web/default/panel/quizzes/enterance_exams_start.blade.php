@@ -124,7 +124,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div>
                         <div class="question-counts">
                             <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                            <span>8 of 20</span>
+                            <span>Question 8 of 20</span>
                         </div>
 
                         @php $total_questions = 10; @endphp
