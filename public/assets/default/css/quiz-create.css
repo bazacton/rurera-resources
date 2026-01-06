@@ -1307,7 +1307,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .rureraform-element:has(select),
 .rureraform-element:has(.input-holder.input_box) {line-height: 46px;}
 .question-layout .rureraform-element:has(select ~ select) {line-height: 40px;}
-.rureraform-builder .quiz-group ol {padding-left: 20px;}
+.rureraform-builder .quiz-group ol,
+.quiz-group ol {padding-left: 20px;}
 .quiz-group ol li {margin-top: 15px; list-style: inherit;}
 .learning-page .learning-content {height: calc(100vh - 105px);}
 .question_hint {font-style: italic; color: #999; display: block; line-height: 24px; margin-top: 10px;}
