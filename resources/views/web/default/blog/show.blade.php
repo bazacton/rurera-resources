@@ -23,6 +23,10 @@
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
                     <div class="post-show pb-0 pr-50">
+                        <div class="post-image">
+                            <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
+                        </div>
+
                         {!! nl2br($post->content) !!}
                     </div>
                     {{-- post Comments --}}
@@ -34,7 +38,7 @@
                         ])
                     @endif
                     {{-- ./ post Comments --}}
-                    
+
                     <div class="row mb-50">
                         <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0">
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
