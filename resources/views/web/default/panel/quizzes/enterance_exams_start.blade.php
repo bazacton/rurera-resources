@@ -5,7 +5,7 @@
 
 @endphp
 
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+
 
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
