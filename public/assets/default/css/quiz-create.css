@@ -1624,7 +1624,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 }
 .quiz-time-bar .coin-numbers span {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 .timer-wrap {
   display: flex;
@@ -1632,10 +1632,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
   gap: 6px;
 }
 .time-label {
-  margin-right: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
 }
 .time-label img {
     height: 15px;
@@ -1648,11 +1649,10 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
   background: #000;
   color: #fff;
   text-align: center;
-  border-radius: 4px;
-  font-weight: bold;
+  border-radius: 4px; 
+  font-weight: 500;
   font-size: 14px;
 }
-
 .colon {
   font-weight: bold;
   color: #000;
