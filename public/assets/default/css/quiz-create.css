@@ -2555,6 +2555,16 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 /* Cloud Right Top End */
 
+/* Cloud Right Center Start */
+.right_middle .cloud_nner_text:before {
+    left: 100%;
+    clip-path: polygon(0% 0, 0% 100%, 100% 50%);
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+/* Cloud Right Center End */
+
 .avatar-label {
     border: 2px solid #ddd;
     padding: 5px 10px;
