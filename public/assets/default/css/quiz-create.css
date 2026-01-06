@@ -1308,11 +1308,10 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .rureraform-element:has(.input-holder.input_box) {line-height: 46px;}
 .question-layout .rureraform-element:has(select ~ select) {line-height: 40px;}
 .rureraform-builder .quiz-group ol,
-.quiz-group ol, .quiz-group ul {padding-left: 20px;}
+.quiz-group ol, .quiz-group ul {padding-left: 20px; margin-bottom: 15px;}
 .quiz-group ol li {margin-top: 15px; list-style: inherit; width: 100%;}
 .question_label ul {
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 .quiz-group ul li {list-style: inherit; width: 100%;}
 .learning-page .learning-content {height: calc(100vh - 105px);}
