@@ -519,6 +519,12 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
             document.querySelectorAll('.question-layout-block').forEach(block => {
                 if (block.dataset.numberWrapped) return;
 
+                // 🔥 If block contains ANY LaTeX, skip number wrapping entirely
+                if (/[\\{}_^]/.test(block.textContent)) {
+                    block.dataset.numberWrapped = '1';
+                    return;
+                }
+
                 wrapNumbersInTextNodes(block);
                 block.dataset.numberWrapped = '1';
             });
