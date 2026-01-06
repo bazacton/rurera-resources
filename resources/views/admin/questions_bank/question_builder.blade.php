@@ -635,7 +635,6 @@ $rand_id = rand(999,99999);
 
 												</div>
                                         @endif
-												<h3>Activity Wall</h3>
 											<div class="lms-dashboard-card">
 
 												<div class="row questions_logs_block">
