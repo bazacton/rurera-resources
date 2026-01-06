@@ -1637,11 +1637,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
   margin-right: 6px;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 .time-label img {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     object-fit: contain;
 }
 .time-box {
