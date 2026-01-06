@@ -92,20 +92,34 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
 
-                        <div class="quiz-status-bar">
+                        <!-- <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
                                 <div class="quiz-questions-bar">
                                     <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
                                     <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
                                 </div>
                                 <span class="coin-numbers">
-								<img src="/assets/default/img/quests-coin.png" alt="">
-								<span class="total-earned-coins">0</span>
-							</span>
+                                    <img src="/assets/default/img/quests-coin.png" alt="">
+                                    <span class="total-earned-coins">0</span>
+                                </span>
                             </div>
                             <div class="quiz-timer">
                                 <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
                             </div>
+                        </div> -->
+                        <div class="quiz-time-bar">
+                            <div class="timer-wrap">
+                                <span class="label">Time left:</span>
+                                <div class="time-box" id="hh">00</div>
+                                <span class="colon">:</span>
+                                <div class="time-box" id="mm">05</div>
+                                <span class="colon">:</span>
+                                <div class="time-box" id="ss">15</div>
+                            </div>
+                            <span class="coin-numbers">
+                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                <span class="total-earned-coins">1</span>
+                            </span>
                         </div>
 
 
