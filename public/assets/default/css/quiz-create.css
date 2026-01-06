@@ -2110,6 +2110,21 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow-y: auto;
     padding-right: 15px;
 }
+.preview-question-area .question-area-block::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}
+.preview-question-area .question-area-block::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-foreground);
+  background: transparent;
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.preview-question-area .question-area-block::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+  background: transparent;
+}
 .preview-question-area .justify-content-center > .mt-50 {
     margin-top: 0 !important;
 }
