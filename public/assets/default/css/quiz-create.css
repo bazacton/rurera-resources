@@ -312,7 +312,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
     margin: 0;
 }
 .rureraform-element .example_text {color: gray; border: 1px dashed #ccc; padding: 8px 10px; margin-bottom: 0; border-radius: 5px;}
-.question_label .math-equation {background-color: inherit; padding: 10px 2px 0 0; display: inline-block;}
+.question_label .math-equation {background-color: inherit; display: inline-block;}
 .question-area .math-equation mjx-container {
     display: inline-block;
     margin: 0;
