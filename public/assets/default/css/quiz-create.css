@@ -2575,27 +2575,28 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 
 /* Right Bottom Triangle */
-.right_bottom .cloud_nner_text:before {
+.left_bottom .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    right: -18px;
-    bottom: -8px;
-    border: 26px solid;
+    left: -13px;
+    bottom: -3px;
+    border: 18px solid;
     border-color: transparent transparent #ddd;
-    transform: rotate(-120deg);
+    transform: rotate(-58deg);
 }
-.right_bottom .cloud_nner_text:after{
+.left_bottom .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    right: -14px;
-    bottom: -5px;
-    border: 26px solid;
+    left: -10px;
+    top: auto;
+    bottom: 0px;
+    border: 16px solid;
     border-color: transparent transparent var(--cloud-br-color);
-    transform: rotate(-120deg);
+    transform: rotate(-57deg);
 }
 
 /* Right Top triangle */
