@@ -54,6 +54,9 @@
     max-width: 100% !important;
     object-fit: cover;
 }
+.blog-single-post .post-show p {
+    font-size: 16px;
+}
 .blog-single-post .post-show > div {
     line-height: 26px;
 }
