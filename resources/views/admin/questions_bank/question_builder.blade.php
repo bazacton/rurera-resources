@@ -635,41 +635,43 @@ $rand_id = rand(999,99999);
 
 												</div>
                                         @endif
-												<h3>Activity Wall</h3>
-												<div class="lms-dashboard-card">
-													<div class="lms-card-body">
+											<div class="lms-dashboard-card">
+
+												<div class="row questions_logs_block">
+													<h4>Question Logs</h4>
+													@if($questionLogs->count() > 0)
 														<ul class="lms-card-timeline">
-															<li class="lms-card-list active">
-																<div class="lms-card-icons">
-																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
-																</div>
-																<div class="lms-card-info">
-																<h5>Reviewer Demo @ <span class="activity-date">18 Nov 24 | 13:08</span></h5>
-																<p>Status Updated : <span class="activity-status">Improvement required</span></p>
-																<p>Please improve&nbsp;</p>
-																</div>
-															</li>
-															<li class="lms-card-list active">
-																<div class="lms-card-icons">
-																	<img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
-																</div>
-																<div class="lms-card-info">
-																	<h5>Javy @<span class="activity-date">18 Nov 24 | 13:02</span></h5>
-																	<p>Updated = Submit for review</p>
-																</div>
-															</li>
+
+															@if( !empty( $questionLogs ))
+																@foreach($questionLogs as $logObj)
+																	<div class="card mb-3">
+																		<div class="card-body">
+																			<div class="media">
+																				<img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
+																				<div class="media-body">
+																					<div class="d-flex justify-content-between align-items-center">
+																						<h6 class="mt-0 mb-1">{{$logObj->user->get_full_name()}}</h6>
+																						<div class="log_details">
+																							<small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+																							<span class="badge badge-warning mb-2">{{$logObj->action_type}}</span>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<p class="mb-0">
+																				{!! $logObj->log_data !!}
+																			</p>
+																		</div>
+																	</div>
+
+
+																@endforeach
+															@endif
 														</ul>
-
-														<div class="text-center mt-4">
-															<a class="lms-card-btn" href="#">View More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-																<line x1="5" y1="12" x2="19" y2="12"></line>
-																<polyline points="12 5 19 12 12 19"></polyline>
-																</svg>
-															</a>
-														</div>
-
-													</div>
+													@endif
 												</div>
+
+											</div>
 
 
 											</div>
