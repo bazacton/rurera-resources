@@ -2374,7 +2374,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .question-right-side h3,
 .questions_logs_block h4 {
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 0 15px;
 }
 .preview-question-area .question-layout-block {
