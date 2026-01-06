@@ -400,10 +400,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 </script>
 <script>
     var container = document.querySelector('.question-area-block');
-    var btnTop = document.getElementById('btn-top');       // Scroll Down (step)
-    var btnBottom = document.getElementById('btn-bottom'); // Scroll Up (full)
-
-    var SCROLL_AMOUNT = 50;
+    var btnTop = document.getElementById('btn-top');
+    var btnBottom = document.getElementById('btn-bottom');
 
     function updateScrollState() {
         var contentHeight = container.scrollHeight;
@@ -417,19 +415,19 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
             return;
         }
 
-        // At bottom → show UP button
+        // At bottom → show UP
         if (scrollTop + containerHeight >= contentHeight - 5) {
             btnTop.classList.add('hidden');
             btnBottom.classList.remove('hidden');
         }
-        // Anywhere else → show DOWN button
+        // Else → show DOWN
         else {
             btnTop.classList.remove('hidden');
             btnBottom.classList.add('hidden');
         }
     }
 
-    /* 🔼 Scroll FULL to top */
+    /* 🔼 FULL scroll to top */
     function scrollUp() {
         container.scrollTo({
             top: 0,
@@ -437,10 +435,10 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         });
     }
 
-    /* 🔽 Scroll STEP by STEP */
+    /* 🔽 FULL scroll to bottom */
     function scrollDown() {
-        container.scrollBy({
-            top: SCROLL_AMOUNT,
+        container.scrollTo({
+            top: container.scrollHeight,
             behavior: 'smooth'
         });
     }
@@ -452,6 +450,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     window.addEventListener('resize', updateScrollState);
 
     updateScrollState();
+
 
 </script>
 <script>
