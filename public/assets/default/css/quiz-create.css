@@ -1543,7 +1543,6 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
 .question-layout-block .prev-next-controls {border-top: 2px dashed #ddd; position: fixed; width: 845px; bottom: -50px; left: 50%; transform: translateX(-50%); background-color: #fff; min-height: 100px; padding: 25px 0 25px 15px; z-index: 1;}
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500; margin-left: -15px; margin-right: auto; background-image: none; box-shadow: none;}
-
 .review-btn,
 .prev-btn,
 .next-btn{display: inline-flex; align-items: center; border: 1px solid #b7b7b7; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color:#818894; text-transform: uppercase;}
@@ -1603,6 +1602,34 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .spells-quiz-from .question-submit-btn:hover,
 .question-next-btn:hover {background-color: #bae798;  color: #f5ffec;}
 /*Quiz prev-next-controls Style End*/
+
+/* Quiz Time-Bar Style Start */
+.timer-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Arial, sans-serif;
+}
+.timer-label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 6px;
+}
+.time-box {
+  min-width: 36px;
+  padding: 6px 8px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.colon {
+  font-weight: bold;
+  color: #000;
+}
+/* Quiz Time-Bar Style End */
 
 /*Quiz Layout Input Holder Style Start*/
 .input-holder:empty {display: none;}
