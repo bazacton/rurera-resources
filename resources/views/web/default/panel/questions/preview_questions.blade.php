@@ -77,7 +77,7 @@ $rand_id = rand(99,9999);
 												</div>
 
                                                 @if(ReviewPermission(auth()->user()->id))
-                                                    <div class="question-explaination mt-30">
+                                                    <div class="question-explaination mt-15">
                                                         <h5 class="mb-15 font-16">Explanation:</h5>
                                                         {!! $questionObj->question_solve !!}
                                                     </div>
