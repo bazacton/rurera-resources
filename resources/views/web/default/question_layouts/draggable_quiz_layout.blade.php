@@ -17,7 +17,7 @@ $has_image_class = ($hasImage == 1)? 'lms-radio-img' : '';
 				@if( !isset( $optionObj->label ))
 					@php continue; @endphp
 				@endif
-				<li>111<span class="draggable-option">{{$optionObj->label}}</span></li>
+				<li><span class="draggable-option"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> {{$optionObj->label}}</span></li>
 			@endforeach
 			</ul>
 		@endif
