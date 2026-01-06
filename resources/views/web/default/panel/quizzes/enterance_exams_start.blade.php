@@ -552,22 +552,43 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     });
 </script>
 <script>
-  // Set countdown time (HH, MM, SS)
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-  function updateTimer() {
+  function updateTime(el, value) {
+    const current = el.textContent;
+    if (current === value) return;
+
+    const next = document.createElement("span");
+    next.textContent = value;
+    next.style.transform = "translateY(32px)";
+
+    el.parentElement.appendChild(next);
+
+    requestAnimationFrame(() => {
+      el.style.transform = "translateY(-32px)";
+      next.style.transform = "translateY(0)";
+    });
+
+    setTimeout(() => {
+      el.parentElement.removeChild(el);
+      next.id = el.id;
+    }, 400);
+  }
+
+  function tick() {
     if (totalSeconds <= 0) return;
 
     totalSeconds--;
 
-    let h = Math.floor(totalSeconds / 3600);
-    let m = Math.floor((totalSeconds % 3600) / 60);
-    let s = totalSeconds % 60;
+    let h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    let m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+    let s = String(totalSeconds % 60).padStart(2, "0");
 
-    document.getElementById("hh").textContent = String(h).padStart(2, "0");
-    document.getElementById("mm").textContent = String(m).padStart(2, "0");
-    document.getElementById("ss").textContent = String(s).padStart(2, "0");
+    updateTime(document.getElementById("hh"), h);
+    updateTime(document.getElementById("mm"), m);
+    updateTime(document.getElementById("ss"), s);
   }
 
-  setInterval(updateTimer, 1000);
+  setInterval(tick, 1000);
 </script>
+
