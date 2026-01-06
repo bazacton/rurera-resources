@@ -1604,6 +1604,27 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 /*Quiz prev-next-controls Style End*/
 
 /* Quiz Time-Bar Style Start */
+.quiz-time-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+}
+.quiz-time-bar .coin-numbers {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.quiz-time-bar .coin-numbers img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+.quiz-time-bar .coin-numbers span {
+    font-weight: 600;
+    font-size: 18px;
+}
 .timer-wrap {
   display: flex;
   align-items: center;
@@ -1616,14 +1637,22 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
   margin-right: 6px;
 }
 .time-box {
-  min-width: 36px;
-  padding: 6px 8px;
+  width: 38px;
+  height: 32px;
   background: #000;
   color: #fff;
-  text-align: center;
   border-radius: 4px;
   font-weight: bold;
   font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.time-box span {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  transition: transform 0.4s ease-in-out;
 }
 .colon {
   font-weight: bold;
