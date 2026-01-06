@@ -2473,6 +2473,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     flex-wrap: wrap;
     gap: 0 40px;
     justify-content: center;
+    align-items: anchor-center;
 }
 .small .cloud_text_element {
     width: 50%;
