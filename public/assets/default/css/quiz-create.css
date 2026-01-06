@@ -1945,7 +1945,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     max-width: 100%;
 }
 .question-label .math-equation svg {
-    scale: 0.9;
+    scale: 0.8;
 }
 /**************************************
 Questions Edit Page Fields style End
