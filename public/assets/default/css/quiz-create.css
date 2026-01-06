@@ -1291,7 +1291,7 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
     border-radius: 3px;
 }
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 0;}
-.question-layout .rureraform-col {padding:0 15px 20px !important;}
+.question-layout .rureraform-col {padding:0 15px 30px !important;}
 .rurera-question-block:has(.question-number-holder) .question-layout {display: inline-block;width: 100%;padding-bottom: 0;}
 .rurera-question-block:has(.question-number-holder) .question-layout.row {display: flex; align-items: flex-start !important; width: auto;}
 body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bottom: 130px;}
