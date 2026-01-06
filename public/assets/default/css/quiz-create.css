@@ -1367,7 +1367,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 
 .numeric-list-style > .active-option.field-holder:before,
 .numeric-list-style > .active-option.form-field:before,
-.numeric-list-style > .active-option.option-group:before {
+.numeric-list-style > .active-option.option-group:before,
+
+.numeric-list-style > .active-option.field-holder:hover:before,
+.numeric-list-style > .active-option.form-field:hover:before,
+.numeric-list-style > .active-option.option-group:hover:before{
     border-color: #6eb37d;
     color: #4D8F5B;
 }
