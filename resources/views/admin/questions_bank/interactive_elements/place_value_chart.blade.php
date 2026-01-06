@@ -18,6 +18,7 @@
         --tableScale: 1; /* zoom-based */
     }
 
+    .place_value_chart_element{text-align:center}
     .place-value-chart .app-card{ border-radius:14px; overflow:hidden; box-shadow:0 10px 24px rgba(0,0,0,.08); background:#fff; }
 
     /* Layout (left settings, right preview) */
@@ -484,7 +485,7 @@
 
 
 
-                                    <div class="d-flex flex-wrap justify-content-between pt-2">
+                                    <div class="d-flex flex-wrap justify-content-between pt-2 rurera-hide">
                                         <button id="btnClear" class="btn btn-outline-secondary">Clear</button>
                                         <button id="btnExport" class="btn btn-primary">Download SVG</button>
                                     </div>
@@ -906,7 +907,7 @@
         const userScale = 1;
 
         // Fit-to-stage (only shrink when fixed stage size is chosen)
-        const stageEl = document.getElementById("stage");
+        const stageEl = document.querySelector('.stage');
         const boardEl = document.getElementById("board");
         let fitScale = 1;
 
@@ -925,7 +926,7 @@
         // reserve stage height (after zoom)
         requestAnimationFrame(function(){
             const inner = document.getElementById("innerStage");
-            const stage = document.getElementById("stage");
+            const stage = document.querySelector('.stage');
             if(inner && stage){
                 const rect = inner.getBoundingClientRect();
                 stage.style.height = (rect.height || 0) + "px";
