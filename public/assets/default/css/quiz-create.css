@@ -2488,6 +2488,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
     object-fit: contain;
 }
 .cloud_nner_text {
+    --border: #ddd;
+  --arrow-size: 12px;
     position: relative;
     height: auto;
     background-color: fff;
@@ -2496,13 +2498,90 @@ body:has(.type-practice.type-sats.preview-question-area) {
     -moz-border-radius: 50px;
     width: calc(100% - 150px);
     padding: 15px 30px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--border);
     min-height: 70px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     font-size: 16px;
 }
+
+/* cloud arrow shape style start */
+
+/* shared arrow */
+.cloud_nner_text::before,
+.cloud_nner_text::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+/* ───────── TOP ───────── */
+.left_top .cloud_nner_text::before {
+  bottom: 100%;
+  left: 30px;
+  border-width: 0 var(--arrow-size) var(--arrow-size);
+  border-color: transparent transparent var(--border);
+}
+
+.left_top .cloud_nner_text::after {
+  bottom: calc(100% - 1px);
+  left: 30px;
+  border-width: 0 var(--arrow-size) var(--arrow-size);
+  border-color: transparent transparent var(--bg);
+}
+
+/* ───────── BOTTOM ───────── */
+.arrow-bottom::before {
+  top: 100%;
+  left: 30px;
+  border-width: var(--arrow-size) var(--arrow-size) 0;
+  border-color: var(--border) transparent transparent;
+}
+
+.arrow-bottom::after {
+  top: calc(100% - 1px);
+  left: 30px;
+  border-width: var(--arrow-size) var(--arrow-size) 0;
+  border-color: var(--bg) transparent transparent;
+}
+
+/* ───────── LEFT ───────── */
+.arrow-left::before {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: var(--arrow-size) var(--arrow-size) var(--arrow-size) 0;
+  border-color: transparent var(--border) transparent transparent;
+}
+
+.arrow-left::after {
+  right: calc(100% - 1px);
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: var(--arrow-size) var(--arrow-size) var(--arrow-size) 0;
+  border-color: transparent var(--bg) transparent transparent;
+}
+
+/* ───────── RIGHT ───────── */
+.arrow-right::before {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: var(--arrow-size) 0 var(--arrow-size) var(--arrow-size);
+  border-color: transparent transparent transparent var(--border);
+}
+
+.arrow-right::after {
+  left: calc(100% - 1px);
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: var(--arrow-size) 0 var(--arrow-size) var(--arrow-size);
+  border-color: transparent transparent transparent var(--bg);
+}
+
+/* cloud arrow shape style end */
+
 .avatar-label {
     border: 2px solid #ddd;
     padding: 5px 10px;
