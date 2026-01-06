@@ -1402,7 +1402,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"]:checked ~ label  {padding-left: 45px;}
 .numeric-list-style .lms-radio-select.image-right .field-holder label:before,
 .alphabet-list-style .lms-radio-select.image-right .field-holder label:before {left: 40px;}
-.alphabet-list-style .active-option.form-field:before {
+.alphabet-list-style .active-option.form-field:before,
+.alphabet-list-style .form-field:hover:before {
     border-color: #6eb37d;
     color: #4D8F5B;
 }
