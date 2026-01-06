@@ -554,7 +554,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 </script>
 <script>
 $(document).ready(function () {
-  // Set countdown time (HH, MM, SS)
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
   function updateTimer() {
@@ -562,16 +561,20 @@ $(document).ready(function () {
 
     totalSeconds--;
 
-    let h = Math.floor(totalSeconds / 3600);
-    let m = Math.floor((totalSeconds % 3600) / 60);
-    let s = totalSeconds % 60;
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
 
     document.getElementById("hh").textContent = String(h).padStart(2, "0");
     document.getElementById("mm").textContent = String(m).padStart(2, "0");
     document.getElementById("ss").textContent = String(s).padStart(2, "0");
   }
 
-  setInterval(updateTimer, 1000);
+  // ✔ Accurate 1-second timer (NO setInterval)
+  setTimeout(function tick() {
+    updateTimer();
+    setTimeout(tick, 1000);
+  }, 1000);
   });
 </script>
 
