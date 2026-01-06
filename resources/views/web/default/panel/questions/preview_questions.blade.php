@@ -457,29 +457,19 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
-        // Match any LaTeX command starting with \, with optional [] or {} arguments
-        const latexPattern = /(\\[a-zA-Z]+(\[[^\]]*\])?(\{[^}]*\})*)/g;
-
         document.querySelectorAll('*:not(script):not(style)').forEach(el => {
-            // Skip elements with children
             if (el.children.length > 0) return;
 
             let text = el.textContent;
-
             if (!text) return;
-
-            // Skip already-rendered math
             if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
 
-            // Wrap all matched LaTeX commands
-            if (latexPattern.test(text)) {
-                // Replace each LaTeX command with $$…$$ to ensure MathJax renders it
-                const newHTML = text.replace(latexPattern, match => `$$${match}$$`);
-                el.innerHTML = newHTML;
+            // Wrap the entire text in $$ if it contains a backslash (simple heuristic)
+            if (text.includes('\\')) {
+                el.innerHTML = `$$${text}$$`;
             }
         });
 
-        // Trigger MathJax typesetting
         if (window.MathJax?.typesetPromise) {
             MathJax.typesetClear();
             MathJax.typesetPromise().catch(err => console.error('MathJax error:', err));
