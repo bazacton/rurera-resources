@@ -457,6 +457,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
+        // 1️⃣ Process all regular text nodes
         document.querySelectorAll('*:not(script):not(style)').forEach(el => {
             if (el.children.length > 0) return;
 
@@ -464,12 +465,26 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
             if (!text) return;
             if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
 
-            // Wrap the entire text in $$ if it contains a backslash (simple heuristic)
+            // Wrap the entire text in $$ if it contains a backslash
             if (text.includes('\\')) {
                 el.innerHTML = `$$${text}$$`;
             }
         });
 
+        // 2️⃣ Process all spans with .math-equation
+        document.querySelectorAll('span.math-equation').forEach(span => {
+            // Avoid double conversion
+            if (span.dataset.converted) return;
+
+            let latex = span.getAttribute('data-equation') || span.textContent;
+            if (!latex) return;
+
+            // Wrap in $$ to render via MathJax
+            span.innerHTML = `$$${latex}$$`;
+            span.dataset.converted = 'true'; // mark as converted
+        });
+
+        // 3️⃣ Trigger MathJax typesetting
         if (window.MathJax?.typesetPromise) {
             MathJax.typesetClear();
             MathJax.typesetPromise().catch(err => console.error('MathJax error:', err));
