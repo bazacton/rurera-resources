@@ -1630,32 +1630,18 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: Arial, sans-serif;
 }
-.timer-label {
+.time-label {
   margin-right: 8px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
-.timer-label img {
+.time-label img {
     height: 15px;
     width: 15px;
     object-fit: contain;
 }
-.timer-wrap {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: Arial, sans-serif;
-}
-
-.label {
-  font-size: 14px;
-  color: #333;
-  margin-right: 6px;
-}
-
 .time-box {
   min-width: 36px;
   padding: 6px 8px;
