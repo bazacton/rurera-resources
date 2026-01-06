@@ -645,7 +645,7 @@ $rand_id = rand(999,99999);
 															@if( !empty( $questionLogs ))
 																@foreach($questionLogs as $logObj)
 																	<li>
-																		<div class="card mb-3">
+																		<div class="card">
 																			<div class="card-body">
 																				<div class="media">
 																					<img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
