@@ -109,7 +109,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div> -->
                         <div class="quiz-time-bar">
                             <div class="timer-wrap">
-                                <span class="timer-label"><img src="/assets/default/img/time-past.svg" alt="time-past"> Time left:</span>
+                                <span class="timer-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
                                 <div class="time-box" id="hh">00</div>
                                 <span class="colon">:</span>
