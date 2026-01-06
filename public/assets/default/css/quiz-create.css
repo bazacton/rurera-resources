@@ -2539,8 +2539,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     clip-path: polygon(100% 0, 100% 100%, 0% 100%);
     top: 50%;
     right: 100%;
-    margin-top: -10px;
-    margin-right: -5px;
+    margin-top: -15px;
+    margin-right: -10px;
+    transform: rotate(10deg);
 }
 /* Cloud Left Center End */
 
