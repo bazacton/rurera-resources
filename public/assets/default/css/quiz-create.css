@@ -2105,11 +2105,11 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .preview-question-area {
     padding-right: 400px;
 }
-.preview-question-area .question-area-block {
+/* .preview-question-area .question-area-block {
     overflow: hidden;
     overflow-y: auto;
     padding-right: 15px;
-}
+} */
 .preview-question-area .learning-content > .container {
     max-width: 100%;
 }
