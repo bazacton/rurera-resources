@@ -2318,7 +2318,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .question-explaination li {
     list-style: inherit;
-    margin: 0 0 10px;
+    margin: 0 0 15px;
     font-size: 14px;
 }
 .review-msg-box textarea {
@@ -2467,7 +2467,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
     flex-wrap: wrap;
     gap: 0 40px;
     justify-content: center;
-    align-items: center;
 }
 .small .cloud_text_element {
     width: 50%;
