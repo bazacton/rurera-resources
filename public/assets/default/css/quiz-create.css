@@ -2477,7 +2477,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
     display: flex;
     flex-wrap: wrap;
     gap: 0 40px;
-    justify-content: center;
 }
 .small .cloud_text_element {
     width: 50%;
@@ -2488,7 +2487,12 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .large .cloud_text_element {
     width: 100%;
 }
-
+.rureraform-col-6 .medium .cloud_text_element {
+    width: 90%;
+}
+.rureraform-col-6 .small .cloud_text_element {
+    width: 80%;
+}
 .cloud_text_element .cloud_avatar {
     text-align: center;
 }
