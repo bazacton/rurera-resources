@@ -2209,6 +2209,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     margin-top: auto;
     flex-wrap: wrap;
     user-select: none;
+    pointer-events: none;
 }
 .preview-question-area .prev-next-controls .question-submit-btn {
     position: relative;
