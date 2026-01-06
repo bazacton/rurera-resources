@@ -555,13 +555,13 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 <script>
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-    function animate(el, value) {
+    function smoothText(el, value) {
     if (el.textContent === value) return;
 
-
-    setTimeout(() => {
-        el.textContent = value;
-    }, 300);
+    setTimeout(function tick() {
+        updateTimer();
+        setTimeout(tick, 1000);
+        }, 1000);
     }
 
     function updateTimer() {
@@ -569,13 +569,13 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 
     totalSeconds--;
 
-    let h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
-    let m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
-    let s = String(totalSeconds % 60).padStart(2, "0");
+    const h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+    const s = String(totalSeconds % 60).padStart(2, "0");
 
-    animate(document.getElementById("hh"), h);
-    animate(document.getElementById("mm"), m);
-    animate(document.getElementById("ss"), s);
+    smoothText(document.getElementById("hh"), h);
+    smoothText(document.getElementById("mm"), m);
+    smoothText(document.getElementById("ss"), s);
     }
 
     setInterval(updateTimer, 1000);
