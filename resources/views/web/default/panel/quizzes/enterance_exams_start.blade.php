@@ -108,7 +108,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                             </div>
                         </div> -->
                         <div class="quiz-time-bar">
-                            <!-- <div class="timer-wrap">
+                            <div class="timer-wrap">
                                 <span class="timer-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
                                 <div class="time-box"><span id="hh">00</span></div>
@@ -116,12 +116,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                 <div class="time-box"><span id="mm">05</span></div>
                                 <span class="colon">:</span>
                                 <div class="time-box"><span id="ss">15</span></div> 
-                            </div> -->
-                            <div class="timer">
-                                <span class="timer-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-                                <div class="time-box" id="hours">00</div>
-                                <div class="time-box" id="minutes">05</div>
-                                <div class="time-box" id="seconds">15</div>
                             </div>
                             <span class="coin-numbers">
                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
@@ -559,23 +553,30 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     });
 </script>
 <script>
-// Timer functionality
-let totalSeconds = 315; // 5 minutes 15 seconds
+document.addEventListener("DOMContentLoaded", function () {
 
-function updateTimer() {
-    const hours = Math.floor(totalSeconds / 3600);
-    const minutes = Math.floor((totalSeconds % 3600) / 60);
-    const seconds = totalSeconds % 60;
-    
-    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-    
-    if (totalSeconds > 0) {
-        totalSeconds--;
-    }
-}
+  let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-setInterval(updateTimer, 1000);
+  function updateTimer() {
+    if (totalSeconds <= 0) return;
+
+    totalSeconds--;
+
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
+
+    document.getElementById("hh").textContent = String(h).padStart(2, "0");
+    document.getElementById("mm").textContent = String(m).padStart(2, "0");
+    document.getElementById("ss").textContent = String(s).padStart(2, "0");
+  }
+
+  // Accurate 1-second timer (no setInterval)
+  setTimeout(function tick() {
+    updateTimer();
+    setTimeout(tick, 1000);
+  }, 1000);
+
+});
 </script>
 
