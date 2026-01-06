@@ -1353,6 +1353,7 @@ nav li {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 .login-password .form-group input.login_pin {
   margin-bottom: 5px !important;
