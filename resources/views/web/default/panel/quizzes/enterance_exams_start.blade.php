@@ -552,43 +552,30 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     });
 </script>
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-  function updateTime(el, value) {
-    const current = el.textContent;
-    if (current === value) return;
-
-    const next = document.createElement("span");
-    next.textContent = value;
-    next.style.transform = "translateY(32px)";
-
-    el.parentElement.appendChild(next);
-
-    requestAnimationFrame(() => {
-      el.style.transform = "translateY(-32px)";
-      next.style.transform = "translateY(0)";
-    });
-
-    setTimeout(() => {
-      el.parentElement.removeChild(el);
-      next.id = el.id;
-    }, 400);
-  }
-
-  function tick() {
+  function updateTimer() {
     if (totalSeconds <= 0) return;
 
     totalSeconds--;
 
-    let h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
-    let m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
-    let s = String(totalSeconds % 60).padStart(2, "0");
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
 
-    updateTime(document.getElementById("hh"), h);
-    updateTime(document.getElementById("mm"), m);
-    updateTime(document.getElementById("ss"), s);
+    document.getElementById("hh").textContent = String(h).padStart(2, "0");
+    document.getElementById("mm").textContent = String(m).padStart(2, "0");
+    document.getElementById("ss").textContent = String(s).padStart(2, "0");
   }
 
-  setInterval(tick, 1000);
+  // Accurate 1-second timer (no setInterval)
+  setTimeout(function tick() {
+    updateTimer();
+    setTimeout(tick, 1000);
+  }, 1000);
+
+});
 </script>
 
