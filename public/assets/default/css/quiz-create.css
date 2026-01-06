@@ -1944,7 +1944,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .rureraform-element svg {
     max-width: 100%;
 }
-.math-equation svg {
+.math-equation svg,
+mjx-container[jax="SVG"] > svg {
     scale: 0.8;
 }
 /**************************************
