@@ -2097,7 +2097,7 @@ Inline-Style From Php Files Style Start
 .image-field-box{position:absolute !important;}
 .draggable-items{clear:both;}
 .draggable-items li,
-.quiz-group .draggable-items li { width: auto; }
+.quiz-group .draggable-items li { width: auto; list-style: none; }
 .rurera-droppable{width:100; border:1px solid #efefef; height:50px; display:inline-block;}  
 .rureraform-form-input-medium .rureraform-element .rureraform-input{height:auto;}
 .ui-state-highlight {margin: 0px 10px;}
