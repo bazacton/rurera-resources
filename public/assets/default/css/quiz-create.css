@@ -2502,7 +2502,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     margin: 0;
 }
 /* Left Top Triangle */
-.left_top .cloud_nner_text:before {
+/* .left_top .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2525,9 +2525,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     bottom: auto;
     border: 17px solid;
     border-color: var(--cloud-br-color) var(--cloud-br-color) transparent transparent;
-}
+} */
 /* Left Center triangle */
-.left_middle .cloud_nner_text:before {
+/* .left_middle .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2549,9 +2549,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border: 20px solid;
     border-color: transparent var(--cloud-br-color) transparent transparent;
     transform: translateY(-50%);
-}
+} */
 /* Left Bottom Triangle */
-.left_bottom .cloud_nner_text:before {
+/* .left_bottom .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2573,10 +2573,10 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border: 16px solid;
     border-color: var(--cloud-br-color) transparent transparent;
     transform: rotate(-57deg);
-}
+} */
 
 /* Right Bottom Triangle */
-.right_bottom .cloud_nner_text:before {
+/* .right_bottom .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2598,10 +2598,10 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border: 16px solid;
     border-color: transparent transparent var(--cloud-br-color);
     transform: rotate(-57deg);
-}
+} */
 
 /* Right Top triangle */
-.right_top .cloud_nner_text:before {
+/* .right_top .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2624,9 +2624,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     bottom: auto;
     border: 16px solid;
     border-color: var(--cloud-br-color) transparent transparent var(--cloud-br-color);
-}
+} */
 /* right Center triangle */
-.right_middle .cloud_nner_text:before {
+/* .right_middle .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -2647,7 +2647,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border: 20px solid;
     border-color: transparent transparent transparent var(--cloud-br-color);
     transform: translateY(-50%);
-}
+} */
 /* Questions Cloud Style End */
 
 /* Scroll Controls Container */
