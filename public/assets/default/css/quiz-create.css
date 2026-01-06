@@ -1632,12 +1632,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
   font-family: Arial, sans-serif;
 }
 .time-label {
-  font-size: 14px;
-  color: #333;
-  margin-right: 6px;
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-weight: 500;
 }
 .time-label img {
     height: 15px;
