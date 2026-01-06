@@ -2575,23 +2575,23 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 
 /* Right Bottom Triangle */
-.left_bottom .cloud_nner_text:before {
+.right_bottom .cloud_nner_text:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: -13px;
+    right: -13px;
     bottom: -3px;
     border: 18px solid;
     border-color: transparent transparent #ddd;
     transform: rotate(-58deg);
 }
-.left_bottom .cloud_nner_text:after{
+.right_bottom .cloud_nner_text:after{
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: -10px;
+    right: -10px;
     top: auto;
     bottom: 0px;
     border: 16px solid;
