@@ -345,10 +345,11 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .droppable_area .draggable-option,
 .draggable-items .draggable-option {border: 2px solid #ddd; line-height: normal; padding: 4px 20px 8px; border-radius: 5px; border-bottom-width: 4px; margin-top: 20px;}
-.rureraform-form-editor .draggable-items .draggable-option {margin-top: 0; padding: 8px 20px 8px;}
+.rureraform-form-editor .draggable-items .draggable-option {margin-top: 0; padding: 8px 20px 8px; display: block;}
 .rureraform-builder .draggable-items {
-  display: flex;
-  margin-top: 20px;
+    display: flex;
+    margin-top: 20px;
+    padding-left: 0;
 }
 /* Draggable Style End */
 
