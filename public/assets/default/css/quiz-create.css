@@ -2560,6 +2560,16 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 /* Cloud Right Top End */
 
+/* Cloud Right Bottom Start */
+.right_bottom .cloud_nner_text:before {
+    left: 100%;
+    clip-path: polygon(0% 0, 0% 100%, 100% 50%);
+    bottom: 15px;
+    transform: rotate(12deg);
+    margin-left: -10px;
+}
+/* Cloud Right Bottom End */
+
 /* Cloud Right Center Start */
 .right_middle .cloud_nner_text:before {
     left: 100%;
