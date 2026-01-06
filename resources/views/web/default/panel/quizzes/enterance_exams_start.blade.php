@@ -109,12 +109,12 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div> -->
                         <div class="quiz-time-bar">
                             <div class="timer-wrap">
-                                <span class="timer-label">Time left:</span>
-                                <div class="time-box" id="hh">00</div>
+                                <span class="time-label">Time left:</span>
+                                <div class="time-box"><span id="hh">00</span></div>
                                 <span class="colon">:</span>
-                                <div class="time-box" id="mm">05</div>
+                                <div class="time-box"><span id="mm">05</span></div>
                                 <span class="colon">:</span>
-                                <div class="time-box" id="ss">15</div>
+                                <div class="time-box"><span id="ss">15</span></div>
                             </div>
                             <span class="coin-numbers">
                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
