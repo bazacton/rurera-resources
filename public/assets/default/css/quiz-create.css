@@ -2110,9 +2110,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow-y: auto;
     padding-right: 15px;
 } */
-.preview-question-area .learning-content > .container {
-    max-width: 100%;
-}
 .preview-question-area .justify-content-center > .mt-50 {
     margin-top: 0 !important;
 }
