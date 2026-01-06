@@ -457,37 +457,41 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
-        // 1️⃣ Process all regular text nodes
+        const mathLikePattern = /([a-zA-Z0-9]\s*[\^_=+\-\/]\s*[a-zA-Z0-9{])/;
+
+        // 1️⃣ Normal text nodes
         document.querySelectorAll('*:not(script):not(style)').forEach(el => {
             if (el.children.length > 0) return;
 
-            let text = el.textContent;
+            let text = el.textContent?.trim();
             if (!text) return;
+
+            // Skip already wrapped math
             if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
 
-            // Wrap the entire text in $$ if it contains a backslash
-            if (text.includes('\\')) {
+            // Detect LaTeX OR math-like expressions
+            if (text.includes('\\') || mathLikePattern.test(text)) {
                 el.innerHTML = `$$${text}$$`;
             }
         });
 
-        // 2️⃣ Process all spans with .math-equation
-        document.querySelectorAll('span.math-equation').forEach(span => {
-            // Avoid double conversion
-            if (span.dataset.converted) return;
+        // 2️⃣ .math-equation spans
+        document.querySelectorAll('.math-equation').forEach(el => {
+            if (el.dataset.converted) return;
 
-            let latex = span.getAttribute('data-equation') || span.textContent;
+            let latex = el.getAttribute('data-equation') || el.textContent?.trim();
             if (!latex) return;
 
-            // Wrap in $$ to render via MathJax
-            span.innerHTML = `$$${latex}$$`;
-            span.dataset.converted = 'true'; // mark as converted
+            el.innerHTML = `$$${latex}$$`;
+            el.dataset.converted = 'true';
         });
 
-        // 3️⃣ Trigger MathJax typesetting
+        // 3️⃣ Render with MathJax
         if (window.MathJax?.typesetPromise) {
             MathJax.typesetClear();
-            MathJax.typesetPromise().catch(err => console.error('MathJax error:', err));
+            MathJax.typesetPromise().catch(err =>
+                console.error('MathJax error:', err)
+            );
         }
     }
 
