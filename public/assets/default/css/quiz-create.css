@@ -1948,6 +1948,11 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 mjx-container[jax="SVG"] > svg {
     scale: 0.8;
 }
+.question-explaination mjx-container {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
 /**************************************
 Questions Edit Page Fields style End
 **************************************/
