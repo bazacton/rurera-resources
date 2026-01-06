@@ -2514,8 +2514,17 @@ body:has(.type-practice.type-sats.preview-question-area) {
   width: var(--w,30px);
   background: inherit;
 }
-/* Cloud Left Bottom Start */
+/* Cloud Left Top Start */
+.left_top .cloud_nner_text:before {
+    right: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+    margin-right: -14px;
+    top: 5px;
+    transform: rotate(25deg);
+}
+/* Cloud Left Top End */
 
+/* Cloud Left Bottom Start */
 .left_bottom .cloud_nner_text:before{
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   right: 100%;
