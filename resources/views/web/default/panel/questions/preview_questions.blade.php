@@ -454,138 +454,43 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-    function convertAllMathToSVG() {
-        console.log('convertAllMathToSVG');
+    function wrapRawLatex() {
+        console.log('wrapRawLatex');
 
-        MathJax.startup.promise.then(() => {
+        // 1️⃣ Process all regular text nodes
+        document.querySelectorAll('*:not(script):not(style)').forEach(el => {
+            if (el.children.length > 0) return;
 
-            /* ===========================
-               1️⃣ .math-equation elements
-            =========================== */
-            document.querySelectorAll('.math-equation').forEach(el => {
-                if (el.dataset.converted) return;
+            let text = el.textContent;
+            if (!text) return;
+            if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
 
-                let latex = el.getAttribute('data-equation') || el.textContent.trim();
-                if (!latex) return;
-
-                const wrapper = document.createElement('span');
-                wrapper.innerHTML = `\\(${latex}\\)`;
-
-                MathJax.typesetPromise([wrapper]).then(() => {
-                    const svg = wrapper.querySelector('svg');
-                    if (svg) {
-                        el.innerHTML = '';
-                        el.appendChild(svg.cloneNode(true));
-                        el.dataset.converted = '1';
-                    }
-                });
-            });
-
-            /* ===========================
-               2️⃣ Label math (strict)
-            =========================== */
-            document
-                .querySelectorAll('.rureraform-cr-container-medium label')
-                .forEach(label => {
-
-                    if (label.dataset.converted) return;
-
-                    const text = label.textContent.trim();
-
-                    const looksLikeLatex =
-                        /\\[a-zA-Z]+/.test(text) ||
-                        /[_^]/.test(text) ||
-                        /\{[^}]+\}/.test(text);
-
-                    if (!looksLikeLatex) return;
-
-                    label.innerHTML = `\\(${text}\\)`;
-                    label.dataset.converted = '1';
-                });
-
-            /* ===========================
-               3️⃣ Wrap plain numbers ONLY
-            =========================== */
-            document.querySelectorAll('.question-layout-block').forEach(block => {
-                if (block.dataset.numberWrapped) return;
-
-                wrapNumbersInTextNodes(block);
-                block.dataset.numberWrapped = '1';
-            });
-
-            /* ===========================
-               4️⃣ Final MathJax render
-            =========================== */
-            MathJax.typesetPromise();
-        });
-    }
-
-    /* ===========================
-       SAFE number wrapper
-       (NEVER touches LaTeX)
-    =========================== */
-    function wrapNumbersInTextNodes(root) {
-
-        const walker = document.createTreeWalker(
-            root,
-            NodeFilter.SHOW_TEXT,
-            {
-                acceptNode(node) {
-
-                    if (!node.nodeValue.trim()) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-
-                    // ❌ Skip labels
-                    if (node.parentNode.closest('label')) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-
-                    // ❌ Skip math containers
-                    if (node.parentNode.closest('.math-equation')) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-
-                    // ❌ Skip SVG output
-                    if (node.parentNode.closest('svg')) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-
-                    // ❌ Skip MathJax converted nodes
-                    if (node.parentNode.closest('[data-converted]')) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-
-                    // 🔥 CRITICAL: skip ANY LaTeX-looking text
-                    if (/[\\{}_^]/.test(node.nodeValue)) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-
-                    return /\b\d+(\.\d+)?\b/.test(node.nodeValue)
-                        ? NodeFilter.FILTER_ACCEPT
-                        : NodeFilter.FILTER_REJECT;
-                }
+            // Wrap the entire text in $$ if it contains a backslash
+            if (text.includes('\\')) {
+                el.innerHTML = `$$${text}$$`;
             }
-        );
-
-        const nodes = [];
-        while (walker.nextNode()) {
-            nodes.push(walker.currentNode);
-        }
-
-        nodes.forEach(textNode => {
-            const span = document.createElement('span');
-            span.innerHTML = textNode.nodeValue.replace(
-                /\b\d+(\.\d+)?\b/g,
-                m => `\\(${m}\\)`
-            );
-            textNode.replaceWith(span);
         });
+
+        // 2️⃣ Process all spans with .math-equation
+        document.querySelectorAll('span.math-equation').forEach(span => {
+            // Avoid double conversion
+            if (span.dataset.converted) return;
+
+            let latex = span.getAttribute('data-equation') || span.textContent;
+            if (!latex) return;
+
+            // Wrap in $$ to render via MathJax
+            span.innerHTML = `$$${latex}$$`;
+            span.dataset.converted = 'true'; // mark as converted
+        });
+
+        // 3️⃣ Trigger MathJax typesetting
+        if (window.MathJax?.typesetPromise) {
+            MathJax.typesetClear();
+            MathJax.typesetPromise().catch(err => console.error('MathJax error:', err));
+        }
     }
 
-    /* ===========================
-       Run on load
-    =========================== */
-    document.addEventListener('DOMContentLoaded', convertAllMathToSVG);
+    document.addEventListener('DOMContentLoaded', wrapRawLatex);
 </script>
 @endpush
