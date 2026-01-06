@@ -47,7 +47,7 @@
     display: none;
 }
 .post-show p {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .post-show img {
     border-radius: 15px;
@@ -55,7 +55,6 @@
     object-fit: cover;
 }
 .blog-single-post .post-show p {
-    margin-top: 0;
     font-size: 19px;
 }
 .blog-single-post .post-show > div {
