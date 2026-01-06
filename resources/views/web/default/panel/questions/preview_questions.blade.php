@@ -454,6 +454,20 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
+    function renderLatexDirectToSVG(latex, display = false) {
+        try {
+            const node = MathJax.tex2svg(latex, {
+                display: display
+            });
+
+            const svg = node.querySelector('svg');
+            return svg ? svg.cloneNode(true) : null;
+
+        } catch (e) {
+            console.error('MathJax render error:', latex, e);
+            return null;
+        }
+    }
     function convertAllMathToSVG() {
         console.log('convertAllMathToSVG');
 
@@ -468,17 +482,13 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
                 let latex = el.getAttribute('data-equation') || el.textContent.trim();
                 if (!latex) return;
 
-                const wrapper = document.createElement('span');
-                wrapper.innerHTML = `\\(${latex}\\)`;
+                const svg = renderLatexDirectToSVG(latex, false);
 
-                MathJax.typesetPromise([wrapper]).then(() => {
-                    const svg = wrapper.querySelector('svg');
-                    if (svg) {
-                        el.innerHTML = '';
-                        el.appendChild(svg.cloneNode(true));
-                        el.dataset.converted = '1';
-                    }
-                });
+                if (svg) {
+                    el.innerHTML = '';
+                    el.appendChild(svg);
+                    el.dataset.converted = '1';
+                }
             });
 
             /* ===========================
