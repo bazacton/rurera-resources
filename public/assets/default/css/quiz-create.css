@@ -2544,6 +2544,16 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 /* Cloud Left Center End */
 
+/* Cloud Right Top Start */
+.right_top .cloud_nner_text:before {
+    clip-path: polygon(0% 0, 0% 100%, 100% 100%);
+    left: 100%;
+    margin-left: -10px;
+    top: 10px;
+    transform: rotate(-5deg);
+}
+/* Cloud Right Top End */
+
 .avatar-label {
     border: 2px solid #ddd;
     padding: 5px 10px;
