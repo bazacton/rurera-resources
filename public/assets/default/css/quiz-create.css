@@ -206,7 +206,11 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
     border-color: #287834;
 }
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
-.lms-radio-select input[type=radio]:checked~label {background-color: #e8e8e8; border-color: #a0a0a0;}
+.lms-radio-select input[type=radio]:checked~label {
+    background-color: #95D6A2;
+    color: #4D8F5B;
+    border-color: #6eb37d;
+}
 .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transition: 0.4s; }
 .row-fields .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transform: none;}
 .row-fields .lms-radio-select label:after {width: 0; transform: none;}
