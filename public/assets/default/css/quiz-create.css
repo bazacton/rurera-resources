@@ -2289,6 +2289,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .lms-card-timeline .card .card-body {
     padding: 0;
     border: 0;
+    margin-bottom: 0;
 }
 .lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;}
 .lms-card-timeline .card .card-body h6 {
