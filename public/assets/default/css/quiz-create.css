@@ -2481,7 +2481,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     width: calc(100% - 150px);
     padding: 15px 30px;
     border: 2px solid #ddd;
-    min-height: 140px;
+    min-height: 70px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -2555,9 +2555,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     position: absolute;
     width: 0;
     height: 0;
-    left: -18px;
-    bottom: -2px;
-    border: 26px solid;
+    left: -13px;
+    bottom: -3px;
+    border: 18px solid;
     border-color: #ddd transparent transparent;
     transform: rotate(-58deg);
 }
@@ -2566,10 +2566,10 @@ body:has(.type-practice.type-sats.preview-question-area) {
     position: absolute;
     width: 0;
     height: 0;
-    left: -15px;
+    left: -10px;
     top: auto;
-    bottom: -1px;
-    border: 26px solid;
+    bottom: 0px;
+    border: 16px solid;
     border-color: var(--cloud-br-color) transparent transparent;
     transform: rotate(-57deg);
 }
