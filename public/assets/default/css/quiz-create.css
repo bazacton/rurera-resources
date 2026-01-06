@@ -2285,21 +2285,16 @@ body:has(.type-practice.type-sats.preview-question-area) {
 	background-color: rgb(200,210,237);
     border: 0;
 }
-.lms-card-timeline .card {
-    padding: 0;
-    border: 0;
-}
+.lms-card-timeline .card,
 .lms-card-timeline .card .card-body {
     padding: 0;
+    border: 0;
 }
 .lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;}
 .lms-card-timeline .card .card-body h6 {
     font-weight: 500;
     font-size: 15px;
     color: #000;
-}
-.approve_question_form .row:has(.lms-card-timeline) {
-    margin: 0;
 }
 .approve_question_form .row:has(.lms-card-timeline) {
     margin: 0;
