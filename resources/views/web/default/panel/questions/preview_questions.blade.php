@@ -456,25 +456,17 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 <script>
     function convertAllMathToSVG() {
         console.log('convertAllMathToSVG');
+
         MathJax.startup.promise.then(() => {
 
-            /* 1️⃣ math-equation spans */
+            /* ===========================
+               1️⃣ .math-equation elements
+            =========================== */
             document.querySelectorAll('.math-equation').forEach(el => {
                 if (el.dataset.converted) return;
 
                 let latex = el.getAttribute('data-equation') || el.textContent.trim();
                 if (!latex) return;
-
-                // ✅ Normalize risky commands
-                latex = latex
-                    .replace(/\\dfrac/g, '\\frac')
-                    .replace(/\\tfrac/g, '\\frac');
-
-                // ✅ Fix missing space after fractions ( \frac{..}{..}by )
-                latex = latex.replace(
-                    /(\\(?:dfrac|frac)\{[^}]+\}\{[^}]+\})([a-zA-Z])/g,
-                    '$1 $2'
-                );
 
                 const wrapper = document.createElement('span');
                 wrapper.innerHTML = `\\(${latex}\\)`;
@@ -489,14 +481,17 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
                 });
             });
 
-            /* 2️⃣ auto-wrap label math (STRICT detection) */
-            document.querySelectorAll('.rureraform-cr-container-medium label')
+            /* ===========================
+               2️⃣ Label math (strict)
+            =========================== */
+            document
+                .querySelectorAll('.rureraform-cr-container-medium label')
                 .forEach(label => {
+
                     if (label.dataset.converted) return;
 
                     const text = label.textContent.trim();
 
-                    // ✅ Only wrap if it REALLY looks like math
                     const looksLikeLatex =
                         /\\[a-zA-Z]+/.test(text) ||
                         /[_^]/.test(text) ||
@@ -508,7 +503,9 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
                     label.dataset.converted = '1';
                 });
 
-            /* 3️⃣ numbers inside .question-layout-block (excluding labels) */
+            /* ===========================
+               3️⃣ Wrap plain numbers ONLY
+            =========================== */
             document.querySelectorAll('.question-layout-block').forEach(block => {
                 if (block.dataset.numberWrapped) return;
 
@@ -516,32 +513,53 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
                 block.dataset.numberWrapped = '1';
             });
 
-            /* 4️⃣ Final typeset */
+            /* ===========================
+               4️⃣ Final MathJax render
+            =========================== */
             MathJax.typesetPromise();
         });
     }
 
     /* ===========================
        SAFE number wrapper
+       (NEVER touches LaTeX)
     =========================== */
     function wrapNumbersInTextNodes(root) {
+
         const walker = document.createTreeWalker(
             root,
             NodeFilter.SHOW_TEXT,
             {
                 acceptNode(node) {
 
-                    if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+                    if (!node.nodeValue.trim()) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
 
-                    // ❌ Skip labels completely
-                    if (node.parentNode.closest('label')) return NodeFilter.FILTER_REJECT;
+                    // ❌ Skip labels
+                    if (node.parentNode.closest('label')) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
 
-                    // ❌ Skip math-equation & SVG
-                    if (node.parentNode.closest('.math-equation')) return NodeFilter.FILTER_REJECT;
-                    if (node.parentNode.closest('svg')) return NodeFilter.FILTER_REJECT;
+                    // ❌ Skip math containers
+                    if (node.parentNode.closest('.math-equation')) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
 
-                    // ❌ Skip already converted MathJax output
-                    if (node.parentNode.closest('[data-converted]')) return NodeFilter.FILTER_REJECT;
+                    // ❌ Skip SVG output
+                    if (node.parentNode.closest('svg')) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+
+                    // ❌ Skip MathJax converted nodes
+                    if (node.parentNode.closest('[data-converted]')) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+
+                    // 🔥 CRITICAL: skip ANY LaTeX-looking text
+                    if (/[\\{}_^]/.test(node.nodeValue)) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
 
                     return /\b\d+(\.\d+)?\b/.test(node.nodeValue)
                         ? NodeFilter.FILTER_ACCEPT
@@ -551,7 +569,9 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         );
 
         const nodes = [];
-        while (walker.nextNode()) nodes.push(walker.currentNode);
+        while (walker.nextNode()) {
+            nodes.push(walker.currentNode);
+        }
 
         nodes.forEach(textNode => {
             const span = document.createElement('span');
@@ -563,6 +583,9 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         });
     }
 
+    /* ===========================
+       Run on load
+    =========================== */
     document.addEventListener('DOMContentLoaded', convertAllMathToSVG);
 </script>
 @endpush
