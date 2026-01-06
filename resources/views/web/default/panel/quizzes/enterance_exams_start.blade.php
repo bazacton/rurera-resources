@@ -551,3 +551,23 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
         }
     });
 </script>
+<script>
+  // Set countdown time (HH, MM, SS)
+  let totalSeconds = (0 * 3600) + (5 * 60) + 15;
+
+  function updateTimer() {
+    if (totalSeconds <= 0) return;
+
+    totalSeconds--;
+
+    let h = Math.floor(totalSeconds / 3600);
+    let m = Math.floor((totalSeconds % 3600) / 60);
+    let s = totalSeconds % 60;
+
+    document.getElementById("hh").textContent = String(h).padStart(2, "0");
+    document.getElementById("mm").textContent = String(m).padStart(2, "0");
+    document.getElementById("ss").textContent = String(s).padStart(2, "0");
+  }
+
+  setInterval(updateTimer, 1000);
+</script>
