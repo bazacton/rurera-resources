@@ -769,7 +769,7 @@
                 ['font', ['bold', 'underline']],
                 ['para', ['paragraph', 'ul', 'ol']],
                 ['table', ['table']],
-                ['insert', ['link']],
+                ['insert', ['link', 'picture']],
                 ['history', ['undo']],
                 ['view', ['codeview']] // 👈 Source / HTML view
             ],
