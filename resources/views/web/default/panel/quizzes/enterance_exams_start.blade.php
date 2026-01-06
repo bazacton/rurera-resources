@@ -111,11 +111,11 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                             <div class="timer-wrap">
                                 <span class="timer-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
-                                <div class="time-box" id="hh">00</div>
+                                <div class="time-box"><span id="hh">00</span></div>
                                 <span class="colon">:</span>
-                                <div class="time-box" id="mm">05</div>
+                                <div class="time-box"><span id="mm">05</span></div>
                                 <span class="colon">:</span>
-                                <div class="time-box" id="ss">15</div>
+                                <div class="time-box"><span id="ss">15</span></div> 
                             </div>
                             <span class="coin-numbers">
                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
@@ -553,23 +553,31 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     });
 </script>
 <script>
-  // Set countdown time (HH, MM, SS)
   let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-  function updateTimer() {
+    function animate(el, value) {
+    if (el.textContent === value) return;
+
+
+    setTimeout(() => {
+        el.textContent = value;
+    }, 300);
+    }
+
+    function updateTimer() {
     if (totalSeconds <= 0) return;
 
     totalSeconds--;
 
-    let h = Math.floor(totalSeconds / 3600);
-    let m = Math.floor((totalSeconds % 3600) / 60);
-    let s = totalSeconds % 60;
+    let h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    let m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+    let s = String(totalSeconds % 60).padStart(2, "0");
 
-    document.getElementById("hh").textContent = String(h).padStart(2, "0");
-    document.getElementById("mm").textContent = String(m).padStart(2, "0");
-    document.getElementById("ss").textContent = String(s).padStart(2, "0");
-  }
+    animate(document.getElementById("hh"), h);
+    animate(document.getElementById("mm"), m);
+    animate(document.getElementById("ss"), s);
+    }
 
-  setInterval(updateTimer, 1000);
+    setInterval(updateTimer, 1000);
 </script>
 
