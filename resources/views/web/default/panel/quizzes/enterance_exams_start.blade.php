@@ -92,7 +92,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
 
-                        <div class="quiz-status-bar">
+                        <div class="quiz-status-bar tt5">
                             <div class="quiz-questions-bar-holder">
                                 <div class="quiz-questions-bar">
                                     <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>

@@ -1269,7 +1269,7 @@
                                         <div class="question-layout-block" style="width: 100%;">
                                             <form class="question-fields" action="javascript:;" data-question_id="0">
                                                 <div class="left-content has-bg">
-                                                    <div class="quiz-status-bar">
+                                                    <div class="quiz-status-bar tt1">
                                                         <div class="quiz-questions-bar-holder">
                                                             <div class="quiz-questions-bar">
                                                                 <span class="value-lable" data-title="Target" style="left:90%"><span>90%</span></span>

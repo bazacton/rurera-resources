@@ -219,7 +219,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                     <div class="row">
 					@if( isset( $test_type ) &&  $test_type == '')
 					<div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
-						<div class="quiz-status-bar">
+						<div class="quiz-status-bar tt6">
 							<div class="quiz-questions-bar-holder">
 
 								<div class="quiz-questions-bar">
