@@ -9,7 +9,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
 <link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+
 @push('styles_top')
 
 
