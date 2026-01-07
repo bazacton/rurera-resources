@@ -815,7 +815,7 @@ function _rureraform_properties_prepare(_object) {
         document.getElementById(info.jsonBoxId).value = json_code;
 
         // Trigger clicks
-        $(".load-json-btn").click(); // common click
+        //$(".load-json-btn").click(); // common click
         if (info.extraClickClass) $(info.extraClickClass).click(); // optional extra click per type
         $(".interactive_elements").find(`li[data-option="${info.dataOption}"]`).click();
 
