@@ -9,7 +9,7 @@
                     <a href="javascript:;" class="timestables-back-btn mb-20">Back</a>
                     <div class="timestables-modes row">
                         <div class="col-12 col-lg-12 col-md-12">
-                        <div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
+                        <div class="section-title mb-15">
                             <h2 class="font-22 mb-0">Time Tables</h2>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                     <div class="type-list-data single-player-data">
                         <div class="col-12 col-md-12 col-lg-12">
                             <a itemprop="url" href="/timestables-practice/freedom-mode">
-                                <div class="grid-card timestables-mode-data" itemscope data-mode_type="freedom_mode" itemtype="https://schema.org/NewsArticle">
+                                <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
                                     <div class="text-holder">
                                         <h3 class="blog-grid-title font-18 font-weight-bold">
                                             Freedom mode
@@ -294,8 +294,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="section-title mb-30" itemscope itemtype="https://schema.org/Article">
-                      < class="back-btn mb-30" style="margin-right: auto;">
+                    <div class="section-title mb-30">
+                      <a class="back-btn mb-30" href="javascript:;;" style="margin-right: auto;">
                         <span>←</span>
                     </a>
                         <h1 class="font-50 font-weight-bold mb-0 text-white">Tournament Tropics</h1>
@@ -669,8 +669,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="section-title mb-50" itemscope itemtype="https://schema.org/Article">
-                        < class="back-btn mb-30" style="margin-right: auto;">
+                    <div class="section-title mb-50">
+                        <a class="back-btn mb-30" href="javascript:;;" style="margin-right: auto;">
                             <span>←</span>
                         </a>
                         <h1 class="font-50 font-weight-bold mb-0 text-white">Challenge Chamber</h1>
