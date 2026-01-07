@@ -610,5 +610,27 @@
             }
         });
 
+
+        $(document).on('click', '.loginpad-icon', function () {
+            var digit = $(this).find('span').text();
+
+            // Find first empty input from the left
+            var $emptyInput = $('.login_pin').filter(function () {
+                return $(this).val() === '';
+            }).first();
+
+            if ($emptyInput.length) {
+                $emptyInput.val(digit).focus();
+            }
+            $(".login_pin").trigger("input");
+        });
+
+        // Optional: allow backspace delete behavior
+        $(document).on('keydown', '.login_pin', function (e) {
+            if (e.key === 'Backspace' && $(this).val() === '') {
+                $(this).prev('.login_pin').focus();
+            }
+        });
+
     </script>
 @endpush
