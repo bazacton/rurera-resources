@@ -2,7 +2,7 @@
 .learning-content-box .btn {
     border-radius: 30px;
     border: 0;
-    background-color: var(--blue);
+    background-color: var(--primary);
 }
 .learning-content-box-icon img {
     max-width: 250px;
