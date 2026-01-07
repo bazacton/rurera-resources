@@ -1566,6 +1566,20 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .quiz-questions-bar-holder .value-lable.completion-progress:before {background: #2ecc71;}
 .quiz-status-bar:has(.quiz-timer) .quiz-timer {display: inline-flex; max-width: none; min-width: 95px; margin-right: -4px; justify-content: flex-end;}
 .quiz-status-bar .timer-number {color: #333; font-size: 18px; min-width: auto;margin-left: 10px;}
+.status-bar-on-off {
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    padding: 5px 12px;
+    border-radius: 3px;
+    margin: 0 0 30px;
+    outline: none;
+}
+.status-bar-on-off span.rurera-hide {
+    display: inline-block !important;
+}
+.status-bar-on-off.collapsed span.rurera-hide {
+    display: none !important;
+}
 /* Quiz Status Bar Style End */
 /*Question Number Style Start*/
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
