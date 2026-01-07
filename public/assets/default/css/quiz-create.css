@@ -1299,6 +1299,13 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
     text-align: right;
     width: calc(100% - 85px);
 }
+.question-details li span mjx-container {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+    padding: 0;
+    text-align: right;
+}
 .question-dev-details a {
     color: var(--primary);
 }
