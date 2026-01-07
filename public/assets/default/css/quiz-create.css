@@ -1299,7 +1299,7 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
     text-align: right;
     width: calc(100% - 85px);
 }
-.question-detail-holder mjx-container {
+.question-right-side .question-detail-holder mjx-container {
     margin: 0;
     width: auto;
     display: inline-block;
