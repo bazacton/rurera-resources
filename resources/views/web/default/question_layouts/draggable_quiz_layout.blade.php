@@ -12,7 +12,7 @@ $has_image_class = ($hasImage == 1)? 'lms-radio-img' : '';
 	   {!! $content !!}
 	   
 	   @if( !empty( $elementObj->options ))
-		   <ul class="draggable-items">
+		   <ul class="draggable-items pl-0">
 			@foreach( $elementObj->options as $option_index => $optionObj)
 				@if( !isset( $optionObj->label ))
 					@php continue; @endphp
