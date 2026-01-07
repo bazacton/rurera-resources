@@ -81,7 +81,7 @@ if( !empty( $emojisArray ) ){
     }
 </style>
 <section>
-    <h2 class="section-title">{{ trans('financial.account') }}</h2>
+    <h2 class="section-title font-22">{{ trans('financial.account') }}</h2>
     <div class="row mt-15">
         <div class="col-12 user-profile-block rurera-hide">
             <div class="user-detail mb-50">
