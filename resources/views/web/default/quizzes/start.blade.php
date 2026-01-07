@@ -9,7 +9,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
 <link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+
 @push('styles_top')
 
 
@@ -218,7 +218,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <script src="/assets/default/vendors/video/video.min.js"></script>
 <script src="/assets/default/vendors/video/youtube.min.js"></script>
 <script src="/assets/default/vendors/video/vimeo.js"></script>
-
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs"
         data-app-key="v5gxvm7qj1ku9la"></script>
