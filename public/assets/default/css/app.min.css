@@ -1362,6 +1362,12 @@ nav li {
   text-align: center;
   vertical-align: top;
 }
+.login-password .form-group input.login_pin[type=number]::-webkit-inner-spin-button, 
+.login-password .form-group input.login_pin[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+  opacity: 0;
+}
 .login-pad-icons {
   display: flex;
   align-items: center;
