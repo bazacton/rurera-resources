@@ -1,3 +1,6 @@
+@php
+    $pageTitle = isset($pageTitle)? $pageTitle : '';
+    $seo_title = isset($seo_title)? $seo_title : $pageTitle; @endphp
 <meta charset="utf-8">
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -33,9 +36,9 @@
 <link rel="home" href="{{ url('') }}">
 
 <!-- Open Graph -->
-<meta property='og:title' content='{{ $pageTitle ?? '' }}'>
+<meta property='og:title' content='{{ $seo_title ?? '' }}'>
 <meta name='twitter:card' content='summary'>
-<meta name='twitter:title' content='{{ $pageTitle ?? '' }}'>
+<meta name='twitter:title' content='{{ $seo_title ?? '' }}'>
 
 <meta property='og:site_name' content='{{ url(!empty($generalSettings['site_name']) ? $generalSettings['site_name'] : '') }}'>
 <meta property='og:image' content='{{ url(!empty($generalSettings['fav_icon']) ? $generalSettings['fav_icon'] : '') }}'>
