@@ -1299,11 +1299,11 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
     text-align: right;
     width: calc(100% - 85px);
 }
-.question-right-side .question-detail-holder mjx-container {
-    margin: 0;
-    width: auto;
-    display: inline-block;
+body mjx-container[display] {
     padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: auto;
 }
 .question-dev-details a {
     color: var(--primary);
