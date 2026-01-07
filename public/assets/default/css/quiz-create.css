@@ -1604,7 +1604,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500; margin-left: -15px; margin-right: auto; background-image: none; box-shadow: none;}
 .review-btn,
 .prev-btn,
-.next-btn{display: inline-flex; align-items: center; border: 1px solid #b7b7b7; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color:#818894; text-transform: uppercase;}
+.next-btn{background-color: #fff; display: inline-flex; align-items: center; border: 1px solid #b7b7b7; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color:#818894; text-transform: uppercase;}
 
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
