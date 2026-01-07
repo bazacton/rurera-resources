@@ -356,6 +356,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
     padding: 8px 20px;
     border-radius: 5px;
     display: inline-block;
+    font-weight: 400;
 }
 .draggable-items .draggable-option img {
     height: 20px;
