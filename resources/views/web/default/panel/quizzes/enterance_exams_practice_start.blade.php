@@ -21,7 +21,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 @endphp
 <div class="content-section">
 
-    <section class="lms-quiz-section tt22">
+    <section class="lms-quiz-section">
 
         @if( $quiz->quiz_pdf != '')
             <script type="text/javascript">
