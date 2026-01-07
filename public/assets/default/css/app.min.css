@@ -440,6 +440,7 @@
   background-color: #fff;
   border-bottom: 1px solid #eaeaea;
   z-index: 1055;
+  min-height: 63px;
 }
 .navbar1 .navbar-nav {
   width: 100%;
