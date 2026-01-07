@@ -22,8 +22,22 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 @endphp
 <div class="content-section">
 
-    <section class="lms-quiz-section tt">
+    <section class="lms-quiz-section">
+        <div class="quiz-time-bar">
+            <div class="timer-wrap">
+                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
+                <div class="time-box" id="hh">00</div>
+                <span class="colon">:</span>
+                <div class="time-box" id="mm">05</div>
+                <span class="colon">:</span>
+                <div class="time-box" id="ss">15</div>
+            </div>
+            <span class="coin-numbers">
+                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                <span class="total-earned-coins">1</span>
+            </span>
+        </div>
         @if( $quiz->quiz_pdf != '')
             <script type="text/javascript">
                 $(document).ready(function () {
@@ -91,21 +105,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div>
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <div class="quiz-time-bar">
-                            <div class="timer-wrap">
-                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-
-                                <div class="time-box" id="hh">00</div>
-                                <span class="colon">:</span>
-                                <div class="time-box" id="mm">05</div>
-                                <span class="colon">:</span>
-                                <div class="time-box" id="ss">15</div>
-                            </div>
-                            <span class="coin-numbers">
-                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                <span class="total-earned-coins">1</span>
-                            </span>
-                        </div>
                         <div class="show-hide-statusbar">
                             <div class="collapse" id="statusbar-data">
                                 <div class="card card-body p-0 border-0">
