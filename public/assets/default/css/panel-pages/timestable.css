@@ -393,7 +393,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .leaderboard>li.lms-performace-head.leaderboard-title div:nth-child(3),
 .leaderboard>li.lms-performace-des.leaderboard-des div:nth-child(3){width:25%;}
 .leaderboard>li.lms-performace-head.leaderboard-title div:first-child h5{color: #878787;}
-.leaderboard>li.lms-performace-des.leaderboard-des .score-des {padding-left: 20px;flex-wrap: wrap; width: 25%;}
+.leaderboard>li.lms-performace-des.leaderboard-des .score-des {padding-left: 20px;flex-wrap: wrap; width: 45%;}
 .leaderboard>li.lms-performace-des.leaderboard-des .coin-earn > .badge-btn{width: auto; padding: 0;}
 .school-table .simple-table thead {background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
 .school-table .simple-table td {padding: 15px 20px; font-size: 15px; font-weight: 500; color: #878787; border-top: 1px solid #ddd;}
@@ -433,6 +433,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .panel-content .lms-performace-table>li.lms-performace-des .time-sepen{width: 25%;}
 .panel-content .lms-performace-table>li.lms-performace-head {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 .panel-content .lms-performace-table>li.lms-performace-des .sr-no {border-right: 0; width: 25%; text-align: left !important;}
+.panel-content .leaderboard>li.lms-performace-head div:nth-child(2) {width: 45%;}
 .panel-content .lms-performace-table>li.lms-performace-des {border: 0; border-bottom: 1px solid #ddd;}
 .panel-content .lms-performace-table>li.lms-performace-des:last-child {border-bottom: 0; }
 .panel-content .lms-performace-table>li.lms-performace-head div,
