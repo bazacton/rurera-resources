@@ -1585,6 +1585,9 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .status-bar-on-off .show-label {
     display: none;
 }
+.show-hide-statusbar .card {
+    background-color: inherit;
+}
 /* Quiz Status Bar Style End */
 /*Question Number Style Start*/
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
