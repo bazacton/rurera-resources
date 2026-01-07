@@ -442,7 +442,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .panel-content .lms-performace-table>li.lms-performace-des:last-child {border-bottom: 0; }
 .panel-content .lms-performace-table>li.lms-performace-head div,
 .panel-content .lms-performace-table>li.lms-performace-des div {padding: 12px 20px;}
-.lms-performace-table>li.lms-performace-des.active {background-color: #e5e5e5;}
+.lms-performace-table>li.lms-performace-des.active {background-color: #f8f8f8;}
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-head div:first-child,
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no { width: 25%; }
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no span { font-size: 16px; font-weight: 400; }
