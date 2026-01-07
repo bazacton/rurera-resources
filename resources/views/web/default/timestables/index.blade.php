@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
-                    <a href="javascript:;" class="timestables-back-btn mb-20">Back</a>
+                    <!-- <a href="javascript:;" class="timestables-back-btn mb-20">Back</a> -->
                     <div class="timestables-modes row">
                         <div class="col-12 col-lg-12 col-md-12">
                         <div class="section-title mb-15">
