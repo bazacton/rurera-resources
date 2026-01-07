@@ -91,26 +91,29 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div>
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <button class="status-bar-on-off collapsed" type="button" data-toggle="collapse" data-target="#statusbar-data" aria-expanded="false" aria-controls="statusbar-data"><span class="rurera-hide">Hide</span> <span class="show-label">Show</span> Status</button>
-                        <div class="collapse mb-30" id="statusbar-data">
-                            <div class="card card-body">
-                                <div class="quiz-status-bar">
-                                    <div class="quiz-questions-bar-holder">
-                                        <div class="quiz-questions-bar">
-                                            <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                                            <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
+                        <div class="show-hide-statusbar mb-30">
+                            <button class="status-bar-on-off collapsed" type="button" data-toggle="collapse" data-target="#statusbar-data" aria-expanded="false" aria-controls="statusbar-data"><span class="rurera-hide">Hide</span> <span class="show-label">Show</span> Status</button>
+                            <div class="collapse" id="statusbar-data">
+                                <div class="card card-body">
+                                    <div class="quiz-status-bar">
+                                        <div class="quiz-questions-bar-holder">
+                                            <div class="quiz-questions-bar">
+                                                <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                                                <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
+                                            </div>
+                                            <span class="coin-numbers">
+                                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                                <span class="total-earned-coins">0</span>
+                                            </span>
                                         </div>
-                                        <span class="coin-numbers">
-                                            <img src="/assets/default/img/quests-coin.png" alt="">
-                                            <span class="total-earned-coins">0</span>
-                                        </span>
-                                    </div>
-                                    <div class="quiz-timer">
-                                        <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
+                                        <div class="quiz-timer">
+                                            <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                         
                         <div class="quiz-time-bar">
                             <div class="timer-wrap">
