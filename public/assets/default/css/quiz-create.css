@@ -351,6 +351,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .droppable_area .draggable-option,
 .draggable-items .draggable-option {
+    background-color: #fff;
     border: 1px solid #ddd;
     line-height: normal;
     padding: 8px 20px;
