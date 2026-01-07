@@ -393,7 +393,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .match-question .stems,
 .match-question .options {width: 40%; margin-right: 10%; float: left;}
 .match-question .stems li,
-.match-question .options li {background: transparent; cursor: pointer; border: 1px solid #999; border-radius: 4px; &.selected,  &.selected:hover {font-weight: bold; border-color: #70c17c;}}
+.match-question .options li {background-color: #fff; cursor: pointer; border: 1px solid #999; border-radius: 4px; &.selected,  &.selected:hover {font-weight: bold; border-color: #70c17c;}}
 .match-question .stems li > img,
 .match-question .options li > img {margin-bottom: 10px;}
 .match-question .line {width: 100%; height: 2px; background-color: #e5e5e5; &.highlighted {background-color: green; box-shadow: none; height: 3px; .point {border-left: 16px solid green;}}
