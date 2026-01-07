@@ -1994,11 +1994,17 @@ $(document).on('click', '.generate-subtopic-part', function (e) {
         }
     });
 });
-$(document).ready(function() {
-  $('.closeOnSelect-false').select2({
-    closeOnSelect : false,
-  });
+$(document).ready(function () {
+  if (
+    typeof $.fn.select2 !== 'undefined' &&
+    $('.closeOnSelect-false').length
+  ) {
+    $('.closeOnSelect-false').select2({
+      closeOnSelect: false
+    });
+  }
 });
+
 
 
 $(document).on('click', '.add-more-question', function (e) {
