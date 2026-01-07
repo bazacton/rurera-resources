@@ -432,7 +432,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .panel-content .lms-performace-table>li.lms-performace-des .practised,
 .panel-content .lms-performace-table>li.lms-performace-des .time-sepen{width: 25%;}
 .panel-content .lms-performace-table>li.lms-performace-head {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-.panel-content .lms-performace-table>li.lms-performace-des .sr-no {border-right: 0; width: 25%;}
+.panel-content .lms-performace-table>li.lms-performace-des .sr-no {border-right: 0; width: 25%; text-align: left !important;}
 .panel-content .lms-performace-table>li.lms-performace-des {border: 0; border-bottom: 1px solid #ddd;}
 .panel-content .lms-performace-table>li.lms-performace-des:last-child {border-bottom: 0; }
 .panel-content .lms-performace-table>li.lms-performace-head div,
