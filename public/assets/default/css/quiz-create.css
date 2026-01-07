@@ -301,7 +301,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-sorting-fields .field-holder label {margin: 0; pointer-events: none;}
 .lms-sorting-fields .field-holder img {max-width: 100%;}
 .lms-sortable-img.lms-sorting-fields .field-holder img {max-width: 60px; height: 55px; object-fit: cover;}
-.lms-sorting-fields .match-question {position: initial !important; display: inline-block; width: 100% !important; height: auto !important;}
+.lms-sorting-fields .match-question {position: initial !important; display: flex; align-items: flex-start; flex-wrap: wrap; gap: 30px; width: 100% !important; height: auto !important; }
 .lms-sorting-fields .match-question.ui-sortable-placeholder {position: absolute !important;}
 .lms-sorting-fields .field-holder .sort-icon ~ label {padding-right: 40px;}
 .lms-sorting-fields {display: inline-block; width: 100%;}
@@ -391,7 +391,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .match-question .stems li,
 .match-question .options li {list-style: none; padding: 0.8rem 1rem; margin: 0 0 1rem; text-align: left; line-height: normal;}
 .match-question .stems,
-.match-question .options {width: 40%; margin-right: 10%; float: left;}
+.match-question .options {width: 45%;}
 .match-question .stems li,
 .match-question .options li {background-color: #fff; cursor: pointer; border: 1px solid #999; border-radius: 4px; &.selected,  &.selected:hover {font-weight: bold; border-color: #70c17c;}}
 .match-question .stems li > img,
