@@ -23,7 +23,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 <div class="content-section">
 
     <section class="lms-quiz-section">
-        <div class="quiz-time-bar px-30 mb-60">
+        <div class="quiz-time-bar px-30 mb-80">
             <div class="timer-wrap">
                 <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
