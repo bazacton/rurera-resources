@@ -106,7 +106,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
-                                            <h1 class="font-24 font-weight-bold">Log in to parent account</h1>
+                                            <h2 class="font-24 font-weight-bold">Log in to parent account</h2>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group" id="emailHelp2">
@@ -168,7 +168,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
-                                            <h1 class="font-24 font-weight-bold">Log in to tutor account</h1>
+                                            <h2 class="font-24 font-weight-bold">Log in to tutor account</h2>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group" id="emailHelp3">
@@ -228,7 +228,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
-                                            <h1 class="font-24 font-weight-bold">Log in to educator account</h1>
+                                            <h2 class="font-24 font-weight-bold">Log in to educator account</h2>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group" id="emailHelp">
@@ -402,7 +402,7 @@
                         <div class="col-12 col-md-12">
 
                             <div class="login-card">
-                                <h1 class="font-20 font-weight-bold">Your Email</h1>
+                                <h2 class="font-20 font-weight-bold">Your Email</h2>
                                 <p>Enter your email to reset password</p>
                                 <form method="post" action="/send-email" class="mt-15">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
