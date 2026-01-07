@@ -751,7 +751,7 @@ body .learning-page .learning-title {border-color: #ccc;}
 }
 .learning-start-box .instruction-text h3 {
     font-size: 36px;
-    color: var(--blue);
+    color: var(--primary);
 }
 /*Question Type Start Page Style End*/
 
