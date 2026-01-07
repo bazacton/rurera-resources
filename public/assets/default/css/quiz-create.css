@@ -344,7 +344,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Separator Style End */
 
 /* Draggable Style Start */
-.draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 40px;}
+.draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 30px;}
 .draggable-items .ui-draggable {color: #666; height: auto; margin: 0;}
 .draggable-items .ui-draggable span {color: #999; vertical-align: middle;}
 .droppable_area, .lms-quiz-section .droppable_area {display:inline-flex; height: auto; padding: 0; margin: 0; border-radius: 0; border-bottom: 2px dotted #ddd; vertical-align: text-bottom; justify-content: center; align-items: center; min-width: 190px; text-align: center; min-height: 40px; }
