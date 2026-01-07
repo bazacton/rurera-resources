@@ -726,6 +726,7 @@ body .learning-page .learning-title {border-color: #ccc;}
 
 /*Question Type Start Page Style Start*/
 .learning-start-box .learning-content-box-icon {
+    background-color: #fff;
     text-align: center;
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
     padding: 40px;
