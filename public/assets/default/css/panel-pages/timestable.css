@@ -365,7 +365,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .lms-performace-table>li.lms-performace-head div span {text-transform: uppercase;font-size: 15px;font-weight: 700;color: #878787;}
 .lms-performace-table>li.lms-performace-des .sr-no {border-right: 1px dashed #ddd; /*width: 6%;*/}
 .lms-performace-table>li.lms-performace-des div {display: table-cell;padding: 22px 10px;white-space: nowrap;text-align: center;}
-.lms-performace-table>li.lms-performace-des div span {font-size: 15px;color: #878787;margin: 0;font-weight: 500;margin: 0; white-space: break-spaces;}
+.lms-performace-table>li.lms-performace-des div span {font-size: 15px;color: #000;margin: 0;font-weight: 500;margin: 0; white-space: break-spaces;}
 .lms-performace-table>li.lms-performace-des {padding: 0;border: 1px dashed #ddd;border-bottom: 0;}
 .lms-performace-table>li.lms-performace-des:last-child {border-bottom: 1px dashed #ddd;}
 .lms-performace-table>li.lms-performace-des .sr-no span {color: #000;}
