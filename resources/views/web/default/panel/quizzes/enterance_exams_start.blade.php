@@ -22,7 +22,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 @endphp
 <div class="content-section">
 
-    <section class="lms-quiz-section">
+    <section class="lms-quiz-section tt">
 
         @if( $quiz->quiz_pdf != '')
             <script type="text/javascript">
