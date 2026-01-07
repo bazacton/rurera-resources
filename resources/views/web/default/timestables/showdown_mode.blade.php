@@ -46,7 +46,7 @@
                 </div>
                 <ul class="lms-performace-table leaderboard mt-30">
                     <li class="lms-performace-head leaderboard-title" style="background-color: #fff;">
-                        <div><h2 class="text-center font-18">Rank#</h2></div>
+                        <div><h2 class="text-center font-16">Rank#</h2></div>
                         <div class="text-left"><span>User</span></div>
                         <div class="text-center"><span>Total Correct</span></div>
                         <div class="text-center"><span>Time Spent</span></div>
