@@ -1663,7 +1663,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 0 30px;
+    margin: -40px 0 30px;
 }
 .quiz-time-bar .coin-numbers {
     display: inline-flex;
