@@ -91,7 +91,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div>
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <button class="status-bar-on-off" type="button" data-toggle="collapse" data-target="#statusbar-data" aria-expanded="false" aria-controls="statusbar-data">status bar</button>
+                        <button class="status-bar-on-off" type="button" data-toggle="collapse" data-target="#statusbar-data" aria-expanded="false" aria-controls="statusbar-data"><span class="rurera-hide">Hide</span> Show Status</button>
                         <div class="collapse" id="statusbar-data">
                             <div class="card card-body">
                                 <div class="quiz-status-bar">
