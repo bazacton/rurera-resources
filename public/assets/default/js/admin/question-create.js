@@ -739,13 +739,20 @@ function _rureraform_properties_prepare(_object) {
     if (typeof type == undefined || type == "")
         return false;
 
-    if(type == "whole_modal_builder"){
+
+    const interactive_elements_array = {
+        whole_modal_builder: 'whole-modal-builder',
+        place_value_chart: 'place-value-chart',
+        flexible_table_builder: 'flexible-table-builder',
+        number_line_tool: 'number-line-tool'
+    };
+
+    if (interactive_elements_array[type]) {
         var json_code = _object.json_code;
-        $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
-    }
-    if(type == "place_value_chart"){
-        var json_code = _object.json_code;
-        $(".interactive_elements").find('li[data-option="place-value-chart"]').click();
+
+        $(".interactive_elements")
+            .find(`li[data-option="${interactive_elements_array[type]}"]`)
+            .click();
     }
 
     if (type == "settings") {
@@ -767,28 +774,56 @@ function _rureraform_properties_prepare(_object) {
         properties = rureraform_form_elements[i];
         //jQuery("#rureraform-element-properties").find(".rureraform-admin-popup-title h3").html("<i class='fas fa-cog'></i> " + rureraform_esc_html__("Element Properties") + "<span><i class='" + rureraform_toolbar_tools[properties["type"]]["icon"] + "'></i> " + rureraform_escape_html(properties["name"]) + "</span>");
     }
-    console.log(properties);
-    console.log('properties===='+properties);
 
-    if(properties.type == "whole_modal_builder"){
-        var json_code = properties.json_code;
-        document.getElementById('jsonBox').value=json_code;
 
-        $(".load-json-btn").click();
-        $(".interactive_elements").find('li[data-option="whole-modal-builder"]').click();
-        $(".insert-whole-modal").attr('data-insert_id', properties.id);
+    const interactiveElementsMap = {
+        whole_modal_builder: {
+            dataOption: 'whole-modal-builder',
+            jsonBoxId: 'jsonBox',
+            insertButtonClass: 'insert-whole-modal',
+            extraClickClass: '.load-json-btn' // any extra click you want to trigger
+        },
+        place_value_chart: {
+            dataOption: 'place-value-chart',
+            jsonBoxId: 'placeValueJsonBox',
+            insertButtonClass: 'insert-place-value-chart',
+            extraClickClass: '.load-json-btn-place-value-chart' // optional extra click
+        },
+        flexible_table_builder: {
+            dataOption: 'flexible-table-builder',
+            jsonBoxId: 'flexibleTableBuilderJsonBox',
+            insertButtonClass: 'insert-place-value-chart',
+            extraClickClass: '.load-json-btn-place-value-chart' // optional extra click
+        },
+        number_line_tool: {
+            dataOption: 'number-line-tool',
+            jsonBoxId: 'numberLineToolJsonBox',
+            insertButtonClass: 'insert-number-line-tool',
+            extraClickClass: '.applyJsonBtn' // optional extra click
+        }
+        // Add more types here if needed
+    };
 
-        //$("#jsonBox").html(json_code);
+
+
+    const property_type = properties.type;
+    if (interactiveElementsMap[property_type]) {
+        const info = interactiveElementsMap[property_type];
+        const json_code = properties.json_code;
+
+        // Set JSON value
+        document.getElementById(info.jsonBoxId).value = json_code;
+
+        // Trigger clicks
+        $(".load-json-btn").click(); // common click
+        if (info.extraClickClass) $(info.extraClickClass).click(); // optional extra click per type
+        $(".interactive_elements").find(`li[data-option="${info.dataOption}"]`).click();
+
+        // Set insert button ID
+        $(`.${info.insertButtonClass}`).attr('data-insert_id', properties.id);
     }
-    if(properties.type == "place_value_chart"){
-        var json_code = properties.json_code;
-        document.getElementById('placeValueJsonBox').value=json_code;
 
-        $(".load-json-btn").click();
-        $(".interactive_elements").find('li[data-option="place-value-chart"]').click();
-        $(".insert-place-value-chart").attr('data-insert_id', properties.id);
-        $(".load-json-btn-place-value-chart").click();
-    }
+
 
     input_fields = rureraform_input_sort();
 
@@ -7377,6 +7412,22 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     var json_code = rureraform_form_elements[i]["json_code"];
 
                     html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group place_value_chart_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
+                    break;
+
+                case "flexible_table_builder":
+
+                    var label_data = rureraform_form_elements[i]["content"];
+                    var json_code = rureraform_form_elements[i]["json_code"];
+
+                    html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group flexible_table_builder_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
+                    break;
+
+                case "number_line_tool":
+
+                    var label_data = rureraform_form_elements[i]["content"];
+                    var json_code = rureraform_form_elements[i]["json_code"];
+
+                    html += "<div id='rureraform-element-" + i + "' data-index_i='"+i+"' class='rureraform-element-" + i + " rureraform-element quiz-group number_line_tool_element rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
                     break;
 
 
