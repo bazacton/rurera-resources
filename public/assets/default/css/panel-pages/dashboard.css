@@ -571,9 +571,9 @@ body:has(.edit-profile) {background-color: #f9fafe;}
 .question-result-layout .questions-controls {float: inline-end;}
 .question-result-layout hr {display: none;}
 .question-result-layout .field-holder,
-.question-result-layout .form-field label{background-color: inherit;}
+/* .question-result-layout .form-field label{background-color: inherit;}
 .question-result-layout .lms-sorting-fields .field-holder,
-.question-result-layout .form-field label {border-color: #999;}
+.question-result-layout .form-field label {border-color: #999;} */
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
 .chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
