@@ -1571,7 +1571,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     border: 1px solid #ddd;
     padding: 5px 12px;
     border-radius: 3px;
-    margin: 0 0 30px;
+    margin: 0 0 15px;
     outline: none;
 }
 .status-bar-on-off span.rurera-hide {
