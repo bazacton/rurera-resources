@@ -38,7 +38,7 @@ Lms Responsive Style Start
     .gallery-sub-header .container > .row > [class*="col-"] {padding-right: 70px;}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1600px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
     .navbar-nav .educator-menu {position: relative;}
     nav.top-navbar .login-btn, nav .register-btn {white-space: nowrap; font-size: 14px !important;}
     .lms-mega-menu {width: 100%;}
