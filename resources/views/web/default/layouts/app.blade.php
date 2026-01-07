@@ -9,8 +9,11 @@
 @endphp
 
 <head>
+    @php
+        $pageTitle = isset($pageTitle)? $pageTitle : '';
+        $seo_title = isset($seo_title)? $seo_title : $pageTitle; @endphp
     @include('web.default.includes.metas')
-    <title>{{ $page_title ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
+    <title>{{ $seo_title }}</title>
 
     <!-- General CSS File -->
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
