@@ -106,10 +106,10 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                 <span class="total-earned-coins">1</span>
                             </span>
                         </div>
-                        <div class="show-hide-statusbar mb-30">
+                        <div class="show-hide-statusbar">
                             <div class="collapse" id="statusbar-data">
                                 <div class="card card-body p-0 border-0">
-                                    <div class="quiz-status-bar">
+                                    <div class="quiz-status-bar mb-30">
                                         <div class="quiz-questions-bar-holder">
                                             <div class="quiz-questions-bar">
                                                 <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
