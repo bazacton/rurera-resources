@@ -2361,6 +2361,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .preview-question-area .draggable-items {
     display: flex;
     margin: 15px 0;
+    padding-left: 0;
 }
 .lms-card-timeline .lms-card-info h5 {
     display: flex;
