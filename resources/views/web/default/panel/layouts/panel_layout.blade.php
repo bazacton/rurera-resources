@@ -76,6 +76,24 @@
                                 <div class="col-12 col-lg-12">
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
 
+                                    @if(auth()->user()->isUser())
+                                        <div class="col-12 col-lg-12 mb-30">
+                                            <div class="store-stats panel-border bg-white rounded-sm p-20">
+                                                <ul>
+                                                    <li>
+                                                        <div class="store-item">
+                                                            <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
+                                                            <span class="item-label">
+                                                        Current Balance
+                                                        <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
+                                                    </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    @endif
+
                                     @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
                                     <div class="panel-rightside-menu mb-30" itemscope itemtype="https://schema.org/Article">
                                         <div class="user-info">
@@ -146,21 +164,6 @@
                                 </div>
                                 
                                 @if(auth()->user()->isUser())
-                                <div class="col-12 col-lg-12 mb-30">
-                                    <div class="store-stats panel-border bg-white rounded-sm p-20">
-                                        <ul>
-                                            <li>
-                                                <div class="store-item">
-                                                    <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                    <span class="item-label">
-                                                        Current Balance
-                                                        <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                                 @if(request()->is('panel'))
                                     <div class="col-12 col-lg-12">
                                         <div class="getting-start panel-border bg-white rounded-sm p-20 mb-30">
