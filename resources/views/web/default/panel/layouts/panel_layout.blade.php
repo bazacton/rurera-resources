@@ -77,7 +77,7 @@
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
 
                                     @if(auth()->user()->isUser())
-                                        <div class="col-12 col-lg-12 mb-30">
+                                        <div class="col-12 col-lg-12 mb-30 px-0">
                                             <div class="store-stats panel-border bg-white rounded-sm p-20">
                                                 <ul>
                                                     <li>
