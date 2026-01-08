@@ -3017,9 +3017,6 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     border-radius: 25px;
     gap: 10px;
 }
-#scroll-controls #btn-bottom {
-    margin-top: -130px;
-}
 
 /* Circular Shape for Icon-only Buttons */
 .page-prev-next-controls .circle {
