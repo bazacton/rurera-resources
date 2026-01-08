@@ -496,37 +496,53 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
         const mathLikePattern = /([a-zA-Z0-9]\s*[\^_=+\-\/]\s*[a-zA-Z0-9{])/;
 
-        // 1️⃣ Normal text nodes
-        document.querySelectorAll('*:not(script):not(style)').forEach(el => {
-            if (el.children.length > 0) return;
+        // 🔹 Target BOTH containers
+        const containers = document.querySelectorAll(
+            '.question-layout, .question-explaination'
+        );
 
-            let text = el.textContent?.trim();
-            if (!text) return;
+        containers.forEach(container => {
 
-            // Skip already wrapped math
-            if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
+            // 1️⃣ Normal text nodes (scoped)
+            container.querySelectorAll('*:not(script):not(style)').forEach(el => {
+                if (el.children.length > 0) return;
 
-            // Detect LaTeX OR math-like expressions
-            if (text.includes('\\') || mathLikePattern.test(text)) {
-                el.innerHTML = `$$${text}$$`;
-            }
+                let text = el.textContent?.trim();
+                if (!text) return;
+
+                // Skip already wrapped math
+                if (
+                    text.includes('$$') ||
+                    text.includes('\\(') ||
+                    text.includes('\\[')
+                ) return;
+
+                // Detect LaTeX OR math-like expressions
+                if (text.includes('\\') || mathLikePattern.test(text)) {
+                    el.innerHTML = `$$${text}$$`;
+                }
+            });
+
+            // 2️⃣ .math-equation spans
+            container.querySelectorAll('.math-equation').forEach(el => {
+                if (el.dataset.converted) return;
+
+                let latex =
+                    el.getAttribute('data-equation') ||
+                    el.textContent?.trim();
+
+                if (!latex) return;
+
+                el.innerHTML = `$$${latex}$$`;
+                el.dataset.converted = 'true';
+            });
+
         });
 
-        // 2️⃣ .math-equation spans
-        document.querySelectorAll('.math-equation').forEach(el => {
-            if (el.dataset.converted) return;
-
-            let latex = el.getAttribute('data-equation') || el.textContent?.trim();
-            if (!latex) return;
-
-            el.innerHTML = `$$${latex}$$`;
-            el.dataset.converted = 'true';
-        });
-
-        // 3️⃣ Render with MathJax
+        // 3️⃣ MathJax render (ONLY these containers)
         if (window.MathJax?.typesetPromise) {
-            MathJax.typesetClear();
-            MathJax.typesetPromise().catch(err =>
+            MathJax.typesetClear(containers);
+            MathJax.typesetPromise(containers).catch(err =>
                 console.error('MathJax error:', err)
             );
         }
