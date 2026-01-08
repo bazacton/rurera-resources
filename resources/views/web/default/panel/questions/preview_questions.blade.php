@@ -96,6 +96,28 @@ $rand_id = rand(99,9999);
                                                             </svg>
                                                         </button>
                                                         <div class="question-right-inner">
+                                                            <div class="prev-next-controls text-center mb-50 questions-nav-controls disable-div">
+                                                                <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+                                                                    Finish
+                                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                                </a>
+                                                                <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
+                                                                    prev
+                                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                                </a>
+                                                                <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
+                                                                    Next
+                                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                                </a>
+
+                                                                <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                                                    mark answer
+                                                                </a>
+
+                                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                                                    Next
+                                                                </a>
+                                                            </div>
                                                             <div class="question-detail-holder">
                                                                 <div class="question-right-header">
                                                                     <p>Question {{$counter}} / {{$questions->count()}}</p>
@@ -250,29 +272,6 @@ $rand_id = rand(99,9999);
                                             </button>
                                         </div>
                                     </div>
-									<div class="prev-next-controls text-center mb-50 questions-nav-controls disable-div">
-										<a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
-											Finish
-											<img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-										</a>
-                                        <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
-                                            prev
-                                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                        </a>
-										<a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
-											Next
-											<img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-										</a>
-
-										<a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-											mark answer
-										</a>
-
-                                    <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                        Next
-                                    </a>
-									</div>
-
 								</div>
 							</div>
 						</div>
