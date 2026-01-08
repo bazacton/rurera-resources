@@ -2316,6 +2316,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
+    padding: 0 15px;
 }
 .question-right-side.hidden {
     transform: translateX(100%);
