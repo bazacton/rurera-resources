@@ -496,9 +496,14 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
         const mathLikePattern = /([a-zA-Z0-9]\s*[\^_=+\-\/]\s*[a-zA-Z0-9{])/;
 
-        document.querySelectorAll('.question-layout').forEach(container => {
+        // 🔹 Target BOTH containers
+        const containers = document.querySelectorAll(
+            '.question-layout, .question-explaination'
+        );
 
-            // 1️⃣ Normal text nodes (scoped per question-layout)
+        containers.forEach(container => {
+
+            // 1️⃣ Normal text nodes (scoped)
             container.querySelectorAll('*:not(script):not(style)').forEach(el => {
                 if (el.children.length > 0) return;
 
@@ -518,7 +523,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
                 }
             });
 
-            // 2️⃣ .math-equation spans (scoped per question-layout)
+            // 2️⃣ .math-equation spans
             container.querySelectorAll('.math-equation').forEach(el => {
                 if (el.dataset.converted) return;
 
@@ -534,9 +539,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
         });
 
-        // 3️⃣ Render MathJax ONLY for question layouts
+        // 3️⃣ MathJax render (ONLY these containers)
         if (window.MathJax?.typesetPromise) {
-            const containers = document.querySelectorAll('.question-layout');
             MathJax.typesetClear(containers);
             MathJax.typesetPromise(containers).catch(err =>
                 console.error('MathJax error:', err)
