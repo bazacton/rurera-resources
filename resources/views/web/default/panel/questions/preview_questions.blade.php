@@ -435,9 +435,9 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-var container = document.querySelector('.preview-question-area .left-content');
 var btnTop = document.getElementById('btn-top');        // DOWN
 var btnBottom = document.getElementById('btn-bottom'); // UP
+var container = null;
 
 function hideButtons() {
     btnTop.classList.add('btn-hidden');
@@ -445,10 +445,12 @@ function hideButtons() {
 }
 
 function isScrollable() {
-    return container.scrollHeight > container.clientHeight + 1;
+    return container && container.scrollHeight > container.clientHeight + 1;
 }
 
 function updateScrollState() {
+
+    container = getActiveContainer();
 
     if (!container || !isScrollable()) {
         hideButtons();
@@ -473,30 +475,36 @@ function updateScrollState() {
 
 /* 🔼 Scroll to top */
 function scrollUp() {
+    container = getActiveContainer();
     if (!isScrollable()) return;
-    container.scrollTo({ top: 0, behavior: 'smooth' });
+
+    container.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 /* 🔽 Scroll to bottom */
 function scrollDown() {
+    container = getActiveContainer();
     if (!isScrollable()) return;
-    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+
+    container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth'
+    });
 }
 
 /* Button events */
 btnTop.addEventListener('click', scrollDown);
 btnBottom.addEventListener('click', scrollUp);
 
-/* Scroll listener */
-container.addEventListener('scroll', updateScrollState);
-window.addEventListener('resize', updateScrollState);
-
-/* ⌨️ Keyboard controls */
+/* Keyboard support */
 document.addEventListener('keydown', function (e) {
 
+    container = getActiveContainer();
     if (!isScrollable()) return;
 
-    /* Prevent page scroll */
     if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
         e.preventDefault();
     }
@@ -515,8 +523,21 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-/* Initial check */
+/* Resize update */
+window.addEventListener('resize', updateScrollState);
+
+/* 🔁 CALL THIS AFTER SECTION CHANGE */
+function onSectionChange() {
+    container = getActiveContainer();
+    if (!container) return;
+
+    container.scrollTop = 0;
+    updateScrollState();
+}
+
+/* Initial */
 updateScrollState();
+
 </script>
 <script>
     function wrapRawLatex() {
