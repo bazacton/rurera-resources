@@ -120,13 +120,14 @@ $rand_id = rand(99,9999);
                                                                     <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
                                                                         <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                                     </a>
+                                                                    <span class="question-counts">{{$counter}} / {{$questions->count()}}</span>
                                                                     <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
                                                                         <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                                     </a>
                                                                 </div>
                                                                 <div class="question-detail-holder">
                                                                     <div class="question-right-header">
-                                                                        <p>Question {{$counter}} / {{$questions->count()}}</p>
+                                                                        <p>Question </p>
                                                                         <span class="questions-total-holder d-block">
                                                                             <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
 
