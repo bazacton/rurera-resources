@@ -281,22 +281,22 @@ $rand_id = rand(99,9999);
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
-                                            <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
+                                            <!-- <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
                                                 prev
                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                             </a>
                                             <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
                                                 Next
                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                            </a>
+                                            </a> -->
 
                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                                                 mark answer
                                             </a>
 
-                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                            <!-- <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
                                                 Next
-                                            </a>
+                                            </a> -->
                                         </div>
                                     </div>
                                 </div>
