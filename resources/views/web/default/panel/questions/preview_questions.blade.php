@@ -440,8 +440,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     var btnBottom = document.getElementById('btn-bottom'); // UP button
 
     function hideButtons() {
-        btnTop.classList.add('hidden');
-        btnBottom.classList.add('hidden');
+        btnTop.classList.add('btn-hidden');
+        btnBottom.classList.add('btn-hidden');
     }
 
     function updateScrollState() {
@@ -460,13 +460,13 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
         /* 🔼 At bottom → show UP only */
         if (scrollTop + clientHeight >= scrollHeight - 1) {
-            btnTop.classList.add('hidden');
-            btnBottom.classList.remove('hidden');
+            btnTop.classList.add('btn-hidden');
+            btnBottom.classList.remove('btn-hidden');
         }
         /* 🔽 Anywhere else → show DOWN only */
         else {
-            btnTop.classList.remove('hidden');
-            btnBottom.classList.add('hidden');
+            btnTop.classList.remove('btn-hidden');
+            btnBottom.classList.add('btn-hidden');
         }
     }
 
