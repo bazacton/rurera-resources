@@ -2260,7 +2260,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
 }
 .preview-question-area {
     padding-right: 400px;
-    transition: transform 0.3s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .preview-question-area.centered {
     padding-right: 0;
