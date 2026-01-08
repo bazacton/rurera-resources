@@ -2377,6 +2377,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     font-size: 14px;
     border: 0;
     margin: 0;
+    background-color: inherit;
 }
 .question-right-side .prev-next-controls img {
     height: 12px;
