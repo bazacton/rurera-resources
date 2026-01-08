@@ -2283,16 +2283,11 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow: hidden;
     overflow-y: auto;
     height: calc(100vh - 100px);
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 /* Main scroll container */
-.preview-question-area .left-content {
-  overflow: auto;
-  scrollbar-gutter: stable overlay; /* Prevent width shift */
-  
-  /* Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-}
 
 /* Chrome, Edge, Safari */
 .preview-question-area .left-content::-webkit-scrollbar {
