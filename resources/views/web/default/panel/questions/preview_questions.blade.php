@@ -88,9 +88,13 @@ $rand_id = rand(99,9999);
                                                                     <span class="total-earned-coins">1</span>
                                                                 </span>
                                                             </div>
-                                                    <div class="question-layout row">
-                                                        {!! $question_layout !!}
-                                                    </div>
+                                                            <div class="question-counts">
+                                                                <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                                                <span>Question 8 of 20</span>
+                                                            </div>
+                                                        <div class="question-layout row">
+                                                            {!! $question_layout !!}
+                                                        </div>
 
                                                     @if(ReviewPermission(auth()->user()->id))
                                                         <div class="question-explaination mt-15">
