@@ -121,60 +121,55 @@
                                             <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                                                 <ul class="lms-chapter-ul" id="accordion">
                                                     @foreach($course->chapters as $chapter)
-                                                        @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                                            <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-20">{{ $chapter->title }}</h2></div>
+                                                        <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
-                                                                @if($chapter->subChapters->count() > 0)
-                                                                    <div class="lms-chapter-ul-outer">
-                                                                        <ul>
-                                                                            @foreach($chapter->subChapters as $subChapterObj)
-                                                                                @php $total_completion = 0;
-                                                                        $quizObj = isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem : (object) array();
+                                                            @if($chapter->ChapterYearTopicParts->count() > 0)
+                                                                <div class="lms-chapter-ul-outer">
+                                                                    <ul>
+                                                                        @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
+
+                                                                        @php
+
+                                                                        $total_completion = 0;
+                                                                        $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
+
                                                                         $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
                                                                         $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
-                                                                        $total_completion = 40;
-                                                                                @endphp
+                                                                        $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
-                                                                                <li>
-                                                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$subChapterObj->id}}" aria-expanded="true">{{ $subChapterObj->sub_chapter_title }} - {{isset($subChapterObj->QuizItem->id)? $subChapterObj->QuizItem->id : '-'}}
-                                                                                        <span class="topic-accuracy accuracy-not-started" data-title="Not Started"> <span class="icon-box"><img src="/assets/default/svgs/above_0.svg"></span> </span>
-                                                                                        <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"> <span class="icon-box"><img src="/assets/default/svgs/above_25.svg"></span></span>
-                                                                                        <span class="topic-accuracy accuracy-good" data-title="Good"><span class="icon-box"><img src="/assets/default/svgs/above_50.svg"></span></span>
-                                                                                        <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><span class="icon-box"><img src="/assets/default/svgs/above_80.svg" ></span></span>
-                                                                                        <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><span class="icon-box"><img src="/assets/default/svgs/above_80.svg" ></span></span>
-                                                                                    </a>
-                                                                                    <div id="collapse{{$subChapterObj->id}}" class="collapse" data-parent="#accordion">
-                                                                                        <ul class="topic-activity-details">
-                                                                                            <li><span>Questions answered:</span> 10</li>
-                                                                                            <li><span>Time Spent:</span> 15m</li>
-                                                                                            <li><span>Last practised:</span> 19/12/2025</li>
-                                                                                        </ul>
-                                                                                        <ul>
-                                                                                            <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
-                                                                                            <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
-                                                                                            <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    
-                                                                                    <div class="percent-holder">
-                                                                                        <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
-                                                                                            <div class="circle_inner">
-                                                                                                <div class="round_per"></div>
-                                                                                            </div>
+                                                                        //$total_completion = 40;
+                                                                            @endphp
+
+                                                                            <li>
+                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} - {{$topicPartObj->id}} - Q{{isset($quizObj->id)? $quizObj->id : '-'}} ---- {{$user_difficulty_level}}
+                                                                                    <span class="topic-accuracy accuracy-not-started" data-title="Not Started"><img src="/assets/default/svgs/above_0.svg"></span>
+                                                                                    <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"><img src="/assets/default/svgs/above_25.svg"></span>
+                                                                                    <span class="topic-accuracy accuracy-good" data-title="Good"><img src="/assets/default/svgs/above_50.svg" ></span>
+                                                                                    <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><img src="/assets/default/svgs/above_80.svg" ></span>
+                                                                                    <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><img src="/assets/default/svgs/above_80.svg" ></span>
+                                                                                </a>
+                                                                                <ul id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
+                                                                                    <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
+                                                                                    <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
+                                                                                    <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
+                                                                                </ul>
+                                                                                <div class="percent-holder">
+                                                                                    <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+                                                                                        <div class="circle_inner">
+                                                                                            <div class="round_per"></div>
                                                                                         </div>
                                                                                     </div>
+                                                                                </div>
+
+                                                                            </li>
 
 
-                                                                                </li>
+                                                                        @endforeach
+                                                                    </ul>
+                                                                </div>
 
-
-                                                                            @endforeach
-                                                                        </ul>
-                                                                    </div>
                                                                 @endif
-
-                                                            </li>
-                                                        @endif
+                                                        </li>
                                                     @endforeach
                                                 </ul>
                                             </div>
