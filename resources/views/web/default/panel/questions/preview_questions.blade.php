@@ -73,7 +73,7 @@ $rand_id = rand(99,9999);
                                                                     <span class="quiz-incorrects">0</span>
                                                                 </div>
                                                             </div> -->
-                                                            <div class="quiz-time-bar px-30 mt-20 mb-80">
+                                                            <div class="quiz-time-bar pt-15">
                                                                 <div class="timer-wrap">
                                                                     <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
