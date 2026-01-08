@@ -2367,19 +2367,19 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     background-color: #fff;
     min-height: auto;
     justify-content: space-between;
+    pointer-events: auto;
 }
 .question-right-side .prev-next-controls .prev-btn,
 .question-right-side .prev-next-controls .next-btn{
-    padding: 8px 15px 8px 25px;
+    padding: 0;
     min-height: auto;
     font-size: 14px;
-}
-.question-right-side .prev-next-controls .next-btn {
-    padding: 8px 25px 8px 15px;
+    border: 0;
 }
 .question-right-side .prev-next-controls img {
     height: 10px;
     width: 10px;
+    position: relative;
 }
 .preview-question-area .form-box {
     user-select: none;
