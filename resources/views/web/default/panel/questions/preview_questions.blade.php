@@ -441,7 +441,7 @@ var container = null;
 
 /* Get current active container */
 function getActiveContainer() {
-    var activeSection = document.querySelector('.active');
+    var activeSection = document.querySelector('.rurera-question-block.active');
     return activeSection ? activeSection.querySelector('.preview-question-area .left-content') : null;
 }
 
