@@ -436,75 +436,57 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 </script>
 <script>
     var container = document.querySelector('.question-area-block');
-
     var btnTop = document.getElementById('btn-top');
-    var groupMiddle = document.getElementById('group-middle');
     var btnBottom = document.getElementById('btn-bottom');
-    var btnMidUp = document.getElementById('btn-mid-up');
-    var btnMidDown = document.getElementById('btn-mid-down');
-
-    var SCROLL_AMOUNT = 200;
-
-    function hideAllButtons() {
-        btnTop.classList.add('hidden');
-        groupMiddle.classList.add('hidden');
-        btnBottom.classList.add('hidden');
-    }
 
     function updateScrollState() {
-
-        if (!container) return;
-
-        var scrollHeight = container.scrollHeight;
-        var clientHeight = container.clientHeight;
+        var contentHeight = container.scrollHeight;
+        var containerHeight = container.clientHeight;
         var scrollTop = container.scrollTop;
 
-        /* ❌ NO OVERFLOW = NO BUTTONS */
-        if (scrollHeight <= clientHeight + 2) {
-            hideAllButtons();
+        // No scroll needed
+        if (contentHeight <= containerHeight + 5) {
+            btnTop.classList.add('hidden');
+            btnBottom.classList.add('hidden');
             return;
         }
 
-        /* TOP */
-        if (scrollTop <= 10) {
-            btnTop.classList.remove('hidden');   // scroll down
-            groupMiddle.classList.add('hidden');
-            btnBottom.classList.add('hidden');
-        }
-        /* BOTTOM */
-        else if (scrollTop + clientHeight >= scrollHeight - 10) {
+        // At bottom → show UP
+        if (scrollTop + containerHeight >= contentHeight - 5) {
             btnTop.classList.add('hidden');
-            groupMiddle.classList.add('hidden');
-            btnBottom.classList.remove('hidden'); // scroll up
+            btnBottom.classList.remove('hidden');
         }
-        /* MIDDLE */
+        // Else → show DOWN
         else {
-            btnTop.classList.add('hidden');
-            groupMiddle.classList.remove('hidden');
+            btnTop.classList.remove('hidden');
             btnBottom.classList.add('hidden');
         }
     }
 
+    /* 🔼 FULL scroll to top */
     function scrollUp() {
-        container.scrollBy({ top: -SCROLL_AMOUNT, behavior: 'smooth' });
+        container.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
+    /* 🔽 FULL scroll to bottom */
     function scrollDown() {
-        container.scrollBy({ top: SCROLL_AMOUNT, behavior: 'smooth' });
+        container.scrollTo({
+            top: container.scrollHeight,
+            behavior: 'smooth'
+        });
     }
 
-    /* Button events */
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
-    btnMidUp.addEventListener('click', scrollUp);
-    btnMidDown.addEventListener('click', scrollDown);
 
-    /* Listen to DIV scroll only */
     container.addEventListener('scroll', updateScrollState);
     window.addEventListener('resize', updateScrollState);
 
-    /* Initial check */
     updateScrollState();
+
 
 </script>
 <script>
