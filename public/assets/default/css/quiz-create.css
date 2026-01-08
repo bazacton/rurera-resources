@@ -1849,6 +1849,24 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .question-result-layout .rureraform-element select {background-image: url(/assets/default/svgs/arrow-down.svg); background-repeat: no-repeat; background-size: 15px; background-position: 94% center; border: 1px solid #eee; min-width: 150px; max-height: 30px; min-height: 30px; padding: 0 28px 0 10px; border-radius: 5px; line-height: normal; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 /* Quiz Select Option Style End*/
 
+/* Separator_Line Style Start*/
+.separator_line .question-separator {
+    border-bottom: 2px solid #ddd;
+    height: 1px;
+    width: 100%;
+    display: inline-block;
+}
+/* Separator_Line Style End*/
+
+/* Separator_Dotted_Line Style Start*/
+.separator_dotted_line .question-separator {
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 2px dotted #ddd;
+}
+/* Separator_Dotted_Line Style End*/
+
 /* Quiz Backend Columns Width Style Start*/
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
     .tab-pane .row {
