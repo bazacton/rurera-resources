@@ -2257,7 +2257,7 @@ Quiz Check Answers Page Style End
 *****************************/
 
 
-/* Review Question Right Side Style Start */
+/* Preview Question Right Side Style Start */
 body:has(.type-practice.type-sats.preview-question-area) {
     overflow: hidden;
 }
@@ -2324,6 +2324,9 @@ body:has(.type-practice.type-sats.preview-question-area) {
     border: 0;
     border-radius: 0;
     padding: 0;
+}
+.preview-question-area .question-explaination {
+    background-color: #fff;
 }
 .question-right-side .toggle-btn {
     position: absolute;
