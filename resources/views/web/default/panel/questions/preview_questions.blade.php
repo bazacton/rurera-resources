@@ -35,7 +35,7 @@ $rand_id = rand(99,9999);
         <section class="learning-content lms-quiz-section">
             <div class="container questions-data-block read-quiz-content" data-total_questions="0">
                 <div class="justify-content-center">
-                    <div class="col-lg-12 col-md-12 col-sm-12 mt-50 mx-auto">
+                    <div class="col-lg-9 col-md-9 col-sm-12 mt-50 mx-auto">
 
                         <div class="question-area-block" data-active_question_id="0" data-questions_layout="">
                             @php $total_questions = 10; @endphp
