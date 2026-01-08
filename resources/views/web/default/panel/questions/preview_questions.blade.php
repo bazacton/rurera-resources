@@ -90,6 +90,11 @@ $rand_id = rand(99,9999);
 
                                                     </div>
                                                     <div class="question-right-side">
+                                                        <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                                <polyline points="15 18 9 12 15 6"></polyline>
+                                                            </svg>
+                                                        </button>
                                                         <div class="question-detail-holder">
                                                             <div class="question-right-header">
                                                                 <p>Question {{$counter}} / {{$questions->count()}}</p>
@@ -496,5 +501,19 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     }
 
     document.addEventListener('DOMContentLoaded', wrapRawLatex);
+</script>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.question-right-side');
+        const mainContent = document.querySelector('.preview-question-area');
+
+        sidebar.classList.toggle('hidden');
+
+        if (sidebar.classList.contains('hidden')) {
+            mainContent.classList.add('centered');
+        } else {
+            mainContent.classList.remove('centered');
+        }
+    }
 </script>
 @endpush
