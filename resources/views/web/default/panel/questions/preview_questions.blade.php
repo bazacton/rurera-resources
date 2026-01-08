@@ -292,9 +292,9 @@ $rand_id = rand(99,9999);
 											mark answer
 										</a>
 
-                                    <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                        Next
-                                    </a>
+                                        <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                            Next
+                                        </a>
 									</div>
 								</div>
 							</div>
