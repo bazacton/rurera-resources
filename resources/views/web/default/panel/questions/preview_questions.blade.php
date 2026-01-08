@@ -435,66 +435,88 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-    var container = document.querySelector('.preview-question-area .left-content');
-    var btnTop = document.getElementById('btn-top');     // DOWN button
-    var btnBottom = document.getElementById('btn-bottom'); // UP button
+var container = document.querySelector('.preview-question-area .left-content');
+var btnTop = document.getElementById('btn-top');        // DOWN
+var btnBottom = document.getElementById('btn-bottom'); // UP
 
-    function hideButtons() {
+function hideButtons() {
+    btnTop.classList.add('btn-hidden');
+    btnBottom.classList.add('btn-hidden');
+}
+
+function isScrollable() {
+    return container.scrollHeight > container.clientHeight + 1;
+}
+
+function updateScrollState() {
+
+    if (!container || !isScrollable()) {
+        hideButtons();
+        return;
+    }
+
+    var scrollTop = container.scrollTop;
+    var scrollHeight = container.scrollHeight;
+    var clientHeight = container.clientHeight;
+
+    /* At bottom → show UP */
+    if (scrollTop + clientHeight >= scrollHeight - 1) {
         btnTop.classList.add('btn-hidden');
+        btnBottom.classList.remove('btn-hidden');
+    }
+    /* Else → show DOWN */
+    else {
+        btnTop.classList.remove('btn-hidden');
         btnBottom.classList.add('btn-hidden');
     }
+}
 
-    function updateScrollState() {
+/* 🔼 Scroll to top */
+function scrollUp() {
+    if (!isScrollable()) return;
+    container.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-        if (!container) return;
+/* 🔽 Scroll to bottom */
+function scrollDown() {
+    if (!isScrollable()) return;
+    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+}
 
-        var scrollHeight = container.scrollHeight;
-        var clientHeight = container.clientHeight;
-        var scrollTop = container.scrollTop;
+/* Button events */
+btnTop.addEventListener('click', scrollDown);
+btnBottom.addEventListener('click', scrollUp);
 
-        /* ❌ No overflow = no buttons */
-        if (scrollHeight <= clientHeight + 1) {
-            hideButtons();
-            return;
-        }
+/* Scroll listener */
+container.addEventListener('scroll', updateScrollState);
+window.addEventListener('resize', updateScrollState);
 
-        /* 🔼 At bottom → show UP only */
-        if (scrollTop + clientHeight >= scrollHeight - 1) {
-            btnTop.classList.add('btn-hidden');
-            btnBottom.classList.remove('btn-hidden');
-        }
-        /* 🔽 Anywhere else → show DOWN only */
-        else {
-            btnTop.classList.remove('btn-hidden');
-            btnBottom.classList.add('btn-hidden');
-        }
+/* ⌨️ Keyboard controls */
+document.addEventListener('keydown', function (e) {
+
+    if (!isScrollable()) return;
+
+    /* Prevent page scroll */
+    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
+        e.preventDefault();
     }
 
-    /* 🔼 Scroll to top */
-    function scrollUp() {
-        container.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+    switch (e.key) {
+        case 'ArrowDown':
+        case 'PageDown':
+        case ' ':
+            scrollDown();
+            break;
+
+        case 'ArrowUp':
+        case 'PageUp':
+            scrollUp();
+            break;
     }
+});
 
-    /* 🔽 Scroll to bottom */
-    function scrollDown() {
-        container.scrollTo({
-            top: container.scrollHeight,
-            behavior: 'smooth'
-        });
-    }
-
-    /* Events */
-    btnTop.addEventListener('click', scrollDown);
-    btnBottom.addEventListener('click', scrollUp);
-
-    container.addEventListener('scroll', updateScrollState);
-    window.addEventListener('resize', updateScrollState);
-
-    /* Initial run */
-    updateScrollState();
+/* Initial check */
+updateScrollState();
 </script>
 <script>
     function wrapRawLatex() {
