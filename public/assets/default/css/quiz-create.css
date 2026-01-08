@@ -2561,7 +2561,6 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     outline: none !important;
     padding: 0;
     box-shadow: none !important;
-    font-size: 16px;
 }
 .lms-card-timeline .card p {
     font-size: 14px;
