@@ -2297,15 +2297,16 @@ body:has(.type-practice.type-sats.preview-question-area) {
     background-color: #fff;
     max-width: 400px;
     z-index: 2;
-    overflow: hidden;
     padding: 0 15px 25px 0;
     position: fixed;
     right: 0;
-    overflow-y: auto;
     height: 100%;
     margin-top: 25px;
     transition: transform 0.3s ease;
-    position: relative;
+}
+.preview-question-area .question-right-inner {
+    overflow: hidden;
+    overflow-y: auto;
 }
 .question-right-side.hidden {
     transform: translateX(100%);
