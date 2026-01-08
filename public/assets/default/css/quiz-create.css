@@ -364,6 +364,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
     width: 20px;
     margin-left: -10px;
 }
+
 .rureraform-form-editor .draggable-items .draggable-option {margin-top: 0; padding: 8px 20px 8px; display: block;}
 .rureraform-builder .draggable-items {
     display: flex;
