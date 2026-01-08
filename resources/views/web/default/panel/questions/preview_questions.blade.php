@@ -439,10 +439,10 @@ var btnTop = document.getElementById('btn-top');        // DOWN
 var btnBottom = document.getElementById('btn-bottom'); // UP
 var container = null;
 
-/* Get current active container */
+/* Get active question container */
 function getActiveContainer() {
-    var activeSection = document.querySelector('.rurera-question-block.active');
-    return activeSection ? activeSection.querySelector('.preview-question-area .left-content') : null;
+    var active = document.querySelector('.rurera-question-block.active');
+    return active ? active.querySelector('.preview-question-area .left-content') : null;
 }
 
 function hideButtons() {
@@ -450,15 +450,27 @@ function hideButtons() {
     btnBottom.classList.add('btn-hidden');
 }
 
-function isScrollable() {
-    return container && container.scrollHeight > container.clientHeight + 1;
+function isScrollable(el) {
+    return el && el.scrollHeight > el.clientHeight + 1;
 }
 
+/* Main state update */
 function updateScrollState() {
 
-    container = getActiveContainer();
+    var newContainer = getActiveContainer();
 
-    if (!container || !isScrollable()) {
+    /* Active section changed */
+    if (container !== newContainer) {
+        if (container) {
+            container.removeEventListener('scroll', updateScrollState);
+        }
+        container = newContainer;
+        if (container) {
+            container.addEventListener('scroll', updateScrollState);
+        }
+    }
+
+    if (!container || !isScrollable(container)) {
         hideButtons();
         return;
     }
@@ -467,88 +479,61 @@ function updateScrollState() {
     var scrollHeight = container.scrollHeight;
     var clientHeight = container.clientHeight;
 
-    /* At bottom → show UP */
+    /* At bottom → UP */
     if (scrollTop + clientHeight >= scrollHeight - 1) {
         btnTop.classList.add('btn-hidden');
         btnBottom.classList.remove('btn-hidden');
     }
-    /* Else → show DOWN */
+    /* Else → DOWN */
     else {
         btnTop.classList.remove('btn-hidden');
         btnBottom.classList.add('btn-hidden');
     }
 }
 
-/* 🔼 Scroll to top */
+/* 🔼 Top */
 function scrollUp() {
-    container = getActiveContainer();
-    if (!isScrollable()) return;
-
-    container.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    if (!container || !isScrollable(container)) return;
+    container.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-/* 🔽 Scroll to bottom */
+/* 🔽 Bottom */
 function scrollDown() {
-    container = getActiveContainer();
-    if (!isScrollable()) return;
-
-    container.scrollTo({
-        top: container.scrollHeight,
-        behavior: 'smooth'
-    });
+    if (!container || !isScrollable(container)) return;
+    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
 }
 
-/* Button events */
+/* Buttons */
 btnTop.addEventListener('click', scrollDown);
 btnBottom.addEventListener('click', scrollUp);
 
-/* Scroll listener (dynamic attach) */
-document.addEventListener('scroll', function (e) {
-    if (e.target.classList && e.target.classList.contains('left-content')) {
-        updateScrollState();
-    }
-}, true);
-
-/* Keyboard support */
+/* Keyboard controls */
 document.addEventListener('keydown', function (e) {
 
     container = getActiveContainer();
-    if (!isScrollable()) return;
+    if (!isScrollable(container)) return;
 
     if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
         e.preventDefault();
     }
 
-    switch (e.key) {
-        case 'ArrowDown':
-        case 'PageDown':
-        case ' ':
-            scrollDown();
-            break;
-
-        case 'ArrowUp':
-        case 'PageUp':
-            scrollUp();
-            break;
+    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
+        scrollDown();
+    } else if (['ArrowUp', 'PageUp'].includes(e.key)) {
+        scrollUp();
     }
 });
+
+/* Auto-detect active section changes */
+new MutationObserver(updateScrollState).observe(
+    document.body,
+    { attributes: true, subtree: true, attributeFilter: ['class'] }
+);
 
 /* Resize */
 window.addEventListener('resize', updateScrollState);
 
-/* 🔁 CALL THIS AFTER ANY SECTION CHANGE */
-function onSectionChange() {
-    container = getActiveContainer();
-    if (!container) return;
-
-    container.scrollTop = 0;
-    updateScrollState();
-}
-
-/* Initial */
+/* Init */
 updateScrollState();
 </script>
 <script>
