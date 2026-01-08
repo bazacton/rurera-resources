@@ -415,7 +415,7 @@
                                                     </div>
                                                     <div class="secure-server">
                                                         <figure>
-                                                            <img src="/assets/default/svgs/server-lock.svg" height="26" width="26" alt="">
+                                                            <img src="/assets/default/svgs/server-lock.svg" height="26" width="26" alt="server-lock">
                                                         </figure>
                                                         <span>Secure Server<br /> SSL Encrypted</span>
                                                     </div>
