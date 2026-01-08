@@ -1867,6 +1867,12 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 }
 /* Separator_Dotted_Line Style End*/
 
+/* Separator_None Style Start*/
+.separator_none:has(.question-separator) {
+    display: none !important;
+}
+/* Separator_None Style End*/
+
 /* Quiz Backend Columns Width Style Start*/
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
     .tab-pane .row {
