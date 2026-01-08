@@ -2273,6 +2273,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow: hidden;
     overflow-y: auto;
     padding-right: 15px;
+    height: 100vh;
 }
 .preview-question-area .question-area-block::-webkit-scrollbar {
   width: 12px; 
