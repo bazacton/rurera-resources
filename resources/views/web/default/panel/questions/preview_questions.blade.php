@@ -494,42 +494,51 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
-        const container = document.querySelector('.question-layout');
-        if (!container) return;
-
         const mathLikePattern = /([a-zA-Z0-9]\s*[\^_=+\-\/]\s*[a-zA-Z0-9{])/;
 
-        // 1️⃣ Normal text nodes (ONLY inside .question-layout)
-        container.querySelectorAll('*:not(script):not(style)').forEach(el => {
-            if (el.children.length > 0) return;
+        document.querySelectorAll('.question-layout').forEach(container => {
 
-            let text = el.textContent?.trim();
-            if (!text) return;
+            // 1️⃣ Normal text nodes (scoped per question-layout)
+            container.querySelectorAll('*:not(script):not(style)').forEach(el => {
+                if (el.children.length > 0) return;
 
-            // Skip already wrapped math
-            if (text.includes('$$') || text.includes('\\(') || text.includes('\\[')) return;
+                let text = el.textContent?.trim();
+                if (!text) return;
 
-            // Detect LaTeX OR math-like expressions
-            if (text.includes('\\') || mathLikePattern.test(text)) {
-                el.innerHTML = `$$${text}$$`;
-            }
+                // Skip already wrapped math
+                if (
+                    text.includes('$$') ||
+                    text.includes('\\(') ||
+                    text.includes('\\[')
+                ) return;
+
+                // Detect LaTeX OR math-like expressions
+                if (text.includes('\\') || mathLikePattern.test(text)) {
+                    el.innerHTML = `$$${text}$$`;
+                }
+            });
+
+            // 2️⃣ .math-equation spans (scoped per question-layout)
+            container.querySelectorAll('.math-equation').forEach(el => {
+                if (el.dataset.converted) return;
+
+                let latex =
+                    el.getAttribute('data-equation') ||
+                    el.textContent?.trim();
+
+                if (!latex) return;
+
+                el.innerHTML = `$$${latex}$$`;
+                el.dataset.converted = 'true';
+            });
+
         });
 
-        // 2️⃣ .math-equation spans (ONLY inside .question-layout)
-        container.querySelectorAll('.math-equation').forEach(el => {
-            if (el.dataset.converted) return;
-
-            let latex = el.getAttribute('data-equation') || el.textContent?.trim();
-            if (!latex) return;
-
-            el.innerHTML = `$$${latex}$$`;
-            el.dataset.converted = 'true';
-        });
-
-        // 3️⃣ Render with MathJax
+        // 3️⃣ Render MathJax ONLY for question layouts
         if (window.MathJax?.typesetPromise) {
-            MathJax.typesetClear([container]);   // clear only this container
-            MathJax.typesetPromise([container]).catch(err =>
+            const containers = document.querySelectorAll('.question-layout');
+            MathJax.typesetClear(containers);
+            MathJax.typesetPromise(containers).catch(err =>
                 console.error('MathJax error:', err)
             );
         }
