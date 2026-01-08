@@ -2368,12 +2368,12 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
 }
 .question-right-side .prev-next-controls .prev-btn,
 .question-right-side .prev-next-controls .next-btn{
-    padding: 8px 15px 8px 30px;
+    padding: 8px 15px 8px 25px;
     min-height: auto;
     font-size: 14px;
 }
 .question-right-side .prev-next-controls .next-btn {
-    padding: 10px 35px 10px 15px;
+    padding: 8px 25px 8px 15px;
 }
 .question-right-side .prev-next-controls img {
     height: 12px;
