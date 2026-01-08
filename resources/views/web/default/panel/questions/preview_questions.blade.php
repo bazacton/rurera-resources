@@ -116,13 +116,11 @@ $rand_id = rand(99,9999);
                                                                 </svg>
                                                             </button>
                                                             <div class="question-right-inner">
-                                                                <div class="prev-next-controls text-center mb-50 questions-nav-controls disable-div">
+                                                                <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                                                                     <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
-                                                                        prev
                                                                         <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                                     </a>
                                                                     <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
-                                                                        Next
                                                                         <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                                     </a>
                                                                 </div>
