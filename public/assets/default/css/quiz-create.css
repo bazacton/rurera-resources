@@ -2318,7 +2318,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
     height: 100%;
     padding: 0 15px;
 }
-.question-right-side.hidden {
+.question-right-side.hidden,
+.preview-question-area.centered .question-right-side {
     transform: translateX(100%);
 }
 .preview-question-area .question-right-side .review-msg-box .input-group {
