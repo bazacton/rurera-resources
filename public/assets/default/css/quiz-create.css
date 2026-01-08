@@ -2305,7 +2305,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     background-color: #fff;
     max-width: 400px;
     z-index: 2;
-    padding: 0 15px 25px 0;
+    padding: 0 0 25px 0;
     position: fixed;
     right: 0;
     height: 100%;
@@ -2356,6 +2356,27 @@ transition: transform 0.3s ease;
 
 .question-right-side.hidden .toggle-btn svg {
 transform: rotate(180deg);
+}
+body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
+    border: 0;
+    padding: 15px 0;
+    margin: 0 !important;
+    background-color: #fff;
+    min-height: auto;
+    justify-content: space-between;
+}
+.question-right-side .prev-next-controls .prev-btn,
+.question-right-side .prev-next-controls .next-btn{
+    padding: 8px 15px 8px 30px;
+    min-height: auto;
+    font-size: 14px;
+}
+.question-right-side .prev-next-controls .next-btn {
+    padding: 10px 35px 10px 15px;
+}
+.question-right-side .prev-next-controls img {
+    height: 12px;
+    width: 12px;
 }
 .preview-question-area .form-box {
     user-select: none;
