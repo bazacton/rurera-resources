@@ -259,7 +259,7 @@ $rand_id = rand(99,9999);
                                         <div id="scroll-controls" class="page-prev-next-controls">
                                             <div class="controls-inner">
                                                 <!-- Top State: Scroll Down Button -->
-                                                <button id="btn-top" class="scroll-btn pill hidden">
+                                                <button id="btn-top" class="scroll-btn pill btn-hidden">
                                                     Scroll down <i class="arrow down"></i>
                                                 </button>
 
@@ -274,7 +274,7 @@ $rand_id = rand(99,9999);
                                                 </div> -->
 
                                                 <!-- Bottom State: Scroll Up Button -->
-                                                <button id="btn-bottom" class="scroll-btn pill hidden">
+                                                <button id="btn-bottom" class="scroll-btn pill btn-hidden">
                                                     Scroll up <i class="arrow up"></i>
                                                 </button>
                                             </div>
