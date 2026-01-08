@@ -2562,6 +2562,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
 }
 .lms-card-timeline .card p {
     font-size: 14px;
+    padding-top: 5px;
 }
 .review-msg-box .input-group {
     border: 1px solid #ececec;
