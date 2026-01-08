@@ -439,6 +439,12 @@ var btnTop = document.getElementById('btn-top');        // DOWN
 var btnBottom = document.getElementById('btn-bottom'); // UP
 var container = null;
 
+/* Get current active container */
+function getActiveContainer() {
+    var activeSection = document.querySelector('.active');
+    return activeSection ? activeSection.querySelector('.preview-question-area .left-content') : null;
+}
+
 function hideButtons() {
     btnTop.classList.add('btn-hidden');
     btnBottom.classList.add('btn-hidden');
@@ -499,6 +505,13 @@ function scrollDown() {
 btnTop.addEventListener('click', scrollDown);
 btnBottom.addEventListener('click', scrollUp);
 
+/* Scroll listener (dynamic attach) */
+document.addEventListener('scroll', function (e) {
+    if (e.target.classList && e.target.classList.contains('left-content')) {
+        updateScrollState();
+    }
+}, true);
+
 /* Keyboard support */
 document.addEventListener('keydown', function (e) {
 
@@ -523,10 +536,10 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-/* Resize update */
+/* Resize */
 window.addEventListener('resize', updateScrollState);
 
-/* 🔁 CALL THIS AFTER SECTION CHANGE */
+/* 🔁 CALL THIS AFTER ANY SECTION CHANGE */
 function onSectionChange() {
     container = getActiveContainer();
     if (!container) return;
@@ -537,7 +550,6 @@ function onSectionChange() {
 
 /* Initial */
 updateScrollState();
-
 </script>
 <script>
     function wrapRawLatex() {
