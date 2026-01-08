@@ -32,7 +32,7 @@ $rand_id = rand(99,9999);
 
     <div class="learning-page type-practice type-sats preview-question-area centered">
 	<section class="learning-content lms-quiz-section">
-        <div class="quiz-time-bar px-30 mb-80">
+        <div class="quiz-time-bar px-30 mt-20 mb-80">
             <div class="timer-wrap">
                 <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
