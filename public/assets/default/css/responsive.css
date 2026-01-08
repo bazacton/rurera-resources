@@ -72,6 +72,11 @@ Lms Responsive Style Start
     .close-btn-holder {margin-left: auto;}
     .footer-dots-img {transform: none !important;}
     body .learning-page.type-sats .left-content {height: auto; overflow: visible;}
+    body .learning-page.type-sats.preview-question-area .left-content {
+        overflow: hidden;
+        overflow-y: auto;
+        height: calc(100vh - 100px);
+    }
     .masonry-grid {margin-left: 0;}
     .masonry-grid-gallery.has-bg:before {left: -50px;}
     .job-singup-sub-header h1 {font-size: 3rem !important;}
