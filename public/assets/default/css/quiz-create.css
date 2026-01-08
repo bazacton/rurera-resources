@@ -2284,19 +2284,27 @@ body:has(.type-practice.type-sats.preview-question-area) {
     overflow-y: auto;
     height: calc(100vh - 100px);
 }
+/* Main scroll container */
+.preview-question-area .left-content {
+  overflow: auto;
+  scrollbar-gutter: stable overlay; /* Prevent width shift */
+  
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Chrome, Edge, Safari */
 .preview-question-area .left-content::-webkit-scrollbar {
-  width: 12px; 
-  height: 12px;
+  width: 0px;
+  height: 0px;
 }
+
 .preview-question-area .left-content::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-foreground);
   background: transparent;
-  border-radius: 999px;
-  border: 3px solid transparent;
-  background-clip: padding-box;
 }
+
 .preview-question-area .left-content::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
   background: transparent;
 }
 .preview-question-area .question-right-side {
