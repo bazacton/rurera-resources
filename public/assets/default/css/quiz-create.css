@@ -3061,7 +3061,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     animation: bounce-up 1s infinite;
 }
 /* Visibility Helper */
-.page-prev-next-controls .hidden {
+.page-prev-next-controls .btn-hidden {
     display: none !important;
 }
 /* Middle Group Layout */
