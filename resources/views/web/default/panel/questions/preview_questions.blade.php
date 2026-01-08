@@ -436,34 +436,41 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 </script>
 <script>
     var container = document.querySelector('.question-area-block');
-    var btnTop = document.getElementById('btn-top');
-    var btnBottom = document.getElementById('btn-bottom');
+    var btnTop = document.getElementById('btn-top');     // DOWN button
+    var btnBottom = document.getElementById('btn-bottom'); // UP button
+
+    function hideButtons() {
+        btnTop.classList.add('hidden');
+        btnBottom.classList.add('hidden');
+    }
 
     function updateScrollState() {
-        var contentHeight = container.scrollHeight;
-        var containerHeight = container.clientHeight;
+
+        if (!container) return;
+
+        var scrollHeight = container.scrollHeight;
+        var clientHeight = container.clientHeight;
         var scrollTop = container.scrollTop;
 
-        // No scroll needed
-        if (contentHeight <= containerHeight + 5) {
-            btnTop.classList.add('hidden');
-            btnBottom.classList.add('hidden');
+        /* ❌ No overflow = no buttons */
+        if (scrollHeight <= clientHeight + 1) {
+            hideButtons();
             return;
         }
 
-        // At bottom → show UP
-        if (scrollTop + containerHeight >= contentHeight - 5) {
+        /* 🔼 At bottom → show UP only */
+        if (scrollTop + clientHeight >= scrollHeight - 1) {
             btnTop.classList.add('hidden');
             btnBottom.classList.remove('hidden');
         }
-        // Else → show DOWN
+        /* 🔽 Anywhere else → show DOWN only */
         else {
             btnTop.classList.remove('hidden');
             btnBottom.classList.add('hidden');
         }
     }
 
-    /* 🔼 FULL scroll to top */
+    /* 🔼 Scroll to top */
     function scrollUp() {
         container.scrollTo({
             top: 0,
@@ -471,7 +478,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         });
     }
 
-    /* 🔽 FULL scroll to bottom */
+    /* 🔽 Scroll to bottom */
     function scrollDown() {
         container.scrollTo({
             top: container.scrollHeight,
@@ -479,15 +486,15 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
         });
     }
 
+    /* Events */
     btnTop.addEventListener('click', scrollDown);
     btnBottom.addEventListener('click', scrollUp);
 
     container.addEventListener('scroll', updateScrollState);
     window.addEventListener('resize', updateScrollState);
 
+    /* Initial run */
     updateScrollState();
-
-
 </script>
 <script>
     function wrapRawLatex() {
