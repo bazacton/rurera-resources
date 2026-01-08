@@ -425,31 +425,44 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-
-var btnTop = document.getElementById('btn-top');        // DOWN
-var btnBottom = document.getElementById('btn-bottom'); // UP
+var btnDown = document.getElementById('btn-top');     // Scroll DOWN
+var btnUp = document.getElementById('btn-bottom');   // Scroll UP
 var container = null;
 
-/* Get current active container */
+/* Get active question container */
 function getActiveContainer() {
     var activeSection = document.querySelector('.rurera-question-block.active');
-    return activeSection ? activeSection.querySelector('.preview-question-area .left-content') : null;
+    return activeSection
+        ? activeSection.querySelector('.preview-question-area .left-content')
+        : null;
 }
 
 function hideButtons() {
-    btnTop.classList.add('btn-hidden');
-    btnBottom.classList.add('btn-hidden');
+    btnDown.classList.add('btn-hidden');
+    btnUp.classList.add('btn-hidden');
 }
 
-function isScrollable() {
-    return container && container.scrollHeight > container.clientHeight + 1;
+function isScrollable(el) {
+    return el && el.scrollHeight > el.clientHeight + 1;
 }
 
+/* Update buttons state */
 function updateScrollState() {
 
-    container = getActiveContainer();
+    var newContainer = getActiveContainer();
 
-    if (!container || !isScrollable()) {
+    /* Rebind scroll listener if section changed */
+    if (container !== newContainer) {
+        if (container) {
+            container.removeEventListener('scroll', updateScrollState);
+        }
+        container = newContainer;
+        if (container) {
+            container.addEventListener('scroll', updateScrollState);
+        }
+    }
+
+    if (!isScrollable(container)) {
         hideButtons();
         return;
     }
@@ -460,86 +473,70 @@ function updateScrollState() {
 
     /* At bottom → show UP */
     if (scrollTop + clientHeight >= scrollHeight - 1) {
-        btnTop.classList.add('btn-hidden');
-        btnBottom.classList.remove('btn-hidden');
+        btnDown.classList.add('btn-hidden');
+        btnUp.classList.remove('btn-hidden');
     }
     /* Else → show DOWN */
     else {
-        btnTop.classList.remove('btn-hidden');
-        btnBottom.classList.add('btn-hidden');
+        btnDown.classList.remove('btn-hidden');
+        btnUp.classList.add('btn-hidden');
     }
 }
 
 /* 🔼 Scroll to top */
 function scrollUp() {
-    container = getActiveContainer();
-    if (!isScrollable()) return;
-
-    container.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    if (!isScrollable(container)) return;
+    container.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /* 🔽 Scroll to bottom */
 function scrollDown() {
-    container = getActiveContainer();
-    if (!isScrollable()) return;
-
-    container.scrollTo({
-        top: container.scrollHeight,
-        behavior: 'smooth'
-    });
+    if (!isScrollable(container)) return;
+    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
 }
 
 /* Button events */
-btnTop.addEventListener('click', scrollDown);
-btnBottom.addEventListener('click', scrollUp);
+btnDown.addEventListener('click', scrollDown);
+btnUp.addEventListener('click', scrollUp);
 
-/* Scroll listener (dynamic attach) */
-document.addEventListener('scroll', function (e) {
-    if (e.target.classList && e.target.classList.contains('left-content')) {
-        updateScrollState();
-    }
-}, true);
-
-/* Keyboard support */
+/* Keyboard controls */
 document.addEventListener('keydown', function (e) {
 
     container = getActiveContainer();
-    if (!isScrollable()) return;
+    if (!isScrollable(container)) return;
 
     if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
         e.preventDefault();
     }
 
-    switch (e.key) {
-        case 'ArrowDown':
-        case 'PageDown':
-        case ' ':
-            scrollDown();
-            break;
-
-        case 'ArrowUp':
-        case 'PageUp':
-            scrollUp();
-            break;
+    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
+        scrollDown();
+    }
+    else if (['ArrowUp', 'PageUp'].includes(e.key)) {
+        scrollUp();
     }
 });
+
+/* ✅ SAFE MutationObserver (NO FREEZE) */
+var observer = new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+        var el = mutations[i].target;
+        if (el.classList && el.classList.contains('rurera-question-block')) {
+            updateScrollState();
+            break;
+        }
+    }
+});
+
+observer.observe(
+    document.querySelector('.rurera-wrapper') || document.body,
+    { attributes: true, subtree: true, attributeFilter: ['class'] }
+);
 
 /* Resize */
 window.addEventListener('resize', updateScrollState);
 
-/* 🔁 CALL THIS AFTER ANY SECTION CHANGE */
-function onSectionChange() {
-    container = getActiveContainer();
-    if (!container) return;
-
-    container.scrollTop = 0;
-    updateScrollState();
-}
-
-/* Initial */
+/* Init */
 updateScrollState();
 </script>
 <script>
