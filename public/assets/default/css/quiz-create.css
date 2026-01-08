@@ -2401,8 +2401,6 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     margin-bottom: 0;
 }
 .question-detail-holder {
-    border: 1px solid #ddd;
-    border-radius: 5px;
     margin: 0 0 25px;
 }
 .question-right-header p {
