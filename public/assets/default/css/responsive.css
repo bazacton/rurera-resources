@@ -419,6 +419,11 @@ Lms Responsive Style Start
     }
     .db-members .rurera-tabs-frontend {margin-bottom: 0;}
     body .learning-page.type-sats .left-content {height: auto; overflow: visible;}
+    body .learning-page.type-sats.preview-question-area .left-content {
+        overflow: hidden;
+        overflow-y: auto;
+        height: calc(100vh - 100px);
+    }
     body .populated-data .questions-select-number li {flex-basis: 31%;}
     body .wizard-steps .radio-buttons .card-radio:has(img) {width: 18.222%;}
     .qoute-box {padding: 40px 15px; margin-bottom: 50px;}
