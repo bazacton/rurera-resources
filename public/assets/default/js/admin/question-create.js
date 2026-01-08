@@ -1402,7 +1402,7 @@ function _rureraform_properties_prepare(_object) {
                     <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/percentage.png' title='Fraction' class='editor-add-field lms-tools-item' data-field_type='fraction' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>                    \n\
                     <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/input.png' title='Blank' class='editor-add-field lms-tools-item' data-field_type='blank' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>\n\
                     <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/select-field.png' title='Select' class='editor-add-field lms-tools-item' data-field_type='select' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>\n\
-                    <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/seperator_line.png' title='Seperator' class='editor-add-field lms-tools-item' data-field_type='seperator_line' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>\n\
+                    <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/separator_line.png' title='separator' class='editor-add-field lms-tools-item' data-field_type='separator_line' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>\n\
                     </ul>\n\
                     </div>\n\
                     <div class='rureraform-properties-content rureraform-wysiwyg'><textarea name='rureraform-" + key + "' id='rureraform-" + key + "' class='summernote-editor content-data'>" + properties[key] + "</textarea>\n\
@@ -1419,7 +1419,7 @@ function _rureraform_properties_prepare(_object) {
                    <div class='rureraform-properties-tooltip'></div>\n\
                    <div class='lms-tools-bar'>\n\
                    <ul class='rureraform-toolbar-list'>\n\
-                   <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/seperator_line.png' title='Seperator' class='editor-add-field lms-tools-item' data-field_type='droppable_area' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>\n\
+                   <li><a href='javascript:;'><img src='/assets/default/img/quiz/symbols/separator_line.png' title='separator' class='editor-add-field lms-tools-item' data-field_type='droppable_area' data-id='" + key + "' onclick='document.getElementById(\"rureraform-content\").focus();' /></a></li>\n\
                    </ul>\n\
                    </div>\n\
                    <div class='rureraform-properties-content rureraform-wysiwyg'><textarea name='rureraform-" + key + "' id='rureraform-" + key + "' class='summernote-editor content-data'>" + properties[key] + "</textarea>\n\
@@ -7533,8 +7533,13 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         "</div></div>";
                     break;
 
-                case "seperator":
-                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>" + rureraform_form_elements[i]["content"] + "</div>";
+                case "separator":
+                    var separator_type = rureraform_form_elements[i]["separator_type"];
+                    var margin_top = rureraform_form_elements[i]["margin_top"];
+                    var margin_bottom = rureraform_form_elements[i]["margin_bottom"];
+                    var htmlstyle = (margin_top > 0)? ' margin-top:'+margin_top+'px;' : '';
+                    htmlstyle += (margin_bottom > 0)? ' margin-bottom:'+margin_bottom+'px;' : '';
+                    html += "<div style='"+htmlstyle+"' id='rureraform-element-" + i + "' class='separator_" + separator_type + " rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>" + rureraform_form_elements[i]["content"] + "</div>";
                     break;
 
                 case "question_no":
@@ -10473,8 +10478,8 @@ $(document).on('click', '.editor-add-field', function () {
         field_data = '<span class="block-holder editor-field" data-id="' + random_id + '" data-field_type="paragraph" id="field-' + random_id + '">Test Paragraph</span>&nbsp;';
     }
 
-    if (field_type == 'seperator_line') {
-        field_data = '<span class="block-holder editor-field" data-id="' + random_id + '" data-field_type="seperator_line" id="field-' + random_id + '"><span class="seperator_line"></span></span></span>&nbsp;';
+    if (field_type == 'separator_line') {
+        field_data = '<span class="block-holder editor-field" data-id="' + random_id + '" data-field_type="separator_line" id="field-' + random_id + '"><span class="separator_line"></span></span></span>&nbsp;';
     }
 
     if (field_type == 'droppable_area') {
