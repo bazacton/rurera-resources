@@ -44,7 +44,7 @@ $rand_id = rand(99,9999);
             <span class="total-earned-coins">1</span>
         </span>
     </div>
-    <div class="learning-page type-practice type-sats preview-question-area centered">
+    <div class="learning-page type-practice type-sats preview-question-area">
 	<section class="learning-content lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
@@ -103,7 +103,7 @@ $rand_id = rand(99,9999);
                                                 @endif
 
                                                     </div>
-                                                    <div class="question-right-side hidden">
+                                                    <div class="question-right-side">
                                                         <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                                 <polyline points="15 18 9 12 15 6"></polyline>
