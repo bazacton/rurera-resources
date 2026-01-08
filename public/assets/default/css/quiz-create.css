@@ -2954,6 +2954,9 @@ transform: rotate(180deg);
     align-items: center;
     justify-content: center;
 }
+.preview-question-area.centered #scroll-controls {
+    padding-right: 0;
+}
 /* Button Base Styles */
 .page-prev-next-controls .scroll-btn {
     background-color: rgba(255, 255, 255, 0.5);
