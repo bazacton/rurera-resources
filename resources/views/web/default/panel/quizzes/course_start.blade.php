@@ -108,6 +108,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
                                      _data-parent="1"
                                      _data-parent-col="0" style="display: block;">
                                     <div class="question-layout row">
+                                        Test Completed!!!
                                     </div>
                                 </div>
                             </div>
@@ -356,6 +357,11 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
             var notification_sound = 'correct-answer.mp3';
             $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+        if( return_data.is_complete == true) {
+            var quiz_result_id = return_data.result_id;
+            $(".quiz-complete").show(2000);
+            window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
 
