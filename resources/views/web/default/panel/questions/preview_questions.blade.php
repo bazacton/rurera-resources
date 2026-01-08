@@ -435,7 +435,7 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-    var container = document.querySelector('.question-area-block');
+    var container = document.querySelector('.preview-question-area .left-content');
     var btnTop = document.getElementById('btn-top');     // DOWN button
     var btnBottom = document.getElementById('btn-bottom'); // UP button
 
