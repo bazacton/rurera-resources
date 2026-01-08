@@ -2376,8 +2376,8 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     padding: 8px 25px 8px 15px;
 }
 .question-right-side .prev-next-controls img {
-    height: 12px;
-    width: 12px;
+    height: 10px;
+    width: 10px;
 }
 .preview-question-area .form-box {
     user-select: none;
