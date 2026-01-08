@@ -2366,7 +2366,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     margin: 0 !important;
     background-color: #fff;
     min-height: auto;
-    justify-content: right;
+    justify-content: flex-start;
     pointer-events: auto;
     gap: 0 10px;
 }
@@ -2386,6 +2386,10 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     right: 0;
     top: 0;
     bottom: 0;
+}
+.prev-next-controls .question-counts {
+    margin: 0;
+    font-size: 14px;
 }
 .preview-question-area .form-box {
     user-select: none;
