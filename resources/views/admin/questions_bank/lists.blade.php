@@ -110,7 +110,7 @@
 
         <section class="card">
             <div class="card-body">
-                <form action="/admin/questions_bank" id="questions_search_form" method="get" class="row mb-0">
+                <form action="/admin/questions_bank" id="questions_search_form" method="get" class="row mb-0 ttt1">
 
 					<input type="hidden" name="preview_question" class="preview_question" value="no">
                     <input type="hidden" name="page_no" class="page_no" value="{{isset($_GET['page'])? $_GET['page'] : 0}}">
