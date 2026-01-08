@@ -494,13 +494,10 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
-        const container = document.querySelector('.question-layout');
-        if (!container) return;
-
         const mathLikePattern = /([a-zA-Z0-9]\s*[\^_=+\-\/]\s*[a-zA-Z0-9{])/;
 
-        // 1️⃣ Normal text nodes (ONLY inside .question-layout)
-        container.querySelectorAll('*:not(script):not(style)').forEach(el => {
+        // 1️⃣ Normal text nodes
+        document.querySelectorAll('*:not(script):not(style)').forEach(el => {
             if (el.children.length > 0) return;
 
             let text = el.textContent?.trim();
@@ -515,8 +512,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
             }
         });
 
-        // 2️⃣ .math-equation spans (ONLY inside .question-layout)
-        container.querySelectorAll('.math-equation').forEach(el => {
+        // 2️⃣ .math-equation spans
+        document.querySelectorAll('.math-equation').forEach(el => {
             if (el.dataset.converted) return;
 
             let latex = el.getAttribute('data-equation') || el.textContent?.trim();
@@ -528,8 +525,8 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
         // 3️⃣ Render with MathJax
         if (window.MathJax?.typesetPromise) {
-            MathJax.typesetClear([container]);   // clear only this container
-            MathJax.typesetPromise([container]).catch(err =>
+            MathJax.typesetClear();
+            MathJax.typesetPromise().catch(err =>
                 console.error('MathJax error:', err)
             );
         }
