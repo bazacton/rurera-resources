@@ -2422,9 +2422,8 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 14px;
-    gap: 0 10px;
+    gap: 0 15px;
 }
 .question-details li:last-child {
     border-bottom: 0;
