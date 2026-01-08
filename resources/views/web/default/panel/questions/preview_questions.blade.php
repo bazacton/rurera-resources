@@ -31,21 +31,7 @@ $rand_id = rand(99,9999);
 @section('content')
     
     <div class="learning-page type-practice type-sats preview-question-area">
-        <div class="quiz-time-bar px-30 mt-20 mb-80">
-            <div class="timer-wrap">
-                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-
-                <div class="time-box" id="hh">00</div>
-                <span class="colon">:</span>
-                <div class="time-box" id="mm">00</div>
-                <span class="colon">:</span>
-                <div class="time-box" id="ss">00</div>
-            </div>
-            <span class="coin-numbers">
-                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                <span class="total-earned-coins">1</span>
-            </span>
-        </div>
+        
         <section class="learning-content lms-quiz-section">
             <div class="container questions-data-block read-quiz-content" data-total_questions="0">
                 <div class="justify-content-center">
@@ -87,6 +73,21 @@ $rand_id = rand(99,9999);
                                                                     <span class="quiz-incorrects">0</span>
                                                                 </div>
                                                             </div> -->
+                                                            <div class="quiz-time-bar px-30 mt-20 mb-80">
+                                                                <div class="timer-wrap">
+                                                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+
+                                                                    <div class="time-box" id="hh">00</div>
+                                                                    <span class="colon">:</span>
+                                                                    <div class="time-box" id="mm">00</div>
+                                                                    <span class="colon">:</span>
+                                                                    <div class="time-box" id="ss">00</div>
+                                                                </div>
+                                                                <span class="coin-numbers">
+                                                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                                                    <span class="total-earned-coins">1</span>
+                                                                </span>
+                                                            </div>
                                                     <div class="question-layout row">
                                                         {!! $question_layout !!}
                                                     </div>
