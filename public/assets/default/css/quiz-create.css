@@ -1297,7 +1297,6 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .questions-total-holder .question-dev-details {color: #adabab; font-size: 14px;}
 .question-details li span {
     font-size: 14px;
-    text-align: right;
     width: calc(100% - 85px);
 }
 body mjx-container[display] {
