@@ -89,7 +89,7 @@ $rand_id = rand(99,9999);
                                                 @endif
 
                                                     </div>
-                                                    <div class="question-right-side">
+                                                    <div class="question-right-side hidden">
                                                         <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                                 <polyline points="15 18 9 12 15 6"></polyline>
