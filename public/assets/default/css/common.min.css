@@ -3022,25 +3022,30 @@ a.badge-gray200:focus {
     color: #fff
 }
 
-.table {
+.table,
+body table {
     width: 100%;
     margin-bottom: 20px;
     color: #171347
 }
 
 .table td,
-.table th {
+.table th,
+body table th,
+body table td {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #ececec
 }
 
-.table thead th {
+.table thead th,
+body table thead th {
     vertical-align: middle;
     border-bottom: 2px solid #ececec
 }
 
-.table tbody+tbody {
+.table tbody+tbody,
+body table tbody+tbody {
     border-top: 2px solid #ececec
 }
 
