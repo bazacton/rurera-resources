@@ -1796,7 +1796,8 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     border-radius: 0;
     padding: 0;
 }
-.input-holder.input_line {
+.input-holder.input_line,
+.lms-quiz-section .input-holder.input_line {
     border-radius: 0;
 }
 .input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
