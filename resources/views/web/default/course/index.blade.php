@@ -137,17 +137,32 @@
                                                                         $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
                                                                         $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
+                                                                        $completion_class = 'accuracy-not-started';
+                                                                        $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
+                                                                        $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
+                                                                        $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
+                                                                        $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
+
+
+                                                                        $completion_title = 'Not Started';
+                                                                        $completion_title = ($total_completion > 0)? 'Practice Needed' : $completion_title;
+                                                                        $completion_title = ($total_completion > 39)? 'Good' : $completion_title;
+                                                                        $completion_title = ($total_completion > 59)? 'Very Good' : $completion_title;
+                                                                        $completion_title = ($total_completion > 79)? 'Excellent' : $completion_title;
+
+
+                                                                        $completion_icon = 'above_0';
+                                                                        $completion_icon = ($total_completion > 0)? 'above_25' : $completion_icon;
+                                                                        $completion_icon = ($total_completion > 39)? 'above_50' : $completion_icon;
+                                                                        $completion_icon = ($total_completion > 59)? 'above_80' : $completion_icon;
+                                                                        $completion_icon = ($total_completion > 79)? 'above_80' : $completion_icon;
+
                                                                         //$total_completion = 40;
                                                                             @endphp
 
                                                                             <li>
                                                                                 <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} - {{$topicPartObj->id}} - Q{{isset($quizObj->id)? $quizObj->id : '-'}} ---- {{$user_difficulty_level}}
-                                                                                    <span class="topic-accuracy accuracy-not-started" data-title="Not Started"><img src="/assets/default/svgs/above_0.svg"></span>
-                                                                                    <span class="topic-accuracy accuracy-practice-needed" data-title="Practice Needed"><img src="/assets/default/svgs/above_25.svg"></span>
-                                                                                    <span class="topic-accuracy accuracy-good" data-title="Good"><img src="/assets/default/svgs/above_50.svg" ></span>
-                                                                                    <span class="topic-accuracy accuracy-very-good" data-title="Very Good"><img src="/assets/default/svgs/above_80.svg" ></span>
-                                                                                    <span class="topic-accuracy accuracy-excellent" data-title="Excellent"><img src="/assets/default/svgs/above_80.svg" ></span>
-                                                                                </a>
+                                                                                    <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
                                                                                 <ul id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
                                                                                     <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
                                                                                     <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
