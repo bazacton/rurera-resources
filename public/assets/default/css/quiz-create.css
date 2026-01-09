@@ -1792,10 +1792,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input_box:has(.input-label) input,
 .input-holder.input_line input {
     background-color: inherit;
-    width: 5ch;
-    min-width: 2ch;
-    max-width: 100%;
-    box-sizing: content-box;
     outline: none;
     border-radius: 0;
     padding: 0;
