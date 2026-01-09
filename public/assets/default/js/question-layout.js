@@ -104,7 +104,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     }
 
     rurera_loader($(this), 'div');
-	//question_submit_process = false;
+    //question_submit_process = false;
 
     var quiz_type = $(".question-area-block").attr('data-type');
     if (!rurera_is_field(quiz_type)) {
@@ -293,6 +293,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             var quiz_type = return_data.quiz_type;*/
 
             if( return_data.is_complete == true) {
+                window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
 
 
                 /*thisObj.closest('.questions-data-block').find('.right-content').addClass('hide');
