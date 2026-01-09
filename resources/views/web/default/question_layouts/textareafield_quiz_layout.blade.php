@@ -1,4 +1,4 @@
-<div id="rureraform-element-{{$element_unique_id}}" class="rureraform-element-{{$element_unique_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
+<div class="textarea-element">
 	
 	<span class="input-holder {{isset( $elementObj->style_format ) ? $elementObj->style_format : ''}} {{isset( $elementObj->field_size ) ? $elementObj->field_size : ''}}">
 		<span class="input-label" contenteditable="false"></span>

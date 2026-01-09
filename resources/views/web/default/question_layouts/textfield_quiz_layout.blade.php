@@ -2,7 +2,7 @@
 $label_after = isset( $elementObj->label_after ) ? $elementObj->label_after : '';
 @endphp
 
-<div id="rureraform-element-{{$element_unique_id}}" class="rureraform-element-{{$element_unique_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
+<div class="textfield-element">
 	
 	<span class="input-holder {{isset( $elementObj->style_format ) ? $elementObj->style_format : ''}}">
 		@if($label_before != '')
