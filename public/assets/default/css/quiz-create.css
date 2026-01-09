@@ -1407,7 +1407,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .numeric-list-style > .form-field:hover:before,
 .numeric-list-style > .option-group:hover:before{
     border-color: #6eb37d;
-    color: #4D8F5B;
+    color: #fff;
+    background-color: #ddd;
 }
 /*Quistions Type numeric-list style End*/
 
@@ -1443,7 +1444,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .alphabet-list-style .active-option.form-field:before,
 .alphabet-list-style .form-field:hover:before {
     border-color: #6eb37d;
-    color: #4D8F5B;
+    color: #fff;
+    background-color: #ddd;
 }
 /*Quistions Type Alphabet-list style End*/
 
