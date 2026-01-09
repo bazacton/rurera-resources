@@ -2660,6 +2660,9 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     flex-direction: column;
 }
 .questions_logs_block .lms-card-timeline {padding-left: 0;}
+.questions_logs_block .lms-card-timeline li {
+    margin-top: 0;
+}
 .lms-card-timeline li {border: 1px solid #ddd; background-color: #fff; padding: 15px; border-radius: 6px; display: flex; gap: 10px; width: 100%; margin-bottom: 15px; position: relative;}
 .lms-card-timeline li:before {content: ""; position: absolute; left: 35px; top: 100%; height: 50px; width: 2px; background-color: #ddd;}
 .lms-card-timeline li:last-child:before {display: none;}
