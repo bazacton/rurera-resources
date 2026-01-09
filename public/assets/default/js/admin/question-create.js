@@ -11643,6 +11643,26 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
     $(".label_type-depend").addClass('rurera-hide');
     var label_type = $(this).val();
+
+    let editor = $(this)
+        .closest('.rureraform-admin-popup.active')
+        .find('.summernote-editor');
+
+    editor.summernote('code', 'Question Label');
+
+
+    if(label_type == 'paragraph'){
+
+        editor.summernote('code', "<p><b>Lorem Ipsum</b> is simply <u>dummy text</u> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>\n" +
+            "                <ol><li>List item # 1</li>\n" +
+            "                <li>List item # 2</li>\n" +
+            "                <li>List item # 3</li>\n" +
+            "                <li>List item # 4</li></ol><p>It was popularised in the <a href='https://rurera.com' target='_blank'>1960s</a> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>");
+
+        editor.trigger('summernote.change');
+    }
+
+    editor.trigger('summernote.change');
     $("."+label_type+'_fields').removeClass('rurera-hide');
 });
 
