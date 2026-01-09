@@ -452,6 +452,11 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
     max-width: 100%;
 }
 /* Image-Field Style End */
+/* Full Image-Field Style Start */
+.image-full img {
+    max-width: 100%;
+}
+/* Full Image-Field Style End */
 /* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style Start */
 .spell-tooltip-text h4 {margin-bottom: 5px;}
 .spell-quiz-page .quiz-questions-bar-holder {margin-left: 0;}
