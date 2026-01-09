@@ -1763,6 +1763,9 @@ body:has(.quiz-time-bar) .prev-next-controls{
 .input-holder input.input-simple:focus::-webkit-input-placeholder,
 .rureraform-element input.input-simple:focus::-webkit-input-placeholder {color: transparent;}
 /* .input-holder .input-label {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);} */
+.input-holder.input_line {
+    border-radius: 0;
+}
 .input_line {border-right: 0 !important; border-top: 0 !important; border-left: 0 !important; border-color: #000; border-radius: 0;}
 #question_preview .question-layout .input_line input[type="text"] {height: auto; padding: 0; border-radius: 0; border-bottom: 1px solid; outline: none; background-color: inherit; text-align: center;}
 #question_preview .question-layout .input_line:has(input) {padding: 0; border-radius: 0; background-color: inherit;}
