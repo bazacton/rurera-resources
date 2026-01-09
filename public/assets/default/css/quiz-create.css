@@ -1356,9 +1356,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .rureraform-element:has(.input-holder.input_box) {line-height: 46px;}
 .question-layout .rureraform-element:has(select ~ select) {line-height: 40px;}
 .rureraform-builder .quiz-group ol,
-.quiz-group ol, .quiz-group ul {padding-left: 20px; margin-bottom: 15px;}
+.quiz-group ol, .quiz-group ul,
+.lms-quiz-section ol, .lms-quiz-section ul {padding-left: 20px; margin-bottom: 15px;}
 .quiz-group ol li,
-.quiz-group ul li {margin-top: 10px; list-style: inherit; width: 100%;}
+.quiz-group ul li, .lms-quiz-section ul li,
+.lms-quiz-section ol li {margin-top: 10px; list-style: inherit; width: 100%;}
 .question_label ul {
     margin-top: 15px;
 }
