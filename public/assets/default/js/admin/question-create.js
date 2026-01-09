@@ -11659,10 +11659,11 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
             "                <li>List item # 3</li>\n" +
             "                <li>List item # 4</li></ol><p>It was popularised in the <a href='https://rurera.com' target='_blank'>1960s</a> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>");
 
-        editor.trigger('summernote.change');
     }
-
-    editor.trigger('summernote.change');
+    if ($('.rureraform-admin-popup.active').find('.generate-question-code').length) {
+        $('.rureraform-admin-popup.active').find('.generate-question-code').trigger('click');
+    }
+    //editor.trigger('summernote.change');
     $("."+label_type+'_fields').removeClass('rurera-hide');
 });
 
