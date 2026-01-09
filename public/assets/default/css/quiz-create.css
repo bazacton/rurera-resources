@@ -2467,6 +2467,19 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     display: block;
     margin-top: 15px;
 }
+.lms-card-timeline li.hidden-log {
+    display: none;
+}
+.show-logs-btn {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+}
+.show-logs-btn:hover {
+    text-decoration: underline;
+}
 .approve_question_form {
     text-align: left;
     /* height: calc(100vh - 100px);
