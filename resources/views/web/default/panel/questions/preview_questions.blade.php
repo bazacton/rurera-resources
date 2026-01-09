@@ -9,7 +9,6 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 @endphp
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/css/preview-page.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 <script>

@@ -7,6 +7,7 @@ $rand_id = rand(999,99999);
 @endphp
 
 <script src="/assets/default/js/admin/question-create.js?ver={{$rand_id}}"></script>
+<link rel="stylesheet" href="/assets/default/css/preview-page.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 
 <style>
