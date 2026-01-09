@@ -1,7 +1,7 @@
 @php $randomID = rand(0,9999); @endphp
 
 
-<div id="rureraform-element-{{$element_id}}" class="quiz-group draggable3 rureraform-element-{{$element_id}} rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+<div class="truefalse-element">
    @if($elementObj->question_label != '')
 	<span class="truefalse_question_label">{{$elementObj->question_label}}</span>
 	@endif
@@ -26,6 +26,5 @@
    @if($elementObj->hint != '')
 	<span class="question_hint">{{$elementObj->hint}}</span>
 	@endif
-   
-   <div class="rureraform-element-cover"></div>
+
 </div>

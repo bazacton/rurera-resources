@@ -1,4 +1,4 @@
-<div id="rureraform-element-{{$element_id}}" class="quiz-group draggable3 rureraform-element-{{$element_id}} rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+<div class="marking-element">
     <div class="rureraform-column-label"><label class="rureraform-label rureraform-ta-undefined">{{$elementObj->label}}</label></div>
     <div class="rureraform-column-input">
         <div class="rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">
@@ -19,5 +19,4 @@
             </div>
         </div>
     </div>
-    <div class="rureraform-element-cover"></div>
 </div>
