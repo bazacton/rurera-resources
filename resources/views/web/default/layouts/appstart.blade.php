@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" itemscope itemtype="https://schema.org/FAQPage">
+<html lang="{{ app()->getLocale() }}">
 
 @php
     $rtlLanguages = !empty($generalSettings['rtl_languages']) ? $generalSettings['rtl_languages'] : [];
