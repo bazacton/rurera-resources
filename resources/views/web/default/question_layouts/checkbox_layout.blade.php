@@ -19,7 +19,10 @@ $have_images_class = ($have_images == 'yes')? 'lms-checkbox-img'.' image-'.$imag
 					@foreach( $elementObj->options as $option_index => $optionObj)
 						@php $option_index .= $option_index.'-'.$randomID;  $image_path = '';
                         $default = isset($optionObj->default)? $optionObj->default : '';
-                        $div_class = ($default == 'on')? 'active-option' : '';
+                        $div_class = '';
+                        if(!auth()->user()->isUser()){
+                            $div_class = ($default == 'on')? 'active-option' : '';
+                        }
 						@endphp
 						@if( !isset( $optionObj->label ))
 							@php continue; @endphp
