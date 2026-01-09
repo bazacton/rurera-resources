@@ -850,7 +850,7 @@ Lms Table Style
 .lms-table tr td {border: 1px solid #ccc; text-align: center; padding: 5px 10px;}
 .rureraform-element table.table {margin: 0; border-color: #dee2e6; overflow: hidden;}
 .rureraform-element table.table td,
-body table td {background-color: #fff; line-height: normal; text-align: center; vertical-align: middle; padding: 5px; height: 50px; border-color: #dee2e6;}
+body table td {background-color: #fff; line-height: normal; text-align: center; vertical-align: middle; padding: 5px; height: 50px; border-color: #dee2e6; border-style: solid; border-width: 1px;}
 .rureraform-element table.table td .field-holder,
 body table td .field-holder {border: 0;}
 .rureraform-element table.table td,
