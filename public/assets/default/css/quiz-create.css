@@ -1837,7 +1837,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 @supports (selector(.quiz-group:has(.input-holder))) {
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
-.rurera-question-block select {border: 1px solid #ddd; border-radius: 3px; padding: 4px 8px; height: auto;}
+.rurera-question-block select {border: 1px solid #ddd; border-radius: 3px; padding: 4px 8px; height: auto; margin: 0 6px;}
 .rurera-question-block .rureraform-column-input .rureraform-description {margin: 15px 0 0;}
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
 /* Textarea Style with lines */
