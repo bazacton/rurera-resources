@@ -1374,10 +1374,6 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .show-notifications .question-status-wrong {color: #db3a3a; background-color: #fff4f4; border: 1px solid #db3a3a;}
 .show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
 .show-notifications span[class*="question-status-"] {display: block; margin: 0 0 20px; border-radius: 3px; padding: 8px 10px;}
-.show-notifications .question-explaination {
-    background-color: #f2f2f2;
-    padding: 15px 15px;
-}
 .show-notifications .question-explaination h5 {
     margin: 0 0 25px;
     border-bottom: 1px solid #ddd;
