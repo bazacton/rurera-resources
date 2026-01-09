@@ -308,28 +308,14 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 
 /* Question Label Style Start */
 .question-label {position: relative;}
-/*.question_label span {background-color: rgb(200,210,237);  margin: 0;padding: 10px 5px 10px 10px;  border-radius: 13px; line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 16px;}*/
 .question_label > span {background-color: rgb(200,210,237); padding: 10px 5px 10px 13px;  border-radius: 13px; display: inline-block;width: 100%; font-weight: 600; font-size:1rem;}
 .question_heading span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 1.5rem; outline: none;}
-.question_label > span p {
-    margin: 0;
-}
+.question_label > span p {margin: 0;}
 .rureraform-element .example_text {color: gray; border: 1px dashed #ccc; padding: 8px 10px; margin-bottom: 0; border-radius: 5px;}
 .question_label .math-equation {background-color: inherit; display: inline-block;}
-.question-area .math-equation mjx-container {
-    display: inline-block;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.question-explaination {
-    background-color: #f2f2f2;
-    padding: 15px 15px;
-    border-radius: 5px;
-}
+.question-area .math-equation mjx-container {display: inline-block; margin: 0; padding-top: 0; padding-bottom: 0;}
+.question-explaination {background-color: #f2f2f2; padding: 15px 15px; border-radius: 5px;}
 .math-equation br {display: none;}
-/* .question-label span, */
-/* .lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;} */
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
 .spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
 /*.quiz-group .rureraform-column-label {margin-bottom: 0;}*/
@@ -347,41 +333,18 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .droppable_area, .lms-quiz-section .droppable_area {display:inline-flex; height: auto; padding: 0; margin: 0; border-radius: 0; border-bottom: 2px dotted #ddd; vertical-align: text-bottom; justify-content: center; align-items: center; min-width: 190px; text-align: center; min-height: 40px; }
 span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .droppable_area .draggable-option,
-.draggable-items li span {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    line-height: normal;
-    padding: 8px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    font-weight: 400;
-}
-.draggable-items img {
-    height: 20px;
-    width: 20px;
-    margin-left: -10px;
-}
-
+.draggable-items li span {background-color: #fff; border: 1px solid #ddd; line-height: normal; padding: 8px 20px; border-radius: 5px; display: inline-block; font-weight: 400;}
+.draggable-items img {height: 20px; width: 20px; margin-left: -10px;}
 .rureraform-form-editor .draggable-items .draggable-option {margin-top: 0; padding: 8px 20px 8px; display: block;}
-.rureraform-builder .draggable-items {
-    display: flex;
-    margin-top: 20px;
-    padding-left: 0;
-}
+.rureraform-builder .draggable-items {display: flex; margin-top: 20px; padding-left: 0;}
 /* Draggable Style End */
 
 /* Highlight Word/Sentence Style Start */
 /* Highlight Word/Sentence Style End */
 
 /* Insert Into Sentence Style Start */
-.insert-into-sentense-holder p {
-	word-wrap: break-word;
-}
-.insert-options {
-    width: 100%;
-    display: inline-block;
-    margin: 0 0 30px;
-}
+.insert-into-sentense-holder p {word-wrap: break-word;}
+.insert-options {width: 100%; display: inline-block; margin: 0 0 30px;}
 /* Insert Into Sentence Style End */
 
 /* Match Style Start */
@@ -398,17 +361,8 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
   .point {width: 0; height: 0; margin: -6px -3px 0 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 16px solid #e5e5e5; float: right;}
 }
 .match-question .stems ol {padding: 0; margin: 0;}
-.image_small .match-question li img {
-    height: 25px;
-    width: 30px;
-    margin-bottom: 0;
-    object-fit: contain;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.image-right .match-question li img {
-    margin-left: auto;
-}
+.image_small .match-question li img {height: 25px; width: 30px; margin-bottom: 0; object-fit: contain; border-radius: 5px; overflow: hidden;}
+.image-right .match-question li img {margin-left: auto;}
 /* Match Style End */
 
 /* Audio Input Style Start */
