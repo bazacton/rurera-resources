@@ -11650,7 +11650,6 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
     editor.summernote('code', 'Question Label');
 
-    editor.trigger('summernote.change');
 
     if(label_type == 'paragraph'){
 
@@ -11662,6 +11661,8 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
         editor.trigger('summernote.change');
     }
+
+    editor.trigger('summernote.change');
     $("."+label_type+'_fields').removeClass('rurera-hide');
 });
 
