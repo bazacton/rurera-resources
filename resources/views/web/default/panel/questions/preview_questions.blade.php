@@ -5,7 +5,7 @@ use App\Models\QuestionLogs;
 @php
 $i = 0; $j = 1;
 $rand_id = rand(99,9999);
-
+$element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 @endphp
 
 @push('styles_top')
