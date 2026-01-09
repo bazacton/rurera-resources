@@ -614,4 +614,44 @@ updateScrollState();
         }
     }
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const timeline = document.querySelector('.lms-card-timeline');
+  if (!timeline) return;
+
+  const logs = timeline.querySelectorAll('li');
+  const MAX_VISIBLE = 5;
+
+  if (logs.length <= MAX_VISIBLE) return;
+
+  // Hide logs after 5
+  logs.forEach((log, index) => {
+    if (index >= MAX_VISIBLE) {
+      log.classList.add('hidden-log');
+    }
+  });
+
+  // Create toggle button
+  const toggleBtn = document.createElement('div');
+  toggleBtn.className = 'show-logs-btn';
+  toggleBtn.textContent = 'Show all logs';
+
+  let expanded = false;
+
+  toggleBtn.addEventListener('click', () => {
+    expanded = !expanded;
+
+    logs.forEach((log, index) => {
+      if (index >= MAX_VISIBLE) {
+        log.classList.toggle('hidden-log', !expanded);
+      }
+    });
+
+    toggleBtn.textContent = expanded ? 'Hide logs' : 'Show all logs';
+  });
+
+  timeline.after(toggleBtn);
+});
+</script>
 @endpush
