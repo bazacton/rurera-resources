@@ -1752,6 +1752,9 @@ body:has(.quiz-time-bar) .prev-next-controls{
   font-weight: bold;
   color: #000;
 }
+/* Quiz Time-Bar Style End */
+
+/* Questions Counts Style Start */
 .question-counts {
     display: flex;
     align-items: center;
@@ -1772,7 +1775,7 @@ body:has(.quiz-time-bar) .prev-next-controls{
     background-color: #000;
     border-radius: 3px;
 }
-/* Quiz Time-Bar Style End */
+/* Questions Counts Style End */
 
 /*Quiz Layout Input Holder Style Start*/
 .input-holder:empty {display: none;}
@@ -2869,7 +2872,9 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     margin: 0;
 }
 
-/* Scroll Controls Container */
+
+
+/* Question */
 #scroll-controls {
     position: fixed;
     bottom: calc(70px + env(safe-area-inset-bottom));
