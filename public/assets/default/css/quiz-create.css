@@ -2475,6 +2475,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     color: var(--primary);
     font-weight: 500;
     display: inline-block;
+    text-align: center;
     width: 100%;
 }
 .show-logs-btn:hover {
