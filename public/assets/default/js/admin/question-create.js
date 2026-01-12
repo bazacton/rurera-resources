@@ -11432,7 +11432,7 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
         }
 
         container.innerHTML = html;
-        document.body.appendChild(container);
+        //document.body.appendChild(container);
 
         // STEP 1: Prepare LaTeX
         container.querySelectorAll('.math-equation').forEach(el => {
