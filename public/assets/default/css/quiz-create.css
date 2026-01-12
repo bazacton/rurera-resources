@@ -1288,7 +1288,7 @@ body mjx-container[display] {
     margin: 0;
     display: inline-block;
     width: auto;
-    font-size: 16px;
+    font-size: 13px;
 }
 .question-dev-details a {
     color: var(--primary);
@@ -2080,7 +2080,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 }
 .math-equation svg,
 mjx-container[jax="SVG"] > svg {
-    scale: 0.8;
+    scale: 1;
 }
 /**************************************
 Questions Edit Page Fields style End
