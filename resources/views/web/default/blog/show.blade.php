@@ -27,7 +27,7 @@
                             <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                         </div>
 
-                        {!! nl2br($post->content) !!}
+                        {!! getBodyContent($post->content) !!}
                     </div>
                     {{-- post Comments --}}
                     @if($post->enable_comment)
