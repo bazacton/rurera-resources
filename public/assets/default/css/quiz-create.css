@@ -1238,9 +1238,10 @@ Questions Builder Right Sidebar Style Start
 }
 .lms-quiz-create .have-image-options .rureraform-properties-options-item .rureraform-properties-options-table > div {
     width: 100%;
-    display: block;
+    display: flex;
     padding: 0;
     margin: 10px 0 0;
+    text-align: left;
 }
 .lms-quiz-create .have-image-options .rureraform-properties-options-item input[type='text'] {
     border-radius: 10px;
@@ -1257,11 +1258,29 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .have-image-options .rureraform-properties-options-item .rureraform-image-url input[type='text'] {
     padding-right: 10px;
 }
+
 .lms-quiz-create .have-image-options .rureraform-properties-options-item .rureraform-properties-options-table .rureraform-image-url {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
+}
+.lms-quiz-create .have-image-options .rureraform-properties-options-table>div span {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 8px;
+    border-radius: 3px;
+    margin: 0 5px 5px 0;
+}
+.lms-quiz-create .rureraform-admin-popup .have-image-options .rureraform-properties-options-table>div span:last-of-type {
+    margin-left: auto;
+    margin-right: 0;
+}
+.lms-quiz-create .have-image-options .rureraform-properties-options-item.rureraform-properties-options-item-default {
+    background-color: #f3fffd;
+    padding: 15px;
+    border-left: 3px solid #169F85;
+    border-radius: 0;
 }
 /* Rurera-Form-Properties-Have-image-options Style End */
 
