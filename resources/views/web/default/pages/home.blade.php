@@ -3,6 +3,19 @@
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';"/>
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css" media="print" onload="this.onload=null;this.media='all';"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rurera",
+  "url": "https://rurera.com",
+  "logo": "https://rurera.com/store/1/default_images/banners/fav-icon.png",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=6154277975339",
+    "https://www.instagram.com/rurera.official"
+  ]
+}
+</script>
 @endpush
 
 @section('content')
