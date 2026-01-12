@@ -41,7 +41,7 @@
 
                     <div class="row mb-50">
                         <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0">
-                            <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
+                            <div class="rurera-blog blog-medium mt-30" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
                                     <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0">
-                            <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
+                            <div class="rurera-blog blog-medium mt-30" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
                                     <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0">
-                            <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
+                            <div class="rurera-blog blog-medium mt-30" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
                                         <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
