@@ -1360,6 +1360,8 @@ $(".eq-summernote-editor1").summernote({
 $('.eq-summernote-editor').next('.note-editor')
     .find('.note-editable')
     .trigger('input');
+$(".container").addClass('container-fluid');
+$(".container-fluid").removeClass('container');
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

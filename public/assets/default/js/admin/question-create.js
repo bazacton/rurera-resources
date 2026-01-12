@@ -11426,12 +11426,13 @@ $(document).on('click', '.latex-btn', function () {
 function getSVGFromEquationHTML(html, class_id, is_field = false) {
     return new Promise(function (resolve) {
 
-        // STEP 0: Hidden container
+        // STEP 0: Hidden container (offscreen, NOT display:none)
         const container = document.createElement('div');
         container.style.position = 'absolute';
         container.style.left = '-9999px';
+        container.style.visibility = 'hidden';
 
-        // ✅ Detect real LaTeX only (not normal text)
+        // Detect real LaTeX only
         const looksLikeLatex =
             typeof html === 'string' &&
             !html.includes('<') &&
@@ -11446,20 +11447,27 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
         }
 
         container.innerHTML = html;
-        //document.body.appendChild(container);
+
+        // STEP 0.5: Ensure temp parent exists
+        let parent = document.querySelector('.temp-append');
+
+        if (!parent) {
+            parent = document.createElement('div');
+            parent.classList.add('temp-append');
+            document.body.appendChild(parent);
+        }
+
+        parent.appendChild(container);
 
         // STEP 1: Prepare LaTeX
         container.querySelectorAll('.math-equation').forEach(el => {
 
             let latex = el.getAttribute('data-equation') || el.textContent;
 
-            // Normalize risky commands
             latex = latex
                 .replace(/\\dfrac/g, '\\frac')
-                .replace(/\\tfrac/g, '\\frac');
-
-            // Replace -input_1- → INPUT1
-            latex = latex.replace(/-input_(\d+)-/g, 'INPUT$1');
+                .replace(/\\tfrac/g, '\\frac')
+                .replace(/-input_(\d+)-/g, 'INPUT$1');
 
             el.innerHTML = '\\(' + latex + '\\)';
         });
@@ -11468,7 +11476,9 @@ function getSVGFromEquationHTML(html, class_id, is_field = false) {
         MathJax.typesetPromise([container]).then(() => {
 
             const result = container.innerHTML;
-            document.body.removeChild(container);
+
+            // ✅ Correct removal
+            container.remove();
 
             if (is_field) {
                 $('.' + class_id).val(result);
