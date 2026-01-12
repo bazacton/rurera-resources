@@ -3556,7 +3556,11 @@ function rureraform_properties_save() {
 }
 
 function rureraform_properties_close() {
-    if (rureraform_element_properties_data_changed) {
+
+    _rureraform_properties_close();
+    rureraform_dialog_close();
+
+    /*if (rureraform_element_properties_data_changed) {
         rureraform_dialog_open({
             echo_html: function () {
                 this.html("<div class='rureraform-dialog-message'>" + rureraform_esc_html__("Seems you didn't save changes. Are you sure, you want to close Properties?", "rureraform") + "</div>");
@@ -3569,11 +3573,12 @@ function rureraform_properties_close() {
             }
         });
     } else
-        _rureraform_properties_close();
+        _rureraform_properties_close();*/
 
     jQuery("#rureraform-element-properties").removeClass('active');
 
     $(".topic-parts-block").removeClass('rurera-hide');
+    $(".lms-dashboard-card").removeClass('rurera-hide');
     return false;
 }
 
@@ -11039,6 +11044,7 @@ $(document).on('click', '.quiz-group', function () {
     var element_type = $(this).attr('data-type');
     $(this).addClass('active');
     $(".topic-parts-block").addClass('rurera-hide');
+    $(".lms-dashboard-card").addClass('rurera-hide');
 
     var element_title = rureraform_toolbar_tools[element_type].title;
     console.log(element_title)
