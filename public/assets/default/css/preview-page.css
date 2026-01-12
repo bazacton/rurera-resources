@@ -196,36 +196,6 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     margin: 20px 0 0;
     padding-left: 0;
 }
-.lms-card-timeline .lms-card-info h5 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #333;
-    font-weight: 500;
-    font-size: 14px;
-    flex-wrap: wrap;
-}
-.lms-card-timeline .lms-card-info .user-avatar {
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-.lms-card-timeline .lms-card-info h5 b {
-    font-weight: 400;
-    font-size: 14px;
-    display: block;
-    color: #999;
-}
-.lms-card-timeline .lms-card-info > b {
-    font-size: 14px;
-    font-weight: 400;
-    display: block;
-    margin-top: 15px;
-}
-.lms-card-timeline li.hidden-log {
-    display: none;
-}
 .show-logs-btn {
     cursor: pointer;
     color: var(--primary);
@@ -257,18 +227,6 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
 {
 	background-color: rgb(200,210,237);
     border: 0;
-}
-.lms-card-timeline .card,
-.lms-card-timeline .card .card-body {
-    padding: 0;
-    border: 0;
-    margin-bottom: 0;
-}
-.lms-card-timeline .card .media .media-body > .d-flex {flex-wrap: wrap;}
-.lms-card-timeline .card .card-body h6 {
-    font-weight: 500;
-    font-size: 15px;
-    color: #000;
 }
 .approve_question_form .row:has(.lms-card-timeline) {
     margin: 0;
