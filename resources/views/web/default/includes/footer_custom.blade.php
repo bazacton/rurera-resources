@@ -75,7 +75,6 @@
 											<li><a href="/privacy" class="active">Privacy</a></li>
 											<li><a href="/cookies">Cookie Policy</a></li>
 											<li><a href="/terms-and-conditions">Terms & Condition</a></li>
-											<li><a href="/terms-of-policy">Terms of Policy</a></li>
 											<li><a href="/acceptable-use">Acceptable Use Policy</a></li>
 										</ul>
 									</div>
