@@ -2227,7 +2227,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-list:last-child {padding-bottom: 15px;}
 .lms-dashboard-card .lms-card-info h5 .activity-date {margin-left: 0; color: #999; font-weight: 500; font-size: 12px;}
 .edit-questions-tabs .similarity-content-tabs .nav {gap: 25px;}
-.similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {padding: 0 15px 0 0;}
+.similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {padding: 0;}
 .similarity-content-block-data {margin-bottom: 30px;}
 .similarity-tab-data .card .card-header {padding: 15px; background-color: inherit;}
 .similarity-tab-data .card .card-header button {outline: none; text-decoration: none; padding: 0;}
@@ -2359,6 +2359,7 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content .similarity-tab-data {
         flex: 0 0 calc(100% - 850px);
         max-width: calc(100% - 850px);
+        padding-left: 30px;
     }
 
     
