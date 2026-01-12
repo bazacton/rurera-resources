@@ -2139,6 +2139,17 @@ mjx-container[jax="SVG"] > svg {
     color: #666;
     padding: 0;
 }
+.show-logs-btn {
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.show-logs-btn:hover {
+    text-decoration: underline;
+}
 .questions_logs_block .lms-card-timeline {padding-left: 0;}
 .questions_logs_block .lms-card-timeline li {
     margin-top: 0;
