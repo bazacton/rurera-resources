@@ -3574,6 +3574,7 @@ function rureraform_properties_close() {
     jQuery("#rureraform-element-properties").removeClass('active');
 
     $(".topic-parts-block").removeClass('rurera-hide');
+    $(".lms-dashboard-card").removeClass('rurera-hide');
     return false;
 }
 
@@ -11039,6 +11040,7 @@ $(document).on('click', '.quiz-group', function () {
     var element_type = $(this).attr('data-type');
     $(this).addClass('active');
     $(".topic-parts-block").addClass('rurera-hide');
+    $(".lms-dashboard-card").addClass('rurera-hide');
 
     var element_title = rureraform_toolbar_tools[element_type].title;
     console.log(element_title)
