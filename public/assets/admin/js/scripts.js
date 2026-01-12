@@ -350,7 +350,7 @@ $(function () {
             });
         }
 
-        if (w.outerWidth() <= 576) {
+        if (w.outerWidth() <= 1200) {
             if ($('body').hasClass('sidebar-mini')) {
                 toggle_sidebar_mini(false);
                 $('.main-sidebar').niceScroll(sidebar_nicescroll_opts);
