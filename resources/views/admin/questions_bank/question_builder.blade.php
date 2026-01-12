@@ -613,6 +613,7 @@ $rand_id = rand(999,99999);
 													</div>
 												</div>
                                             @if($is_single == false)
+												@if(!empty($similiarity_response))
 												<h3>Similiarity Content</h3>
 												<div >
 													<div class="similarity-content-block-data" id="accordion">
@@ -634,7 +635,8 @@ $rand_id = rand(999,99999);
 													</div>
 
 												</div>
-                                        @endif
+												@endif
+												@endif
 											<div class="lms-dashboard-card">
 
 												<div class="questions_logs_block">
