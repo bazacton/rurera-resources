@@ -125,7 +125,7 @@
             <div class="col-12 col-lg-12">
                 <div class="row">
                     @foreach($blog as $post)
-                        <div class="col-12 col-md-4 col-lg-4 col-sm-6">
+                        <div class="col-12 col-md-4 col-lg-4 col-sm-6 mt-30">
                             @include('web.default.blog.grid-list',['post' => $post])
                         </div>
                     @endforeach
