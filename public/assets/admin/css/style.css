@@ -2353,11 +2353,11 @@ Admin Questions Generator Page Style End
     .sidebar-mini .main-content:has(.lms-quiz-create) > .container {
         max-width: 100%;
     }
-    .sidebar-mini .similarity-content-block .tab-content .question-details-tab-data {
+   .similarity-content-block .tab-content .question-details-tab-data {
         flex: 0 0 830px;
         max-width: 830px;
     }
-    .sidebar-mini .similarity-content-block .tab-content .similarity-tab-data {
+    .similarity-content-block .tab-content .similarity-tab-data {
         flex: 0 0 calc(100% - 830px);
         max-width: calc(100% - 830px);
     }
