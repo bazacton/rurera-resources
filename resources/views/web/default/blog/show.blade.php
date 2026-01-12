@@ -40,7 +40,7 @@
                     {{-- ./ post Comments --}}
 
                     <div class="row mb-50">
-                        <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mt-30">
+                        <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mt-30">
+                        <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mt-30">
+                        <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
