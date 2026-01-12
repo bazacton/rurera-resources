@@ -669,7 +669,7 @@ function rureraform_element_duplicate(_object, _page_num) {
     i = i.replace("rureraform-element-", "");
     if (rureraform_form_elements[i] == null)
         return false;
-    if (rureraform_form_elements[i]['type'] == 'columns')
+    /*if (rureraform_form_elements[i]['type'] == 'columns')
         message = rureraform_esc_html__('Please confirm that you want to duplicate the element and all sub-elements.');
     else
         message = rureraform_esc_html__('Please confirm that you want to duplicate the element.');
@@ -688,7 +688,15 @@ function rureraform_element_duplicate(_object, _page_num) {
             rureraform_build();
             rureraform_dialog_close();
         }
-    });
+    });*/
+
+    if (rureraform_is_numeric(_page_num) && _page_num < rureraform_form_pages.length && rureraform_form_pages[_page_num] != null) {
+        _rureraform_element_duplicate(rureraform_form_elements[i]['_parent'], rureraform_form_pages[_page_num]['id'], i);
+    } else {
+        _rureraform_element_duplicate(rureraform_form_elements[i]['_parent'], rureraform_form_elements[i]['_parent'], i);
+    }
+    rureraform_build();
+    rureraform_dialog_close();
     return false;
 }
 
