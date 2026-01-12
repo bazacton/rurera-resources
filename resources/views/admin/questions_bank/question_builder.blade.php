@@ -450,7 +450,7 @@ $rand_id = rand(999,99999);
 															name="question_solve"
 															aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 
-											<div class="question-keywords-block">
+											<div class="question-keywords-block rurera-hide">
 												<!-- Keywords Section -->
 												<h3 class="font-20 font-weight-bold">Keywords</h3>
 												<div class="keywords-section">
@@ -613,6 +613,7 @@ $rand_id = rand(999,99999);
 													</div>
 												</div>
                                             @if($is_single == false)
+												@if(!empty($similiarity_response))
 												<h3>Similiarity Content</h3>
 												<div >
 													<div class="similarity-content-block-data" id="accordion">
@@ -634,7 +635,8 @@ $rand_id = rand(999,99999);
 													</div>
 
 												</div>
-                                        @endif
+												@endif
+												@endif
 											<div class="lms-dashboard-card">
 
 												<div class="questions_logs_block">
