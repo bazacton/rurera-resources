@@ -2016,12 +2016,9 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 }
 .add-more-question {
     margin: 10px 0 0;
-    width: 10%;
     margin-bottom: 0;
-    box-shadow: 0 0 10px #c3c3c367;
     padding: 10px;
     border-radius: 6px;
-    border: 1px solid transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2041,7 +2038,6 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .add-more-question .radio-btn img {
     border: 1px solid var(--primary);
     border-radius: 100%;
-    margin-bottom: 10px;
     max-width: none;
     width: 30px;
     height: 30px;
