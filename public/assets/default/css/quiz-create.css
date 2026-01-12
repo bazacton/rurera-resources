@@ -2126,6 +2126,19 @@ mjx-container[jax="SVG"] > svg {
 .lms-card-timeline li.hidden-log {
     display: none;
 }
+.log_details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.log_details .badge {
+    margin: 0 !important;
+    font-size: 14px;
+    color: #666;
+    padding: 0;
+}
 .questions_logs_block .lms-card-timeline {padding-left: 0;}
 .questions_logs_block .lms-card-timeline li {
     margin-top: 0;
