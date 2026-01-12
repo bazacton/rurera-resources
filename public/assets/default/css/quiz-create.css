@@ -2037,8 +2037,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     border: 1px solid var(--primary);
     border-radius: 100%;
     max-width: none;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     filter: invert(43%) sepia(63%) saturate(4197%) hue-rotate(220deg) brightness(100%) contrast(99%);
 }
