@@ -472,4 +472,13 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
         return clonedDiv;
     }
+    $(document).on('keyup', 'body', function (evt) {
+        if (evt.key === 'ArrowLeft') {
+            $('#prev-btn')[0].click();
+        }
+
+        if (evt.key === 'ArrowRight') {
+            $('#next-btn')[0].click();
+        }
+    });
 </script>
