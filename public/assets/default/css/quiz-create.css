@@ -2016,8 +2016,6 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 }
 .add-more-question {
     margin: 10px 0 0;
-    margin-bottom: 0;
-    padding: 10px;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -2046,6 +2044,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 }
 .add-more-question .radio-btn .card-icon h3 {
     color: var(--primary);
+    display: none;
 }
 .inner_dropdown_questions_color {border-bottom-color: var(--orange) !important; color: var(--orange) !important;}
 .inner_dropdown_questions,
