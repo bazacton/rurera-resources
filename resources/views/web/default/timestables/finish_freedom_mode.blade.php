@@ -32,6 +32,7 @@
             </span>
             <lottie-player
                 src="/assets/default/lottie/men-high-five.json"
+                style="width:350px;height:350px"
                 loop
                 autoplay>
             </lottie-player>
