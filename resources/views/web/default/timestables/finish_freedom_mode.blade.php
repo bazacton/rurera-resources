@@ -55,7 +55,7 @@
         <div class="icon-box">
             <lottie-player
                 src="/assets/default/lottie/fire.json"
-                style="width:200px;height:200px"
+                style="width:150px;height:150px"
                 loop
                 autoplay>
             </lottie-player>
