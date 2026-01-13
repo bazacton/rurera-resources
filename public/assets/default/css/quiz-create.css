@@ -2722,7 +2722,6 @@ Quiz Check Answers Page Style End
 .lesson-completion .icon-box {
     display: inline-block;
     margin: 0 0 25px;
-    position: relative;
 }
 .lesson-completion .icon-box .lottie-bg {
     position: absolute;
@@ -2730,10 +2729,12 @@ Quiz Check Answers Page Style End
     width: 350px;
     margin: 0 auto;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
 }
 .lesson-completion {
     margin-top: auto;
+    text-align: center;
 }
 .lesson-completion h5 {
     color: #ffc800;
