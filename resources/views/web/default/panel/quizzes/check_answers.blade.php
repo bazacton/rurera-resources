@@ -224,13 +224,5 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
             })
           }
 </script>
-<script>
-    lottie.loadAnimation({
-        container: document.getElementById('pigeon'),
-        path: 'assets/default/lottie/pigeon.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: true
-    });
-</script>
+
 @endpush
