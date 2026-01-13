@@ -1,5 +1,74 @@
 <div class="finish-steps">
-    testing goes here.....
+    <div class="lesson-completion">
+        <div class="icon-box">
+            <lottie-player
+                src="/assets/default/lottie/fire.json"
+                style="width:200px;height:200px"
+                loop
+                autoplay>
+            </lottie-player>
+        </div>
+        <h5>Lesson Complete!</h5>
+        <div class="completion-status">
+            <div class="status-box warning">
+                <em>Total</em>
+                <span>15</span>
+            </div>
+            <div class="status-box sucsess">
+                <em>Amaizing</em>
+                <span>100%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+        <a href="javascript:;" class="review-btn finish-next-step">
+            NEXT
+        </a>
+    </div>
+</div>
+<div class="finish-steps">
+    <div class="rurera-streak">
+        <div class="icon-box">
+            <lottie-player
+                src="/assets/default/lottie/fire.json"
+                style="width:200px;height:200px"
+                loop
+                autoplay>
+            </lottie-player>
+        </div>
+        <div class="streak-header">
+            <strong>1</strong>
+            <span>day streak</span>
+        </div>
+        <div class="streak-content-box">
+            <div class="streak-days-select">
+                <ul>
+                    <li>
+                        <span class="day-lable">Tu</span>
+                        <span class="streak-circle"></span>
+                    </li>
+                    <li>
+                        <span class="day-lable">W</span>
+                        <span class="streak-circle"></span>
+                    </li>
+                    <li>
+                        <span class="day-lable">Th</span>
+                        <span class="streak-circle"></span>
+                    </li>
+                    <li>
+                        <span class="day-lable">F</span>
+                        <span class="streak-circle"></span>
+                    </li>
+                    <li>
+                        <span class="day-lable">Sa</span>
+                        <span class="streak-circle"></span>
+                    </li>
+                </ul>
+            </div>
+            <p>Practcing daily grows your streak, but skipping a day resets it!</p>
+        </div>
+    </div>
 
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
         <a href="javascript:;" class="review-btn finish-next-step">
