@@ -110,7 +110,7 @@
     </div>
 </div>
 <div class="finish-steps rurera-hide">
-    <div class="quests-list panel-border bg-white rounded-sm p-30">
+    <!-- <div class="quests-list panel-border bg-white rounded-sm p-30">
         <ul>
             <li>
                 <div class="quests-item">
@@ -193,7 +193,71 @@
                 </div>
             </li>
         </ul>
+    </div> -->
+    <div class="card">
+    <h2 style="margin:0 0 20px 0;">Progress Tasks</h2>
+
+    <!-- ✅ Progress Item 1 -->
+    <div class="task">
+      <div class="left">
+        <div class="title">90% Completion in 2 lessons</div>
+        <div class="progress-box">
+          <div class="progress-count" data-progress="90">
+            <div class="progress-text">0%</div>
+          </div>
+        </div>
+      </div>
+      <div class="coin">
+        <span>+100</span>
+      </div>
     </div>
+
+    <!-- ✅ Progress Item 2 -->
+    <div class="task">
+      <div class="left">
+        <div class="title">Play times table Power-Up Mode for 1 minute.</div>
+        <div class="progress-box">
+          <div class="progress-count" data-progress="45">
+            <div class="progress-text">0%</div>
+          </div>
+        </div>
+      </div>
+      <div class="coin">
+        <span>+100</span>
+      </div>
+    </div>
+
+    <!-- ✅ Progress Item 3 -->
+    <div class="task">
+      <div class="left">
+        <div class="title">Invite 1 friend to get X600 Coins</div>
+        <div class="progress-box">
+          <div class="progress-count" data-progress="10">
+            <div class="progress-text">0%</div>
+          </div>
+        </div>
+      </div>
+      <div class="coin">
+        <span>+100</span>
+      </div>
+    </div>
+
+    <!-- ✅ Progress Item 4 -->
+    <div class="task">
+      <div class="left">
+        <div class="title">Rate Rurera on play store to get X500 Coins</div>
+        <div class="progress-box">
+          <div class="progress-count" data-progress="70">
+            <div class="progress-text">0%</div>
+          </div>
+        </div>
+      </div>
+      <div class="coin">
+        <span>+100</span>
+      </div>
+    </div>
+
+  </div>
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
         <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
@@ -362,64 +426,64 @@
                 </script>
 
                 <script>
-                    
-                    function animateNumber(el, target, duration = 1000) {
-                    let start = 0;
-                    let startTime = null;
+    // ✅ function to animate % number (0 -> target)
+    function animateNumber(el, target, duration = 1000) {
+      let start = 0;
+      let startTime = null;
 
-                    function step(timestamp){
-                        if (!startTime) startTime = timestamp;
+      function step(timestamp){
+        if (!startTime) startTime = timestamp;
 
-                        const progress = Math.min((timestamp - startTime) / duration, 1);
-                        const value = Math.floor(progress * target);
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        const value = Math.floor(progress * target);
 
-                        el.innerText = value + "%";
+        el.innerText = value + "%";
 
-                        if (progress < 1) {
-                        requestAnimationFrame(step);
-                        } else {
-                        el.innerText = target + "%";
-                        }
-                    }
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.innerText = target + "%";
+        }
+      }
 
-                    requestAnimationFrame(step);
-                    }
+      requestAnimationFrame(step);
+    }
 
-                    document.addEventListener("DOMContentLoaded", () => {
-                    const bars = Array.from(document.querySelectorAll(".progress-count"));
+    document.addEventListener("DOMContentLoaded", () => {
+      const bars = Array.from(document.querySelectorAll(".progress-count"));
 
-                    // Start all at 0
-                    bars.forEach(bar => {
-                        bar.style.width = "0%";
-                        const text = bar.querySelector(".progress-numbers");
-                        if (text) text.innerText = "0%";
-                    });
+      // Start all at 0
+      bars.forEach(bar => {
+        bar.style.width = "0%";
+        const text = bar.querySelector(".progress-text");
+        if (text) text.innerText = "0%";
+      });
 
-                    let index = 0;
+      let index = 0;
 
-                    function animateNextBar(){
-                        if(index >= bars.length) return;
+      function animateNextBar(){
+        if(index >= bars.length) return;
 
-                        const bar = bars[index];
-                        const target = Number(bar.dataset.progress || 0);
-                        const textEl = bar.querySelector(".progress-numbers");
+        const bar = bars[index];
+        const target = Number(bar.dataset.progress || 0);
+        const textEl = bar.querySelector(".progress-text");
 
-                        // trigger CSS transition
-                        requestAnimationFrame(() => {
-                        bar.style.width = target + "%";
-                        });
+        // trigger CSS transition
+        requestAnimationFrame(() => {
+          bar.style.width = target + "%";
+        });
 
-                        // animate numbers with same duration
-                        if(textEl){
-                        animateNumber(textEl, target, 1000);
-                        }
+        // animate numbers with same duration
+        if(textEl){
+          animateNumber(textEl, target, 1000);
+        }
 
-                        // next bar after current animation ends
-                        index++;
-                        setTimeout(animateNextBar, 1150); // 1000ms + gap
-                    }
+        // next bar after current animation ends
+        index++;
+        setTimeout(animateNextBar, 1150); // 1000ms + gap
+      }
 
-                    // little delay on screen open
-                    setTimeout(animateNextBar, 200);
-                    });
-                </script>
+      // little delay on screen open
+      setTimeout(animateNextBar, 200);
+    });
+  </script>
