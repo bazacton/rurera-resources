@@ -1458,7 +1458,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .numeric-list-style .lms-radio-select.image-right .field-holder label:before,
 .alphabet-list-style .lms-radio-select.image-right .field-holder label:before {left: 40px;}
 .alphabet-list-style .active-option.form-field:before,
-.alphabet-list-style .form-field:hover:before {
+.alphabet-list-style .form-field:hover:before,
+.form-field:has(input[type="checkbox"]:checked):before {
     border-color: #6eb37d;
     color: #fff;
     background-color: #ddd;
