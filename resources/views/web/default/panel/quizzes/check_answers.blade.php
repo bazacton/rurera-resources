@@ -19,6 +19,7 @@ $rand_id = rand(99,9999);
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <style>
 .field-holder.correct, .form-field.correct, .form-field.correct label {
     background: #d7fbdf !important;
