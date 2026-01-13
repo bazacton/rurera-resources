@@ -1,5 +1,5 @@
 <div class="finish-steps">
-    <div class="question-label cloud_text medium left_top">
+    <div class="question-label cloud_text medium left_bottom">
         <span class="cloud_text_element">
         <span class="cloud_avatar">
             <lottie-player
