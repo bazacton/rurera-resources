@@ -360,34 +360,4 @@
 
                     typeText();
                 </script>
-                <script>
-                    function runStepCounter(activeStepEl) {
-                    const counters = activeStepEl.querySelectorAll('.status-counter');
-
-                    counters.forEach(counter => {
-                        if (counter.dataset.animated) return; // run once per step
-
-                        const text = counter.textContent.trim();
-                        const isPercent = text.includes('%');
-                        const target = parseInt(text.replace('%', ''), 10);
-
-                        let current = 0;
-                        const speed = Math.max(20, 1200 / target);
-
-                        function animate() {
-                            current++;
-                            if (current >= target) {
-                                counter.textContent = isPercent ? target + '%' : target;
-                                counter.dataset.animated = 'true';
-                                return;
-                            }
-                            counter.textContent = isPercent ? current + '%' : current;
-                            setTimeout(animate, speed);
-                        }
-
-                        animate();
-                    });
-                }
-  
-                </script>
 
