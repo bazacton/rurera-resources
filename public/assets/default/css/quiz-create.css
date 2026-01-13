@@ -1688,7 +1688,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 body:has(.quiz-time-bar) .learning-page .learning-content,
 body:has(.quiz-time-bar) .prev-next-controls,
 body:has(.type-practice),
-body:has(.type-practice) .learning-page .learning-content {
+body:has(.type-practice) .learning-page .learning-content,
+body:has(.type-practice) .question-layout-block .prev-next-controls {
     background-color: #f6f6f6;
 }
 .quiz-time-bar {
