@@ -426,59 +426,53 @@
                 </script>
 
                 <script>
-                function handleStep3Progress() {
+                function handleStep3Progress(step) {
 
-                // current visible step (no .hide)
-                const step = document.querySelector(".finish-steps:not(.rurera-hide)");
-                if (!step) return;
+  if (!step) return;
 
-                // run only if progress bars exist in this step
-                const bars = step.querySelectorAll(".progress-count");
-                if (!bars.length) return;
+  const bars = step.querySelectorAll(".progress-count");
+  if (!bars.length) return;
 
-                // prevent re-run
-                if (step.dataset.progressDone) return;
-                step.dataset.progressDone = "true";
+  // prevent rerun
+  if (step.dataset.progressDone) return;
+  step.dataset.progressDone = "true";
 
-                function animateNumber(el, target, duration = 1000) {
-                    let startTime = null;
+  function animateNumber(el, target, duration = 1000) {
+    let startTime = null;
 
-                    function stepFn(timestamp) {
-                    if (!startTime) startTime = timestamp;
+    function stepFn(timestamp) {
+      if (!startTime) startTime = timestamp;
 
-                    const progress = Math.min((timestamp - startTime) / duration, 1);
-                    el.innerText = Math.floor(progress * target) + "%";
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      el.innerText = Math.floor(progress * target) + "%";
 
-                    if (progress < 1) {
-                        requestAnimationFrame(stepFn);
-                    } else {
-                        el.innerText = target + "%";
-                    }
-                    }
+      if (progress < 1) {
+        requestAnimationFrame(stepFn);
+      } else {
+        el.innerText = target + "%";
+      }
+    }
 
-                    requestAnimationFrame(stepFn);
-                }
+    requestAnimationFrame(stepFn);
+  }
 
-                bars.forEach(bar => {
-                    const target = Number(bar.dataset.progress || 0);
-                    const text = bar.querySelector(".progress-text");
+  bars.forEach(bar => {
+    const target = Number(bar.dataset.progress || 0);
+    const text = bar.querySelector(".progress-text");
 
-                    // reset
-                    bar.style.width = "0%";
-                    if (text) text.innerText = "0%";
+    bar.style.width = "0%";
+    if (text) text.innerText = "0%";
 
-                    // animate bar
-                    requestAnimationFrame(() => {
-                    bar.style.width = target + "%";
-                    });
+    requestAnimationFrame(() => {
+      bar.style.width = target + "%";
+    });
 
-                    // animate text
-                    if (text) animateNumber(text, target);
-                });
-                }
-                currentStep.classList.add("rurera-hide");
-                nextStep.classList.remove("rurera-hide");
+    if (text) animateNumber(text, target);
+  });
+}
+currentStep.classList.add("rurera-hide");
+nextStep.classList.remove("rurera-hide");
 
-                // call progress animation
-                handleStep3Progress();
+// ✅ pass nextStep directly
+handleStep3Progress(nextStep);
                 </script>
