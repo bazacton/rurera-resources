@@ -2733,21 +2733,16 @@ Quiz Check Answers Page Style End
     margin: 0 auto;
 }
 .finish-steps .cloud_text_element .cloud_avatar {
-    max-width: 100px;
-    flex: 0 0 100px;
+    max-width: 150px;
+    flex: 0 0 150px;
     position: relative;
     top: 15px;
-}
-.cloud_avatar lottie-player {
-    height: 100px !important;
-    width: 100px !important;
 }
 .finish-steps .cloud_text {
     width: 100%;
     display: inline-flex;
     justify-content: center;
     margin-top: auto;
-    
 }
 .finish-steps .cloud_text .cloud_nner_text {
     border-radius: 5px;
