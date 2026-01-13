@@ -2729,6 +2729,7 @@ Quiz Check Answers Page Style End
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 .cloud_avatar lottie-player {
     height: 80px !important;
@@ -2752,6 +2753,9 @@ Quiz Check Answers Page Style End
     display: block;
     letter-spacing: 1px;
 }
+.finish-steps .medium .cloud_text_element {
+    justify-content: center;
+}
 .word {
   opacity: 0;
   display: inline-block;
@@ -2770,8 +2774,8 @@ Quiz Check Answers Page Style End
 .quests-list li {margin-bottom: 35px;}
 .panel-right-sidebar h3 .view-all {color: var(--primary);}
 .quests-list li:last-child {margin-bottom: 15px;}
-.panel-content-holder .quests-list li {border-bottom: 1px solid #ddd; padding: 0 0 25px; margin-bottom: 25px;}
-.panel-content-holder .quests-list li:last-child {padding: 0; border: 0; margin: 0;}
+.quests-list li {border-bottom: 1px solid #ddd; padding: 0 0 25px; margin-bottom: 25px;}
+.quests-list li:last-child {padding: 0; border: 0; margin: 0;}
 .quests-list.quests-learning li {margin: 0 0 20px;border-radius: 8px;border: 1px solid #ddd; position: relative;}
 .quests-list.quests-learning li:last-child {padding: 20px; border: 1px solid #ddd;}
 .quests-item {display: flex; align-items: center; flex-wrap: wrap; gap: 5px; width: 100%; }
@@ -2784,7 +2788,7 @@ Quiz Check Answers Page Style End
 .quests-item .progress-numbers {position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 14px; }
 .quests-item .item-text h5 {margin-bottom: 2px; }
 .quests-item .horizontal .progress-count {border-radius: 50px 0 0 50px;}
-.panel-content-holder .quests-item .item-text .levels-progress.horizontal {width: calc(100% - 65px);}
+.quests-item .item-text .levels-progress.horizontal {width: calc(100% - 65px);}
 
 /* Quests-List Style End */
 /* Finish Steps Style End */
