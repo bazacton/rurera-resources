@@ -9,7 +9,9 @@
                 autoplay>
             </lottie-player>
         </span>
-            <span class="cloud_nner_text" id="cloud-text">Select the correct options from the dropdowns to complete the sentence:</span>
+            <span class="cloud_nner_text">
+                <span id="cloud-text">Select the correct options from the dropdowns to complete the sentence:</span>
+            </span>
         </span>
     </div>
 
