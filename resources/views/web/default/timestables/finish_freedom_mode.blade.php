@@ -123,7 +123,7 @@
                             <span class="progress-box">
                                 <span class="progress-count" data-progress="50"></span>
                             </span>
-                            <span class="progress-numbers">1 / 2</span>
+                            <span class="progress-numbers">0%</span>
                         </div>
                         <span class="progress-icon font-16">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
@@ -414,7 +414,7 @@
 
                             // ✅ FIXED selectors according to your HTML
                             const progressBox = bar.closest(".progress-box");
-                            const numberEl = bar.querySelector(".progress-text"); // inside bar
+                            const numberEl = bar.querySelector(".progress-numbers"); // inside bar
 
                             // Reset
                             bar.style.transition = "none";
@@ -447,7 +447,7 @@
                     /* ✅ Fallback: agar .finish-next-step exist hi na kare,
                     to page load par card ke andar sequential animation chal jaye */
                     document.addEventListener("DOMContentLoaded", function () {
-                    const cardBars = document.querySelectorAll(".card .progress-count");
+                    const cardBars = document.querySelectorAll(".levels-progress .progress-count");
                     if (!cardBars.length) return;
 
                     // Prevent re-running
@@ -477,7 +477,7 @@
 
                         const bar = cardBars[index];
                         const target = Number(bar.dataset.progress || 0);
-                        const numberEl = bar.querySelector(".progress-text");
+                        const numberEl = bar.querySelector(".progress-numbers");
 
                         bar.style.transition = "none";
                         bar.style.width = "0%";
