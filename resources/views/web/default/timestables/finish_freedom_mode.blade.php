@@ -16,7 +16,7 @@
     </div>
 
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-        <a href="javascript:;" class="finish-prev-step">Previous</a>
+        <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
     </div>
 </div>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-        <a href="javascript:;" class="finish-prev-step">Previous</a>
+        <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
     </div>
 </div>
@@ -92,7 +92,7 @@
     </div>
 
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-        <a href="javascript:;" class="finish-prev-step">Previous</a>
+        <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
     </div>
 </div>
@@ -182,7 +182,7 @@
         </ul>
     </div>
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-        <a href="javascript:;" class="finish-prev-step">Previous</a>
+        <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
     </div>
 </div>
