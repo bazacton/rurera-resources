@@ -2926,6 +2926,7 @@ Quiz Check Answers Page Style End
     flex-direction: column;
     gap: 15px;
     margin: 0 0 25px;
+    color: #ff9600;
 }
 .streak-header strong {
     font-size: 60px;
