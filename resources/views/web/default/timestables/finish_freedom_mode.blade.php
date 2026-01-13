@@ -1,3 +1,13 @@
+<div class="finish-steps">
+    testing goes here.....
+
+    <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+        <a href="javascript:;" class="review-btn finish-next-step">
+            NEXT
+        </a>
+    </div>
+</div>
+<div class="finish-steps rurera-hide">
               <div class="container mt-3">
                   <div class="col-12">
                       <div class="chart-summary-fields result-layout-summary text-center">
@@ -46,7 +56,7 @@
                                           <div class="score incorrect-questions">{{$QuizzesResult->total_incorrect}}</div>
                                       </div>
                                   </div>
-  
+
                                   <div class="col-12 col-md-4 col-lg-3">
                                       <div class="sats-summary-icon" style="background-color: #e67035;">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 24 24" fill="none" style="color:#fff">
@@ -113,6 +123,7 @@
                       </div>
                   </div>
               </div>
+</div>
                 @if($QuizzesResult->attempt_mode == 'freedom_mode')
                 @php $attempt_options = isset( $QuizzesResult->attempt_options ) ? json_decode($QuizzesResult->attempt_options) : array();
                 $question_values = isset( $attempt_options->question_values )? $attempt_options->question_values : array();
