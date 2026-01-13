@@ -27,7 +27,7 @@
         </a>
     </div>
 </div>
-<div class="finish-steps">
+<div class="finish-steps rurera-hide">
     <div class="rurera-streak">
         <div class="icon-box">
             <lottie-player
