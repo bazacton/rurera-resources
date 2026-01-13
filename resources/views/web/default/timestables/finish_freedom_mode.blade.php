@@ -12,6 +12,14 @@
             <span class="cloud_nner_text" id="cloud-text">Select the correct options from the dropdowns to complete the sentence:</span>
         </span>
     </div>
+
+    <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+        <a href="javascript:;" class="review-btn finish-next-step">
+            NEXT
+        </a>
+    </div>
+</div>
+<div class="finish-steps rurera-hide">
     <div class="lesson-completion">
         <div class="icon-box">
             <lottie-player
