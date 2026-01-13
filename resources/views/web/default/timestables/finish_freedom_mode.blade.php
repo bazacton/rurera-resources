@@ -426,64 +426,65 @@
                 </script>
 
                 <script>
-    // ✅ function to animate % number (0 -> target)
-    function animateNumber(el, target, duration = 1000) {
-      let start = 0;
-      let startTime = null;
+                    
+                function animateNumber(el, target, duration = 1000) {
+  let startTime = null;
 
-      function step(timestamp){
-        if (!startTime) startTime = timestamp;
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
 
-        const progress = Math.min((timestamp - startTime) / duration, 1);
-        const value = Math.floor(progress * target);
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    const value = Math.floor(progress * target);
 
-        el.innerText = value + "%";
+    el.innerText = value + "%";
 
-        if (progress < 1) {
-          requestAnimationFrame(step);
-        } else {
-          el.innerText = target + "%";
-        }
-      }
-
+    if (progress < 1) {
       requestAnimationFrame(step);
+    } else {
+      el.innerText = target + "%";
+    }
+  }
+
+  requestAnimationFrame(step);
+}
+
+window.addEventListener("load", function () {
+
+  const bars = Array.from(document.querySelectorAll(".progress-count"));
+  if (!bars.length) return; // safety check
+
+  // Reset all bars
+  bars.forEach(bar => {
+    bar.style.width = "0%";
+    const text = bar.querySelector(".progress-text");
+    if (text) text.innerText = "0%";
+  });
+
+  let index = 0;
+
+  function animateNextBar() {
+    if (index >= bars.length) return;
+
+    const bar = bars[index];
+    const target = Number(bar.dataset.progress || 0);
+    const textEl = bar.querySelector(".progress-text");
+
+    // Trigger width animation
+    requestAnimationFrame(() => {
+      bar.style.width = target + "%";
+    });
+
+    // Animate number
+    if (textEl) {
+      animateNumber(textEl, target, 1000);
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const bars = Array.from(document.querySelectorAll(".progress-count"));
+    index++;
+    setTimeout(animateNextBar, 1100);
+  }
 
-      // Start all at 0
-      bars.forEach(bar => {
-        bar.style.width = "0%";
-        const text = bar.querySelector(".progress-text");
-        if (text) text.innerText = "0%";
-      });
+  // Start animation
+  setTimeout(animateNextBar, 200);
+});
 
-      let index = 0;
-
-      function animateNextBar(){
-        if(index >= bars.length) return;
-
-        const bar = bars[index];
-        const target = Number(bar.dataset.progress || 0);
-        const textEl = bar.querySelector(".progress-text");
-
-        // trigger CSS transition
-        requestAnimationFrame(() => {
-          bar.style.width = target + "%";
-        });
-
-        // animate numbers with same duration
-        if(textEl){
-          animateNumber(textEl, target, 1000);
-        }
-
-        // next bar after current animation ends
-        index++;
-        setTimeout(animateNextBar, 1150); // 1000ms + gap
-      }
-
-      // little delay on screen open
-      setTimeout(animateNextBar, 200);
-    });
-  </script>
+            </script>
