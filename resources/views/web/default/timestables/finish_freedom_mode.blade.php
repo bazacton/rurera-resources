@@ -242,12 +242,19 @@
                     });
                 </script>
                 <script>
-                    const textEl = document.getElementById("cloud-text");
-                    const words = textEl.innerText.split(" ");
+                    const element = document.getElementById("cloud-text");
+                    const text = element.innerText;
+                    element.innerText = "";
 
-                    textEl.innerHTML = words
-                    .map((word, i) =>
-                        `<span class="word" style="animation-delay:${i * 0.3}s">${word}&nbsp;</span>`
-                    )
-                    .join("");
+                    let index = 0;
+
+                    function typeText() {
+                    if (index < text.length) {
+                        element.innerText += text.charAt(index);
+                        index++;
+                        setTimeout(typeText, 80);
+                    }
+                    }
+
+                    typeText();
                 </script>
