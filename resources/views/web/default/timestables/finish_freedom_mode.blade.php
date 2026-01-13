@@ -100,6 +100,32 @@
     </div>
 </div>
 <div class="finish-steps rurera-hide">
+    <div class="quests-list panel-border bg-white rounded-sm p-30">
+        <ul>
+            <li>
+                <div class="quests-item">
+                    <div class="icon-box">
+                        <img src="/assets/default/img/types/practice.svg" alt="learning image" width="50" height="50">
+                    </div>
+                    <div class="item-text">
+                        <h5 class="font-18 font-weight-bold">90% Completion in 2 lessons</h5>
+                        <div class="levels-progress horizontal">
+                            <span class="progress-box">
+                                <span class="progress-count" style="width: 0%;"></span>
+                            </span>
+                            <span class="progress-numbers">0 / 2</span>
+                        </div>
+                        <span class="progress-icon font-16">
+                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
+                            +100
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="finish-steps rurera-hide">
               <div class="container mt-3">
                   <div class="col-12">
                       <div class="chart-summary-fields result-layout-summary text-center">
