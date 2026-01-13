@@ -2735,6 +2735,10 @@ Quiz Check Answers Page Style End
 .finish-steps .cloud_text .cloud_nner_text {
     border-radius: 5px;
     text-align: left;
+    word-wrap: break-word;
+    white-space: break-spaces;
+    display: block;
+    letter-spacing: 1px;
 }
 .word {
   opacity: 0;
