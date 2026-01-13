@@ -2723,6 +2723,13 @@ Quiz Check Answers Page Style End
     display: inline-block;
     margin: 0 0 25px;
 }
+.finish-steps:has(.cloud_text) {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .cloud_avatar lottie-player {
     height: 80px !important;
     width: 80px !important;
