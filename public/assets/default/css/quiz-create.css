@@ -2723,4 +2723,11 @@ Quiz Check Answers Page Style End
     display: inline-block;
     margin: 0 0 25px;
 }
+.cloud_avatar lottie-player {
+    height: 80px !important;
+    width: 80px !important;
+}
+.finish-steps .cloud_text {
+    width: auto;
+}
 /* Finish Steps Style End */
