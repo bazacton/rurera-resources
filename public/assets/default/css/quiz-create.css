@@ -2734,6 +2734,8 @@ Quiz Check Answers Page Style End
 .finish-steps .cloud_text_element .cloud_avatar {
     max-width: 100px;
     flex: 0 0 100px;
+    position: relative;
+    top: 15px;
 }
 .cloud_avatar lottie-player {
     height: 100px !important;
