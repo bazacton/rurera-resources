@@ -1685,7 +1685,6 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 /*Quiz prev-next-controls Style End*/
 
 /* Quiz Time-Bar Style Start */
-body:has(.quiz-time-bar),
 body:has(.quiz-time-bar) .learning-page .learning-content,
 body:has(.quiz-time-bar) .prev-next-controls,
 body:has(.type-practice) {
