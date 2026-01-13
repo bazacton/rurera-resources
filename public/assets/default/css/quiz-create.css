@@ -1463,6 +1463,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     border-color: #73c238;
     color: #fff;
     background-color: #8cf041;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 /*Quistions Type Alphabet-list style End*/
 
