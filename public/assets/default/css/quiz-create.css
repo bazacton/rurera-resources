@@ -2762,7 +2762,7 @@ Quiz Check Answers Page Style End
     font-weight: 500;
     color: #fff;
 }
-.status-box span {
+.status-box > span {
     background-color: #fff;
     padding: 15px 5px;
     display: inline-flex;
