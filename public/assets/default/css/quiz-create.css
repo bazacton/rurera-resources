@@ -2735,6 +2735,53 @@ Quiz Check Answers Page Style End
 .lesson-completion {
     margin-top: auto;
 }
+.lesson-completion h5 {
+    color: #ffc800;
+    margin: -20px 0 15px;
+}
+.completion-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.status-box {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 120px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.status-box.warning {
+    background-color: #ffc800;
+}
+.status-box em {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+.status-box span {
+    background-color: #fff;
+    padding: 15px 5px;
+    display: block;
+    text-align: center;
+    line-height: normal;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.status-box.warning span {
+    color: #ffc800;
+}
+.status-box.sucsess {
+    background-color: #58cc02;
+}
+.status-box.sucsess span {
+    color: #58cc02;
+}
+
+
 .finish-steps {
     height: 100vh;
     display: flex;
