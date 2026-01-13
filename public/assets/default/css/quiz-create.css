@@ -2896,6 +2896,7 @@ Quiz Check Answers Page Style End
     user-select: none;
     pointer-events: none;
     color: #fff;
+    line-height: 14px;
 }
 .quests-item .item-text h5 {margin-bottom: 2px; }
 .quests-item .horizontal .progress-count {border-radius: 50px 0 0 50px;}
