@@ -2456,8 +2456,8 @@ Quiz Check Answers Page Style End
 }
 .cloud_text_element .cloud_avatar {
     text-align: center;
-    max-width: 70px;
-    flex: 0 0 70px;
+    max-width: 100px;
+    flex: 0 0 100px;
 }
 .cloud_text_element .cloud_avatar img {
     height: 50px;
@@ -2732,8 +2732,8 @@ Quiz Check Answers Page Style End
     width: 100%;
 }
 .cloud_avatar lottie-player {
-    height: 80px !important;
-    width: 80px !important;
+    height: 100px !important;
+    width: 100px !important;
 }
 .finish-steps .cloud_text {
     width: 100%;
