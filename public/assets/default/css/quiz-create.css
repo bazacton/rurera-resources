@@ -2774,6 +2774,7 @@ Quiz Check Answers Page Style End
     width: 100%;
     padding: 00;
     margin: auto 0 25px !important;
+    justify-content: space-between;
 }
 .finish-steps .prev-next-controls .finish-next-step {
     position: relative;
