@@ -2781,7 +2781,7 @@ Quiz Check Answers Page Style End
 .finish-steps .prev-next-controls {
     width: 100%;
     padding: 00;
-    margin: auto 0 0 !important;
+    margin: auto 0 25px !important;
 }
 .finish-steps .prev-next-controls .finish-next-step {
     position: relative;
