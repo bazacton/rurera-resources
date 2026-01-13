@@ -68,7 +68,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
             </div>
 
             <div class="question-area-block" data-questions_layout="{{json_encode($questions_layout)}}">
-                <div class="chart-summary-fields result-layout-summary test11">
+                <div class="chart-summary-fields result-layout-summary">
                     <div class="sats-summary">
                         <div class="row">
                             <div class="col-12 col-md-4 col-lg-3 bitcoin-box">
@@ -183,6 +183,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 <script src="/assets/default/js/parts/quiz-start.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/default/js/swiper/lottie.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     init_question_functions();
