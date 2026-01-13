@@ -70,7 +70,13 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 
             <div class="question-area-block" data-questions_layout="{{json_encode($questions_layout)}}">
                 <div class="chart-summary-fields result-layout-summary">
-                    <lottie-player src="assets/default/lottie/pigeon.json" loop autoplay></lottie-player>
+                    
+                    <lottie-player
+                    src="assets/default/lottie/pigeon.json"
+                    style="width:200px;height:200px"
+                    loop
+                    autoplay>
+                    </lottie-player>
                     <div class="sats-summary">
                         <div class="row">
                             <div class="col-12 col-md-4 col-lg-3 bitcoin-box">
@@ -224,15 +230,6 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
               }
             })
           }
-</script>
-<script>
-    lottie.loadAnimation({
-        container: document.getElementById('pigeon'),
-        path: 'assets/default/lottie/pigeon.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: true
-    });
 </script>
 
 @endpush
