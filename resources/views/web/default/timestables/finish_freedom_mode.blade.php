@@ -24,7 +24,7 @@
     <div class="lesson-completion">
         <div class="icon-box">
             <lottie-player
-                src="/assets/default/lottie/fire.json"
+                src="/assets/default/lottie/rocket.json"
                 style="width:200px;height:200px"
                 loop
                 autoplay>
