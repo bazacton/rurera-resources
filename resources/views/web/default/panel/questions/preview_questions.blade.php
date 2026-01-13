@@ -319,6 +319,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
 <script>
+    $('body').addClass('quiz-area-page');
 $(document).on('keyup', 'body', function (evt) {
     if (evt.key === 'ArrowLeft') {
         if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){

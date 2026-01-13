@@ -350,6 +350,7 @@ $timer_counter = $practice_time;
 <script>
     //init_question_functions();
     $('body').addClass('quiz-show');
+    $('body').addClass('quiz-area-page');
     var header = document.getElementById("navbar");
     var headerOffset = (header != null) ? header.offsetHeight : 100;
     var header_height = parseInt(headerOffset) + parseInt(85) + "px";

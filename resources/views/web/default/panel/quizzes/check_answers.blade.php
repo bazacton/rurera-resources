@@ -19,6 +19,7 @@ $rand_id = rand(99,9999);
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';">
+
 <style>
 .field-holder.correct, .form-field.correct, .form-field.correct label {
     background: #d7fbdf !important;
@@ -72,7 +73,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                 <div class="chart-summary-fields result-layout-summary">
                     
                     <lottie-player
-                    src="assets/default/lottie/pigeon.json"
+                    src="/assets/default/lottie/pigeon.json"
                     style="width:200px;height:200px"
                     loop
                     autoplay>

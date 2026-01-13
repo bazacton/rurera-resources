@@ -100,20 +100,9 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
 
                     <div class="question-step quiz-complete" style="display:none">
-                        <div class="question-layout-block">
-                            <div class="left-content has-bg">
-                                <h2>&nbsp;</h2>
-                                <div id="rureraform-form-1"
-                                     class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
-                                     _data-parent="1"
-                                     _data-parent-col="0" style="display: block;">
-                                    <div class="question-layout row">
-                                        Test Completed!!!
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
+                        <div class="step-block">Test Completed!!!</div>
+
                     </div>
                     <div class="question-area-block" style="margin-top:80px;" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
                         @php $total_questions = 10; @endphp
@@ -246,6 +235,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
     var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
     //init_question_functions();
+    $('body').addClass('quiz-area-page');
     $('body').addClass('quiz-show');
     var header = document.getElementById("navbar");
     var headerOffset = (header != null) ? header.offsetHeight : 100;
@@ -361,7 +351,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
             $(".quiz-complete").show(2000);
-            window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+            //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
 
