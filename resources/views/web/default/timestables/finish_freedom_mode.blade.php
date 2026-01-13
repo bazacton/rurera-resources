@@ -124,6 +124,11 @@
             </li>
         </ul>
     </div>
+    <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+        <a href="javascript:;" class="review-btn finish-next-step">
+            NEXT
+        </a>
+    </div>
 </div>
 <div class="finish-steps rurera-hide">
               <div class="container mt-3">
