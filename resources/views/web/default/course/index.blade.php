@@ -163,7 +163,7 @@
                                                                             @endphp
 
                                                                             <li>
-                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} - {{$topicPartObj->id}} - Q{{isset($quizObj->id)? $quizObj->id : '-'}} ---- {{$user_difficulty_level}} -- Acr ({{$topic_accuracy}} -- Com {{$total_completion}})
+                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} - {{$topicPartObj->id}} - Q{{isset($quizObj->id)? $quizObj->id : '-'}} ---- {{$user_difficulty_level}} -- Acr ({{$topic_accuracy}}) -- Com {{$total_completion}}
                                                                                     <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
                                                                                 <ul id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
                                                                                     <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
