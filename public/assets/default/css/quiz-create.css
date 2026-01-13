@@ -253,9 +253,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .active-option label,
 .form-field label:hover,
 .form-field input[type="checkbox"]:checked ~ label {
-    background-color: #95D6A2;
-    color: #4D8F5B;
-    border-color: #6eb37d;
+    background-color: #d2ffb0;
+    color: #73c238;
+    border-color: #9ef95a;
 }
 /* Multi Response List Style End */
 /*Quiz Radio-Image Style Start*/
@@ -1460,9 +1460,9 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .alphabet-list-style .active-option.form-field:before,
 .alphabet-list-style .form-field:hover:before,
 .form-field:has(input[type="checkbox"]:checked):before {
-    border-color: #6eb37d;
+    border-color: #73c238;
     color: #fff;
-    background-color: #ddd;
+    background-color: #8cf041;
 }
 /*Quistions Type Alphabet-list style End*/
 
