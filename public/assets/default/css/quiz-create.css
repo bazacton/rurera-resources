@@ -2736,4 +2736,16 @@ Quiz Check Answers Page Style End
     border-radius: 5px;
     text-align: left;
 }
+.word {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Finish Steps Style End */
