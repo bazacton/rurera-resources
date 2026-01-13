@@ -41,11 +41,17 @@
         <div class="completion-status">
             <div class="status-box warning">
                 <em>Total coin</em>
-                <span><img src="/assets/default/svgs/coin-colord.svg" alt="coin-colord" height="64" width="64"> 15</span>
+                <span>
+                    <img src="/assets/default/svgs/coin-colord.svg" alt="coin-colord" height="64" width="64">
+                     <span class="status-counter">15</span>
+                </span>
             </div>
             <div class="status-box sucsess">
                 <em>Amazing</em>
-                <span><img src="/assets/default/svgs/target.svg" alt="target" height="64" width="64"> 100%</span>
+                <span>
+                    <img src="/assets/default/svgs/target.svg" alt="target" height="64" width="64">
+                    <span class="status-counter">100%</span>
+                </span>
             </div>
         </div>
     </div>
@@ -354,3 +360,30 @@
 
                     typeText();
                 </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const counters = document.querySelectorAll(".status-counter");
+
+                        counters.forEach(counter => {
+                            const text = counter.innerText.trim();
+                            const isPercent = text.includes('%');
+                            const target = parseInt(text.replace('%', ''), 10);
+
+                            let current = 0;
+                            const speed = Math.max(20, 1500 / target);
+
+                            const updateCounter = () => {
+                                current++;
+                                if (current >= target) {
+                                    counter.innerText = isPercent ? target + '%' : target;
+                                    return;
+                                }
+                                counter.innerText = isPercent ? current + '%' : current;
+                                setTimeout(updateCounter, speed);
+                            };
+
+                            updateCounter();
+                        });
+                    });
+                    </script>
+
