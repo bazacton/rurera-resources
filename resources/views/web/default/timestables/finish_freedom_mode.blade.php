@@ -361,35 +361,33 @@
                     typeText();
                 </script>
                 <script>
-                    let currentStep = 0;
-                    const steps = document.querySelectorAll('.finish-steps');
+                    function runStepCounter(activeStepEl) {
+                    const counters = activeStepEl.querySelectorAll('.status-counter');
 
-                    function animateCounters(stepEl) {
-                        const counters = stepEl.querySelectorAll('.status-counter');
+                    counters.forEach(counter => {
+                        if (counter.dataset.animated) return; // run once per step
 
-                        counters.forEach(counter => {
-                            if (counter.dataset.done) return; // prevent re-run
+                        const text = counter.textContent.trim();
+                        const isPercent = text.includes('%');
+                        const target = parseInt(text.replace('%', ''), 10);
 
-                            const text = counter.innerText.trim();
-                            const isPercent = text.includes('%');
-                            const target = parseInt(text.replace('%', ''), 10);
+                        let current = 0;
+                        const speed = Math.max(20, 1200 / target);
 
-                            let current = 0;
-                            const speed = Math.max(20, 1200 / target);
-
-                            function update() {
-                                current++;
-                                if (current >= target) {
-                                    counter.innerText = isPercent ? target + '%' : target;
-                                    counter.dataset.done = "true";
-                                    return;
-                                }
-                                counter.innerText = isPercent ? current + '%' : current;
-                                setTimeout(update, speed);
+                        function animate() {
+                            current++;
+                            if (current >= target) {
+                                counter.textContent = isPercent ? target + '%' : target;
+                                counter.dataset.animated = 'true';
+                                return;
                             }
+                            counter.textContent = isPercent ? current + '%' : current;
+                            setTimeout(animate, speed);
+                        }
 
-                            update();
-                        });
-                    }    
+                        animate();
+                    });
+                }
+  
                 </script>
 
