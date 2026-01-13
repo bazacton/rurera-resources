@@ -2874,11 +2874,14 @@ Quiz Check Answers Page Style End
     font-weight: 500;
 }
 .streak-circle {
-    display: inline-block;
-    height: 25px;
-    width: 25px;
+    display: inline-flex;
+    height: 28px;
+    width: 28px;
     background-color: #ccc;
     border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 .active .streak-circle {
     background-color: #ff9600;
