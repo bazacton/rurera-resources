@@ -592,6 +592,9 @@ Left SideBar-menu End
 .question-result-layout .form-field.correct,
 .question-result-layout .form-field.wrong {border-radius: 10px;}
 .question-result-layout .form-field.correct input[type="checkbox"]:checked ~ label {background-color: inherit;}
+.question-result-layout [class*="rureraform-col-"]:first-child {
+    margin-top: 15px;
+}
 .status-in-words span {font-size: 16px;position: relative;display: inline-flex;align-items: center;}
 .status-in-words {display: flex;align-items: center;gap: 50px;margin-bottom: 30px;}
 .status-in-words span:before {content: "";display: inline-block;vertical-align: middle;height: 18px;width: 18px;margin-right: 8px; box-shadow: 0 0 4px rgba(0,0,0,0.4) inset;}
