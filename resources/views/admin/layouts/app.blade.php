@@ -285,6 +285,29 @@
         </div>
 
     </div>
+
+
+    <div class="modal fade modal-fullscreen-xl rurera-filepicker rurera-file-manager-modal" id="rurera-file-manager-modal" tabindex="-1" aria-labelledby="fileViewModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body rurera-file-manager-block">
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <div class="text-muted small">Selected to insert: <strong><span id="rfpInsertCount">0</span></strong>/5</div>
+                    <div>
+                        <button type="button" class="btn btn-outline-secondary rfp-btn" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary rfp-btn" id="rfpInsertBtn" disabled>Insert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- General JS Scripts -->
     <script src="/assets/admin/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="/assets/default/js/admin/jquery-ui.min.js"></script>
