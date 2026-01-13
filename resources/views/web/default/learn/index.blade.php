@@ -30,7 +30,7 @@
                            @endif
                         </div>
                         <div class="categories-text">
-                            <h4 class="categories-title font-19 font-weight-bold"><a href="/{{$courseObj->subjectYear->slug}}/{{$courseObj->subject->slug}}">{{$courseObj->subject->getTitleAttribute()}} -- {{$courseObj->subject->id}}</a></h4>
+                            <h4 class="categories-title font-19 font-weight-bold"><a href="/{{$categoryObj->slug}}/{{$courseObj->subject->slug}}">{{$courseObj->subject->getTitleAttribute()}} -- {{$courseObj->subject->id}}</a></h4>
                             @if( isset( $subject_percentage['percentage'] ) && $subject_percentage['percentage'] > 0)
                                 <div class="levels-progress horizontal">
                                     <span class="progress-numbers">{{$subject_percentage['skills_attempted']}}/{{$subject_percentage['total_skils']}} Lessons</span>
