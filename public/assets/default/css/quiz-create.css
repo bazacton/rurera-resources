@@ -2831,9 +2831,10 @@ Quiz Check Answers Page Style End
 }
 .finish-steps .prev-next-controls {
     width: 100%;
-    padding: 00;
     margin: auto 0 25px !important;
     justify-content: space-between;
+    border-top: 2px dashed #ddd;
+    padding: 25px 0 0;
 }
 .finish-steps .prev-next-controls .finish-next-step {
     position: relative;
