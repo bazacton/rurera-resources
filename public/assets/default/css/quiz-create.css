@@ -2730,4 +2730,7 @@ Quiz Check Answers Page Style End
 .finish-steps .cloud_text {
     width: auto;
 }
+.finish-steps .cloud_text .cloud_nner_text {
+    border-radius: 5px;
+}
 /* Finish Steps Style End */
