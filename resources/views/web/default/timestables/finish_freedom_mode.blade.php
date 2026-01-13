@@ -9,7 +9,7 @@
                 autoplay>
             </lottie-player>
         </span>
-            <span class="cloud_nner_text">Select the correct options from the dropdowns to complete the sentence:</span>
+            <span class="cloud_nner_text" id="cloud-text">Select the correct options from the dropdowns to complete the sentence:</span>
         </span>
     </div>
     <div class="lesson-completion">
@@ -232,4 +232,14 @@
                             location.reload();
                         }
                     });
+                </script>
+                <script>
+                    const textEl = document.getElementById("cloud-text");
+                    const words = textEl.innerText.split(" ");
+
+                    textEl.innerHTML = words
+                    .map((word, i) =>
+                        `<span class="word" style="animation-delay:${i * 0.3}s">${word}&nbsp;</span>`
+                    )
+                    .join("");
                 </script>
