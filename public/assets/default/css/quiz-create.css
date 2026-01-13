@@ -2779,6 +2779,9 @@ Quiz Check Answers Page Style End
     height: 20px;
     width: 20px;
 }
+.status-counter {
+    transition: all 0.3s ease;
+}
 .status-box.warning span {
     color: #ffc800;
 }
