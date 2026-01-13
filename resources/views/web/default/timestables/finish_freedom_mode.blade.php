@@ -361,29 +361,35 @@
                     typeText();
                 </script>
                 <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const counters = document.querySelectorAll(".status-counter");
+                    let currentStep = 0;
+                    const steps = document.querySelectorAll('.finish-steps');
+
+                    function animateCounters(stepEl) {
+                        const counters = stepEl.querySelectorAll('.status-counter');
 
                         counters.forEach(counter => {
+                            if (counter.dataset.done) return; // prevent re-run
+
                             const text = counter.innerText.trim();
                             const isPercent = text.includes('%');
                             const target = parseInt(text.replace('%', ''), 10);
 
                             let current = 0;
-                            const speed = Math.max(20, 1500 / target);
+                            const speed = Math.max(20, 1200 / target);
 
-                            const updateCounter = () => {
+                            function update() {
                                 current++;
                                 if (current >= target) {
                                     counter.innerText = isPercent ? target + '%' : target;
+                                    counter.dataset.done = "true";
                                     return;
                                 }
                                 counter.innerText = isPercent ? current + '%' : current;
-                                setTimeout(updateCounter, speed);
-                            };
+                                setTimeout(update, speed);
+                            }
 
-                            updateCounter();
+                            update();
                         });
-                    });
-                    </script>
+                    }    
+                </script>
 
