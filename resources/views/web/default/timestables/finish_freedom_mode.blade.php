@@ -67,7 +67,7 @@
         <div class="streak-content-box">
             <div class="streak-days-select">
                 <ul>
-                    <li>
+                    <li class="active">
                         <span class="day-lable">Tu</span>
                         <span class="streak-circle"></span>
                     </li>
