@@ -361,8 +361,17 @@
                     typeText();
                 </script>
                 <script>
-                    function goToNextStep(currentStep, nextStep) {
-    if (!currentStep || !nextStep) return;
+                    document.addEventListener("click", function(e) {
+    // Only run for Next buttons
+    if (!e.target.classList.contains("finish-next-step")) return;
+
+    // Get current step (the one currently visible)
+    const currentStep = e.target.closest(".finish-steps");
+    if (!currentStep) return;
+
+    // Find next step (the one immediately after current in DOM)
+    const nextStep = currentStep.nextElementSibling;
+    if (!nextStep) return;
 
     // 1️⃣ Hide current step
     currentStep.classList.add("rurera-hide");
@@ -370,7 +379,7 @@
     // 2️⃣ Show next step
     nextStep.classList.remove("rurera-hide");
 
-    // 3️⃣ Animate progress bars if any
+    // 3️⃣ Animate progress bars if present in next step
     const bars = nextStep.querySelectorAll(".progress-count");
     if (!bars.length) return;
 
@@ -401,7 +410,7 @@
         const progressBox = bar.closest(".levels-progress");
         const numberEl = progressBox?.querySelector(".progress-numbers");
 
-        // Reset before animation
+        // Reset
         bar.style.width = "0%";
         if (numberEl) numberEl.textContent = "0%";
 
@@ -410,9 +419,9 @@
             bar.style.width = target + "%";
         });
 
-        // Animate percentage number
+        // Animate percentage
         if (numberEl) animateNumber(numberEl, target);
     });
-}
+});
 
                 </script>
