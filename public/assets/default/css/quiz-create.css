@@ -2882,15 +2882,24 @@ Quiz Check Answers Page Style End
 .levels-progress.horizontal .progress-box {background-color: #e5e5e5; height: 18px; border-radius: 50px; display: block; position: relative; overflow: hidden; min-width: 270px; max-width: 270px;}
 .levels-progress.horizontal {margin-top: 15px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; width: 100%; }
 .horizontal .progress-count {display: block; position: absolute; transition: width 1000ms ease; left: 0; top: 0; height: 100%; border-radius: 50px; background-color: #58cc02; }
-.levels-progress .progress-numbers {color: #FFF; font-weight: 600;}
 .quests-item .icon-box {margin-right: 10px; text-align: center; width: 52px;}
 .quests-item .icon-box img {max-width: 100%;}
 .quests-item .icon-box svg {width: 50px; height: 50px; fill: var(--blue);}
-.quests-item .progress-numbers {position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 14px; }
+.quests-item .progress-numbers {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    user-select: none;
+    pointer-events: none;
+    color: #fff;
+}
 .quests-item .item-text h5 {margin-bottom: 2px; }
 .quests-item .horizontal .progress-count {border-radius: 50px 0 0 50px;}
 .quests-item .item-text .levels-progress.horizontal {width: calc(100% - 65px);}
-.quests-item .progress-numbers {font-size: 16px; line-height: 16px;}
 .quests-list.quests-learning li:has(.quests-control) .quests-item {width: 65%; gap: 20px; }
 .quests-learning .quests-item .item-text .levels-progress.horizontal .progress-box {border-radius: 3px;}
 .quests-item:has(.progress-icon.circle) .item-text .levels-progress.horizontal {width: calc(100% - 50px);}
