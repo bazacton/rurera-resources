@@ -110,7 +110,7 @@
     </div>
 </div>
 <div class="finish-steps rurera-hide">
-    <!-- <div class="quests-list panel-border bg-white rounded-sm p-30">
+    <div class="quests-list panel-border bg-white rounded-sm p-30">
         <ul>
             <li>
                 <div class="quests-item">
@@ -193,71 +193,7 @@
                 </div>
             </li>
         </ul>
-    </div> -->
-    <div class="card">
-    <h2 style="margin:0 0 20px 0;">Progress Tasks</h2>
-
-    <!-- ✅ Progress Item 1 -->
-    <div class="task">
-      <div class="left">
-        <div class="title">90% Completion in 2 lessons</div>
-        <div class="progress-box">
-          <div class="progress-count" data-progress="90">
-            <div class="progress-text">0%</div>
-          </div>
-        </div>
-      </div>
-      <div class="coin">
-        <span>+100</span>
-      </div>
     </div>
-
-    <!-- ✅ Progress Item 2 -->
-    <div class="task">
-      <div class="left">
-        <div class="title">Play times table Power-Up Mode for 1 minute.</div>
-        <div class="progress-box">
-          <div class="progress-count" data-progress="45">
-            <div class="progress-text">0%</div>
-          </div>
-        </div>
-      </div>
-      <div class="coin">
-        <span>+100</span>
-      </div>
-    </div>
-
-    <!-- ✅ Progress Item 3 -->
-    <div class="task">
-      <div class="left">
-        <div class="title">Invite 1 friend to get X600 Coins</div>
-        <div class="progress-box">
-          <div class="progress-count" data-progress="10">
-            <div class="progress-text">0%</div>
-          </div>
-        </div>
-      </div>
-      <div class="coin">
-        <span>+100</span>
-      </div>
-    </div>
-
-    <!-- ✅ Progress Item 4 -->
-    <div class="task">
-      <div class="left">
-        <div class="title">Rate Rurera on play store to get X500 Coins</div>
-        <div class="progress-box">
-          <div class="progress-count" data-progress="70">
-            <div class="progress-text">0%</div>
-          </div>
-        </div>
-      </div>
-      <div class="coin">
-        <span>+100</span>
-      </div>
-    </div>
-
-  </div>
     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
         <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
@@ -423,55 +359,4 @@
                     }
 
                     typeText();
-                </script>
-
-                <script>
-                function handleStep3Progress(step) {
-
-  if (!step) return;
-
-  const bars = step.querySelectorAll(".progress-count");
-  if (!bars.length) return;
-
-  // prevent rerun
-  if (step.dataset.progressDone) return;
-  step.dataset.progressDone = "true";
-
-  function animateNumber(el, target, duration = 1000) {
-    let startTime = null;
-
-    function stepFn(timestamp) {
-      if (!startTime) startTime = timestamp;
-
-      const progress = Math.min((timestamp - startTime) / duration, 1);
-      el.innerText = Math.floor(progress * target) + "%";
-
-      if (progress < 1) {
-        requestAnimationFrame(stepFn);
-      } else {
-        el.innerText = target + "%";
-      }
-    }
-
-    requestAnimationFrame(stepFn);
-  }
-
-  bars.forEach(bar => {
-    const target = Number(bar.dataset.progress || 0);
-    const text = bar.querySelector(".progress-text");
-
-    bar.style.width = "0%";
-    if (text) text.innerText = "0%";
-
-    requestAnimationFrame(() => {
-      bar.style.width = target + "%";
-    });
-
-    if (text) animateNumber(text, target);
-  });
-}
-nextStep.classList.remove("rurera-hide");
-
-// ✅ pass nextStep directly
-handleStep3Progress(nextStep);
                 </script>
