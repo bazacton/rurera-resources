@@ -451,7 +451,7 @@
                     /* ✅ Fallback: agar .finish-next-step exist hi na kare,
                     to page load par card ke andar sequential animation chal jaye */
                     document.addEventListener("DOMContentLoaded", function () {
-                    const cardBars = document.querySelectorAll(".levels-progress .progress-count");
+                    const cardBars = document.querySelectorAll(".quests-item .progress-count");
                     if (!cardBars.length) return;
 
                     // Prevent re-running
