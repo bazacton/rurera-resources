@@ -2716,6 +2716,9 @@ Quiz Check Answers Page Style End
 /* Review Question Right Side Style End */
 
 /* Finish Steps Style Start */
+.question-area-block.quiz-first-question:has(.finish-steps) {
+    margin-top: 0;
+}
 .finish-steps {
     text-align: center;
 }
