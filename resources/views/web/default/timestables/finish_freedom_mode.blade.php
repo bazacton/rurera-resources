@@ -122,8 +122,9 @@
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
                                 <span class="progress-count" data-progress="50"></span>
+                                <span class="progress-numbers">0%</span>
                             </span>
-                            <span class="progress-numbers">0%</span>
+                            
                         </div>
                         <span class="progress-icon font-16">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
@@ -142,8 +143,9 @@
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
                                 <span class="progress-count" data-progress="70"></span>
+                                <span class="progress-numbers">0%</span>
                             </span>
-                            <span class="progress-numbers">0%</span>
+                            
                         </div>
                         <span class="progress-icon font-16">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
@@ -162,8 +164,9 @@
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
                                 <span class="progress-count" data-progress="80"></span>
+                                <span class="progress-numbers">0%</span>
                             </span>
-                            <span class="progress-numbers">0%</span>
+                            
                         </div>
                         <span class="progress-icon font-16">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
@@ -182,8 +185,9 @@
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
                                 <span class="progress-count" data-progress="90"></span>
+                                <span class="progress-numbers">0%</span>
                             </span>
-                            <span class="progress-numbers">0%</span>
+                            
                         </div>
                         <span class="progress-icon font-16">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
