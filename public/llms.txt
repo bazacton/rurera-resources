@@ -1,12 +1,27 @@
-# https://rurera.com/ llms.txt
+# Rurera – Personalized Learning & Exam Preparation Platform
 
-- [Fun Learning Platform](https://rurera.com/): Transformative learning platform offering tailored practice resources and games.
-- [Key Stage 2 Learning](https://rurera.com/keystage2): Engaging KS2 resources, quizzes and tests for age 7-11.
-- [Master SATs Preparation](https://rurera.com/sats-preparation): Unlock your SATs potential with expert guidance and resources.
-- [Rurera Books Shelf](https://rurera.com/books-shelf): Engaging platform for kids' reading, quizzes, and rewards.
-- [Fun Times Table Learning](https://rurera.com/timestables): Engaging platform for learning times tables with fun techniques.
-- [Fun Spelling Learning](https://rurera.com/spelling): Engaging platform for kids to master spelling and vocabulary.
-- [11 Plus Exam Prep](https://rurera.com/11-plus): Comprehensive resources for acing the 11 Plus exam effectively.
-- [Entrance Exam Success](https://rurera.com/independent-exams-preparation): Comprehensive resources for mastering independent school entrance exams.
-- [ISEB Preparation Resources](https://rurera.com/iseb-preparation): Comprehensive resources and guidance for successful ISEB preparation.
-- [CAT4 Preparation Guide](https://rurera.com/cat4-preparation): Comprehensive CAT4 preparation with personalized tests and resources.
+> Rurera is an interactive UK-focused learning platform for children aged 6–11, offering practice, quizzes, games, and exam preparation for KS2, 11 Plus, SATs, and independent school entrance exams.
+
+## Core Learning Platform
+- [Rurera Home](https://rurera.com/): Personalized learning platform offering KS1 and KS2 courses, interactive practice, quizzes, games, and reward-based progress tracking to motivate children to learn.
+
+## Key Stage Courses
+- [Key Stage 2 (KS2) Courses](https://rurera.com/keystage2): Curriculum-aligned KS2 courses with quizzes, tests, and structured learning paths.
+- [Key Stage 1 (KS1)](https://rurera.com/): Foundational KS1 learning support integrated into the personalized learning experience.
+
+## Exam Preparation
+- [SATs Preparation](https://rurera.com/sats-preparation): Comprehensive SATs practice, mock tests, and exam-focused resources for KS2 students.
+- [11 Plus Entrance Exams](https://rurera.com/11-plus): Complete 11 Plus entrance exam preparation covering maths, English, verbal, and non-verbal reasoning.
+- [Independent School Entrance Exams](https://rurera.com/independent-exams-preparation): Targeted preparation for UK independent school entrance exams.
+- [ISEB Preparation](https://rurera.com/iseb-preparation): Structured ISEB pre-test preparation with guided practice.
+- [CAT4 Preparation](https://rurera.com/cat4-preparation): CAT4 practice tests and cognitive skills development for entrance exams.
+
+## Skills Practice
+- [Times Tables Practice](https://rurera.com/timestables): Fun, gamified times tables practice that helps children master multiplication through repetition and rewards.
+- [Spelling Practice](https://rurera.com/spelling): Spelling and vocabulary practice to strengthen literacy skills.
+
+## Reading & Rewards
+- [Books Shelf & Reading](https://rurera.com/books-shelf): Book reading platform with quizzes and rewards that encourage regular reading and learning engagement.
+
+## Motivation & Rewards
+- Children earn rewards as they learn, reinforcing positive learning habits and keeping students motivated across courses and exam preparation.
