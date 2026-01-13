@@ -1,4 +1,17 @@
 <div class="finish-steps">
+    <div class="question-label cloud_text medium left_middle">
+        <span class="cloud_text_element">
+        <span class="cloud_avatar">
+            <lottie-player
+                src="/assets/default/lottie/pigeon.json"
+                style="width:200px;height:200px"
+                loop
+                autoplay>
+            </lottie-player>
+        </span>
+            <span class="cloud_nner_text">Select the correct options from the dropdowns to complete the sentence:</span>
+        </span>
+    </div>
     <div class="lesson-completion">
         <div class="icon-box">
             <lottie-player
