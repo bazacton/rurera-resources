@@ -2828,4 +2828,63 @@ Quiz Check Answers Page Style End
 }
 
 /* Quests-List Style End */
+.rurera-streak {
+    text-align: center;
+    margin-top: auto;
+}
+.rurera-streak .icon-box {
+    display: inline-block;
+    margin: 0 0 10px;
+}
+.streak-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 25px;
+}
+.streak-header strong {
+    font-size: 60px;
+}
+.streak-header span {
+    font-size: 18px;
+    font-weight: 700;
+}
+.streak-content-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+}
+.streak-content-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 15px;
+    gap: 10px;
+}
+.streak-content-box li {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.day-lable {
+    display: block;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 500;
+}
+.streak-circle {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #ff9600;
+    border-radius: 100%;
+}
+.streak-content-box p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    padding: 15px 0;
+    margin: 0;
+}
 /* Finish Steps Style End */
