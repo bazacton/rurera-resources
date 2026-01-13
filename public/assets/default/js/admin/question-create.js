@@ -3565,10 +3565,10 @@ function rureraform_properties_save() {
 
 function rureraform_properties_close() {
 
-    _rureraform_properties_close();
-    rureraform_dialog_close();
+    //_rureraform_properties_close();
+    //rureraform_dialog_close();
 
-    /*if (rureraform_element_properties_data_changed) {
+    if (rureraform_element_properties_data_changed) {
         rureraform_dialog_open({
             echo_html: function () {
                 this.html("<div class='rureraform-dialog-message'>" + rureraform_esc_html__("Seems you didn't save changes. Are you sure, you want to close Properties?", "rureraform") + "</div>");
@@ -3581,7 +3581,7 @@ function rureraform_properties_close() {
             }
         });
     } else
-        _rureraform_properties_close();*/
+        _rureraform_properties_close();
 
     jQuery("#rureraform-element-properties").removeClass('active');
 
