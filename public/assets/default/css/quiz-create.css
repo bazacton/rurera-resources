@@ -1687,7 +1687,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 /* Quiz Time-Bar Style Start */
 body:has(.quiz-time-bar) .learning-page .learning-content,
 body:has(.quiz-time-bar) .prev-next-controls,
-body:has(.type-practice) {
+body:has(.type-practice),
+body:has(.type-practice) .learning-page .learning-content {
     background-color: #f6f6f6;
 }
 .quiz-time-bar {
