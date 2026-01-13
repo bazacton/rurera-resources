@@ -246,6 +246,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
     var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
     //init_question_functions();
+    $('body').addClass('quiz-area-page');
     $('body').addClass('quiz-show');
     var header = document.getElementById("navbar");
     var headerOffset = (header != null) ? header.offsetHeight : 100;

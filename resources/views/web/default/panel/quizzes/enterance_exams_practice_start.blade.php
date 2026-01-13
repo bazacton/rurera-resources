@@ -239,6 +239,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
+    $('body').addClass('quiz-area-page');
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
     var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
     //init_question_functions();
