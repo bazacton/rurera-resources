@@ -955,6 +955,7 @@ $rand_id = rand(999,99999);
 <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
 @if($is_single == false)
 <script>
+	$('body').addClass('quiz-area-page');
 $(".summernote").summernote({
 			dialogsInBody: true,
 			tabsize: 2,
