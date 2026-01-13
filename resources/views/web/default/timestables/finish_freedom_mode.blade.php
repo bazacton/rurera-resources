@@ -476,4 +476,9 @@
                     if (text) animateNumber(text, target);
                 });
                 }
+                currentStep.classList.add("rurera-hide");
+                nextStep.classList.remove("rurera-hide");
+
+                // call progress animation
+                handleStep3Progress();
                 </script>
