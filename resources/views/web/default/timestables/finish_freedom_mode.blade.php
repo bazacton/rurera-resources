@@ -426,65 +426,54 @@
                 </script>
 
                 <script>
-                    
+                function handleStep3Progress() {
+
+                // current visible step (no .hide)
+                const step = document.querySelector(".finish-steps:not(.rurera-hide)");
+                if (!step) return;
+
+                // run only if progress bars exist in this step
+                const bars = step.querySelectorAll(".progress-count");
+                if (!bars.length) return;
+
+                // prevent re-run
+                if (step.dataset.progressDone) return;
+                step.dataset.progressDone = "true";
+
                 function animateNumber(el, target, duration = 1000) {
-  let startTime = null;
+                    let startTime = null;
 
-  function step(timestamp) {
-    if (!startTime) startTime = timestamp;
+                    function stepFn(timestamp) {
+                    if (!startTime) startTime = timestamp;
 
-    const progress = Math.min((timestamp - startTime) / duration, 1);
-    const value = Math.floor(progress * target);
+                    const progress = Math.min((timestamp - startTime) / duration, 1);
+                    el.innerText = Math.floor(progress * target) + "%";
 
-    el.innerText = value + "%";
+                    if (progress < 1) {
+                        requestAnimationFrame(stepFn);
+                    } else {
+                        el.innerText = target + "%";
+                    }
+                    }
 
-    if (progress < 1) {
-      requestAnimationFrame(step);
-    } else {
-      el.innerText = target + "%";
-    }
-  }
+                    requestAnimationFrame(stepFn);
+                }
 
-  requestAnimationFrame(step);
-}
+                bars.forEach(bar => {
+                    const target = Number(bar.dataset.progress || 0);
+                    const text = bar.querySelector(".progress-text");
 
-window.addEventListener("load", function () {
+                    // reset
+                    bar.style.width = "0%";
+                    if (text) text.innerText = "0%";
 
-  const bars = Array.from(document.querySelectorAll(".progress-count"));
-  if (!bars.length) return; // safety check
+                    // animate bar
+                    requestAnimationFrame(() => {
+                    bar.style.width = target + "%";
+                    });
 
-  // Reset all bars
-  bars.forEach(bar => {
-    bar.style.width = "0%";
-    const text = bar.querySelector(".progress-text");
-    if (text) text.innerText = "0%";
-  });
-
-  let index = 0;
-
-  function animateNextBar() {
-    if (index >= bars.length) return;
-
-    const bar = bars[index];
-    const target = Number(bar.dataset.progress || 0);
-    const textEl = bar.querySelector(".progress-text");
-
-    // Trigger width animation
-    requestAnimationFrame(() => {
-      bar.style.width = target + "%";
-    });
-
-    // Animate number
-    if (textEl) {
-      animateNumber(textEl, target, 1000);
-    }
-
-    index++;
-    setTimeout(animateNextBar, 1100);
-  }
-
-  // Start animation
-  setTimeout(animateNextBar, 200);
-});
-
-            </script>
+                    // animate text
+                    if (text) animateNumber(text, target);
+                });
+                }
+                </script>
