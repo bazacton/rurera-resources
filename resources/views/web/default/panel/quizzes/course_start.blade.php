@@ -101,49 +101,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
                     <div class="question-step quiz-complete" style="display:none">
 
-                        <div class="step-block">
-                            <div class="rurera-streak">
-                                <div class="icon-box">
-                                    <lottie-player
-                                        src="/assets/default/lottie/fire.json"
-                                        style="width:200px;height:200px"
-                                        loop
-                                        autoplay>
-                                    </lottie-player>
-                                </div>
-                                <div class="streak-header">
-                                    <strong>1</strong>
-                                    <span>day streak</span>
-                                </div>
-                                <div class="streak-content-box">
-                                    <div class="streak-days-select">
-                                        <ul>
-                                            <li>
-                                                <span class="day-lable">Tu</span>
-                                                <span class="streak-circle"></span>
-                                            </li>
-                                            <li>
-                                                <span class="day-lable">W</span>
-                                                <span class="streak-circle"></span>
-                                            </li>
-                                            <li>
-                                                <span class="day-lable">Th</span>
-                                                <span class="streak-circle"></span>
-                                            </li>
-                                            <li>
-                                                <span class="day-lable">F</span>
-                                                <span class="streak-circle"></span>
-                                            </li>
-                                            <li>
-                                                <span class="day-lable">Sa</span>
-                                                <span class="streak-circle"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p>Practcing daily grows your streak, but skipping a day resets it!</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="step-block">Test Completed!!!</div>
 
                     </div>
                     <div class="question-area-block" style="margin-top:80px;" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
