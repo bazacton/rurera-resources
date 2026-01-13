@@ -40,12 +40,12 @@
         <h5>Lesson Complete!</h5>
         <div class="completion-status">
             <div class="status-box warning">
-                <em>Total</em>
-                <span>15</span>
+                <em>Total coin</em>
+                <span><img src="/assets/default/svgs/coin-colord.svg" alt="coin-colord" height="64" width="64"> 15</span>
             </div>
             <div class="status-box sucsess">
                 <em>Amaizing</em>
-                <span>100%</span>
+                <span><img src="/assets/default/svgs/target.svg" alt="target" height="64" width="64"> 100%</span>
             </div>
         </div>
     </div>
