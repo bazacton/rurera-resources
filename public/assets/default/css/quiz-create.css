@@ -2882,7 +2882,7 @@ Quiz Check Answers Page Style End
 .levels-progress.horizontal .progress-box {background-color: #e5e5e5; height: 18px; border-radius: 50px; display: block; position: relative; overflow: hidden; min-width: 270px; max-width: 270px;}
 .levels-progress.horizontal {margin-top: 15px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; width: 100%; }
 .horizontal .progress-count {display: block; position: absolute; transition: width 1000ms ease; left: 0; top: 0; height: 100%; border-radius: 50px; background-color: #58cc02; }
-.levels-progress .progress-numbers {color: #cacaca; font-weight: 600;}
+.levels-progress .progress-numbers {color: #FFF; font-weight: 600;}
 .quests-item .icon-box {margin-right: 10px; text-align: center; width: 52px;}
 .quests-item .icon-box img {max-width: 100%;}
 .quests-item .icon-box svg {width: 50px; height: 50px; fill: var(--blue);}
