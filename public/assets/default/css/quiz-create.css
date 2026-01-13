@@ -2456,8 +2456,8 @@ Quiz Check Answers Page Style End
 }
 .cloud_text_element .cloud_avatar {
     text-align: center;
-    max-width: 100px;
-    flex: 0 0 100px;
+    max-width: 70px;
+    flex: 0 0 70px;
 }
 .cloud_text_element .cloud_avatar img {
     height: 50px;
@@ -2723,13 +2723,17 @@ Quiz Check Answers Page Style End
     display: inline-block;
     margin: 0 0 25px;
 }
-.finish-steps:has(.cloud_text) {
+.finish-steps {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+}
+.finish-steps .cloud_text_element .cloud_avatar {
+    max-width: 100px;
+    flex: 0 0 100px;
 }
 .cloud_avatar lottie-player {
     height: 100px !important;
@@ -2768,7 +2772,15 @@ Quiz Check Answers Page Style End
     transform: translateY(0);
   }
 }
-
+.finish-steps .prev-next-controls {
+    width: 100%;
+    padding: 00;
+    margin: auto 0 0 !important;
+}
+.finish-steps .prev-next-controls .finish-next-step {
+    position: relative;
+    margin: 0;
+}
 /* Quests-List Style Start */
 .quests-list h3 {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 0 0 25px; }
 .quests-list li {margin-bottom: 35px;}
