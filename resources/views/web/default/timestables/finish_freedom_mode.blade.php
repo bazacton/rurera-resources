@@ -208,6 +208,7 @@
                     @endif
                 </form>
                 @endif
+                <script src="/assets/default/js/lottie.min.js"></script>
                 <script>
                     $(document).on('click', '.re-attempt-btn', function (e) {
 
