@@ -2877,8 +2877,11 @@ Quiz Check Answers Page Style End
     display: inline-block;
     height: 25px;
     width: 25px;
-    background-color: #ff9600;
+    background-color: #ccc;
     border-radius: 100%;
+}
+.active .streak-circle {
+    background-color: #ff9600;
 }
 .streak-content-box p {
     font-size: 14px;
