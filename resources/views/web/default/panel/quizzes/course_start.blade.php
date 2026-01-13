@@ -101,8 +101,8 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 
                     <div class="question-step quiz-complete" style="display:none">
 
-                        <div class="steps1">Test Completed!!!</div>
-                        
+                        <div class="step-block">Test Completed!!!</div>
+
                     </div>
                     <div class="question-area-block" style="margin-top:80px;" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
                         @php $total_questions = 10; @endphp
