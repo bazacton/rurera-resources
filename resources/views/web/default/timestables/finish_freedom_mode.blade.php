@@ -23,6 +23,13 @@
 <div class="finish-steps rurera-hide">
     <div class="lesson-completion">
         <div class="icon-box">
+            <span class="lottie-bg">
+                <lottie-player
+                    src="/assets/default/lottie/confetti.json"
+                    loop
+                    autoplay>
+                </lottie-player>
+            </span>
             <lottie-player
                 src="/assets/default/lottie/men-high-five.json"
                 style="width:200px;height:200px"
