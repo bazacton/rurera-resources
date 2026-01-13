@@ -121,9 +121,9 @@
                         <h5 class="font-18 font-weight-bold">90% Completion in 2 lessons</h5>
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
-                                <span class="progress-count" style="width: 0%;"></span>
+                                <span class="progress-count" style="width: 50%;"></span>
                             </span>
-                            <span class="progress-numbers">0 / 2</span>
+                            <span class="progress-numbers">1 / 2</span>
                         </div>
                         <span class="progress-icon font-16">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
@@ -141,7 +141,7 @@
                         <h5 class="font-18 font-weight-bold">Play times table Power-Up Mode for 1 minute.</h5>
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
-                                <span class="progress-count" style="width: 0%;"></span>
+                                <span class="progress-count" style="width: 70%;"></span>
                             </span>
                             <span class="progress-numbers">0%</span>
                         </div>
@@ -161,7 +161,7 @@
                         <h5 class="font-18 font-weight-bold">Invite 1 friend to get X600&nbsp;Coins</h5>
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
-                                <span class="progress-count" style="width: 0%;"></span>
+                                <span class="progress-count" style="width: 80%;"></span>
                             </span>
                             <span class="progress-numbers">0%</span>
                         </div>
@@ -181,7 +181,7 @@
                         <h5 class="font-18 font-weight-bold">Rate Rurera on play store to get X500&nbsp;Coins</h5>
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
-                                <span class="progress-count" style="width: 0%;"></span>
+                                <span class="progress-count" style="width: 90%;"></span>
                             </span>
                             <span class="progress-numbers">0%</span>
                         </div>
