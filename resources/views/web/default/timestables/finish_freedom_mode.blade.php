@@ -4,7 +4,7 @@
         <span class="cloud_avatar">
             <lottie-player
                 src="/assets/default/lottie/pigeon.json"
-                style="width:200px;height:200px"
+                style="width:150px;height:150px"
                 loop
                 autoplay>
             </lottie-player>
