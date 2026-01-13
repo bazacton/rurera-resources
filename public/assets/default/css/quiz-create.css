@@ -2824,6 +2824,7 @@ Quiz Check Answers Page Style End
 .stages-items .locked_nugget {opacity: 0.5;}
 .finish-steps .quests-list {
     width: 100%;
+    margin-top: auto;
 }
 
 /* Quests-List Style End */
