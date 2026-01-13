@@ -2761,7 +2761,6 @@ Quiz Check Answers Page Style End
     word-wrap: break-word;
     white-space: break-spaces;
     display: block;
-    letter-spacing: 1px;
 }
 .finish-steps .medium .cloud_text_element {
     justify-content: center;
