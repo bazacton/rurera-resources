@@ -44,7 +44,7 @@
                 <span><img src="/assets/default/svgs/coin-colord.svg" alt="coin-colord" height="64" width="64"> 15</span>
             </div>
             <div class="status-box sucsess">
-                <em>Amaizing</em>
+                <em>Amazing</em>
                 <span><img src="/assets/default/svgs/target.svg" alt="target" height="64" width="64"> 100%</span>
             </div>
         </div>
