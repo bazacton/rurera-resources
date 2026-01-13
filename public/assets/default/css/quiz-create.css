@@ -2735,7 +2735,7 @@ Quiz Check Answers Page Style End
     width: 80px !important;
 }
 .finish-steps .cloud_text {
-    width: auto;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
     
@@ -2744,6 +2744,7 @@ Quiz Check Answers Page Style End
     border-radius: 5px;
     text-align: left;
     min-width: 438px;
+    max-width: 438px;
 }
 .finish-steps .cloud_text .cloud_nner_text span {
     word-wrap: break-word;
