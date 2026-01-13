@@ -2722,6 +2722,18 @@ Quiz Check Answers Page Style End
 .lesson-completion .icon-box {
     display: inline-block;
     margin: 0 0 25px;
+    position: relative;
+}
+.lesson-completion .icon-box .lottie-bg {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lesson-completion {
+    margin-top: auto;
 }
 .finish-steps {
     height: 100vh;
