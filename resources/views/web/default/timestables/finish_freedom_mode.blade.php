@@ -69,7 +69,7 @@
                 <ul>
                     <li class="active">
                         <span class="day-lable">Tu</span>
-                        <span class="streak-circle"></span>
+                        <span class="streak-circle">&#x2714;</span>
                     </li>
                     <li>
                         <span class="day-lable">W</span>
