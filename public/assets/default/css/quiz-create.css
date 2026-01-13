@@ -1422,9 +1422,9 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .numeric-list-style > .field-holder:hover:before,
 .numeric-list-style > .form-field:hover:before,
 .numeric-list-style > .option-group:hover:before{
-    border-color: #6eb37d;
+    border-color: #73c238;
     color: #fff;
-    background-color: #ddd;
+    background-color: #8cf041;
 }
 /*Quistions Type numeric-list style End*/
 
