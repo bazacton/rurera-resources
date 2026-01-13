@@ -17,8 +17,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
     max-width: 860px;
     width: 860px;
 }
-.preview-question-content[class*="col-lg-"]:has(.page-prev-next-controls #btn-top.btn-hidden),
-.preview-question-content[class*="col-lg-"]:has(.page-prev-next-controls #btn-bottom.btn-hidden) {
+.preview-question-content[class*="col-lg-"]:has(.page-prev-next-controls #btn-top.btn-hidden) {
     max-width: 850px;
     width: 850px;
 }
