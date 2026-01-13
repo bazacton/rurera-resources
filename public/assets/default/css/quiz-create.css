@@ -2731,6 +2731,7 @@ Quiz Check Answers Page Style End
     width: auto;
     display: inline-flex;
     justify-content: center;
+    min-width: 438px;
 }
 .finish-steps .cloud_text .cloud_nner_text {
     border-radius: 5px;
