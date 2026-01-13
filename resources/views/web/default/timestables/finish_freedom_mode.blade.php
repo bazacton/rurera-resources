@@ -360,3 +360,59 @@
 
                     typeText();
                 </script>
+                <script>
+                    function goToNextStep(currentStep, nextStep) {
+    if (!currentStep || !nextStep) return;
+
+    // 1️⃣ Hide current step
+    currentStep.classList.add("rurera-hide");
+
+    // 2️⃣ Show next step
+    nextStep.classList.remove("rurera-hide");
+
+    // 3️⃣ Animate progress bars if any
+    const bars = nextStep.querySelectorAll(".progress-count");
+    if (!bars.length) return;
+
+    // Prevent re-running
+    if (nextStep.dataset.progressDone) return;
+    nextStep.dataset.progressDone = "true";
+
+    function animateNumber(el, target, duration = 1000) {
+        let startTime = null;
+
+        function tick(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            el.textContent = Math.floor(progress * target) + "%";
+
+            if (progress < 1) {
+                requestAnimationFrame(tick);
+            } else {
+                el.textContent = target + "%";
+            }
+        }
+
+        requestAnimationFrame(tick);
+    }
+
+    bars.forEach(bar => {
+        const target = Number(bar.dataset.progress || 0);
+        const progressBox = bar.closest(".levels-progress");
+        const numberEl = progressBox?.querySelector(".progress-numbers");
+
+        // Reset before animation
+        bar.style.width = "0%";
+        if (numberEl) numberEl.textContent = "0%";
+
+        // Animate width
+        requestAnimationFrame(() => {
+            bar.style.width = target + "%";
+        });
+
+        // Animate percentage number
+        if (numberEl) animateNumber(numberEl, target);
+    });
+}
+
+                </script>
