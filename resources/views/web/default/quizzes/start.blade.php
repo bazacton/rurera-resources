@@ -218,7 +218,6 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <script src="/assets/default/js/question-layout.js?var={{$rand_id}}"></script>
 <script src="/assets/learning_page/scripts.min.js?var={{$rand_id}}"></script>
 
-@endpush
 <script>
     //init_question_functions();
 
@@ -238,3 +237,4 @@ $is_new = isset( $is_new )? $is_new : 'no';
         }, 1000);
     }
 </script>
+@endpush
