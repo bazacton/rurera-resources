@@ -228,7 +228,7 @@ input.droppable-field {
 .spells-quiz-from .lms-radio-select label {max-height: 50px; padding-right: 15px !important; justify-content: center;}
 .lms-sorting-fields.inline-fields {margin: 0 -8px;}
 .lms-radio-select .field-holder {border: 0; padding: 0; height: auto;}
-.truefalse-element .truefalse_quiz {display: block; margin-top: 10px;}
+.truefalse-element:has(.truefalse_question_label) .truefalse_quiz {display: block; margin-top: 10px;}
 /* True False Style End */
 
 /* True False Without Column Style Start, https://rurera.com/admin/questions_bank/34359/edit */
