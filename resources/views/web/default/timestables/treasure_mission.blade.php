@@ -7,7 +7,7 @@
 <div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
     <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Treasure Mission</h2>
 </div>
-<section class="p-0 mt-30 treasure-mission-layout">
+<section class="p-0 treasure-mission-layout">
 
     @php $get_treasure_missions  = get_treasure_missions(); @endphp
 
