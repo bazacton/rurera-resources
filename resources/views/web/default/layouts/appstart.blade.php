@@ -18,7 +18,7 @@ $rand_no = rand(99,9999);
 
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/default/css/common.min.css?ver={{$rand_no}}">
-	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_no}}">
+    <link rel="stylesheet" href="/assets/default/css/quiz-common.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_no}}">
 
 
