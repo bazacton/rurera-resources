@@ -29,15 +29,6 @@ $rand_no = rand(99,9999);
     @stack('styles_top')
     @stack('scripts_top')
 
-	<style>
-	label.frontend-field-error-label {
-		border-color: #f95555;
-	}
-	.input-holder.frontend-field-error-input {
-		border-color: #f95555;
-	}
-	</style>
-
 
 </head>
 
