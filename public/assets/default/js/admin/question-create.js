@@ -1347,52 +1347,6 @@ function _rureraform_properties_prepare(_object) {
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'>"+image_field+"</div></div>";
                     break;
 
-                case 'rurera_image':
-                    //var imageObj = $.parseHTML(rureraform_escape_html(properties[key]));
-                    var imageObj = $($.parseHTML(rureraform_escape_html(properties[key])));
-                    var image_src = imageObj.find('img').attr('src');
-
-                    var question_id = $(".question-builder-area.active").attr('data-question_id');
-                    var image_attributes = {
-                        upload_type: 'question',
-                        question_id: question_id,
-                        upload_dir: 'storage',
-                        upload_path: '/media/'+question_id,
-                        is_multiple: false,
-                        preview_div: 'preview-images-block',
-                        hidden_field: '<input value="" type="hidden" name="rureraform-content" id="rureraform-content">',
-                        field_name: 'rureraform-' + key
-                    };
-                    var imageAttrStr = encodeURIComponent(JSON.stringify(image_attributes));
-
-                    var gallery_fields = {
-                        gallery_type: 'question',
-                        question_id: question_id,
-                    };
-                    var gallery_fieldsStr = encodeURIComponent(JSON.stringify(gallery_fields));
-
-                    var gallery_images_html = loadGalleryHTML(rureraform_escape_html(properties[key]), '<input value="' + rureraform_escape_html(properties[key]) + '" type="text" name="rureraform-content" id="rureraform-content">');
-
-                    var image_field = '<div class="form-group mt-15">\n' +
-                        '                    <div class="input-group">\n' +
-                        '                        <div class="input-group-prepend">\n' +
-                        '                            <button type="button" data-gallery_fields="'+gallery_fieldsStr+'" data-image_attr="'+imageAttrStr+'" class="input-group-text rurera-file-manager" data-input="rureraform-' + key + '" data-preview="holder">\n' +
-                        '                                <i class="fa fa-upload"></i>\n' +
-                        '                            </button>\n' +
-                        '                        </div>\n' +
-                        '                        <ul class="preview-images-block">'+gallery_images_html+'</ul>\n' +
-                        '                        <div class="input-group-append">\n' +
-                        '                            <button type="button" class="input-group-text admin-file-view" data-input="rureraform-' + key + '">\n' +
-                        '                            </button>\n' +
-                        '                        </div>\n' +
-                        '                    </div>\n' +
-                        '                </div>';
-
-
-                    //var image_field = "<input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />";
-
-                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'>"+image_field+"</div></div>";
-                    break;
                 case 'file':
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'>" +
                         "<div class=\"input-group\">\n" +
@@ -2068,61 +2022,7 @@ function _rureraform_properties_prepare(_object) {
                         if(DataIsEmpty(properties[key][j]["label"])){
                             continue;
                         }
-
-                        var question_id = $(".question-builder-area.active").attr('data-question_id');
-                        var image_attributes = {
-                            upload_type: 'question',
-                            question_id: question_id,
-                            upload_dir: 'storage',
-                            upload_path: '/media/'+question_id,
-                            is_multiple: false,
-                            preview_div: 'preview_img-' + key + '-' + j,
-                            hidden_field: '<input class="rureraform-properties-options-image" value="" type="hidden" id="image-'+ key + '-' + j+'" value="" placeholder="Upload Image">',
-                            field_name: 'rureraform-' + key
-                        };
-                        var imageAttrStr = encodeURIComponent(JSON.stringify(image_attributes));
-
-                        var gallery_fields = {
-                            gallery_type: 'question',
-                            question_id: question_id,
-                        };
-                        var gallery_fieldsStr = encodeURIComponent(JSON.stringify(gallery_fields));
-
-                        var gallery_images_html = loadOptionGallery(rureraform_escape_html(image_url), '<input class="rureraform-properties-options-image" type="hidden" id="image-'+ key + '-' + j+'" value="'+rureraform_escape_html(image_url)+'" placeholder="Upload Image">');
-
-                        options += "<div class='rureraform-properties-options-item" + selected + "'>" +
-                            "<div class='rureraform-properties-options-table'>" +
-                            "<div>" +
-                            "<input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]['label']) + "' placeholder='Label'>" +
-                            "</div>" +
-                            "<ul class='preview-images-block'>"+gallery_images_html+"</ul>" +
-                            "<div class='rureraform-image-url rurera-image-depend'>" +
-                            "<div class='input-group-prepend'>" +
-                            "<button type='button' " +
-                            "data-gallery_fields='" + gallery_fieldsStr + "' " +
-                            "data-image_attr='" + imageAttrStr + "' " +
-                            "class='input-group-text rurera-file-manager' " +
-                            "data-input='image-" + key + "-" + j + "' " +
-                            "data-preview='holder'>" +
-                            "<i class='fa fa-upload'></i>" +
-                            "</button>" +
-                            "</div><div class='preview_img-" + key + "-" + j + "'></div>" +
-
-
-                            "<div class='rurera-hide'>" +
-                            "<input class='rureraform-properties-options-value' type='text' value='" +
-                            rureraform_escape_html(properties[key][j]['value']) + "' placeholder='Value'>" +
-                            "</div>" +
-
-                            "<div>" +
-                            "<span onclick='return rureraform_open_equation_modal(this);' title='Set the option as correct value'><i class='fas fa-square-root-alt'></i></span>" +
-                            "<span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span>" +
-                            "<span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span>" +
-                            "<span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span>" +
-                            "<span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span>" +
-                            "</div>" +
-                            "</div>" +
-                            "</div>";
+                        options += "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' type='text' id='image-" + key + "-" + j + "' value='" + rureraform_escape_html(image_url) + "' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div class='rurera-hide'><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'></div><div><span onclick='return rureraform_open_equation_modal(this);' title='Set the option as correct value'><i class='fas fa-square-root-alt'></i></span><span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
                     }
 
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content rureraform-properties-image-options-table'><div class='rureraform-properties-options-table-header'><div>Label</div><div class='rurera-image-depend'>Image</div><div class='rurera-hide'>Value</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + (properties.type == "radio" ? "off" : "on") + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null);'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
@@ -6610,27 +6510,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         if(DataIsEmpty(rureraform_form_elements[i]["options"][j]["label"])){
                             continue;
                         }
-                        //draggable_options += '<li><span class="draggable-option">' + label_data + '</span></li>';
-                        draggable_options += '<button type="button" draggable="true" class="btn btn-outline-primary option-btn" data-key="a" data-value="'+label_data+'">'+label_data+'</button>';
+                        draggable_options += '<li><span class="draggable-option">' + label_data + '</span></li>';
                     }
 
-                    //var draggable_options = '<ul class="draggable-items">'+draggable_options+'</ul>';
-                    var draggable_options = '<div class="draggable-options">'+draggable_options+'</div><div id="msg" class="message"></div>\n' +
-                        '    <div class="mt-2 text-muted small">\n' +
-                        '        Keys: <kbd>A</kbd>–<kbd>J</kbd> • <kbd>Backspace</kbd> undo • <kbd>Enter</kbd> submit • Multi-use: fills one field per press\n' +
-                        '    </div>';
+                    var draggable_options = '<ul class="draggable-items">'+draggable_options+'</ul>';
 
                     var content = rureraform_form_elements[i]["content"];
-
-
-
-                    var updatedContent = content.replace(/\[DRAGAREA id="(\d+)"\]/g, function(match, id) {
-
-                        return '<input type="text" data-field_type="text" readonly="" class="droppable-field-0 editor-field droppable-field input-simple ui-droppable filled" data-id="0" id="field-1" data-index="0" aria-label="blank 0">';
-                    });
-
-                    content = updatedContent;
-
 
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     var class_id = 'rurera-svg-data' + i+'_'+random_id;
@@ -11864,64 +11749,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-$(document).on('click', '.rurera-file-manager', function () {
-    var image_attr_encoded = $(this).attr('data-image_attr');
-    var image_attr = JSON.parse(decodeURIComponent(image_attr_encoded));
-
-    var gallery_fields_encoded = $(this).attr('data-gallery_fields');
-    var gallery_fields = JSON.parse(decodeURIComponent(gallery_fields_encoded));
-
-    jQuery.ajax({
-        type: "GET",
-        url: '/admin/common/rurera_file_manager',
-        data: {'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
-        success: function (return_data) {
-            $(".rurera-file-manager-block").html(return_data);
-            $('.rurera-file-manager-modal').modal('show');
-        },
-    });
-
-});
-
-function loadGalleryHTML(file_url, input_data){
-    var response_url = '';
-    response_url += '<li>'+input_data+'<img src="'+file_url+'" style="width:80px;"><i class="fa fa-times remove-gallery-image"></i></li>';
-    return response_url;
-}
-
-function loadOptionGallery(file_url, input_data){
-    var response_url = '';
-    if(file_url != ''){
-        response_url += '<li>'+input_data+'<img src="'+file_url+'" style="width:80px;"><i class="fa fa-times remove-gallery-image"></i></li>';
-    }
-    return response_url;
-}
-
-
-$(document).on('click', '#rfp-tab-gallery', function () {
-    $(".gallery-load-form").submit();
-});
-$(document).on('submit', '.gallery-load-form', function () {
-    var loaderDiv = $('.rurera-gallery-grid');
-    rurera_loader(loaderDiv, 'div');
-    var formData = new FormData($(this)[0]);
-    $.ajax({
-        type: "POST",
-        url: '/admin/common/load_gallery_images',
-        data: formData,
-        processData: false,
-        contentType: false,
-        success: function (return_data) {
-            rurera_remove_loader(loaderDiv, 'div');
-            $(".rurera-gallery-grid").html(return_data);
-        }
-    });
-
-});
-
-
-
-
