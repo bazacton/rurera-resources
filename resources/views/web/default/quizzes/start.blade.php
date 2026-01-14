@@ -7,13 +7,6 @@ $question_ids = isset( $question_ids )? $question_ids : array();
 $is_new = isset( $is_new )? $is_new : 'no';
 @endphp
 
-@push('styles_top')
-
-    <link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
-    <link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
-    <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
-
-@endpush
 @section('content')
 
 <div class="learning-page type-{{$quiz->quiz_type}} type-sats" >
