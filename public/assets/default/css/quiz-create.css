@@ -213,13 +213,13 @@ input.droppable-field {
 .question-result-layout .form-field.correct ,
 .form-field.correct input[type="checkbox"]:checked ~ label,
 .question-result-layout .form-field.correct label {
-    border-color: #287834;
+    border-color: #9ef95a;
 }
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
 .lms-radio-select input[type=radio]:checked~label {
-    background-color: #95D6A2;
-    color: #4D8F5B;
-    border-color: #6eb37d;
+    background-color: #d2ffb0;
+    color: #73c238;
+    border-color: #9ef95a;
 }
 .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transition: 0.4s; }
 .row-fields .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transform: none;}
