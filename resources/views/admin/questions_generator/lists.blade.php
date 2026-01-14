@@ -6,7 +6,7 @@
     .hide {
         display: none;
     }
-	
+
 	.defined-searches {
 		background: #efefef;
 		padding: 10px;
@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
 							<div class="select-holder">
-								<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
+								<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses-filter form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
 									<option value="">{{trans('admin/main.all_categories')}}</option>
 									@foreach($categories as $category)
 									@if(!empty($category->subCategories) and count($category->subCategories))
@@ -72,16 +72,16 @@
 									@endforeach
 								</select>
 							</div>
-                            
+
                         </div>
                     </div>
-					
+
 					<div class="col-md-4">
 					<div class="form-group">
 						<label>Subjects</label>
 						<select data-return_type="option"
 								data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'bulk_list_search')}}"
-								class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+								class="ajax-courses-dropdown-filter year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
 								id="subject_id" name="subject_id">
 							<option disabled selected>Subject</option>
 						</select>
@@ -92,19 +92,19 @@
 						@enderror
 					</div>
 					</div>
-					
-					
+
+
 					<div class="col-md-4">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
 						<div class="select-holder">
 							<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'bulk_list_search')}}" id="chapter_id"
-									class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+									class="form-control populate ajax-chapter-dropdown-filter @error('chapter_id') is-invalid @enderror"
 									name="chapter_id">
 								<option value="">Please select year, subject</option>
 							</select>
 						</div>
-						
+
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -113,31 +113,31 @@
 
 					</div>
 					</div>
-					
-					
+
+
 					<div class="col-md-4">
 						<div class="form-group">
 							<label class="input-label">Sub Topic</label>
 							<div class="select-holder">
 								<select id="chapter_id"
-									class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+									class="form-control populate ajax-subchapter-dropdown-filter @error('sub_chapter_id') is-invalid @enderror"
 									name="sub_chapter_id">
 									<option value="">Please select year, subject, Topic</option>
 								</select>
 							</div>
-							
+
 						@error('sub_chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
 						</div>
 						@enderror
-						
+
 
 						</div>
 					</div>
-					
+
 					<div class="col-md-4">
-						<div class="form-group">	
+						<div class="form-group">
 							<label class="input-label">Author</label>
 							<div class="select-holder">
 								<select name="user_id" data-search-option="display_name" class="form-control "
@@ -152,14 +152,14 @@
 									@endif
 								</select>
 							</div>
-							
+
 						</div>
 					</div>
 
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                         <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
-						
+
                     </div>
                 </form>
             </div>
@@ -171,8 +171,8 @@
 			<span><strong>Defined Searches:</strong></span>
 				@if( !empty( $saved_templates ) )
 					@foreach( $saved_templates  as $template_name => $template_data)
-						@php $template_array = json_decode($template_data); 
-						$url_params = '<span>'.$template_name.'</span>'; 
+						@php $template_array = json_decode($template_data);
+						$url_params = '<span>'.$template_name.'</span>';
 						if( isset( $template_array->url_params )){
 							$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
 						}
@@ -187,7 +187,7 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="card">
-				
+
 					<div class="card-header">
 						<div class="columns-settings">
 							<div class="dropdown">
@@ -196,7 +196,7 @@
 								</button>
 								<div class="dropdown-menu">
 									<input type="text" class="search-input" id="searchInput" placeholder="Search by item..." onkeyup="filterColumns()">
-									
+
 									<h5>Shown Attributes</h5>
 									<ul id="shownAttributes" class="column-list"></ul>
 
@@ -229,13 +229,13 @@
                                 </tr>
 
                                 @foreach($QuestionsBulkLists as $QuestionsBulkListObj)
-								
+
                                 <tr>
 									<td data-id="category" class="text-left">{{ (isset($QuestionsBulkListObj->category->id))? $QuestionsBulkListObj->category->getTitleAttribute() : '-' }}
 									<br>
 										<small>
-										{{ (isset($QuestionsBulkListObj->subject->id))? $QuestionsBulkListObj->subject->getTitleAttribute() : '-' }} / 
-										{{ (isset($QuestionsBulkListObj->chapter->id))? $QuestionsBulkListObj->chapter->getTitleAttribute() : '-' }} / 
+										{{ (isset($QuestionsBulkListObj->subject->id))? $QuestionsBulkListObj->subject->getTitleAttribute() : '-' }} /
+										{{ (isset($QuestionsBulkListObj->chapter->id))? $QuestionsBulkListObj->chapter->getTitleAttribute() : '-' }} /
 										{{ (isset($QuestionsBulkListObj->subChapter->id))? $QuestionsBulkListObj->subChapter->sub_chapter_title : '-' }}
 										</small>
 									</td>
@@ -246,7 +246,7 @@
                                     <td data-id="action">
                                         @can('admin_topic_parts_edit')
 										@if($QuestionsBulkListObj->status == 'active')
-											
+
 											<a href="/admin/questions-generator/add-prompt/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Prompt">
 												<i class="fas fa-plus-circle"></i>
 											</a>&nbsp;&nbsp;&nbsp;
@@ -292,7 +292,7 @@
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				<input type="hidden" name="template_type" class="template_type">
 				<input type="hidden" name="form_id" class="form_id">
-				
+
 				<div class="inactivity-controls">
 					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Form</a>
 					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
@@ -314,7 +314,7 @@
 			  <div class="modal-box">
 			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
 				@csrf
-				
+
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
 					<div class="row">
@@ -420,7 +420,7 @@
 
 							</div>
 						</div>
-						
+
 						</div>
 					</div>
 				</div>
@@ -441,7 +441,7 @@
 
 <script>
 	$(document).ready(function () {
-		
+
 		$(document).on('submit', '.generate-bulk-list-form', function() {
 			var thisForm = $(this);
 			var quiz_id = $(".quiz_id").val();
@@ -455,9 +455,9 @@
 				}
 			}
 			return true;
-			
+
 		});
-		
+
 		const defaultColumns = [
 			{ id: 'category', text: 'Category', visible: true },
 			{ id: 'list_type', text: 'Type', visible: true },
@@ -577,7 +577,7 @@
 			currentOrder = defaultColumns.map(col => col.id); // Reset to default order
 			renderTableHeaders();
 			renderColumnLists();
-			
+
 			const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
 			const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
 			$('#output').html(`
@@ -609,13 +609,13 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-		
-		
-		
+
+
+
 		$(document).on('click', '.create-questions-bulk-list-btn', function () {
 			$(".questions_bulk_list").modal('show');
 		});
-		
+
 		$(document).on('change', '.ajax-category-courses', function () {
 			var category_id = $(this).val();
 			var course_id = $(this).attr('data-course_id');
@@ -660,7 +660,56 @@
 			});
 		});
         $(".ajax-category-courses").change();
-		
+
+
+        //Filters
+
+        $(document).on('change', '.ajax-category-courses-filter', function () {
+            var category_id = $(this).val();
+            var course_id = $(this).attr('data-course_id');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/courses_by_categories',
+                data: {'category_id': category_id, 'course_id': course_id},
+                success: function (return_data) {
+                    $(".ajax-courses-dropdown-filter").html(return_data);
+                    $(".ajax-chapter-dropdown-filter").html('<option value="">Please select year, subject</option>');
+                    $('.ajax-courses-dropdown-filter').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-courses-dropdown-filter', function () {
+            var course_id = $(this).val();
+            var chapter_id = $(this).attr('data-chapter_id');
+
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/chapters_by_course',
+                data: {'course_id': course_id, 'chapter_id': chapter_id},
+                success: function (return_data) {
+                    $(".ajax-chapter-dropdown-filter").html(return_data);
+                    $('.ajax-chapter-dropdown-filter').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-chapter-dropdown-filter', function () {
+            var chapter_id = $(this).val();
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            var disabled_items = $(this).attr('data-disabled');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/sub_chapters_by_chapter',
+                data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+                success: function (return_data) {
+                    $(".ajax-subchapter-dropdown-filter").html(return_data);
+                }
+            });
+        });
+        $(".ajax-category-courses-filter").change();
+
+
 		$(document).on('change', '.conditional-field', function () {
 			$(".conditional-child-fields").hide();
 			var child_value = $(this).val();
@@ -668,7 +717,7 @@
 			var child_class = selectedOption.attr('data-child');
 			$('.'+child_class).show();
 		});
-		
+
         $(".list_type").change();
 		$(document).on('change', '.list_sub_type', function () {
 			var quiz_type = $(this).val();
@@ -683,12 +732,12 @@
 			});
 		});
         $(".list_sub_type").change();
-		
-		
-		
+
+
+
     });
-	
-	
+
+
 </script>
 
 @endpush
