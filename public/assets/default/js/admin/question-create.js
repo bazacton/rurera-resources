@@ -1347,6 +1347,55 @@ function _rureraform_properties_prepare(_object) {
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'>"+image_field+"</div></div>";
                     break;
 
+                case 'rurera_image':
+                    var random_id = Math.floor((Math.random() * 99999) + 1);
+                    //var imageObj = $.parseHTML(rureraform_escape_html(properties[key]));
+                    var imageObj = $($.parseHTML(rureraform_escape_html(properties[key])));
+                    var image_src = imageObj.find('img').attr('src');
+
+                    var question_id = $(".question-builder-area.active").attr('data-question_id');
+                    var image_attributes = {
+                        upload_type: 'question',
+                        question_id: question_id,
+                        upload_dir: 'storage',
+                        upload_path: '/media/'+question_id,
+                        is_multiple: false,
+                        preview_div: 'preview-images-block-'+random_id,
+                        hidden_field: '',
+                        field_name: 'rureraform-content-'+random_id
+                    };
+                    var imageAttrStr = encodeURIComponent(JSON.stringify(image_attributes));
+
+                    var gallery_fields = {
+                        gallery_type: 'question',
+                        question_id: question_id,
+                    };
+                    var gallery_fieldsStr = encodeURIComponent(JSON.stringify(gallery_fields));
+
+                    var gallery_images_html = loadGalleryHTML(rureraform_escape_html(properties[key]), '<input type="hidden" name="rureraform-content" class="rureraform-content-'+random_id+'" id="rureraform-content" value="' + rureraform_escape_html(properties[key]) + '" placeholder="">');
+
+                    var image_field = '<div class="form-group mt-15">\n' +
+                        '                    <div class="input-group">\n' +
+                        '                        <div class="input-group-prepend">\n' +
+                        '                            <button type="button" data-gallery_fields="'+gallery_fieldsStr+'" data-image_attr="'+imageAttrStr+'" class="input-group-text rurera-file-manager" data-input="rureraform-' + key + '" data-preview="holder">\n' +
+                        '                                <i class="fa fa-upload"></i>\n' +
+                        '                            </button>\n' +
+                        '                        <ul class="preview-images-block-'+random_id+'">'+gallery_images_html+'</ul>\n' +
+                        '                        </div>\n' +
+                        '                        <div class="input-group-append">\n' +
+                        '                            <button type="button" class="input-group-text admin-file-view" data-input="rureraform-' + key + '">\n' +
+                        '                                <i class="fa fa-eye"></i>\n' +
+                        '                            </button>\n' +
+                        '                        </div>\n' +
+                        '                    </div>\n' +
+                        '                </div>';
+
+
+                    //var image_field = "<input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />";
+
+                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'>"+image_field+"</div></div>";
+                    break;
+
                 case 'file':
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'>" +
                         "<div class=\"input-group\">\n" +
@@ -2022,7 +2071,89 @@ function _rureraform_properties_prepare(_object) {
                         if(DataIsEmpty(properties[key][j]["label"])){
                             continue;
                         }
-                        options += "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' type='text' id='image-" + key + "-" + j + "' value='" + rureraform_escape_html(image_url) + "' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div class='rurera-hide'><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'></div><div><span onclick='return rureraform_open_equation_modal(this);' title='Set the option as correct value'><i class='fas fa-square-root-alt'></i></span><span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
+
+                        var question_id = $(".question-builder-area.active").attr('data-question_id');
+                        var image_attributes = {
+                            upload_type: 'question',
+                            question_id: question_id,
+                            upload_dir: 'storage',
+                            upload_path: '/media/'+question_id,
+                            is_multiple: false,
+                            preview_div: 'preview_img-' + key + '-' + j,
+                            hidden_field: '<input class="rureraform-properties-options-image" value="" type="hidden" id="image-'+ key + '-' + j+'" value="" placeholder="Upload Image">',
+                            field_name: 'rureraform-' + key
+                        };
+                        var imageAttrStr = encodeURIComponent(JSON.stringify(image_attributes));
+
+                        var gallery_fields = {
+                            gallery_type: 'question',
+                            question_id: question_id,
+                        };
+                        var gallery_fieldsStr = encodeURIComponent(JSON.stringify(gallery_fields));
+
+                        var gallery_images_html = loadOptionGallery(rureraform_escape_html(image_url), '<input class="rureraform-properties-options-image" type="hidden" id="image-'+ key + '-' + j+'" value="'+rureraform_escape_html(image_url)+'" placeholder="Upload Image">');
+
+                        var option_test = "<div class='rureraform-properties-options-item" + selected + "'>" +
+                            "<div class='rureraform-properties-options-table'>" +
+                            "<div>" +
+                            "<input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]['label']) + "' placeholder='Label'>" +
+                            "</div>" +
+                            "<ul class='preview-images-block'>"+gallery_images_html+"</ul>" +
+                            "<div class='rureraform-image-url rurera-image-depend'>" +
+                            "<div class='input-group-prepend'>" +
+                            "<button type='button' " +
+                            "data-gallery_fields='" + gallery_fieldsStr + "' " +
+                            "data-image_attr='" + imageAttrStr + "' " +
+                            "class='input-group-text rurera-file-manager' " +
+                            "data-input='image-" + key + "-" + j + "' " +
+                            "data-preview='holder'>" +
+                            "<i class='fa fa-upload'></i>" +
+                            "</button>" +
+                            "</div><div class='preview_img-" + key + "-" + j + "'></div>" +
+
+
+                            "<div class='rurera-hide'>" +
+                            "<input class='rureraform-properties-options-value' type='text' value='" +
+                            rureraform_escape_html(properties[key][j]['value']) + "' placeholder='Value'>" +
+                            "</div>" +
+
+                            "<div>" +
+                            "<span onclick='return rureraform_open_equation_modal(this);' title='Set the option as correct value'><i class='fas fa-square-root-alt'></i></span>" +
+                            "<span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span>" +
+                            "<span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span>" +
+                            "<span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span>" +
+                            "<span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span>" +
+                            "</div>" +
+                            "</div>" +
+                            "</div>";
+
+                        options += "<div class='rureraform-properties-options-item" + selected + "'>" +
+                            "<div class='rureraform-properties-options-table'>" +
+                            "<div>" +
+                            "<input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'>" +
+                            "</div>" +
+                            "<div class='rureraform-image-url rurera-image-depend'>" +
+                            "<div class='input-group-prepend'>" +
+                            "<button data-gallery_fields='" + gallery_fieldsStr + "' " +
+                            " data-image_attr='" + imageAttrStr + "'" +
+                            " type='button' class='input-group-text rurera-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'>" +
+                            "<i class='fa fa-upload'></i>" +
+                            "</button>" +
+                            "</div><div class='preview_img-" + key + "-" + j + "'>"+gallery_images_html+"</div>" +
+                            "<span><i class='far fa-image'></i></span>" +
+                            "</div>" +
+                            "<div class='rurera-hide'>" +
+                            "<input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'>" +
+                            "</div>" +
+                            "<div>" +
+                            "<span onclick='return rureraform_open_equation_modal(this);' title='Set the option as correct value'><i class='fas fa-square-root-alt'></i></span>" +
+                            "<span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span>" +
+                            "<span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span>" +
+                            "<span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span>" +
+                            "<span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span>" +
+                            "</div>" +
+                            "</div>" +
+                            "</div>";
                     }
 
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content rureraform-properties-image-options-table'><div class='rureraform-properties-options-table-header'><div>Label</div><div class='rurera-image-depend'>Image</div><div class='rurera-hide'>Value</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + (properties.type == "radio" ? "off" : "on") + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null);'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
@@ -6510,12 +6641,27 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         if(DataIsEmpty(rureraform_form_elements[i]["options"][j]["label"])){
                             continue;
                         }
-                        draggable_options += '<li><span class="draggable-option">' + label_data + '</span></li>';
+                        //draggable_options += '<li><span class="draggable-option">' + label_data + '</span></li>';
+                        draggable_options += '<button type="button" draggable="true" class="btn btn-outline-primary option-btn" data-key="a" data-value="'+label_data+'">'+label_data+'</button>';
                     }
 
-                    var draggable_options = '<ul class="draggable-items">'+draggable_options+'</ul>';
+                    //var draggable_options = '<ul class="draggable-items">'+draggable_options+'</ul>';
+                    var draggable_options = '<div class="draggable-options">'+draggable_options+'</div><div id="msg" class="message"></div>\n' +
+                        '    <div class="mt-2 text-muted small">\n' +
+                        '        Keys: <kbd>A</kbd>–<kbd>J</kbd> • <kbd>Backspace</kbd> undo • <kbd>Enter</kbd> submit • Multi-use: fills one field per press\n' +
+                        '    </div>';
 
                     var content = rureraform_form_elements[i]["content"];
+
+
+
+                    var updatedContent = content.replace(/\[DRAGAREA id="(\d+)"\]/g, function(match, id) {
+
+                        return '<input type="text" data-field_type="text" readonly="" class="droppable-field-0 editor-field droppable-field input-simple ui-droppable filled" data-id="0" id="field-1" data-index="0" aria-label="blank 0">';
+                    });
+
+                    content = updatedContent;
+
 
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     var class_id = 'rurera-svg-data' + i+'_'+random_id;
@@ -11748,4 +11894,294 @@ $(document).ready(function() {
     });
 
 
+});
+
+
+
+$(document).on('click', '.rurera-file-manager', function () {
+    var image_attr_encoded = $(this).attr('data-image_attr');
+    var image_attr = JSON.parse(decodeURIComponent(image_attr_encoded));
+
+    var gallery_fields_encoded = $(this).attr('data-gallery_fields');
+    var gallery_fields = JSON.parse(decodeURIComponent(gallery_fields_encoded));
+
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/common/rurera_file_manager',
+        data: {'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
+        success: function (return_data) {
+            $(".rurera-file-manager-block").html(return_data);
+            $('.rurera-file-manager-modal').modal('show');
+        },
+    });
+
+});
+
+function loadGalleryHTML(file_url, input_data){
+    var response_url = '';
+    response_url += '<li>'+input_data+'<img src="'+file_url+'" style="width:80px;"></li>';
+    return response_url;
+}
+
+function loadOptionGallery(file_url, input_data){
+    var response_url = '';
+    if(file_url != ''){
+        response_url += '<li>'+input_data+'<img src="'+file_url+'" style="width:80px;"></li>';
+    }
+    return response_url;
+}
+
+
+$(document).on('click', '#rfp-tab-gallery', function () {
+    $(".gallery-load-form").submit();
+});
+$(document).on('submit', '.gallery-load-form', function () {
+    var loaderDiv = $('.rurera-gallery-grid');
+    rurera_loader(loaderDiv, 'div');
+    var formData = new FormData($(this)[0]);
+    $.ajax({
+        type: "POST",
+        url: '/admin/common/load_gallery_images',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (return_data) {
+            rurera_remove_loader(loaderDiv, 'div');
+            $(".rurera-gallery-grid").html(return_data);
+        }
+    });
+
+});
+
+
+
+
+
+const BANNED_EXACT = new Set([
+    "a","b","c","d","e",
+    "0","1","2","3","4","5","6","7","8","9",
+    "aa","bb","cc","dd","ee",
+    "abc","abcd","qwe","qwer","qwerty",
+    "asdf","asfd","fdsa","zxcv","zxcvb",
+    "test","testing","demo","sample","temp","tmp",
+    "file","new","untitled","title",
+    "ok","okay","yes","no",
+    "hello","hi"
+]);
+
+// Whole words that should not appear in titles
+const BANNED_WORDS = new Set([
+    "asdf","qwerty","test","demo","sample","temp","tmp","untitled","file"
+]);
+
+// Windows reserved device names (case-insensitive) — even with extensions these can break on Windows
+const WINDOWS_RESERVED = new Set([
+    "con","prn","aux","nul",
+    "com1","com2","com3","com4","com5","com6","com7","com8","com9",
+    "lpt1","lpt2","lpt3","lpt4","lpt5","lpt6","lpt7","lpt8","lpt9"
+]);
+
+// Forbidden characters list (as requested) + control whitespace
+// / \ : * ? " < > | ~ { } # % & $ +
+// plus: newline/tab/carriage return
+const FORBIDDEN_CHARS = /[\\\/\:\*\?\"\<\>\|\~\{\}\#\%\&\$\+\=\n\r\t]/;
+
+// Invisible characters to strip (zero-width, BOM)
+const INVISIBLE_CHARS = /[\u200B-\u200D\uFEFF]/g;
+
+function normalizeInput(raw) {
+    // remove invisible chars, normalize whitespace, trim
+    return (raw || "")
+        .replace(INVISIBLE_CHARS, "")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function stripTrailingDotsAndSpaces(s) {
+    // Windows disallows trailing dots/spaces in filenames
+    return s.replace(/[\. ]+$/g, "");
+}
+
+function tokenizeWords(s) {
+    // keep letters/numbers, split on spaces/punctuation
+    return s
+        .toLowerCase()
+        .replace(/[_\-]+/g, " ")
+        .replace(/[^\p{L}\p{N} ]+/gu, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .split(" ")
+        .filter(Boolean);
+}
+
+function uniqueCharRatio(s) {
+    const letters = s.toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (!letters.length) return 0;
+    const uniq = new Set(letters.split(""));
+    return uniq.size / letters.length;
+}
+
+function hasVowel(s) {
+    return /[aeiou]/i.test(s);
+}
+
+function looksLikeKeyboardMash(s) {
+    const low = s.toLowerCase().replace(/\s+/g, "");
+    const badPatterns = ["asdf", "qwer", "zxcv", "1234", "0000"];
+    return badPatterns.some(p => low.includes(p));
+}
+
+function baseNameLower(title) {
+    // compare only the base name (before first dot) for Windows reserved words
+    // e.g., "CON.txt" -> "con"
+    const t = title.trim();
+    const base = t.split(".")[0];
+    return base.toLowerCase();
+}
+
+function makeSafeFilename(title) {
+    // Clean but keep readable; also remove forbidden and extra symbols
+    let trimmed = normalizeInput(title);
+    trimmed = stripTrailingDotsAndSpaces(trimmed);
+
+    return trimmed
+        .replace(FORBIDDEN_CHARS, "")
+        .replace(/[^\p{L}\p{N} _.-]+/gu, "") // remove emojis/symbols
+        .replace(/\s+/g, "_")
+        .replace(/_+/g, "_")
+        .replace(/\.+/g, ".") // collapse multiple dots
+        .replace(/^[_\. -]+|[_\. -]+$/g, "") // trim leading/trailing punctuation
+        .toLowerCase();
+}
+
+function validateStrongTitle(raw) {
+    let title = normalizeInput(raw);
+    if (!title) return { ok:false, reason:"Title cannot be empty." };
+
+    // remove trailing dots/spaces (Windows safety), but still validate result
+    const beforeStrip = title;
+    title = stripTrailingDotsAndSpaces(title);
+    if (!title) return { ok:false, reason:"Title becomes empty after trimming trailing dots/spaces." };
+
+    if (title === "." || title === "..") return { ok:false, reason:'Title cannot be "." or "..".' };
+    if (title.length < 3) return { ok:false, reason:"Too short. Use a descriptive title (3+ characters)." };
+    if (title.length > 80) return { ok:false, reason:"Too long. Keep it under 80 characters." };
+
+    if (FORBIDDEN_CHARS.test(title)) {
+        return { ok:false, reason:'Contains forbidden characters. Avoid: / \\ : * ? " < > | ~ { } # % & $ + (and tabs/newlines).' };
+    }
+
+    // Reject Windows reserved names (base part)
+    const baseLower = baseNameLower(title);
+    if (WINDOWS_RESERVED.has(baseLower)) {
+        return { ok:false, reason:'This title is a Windows reserved name (e.g., CON, PRN, AUX, NUL, COM1, LPT1). Choose another.' };
+    }
+
+    // Basic alnum presence checks
+    const alnum = title.replace(/[^\p{L}\p{N}]/gu, "");
+    if (!alnum) return { ok:false, reason:"Must contain letters or numbers." };
+    if (/^\d+$/.test(alnum)) return { ok:false, reason:"Only numbers is not allowed. Add meaningful words." };
+
+    const lowExact = title.toLowerCase();
+    if (BANNED_EXACT.has(lowExact)) {
+        return { ok:false, reason:"Too generic. Use a meaningful title (2+ words recommended)." };
+    }
+
+    const words = tokenizeWords(title);
+    for (const w of words) {
+        if (BANNED_WORDS.has(w)) {
+            return { ok:false, reason:'Contains generic word "' + w + '". Use meaningful words.' };
+        }
+    }
+
+    // Require 2+ words OR one long descriptive word OR word+number with enough length
+    const hasLongWord = words.some(w => w.length >= 12);
+    const hasNumber = /\d/.test(title);
+
+    if (!(words.length >= 2 || hasLongWord || (words.length >= 1 && hasNumber && alnum.length >= 8))) {
+        return { ok:false, reason:"Too short/generic. Use 2+ words (e.g., “Math Worksheet 3”)." };
+    }
+
+    // Must have at least one vowel to reduce random consonant spam
+    if (!hasVowel(title)) {
+        return { ok:false, reason:"Looks like random letters (must include vowels). Use real words." };
+    }
+
+    // Diversity check for repeated characters
+    const ratio = uniqueCharRatio(title);
+    if (ratio < 0.35) {
+        return { ok:false, reason:"Looks repetitive (e.g., aaaaa). Use a more meaningful title." };
+    }
+
+    if (looksLikeKeyboardMash(title)) {
+        return { ok:false, reason:"Looks like keyboard mash (asdf/qwer). Use real words." };
+    }
+
+    // Reject leading/trailing punctuation after normalization
+    if (/^[_\.-]|[_\.-]$/.test(title)) {
+        return { ok:false, reason:"Avoid starting/ending with punctuation like '.', '_' or '-'." };
+    }
+
+    // If we stripped trailing dots/spaces, inform success but it's okay
+    const note = (beforeStrip !== title) ? " (Trailing dots/spaces were trimmed.)" : "";
+    return { ok:true, reason:"Valid and meaningful title." + note, cleaned: title };
+}
+
+function renderResult(ok, msg) {
+    const out = document.getElementById("out");
+    out.innerHTML = ok
+        ? `<div class="alert alert-success mb-0">✅ ${msg}</div>`
+        : `<div class="alert alert-danger mb-0">❌ ${msg}</div>`;
+}
+
+function run() {
+    const raw = document.getElementById("title").value;
+    const res = validateStrongTitle(raw);
+
+    // Suggested filename always shows (cleaned and safe)
+    const suggestedEl = document.getElementById("suggested");
+    suggestedEl.textContent = raw.trim() ? makeSafeFilename(raw) : "—";
+
+    renderResult(res.ok, res.reason);
+}
+/**
+ * Validate filename from an input element
+ * @param {HTMLElement|jQuery} el
+ */
+function validateFilenameInput(el) {
+    const $el = $(el);
+    const raw = $el.val();
+    const thisParent = $el.closest('.temp-files-area');
+
+    const result = validateStrongTitle(raw);
+
+    // Optional: show cleaned filename somewhere
+    const safeName = raw.trim() ? makeSafeFilename(raw) : "—";
+    $(".suggested-filename").text(safeName);
+
+    // Optional: add visual feedback to input
+    $el.toggleClass("is-valid", result.ok);
+    $el.toggleClass("is-invalid", !result.ok);
+
+    // Optional: show message
+    const $msg = thisParent.find(".filename-feedback");
+    if (result.ok) {
+        $(".upload-files-btn").prop('disabled', false);
+    } else {
+        $(".upload-files-btn").prop('disabled', true);
+    }
+    if ($msg.length) {
+        $msg.html(
+            result.ok
+                ? `<span class="text-success">✅ ${result.reason}</span>`
+                : `<span class="text-danger">❌ ${result.reason}</span>`
+        );
+    }
+
+    return result;
+}
+
+
+$(document).on("change blur input keyup keydown", ".upload_files_names", function () {
+    validateFilenameInput(this);
 });

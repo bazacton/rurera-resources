@@ -236,7 +236,7 @@
             <div id="rfpUploadList"></div>
 
             <div class="d-flex justify-content-end mt-2">
-                <button type="button" class="btn btn-success rfp-btn" id="rfpUploadBtn" disabled>Upload</button>
+                <button type="button" class="btn btn-success rfp-btn upload-files-btn" id="rfpUploadBtn" disabled>Upload</button>
             </div>
 
             <div id="rfpUploadStatus" class="mt-3" style="display:none;"></div>
@@ -609,22 +609,30 @@
                 return;
             }
 
+            var files_names = [];
             filesToUpload.forEach((f, idx) => {
                 const kind = fileKindFromTypeOrExt(f.type, f.name);
                 const thumb = (kind === 'image') ? makePlaceholderThumbSvg('IMG') : (kind === 'pdf' ? makePlaceholderThumbSvg('PDF') : makePlaceholderThumbSvg('DOCX'));
                 const row = document.createElement('div');
+                const file_name = f.name.replace(/\.[^/.]+$/, '');
+                const extension = f.name.split('.').pop();
                 row.className = 'rfp-item';
                 row.setAttribute('draggable','true');
                 row.setAttribute('data-drag-index', String(idx));
                 row.setAttribute('draggable','true');
                 row.setAttribute('data-drag-index', String(idx));
+                console.log('---------filesToUpload--------');
+                console.log(f);
                 row.innerHTML = `
             <div class="rfp-item-meta">
               <div class="rfp-drag-handle" title="Drag to reorder">⋮⋮</div>
               <div class="rfp-thumb"><img alt="" src="${thumb}"></div>
-              <div style="min-width:0;">
+              <div class="temp-files-area" style="min-width:0;">
+                <input type="text" class="upload_files_names" name="upload_files_names[]" value="${sanitizeText(file_name)}">.${sanitizeText(extension)}
                 <div class="rfp-title" title="${sanitizeText(f.name)}">${sanitizeText(f.name)}</div>
                 <div class="rfp-sub">${sanitizeText(kind.toUpperCase())} • ${bytesToMb(f.size)} MB</div>
+                <span class="filename-feedback"></span>
+                <span class="suggested-filename"></span>
               </div>
             </div>
             <div>
@@ -745,13 +753,20 @@
                 hidden_field.val(thumb);
                 hidden_field.attr('value', thumb);
                 attachQuestionImage(question_id, item.id);
-                if(field_name != ''){
+                if(hidden_field.length > 0){
                     images_response += `<li>${hidden_field.prop('outerHTML')}<img src="${thumb}" style="width:80px;"></li>`;
+                }else{
+                    images_response += `<img src="${thumb}" style="width:80px;">`;
+                    $("." + preview_div).find('img').attr('src', thumb);
+                    $("." + preview_div).find('.'+field_name).attr('value', thumb);
+                    $("." + preview_div).find('.'+field_name).val(thumb);
                 }
 
             });
 
-            $("."+preview_div).html(images_response);
+            if(hidden_field.length > 0) {
+                $("." + preview_div).html(images_response);
+            }
             $('.rurera-file-manager-modal').modal('hide');
         }
 
@@ -824,6 +839,8 @@
 
             filesToUpload = combined;
             renderUploadSelectedList();
+
+            $(".upload_files_names").change();
         }
 
         // Remove selected-for-upload
@@ -893,6 +910,10 @@
             fd.append('preview_div', preview_div);
             fd.append('field_name', field_name);
             fd.append('is_multiple', is_multiple);
+
+            $('input[name="upload_files_names[]"]').each(function (index) {
+                fd.append('upload_files_names[]', $(this).val());
+            });
 
 
 
@@ -1176,4 +1197,10 @@
         updateInsertFooter();
 
     })();
+
+
+
+
+
+
 </script>
