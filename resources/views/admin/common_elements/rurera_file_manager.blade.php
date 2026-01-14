@@ -254,52 +254,9 @@
     </div>
 
     <!-- TAB 2: GALLERY -->
-    <div class="tab-pane fade" id="rfp-pane-gallery" role="tabpanel" aria-labelledby="rfp-tab-gallery">
+    <div class="tab-pane fade rurera-gallery-grid" id="rfp-pane-gallery" role="tabpanel" aria-labelledby="rfp-tab-gallery">
 
-        <form name="gallery-area" type="POST" class="gallery-load-form" action="javascript:;">
-
-            @if(isset($gallery_fields) && !empty($gallery_fields))
-
-                @foreach($gallery_fields as $field_name => $field_value)
-                    <input type="hidden" name="{{$field_name}}" value="{{$field_value}}">
-                @endforeach
-            @endif
-
-
-            <div class="d-flex flex-wrap align-items-end" style="gap:10px;">
-                <div>
-                    <label class="small text-muted mb-1">Type</label>
-                    <select name="file_type" class="form-control form-control-sm" id="rfpFilterType">
-                        <option value="all">All</option>
-                        <option value="image">Images (JPG/SVG)</option>
-                        <option value="pdf">PDF</option>
-                        <option value="docx">DOCX</option>
-                    </select>
-                </div>
-                <div>
-                    <label name="sort_by" class="small text-muted mb-1">Sort</label>
-                    <select class="form-control form-control-sm" id="rfpFilterSort">
-                        <option value="recent">Most recent</option>
-                        <option value="name">Name (A–Z)</option>
-                    </select>
-                </div>
-
-                <div class="flex-grow-1" style="min-width:220px; max-width:420px;">
-                    <label class="small text-muted mb-1">Search</label>
-                    <input type="text" name="file_name" class="form-control form-control-sm" id="rfpSearch" placeholder="Search by title...">
-                </div>
-                <div class="flex-grow-1"></div>
-                <div class="text-muted small">Showing up to <strong>30</strong> recent files</div>
-            </div>
-        </form>
-
-        <div class="rurera-gallery-grid">
-            Loading...
-            <div id="rfpGalleryGrid" class="mt-3 rfp-gallery-grid rurera-gallery-grid">
-
-
-            </div>
-        </div>
+        @include('admin.common_elements.rurera_file_manager-gallery',['gallery_fields' => $gallery_fields])
 
     </div>
 
