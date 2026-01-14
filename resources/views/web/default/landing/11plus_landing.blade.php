@@ -189,7 +189,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title">
                         <h2 class="mb-5 font-40">Comprehensive 11 Plus Exam Prep with Rurera</h2>
-                        <p itemprop="description" class="font-19 text-gray">Boost Your Success: Tailored 11 Plus Practice & Resources
+                        <p itemprop="description" class="font-19 text-gray">Every year, over 100,000 children sit the 11 Plus across England, making early preparation an advantage rather than a luxury.
                         </p>
                     </div>
                 </div>
