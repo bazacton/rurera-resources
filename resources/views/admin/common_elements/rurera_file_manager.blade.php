@@ -658,11 +658,7 @@
                 items = items.filter(it => String(it.name || '').toLowerCase().includes(q));
             }
 
-            if (sort === 'name') {
-                items.sort((a,b) => String(a.name).localeCompare(String(b.name)));
-            } else {
-                items.sort((a,b) => (b.uploadedAt || 0) - (a.uploadedAt || 0));
-            }
+            items.sort((a,b) => (b.uploadedAt || 0) - (a.uploadedAt || 0));
 
             return items.slice(0, CONFIG.recentLimit);
         }

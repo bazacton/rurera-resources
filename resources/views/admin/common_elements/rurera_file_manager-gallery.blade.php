@@ -9,7 +9,16 @@
 
 
     <div class="d-flex flex-wrap align-items-end" style="gap:10px;">
-
+        <select class="form-control form-control-sm rurera-hide" id="rfpFilterType">
+            <option value="all">All</option>
+            <option value="image">Images (JPG/SVG)</option>
+            <option value="pdf">PDF</option>
+            <option value="docx">DOCX</option>
+        </select>
+        <select class="form-control form-control-sm rurera-hide" id="rfpFilterSort">
+            <option value="recent">Most recent</option>
+            <option value="name">Name (A–Z)</option>
+        </select>
         <div class="col-md-4">
             <div class="form-group">
                 <label class="input-label">{{trans('admin/main.category')}}</label>
