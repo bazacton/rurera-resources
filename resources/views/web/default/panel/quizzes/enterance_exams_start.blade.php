@@ -73,7 +73,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
 
             <div class="justify-content-center row">
-                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto preview-question-content">
+                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto preview-question-content px-0">
                     <div class="quiz-time-bar mb-80 pt-15">
                         <div class="timer-wrap">
                             <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
