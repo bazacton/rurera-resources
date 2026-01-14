@@ -13,7 +13,8 @@
                     <h1 class="font-72 font-weight-bold"><span class="text-scribble mr-10">11 Plus</span>and Entrance Exams</h1>
                     <h2 class="mb-15 font-30">Unlock Opportunities: Ace the 11 Plus Exam!
                     </h2>
-                    <p class="font-19">Master your path to selective school admissions with targeted 11 plus preparation, featuring expert-led practice and comprehensive tools.</p>
+                    <p class="font-19">The 11 Plus is a selective entrance exam for grammar and independent schools in England, 
+                    taken in Year 6. It assesses English, Maths, and reasoning skills under timed conditions. </p>
                     <ul class="mb-30 p-0">
                         <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/mobile.svg" alt="mobile" title="mobile" width="25" height="25" itemprop="image" loading="eager">11 plus practice papers & learning modules
@@ -201,9 +202,8 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="post-title font-30 mb-15">Mock Exams</h3>
-                            <p itemprop="description" class="font-18 text-dark">Conquer the test format with our realistic 11 plus mock exams.
-                                These 11 plus test papers are designed to simulate the pressure, timing, and style of the actual 11 plus examination,
-                                building essential exam-day confidence.</p>
+                            <p itemprop="description" class="font-18 text-dark">Mock exams mirror real 11 Plus papers, helping children manage time, understand question 
+                            patterns, and reduce exam-day anxiety. </p>
                         </div>
                     </div>
                 </div>
@@ -216,8 +216,8 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="post-title font-30 mb-15">Timed Practices</h3>
-                            <p itemprop="description" class="font-18 text-dark">Sharpen time management with our structured 11 plus tests and 11 plus practice papers.
-                                These timed drills ensure your child can efficiently tackle every section of the 11 plus exam within the strict limits.</p>
+                            <p itemprop="description" class="font-18 text-dark">Timed practice sessions train children to work accurately under pressure, improving pacing 
+                            and decision-making so they can complete every section of the 11 Plus confidently.</p>
                         </div>
                     </div>
                 </div>
@@ -230,8 +230,8 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="post-title font-30 mb-15">Target Identification</h3>
-                            <p itemprop="description" class="font-18 text-dark">Our platform analyses performance on 11 plus exam papers to pinpoint exact weaknesses.
-                                We then create a personalised study plan, transforming challenges into strengths for the 11 plus test.</p>
+                            <p itemprop="description" class="font-18 text-dark">Smart analysis highlights weaker topics from each 11 Plus paper, allowing children to 
+                            practise the right areas instead of repeating content they already understand.</p>
                         </div>
                     </div>
                 </div>
@@ -244,8 +244,8 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="post-title font-30 mb-15">Exam Practice Resources</h3>
-                            <p itemprop="description" class="font-18 text-dark">Build exam stamina with our vast library of <b>11 plus papers</b> and interactive tools.
-                                Regular use of these <b>11 plus test</b> resources ensures continuous skill development and topic reinforcement.</p>
+                            <p itemprop="description" class="font-18 text-dark">A wide range of 11 Plus papers and interactive tools help children build exam stamina, 
+                            reinforce core concepts, and practise consistently across all key subjects. </p>
                         </div>
                     </div>
                 </div>
@@ -258,9 +258,8 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="post-title font-30 mb-15">Progress Reports</h3>
-                            <p itemprop="description" class="font-18 text-dark">Gain clear, actionable insights with detailed reports.
-                                Track performance trends across <b>11 plus maths papers</b> and reasoning sections to understand exactly where
-                                to focus your child's <b>11 plus</b> study efforts.</p>
+                            <p itemprop="description" class="font-18 text-dark">Detailed reports show how your child is improving across 11 Plus maths, English, and 
+                            reasoning, helping parents support learning with clarity and confidence. </p>
                         </div>
                     </div>
                 </div>
@@ -273,9 +272,8 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="post-title font-30 mb-15">Professional Support</h3>
-                            <p itemprop="description" class="font-18 text-dark">Access guidance akin to a premier <b>11 plus tutor</b>.
-                                <a href="https://rurera.com/about-us">Our experts</a> provide feedback on 11 plus mock test performance to refine techniques, boost scores,
-                                and navigate the entire 11 plus process.</p>
+                            <p itemprop="description" class="font-18 text-dark">Professional feedback on 11 Plus mock exams helps refine exam technique, correct 
+                            mistakes early, and build confidence through structured improvement.</p>
                         </div>
                     </div>
                 </div>
@@ -433,7 +431,8 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Game-Based Learning</span>
                         </h3>
-                        <p itemprop="description">Transform study time with engaging, interactive challenges that make mastering 11 plus maths papers and vocabulary an enjoyable and rewarding experience.</p>
+                        <p itemprop="description">Interactive games make 11 Plus practice enjoyable, helping children master skills while 
+                        staying motivated and building confidence.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -444,7 +443,8 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Essential Mock Exams</span>
                         </h3>
-                        <p itemprop="description">Eliminate exam surprise with our essential 11 plus mock exam series. These full-length papers are the cornerstone of effective 11 plus exam readiness.</p>
+                        <p itemprop="description">Full-length mock exams simulate real tests, teaching timing, question patterns, and 
+                        strategies while reducing exam-day stress.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -455,7 +455,8 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
-                        <p itemprop="description">Stay informed and empowered with a dedicated dashboard. Monitor completion of 11 plus practice papers, track progress metrics, and support your child's academic journey effectively.</p>
+                        <p itemprop="description">Parents can track completion, strengths, and areas for improvement to guide their child’s 
+                        learning effectively and confidently.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -464,9 +465,9 @@
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
+                            <span class="text-dark-charcoal"> Ultimate 11 Plus Practice Toolkit</span>
                         </h3>
-                        <p itemprop="description">Foster independent learning with a complete suite of self-assessment tools, progress tracking, and recommendations from the best 11 plus books.</p>
+                        <p itemprop="description">A complete set of practice modules and progress tracking tools helps children improve skills independently and steadily.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -480,7 +481,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Top-Tier Study Materials</span>
                         </h3>
-                        <p itemprop="description">Foster independent learning with a complete suite of self-assessment tools, progress tracking, and recommendations from the best 11 plus books.</p>
+                        <p itemprop="description">High-quality materials cover English, Maths, and reasoning, reinforcing core skills and preparing children for real 11 Plus exams.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -491,7 +492,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Smart Exam Tactics</span>
                         </h3>
-                        <p itemprop="description">Learn winning strategies for pacing, question approach, and stress management directly from 11 plus guru methodologies, giving your child a critical edge.</p>
+                        <p itemprop="description">Children learn pacing, question strategies, and stress management to tackle each 11 Plus paper efficiently and confidently.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -505,7 +506,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Adaptive Curriculum</span>
                         </h3>
-                        <p itemprop="description">Experience a truly personalised path. Our smart curriculum adjusts in real-time, focusing effort where it's needed most, just like a private 11 plus tutor.</p>
+                        <p itemprop="description">The curriculum adapts in real time to each child’s strengths and weaknesses, focusing practice where it is needed most.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -516,7 +517,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Personalised Practice</span>
                         </h3>
-                        <p itemprop="description">Reinforce core concepts with practice sets tailored to your child's learning history, including 11 plus test online modules that build confidence and reduce anxiety.</p>
+                        <p itemprop="description">Targeted practice sets strengthen weak areas, consolidate skills, and build confidence in a structured, achievable way.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -527,7 +528,7 @@
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Elevate 11 Plus Preparation</span>
                         </h3>
-                        <p itemprop="description">Achieve top scores with a preparation plan built on tailored 11 plus practice papers and systematic, confidence-building resources.</p>
+                        <p itemprop="description">Tailored practice papers and systematic guidance help children excel, boosting confidence, skills, and overall exam.</p>
                     </div>
                 </div>
             </div>
