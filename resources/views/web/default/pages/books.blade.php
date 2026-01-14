@@ -37,9 +37,8 @@
                             <div class="row">
                                 @if( !empty( $books ))
                                 @foreach( $books as $book_category => $category_books)
-                                <div class="col-lg-12" itemscope itemtype="https://schema.org/Article">
+                                <div class="col-lg-12">
                                     <h3 class="mb-10 font-22">{{$book_category}}</h3>
-                                    <span class="mb-35 d-block font-16" itemprop="sub title">For kids ages 0-3</span>
                                 </div>
                                 @if( !empty( $category_books ))
                                 @foreach( $category_books as $bookData)
@@ -47,7 +46,7 @@
                                     <div class="listing-card">
                                         <div class="row">
                                             <div class="col-12 col-lg-2 col-md-3 col-sm-3">
-                                                <div class="img-holder" itemscope itemtype="https://schema.org/Article">
+                                                <div class="img-holder">
                                                     <figure>
                                                         <a href="/books/{{$bookData->book_slug}}" itemprop="url" class="{{ subscriptionCheckLink('bookshelf') }}">
                                                             <img src="{{$bookData->cover_image }}" alt="#" height="182" width="137" itemprop="image"/>
@@ -57,7 +56,7 @@
                                             </div>
 
                                             <div class="col-12 col-lg-6 col-md-5 col-sm-5">
-                                                <div class="text-holder" itemscope itemtype="https://schema.org/Article">
+                                                <div class="text-holder">
                                                     <h3 class="font-18 font-weight-bold mb-5"><a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}" itemprop="url">{{$bookData->book_title}}</a>
                                                     </h3>
                                                     <ul itemprop="books info list">
@@ -70,7 +69,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4 col-md-4 col-sm-4">
-                                                <div class="btn-holder" itemscope itemtype="https://schema.org/Article">
+                                                <div class="btn-holder">
                                                     <a href="/books/{{$bookData->book_slug}}" class="read-btn {{ subscriptionCheckLink('bookshelf') }}" itemprop="url">
                                                         <span class="btn-icon">
                                                             <img src="/assets/default/svgs/book-open.svg" alt="book open" width="182" height="150">
