@@ -117,6 +117,19 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
 /* Image Draggable Style End */
 
+/* Draggable Input Fields Style Start */
+input.droppable-field {
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    padding: 0 10px 2px;
+    height: 30px;
+    border-radius: 5px;
+}
+.quiz-group.draggable3:has(.droppable-field) {
+    line-height: 46px;
+}
+/* Draggable Input Fields Style End */
+
 /* Image Static Style Start */
 
 /*Image Sizes Style Start*/
