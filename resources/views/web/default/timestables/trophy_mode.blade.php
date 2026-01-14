@@ -3,7 +3,7 @@
 @section('content')
 <div class="timestables-mode-block">
 <div class="timestables-mode-content">
-<div class="section-title mb-25" itemscope itemtype="https://schema.org/Article">
+<div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
     <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Trophy Mode</h2>
 </div>
 @if( (5 - $results_data->count()) > 0)
