@@ -1,4 +1,4 @@
-@extends(getTemplate().'.layouts.app')
+ @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/animate.css">
@@ -14,6 +14,8 @@
                     <p class="text-white font-19 mb-0">
                         If you are aged between 7 and 11, then have fun and learn with 5k+ KS2 quizzes and interactive<br />
                         resources written especially for you. Dive into our targeted KS2 tests and assessments.
+                        Key Stage 2 (KS2) is part of the UK National Curriculum for Years 3–6, covering Maths, 
+                        English, Science and other courses with preparation for Year 6 SATs.
                     </p>
                 </div>
             </div>
@@ -28,7 +30,7 @@
                 <div class="col-12">
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 3</span></h2>
-                        <p>Master the foundational curriculum for Year 3 with engaging KS2 quizzes and practice materials. Build essential skills early.</p>
+                        <p>Master the foundational curriculum for Year 3 with engaging KS2 quizzes and practice materials. Build essential skills early.through introductory Science, History, and creative subjects.</p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -78,7 +80,8 @@
                     </div>
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 4</span></h2>
-                        <p>Advance your learning in Year 4 with our comprehensive KS2 practices and resources designed to solidify key concepts.</p>
+                        <p>Advance your learning in Year 4 with our comprehensive KS2 practices and resources 
+                        designed to deepen understanding and apply concepts across Science, History, and foundation subjects. </p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -128,7 +131,7 @@
                     </div>
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 5</span></h2>
-                        <p>Excel in Year 5 with targeted preparation, including practice that mirrors sats papers to build confidence and ability.</p>
+                        <p>Excel in Year 5 with targeted preparation, including practice that mirrors sats papers to build confidence and ability.This stage strengthens reasoning and exam-style problem solving ahead of Year 6. </p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -222,7 +225,8 @@
                     </div>
                     <div class="categories-element-title">
                         <h2 class="font-40"><span>ks2 - Year 6</span></h2>
-                        <p>Ensure success in Year 6 and beyond with our ultimate preparation tools. Access<a href="https://rurera.com/sats-preparation">year 6 sats papers</a>sats past papers, and full sats mock papers for complete readiness.</p>
+                        <p>Ensure success in Year 6 and beyond with our ultimate preparation tools. Access<a href="https://rurera.com/sats-preparation">year 6 sats papers</a>sats past papers, and full sats mock papers for complete readiness.These assessments measure national expectations and prepare pupils for secondary school.
+                        </p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 mt-20">
@@ -312,6 +316,7 @@
                         <p class="font-16 font-weight-normal text-gray mb-30">
                             Experience a new way of revising with our teacher-written KS2 quizzes designed for Years 3, 4, 5, and 6. Success in the KS2 curriculum is within reach. 
                             We bring education to life with Key Stage 2 Resources, KS2 quizzes, KS2 practices, KS2 assessments, and KS2 Tests.
+                            All content follows the UK National Curriculum and is written by experienced teachers.
                         </p>
                     </div>
                     <div class="section-title">
@@ -367,6 +372,7 @@
                         </p>
                         <p class="pt-20">
                            A strong performance here, supported by practice with previous sats papers ks2 and year 6 sats practice papers, builds the confidence and skills needed for success, including the Year 6 SATs.
+                           Progress during KS2 is assessed nationally through Year 6 SATs.
                         </p>
                     </div>
                 </div>
