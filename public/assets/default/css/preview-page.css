@@ -13,10 +13,6 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .preview-question-area .justify-content-center > .mt-50 {
     margin-top: 0 !important;
 }
-.preview-question-content[class*="col-lg-"] {
-    max-width: 860px;
-    width: 860px;
-}
 .preview-question-area .rurera-question-block.active {
     display: flex;
     flex-wrap: wrap;
