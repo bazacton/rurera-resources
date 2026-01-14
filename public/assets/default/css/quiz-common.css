@@ -84,6 +84,18 @@
   79) Learning-Content
 
    ========================================================= */
+
+/* Font Sizes Root Var Style Start */
+:root {
+  --fs-xs: 0.75rem;   /* 12px */
+  --fs-sm: 0.875rem;  /* 14px */
+  --fs-md: 1rem;      /* 16px */
+  --fs-lg: 1.25rem;   /* 20px */
+  --fs-xl: 1.5rem;    /* 24px */
+  --fs-xxl: 2rem;     /* 32px */
+}
+/* Font Sizes Root Var Style End */
+
 /* ======================================================== */
 /* [01] Columns Selection */
 /* --- START: Columns Selection --- */
