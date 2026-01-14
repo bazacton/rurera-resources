@@ -1221,6 +1221,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px; max-width: 100%; height: auto;}
 .image-top .field-holder label .lable-info {padding-left: 10px;}
 .rureraform-builder .lms-sorting-fields.image-top .field-holder label:has(img) {display: flex; flex-direction: column-reverse; text-indent: 10px;}/*for questions builder*/
+.lms-checkbox-img.image-top.rurera-in-cols.numeric-list-style .form-field label {padding-left: 45px;}
 /* --- END: Quistions Type numeric-list with image-top --- */
 /* ======================================================== */
 
