@@ -6,17 +6,7 @@ $test_type = isset( $test_type )? $test_type : '';
 $question_ids = isset( $question_ids )? $question_ids : array();
 $is_new = isset( $is_new )? $is_new : 'no';
 @endphp
-<link rel="stylesheet" href="/assets/default/learning_page/styles.css?var={{$rand_id}}"/>
-<link rel="stylesheet" href="/assets/default/css/panel.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 
-@push('styles_top')
-
-
-<style>
-    .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate{display:none !important;}
-</style>
-@endpush
 @section('content')
 
 <div class="learning-page type-{{$quiz->quiz_type}} type-sats" >
@@ -215,23 +205,12 @@ $is_new = isset( $is_new )? $is_new : 'no';
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/vendors/video/video.min.js"></script>
-<script src="/assets/default/vendors/video/youtube.min.js"></script>
-<script src="/assets/default/vendors/video/vimeo.js"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs"
-        data-app-key="v5gxvm7qj1ku9la"></script>
-<script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
 
-<script src="/assets/default/js/parts/video_player_helpers.min.js"></script>
 <script src="/assets/default/js/question-layout.js?var={{$rand_id}}"></script>
 <script src="/assets/learning_page/scripts.min.js?var={{$rand_id}}"></script>
 
-@if((!empty($isForumPage) and $isForumPage) or (!empty($isForumAnswersPage) and $isForumAnswersPage))
-<script src="/assets/learning_page/forum.min.js"></script>
-@endif
-@endpush
 <script>
     //init_question_functions();
 
@@ -251,3 +230,4 @@ $is_new = isset( $is_new )? $is_new : 'no';
         }, 1000);
     }
 </script>
+@endpush
