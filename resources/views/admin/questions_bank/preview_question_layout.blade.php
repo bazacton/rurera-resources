@@ -9,6 +9,7 @@ $rand_id = rand(999,99999);
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 <link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_id}}">
+<link rel="stylesheet" href="/assets/default/css/quiz-common.css?ver={{$rand_id}}">
 <link href="/assets/default/css/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
