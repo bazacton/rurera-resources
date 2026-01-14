@@ -11,7 +11,7 @@
             <div class="row">
 
                 <div class="col-12">
-                    <div class="section-title text-left mb-30">
+                    <div class="section-title text-left mb-15">
                         <h2 class="mt-0 font-22">Daily Quests</h2>
                     </div>
                 </div>
