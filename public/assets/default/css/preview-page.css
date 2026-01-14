@@ -27,6 +27,8 @@ body:has(.type-practice.type-sats.preview-question-area) {
     scrollbar-gutter: stable;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
 }
 /* Main scroll container */
 
@@ -34,6 +36,7 @@ body:has(.type-practice.type-sats.preview-question-area) {
 .preview-question-area .left-content::-webkit-scrollbar {
   width: 0px;
   height: 0px;
+  display: none;
 }
 
 .preview-question-area .left-content::-webkit-scrollbar-thumb {
