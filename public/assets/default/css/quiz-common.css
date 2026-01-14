@@ -1225,6 +1225,20 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 /* --- END: Quistions Type numeric-list with image-top --- */
 /* ======================================================== */
 
+/* Quistions Type rurera-in-row, numeric-list with image-left Start */
+.numeric-list-style.image-left.rurera-in-row .form-field label {
+    padding-left: 12px;
+    padding-right: 45px;
+}
+.numeric-list-style.image-left.rurera-in-row .form-field label img {
+    margin-right: auto;
+}
+.numeric-list-style.image-left.rurera-in-row .form-field:before {
+    right: 10px;
+    left: auto;
+}
+/* Quistions Type rurera-in-row, numeric-list with image-left End */
+
 /* ======================================================== */
 /* [47] Quistions Type Alphabet-list */
 /* --- START: Quistions Type Alphabet-list --- */
