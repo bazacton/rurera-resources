@@ -47,9 +47,6 @@ $rand_no = rand(99,9999);
 	</style>
 
 
-    @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
-        @include('admin.includes.preloading')
-    @endif
 </head>
 
 <body class="@if($isRtl) rtl @endif">
@@ -57,35 +54,14 @@ $rand_no = rand(99,9999);
         @yield('content')
     </div>
     <!-- Template JS File -->
-    <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-    <script src="/assets/default/vendors/moment.min.js"></script>
     <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="/assets/default/vendors/toast/jquery.toast.min.js"></script>
 
-    <script type="text/javascript" src="/assets/default/vendors/simplebar/simplebar.min.js"></script>
 
 
     @if(empty($justMobileApp) and checkShowCookieSecurityDialog())
         @include('web.default.includes.cookie-security')
     @endif
 
-
-    <script>
-        var deleteAlertTitle = '{{ trans('public.are_you_sure') }}';
-        var deleteAlertHint = '{{ trans('public.deleteAlertHint') }}';
-        var deleteAlertConfirm = '{{ trans('public.deleteAlertConfirm') }}';
-        var deleteAlertCancel = '{{ trans('public.cancel') }}';
-        var deleteAlertSuccess = '{{ trans('public.success') }}';
-        var deleteAlertFail = '{{ trans('public.fail') }}';
-        var deleteAlertFailHint = '{{ trans('public.deleteAlertFailHint') }}';
-        var deleteAlertSuccessHint = '{{ trans('public.deleteAlertSuccessHint') }}';
-        var forbiddenRequestToastTitleLang = '{{ trans('public.forbidden_request_toast_lang') }}';
-        var forbiddenRequestToastMsgLang = '{{ trans('public.forbidden_request_toast_msg_lang') }}';
-
-
-
-
-    </script>
 
     @if(session()->has('toast'))
         <script>
