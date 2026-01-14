@@ -1,52 +1,92 @@
 /* =========================================================
    QUIZ COMMON CSS – INDEX / TABLE OF CONTENTS
-   (Auto-generated from existing section comments)
+   (Auto-generated with explicit section START/END)
    =========================================================
 
   01) Columns Selection
   02) Question Templates
-  03) Dropdowns / Input
+  03) Dropdowns/input
   04) Image Draggable
   05) Draggable Input Fields
   06) Image Static
   07) Image Sizes
-  08) Image Sizes (Image > Column)
+  08) Image Sizes, When Image Size Greater Then Column Size
   09) Image Alignments
   10) Essay Textarea Field
   11) Input Text Field
   12) Input Number Arrows Hide
-  13) True / False
+  13) True False
   14) File Attachment
   15) Multi Response List
-  16) Quiz Radio Image
-  17) Image Static (Answers)
-  18) Image Top (rurera-in-cols)
+  16) Quiz Radio-Image
+  17) Image Static
+  18) image top rurera-in-cols
   19) Sortable List
   20) Question Label
-  21) Dropdown Styling
-  22) Matching Options
-  23) Image in Answers
-  24) Fill in the Blanks
-  25) Drag & Drop
-  26) Question Type – Start Page
-  27) Question Type – Start Page (Alternate)
-  28) Quiz Page – Start Counter
-  29) Quiz Page – Start Counter (Alternate)
-  30) Edit Questions Tabs (Admin)
+  21) Frontend-Field-error-Label
+  22) Draggable
+  23) Highlight Word/Sentence
+  24) Insert Into Sentence
+  25) Match
+  26) Audio Input
+  27) Audio Recording
+  28) Video Recording
+  29) Image Attachment
+  30) Image-Field
+  31) Full Image-Field
+  32) Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts
+  33) Spell Listing page
+  34) Words Flip Card Listing
+  35) Spells-Quiz-Info
+  36) Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play
+  37) Question Type Start Page
+  38) About Net Connection Modal
+  39) Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play
+  40) Field row
+  41) Field row with image
+  42) Field col
+  43) Quiz Top-Bar
+  44) Quistions Type Content Default
+  45) Quistions Type numeric-list
+  46) Quistions Type numeric-list with image-top
+  47) Quistions Type Alphabet-list
+  48) Inactivity Modal on quiz layout page
+  49) pagination Learn Practice
+  50) Question Number
+  51) Quiz prev-next-controls
+  52) Quiz Time-Bar
+  53) Questions Counts
+  54) Quiz Layout Input Holder
+  55) Quiz Page start-counter
+  56) Quiz Select Option
+  57) Separator_Line
+  58) Separator_Dotted_Line
+  59) Separator_None
+  60) Quiz Backend Columns Width
+  61) Fields Layout Options
+  62) Iframe
+  63) Form Fa-Selector
+  64) Dialog Fields
+  65) Questions Timeline
+  66) Hide Classes
+  67) Hide Classes
+  68) Review Submit Modal
+  69) Sats Summary
+  70) Questions Cloud
+  71) Cloud Left Top
+  72) Cloud Left Bottom
+  73) Cloud Left Center
+  74) Cloud Right Top
+  75) Cloud Right Bottom
+  76) Cloud Right Center
+  77) Finish Steps
+  78) Quests-List
+  79) Learning-Content
 
-========================================================= */
-
-/* Font Sizes Root Var Style Start */
-:root {
-  --fs-xs: 0.75rem;   /* 12px */
-  --fs-sm: 0.875rem;  /* 14px */
-  --fs-md: 1rem;      /* 16px */
-  --fs-lg: 1.25rem;   /* 20px */
-  --fs-xl: 1.5rem;    /* 24px */
-  --fs-xxl: 2rem;     /* 32px */
-}
-/* Font Sizes Root Var Style End */
-/* Columns Selection Style Start */
+   ========================================================= */
+/* ======================================================== */
+/* [01] Columns Selection */
+/* --- START: Columns Selection --- */
 .rureraform-admin-editor * {box-sizing: border-box;}
 .rureraform-form {position: relative;}
 .rureraform-elements {min-height: 60px;}
@@ -74,9 +114,12 @@
 .rureraform-col-12 {width: 100%;}
 .rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: 0; vertical-align: middle; outline: 1px dashed #f3f1f1; padding: 15px; }
 .rureraform-row.rureraform-element [class*="rureraform-col-"]:has(.rureraform-elements img) {vertical-align: top;}
-/* Columns Selection Style End */
+/* --- END: Columns Selection --- */
+/* ======================================================== */
 
-/* Question Templates Style Start */
+/* ======================================================== */
+/* [02] Question Templates */
+/* --- START: Question Templates --- */
 .rureraform-toolbar-list .question_templates {max-width: 480px; min-width: 480px; background-color: #fff; position: absolute; left: 10px; top: 100%; border: 1px solid #c7c7c7; z-index: 2; visibility: hidden; opacity: 0; display: flex; flex-wrap: wrap; gap: 0; padding: 0; margin: 0; transform: translateY(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.4); -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; -moz-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;}
 .rureraform-toolbar-list>li:hover .question_templates {visibility: visible; opacity: 1; transform: translateY(0); display: flex;}
 .rureraform-toolbar-list .question_templates li {flex: 0 0 25%; max-width: 25%; padding: 0; margin: 0; height: auto; line-height: normal; }
@@ -98,19 +141,29 @@
 		transform: scale(0.95, 1.05);
 	}
 }
-/* Question Templates Style End */
+/* --- END: Question Templates --- */
+/* ======================================================== */
 
-/* Dropdowns/input Style Start */
-/* Dropdowns/input Style End */
+/* ======================================================== */
+/* [03] Dropdowns/input */
+/* --- START: Dropdowns/input --- */
 
-/* Image Draggable Style Start */
+/* --- END: Dropdowns/input --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [04] Image Draggable */
+/* --- START: Image Draggable --- */
 /* .ui-draggable.ui-draggable-handle {cursor: all-scroll;border: 2px solid #ddd;border-bottom-width: 4px;line-height: normal;text-align: center;border-radius: 8px;margin: 3px 6px 0 0;color: #333;background-color: #fdfdfd;padding: 4px 25px 8px;width: auto;} */
 .draggable-items .ui-draggable:hover {background-color: #f8f8f8;}
 .rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
 div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
-/* Image Draggable Style End */
+/* --- END: Image Draggable --- */
+/* ======================================================== */
 
-/* Draggable Input Fields Style Start */
+/* ======================================================== */
+/* [05] Draggable Input Fields */
+/* --- START: Draggable Input Fields --- */
 input.droppable-field {
     background-color: #fcfcfc;
     border: 1px solid #ddd;
@@ -121,17 +174,28 @@ input.droppable-field {
 .quiz-group.draggable3:has(.droppable-field) {
     line-height: 46px;
 }
-/* Draggable Input Fields Style End */
+/* --- END: Draggable Input Fields --- */
+/* ======================================================== */
 
-/* Image Static Style Start */
+/* ======================================================== */
+/* [06] Image Static */
+/* --- START: Image Static --- */
 
-/*Image Sizes Style Start*/
+/* --- END: Image Static --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [07] Image Sizes */
+/* --- START: Image Sizes --- */
 .image-large img {max-width: 400px;}
 .image-medium img {max-width: 250px;}
 .image-small img {max-width: 200px;}
-/*Image Sizes Style End*/
+/* --- END: Image Sizes --- */
+/* ======================================================== */
 
-/*Image Sizes, When Image Size Greater Then Column Size Style Start*/
+/* ======================================================== */
+/* [08] Image Sizes, When Image Size Greater Then Column Size */
+/* --- START: Image Sizes, When Image Size Greater Then Column Size --- */
 .rureraform-col-5 .image-large img,
 .rureraform-col-4 .image-large img,
 .rureraform-col-3 .image-large img,
@@ -140,19 +204,23 @@ input.droppable-field {
 .rureraform-col-2 .image-medium img,
 .rureraform-col-3 .image-small img,
 .rureraform-col-2 .image-small img {max-width: 100%;}
-/*Image Sizes, When Image Size Greater Then Column Size Style End*/
+/* --- END: Image Sizes, When Image Size Greater Then Column Size --- */
+/* ======================================================== */
 
-/*Image Alignments Style Start*/
+/* ======================================================== */
+/* [09] Image Alignments */
+/* --- START: Image Alignments --- */
 .question-layout.align-items-start .block-holder.image-field {display: block; padding: 10px 10px; overflow: hidden; border-radius: 15px; margin: 0 0 30px; background: linear-gradient(9deg, #f7f7f7 0%, #ffffff 100%); box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, -4px 8px 8px rgba(0, 0, 0, 0.1), -8px 16px 16px rgba(0, 0, 0, 0.1), 0px -5px 15px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.25);}
 .question-layout.align-items-start .block-holder.image-field img {border-radius: 10px; box-sizing: border-box; background-position: 0 0, 0 100%; background-repeat: no-repeat; background-size: 100% 20px; background-image: linear-gradient(to right, #b3b3b3 0%, #fafafa 100%), linear-gradient(to right, #b3b3b3 0%, #fafafa 100%);}
 .image-left {text-align: left !important;}
 .image-right {text-align: right !important;}
 .image-center {text-align: center !important;}
-/*Image Alignments Style End*/
+/* --- END: Image Alignments --- */
+/* ======================================================== */
 
-/* Image Static Style End */
-
-/* Essay Textarea Field Style Start */
+/* ======================================================== */
+/* [10] Essay Textarea Field */
+/* --- START: Essay Textarea Field --- */
 .input-holder textarea {
     padding: 0; 
     border: 0; 
@@ -176,21 +244,31 @@ input.droppable-field {
 .input-holder textarea:focus:-moz-placeholder {color: transparent;}
 .input-holder textarea:focus::-moz-placeholder {color: transparent;}
 .input-holder textarea:focus:-ms-input-placeholder {color: transparent;}
-/* Essay Textarea Field Style End */
+/* --- END: Essay Textarea Field --- */
+/* ======================================================== */
 
-/* Input Text Field Style Start */
-.input-holder input.input-simple {border: 3px solid #000; height: 30px; min-height: 30px; color: #000; font-size: var(--fs-md); text-align: left; font-weight: 400; border-radius: 5px; display: inline-block; padding: 0 10px; width: 100%; max-width: 170px; margin-top: 0;}
+/* ======================================================== */
+/* [11] Input Text Field */
+/* --- START: Input Text Field --- */
+.input-holder input.input-simple {border: 3px solid #000; height: 30px; min-height: 30px; color: #000; font-size: 16px; text-align: left; font-weight: 400; border-radius: 5px; display: inline-block; padding: 0 10px; width: 100%; max-width: 170px; margin-top: 0;}
 .input-holder input[type="text"],
 .input-holder input.input-simple {border: 0; background-color: #fcfcfc;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
+/* --- END: Input Text Field --- */
+/* ======================================================== */
 
-/* Input Text Field Style End */
-/* Input Number Arrows Hide Style Start */
+/* ======================================================== */
+/* [12] Input Number Arrows Hide */
+/* --- START: Input Number Arrows Hide --- */
 .input-holder input[type="number"]::-webkit-outer-spin-button,
 .input-holder input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
 .input-holder input[type="number"] {-moz-appearance:textfield;}
-/* Input Number Arrows Hide Style End */
-/* True False Style Start */
+/* --- END: Input Number Arrows Hide --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [13] True False */
+/* --- START: True False --- */
 .form-box.inline-fields .lms-radio-select {margin-bottom: 0;}
 .lms-radio-select label {margin: 0; border: 2px solid #ddd; border-bottom-width: 4px; min-height: 50px; display: inline-flex; align-items: center; border-radius: 8px; cursor: pointer; overflow: hidden; position: relative; padding: 0 15px; -webkit-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;width: 100%;}
 .lms-radio-select.inline-fields .field-holder label {width: 100%;}
@@ -222,25 +300,29 @@ input.droppable-field {
 .lms-sorting-fields.inline-fields {margin: 0 -8px;}
 .lms-radio-select .field-holder {border: 0; padding: 0; height: auto;}
 .truefalse-element:has(.truefalse_question_label) .truefalse_quiz {display: block; margin-top: 10px;}
-/* True False Style End */
-
 /* True False Without Column Style Start, https://rurera.com/admin/questions_bank/34359/edit */
 .rureraform-element:has(.truefalse_quiz) {display: flex !important; align-items: center; flex-wrap: wrap;}
 .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {width: 62%; padding-right: 15px;}
 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 0 0 0 20px;}
 .question-result-layout .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left: 0;}
 .rureraform-builder .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 10px 0 0 0;}
-/* True False Without Column Style End */
+/* --- END: True False --- */
+/* ======================================================== */
 
-/* File Attachment Style Start */
+/* ======================================================== */
+/* [14] File Attachment */
+/* --- START: File Attachment --- */
 .rureraform-form-editor .input-group-prepend ~ input[type="text"] {margin-bottom: 0; border: 1px solid #ccc; height: 40px; padding: 0 10px; outline: none;}
 .rureraform-form-editor .input-group-append .input-group-text,
 .rureraform-form-editor .input-group-prepend .input-group-text{border-color: #ccc;} 
 .lms-quiz-create .fa, .far, .fas {font-family: "Font Awesome 5 Free" !important;}
 .lms-quiz-create .fa, .fas {font-weight: 900 !important;}
-/* File Attachment Style End */
+/* --- END: File Attachment --- */
+/* ======================================================== */
 
-/* Multi Response List Style Start */
+/* ======================================================== */
+/* [15] Multi Response List */
+/* --- START: Multi Response List --- */
 .form-box {position: relative;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
 .form-field label,
@@ -250,7 +332,7 @@ input.droppable-field {
 .form-field label:hover {border: 2px solid #c4c3c3;border-bottom-width: 4px;border-radius: 8px;}
 .row-fields.lms-checkbox-img label {padding: 5px;}
 .lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
-.lms-checkbox-img .form-field label:after {right: 24px; font-size: var(--fs-sm); height: auto; width: auto; line-height: normal; top: 50%; margin-top: -10px;}
+.lms-checkbox-img .form-field label:after {right: 24px; font-size: 14px; height: auto; width: auto; line-height: normal; top: 50%; margin-top: -10px;}
 .lms-checkbox-img .form-field input[type="checkbox"]:checked ~ label:after {-webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
 .lms-checkbox-img label img {border-radius: 3px; width: 35px;  height: 35px; object-fit: contain; margin-right: 10px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
 .lms-checkbox-img label {border-radius: 5px; display: flex; align-items: center;}
@@ -264,16 +346,24 @@ input.droppable-field {
     color: #73c238;
     border-color: #9ef95a;
 }
-/* Multi Response List Style End */
-/*Quiz Radio-Image Style Start*/
+/* --- END: Multi Response List --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [16] Quiz Radio-Image */
+/* --- START: Quiz Radio-Image --- */
 .lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
 .lms-radio-img .field-holder label img {object-fit: cover}
-/*Quiz Radio-Image Style End*/
-/* Image Static Style Start */
+/* --- END: Quiz Radio-Image --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [17] Image Static */
+/* --- START: Image Static --- */
 /*image top style*/
 .lms-checkbox-img.image-top .form-field label {flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-right: 15px; padding-left: 15px; color: #838383;}
 .lms-checkbox-img.image-top .form-field label:before {border-radius: 0; height: 20px; width: 20px; top:10px; margin: 0; right: 10px;}
-.lms-checkbox-img.image-top .form-field label:after {right: 13px; top: 9px; margin-top: 0; width: 15px; height: 15px; font-size: var(--fs-sm); }
+.lms-checkbox-img.image-top .form-field label:after {right: 13px; top: 9px; margin-top: 0; width: 15px; height: 15px; font-size: 14px; }
 .lms-checkbox-img.image-top label img {margin: 0 auto 10px; width: auto; max-width: 100%; height: 135px; object-fit: cover;}
 .lms-sorting-fields.image_large.image-top .field-holder img {width: 100%; object-fit: cover; max-height: 135px; border-radius: 3px;}
 .lms-sorting-fields.image_large.image-top .field-holder label {width: 100%;}
@@ -287,14 +377,20 @@ input.droppable-field {
 .lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:after {transform:translateY(-50%);}
 .image-right .field-holder label {display: flex; align-items: center; gap: 10px;}
 .image-right .field-holder label img {max-width: 50px; max-height: 50px; min-width: 50px; min-height: 50px; margin-left: auto;}
-/*image top rurera-in-cols style Start*/
+/* --- END: Image Static --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [18] image top rurera-in-cols */
+/* --- START: image top rurera-in-cols --- */
 .rurera-in-cols.image-top label,
 .rurera-in-cols.image-top label img {width: 100%;}
-/*image top rurera-in-cols style End*/
+/* --- END: image top rurera-in-cols --- */
+/* ======================================================== */
 
-/* Image Static Style End  */
-
-/* Sortable List Style Start */
+/* ======================================================== */
+/* [19] Sortable List */
+/* --- START: Sortable List --- */
 .lms-sorting-fields span {line-height: normal; display: block; font-size: 15px;}
 .lms-sorting-fields .field-holder {background-color: #fff; border: 2px solid #ddd; border-radius: 8px; border-bottom-width: 4px; padding:16px 15px; cursor: all-scroll; position: relative; height: auto; min-width: 130px; text-align: left;}
 .lms-sorting-fields.multi-lines {flex-direction: column; align-items: flex-start; margin-left: 0; margin-right: 0;}
@@ -313,9 +409,12 @@ input.droppable-field {
 .lms-sorting-fields {display: inline-block; width: 100%;}
 .question-textarea .table {overflow: hidden;}
 .lms-sorting-fields::-webkit-scrollbar {height: 5px}
-/* Sortable List Style End */
+/* --- END: Sortable List --- */
+/* ======================================================== */
 
-/* Question Label Style Start */
+/* ======================================================== */
+/* [20] Question Label */
+/* --- START: Question Label --- */
 .question-label {position: relative;}
 .question_label > span {background-color: rgb(200,210,237); padding: 10px 5px 10px 13px;  border-radius: 13px; display: inline-block;width: 100%; font-weight: 600; font-size:1rem;}
 .question_heading span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #2c2c2c;font-weight: 600;font-size: 1.5rem; outline: none;}
@@ -331,18 +430,24 @@ input.droppable-field {
 /*.quiz-group .rureraform-column-label {margin-bottom: 0;}*/
 .rureraform-label {font-weight: 600;}
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
-/* Question Label Style End */
+/* --- END: Question Label --- */
+/* ======================================================== */
 
-/* Frontend-Field-error-Label Style Start */
+/* ======================================================== */
+/* [21] Frontend-Field-error-Label */
+/* --- START: Frontend-Field-error-Label --- */
 label.frontend-field-error-label {
     border-color: #f95555;
 }
 .input-holder.frontend-field-error-input {
     border-color: #f95555;
 }
-/* Frontend-Field-error-Label Style End */
+/* --- END: Frontend-Field-error-Label --- */
+/* ======================================================== */
 
-/* Draggable Style Start */
+/* ======================================================== */
+/* [22] Draggable */
+/* --- START: Draggable --- */
 .draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 30px;}
 .draggable-items .ui-draggable {color: #666; height: auto !important; width: auto !important; margin: 0;}
 .draggable-items .ui-draggable span {color: #999; vertical-align: middle;}
@@ -353,17 +458,27 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .draggable-items img {height: 20px; width: 20px; margin-left: -10px;}
 .rureraform-form-editor .draggable-items .draggable-option {margin-top: 0; padding: 8px 20px 8px; display: block;}
 .rureraform-builder .draggable-items {display: flex; margin-top: 20px; padding-left: 0;}
-/* Draggable Style End */
+/* --- END: Draggable --- */
+/* ======================================================== */
 
-/* Highlight Word/Sentence Style Start */
-/* Highlight Word/Sentence Style End */
+/* ======================================================== */
+/* [23] Highlight Word/Sentence */
+/* --- START: Highlight Word/Sentence --- */
 
-/* Insert Into Sentence Style Start */
+/* --- END: Highlight Word/Sentence --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [24] Insert Into Sentence */
+/* --- START: Insert Into Sentence --- */
 .insert-into-sentense-holder p {word-wrap: break-word;}
 .insert-options {width: 100%; display: inline-block; margin: 0 0 30px;}
-/* Insert Into Sentence Style End */
+/* --- END: Insert Into Sentence --- */
+/* ======================================================== */
 
-/* Match Style Start */
+/* ======================================================== */
+/* [25] Match */
+/* --- START: Match --- */
 .match-question{width:100%;}
 .match-question .stems li,
 .match-question .options li {list-style: none; padding: 0.8rem 1rem; margin: 0 0 1rem; text-align: left; line-height: normal;}
@@ -379,9 +494,12 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .match-question .stems ol {padding: 0; margin: 0;}
 .image_small .match-question li img {height: 25px; width: 30px; margin-bottom: 0; object-fit: contain; border-radius: 5px; overflow: hidden;}
 .image-right .match-question li img {margin-left: auto;}
-/* Match Style End */
+/* --- END: Match --- */
+/* ======================================================== */
 
-/* Audio Input Style Start */
+/* ======================================================== */
+/* [26] Audio Input */
+/* --- START: Audio Input --- */
 #startRecord,
 #stopRecord {height: 15px; width: 15px; border: 0; background: none;}
 .btn-icon .fas {position: relative;}
@@ -389,25 +507,36 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .btn-icon .fa-play:before {background: url(/assets/default/svgs/play-button.svg) no-repeat center; background-size: 100%;}
 .btn-icon .fa-stop:before {background: url(/assets/default/svgs/pause-button.svg) no-repeat center; background-size: 100%;}
 #button-container {display: flex; align-items: center; gap: 0 10px;}
-/* Audio Input Style End */
+/* --- END: Audio Input --- */
+/* ======================================================== */
 
-/* Audio Recording Style Start */
+/* ======================================================== */
+/* [27] Audio Recording */
+/* --- START: Audio Recording --- */
 .audio-box {margin-bottom: 30px;}
 .audio-box .media {margin-bottom: 20px;}
 .audio-box img {width: 100%; object-fit: contain; border-radius: 8px;}
 .audio-controls {display: flex; align-items: center; justify-content: center; gap: 10px;}
 .audio-box button {padding: 8px 30px; height: auto; line-height: normal; border-radius: 30px; border: 1px solid blue; background-color: inherit; color: blue;}
 .audio-box button:hover {background-color: blue; color: #fff;}
-/* Audio Recording Style End */
-/* Video Recording Style Start */
+/* --- END: Audio Recording --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [28] Video Recording */
+/* --- START: Video Recording --- */
 .video-box {margin-bottom: 30px;}
 .video-box .media {margin-bottom: 20px;}
 .video-box img {width: 100%; object-fit: contain; border-radius: 8px;}
 .video-controls {display: flex; align-items: center; justify-content: center; gap: 10px;}
 .video-box button {padding: 8px 30px; height: auto; line-height: normal; border-radius: 30px; border: 1px solid blue; background-color: inherit; color: blue;}
 .video-box button:hover {background-color: blue; color: #fff;}
-/* Video Recording Style End */
-/* Image Attachment Style Start */
+/* --- END: Video Recording --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [29] Image Attachment */
+/* --- START: Image Attachment --- */
 .image-element-dragdropbox {border: 2px dashed #ccc; text-align: center; max-width: 350px; margin: 0 auto 30px; padding: 25px; border-radius: 5px;}
 .image-element-dragdropbox .image-drag img {height: 80px; width: 80px; object-fit: cover; background-color: #fcfcfc;}
 .image-element-dragdropbox .image-drag {display: block; margin: 0 0 15px;}
@@ -416,18 +545,30 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .image-dragdropbox span {display: block; margin: 0 0 10px;}
 .image-dragdropbox em {display: block; font-style: normal; margin: 0 0 10px;}
 .image-dragdropbox a {background-color: #e6e6e6; color: #555; font-weight: 500; text-decoration: none; padding: 10px 20px; display: inline-block; line-height: normal; border-radius: 3px;}
-/* Image Attachment Style End */
-/* Image-Field Style Start */
+/* --- END: Image Attachment --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [30] Image-Field */
+/* --- START: Image-Field --- */
 .image-field img {
     max-width: 100%;
 }
-/* Image-Field Style End */
-/* Full Image-Field Style Start */
+/* --- END: Image-Field --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [31] Full Image-Field */
+/* --- START: Full Image-Field --- */
 .image-full img {
     max-width: 100%;
 }
-/* Full Image-Field Style End */
-/* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style Start */
+/* --- END: Full Image-Field --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [32] Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts */
+/* --- START: Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts --- */
 .spell-tooltip-text h4 {margin-bottom: 5px;}
 .spell-quiz-page .quiz-questions-bar-holder {margin-left: 0;}
 .spell-quiz-page .quiz-questions-bar-holder .quiz-questions-bar {width: 100%;}
@@ -461,7 +602,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .quiz-form .question-multi-answers .answer-item input[type=radio] {visibility: hidden; display: none; transition: all .3s ease;}
 .quiz-form .question-multi-answers .answer-item input[type=radio]:checked+.answer-label {box-shadow: 0 10px 30px 0 rgba(67, 212, 119, .3); border: 3px solid var(--primary); background-color: #fff; transition: all .3s ease;}
 .quiz-form .question-multi-answers .answer-item input[type=radio]:checked+.answer-label .image-container:after {opacity: 1;}
-ul.quiz-result-logs {text-align: left; font-size: var(--fs-sm);}
+ul.quiz-result-logs {text-align: left; font-size: 14px;}
 ul.quiz-result-logs li {list-style: disc !important; margin: 6px 0 0 0;}
 .spell-question-area .question-layout-block form.question-fields {padding: 0;}
 .timebar {display: inline-block; position: relative; height: 3px; width: 100%; }
@@ -530,7 +671,12 @@ body .spell-question-area .question-label span {text-align: center;}
 .spell-quiz-page table[id*='word-search-'] {margin: 0 auto;}
 .spell-quiz-page table[id*='word-search-'] td {border-color: #d9d9d9;}
 .spells-quiz-from .word-cloud-box {max-height: 130px; min-height: 130px; width: 130px; list-style: none;}
-/*Spell Listing page Style Start*/
+/* --- END: Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [33] Spell Listing page */
+/* --- START: Spell Listing page --- */
 .spells.elevenplus-block {box-shadow: none;}
 .spells .table-bordered,
 .simple-table.table-bordered {border: 0; margin-bottom: 0;}
@@ -545,18 +691,22 @@ body .spell-question-area .question-label span {text-align: center;}
 .spells .dataTable thead tr th{color: #333;}
 .spells .dataTable thead tr th {padding-bottom: 20px; padding-top: 20px;}
 .spells .dataTable thead tr th:first-child {padding-left: 15px;}
-.spells td span {font-size: var(--fs-xs); font-weight: 600; color: #999;}
+.spells td span {font-size: 12px; font-weight: 600; color: #999;}
 .spells .table tbody td {position: relative;}
 .player-box {position: absolute; top: 100%; left: 0; background-color: #fff; z-index: 1; padding: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); opacity: 0;}
 .word-char {display: inline-flex; width: 40px; flex-direction: column; justify-content: center; align-items: center; border: 1px solid #ddd; position: relative; border-radius: 5px; margin: 5px 5px 5px 0; overflow: hidden; vertical-align: middle;}
 .word-char .play-btn {display: inline-block; height: 20px; width: 20px; position: relative; margin-right: 0;}
-.word-char > span {line-height: normal; padding: 5px 0; color: #000; width: 100%; text-align: center; font-size: var(--fs-sm);}
+.word-char > span {line-height: normal; padding: 5px 0; color: #000; width: 100%; text-align: center; font-size: 14px;}
 .word-char .pronounce-letter {background-color: #f6f6f6; font-weight: bold;}
 .word-char .pronounce-word {background-color: #ddd;}
 .spells .dataTable td a {font-weight: 600; font-size: 18px; text-decoration: none; }
 .spells-quiz-from.question-layout.row {margin-left: 0; margin-right: 0;}
-/*Spell Listing page Style End*/
-/*Words Flip Card Listing Style Start*/
+/* --- END: Spell Listing page --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [34] Words Flip Card Listing */
+/* --- START: Words Flip Card Listing --- */
 .words-list-holder {
     text-align: center;
     position: relative;
@@ -662,7 +812,7 @@ body .spell-question-area .question-label span {text-align: center;}
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-size: var(--fs-sm);
+    font-size: 14px;
     font-weight: 500;
 }
 .words-list-card .card-flip-btn img {
@@ -670,19 +820,24 @@ body .spell-question-area .question-label span {text-align: center;}
     width: 18px;
     object-fit: contain;
 }
-/*Words Flip Card Listing Style End*/
-/* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style End */
+/* --- END: Words Flip Card Listing --- */
+/* ======================================================== */
 
-/*Spells-Quiz-Info Style Start*/
+/* ======================================================== */
+/* [35] Spells-Quiz-Info */
+/* --- START: Spells-Quiz-Info --- */
 .spells-quiz-info ul {border: 1px solid #bac3ca; display: flex; gap: 15px; justify-content: space-between;}
 .spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
 .spells-quiz-info ul li:first-child {border-left: 0;}
 .spells-quiz-info ul li span {display: inline-block; font-weight: 600; font-size: 20px;}
 .spells-quiz-info ul li .nub-of-sec {color: #7caf40; }
 .spells-quiz-info ul li img {max-width: 100%; width: 20px; height: 20px; display: inline-block; vertical-align: middle; object-fit: contain;}
-/*Spells-Quiz-Info Style End*/
+/* --- END: Spells-Quiz-Info --- */
+/* ======================================================== */
 
-/*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style Start*/
+/* ======================================================== */
+/* [36] Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play */
+/* --- START: Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play --- */
 .questions-arithmetic-box {box-sizing: border-box; position: relative; min-height: 100px; padding: 0 15px;}
 .questions-arithmetic-box:before {content: ""; position: absolute; left: -37px; top: 0; width: 115%;height: 100%; pointer-events: none; background-color: grey; box-shadow: 0 0 8px rgba(0,0,0,0.2);}
 .questions-arithmetic-box input[type="text"] {border: 0; font-size: 35px; color: #fff; font-weight: 700; width: calc(100% - 300px); background-color: inherit; margin-left: 8px;     position: relative; z-index: 1;}
@@ -711,9 +866,12 @@ body .spell-question-area .question-label span {text-align: center;}
 body .learning-page .learning-content .learning-content-box {position: relative; z-index: 1;}
 body .learning-page.type-sats .learning-content .learning-content-box {border-color: transparent;}
 body .learning-page .learning-title {border-color: #ccc;}
-/*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style End*/
+/* --- END: Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play --- */
+/* ======================================================== */
 
-/*Question Type Start Page Style Start*/
+/* ======================================================== */
+/* [37] Question Type Start Page */
+/* --- START: Question Type Start Page --- */
 .learning-start-box .learning-content-box-icon {
     background-color: #fff;
     text-align: center;
@@ -743,9 +901,12 @@ body .learning-page .learning-title {border-color: #ccc;}
     font-size: 36px;
     color: var(--primary);
 }
-/*Question Type Start Page Style End*/
+/* --- END: Question Type Start Page --- */
+/* ======================================================== */
 
-/*About Net Connection Modal Style Start*/
+/* ======================================================== */
+/* [38] About Net Connection Modal */
+/* --- START: About Net Connection Modal --- */
 .about-net-connection .modal-body {
     padding: 00;
 }
@@ -806,9 +967,12 @@ body .learning-page .learning-title {border-color: #ccc;}
     background-color: inherit;
     box-shadow: none;
 }
-/*About Net Connection Modal Style End*/
+/* --- END: About Net Connection Modal --- */
+/* ======================================================== */
 
-/*Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play Style Start*/
+/* ======================================================== */
+/* [39] Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play */
+/* --- START: Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play --- */
 .questions-block-numbers {overflow: hidden;}
 .questions-block-numbers ul {border-right: 1px solid #f1f0f5; border-bottom: 1px solid #f1f0f5; margin: 0 -3px;}
 .questions-block-numbers li {flex-basis: 33%;}
@@ -816,8 +980,6 @@ body .learning-page .learning-title {border-color: #ccc;}
 .questions-block-numbers .delete span {color: #fe0000;}
 .questions-block-numbers .enter span {    color: #008001;}
 .questions-block-numbers span:active {background-color: var(--primary); color: #fff;}
-/*Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play Style End*/
-
 /**********************************
 Lms Table Style 
 **********************************/
@@ -852,7 +1014,12 @@ body table th b {font-weight: 500;}
 /**********************************
 Lms Table Style End
 **********************************/
-/*Field row style start*/ 
+/* --- END: Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [40] Field row */
+/* --- START: Field row --- */
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start;}
 .rurera-in-row .rurera-in-row {width: 100%;}
 .rurera-in-row .form-field label {
@@ -867,9 +1034,12 @@ Lms Table Style End
 .spells-quiz-from .lms-radio-select.rurera-in-row {align-items: center; justify-content: center; padding: 15px 15px 0;}
 .spells-quiz-from .rurera-in-row .field-holder,
 .spells-quiz-from .rurera-in-row .form-field {width: 20%; margin-bottom: 0; padding: 0;}
-/*Field row style end*/
+/* --- END: Field row --- */
+/* ======================================================== */
 
-/*Field row with image style start*/
+/* ======================================================== */
+/* [41] Field row with image */
+/* --- START: Field row with image --- */
 .lms-checkbox-img.rurera-in-row .field-holder,
 .lms-checkbox-img.rurera-in-row .form-field,
 .lms-radio-img.rurera-in-row .field-holder,
@@ -877,21 +1047,26 @@ Lms Table Style End
 .lms-radio-img.rurera-in-cols .field-holder,
 .rurera-in-cols.image-top .field-holder:has(label img),
 .rurera-in-row.image-top .field-holder:has(label img) {width: 31.555%;}
-/*Field row with image style End*/
+/* --- END: Field row with image --- */
+/* ======================================================== */
 
-/*Field col style start*/
+/* ======================================================== */
+/* [42] Field col */
+/* --- START: Field col --- */
 .rurera-in-cols {gap: 14px; display: flex; flex-wrap: wrap; flex-direction: column; }
 .rureraform-element .rureraform-col .rureraform-element {padding: 0; outline: none !important;}
 .rurera-in-cols .field-holder,
 .rurera-in-cols .form-field {width: 100%;}
 .rurera-in-cols:has(label img) {flex-direction: row;}
-/*Field col style end*/
-
 /**********************************
 Question Type Style Start 
 **********************************/
+/* --- END: Field col --- */
+/* ======================================================== */
 
-/*Quiz Top-Bar Style Start*/
+/* ======================================================== */
+/* [43] Quiz Top-Bar */
+/* --- START: Quiz Top-Bar --- */
 html:has(.quiz-topbar) {margin-left: calc(100vw - 100%);margin-right: 0;overflow: hidden;}
 body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stable both-edges;}
 .quiz-topbar, .read-quiz-info ~ .read-quiz-content .quiz-topbar {background-color: #4c5387; padding: 15px 0 15px; position: relative; z-index: 1; width: 100%; }
@@ -915,15 +1090,18 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .lms-quiz-section .quiz-topbar p,
 .learning-page .quiz-topbar p {font-weight: 600; font-size: 1.25rem; text-transform: uppercase;}
 .quiz-topbar .close-btn {min-width: 45px; min-height: 45px; border: 0;}
-/*Quiz Top-Bar Style End*/
+/* --- END: Quiz Top-Bar --- */
+/* ======================================================== */
 
-/*Quistions Type Content Default Style Start*/
+/* ======================================================== */
+/* [44] Quistions Type Content Default */
+/* --- START: Quistions Type Content Default --- */
 .learning-page .learning-page-content {background-color: #fff;}
-.question-review-required {font-size: var(--fs-xs); background-color: #fff0f0; line-height: normal; color: crimson; box-shadow: 0 0 0 1px rgba(240,38,38,0.2) inset; padding: 6px 15px; border-radius: 3px; display: inline-flex; white-space: nowrap; gap: 15px; margin-bottom: 10px;}
+.question-review-required {font-size: 12px; background-color: #fff0f0; line-height: normal; color: crimson; box-shadow: 0 0 0 1px rgba(240,38,38,0.2) inset; padding: 6px 15px; border-radius: 3px; display: inline-flex; white-space: nowrap; gap: 15px; margin-bottom: 10px;}
 .question-layout .question-review-required {margin-left: 10px;margin-bottom: 20px;}
-.questions-total-holder .question-dev-details {color: #adabab; font-size: var(--fs-sm);}
+.questions-total-holder .question-dev-details {color: #adabab; font-size: 14px;}
 .question-details li span {
-    font-size: var(--fs-sm);
+    font-size: 14px;
     width: calc(100% - 85px);
 }
 body mjx-container[display] {
@@ -990,9 +1168,12 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .correct-answers-block li {display: inline-block; line-height: normal; background-color: #e3ebfc; color: var(--blue); padding: 4px 10px; border-radius: 3px;}
 #question_properties .select2-container--default .select2-selection--multiple {padding-bottom: 4px;}
 #question_properties .select2-container--default.select2-container--focus .select2-selection--multiple {border-color: #95a0f4;}
-/*Quistions Type Content Default Style End*/
+/* --- END: Quistions Type Content Default --- */
+/* ======================================================== */
 
-/*Quistions Type numeric-list style Start*/
+/* ======================================================== */
+/* [45] Quistions Type numeric-list */
+/* --- START: Quistions Type numeric-list --- */
 .numeric-list-style {counter-reset: listStyle;}
 .numeric-list-style > .field-holder,
 .numeric-list-style > .form-field,
@@ -1015,9 +1196,12 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     color: #fff;
     background-color: #8cf041;
 }
-/*Quistions Type numeric-list style End*/
+/* --- END: Quistions Type numeric-list --- */
+/* ======================================================== */
 
-/*Quistions Type numeric-list with image-top style Start*/
+/* ======================================================== */
+/* [46] Quistions Type numeric-list with image-top */
+/* --- START: Quistions Type numeric-list with image-top --- */
 .numeric-list-style.image-top .field-holder:has(label img):before {top: 10px; margin-top: 0; background-color: #fff;}
 .lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 12px; right: 10px;}
 .numeric-list-style.image-top > .field-holder:has(label img) {padding: 0 0 15px;} 
@@ -1025,9 +1209,12 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px; max-width: 100%; height: auto;}
 .image-top .field-holder label .lable-info {padding-left: 10px;}
 .rureraform-builder .lms-sorting-fields.image-top .field-holder label:has(img) {display: flex; flex-direction: column-reverse; text-indent: 10px;}/*for questions builder*/
-/*Quistions Type numeric-list with image-top style End*/
+/* --- END: Quistions Type numeric-list with image-top --- */
+/* ======================================================== */
 
-/*Quistions Type Alphabet-list style Start*/
+/* ======================================================== */
+/* [47] Quistions Type Alphabet-list */
+/* --- START: Quistions Type Alphabet-list --- */
 .alphabet-list-style {counter-reset: listStyle;}
 .alphabet-list-style .field-holder,
 .alphabet-list-style .form-field {counter-increment: listStyle; position: relative; padding-left: 45px;}
@@ -1055,19 +1242,22 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-/*Quistions Type Alphabet-list style End*/
+/* --- END: Quistions Type Alphabet-list --- */
+/* ======================================================== */
 
-/*Inactivity Modal on quiz layout page start*/
+/* ======================================================== */
+/* [48] Inactivity Modal on quiz layout page */
+/* --- START: Inactivity Modal on quiz layout page --- */
 .activity-scores {margin: 0 0 30px;}
 .activity-scores li,
 .activity-info li {border-bottom: 1px solid #ddd; padding: 0 0 12px; margin-bottom: 12px; display: flex; justify-content: space-between;}
-.activity-info {display: flex; font-size: var(--fs-sm); margin-bottom: 30px; flex-direction: column;}
+.activity-info {display: flex; font-size: 14px; margin-bottom: 30px; flex-direction: column;}
 .activity-info .icon-box:empty {display: none;}
 .activity-actions,
 .inactivity-controls {display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; padding: 0;}
 .questions-block .inactivity-controls {margin-bottom: 25px;}
 .activity-actions a,
-.inactivity-controls a {padding: 6px 10px; border-radius: 3px; font-size: var(--fs-sm); text-align: center; max-width: 30%; flex: 0 0 30%; text-transform: capitalize;}
+.inactivity-controls a {padding: 6px 10px; border-radius: 3px; font-size: 14px; text-align: center; max-width: 30%; flex: 0 0 30%; text-transform: capitalize;}
 .activity-actions .exit-btn {padding: 0; color: var(--primary);}
 .activity-actions .continue-btn {color: #fff;}
 .activity-actions .finish-btn,
@@ -1077,9 +1267,12 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .question_inactivity_modal .modal-dialog {min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; overflow: auto;}
 .question_inactivity_modal .inactivity-controls .continue-btn,
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
-/*Inactivity Modal on quiz layout page end*/
+/* --- END: Inactivity Modal on quiz layout page --- */
+/* ======================================================== */
 
-/*pagination Learn Practice Style Start*/
+/* ======================================================== */
+/* [49] pagination Learn Practice */
+/* --- START: pagination Learn Practice --- */
 .quiz-pagination {position: relative; padding: 0 30px; margin: 0; max-width: 600px; }
 .quiz-pagination .swiper-container {margin-top: -8px; padding: 8px 2px 4px;}
 .quiz-pagination .swiper-button-next,
@@ -1094,7 +1287,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .quiz-pagination .swiper-container ul {margin: 0; padding: 0; display: flex; align-items: center; width: 100%; }
 .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 21px; max-width: 22.25px;}
 .quiz-pagination li a,
-.read-quiz-info ~ .read-quiz-content .quiz-pagination li a {border: 0 solid #ecefff; height: 26px; width: 26px; display: inline-flex; text-align: center; align-items: center; justify-content: center; font-size: var(--fs-sm); color: #fff; border-radius: 3px; position: relative; transition: all .5s ease; width: 100%;}
+.read-quiz-info ~ .read-quiz-content .quiz-pagination li a {border: 0 solid #ecefff; height: 26px; width: 26px; display: inline-flex; text-align: center; align-items: center; justify-content: center; font-size: 14px; color: #fff; border-radius: 3px; position: relative; transition: all .5s ease; width: 100%;}
 .quiz-pagination .incorrect a {color: red !important; box-shadow: 0 2px 0 0 red; border-radius: 0;}
 .quiz-pagination .correct a {color: green !important; box-shadow: 0 2px 0 0 green; border-radius: 0;}
 .quiz-pagination .in-review a {background-color: orange; border-color: #fbd796;}
@@ -1111,7 +1304,6 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .quiz-pagination .has-flag a:before {content: ""; position: absolute; top: -20px; height: 25px; width: 25px; left: 50%; transform: translateX(-50%); background: url(../../default/svgs/pagination-flag.svg) no-repeat; background-size: contain; margin-left: 3px; filter: invert(32%) sepia(11%) saturate(2395%) hue-rotate(195deg) brightness(92%) contrast(84%);}
 .assignment-questions-preview .quiz-pagination .swiper-container ul {flex-wrap: wrap;}
 .assignment-questions-preview .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 25px; max-width: 25px;}
-/* pagination Learn Practice Style End */
 /* Quiz Status Bar Style */
 .quiz-status-bar {margin: 0 0 40px 0; padding: 0;}
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
@@ -1162,13 +1354,13 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
     top: 50%;
     margin-top: -15px;
     text-align: center;
-    font-size: var(--fs-xs);
+    font-size: 12px;
     line-height: 30px;
     font-weight: 500;
     padding: 0 25px;
 }
 .quiz-corrects-incorrects {width: 95px; display: inline-block; vertical-align: middle; margin-right: -4px; position: relative; }
-.quiz-status-bar .coin-numbers {background-color: #e5e5e5; border-radius: 20px; margin-left: -2px; padding: 4px 5px; width: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--fs-xs); font-weight: 500; position: relative;}
+.quiz-status-bar .coin-numbers {background-color: #e5e5e5; border-radius: 20px; margin-left: -2px; padding: 4px 5px; width: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: 12px; font-weight: 500; position: relative;}
 .quiz-status-bar .coin-numbers img {max-width: 20px; }
 .quiz-corrects {min-width: 45px; height: 45px; border: 1px solid #ddd; top: 50%; left: 10px; display: inline-flex; position: absolute; align-items: center; justify-content: center; font-size: 30px; font-weight: 600; transform: translateY(-50%) rotate(-10deg); margin-top: -5px; padding: 5px; line-height: normal; z-index: 1; background-color: #fff;}
 .quiz-incorrects {background-color: #000; color: #fff; font-size: 30px; font-weight: 600; position: absolute; left: 27px; top: 50%; transform: translateY(-50%); min-width: 45px; text-align: center; min-height: 40px; margin-top: -5px; z-index: 0; box-shadow: 0 -2px 0 rgba(0,0,0,0.1); padding: 0 5px; display: inline-flex; align-items: center; justify-content: center;}
@@ -1201,13 +1393,21 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .show-hide-statusbar .card {
     background-color: inherit;
 }
-/* Quiz Status Bar Style End */
-/*Question Number Style Start*/
+/* --- END: pagination Learn Practice --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [50] Question Number */
+/* --- START: Question Number --- */
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
 .question-number-holder { margin-bottom: 20px; display: none;}
 .question-number-holder ~ .show-notifications { margin-bottom: 30px;}
-/*Question Number Style End*/
-/*Quiz prev-next-controls Style Start*/
+/* --- END: Question Number --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [51] Quiz prev-next-controls */
+/* --- START: Quiz prev-next-controls --- */
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
@@ -1271,9 +1471,12 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .question-submit-btn:hover,
 .spells-quiz-from .question-submit-btn:hover,
 .question-next-btn:hover {background-color: #bae798;  color: #f5ffec;}
-/*Quiz prev-next-controls Style End*/
+/* --- END: Quiz prev-next-controls --- */
+/* ======================================================== */
 
-/* Quiz Time-Bar Style Start */
+/* ======================================================== */
+/* [52] Quiz Time-Bar */
+/* --- START: Quiz Time-Bar --- */
 body:has(.quiz-time-bar) .learning-page .learning-content,
 body:has(.quiz-time-bar) .prev-next-controls,
 body:has(.type-practice),
@@ -1301,7 +1504,7 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
 }
 .quiz-time-bar .coin-numbers span {
     font-weight: 600;
-    font-size: var(--fs-md);
+    font-size: 16px;
 }
 .timer-wrap {
   display: flex;
@@ -1328,16 +1531,19 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
   text-align: center;
   border-radius: 4px; 
   font-weight: 500;
-  font-size: var(--fs-sm);
+  font-size: 14px;
   transition: transform 0.6s ease-out;
 }
 .colon {
   font-weight: bold;
   color: #000;
 }
-/* Quiz Time-Bar Style End */
+/* --- END: Quiz Time-Bar --- */
+/* ======================================================== */
 
-/* Questions Counts Style Start */
+/* ======================================================== */
+/* [53] Questions Counts */
+/* --- START: Questions Counts --- */
 .question-counts {
     display: flex;
     align-items: center;
@@ -1358,9 +1564,12 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     background-color: #000;
     border-radius: 3px;
 }
-/* Questions Counts Style End */
+/* --- END: Questions Counts --- */
+/* ======================================================== */
 
-/*Quiz Layout Input Holder Style Start*/
+/* ======================================================== */
+/* [54] Quiz Layout Input Holder */
+/* --- START: Quiz Layout Input Holder --- */
 .input-holder:empty {display: none;}
 .input-holder input.input-simple::-moz-placeholder,
 .rureraform-element input.input-simple::-moz-placeholder {color: #d1d1d1; opacity: 1;}
@@ -1443,48 +1652,64 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .textarea_lines textarea:focus:-ms-input-placeholder {color: transparent;}
 .dropdown-element:has(.input-holder),
 .rureraform-element:has(.input-holder) {line-height: 46px;}
-/*Quiz Layout Input Holder Style End*/
+/* --- END: Quiz Layout Input Holder --- */
+/* ======================================================== */
 
-/*Quiz Page start-counter style start*/
+/* ======================================================== */
+/* [55] Quiz Page start-counter */
+/* --- START: Quiz Page start-counter --- */
 .start-counter {background-color: #fff; position: fixed; height: 100%; width: 100%; left: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 50px; color: var(--primary);}
-/*Quiz Page start-counter style end*/
-
-/* Quiz File Attachment Style End*/
 .rureraform-element input[type="file"] {position: absolute;width: 0;height: 0;opacity: 0;}
 .choose-file-btn {background-color: var(--primary); color: #fff; padding: 12px 25px; border-radius: 5px; text-transform: capitalize; cursor: pointer;}
-/* Quiz File Attachment Style End */
-/* Quiz Select Option Style Start*/
+/* --- END: Quiz Page start-counter --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [56] Quiz Select Option */
+/* --- START: Quiz Select Option --- */
 .question-fields select,
 .question-result-layout .rureraform-element select,
 .dropdown-element select {background-image: url(/assets/default/svgs/arrow-down.svg); background-repeat: no-repeat; background-size: 15px; background-position: 94% center; border: 1px solid #eee; min-width: 150px; max-height: 30px; min-height: 30px; padding: 0 28px 0 10px; border-radius: 5px; line-height: normal; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .question-fields select, .dropdown-element select {margin: 0 6px;}
-/* Quiz Select Option Style End*/
+/* --- END: Quiz Select Option --- */
+/* ======================================================== */
 
-/* Separator_Line Style Start*/
+/* ======================================================== */
+/* [57] Separator_Line */
+/* --- START: Separator_Line --- */
 .separator_line .question-separator {
     border-bottom: 2px solid #ddd;
     height: 1px;
     width: 100%;
     display: inline-block;
 }
-/* Separator_Line Style End*/
+/* --- END: Separator_Line --- */
+/* ======================================================== */
 
-/* Separator_Dotted_Line Style Start*/
+/* ======================================================== */
+/* [58] Separator_Dotted_Line */
+/* --- START: Separator_Dotted_Line --- */
 .separator_dotted_line .question-separator {
     display: inline-block;
     height: 1px;
     width: 100%;
     border-bottom: 2px dotted #ddd;
 }
-/* Separator_Dotted_Line Style End*/
+/* --- END: Separator_Dotted_Line --- */
+/* ======================================================== */
 
-/* Separator_None Style Start*/
+/* ======================================================== */
+/* [59] Separator_None */
+/* --- START: Separator_None --- */
 .separator_none:has(.question-separator) {
     display: none !important;
 }
-/* Separator_None Style End*/
+/* --- END: Separator_None --- */
+/* ======================================================== */
 
-/* Quiz Backend Columns Width Style Start*/
+/* ======================================================== */
+/* [60] Quiz Backend Columns Width */
+/* --- START: Quiz Backend Columns Width --- */
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
     .tab-pane .row {
         position: relative;
@@ -1539,8 +1764,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         height: 100%;
     }
 }
-/* Quiz Backend Columns Width Style End*/
-
 /**********************************
 Question Type Style End 
 **********************************/
@@ -1548,8 +1771,12 @@ Question Type Style End
 /**************************************
 Questions Edit Page Fields style start
 **************************************/
+/* --- END: Quiz Backend Columns Width --- */
+/* ======================================================== */
 
-/*Fields Layout Options Style Start*/
+/* ======================================================== */
+/* [61] Fields Layout Options */
+/* --- START: Fields Layout Options --- */
 .fields-layout-options {display: none;}
 .quiz-form-control {width: 100%; float: left; position: relative;}
 .lms-quiz-create .rureraform-properties-item .field-options .text-field-options {padding: 10px;}
@@ -1557,21 +1784,27 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio] {margin: 0 0 10px;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control label {width: 100%;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio]:checked + label input[type="text"] {border-color: green;}
-/*Fields Layout Options Style End*/
+/* --- END: Fields Layout Options --- */
+/* ======================================================== */
 
-/*Iframe Style Start*/
+/* ======================================================== */
+/* [62] Iframe */
+/* --- START: Iframe --- */
 #rureraform-import-form, #rureraform-import-style-form,
 #rureraform-import-style-iframe {display: none;}
 #rureraform-preview-iframe {width: 100%;border: none;margin: 0;	display: block !important;}
-/*Iframe Style End*/
+/* --- END: Iframe --- */
+/* ======================================================== */
 
-/* Form Fa-Selector Style Start */
+/* ======================================================== */
+/* [63] Form Fa-Selector */
+/* --- START: Form Fa-Selector --- */
 .rureraform-fa-selector-overlay {position: fixed !important;z-index: 99988;top: 0px;left: 0px;height: 100%;	width: 100%;background-position: center center;	background: rgba(0,0,0,0.8);display: none;}
 .rureraform-fa-selector {position: fixed !important;box-sizing: border-box;z-index: 99989;top: 50%;	left: 50%;width: 925px;height: 600px;background: #ffffff;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);box-shadow: 3px 3px 20px -5px #000000;display: none;overflow: hidden;}
 .rureraform-fa-selector * {box-sizing: border-box;}
 .rureraform-fa-selector-inner {height: 600px;position: relative;box-sizing: border-box;}
 .rureraform-fa-selector-header {box-sizing: border-box;height: 72px;line-height: 72px;padding: 0 0 0 20px;text-align: left;border-bottom: 1px solid #ffffff;background: #ffffff;}
-.rureraform-fa-selector-header input[type="text"] {box-sizing: border-box;margin: 30px 0 0 10px;line-height: 32px;padding: 0;width: 50%;font-size: var(--fs-md);border-top: none;border-left: none;border-right: none;border-bottom: 2px solid #e0e0e0;outline: none;box-shadow: none;transition-duration: .3s;-webkit-transition-duration: .3s;}
+.rureraform-fa-selector-header input[type="text"] {box-sizing: border-box;margin: 30px 0 0 10px;line-height: 32px;padding: 0;width: 50%;font-size: 16px;border-top: none;border-left: none;border-right: none;border-bottom: 2px solid #e0e0e0;outline: none;box-shadow: none;transition-duration: .3s;-webkit-transition-duration: .3s;}
 .rureraform-fa-selector-header input[type="text"]:focus {border-bottom: 2px solid #26B99A;}
 .rureraform-fa-selector-header a {display: block;float: right;font-size: 20px;width: 52px;height: 52px;line-height: 52px;color: #202020;text-align: center;text-shadow: none !important;box-shadow: none !important;outline: none !important;border: none !important;margin: 0 !important;padding: 0 !important;transition-property: all;transition-timing-function: ease-in-out;transition-duration: 300ms;}
 .rureraform-fa-selector-header a:hover {color: #26B99A;}
@@ -1581,9 +1814,12 @@ Questions Edit Page Fields style start
 .rureraform-fa-selector-content::-webkit-scrollbar-thumb {background-color: #26B99A;}
 .rureraform-fa-selector-content span {float: left;width: 40px;text-align: center;height: 40px;line-height: 40px;color: #000;opacity: 0.5;font-size: 20px;cursor: pointer;}
 .rureraform-fa-selector-content span:hover {transform: scale(1);-webkit-transform: scale(1.3);opacity: 1;border-radius: 3px;background: #444444;color: #ffffff;overflow: hidden;transition-property: transform;transition-timing-function: ease-in-out;transition-duration: 300ms;}
-/* Form Fa-Selector Style End */
+/* --- END: Form Fa-Selector --- */
+/* ======================================================== */
 
-/* Dialog Fields Style Start*/
+/* ======================================================== */
+/* [64] Dialog Fields */
+/* --- START: Dialog Fields --- */
 .lms-quiz-create .rureraform-dialog-overlay {position: fixed !important; z-index: 99988; top: 0; left: 0; height: 100%;	width: 100%; background-position: center center; background: rgba(0,0,0,0.8); display: none;}
 .lms-quiz-create .rureraform-dialog {position: fixed !important; box-sizing: border-box; z-index: 99989; top: -3000px; left: 50%; width: 90%; height: 600px; background: #ffffff; transform:translate(-50%, -50%) scale(0); -webkit-transform:translate(-50%, -50%) scale(0); box-shadow: 3px 3px 20px -5px #000000; overflow: hidden; transition-property: transform; transition-timing-function: ease-in-out; transition-duration: 300ms;}
 .lms-quiz-create .rureraform-dialog * {box-sizing: border-box;}
@@ -1612,8 +1848,6 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-dialog-button-cancel:active, .rureraform-dialog-button-cancel:hover, .rureraform-dialog-button-cancel:focus {color: #222;	background: #c0c0c0;}
 .lms-quiz-create .rureraform-dialog-button label {line-height: 38px; display: inline-block;	margin-left: 8px; vertical-align: top; margin-bottom: 0; font-weight: 400;}
 .lms-quiz-create .rureraform-dialog-button i {line-height: 38px; vertical-align: top;}
-/* Dialog Fields Style End*/
-
 /*Edit Questions Tabs style Start admin/questions-generator/view-api-response*/
 :root {
     --blue: #007bff;
@@ -1622,7 +1856,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs {margin: 30px 0 0;}
 .edit-questions-tabs .main-content {padding: 30px 0 0; margin: 0 -15px;}
 .edit-questions-tabs .nav {border-bottom: 1px solid #ddd; gap: 10px 0; display: flex; align-items: center; justify-content: flex-start;}
-.edit-questions-tabs .nav .nav-link {border: 0; background-color: inherit; padding: 0 5px 5px; font-weight: 500; font-size: var(--fs-md); color: #ddd; border-bottom: 2px solid transparent; outline: none; transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s;}
+.edit-questions-tabs .nav .nav-link {border: 0; background-color: inherit; padding: 0 5px 5px; font-weight: 500; font-size: 16px; color: #ddd; border-bottom: 2px solid transparent; outline: none; transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s;}
 .edit-questions-tabs .nav .nav-link.active {color: var(--blue) !important; border-bottom-color: var(--blue) !important; z-index: 1;}
 .edit-questions-tabs .nav .nav-link:last-child {padding-right: 0;}
 .edit-questions-tabs .tab-content {padding: 30px 0 0;}
@@ -1702,12 +1936,12 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .question-types-colors .inner_text_questions_color:before {background-color: #6c757d;}
 .edit-questions-tabs .move-up-keyword {color: #fff; background-color: #4CAF50; border-radius: 3px; padding: 4px 8px;}
 .edit-questions-tabs .move-down-keyword {color: #fff; outline: none; background-color: #2196F3; border-radius: 3px; padding: 4px 8px;}
-.edit-questions-tabs .remove-keyword {color: #fff; outline: none; background-color: #f44336; border-radius: 3px; padding: 4px 8px; font-weight: 400; font-size: var(--fs-xs);}
+.edit-questions-tabs .remove-keyword {color: #fff; outline: none; background-color: #f44336; border-radius: 3px; padding: 4px 8px; font-weight: 400; font-size: 12px;}
 .edit-questions-tabs .move-up-keyword:hover,
 .edit-questions-tabs .move-down-keyword:hover {outline: none;}
 .edit-questions-tabs .keywords-section .add-keyword-btn {border: 0; background-color: inherit; height: auto; color: var(--primary); border-bottom: 1px solid var(--primary); line-height: normal; outline: none;}
 .edit-questions-tabs .create-question-fields-block {gap: 10px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 25px;}
-.edit-questions-tabs .create-question-fields-block button {border: 1px solid var(--primary); color: #fff; background-color: var(--primary); box-shadow: none; line-height: normal; font-size: var(--fs-sm); font-weight: 600;}
+.edit-questions-tabs .create-question-fields-block button {border: 1px solid var(--primary); color: #fff; background-color: var(--primary); box-shadow: none; line-height: normal; font-size: 14px; font-weight: 600;}
 .edit-questions-tabs .create-question-fields-block button:focus,
 .edit-questions-tabs .create-question-fields-block button:hover {color: #fff;}
 .edit-questions-tabs .create-question-fields-block button.btn-danger {background-color: #ffe7e5; border-color: #fd8279; color: #ff5d52;}
@@ -1727,8 +1961,12 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 mjx-container[jax="SVG"] > svg {
     scale: 1;
 }
+/* --- END: Dialog Fields --- */
+/* ======================================================== */
 
-/* Questions Timeline Style Start */
+/* ======================================================== */
+/* [65] Questions Timeline */
+/* --- START: Questions Timeline --- */
 .lms-card-timeline .card,
 .lms-card-timeline .card .card-body {
     padding: 0;
@@ -1747,7 +1985,7 @@ mjx-container[jax="SVG"] > svg {
     gap: 10px;
     color: #333;
     font-weight: 500;
-    font-size: var(--fs-sm);
+    font-size: 14px;
     flex-wrap: wrap;
 }
 .lms-card-timeline .lms-card-info .user-avatar {
@@ -1758,12 +1996,12 @@ mjx-container[jax="SVG"] > svg {
 }
 .lms-card-timeline .lms-card-info h5 b {
     font-weight: 400;
-    font-size: var(--fs-sm);
+    font-size: 14px;
     display: block;
     color: #999;
 }
 .lms-card-timeline .lms-card-info > b {
-    font-size: var(--fs-sm);
+    font-size: 14px;
     font-weight: 400;
     display: block;
     margin-top: 15px;
@@ -1780,7 +2018,7 @@ mjx-container[jax="SVG"] > svg {
 }
 .log_details .badge {
     margin: 0 !important;
-    font-size: var(--fs-sm);
+    font-size: 14px;
     color: #666;
     padding: 0;
 }
@@ -1802,7 +2040,6 @@ mjx-container[jax="SVG"] > svg {
 .lms-card-timeline li {border: 1px solid #ddd; background-color: #fff; padding: 15px; border-radius: 6px; display: flex; gap: 10px; width: 100%; margin-bottom: 15px; position: relative;}
 .lms-card-timeline li:before {content: ""; position: absolute; left: 35px; top: 100%; height: 18px; width: 2px; background-color: #ddd;}
 .lms-card-timeline li:last-child:before {display: none;}
-/* Questions Timeline Style End */
 /**************************************
 Questions Edit Page Fields style End
 **************************************/
@@ -1824,11 +2061,11 @@ body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin
 .api-questions-form .option-group {display: flex; gap: 10px; margin-top: 5px; align-items: center;}
 .api-questions-form .numeric-list-style .option-group {padding-left: 50px;}
 .api-questions-form .option-group input[type="text"] {flex: 1; border: 0; margin: 0; padding: 0; outline: none;}
-.api-questions-form .option-buttons button {cursor: pointer; padding: 5px 8px; font-size: var(--fs-sm); border: none; border-radius: 4px;}
+.api-questions-form .option-buttons button {cursor: pointer; padding: 5px 8px; font-size: 14px; border: none; border-radius: 4px;}
 .api-questions-form .submit-btn,
-.reject-btn {padding: 15px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; font-size: var(--fs-md); cursor: pointer; margin-top: 20px; height: auto; text-transform: capitalize;}
+.reject-btn {padding: 15px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px; height: auto; text-transform: capitalize;}
 .reject-btn {background-color: #dedede; color: #333;}
-.api-questions-form .add-option-btn {cursor: pointer; margin-top: 20px; display: block; width: 100%; border: 0; text-align:left; color: blue; background-color: inherit; text-decoration: underline; padding: 0; font-size: var(--fs-md);}
+.api-questions-form .add-option-btn {cursor: pointer; margin-top: 20px; display: block; width: 100%; border: 0; text-align:left; color: blue; background-color: inherit; text-decoration: underline; padding: 0; font-size: 16px;}
 .api-questions-form .remove-option-btn {background-color: #f44336; color: white;}
 .api-questions-form .move-up-btn, .api-questions-form .move-down-btn {background-color: #2196F3; color: white;}
 .question-general-block {border-bottom: 1px solid #ddd; padding-bottom: 30px; margin-bottom: 30px;}
@@ -1836,11 +2073,11 @@ body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin
 /* Styling for keyword */
 .question-keywors-block h3 {margin-bottom: 10px; color: #000;}
 .question-explain-block {background-color: #f9f9f9; padding: 35px; border-bottom: 1px solid #ddd; margin-bottom: 20px; position: relative; border-radius: 8px;}
-.keyword-item span {font-weight: bold; margin-top: 0; font-size: var(--fs-sm); width: auto; max-width: inherit; display: inline-block; outline: none;}
+.keyword-item span {font-weight: bold; margin-top: 0; font-size: 14px; width: auto; max-width: inherit; display: inline-block; outline: none;}
 .editable-content {line-height: normal; border-bottom: 1px solid var(--primary); color: var(--primary);}
 .keyword-item {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
 /* Styling for keyword buttons */
-.keyword-buttons button {border: none; border-radius: 4px; cursor: pointer; font-size: var(--fs-md); background: none; line-height: 16px; outline: none;}
+.keyword-buttons button {border: none; border-radius: 4px; cursor: pointer; font-size: 16px; background: none; line-height: 16px; outline: none;}
 .question-keywords-block .keyword-buttons {margin-left: auto; display: inline-flex; align-items: center; gap: 4px;}
 /* Up button questions-generator/view-api style */
 .move-up-keyword {background-color: #4CAF50; color: white; transition: background-color 0.2s ease;}
@@ -1859,26 +2096,38 @@ body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin
 .question-ai-block p {margin-bottom: 15px; font-size: 15px;}
 .question-ai-block a button {border: 0; background-color: inherit; cursor: pointer; display: inline-flex; align-items: center; border-bottom: 1px solid; line-height: 18px; padding: 0 0 2px; font-weight: 600; justify-content: center;}
 .question-ai-block .check-icon,
-.question-ai-block .info-icon {height: 18px; width: 18px; font-size: var(--fs-xs); display: inline-block; vertical-align: middle; line-height: 18px; border: 1px solid #333; border-radius: 100%; text-align: center; margin-right: 10px;}
+.question-ai-block .info-icon {height: 18px; width: 18px; font-size: 12px; display: inline-block; vertical-align: middle; line-height: 18px; border: 1px solid #333; border-radius: 100%; text-align: center; margin-right: 10px;}
 .question-ai-block .info-icon {margin: 0 0 0 10px;}
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
+/* --- END: Questions Timeline --- */
+/* ======================================================== */
 
-/*Hide Classes Style Start*/
+/* ======================================================== */
+/* [66] Hide Classes */
+/* --- START: Hide Classes --- */
 .rurera-hide,
 .hide {
     display: none !important;
 }
-/*Hide Classes Style Start*/
+/* --- END: Hide Classes --- */
+/* ======================================================== */
 
-/*Review Submit Modal Style Start*/
+/* ======================================================== */
+/* [67] Hide Classes */
+/* --- START: Hide Classes --- */
+
+/* --- END: Hide Classes --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [68] Review Submit Modal */
+/* --- START: Review Submit Modal --- */
 .review_submit .modal-content {
     text-align: center;
     padding: 30px 30px;
 }
-/*Review Submit Modal Style End*/
-
 /****************************************** 
 Inline-Style From Php Files Style Start
 ******************************************/
@@ -1920,10 +2169,15 @@ Question Result Page Style End
 /*****************************
 Quiz Check Answers Page Style Start
 *****************************/
-/*Sats Summary style start*/
+/* --- END: Review Submit Modal --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [69] Sats Summary */
+/* --- START: Sats Summary --- */
 .sats-summary {margin: 0 0 50px; background-color: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0;}
 .chart-summary-fields .sats-summary {margin-bottom: 30px;}
-.sats-summary label {display: block; margin: 0 0 6px; line-height: normal; font-size: var(--fs-sm);}
+.sats-summary label {display: block; margin: 0 0 6px; line-height: normal; font-size: 14px;}
 .sats-summary [class*="col-"] {padding: 15px; border-left: 1px solid #e1e1e1; background-color: #fff; display: inline-flex; flex-wrap: wrap;}
 .sats-summary .row {margin: 0;}
 .sats-summary [class*="col-"]:first-child {border-left: 0;}
@@ -1937,7 +2191,7 @@ Quiz Check Answers Page Style Start
 .chart-summary-fields .sats-summary .sats-summary-icon svg {width: 20px; height: 20px;}
 .chart-summary-fields .sats-summary .summary-text {width: calc(100% - 50px); text-align: left;}
 .chart-summary-fields .sats-summary [class*="col-"].bitcoin-box {background-color: initial;}
-.chart-summary-fields .sats-summary .score {color: #0d173b; font-size: var(--fs-md);}
+.chart-summary-fields .sats-summary .score {color: #0d173b; font-size: 16px;}
 .chart-summary-fields .sats-summary [class*="col-"].bg-none {background-color: inherit; padding: 20px 0;}
 .finish-steps .result-layout-summary .sats-summary [class*="col-"] {max-width: none; flex: 0 0 auto; width: auto; padding: 8px 15px;}
 .chart-filters .form-group:has(select) {margin-left: auto; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 0; }
@@ -1957,12 +2211,15 @@ Quiz Check Answers Page Style Start
 .summary-btns {display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 10px;}
 .summary-btns .summary-btn,
 .summary-btns a{border: 1px solid var(--primary); border-radius: 4px; color: var(--primary); font-weight: 500; padding: 12px 15px; display: inline-block; line-height: normal; min-width: 120px; text-align: center;}
-/*Sats Summary style end*/
 /*****************************
 Quiz Check Answers Page Style End
 *****************************/
+/* --- END: Sats Summary --- */
+/* ======================================================== */
 
-/* Questions Cloud Style Start */
+/* ======================================================== */
+/* [70] Questions Cloud */
+/* --- START: Questions Cloud --- */
 .avatar_images .rureraform-third img {
     width: 50px;
     height: auto;
@@ -2065,7 +2322,7 @@ Quiz Check Answers Page Style End
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: var(--fs-md);
+    font-size: 16px;
     max-height: fit-content;
     filter: drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 1px #ddd);
 }
@@ -2076,7 +2333,12 @@ Quiz Check Answers Page Style End
   width: var(--w,30px);
   background: inherit;
 }
-/* Cloud Left Top Start */
+/* --- END: Questions Cloud --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [71] Cloud Left Top */
+/* --- START: Cloud Left Top --- */
 .left_top .cloud_nner_text:before {
     right: 100%;
     clip-path: polygon(100% 0, 100% 100%, 0% 100%);
@@ -2084,9 +2346,12 @@ Quiz Check Answers Page Style End
     top: 5px;
     transform: rotate(25deg);
 }
-/* Cloud Left Top End */
+/* --- END: Cloud Left Top --- */
+/* ======================================================== */
 
-/* Cloud Left Bottom Start */
+/* ======================================================== */
+/* [72] Cloud Left Bottom */
+/* --- START: Cloud Left Bottom --- */
 .left_bottom .cloud_nner_text:before{
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   right: 100%;
@@ -2094,9 +2359,12 @@ Quiz Check Answers Page Style End
   transform: rotate(-10deg);
   margin-right: -10px;
 }
-/* Cloud Left Bottom End */
+/* --- END: Cloud Left Bottom --- */
+/* ======================================================== */
 
-/* Cloud Left Center Start */
+/* ======================================================== */
+/* [73] Cloud Left Center */
+/* --- START: Cloud Left Center --- */
 .left_middle .cloud_nner_text:before {
     clip-path: polygon(100% 0, 100% 100%, 0% 100%);
     top: 50%;
@@ -2105,9 +2373,12 @@ Quiz Check Answers Page Style End
     margin-right: -10px;
     transform: rotate(10deg);
 }
-/* Cloud Left Center End */
+/* --- END: Cloud Left Center --- */
+/* ======================================================== */
 
-/* Cloud Right Top Start */
+/* ======================================================== */
+/* [74] Cloud Right Top */
+/* --- START: Cloud Right Top --- */
 .right_top .cloud_nner_text:before {
     clip-path: polygon(0% 0, 0% 100%, 100% 100%);
     left: 100%;
@@ -2115,9 +2386,12 @@ Quiz Check Answers Page Style End
     top: 10px;
     transform: rotate(-20deg);
 }
-/* Cloud Right Top End */
+/* --- END: Cloud Right Top --- */
+/* ======================================================== */
 
-/* Cloud Right Bottom Start */
+/* ======================================================== */
+/* [75] Cloud Right Bottom */
+/* --- START: Cloud Right Bottom --- */
 .right_bottom .cloud_nner_text:before {
     left: 100%;
     clip-path: polygon(0% 0, 0% 100%, 100% 50%);
@@ -2125,9 +2399,12 @@ Quiz Check Answers Page Style End
     transform: rotate(12deg);
     margin-left: -10px;
 }
-/* Cloud Right Bottom End */
+/* --- END: Cloud Right Bottom --- */
+/* ======================================================== */
 
-/* Cloud Right Center Start */
+/* ======================================================== */
+/* [76] Cloud Right Center */
+/* --- START: Cloud Right Center --- */
 .right_middle .cloud_nner_text:before {
     left: 100%;
     clip-path: polygon(0% 0, 0% 100%, 100% 50%);
@@ -2135,13 +2412,11 @@ Quiz Check Answers Page Style End
     top: 50%;
     margin-top: -10px;
 }
-/* Cloud Right Center End */
-
 .avatar-label {
     border: 2px solid #ddd;
     padding: 5px 10px;
     display: block;
-    font-size: var(--fs-sm);
+    font-size: 14px;
     margin-top: 10px;
     border-radius: 8px;
     line-height: normal;
@@ -2186,7 +2461,7 @@ Quiz Check Answers Page Style End
     outline: none;
     color: #333;
     font-weight: bold;
-    font-size: var(--fs-sm);
+    font-size: 14px;
 }
 .page-prev-next-controls .scroll-btn:hover {
     background-color: #ffffff;
@@ -2265,7 +2540,7 @@ Quiz Check Answers Page Style End
     }
     .approve_question_form .btn-group-toggle .btn {
         padding: 8px 8px;
-        font-size: var(--fs-xs) !important;
+        font-size: 12px !important;
     }
     .approve_question_form .btn-group-toggle {
         margin-top: 0 !important;
@@ -2303,9 +2578,12 @@ Quiz Check Answers Page Style End
         min-width: 30px;
     }
 }
-/* Review Question Right Side Style End */
+/* --- END: Cloud Right Center --- */
+/* ======================================================== */
 
-/* Finish Steps Style Start */
+/* ======================================================== */
+/* [77] Finish Steps */
+/* --- START: Finish Steps --- */
 .question-area-block.quiz-first-question:has(.finish-steps) {
     margin: 0;
 }
@@ -2347,7 +2625,7 @@ Quiz Check Answers Page Style End
     background-color: #ffc800;
 }
 .status-box em {
-    font-size: var(--fs-xs);
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     color: #fff;
@@ -2449,7 +2727,12 @@ Quiz Check Answers Page Style End
     text-align: center;
     font-weight: 500;
 }
-/* Quests-List Style Start */
+/* --- END: Finish Steps --- */
+/* ======================================================== */
+
+/* ======================================================== */
+/* [78] Quests-List */
+/* --- START: Quests-List --- */
 .quests-list h3 {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 0 0 25px; }
 .quests-list li {margin-bottom: 35px;}
 .panel-right-sidebar h3 .view-all {color: var(--primary);}
@@ -2462,10 +2745,10 @@ Quiz Check Answers Page Style End
 .quests-item .item-text {width: calc(100% - 85px); text-align: left;}
 .quests-item .item-text .levels-progress.horizontal {margin-top: 0; margin-right: -6px; display: inline-block; width: calc(100% - 68px); vertical-align: middle; position: relative;}
 .quests-item .item-text .levels-progress.horizontal .progress-box {min-width: auto; max-width: none; border-radius: 50px 0 0 50px;}
-.progress-icon {background-color: #e5e5e5; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; gap: 2px; font-size: var(--fs-xs); font-weight: 500; margin-right: -4px; vertical-align: middle; padding: 6px 5px; width: 58px;}
+.progress-icon {background-color: #e5e5e5; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; gap: 2px; font-size: 12px; font-weight: 500; margin-right: -4px; vertical-align: middle; padding: 6px 5px; width: 58px;}
 .quests-list .progress-icon {width: 70px;}
 .progress-icon img {height: 20px; width: 20px; object-fit: contain;}
-.progress-icon.font-14 {font-size: var(--fs-sm); margin-right: 0;width: 65px;}
+.progress-icon.font-14 {font-size: 14px; margin-right: 0;width: 65px;}
 .quests-control a {background-color: var(--primary); color: #fff; padding: 8px 35px; border-radius: 5px; font-weight: 500;}
 .quests-learning .progress-icon {width: auto; margin-left: -2px;}
 .quests-learning .progress-icon.circle {border-radius: 100%; height: 45px; width: 45px;}
@@ -2480,7 +2763,7 @@ Quiz Check Answers Page Style End
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: var(--fs-sm);
+    font-size: 14px;
     font-weight: 600;
     color: #fff;
     user-select: none;
@@ -2505,7 +2788,6 @@ Quiz Check Answers Page Style End
     max-width: 850px;
     width: 850px;
 }
-/* Quests-List Style End */
 .rurera-streak {
     text-align: center;
     margin-top: auto;
@@ -2550,7 +2832,7 @@ Quiz Check Answers Page Style End
 .day-lable {
     display: block;
     line-height: normal;
-    font-size: var(--fs-sm);
+    font-size: 14px;
     font-weight: 500;
 }
 .streak-circle {
@@ -2567,15 +2849,18 @@ Quiz Check Answers Page Style End
     background-color: #ff9600;
 }
 .streak-content-box p {
-    font-size: var(--fs-sm);
+    font-size: 14px;
     font-weight: 500;
     color: #666;
     padding: 15px 0;
     margin: 0;
 }
-/* Finish Steps Style End */
+/* --- END: Quests-List --- */
+/* ======================================================== */
 
-/* Learning-Content Style Start */
+/* ======================================================== */
+/* [79] Learning-Content */
+/* --- START: Learning-Content --- */
 .learning-page .learning-page-content {
     position: relative;
     padding: 0 !important;
@@ -2586,4 +2871,5 @@ Quiz Check Answers Page Style End
     background-color: #fff;
     border-radius: 10px;
 }
-/* Learning-Content Style End */
+/* --- END: Learning-Content --- */
+/* ======================================================== */
