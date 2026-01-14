@@ -142,7 +142,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu.has-user-group {height: calc(100% - 455px);}
 .panel-sidebar .sidebar-menu.without-bottom-image {height: calc(100% - 298px);}
 @media (max-width:991px) {
-    .dashboard-banner-container {margin-top: 25px;}
+    .dashboard-banner-container {margin-top: 42px;}
     .conversations-list {height: 275px;}
     .panel-sidebar {width: 100%; background-color: #fff; top: 110%; padding: 40px 20px 0 !important; transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear;}
     .panel-sidebar .panel-sidebar-close {display: block;}
