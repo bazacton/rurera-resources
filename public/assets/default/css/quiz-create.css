@@ -340,8 +340,14 @@ input.droppable-field {
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* Question Label Style End */
 
-/* Separator Style Start */
-/* Separator Style End */
+/* Frontend-Field-error-Label Style Start */
+label.frontend-field-error-label {
+    border-color: #f95555;
+}
+.input-holder.frontend-field-error-input {
+    border-color: #f95555;
+}
+/* Frontend-Field-error-Label Style End */
 
 /* Draggable Style Start */
 .draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 30px;}
