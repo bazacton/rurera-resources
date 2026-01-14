@@ -10,7 +10,7 @@ $rand_no = rand(99,9999);
 
 <head>
     @include('web.default.includes.metas', ['question_play' => true])
-    <title>{{ $page_title ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
+    <title>Play Area</title>
 
     <!-- General CSS File -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
