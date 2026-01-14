@@ -9,7 +9,7 @@ $rand_no = rand(99,9999);
 @endphp
 
 <head>
-    @include('web.default.includes.metas')
+    @include('web.default.includes.metas', ['question_play' => true])
     <title>{{ $page_title ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
 
     <!-- General CSS File -->
