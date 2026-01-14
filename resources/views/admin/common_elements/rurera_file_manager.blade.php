@@ -585,8 +585,8 @@
               <div class="rfp-drag-handle" title="Drag to reorder">⋮⋮</div>
               <div class="rfp-thumb"><img alt="" src="${thumb}"></div>
               <div class="temp-files-area" style="min-width:0;">
-                <input type="text" class="upload_files_names" name="upload_files_names[]" value="${sanitizeText(file_name)}">.${sanitizeText(extension)}
-                <div class="rfp-title" title="${sanitizeText(f.name)}">${sanitizeText(f.name)}</div>
+
+                <div class="rfp-title" title="${sanitizeText(f.name)}"><input type="text" class="upload_files_names" name="upload_files_names[]" value="${sanitizeText(file_name)}">.${sanitizeText(extension)}</div>
                 <div class="rfp-sub">${sanitizeText(kind.toUpperCase())} • ${bytesToMb(f.size)} MB</div>
                 <span class="filename-feedback"></span>
                 <span class="suggested-filename"></span>
