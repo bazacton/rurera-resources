@@ -1248,13 +1248,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .alphabet-list-style .lms-radio-select.image-right .field-holder label:before {left: 40px;}
 .alphabet-list-style .active-option.form-field:before,
 .alphabet-list-style .form-field:hover:before,
-.form-field:has(input[type="checkbox"]:checked):before {
-    border-color: #73c238;
-    color: #fff;
-    background-color: #8cf041;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
+.form-field:has(input[type="checkbox"]:checked):before {border-color: #73c238; color: #fff; background-color: #8cf041; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
+.rurera-in-row.image-right.numeric-list-style .form-field label {justify-content: flex-start;}
 /* --- END: Quistions Type Alphabet-list --- */
 /* ======================================================== */
 
