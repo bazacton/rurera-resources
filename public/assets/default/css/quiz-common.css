@@ -1308,9 +1308,9 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .read-quiz-info ~ .read-quiz-content .timer-number {font-size: 34px; color: #f4fefd; margin-left: 20px; display: block; line-height: normal; }
 .quiz-pagination li a:hover,
 .quiz-pagination li.active a {border-color: #7c97f0; box-shadow: 0 0 0 2px #7c97f0;}
-.timer-number em {font-size: 24px; font-style: normal;}
+.timer-number em {font-size: var(--fs-xl); font-style: normal;}
 .quiz-timer {display: flex; align-items: center; max-width: 200px;}
-.quiz-timer .timer-number {min-width: 140px; font-size: 24px;}
+.quiz-timer .timer-number {min-width: 140px; font-size: var(--fs-xl);}
 .start-landing-page .quiz-timer .timer-number {color: #333; text-align: right;}
 .quiz-pagination .has-flag a {background-color: #fff; color: #4c5387; position: relative;}
 .quiz-pagination .has-flag a:before {content: ""; position: absolute; top: -20px; height: 25px; width: 25px; left: 50%; transform: translateX(-50%); background: url(../../default/svgs/pagination-flag.svg) no-repeat; background-size: contain; margin-left: 3px; filter: invert(32%) sepia(11%) saturate(2395%) hue-rotate(195deg) brightness(92%) contrast(84%);}
@@ -1848,7 +1848,7 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-dialog-content::-webkit-scrollbar-thumb {background-color: #26B99A;}
 .lms-quiz-create .rureraform-dialog-content hr {margin: 0 30px;}
 .lms-quiz-create .rureraform-dialog-loading {position: absolute;background: #fff;top: 52px;left: 0;z-index: 99982; width: 100%;bottom: 0;right: 0;}
-.lms-quiz-create .rureraform-dialog-loading i {position: absolute;z-index: 99983;top: 50%;left: 50%;font-size: 24px;margin-top: -12px;margin-left: -12px;}
+.lms-quiz-create .rureraform-dialog-loading i {position: absolute;z-index: 99983;top: 50%;left: 50%;font-size: var(--fs-xl);margin-top: -12px;margin-left: -12px;}
 .lms-quiz-create .rureraform-dialog-content-html {padding: 30px 50px;}
 .lms-quiz-create .rureraform-dialog-message {text-align: center;}
 .lms-quiz-create .rureraform-dialog-buttons {box-sizing: border-box; position: absolute; left: 0; right: 0; bottom: 0; height: auto; line-height: 48px; text-align: center; border-top: 1px solid #f0f0f0; padding: 12px 0;}
@@ -2064,7 +2064,7 @@ body:has(.api-questions-form) {font-family: Arial, sans-serif; background-color:
 body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin: 0 auto 20px; box-sizing: border-box;}
 .api-questions-form.container {background-color: #fff; padding: 50px 75px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 .api-questions-form .question-label {margin-bottom: 20px;}
-.api-questions-form h2 {margin-bottom: 20px; font-size: 24px; color: #333;}
+.api-questions-form h2 {margin-bottom: 20px; font-size: var(--fs-xl); color: #333;}
 .api-questions-form .question-number {margin: 0 0 15px;}
 .api-questions-form label {margin-top: 10px; display: block; font-weight: 600;}
 .api-questions-form textarea, .api-questions-form input[type="text"] {width: 100%; padding: 8px 0 0; margin-top: 5px; border: 0; border-bottom: 1px solid transparent; border-radius: 0; box-sizing: border-box; font-size: 15px; appearance: none; resize: none; outline: none; font-family: Arial, sans-serif; background-color: inherit;}
