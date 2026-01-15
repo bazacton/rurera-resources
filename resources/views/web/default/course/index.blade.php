@@ -162,8 +162,8 @@
                                                                         //$total_completion = 40;
                                                                             @endphp
 
-                                                                            <li>
-                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed font-14 font-weight-500" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
+                                                                            <li class="font-14 font-weight-500">
+                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
                                                                                     <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
                                                                                 <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
                                                                                     <ul>
