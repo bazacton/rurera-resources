@@ -3,13 +3,11 @@
 @section('content')
 <section class="content-section">
     <div class="page-section template-grid mx-w-100 p-0 news-section">
-        <div class="timestables-modes row">
-            <div class="col-12 col-lg-12 col-md-12">
-                <div class="section-title mb-15">
-                    <h2 class="font-22 mb-0">Time Tables</h2>
-                </div>
+        <div class="timestables-modes">
+            <div class="section-title mb-15">
+                <h2 class="font-22 mb-0">Time Tables</h2>
             </div>
-            <div class="col-12 col-lg-12 col-md-12 rurera-hide">
+            <div class="rurera-hide">
                 <ul class="tests-list type-list mb-30">
                     <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt="single"> Single Player</li>
                     <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt="multi"> Multi Player</li>
@@ -55,121 +53,105 @@
                 </div>
             </div>
             <div class="type-list-data single-player-data">
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a itemprop="url" href="/timestables-practice/freedom-mode">
-                        <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Freedom mode
-                                </h3>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
+                <a itemprop="url" href="/timestables-practice/freedom-mode">
+                    <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Freedom mode
+                            </h3>
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a href="/timestables-practice/powerup-mode">
-                        <div class="grid-card timestables-mode-data">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Power-up Heatmap
-                                </h3>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a href="/timestables-practice/trophy-mode">
-                        <div class="grid-card timestables-mode-data">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Trophy Mode
-                                </h3>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
+                        <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
+                    </div>
+                </a>
+                <a href="/timestables-practice/powerup-mode">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Power-up Heatmap
+                            </h3>
                         </div>
-                    </a>
-                </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
+                    </div>
+                </a>
+                <a href="/timestables-practice/trophy-mode">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Trophy Mode
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
+                    </div>
+                </a>
+                <a href="/timestables-practice/treasure-mission">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Treasure Mission
+                            </h3>
+                            <div class="coin-counts">
+                            <strong>
+                                <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="heart-red">
+                                {{$authUser->user_life_lines}}
+                            </strong>
+                            </div>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
+                        
+                    </div>
+                </a>
+                <a href="/timestables-practice/showdown-mode">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Showdown
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
+                    </div>
+                </a>
+                <a href="/timestables-practice/heat-map">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Heat Map
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
+                    </div>
+                </a>
+                <a href="/panel/analytics">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Analytics
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a href="/timestables-practice/treasure-mission">
-                        <div class="grid-card timestables-mode-data">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Treasure Mission
-                                </h3>
-                                <div class="coin-counts">
-                                <strong>
-                                    <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="heart-red">
-                                    {{$authUser->user_life_lines}}
-                                </strong>
-                                </div>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
-                            
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a href="/timestables-practice/showdown-mode">
-                        <div class="grid-card timestables-mode-data">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Showdown
-                                </h3>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a href="/timestables-practice/heat-map">
-                        <div class="grid-card timestables-mode-data">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Heat Map
-                                </h3>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-12 col-lg-12">
-                    <a href="/panel/analytics">
-                        <div class="grid-card timestables-mode-data">
-                            <div class="text-holder">
-                                <h3 class="font-16 font-weight-bold">
-                                    Analytics
-                                </h3>
-                            </div>
-                            <div class="img-holder">
-                                <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                            </div>
-                            <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
-
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="type-list-data multi-player-data rurera-hide">
