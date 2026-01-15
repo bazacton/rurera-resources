@@ -163,14 +163,14 @@
                                                                             @endphp
 
                                                                             <li>
-                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed font-16 font-weight-500" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
+                                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed font-14 font-weight-500" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
                                                                                     <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
                                                                                 <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
                                                                                     <ul>
-                                                                                        <li><a href="" class="course-learn-btn font-weight-500 font-14" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
-                                                                                        <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn font-14 font-weight-500">Practice Skills</a></li>
-                                                                                        <li><a href="javascript:;" class="course-progress-btn font-weight-500 font-14">Skill Summary</a></li>
-                                                                                        <li><a href="javascript:;" class="debug-details-btn font-weight-500 font-14">Debug Details</a>
+                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
+                                                                                        <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
+                                                                                        <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
+                                                                                        <li><a href="javascript:;" class="debug-details-btn">Debug Details</a>
                                                                                             <div class="debug-details rurera-hide">
                                                                                                 Part ID: {{$topicPartObj->id}}<br>
                                                                                                 Quiz ID: {{$quizObj->id}}<br>
