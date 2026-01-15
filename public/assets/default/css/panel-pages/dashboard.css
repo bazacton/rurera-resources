@@ -720,13 +720,23 @@ Right SideBar Style Start
     z-index: 1;
     width: 350px;
     background-color: #fff;
-    border: 2px solid #ddd;
     border-radius: 5px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
+    margin-top: 15px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     filter: drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd);
+}
+.streak-dropdown:hover .streak-dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
 }
 .streak-dropdown-content:before {
     content: "";
