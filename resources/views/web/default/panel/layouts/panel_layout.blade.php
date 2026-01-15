@@ -379,7 +379,7 @@
 
                                     @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
                                         <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
-                                            <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
+                                            <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
                                                 Daily Quests
                                                 <a href="/quests" class="view-all font-weight-bold font-16">View All</a>
                                             </h3>
