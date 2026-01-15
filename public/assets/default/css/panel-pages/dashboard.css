@@ -811,6 +811,20 @@ Right SideBar Style Start
     line-height: normal;
     padding-top: 10px;
 }
+.streak-dropdown-content .btn-holder {
+    padding: 0 20px 20px;
+}
+button.view-btn {
+    width:100%;
+    border:none;
+    border-radius:14px;
+    padding:14px;
+    font-weight:800;
+    background:var(--blue);
+    color:#fff;
+    cursor:pointer;
+    box-shadow: 0 4px 0px rgba(42,166,255,.3);
+}
 /* Streak-dropdown style End */
 /* Store Stats Style Start */
 .store-stats ul {margin: 0; padding: 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 15px;}
