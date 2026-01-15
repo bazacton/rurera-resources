@@ -149,7 +149,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                                     </ul>
                                                                 </div>
 
-                                                                @if(auth()->check() && (auth()->user()->isAdminRole() || )auth()->user()->id == 1794)
+                                                                @if(auth()->check() && (auth()->user()->isAdminRole() || auth()->user()->id == 1794))
                                                                 <div class="review-question-holder">
                                                                     <div class="question-right-header">
                                                                         <h3>Question Review</h3>
