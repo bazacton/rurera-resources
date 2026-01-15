@@ -26,7 +26,7 @@
                                 @if( !empty( $books ))
                                 @foreach( $books as $book_category => $category_books)
                                 <div class="col-lg-12">
-                                    <h3 class="mb-10 font-22">{{$book_category}}</h3>
+                                    <h2 class="mb-10 font-22">{{$book_category}}</h2>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="search-block">
