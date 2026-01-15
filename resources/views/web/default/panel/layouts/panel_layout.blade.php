@@ -81,10 +81,10 @@
                                                 <li>
                                                     <div class="store-item">
                                                         <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                        <span class="item-label">
-                                                    Current Balance
-                                                    <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
-                                                </span>
+                                                        <h3 class="item-label font-16 font-weight-bold">
+                                                            Current Balance
+                                                            <span class="iteme-numbers font-14 font-weight-500">{{$authUser->getRewardPoints()}}</span>
+                                                        </h3>
                                                     </div>
                                                 </li>
                                             </ul>
