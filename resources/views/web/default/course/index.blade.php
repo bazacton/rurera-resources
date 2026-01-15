@@ -66,7 +66,7 @@
                         </div>
                     </section>
                     <section class="lms-chapter-section">
-                        <div class="col-12 lms-chapter-area">
+                        <div class="lms-chapter-area">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="chapter-nav mb-30 mt-15">
