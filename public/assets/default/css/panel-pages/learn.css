@@ -175,9 +175,15 @@ Sub Pages Style
 .categories-card.medium .categories-icon svg {width: 40px; height: 40px;}
 .categories-card.medium .categories-text {width: calc(100% - 70px); padding-left: 25px; line-height: normal; position: relative;}
 .categories-card.medium .categories-text .categories-title {padding: 0; text-align: left; margin: 0 0 12px; }
-.categories-card.medium .categories-text .levels-progress.horizontal {position: relative; margin: 0 0 12px; width: 100%;}
+.categories-card.medium .categories-text .levels-progress.horizontal {position: relative; margin: 12px 0 0; width: 100%;}
 .categories-card.medium .categories-text .levels-progress.horizontal .progress-box {width: 100%; max-width: 100%; background-color: #e5e5e5; height: 14px; }
-.categories-card.medium .progress-numbers {position: absolute; right: 0; top: -30px; font-weight: 400; }
+.categories-card.medium .progress-numbers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+}
 .categories-card.medium .subject-info {display: block; text-align: left;}
 .categories-card.medium .learning-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-weight: 600; text-transform: uppercase; color: #666;}
 .categories-card.medium:nth-child(even) {background-color: #fff;}
