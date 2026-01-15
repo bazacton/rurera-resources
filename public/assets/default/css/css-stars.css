@@ -51,7 +51,6 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {-moz-column-cou
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li {-moz-column-break-inside: avoid; break-inside: avoid; margin-bottom: 14px; list-style: none;}
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-holder) {padding-right: 55px;}
 .lms-chapter-area .lms-chapter-ul >li .lms-chapter-ul-outer > ul > li:before {content: counter(counter); counter-increment: counter; position: absolute; left: 0; top: 0;}
-body .lms-chapter-area .lms-chapter-ul >li ul > li a {vertical-align: top; padding-left: 10px; min-width: auto;}
 .lms-chapter-area .lms-chapter-ul >li ul > li a img {width: 15px; height: 15px; object-fit: contain; vertical-align: middle; display: inline-block; margin-left: 5px;}
 .lms-chapter-area .lms-chapter-ul >li{break-inside: avoid;}
 .lms-chapter-area .lms-chapter-ul >li .lms-chapter-ul-outer > ul > li {
@@ -70,7 +69,7 @@ body .lms-chapter-area .lms-chapter-ul >li ul > li a {vertical-align: top; paddi
     font-weight: 500;
     display: inline-block;
     min-width: 100px;
-    color: #999;
+    color: var(--primary);
 }
 .lms-chapter-area .lms-chapter-ul .lms-chapter-title{margin-bottom: 10px;}
 .lms-chapter-area .lms-chapter-ul .lms-chapter-title strong{
@@ -88,11 +87,6 @@ body .lms-chapter-area .lms-chapter-ul >li ul > li a {vertical-align: top; paddi
     display: flex;
     align-items: center;
     gap: 0 15px;
-}
-body .lms-chapter-area .lms-chapter-ul-outer li ul li a {
-    padding-left: 5px;
-    font-weight: 500;
-    color: var(--primary);
 }
 body .lms-chapter-area .lms-chapter-ul-outer li ul li {
     list-style: none;
