@@ -167,7 +167,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-3 {fill: #ffab00 !important;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-1,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-3 {fill: none !important; stroke: #ffab00 !important;}
-.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {width: 20px; height: 20px; margin-bottom: 0; margin-right: 20px !important;}
+.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {width: 22px; height: 22px; margin-bottom: 0; margin-right: 20px !important;}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon .cls-3,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg * {fill: #fff}
@@ -176,7 +176,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon svg {min-width: 100%; width: 100%; max-width: 100%; min-height: 100%; height: 100%; max-height: 100%; color: var(--secondary);}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-strock svg,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-strock svg * {stroke: #fff;}
-.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon img {height: 20px; width: 20px;}
+.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon img {height: 22px; width: 22px;}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon .img-circle {border-radius: 100%;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-item-icon svg path {stroke: #ffab00; fill: #ffab00;}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse {position: relative; padding: 10px 0 10px 34px;}
