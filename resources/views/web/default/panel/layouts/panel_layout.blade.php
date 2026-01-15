@@ -389,42 +389,40 @@
                                 @if(auth()->user()->isUser() && !request()->is('quests'))
 
                                 @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
-                                    <div class="col-12 col-lg-12 mb-30">
-                                        <div class="quests-list panel-border bg-white rounded-sm p-20">
-                                            <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
-                                                Daily Quests
-                                                <a href="/quests" class="view-all font-weight-bold font-16">View All</a>
-                                            </h3>
-                                            <ul>
-                                                @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
-                                                    @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
+                                    <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
+                                        <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
+                                            Daily Quests
+                                            <a href="/quests" class="view-all font-weight-bold font-16">View All</a>
+                                        </h3>
+                                        <ul>
+                                            @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
+                                                @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
 
-                                                    $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
-                                                    $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
-                                                    @endphp
-                                                    <li>
-                                                        <div class="quests-item">
-                                                            <div class="icon-box">
-                                                                <img src="{{$quest_icon}}" alt="quests image">
-                                                            </div>
-                                                            <div class="item-text">
-                                                                <h5>{{$questObj->title}}</h5>
-                                                                <div class="levels-progress horizontal">
-                                                                    <span class="progress-box">
-                                                                        <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
-                                                                    </span>
-                                                                    <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
-                                                                </div>
-                                                                <span class="progress-icon">
-                                                                    <img src="/assets/default/img/quests-coin.png" alt="">
-                                                                    +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
-                                                                </span>
-                                                            </div>
+                                                $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
+                                                $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
+                                                @endphp
+                                                <li>
+                                                    <div class="quests-item">
+                                                        <div class="icon-box">
+                                                            <img src="{{$quest_icon}}" alt="quests image">
                                                         </div>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
+                                                        <div class="item-text">
+                                                            <h5>{{$questObj->title}}</h5>
+                                                            <div class="levels-progress horizontal">
+                                                                <span class="progress-box">
+                                                                    <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
+                                                                </span>
+                                                                <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
+                                                            </div>
+                                                            <span class="progress-icon">
+                                                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                                                +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            @endforeach
+                                        </ul>
                                     </div>
                                 @endif	
                             @endif	
