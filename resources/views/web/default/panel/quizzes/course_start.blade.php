@@ -103,7 +103,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                             <span class="total-earned-coins">0</span>
                         </span>
-                        <span class="questions-total-holder d-block mb-30">( 10/{{$total_questions}} Questions )</span>
+                        <span class="questions-total-holder d-block mb-30">( 2/{{$total_questions}} Questions )</span>
                     </div>
 
 
