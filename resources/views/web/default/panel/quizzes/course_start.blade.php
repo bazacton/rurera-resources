@@ -81,15 +81,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                            <div class="topbar-right">
-                                <div class="quiz-pagination">
-                                </div>
-                                <div class="quiz-timer">
-                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
