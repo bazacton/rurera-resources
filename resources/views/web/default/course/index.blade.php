@@ -165,11 +165,14 @@
                                                                             <li>
                                                                                 <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} - {{$topicPartObj->id}} - Q{{isset($quizObj->id)? $quizObj->id : '-'}} ---- {{$user_difficulty_level}} -- Acr ({{$topic_accuracy}}) -- Com {{$total_completion}}
                                                                                     <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
-                                                                                <ul id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
-                                                                                    <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
-                                                                                    <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
-                                                                                    <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
-                                                                                </ul>
+                                                                                <div class="collapse" data-parent="#accordion">
+                                                                                    <ul id="collapse{{$topicPartObj->id}}">
+                                                                                        <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
+                                                                                        <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
+                                                                                        <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                
                                                                                 <div class="percent-holder">
                                                                                     <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
                                                                                         <div class="circle_inner">
