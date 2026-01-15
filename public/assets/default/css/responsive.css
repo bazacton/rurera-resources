@@ -1683,7 +1683,6 @@ Lms Responsive Style Start
     .student-rank span img {width: 12px; height: 12px;}
     .user-profile-icons ul {gap: 2px; justify-content: space-between;}
     .user-profile-icons li strong {padding: 4px 5px;}
-    body .panel-content .container .row [class*="col-"].panel-right-sidebar {padding-left: 0; padding-right: 0;}
     .analytics-header .header-text > span {font-size: 16px !important;}
     .analytics-header .header-text,
     #analyticsAccordion .card .card-header {padding-left: 15px; padding-right: 0;}
