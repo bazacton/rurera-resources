@@ -55,12 +55,14 @@
                     </div>
                 </div>
                 <div class="streak-society">
-                    <div class="icon-box">
-                        <span>🔒</span>
-                    </div>
-                    <div class="text-box">
-                        <h5>Streak Society</h5>
-                        <p>Reach a 7 day streak to unlock exclusive rewards.</p>
+                    <div class="society-content">
+                        <div class="icon-box">
+                            <span>🔒</span>
+                        </div>
+                        <div class="text-box">
+                            <h5>Streak Society</h5>
+                            <p>Reach a 7 day streak to unlock exclusive rewards.</p>
+                        </div>
                     </div>
                 </div>
                 <button type="button" class="view-btn">VIEW MORE</button>
