@@ -82,15 +82,15 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {
     -moz-column-count: 1;
     column-count: 1;
 }
-body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li {
+.chapter-card {
     border-bottom: 1px solid #ddd;
     list-style: none;
     margin-bottom: 0;
 }
-body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:last-child {
+.chapter-card:last-child {
     border-bottom: 0;
 }
-body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a {
+.chapter-card > a {
     padding: 15px 15px 15px 40px;
     display: block;
     position: relative;
@@ -101,7 +101,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     margin-top: 15px;
     display: none;
 }
-body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a:after {
+.chapter-card > a:after {
     content: "";
     position: absolute;
     left: 22px;
@@ -113,7 +113,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a:after {
     transform: rotate(-45deg) translateY(-50%);
     margin-top: 0;
 }
-body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:after {
+.chapter-card > a.collapsed:after {
     border-bottom: 2px solid #ddd;
     border-left: 2px solid #ddd;
     border-top: 0;
