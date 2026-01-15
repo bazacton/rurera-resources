@@ -103,7 +103,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                             <span class="total-earned-coins">0</span>
                         </span>
-                        <span class="questions-total-holder d-block mb-30">( 2/{{$total_questions}} Questions )</span>
                     </div>
 
 
@@ -129,6 +128,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 'prev_question' => 0,
                                                 'next_question' => 0,
                                                 'question_no' => $question_no,
+                                                'total_questions' => $total_questions,
                                                 'quizAttempt' => $quizAttempt,
                                                 'newQuestionResult' => $newQuestionResult,
                                                 'quizResultObj' => $newQuizStart
