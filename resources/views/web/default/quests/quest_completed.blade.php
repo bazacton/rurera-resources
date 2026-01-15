@@ -105,3 +105,141 @@
 		</div>
 	</div>
 </div>
+<script>
+	document.addEventListener("click", function(e) {
+	// Only run for Next buttons
+	if (!e.target.classList.contains("finish-next-step")) return;
+
+	// Get current step (the one currently visible)
+	const currentStep = e.target.closest(".finish-steps");
+	if (!currentStep) return;
+
+	// Find next step (the one immediately after current in DOM)
+	const nextStep = currentStep.nextElementSibling;
+	if (!nextStep) return;
+
+	// 1️⃣ Hide current step
+	currentStep.classList.add("rurera-hide");
+
+	// 2️⃣ Show next step
+	nextStep.classList.remove("rurera-hide");
+
+	// 3️⃣ Animate progress bars if present in next step
+	const bars = nextStep.querySelectorAll(".progress-count");
+	if (!bars.length) return;
+
+	// Prevent re-running
+	if (nextStep.dataset.progressDone) return;
+	nextStep.dataset.progressDone = "true";
+
+	function animateNumber(el, target, duration = 1000) {
+		let startTime = null;
+
+		function tick(timestamp) {
+			if (!startTime) startTime = timestamp;
+			const progress = Math.min((timestamp - startTime) / duration, 1);
+			el.textContent = Math.floor(progress * target) + "%";
+
+			if (progress < 1) {
+				requestAnimationFrame(tick);
+			} else {
+				el.textContent = target + "%";
+			}
+		}
+
+		requestAnimationFrame(tick);
+	}
+
+	// ✅ Sequential fill (1st -> 2nd -> 3rd ...)
+	function animateBarSequentially(index = 0) {
+		if (index >= bars.length) return;
+
+		const bar = bars[index];
+		const target = Number(bar.dataset.progress || 0);
+
+		// ✅ FIXED selectors according to your HTML
+		const progressBox = bar.closest(".progress-box");
+		const numberEl = bar.querySelector(".progress-numbers"); // inside bar
+
+		// Reset
+		bar.style.transition = "none";
+		bar.style.width = "0%";
+		if (numberEl) numberEl.textContent = "0%";
+
+		// Force reflow so transition will apply
+		bar.offsetHeight;
+
+		// Apply transition back
+		bar.style.transition = "width 1000ms ease";
+
+		// Animate width
+		requestAnimationFrame(() => {
+			bar.style.width = target + "%";
+		});
+
+		// Animate percentage text
+		if (numberEl) animateNumber(numberEl, target, 1000);
+
+		// After this bar finishes, animate next
+		setTimeout(() => {
+			animateBarSequentially(index + 1);
+		}, 1050);
+	}
+
+	animateBarSequentially(0);
+});
+
+/* ✅ Fallback: agar .finish-next-step exist hi na kare,
+to page load par card ke andar sequential animation chal jaye */
+document.addEventListener("DOMContentLoaded", function () {
+const cardBars = document.querySelectorAll(".quests-item .progress-count");
+if (!cardBars.length) return;
+
+// Prevent re-running
+if (document.body.dataset.progressDone) return;
+document.body.dataset.progressDone = "true";
+
+function animateNumber(el, target, duration = 1000) {
+	let startTime = null;
+
+	function tick(timestamp) {
+		if (!startTime) startTime = timestamp;
+		const progress = Math.min((timestamp - startTime) / duration, 1);
+		el.textContent = Math.floor(progress * target) + "%";
+
+		if (progress < 1) {
+			requestAnimationFrame(tick);
+		} else {
+			el.textContent = target + "%";
+		}
+	}
+
+	requestAnimationFrame(tick);
+}
+
+function animateBarSequentially(index = 0) {
+	if (index >= cardBars.length) return;
+
+	const bar = cardBars[index];
+	const target = Number(bar.dataset.progress || 0);
+	const numberEl = bar.querySelector(".progress-numbers");
+
+	bar.style.transition = "none";
+	bar.style.width = "0%";
+	if (numberEl) numberEl.textContent = "0%";
+
+	bar.offsetHeight;
+
+	bar.style.transition = "width 1000ms ease";
+	requestAnimationFrame(() => {
+	bar.style.width = target + "%";
+	});
+
+	if (numberEl) animateNumber(numberEl, target, 1000);
+
+	setTimeout(() => animateBarSequentially(index + 1), 1050);
+}
+
+animateBarSequentially(0);
+});
+</script>
