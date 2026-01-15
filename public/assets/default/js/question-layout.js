@@ -80,7 +80,9 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     returnType = rurera_validation_process(thisForm, 'quiz_page');
 
 
+    console.log(thisForm);
     console.log('returnType-----='+returnType)
+    //return false;
 
     if( rurera_is_field(bypass_validation) && bypass_validation == 'yes' ){
         returnType = true;
@@ -1471,7 +1473,6 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 				$('[for="'+this_id+'"]').removeClass('frontend-field-error-label');
 			}
 
-
 			//checkbox_fields[index_no] = false;
 
 
@@ -1519,9 +1520,10 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 			}
 			if (thisObj.attr('type') == 'checkbox') {
 				var field_name = thisObj.attr('name');
-				var minimum_selection = thisObj.attr('data-min');
+                var minimum_selection = thisObj.attr('data-min');
 				var selectedCount = jQuery('input[name="' + field_name + '"]:checked').length;
 				var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
+
 				if (is_field_checked == false || selectedCount < minimum_selection) {
 					checkbox_fields[index_no] = thisObj;
 					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'checkbox', minimum_selection);
@@ -1566,6 +1568,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
     var error_messages = ' <br><br>';
     if (has_empty.length > 0 && jQuery.inArray(true, has_empty) != -1) {
         array_length = alert_messages.length;
+
         for (i = 0; i < array_length; i++) {
             if (i > 0) {
                 error_messages = error_messages + '<br>';
