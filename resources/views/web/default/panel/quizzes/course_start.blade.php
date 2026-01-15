@@ -19,6 +19,7 @@ $timer_counter = $practice_time;
 $correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
+@php $total_questions = 10; @endphp
 <div class="content-section">
 
     <section class="lms-quiz-section">
@@ -112,7 +113,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                     </div>
                     <div class="question-area-block" style="margin-top:80px;" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        @php $total_questions = 10; @endphp
+
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
@@ -127,6 +128,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 'prev_question' => 0,
                                                 'next_question' => 0,
                                                 'question_no' => $question_no,
+                                                'total_questions' => $total_questions,
                                                 'quizAttempt' => $quizAttempt,
                                                 'newQuestionResult' => $newQuestionResult,
                                                 'quizResultObj' => $newQuizStart

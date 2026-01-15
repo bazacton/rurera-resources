@@ -64,6 +64,8 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
                 <span class="marks" data-marks="{{$question->question_score}}">{{$question->question_score}} marks</span>
                 @endif
             @endif
+
+            <span class="questions-total-holder d-block mb-30">( {{$question_no}}/{{$total_questions}} Questions )</span>
             {!! $question_layout !!}
 
             <div class="validation-error"></div>
