@@ -576,6 +576,10 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* ======================================================== */
 /* [30] Image-Field */
 /* --- START: Image-Field --- */
+.block-holder.image-field {
+    display: block;
+    width: 100%;
+}
 .image-field img {
     max-width: 100%;
 }
