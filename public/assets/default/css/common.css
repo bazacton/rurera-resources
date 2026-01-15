@@ -4911,7 +4911,7 @@ button.bg-gray200:hover {background-color: #d8d8d8 !important;}
 .font-weight-bold {font-weight: 700 !important;}
 .font-weight-bolder {font-weight: bolder !important;}
 .font-italic {font-style: italic !important;}
-.text-dark-charcoal{color: #333 !important;}
+.text-dark-charcoal{color: #555 !important;}
 a.text-primary:focus,
 a.text-primary:hover {color: #26a553 !important;}
 .text-secondary {color: #1f3b64 !important;}
