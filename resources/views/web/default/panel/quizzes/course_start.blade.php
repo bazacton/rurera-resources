@@ -81,15 +81,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                            <div class="topbar-right">
-                                <div class="quiz-pagination">
-                                </div>
-                                <div class="quiz-timer">
-                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -97,7 +88,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
 
                     <div class="quiz-time-bar mb-80 pt-15">
-                        <div class="timer-wrap quiz-timer-counter">
+                        <div class="timer-wrap quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
                             <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
                             <div class="time-box" id="hh">00</div>
@@ -326,14 +317,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         secondsString -= m * 60;
         var return_string = '';
         if( h > 0) {
-            var return_string = return_string + h + "h ";
+            var return_string = return_string + '<div class="time-box" id="hh">'+h+'</div><span class="colon">:</span>';
+        }else{
+            var return_string = return_string + '<div class="time-box" id="hh">'+h+'</div><span class="colon">:</span>';
         }
-        var quiz_type = '{{$quiz_type}}';
+        var quiz_type = '<?php echo e($quiz_type); ?>';
         if( (m > 0 || h > 0) || quiz_type != 'vocabulary') {
-            var return_string = return_string + (m < 10 ? '0' + m : m) + "m ";
+            var return_string = return_string + '<div class="time-box" id="mm">'+(m < 10 ? '0' + m : m)+'</div><span class="colon">:</span>';
         }
-        var return_string = return_string + (secondsString < 10 ? '0' + secondsString : secondsString);
-        return_string = return_string + 's';
+        //var return_string = return_string + (secondsString < 10 ? '0' + secondsString : secondsString);
+        var return_string = return_string + '<div class="time-box" id="ss">'+(secondsString < 10 ? '0' + secondsString : secondsString)+'</div>';
+        //return_string = return_string + 's';
+
+
+
         return return_string;
     }
 
