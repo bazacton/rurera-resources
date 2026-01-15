@@ -46,7 +46,6 @@
     column-count: 3;
 } */
 .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer {background-color: #fff; border: 2px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 45px;}
-.lms-chapter-area .lms-chapter-ul .element-title h2 {margin: 0 0 20px; font-weight: 600;}
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {-moz-column-count: 2; column-count: 2; gap: 15px; padding: 0; counter-reset: counter;}
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li {-moz-column-break-inside: avoid; break-inside: avoid; margin-bottom: 14px; list-style: none;}
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-holder) {padding-right: 55px;}
