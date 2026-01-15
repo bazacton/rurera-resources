@@ -368,7 +368,7 @@ Left SideBar-menu End
 .panel-content .spells-page  .listing-search .inline-filters .active a {box-shadow: 0 -3px 0 0 var(--primary) inset;}
 /* Spells Inline Filters Style End */
 /* Panel Stats For Subject and treasure-mission Style Start*/
-.panel-stats {background-color: #ebf3fe; padding: 25px 20px; border-radius: 5px; margin: 0 0 30px; position: relative; overflow: hidden;}
+.panel-stats {background-color: #ebf3fe; padding: 0; border-radius: 5px; margin: 0 0 30px; position: relative; overflow: hidden;}
 .panel-stats .course-icon {position: absolute; right: 25px; bottom: 0; max-width: 230px; height: 118px; z-index: 0;}
 .panel-stats .course-icon img {height: 100%; object-fit: cover; width: 100%; border-radius: 0;}
 .stats-list {position: relative; z-index: 1;}
