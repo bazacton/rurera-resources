@@ -39,8 +39,7 @@
                 </div>
                 @if( !empty( $data))
                 <section class="lms-data-table mt-0 mb-0 spells elevenplus-block w-100">
-                    <div class="col-12">
-                        @php $total_questions_all = $total_attempts_all = $total_questions_attempt_all = $correct_questions_all =
+                    @php $total_questions_all = $total_attempts_all = $total_questions_attempt_all = $correct_questions_all =
                         $incorrect_questions_all = $pending_questions_all = $not_used_words_all = 0;
                         @endphp
 
@@ -123,8 +122,7 @@
                             </div>
                         </div>
                         <!-- Spell Levels Listing End -->
-                        @endforeach
-                    </div>
+                    @endforeach
                 </section>
                 @endif
             </div>
