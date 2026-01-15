@@ -64,221 +64,217 @@
         </section>
         <section class="lms-chapter-section">
             <div class="lms-chapter-area">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="chapter-nav mb-30 mt-15">
+                <div class="chapter-nav mb-30 mt-15">
 
-                            <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
-                                <div class="stats-user">
-                                    <h2 class="font-22 mb-0 text-uppercase">{{ $course->title }}</h2>
-                                </div>
-                                @if(isset( $course->learn_icon ) && $course->learn_icon != '')
-                                    <div class="course-icon"><img src="{{$course->learn_icon}}" alt="course-icon" width="150" height="150"></div>
-                                @endif
-                                <div class="stats-list">
-                                    <ul>
-                                        <li>
-                                            <div class="list-box">
-                                                <strong>{{$course->chapters->count()}}</strong>
-                                                <span>Units</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-box">
-                                                <strong>{{$course->webinar_sub_chapters->count()}}</strong>
-                                                <span>Lessons</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <ul class="font-14 font-weight-500">
-                                @foreach($course->chapters as $chapter)
-                                    @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                        <li><a href="#subject_{{$chapter->id}}">{{ $chapter->title}}</a></li>
-                                    @endif
-                                @endforeach
+                    <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
+                        <div class="stats-user">
+                            <h2 class="font-22 mb-0 text-uppercase">{{ $course->title }}</h2>
+                        </div>
+                        @if(isset( $course->learn_icon ) && $course->learn_icon != '')
+                            <div class="course-icon"><img src="{{$course->learn_icon}}" alt="course-icon" width="150" height="150"></div>
+                        @endif
+                        <div class="stats-list">
+                            <ul>
+                                <li>
+                                    <div class="list-box">
+                                        <strong>{{$course->chapters->count()}}</strong>
+                                        <span>Units</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-box">
+                                        <strong>{{$course->webinar_sub_chapters->count()}}</strong>
+                                        <span>Lessons</span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                    <ul class="font-14 font-weight-500">
+                        @foreach($course->chapters as $chapter)
+                            @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+                                <li><a href="#subject_{{$chapter->id}}">{{ $chapter->title}}</a></li>
+                            @endif
+                        @endforeach
+                    </ul>
+                </div>
 
-                    {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
-                        <div class="sorting-filter">
-                            <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
-                                <span><img src="/assets/default/svgs/grid-view.svg" alt="grid-view"></span>
-                            </a>
-                            <a href="javascript:;" class="list-btn view-change-btn" data-type="chapters-detail-view">
-                                <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"></span>
+                {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
+                    <div class="sorting-filter">
+                        <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
+                            <span><img src="/assets/default/svgs/grid-view.svg" alt="grid-view"></span>
                         </a>
-                        </div>
-                    </div>--}}
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-short-view">
-                        <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
-                            <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
-                                @foreach($course->chapters as $chapter)
-                                    <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}"><div class="element-title mb-20"><h2 class="mb-0 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }}</h2></div>
+                        <a href="javascript:;" class="list-btn view-change-btn" data-type="chapters-detail-view">
+                            <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"></span>
+                    </a>
+                    </div>
+                </div>--}}
+                <div class="chapter-views chapters-short-view">
+                    <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
+                        <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
+                            @foreach($course->chapters as $chapter)
+                                <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}"><div class="element-title mb-20"><h2 class="mb-0 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
-                                        @if($chapter->ChapterYearTopicParts->count() > 0)
-                                            <div class="lms-chapter-ul-outer">
-                                                <ul>
-                                                    @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
+                                    @if($chapter->ChapterYearTopicParts->count() > 0)
+                                        <div class="lms-chapter-ul-outer">
+                                            <ul>
+                                                @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
 
-                                                    @php
+                                                @php
 
-                                                    $total_completion = 0;
-                                                    $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
+                                                $total_completion = 0;
+                                                $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
 
-                                                    $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
-                                                    $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
-                                                    $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
+                                                $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
+                                                $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
+                                                $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
 
-                                                    $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
+                                                $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
-                                                    $completion_class = 'accuracy-not-started';
-                                                    $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
-                                                    $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
-                                                    $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
-                                                    $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
-
-
-                                                    $completion_title = 'Not Started';
-                                                    $completion_title = ($topic_accuracy > 0)? 'Practice Needed' : $completion_title;
-                                                    $completion_title = ($topic_accuracy > 39)? 'Good' : $completion_title;
-                                                    $completion_title = ($topic_accuracy > 59)? 'Very Good' : $completion_title;
-                                                    $completion_title = ($topic_accuracy > 79)? 'Excellent' : $completion_title;
+                                                $completion_class = 'accuracy-not-started';
+                                                $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
+                                                $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
+                                                $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
+                                                $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
 
 
-                                                    $completion_icon = 'above_0';
-                                                    $completion_icon = ($topic_accuracy > 0)? 'above_25' : $completion_icon;
-                                                    $completion_icon = ($topic_accuracy > 39)? 'above_50' : $completion_icon;
-                                                    $completion_icon = ($topic_accuracy > 59)? 'above_80' : $completion_icon;
-                                                    $completion_icon = ($topic_accuracy > 79)? 'above_80' : $completion_icon;
+                                                $completion_title = 'Not Started';
+                                                $completion_title = ($topic_accuracy > 0)? 'Practice Needed' : $completion_title;
+                                                $completion_title = ($topic_accuracy > 39)? 'Good' : $completion_title;
+                                                $completion_title = ($topic_accuracy > 59)? 'Very Good' : $completion_title;
+                                                $completion_title = ($topic_accuracy > 79)? 'Excellent' : $completion_title;
 
-                                                    //$total_completion = 40;
+
+                                                $completion_icon = 'above_0';
+                                                $completion_icon = ($topic_accuracy > 0)? 'above_25' : $completion_icon;
+                                                $completion_icon = ($topic_accuracy > 39)? 'above_50' : $completion_icon;
+                                                $completion_icon = ($topic_accuracy > 59)? 'above_80' : $completion_icon;
+                                                $completion_icon = ($topic_accuracy > 79)? 'above_80' : $completion_icon;
+
+                                                //$total_completion = 40;
+                                                    @endphp
+
+                                                    <li>
+                                                        <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
+                                                            <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
+                                                        <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
+                                                            <ul>
+                                                                <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
+                                                                <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
+                                                                <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
+                                                                <li><a href="javascript:;" class="debug-details-btn">Debug Details</a>
+                                                                    <div class="debug-details rurera-hide">
+                                                                        Part ID: {{$topicPartObj->id}}<br>
+                                                                        Quiz ID: {{$quizObj->id}}<br>
+                                                                        Difficulty Level: {{$user_difficulty_level}}<br>
+                                                                        Accuracy: {{$topic_accuracy}}<br>
+                                                                        Completion: {{$total_completion}}<br>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="percent-holder">
+                                                            <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+                                                                <div class="circle_inner">
+                                                                    <div class="round_per"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+
+
+                                                @endforeach
+                                            </ul>
+                                        </div>
+
+                                        @endif
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                <div class="chapter-views chapters-detail-view rurera-hide">
+                    <div class="current-topics-detail bg-white mb-30 mt-15">
+                        <div class="topics-table-group">
+
+                            @foreach($course->chapters as $chapter)
+                                @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+
+                                    <div class="topics-table">
+                                        <table class="w-100">
+                                            <thead>
+                                            <tr>
+                                                <th class="text-white text-left p-15">{{ $chapter->title }}</th>
+                                                <th class="text-white text-left p-15">Mastery Level</th>
+                                                <th class="text-white text-left p-15">Questions Count</th>
+                                                <th class="text-white text-left p-15">Rersources</th>
+                                            </tr>
+                                            </thead>
+
+                                            <tbody>
+                                            @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
+                                                @foreach($sub_chapters[$chapter->id] as $sub_chapter)
+                                                    @if(!empty($sub_chapter))
+                                                        @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
+                                                $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
+                                                $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
+
+                                                $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg" alt="completion-flag">' : '';
+                                                $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
+
+                                                $completion_counter = 1;
+                                                while($completion_counter <= $completion_count){
+                                                    $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg" lat="completion-star">';
+                                                    $completion_counter++;
+                                                }
+
+                                                $topic_percentage_text .= $topic_percentage_flag;
                                                         @endphp
 
-                                                        <li>
-                                                            <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
-                                                                <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
-                                                            <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
-                                                                <ul>
-                                                                    <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
-                                                                    <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
-                                                                    <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
-                                                                    <li><a href="javascript:;" class="debug-details-btn">Debug Details</a>
-                                                                        <div class="debug-details rurera-hide">
-                                                                            Part ID: {{$topicPartObj->id}}<br>
-                                                                            Quiz ID: {{$quizObj->id}}<br>
-                                                                            Difficulty Level: {{$user_difficulty_level}}<br>
-                                                                            Accuracy: {{$topic_accuracy}}<br>
-                                                                            Completion: {{$total_completion}}<br>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            
-                                                            <div class="percent-holder">
-                                                                <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
-                                                                    <div class="circle_inner">
-                                                                        <div class="round_per"></div>
-                                                                    </div>
+                                                        <tr>
+                                                            <td data-label="{{ $chapter->title }}" class="px-15 py-20">
+                                                                <div class="checkbox-field mb-0">
+                                                                    <label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
                                                                 </div>
+                                                            </td>
+                                                            <td data-label="Mastery Level" class="px-15 py-20">
+                                                        <span>
+                                                        @if( $topic_percentage > 0)
+                                                                <div class="rurera-progress-bar">
+                                                                <span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
                                                             </div>
-
-                                                        </li>
-
-
-                                                    @endforeach
-                                                </ul>
-                                            </div>
-
-                                            @endif
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">
-                        <div class="current-topics-detail bg-white mb-30 mt-15">
-                            <div class="topics-table-group">
-
-                                @foreach($course->chapters as $chapter)
-                                    @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-
-                                        <div class="topics-table">
-                                            <table class="w-100">
-                                                <thead>
-                                                <tr>
-                                                    <th class="text-white text-left p-15">{{ $chapter->title }}</th>
-                                                    <th class="text-white text-left p-15">Mastery Level</th>
-                                                    <th class="text-white text-left p-15">Questions Count</th>
-                                                    <th class="text-white text-left p-15">Rersources</th>
-                                                </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                                    @foreach($sub_chapters[$chapter->id] as $sub_chapter)
-                                                        @if(!empty($sub_chapter))
-                                                            @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
-                                                    $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
-                                                    $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
-
-                                                    $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg" alt="completion-flag">' : '';
-                                                    $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
-
-                                                    $completion_counter = 1;
-                                                    while($completion_counter <= $completion_count){
-                                                        $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg" lat="completion-star">';
-                                                        $completion_counter++;
-                                                    }
-
-                                                    $topic_percentage_text .= $topic_percentage_flag;
-                                                            @endphp
-
-                                                            <tr>
-                                                                <td data-label="{{ $chapter->title }}" class="px-15 py-20">
-                                                                    <div class="checkbox-field mb-0">
-                                                                        <label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
-                                                                    </div>
-                                                                </td>
-                                                                <td data-label="Mastery Level" class="px-15 py-20">
-                                                            <span>
-                                                            @if( $topic_percentage > 0)
-                                                                    <div class="rurera-progress-bar">
-                                                                    <span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
-                                                                </div>
-                                                                @else
-                                                                    -
-                                                                @endif
+                                                            @else
+                                                                -
+                                                            @endif
+                                                        </span>
+                                                            </td>
+                                                            <td data-label="Last Seen" class="px-15 py-20">
+                                                                <span>{{$sub_chapter['total_questions']}}</span>
+                                                            </td>
+                                                            <td data-label="Rersources" class="px-15 py-20">
+                                                                <a href="#" class="video-btn mr-10">
+                                                            <span class="icon-box">
+                                                                <img src="/assets/default/svgs/play-video.svg" alt="play-video" title="Video">
                                                             </span>
-                                                                </td>
-                                                                <td data-label="Last Seen" class="px-15 py-20">
-                                                                    <span>{{$sub_chapter['total_questions']}}</span>
-                                                                </td>
-                                                                <td data-label="Rersources" class="px-15 py-20">
-                                                                    <a href="#" class="video-btn mr-10">
-                                                                <span class="icon-box">
-                                                                    <img src="/assets/default/svgs/play-video.svg" alt="play-video" title="Video">
-                                                                </span>
-                                                                    </a>
-                                                                    <a href="#" class="file-btn">
-                                                                <span class="icon-box">
-                                                                    <img src="/assets/default/svgs/filesheet.svg" alt="filesheet" title="Helpsheet">
-                                                                </span>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
+                                                                </a>
+                                                                <a href="#" class="file-btn">
+                                                            <span class="icon-box">
+                                                                <img src="/assets/default/svgs/filesheet.svg" alt="filesheet" title="Helpsheet">
+                                                            </span>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
 
-                                                        @endif
-                                                    @endforeach
-                                                @endif
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    @endif
-                                @endforeach
-                            </div>
+                                                    @endif
+                                                @endforeach
+                                            @endif
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
