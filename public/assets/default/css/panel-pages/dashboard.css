@@ -702,6 +702,93 @@ Right SideBar Style Start
 .user-profile-icons ul .menu-button-mobile,
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
 /* user-profile-dropdown style End */
+/* Streak-dropdown style Start */
+.streak-dropdown {
+    position: relative;
+}
+
+.streak-dropdown-content {
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 350px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.streak-days {
+    background-color: #ff9600;
+    padding: 20px;
+}
+
+.streak-day-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 15px;
+}
+
+.streak-day-head .icon-box {
+    width: 50px;
+}
+
+.streak-day-head .text-box {
+    width: calc(100% - 70px);
+}
+
+.streak-day-head .icon-box img {
+    height: 100%;
+    width: 100%;
+}
+
+.streak-day-head h4 {
+    color: #fff;
+    margin: 0 0 8px;
+}
+
+.streak-day-head .sub {
+    color: #fff;
+    line-height: normal;
+}
+
+.days-list {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 12px 15px;
+}
+
+.days-list ul, .user-profile-icons .days-list ul {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.days-list ul li {
+    display: inline-flex;
+    vertical-align: middle;
+    line-height: normal;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.days-list .day {
+    color: #888;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.days-list .day-circle {
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 100%;
+}
+/* Streak-dropdown style End */
 /* Store Stats Style Start */
 .store-stats ul {margin: 0; padding: 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 15px;}
 .store-stats ul li {margin-bottom: 5px;}
