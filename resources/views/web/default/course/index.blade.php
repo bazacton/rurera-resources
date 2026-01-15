@@ -119,13 +119,13 @@
                                         </div>--}}
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-short-view">
                                             <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
-                                                <ul class="lms-chapter-ul" id="accordion">
+                                                <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
                                                     @foreach($course->chapters as $chapter)
                                                         <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}"><div class="element-title mb-20"><h2 class="mb-0 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                                             @if($chapter->ChapterYearTopicParts->count() > 0)
                                                                 <div class="lms-chapter-ul-outer">
-                                                                    <ul class="font-14 font-weight-500">
+                                                                    <ul>
                                                                         @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
 
                                                                         @php
