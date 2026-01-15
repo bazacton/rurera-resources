@@ -370,7 +370,8 @@ Lms Responsive Style Start
     .sidebar-logo .sidebar-logo-text {display: none;}
     .navbar-toggler-icon {width: 1.6em;height: 1.5em;}
     .user-profile-icons .dropdown-menu-right {left: 0; right: auto;}
-    .panel-right-sidebar [class*="col-"] {display: none;}
+    .panel-right-sidebar [class*="col-"],
+    .panel-right-sidebar .sidebar-inner-elements {display: none;}
     .panel-right-sidebar [class*="col-"]:has(.user-profile-icons) {display: block;}
     .panel-content [class*="col-"].panel-right-sidebar {border-bottom: 1px solid #ddd; position: fixed; top: 0; left: 0; background-color: #fff; min-height: 60px; display: flex; align-items: center; width: 100%; justify-content: center; z-index: 30; padding-top: 15px; padding-bottom: 15px; flex: 0 0 100%; max-width: 100%; }
     .panel-content [class*="col-"].panel-right-sidebar .row {width: 100%;}
