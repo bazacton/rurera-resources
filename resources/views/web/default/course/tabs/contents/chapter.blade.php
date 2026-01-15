@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12 lms-chapter-area">
-        <div class="sidebar-nav">
+        <div class="chapter-nav">
             <ul>
              <li><a href="#">Subjects</a></li>
              <li><a href="#">Scince</a></li>
