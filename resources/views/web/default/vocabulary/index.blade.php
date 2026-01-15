@@ -118,11 +118,6 @@
         @endforeach
     </section>
     @endif
-    <a href="#" class="scroll-btn" style="display: block;">
-        <div class="round">
-            <div id="cta"><span class="arrow primera next"></span> <span class="arrow segunda next"></span></div>
-        </div>
-    </a>
 </section>
 
 <div class="modal fade spell_words_popup lms-choose-membership" id="spell_words_popup" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
