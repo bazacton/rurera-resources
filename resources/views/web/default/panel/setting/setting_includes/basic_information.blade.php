@@ -233,7 +233,7 @@ if( !empty( $emojisArray ) ){
                             <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
                                 
                                 <div class="edit-element-title mb-15">
-                                    <h6 class="font-weight-500">
+                                    <h6 class="font-16 font-weight-bold text-dark-charcoal">
                                         Profile picture
                                     </h6>
                                 </div>
@@ -244,7 +244,7 @@ if( !empty( $emojisArray ) ){
                                                 <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="edit-profile-image">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex justify-content-center font-14 flex-column">
                                                     <small class="img-type font-14 font-weight-500">JPG, GIF or PNG. Maximum file size 1 MB.</small>    
-                                                    <span class="font-weight-bold">Change photo</span>
+                                                    <span class="font-weight-bold font-14">Change photo</span>
                                                 </a>
                                             </figure>
                                         </div>
@@ -253,7 +253,7 @@ if( !empty( $emojisArray ) ){
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="edit-element-title mb-10">
-                                                    <h6 class="font-weight-500">
+                                                    <h6 class="font-16 font-weight-bold text-dark-charcoal">
                                                         Profile Info
                                                     </h6>
                                                 </div>
@@ -267,7 +267,7 @@ if( !empty( $emojisArray ) ){
 											
 											<div class="col-12">
                                                 <div class="edit-element-title mb-10">
-                                                    <h6 class="font-weight-500">
+                                                    <h6 class="font-16 font-weight-bold text-dark-charcoal">
                                                         Login Details
                                                     </h6>
                                                 </div>
@@ -276,11 +276,11 @@ if( !empty( $emojisArray ) ){
 												<div class="student-profile-holder profile-view-data">
 													<div class="profile-inner">
 														<div class="profile-header">
-															<h3>{{$user->display_name}}</h3>
+															<h3 class="font-16">{{$user->display_name}}</h3>
 															<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
 														</div>
 														<div class="student-info">
-															<ul>
+															<ul class="font-14">
 																<li class="user-name">
 																	<span>Username:</span> {{$user->username}}
 																</li>
