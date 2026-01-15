@@ -388,8 +388,9 @@
                                     </div>
                                 </div>
                                 @endif
-                                @if(auth()->user()->isUser())
-                                @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily'))->count() > 0 )
+                                @if(auth()->user()->isUser() && !request()->is('quests'))
+
+                                @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
                                     <div class="col-12 col-lg-12 mb-30">
                                         <div class="quests-list panel-border bg-white rounded-sm p-20">
                                             <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
@@ -397,7 +398,7 @@
                                                 <a href="/quests" class="view-all font-weight-bold font-16">View All</a>
                                             </h3>
                                             <ul>
-                                                @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily')) as $questObj)
+                                                @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
                                                     @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
 
                                                     $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
