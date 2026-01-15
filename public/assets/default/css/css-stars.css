@@ -80,7 +80,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-
     gap: 0 15px;
 }
 body .lms-chapter-area .lms-chapter-ul-outer li ul li a {
-    color: var(--primary);
+    color: #999;
 }
 body .lms-chapter-area .lms-chapter-ul-outer li ul li {
     list-style: none;
