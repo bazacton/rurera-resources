@@ -50,20 +50,20 @@
 						<ul>
 							<li>
 								<div class="list-box">
-									<strong>Lessons</strong>
-									<span>{{$topicCount}}</span>
+									<strong class="font-19 font-weight-bold">Lessons</strong>
+									<span class="font-14">{{$topicCount}}</span>
 								</div>
 							</li>
 							<li>
 								<div class="list-box">
-									<strong>Treasures</strong>
-									<span>{{$treasureCount}}</span>
+									<strong class="font-19 font-weight-bold">Treasures</strong>
+									<span class="font-14">{{$treasureCount}}</span>
 								</div>
 							</li>
 							<li>
 								<div class="list-box">
-									<strong>Coins</strong>
-									<span>1 per Correct Answer</span>
+									<strong class="font-19 font-weight-bold">Coins</strong>
+									<span class="font-14">1 per Correct Answer</span>
 								</div>
 							</li>
 						</ul>
