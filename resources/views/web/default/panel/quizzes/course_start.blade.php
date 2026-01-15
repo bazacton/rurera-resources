@@ -16,8 +16,8 @@ $timer_counter = $time_interval;
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
-$correct_answer_explaination = isset($correct_answer_explaination)? $correct_answer_explaination : 0;
-$incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
+$correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
+$incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 <div class="content-section">
 
@@ -349,7 +349,7 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
         if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
             var question_solution = return_data.question_solution;
             var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
-            var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect11, but well done for trying' : 'Well done! Thats exactly right.';
+            var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
             $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
