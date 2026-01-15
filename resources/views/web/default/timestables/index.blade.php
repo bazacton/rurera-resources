@@ -9,16 +9,16 @@
                     <!-- <a href="javascript:;" class="timestables-back-btn mb-20">Back</a> -->
                     <div class="timestables-modes row">
                         <div class="col-12 col-lg-12 col-md-12">
-                        <div class="section-title mb-15">
-                            <h2 class="font-22 mb-0">Time Tables</h2>
+                            <div class="section-title mb-15">
+                                <h2 class="font-22 mb-0">Time Tables</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-12 col-md-12 rurera-hide">
-                        <ul class="tests-list type-list mb-30">
-                            <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt="single"> Single Player</li>
-                            <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt="multi"> Multi Player</li>
-                        </ul>
-                    </div>
+                        <div class="col-12 col-lg-12 col-md-12 rurera-hide">
+                            <ul class="tests-list type-list mb-30">
+                                <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt="single"> Single Player</li>
+                                <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt="multi"> Multi Player</li>
+                            </ul>
+                        </div>
 
                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
