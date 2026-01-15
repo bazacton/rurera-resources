@@ -92,7 +92,7 @@
                                     @endif
 
                                     @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                                    <div class="panel-rightside-menu mb-30" itemscope itemtype="https://schema.org/Article">
+                                    <div class="panel-rightside-menu mb-30">
                                         <div class="user-info">
                                             <a href="#">
                                                 <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="User Avatar" loading="eager" title="User Avatar">
