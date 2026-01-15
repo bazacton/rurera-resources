@@ -710,6 +710,8 @@ Right SideBar Style Start
 }
 .streak-dropdown {
     position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 -20px;
 }
 
 .streak-dropdown-content {
