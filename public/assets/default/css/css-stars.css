@@ -69,19 +69,14 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-
   content: counter(my-sec-counter, upper-alpha ) ". ";
 }
 /* .lms-chapter-area{counter-reset: my-sec-counter;} */
-.lms-chapter-ul-outer li ul {
+.chapter-tags {
     padding: 0 35px 15px;
     display: flex;
     align-items: center;
     gap: 0 15px;
 }
-body .lms-chapter-area .lms-chapter-ul-outer li ul li a {
+.chapter-tags a {
     color: var(--primary);
-}
-body .lms-chapter-area .lms-chapter-ul-outer li ul li {
-    list-style: none;
-    padding: 0 0 5px;
-    line-height: normal;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {
     -moz-column-count: 1;
