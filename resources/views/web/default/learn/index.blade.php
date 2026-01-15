@@ -42,6 +42,12 @@
                                 <a href="/{{$categoryObj->slug}}/{{$courseObj->subject->slug}}" class="learning-btn">Start Learning</a>
                             @endif
                             <span class="subject-info">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
+                            <div class="levels-progress horizontal">
+                                <span class="progress-box">
+                                    <span class="progress-count" style="width: 0%;"></span>
+                                </span>
+                                <span class="progress-numbers">0 / 2</span>
+                            </div>
                         </div>
                     </div>
            @endforeach
