@@ -6,24 +6,24 @@
 
 @section('content')
     <section>
-        <div class="section-title mb-15" itemscope itemtype="https://schema.org/Program">
+        <div class="section-title mb-15">
             <h2 itemprop="name" class="font-22 mb-0">Referral program</h2>
         </div>
         <div class="referral-holder panel-border bg-white rounded-sm px-25 pt-25">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div class="referral-text mb-30" itemscope itemtype="https://schema.org/Program">
-                        <h3 class="font-18 font-weight-bold mb-5" itemprop="name">How to use Referral Program</h3>
-                        <p class="text-gray mb-15">Share your referral link with friends Or family. When someone signs up or makes a purchase using your link, you automatically earn rewards and commissions.</p>
+                    <div class="referral-text mb-30">
+                        <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">How to use Referral Program</h3>
+                        <p class="text-gray mb-15 font-14">Share your referral link with friends Or family. When someone signs up or makes a purchase using your link, you automatically earn rewards and commissions.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="referral-text mb-30" itemscope itemtype="https://schema.org/Program">
-                        <h3 class="font-18 font-weight-bold mb-5" itemprop="name">Your Referral Link</h3>
-                        <p class="text-gray mb-15">Use this link to invite new users to Rurera. Each successful registration or purchase made through your referral link will be tracked and added to your account.</p>
+                    <div class="referral-text mb-30">
+                        <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">Your Referral Link</h3>
+                        <p class="text-gray mb-15 font-14">Use this link to invite new users to Rurera. Each successful registration or purchase made through your referral link will be tracked and added to your account.</p>
                         <div class="referral-link">
-                            <input type="text" class="link-address font-16 font-weight-500" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
-                            <a href="javascript:;" class="link-btn font-16 font-weight-500 js-copy" data-input="affiliate_url">Copy Link</a>
+                            <input type="text" class="link-address font-14 font-weight-500" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
+                            <a href="javascript:;" class="link-btn font-14 font-weight-500 js-copy" data-input="affiliate_url">Copy Link</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="col-12">
                     <div class="referral-text mb-30">
                         @if(!empty($referralSettings))
-                            <div class="text-gray">
+                            <div class="text-gray font-14">
                                 @if(!empty($referralSettings['affiliate_user_amount']))<p>- {{ trans('panel.user_registration_reward') }}: {{ addCurrencyToPrice($referralSettings['affiliate_user_amount']) }}</p>@endif
                                 @if(!empty($referralSettings['referred_user_amount']))<p>- {{ trans('panel.referred_user_registration_reward') }}: {{ addCurrencyToPrice($referralSettings['referred_user_amount']) }}</p>@endif
                                 @if(!empty($referralSettings['affiliate_user_commission']))<p>- {{ trans('panel.referred_user_purchase_commission') }}: {{ $referralSettings['affiliate_user_commission'] }}%</p>@endif
@@ -71,12 +71,12 @@
                         <div class="icon-box mr-10">
                             <img src="/assets/default/img/withdraw-icon.png" alt="" height="30" width="30">
                         </div>
-                        <div class="withdraw-text" itemscope itemtype="https://schema.org/Program">
-                            <h3 class="blog-grid-title font-18 font-weight-bold mb-0" itemprop="name">Withdraw Your Money to a Bank Account</h3>
-                            <p class="font-16">Withdraw money securily to your bank account. Commision is $25 per transaction under $50,000</p>
+                        <div class="withdraw-text">
+                            <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">Withdraw Your Money to a Bank Account</h3>
+                            <p class="font-14">Withdraw money securily to your bank account. Commision is $25 per transaction under $50,000</p>
                         </div>
                         <div class="withdraw-btn-holder">
-                            <a href="#" class="withdraw-btn">Withdraw Money</a>
+                            <a href="#" class="withdraw-btn font-14">Withdraw Money</a>
                         </div>
                     </div>
                 </div>
