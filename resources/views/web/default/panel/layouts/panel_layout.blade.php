@@ -15,12 +15,8 @@
     <!-- General CSS File -->
     <link href="/assets/default/css/font.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
-    <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
-    <link rel="stylesheet" href="/assets/default/vendors/simplebar/simplebar.css">
-	<link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css?ver={{$rand_no}}">
+    <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
-    <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
 
 	@if(auth()->check() && auth()->user()->isParent())
 		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
@@ -35,10 +31,6 @@
     @stack('styles_top')
     <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_no}}">
     @stack('scripts_top')
-
-    @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
-        @include('admin.includes.preloading')
-    @endif
 
 </head>
 @php $bodyClass = ''; @endphp
@@ -940,12 +932,6 @@
 
 <!-- Template JS File -->
 <script src="/assets/default/js/app.js"></script>
-<script src="/assets/default/vendors/moment.min.js"></script>
-<script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-<script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
-<script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="/assets/default/vendors/toast/jquery.toast.min.js"></script>
-<script type="text/javascript" src="/assets/default/vendors/simplebar/simplebar.min.js"></script>
 
 <script>
     var deleteAlertTitle = '{{ trans('public.are_you_sure') }}';
