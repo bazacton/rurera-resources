@@ -97,7 +97,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
 
                     <div class="quiz-time-bar mb-80 pt-15">
-                        <div class="timer-wrap">
+                        <div class="timer-wrap quiz-timer-counter">
                             <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
 
                             <div class="time-box" id="hh">00</div>
@@ -357,10 +357,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
         if(return_data.incorrect_flag == false && correct_answer_explaination == 1){
+            var question_solution = return_data.question_solution;
             var notification_class = 'correct';
             var notification_label = 'Well done! Thats exactly right.';
             var notification_sound = 'correct-answer.mp3';
             $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
         }
         if( return_data.is_complete == true) {
