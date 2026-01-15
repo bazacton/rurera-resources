@@ -63,14 +63,14 @@
                             <a itemprop="url" href="/timestables-practice/freedom-mode">
                                 <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Freedom mode
                                         </h3>
                                     </div>
                                     <div class="img-holder">
                                         <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Explore multiplication, division, or both at your own pace.</p>
+                                    <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
                                 </div>
                             </a>
                         </div>
@@ -78,14 +78,14 @@
                             <a href="/timestables-practice/powerup-mode">
                                 <div class="grid-card timestables-mode-data">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Power-up Heatmap
                                         </h3>
                                     </div>
                                     <div class="img-holder">
                                         <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Conquer questions to turn your heatmap green.</p>
+                                    <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
                                 </div>
                             </a>
                         </div>
@@ -93,14 +93,14 @@
                             <a href="/timestables-practice/trophy-mode">
                                 <div class="grid-card timestables-mode-data">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Trophy Mode
                                         </h3>
                                     </div>
                                     <div class="img-holder">
                                         <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Speed trophy badge by playing 10 games.</p>
+                                    <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
                                 </div>
                             </a>
                         </div>
@@ -109,7 +109,7 @@
                             <a href="/timestables-practice/treasure-mission">
                                 <div class="grid-card timestables-mode-data">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Treasure Mission
                                         </h3>
                                         <div class="coin-counts">
@@ -122,7 +122,7 @@
                                     <div class="img-holder">
                                         <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Journey through times tables practice and discover hidden treasures.</p>
+                                    <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                                     
                                 </div>
                             </a>
@@ -132,14 +132,14 @@
                             <a href="/timestables-practice/showdown-mode">
                                 <div class="grid-card timestables-mode-data">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Showdown
                                         </h3>
                                     </div>
                                     <div class="img-holder">
                                         <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Journey through times tables practice and discover hidden treasures.</p>
+                                    <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                                 </div>
                             </a>
                         </div>
@@ -147,14 +147,14 @@
                             <a href="/timestables-practice/heat-map">
                                 <div class="grid-card timestables-mode-data">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Heat Map
                                         </h3>
                                     </div>
                                     <div class="img-holder">
                                         <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Colours visualization for user data in heatmap</p>
+                                    <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
                                 </div>
                             </a>
                         </div>
@@ -162,14 +162,14 @@
                             <a href="/panel/analytics">
                                 <div class="grid-card timestables-mode-data">
                                     <div class="text-holder">
-                                        <h3 class="blog-grid-title font-18 font-weight-bold">
+                                        <h3 class="font-16 font-weight-bold">
                                             Analytics
                                         </h3>
                                     </div>
                                     <div class="img-holder">
                                         <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Connect with individuals worldwide in a Cloud.</p>
+                                    <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
                                 </div>
                             </a>
@@ -180,7 +180,7 @@
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="grid-card timestables-mode-data">
                                 <div class="text-holder">
-                                    <h3 class="blog-grid-title font-18 font-weight-bold">
+                                    <h3 class="font-16 font-weight-bold">
                                     <a class="grid-btn" href="javascript:;">Tournament</a>
                                         <span class="title-label">Coming Soon</span>
                                     </h3>
@@ -188,13 +188,13 @@
                                 <div class="img-holder">
                                     <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
                                 </div>
-                                <p class="text-gray">Play and compete with classmates in exciting challenges.</p>
+                                <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="grid-card timestables-mode-data">
                                 <div class="text-holder">
-                                    <h3 class="blog-grid-title font-18 font-weight-bold">
+                                    <h3 class="font-16 font-weight-bold">
                                         <a class="grid-btn" href="javascript:;">Global Arena
                                             <span class="title-label">Coming Soon</span>
                                         </a>
@@ -203,7 +203,7 @@
                                 <div class="img-holder">
                                     <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                 </div>
-                                <p class="text-gray">Connect with individuals worldwide in a Cloud.</p>
+                                <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
                             </div>
                         </div>
