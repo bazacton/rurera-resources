@@ -77,7 +77,7 @@
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
 
                                     @if(auth()->user()->isUser())
-                                        <div class="store-stats panel-border bg-white rounded-sm p-20">
+                                        <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                             <ul>
                                                 <li>
                                                     <div class="store-item">
