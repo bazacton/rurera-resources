@@ -77,20 +77,18 @@
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
 
                                     @if(auth()->user()->isUser())
-                                        <div class="col-12 col-lg-12 mb-30 px-0">
-                                            <div class="store-stats panel-border bg-white rounded-sm p-20">
-                                                <ul>
-                                                    <li>
-                                                        <div class="store-item">
-                                                            <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                            <span class="item-label">
-                                                        Current Balance
-                                                        <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
-                                                    </span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <div class="store-stats panel-border bg-white rounded-sm p-20">
+                                            <ul>
+                                                <li>
+                                                    <div class="store-item">
+                                                        <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
+                                                        <span class="item-label">
+                                                    Current Balance
+                                                    <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
+                                                </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     @endif
 
