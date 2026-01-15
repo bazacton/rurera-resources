@@ -225,7 +225,6 @@
 								<option value="All" {{in_array('All', $columns_to_show)? 'selected' : ''}}>All</option>
 								<option value="Topic" {{in_array('Topic', $columns_to_show)? 'selected' : ''}}>Topic</option>
 								<option value="No of Parts" {{in_array('No of Parts', $columns_to_show)? 'selected' : ''}}>No of Parts</option>
-								<option value="Questions Expected" {{in_array('Questions Expected', $columns_to_show)? 'selected' : ''}}>Questions Expected</option>
 								<option value="Total Questions" {{in_array('Total Questions', $columns_to_show)? 'selected' : ''}}>Total Questions</option>
 
 
@@ -286,7 +285,6 @@
 									<span class="active" data-col_id="Topic">Topic</span>,
 									<span class="active" data-col_id="Sub Topic">Sub Topic</span>,
 									<span class="active" data-col_id="No of Parts">No of Parts</span>,
-									<span class="active" data-col_id="Questions Expected">Questions Expected</span>,
 									<span class="active" data-col_id="Total Questions">Total Questions</span>
 									<br>
 									<span class="remove-all">Remove All</span> |
@@ -314,7 +312,6 @@
                                     <th class="text-left freeze-cols1 top-row col-11 column-condition" data-col_id="Topic">Topic</th>
                                     <th class="text-left freeze-cols1 top-row col-21 column-condition" data-col_id="Sub Topic">Sub Topic</th>
 									<th class="text-left column-condition" data-col_id="No of Parts">No of Parts</th>
-									<th class="text-left column-condition" data-col_id="Questions Expected">Questions Expected</th>
 									<th class="text-left column-condition" data-col_id="Total Questions">Total Questions</th>
 									@if( !empty( $authors_list ) )
 
@@ -354,7 +351,6 @@
 
 
 															<td class="text-left column-condition" data-col_id="No of Parts">{{isset( $topic_data['no_of_parts'] )? $topic_data['no_of_parts'] : 0}}</td>
-															<td class="text-left column-condition" data-col_id="Questions Expected">{{isset( $topic_data['questions_expected'] )? $topic_data['questions_expected'] : 0}}</td>
 															<td class="text-left column-condition" data-col_id="Total Questions">{{isset( $topic_data['total_questions'] )? $topic_data['total_questions'] : 0}} <a href="{{$sub_topic_preview_link}}" target="_blank"><i class="fa fa-eye"></i></a> </td>
 
 															@if( !empty( $authors_list ) )
