@@ -326,14 +326,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         secondsString -= m * 60;
         var return_string = '';
         if( h > 0) {
-            var return_string = return_string + h + "h ";
+            var return_string = return_string + '<div class="time-box" id="hh">'+h+'</div><span class="colon">:</span>';
+        }else{
+            var return_string = return_string + '<div class="time-box" id="hh">'+h+'</div><span class="colon">:</span>';
         }
-        var quiz_type = '{{$quiz_type}}';
+        var quiz_type = '<?php echo e($quiz_type); ?>';
         if( (m > 0 || h > 0) || quiz_type != 'vocabulary') {
-            var return_string = return_string + (m < 10 ? '0' + m : m) + "m ";
+            var return_string = return_string + '<div class="time-box" id="mm">'+(m < 10 ? '0' + m : m)+'</div><span class="colon">:</span>';
         }
-        var return_string = return_string + (secondsString < 10 ? '0' + secondsString : secondsString);
-        return_string = return_string + 's';
+        //var return_string = return_string + (secondsString < 10 ? '0' + secondsString : secondsString);
+        var return_string = return_string + '<div class="time-box" id="ss">'+(secondsString < 10 ? '0' + secondsString : secondsString)+'</div>';
+        //return_string = return_string + 's';
+
+
+
         return return_string;
     }
 
