@@ -100,7 +100,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         </div>
                         <span class="coin-numbers">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                            <span class="total-earned-coins">1</span>
+                            <span class="total-earned-coins">0</span>
                         </span>
                     </div>
 
