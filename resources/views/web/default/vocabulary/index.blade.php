@@ -91,8 +91,8 @@
                                 <div class="spell-levels {{$spell_quiz_completed}}">
                                     <div class="spell-levels-top">
                                         <div class="spell-top-left">
-                                            <h3 class="font-18 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
-                                            <div class="spell-links">
+                                            <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
+                                            <div class="spell-links font-14 font-weight-500">
                                             <a href="javascript:;" class="spell-popup-btn" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                                                 Practice Words
                                             </a>
