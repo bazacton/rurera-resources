@@ -149,8 +149,6 @@ Sub Pages Style
 .categories-boxes .categories-card {position: relative; overflow: hidden; text-align: center; border-radius: 10px; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out; margin-bottom: 30px;}
 .categories-card.active,
 .categories-card:hover {box-shadow: 0 4px 0px 2px #D3D3D3; transform: scaleX(1.1);}
-.categories-card.active .categories-icon,
-.categories-card:hover .categories-icon {background-color: #4986d9;}
 .categories-boxes .categories-icon {padding: 35px 35px; color: #fff; border-radius: 10px 10px 0 0; transition: all 0.3s ease-in-out; display: flex; align-items: center; justify-content: center; min-height: 126px;}
 .categories-boxes .categories-icon img{width: 100%; position: absolute; left: 50%; top: 50%; -o-object-fit: contain; object-fit: contain; transform: translate(-50%, -50%);}
 .categories-boxes .categories-icon {position: relative; }
