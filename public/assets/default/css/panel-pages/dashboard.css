@@ -788,6 +788,29 @@ Right SideBar Style Start
     background-color: #ccc;
     border-radius: 100%;
 }
+.streak-society {
+    padding: 20px;
+}
+
+.society-content {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.society-content .icon-box span {
+    font-size: 1.8rem;
+    color: #ccc;
+}
+
+.society-content p {
+    color: #777;
+    line-height: normal;
+    padding-top: 10px;
+}
 /* Streak-dropdown style End */
 /* Store Stats Style Start */
 .store-stats ul {margin: 0; padding: 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 15px;}
