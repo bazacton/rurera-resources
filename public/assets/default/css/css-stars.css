@@ -84,7 +84,7 @@ body .lms-chapter-area .lms-chapter-ul >li ul > li a {vertical-align: top; paddi
 }
 /* .lms-chapter-area{counter-reset: my-sec-counter;} */
 .lms-chapter-ul-outer li ul {
-    padding: 15px 35px 15px;
+    padding: 0 35px 15px;
     display: flex;
     align-items: center;
     gap: 0 15px;
