@@ -89,10 +89,10 @@
             </div>
         </div>
         <div class="analytics-header">
-            <div class="header-text">
-                <span class="font-18 font-weight-bold">Date</span>
-                <span class="font-18 font-weight-bold">Avg Daily Mins</span>
-                <span class="font-18 font-weight-bold">Coins Earned</span>
+            <div class="header-text font-16 font-weight-bold text-dark-charcoal">
+                <span>Date</span>
+                <span>Avg Daily Mins</span>
+                <span>Coins Earned</span>
             </div>
         </div>
         <div class="accordion" id="analyticsAccordion">
@@ -101,7 +101,7 @@
             @php if(!isset( $analyticDataArray['practice_time'] ) || $analyticDataArray['practice_time'] == 0){ continue; } @endphp
             @php $report_date = strtotime(str_replace('_', '-', $date_str)); @endphp
             <div class="card">
-                <div class="card-header collapsed mb-0" data-toggle="collapse" role="button" data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
+                <div class="card-header collapsed mb-0 font-14" data-toggle="collapse" role="button" data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
                     <span>{{ dateTimeFormat($report_date,'d F Y') }}</span>
                     <span class="analytics-timespend float-right">
                         <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
