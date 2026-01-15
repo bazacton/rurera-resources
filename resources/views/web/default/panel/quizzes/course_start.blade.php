@@ -349,7 +349,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
             var question_solution = return_data.question_solution;
             var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
-            var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect11, but well done for trying' : 'Well done! Thats exactly right.';
+            var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
             $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
