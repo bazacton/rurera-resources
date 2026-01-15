@@ -261,7 +261,7 @@ if( !empty( $emojisArray ) ){
                                             <div class="col-12 col-lg-12 col-md-12 form-group">
                                                 <div class="input-field">
                                                     <!-- <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span> -->
-                                                    <input type="text" name="display_name" class="rurera-req-field" placeholder="Display Name" value="{{( $user->display_name != '')? $user->display_name : $user->first_name.' '.$user->last_name}}">
+                                                    <input type="text" name="display_name" class="rurera-req-field font-14" placeholder="Display Name" value="{{( $user->display_name != '')? $user->display_name : $user->first_name.' '.$user->last_name}}">
                                                 </div>
                                             </div>	
 											
