@@ -703,6 +703,10 @@ Right SideBar Style Start
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
 /* user-profile-dropdown style End */
 /* Streak-dropdown style Start */
+.streak-dropdown .streak-icon {
+    display: inline-flex;
+    align-items: center;
+}
 .streak-dropdown {
     position: relative;
 }
