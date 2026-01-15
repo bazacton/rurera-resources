@@ -77,14 +77,14 @@
                             <ul>
                                 <li>
                                     <div class="list-box">
-                                        <strong>{{$course->chapters->count()}}</strong>
-                                        <span>Units</span>
+                                        <strong class="font-19 font-weight-bold">{{$course->chapters->count()}}</strong>
+                                        <span class="font-14">Units</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="list-box">
-                                        <strong>{{$course->webinar_sub_chapters->count()}}</strong>
-                                        <span>Lessons</span>
+                                        <strong class="font-19 font-weight-bold">{{$course->webinar_sub_chapters->count()}}</strong>
+                                        <span class="font-14">Lessons</span>
                                     </div>
                                 </li>
                             </ul>
