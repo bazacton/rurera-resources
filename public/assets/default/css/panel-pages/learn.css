@@ -133,12 +133,18 @@ Sub Pages Style
 /* sorting-filter on Learn page Subjects style */
 
 /* sidebar-nav on Learn page Subjects style */
-.sidebar-nav {margin-bottom: 20px;}
-.sidebar-nav ul {margin: 0; padding: 0; display: flex; align-items: center; flex-wrap: wrap;overflow: hidden;}
-.sidebar-nav ul li {line-height: normal; margin: 0;}
-.sidebar-nav ul li a {font-size: 14px; font-weight: 400; color: var(--primary); padding: 0 25px 12px 0; display: block; transition: all 0.3s ease-in-out; position: relative;}
-.sidebar-nav ul li a:hover {color: #333;}
-.sidebar-nav ul li a:before {background-color: #ccc; border-radius: 100%; position: absolute; left: -15px; top: 50%; content: ""; height: 6px; width: 6px; margin-top: -8px;}
+.sidebar-nav,
+.chapter-nav {margin-bottom: 20px;}
+.sidebar-nav ul,
+.chapter-nav ul {margin: 0; padding: 0; display: flex; align-items: center; flex-wrap: wrap;overflow: hidden;}
+.sidebar-nav ul li,
+.chapter-nav ul li {line-height: normal; margin: 0;}
+.sidebar-nav ul li a,
+.chapter-nav ul li a {font-size: 14px; font-weight: 400; color: var(--primary); padding: 0 25px 12px 0; display: block; transition: all 0.3s ease-in-out; position: relative;}
+.sidebar-nav ul li a:hover,
+.chapter-nav ul li a:hover {color: #333;}
+.sidebar-nav ul li a:before,
+.chapter-nav ul li a:before {background-color: #ccc; border-radius: 100%; position: absolute; left: -15px; top: 50%; content: ""; height: 6px; width: 6px; margin-top: -8px;}
 /* sidebar-nav on Learn page Subjects style end */
 
 /* Categories Boxes Style Start */
