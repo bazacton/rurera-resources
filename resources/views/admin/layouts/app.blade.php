@@ -36,6 +36,18 @@
     @stack('styles_top')
     @stack('scripts_top')
 
+
+
+    <!-- Preload Main Font (CeraRoundPro) -->
+    <link rel="preload" href="/store/1/fonts/CeraRoundPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/store/1/fonts/CeraRoundPro-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/store/1/fonts/CeraRoundPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Preload RTL Font (Vazir) -->
+    <link rel="preload" href="/store/1/fonts/Vazir-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/store/1/fonts/Vazir-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/store/1/fonts/Vazir-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    
     <style>
         {!! !empty(getCustomCssAndJs('css')) ? getCustomCssAndJs('css') : '' !!}
 
