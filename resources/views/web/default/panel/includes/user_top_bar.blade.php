@@ -6,6 +6,64 @@
                 <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text"></span>
             </a>
         </li>
+        <li class="streak-dropdown">
+            <a href="#" class="streak-icon"></a>
+            <div class="streak-dropdown-content">
+                <div class="streak-days">
+                    <div class="streak-day-head">
+                        <div class="text-box">
+                            <h4><span>1</span> day streak</h4>
+                            <p class="sub">You've earned your longest streak ever!</p>
+                        </div>
+                        <div class="icon-box">
+                            <img src="/assets/default/svgs/fire-stroke.svg" height="800" width="800" alt="fire-stroke">
+                        </div>
+                    </div>
+                    <div class="days-list">
+                        <ul>
+                            <li>
+                                <span class="day">M</span>
+                                <span class="day-circle"></span>
+                            </li>
+                            <li>
+                                <span class="day">T</span>
+                                <span class="day-circle"></span>
+                            </li>
+                            <li>
+                                <span class="day">W</span>
+                                <span class="day-circle"></span>
+                            </li>
+                            <li>
+                                <span class="day">T</span>
+                                <span class="day-circle"></span>
+                            </li>
+                            <li>
+                                <span class="day">F</span>
+                                <span class="day-circle"></span>
+                            </li>
+                            <li>
+                                <span class="day">S</span>
+                                <span class="day-circle"></span>
+                            </li>
+                            <li>
+                                <span class="day">S</span>
+                                <span class="day-circle"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="streak-society">
+                    <div class="icon-box">
+                        <span>🔒</span>
+                    </div>
+                    <div class="text-box">
+                        <h5>Streak Society</h5>
+                        <p>Reach a 7 day streak to unlock exclusive rewards.</p>
+                    </div>
+                </div>
+                <button type="button" class="view-btn">VIEW MORE</button>
+            </div>
+        </li>
         @if(auth()->check() && (auth()->user()->isUser()))
         <li class="dropdown dropdown-list-toggle">
             <strong>
