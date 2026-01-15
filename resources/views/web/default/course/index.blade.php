@@ -117,77 +117,71 @@
                                     <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }}</h3>
                                     @if($chapter->ChapterYearTopicParts->count() > 0)
                                         <div class="lms-chapter-ul-outer">
-                                            <ul>
-                                                @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
+                                            @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
 
-                                                @php
+                                            @php
 
-                                                $total_completion = 0;
-                                                $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
+                                            $total_completion = 0;
+                                            $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
 
-                                                $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
-                                                $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
-                                                $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
+                                            $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
+                                            $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
+                                            $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
 
-                                                $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
+                                            $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
-                                                $completion_class = 'accuracy-not-started';
-                                                $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
-                                                $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
-                                                $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
-                                                $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
-
-
-                                                $completion_title = 'Not Started';
-                                                $completion_title = ($topic_accuracy > 0)? 'Practice Needed' : $completion_title;
-                                                $completion_title = ($topic_accuracy > 39)? 'Good' : $completion_title;
-                                                $completion_title = ($topic_accuracy > 59)? 'Very Good' : $completion_title;
-                                                $completion_title = ($topic_accuracy > 79)? 'Excellent' : $completion_title;
+                                            $completion_class = 'accuracy-not-started';
+                                            $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
+                                            $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
+                                            $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
+                                            $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
 
 
-                                                $completion_icon = 'above_0';
-                                                $completion_icon = ($topic_accuracy > 0)? 'above_25' : $completion_icon;
-                                                $completion_icon = ($topic_accuracy > 39)? 'above_50' : $completion_icon;
-                                                $completion_icon = ($topic_accuracy > 59)? 'above_80' : $completion_icon;
-                                                $completion_icon = ($topic_accuracy > 79)? 'above_80' : $completion_icon;
+                                            $completion_title = 'Not Started';
+                                            $completion_title = ($topic_accuracy > 0)? 'Practice Needed' : $completion_title;
+                                            $completion_title = ($topic_accuracy > 39)? 'Good' : $completion_title;
+                                            $completion_title = ($topic_accuracy > 59)? 'Very Good' : $completion_title;
+                                            $completion_title = ($topic_accuracy > 79)? 'Excellent' : $completion_title;
 
-                                                //$total_completion = 40;
-                                                    @endphp
 
-                                                    <li>
-                                                        <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
-                                                            <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
-                                                        <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
-                                                            <div class="chapter-tags">
-                                                                <a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
-                                                                <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a>
-                                                                <a href="javascript:;" class="course-progress-btn">Skill Summary</a>
-                                                                <div class="debug-details-holder">
-                                                                    <a href="javascript:;" class="debug-details-btn">Debug Details</a>
-                                                                    <div class="debug-details rurera-hide">
-                                                                        Part ID: {{$topicPartObj->id}}<br>
-                                                                        Quiz ID: {{$quizObj->id}}<br>
-                                                                        Difficulty Level: {{$user_difficulty_level}}<br>
-                                                                        Accuracy: {{$topic_accuracy}}<br>
-                                                                        Completion: {{$total_completion}}<br>
-                                                                    </div>
+                                            $completion_icon = 'above_0';
+                                            $completion_icon = ($topic_accuracy > 0)? 'above_25' : $completion_icon;
+                                            $completion_icon = ($topic_accuracy > 39)? 'above_50' : $completion_icon;
+                                            $completion_icon = ($topic_accuracy > 59)? 'above_80' : $completion_icon;
+                                            $completion_icon = ($topic_accuracy > 79)? 'above_80' : $completion_icon;
+
+                                            //$total_completion = 40;
+                                                @endphp
+                                                <div class="chapter-card">
+                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
+                                                    <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
+                                                    <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
+                                                        <div class="chapter-tags">
+                                                            <a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
+                                                            <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a>
+                                                            <a href="javascript:;" class="course-progress-btn">Skill Summary</a>
+                                                            <div class="debug-details-holder">
+                                                                <a href="javascript:;" class="debug-details-btn">Debug Details</a>
+                                                                <div class="debug-details rurera-hide">
+                                                                    Part ID: {{$topicPartObj->id}}<br>
+                                                                    Quiz ID: {{$quizObj->id}}<br>
+                                                                    Difficulty Level: {{$user_difficulty_level}}<br>
+                                                                    Accuracy: {{$topic_accuracy}}<br>
+                                                                    Completion: {{$total_completion}}<br>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
-                                                        <div class="percent-holder">
-                                                            <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
-                                                                <div class="circle_inner">
-                                                                    <div class="round_per"></div>
-                                                                </div>
+                                                    </div>
+                                                    
+                                                    <div class="percent-holder">
+                                                        <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+                                                            <div class="circle_inner">
+                                                                <div class="round_per"></div>
                                                             </div>
                                                         </div>
-
-                                                    </li>
-
-
-                                                @endforeach
-                                            </ul>
+                                                    </div>
+                                                </div>
+                                            @endforeach
                                         </div>
 
                                         @endif
