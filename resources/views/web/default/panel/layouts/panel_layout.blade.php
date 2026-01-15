@@ -970,9 +970,7 @@
 <script src="/assets/default/js/question-layout.js"></script>
 <script src="/assets/default/js//parts/main.min.js?ver={{$rand_no}}"></script>
 <script src="/assets/default/js/panel/public.min.js"></script>
-<script src="/assets/vendors/jquerygrowl/jquery.growl.js"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
-<script src="/assets/default/js/admin/sticky-sidebar.js?ver={{$rand_no}}"></script>
 <script>
 
     @if(session()->has('registration_package_limited'))

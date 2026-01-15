@@ -3,7 +3,6 @@
 
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/css-stars.css">
-    <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css"/>
 @endpush
 
@@ -389,12 +388,6 @@
 @endsection
 
 @push('scripts_bottom')
-    <script src="/assets/default/js/helpers.js"></script>
-    <script src="/assets/default/js/parts/time-counter-down.min.js"></script>
-    <script src="/assets/default/vendors/barrating/jquery.barrating.min.js"></script>
-    <script src="/assets/default/vendors/video/video.min.js"></script>
-    <script src="/assets/default/vendors/video/youtube.min.js"></script>
-    <script src="/assets/default/vendors/video/vimeo.js"></script>
     <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 
     <script>
@@ -430,13 +423,6 @@
 
     </script>
 
-    <script src="/assets/default/js/parts/comment.min.js"></script>
-    <script src="/assets/default/js/parts/video_player_helpers.min.js"></script>
-    <script src="/assets/default/js/parts/webinar_show.min.js"></script>
-    <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-    <script>
-        feather.replace()
-    </script>
     @if (!auth()->subscription('courses'))
         <div class="modal fade subscription-modal" id="subscription-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
