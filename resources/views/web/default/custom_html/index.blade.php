@@ -911,14 +911,14 @@
             <ul>
                 <li>
                     <div class="list-box">
-                        <strong>$2,340</strong>
-                        <span>Today's Sales</span>
+                        <strong class="font-19 font-weight-bold">$2,340</strong>
+                        <span class="font-14">Today's Sales</span>
                     </div>
                 </li>
                 <li>
                     <div class="list-box">
-                        <strong>35%</strong>
-                        <span>Overall Performance</span>
+                        <strong class="font-19 font-weight-bold">35%</strong>
+                        <span class="font-14">Overall Performance</span>
                     </div>
                 </li>
             </ul>
