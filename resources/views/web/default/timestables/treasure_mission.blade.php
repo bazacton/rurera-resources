@@ -72,20 +72,20 @@
                     <ul>
                         <li>
                             <div class="list-box">
-                                <strong>Tables</strong>
-                                <span>{{isset( $levelObj['per_stage_questions'] )? $levelObj['per_stage_questions'] : 0}} Questions per Stage</span>
+                                <strong class="font-19 font-weight-bold">Tables</strong>
+                                <span class="font-14">{{isset( $levelObj['per_stage_questions'] )? $levelObj['per_stage_questions'] : 0}} Questions per Stage</span>
                             </div>
                         </li>
                         <li>
                             <div class="list-box">
-                                <strong>Speed</strong>
-                                <span>{{isset( $levelObj['time_interval'] )? $levelObj['time_interval'] : 0}} Seconds per Question</span>
+                                <strong class="font-19 font-weight-bold">Speed</strong>
+                                <span class="font-14">{{isset( $levelObj['time_interval'] )? $levelObj['time_interval'] : 0}} Seconds per Question</span>
                             </div>
                         </li>
                         <li>
                             <div class="list-box">
-                                <strong>Coins</strong>
-                                <span>{{isset( $levelObj['coins'] )? $levelObj['coins'] : 0}} per Correct Answer</span>
+                                <strong class="font-19 font-weight-bold">Coins</strong>
+                                <span class="font-14">{{isset( $levelObj['coins'] )? $levelObj['coins'] : 0}} per Correct Answer</span>
                             </div>
                         </li>
                     </ul>
