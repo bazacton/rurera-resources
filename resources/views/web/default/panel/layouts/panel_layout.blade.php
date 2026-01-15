@@ -388,7 +388,8 @@
                                     </div>
                                 </div>
                                 @endif
-                                @if(auth()->user()->isUser())
+                                @if(auth()->user()->isUser() && !request()->is('quests'))
+
                                 @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
                                     <div class="col-12 col-lg-12 mb-30">
                                         <div class="quests-list panel-border bg-white rounded-sm p-20">
