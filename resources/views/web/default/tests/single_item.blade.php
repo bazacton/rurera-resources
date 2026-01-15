@@ -15,8 +15,8 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
 <tr>
     <td>
         <img src="{{$quiz_image}}" alt="quiz_image" width="59" height="59">
-        <h4 class="font-19 font-weight-bold ccc"><a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}">{{$rowObj->getTitleAttribute()}}</a>
-            <br> <span class="sub_label">{{$rowObj->no_of_questions}} Question(s),</span> <span class="sub_label">Time:{{$rowObj->time}}m,</span> <span class="sub_label">{{getQuizTypeTitle($rowObj->quiz_type)}}</span>
+        <h4 class="font-16 font-weight-bold text-dark-charcoal"><a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}">{{$rowObj->getTitleAttribute()}}</a>
+            <br> <span class="sub_label font-14">{{$rowObj->no_of_questions}} Question(s),</span> <span class="sub_label font-14">Time:{{$rowObj->time}}m,</span> <span class="sub_label font-14">{{getQuizTypeTitle($rowObj->quiz_type)}}</span>
 			@if( $rowObj->time == 10)
 				<img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
 			@endif
@@ -25,10 +25,10 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
     </td>
     <td class="text-right {{$button_class}}">
         @if (auth()->check() && auth()->user()->isParent())
-            <a href="javascript:;" class="rurera-list-btn">Assign</a>
+            <a href="javascript:;" class="rurera-list-btn font-14">Assign</a>
         @endif
         @if (auth()->check() && auth()->user()->isUser())
-            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="rurera-list-btn {{ subscriptionCheckLink('bookshelf') }}">{{$button_label}}</a>
+            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="rurera-list-btn font-14 {{ subscriptionCheckLink('bookshelf') }}">{{$button_label}}</a>
         @endif
     </td>
 </tr>
