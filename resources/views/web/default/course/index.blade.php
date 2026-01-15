@@ -170,7 +170,14 @@
                                                                                         <li><a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a></li>
                                                                                         <li><a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a></li>
                                                                                         <li><a href="javascript:;" class="course-progress-btn">Skill Summary</a></li>
+                                                                                        <li><a href="javascript:;">Debug Details</a></li>
                                                                                     </ul>
+                                                                                </div>
+                                                                                <div class="debug-details">
+                                                                                    Part ID: {{$topicPartObj->id}}<br>
+                                                                                    Quiz ID: {{$quizObj->id}}<br>
+                                                                                    Difficulty Level: {{$user_difficulty_level}}<br>
+                                                                                    Accuracy: {{$topic_accuracy}}<br>
                                                                                 </div>
                                                                                 
                                                                                 <div class="percent-holder">
