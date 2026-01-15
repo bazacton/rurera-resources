@@ -359,6 +359,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var notification_class = 'correct';
             var notification_label = 'Well done! Thats exactly right.';
             var notification_sound = 'correct-answer.mp3';
+            var earned_coins = $(".total-earned-coins").html();
+            earned_coins = parseInt(earned_coins)+1;
+            $(".total-earned-coins").html(earned_coins);
+
+
             $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
