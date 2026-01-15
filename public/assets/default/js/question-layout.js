@@ -578,11 +578,11 @@ function init_question_functions() {
     }
 
 
-    $("p.given").html(chunkWords($("p.given").text()));
+    /*$("p.given").html(chunkWords($("p.given").text()));
     $("span.given").draggable({
         helper: "clone",
         revert: "invalid"
-    });
+    });*/
     //makeDropText($("p.given span.w"));
 
     if( $(".droppable_area").length > 0) {
