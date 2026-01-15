@@ -73,7 +73,7 @@
                         <!-- Panel Right Sidebar Start -->
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar">
                             <div class="row">
-                                <div class="col-12 col-lg-12">
+                                
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
 
                                     @if(auth()->user()->isUser())
@@ -159,7 +159,7 @@
                                         </ul>
                                     </div>
                                     @endif
-                                </div>
+                                
                                 
                                 @if(auth()->user()->isUser())
                                 @if(request()->is('panel'))
