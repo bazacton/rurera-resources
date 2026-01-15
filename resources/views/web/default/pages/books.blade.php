@@ -34,7 +34,7 @@
                                             <div class="search-input bg-white">
                                                 <form action="/books" method="get">
                                                     <div class="form-group d-flex align-items-center m-0">
-                                                        <input type="text" name="search" class="form-control border-0 font-16" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
+                                                        <input type="text" name="search" class="form-control border-0 font-14" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
                                                         <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
                                                     </div>
                                                 </form>
@@ -50,8 +50,8 @@
                                             <div class="col-12 col-lg-2 col-md-3 col-sm-3">
                                                 <div class="img-holder">
                                                     <figure>
-                                                        <a href="/books/{{$bookData->book_slug}}" itemprop="url" class="{{ subscriptionCheckLink('bookshelf') }}">
-                                                            <img src="{{$bookData->cover_image }}" alt="#" height="182" width="137" itemprop="image"/>
+                                                        <a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}">
+                                                            <img src="{{$bookData->cover_image }}" alt="#" height="182" width="137"/>
                                                         </a>
                                                     </figure>
                                                 </div>
@@ -59,20 +59,20 @@
 
                                             <div class="col-12 col-lg-6 col-md-5 col-sm-5">
                                                 <div class="text-holder">
-                                                    <h3 class="font-18 font-weight-bold mb-5"><a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}" itemprop="url">{{$bookData->book_title}}</a>
+                                                    <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5"><a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}">{{$bookData->book_title}}</a>
                                                     </h3>
-                                                    <ul itemprop="books info list">
-                                                        <li><span itemprop="info text">Reading Level :</span>{{$bookData->reading_level }}</li>
-                                                        <li><span itemprop="info text">Interest Area :</span>{{$bookData->interest_area }}</li>
-                                                        <li><span itemprop="info text">Pages :</span>{{$bookData->no_of_pages }}</li>
-                                                        <li><span itemprop="info text">Points :</span>{{$bookData->reading_points }} <img src="../assets/default/svgs/coin-earn.svg"
-                                                                                                                                          itemprop="svg image" width="20" height="24" alt="#"/></li>
+                                                    <ul class="font-14">
+                                                        <li><span>Reading Level :</span>{{$bookData->reading_level }}</li>
+                                                        <li><span>Interest Area :</span>{{$bookData->interest_area }}</li>
+                                                        <li><span>Pages :</span>{{$bookData->no_of_pages }}</li>
+                                                        <li><span>Points :</span>{{$bookData->reading_points }} <img src="../assets/default/svgs/coin-earn.svg"
+                                                                                                                                          width="20" height="24" alt="#"/></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4 col-md-4 col-sm-4">
                                                 <div class="btn-holder">
-                                                    <a href="/books/{{$bookData->book_slug}}" class="read-btn {{ subscriptionCheckLink('bookshelf') }}" itemprop="url">
+                                                    <a href="/books/{{$bookData->book_slug}}" class="read-btn font-14 {{ subscriptionCheckLink('bookshelf') }}">
                                                         <span class="btn-icon">
                                                             <img src="/assets/default/svgs/book-open.svg" alt="book open" width="182" height="150">
                                                         </span>
