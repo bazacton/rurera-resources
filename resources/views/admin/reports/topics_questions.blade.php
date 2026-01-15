@@ -351,7 +351,8 @@
 
 
 															<td class="text-left column-condition" data-col_id="No of Parts">{{isset( $topic_data['no_of_parts'] )? $topic_data['no_of_parts'] : 0}}</td>
-															<td class="text-left column-condition" data-col_id="Total Questions">{{isset( $topic_data['total_questions'] )? $topic_data['total_questions'] : 0}} <a href="{{$sub_topic_preview_link}}" target="_blank"><i class="fa fa-eye"></i></a> </td>
+															<td class="text-left column-condition" data-col_id="Total Questions">{{isset( $topic_data['total_questions'] )? $topic_data['total_questions'] : 0}}
+                                                                / {{isset( $topic_data['review_required_questions'] )? $topic_data['review_required_questions'] : 0}} <a href="{{$sub_topic_preview_link}}" target="_blank"><i class="fa fa-eye"></i></a> </td>
 
 															@if( !empty( $authors_list ) )
 
