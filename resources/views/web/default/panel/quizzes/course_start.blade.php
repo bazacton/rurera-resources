@@ -16,8 +16,8 @@ $timer_counter = $time_interval;
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
-$correct_answer_explaination = isset($correct_answer_explaination)? $correct_answer_explaination : 0;
-$incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
+$correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
+$incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 <div class="content-section">
 
