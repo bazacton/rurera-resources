@@ -14,7 +14,7 @@
                 <div class="streak-days">
                     <div class="streak-day-head">
                         <div class="text-box">
-                            <h4><span>1</span> day streak</h4>
+                            <h4 class="font-18 font-weight-bold mb-5"><span>1</span> day streak</h4>
                             <p class="sub">You've earned your longest streak ever!</p>
                         </div>
                         <div class="icon-box">
