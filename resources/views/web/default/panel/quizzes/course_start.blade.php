@@ -96,6 +96,21 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
             <div class="justify-content-center">
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
 
+                    <div class="quiz-time-bar mb-80 pt-15">
+                        <div class="timer-wrap">
+                            <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+
+                            <div class="time-box" id="hh">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="mm">05</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="ss">15</div>
+                        </div>
+                        <span class="coin-numbers">
+                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                            <span class="total-earned-coins">1</span>
+                        </span>
+                    </div>
 
 
 
