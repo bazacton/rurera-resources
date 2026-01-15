@@ -2,18 +2,18 @@
     <div class="col-12 lms-chapter-area">
         <div class="chapter-nav">
             <ul>
-             <li><a href="#">Subjects</a></li>
-             <li><a href="#">Scince</a></li>
-             <li><a href="#">History</a></li>
-             <li><a href="#">Geography</a></li>
-             <li><a href="#">Maths</a></li>
-             <li><a href="#">English</a></li>
-             <li><a href="#">Art</a></li>
-             <li><a href="#">Language</a></li>
-             <li><a href="#">Design and technology</a></li>
-             <li><a href="#">PE</a></li>
-             <li><a href="#">Music</a></li>
-             <li><a href="#">Computing</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Subjects</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Scince</a></li>
+             <li><a href="#" class="font-14 font-weight-500">History</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Geography</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Maths</a></li>
+             <li><a href="#" class="font-14 font-weight-500">English</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Art</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Language</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Design and technology</a></li>
+             <li><a href="#" class="font-14 font-weight-500">PE</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Music</a></li>
+             <li><a href="#" class="font-14 font-weight-500">Computing</a></li>
             </ul> 
          </div>
         <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
