@@ -140,7 +140,7 @@ Sub Pages Style
 .sidebar-nav ul li,
 .chapter-nav ul li {line-height: normal; margin: 0;}
 .sidebar-nav ul li a,
-.chapter-nav ul li a {font-size: 14px; font-weight: 400; color: var(--primary); padding: 0 25px 12px 0; display: block; transition: all 0.3s ease-in-out; position: relative;}
+.chapter-nav ul li a {color: var(--primary); padding: 0 25px 12px 0; display: block; transition: all 0.3s ease-in-out; position: relative;}
 .sidebar-nav ul li a:hover,
 .chapter-nav ul li a:hover {color: #333;}
 .sidebar-nav ul li a:before,
