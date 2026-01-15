@@ -199,7 +199,7 @@
                                     @if( !empty( $profile_navs ) )
                                     <div class="sidebar-students-list db-members mb-30">
                                         <div class="card p-15">
-                                            <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
+                                            <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
                                                 Switch Accounts
                                                 <a href="/panel/students" class="view-all font-weight-bold font-16">View All</a>
                                             </h3>
@@ -396,7 +396,7 @@
                                                                 <img src="{{$quest_icon}}" alt="quests image">
                                                             </div>
                                                             <div class="item-text">
-                                                                <h5>{{$questObj->title}}</h5>
+                                                                <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
                                                                 <div class="levels-progress horizontal">
                                                                     <span class="progress-box">
                                                                         <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
