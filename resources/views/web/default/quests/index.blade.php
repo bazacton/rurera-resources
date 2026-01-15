@@ -31,14 +31,14 @@
                                             <img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
                                         </div>
                                         <div class="item-text">
-                                            <h5 class="font-18 font-weight-bold">{{$questObj->title}}</h5>
+                                            <h5 class="font-16 font-weight-bold text-dark-charcoal">{{$questObj->title}}</h5>
                                             <div class="levels-progress horizontal">
                                                 <span class="progress-box">
                                                     <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
                                                 </span>
                                                 <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
                                             </div>
-                                            <span class="progress-icon font-16">
+                                            <span class="progress-icon font-14">
                                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
                                                 +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
                                             </span>
