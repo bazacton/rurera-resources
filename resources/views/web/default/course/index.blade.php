@@ -71,7 +71,7 @@
                                 <div class="col-12 lms-chapter-area">
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="sidebar-nav mb-30 mt-15">
+                                            <div class="chapter-nav mb-30 mt-15">
 
                                                 <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
                                                     <div class="stats-user">
