@@ -656,7 +656,7 @@ Right SideBar Style Start
 .user-profile-dropdown .sub-dropdown {position: relative; z-index: 1; margin-left: -20px; padding-left: 20px;}
 .user-profile-dropdown .sidenav-item-collapse {position: absolute; top: 0; right: 100%; background-color: #fff; visibility: hidden; opacity: 0; width: 170px; padding: 15px; text-align: right; border-radius: 10px; box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .16); transition: all .3s; transform: translate3d(0, 54px, 0);}
 .user-profile-dropdown .sub-dropdown:hover .sidenav-item-collapse {opacity: 1; visibility: visible; transform: translate3d(0, 0, 0);}
-.user-profile-icons {margin-bottom: 15px;}
+.user-profile-icons {margin-bottom: 15px; width: 100%;}
 .user-profile-icons ul {display: flex; align-items: center; flex-wrap: wrap; gap: 12px 25px; justify-content: flex-end; width: 100%;}
 .user-profile-icons > ul > li {display: inline-flex;align-items: center;}
 .user-profile-icons .dropdown > a > img,
