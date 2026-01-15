@@ -100,7 +100,7 @@
                                                 <ul>
                                                     @foreach($course->chapters as $chapter)
                                                         @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                                            <li><a href="#subject_{{$chapter->id}}" class="font-15 font-weight-500">{{ $chapter->title}}</a></li>
+                                                            <li><a href="#subject_{{$chapter->id}}" class="font-14 font-weight-500">{{ $chapter->title}}</a></li>
                                                         @endif
                                                     @endforeach
                                                 </ul>
