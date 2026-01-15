@@ -179,8 +179,9 @@ Sub Pages Style
     position: absolute;
     left: 50%;
     top: 50%;
-    font-weight: 400;
+    font-weight: 600;
     transform: translate(-50%, -50%);
+    font-size: 0.775rem;
 }
 .categories-card.medium .subject-info {display: block; text-align: left;}
 .categories-card.medium .learning-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-weight: 600; text-transform: uppercase; color: #666;}
