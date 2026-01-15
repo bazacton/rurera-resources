@@ -113,7 +113,7 @@
                     <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                         <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
                             @foreach($course->chapters as $chapter)
-                                <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}"><div class="element-title mb-20"><h2 class="mb-0 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }}</h2></div>
+                                <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}"><div class="element-title mb-20"><h3 class="mb-0 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }}</h3></div>
 
                                     @if($chapter->ChapterYearTopicParts->count() > 0)
                                         <div class="lms-chapter-ul-outer">
