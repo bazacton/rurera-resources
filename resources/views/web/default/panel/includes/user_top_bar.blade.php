@@ -65,7 +65,10 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="view-btn">VIEW MORE</button>
+                <div class="btn-holder">
+                    <button type="button" class="view-btn">VIEW MORE</button>
+                </div>
+                
             </div>
         </li>
         @if(auth()->check() && (auth()->user()->isUser()))
