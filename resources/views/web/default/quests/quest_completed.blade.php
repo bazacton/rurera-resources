@@ -18,7 +18,7 @@
 							<img src="/assets/default/img/types/practice.svg" alt="learning image" width="50" height="50">
 						</div>
 						<div class="item-text">
-							<h5 class="font-18 font-weight-bold">90% Completion in 2 lessons</h5>
+							<h5 class="font-16 font-weight-bold text-dark-charcoal">90% Completion in 2 lessons</h5>
 							<div class="levels-progress horizontal">
 								<span class="progress-box">
 									<span class="progress-count" data-progress="50"><span class="progress-numbers">0%</span></span>
@@ -26,7 +26,7 @@
 								</span>
 								
 							</div>
-							<span class="progress-icon font-16">
+							<span class="progress-icon font-14">
 								<img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
 								+100
 							</span>
