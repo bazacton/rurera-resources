@@ -71,7 +71,7 @@
                         </div>
                         <!-- Panel Content End -->
                         <!-- Panel Right Sidebar Start -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-15 panel-right-sidebar">
                                 
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
 
