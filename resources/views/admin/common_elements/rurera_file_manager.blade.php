@@ -303,9 +303,9 @@
         window.PdfUploadQuestion.userResponse = window.PdfUploadQuestion.userResponse || [];
 
         const CONFIG = {
-            maxFiles: 5,
+            maxFiles: 20,
             maxFileSizeBytes: 4 * 1024 * 1024,
-            allowedExtensions: ['.pdf', '.docx', '.svg', '.jpg', '.jpeg'],
+            allowedExtensions: ['.pdf', '.docx', '.svg', '.jpg', '.jpeg', '.png'],
             allowedMimeTypes: [
                 'application/pdf',
                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
