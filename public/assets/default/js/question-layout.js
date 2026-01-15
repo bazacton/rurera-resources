@@ -453,7 +453,7 @@ $(document).on('click', '.lms-quest-btn', function (e) {
 
 
 function sort_init() {
-    makeDropText($("p.given span.w"));
+    //makeDropText($("p.given span.w"));
 
 }
 
@@ -461,7 +461,6 @@ function sort_init() {
 function init_question_functions() {
 
 
-    sort_init();
 
 
     $(document).on('click', '.match-question .stems li', function (e) {
@@ -584,7 +583,7 @@ function init_question_functions() {
         helper: "clone",
         revert: "invalid"
     });
-    makeDropText($("p.given span.w"));
+    //makeDropText($("p.given span.w"));
 
     if( $(".droppable_area").length > 0) {
 
@@ -816,7 +815,7 @@ function init_question_functions() {
             helper: "clone",
             revert: "invalid"
         });
-        makeDropText($("p.given span.w"));
+        //makeDropText($("p.given span.w"));
 
         if($(".lms-sorting-fields").length > 0) {
             $('.lms-sorting-fields').sortable({
