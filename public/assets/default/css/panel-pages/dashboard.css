@@ -732,13 +732,13 @@ Right SideBar Style Start
     content: "";
     clip-path: polygon(100% 0, 100% 100%, 0% 100%);
     position: absolute;
-    top: -8px;
+    top: -6px;
     left: 50%;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     background: #ff9600;
     transform: rotate(-135deg);
-    margin-left: -14px;
+    margin-left: -12px;
 }
 .streak-days {
     background-color: #ff9600;
