@@ -155,38 +155,34 @@
             </div>
 
             <div class="type-list-data multi-player-data rurera-hide">
-                <div class="col-12 col-md-12 col-lg-12">
-                    <div class="grid-card timestables-mode-data">
-                        <div class="text-holder">
-                            <h3 class="font-16 font-weight-bold">
-                            <a class="grid-btn" href="javascript:;">Tournament</a>
-                                <span class="title-label">Coming Soon</span>
-                            </h3>
-                        </div>
-                        <div class="img-holder">
-                            <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
-                        </div>
-                        <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
+                <div class="grid-card timestables-mode-data">
+                    <div class="text-holder">
+                        <h3 class="font-16 font-weight-bold">
+                        <a class="grid-btn" href="javascript:;">Tournament</a>
+                            <span class="title-label">Coming Soon</span>
+                        </h3>
                     </div>
+                    <div class="img-holder">
+                        <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
+                    </div>
+                    <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
                 </div>
-                <div class="col-12 col-md-12 col-lg-12">
-                    <div class="grid-card timestables-mode-data">
-                        <div class="text-holder">
-                            <h3 class="font-16 font-weight-bold">
-                                <a class="grid-btn" href="javascript:;">Global Arena
-                                    <span class="title-label">Coming Soon</span>
-                                </a>
-                            </h3>
-                        </div>
-                        <div class="img-holder">
-                            <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                        </div>
-                        <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
-
+                <div class="grid-card timestables-mode-data">
+                    <div class="text-holder">
+                        <h3 class="font-16 font-weight-bold">
+                            <a class="grid-btn" href="javascript:;">Global Arena
+                                <span class="title-label">Coming Soon</span>
+                            </a>
+                        </h3>
                     </div>
+                    <div class="img-holder">
+                        <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                    </div>
+                    <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
+
                 </div>
             </div>
-            <div class="col-12 col-lg-12 col-md-12 rurera-hide">
+            <div class="rurera-hide">
                 <div class="preferences panel-border bg-white rounded-sm p-20">
                     <h5 class="font-19 font-weight-bold">Preferences</h5>
                     <h6 class="font-weight-500 mb-20">Lesson experience</h6>
