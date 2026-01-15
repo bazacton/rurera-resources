@@ -75,7 +75,7 @@
 
                                                 <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
                                                     <div class="stats-user">
-                                                        <h1>{{ $course->title }}</h1>
+                                                        <h2 class="font-22 mb-0">{{ $course->title }}</h2>
                                                     </div>
                                                     @if(isset( $course->learn_icon ) && $course->learn_icon != '')
                                                         <div class="course-icon"><img src="{{$course->learn_icon}}" alt="course-icon" width="150" height="150"></div>
