@@ -119,7 +119,7 @@
                                             </div>
                                             @endif
                                         </div>
-                                        <div class="spell-top-right">
+                                        <div class="spell-top-right font-14">
                                             <a href="/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><img src="/assets/default/img/skills-icon.png" alt=""><span>{{$total_questions}}</span>word(s)</a>
                                         </div>
                                     </div>
