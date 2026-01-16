@@ -2786,6 +2786,33 @@ Quiz Check Answers Page Style End
     text-align: center;
     font-weight: 500;
 }
+.learn-test-start {
+    text-align: center;
+}
+.learn-chats .avatar {
+    height: 80px;
+    width: 80px;
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+.learn-chats {
+    margin: 0 0 25px;
+}
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.chat-box.left-bottom .avatar:last-child {
+    margin-left: auto;
+}
+.avatar.active {
+    height: 110px;
+    width: 110px;
+}
+.chat-box.left-top .avatar:last-child {
+    margin-left: auto;
+}
 /* --- END: Finish Steps --- */
 /* ======================================================== */
 
