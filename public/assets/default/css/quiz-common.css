@@ -2845,26 +2845,22 @@ Quiz Check Answers Page Style End
     border-bottom: 1px solid #ddd;
     padding: 15px;
 }
-.start-btn {
+.quiz-start-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8px;
     padding: 12px 40px;
     border-radius: 999px;
     border: none;
-    background: #111827;
+    background: var(--primary);
     color: #f9fafb;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
-    box-shadow: 0 12px 20px -10px rgba(15, 23, 42, 0.8);
 }
-.start-btn:hover {
-    background: #020617;
+.quiz-start-btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 18px 30px -16px rgba(15, 23, 42, 0.9);
 }
 .learn-test-title {
     margin: 0 0 25px;
