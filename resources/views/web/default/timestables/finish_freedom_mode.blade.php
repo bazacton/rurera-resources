@@ -58,7 +58,7 @@
         <a href="javascript:;" class="review-btn finish-next-step">Next</a>
     </div>
 </div>
-<div class="finish-steps">
+<div class="finish-steps rurera-hide">
     <div class="question-label cloud_text medium left_bottom">
         <span class="cloud_text_element">
         <span class="cloud_avatar">
