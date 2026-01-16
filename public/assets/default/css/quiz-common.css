@@ -2836,6 +2836,9 @@ Quiz Check Answers Page Style End
     text-align: center;
     font-weight: 500;
 }
+body.quiz-area-page:has(.learn-test-start) {
+    overflow: visible;
+}
 .learn-test-start {
     padding-top: 50px;
     text-align: center;
