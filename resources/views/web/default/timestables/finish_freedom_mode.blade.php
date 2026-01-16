@@ -1,4 +1,64 @@
 <div class="finish-steps">
+    <div class="learn-test-start">
+      <div class="learn-test-title">
+        <h2>Characteristics of living organisms</h2>
+        <p>Characteristics of living organisms</p>
+      </div>
+      <div class="learn-chats">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="chat-box left-bottom">
+            <div class="avatar active">
+              <img src="" alt="">
+            </div>
+            <div class="avatar">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="avatar">
+              <img src="" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="chat-box left-top">
+            <div class="avatar">
+              <img src="" alt="">
+            </div>
+            <div class="avatar active">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="card-box">
+          <div class="stat-label">Question</div>
+          <div class="stat-value">4</div>
+        </div>
+        <div class="card-box">
+          <div class="stat-label">Time for quiz</div>
+          <div class="stat-value">20 min</div>
+        </div>
+        <div class="card-box">
+          <div class="stat-label">Earn up to</div>
+          <div class="stat-value stat-value-accent">27 XP</div>
+        </div>
+        <div class="card-box">
+          <div class="stat-label">Attempts</div>
+          <div class="stat-value">2</div>
+        </div>
+      </div>
+      <div class="btn-holder">
+        <button class="start-btn" type="button">Start quiz</button>
+      </div>
+    </div>
+    <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+        <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
+        <a href="javascript:;" class="review-btn finish-next-step">Next</a>
+    </div>
+</div>
+<div class="finish-steps">
     <div class="question-label cloud_text medium left_bottom">
         <span class="cloud_text_element">
         <span class="cloud_avatar">
