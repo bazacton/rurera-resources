@@ -4,7 +4,7 @@
         <h2>Characteristics of living organisms</h2>
         <p>Characteristics of living organisms</p>
       </div>
-      <div class="learn-chats">
+      <div class="learn-chats row">
         <div class="col-lg-4 col-md-4 col-12">
           <div class="chat-box left-bottom">
             <div class="avatar active">
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-12">
-          <div class="avatar">
+          <div class="avatar main-avatar">
               <img src="" alt="">
           </div>
         </div>
