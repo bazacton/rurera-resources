@@ -38,15 +38,11 @@
 
 
 
-    <!-- Preload Main Font (CeraRoundPro) -->
-    <link rel="preload" href="/store/1/fonts/CeraRoundPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/store/1/fonts/CeraRoundPro-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/store/1/fonts/CeraRoundPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload Main Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Preload RTL Font (Vazir) -->
-    <link rel="preload" href="/store/1/fonts/Vazir-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/store/1/fonts/Vazir-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/store/1/fonts/Vazir-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         {!! !empty(getCustomCssAndJs('css')) ? getCustomCssAndJs('css') : '' !!}
