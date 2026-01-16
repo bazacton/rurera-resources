@@ -514,7 +514,6 @@ var container = null;
 
 /* Get active question container */
 function getActiveContainer() {
-    alert('Hello test');
     var activeSection = document.querySelector('.rurera-question-block.active');
     return activeSection
         ? activeSection.querySelector('.question-inner-step-area .left-content')
