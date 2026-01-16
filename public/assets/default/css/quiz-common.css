@@ -1528,7 +1528,6 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: -40px 0 30px;
 }
 .quiz-time-bar .coin-numbers {
     display: inline-flex;
