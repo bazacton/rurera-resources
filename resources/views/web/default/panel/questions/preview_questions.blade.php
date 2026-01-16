@@ -547,16 +547,13 @@ updateScrollState();
     function wrapRawLatex() {
         console.log('wrapRawLatex');
 
-        const mathLikePattern = /([a-zA-Z0-9]\s*[\^_=+\-\/]\s*[a-zA-Z0-9{])/;
-
-        // 🔹 Target BOTH containers
         const containers = document.querySelectorAll(
             '.question-layout, .question-explaination'
         );
 
         containers.forEach(container => {
 
-            // 1️⃣ Normal text nodes (scoped)
+            // 1️⃣ Normal text nodes
             container.querySelectorAll('*:not(script):not(style)').forEach(el => {
                 if (el.children.length > 0) return;
 
@@ -570,8 +567,8 @@ updateScrollState();
                     text.includes('\\[')
                 ) return;
 
-                // Detect LaTeX OR math-like expressions
-                if (text.includes('\\') || mathLikePattern.test(text)) {
+                // ✅ STRICT: only real LaTeX commands
+                if (/\\[a-zA-Z]+/.test(text)) {
                     el.innerHTML = `$$${text}$$`;
                 }
             });
@@ -592,7 +589,7 @@ updateScrollState();
 
         });
 
-        // 3️⃣ MathJax render (ONLY these containers)
+        // 3️⃣ MathJax render
         if (window.MathJax?.typesetPromise) {
             MathJax.typesetClear(containers);
             MathJax.typesetPromise(containers).catch(err =>
