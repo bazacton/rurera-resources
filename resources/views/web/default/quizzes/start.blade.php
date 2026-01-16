@@ -117,7 +117,8 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <button class="start-btn" type="button">Start quiz</button>
+                                <button data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
+                                    class="quiz-start-btn start-spell-quiz btn btn-primary btn-sm mt-30" type="button">Start quiz</button>
                             </div>
                         </div>
                         <div class="container">
@@ -129,8 +130,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                             {!! $quiz->quiz_instructions !!}
                                         </div>
                                     @endif
-                                    <a href="javascript:;" data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
-                                    class="quiz-start-btn start-spell-quiz btn btn-primary btn-sm mt-30">{{isset( $button_label)? $button_label : 'Start Test'}} <img src="/assets/default/svgs/clock.svg" alt="clock"></a>
+                                    <a href="javascript:;" >{{isset( $button_label)? $button_label : 'Start Test'}} <img src="/assets/default/svgs/clock.svg" alt="clock"></a>
                                     <div class="instruction-text rurera-hide">
                                         <h3>INSTRUCTIONS</h3>
                                         <h4>Setting Up Your Page</h4>
