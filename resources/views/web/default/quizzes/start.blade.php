@@ -75,25 +75,25 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                 <div class="col-lg-4 col-md-4 col-12">
                                 <div class="chat-box left-bottom">
                                     <div class="avatar active">
-                                    <img src="/assets/default/img/left.png" alt="left">
+                                    <img src="/assets/default/svgs/avatar-left-top.svg" alt="avatar-left-top">
                                     </div>
                                     <div class="avatar">
-                                    <img src="/assets/default/img/left.png" alt="left">
+                                    <img src="/assets/default/svgs/avatar-left.svg" alt="avatar-left">
                                     </div>
                                 </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                 <div class="avatar main-avatar">
-                                    <img src="/assets/default/img/main.png" alt="main">
+                                    <img src="/assets/default/svgs/avatar-main.svg" alt="avatar-main">
                                 </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                 <div class="chat-box left-top">
                                     <div class="avatar">
-                                    <img src="/assets/default/img/right.png" alt="right">
+                                    <img src="/assets/default/svgs/avatar-right-top.svg" alt="avatar-right-top">
                                     </div>
                                     <div class="avatar active">
-                                    <img src="/assets/default/img/right.png" alt="right">
+                                    <img src="/assets/default/svgs/avatar-right.svg" alt="avatar-right">
                                     </div>
                                 </div>
                                 </div>
