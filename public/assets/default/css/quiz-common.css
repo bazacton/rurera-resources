@@ -3120,6 +3120,10 @@ Quiz Check Answers Page Style End
         height: 15px;
         width: 15px;
     }
+    .rur-settings-modal .modal-footer button {
+        height: auto;
+        font-weight: 500;
+    }
     /* Demo UI blocks */
     .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
     .rur-muted { color: #6c757d; }
