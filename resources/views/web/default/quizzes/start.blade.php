@@ -66,8 +66,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
 
                     <div class="learning-content-box learning-start-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
-                        <div class="finish-steps">
-                            <div class="learn-test-start mx-auto pt-0">
+                        <div class="learn-test-start mx-auto pt-0">
                             <div class="learn-test-title">
                                 <h2 class="font-22 font-weight-bold">Characteristics of living organisms</h2>
                                 <p class="font-16 text-dark-charcoal">Characteristics of living organisms</p>
@@ -119,7 +118,6 @@ $is_new = isset( $is_new )? $is_new : 'no';
                             </div>
                             <div class="btn-holder">
                                 <button class="start-btn" type="button">Start quiz</button>
-                            </div>
                             </div>
                         </div>
                         <div class="container">
