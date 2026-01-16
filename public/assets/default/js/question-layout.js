@@ -1444,7 +1444,7 @@ function rurera_remove_loader(thisObj, loader_type) {
 /*
  * Validation Process by Form
  */
- let already_validated_fields = new Array();
+var already_validated_fields = new Array();
 function rurera_validation_process(form_name, error_dispaly_type = '') {
     var has_empty = new Array();
     var alert_messages = new Array();
