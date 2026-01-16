@@ -127,8 +127,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                     <div class="stat-label font-16 font-weight-500">Attempts</div>
                                     <div class="stat-value font-14 font-weight-bold">2</div>
                                 </div>
-                            </div>
-                            <div class="rur-setting-row">
+                                <div class="rur-setting-row">
                                 <div class="rur-setting-text">
                                 <div class="rur-setting-title">Correct/Incorrect Sounds</div>
                                 <div class="rur-setting-sub">Play sounds after an answer</div>
@@ -171,6 +170,8 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                 <label class="custom-control-label" for="rurToggleTimer"></label>
                                 </div>
                             </div>
+                            </div>
+                            
                             <div class="btn-holder practice-start-block" data-quiz_loaded="no">
                                 Preparing..... <span></span>
                             </div>
