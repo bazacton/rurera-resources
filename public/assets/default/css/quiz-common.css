@@ -3067,3 +3067,50 @@ Quiz Check Answers Page Style End
 }
 /* --- END: Learning-Content --- */
 /* ======================================================== */
+
+
+/* Rurera-Settings-Modal Style Start */
+    .rur-settings-modal .modal-dialog { max-width: 360px; }
+    @media (max-width: 420px) {
+      .rur-settings-modal .modal-dialog { max-width: calc(100% - 24px); }
+    }
+
+    .rur-settings-modal .modal-header {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .rur-settings-modal .modal-title { font-size: 1.05rem; font-weight: 600; }
+
+    .rur-settings-modal .close {
+      position: absolute;
+      right: 0.75rem;
+      top: 0.6rem;
+      font-size: 1.35rem;
+      opacity: 0.7;
+    }
+    .rur-settings-modal .close:hover { opacity: 1; }
+
+    .rur-setting-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.08);
+    }
+    .rur-setting-row:last-child { border-bottom: 0; }
+
+    .rur-setting-text {
+      padding-right: 0.75rem;
+      line-height: 1.2;
+    }
+    .rur-setting-title { font-weight: 600; font-size: 0.95rem; }
+    .rur-setting-sub { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
+
+    /* Demo UI blocks */
+    .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
+    .rur-muted { color: #6c757d; }
+
+    /* Make Bootstrap custom switches a bit tighter */
+    .custom-switch .custom-control-label::before { top: 0.2rem; }
+    .custom-switch .custom-control-label::after { top: calc(0.2rem + 2px); }
+    /* Rurera-Settings-Modal Style End */
