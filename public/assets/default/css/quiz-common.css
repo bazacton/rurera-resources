@@ -2238,7 +2238,7 @@ Inline-Style From Php Files Style Start
 body.quiz-area-page {
     overflow: hidden;
 }
-.quiz-area-page .left-content {
+.quiz-area-page .question-layout-block {
     overflow: hidden;
     overflow-y: auto;
     height: calc(100vh - 100px);
@@ -2247,6 +2247,10 @@ body.quiz-area-page {
     scrollbar-color: transparent transparent;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /****************************************** 
