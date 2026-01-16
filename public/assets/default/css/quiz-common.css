@@ -3105,7 +3105,21 @@ Quiz Check Answers Page Style End
     }
     .rur-setting-title { font-weight: 600; font-size: 0.95rem; }
     .rur-setting-sub { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
-
+    .setting-modal-btn {
+        background-color: var(--primary);
+        border: 0;
+        border-radius: 3px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        line-height: normal;
+        height: auto;
+    }
+    .quiz-time-bar .setting-modal-btn img {
+        height: 15px;
+        width: 15px;
+    }
     /* Demo UI blocks */
     .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
     .rur-muted { color: #6c757d; }
