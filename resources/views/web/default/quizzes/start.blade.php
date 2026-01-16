@@ -66,7 +66,66 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
 
                     <div class="learning-content-box learning-start-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
-
+                        <div class="finish-steps">
+                            <div class="learn-test-start mx-auto">
+                            <div class="learn-test-title">
+                                <h2 class="font-22 font-weight-bold">Characteristics of living organisms</h2>
+                                <p class="font-16 text-dark-charcoal">Characteristics of living organisms</p>
+                            </div>
+                            <div class="learn-chats row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="chat-box left-bottom">
+                                    <div class="avatar active">
+                                    <img src="/assets/default/img/left.png" alt="left">
+                                    </div>
+                                    <div class="avatar">
+                                    <img src="/assets/default/img/left.png" alt="left">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="avatar main-avatar">
+                                    <img src="/assets/default/img/main.png" alt="main">
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="chat-box left-top">
+                                    <div class="avatar">
+                                    <img src="/assets/default/img/right.png" alt="right">
+                                    </div>
+                                    <div class="avatar active">
+                                    <img src="/assets/default/img/right.png" alt="right">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="stats-card">
+                                <div class="card-box">
+                                <div class="stat-label font-16 font-weight-500">Question</div>
+                                <div class="stat-value font-14 font-weight-bold">4</div>
+                                </div>
+                                <div class="card-box">
+                                <div class="stat-label font-16 font-weight-500">Time for quiz</div>
+                                <div class="stat-value font-14 font-weight-bold">20 min</div>
+                                </div>
+                                <div class="card-box">
+                                <div class="stat-label font-16 font-weight-500">Earn up to</div>
+                                <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
+                                </div>
+                                <div class="card-box">
+                                <div class="stat-label font-16 font-weight-500">Attempts</div>
+                                <div class="stat-value font-14 font-weight-bold">2</div>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <button class="start-btn" type="button">Start quiz</button>
+                            </div>
+                            </div>
+                            <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
+                                <a href="javascript:;" class="review-btn finish-next-step">Next</a>
+                            </div>
+                        </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
