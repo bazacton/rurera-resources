@@ -1509,6 +1509,48 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 .question-submit-btn:hover,
 .spells-quiz-from .question-submit-btn:hover,
 .question-next-btn:hover {background-color: #bae798;  color: #f5ffec;}
+/* Loading Dots Style Start */
+.loading-dots {
+    background-color: #8fc963;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.loading-dots--dot {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  display: inline-block;
+  animation: sk-bouncedelay 1.2s infinite ease-in-out both;
+}
+.loading-dots--dot:first-child {
+  animation-delay: -0.32s;
+}
+.loading-dots--dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+/* Loading Dots Style End */
 /* --- END: Quiz prev-next-controls --- */
 /* ======================================================== */
 
