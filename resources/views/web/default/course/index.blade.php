@@ -155,11 +155,17 @@
                                                     <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }}
                                                     <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
                                                     <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
-                                                        <div class="chapter-tags">
-                                                            <a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
-                                                            <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a>
-                                                            <a href="javascript:;" class="course-progress-btn">Skill Summary</a>
-                                                            <div class="debug-details-holder">
+                                                        <ul class="chapter-tags">
+                                                            <li>
+                                                                <a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" class="course-progress-btn">Skill Summary</a>
+                                                            </li>
+                                                            <li>
                                                                 <a href="javascript:;" class="debug-details-btn">Debug Details</a>
                                                                 <div class="debug-details rurera-hide">
                                                                     Part ID: {{$topicPartObj->id}}<br>
@@ -168,8 +174,8 @@
                                                                     Accuracy: {{$topic_accuracy}}<br>
                                                                     Completion: {{$total_completion}}<br>
                                                                 </div>
-                                                            </div>
-                                                        </div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                     
                                                     <div class="percent-holder">
