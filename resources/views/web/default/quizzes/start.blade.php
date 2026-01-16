@@ -71,7 +71,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                 <h2 class="font-22 font-weight-bold">Characteristics of living organisms</h2>
                                 <p class="font-16 text-dark-charcoal pt-5 text-gray">Earn Coins by answering questions and completing</p>
                             </div>
-                            <div class="learn-chats row">
+                            <div class="learn-chats row mb-35">
                                 <div class="col-lg-4 col-md-4 col-12">
                                 <div class="chat-box left-bottom">
                                     <div class="avatar active">
