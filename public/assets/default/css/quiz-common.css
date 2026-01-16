@@ -2839,7 +2839,7 @@ Quiz Check Answers Page Style End
 .learn-test-start {
     padding-top: 50px;
     text-align: center;
-    max-width: 550px;
+    width: 550px;
 }
 .learn-chats .avatar {
     height: 80px;
@@ -2887,8 +2887,8 @@ Quiz Check Answers Page Style End
     flex-wrap: wrap;
 }
 .stats-card .card-box {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 25%;
+    max-width: 25%;
     border-bottom: 1px solid #ddd;
     padding: 15px;
 }
