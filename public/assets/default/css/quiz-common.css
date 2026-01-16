@@ -3109,8 +3109,4 @@ Quiz Check Answers Page Style End
     /* Demo UI blocks */
     .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
     .rur-muted { color: #6c757d; }
-
-    /* Make Bootstrap custom switches a bit tighter */
-    .custom-switch .custom-control-label::before { top: 0.2rem; }
-    .custom-switch .custom-control-label::after { top: calc(0.2rem + 2px); }
     /* Rurera-Settings-Modal Style End */
