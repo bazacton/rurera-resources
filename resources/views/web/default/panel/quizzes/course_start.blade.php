@@ -111,11 +111,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <span class="coin-numbers">
-                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
-                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                                </button>
                                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                                                 <span class="total-earned-coins">0</span>
+                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
+                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                                    Start Quiz Nav
+                                                </button>
                                             </span>
                                         </div>
                                         @if( is_array( $question ))
