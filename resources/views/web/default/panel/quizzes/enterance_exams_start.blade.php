@@ -127,17 +127,17 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                 </div>
                             </div>
                         </div>
-                        <div class="question-counts">
-                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                            <span>Question 8 of 20</span>
-                        </div>
-
+                        
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
                                     <div class="left-content has-bg">
+                                        <div class="question-counts">
+                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                            <span>Question 8 of 20</span>
+                                        </div>
                                         @if( is_array( $question ))
                                             @php $question_no = 1; @endphp
 
