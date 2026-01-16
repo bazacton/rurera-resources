@@ -2802,9 +2802,6 @@ Quiz Check Answers Page Style End
     border-radius: 100%;
     object-fit: cover;
 }
-.learn-chats {
-    margin: 0 0 25px;
-}
 .chat-box {
     display: flex;
     flex-direction: column;
