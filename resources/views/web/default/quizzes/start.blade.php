@@ -60,7 +60,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
                 <div class="d-flex align-items-center justify-content-center w-100">
                     @php $content_class = ''; @endphp
                     @if( $quiz->quiz_type == 'vocabulary' || $quiz->quiz_type == 'practice')
-                    @php $content_class = 'hide'; @endphp
+                    @php $content_class = 'hide1'; @endphp
                         <div class="start-counter"></div>
                     @endif
 
