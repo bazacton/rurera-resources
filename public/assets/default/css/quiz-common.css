@@ -447,7 +447,7 @@ input.droppable-field {
 .rureraform-element .example_text {color: gray; border: 1px dashed #ccc; padding: 8px 10px; margin-bottom: 0; border-radius: 5px;}
 .question_label .math-equation {background-color: inherit; display: inline-block;}
 .question-area .math-equation mjx-container {display: inline-block; margin: 0; padding-top: 0; padding-bottom: 0;}
-.question-explaination {background-color: #f2f2f2; padding: 15px 15px; border-radius: 5px;}
+.question-explaination {background-color: #f2f2f2; padding:0; border-radius: 5px;}
 .quiz-area-page .question-explaination {background-color: #fff;}
 .math-equation br {display: none;}
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
