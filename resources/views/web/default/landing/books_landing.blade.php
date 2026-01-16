@@ -11,7 +11,7 @@
           <h1 class="font-72 font-weight-bold">Dive into the World of <span class="text-scribble">Books!</span>
           </h1>
           <strong class="d-block font-36">Read Anywhere, Anytime!</strong>
-          <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day!</p>
+          <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day. Rurera’s Books Shelf offers curated reading collections for children aged 4–11, aligned with literacy development goals and reading levels. </p>
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
         </div>
       </div>
@@ -85,7 +85,7 @@
         <div class="col-12">
           <div class="section-title text-center mb-50">
             <h2 class="mt-0 mb-10 font-40">Activities for enhancing Reading skills.</h2>
-            <p class="font-19 pt-5 text-dark-charcoal">Curriculum aligned all major literacy strands. <br > Reading helps you think better, understand more, and solve problems more easily.</p>
+            <p class="font-19 pt-5 text-dark-charcoal">Curriculum aligned all major literacy strands. <br > Reading helps you think better, understand more, and solve problems more easily.including phonics, comprehension, vocabulary, and grammar skills. </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -96,7 +96,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Book Chapter Quizzes</h2>
-                <p itemprop="description" class="text-dark-charcoal">Your ultimate resource for resolving quizzes and practices tied directly to the stories your child loves.</p>
+                <p itemprop="description" class="text-dark-charcoal">Your ultimate resource for resolving quizzes and practices tied directly to the stories your child loves.These quizzes reinforce comprehension and retention of key concepts from each book.</p>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Assessments &amp; Tests</h2>
-                <p itemprop="description" class="text-dark-charcoal">Get reading books for kids online assessments tailored to your child's interests and reading level.</p>
+                <p itemprop="description" class="text-dark-charcoal">Get reading books for kids online assessments tailored to your child's interests and reading level.Assessments track progress across reading fluency, vocabulary, and comprehension.</p>
               </div>
             </div>
           </div>
@@ -122,7 +122,8 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Earn Reading Rewards</h2>
-                <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards.</p>
+                <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards. Rewards motivate consistent reading and celebrate milestones in literacy development. 
+</p>
               </div>
             </div>
           </div>
@@ -201,7 +202,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Enjoy Every E-Book Adventure:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"><a href="https://rurera.com/">Rurera</a> lets you access reading books for kids online in various digital formats, ensuring you can read on any device, making reading convenient and accessible.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20"><a href="https://rurera.com/">Rurera</a> Rurera lets you access reading books for kids online in various digital formats,compatible with tablets, computers, and smartphones for seamless learning anywhere. Making reading convenient and accessible. </div>
                   </div>
                 </div>
               </div>
@@ -217,7 +218,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Uncover Your Progress:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Our platform monitors how much you’ve read, offering detailed insights into your reading habits and growth on our dedicated books reading website.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Progress reports help parents and teachers identify strengths and areas for improvement.Our platform monitors how much you’ve read, offering detailed insights into your reading habits and growth on our dedicated books reading website.</div>
                   </div>
                 </div>
               </div>
@@ -233,7 +234,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Personalized Learning Pathways:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">With Rurera, educators can easily tailor literacy development for each student, providing targeted support to boost every reader's progress, regardless of starting level.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Personalized paths ensure every child builds confidence while enjoying reading. With Rurera, educators can easily tailor literacy development for each student, providing targeted support to boost every reader's progress, regardless of starting level.</div>
                   </div>
                 </div>
               </div>
@@ -250,7 +251,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Awesome Rewards as You Read:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Keep reading books for kids to earn Coin Points, which can be exchanged for favorite toys. The more you read, the more points you earn!</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Keep reading books for kids to earn Coin Points, which can be exchanged for favorite toys. The more you read, the more points you earn.Reward systems encourage daily reading habits and reinforce literacy engagement. </div>
                   </div>
                 </div>
               </div>
@@ -266,7 +267,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Effortless Student Engagement:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera’s built-in rewards system on our books reading website motivates students by recognizing their reading achievements, keeping them excited and engaged.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera’s built-in rewards system on our books reading website motivates students by recognizing their reading achievements, keeping them excited and engaged.Gamified features make learning interactive, fun, and measurable.</div>
                   </div>
                 </div>
               </div>
@@ -282,7 +283,7 @@
                     <h3 class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/pricing">Reporting Made Easy:</a>
                     </h3>
-                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera simplifies task assignments, personalized learning, and reporting, helping teachers efficiently manage literacy instruction and track the books reading benefits for each student.</div>
+                    <div itemprop="description" class="mt-5 blog-grid-desc px-20 pb-20">Rurera simplifies task assignments, personalized learning, and reporting, helping teachers efficiently manage literacy instruction and track the books reading benefits for each student.Teachers can quickly review progress, adjust learning plans, and share insights with parents.</div>
                   </div>
                 </div>
               </div>
