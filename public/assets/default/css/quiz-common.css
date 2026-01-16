@@ -1709,6 +1709,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .question-result-layout .rureraform-element select,
 .dropdown-element select {background-image: url(/assets/default/svgs/arrow-down.svg); background-repeat: no-repeat; background-size: 15px; background-position: 94% center; border: 1px solid #eee; min-width: 150px; max-height: 30px; min-height: 30px; padding: 0 28px 0 10px; border-radius: 5px; line-height: normal; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .question-fields select, .dropdown-element select {margin: 0 6px;}
+.dropdown-element:has(select) {
+    line-height: 45px;
+}
 /* --- END: Quiz Select Option --- */
 /* ======================================================== */
 
