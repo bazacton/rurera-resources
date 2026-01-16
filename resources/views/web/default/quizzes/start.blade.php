@@ -100,25 +100,25 @@ $is_new = isset( $is_new )? $is_new : 'no';
                             </div>
                             <div class="stats-card">
                                 <div class="card-box">
-                                <div class="stat-label font-16 font-weight-500">Question</div>
-                                <div class="stat-value font-14 font-weight-bold">4</div>
+                                    <div class="stat-label font-16 font-weight-500">Question</div>
+                                    <div class="stat-value font-14 font-weight-bold">4</div>
                                 </div>
                                 <div class="card-box">
-                                <div class="stat-label font-16 font-weight-500">Time for quiz</div>
-                                <div class="stat-value font-14 font-weight-bold">20 min</div>
+                                    <div class="stat-label font-16 font-weight-500">Time for quiz</div>
+                                    <div class="stat-value font-14 font-weight-bold">20 min</div>
                                 </div>
                                 <div class="card-box">
-                                <div class="stat-label font-16 font-weight-500">Earn up to</div>
-                                <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
+                                    <div class="stat-label font-16 font-weight-500">Earn up to</div>
+                                    <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
                                 <div class="card-box">
-                                <div class="stat-label font-16 font-weight-500">Attempts</div>
-                                <div class="stat-value font-14 font-weight-bold">2</div>
+                                    <div class="stat-label font-16 font-weight-500">Attempts</div>
+                                    <div class="stat-value font-14 font-weight-bold">2</div>
                                 </div>
                             </div>
                             <div class="btn-holder">
                                 <button data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
-                                    class="quiz-start-btn start-spell-quiz btn btn-primary btn-sm mt-30" type="button">Start quiz</button>
+                                    class="quiz-start-btn start-spell-quiz mt-30" type="button">Start quiz</button>
                             </div>
                         </div>
                         <div class="container">
