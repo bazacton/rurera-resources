@@ -1,7 +1,4 @@
 /* Preview Question Right Side Style Start */
-body:has(.type-practice.type-sats.preview-question-area) {
-    overflow: hidden;
-}
 .preview-question-area {
     padding-right: 400px;
     -webkit-transition: all 0.3s ease-in-out;
