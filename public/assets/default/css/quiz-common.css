@@ -2194,6 +2194,16 @@ Inline-Style From Php Files Style Start
 .question-layout-block .left-content .rureraform-col-6 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
     padding-top: 10px;
 }
+.quiz-area-page .left-content {
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
 /****************************************** 
 Inline-Style From Php Files Style End
