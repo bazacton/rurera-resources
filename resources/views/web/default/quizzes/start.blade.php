@@ -224,8 +224,8 @@ $is_new = isset( $is_new )? $is_new : 'no';
             } else {
                 $(".start-counter").remove();
                 clearInterval(Startintervals);
-                $(".quiz-start-btn").click();
-                $(".learning-content-box").removeClass('hide')
+                //$(".quiz-start-btn").click();
+                //$(".learning-content-box").removeClass('hide')
             }
         }, 1000);
     }
