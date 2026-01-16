@@ -338,11 +338,15 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
             // ✅ STOP CHECK (this works)
             if ($(".practice-start-block").attr('data-quiz_loaded') === 'yes') {
-                stopped = true;
-                clearTimeout(timeoutRef);
-                $(".practice-start-block").addClass('rurera-hide');
-                $(".start-practice-btn").removeClass('rurera-hide');
-                return;
+                var Startintervals = setInterval(function () {
+                    console.log('inner interval');
+                    clearInterval(Startintervals);
+                    stopped = true;
+                    clearTimeout(timeoutRef);
+                    $(".practice-start-block").addClass('rurera-hide');
+                    $(".start-practice-btn").removeClass('rurera-hide');
+                    return;
+                }, 5000);
             }
 
             if (index >= messages.length) {
