@@ -88,25 +88,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <div class="justify-content-center">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
-                    <div class="quiz-time-bar mb-80 pt-15">
-                        <div class="timer-wrap">
-                            <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-                            <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
-                                <div class="time-box" id="hh">00</div>
-                                <span class="colon">:</span>
-                                <div class="time-box" id="mm">05</div>
-                                <span class="colon">:</span>
-                                <div class="time-box" id="ss">15</div>
-                            </div>
-                        </div>
-                        <span class="coin-numbers">
-                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                            <span class="total-earned-coins">0</span>
-                        </span>
-                    </div>
-
-
-
                     <div class="question-step quiz-complete" style="display:none">
 
                         <div class="step-block">Test Completed!!!</div>
@@ -119,6 +100,22 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
                                     <div class="left-content has-bg">
+                                        <div class="quiz-time-bar mb-80 pt-15">
+                                            <div class="timer-wrap">
+                                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+                                                <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
+                                                    <div class="time-box" id="hh">00</div>
+                                                    <span class="colon">:</span>
+                                                    <div class="time-box" id="mm">05</div>
+                                                    <span class="colon">:</span>
+                                                    <div class="time-box" id="ss">15</div>
+                                                </div>
+                                            </div>
+                                            <span class="coin-numbers">
+                                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                                <span class="total-earned-coins">0</span>
+                                            </span>
+                                        </div>
                                         @if( is_array( $question ))
                                             @php $question_no = 1; @endphp
 
@@ -508,9 +505,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     });
 </script>
 <script>
-
-$(document).ready(function () {
-    var btnDown = document.getElementById('btn-top');     // Scroll DOWN
+var btnDown = document.getElementById('btn-top');     // Scroll DOWN
 var btnUp = document.getElementById('btn-bottom');   // Scroll UP
 var container = null;
 
@@ -623,5 +618,4 @@ window.addEventListener('resize', updateScrollState);
 
 /* Init */
 updateScrollState();
-});
 </script>
