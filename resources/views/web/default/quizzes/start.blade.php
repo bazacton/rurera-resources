@@ -121,10 +121,6 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                 <button class="start-btn" type="button">Start quiz</button>
                             </div>
                             </div>
-                            <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                <a href="javascript:;" class="prev-btn finish-prev-step">Previous</a>
-                                <a href="javascript:;" class="review-btn finish-next-step">Next</a>
-                            </div>
                         </div>
                         <div class="container">
                             <div class="row">
