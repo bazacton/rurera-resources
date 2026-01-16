@@ -2248,9 +2248,9 @@ body.quiz-area-page {
     scrollbar-width: none;
     -ms-overflow-style: none;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 /****************************************** 
