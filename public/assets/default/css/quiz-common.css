@@ -3121,13 +3121,11 @@ body.quiz-area-page:has(.learn-test-start) {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 5px;
+        padding: 10px 12px;
         line-height: normal;
         height: auto;
-    }
-    .quiz-time-bar .setting-modal-btn img {
-        height: 15px;
-        width: 15px;
+        color: #fff;
+        gap: 8px;
     }
     .rur-settings-modal .modal-footer button {
         height: auto;
