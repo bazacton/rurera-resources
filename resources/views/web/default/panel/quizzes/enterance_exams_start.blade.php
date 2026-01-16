@@ -179,7 +179,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 
                                         @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls test3">
                                             <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
