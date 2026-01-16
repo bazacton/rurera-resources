@@ -65,7 +65,7 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
                 @endif
             @endif
 
-            <span class="questions-total-holder d-block mb-30">( {{$question_no}}/{{$total_questions}} Questions )</span>
+            <span class="questions-total-holder d-block mb-30 px-15">( {{$question_no}}/{{$total_questions}} Questions )</span>
             {!! $question_layout !!}
 
             <div class="validation-error"></div>
