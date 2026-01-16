@@ -121,7 +121,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                     class="quiz-start-btn start-spell-quiz mt-30" type="button">Start quiz</button>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="container rurera-hide">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     @if( isset( $quiz->quiz_instructions ) && $quiz->quiz_instructions != '')
