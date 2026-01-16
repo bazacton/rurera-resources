@@ -8,25 +8,25 @@
         <div class="col-lg-4 col-md-4 col-12">
           <div class="chat-box left-bottom">
             <div class="avatar active">
-              <img src="" alt="">
+              <img src="/assets/default/img/left.png" alt="left">
             </div>
             <div class="avatar">
-              <img src="" alt="">
+              <img src="/assets/default/img/left.png" alt="left">
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-12">
           <div class="avatar main-avatar">
-              <img src="" alt="">
+              <img src="/assets/default/img/main.png" alt="main">
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-12">
           <div class="chat-box left-top">
             <div class="avatar">
-              <img src="" alt="">
+              <img src="/assets/default/img/right.png" alt="right">
             </div>
             <div class="avatar active">
-              <img src="" alt="">
+              <img src="/assets/default/img/right.png" alt="right">
             </div>
           </div>
         </div>
