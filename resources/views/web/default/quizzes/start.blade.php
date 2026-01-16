@@ -362,7 +362,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
     });
 
 
-    if( "{{$quiz->quiz_type}}" == 'vocabulary' || "{{$quiz->quiz_type}}" == 'practice') {
+    /*if( "{{$quiz->quiz_type}}" == 'vocabulary' || "{{$quiz->quiz_type}}" == 'practice') {
         var start_counter = 6;
 
         var Startintervals = setInterval(function () {
@@ -376,6 +376,6 @@ $is_new = isset( $is_new )? $is_new : 'no';
                 //$(".learning-content-box").removeClass('hide')
             }
         }, 1000);
-    }
+    }*/
 </script>
 @endpush
