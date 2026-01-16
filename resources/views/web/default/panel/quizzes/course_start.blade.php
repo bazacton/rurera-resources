@@ -516,7 +516,7 @@ var container = null;
 function getActiveContainer() {
     var activeSection = document.querySelector('.rurera-question-block.active');
     return activeSection
-        ? activeSection.querySelector('.preview-question-area .left-content')
+        ? activeSection.querySelector('.question-inner-step-area .left-content')
         : null;
 }
 
