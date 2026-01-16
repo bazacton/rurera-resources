@@ -104,6 +104,9 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                     <div class="stat-value font-14 font-weight-bold">4</div>
                                 </div>
                                 <div class="card-box">
+                                    <div class="icon-box">
+                                        <img src="/assets/default/svgs/clock-colord.svg" height="64" width="64" alt="clock-colord">
+                                    </div>
                                     <div class="stat-label font-16 font-weight-500">Time for quiz</div>
                                     <div class="stat-value font-14 font-weight-bold">20 min</div>
                                 </div>
