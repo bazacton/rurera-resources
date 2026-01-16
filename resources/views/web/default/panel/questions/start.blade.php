@@ -53,7 +53,7 @@ $rand_id = rand(99,9999);
 												</div>
 											</div>
 											<div class="show-notifications" data-show_message="yes"></div>
-
+                                            <!-- test@@ -->
 											<div class="prev-next-controls text-center mb-50 questions-nav-controls disabled-div">
 												<a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
 													Finish
