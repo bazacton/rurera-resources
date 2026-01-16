@@ -128,9 +128,13 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                     <div class="stat-value font-14 font-weight-bold">2</div>
                                 </div>
                             </div>
-                            <div class="btn-holder">
+                            <div class="btn-holder practice-start-block" data-quiz_loaded="no">
+                                Preparing..... <span></span>
+                            </div>
+                            <div class="btn-holder start-practice-btn rurera-hide">
+
                                 <button data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
-                                    class="quiz-start-btn start-spell-quiz mt-10" type="button">Start quiz</button>
+                                        class="quiz-start-btn start-spell-quiz mt-10" type="button">Start Practice</button>
                             </div>
                         </div>
                         <div class="container rurera-hide">
@@ -278,6 +282,85 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
 <script>
     //init_question_functions();
+
+    $(document).ready(function () {
+
+        var messages = [
+            "Hold tight, we’re setting up the perfect questions for you.",
+            "Calibrating your brainpower, please wait.",
+            "Selecting questions based on your difficulty level.",
+            "Get ready, your challenge is being prepared.",
+            "Warming up the questions, stretch those neurons.",
+            "Almost there, lining up questions to test your knowledge.",
+            "Take a deep breath, quiz mode is about to begin.",
+            "No random questions here, everything is tailored for you.",
+            "Loading smart questions, stay focused.",
+            "Ready up, your brain workout starts soon.",
+            "Sharpening the questions, hope your mind is sharp too.",
+            "Difficulty set, confidence recommended.",
+            "Preparing questions that are tricky but fair.",
+            "Focus mode on, quiz starting shortly.",
+            "Pull yourself together, knowledge is about to be tested."
+        ];
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        messages = shuffle(messages);
+
+        var index = 0;
+        var typingSpeed = 20;
+        var delayBetweenMessages = 2000;
+        var timeoutRef = null;   // 🔑 store timeout reference
+        var stopped = false;    // 🔑 stop flag
+
+        function typeMessage(text, element, callback) {
+            let i = 0;
+            element.text("");
+
+            let interval = setInterval(function () {
+                element.append(text.charAt(i));
+                i++;
+
+                if (i === text.length) {
+                    clearInterval(interval);
+                    if (callback) callback();
+                }
+            }, typingSpeed);
+        }
+
+        function showNextMessage() {
+
+            // ✅ STOP CHECK (this works)
+            if ($(".practice-start-block").attr('data-quiz_loaded') === 'yes') {
+                stopped = true;
+                clearTimeout(timeoutRef);
+                $(".practice-start-block").addClass('rurera-hide');
+                $(".start-practice-btn").removeClass('rurera-hide');
+                return;
+            }
+
+            if (index >= messages.length) {
+                index = 0;
+                messages = shuffle(messages);
+            }
+
+            var message_str = messages[index];
+
+            typeMessage(message_str, $(".practice-start-block span"), function () {
+                index++;
+                timeoutRef = setTimeout(showNextMessage, delayBetweenMessages);
+            });
+        }
+
+        showNextMessage();
+    });
+
 
     if( "{{$quiz->quiz_type}}" == 'vocabulary' || "{{$quiz->quiz_type}}" == 'practice') {
         var start_counter = 6;
