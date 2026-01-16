@@ -9,7 +9,6 @@
     $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
 @endphp
 <head>
-    @include(getTemplate().'.includes.metas')
     <title>{{ $pageTitle ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
 
     <!-- General CSS File -->

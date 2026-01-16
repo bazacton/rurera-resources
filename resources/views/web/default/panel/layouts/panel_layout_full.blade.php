@@ -8,7 +8,6 @@
         $rand_no = rand(99,9999);
 @endphp
 <head>
-    @include(getTemplate().'.includes.metas')
     <title>{{ $pageTitle ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
 
     <!-- General CSS File -->
@@ -51,9 +50,6 @@
         {!! getThemeColorsSettings() !!}
     </style>
 
-    @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
-        @include('admin.includes.preloading')
-    @endif
 
 </head>
 @php $bodyClass = ''; @endphp
