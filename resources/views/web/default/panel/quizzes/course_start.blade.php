@@ -111,6 +111,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <span class="coin-numbers">
+                                                <button type="button" data-toggle="modal" data-target="#rurSettingsModal">
+                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                                </button>
                                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                                                 <span class="total-earned-coins">0</span>
                                             </span>
@@ -245,6 +248,72 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         </div>
     </div>
 </div>
+<div class="modal fade rur-settings-modal" id="rurSettingsModal" tabindex="-1" role="dialog" aria-labelledby="rurSettingsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content shadow">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rurSettingsTitle">Settings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body py-2">
+          <div class="rur-setting-row">
+            <div class="rur-setting-text">
+              <div class="rur-setting-title">Correct/Incorrect Sounds</div>
+              <div class="rur-setting-sub">Play sounds after an answer</div>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="rurToggleSound">
+              <label class="custom-control-label" for="rurToggleSound"></label>
+            </div>
+          </div>
+
+          <div class="rur-setting-row">
+            <div class="rur-setting-text">
+              <div class="rur-setting-title">Practice with Review</div>
+              <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="rurToggleReview">
+              <label class="custom-control-label" for="rurToggleReview"></label>
+            </div>
+          </div>
+
+          <div class="rur-setting-row">
+            <div class="rur-setting-text">
+              <div class="rur-setting-title">Question Pagination</div>
+              <div class="rur-setting-sub">Show prev/next controls</div>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="rurTogglePagination">
+              <label class="custom-control-label" for="rurTogglePagination"></label>
+            </div>
+          </div>
+
+          <div class="rur-setting-row">
+            <div class="rur-setting-text">
+              <div class="rur-setting-title">Timer</div>
+              <div class="rur-setting-sub">Show countdown badge</div>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="rurToggleTimer">
+              <label class="custom-control-label" for="rurToggleTimer"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="rurResetBtn">Reset</button>
+          <div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="rurSaveBtn">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
 
