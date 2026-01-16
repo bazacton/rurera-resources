@@ -111,7 +111,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <span class="coin-numbers">
-                                                <button type="button" data-toggle="modal" data-target="#rurSettingsModal">
+                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
                                                     <img src="/assets/default/svgs/setting.svg" alt="setting">
                                                 </button>
                                                 <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
