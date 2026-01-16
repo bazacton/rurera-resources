@@ -2844,6 +2844,12 @@ body.quiz-area-page:has(.learn-test-start) {
     text-align: center;
     width: 550px;
 }
+.learn-test-start .rur-setting-row {
+    padding: 1rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+    width: 100%;
+    text-align: left;
+}
 .learn-chats .avatar {
     height: 80px;
     width: 80px;
