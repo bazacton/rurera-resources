@@ -92,7 +92,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <div class="step-block">Test Completed!!!</div>
 
                     </div>
-                    <div class="question-area-block" style="margin-top:80px;" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+                    <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
 
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
