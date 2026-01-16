@@ -86,7 +86,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 </div>
             </section> -->
             <div class="justify-content-center">
-                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
+                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
                     <div class="quiz-time-bar mb-80 pt-15">
                         <div class="timer-wrap">
