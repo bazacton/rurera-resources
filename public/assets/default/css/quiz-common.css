@@ -2787,7 +2787,9 @@ Quiz Check Answers Page Style End
     font-weight: 500;
 }
 .learn-test-start {
+    padding-top: 50px;
     text-align: center;
+    max-width: 550px;
 }
 .learn-chats .avatar {
     height: 80px;
@@ -2818,6 +2820,16 @@ Quiz Check Answers Page Style End
 }
 .chat-box.left-top .avatar:last-child {
     margin-left: auto;
+}
+.learn-chats .avatar.main-avatar {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+.learn-chats .avatar.main-avatar img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 /* --- END: Finish Steps --- */
 /* ======================================================== */
