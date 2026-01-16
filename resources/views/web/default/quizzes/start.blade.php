@@ -128,48 +128,48 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                     <div class="stat-value font-14 font-weight-bold">2</div>
                                 </div>
                                 <div class="rur-setting-row">
-                                <div class="rur-setting-text">
-                                <div class="rur-setting-title">Correct/Incorrect Sounds</div>
-                                <div class="rur-setting-sub">Play sounds after an answer</div>
+                                    <div class="rur-setting-text">
+                                        <div class="rur-setting-title">Correct/Incorrect Sounds</div>
+                                        <div class="rur-setting-sub">Play sounds after an answer</div>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="rurToggleSound2">
+                                        <label class="custom-control-label" for="rurToggleSound2"></label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="rurToggleSound">
-                                <label class="custom-control-label" for="rurToggleSound"></label>
-                                </div>
-                            </div>
 
-                            <div class="rur-setting-row">
-                                <div class="rur-setting-text">
-                                <div class="rur-setting-title">Practice with Review</div>
-                                <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
+                                <div class="rur-setting-row">
+                                    <div class="rur-setting-text">
+                                        <div class="rur-setting-title">Practice with Review</div>
+                                        <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="rurToggleReview2">
+                                        <label class="custom-control-label" for="rurToggleReview2"></label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="rurToggleReview">
-                                <label class="custom-control-label" for="rurToggleReview"></label>
-                                </div>
-                            </div>
 
-                            <div class="rur-setting-row">
-                                <div class="rur-setting-text">
-                                <div class="rur-setting-title">Question Pagination</div>
-                                <div class="rur-setting-sub">Show prev/next controls</div>
+                                <div class="rur-setting-row">
+                                    <div class="rur-setting-text">
+                                        <div class="rur-setting-title">Question Pagination</div>
+                                        <div class="rur-setting-sub">Show prev/next controls</div>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="rurTogglePagination2">
+                                        <label class="custom-control-label" for="rurTogglePagination2"></label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="rurTogglePagination">
-                                <label class="custom-control-label" for="rurTogglePagination"></label>
-                                </div>
-                            </div>
 
-                            <div class="rur-setting-row">
-                                <div class="rur-setting-text">
-                                <div class="rur-setting-title">Timer</div>
-                                <div class="rur-setting-sub">Show countdown badge</div>
+                                <div class="rur-setting-row">
+                                    <div class="rur-setting-text">
+                                        <div class="rur-setting-title">Timer</div>
+                                        <div class="rur-setting-sub">Show countdown badge</div>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="rurToggleTimer2">
+                                        <label class="custom-control-label" for="rurToggleTimer2"></label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="rurToggleTimer">
-                                <label class="custom-control-label" for="rurToggleTimer"></label>
-                                </div>
-                            </div>
                             </div>
                             
                             <div class="btn-holder practice-start-block" data-quiz_loaded="no">
