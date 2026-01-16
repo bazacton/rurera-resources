@@ -508,117 +508,122 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     });
 </script>
 <script>
-var btnDown = document.getElementById('btn-top');     // Scroll DOWN
-var btnUp = document.getElementById('btn-bottom');   // Scroll UP
-var container = null;
+document.addEventListener('DOMContentLoaded', function () {
 
-/* Get active question container */
-function getActiveContainer() {
-    var activeSection = document.querySelector('.rurera-question-block.active');
-    return activeSection
-        ? activeSection.querySelector('.question-inner-step-area .left-content')
-        : null;
-}
+    var btnDown = document.getElementById('btn-top');     // Scroll DOWN
+    var btnUp = document.getElementById('btn-bottom');   // Scroll UP
+    var container = null;
 
-function hideButtons() {
-    btnDown.classList.add('btn-hidden');
-    btnUp.classList.add('btn-hidden');
-}
-
-function isScrollable(el) {
-    return el && el.scrollHeight > el.clientHeight + 1;
-}
-
-/* Update buttons state */
-function updateScrollState() {
-
-    var newContainer = getActiveContainer();
-
-    /* Rebind scroll listener if section changed */
-    if (container !== newContainer) {
-        if (container) {
-            container.removeEventListener('scroll', updateScrollState);
-        }
-        container = newContainer;
-        if (container) {
-            container.addEventListener('scroll', updateScrollState);
-        }
+    /* Get active question container */
+    function getActiveContainer() {
+        var activeSection = document.querySelector('.rurera-question-block.active');
+        return activeSection
+            ? activeSection.querySelector('.question-inner-step-area .left-content')
+            : null;
     }
 
-    if (!isScrollable(container)) {
-        hideButtons();
-        return;
-    }
-
-    var scrollTop = container.scrollTop;
-    var scrollHeight = container.scrollHeight;
-    var clientHeight = container.clientHeight;
-
-    /* At bottom → show UP */
-    if (scrollTop + clientHeight >= scrollHeight - 1) {
+    function hideButtons() {
         btnDown.classList.add('btn-hidden');
-        btnUp.classList.remove('btn-hidden');
-    }
-    /* Else → show DOWN */
-    else {
-        btnDown.classList.remove('btn-hidden');
         btnUp.classList.add('btn-hidden');
     }
-}
 
-/* Scroll to top */
-function scrollUp() {
-    if (!isScrollable(container)) return;
-    container.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-/* Scroll to bottom */
-function scrollDown() {
-    if (!isScrollable(container)) return;
-    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-}
-
-/* Button events */
-btnDown.addEventListener('click', scrollDown);
-btnUp.addEventListener('click', scrollUp);
-
-/* Keyboard controls */
-document.addEventListener('keydown', function (e) {
-
-    container = getActiveContainer();
-    if (!isScrollable(container)) return;
-
-    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
-        e.preventDefault();
+    function isScrollable(el) {
+        return el && el.scrollHeight > el.clientHeight + 1;
     }
 
-    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
-        scrollDown();
-    }
-    else if (['ArrowUp', 'PageUp'].includes(e.key)) {
-        scrollUp();
-    }
-});
+    /* Update buttons state */
+    function updateScrollState() {
 
-/* SAFE MutationObserver (NO FREEZE) */
-var observer = new MutationObserver(function (mutations) {
-    for (var i = 0; i < mutations.length; i++) {
-        var el = mutations[i].target;
-        if (el.classList && el.classList.contains('rurera-question-block')) {
-            updateScrollState();
-            break;
+        var newContainer = getActiveContainer();
+
+        /* Rebind scroll listener if section changed */
+        if (container !== newContainer) {
+            if (container) {
+                container.removeEventListener('scroll', updateScrollState);
+            }
+            container = newContainer;
+            if (container) {
+                container.addEventListener('scroll', updateScrollState);
+            }
+        }
+
+        if (!isScrollable(container)) {
+            hideButtons();
+            return;
+        }
+
+        var scrollTop = container.scrollTop;
+        var scrollHeight = container.scrollHeight;
+        var clientHeight = container.clientHeight;
+
+        /* At bottom → show UP */
+        if (scrollTop + clientHeight >= scrollHeight - 1) {
+            btnDown.classList.add('btn-hidden');
+            btnUp.classList.remove('btn-hidden');
+        }
+        /* Else → show DOWN */
+        else {
+            btnDown.classList.remove('btn-hidden');
+            btnUp.classList.add('btn-hidden');
         }
     }
+
+    /* Scroll to top */
+    function scrollUp() {
+        if (!isScrollable(container)) return;
+        container.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* Scroll to bottom */
+    function scrollDown() {
+        if (!isScrollable(container)) return;
+        container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
+
+    /* Button events */
+    btnDown.addEventListener('click', scrollDown);
+    btnUp.addEventListener('click', scrollUp);
+
+    /* Keyboard controls */
+    document.addEventListener('keydown', function (e) {
+
+        container = getActiveContainer();
+        if (!isScrollable(container)) return;
+
+        if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
+            e.preventDefault();
+        }
+
+        if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
+            scrollDown();
+        }
+        else if (['ArrowUp', 'PageUp'].includes(e.key)) {
+            scrollUp();
+        }
+    });
+
+    /* SAFE MutationObserver */
+    var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+            var el = mutations[i].target;
+            if (el.classList && el.classList.contains('rurera-question-block')) {
+                updateScrollState();
+                break;
+            }
+        }
+    });
+
+    observer.observe(
+        document.querySelector('.rurera-wrapper') || document.body,
+        { attributes: true, subtree: true, attributeFilter: ['class'] }
+    );
+
+    /* Resize */
+    window.addEventListener('resize', updateScrollState);
+
+    /* Init */
+    updateScrollState();
+
 });
 
-observer.observe(
-    document.querySelector('.rurera-wrapper') || document.body,
-    { attributes: true, subtree: true, attributeFilter: ['class'] }
-);
-
-/* Resize */
-window.addEventListener('resize', updateScrollState);
-
-/* Init */
-updateScrollState();
 </script>
