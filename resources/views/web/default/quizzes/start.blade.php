@@ -133,8 +133,8 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                         <div class="rur-setting-sub">Play sounds after an answer</div>
                                     </div>
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="rurToggleSound2">
-                                        <label class="custom-control-label" for="rurToggleSound2"></label>
+                                        <input type="checkbox" class="custom-control-input play-sounds-check-1" id="play-sounds-check-1">
+                                        <label class="custom-control-label" for="play-sounds-check-1"></label>
                                     </div>
                                 </div>
 
@@ -144,8 +144,8 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                         <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
                                     </div>
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="rurToggleReview2">
-                                        <label class="custom-control-label" for="rurToggleReview2"></label>
+                                        <input type="checkbox" class="custom-control-input practice-with-review-check-1" id="practice-with-review-check-1">
+                                        <label class="custom-control-label" for="practice-with-review-check-1"></label>
                                     </div>
                                 </div>
 
@@ -155,8 +155,8 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                         <div class="rur-setting-sub">Show prev/next controls</div>
                                     </div>
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="rurTogglePagination2">
-                                        <label class="custom-control-label" for="rurTogglePagination2"></label>
+                                        <input type="checkbox" class="custom-control-input show-pagination-check-1" id="show-pagination-check-1">
+                                        <label class="custom-control-label" for="show-pagination-check-1"></label>
                                     </div>
                                 </div>
 
@@ -166,12 +166,12 @@ $is_new = isset( $is_new )? $is_new : 'no';
                                         <div class="rur-setting-sub">Show countdown badge</div>
                                     </div>
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="rurToggleTimer2">
-                                        <label class="custom-control-label" for="rurToggleTimer2"></label>
+                                        <input type="checkbox" class="custom-control-input show-timer-check-1" id="show-timer-check-1">
+                                        <label class="custom-control-label" for="show-timer-check-1"></label>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="btn-holder practice-start-block" data-quiz_loaded="no">
                                 Preparing..... <span></span>
                             </div>
@@ -326,6 +326,48 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
 <script>
     //init_question_functions();
+
+    var show_timer_check_parent = false;
+    var practice_with_review_check_parent = false;
+    var question_pagination_check_parent = false;
+    var sound_check_parent = false;
+
+
+    $(document).on('change', '.show-timer-check-1', function () {
+        show_timer_check_parent = this.checked;
+    });
+
+    $(document).on('change', '.show-pagination-check-1', function () {
+        question_pagination_check_parent = this.checked;
+    });
+
+    $(document).on('change', '.practice-with-review-check-1', function () {
+        practice_with_review_check_parent = this.checked;
+    });
+
+    $(document).on('change', '.play-sounds-check-1', function () {
+        sound_check_parent = this.checked;
+    });
+
+
+    $(document).on('click', '.quiz-start-btn', function (evt) {
+        if(show_timer_check_parent == true){
+            $('.show-timer-check').prop('checked', true);
+        }
+        if(question_pagination_check_parent == true){
+            $('.show-pagination-check').prop('checked', true);
+        }
+        if(practice_with_review_check_parent == true){
+            $('.practice-with-review-check').prop('checked', true);
+        }
+        if(sound_check_parent == true){
+            $('.play-sounds-check').prop('checked', true);
+        }
+        $('.show-timer-check').change();
+        $('.show-pagination-check').change();
+        $('.practice-with-review-check').change();
+        $('.play-sounds-check').change();
+    });
 
     $(document).ready(function () {
 

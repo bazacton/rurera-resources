@@ -266,8 +266,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
               <div class="rur-setting-sub">Play sounds after an answer</div>
             </div>
             <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="rurToggleSound">
-              <label class="custom-control-label" for="rurToggleSound"></label>
+              <input type="checkbox" class="custom-control-input play-sounds-check" id="play-sounds-check">
+              <label class="custom-control-label" for="play-sounds-check"></label>
             </div>
           </div>
 
@@ -277,8 +277,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
               <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
             </div>
             <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="rurToggleReview">
-              <label class="custom-control-label" for="rurToggleReview"></label>
+              <input type="checkbox" class="custom-control-input practice-with-review-check" id="practice-with-review-check">
+              <label class="custom-control-label" for="practice-with-review-check"></label>
             </div>
           </div>
 
@@ -288,8 +288,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
               <div class="rur-setting-sub">Show prev/next controls</div>
             </div>
             <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="rurTogglePagination">
-              <label class="custom-control-label" for="rurTogglePagination"></label>
+              <input type="checkbox" class="custom-control-input show-pagination-check" id="show-pagination-check-2">
+              <label class="custom-control-label" for="show-pagination-check-2"></label>
             </div>
           </div>
 
@@ -299,17 +299,16 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
               <div class="rur-setting-sub">Show countdown badge</div>
             </div>
             <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="rurToggleTimer">
-              <label class="custom-control-label" for="rurToggleTimer"></label>
+                <input type="checkbox" class="custom-control-input show-timer-check" id="show-timer-check">
+                <label class="custom-control-label" for="show-timer-check"></label>
             </div>
           </div>
         </div>
 
         <div class="modal-footer d-flex justify-content-between">
-          <button type="button" class="btn btn-outline-secondary btn-sm" id="rurResetBtn">Reset</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm setting-reset-btn" id="setting-reset-btn">Reset</button>
           <div>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="rurSaveBtn">Save</button>
           </div>
         </div>
       </div>
@@ -322,6 +321,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <script>
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
     var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
+
+
+    var practice_with_review_check = false;
+    var sound_check = false;
+    var correct_sound = false;
+    var incorrect_sound = false;
+
+
     //init_question_functions();
     $('body').addClass('quiz-area-page');
     $('body').addClass('quiz-show');
@@ -425,17 +432,26 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
         $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
 
-        if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
+        $('.show-notifications').html('');
+
+        if(return_data.incorrect_flag == true && incorrect_sound == true && sound_check == true){
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+        if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1 && practice_with_review_check == true){
             var question_solution = return_data.question_solution;
             var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
             var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
-            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
+        }
+
+        if(return_data.incorrect_flag == false && correct_sound == true && sound_check == true){
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
         }
 
-        if(return_data.incorrect_flag == false && correct_answer_explaination == 1){
+        if(return_data.incorrect_flag == false && correct_answer_explaination == 1 && practice_with_review_check == true){
             var question_solution = return_data.question_solution;
             var notification_class = 'correct';
             var notification_label = 'Well done! Thats exactly right.';
@@ -443,11 +459,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var earned_coins = $(".total-earned-coins").html();
             earned_coins = parseInt(earned_coins)+1;
             $(".total-earned-coins").html(earned_coins);
-
-
-            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
-            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+
         }
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
@@ -572,6 +586,48 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $('#next-btn')[0].click();
         }
     });
+
+
+
+
+
+    /*
+    * Practice Settings
+     */
+
+    $(document).on('change', '.show-timer-check', function (evt) {
+
+        var show_timer = $(this).is(':checked')? true : false;
+        $(".timer-wrap").removeClass('rurera-hide');
+
+        if(show_timer == false){
+            $(".timer-wrap").addClass('rurera-hide');
+        }
+    });
+
+    $(document).on('change', '.show-pagination-check', function (evt) {
+
+        var show_timer = $(this).is(':checked')? true : false;
+        $(".questions-total-holder").removeClass('rurera-hide');
+
+        if(show_timer == false){
+            $(".questions-total-holder").addClass('rurera-hide');
+        }
+    });
+
+
+    $(document).on('change', '.practice-with-review-check', function (evt) {
+        practice_with_review_check = $(this).is(':checked')? true : false;
+
+    });
+
+
+    $(document).on('change', '.play-sounds-check', function (evt) {
+        sound_check = $(this).is(':checked')? true : false;
+    });
+
+
+
 </script>
 <script>
 var btnDown = document.getElementById('btn-top');     // Scroll DOWN

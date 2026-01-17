@@ -363,7 +363,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
             }
         }
-		//rurera_remove_loader(thisObj, 'div');
+		rurera_remove_loader(thisObj, 'div');
 		question_submit_process = false;
         }
     });
@@ -1444,7 +1444,7 @@ function rurera_remove_loader(thisObj, loader_type) {
 /*
  * Validation Process by Form
  */
-var already_validated_fields = new Array();
+ var already_validated_fields = new Array();
 function rurera_validation_process(form_name, error_dispaly_type = '') {
     var has_empty = new Array();
     var alert_messages = new Array();
