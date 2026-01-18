@@ -9,13 +9,14 @@
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
-$timer_counter = 0;
+$timer_counter = isset($start_timer)? $start_timer : 0;
 if( $duration_type == 'per_question'){
 $timer_counter = $time_interval;
 }
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
+
 $correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
@@ -105,9 +106,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
                                                     <div class="time-box" id="hh">00</div>
                                                     <span class="colon">:</span>
-                                                    <div class="time-box" id="mm">05</div>
+                                                    <div class="time-box" id="mm">00</div>
                                                     <span class="colon">:</span>
-                                                    <div class="time-box" id="ss">15</div>
+                                                    <div class="time-box" id="ss">00</div>
                                                 </div>
                                             </div>
                                             <span class="coin-numbers">
@@ -595,6 +596,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     * Practice Settings
      */
 
+
+    $(document).on('click', '.setting-reset-btn', function (evt) {
+        $('.show-timer-check').prop('checked', false);
+        $('.show-pagination-check').prop('checked', false);
+        $('.practice-with-review-check').prop('checked', false);
+        $('.play-sounds-check').prop('checked', false);
+        $('.show-timer-check').change();
+        $('.show-pagination-check').change();
+        $('.practice-with-review-check').change();
+        $('.play-sounds-check').change();
+    });
+
     $(document).on('change', '.show-timer-check', function (evt) {
 
         var show_timer = $(this).is(':checked')? true : false;
@@ -743,4 +756,14 @@ window.addEventListener('resize', updateScrollState);
 
 /* Init */
 updateScrollState();
+
+
+
+var active_question_id = $(".question-area-block").attr('data-active_question_id');
+if(active_question_id > 0){
+    if($('.rurera-question-block.question-step-'+active_question_id).length > 0){
+        $('.rurera-question-block').removeClass('active');
+        $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
+    }
+}
 </script>

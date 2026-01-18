@@ -127,6 +127,9 @@
                                             $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
                                             $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
 
+                                            $sas_score = isset($topicPerformData['sas_score'])? $topicPerformData['sas_score'] : 0;
+                                            $sas_accuracy = isset($topicPerformData['sas_accuracy'])? $topicPerformData['sas_accuracy'] : 0;
+
                                             $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
                                             $completion_class = 'accuracy-not-started';
@@ -173,11 +176,13 @@
                                                                     Difficulty Level: {{$user_difficulty_level}}<br>
                                                                     Accuracy: {{$topic_accuracy}}<br>
                                                                     Completion: {{$total_completion}}<br>
+                                                                    SAS Score: {{$sas_score}}<br>
+                                                                    SAS Accuracy: {{$sas_accuracy}}%<br>
                                                                 </div>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    
+
                                                     <div class="percent-holder">
                                                         <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
                                                             <div class="circle_inner">
