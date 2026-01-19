@@ -977,6 +977,7 @@
 <script src="/assets/default/js//parts/main.min.js?ver={{$rand_no}}"></script>
 <script src="/assets/default/js/panel/public.min.js"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 <script>
 
     @if(session()->has('registration_package_limited'))
@@ -1116,6 +1117,20 @@
         });
 
     });
+</script>
+<script>
+    (function ($) {
+        "use strict";
+
+        @if(!empty($getMonthAndYearSalesChart))
+        makeStatisticsChart('saleStatisticsChart', saleStatisticsChart, 'Sale', @json($getMonthAndYearSalesChart['labels']),@json($getMonthAndYearSalesChart['data']));
+        @endif
+
+        @if(!empty($usersStatisticsChart))
+        makeStatisticsChart('usersStatisticsChart', usersStatisticsChart, 'Users', @json($usersStatisticsChart['labels']),@json($usersStatisticsChart['data']));
+        @endif
+
+    })(jQuery)
 </script>
 </body>
 </html>
