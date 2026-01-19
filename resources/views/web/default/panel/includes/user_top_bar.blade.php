@@ -23,13 +23,17 @@
                     </div>
                     <div class="days-list">
                         <ul>
-                            <li>
+                            <li class="frozen-streak">
                                 <span class="day">M</span>
-                                <span class="day-circle"></span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/snowflake-cold.svg" height="64" width="64" alt="snowflake-cold">
+                                </span>
                             </li>
-                            <li>
+                            <li class="not-started">
                                 <span class="day">T</span>
-                                <span class="day-circle"></span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
+                                </span>
                             </li>
                             <li>
                                 <span class="day">W</span>
