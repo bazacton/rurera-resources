@@ -329,6 +329,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+    width: 507px;
 }
 .subchapter-slider .swiper-slide-active {
     background-color: #fff;
