@@ -345,7 +345,71 @@ $started_already = isset($started_already)? $started_already : false;
         </div>
     </div>
 </div>
+<!-- Report Modal Html Start -->
+ <div class="modal fade" id="reportModal" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
 
+      <div class="modal-header py-2">
+        <h6 class="modal-title">Report Question</h6>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="reportForm">
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="opt1">
+            <label class="custom-control-label" for="opt1">Wrong answer</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="opt2">
+            <label class="custom-control-label" for="opt2">English mistake</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="opt3">
+            <label class="custom-control-label" for="opt3">Inappropriate question</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="opt4">
+            <label class="custom-control-label" for="opt4">Incorrect options</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="opt5">
+            <label class="custom-control-label" for="opt5">Image issue</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="optOther">
+            <label class="custom-control-label" for="optOther">Other</label>
+          </div>
+
+          <div class="mt-2">
+            <textarea id="otherText" class="form-control" rows="3"
+              placeholder="Additional details (required if Other is selected)"></textarea>
+          </div>
+
+          <div class="alert alert-success mt-2 d-none" id="successMsg">
+            Report submitted successfully!
+          </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer py-2">
+        <button type="button" class="btn btn-primary btn-sm" id="submitReport">
+          Submit
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Report Modal Html End -->
 @endsection
 
 @push('scripts_bottom')
