@@ -2987,7 +2987,7 @@ body.quiz-area-page:has(.learn-test-start) {
 .btn-holder.practice-start-block {
     text-align: left;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 .btn-holder.practice-start-block > span {
