@@ -518,7 +518,7 @@ $started_already = isset($started_already)? $started_already : false;
 
         function showNextMessage() {
 
-            // ✅ STOP CHECK (this works)
+            // STOP CHECK (this works)
             if ($(".practice-start-block").attr('data-quiz_loaded') === 'yes') {
                 var Startintervals = setInterval(function () {
                     console.log('inner interval');
@@ -681,7 +681,7 @@ function quizPageCallback() {
     });
 
     // Open report modal
-    $(document).off('click', '.report-icon').on('click', '.report-icon', function () {
+    $(document).off('click', '.report-btn').on('click', '.report-btn', function () {
         $('#reportModal').modal('show');
     });
 
