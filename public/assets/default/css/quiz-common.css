@@ -2832,6 +2832,11 @@ body.quiz-area-page:has(.learn-test-start) {
     overflow: hidden;
     margin-bottom: -1px;
 }
+.rur-setting-row-holder h3 {
+    width: 100%;
+    padding: 15px 16px 0;
+    margin-bottom: -10px;
+}
 .learn-test-start .rur-setting-row {
     padding: 1rem;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
