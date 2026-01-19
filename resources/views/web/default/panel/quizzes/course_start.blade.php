@@ -100,7 +100,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
                                     <div class="left-content has-bg">
-                                        <div class="quiz-time-bar mb-80 pt-15 mt-0">
+                                        <div class="quiz-time-bar mb-80 pt-0 mt-0">
                                             <div class="timer-wrap">
                                                 <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
                                                 <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
