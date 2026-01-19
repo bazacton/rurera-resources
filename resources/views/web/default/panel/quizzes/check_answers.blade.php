@@ -294,19 +294,4 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
             })
           }
 </script>
-
-<script>
-    (function ($) {
-        "use strict";
-
-        @if(!empty($getMonthAndYearSalesChart))
-        makeStatisticsChart('saleStatisticsChart', saleStatisticsChart, 'Sale', @json($getMonthAndYearSalesChart['labels']),@json($getMonthAndYearSalesChart['data']));
-        @endif
-
-        @if(!empty($usersStatisticsChart))
-        makeStatisticsChart('usersStatisticsChart', usersStatisticsChart, 'Users', @json($usersStatisticsChart['labels']),@json($usersStatisticsChart['data']));
-        @endif
-
-    })(jQuery)
-</script>
 @endpush
