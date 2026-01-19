@@ -129,7 +129,7 @@ $started_already = isset($started_already)? $started_already : false;
                                             <div class="rur-setting-sub">Play sounds after an answer</div>
                                         </div>
                                         <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input play-sounds-check-1" id="play-sounds-check-1">
+                                            <input type="checkbox" class="custom-control-input play-sounds-check-1" checked="" id="play-sounds-check-1">
                                             <label class="custom-control-label" for="play-sounds-check-1"></label>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@ $started_already = isset($started_already)? $started_already : false;
                                             <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
                                         </div>
                                         <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input practice-with-review-check-1" id="practice-with-review-check-1">
+                                            <input type="checkbox" class="custom-control-input practice-with-review-check-1" checked="" id="practice-with-review-check-1">
                                             <label class="custom-control-label" for="practice-with-review-check-1"></label>
                                         </div>
                                     </div>
@@ -151,7 +151,7 @@ $started_already = isset($started_already)? $started_already : false;
                                             <div class="rur-setting-sub">Show prev/next controls</div>
                                         </div>
                                         <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input show-pagination-check-1" id="show-pagination-check-1">
+                                            <input type="checkbox" class="custom-control-input show-pagination-check-1" checked="" id="show-pagination-check-1">
                                             <label class="custom-control-label" for="show-pagination-check-1"></label>
                                         </div>
                                     </div>
@@ -162,7 +162,7 @@ $started_already = isset($started_already)? $started_already : false;
                                             <div class="rur-setting-sub">Show countdown badge</div>
                                         </div>
                                         <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input show-timer-check-1" id="show-timer-check-1">
+                                            <input type="checkbox" class="custom-control-input show-timer-check-1" checked="" id="show-timer-check-1">
                                             <label class="custom-control-label" for="show-timer-check-1"></label>
                                         </div>
                                     </div>
