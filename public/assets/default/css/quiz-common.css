@@ -2829,6 +2829,8 @@ body.quiz-area-page:has(.learn-test-start) {
     display: flex;
     flex-wrap: wrap;
     border-top: 1px dashed rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: -1px;
 }
 .learn-test-start .rur-setting-row {
     padding: 1rem;
