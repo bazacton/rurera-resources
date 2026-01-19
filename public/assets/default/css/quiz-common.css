@@ -2894,11 +2894,12 @@ body.quiz-area-page:has(.learn-test-start) {
     margin: 0 0 25px;
     width: 100%;
     flex-wrap: wrap;
+    align-items: center;
 }
 .stats-card .card-box {
     flex: 0 0 25%;
     max-width: 25%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0;
     padding: 15px;
 }
 .quiz-start-btn {
