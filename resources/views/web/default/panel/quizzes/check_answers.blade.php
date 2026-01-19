@@ -159,7 +159,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                     </div>
                 </div>
                 <div class="position-relative mb-30">
-                    <canvas id="usersStatisticsChart"></canvas>
+                    <img src="/assets/default/img/canvos-img.jpg" alt="canvos-img">
                 </div>
                 <!-- Performance Chart -->
                 <div class="card chart-card mb-30">
