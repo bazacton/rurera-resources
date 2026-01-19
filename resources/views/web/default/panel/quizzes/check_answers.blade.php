@@ -7,7 +7,7 @@ $rand_id = rand(99,9999);
 @endphp
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
+<link rel="stylesheet" href="/assets/default/css/quiz-commomn.css">
 
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
