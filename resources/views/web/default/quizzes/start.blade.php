@@ -99,6 +99,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 </div>
                                 </div>
                             </div>
+                            <h3 class="font-16 font-weight-bold mb-10 text-dark-charcoal">Settings</h3>
                             <div class="stats-card">
                                 <div class="card-box">
                                     <div class="icon-box">
