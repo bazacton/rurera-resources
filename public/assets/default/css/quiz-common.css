@@ -2972,8 +2972,8 @@ body.quiz-area-page:has(.learn-test-start) {
   background-color: #000;
   border-radius: 10px;
   display: inline-block;
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
 }
 .loading-dots--dot:nth-child(2) {
   -webkit-animation-delay: 0.5s;
@@ -2984,12 +2984,12 @@ body.quiz-area-page:has(.learn-test-start) {
           animation-delay: 1s;
 }
 .practice-start-block .loading-dots {
-    display: inline-block;
+    display: inline-flex;
     width: auto;
     background-color: #000;
-    padding: 0 6px 2px;
-    line-height: 16px;
+    padding: 4px 6px 5px;
     border-radius: 3px;
+    gap: 5px;
 }
 .practice-start-block .loading-dots--dot {
     background-color: #fff;
