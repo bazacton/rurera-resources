@@ -1750,3 +1750,221 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .learning-page .close {position: absolute; right: 10px; top: 15px; z-index: 1;}
 .learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin: -25px auto 35px;}
 /* Learning New Style End */
+
+/* Chart Performance Style Start */
+:root {
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      
+      /* Status Colors */
+      --master-bg: #f3f0ff;
+      --master-text: #7c5cff;
+      --strong-bg: #ecfdf5;
+      --strong-text: #10b981;
+      --good-bg: #eff6ff;
+      --good-text: #3b82f6;
+      
+      /* Icon Colors */
+      --icon-sas: #3b82f6;
+      --icon-correct: #22c55e;
+      --icon-time: #3b82f6;
+      --icon-avg: #f97316;
+    }
+/* Header Specifics */
+    .stat-card-simple {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .stat-card-simple .label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .stat-card-simple .value {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+      line-height: 1.2;
+    }
+    .stat-card-simple .note {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .sas-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--icon-sas);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .score-info h2 {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .score-info .score-val {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+
+    .message-box {
+      background: #eff6ff;
+      color: #1e40af;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Stat Cards */
+    .stat-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    
+    .stat-icon.green { background: var(--icon-correct); }
+    .stat-icon.blue { background: var(--icon-time); }
+    .stat-icon.orange { background: var(--icon-avg); }
+
+    .stat-info .label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .stat-info .value {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 4px;
+      line-height: 1.2;
+    }
+
+    /* Chart Section */
+    .chart-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .chart-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Custom Horizontal Chart */
+    .chart-container {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .grid-lines {
+      position: absolute;
+      top: 0;
+      left: 200px; /* Offset for labels */
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .grid-line {
+      width: 1px;
+      background: #f1f5f9;
+      height: 100%;
+    }
+
+    .chart-row {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      height: 40px;
+      margin-bottom: 8px;
+    }
+
+    .row-label {
+      width: 200px;
+      padding-right: 16px;
+      font-size: 14px;
+      color: var(--text-main);
+      font-weight: 500;
+      line-height: 1.3;
+      flex-shrink: 0;
+    }
+
+    .bar-area {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .bar {
+      height: 32px;
+      border-radius: 0 6px 6px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      min-width: 40px;
+      transition: width 0.5s ease-out;
+    }
+
+    /* Bar Variants */
+    .bar.master {
+      background: var(--master-bg);
+      color: var(--master-text);
+    }
+    .bar.strong {
+      background: var(--strong-bg);
+      color: var(--strong-text);
+    }
+    .bar.good {
+      background: var(--good-bg);
+      color: var(--good-text);
+    }
+
+    @media (max-width: 768px) {
+      .message-box {
+        margin-top: 16px;
+        width: 100%;
+      }
+      .row-label {
+        width: 140px;
+        font-size: 12px;
+      }
+      .grid-lines {
+        left: 140px;
+      }
+    }
