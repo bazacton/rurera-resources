@@ -324,6 +324,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
   </div>
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
+
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
@@ -644,32 +645,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     $(document).on('change', '.play-sounds-check', function (evt) {
         sound_check = $(this).is(':checked')? true : false;
     });
-</script>
-<script>
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
 
-    $('.report-icon').on('click', function(){
-        $('#reportModal').modal('show');
-    });
-
-    $('#submitReport').on('click', function () {
-        var otherChecked = $('#optOther').is(':checked');
-        var otherText = $('#otherText').val().trim();
-
-        if (otherChecked && otherText === '') {
-            alert('Please explain the issue in the text area.');
-            return;
-        }
-
-        $('#successMsg').removeClass('d-none');
-
-        setTimeout(function () {
-            $('#reportModal').modal('hide');
-            $('#reportForm')[0].reset();
-            $('#successMsg').addClass('d-none');
-        }, 1500);
-    });
-});
 </script>
 
