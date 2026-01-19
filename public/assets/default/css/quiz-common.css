@@ -2853,6 +2853,7 @@ body.quiz-area-page:has(.learn-test-start) {
     text-align: left;
     padding: 15px 16px 0;
     width: 100%;
+    border-top: 1px dashed rgba(0, 0, 0, 0.08);
 }
 .group-buttons {
     display: inline-flex;
