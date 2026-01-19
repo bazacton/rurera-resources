@@ -2849,12 +2849,18 @@ body.quiz-area-page:has(.learn-test-start) {
     flex: 0 0 50%;
     max-width: 50%;
 }
+.setting-header {
+    text-align: left;
+    padding: 15px 16px 0;
+    width: 100%;
+}
 .group-buttons {
     display: inline-flex;
     align-items: center;
     background-color: #e5e5e5;
     padding: 5px 6px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .select-radio-box {
