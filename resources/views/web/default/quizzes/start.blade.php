@@ -173,12 +173,12 @@ $started_already = isset($started_already)? $started_already : false;
 
                             <div class="btn-holder practice-start-block" data-quiz_loaded="no">
                                 <div class="Preparing-box">
-                                    Preparing
                                     <div class="loading-dots">
                                         <div class="loading-dots--dot"></div>
                                         <div class="loading-dots--dot"></div>
                                         <div class="loading-dots--dot"></div>
                                     </div>
+                                    Preparing
                                 </div>
                                 <span></span>
                             </div>
