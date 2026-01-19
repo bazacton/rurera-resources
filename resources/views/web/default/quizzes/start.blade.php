@@ -122,50 +122,52 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="stat-label font-16 font-weight-500">Earn up to</div>
                                     <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
+                                <div class="rur-setting-row-holder">
+                                    <div class="rur-setting-row">
+                                        <div class="rur-setting-text">
+                                            <div class="rur-setting-title">Correct/Incorrect Sounds</div>
+                                            <div class="rur-setting-sub">Play sounds after an answer</div>
+                                        </div>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input play-sounds-check-1" id="play-sounds-check-1">
+                                            <label class="custom-control-label" for="play-sounds-check-1"></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="rur-setting-row">
+                                        <div class="rur-setting-text">
+                                            <div class="rur-setting-title">Practice with Review</div>
+                                            <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
+                                        </div>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input practice-with-review-check-1" id="practice-with-review-check-1">
+                                            <label class="custom-control-label" for="practice-with-review-check-1"></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="rur-setting-row">
+                                        <div class="rur-setting-text">
+                                            <div class="rur-setting-title">Question Pagination</div>
+                                            <div class="rur-setting-sub">Show prev/next controls</div>
+                                        </div>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input show-pagination-check-1" id="show-pagination-check-1">
+                                            <label class="custom-control-label" for="show-pagination-check-1"></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="rur-setting-row">
+                                        <div class="rur-setting-text">
+                                            <div class="rur-setting-title">Timer</div>
+                                            <div class="rur-setting-sub">Show countdown badge</div>
+                                        </div>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input show-timer-check-1" id="show-timer-check-1">
+                                            <label class="custom-control-label" for="show-timer-check-1"></label>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                <div class="rur-setting-row">
-                                    <div class="rur-setting-text">
-                                        <div class="rur-setting-title">Correct/Incorrect Sounds</div>
-                                        <div class="rur-setting-sub">Play sounds after an answer</div>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input play-sounds-check-1" id="play-sounds-check-1">
-                                        <label class="custom-control-label" for="play-sounds-check-1"></label>
-                                    </div>
-                                </div>
-
-                                <div class="rur-setting-row">
-                                    <div class="rur-setting-text">
-                                        <div class="rur-setting-title">Practice with Review</div>
-                                        <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input practice-with-review-check-1" id="practice-with-review-check-1">
-                                        <label class="custom-control-label" for="practice-with-review-check-1"></label>
-                                    </div>
-                                </div>
-
-                                <div class="rur-setting-row">
-                                    <div class="rur-setting-text">
-                                        <div class="rur-setting-title">Question Pagination</div>
-                                        <div class="rur-setting-sub">Show prev/next controls</div>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input show-pagination-check-1" id="show-pagination-check-1">
-                                        <label class="custom-control-label" for="show-pagination-check-1"></label>
-                                    </div>
-                                </div>
-
-                                <div class="rur-setting-row">
-                                    <div class="rur-setting-text">
-                                        <div class="rur-setting-title">Timer</div>
-                                        <div class="rur-setting-sub">Show countdown badge</div>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input show-timer-check-1" id="show-timer-check-1">
-                                        <label class="custom-control-label" for="show-timer-check-1"></label>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="btn-holder practice-start-block" data-quiz_loaded="no">
