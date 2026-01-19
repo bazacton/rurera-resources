@@ -2983,6 +2983,17 @@ body.quiz-area-page:has(.learn-test-start) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
+.practice-start-block .loading-dots {
+    display: inline-block;
+    width: auto;
+    background-color: #000;
+    padding: 0 6px 2px;
+    line-height: 16px;
+    border-radius: 3px;
+}
+.practice-start-block .loading-dots--dot {
+    background-color: #fff;
+}
 /* Loading Dots Animation Style End */
 /* --- END: Finish Steps --- */
 /* ======================================================== */
