@@ -547,6 +547,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var quiz_result_id = return_data.result_id;
             $(".quiz-complete").html(return_data.result_page_layout);
             $(".quiz-complete").show();
+            TimerActive = false;
             //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
