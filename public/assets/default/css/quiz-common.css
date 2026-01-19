@@ -1582,6 +1582,7 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     height: 20px;
     width: 20px;
     object-fit: contain;
+    filter: invert(18%) sepia(0%) saturate(134%) hue-rotate(233deg) brightness(76%) contrast(83%);
 }
 .quiz-time-bar .coin-numbers span {
     font-weight: 600;
@@ -3120,17 +3121,8 @@ body.quiz-area-page:has(.learn-test-start) {
     .rur-setting-title { font-weight: 600; font-size: 0.95rem; }
     .rur-setting-sub { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
     .setting-modal-btn {
-        background-color: #000;
-        border: 0;
-        border-radius: 3px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 12px;
-        line-height: normal;
-        height: auto;
-        color: #fff;
-        gap: 8px;
+        background-color: inherit;
+        border: 0
     }
     .rur-settings-modal .modal-footer button {
         height: auto;
