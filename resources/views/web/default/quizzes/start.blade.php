@@ -349,6 +349,7 @@ $started_already = isset($started_already)? $started_already : false;
 @endsection
 
 @push('scripts_bottom')
+<script src="/assets/admin/vendor/bootstrap/popper.min.js"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
 
@@ -582,6 +583,33 @@ document.addEventListener('click', function (e) {
 
 /* Resize safety */
 window.addEventListener('resize', updateButtons);
+</script>
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('.report-icon').on('click', function(){
+        $('#reportModal').modal('show');
+    });
+
+    $('#submitReport').on('click', function () {
+        var otherChecked = $('#optOther').is(':checked');
+        var otherText = $('#otherText').val().trim();
+
+        if (otherChecked && otherText === '') {
+            alert('Please explain the issue in the text area.');
+            return;
+        }
+
+        $('#successMsg').removeClass('d-none');
+
+        setTimeout(function () {
+            $('#reportModal').modal('hide');
+            $('#reportForm')[0].reset();
+            $('#successMsg').addClass('d-none');
+        }, 1500);
+    });
+});
 </script>
 
 @endpush
