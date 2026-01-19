@@ -163,12 +163,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         <div id="scroll-controls" class="page-prev-next-controls">
                                             <div class="controls-inner">
                                                 <!-- Top State: Scroll Down Button -->
-                                                <button class="btn-top scroll-btn pill btn-hidden">
+                                                <button class="scroll-btn pill btn-scroll-down">
                                                     Scroll down <i class="arrow down"></i>
                                                 </button>
 
                                                 <!-- Bottom State: Scroll Up Button -->
-                                                <button class="btn-bottom scroll-btn pill btn-hidden">
+                                                <button class="scroll-btn pill btn-scroll-up">
                                                     Scroll up <i class="arrow up"></i>
                                                 </button>
                                             </div>
