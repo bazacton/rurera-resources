@@ -121,24 +121,25 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="stat-label font-14 font-weight-500">Earn up to</div>
                                     <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
-                                <div class="rur-setting-row-holder">
-                                    <div class="setting-header">
-                                        <h2 class="font-16 font-weight-bold text-dark-charcoal text-left">Choose how many questions to attempt.</h2>
-                                        <div class="group-buttons font-14 font-weight-500">
-                                            <div class="select-radio-box">
-                                                <input type="radio" name="select-num" id="num1">
-                                                <label for="num1">10</label>
-                                            </div>
-                                            <div class="select-radio-box">
-                                                <input type="radio" name="select-num" id="num2" checked="">
-                                                <label for="num2">15</label>
-                                            </div>
-                                            <div class="select-radio-box">
-                                                <input type="radio" name="select-num" id="num3">
-                                                <label for="num3">20</label>
-                                            </div>
+                                <div class="choose-questions">
+                                    <h2 class="font-16 font-weight-bold text-dark-charcoal text-left">Choose how many questions to attempt.</h2>
+                                    <div class="group-buttons font-14 font-weight-500">
+                                        <div class="select-radio-box">
+                                            <input type="radio" name="select-num" id="num1">
+                                            <label for="num1">10</label>
+                                        </div>
+                                        <div class="select-radio-box">
+                                            <input type="radio" name="select-num" id="num2" checked="">
+                                            <label for="num2">15</label>
+                                        </div>
+                                        <div class="select-radio-box">
+                                            <input type="radio" name="select-num" id="num3">
+                                            <label for="num3">20</label>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="rur-setting-row-holder">
+                                    
                                     <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
