@@ -134,7 +134,7 @@ $started_already = isset($started_already)? $started_already : false;
                                                 <label for="num1">10</label>
                                             </div>
                                             <div class="select-radio-box">
-                                                <input type="radio" name="select-num" id="num2" chekced>
+                                                <input type="radio" name="select-num" id="num2" checked="">
                                                 <label for="num2">15</label>
                                             </div>
                                             <div class="select-radio-box">
