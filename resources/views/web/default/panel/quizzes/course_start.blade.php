@@ -643,100 +643,76 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-    var btnDown = document.getElementById('btn-top');
-    var btnUp   = document.getElementById('btn-bottom');
-    var container = null;
-    var initialized = false;
+var btnDown = document.getElementById('btn-top');
+var btnUp   = document.getElementById('btn-bottom');
+var container = null;
+var initialized = false;
 
-    /* Scroll container */
-    function getActiveContainer() {
-        return document.querySelector('.quiz-area-page .question-layout-block');
-    }
+function getContainer() {
+    return document.querySelector('.quiz-area-page .question-layout-block');
+}
 
-    function isScrollable(el) {
-        return el && el.scrollHeight > el.clientHeight + 2;
-    }
+function isScrollable(el) {
+    return el.scrollHeight > el.clientHeight + 5;
+}
 
-    function hideButtons() {
+function updateButtons() {
+    if (!container || !isScrollable(container)) {
         btnDown.classList.add('btn-hidden');
         btnUp.classList.add('btn-hidden');
+        return;
     }
 
-    /* Core logic */
-    function updateScrollState(force) {
-        if (!container) return;
+    var top = container.scrollTop;
+    var max = container.scrollHeight - container.clientHeight;
 
-        if (!isScrollable(container)) {
-            hideButtons();
-            return;
-        }
-
-        var scrollTop = container.scrollTop;
-        var maxScroll = container.scrollHeight - container.clientHeight;
-
-        if (force === true && scrollTop === 0) {
-            btnDown.classList.remove('btn-hidden');
-            btnUp.classList.add('btn-hidden');
-            return;
-        }
-
-        if (scrollTop >= maxScroll - 5) {
-            btnDown.classList.add('btn-hidden');
-            btnUp.classList.remove('btn-hidden');
-        } else {
-            btnDown.classList.remove('btn-hidden');
-            btnUp.classList.add('btn-hidden');
-        }
+    if (top <= 0) {
+        btnUp.classList.add('btn-hidden');
+        btnDown.classList.remove('btn-hidden');
+    } else if (top >= max - 5) {
+        btnDown.classList.add('btn-hidden');
+        btnUp.classList.remove('btn-hidden');
+    } else {
+        btnDown.classList.remove('btn-hidden');
+        btnUp.classList.add('btn-hidden');
     }
+}
 
-    /* Attach scroll once */
-    function initScrollButtons() {
-        if (initialized) return;
+function initScroll() {
+    if (initialized) return;
 
-        var el = getActiveContainer();
-        if (!el) return;
+    var el = getContainer();
+    if (!el) return;
 
-        container = el;
-        initialized = true;
+    container = el;
+    initialized = true;
 
-        container.addEventListener('scroll', updateScrollState);
-        updateScrollState(true);
+    container.addEventListener('scroll', updateButtons);
+    updateButtons();
+}
+
+/* Scroll buttons */
+btnDown.onclick = () => container && container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+btnUp.onclick   = () => container && container.scrollTo({ top: 0, behavior: 'smooth' });
+
+/* Start Practice click */
+document.addEventListener('click', function (e) {
+    if (e.target.closest('.quiz-start-btn')) {
+        initialized = false;
+
+        let wait = setInterval(() => {
+            if (getContainer()) {
+                clearInterval(wait);
+                initScroll();
+            }
+        }, 100);
     }
+});
 
-    /* Button clicks */
-    btnDown.addEventListener('click', function () {
-        if (!container) return;
-        container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-    });
-
-    btnUp.addEventListener('click', function () {
-        if (!container) return;
-        container.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    /* IMPORTANT: Start Practice click */
-    document.addEventListener('click', function (e) {
-        if (e.target.closest('.quiz-start-btn')) {
-            // Wait for quiz DOM to render
-            setTimeout(initScrollButtons, 300);
-        }
-    });
-
-    /* Backup observer (in case AJAX is slow) */
-    var quizObserver = new MutationObserver(function () {
-        initScrollButtons();
-    });
-
-    quizObserver.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
-
-    /* Resize safety */
-    window.addEventListener('resize', function () {
-        updateScrollState(true);
-    });
+/* Resize safety */
+window.addEventListener('resize', updateButtons);
 </script>
+
 
 
 
