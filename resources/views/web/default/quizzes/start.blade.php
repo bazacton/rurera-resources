@@ -122,8 +122,25 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
                                 <div class="rur-setting-row-holder">
-                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
-                                    <span class="font-14 d-block setting-sub-title text-left">Chose number of questions</span>
+                                    <div class="setting-header">
+                                        <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
+                                        <span class="font-14 d-block setting-sub-title text-left">Chose number of questions</span>
+                                        <div class="group-buttons">
+                                            <div class="select-radio-box">
+                                                <input type="radio" name="select-num" id="num1">
+                                                <label for="num1">1</label>
+                                            </div>
+                                            <div class="select-radio-box">
+                                                <input type="radio" name="select-num" id="num2">
+                                                <label for="num2">2</label>
+                                            </div>
+                                            <div class="select-radio-box">
+                                                <input type="radio" name="select-num" id="num3">
+                                                <label for="num3">3</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
                                             <div class="rur-setting-title font-14">Correct/Incorrect Sounds</div>
