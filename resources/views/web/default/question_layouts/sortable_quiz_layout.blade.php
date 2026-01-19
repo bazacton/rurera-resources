@@ -40,6 +40,6 @@ $has_image_class = ($hasImage == 1)? 'lms-radio-img' : '';
         <label class="rureraform-description"></label>
     </div>
 </div>
-<script>
+<!-- <script>
     jQuery(".lms-sorting-container-{{$elementObj->field_id}}").sortable();
-</script>
+</script> -->
