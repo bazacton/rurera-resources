@@ -1119,25 +1119,27 @@
     });
 </script>
 <script>
-    (function ($) {
-    "use strict";
+function makeStatisticsChart(canvasId, chartVar, label, labels, data) {
+    const ctx = document.getElementById(canvasId).getContext('2d');
 
-    $(document).ready(function () {
-
-        @if(!empty($getMonthAndYearSalesChart))
-        makeStatisticsChart(
-            'saleStatisticsChart',
-            saleStatisticsChart,
-            'Sale',
-            @json($getMonthAndYearSalesChart['labels']),
-            @json($getMonthAndYearSalesChart['data'])
-        );
-        @endif
-
+    chartVar = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: label,
+                data: data,
+                borderColor: '#4e73df',
+                backgroundColor: 'rgba(78, 115, 223, 0.1)',
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
+        }
     });
-
-})(jQuery);
-
+}
 </script>
 </body>
 </html>
