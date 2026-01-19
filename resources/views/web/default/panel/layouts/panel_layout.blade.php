@@ -172,7 +172,7 @@
                                                             <img src="/assets/default/img/types/practice.svg" alt="practice">
                                                         </div>
                                                         <div class="item-text">
-                                                            <h5>Track Your Progress</h5>
+                                                            <h5 class="font-14 font-weight-bold">Track Your Progress</h5>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -182,7 +182,7 @@
                                                             <img src="/assets/default/img/types/practice.svg" alt="practice">
                                                         </div>
                                                         <div class="item-text">
-                                                            <h5>Earn first 10 coins</h5>
+                                                            <h5 class="font-14 font-weight-bold">Earn first 10 coins</h5>
                                                         </div>
                                                     </div>
                                                 </li>
