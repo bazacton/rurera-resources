@@ -126,7 +126,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         </span>
                                     </div>
                                     <div class="left-content has-bg">
-                                        
+
                                         @if( is_array( $question ))
                                             @php $question_no = 1; @endphp
 
@@ -324,6 +324,31 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
   </div>
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
+<div class="modal fade question_inactivity_modal" id="question_inactivity_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-box">
+        <span class="icon-box d-block mb-15">
+            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
+        </span>
+                    <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
+                    <p class="mb-15 font-16">
+                        You've been inactive for a while, and your session was paused. You can continue learning by using the following links
+                    </p>
+                    <ul class="activity-info">
+                        <li>Total Attempted Questions: <strong class="total-questions">10</strong></li>
+                        <li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
+                        <li>Incorrect: <strong class="incorrect-questions">2</strong></li>
+                    </ul>
+                    <div class="inactivity-controls">
+                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
@@ -352,37 +377,84 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     var duration_type = '{{$duration_type}}';
     var timer_counter = '{{$timer_counter}}';
 
+    var timePaused = false;
+
+    var focusInterval = null;
+    var focusIntervalCount = 10;
+    var TimerActive = true;
+
 
     function quiz_default_functions() {
+
+        console.log('-----------quiz_default_functions------------');
+        if( focusInterval == null) {
+
+            focusInterval = setInterval(function () {
+                var focus_count = focusIntervalCount-1;
+
+                console.log(focus_count);
+                focusIntervalCount = focus_count;
+                if (focus_count <= 0 && TimerActive == true) {
+                    TimerActive = false;
+                    timePaused = true;
+                    var total_questions = $('.quiz-pagination li').length;
+                    $(".question_inactivity_modal .modal-body .total-questions").html(correct_questions+incorrect_questions);
+                    $(".question_inactivity_modal .modal-body .correct-questions").html(correct_questions);
+                    $(".question_inactivity_modal .modal-body .incorrect-questions").html(incorrect_questions);
+                    $(".question_inactivity_modal").modal('show');
+                    focusIntervalCount = 10;
+                    //clearInterval(focusInterval);
+                    focusInterval = null;
+                }
+            }, 1000);
+        }
+
+        window.addEventListener('focus', function () {
+            focusIntervalCount = 10;
+            clearInterval(focusInterval);
+            focusInterval = null;
+        });
+
+        $(document).on('click', '.continue-btn', function (e) {
+            TimerActive = true;
+            timePaused = false;
+            focusIntervalCount = 10;
+            focusInterval = null;
+        });
+
+
+
 
         var active_question_id = $(".question-area-block").attr('data-active_question_id');
         $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
         Quizintervals = setInterval(function () {
-            var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
-            if (duration_type == 'no_time_limit') {
-                quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
-            } else {
-                quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
-            }
-            $('.quiz-timer-counter').html(getTime(quiz_timer_counter));
-            if ($('.nub-of-sec').length > 0) {
-                $('.nub-of-sec').html(getTime(quiz_timer_counter));
-            }
-            $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
-            if (duration_type == 'per_question') {
-                if (parseInt(quiz_timer_counter) == 0) {
-                    clearInterval(Quizintervals);
-                    $('.question-submit-btn').attr('data-bypass_validation', 'yes');
-                    $('#question-submit-btn')[0].click();
+            if( TimerActive == true){
+                var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
+                if (duration_type == 'no_time_limit') {
+                    quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
+                } else {
+                    quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
                 }
-            }
-            if (duration_type == 'total_practice') {
-                if (parseInt(quiz_timer_counter) == 0) {
-                    clearInterval(Quizintervals);
-                    $(".review-btn").click();
-                    if ($('.question-review-btn').length > 0) {
-                        $('.question-review-btn').click();
+                $('.quiz-timer-counter').html(getTime(quiz_timer_counter));
+                if ($('.nub-of-sec').length > 0) {
+                    $('.nub-of-sec').html(getTime(quiz_timer_counter));
+                }
+                $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
+                if (duration_type == 'per_question') {
+                    if (parseInt(quiz_timer_counter) == 0) {
+                        clearInterval(Quizintervals);
+                        $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+                        $('#question-submit-btn')[0].click();
+                    }
+                }
+                if (duration_type == 'total_practice') {
+                    if (parseInt(quiz_timer_counter) == 0) {
+                        clearInterval(Quizintervals);
+                        $(".review-btn").click();
+                        if ($('.question-review-btn').length > 0) {
+                            $('.question-review-btn').click();
+                        }
                     }
                 }
             }
@@ -474,7 +546,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
             $(".quiz-complete").html(return_data.result_page_layout);
-            $(".quiz-complete").show(2000);
+            $(".quiz-complete").show();
             //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
@@ -483,6 +555,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterNextQuestion(){
+        focusIntervalCount = 10;
+        focusInterval = null;
         if (duration_type == 'per_question') {
             $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
