@@ -503,23 +503,30 @@ $started_already = isset($started_already)? $started_already : false;
     }*/
 </script>
 <script>
-var btnDown = document.getElementById('btn-top');
-var btnUp   = document.getElementById('btn-bottom');
+var btnDown = null;
+var btnUp   = null;
 var container = null;
 var initialized = false;
+
+/* Get elements safely */
+function getButtons() {
+    btnDown = document.getElementById('btn-top');
+    btnUp   = document.getElementById('btn-bottom');
+    return btnDown && btnUp;
+}
 
 function getContainer() {
     return document.querySelector('.quiz-area-page .question-layout-block');
 }
 
 function isScrollable(el) {
-    return el.scrollHeight > el.clientHeight + 5;
+    return el && el.scrollHeight > el.clientHeight + 5;
 }
 
 function updateButtons() {
     if (!container || !isScrollable(container)) {
-        btnDown.classList.add('btn-hidden');
-        btnUp.classList.add('btn-hidden');
+        btnDown?.classList.add('btn-hidden');
+        btnUp?.classList.add('btn-hidden');
         return;
     }
 
@@ -538,8 +545,10 @@ function updateButtons() {
     }
 }
 
-function initScroll() {
+function attachScroll() {
     if (initialized) return;
+
+    if (!getButtons()) return;
 
     var el = getContainer();
     if (!el) return;
@@ -548,22 +557,27 @@ function initScroll() {
     initialized = true;
 
     container.addEventListener('scroll', updateButtons);
+
+    btnDown.addEventListener('click', () =>
+        container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' })
+    );
+
+    btnUp.addEventListener('click', () =>
+        container.scrollTo({ top: 0, behavior: 'smooth' })
+    );
+
     updateButtons();
 }
 
-/* Scroll buttons */
-btnDown.onclick = () => container && container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-btnUp.onclick   = () => container && container.scrollTo({ top: 0, behavior: 'smooth' });
-
-/* Start Practice click */
+/* Detect Start Practice */
 document.addEventListener('click', function (e) {
     if (e.target.closest('.quiz-start-btn')) {
         initialized = false;
 
         let wait = setInterval(() => {
-            if (getContainer()) {
+            if (getButtons() && getContainer()) {
                 clearInterval(wait);
-                initScroll();
+                attachScroll();
             }
         }, 100);
     }
@@ -572,4 +586,5 @@ document.addEventListener('click', function (e) {
 /* Resize safety */
 window.addEventListener('resize', updateButtons);
 </script>
+
 @endpush
