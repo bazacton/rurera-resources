@@ -259,7 +259,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                 @endforeach
                                             @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                        <div id="scroll-controls" class="page-prev-next-controls">
+                                        <div id="scroll-controls" class="page-prev-next-controls test-ttt">
                                             <div class="controls-inner">
                                                 <!-- Top State: Scroll Down Button -->
                                                 <button id="btn-top" class="scroll-btn pill btn-hidden">
