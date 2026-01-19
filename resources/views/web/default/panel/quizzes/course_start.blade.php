@@ -644,15 +644,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 </script>
 <script>
 var btnDown = document.getElementById('btn-top');     // Scroll DOWN
-var btnUp = document.getElementById('btn-bottom');   // Scroll UP
+var btnUp   = document.getElementById('btn-bottom'); // Scroll UP
 var container = null;
 
-/* Get active question container */
+/* Get active scroll container */
 function getActiveContainer() {
-    var activeSection = document.querySelector('.rurera-question-block.active');
-    return activeSection
-        ? activeSection.querySelector('.question-inner-step-area .left-content')
-        : null;
+    return document.querySelector(
+        '.rurera-question-block.active ~ .left-content, .left-content'
+    );
+}
+
+function isScrollable(el) {
+    return el && el.scrollHeight > el.clientHeight + 1;
 }
 
 function hideButtons() {
@@ -660,16 +663,11 @@ function hideButtons() {
     btnUp.classList.add('btn-hidden');
 }
 
-function isScrollable(el) {
-    return el && el.scrollHeight > el.clientHeight + 1;
-}
-
 /* Update buttons state */
 function updateScrollState() {
 
     var newContainer = getActiveContainer();
 
-    /* Rebind scroll listener if section changed */
     if (container !== newContainer) {
         if (container) {
             container.removeEventListener('scroll', updateScrollState);
@@ -689,81 +687,41 @@ function updateScrollState() {
     var scrollHeight = container.scrollHeight;
     var clientHeight = container.clientHeight;
 
-    /* At bottom → show UP */
-    if (scrollTop + clientHeight >= scrollHeight - 1) {
+    if (scrollTop + clientHeight >= scrollHeight - 5) {
         btnDown.classList.add('btn-hidden');
         btnUp.classList.remove('btn-hidden');
-    }
-    /* Else → show DOWN */
-    else {
+    } else {
         btnDown.classList.remove('btn-hidden');
         btnUp.classList.add('btn-hidden');
     }
 }
 
-/* Scroll to top */
-function scrollUp() {
-    if (!isScrollable(container)) return;
-    container.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-/* Scroll to bottom */
-function scrollDown() {
+/* Scroll actions */
+btnDown.addEventListener('click', function () {
     if (!isScrollable(container)) return;
     container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-}
+});
 
-/* Button events */
-btnDown.addEventListener('click', scrollDown);
-btnUp.addEventListener('click', scrollUp);
-
-/* Keyboard controls */
-document.addEventListener('keydown', function (e) {
-
-    container = getActiveContainer();
+btnUp.addEventListener('click', function () {
     if (!isScrollable(container)) return;
-
-    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
-        e.preventDefault();
-    }
-
-    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
-        scrollDown();
-    }
-    else if (['ArrowUp', 'PageUp'].includes(e.key)) {
-        scrollUp();
-    }
+    container.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* SAFE MutationObserver (NO FREEZE) */
-var observer = new MutationObserver(function (mutations) {
-    for (var i = 0; i < mutations.length; i++) {
-        var el = mutations[i].target;
-        if (el.classList && el.classList.contains('rurera-question-block')) {
-            updateScrollState();
-            break;
-        }
-    }
+/* Detect question change */
+var observer = new MutationObserver(function () {
+    updateScrollState();
 });
 
-observer.observe(
-    document.querySelector('.rurera-wrapper') || document.body,
-    { attributes: true, subtree: true, attributeFilter: ['class'] }
-);
+observer.observe(document.body, {
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['class']
+});
 
 /* Resize */
 window.addEventListener('resize', updateScrollState);
 
 /* Init */
-updateScrollState();
-
-
-
-var active_question_id = $(".question-area-block").attr('data-active_question_id');
-if(active_question_id > 0){
-    if($('.rurera-question-block.question-step-'+active_question_id).length > 0){
-        $('.rurera-question-block').removeClass('active');
-        $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
-    }
-}
+document.addEventListener('DOMContentLoaded', updateScrollState);
 </script>
+
