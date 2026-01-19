@@ -585,41 +585,31 @@ document.addEventListener('click', function (e) {
 window.addEventListener('resize', updateButtons);
 </script>
 <script>
-function initReportFeature() {
-
-    // Initialize tooltip (safe to re-call)
+$(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
-    // Report icon click (delegated for dynamic content)
-    $(document)
-        .off('click', '.report-icon')
-        .on('click', '.report-icon', function () {
-            $('#reportModal').modal('show');
-        });
+    $('.report-icon').on('click', function(){
+        $('#reportModal').modal('show');
+    });
 
-    // Submit report click (delegated)
-    $(document)
-        .off('click', '#submitReport')
-        .on('click', '#submitReport', function () {
+    $('#submitReport').on('click', function () {
+        var otherChecked = $('#optOther').is(':checked');
+        var otherText = $('#otherText').val().trim();
 
-            var otherChecked = $('#optOther').is(':checked');
-            var otherText = $('#otherText').val().trim();
+        if (otherChecked && otherText === '') {
+            alert('Please explain the issue in the text area.');
+            return;
+        }
 
-            if (otherChecked && otherText === '') {
-                alert('Please explain the issue in the text area.');
-                return;
-            }
+        $('#successMsg').removeClass('d-none');
 
-            $('#successMsg').removeClass('d-none');
-
-            setTimeout(function () {
-                $('#reportModal').modal('hide');
-                $('#reportForm')[0].reset();
-                $('#successMsg').addClass('d-none');
-            }, 1500);
-        });
-}
-
+        setTimeout(function () {
+            $('#reportModal').modal('hide');
+            $('#reportForm')[0].reset();
+            $('#successMsg').addClass('d-none');
+        }, 1500);
+    });
+});
 </script>
 
 @endpush
