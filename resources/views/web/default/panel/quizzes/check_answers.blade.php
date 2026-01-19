@@ -190,7 +190,6 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/js/lottie.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
-<script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 <script>
     init_question_functions();
     $('body').addClass('quiz-show');
@@ -228,20 +227,6 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
               }
             })
           }
-</script>
-<script>
-    (function ($) {
-        "use strict";
-
-        @if(!empty($getMonthAndYearSalesChart))
-        makeStatisticsChart('saleStatisticsChart', saleStatisticsChart, 'Sale', @json($getMonthAndYearSalesChart['labels']),@json($getMonthAndYearSalesChart['data']));
-        @endif
-
-        @if(!empty($usersStatisticsChart))
-        makeStatisticsChart('usersStatisticsChart', usersStatisticsChart, 'Users', @json($usersStatisticsChart['labels']),@json($usersStatisticsChart['data']));
-        @endif
-
-    })(jQuery)
 </script>
 
 @endpush
