@@ -99,26 +99,27 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
-                                    <div class="left-content has-bg">
-                                        <div class="quiz-time-bar mb-auto pb-80 mt-0">
-                                            <div class="timer-wrap">
-                                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-                                                <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
-                                                    <div class="time-box" id="hh">00</div>
-                                                    <span class="colon">:</span>
-                                                    <div class="time-box" id="mm">00</div>
-                                                    <span class="colon">:</span>
-                                                    <div class="time-box" id="ss">00</div>
-                                                </div>
+                                    <div class="quiz-time-bar mb-auto pb-80 mt-0">
+                                        <div class="timer-wrap">
+                                            <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+                                            <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
+                                                <div class="time-box" id="hh">00</div>
+                                                <span class="colon">:</span>
+                                                <div class="time-box" id="mm">00</div>
+                                                <span class="colon">:</span>
+                                                <div class="time-box" id="ss">00</div>
                                             </div>
-                                            <span class="coin-numbers">
-                                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                                <span class="total-earned-coins">0</span>
-                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
-                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                                </button>
-                                            </span>
                                         </div>
+                                        <span class="coin-numbers">
+                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                            <span class="total-earned-coins">0</span>
+                                            <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
+                                                <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="left-content has-bg">
+                                        
                                         @if( is_array( $question ))
                                             @php $question_no = 1; @endphp
 
