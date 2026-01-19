@@ -105,21 +105,21 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="icon-box">
                                         <img src="/assets/default/svgs/clipboard-list.svg" height="64" width="64" alt="clipboard-list">
                                     </div>
-                                    <div class="stat-label font-16 font-weight-500">Question</div>
+                                    <div class="stat-label font-14 font-weight-500">Question</div>
                                     <div class="stat-value font-14 font-weight-bold">4</div>
                                 </div>
                                 <div class="card-box">
                                     <div class="icon-box">
                                         <img src="/assets/default/svgs/clock-colord.svg" height="64" width="64" alt="clock-colord">
                                     </div>
-                                    <div class="stat-label font-16 font-weight-500">Time for quiz</div>
+                                    <div class="stat-label font-14 font-weight-500">Time for quiz</div>
                                     <div class="stat-value font-14 font-weight-bold">20 min</div>
                                 </div>
                                 <div class="card-box">
                                     <div class="icon-box">
                                         <img src="/assets/default/svgs/coin-colord.svg" height="64" width="64" alt="coin-colord">
                                     </div>
-                                    <div class="stat-label font-16 font-weight-500">Earn up to</div>
+                                    <div class="stat-label font-14 font-weight-500">Earn up to</div>
                                     <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
                                 <div class="rur-setting-row-holder">
