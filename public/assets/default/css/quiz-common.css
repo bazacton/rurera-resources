@@ -1576,6 +1576,7 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    margin-left: auto;
 }
 .quiz-time-bar .coin-numbers img {
     height: 20px;
