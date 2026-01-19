@@ -5,7 +5,6 @@
 @endpush
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css">
-    <link rel="stylesheet" href="/assets/default/css/quiz-common.css">
 @endpush
 
 @section('content')
