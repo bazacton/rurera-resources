@@ -2230,7 +2230,7 @@ body.quiz-area-page {
     -ms-overflow-style: none;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
