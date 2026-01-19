@@ -125,7 +125,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 <div class="rur-setting-row-holder">
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
-                                            <div class="rur-setting-title">Correct/Incorrect Sounds</div>
+                                            <div class="rur-setting-title font-14">Correct/Incorrect Sounds</div>
                                             <div class="rur-setting-sub">Play sounds after an answer</div>
                                         </div>
                                         <div class="custom-control custom-switch">
@@ -136,7 +136,7 @@ $started_already = isset($started_already)? $started_already : false;
 
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
-                                            <div class="rur-setting-title">Practice with Review</div>
+                                            <div class="rur-setting-title font-14">Practice with Review</div>
                                             <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
                                         </div>
                                         <div class="custom-control custom-switch">
@@ -147,7 +147,7 @@ $started_already = isset($started_already)? $started_already : false;
 
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
-                                            <div class="rur-setting-title">Question Pagination</div>
+                                            <div class="rur-setting-title font-14">Question Pagination</div>
                                             <div class="rur-setting-sub">Show prev/next controls</div>
                                         </div>
                                         <div class="custom-control custom-switch">
@@ -158,7 +158,7 @@ $started_already = isset($started_already)? $started_already : false;
 
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
-                                            <div class="rur-setting-title">Timer</div>
+                                            <div class="rur-setting-title font-14">Timer</div>
                                             <div class="rur-setting-sub">Show countdown badge</div>
                                         </div>
                                         <div class="custom-control custom-switch">
