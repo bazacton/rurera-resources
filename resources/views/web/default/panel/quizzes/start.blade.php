@@ -489,3 +489,91 @@ $timer_counter = $practice_time;
     }
 
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    let container = null;
+    let initialized = false;
+
+    function getContainer() {
+        return document.querySelector('.quiz-area-page .question-layout-block');
+    }
+
+    function isScrollable(el) {
+        return el && el.scrollHeight > el.clientHeight + 5;
+    }
+
+    function updateButtons() {
+        const btnDown = document.querySelector('.btn-scroll-down');
+        const btnUp   = document.querySelector('.btn-scroll-up');
+
+        if (!container || !btnDown || !btnUp || !isScrollable(container)) {
+            btnDown?.classList.add('btn-hidden');
+            btnUp?.classList.add('btn-hidden');
+            return;
+        }
+
+        const top = container.scrollTop;
+        const max = container.scrollHeight - container.clientHeight;
+
+        if (top <= 0) {
+            btnUp.classList.add('btn-hidden');
+            btnDown.classList.remove('btn-hidden');
+        } else if (top >= max - 5) {
+            btnDown.classList.add('btn-hidden');
+            btnUp.classList.remove('btn-hidden');
+        } else {
+            btnDown.classList.remove('btn-hidden');
+            btnUp.classList.add('btn-hidden');
+        }
+    }
+
+    function initScroll() {
+        if (initialized) return;
+
+        container = getContainer();
+        if (!container) return;
+
+        initialized = true;
+        container.addEventListener('scroll', updateButtons);
+        updateButtons();
+    }
+
+    /* Delegated button click handling (AJAX-safe) */
+    document.addEventListener('click', function (e) {
+
+        if (e.target.closest('.btn-scroll-down')) {
+            container = getContainer();
+            if (container) {
+                container.scrollTo({
+                    top: container.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        if (e.target.closest('.btn-scroll-up')) {
+            container = getContainer();
+            if (container) {
+                container.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        /* Re-init after quiz start */
+        if (e.target.closest('.quiz-start-btn')) {
+            initialized = false;
+            setTimeout(initScroll, 150);
+        }
+    });
+
+    /* Init immediately */
+    initScroll();
+
+    /* Resize safety */
+    window.addEventListener('resize', updateButtons);
+});
+</script>
+
