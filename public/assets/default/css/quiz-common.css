@@ -2849,7 +2849,7 @@ body.quiz-area-page:has(.learn-test-start) {
     flex: 0 0 50%;
     max-width: 50%;
 }
-.setting-header {
+.choose-questions {
     text-align: left;
     padding: 15px 16px 0;
     width: 100%;
