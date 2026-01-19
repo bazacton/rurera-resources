@@ -160,7 +160,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                         @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                        <div id="scroll-controls" class="page-prev-next-controls ttt2">
+                                        <div id="scroll-controls" class="page-prev-next-controls">
                                             <div class="controls-inner">
                                                 <!-- Top State: Scroll Down Button -->
                                                 <button id="btn-top" class="scroll-btn pill btn-hidden">
