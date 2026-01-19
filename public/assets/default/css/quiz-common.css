@@ -2902,7 +2902,8 @@ body.quiz-area-page:has(.learn-test-start) {
     border-bottom: 0;
     padding: 15px;
 }
-.quiz-start-btn {
+.quiz-start-btn,
+.start-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2914,7 +2915,8 @@ body.quiz-area-page:has(.learn-test-start) {
     cursor: pointer;
     transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
-.quiz-start-btn:hover {
+.quiz-start-btn:hover,
+.start-btn:hover {
     transform: translateY(-1px);
 }
 .learn-test-title {
