@@ -170,14 +170,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                         </div>
 
                         <div class="chart-container">
-                        <div class="grid-lines">
-                            <div class="grid-line"></div>
-                            <div class="grid-line"></div>
-                            <div class="grid-line"></div>
-                            <div class="grid-line"></div>
-                            <div class="grid-line"></div>
-                        </div>
-
+                        
                         <!-- Topics -->
                         <div class="chart-row">
                             <div class="row-label">Weights and measures</div>
