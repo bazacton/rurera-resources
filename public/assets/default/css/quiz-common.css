@@ -2839,7 +2839,7 @@ body.quiz-area-page:has(.learn-test-start) {
 .setting-sub-title {
     margin-bottom: -10px;
     width: 100%;
-    padding: 5px 16px 0;
+    padding: 0 16px 10px;
 }
 .learn-test-start .rur-setting-row {
     padding: 1rem;
