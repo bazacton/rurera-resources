@@ -123,11 +123,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 </div>
                                 <div class="rur-setting-row-holder">
                                     <div class="setting-header">
-                                        <div class="setting-title">
-                                            <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
-                                            <span class="font-14 d-block setting-sub-title text-left">Choose how many questions to attempt.</span>
-                                        </div>
-                                        
+                                        <h2 class="font-16 font-weight-bold text-dark-charcoal text-left">Choose how many questions to attempt.</h2>
                                         <div class="group-buttons font-14 font-weight-500">
                                             <div class="select-radio-box">
                                                 <input type="radio" name="select-num" id="num1">
@@ -143,7 +139,7 @@ $started_already = isset($started_already)? $started_already : false;
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
                                             <div class="rur-setting-title font-14">Correct/Incorrect Sounds</div>
