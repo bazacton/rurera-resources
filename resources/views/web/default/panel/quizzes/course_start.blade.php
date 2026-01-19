@@ -100,7 +100,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
                                     <div class="left-content has-bg">
-                                        <div class="quiz-time-bar mb-80 pt-0 mt-0">
+                                        <div class="quiz-time-bar mb-auto pb-80 mt-0">
                                             <div class="timer-wrap">
                                                 <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
                                                 <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
@@ -144,7 +144,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
                                                 $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
                                                     @endphp
-                                                    <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                    <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                          data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
                                                          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
