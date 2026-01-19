@@ -131,15 +131,15 @@ $started_already = isset($started_already)? $started_already : false;
                                         <div class="group-buttons">
                                             <div class="select-radio-box">
                                                 <input type="radio" name="select-num" id="num1">
-                                                <label for="num1">1</label>
+                                                <label for="num1">10</label>
                                             </div>
                                             <div class="select-radio-box">
                                                 <input type="radio" name="select-num" id="num2">
-                                                <label for="num2">2</label>
+                                                <label for="num2">15</label>
                                             </div>
                                             <div class="select-radio-box">
                                                 <input type="radio" name="select-num" id="num3">
-                                                <label for="num3">3</label>
+                                                <label for="num3">20</label>
                                             </div>
                                         </div>
                                     </div>
