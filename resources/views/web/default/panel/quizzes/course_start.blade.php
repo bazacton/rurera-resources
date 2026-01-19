@@ -116,7 +116,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 <span class="total-earned-coins">0</span>
                                                 <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
                                                     <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                                    Start Quiz Nav
+                                                    Quiz Setting
                                                 </button>
                                             </span>
                                         </div>
