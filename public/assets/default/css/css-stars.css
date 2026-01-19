@@ -318,6 +318,10 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     border: 0;
     height: 100%;
 }
+.subchapter-slider .swiper-wrapper {
+    transition: all;
+    transform: translate3d(507px, 0px, 0px);
+}
 .subchapter-slider .swiper-slide {
     background-color: #f8f8f8;
     padding: 15px;
