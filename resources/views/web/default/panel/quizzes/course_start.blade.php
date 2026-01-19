@@ -647,11 +647,9 @@ var btnDown = document.getElementById('btn-top');     // Scroll DOWN
 var btnUp   = document.getElementById('btn-bottom'); // Scroll UP
 var container = null;
 
-/* Get active scroll container */
+/* ✅ Get correct scroll container */
 function getActiveContainer() {
-    return document.querySelector(
-        '.rurera-question-block.active ~ .left-content, .left-content'
-    );
+    return document.querySelector('.left-content');
 }
 
 function isScrollable(el) {
@@ -663,19 +661,18 @@ function hideButtons() {
     btnUp.classList.add('btn-hidden');
 }
 
-/* Update buttons state */
+/* ✅ Main callback */
 function updateScrollState() {
 
     var newContainer = getActiveContainer();
+    if (!newContainer) return;
 
     if (container !== newContainer) {
         if (container) {
             container.removeEventListener('scroll', updateScrollState);
         }
         container = newContainer;
-        if (container) {
-            container.addEventListener('scroll', updateScrollState);
-        }
+        container.addEventListener('scroll', updateScrollState);
     }
 
     if (!isScrollable(container)) {
@@ -684,10 +681,9 @@ function updateScrollState() {
     }
 
     var scrollTop = container.scrollTop;
-    var scrollHeight = container.scrollHeight;
-    var clientHeight = container.clientHeight;
+    var maxScroll = container.scrollHeight - container.clientHeight;
 
-    if (scrollTop + clientHeight >= scrollHeight - 5) {
+    if (scrollTop >= maxScroll - 5) {
         btnDown.classList.add('btn-hidden');
         btnUp.classList.remove('btn-hidden');
     } else {
@@ -696,7 +692,7 @@ function updateScrollState() {
     }
 }
 
-/* Scroll actions */
+/* ✅ Button callbacks */
 btnDown.addEventListener('click', function () {
     if (!isScrollable(container)) return;
     container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
@@ -707,7 +703,7 @@ btnUp.addEventListener('click', function () {
     container.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* Detect question change */
+/* ✅ Detect NEXT / PREV question change */
 var observer = new MutationObserver(function () {
     updateScrollState();
 });
@@ -718,10 +714,8 @@ observer.observe(document.body, {
     attributeFilter: ['class']
 });
 
-/* Resize */
-window.addEventListener('resize', updateScrollState);
-
-/* Init */
+/* ✅ Init */
 document.addEventListener('DOMContentLoaded', updateScrollState);
+window.addEventListener('resize', updateScrollState);
 </script>
 
