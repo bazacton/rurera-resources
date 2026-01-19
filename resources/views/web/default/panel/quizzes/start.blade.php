@@ -490,90 +490,128 @@ $timer_counter = $practice_time;
 
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+var btnDown = document.getElementById('btn-top');     // Scroll DOWN
+var btnUp = document.getElementById('btn-bottom');   // Scroll UP
+var container = null;
 
-    let container = null;
-    let initialized = false;
+/* Get active question container */
+function getActiveContainer() {
+    var activeSection = document.querySelector('.rurera-question-block.active');
+    return activeSection
+        ? activeSection.querySelector('.question-inner-step-area .left-content')
+        : null;
+}
 
-    function getContainer() {
-        return document.querySelector('.quiz-area-page .question-layout-block');
+function hideButtons() {
+    btnDown.classList.add('btn-hidden');
+    btnUp.classList.add('btn-hidden');
+}
+
+function isScrollable(el) {
+    return el && el.scrollHeight > el.clientHeight + 1;
+}
+
+/* Update buttons state */
+function updateScrollState() {
+
+    var newContainer = getActiveContainer();
+
+    /* Rebind scroll listener if section changed */
+    if (container !== newContainer) {
+        if (container) {
+            container.removeEventListener('scroll', updateScrollState);
+        }
+        container = newContainer;
+        if (container) {
+            container.addEventListener('scroll', updateScrollState);
+        }
     }
 
-    function isScrollable(el) {
-        return el && el.scrollHeight > el.clientHeight + 5;
+    if (!isScrollable(container)) {
+        hideButtons();
+        return;
     }
 
-    function updateButtons() {
-        const btnDown = document.querySelector('.btn-scroll-down');
-        const btnUp   = document.querySelector('.btn-scroll-up');
+    var scrollTop = container.scrollTop;
+    var scrollHeight = container.scrollHeight;
+    var clientHeight = container.clientHeight;
 
-        if (!container || !btnDown || !btnUp || !isScrollable(container)) {
-            btnDown?.classList.add('btn-hidden');
-            btnUp?.classList.add('btn-hidden');
-            return;
-        }
+    /* At bottom → show UP */
+    if (scrollTop + clientHeight >= scrollHeight - 1) {
+        btnDown.classList.add('btn-hidden');
+        btnUp.classList.remove('btn-hidden');
+    }
+    /* Else → show DOWN */
+    else {
+        btnDown.classList.remove('btn-hidden');
+        btnUp.classList.add('btn-hidden');
+    }
+}
 
-        const top = container.scrollTop;
-        const max = container.scrollHeight - container.clientHeight;
+/* Scroll to top */
+function scrollUp() {
+    if (!isScrollable(container)) return;
+    container.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-        if (top <= 0) {
-            btnUp.classList.add('btn-hidden');
-            btnDown.classList.remove('btn-hidden');
-        } else if (top >= max - 5) {
-            btnDown.classList.add('btn-hidden');
-            btnUp.classList.remove('btn-hidden');
-        } else {
-            btnDown.classList.remove('btn-hidden');
-            btnUp.classList.add('btn-hidden');
-        }
+/* Scroll to bottom */
+function scrollDown() {
+    if (!isScrollable(container)) return;
+    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+}
+
+/* Button events */
+btnDown.addEventListener('click', scrollDown);
+btnUp.addEventListener('click', scrollUp);
+
+/* Keyboard controls */
+document.addEventListener('keydown', function (e) {
+
+    container = getActiveContainer();
+    if (!isScrollable(container)) return;
+
+    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
+        e.preventDefault();
     }
 
-    function initScroll() {
-        if (initialized) return;
-
-        container = getContainer();
-        if (!container) return;
-
-        initialized = true;
-        container.addEventListener('scroll', updateButtons);
-        updateButtons();
+    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
+        scrollDown();
     }
-
-    /* Delegated button click handling (AJAX-safe) */
-    document.addEventListener('click', function (e) {
-
-        if (e.target.closest('.btn-scroll-down')) {
-            container = getContainer();
-            if (container) {
-                container.scrollTo({
-                    top: container.scrollHeight,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
-        if (e.target.closest('.btn-scroll-up')) {
-            container = getContainer();
-            if (container) {
-                container.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
-        /* Re-init after quiz start */
-        if (e.target.closest('.quiz-start-btn')) {
-            initialized = false;
-            setTimeout(initScroll, 150);
-        }
-    });
-
-    /* Init immediately */
-    initScroll();
-
-    /* Resize safety */
-    window.addEventListener('resize', updateButtons);
+    else if (['ArrowUp', 'PageUp'].includes(e.key)) {
+        scrollUp();
+    }
 });
+
+/* SAFE MutationObserver (NO FREEZE) */
+var observer = new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+        var el = mutations[i].target;
+        if (el.classList && el.classList.contains('rurera-question-block')) {
+            updateScrollState();
+            break;
+        }
+    }
+});
+
+observer.observe(
+    document.querySelector('.rurera-wrapper') || document.body,
+    { attributes: true, subtree: true, attributeFilter: ['class'] }
+);
+
+/* Resize */
+window.addEventListener('resize', updateScrollState);
+
+/* Init */
+updateScrollState();
+
+
+
+var active_question_id = $(".question-area-block").attr('data-active_question_id');
+if(active_question_id > 0){
+    if($('.rurera-question-block.question-step-'+active_question_id).length > 0){
+        $('.rurera-question-block').removeClass('active');
+        $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
+    }
+}
 </script>
 
