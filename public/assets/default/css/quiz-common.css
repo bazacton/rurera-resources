@@ -2835,7 +2835,11 @@ body.quiz-area-page:has(.learn-test-start) {
 .rur-setting-row-holder h3 {
     width: 100%;
     padding: 15px 16px 0;
+}
+.setting-sub-title {
     margin-bottom: -10px;
+    width: 100%;
+    padding: 5px 16px 0;
 }
 .learn-test-start .rur-setting-row {
     padding: 1rem;
