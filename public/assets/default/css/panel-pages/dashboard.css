@@ -822,7 +822,13 @@ Right SideBar Style Start
 .streak-society {
     padding: 20px;
 }
-
+.days-list img {
+    height: 25px;
+    width: 25px;
+}
+.days-list .day-circle:has(img) {
+    background-color: inherit;
+}
 .society-content {
     border: 2px solid #ddd;
     border-radius: 8px;
