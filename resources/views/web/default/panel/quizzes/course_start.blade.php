@@ -647,7 +647,7 @@ var btnDown = document.getElementById('btn-top');
 var btnUp   = document.getElementById('btn-bottom');
 var container = null;
 
-/* ✅ CORRECT scroll container */
+/* CORRECT scroll container */
 function getActiveContainer() {
     return document.querySelector('.quiz-area-page .question-layout-block');
 }
