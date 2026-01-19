@@ -2834,12 +2834,12 @@ body.quiz-area-page:has(.learn-test-start) {
 }
 .rur-setting-row-holder h3 {
     width: 100%;
-    padding: 15px 16px 0;
+    padding: 15px 0 0;
 }
 .setting-sub-title {
     margin-bottom: -10px;
     width: 100%;
-    padding: 0 16px 10px;
+    padding: 0 0 10px;
 }
 .learn-test-start .rur-setting-row {
     padding: 1rem;
