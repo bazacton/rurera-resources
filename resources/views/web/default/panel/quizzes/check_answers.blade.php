@@ -159,7 +159,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                     </div>
                 </div>
                 <!-- Performance Chart -->
-                <div class="card chart-card">
+                <div class="card chart-card mb-30">
                     <div class="card-body p-4">
                         <div class="chart-header mb-4">
                         <div class="chart-title">Performance by topic</div>
