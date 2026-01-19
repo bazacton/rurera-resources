@@ -2933,6 +2933,15 @@ body.quiz-area-page:has(.learn-test-start) {
     height: 100%;
     object-fit: contain;
 }
+.btn-holder.practice-start-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.practice-start-text {
+    width: calc(100% - 50px);
+}
 /* Loading Dots Animation Style Start */
 @-webkit-keyframes dot-keyframes {
   0% {
