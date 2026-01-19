@@ -445,6 +445,11 @@ $started_already = isset($started_already)? $started_already : false;
         sound_check_parent = this.checked;
     });
 
+    $(".show-timer-check-1").change();
+    $(".show-pagination-check-1").change();
+    $(".practice-with-review-check-1").change();
+    $(".play-sounds-check-1").change();
+
 
     $(document).on('click', '.quiz-start-btn', function (evt) {
         if(show_timer_check_parent == true){
