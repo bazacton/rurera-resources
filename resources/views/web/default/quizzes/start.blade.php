@@ -600,13 +600,21 @@ $(document).ready(function () {
 
 
 /**
- * ✅ CALLBACK FUNCTION
+ * CALLBACK FUNCTION
  * Runs only after quiz page is loaded
  */
 function quizPageCallback() {
 
     // Enable tooltips
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').each(function () {
+
+        $(this).tooltip({
+            html: true,
+            container: $(this).closest('.quiz-time-bar'),
+            trigger: 'hover'
+        });
+
+    });
 
     // Open report modal
     $(document).off('click', '.report-icon').on('click', '.report-icon', function () {
