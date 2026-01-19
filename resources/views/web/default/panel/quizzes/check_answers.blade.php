@@ -177,49 +177,49 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                         
                         <!-- Topics -->
                         <div class="chart-row">
-                            <div class="row-label">Weights and measures</div>
+                            <div class="row-label">Metals and non-metals</div>
                             <div class="bar-area">
                             <div class="bar master" style="width: 95%;">Master</div>
                             </div>
                         </div>
 
                         <div class="chart-row">
-                            <div class="row-label">Properties of shape</div>
+                            <div class="row-label">Comparing metals and non-metals</div>
                             <div class="bar-area">
                             <div class="bar master" style="width: 88%;">Master</div>
                             </div>
                         </div>
 
                         <div class="chart-row">
-                            <div class="row-label">Operations</div>
+                            <div class="row-label">Metal mixtures</div>
                             <div class="bar-area">
                             <div class="bar strong" style="width: 78%;">Strong</div>
                             </div>
                         </div>
 
                         <div class="chart-row">
-                            <div class="row-label">Percentages</div>
+                            <div class="row-label">Using the properties of materials to separate</div>
                             <div class="bar-area">
                             <div class="bar strong" style="width: 72%;">Strong</div>
                             </div>
                         </div>
 
                         <div class="chart-row">
-                            <div class="row-label">Place value</div>
+                            <div class="row-label">mixtures</div>
                             <div class="bar-area">
                             <div class="bar strong" style="width: 65%;">Strong</div>
                             </div>
                         </div>
 
                         <div class="chart-row">
-                            <div class="row-label">Position and direction</div>
+                            <div class="row-label">Acids and alkalis</div>
                             <div class="bar-area">
                             <div class="bar good" style="width: 55%;">Good</div>
                             </div>
                         </div>
 
                         <div class="chart-row">
-                            <div class="row-label">Graphs</div>
+                            <div class="row-label">Indicators and the pH scale</div>
                             <div class="bar-area">
                             <div class="bar good" style="width: 45%;">Good</div>
                             </div>
