@@ -126,7 +126,6 @@ $started_already = isset($started_already)? $started_already : false;
                                         <img src="/assets/default/svgs/target.svg" height="800" width="800" alt="target">
                                     </div>
                                     <div class="stat-label font-16 font-weight-500">Attempts</div>
-                                    <div class="stat-value font-14 font-weight-bold">2</div>
                                 </div>
                                 <div class="rur-setting-row">
                                     <div class="rur-setting-text">
