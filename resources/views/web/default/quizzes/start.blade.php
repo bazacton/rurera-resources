@@ -585,14 +585,37 @@ document.addEventListener('click', function (e) {
 window.addEventListener('resize', updateButtons);
 </script>
 <script>
-$(function () {
+$(document).ready(function () {
+
+    // 👉 Run when Start Practice button is clicked
+    $(document).on('click', '.quiz-start-btn', function () {
+
+        // Wait until quiz content is fully loaded/rendered
+        setTimeout(function () {
+            quizPageCallback();
+        }, 300); // increase to 500 if needed
+    });
+
+});
+
+
+/**
+ * ✅ CALLBACK FUNCTION
+ * Runs only after quiz page is loaded
+ */
+function quizPageCallback() {
+
+    // Enable tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
-    $('.report-icon').on('click', function(){
+    // Open report modal
+    $(document).off('click', '.report-icon').on('click', '.report-icon', function () {
         $('#reportModal').modal('show');
     });
 
-    $('#submitReport').on('click', function () {
+    // Submit report logic
+    $(document).off('click', '#submitReport').on('click', '#submitReport', function () {
+
         var otherChecked = $('#optOther').is(':checked');
         var otherText = $('#otherText').val().trim();
 
@@ -609,7 +632,8 @@ $(function () {
             $('#successMsg').addClass('d-none');
         }, 1500);
     });
-});
+}
+
 </script>
 
 @endpush
