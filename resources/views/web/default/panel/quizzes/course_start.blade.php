@@ -647,9 +647,9 @@ var btnDown = document.getElementById('btn-top');
 var btnUp   = document.getElementById('btn-bottom');
 var container = null;
 
-/* Get scroll container */
+/* ✅ CORRECT scroll container */
 function getActiveContainer() {
-    return document.querySelector('.left-content');
+    return document.querySelector('.quiz-area-page .question-layout-block');
 }
 
 function isScrollable(el) {
@@ -661,7 +661,6 @@ function hideButtons() {
     btnUp.classList.add('btn-hidden');
 }
 
-/* Main logic */
 function updateScrollState(force) {
 
     var newContainer = getActiveContainer();
@@ -683,7 +682,7 @@ function updateScrollState(force) {
     var scrollTop = container.scrollTop;
     var maxScroll = container.scrollHeight - container.clientHeight;
 
-    /* 🔥 Force initial state */
+    /* Initial state */
     if (force === true && scrollTop === 0) {
         btnDown.classList.remove('btn-hidden');
         btnUp.classList.add('btn-hidden');
@@ -699,7 +698,7 @@ function updateScrollState(force) {
     }
 }
 
-/* Button actions */
+/* Buttons */
 btnDown.addEventListener('click', function () {
     if (!isScrollable(container)) return;
     container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
@@ -710,7 +709,7 @@ btnUp.addEventListener('click', function () {
     container.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* Detect question change (SAFE) */
+/* Question change detector (SAFE) */
 var observer = new MutationObserver(function (mutations) {
     for (var i = 0; i < mutations.length; i++) {
         if (
@@ -719,7 +718,7 @@ var observer = new MutationObserver(function (mutations) {
         ) {
             setTimeout(function () {
                 updateScrollState(true);
-            }, 50); // allow DOM paint
+            }, 50);
             break;
         }
     }
@@ -730,7 +729,7 @@ observer.observe(
     { subtree: true, attributes: true, attributeFilter: ['class'] }
 );
 
-/* Init (IMPORTANT) */
+/* Init */
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         updateScrollState(true);
@@ -741,4 +740,5 @@ window.addEventListener('resize', function () {
     updateScrollState(true);
 });
 </script>
+
 
