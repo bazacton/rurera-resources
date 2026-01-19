@@ -122,12 +122,7 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="stat-label font-16 font-weight-500">Earn up to</div>
                                     <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
-                                <div class="card-box">
-                                    <div class="icon-box">
-                                        <img src="/assets/default/svgs/target.svg" height="800" width="800" alt="target">
-                                    </div>
-                                    <div class="stat-label font-16 font-weight-500">Attempts</div>
-                                </div>
+                                
                                 <div class="rur-setting-row">
                                     <div class="rur-setting-text">
                                         <div class="rur-setting-title">Correct/Incorrect Sounds</div>
