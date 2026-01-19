@@ -158,8 +158,78 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                         </div>
                     </div>
                 </div>
-                <div class="position-relative">
-                    <canvas id="saleStatisticsChart"></canvas>
+                <!-- Performance Chart -->
+                <div class="card chart-card">
+                    <div class="card-body p-4">
+                        <div class="chart-header mb-4">
+                        <div class="chart-title">Performance by topic</div>
+                        <div class="chart-desc text-muted">
+                            The bar chart shows how likely you are to get an average question correct in each topic.
+                            This is based on your answers in this mock test. It will increase with practice!
+                        </div>
+                        </div>
+
+                        <div class="chart-container">
+                        <div class="grid-lines">
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                        </div>
+
+                        <!-- Topics -->
+                        <div class="chart-row">
+                            <div class="row-label">Weights and measures</div>
+                            <div class="bar-area">
+                            <div class="bar master" style="width: 95%;">Master</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-row">
+                            <div class="row-label">Properties of shape</div>
+                            <div class="bar-area">
+                            <div class="bar master" style="width: 88%;">Master</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-row">
+                            <div class="row-label">Operations</div>
+                            <div class="bar-area">
+                            <div class="bar strong" style="width: 78%;">Strong</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-row">
+                            <div class="row-label">Percentages</div>
+                            <div class="bar-area">
+                            <div class="bar strong" style="width: 72%;">Strong</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-row">
+                            <div class="row-label">Place value</div>
+                            <div class="bar-area">
+                            <div class="bar strong" style="width: 65%;">Strong</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-row">
+                            <div class="row-label">Position and direction</div>
+                            <div class="bar-area">
+                            <div class="bar good" style="width: 55%;">Good</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-row">
+                            <div class="row-label">Graphs</div>
+                            <div class="bar-area">
+                            <div class="bar good" style="width: 45%;">Good</div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
                 </div>
 
                 @if( !empty( $questions_layout ))
