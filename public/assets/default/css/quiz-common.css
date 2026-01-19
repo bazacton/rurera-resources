@@ -2940,7 +2940,6 @@ body.quiz-area-page:has(.learn-test-start) {
     gap: 5px;
 }
 .practice-start-text {
-    width: calc(100% - 50px);
     text-align: left;
 }
 /* Loading Dots Animation Style Start */
