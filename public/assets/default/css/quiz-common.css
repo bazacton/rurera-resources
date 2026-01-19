@@ -2849,6 +2849,44 @@ body.quiz-area-page:has(.learn-test-start) {
     flex: 0 0 50%;
     max-width: 50%;
 }
+.setting-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.group-buttons {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e5e5e5;
+    padding: 5px 6px;
+    border-radius: 5px;
+}
+
+.select-radio-box {
+    position: relative;
+}
+
+.select-radio-box input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.select-radio-box label {
+    margin: 0;
+    padding: 2px 10px;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.select-radio-box:has(input[type="radio"]:checked) label {
+    background-color: #fff;
+}
 .learn-chats .avatar {
     height: 80px;
     width: 80px;
