@@ -189,8 +189,8 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/js/lottie.min.js"></script>
-<script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
+<script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 <script>
     init_question_functions();
     $('body').addClass('quiz-show');
