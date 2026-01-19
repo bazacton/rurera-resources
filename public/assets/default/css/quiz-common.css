@@ -2828,13 +2828,13 @@ body.quiz-area-page:has(.learn-test-start) {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px dashed rgba(0, 0, 0, 0.08);
     overflow: hidden;
     margin-bottom: -1px;
 }
 .rur-setting-row-holder h3 {
     width: 100%;
-    padding: 15px 0 0;
+    padding: 15px 16px 0;
+    margin-bottom: -10px;
 }
 .setting-sub-title {
     margin-bottom: -10px;
