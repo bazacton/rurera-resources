@@ -2824,6 +2824,12 @@ body.quiz-area-page:has(.learn-test-start) {
     text-align: center;
     width: 550px;
 }
+.rur-setting-row-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px dashed rgba(0, 0, 0, 0.08);
+}
 .learn-test-start .rur-setting-row {
     padding: 1rem;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
