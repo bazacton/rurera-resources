@@ -1181,6 +1181,10 @@ body mjx-container[display] {
 .preview-question-area .question-layout::selection {
     background-color: inherit;
 }
+.cloud_nner_text li span{
+    display: inline-block;
+    word-wrap: break-word;
+}
 .quiz-group ul li {list-style: inherit; width: 100%;}
 .learning-page .learning-content {height: calc(100vh - 105px);}
 .question_hint {font-style: italic; color: #999; display: block; line-height: 24px; margin-top: 10px;}
