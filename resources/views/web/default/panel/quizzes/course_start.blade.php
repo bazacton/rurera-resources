@@ -759,5 +759,11 @@ updateScrollState();
 
 
 
-
+var active_question_id = $(".question-area-block").attr('data-active_question_id');
+if(active_question_id > 0){
+    if($('.rurera-question-block.question-step-'+active_question_id).length > 0){
+        $('.rurera-question-block').removeClass('active');
+        $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
+    }
+}
 </script>
