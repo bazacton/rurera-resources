@@ -116,6 +116,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal">
                                                 <img src="/assets/default/svgs/setting.svg" alt="setting">
                                             </button>
+                                            <button type="button" 
+                                            data-toggle="tooltip"
+                                            title="Report this question"
+                                            data-target="#reportModal"
+                                            data-toggle2="modal">
+                                            <img src="/assets/default/svgs/flag-2.svg" height="64" width="64" alt="flag-2">
+                                            </button>
                                         </span>
                                     </div>
                                     <div class="left-content has-bg">
