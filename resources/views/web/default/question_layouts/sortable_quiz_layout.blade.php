@@ -44,7 +44,7 @@ $has_image_class = ($hasImage == 1)? 'lms-radio-img' : '';
 jQuery(function ($) {
     var $container = $(".lms-sorting-container-{{$elementObj->field_id}}");
 
-    if ($container.length > 0) {
+    if ($container.length && $.fn.sortable) {
         $container.sortable();
     }
 });
