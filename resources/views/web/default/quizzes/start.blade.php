@@ -128,7 +128,7 @@ $started_already = isset($started_already)? $started_already : false;
                                             <span class="font-14 d-block setting-sub-title text-left">Choose number of questions</span>
                                         </div>
                                         
-                                        <div class="group-buttons">
+                                        <div class="group-buttons font-14 font-weight-500">
                                             <div class="select-radio-box">
                                                 <input type="radio" name="select-num" id="num1">
                                                 <label for="num1">10</label>
@@ -191,8 +191,8 @@ $started_already = isset($started_already)? $started_already : false;
                                 
                             </div>
 
-                            <div class="btn-holder practice-start-block" data-quiz_loaded="no">
-                                <div class="Preparing-box font-14">
+                            <div class="btn-holder practice-start-block font-14" data-quiz_loaded="no">
+                                <div class="Preparing-box">
                                     <div class="loading-dots">
                                         <div class="loading-dots--dot"></div>
                                         <div class="loading-dots--dot"></div>
