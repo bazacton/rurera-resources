@@ -1120,17 +1120,24 @@
 </script>
 <script>
     (function ($) {
-        "use strict";
+    "use strict";
+
+    $(document).ready(function () {
 
         @if(!empty($getMonthAndYearSalesChart))
-        makeStatisticsChart('saleStatisticsChart', saleStatisticsChart, 'Sale', @json($getMonthAndYearSalesChart['labels']),@json($getMonthAndYearSalesChart['data']));
+        makeStatisticsChart(
+            'saleStatisticsChart',
+            saleStatisticsChart,
+            'Sale',
+            @json($getMonthAndYearSalesChart['labels']),
+            @json($getMonthAndYearSalesChart['data'])
+        );
         @endif
 
-        @if(!empty($usersStatisticsChart))
-        makeStatisticsChart('usersStatisticsChart', usersStatisticsChart, 'Users', @json($usersStatisticsChart['labels']),@json($usersStatisticsChart['data']));
-        @endif
+    });
 
-    })(jQuery)
+})(jQuery);
+
 </script>
 </body>
 </html>
