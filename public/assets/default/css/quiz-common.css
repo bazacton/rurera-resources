@@ -2941,6 +2941,7 @@ body.quiz-area-page:has(.learn-test-start) {
 }
 .practice-start-text {
     width: calc(100% - 50px);
+    text-align: left;
 }
 /* Loading Dots Animation Style Start */
 @-webkit-keyframes dot-keyframes {
