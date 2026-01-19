@@ -3256,9 +3256,19 @@ body.quiz-area-page:has(.learn-test-start) {
     /* Rurera-Settings-Modal Style End */
 
     /* Rurera-Report Modal Style Start */
+    .report-btn {
+        background-color: inherit;
+        padding: 0;
+        height: auto;
+        border: 0;
+    }
+    .report-btn img {
+        filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
+    }
     .question-area .tooltip-inner {
         background-color: #000;
         min-width: 140px;
+        margin-left: 10px;
     }
     .question-area .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
     .question-area .bs-tooltip-bottom .arrow:before {
