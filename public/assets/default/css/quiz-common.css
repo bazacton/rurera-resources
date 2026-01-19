@@ -1582,7 +1582,6 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     height: 20px;
     width: 20px;
     object-fit: contain;
-    filter: invert(18%) sepia(0%) saturate(134%) hue-rotate(233deg) brightness(76%) contrast(83%);
 }
 .quiz-time-bar .coin-numbers span {
     font-weight: 600;
@@ -3123,6 +3122,9 @@ body.quiz-area-page:has(.learn-test-start) {
     .setting-modal-btn {
         background-color: inherit;
         border: 0
+    }
+    .setting-modal-btn img {
+        filter: invert(18%) sepia(0%) saturate(134%) hue-rotate(233deg) brightness(76%) contrast(83%);
     }
     .rur-settings-modal .modal-footer button {
         height: auto;
