@@ -3254,3 +3254,14 @@ body.quiz-area-page:has(.learn-test-start) {
     .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
     .rur-muted { color: #6c757d; }
     /* Rurera-Settings-Modal Style End */
+
+    /* Rurera-Report Modal Style Start */
+    .question-area .tooltip-inner {
+        background-color: #000;
+        min-width: 140px;
+    }
+    .question-area .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
+    .question-area .bs-tooltip-bottom .arrow:before {
+        border-bottom-color: #000;
+    }
+     /* Rurera-Report Modal Style End */
