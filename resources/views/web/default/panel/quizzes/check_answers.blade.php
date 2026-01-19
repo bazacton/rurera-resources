@@ -159,7 +159,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                     </div>
                 </div>
                 <div class="position-relative mb-30">
-                    <canvas id="saleStatisticsChart"></canvas>
+                    <canvas id="usersStatisticsChart"></canvas>
                 </div>
                 <!-- Performance Chart -->
                 <div class="card chart-card mb-30">
@@ -293,5 +293,26 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
               }
             })
           }
+</script>
+<script>
+    (function ($) {
+    "use strict";
+
+    $(document).ready(function () {
+
+        @if(!empty($getMonthAndYearSalesChart))
+        makeStatisticsChart(
+            'saleStatisticsChart',
+            saleStatisticsChart,
+            'Sale',
+            @json($getMonthAndYearSalesChart['labels']),
+            @json($getMonthAndYearSalesChart['data'])
+        );
+        @endif
+
+    });
+
+})(jQuery);
+
 </script>
 @endpush
