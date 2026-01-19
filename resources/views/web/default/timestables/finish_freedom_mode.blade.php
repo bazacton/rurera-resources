@@ -46,7 +46,6 @@
         </div>
         <div class="card-box">
           <div class="stat-label font-16 font-weight-500">Attempts</div>
-          <div class="stat-value font-14 font-weight-bold">2</div>
         </div>
       </div>
       <div class="btn-holder">
