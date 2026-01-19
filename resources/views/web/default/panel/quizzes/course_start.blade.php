@@ -324,7 +324,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
   </div>
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
