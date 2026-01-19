@@ -2886,6 +2886,7 @@ body.quiz-area-page:has(.learn-test-start) {
 
 .select-radio-box:has(input[type="radio"]:checked) label {
     background-color: #fff;
+    color: var(--primary);
 }
 .learn-chats .avatar {
     height: 80px;
