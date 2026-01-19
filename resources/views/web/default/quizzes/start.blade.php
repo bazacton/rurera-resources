@@ -585,7 +585,7 @@ document.addEventListener('click', function (e) {
 window.addEventListener('resize', updateButtons);
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
