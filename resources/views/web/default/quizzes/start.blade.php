@@ -123,6 +123,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 </div>
                                 <div class="rur-setting-row-holder">
                                     <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
+                                    <span class="font-14 d-block pt-5 setting-sub-title">Chose number of questions</span>
                                     <div class="rur-setting-row">
                                         <div class="rur-setting-text">
                                             <div class="rur-setting-title font-14">Correct/Incorrect Sounds</div>
