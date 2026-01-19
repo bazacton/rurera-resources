@@ -1,3 +1,4 @@
+@php use App\Models\Category; @endphp
 @php
 $sub_chapter_id  = isset( $sub_chapter_id )? $sub_chapter_id : 0;
 $chapter  = isset( $chapter )? $chapter : '';
@@ -15,10 +16,8 @@ $chapter  = isset( $chapter )? $chapter : '';
             <span class="chapter-icon chapter-content-icon mr-10">
                 <i data-feather="bookmark" class=""></i>
             </span>
-
+            @php $part_items_count = isset($subChapterInfo->id)? $subChapterInfo->topicParts->count() : 0; @endphp
             <span class="font-weight-bold text-dark-blue d-block cursor-pointer">
-
-                @php $part_items_count = isset($subChapterInfo->id)? $subChapterInfo->topicParts->count() : 0; @endphp
                 {{ !empty($subChapterInfo) ? $subChapterInfo->sub_chapter_title : trans('public.add_new_quizzes') }}
                 @if($part_items_count == 0)
                     <span class="subtopic-parts-block"><a href="javascript:;" class="generate-subtopic-part" data-sub_chapter_id="{{isset($subChapterInfo->id)? $subChapterInfo->id : 0}}">Generate</a></span>
@@ -26,6 +25,27 @@ $chapter  = isset( $chapter )? $chapter : '';
                     <span class="subtopic-parts-block"><img src="/assets/default/img/tick-white.png"></span>
                 @endif
             </span>
+
+
+            @if(isset($subChapterInfo->id))
+
+                @php $year_ids = isset($webinar->category_id)? json_decode($webinar->category_id) : array(); @endphp
+
+                @if(!empty($year_ids))
+                    Topic Part Items: <br>
+                    @foreach($year_ids as $year_id)
+                        @php $categoryObj = Category::find($year_id); @endphp
+                        @php $subChapterTopicParts = $subChapterInfo->topicParts()->where('category_id', $year_id)->get(); @endphp
+                        @if(!empty($subChapterTopicParts))
+                            @foreach($subChapterTopicParts as $subChapterTopicPartObj)
+                                {{$categoryObj->getTitleAttribute()}}: {{$subChapterTopicPartObj->topicSubParts->count()}}<br>
+
+                            @endforeach
+                        @endif
+
+                    @endforeach
+                @endif
+            @endif
         </div>
 
         <div class="d-flex align-items-center">
@@ -77,13 +97,13 @@ $chapter  = isset( $chapter )? $chapter : '';
         </div>
     </div>
 
-    
-    
-    
+
+
+
     <div class="modal sub-topic-modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-            
+
             <div class="modal-body">
                 <div id="collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
                     aria-labelledby="quiz_{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"

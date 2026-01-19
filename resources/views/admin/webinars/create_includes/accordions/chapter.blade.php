@@ -88,7 +88,7 @@
                                                 @foreach($chapter->chapterItems as $chapterItem)
                                                     @if($chapterItem->type == \App\Models\WebinarChapterItem::$chapterSubChapter)
                                                         @if( isset( $chapterItem->sub_chapter->id ))
-                                                            @include('admin.webinars.create_includes.accordions.sub' ,['sub_chapter_id' => $chapterItem->sub_chapter->id,'subChapterInfo' => $chapterItem->sub_chapter , 'chapter' => $chapter, 'chapterItem' => $chapterItem])
+                                                            @include('admin.webinars.create_includes.accordions.sub' ,['webinar'=> $webinar, 'sub_chapter_id' => $chapterItem->sub_chapter->id,'subChapterInfo' => $chapterItem->sub_chapter , 'chapter' => $chapter, 'chapterItem' => $chapterItem])
                                                         @endif
                                                     @endif
                                                 @endforeach
