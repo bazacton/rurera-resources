@@ -646,7 +646,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 var btnDown = document.getElementById('btn-top');
 var btnUp   = document.getElementById('btn-bottom');
 var container = null;
-var ticking = false;
 
 /* Get scroll container */
 function getActiveContainer() {
@@ -654,7 +653,7 @@ function getActiveContainer() {
 }
 
 function isScrollable(el) {
-    return el && el.scrollHeight > el.clientHeight + 1;
+    return el && el.scrollHeight > el.clientHeight + 2;
 }
 
 function hideButtons() {
@@ -662,42 +661,42 @@ function hideButtons() {
     btnUp.classList.add('btn-hidden');
 }
 
-/* Main callback (throttled) */
-function updateScrollState() {
+/* Main logic */
+function updateScrollState(force) {
 
-    if (ticking) return;
-    ticking = true;
+    var newContainer = getActiveContainer();
+    if (!newContainer) return;
 
-    requestAnimationFrame(function () {
-        ticking = false;
-
-        var newContainer = getActiveContainer();
-        if (!newContainer) return;
-
-        if (container !== newContainer) {
-            if (container) {
-                container.removeEventListener('scroll', updateScrollState);
-            }
-            container = newContainer;
-            container.addEventListener('scroll', updateScrollState);
+    if (container !== newContainer) {
+        if (container) {
+            container.removeEventListener('scroll', updateScrollState);
         }
+        container = newContainer;
+        container.addEventListener('scroll', updateScrollState);
+    }
 
-        if (!isScrollable(container)) {
-            hideButtons();
-            return;
-        }
+    if (!isScrollable(container)) {
+        hideButtons();
+        return;
+    }
 
-        var scrollTop = container.scrollTop;
-        var maxScroll = container.scrollHeight - container.clientHeight;
+    var scrollTop = container.scrollTop;
+    var maxScroll = container.scrollHeight - container.clientHeight;
 
-        if (scrollTop >= maxScroll - 5) {
-            btnDown.classList.add('btn-hidden');
-            btnUp.classList.remove('btn-hidden');
-        } else {
-            btnDown.classList.remove('btn-hidden');
-            btnUp.classList.add('btn-hidden');
-        }
-    });
+    /* 🔥 Force initial state */
+    if (force === true && scrollTop === 0) {
+        btnDown.classList.remove('btn-hidden');
+        btnUp.classList.add('btn-hidden');
+        return;
+    }
+
+    if (scrollTop >= maxScroll - 5) {
+        btnDown.classList.add('btn-hidden');
+        btnUp.classList.remove('btn-hidden');
+    } else {
+        btnDown.classList.remove('btn-hidden');
+        btnUp.classList.add('btn-hidden');
+    }
 }
 
 /* Button actions */
@@ -711,12 +710,16 @@ btnUp.addEventListener('click', function () {
     container.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* SAFE observer: only watch question activation */
+/* Detect question change (SAFE) */
 var observer = new MutationObserver(function (mutations) {
     for (var i = 0; i < mutations.length; i++) {
-        var el = mutations[i].target;
-        if (el.classList && el.classList.contains('rurera-question-block')) {
-            updateScrollState();
+        if (
+            mutations[i].target.classList &&
+            mutations[i].target.classList.contains('rurera-question-block')
+        ) {
+            setTimeout(function () {
+                updateScrollState(true);
+            }, 50); // allow DOM paint
             break;
         }
     }
@@ -727,8 +730,15 @@ observer.observe(
     { subtree: true, attributes: true, attributeFilter: ['class'] }
 );
 
-/* Init */
-document.addEventListener('DOMContentLoaded', updateScrollState);
-window.addEventListener('resize', updateScrollState);
+/* Init (IMPORTANT) */
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        updateScrollState(true);
+    }, 100);
+});
+
+window.addEventListener('resize', function () {
+    updateScrollState(true);
+});
 </script>
 
