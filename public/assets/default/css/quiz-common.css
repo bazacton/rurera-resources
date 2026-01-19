@@ -2829,6 +2829,8 @@ body.quiz-area-page:has(.learn-test-start) {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
     width: 100%;
     text-align: left;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 .learn-chats .avatar {
     height: 80px;
