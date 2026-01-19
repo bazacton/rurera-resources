@@ -643,72 +643,91 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-var btnDown = document.getElementById('btn-top');
-var btnUp   = document.getElementById('btn-bottom');
-var container = null;
-var initialized = false;
+document.addEventListener('DOMContentLoaded', function () {
 
-function getContainer() {
-    return document.querySelector('.quiz-area-page .question-layout-block');
-}
+    let btnDown = document.getElementById('btn-top');
+    let btnUp   = document.getElementById('btn-bottom');
+    let container = null;
+    let initialized = false;
 
-function isScrollable(el) {
-    return el.scrollHeight > el.clientHeight + 5;
-}
-
-function updateButtons() {
-    if (!container || !isScrollable(container)) {
-        btnDown.classList.add('btn-hidden');
-        btnUp.classList.add('btn-hidden');
-        return;
+    function getContainer() {
+        return document.querySelector('.quiz-area-page .question-layout-block');
     }
 
-    var top = container.scrollTop;
-    var max = container.scrollHeight - container.clientHeight;
-
-    if (top <= 0) {
-        btnUp.classList.add('btn-hidden');
-        btnDown.classList.remove('btn-hidden');
-    } else if (top >= max - 5) {
-        btnDown.classList.add('btn-hidden');
-        btnUp.classList.remove('btn-hidden');
-    } else {
-        btnDown.classList.remove('btn-hidden');
-        btnUp.classList.add('btn-hidden');
+    function isScrollable(el) {
+        return el && el.scrollHeight > el.clientHeight + 5;
     }
-}
 
-function initScroll() {
-    if (initialized) return;
+    function updateButtons() {
+        if (!container || !btnDown || !btnUp || !isScrollable(container)) {
+            btnDown?.classList.add('btn-hidden');
+            btnUp?.classList.add('btn-hidden');
+            return;
+        }
 
-    var el = getContainer();
-    if (!el) return;
+        const top = container.scrollTop;
+        const max = container.scrollHeight - container.clientHeight;
 
-    container = el;
-    initialized = true;
-
-    container.addEventListener('scroll', updateButtons);
-    updateButtons();
-}
-
-/* Scroll buttons */
-btnDown.onclick = () => container && container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-btnUp.onclick   = () => container && container.scrollTo({ top: 0, behavior: 'smooth' });
-
-/* Start Practice click */
-document.addEventListener('click', function (e) {
-    if (e.target.closest('.quiz-start-btn')) {
-        initialized = false;
-
-        let wait = setInterval(() => {
-            if (getContainer()) {
-                clearInterval(wait);
-                initScroll();
-            }
-        }, 100);
+        if (top <= 0) {
+            btnUp.classList.add('btn-hidden');
+            btnDown.classList.remove('btn-hidden');
+        } else if (top >= max - 5) {
+            btnDown.classList.add('btn-hidden');
+            btnUp.classList.remove('btn-hidden');
+        } else {
+            btnDown.classList.remove('btn-hidden');
+            btnUp.classList.add('btn-hidden');
+        }
     }
+
+    function initScroll() {
+        if (initialized) return;
+
+        container = getContainer();
+        btnDown = document.getElementById('btn-top');
+        btnUp   = document.getElementById('btn-bottom');
+
+        if (!container || !btnDown || !btnUp) return;
+
+        initialized = true;
+
+        container.addEventListener('scroll', updateButtons);
+
+        btnDown.onclick = () => {
+            container.scrollTo({
+                top: container.scrollHeight,
+                behavior: 'smooth'
+            });
+        };
+
+        btnUp.onclick = () => {
+            container.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+
+        updateButtons();
+    }
+
+    /* Init immediately (important) */
+    initScroll();
+
+    /* Also re-init after quiz start (your original logic) */
+    document.addEventListener('click', function (e) {
+        if (e.target.closest('.quiz-start-btn')) {
+            initialized = false;
+
+            const wait = setInterval(() => {
+                if (getContainer()) {
+                    clearInterval(wait);
+                    initScroll();
+                }
+            }, 100);
+        }
+    });
+
+    /* Resize safety */
+    window.addEventListener('resize', updateButtons);
 });
-
-/* Resize safety */
-window.addEventListener('resize', updateButtons);
 </script>
