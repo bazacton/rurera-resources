@@ -585,6 +585,7 @@ document.addEventListener('click', function (e) {
 window.addEventListener('resize', updateButtons);
 </script>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -609,6 +610,7 @@ $(function () {
             $('#successMsg').addClass('d-none');
         }, 1500);
     });
+});
 });
 </script>
 
