@@ -645,8 +645,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    let btnDown = document.getElementById('btn-top');
-    let btnUp   = document.getElementById('btn-bottom');
     let container = null;
     let initialized = false;
 
@@ -659,6 +657,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateButtons() {
+        const btnDown = document.querySelector('.btn-scroll-down');
+        const btnUp   = document.querySelector('.btn-scroll-up');
+
         if (!container || !btnDown || !btnUp || !isScrollable(container)) {
             btnDown?.classList.add('btn-hidden');
             btnUp?.classList.add('btn-hidden');
@@ -684,50 +685,48 @@ document.addEventListener('DOMContentLoaded', function () {
         if (initialized) return;
 
         container = getContainer();
-        btnDown = document.getElementById('btn-top');
-        btnUp   = document.getElementById('btn-bottom');
-
-        if (!container || !btnDown || !btnUp) return;
+        if (!container) return;
 
         initialized = true;
-
         container.addEventListener('scroll', updateButtons);
-
-        btnDown.onclick = () => {
-            container.scrollTo({
-                top: container.scrollHeight,
-                behavior: 'smooth'
-            });
-        };
-
-        btnUp.onclick = () => {
-            container.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        };
-
         updateButtons();
     }
 
-    /* Init immediately (important) */
-    initScroll();
-
-    /* Also re-init after quiz start (your original logic) */
+    /* Delegated button click handling (AJAX-safe) */
     document.addEventListener('click', function (e) {
+
+        if (e.target.closest('.btn-scroll-down')) {
+            container = getContainer();
+            if (container) {
+                container.scrollTo({
+                    top: container.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        if (e.target.closest('.btn-scroll-up')) {
+            container = getContainer();
+            if (container) {
+                container.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        /* Re-init after quiz start */
         if (e.target.closest('.quiz-start-btn')) {
             initialized = false;
-
-            const wait = setInterval(() => {
-                if (getContainer()) {
-                    clearInterval(wait);
-                    initScroll();
-                }
-            }, 100);
+            setTimeout(initScroll, 150);
         }
     });
+
+    /* Init immediately */
+    initScroll();
 
     /* Resize safety */
     window.addEventListener('resize', updateButtons);
 });
 </script>
+
