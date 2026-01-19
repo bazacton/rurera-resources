@@ -712,7 +712,3 @@ document.addEventListener('click', function (e) {
 /* Resize safety */
 window.addEventListener('resize', updateButtons);
 </script>
-
-
-
-
