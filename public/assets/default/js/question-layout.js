@@ -295,7 +295,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             var quiz_type = return_data.quiz_type;*/
 
             if( return_data.is_complete == true) {
-                window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+                //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
 
 
                 /*thisObj.closest('.questions-data-block').find('.right-content').addClass('hide');
@@ -812,24 +812,10 @@ function init_question_functions() {
 			$(".lms-quiz-section").attr('data-play_time', play_time);
         }
 
-        jQuery(function ($) {
-
-            var $pGiven = $("p.given");
-            var $spanGiven = $("span.given");
-
-            // Only process if paragraph exists
-            if ($pGiven.length) {
-                $pGiven.html(chunkWords($pGiven.text()));
-            }
-
-            // Only apply draggable if spans exist AND jQuery UI is loaded
-            if ($spanGiven.length && $.fn.draggable) {
-                $spanGiven.draggable({
-                    helper: "clone",
-                    revert: "invalid"
-                });
-            }
-
+        $("p.given").html(chunkWords($("p.given").text()));
+        $("span.given").draggable({
+            helper: "clone",
+            revert: "invalid"
         });
         //makeDropText($("p.given span.w"));
 

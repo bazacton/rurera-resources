@@ -473,6 +473,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
+            $(".quiz-complete").html(return_data.result_page_layout);
             $(".quiz-complete").show(2000);
             //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
