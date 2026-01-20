@@ -3485,7 +3485,7 @@ body.quiz-area-page:has(.learn-test-start) {
     height: 20px;
     width: 20px;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 100%;
     margin-right: 10px;
 }
 .report-options .radio-label:has(input[type="radio"]:checked):before {
