@@ -1356,6 +1356,7 @@ body mjx-container[display] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
 .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 38px;}
