@@ -121,6 +121,9 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                 <span class="coin-numbers">
                                     <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                                     <span class="total-earned-coins">1</span>
+                                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                                        <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                    </button>
                                 </span>
                             </div>
                         </div>
