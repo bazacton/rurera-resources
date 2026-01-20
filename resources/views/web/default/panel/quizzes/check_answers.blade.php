@@ -238,7 +238,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
+
 <script>
     init_question_functions();
     $('body').addClass('quiz-show');
