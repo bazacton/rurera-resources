@@ -39,7 +39,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                     <div class="questions-bar-box">
                         <div class="quiz-questions-bar-holder">
                             <div class="quiz-questions-bar">
-                                <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                                <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / 1</span></span>
                                 <span class="bar-fill progress-bar-fill" data-title="Smart score" style="width: 0%;"></span>
                             </div>
                             <span class="coin-numbers">
