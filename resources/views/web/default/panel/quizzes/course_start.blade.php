@@ -121,8 +121,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <div class="step-block">Test Completed!!!</div>
 
                     </div>
-                    <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-
+                    <div data-result_attempt_id="{{isset($quizAttempt->id)? $quizAttempt->id : 0}}" data-quiz_result_id="{{isset($newQuizStart->id)? $newQuizStart->id : 0}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+                        <a href="javascript:;" class="load-more-questions rurera-hide">Load More Questions</a>
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
@@ -587,7 +587,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
             $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-            $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
+            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5>Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
         }
 
         if(return_data.incorrect_flag == false && correct_sound == true && sound_check == true){
@@ -603,7 +603,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             earned_coins = parseInt(earned_coins)+1;
             $(".total-earned-coins").html(earned_coins);
             $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-            $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
+            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5>Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
 
         }
         if( return_data.is_complete == true) {
