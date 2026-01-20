@@ -469,6 +469,9 @@ input.droppable-field {
     border-top: 1px solid #ddd;
     padding: 15px 15px;
 }
+.question-solution h5 {
+    display: none;
+}
 .math-equation br {display: none;}
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
 .spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
