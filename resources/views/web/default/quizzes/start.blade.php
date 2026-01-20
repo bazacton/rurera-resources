@@ -386,7 +386,7 @@ $started_already = isset($started_already)? $started_already : false;
             
             <!-- Header -->
             <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold" id="reportModalLabel">Report Issue</h5>
+                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
