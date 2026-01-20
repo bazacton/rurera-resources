@@ -296,13 +296,13 @@ input.droppable-field {
 .question-result-layout .form-field.correct ,
 .form-field.correct input[type="checkbox"]:checked ~ label,
 .question-result-layout .form-field.correct label {
-    border-color: #9ef95a;
+    border-color: #8fc963;
 }
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
 .lms-radio-select input[type=radio]:checked~label {
-    background-color: #d2ffb0;
-    color: #73c238;
-    border-color: #9ef95a;
+    background-color: #8fc963;
+    color: #fff;
+    border-color: #b5e78f;
 }
 .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transition: 0.4s; }
 .row-fields .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transform: none;}
@@ -354,9 +354,9 @@ input.droppable-field {
 .active-option label,
 .form-field label:hover,
 .form-field input[type="checkbox"]:checked ~ label {
-    background-color: #d2ffb0;
-    color: #73c238;
-    border-color: #9ef95a;
+    background-color: #8fc963;
+    color: #fff;
+    border-color: #b5e78f;
 }
 /* --- END: Multi Response List --- */
 /* ======================================================== */
