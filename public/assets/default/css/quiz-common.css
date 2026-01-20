@@ -516,6 +516,10 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 .match-question .line {width: 100%; height: 2px; background-color: #e5e5e5; &.highlighted {background-color: green; box-shadow: none; height: 3px; .point {border-left: 16px solid green;}}
   .point {width: 0; height: 0; margin: -6px -3px 0 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 16px solid #e5e5e5; float: right;}
 }
+.match-question ol {
+    padding: 0;
+    margin: 0;
+}
 .match-question .stems ol {padding: 0; margin: 0;}
 .image_small .match-question li img {height: 25px; width: 30px; margin-bottom: 0; object-fit: contain; border-radius: 5px; overflow: hidden;}
 .image-right .match-question li img {margin-left: auto;}
@@ -3357,75 +3361,75 @@ body.quiz-area-page:has(.learn-test-start) {
 
 
 /* Rurera-Settings-Modal Style Start */
-    .rur-settings-modal .modal-dialog { max-width: 360px; }
-    @media (max-width: 420px) {
-      .rur-settings-modal .modal-dialog { max-width: calc(100% - 24px); }
-    }
+.rur-settings-modal .modal-dialog { max-width: 360px; }
+@media (max-width: 420px) {
+    .rur-settings-modal .modal-dialog { max-width: calc(100% - 24px); }
+}
 
-    .rur-settings-modal .modal-header {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-    .rur-settings-modal .modal-title { font-size: 1.05rem; font-weight: 600; }
+.rur-settings-modal .modal-header {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.rur-settings-modal .modal-title { font-size: 1.05rem; font-weight: 600; }
 
-    .rur-settings-modal .close {
-      position: absolute;
-      right: 0.75rem;
-      top: 0.6rem;
-      font-size: 1.35rem;
-      opacity: 0.7;
-    }
-    .rur-settings-modal .close:hover { opacity: 1; }
+.rur-settings-modal .close {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.6rem;
+    font-size: 1.35rem;
+    opacity: 0.7;
+}
+.rur-settings-modal .close:hover { opacity: 1; }
 
-    .rur-setting-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.7rem 0;
-      border-bottom: 1px dashed rgba(0,0,0,0.08);
-    }
-    .rur-setting-row:last-child { border-bottom: 0; }
+.rur-setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.08);
+}
+.rur-setting-row:last-child { border-bottom: 0; }
 
-    .rur-setting-text {
-      padding-right: 0.75rem;
-      line-height: 1.2;
-    }
-    .rur-setting-title { font-weight: 600; font-size: 0.95rem; }
-    .rur-setting-sub, .choose-text span { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
-    .setting-modal-btn {
-        background-color: inherit;
-        border: 0
-    }
-    .setting-modal-btn img {
-        filter: invert(18%) sepia(0%) saturate(134%) hue-rotate(233deg) brightness(76%) contrast(83%);
-    }
-    .rur-settings-modal .modal-footer button {
-        height: auto;
-        font-weight: 500;
-    }
-    /* Demo UI blocks */
-    .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
-    .rur-muted { color: #6c757d; }
-    /* Rurera-Settings-Modal Style End */
+.rur-setting-text {
+    padding-right: 0.75rem;
+    line-height: 1.2;
+}
+.rur-setting-title { font-weight: 600; font-size: 0.95rem; }
+.rur-setting-sub, .choose-text span { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
+.setting-modal-btn {
+    background-color: inherit;
+    border: 0
+}
+.setting-modal-btn img {
+    filter: invert(18%) sepia(0%) saturate(134%) hue-rotate(233deg) brightness(76%) contrast(83%);
+}
+.rur-settings-modal .modal-footer button {
+    height: auto;
+    font-weight: 500;
+}
+/* Demo UI blocks */
+.rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
+.rur-muted { color: #6c757d; }
+/* Rurera-Settings-Modal Style End */
 
-    /* Rurera-Report Modal Style Start */
-    .report-btn {
-        background-color: inherit;
-        padding: 0;
-        height: auto;
-        border: 0;
-    }
-    .report-btn img {
-        filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
-    }
-    .question-area .tooltip-inner {
-        background-color: #000;
-        min-width: 140px;
-        position: relative;
-        left: 15px;
-    }
-    .question-area .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
-    .question-area .bs-tooltip-bottom .arrow:before {
-        border-bottom-color: #000;
-    }
-     /* Rurera-Report Modal Style End */
+/* Rurera-Report Modal Style Start */
+.report-btn {
+    background-color: inherit;
+    padding: 0;
+    height: auto;
+    border: 0;
+}
+.report-btn img {
+    filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
+}
+.question-area .tooltip-inner {
+    background-color: #000;
+    min-width: 140px;
+    position: relative;
+    left: 15px;
+}
+.question-area .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
+.question-area .bs-tooltip-bottom .arrow:before {
+    border-bottom-color: #000;
+}
+    /* Rurera-Report Modal Style End */
