@@ -1446,8 +1446,7 @@ body mjx-container[display] {
     background-color: inherit;
 }
 .questions-bar-box {
-    width: calc(100% - 300px);
-    margin: 0 auto;
+    width: calc(100% - 230px);
 }
 .questions-bar-box .quiz-questions-bar-holder {
     width: 100%;
