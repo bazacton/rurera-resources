@@ -418,7 +418,7 @@ $started_already = isset($started_already)? $started_already : false;
 
                 <!-- Dynamic Feedback Area -->
                 <div class="feedback-area mt-3" id="feedbackArea">
-                    <label id="feedbackLabel" class="font-weight-bold small text-secondary">Please provide details:</label>
+                    <label id="feedbackLabel" class="font-weight-bold font-16">Please provide details:</label>
                     <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
                 </div>
             </div>
