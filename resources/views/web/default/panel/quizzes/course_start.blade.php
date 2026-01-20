@@ -183,11 +183,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             </div>
                                         </div>
                                         <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-0" data-target="#review_submit">
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
-                                            <button type="button" class="report-btn"
+                                            <button type="button" class="report-btn mr-auto"
                                             data-toggle="tooltip"
                                             title="Report this question"
                                             data-target="#reportModal"
