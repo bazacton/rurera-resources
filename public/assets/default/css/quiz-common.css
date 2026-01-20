@@ -461,6 +461,7 @@ input.droppable-field {
     width: 100%;
     text-align: left;
     padding: 10px 15px;
+    position: relative;
 }
 .explaination-btn h5 {
     margin: 0;
