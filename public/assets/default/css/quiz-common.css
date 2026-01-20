@@ -2979,27 +2979,11 @@ body.quiz-area-page:has(.learn-test-start) {
     height: 100%;
     object-fit: contain;
 }
-.practice-start-text {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.btn-holder.practice-start-block {
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
 /* Loading Dots Animation Style Start */
 .btn-holder.practice-start-block {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding-left: 33px;
-      margin-top: 30px;
-      font-size: 14px;
-      font-weight: 500;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .static-text {
@@ -3012,10 +2996,10 @@ body.quiz-area-page:has(.learn-test-start) {
 
     /* Pencil Animation */
     .pencil {
-      display: block;
-      width: 50px;
-      height: 50px;
-      margin-right: 15px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
     }
 
     .pencil__body1,
