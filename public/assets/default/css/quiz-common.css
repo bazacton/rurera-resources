@@ -3441,6 +3441,10 @@ body.quiz-area-page:has(.learn-test-start) {
     padding: 0;
     height: auto;
     border: 0;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 15px;
 }
 .report-btn img {
     filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
