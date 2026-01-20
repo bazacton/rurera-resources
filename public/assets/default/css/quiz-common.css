@@ -1412,7 +1412,7 @@ body mjx-container[display] {
     font-size: var(--fs-xs);
     line-height: 26px;
     font-weight: 500;
-    padding: 0;
+    padding: 0 10px;
     opacity: 0;
     min-width: 45px;
     -webkit-transition: all 0.3s ease-out;
