@@ -1755,7 +1755,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .graph-box img {
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 25px 15px;
+    padding: 25px 10px;
     width: 100%;
     object-fit: contain;
 }
