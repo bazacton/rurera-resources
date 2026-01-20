@@ -2992,7 +2992,7 @@ body.quiz-area-page:has(.learn-test-start) {
     gap: 10px;
 }
 /* Loading Dots Animation Style Start */
-.loading-container {
+.btn-holder.practice-start-block {
       display: flex;
       align-items: center;
       justify-content: flex-start;
