@@ -67,6 +67,7 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
             @endif
 
             <span class="questions-total-holder d-block mb-15 px-15 w-100">
+                <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                 ( {{$question_no}}/{{$total_questions}} Questions )
             </span>
             {!! $question_layout !!}
