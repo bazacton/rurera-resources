@@ -302,7 +302,7 @@ input.droppable-field {
 .lms-radio-select input[type=radio]:checked~label {
     background-color: #8fc963;
     color: #fff;
-    border-color: #b5e78f;
+    border-color: #72af45;
 }
 .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transition: 0.4s; }
 .row-fields .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transform: none;}
@@ -355,7 +355,7 @@ input.droppable-field {
 .form-field input[type="checkbox"]:checked ~ label {
     background-color: #8fc963;
     color: #fff;
-    border-color: #b5e78f;
+    border-color: #72af45;
 }
 /* --- END: Multi Response List --- */
 /* ======================================================== */
@@ -1285,7 +1285,7 @@ body mjx-container[display] {
 .alphabet-list-style .lms-radio-select.image-right .field-holder label:before {left: 40px;}
 .alphabet-list-style .active-option.form-field:before,
 .alphabet-list-style .form-field:hover:before,
-.form-field:has(input[type="checkbox"]:checked):before {border-color: #b5e78f; color: #fff; background-color: #8fc963; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
+.form-field:has(input[type="checkbox"]:checked):before {border-color: #72af45; color: #fff; background-color: #8fc963; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
 .rurera-in-row.image-right.numeric-list-style .form-field label {justify-content: flex-start;}
 /* --- END: Quistions Type Alphabet-list --- */
 /* ======================================================== */
