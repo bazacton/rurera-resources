@@ -111,8 +111,8 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                         </div>
 
                                                     @if(ReviewPermission(auth()->user()->id))
-                                                        <div class="question-explaination tttt">
-                                                            <h5 class="mb-15 font-16">Explanation</h5>
+                                                        <div class="question-explaination">
+                                                            <h5 class="mb-15 font-16">Explanation:</h5>
                                                             {!! $questionObj->question_solve !!}
                                                         </div>
 
