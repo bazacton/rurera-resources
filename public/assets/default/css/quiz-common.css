@@ -3440,6 +3440,7 @@ body.quiz-area-page:has(.learn-test-start) {
 .rur-settings-modal .modal-footer button {
     height: auto;
     font-weight: 500;
+    margin: 0;
 }
 /* Demo UI blocks */
 .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
