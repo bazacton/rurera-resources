@@ -469,7 +469,7 @@ input.droppable-field {
     border-top: 1px solid #ddd;
     padding: 15px 15px;
 }
-.question-solution h5 {
+#explaination h5 {
     display: none;
 }
 .math-equation br {display: none;}
