@@ -1731,6 +1731,9 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     background-color: #000;
     border-radius: 3px;
 }
+.questions-total-holder {
+    gap: 10px;
+}
 /* --- END: Questions Counts --- */
 /* ======================================================== */
 
