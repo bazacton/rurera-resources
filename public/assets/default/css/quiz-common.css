@@ -1384,7 +1384,7 @@ body mjx-container[display] {
     letter-spacing: -1px;
     z-index: 2;
     transform: translateY(-50%);
-    margin-left: -26px;
+    margin-left: -50px;
     background-color: #8fc963;
     padding: 2px 8px 4px;
     border-radius: 3px;
