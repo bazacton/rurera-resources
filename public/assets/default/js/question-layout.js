@@ -1464,6 +1464,8 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 		thisObj.closest('.jqte').removeClass('frontend-field-error');
 		var this_id = thisObj.attr('id');
 		var this_field_name = thisObj.attr('name');
+        console.log(this_field_name);
+        console.log(already_validated_fields.includes(this_field_name));
 		if (already_validated_fields.includes(this_field_name)) {
 			return true;
 		}else{
@@ -1521,8 +1523,9 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 			if (thisObj.attr('type') == 'checkbox') {
 				var field_name = thisObj.attr('name');
                 var minimum_selection = thisObj.attr('data-min');
-				var selectedCount = jQuery('input[name="' + field_name + '"]:checked').length;
-				var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
+				var selectedCount = thisObj.closest('.rurera-question-block').find('input[name="' + field_name + '"]:checked').length;
+				var is_field_checked = thisObj.closest('.rurera-question-block').find('input[name="' + field_name + '"]').is(':checked');
+
 
 				if (is_field_checked == false || selectedCount < minimum_selection) {
 					checkbox_fields[index_no] = thisObj;
@@ -1530,6 +1533,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 					error_objects[index_no]['error_obj'] = thisObj;
 
 				}
+                console.log(error_objects);
 				//has_empty[index_no] = true;
 				is_visible = false;
 			}

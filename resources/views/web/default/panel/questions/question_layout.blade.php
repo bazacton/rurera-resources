@@ -20,17 +20,17 @@
 </div>
 
 @php
-$group_questions_layout  = isset( $group_questions_layout )? $group_questions_layout : '';
-//$question_layout = html_entity_decode(json_decode(base64_decode(trim(stripslashes($question->question_layout)))));
-//$question_layout = str_replace('<div class="group_questions_data">Questions Group</div>', $group_questions_layout, $question_layout);
-$question_layout = $QuestionsAttemptController->get_question_layout($question);
+    $group_questions_layout  = isset( $group_questions_layout )? $group_questions_layout : '';
+    //$question_layout = html_entity_decode(json_decode(base64_decode(trim(stripslashes($question->question_layout)))));
+    //$question_layout = str_replace('<div class="group_questions_data">Questions Group</div>', $group_questions_layout, $question_layout);
+    $question_layout = $QuestionsAttemptController->get_question_layout($question);
 
-$search_tags = ($question->search_tags != '')? explode(' | ', $question->search_tags) : array();
-$is_development = (!empty( $search_tags ) && in_array('development', $search_tags))? true : false;
-$total_questions = count(json_decode($quizAttempt->questions_list));
+    $search_tags = ($question->search_tags != '')? explode(' | ', $question->search_tags) : array();
+    $is_development = (!empty( $search_tags ) && in_array('development', $search_tags))? true : false;
+    $total_questions = count(json_decode($quizAttempt->questions_list));
 
 @endphp
-			
+
 <form class="question-fields" action="javascript:;" data-question_id="{{ $question->id }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @php $already_flagged = ($quizResultObj->flagged_questions != '') ? (array)
@@ -38,14 +38,14 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
     $flag_class = (in_array($question->id, $already_flagged))? 'flaged' : 'notflaged';
     @endphp
     @if( $question->review_required == 1 || $is_development == true)
-    <div class="question-review-required">
-        @if( $question->review_required == 1)
-        <div class="question-label-tag">Review Required</div>
-        @endif
-        @if( $is_development == true)
-        <div class="question-label-tag">Developer Review Required</div>
-        @endif
-    </div>
+        <div class="question-review-required">
+            @if( $question->review_required == 1)
+                <div class="question-label-tag">Review Required</div>
+            @endif
+            @if( $is_development == true)
+                <div class="question-label-tag">Developer Review Required</div>
+            @endif
+        </div>
     @endif
     <span class="questions-total-holders d-block mb-15 rurera-hide">
 
@@ -56,19 +56,19 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
 
     @php $classes = isset( $class )? $class : ''; @endphp
     <div id="rureraform-form-1"
-            class="{{$classes}} rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
-            _data-parent="1"
-            _data-parent-col="0" style="display: block;">
+         class="{{$classes}} rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
+         _data-parent="1"
+         _data-parent-col="0" style="display: block;">
         <div class="question-layout row d-flex align-items-center">
             @if( isset( $show_marks ) && $show_marks == true)
                 @if($layout_type != 'results')
-                <span class="marks" data-marks="{{$question->question_score}}">{{$question->question_score}} marks</span>
+                    <span class="marks" data-marks="{{$question->question_score}}">{{$question->question_score}} marks</span>
                 @endif
             @endif
 
-            <span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
+            <span class="questions-total-holder d-block mb-15 px-15 w-100">
                 <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                ( {{$question_no}}/{{$total_questions}} Questions )
+                ( {{$question_no}}/<span class="total-no-of-questions">{{$total_questions}}</span> Questions )
             </span>
             {!! $question_layout !!}
 

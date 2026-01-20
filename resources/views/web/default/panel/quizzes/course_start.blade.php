@@ -122,13 +122,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                     </div>
                     <div data-result_attempt_id="{{isset($quizAttempt->id)? $quizAttempt->id : 0}}" data-quiz_result_id="{{isset($newQuizStart->id)? $newQuizStart->id : 0}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <a href="javascript:;" class="load-more-questions rurera-hide">Load More Questions</a>
+                        <a href="javascript:;" class="load-more-questions rurera-hide1">Load More Questions</a>
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
-                                    
+
                                     <div class="left-content has-bg">
+                                        <div class="questions-lists-block">
 
                                         @if( is_array( $question ))
                                             @php $question_no = 1; @endphp
@@ -169,6 +170,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             @endif
 
                                         @endif
+                                    </div>
                                         <div class="show-notifications" data-show_message="yes"></div>
                                         <div id="scroll-controls" class="page-prev-next-controls pr-0">
                                             <div class="controls-inner">
@@ -336,7 +338,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
-                
+
                 <!-- Header -->
                 <div class="modal-header border-0 pb-0">
                     <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
@@ -344,25 +346,25 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                
+
                 <!-- Body -->
                 <div class="modal-body pt-4">
-                    <div class="report-options d-flex flex-column gap-2 font-14">
+                    <div class="report-options d-flex flex-column gap-2">
                         <label class="radio-label d-flex align-items-center mb-2">
                             <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
                             <span>The answer options are wrong</span>
                         </label>
-                        
+
                         <label class="radio-label d-flex align-items-center mb-2">
                             <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
                             <span>The question is unclear or confusing</span>
                         </label>
-                        
+
                         <label class="radio-label d-flex align-items-center mb-2">
                             <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
                             <span>Typo or grammatical error</span>
                         </label>
-                        
+
                         <label class="radio-label d-flex align-items-center mb-2">
                             <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
                             <span>Other reason</span>
@@ -375,7 +377,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
                     </div>
                 </div>
-                
+
                 <!-- Footer -->
                 <div class="modal-footer border-0">
                     <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
