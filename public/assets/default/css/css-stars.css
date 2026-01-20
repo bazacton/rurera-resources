@@ -73,7 +73,8 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-
     padding: 0 35px 15px;
     display: flex;
     align-items: center;
-    gap: 0 15px;
+    gap: 10px 15px;
+    flex-wrap: wrap;
 }
 .chapter-tags a {
     color: var(--primary);
