@@ -1427,6 +1427,27 @@ body mjx-container[display] {
     opacity: 1;
     margin-top: -15px;
 }
+.quiz-questions-bar-holder .bar-fill:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    margin-top: 0;
+    height: 8px;
+    width: 8px;
+    background-color: #8fc963;
+    right: 0;
+    transform: rotate(45deg);
+    margin-right: -2px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.quiz-questions-bar:hover .bar-fill:before {
+    opacity: 1;
+}
 .quiz-corrects-incorrects {width: 95px; display: inline-block; vertical-align: middle; margin-right: -4px; position: relative; }
 .quiz-status-bar .coin-numbers {background-color: #e5e5e5; border-radius: 20px; margin-left: -2px; padding: 4px 5px; width: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--fs-xs); font-weight: 500; position: relative;}
 .quiz-status-bar .coin-numbers img {max-width: 20px; }
