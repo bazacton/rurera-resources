@@ -1752,6 +1752,13 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 /* Learning New Style End */
 
 /* Chart Performance Style Start */
+.graph-box img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px 15px;
+    width: 100%;
+    object-fit: contain;
+}
 :root {
       --bg-color: #f8f9fa;
       --card-bg: #ffffff;
