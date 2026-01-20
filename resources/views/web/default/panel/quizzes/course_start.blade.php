@@ -492,6 +492,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         var active_question_id = $(".question-area-block").attr('data-active_question_id');
+
+        if(active_question_id > 0){
+            $('.rurera-question-block').removeClass('active');
+            $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
+
+        }
+
         $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
         Quizintervals = setInterval(function () {
