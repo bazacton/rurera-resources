@@ -830,4 +830,62 @@ window.addEventListener('resize', updateScrollState);
 /* Init */
 updateScrollState();
 </script>
+<script>
+$(document).ready(function () {
 
+    // Run when Start Practice button is clicked
+    $(document).on('click', '.quiz-start-btn', function () {
+
+        // Wait until quiz content is fully loaded/rendered
+        setTimeout(function () {
+            quizPageCallback();
+        }, 300); // increase to 500 if needed
+    });
+
+});
+
+
+/**
+ * CALLBACK FUNCTION
+ * Runs only after quiz page is loaded
+ */
+function quizPageCallback() {
+
+    // Enable tooltips
+    $('[data-toggle="tooltip"]').each(function () {
+
+        $(this).tooltip({
+            html: true,
+            container: $(this).closest('.quiz-time-bar'),
+            trigger: 'hover'
+        });
+
+    });
+
+    // Open report modal
+    $(document).off('click', '.report-btn').on('click', '.report-btn', function () {
+        $('#reportModal').modal('show');
+    });
+
+    // Submit report logic
+    $(document).off('click', '#submitReport').on('click', '#submitReport', function () {
+
+        var otherChecked = $('#optOther').is(':checked');
+        var otherText = $('#otherText').val().trim();
+
+        if (otherChecked && otherText === '') {
+            alert('Please explain the issue in the text area.');
+            return;
+        }
+
+        $('#successMsg').removeClass('d-none');
+
+        setTimeout(function () {
+            $('#reportModal').modal('hide');
+            $('#reportForm')[0].reset();
+            $('#successMsg').addClass('d-none');
+        }, 1500);
+    });
+}
+
+</script>
