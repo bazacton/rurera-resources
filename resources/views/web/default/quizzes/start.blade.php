@@ -123,7 +123,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 </div>
                                 
                                 <div class="choose-questions">
-                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left px-15 w-100">Settings</h3>
+                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left w-100">Settings</h3>
                                     <div class="choose-text">
                                         <h4 class="font-14 font-weight-bold text-dark-charcoal text-left">Number of Questions</h4>
                                         <span class="text-left">Choose how many questions to attempt</span>
