@@ -30,9 +30,9 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 @section('content')
-    
+
     <div class="learning-page type-practice type-sats preview-question-area">
-        
+
         <section class="learning-content lms-quiz-section">
             <div class="container questions-data-block read-quiz-content" data-total_questions="0">
                 <div class="justify-content-center">
@@ -139,7 +139,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                                             <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
                                                                         </span>
                                                                     </div>
-                                                                    
+
                                                                     <ul class="question-details">
                                                                         <li>Category: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</span></li>
                                                                         <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
@@ -234,8 +234,8 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                                 </div>
                                                                 @endif
                                                             </div>
-                                                            
-                                                            
+
+
                                                         </div>
 
                                                         <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -509,11 +509,11 @@ document.addEventListener('keydown', function (e) {
     container = getActiveContainer();
     if (!isScrollable(container)) return;
 
-    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
+    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp'].includes(e.key)) {
         e.preventDefault();
     }
 
-    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
+    if (['ArrowDown', 'PageDown'].includes(e.key)) {
         scrollDown();
     }
     else if (['ArrowUp', 'PageUp'].includes(e.key)) {
