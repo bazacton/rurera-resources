@@ -1421,7 +1421,7 @@ body mjx-container[display] {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     right: 0;
-    margin-right: -20px;
+    margin-right: 2px;
 }
 .quiz-questions-bar:hover .bar-fill:after {
     opacity: 1;
