@@ -2981,9 +2981,10 @@ body.quiz-area-page:has(.learn-test-start) {
 }
 /* Loading Dots Animation Style Start */
 .btn-holder.practice-start-block {
-      display: flex;
+        display: flex;
         align-items: center;
         justify-content: flex-start;
+        text-align: left;
     }
 
     .static-text {
