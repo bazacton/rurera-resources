@@ -76,7 +76,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
                             <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                            <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
+                            <span class="bar-fill progress-bar-fill" data-title="0%" style="width: 0%;"></span>
                         </div>
                         <span class="coin-numbers">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
