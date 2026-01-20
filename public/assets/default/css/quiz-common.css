@@ -2865,6 +2865,7 @@ body.quiz-area-page:has(.learn-test-start) {
     border-radius: 5px;
     margin-left: auto;
     border: 1px solid var(--primary);
+    overflow: hidden;
 }
 
 .select-radio-box {
