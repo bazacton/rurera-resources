@@ -13,7 +13,7 @@ $rand_no = rand(99,9999);
     <title>Play Area</title>
 
     <!-- General CSS File -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/default/css/common.min.css?ver={{$rand_no}}">
