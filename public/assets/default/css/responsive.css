@@ -1241,6 +1241,13 @@ Lms Responsive Style Start
     .lms-choose-membership .form-login-reading select.form-control {padding-right: 42px;}
     .subchapter-slider {padding: 0 15px;}
     .subchapter-slider .swiper-slide-active {transform: none;}
+    .streak-dropdown-content {
+        width: 100%;
+        min-width: 350px;
+        left: auto;
+        right: 50%;
+        max-width: 350px;
+    }
 }
 
 @media screen and (max-width: 640px) {
