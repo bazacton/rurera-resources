@@ -1423,7 +1423,7 @@ body mjx-container[display] {
     right: 0;
     margin-right: -20px;
 }
-.quiz-questions-bar-holder:hover .bar-fill:after {
+.quiz-questions-bar:hover .bar-fill:after {
     opacity: 1;
     margin-top: -15px;
 }
