@@ -129,6 +129,7 @@
 
                                             $sas_score = isset($topicPerformData['sas_score'])? $topicPerformData['sas_score'] : 0;
                                             $sas_accuracy = isset($topicPerformData['sas_accuracy'])? $topicPerformData['sas_accuracy'] : 0;
+                                            $smart_score = isset($topicPerformData['smart_score'])? $topicPerformData['smart_score'] : 0;
 
                                             $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
@@ -178,6 +179,7 @@
                                                                     Completion: {{$total_completion}}<br>
                                                                     SAS Score: {{$sas_score}}<br>
                                                                     SAS Accuracy: {{$sas_accuracy}}%<br>
+                                                                    Smart Score: {{$smart_score}}<br>
                                                                 </div>
                                                             </li>
                                                         </ul>
