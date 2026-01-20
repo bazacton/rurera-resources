@@ -172,7 +172,7 @@
                                                                 <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:;" class="course-progress-btn">Skill Summary</a>
+                                                                <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
                                                             </li>
                                                             <li>
                                                                 <a href="javascript:;" class="debug-details-btn">Debug Details</a>
