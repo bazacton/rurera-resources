@@ -1462,6 +1462,9 @@ body mjx-container[display] {
 .questions-bar-box {
     width: calc(100% - 230px);
 }
+.quiz-status-bar:has(.timer-wrap.rurera-hide) .questions-bar-box {
+    width: calc(100% - 30px);
+}
 .questions-bar-box .quiz-questions-bar-holder {
     width: 100%;
 }
