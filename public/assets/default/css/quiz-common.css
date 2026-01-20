@@ -3442,7 +3442,7 @@ body.quiz-area-page:has(.learn-test-start) {
     padding: 0;
     height: auto;
     border: 0;
-    color: var(--primary);
+    color: #ddd;
     text-transform: uppercase;
     font-weight: 500;
     margin-left: 15px;
