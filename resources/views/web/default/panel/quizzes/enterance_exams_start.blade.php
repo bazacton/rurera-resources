@@ -100,7 +100,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                         <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
                                     </div>
                                     <span class="coin-numbers">
-                                        <img src="/assets/default/img/quests-coin.png" alt="">
+                                        <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                                         <span class="total-earned-coins">0</span>
                                     </span>
                                 </div>
