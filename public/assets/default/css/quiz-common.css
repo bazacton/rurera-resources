@@ -3241,7 +3241,7 @@ body.quiz-area-page:has(.learn-test-start) {
       line-height: 1.2;
     }
     .rur-setting-title { font-weight: 600; font-size: 0.95rem; }
-    .rur-setting-sub { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
+    .rur-setting-sub, .choose-text span { font-size: 0.8rem; color: #6c757d; margin-top: 0.15rem; }
     .setting-modal-btn {
         background-color: inherit;
         border: 0
