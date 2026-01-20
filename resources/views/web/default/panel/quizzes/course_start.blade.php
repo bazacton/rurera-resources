@@ -187,6 +187,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
+                                            <button type="button" class="report-btn"
+                                            data-toggle="tooltip"
+                                            title="Report this question"
+                                            data-target="#reportModal"
+                                            data-toggle2="modal">
+                                                <img src="/assets/default/svgs/flag-2.svg" height="64" width="64" alt="flag-2">
+                                            </button>
                                             <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                 Next
                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
