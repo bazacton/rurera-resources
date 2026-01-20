@@ -104,9 +104,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                         <span class="total-earned-coins">0</span>
                                     </span>
                                 </div>
-                                <div class="quiz-timer">
-                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
-                                </div>
                             </div>
                             <div class="quiz-time-bar mb-0 pt-0 mt-0">
                                 <div class="timer-wrap">
