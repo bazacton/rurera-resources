@@ -241,7 +241,7 @@ $rand_id = rand(99,9999);
     makeStatisticsChart(
         'usersStatisticsChart',
         usersStatisticsChart,
-        '',
+        'Smart Score',
         ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         [38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     );
