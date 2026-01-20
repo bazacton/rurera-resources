@@ -3470,4 +3470,22 @@ body.quiz-area-page:has(.learn-test-start) {
 .prev-next-controls .bs-tooltip-bottom .arrow:before {
     border-bottom-color: #000;
 }
-    /* Rurera-Report Modal Style End */
+.report-options input[type="radio"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.report-options .radio-label {
+    position: relative;
+}
+.report-options .radio-label:before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+/* Rurera-Report Modal Style End */
