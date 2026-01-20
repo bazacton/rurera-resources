@@ -1402,24 +1402,26 @@ body mjx-container[display] {
 .quiz-questions-bar-holder .bar-fill:after {
     position: absolute;
     content: attr(data-title);
-    height: 30px;
+    height: 26px;
     background-color: #8fc963;
     color: white;
-    border-radius: 10px;
+    border-radius: 3px;
     top: -25px;
     margin-top: 0;
     text-align: center;
     font-size: var(--fs-xs);
-    line-height: 30px;
+    line-height: 26px;
     font-weight: 500;
     padding: 0;
     opacity: 0;
-    min-width: 40px;
+    min-width: 45px;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    right: 0;
+    margin-right: -20px;
 }
 .quiz-questions-bar-holder:hover .bar-fill:after {
     opacity: 1;
