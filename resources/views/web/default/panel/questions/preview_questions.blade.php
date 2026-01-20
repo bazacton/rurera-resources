@@ -35,6 +35,34 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 
         <section class="learning-content lms-quiz-section">
             <div class="container questions-data-block read-quiz-content" data-total_questions="0">
+                <div class="quiz-status-bar mb-30">
+                    <div class="questions-bar-box">
+                        <div class="quiz-questions-bar-holder">
+                            <div class="quiz-questions-bar">
+                                <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                                <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
+                            </div>
+                            <span class="coin-numbers">
+                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                <span class="total-earned-coins">0</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="quiz-time-bar mb-0 pt-0 mt-0">
+                        <div class="timer-wrap">
+                            <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+
+                            <div class="time-box" id="hh">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="mm">05</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="ss">15</div>
+                        </div>
+                        <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                            <img src="/assets/default/svgs/setting.svg" alt="setting">
+                        </button>
+                    </div>
+                </div>
                 <div class="justify-content-center">
                     <div class="col-lg-9 col-md-9 col-sm-12 mt-50 mx-auto preview-question-content px-0">
 
@@ -74,21 +102,6 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                                     <span class="quiz-incorrects">0</span>
                                                                 </div>
                                                             </div> -->
-                                                            <div class="quiz-time-bar pt-25 mb-80">
-                                                                <div class="timer-wrap">
-                                                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-
-                                                                    <div class="time-box" id="hh">00</div>
-                                                                    <span class="colon">:</span>
-                                                                    <div class="time-box" id="mm">00</div>
-                                                                    <span class="colon">:</span>
-                                                                    <div class="time-box" id="ss">00</div>
-                                                                </div>
-                                                                <span class="coin-numbers">
-                                                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                                                    <span class="total-earned-coins">1</span>
-                                                                </span>
-                                                            </div>
                                                             <div class="question-counts">
                                                                 <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                                                 <span>Question 8 of 20</span>
