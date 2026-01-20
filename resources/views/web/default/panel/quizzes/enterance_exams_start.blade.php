@@ -332,7 +332,60 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
       </div>
     </div>
   </div>
-<a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
+<!-- Report Modal Html Start -->
+ <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+            
+            <!-- Header -->
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title font-weight-bold" id="reportModalLabel">Report Issue</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <!-- Body -->
+            <div class="modal-body pt-4">
+                <div class="report-options d-flex flex-column gap-2">
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>The answer options are wrong</span>
+                    </label>
+                    
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>The question is unclear or confusing</span>
+                    </label>
+                    
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>Typo or grammatical error</span>
+                    </label>
+                    
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>Other reason</span>
+                    </label>
+                </div>
+
+                <!-- Dynamic Feedback Area -->
+                <div class="feedback-area mt-3" id="feedbackArea">
+                    <label id="feedbackLabel" class="font-weight-bold small text-secondary">Please provide details:</label>
+                    <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" onclick="submitReport()">Submit Report</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Report Modal Html End -->
+  <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
 
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
