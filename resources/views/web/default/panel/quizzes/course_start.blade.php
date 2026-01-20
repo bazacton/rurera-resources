@@ -192,7 +192,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             title="Report this question"
                                             data-target="#reportModal"
                                             data-toggle2="modal">
-                                                <img src="/assets/default/svgs/flag-2.svg" height="64" width="64" alt="flag-2">
+                                                Report
                                             </button>
                                             <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                 Next
