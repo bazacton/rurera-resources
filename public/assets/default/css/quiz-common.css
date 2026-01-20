@@ -1384,6 +1384,9 @@ body mjx-container[display] {
     z-index: 2;
     transform: translateY(-50%);
     margin-left: -26px;
+    background-color: #8fc963;
+    padding: 2px 8px 4px;
+    border-radius: 3px;
 }
 .quiz-questions-bar-holder .value-lable[style="left:0%"] {
     margin-left: 0;
@@ -1400,7 +1403,7 @@ body mjx-container[display] {
     content: attr(data-title);
     right: -10px;
     height: 30px;
-    background-color: #2ecc71;
+    background-color: #8fc963;
     color: white;
     border-radius: 10px;
     top: 50%;
@@ -1410,6 +1413,7 @@ body mjx-container[display] {
     line-height: 30px;
     font-weight: 500;
     padding: 0 25px;
+    opacity: 0;
 }
 .quiz-corrects-incorrects {width: 95px; display: inline-block; vertical-align: middle; margin-right: -4px; position: relative; }
 .quiz-status-bar .coin-numbers {background-color: #e5e5e5; border-radius: 20px; margin-left: -2px; padding: 4px 5px; width: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--fs-xs); font-weight: 500; position: relative;}
