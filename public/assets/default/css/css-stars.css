@@ -87,8 +87,6 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-
     padding: 10px 15px;
     min-width: 200px;
     border: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
     line-height: 24px;
     color: #555;
     border-radius: 5px;
