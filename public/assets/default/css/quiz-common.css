@@ -1447,13 +1447,14 @@ body mjx-container[display] {
 }
 .questions-bar-box {
     width: calc(100% - 300px);
+    margin: 0 auto;
 }
 .questions-bar-box .quiz-questions-bar-holder {
     width: 100%;
 }
 .quiz-status-bar .quiz-time-bar {
     margin-left: auto;
-    gap: 10px;
+    gap: 15px;
     width: auto;
 }
 /* --- END: pagination Learn Practice --- */
