@@ -75,7 +75,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <div class="questions-bar-box">
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
-                            <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                            <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span class="smart-score-value">0</span></span>
                             <span class="bar-fill progress-bar-fill" data-title="Smart score" style="width: 0%;"></span>
                         </div>
                         <span class="coin-numbers">
@@ -85,7 +85,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     </div>
                 </div>
                 <div class="quiz-time-bar mb-0 pt-0 mt-0">
-
                     <div class="timer-wrap">
                         <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
                         <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
@@ -583,6 +582,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         if(return_data.incorrect_flag == true && incorrect_sound == true && sound_check == true){
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+
+        if(return_data.smart_score > 0){
+            $('.progress-bar-counter').css('left', return_data.smart_score+'%');
+            $('.progress-bar-fill').css('width', return_data.smart_score+'%');
+            $('.smart-score-value').html(return_data.smart_score);
         }
 
         if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1 && practice_with_review_check == true){
