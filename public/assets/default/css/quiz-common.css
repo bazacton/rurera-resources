@@ -3421,7 +3421,8 @@ body.quiz-area-page:has(.learn-test-start) {
     .question-area .tooltip-inner {
         background-color: #000;
         min-width: 140px;
-        margin-left: 10px;
+        position: relative;
+        left: 15px;
     }
     .question-area .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
     .question-area .bs-tooltip-bottom .arrow:before {
