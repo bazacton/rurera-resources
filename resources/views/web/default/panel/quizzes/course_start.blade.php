@@ -85,14 +85,16 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     </div>
                 </div>
                 <div class="quiz-time-bar mb-0 pt-0 mt-0">
-                    <div class="timer-wrap">
-                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
 
-                        <div class="time-box" id="hh">00</div>
-                        <span class="colon">:</span>
-                        <div class="time-box" id="mm">05</div>
-                        <span class="colon">:</span>
-                        <div class="time-box" id="ss">15</div>
+                    <div class="quiz-time-bar timer-wrap">
+                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+                        <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
+                            <div class="time-box" id="hh">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="mm">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="ss">00</div>
+                        </div>
                     </div>
                     <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
                         <img src="/assets/default/svgs/setting.svg" alt="setting">
