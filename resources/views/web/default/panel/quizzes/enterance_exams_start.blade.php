@@ -92,25 +92,36 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div>
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <div class="show-hide-statusbar">
-                            <div class="collapse" id="statusbar-data">
-                                <div class="card card-body p-0 border-0">
-                                    <div class="quiz-status-bar mb-30">
-                                        <div class="quiz-questions-bar-holder">
-                                            <div class="quiz-questions-bar">
-                                                <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                                                <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
-                                            </div>
-                                            <span class="coin-numbers">
-                                                <img src="/assets/default/img/quests-coin.png" alt="">
-                                                <span class="total-earned-coins">0</span>
-                                            </span>
-                                        </div>
-                                        <div class="quiz-timer">
-                                            <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
-                                        </div>
+                        <div class="quiz-status-bar mb-30">
+                            <div class="questions-bar-box">
+                                <div class="quiz-questions-bar-holder">
+                                    <div class="quiz-questions-bar">
+                                        <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                                        <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
                                     </div>
+                                    <span class="coin-numbers">
+                                        <img src="/assets/default/img/quests-coin.png" alt="">
+                                        <span class="total-earned-coins">0</span>
+                                    </span>
                                 </div>
+                                <div class="quiz-timer">
+                                    <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">0s</div></span>
+                                </div>
+                            </div>
+                            <div class="quiz-time-bar mb-0 pt-0 mt-0">
+                                <div class="timer-wrap">
+                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+
+                                    <div class="time-box" id="hh">00</div>
+                                    <span class="colon">:</span>
+                                    <div class="time-box" id="mm">05</div>
+                                    <span class="colon">:</span>
+                                    <div class="time-box" id="ss">15</div>
+                                </div>
+                                <span class="coin-numbers">
+                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                    <span class="total-earned-coins">1</span>
+                                </span>
                             </div>
                         </div>
                         
@@ -120,21 +131,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
                                     <div class="left-content has-bg">
-                                        <div class="quiz-time-bar mb-80 pt-15 mt-0">
-                                            <div class="timer-wrap">
-                                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
-
-                                                <div class="time-box" id="hh">00</div>
-                                                <span class="colon">:</span>
-                                                <div class="time-box" id="mm">05</div>
-                                                <span class="colon">:</span>
-                                                <div class="time-box" id="ss">15</div>
-                                            </div>
-                                            <span class="coin-numbers">
-                                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                                <span class="total-earned-coins">1</span>
-                                            </span>
-                                        </div>
                                         <div class="question-counts">
                                             <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                             <span>Question 8 of 20</span>
