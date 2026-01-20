@@ -380,68 +380,56 @@ $started_already = isset($started_already)? $started_already : false;
     </div>
 </div>
 <!-- Report Modal Html Start -->
- <div class="modal fade" id="reportModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-sm">
-    <div class="modal-content">
+ <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+            
+            <!-- Header -->
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title font-weight-bold" id="reportModalLabel">Report Issue</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <!-- Body -->
+            <div class="modal-body pt-4">
+                <div class="report-options d-flex flex-column gap-2">
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>The answer options are wrong</span>
+                    </label>
+                    
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>The question is unclear or confusing</span>
+                    </label>
+                    
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>Typo or grammatical error</span>
+                    </label>
+                    
+                    <label class="radio-label d-flex align-items-center mb-2">
+                        <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
+                        <span>Other reason</span>
+                    </label>
+                </div>
 
-      <div class="modal-header py-2">
-        <h6 class="modal-title">Report Question</h6>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <div class="modal-body">
-        <form id="reportForm">
-
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="opt1">
-            <label class="custom-control-label" for="opt1">Wrong answer</label>
-          </div>
-
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="opt2">
-            <label class="custom-control-label" for="opt2">English mistake</label>
-          </div>
-
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="opt3">
-            <label class="custom-control-label" for="opt3">Inappropriate question</label>
-          </div>
-
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="opt4">
-            <label class="custom-control-label" for="opt4">Incorrect options</label>
-          </div>
-
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="opt5">
-            <label class="custom-control-label" for="opt5">Image issue</label>
-          </div>
-
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="optOther">
-            <label class="custom-control-label" for="optOther">Other</label>
-          </div>
-
-          <div class="mt-2">
-            <textarea id="otherText" class="form-control" rows="3"
-              placeholder="Additional details (required if Other is selected)"></textarea>
-          </div>
-
-          <div class="alert alert-success mt-2 d-none" id="successMsg">
-            Report submitted successfully!
-          </div>
-
-        </form>
-      </div>
-
-      <div class="modal-footer py-2">
-        <button type="button" class="btn btn-primary btn-sm" id="submitReport">
-          Submit
-        </button>
-      </div>
-
+                <!-- Dynamic Feedback Area -->
+                <div class="feedback-area mt-3" id="feedbackArea">
+                    <label id="feedbackLabel" class="font-weight-bold small text-secondary">Please provide details:</label>
+                    <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" onclick="submitReport()">Submit Report</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <!-- Report Modal Html End -->
 @endsection
@@ -537,8 +525,8 @@ $started_already = isset($started_already)? $started_already : false;
         var index = 0;
         var typingSpeed = 20;
         var delayBetweenMessages = 2000;
-        var timeoutRef = null;   // 🔑 store timeout reference
-        var stopped = false;    // 🔑 stop flag
+        var timeoutRef = null;   // store timeout reference
+        var stopped = false;    // stop flag
 
         function typeMessage(text, element, callback) {
             let i = 0;
@@ -690,7 +678,7 @@ window.addEventListener('resize', updateButtons);
 <script>
 $(document).ready(function () {
 
-    // 👉 Run when Start Practice button is clicked
+    // Run when Start Practice button is clicked
     $(document).on('click', '.quiz-start-btn', function () {
 
         // Wait until quiz content is fully loaded/rendered
