@@ -3451,14 +3451,14 @@ body.quiz-area-page:has(.learn-test-start) {
 .report-btn img {
     filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
-.question-area .tooltip-inner {
+.prev-next-controls .tooltip-inner {
     background-color: #000;
     min-width: 140px;
     position: relative;
     left: 15px;
 }
-.question-area .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
-.question-area .bs-tooltip-bottom .arrow:before {
+.prev-next-controls .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
+.prev-next-controls .bs-tooltip-bottom .arrow:before {
     border-bottom-color: #000;
 }
     /* Rurera-Report Modal Style End */
