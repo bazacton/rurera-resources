@@ -3186,10 +3186,10 @@ body.quiz-area-page:has(.learn-test-start) {
     /* Custom Dots Animation - Removed */
     
     .animated-text-wrapper {
-      width: 265px;
-      margin-left: 5px;
+        width: auto;
+        line-height: normal;
+        margin: 5px 0 0 10px;
     }
-
     .animated-text span {
       color: #000;
       overflow: hidden;
