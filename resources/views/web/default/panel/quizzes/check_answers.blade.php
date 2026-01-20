@@ -9,13 +9,6 @@ $rand_id = rand(99,9999);
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/css/quiz-common.css">
 
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-<link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css">
-<script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';">
-
 <style>
 .field-holder.correct, .form-field.correct, .form-field.correct label {
     background: #d7fbdf !important;
@@ -245,13 +238,6 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 @endsection
 
 @push('scripts_bottom')
-
-<script src="/assets/default/vendors/video/video.min.js"></script>
-<script src="/assets/default/vendors/jquery.simple.timer/jquery.simple.timer.js"></script>
-<script src="/assets/default/js/parts/quiz-start.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
-<script src="/assets/default/js/lottie.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     init_question_functions();
@@ -259,37 +245,6 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
     var header = document.getElementById("navbar");
     var headerOffset = (header != null) ? header.offsetHeight : 100;
     var header_height = parseInt(headerOffset) + parseInt(85) + "px";
-
-
-    if(jQuery('.quiz-pagination .swiper-container').length > 0){
-              console.log('slides-count');
-              console.log($(".quiz-pagination ul li").length);
-            const swiper = new Swiper('.quiz-pagination .swiper-container', {
-              slidesPerView: ($(".quiz-pagination ul li").length > 20)? 20 : $(".quiz-pagination ul li").length,
-              spaceBetween: 0,
-              slidesPerGroup: 5,
-              navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-              },
-              breakpoints: {
-                320: {
-                  slidesPerView: 3,
-                  spaceBetween: 5
-                },
-
-                480: {
-                  slidesPerView: ($(".quiz-pagination ul li").length > 20)? 20 : $(".quiz-pagination ul li").length,
-                  spaceBetween: 5
-                },
-
-                640: {
-                  slidesPerView: ($(".quiz-pagination ul li").length > 20)? 20 : $(".quiz-pagination ul li").length,
-                  spaceBetween: 5
-                }
-              }
-            })
-          }
 </script>
 
 @endpush
