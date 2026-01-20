@@ -3512,5 +3512,6 @@ body.quiz-area-page:has(.learn-test-start) {
 }
 #reportModal .modal-footer .btn.btn-danger {
     background-color: var(--primary);
+    border-color: var(--primary);
 }
 /* Rurera-Report Modal Style End */
