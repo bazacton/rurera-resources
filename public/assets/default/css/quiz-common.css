@@ -1402,7 +1402,6 @@ body mjx-container[display] {
 .quiz-questions-bar-holder .bar-fill:after {
     position: absolute;
     content: attr(data-title);
-    right: -10px;
     height: 30px;
     background-color: #8fc963;
     color: white;
@@ -1413,8 +1412,9 @@ body mjx-container[display] {
     font-size: var(--fs-xs);
     line-height: 30px;
     font-weight: 500;
-    padding: 0 25px;
+    padding: 0;
     opacity: 0;
+    min-width: 40px;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
