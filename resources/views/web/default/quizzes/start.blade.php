@@ -122,8 +122,8 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
                                 </div>
                                 <div class="choose-questions">
-                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</span>
-                                    <span class="font-14 text-left">Choose how many questions to attempt</h2>
+                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left">Settings</h3>
+                                    <span class="font-14 text-left">Choose how many questions to attempt</span>
                                     <div class="group-buttons font-14 font-weight-500">
                                         <div class="select-radio-box">
                                             <input type="radio" name="select-num" id="num1">
