@@ -131,6 +131,11 @@
                                             $sas_accuracy = isset($topicPerformData['sas_accuracy'])? $topicPerformData['sas_accuracy'] : 0;
                                             $smart_score = isset($topicPerformData['smart_score'])? $topicPerformData['smart_score'] : 0;
 
+
+                                            $tier1_incorrects = isset($topicPerformData['tier1_incorrects'])? $topicPerformData['tier1_incorrects'] : 0;
+                                            $tier2_incorrects = isset($topicPerformData['tier2_incorrects'])? $topicPerformData['tier2_incorrects'] : 0;
+                                            $tier3_incorrects = isset($topicPerformData['tier3_incorrects'])? $topicPerformData['tier3_incorrects'] : 0;
+
                                             $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
                                             $completion_class = 'accuracy-not-started';
@@ -180,6 +185,9 @@
                                                                     SAS Score: {{$sas_score}}<br>
                                                                     SAS Accuracy: {{$sas_accuracy}}%<br>
                                                                     Smart Score: {{$smart_score}}<br>
+                                                                    Tier 1 Incorrects: {{$tier1_incorrects}}<br>
+                                                                    Tier 2 Incorrects: {{$tier2_incorrects}}<br>
+                                                                    Tier 3 Incorrects: {{$tier3_incorrects}}<br>
                                                                 </div>
                                                             </li>
                                                         </ul>
