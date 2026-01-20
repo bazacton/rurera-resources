@@ -3189,15 +3189,16 @@ body.quiz-area-page:has(.learn-test-start) {
       margin-left: 5px;
     }
 
-    .animated-text {
+    .animated-text span {
       color: #000;
       overflow: hidden;
       white-space: nowrap;
       border-right: 2px solid #000;
       width: 0;
+      display: inline-block;
       animation: typing 3.5s steps(40, end) infinite;
     }
-
+    
     @keyframes typing {
       0% { width: 0 }
       50% { width: 100% }
