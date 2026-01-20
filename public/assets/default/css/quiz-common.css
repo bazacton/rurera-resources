@@ -2621,7 +2621,7 @@ Quiz Check Answers Page Style End
 /* Question */
 #scroll-controls {
     position: fixed;
-    bottom: calc(70px + env(safe-area-inset-bottom));
+    bottom: calc(80px + env(safe-area-inset-bottom));
     width: 100%;
     left: 0;
     padding-right: 400px;
