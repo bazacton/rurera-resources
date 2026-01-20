@@ -2854,6 +2854,8 @@ body.quiz-area-page:has(.learn-test-start) {
     padding: 15px 16px 0;
     width: 100%;
     border-top: 1px dashed rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
 }
 .group-buttons {
     display: inline-flex;
