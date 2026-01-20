@@ -184,10 +184,17 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                             </div>
                                         </div>
                                         <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                            <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
+                                            <a href="javascript:;" data-toggle="modal" class="review-btn mr-0" data-target="#review_submit">
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
+                                            <button type="button" class="report-btn mr-auto"
+                                            data-toggle="tooltip"
+                                            title="Report this question"
+                                            data-target="#reportModal"
+                                            data-toggle2="modal">
+                                                Report
+                                            </button>
                                             <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                 Next
                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
