@@ -1242,11 +1242,14 @@ Lms Responsive Style Start
     .subchapter-slider {padding: 0 15px;}
     .subchapter-slider .swiper-slide-active {transform: none;}
     .streak-dropdown-content {
-        width: 100%;
-        min-width: 350px;
-        left: auto;
-        right: 50%;
-        max-width: 350px;
+        left: -30px;
+        right: auto;
+        transform: none;
+        width: 320px;
+    }
+    .streak-dropdown-content:before {
+        left: 0;
+        margin-left: 35px;
     }
 }
 
