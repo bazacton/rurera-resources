@@ -71,6 +71,34 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         @endif
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
+            <div class="quiz-status-bar mb-30">
+                <div class="questions-bar-box">
+                    <div class="quiz-questions-bar-holder">
+                        <div class="quiz-questions-bar">
+                            <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                            <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
+                        </div>
+                        <span class="coin-numbers">
+                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                            <span class="total-earned-coins">0</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="quiz-time-bar mb-0 pt-0 mt-0">
+                    <div class="timer-wrap">
+                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+
+                        <div class="time-box" id="hh">00</div>
+                        <span class="colon">:</span>
+                        <div class="time-box" id="mm">05</div>
+                        <span class="colon">:</span>
+                        <div class="time-box" id="ss">15</div>
+                    </div>
+                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                        <img src="/assets/default/svgs/setting.svg" alt="setting">
+                    </button>
+                </div>
+            </div>
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
             <!-- <section class="quiz-topbar {{$top_bar_class}}" style="display:block !important">
                 <div class="container-fluid">
@@ -99,34 +127,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
-                                    <div class="quiz-status-bar mb-30">
-                                        <div class="questions-bar-box">
-                                            <div class="quiz-questions-bar-holder">
-                                                <div class="quiz-questions-bar">
-                                                    <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                                                    <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
-                                                </div>
-                                                <span class="coin-numbers">
-                                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                                    <span class="total-earned-coins">0</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="quiz-time-bar mb-0 pt-0 mt-0">
-                                            <div class="timer-wrap">
-                                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-
-                                                <div class="time-box" id="hh">00</div>
-                                                <span class="colon">:</span>
-                                                <div class="time-box" id="mm">05</div>
-                                                <span class="colon">:</span>
-                                                <div class="time-box" id="ss">15</div>
-                                            </div>
-                                            <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                                                <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                            </button>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="left-content has-bg">
 
                                         @if( is_array( $question ))
