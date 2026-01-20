@@ -3492,4 +3492,12 @@ body.quiz-area-page:has(.learn-test-start) {
     box-shadow: 0 0 0 6px var(--primary) inset;
     border-color: var(--primary);
 }
+#reportModal .modal-footer .btn {
+    height: auto;
+    width: auto;
+    min-width: auto;
+    padding: 8px 15px;
+    box-shadow: none;
+    border-radius: 3px;
+}
 /* Rurera-Report Modal Style End */
