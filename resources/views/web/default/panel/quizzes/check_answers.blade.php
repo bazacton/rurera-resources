@@ -154,7 +154,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                         </div>
                     </div>
                 </div>
-                <div class="position-relative mb-30">
+                <div class="position-relative mb-30 graph-box">
                     <h2 class="font-18 mb-15 font-weight-bold">Grouping and identifying organisms</h2>
                     <img src="/assets/default/img/canvos-img.jpeg" alt="canvos-img">
                 </div>
