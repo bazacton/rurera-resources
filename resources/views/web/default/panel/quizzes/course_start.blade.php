@@ -787,10 +787,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-/**
- * CALLBACK FUNCTION
- * Runs only after quiz page is loaded
- */
 function quizPageCallback() {
 
     // Enable tooltips
@@ -798,7 +794,7 @@ function quizPageCallback() {
 
         $(this).tooltip({
             html: true,
-            container: $(this).closest('.quiz-time-bar'),
+            container: $(this).closest('.prev-next-controls'),
             trigger: 'hover'
         });
 
