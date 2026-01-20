@@ -240,7 +240,6 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
 @push('scripts_bottom')
 
 <script>
-    init_question_functions();
     $('body').addClass('quiz-show');
     var header = document.getElementById("navbar");
     var headerOffset = (header != null) ? header.offsetHeight : 100;
