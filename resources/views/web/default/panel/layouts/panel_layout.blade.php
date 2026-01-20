@@ -10,7 +10,7 @@
 @endphp
 <head>
     <title>{{ $pageTitle ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <!-- General CSS File -->
     <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
