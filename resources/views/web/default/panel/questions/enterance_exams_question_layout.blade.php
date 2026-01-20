@@ -49,7 +49,7 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
                         @endif
                     </div>
                     @endif
-                    <span class="questions-total-holder d-block mb-30">
+                    <span class="questions-total-holder d-block mb-30 rurera-hide">
                         <span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span>
                         <button class="status-bar-on-off collapsed" type="button" data-toggle="collapse" data-target="#statusbar-data" aria-expanded="false" aria-controls="statusbar-data"><span class="rurera-hide">Hide</span> <span class="show-label">Show</span> Status</button>
                     </span>
