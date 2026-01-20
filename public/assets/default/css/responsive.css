@@ -1251,6 +1251,9 @@ Lms Responsive Style Start
         left: 0;
         margin-left: 35px;
     }
+    .learn-test-start {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 640px) {
