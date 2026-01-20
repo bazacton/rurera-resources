@@ -733,6 +733,34 @@ function quizPageCallback() {
     });
 }
 
+$(document).on('click', '.load-more-questions', function (evt) {
+
+    var thisObj = $('.question-area');
+    var quiz_result_id = $(this).closest('.question-area-block').attr('data-quiz_result_id');
+    var result_attempt_id = $(this).closest('.question-area-block').attr('data-result_attempt_id');
+    var total_questions = thisObj.attr('data-total_questions');
+    total_questions = parseInt(total_questions);
+    console.log(total_questions);
+
+    $.ajax({
+        type: "GET",
+        url: '/get_practice_more_questions',
+        dataType: 'json',
+        data: {'quiz_result_id': quiz_result_id, 'result_attempt_id': result_attempt_id, 'total_questions': total_questions},
+        success: function (return_data) {
+
+            if(return_data.total_new_questions > 0){
+                $('.question-inner-step-area .questions-lists-block').append(return_data.question_response_layout);
+                var total_no_of_questions = $(".total-no-of-questions").html();
+                total_no_of_questions = parseInt(total_no_of_questions)+return_data.total_new_questions;
+                $(".total-no-of-questions").html(total_no_of_questions);
+                thisObj.attr('data-total_questions', total_no_of_questions);
+            }
+            console.log(return_data);
+        }
+    });
+
+});
 </script>
 
 @endpush
