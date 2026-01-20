@@ -2985,21 +2985,11 @@ body.quiz-area-page:has(.learn-test-start) {
     align-items: center;
     gap: 6px;
 }
-.Preparing-box {
-    display: inline-flex;
-    max-width: 120px;
-    width: 120px;
-    align-items: center;
-    gap: 6px;
-}
 .btn-holder.practice-start-block {
     text-align: left;
     display: flex;
     align-items: flex-start;
     gap: 10px;
-}
-.btn-holder.practice-start-block > span {
-    width: calc(100% - 120px);
 }
 /* Loading Dots Animation Style Start */
 @-webkit-keyframes dot-keyframes {
