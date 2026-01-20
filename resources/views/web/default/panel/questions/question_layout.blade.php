@@ -1,6 +1,6 @@
 @php $rand_id = rand(999,99999); $layout_type = isset( $layout_type )? $layout_type : ''; @endphp
 
-<meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 
 <div class="question-step quiz-complete" style="display:none">
