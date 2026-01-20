@@ -1451,6 +1451,11 @@ body mjx-container[display] {
 .questions-bar-box .quiz-questions-bar-holder {
     width: 100%;
 }
+.quiz-status-bar .quiz-time-bar {
+    margin-left: auto;
+    gap: 10px;
+    width: auto;
+}
 /* --- END: pagination Learn Practice --- */
 /* ======================================================== */
 
@@ -3414,6 +3419,8 @@ body.quiz-area-page:has(.learn-test-start) {
 }
 .setting-modal-btn img {
     filter: invert(18%) sepia(0%) saturate(134%) hue-rotate(233deg) brightness(76%) contrast(83%);
+    height: 20px;
+    width: 20px;
 }
 .rur-settings-modal .modal-footer button {
     height: auto;
