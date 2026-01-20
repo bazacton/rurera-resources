@@ -2863,7 +2863,7 @@ body.quiz-area-page:has(.learn-test-start) {
     background-color: #e5e5e5;
     padding: 5px 6px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-left: auto;
 }
 
 .select-radio-box {
