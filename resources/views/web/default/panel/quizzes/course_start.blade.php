@@ -828,4 +828,11 @@ function quizPageCallback() {
     });
 }
 
+$(document).on("change, input", ".editor-field", function (e) {
+    $(".rurera-validation-error").remove();
+    var thisBlock = $(".rurera-question-block.active");
+    var thisForm = thisBlock.find('form');
+    returnType = rurera_validation_process(thisForm, 'quiz_page');
+});
+
 </script>
