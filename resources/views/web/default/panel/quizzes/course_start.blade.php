@@ -787,20 +787,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-$(document).ready(function () {
-
-    // Run when Start Practice button is clicked
-    $(document).on('click', '.quiz-start-btn', function () {
-
-        // Wait until quiz content is fully loaded/rendered
-        setTimeout(function () {
-            quizPageCallback();
-        }, 300); // increase to 500 if needed
-    });
-
-});
-
-
 /**
  * CALLBACK FUNCTION
  * Runs only after quiz page is loaded
