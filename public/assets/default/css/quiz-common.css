@@ -1476,7 +1476,7 @@ body mjx-container[display] {
     background-color: #8fc963;
     right: 23px;
     transform: rotate(45deg);
-    margin-right: -2px;
+    margin-right: 0;
     opacity: 0;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
