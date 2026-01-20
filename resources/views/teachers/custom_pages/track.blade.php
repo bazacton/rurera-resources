@@ -252,7 +252,7 @@
                                         </div>
                                         <form class="question-fields" action="javascript:;" data-question_id="11558">
                                             <meta name="csrf-token" content="0TSlo0r1yRWjsWXWM5vZXOXNgvQNz593JQEnTlAP">
-                                            <span class="questions-total-holder d-block mb-15">
+                                            <span class="questions-total-holder d-block mb-15 rurera-hide">
                                                 <span class="question-dev-details">(11558) (Learn) (checkbox)</span>
                                             </span>
                                             <div id="rureraform-form-1" class="disable-div rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
