@@ -1363,7 +1363,7 @@ body mjx-container[display] {
 .correct-in-row {color: #51cd00; font-weight: 500; text-transform: uppercase; }
 .quiz-questions-bar {background-color: #e5e5e5; height: 10px; border-radius: 20px 0 0 20px; width: calc(100% - 60px); position: relative;}
 .quiz-questions-bar .bar-fill {
-    background-color: #2ecc71;
+    background-color: #8fc963;
     border-radius: 20px;
     display: block;
     height: 100%;
