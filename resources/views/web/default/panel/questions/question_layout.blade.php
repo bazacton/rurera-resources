@@ -47,7 +47,7 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
         @endif
     </div>
     @endif
-    <span class="questions-total-holder d-block mb-15">
+    <span class="questions-total-holder d-block mb-15 rurera-hide">
 
         @if($layout_type != 'results') <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$question_no}}</span>
         @endif
