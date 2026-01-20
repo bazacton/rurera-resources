@@ -381,7 +381,7 @@ $started_already = isset($started_already)? $started_already : false;
 </div>
 <!-- Report Modal Html Start -->
  <div class="modal fade" id="reportModal" tabindex="-1">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="modal-content">
 
       <div class="modal-header py-2">
