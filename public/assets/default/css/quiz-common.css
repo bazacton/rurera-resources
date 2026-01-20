@@ -350,7 +350,6 @@ input.droppable-field {
 .lms-checkbox-img label {border-radius: 5px; display: flex; align-items: center;}
 .lms-checkbox-img .form-field.wrong label {background: none; border-color: #ff4a4a; color: #000;}
 .lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
-.form-field input[type="checkbox"]:checked ~ label:has(img) {background-color: inherit; border-color: rgb(113 150 251);}
 .active-option label,
 .form-field label:hover,
 .form-field input[type="checkbox"]:checked ~ label {
