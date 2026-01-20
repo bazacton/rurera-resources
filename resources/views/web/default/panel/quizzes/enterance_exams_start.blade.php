@@ -92,40 +92,39 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                         </div>
                     </div>
                     <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <div class="quiz-status-bar mb-30">
-                            <div class="questions-bar-box">
-                                <div class="quiz-questions-bar-holder">
-                                    <div class="quiz-questions-bar">
-                                        <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                                        <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
-                                    </div>
-                                    <span class="coin-numbers">
-                                        <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                        <span class="total-earned-coins">0</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="quiz-time-bar mb-0 pt-0 mt-0">
-                                <div class="timer-wrap">
-                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-
-                                    <div class="time-box" id="hh">00</div>
-                                    <span class="colon">:</span>
-                                    <div class="time-box" id="mm">05</div>
-                                    <span class="colon">:</span>
-                                    <div class="time-box" id="ss">15</div>
-                                </div>
-                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                </button>
-                            </div>
-                        </div>
-                        
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
+                                    <div class="quiz-status-bar mb-30">
+                                        <div class="questions-bar-box">
+                                            <div class="quiz-questions-bar-holder">
+                                                <div class="quiz-questions-bar">
+                                                    <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
+                                                    <span class="bar-fill progress-bar-fill" title="0%" style="width: 0%;"></span>
+                                                </div>
+                                                <span class="coin-numbers">
+                                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                                    <span class="total-earned-coins">0</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="quiz-time-bar mb-0 pt-0 mt-0">
+                                            <div class="timer-wrap">
+                                                <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+
+                                                <div class="time-box" id="hh">00</div>
+                                                <span class="colon">:</span>
+                                                <div class="time-box" id="mm">05</div>
+                                                <span class="colon">:</span>
+                                                <div class="time-box" id="ss">15</div>
+                                            </div>
+                                            <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                                                <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                            </button>
+                                        </div>
+                                    </div>
                                     <div class="left-content has-bg">
                                         <div class="question-counts">
                                             <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
