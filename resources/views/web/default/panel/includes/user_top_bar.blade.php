@@ -29,31 +29,41 @@
                                     <img src="/assets/default/svgs/snowflake-cold.svg" height="64" width="64" alt="snowflake-cold">
                                 </span>
                             </li>
-                            <li class="not-started">
+                            <li class="active-streak">
                                 <span class="day">T</span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire">
+                                </span>
+                            </li>
+                            <li class="active-streak">
+                                <span class="day">W</span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire2">
+                                </span>
+                            </li>
+                            <li class="broken-streak">
+                                <span class="day">T</span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/broken-heart.svg" height="64" width="64" alt="broken-heart">
+                                </span>
+                            </li>
+                            <li class="active-streak">
+                                <span class="day">F</span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire2">
+                                </span>
+                            </li>
+                            <li class="not-started">
+                                <span class="day">S</span>
                                 <span class="day-circle">
                                     <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
                                 </span>
                             </li>
-                            <li>
-                                <span class="day">W</span>
-                                <span class="day-circle"></span>
-                            </li>
-                            <li>
-                                <span class="day">T</span>
-                                <span class="day-circle"></span>
-                            </li>
-                            <li>
-                                <span class="day">F</span>
-                                <span class="day-circle"></span>
-                            </li>
-                            <li>
+                            <li class="not-started">
                                 <span class="day">S</span>
-                                <span class="day-circle"></span>
-                            </li>
-                            <li>
-                                <span class="day">S</span>
-                                <span class="day-circle"></span>
+                                <span class="day-circle">
+                                    <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
+                                </span>
                             </li>
                         </ul>
                     </div>
