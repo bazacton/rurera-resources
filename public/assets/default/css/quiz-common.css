@@ -1430,12 +1430,12 @@ body mjx-container[display] {
 .quiz-questions-bar-holder .bar-fill:before {
     content: "";
     position: absolute;
-    top: -24px;
+    top: -20px;
     margin-top: 0;
     height: 8px;
     width: 8px;
     background-color: #8fc963;
-    right: 0;
+    right: 23px;
     transform: rotate(45deg);
     margin-right: -2px;
     opacity: 0;
