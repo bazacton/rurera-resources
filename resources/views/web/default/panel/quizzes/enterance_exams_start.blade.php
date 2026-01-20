@@ -831,24 +831,6 @@ window.addEventListener('resize', updateScrollState);
 updateScrollState();
 </script>
 <script>
-$(document).ready(function () {
-
-    // Run when Start Practice button is clicked
-    $(document).on('click', '.quiz-start-btn', function () {
-
-        // Wait until quiz content is fully loaded/rendered
-        setTimeout(function () {
-            quizPageCallback();
-        }, 300); // increase to 500 if needed
-    });
-
-});
-
-
-/**
- * CALLBACK FUNCTION
- * Runs only after quiz page is loaded
- */
 function quizPageCallback() {
 
     // Enable tooltips
@@ -856,7 +838,7 @@ function quizPageCallback() {
 
         $(this).tooltip({
             html: true,
-            container: $(this).closest('.quiz-time-bar'),
+            container: $(this).closest('.prev-next-controls'),
             trigger: 'hover'
         });
 
