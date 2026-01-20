@@ -3501,4 +3501,7 @@ body.quiz-area-page:has(.learn-test-start) {
     box-shadow: none;
     border-radius: 3px;
 }
+#reportModal .modal-footer .btn.btn-danger {
+    background-color: var(--primary);
+}
 /* Rurera-Report Modal Style End */
