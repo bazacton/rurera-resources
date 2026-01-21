@@ -618,7 +618,12 @@ Left SideBar-menu End
     color: #ff4f4f;
     border-bottom: none;
 }
-.question-result-layout .lms-radio-btn-group .lms-question-label.correct {background: #d7fbdf;}
+.question-result-layout .lms-radio-btn-group .lms-question-label.correct {
+    color: #70c17c;
+}
+.lms-user-answer-block:has(.lms-question-label.correct) .list-title {
+    color: #70c17c;
+}
 .question-result-layout .lms-radio-btn-group li {
     min-width: auto;
     list-style: none;
