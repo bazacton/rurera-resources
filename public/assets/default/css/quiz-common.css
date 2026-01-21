@@ -291,13 +291,7 @@ input.droppable-field {
 .form-field.wrong input[type="checkbox"]:checked ~ label {
     border-color: #c23131;
 }
-.lms-radio-select .correct input[type=radio] ~ label,
-.lms-radio-select .correct input[type=radio]:checked~label,
-.question-result-layout .form-field.correct ,
-.form-field.correct input[type="checkbox"]:checked ~ label,
-.question-result-layout .form-field.correct label {
-    border-color: #8fc963;
-}
+
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
 .lms-radio-select input[type=radio]:checked~label {
     background-color: #8fc963;
