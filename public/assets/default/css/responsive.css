@@ -1687,6 +1687,9 @@ Lms Responsive Style Start
     .group-buttons {
         margin: 10px 0 0;
     }
+    #scroll-controls {
+        bottom: calc(115px + env(safe-area-inset-bottom));
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
