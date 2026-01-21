@@ -567,7 +567,7 @@ Left SideBar-menu End
     top: 15px;
 }
 .question-result-layout.question-status-correct:before {content: "\2713"; background-color: #70c17c;}
-.question-result-layout.question-status-incorrect:before {content: "\00D7"; background-color: #ff4f4f; font-size: 22px;}
+.question-result-layout.question-status-incorrect:before {content: "\00D7"; color: #ff4f4f;}
 .question-result-layout.question-status-correct {border-color: #70c17c;}
 .question-result-layout.question-status-incorrect {border-color: #ff4f4f;}
 .question-result-layout .rureraform-element:hover {outline: none !important;}
