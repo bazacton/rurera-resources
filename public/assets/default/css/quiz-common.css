@@ -1228,7 +1228,7 @@ body mjx-container[display] {
 .quiz-group ul li {list-style: inherit; width: 100%;}
 .learning-page .learning-content {height: calc(100vh - 105px);}
 .question_hint {font-style: italic; color: #999; display: block; line-height: 24px; margin-top: 10px;}
-.show-notifications {display: inline-block; width: 100%; padding-top: 10px;}
+.show-notifications {display: inline-block; width: 100%; margin: 0 0 25px;}
 .show-notifications .question-status-wrong {color: #db3a3a;}
 .show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
 .show-notifications span[class*="question-status-"] {display: block;}
