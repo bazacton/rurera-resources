@@ -349,8 +349,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 </div>
 
                 <!-- Body -->
-                <div class="modal-body pt-4">
-                    <div class="report-options d-flex flex-column gap-2">
+                <div class="modal-body pt-3">
+                    <div class="report-options d-flex flex-column gap-2 font-14">
                         <label class="radio-label d-flex align-items-center mb-2">
                             <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
                             <span>The answer options are wrong</span>
