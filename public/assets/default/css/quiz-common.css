@@ -291,6 +291,7 @@ input.droppable-field {
 .form-field.wrong input[type="checkbox"]:checked ~ label {
     border-color: #c23131;
     background-color: #ffd1d1;
+    color: #333;
 }
 
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
