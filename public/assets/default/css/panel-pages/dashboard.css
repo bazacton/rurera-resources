@@ -588,19 +588,19 @@ Left SideBar-menu End
 }
 .question-result-layout .lms-radio-btn-group .lms-question-label {
     margin: 0;
-    text-decoration: underline;
+    border-bottom: 1px solid;
     font-weight: normal;
 }
 .question-result-layout .lms-radio-btn-group .lms-question-label.wrong {
     color: #ff4f4f;
-    text-decoration: none;
+    border-bottom: none;
 }
 .question-result-layout .lms-radio-btn-group .lms-question-label.correct {background: #d7fbdf;}
 .question-result-layout .lms-radio-btn-group li {
     min-width: auto;
     list-style: none;
     width: auto;
-    margin: 0 5px 0 5px;
+    margin: 0 0 0 5px;
 }
 .question-result-layout .lms-radio-lists .list-title {
     margin-bottom: 0;
