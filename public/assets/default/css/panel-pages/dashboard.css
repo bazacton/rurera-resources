@@ -578,6 +578,19 @@ Left SideBar-menu End
 .question-result-layout .left-content {min-height: auto;}
 .question-result-layout .question-layout-block form.question-fields .questions-total-holder {margin: 0 !important; padding: 0 0 20px; font-size: 16px; color: #333;}
 .question-result-layout .rureraform-element { margin: 0;}
+.question-result-layout .status-badge {
+    position: absolute;
+    right: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.question-result-layout .status-badge i {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 18px;
+    vertical-align: middle;
+}
 .question-result-layout .lms-radio-btn-group {
     align-items: flex-start;
     justify-content: flex-start;
