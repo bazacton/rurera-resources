@@ -1400,7 +1400,7 @@ body mjx-container[display] {
     background-color: #8fc963;
     padding: 2px 8px 4px;
     border-radius: 3px;
-    min-height: 40px;
+    min-width: 40px;
     text-align: center;
 }
 .quiz-questions-bar-holder .value-lable[style="left:0%"] {
@@ -2310,7 +2310,7 @@ body.quiz-area-page {
     scrollbar-width: none;
     -ms-overflow-style: none;
     width: 100%;
-    padding: 25px 55px 0;
+    padding: 25px 15px 0;
 }
 .quiz-area-page .left-content {
     width: 100%;
