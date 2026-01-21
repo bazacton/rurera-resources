@@ -1438,6 +1438,9 @@ Lms Responsive Style Start
         min-height: 90px;
     }
     .subject-filters .select-holder {margin-left: 0; width: 100%;}
+    .learning-start-box .learn-chats {
+        display: none;
+    }
 
 }
 @media screen and (max-width: 575px) {
