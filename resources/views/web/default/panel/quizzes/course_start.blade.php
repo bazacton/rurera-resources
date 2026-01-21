@@ -191,7 +191,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
-                                            <button type="button" class="report-btn mr-auto"
+                                            <button type="button" class="report-btn mr-md-auto"
                                             data-toggle="tooltip"
                                             title="Report this question"
                                             data-target="#reportModal"
