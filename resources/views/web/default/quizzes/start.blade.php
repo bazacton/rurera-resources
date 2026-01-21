@@ -18,7 +18,7 @@ $started_already = isset($started_already)? $started_already : false;
 
         <div class="learning-page-content flex-grow-1 bg-info-light p-15">
             <div class="default-loaded-data rurera-hide" data-is_started_already="{{isset( $resultObj->id)? 'yes' : 'no' }}"></div>
-            <div class="learning-content read-quiz-content {{isset( $resultObj->id)? 'rurera-hide' : '' }} pt-30" id="learningPageContent">
+            <div class="learning-content read-quiz-content {{isset( $resultObj->id)? 'rurera-hide' : '' }}" id="learningPageContent">
 
                 @php $content_class = ''; @endphp
                 @if( $quiz->quiz_type == 'vocabulary' || $quiz->quiz_type == 'practice')
