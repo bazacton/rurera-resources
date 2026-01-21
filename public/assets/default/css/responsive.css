@@ -1259,9 +1259,6 @@ Lms Responsive Style Start
     }
     .learn-test-start {
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        overflow-y: auto;
     }
 }
 
