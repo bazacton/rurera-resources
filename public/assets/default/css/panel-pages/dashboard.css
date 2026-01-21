@@ -586,14 +586,21 @@ Left SideBar-menu End
     display: inline-flex;
     flex-wrap: wrap;
 }
-.question-result-layout .lms-radio-btn-group .lms-question-label {background-color: #ededed; height: auto; border-color: #92aec4; border-width: 1px; border-radius: 0; padding: 8px 10px;}
-.question-result-layout .lms-radio-btn-group .lms-question-label.wrong {background: #fae3e5;}
+.question-result-layout .lms-radio-btn-group .lms-question-label {
+    margin: 0;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.question-result-layout .lms-radio-btn-group .lms-question-label.wrong {
+    color: #ff4f4f;
+    text-decoration: none;
+}
 .question-result-layout .lms-radio-btn-group .lms-question-label.correct {background: #d7fbdf;}
 .question-result-layout .lms-radio-btn-group li {
     min-width: auto;
     list-style: none;
     width: auto;
-    margin: 0;
+    margin: 0 5px 0 5px;
 }
 .question-result-layout .lms-radio-lists .list-title {
     margin-bottom: 0;
