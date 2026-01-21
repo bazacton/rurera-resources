@@ -456,13 +456,31 @@ input.droppable-field {
     border: 0;
     width: 100%;
     text-align: left;
-    padding: 0 0 10px;
+    padding: 0 0 10px 20px;
     position: relative;
+}
+.explaination-btn:before {
+    content: "\2212";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    margin-top: -13px;
+    font-size: 24px;
+    line-height: 15px;
+    color: var(--primary);
+}
+.explaination-btn.collapsed:before {
+    content: "\002B";
 }
 .explaination-btn h5 {
     margin: 0;
 }
-.question-solution {
+.quiz-area-page .explaination-btn h5 {
+    color: var(--primary);
+}
+.quiz-area-page .question-solution {
     border-top: 1px solid #ddd;
     padding: 10px 0 0;
 }
