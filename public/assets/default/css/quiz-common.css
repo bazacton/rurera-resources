@@ -3517,13 +3517,13 @@ html:has(.learn-test-start) {
 .report-btn img {
     filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
-.prev-next-controls .tooltip-inner {
+.questions-data-block .tooltip-inner {
     background-color: #000;
     min-width: 140px;
 }
-.prev-next-controls .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
-.prev-next-controls .bs-tooltip-bottom .arrow:before,
-.prev-next-controls .bs-tooltip-top .arrow:before {
+.questions-data-block .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
+.questions-data-block .bs-tooltip-bottom .arrow:before,
+.questions-data-block .bs-tooltip-top .arrow:before {
     border-bottom-color: #000;
     border-top-color: #000;
 }
