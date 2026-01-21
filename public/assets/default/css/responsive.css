@@ -1473,6 +1473,7 @@ Lms Responsive Style Start
     .spells-topbar {padding: 20px 25px; flex-direction: column; gap: 15px;}
     body .learning-page .learning-title {padding-left: 10px; text-align: center;}
     body .learning-page .learning-content .learning-content-box {width: 100%;}
+    .learn-test-start .rur-setting-row {flex: 0 0 100%; width: 100%;}
     body .question-layout .input-group-prepend ~ input[type="text"] {width: 100%; padding: 0 55px;}
     body .question-layout .input-group-prepend,
     body .question-layout .input-group-append {position: absolute; height: 100%;}
@@ -1675,7 +1676,6 @@ Lms Responsive Style Start
         margin-top: 0;
     }
     .group-buttons {
-        width: 100%;
         margin: 10px 0 0;
     }
 }
