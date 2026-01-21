@@ -262,7 +262,7 @@ $rand_id = rand(99,9999);
                         </div>
                         <div class="rureraform-col rureraform-col-12">
                             <div class="question-label question_label">
-                                <span>Which examples show sensitivity in living organisms?</span>
+                                <span>2. Which examples show sensitivity in living organisms?</span>
                             </div>
 	                    </div>
                         <div class="question-area">
