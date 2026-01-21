@@ -1692,13 +1692,19 @@ Lms Responsive Style Start
     }
     .quiz-status-bar {
         flex-wrap: wrap;
+        position: relative;
     }
     .questions-bar-box {
         width: calc(100% - 30px);
     }
     .quiz-status-bar .quiz-time-bar {
         width: 100%;
-        margin: 25px 0 0 0;
+        margin: 20px 0 0 0;
+    }
+    button.setting-modal-btn {
+        position: absolute;
+        right: 0;
+        top: 3px;
     }
 }
 @media screen and (max-width: 480px) {
