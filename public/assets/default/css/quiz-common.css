@@ -290,6 +290,7 @@ input.droppable-field {
 .question-result-layout .form-field.wrong label,
 .form-field.wrong input[type="checkbox"]:checked ~ label {
     border-color: #c23131;
+    background-color: #ffd1d1;
 }
 
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
@@ -2347,8 +2348,8 @@ Question Result Page Style Start
 ******************************************/
 .question-result-layout .rureraform-element:has(.input-holder.input_box ~ .input-holder.input_box),
 .question-result-layout .rureraform-element:has(select ~ select) {line-height: 44px;}
-.question-result-layout .alphabet-list-style .wrong.form-field:before,
 .question-result-layout .alphabet-list-style .correct.form-field:before {color: #333; border-color: rgba(0,0,0,0.2);}
+.question-result-layout .alphabet-list-style .wrong.form-field:before {background-color: inherit;}
 .question-result-layout .rureraform-element {outline: none !important;}
 .question-result-layout .rureraform-col-12 {padding: 0 0 10px;}
 /****************************************** 
