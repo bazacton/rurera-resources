@@ -500,9 +500,6 @@ input.droppable-field {
 /* ======================================================== */
 /* [21] Frontend-Field-error-Label */
 /* --- START: Frontend-Field-error-Label --- */
-label.frontend-field-error-label {
-    border-color: #f95555;
-}
 .input-holder.frontend-field-error-input {
     border-color: #f95555;
 }
@@ -1232,9 +1229,9 @@ body mjx-container[display] {
 .learning-page .learning-content {height: calc(100vh - 105px);}
 .question_hint {font-style: italic; color: #999; display: block; line-height: 24px; margin-top: 10px;}
 .show-notifications {display: inline-block; width: 100%; padding-top: 10px;}
-.show-notifications .question-status-wrong {color: #db3a3a; background-color: #fff4f4; border: 1px solid #db3a3a;}
+.show-notifications .question-status-wrong {color: #db3a3a;}
 .show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
-.show-notifications span[class*="question-status-"] {display: block; margin: 0 0 20px; border-radius: 3px; padding: 8px 10px;}
+.show-notifications span[class*="question-status-"] {display: block;}
 .correct-answers-block {margin: 10px 0 15px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px;}
 .correct-answers-block li {display: inline-block; line-height: normal; background-color: #e3ebfc; color: var(--blue); padding: 4px 10px; border-radius: 3px;}
 #question_properties .select2-container--default .select2-selection--multiple {padding-bottom: 4px;}
