@@ -72,9 +72,31 @@ $started_already = isset($started_already)? $started_already : false;
                                 <h2 class="font-30 font-weight-bold">Characteristics of living organisms</h2>
                                 <p class="font-16 text-dark-charcoal pt-5 text-gray">Earn Coins by answering questions and completing</p>
                             </div>
-                            <div class="learn-chats mb-25">
-                                <div class="start-image-box">
-                                    <img src="/assets/default/img/start-quiz-img.png" height="227" width="502" alt="start-quiz-img">
+                            <div class="learn-chats row mb-35">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="chat-box left-bottom">
+                                    <div class="avatar active">
+                                    <img src="/assets/default/svgs/avatar-left-top.svg" alt="avatar-left-top">
+                                    </div>
+                                    <div class="avatar">
+                                    <img src="/assets/default/svgs/avatar-left.svg" alt="avatar-left">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="avatar main-avatar">
+                                    <img src="/assets/default/svgs/avatar-main.svg" alt="avatar-main">
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="chat-box left-top">
+                                    <div class="avatar">
+                                    <img src="/assets/default/svgs/avatar-right-top.svg" alt="avatar-right-top">
+                                    </div>
+                                    <div class="avatar active">
+                                    <img src="/assets/default/svgs/avatar-right.svg" alt="avatar-right">
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                             <div class="stats-card">
