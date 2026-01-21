@@ -3518,12 +3518,12 @@ html:has(.learn-test-start) {
 .prev-next-controls .tooltip-inner {
     background-color: #000;
     min-width: 140px;
-    position: relative;
-    left: 15px;
 }
 .prev-next-controls .bs-tooltip-auto[x-placement^="bottom"] .arrow:before, 
-.prev-next-controls .bs-tooltip-bottom .arrow:before {
+.prev-next-controls .bs-tooltip-bottom .arrow:before,
+.prev-next-controls .bs-tooltip-top .arrow:before {
     border-bottom-color: #000;
+    border-top-color: #000;
 }
 .report-options input[type="radio"] {
     position: absolute;
