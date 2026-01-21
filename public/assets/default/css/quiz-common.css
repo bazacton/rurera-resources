@@ -1407,7 +1407,7 @@ body mjx-container[display] {
     z-index: 1;
 }
 .quiz-questions-bar .bar-fill[style="width: 0%;"] {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .quiz-questions-bar-holder {width: calc(100% - 95px); display: inline-flex; vertical-align: middle; margin-right: -4px; align-items: center; position: relative; }
 .quiz-questions-bar-holder .value-lable {
