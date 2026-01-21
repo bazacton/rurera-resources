@@ -581,7 +581,7 @@ Left SideBar-menu End
 .question-result-layout .lms-radio-btn-group {
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     padding-left: 0;
     display: inline-flex;
     flex-wrap: wrap;
