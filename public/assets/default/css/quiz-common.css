@@ -349,7 +349,6 @@ input.droppable-field {
 .active-option label,
 .form-field label:hover,
 .form-field input[type="checkbox"]:checked ~ label {
-    background-color: #8fc963;
     color: #fff;
     border-color: #72af45;
 }
