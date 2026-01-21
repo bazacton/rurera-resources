@@ -446,16 +446,17 @@ input.droppable-field {
 .quiz-area-page .question-explaination {
     background-color: #fff;
     padding: 0;
-    border: 1px solid #ddd;
+    border: 0;
     overflow: hidden;
     margin: 15px 0 30px;
+    border-radius: 0;
 }
 .explaination-btn {
-    background-color: #f9fafb;
+    background-color: inherit;
     border: 0;
     width: 100%;
     text-align: left;
-    padding: 10px 15px;
+    padding: 0 0 10px 20px;
     position: relative;
 }
 .explaination-btn h5 {
@@ -463,7 +464,7 @@ input.droppable-field {
 }
 .question-solution {
     border-top: 1px solid #ddd;
-    padding: 15px 15px;
+    padding: 10px 0 0;
 }
 #explaination h5 {
     display: none;
@@ -471,22 +472,14 @@ input.droppable-field {
 .explaination-btn:after {
     content: "";
     position: absolute;
-    right: 15px;
+    left: 0;
     top: 50%;
-    height: 10px;
+    height: 2px;
     width: 10px;
-    margin-top: -2px;
+    margin-top: -5px;
     border: 2px solid #777;
-    transform: rotate(45deg);
     border-bottom: 0;
     border-right: 0;
-}
-.explaination-btn.collapsed:after {
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 2px solid #777;
-    border-right: 2px solid #777;
-    margin-top: -8px;
 }
 .math-equation br {display: none;}
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
@@ -1230,7 +1223,7 @@ body mjx-container[display] {
 .question_hint {font-style: italic; color: #999; display: block; line-height: 24px; margin-top: 10px;}
 .show-notifications {display: inline-block; width: 100%; margin: 0 0 25px;}
 .show-notifications .question-status-wrong {color: #db3a3a;}
-.show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
+.show-notifications .question-status-correct {color: #155724;}
 .show-notifications span[class*="question-status-"] {display: block;}
 .correct-answers-block {margin: 10px 0 15px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px;}
 .correct-answers-block li {display: inline-block; line-height: normal; background-color: #e3ebfc; color: var(--blue); padding: 4px 10px; border-radius: 3px;}
