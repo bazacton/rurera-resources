@@ -72,7 +72,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 <h2 class="font-30 font-weight-bold">Characteristics of living organisms</h2>
                                 <p class="font-16 text-dark-charcoal pt-5 text-gray">Earn Coins by answering questions and completing</p>
                             </div>
-                            <div class="learn-chats row mb-25">
+                            <div class="learn-chats mb-25">
                                 <div class="start-image-box">
                                     <img src="/assets/default/img/start-quiz-img.png" height="227" width="502" alt="start-quiz-img">
                                 </div>
