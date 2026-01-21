@@ -1400,6 +1400,8 @@ body mjx-container[display] {
     background-color: #8fc963;
     padding: 2px 8px 4px;
     border-radius: 3px;
+    min-height: 40px;
+    text-align: center;
 }
 .quiz-questions-bar-holder .value-lable[style="left:0%"] {
     margin-left: 0;
