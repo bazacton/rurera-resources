@@ -600,7 +600,7 @@ Left SideBar-menu End
     min-width: auto;
     list-style: none;
     width: auto;
-    margin: 0 0 0 5px;
+    margin: 0 8px 0 0;
 }
 .question-result-layout .lms-radio-lists .list-title {
     margin-bottom: 0;
