@@ -349,7 +349,7 @@ input.droppable-field {
 .active-option label,
 .form-field label:hover,
 .form-field input[type="checkbox"]:checked ~ label {
-    color: #fff;
+    color: #8fc963;
     border-color: #72af45;
 }
 /* --- END: Multi Response List --- */
