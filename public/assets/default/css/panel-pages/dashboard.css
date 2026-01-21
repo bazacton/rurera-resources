@@ -620,6 +620,7 @@ Left SideBar-menu End
 }
 .question-result-layout .lms-radio-btn-group .lms-question-label.correct {
     color: #70c17c;
+    border-bottom: 0;
 }
 .lms-user-answer-block:has(.lms-question-label.correct) .list-title {
     color: #70c17c;
