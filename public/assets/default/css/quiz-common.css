@@ -2308,6 +2308,7 @@ body.quiz-area-page {
     scrollbar-width: none;
     -ms-overflow-style: none;
     width: 100%;
+    padding-top: 25px;
 }
 .quiz-area-page .left-content {
     width: 100%;
