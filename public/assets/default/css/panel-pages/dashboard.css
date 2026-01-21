@@ -566,8 +566,8 @@ Left SideBar-menu End
     right: 15px;
     top: 15px;
 }
-.question-result-layout.question-status-correct:before {content: "\2713"; background-color: #70c17c;}
-.question-result-layout.question-status-incorrect:before {content: "\00D7"; color: #ff4f4f;}
+/* .question-result-layout.question-status-correct:before {content: "\2713"; background-color: #70c17c;}
+.question-result-layout.question-status-incorrect:before {content: "\00D7"; color: #ff4f4f;} */
 .question-result-layout.question-status-correct {border-color: #70c17c;}
 .question-result-layout.question-status-incorrect {border-color: #ff4f4f;}
 .question-result-layout .rureraform-element:hover {outline: none !important;}
@@ -590,6 +590,9 @@ Left SideBar-menu End
     font-size: 22px;
     line-height: 18px;
     vertical-align: middle;
+}
+.question-status-incorrect i {
+    color: #ff4f4f;
 }
 .question-result-layout .lms-radio-btn-group {
     align-items: flex-start;
