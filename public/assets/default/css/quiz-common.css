@@ -3092,6 +3092,7 @@ body.quiz-area-page:has(.learn-test-start) {
         align-items: center;
         justify-content: flex-start;
         text-align: left;
+        margin-bottom: 30px;
     }
 
     .static-text {
