@@ -234,7 +234,7 @@ $rand_id = rand(99,9999);
                                 <div class="lms-radio-lists">
                                     <div class="lms-user-answer-block">
                                         <span class="list-title">Correct answer:</span>
-                                        <ul class="lms-radio-btn-group">
+                                        <ul class="lms-radio-btn-group font-14">
                                             <li><label class="lms-question-label" for="radio2"><span>Plants using sunlight,</span></label></li>
                                             <li><label class="lms-question-label" for="radio2"><span>Humans eating food</span></label></li>
                                         </ul>
@@ -242,7 +242,7 @@ $rand_id = rand(99,9999);
                                     
                                     <div class="lms-user-answer-block">
                                         <span class="list-title">Jon Doe1 answered:</span>
-                                        <ul class="lms-radio-btn-group">
+                                        <ul class="lms-radio-btn-group font-14">
                                             <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
                                             <li><label class="lms-question-label wrong" for="radio2"><span>Cars using petrol</span></label></li>
                                         </ul>
