@@ -48,7 +48,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                             </span>
                         </div>
                     </div>
-                    <div class="quiz-time-bar mb-0 pt-0 mt-0">
+                    <div class="quiz-time-bar">
                         <div class="timer-wrap">
                             <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
 
