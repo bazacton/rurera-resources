@@ -838,7 +838,7 @@ function quizPageCallback() {
 
         $(this).tooltip({
             html: true,
-            container: $(this).closest('.prev-next-controls'),
+            container: $(this).closest('.questions-data-block'),
             trigger: 'hover'
         });
 
