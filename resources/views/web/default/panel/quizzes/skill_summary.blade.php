@@ -224,6 +224,10 @@ $rand_id = rand(99,9999);
                 </div>
                 <div class="question-result-layout-holder">
                     <div class="question-result-layout question-status-incorrect">
+                        <div class="status-badge">
+                            <i>&#x00D7;</i>
+                            <span class="time-text">7.2s</span>
+                        </div>
                         <div class="rureraform-col rureraform-col-12">
                             <div class="question-label question_label">
                                 <span>1. How do living organisms obtain and use energy?</span>
