@@ -590,7 +590,7 @@ Left SideBar-menu End
 }
 .question-result-layout .status-badge i {
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.4rem;
     line-height: 18px;
     vertical-align: middle;
 }
@@ -598,7 +598,7 @@ Left SideBar-menu End
     color: #ff4f4f;
 }
 .question-result-layout.question-status-correct .status-badge i {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #70c17c;
 }
 .question-result-layout .lms-radio-btn-group {
