@@ -1475,7 +1475,7 @@ Lms Responsive Style Start
     body .learning-page .learning-content .learning-content-box {width: 100%;}
     .learn-test-start .rur-setting-row {flex: 0 0 100%; max-width: 100%;}
     .animated-text-wrapper {
-        width: 230px;
+        max-width: 230px;
     }
     body .question-layout .input-group-prepend ~ input[type="text"] {width: 100%; padding: 0 55px;}
     body .question-layout .input-group-prepend,
