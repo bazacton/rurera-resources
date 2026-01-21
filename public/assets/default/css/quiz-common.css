@@ -3008,6 +3008,7 @@ body.quiz-area-page:has(.learn-test-start) {
 .start-image-box img {
     max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 .stats-card {
     display: flex;
