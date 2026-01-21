@@ -226,7 +226,7 @@ $rand_id = rand(99,9999);
                     <div class="question-result-layout question-status-incorrect">
                         <div class="rureraform-col rureraform-col-12">
                             <div class="question-label question_label">
-                                <span>How do living organisms obtain and use energy?</span>
+                                <span>1. How do living organisms obtain and use energy?</span>
                             </div>
 	                    </div>
                         <div class="question-area">
