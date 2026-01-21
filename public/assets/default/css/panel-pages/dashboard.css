@@ -595,7 +595,25 @@ Left SideBar-menu End
     width: auto;
     margin: 0;
 }
-.question-result-layout .lms-radio-lists .list-title {margin-bottom: 10px; padding-top: 10px; color: #333; display: block; font-weight: 600;}
+.question-result-layout .lms-radio-lists .list-title {
+    margin-bottom: 0;
+    padding-top: 0;
+    color: #333;
+    display: inline-block;
+    font-weight: 600;
+}
+.lms-user-answer-block {
+    margin: 0 0 10px;
+}
+.lms-user-answer-block:last-child {
+    margin-bottom: 0;
+}
+.question-result-layout .question_label {
+    margin: 0 0 10px;
+}
+.lms-user-answer-block:has(.lms-question-label.wrong) .list-title {
+    color: #ff4f4f;
+}
 .question-result-layout .selected-text-field {display: inline-block;}
 .question-result-layout .questions-controls {float: inline-end;}
 .question-result-layout hr {display: none;}
