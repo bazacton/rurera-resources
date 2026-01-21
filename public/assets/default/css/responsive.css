@@ -1704,6 +1704,9 @@ Lms Responsive Style Start
         right: 0;
         top: 3px;
     }
+    .quiz-area-page .left-content {
+        padding-bottom: 160px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
