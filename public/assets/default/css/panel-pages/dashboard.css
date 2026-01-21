@@ -636,6 +636,7 @@ Left SideBar-menu End
 }
 .question-result-layout .question_label {
     margin: 0 0 10px;
+    padding-right: 38px;
 }
 .lms-user-answer-block:has(.lms-question-label.wrong) .list-title {
     color: #ff4f4f;
