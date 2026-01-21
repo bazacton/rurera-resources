@@ -205,12 +205,13 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                         </div>
                     </div>
                 </div>
-
-                @if( !empty( $questions_layout ))
-                    @foreach( $questions_layout as $question_layout_template)
-                        {!! $question_layout_template !!}
-                    @endforeach
-                @endif
+                <div class="question-result-layout-holder">
+                    @if( !empty( $questions_layout ))
+                        @foreach( $questions_layout as $question_layout_template)
+                            {!! $question_layout_template !!}
+                        @endforeach
+                    @endif
+                </div>
             </div>
 
             <div class="question-area-temp hide"></div>
