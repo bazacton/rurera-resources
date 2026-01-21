@@ -2308,10 +2308,11 @@ body.quiz-area-page {
     scrollbar-width: none;
     -ms-overflow-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: unset;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    flex-direction: column;
 }
 .quiz-area-page .left-content {
     width: 100%;
