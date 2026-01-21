@@ -224,7 +224,7 @@ $rand_id = rand(99,9999);
                 </div>
                 <div class="question-result-layout-holder">
                     <div class="question-result-layout question-status-incorrect">
-                        <div class="status-badge">
+                        <div class="status-badge font-14">
                             <i>&#x00D7;</i>
                             <span class="time-text">7.2s</span>
                         </div>
