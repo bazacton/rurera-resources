@@ -2999,42 +2999,11 @@ body.quiz-area-page:has(.learn-test-start) {
     background-color: var(--primary);
     color: #fff;
 }
-.learn-chats .avatar {
-    height: 80px;
-    width: 80px;
-    background-color: aliceblue;
-    border-radius: 100%;
-}
-.learn-chats .avatar img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-}
+
 .chat-box {
     display: flex;
     flex-direction: column;
     gap: 0;
-}
-.chat-box.left-bottom .avatar:last-child {
-    margin-left: auto;
-}
-.avatar.active {
-    height: 110px;
-    width: 110px;
-}
-.chat-box.left-top .avatar:last-child {
-    margin-left: auto;
-}
-.learn-chats .avatar.main-avatar {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-}
-.learn-chats .avatar.main-avatar img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
 }
 .stats-card {
     display: flex;
