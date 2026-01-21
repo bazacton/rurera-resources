@@ -3005,6 +3005,10 @@ body.quiz-area-page:has(.learn-test-start) {
     flex-direction: column;
     gap: 0;
 }
+.start-image-box {
+    text-align: center;
+    padding: 0 15px;
+}
 .start-image-box img {
     max-width: 100%;
     height: auto;
