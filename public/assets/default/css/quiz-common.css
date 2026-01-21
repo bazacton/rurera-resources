@@ -1386,6 +1386,10 @@ body mjx-container[display] {
 .quiz-questions-bar .bar-fill[style="width: 0%;"] {
     margin-left: -5px;
 }
+.quiz-questions-bar-holder .bar-fill[style="width: 0%;"]:after {
+    left: 0;
+    right: auto;
+}
 .quiz-questions-bar-holder {width: calc(100% - 95px); display: inline-flex; vertical-align: middle; margin-right: -4px; align-items: center; position: relative; }
 .quiz-questions-bar-holder .value-lable {
     position: absolute;
