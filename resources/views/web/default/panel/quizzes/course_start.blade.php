@@ -604,7 +604,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
             $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5>Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
+            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
         }
 
         if(return_data.incorrect_flag == false && correct_sound == true && sound_check == true){
@@ -620,7 +620,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             earned_coins = parseInt(earned_coins)+1;
             $(".total-earned-coins").html(earned_coins);
             $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5>Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
+            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
 
         }
         if( return_data.is_complete == true) {
