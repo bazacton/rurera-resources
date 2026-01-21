@@ -597,6 +597,10 @@ Left SideBar-menu End
 .question-status-incorrect i {
     color: #ff4f4f;
 }
+.question-result-layout.question-status-correct .status-badge i {
+    font-size: 14px;
+    color: #70c17c;
+}
 .question-result-layout .lms-radio-btn-group {
     align-items: flex-start;
     justify-content: flex-start;
