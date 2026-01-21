@@ -2997,19 +2997,42 @@ body.quiz-area-page:has(.learn-test-start) {
 html:has(.learn-test-start) {
     overflow-y: auto;
 }
+.learn-chats .avatar {
+    height: 80px;
+    width: 80px;
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+.learn-chats .avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
 .chat-box {
     display: flex;
     flex-direction: column;
     gap: 0;
 }
-.start-image-box {
-    text-align: center;
-    padding: 0 15px;
+.chat-box.left-bottom .avatar:last-child {
+    margin-left: auto;
 }
-.start-image-box img {
-    max-width: 100%;
+.avatar.active {
+    height: 110px;
+    width: 110px;
+}
+.chat-box.left-top .avatar:last-child {
+    margin-left: auto;
+}
+.learn-chats .avatar.main-avatar {
     height: auto;
-    object-fit: contain;
+    width: auto;
+    max-width: 100%;
+}
+.learn-chats .avatar.main-avatar img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 .stats-card {
     display: flex;
