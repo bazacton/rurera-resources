@@ -115,7 +115,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     </div>
                 </div>
             </section> -->
-            <div class="justify-content-center">
+            <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
 
