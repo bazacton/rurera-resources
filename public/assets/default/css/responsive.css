@@ -1690,6 +1690,16 @@ Lms Responsive Style Start
     #scroll-controls {
         bottom: calc(115px + env(safe-area-inset-bottom));
     }
+    .quiz-status-bar {
+        flex-wrap: wrap;
+    }
+    .questions-bar-box {
+        width: calc(100% - 30px);
+    }
+    .quiz-status-bar .quiz-time-bar {
+        width: 100%;
+        margin: 25px 0 0 0;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
