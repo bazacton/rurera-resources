@@ -448,7 +448,7 @@ input.droppable-field {
     padding: 0;
     border: 1px solid #ddd;
     overflow: hidden;
-    margin: 0 0 30px;
+    margin: 15px 0 30px;
 }
 .explaination-btn {
     background-color: #f9fafb;
