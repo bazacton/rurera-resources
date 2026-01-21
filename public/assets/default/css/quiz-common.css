@@ -1438,7 +1438,7 @@ body mjx-container[display] {
     position: absolute;
     content: attr(data-title);
     height: 26px;
-    background-color: #8fc963;
+    background-color: #000;
     color: white;
     border-radius: 3px;
     top: -25px;
@@ -1470,7 +1470,7 @@ body mjx-container[display] {
     margin-top: 0;
     height: 8px;
     width: 8px;
-    background-color: #8fc963;
+    background-color: #000;
     right: 23px;
     transform: rotate(45deg);
     margin-right: 0;
