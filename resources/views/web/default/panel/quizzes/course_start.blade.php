@@ -75,8 +75,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <div class="questions-bar-box">
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
-                            <span class="value-lable progress-bar-counter" data-title="Target" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                            <span class="bar-fill progress-bar-fill" data-title="Smart score" style="width: 0%;"></span>
+                            <span class="value-lable progress-bar-counter" data-title="Target" style="left:{{isset($smart_score) ? $smart_score : 0}}%"><span class="smart-score-value">{{isset($smart_score) ? $smart_score : 0}}</span></span>
+                            <span class="bar-fill progress-bar-fill" data-title="Smart score" style="width: {{isset($smart_score) ? $smart_score : 0}}%;"></span>
                         </div>
                         <span class="coin-numbers">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
@@ -86,13 +86,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 </div>
                 <div class="quiz-time-bar mb-0 pt-0 mt-0">
                     <div class="timer-wrap">
-                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-
-                        <div class="time-box" id="hh">00</div>
-                        <span class="colon">:</span>
-                        <div class="time-box" id="mm">05</div>
-                        <span class="colon">:</span>
-                        <div class="time-box" id="ss">15</div>
+                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"> Time left:</span>
+                        <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
+                            <div class="time-box" id="hh">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="mm">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="ss">00</div>
+                        </div>
                     </div>
                     <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
                         <img src="/assets/default/svgs/setting.svg" alt="setting">
@@ -491,6 +492,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         var active_question_id = $(".question-area-block").attr('data-active_question_id');
+
+        if(active_question_id > 0){
+            $('.rurera-question-block').removeClass('active');
+            $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
+
+        }
+
         $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
         Quizintervals = setInterval(function () {
@@ -581,6 +589,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         if(return_data.incorrect_flag == true && incorrect_sound == true && sound_check == true){
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+        }
+
+
+        if(return_data.smart_score > 0){
+            $('.progress-bar-counter').css('left', return_data.smart_score+'%');
+            $('.progress-bar-fill').css('width', return_data.smart_score+'%');
+            $('.smart-score-value').html(return_data.smart_score);
         }
 
         if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1 && practice_with_review_check == true){
@@ -827,5 +842,12 @@ function quizPageCallback() {
         }, 1500);
     });
 }
+
+$(document).on("change, input", ".editor-field", function (e) {
+    $(".rurera-validation-error").remove();
+    var thisBlock = $(".rurera-question-block.active");
+    var thisForm = thisBlock.find('form');
+    returnType = rurera_validation_process(thisForm, 'quiz_page');
+});
 
 </script>
