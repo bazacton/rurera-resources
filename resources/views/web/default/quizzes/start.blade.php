@@ -701,7 +701,7 @@ function quizPageCallback() {
 
         $(this).tooltip({
             html: true,
-            container: $(this).closest('.quiz-time-bar'),
+            container: $(this).closest('.questions-data-block'),
             trigger: 'hover'
         });
 
