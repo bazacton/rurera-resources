@@ -68,11 +68,11 @@ $started_already = isset($started_already)? $started_already : false;
 
                     <div class="learning-content-box learning-start-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
                         <div class="learn-test-start mx-auto pt-0">
-                            <div class="learn-test-title mb-40">
+                            <div class="learn-test-title mb-30">
                                 <h2 class="font-30 font-weight-bold">Characteristics of living organisms</h2>
                                 <p class="font-16 text-dark-charcoal pt-5 text-gray">Earn Coins by answering questions and completing</p>
                             </div>
-                            <div class="learn-chats row mb-35">
+                            <div class="learn-chats row mb-25">
                                 <div class="start-image-box">
                                     <img src="/assets/default/img/start-quiz-img.png" height="227" width="502" alt="start-quiz-img">
                                 </div>
