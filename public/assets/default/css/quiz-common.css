@@ -2332,7 +2332,6 @@ Question Result Page Style Start
 .question-result-layout .alphabet-list-style .correct.form-field:before {border-color: rgba(0,0,0,0.2);}
 .question-result-layout .alphabet-list-style .wrong.form-field:before {background-color: inherit;border-color: #c23131;}
 .question-result-layout .rureraform-element {outline: none !important;}
-.question-result-layout .rureraform-col-12 {padding: 0 0 10px;}
 /****************************************** 
 Question Result Page Style End
 ******************************************/
