@@ -556,7 +556,13 @@ Lms Responsive Style Start
     .notification-card button {position: absolute; right: 15px; top: 50%; transform: translateY(-50%);}
     .home-banner #change {white-space: inherit;}
     .learning-page .learning-content {height: auto;}
-    .question-layout-block .prev-next-controls {width: 100%; left: 0; padding: 0 15px; transform: none; justify-content: flex-start;}
+    .question-layout-block .prev-next-controls {
+        width: 100%;
+        left: 0;
+        padding: 10px 15px;
+        transform: none;
+        gap: 10px 0;
+    }
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
     .artboard-box img {max-width: 100%;}
     .learning-journey-levels .graph-background {width: 100%; overflow: hidden;}
