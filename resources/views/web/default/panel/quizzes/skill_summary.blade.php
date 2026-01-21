@@ -58,6 +58,15 @@ $rand_id = rand(99,9999);
                 <div class="chart-summary-fields result-layout-summary">
                     <div class="sats-summary">
                         <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="sats-summary-icon" style="background-color: #fe3c30;">
+                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="">
+                                </div>
+                                <div class="summary-text">
+                                    <label>Current Smartscore</label>
+                                    <div class="score">{{$smart_score}}</div>
+                                </div>
+                            </div>
                             <div class="col-12 col-md-4 col-lg-3 bitcoin-box">
                                 <div class="sats-summary-icon" style="background-color: #8cc811;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;">
@@ -83,7 +92,7 @@ $rand_id = rand(99,9999);
                                     <img src="/assets/default/svgs/question-circle-white.svg" alt="">
                                 </div>
                                 <div class="summary-text">
-                                    <label>Incorrect / Not Attempted</label>
+                                    <label>Missed Questions</label>
                                     <div class="score">{{$incorrect_questions}}</div>
                                 </div>
                             </div>
