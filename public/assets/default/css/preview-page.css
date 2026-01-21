@@ -59,7 +59,7 @@
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
-    padding: 0 15px;
+    padding: 0;
 }
 .question-right-side.hidden,
 .preview-question-area.centered .question-right-side {
@@ -75,7 +75,7 @@
 }
 .question-right-side .toggle-btn {
     position: absolute;
-    left: -18px;
+    left: -34px;
     top: 50%;
     transform: translateY(-50%);
     width: 35px;
