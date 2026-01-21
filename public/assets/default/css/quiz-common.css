@@ -2307,10 +2307,6 @@ body.quiz-area-page {
     scrollbar-color: transparent transparent;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    display: flex;
-    justify-content: unset;
-    align-items: flex-start;
-    flex-wrap: wrap;
     width: 100%;
 }
 .quiz-area-page .left-content {
