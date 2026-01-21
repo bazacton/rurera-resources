@@ -2320,7 +2320,7 @@ Inline-Style From Php Files Style Start
 body.quiz-area-page {
     overflow: hidden;
 }
-.quiz-area-page .question-layout-block {
+.quiz-area-page .lms-quiz-section .questions-data-block {
     overflow: hidden;
     overflow-y: auto;
     height: calc(100vh - 130px);
