@@ -211,7 +211,7 @@ $started_already = isset($started_already)? $started_already : false;
                                     <div class="animated-text"><span></span></div>
                                 </div>
                             </div>
-                            <div class="btn-holder start-practice-btn rurera-hide">
+                            <div class="btn-holder start-practice-btn rurera-hide mb-30">
 
 
                                 <button data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
