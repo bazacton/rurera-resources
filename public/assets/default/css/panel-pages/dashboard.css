@@ -585,6 +585,9 @@ Left SideBar-menu End
     align-items: center;
     gap: 5px;
 }
+.status-badge .time-text {
+    color: #9ca3af;
+}
 .question-result-layout .status-badge i {
     font-style: normal;
     font-size: 22px;
