@@ -605,7 +605,7 @@ function getButtons() {
 }
 
 function getContainer() {
-    return document.querySelector('.quiz-area-page .question-layout-block');
+    return document.querySelector('.quiz-area-page .lms-quiz-section .questions-data-block');
 }
 
 function isScrollable(el) {
