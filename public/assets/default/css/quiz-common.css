@@ -2999,7 +2999,9 @@ body.quiz-area-page:has(.learn-test-start) {
     background-color: var(--primary);
     color: #fff;
 }
-
+html:has(.learn-test-start) {
+    overflow-y: auto;
+}
 .chat-box {
     display: flex;
     flex-direction: column;
