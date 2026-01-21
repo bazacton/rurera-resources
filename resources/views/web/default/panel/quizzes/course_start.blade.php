@@ -187,7 +187,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             </div>
                                         </div>
                                         <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-md-auto" data-target="#review_submit">
+                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-md-0" data-target="#review_submit">
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
