@@ -170,7 +170,7 @@ $rand_id = rand(99,9999);
                         </div>
                         </div>
 
-                        <div class="chart-container">
+                        <div class="chart-container font-14 font-weight-500">
 
                         <!-- Topics -->
                         <div class="chart-row">
