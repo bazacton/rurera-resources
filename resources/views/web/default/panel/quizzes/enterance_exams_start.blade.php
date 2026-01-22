@@ -716,15 +716,15 @@ $(document).ready(function () {
   });
 </script>
 <script>
-var btnDown = document.getElementById('btn-top');     // Scroll DOWN
-var btnUp = document.getElementById('btn-bottom');   // Scroll UP
+var btnDown = document.getElementById('btn-top');
+var btnUp = document.getElementById('btn-bottom');
 var container = null;
 
 /* Get active question container */
 function getActiveContainer() {
-    var activeSection = document.querySelector('.rurera-question-block.active');
+    var activeSection = document.querySelector('.learning-content:has(.rurera-question-block.active)');
     return activeSection
-        ? activeSection.querySelector('.preview-question-content .left-content')
+        ? activeSection.querySelector('.questions-data-block')
         : null;
 }
 
