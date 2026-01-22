@@ -432,9 +432,9 @@ var container = null;
 
 /* Get active question container */
 function getActiveContainer() {
-    var activeSection = document.querySelector('.rurera-question-block.active');
+    var activeSection = document.querySelector('.preview-question-area:has(.rurera-question-block.active)');
     return activeSection
-        ? activeSection.querySelector('.preview-question-area .left-content')
+        ? activeSection.querySelector('.questions-data-block')
         : null;
 }
 
