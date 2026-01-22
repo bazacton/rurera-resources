@@ -411,7 +411,7 @@ $rand_id = rand(99,9999);
                                     </div>
                                     <!-- SESSION 2 -->
                                     <div class="card">
-                                        <div class="card-header mb-0 font-14"
+                                        <div class="card-header collapsed mb-0 font-14"
                                             role="button"
                                             data-toggle="collapse"
                                             data-target="#report_23_01_2026"
@@ -431,7 +431,7 @@ $rand_id = rand(99,9999);
                                             </span>
                                         </div>
 
-                                        <div id="report_23_01_2026" class="collapse show" data-parent="#analyticsAccordion">
+                                        <div id="report_23_01_2026" class="collapse" data-parent="#analyticsAccordion">
                                             <div class="card-body">
                                                 <div class="question-result-layout-holder">
                                                     <div class="question-result-layout question-status-incorrect mb-10">
