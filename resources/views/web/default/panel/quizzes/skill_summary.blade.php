@@ -602,6 +602,7 @@ $rand_id = rand(99,9999);
                     </button>
                 </div>
             </div>
+        </div>
     </section>
 </div>
 
