@@ -30,7 +30,7 @@
             <link rel="stylesheet" href="{{ asset($cssFile) }}">
         @endforeach
     @endif
-	
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('styles_top')
     <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_no}}">
     @stack('scripts_top')
