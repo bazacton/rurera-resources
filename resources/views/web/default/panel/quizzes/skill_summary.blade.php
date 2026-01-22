@@ -36,7 +36,7 @@ $rand_id = rand(99,9999);
 
 
 <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 mt-10">
+        <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="question-step quiz-complete" style="display:none">
                 <div class="question-layout-block">
                     <div class="left-content has-bg">
