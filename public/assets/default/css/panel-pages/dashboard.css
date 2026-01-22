@@ -2055,24 +2055,8 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     }
 
 /* Questions Result Layout Accordion Style Start */
-.analytics-header .header-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 1.25rem .75rem;
-}
-.analytics-header .header-text > span {
-    width: 33.333%;
-    text-align: right;
-}
-.analytics-header .header-text > span:first-child {
-    text-align: left;
-}
-.analytics-header .header-text > span:nth-child(2) {
-    text-align: left;
-}
 #analyticsAccordion .card .card-header {
+    background-color: inherit;
     border-radius: 0;
     border-bottom: 0;
     font-weight: 600;
