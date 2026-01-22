@@ -344,14 +344,39 @@ Lms Responsive Style Start
     .quiz-topbar .container-fluid > .row {gap: 15px;}
     body .panel-right-sidebar .navbar-toggler {position: relative; display: block; border: 0; padding: 0;}
     body .panel-right-sidebar .sidebar-logo {align-items: flex-start; position: relative; z-index: 1; display: inline-flex;}
-    body .sidebar-menu-holder.show {opacity: 1; visibility: visible; left: 0;}
+    body .sidebar-menu-holder.show {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition:
+        transform .4s cubic-bezier(.43, .83, .54, 1.02),
+        opacity .4s linear,
+        visibility 0s linear 0s;
+    }
     body .panel-sidebar .sidebar-menu-holder .navbar-toggler {border: 0;padding: 0; position: absolute; top: 50%;right: 15px;z-index: 1;margin-top: 0; display: block;}
     .panel-content .search-top-banner {padding: 25px !important;}
     .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 15px;}
     .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 15px;}
     body.panel-sidebar-open {overflow: hidden;}
     .sidebar-menu-top {padding: 15px 0 15px 15px; position: relative;}
-    body .sidebar-menu-holder {background-color: #fff; visibility: hidden; padding: 0; opacity: 0; position: fixed; top: 0; height: 100%; left: -150%; transition: left .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear; z-index: 2; width: 100%; display: block;}
+    body .sidebar-menu-holder {
+        background-color: #fff;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: block;
+    transform: translateX(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        transform .4s cubic-bezier(.43, .83, .54, 1.02),
+        opacity .4s linear,
+        visibility 0s linear .4s;
+    }
     body .sidebar-menu-holder .sidebar-logo {display: flex; display: none;}
     .results-revenue-card .text-box p br {display: none;}
     .learning-start {padding: 25px 20px 0;}
