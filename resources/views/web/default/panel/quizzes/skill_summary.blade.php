@@ -151,7 +151,7 @@ $rand_id = rand(99,9999);
                             </div>
                             <!-- Performance Chart -->
                             
-                            <div class="card chart-card mb-10">
+                            <div class="card chart-card mb-30">
                                 <div class="card-body p-4">
                                     <div class="chart-title font-16 mb-10 font-weight-bold">Performance by topic</div>
                                     <div class="chart-header mb-4 font-14">
@@ -218,6 +218,7 @@ $rand_id = rand(99,9999);
                             </div>
                             
                             <div class="activities-container">
+                                <h3 class="font-22 mb-15">Questions answered</h3>
                                 <!-- Accordion -->
                                 <div class="accordion" id="analyticsAccordion">
 
@@ -246,7 +247,7 @@ $rand_id = rand(99,9999);
                                         <div id="report_22_01_2026" class="collapse show" data-parent="#analyticsAccordion">
                                             <div class="card-body pb-20">
                                                 <div class="question-result-layout-holder">
-                                                    <h3 class="font-16 mb-10 font-weight-bold">Questions</h3>
+                                                    
                                                     <div class="question-result-layout question-status-incorrect mb-10">
                                                         <div class="status-badge font-14">
                                                             <i>&#x00D7;</i>
