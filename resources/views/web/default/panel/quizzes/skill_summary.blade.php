@@ -221,9 +221,9 @@ $rand_id = rand(99,9999);
                                 <!-- Accordion -->
                                 <div class="accordion" id="analyticsAccordion">
 
-                                    <!-- SESSION 1 -->
+                                    <!-- SESSION 2 -->
                                     <div class="card mb-30">
-                                        <div class="card-header mb-0 font-14"
+                                        <div class="card-header mb-0 font-14 border-top-0"
                                             role="button"
                                             data-toggle="collapse"
                                             data-target="#report_22_01_2026"
