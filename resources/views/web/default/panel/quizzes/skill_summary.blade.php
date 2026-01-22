@@ -222,7 +222,7 @@ $rand_id = rand(99,9999);
                                 <div class="accordion" id="analyticsAccordion">
 
                                     <!-- SESSION 1 -->
-                                    <div class="card">
+                                    <div class="card mb-30">
                                         <div class="card-header mb-0 font-14"
                                             role="button"
                                             data-toggle="collapse"
