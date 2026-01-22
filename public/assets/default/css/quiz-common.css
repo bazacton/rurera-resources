@@ -2322,7 +2322,8 @@ Inline-Style From Php Files Style Start
 body.quiz-area-page {
     overflow: hidden;
 }
-.quiz-area-page .lms-quiz-section .questions-data-block {
+.quiz-area-page .lms-quiz-section .questions-data-block,
+.lms-quiz-section .questions-data-block:has(.question-result-layout-holder) {
     overflow: hidden;
     overflow-y: auto;
     height: calc(100vh - 100px);
@@ -2333,6 +2334,9 @@ body.quiz-area-page {
     -ms-overflow-style: none;
     width: 100%;
     padding: 25px 15px 0;
+}
+.lms-quiz-section .questions-data-block:has(.question-result-layout-holder) {
+    padding-top: 0;
 }
 .quiz-area-page .left-content {
     width: 100%;
