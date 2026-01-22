@@ -267,13 +267,6 @@ $rand_id = rand(99,9999);
                                             <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
                                         </ul>
                                     </div>
-                                    <div class="lms-user-answer-block">
-                                        <span class="list-title">Jon Doe1 answered:</span>
-                                        <ul class="lms-radio-btn-group lms-user-answer-block font-14">
-                                            <li><label class="lms-question-label correct" for="radio2"><span>A cat running when scared,</span></label></li>
-                                            <li><label class="lms-question-label correct" for="radio2"><span>A sunflower turning to light</span></label></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
