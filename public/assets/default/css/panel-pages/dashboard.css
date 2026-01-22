@@ -2002,10 +2002,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     .row-label {
       width: 200px;
       padding-right: 16px;
-      font-size: 14px;
       color: var(--text-main);
-      font-weight: 500;
-      line-height: 1.3;
       flex-shrink: 0;
     }
 
