@@ -234,7 +234,7 @@ $rand_id = rand(99,9999);
 
                                             <span class="analytics-timespend float-right">
                                                 <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                                <span>Wed, 19 Nov 25 - 20 mints 20 → 50</span>
+                                                <span>Wed, 19 Nov 25 - 20 mints</span>
                                             </span>
 
                                             <span class="analytics-cions-earned float-right mr-10">
@@ -244,7 +244,7 @@ $rand_id = rand(99,9999);
                                         </div>
 
                                         <div id="report_22_01_2026" class="collapse show" data-parent="#analyticsAccordion">
-                                            <div class="card-body">
+                                            <div class="card-body pb-20">
                                                 <div class="question-result-layout-holder">
                                                     <div class="question-result-layout question-status-incorrect mb-10">
                                                         <div class="status-badge font-14">
@@ -420,7 +420,7 @@ $rand_id = rand(99,9999);
 
                                             <span class="analytics-timespend float-right">
                                                 <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                                <span>Mon, 13 Nov 25 - 20 mints 10 → 20</span>
+                                                <span>Mon, 13 Nov 25 - 20 mints</span>
                                             </span>
 
                                             <span class="analytics-cions-earned float-right mr-10">
