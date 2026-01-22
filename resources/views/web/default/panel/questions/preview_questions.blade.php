@@ -63,244 +63,241 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                         </button>
                     </div>
                 </div>
-                <div class="justify-content-center">
-                    <div class="col-lg-9 col-md-9 col-sm-12 mt-50 mx-auto preview-question-content px-0">
+                <div class="col-lg-9 col-md-9 col-sm-12 mt-50 mx-auto preview-question-content px-0">
+                    <div class="question-area-block" data-active_question_id="0" data-questions_layout="">
+                        @php $total_questions = 10; @endphp
+                        <div class="question-area dis-arrows1" data-total_questions="10">
+                            <div class="correct-appriciate" style="display:none"></div>
+                            <div class="question-inner-step-area">
+                                <div class="question-layout-block">
 
-                        <div class="question-area-block" data-active_question_id="0" data-questions_layout="">
-                            @php $total_questions = 10; @endphp
-                            <div class="question-area dis-arrows1" data-total_questions="10">
-                                <div class="correct-appriciate" style="display:none"></div>
-                                <div class="question-inner-step-area">
-                                    <div class="question-layout-block">
+                                        @php $is_active = ''; $counter = 0; @endphp
+                                        @if($questions->count() > 0)
+                                            @foreach($questions as $questionObj)
+                                                @php $question_layout = $QuestionsAttemptController->get_question_layout($questionObj); $counter++;@endphp
 
-                                            @php $is_active = ''; $counter = 0; @endphp
-                                            @if($questions->count() > 0)
-                                                @foreach($questions as $questionObj)
-                                                    @php $question_layout = $QuestionsAttemptController->get_question_layout($questionObj); $counter++;@endphp
+                                                @php $questionLogs = QuestionLogs::where('question_id', $questionObj->id)->orderBy('id', 'desc')->with('user')
+                                                                                ->get();
+                                                @endphp
+                                                <div class="rurera-question-block {{($counter == 1)? 'active' : ''}} question-step question-step-{{ $questionObj->id }}" data-elapsed="0"
+                                                data-qattempt="0"
+                                                data-start_time="0" data-qresult="0"
+                                                data-quiz_result_id="0">
+                                                    <div class="left-content has-bg">
+                                                        <!-- <div class="quiz-status-bar">
+                                                            <div class="quiz-questions-bar-holder">
+                                                                <div class="quiz-questions-bar">
+                                                                    <span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
+                                                                    <span class="bar-fill" title="80%" style="width: 80%;"></span>
+                                                                </div>
+                                                                <span class="coin-numbers">
+                                                                    <img src="/assets/default/img/quests-coin.png" alt="">
+                                                                    <span class="total-earned-coins">0</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="quiz-corrects-incorrects">
+                                                                <span class="quiz-corrects">0</span>
+                                                                <span class="quiz-incorrects">0</span>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="question-counts">
+                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                                            <span>Question 8 of 20</span>
+                                                        </div>
+                                                    <div class="question-layout row">
+                                                        {!! $question_layout !!}
+                                                    </div>
 
-                                                    @php $questionLogs = QuestionLogs::where('question_id', $questionObj->id)->orderBy('id', 'desc')->with('user')
-                                                                                    ->get();
-                                                    @endphp
-                                                    <div class="rurera-question-block {{($counter == 1)? 'active' : ''}} question-step question-step-{{ $questionObj->id }}" data-elapsed="0"
-                                                    data-qattempt="0"
-                                                    data-start_time="0" data-qresult="0"
-                                                    data-quiz_result_id="0">
-                                                        <div class="left-content has-bg">
-                                                            <!-- <div class="quiz-status-bar">
-                                                                <div class="quiz-questions-bar-holder">
-                                                                    <div class="quiz-questions-bar">
-                                                                        <span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
-                                                                        <span class="bar-fill" title="80%" style="width: 80%;"></span>
-                                                                    </div>
-                                                                    <span class="coin-numbers">
-                                                                        <img src="/assets/default/img/quests-coin.png" alt="">
-                                                                        <span class="total-earned-coins">0</span>
+                                                @if(ReviewPermission(auth()->user()->id))
+                                                    <div class="question-explaination">
+                                                        <h5 class="mb-15 font-16">Explanation:</h5>
+                                                        {!! $questionObj->question_solve !!}
+                                                    </div>
+
+                                                    <br>
+                                                    <a href="javascript:;" id="approve-btn" class="question-approve-btn btn btn-primary rurera-hide" data-toggle="modal" data-target="#approve_modal_{{$questionObj->id}}">
+                                                        Take Action
+                                                    </a>
+                                                @endif
+
+                                                    </div>
+                                                    <div class="question-right-side mt-0">
+                                                        <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                                <polyline points="15 18 9 12 15 6"></polyline>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="question-right-inner">
+                                                            <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                                                <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
+                                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                                </a>
+                                                                <span class="question-counts">{{$counter}} / {{$questions->count()}}</span>
+                                                                <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
+                                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                                </a>
+                                                            </div>
+                                                            <div class="question-detail-holder">
+                                                                <div class="question-right-header">
+                                                                    <p>Question </p>
+                                                                    <span class="questions-total-holder d-block">
+                                                                        <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
+
+                                                                        @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
+
+                                                                            $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
+                                                                        @endphp
+                                                                        <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
                                                                     </span>
                                                                 </div>
-                                                                <div class="quiz-corrects-incorrects">
-                                                                    <span class="quiz-corrects">0</span>
-                                                                    <span class="quiz-incorrects">0</span>
-                                                                </div>
-                                                            </div> -->
-                                                            <div class="question-counts">
-                                                                <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                                                                <span>Question 8 of 20</span>
+
+                                                                <ul class="question-details">
+                                                                    <li>Category: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</span></li>
+                                                                    <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
+                                                                    <li>Chapter: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</span></li>
+                                                                    <li>Part Item: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</span></li>
+                                                                    <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
+                                                                </ul>
                                                             </div>
-                                                        <div class="question-layout row">
-                                                            {!! $question_layout !!}
-                                                        </div>
 
-                                                    @if(ReviewPermission(auth()->user()->id))
-                                                        <div class="question-explaination">
-                                                            <h5 class="mb-15 font-16">Explanation:</h5>
-                                                            {!! $questionObj->question_solve !!}
-                                                        </div>
-
-                                                        <br>
-                                                        <a href="javascript:;" id="approve-btn" class="question-approve-btn btn btn-primary rurera-hide" data-toggle="modal" data-target="#approve_modal_{{$questionObj->id}}">
-                                                            Take Action
-                                                        </a>
-                                                    @endif
-
-                                                        </div>
-                                                        <div class="question-right-side mt-0">
-                                                            <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                    <polyline points="15 18 9 12 15 6"></polyline>
-                                                                </svg>
-                                                            </button>
-                                                            <div class="question-right-inner">
-                                                                <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                                                    <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
-                                                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                                    </a>
-                                                                    <span class="question-counts">{{$counter}} / {{$questions->count()}}</span>
-                                                                    <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
-                                                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                                    </a>
+                                                            @if(auth()->check() && (auth()->user()->isAdminRole() || auth()->user()->id == 1794))
+                                                            <div class="review-question-holder">
+                                                                <div class="question-right-header">
+                                                                    <h3>Question Review</h3>
                                                                 </div>
-                                                                <div class="question-detail-holder">
-                                                                    <div class="question-right-header">
-                                                                        <p>Question </p>
-                                                                        <span class="questions-total-holder d-block">
-                                                                            <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
+                                                                <form action="javascript:;" method="POST" class="row approve_question_form">
+                                                                    <input type="hidden" name="question_id" value="{{$questionObj->id}}">
+                                                                    <div class="col-12 col-lg-12">
+                                                                        <div class="row">
+                                                                            <div class="col-12 col-md-12">
+                                                                                <div class="form-group">
 
-                                                                            @php $chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->chapter->title : '';
-
-                                                                                $sub_chapter_title = isset($questionObj->subChapter->id)? $questionObj->subChapter->sub_chapter_title : '';
-                                                                            @endphp
-                                                                            <span class="question-dev-details">({{$questionObj->id}}) - <a href="{{url('/admin/questions_bank/'.$questionObj->id.'/edit')}}" target="_blank">Edit</a></span>
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <ul class="question-details">
-                                                                        <li>Category: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->category->getTitleAttribute() : '-'}}</span></li>
-                                                                        <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
-                                                                        <li>Chapter: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</span></li>
-                                                                        <li>Part Item: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</span></li>
-                                                                        <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
-                                                                    </ul>
-                                                                </div>
-
-                                                                @if(auth()->check() && (auth()->user()->isAdminRole() || auth()->user()->id == 1794))
-                                                                <div class="review-question-holder">
-                                                                    <div class="question-right-header">
-                                                                        <h3>Question Review</h3>
-                                                                    </div>
-                                                                    <form action="javascript:;" method="POST" class="row approve_question_form">
-                                                                        <input type="hidden" name="question_id" value="{{$questionObj->id}}">
-                                                                        <div class="col-12 col-lg-12">
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-md-12">
-                                                                                    <div class="form-group">
-
-                                                                                        <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
-                                                                                            <label class="btn btn-success active">
-                                                                                                <input type="radio" name="question_status" value="Published" autocomplete="off" checked> Publish
-                                                                                            </label>
-                                                                                            <label class="btn btn-warning">
-                                                                                                <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
-                                                                                            </label>
-                                                                                            <label class="btn btn-danger">
-                                                                                                <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
-                                                                                            </label>
-                                                                                        </div>
+                                                                                    <div class="btn-group btn-group-toggle d-block mt-2" data-toggle="buttons" id="actionButtons">
+                                                                                        <label class="btn btn-success active">
+                                                                                            <input type="radio" name="question_status" value="Published" autocomplete="off" checked> Publish
+                                                                                        </label>
+                                                                                        <label class="btn btn-warning">
+                                                                                            <input type="radio" name="question_status" value="Improvement required" autocomplete="off"> Improvements Required
+                                                                                        </label>
+                                                                                        <label class="btn btn-danger">
+                                                                                            <input type="radio" name="question_status" value="Hard reject" autocomplete="off"> Reject
+                                                                                        </label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+                                                                        </div>
 
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-md-12">
-                                                                                    <div class="review-msg-box">
-                                                                                        <div class="form-group">
-                                                                                            <div class="input-group">
-                                                                                                <textarea rows="10" name="review_message" required class="form-control">The content has been reviewed and meets the QA standards. It is now approved for publishing.</textarea>
-                                                                                                <div class="review-msg-control">
-                                                                                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                                                                                </div>
+                                                                        <div class="row">
+                                                                            <div class="col-12 col-md-12">
+                                                                                <div class="review-msg-box">
+                                                                                    <div class="form-group">
+                                                                                        <div class="input-group">
+                                                                                            <textarea rows="10" name="review_message" required class="form-control">The content has been reviewed and meets the QA standards. It is now approved for publishing.</textarea>
+                                                                                            <div class="review-msg-control">
+                                                                                                <button type="submit" class="btn btn-primary">Submit</button>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-
                                                                                 </div>
+
                                                                             </div>
+                                                                        </div>
 
 
-                                                                            <div class="row questions_logs_block">
-                                                                                <h4>Question Logs</h4>
-                                                                                @if($questionLogs->count() > 0)
-                                                                                    <ul class="lms-card-timeline">
+                                                                        <div class="row questions_logs_block">
+                                                                            <h4>Question Logs</h4>
+                                                                            @if($questionLogs->count() > 0)
+                                                                                <ul class="lms-card-timeline">
 
-                                                                                        @if( !empty( $questionLogs ))
-                                                                                            @foreach($questionLogs as $logObj)
-                                                                                                <li>
-                                                                                                    <div class="card">
-                                                                                                        <div class="card-body">
-                                                                                                            <div class="media">
-                                                                                                                <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
-                                                                                                                <div class="media-body">
-                                                                                                                    <div class="d-flex justify-content-between align-items-center lms-card-info">
-                                                                                                                        <h5 class="mt-0 mb-1">
-                                                                                                                            {{$logObj->user->get_full_name()}}
-                                                                                                                            <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
-                                                                                                                        </h5>
-                                                                                                                        <div class="log_details">
-                                                                                                                            <span class="badge mb-2">{{$logObj->action_type}}</span>
-                                                                                                                        </div>
+                                                                                    @if( !empty( $questionLogs ))
+                                                                                        @foreach($questionLogs as $logObj)
+                                                                                            <li>
+                                                                                                <div class="card">
+                                                                                                    <div class="card-body">
+                                                                                                        <div class="media">
+                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
+                                                                                                            <div class="media-body">
+                                                                                                                <div class="d-flex justify-content-between align-items-center lms-card-info">
+                                                                                                                    <h5 class="mt-0 mb-1">
+                                                                                                                        {{$logObj->user->get_full_name()}}
+                                                                                                                        <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                    </h5>
+                                                                                                                    <div class="log_details">
+                                                                                                                        <span class="badge mb-2">{{$logObj->action_type}}</span>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <p class="mb-0">
-                                                                                                                {!! $logObj->log_data !!}
-                                                                                                            </p>
                                                                                                         </div>
+                                                                                                        <p class="mb-0">
+                                                                                                            {!! $logObj->log_data !!}
+                                                                                                        </p>
                                                                                                     </div>
-                                                                                                </li>
+                                                                                                </div>
+                                                                                            </li>
 
-                                                                                            @endforeach
-                                                                                        @endif
-                                                                                    </ul>
-                                                                                @endif
-                                                                            </div>
+                                                                                        @endforeach
+                                                                                    @endif
+                                                                                </ul>
+                                                                            @endif
                                                                         </div>
-                                                                    </form>
-                                                                </div>
-                                                                @endif
-                                                            </div>
-
-
-                                                        </div>
-
-                                                        <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h3>Question Review</h3>
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                                                     </div>
-
-                                                                    <div class="modal-body">
-
-                                                                        </div>
-                                                                </div>
+                                                                </form>
                                                             </div>
+                                                            @endif
                                                         </div>
 
 
                                                     </div>
 
-                                                @endforeach
-                                            @endif
-                                        <div class="show-notifications" data-show_message="yes"></div>
-                                        <div id="scroll-controls" class="page-prev-next-controls">
-                                            <div class="controls-inner">
-                                                <!-- Top State: Scroll Down Button -->
-                                                <button id="btn-top" class="scroll-btn pill btn-hidden">
-                                                    Scroll down <i class="arrow down"></i>
-                                                </button>
+                                                    <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h3>Question Review</h3>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                </div>
 
-                                                <!-- Bottom State: Scroll Up Button -->
-                                                <button id="btn-bottom" class="scroll-btn pill btn-hidden">
-                                                    Scroll up <i class="arrow up"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls disable-div">
-                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
-                                                Finish
-                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                            </a>
+                                                                <div class="modal-body">
 
-                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                mark answer
-                                            </a>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+                                            @endforeach
+                                        @endif
+                                    <div class="show-notifications" data-show_message="yes"></div>
+                                    <div id="scroll-controls" class="page-prev-next-controls">
+                                        <div class="controls-inner">
+                                            <!-- Top State: Scroll Down Button -->
+                                            <button id="btn-top" class="scroll-btn pill btn-hidden">
+                                                Scroll down <i class="arrow down"></i>
+                                            </button>
+
+                                            <!-- Bottom State: Scroll Up Button -->
+                                            <button id="btn-bottom" class="scroll-btn pill btn-hidden">
+                                                Scroll up <i class="arrow up"></i>
+                                            </button>
                                         </div>
+                                    </div>
+                                    <div class="prev-next-controls text-center mb-50 questions-nav-controls disable-div">
+                                        <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+                                            Finish
+                                            <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                        </a>
+
+                                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                            mark answer
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                        <div class="question-area-temp hide"></div>
-                    </div>
+                        </div>
+                        </div>
+                    <div class="question-area-temp hide"></div>
                 </div>
             </div>
         </section>
