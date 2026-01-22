@@ -219,7 +219,7 @@ $rand_id = rand(99,9999);
                         
                         <!-- Accordion -->
                         <div class="accordion" id="analyticsAccordion">
-                            <h3 class="font-18 font-weight-bold mb-15">Questions answered</h3>
+                            <h3 class="font-16 font-weight-bold mb-15">Questions answered</h3>
                             <!-- SESSION 2 -->
                             <div class="card mb-30">
                                 <div class="card-header mb-0 font-14 border-top-0"
