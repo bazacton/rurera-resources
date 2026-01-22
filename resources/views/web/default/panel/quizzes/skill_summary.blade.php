@@ -218,13 +218,6 @@ $rand_id = rand(99,9999);
                             </div>
                             
                             <div class="activities-container">
-                                <div class="analytics-header">
-                                    <div class="header-text font-16 font-weight-bold text-dark-charcoal">
-                                        <span>NO.</span>
-                                        <span>DATE</span>
-                                        <span>SMARTSCORE</span>
-                                    </div>
-                                </div>
                                 <!-- Accordion -->
                                 <div class="accordion" id="analyticsAccordion">
 
