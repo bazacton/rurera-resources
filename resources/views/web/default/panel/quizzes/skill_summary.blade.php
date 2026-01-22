@@ -408,9 +408,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- SESSION 2 -->
-                                    <div class="card">
+                                        <!-- SESSION 2 -->
                                         <div class="card-header collapsed mb-0 font-14"
                                             role="button"
                                             data-toggle="collapse"
