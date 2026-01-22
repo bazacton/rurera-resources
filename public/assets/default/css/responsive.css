@@ -1745,6 +1745,12 @@ Lms Responsive Style Start
     .question-layout-block .prev-next-controls {
         justify-content: flex-start;
     }
+    #analyticsAccordion .card-body {
+        padding: 1rem;
+    }
+    #analyticsAccordion:has(.question-result-layout-holder) .card-header {
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
