@@ -1777,7 +1777,14 @@ Lms Responsive Style Start
     .analytics-header .header-text,
     #analyticsAccordion .card .card-header {padding-left: 15px; padding-right: 0;}
     #analyticsAccordion:has(.question-result-layout-holder) .card-header {
-        padding: 10px;
+        padding: 0;
+    }
+    #analyticsAccordion:has(.question-result-layout-holder) .card-header >span {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        padding: 10px 10px;
+        margin: 0;
+        justify-content: flex-start;
     }
     .user-profile-icons .dropdown:hover .dropdown-menu {top: 66px;}
     .class-thumb-list li.school-box {width: 30%; overflow: visible;}
