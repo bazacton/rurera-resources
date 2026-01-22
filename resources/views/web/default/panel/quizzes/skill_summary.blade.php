@@ -686,7 +686,6 @@ $rand_id = rand(99,9999);
 <script>
     let btnDown = null;
     let btnUp = null;
-    let container = null;
     let initialized = false;
 
     function getButtons() {
@@ -704,9 +703,12 @@ $rand_id = rand(99,9999);
     }
 
     function updateButtons() {
-        if (!container || !isScrollable(container)) {
-            btnDown?.classList.add('btn-hidden');
-            btnUp?.classList.add('btn-hidden');
+        const container = getContainer();
+        if (!container || !getButtons()) return;
+
+        if (!isScrollable(container)) {
+            btnDown.classList.add('btn-hidden');
+            btnUp.classList.add('btn-hidden');
             return;
         }
 
@@ -731,7 +733,7 @@ $rand_id = rand(99,9999);
         if (initialized) return;
         if (!getButtons()) return;
 
-        container = getContainer();
+        const container = getContainer();
         if (!container) return;
 
         initialized = true;
@@ -749,7 +751,6 @@ $rand_id = rand(99,9999);
         updateButtons();
     }
 
-    /* Detect quiz start */
     document.addEventListener('click', function (e) {
         if (e.target.closest('.quiz-start-btn')) {
             initialized = false;
@@ -765,5 +766,6 @@ $rand_id = rand(99,9999);
 
     window.addEventListener('resize', updateButtons);
 </script>
+
 
 @endpush
