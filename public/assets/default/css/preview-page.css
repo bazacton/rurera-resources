@@ -19,6 +19,18 @@
 .quiz-area-page .lms-quiz-section .questions-data-block {
     height: 100vh;
 }
+/* Chrome, Edge, Safari */
+.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar-track {
+  background: transparent;
+}
 .preview-question-area .question-right-side {
     background-color: #fff;
     max-width: 400px;
