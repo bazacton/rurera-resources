@@ -32,7 +32,6 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 @section('content')
 
     <div class="learning-page type-practice type-sats preview-question-area">
-
         <section class="learning-content lms-quiz-section">
             <div class="container questions-data-block read-quiz-content" data-total_questions="0">
                 <div class="quiz-status-bar mb-30 mt-15">
