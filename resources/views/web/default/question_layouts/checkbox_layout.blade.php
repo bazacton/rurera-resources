@@ -20,7 +20,7 @@ $have_images_class = ($have_images == 'yes')? 'lms-checkbox-img'.' image-'.$imag
 						@php $option_index .= $option_index.'-'.$randomID;  $image_path = '';
                         $default = isset($optionObj->default)? $optionObj->default : '';
                         $div_class = '';
-                        if(!auth()->user()->isUser()){
+                        if($is_user == false){
                             $div_class = ($default == 'on')? 'active-option' : '';
                         }
 						@endphp
