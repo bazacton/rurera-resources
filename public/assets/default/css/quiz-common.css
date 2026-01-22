@@ -2337,6 +2337,7 @@ body.quiz-area-page {
 }
 .lms-quiz-section .questions-data-block:has(.question-result-layout-holder) {
     padding-top: 0;
+    height: 100vh;
 }
 .quiz-area-page .left-content {
     width: 100%;
