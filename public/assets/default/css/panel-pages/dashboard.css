@@ -1966,12 +1966,6 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     }
 
     /* Chart Section */
-    .chart-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
     .chart-desc {
       font-size: 14px;
       color: var(--text-muted);
