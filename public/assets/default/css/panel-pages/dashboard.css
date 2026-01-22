@@ -672,7 +672,7 @@ Left SideBar-menu End
 }
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
 .chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
-.result-layout-summary .sats-summary {border-radius: 0;}
+.result-layout-summary .sats-summary {border-radius: 5px;}
 .sats-summary-icon {padding: 30px;}
 .summary-text .score-label {font-weight: bold; margin-top: 20px;}
 .summary-btns{ display: flex; justify-content: center; align-items: center; gap: 5rem; margin-top: 5rem;}
