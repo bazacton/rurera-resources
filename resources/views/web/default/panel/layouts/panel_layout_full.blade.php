@@ -10,7 +10,6 @@
 <head>
     <title>{{ $pageTitle ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link rel="apple-touch-icon" href="https://rurera.com/store/1/default_images/banners/fav-icon.png">
     <!-- General CSS File -->
     <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
