@@ -240,7 +240,7 @@ $rand_id = rand(99,9999);
 
                                             <span class="analytics-cions-earned float-right mr-10">
                                                 <img src="/assets/default/img/sidebar/all.svg" alt="coins">
-                                                <span>1 → 20</span>
+                                                <span>20 → 50</span>
                                             </span>
                                         </div>
 
@@ -427,7 +427,7 @@ $rand_id = rand(99,9999);
 
                                             <span class="analytics-cions-earned float-right mr-10">
                                                 <img src="/assets/default/img/sidebar/all.svg" alt="coins">
-                                                <span>2 → 20</span>
+                                                <span>10 → 20</span>
                                             </span>
                                         </div>
 
