@@ -234,7 +234,7 @@ $rand_id = rand(99,9999);
 
                                             <span class="analytics-timespend float-right">
                                                 <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                                <span>Wednesday, 19 November 2025 - 20mints</span>
+                                                <span>Wed, 19 Nov 25 - 20 mints</span>
                                             </span>
 
                                             <span class="analytics-cions-earned float-right mr-10">
