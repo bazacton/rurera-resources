@@ -3419,18 +3419,36 @@ html:has(.learn-test-start) {
     font-size: var(--fs-sm);
     font-weight: 500;
 }
-.streak-circle {
+.days-list ul, .user-profile-icons .days-list ul {
+    justify-content: space-between;
+    gap: 10px;
+}
+.days-list ul li {
     display: inline-flex;
-    height: 28px;
-    width: 28px;
+    vertical-align: middle;
+    line-height: normal;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.days-list .day {
+    color: #888;
+    font-weight: 500;
+    font-size: .875rem;
+}
+.days-list .day-circle {
+    height: 25px;
+    width: 25px;
     background-color: #ccc;
     border-radius: 100%;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
 }
-.active .streak-circle {
-    background-color: #ff9600;
+.days-list img {
+    height: 25px;
+    width: 25px;
+}
+.days-list .day-circle:has(img) {
+    background-color: inherit;
 }
 .streak-content-box p {
     font-size: var(--fs-sm);
