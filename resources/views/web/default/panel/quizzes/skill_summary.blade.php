@@ -684,12 +684,11 @@ $rand_id = rand(99,9999);
 
 </script>
 <script>
-    var btnDown = null;
-    var btnUp   = null;
-    var container = null;
-    var initialized = false;
+    let btnDown = null;
+    let btnUp = null;
+    let container = null;
+    let initialized = false;
 
-    /* Get elements safely */
     function getButtons() {
         btnDown = document.getElementById('btn-top');
         btnUp   = document.getElementById('btn-bottom');
@@ -697,7 +696,7 @@ $rand_id = rand(99,9999);
     }
 
     function getContainer() {
-        return document.querySelector('.lms-quiz-section .questions-data-block');
+        return document.querySelector('.questions-data-block');
     }
 
     function isScrollable(el) {
@@ -711,51 +710,51 @@ $rand_id = rand(99,9999);
             return;
         }
 
-        var top = container.scrollTop;
-        var max = container.scrollHeight - container.clientHeight;
+        const top = container.scrollTop;
+        const max = container.scrollHeight - container.clientHeight;
 
-        if (top <= 0) {
+        if (top <= 5) {
             btnUp.classList.add('btn-hidden');
             btnDown.classList.remove('btn-hidden');
-        } else if (top >= max - 5) {
+        } 
+        else if (top >= max - 5) {
             btnDown.classList.add('btn-hidden');
             btnUp.classList.remove('btn-hidden');
-        } else {
+        } 
+        else {
             btnDown.classList.remove('btn-hidden');
-            btnUp.classList.add('btn-hidden');
+            btnUp.classList.remove('btn-hidden');
         }
     }
 
     function attachScroll() {
         if (initialized) return;
-
         if (!getButtons()) return;
 
-        var el = getContainer();
-        if (!el) return;
+        container = getContainer();
+        if (!container) return;
 
-        container = el;
         initialized = true;
 
         container.addEventListener('scroll', updateButtons);
 
-        btnDown.addEventListener('click', () =>
-            container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' })
-        );
+        btnDown.addEventListener('click', () => {
+            container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+        });
 
-        btnUp.addEventListener('click', () =>
-            container.scrollTo({ top: 0, behavior: 'smooth' })
-        );
+        btnUp.addEventListener('click', () => {
+            container.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
         updateButtons();
     }
 
-    /* Detect Start Practice */
+    /* Detect quiz start */
     document.addEventListener('click', function (e) {
         if (e.target.closest('.quiz-start-btn')) {
             initialized = false;
 
-            let wait = setInterval(() => {
+            const wait = setInterval(() => {
                 if (getButtons() && getContainer()) {
                     clearInterval(wait);
                     attachScroll();
@@ -764,7 +763,7 @@ $rand_id = rand(99,9999);
         }
     });
 
-    /* Resize safety */
     window.addEventListener('resize', updateButtons);
 </script>
+
 @endpush
