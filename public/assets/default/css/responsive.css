@@ -1799,4 +1799,5 @@ Lms Responsive Style Start
     .dashboard-banner-container {min-height: 150px;}
     .member-card-header.activities-header .dropdown {padding-top: 0;}
     .edit-profile-body .form-group:has(.input-field) {flex: 0 0 100%; max-width: 100%;}
+    .prev-next-controls .question-submit-btn, .prev-next-controls .question-next-btn {position: relative;}
 }
