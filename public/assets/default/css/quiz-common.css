@@ -2617,8 +2617,10 @@ Quiz Check Answers Page Style End
     bottom: calc(80px + env(safe-area-inset-bottom));
     width: 100%;
     left: 0;
-    padding-right: 400px;
     z-index: 5;
+}
+body:has(.question-right-side) #scroll-controls {
+    padding-right: 400px;
 }
 #scroll-controls .controls-inner {
     width: 100%;
