@@ -598,19 +598,6 @@ $rand_id = rand(99,9999);
 
                 </div>
             </div>
-            <div id="scroll-controls" class="page-prev-next-controls pr-0">
-                <div class="controls-inner">
-                    <!-- Top State: Scroll Down Button -->
-                    <button id="btn-top" class="btn-top scroll-btn pill btn-hidden">
-                        Scroll down <i class="arrow down"></i>
-                    </button>
-
-                    <!-- Bottom State: Scroll Up Button -->
-                    <button id="btn-bottom" class="scroll-btn pill btn-hidden">
-                        Scroll up <i class="arrow up"></i>
-                    </button>
-                </div>
-            </div>
         </div>
     </section>
 </div>
@@ -680,89 +667,5 @@ $rand_id = rand(99,9999);
 
 
 </script>
-<script>
-    let btnDown = null;
-    let btnUp = null;
-    let initialized = false;
-
-    function getButtons() {
-        btnDown = document.getElementById('btn-top');
-        btnUp   = document.getElementById('btn-bottom');
-        return btnDown && btnUp;
-    }
-
-    function getContainer() {
-        return document.querySelector('.questions-data-block');
-    }
-
-    function isScrollable(el) {
-        return el && el.scrollHeight > el.clientHeight + 5;
-    }
-
-    function updateButtons() {
-        const container = getContainer();
-        if (!container || !getButtons()) return;
-
-        if (!isScrollable(container)) {
-            btnDown.classList.add('btn-hidden');
-            btnUp.classList.add('btn-hidden');
-            return;
-        }
-
-        const top = container.scrollTop;
-        const max = container.scrollHeight - container.clientHeight;
-
-        if (top <= 5) {
-            btnUp.classList.add('btn-hidden');
-            btnDown.classList.remove('btn-hidden');
-        } 
-        else if (top >= max - 5) {
-            btnDown.classList.add('btn-hidden');
-            btnUp.classList.remove('btn-hidden');
-        } 
-        else {
-            btnDown.classList.remove('btn-hidden');
-            btnUp.classList.remove('btn-hidden');
-        }
-    }
-
-    function attachScroll() {
-        if (initialized) return;
-        if (!getButtons()) return;
-
-        const container = getContainer();
-        if (!container) return;
-
-        initialized = true;
-
-        container.addEventListener('scroll', updateButtons);
-
-        btnDown.onclick = () => {
-            container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-        };
-
-        btnUp.onclick = () => {
-            container.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-
-        setTimeout(updateButtons, 50);
-    }
-
-    document.addEventListener('click', function (e) {
-        if (e.target.closest('.quiz-start-btn')) {
-            initialized = false;
-
-            const wait = setInterval(() => {
-                if (getButtons() && getContainer()) {
-                    clearInterval(wait);
-                    attachScroll();
-                }
-            }, 100);
-        }
-    });
-
-    window.addEventListener('resize', updateButtons);
-</script>
-
 
 @endpush
