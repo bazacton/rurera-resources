@@ -1951,27 +1951,21 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     .stat-icon.green { background: var(--icon-correct); }
     .stat-icon.blue { background: var(--icon-time); }
     .stat-icon.orange { background: var(--icon-avg); }
-
     .stat-info .label {
       font-size: 13px;
       color: var(--text-muted);
       font-weight: 500;
     }
-
     .stat-info .value {
       font-size: 20px;
       font-weight: 700;
       margin-top: 4px;
       line-height: 1.2;
     }
-
     /* Chart Section */
     .chart-desc {
-      font-size: 14px;
       color: var(--text-muted);
-      line-height: 1.5;
     }
-
     /* Custom Horizontal Chart */
     .chart-container {
       position: relative;
