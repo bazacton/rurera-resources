@@ -740,15 +740,15 @@ $rand_id = rand(99,9999);
 
         container.addEventListener('scroll', updateButtons);
 
-        btnDown.addEventListener('click', () => {
+        btnDown.onclick = () => {
             container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-        });
+        };
 
-        btnUp.addEventListener('click', () => {
+        btnUp.onclick = () => {
             container.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        };
 
-        updateButtons();
+        setTimeout(updateButtons, 50);
     }
 
     document.addEventListener('click', function (e) {
