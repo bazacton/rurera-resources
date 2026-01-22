@@ -153,7 +153,7 @@ $rand_id = rand(99,9999);
                     </div>
                 </div>
                 <div class="position-relative mb-30 graph-box">
-                    <h2 class="font-18 mb-15 font-weight-bold">{{$SubChapter->sub_chapter_title}}</h2>
+                    <h2 class="font-18 mb-10 font-weight-bold">{{$SubChapter->sub_chapter_title}}</h2>
                     <div class="card p-4"><canvas id="usersStatisticsChart"></canvas></div>
                 </div>
                 <!-- Performance Chart -->
