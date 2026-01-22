@@ -231,12 +231,12 @@ $rand_id = rand(99,9999);
 
                                     <span>SESSION 2</span>
 
-                                    <span class="analytics-timespend float-right">
+                                    <span class="analytics-timespend">
                                         <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
                                         <span>Wed, 19 Nov 25 - 20 mints</span>
                                     </span>
 
-                                    <span class="analytics-cions-earned float-right mr-10">
+                                    <span class="analytics-cions-earned">
                                         <img src="/assets/default/img/sidebar/all.svg" alt="coins">
                                         <span>20 → 50</span>
                                     </span>
