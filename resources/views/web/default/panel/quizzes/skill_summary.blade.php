@@ -223,7 +223,7 @@ $rand_id = rand(99,9999);
 
                                     <!-- SESSION 2 -->
                                     <div class="card">
-                                        <div class="card-header mb-0 font-14 collapsed"
+                                        <div class="card-header mb-0 font-14"
                                             role="button"
                                             data-toggle="collapse"
                                             data-target="#report_22_01_2026"
@@ -243,7 +243,7 @@ $rand_id = rand(99,9999);
                                             </span>
                                         </div>
 
-                                        <div id="report_22_01_2026" class="collapse" data-parent="#analyticsAccordion">
+                                        <div id="report_22_01_2026" class="collapse show" data-parent="#analyticsAccordion">
                                             <div class="card-body">
                                                 <div class="question-result-layout-holder">
                                                     <div class="question-result-layout question-status-incorrect mb-10">
@@ -318,6 +318,9 @@ $rand_id = rand(99,9999);
                                                             <i>&#x00D7;</i>
                                                             <span class="time-text">7.2s</span>
                                                         </div>
+                                                        <div class="question-counts mb-10 font-14">
+                                                            <span>Question 18 of 20</span>
+                                                        </div>
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div class="question-label question_label">
                                                                 <span>3. How do living organisms obtain and use energy?</span>
@@ -348,6 +351,9 @@ $rand_id = rand(99,9999);
                                                             <i>&#x00D7;</i>
                                                             <span class="time-text">7.2s</span>
                                                         </div>
+                                                        <div class="question-counts mb-10 font-14">
+                                                            <span>Question 17 of 20</span>
+                                                        </div>
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div class="question-label question_label">
                                                                 <span>4. How do living organisms obtain and use energy?</span>
@@ -373,6 +379,9 @@ $rand_id = rand(99,9999);
                                                         <div class="status-badge font-14">
                                                             <i>&#10003;</i>
                                                             <span class="time-text">2.2s</span>
+                                                        </div>
+                                                        <div class="question-counts mb-10 font-14">
+                                                            <span>Question 16 of 20</span>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div class="question-label question_label">
