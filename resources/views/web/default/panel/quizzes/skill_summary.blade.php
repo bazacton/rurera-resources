@@ -55,7 +55,9 @@ $rand_id = rand(99,9999);
             </div>
 
             <div class="question-area-block">
-                <h2 class="font-18 mb-10 font-weight-bold">{{$SubChapter->sub_chapter_title}}</h2>
+                <div class="section-title mb-15">
+                    <h2 class="font-22 mb-0">{{$SubChapter->sub_chapter_title}}</h2>
+                </div>
                 <div class="chart-summary-fields result-layout-summary">
                     <div class="sats-summary">
                         <div class="row">
