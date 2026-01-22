@@ -1748,9 +1748,6 @@ Lms Responsive Style Start
     #analyticsAccordion .card-body {
         padding: 1rem;
     }
-    #analyticsAccordion:has(.question-result-layout-holder) .card-header {
-        padding: 10px;
-    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
@@ -1779,6 +1776,9 @@ Lms Responsive Style Start
     .analytics-header .header-text > span {font-size: 16px !important;}
     .analytics-header .header-text,
     #analyticsAccordion .card .card-header {padding-left: 15px; padding-right: 0;}
+    #analyticsAccordion:has(.question-result-layout-holder) .card-header {
+        padding: 10px;
+    }
     .user-profile-icons .dropdown:hover .dropdown-menu {top: 66px;}
     .class-thumb-list li.school-box {width: 30%; overflow: visible;}
     .class-thumb .media-box {height: 80px; width: 80px;}
