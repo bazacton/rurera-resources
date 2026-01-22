@@ -1272,7 +1272,7 @@
                                                     <div class="quiz-status-bar tt1">
                                                         <div class="quiz-questions-bar-holder">
                                                             <div class="quiz-questions-bar">
-                                                                <span class="value-lable" data-title="Target" style="left:90%"><span>90%</span></span>
+                                                                <span class="value-lable" data-title="Smart score" style="left:90%"><span>90%</span></span>
                                                                 <span class="bar-fill" title="0%" style="width: 0%;"></span>
                                                             </div>
                                                             <span class="coin-numbers">
