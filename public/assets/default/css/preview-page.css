@@ -16,20 +16,8 @@
     justify-content: center;
 }
 /* Main scroll container */
-
-/* Chrome, Edge, Safari */
-.preview-question-area .left-content::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  display: none;
-}
-
-.preview-question-area .left-content::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-.preview-question-area .left-content::-webkit-scrollbar-track {
-  background: transparent;
+.quiz-area-page .lms-quiz-section .questions-data-block {
+    height: 100vh;
 }
 .preview-question-area .question-right-side {
     background-color: #fff;
