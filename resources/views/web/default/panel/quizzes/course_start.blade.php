@@ -71,7 +71,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         @endif
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
-            <div class="quiz-status-bar mb-50 mt-15">
+            <div class="quiz-status-bar mb-50 mt-15 pr-0">
                 <div class="questions-bar-box">
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
