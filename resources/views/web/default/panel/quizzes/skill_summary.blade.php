@@ -243,6 +243,14 @@ $rand_id = rand(99,9999);
                                             <li><label class="lms-question-label" for="radio2"><span>Humans eating food</span></label></li>
                                         </ul>
                                     </div>
+                                    
+                                    <div class="lms-user-answer-block">
+                                        <span class="list-title">Jon Doe1 answered:</span>
+                                        <ul class="lms-radio-btn-group font-14">
+                                            <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
+                                            <li><label class="lms-question-label wrong" for="radio2"><span>Cars using petrol</span></label></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -267,6 +275,7 @@ $rand_id = rand(99,9999);
                                             <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
