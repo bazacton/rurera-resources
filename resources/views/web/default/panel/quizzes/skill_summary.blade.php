@@ -162,8 +162,8 @@ $rand_id = rand(99,9999);
                  
                 <div class="card chart-card mb-30">
                     <div class="card-body p-4">
-                        <div class="chart-title font-18 mb-10 font-weight-bold">Performance by topic</div>
-                        <div class="chart-header mb-4">
+                        <div class="chart-title font-16 mb-10 font-weight-bold">Performance by topic</div>
+                        <div class="chart-header mb-4 font-14">
                         <div class="chart-desc text-muted">
                             The bar chart shows how likely you are to get an average question correct in each topic.
                             This is based on your answers in this mock test. It will increase with practice!
