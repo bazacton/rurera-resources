@@ -251,6 +251,9 @@ $rand_id = rand(99,9999);
                                                             <i>&#x00D7;</i>
                                                             <span class="time-text">7.2s</span>
                                                         </div>
+                                                        <div class="question-counts mb-10 font-14">
+                                                            <span>Question 20 of 20</span>
+                                                        </div>
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div class="question-label question_label">
                                                                 <span>1. How do living organisms obtain and use energy?</span>
@@ -283,6 +286,9 @@ $rand_id = rand(99,9999);
                                                         <div class="status-badge font-14">
                                                             <i>&#10003;</i>
                                                             <span class="time-text">2.2s</span>
+                                                        </div>
+                                                        <div class="question-counts mb-10 font-14">
+                                                            <span>Question 19 of 20</span>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div class="question-label question_label">
