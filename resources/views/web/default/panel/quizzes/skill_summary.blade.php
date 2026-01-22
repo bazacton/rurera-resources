@@ -251,7 +251,7 @@ $rand_id = rand(99,9999);
                                         </div>
 
                                         <div id="report_22_01_2026" class="collapse" data-parent="#analyticsAccordion">
-                                            <div class="card-body">
+                                            <div class="card-body p-0 mt-15">
                                                 <div class="question-result-layout-holder">
                                                     <div class="question-result-layout question-status-incorrect mb-10">
                                                         <div class="status-badge font-14">
