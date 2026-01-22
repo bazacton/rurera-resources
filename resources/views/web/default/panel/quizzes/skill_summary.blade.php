@@ -601,7 +601,7 @@ $rand_id = rand(99,9999);
         </div>
     </section>
 </div>
-<div class="scroll-btn" style="display: block;">
+<div class="scroll-btn">
     <div class="round">
         <div id="cta">
             <span class="arrow primera next"></span>
