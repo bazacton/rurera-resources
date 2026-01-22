@@ -2088,4 +2088,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     max-height: 20px;
     object-fit: contain;
 }
+.question-result-layout .question-counts {
+    color: #999;
+}
 /* Questions Result Layout Accordion Style End */
