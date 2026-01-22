@@ -256,7 +256,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>1. How do living organisms obtain and use energy?</span>
+                                                        <span>How do living organisms obtain and use energy?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -292,7 +292,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>2. Which examples show sensitivity in living organisms?</span>
+                                                        <span>Which examples show sensitivity in living organisms?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -323,7 +323,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>3. How do living organisms obtain and use energy?</span>
+                                                        <span>How do living organisms obtain and use energy?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -356,7 +356,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>4. How do living organisms obtain and use energy?</span>
+                                                        <span>How do living organisms obtain and use energy?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -385,7 +385,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>5. Which examples show sensitivity in living organisms?</span>
+                                                        <span>Which examples show sensitivity in living organisms?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -442,7 +442,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>1. How do living organisms obtain and use energy?</span>
+                                                        <span>How do living organisms obtain and use energy?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -478,7 +478,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>2. Which examples show sensitivity in living organisms?</span>
+                                                        <span>Which examples show sensitivity in living organisms?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -509,7 +509,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>3. How do living organisms obtain and use energy?</span>
+                                                        <span>How do living organisms obtain and use energy?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -542,7 +542,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>4. How do living organisms obtain and use energy?</span>
+                                                        <span>How do living organisms obtain and use energy?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
@@ -571,7 +571,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                                 <div class="rureraform-col rureraform-col-12">
                                                     <div class="question-label question_label">
-                                                        <span>5. Which examples show sensitivity in living organisms?</span>
+                                                        <span>Which examples show sensitivity in living organisms?</span>
                                                     </div>
                                                 </div>
                                                 <div class="question-area">
