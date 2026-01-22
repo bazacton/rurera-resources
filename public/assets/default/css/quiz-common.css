@@ -2334,16 +2334,6 @@ body.quiz-area-page {
     width: 100%;
     padding: 25px 15px 0;
 }
-.lms-quiz-section .questions-data-block:has(.question-result-layout-holder) {
-    overflow: hidden;
-    overflow-y: auto;
-    scrollbar-gutter: stable;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    max-height: 80vh;
-}
 .quiz-area-page .left-content {
     width: 100%;
 }
