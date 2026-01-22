@@ -1742,9 +1742,6 @@ Lms Responsive Style Start
         right: 0;
         top: 3px;
     }
-    .quiz-area-page .left-content {
-        padding-bottom: 130px;
-    }
     .question-layout-block .prev-next-controls {
         justify-content: flex-start;
     }
