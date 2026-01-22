@@ -108,7 +108,7 @@ $rand_id = rand(99,9999);
                                     <div class="score">{{getTimeWithText($time_consumed)}}</div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 col-lg-3">
+                            <!-- <div class="col-12 col-md-4 col-lg-3">
                                 <div class="sats-summary-icon" style="background-color: #0272b6;">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 185.872 185.871" xml:space="preserve">
                                         <g>
@@ -148,19 +148,19 @@ $rand_id = rand(99,9999);
                                     <label>Coin earned</label>
                                     <div class="score">{{$correct_questions}}</div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="position-relative mb-30 graph-box">
                     <h2 class="font-18 mb-15 font-weight-bold">{{$SubChapter->sub_chapter_title}}</h2>
-                    <canvas id="usersStatisticsChart"></canvas>
+                    <div class="card p-4"><canvas id="usersStatisticsChart"></canvas></div>
                 </div>
                 <!-- Performance Chart -->
+                 <div class="chart-title">Performance by topic</div>
                 <div class="card chart-card mb-30">
                     <div class="card-body p-4">
                         <div class="chart-header mb-4">
-                        <div class="chart-title">Performance by topic</div>
                         <div class="chart-desc text-muted">
                             The bar chart shows how likely you are to get an average question correct in each topic.
                             This is based on your answers in this mock test. It will increase with practice!
