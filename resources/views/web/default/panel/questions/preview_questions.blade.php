@@ -272,7 +272,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                 @endforeach
                                             @endif
                                         <div class="show-notifications" data-show_message="yes"></div>
-                                        <div id="scroll-controls" class="page-prev-next-controls test-ttt">
+                                        <div id="scroll-controls" class="page-prev-next-controls">
                                             <div class="controls-inner">
                                                 <!-- Top State: Scroll Down Button -->
                                                 <button id="btn-top" class="scroll-btn pill btn-hidden">
@@ -290,22 +290,10 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
-                                            <!-- <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
-                                                prev
-                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                            </a>
-                                            <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
-                                                Next
-                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                            </a> -->
 
                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                                                 mark answer
                                             </a>
-
-                                            <!-- <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                                Next
-                                            </a> -->
                                         </div>
                                     </div>
                                 </div>
