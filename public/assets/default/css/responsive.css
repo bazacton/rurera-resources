@@ -1786,6 +1786,9 @@ Lms Responsive Style Start
         margin: 0;
         justify-content: flex-start;
     }
+    #analyticsAccordion:has(.question-result-layout-holder) .card-header >span:last-child {
+        border-bottom: 0;
+    }
     .user-profile-icons .dropdown:hover .dropdown-menu {top: 66px;}
     .class-thumb-list li.school-box {width: 30%; overflow: visible;}
     .class-thumb .media-box {height: 80px; width: 80px;}
