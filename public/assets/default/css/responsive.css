@@ -1285,6 +1285,17 @@ Lms Responsive Style Start
     .learn-test-start {
         width: 100%;
     }
+    .finish-steps,
+    .finish-steps .medium .cloud_text_element {
+        width: 100%;
+    }
+    .finish-steps .medium .cloud_text_element {
+        width: 100%;
+    }
+    .finish-steps .cloud_text .cloud_nner_text {
+        min-width: auto;
+        width: calc(100% - 150px);
+    }
 }
 
 @media screen and (max-width: 640px) {
