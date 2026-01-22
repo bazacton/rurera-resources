@@ -1433,7 +1433,7 @@ body mjx-container[display] {
 }
 .quiz-questions-bar-holder .value-lable:hover:before,
 .quiz-questions-bar-holder .value-lable:hover:after {opacity: 1; visibility: visible;}
-.quiz-questions-bar-holder .bar-fill:after {
+.quiz-questions-bar-holder .value-lable:after {
     position: absolute;
     content: attr(data-title);
     height: 26px;
@@ -1455,14 +1455,9 @@ body mjx-container[display] {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     right: 0;
-    margin-right: -40px;
     white-space: nowrap;
 }
-.quiz-questions-bar:hover .bar-fill:after {
-    opacity: 1;
-    margin-top: -15px;
-}
-.quiz-questions-bar-holder .bar-fill:before {
+.quiz-questions-bar-holder .value-lable:before {
     content: "";
     position: absolute;
     top: -20px;
