@@ -2611,10 +2611,7 @@ Quiz Check Answers Page Style End
 .cloud_nner_text p {
     margin: 0;
 }
-
-
-
-/* Question */
+/* Question Scroll-Controls Style */
 #scroll-controls {
     position: fixed;
     bottom: calc(80px + env(safe-area-inset-bottom));
