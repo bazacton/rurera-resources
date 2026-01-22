@@ -14,6 +14,12 @@
         $seo_title = isset($seo_title)? $seo_title : $pageTitle; @endphp
     @include('web.default.includes.metas')
     <title>{{ $seo_title }}</title>
+    <!-- Browser favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/default/img/fav-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/default/img/fav-icon.png">
+
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/default/img/fav-icon.png">
 
     <!-- General CSS File -->
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
