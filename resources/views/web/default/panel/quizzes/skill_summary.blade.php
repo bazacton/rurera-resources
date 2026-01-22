@@ -151,7 +151,7 @@ $rand_id = rand(99,9999);
                             </div>
                             <!-- Performance Chart -->
                             
-                            <div class="card chart-card mb-30">
+                            <div class="card chart-card mb-10">
                                 <div class="card-body p-4">
                                     <div class="chart-title font-16 mb-10 font-weight-bold">Performance by topic</div>
                                     <div class="chart-header mb-4 font-14">
@@ -230,11 +230,11 @@ $rand_id = rand(99,9999);
                                             aria-expanded="false"
                                             aria-controls="report_22_01_2026">
 
-                                            <span>SESSION 1</span>
+                                            <span>SESSION 2</span>
 
                                             <span class="analytics-timespend float-right">
                                                 <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                                <span>Wed, 19 Nov 25 - 20 mints</span>
+                                                <span>Wed, 19 Nov 25 - 20 mints 20 → 50</span>
                                             </span>
 
                                             <span class="analytics-cions-earned float-right mr-10">
@@ -418,11 +418,11 @@ $rand_id = rand(99,9999);
                                             aria-expanded="false"
                                             aria-controls="report_23_01_2026">
 
-                                            <span>SESSION 2</span>
+                                            <span>SESSION 1</span>
 
                                             <span class="analytics-timespend float-right">
                                                 <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                                <span>Wed, 19 Nov 25 - 20 mints</span>
+                                                <span>Mon, 13 Nov 25 - 20 mints 10 → 20</span>
                                             </span>
 
                                             <span class="analytics-cions-earned float-right mr-10">
