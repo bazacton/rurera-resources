@@ -430,15 +430,15 @@ $(document).on('change', 'input[name="question_status"]', function (evt) {
 
 </script>
 <script>
-var btnDown = document.getElementById('btn-top');
-var btnUp = document.getElementById('btn-bottom');
+var btnDown = document.getElementById('btn-top');     // Scroll DOWN
+var btnUp = document.getElementById('btn-bottom');   // Scroll UP
 var container = null;
 
 /* Get active question container */
 function getActiveContainer() {
     var activeSection = document.querySelector('.rurera-question-block.active');
     return activeSection
-        ? activeSection.querySelector('.preview-question-area .questions-data-block')
+        ? activeSection.querySelector('.preview-question-area .left-content')
         : null;
 }
 
