@@ -77,27 +77,49 @@
             <span>day streak</span>
         </div>
         <div class="streak-content-box">
-            <div class="streak-days-select">
+            <div class="days-list">
                 <ul>
-                    <li class="active">
-                        <span class="day-lable">Tu</span>
-                        <span class="streak-circle">&#x2714;</span>
+                    <li class="frozen-streak">
+                        <span class="day">M</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/snowflake-cold.svg" height="64" width="64" alt="snowflake-cold">
+                        </span>
                     </li>
-                    <li>
-                        <span class="day-lable">W</span>
-                        <span class="streak-circle"></span>
+                    <li class="active-streak">
+                        <span class="day">T</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire">
+                        </span>
                     </li>
-                    <li>
-                        <span class="day-lable">Th</span>
-                        <span class="streak-circle"></span>
+                    <li class="active-streak">
+                        <span class="day">W</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire2">
+                        </span>
                     </li>
-                    <li>
-                        <span class="day-lable">F</span>
-                        <span class="streak-circle"></span>
+                    <li class="broken-streak">
+                        <span class="day">T</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/broken-heart.svg" height="64" width="64" alt="broken-heart">
+                        </span>
                     </li>
-                    <li>
-                        <span class="day-lable">Sa</span>
-                        <span class="streak-circle"></span>
+                    <li class="active-streak">
+                        <span class="day">F</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire2">
+                        </span>
+                    </li>
+                    <li class="not-started">
+                        <span class="day">S</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
+                        </span>
+                    </li>
+                    <li class="not-started">
+                        <span class="day">S</span>
+                        <span class="day-circle">
+                            <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
+                        </span>
                     </li>
                 </ul>
             </div>
