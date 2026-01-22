@@ -24,7 +24,6 @@ $rand_id = rand(99,9999);
 @endpush
 @section('content')
 <div class="content-section">
-
     <section class="lms-quiz-section no-bg">
         <div class="container-fluid questions-data-block read-quiz-content" data-total_questions="10">
             <div class="row justify-content-center">
@@ -367,8 +366,6 @@ $rand_id = rand(99,9999);
                 </div>
             </div>
     </section>
-
-
 </div>
 
 @endsection
