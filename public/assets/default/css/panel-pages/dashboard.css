@@ -2057,8 +2057,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 /* Questions Result Layout Accordion Style Start */
 #analyticsAccordion .card .card-header {
     background-color: inherit;
-    border-radius: 0;
-    border-bottom: 0;
+    border-top: 1px solid rgba(52, 52, 52, .125);
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
