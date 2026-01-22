@@ -157,7 +157,7 @@ $rand_id = rand(99,9999);
                     <div class="card p-4"><canvas id="usersStatisticsChart"></canvas></div>
                 </div>
                 <!-- Performance Chart -->
-                 <div class="chart-title">Performance by topic</div>
+                 <div class="chart-title font-18 mb-10 font-weight-bold">Performance by topic</div>
                 <div class="card chart-card mb-30">
                     <div class="card-body p-4">
                         <div class="chart-header mb-4">
