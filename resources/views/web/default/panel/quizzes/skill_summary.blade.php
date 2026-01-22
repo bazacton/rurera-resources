@@ -223,7 +223,7 @@ $rand_id = rand(99,9999);
                     </div>
                 </div>
                 <div class="question-result-layout-holder">
-                    <div class="question-result-layout question-status-incorrect">
+                    <div class="question-result-layout question-status-incorrect mb-10">
                         <div class="status-badge font-14">
                             <i>&#x00D7;</i>
                             <span class="time-text">7.2s</span>
@@ -256,7 +256,7 @@ $rand_id = rand(99,9999);
                         </div>
                     </div>
                     
-                    <div class="question-result-layout question-status-correct">
+                    <div class="question-result-layout question-status-correct mb-10">
                         <div class="status-badge font-14">
                             <i>&#10003;</i>
                             <span class="time-text">2.2s</span>
@@ -284,7 +284,7 @@ $rand_id = rand(99,9999);
 
 
                     
-                    <div class="question-result-layout question-status-incorrect">
+                    <div class="question-result-layout question-status-incorrect mb-10">
                         <div class="status-badge font-14">
                             <i>&#x00D7;</i>
                             <span class="time-text">7.2s</span>
@@ -314,7 +314,7 @@ $rand_id = rand(99,9999);
                             </div>
                         </div>
                     </div>
-                    <div class="question-result-layout question-status-incorrect">
+                    <div class="question-result-layout question-status-incorrect mb-10">
                         <div class="status-badge font-14">
                             <i>&#x00D7;</i>
                             <span class="time-text">7.2s</span>
@@ -328,14 +328,6 @@ $rand_id = rand(99,9999);
                             <div class="question-step">
                                 <div class="lms-radio-lists">
                                     <div class="lms-user-answer-block">
-                                        <span class="list-title">Correct answer:</span>
-                                        <ul class="lms-radio-btn-group font-14">
-                                            <li><label class="lms-question-label" for="radio2"><span>True,</span></label></li>
-                                            <li><label class="lms-question-label" for="radio2"><span>False</span></label></li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <div class="lms-user-answer-block">
                                         <span class="list-title">Jon answered:</span>
                                         <ul class="lms-radio-btn-group font-14">
                                             <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
@@ -348,7 +340,7 @@ $rand_id = rand(99,9999);
                     </div>
 
                     
-                    <div class="question-result-layout question-status-correct">
+                    <div class="question-result-layout question-status-correct mb-10">
                         <div class="status-badge font-14">
                             <i>&#10003;</i>
                             <span class="time-text">2.2s</span>
