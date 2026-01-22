@@ -24,7 +24,7 @@ $rand_id = rand(99,9999);
 					<div class="quiz-status-bar">
 						<div class="quiz-questions-bar-holder">
 							<div class="quiz-questions-bar">
-								<span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
+								<span class="value-lable" data-title="Smart score" style="left:80%"><span>80%</span></span>
 								<span class="bar-fill" title="0%" style="width: 0%;"></span>
 							</div>
 							<span class="coin-numbers">
