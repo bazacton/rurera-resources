@@ -2334,9 +2334,6 @@ body.quiz-area-page {
     width: 100%;
     padding: 25px 15px 0;
 }
-body:has(.question-result-layout-holder) {
-    overflow: hidden;
-}
 .lms-quiz-section .questions-data-block:has(.question-result-layout-holder) {
     overflow: hidden;
     overflow-y: auto;
