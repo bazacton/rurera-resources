@@ -286,6 +286,37 @@ $rand_id = rand(99,9999);
                             </div>
                         </div>
                     </div>
+                    <div class="question-result-layout question-status-correct">
+                        <div class="status-badge font-14">
+                            <i>&#10003;</i>
+                            <span class="time-text">2.2s</span>
+                        </div>
+                        <div class="rureraform-col rureraform-col-12">
+                            <div class="question-label question_label">
+                                <span>2. Which examples show sensitivity in living organisms?</span>
+                            </div>
+	                    </div>
+                        <div class="question-area">
+                            <div class="question-step">
+                                <div class="lms-radio-lists">
+                                    <div class="lms-user-answer-block">
+                                        <span class="list-title">Correct answer:</span>
+                                        <ul class="lms-radio-btn-group lms-user-answer-block font-14">
+                                            <li><label class="lms-question-label" for="radio2"><span>A cat running when scared</span></label></li>
+                                            <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
+                                        </ul>
+                                    </div>
+                                    <div class="lms-user-answer-block">
+                                        <span class="list-title">Jon Doe1 answered:</span>
+                                        <ul class="lms-radio-btn-group lms-user-answer-block font-14">
+                                            <li><label class="lms-question-label correct" for="radio2"><span>A cat running when scared,</span></label></li>
+                                            <li><label class="lms-question-label correct" for="radio2"><span>A sunflower turning to light</span></label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
