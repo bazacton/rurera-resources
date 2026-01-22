@@ -612,7 +612,7 @@ $rand_id = rand(99,9999);
 
 
 
-<!-- <script>
+<script>
     var usersStatisticsChart = document.getElementById("usersStatisticsChart").getContext('2d');
     var chart = {};
 
@@ -669,6 +669,6 @@ $rand_id = rand(99,9999);
 
 
 
-</script> -->
+</script>
 
 @endpush
