@@ -1438,7 +1438,7 @@ body mjx-container[display] {
     background-color: #000;
     color: white;
     border-radius: 3px;
-    top: -35px;
+    top: -25px;
     margin-top: 0;
     text-align: center;
     font-size: var(--fs-xs);
@@ -1475,6 +1475,7 @@ body mjx-container[display] {
 }
 .quiz-questions-bar:hover .value-lable:before,
 .quiz-questions-bar:hover .value-lable:after {opacity: 1; visibility: visible;}
+.quiz-questions-bar:hover .value-lable:after {top: -35px;}
 .quiz-corrects-incorrects {width: 95px; display: inline-block; vertical-align: middle; margin-right: -4px; position: relative; }
 .quiz-status-bar .coin-numbers {background-color: #e5e5e5; border-radius: 20px; margin-left: -2px; padding: 4px 5px; width: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--fs-xs); font-weight: 500; position: relative;}
 .quiz-status-bar .coin-numbers img {max-width: 20px; }
