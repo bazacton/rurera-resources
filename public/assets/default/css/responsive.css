@@ -1310,7 +1310,7 @@ Lms Responsive Style Start
     }
     .alphabet-list-style .form-field:hover:before {
         background-color: inherit;
-        color: #343434;
+        color: #999;
     }
 }
 
