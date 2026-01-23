@@ -198,376 +198,109 @@ $rand_id = rand(99,9999);
                             <h3 class="font-16 font-weight-bold mb-10">Questions answered</h3>
                             <!-- SESSION 2 -->
                             <div class="card mb-30">
-                                <div class="card-header mb-0 font-14 border-top-0"
-                                    role="button"
-                                    data-toggle="collapse"
-                                    data-target="#report_22_01_2026"
-                                    aria-expanded="false"
-                                    aria-controls="report_22_01_2026">
 
-                                    <span>SESSION 2</span>
+                                @if(!empty($results_sessions))
+                                    @php $show_class = ''; $attempt_counter = 1; $question_no = 0; @endphp
+                                    @foreach($results_sessions as $result_id => $resultSessionArray)
+                                        @php $show_class = ($attempt_counter == 1)? 'show' : '';
+                                        $log_question_details = isset($resultSessionArray['log_question_details'])? $resultSessionArray['log_question_details'] : array();
+                                        @endphp
 
-                                    <span class="analytics-timespend">
-                                        <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                        <span>Wed, 19 Nov 25 - 20 mints</span>
-                                    </span>
+                                        <div class="card-header mb-0 font-14 border-top-0"
+                                             role="button"
+                                             data-toggle="collapse"
+                                             data-target="#attempt_questions_{{$result_id}}"
+                                             aria-expanded="false"
+                                             aria-controls="attempt_questions_{{$result_id}}">
 
-                                    <span class="analytics-cions-earned">
-                                        <img src="/assets/default/img/sidebar/all.svg" alt="coins">
-                                        <span>20 → 50</span>
-                                    </span>
-                                </div>
+                                            <span>{{isset($resultSessionArray['session_title'])? $resultSessionArray['session_title'] : ''}}</span>
 
-                                <div id="report_22_01_2026" class="collapse show" data-parent="#analyticsAccordion">
-                                    <div class="card-body pb-20">
-                                        <div class="question-result-layout-holder">
+                                            <span class="analytics-timespend">
+                                                <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
+                                                <span>{{isset($resultSessionArray['session_time'])? $resultSessionArray['session_time'] : ''}}</span>
+                                            </span>
 
-                                            <div class="question-result-layout question-status-incorrect mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#x00D7;</i>
-                                                    <span class="time-text">7.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 20 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>How do living organisms obtain and use energy?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>Plants using sunlight,</span></label></li>
-                                                                    <li><label class="lms-question-label" for="radio2"><span>Humans eating food</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Jon answered:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>Cars using petrol</span></label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="question-result-layout question-status-correct mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#10003;</i>
-                                                    <span class="time-text">2.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 19 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>Which examples show sensitivity in living organisms?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group lms-user-answer-block font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A cat running when scared</span></label></li>
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <div class="question-result-layout question-status-incorrect mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#x00D7;</i>
-                                                    <span class="time-text">7.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 18 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>How do living organisms obtain and use energy?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>False</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Jon answered:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>True</span></label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="question-result-layout question-status-incorrect mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#x00D7;</i>
-                                                    <span class="time-text">7.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 17 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>How do living organisms obtain and use energy?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Jon answered:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
-                                                                    <li><label class="lms-question-label correct" for="radio2"><span>Cars using petrol</span></label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="question-result-layout question-status-correct mb-0">
-                                                <div class="status-badge font-14">
-                                                    <i>&#10003;</i>
-                                                    <span class="time-text">2.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 16 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>Which examples show sensitivity in living organisms?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group lms-user-answer-block font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A cat running when scared</span></label></li>
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
+                                            <span class="analytics-cions-earned">
+                                                <img src="/assets/default/img/sidebar/all.svg" alt="coins">
+                                                <span>{{isset($resultSessionArray['smart_code_label'])? $resultSessionArray['smart_code_label'] : ''}}</span>
+                                            </span>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- SESSION 2 -->
-                                <div class="card-header collapsed mb-0 font-14"
-                                    role="button"
-                                    data-toggle="collapse"
-                                    data-target="#report_23_01_2026"
-                                    aria-expanded="false"
-                                    aria-controls="report_23_01_2026">
 
-                                    <span>SESSION 1</span>
 
-                                    <span class="analytics-timespend float-right">
-                                        <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                                        <span>Mon, 13 Nov 25 - 20 mints</span>
-                                    </span>
 
-                                    <span class="analytics-cions-earned float-right mr-10">
-                                        <img src="/assets/default/img/sidebar/all.svg" alt="coins">
-                                        <span>0 → 20</span>
-                                    </span>
-                                </div>
 
-                                <div id="report_23_01_2026" class="collapse" data-parent="#analyticsAccordion">
-                                    <div class="card-body">
-                                        <div class="question-result-layout-holder">
-                                            <div class="question-result-layout question-status-incorrect mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#x00D7;</i>
-                                                    <span class="time-text">7.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 20 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>How do living organisms obtain and use energy?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>Plants using sunlight,</span></label></li>
-                                                                    <li><label class="lms-question-label" for="radio2"><span>Humans eating food</span></label></li>
-                                                                </ul>
+                                        <div id="attempt_questions_{{$result_id}}" class="collapse {{$show_class}}" data-parent="#analyticsAccordion">
+                                            <div class="card-body pb-20">
+
+                                                <div class="question-result-layout-holder">
+                                                    @if( !empty( $log_question_details ))
+                                                        @foreach( $log_question_details as $log_question_array)
+                                                            @php $question_layout_template = isset($log_question_array['question_layout'])? $log_question_array['question_layout'] : '';
+                                                                $logQuestionObj = isset($log_question_array['logQuestionObj'])? $log_question_array['logQuestionObj'] : (object) array();
+                                                                $question_status = isset($logQuestionObj->status)? $logQuestionObj->status : '';
+                                                                $correct_answers = isset($logQuestionObj->correct_answer)? json_decode($logQuestionObj->correct_answer, true) : array();
+                                                                $correct_answers = array_column($correct_answers, 0);
+
+                                                                $user_answers = isset($logQuestionObj->user_answer)? json_decode($logQuestionObj->user_answer, true) : array();
+                                                                $user_answers = array_column($user_answers, 0);
+                                                                $status_class = '';
+                                                                $status_class = ($question_status == 'correct')? 'question-status-correct' : $status_class;
+                                                                $status_class = ($question_status == 'incorrect')? 'question-status-incorrect' : $status_class;
+                                                                $question_no++;
+                                                            @endphp
+
+                                                            <div class="question-result-layout {{$status_class}} mb-10">
+                                                                <div class="status-badge font-14">
+                                                                    @if($question_status == 'incorrect')
+                                                                        <i>&#x00D7;</i>
+                                                                    @endif
+                                                                    <span class="time-text">{{getTimeWithText($logQuestionObj->time_consumed)}}</span>
+                                                                </div>
+                                                                <div class="question-counts mb-10 font-14">
+                                                                    <span>Question {{$question_no}} of 20</span>
+                                                                </div>
+                                                                {!! $question_layout_template !!}
+                                                                <div class="question-area">
+                                                                    <div class="question-step">
+                                                                        <div class="lms-radio-lists">
+                                                                            <div class="lms-user-answer-block">
+                                                                                <span class="list-title">Correct answer:</span>
+                                                                                @if(!empty($correct_answers))
+                                                                                    <ul class="lms-radio-btn-group font-14">
+                                                                                        @foreach($correct_answers as $field_id => $correct_answer)
+                                                                                            <li><label class="lms-question-label" for="radio2"><span>{{$correct_answer}}</span></label></li>
+                                                                                        @endforeach
+                                                                                    </ul>
+                                                                                @endif
+                                                                            </div>
+
+                                                                            @if($question_status == 'incorrect')
+                                                                                <div class="lms-user-answer-block">
+                                                                                    <span class="list-title">{{$user->get_full_name()}} answered:</span>
+                                                                                    @if(!empty($user_answers))
+                                                                                        <ul class="lms-radio-btn-group font-14">
+                                                                                            @foreach($user_answers as $field_id => $user_answer)
+                                                                                                <li><label class="lms-question-label wrong" for="radio2"><span>{{$user_answer}}</span></label></li>
+                                                                                            @endforeach
+                                                                                        </ul>
+                                                                                    @endif
+                                                                                </div>
+                                                                            @endif
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
 
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Jon answered:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>Cars using petrol</span></label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="question-result-layout question-status-correct mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#10003;</i>
-                                                    <span class="time-text">2.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 19 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>Which examples show sensitivity in living organisms?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group lms-user-answer-block font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A cat running when scared</span></label></li>
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <div class="question-result-layout question-status-incorrect mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#x00D7;</i>
-                                                    <span class="time-text">7.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 18 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>How do living organisms obtain and use energy?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>False</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Jon answered:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>True</span></label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="question-result-layout question-status-incorrect mb-10">
-                                                <div class="status-badge font-14">
-                                                    <i>&#x00D7;</i>
-                                                    <span class="time-text">7.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 17 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>How do living organisms obtain and use energy?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Jon answered:</span>
-                                                                <ul class="lms-radio-btn-group font-14">
-                                                                    <li><label class="lms-question-label wrong" for="radio2"><span>Ice melting in heat,</span></label></li>
-                                                                    <li><label class="lms-question-label correct" for="radio2"><span>Cars using petrol</span></label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="question-result-layout question-status-correct mb-0">
-                                                <div class="status-badge font-14">
-                                                    <i>&#10003;</i>
-                                                    <span class="time-text">2.2s</span>
-                                                </div>
-                                                <div class="question-counts mb-10 font-14">
-                                                    <span>Question 16 of 20</span>
-                                                </div>
-                                                <div class="rureraform-col rureraform-col-12">
-                                                    <div class="question-label question_label">
-                                                        <span>Which examples show sensitivity in living organisms?</span>
-                                                    </div>
-                                                </div>
-                                                <div class="question-area">
-                                                    <div class="question-step">
-                                                        <div class="lms-radio-lists">
-                                                            <div class="lms-user-answer-block">
-                                                                <span class="list-title">Correct answer:</span>
-                                                                <ul class="lms-radio-btn-group lms-user-answer-block font-14">
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A cat running when scared</span></label></li>
-                                                                    <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
+                                                        @endforeach
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+
+                                        @php $attempt_counter++; @endphp
+
+                                    @endforeach
+                                @endif
                             </div>
                         </div>
                     </div>
