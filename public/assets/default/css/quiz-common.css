@@ -1594,7 +1594,7 @@ body mjx-container[display] {
 .question-next-btn:after {content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
 .prev-next-controls .question-submit-btn,
 .prev-next-controls .question-next-btn { min-width: 170px; margin-left: auto;}
-.prev-next-controls .question-submit-btn{margin-left: auto; overflow: hidden;}
+.prev-next-controls .question-submit-btn{overflow: hidden;}
 .prev-next-controls .question-next-btn {margin-right: 0;}
 .prev-next-controls .question-submit-btn svg,
 .prev-next-controls .question-next-btn svg {display: none;}
