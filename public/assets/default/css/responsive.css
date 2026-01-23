@@ -1747,7 +1747,7 @@ Lms Responsive Style Start
     body .prev-next-controls a, 
     .prev-next-controls .question-next-btn {
         margin-right: 0;
-        order: 3;
+        order: 2;
     }
     #analyticsAccordion .card-body {
         padding: 1rem;
