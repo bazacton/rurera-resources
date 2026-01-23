@@ -1971,7 +1971,6 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
       position: relative;
       margin-top: 20px;
     }
-
     .grid-lines {
       position: absolute;
       top: 0;
@@ -1983,13 +1982,11 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
       pointer-events: none;
       z-index: 0;
     }
-
     .grid-line {
       width: 1px;
       background: #f1f5f9;
       height: 100%;
     }
-
     .chart-row {
       display: flex;
       align-items: center;
@@ -1998,21 +1995,18 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
       height: 40px;
       margin-bottom: 8px;
     }
-
     .row-label {
       width: 200px;
       padding-right: 16px;
       color: var(--text-main);
       flex-shrink: 0;
     }
-
     .bar-area {
       flex: 1;
       height: 100%;
       display: flex;
       align-items: center;
     }
-
     .bar {
       height: 32px;
       border-radius: 0 6px 6px 0;
@@ -2022,10 +2016,9 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
       padding-right: 12px;
       font-size: 12px;
       font-weight: 600;
-      min-width: 40px;
+      min-width: 100px;
       transition: width 0.5s ease-out;
     }
-
     /* Bar Variants */
     .bar.master {
       background: var(--master-bg);
