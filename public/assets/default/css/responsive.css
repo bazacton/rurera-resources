@@ -1747,6 +1747,7 @@ Lms Responsive Style Start
     .quiz-questions-bar-holder .value-lable {
         position: inherit;
         transform: none;
+        display: inline-block;
     }
     .quiz-questions-bar {
         background-color: inherit;
