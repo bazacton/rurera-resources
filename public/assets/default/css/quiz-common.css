@@ -99,6 +99,7 @@
 /* ======================================================== */
 /* [01] Columns Selection */
 /* --- START: Columns Selection --- */
+* {-webkit-tap-highlight-color: transparent;}
 .rureraform-admin-editor * {box-sizing: border-box;}
 .rureraform-form {position: relative;}
 .rureraform-elements {min-height: 60px;}
