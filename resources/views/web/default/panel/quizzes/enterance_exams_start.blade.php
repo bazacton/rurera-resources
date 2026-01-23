@@ -71,7 +71,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-            <div class="quiz-status-bar mb-50 mt-15">
+            <div class="quiz-status-bar mb-md-50 mt-15">
                 <div class="questions-bar-box">
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
