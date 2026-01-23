@@ -1753,9 +1753,15 @@ Lms Responsive Style Start
         width: 100%;
         flex-direction: row-reverse;
         gap: 10px;
+        margin-right: 0;
     }
     .quiz-status-bar .coin-numbers {
         margin: 0;
+        background-color: #ffefb6;
+        color: #7A6A2A;
+        border: 1px solid #A99654;
+        padding: 6px 10px;
+        width: auto;
     }
     .quiz-questions-bar-holder .value-lable span {
         color: #2E8B57;
