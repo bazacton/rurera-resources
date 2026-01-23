@@ -1301,7 +1301,7 @@ Lms Responsive Style Start
     }
     .quiz-area-page .lms-quiz-section .questions-data-block {
         height: calc(100vh - 160px);
-        padding: 0;
+        padding: 10 0 0;
     }
     .form-field label:hover {
         border-color: #c4c3c3;
