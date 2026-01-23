@@ -1750,7 +1750,7 @@ Lms Responsive Style Start
     .questions-bar-box .quiz-questions-bar-holder {
         width: 100%;
         flex-direction: row-reverse;
-        gap: 15px;
+        gap: 10px;
     }
     .quiz-status-bar .coin-numbers {
         margin: 0;
