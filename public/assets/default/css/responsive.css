@@ -1805,7 +1805,11 @@ Lms Responsive Style Start
     .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto; width: 100%;}
     .home-sections:has(.blog-grid-card) .btn {padding-right: 10px; padding-left: 10px;}
     .referral-text a {padding: 10px;}
-    .referral-link input.link-address {width: calc(100% - 82px);}
+    .referral-link input.link-address {width: calc(100% - 90px);}
+    .referral-link .js-copy {
+        padding: 0 8px;
+        width: 85px;
+    }
     .products-top-header.lms-call-to-action button[type="submit"] {padding: 0 8px; height: 40px;}
     .products-top-header.lms-call-to-action input[type="text"] {height: 40px;}
     .progress-learning-header a {white-space: nowrap;}
