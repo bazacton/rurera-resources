@@ -718,8 +718,6 @@ Lms Responsive Style Start
     body .prev-next-controls .question-submit-btn {position: relative; margin-right: 0;}
     .question-layout-block .prev-next-controls .review-btn {margin-left: 0;}
     body .prev-next-controls {gap: 5px; flex-wrap: wrap;}
-    body .prev-next-controls a,
-    .prev-next-controls .question-next-btn {margin-right: 8px;}
     body .question-review-required {top: -40px;}
     .lms-sorting-fields {overflow: hidden; overflow-x: auto;}
     body .match-question .stems li,
