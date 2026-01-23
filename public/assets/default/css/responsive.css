@@ -1666,7 +1666,7 @@ Lms Responsive Style Start
     .emoji-passwords {gap: 10px;}
     .emoji-passwords .is_empty {height: 35px; width: 35px;}
     .login-with-emoji form {padding: 20px 0 25px;}
-    .login-password .form-group input.login_pin {max-width: 30px !important; margin: 0 2px 2px !important; font-size: 30px;}
+    .login-password .form-group input.login_pin {max-width: 35px !important; max-height: 35px; margin: 0 2px 2px !important; font-size: 30px;}
     .login-pad-icons a img {width: 35px; height: 35px;}
     .login-pad-icons {padding-bottom: 25px;}
     .quiz-topbar .container-fluid > .row {justify-content: center;}
