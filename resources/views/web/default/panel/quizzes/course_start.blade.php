@@ -588,8 +588,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
         var notifications_settings_show_message = $(".show-notifications").attr('data-show_message');
 
-        $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
-        $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
         var show_notification = false;
 
         $('.show-notifications').html('');
@@ -633,6 +631,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
             show_notification = true;
 
+        }
+        if(practice_with_review_check == true){
+            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
+            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+        }else{
+            $(".question-area-block").find('.question-next-btn').click();
         }
 
         if (show_notification == true) {
