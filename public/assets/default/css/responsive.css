@@ -716,7 +716,7 @@ Lms Responsive Style Start
     .lms-data-table h3 {margin: 0 0 15px; font-size: 20px;}
     body .prev-next-controls .review-btn,
     body .prev-next-controls .question-submit-btn {position: relative; margin-right: 0;}
-    .question-layout-block .prev-next-controls .review-btn {margin-left: 0; min-width: 170px;}
+    .question-layout-block .prev-next-controls .review-btn {margin-left: 0;}
     body .prev-next-controls {gap: 5px; flex-wrap: wrap;}
     body .prev-next-controls a,
     .prev-next-controls .question-next-btn {margin-right: 8px;}
@@ -1740,8 +1740,14 @@ Lms Responsive Style Start
     #scroll-controls {
         bottom: calc(115px + env(safe-area-inset-bottom));
     }
-    .question-layout-block .prev-next-controls {
-        justify-content: flex-start;
+    .report-btn {
+        margin-left: 0;
+        order: 3;
+    }
+    body .prev-next-controls a, 
+    .prev-next-controls .question-next-btn {
+        margin-right: 0;
+        order: 3;
     }
     #analyticsAccordion .card-body {
         padding: 1rem;
