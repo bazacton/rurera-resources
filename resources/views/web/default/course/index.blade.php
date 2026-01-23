@@ -146,17 +146,17 @@
 
 
                                             $completion_title = 'Not Started';
-                                            $completion_title = ($topic_accuracy > 0)? 'Practice Needed' : $completion_title;
-                                            $completion_title = ($topic_accuracy > 39)? 'Good' : $completion_title;
-                                            $completion_title = ($topic_accuracy > 59)? 'Very Good' : $completion_title;
-                                            $completion_title = ($topic_accuracy > 79)? 'Excellent' : $completion_title;
+                                            $completion_title = ($smart_score > 0)? 'Practice Needed' : $completion_title;
+                                            $completion_title = ($smart_score > 39)? 'Good' : $completion_title;
+                                            $completion_title = ($smart_score > 59)? 'Very Good' : $completion_title;
+                                            $completion_title = ($smart_score > 79)? 'Excellent' : $completion_title;
 
 
                                             $completion_icon = 'above_0';
-                                            $completion_icon = ($topic_accuracy > 0)? 'above_25' : $completion_icon;
-                                            $completion_icon = ($topic_accuracy > 39)? 'above_50' : $completion_icon;
-                                            $completion_icon = ($topic_accuracy > 59)? 'above_80' : $completion_icon;
-                                            $completion_icon = ($topic_accuracy > 79)? 'above_80' : $completion_icon;
+                                            $completion_icon = ($smart_score > 0)? 'above_25' : $completion_icon;
+                                            $completion_icon = ($smart_score > 39)? 'above_50' : $completion_icon;
+                                            $completion_icon = ($smart_score > 59)? 'above_80' : $completion_icon;
+                                            $completion_icon = ($smart_score > 79)? 'above_80' : $completion_icon;
 
                                             //$total_completion = 40;
                                                 @endphp
