@@ -1299,6 +1299,9 @@ Lms Responsive Style Start
     .table-responsive th {
         white-space: nowrap;
     }
+    .quiz-area-page .lms-quiz-section .questions-data-block {
+        height: calc(100vh - 160px);
+    }
 }
 
 @media screen and (max-width: 640px) {
