@@ -1728,28 +1728,33 @@ Lms Responsive Style Start
     #scroll-controls {
         bottom: calc(115px + env(safe-area-inset-bottom));
     }
-    .quiz-status-bar {
-        flex-wrap: wrap;
-        position: relative;
-    }
-    .questions-bar-box {
-        width: calc(100% - 30px);
-    }
-    .quiz-status-bar .quiz-time-bar {
-        width: 100%;
-        margin: 20px 0 0 0;
-        justify-content: center;
-    }
-    button.setting-modal-btn {
-        position: absolute;
-        right: 0;
-        top: 3px;
-    }
     .question-layout-block .prev-next-controls {
         justify-content: flex-start;
     }
     #analyticsAccordion .card-body {
         padding: 1rem;
+    }
+    .questions-bar-box {
+        width: auto;
+    }
+    .questions-bar-box .quiz-questions-bar-holder {
+        width: 100%;
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+    .quiz-status-bar .coin-numbers {
+        margin: 0;
+    }
+    .quiz-questions-bar-holder .value-lable {
+        position: inherit;
+        transform: none;
+    }
+    .quiz-questions-bar {
+        background-color: inherit;
+        height: auto;
+        border-radius: 0;
+        width: 100%;
+        position: relative;
     }
 }
 @media screen and (max-width: 480px) {
