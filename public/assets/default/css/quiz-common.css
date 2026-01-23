@@ -1217,7 +1217,7 @@ body mjx-container[display] {
     margin-top: 15px;
 }
 .preview-question-area .question-layout::selection {
-    background-color: inherit;
+    background-color: transparent;
 }
 .cloud_nner_text li span{
     display: inline-block;
