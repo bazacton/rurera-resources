@@ -257,7 +257,7 @@ $rand_id = rand(99,9999);
                                                                     <span class="time-text">{{getTimeWithText($logQuestionObj->time_consumed)}}</span>
                                                                 </div>
                                                                 <div class="question-counts mb-10 font-14">
-                                                                    <span>Question {{$question_no}} of 20</span>
+                                                                    <span>Question {{$question_no}} of {{$attempted_questions}}</span>
                                                                 </div>
                                                                 {!! $question_layout_template !!}
                                                                 <div class="question-area">
