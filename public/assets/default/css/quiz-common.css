@@ -447,7 +447,7 @@ input.droppable-field {
     padding: 0;
     border: 0;
     overflow: hidden;
-    margin: 15px 0 30px;
+    margin: 15px 0 0;
     border-radius: 0;
 }
 .explaination-btn {
