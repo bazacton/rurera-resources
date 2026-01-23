@@ -160,7 +160,6 @@ body .spell-question-area .question-label span {text-align: center;}
 .words-count span {margin-right: 5px;}
 .words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
 .spell-links {display: flex; gap: 15px 25px; align-items: center; margin-top: 10px;}
-.spell-links a {color: var(--primary);}
 .spell-links .rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {margin-top: 15px;}
 /*Spellings Landing page Style End*/
 
