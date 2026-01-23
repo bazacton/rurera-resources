@@ -150,7 +150,7 @@ $rand_id = rand(99,9999);
                             <div class="card p-4"><canvas id="usersStatisticsChart"></canvas></div>
                         </div>
                         <!-- Performance Chart -->
-                        
+
                         <div class="card chart-card mb-30">
                             <div class="card-body p-4">
                                 <div class="chart-title font-16 mb-10 font-weight-bold">Performance by topic</div>
@@ -163,60 +163,36 @@ $rand_id = rand(99,9999);
 
                                 <div class="chart-container font-14 font-weight-500">
 
-                                <!-- Topics -->
-                                <div class="chart-row">
-                                    <div class="row-label">Metals and non-metals</div>
-                                    <div class="bar-area">
-                                    <div class="bar master" style="width: 95%;">Master</div>
-                                    </div>
-                                </div>
+                                @if($topicSubParts->count() > 0)
+                                        @foreach( $topicSubParts as $topicSubPartItemObj)
+                                            @php
+                                            $PartItemsPerformance = $quiz->QuizUserPartItemsPerformance->where('topic_part_item_id', $topicSubPartItemObj->id)->where('year_id', $quiz->year_id)->where('user_id', $user->id)->first();
+                                            $smart_score = isset($PartItemsPerformance->smart_score)? $PartItemsPerformance->smart_score : 0;
 
-                                <div class="chart-row">
-                                    <div class="row-label">Comparing metals and non-metals</div>
-                                    <div class="bar-area">
-                                    <div class="bar master" style="width: 88%;">Master</div>
-                                    </div>
-                                </div>
 
-                                <div class="chart-row">
-                                    <div class="row-label">Metal mixtures</div>
-                                    <div class="bar-area">
-                                    <div class="bar strong" style="width: 78%;">Strong</div>
-                                    </div>
-                                </div>
+                                            $progress_title = 'Not Started';
+                                            $progress_title = ($smart_score > 0)? 'Practice Needed' : $progress_title;
+                                            $progress_title = ($smart_score > 39)? 'Good' : $progress_title;
+                                            $progress_title = ($smart_score > 59)? 'Very Good' : $progress_title;
+                                            $progress_title = ($smart_score > 79)? 'Excellent' : $progress_title;
 
-                                <div class="chart-row">
-                                    <div class="row-label">Using the properties of materials to separate</div>
-                                    <div class="bar-area">
-                                    <div class="bar strong" style="width: 72%;">Strong</div>
-                                    </div>
-                                </div>
+                                            @endphp
 
-                                <div class="chart-row">
-                                    <div class="row-label">mixtures</div>
-                                    <div class="bar-area">
-                                    <div class="bar strong" style="width: 65%;">Strong</div>
-                                    </div>
-                                </div>
 
-                                <div class="chart-row">
-                                    <div class="row-label">Acids and alkalis</div>
-                                    <div class="bar-area">
-                                    <div class="bar good" style="width: 55%;">Good</div>
-                                    </div>
-                                </div>
+                                            <div class="chart-row">
+                                                <div class="row-label">{{$topicSubPartItemObj->title}}</div>
+                                                <div class="bar-area">
+                                                    <div class="bar master" style="width: {{$smart_score}}%;">{{$progress_title}}</div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                @endif
 
-                                <div class="chart-row">
-                                    <div class="row-label">Indicators and the pH scale</div>
-                                    <div class="bar-area">
-                                    <div class="bar good" style="width: 45%;">Good</div>
-                                    </div>
-                                </div>
 
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Accordion -->
                         <div class="accordion" id="analyticsAccordion">
                             <h3 class="font-16 font-weight-bold mb-10">Questions answered</h3>
@@ -245,7 +221,7 @@ $rand_id = rand(99,9999);
                                 <div id="report_22_01_2026" class="collapse show" data-parent="#analyticsAccordion">
                                     <div class="card-body pb-20">
                                         <div class="question-result-layout-holder">
-                                            
+
                                             <div class="question-result-layout question-status-incorrect mb-10">
                                                 <div class="status-badge font-14">
                                                     <i>&#x00D7;</i>
@@ -269,7 +245,7 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>Humans eating food</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                            
+
                                                             <div class="lms-user-answer-block">
                                                                 <span class="list-title">Jon answered:</span>
                                                                 <ul class="lms-radio-btn-group font-14">
@@ -281,7 +257,7 @@ $rand_id = rand(99,9999);
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="question-result-layout question-status-correct mb-10">
                                                 <div class="status-badge font-14">
                                                     <i>&#10003;</i>
@@ -305,14 +281,14 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                        
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
 
-                                            
+
                                             <div class="question-result-layout question-status-incorrect mb-10">
                                                 <div class="status-badge font-14">
                                                     <i>&#x00D7;</i>
@@ -335,7 +311,7 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>False</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                            
+
                                                             <div class="lms-user-answer-block">
                                                                 <span class="list-title">Jon answered:</span>
                                                                 <ul class="lms-radio-btn-group font-14">
@@ -374,7 +350,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                             </div>
 
-                                            
+
                                             <div class="question-result-layout question-status-correct mb-0">
                                                 <div class="status-badge font-14">
                                                     <i>&#10003;</i>
@@ -398,13 +374,13 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                        
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -455,7 +431,7 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>Humans eating food</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                            
+
                                                             <div class="lms-user-answer-block">
                                                                 <span class="list-title">Jon answered:</span>
                                                                 <ul class="lms-radio-btn-group font-14">
@@ -467,7 +443,7 @@ $rand_id = rand(99,9999);
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="question-result-layout question-status-correct mb-10">
                                                 <div class="status-badge font-14">
                                                     <i>&#10003;</i>
@@ -491,14 +467,14 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                        
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
 
-                                            
+
                                             <div class="question-result-layout question-status-incorrect mb-10">
                                                 <div class="status-badge font-14">
                                                     <i>&#x00D7;</i>
@@ -521,7 +497,7 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>False</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                            
+
                                                             <div class="lms-user-answer-block">
                                                                 <span class="list-title">Jon answered:</span>
                                                                 <ul class="lms-radio-btn-group font-14">
@@ -560,7 +536,7 @@ $rand_id = rand(99,9999);
                                                 </div>
                                             </div>
 
-                                            
+
                                             <div class="question-result-layout question-status-correct mb-0">
                                                 <div class="status-badge font-14">
                                                     <i>&#10003;</i>
@@ -584,7 +560,7 @@ $rand_id = rand(99,9999);
                                                                     <li><label class="lms-question-label" for="radio2"><span>A sunflower turning to light</span></label></li>
                                                                 </ul>
                                                             </div>
-                                                        
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -620,12 +596,24 @@ $rand_id = rand(99,9999);
     var usersStatisticsChart = document.getElementById("usersStatisticsChart").getContext('2d');
     var chart = {};
 
+    var chart_columns = [];
+    var chart_values = [];
+
+    @if($attempted_questions_list->count() > 0)
+        @php $question_counter = 1; @endphp
+            @foreach($attempted_questions_list as $attemptedQuestionObj)
+                chart_columns.push({{ $question_counter }});
+                chart_values.push({{ $attemptedQuestionObj->smart_score }});
+                @php $question_counter++; @endphp
+            @endforeach
+    @endif
+
     makeStatisticsChart(
         'usersStatisticsChart',
         usersStatisticsChart,
-        'Smart Score',
-        ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        [38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        '',
+        chart_columns,   // ✅ labels
+        chart_values     // ✅ data
     );
 
     function makeStatisticsChart(name, section, badge, labels, datasets) {
@@ -646,9 +634,10 @@ $rand_id = rand(99,9999);
                 }]
             },
             options: {
-
-                legend: {
-                    display: false
+                plugins: {
+                    legend: {
+                        display: false
+                    }
                 },
                 scales: {
                     yAxes: [{
