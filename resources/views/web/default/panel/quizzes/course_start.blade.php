@@ -10,6 +10,8 @@
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
 $timer_counter = isset($start_timer)? $start_timer : 0;
+$time_consumed = isset($time_consumed)? $time_consumed : 0;
+$attempted_questions = isset($attempted_questions)? $attempted_questions : 0;
 if( $duration_type == 'per_question'){
 $timer_counter = $time_interval;
 }
@@ -17,11 +19,14 @@ if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
 
+
+
 $correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 @php $total_questions = 10; @endphp
 <div class="content-section">
+    {{$timer_counter}} --- {{$attempted_questions}}
 
     <section class="lms-quiz-section">
 
