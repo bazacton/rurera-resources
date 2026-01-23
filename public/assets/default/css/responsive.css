@@ -1804,7 +1804,7 @@ Lms Responsive Style Start
     }
     .time-box {
         background-color: inherit;
-        min-width: auto;
+        min-width: 18px;
         padding: 0;
         color: #000;
         border-radius: 0;
