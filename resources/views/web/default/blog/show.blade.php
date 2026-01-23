@@ -163,8 +163,7 @@
     </script>
 
     <script src="/assets/default/js/parts/comment.min.js"></script>
-    <script src="https://unpkg.com" crossorigin></script>
-    <script src="https://unpkg.com" crossorigin></script>
+    <script src="https://unpkg.com/my-package" crossorigin></script>
     <!-- Load Babel for JSX (optional, but highly recommended) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- Load your React component code -->
