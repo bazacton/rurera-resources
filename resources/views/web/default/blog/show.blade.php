@@ -5,6 +5,9 @@
 @endpush
 
 @section('content')
+    <!-- ... existing HTML ... -->
+    <div id="react-container"></div>
+    <!-- ... existing HTML ... -->
     <section class="cart-banner position-relative single-post-subheader">
         <div class="container">
             <div class="row">
@@ -160,4 +163,10 @@
     </script>
 
     <script src="/assets/default/js/parts/comment.min.js"></script>
+    <script src="https://unpkg.com" crossorigin></script>
+    <script src="https://unpkg.com" crossorigin></script>
+    <!-- Load Babel for JSX (optional, but highly recommended) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Load your React component code -->
+    <script type="text/babel" src="/asset/default/js/my-component.js"></script>
 @endpush
