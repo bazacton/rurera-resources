@@ -1746,7 +1746,8 @@ Lms Responsive Style Start
     #analyticsAccordion .card-body {
         padding: 1rem;
     }
-    .questions-bar-box {
+    .questions-bar-box,
+    .quiz-status-bar:has(.timer-wrap.rurera-hide) .questions-bar-box {
         width: auto;
     }
     .questions-bar-box .quiz-questions-bar-holder {
