@@ -1764,7 +1764,7 @@ Lms Responsive Style Start
         width: auto;
     }
     .quiz-questions-bar-holder .value-lable span {
-        color: #2E8B57;
+        color: #333;
         font-size: 0.9rem;
     }
     .quiz-questions-bar-holder .value-lable {
