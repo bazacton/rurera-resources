@@ -3,7 +3,7 @@
 function MyComponent() {
   // You can use JSX here thanks to Babel
   return (
-    <div>
+    <div className="mb-30">
       <h2>Hello from React!</h2>
       <p>This is a simple component.</p>
       <button className="btn btn-success">Button example</button>
