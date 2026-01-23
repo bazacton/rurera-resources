@@ -1758,14 +1758,30 @@ Lms Responsive Style Start
     .quiz-questions-bar-holder .value-lable {
         position: inherit;
         transform: none;
-        display: inline-block;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 10px;
+        padding: 6px 10px;
+        border-radius: 20px;
+    }
+    .quiz-questions-bar-holder .value-lable:after {
+        position: relative;
+        height: auto;
+        background-color: inherit;
+        top: 0;
+        margin-top: 0;
+        line-height: normal;
+        padding: 0;
+        opacity: 1;
+        min-width: auto;
     }
     .quiz-questions-bar {
         background-color: inherit;
         height: auto;
         border-radius: 0;
-        width: 100%;
-        position: relative;
+        width: auto;
     }
     .time-box {
         background-color: inherit;
