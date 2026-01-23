@@ -86,7 +86,7 @@
                         <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                             Practice Words
                         </a>
-                        <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup">
+                        <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup text-gray">
                         <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
                         <div class="lms-tooltip dropdown-menu">
                             <div class="tooltip-box">
