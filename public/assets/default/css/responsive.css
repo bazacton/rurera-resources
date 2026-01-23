@@ -1757,6 +1757,10 @@ Lms Responsive Style Start
     .quiz-status-bar .coin-numbers {
         margin: 0;
     }
+    .quiz-questions-bar-holder .value-lable span {
+        color: #2E8B57;
+        font-size: 0.9rem;
+    }
     .quiz-questions-bar-holder .value-lable {
         position: inherit;
         transform: none;
@@ -1764,9 +1768,13 @@ Lms Responsive Style Start
         text-align: center;
         justify-content: center;
         flex-direction: row-reverse;
-        gap: 10px;
-        padding: 6px 10px;
+        gap: 5px;
+        padding: 7px 12px;
         border-radius: 20px;
+        background-color: #e5ffeb;
+        color: #2E8B57;
+        border: 1px solid #7FC39A;
+        margin-left: 0;
     }
     .quiz-questions-bar-holder .value-lable:after {
         position: relative;
@@ -1778,6 +1786,8 @@ Lms Responsive Style Start
         padding: 0;
         opacity: 1;
         min-width: auto;
+        color: #2E8B57;
+        font-size: 0.9rem;
     }
     .quiz-questions-bar {
         background-color: inherit;
