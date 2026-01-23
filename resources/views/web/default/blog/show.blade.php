@@ -168,5 +168,5 @@
     <!-- Load Babel for JSX (optional, but highly recommended) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- Load your React component code -->
-    <script type="text/babel" src="/asset/default/js/my-component.js"></script>
+    <script type="text/babel" src="/assets/default/js/my-component.js"></script>
 @endpush
