@@ -1768,7 +1768,7 @@ Lms Responsive Style Start
         font-size: 0.9rem;
     }
     .quiz-questions-bar-holder .value-lable {
-        position: inherit;
+        position: initial;
         transform: none;
         display: inline-flex;
         text-align: center;
