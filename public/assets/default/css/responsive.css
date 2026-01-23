@@ -1306,6 +1306,10 @@ Lms Responsive Style Start
         border-color: #c4c3c3;
         color: #343434;
     }
+    .alphabet-list-style .form-field:hover:before {
+        background-color: inherit;
+        color: #343434;
+    }
 }
 
 @media screen and (max-width: 640px) {
