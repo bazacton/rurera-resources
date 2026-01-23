@@ -1302,6 +1302,10 @@ Lms Responsive Style Start
     .quiz-area-page .lms-quiz-section .questions-data-block {
         height: calc(100vh - 160px);
     }
+    .form-field label:hover {
+        border-color: #c4c3c3;
+        color: #343434;
+    }
 }
 
 @media screen and (max-width: 640px) {
