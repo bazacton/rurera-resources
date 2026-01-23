@@ -100,7 +100,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                 </div>
             </div>
             <div class="justify-content-center row">
-                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto preview-question-content px-0">
+                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto preview-question-content">
                     
                     <div class="question-step quiz-complete" style="display:none">
                         <div class="question-layout-block">
