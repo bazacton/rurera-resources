@@ -1767,6 +1767,14 @@ Lms Responsive Style Start
         width: 100%;
         position: relative;
     }
+    .time-box {
+        background-color: inherit;
+        min-width: auto;
+        padding: 0;
+        color: #000;
+        border-radius: 0;
+        font-size: var(--fs-md);
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
