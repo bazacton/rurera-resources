@@ -73,7 +73,7 @@ $started_already = isset($started_already)? $started_already : false;
                                 <p class="font-16 text-dark-charcoal pt-5 text-gray">Earn Coins by answering questions and completing</p>
                             </div>
                             <div class="learn-chats row mb-35">
-                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="col-lg-4 col-4">
                                 <div class="chat-box left-bottom">
                                     <div class="avatar active">
                                     <img src="/assets/default/svgs/avatar-left-top.svg" alt="avatar-left-top">
@@ -83,12 +83,12 @@ $started_already = isset($started_already)? $started_already : false;
                                     </div>
                                 </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="col-lg-4 col-4">
                                 <div class="avatar main-avatar">
                                     <img src="/assets/default/svgs/avatar-main.svg" alt="avatar-main">
                                 </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-12">
+                                <div class="col-lg-4 col-4">
                                 <div class="chat-box left-top">
                                     <div class="avatar">
                                     <img src="/assets/default/svgs/avatar-right-top.svg" alt="avatar-right-top">
