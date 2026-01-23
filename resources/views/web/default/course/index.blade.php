@@ -139,10 +139,10 @@
                                             $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
                                             $completion_class = 'accuracy-not-started';
-                                            $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
-                                            $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
-                                            $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
-                                            $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
+                                            $completion_class = ($smart_score > 0)? 'accuracy-practice-needed' : $completion_class;
+                                            $completion_class = ($smart_score > 39)? 'accuracy-good' : $completion_class;
+                                            $completion_class = ($smart_score > 59)? 'accuracy-very-good' : $completion_class;
+                                            $completion_class = ($smart_score > 79)? 'accuracy-excellent' : $completion_class;
 
 
                                             $completion_title = 'Not Started';
