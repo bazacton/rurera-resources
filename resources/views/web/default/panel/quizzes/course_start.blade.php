@@ -584,11 +584,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
         $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+        var show_notification = false;
 
         $('.show-notifications').html('');
 
         if(return_data.incorrect_flag == true && incorrect_sound == true && sound_check == true){
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+            show_notification = true;
         }
 
 
@@ -605,10 +607,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
             $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
+            show_notification = true;
         }
 
         if(return_data.incorrect_flag == false && correct_sound == true && sound_check == true){
             $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+            show_notification = true;
         }
 
         if(return_data.incorrect_flag == false && correct_answer_explaination == 1 && practice_with_review_check == true){
@@ -621,7 +625,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".total-earned-coins").html(earned_coins);
             $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
             $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
+            show_notification = true;
 
+        }
+
+        if (show_notification == true) {
+            $('html, body').animate({
+                scrollTop: $('.show-notifications').offset().top
+            }, 600);
         }
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
