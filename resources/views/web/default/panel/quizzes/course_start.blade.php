@@ -630,9 +630,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
         if (show_notification == true) {
-            $('html, body').animate({
-                scrollTop: $('.show-notifications').offset().top
-            }, 600);
+            const el = document.querySelector('.show-notifications');
+            if (el) {
+                el.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
