@@ -6,7 +6,7 @@ function MyComponent() {
     <div className="mb-30">
       <h2>Hello from React!</h2>
       <p>This is a simple component.</p>
-      <button className="btn btn-success">Button example</button>
+      <button className="btn btn-primary">Button example</button>
     </div>
   );
 }
