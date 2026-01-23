@@ -19,7 +19,9 @@ if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
 
-
+if($time_consumed > 0){
+    $timer_counter = $time_consumed;
+}
 
 $correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
