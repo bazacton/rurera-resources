@@ -1541,7 +1541,7 @@ body mjx-container[display] {
 /* [51] Quiz prev-next-controls */
 /* --- START: Quiz prev-next-controls --- */
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
-.prev-next-controls a {margin: 0 7px 0 0; position: relative;}
+.prev-next-controls a {position: relative;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
 .question-layout-block .prev-next-controls {border-top: 2px dashed #ddd; position: fixed; width: 850px; bottom: -50px; left: 50%; transform: translateX(-50%); background-color: #fff; min-height: 100px; padding: 25px 0; z-index: 1;}
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500; background-image: none; box-shadow: none;}
