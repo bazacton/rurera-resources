@@ -5329,15 +5329,16 @@
         padding: 20px 0 25px;
     }
     .login-password .form-group input.login_pin {
-        max-width: 35px !important;
+        max-width: none !important;
         margin: 0 2px 2px !important;
         font-size: 30px;
         max-height: 35px;
+        width: 15% !important;
     }
     .login-pad-icons a {
         padding: 8px 8px;
         font-size: 24px;
-        flex-basis: 28%;
+        flex-basis: 20%;
         justify-content: center;
     }
     .login-pad-icons a img {
