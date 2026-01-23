@@ -26,7 +26,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 @endphp
 @php $total_questions = 10; @endphp
 <div class="content-section">
-    {{$timer_counter}} --- {{$attempted_questions}}
+    {{$time_consumed}} --- {{$attempted_questions}}
 
     <section class="lms-quiz-section">
 
