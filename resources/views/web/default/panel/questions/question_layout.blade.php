@@ -68,7 +68,8 @@
 
             <span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
                 <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                ( {{$question_no}}/<span class="total-no-of-questions">{{$total_questions}}</span> Questions )
+                Question: {{$question_no}}
+                <span class="total-no-of-questions rurera-hide">{{$total_questions}}</span>
             </span>
             {!! $question_layout !!}
 
