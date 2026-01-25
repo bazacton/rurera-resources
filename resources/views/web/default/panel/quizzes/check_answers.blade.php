@@ -46,7 +46,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                 </div>
             </div>
 
-            <div class="question-area-block" data-questions_layout="{{json_encode($questions_layout)}}">
+            <div class="question-area-block">
                 <div class="chart-summary-fields result-layout-summary">
                     <div class="sats-summary">
                         <div class="row">
@@ -135,80 +135,68 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                         </div>
                     </div>
                 </div>
-                <div class="position-relative mb-30 graph-box">
-                    <h2 class="font-18 mb-15 font-weight-bold">Grouping and identifying organisms</h2>
-                    <img src="/assets/default/img/canvos-img.jpeg" alt="canvos-img">
-                </div>
-                <!-- Performance Chart -->
-                <div class="card chart-card mb-30">
-                    <div class="card-body p-4">
-                        <div class="chart-header mb-4">
-                        <div class="chart-title">Performance by topic</div>
-                        <div class="chart-desc text-muted">
-                            The bar chart shows how likely you are to get an average question correct in each topic.
-                            This is based on your answers in this mock test. It will increase with practice!
-                        </div>
-                        </div>
 
-                        <div class="chart-container">
-                        
-                        <!-- Topics -->
-                        <div class="chart-row">
-                            <div class="row-label">Metals and non-metals</div>
-                            <div class="bar-area">
-                            <div class="bar master" style="width: 95%;">Master</div>
-                            </div>
-                        </div>
 
-                        <div class="chart-row">
-                            <div class="row-label">Comparing metals and non-metals</div>
-                            <div class="bar-area">
-                            <div class="bar master" style="width: 88%;">Master</div>
-                            </div>
-                        </div>
-
-                        <div class="chart-row">
-                            <div class="row-label">Metal mixtures</div>
-                            <div class="bar-area">
-                            <div class="bar strong" style="width: 78%;">Strong</div>
-                            </div>
-                        </div>
-
-                        <div class="chart-row">
-                            <div class="row-label">Using the properties of materials to separate</div>
-                            <div class="bar-area">
-                            <div class="bar strong" style="width: 72%;">Strong</div>
-                            </div>
-                        </div>
-
-                        <div class="chart-row">
-                            <div class="row-label">mixtures</div>
-                            <div class="bar-area">
-                            <div class="bar strong" style="width: 65%;">Strong</div>
-                            </div>
-                        </div>
-
-                        <div class="chart-row">
-                            <div class="row-label">Acids and alkalis</div>
-                            <div class="bar-area">
-                            <div class="bar good" style="width: 55%;">Good</div>
-                            </div>
-                        </div>
-
-                        <div class="chart-row">
-                            <div class="row-label">Indicators and the pH scale</div>
-                            <div class="bar-area">
-                            <div class="bar good" style="width: 45%;">Good</div>
-                            </div>
-                        </div>
-
-                        </div>
-                    </div>
-                </div>
                 <div class="question-result-layout-holder">
-                    @if( !empty( $questions_layout ))
-                        @foreach( $questions_layout as $question_layout_template)
-                            {!! $question_layout_template !!}
+                    @if( !empty( $log_question_details ))
+                        @php $show_class = ''; $attempt_counter = 1; $question_no = $attempted_questions; @endphp
+                        @foreach( $log_question_details as $log_question_array)
+                            @php $question_layout_template = isset($log_question_array['question_layout'])? $log_question_array['question_layout'] : '';
+                            $logQuestionObj = isset($log_question_array['logQuestionObj'])? $log_question_array['logQuestionObj'] : (object) array();
+                            $question_status = isset($logQuestionObj->status)? $logQuestionObj->status : '';
+                            $correct_answers = isset($logQuestionObj->correct_answer)? json_decode($logQuestionObj->correct_answer, true) : array();
+                            $correct_answers = array_column($correct_answers, 0);
+
+                            $user_answers = isset($logQuestionObj->user_answer)? json_decode($logQuestionObj->user_answer, true) : array();
+                            $user_answers = array_column($user_answers, 0);
+                            $status_class = '';
+                            $status_class = ($question_status == 'correct')? 'question-status-correct' : $status_class;
+                            $status_class = ($question_status == 'incorrect')? 'question-status-incorrect' : $status_class;
+                            @endphp
+
+                            <div class="question-result-layout {{$status_class}} mb-10">
+                                <div class="status-badge font-14">
+                                    @if($question_status == 'incorrect')
+                                        <i>&#x00D7;</i>
+                                    @endif
+                                    <span class="time-text">{{getTimeWithText($logQuestionObj->time_consumed)}}</span>
+                                </div>
+                                <div class="question-counts mb-10 font-14">
+                                    <span>Question {{$question_no}} of {{$attempted_questions}}</span>
+                                </div>
+                                {!! $question_layout_template !!}
+                                <div class="question-area">
+                                    <div class="question-step">
+                                        <div class="lms-radio-lists">
+                                            <div class="lms-user-answer-block">
+                                                <span class="list-title">Correct answer:</span>
+                                                @if(!empty($correct_answers))
+                                                    <ul class="lms-radio-btn-group font-14">
+                                                        @foreach($correct_answers as $field_id => $correct_answer)
+                                                            <li><label class="lms-question-label" for="radio2"><span>{{$correct_answer}}</span></label></li>
+                                                        @endforeach
+                                                    </ul>
+                                                @endif
+                                            </div>
+
+                                            @if($question_status == 'incorrect')
+                                                <div class="lms-user-answer-block">
+                                                    <span class="list-title">{{$user->get_full_name()}} answered:</span>
+                                                    @if(!empty($user_answers))
+                                                        <ul class="lms-radio-btn-group font-14">
+                                                            @foreach($user_answers as $field_id => $user_answer)
+                                                                <li><label class="lms-question-label wrong" for="radio2"><span>{{$user_answer}}</span></label></li>
+                                                            @endforeach
+                                                        </ul>
+                                                    @endif
+                                                </div>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @php $question_no--; @endphp
                         @endforeach
                     @endif
                 </div>

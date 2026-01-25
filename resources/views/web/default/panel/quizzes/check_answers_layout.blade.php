@@ -1,3 +1,5 @@
+@php $rand_no = rand(99,9999); @endphp
+<link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css?ver={{$rand_no}}">
 @php
 $attempted_questions = $attempt_questions_list->count();
 $total_questions = is_array( $questions_list )? count($questions_list): 0;
@@ -92,13 +94,66 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
     </div>
 </div>
 
-<div class="col-lg-12 col-md-12 col-sm-12 mt-10">
-    <div class="question-area-block" data-questions_layout="{{json_encode($questions_layout)}}">
-        @if( !empty( $questions_layout ))
-            @foreach( $questions_layout as $question_layout_template)
-                {!! $question_layout_template !!}
-            @endforeach
-        @endif
-    </div>
+<div class="question-result-layout-holder">
+    @if( !empty( $log_question_details ))
+        @php $show_class = ''; $attempt_counter = 1; $question_no = $attempted_questions; @endphp
+        @foreach( $log_question_details as $log_question_array)
+            @php $question_layout_template = isset($log_question_array['question_layout'])? $log_question_array['question_layout'] : '';
+                            $logQuestionObj = isset($log_question_array['logQuestionObj'])? $log_question_array['logQuestionObj'] : (object) array();
+                            $question_status = isset($logQuestionObj->status)? $logQuestionObj->status : '';
+                            $correct_answers = isset($logQuestionObj->correct_answer)? json_decode($logQuestionObj->correct_answer, true) : array();
+                            $correct_answers = array_column($correct_answers, 0);
 
+                            $user_answers = isset($logQuestionObj->user_answer)? json_decode($logQuestionObj->user_answer, true) : array();
+                            $user_answers = array_column($user_answers, 0);
+                            $status_class = '';
+                            $status_class = ($question_status == 'correct')? 'question-status-correct' : $status_class;
+                            $status_class = ($question_status == 'incorrect')? 'question-status-incorrect' : $status_class;
+            @endphp
+
+            <div class="question-result-layout {{$status_class}} mb-10">
+                <div class="status-badge font-14">
+                    @if($question_status == 'incorrect')
+                        <i>&#x00D7;</i>
+                    @endif
+                    <span class="time-text">{{getTimeWithText($logQuestionObj->time_consumed)}}</span>
+                </div>
+                <div class="question-counts mb-10 font-14">
+                    <span>Question {{$question_no}} of {{$attempted_questions}}</span>
+                </div>
+                {!! $question_layout_template !!}
+                <div class="question-area">
+                    <div class="question-step">
+                        <div class="lms-radio-lists">
+                            <div class="lms-user-answer-block">
+                                <span class="list-title">Correct answer:</span>
+                                @if(!empty($correct_answers))
+                                    <ul class="lms-radio-btn-group font-14">
+                                        @foreach($correct_answers as $field_id => $correct_answer)
+                                            <li><label class="lms-question-label" for="radio2"><span>{{$correct_answer}}</span></label></li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </div>
+
+                            @if($question_status == 'incorrect')
+                                <div class="lms-user-answer-block">
+                                    <span class="list-title">{{$user->get_full_name()}} answered:</span>
+                                    @if(!empty($user_answers))
+                                        <ul class="lms-radio-btn-group font-14">
+                                            @foreach($user_answers as $field_id => $user_answer)
+                                                <li><label class="lms-question-label wrong" for="radio2"><span>{{$user_answer}}</span></label></li>
+                                            @endforeach
+                                        </ul>
+                                    @endif
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @php $question_no--; @endphp
+        @endforeach
+    @endif
 </div>
