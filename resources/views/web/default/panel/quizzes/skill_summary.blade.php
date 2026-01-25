@@ -200,7 +200,7 @@ $rand_id = rand(99,9999);
                             <div class="card mb-30">
 
                                 @if(!empty($results_sessions))
-                                    @php $show_class = ''; $attempt_counter = 1; $question_no = 0; @endphp
+                                    @php $show_class = ''; $attempt_counter = 1; $question_no = $attempted_questions_list->count(); @endphp
                                     @foreach($results_sessions as $result_id => $resultSessionArray)
                                         @php $show_class = ($attempt_counter == 1)? 'show' : '';
                                         $log_question_details = isset($resultSessionArray['log_question_details'])? $resultSessionArray['log_question_details'] : array();
@@ -246,7 +246,6 @@ $rand_id = rand(99,9999);
                                                                 $status_class = '';
                                                                 $status_class = ($question_status == 'correct')? 'question-status-correct' : $status_class;
                                                                 $status_class = ($question_status == 'incorrect')? 'question-status-incorrect' : $status_class;
-                                                                $question_no++;
                                                             @endphp
 
                                                             <div class="question-result-layout {{$status_class}} mb-10">
@@ -291,6 +290,7 @@ $rand_id = rand(99,9999);
                                                                 </div>
                                                             </div>
 
+                                                            @php $question_no--; @endphp
                                                         @endforeach
                                                     @endif
                                                 </div>
