@@ -19,6 +19,7 @@ $single_question = isset($single_question)? $single_question : false;
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 
 
+<script src="/assets/default/js/admin/question-create.js?ver={{$rand_id}}"></script>
 
 <style>
 
@@ -621,12 +622,17 @@ function decodeHtml(html) {
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            url: '/admin/questions-generator/generate_question_builder_layout',
+            url: '/admin/questions-generator/generate_question_builder_layout1',
             data: {'question_id': question_id, 'question_index': question_index},
             success: function (return_data) {
+
                 rurera_remove_loader(loaderDiv, 'button');
+                $('.question-builder-area [data-toggle="summernote"]').each(function () {
+                    $(this).summernote('destroy');
+                    $(this).summernote();
+                });
                 $('.question-builder-area').html('');
-                $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
+                //$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
             }
         });
     });
@@ -635,8 +641,17 @@ function decodeHtml(html) {
     }
 
  $("body").on("click", ".question-builder-layout", function (t) {
+     var default_question_id = $(".part_item_selection").attr('data-default_question_id');
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
+     if(default_question_id != question_id) {
+         var topic_part_item_id = $(this).attr('data-topic_part_item_id');
+         var questions_bulk_list_id = $(this).attr('data-questions_bulk_list_id');
+         var loaderDiv = $('.tab-content');
+         rurera_loader(loaderDiv, 'button');
+         window.location.href = '/admin/questions-generator/view-api-response/'+questions_bulk_list_id+'/'+topic_part_item_id+'/'+question_id;
+         return;
+     }
 	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
 	 var similiarity_responses1 = $('.questions-nav-bar').attr('data-similiarity_responses');
