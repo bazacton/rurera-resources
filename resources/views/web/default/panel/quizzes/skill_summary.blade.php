@@ -370,25 +370,39 @@ $rand_id = rand(99,9999);
                 plugins: {
                     legend: {
                         display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function (tooltipItems) {
+                                // X-axis label
+                                return 'Question No: ' + tooltipItems[0].label;
+                            },
+                            label: function (tooltipItem) {
+                                // Y-axis value
+                                return ' Smart Score: ' + tooltipItem.raw;
+                            }
+                        }
                     }
                 },
                 scales: {
-                    yAxes: [{
-                        gridLines: {
-                            display: false,
-                            drawBorder: false,
-                        },
+                    y: {
+                        min: 0,
+                        max: 100,
                         ticks: {
-                            stepSize: 150
+                            stepSize: 10
+                        },
+                        grid: {
+                            display: true,
+                            drawBorder: true
                         }
-                    }],
-                    xAxes: [{
-                        gridLines: {
-                            color: '#fbfbfb',
-                            lineWidth: 2
+                    },
+                    x: {
+                        grid: {
+                            display: true,
+                            drawBorder: true
                         }
-                    }]
-                },
+                    }
+                }
             }
         });
     }
