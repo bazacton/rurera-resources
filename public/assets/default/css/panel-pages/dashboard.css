@@ -768,6 +768,9 @@ Right SideBar Style Start
     right: 15px;
     left: auto;
 }
+.user-profile-icons .dropdown-menu:after {
+    background-color: #fff;
+}
 .user-profile-icons .sidebar-no-mobile .dropdown-menu:after {
     right: 15px;
     left: auto;
