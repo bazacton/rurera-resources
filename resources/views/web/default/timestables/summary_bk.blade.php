@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="section-title mb-20">
-    <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Heat Map</h2>
+    <h2 class="font-22 mb-0"><a href="/timestable" class="timestables-back-btn"></a> Heat Map</h2>
 </div>
 <section class="heatmap-section">
     <div class="container">

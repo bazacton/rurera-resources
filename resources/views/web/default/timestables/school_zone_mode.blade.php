@@ -5,7 +5,7 @@
 
 <div class="timestables-mode-content">
 <div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
-    <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> School Zone</h2>
+    <h2 class="font-22 mb-0"><a href="/timestable" class="timestables-back-btn"></a> School Zone</h2>
 </div>
 <ul class="tests-list school-zone-list mb-30">
     <li data-type="my-class" class="active">My Class</li>

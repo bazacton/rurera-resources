@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 <div class="timestables-mode-content">
 <div class="section-title mb-30">
-    <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Trophy Mode</h2>
+    <h2 itemprop="title" class="font-22 mb-0"><a href="/timestable" class="timestables-back-btn"></a> Trophy Mode</h2>
 </div>
 @if( (5 - $results_data->count()) > 0)
 <section class="border-bottom-4 border-radius-10 mb-5" >

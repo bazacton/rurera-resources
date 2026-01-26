@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="type-list-data single-player-data">
-                <a itemprop="url" href="/timestables-practice/freedom-mode">
+                <a itemprop="url" href="/timestable/freedom-mode">
                     <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
@@ -66,7 +66,7 @@
                         <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
                     </div>
                 </a>
-                <a href="/timestables-practice/powerup-mode">
+                <a href="/timestable/powerup-mode">
                     <div class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
@@ -79,7 +79,7 @@
                         <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
                     </div>
                 </a>
-                <a href="/timestables-practice/trophy-mode">
+                <a href="/timestable/trophy-mode">
                     <div class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
@@ -92,7 +92,7 @@
                         <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
                     </div>
                 </a>
-                <a href="/timestables-practice/treasure-mission">
+                <a href="/timestable/treasure-mission">
                     <div class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
@@ -112,7 +112,7 @@
                         
                     </div>
                 </a>
-                <a href="/timestables-practice/showdown-mode">
+                <a href="/timestable/showdown-mode">
                     <div class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
@@ -125,7 +125,7 @@
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                     </div>
                 </a>
-                <a href="/timestables-practice/heat-map">
+                <a href="/timestable/heat-map">
                     <div class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">

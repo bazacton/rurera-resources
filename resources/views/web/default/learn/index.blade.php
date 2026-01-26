@@ -30,7 +30,7 @@
                            @endif
                         </div>
                         <div class="categories-text">
-                            <h4 data-id="{{$courseObj->subject->id}}" class="categories-title font-16 font-weight-bold text-dark-charcoal mb-5"><a href="/{{$categoryObj->slug}}/{{$courseObj->subject->slug}}">{{$courseObj->subject->getTitleAttribute()}}</a></h4>
+                            <h4 data-id="{{$courseObj->subject->id}}" class="categories-title font-16 font-weight-bold text-dark-charcoal mb-5"><a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}">{{$courseObj->subject->getTitleAttribute()}}</a></h4>
                             @if( isset( $subject_percentage['percentage'] ) && $subject_percentage['percentage'] > 0)
                                 <div class="levels-progress horizontal">
                                     <span class="progress-numbers">{{$subject_percentage['skills_attempted']}}/{{$subject_percentage['total_skils']}} Lessons</span>
@@ -39,7 +39,7 @@
                                     </span>
                                 </div>
                             @else
-                                <a href="/{{$categoryObj->slug}}/{{$courseObj->subject->slug}}" class="learning-btn font-14">Start Learning</a>
+                                <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14">Start Learning</a>
                             @endif
                             <span class="subject-info font-14">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
                             <div class="levels-progress horizontal">
@@ -49,7 +49,7 @@
                                 <span class="progress-numbers">0%</span>
                             </div>
                         </div>
-                        
+
                     </div>
            @endforeach
        @endif
