@@ -141,7 +141,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .dropdown-menu:before {background-color: #fff; position: absolute; top: -6px; left: 15px; content: ""; height: 10px; width: 10px; border-top: 1px solid #ddd; border-left: 1px solid #ddd; transform: rotate(45deg);}
 .panel-sidebar .sidebar-menu.has-user-group {height: calc(100% - 455px);}
 .panel-sidebar .sidebar-menu.without-bottom-image {height: calc(100% - 298px);}
-@media (max-width:991px) {
+@media (max-width:767px) {
     .dashboard-banner-container {margin-top: 0;}
     .conversations-list {height: 275px;}
     .panel-sidebar {width: 100%; background-color: #fff; top: 110%; padding: 40px 20px 0 !important; transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear;}
