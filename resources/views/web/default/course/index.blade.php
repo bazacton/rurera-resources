@@ -121,6 +121,7 @@
                                             @php
 
                                             $total_completion = 0;
+                                            $chapter_slug = $chapter->chapter_slug;
                                             $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
 
                                             $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
@@ -169,10 +170,10 @@
                                                                 <a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
                                                             </li>
                                                             <li>
-                                                                <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}" class="course-practice-btn">Practice Skills</a>
+                                                                <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/practice-skills" class="course-practice-btn">Practice Skills</a>
                                                             </li>
                                                             <li>
-                                                                <a href="/{{$category_slug}}/{{$course->slug}}/{{$quizObj->quiz_slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
+                                                                <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
                                                             </li>
                                                             <li>
                                                                 <a href="javascript:;" class="debug-details-btn">Debug Details</a>

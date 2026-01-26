@@ -5,7 +5,7 @@
 
 <div class="timestables-mode-content">
 <div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
-    <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Freedom Mode</h2>
+    <h2 class="font-22 mb-0"><a href="/timestable" class="timestables-back-btn"></a> Freedom Mode</h2>
 </div>
 <section class="p-25 panel-border border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
     <div class="container">
@@ -14,7 +14,7 @@
                 <div class="section-title mb-30 text-center"><h2> Arithmetic Operations </h2></div>
             </div>
             <div class="col-12 col-lg-12 mx-auto">
-                <form action="/timestables-practice/freedom-mode/play" method="post">
+                <form action="/timestable/freedom-mode/play" method="post">
                     {{ csrf_field() }}
                     <div class="questions-select-option">
                         <div class="mb-20"><h4>Select Arithmetic Operations</h4></div>

@@ -38,10 +38,10 @@
   33) Spell Listing page
   34) Words Flip Card Listing
   35) Spells-Quiz-Info
-  36) Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play
+  36) Questions-Arithmetic, rurera.com/timestable/freedom-mode/play
   37) Question Type Start Page
   38) About Net Connection Modal
-  39) Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play
+  39) Questions-Block-Numbers, rurera.com/timestable/freedom-mode/play
   40) Field row
   41) Field row with image
   42) Field col
@@ -903,8 +903,8 @@ body .spell-question-area .question-label span {text-align: center;}
 /* ======================================================== */
 
 /* ======================================================== */
-/* [36] Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play */
-/* --- START: Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play --- */
+/* [36] Questions-Arithmetic, rurera.com/timestable/freedom-mode/play */
+/* --- START: Questions-Arithmetic, rurera.com/timestable/freedom-mode/play --- */
 .questions-arithmetic-box {box-sizing: border-box; position: relative; min-height: 100px; padding: 0 15px;}
 .questions-arithmetic-box:before {content: ""; position: absolute; left: -37px; top: 0; width: 115%;height: 100%; pointer-events: none; background-color: grey; box-shadow: 0 0 8px rgba(0,0,0,0.2);}
 .questions-arithmetic-box input[type="text"] {border: 0; font-size: var(--fs-xxl); color: #fff; font-weight: 700; width: calc(100% - 300px); background-color: inherit; margin-left: 8px;     position: relative; z-index: 1;}
@@ -933,7 +933,7 @@ body .spell-question-area .question-label span {text-align: center;}
 body .learning-page .learning-content .learning-content-box {position: relative; z-index: 1;}
 body .learning-page.type-sats .learning-content .learning-content-box {border-color: transparent;}
 body .learning-page .learning-title {border-color: #ccc;}
-/* --- END: Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play --- */
+/* --- END: Questions-Arithmetic, rurera.com/timestable/freedom-mode/play --- */
 /* ======================================================== */
 
 /* ======================================================== */
@@ -1038,8 +1038,8 @@ body .learning-page .learning-title {border-color: #ccc;}
 /* ======================================================== */
 
 /* ======================================================== */
-/* [39] Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play */
-/* --- START: Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play --- */
+/* [39] Questions-Block-Numbers, rurera.com/timestable/freedom-mode/play */
+/* --- START: Questions-Block-Numbers, rurera.com/timestable/freedom-mode/play --- */
 .questions-block-numbers {overflow: hidden;}
 .questions-block-numbers ul {border-right: 1px solid #f1f0f5; border-bottom: 1px solid #f1f0f5; margin: 0 -3px;}
 .questions-block-numbers li {flex-basis: 33%;}
@@ -1081,7 +1081,7 @@ body table th b {font-weight: 500;}
 /**********************************
 Lms Table Style End
 **********************************/
-/* --- END: Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play --- */
+/* --- END: Questions-Block-Numbers, rurera.com/timestable/freedom-mode/play --- */
 /* ======================================================== */
 
 /* ======================================================== */

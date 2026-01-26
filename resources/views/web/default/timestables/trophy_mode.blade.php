@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 <div class="timestables-mode-content">
 <div class="section-title mb-15" itemscope itemtype="https://schema.org/Article">
-    <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Trophy Mode</h2>
+    <h2 class="font-22 mb-0"><a href="/timestable" class="timestables-back-btn"></a> Trophy Mode</h2>
 </div>
 @if( (5 - $results_data->count()) > 0)
 <section class="border-bottom-4 border-radius-10 mb-5" >
@@ -33,7 +33,7 @@
                 <div class="section-title mb-30 text-center"><h2>Select Practice Time </h2></div>
             </div>
             <div class="col-12 col-lg-12 mx-auto">
-                <form action="/timestables-practice/trophy-mode/play" method="post">
+                <form action="/timestable/trophy-mode/play" method="post">
                     {{ csrf_field() }}
                     <h3>It will be one minute, try to answer the maximum questions.</h3>
                     <div class="form-btn">
