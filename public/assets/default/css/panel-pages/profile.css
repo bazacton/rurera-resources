@@ -329,6 +329,12 @@ address .info-list-label {color: #64748b;}
 .subscribe-plan {
     border: 1px solid #ddd;
 }
+.subscribe-plan .subscribe-icon img {
+    transition: all .4s ease;
+    width: 50px;
+    object-fit: contain;
+    max-height: 50px;
+}
 .subscription-controls .package-update-btn.btn {
     font-weight: normal;
     font-size: 14px;
