@@ -1316,6 +1316,9 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .chapter-tags .debug-details {
         right: 0;
     }
+    .user-profile-icons .dropdown-menu {
+        min-width: 220px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1865,7 +1868,6 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     #analyticsAccordion:has(.question-result-layout-holder) .card-header >span:last-child {
         border-bottom: 0;
     }
-    .user-profile-icons .dropdown:hover .dropdown-menu {top: 66px;}
     .class-thumb-list li.school-box {width: 30%; overflow: visible;}
     .class-thumb .media-box {height: 80px; width: 80px;}
     .class-thumb .media-box {position: relative; z-index: 2;}
