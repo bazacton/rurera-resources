@@ -33,7 +33,6 @@ if( !empty( $emojisArray ) ){
         padding: 0;
         box-sizing: border-box;
         display: flex;
-        align-items: flex-start;
         gap: 15px 30px;
         flex-wrap: wrap;
     }
