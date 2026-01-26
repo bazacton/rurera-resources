@@ -304,7 +304,7 @@ address .info-list-label {color: #64748b;}
 .card-info-text span {color: #64748b; margin: 0 0 2px;}
 .card-info-text .card-exp span {margin-bottom: 0;}
 .detail-body .profile-inner,
-.edit-info-list .subscribe-plan {background-color: #fff; border-radius: 10px !important; max-width: 350px; min-width: 350px; border-style: solid;}
+.edit-info-list .subscribe-plan {background-color: #fff; border-radius: 10px !important; max-width: 350px; min-width: 350px; border-style: solid; height: 100%;}
 .detail-body .profile-inner li {
     width: 100%;
 }
