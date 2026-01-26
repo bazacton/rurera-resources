@@ -824,6 +824,10 @@ Right SideBar Style Start
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
 .user-profile-icons ul .menu-button-mobile,
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
+.user-profile-icons > ul > li.sidebar-no-mobile .dropdown {
+    margin-bottom: -15px;
+    padding-bottom: 15px;
+}
 /* user-profile-dropdown style End */
 /* Streak-dropdown style Start */
 .streak-dropdown .streak-icon {
