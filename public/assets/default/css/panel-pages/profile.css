@@ -292,9 +292,6 @@ address .info-list-label {color: #64748b;}
     border: 0;
     padding: 0;
 }
-.edit-info-list .profile-view-data li {
-    display: inline-block;
-}
 .payment-card {border: 1px solid #ddd; border-radius: 10px; max-width: 380px; min-width: 380px; }
 .card-circle span {height: 36px; width: 36px; border-radius: 100%; }
 .card-circle .circle-pink {background-color: #f43f5e99; margin-right: -20px;}

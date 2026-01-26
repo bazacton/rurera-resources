@@ -106,7 +106,7 @@
                                                 </span>
                                             </a>
                                         </div>
-                                        <ul>
+                                        <ul class="font-14">
                                             <li>
                                                 <a href="/panel/setting"><span class="nav-icon">
                                                     <img src="/assets/default/svgs/account-nav.svg" alt="account-nav"></span>

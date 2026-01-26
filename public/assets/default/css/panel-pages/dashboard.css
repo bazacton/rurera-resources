@@ -48,8 +48,8 @@ Left SideBar-menu Start
 .panel-rightside-menu {background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px;}
 .panel-rightside-menu .user-info {margin: 0 0 25px;}
 .panel-rightside-menu .user-info>a {display: flex;align-items: center; flex-wrap: wrap; gap: 10px;}
-.panel-rightside-menu li a {display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 15px 18px; font-weight: 600; line-height: normal; border-radius: 10px; width: 100%; transition: none;}
-.panel-rightside-menu .nav-icon {width: 25px; height: 25px; display: inline-block;}
+.panel-rightside-menu li a {display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px 15px; font-weight: 600; line-height: normal; border-radius: 10px; width: 100%; transition: none;}
+.panel-rightside-menu .nav-icon {width: 20px; height: 20px; display: inline-block;}
 .panel-rightside-menu .nav-icon img {max-width: 100%;}
 .panel-rightside-menu li a:hover {background-color: #e5e5e5;}
 .panel-rightside-menu .user-info>a img {height: 42px; width: 42px; border-radius: 100%; background-color: #ddd;}
@@ -512,10 +512,10 @@ Left SideBar-menu End
 /* Preferences Form Style End */
 
 /*Analytics/Timestables/Result Sats Summary style start*/
-.sats-summary {margin: 0 0 50px; background-color: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0;}
+.sats-summary {margin: 0 0 50px; background-color: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #ddd;}
 .chart-summary-fields .sats-summary {margin-bottom: 30px;}
 .sats-summary label {display: block; margin: 0 0 6px; line-height: normal; font-size: 14px;}
-.sats-summary [class*="col-"] {padding: 15px; border-left: 1px solid #e1e1e1; background-color: #fff; display: inline-flex; flex-wrap: wrap;}
+.sats-summary [class*="col-"] {padding: 15px; border-left: 1px solid #ddd; background-color: #fff; display: inline-flex; flex-wrap: wrap;}
 .sats-summary .row {margin: 0;}
 .sats-summary [class*="col-"]:first-child {border-left: 0;}
 .sats-summary .score {color: #666; font-size: 18px; line-height: normal; font-weight: 500;}
@@ -2101,18 +2101,26 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     }
 
 /* Questions Result Layout Accordion Style Start */
+.card:has(.question-result-layout-holder) {
+    border: 0;
+    padding: 0;
+}
 #analyticsAccordion .card .card-header {
     background-color: inherit;
-    border-top: 1px solid rgba(52, 52, 52, .125);
-    border-bottom: 0;
+    border-bottom: 1px solid transparent;
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 15px 0;
+}
+#analyticsAccordion .card .card-header.collapsed {
+    border-bottom-color: #ddd;
 }
 #analyticsAccordion .card-body {
-    border-top: 1px solid rgba(52, 52, 52, .125);
-    padding: 2rem;
+    border-top: 0;
+    padding: 25px;
+    background-color: #f9f9f9;
 }
 #analyticsAccordion .card-header > span {
     display: flex;
