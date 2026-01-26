@@ -20,7 +20,7 @@ if( !empty( $emojisArray ) ){
 @endphp
 <style type="text/css">
 	.emoji-icons {display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-start;min-height: auto;}
-    .emoji-icons .emoji-icon {border-radius: 100%; display: inline-block; object-fit: contain; height: 28px; width: 28px; }
+    .emoji-icons .emoji-icon {border-radius: 100%; display: inline-block; object-fit: contain; height: 22px; width: 22px; }
     .emoji-icons .emoji-icon img {max-width: 100%; }
 </style>
 
@@ -28,7 +28,15 @@ if( !empty( $emojisArray ) ){
 <style>
 .rurera-hide{display:none !important;}
     .profile-container {max-width: 1000px; margin: 0 auto; padding-top: 50px;}
-    .student-profile-holder {width: 100%; display: inline-block; margin-right: -4px; padding: 0 8px 0; box-sizing: border-box;}
+    .student-profile-holder {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px 30px;
+        flex-wrap: wrap;
+    }
     .profile-inner {border: 1px dashed #ddd; border-radius: 5px; padding: 20px;}
     .student-profile-holder h3 {font-size: 20px; color: #868686; text-transform: capitalize; margin: 0;}
     .student-info ul {margin: 0; padding: 0;}
@@ -300,7 +308,7 @@ if( !empty( $emojisArray ) ){
 														</div>
 													</div>
                                                     <div class="edit-info-list border-0 pb-0">
-                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
+                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20">
                                                             <div class="package-block">
                                                                 <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
                                                                 <div class="subscribe-title">
