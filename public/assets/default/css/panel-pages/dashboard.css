@@ -2115,8 +2115,9 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     padding: 15px 0;
 }
 #analyticsAccordion .card-body {
-    border-top: 1px solid rgba(52, 52, 52, .125);
-    padding: 2rem;
+    border-top: 0;
+    padding: 25px;
+    background-color: #f9f9f9;
 }
 #analyticsAccordion .card-header > span {
     display: flex;
