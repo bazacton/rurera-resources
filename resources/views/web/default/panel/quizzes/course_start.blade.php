@@ -656,6 +656,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".show-notifications").addClass('rurera-hide');
 
             $(".rurera-question-block").removeClass('active');
+            $("body").removeClass('quiz-area-page');
             $(".quiz-complete").show();
             TimerActive = false;
             //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
