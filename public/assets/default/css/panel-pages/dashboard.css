@@ -745,7 +745,7 @@ Right SideBar Style Start
 .user-profile-dropdown .sub-dropdown:hover .sidenav-item-collapse {opacity: 1; visibility: visible; transform: translate3d(0, 0, 0);}
 .user-profile-icons {margin-bottom: 15px; width: 100%;}
 .user-profile-icons ul {display: flex; align-items: center; flex-wrap: wrap; gap: 12px 25px; justify-content: flex-end; width: 100%;}
-.user-profile-icons > ul > li {display: inline-flex;align-items: center;}
+.user-profile-icons > ul > li {display: inline-flex;align-items: center; min-width: 60px;}
 .user-profile-icons > ul > li.sidebar-no-mobile {
     padding-bottom: 15px;
     margin-bottom: -15px;
@@ -781,7 +781,7 @@ Right SideBar Style Start
     box-shadow: none; 
     left: 50%;
     transform: translateX(-50%);
-    margin: 15px 0 0 -8px; 
+    margin: 15px 0 0 -15px; 
     padding: 15px; 
     min-width: 300px;
     -webkit-transition: all 0.3s ease-out;
