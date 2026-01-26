@@ -203,10 +203,11 @@ $rand_id = rand(99,9999);
                                     @php $show_class = ''; $attempt_counter = 1; $question_no = $attempted_questions_list->count(); @endphp
                                     @foreach($results_sessions as $result_id => $resultSessionArray)
                                         @php $show_class = ($attempt_counter == 1)? 'show' : '';
+                                        $hidden_class = ($attempt_counter == 1)? '' : 'collapsed';
                                         $log_question_details = isset($resultSessionArray['log_question_details'])? $resultSessionArray['log_question_details'] : array();
                                         @endphp
 
-                                        <div class="card-header mb-0 font-14 border-top-0"
+                                        <div class="card-header {{$hidden_class}} mb-0 font-14 border-top-0"
                                              role="button"
                                              data-toggle="collapse"
                                              data-target="#attempt_questions_{{$result_id}}"
