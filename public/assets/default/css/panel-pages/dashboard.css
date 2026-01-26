@@ -349,7 +349,7 @@ Left SideBar-menu End
 .unread-notification-lists {min-height: 120px}
 @media(max-width:1650px) {
     .dashboard-banner-container .dashboard-banner {height: auto; width: 40%;}
-    .dashboard-banner-container {margin-top: 42px;}
+    .dashboard-banner-container {margin-top: 0;}
     .unread-notification-lists {min-height: auto;}
 }
 /*Dashboard-banner For Parent Page Style End*/
