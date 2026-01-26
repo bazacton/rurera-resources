@@ -2660,6 +2660,7 @@ body:has(.question-right-side) #scroll-controls {
     border-bottom: 2px solid #333;
     border-left: 2px solid #333;
     transition: transform 0.2s;
+    position: initial;
 }
 /* Arrow Rotations */
 .page-prev-next-controls .arrow.up {
