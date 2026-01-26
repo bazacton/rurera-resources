@@ -326,6 +326,9 @@ address .info-list-label {color: #64748b;}
     font-size: 14px;
     font-weight: normal;
 }
+.subscribe-plan {
+    border: 1px solid #ddd;
+}
 .subscription-controls .package-update-btn.btn {
     font-weight: normal;
     font-size: 14px;
