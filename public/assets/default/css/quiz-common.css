@@ -2614,7 +2614,7 @@ body:has(.question-right-side) #scroll-controls {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid #ccc;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     align-items: center;
@@ -2623,6 +2623,12 @@ body:has(.question-right-side) #scroll-controls {
     color: #333;
     font-weight: bold;
     font-size: var(--fs-sm);
+    width: auto;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 .page-prev-next-controls .scroll-btn:hover {
     background-color: #ffffff;
