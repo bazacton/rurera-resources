@@ -105,6 +105,9 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-
 .debug-detail-item span {
     color: #999;
 }
+.debug-detail-item:last-child {
+    margin-bottom: 0;
+}
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {
     -moz-column-count: 1;
     column-count: 1;
