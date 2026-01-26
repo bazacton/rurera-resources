@@ -664,12 +664,6 @@ Left SideBar-menu End
     font-weight: normal;
     background-color: inherit;
 }
-.question-result-layout .question_heading,
-.question-result-layout .paragraph-element,
-.question-result-layout .image-element,
-.question-result-layout .checkbox-element {
-    display: none;
-}
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
 .chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 5px;}
