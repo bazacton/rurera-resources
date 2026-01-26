@@ -25,7 +25,7 @@
     .student-info ul li.user-name span {color: #343434;}
     .student-info ul li > a {color: #343434; text-decoration: none;}
     .student-info ul li > span {min-width: 78px; max-width: 78px;}
-    .emoji-icons {display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-start; }
+    .emoji-icons {display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-start; }
     .emoji-icons .emoji-icon {border-radius: 100%; display: inline-block; object-fit: contain; height: 22px; width: 22px; }
     .emoji-icons .emoji-icon img {max-width: 100%; }
     .profile-header {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 10px;}
