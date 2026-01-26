@@ -36,7 +36,7 @@
     </div>
     <div class="mt-15 rurera-hide">
         <div class="section-title text-left mb-30">
-            <h2 class="font-22">Subjects Progress <a href="#" class="text-primary">How we calculated?</a></h2>
+            <h2 class="font-22 font-weight-bold">Subjects Progress <a href="#" class="text-primary">How we calculated?</a></h2>
         </div>
         <div class="row">
             <!-- English Card -->
@@ -396,7 +396,7 @@
 
 <div class="quests-list quests-learning mt-30">
 	@if( $quests->count() > 0)
-    <div class="section-title text-left mb-15">
+    <div class="section-title text-left mb-10">
         <h2 class="font-16 font-weight-bold">Weekly Learning Journeys</h2>
     </div>
 	<ul>
