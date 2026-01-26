@@ -397,7 +397,7 @@
 <div class="quests-list quests-learning mt-30">
 	@if( $quests->count() > 0)
     <div class="section-title text-left mb-15">
-        <h2 class="font-22">Weekly Learning Journeys</h2>
+        <h2 class="font-16 font-weight-bold">Weekly Learning Journeys</h2>
     </div>
 	<ul>
 		@foreach( $quests as $questObj)
