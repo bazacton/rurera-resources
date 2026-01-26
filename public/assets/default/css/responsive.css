@@ -404,7 +404,6 @@ Lms Responsive Style Start
     body .sidebar-logo img {max-width: 30px;}
     .sidebar-logo .sidebar-logo-text {display: none;}
     .navbar-toggler-icon {width: 1.6em;height: 1.5em;}
-    .user-profile-icons .dropdown-menu-right {left: 0; right: auto;}
     .panel-right-sidebar [class*="col-"],
     .panel-right-sidebar .sidebar-inner-elements {display: none;}
     .panel-right-sidebar [class*="col-"]:has(.user-profile-icons) {display: block;}
