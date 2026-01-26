@@ -49,7 +49,7 @@ Left SideBar-menu Start
 .panel-rightside-menu .user-info {margin: 0 0 25px;}
 .panel-rightside-menu .user-info>a {display: flex;align-items: center; flex-wrap: wrap; gap: 10px;}
 .panel-rightside-menu li a {display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px 15px; font-weight: 600; line-height: normal; border-radius: 10px; width: 100%; transition: none;}
-.panel-rightside-menu .nav-icon {width: 25px; height: 25px; display: inline-block;}
+.panel-rightside-menu .nav-icon {width: 20px; height: 20px; display: inline-block;}
 .panel-rightside-menu .nav-icon img {max-width: 100%;}
 .panel-rightside-menu li a:hover {background-color: #e5e5e5;}
 .panel-rightside-menu .user-info>a img {height: 42px; width: 42px; border-radius: 100%; background-color: #ddd;}
