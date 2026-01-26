@@ -10,15 +10,15 @@
 <section>
 
     <div class="bg-white dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow panel-border rounded-sm mb-30">
-        <h2 class="font-30 text-primary line-height-1">
-            <span class="d-block">{{ trans('panel.hi') }} {{ $authUser->get_full_name() }},</span>
-            <span class="font-16 font-weight-bold">{{ trans('panel.have_event',['count' => !empty($unReadNotifications) ? count($unReadNotifications) : 0]) }}</span>
+        <h2 class="font-22 font-weight-bold text-primary line-height-1">
+            <span class="d-block font-14 font-weight-bold">{{ trans('panel.hi') }} {{ $authUser->get_full_name() }},</span>
+            <span class="font-14 font-weight-bold">{{ trans('panel.have_event',['count' => !empty($unReadNotifications) ? count($unReadNotifications) : 0]) }}</span>
         </h2>
 
-        <ul class="mt-15 unread-notification-lists">
+        <ul class="mt-15 unread-notification-lists font-14">
             @if(!empty($unReadNotifications) and !$unReadNotifications->isEmpty())
             @foreach($unReadNotifications->take(5) as $unReadNotification)
-            <li class="font-16 mt-1 text-gray">- {{ $unReadNotification->title }}</li>
+            <li class="mt-1 text-gray">- {{ $unReadNotification->title }}</li>
             @endforeach
 
             @if(count($unReadNotifications) > 5)
@@ -27,7 +27,7 @@
             @endif
         </ul>
 
-        <a href="/panel/notifications" class="mt-15 font-weight-500 panel-view-btn d-inline-block">{{
+        <a href="/panel/notifications" class="mt-15 font-14 font-weight-500 panel-view-btn d-inline-block">{{
             trans('panel.view_all_events') }}</a>
 
         <div class="dashboard-banner">
