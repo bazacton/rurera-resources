@@ -2107,12 +2107,15 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 }
 #analyticsAccordion .card .card-header {
     background-color: inherit;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px 0;
+}
+#analyticsAccordion .card .card-header.collapsed {
+    border-bottom-color: #ddd;
 }
 #analyticsAccordion .card-body {
     border-top: 0;
