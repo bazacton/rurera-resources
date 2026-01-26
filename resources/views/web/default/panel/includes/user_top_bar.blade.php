@@ -10,11 +10,11 @@
             <a href="#" class="streak-icon">
                 <img src="/assets/default/svgs/fire-stroke.svg" height="800" width="800" alt="fire-stroke"> 1
             </a>
-            <div class="streak-dropdown-content">
+            <div class="streak-dropdown-content font-16">
                 <div class="streak-days">
                     <div class="streak-day-head">
                         <div class="text-box">
-                            <h4 class="font-18 font-weight-bold mb-5"><span>1</span> day streak</h4>
+                            <h4 class="font-16 font-weight-bold mb-5"><span>1</span> day streak</h4>
                             <p class="sub">You've earned your longest streak ever!</p>
                         </div>
                         <div class="icon-box">
