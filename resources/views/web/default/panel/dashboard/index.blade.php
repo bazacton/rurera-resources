@@ -421,17 +421,17 @@
 						<img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
 					</div>
 					<div class="item-text">
-						<h5 class="font-18 font-weight-bold"><a href="/learning-journey/{{$link}}">{{$questObj->title}}</a></h5>
+						<h5 class="font-14 font-weight-500"><a href="/learning-journey/{{$link}}">{{$questObj->title}}</a></h5>
 						<div class="levels-progress horizontal">
 							<span class="progress-box">
 								<span class="progress-count" style="width: 0%;"></span>
 							</span>
 						</div>
-						<span class="progress-icon font-16 font-weight-normal">
+						<span class="progress-icon font-14 font-weight-normal">
 							<img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
 							+{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
 						</span>
-						<span class="progress-info d-block pt-5">
+						<span class="progress-info d-block pt-5 font-14 font-weight-normal">
 							<strong>{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</strong> Stages Completed
 						</span>
 					</div>
