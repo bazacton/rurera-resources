@@ -759,7 +759,20 @@ Right SideBar Style Start
 .user-profile-icons .dropdown-menu:after, 
 .user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; right: 30px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
 .user-profile-icons .dropdown-menu:before {background-color: #fff; top: -6px; box-shadow: none; border: 0; }
-.user-profile-icons .dropdown-menu {border-radius: 8px; border: 1px solid #ddd; box-shadow: none; right: -15px; transition: none; margin: 0; padding: 15px; min-width: 300px;}
+.user-profile-icons .dropdown-menu {
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+    box-shadow: none; 
+    right: -15px; 
+    margin: 0; 
+    padding: 15px; 
+    min-width: 300px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
 .user-profile-icons .dropdown-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;font-size: 18px;}
 .dropdown-list-content .dropdown-item {background-color: #f9f8f8; border-radius: 5px; padding: 10px 15px; display: block; margin: 0 0 15px;}
 .dropdown-list-content .dropdown-item:active {color: #16181b;text-decoration: none; background-color: #f8f9fa;}
