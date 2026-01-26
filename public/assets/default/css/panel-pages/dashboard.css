@@ -141,7 +141,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .dropdown-menu:before {background-color: #fff; position: absolute; top: -6px; left: 15px; content: ""; height: 10px; width: 10px; border-top: 1px solid #ddd; border-left: 1px solid #ddd; transform: rotate(45deg);}
 .panel-sidebar .sidebar-menu.has-user-group {height: calc(100% - 455px);}
 .panel-sidebar .sidebar-menu.without-bottom-image {height: calc(100% - 298px);}
-@media (max-width:767px) {
+@media (max-width:991px) {
     .dashboard-banner-container {margin-top: 0;}
     .conversations-list {height: 275px;}
     .panel-sidebar {width: 100%; background-color: #fff; top: 110%; padding: 40px 20px 0 !important; transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear;}
@@ -150,7 +150,7 @@ Left SideBar-menu Start
     .panel-sidebar .user-info .user-name h3 {font-size: 14px;}
     .panel-sidebar .user-info .user-avatar {width: 70px; height: 70px;}
     .panel-sidebar .user-info .user-name {margin-top: 0 !important;}
-    .panel-sidebar .sidebar-menu {height: calc(100% - 70px) !important; padding-left: 20px; padding-right: 15px; padding-bottom: 0; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+    .panel-sidebar .sidebar-menu {height: calc(100% - 70px) !important; padding-left: 0; padding-right: 0; padding-bottom: 0; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
     body.parent-panel .panel-sidebar .sidebar-menu {padding-left: 20px; padding-right: 20px;}
 }
 .panel-sidebar .sidebar-menu .sidenav-item {padding: 12px 0; display: flex; flex-wrap: wrap; align-items: center; position: relative;}
