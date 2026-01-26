@@ -64,10 +64,14 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {background-color: #f4f4f4; border-radius: 0; border: 0;}
     .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 15px;}
     .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 15px;}
+    .panel-content > .container > .row {
+    flex-direction: column-reverse;
+}
     .panel-content .panel-content-holder {
         max-width: 100%;
         flex: 0 0 100%;
     }
+    .panel-content .panel-right-sidebar {max-width: 370px; margin-left: auto;}
     .panel-right-sidebar .sidebar-inner-elements {display: none;}
     .parent-panel .panel-sidebar .sidebar-menu .sidenav-item {justify-content: center;}
     body .topbar-right {justify-content: space-between; }
