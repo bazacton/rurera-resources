@@ -177,17 +177,17 @@
                                                             <li>
                                                                 <a href="javascript:;" class="debug-details-btn">Debug Details</a>
                                                                 <div class="debug-details rurera-hide">
-                                                                    Part ID: {{$topicPartObj->id}}<br>
-                                                                    Quiz ID: {{$quizObj->id}}<br>
-                                                                    Difficulty Level: {{$user_difficulty_level}}<br>
-                                                                    Accuracy: {{$topic_accuracy}}<br>
-                                                                    Completion: {{$total_completion}}<br>
-                                                                    SAS Score: {{$sas_score}}<br>
-                                                                    SAS Accuracy: {{$sas_accuracy}}%<br>
-                                                                    Smart Score: {{$smart_score}}<br>
-                                                                    Tier 1 Incorrects: {{$tier1_incorrects}}<br>
-                                                                    Tier 2 Incorrects: {{$tier2_incorrects}}<br>
-                                                                    Tier 3 Incorrects: {{$tier3_incorrects}}<br>
+                                                                    <span class="debug-detail-item">Part ID: <span>{{$topicPartObj->id}}</span></span><br>
+                                                                    <span class="debug-detail-item">Quiz ID: <span>{{$quizObj->id}}</span></span><br>
+                                                                    <span class="debug-detail-item">Difficulty Level: <span>{{$user_difficulty_level}}</span></span><br>
+                                                                    <span class="debug-detail-item">Accuracy: <span>{{$topic_accuracy}}</span></span><br>
+                                                                    <span class="debug-detail-item">Completion: <span>{{$total_completion}}</span></span><br>
+                                                                    <span class="debug-detail-item">SAS Score: <span>{{$sas_score}}</span></span><br>
+                                                                    <span class="debug-detail-item">SAS Accuracy: <span>{{$sas_accuracy}}%</span></span><br>
+                                                                    <span class="debug-detail-item">Smart Score: <span>{{$smart_score}}</span></span><br>
+                                                                    <span class="debug-detail-item">Tier 1 Incorrects: <span>{{$tier1_incorrects}}</span></span><br>
+                                                                    <span class="debug-detail-item">Tier 2 Incorrects: <span>{{$tier2_incorrects}}</span></span><br>
+                                                                    <span class="debug-detail-item">Tier 3 Incorrects: <span>{{$tier3_incorrects}}</span></span><br>
                                                                 </div>
                                                             </li>
                                                         </ul>
