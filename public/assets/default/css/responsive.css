@@ -595,17 +595,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     body .panel-rightside-menu li .menu-text {display: none;}
     .user-profile-icons li strong {padding: 6px 10px; border-radius: 5px;}
     .user-profile-icons li.dropdown:hover strong {background-color: #f1f1f1;}
-    .user-profile-icons .dropdown {position: inherit;}
-    .user-profile-icons .dropdown-menu {border-radius: 0;width: 100%;min-width: auto;margin: 0;transition: none;text-align: center;}
     .user-coins-menu .dropdown-header {display: inline-flex;text-align: left;}
-    .user-profile-icons .dropdown:hover .dropdown-menu {margin-top: 0;border-left: 0;border-right: 0;top: 70px;}
-    .user-profile-icons .dropdown-menu:after, 
-    .user-profile-icons .dropdown-menu:before {display: none;}
-    .user-profile-icons li.dropdown strong:before, 
-    .user-profile-icons li.dropdown strong:after {bottom: -22px; top: auto;content: "";position: absolute;right: 25px;height: 15px;width: 15px;border-top: 1px solid #ddd;border-left: 1px solid#ddd;transform: rotate(45deg);z-index: 3333;opacity: 0;visibility: hidden;}
-    .user-profile-icons li.dropdown strong:after {background-color: #fff;box-shadow: none;border: 0;bottom: -24px;}
-    .user-profile-icons li.dropdown:hover strong:before, 
-    .user-profile-icons li.dropdown:hover strong:after {visibility: visible;opacity: 1;}
     .sidebar-logo .sidebar-logo-text {display: none;}
     .panel-right-sidebar [class*="col-"],
     .panel-right-sidebar .sidebar-inner-elements {display: none;}
