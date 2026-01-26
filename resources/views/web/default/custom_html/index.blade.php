@@ -56,7 +56,7 @@
 </div>
     <div class="col-12 col-lg-12 col-md-12">
         <div class="section-title mb-30">
-            <h2 class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a>National Competition</h2>
+            <h2 class="font-22 mb-0"><a href="/timestable" class="timestables-back-btn"></a>National Competition</h2>
         </div>
     </div>
     <div class="col-12 col-lg-12 col-md-12">

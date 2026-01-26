@@ -279,12 +279,12 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <a href="{{url('/')}}/timestables-practice" itemprop="url">
+                            <a href="{{url('/')}}/timestable" itemprop="url">
                                 <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <a target="_blank" href="{{url('/')}}/timestables-practice" itemprop="url" class="text-dark-charcoal">TimeTables Revision</a>
+                            <a target="_blank" href="{{url('/')}}/timestable" itemprop="url" class="text-dark-charcoal">TimeTables Revision</a>
                         </h3>
                         <p itemprop="description">Offering interactive Multiplication and division Practices and challenges to Master TimesTables online.</p>
                     </div>
