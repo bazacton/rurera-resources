@@ -18,9 +18,7 @@
             </div>
         </div>
     </section>
-    <!-- ... existing HTML ... -->
-    <div id="react-container" class="rurera-hide"></div>
-    <!-- ... existing HTML ... -->
+    
     <section class="mt-15 mb-60 lms-blog blog-single-post">
         <div class="container">
             <div class="row">
@@ -164,11 +162,4 @@
     </script>
 
     <script src="/assets/default/js/parts/comment.min.js"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- Babel (for JSX in browser) -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- Load your React component code -->
-    <script type="text/babel" src="/assets/default/js/my-component.js"></script>
 @endpush
