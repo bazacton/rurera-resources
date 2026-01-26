@@ -809,7 +809,7 @@ Right SideBar Style Start
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
-.user-profile-icons .dropdown-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;font-size: 18px;}
+.user-profile-icons .dropdown-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
 .dropdown-list-content .dropdown-item {background-color: #f9f8f8; border-radius: 5px; padding: 10px 15px; display: block; margin: 0 0 15px;}
 .dropdown-list-content .dropdown-item:active {color: #16181b;text-decoration: none; background-color: #f8f9fa;}
 .user-profile-icons .notifications-lable {display: block; margin: 0 0 5px; font-weight: 600; text-transform: capitalize;}
