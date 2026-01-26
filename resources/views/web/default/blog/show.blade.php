@@ -19,7 +19,7 @@
         </div>
     </section>
     <!-- ... existing HTML ... -->
-    <div id="react-container"></div>
+    <div id="react-container" class="rurera-hide"></div>
     <!-- ... existing HTML ... -->
     <section class="mt-15 mb-60 lms-blog blog-single-post">
         <div class="container">
