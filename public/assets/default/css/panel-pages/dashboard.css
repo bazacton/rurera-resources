@@ -757,13 +757,14 @@ Right SideBar Style Start
 .user-profile-icons li strong {display: inline-flex; align-items: center; gap: 5px; position: relative;}
 .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
 .user-profile-icons .dropdown-menu:after, 
-.user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; right: 30px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
+.user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
 .user-profile-icons .dropdown-menu:before {background-color: #fff; top: -6px; box-shadow: none; border: 0; }
 .user-profile-icons .dropdown-menu {
     border-radius: 8px; 
     border: 1px solid #ddd; 
     box-shadow: none; 
-    right: -15px; 
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0; 
     padding: 15px; 
     min-width: 300px;
