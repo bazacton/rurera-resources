@@ -1893,4 +1893,8 @@ Lms Responsive Style Start
     .member-card-header.activities-header .dropdown {padding-top: 0;}
     .edit-profile-body .form-group:has(.input-field) {flex: 0 0 100%; max-width: 100%;}
     .prev-next-controls .question-submit-btn, .prev-next-controls .question-next-btn {position: relative;}
+    .quests-item .icon-box {margin: 0 0 10px;}
+    .quests-item .item-text {
+        width: 100%;
+    }
 }
