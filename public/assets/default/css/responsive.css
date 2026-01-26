@@ -233,7 +233,7 @@ Lms Responsive Style Start
     .user-profile-icons ul {justify-content: space-between;}
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
     .navbar-expand-lg .navbar-toggler,
     .navbar1 .navbar-toggler {display: block; font-size: 15px; color: #000; font-weight: 600;}
     #navbarClose img {height: 20px; width: 20px;}
