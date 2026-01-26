@@ -1197,7 +1197,7 @@ a.badge-gray200:focus {outline: 0; box-shadow: 0 0 0 .2rem hsla(0, 0%, 94.5%, .5
 }
 .table-responsive {display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;}
 .table-responsive>.table-bordered {border: 0;}
-.card {position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 1px solid rgba(52, 52, 52, .125); border-radius: .3125rem;}
+.card {position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 1px solid #ddd; border-radius: .3125rem;}
 .card>hr {margin-right: 0; margin-left: 0;}
 .card>.list-group {border-top: inherit; border-bottom: inherit;}
 .card>.list-group:first-child {border-top-width: 0; border-top-left-radius: calc(.3125rem - 1px); border-top-right-radius: calc(.3125rem - 1px);}
