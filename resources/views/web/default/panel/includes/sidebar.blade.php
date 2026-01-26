@@ -18,7 +18,7 @@
             </div>
             <ul class="sidebar-menu pt-10 @if(!empty($authUser->userGroup)) has-user-group @endif @if(empty($getPanelSidebarSettings) or empty($getPanelSidebarSettings['background'])) without-bottom-image @endif" @if((!empty($isRtl) and $isRtl)) data-simplebar-direction="rtl" @endif>
                 <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
-                    <a href="/{{panelRoute()}}" class="d-flex align-items-center font-14" data-toggle="tooltip" data-placement="left" title="Home">
+                    <a href="" class="d-flex align-items-center font-14" data-toggle="tooltip" data-placement="left" title="Home">
                         <span class="sidenav-item-icon">
                             <img src="/assets/default/img/sidebar/home-old.svg" alt="home-old">
                         </span>
@@ -120,13 +120,13 @@
                         <a href="/shop" class="font-14 nav-sub-title">Shop</a>
                     </li>--}}
                     @endif
-                    <li class="sidenav-item {{ (request()->is('panel/analytics') or request()->is('panel/analytics/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/analytics" data-toggle="tooltip" data-placement="left" title="Analytics">
+                    <li class="sidenav-item {{ (request()->is('analytics') or request()->is('analytics/*')) ? 'sidenav-item-active' : '' }}">
+                        <a class="d-flex align-items-center" href="/analytics" data-toggle="tooltip" data-placement="left" title="Analytics">
                             <span class="sidenav-setting-icon sidenav-item-icon">
                                 <img src="/assets/default/img/sidebar/grarph.svg" width="150" height="150" alt="graph">
                             </span>
                         </a>
-                        <a href="/{{panelRoute()}}/analytics" class="font-14 nav-sub-title">Analytics</a>
+                        <a href="/analytics" class="font-14 nav-sub-title">Analytics</a>
                     </li>
 
                 @if(auth()->user()->isUser())
@@ -139,13 +139,13 @@
                         <a href="/school-zone" class="font-14 nav-sub-title">School Zone</a>
                     </li>--}}
                 @endif
-                <li class="sidenav-item {{ (request()->is('panel/marketing/affiliates') or request()->is('panel/marketing/affiliates/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/marketing/affiliates" data-toggle="tooltip" data-placement="left" title="Referrals">
+                <li class="sidenav-item {{ (request()->is('marketing/affiliates') or request()->is('marketing/affiliates/*')) ? 'sidenav-item-active' : '' }}">
+                    <a class="d-flex align-items-center" href="/marketing/affiliates" data-toggle="tooltip" data-placement="left" title="Referrals">
                         <span class="sidenav-setting-icon sidenav-item-icon">
                             <img src="/assets/default/img/sidebar/referrals.png" width="150" height="150" alt="referrals">
                         </span>
                     </a>
-                    <a href="/{{panelRoute()}}/marketing/affiliates" class="font-14 nav-sub-title">Referrals</a>
+                    <a href="/marketing/affiliates" class="font-14 nav-sub-title">Referrals</a>
                 </li>
 
 
@@ -162,14 +162,15 @@
 
                 @endif
 
-                <li class="sidenav-item {{ (request()->is('panel/setting') or request()->is('panel/setting/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/setting" data-toggle="tooltip" data-placement="left" title="Profile">
+                <li class="sidenav-item {{ (request()->is('setting') or request()->is('setting/*')) ? 'sidenav-item-active' : '' }}">
+                    <a class="d-flex align-items-center" href="/setting" data-toggle="tooltip" data-placement="left" title="Profile">
                         <span class="sidenav-setting-icon sidenav-item-icon">
                             <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" class="img-circle" width="150" height="150">
                         </span>
                     </a>
-                    <a href="/{{panelRoute()}}/setting" class="font-14 nav-sub-title">Profile</a>
+                    <a href="/setting" class="font-14 nav-sub-title">Profile</a>
                 </li>
+
 
                 <li class="sidenav-item {{ (request()->is('logout') or request()->is('logout/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/logout" data-toggle="tooltip" data-placement="left" title="Logout">

@@ -18,7 +18,7 @@
             @if(auth()->check() && (auth()->user()->isParent()))
             <div class="ms-auto last-activity profile-dropdown">
                 <a href="#" class="font-14 font-weight-normal">
-                    <img src="/assets/default/svgs/students.svg" alt="students"> 
+                    <img src="/assets/default/svgs/students.svg" alt="students">
                     {{$selected_child}}
                 </a>
                 <ul>
@@ -130,6 +130,8 @@
                         $end_time = isset( $analyticData['end_time'] )? $analyticData['end_time'] : 0;
                         $type = isset( $analyticData['type'] )? $analyticData['type'] : '';
 
+                        $analytics_detail_link = get_analytics_detail_link($analyticData);
+
 
                         $detail_link = '';
                         if( $parent_type == 'practice' || $parent_type == 'sats' || $parent_type == '11plus' || $parent_type == 'assessment' || $parent_type == 'book_page' || $parent_type == 'vocabulary' || $parent_type == 'assignment'){
@@ -156,7 +158,7 @@
                         @endphp
                                 <li>
                                     <div class="timeline-icon"><img src="{{$analytic_icon}}" width="26" height="26" alt="avatar"></div>
-                                    <div class="timeline-text"><p><strong><a href="{{$detail_link}}">{{isset( $analyticData['topic_title'] )? $analyticData['topic_title'] : ''}}</a></strong> {!! $by_user_label !!} <span class="info-time">{{ dateTimeFormat($start_time,'H:i') }}</span></p>
+                                    <div class="timeline-text"><p><strong><a href="{{$analytics_detail_link}}">{{isset( $analyticData['topic_title'] )? $analyticData['topic_title'] : ''}}</a></strong> {!! $by_user_label !!} <span class="info-time">{{ dateTimeFormat($start_time,'H:i') }}</span></p>
                                     @if( $type == 'book_read')
                                             <span class="analytic-item">Reading Time: {{isset( $analyticData['read_time'] )? $analyticData['read_time'] : 0}} min</span>
                                             <span class="analytic-item">Pages Read: {{isset( $analyticData['pages_read'] )? $analyticData['pages_read'] : ''}}</span>
@@ -170,7 +172,7 @@
                                             <span class="analytic-item">Coins earned: {{isset( $analyticData['coins_earned'] )? $analyticData['coins_earned'] : 0}}</span>
                                     @endif
                                     @if( $type != 'quest')
-                                        <span class="analytics-more_details"><a href="{{$detail_link}}">More Details</a></span>
+                                        <span class="analytics-more_details"><a href="{{$analytics_detail_link}}">More Details</a></span>
                                     @endif
                                     </div>
                                 </li>
