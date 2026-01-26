@@ -1309,6 +1309,9 @@ Lms Responsive Style Start
         background-color: inherit;
         color: #999;
     }
+    .chapter-tags .debug-details {
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
