@@ -224,6 +224,12 @@ Lms Responsive Style Start
 
 @media screen and (max-width: 1024px) {
     .user-profile-icons ul {justify-content: space-between;}
+    .user-profile-icons ul .menu-button-mobile {
+        margin-left: auto;
+    }
+    .user-profile-icons ul .sidebar-logo-mobile {
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 992px) {
