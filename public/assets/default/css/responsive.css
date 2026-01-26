@@ -607,7 +607,6 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .user-profile-icons li.dropdown:hover strong:before, 
     .user-profile-icons li.dropdown:hover strong:after {visibility: visible;opacity: 1;}
     .sidebar-logo .sidebar-logo-text {display: none;}
-.user-profile-icons .dropdown-menu-right {left: 0; right: auto;}
     .panel-right-sidebar [class*="col-"],
     .panel-right-sidebar .sidebar-inner-elements {display: none;}
     .panel-right-sidebar [class*="col-"]:has(.user-profile-icons) {display: block;}
