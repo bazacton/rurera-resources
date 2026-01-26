@@ -447,7 +447,7 @@
 									<img src="{{$quest_icon}}" alt="{{$quest_icon}}">
 									<div class="lms-tooltip">
 										<div class="tooltip-box">
-											<h5 class="font-18 font-weight-bold text-white mb-5">
+											<h5 class="font-16 font-weight-bold text-white mb-5">
 											Active practice: 11<br>
 											Questions answered: 11 <br>
 											<img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30">Coins earned:11
