@@ -760,7 +760,7 @@ Right SideBar Style Start
 .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
 .user-profile-icons .dropdown-menu:after, 
 .user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
-.user-profile-icons .dropdown-menu:before {
+.user-profile-icons .sidebar-no-mobile .dropdown-menu:before {
     background-color: #fff;
     top: -8px;
     box-shadow: none;
@@ -768,7 +768,7 @@ Right SideBar Style Start
     right: 15px;
     left: auto;
 }
-.user-profile-icons .dropdown-menu:after {
+.user-profile-icons .sidebar-no-mobile .dropdown-menu:after {
     right: 15px;
     left: auto;
 }
