@@ -2103,6 +2103,8 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 /* Questions Result Layout Accordion Style Start */
 .card:has(.question-result-layout-holder) {
     border: 0;
+    border-top: 1px solid #ddd;
+    border-radius: 0;
     padding: 0;
 }
 #analyticsAccordion .card .card-header {
