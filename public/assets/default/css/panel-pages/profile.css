@@ -338,6 +338,10 @@ address .info-list-label {color: #64748b;}
 .subscribe-plan .subscribe-price {
     flex-direction: column;
 }
+.subscribe-plan .subscribe-price .yearly-price {
+    display: block;
+    padding-top: 10px;
+}
 .subscription-controls .package-update-btn.btn {
     font-weight: normal;
     font-size: 14px;
