@@ -299,20 +299,23 @@ if( !empty( $emojisArray ) ){
 															</ul>
 														</div>
 													</div>
-                                                    <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
-                                                        <div class="package-block">
-                                                            <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
-                                                            <div class="subscribe-title">
-                                                                <h3 class="font-24 font-weight-500">Test&nbsp;Prep&nbsp;Plus</h3>
+                                                    <div class="edit-info-list">
+                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
+                                                            <div class="package-block">
+                                                                <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
+                                                                <div class="subscribe-title">
+                                                                    <h3 class="font-24 font-weight-500">Test&nbsp;Prep&nbsp;Plus</h3>
+                                                                </div>
+                                                            </div>
+                                                                                        <div class="d-flex align-items-start text-dark-charcoal mb-0 subscribe-price">
+                                                                <span class="font-36 line-height-1 packages-prices" data-package_price="37.49">£599.88</span>
+                                                                <span class="yearly-price">£599.88 / Yearly</span>
+                                                                <span class="yearly-price">Expiry: 18 Dec 2026</span>
+
                                                             </div>
                                                         </div>
-                                                                                    <div class="d-flex align-items-start text-dark-charcoal mb-0 subscribe-price">
-                                                            <span class="font-36 line-height-1 packages-prices" data-package_price="37.49">£599.88</span>
-                                                            <span class="yearly-price">£599.88 / Yearly</span>
-                                                            <span class="yearly-price">Expiry: 18 Dec 2026</span>
-
-                                                        </div>
                                                     </div>
+                                                    
                                                     <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center mt-15">
                                                         <button type="button" id="saveData" class="save-btn text-center ml-0">Save</button>
                                                     </div>			
