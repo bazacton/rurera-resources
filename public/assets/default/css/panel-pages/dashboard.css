@@ -2101,14 +2101,18 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     }
 
 /* Questions Result Layout Accordion Style Start */
+.card:has(.question-result-layout-holder) {
+    border: 0;
+    padding: 0;
+}
 #analyticsAccordion .card .card-header {
     background-color: inherit;
-    border-top: 1px solid rgba(52, 52, 52, .125);
-    border-bottom: 0;
+    border-bottom: 1px solid #ddd;
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 15px 0;
 }
 #analyticsAccordion .card-body {
     border-top: 1px solid rgba(52, 52, 52, .125);
