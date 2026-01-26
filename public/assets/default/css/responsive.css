@@ -222,6 +222,10 @@ Lms Responsive Style Start
     .counter-holder .svg-shapes-top {position: absolute; right: -110px;top: -25px;}
 }
 
+@media screen and (max-width: 1024px) {
+    .user-profile-icons ul {justify-content: space-between;}
+}
+
 @media screen and (max-width: 992px) {
     .navbar-expand-lg .navbar-toggler,
     .navbar1 .navbar-toggler {display: block; font-size: 15px; color: #000; font-weight: 600;}
