@@ -97,7 +97,7 @@
             </strong>
 
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                <div class="dropdown-header">{{ trans('admin/main.notifications') }}
+                <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
                         <a href="{{ getAdminPanelUrl() }}/notifications/mark_all_read">{{ trans('admin/main.mark_all_read') }}</a>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="dropdown-list-content dropdown-list-icons">
+                <div class="dropdown-list-content dropdown-list-icons font-14">
                     @foreach($unReadNotifications as $unreadNotification)
                     <a href="{{ getAdminPanelUrl() }}/notifications" class="dropdown-item">
                         <div class="dropdown-item-icon bg-info text-white d-flex align-items-center justify-content-center">
