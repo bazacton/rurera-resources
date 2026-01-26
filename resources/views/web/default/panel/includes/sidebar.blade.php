@@ -46,13 +46,13 @@
                             <a href="/learn" class="font-14 nav-sub-title">Learn @if(!auth()->subscription('courses'))<img src="/assets/default/svgs/crown.svg" alt="crown" class="crown-icon">@endif</a>
                     </li>
                     @if(auth()->user()->show_timestables == 1)
-                    <li class="sidenav-item {{ (request()->is('timestables-practice') or request()->is('timestables-practice/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/timestables-practice" data-toggle="tooltip" data-placement="left" title="TimesTable">
+                    <li class="sidenav-item {{ (request()->is('timestable') or request()->is('timestable/*')) ? 'sidenav-item-active' : '' }}">
+                        <a class="d-flex align-items-center" href="/timestable" data-toggle="tooltip" data-placement="left" title="TimesTable">
                             <span class="sidenav-item-icon">
                                 <img src="/assets/default/img/sidebar/timestable.svg" width="800" height="800" alt="timestable">
                             </span>
                         </a>
-                        <a href="/timestables-practice" class="font-14 nav-sub-title">TimesTable</a>
+                        <a href="/timestable" class="font-14 nav-sub-title">TimesTable</a>
                     </li>
                 @endif
                 @if(auth()->user()->show_spellings == 1)
