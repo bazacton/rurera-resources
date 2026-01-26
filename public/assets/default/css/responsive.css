@@ -402,7 +402,6 @@ Lms Responsive Style Start
     .page-sub-header .btn-primary,
     .top-navbar .nav-icons-or-start-live,
     .page-sub-header h1 br {display: none;}
-    .section-title {text-align: center !important;}
     .parent-panel .section-title {text-align: left !important;}
     .parent-panel .packages-list-modal .section-title {text-align: center !important;}
     .form-section.text-left .section-title {text-align: left !important;}
@@ -635,6 +634,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .testimonials-fancy-bg {margin-top: 100px;}
     .lms-subscription-form.shape {margin-top: 70px;}
     .lms-setup-progress .step-name {font-size: 14px;}
+    .section-title {text-align: center !important;}
     .lms-payment-field {margin-right: 0;}
     .lms-subscription-form .lms-form-wrapper {width: 100%; max-width: 100%;}
     .lms-form-wrapper .lms-radio-btn-group label {margin: 0;}
