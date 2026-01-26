@@ -335,6 +335,9 @@ address .info-list-label {color: #64748b;}
     object-fit: contain;
     max-height: 50px;
 }
+.subscribe-plan .subscribe-price {
+    flex-direction: column;
+}
 .subscription-controls .package-update-btn.btn {
     font-weight: normal;
     font-size: 14px;
