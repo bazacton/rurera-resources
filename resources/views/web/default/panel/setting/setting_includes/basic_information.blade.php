@@ -307,7 +307,7 @@ if( !empty( $emojisArray ) ){
 														</div>
 													</div>
                                                     <div class="edit-info-list border-0 pb-0">
-                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20">
+                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column p-20">
                                                             <div class="package-block">
                                                                 <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
                                                                 <div class="subscribe-title">
