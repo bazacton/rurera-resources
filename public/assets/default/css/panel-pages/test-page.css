@@ -48,7 +48,7 @@ Sub Pages Style
 .sats-listing-card .rurera-unlock-item img,
 .sats-listing-card .rurera-lock-item img {margin-right: 0;}
 .panel-content .sats-listing-card tbody tr td:nth-child(2) {min-width: auto;}
-.sats-listing-card tbody tr td {border-bottom: 1px solid #ddd; padding: 25px 20px;}
+.sats-listing-card tbody tr td {border-bottom: 1px solid #ddd; padding: 18px 10px;}
 .sats-listing-card .attempt-progress {min-width: 120px;}
 .sats-listing-card.medium .media-holder {margin: -15px 0 0 12px; background-color: #fff; width: 100px; box-shadow: 0 0 5px rgba(0,0,0,0.2); min-height: 120px; display: inline-flex; align-items: center; justify-content: center; position: relative;}
 .sats-listing-card.medium .media-holder:after,
