@@ -57,9 +57,9 @@
                 </li>
             </ul>
         </div>
-        <div class="analytics-dropdown">
+        <div class="analytics-dropdown font-14">
             <div class="select-holder">
-                <h5>Subject</h5>
+                <h5 class="font-14 font-weight-500">Subject</h5>
                 <div class="select-box">
                     <select>
                         <option value="All subjects">All subjects</option>
