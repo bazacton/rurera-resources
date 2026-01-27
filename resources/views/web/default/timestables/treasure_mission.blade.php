@@ -15,7 +15,7 @@
     @if( !empty( $get_treasure_missions ) )
         <!-- Listing Search Start -->
         <div class="listing-search lms-jobs-form mb-20">
-            <ul class="inline-filters">
+            <ul class="inline-filters font-14">
             @foreach( $get_treasure_missions as $key => $missionData)
                 @php $is_active = ($key == 0)? 'active' : '';
                 $is_locked = isset( $missionData['is_locked'] )? $missionData['is_locked'] : false;
