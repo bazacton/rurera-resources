@@ -480,8 +480,8 @@ input.droppable-field {
     color: var(--primary);
 }
 .quiz-area-page .question-solution {
-    border-top: 1px solid #ddd;
-    padding: 10px 0 0;
+    border-left: 4px solid #ddd;
+    padding: 0 0 0 15px;
 }
 #explaination h5 {
     display: none;
