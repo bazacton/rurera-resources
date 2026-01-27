@@ -29,9 +29,9 @@
         </li>
     </ul>
 </div>
-<div class="analytics-dropdown">
+<div class="analytics-dropdown font-14">
     <div class="date-range-holder">
-        <h5>Date Range</h5>
+        <h5 class="font-14 font-weight-500">Date Range</h5>
         <div class="date-range-box">
             @php $passing_data = array(
                'student_id' => isset($studentObj->id)? $studentObj->id : 0,
