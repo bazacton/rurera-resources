@@ -1176,6 +1176,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .analytics-dropdown .select-box,
     .analytics-dropdown .select-holder,
     .date-range-holder {max-width: 100%; width: 100%;}
+    .date-range-box {background-position: 98% 50%;}
     .analytics-dropdown select {padding: 10px; background-position: 99% 50%;}
     .activities-container .chart-filters {margin-bottom: 15px;}
     #profile-image-modal .close {right: 5px; top: 5px;}
