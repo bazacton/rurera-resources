@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="analytics-header">
-            <div class="header-text font-16 font-weight-bold text-dark-charcoal">
+            <div class="header-text font-14 font-weight-bold text-dark-charcoal">
                 <span>Date</span>
                 <span>Avg Daily Mins</span>
                 <span>Coins Earned</span>
