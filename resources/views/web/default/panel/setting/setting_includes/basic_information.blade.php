@@ -321,12 +321,11 @@ if( !empty( $emojisArray ) ){
 
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    
-                                                    <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center mt-15">
-                                                        <button type="button" id="saveData" class="save-btn text-center ml-0">Save</button>
-                                                    </div>			
+                                                    </div>		
 												</div>
+                                                <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center mt-15">
+                                                    <button type="button" id="saveData" class="save-btn text-center ml-0">Save</button>
+                                                </div>	
 											</div>
                                         </div>
                                     </div>
