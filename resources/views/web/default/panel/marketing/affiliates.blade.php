@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="referral-text mb-30">
+                    <div class="referral-text">
                         @if(!empty($referralSettings))
                             <div class="text-gray font-14">
                                 @if(!empty($referralSettings['affiliate_user_amount']))<p>- {{ trans('panel.user_registration_reward') }}: {{ addCurrencyToPrice($referralSettings['affiliate_user_amount']) }}</p>@endif
