@@ -281,10 +281,11 @@
         var chart_values = [];
 
         @if($attempted_questions_list->count() > 0)
-        @php $question_counter = 1; @endphp
+        @php $question_counter = 1;  $smart_score = 0; @endphp
         @foreach($attempted_questions_list->orderBy('attempted_at', 'asc')->get() as $attemptedQuestionObj)
+            @php if($attemptedQuestionObj->year_id == $user->year_id){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
         chart_columns.push({{ $question_counter }});
-        chart_values.push({{ $attemptedQuestionObj->smart_score }});
+        chart_values.push({{ $smart_score }});
         @php $question_counter++; @endphp
         @endforeach
         @endif
