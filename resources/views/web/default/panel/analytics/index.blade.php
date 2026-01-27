@@ -44,12 +44,12 @@
                 <a href="#" class="filter-mobile-btn">Filters</a>
                 <ul class="analytics-type">
                     @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
-                    <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> ALL</a></li>
-                    <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> LEARN</a></li>
-                    <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> TIMESTABLE</a></li>
-                    <li {{($type_selected == 'vocabulary')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/vocabulary{{$link_append}}" data-graph_type="word_lists"><img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell"> WORD LISTS</a></li>
-                    <li {{($type_selected == 'books')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/books{{$link_append}}" data-graph_type="books"><img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books"> BOOKS</a></li>
-                    <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> TEST</a></li>
+                    <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> All</a></li>
+                    <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> Learn</a></li>
+                    <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> Timestable</a></li>
+                    <li {{($type_selected == 'vocabulary')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/vocabulary{{$link_append}}" data-graph_type="word_lists"><img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell"> Word Lists</a></li>
+                    <li {{($type_selected == 'books')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/books{{$link_append}}" data-graph_type="books"><img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books"> Books</a></li>
+                    <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> Test</a></li>
                 </ul>
             </div>
             <ul class="analytics-data-ul">
