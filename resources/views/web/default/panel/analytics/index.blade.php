@@ -11,7 +11,7 @@
 @endpush
 
 @section('content')
-<section class="member-card-header activities-header pb-15 mb-0">
+<section class="member-card-header activities-header pb-0 mb-0">
     <div class="d-flex align-items-start align-items-md-center justify-content-between flex-md-row">
         
         <div class="dropdown db-members">
