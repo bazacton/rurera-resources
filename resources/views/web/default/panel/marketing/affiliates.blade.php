@@ -21,9 +21,9 @@
                     <div class="referral-text mb-30">
                         <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">Your Referral Link</h3>
                         <p class="text-gray mb-15 font-14">Use this link to invite new users to Rurera. Each successful registration or purchase made through your referral link will be tracked and added to your account.</p>
-                        <div class="referral-link">
-                            <input type="text" class="link-address font-14 font-weight-500" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
-                            <a href="javascript:;" class="link-btn font-14 font-weight-500 js-copy" data-input="affiliate_url">Copy Link</a>
+                        <div class="referral-link text-right font-14 font-weight-500">
+                            <input type="text" class="link-address text-left" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
+                            <a href="javascript:;" class="link-btn js-copy" data-input="affiliate_url">Copy Link</a>
                         </div>
                     </div>
                 </div>
