@@ -66,7 +66,7 @@
                                     </div>
                                     <!-- Test List Filters End -->
                                      <!-- Total-Tests Counter Start -->
-                                    <h4 class="total-tests has-border font-22">Total Tests: {{$sats->count()}}</h4>
+                                    <h4 class="total-tests has-border font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h4>
                                     <!-- Total-Tests Counter Start -->
                                 </div>
                             </div>
