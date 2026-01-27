@@ -3533,7 +3533,7 @@ html:has(.learn-test-start) {
     filter: invert(27%) sepia(58%) saturate(3743%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
 .questions-data-block .tooltip {
-    top: 40px !important;
+    top: 70px !important;
 }
 .questions-data-block .tooltip-inner {
     background-color: #000;
