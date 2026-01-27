@@ -20,7 +20,7 @@
     <!-- Listing Search Start -->
     <div class="listing-search lms-jobs-form mb-20">
         <a href="#." class="filter-mobile-btn">Filters</a>
-        <ul class="inline-filters">
+        <ul class="inline-filters font-14">
             @php $active = ($quiz_category == '')? 'active' :'' @endphp
             <li class="{{$active}}"><a href="/spells">All Word Lists</a></li>
             @php $active = ($quiz_category == 'Word Lists')? 'active' :'' @endphp
