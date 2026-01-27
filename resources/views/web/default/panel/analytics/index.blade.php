@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="select-holder">
-                <h5>Skill Year</h5>
+                <h5 class="font-14 font-weight-500">Skill Year</h5>
                 <div class="select-box">
                     <select>
                         <option value="All Year">All Years</option>
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="date-range-holder">
-                <h5>Date Range</h5>
+                <h5 class="font-14 font-weight-500">Date Range</h5>
                 <div class="date-range-box">
                     <input type="text" id="reportrange1">
                 </div>
