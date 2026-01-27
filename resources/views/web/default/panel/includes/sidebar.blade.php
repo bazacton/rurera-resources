@@ -4,12 +4,12 @@
 <!-- Panel Sidebar Start -->
 <div class="panel-sidebar px-25 pt-15" id="panelSidebar" style="position: inherit;top: 0px;" itemscope itemtype="https://schema.org/Organization">
     <div class="container">
-        <a class="sidebar-logo" href="{{url('/')}}/" itemscope itemprop="url">
+        <a class="sidebar-logo" href="{{url('/')}}/dashboard" itemscope itemprop="url">
             <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text">Rurera</span>
         </a>
         <div class="sidebar-menu-holder">
             <div class="sidebar-menu-top">
-            <a class="sidebar-logo" itemscope href="{{url('/')}}/" itemprop="url">
+            <a class="sidebar-logo" itemscope href="{{url('/dashboard')}}/" itemprop="url">
                 <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text">Rurera</span>
             </a>
             <button class="navbar-toggler navbar-order" type="button" id="navbarToggle">
