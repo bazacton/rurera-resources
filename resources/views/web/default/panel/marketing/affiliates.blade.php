@@ -92,7 +92,7 @@
                 <div class="col-12 ">
                     <div class="table-responsive transactions-table">
                         <table class="table text-center custom-table">
-                            <thead class="font-16 font-weight-500">
+                            <thead class="font-14 font-weight-500">
                             <tr>
                                 <th>{{ trans('panel.user') }}</th>
                                 <th>{{ trans('panel.registration_bonus') }}</th>
