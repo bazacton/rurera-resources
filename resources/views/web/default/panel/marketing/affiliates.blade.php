@@ -86,7 +86,7 @@
     </section>
 
     <section class="mt-25">
-        <h2 class="section-title font-22">{{ trans('panel.earnings') }}</h2>
+        <h2 class="section-title font-14 font-weight-bold">{{ trans('panel.earnings') }}</h2>
         <div class="panel-section-card rounded-sm mt-15">
             <div class="row">
                 <div class="col-12 ">
