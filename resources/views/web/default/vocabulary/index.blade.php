@@ -139,7 +139,7 @@
             <h3 class="mt-30">Choose Practice Type</h3>
             <div class="tests-list-holder spell-type-check mb-25 mt-20">
                 <a href="#." class="filter-mobile-btn">Filters</a>
-                <ul class="tests-list mb-30">
+                <ul class="tests-list mb-30 font-14">
                     <li data-type="word-hunts" class="active">Word Hunts</li>
                     <li data-type="word-search">Word Search</li>
                     <li data-type="word-cloud">Word Cloud</li>
@@ -152,7 +152,7 @@
             <h3 class="mt-30">Choose No of Words</h3>
             <div class="tests-list-holder question_no_check mb-25 mt-20">
                 <a href="#." class="filter-mobile-btn">Filters</a>
-                <ul class="tests-list mb-30">
+                <ul class="tests-list mb-30 font-14">
                     <li data-type="10" class="active">10</li>
                     <li data-type="20">20</li>
                     <li data-type="30">30</li>
