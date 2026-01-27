@@ -1325,6 +1325,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .user-profile-icons .dropdown-menu {
         min-width: 220px;
     }
+    .edit-info-list {width: 100%; flex: 0 0 100%; max-width: 100%;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1886,7 +1887,6 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .login-password form {margin-bottom: 15px;}
     .edit-profile-top {gap: 15px;}
     .notification-card .text-right {text-align: center !important;}
-    .edit-info-list {width: 100%;}
     .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto; width: 100%;}
     .home-sections:has(.blog-grid-card) .btn {padding-right: 10px; padding-left: 10px;}
     .referral-text a {padding: 10px;}
