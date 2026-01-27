@@ -2107,7 +2107,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     border-radius: 0;
     padding: 0;
 }
-#analyticsAccordion .card .card-header {
+.question-area-block #analyticsAccordion .card .card-header {
     background-color: inherit;
     border-bottom: 1px solid transparent;
     font-weight: 600;
@@ -2116,15 +2116,15 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     justify-content: space-between;
     padding: 15px 0;
 }
-#analyticsAccordion .card .card-header.collapsed {
+.question-area-block #analyticsAccordion .card .card-header.collapsed {
     border-bottom-color: #ddd;
 }
-#analyticsAccordion .card-body {
+.question-area-block #analyticsAccordion .card-body {
     border-top: 0;
     padding: 25px;
     background-color: #f9f9f9;
 }
-#analyticsAccordion .card-header > span {
+.question-area-block #analyticsAccordion .card-header > span {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -2132,14 +2132,14 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     justify-content: flex-end;
     margin-right: 0 !important;
 }
-#analyticsAccordion .card-header > span:nth-child(2) {
+.question-area-block #analyticsAccordion .card-header > span:nth-child(2) {
     justify-content: flex-start;
     margin-left: -8px;
 }
-#analyticsAccordion .card-header > span:first-child {
+.question-area-block #analyticsAccordion .card-header > span:first-child {
     justify-content: flex-start;
 }
-#analyticsAccordion .card-header img {
+.question-area-block #analyticsAccordion .card-header img {
     max-width: 25px;
     max-height: 20px;
     object-fit: contain;
