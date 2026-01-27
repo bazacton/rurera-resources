@@ -86,18 +86,18 @@
     </section>
 
     <section class="mt-25">
-        <h2 class="section-title font-14 font-weight-bold">{{ trans('panel.earnings') }}</h2>
+        <h2 class="section-title font-16 font-weight-bold">{{ trans('panel.earnings') }}</h2>
         <div class="panel-section-card rounded-sm mt-15">
             <div class="row">
                 <div class="col-12 ">
                     <div class="table-responsive transactions-table">
                         <table class="table text-center custom-table">
-                            <thead>
+                            <thead class="font-16 font-weight-500">
                             <tr>
-                                <th class="font-16 font-weight-500">{{ trans('panel.user') }}</th>
-                                <th class="font-16 font-weight-500">{{ trans('panel.registration_bonus') }}</th>
-                                <th class="font-16 font-weight-500">{{ trans('panel.affiliate_bonus') }}</th>
-                                <th class="font-16 font-weight-500">{{ trans('panel.registration_date') }}</th>
+                                <th>{{ trans('panel.user') }}</th>
+                                <th>{{ trans('panel.registration_bonus') }}</th>
+                                <th>{{ trans('panel.affiliate_bonus') }}</th>
+                                <th>{{ trans('panel.registration_date') }}</th>
                             </tr>
                             </thead>
                             <tbody>
