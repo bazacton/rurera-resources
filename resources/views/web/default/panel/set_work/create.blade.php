@@ -40,6 +40,7 @@
                                     @if( !empty( $childs ) )
                                     @php $child_count = 0; @endphp
                                             @foreach($childs as $childLinkObj)
+                                            @if(!isset($childObj->id)) @php continue; @endphp  @endif
                                             @php $childObj = $childLinkObj->user; @endphp
                                             @php
                                             $userSubscriptions = isset($childObj->id)? $childObj->userSubscriptions : '';
