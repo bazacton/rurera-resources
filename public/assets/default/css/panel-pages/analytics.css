@@ -32,7 +32,10 @@ Sub Pages Style
 .analytics-header .header-text > span {width: 33.333%; text-align: right;}
 .analytics-header .header-text > span:first-child {text-align: left;}
 .analytics-header .header-text > span:nth-child(2) {text-align: left;}
-#analyticsAccordion .card {border-radius: 0; border-left: 0; border-right: 0;}
+#analyticsAccordion .card {border-radius: 0; border-left: 0; border-right: 0;border-bottom: 0;}
+#analyticsAccordion .card:last-child {
+    border-bottom: 1px solid #ddd;
+}
 #analyticsAccordion .card .card-header {border-radius: 0; border-bottom: 0; font-weight: 600; display: flex; flex-wrap: wrap; justify-content: space-between;}
 #analyticsAccordion .card:nth-child(even) > .card-header {background-color: #fff;}
 
