@@ -4,7 +4,7 @@ Sub Pages Style
 *****************************/
 .panel-content .lms-jobs-form .input-field input[type="text"] {padding-right: 45px;}
 .panel-content .lms-jobs-form .input-field:before {content: ""; height: 25px; width: 25px; position: absolute; right: 15px; top: 50%; margin-top: -12px; background: url(/assets/default/svgs/search.svg) no-repeat;}
-.listing-search .has-border {border-bottom: 1px solid #e2e2e2; padding: 0 0 15px 0; }
+.listing-search .has-border {border-bottom: 1px solid #ddd; padding: 0 0 15px 0; }
 .sats-listing-card {border-radius: 10px; padding: 20px; margin-bottom: 30px; }
 .sats-listing-card .img-holder {margin-bottom: 15px;}
 .sats-listing-card .img-holder img {max-width: 100%; transition: all .5s;}
@@ -48,7 +48,7 @@ Sub Pages Style
 .sats-listing-card .rurera-unlock-item img,
 .sats-listing-card .rurera-lock-item img {margin-right: 0;}
 .panel-content .sats-listing-card tbody tr td:nth-child(2) {min-width: auto;}
-.sats-listing-card tbody tr td {border-bottom: 1px solid #ececec; padding: 25px 20px;}
+.sats-listing-card tbody tr td {border-bottom: 1px solid #ddd; padding: 25px 20px;}
 .sats-listing-card .attempt-progress {min-width: 120px;}
 .sats-listing-card.medium .media-holder {margin: -15px 0 0 12px; background-color: #fff; width: 100px; box-shadow: 0 0 5px rgba(0,0,0,0.2); min-height: 120px; display: inline-flex; align-items: center; justify-content: center; position: relative;}
 .sats-listing-card.medium .media-holder:after,
