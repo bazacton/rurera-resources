@@ -13,7 +13,7 @@
 @section('content')
 <section class="member-card-header activities-header pb-15 mb-0">
     <div class="d-flex align-items-start align-items-md-center justify-content-between flex-md-row">
-        <h2 class="section-title font-22">Analytics</h2>
+        
         <div class="dropdown db-members">
             @if(auth()->check() && (auth()->user()->isParent()))
             <div class="ms-auto last-activity profile-dropdown">
@@ -35,6 +35,9 @@
     </div>
 </section>
 <section>
+    <div class="section-title mb-15">
+        <h2 class="font-22">Analytics</h2>
+    </div>
     <div class="activities-container p-20 p-lg-25 rounded-sm">
         <div class="chart-filters p-0">
             <div class="filters-list mb-0">
