@@ -1,313 +1,916 @@
-@extends('web.default.panel.layouts.panel_layout_full')
-@push('styles_top')
-<script src="/assets/default/vendors/charts/chart.js"></script>
-<link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<style>
-    .hide {
-        display: none !important;
-    }
-</style>
-@endpush
+@extends('web.default.panel.layouts.panel_layout')
 
 @section('content')
-<section class="member-card-header activities-header pb-15 mb-0">
-    <div class="d-flex align-items-start align-items-md-center justify-content-between flex-md-row">
-        <h2 class="section-title font-22">Analytics</h2>
-        <div class="dropdown db-members">
-            @if(auth()->check() && (auth()->user()->isParent()))
-            <div class="ms-auto last-activity profile-dropdown">
-                <a href="#" class="font-14 font-weight-normal">
-                    <img src="/assets/default/svgs/students.svg" alt="students"> 
-                    {{$selected_child}}
+<section class="content-section">
+    <div class="page-section template-grid mx-w-100 p-0 news-section">
+        <div class="timestables-modes">
+            <div class="section-title mb-15">
+                <h2 class="font-22 mb-0">Time Tables</h2>
+            </div>
+            <div class="rurera-hide">
+                <ul class="tests-list type-list mb-30">
+                    <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt="single"> Single Player</li>
+                    <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt="multi"> Multi Player</li>
+                </ul>
+            </div>
+
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                    <div class="col-12 col-lg-12 pt-15">
+                    <div class="sound-card panel-border bg-white rounded-sm p-20">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                        <span class="selective-sound font-22">very</span>
+                            <div class="sound-box">
+                                <span class="icon-box">
+                                    <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
+                                </span>
+                                <span class="current-sound font-22">very</span>
+                            </div>
+                            <div class="sound-list">
+                                <h5>adjective</h5>
+                                <ol>
+                                    <li>being actual or real</li>
+                                    <li>exact, precise</li>
+                                    <li>exactly suitable or necessary</li>
+                                </ol>
+                            </div>
+                            <div class="sound-list mb-0">
+                                <h5>adverb</h5>
+                                <ol>
+                                    <li>in actual fact: truly</li>
+                                    <li>to a great degree: extremely</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="type-list-data single-player-data">
+                <a itemprop="url" href="/timestable/freedom-mode">
+                    <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Freedom mode
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
+                    </div>
                 </a>
-                <ul>
-                    @if( !empty( $childs ) )
-                    @foreach($childs as $childLinkObj)
-                    @php $childObj = $childLinkObj->user; @endphp
-                        <li><a href="/{{panelRoute()}}/analytics/?child={{ $childObj->id }}" class="switch-user-btn"><span class="icon-box"><img src="{{$childObj->getAvatar()}}" alt="#" height="400" width="400"></span> {{ $childObj->get_full_name() }}</a></li>
-                    @endforeach
-                    @endif
-                </ul>
+                <a href="/timestable/powerup-mode">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Power-up Heatmap
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
+                    </div>
+                </a>
+                <a href="/timestable/trophy-mode">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Trophy Mode
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
+                    </div>
+                </a>
+                <a href="/timestable/treasure-mission">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Treasure Mission
+                            </h3>
+                            <div class="coin-counts">
+                            <strong>
+                                <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="heart-red">
+                                {{$authUser->user_life_lines}}
+                            </strong>
+                            </div>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
+
+                    </div>
+                </a>
+                <a href="/timestable/showdown-mode">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Showdown
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
+                    </div>
+                </a>
+                <a href="/timestable/heat-map">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Heat Map
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
+                    </div>
+                </a>
+                <a href="/analytics">
+                    <div class="grid-card timestables-mode-data">
+                        <div class="text-holder">
+                            <h3 class="font-16 font-weight-bold">
+                                Analytics
+                            </h3>
+                        </div>
+                        <div class="img-holder">
+                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        </div>
+                        <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
+
+                    </div>
+                </a>
             </div>
-            @endif
+
+            <div class="type-list-data multi-player-data rurera-hide">
+                <div class="grid-card timestables-mode-data">
+                    <div class="text-holder">
+                        <h3 class="font-16 font-weight-bold">
+                        <a class="grid-btn" href="javascript:;">Tournament</a>
+                            <span class="title-label">Coming Soon</span>
+                        </h3>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
+                    </div>
+                    <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
+                </div>
+                <div class="grid-card timestables-mode-data">
+                    <div class="text-holder">
+                        <h3 class="font-16 font-weight-bold">
+                            <a class="grid-btn" href="javascript:;">Global Arena
+                                <span class="title-label">Coming Soon</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                    </div>
+                    <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
+
+                </div>
+            </div>
+            <div class="rurera-hide">
+                <div class="preferences panel-border bg-white rounded-sm p-20">
+                    <h5 class="font-19 font-weight-bold">Preferences</h5>
+                    <h6 class="font-weight-500 mb-20">Lesson experience</h6>
+                    <div class="preferences-switch-list">
+                        <div class="preferences-switch-box mb-15">
+                            <span class="switch-lable">Sound effect</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
+                                <label class="custom-control-label" for="sound"></label>
+                            </div>
+                        </div>
+                        <div class="preferences-switch-box mb-15">
+                            <span class="switch-lable">Animation</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
+                                <label class="custom-control-label" for="animation"></label>
+                            </div>
+                        </div>
+                        <div class="preferences-switch-box mb-15">
+                            <span class="switch-lable">Motivational message</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
+                                <label class="custom-control-label" for="motivational"></label>
+                            </div>
+                        </div>
+                        <div class="preferences-switch-box mb-15">
+                            <span class="switch-lable">Listing exercises</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
+                                <label class="custom-control-label" for="listing"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="font-weight-500 mb-20">Appearance</h6>
+                    <div class="preferences-select">
+                        <span class="font-weight-500 mb-5 d-block">Dark mode</span>
+                        <select>
+                            <option value="System Default">System Default</option>
+                            <option value="System Default">System Default</option>
+                            <option value="System Default">System Default</option>
+                            <option value="System Default">System Default</option>
+                        </select>
+                    </div>
+                    <h6 class="font-weight-500 mb-20">Japanese</h6>
+                    <div class="preferences-switch-box mb-10">
+                        <span class="switch-lable">Show pronunciation</span>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" name="disabled" class="custom-control-input" id="pronunciation">
+                            <label class="custom-control-label" for="pronunciation"></label>
+                        </div>
+                    </div>
+                    <div class="select-language">
+                        <div class="language-box">
+                            <input type="radio" name="language" id="one">
+                            <label for="one" data-toggle="modal" data-target="#exampleModalCenter">
+                                <span class="icon-box"></span>
+                                <span class="country-lable">Romanized</span>
+                            </label>
+                        </div>
+                        <div class="language-box">
+                            <input type="radio" name="language" id="two">
+                            <label for="two">
+                                <span class="icon-box"></span>
+                                <span class="country-lable">Japanese</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timestables-mode-block">
+            <div class="timestables-mode-content">
+
+            </div>
         </div>
     </div>
-</section>
-<section>
-    <div class="activities-container p-20 p-lg-25 rounded-sm">
-        <div class="chart-filters p-0">
-            <div class="filters-list mb-0">
-                <a href="#" class="filter-mobile-btn">Filters</a>
-                <ul class="analytics-type">
-                    @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
-                    <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> ALL</a></li>
-                    <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> LEARN</a></li>
-                    <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> TIMESTABLE</a></li>
-                    <li {{($type_selected == 'vocabulary')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/vocabulary{{$link_append}}" data-graph_type="word_lists"><img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell"> WORD LISTS</a></li>
-                    <li {{($type_selected == 'books')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/books{{$link_append}}" data-graph_type="books"><img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books"> BOOKS</a></li>
-                    <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> TEST</a></li>
-                </ul>
-            </div>
-            <ul class="analytics-data-ul">
-                <li><a href="javascript:;" class=" hide graph_Custom" data-graph_id="graph_id_Custom">September 20, 2023 - September 26, 2023</a>
-                </li>
-            </ul>
-        </div>
-        <div class="analytics-dropdown">
-            <div class="select-holder">
-                <h5>Subject</h5>
-                <div class="select-box">
-                    <select>
-                        <option value="All subjects">All subjects</option>
-                        <option value="Math">Math</option>
-                        <option value="Science">Science</option>
-                    </select>
-                </div>
-            </div>
-            <div class="select-holder">
-                <h5>Skill Year</h5>
-                <div class="select-box">
-                    <select>
-                        <option value="All Year">All Years</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
-                </div>
-            </div>
-            <div class="date-range-holder">
-                <h5>Date Range</h5>
-                <div class="date-range-box">
-                    <input type="text" id="reportrange1">
-                </div>
-            </div>
-        </div>
-        <div class="analytics-header">
-            <div class="header-text font-16 font-weight-bold text-dark-charcoal">
-                <span>Date</span>
-                <span>Avg Daily Mins</span>
-                <span>Coins Earned</span>
-            </div>
-        </div>
-        <div class="accordion" id="analyticsAccordion">
-            @if( !empty( $analytics_data) )
-            @foreach( $analytics_data as $date_str => $analyticDataArray)
-            @php if(!isset( $analyticDataArray['practice_time'] ) || $analyticDataArray['practice_time'] == 0){ continue; } @endphp
-            @php $report_date = strtotime(str_replace('_', '-', $date_str)); @endphp
-            <div class="card">
-                <div class="card-header collapsed mb-0 font-14" data-toggle="collapse" role="button" data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
-                    <span>{{ dateTimeFormat($report_date,'d F Y') }}</span>
-                    <span class="analytics-timespend float-right">
-                        <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                        <span>{{ isset( $analyticDataArray['practice_time'] )? getTimeWithText($analyticDataArray['practice_time']) : 0 }}</span>
-                    </span>
-                    <span class="analytics-cions-earned float-right mr-10">
-                        <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
-                        <span>
-                            {{ isset( $analyticDataArray['coins_earned'] )? $analyticDataArray['coins_earned'] : 0 }}
-                        </span>
-                    </span>
-                </div>
-
-                <div id="report_{{$date_str}}" class="collapse" data-parent="#analyticsAccordion">
-                    <div class="card-body">
-                        <ul class="timeline-list">
-
-                        @if( !empty( $analyticDataArray['data'] ) )
-                        @foreach( $analyticDataArray['data'] as $attempt_id => $analyticData)
-                        @php $parent_type_id = isset( $analyticData['parent_type_id'] )? $analyticData['parent_type_id']
-                        : '';
-                        $parent_type = isset( $analyticData['parent_type'] )? $analyticData['parent_type'] : '';
-                        $result_id = isset( $analyticData['result_id'] )? $analyticData['result_id'] : 0;
-                        $start_time = isset( $analyticData['start_time'] )? $analyticData['start_time'] : 0;
-                        $more_than_minute = isset( $analyticData['more_than_minute'] )? $analyticData['more_than_minute'] : 'yes';
-                        $end_time = isset( $analyticData['end_time'] )? $analyticData['end_time'] : 0;
-                        $type = isset( $analyticData['type'] )? $analyticData['type'] : '';
-
-
-                        $detail_link = '';
-                        if( $parent_type == 'practice' || $parent_type == 'sats' || $parent_type == '11plus' || $parent_type == 'assessment' || $parent_type == 'book_page' || $parent_type == 'vocabulary' || $parent_type == 'assignment'){
-                            $detail_link = '/panel/quizzes/'.$result_id.'/check_answers';
-                        }
-                        if( $parent_type == 'timestables' || $parent_type == 'timestables_assignment'){
-                            $detail_link = '/panel/analytics/timestables/result/'.$result_id;
-                        }
-
-                        if( $parent_type == 'book_read'){
-                           $book_slug = isset( $analyticData['book_slug'] )? $analyticData['book_slug'] : '';
-                            $detail_link = '/books/'.$book_slug.'/activity';
-                        }
-                        $analytic_icon = '/assets/default/img/types/'.$parent_type.'.svg';
-                        $analytic_icon =   isset( $analyticData['list_icon'] )? $analyticData['list_icon'] : $analytic_icon;
-
-                        $by_user_label = '';
-                        if(auth()->check() && (auth()->user()->isParent() || auth()->user()->isTutor())){
-                            $userObj = isset( $analyticData['user'] )? $analyticData['user'] : array();
-                            if( isset( $userObj->id)){
-                                $by_user_label .= 'By <img src="'.$userObj->getAvatar().'" width="26" height="26" alt="avatar"> ' . $userObj->get_full_name();
-                            }
-                        }
-                        @endphp
-                                <li>
-                                    <div class="timeline-icon"><img src="{{$analytic_icon}}" width="26" height="26" alt="avatar"></div>
-                                    <div class="timeline-text"><p><strong><a href="{{$detail_link}}">{{isset( $analyticData['topic_title'] )? $analyticData['topic_title'] : ''}}</a></strong> {!! $by_user_label !!} <span class="info-time">{{ dateTimeFormat($start_time,'H:i') }}</span></p>
-                                    @if( $type == 'book_read')
-                                            <span class="analytic-item">Reading Time: {{isset( $analyticData['read_time'] )? $analyticData['read_time'] : 0}} min</span>
-                                            <span class="analytic-item">Pages Read: {{isset( $analyticData['pages_read'] )? $analyticData['pages_read'] : ''}}</span>
-                                            <span class="analytic-item">&nbsp;</span>
-                                            <span class="analytic-item">&nbsp;</span>
-                                        @elseif( $type == 'quest')
-                                            <span class="analytic-item">Coins earned: {{isset( $analyticData['coins_earned'] )? $analyticData['coins_earned'] : 0}}</span>
-                                        @else
-                                            <span class="analytic-item">Active practice: {{isset( $analyticData['practice_time'] )? getTimeWithText($analyticData['practice_time']) : 0}}</span>
-                                            <span class="analytic-item">Questions answered: {{isset( $analyticData['question_answered'] )? $analyticData['question_answered'] : 0}}</span>
-                                            <span class="analytic-item">Coins earned: {{isset( $analyticData['coins_earned'] )? $analyticData['coins_earned'] : 0}}</span>
-                                    @endif
-                                    @if( $type != 'quest')
-                                        <span class="analytics-more_details"><a href="{{$detail_link}}">More Details</a></span>
-                                    @endif
+    <div class="show-section-data"></div>
+    <section class="page-section py-60 tournament-sec hide-sec" style="background-color:#333">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="section-title mb-30">
+                      <a class="back-btn mb-30" href="javascript:;;" style="margin-right: auto;">
+                        <span>←</span>
+                    </a>
+                        <h1 class="font-50 font-weight-bold mb-0 text-white">Tournament Tropics</h1>
+                    </div>
+                  </div>
+                <div class="col-lg-12">
+                    <div class="listings-card">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="deals-card bg-danger">
+                                                <div class="card">
+                                                    <div class="card-timer">
+                                                        <p id="timer">60</p>
+                                                    </div>
+                                                    <a href="#">
+                                                        <h5>Michigan Stadium</h5>
+                                                        <p>$265,200 <span>4 Deals</span></p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="card-btn">
+                                                        <a href="#"><i>&#x207A;</i> Join tournament</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Emma Thompson</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 98,321 <span>Whiz</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Liam Parker</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 75,092 <span>Enthusiast</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Olivia Turner</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 120,876 <span>Rockstar</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Lily Johnson</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 105,678 <span>Mastermind</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Grace Murphy</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 80,123 <span>Whiz</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Aiden Carter</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 45,678 <span>Rookie</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Chloe Adams</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 99,876 <span>Prodigy</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Lucas Martin</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 60,432 <span>Enthusiast</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Ella White</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 110,234 <span>Rockstar</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </li>
-                        @endforeach
-                        @endif
-                        </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="deals-card bg-success">
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <h5>Beaver Stadium</h5>
+                                                        <p>108,700<span>5 Deals</span></p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="card-btn">
+                                                        <a href="#"><i>&#x207A;</i> Join tournament</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Mason Taylor</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 95,678 <span>Legend</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Amelia Davis</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 76,543 <span>Maestro</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Benjamin Reed</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 88,765 <span>Dynamo</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Oliver Wright</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 72,543 <span>Virtuoso</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="deals-card bg-warning">
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <h5>Noah Davis</h5>
+                                                        <p>85,723 <span>Prodigy</span></p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="card-btn">
+                                                        <a href="#"><i>&#x207A;</i> Join tournament</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Ava Smith</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 56,490 <span>Rookie</span>1</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>James Lee</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 112,345 <span>Mastermind</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Mia Garcia</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 92,567 <span>Virtuoso</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="deals-card bg-info">
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <h5>Ethan Wilson</h5>
+                                                        <p>103,456 <span>Dynamo</span></p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="card-btn">
+                                                        <a href="#"><i>&#x207A;</i> Join tournament</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Sophia Brown</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 68,234 <span>Maestro</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <a href="#">
+                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <div class="text">
+                                                                    <h6>Jackson Hall</h6>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 115,678 <span>Legend</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            @endforeach
-
-            @else
-                <div class="card">
-                    <div class="card-header collapsed mb-0" id="headingOne2" data-toggle="collapse" role="button" data-target="#report_07_03_2024" aria-expanded="true" aria-controls="report_07_03_2024">
-                        <span>&nbsp;</span>
-                        <span class="analytics-timespend float-right">
-                            <span class="no-records-found">No Records Found</span>
-                        </span>
-                        <span class="analytics-cions-earned float-right mr-10">
-                            &nbsp;
-                        </span>
+        </div>
+        <!-- <script>
+            $( window ).on( "load", function() {
+                if(jQuery('.listings-card .swiper-container').length > 0){
+                const swiper = new Swiper(".listings-card .swiper-container", {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    observer: true,
+                    observeParents: true,
+                    loop: true,
+                    autoplay: { delay: 5e3, disableOnInteraction: !1 },
+                    breakpoints: {
+                      991: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                      },
+                      660: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                      },
+                      480: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                      },
+                      320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                      }
+                    },
+                });
+              }
+            });
+        </script> -->
+    </section>
+    <section class="page-section py-60 no-challeng-sec hide-sec" style="background-color:#333">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="section-title mb-50">
+                        <a class="back-btn mb-30" href="javascript:;;" style="margin-right: auto;">
+                            <span>←</span>
+                        </a>
+                        <h1 class="font-50 font-weight-bold mb-0 text-white">Challenge Chamber</h1>
+                    </div>
+                    <div class="challenge-box-outer">
+                        <div class="challenge-box">
+                            <div class="challenge-controls nav" id="myTab2" role="tablist">
+                                <ul class="nav" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">New</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">Sent</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Completed</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="myTabContent2">
+                                <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                                    <p>No Challenge here..</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                                    <table class="simple-table text-left">
+                                        <thead>
+                                            <tr>
+                                                <th>When</th>
+                                                <th>To</th>
+                                                <th>Your Score</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>439 days ago</td>
+                                                <td>Mr Arnott</td>
+                                                <td>70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>505 days ago</td>
+                                                <td>Mr. G. O. A. T</td>
+                                                <td>67</td>
+                                            </tr>
+                                            <tr>
+                                                <td>528 days ago</td>
+                                                <td>Emily Keeling</td>
+                                                <td>36</td>
+                                            </tr>
+                                            <tr>
+                                                <td>640 days ago</td>
+                                                <td>POR vs FRA</td>
+                                                <td>68</td>
+                                            </tr>
+                                            <tr>
+                                                <td>677 days ago</td>
+                                                <td>Miss Joshi</td>
+                                                <td>22</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                                    <table class="simple-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Opponent</th>
+                                                <th>Their score</th>
+                                                <th>Your score</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>OphXlia</td>
+                                                <td>35</td>
+                                                <td>33</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sanrio Girl</td>
+                                                <td>58</td>
+                                                <td>73</td>
+                                            </tr>
+                                            <tr>
+                                                <td>OphXlia</td>
+                                                <td>33</td>
+                                                <td>55</td>
+                                            </tr>
+                                            <tr>
+                                                <td>OphXlia</td>
+                                                <td>33</td>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <td>OphXlia</td>
+                                                <td>23</td>
+                                                <td>40</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            @endif
+
+            </div>
         </div>
-    </div>
+    </section>
+
 </section>
+
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/vendors/daterangepicker/daterangepicker.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $('body').on('change', '.child-analytics', function (e) {
-            console.log('test');
-            $(".child-analytics-form").submit();
-        });
-
-        $('body').on('click', '.graph-data-ul li a', function (e) {
-            var thisObj = $('.chart-summary-fields');
-            var graph_type = $(this).attr('data-graph_type');
-            if (!FieldIsEmpty(graph_type)) {
-                rurera_loader(thisObj, 'div');
-                jQuery.ajax({
-                    type: "GET",
-                    url: '/panel/analytics/graph_data',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    data: {"graph_type": graph_type, "show_types": true},
-                    success: function (return_data) {
-                        rurera_remove_loader(thisObj, 'div');
-                        if (return_data != '') {
-                            $(".analytics-graph-data").html(return_data);
-                        }
-                    }
-                });
-            } else {
-                $('.graph-data-ul li a').removeClass('active');
-                $(this).addClass('active');
-                var graph_id = $(this).attr('data-graph_id');
-                $('.graph_div').addClass('hide');
-                $('.' + graph_id).removeClass('hide');
-            }
-        });
-
-    });
-
-</script>
+<script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
+<script src="/assets/default/vendors/apexcharts/apexcharts.min.js"></script>
+<script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 <script>
-$(function () {
-  var dateRanges = new Array();
 
-  dateRanges["Today"] = [moment(), moment()];
-  dateRanges["Yesterday"] = [
-    moment().subtract(1, "days"),
-    moment().subtract(1, "days")
-  ];
-  dateRanges["Last 7 Days"] = [moment().subtract(6, "days"), moment()];
-  dateRanges["Last 30 Days"] = [moment().subtract(31, "days"), moment()];
-  dateRanges["This Month"] = [
-    moment().startOf("month"),
-    moment().endOf("month")
-  ];
-  dateRanges["Last Month"] = [
-    moment().subtract(1, "month").startOf("month"),
-    moment().subtract(1, "month").endOf("month")
-  ];
-
-  $("#reportrange1").daterangepicker(
-    {
-      startDate: moment().subtract(31, "days"),
-      endDate: moment(),
-      parentEl: '.analytics-dropdown',
-      opens: 'left',
-      ranges: dateRanges,
-      autoApply: false,
-      drops: "auto",
-      isInvalidDate: function (date) {
-        // Sunday Disabled
-        return date.day() == 0;
-      }
-    }
-  );
-
-  // Prevent closing when clicking outside
-  $(document).on("mousedown", function (e) {
-    var container = $(".daterangepicker");
-    var input = $("#reportrange1");
-    if (
-      !container.is(e.target) &&
-      container.has(e.target).length === 0 &&
-      !input.is(e.target) &&
-      input.has(e.target).length === 0
-    ) {
-      e.stopPropagation();
-    }
-  });
+    $(document).on('click', '.timestables-back-btn', function (e) {
+        $(".timestables-mode-block").slideUp();
+        $(".timestables-modes").slideDown();
+    });
+$(document).on('click', '.ajax-callback', function (e) {
+    var thisObj = $(this);
+    var thisContent_div = $(".timestables-mode-content");
+    var ajax_type = $(this).attr('data-type');
+    rurera_loader(thisObj.closest('.timestables-mode-data'), 'div');
+    jQuery.ajax({
+       type: "GET",
+       url: '/timestables/'+ajax_type,
+       headers: {
+           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+       },
+       data: {'ajax_type':ajax_type},
+       success: function (return_data) {
+           thisContent_div.html(return_data);
+           //jQuery(".show-section-data").html(return_data);
+           $(".timestables-modes").slideUp();
+           $(".timestables-mode-block").slideDown();
+           rurera_remove_loader(thisObj.closest('.timestables-mode-data'), 'div');
+       }
+   });
 });
 
-function reset() {
-  var reset_start = moment().startOf("month");
-  var reset_end = moment().endOf("month");
+$(document).on('click', '.week-selection-btn', function (e) {
+    var thisObj = $(this);
+    var week_no = $(this).attr('data-week_no');
+    var thisContent_div = $(".timestables-mode-content");
+    var ajax_type = 'showdown_mode';
+    rurera_loader(thisContent_div, 'div');
+    jQuery.ajax({
+       type: "GET",
+       url: '/timestables/'+ajax_type,
+       headers: {
+           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+       },
+       data: {'ajax_type':ajax_type, 'weekNumber':week_no},
+       success: function (return_data) {
+           thisContent_div.html(return_data);
+           //jQuery(".show-section-data").html(return_data);
+           $(".timestables-modes").slideUp();
+           $(".timestables-mode-block").slideDown();
+           rurera_remove_loader(thisContent_div, 'div');
+       }
+   });
+});
 
-  $("#reportrange1").data("daterangepicker").setStartDate(reset_start);
-  $("#reportrange1").data("daterangepicker").setEndDate(reset_end);
 
-  $(".daterangepicker.show-calendar").removeClass("show-calendar");
+$(document).on('click', '.type-list li', function (e) {
+    $(".type-list li").removeClass('active');
+    $(this).addClass('active');
+    var data_type = $(this).attr('data-type');
+    $(".type-list-data").addClass('rurera-hide');
+    $("."+data_type+"-data").removeClass('rurera-hide');
 
-  $("#reportrange1").val(
-    moment(reset_start).format("MM/DD/YYYY") +
-      " - " +
-      moment(reset_end).format("MM/DD/YYYY")
-  );
-}
+});
+$(document).on('click', '.back-btn', function (e) {
+    $('.deals-section').addClass("hide-sec");
+    $('.challenge-sec').addClass("hide-sec");
+    $('.no-challeng-sec').addClass("hide-sec");
+    $('.tournament-sec').addClass("hide-sec");
+    $('.news-section').removeClass("hide-sec");
+    e.preventDefault();
+});
+</script>
 
+<script>
+    $(document).ready(function () {
+        if(jQuery('.back-btn').length > 0){
+        $('.back-btn').on('click', function(e) {
+            $('.deals-section').addClass("hide-sec");
+            $('.challenge-sec').addClass("hide-sec");
+            $('.no-challeng-sec').addClass("hide-sec");
+            $('.tournament-sec').addClass("hide-sec");
+            $('.news-section').removeClass("hide-sec");
+            e.preventDefault();
+        });
+        }
+
+        if(jQuery('.template-grid .grid-btn1').length > 0){
+        $('.template-grid .grid-btn1').on('click', function(e) {
+            $('.news-section').addClass("hide-sec");
+            $('.deals-section').removeClass("hide-sec");
+            e.preventDefault();
+        });
+
+        }
+        if(jQuery('.template-grid .challenge-btn').length > 0){
+            $('.template-grid .challenge-btn').on('click', function(e) {
+                //$('.news-section').addClass("hide-sec");
+                $('.deals-section').addClass("hide-sec");
+                $('.challenge-sec').addClass("hide-sec");
+                $('.no-challeng-sec').removeClass("hide-sec");
+                e.preventDefault();
+            });
+        }
+        if(jQuery('.template-grid .assignment-btn').length > 0){
+            $('.template-grid .assignment-btn').on('click', function(e) {
+                //$('.news-section').addClass("hide-sec");
+                $('.deals-section').addClass("hide-sec");
+                $('.no-challeng-sec').addClass("hide-sec");
+                $('.challenge-sec').removeClass("hide-sec");
+                e.preventDefault();
+            });
+        }
+        if(jQuery('.template-grid .tournament-btn').length > 0){
+            $('.template-grid .tournament-btn').on('click', function(e) {
+                //$('.news-section').addClass("hide-sec");
+                $('.deals-section').addClass("hide-sec");
+                $('.no-challeng-sec').addClass("hide-sec");
+                $('.challenge-sec').addClass("hide-sec");
+                $('.tournament-sec').removeClass("hide-sec");
+                e.preventDefault();
+            });
+        }
+    });
+</script>
+
+<script>
+    $( window ).on( "load", function() {
+        if(jQuery('.listings-card .swiper-container').length > 0){
+        const swiper = new Swiper(".listings-card .swiper-container", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            observer: true,
+            observeParents: true,
+            loop: true,
+            autoplay: { delay: 5e3, disableOnInteraction: !1 },
+            breakpoints: {
+              991: {
+                slidesPerView: 4,
+                spaceBetween: 20
+              },
+              660: {
+                slidesPerView: 1,
+                spaceBetween: 0
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 0
+              },
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+              }
+            },
+        });
+      }
+    });
 </script>
 
 @endpush
+

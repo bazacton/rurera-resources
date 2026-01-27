@@ -82,7 +82,7 @@
                 <div class="btn-holder">
                     <button type="button" class="view-btn">VIEW MORE</button>
                 </div>
-                
+
             </div>
         </li>
         @if(auth()->check() && (auth()->user()->isUser()))
@@ -177,7 +177,7 @@
                             <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                  alt="rounded circle" loading="eager" title="rounded circle">
                             <span class="font-16 text-dark-blue user-name">{{ $authUser->get_full_name() }}</span>
-                            <a href="/panel/setting" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
+                            <a href="setting" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
                         </div>
                         <div class="d-md-none border-bottom mb-20 pb-10 text-right">
                             <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
@@ -189,7 +189,7 @@
 
                             @php $parent_id = isset($profile_nav['id'])? $profile_nav['id'] : $parent_id; @endphp
 
-                            <a class="dropdown-item " data-toggle="modal" data-target="#switch_user_modal" href="/panel/switch_user/{{$profile_nav['id']}}">
+                            <a class="dropdown-item " data-toggle="modal" data-target="#switch_user_modal" href="switch_user/{{$profile_nav['id']}}">
                                 <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
                                      alt="rounded circle" loading="eager" title="rounded circle">
                                 @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $profile_nav['full_name']; @endphp

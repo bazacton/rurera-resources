@@ -109,7 +109,7 @@
 
 
                 @if( !empty( $data))
-                
+
                 <div class="col-12">
                     <section class="lms-data-table my-30 elevenplus-block">
                         <div class="container">
@@ -281,7 +281,7 @@
             var graph_type = $(this).val();
             jQuery.ajax({
                 type: "GET",
-                url: '/panel/analytics/graph_data',
+                url: '/analytics/graph_data',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
