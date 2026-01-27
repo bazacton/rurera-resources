@@ -21,8 +21,8 @@ Sub Pages Style
 .referral-link input.link-address {border: 0; background-color: #efefef; height: 36px; width: calc(100% - 100px); padding: 0 12px; border-radius: 3px; color: #6c7292;}
 .withdraw-card {background-color: #e9f3ff; border: 1px dashed #3472bb; border-radius: 5px; gap: 20px;}
 .withdraw-card .icon-box {flex: 0 0 32px;}
-.withdraw-btn-holder {flex: 0 0 155px; margin-left: auto;}
-.withdraw-text {flex: 0 0 68%;}
+.withdraw-btn-holder {flex: 0 0 140px; margin-left: auto;}
+.withdraw-text {flex: 0 0 60%;}
 .withdraw-text p {color: #656776;}
 .withdraw-card .withdraw-btn {background-color: var(--primary); border-radius: 3px; display: block; text-align: center; padding: 12px 10px; color: #fff;}
 .referral-price-card {
