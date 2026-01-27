@@ -526,6 +526,7 @@ Lms Responsive Style Start
     .chart-filters .analytics-type li {
         width: 23.555%;
     }
+    .analytics-dropdown {gap: 15px;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
