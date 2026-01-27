@@ -170,7 +170,7 @@ Sub Pages Style
 .post-show .categories-element-title h2 {overflow: hidden;}
 .categories-element-title p {margin: 5px 0 0; color: #000; }
 .categories-element-title span {position: relative; display: inline-block; padding-right: 20px; margin-top: 0; color: #000;}
-.subjects-heading {margin: 0 0 25px;}
+.subjects-heading {margin: 0 0 15px;}
 .categories-card.medium {display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; box-shadow: none; border-radius: 0; align-items: center; padding:20px; margin: 0; transform: none;}
 .categories-card.medium:first-child {border-top: 1px solid #ddd;}
 .categories-card.medium:last-child {border-bottom: 0; padding-bottom: 0;}
