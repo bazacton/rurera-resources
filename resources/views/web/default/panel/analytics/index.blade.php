@@ -40,7 +40,7 @@
     </div>
     <div class="activities-container p-20 p-lg-25 rounded-sm">
         <div class="chart-filters p-0">
-            <div class="filters-list mb-0">
+            <div class="filters-list mb-0 font-14">
                 <a href="#" class="filter-mobile-btn">Filters</a>
                 <ul class="analytics-type">
                     @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
