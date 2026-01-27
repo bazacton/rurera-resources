@@ -53,7 +53,7 @@
                 </ul>
             </div>
             <ul class="analytics-data-ul">
-                <li><a href="javascript:;" class=" hide graph_Custom" data-graph_id="graph_id_Custom">September 20, 2023 - September 26, 2023</a>
+                <li><a href="javascript:;" class="hide graph_Custom" data-graph_id="graph_id_Custom">September 20, 2023 - September 26, 2023</a>
                 </li>
             </ul>
         </div>
@@ -61,7 +61,7 @@
             <div class="select-holder">
                 <h5 class="font-14 font-weight-500">Subject</h5>
                 <div class="select-box">
-                    <select>
+                    <select class="font-14">
                         <option value="All subjects">All subjects</option>
                         <option value="Math">Math</option>
                         <option value="Science">Science</option>
@@ -71,7 +71,7 @@
             <div class="select-holder">
                 <h5 class="font-14 font-weight-500">Skill Year</h5>
                 <div class="select-box">
-                    <select>
+                    <select class="font-14">
                         <option value="All Year">All Years</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -87,7 +87,7 @@
             <div class="date-range-holder">
                 <h5 class="font-14 font-weight-500">Date Range</h5>
                 <div class="date-range-box">
-                    <input type="text" id="reportrange1">
+                    <input type="text" id="reportrange1" class="font-14">
                 </div>
             </div>
         </div>
