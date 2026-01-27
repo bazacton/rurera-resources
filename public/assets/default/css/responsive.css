@@ -523,6 +523,10 @@ Lms Responsive Style Start
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
     .artboard-box img {max-width: 100%;}
     .learning-journey-levels .graph-background {width: 100%; overflow: hidden;}
+    .chart-filters .analytics-type li {
+        width: 23.555%;
+    }
+    .analytics-dropdown {gap: 15px;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
@@ -624,7 +628,6 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .testimonials-fancy-bg {margin-top: 100px;}
     .lms-subscription-form.shape {margin-top: 70px;}
     .lms-setup-progress .step-name {font-size: 14px;}
-    .section-title {text-align: center !important;}
     .lms-payment-field {margin-right: 0;}
     .lms-subscription-form .lms-form-wrapper {width: 100%; max-width: 100%;}
     .lms-form-wrapper .lms-radio-btn-group label {margin: 0;}
@@ -879,9 +882,10 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .listing-card .read-btn, .book-btn {min-width: 150px; font-size: 13px; padding: 15px 10px;}
     .listing-card .read-btn .btn-icon {margin-right: 5px;}
     .trophy-levels {justify-content: center;}
-    .filter-mobile-btn {display: block; background-color: #fff; border: 1px solid #ddd; padding: 10px 25px 10px 10px; line-height: normal; border-radius: 3px; position: relative; font-size: 15px; font-weight: 500; text-transform: uppercase;}
-    .filter-mobile-btn:after {content: ""; position: absolute; right: 12px; top: 50%; border-style: solid; border-width: 4px; border-left-color: transparent; border-top-color: transparent; transform: rotate(45deg) translateY(-50%); margin-top: -2px;}
+    .filter-mobile-btn {display: block; background-color: #fff; border: 1px solid #ddd; padding: 10px 25px 10px 10px; line-height: normal; border-radius: 5px; position: relative; font-size: 15px; font-weight: 500; text-transform: uppercase;}
+    .filter-mobile-btn:after {content: ""; position: absolute;border-radius: 0 3px 3px; right: 12px; top: 50%; border-style: solid; border-width: 4px; border-left-color: transparent; border-top-color: transparent; transform: rotate(45deg) translateY(-50%); margin-top: -2px;}
     .filters-list {position: relative; width: 50%; padding-right: 8px; margin-top: 12px;}
+    .chart-filters .filters-list {padding-right: 0;}
     .filters-list .analytics-type,
     .filters-list .tests-list,
     .tests-list, .listing-search .inline-filters:not(.wizard-steps .listing-search .inline-filters) {position: absolute; width: 95%; flex-direction: column; left: 0; top: 100%; text-align: left; background-color: #fff; z-index: 3; padding: 10px 15px; box-shadow: 0 0 5px rgba(0,0,0,0.1); visibility: hidden; opacity: 0; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; margin-top: 10px; align-items: flex-start;}
@@ -1171,7 +1175,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .analytics-dropdown .select-box,
     .analytics-dropdown .select-holder,
     .date-range-holder {max-width: 100%; width: 100%;}
-    .analytics-dropdown select {padding: 10px;}
+    .analytics-dropdown select {padding: 10px; background-position: 99% 50%;}
     .activities-container .chart-filters {margin-bottom: 15px;}
     #profile-image-modal .close {right: 5px; top: 5px;}
     #profile-image-modal .svga-glob-controls {width: 12.5%;}
@@ -1880,6 +1884,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .login-password form {margin-bottom: 15px;}
     .edit-profile-top {gap: 15px;}
     .notification-card .text-right {text-align: center !important;}
+    .edit-info-list {width: 100%;}
     .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto; width: 100%;}
     .home-sections:has(.blog-grid-card) .btn {padding-right: 10px; padding-left: 10px;}
     .referral-text a {padding: 10px;}

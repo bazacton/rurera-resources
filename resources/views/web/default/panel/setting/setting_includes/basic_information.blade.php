@@ -86,8 +86,10 @@ if( !empty( $emojisArray ) ){
     }
 </style>
 <section>
-    <h2 class="section-title font-22">{{ trans('financial.account') }}</h2>
-    <div class="row mt-15">
+    <div class="col-12">
+        <h2 class="section-title font-22">{{ trans('financial.account') }}</h2>
+    </div>
+    <div class="mt-15">
         <div class="col-12 user-profile-block rurera-hide">
             <div class="user-detail mb-50">
                 <div class="detail-header mb-25 pb-25">
@@ -305,7 +307,7 @@ if( !empty( $emojisArray ) ){
 														</div>
 													</div>
                                                     <div class="edit-info-list border-0 pb-0">
-                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20">
+                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column p-20">
                                                             <div class="package-block">
                                                                 <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
                                                                 <div class="subscribe-title">
@@ -319,12 +321,11 @@ if( !empty( $emojisArray ) ){
 
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    
-                                                    <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center mt-15">
-                                                        <button type="button" id="saveData" class="save-btn text-center ml-0">Save</button>
-                                                    </div>			
+                                                    </div>		
 												</div>
+                                                <div class="edit-profile-controls d-inline-flex justify-content-end align-items-center mt-15">
+                                                    <button type="button" id="saveData" class="save-btn text-center ml-0">Save</button>
+                                                </div>	
 											</div>
                                         </div>
                                     </div>

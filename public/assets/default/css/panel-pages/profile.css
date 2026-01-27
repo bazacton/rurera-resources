@@ -247,6 +247,11 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     border-bottom: 1px solid #ddd;
     padding: 0 0 25px;
 }
+.student-profile-holder .profile-inner,
+.student-profile-holder .edit-info-list {
+    flex: 0 0 47.777%;
+    max-width: 47.777%;
+}
 .edit-info-list h4 {
     gap: 10px;
     justify-content: space-between;
@@ -301,7 +306,7 @@ address .info-list-label {color: #64748b;}
 .card-info-text span {color: #64748b; margin: 0 0 2px;}
 .card-info-text .card-exp span {margin-bottom: 0;}
 .detail-body .profile-inner,
-.edit-info-list .subscribe-plan {background-color: #fff; border-radius: 10px !important; max-width: 350px; min-width: 350px; border-style: solid; height: 100%;}
+.edit-info-list .subscribe-plan {background-color: #fff; border-radius: 10px; border-style: solid; height: 100%;}
 .detail-body .profile-inner li {
     width: 100%;
 }
