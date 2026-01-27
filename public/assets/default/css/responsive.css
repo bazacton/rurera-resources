@@ -1325,7 +1325,8 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .user-profile-icons .dropdown-menu {
         min-width: 220px;
     }
-    .edit-info-list {width: 100%; flex: 0 0 100%; max-width: 100%;}
+    .student-profile-holder .profile-inner, 
+    .student-profile-holder .edit-info-list {width: 100%; flex: 0 0 100%; max-width: 100%;}
 }
 
 @media screen and (max-width: 640px) {
