@@ -28,24 +28,24 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="referral-price-lists mb-30">
+                    <div class="referral-price-lists mb-30 font-14">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="referral-price-card text-center referred">
-                                    <span class="font-16 d-block mb-5" style="color: #624abc;">{{ trans('panel.referred_users') }}</span>
-                                    <strong class="font-30">{{ $referredUsersCount }}</strong>
+                                    <span class="d-block mb-5" style="color: #624abc;">{{ trans('panel.referred_users') }}</span>
+                                    <strong class="font-weight-bold">{{ $referredUsersCount }}</strong>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="referral-price-card text-center bonus">
-                                    <span class="font-16 d-block mb-5" style="color: #5fa66e;">Bonus</span>
-                                    <strong class="font-30">{{ addCurrencyToPrice(round($registrationBonus, 2)) }}</strong>
+                                    <span class="d-block mb-5" style="color: #5fa66e;">Bonus</span>
+                                    <strong class="font-weight-bold">{{ addCurrencyToPrice(round($registrationBonus, 2)) }}</strong>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="referral-price-card text-center sales-commission">
-                                    <span class="font-16 d-block mb-5" style="color: #d13b61;">{{ trans('panel.affiliate_bonus') }}</span>
-                                    <strong class="font-30">{{ addCurrencyToPrice(round($affiliateBonus, 2)) }}</strong>
+                                    <span class="d-block mb-5" style="color: #d13b61;">{{ trans('panel.affiliate_bonus') }}</span>
+                                    <strong class="font-weight-bold">{{ addCurrencyToPrice(round($affiliateBonus, 2)) }}</strong>
                                 </div>
                             </div>
 
