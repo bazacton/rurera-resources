@@ -1318,6 +1318,9 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .user-profile-icons .dropdown-menu {
         min-width: 220px;
     }
+    .chart-filters .analytics-type li {
+        width: 23.555%;
+    }
 }
 
 @media screen and (max-width: 640px) {
