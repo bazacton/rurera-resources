@@ -130,7 +130,7 @@ Sub Pages Style
 .date-range-holder {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
 .analytics-dropdown .daterangepicker {margin-right: -30px; top: 100% !important; z-index: 30;}
 .date-range-box {background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%; background-size: 15px; border: 1px solid #ddd; padding: 0 30px 0 10px; border-radius: 5px; cursor: pointer; position: relative;}
-.date-range-holder input {font-size: 14px; border: 0; width: 100%; cursor: pointer; min-width: 175px; height: 40px;}
+.date-range-holder input {border: 0; width: 100%; cursor: pointer; min-width: 175px; height: 40px;}
 .date-range-box .daterangepicker {width: 100%; margin-left: -10px;}
 .date-range-box .daterangepicker .ranges ul {width: 100%;}
 .date-range-box .daterangepicker .ranges {width: 100%;}
