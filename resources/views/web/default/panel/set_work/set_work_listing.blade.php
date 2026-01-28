@@ -17,6 +17,13 @@
                                     <div class="list-group-item">
                                         <div class="table-sm">
                                             <table class="students-table">
+                                                <thead>
+                                                <tr>
+                                                    <th><h6 class="font-18 font-weight-500">Title</h6></th>
+                                                    <th><h6 class="font-18 font-weight-500">Student</h6></th>
+                                                    <th><h6 class="font-18 font-weight-500">Due Date</h6></th>
+                                                </tr>
+                                                </thead>
                                                 <tbody>
                                                 <tr>
                                                     <td data-th="Title">
@@ -39,13 +46,13 @@
                                                     </td>
                                                     <td data-th="Student">
                                                         <h6 class="font-16 font-weight-normal">
-                                                            <span class="created-by font-16">Parent 5000</span>
+                                                            <span class="assigned-by font-16">Parent 5000</span>
                                                             <span class="font-16">Jon Doe</span>
                                                         </h6>
                                                     </td>
                                                     <td data-th="Due Date">
-                                                        <div class="last-activity activity-date">
-                                                            <span class="font-16 d-block">31 Dec 2025</span>
+                                                        <div class="last-activity">
+                                                            <span class="font-16 d-block due-date-label">Due Date: </span>
                                                             <span class="due-date font-16">20 Feb 2026</span>
                                                         </div>
                                                     </td>
