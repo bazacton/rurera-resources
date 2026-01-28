@@ -270,95 +270,110 @@
 
 
 @if($show_graph == true)
-    <script src="/assets/default/vendors/chartjs/chart.min.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
 
     <script>
-        var usersStatisticsChart = document.getElementById("usersStatisticsChart").getContext('2d');
-        var chart = {};
-
-        var chart_columns = [];
-        var chart_values = [];
+        // ALWAYS start EMPTY
+        var labels = [];
+        var values = [];
+        var lineColors = [];
+        var fillColors = [];
 
         @if($attempted_questions_list->count() > 0)
-        @php $question_counter = 1;  $smart_score = 0; @endphp
+        @php
+            $question_counter = 1;
+            $smart_score = 0;
+        @endphp
+
         @foreach($attempted_questions_list->orderBy('attempted_at', 'asc')->get() as $attemptedQuestionObj)
-        @php if($attemptedQuestionObj->year_id == $user->year_id){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
-        @php if($is_skill_summary == false){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
-        chart_columns.push({{ $question_counter }});
-        chart_values.push({{ $smart_score }});
+
+        @php
+                $line = 'rgba(97,191,226,1)';      // blue
+                $fill = 'rgba(97,191,226,0.35)';     // blue
+                if ($attemptedQuestionObj->year_id == $user->year_id) {
+                    $smart_score = $attemptedQuestionObj->smart_score;
+                }else{
+                    if($is_skill_summary == true){
+                        $line = '#fe3c30';     // red
+                        $fill = '#ff9690';    // red
+                    }
+                }
+
+                if ($is_skill_summary == false) {
+                    $smart_score = $attemptedQuestionObj->smart_score;
+                }
+        @endphp
+
+        labels.push({{ $question_counter }});
+        values.push({{ $smart_score }});
+        lineColors.push("{!! $line !!}");
+        fillColors.push("{!! $fill !!}");
+
         @php $question_counter++; @endphp
         @endforeach
         @endif
 
-        makeStatisticsChart(
-            'usersStatisticsChart',
-            usersStatisticsChart,
-            '',
-            chart_columns,   // ✅ labels
-            chart_values     // ✅ data
-        );
+        const ctx = document.getElementById("usersStatisticsChart").getContext("2d");
 
-        function makeStatisticsChart(name, section, badge, labels, datasets) {
-            chart[name] = new Chart(section, {
-                type: 'line',
+        new Chart(ctx, {
+            type: "line",
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: values,
+                    borderWidth: 3,
+                    tension: 0.35,
 
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: badge,
-                        data: datasets,
-                        borderWidth: 5,
-                        borderColor: '#6777ef',
-                        backgroundColor: 'transparent',
-                        pointBackgroundColor: '#fff',
-                        pointBorderColor: '#6777ef',
-                        pointRadius: 4
-                    }]
+                    fill: 'origin',
+                    spanGaps: true,
+
+                    pointRadius: 6,
+                    pointHoverRadius: 7,
+                    pointBackgroundColor: lineColors,
+                    pointBorderColor: lineColors,
+
+                    segment: {
+                        borderColor: ctx => lineColors[ctx.p0DataIndex],
+                        backgroundColor: ctx => fillColors[ctx.p0DataIndex]
+                    }
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        mode: "index",
+                        intersect: false
+                    }
                 },
-                options: {
-                    plugins: {
-                        legend: {
-                            display: false
+                scales: {
+                    x: {
+                        grid: {
+                            color: "rgba(0,0,0,0.08)",
+                            drawBorder: false
                         },
-                        tooltip: {
-                            callbacks: {
-                                title: function (tooltipItems) {
-                                    // X-axis label
-                                    return 'Question No: ' + tooltipItems[0].label;
-                                },
-                                label: function (tooltipItem) {
-                                    // Y-axis value
-                                    return ' Smart Score: ' + tooltipItem.raw;
-                                }
-                            }
+                        ticks: {
+                            color: "#111",
+                            font: { size: 16 }
                         }
                     },
-                    scales: {
-                        y: {
-                            min: 0,
-                            max: 100,
-                            ticks: {
-                                stepSize: 10
-                            },
-                            grid: {
-                                display: true,
-                                drawBorder: true
-                            }
+                    y: {
+                        min: 0,
+                        max: 100,
+                        ticks: {
+                            stepSize: 10,
+                            color: "#111",
+                            font: { size: 16 }
                         },
-                        x: {
-                            grid: {
-                                display: true,
-                                drawBorder: true
-                            }
+                        grid: {
+                            color: "rgba(0,0,0,0.08)",
+                            drawBorder: false
                         }
                     }
                 }
-            });
-        }
-
-
-
+            }
+        });
     </script>
 @endif
