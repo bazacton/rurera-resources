@@ -44,8 +44,8 @@
                                                         </h6>
                                                     </td>
                                                     <td data-th="Due Date">
-                                                        <div class="last-activity activity-date">
-                                                            <span class="font-16 d-block">31 Dec 2025</span>
+                                                        <div class="last-activity">
+                                                            <span class="font-16 d-block due-date-label">Due Date: </span>
                                                             <span class="due-date font-16">20 Feb 2026</span>
                                                         </div>
                                                     </td>
