@@ -13,7 +13,7 @@
     </div>
     <div class="categories-boxes row">
         <div class="col-12">
-            <div class="subjects-heading">
+            <div class="subjects-heading mb-30">
                 <h2 class="font-22 mb-10">Subjects - {{$categoryObj->getTitleAttribute()}}</h2>
                 <p class="font-14">Explore structured lessons designed to build strong foundations and advance your understanding step by step. Learn at your own pace with clear explanations and practical exercises.</p>
             </div>
