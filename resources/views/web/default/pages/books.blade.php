@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="panel-border bg-white rounded-sm">
+                                    <div class="panel-border bg-white rounded-sm px-30 pt-30">
                                         <div class="row">
                                             @if( !empty( $category_books ))
                                                 @foreach( $category_books as $bookData)
