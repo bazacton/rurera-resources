@@ -38,7 +38,7 @@
     <div class="section-title mb-15">
         <h2 class="font-22 mb-0">Analytics</h2>
     </div>
-    <div class="chart-card">
+    <div class="chart-card mb-30">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h5 class="card-title mb-0">Topic you are interested in</h5>
             <div style="color: #999; cursor: pointer;">&#8942;</div>
