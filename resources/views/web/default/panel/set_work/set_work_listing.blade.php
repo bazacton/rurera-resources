@@ -20,8 +20,10 @@
                                                 <tbody>
                                                 <tr>
                                                     <td data-th="Title">
-                                                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/timestables.png" alt="timestables" height="65" width="98">
+                                                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/sidebar/timestable.svg" alt="timestables" height="65" width="98">
                                                             TT-Powerup-[1-6] 1M - 1Att
+                                                            <span class="type-tags">Timestables</span>
+                                                            <span class="type-tags">2, 3, 4 Tables</span>
                                                         </a>
                                                         <div class="dropdown-box hide-lg">
                                                             <div class="dropdown">
@@ -37,37 +39,14 @@
                                                     </td>
                                                     <td data-th="Student">
                                                         <h6 class="font-16 font-weight-normal">
+                                                            <span class="created-by font-16">Parent 5000</span>
                                                             <span class="font-16">Jon Doe</span>
-                                                        </h6>
-                                                    </td>
-                                                    <td data-th="Type">
-                                                        <h6 class="font-16 font-weight-normal">
-                                                            <span class="font-16">Practice</span>
                                                         </h6>
                                                     </td>
                                                     <td data-th="Due Date">
                                                         <div class="last-activity activity-date">
                                                             <span class="font-16 d-block">31 Dec 2025</span>
-                                                        </div>
-                                                    </td>
-                                                    <td data-th="Completion Date">
-                                                        <div class="last-activity activity-date">
-                                                            <span class="font-16 d-block">-</span>
-                                                        </div>
-                                                    </td>
-                                                    <td data-th="Action">
-                                                        <div class="last-activity action-activity">
-                                                            <div class="dropdown-box">
-                                                                <div class="dropdown">
-                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu">
-                                                                        <a href="/panel/set-work/16/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
-                                                                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/16/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"> Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <span class="due-date font-16">20 Feb 2026</span>
                                                         </div>
                                                     </td>
                                                 </tr>
