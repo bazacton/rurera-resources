@@ -20,7 +20,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td data-th="Title">
-                                                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/timestables.png" alt="timestables" height="65" width="98">
+                                                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/sidebar/timestable.svg" alt="timestables" height="65" width="98">
                                                             TT-Powerup-[1-6] 1M - 1Att
                                                             <span class="set-work-type">Timestables</span>
                                                         </a>
@@ -38,12 +38,14 @@
                                                     </td>
                                                     <td data-th="Student">
                                                         <h6 class="font-16 font-weight-normal">
+                                                            <span class="created-by font-16">Parent 5000</span>
                                                             <span class="font-16">Jon Doe</span>
                                                         </h6>
                                                     </td>
                                                     <td data-th="Due Date">
                                                         <div class="last-activity activity-date">
                                                             <span class="font-16 d-block">31 Dec 2025</span>
+                                                            <span class="due-date font-16">20 Feb 2026</span>
                                                         </div>
                                                     </td>
                                                 </tr>
