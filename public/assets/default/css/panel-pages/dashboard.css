@@ -1015,7 +1015,7 @@ button.view-btn {
 .store-stats li .store-item {display: flex; align-items: center; flex-wrap: wrap; gap: 12px;}
 .store-stats li .store-item img {width: 35px;object-fit: contain;}
 .store-stats .item-label {font-weight: 700;}
-.store-stats .iteme-numbers {display: inline-flex; align-items: center; padding-top: 5px; width: 100%; color: #999; line-height: normal;}
+.store-stats .iteme-numbers {display: inline-flex; align-items: center; padding-top: 4px; width: 100%; color: #999; line-height: normal;}
 .store-stats .iteme-numbers em {font-style: normal; font-size: 14px;}
 .panel-right-sidebar .store-stats {position: relative; overflow: hidden;}
 .panel-right-sidebar .store-stats li .store-item img {position: absolute; right: -10px; bottom: -10px; width: 70px;}
