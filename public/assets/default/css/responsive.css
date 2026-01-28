@@ -523,9 +523,6 @@ Lms Responsive Style Start
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
     .artboard-box img {max-width: 100%;}
     .learning-journey-levels .graph-background {width: 100%; overflow: hidden;}
-    .chart-filters .analytics-type li {
-        width: 23.555%;
-    }
     .analytics-dropdown {gap: 15px;}
     .tests-list li {flex: 0 0 18.555%;}
 }
