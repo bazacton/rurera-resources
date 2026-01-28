@@ -51,21 +51,7 @@
                                                             <span class="font-16 d-block">-</span>
                                                         </div>
                                                     </td>
-                                                    <td data-th="Action">
-                                                        <div class="last-activity action-activity">
-                                                            <div class="dropdown-box">
-                                                                <div class="dropdown">
-                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu">
-                                                                        <a href="/panel/set-work/16/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
-                                                                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/16/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"> Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+
                                                 </tr>
                                                 </tbody>
                                             </table>
