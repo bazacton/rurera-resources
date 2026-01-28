@@ -147,9 +147,9 @@ Sub Pages Style
 /* Chart Card Style Start */
 .chart-card {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
-    padding: 25px;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
 .card-title {
     font-size: 18px;
