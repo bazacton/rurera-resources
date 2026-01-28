@@ -284,7 +284,8 @@
         @if($attempted_questions_list->count() > 0)
         @php $question_counter = 1;  $smart_score = 0; @endphp
         @foreach($attempted_questions_list->orderBy('attempted_at', 'asc')->get() as $attemptedQuestionObj)
-            @php if($is_skill_summary == true && $attemptedQuestionObj->year_id == $user->year_id){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
+        @php if($attemptedQuestionObj->year_id == $user->year_id){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
+        @php if($is_skill_summary == false){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
         chart_columns.push({{ $question_counter }});
         chart_values.push({{ $smart_score }});
         @php $question_counter++; @endphp
