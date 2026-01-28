@@ -470,7 +470,7 @@
                     data: {'login_pin':login_pin_final},
                     success: function (return_data) {
                         if( return_data == 'loggedin'){
-                            window.location.href = '/panel';
+                            window.location.href = '/dashboard';
                         }else{
                             thisObj.val('');
                             rurera_remove_loader($(".login-with-pin"), 'div');
@@ -531,7 +531,7 @@
                     data: {'login_emoji':login_emoji},
                     success: function (return_data) {
                         if( return_data == 'loggedin'){
-                            window.location.href = '/panel';
+                            window.location.href = '/dashboard';
                         }else{
                             $(".emoji-password-field").val('');
                             $(".emoji-passwords span").addClass('is_empty');
