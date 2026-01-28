@@ -75,7 +75,6 @@
 .set-work-container .lms-choose-membership.modal form {background-color: inherit; border: 0; padding: 0; margin: 0;}
 .wizard-steps .card-radio:has(input:checked) {border-color: var(--primary);}
 .wizard-steps .card-radio input:checked + .radio-btn h3 {color: var(--primary);}
-.courses_fields .radio-buttons .card-radio {min-height: 90px;}
 .courses_fields .radio-buttons .card-radio .radio-btn {height: 100%;}
 .set-work-container .input-holder {position: relative; width: 100%;}
 .set-work-container .input-holder img,
