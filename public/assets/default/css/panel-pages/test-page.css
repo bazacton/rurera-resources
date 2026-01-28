@@ -4,7 +4,7 @@ Sub Pages Style
 *****************************/
 .panel-content .lms-jobs-form .input-field input[type="text"] {padding-right: 45px;}
 .panel-content .lms-jobs-form .input-field:before {content: ""; height: 25px; width: 25px; position: absolute; right: 15px; top: 50%; margin-top: -12px; background: url(/assets/default/svgs/search.svg) no-repeat;}
-.listing-search .has-border {padding: 0 0 15px 0; }
+.listing-search .has-border {padding: 0; }
 .sats-listing-card {border-radius: 10px; padding: 20px; margin-bottom: 30px; }
 .sats-listing-card .img-holder {margin-bottom: 15px;}
 .sats-listing-card .img-holder img {max-width: 100%; transition: all .5s;}
