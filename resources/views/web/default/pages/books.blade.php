@@ -15,7 +15,7 @@
 @endpush
 
 @section('content')
-<section class="lms-books-listing">
+<section class="lms-books-listing pt-0">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
