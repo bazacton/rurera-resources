@@ -3,11 +3,12 @@
     $show_topic_performance = isset($show_topic_performance)? $show_topic_performance : false;
     $show_graph = isset($show_graph)? $show_graph : false;
     $is_skill_summary = isset($is_skill_summary)? $is_skill_summary : false;
+    $is_learn = isset($is_learn)? $is_learn : true;
 @endphp
 <div class="content-section">
     <section class="lms-quiz-section no-bg">
-        <div class="questions-data-block read-quiz-content" data-total_questions="10">
-            <div class="row">
+        <div class="container-fluid questions-data-block read-quiz-content" data-total_questions="10">
+            <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="question-step quiz-complete" style="display:none">
                         <div class="question-layout-block">
@@ -33,15 +34,17 @@
                         <div class="chart-summary-fields result-layout-summary">
                             <div class="sats-summary">
                                 <div class="row">
-                                    <div class="col-12 col-md-4 col-lg-3">
-                                        <div class="sats-summary-icon">
-                                            <img src="/assets/default/img/sidebar/all.svg" alt="" style="width: 100%; height: 100%;">
+                                    @if($is_learn == true)
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="sats-summary-icon">
+                                                <img src="/assets/default/img/sidebar/all.svg" alt="" style="width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="summary-text">
+                                                <label>Current Smartscore</label>
+                                                <div class="score">{{isset($smart_score)? $smart_score : 0}}</div>
+                                            </div>
                                         </div>
-                                        <div class="summary-text">
-                                            <label>Current Smartscore</label>
-                                            <div class="score">{{isset($smart_score)? $smart_score : 0}}</div>
-                                        </div>
-                                    </div>
+                                    @endif
                                     <div class="col-12 col-md-4 col-lg-3 bitcoin-box">
                                         <div class="sats-summary-icon" style="background-color: #8cc811;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;">

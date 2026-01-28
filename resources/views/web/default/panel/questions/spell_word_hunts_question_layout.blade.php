@@ -112,10 +112,6 @@ shuffle($characters_list);
                         <input type="text" data-min="{{$no_of_words}}" class="editor-field rurera-min-char hide" data-field_id="{{$field_id}}" data-id="{{$field_id}}" id="field-{{$field_id}}">
 
 
-
-
-
-
                     </div>
 
                     {!! $checkbox_layout !!}

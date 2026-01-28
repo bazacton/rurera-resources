@@ -67,185 +67,10 @@ $started_already = isset($started_already)? $started_already : false;
 
 
                     <div class="learning-content-box learning-start-box {{$content_class}} d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
-                        <div class="learn-test-start mx-auto pt-0">
-                            <div class="learn-test-title mb-30">
-                                <h2 class="font-30 font-weight-bold">Characteristics of living organisms</h2>
-                                <p class="font-16 text-dark-charcoal pt-5 text-gray">Earn Coins by answering questions and completing</p>
-                            </div>
-                            <div class="learn-chats row mb-35">
-                                <div class="col-lg-4 col-4">
-                                <div class="chat-box left-bottom">
-                                    <div class="avatar active">
-                                    <img src="/assets/default/svgs/avatar-left-top.svg" alt="avatar-left-top">
-                                    </div>
-                                    <div class="avatar">
-                                    <img src="/assets/default/svgs/avatar-left.svg" alt="avatar-left">
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="col-lg-4 col-4">
-                                <div class="avatar main-avatar">
-                                    <img src="/assets/default/svgs/avatar-main.svg" alt="avatar-main">
-                                </div>
-                                </div>
-                                <div class="col-lg-4 col-4">
-                                <div class="chat-box left-top">
-                                    <div class="avatar">
-                                    <img src="/assets/default/svgs/avatar-right-top.svg" alt="avatar-right-top">
-                                    </div>
-                                    <div class="avatar active">
-                                    <img src="/assets/default/svgs/avatar-right.svg" alt="avatar-right">
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="stats-card">
-                                <div class="card-box">
-                                    <div class="icon-box">
-                                        <img src="/assets/default/svgs/clipboard-list.svg" height="64" width="64" alt="clipboard-list">
-                                    </div>
-                                    <div class="stat-label font-14 font-weight-500">Question</div>
-                                    <div class="stat-value font-14 font-weight-bold">4</div>
-                                </div>
-                                <div class="card-box">
-                                    <div class="icon-box">
-                                        <img src="/assets/default/svgs/clock-colord.svg" height="64" width="64" alt="clock-colord">
-                                    </div>
-                                    <div class="stat-label font-14 font-weight-500">Time for quiz</div>
-                                    <div class="stat-value font-14 font-weight-bold">20 min</div>
-                                </div>
-                                <div class="card-box">
-                                    <div class="icon-box">
-                                        <img src="/assets/default/svgs/coin-colord.svg" height="64" width="64" alt="coin-colord">
-                                    </div>
-                                    <div class="stat-label font-14 font-weight-500">Earn up to</div>
-                                    <div class="stat-value stat-value-accent font-14 font-weight-bold">27 XP</div>
-                                </div>
-                                
-                                <div class="choose-questions">
-                                    <h3 class="font-16 font-weight-bold text-dark-charcoal text-left mb-15 w-100">Settings</h3>
-                                    <div class="choose-text">
-                                        <h4 class="font-14 font-weight-bold text-left">Number of Questions</h4>
-                                        <span class="text-left">Choose how many questions to attempt</span>
-                                    </div>
-                                    <div class="group-buttons font-14 font-weight-500">
-                                        <div class="select-radio-box">
-                                            <input type="radio" name="select-num" id="num1">
-                                            <label for="num1">10</label>
-                                        </div>
-                                        <div class="select-radio-box">
-                                            <input type="radio" name="select-num" id="num2" checked="">
-                                            <label for="num2">15</label>
-                                        </div>
-                                        <div class="select-radio-box">
-                                            <input type="radio" name="select-num" id="num3">
-                                            <label for="num3">20</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rur-setting-row-holder">
-                                    <div class="rur-setting-row">
-                                        <div class="rur-setting-text">
-                                            <div class="rur-setting-title font-14">Correct/Incorrect Sounds</div>
-                                            <div class="rur-setting-sub">Play sounds after an answer</div>
-                                        </div>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input play-sounds-check-1" checked="" id="play-sounds-check-1">
-                                            <label class="custom-control-label" for="play-sounds-check-1"></label>
-                                        </div>
-                                    </div>
 
-                                    <div class="rur-setting-row">
-                                        <div class="rur-setting-text">
-                                            <div class="rur-setting-title font-14">Practice with Review</div>
-                                            <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
-                                        </div>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input practice-with-review-check-1" checked="" id="practice-with-review-check-1">
-                                            <label class="custom-control-label" for="practice-with-review-check-1"></label>
-                                        </div>
-                                    </div>
-
-                                    <div class="rur-setting-row">
-                                        <div class="rur-setting-text">
-                                            <div class="rur-setting-title font-14">Question Pagination</div>
-                                            <div class="rur-setting-sub">Show prev/next controls</div>
-                                        </div>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input show-pagination-check-1" checked="" id="show-pagination-check-1">
-                                            <label class="custom-control-label" for="show-pagination-check-1"></label>
-                                        </div>
-                                    </div>
-
-                                    <div class="rur-setting-row">
-                                        <div class="rur-setting-text">
-                                            <div class="rur-setting-title font-14">Timer</div>
-                                            <div class="rur-setting-sub">Show countdown badge</div>
-                                        </div>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input show-timer-check-1" checked="" id="show-timer-check-1">
-                                            <label class="custom-control-label" for="show-timer-check-1"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            <div class="btn-holder practice-start-block font-14" data-quiz_loaded="no">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="200px" viewBox="0 0 200 200" class="pencil">
-                                    <defs>
-                                    <clipPath id="pencil-eraser">
-                                        <rect height="30" width="30" ry="5" rx="5"></rect>
-                                    </clipPath>
-                                    </defs>
-                                    <circle transform="rotate(-113,100,100)" stroke-linecap="round" stroke-dashoffset="439.82"
-                                    stroke-dasharray="439.82 439.82" stroke-width="2" stroke="currentColor" fill="none" r="70"
-                                    class="pencil__stroke"></circle>
-                                    <g transform="translate(100,100)" class="pencil__rotate">
-                                    <g fill="none">
-                                        <circle transform="rotate(-90)" stroke-dashoffset="402" stroke-dasharray="402.12 402.12" stroke-width="30"
-                                        stroke="hsl(223,90%,50%)" r="64" class="pencil__body1"></circle>
-                                        <circle transform="rotate(-90)" stroke-dashoffset="465" stroke-dasharray="464.96 464.96" stroke-width="10"
-                                        stroke="hsl(223,90%,60%)" r="74" class="pencil__body2"></circle>
-                                        <circle transform="rotate(-90)" stroke-dashoffset="339" stroke-dasharray="339.29 339.29" stroke-width="10"
-                                        stroke="hsl(223,90%,40%)" r="54" class="pencil__body3"></circle>
-                                    </g>
-                                    <g transform="rotate(-90) translate(49,0)" class="pencil__eraser">
-                                        <g class="pencil__eraser-skew">
-                                        <rect height="30" width="30" ry="5" rx="5" fill="hsl(223,90%,70%)"></rect>
-                                        <rect clip-path="url(#pencil-eraser)" height="30" width="5" fill="hsl(223,90%,60%)"></rect>
-                                        <rect height="20" width="30" fill="hsl(223,10%,90%)"></rect>
-                                        <rect height="20" width="15" fill="hsl(223,10%,70%)"></rect>
-                                        <rect height="20" width="5" fill="hsl(223,10%,80%)"></rect>
-                                        <rect height="2" width="30" y="6" fill="hsla(223,10%,10%,0.2)"></rect>
-                                        <rect height="2" width="30" y="13" fill="hsla(223,10%,10%,0.2)"></rect>
-                                        </g>
-                                    </g>
-                                    <g transform="rotate(-90) translate(49,-30)" class="pencil__point">
-                                        <polygon points="15 0,30 30,0 30" fill="hsl(33,90%,70%)"></polygon>
-                                        <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)"></polygon>
-                                        <polygon points="15 0,20 10,10 10" fill="hsl(223,10%,10%)"></polygon>
-                                    </g>
-                                    </g>
-                                </svg>
-                                <div class="static-text">Preparing</div>
-                                <div class="animated-text-wrapper">
-                                    <div class="animated-text"><span></span></div>
-                                </div>
-                            </div>
-                            <div class="btn-holder start-practice-btn rurera-hide mb-30">
-
-
-                                <button data-id="{{$quiz->id}}" data-is_new="{{$is_new}}" data-question_ids="{{json_encode($question_ids)}}" data-test_type="{{$test_type}}" data-learning_journey="{{$learning_journey}}" data-journey_item_id="{{isset( $journey_item_id )? $journey_item_id : 0}}"  data-quiz_url="/panel/quizzes/{{$quiz->id}}/start"
-                                        class="quiz-start-btn start-spell-quiz mt-10" type="button">
-                                    @if($started_already == true)
-                                        Start Practice
-                                    @else
-                                        Start Practice
-                                    @endif
-                                    </button>
-                            </div>
-                        </div>
+                        @if(isset($instruction_layout))
+                            {!! $instruction_layout !!}
+                        @endif
                         <div class="container rurera-hide">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -383,7 +208,7 @@ $started_already = isset($started_already)? $started_already : false;
  <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
-            
+
             <!-- Header -->
             <div class="modal-header border-0 pb-0">
                 <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
@@ -391,7 +216,7 @@ $started_already = isset($started_already)? $started_already : false;
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            
+
             <!-- Body -->
             <div class="modal-body pt-3">
                 <div class="report-options d-flex flex-column gap-2 font-14">
@@ -399,17 +224,17 @@ $started_already = isset($started_already)? $started_already : false;
                         <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
                         <span>The answer options are wrong</span>
                     </label>
-                    
+
                     <label class="radio-label d-flex align-items-center mb-2">
                         <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
                         <span>The question is unclear or confusing</span>
                     </label>
-                    
+
                     <label class="radio-label d-flex align-items-center mb-2">
                         <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
                         <span>Typo or grammatical error</span>
                     </label>
-                    
+
                     <label class="radio-label d-flex align-items-center mb-2">
                         <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
                         <span>Other reason</span>
@@ -422,7 +247,7 @@ $started_already = isset($started_already)? $started_already : false;
                     <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
                 </div>
             </div>
-            
+
             <!-- Footer -->
             <div class="modal-footer border-0">
                 <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>

@@ -11,5 +11,6 @@
 'show_topic_performance' => $show_topic_performance,
 'show_graph' => $show_graph,
 'user' => $user,
+'is_learn' => isset($is_learn)? $is_learn : true,
 ]
 )

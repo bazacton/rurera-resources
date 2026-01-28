@@ -497,7 +497,6 @@ $incorrect_answer_explaination = isset($incorrect_answer_explaination)? $incorre
 </div>
 </div>
 
-<script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     //init_question_functions();
 

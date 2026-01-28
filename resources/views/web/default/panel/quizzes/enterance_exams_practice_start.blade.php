@@ -5,8 +5,6 @@
 
 @endphp
 
-
-
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
@@ -27,7 +25,7 @@ if($time_consumed > 0){
 $correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
-@php $total_questions = 10; @endphp
+@php $total_questions = isset($questions_list)? count($questions_list) : 0; @endphp
 <div class="content-section">
 
     <section class="lms-quiz-section">
@@ -77,13 +75,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <div class="read-quiz-info quiz-show"></div>
         @endif
 
-        <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
+        <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
             <div class="quiz-status-bar mb-md-50 mt-15">
                 <div class="questions-bar-box">
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
-                            <span class="value-lable progress-bar-counter" data-title="Smart score" style="left:{{isset($smart_score) ? $smart_score : 0}}%"><span class="smart-score-value">{{isset($smart_score) ? $smart_score : 0}}</span></span>
-                            <span class="bar-fill progress-bar-fill" data-title="Smart score" style="width: {{isset($smart_score) ? $smart_score : 0}}%;"></span>
+                            <span class="value-lable progress-bar-counter" data-title="No of Questions" style="left:0%"><span class="no-questions-value">0</span></span>
+                            <span class="bar-fill progress-bar-fill" data-title="" style="width: 0%;"></span>
                         </div>
                         <span class="coin-numbers">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
@@ -107,21 +105,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     </button>
                 </div>
             </div>
-            @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-                    <!-- <section class="quiz-topbar {{$top_bar_class}}" style="display:block !important">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-6 col-sm-12">
-                            @if( isset( $quiz->quiz_type ))
-                <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
-                            @endif
 
-            <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
@@ -161,12 +145,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                     @php $question_counter  = 1; @endphp
                                                     @foreach( $questions_layout as $result_question_id => $questionLayout)
                                                         @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
-                                                $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
+                                                            $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                                            $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
                                                         @endphp
                                                         <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                              data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                              data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
+                                                             data-question_no="{{$question_counter}}"
                                                              data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
 
                                                             {!! $questionLayout !!}
@@ -288,39 +273,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             </div>
 
             <div class="modal-body py-2">
-                <div class="rur-setting-row">
-                    <div class="rur-setting-text">
-                        <div class="rur-setting-title">Correct/Incorrect Sounds</div>
-                        <div class="rur-setting-sub">Play sounds after an answer</div>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input play-sounds-check" id="play-sounds-check">
-                        <label class="custom-control-label" for="play-sounds-check"></label>
-                    </div>
-                </div>
-
-                <div class="rur-setting-row">
-                    <div class="rur-setting-text">
-                        <div class="rur-setting-title">Practice with Review</div>
-                        <div class="rur-setting-sub">Show correct answer + explanation on wrong</div>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input practice-with-review-check" id="practice-with-review-check">
-                        <label class="custom-control-label" for="practice-with-review-check"></label>
-                    </div>
-                </div>
-
-                <div class="rur-setting-row">
-                    <div class="rur-setting-text">
-                        <div class="rur-setting-title">Question Pagination</div>
-                        <div class="rur-setting-sub">Show prev/next controls</div>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input show-pagination-check" id="show-pagination-check-2">
-                        <label class="custom-control-label" for="show-pagination-check-2"></label>
-                    </div>
-                </div>
-
                 <div class="rur-setting-row">
                     <div class="rur-setting-text">
                         <div class="rur-setting-title">Timer</div>
@@ -508,6 +460,28 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
+
+
+        /*
+        * Progress Bar set
+         */
+        var current_question_no = $('.rurera-question-block.question-step-'+active_question_id).attr('data-question_no');
+        current_question_no = parseInt(current_question_no)-1;
+        var total_no_of_questions = $(".question-area").attr('data-total_questions');
+        total_no_of_questions = parseInt(total_no_of_questions);
+
+        var next_question_no_percent = (current_question_no * 100) / total_no_of_questions;
+        next_question_no_percent = Math.round(next_question_no_percent);
+        console.log('next_question_no_percent==='+next_question_no_percent);
+
+
+        $('.progress-bar-counter').css('left', next_question_no_percent+'%');
+        $('.progress-bar-fill').css('width', next_question_no_percent+'%');
+        $('.no-questions-value').html(current_question_no);
+
+
+
+
         Quizintervals = setInterval(function () {
             if( TimerActive == true){
                 var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
@@ -599,11 +573,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
 
-        if(return_data.smart_score > 0){
-            $('.progress-bar-counter').css('left', return_data.smart_score+'%');
-            $('.progress-bar-fill').css('width', return_data.smart_score+'%');
-            $('.smart-score-value').html(return_data.smart_score);
-        }
+        var current_question_no = $(".rurera-question-block.active").attr('data-question_no');
+        var next_question_no = parseInt(current_question_no)+1;
+        var total_no_of_questions = $(".question-area").attr('data-total_questions');
+        total_no_of_questions = parseInt(total_no_of_questions);
+
+        var next_question_no_percent = (current_question_no * 100) / total_no_of_questions;
+        next_question_no_percent = Math.round(next_question_no_percent);
+        console.log('next_question_no_percent==='+next_question_no_percent);
+
+
+        $('.progress-bar-counter').css('left', next_question_no_percent+'%');
+        $('.progress-bar-fill').css('width', next_question_no_percent+'%');
+        $('.no-questions-value').html(current_question_no);
 
         if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1 && practice_with_review_check == true){
             var question_solution = return_data.question_solution;
@@ -676,37 +658,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
     }
 
-
-
-    function afterQuestionValidation_bk(return_data, thisForm, question_id) {
-        var current_question_layout = getDivWithValues().html();//$(".question-area-block").html();
-        //console.log(current_question_layout.html());
-        current_question_layout = JSON.stringify(current_question_layout);
-        current_question_layout = rureraform_encode64(current_question_layout);
-        var questions_layout_obj = JSON.parse($('.question-area-block').attr('data-questions_layout'));
-        console.log(questions_layout_obj);
-        var question_local_id = $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").attr('data-question_id');
-        var questions_layout = [];
-        var questions_layout_obj = $.map(questions_layout_obj, function (value, index) {
-            questions_layout[index] = value;
-        });
-        var question_layout = rureraform_decode64(questions_layout[question_local_id]);
-
-        var question_layout = JSON.parse(question_layout);
-        console.log('afterQuestionValidation');
-        console.log('questions_layout.length===='+question_local_id);
-        questions_layout[question_local_id] = current_question_layout;
-
-        let questions_layout_object = {};
-
-        $.each(questions_layout, function(question_index, question_value) {
-            if (typeof question_value !== 'undefined') {
-                questions_layout_object[question_index] = questions_layout[question_index];
-            }
-        });
-        $('.question-area-block').attr('data-questions_layout', JSON.stringify(questions_layout_object))
-
-    }
 
 
     function getDivWithValues() {

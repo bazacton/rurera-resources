@@ -10,20 +10,28 @@
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
-$timer_counter = 0;
+$timer_counter = isset($start_timer)? $start_timer : 0;
+$time_consumed = isset($time_consumed)? $time_consumed : 0;
+$attempted_questions = isset($attempted_questions)? $attempted_questions : 0;
 if( $duration_type == 'per_question'){
 $timer_counter = $time_interval;
 }
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
-$correct_answer_explaination = 1;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
-$incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
+
+if($time_consumed > 0){
+    $timer_counter = $time_consumed;
+}
+
+$correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
+$incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
+@php $total_questions = 10; @endphp
 <div class="content-section">
 
     <section class="lms-quiz-section">
-        
+
         @if( $quiz->quiz_pdf != '')
             <script type="text/javascript">
                 $(document).ready(function () {
@@ -70,13 +78,12 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
         @endif
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
-            @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
             <div class="quiz-status-bar mb-md-50 mt-15">
                 <div class="questions-bar-box">
                     <div class="quiz-questions-bar-holder">
                         <div class="quiz-questions-bar">
-                            <span class="value-lable progress-bar-counter" data-title="Smart score" style="left:0%"><span>1 / {{count($questions_layout)}}</span></span>
-                            <span class="bar-fill progress-bar-fill" data-title="0" style="width: 0%;"></span>
+                            <span class="value-lable progress-bar-counter" data-title="Smart score" style="left:{{isset($smart_score) ? $smart_score : 0}}%"><span class="smart-score-value">{{isset($smart_score) ? $smart_score : 0}}</span></span>
+                            <span class="bar-fill progress-bar-fill" data-title="Smart score" style="width: {{isset($smart_score) ? $smart_score : 0}}%;"></span>
                         </div>
                         <span class="coin-numbers">
                             <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
@@ -87,48 +94,51 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                 <div class="quiz-time-bar">
                     <div class="timer-wrap">
                         <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-
-                        <div class="time-box" id="hh">00</div>
-                        <span class="colon">:</span>
-                        <div class="time-box" id="mm">05</div>
-                        <span class="colon">:</span>
-                        <div class="time-box" id="ss">15</div>
+                        <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
+                            <div class="time-box" id="hh">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="mm">00</div>
+                            <span class="colon">:</span>
+                            <div class="time-box" id="ss">00</div>
+                        </div>
                     </div>
                     <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
                         <img src="/assets/default/svgs/setting.svg" alt="setting">
                     </button>
                 </div>
             </div>
-            <div class="justify-content-center row mx-0">
-                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto preview-question-content px-0">
-                    
-                    <div class="question-step quiz-complete" style="display:none">
-                        <div class="question-layout-block">
-                            <div class="left-content has-bg">
-                                <h2>&nbsp;</h2>
-                                <div id="rureraform-form-1"
-                                     class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
-                                     _data-parent="1"
-                                     _data-parent-col="0" style="display: block;">
-                                    <div class="question-layout row">
+            @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
+            <!-- <section class="quiz-topbar {{$top_bar_class}}" style="display:block !important">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-12">
+                            @if( isset( $quiz->quiz_type ))
+                                <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
+                            @endif
 
-                                    </div>
-                                </div>
+                            <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
                             </div>
-
                         </div>
                     </div>
-                    <div data-total_questions="{{count($questions_layout)}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        @php $total_questions = 10; @endphp
+                </div>
+            </section> -->
+            <div class="justify-content-center w-100">
+                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
+                    <div class="question-step quiz-complete" style="display:none">
+
+                        <div class="step-block">Test Completed!!!</div>
+
+                    </div>
+                    <div data-result_attempt_id="{{isset($quizAttempt->id)? $quizAttempt->id : 0}}" data-quiz_result_id="{{isset($newQuizStart->id)? $newQuizStart->id : 0}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+                        <a href="javascript:;" class="load-more-questions rurera-hide">Load More Questions</a>
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
+
                                     <div class="left-content has-bg">
-                                        <div class="question-counts">
-                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                                            <span>Question 8 of 20</span>
-                                        </div>
+                                        <div class="questions-lists-block">
+
                                         @if( is_array( $question ))
                                             @php $question_no = 1; @endphp
 
@@ -138,6 +148,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                                 'prev_question' => 0,
                                                 'next_question' => 0,
                                                 'question_no' => $question_no,
+                                                'total_questions' => $total_questions,
                                                 'quizAttempt' => $quizAttempt,
                                                 'newQuestionResult' => $newQuestionResult,
                                                 'quizResultObj' => $newQuizStart
@@ -149,13 +160,11 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                             @if( !empty( $questions_layout  ) )
                                                 @php $question_counter  = 1; @endphp
                                                 @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                $active_class = ($question_counter == 1)? 'active' : '';
-                                                if($active_question_id != ''){
-                                                    $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
-                                                }
+                                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                                $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
                                                     @endphp
-                                                    <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                    <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                          data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
                                                          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
@@ -169,11 +178,12 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                             @endif
 
                                         @endif
+                                    </div>
                                         <div class="show-notifications" data-show_message="yes"></div>
                                         <div id="scroll-controls" class="page-prev-next-controls pr-0">
                                             <div class="controls-inner">
                                                 <!-- Top State: Scroll Down Button -->
-                                                <button id="btn-top" class="scroll-btn pill btn-hidden">
+                                                <button id="btn-top" class="btn-top scroll-btn pill btn-hidden">
                                                     Scroll down <i class="arrow down"></i>
                                                 </button>
 
@@ -184,11 +194,11 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
                                             </div>
                                         </div>
                                         <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                            <a href="javascript:;" data-toggle="modal" class="review-btn mr-0" data-target="#review_submit">
+                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-md-0" data-target="#review_submit">
                                                 Finish
                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                             </a>
-                                            <button type="button" class="report-btn mr-auto"
+                                            <button type="button" class="report-btn mr-md-auto"
                                             data-toggle="tooltip"
                                             title="Report this question"
                                             data-target="#reportModal"
@@ -247,7 +257,7 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 @endif
 
 <div class="modal fade review_submit" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <div class="modal-body">
@@ -332,66 +342,99 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
       </div>
     </div>
   </div>
-<!-- Report Modal Html Start -->
- <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
-            
-            <!-- Header -->
-            <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            
-            <!-- Body -->
-            <div class="modal-body pt-3">
-                <div class="report-options d-flex flex-column gap-2 font-14">
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>The answer options are wrong</span>
-                    </label>
-                    
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>The question is unclear or confusing</span>
-                    </label>
-                    
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>Typo or grammatical error</span>
-                    </label>
-                    
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>Other reason</span>
-                    </label>
+    <!-- Report Modal Html Start -->
+    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+                <!-- Header -->
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
 
-                <!-- Dynamic Feedback Area -->
-                <div class="feedback-area mt-3" id="feedbackArea">
-                    <label id="feedbackLabel" class="font-weight-bold font-16">Please provide details:</label>
-                    <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
+                <!-- Body -->
+                <div class="modal-body pt-3">
+                    <div class="report-options d-flex flex-column gap-2 font-14">
+                        <label class="radio-label d-flex align-items-center mb-2">
+                            <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
+                            <span>The answer options are wrong</span>
+                        </label>
+
+                        <label class="radio-label d-flex align-items-center mb-2">
+                            <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
+                            <span>The question is unclear or confusing</span>
+                        </label>
+
+                        <label class="radio-label d-flex align-items-center mb-2">
+                            <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
+                            <span>Typo or grammatical error</span>
+                        </label>
+
+                        <label class="radio-label d-flex align-items-center mb-2">
+                            <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
+                            <span>Other reason</span>
+                        </label>
+                    </div>
+
+                    <!-- Dynamic Feedback Area -->
+                    <div class="feedback-area mt-3" id="feedbackArea">
+                        <label id="feedbackLabel" class="font-weight-bold font-16">Please provide details:</label>
+                        <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" onclick="submitReport()">Submit Report</button>
                 </div>
             </div>
-            
-            <!-- Footer -->
-            <div class="modal-footer border-0">
-                <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger" onclick="submitReport()">Submit Report</button>
+        </div>
+    </div>
+    <!-- Report Modal Html End -->
+  <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
+
+<div class="modal fade question_inactivity_modal" id="question_inactivity_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-box">
+        <span class="icon-box d-block mb-15">
+            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
+        </span>
+                    <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
+                    <p class="mb-15 font-16">
+                        You've been inactive for a while, and your session was paused. You can continue learning by using the following links
+                    </p>
+                    <ul class="activity-info">
+                        <li>Total Attempted Questions: <strong class="total-questions">10</strong></li>
+                        <li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
+                        <li>Incorrect: <strong class="incorrect-questions">2</strong></li>
+                    </ul>
+                    <div class="inactivity-controls">
+                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Report Modal Html End -->
-  <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
-
 
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     var correct_answer_explaination = '{{$correct_answer_explaination}}';
     var incorrect_answer_explaination = '{{$incorrect_answer_explaination}}';
+
+
+    var practice_with_review_check = false;
+    var sound_check = false;
+    var correct_sound = false;
+    var incorrect_sound = false;
+
+
     //init_question_functions();
     $('body').addClass('quiz-area-page');
     $('body').addClass('quiz-show');
@@ -407,37 +450,91 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     var duration_type = '{{$duration_type}}';
     var timer_counter = '{{$timer_counter}}';
 
+    var timePaused = false;
+
+    var focusInterval = null;
+    var focusIntervalCount = 240;
+    var TimerActive = true;
+
 
     function quiz_default_functions() {
 
+        console.log('-----------quiz_default_functions------------');
+        if( focusInterval == null) {
+
+            focusInterval = setInterval(function () {
+                var focus_count = focusIntervalCount-1;
+
+                console.log(focus_count);
+                focusIntervalCount = focus_count;
+                if (focus_count <= 0 && TimerActive == true) {
+                    TimerActive = false;
+                    timePaused = true;
+                    var total_questions = $('.quiz-pagination li').length;
+                    $(".question_inactivity_modal .modal-body .total-questions").html(correct_questions+incorrect_questions);
+                    $(".question_inactivity_modal .modal-body .correct-questions").html(correct_questions);
+                    $(".question_inactivity_modal .modal-body .incorrect-questions").html(incorrect_questions);
+                    $(".question_inactivity_modal").modal('show');
+                    focusIntervalCount = 240;
+                    //clearInterval(focusInterval);
+                    focusInterval = null;
+                }
+            }, 1000);
+        }
+
+        window.addEventListener('focus', function () {
+            focusIntervalCount = 240;
+            clearInterval(focusInterval);
+            focusInterval = null;
+        });
+
+        $(document).on('click', '.continue-btn', function (e) {
+            TimerActive = true;
+            timePaused = false;
+            focusIntervalCount = 240;
+            focusInterval = null;
+        });
+
+
+
+
         var active_question_id = $(".question-area-block").attr('data-active_question_id');
+
+        if(active_question_id > 0){
+            $('.rurera-question-block').removeClass('active');
+            $('.rurera-question-block.question-step-'+active_question_id).addClass('active');
+
+        }
+
         $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
         Quizintervals = setInterval(function () {
-            var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
-            if (duration_type == 'no_time_limit') {
-                quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
-            } else {
-                quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
-            }
-            $('.quiz-timer-counter').html(getTime(quiz_timer_counter));
-            if ($('.nub-of-sec').length > 0) {
-                $('.nub-of-sec').html(getTime(quiz_timer_counter));
-            }
-            $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
-            if (duration_type == 'per_question') {
-                if (parseInt(quiz_timer_counter) == 0) {
-                    clearInterval(Quizintervals);
-                    $('.question-submit-btn').attr('data-bypass_validation', 'yes');
-                    $('#question-submit-btn')[0].click();
+            if( TimerActive == true){
+                var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
+                if (duration_type == 'no_time_limit') {
+                    quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
+                } else {
+                    quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
                 }
-            }
-            if (duration_type == 'total_practice') {
-                if (parseInt(quiz_timer_counter) == 0) {
-                    clearInterval(Quizintervals);
-                    $(".submit_quiz_final").click();
-                    if ($('.question-review-btn').length > 0) {
-                        $('.question-review-btn').click();
+                $('.quiz-timer-counter').html(getTime(quiz_timer_counter));
+                if ($('.nub-of-sec').length > 0) {
+                    $('.nub-of-sec').html(getTime(quiz_timer_counter));
+                }
+                $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
+                if (duration_type == 'per_question') {
+                    if (parseInt(quiz_timer_counter) == 0) {
+                        clearInterval(Quizintervals);
+                        $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+                        $('#question-submit-btn')[0].click();
+                    }
+                }
+                if (duration_type == 'total_practice') {
+                    if (parseInt(quiz_timer_counter) == 0) {
+                        clearInterval(Quizintervals);
+                        $(".review-btn").click();
+                        if ($('.question-review-btn').length > 0) {
+                            $('.question-review-btn').click();
+                        }
                     }
                 }
             }
@@ -469,14 +566,20 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
         secondsString -= m * 60;
         var return_string = '';
         if( h > 0) {
-            var return_string = return_string + h + "h ";
+            var return_string = return_string + '<div class="time-box" id="hh">'+h+'</div><span class="colon">:</span>';
+        }else{
+            var return_string = return_string + '<div class="time-box" id="hh">'+h+'</div><span class="colon">:</span>';
         }
-        var quiz_type = '{{$quiz_type}}';
+        var quiz_type = '<?php echo e($quiz_type); ?>';
         if( (m > 0 || h > 0) || quiz_type != 'vocabulary') {
-            var return_string = return_string + (m < 10 ? '0' + m : m) + "m ";
+            var return_string = return_string + '<div class="time-box" id="mm">'+(m < 10 ? '0' + m : m)+'</div><span class="colon">:</span>';
         }
-        var return_string = return_string + (secondsString < 10 ? '0' + secondsString : secondsString);
-        return_string = return_string + 's';
+        //var return_string = return_string + (secondsString < 10 ? '0' + secondsString : secondsString);
+        var return_string = return_string + '<div class="time-box" id="ss">'+(secondsString < 10 ? '0' + secondsString : secondsString)+'</div>';
+        //return_string = return_string + 's';
+
+
+
         return return_string;
     }
 
@@ -486,73 +589,87 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
         $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
         var notifications_settings_show_message = $(".show-notifications").attr('data-show_message');
 
-        $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
-        $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+        var show_notification = false;
 
-        $(".rurera-question-block.active").addClass('disabled-div');
-        if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1){
+        $('.show-notifications').html('');
+
+        if(return_data.incorrect_flag == true && incorrect_sound == true && sound_check == true){
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+            show_notification = true;
+        }
+
+
+        if(return_data.smart_score > 0){
+            $('.progress-bar-counter').css('left', return_data.smart_score+'%');
+            $('.progress-bar-fill').css('width', return_data.smart_score+'%');
+            $('.smart-score-value').html(return_data.smart_score);
+        }
+
+        if(return_data.incorrect_flag == true && incorrect_answer_explaination == 1 && practice_with_review_check == true){
             var question_solution = return_data.question_solution;
             var notification_class = (return_data.incorrect_flag == true) ? 'wrong' : 'correct';
             var notification_label = (return_data.incorrect_flag == true) ? 'Thats incorrect, but well done for trying' : 'Well done! Thats exactly right.';
             var notification_sound = (return_data.incorrect_flag == true) ? 'wrong-answer.mp3' : 'correct-answer.mp3';
-            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-            $('.show-notifications').append('<div class="question-explaination">'+question_solution+'</div>');
-            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+            $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
+            show_notification = true;
         }
 
-        if(return_data.incorrect_flag == false && correct_answer_explaination == 1){
+        if(return_data.incorrect_flag == false && correct_sound == true && sound_check == true){
+            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+            show_notification = true;
+        }
+
+        if(return_data.incorrect_flag == false && correct_answer_explaination == 1 && practice_with_review_check == true){
+            var question_solution = return_data.question_solution;
             var notification_class = 'correct';
             var notification_label = 'Well done! Thats exactly right.';
             var notification_sound = 'correct-answer.mp3';
-            $('.show-notifications').html('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
-            $('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/'+notification_sound+'"></audio>');
+            var earned_coins = $(".total-earned-coins").html();
+            earned_coins = parseInt(earned_coins)+1;
+            $(".total-earned-coins").html(earned_coins);
+            $('.show-notifications').append('<span class="question-status-'+notification_class+'">'+notification_label+'</span>');
+            $('.show-notifications').append('<div class="question-explaination"> <button class="explaination-btn collapsed" type="button" data-toggle="collapse" data-target="#explaination" aria-expanded="false" aria-controls="collapseExample"><h5 class="font-16 font-weight-bold">Explanation:</h5></button><div class="collapse" id="explaination">'+question_solution+'</div></div>');
+            show_notification = true;
+
+        }
+        if(practice_with_review_check == true){
+            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
+            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+        }else{
+            $(".question-area-block").find('.question-next-btn').click();
+        }
+
+        if (show_notification == true) {
+            const el = document.querySelector('.show-notifications');
+            if (el) {
+                el.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
         if( return_data.is_complete == true) {
-            var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
-            window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+            var quiz_result_id = return_data.result_id;
+            $(".quiz-complete").html(return_data.result_page_layout);
+            $(".quiz-status-bar").addClass('rurera-hide');
+            $(".questions-nav-controls").addClass('rurera-hide');
+            $(".show-notifications").addClass('rurera-hide');
 
+            $(".rurera-question-block").removeClass('active');
+            $("body").removeClass('quiz-area-page');
+            $(".quiz-complete").show();
+            TimerActive = false;
+            //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
 
         //$('#ne0xt-btn')[0].click();
     }
 
-    function afterJumpReview(return_data){
-        var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
-        window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
-    }
-
-    var currentRequest = null;
     function afterNextQuestion(){
-        var current_question_serial = $('.rurera-question-block.active').index();
-        current_question_serial =  parseInt(current_question_serial)+1;
-        var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
-        var current_percentage = (current_question_serial*100)/total_questions;
-        $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
-        $(".progress-bar-counter").css('left', current_percentage+'%');
-        $(".progress-bar-fill").css('width', current_percentage+'%');
-
-        var qattempt_id = $('.rurera-question-block.active').attr('data-qattempt');
-        var question_id = $('.rurera-question-block.active').attr('data-qresult');
-        var actual_question_id = $('.rurera-question-block.active').find(".question-fields").attr('data-question_id');
-        currentRequest = jQuery.ajax({
-            type: "POST",
-            dataType: 'json',
-            url: '/question_attempt/mark_as_active',
-            async: true,
-            beforeSend: function () {
-                if (currentRequest != null) {
-                    currentRequest.abort();
-                }
-            },
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            data: {"question_id": question_id, "qattempt_id": qattempt_id, "actual_question_id": actual_question_id},
-            success: function (return_data) {
-                console.log(return_data);
-            }
-        });
+        focusIntervalCount = 240;
+        focusInterval = null;
         if (duration_type == 'per_question') {
             $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
@@ -560,21 +677,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
     }
 
 
-    function afterPrevQuestion(){
-        var current_question_serial = $('.rurera-question-block.active').index();
-        current_question_serial =  parseInt(current_question_serial)+1;
-        var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
-        var current_percentage = (current_question_serial*100)/total_questions;
-        console.log(current_question_serial);
-        $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
-        $(".progress-bar-counter").css('left', current_percentage+'%');
-        $(".progress-bar-fill").css('width', current_percentage+'%');
-
-        if (duration_type == 'per_question') {
-            $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
-            quiz_default_functions();
-        }
-    }
 
     function afterQuestionValidation_bk(return_data, thisForm, question_id) {
         var current_question_layout = getDivWithValues().html();//$(".question-area-block").html();
@@ -671,15 +773,6 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
 
         return clonedDiv;
     }
-
-    var current_question_serial = $('.rurera-question-block.active').index();
-    current_question_serial =  parseInt(current_question_serial)+1;
-    var total_questions = parseInt($(".question-area-block").attr('data-total_questions'));
-    var current_percentage = (current_question_serial*100)/total_questions;
-    $(".progress-bar-counter span").html(current_question_serial+' / '+total_questions);
-    $(".progress-bar-counter").css('left', current_percentage+'%');
-    $(".progress-bar-fill").css('width', current_percentage+'%');
-
     $(document).on('keyup', 'body', function (evt) {
         if (evt.key === 'ArrowLeft') {
             $('#prev-btn')[0].click();
@@ -689,146 +782,58 @@ $incorrect_answer_explaination = 1;//isset($incorrect_answer_explaination)? $inc
             $('#next-btn')[0].click();
         }
     });
-</script>
-<script>
-$(document).ready(function () {
-  let totalSeconds = (0 * 3600) + (5 * 60) + 15;
 
-  function updateTimer() {
-    if (totalSeconds <= 0) return;
 
-    totalSeconds--;
 
-    const h = Math.floor(totalSeconds / 3600);
-    const m = Math.floor((totalSeconds % 3600) / 60);
-    const s = totalSeconds % 60;
 
-    document.getElementById("hh").textContent = String(h).padStart(2, "0");
-    document.getElementById("mm").textContent = String(m).padStart(2, "0");
-    document.getElementById("ss").textContent = String(s).padStart(2, "0");
-  }
 
-  // ✔ Accurate 1-second timer (NO setInterval)
-  setTimeout(function tick() {
-    updateTimer();
-    setTimeout(tick, 1000);
-  }, 1000);
-  });
-</script>
-<script>
-var btnDown = document.getElementById('btn-top');
-var btnUp = document.getElementById('btn-bottom');
-var container = null;
+    /*
+    * Practice Settings
+     */
 
-/* Get active question container */
-function getActiveContainer() {
-    var activeSection = document.querySelector('.learning-content:has(.rurera-question-block.active)');
-    return activeSection
-        ? activeSection.querySelector('.questions-data-block')
-        : null;
-}
 
-function hideButtons() {
-    btnDown.classList.add('btn-hidden');
-    btnUp.classList.add('btn-hidden');
-}
+    $(document).on('click', '.setting-reset-btn', function (evt) {
+        $('.show-timer-check').prop('checked', false);
+        $('.show-pagination-check').prop('checked', false);
+        $('.practice-with-review-check').prop('checked', false);
+        $('.play-sounds-check').prop('checked', false);
+        $('.show-timer-check').change();
+        $('.show-pagination-check').change();
+        $('.practice-with-review-check').change();
+        $('.play-sounds-check').change();
+    });
 
-function isScrollable(el) {
-    return el && el.scrollHeight > el.clientHeight + 1;
-}
+    $(document).on('change', '.show-timer-check', function (evt) {
 
-/* Update buttons state */
-function updateScrollState() {
+        var show_timer = $(this).is(':checked')? true : false;
+        $(".timer-wrap").removeClass('rurera-hide');
 
-    var newContainer = getActiveContainer();
-
-    /* Rebind scroll listener if section changed */
-    if (container !== newContainer) {
-        if (container) {
-            container.removeEventListener('scroll', updateScrollState);
+        if(show_timer == false){
+            $(".timer-wrap").addClass('rurera-hide');
         }
-        container = newContainer;
-        if (container) {
-            container.addEventListener('scroll', updateScrollState);
+    });
+
+    $(document).on('change', '.show-pagination-check', function (evt) {
+
+        var show_timer = $(this).is(':checked')? true : false;
+        $(".questions-total-holder").removeClass('rurera-hide');
+
+        if(show_timer == false){
+            $(".questions-total-holder").addClass('rurera-hide');
         }
-    }
+    });
 
-    if (!isScrollable(container)) {
-        hideButtons();
-        return;
-    }
 
-    var scrollTop = container.scrollTop;
-    var scrollHeight = container.scrollHeight;
-    var clientHeight = container.clientHeight;
+    $(document).on('change', '.practice-with-review-check', function (evt) {
+        practice_with_review_check = $(this).is(':checked')? true : false;
 
-    /* At bottom → show UP */
-    if (scrollTop + clientHeight >= scrollHeight - 1) {
-        btnDown.classList.add('btn-hidden');
-        btnUp.classList.remove('btn-hidden');
-    }
-    /* Else → show DOWN */
-    else {
-        btnDown.classList.remove('btn-hidden');
-        btnUp.classList.add('btn-hidden');
-    }
-}
+    });
 
-/* Scroll to top */
-function scrollUp() {
-    if (!isScrollable(container)) return;
-    container.scrollTo({ top: 0, behavior: 'smooth' });
-}
 
-/* Scroll to bottom */
-function scrollDown() {
-    if (!isScrollable(container)) return;
-    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-}
+    $(document).on('change', '.play-sounds-check', function (evt) {
+        sound_check = $(this).is(':checked')? true : false;
+    });
 
-/* Button events */
-btnDown.addEventListener('click', scrollDown);
-btnUp.addEventListener('click', scrollUp);
-
-/* Keyboard controls */
-document.addEventListener('keydown', function (e) {
-
-    container = getActiveContainer();
-    if (!isScrollable(container)) return;
-
-    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
-        e.preventDefault();
-    }
-
-    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
-        scrollDown();
-    }
-    else if (['ArrowUp', 'PageUp'].includes(e.key)) {
-        scrollUp();
-    }
-});
-
-/* SAFE MutationObserver (NO FREEZE) */
-var observer = new MutationObserver(function (mutations) {
-    for (var i = 0; i < mutations.length; i++) {
-        var el = mutations[i].target;
-        if (el.classList && el.classList.contains('rurera-question-block')) {
-            updateScrollState();
-            break;
-        }
-    }
-});
-
-observer.observe(
-    document.querySelector('.rurera-wrapper') || document.body,
-    { attributes: true, subtree: true, attributeFilter: ['class'] }
-);
-
-/* Resize */
-window.addEventListener('resize', updateScrollState);
-
-/* Init */
-updateScrollState();
 </script>
 <script>
 function quizPageCallback() {
@@ -869,5 +874,12 @@ function quizPageCallback() {
         }, 1500);
     });
 }
+
+$(document).on("change, input", ".editor-field", function (e) {
+    $(".rurera-validation-error").remove();
+    var thisBlock = $(".rurera-question-block.active");
+    var thisForm = thisBlock.find('form');
+    returnType = rurera_validation_process(thisForm, 'quiz_page');
+});
 
 </script>
