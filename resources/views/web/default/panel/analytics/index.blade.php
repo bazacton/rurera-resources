@@ -38,6 +38,28 @@
     <div class="section-title mb-15">
         <h2 class="font-22 mb-0">Analytics</h2>
     </div>
+    <div class="chart-card">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="card-title mb-0">Topic you are interested in</h5>
+            <div style="color: #999; cursor: pointer;">&#8942;</div>
+        </div>
+
+        <div class="row">
+            <!-- Chart Section -->
+            <div class="col-sm-8">
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Legend Section (Right Side) -->
+            <div class="col-sm-4">
+                <div id="customLegend">
+                    <!-- Populated by JS or static HTML -->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="activities-container p-20 p-lg-25 rounded-sm">
         <div class="chart-filters p-0">
             <div class="filters-list mb-0 font-14">
@@ -191,6 +213,7 @@
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/daterangepicker/daterangepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -296,6 +319,126 @@ function reset() {
       moment(reset_end).format("MM/DD/YYYY")
   );
 }
+
+</script>
+<script>
+    // Data Configuration
+    const labels = ['UI Design', 'UX Design', 'Music', 'Animation', 'React', 'SEO'];
+    const dataValues = [35, 20, 14, 12, 10, 9];
+    // Colors from the image (approximate)
+    const colors = [
+        '#6f42c1', // UI Design - Purple
+        '#00c4cc', // UX Design - Cyan
+        '#28a745', // Music - Green
+        '#6c757d', // Animation - Grey
+        '#ff4d4f', // React - Red
+        '#fd7e14'  // SEO - Orange
+    ];
+
+    // 1. Setup Chart
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: dataValues,
+                backgroundColor: colors,
+                borderRadius: 5, // Rounded corners for bars
+                barPercentage: 0.6,
+                categoryPercentage: 0.8
+            }]
+        },
+        options: {
+            indexAxis: 'y', // Makes it horizontal
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false // Hide default legend
+                },
+                tooltip: {
+                    enabled: false // Disable tooltip as we show labels
+                },
+                datalabels: {
+                    color: 'white',
+                    anchor: 'center',
+                    align: 'center',
+                    font: {
+                        weight: 'bold',
+                        size: 11
+                    },
+                    formatter: function(value, context) {
+                        return context.chart.data.labels[context.dataIndex];
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    display: true,
+                    grid: {
+                        color: '#f0f0f0',
+                        borderDash: [5, 5],
+                        drawBorder: false
+                    },
+                    ticks: {
+                        stepSize: 10,
+                        callback: function(value) { return value + '%' }
+                    },
+                    max: 50 // Add some space for visuals
+                },
+                y: {
+                    grid: {
+                        display: false,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        display: true, // Show numbers 1, 2, 3 etc? 
+                        // The image shows numbers 1-6 on the left axis.
+                        // Let's create a callback to show ranking numbers instead of labels
+                        callback: function(value, index, ticks) {
+                            // Since it's reversed in visual usually (top is #1), let's just return the index + 1 reversed
+                            // Actually, in the image, UI Design is top (biggest) and has label 6? Or is it rank?
+                            // The image has 6 at top, 1 at bottom. So it's the Y-axis value matching the count?
+                            // No, the Y-axis labels in the image are just indices.
+                            return (labels.length - index);
+                        },
+                        font: {
+                            size: 12,
+                            color: '#999'
+                        }
+                    }
+                }
+            },
+            layout: {
+                padding: {
+                    left: 10,
+                    right: 20
+                }
+            }
+        },
+        plugins: [ChartDataLabels]
+    });
+
+    // 2. Generate Custom Legend (Right Side)
+    const legendContainer = document.getElementById('customLegend');
+    let legendHTML = '<div class="row">';
+    
+    labels.forEach((label, index) => {
+        legendHTML += `
+            <div class="col-6">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background-color: ${colors[index]}"></div>
+                    <div class="legend-text">
+                        <span class="legend-label">${label}</span>
+                        <span class="legend-value">${dataValues[index]}%</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    legendHTML += '</div>';
+    legendContainer.innerHTML = legendHTML;
 
 </script>
 
