@@ -19,7 +19,7 @@
                                             <table class="students-table">
                                                 <thead>
                                                 <tr>
-                                                    <th><h6 class="font-18 font-weight-500">Title</h6></th>
+                                                    <th><h6 class="font-18 font-weight-500">Next to Practice</h6></th>
                                                     <th><h6 class="font-18 font-weight-500">Assigned By</h6></th>
                                                     <th><h6 class="font-18 font-weight-500">Due Date</h6></th>
                                                 </tr>
