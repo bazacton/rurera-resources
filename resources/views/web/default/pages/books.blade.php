@@ -88,13 +88,13 @@
                                                 </div>
                                                 @endforeach
                                                 @endif
-                                                @endforeach
-                                            @endif
+
                                         </div>
                                         
                                     </div>
                                 </div>
-                                
+                                    @endforeach
+                                @endif
                                 
                             </div>
                         </div>
