@@ -1,25 +1,19 @@
 
-
 <section class="dashboard">
-
     <div class="db-form-tabs">
         <div class="db-members">
             <div class="row g-3 list-unstyled">
                 <div class="col-12">
                     <div class="card pt-0">
                         <div class="card-body">
-
-                            <ul class="rurera-tabs-frontend set-work-ajax d-flex flex-wrap align-items-center pb-0">
-                                <li class="active font-weight-500 pb-10" data-type="active">Inprogress</li>
-                                <li class="font-weight-500 pb-10" data-type="completed">Completed</li>
-                                <li class="font-weight-500 pb-10" data-type="expired">Overdue</li>
+                            <ul class="rurera-tabs-frontend set-work-ajax d-flex flex-wrap align-items-center">
+                                <li class="active font-weight-bold font-18 pb-10" data-type="active">Inprogress</li>
+                                <li class="font-weight-bold font-18 pb-10" data-type="completed">Completed</li>
+                                <li class="font-weight-bold font-18 pb-10" data-type="expired">Overdue</li>
                             </ul>
 
-                            <div class="list-group list-group-custom set-work-content list-group-flush totalChilds"
-                                 data-childs="12">
+                            <div class="list-group list-group-custom set-work-content list-group-flush totalChilds pt-0" data-childs="12">
                                 <div class="rurera-tables-list">
-
-
                                     <div class="list-group-item">
                                         <div class="table-sm">
                                             <table class="students-table">
@@ -81,21 +75,13 @@
                                             </table>
                                         </div>
                                     </div>
-
-
                                 </div>
-
+                                <div class="rurera-pagination"></div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
-
-
-
-
