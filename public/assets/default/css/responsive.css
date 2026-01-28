@@ -537,6 +537,9 @@ Lms Responsive Style Start
     .quiz-topbar .close-btn-holder {position: absolute; top: -40px; right: 15px;}
     .products-top-header .banner-holder {right: 215px;}
     .panel-content .products-top-header .banner-holder {margin-top: -50px;}
+    #profile-image-modal .modal-dialog {
+        max-width: 800px;
+    }
 }
 
 @media (min-width:767px) {
