@@ -143,6 +143,58 @@ Sub Pages Style
   border-color: var(--primary);
   color: #fff;
 }
+
+/* Chart Card Style Start */
+.chart-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    padding: 25px;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+/* Custom Legend Styling */
+.legend-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+.legend-text {
+    flex-grow: 1;
+    min-width: 0; /* Allows text truncation if needed */
+}
+.legend-label {
+    display: block;
+    color: #6c757d;
+    font-size: 13px;
+    margin-bottom: 0;
+    white-space: nowrap; /* Prevent wrapping */
+}
+.legend-value {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Grid lines customization */
+.chart-container {
+    position: relative;
+    height: 350px;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
