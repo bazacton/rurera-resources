@@ -17,6 +17,13 @@
                                     <div class="list-group-item">
                                         <div class="table-sm">
                                             <table class="students-table">
+                                                <thead class="rurera-hide">
+                                                <tr>
+                                                    <th><h6 class="font-18 font-weight-500">Title</h6></th>
+                                                    <th><h6 class="font-18 font-weight-500">Student</h6></th>
+                                                    <th><h6 class="font-18 font-weight-500">Due Date</h6></th>
+                                                </tr>
+                                                </thead>
                                                 <tbody>
                                                 <tr>
                                                     <td data-th="Title">
