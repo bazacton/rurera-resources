@@ -46,12 +46,6 @@
                                                             <span class="font-16 d-block">31 Dec 2025</span>
                                                         </div>
                                                     </td>
-                                                    <td data-th="Completion Date">
-                                                        <div class="last-activity activity-date">
-                                                            <span class="font-16 d-block">-</span>
-                                                        </div>
-                                                    </td>
-
                                                 </tr>
                                                 </tbody>
                                             </table>
