@@ -29,6 +29,51 @@
                         <h3 class="font-24 mb-5">Set Work</h3>
                         <p class="text-muted font-16">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
                     </div>
+                    @if (auth()->check() && auth()->user()->isUser())
+                        <div class="rurera-hide">
+                        @php
+                            $child_count = 0;
+                            $childObj = auth()->user();
+                            $userSubscriptions = isset($childObj->id)? $childObj->userSubscriptions : '';
+                            $is_user_subscribed = isset( $userSubscriptions->id )? true : false;
+                            if($is_user_subscribed == true){
+                                $child_count++;
+                            }
+                            $selected_child = ($child_count == 1)? 'checked' : '';
+                        @endphp
+                        @if( $is_user_subscribed == true)
+                            <input type="hidden" class="user-permissions" data-type="practice" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('courses')}}">
+                            <input type="hidden" class="user-permissions" data-type="vocabulary" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('vocabulary')}}">
+                            <input type="hidden" class="user-permissions" data-type="timestables" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('timestables')}}">
+                            <input type="hidden" class="user-permissions" data-type="sats" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('sats')}}">
+                            <input type="hidden" class="user-permissions" data-type="11plus" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                            <input type="hidden" class="user-permissions" data-type="iseb" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                            <input type="hidden" class="user-permissions" data-type="cat4" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                            <input type="hidden" class="user-permissions" data-type="independent_exams" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                            <label class="card-radio">
+                                <input type="radio" data-timestables_no="{{$childObj->timestables_no}}" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
+                                       value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
+                                <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                            <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
+                                                <h3>{{$childObj->get_full_name()}}</h3>
+                                            </div>
+                                        </span>
+                            </label>
+                        @else
+                            <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{isset($childObj->id)? $childObj->id : 0}}">
+                                    <span class="radio-btn disabled-style"><i class="las la-check"></i>
+                                        <div class="card-icon">
+                                        <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
+                                            <h3>{{$childObj->get_full_name()}}</h3>
+                                            <span>Buy Membership</span>
+                                        </div>
+                                    </span>
+                            </a>
+                        @endif
+                        </div>
+                    @endif
+                    @if (auth()->check() && auth()->user()->isParent())
                     <div class="years-group populated-data mb-10">
                         <div class="form-section mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">Select Student</h2>
@@ -99,6 +144,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
 
                     <div class="years-group populated-data rurera-hide remove-pending">
                         <div class="form-group">
