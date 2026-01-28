@@ -64,6 +64,7 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {background-color: #f4f4f4; border-radius: 0; border: 0;}
     .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 15px;}
     .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 15px;}
+    .panel-right-sidebar.full-width-sidebar {display: block;}
     .panel-content > .container > .row {
     flex-direction: column-reverse;
 }
