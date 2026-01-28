@@ -39,7 +39,7 @@
                                                     </td>
                                                     <td data-th="Student">
                                                         <h6 class="font-16 font-weight-normal">
-                                                            <span class="created-by font-16">Parent 5000</span>
+                                                            <span class="assigned-by font-16">Parent 5000</span>
                                                             <span class="font-16">Jon Doe</span>
                                                         </h6>
                                                     </td>
