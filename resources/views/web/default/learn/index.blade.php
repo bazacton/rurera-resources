@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="panel-border bg-white rounded-sm">
+            <div class="panel-border bg-white rounded-sm px-30 py-10">
                 @if( !empty( $courses_list ) )
                     @foreach( $courses_list as $courseObj)
                             @php $subject_percentage = Webinar::getSubjectPercentage($courseObj->subject); @endphp
