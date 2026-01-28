@@ -35,9 +35,8 @@
     </div>
 </section>
 <section>
-    <div class="section-title mb-30">
-        <h2 class="font-22 mb-10">Analytics</h2>
-        <p class="font-14">Track your progress with detailed insights into your performance. Understand your strengths, identify areas for improvement, and stay on top of your learning goals.</p>
+    <div class="section-title mb-15">
+        <h2 class="font-22 mb-0">Analytics</h2>
     </div>
     <div class="activities-container p-20 p-lg-25 rounded-sm">
         <div class="chart-filters p-0">
