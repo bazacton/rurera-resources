@@ -74,7 +74,7 @@
         </div>
         <div class="col-12 col-lg-12 col-md-12">
             <!-- Sats Listings Start -->
-            <div class="sats-listing-card medium sats-listing-card medium panel-border bg-white rounded-sm px-30 py-10">
+            <div class="sats-listing-card medium sats-listing-card medium">
                 <table class="simple-table">
                     <tbody>
 
