@@ -40,21 +40,21 @@
             @php
 
             $total_questions = isset( $dataObj->quizQuestionsList )? count($dataObj->quizQuestionsList) : 0;
-            $spell_test_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'waiting')->count();
-            $spell_test_completed = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', '!=', 'waiting')->count();
-            $word_search_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-search')->where('status', 'waiting')->count();
-            $word_cloud_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-cloud')->where('status', 'waiting')->count();
-            $word_missing_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-missing')->where('status', 'waiting')->count();
+            $spell_test_count = 555;
+            $spell_test_completed = 666;
+            $word_search_count = 777;
+            $word_cloud_count = 888;
+            $word_missing_count = 999;
 
 
-            $quizResultObj = $dataObj->parentResults->where('user_id', $user->id)->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'passed')->last();
+            //$quizResultObj = $dataObj->parentResults->where('user_id', $user->id)->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'passed')->last();
             $percentage_class = '';
-            if( isset( $quizResultObj->id)){
-                $percentage_correct_answer = $QuestionsAttemptController->get_percetange_corrct_answer($quizResultObj);
+            /*if( isset( $quizResultObj->id)){
+                $percentage_correct_answer = 20;//$QuestionsAttemptController->get_percetange_corrct_answer($quizResultObj);
                 $percentage_class = 'danger';
                 $percentage_class = ($percentage_correct_answer >= 70 )? 'improvement' : $percentage_class;
                 $percentage_class = ($percentage_correct_answer > 90 )? 'success' : $percentage_class;
-            }
+            }*/
 
 
             $overall_percentage = 0;
