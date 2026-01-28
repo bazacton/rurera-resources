@@ -250,7 +250,6 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .student-profile-holder .profile-inner,
 .student-profile-holder .edit-info-list {
     flex: 0 0 47.777%;
-    max-width: 47.777%;
 }
 .edit-info-list h4 {
     gap: 10px;
