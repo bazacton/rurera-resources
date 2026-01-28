@@ -253,6 +253,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-info-list {
     border-bottom: 1px solid #ddd;
     padding: 0 0 25px;
+    height: 100%;
 }
 .edit-info-list h4 {
     gap: 10px;
