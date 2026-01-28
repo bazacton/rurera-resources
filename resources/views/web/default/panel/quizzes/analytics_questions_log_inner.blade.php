@@ -2,6 +2,7 @@
     $attempted_questions = $attempted_questions_list->count();
     $show_topic_performance = isset($show_topic_performance)? $show_topic_performance : false;
     $show_graph = isset($show_graph)? $show_graph : false;
+    $is_skill_summary = isset($is_skill_summary)? $is_skill_summary : false;
 @endphp
 <div class="content-section">
     <section class="lms-quiz-section no-bg">
@@ -283,7 +284,7 @@
         @if($attempted_questions_list->count() > 0)
         @php $question_counter = 1;  $smart_score = 0; @endphp
         @foreach($attempted_questions_list->orderBy('attempted_at', 'asc')->get() as $attemptedQuestionObj)
-            @php if($attemptedQuestionObj->year_id == $user->year_id){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
+            @php if($is_skill_summary == true && $attemptedQuestionObj->year_id == $user->year_id){ $smart_score = $attemptedQuestionObj->smart_score;} @endphp
         chart_columns.push({{ $question_counter }});
         chart_values.push({{ $smart_score }});
         @php $question_counter++; @endphp
