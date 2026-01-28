@@ -41,7 +41,7 @@
                             @else
                                 <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14">Start Learning</a>
                             @endif
-                            <span class="subject-info font-14">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
+                            <span class="subject-info font-14 text-gray">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
                             <div class="levels-progress horizontal">
                                 <span class="progress-box">
                                     <span class="progress-count" style="width: 0%;"></span>
