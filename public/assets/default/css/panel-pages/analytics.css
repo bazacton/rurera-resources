@@ -36,7 +36,7 @@ Sub Pages Style
 #analyticsAccordion .card:last-child {
     border-bottom: 1px solid #ddd;
 }
-#analyticsAccordion .card .card-header {border-radius: 0; border-bottom: 0; font-weight: 600; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#analyticsAccordion .card .card-header {border-radius: 0; border-bottom: 0; font-weight: 500; display: flex; flex-wrap: wrap; justify-content: space-between;}
 #analyticsAccordion .card:nth-child(even) > .card-header {background-color: #fff;}
 
 #analyticsAccordion .card-body {border-top: 1px solid rgba(52, 52, 52, .125); padding-top: 30px;}
