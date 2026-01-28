@@ -1178,7 +1178,10 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .activities-container .chart-filters {margin-bottom: 15px;}
     #profile-image-modal .close {right: 5px; top: 5px;}
     #profile-image-modal .svga-glob-controls {width: 12.5%;}
-    #userSettingForm #profile-image-modal #svga-container.svga-light {padding-top: 0;}
+    #profile-image-modal .modal-body {
+        padding: 0;
+    }
+    #userSettingForm #profile-image-modal #svga-container.svga-light {padding: 0;}
     #profile-image-modal .svga-row.row-colors,
     #profile-image-modal .svga-row.row-elements,
     #profile-image-modal .svga-row.row-glob-controls {margin: 0 -10px;}
