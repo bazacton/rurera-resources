@@ -2167,6 +2167,9 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 /* Questions Result Layout Accordion Style End */
 
 /* Parent, Students-Table Style Start */
+.rurera-tabs-frontend {border-bottom: 1px solid #ddd; margin-bottom: 0;}
+.rurera-tabs-frontend li {color: #6c6b71; cursor: pointer; border-bottom: 3px solid transparent; padding: 10px 35px; text-transform: uppercase; font-weight: 500 !important; font-size: 16px !important; line-height: normal;}
+.rurera-tabs-frontend li.active {border-bottom-color: var(--primary); color: var(--primary);}
 .dashboard-students-holder .db-members {
     padding: 0 25px 30px;
 }
