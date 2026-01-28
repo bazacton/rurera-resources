@@ -15,7 +15,7 @@
         </div>
         <div class="col-12 col-lg-12 mb-30">
             @if( $quests->count() > 0 )
-            <div class="quests-list panel-border bg-white rounded-sm p-30">
+            <div class="quests-list">
                 <ul>
                     @foreach( $quests as $questObj)
                         @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
@@ -23,7 +23,7 @@
                         $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
                         $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
                         @endphp
-                        <li>
+                        <li class="panel-border bg-white rounded-sm mb-15">
                             <div class="quests-item">
                                 <div class="icon-box">
                                     <img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
