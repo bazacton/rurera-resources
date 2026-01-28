@@ -15,6 +15,7 @@
         <div class="col-12">
             <div class="subjects-heading">
                 <h2 class="font-22">Subjects - {{$categoryObj->getTitleAttribute()}}</h2>
+                <p class="font-14">Explore structured lessons designed to build strong foundations and advance your understanding step by step. Learn at your own pace with clear explanations and practical exercises.</p>
             </div>
         </div>
         <div class="col-12">
