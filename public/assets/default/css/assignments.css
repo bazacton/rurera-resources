@@ -1,7 +1,7 @@
 .populated-content-area[class*="col-"] {padding: 0;}
 .radio-buttons {display: flex; flex-wrap: wrap; gap: 15px; width: 100%;}
 .radio-buttons .card-radio {
-    width: 11.111%;
+    width: 13%;
     margin-bottom: 0;
     padding: 15px 12px;
     border-radius: 6px;
@@ -75,7 +75,7 @@
 .set-work-container .lms-choose-membership.modal form {background-color: inherit; border: 0; padding: 0; margin: 0;}
 .wizard-steps .card-radio:has(input:checked) {border-color: var(--primary);}
 .wizard-steps .card-radio input:checked + .radio-btn h3 {color: var(--primary);}
-.courses_fields .radio-buttons .card-radio {min-height: 90px; max-width: 13%; flex: 0 0 13%;}
+.courses_fields .radio-buttons .card-radio {min-height: 90px;}
 .courses_fields .radio-buttons .card-radio .radio-btn {height: 100%;}
 .set-work-container .input-holder {position: relative; width: 100%;}
 .set-work-container .input-holder img,
