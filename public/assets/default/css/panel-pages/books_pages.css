@@ -4,7 +4,7 @@ Sub Pages Style
 *****************************/
 .book-info-link img {object-fit: contain; width: 70px !important; height: 70px !important;}
 .books-listing-holder .search-block {margin-bottom: 30px; }
-.search-block .search-input .form-group {border: 1px solid #ddd; padding: 10px 20px 10px 15px; border-radius: 10px;}
+.search-block .search-input .form-group {border: 1px solid #ddd; padding: 10px 20px 10px 15px;}
 .search-block .search-input .form-group .btn {background-color: var(--primary); height: 42px; padding: 0 40px; box-shadow: none; border-color: var(--primary); }
 .search-block .search-input {border-radius: 15px; background-color: #DFE6EE; }
 .search-block .search-input input[type=text] {height: auto; padding: 0.3rem 1rem 0.3rem 0.3rem; background-color: inherit;}
