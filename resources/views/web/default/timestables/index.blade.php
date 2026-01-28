@@ -4,8 +4,9 @@
 <section class="content-section">
     <div class="page-section template-grid mx-w-100 p-0 news-section">
         <div class="timestables-modes">
-            <div class="section-title mb-15">
-                <h2 class="font-22 mb-0">Time Tables</h2>
+            <div class="section-title mb-30">
+                <h2 class="font-22 mb-10">Time Tables</h2>
+                <p class="font-14">Practice multiplication tables through interactive exercises that help you build speed, accuracy, and confidence with numbers.</p>
             </div>
             <div class="rurera-hide">
                 <ul class="tests-list type-list mb-30">
