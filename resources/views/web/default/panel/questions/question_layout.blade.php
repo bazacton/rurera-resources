@@ -66,6 +66,7 @@
                 @endif
             @endif
 
+            <span class="question-zone">{{isset($newQuestionResult->question_zone)? $newQuestionResult->question_zone : ''}}</span>
             <span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
                 <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                 Question: {{$question_no}}

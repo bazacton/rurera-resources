@@ -25,7 +25,7 @@
                     @if( !empty( $childs ) )
                     @foreach($childs as $childLinkObj)
                     @php $childObj = $childLinkObj->user; @endphp
-                        <li><a href="/{{panelRoute()}}/analytics/?child={{ $childObj->id }}" class="switch-user-btn"><span class="icon-box"><img src="{{$childObj->getAvatar()}}" alt="#" height="400" width="400"></span> {{ $childObj->get_full_name() }}</a></li>
+                        <li><a href="/analytics/?child={{ $childObj->id }}" class="switch-user-btn"><span class="icon-box"><img src="{{$childObj->getAvatar()}}" alt="#" height="400" width="400"></span> {{ $childObj->get_full_name() }}</a></li>
                     @endforeach
                     @endif
                 </ul>
@@ -44,12 +44,12 @@
                 <a href="#" class="filter-mobile-btn">Filters</a>
                 <ul class="analytics-type">
                     @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
-                    <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> All</a></li>
-                    <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> Learn</a></li>
-                    <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> Timestable</a></li>
-                    <li {{($type_selected == 'vocabulary')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/vocabulary{{$link_append}}" data-graph_type="word_lists"><img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell"> Word Lists</a></li>
-                    <li {{($type_selected == 'books')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/books{{$link_append}}" data-graph_type="books"><img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books"> Books</a></li>
-                    <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> Test</a></li>
+                    <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> All</a></li>
+                    <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> Learn</a></li>
+                    <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> Timestable</a></li>
+                    <li {{($type_selected == 'vocabulary')? 'class=active' : ''}}><a href="/analytics/vocabulary{{$link_append}}" data-graph_type="word_lists"><img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell"> Word Lists</a></li>
+                    <li {{($type_selected == 'books')? 'class=active' : ''}}><a href="/analytics/books{{$link_append}}" data-graph_type="books"><img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books"> Books</a></li>
+                    <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> Test</a></li>
                 </ul>
             </div>
             <ul class="analytics-data-ul">
@@ -65,22 +65,6 @@
                         <option value="All subjects">All subjects</option>
                         <option value="Math">Math</option>
                         <option value="Science">Science</option>
-                    </select>
-                </div>
-            </div>
-            <div class="select-holder">
-                <h5 class="font-14 font-weight-500">Skill Year</h5>
-                <div class="select-box">
-                    <select class="font-14">
-                        <option value="All Year">All Years</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
                     </select>
                 </div>
             </div>
