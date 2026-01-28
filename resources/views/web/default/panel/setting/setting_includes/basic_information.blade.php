@@ -29,12 +29,8 @@ if( !empty( $emojisArray ) ){
 .rurera-hide{display:none !important;}
     .profile-container {max-width: 1000px; margin: 0 auto; padding-top: 50px;}
     .student-profile-holder {
-        width: 100%;
         padding: 0;
-        box-sizing: border-box;
-        display: flex;
         gap: 15px;
-        flex-wrap: wrap;
     }
     .profile-inner {border: 1px dashed #ddd; border-radius: 5px; padding: 20px;}
     .student-profile-holder h3 {font-size: 20px; color: #868686; text-transform: capitalize; margin: 0;}
