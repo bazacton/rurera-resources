@@ -1330,6 +1330,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     }
     .student-profile-holder .profile-inner, 
     .student-profile-holder .edit-info-list {width: 100%; flex: 0 0 100%; max-width: 100%;}
+    .student-profile-holder .profile-inner {margin-bottom: 15px;}
 }
 
 @media screen and (max-width: 640px) {
