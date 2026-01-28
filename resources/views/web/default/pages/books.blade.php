@@ -35,9 +35,8 @@
             @if( !empty( $books ))
             @foreach( $books as $book_category => $category_books)
             <div class="col-lg-12">
-                <div class="section-title mb-30">
-                    <h2 class="mb-10 font-22">{{$book_category}}</h2>
-                    <p class="font-14">Discover a collection of books designed to support learning and comprehension. Read, explore key concepts, and expand your knowledge through guided content.</p>
+                <div class="section-title mb-15">
+                    <h2 class="mb-0 font-22">{{$book_category}}</h2>
                 </div>
             </div>
             <div class="col-12">
