@@ -5454,7 +5454,7 @@ p {line-height: 1.5;}
 
 /* Rurera List Button Style Start */
 .rurera-list-controls {gap: 10px;}
-.rurera-list-btn {border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; display: inline-block; line-height: normal; padding: 10px 25px;white-space: nowrap;}
+.rurera-list-btn {border: 1px solid #ddd; border-radius: 3px; display: inline-block; line-height: normal; padding: 10px 25px;white-space: nowrap;}
 .rurera-list-btn:hover {background-color: #f5f5f5;}
 .resume-test .rurera-list-btn:hover {color: var(--primary);}
 /* Rurera List Button Style End */
