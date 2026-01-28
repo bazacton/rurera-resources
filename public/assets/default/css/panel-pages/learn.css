@@ -190,7 +190,7 @@ Sub Pages Style
     font-size: 0.775rem;
 }
 .categories-card.medium .subject-info {display: block; text-align: left;}
-.categories-card.medium .learning-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-weight: 500; color: #666;}
+.categories-card.medium .learning-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-weight: 500; color: #999;}
 .categories-card.medium:nth-child(even) {background-color: #fff;}
 .categories-card.medium:nth-child(odd) {background-color: inherit;}
 .db-categories .row{gap: 25px 0;}
