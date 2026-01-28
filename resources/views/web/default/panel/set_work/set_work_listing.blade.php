@@ -20,7 +20,7 @@
                                                 <thead>
                                                 <tr>
                                                     <th><h6 class="font-18 font-weight-500">Title</h6></th>
-                                                    <th><h6 class="font-18 font-weight-500">Student</h6></th>
+                                                    <th><h6 class="font-18 font-weight-500">Assigned By</h6></th>
                                                     <th><h6 class="font-18 font-weight-500">Due Date</h6></th>
                                                 </tr>
                                                 </thead>
@@ -44,10 +44,9 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td data-th="Student">
+                                                    <td data-th="Assigned By">
                                                         <h6 class="font-16 font-weight-normal">
-                                                            <span class="assigned-by font-16">Parent 5000</span>
-                                                            <span class="font-16">Jon Doe</span>
+                                                            <span class="font-16">Parent 5000</span>
                                                         </h6>
                                                     </td>
                                                     <td data-th="Due Date">
