@@ -417,10 +417,10 @@ Left SideBar-menu End
     overflow: hidden;
     padding: 20px 95px 20px 15px;
     position: relative;
-    border-width: 2px 2px 4px;
+    border-width: 1px;
     border-style: solid;
     border-color: #e4e4e4;
-    border-radius: 10px;
+    border-radius: .625rem;
     margin: 0 0 10px;
 }
 .panel-content .grid-card {
