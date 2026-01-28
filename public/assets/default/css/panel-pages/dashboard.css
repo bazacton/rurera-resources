@@ -1029,8 +1029,6 @@ button.view-btn {
 .quests-list li {margin-bottom: 35px;}
 .panel-right-sidebar h3 .view-all {color: var(--primary);}
 .quests-list li:last-child {margin-bottom: 15px;}
-.panel-content-holder .quests-list li {border-bottom: 1px solid #ddd; padding: 0 0 25px; margin-bottom: 25px;}
-.panel-content-holder .quests-list li:last-child {padding: 0; border: 0; margin: 0;}
 .quests-list.quests-learning li {margin: 0 0 20px;border-radius: 8px;border: 1px solid #ddd; position: relative;}
 .quests-list.quests-learning li:last-child {padding: 20px; border: 1px solid #ddd;}
 .quests-item {display: flex; align-items: center; flex-wrap: wrap; gap: 5px; width: 100%; }
