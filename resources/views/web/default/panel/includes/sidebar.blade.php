@@ -26,16 +26,15 @@
                     </a>
                 </li>
 
-                @if(auth()->user()->isParent() || auth()->user()->isTutor())
-                <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
+
+                <li class="sidenav-item {{ (request()->is('set-work') or request()->is('set-work/*')) ? 'sidenav-item-active' : '' }}">
+                    <a class="d-flex align-items-center" href="/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
                         <span class="sidenav-setting-icon sidenav-item-icon">
                             <img src="/assets/default/img/sidebar/set-work.svg" alt="set-work">
                         </span>
                     </a>
                     <a href="/{{panelRoute()}}/set-work" class="font-14 nav-sub-title">Set Work</a>
                 </li>
-                @endif
                 @if(auth()->user()->isUser())
                     <li class="sidenav-item {{ (request()->is('learn') or request()->is('learn/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/learn" data-toggle="tooltip" data-placement="left" title="Learn">
