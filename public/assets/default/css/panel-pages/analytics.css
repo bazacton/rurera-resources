@@ -64,7 +64,7 @@ Sub Pages Style
 .chart-filters .filter-icon {margin-right: 5px;}
 .analytics-type li a {border: 1px dashed #ddd; border-radius: 5px; text-align: center; padding: 15px 5px;}
 .chart-filters .analytics-type .active a {background-color: #fff; border-style: solid; box-shadow: 0 -4px 0 0 #1b85fd inset;}
-.chart-filters .analytics-type {width: 100%; margin: 0 0 15px; flex-wrap: wrap; gap: 10px;}
+.chart-filters .analytics-type {width: 100%; margin: 0 0 15px; gap: 10px;}
 .chart-filters .analytics-type li {width: 15.555%;}
 .analytics-type li a img {margin: 0 auto 10px; display: block; object-fit: contain; max-width: 100%; width: 30px;height: 30px;}
 .chart-filters > ul > li > a.active {background-color: rgba(0,0,0,0.1);color: #2c4a7e;}
