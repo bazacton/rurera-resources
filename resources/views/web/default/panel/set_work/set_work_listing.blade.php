@@ -17,7 +17,7 @@
                                     <div class="list-group-item">
                                         <div class="table-sm">
                                             <table class="students-table">
-                                                <thead class="rurera-hide">
+                                                <thead>
                                                 <tr>
                                                     <th><h6 class="font-18 font-weight-500">Title</h6></th>
                                                     <th><h6 class="font-18 font-weight-500">Student</h6></th>
