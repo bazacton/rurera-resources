@@ -2117,11 +2117,6 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .question-area-block #analyticsAccordion .card .card-header.collapsed {
     border-bottom-color: #ddd;
 }
-.question-area-block #analyticsAccordion .card-body {
-    border-top: 0;
-    padding: 25px;
-    background-color: #f9f9f9;
-}
 .question-area-block #analyticsAccordion .card-header > span {
     display: flex;
     align-items: center;
