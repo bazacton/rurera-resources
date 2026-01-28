@@ -45,6 +45,7 @@
                         <td data-th="Topic">{{isset($listingObj->title)? $listingObj->title : '-'}}</td>
                         <td data-th="Performance">
                             @if($performance > 0)
+                                {{$performance}}
                                 <div class="percent-holder">
                                     <div class="chapter_percent circle-blue" data-percent="{{$performance}}">
                                         <div class="circle_inner">
