@@ -30,7 +30,7 @@ if( !empty( $emojisArray ) ){
     .profile-container {max-width: 1000px; margin: 0 auto; padding-top: 50px;}
     .student-profile-holder {
         padding: 0;
-        gap: 15px;
+        margin: 0;
     }
     .profile-inner {border: 1px dashed #ddd; border-radius: 5px; padding: 20px;}
     .student-profile-holder h3 {font-size: 20px; color: #868686; text-transform: capitalize; margin: 0;}
