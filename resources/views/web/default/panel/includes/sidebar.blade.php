@@ -33,7 +33,7 @@
                             <img src="/assets/default/img/sidebar/set-work.svg" alt="set-work">
                         </span>
                     </a>
-                    <a href="/{{panelRoute()}}/set-work" class="font-14 nav-sub-title">Set Work</a>
+                    <a href="/set-work" class="font-14 nav-sub-title">Set Work</a>
                 </li>
                 @if(auth()->user()->isUser())
                     <li class="sidenav-item {{ (request()->is('learn') or request()->is('learn/*')) ? 'sidenav-item-active' : '' }}">

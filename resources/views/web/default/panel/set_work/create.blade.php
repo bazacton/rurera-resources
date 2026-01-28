@@ -1623,7 +1623,7 @@
             rurera_loader(thisObj, 'button');
             jQuery.ajax({
                 type: "GET",
-                url: '/admin/common/types_quiz_by_year',
+                url: '/common/types_quiz_by_year_admin',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
@@ -1667,7 +1667,7 @@
             rurera_loader($(".practice-quiz-topics-list"), 'div');
             jQuery.ajax({
                 type: "GET",
-                url: '/admin/common/topics_subtopics_by_subject',
+                url: '/common/topics_subtopics_by_subject_admin',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },

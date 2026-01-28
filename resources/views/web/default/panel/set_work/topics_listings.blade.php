@@ -8,8 +8,8 @@
     <!-- Top buttons -->
     @if(!empty( $parentData))
         <div class="top-actions">
-            <button class="btn">Full exam curriculum</button>
-            <button class="btn active">✓ All topics</button>
+            <button class="btn" type="button">Full exam curriculum</button>
+            <button class="btn active" type="button">✓ All topics</button>
         </div>
     @endif
 
@@ -17,9 +17,8 @@
     <div class="subject-filters">
 
         @if(!empty( $parentData))
-            <button class="chip parent-filters active" data-id="all"><span class="active-tick">✓</span> All</button>
             @foreach( $parentData as $parentObj)
-                <button class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
+                <button type="button" class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
             @endforeach
         @endif
 
