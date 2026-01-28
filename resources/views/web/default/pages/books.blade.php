@@ -43,7 +43,7 @@
                                     <h2 class="mb-15 font-22">{{$book_category}}</h2>
                                 </div>
                                 <div class="col-12">
-                                    <div class="panel-border bg-white rounded-sm px-30 pt-30">
+                                    <div class="panel-border bg-white rounded-sm px-30 pt-30 mb-30">
                                         <div class="row">
                                             @if( !empty( $category_books ))
                                                 @foreach( $category_books as $bookData)
