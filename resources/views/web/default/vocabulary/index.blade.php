@@ -11,7 +11,7 @@
 <section class="content-section spells-page">
     <div class="section-title text-left mb-30">
         <h2 class="mt-0 mb-10 font-22">Spelling word lists</h2>
-        <p class="font-14"> Work through a variety of practice questions to improve your skills and become familiar with the types of questions you'll encounter on the SATs. </p>
+        <p class="font-14">Strengthen your vocabulary with curated word lists tailored to different levels. Learn meanings, usage, and improve retention through regular practice.</p>
     </div>
     <!-- Listing Search Start -->
     <div class="listing-search lms-jobs-form mb-20">
