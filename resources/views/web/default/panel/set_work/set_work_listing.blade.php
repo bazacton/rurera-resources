@@ -22,7 +22,8 @@
                                                     <td data-th="Title">
                                                         <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/sidebar/timestable.svg" alt="timestables" height="65" width="98">
                                                             TT-Powerup-[1-6] 1M - 1Att
-                                                            <span class="set-work-type">Timestables</span>
+                                                            <span class="type-tags">Timestables</span>
+                                                            <span class="type-tags">2, 3, 4 Tables</span>
                                                         </a>
                                                         <div class="dropdown-box hide-lg">
                                                             <div class="dropdown">
