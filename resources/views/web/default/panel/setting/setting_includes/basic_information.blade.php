@@ -281,44 +281,50 @@ if( !empty( $emojisArray ) ){
                                             </div>
 											<div class="col-12 detail-body">
 												<div class="student-profile-holder profile-view-data">
-													<div class="profile-inner">
-														<div class="profile-header">
-															<h3 class="font-16">{{$user->display_name}}</h3>
-															<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
-														</div>
-														<div class="student-info">
-															<ul class="font-14">
-																<li class="user-name">
-																	<span>Username:</span> {{$user->username}}
-																</li>
-																<li>
-																	<span>Login Pin:</span>
-																	{{$user->login_pin}}
-																</li>
-																<li>
-																	<span>Emoji:</span>
-																	<div class="emoji-icons"> {!! $emoji_response !!}</div>
-																</li>
-																<li>
-																	<span>Website:</span>
-																	<a href="https://rurera.com">https://rurera.com</a>
-																</li>
-															</ul>
-														</div>
-													</div>
-                                                    <div class="edit-info-list border-0 pb-0">
-                                                        <div class="subscribe-plan active current-plan position-relative d-flex flex-column p-20">
-                                                            <div class="package-block">
-                                                                <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
-                                                                <div class="subscribe-title">
-                                                                    <h3 class="font-24 font-weight-500">Test&nbsp;Prep&nbsp;Plus</h3>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-12">
+                                                            <div class="profile-inner">
+                                                                <div class="profile-header">
+                                                                    <h3 class="font-16">{{$user->display_name}}</h3>
+                                                                    <a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
+                                                                </div>
+                                                                <div class="student-info">
+                                                                    <ul class="font-14">
+                                                                        <li class="user-name">
+                                                                            <span>Username:</span> {{$user->username}}
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>Login Pin:</span>
+                                                                            {{$user->login_pin}}
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>Emoji:</span>
+                                                                            <div class="emoji-icons"> {!! $emoji_response !!}</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>Website:</span>
+                                                                            <a href="https://rurera.com">https://rurera.com</a>
+                                                                        </li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
-                                                                                        <div class="d-flex align-items-start text-dark-charcoal mb-0 subscribe-price">
-                                                                <span class="font-36 line-height-1 packages-prices" data-package_price="37.49">£599.88</span>
-                                                                <span class="yearly-price">£599.88 / Yearly</span>
-                                                                <span class="yearly-price">Expiry: 18 Dec 2026</span>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-12">
+                                                            <div class="edit-info-list border-0 pb-0">
+                                                                <div class="subscribe-plan active current-plan position-relative d-flex flex-column p-20">
+                                                                    <div class="package-block">
+                                                                        <span class="subscribe-icon"><img src="/store/1/default_images/subscribe_packages/bronze.png" height="auto" width="auto" alt="Box image"></span>
+                                                                        <div class="subscribe-title">
+                                                                            <h3 class="font-24 font-weight-500">Test&nbsp;Prep&nbsp;Plus</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                                                <div class="d-flex align-items-start text-dark-charcoal mb-0 subscribe-price">
+                                                                        <span class="font-36 line-height-1 packages-prices" data-package_price="37.49">£599.88</span>
+                                                                        <span class="yearly-price">£599.88 / Yearly</span>
+                                                                        <span class="yearly-price">Expiry: 18 Dec 2026</span>
 
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>		
