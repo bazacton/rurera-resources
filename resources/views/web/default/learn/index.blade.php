@@ -18,43 +18,41 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="panel-border bg-white rounded-sm px-30 py-10">
-                @if( !empty( $courses_list ) )
-                    @foreach( $courses_list as $courseObj)
-                            @php $subject_percentage = Webinar::getSubjectPercentage($courseObj->subject); @endphp
-                                <div class="categories-card medium">
-                                    <div class="categories-icon" style="background:{{$courseObj->background_color}}">
-                                        @if($courseObj->subject->icon_code != '')
-                                            {!! $courseObj->subject->icon_code !!}
-                                    @else
-                                        <img src="{!! $courseObj->subject->thumbnail !!}" width="50" height="50" alt="categories image">
-                                    @endif
-                                    </div>
-                                    <div class="categories-text">
-                                        <h4 data-id="{{$courseObj->subject->id}}" class="categories-title font-16 font-weight-bold text-dark-charcoal mb-5"><a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}">{{$courseObj->subject->getTitleAttribute()}}</a></h4>
-                                        @if( isset( $subject_percentage['percentage'] ) && $subject_percentage['percentage'] > 0)
-                                            <div class="levels-progress horizontal">
-                                                <span class="progress-numbers">{{$subject_percentage['skills_attempted']}}/{{$subject_percentage['total_skils']}} Lessons</span>
-                                                <span class="progress-box">
-                                                    <span class="progress-count" style="width: {{$subject_percentage['percentage']}}%;"></span>
-                                                </span>
-                                            </div>
-                                        @else
-                                            <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14">Start Learning</a>
-                                        @endif
-                                        <span class="subject-info font-14">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
-                                        <div class="levels-progress horizontal">
-                                            <span class="progress-box">
-                                                <span class="progress-count" style="width: 0%;"></span>
-                                            </span>
-                                            <span class="progress-numbers">0%</span>
-                                        </div>
-                                    </div>
-
+            @if( !empty( $courses_list ) )
+                @foreach( $courses_list as $courseObj)
+                    @php $subject_percentage = Webinar::getSubjectPercentage($courseObj->subject); @endphp
+                    <div class="categories-card medium panel-border bg-white rounded-sm mb-15">
+                        <div class="categories-icon" style="background:{{$courseObj->background_color}}">
+                            @if($courseObj->subject->icon_code != '')
+                                {!! $courseObj->subject->icon_code !!}
+                        @else
+                            <img src="{!! $courseObj->subject->thumbnail !!}" width="50" height="50" alt="categories image">
+                        @endif
+                        </div>
+                        <div class="categories-text">
+                            <h4 data-id="{{$courseObj->subject->id}}" class="categories-title font-16 font-weight-bold text-dark-charcoal mb-5"><a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}">{{$courseObj->subject->getTitleAttribute()}}</a></h4>
+                            @if( isset( $subject_percentage['percentage'] ) && $subject_percentage['percentage'] > 0)
+                                <div class="levels-progress horizontal">
+                                    <span class="progress-numbers">{{$subject_percentage['skills_attempted']}}/{{$subject_percentage['total_skils']}} Lessons</span>
+                                    <span class="progress-box">
+                                        <span class="progress-count" style="width: {{$subject_percentage['percentage']}}%;"></span>
+                                    </span>
                                 </div>
-                    @endforeach
-                @endif
-            </div>
+                            @else
+                                <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14">Start Learning</a>
+                            @endif
+                            <span class="subject-info font-14">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
+                            <div class="levels-progress horizontal">
+                                <span class="progress-box">
+                                    <span class="progress-count" style="width: 0%;"></span>
+                                </span>
+                                <span class="progress-numbers">0%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                @endforeach
+            @endif
         </div>
     </div>
 </section>
