@@ -35,7 +35,7 @@
             @foreach( $data as $dataObj)
             @php
 
-            $total_questions = isset( $dataObj->quizQuestionsList )? count($dataObj->quizQuestionsList) : 0;
+            $total_questions = 0;//isset( $dataObj->quizQuestionsList )? count($dataObj->quizQuestionsList) : 0;
             $spell_test_count = 555;
             $spell_test_completed = 666;
             $word_search_count = 777;
