@@ -23,11 +23,6 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
-                                @if( !empty( $books ))
-                                @foreach( $books as $book_category => $category_books)
-                                <div class="col-lg-12">
-                                    <h2 class="mb-15 font-22">{{$book_category}}</h2>
-                                </div>
                                 <div class="col-lg-12">
                                     <div class="search-block">
                                         <div class="top-search-form">
@@ -41,6 +36,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                @if( !empty( $books ))
+                                @foreach( $books as $book_category => $category_books)
+                                <div class="col-lg-12">
+                                    <h2 class="mb-15 font-22">{{$book_category}}</h2>
                                 </div>
                                 <div class="col-12">
                                     <div class="panel-border bg-white rounded-sm px-30 pt-30">
