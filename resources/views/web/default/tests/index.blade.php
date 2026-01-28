@@ -9,96 +9,91 @@
 
 @section('content')
 <section class="content-section">
-    <section class="pt-10">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    @if( !empty( $childs ) )
-                        <div class="p-15 mt-20 p-lg-20 db-form-tabs panel-border font-weight-500 text-dark-blue rounded-sm panel-shadow mb-20 switch-user-block">
-                            <div class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <a href="javascript:;" class="avatar"><img src="{{$switchUserObj->getAvatar()}}" alt="{{isset( $switchUserObj->id )? $switchUserObj->get_full_name() : ''}}" class="avatar rounded-circle"></a>
-                                    </div>
-                                    <div class="col-5 ms-2">
-                                        <h6 class="font-19 font-weight-bold"><a href="javascript:;">{{isset( $switchUserObj->id )? $switchUserObj->get_full_name() : ''}}</a></h6>
-                                    </div>
-                                    <div class="col-auto ms-auto mr-md-3 last-activity">
-                                        <a href="javascript:;" class="switch-user-btn" data-toggle="modal" data-target="#switch_user_modal">
-                                           <img src="/assets/default/img/default/user-switch.png" alt="user-switch">
-                                       </a>
-                                    </div>
+    <div class="row">
+        <div class="col-12">
+            @if( !empty( $childs ) )
+                <div class="p-15 mt-20 p-lg-20 db-form-tabs panel-border font-weight-500 text-dark-blue rounded-sm panel-shadow mb-20 switch-user-block">
+                    <div class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <a href="javascript:;" class="avatar"><img src="{{$switchUserObj->getAvatar()}}" alt="{{isset( $switchUserObj->id )? $switchUserObj->get_full_name() : ''}}" class="avatar rounded-circle"></a>
+                            </div>
+                            <div class="col-5 ms-2">
+                                <h6 class="font-19 font-weight-bold"><a href="javascript:;">{{isset( $switchUserObj->id )? $switchUserObj->get_full_name() : ''}}</a></h6>
+                            </div>
+                            <div class="col-auto ms-auto mr-md-3 last-activity">
+                                <a href="javascript:;" class="switch-user-btn" data-toggle="modal" data-target="#switch_user_modal">
+                                    <img src="/assets/default/img/default/user-switch.png" alt="user-switch">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+
+            <div class="section-title text-left mb-30 font-14">
+                <h2 class="mt-0 mb-10 font-22">Mock Tests</h2>
+                <p class="mb-15">Click on ‘Assign test’ next to your test papers. Here, you can choose the mock test(s) for which you would like to assign mock tests. Each learner has a limit mock tests per month, but guardians and teachers are allowed flexibility to decide which tests your learner should focus on. </p>
+                <p>Once you’ve assigned the mock tests, they will appear on the homepage of your learner’s account.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <!-- Listing Search Start -->
+            <div class="listing-search lms-jobs-form mb-0">
+                <form>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <div class="input-field">
+                                    <input type="text" class="search-tests" placeholder="Test Keyword">
                                 </div>
                             </div>
                         </div>
-                    @endif
-
-                    <div class="section-title text-left mb-30 font-14">
-                        <h2 class="mt-0 mb-10 font-22">Mock Tests</h2>
-                        <p class="mb-15">Click on ‘Assign test’ next to your test papers. Here, you can choose the mock test(s) for which you would like to assign mock tests. Each learner has a limit mock tests per month, but guardians and teachers are allowed flexibility to decide which tests your learner should focus on. </p>
-                        <p>Once you’ve assigned the mock tests, they will appear on the homepage of your learner’s account.</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <!-- Listing Search Start -->
-                    <div class="listing-search lms-jobs-form mb-0">
-                        <form>
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <div class="input-field">
-                                            <input type="text" class="search-tests" placeholder="Test Keyword">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-12 col-md-12">
-                                    <!-- Test List Filters Start -->
-                                    <div class="tests-list-holder mb-25">
-                                        <a href="#." class="filter-mobile-btn">Filters</a>
-                                        <ul class="tests-list mb-30 font-14">
-                                            <li data-type="all" class="active">All Tests</li>
-                                            <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
-                                            <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
-                                            <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
-                                            <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
-                                            <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
-                                        </ul>
-                                    </div>
-                                    <!-- Test List Filters End -->
-                                     <!-- Total-Tests Counter Start -->
-                                    <h4 class="total-tests has-border font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h4>
-                                    <!-- Total-Tests Counter Start -->
-                                </div>
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <!-- Test List Filters Start -->
+                            <div class="tests-list-holder mb-25">
+                                <a href="#." class="filter-mobile-btn">Filters</a>
+                                <ul class="tests-list mb-30 font-14">
+                                    <li data-type="all" class="active">All Tests</li>
+                                    <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
+                                    <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
+                                    <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
+                                    <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
+                                    <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
+                                </ul>
                             </div>
-                        </form>
+                            <!-- Test List Filters End -->
+                                <!-- Total-Tests Counter Start -->
+                            <h4 class="total-tests has-border font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h4>
+                            <!-- Total-Tests Counter Start -->
+                        </div>
                     </div>
-                    <!-- Listing Search End -->
-                </div>
-                <div class="col-12 col-lg-12 col-md-12">
-                    <!-- Sats Listings Start -->
-                    <div class="sats-listing-card medium sats-listing-card medium panel-border bg-white rounded-sm px-30 py-10">
-                        <table class="simple-table">
-                            <tbody>
+                </form>
+            </div>
+            <!-- Listing Search End -->
+        </div>
+        <div class="col-12 col-lg-12 col-md-12">
+            <!-- Sats Listings Start -->
+            <div class="sats-listing-card medium sats-listing-card medium panel-border bg-white rounded-sm px-30 py-10">
+                <table class="simple-table">
+                    <tbody>
 
-                            {!! $practice_response_layout !!}
+                    {!! $practice_response_layout !!}
 
-							{!! $response_layout !!}
+                    {!! $response_layout !!}
 
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- Sats Listings End -->
-                </div>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Sats Listings End -->
+        </div>
 
-                <div class="col-12">
-                    <div class="mt-60">
-                        {{ $sats->appends(request()->input())->links('vendor.pagination.panel') }}
-                    </div>
-                </div>
+        <div class="col-12">
+            <div class="mt-60">
+                {{ $sats->appends(request()->input())->links('vendor.pagination.panel') }}
             </div>
         </div>
-    </section>
-
+    </div>
 </section>
 <div class="modal fade switch_user_modal" id="switch_user_modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
