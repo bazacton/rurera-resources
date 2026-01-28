@@ -9,8 +9,9 @@
     <div class="row">
 
         <div class="col-12">
-            <div class="section-title text-left mb-15">
-                <h2 class="mt-0 font-22">Daily Quests</h2>
+            <div class="section-title text-left mb-30">
+                <h2 class="mt-0 mb-10 font-22">Daily Quests</h2>
+                <p class="font-14">Complete daily and weekly quests to challenge yourself, stay motivated, and earn rewards as you progress through your learning journey.</p>
             </div>
         </div>
         <div class="col-12 col-lg-12 mb-30">
