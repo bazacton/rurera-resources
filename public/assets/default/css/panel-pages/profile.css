@@ -52,7 +52,14 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .top-heading h5 {color: #000;}
 .top-heading h5 span {color: #94a3b8; line-height: normal;}
 .edit-profile-controls button {background-color: inherit; border: 1px solid #ddd; padding: 8px 20px; min-width: 96px; border-radius: 5px;}
-.edit-profile-controls .save-btn {background-color: var(--primary); color: #fff; border-color: var(--primary); margin-left: 10px;}
+.edit-profile-controls .save-btn {
+    border-color: #ddd;
+    color: #9b9b9b;
+}
+.edit-profile-controls .save-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
 .edit-profile-controls .cancel-edit-button {color: var(--primary); text-decoration: underline; font-weight: 500;}
 .edit-profile-body {/*max-width: 32rem;*/ margin: 0 auto;}
 .edit-element-title h6 span {color: #94a3b8; line-height: normal;}
