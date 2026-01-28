@@ -13,29 +13,77 @@
                                 <li class="active font-weight-500 pb-10" data-type="active">Inprogress</li>
                                 <li class="font-weight-500 pb-10" data-type="completed">Completed</li>
                                 <li class="font-weight-500 pb-10" data-type="expired">Overdue</li>
-                            </ul>	
+                            </ul>
 
                             <div class="list-group list-group-custom set-work-content list-group-flush totalChilds"
                                  data-childs="12">
                                 <div class="rurera-tables-list">
-                                @if( $assignments->count() > 0 )
-                                @foreach($assignments as $assignmentObj)
-                                    @include('web.default.panel.set_work.list_item',['assignmentObj' => $assignmentObj])
-                                @endforeach
-                                @else
-                                    @php $no_records_data = '<div class="no-record-found-head mb-20">
-                                            <ul class="d-flex align-items-center justify-content-between">
-                                                <li><h6 class="listing-title font-16 font-weight-500">Title</h6></li>
-                                                <li><h6 class="listing-title font-16 font-weight-500">Student</h6></li>
-                                                <li><h6 class="listing-title font-16 font-weight-500">Type</h6></li>
-                                                <li><h6 class="listing-title font-16 font-weight-500">Action</h6></li>
-                                            </ul>
-                                    </div>'; @endphp
-                                    @include('web.default.default.list_no_record',['no_records_data' => $no_records_data])
-                                @endif
-                                </div>
 
-                                <div class="rurera-pagination">{{ $assignments->links() }}</div>
+
+                                    <div class="list-group-item">
+                                        <div class="table-sm">
+                                            <table class="students-table">
+                                                <tbody>
+                                                <tr>
+                                                    <td data-th="Title">
+                                                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/timestables.png" alt="timestables" height="65" width="98">
+                                                            TT-Powerup-[1-6] 1M - 1Att
+                                                        </a>
+                                                        <div class="dropdown-box hide-lg">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three" height="800" width="800"></span>
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a href="/panel/set-work/16/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple" height="64" width="64"> Details</a>
+                                                                    <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/16/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu" height="800" width="800"> Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Student">
+                                                        <h6 class="font-16 font-weight-normal">
+                                                            <span class="font-16">Jon Doe</span>
+                                                        </h6>
+                                                    </td>
+                                                    <td data-th="Type">
+                                                        <h6 class="font-16 font-weight-normal">
+                                                            <span class="font-16">Practice</span>
+                                                        </h6>
+                                                    </td>
+                                                    <td data-th="Due Date">
+                                                        <div class="last-activity activity-date">
+                                                            <span class="font-16 d-block">31 Dec 2025</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Completion Date">
+                                                        <div class="last-activity activity-date">
+                                                            <span class="font-16 d-block">-</span>
+                                                        </div>
+                                                    </td>
+                                                    <td data-th="Action">
+                                                        <div class="last-activity action-activity">
+                                                            <div class="dropdown-box">
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                                    </a>
+                                                                    <div class="dropdown-menu">
+                                                                        <a href="/panel/set-work/16/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
+                                                                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/16/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu"> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                </div>
 
                             </div>
 
