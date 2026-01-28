@@ -406,8 +406,6 @@ Left SideBar-menu End
 /*Test-List Default Style For Timestables Practice Page End*/
 
 /*Grid Card Default Style For Timestables Practice Page*/
-.panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 25px;}
-.panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 25px;}
 .template-grid .row .row [class*="col"] {padding: 0 5px;}
 .template-grid .row .row {margin-left: -5px; margin-right: -5px;}
 .type-list-data {background-color: #fff; display: inline-block; width: 100%; clear: both;}
