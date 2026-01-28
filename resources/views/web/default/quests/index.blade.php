@@ -23,7 +23,7 @@
                         $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
                         $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
                         @endphp
-                        <li class="panel-border bg-white rounded-sm mb-15 p-15">
+                        <li class="panel-border bg-white rounded-sm mb-15 p-20">
                             <div class="quests-item">
                                 <div class="icon-box">
                                     <img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
