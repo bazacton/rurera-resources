@@ -293,8 +293,10 @@
                 if ($attemptedQuestionObj->year_id == $user->year_id) {
                     $smart_score = $attemptedQuestionObj->smart_score;
                 }else{
-                    $line = '#fe3c30';     // red
-                    $fill = '#ff9690';    // red
+                    if($is_skill_summary == true){
+                        $line = '#fe3c30';     // red
+                        $fill = '#ff9690';    // red
+                    }
                 }
 
                 if ($is_skill_summary == false) {
