@@ -29,7 +29,7 @@
                                     <img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
                                 </div>
                                 <div class="item-text">
-                                    <h5 class="font-16 font-weight-bold text-dark-charcoal">{{$questObj->title}}</h5>
+                                    <h5 class="font-16 font-weight-bold">{{$questObj->title}}</h5>
                                     <div class="levels-progress horizontal">
                                         <span class="progress-box">
                                             <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
