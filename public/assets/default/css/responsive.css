@@ -307,7 +307,6 @@ Lms Responsive Style Start
     .heatmap-range-slider .range-value {flex-basis: 100%; width: 100%;}
     .range-value input {width: calc(100% - 120px);}
     .range-value span {max-width: none;}
-    .template-grid .grid-card {margin-bottom: 15px;}
     .challenge-box .tab-pane {overflow: hidden; overflow-x: auto;}
     .challenge-box table {overflow: hidden;}
     .challenge-box th {white-space: nowrap;}
