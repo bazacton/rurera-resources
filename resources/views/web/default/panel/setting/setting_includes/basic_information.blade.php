@@ -33,7 +33,7 @@ if( !empty( $emojisArray ) ){
         padding: 0;
         box-sizing: border-box;
         display: flex;
-        gap: 15px 30px;
+        gap: 15px;
         flex-wrap: wrap;
     }
     .profile-inner {border: 1px dashed #ddd; border-radius: 5px; padding: 20px;}
