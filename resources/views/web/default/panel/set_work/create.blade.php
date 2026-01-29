@@ -445,32 +445,29 @@
                 <div class="rurera_common_hide_field vocabulary_practice_type_field">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
-                            <div class="form-group">
-                                <label class="input-label">Practice Type</label>
-                                <div class="input-group">
-                                    <div class="radio-buttons">
+                            <fieldset class="form-group">
+                                <legend class="input-label">Practice Type</legend>
+                                <div class="radio-buttons" aria-label="Practice Type">
+                                    @php $spell_counter = 1;$spell_modes = get_spell_modes(); @endphp
 
-                                        @php $spell_counter = 1;$spell_modes = get_spell_modes(); @endphp
+                                    @if(!empty($spell_modes))
+                                        @foreach($spell_modes as $spell_mode_key => $spell_mode_value)
+                                            @php $is_checked = ($spell_counter == 1)? 'checked' : ''; @endphp
+                                            <label class="card-radio">
+                                                <input type="radio" name="ajax[new][spell_practice_type]" value="{{$spell_mode_key}}"
+                                                    {{$is_checked}}>
+                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                                    <div class="card-icon">
+                                                                        <h3>{{$spell_mode_value}}</h3>
+                                                                    </div>
 
-                                        @if(!empty($spell_modes))
-                                            @foreach($spell_modes as $spell_mode_key => $spell_mode_value)
-                                                @php $is_checked = ($spell_counter == 1)? 'checked' : ''; @endphp
-                                                <label class="card-radio">
-                                                    <input type="radio" name="ajax[new][spell_practice_type]" value="{{$spell_mode_key}}"
-                                                        {{$is_checked}}>
-                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>{{$spell_mode_value}}</h3>
-                                                                        </div>
-
-                                                                    </span>
-                                                </label>
-                                                @php $spell_counter++; @endphp
-                                            @endforeach
-                                        @endif
-                                    </div>
+                                                                </span>
+                                            </label>
+                                            @php $spell_counter++; @endphp
+                                        @endforeach
+                                    @endif
                                 </div>
-                            </div>
+                            </fieldset>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 rurera_common_hide_field show_words_type_field">
                             <div class="form-group">
