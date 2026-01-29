@@ -15,7 +15,7 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
 <tr>
     <td>
         <img src="{{$quiz_image}}" alt="quiz_image" width="59" height="59">
-        <div class="text-holder font-14">
+        <div class="text-box font-14">
             <h4 class="font-16 font-weight-bold">
                 <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }} d-block mb-5">{{$rowObj->getTitleAttribute()}}</a>
             </h4>
