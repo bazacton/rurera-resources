@@ -9,8 +9,8 @@
         <div class="row">
             <div class="col-12 col-lg-12 mx-auto">
                 <div class="heatmap-section-inner">
-                    <div class="heatmap-heading mb-30 pl-15">
-                        <h2 class="font-weight-normal m-0 font-18">Average per Table</h2>
+                    <div class="heatmap-heading mb-30 pl-15 font-14">
+                        <h2 class="font-weight-normal m-0 font-16 font-weight-bold mb-5">Average per Table</h2>
                         <span>How quickly correctly answers each table. Measured in second per question. Under 3s/q is considered to be automatic recall.</span>
                     </div>
                     <div class="heatmap-table-boxes mb-30">
