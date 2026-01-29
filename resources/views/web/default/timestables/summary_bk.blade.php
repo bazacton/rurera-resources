@@ -71,8 +71,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="heatmap-heading mb-30 pl-15">
-                        <h2 class="font-weight-normal m-0 font-18">Heatmap</h2>
+                    <div class="heatmap-heading mb-30 pl-15 font-14">
+                        <h2 class="font-weight-bold m-0 font-16 mb-5">Heatmap</h2>
                         <span>How quickly {{ $authUser->get_full_name() }} correctly answers each indivdual questions</span>
                     </div>
                     <div class="heatmap-select-option">
