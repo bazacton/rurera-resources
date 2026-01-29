@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     </div>
-                    
+
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                             <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
-                        
+
                     </div>
                 </a>
                 <a href="/timestable/showdown-mode">
@@ -138,7 +138,7 @@
                         <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
                     </div>
                 </a>
-                <a href="/panel/analytics">
+                <a href="/analytics">
                     <div class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
