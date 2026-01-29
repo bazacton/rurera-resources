@@ -20,10 +20,10 @@
     <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation p-0">
         {{ csrf_field() }}
 
-        <ul class="set-work-tagss text-left 223 rurera-hide remove-pending"></ul>
+        <ul class="set-work-tagss text-left rurera-hide remove-pending"></ul>
 
         <div class="wizard-steps active" data-step_id="1">
-            <div class="wizard-steps-heading mb-30 text-left 223">
+            <div class="wizard-steps-heading mb-30 text-left">
                 <h2 class="font-22 mb-10">Set Work</h2>
                 <p class="text-muted font-14">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
             </div>
