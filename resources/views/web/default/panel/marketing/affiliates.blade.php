@@ -7,7 +7,7 @@
 @section('content')
     <section>
         <div class="section-title mb-15">
-            <h2 class="font-22 mb-0">Referral program</h2>
+            <h1 class="font-22 mb-0">Referral program</h1>
         </div>
         <div class="referral-holder panel-border bg-white rounded-sm px-25 pt-25">
             <div class="row">
