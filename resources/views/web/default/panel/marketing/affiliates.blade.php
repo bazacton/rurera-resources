@@ -69,7 +69,7 @@
                 <div class="referral-withdraw mb-30">
                     <div class="withdraw-card p-20 d-flex align-items-center flex-wrap">
                         <div class="icon-box mr-10">
-                            <img src="/assets/default/img/withdraw-icon.png" alt="" height="30" width="30">
+                            <img src="/assets/default/img/withdraw-icon.png" alt="withdraw-icon" height="30" width="30">
                         </div>
                         <div class="withdraw-text">
                             <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5">Withdraw Your Money to a Bank Account</h3>
