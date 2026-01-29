@@ -2413,6 +2413,13 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-members .list-group:has(.rurera-tables-list) {background-color: inherit; border: 0;}
 .db-members .card .list-group-item .detail-btn {border: 0; border-radius: 3px; color: #64748b; display: flex; width: 100%; margin: 0 0 8px 0; align-items: center; gap: 8px;}
 .db-members .card .list-group-item .detail-btn img {min-height: 15px; min-width: 15px; max-width: 15px; max-height: 15px; filter: invert(49%) sepia(11%) saturate(944%) hue-rotate(176deg) brightness(88%) contrast(83%);}
+.db-members .card .list-group-item .remove-btn img {
+    min-width: 15px;
+    min-height: 15px;
+    max-width: 15px;
+    max-height: 15px;
+    margin-right: 6px;
+}
 .db-members .list-group-item .profile-dropdown > a {border: 1px solid #ddd; border-radius: 100%; height: 36px; width: 36px; display: inline-flex; align-items: center; justify-content: center;}
 .db-members .profile-dropdown > a .icon-box {margin-right: 0; height: auto; width: auto; line-height: 16px;}
 .db-members .profile-dropdown > a .icon-box img {filter: invert(68%) sepia(19%) saturate(290%) hue-rotate(175deg) brightness(89%) contrast(101%);}
