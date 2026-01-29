@@ -180,7 +180,7 @@
                     @if( !empty( $category_books ))
                     @foreach( $category_books as $bookData)
                     <div class="col-lg-12">
-                        <div class="listing-card test">
+                        <div class="listing-card">
                             <div class="row">
                                 <div class="col-12 col-lg-2 col-md-3">
                                     <div class="img-holder">
