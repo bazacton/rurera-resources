@@ -58,7 +58,7 @@ Sub Pages Style
 /* Timestable Heatmap Table style Start */
 .heatmap-section {position: relative; background: url(/assets/default/img/mountain.jpg) no-repeat; background-size: cover; padding-top: 70px; padding-bottom: 70px;}
 .panel-content .heatmap-section {padding: 0; background: none;}
-.heatmap-section-inner {background-color: rgba(248,248,248,0.6); padding: 30px; border: 1px solid rgb(186, 195, 202); border-radius: 8px;}
+.heatmap-section-inner {background-color: rgba(248,248,248,0.6); padding: 30px; border: 1px solid #ddd; border-radius: .625rem;}
 .panel-content .heatmap-section-inner {background-color: #fff; border-bottom-width: 4px;}
 .heatmap-heading span {display: block; font-size: 14px; padding-top: 0; line-height: normal;}
 .heatmap-heading {position: relative;}
