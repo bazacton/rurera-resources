@@ -398,42 +398,35 @@
                 <div class="rurera_common_hide_field vocabulary_type_fields">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label class="input-label">Vocabulary Type</label>
-                                <div class="input-group">
-                                    <div class="radio-buttons">
-
-                                        <label class="card-radio">
-                                            <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                <div class="card-icon">
-                                                    <h3>Word Lists</h3>
-                                                </div>
-
-                                            </span>
-                                        </label>
-
-                                        <label class="card-radio">
-                                            <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Spelling Bee">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                <div class="card-icon">
-                                                    <h3>Spelling Bee</h3>
-                                                </div>
-
-                                            </span>
-                                        </label>
-                                        <label class="card-radio">
-                                            <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Syllabus">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                <div class="card-icon">
-                                                    <h3>Syllabus</h3>
-                                                </div>
-
-                                            </span>
-                                        </label>
-                                    </div>
+                            <fieldset class="form-group">
+                                <legend class="input-label">Practice Type</legend>
+                                <div class="radio-buttons" role="radiogroup" aria-label="Practice Type">
+                                    <label class="card-radio">
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Word Lists</h3>
+                                            </div>
+                                        </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Spelling Bee">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Spelling Bee</h3>
+                                            </div>
+                                        </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Syllabus">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Syllabus</h3>
+                                            </div>
+                                        </span>
+                                    </label>
                                 </div>
-                            </div>
+                            </fieldset>
                         </div>
                     </div>
 
