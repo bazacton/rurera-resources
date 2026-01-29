@@ -1,5 +1,5 @@
 <div class="select-topics">
-    <h3 class="font-24 mb-15">Select Topics</h3>
+    <h3 class="font-16 font-weight-bold">Select Topics</h3>
     <div class="selected-topics rurera-hide" id="selectedTopics">
         <span class="count selected-topics-count"><span>0</span> topics selected</span>
         <div class="chips selected-topics-chips">
