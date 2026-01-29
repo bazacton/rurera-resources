@@ -173,85 +173,69 @@
             </div>
 
             <div class="years-group populated-data">
-
-
-                <div class="form-group">
-                    <label class="input-label">Practice Type</label>
-                    <div class="input-group">
-
-                        <div class="radio-buttons">
-
-                                <label class="card-radio">
-                                    <input type="radio" name="ajax[new][assignment_topic_type]"
-                                            class="assignemnet_types_selection" value="practice" checked>
-                                    <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
-                                                <h3>Courses</h3>
-                                            </div>
-                                    </span>
-                                </label>
-                                <label class="card-radio">
-                                    <input type="radio" name="ajax[new][assignment_topic_type]"
-                                            class="assignemnet_types_selection" value="tests">
-                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                    <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
-                                                        <h3>Tests</h3>
-                                                    </div>
-                                            </span>
-                                </label>
-
-                                <label class="card-radio">
-                                    <input type="radio" name="ajax[new][assignment_topic_type]"
-                                            class="assignemnet_types_selection" value="vocabulary">
-                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                    <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
-                                                        <h3>Vocabulary</h3>
-                                                    </div>
-
-                                                    </span>
-                                </label>
-
-                                <label class="card-radio">
-                                    <input type="radio" name="ajax[new][assignment_topic_type]"
-                                            class="assignemnet_types_selection" value="timestables">
-                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                    <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables">
-                                                        <h3>Timestables</h3>
-                                                    </div>
-
-                                                    </span>
-                                </label>
+                    <fieldset class="form-group">
+                        <legend class="input-label">Practice Type</legend>
+                        <div class="radio-buttons" aria-label="Practice Type">
+                            <label class="card-radio">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="practice" checked>
+                                <span class="radio-btn"><i class="las la-check"></i>
+                                    <div class="card-icon">
+                                        <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
+                                        <h3>Courses</h3>
+                                    </div>
+                                </span>
+                            </label>
+                            <label class="card-radio">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="tests">
+                                <span class="radio-btn"><i class="las la-check"></i>
+                                    <div class="card-icon">
+                                        <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
+                                        <h3>Tests</h3>
+                                    </div>
+                                </span>
+                            </label>
 
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]"
-                                        class="assignemnet_types_selection" value="book">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="vocabulary">
                                 <span class="radio-btn"><i class="las la-check"></i>
-                                                    <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/books.png" alt="books">
-                                                        <h3>Book</h3>
-                                                    </div>
-
-                                                    </span>
+                                <div class="card-icon">
+                                    <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
+                                    <h3>Vocabulary</h3>
+                                </div>
+                                </span>
                             </label>
-                            {{--<label class="card-radio rurera-hide">
-                                <input type="radio" name="ajax[new][assignment_topic_type]"
-                                        class="assignemnet_types_selection" value="assignment">
-                                <span class="radio-btn"><i class="las la-check"></i>
-                                                    <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
-                                                        <h3>Custom Assignment</h3>
-                                                    </div>
-                                                </span>
-                            </label>--}}
-                        </div>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                </div>
 
+                            <label class="card-radio">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="timestables">
+                                <span class="radio-btn"><i class="las la-check"></i>
+                                <div class="card-icon">
+                                    <img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables">
+                                    <h3>Timestables</h3>
+                                </div>
+                                </span>
+                            </label>
+
+                        <label class="card-radio">
+                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="book">
+                            <span class="radio-btn"><i class="las la-check"></i>
+                                <div class="card-icon">
+                                    <img src="/assets/default/img/assignment-logo/books.png" alt="books">
+                                    <h3>Book</h3>
+                                </div>
+                            </span>
+                        </label>
+                        {{--<label class="card-radio rurera-hide">
+                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="assignment">
+                            <span class="radio-btn"><i class="las la-check"></i>
+                                <div class="card-icon">
+                                    <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
+                                    <h3>Custom Assignment</h3>
+                                </div>
+                            </span>
+                        </label>--}}
+                    </div>
+                    <div class="invalid-feedback"></div>
+                </fieldset>
                 <div class="form-group rurera_common_hide_field test_types_field">
                     <label class="input-label">Test Type</label>
                     <div class="input-group">
