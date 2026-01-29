@@ -2314,7 +2314,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-form-tabs .card-footer {border-top: 1px dashed #e9ecef; background-color: #fff; padding: 1.25rem; }
 .db-form-tabs .alert-danger {background-color: #f8d7da; color: #842029; border: 1px dashed #f5c2c7;}
 .db-form-tabs .card-header {background-color: #fff; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start; border-bottom: 0; border-radius: 0.75rem;}
-.db-form-tabs .list-group-item img {max-width: 38px; max-height: 38px; min-width: 38px; min-height: 38px; object-fit: contain;}
+.db-form-tabs .list-group-item img {max-width: 38px; max-height: 38px; object-fit: contain;}
 .db-form-tabs .billing-card .list-group-item img {border-radius: 3px; min-height: auto; max-height: inherit;}
 .db-form-tabs .db-security .list-group-item img {border-radius: 0; min-width: auto; background-color: inherit; min-height: auto; filter: invert(30%) sepia(20%) saturate(253%) hue-rotate(169deg) brightness(94%) contrast(91%);}
 .db-form-tabs .list-group-item .btn-white:hover {background-color: var(--primary);}
@@ -2414,8 +2414,6 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-members .card .list-group-item .detail-btn {border: 0; border-radius: 3px; color: #64748b; display: flex; width: 100%; margin: 0 0 8px 0; align-items: center; gap: 8px;}
 .db-members .card .list-group-item .detail-btn img {min-height: 15px; min-width: 15px; max-width: 15px; max-height: 15px; filter: invert(49%) sepia(11%) saturate(944%) hue-rotate(176deg) brightness(88%) contrast(83%);}
 .db-members .card .list-group-item .remove-btn img {
-    min-width: 15px;
-    min-height: 15px;
     max-width: 15px;
     max-height: 15px;
     margin-right: 6px;
