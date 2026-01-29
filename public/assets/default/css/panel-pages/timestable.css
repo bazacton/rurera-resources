@@ -62,7 +62,7 @@ Sub Pages Style
 .panel-content .heatmap-section-inner {background-color: #fff; border-bottom-width: 4px;}
 .heatmap-heading span {display: block; font-size: 14px; padding-top: 0; line-height: normal;}
 .heatmap-heading {position: relative;}
-.heatmap-heading:before {background-color: #6d6d6d; content: ""; height: 1px; position: absolute; left: 0; top: 50%; width: 9px;}
+/* .heatmap-heading:before {background-color: #6d6d6d; content: ""; height: 1px; position: absolute; left: 0; top: 50%; width: 9px;} */
 .heatmap-table-boxes li {flex: 2 1 0;}
 .heatmap-box {background-color: #60a747; min-height: 130px; border-radius: 5px; overflow: hidden; padding: 12px 0 0; min-width: 150px;}
 .heatmap-table-boxes ul {flex-wrap: wrap; gap: 10px;}
