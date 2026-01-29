@@ -74,7 +74,7 @@
                                     </li>';
             @endphp
             <!-- Spell Levels Listing Start -->
-            <div class="spell-levels {{$spell_quiz_completed}}">
+             <div class="spell-levels">
                 <div class="spell-levels-top">
                     <div class="spell-top-left">
                         <h3 class="font-16 font-weight-bold">Words Start with A <span class="progress-star ">
@@ -91,6 +91,9 @@
                         </div>
                     </div>
                 </div>
+             </div>
+            <div class="spell-levels {{$spell_quiz_completed}}">
+                
                 <div class="spell-levels-top">
                     <div class="spell-top-left">
                         <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"></span></h3>
