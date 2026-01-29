@@ -22,7 +22,7 @@
                 @foreach( $courses_list as $courseObj)
                     @php $subject_percentage = Webinar::getSubjectPercentage($courseObj->subject); @endphp
                     <div class="categories-card medium panel-border bg-white rounded-sm mb-15">
-                        <div class="categories-icon" style="background:{{$courseObj->background_color}}">
+                        <div class="categories-icon">
                             @if($courseObj->subject->icon_code != '')
                                 {!! $courseObj->subject->icon_code !!}
                         @else
