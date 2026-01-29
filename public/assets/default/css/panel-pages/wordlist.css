@@ -156,6 +156,27 @@ body .spell-question-area .question-label span {text-align: center;}
 .spell-levels.levels-grouping li.treasure a:after {display: none;}
 .spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
 .spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
+.spell-info-list ul {
+    flex-direction: row;
+    padding: 0;
+    gap: 10px;
+}
+.spell-info-list ul li {
+    width: auto;
+    margin: 0;
+    gap: 5px;
+    color: #999;
+}
+.spell-info-list ul li:last-child {
+    margin: 0;
+}
+.spell-levels-top:has(.spell-info-list) .spell-top-left {
+    width: calc(100% - 250px);
+}
+.spell-info-list ul li span {
+    font-weight: 500;
+    color: #333;
+}
 .words-count {background-color: #fff; border: 1px solid #e5e5e5; border-radius: 3px; min-width: 130px; text-align: center; min-height: 42px; display: inline-flex; align-items: center; justify-content: center; line-height: normal; color: #9b9b9b;}
 .words-count:hover {border-color: var(--primary); color: var(--primary);}
 .words-count:hover img {filter: invert(38%) sepia(72%) saturate(2691%) hue-rotate(221deg) brightness(100%) contrast(99%);}
