@@ -77,7 +77,9 @@
             <div class="spell-levels {{$spell_quiz_completed}}">
                 <div class="spell-levels-top">
                     <div class="spell-top-left">
-                        <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
+                        <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} 
+                            <!-- <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span> -->
+                        </h3>
                         <div class="spell-links font-14">
                         <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                             Practice Words
@@ -107,8 +109,8 @@
                     </div>
                     <div class="spell-top-right font-14">
                         <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>word(s)</a>
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>Practiced</a>
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>Mastered</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>12</span>Practiced</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>22</span>Mastered</a>
                     </div>
                 </div>
             </div>
