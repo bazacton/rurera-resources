@@ -108,9 +108,9 @@
                         @endif
                     </div>
                     <div class="spell-top-right font-14">
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>word(s)</a>
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>12</span>Practiced</a>
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>22</span>Mastered</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span class="font-18">{{$total_questions}}</span>word(s)</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span class="font-18">12</span>Practiced</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span class="font-18">22</span>Mastered</a>
                     </div>
                 </div>
             </div>
