@@ -2329,7 +2329,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-form-tabs .table tbody td a {color: #287eff; text-decoration: underline; }
 .db-form-tabs a.dropdown-toggle {border: 1px solid #287eff; border-radius: 2px; height: 16px; width: 16px; display: inline-flex; align-items: center; justify-content: center;}
 .totalChilds thead {background-color: rgba(0, 0, 0, 0.02); }
-.db-form-tabs .totalChilds thead th {border: 0 !important; color: #6c757d; text-transform: capitalize; text-align: center;}
+.db-form-tabs .totalChilds thead th {border: 0; color: #6c757d; text-transform: capitalize; text-align: center;}
 .db-form-tabs .totalChilds tbody td {border: 0; text-align: center;}
 .db-form-tabs .totalChilds thead th:first-child,
 .db-form-tabs .totalChilds tbody td:first-child {text-align: left;}
