@@ -185,18 +185,18 @@
                                     <input type="radio" name="ajax[new][assignment_topic_type]"
                                             class="assignemnet_types_selection" value="practice" checked>
                                     <span class="radio-btn"><i class="las la-check"></i>
-                                                                    <div class="card-icon">
-                                                                        <img src="/assets/default/img/assignment-logo/practice.png">
-                                                                        <h3>Courses</h3>
-                                                                    </div>
-                                                            </span>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
+                                                <h3>Courses</h3>
+                                            </div>
+                                    </span>
                                 </label>
                                 <label class="card-radio">
                                     <input type="radio" name="ajax[new][assignment_topic_type]"
                                             class="assignemnet_types_selection" value="tests">
                                     <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/sats.png">
+                                                        <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
                                                         <h3>Tests</h3>
                                                     </div>
                                             </span>
@@ -207,7 +207,7 @@
                                             class="assignemnet_types_selection" value="vocabulary">
                                     <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/vocabulary.png">
+                                                        <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
                                                         <h3>Vocabulary</h3>
                                                     </div>
 
@@ -219,7 +219,7 @@
                                             class="assignemnet_types_selection" value="timestables">
                                     <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/timestables.png">
+                                                        <img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables">
                                                         <h3>Timestables</h3>
                                                     </div>
 
@@ -231,7 +231,7 @@
                                         class="assignemnet_types_selection" value="book">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/books.png">
+                                                        <img src="/assets/default/img/assignment-logo/books.png" alt="books">
                                                         <h3>Book</h3>
                                                     </div>
 
@@ -242,7 +242,7 @@
                                         class="assignemnet_types_selection" value="assignment">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/practice.png">
+                                                        <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
                                                         <h3>Custom Assignment</h3>
                                                     </div>
                                                 </span>
@@ -264,7 +264,7 @@
                                         class="test_types_selection" value="sats" checked>
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                         <div class="card-icon">
-                                                            <img src="/assets/default/img/assignment-logo/sats.png">
+                                                            <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
                                                             <h3>SATs</h3>
                                                         </div>
                                                     </span>
@@ -274,7 +274,7 @@
                                         class="test_types_selection" value="11plus">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/11plus.png">
+                                                        <img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus">
                                                         <h3>11 Plus</h3>
                                                     </div>
 
@@ -285,7 +285,7 @@
                                         class="test_types_selection" value="independent_exams">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/independent-exams.png">
+                                                        <img src="/assets/default/img/assignment-logo/independent-exams.png" alt="independent-exams">
                                                         <h3>Independent Exams</h3>
                                                     </div>
 
@@ -297,7 +297,7 @@
                                         class="test_types_selection" value="iseb">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/iseb.png">
+                                                        <img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb">
                                                         <h3>ISEB</h3>
                                                     </div>
 
@@ -309,7 +309,7 @@
                                         class="test_types_selection" value="cat4">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                                     <div class="card-icon">
-                                                        <img src="/assets/default/img/assignment-logo/cat4.png">
+                                                        <img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4">
                                                         <h3>CAT 4</h3>
                                                     </div>
 
