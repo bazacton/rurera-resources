@@ -26,7 +26,7 @@
                             @if($courseObj->subject->icon_code != '')
                                 {!! $courseObj->subject->icon_code !!}
                         @else
-                            <img src="{!! $courseObj->subject->thumbnail !!}" width="50" height="50" alt="categories image">
+                            <img src="{!! $courseObj->subject->thumbnail !!}" width="50" height="50" alt="{{$courseObj->subject->getTitleAttribute()}}">
                         @endif
                         </div>
                         <div class="categories-text">
