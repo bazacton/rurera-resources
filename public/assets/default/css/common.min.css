@@ -496,11 +496,6 @@ a {
     background-color: #fff0
 }
 
-a,
-a:hover {
-    color: #343434
-}
-
 a:hover {
     text-decoration: underline
 }
