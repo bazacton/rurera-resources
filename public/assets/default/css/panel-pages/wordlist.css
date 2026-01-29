@@ -173,7 +173,7 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .words-count:hover {border-color: var(--primary); color: var(--primary);}
 .words-count:hover img {filter: invert(38%) sepia(72%) saturate(2691%) hue-rotate(221deg) brightness(100%) contrast(99%);}
-.words-count span {margin-right: 5px; color: #333;font-weight: 600;}
+.words-count span {margin-right: 5px;}
 .words-count:hover span {color: var(--primary);}
 .words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
 .spell-links {display: flex; gap: 15px 25px; align-items: center; margin-top: 5px;}
