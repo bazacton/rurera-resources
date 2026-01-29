@@ -406,30 +406,30 @@
                                         <label class="card-radio">
                                             <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                    <h3>Word Lists</h3>
-                                                                </div>
+                                                <div class="card-icon">
+                                                    <h3>Word Lists</h3>
+                                                </div>
 
-                                                            </span>
+                                            </span>
                                         </label>
 
                                         <label class="card-radio">
                                             <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Spelling Bee">
                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                    <h3>Spelling Bee</h3>
-                                                                </div>
+                                                <div class="card-icon">
+                                                    <h3>Spelling Bee</h3>
+                                                </div>
 
-                                                            </span>
+                                            </span>
                                         </label>
                                         <label class="card-radio">
                                             <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Syllabus">
                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                    <h3>Syllabus</h3>
-                                                                </div>
+                                                <div class="card-icon">
+                                                    <h3>Syllabus</h3>
+                                                </div>
 
-                                                            </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </div>
