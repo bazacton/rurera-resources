@@ -31,7 +31,7 @@
             </div>
         @endif
     </div>
-    <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm px-30 pt-10">
+    <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm">
         <table class="topics-table mt-0">
             <thead>
             <tr>
