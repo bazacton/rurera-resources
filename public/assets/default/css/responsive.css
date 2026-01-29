@@ -36,6 +36,11 @@ Lms Responsive Style Start
 
     .gallery-sub-header .masonry-grid-gallery {width: 50%; padding-right: 25px;}
     .gallery-sub-header .container > .row > [class*="col-"] {padding-right: 70px;}
+    .spells-table-inner {
+        overflow: hidden;
+        overflow-x: auto;
+        border-right: 1px solid #ececec;
+    }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
@@ -100,11 +105,7 @@ Lms Responsive Style Start
     .panel-content .education-icon-box li:nth-child(3) {left: -5px; top: 40px;}
     .panel-content .education-icon-box li:nth-child(2) {left: 0; top: 0;}
     .panel-content .education-icon-box li:nth-child(1) {left: -38px; top: 15px;}
-    .spells-table-inner {
-        overflow: hidden;
-        overflow-x: auto;
-        border-right: 1px solid #ececec;
-    }
+    
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
     /* .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);} */
