@@ -92,26 +92,3 @@
     </div>
 
 </div>
-
-<script>
-    $(document).on('change', '.performance-level-selection', function () {
-        var selectedLevel = $(this).val();
-
-        $('.listing-data-row').each(function () {
-            var rowLevel = $(this).data('level_type');
-
-            // Show all if "all" selected
-            if (selectedLevel === 'all') {
-                $(this).removeClass('rurera-hide');
-            }
-            // Match selected level
-            else if (rowLevel === selectedLevel) {
-                $(this).removeClass('rurera-hide');
-            }
-            // Hide others
-            else {
-                $(this).addClass('rurera-hide');
-            }
-        });
-    });
-</script>
