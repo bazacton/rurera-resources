@@ -35,7 +35,6 @@
         <table class="topics-table mt-0">
             <thead>
             <tr>
-                <th>Select</th>
                 <th>Topic</th>
                 <th>Smart Score</th>
                 <th>Last Activity</th>
@@ -53,8 +52,7 @@
                         $completion_title = ($smart_score > 79)? 'Excellent' : $completion_title;
                     @endphp
                     <tr class="listing-data-row" data-level_type="{{$completion_title}}" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
-                        <td data-th="Select"><input type="checkbox" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"></td>
-                        <td data-th="Topic">{{isset($listingObj->title)? $listingObj->title : '-'}}</td>
+                        <td data-th="Topic"> <input type="checkbox" id="check_{{isset($listingObj->id)? $listingObj->id : 0}}" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label></td>
                         <td data-th="Performance">
                             @if($smart_score > 0)
                                 {{$smart_score}}
