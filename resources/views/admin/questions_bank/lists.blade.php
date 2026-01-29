@@ -161,7 +161,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -180,7 +180,7 @@
                                 <option disabled selected>Subject</option>
                             </select>
                         </div>
-						
+
 						@error('subject_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -200,7 +200,7 @@
                                 <option value="">Please select year, subject</option>
                             </select>
                         </div>
-						
+
 						@error('chapter_id')
 						<div class="invalid-feedback">
 							{{ $message }}
@@ -215,13 +215,13 @@
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
                         <div class="select-holder">
-                            <select id="chapter_id"
+                            <select data-next_index="part_item_id" data-next_value="{{get_filter_request('part_item_id', 'questions_search')}}" id="chapter_id"
                                 class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
                                 name="sub_chapter_id">
                                 <option value="">Please select year, subject, Topic</option>
                             </select>
                         </div>
-						
+
 					@error('sub_chapter_id')
 					<div class="invalid-feedback">
 						{{ $message }}
@@ -231,6 +231,27 @@
 
 					</div>
 					</div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="input-label">Topic Part Items</label>
+                            <div class="select-holder">
+                                <select id="part_item_id"
+                                        class="form-control populate ajax-part-items-dropdown @error('part_item_id') is-invalid @enderror"
+                                        name="part_item_id">
+                                    <option value="">Please select year, subject, Topic, Sub Topic</option>
+                                </select>
+                            </div>
+
+                            @error('part_item_id')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+
+
+                        </div>
+                    </div>
 
 
 
@@ -249,7 +270,7 @@
                                     @endif
                                 </select>
                             </div>
-							
+
 						</div>
 					</div>
 
@@ -267,7 +288,7 @@
                                     @endif
                                 </select>
                             </div>
-							
+
                         </div>
                     </div>
 
@@ -284,7 +305,7 @@
                                     @endif
                                 </select>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -303,7 +324,7 @@
 
                                 </select>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -322,7 +343,7 @@
 
                                 </select>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -358,7 +379,7 @@
                                     </option>
                                 </select>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -634,9 +655,27 @@
 				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
 				success: function (return_data) {
 					$(".ajax-subchapter-dropdown").html(return_data);
+                    $('.ajax-subchapter-dropdown').change();
 				}
 			});
 		});
+
+        $(document).on('change', '.ajax-subchapter-dropdown', function () {
+            var sub_chapter_id = $(this).val();
+            var chapter_id  = $('.ajax-chapter-dropdown').val();
+            var subject_id  = $('.ajax-courses-dropdown').val();
+            var category_id  = $('.ajax-category-courses').val();
+            var part_item_id = $(this).attr('data-next_value');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/part_items_by_sub_chapters',
+                data: {'sub_chapter_id': sub_chapter_id, 'part_item_id': part_item_id, 'chapter_id': chapter_id, 'subject_id': subject_id, 'category_id': category_id},
+                success: function (return_data) {
+                    $(".ajax-part-items-dropdown").html(return_data);
+                }
+            });
+        });
+
         $(".ajax-category-courses").change();
 
 </script>
