@@ -76,7 +76,7 @@
                             <p class="font-14">Withdraw money securily to your bank account. Commision is $25 per transaction under $50,000</p>
                         </div>
                         <div class="withdraw-btn-holder">
-                            <a href="#" class="withdraw-btn font-14">Withdraw Money</a>
+                            <button type="button" class="withdraw-btn font-14" fdprocessedid="io4j7a">Withdraw Money</button>
                         </div>
                     </div>
                 </div>
