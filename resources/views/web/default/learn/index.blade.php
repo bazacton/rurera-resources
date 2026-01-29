@@ -42,11 +42,16 @@
                                 <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14" aria-label="Start Learning">Start Learning</a>
                             @endif
                             <span class="subject-info font-14 text-gray">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
-                            <div class="levels-progress horizontal">
+                            <div class="levels-progress horizontal"
+                                role="progressbar"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="0"
+                                aria-label="Course progress">
                                 <span class="progress-box">
                                     <span class="progress-count" style="width: 0%;"></span>
                                 </span>
-                                <span class="progress-numbers">0%</span>
+                                <span class="progress-numbers" aria-hidden="true">0%</span>
                             </div>
                         </div>
 
