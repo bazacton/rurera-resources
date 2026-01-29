@@ -298,6 +298,9 @@
     margin-top: 20px;
 }
 .select-topics .topics-table thead {position: sticky;top: 48px;z-index: 2;}
+.select-topics:has(.selected-topics.rurera-hide) .topics-table thead {
+    top: 0;
+}
 .select-topics .topics-table th,
 .select-topics .topics-table td {
     padding: 14px 20px;
