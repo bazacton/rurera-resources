@@ -87,7 +87,7 @@ Sub Pages Style
 .heatmap-select-option label {margin: 0 -1px 0 -1px; border-right: 1px solid rgb(186, 195, 202); padding: 5px 12px; cursor: pointer;}
 .heatmap-select-option input[type=radio]:checked + label {background-color: var(--primary); color: #fff;}
 .heatmap-select-option .select-field {margin-right: 10px; display: inline-flex; padding-left: 1px; border: 1px solid rgb(186, 195, 202); border-radius: 5px; overflow: hidden;}
-.heatmap-select-option strong {font-size: 18px; font-weight: 500; color: #333;}
+.heatmap-select-option strong {font-weight: 500; color: #333;}
 .heatmap-table {width: 100%;}
 .heatmap-table th, .heatmap-table td {text-align: center; vertical-align: middle; padding: 10px 12px;}
 .heatmap-table td {background-color: #fff; font-size:15px;}
