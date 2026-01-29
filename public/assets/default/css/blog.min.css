@@ -211,9 +211,6 @@
     display: inline-block;
     color: var(--primary);
 }
-.blog-single-post .rurera-blog.blog-medium {
-    min-height: 390px;
-}
 .blog-single-post .rurera-blog.blog-medium .blog-grid-image {
     height: 200px;
 }
