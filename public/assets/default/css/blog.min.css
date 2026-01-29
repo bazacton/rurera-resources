@@ -43,6 +43,9 @@
 .blog-medium .blog-grid-detail .blog-grid-title {
     font-size: 1.25rem;
 }
+.blog-medium .blog-grid-detail .blog-grid-title a {
+
+}
 .blog-single-post .post-show {
     border-right: 1px solid #ddd;
 }
@@ -330,7 +333,6 @@
 .blog-single-post .post-show ul {
     display: flex;
     flex-direction: column;
-    gap: 15px 0;
     padding-left: 15px;
     margin-bottom: 30px;
 }
