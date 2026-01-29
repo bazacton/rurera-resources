@@ -144,7 +144,7 @@
             </div>
             @endif
 
-            <div class="years-group populated-data rurera-hide remove-pending">
+            <div class="years-group populated-data rurera-hide remove-pending" aria-hidden="true">
                 <div class="form-group">
                     <div class="form-section mb-20 text-left 223">
                         <h2 class="section-title font-24">Select Type</h2>
