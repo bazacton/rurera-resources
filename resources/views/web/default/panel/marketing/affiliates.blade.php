@@ -24,6 +24,7 @@
                         <div class="referral-link text-right font-14 font-weight-500">
                             <input type="text" class="link-address text-left" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
                             <a href="javascript:;" class="link-btn js-copy" data-input="affiliate_url">Copy Link</a>
+                            <button type="button" class="link-btn js-copy" data-input="affiliate_url">Copy Link</button>
                         </div>
                     </div>
                 </div>
