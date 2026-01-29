@@ -65,7 +65,7 @@
                                                     <li><span>Reading Level :</span>{{$bookData->reading_level }}</li>
                                                     <li><span>Interest Area :</span>{{$bookData->interest_area }}</li>
                                                     <li><span>Pages :</span>{{$bookData->no_of_pages }}</li>
-                                                    <li><span>Points :</span>{{$bookData->reading_points }} <img src="../assets/default/svgs/coin-earn.svg" width="20" height="24" alt="coin-earn"/></li>
+                                                    <li><span>Points :</span>{{$bookData->reading_points }} <img src="/assets/default/svgs/coin-earn.svg" width="18" height="18" alt="coin-earn"/></li>
                                                 </ul>
                                             </div>
                                         </div>
