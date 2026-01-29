@@ -2179,9 +2179,6 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-members table {
     width: 100%;
 }
-.dashboard-students-holder .db-members .card .list-group-item {
-    border: 0;
-}
 .students-table thead {
     background-color: inherit;
     border-bottom: 2px solid #ddd;
