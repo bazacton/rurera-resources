@@ -778,36 +778,54 @@
             },
             callbacks: {
                 onPaste: function (e) {
-                    let clipboardData = (e.originalEvent || e).clipboardData;
-                    let html = clipboardData.getData('text/html');
-                    let text = clipboardData.getData('text/plain');
+                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+                    var bufferText = clipboardData.getData('Text');
 
                     e.preventDefault();
 
-                    let content = html || text;
+                    bufferText = bufferText
+                        // Dashes and hyphens
+                        .replace(/[–—−]/g, '-')
 
-                    // Remove Â characters
-                    content = content.replace(/Â/g, '');
+                        // Smart single quotes
+                        .replace(/[‘’]/g, "'")
 
-                    // Convert non-breaking spaces to normal spaces
-                    content = content.replace(/\u00A0/g, ' ');
+                        // Smart double quotes
+                        .replace(/[“”]/g, '"')
 
-                    // Create temp container
-                    let tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = content;
+                        // Ellipsis
+                        .replace(/…/g, '...')
 
-                    // 🔥 Remove all inline styles
-                    tempDiv.querySelectorAll('[style]').forEach(el => {
-                        el.removeAttribute('style');
-                    });
+                        // Bullets and list symbols
+                        .replace(/[•‣▪◦]/g, '-')
 
-                    // Optional: remove Google Docs specific attributes
-                    tempDiv.querySelectorAll('[class]').forEach(el => {
-                        el.removeAttribute('class');
-                    });
+                        // Non-breaking spaces
+                        .replace(/\u00A0/g, ' ')
 
-                    // Insert cleaned content
-                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
+                        // Special symbols
+                        .replace(/©/g, '(c)')
+                        .replace(/®/g, '(r)')
+                        .replace(/™/g, 'TM')
+                        .replace(/°/g, 'deg')
+                        .replace(/×/g, 'x')
+                        .replace(/÷/g, '/')
+
+                        // Arrows
+                        .replace(/→/g, '->')
+                        .replace(/←/g, '<-')
+                        .replace(/⇒/g, '=>')
+
+                        // Checkmarks and crosses
+                        .replace(/[✓✔]/g, 'Yes')
+                        .replace(/[✗✘]/g, 'No')
+
+                        // Remove emojis (basic range)
+                        .replace(/[\u{1F300}-\u{1F6FF}]/gu, '')
+
+                        // Normalize multiple spaces
+                        .replace(/\s{2,}/g, ' ');
+
+                    document.execCommand('insertText', false, bufferText);
                 }
             }
         });
