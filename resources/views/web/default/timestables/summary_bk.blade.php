@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12 col-lg-12 mx-auto">
                 <div class="heatmap-section-inner">
-                    <div class="heatmap-heading mb-30 pl-15 font-14">
+                    <div class="heatmap-heading mb-30 font-14">
                         <h2 class="font-weight-normal m-0 font-16 font-weight-bold mb-5">Average per Table</h2>
                         <span>How quickly correctly answers each table. Measured in second per question. Under 3s/q is considered to be automatic recall.</span>
                     </div>
@@ -71,7 +71,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="heatmap-heading mb-30 pl-15 font-14">
+                    <div class="heatmap-heading mb-30 font-14">
                         <h2 class="font-weight-bold m-0 font-16 mb-5">Heatmap</h2>
                         <span>How quickly {{ $authUser->get_full_name() }} correctly answers each indivdual questions</span>
                     </div>
