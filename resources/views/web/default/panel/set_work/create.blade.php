@@ -2033,6 +2033,16 @@
         });
 
     }
+
+    $(document).on('click', '.heatmap-type', function (e) {
+        var type_limit  = $(this).attr('data-type_limit');
+        if( type_limit == 12){
+            $(".above_12").hide();
+        }
+        if( type_limit == 20){
+            $(".above_12").show();
+        }
+    });
 </script>
 
 @endpush
