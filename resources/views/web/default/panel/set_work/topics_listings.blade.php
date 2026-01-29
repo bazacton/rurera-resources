@@ -21,33 +21,45 @@
         @if(!empty( $parentData))
             <div class="select-holder">
                 <select class="select">
-                    <option>All performance levels</option>
+                    <option value="all">All performance levels</option>
+                    <option value="Not Started">Not Started</option>
+                    <option value="Practice Needed">Practice Needed</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
                 </select>
             </div>
         @endif
     </div>
-    <div class="topics-table-holder lms-chapter-ul-outer table-sm">
+    <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm px-30 pt-10">
         <table class="topics-table">
             <thead>
             <tr>
                 <th>Select</th>
                 <th>Topic</th>
-                <th>Performance</th>
+                <th>Smart Score</th>
                 <th>Last seen</th>
             </tr>
             </thead>
             <tbody>
             @if(!empty($listingData))
                 @foreach($listingData as $listingObj)
-                    @php $performance = isset($listingObj->performance)? $listingObj->performance : 0; @endphp
-                    <tr class="listing-data-row" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
+                    @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
+
+                        $completion_title = 'Not Started';
+                        $completion_title = ($smart_score > 0)? 'Practice Needed' : $completion_title;
+                        $completion_title = ($smart_score > 39)? 'Good' : $completion_title;
+                        $completion_title = ($smart_score > 59)? 'Very Good' : $completion_title;
+                        $completion_title = ($smart_score > 79)? 'Excellent' : $completion_title;
+                    @endphp
+                    <tr class="listing-data-row" data-level_type="{{$completion_title}}" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
                         <td data-th="Select"><input type="checkbox" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"></td>
                         <td data-th="Topic">{{isset($listingObj->title)? $listingObj->title : '-'}}</td>
                         <td data-th="Performance">
-                            @if($performance > 0)
-                                {{$performance}}
+                            @if($smart_score > 0)
+                                {{$smart_score}}
                                 <div class="percent-holder">
-                                    <div class="chapter_percent circle-blue" data-percent="{{$performance}}">
+                                    <div class="chapter_percent circle-blue" data-percent="{{$smart_score}}">
                                         <div class="circle_inner">
                                             <div class="round_per"></div>
                                         </div>
