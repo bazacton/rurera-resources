@@ -74,13 +74,10 @@
                                     </li>';
             @endphp
             <!-- Spell Levels Listing Start -->
-            <div class="spell-levels {{$spell_quiz_completed}}">
+             <div class="spell-levels">
                 <div class="spell-levels-top">
                     <div class="spell-top-left">
-                        <h3 class="font-16 font-weight-bold">Words Start with A <span class="progress-star ">
-                            <img src="/assets/default/img/tick-white.png"></span>
-                        </h3>
-                        
+                        <h3 class="font-16 font-weight-bold">Words Start with A</h3>
                     </div>
                     <div class="spell-top-right font-14">
                         <div class="spell-info-list">
@@ -92,9 +89,12 @@
                         </div>
                     </div>
                 </div>
+             </div>
+            <div class="spell-levels {{$spell_quiz_completed}}">
+                
                 <div class="spell-levels-top">
                     <div class="spell-top-left">
-                        <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
+                        <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}}</h3>
                         <div class="spell-links font-14">
                         <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                             Practice Words
