@@ -74,27 +74,10 @@
                                     </li>';
             @endphp
             <!-- Spell Levels Listing Start -->
-             <div class="spell-levels">
-                <div class="spell-levels-top">
-                    <div class="spell-top-left">
-                        <h3 class="font-16 font-weight-bold">Words Start with A</h3>
-                    </div>
-                    <div class="spell-top-right font-14">
-                        <div class="spell-info-list">
-                            <ul class="font-14 d-flex align-items-center flex-wrape">
-                                <li><span>32</span> Words</li>
-                                <li><span>12</span> Practiced</li>
-                                <li><span>33</span> Mastered</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-             </div>
             <div class="spell-levels {{$spell_quiz_completed}}">
-                
                 <div class="spell-levels-top">
                     <div class="spell-top-left">
-                        <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}}</h3>
+                        <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
                         <div class="spell-links font-14">
                         <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                             Practice Words
@@ -123,7 +106,9 @@
                         @endif
                     </div>
                     <div class="spell-top-right font-14">
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><img src="/assets/default/img/skills-icon.png" alt=""><span>{{$total_questions}}</span>word(s)</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>word(s)</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>Practiced</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span>{{$total_questions}}</span>Mastered</a>
                     </div>
                 </div>
             </div>
