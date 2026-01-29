@@ -7,19 +7,19 @@
 @section('content')
     <section>
         <div class="section-title mb-15">
-            <h2 itemprop="name" class="font-22 mb-0">Referral program</h2>
+            <h2 class="font-22 mb-0">Referral program</h2>
         </div>
         <div class="referral-holder panel-border bg-white rounded-sm px-25 pt-25">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="referral-text mb-30">
-                        <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">How to use Referral Program</h3>
+                        <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5">How to use Referral Program</h3>
                         <p class="text-gray mb-15 font-14">Share your referral link with friends Or family. When someone signs up or makes a purchase using your link, you automatically earn rewards and commissions.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="referral-text mb-30">
-                        <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">Your Referral Link</h3>
+                        <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5">Your Referral Link</h3>
                         <p class="text-gray mb-15 font-14">Use this link to invite new users to Rurera. Each successful registration or purchase made through your referral link will be tracked and added to your account.</p>
                         <div class="referral-link text-right font-14 font-weight-500">
                             <input type="text" class="link-address text-left" name="affiliate_url" value="{{ $affiliateCode->getAffiliateUrl() }}">
@@ -72,7 +72,7 @@
                             <img src="/assets/default/img/withdraw-icon.png" alt="" height="30" width="30">
                         </div>
                         <div class="withdraw-text">
-                            <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5" itemprop="name">Withdraw Your Money to a Bank Account</h3>
+                            <h3 class="font-16 font-weight-bold text-dark-charcoal mb-5">Withdraw Your Money to a Bank Account</h3>
                             <p class="font-14">Withdraw money securily to your bank account. Commision is $25 per transaction under $50,000</p>
                         </div>
                         <div class="withdraw-btn-holder">
