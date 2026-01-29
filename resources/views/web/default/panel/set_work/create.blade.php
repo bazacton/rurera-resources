@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
 <link rel="stylesheet" href="/assets/default/css/css-stars.css">
 <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css">
+
+<link rel="stylesheet" href="/assets/default/css/panel-pages/timestable.css">
 @push('styles_top')
 <style>
     .wizard-steps{display:none;}
@@ -549,6 +551,11 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <div class="form-group rurera_common_hide_field timestables_heatmap">
+
+
+                        </div>
 
                         <div class="form-group rurera_common_hide_field timestables_modes_selection">
                             <label class="input-label">Timestables Mode</label>
@@ -1828,6 +1835,7 @@
         timestables_fields_array: [
             'timestables_type_fields',
             'timestables_modes_selection',
+            'timestables_heatmap',
         ],
         freedom_mode_fields_array: [
             'arthmetic_operations',
@@ -1889,6 +1897,21 @@
         });
 
         if(current_selected_type == 'timestables'){
+            var user_id = $(".assignment-user-class:checked").val();
+            var thisObj = $('.timestables_heatmap');
+            $(".timestables_heatmap").html('');
+            rurera_loader(thisObj, 'div');
+            jQuery.ajax({
+                type: "GET",
+                url: '/timestable/get_heatmap_layout',
+                data: {"user_id": user_id},
+                success: function (return_data) {
+                    rurera_remove_loader(thisObj, 'button');
+                    $(".timestables_heatmap").html(return_data);
+                }
+            });
+
+
 
             if($(".sub_types_selection").length > 0){
                 $('.sub_types_selection:checked').each(function () {
