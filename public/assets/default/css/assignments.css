@@ -300,7 +300,7 @@
 .select-topics .topics-table thead {position: sticky;top: 60px;z-index: 2;}
 .select-topics .topics-table th,
 .select-topics .topics-table td {
-    padding: 14px 10px;
+    padding: 14px 20px;
     text-align: left;
     border-bottom: 1px solid #eee;
     vertical-align: middle;
