@@ -13,7 +13,7 @@
                         <h2 class="font-weight-normal m-0 font-16 font-weight-bold mb-5">Average per Table</h2>
                         <span>How quickly correctly answers each table. Measured in second per question. Under 3s/q is considered to be automatic recall.</span>
                     </div>
-                    <div class="heatmap-table-boxes mb-30">
+                    <div class="heatmap-table-boxes mb-30 font-14">
                         <ul class="d-flex">
                             <li>
                                 <div class="heatmap-box">
