@@ -17,7 +17,7 @@
 @section('content')
 
 <div class="set-work-container lms-choose-membership">
-    <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation">
+    <form class="p-0" action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation">
         {{ csrf_field() }}
 
         <ul class="set-work-tagss text-left 223 rurera-hide remove-pending"></ul>
