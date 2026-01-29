@@ -21,7 +21,7 @@
 .card-radio input {display: none;}
 .card-radio input:checked + .radio-btn {background-color: #fff; border-color: var(--primary);}
 .radio-btn .card-icon h3 {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0; overflow: hidden;}
-.populated-data .input-label {font-size: 14px; color: #666; font-weight: 400;}
+.populated-data .input-label {font-size: .875rem; color: #666; font-weight: 500;}
 .populated-data .ui-widget.ui-widget-content {margin-top: 15px;}
 .populated-data .heatmap-range-slider .ui-slider.ui-widget-content {margin-top: 0; flex-basis: 82%; width: 82%;}
 .select2-container--default .select2-selection--single {background-color: #fdfdff; border-color: #e4e6fc; }
@@ -184,13 +184,16 @@
 /*Select Topic Style start*/
 .selected-topics {
     background: #dfeefe;
-    padding: 12px;
-    border-radius: 8px;
+    padding: 8px 15px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .selected-topics .count {
@@ -294,6 +297,7 @@
     border-collapse: collapse;
     margin-top: 20px;
 }
+.select-topics .topics-table thead {position: sticky;top: 60px;z-index: 2;}
 .select-topics .topics-table th,
 .select-topics .topics-table td {
     padding: 14px 10px;
