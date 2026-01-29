@@ -159,19 +159,19 @@ body .spell-question-area .question-label span {text-align: center;}
 .spell-info-list ul {
     flex-direction: row;
     padding: 0;
-    gap: 10px;
+    gap: 15px;
 }
 .spell-info-list ul li {
     width: auto;
     margin: 0;
-    gap: 5px;
+    gap: 6px;
     color: #999;
 }
 .spell-info-list ul li:last-child {
     margin: 0;
 }
 .spell-levels-top:has(.spell-info-list) .spell-top-left {
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
 }
 .spell-info-list ul li span {
     font-weight: 500;
