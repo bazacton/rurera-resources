@@ -24,7 +24,16 @@ Sub Pages Style
 .withdraw-btn-holder {flex: 0 0 140px; margin-left: auto;}
 .withdraw-text {flex: 0 0 60%;}
 .withdraw-text p {color: #656776;}
-.withdraw-card .withdraw-btn {background-color: var(--primary); border-radius: 3px; display: block; text-align: center; padding: 12px 10px; color: #fff;}
+.withdraw-card .withdraw-btn {
+    background-color: var(--primary);
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    padding: 12px 10px;
+    color: #fff;
+    border: 0;
+    line-height: normal;
+}
 .referral-price-card {
     border: 1px dashed;
     padding: 15px 15px;
