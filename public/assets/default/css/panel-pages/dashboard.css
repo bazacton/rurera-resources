@@ -2206,7 +2206,7 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
     display: table-row;
 }
 .db-form-tabs .students-table tbody td {
-    padding: 20px 15px 5px;
+    padding: 15px;
 }
 .dashboard-students-holder .db-form-tabs th h6 {
     color: #9e9ec5;
