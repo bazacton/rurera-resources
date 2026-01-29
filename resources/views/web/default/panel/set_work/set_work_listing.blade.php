@@ -7,17 +7,9 @@
                     <div class="card pt-0">
                         <div class="card-body">
                             <ul class="rurera-tabs-frontend set-work-ajax d-flex flex-wrap align-items-center">
-                                <button type="button" class="active font-weight-bold font-18 pb-10"
-                                role="tab" aria-selected="true" aria-controls="setwork-panel-active"
-                                id="setwork-tab-active" data-type="active">In progress</button>
-
-                                <button type="button" class="font-weight-bold font-18 pb-10"
-                                role="tab" aria-selected="false" aria-controls="setwork-panel-completed"
-                                id="setwork-tab-completed" data-type="completed">Completed</button>
-                                
-                                <button type="button" class="font-weight-bold font-18 pb-10"
-                                role="tab" aria-selected="false" aria-controls="setwork-panel-overdue"
-                                id="setwork-tab-overdue" data-type="expired">Overdue</button>
+                                <li class="active font-weight-bold font-18 pb-10" data-type="active">Inprogress</li>
+                                <li class="font-weight-bold font-18 pb-10" data-type="completed">Completed</li>
+                                <li class="font-weight-bold font-18 pb-10" data-type="expired">Overdue</li>
                                 
                             </ul>
 
