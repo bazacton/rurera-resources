@@ -9,6 +9,7 @@ Sub Pages Style
 .referral-text p {margin-bottom: 10px;}
 .referral-link .js-copy {
     background-color: var(--primary);
+    border: 0;
     color: #fff;
     padding: 0 10px;
     height: 36px;
