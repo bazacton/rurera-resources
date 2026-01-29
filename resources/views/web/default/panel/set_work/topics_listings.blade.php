@@ -20,7 +20,7 @@
 
         @if(!empty( $parentData))
             <div class="select-holder">
-                <select class="select">
+                <select class="select performance-level-selection">
                     <option value="all">All performance levels</option>
                     <option value="Not Started">Not Started</option>
                     <option value="Practice Needed">Practice Needed</option>
@@ -32,20 +32,20 @@
         @endif
     </div>
     <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm px-30 pt-10">
-        <table class="topics-table">
+        <table class="topics-table mt-0">
             <thead>
             <tr>
                 <th>Select</th>
                 <th>Topic</th>
                 <th>Smart Score</th>
-                <th>Last seen</th>
+                <th>Last Activity</th>
             </tr>
             </thead>
             <tbody>
             @if(!empty($listingData))
                 @foreach($listingData as $listingObj)
                     @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
-
+                        $last_activity = isset($listingObj->last_activity)? $listingObj->last_activity : '-';
                         $completion_title = 'Not Started';
                         $completion_title = ($smart_score > 0)? 'Practice Needed' : $completion_title;
                         $completion_title = ($smart_score > 39)? 'Good' : $completion_title;
@@ -70,8 +70,8 @@
                             @endif
                         </td>
                         <td data-th="Last seen">
-                            @if(isset($listingObj->last_attempt) && $listingObj->last_attempt > 0)
-                                {{ dateTimeFormat($listingObj->last_attempt, 'j M Y') }}
+                            @if(isset($last_activity) && $last_activity > 0)
+                                {{ dateTimeFormat($last_activity, 'j M Y') }}
                             @else
                                 -
                             @endif
@@ -92,3 +92,26 @@
     </div>
 
 </div>
+
+<script>
+    $(document).on('change', '.performance-level-selection', function () {
+        var selectedLevel = $(this).val();
+
+        $('.listing-data-row').each(function () {
+            var rowLevel = $(this).data('level_type');
+
+            // Show all if "all" selected
+            if (selectedLevel === 'all') {
+                $(this).removeClass('rurera-hide');
+            }
+            // Match selected level
+            else if (rowLevel === selectedLevel) {
+                $(this).removeClass('rurera-hide');
+            }
+            // Hide others
+            else {
+                $(this).addClass('rurera-hide');
+            }
+        });
+    });
+</script>
