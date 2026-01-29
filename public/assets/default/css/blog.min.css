@@ -340,3 +340,6 @@
 .cart-banner.single-post-subheader h1 {
     font-size: 45px;
 }
+.blog-single-post a {
+    color: #007bff;
+}
