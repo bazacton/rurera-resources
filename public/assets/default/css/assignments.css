@@ -311,6 +311,12 @@
     color: #333;
     background: #fff;
 }
+.select-topics .topics-table th:first-child {
+    border-radius: .625rem 0 0 0;
+}
+.select-topics .topics-table th:last-child {
+    border-radius: 0 .625rem 0 0;
+}
 .select-topics .topics-table tbody tr:hover {
     background: #f9fbff;
 }
