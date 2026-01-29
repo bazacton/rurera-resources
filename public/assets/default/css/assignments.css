@@ -184,7 +184,7 @@
 /*Select Topic Style start*/
 .selected-topics {
     background: #dfeefe;
-    padding: 8px 15px;
+    padding: 8px 20px;
     border-radius: 5px;
     display: flex;
     align-items: center;
