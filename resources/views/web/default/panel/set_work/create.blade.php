@@ -24,8 +24,8 @@
 
         <div class="wizard-steps active" data-step_id="1">
             <div class="wizard-steps-heading mb-30 text-left 223">
-                <h2 class="font-22 mb-5">Set Work</h2>
-                <p class="font-14">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
+                <h2 class="font-22 mb-10">Set Work</h2>
+                <p class="text-muted font-14">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
             </div>
             @if (auth()->check() && auth()->user()->isUser())
                 <div class="rurera-hide">
