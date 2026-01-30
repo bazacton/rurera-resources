@@ -109,9 +109,7 @@
             </div>
         </div>
 
-        <div class="mt-20 mt-md-50 pt-30">
-            {{ $blog->appends(request()->input())->links('vendor.pagination.panel') }}
-        </div>
+        {{ $blog->appends(request()->input())->links('vendor.pagination.panel') }}
 
     </section>
     <section class="lms-newsletter blog-newsletter mt-70">
