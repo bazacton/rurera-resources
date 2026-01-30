@@ -8,7 +8,7 @@
 .blog-single-post h2,
 .blog-single-post h3,
 .blog-single-post h4 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .rurera-blog {
     background-color: #ffffff;
@@ -411,7 +411,7 @@ outline-offset:-3px;
 }
 
 /* Single Post Accordions Style Start */
-.blog-single-post .card {background-color: #f7f7f7;margin: 0 0 15px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
+.blog-single-post .card {background-color: #f7f7f7;margin: 0 0 5px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
 .blog-single-post .card .card-header {
     background-color: inherit;
     text-align: left;
