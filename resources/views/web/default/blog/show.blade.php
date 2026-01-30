@@ -35,17 +35,17 @@
                     <div class="post-show pb-0">
 
                         <!-- ShareThis BEGINS -->
-                        <div class="sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
+                        <!-- <div class="sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
                             <span data-network="facebook"></span>
                             <span data-network="pinterest"></span>
                             <span data-network="whatsapp"></span>
                             <span data-network="email"></span>
-                        </div>
+                        </div> -->
                         <!-- ShareThis ENDS -->
 
                         
                         <!-- Share bar -->
-                        <div class="sharebar" role="group" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
+                        <div class="sharebar sharethis-share-buttons" role="group" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
                                 <div class="stat">
                                     <div class="stat__value stat__value--blue font-22">1.2k</div>
