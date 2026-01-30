@@ -471,3 +471,18 @@ outline-offset:-3px;
     transform: rotate(-135deg);
 }
 /* Single Post Accordions Style End */
+
+/* Table Default Style Start */
+.lms-blog table {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-collapse: separate;
+}
+.lms-blog table td {
+    border: 0;
+}
+.lms-blog tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+.lms-blog tbody tr:nth-child(even) {}
+/* Table Default Style End */
