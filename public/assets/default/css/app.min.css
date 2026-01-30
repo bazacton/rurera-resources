@@ -8122,7 +8122,8 @@ body .flipbook-data {
   margin: 0 1px;
   flex: 1 1;
 }
-.lms-faqs .card {
+.lms-faqs .card,
+.blog-single-post .card {
   background-color: inherit;
   border: 0;
   border-radius: 0;
@@ -8130,12 +8131,14 @@ body .flipbook-data {
   margin: 0 0 15px;
   padding: 0 0 15px;
 }
-.lms-faqs .card .card-header {
+.lms-faqs .card .card-header,
+.blog-single-post .card .card-header {
   background-color: inherit;
   padding: 0;
   border: 0;
 }
-.lms-faqs .card .card-header .btn-link {
+.lms-faqs .card .card-header .btn-link,
+.blog-single-post .card .card-header .btn-link {
   height: auto;
   padding: 0 35px 0 0;
   display: block;
@@ -8144,13 +8147,17 @@ body .flipbook-data {
   position: relative;
   transition: none;
 }
-.lms-faqs .card .card-header .btn-link h3 {
+.lms-faqs .card .card-header .btn-link h3,
+.blog-single-post .card .card-header .btn-link h5 {
   font-weight: 400;
   color: inherit;
   font-size: inherit;
 }
 .lms-faqs .card .card-header .btn-link:before,
-.lms-faqs .card .card-header .btn-link:after {
+.blog-single-post .card .card-header .btn-link:after,
+
+.lms-faqs .card .card-header .btn-link:before,
+.blog-single-post .card .card-header .btn-link:after{
   background-color: var(--primary);
   content: " ";
   display: block;
@@ -8163,31 +8170,40 @@ body .flipbook-data {
   transform: translateY(-50%) rotate(90deg);
   transition: transform 0.3s ease;
 }
-.lms-faqs .card .card-header .btn-link:after {
+.lms-faqs .card .card-header .btn-link:after,
+.blog-single-post .card .card-header .btn-link:after {
   transform: translateY(-50%) rotate(180deg);
 }
-.lms-faqs .card .card-header.active .btn-link:after {
+.lms-faqs .card .card-header.active .btn-link:after,
+.blog-single-post .card .card-header.active .btn-link:after {
   transform: translateY(-50%) rotate(0deg);
 }
-.lms-faqs .card .card-header.active .btn-link:before {
+.lms-faqs .card .card-header.active .btn-link:before,
+.blog-single-post .card .card-header.active .btn-link:before {
   display: none;
 }
 .accordion__icon--is-open:before {
   transform: translateY(-50%) rotate(180deg);
 }
 .lms-faqs .card .card-header .btn-link:focus,
-.lms-faqs .card .card-header .btn-link:hover {
+.blog-single-post .card .card-header .btn-link:hover,
+
+.lms-faqs .card .card-header .btn-link:focus,
+.blog-single-post .card .card-header .btn-link:hover{
   text-decoration: none;
 }
-.lms-faqs .card-body {
+.lms-faqs .card-body,
+.blog-single-post .card-body {
   padding-left: 0;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.lms-faqs .card-body p {
+.lms-faqs .card-body p,
+.blog-single-post .card-body p {
   margin: 0 0 5px;
 }
-.lms-faqs .card-body h5 {
+.lms-faqs .card-body h5,
+.blog-single-post .card-body h5 {
   font-weight: 700;
   font-size: 18px;
   margin: 0 0 5px;
