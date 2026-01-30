@@ -161,17 +161,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-post-block mb-50">
-                        <div class="post-inner">
-                            <ul class="order-list">
-                                <li><span>Why everybody needs a brand</span></li>
-                                <li><span>Find yor propostion, personality and purpose</span></li>
-                                <li><span>Freelancing tips: How you can usebrand propostion</span></li>
-                                <li><span>Useful resources for your Freelancing business</span></li>
-                                <li><span>Create a brand with value</span></li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="blog-newsletter text-center py-40">
                         <span class="icon-box">
                             <img src="../assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope image" height="800" width="800">
