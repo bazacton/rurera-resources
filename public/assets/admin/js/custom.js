@@ -762,7 +762,6 @@
             //height: $(".summernote-source").attr('data-height') ?? 250,
             height: null,
             minHeight: 150,
-            maxHeight: 400,
             fontNames: [],
             toolbar: [
                 ['style', ['style']],
@@ -778,12 +777,20 @@
             },
             callbacks: {
                 onPaste: function (e) {
-                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-                    var bufferText = clipboardData.getData('Text');
+
+                    let clipboardData = (e.originalEvent || e).clipboardData;
+                    let html = clipboardData.getData('text/html');
+                    let text = clipboardData.getData('text/plain');
 
                     e.preventDefault();
 
-                    bufferText = bufferText
+                    let content = html || text;
+
+// 🔥 Text normalization & cleanup
+                    content = content
+                        // Remove weird Â characters
+                        .replace(/Â/g, '')
+
                         // Dashes and hyphens
                         .replace(/[–—−]/g, '-')
 
@@ -823,9 +830,25 @@
                         .replace(/[\u{1F300}-\u{1F6FF}]/gu, '')
 
                         // Normalize multiple spaces
-                        .replace(/\s{2,}/g, ' ');
+                        .replace(/\s{2,}/g, ' ')
+                        .trim();
 
-                    document.execCommand('insertText', false, bufferText);
+// Create temp container
+                    let tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = content;
+
+// 🔥 Remove all inline styles
+                    tempDiv.querySelectorAll('[style]').forEach(el => {
+                        el.removeAttribute('style');
+                    });
+
+// Optional: remove Google Docs / Word classes
+                    tempDiv.querySelectorAll('[class]').forEach(el => {
+                        el.removeAttribute('class');
+                    });
+
+// Insert cleaned content
+                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
         });
