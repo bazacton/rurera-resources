@@ -114,7 +114,7 @@
                         @endif
                     </div>
                     <div class="spell-top-right font-12 font-weight-500">
-                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span class="font-16">{{$total_questions}}</span>word(s)</a>
+                        <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count" aria-label="View spelling list: {{$total_questions}} words"><span class="font-16" aria-hidden="true">{{$total_questions}}</span>word(s)</a>
                         <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span class="font-16">12</span>Practiced</a>
                         <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><span class="font-16">22</span>Mastered</a>
                     </div>
