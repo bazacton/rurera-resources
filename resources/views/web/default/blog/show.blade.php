@@ -96,7 +96,16 @@
                         ])
                     @endif
                     {{-- ./ post Comments --}}
-
+                    <div class="alert alert-warning" role="alert">
+                        <span class="info-icon">💡</span>
+                        <div class="text-box">
+                            <p>
+                                As the company grew, Bezos expanded Amazon's product offerings to include
+                                a wide range of items, including electronics, clothing, and home goods.
+                                Under Bezos' leadership
+                            </p>
+                        </div>
+                    </div>
                     <div class="row mb-15 mt-30">
                         <div class="col-12">
                             <div class="section-title mb-15">
