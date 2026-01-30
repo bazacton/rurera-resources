@@ -22,7 +22,7 @@
     <section class="mt-15 mb-60 lms-blog blog-single-post">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8 col-md-8">
+                <div class="col-12 col-lg-9 col-md-9">
                     
                     <div class="post-show pb-0">
                         <div class="post-image">
@@ -166,9 +166,9 @@
                     </div>
                 </div>
                 @if( !empty( $headings_array ) )
-					<div class="col-12 col-lg-4 col-md-4">
+					<div class="col-12 col-lg-3 col-md-3">
 						<div class="blog-sidebar">
-						   <h2 class="mb-20">Table of content</h2>
+						   <h2 class="mb-20 font-22">Table of content</h2>
 							<div class="single-post-nav mb-30">
 								<nav>
 									<ul>
