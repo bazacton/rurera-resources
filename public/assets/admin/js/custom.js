@@ -1113,9 +1113,9 @@
                 dataType: 'json',
                 data: {'title':title, 'html_content': html, 'template_id': template_id},
                 success: function (return_data) {
-                    $(".canned-templates-list").html(return_data.response);
+                    $(".canned-templates-list").html(return_data.response_data);
                     $(".canned-templates-content-area").html(return_data.response_content);
-                    $(".list-group").append(return_data.list_item);
+                    $(".list-group").html(return_data.list_items);
                     // Also refresh any open dropdowns next time user opens it
                     alert("Saved.");
                 }

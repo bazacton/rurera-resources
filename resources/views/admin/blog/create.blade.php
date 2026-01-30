@@ -748,8 +748,7 @@
 
         var list_data = '{!! $list_data !!}';
         function reset_templatest_list(){
-            console.log(list_data);
-            $(".canned-templates-list").html(list_data);
+            //$(".canned-templates-list").html(list_data);
         }
         reset_templatest_list();
     </script>
