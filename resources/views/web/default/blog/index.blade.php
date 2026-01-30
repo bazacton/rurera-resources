@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <section class="lms-categories-section pt-70">
+    <section class="lms-categories-section pt-0">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6">
