@@ -484,5 +484,7 @@ outline-offset:-3px;
 .lms-blog tbody tr:nth-child(odd) {
     background-color: #f7f7f7;
 }
-.lms-blog tbody tr:nth-child(even) {}
+.lms-blog tbody tr:nth-child(even) {
+    background-color: #fff;
+}
 /* Table Default Style End */
