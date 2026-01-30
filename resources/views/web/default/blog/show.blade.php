@@ -205,6 +205,7 @@
 @endsection
 
 @push('scripts_bottom')
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
     <script>
         var webinarDemoLang = '{{ trans('webinars.webinar_demo') }}';
         var replyLang = '{{ trans('panel.reply') }}';
