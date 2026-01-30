@@ -569,15 +569,13 @@ outline-offset:-3px;
   width: calc(100% - 18px);
 }
 /* completed link */
-.dates-card__completed{
+.dates-card__completed,
+.blog-single-post .dates-card__completed {
   display:inline-block;
   margin: 12px 0 14px;
   color:#c2c2c2;
   font-size:13px;
   text-decoration:none;
-}
-.dates-card__completed:hover{
-  text-decoration:underline;
 }
 /* add sub task input */
 .dates-card__add input{
