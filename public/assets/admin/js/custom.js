@@ -756,6 +756,112 @@
 			}
 		});
 
+
+
+        //Custom Button
+        function uid(prefix) {
+            return (prefix || "id") + "-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+        }
+
+        function escapeHtml(str) {
+            return String(str || "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function tryParseJSON(str) {
+            try { return JSON.parse(str); } catch (e) { return null; }
+        }
+
+        function makeRow(question, answer) {
+            var rowId = uid("faqrow");
+            return `
+      <div class="card mb-2" data-faq-row="${rowId}">
+        <div class="card-body">
+          <div class="form-group mb-2">
+            <label class="mb-1">Question</label>
+            <input type="text" class="form-control faq-q" value="${escapeHtml(question || "")}" placeholder="Enter question">
+          </div>
+          <div class="form-group mb-2">
+            <label class="mb-1">Answer</label>
+            <textarea class="form-control faq-a" rows="3" placeholder="Enter answer">${escapeHtml(answer || "")}</textarea>
+          </div>
+          <div class="text-right">
+            <button type="button" class="btn btn-sm btn-outline-danger faq-remove">Remove</button>
+          </div>
+        </div>
+      </div>
+    `;
+        }
+
+        function collectRows() {
+            var items = [];
+            $("#faqRows .card").each(function () {
+                var q = $(this).find(".faq-q").val().trim();
+                var a = $(this).find(".faq-a").val().trim();
+                if (q && a) items.push({ q: q, a: a });
+            });
+            return items;
+        }
+
+        function buildFaqHtml(title, items, existingBlockId) {
+            var blockId = existingBlockId || uid("rureraFaq");
+            var accId = uid("faqAccordion");
+
+            // Store JSON in attribute so we can reliably edit later.
+            var dataAttr = escapeHtml(JSON.stringify({ title: title || "", items: items }));
+
+            // Title can be optional
+            var titleHtml = title ? `<h2 class="mb-3">${escapeHtml(title)}</h2>` : "";
+
+            var cardsHtml = items.map(function (it, idx) {
+                var headingId = uid("faqHeading");
+                var collapseId = uid("faqCollapse");
+                var expanded = idx === 0 ? "true" : "false";
+                var show = idx === 0 ? " show" : "";
+                var collapsedBtn = idx === 0 ? "" : " collapsed";
+
+                return `
+        <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <div class="card-header" id="${headingId}">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-left w-100${collapsedBtn}" type="button"
+                data-toggle="collapse" data-target="#${collapseId}"
+                aria-expanded="${expanded}" aria-controls="${collapseId}">
+                <span itemprop="name">${escapeHtml(it.q)}</span>
+              </button>
+            </h5>
+          </div>
+          <div id="${collapseId}" class="collapse${show}" aria-labelledby="${headingId}" data-parent="#${accId}">
+            <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div itemprop="text">${escapeHtml(it.a).replace(/\n/g, "<br>")}</div>
+            </div>
+          </div>
+        </div>
+      `;
+            }).join("");
+
+            // contenteditable=false prevents users from accidentally breaking schema markup.
+            // They can still edit using the FAQs button.
+            return `
+      <div class="rurera-faq-block my-3"
+           data-rurera-faq="1"
+           data-faq-block-id="${blockId}"
+           data-faq-items="${dataAttr}"
+           contenteditable="false"
+           itemscope itemtype="https://schema.org/FAQPage">
+        ${titleHtml}
+        <div id="${accId}" class="accordion">
+          ${cardsHtml}
+        </div>
+      </div>
+      <p><br></p>
+    `;
+        }
+
         $(".summernote-source").summernote({
             dialogsInBody: true,
             tabsize: 2,
@@ -770,27 +876,77 @@
                 ['table', ['table']],
                 ['insert', ['link', 'picture']],
                 ['history', ['undo']],
-                ['view', ['codeview']] // 👈 Source / HTML view
+                ['view', ['codeview']], // 👈 comma was missing
+                ['custom', ['faqBuilder']]
             ],
             buttons: {
-                lfm: LFMButton
+                lfm: LFMButton,
+                faqBuilder: function (context) {
+                    var ui = $.summernote.ui;
+
+                    return ui.button({
+                        contents: '<i class="note-icon-question"></i> FAQs',
+                        tooltip: "Insert / Edit FAQs",
+                        click: function () {
+                            // Save current selection range so we can insert/replace later
+                            context.invoke("editor.saveRange");
+
+                            // Detect if caret is inside an existing FAQ block
+                            var $current = $(context.invoke("editor.getSelectedNode"));
+                            var $faqBlock = $current.closest('[data-rurera-faq="1"]');
+                            var isEditing = $faqBlock.length > 0;
+
+                            // Fill modal
+                            $("#faqRows").empty();
+                            $("#faqTitleInput").val("");
+                            $("#faqSaveBtn").text(isEditing ? "Update" : "Insert");
+
+                            // Keep references for save
+                            $("#faqBuilderModal").data("summernote-context", context);
+                            $("#faqBuilderModal").data("editing", isEditing);
+                            $("#faqBuilderModal").data("targetBlock", isEditing ? $faqBlock : null);
+
+                            if (isEditing) {
+                                var raw = $faqBlock.attr("data-faq-items") || "";
+                                var parsed = tryParseJSON(raw);
+                                if (!parsed) {
+                                    // if attribute got escaped, try to unescape minimal HTML entities
+                                    var unescaped = raw
+                                        .replace(/&quot;/g, '"')
+                                        .replace(/&#039;/g, "'")
+                                        .replace(/&lt;/g, "<")
+                                        .replace(/&gt;/g, ">")
+                                        .replace(/&amp;/g, "&");
+                                    parsed = tryParseJSON(unescaped);
+                                }
+
+                                if (parsed && parsed.items && parsed.items.length) {
+                                    $("#faqTitleInput").val(parsed.title || "");
+                                    parsed.items.forEach(function (it) {
+                                        $("#faqRows").append(makeRow(it.q, it.a));
+                                    });
+                                } else {
+                                    // fallback: start with one row
+                                    $("#faqRows").append(makeRow("", ""));
+                                }
+                            } else {
+                                // new insert: start with one row
+                                $("#faqRows").append(makeRow("", ""));
+                            }
+
+                            $("#faqBuilderModal").modal("show");
+                        }
+                    }).render();
+                }
             },
             callbacks: {
                 onPaste: function (e) {
-
-                    let clipboardData = (e.originalEvent || e).clipboardData;
-                    let html = clipboardData.getData('text/html');
-                    let text = clipboardData.getData('text/plain');
+                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+                    var bufferText = clipboardData.getData('Text');
 
                     e.preventDefault();
 
-                    let content = html || text;
-
-// 🔥 Text normalization & cleanup
-                    content = content
-                        // Remove weird Â characters
-                        .replace(/Â/g, '')
-
+                    bufferText = bufferText
                         // Dashes and hyphens
                         .replace(/[–—−]/g, '-')
 
@@ -830,28 +986,55 @@
                         .replace(/[\u{1F300}-\u{1F6FF}]/gu, '')
 
                         // Normalize multiple spaces
-                        .replace(/\s{2,}/g, ' ')
-                        .trim();
+                        .replace(/\s{2,}/g, ' ');
 
-// Create temp container
-                    let tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = content;
-
-// 🔥 Remove all inline styles
-                    tempDiv.querySelectorAll('[style]').forEach(el => {
-                        el.removeAttribute('style');
-                    });
-
-// Optional: remove Google Docs / Word classes
-                    tempDiv.querySelectorAll('[class]').forEach(el => {
-                        el.removeAttribute('class');
-                    });
-
-// Insert cleaned content
-                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
+                    document.execCommand('insertText', false, bufferText);
                 }
             }
         });
+
+        // --- Modal events ---
+        $(document).on("click", "#faqAddRowBtn", function () {
+            $("#faqRows").append(makeRow("", ""));
+        });
+
+        $(document).on("click", ".faq-remove", function () {
+            $(this).closest(".card").remove();
+        });
+
+        $(document).on("click", "#faqSaveBtn", function () {
+            var context = $("#faqBuilderModal").data("summernote-context");
+            var isEditing = $("#faqBuilderModal").data("editing");
+            var $targetBlock = $("#faqBuilderModal").data("targetBlock");
+
+            var title = $("#faqTitleInput").val().trim();
+            var items = collectRows();
+
+            if (!items.length) {
+                alert("Please add at least one FAQ with both a question and an answer.");
+                return;
+            }
+
+            // Restore selection (important if modal changed focus)
+            context.invoke("editor.restoreRange");
+            context.invoke("editor.focus");
+
+            if (isEditing && $targetBlock && $targetBlock.length) {
+                var existingId = $targetBlock.attr("data-faq-block-id") || uid("rureraFaq");
+                var html = buildFaqHtml(title, items, existingId);
+                $targetBlock[0].outerHTML = html; // replace whole block
+            } else {
+                var htmlNew = buildFaqHtml(title, items);
+                context.invoke("editor.pasteHTML", htmlNew);
+            }
+
+            $("#faqBuilderModal").modal("hide");
+        });
+
+        // --- Init: call this on your editor(s) ---
+        // Example:
+        // registerFaqButton($(".summernote"));
+
 
         var EquationButton = function (context) {
             var ui = $.summernote.ui;
