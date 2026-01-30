@@ -28,6 +28,10 @@
                         <div class="post-image">
                             <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                         </div>
+                        <div class="post-excerpt">
+                            {!! getBodyContent($post->description) !!}
+                        </div>
+
                         <!-- Share bar -->
                         <div class="sharebar mt-30" role="group" aria-label="Share statistics and actions">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
