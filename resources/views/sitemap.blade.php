@@ -5,6 +5,7 @@
 @if( $url == '')
 	@php continue; @endphp
 @endif
+
 <url>
 	<loc>{{$url}}</loc>
 	<lastmod>{{$params['lastmod']}}</lastmod>
