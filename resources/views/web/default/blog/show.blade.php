@@ -29,7 +29,7 @@
                             <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                         </div>
                         <!-- Share bar -->
-                        <div class="sharebar" role="group" aria-label="Share statistics and actions">
+                        <div class="sharebar mt-30" role="group" aria-label="Share statistics and actions">
                             <div class="sharebar__stats" aria-label="Engagement stats">
                                 <div class="stat">
                                 <div class="stat__value stat__value--blue">1.2k</div>
