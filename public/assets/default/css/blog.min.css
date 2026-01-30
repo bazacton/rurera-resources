@@ -334,9 +334,6 @@
     line-height:1.05;
 }
 .stat__value{
-    font-size:30px;
-    font-weight:800;
-    letter-spacing:-0.5px;
     color:#4b4b4b;
 }
 .stat__value--blue{
@@ -344,10 +341,7 @@
 }
 .stat__label{
     margin-top:4px;
-    font-size:11px;
-    font-weight:700;
     color:#9a9a9a;
-    letter-spacing:0.7px;
 }
 .sharebar__divider{
     width:1px;
@@ -428,8 +422,5 @@ outline-offset:-3px;
     background-color: #eb4d3f;
 }
 @media (max-width: 900px){
-.sharebar{ width:100%; }
-.btn{ min-width:auto; padding:0 14px; }
-.btn__text{ font-size:16px; }
-.stat__value{ font-size:26px; }
+    .sharebar{ width:100%; }
 }
