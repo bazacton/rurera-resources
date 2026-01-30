@@ -170,7 +170,7 @@
                     <li data-type="20">20</li>
                     <li data-type="30">30</li>
                 </ul>
-                <input type="text" name="no_of_questions" class="spell_no_of_questions_check rurera-hide" value="10">
+                <input type="hidden" name="no_of_questions" class="spell_no_of_questions_check rurera-hide" value="10">
             </div>
 
             <div class="spell-words-filters" data-spell_id="0" data-spell_type="">
