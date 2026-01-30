@@ -24,13 +24,13 @@
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
                     
-                    <div class="post-show pb-0 pr-50 mb-30">
+                    <div class="post-show pb-0 pr-50">
                         <div class="post-image">
                             <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                         </div>
 
                         {!! getBodyContent($post->content) !!}
-                    </div>
+                    
                     {{-- post Comments --}}
                     @if($post->enable_comment)
                         @include('web.default.includes.comments',[
@@ -41,7 +41,7 @@
                     @endif
                     {{-- ./ post Comments --}}
 
-                    <div class="row mb-50">
+                    <div class="row mb-50 mt-30">
                         <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
@@ -117,6 +117,7 @@
                             </div>
                             <span class="d-block text-right font-14 ">Don't worry, we don't spam</span>
                         </form>
+                    </div>
                     </div>
                 </div>
                 @if( !empty( $headings_array ) )
