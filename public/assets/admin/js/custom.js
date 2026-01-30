@@ -952,23 +952,7 @@
 
         // ------- Modal UI -------
         function renderList(selectedId) {
-            var items = loadItems();
-            var $list = $("#ceList");
-            $list.empty();
 
-            if (!items.length) {
-                $list.append('<div class="text-muted p-2">No canned elements yet.</div>');
-                return;
-            }
-
-            items.forEach(function (it) {
-                var active = (it.id === selectedId) ? " active" : "";
-                $list.append(
-                    '<button type="button" class="list-group-item list-group-item-action ce-item' + active + '" data-id="' + escapeHtml(it.id) + '">' +
-                    escapeHtml(it.title || "Untitled") +
-                    "</button>"
-                );
-            });
         }
 
         function clearForm() {
@@ -981,13 +965,14 @@
         function fillForm(item) {
             $("#ceId").val(item.id);
             $("#ceTitle").val(item.title || "");
-            $("#ceHtml").val(item.html || "");
+            $(".template_id").val(item.id || "");
+            $("#ceHtml").val(item.html_content || "");
             $("#ceDeleteBtn").prop("disabled", false);
         }
 
         function openManager() {
             clearForm();
-            renderList(null);
+            //renderList(null);
             $("#cannedElementsModal").modal("show");
         }
 
@@ -1023,8 +1008,9 @@
             // Remember last used context so dropdown clicks can insert into correct editor
             activeContext = context;
 
-            var $menu = $('<div class="dropdown-menu1"></div>');
+            var $menu = $('<div class="dropdown-menu1 canned-templates-list"></div>');
             rebuildDropdownMenu($menu);
+            reset_templatest_list();
 
             var $btn = ui.buttonGroup([
                 ui.button({
@@ -1035,6 +1021,7 @@
                     click: function () {
                         activeContext = context;
                         rebuildDropdownMenu($menu);
+                        reset_templatest_list();
                     }
                 }),
                 ui.dropdown({
@@ -1055,13 +1042,17 @@
         $(document).on("click", ".ce-insert", function (e) {
             e.preventDefault();
             var id = $(this).data("id");
-            var items = loadItems();
+
+            var html_content = $('.canned-templates-content[data-template_id="'+id+'"]').html();
+            activeContext.invoke("editor.focus");
+            activeContext.invoke("editor.pasteHTML", (html_content || "") + "<p><br></p>");
+
+            /*var items = loadItems();
             var found = items.find(function (x) { return x.id === id; });
             if (!found || !activeContext) return;
 
-            // Insert is editable (no contenteditable=false)
             activeContext.invoke("editor.focus");
-            activeContext.invoke("editor.pasteHTML", (found.html || "") + "<p><br></p>");
+            activeContext.invoke("editor.pasteHTML", (found.html || "") + "<p><br></p>");*/
         });
 
         // ------- Modal events -------
@@ -1073,10 +1064,10 @@
 
         $(document).on("click", ".ce-item", function () {
             var id = $(this).data("id");
-            var items = loadItems();
-            var found = items.find(function (x) { return x.id === id; });
-            if (!found) return;
-            fillForm(found);
+            var items = templates_items[id];
+            if (!items) return;
+            fillForm(items);
+
             renderList(id);
         });
 
@@ -1084,6 +1075,8 @@
             var id = $("#ceId").val().trim();
             var title = $("#ceTitle").val().trim();
             var html = $("#ceHtml").val();
+            var template_id = $(".template_id").val();
+
 
             if (!title) {
                 alert("Please enter a title.");
@@ -1109,8 +1102,24 @@
             renderList(id);
             $("#ceDeleteBtn").prop("disabled", false);
 
-            // Also refresh any open dropdowns next time user opens it
-            alert("Saved.");
+
+
+            $.ajax({
+                type: "POST",
+                url: '/admin/blog/save_canned_templates',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                dataType: 'json',
+                data: {'title':title, 'html_content': html, 'template_id': template_id},
+                success: function (return_data) {
+                    $(".canned-templates-list").html(return_data.response);
+                    $(".canned-templates-content-area").html(return_data.response_content);
+                    $(".list-group").append(return_data.list_item);
+                    // Also refresh any open dropdowns next time user opens it
+                    alert("Saved.");
+                }
+            });
         });
 
         $(document).on("click", "#ceDeleteBtn", function () {
