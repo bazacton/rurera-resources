@@ -8147,11 +8147,13 @@ body .flipbook-data {
   position: relative;
   transition: none;
 }
-.lms-faqs .card .card-header .btn-link h3,
-.blog-single-post .card .card-header .btn-link h5 {
+.lms-faqs .card .card-header .btn-link h3 {
   font-weight: 400;
   color: inherit;
   font-size: inherit;
+}
+.blog-single-post .card .card-header .btn-link {
+    font-weight: 600;
 }
 .lms-faqs .card .card-header .btn-link:before,
 .blog-single-post .card .card-header .btn-link:after,
