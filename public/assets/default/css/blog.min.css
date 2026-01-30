@@ -30,6 +30,7 @@
 .rurera-blog.blog-medium .blog-grid-image {
     width: 100%;
     margin-bottom: 15px;
+    max-height: 180px;
 }
 .rurera-blog.blog-medium .blog-grid-image .img-lg {
     max-width: 100%;
