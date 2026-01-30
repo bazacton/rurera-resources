@@ -232,6 +232,50 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <!-- FAQ Builder Modal (Bootstrap 4) -->
+    <div class="modal fade" id="faqBuilderModal" tabindex="-1" role="dialog" aria-labelledby="faqBuilderTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="faqBuilderTitle">Insert / Edit FAQs</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label class="font-weight-bold mb-2">Title (optional)</label>
+                        <input type="text" class="form-control" id="faqTitleInput" placeholder="Frequently Asked Questions">
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <label class="font-weight-bold mb-0">FAQs</label>
+                        <button type="button" class="btn btn-sm btn-primary" id="faqAddRowBtn">+ Add FAQ</button>
+                    </div>
+
+                    <div id="faqRows"></div>
+
+                    <small class="text-muted d-block mt-2">
+                        Tip: To edit an existing FAQ block, click inside it in the editor and press the FAQs button again.
+                    </small>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" id="faqSaveBtn">Insert</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
