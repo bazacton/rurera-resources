@@ -1,12 +1,14 @@
 .sharebar,
 .single-post-block,
 .blog-single-post .post-show > p,
-.blog-single-post h2,
-.blog-single-post h3,
-.blog-single-post h4,
 .blog-single-post ul,
 .lms-blog table {
     margin-bottom: 30px;
+}
+.blog-single-post h2,
+.blog-single-post h3,
+.blog-single-post h4 {
+    margin-bottom: 15px;
 }
 .rurera-blog {
     background-color: #ffffff;
