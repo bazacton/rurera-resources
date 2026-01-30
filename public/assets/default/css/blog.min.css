@@ -46,7 +46,7 @@
 .blog-single-post .post-show br {
     display: none;
 }
-.post-show p {
+.post-show > p {
     margin-top: 25px;
 }
 .blog-single-post .post-show p {
@@ -434,3 +434,7 @@ outline-offset:-3px;
 @media (max-width: 900px){
     .sharebar{ width:100%; }
 }
+
+/* Single Post Accordions Style Start */
+.blog-single-post {}
+/* Single Post Accordions Style End */
