@@ -500,12 +500,13 @@ outline-offset:-3px;
 }
 .dates-diary .badge {
     position: absolute;
-    top: -14px;
+    top: -15px;
     left: 30px;
-    background-color: #ffbf49;
+    background-color: #ffab00;
     border-radius: 3px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 6px 15px;
     line-height: normal;
+    font-size: .85rem;
 }
 /* Dates-Diary Style End */
