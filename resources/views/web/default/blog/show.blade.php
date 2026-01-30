@@ -133,7 +133,7 @@
 
                             <label class="list-item">
                                 <input type="checkbox" />
-                                <span class="task-text strong">Lucilius vituperata his an</span>
+                                <span class="list-text strong">Lucilius vituperata his an</span>
                             </label>
 
                             <label class="list-item">
