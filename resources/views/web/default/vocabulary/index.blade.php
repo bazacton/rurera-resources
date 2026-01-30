@@ -81,9 +81,9 @@
                             <!-- <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span> -->
                         </h3>
                         <div class="spell-links font-14">
-                        <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
+                        <button class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                             Practice Words
-                        </a>
+                        </button>
                         <button type="button" class="spell-popup-btn1 rurera-tooltip dropup text-gray">
                             <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
                             <div class="lms-tooltip dropdown-menu">
