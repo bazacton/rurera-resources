@@ -9,11 +9,11 @@
 							<div class="widget-title"><h2>Company</h2></div>
 							<div class="widget-body">
 								<ul>
-									<li><a itemprop="url" href="/about-us">About Us</a></li>
-									<li><a itemprop="url" href="/blog">Blog</a></li>
-									<li><a itemprop="url" href="/careers">Careers</a></li>
-									<li><a itemprop="url" href="/testimonials">Testimonials</a></li>
-									<li><a itemprop="url" href="/contact-us">Contact Us</a></li>
+									<li><a href="/about-us">About Us</a></li>
+									<li><a href="/blog">Blog</a></li>
+									<li><a href="/careers">Careers</a></li>
+									<li><a href="/testimonials">Testimonials</a></li>
+									<li><a href="/contact-us">Contact Us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -23,12 +23,10 @@
 							<div class="widget-title"><h2>What We Offer</h2></div>
 							<div class="widget-body">
 								<ul>
-									<li><a itemprop="url" href="/keystage1">KS1 Courses</a></li>
-									<li><a itemprop="url" href="/keystage2">KS2 Courses</a></li>
-									<li><a itemprop="url" href="/11-plus">11+ Exams</a></li>
-									<li><a itemprop="url" href="/timestables">TimeTables</a></li>
-									<li><a itemprop="url" href="/books-shelf">Books Reading</a></li>
-									<li><a itemprop="url" href="/spelling">Spells/Vocabulary</a></li>
+									<li><a href="/11-plus">11+ Exams</a></li>
+									<li><a href="/timestables">TimeTables</a></li>
+									<li><a href="/books-shelf">Books Reading</a></li>
+									<li><a href="/spelling">Spells/Vocabulary</a></li>
 								</ul>
 							</div>
 						</div>
