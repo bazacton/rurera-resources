@@ -27,7 +27,7 @@
         </div>
     </section>
     
-    <section class="mt-15 mb-60 lms-blog blog-single-post">
+    <section class="mt-15 mb-60 lms-blog blog-single-post mt-50">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
@@ -35,7 +35,7 @@
 
 
                         <!-- Share bar -->
-                        <div class="sharebar mt-30" role="group" aria-label="Share statistics and actions">
+                        <div class="sharebar" role="group" aria-label="Share statistics and actions">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
                                 <div class="stat">
                                     <div class="stat__value stat__value--blue font-22">1.2k</div>
