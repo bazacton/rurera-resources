@@ -40,9 +40,6 @@
 .blog-medium .blog-grid-detail {
     padding: 0 20px;
 }
-.blog-single-post .post-show {
-    border-right: 1px solid #ddd;
-}
 .blog-single-post .post-show br {
     display: none;
 }
@@ -65,7 +62,9 @@
     position: -webkit-sticky;
     position: sticky;
     top: 70px;
-    margin-top: -5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px 15px;
 }
 .single-post-nav ul {
     display: flex;
