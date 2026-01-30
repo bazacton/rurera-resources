@@ -517,6 +517,7 @@ outline-offset:-3px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 0 15px;
 }
 .dates-diary__meta {
     color: #a9a9a9;
@@ -536,5 +537,14 @@ outline-offset:-3px;
 }
 .icon-btn:last-child{
   color:#bdbdbd;
+}
+.dates-diary__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.dates-diary__image {
+    height: 120px;
 }
 /* Dates-Diary Style End */
