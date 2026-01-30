@@ -49,7 +49,7 @@
                                     <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                                     <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">19 Sep 2023</span>
                                     </span>
-                                    <h2 class="blog-grid-title mt-10" itemprop="headline">
+                                    <h2 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
                                     <a href="/blog/personalized-learning-with-educational-technology-a-game-changer-in-education" itemprop="url">2 Ways to Boost Learning and SATs Success with Rurera</a>
                                     </h2>
                                 </div>
@@ -65,7 +65,7 @@
                                     <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                                     <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">27 Apr 2023</span>
                                     </span>
-                                    <h2 class="blog-grid-title mt-10" itemprop="headline">
+                                    <h2 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
                                     <a href="/blog/navigating-the-rurera-reward-redemption-process-for-11-exams-and-more" itemprop="url">Experience realistic 11+ mock exams designed to simulate act</a>
                                     </h2>
                                 </div>
@@ -81,7 +81,7 @@
                                         <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                                         <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">28 Apr 2023</span>
                                     </span>
-                                    <h2 class="blog-grid-title mt-10" itemprop="headline">
+                                    <h2 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
                                         <a href="/blog/elevating-education-exploring-the-future-of-learning-for-year-6-students" itemprop="url">How to Explore the Future of Learning for Year 6 Students.</a>
                                     </h2>
                                 </div>
