@@ -370,11 +370,13 @@
 }
 .btn--fb{ background:#3f5e9a; }
 .btn--x { background:#3a3a3a; }
-
 .sharebar .btn--share{
     min-width: 50px;
     padding: 0;
     background: #dcdcdc;
+}
+.btn--share img {
+    filter: invert(100%) sepia(0%) saturate(886%) hue-rotate(83deg) brightness(120%) contrast(100%);
 }
 .btn:hover{ filter:brightness(0.95); }
 .btn:focus-visible{
