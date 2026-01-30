@@ -106,6 +106,9 @@
                             </p>
                         </div>
                     </div>
+                    <div class="dates-diary mb-30">
+                        <span class="badge">Works</span>
+                    </div>
                     <div class="row mb-15">
                         <div class="col-12">
                             <div class="section-title mb-15">
