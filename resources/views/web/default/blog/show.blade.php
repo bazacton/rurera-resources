@@ -180,14 +180,6 @@
 									</ul>
 								</nav>
 							</div>
-                            <div class="share-links">
-                                <h2 class="mb-20">Share Article</h2>
-                                <ul>
-                                    <li><a href="#"><img src="/assets/default/svgs/instagram-blog.svg"  height="150" width="150" alt="instagram"></a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/linkedin-blog.svg"  height="2500" width="2500" alt="linkedin"></a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/tiktok-blog.svg"  height="150" width="150" alt="tiktok"></a></li>
-                                </ul>
-                            </div>
 						</div>
 					</div>
 				@endif
