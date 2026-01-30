@@ -212,4 +212,11 @@
     </script>
 
     <script src="/assets/default/js/parts/comment.min.js"></script>
+    <script>
+        document.querySelectorAll('.btn--share').forEach(btn => {
+            btn.addEventListener('click', function () {
+            this.closest('.sharebar').classList.toggle('active');
+            });
+        });
+    </script>
 @endpush
