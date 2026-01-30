@@ -52,9 +52,6 @@
 .post-show p:empty {
     display: none;
 }
-.post-show p a {
-    color: var(--primary);
-}
 .blog-single-post .post-show > div {
     line-height: 26px;
 }
