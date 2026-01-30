@@ -337,7 +337,7 @@
                                     This HTML will be inserted and remain editable in Summernote.
                                 </small>
                             </div>
-                            <input type="text" name="template_id" class="template_id" value="0">
+                            <input type="hidden" name="template_id" class="template_id" value="0">
 
                             <div class="d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-danger" id="ceDeleteBtn" disabled>Delete</button>
