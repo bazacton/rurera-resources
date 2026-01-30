@@ -51,12 +51,6 @@
                                 <a itemprop="url" href="/blog">Grammar Schools</a>
                             </h2>
                             <p>Clear guidance on grammar school entry.</p>
-                            <div class="categories-tags">
-                                <a href="/blog">Visual Editor</a>
-                                <a href="/blog">Paywall System</a>
-                                <a href="/blog">Pay Writer</a>
-                                <a href="/blog">Pay-To-Submit</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,12 +62,6 @@
                                 <a itemprop="url" href="/blog">Entrance Exams</a>
                             </h2>
                             <p>Everything you need to know about selective school exams, including the 11+.</p>
-                            <div class="categories-tags">
-                                <a href="/blog">Visual Editor</a>
-                                <a href="/blog">Paywall System</a>
-                                <a href="/blog">Pay Writer</a>
-                                <a href="/blog">Pay-To-Submit</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,12 +73,6 @@
                                 <a itemprop="url" href="/blog">Parents’ Guides</a>
                             </h2>
                             <p>Practical advice for parents beyond the school syllabus.</p>
-                            <div class="categories-tags">
-                                <a href="/blog">Visual Editor</a>
-                                <a href="/blog">Paywall System</a>
-                                <a href="/blog">Pay Writer</a>
-                                <a href="/blog">Pay-To-Submit</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,12 +84,6 @@
                                 <a itemprop="url" href="/blog">Learning</a>
                             </h2>
                             <p>Year-by-year learning support (Year 3–6 and beyond).</p>
-                            <div class="categories-tags">
-                                <a href="/blog">Visual Editor</a>
-                                <a href="/blog">Paywall System</a>
-                                <a href="/blog">Pay Writer</a>
-                                <a href="/blog">Pay-To-Submit</a>
-                            </div>
                         </div>
                     </div>
                 </div>
