@@ -20,8 +20,8 @@
                                 <div class="col-12 col-lg-8 col-md-8 mx-auto">
                                     <div class="cell-inner text-center">
                                         <h1 class="font-72 mb-15"><span class="text-scribble">Blog</span></h1>
-                                        <p class="mb-50 font-19">Discover and explore the world through words where thoughts and imagination come to Life. Catch up on the latest news, success stories and more..</p>
-                                        <form class="w-75 mx-auto">
+                                        <p class="mb-0 font-19">Discover and explore the world through words where thoughts and imagination come to Life. Catch up on the latest news, success stories and more..</p>
+                                        <form class="w-75 mx-auto rurera-hide">
                                             <div class="field-holder has-icon d-flex">
                                                 <span class="search-icon">
                                                     <img src="../assets/default/svgs/search.svg" alt="default search" title="default search" width="24" height="24" loading="eager">
