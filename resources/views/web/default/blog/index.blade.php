@@ -119,7 +119,7 @@
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="section-title mb-15">
-                    <h2 class="mb-0 font-40">Latest posts</h2>
+                    <h2 class="mb-0 font-22">Latest posts</h2>
                 </div>
             </div>
             <div class="col-12 col-lg-12">
