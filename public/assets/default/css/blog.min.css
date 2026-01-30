@@ -467,3 +467,21 @@ outline-offset:-3px;
     background-color: #fff;
 }
 /* Table Default Style End */
+
+/* Blog Single Post Alert Style Start */
+.blog-single-post .alert {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #ffefcf;
+    border-color: #ffd98d;
+    border-radius: 5px;
+    padding: 25px;
+}
+.blog-single-post .alert .info-icon {
+    margin-right: 10px;
+}
+.blog-single-post .alert .text-box {
+    width: calc(100% - 30px);
+}
+/* Blog Single Post Alert Style End */
