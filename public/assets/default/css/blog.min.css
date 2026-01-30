@@ -291,8 +291,6 @@
 .categories-grid .categories-detail {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    min-height: 250px;
 }
 .blog-single-post .post-show h1 {
     font-size: 24px;
