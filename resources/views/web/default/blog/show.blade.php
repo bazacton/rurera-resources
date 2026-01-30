@@ -118,10 +118,10 @@
                         <div class="dates-diary__image">
                             <img src="/store/1/default_images/blogs/blog-29.jpg" alt="blog-29">
                         </div>
-                        <div class="dates-card__list">
+                        <div class="dates-card__list font-14">
                             <label class="list-item">
                                 <input type="checkbox" />
-                                <span class="list-text strong">Lucilius vituperata his an</span>
+                                <span class="list-text">Lucilius vituperata his an</span>
                             </label>
 
                             <label class="list-item">
@@ -133,7 +133,7 @@
 
                             <label class="list-item">
                                 <input type="checkbox" />
-                                <span class="list-text strong">Lucilius vituperata his an</span>
+                                <span class="list-text">Lucilius vituperata his an</span>
                             </label>
 
                             <label class="list-item">
