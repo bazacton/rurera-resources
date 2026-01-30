@@ -32,20 +32,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
-                    <div class="post-show pb-0">
-
-                        <!-- ShareThis BEGINS -->
-                        <div class="sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
-                            <span data-network="facebook"></span>
-                            <span data-network="pinterest"></span>
-                            <span data-network="whatsapp"></span>
-                            <span data-network="email"></span>
-                        </div>
-                        <!-- ShareThis ENDS -->
-
-                        
+                    <div class="post-show pb-0">                        
                         <!-- Share bar -->
-                        <div class="sharebar" role="group" aria-label="Share statistics and actions">
+                        <div class="sharebar" role="group" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
                                 <div class="stat">
                                     <div class="stat__value stat__value--blue font-22">1.2k</div>
@@ -61,7 +50,7 @@
                             <div class="sharebar__divider" aria-hidden="true"></div>
 
                             <a class="btn btn--fb" href="#" aria-label="Share on Facebook">
-                                <span class="btn__icon" aria-hidden="true">
+                                <span class="btn__icon" aria-hidden="true" data-network="facebook">
                                     <img src="/assets/default/svgs/facebook2.svg" alt="facebook2">
                                 </span>
                                 <span class="btn__text">Share on Facebook</span>
@@ -74,9 +63,9 @@
                                 <span class="btn__text">Share on Twitter</span>
                             </a>
                             <div class="share-secondary">
-                                <a href="#" class="btn-pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></a>
-                                <a href="#" class="btn-whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></a>
-                                <a href="#" class="btn-email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                                <a href="#" class="btn-pinterest" data-network="pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></a>
+                                <a href="#" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></a>
+                                <a href="#" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
                             </div>
                             <button class="btn btn--share" type="button" aria-label="More share options">
                                 <span class="btn__icon" aria-hidden="true">
