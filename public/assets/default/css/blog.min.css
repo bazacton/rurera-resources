@@ -568,4 +568,30 @@ outline-offset:-3px;
   line-height:1.25;
   width: calc(100% - 18px);
 }
+/* completed link */
+.dates-card__completed{
+  display:inline-block;
+  margin: 12px 0 14px;
+  color:#c2c2c2;
+  font-size:13px;
+  text-decoration:none;
+}
+.dates-card__completed:hover{
+  text-decoration:underline;
+}
+/* add sub task input */
+.dates-card__add input{
+  width:100%;
+  padding: 12px 12px;
+  border:1px solid #efefef;
+  background:#fbfbfb;
+  color:#9a9a9a;
+  border-radius:2px;
+  outline:none;
+}
+.dates-card__add input::placeholder{
+  color:#c8c8c8;
+  text-transform: lowercase;
+  letter-spacing:.2px;
+}
 /* Dates-Diary Style End */
