@@ -118,6 +118,31 @@
                         <div class="dates-diary__image">
                             <img src="/store/1/default_images/blogs/blog-29.jpg" alt="blog-29">
                         </div>
+                        <div class="dates-card__list">
+                            <label class="list-item">
+                                <input type="checkbox" />
+                                <span class="list-text strong">Lucilius vituperata his an</span>
+                            </label>
+
+                            <label class="list-item">
+                                <input type="checkbox" />
+                                <span class="list-text">
+                                    Et ludus homero voluptatibus vis mea scripta malorum at.
+                                </span>
+                            </label>
+
+                            <label class="list-item">
+                                <input type="checkbox" />
+                                <span class="task-text strong">Lucilius vituperata his an</span>
+                            </label>
+
+                            <label class="list-item">
+                                <input type="checkbox" />
+                                <span class="list-text">
+                                    Et ludus homero voluptatibus vis mea scripta malorum at.
+                                </span>
+                            </label>
+                        </div>
                     </div>
                     <div class="row mb-15">
                         <div class="col-12">
