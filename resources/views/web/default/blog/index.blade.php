@@ -48,9 +48,9 @@
                         <div class="categories-detail">
                             <h2 class="categories-title" itemprop="headline">
                                 <span>For</span>
-                                <a itemprop="url" href="/blog">Writers</a>
+                                <a itemprop="url" href="/blog">Grammar Schools</a>
                             </h2>
-                            <p>Publish your story your way with a complete set of tools</p>
+                            <p>Clear guidance on grammar school entry.</p>
                             <div class="categories-tags">
                                 <a href="/blog">Visual Editor</a>
                                 <a href="/blog">Paywall System</a>
@@ -65,9 +65,9 @@
                         <div class="categories-detail">
                             <h2 class="categories-title" itemprop="headline">
                                 <span>For</span>
-                                <a itemprop="url" href="/blog">Agencies</a>
+                                <a itemprop="url" href="/blog">Entrance Exams</a>
                             </h2>
-                            <p>Accelerate your project development to the next level.</p>
+                            <p>Everything you need to know about selective school exams, including the 11+.</p>
                             <div class="categories-tags">
                                 <a href="/blog">Visual Editor</a>
                                 <a href="/blog">Paywall System</a>
@@ -82,9 +82,9 @@
                         <div class="categories-detail">
                             <h2 class="categories-title" itemprop="headline">
                                 <span>For</span>
-                                <a itemprop="url" href="/blog">Marketers</a>
+                                <a itemprop="url" href="/blog">Parents’ Guides</a>
                             </h2>
-                            <p>Generate Leads & conversion the themes to the customers</p>
+                            <p>Practical advice for parents beyond the school syllabus.</p>
                             <div class="categories-tags">
                                 <a href="/blog">Visual Editor</a>
                                 <a href="/blog">Paywall System</a>
@@ -99,9 +99,9 @@
                         <div class="categories-detail">
                             <h2 class="categories-title" itemprop="headline">
                                 <span>For</span>
-                                <a itemprop="url" href="/blog">Creators</a>
+                                <a itemprop="url" href="/blog">Learning</a>
                             </h2>
-                            <p>Make content Convert Traffic with personalize website.</p>
+                            <p>Year-by-year learning support (Year 3–6 and beyond).</p>
                             <div class="categories-tags">
                                 <a href="/blog">Visual Editor</a>
                                 <a href="/blog">Paywall System</a>
