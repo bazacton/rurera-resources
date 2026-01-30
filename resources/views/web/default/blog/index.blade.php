@@ -19,8 +19,8 @@
                             <div class="row">
                                 <div class="col-12 col-lg-8 col-md-8 mx-auto">
                                     <div class="cell-inner text-center">
-                                        <h1 class="font-72 mb-15"><span class="text-scribble">Blogs</span></h1>
-                                        <p class="mb-0 font-19">Discover and explore the world through words where thoughts and imagination come to Life. Catch up on the latest news, success stories and more..</p>
+                                        <h1 class="font-72 mb-15">Your Guide<br /> to Learning <br /> Success</h1>
+                                        <p class="mb-0 font-19">Helping parents and students learn and prepare with confidence.</p>
                                         <form class="w-75 mx-auto rurera-hide">
                                             <div class="field-holder has-icon d-flex">
                                                 <span class="search-icon">
