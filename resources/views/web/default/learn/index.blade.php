@@ -39,7 +39,7 @@
                                     </span>
                                 </div>
                             @else
-                                <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14" aria-label="Start Learning">Start Learning</a>
+                                <a href="/{{$courseObj->subject->slug}}/{{$categoryObj->slug}}" class="learning-btn font-14" aria-label="Start learning Science for Year 7">Start Learning</a>
                             @endif
                             <span class="subject-info font-14 text-gray">{{$courseObj->subject->chapters->count()}} Units and {{$courseObj->subject->webinar_sub_chapters->count()}} Lessons</span>
                             <div class="levels-progress horizontal"
