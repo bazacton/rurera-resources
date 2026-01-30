@@ -278,6 +278,13 @@
 
 
     <!-- Canned Elements Manager Modal (Bootstrap 4.2) -->
+    <div class="canned-templates-content-area rurera-hide">
+        @if($cannedTemplates->count() > 0)
+            @foreach($cannedTemplates as $cannedTemplateObj)
+                <div class="rurera-hide canned-templates-content" data-template_id="{{$cannedTemplateObj->id}}">{!! $cannedTemplateObj->html_content !!}</div>
+            @endforeach
+        @endif
+    </div>
     <div class="modal fade" id="cannedElementsModal" tabindex="-1" role="dialog" aria-labelledby="cannedElementsTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -299,7 +306,15 @@
                                 <button type="button" class="btn btn-sm btn-primary" id="ceNewBtn">+ New</button>
                             </div>
 
-                            <div class="list-group" id="ceList" style="max-height: 380px; overflow:auto;"></div>
+                            <div class="list-group" id="ceList" style="max-height: 380px; overflow:auto;">
+                                @if($cannedTemplates->count() > 0)
+                                    @foreach($cannedTemplates as $cannedTemplateObj)
+                                        <button type="button" class="list-group-item list-group-item-action ce-item" data-id="{{$cannedTemplateObj->id}}">{{$cannedTemplateObj->title}}</button>
+                                    @endforeach
+                                @endif
+
+
+                            </div>
 
                             <small class="text-muted d-block mt-2">
                                 Click an item to edit. Use toolbar dropdown to insert into editor.
@@ -322,6 +337,7 @@
                                     This HTML will be inserted and remain editable in Summernote.
                                 </small>
                             </div>
+                            <input type="text" name="template_id" class="template_id" value="0">
 
                             <div class="d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-danger" id="ceDeleteBtn" disabled>Delete</button>
@@ -344,4 +360,27 @@
 
 @push('scripts_bottom')
     <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
+    <script>
+
+
+        var templates_items = {};
+
+        @if($cannedTemplates->count() > 0)
+            @foreach($cannedTemplates as $cannedTemplateObj)
+            templates_items[{{ $cannedTemplateObj->id }}] = {
+                id: {{ $cannedTemplateObj->id }},
+                title: @json($cannedTemplateObj->title),
+                html_content: @json($cannedTemplateObj->html_content)
+            };
+        @endforeach
+        @endif
+
+
+        var list_data = '{!! $list_data !!}';
+        function reset_templatest_list(){
+            console.log(list_data);
+            $(".canned-templates-list").html(list_data);
+        }
+        reset_templatest_list();
+    </script>
 @endpush
