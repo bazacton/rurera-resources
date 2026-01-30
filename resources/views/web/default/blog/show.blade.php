@@ -82,6 +82,11 @@
                     {{-- ./ post Comments --}}
 
                     <div class="row mb-15 mt-30">
+                        <div class="col-12">
+                            <div class="section-title mb-15">
+                                <h2 class="mb-0 font-22">Related posts</h2>
+                            </div>
+                        </div>
                         <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
