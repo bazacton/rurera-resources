@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
-                    <div class="post-show pb-0">
+                    <div class="post-show pb-0 pr-30">
 
                         <!-- ShareThis BEGINS -->
                         <!-- <div class="sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
