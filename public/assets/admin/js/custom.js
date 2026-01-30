@@ -926,6 +926,207 @@
             $("#faqBuilderModal").modal("show");
         });
 
+
+
+
+        // Canced Responses
+
+        var STORAGE_KEY = "rurera_canned_elements_v1";
+        var activeContext = null; // last summernote context used
+
+
+        function loadItems() {
+            try {
+                var raw = localStorage.getItem(STORAGE_KEY);
+                var data = raw ? JSON.parse(raw) : [];
+                return Array.isArray(data) ? data : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function saveItems(items) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+        }
+
+
+        // ------- Modal UI -------
+        function renderList(selectedId) {
+            var items = loadItems();
+            var $list = $("#ceList");
+            $list.empty();
+
+            if (!items.length) {
+                $list.append('<div class="text-muted p-2">No canned elements yet.</div>');
+                return;
+            }
+
+            items.forEach(function (it) {
+                var active = (it.id === selectedId) ? " active" : "";
+                $list.append(
+                    '<button type="button" class="list-group-item list-group-item-action ce-item' + active + '" data-id="' + escapeHtml(it.id) + '">' +
+                    escapeHtml(it.title || "Untitled") +
+                    "</button>"
+                );
+            });
+        }
+
+        function clearForm() {
+            $("#ceId").val("");
+            $("#ceTitle").val("");
+            $("#ceHtml").val("");
+            $("#ceDeleteBtn").prop("disabled", true);
+        }
+
+        function fillForm(item) {
+            $("#ceId").val(item.id);
+            $("#ceTitle").val(item.title || "");
+            $("#ceHtml").val(item.html || "");
+            $("#ceDeleteBtn").prop("disabled", false);
+        }
+
+        function openManager() {
+            clearForm();
+            renderList(null);
+            $("#cannedElementsModal").modal("show");
+        }
+
+        // ------- Toolbar dropdown rendering -------
+        function rebuildDropdownMenu($menu) {
+            var items = loadItems();
+            $menu.empty();
+
+            // Manage link
+            $menu.append(
+                '<a class="dropdown-item ce-manage" href="javascript:void(0)">Manage canned elements…</a>' +
+                '<div class="dropdown-divider"></div>'
+            );
+
+            if (!items.length) {
+                $menu.append('<span class="dropdown-item text-muted">No items yet</span>');
+                return;
+            }
+
+            items.forEach(function (it) {
+                $menu.append(
+                    '<a class="dropdown-item ce-insert" href="javascript:void(0)" data-id="' + escapeHtml(it.id) + '">' +
+                    escapeHtml(it.title || "Untitled") +
+                    "</a>"
+                );
+            });
+        }
+
+        // ------- Summernote button -------
+        function cannedElementsButton(context) {
+            var ui = $.summernote.ui;
+
+            // Remember last used context so dropdown clicks can insert into correct editor
+            activeContext = context;
+
+            var $menu = $('<div class="dropdown-menu1"></div>');
+            rebuildDropdownMenu($menu);
+
+            var $btn = ui.buttonGroup([
+                ui.button({
+                    className: "dropdown-toggle",
+                    contents: '<i class="note-icon-menu"></i> Canned <span class="caret"></span>',
+                    tooltip: "Canned elements",
+                    data: { toggle: "dropdown" },
+                    click: function () {
+                        activeContext = context;
+                        rebuildDropdownMenu($menu);
+                    }
+                }),
+                ui.dropdown({
+                    className: "note-dropdown-menu",
+                    contents: $menu[0].outerHTML
+                })
+            ]).render();
+
+            return $btn;
+        }
+
+        // ------- Global click handlers (dropdown actions) -------
+        $(document).on("click", ".ce-manage", function (e) {
+            e.preventDefault();
+            openManager();
+        });
+
+        $(document).on("click", ".ce-insert", function (e) {
+            e.preventDefault();
+            var id = $(this).data("id");
+            var items = loadItems();
+            var found = items.find(function (x) { return x.id === id; });
+            if (!found || !activeContext) return;
+
+            // Insert is editable (no contenteditable=false)
+            activeContext.invoke("editor.focus");
+            activeContext.invoke("editor.pasteHTML", (found.html || "") + "<p><br></p>");
+        });
+
+        // ------- Modal events -------
+        $(document).on("click", "#ceNewBtn", function () {
+            clearForm();
+            $("#ceTitle").focus();
+            renderList(null);
+        });
+
+        $(document).on("click", ".ce-item", function () {
+            var id = $(this).data("id");
+            var items = loadItems();
+            var found = items.find(function (x) { return x.id === id; });
+            if (!found) return;
+            fillForm(found);
+            renderList(id);
+        });
+
+        $(document).on("click", "#ceSaveBtn", function () {
+            var id = $("#ceId").val().trim();
+            var title = $("#ceTitle").val().trim();
+            var html = $("#ceHtml").val();
+
+            if (!title) {
+                alert("Please enter a title.");
+                return;
+            }
+            if (!html || !html.trim()) {
+                alert("Please enter HTML.");
+                return;
+            }
+
+            var items = loadItems();
+
+            if (!id) {
+                id = uid();
+                items.unshift({ id: id, title: title, html: html });
+            } else {
+                var idx = items.findIndex(function (x) { return x.id === id; });
+                if (idx >= 0) items[idx] = { id: id, title: title, html: html };
+                else items.unshift({ id: id, title: title, html: html });
+            }
+
+            saveItems(items);
+            renderList(id);
+            $("#ceDeleteBtn").prop("disabled", false);
+
+            // Also refresh any open dropdowns next time user opens it
+            alert("Saved.");
+        });
+
+        $(document).on("click", "#ceDeleteBtn", function () {
+            var id = $("#ceId").val().trim();
+            if (!id) return;
+
+            if (!confirm("Delete this canned element?")) return;
+
+            var items = loadItems().filter(function (x) { return x.id !== id; });
+            saveItems(items);
+            clearForm();
+            renderList(null);
+        });
+
+
+
         $(".summernote-source").summernote({
             dialogsInBody: true,
             tabsize: 2,
@@ -941,10 +1142,11 @@
                 ['insert', ['link', 'picture']],
                 ['history', ['undo']],
                 ['view', ['codeview']], // 👈 comma was missing
-                ['custom', ['faqBuilder']]
+                ['custom', ['faqBuilder', 'cannedElements']]
             ],
             buttons: {
                 lfm: LFMButton,
+                cannedElements: cannedElementsButton,
                 faqBuilder: function (context) {
                     var ui = $.summernote.ui;
 

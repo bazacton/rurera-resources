@@ -109,7 +109,7 @@
                                                             @endforeach
                                                         </select>
                                                     </div>
-                                                    
+
 
                                                     @error('category_id')
                                                     <div class="invalid-feedback">
@@ -234,8 +234,6 @@
     </section>
 
 
-
-
     <!-- FAQ Builder Modal (Bootstrap 4) -->
     <div class="modal fade" id="faqBuilderModal" tabindex="-1" role="dialog" aria-labelledby="faqBuilderTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -276,6 +274,72 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- Canned Elements Manager Modal (Bootstrap 4.2) -->
+    <div class="modal fade" id="cannedElementsModal" tabindex="-1" role="dialog" aria-labelledby="cannedElementsTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cannedElementsTitle">Canned Elements</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+
+                        <!-- Left: list -->
+                        <div class="col-md-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <strong>Saved</strong>
+                                <button type="button" class="btn btn-sm btn-primary" id="ceNewBtn">+ New</button>
+                            </div>
+
+                            <div class="list-group" id="ceList" style="max-height: 380px; overflow:auto;"></div>
+
+                            <small class="text-muted d-block mt-2">
+                                Click an item to edit. Use toolbar dropdown to insert into editor.
+                            </small>
+                        </div>
+
+                        <!-- Right: editor -->
+                        <div class="col-md-8">
+                            <input type="hidden" id="ceId">
+
+                            <div class="form-group">
+                                <label class="font-weight-bold">Title</label>
+                                <input type="text" class="form-control" id="ceTitle" placeholder="e.g., Newsletter Block">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="font-weight-bold">HTML</label>
+                                <textarea class="form-control" id="ceHtml" rows="10" placeholder="<div>...</div>"></textarea>
+                                <small class="text-muted">
+                                    This HTML will be inserted and remain editable in Summernote.
+                                </small>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-outline-danger" id="ceDeleteBtn" disabled>Delete</button>
+                                <div>
+                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success" id="ceSaveBtn">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 @endsection
 
 @push('scripts_bottom')
