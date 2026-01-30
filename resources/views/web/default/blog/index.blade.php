@@ -19,7 +19,7 @@
                             <div class="row">
                                 <div class="col-12 col-lg-8 col-md-8">
                                     <div class="cell-inner">
-                                        <h1 class="font-72 mb-15">Your Guide to Learning <br /> Success</h1>
+                                        <h1 class="font-72 mb-15">Your Guide to <br /> Learning Success</h1>
                                         <p class="mb-0 font-19">Helping parents and students learn and prepare with confidence.</p>
                                         <form class="w-75 mx-auto rurera-hide">
                                             <div class="field-holder has-icon d-flex">
