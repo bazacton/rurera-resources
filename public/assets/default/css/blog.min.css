@@ -450,6 +450,7 @@ outline-offset:-3px;
     height: auto;
     font-weight: 700;
     position: relative;
+    text-decoration: none;
 }
 .card-body {
     padding: 0 15px 15px;
