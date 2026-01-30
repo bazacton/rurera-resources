@@ -8,11 +8,16 @@
     <section class="cart-banner position-relative single-post-subheader">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-12">
+                <div class="col-12 col-md-8 col-lg-8">
                     <a href="/blog" itemprop="url" class="post-back-btn font-18 font-weight-normal">Back to blog</a>
                     <h1 class="font-weight-bold my-20">{{ $post->title }}</h1>
                     <div class="post-date">
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="img-box">
+                        <img src="/media/428977/What Year are KS1.png" class="img-cover img-lg" alt="KS1" loading="eager">
                     </div>
                 </div>
             </div>
