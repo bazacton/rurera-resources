@@ -276,6 +276,7 @@
 }
 .categories-grid {
     padding: 25px;
+    height: 100%;
 }
 .categories-grid .categories-title span {
     display: block;
