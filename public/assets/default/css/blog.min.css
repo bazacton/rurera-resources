@@ -547,4 +547,34 @@ outline-offset:-3px;
 .dates-diary__image {
     height: 120px;
 }
+/* list items */
+.dates-card__list{
+  border-top:1px solid #f0f0f0;
+  margin-top: 6px;
+}
+
+.list-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding: 14px 2px;
+  border-bottom:1px solid #f0f0f0;
+}
+
+.list-item input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  accent-color:#cfcfcf;
+}
+
+.list-text{
+  color:#7a7a7a;
+  font-size:14px;
+  line-height:1.25;
+}
+
+.list-text.strong{
+  color:#5f5f5f;
+  font-weight:700;
+}
 /* Dates-Diary Style End */
