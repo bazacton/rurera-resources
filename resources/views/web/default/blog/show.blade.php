@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-12 col-lg-8 col-md-8">
                     
-                    <div class="post-show pb-0 pr-50">
+                    <div class="post-show pb-0">
                         <div class="post-image">
                             <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                         </div>
