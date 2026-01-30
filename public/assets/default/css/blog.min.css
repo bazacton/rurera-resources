@@ -478,6 +478,9 @@ outline-offset:-3px;
     border-radius: 5px;
     border-collapse: separate;
 }
+.lms-blog thead td {
+    font-weight: 700;
+}
 .lms-blog table td {
     border: 0;
 }
