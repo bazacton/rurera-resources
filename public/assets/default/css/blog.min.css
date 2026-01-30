@@ -288,13 +288,13 @@
     margin-bottom: 30px;
     gap: 10px;
 }
-.cart-banner.single-post-subheader {
+.single-post-subheader {
     background-color: #fafafa;
     min-height: 400px;
     display: flex;
     align-items: center;
 }
-.cart-banner.single-post-subheader h1 {
+.single-post-subheader h1 {
     font-size: 45px;
 }
 .blog-single-post a {
