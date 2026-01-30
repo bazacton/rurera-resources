@@ -11,6 +11,9 @@
                 <div class="col-12 col-md-8 col-lg-8">
                     <a href="/blog" itemprop="url" class="post-back-btn font-18 font-weight-normal">Back to blog</a>
                     <h1 class="font-weight-bold my-20">{{ $post->title }}</h1>
+                    <div class="post-excerpt">
+                        {!! getBodyContent($post->description) !!}
+                    </div>
                     <div class="post-date">
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
                     </div>
@@ -29,9 +32,7 @@
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
                     <div class="post-show pb-0">
-                        <div class="post-excerpt">
-                            {!! getBodyContent($post->description) !!}
-                        </div>
+
 
                         <!-- Share bar -->
                         <div class="sharebar mt-30" role="group" aria-label="Share statistics and actions">
