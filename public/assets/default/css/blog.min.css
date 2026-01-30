@@ -391,6 +391,13 @@
 outline:3px solid #1a73e8;
 outline-offset:-3px;
 }
+.sharebar .btn img {
+    height: 24px;
+    width: 24px;
+}
+.btn--fb img {
+    filter: invert(100%) sepia(0%) saturate(886%) hue-rotate(83deg) brightness(120%) contrast(100%);
+}
 .share-secondary {
     display: none;
 }
