@@ -73,7 +73,7 @@
                                 </span>
                                 <span class="btn__text">Share on Twitter</span>
                             </a>
-                            <div class="share-secondary sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
+                            <div class="share-secondary">
                                 <a href="#" class="btn-pinterest" data-network="pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></a>
                                 <a href="#" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></a>
                                 <a href="#" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
