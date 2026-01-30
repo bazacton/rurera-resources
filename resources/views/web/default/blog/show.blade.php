@@ -143,6 +143,10 @@
                                 </span>
                             </label>
                         </div>
+                        <a class="dates-card__completed" href="#">View completed task (5)</a>
+                        <div class="dates-card__add">
+                            <input type="text" placeholder="add sub task" />
+                        </div>
                     </div>
                     <div class="row mb-15">
                         <div class="col-12">
