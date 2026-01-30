@@ -564,7 +564,7 @@ outline-offset:-3px;
 }
 .list-text{
   color:#5f5f5f;
-  font-weight:700;
+  font-weight:500;
   line-height:1.25;
   width: calc(100% - 18px);
 }
