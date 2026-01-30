@@ -49,11 +49,6 @@
 .post-show p {
     margin-top: 25px;
 }
-.post-show img {
-    border-radius: 15px;
-    max-width: 100% !important;
-    object-fit: cover;
-}
 .blog-single-post .post-show p {
     font-size: 16px;
 }
