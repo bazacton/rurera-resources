@@ -71,9 +71,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    max-height: 300px;
-    overflow: hidden;
-    overflow-y: auto;
 }
 /* ===== Scrollbar CSS ===== */
 .single-post-nav ul::-webkit-scrollbar-track
