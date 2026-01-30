@@ -474,6 +474,7 @@ outline-offset:-3px;
 
 /* Table Default Style Start */
 .lms-blog table {
+    color: inherit;
     border: 1px solid #ddd;
     border-radius: 5px;
     border-collapse: separate;
