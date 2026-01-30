@@ -278,9 +278,6 @@
     padding: 25px;
     height: 100%;
 }
-.categories-grid .categories-detail p {
-    margin-bottom: 15px;
-}
 .categories-grid .categories-title span {
     display: block;
     font-weight: 400;
@@ -296,21 +293,6 @@
     flex-direction: column;
     height: 100%;
     min-height: 250px;
-}
-.categories-tags {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.categories-tags a {
-    background-color: #fff;
-    display: inline-block;
-    line-height: normal;
-    padding: 4px 10px;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: 500;
 }
 .blog-single-post .post-show h1 {
     font-size: 24px;
