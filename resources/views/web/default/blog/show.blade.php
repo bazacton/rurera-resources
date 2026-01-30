@@ -9,7 +9,7 @@
     <section class="position-relative single-post-subheader py-70">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 col-lg-8">
+                <div class="col-12 col-md-7 col-lg-7">
                     <a href="/blog" itemprop="url" class="post-back-btn font-18 font-weight-normal">Back to blog</a>
                     <h1 class="font-weight-bold my-20">{{ $post->title }}</h1>
                     <div class="post-excerpt">
@@ -19,7 +19,7 @@
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-12 col-lg-4 col-md-4 ml-auto">
                     <div class="img-box">
                         <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                     </div>
