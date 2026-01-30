@@ -490,3 +490,22 @@ outline-offset:-3px;
     width: calc(100% - 50px);
 }
 /* Blog Single Post Alert Style End */
+/* Dates-Diary Style Start */
+.dates-diary {
+    width: 33%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+    min-height: 150px;
+    border-radius: 5px;
+}
+.dates-diary .badge {
+    position: absolute;
+    top: -14px;
+    left: 30px;
+    background-color: #ffbf49;
+    border-radius: 3px;
+    color: #fff;
+    padding: 5px 10px;
+    line-height: normal;
+}
+/* Dates-Diary Style End */
