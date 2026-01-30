@@ -32,13 +32,13 @@
                         <div class="sharebar mt-30" role="group" aria-label="Share statistics and actions">
                             <div class="sharebar__stats" aria-label="Engagement stats">
                                 <div class="stat">
-                                <div class="stat__value stat__value--blue">1.2k</div>
-                                <div class="stat__label">SHARES</div>
+                                    <div class="stat__value stat__value--blue">1.2k</div>
+                                    <div class="stat__label">SHARES</div>
                                 </div>
 
                                 <div class="stat">
-                                <div class="stat__value">6.4k</div>
-                                <div class="stat__label">VIEWS</div>
+                                    <div class="stat__value">6.4k</div>
+                                    <div class="stat__label">VIEWS</div>
                                 </div>
                             </div>
 
@@ -46,34 +46,25 @@
 
                             <a class="btn btn--fb" href="#" aria-label="Share on Facebook">
                                 <span class="btn__icon" aria-hidden="true">
-                                <!-- Facebook icon (simple) -->
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                    <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/>
-                                </svg>
+                                    <img src="/assets/default/svgs/facebook2.svg" alt="facebook2">
                                 </span>
                                 <span class="btn__text">Share on Facebook</span>
                             </a>
 
                             <a class="btn btn--x" href="#" aria-label="Share on Twitter">
                                 <span class="btn__icon" aria-hidden="true">
-                                <!-- X icon (simple) -->
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                    <path d="M18.9 3H21l-6.6 7.6L22 21h-6.2l-4.9-6.1L5.6 21H3l7.1-8.1L2 3h6.3l4.4 5.7L18.9 3Zm-1.1 16h1.7L7.1 4.9H5.3L17.8 19Z"/>
-                                </svg>
+                                    <img src="/assets/default/svgs/twitter-x.svg" alt="twitter-x">
                                 </span>
                                 <span class="btn__text">Share on Twitter</span>
                             </a>
                             <div class="share-secondary">
-                                <a href="#" class="btn-pinterest"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
-                                <a href="#" class="btn-whatsapp"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
-                                <a href="#" class="btn-email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                                <a href="#" class="btn-pinterest" aria-label=""><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                                <a href="#" class="btn-whatsapp" aria-label=""><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                                <a href="#" class="btn-email" aria-label=""><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
                             </div>
                             <button class="btn btn--share" type="button" aria-label="More share options">
                                 <span class="btn__icon" aria-hidden="true">
-                                <!-- Share arrow -->
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                    <path d="M14 9V5l7 7-7 7v-4H8a5 5 0 0 1-5-5V8h2v2a3 3 0 0 0 3 3h6V9Z"/>
-                                </svg>
+                                    <img src="/assets/default/svgs/share2.svg" alt="share2">
                                 </span>
                             </button>
                         </div>
