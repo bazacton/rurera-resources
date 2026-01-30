@@ -28,7 +28,7 @@
         </div>
     </section>
     
-    <section class="mt-15 mb-60 lms-blog blog-single-post mt-50">
+    <section class="mt-15 mb-60 lms-blog blog-single-post mt-80">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
