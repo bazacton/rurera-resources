@@ -473,15 +473,16 @@ outline-offset:-3px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: #ffefcf;
-    border-color: #ffd98d;
+    background-color: #fefaf1;
+    border-color: #ffebc4;
     border-radius: 5px;
     padding: 25px;
 }
 .blog-single-post .alert .info-icon {
     margin-right: 10px;
+    font-size: 1.5rem;
 }
 .blog-single-post .alert .text-box {
-    width: calc(100% - 30px);
+    width: calc(100% - 50px);
 }
 /* Blog Single Post Alert Style End */
