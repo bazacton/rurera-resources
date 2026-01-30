@@ -32,7 +32,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
-                    <div class="post-show pb-0">                        
+                    <div class="post-show pb-0">
+
+                        <!-- ShareThis BEGINS -->
+                        <div class="sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
+                            <span data-network="facebook"></span>
+                            <span data-network="pinterest"></span>
+                            <span data-network="whatsapp"></span>
+                            <span data-network="email"></span>
+                        </div>
+                        <!-- ShareThis ENDS -->
+
+                        
                         <!-- Share bar -->
                         <div class="sharebar" role="group" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
