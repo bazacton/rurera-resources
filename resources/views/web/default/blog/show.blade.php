@@ -96,7 +96,7 @@
                         ])
                     @endif
                     {{-- ./ post Comments --}}
-                    <div class="alert alert-warning" role="alert">
+                    <div class="alert alert-warning mb-30" role="alert">
                         <span class="info-icon">💡</span>
                         <div class="text-box">
                             <p>
@@ -106,7 +106,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row mb-15 mt-30">
+                    <div class="row mb-15">
                         <div class="col-12">
                             <div class="section-title mb-15">
                                 <h2 class="mb-0 font-22">Related posts</h2>
