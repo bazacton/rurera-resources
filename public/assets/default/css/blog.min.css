@@ -497,16 +497,44 @@ outline-offset:-3px;
     position: relative;
     min-height: 150px;
     border-radius: 5px;
+    padding: 30px 15px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,.06);
 }
 .dates-diary .badge {
     position: absolute;
     top: -15px;
     left: 30px;
-    background-color: #ffab00;
+    background-color: #f4c430;
     border-radius: 3px;
     color: #fff;
     padding: 6px 15px;
     line-height: normal;
     font-size: .85rem;
+    box-shadow: 0 0 2px rgba(0,0,0,.12) inset;
+}
+.dates-diary__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dates-diary__meta {
+    color: #a9a9a9;
+    font-size: .85rem;
+}
+.task-card__actions{
+  display:flex;
+  gap:10px;
+}
+.icon-btn{
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  color:#f4c430;
+  padding: 4px;
+  line-height:1;
+}
+.icon-btn:last-child{
+  color:#bdbdbd;
 }
 /* Dates-Diary Style End */
