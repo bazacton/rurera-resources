@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-    <section class="section">
+    <section class="section block-single-post">
         <div class="section-header">
             <h1>{{ trans('admin/main.'.(!empty($post) ? 'edit_blog' : 'create_blog')) }}</h1>
             <div class="section-header-breadcrumb">
