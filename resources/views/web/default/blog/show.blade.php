@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="img-box">
-                        <img src="/media/428977/What Year are KS1.png" class="img-cover img-lg" alt="KS1" loading="eager">
+                        <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                     </div>
                 </div>
             </div>
@@ -28,11 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
-                    
                     <div class="post-show pb-0">
-                        <div class="post-image">
-                            <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
-                        </div>
                         <div class="post-excerpt">
                             {!! getBodyContent($post->description) !!}
                         </div>
