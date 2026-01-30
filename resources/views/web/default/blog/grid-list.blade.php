@@ -4,7 +4,7 @@
             <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
             <span  itemprop="datePublished" content="2023-04-05T08:00:00+08:00">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
         </span>
-        <h2 class="blog-grid-title mt-10" itemprop="headline">
+        <h2 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
             <a itemprop="url" href="{{ $post->getUrl() }}">{{ $post->title }}</a>
         </h2>
         <!-- <div class="mt-20 blog-grid-desc" itemprop="description">{!! truncate(strip_tags($post->description), 200) !!}</div> -->
