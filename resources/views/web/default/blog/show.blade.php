@@ -63,7 +63,11 @@
                                 </span>
                                 <span class="btn__text">Share on Twitter</span>
                             </a>
-
+                            <div class="share-secondary">
+                                <a href="#" class="btn-pinterest"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                                <a href="#" class="btn-whatsapp"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                                <a href="#" class="btn-email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                            </div>
                             <button class="btn btn--share" type="button" aria-label="More share options">
                                 <span class="btn__icon" aria-hidden="true">
                                 <!-- Share arrow -->
