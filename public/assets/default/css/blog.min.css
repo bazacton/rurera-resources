@@ -344,8 +344,10 @@
     color:#9a9a9a;
 }
 .sharebar__divider{
-    width:1px;
-    background:#e6e6e6;
+    width: 1px;
+    background: #e6e6e6;
+    margin-right: 5px;
+    transform: rotate(15deg);
 }
 /* Buttons */
 .sharebar .btn{
