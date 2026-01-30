@@ -349,20 +349,16 @@
 }
 /* Buttons */
 .sharebar .btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     padding: 0 10px;
-    min-width: 200px;
+    min-width: 180px;
     height: 38px;
-    border:0;
-    margin:0;
-    text-decoration:none;
-    color:#fff;
-    font-weight: 500;
-    cursor:pointer;
-    user-select:none;
+    border: 0;
+    color: #fff;
+    user-select: none;
     border-radius: 3px;
 }
 .btn__icon{
@@ -374,11 +370,9 @@
 .btn--x { background:#3a3a3a; }
 
 .sharebar .btn--share{
-    min-width:54px;
-    width:54px;
-    padding:0;
-    background:#dcdcdc;
-    color:#ffffff;
+    min-width: 50px;
+    padding: 0;
+    background: #dcdcdc;
 }
 .btn:hover{ filter:brightness(0.95); }
 .btn:focus-visible{
@@ -386,8 +380,8 @@ outline:3px solid #1a73e8;
 outline-offset:-3px;
 }
 .sharebar .btn img {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
 }
 .btn--fb img {
     filter: invert(100%) sepia(0%) saturate(886%) hue-rotate(83deg) brightness(120%) contrast(100%);
