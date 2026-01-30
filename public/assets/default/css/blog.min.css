@@ -42,9 +42,6 @@
 .blog-medium .blog-grid-detail .blog-grid-title {
     font-size: 1.25rem;
 }
-.blog-medium .blog-grid-detail .blog-grid-title a {
-    color: #343434;
-}
 .blog-single-post .post-show {
     border-right: 1px solid #ddd;
 }
