@@ -449,8 +449,24 @@ outline-offset:-3px;
     padding: 15px;
     height: auto;
     font-weight: 700;
+    position: relative;
 }
-.blog-single-post .card-body {
+.card-body {
     padding: 0 15px 15px;
+}
+.blog-single-post .card .card-header .btn-link:after {
+    position: absolute;
+    top: 21px;
+    right: 15px;
+    height: 8px;
+    width: 8px;
+    border: 2px solid;
+    content: "";
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(45deg);
+}
+.blog-single-post .card .card-header .btn-link.collapsed:after {
+    transform: rotate(-135deg);
 }
 /* Single Post Accordions Style End */
