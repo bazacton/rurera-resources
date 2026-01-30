@@ -811,11 +811,17 @@
             var blockId = existingBlockId || uid("rureraFaq");
             var accId = uid("faqAccordion");
 
-            // Store JSON in attribute so we can reliably edit later.
             var dataAttr = escapeHtml(JSON.stringify({ title: title || "", items: items }));
 
-            // Title can be optional
             var titleHtml = title ? `<h2 class="mb-3">${escapeHtml(title)}</h2>` : "";
+
+            var editBar = `
+    <div class="faq-edit-bar mb-2" contenteditable="false">
+      <a href="javascript:void(0)" class="rurera-faq-edit btn btn-sm btn-outline-primary">
+        Edit FAQs
+      </a>
+    </div>
+  `;
 
             var cardsHtml = items.map(function (it, idx) {
                 var headingId = uid("faqHeading");
@@ -825,42 +831,100 @@
                 var collapsedBtn = idx === 0 ? "" : " collapsed";
 
                 return `
-        <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-          <div class="card-header" id="${headingId}">
-            <h5 class="mb-0">
-              <button class="btn btn-link text-left w-100${collapsedBtn}" type="button"
-                data-toggle="collapse" data-target="#${collapseId}"
-                aria-expanded="${expanded}" aria-controls="${collapseId}">
-                <span itemprop="name">${escapeHtml(it.q)}</span>
-              </button>
-            </h5>
-          </div>
-          <div id="${collapseId}" class="collapse${show}" aria-labelledby="${headingId}" data-parent="#${accId}">
-            <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-              <div itemprop="text">${escapeHtml(it.a).replace(/\n/g, "<br>")}</div>
-            </div>
-          </div>
+      <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <div class="card-header" id="${headingId}">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-left w-100${collapsedBtn}" type="button"
+              data-toggle="collapse" data-target="#${collapseId}"
+              aria-expanded="${expanded}" aria-controls="${collapseId}">
+              <span itemprop="name">${escapeHtml(it.q)}</span>
+            </button>
+          </h5>
         </div>
-      `;
-            }).join("");
-
-            // contenteditable=false prevents users from accidentally breaking schema markup.
-            // They can still edit using the FAQs button.
-            return `
-      <div class="rurera-faq-block my-3"
-           data-rurera-faq="1"
-           data-faq-block-id="${blockId}"
-           data-faq-items="${dataAttr}"
-           contenteditable="false"
-           itemscope itemtype="https://schema.org/FAQPage">
-        ${titleHtml}
-        <div id="${accId}" class="accordion">
-          ${cardsHtml}
+        <div id="${collapseId}" class="collapse${show}" aria-labelledby="${headingId}" data-parent="#${accId}">
+          <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div itemprop="text">${escapeHtml(it.a).replace(/\n/g, "<br>")}</div>
+          </div>
         </div>
       </div>
-      <p><br></p>
     `;
+            }).join("");
+
+            return `
+    <div class="rurera-faq-block my-3"
+         data-rurera-faq="1"
+         data-faq-block-id="${blockId}"
+         data-faq-items="${dataAttr}"
+         contenteditable="false"
+         itemscope itemtype="https://schema.org/FAQPage">
+
+      ${editBar}
+      ${titleHtml}
+
+      <div id="${accId}" class="accordion">
+        ${cardsHtml}
+      </div>
+    </div>
+    <p><br></p>
+  `;
         }
+
+        $(document).on("click", ".rurera-faq-edit", function (e) {
+            e.preventDefault();
+
+            var $faqBlock = $(this).closest('[data-rurera-faq="1"]');
+
+            // Get summernote instance by finding the nearest editor
+            // (works for single editor; for multiple, still OK if modal stores last context)
+            var $editor = $(".summernote"); // if you have multiple editors, replace with a better selector
+            var context = $("#faqBuilderModal").data("summernote-context");
+
+            // If modal doesn't have context (user clicked edit without pressing toolbar first)
+            // try to fetch summernote context from the editor instance
+            if (!context && $editor.length && $editor.data("summernote")) {
+                // We'll create a minimal context-like object for focus usage
+                context = {
+                    invoke: function (cmd) {
+                        return $editor.summernote(cmd);
+                    }
+                };
+                $("#faqBuilderModal").data("summernote-context", context);
+            }
+
+            // Load stored JSON
+            var raw = $faqBlock.attr("data-faq-items") || "";
+            var parsed = tryParseJSON(raw);
+
+            if (!parsed) {
+                // attribute might be entity-escaped
+                var unescaped = raw
+                    .replace(/&quot;/g, '"')
+                    .replace(/&#039;/g, "'")
+                    .replace(/&lt;/g, "<")
+                    .replace(/&gt;/g, ">")
+                    .replace(/&amp;/g, "&");
+                parsed = tryParseJSON(unescaped);
+            }
+
+            // Fill modal
+            $("#faqRows").empty();
+            $("#faqTitleInput").val((parsed && parsed.title) ? parsed.title : "");
+            $("#faqSaveBtn").text("Update");
+
+            if (parsed && parsed.items && parsed.items.length) {
+                parsed.items.forEach(function (it) {
+                    $("#faqRows").append(makeRow(it.q, it.a));
+                });
+            } else {
+                $("#faqRows").append(makeRow("", ""));
+            }
+
+            // Store edit target
+            $("#faqBuilderModal").data("editing", true);
+            $("#faqBuilderModal").data("targetBlock", $faqBlock);
+
+            $("#faqBuilderModal").modal("show");
+        });
 
         $(".summernote-source").summernote({
             dialogsInBody: true,
@@ -896,6 +960,7 @@
                             var $faqBlock = $current.closest('[data-rurera-faq="1"]');
                             var isEditing = $faqBlock.length > 0;
 
+                            console.log(isEditing);
                             // Fill modal
                             $("#faqRows").empty();
                             $("#faqTitleInput").val("");
