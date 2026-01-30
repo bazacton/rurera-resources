@@ -6,7 +6,7 @@
 @endpush
 
 @section('content')
-    <section class="cart-banner position-relative single-post-subheader">
+    <section class="cart-banner position-relative single-post-subheader py-70">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-8">
