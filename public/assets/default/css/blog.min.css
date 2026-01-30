@@ -303,6 +303,7 @@
     flex-direction: column;
     padding-left: 15px;
     margin-bottom: 30px;
+    gap: 10px;
 }
 .cart-banner.single-post-subheader {
     padding-bottom: 25px;
