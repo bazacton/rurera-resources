@@ -115,6 +115,9 @@
                                 <button class="icon-btn" aria-label="Edit">✎</button>
                             </div>
                         </div>
+                        <div class="dates-diary__image">
+                            <img src="/store/1/default_images/blogs/blog-29.jpg" alt="blog-29">
+                        </div>
                     </div>
                     <div class="row mb-15">
                         <div class="col-12">
