@@ -497,7 +497,7 @@ outline-offset:-3px;
     position: relative;
     min-height: 150px;
     border-radius: 5px;
-    padding: 30px 18px 0;
+    padding: 30px 18px 18px;
     box-shadow: 0 0 5px rgba(0,0,0,.06);
 }
 .dates-diary .badge {
