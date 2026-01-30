@@ -32,12 +32,12 @@
                         <div class="sharebar mt-30" role="group" aria-label="Share statistics and actions">
                             <div class="sharebar__stats" aria-label="Engagement stats">
                                 <div class="stat">
-                                    <div class="stat__value stat__value--blue">1.2k</div>
+                                    <div class="stat__value stat__value--blue font-22">1.2k</div>
                                     <div class="stat__label">SHARES</div>
                                 </div>
 
                                 <div class="stat">
-                                    <div class="stat__value">6.4k</div>
+                                    <div class="stat__value font-22">6.4k</div>
                                     <div class="stat__label">VIEWS</div>
                                 </div>
                             </div>
