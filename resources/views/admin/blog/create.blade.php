@@ -297,10 +297,8 @@
         padding: 15px 10px 0;
     }
     .blog-single-post .form-group:has([class*="single-post-"]) {
-        max-width: 840px;
-    }
-    .blog-single-post .note-editing-area:has([class*="single-post-"]) .note-editable.card-block {
-        padding: 10px 0 0;
+        max-width: 862px;
+        margin: 0 auto;
     }
     .blog-single-post .faq-edit-bar {
         display: none;
