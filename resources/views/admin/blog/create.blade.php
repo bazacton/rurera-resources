@@ -296,9 +296,8 @@
     .blog-single-post .row > [class*="col-"] > .card {
         padding: 15px 10px 0;
     }
-    .blog-single-post .note-editing-area:has([class*="single-post-"]) {
+    .blog-single-post .form-group:has([class*="single-post-"]) {
         max-width: 840px;
-        margin: 0 auto;
     }
     .blog-single-post .note-editing-area:has([class*="single-post-"]) .note-editable.card-block {
         padding: 10px 0 0;
