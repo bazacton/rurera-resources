@@ -296,7 +296,7 @@
     .blog-single-post .row > [class*="col-"] > .card {
         padding: 15px 10px 0;
     }
-    .blog-single-post .form-group:has([class*="single-post-"]) {
+    .blog-single-post .form-group:has(.note-editor) {
         max-width: 862px;
         margin: 0 auto;
     }
