@@ -342,7 +342,8 @@
         border-collapse: separate;
         width: 100%;
     }
-    .blog-single-post thead td {
+    .blog-single-post thead td,
+    .blog-single-post .card table thead td p {
         font-weight: 700;
     }
     .blog-single-post table td {
