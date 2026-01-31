@@ -293,12 +293,15 @@
     .blog-single-post .faq-edit-bar {
         display: none;
     }
-    .blog-single-post .card {background-color: #f7f7f7;margin: 0 0 5px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
+    .blog-single-post .accordion .card {background-color: #f7f7f7;margin: 0 0 5px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
     .blog-single-post .card .card-header {
         background-color: inherit;
         text-align: left;
         padding: 0;
         border: 0;
+    }
+    .blog-single-post .card .card-header h5 {
+        width: 100%;
     }
     .blog-single-post .card .card-header .btn-link {
         background-color: inherit;
@@ -308,6 +311,8 @@
         font-weight: 700;
         position: relative;
         text-decoration: none;
+        color: #343434;
+        font-size: .875rem;
     }
     .blog-single-post .card-body {
         padding: 0 15px 15px;
