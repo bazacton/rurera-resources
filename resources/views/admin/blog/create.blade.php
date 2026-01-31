@@ -319,7 +319,6 @@
     }
     .blog-single-post .card .card-header .btn-link {
         background-color: inherit;
-        justify-content: flex-start;
         padding: 15px;
         height: auto;
         font-weight: 700;
@@ -327,6 +326,7 @@
         text-decoration: none;
         color: #343434;
         font-size: .875rem;
+        border: 0;
     }
     .blog-single-post .card-body {
         padding: 0 15px 15px;
