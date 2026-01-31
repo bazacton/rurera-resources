@@ -1217,54 +1217,52 @@
             },
             callbacks: {
                 onPaste: function (e) {
-                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-                    var bufferText = clipboardData.getData('Text');
+                    let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+
+                    let html = clipboardData.getData('text/html');
+                    let text = clipboardData.getData('text/plain');
 
                     e.preventDefault();
 
-                    bufferText = bufferText
-                        // Dashes and hyphens
-                        .replace(/[–—−]/g, '-')
+                    // If HTML exists, work on HTML — otherwise fallback to text
+                    let content = html || text;
 
-                        // Smart single quotes
-                        .replace(/[‘’]/g, "'")
+                    // Create temp container
+                    let tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = content;
 
-                        // Smart double quotes
-                        .replace(/[“”]/g, '"')
+                    // Walk through text nodes only
+                    function cleanText(node) {
+                        if (node.nodeType === Node.TEXT_NODE) {
+                            node.nodeValue = node.nodeValue
+                                .replace(/[–—−]/g, '-')
+                                .replace(/[‘’]/g, "'")
+                                .replace(/[“”]/g, '"')
+                                .replace(/…/g, '...')
+                                .replace(/[•‣▪◦]/g, '-')
+                                .replace(/\u00A0/g, ' ')
+                                .replace(/©/g, '(c)')
+                                .replace(/®/g, '(r)')
+                                .replace(/™/g, 'TM')
+                                .replace(/°/g, 'deg')
+                                .replace(/×/g, 'x')
+                                .replace(/÷/g, '/')
+                                .replace(/→/g, '->')
+                                .replace(/←/g, '<-')
+                                .replace(/⇒/g, '=>')
+                                .replace(/[✓✔]/g, 'Yes')
+                                .replace(/[✗✘]/g, 'No')
+                                .replace(/[\u{1F300}-\u{1F6FF}]/gu, '')
+                                .replace(/\s{2,}/g, ' ');
+                        } else {
+                            node.childNodes.forEach(cleanText);
+                        }
+                    }
 
-                        // Ellipsis
-                        .replace(/…/g, '...')
+                    cleanText(tempDiv);
 
-                        // Bullets and list symbols
-                        .replace(/[•‣▪◦]/g, '-')
-
-                        // Non-breaking spaces
-                        .replace(/\u00A0/g, ' ')
-
-                        // Special symbols
-                        .replace(/©/g, '(c)')
-                        .replace(/®/g, '(r)')
-                        .replace(/™/g, 'TM')
-                        .replace(/°/g, 'deg')
-                        .replace(/×/g, 'x')
-                        .replace(/÷/g, '/')
-
-                        // Arrows
-                        .replace(/→/g, '->')
-                        .replace(/←/g, '<-')
-                        .replace(/⇒/g, '=>')
-
-                        // Checkmarks and crosses
-                        .replace(/[✓✔]/g, 'Yes')
-                        .replace(/[✗✘]/g, 'No')
-
-                        // Remove emojis (basic range)
-                        .replace(/[\u{1F300}-\u{1F6FF}]/gu, '')
-
-                        // Normalize multiple spaces
-                        .replace(/\s{2,}/g, ' ');
-
-                    document.execCommand('insertText', false, bufferText);
+                    // Insert cleaned HTML back (styles preserved!)
+                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
         });
