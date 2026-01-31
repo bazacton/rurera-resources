@@ -335,12 +335,17 @@
         border: 1px solid #ddd;
         border-radius: 5px;
         border-collapse: separate;
+        width: 100%;
     }
     .blog-single-post thead td {
         font-weight: 700;
     }
     .blog-single-post table td {
         border: 0;
+        padding: .75rem;
+    }
+    .blog-single-post table td p {
+        margin: 0;
     }
     .blog-single-post tbody tr:nth-child(odd) {
         background-color: #f7f7f7;
