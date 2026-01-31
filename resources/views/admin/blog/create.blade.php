@@ -290,6 +290,9 @@
     }
 
     /* Single Post Accordions Style Start */
+    .blog-single-post {
+        color: #404040;
+    }
     .blog-single-post .faq-edit-bar {
         display: none;
     }
