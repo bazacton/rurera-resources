@@ -293,12 +293,26 @@
     .blog-single-post .faq-edit-bar {
         display: none;
     }
-    .blog-single-post .accordion .card {background-color: #f7f7f7;margin: 0 0 5px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
+    .blog-single-post .accordion .card {
+        background-color: #f7f7f7;
+        box-shadow: none;
+        margin: 0 0 5px;
+        border: 0;
+        text-align: left;
+        padding: 0;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .blog-single-post .accordion>.card:not(:first-of-type):not(:last-of-type) {
+        border-radius: 5px;
+    }
     .blog-single-post .card .card-header {
         background-color: inherit;
         text-align: left;
         padding: 0;
         border: 0;
+        line-height: normal;
+        min-height: auto;
     }
     .blog-single-post .card .card-header h5 {
         width: 100%;
