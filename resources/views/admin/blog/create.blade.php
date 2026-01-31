@@ -354,6 +354,7 @@
         border: 1px solid #ddd;
         border-radius: 5px;
         border-collapse: separate;
+        margin-bottom: 15px;
         width: 100%;
     }
     .blog-single-post thead td,
