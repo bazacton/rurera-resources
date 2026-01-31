@@ -7,7 +7,7 @@
     /* Blog Single Post Style Start */
     .sharebar,
     .single-post-block,
-    .blog-single-post .post-show > p,
+    .blog-single-post > p,
     .blog-single-post ul,
     .lms-blog table {
         margin-bottom: 30px;
@@ -17,13 +17,13 @@
     .blog-single-post h4 {
         margin-bottom: 10px;
     }
-    .blog-single-post .post-show br {
+    .blog-single-post br {
         display: none;
     }
-    .post-show p:empty {
+    .blog-single-post p:empty {
         display: none;
     }
-    .blog-single-post .post-show > div {
+    .blog-single-post > div {
         line-height: 26px;
     }
     .blog-single-post .blog-sidebar {
@@ -94,7 +94,7 @@
     .blog-single-post .entry-content > br:first-child {
         display: none;
     }
-    .blog-single-post .post-show .wp-block-list li a {
+    .blog-single-post .wp-block-list li a {
         color: var(--primary);
     }
     .single-post-block {
@@ -103,7 +103,7 @@
         border-radius: 5px;
         border: 1px solid #d0d2dd;
     }
-    .blog-single-post .post-show .order-list {
+    .blog-single-post .order-list {
         gap: 15px;
         display: flex;
         flex-direction: column;
@@ -111,12 +111,12 @@
         margin: 0;
         padding: 0;
     }
-    .blog-single-post .post-show .order-list li {
+    .blog-single-post .single-post-block .order-list li {
         position: relative;
         padding-left: 35px;
         list-style: none;
     }
-    .blog-single-post .order-list li:before {
+    .blog-single-post .single-post-block .order-list li:before {
         counter-increment: section;
         position: absolute;
         left: 0;
@@ -142,19 +142,19 @@
         display: inline-block;
         color: var(--primary);
     }
-    .blog-single-post .post-show h3 {
+    .blog-single-post h3 {
         font-size: 1.5rem;
     }
-    .blog-single-post .post-show h4 {
+    .blog-single-post h4 {
         font-size: 1.125rem;
     }
     .blog-single-post li {
         list-style: inherit;
     }
-    .blog-single-post .post-show ul li {
+    .blog-single-post ul li {
         list-style: disc;
     }
-    .blog-single-post .post-show ul {
+    .blog-single-post ul {
         display: flex;
         flex-direction: column;
         padding-left: 15px;
