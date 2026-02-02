@@ -15334,7 +15334,8 @@ p {
 .blog-single-post .post-show ul li {
     list-style: disc;
 }
-.blog-single-post .post-show ul {
+.blog-single-post .post-show ul,
+.blog-single-post .post-show ol {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
