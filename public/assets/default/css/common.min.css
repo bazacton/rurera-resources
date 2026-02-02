@@ -15341,6 +15341,9 @@ p {
     padding-left: 15px;
     gap: 10px;
 }
+.blog-single-post .post-show ol {
+    margin-bottom: 25px;
+}
 .single-post-subheader {
     background-color: #fafafa;
     min-height: 400px;
