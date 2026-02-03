@@ -15189,7 +15189,7 @@ p {
 .single-post-block,
 .blog-single-post .post-show > p,
 .blog-single-post ul,
-.lms-blog table {
+.lms-blog table, .blog-single-post .rurera-schools-disclaimer {
     margin-bottom: 30px;
 }
 .blog-single-post h2,
