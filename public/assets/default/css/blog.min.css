@@ -180,14 +180,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #eef6ff;
+    background-color: #000;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,0.1);
 }
 .rurera-address-icon-box img {
     height: 22px;
     width: 22px;
-    filter: invert(27%) sepia(98%) saturate(2286%) hue-rotate(201deg) brightness(104%) contrast(107%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(107%) contrast(102%);
 }
 .rurera-address-details {
     flex: 0 0 84%;
