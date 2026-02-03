@@ -108,13 +108,6 @@
                     </div>
                     <div class="dates-diary mb-30">
                         <span class="badge">Works</span>
-                        <div class="dates-diary__top">
-                            <div class="dates-diary__meta">Last edit 2d ago</div>
-                            <div class="dates-diary__actions">
-                                <button class="icon-btn" aria-label="Star">★</button>
-                                <button class="icon-btn" aria-label="Edit">✎</button>
-                            </div>
-                        </div>
                     </div>
                     <div class="row mb-15">
                         <div class="col-12">
