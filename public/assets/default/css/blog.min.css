@@ -83,7 +83,7 @@
     height: 46px;
     width: 155px;
     border: 0;
-    background-color: var(--category-color);
+    background-color: var(--primary);
     border-radius: 25px;
     color: #fff;
     font-weight: 600;
