@@ -274,11 +274,13 @@
 }
 .rurera-address-details ul,
 .blog-single-post .post-show .rurera-address-details ul{
-    margin: 0;
+    margin: 15px 0 0;
     padding: 0;
+    gap: 5px;
 }
 .rurera-address-details ul li,
 .blog-single-post .post-show .rurera-address-details ul li{
     list-style: none;
+    line-height: normal;
 }
 /* Location Style End */
