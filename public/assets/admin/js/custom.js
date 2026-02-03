@@ -1267,6 +1267,7 @@
 
                     cleanText(tempDiv);
                     removeInlineStyles(tempDiv);
+                    removeDirAttribute(tempDiv);
                     convertBoldToHeading(tempDiv);
                     fixHeadingOverflow(tempDiv);
 
@@ -1305,6 +1306,15 @@
                     }
                 });
             });
+        }
+
+        function removeDirAttribute(node) {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+                if (node.getAttribute('dir') === 'ltr' || node.getAttribute('dir') === 'rtl') {
+                    node.removeAttribute('dir');
+                }
+            }
+            node.childNodes.forEach(removeDirAttribute);
         }
 
         function convertBoldToHeading(container) {
