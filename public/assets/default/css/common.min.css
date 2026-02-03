@@ -15338,7 +15338,7 @@ p {
 .blog-single-post .post-show ol {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
+    padding-left: 45px;
     gap: 10px;
 }
 .blog-single-post .post-show ol {
