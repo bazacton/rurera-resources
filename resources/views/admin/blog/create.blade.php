@@ -997,7 +997,7 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="inspectionDate">Inspection date</label>
-                                                    <input type="date" class="form-control" id="inspectionDate" required>
+                                                    <input type="date" class="form-control rureradatepicker rurera-req-field" id="inspectionDate" required>
                                                 </div>
                                                 
                                             </div>
