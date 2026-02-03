@@ -41,7 +41,9 @@
 .blog-medium .blog-grid-detail {
     padding: 0 20px;
 }
-
+.blog-single-post .rurera-blog h2 {
+    margin-bottom: 0;
+}
 .blog-newsletter {
     position: relative;
     background-color: #eee;
