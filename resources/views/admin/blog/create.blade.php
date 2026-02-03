@@ -642,7 +642,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-12 blog-edit-sidebar">
                                         <!-- Blog Stats -->
-                                        <h4 class="section-header">Blog Stats</h4>
+                                        <h4>Blog Stats</h4>
                                         <div class="form-row">
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
@@ -663,7 +663,7 @@
                                         </div>
 
                                         <!-- At a glance -->
-                                        <h4 class="section-header">At a glance</h4>
+                                        <h4>At a glance</h4>
                                         <div class="form-row">
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
@@ -789,7 +789,7 @@
                                         </div>
 
                                         <!-- Assessment Criteria -->
-                                        <h4 class="section-header">Assessment Criteria</h4>
+                                        <h4>Assessment Criteria</h4>
                                         <div class="form-row">
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
@@ -864,7 +864,7 @@
                                         </div>
 
                                         <!-- Location -->
-                                        <h4 class="section-header">Location</h4>
+                                        <h4>Location</h4>
                                         <div class="form-row">
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
@@ -917,7 +917,7 @@
                                         </div>
 
                                         <!-- Offset report (Ofsted) -->
-                                        <h4 class="section-header">Ofsted Report</h4>
+                                        <h4>Ofsted Report</h4>
                                         <div class="form-row">
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
@@ -1026,7 +1026,7 @@
                                         </div>
 
                                         <!-- Important Dates -->
-                                        <h4 class="section-header">Important Dates</h4>
+                                        <h4>Important Dates</h4>
                                         <div class="form-row">
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
