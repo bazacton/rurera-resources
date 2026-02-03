@@ -399,7 +399,22 @@
         width: calc(100% - 50px);
     }
     /* Blog Single Post Alert Style End */
-
+    .blog-edit-sidebar .form-field {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .blog-edit-sidebar .form-field label {
+        margin: 0;
+        min-width: 80px;
+    }
+    .blog-edit-sidebar .form-field input {
+        width: calc(100% - 80px);
+    }
+    .blog-edit-sidebar .select-holder {
+        width: calc(100% - 80px);
+    }
     /* Blog Single Post Style End */
 </style>
 @endpush
