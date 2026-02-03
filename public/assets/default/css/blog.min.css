@@ -120,7 +120,7 @@
 }
 
 /* Dates-Diary Style Start */
-.dates-diary {
+.blog-single-post .dates-diary {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     position: relative;
     min-height: 150px;
@@ -128,7 +128,7 @@
     padding: 30px 18px 18px;
     box-shadow: 0 0 5px rgba(0,0,0,.06);
 }
-.dates-diary .badge {
+.blog-single-post .dates-diary .badge {
     position: absolute;
     top: -15px;
     left: 18px;
@@ -144,15 +144,15 @@
 /* Dates-Diary Style End */
 
 /* Location Style Start */
-.rurera-location-section {
+.blog-single-post .rurera-location-section {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px 0;
 }
-.rurera-location-section.row {
+.blog-single-post .rurera-location-section.row {
     margin: 0 0 30px;
 }
-.rurera-badge-pill {
+.blog-single-post .rurera-badge-pill {
     background-color: #eef6ff;
     font-size: .875rem;
     padding: 8px 15px;
@@ -163,22 +163,22 @@
     color: #007bff;
     font-weight: 500;
 }
-.rurera-map-wrapper {
+.blog-single-post .rurera-map-wrapper {
     height: 100%;
 }
-.rurera-map-iframe {
+.blog-single-post .rurera-map-iframe {
     width: 100%;
     border: 0;
     border-radius: 5px;
     height: 100%;
 }
-.rurera-address-box {
+.blog-single-post .rurera-address-box {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 15px;
 }
-.rurera-address-icon-box {
+.blog-single-post .rurera-address-icon-box {
     height: 40px;
     width: 40px;
     display: inline-flex;
@@ -189,37 +189,37 @@
     border: 1px solid rgba(0,0,0,0.1);
     margin-top: -8px;
 }
-.rurera-address-icon-box img {
+.blog-single-post .rurera-address-icon-box img {
     height: 22px;
     width: 22px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(107%) contrast(102%);
 }
-.rurera-address-details {
+.blog-single-post .rurera-address-details {
     flex: 0 0 84%;
     max-width: 84%;
 }
-.rurera-address-details p {
+.blog-single-post .rurera-address-details p {
     margin: 0;
     color: #818894;
 }
-.rurera-description-text {
+.blog-single-post .rurera-description-text {
     margin-bottom: 1.5rem;
 }
-.rurera-address-details h5 {
+.blog-single-post .rurera-address-details h5 {
     font-weight: bold;
 }
-.rurera-address-details ul,
+.blog-single-post .rurera-address-details ul,
 .blog-single-post .post-show .rurera-address-details ul{
     margin: 15px 0 0;
     padding: 0;
 }
-.rurera-address-details ul li,
+.blog-single-post .rurera-address-details ul li,
 .blog-single-post .post-show .rurera-address-details ul li{
     list-style: none;
     line-height: normal;
     color: #6c757d;
 }
-.rurera-schools-grid {
+.blog-single-post .rurera-schools-grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 15px;
@@ -227,7 +227,7 @@
     border-radius: 5px;
     padding: 20px 5px;
 }
-.rurera-school-col {
+.blog-single-post .rurera-school-col {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 15px;
@@ -236,7 +236,7 @@
     gap: 15px 0;
     border-right: 1px solid #ddd;
 }
-.rurera-school-item {
+.blog-single-post .rurera-school-item {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -244,28 +244,28 @@
     font-size: .875rem;
     color: #352c3e;
 }
-.rurera-school-content {
+.blog-single-post .rurera-school-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: calc(100% - 32px);
 }
-.rurera-school-icon {
+.blog-single-post .rurera-school-icon {
     width: 20px;
     height: 20px;
 }
-.rurera-school-icon img {
+.blog-single-post .rurera-school-icon img {
     max-width: 100%;
     max-height: 100%;
 }
-.rurera-school-header {
+.blog-single-post .rurera-school-header {
     flex: 0 0 75%;
     max-width: 75%;
 }
-.rurera-school-col:last-child {
+.blog-single-post .rurera-school-col:last-child {
     border-right: 0;
 }
-.rurera-school-age {
+.blog-single-post .rurera-school-age {
     color: #999;
 }
 /* Location Style End */
@@ -293,7 +293,7 @@
 .blog-single-post .stat-item:nth-child(3n) {
     border-right: 0;
 }
-.stats-row:first-child .stat-item {
+.blog-single-post .stats-row:first-child .stat-item {
     border-top: 0;
 }
 .blog-single-post .stats-row:first-child {
@@ -314,14 +314,14 @@
 /* Blog Stats Style End */
 
 /* Blog Timeline Style Start */
-.main-heading {
+.blog-single-post .main-heading {
     color: #2c3e50;
     font-weight: 700;
     margin-bottom: 40px;
     text-align: center;
     position: relative;
 }
-.main-heading::after {
+.blog-single-post .main-heading::after {
     content: '';
     display: block;
     width: 60px;
@@ -331,11 +331,11 @@
     border-radius: 2px;
 }
 /* Timeline Structure */
-.timeline {
+.blog-single-post .timeline {
     position: relative;
     padding-left: 50px;
 }
-.timeline::before {
+.blog-single-post .timeline::before {
     content: '';
     position: absolute;
     left: 20px;
@@ -344,12 +344,12 @@
     width: 3px;
     background: #e9ecef;
 }
-.timeline-item {
+.blog-single-post .timeline-item {
     position: relative;
     margin-bottom: 45px;
 }
 /* Timeline Dot */
-.timeline-marker {
+.blog-single-post .timeline-marker {
     position: absolute;
     left: -50px;
     top: 0;
@@ -366,13 +366,13 @@
     box-shadow: 0 0 0 5px #f8f9fa; /* Mask line behind dot */
     transition: all 0.3s ease;
 }
-.timeline-item:hover .timeline-marker {
+.blog-single-post .timeline-item:hover .timeline-marker {
     background: #3498db;
     color: #fff;
     transform: scale(1.1);
 }
 /* Content Card */
-.timeline-content {
+.blog-single-post .timeline-content {
     background: #fff;
     padding: 25px;
     border-radius: 6px;
@@ -380,24 +380,24 @@
     border-left: 4px solid transparent;
     transition: all 0.3s ease;
 }
-.timeline-item:hover .timeline-content {
+.blog-single-post .timeline-item:hover .timeline-content {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     border-left-color: #3498db;
     transform: translateX(5px);
 }
-.step-title {
+.blog-single-post .step-title {
     font-size: 1.2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 10px;
 }
-.step-description {
+.blog-single-post .step-description {
     color: #6c757d;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 15px;
 }
-.btn-outline-custom {
+.blog-single-post .btn-outline-custom {
     color: #3498db;
     border: 2px solid #3498db;
     font-weight: 600;
@@ -406,34 +406,34 @@
     font-size: 0.85rem;
     transition: all 0.3s;
 }
-.btn-outline-custom:hover {
+.blog-single-post .btn-outline-custom:hover {
     background-color: #3498db;
     color: #fff;
     text-decoration: none;
 }
 /* Blog Timeline Style End */
 /* Ofsted Report Styling */
-.rurera-ofsted-section {
+.blog-single-post .rurera-ofsted-section {
     padding: 60px 0;
     max-width: 900px;
     margin: 0 auto;
 }
-.rurera-ofsted-title {
+.blog-single-post .rurera-ofsted-title {
     font-weight: 700;
     color: #0f172a;
     margin-bottom: 40px;
 }
-.rurera-ofsted-layout {
+.blog-single-post .rurera-ofsted-layout {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
     margin-bottom: 50px;
 }
-.rurera-ofsted-left {
+.blog-single-post .rurera-ofsted-left {
     flex: 3;
     min-width: 300px;
 }
-.rurera-ofsted-right {
+.blog-single-post .rurera-ofsted-right {
     flex: 2;
     min-width: 250px;
     display: flex;
@@ -442,7 +442,7 @@
     justify-content: center;
     text-align: center;
 }
-.rurera-rating-row {
+.blog-single-post .rurera-rating-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -450,25 +450,25 @@
     border-bottom: 1px solid #f1f5f9;
     color: #475569;
 }
-.rurera-rating-row:last-of-type {
+.blog-single-post .rurera-rating-row:last-of-type {
     border-bottom: none;
     margin-bottom: 20px;
 }
-.rurera-rating-value {
+.blog-single-post .rurera-rating-value {
     font-weight: 600;
     color: #1e293b;
 }
-.rurera-rating-good {
+.blog-single-post .rurera-rating-good {
     color: #1e293b;
 }
-.rurera-rating-outstanding {
+.blog-single-post .rurera-rating-outstanding {
     color: #1e293b;
 }
-.rurera-rating-requires {
+.blog-single-post .rurera-rating-requires {
     color: #1e293b;
 }
-.rurera-view-report-btn {
-    background-color: #2dd4bf;
+.blog-single-post .rurera-view-report-btn {
+    background-color: var(--primary);
     color: #ffffff;
     font-weight: 600;
     padding: 10px 24px;
@@ -479,12 +479,12 @@
     text-decoration: none;
     transition: background-color 0.2s;
 }
-.rurera-view-report-btn:hover {
-    background-color: #14b8a6;
+.blog-single-post .rurera-view-report-btn:hover {
+    background-color: var(--primary);
     color: #ffffff;
     text-decoration: none;
 }
-.rurera-big-badge {
+.blog-single-post .rurera-big-badge {
     background-color: #22c55e;
     color: #ffffff;
     font-size: 24px;
@@ -495,31 +495,31 @@
     display: inline-block;
 }
 
-.rurera-inspection-date {
+.blog-single-post .rurera-inspection-date {
     color: #64748b;
 }
-.rurera-inspection-date strong {
+.blog-single-post .rurera-inspection-date strong {
     color: #1e293b;
     display: block;
     margin-top: 4px;
 }
 /* Summary Styling */
-.rurera-summary-section {
+.blog-single-post .rurera-summary-section {
     margin-top: 60px;
     padding-top: 40px;
     border-top: 1px solid #e2e8f0;
 }
-.rurera-summary-title {
+.blog-single-post .rurera-summary-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 24px;
     color: #1e293b;
 }
-.rurera-summary-item {
+.blog-single-post .rurera-summary-item {
     display: flex;
     margin-bottom: 24px;
 }
-.rurera-summary-icon {
+.blog-single-post .rurera-summary-icon {
     width: 40px;
     height: 40px;
     background-color: #f1f5f9;
@@ -535,18 +535,18 @@
     margin-bottom: 4px;
     color: #1e293b;
 }
-.rurera-summary-text p {
+.blog-single-post .rurera-summary-text p {
     color: #64748b;
     margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
-    .rurera-ofsted-layout {
+    .blog-single-post .rurera-ofsted-layout {
         flex-direction: column;
         gap: 30px;
     }
     
-    .rurera-ofsted-right {
+    .blog-single-post .rurera-ofsted-right {
         order: 0;
         border-top: 1px solid #f1f5f9;
         padding-top: 30px;
