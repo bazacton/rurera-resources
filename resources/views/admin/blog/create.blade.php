@@ -148,10 +148,11 @@
     .blog-single-post ul li {
         list-style: disc;
     }
-    .blog-single-post ul {
+    .blog-single-post ul,
+    .blog-single-post ol {
         display: flex;
         flex-direction: column;
-        padding-left: 15px;
+        padding-left: 45px;
         gap: 10px;
     }
     .single-post-subheader {
