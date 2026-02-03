@@ -414,7 +414,8 @@
         flex: 0 0 calc(100% - 110px);
         max-width: calc(100% - 110px);
     }
-    .blog-edit-sidebar .select-holder {
+    .blog-edit-sidebar .select-holder,
+    .blog-edit-sidebar .datepicker-field {
         flex: 0 0 calc(100% - 110px);
         max-width: calc(100% - 110px);
     }
