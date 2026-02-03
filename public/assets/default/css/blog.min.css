@@ -232,10 +232,14 @@
     color: #007bff;
     font-weight: 500;
 }
+.rurera-map-wrapper {
+    height: 100%;
+}
 .rurera-map-iframe {
     width: 100%;
     border: 0;
     border-radius: 5px;
+    height: 100%;
 }
 .rurera-address-box {
     display: flex;
