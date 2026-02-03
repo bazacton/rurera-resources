@@ -599,9 +599,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group custom-switches-stacked flex-row">
-                                    <label class="input-label">{{ trans('admin/main.robot') }}:</label>
                                     <label class="custom-switch pl-0">
-                                        <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
                                         <input type="hidden" name="seo_robot_access" value="0">
                                         <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($post) and $post->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
@@ -610,13 +608,11 @@
                                 </div>
 
                                 <div class="form-group custom-switches-stacked flex-row mt-10">
-                                       <label class="input-label">Include In XML:</label>
                                        <label class="custom-switch pl-0">
-                                           <label class="custom-switch-description mb-0 mr-2">Not Include</label>
                                            <input type="hidden" name="include_xml" value="0">
                                            <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($post) and $post->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
                                            <span class="custom-switch-indicator"></span>
-                                           <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
+                                           <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include in Sitemap</label>
                                        </label>
                                    </div>
 
@@ -666,17 +662,17 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="shares">Shares</label>
-                                                    <input type="number" class="form-control" id="shares" placeholder="Number of Shares" required>
+                                                    <input type="number" name="school_data[no_of_shares]" class="form-control" id="shares" placeholder="Number of Shares" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please provide shares count.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="views">Views</label>
-                                                    <input type="number" class="form-control" id="views" placeholder="Number of Views" required>
+                                                    <input type="number" name="school_data[views]" class="form-control" id="views" placeholder="Number of Views" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please provide views count.</div>
                                             </div>
                                         </div>
@@ -687,83 +683,83 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="schoolName">School Name</label>
-                                                    <input type="text" class="form-control" id="schoolName" required>
+                                                    <input type="text" name="school_data[school_name]" class="form-control" id="schoolName" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">School Name is required.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="localAuthority">Local Authority</label>
-                                                    <input type="text" class="form-control" id="localAuthority" required>
+                                                    <input type="text" name="school_data[local_authority]" class="form-control" id="localAuthority" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Local Authority is required.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="assessment">Assessment</label>
-                                                    <input type="text" class="form-control" id="assessment" value="FSCE" readonly>
+                                                    <input type="text" name="school_data[assessment]" class="form-control" id="assessment" value="FSCE" readonly>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="feesType">Fees Type</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="feesType" required>
+                                                        <select class="form-control" name="school_data[fees_type]" id="feesType" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Free">Free</option>
                                                             <option value="Paid">Paid</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please select fees type.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="boarding">Boarding</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="boarding" required>
+                                                        <select class="form-control" name="school_data[boarding]" id="boarding" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Day school">Day school</option>
                                                             <option value="Boarding">Boarding</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please select boarding type.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="types">Types</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="types" required>
+                                                        <select class="form-control" name="school_data[boarding_types]" id="types" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Mixed Boys and Girls">Mixed Boys and Girls</option>
                                                             <option value="Girls only">Girls only</option>
                                                             <option value="Boys Only">Boys Only</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please select type.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="placesPerYear">Places per year</label>
-                                                    <input type="number" class="form-control" id="placesPerYear" value="210" required>
+                                                    <input type="number" name="school_data[places_per_year]" class="form-control" id="placesPerYear" value="210" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please enter places per year.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="ofstedRating">Ofsted Rating</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="ofstedRating" required>
+                                                        <select class="form-control" name="school_data[ofsted_rating]" id="ofstedRating" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
@@ -771,38 +767,38 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please select Ofsted rating.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="competition">Competition</label>
-                                                    <input type="text" class="form-control" id="competition" placeholder="e.g. 5-6 applicants per place" required>
+                                                    <input type="text" name="school_data[competition]" class="form-control" id="competition" placeholder="e.g. 5-6 applicants per place" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please enter competition details.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="examFormat">Exam Format</label>
-                                                    <input type="text" class="form-control" id="examFormat" placeholder="e.g. GL Assessment 11+" required>
+                                                    <input type="text" name="school_data[exam_format]" class="form-control" id="examFormat" placeholder="e.g. GL Assessment 11+" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please enter exam format.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="catchmentArea">Catchment area</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="catchmentArea" required>
+                                                        <select class="form-control" name="school_data[cathment_area]" id="catchmentArea" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Please select catchment area option.</div>
                                             </div>
                                         </div>
@@ -814,71 +810,71 @@
                                                 <div class="form-field">
                                                     <label for="english">English</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="english" required>
+                                                        <select class="form-control" name="school_data[criteria_english]" id="english" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="maths">Maths</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="maths" required>
+                                                        <select class="form-control" name="school_data[criteria_maths]" id="maths" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="verbalReasoning">Verbal Reasoning</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="verbalReasoning" required>
+                                                        <select class="form-control" name="school_data[criteria_verbal_reasoning]" id="verbalReasoning" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="nonVerbalReasoning">Non-Verbal Reasoning</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="nonVerbalReasoning" required>
+                                                        <select class="form-control" name="school_data[criteria_non_verbal_reasoning]" id="nonVerbalReasoning" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="additional">Additional</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="additional" required>
+                                                        <select class="form-control" name="school_data[criteria_additional]" id="additional" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
 
@@ -888,9 +884,9 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="address">Complete address</label>
-                                                    <input type="text" class="form-control" id="address" required>
+                                                    <input type="text" name="school_data[complete_address]" class="form-control" id="address" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Address is required.</div>
                                             </div>
                                         </div>
@@ -898,39 +894,39 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="mapLat">Map LAT</label>
-                                                    <input type="text" class="form-control" id="mapLat" required>
+                                                    <input type="text" name="school_data[map_lat]" class="form-control" id="mapLat" required>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="mapLog">Map LOG</label>
-                                                    <input type="text" class="form-control" id="mapLog" required>
+                                                    <input type="text" name="school_data[map_long]" class="form-control" id="mapLog" required>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="phone">Phone number</label>
-                                                    <input type="tel" class="form-control" id="phone" required>
+                                                    <input type="tel" name="school_data[phone_number]" class="form-control" id="phone" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Phone number is required.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="email">Email</label>
-                                                    <input type="email" class="form-control" id="email" required>
+                                                    <input type="email" name="school_data[email]" class="form-control" id="email" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Valid email is required.</div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="website">Website link</label>
-                                                    <input type="url" class="form-control" id="website" required>
+                                                    <input type="url" name="school_data[website_link]" class="form-control" id="website" required>
                                                 </div>
-                                                
+
                                                 <div class="invalid-feedback">Valid website URL is required.</div>
                                             </div>
                                         </div>
@@ -942,109 +938,109 @@
                                                 <div class="form-field">
                                                     <label for="qualityEducation">The quality of education</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="qualityEducation" required>
+                                                        <select class="form-control" name="school_data[quality_of_education]" id="qualityEducation" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
                                                             <option value="Requires Improvement">Requires Improvement</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="behaviour">Behaviour and attitude</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="behaviour" required>
+                                                        <select class="form-control" name="school_data[behaviour_attitude]" id="behaviour" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
                                                             <option value="Requires Improvement">Requires Improvement</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="personalDev">Personal development</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="personalDev" required>
+                                                        <select class="form-control" name="school_data[personal_development]" id="personalDev" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
                                                             <option value="Requires Improvement">Requires Improvement</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="leadership">Leadership and management</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="leadership" required>
+                                                        <select class="form-control" name="school_data[leadership_management]" id="leadership" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
                                                             <option value="Requires Improvement">Requires Improvement</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="sixForm">Six form provision</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="sixForm" required>
+                                                        <select class="form-control" name="school_data[six_form_provision]" id="sixForm" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
                                                             <option value="Requires Improvement">Requires Improvement</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="inspectionDate">Inspection date</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="inspectionDate" required>
+                                                        <input type="text" name="school_data[inspection_date]" class="form-control rureradatepicker rurera-req-field" id="inspectionDate" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="overallRating">Overall rating</label>
                                                     <div class="select-holder">
-                                                        <select class="form-control" id="overallRating" required>
+                                                        <select class="form-control" name="school_data[overall_rating]" id="overallRating" required>
                                                             <option value="">Choose...</option>
                                                             <option value="Outstanding">Outstanding</option>
                                                             <option value="Good">Good</option>
                                                             <option value="Requires Improvement">Requires Improvement</option>
                                                         </select>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="reportFile">Ofsted report File</label>
-                                                    <input type="file" class="form-control-file" id="reportFile">
+                                                    <input type="file" name="school_data[ofsted_report_file]" class="form-control-file" id="reportFile">
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
 
@@ -1056,75 +1052,75 @@
                                                     <label for="regOpen">Registration opens</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="regOpen" required>
+                                                        <input type="text" name="school_data[registration_opens]" class="form-control rureradatepicker rurera-req-field" id="regOpen" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="regClose">Registration Closes</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="regClose" required>
+                                                        <input type="text" name="school_data[registration_closes]" class="form-control rureradatepicker rurera-req-field" id="regClose" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="examDate">11+ Exam Date</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="examDate" required>
+                                                        <input type="text" name="school_data[11_plus_exam_date]" class="form-control rureradatepicker rurera-req-field" id="examDate" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="resultDate">Results date</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
+                                                        <input type="text" name="school_data[results_date]" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="resultPublished">Results published</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultPublished" required>
+                                                        <input type="text" name="school_data[results_published]" class="form-control rureradatepicker rurera-req-field" id="resultPublished" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="caafDeadline">CAAF applications deadline</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="caafDeadline" required>
+                                                        <input type="text" name="school_data[caaf_applications_deadline]" class="form-control rureradatepicker rurera-req-field" id="caafDeadline" required>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="offerDay">National offer day</label>
                                                     <div class="datepicker-field">
                                                         <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="offerDay" required>
+                                                        <input type="text" name="school_data[national_offer_day]" class="form-control rureradatepicker rurera-req-field" id="offerDay" required>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1269,7 +1265,7 @@
 
 @push('scripts_bottom')
     <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
-    
+
     <script>
         $(".sidebar-mini").addClass('sidebar-mini');
         var templates_items = {};
