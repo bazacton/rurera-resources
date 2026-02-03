@@ -1268,6 +1268,7 @@
                     cleanText(tempDiv);
                     removeInlineStyles(tempDiv);
                     removeDirAttribute(tempDiv);
+                    unwrapGoogleDocsSpans(tempDiv);
                     convertBoldToHeading(tempDiv);
                     fixHeadingOverflow(tempDiv);
 
@@ -1275,6 +1276,18 @@
                 }
             }
         });
+
+        function unwrapGoogleDocsSpans(container) {
+            container.querySelectorAll('span[id^="docs-internal-guid"]').forEach(span => {
+                const fragment = document.createDocumentFragment();
+
+                while (span.firstChild) {
+                    fragment.appendChild(span.firstChild);
+                }
+
+                span.replaceWith(fragment);
+            });
+        }
         function fixHeadingOverflow(container) {
             container.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(heading => {
                 let nodes = Array.from(heading.childNodes);
