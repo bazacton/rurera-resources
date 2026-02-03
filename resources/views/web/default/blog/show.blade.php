@@ -130,7 +130,7 @@
 						</div>
 					</div>
 				@endif
-                <div class="mb-15">
+                <div class="row mb-15 mx-0">
                     <div class="col-12">
                         <div class="section-title mb-15">
                             <h2 class="mb-0 font-22">Related posts</h2>
