@@ -269,3 +269,46 @@
     color: #999;
 }
 /* Location Style End */
+/* Blog Stats Style Start */
+    .blog-single-post .stats-grid {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 25px;
+        margin: 0 0 30px;
+    }
+    .blog-single-post .stats-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 25px;
+        padding-top: 25px;
+        border-top: 1px solid #ddd;
+    }
+    .blog-single-post .stat-item {
+        flex: 0 0 33%;
+        max-width: 33%;
+        text-align: center;
+        border-right: 1px solid #ddd;
+        padding: 25px;
+    }
+    .blog-single-post .stat-item:nth-child(3n) {
+        border-right: 0;
+    }
+    .stats-row:first-child .stat-item {
+        border-top: 0;
+    }
+    .blog-single-post .stats-row:first-child {
+        border-top: 0;
+        padding: 0;
+        margin: 0 0 25px;
+    }
+    .blog-single-post .stat-value {
+        color: var(--primary);
+        font-weight: bold;
+    }
+    .blog-single-post .stat-label {
+        color: #666;
+    }
+    .blog-single-post .stats-row:last-child {
+        margin-bottom: 0;
+    }
+    /* Blog Stats Style End */
