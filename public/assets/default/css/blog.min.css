@@ -264,5 +264,13 @@
 }
 .rurera-address-details p {
     margin: 0;
+    color: #818894;
+}
+.rurera-description-text {
+    margin-bottom: 1.5rem;
+}
+.rurera-address-details h5 {
+    font-size: 1rem;
+    margin: 0 0 5px;
 }
 /* Location Style End */
