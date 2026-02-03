@@ -447,7 +447,7 @@
     /* Location Style Start */
     .rurera-location-section {
         border: 1px solid #ddd;
-        margin: 0;
+        margin: 0 0 30px;
         border-radius: 5px;
         padding: 15px 0;
     }
