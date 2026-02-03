@@ -539,6 +539,28 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label>SEO Title</label>
+                                    <input type="text" name="seo_title"
+                                           class="form-control  @error('seo_title') is-invalid @enderror"
+                                           value="{{ !empty($post) ? $post->seo_title : old('seo_title') }}"
+                                           placeholder="SEO Title"/>
+                                    @error('seo_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+
+                                <div class="form-group mt-15">
+                                    <label class="input-label">{{ trans('admin/pages/blog.meta_description') }}</label>
+                                    <textarea name="meta_description" rows="5" class="form-control @error('meta_description')  is-invalid @enderror" placeholder="{{ trans('admin/pages/blog.meta_description_placeholder') }}">{!! !empty($post) ? $post->meta_description : old('meta_description')  !!}</textarea>
+                                    @error('meta_description')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
                                 <div class="form-group custom-switches-stacked flex-row">
                                     <label class="input-label">{{ trans('admin/main.robot') }}:</label>
                                     <label class="custom-switch pl-0">
@@ -880,33 +902,6 @@
                                         <button class="btn btn-primary mt-3" type="submit">Submit form</button>
                                     </div>
                                 </div>
-                                
-
-                                <div class="form-group">
-                                    <label>SEO Title</label>
-                                    <input type="text" name="seo_title"
-                                           class="form-control  @error('seo_title') is-invalid @enderror"
-                                           value="{{ !empty($post) ? $post->seo_title : old('seo_title') }}"
-                                           placeholder="SEO Title"/>
-                                    @error('seo_title')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-
-
-                                <div class="form-group mt-15">
-                                    <label class="input-label">{{ trans('admin/pages/blog.meta_description') }}</label>
-                                    <textarea name="meta_description" rows="5" class="form-control @error('meta_description')  is-invalid @enderror" placeholder="{{ trans('admin/pages/blog.meta_description_placeholder') }}">{!! !empty($post) ? $post->meta_description : old('meta_description')  !!}</textarea>
-                                    @error('meta_description')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-
-                                
 
                                 <button type="submit" class="btn btn-primary mt-1">{{ trans('admin/main.save_change') }}</button>
                             </form>
