@@ -264,6 +264,9 @@
 
 
 <script>
+
+
+    var GalleryItems = [];
     (function() {
         'use strict';
 
@@ -292,7 +295,7 @@
                 selectedToInsertIds.add(id);
                 $(this).addClass('rfp-selected');
             }
-            console.log('----selectedToInsertIds---');
+            console.log('=========selectedToInsertIds=====');
             console.log(selectedToInsertIds);
             renderGalleryTab();
             updateInsertFooter();
@@ -431,10 +434,11 @@
         }
 
         function loadGallery() {
+
             try {
-                const raw = localStorage.getItem(CONFIG.storageKey);
-                const parsed = raw ? JSON.parse(raw) : [];
-                return Array.isArray(parsed) ? parsed : [];
+                /*const raw = localStorage.getItem(CONFIG.storageKey);
+                const parsed = raw ? JSON.parse(raw) : [];*/
+                return Array.isArray(GalleryItems) ? GalleryItems : [];
             } catch (e) {
                 return [];
             }
@@ -613,6 +617,8 @@
             const frag = document.createDocumentFragment();
             items.forEach(item => {
                 const tile = document.createElement('div');
+                console.log('item.id======'+item.id);
+                console.log(selectedToInsertIds);
                 const selected = selectedToInsertIds.has(item.id);
                 console.log('----selected----');
                 console.log(selected);
@@ -642,8 +648,12 @@
             const sort = el.filterSort.value;
             const q = (el.search && el.search.value ? el.search.value : '').trim().toLowerCase();
 
+            console.log('allItems0000');
+            console.log(allItems);
             let items = [...allItems];
 
+            console.log('-----------type----------');
+            console.log(q);
             if (type !== 'all') {
                 items = items.filter(it => {
                     if (type === 'image') return it.kind === 'image';
@@ -685,16 +695,19 @@
                 return;
             }
 
-            var preview_div = $('.rurera-file-manager-attr')
-                .attr('data-preview_div')
-                .replace(/^"+|"+$/g, '');
+            var $el = $('.rurera-file-manager-attr');
 
-            var field_name = $('.rurera-file-manager-attr')
-                .attr('data-field_name')
-                .replace(/^"+|"+$/g, '');
-            var question_id = $('.rurera-file-manager-attr')
-                .attr('data-question_id')
-                .replace(/^"+|"+$/g, '');
+            function getAttr(name) {
+                return ($el.attr(name) || '').replace(/^"+|"+$/g, '');
+            }
+
+            var upload_type = getAttr('data-upload_type');
+            var question_id = getAttr('data-question_id');
+            var upload_path = getAttr('data-upload_path');
+            var upload_dir  = getAttr('data-upload_dir');
+            var preview_div = getAttr('data-preview_div');
+            var field_name  = getAttr('data-field_name');
+            var is_multiple = getAttr('data-is_multiple');
 
             var hidden_field = $(".hidden-field-data").find('input').first().clone();
 
@@ -828,32 +841,19 @@
                 fd.append('files[]', f, f.name);
             }
 
-            var upload_type = $('.rurera-file-manager-attr')
-                .attr('data-upload_type')
-                .replace(/^"+|"+$/g, '');
+            var $el = $('.rurera-file-manager-attr');
 
-            var question_id = $('.rurera-file-manager-attr')
-                .attr('data-question_id')
-                .replace(/^"+|"+$/g, '');
+            function getAttr(name) {
+                return ($el.attr(name) || '').replace(/^"+|"+$/g, '');
+            }
 
-            var upload_path = $('.rurera-file-manager-attr')
-                .attr('data-upload_path')
-                .replace(/^"+|"+$/g, '');
-
-            var upload_dir = $('.rurera-file-manager-attr')
-                .attr('data-upload_dir')
-                .replace(/^"+|"+$/g, '');
-
-
-            var preview_div = $('.rurera-file-manager-attr')
-                .attr('data-preview_div')
-                .replace(/^"+|"+$/g, '');
-            var field_name = $('.rurera-file-manager-attr')
-                .attr('data-field_name')
-                .replace(/^"+|"+$/g, '');
-            var is_multiple = $('.rurera-file-manager-attr')
-                .attr('data-is_multiple')
-                .replace(/^"+|"+$/g, '');
+            var upload_type = getAttr('data-upload_type');
+            var question_id = getAttr('data-question_id');
+            var upload_path = getAttr('data-upload_path');
+            var upload_dir  = getAttr('data-upload_dir');
+            var preview_div = getAttr('data-preview_div');
+            var field_name  = getAttr('data-field_name');
+            var is_multiple = getAttr('data-is_multiple');
 
             fd.append('upload_type', upload_type);
             fd.append('question_id', question_id);
@@ -885,6 +885,10 @@
 
                 // Normalize response
                 let res = ajaxResult;
+
+
+                console.log('-------------22222222222222222222-----');
+                console.log(res);
                 if (typeof res === 'string') {
                     try { res = JSON.parse(res); } catch (_) {}
                 }
@@ -911,7 +915,18 @@
                         const kind = fileKindFromTypeOrExt(mime, name);
                         const url = meta.url || meta.path || meta.file_url || null;
                         const thumbUrl = meta.thumb || meta.thumbnail || (kind === 'image' ? url : null);
-
+                        GalleryItems.push({
+                            id: String(meta.id || ('rfp_' + now + '_' + Math.random().toString(16).slice(2))),
+                            name,
+                            mime,
+                            kind,
+                            size: typeof meta.size === 'number' ? meta.size : null,
+                            uploadedAt: meta.uploadedAt || meta.uploaded_at || Date.now(),
+                            url,
+                            thumbUrl,
+                            dataUrl: null,
+                            displayTitle: null
+                        });
                         newItems.push({
                             id: String(meta.id || ('rfp_' + now + '_' + Math.random().toString(16).slice(2))),
                             name,

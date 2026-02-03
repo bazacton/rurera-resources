@@ -27,7 +27,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="mt-15 mb-60 lms-blog blog-single-post mt-80">
         <div class="container">
             <div class="row">
@@ -43,7 +43,7 @@
                         </div> -->
                         <!-- ShareThis ENDS -->
 
-                        
+
                         <!-- Share bar -->
                         <div class="sharebar" role="group">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
@@ -85,8 +85,8 @@
                             </button>
                         </div>
 
-                        {!! getBodyContent($post->content) !!}
-                    
+                        {!! getBodyContent($post_content) !!}
+
                     {{-- post Comments --}}
                     @if($post->enable_comment)
                         @include('web.default.includes.comments',[
@@ -109,7 +109,7 @@
                     <div class="dates-diary mb-30 mt-45">
                         <span class="badge">Works</span>
                     </div>
-                    
+
                     </div>
                 </div>
                 @if( !empty( $headings_array ) )

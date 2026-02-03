@@ -899,7 +899,7 @@
             flex-direction: column;
             gap: 30px;
         }
-        
+
         .blog-single-post .rurera-ofsted-right {
             order: 0;
             border-top: 1px solid #f1f5f9;
@@ -1101,6 +1101,26 @@
                                     </div>
                                     <label for="statusSwitch" class="mb-0">{{ trans('admin/main.publish') }}</label>
                                 </div>
+
+                                <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
+                                    <div class="custom-control custom-switch align-items-start">
+                                        <input type="checkbox" name="is_grammer_school" class="custom-control-input" id="is_grammer_school" {{ (isset($post) && $post->is_grammer_school) ? 'checked' : '' }}>
+                                        <label class="custom-control-label" for="is_grammer_school"></label>
+                                    </div>
+                                    <label for="is_grammer_school" class="mb-0">Grammer School</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="input-label">Grammer School</label>
+                                    <select name="grammer_school_id" class="form-control grammer_school_id">
+                                        <option value="">Select School</option>
+                                        @foreach($grammerSchools as $grammerSchoolObj)
+                                            @php $selected = (isset($post->id) && $grammerSchoolObj->id == $post->grammer_school_id)? 'selected' : ''; @endphp
+                                            <option value="{{ $grammerSchoolObj->id }}" {{$selected}}>{{$grammerSchoolObj->school_name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="grammer-school-block"></div>
                                 <div class="form-group mt-15">
                                     <label class="input-label">{{ trans('public.description') }}</label>
                                     <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
@@ -1280,5 +1300,27 @@
             //$(".canned-templates-list").html(list_data);
         }
         reset_templatest_list();
+
+
+        $(document).on('change', '.grammer_school_id', function (e) {
+            var loadDiv = $('.grammer-school-block');
+            var school_id = $(this).val();
+            rurera_loader(loadDiv, 'div');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/grammer_schools/get_school_data',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"school_id": school_id},
+                success: function (return_data) {
+                    rurera_remove_loader(loadDiv, 'div');
+                    loadDiv.html(return_data);
+                }
+            });
+        });
+        $('.grammer_school_id').change();
+
+
     </script>
 @endpush
