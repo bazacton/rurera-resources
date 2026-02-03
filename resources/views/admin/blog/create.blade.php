@@ -1031,49 +1031,49 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="regOpen">Registration opens</label>
-                                                    <input type="date" class="form-control" id="regOpen" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="regOpen" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="regClose">Registration Closes</label>
-                                                    <input type="date" class="form-control" id="regClose" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="regClose" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="examDate">11+ Exam Date</label>
-                                                    <input type="date" class="form-control" id="examDate" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="examDate" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="resultDate">Results date</label>
-                                                    <input type="date" class="form-control" id="resultDate" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="resultPublished">Results published</label>
-                                                    <input type="date" class="form-control" id="resultPublished" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultPublished" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="caafDeadline">CAAF applications deadline</label>
-                                                    <input type="date" class="form-control" id="caafDeadline" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="caafDeadline" required>
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="offerDay">National offer day</label>
-                                                    <input type="date" class="form-control" id="offerDay" required>
+                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="offerDay" required>
                                                 </div>
                                             </div>
                                         </div>
