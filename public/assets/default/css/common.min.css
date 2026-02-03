@@ -15405,6 +15405,9 @@ p {
     user-select: none;
     border-radius: 3px;
 }
+.sharebar .btn:hover {
+    color: #fff;
+}
 .btn__icon{
     display:inline-flex;
     align-items:center;
