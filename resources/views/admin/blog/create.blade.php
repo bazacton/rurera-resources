@@ -419,6 +419,19 @@
         flex: 0 0 calc(100% - 110px);
         max-width: calc(100% - 110px);
     }
+    .datepicker-field {
+        position: relative;
+    }
+    .blog-edit-sidebar .form-field .datepicker-field input {
+        max-width: 100%;
+    }
+    .datepicker-field i {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
     /* Blog Single Post Style End */
 </style>
 @endpush
