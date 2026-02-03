@@ -586,7 +586,7 @@
         height: 40px;
         width: 40px;
         border-radius: 100%;
-        background-color: var(--category-color);
+        background-color: var(--primary);
         padding: 0 10px;
         margin: -20px 0 0 -20px;
     }
