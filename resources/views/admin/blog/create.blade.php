@@ -823,7 +823,7 @@
         color: #1e293b;
     }
     .rurera-view-report-btn {
-        background-color: #2dd4bf;
+        background-color: var(--primary);
         color: #ffffff;
         font-weight: 600;
         padding: 10px 24px;
