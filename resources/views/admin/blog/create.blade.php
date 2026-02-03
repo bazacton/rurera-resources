@@ -458,7 +458,7 @@
         border-radius: 25px;
         display: inline-block;
         line-height: normal;
-        margin: 0 0 10px;
+        margin: 0 0 15px;
         color: #007bff;
         font-weight: 500;
     }
@@ -476,6 +476,9 @@
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 15px;
+    }
+    .blog-single-post .rurera-location-section h3 {
+        margin: 0 0 25px;
     }
     .rurera-address-icon-box {
         height: 40px;
