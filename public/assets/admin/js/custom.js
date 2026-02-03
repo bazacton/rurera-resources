@@ -1267,11 +1267,40 @@
 
                     cleanText(tempDiv);
                     removeInlineStyles(tempDiv);
+                    fixHeadingOverflow(tempDiv);
 
                     document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
         });
+
+        function fixHeadingOverflow(container) {
+            container.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(heading => {
+                let nodes = Array.from(heading.childNodes);
+
+                if (nodes.length <= 1) return;
+
+                let fragment = document.createDocumentFragment();
+                let firstTextFound = false;
+
+                nodes.forEach(node => {
+                    if (!firstTextFound && node.nodeType === Node.TEXT_NODE && node.nodeValue.trim()) {
+                        firstTextFound = true;
+                        return;
+                    }
+
+                    if (firstTextFound) {
+                        fragment.appendChild(node);
+                    }
+                });
+
+                if (fragment.childNodes.length) {
+                    let p = document.createElement('p');
+                    p.appendChild(fragment);
+                    heading.after(p);
+                }
+            });
+        }
 
         // --- Modal events ---
         $(document).on("click", "#faqAddRowBtn", function () {
