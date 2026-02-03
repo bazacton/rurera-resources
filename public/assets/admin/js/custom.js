@@ -1267,6 +1267,9 @@
 
                     cleanText(tempDiv);
                     removeInlineStyles(tempDiv);
+                    removeDirAttribute(tempDiv);
+                    unwrapGoogleDocsSpans(tempDiv);
+                    convertBoldToHeading(tempDiv);
                     fixHeadingOverflow(tempDiv);
 
                     document.execCommand('insertHTML', false, tempDiv.innerHTML);
@@ -1274,31 +1277,71 @@
             }
         });
 
+        function unwrapGoogleDocsSpans(container) {
+            container.querySelectorAll('span[id^="docs-internal-guid"]').forEach(span => {
+                const fragment = document.createDocumentFragment();
+
+                while (span.firstChild) {
+                    fragment.appendChild(span.firstChild);
+                }
+
+                span.replaceWith(fragment);
+            });
+        }
         function fixHeadingOverflow(container) {
             container.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(heading => {
                 let nodes = Array.from(heading.childNodes);
-
                 if (nodes.length <= 1) return;
 
-                let fragment = document.createDocumentFragment();
-                let firstTextFound = false;
+                let buffer = [];
+                let currentBlock = [];
 
                 nodes.forEach(node => {
-                    if (!firstTextFound && node.nodeType === Node.TEXT_NODE && node.nodeValue.trim()) {
-                        firstTextFound = true;
-                        return;
-                    }
-
-                    if (firstTextFound) {
-                        fragment.appendChild(node);
+                    if (node.nodeType === Node.TEXT_NODE && node.nodeValue.trim()) {
+                        currentBlock.push(node);
+                    } else if (node.nodeType === Node.ELEMENT_NODE) {
+                        buffer.push(node);
                     }
                 });
 
-                if (fragment.childNodes.length) {
-                    let p = document.createElement('p');
-                    p.appendChild(fragment);
-                    heading.after(p);
+                // Keep only first text node in heading
+                let firstText = nodes.find(n => n.nodeType === Node.TEXT_NODE && n.nodeValue.trim());
+                heading.innerHTML = firstText ? firstText.nodeValue.trim() : heading.textContent.trim();
+
+                // Reinsert overflow nodes
+                buffer.forEach(node => {
+                    if (node.tagName === 'UL' || node.tagName === 'OL') {
+                        heading.after(node);
+                    } else {
+                        let p = document.createElement('p');
+                        p.appendChild(node);
+                        heading.after(p);
+                    }
+                });
+            });
+        }
+
+        function removeDirAttribute(node) {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+                if (node.getAttribute('dir') === 'ltr' || node.getAttribute('dir') === 'rtl') {
+                    node.removeAttribute('dir');
                 }
+            }
+            node.childNodes.forEach(removeDirAttribute);
+        }
+
+        function convertBoldToHeading(container) {
+            container.querySelectorAll('p').forEach(p => {
+                let strong = p.querySelector('strong');
+                if (!strong) return;
+
+                // Only convert if strong contains most of the text
+                if (strong.textContent.trim().length < p.textContent.trim().length * 0.6) return;
+
+                let h = document.createElement('h2');
+                h.textContent = strong.textContent.trim();
+
+                p.replaceWith(h);
             });
         }
 
