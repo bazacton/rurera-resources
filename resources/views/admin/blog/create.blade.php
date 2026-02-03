@@ -669,14 +669,14 @@
     }
     /* Blog Stats Style End */
     /* Blog Timeline Style Start */
-    .main-heading {
+    .blog-single-post .main-heading {
         color: #2c3e50;
         font-weight: 700;
         margin-bottom: 40px;
         text-align: center;
         position: relative;
     }
-    .main-heading::after {
+    .blog-single-post .main-heading::after {
         content: '';
         display: block;
         width: 60px;
@@ -686,11 +686,11 @@
         border-radius: 2px;
     }
     /* Timeline Structure */
-    .timeline {
+    .blog-single-post .timeline {
         position: relative;
         padding-left: 50px;
     }
-    .timeline::before {
+    .blog-single-post .timeline::before {
         content: '';
         position: absolute;
         left: 20px;
@@ -699,12 +699,12 @@
         width: 3px;
         background: #e9ecef;
     }
-    .timeline-item {
+    .blog-single-post .timeline-item {
         position: relative;
         margin-bottom: 45px;
     }
     /* Timeline Dot */
-    .timeline-marker {
+    .blog-single-post .timeline-marker {
         position: absolute;
         left: -50px;
         top: 0;
@@ -721,13 +721,13 @@
         box-shadow: 0 0 0 5px #f8f9fa; /* Mask line behind dot */
         transition: all 0.3s ease;
     }
-    .timeline-item:hover .timeline-marker {
+    .blog-single-post .timeline-item:hover .timeline-marker {
         background: #3498db;
         color: #fff;
         transform: scale(1.1);
     }
     /* Content Card */
-    .timeline-content {
+    .blog-single-post .timeline-content {
         background: #fff;
         padding: 25px;
         border-radius: 6px;
@@ -735,24 +735,24 @@
         border-left: 4px solid transparent;
         transition: all 0.3s ease;
     }
-    .timeline-item:hover .timeline-content {
+    .blog-single-post .timeline-item:hover .timeline-content {
         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         border-left-color: #3498db;
         transform: translateX(5px);
     }
-    .step-title {
+    .blog-single-post .step-title {
         font-size: 1.2rem;
         font-weight: 600;
         color: #2c3e50;
         margin-bottom: 10px;
     }
-    .step-description {
+    .blog-single-post .step-description {
         color: #6c757d;
         font-size: 0.95rem;
         line-height: 1.6;
         margin-bottom: 15px;
     }
-    .btn-outline-custom {
+    .blog-single-post .btn-outline-custom {
         color: #3498db;
         border: 2px solid #3498db;
         font-weight: 600;
@@ -761,34 +761,34 @@
         font-size: 0.85rem;
         transition: all 0.3s;
     }
-    .btn-outline-custom:hover {
+    .blog-single-post .btn-outline-custom:hover {
         background-color: #3498db;
         color: #fff;
         text-decoration: none;
     }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
-    .rurera-ofsted-section {
+    .blog-single-post .rurera-ofsted-section {
         padding: 60px 0;
         max-width: 900px;
         margin: 0 auto;
     }
-    .rurera-ofsted-title {
+    .blog-single-post .rurera-ofsted-title {
         font-weight: 700;
         color: #0f172a;
         margin-bottom: 40px;
     }
-    .rurera-ofsted-layout {
+    .blog-single-post .rurera-ofsted-layout {
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
         margin-bottom: 50px;
     }
-    .rurera-ofsted-left {
+    .blog-single-post .rurera-ofsted-left {
         flex: 3;
         min-width: 300px;
     }
-    .rurera-ofsted-right {
+    .blog-single-post .rurera-ofsted-right {
         flex: 2;
         min-width: 250px;
         display: flex;
@@ -797,7 +797,7 @@
         justify-content: center;
         text-align: center;
     }
-    .rurera-rating-row {
+    .blog-single-post .rurera-rating-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -805,24 +805,24 @@
         border-bottom: 1px solid #f1f5f9;
         color: #475569;
     }
-    .rurera-rating-row:last-of-type {
+    .blog-single-post .rurera-rating-row:last-of-type {
         border-bottom: none;
         margin-bottom: 20px;
     }
-    .rurera-rating-value {
+    .blog-single-post .rurera-rating-value {
         font-weight: 600;
         color: #1e293b;
     }
-    .rurera-rating-good {
+    .blog-single-post .rurera-rating-good {
         color: #1e293b;
     }
-    .rurera-rating-outstanding {
+    .blog-single-post .rurera-rating-outstanding {
         color: #1e293b;
     }
-    .rurera-rating-requires {
+    .blog-single-post .rurera-rating-requires {
         color: #1e293b;
     }
-    .rurera-view-report-btn {
+    .blog-single-post .rurera-view-report-btn {
         background-color: var(--primary);
         color: #ffffff;
         font-weight: 600;
@@ -834,12 +834,12 @@
         text-decoration: none;
         transition: background-color 0.2s;
     }
-    .rurera-view-report-btn:hover {
-        background-color: #14b8a6;
+    .blog-single-post .rurera-view-report-btn:hover {
+        background-color: var(--primary);
         color: #ffffff;
         text-decoration: none;
     }
-    .rurera-big-badge {
+    .blog-single-post .rurera-big-badge {
         background-color: #22c55e;
         color: #ffffff;
         font-size: 24px;
@@ -849,32 +849,31 @@
         margin-bottom: 24px;
         display: inline-block;
     }
-
-    .rurera-inspection-date {
+    .blog-single-post .rurera-inspection-date {
         color: #64748b;
     }
-    .rurera-inspection-date strong {
+    .blog-single-post .rurera-inspection-date strong {
         color: #1e293b;
         display: block;
         margin-top: 4px;
     }
     /* Summary Styling */
-    .rurera-summary-section {
+    .blog-single-post .rurera-summary-section {
         margin-top: 60px;
         padding-top: 40px;
         border-top: 1px solid #e2e8f0;
     }
-    .rurera-summary-title {
+    .blog-single-post .rurera-summary-title {
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 24px;
         color: #1e293b;
     }
-    .rurera-summary-item {
+    .blog-single-post .rurera-summary-item {
         display: flex;
         margin-bottom: 24px;
     }
-    .rurera-summary-icon {
+    .blog-single-post .rurera-summary-icon {
         width: 40px;
         height: 40px;
         background-color: #f1f5f9;
@@ -886,22 +885,22 @@
         margin-right: 16px;
         flex-shrink: 0;
     }
-    .rurera-summary-text h5 {
+    .blog-single-post .rurera-summary-text h5 {
         margin-bottom: 4px;
         color: #1e293b;
     }
-    .rurera-summary-text p {
+    .blog-single-post .rurera-summary-text p {
         color: #64748b;
         margin-bottom: 0;
     }
 
     @media (max-width: 768px) {
-        .rurera-ofsted-layout {
+        .blog-single-post .rurera-ofsted-layout {
             flex-direction: column;
             gap: 30px;
         }
         
-        .rurera-ofsted-right {
+        .blog-single-post .rurera-ofsted-right {
             order: 0;
             border-top: 1px solid #f1f5f9;
             padding-top: 30px;
