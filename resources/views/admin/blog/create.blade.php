@@ -539,28 +539,309 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="form-group mt-15">
-                                    <label class="input-label">{{ trans('public.description') }}</label>
-                                    <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
-                                    <textarea id="summernote" name="description" class="summernote-source form-control @error('description')  is-invalid @enderror" placeholder="{{ trans('admin/main.description_placeholder') }}">{!! !empty($post) ? $post->description : old('description')  !!}</textarea>
-                                    @error('description')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <div class="form-group mt-15">
+                                        <label class="input-label">{{ trans('public.description') }}</label>
+                                        <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
+                                        <textarea id="summernote" name="description" class="summernote-source form-control @error('description')  is-invalid @enderror" placeholder="{{ trans('admin/main.description_placeholder') }}">{!! !empty($post) ? $post->description : old('description')  !!}</textarea>
+                                        @error('description')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
-                                    @enderror
-                                </div>
 
-                                <div class="form-group mt-15">
-                                    <label class="input-label">{{ trans('admin/main.content') }}</label>
-                                    <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_content_hint') }}</div>
-                                    <textarea id="contentSummernote" name="content" class="summernote-source form-control @error('content')  is-invalid @enderror" placeholder="{{ trans('admin/main.content_placeholder') }}">{!! !empty($post) ? $post->content : old('content')  !!}</textarea>
-                                    @error('content')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
+                                    <div class="form-group mt-15">
+                                        <label class="input-label">{{ trans('admin/main.content') }}</label>
+                                        <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_content_hint') }}</div>
+                                        <textarea id="contentSummernote" name="content" class="summernote-source form-control @error('content')  is-invalid @enderror" placeholder="{{ trans('admin/main.content_placeholder') }}">{!! !empty($post) ? $post->content : old('content')  !!}</textarea>
+                                        @error('content')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
-                                    @enderror
                                 </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <!-- Blog Stats -->
+                                    <h4 class="section-header">Blog Stats</h4>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="shares">Shares</label>
+                                            <input type="number" class="form-control" id="shares" placeholder="Number of Shares" required>
+                                            <div class="invalid-feedback">Please provide shares count.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="views">Views</label>
+                                            <input type="number" class="form-control" id="views" placeholder="Number of Views" required>
+                                            <div class="invalid-feedback">Please provide views count.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- At a glance -->
+                                    <h4 class="section-header">At a glance</h4>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="schoolName">School Name</label>
+                                            <input type="text" class="form-control" id="schoolName" required>
+                                            <div class="invalid-feedback">School Name is required.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="localAuthority">Local Authority</label>
+                                            <input type="text" class="form-control" id="localAuthority" required>
+                                            <div class="invalid-feedback">Local Authority is required.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="assessment">Assessment</label>
+                                            <input type="text" class="form-control" id="assessment" value="FSCE" readonly>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="feesType">Fees Type</label>
+                                            <select class="form-control" id="feesType" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Free">Free</option>
+                                                <option value="Paid">Paid</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select fees type.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="boarding">Boarding</label>
+                                            <select class="form-control" id="boarding" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Day school">Day school</option>
+                                                <option value="Boarding">Boarding</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select boarding type.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="types">Types</label>
+                                            <select class="form-control" id="types" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Mixed Boys and Girls">Mixed Boys and Girls</option>
+                                                <option value="Girls only">Girls only</option>
+                                                <option value="Boys Only">Boys Only</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select type.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="placesPerYear">Places per year</label>
+                                            <input type="number" class="form-control" id="placesPerYear" value="210" required>
+                                            <div class="invalid-feedback">Please enter places per year.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="ofstedRating">Ofsted Rating</label>
+                                            <select class="form-control" id="ofstedRating" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select Ofsted rating.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="competition">Competition</label>
+                                            <input type="text" class="form-control" id="competition" placeholder="e.g. 5-6 applicants per place" required>
+                                            <div class="invalid-feedback">Please enter competition details.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="examFormat">Exam Format</label>
+                                            <input type="text" class="form-control" id="examFormat" placeholder="e.g. GL Assessment 11+" required>
+                                            <div class="invalid-feedback">Please enter exam format.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="catchmentArea">Catchment area</label>
+                                            <select class="form-control" id="catchmentArea" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select catchment area option.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Assessment Criteria -->
+                                    <h4 class="section-header">Assessment Criteria</h4>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="english">English</label>
+                                            <select class="form-control" id="english" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="maths">Maths</label>
+                                            <select class="form-control" id="maths" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="verbalReasoning">Verbal Reasoning</label>
+                                            <select class="form-control" id="verbalReasoning" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="nonVerbalReasoning">Non-Verbal Reasoning</label>
+                                            <select class="form-control" id="nonVerbalReasoning" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="additional">Additional</label>
+                                            <select class="form-control" id="additional" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Location -->
+                                    <h4 class="section-header">Location</h4>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="address">Complete address</label>
+                                            <input type="text" class="form-control" id="address" required>
+                                            <div class="invalid-feedback">Address is required.</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="mapLat">Map LAT</label>
+                                            <input type="text" class="form-control" id="mapLat" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="mapLog">Map LOG</label>
+                                            <input type="text" class="form-control" id="mapLog" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="phone">Phone number</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                            <div class="invalid-feedback">Phone number is required.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                            <div class="invalid-feedback">Valid email is required.</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="website">Website link</label>
+                                            <input type="url" class="form-control" id="website" required>
+                                            <div class="invalid-feedback">Valid website URL is required.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Offset report (Ofsted) -->
+                                    <h4 class="section-header">Ofsted Report</h4>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="qualityEducation">The quality of education</label>
+                                            <select class="form-control" id="qualityEducation" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="behaviour">Behaviour and attitude</label>
+                                            <select class="form-control" id="behaviour" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="personalDev">Personal development</label>
+                                            <select class="form-control" id="personalDev" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="leadership">Leadership and management</label>
+                                            <select class="form-control" id="leadership" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="sixForm">Six form provision</label>
+                                            <select class="form-control" id="sixForm" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="inspectionDate">Inspection date</label>
+                                            <input type="date" class="form-control" id="inspectionDate" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="overallRating">Overall rating</label>
+                                            <select class="form-control" id="overallRating" required>
+                                                <option value="">Choose...</option>
+                                                <option value="Outstanding">Outstanding</option>
+                                                <option value="Good">Good</option>
+                                                <option value="Requires Improvement">Requires Improvement</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="reportFile">Ofsted report File</label>
+                                            <input type="file" class="form-control-file" id="reportFile">
+                                        </div>
+                                    </div>
+
+                                    <!-- Important Dates -->
+                                    <h4 class="section-header">Important Dates</h4>
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="regOpen">Registration opens</label>
+                                            <input type="date" class="form-control" id="regOpen" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="regClose">Registration Closes</label>
+                                            <input type="date" class="form-control" id="regClose" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="examDate">11+ Exam Date</label>
+                                            <input type="date" class="form-control" id="examDate" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="resultDate">Results date</label>
+                                            <input type="date" class="form-control" id="resultDate" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="resultPublished">Results published</label>
+                                            <input type="date" class="form-control" id="resultPublished" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="caafDeadline">CAAF applications deadline</label>
+                                            <input type="date" class="form-control" id="caafDeadline" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="offerDay">National offer day</label>
+                                            <input type="date" class="form-control" id="offerDay" required>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary mt-3" type="submit">Submit form</button>
+                                </div>
+                                
 
                                 <div class="form-group">
                                     <label>SEO Title</label>
