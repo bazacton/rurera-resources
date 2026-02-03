@@ -431,6 +431,11 @@
         top: 50%;
         transform: translateY(-50%);
         pointer-events: none;
+        color: #999;
+    }
+    .card-body .select-holder:after {
+        border-bottom: 2px solid #999;
+        border-left: 2px solid #999;
     }
     /* Blog Single Post Style End */
 </style>
