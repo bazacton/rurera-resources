@@ -229,10 +229,40 @@
     display: inline-block;
     line-height: normal;
     margin: 0 0 10px;
+    color: #007bff;
+    font-weight: 500;
 }
 .rurera-map-iframe {
     width: 100%;
     border: 0;
     border-radius: 5px;
+}
+.rurera-address-box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.rurera-address-icon-box {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef6ff;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.rurera-address-icon-box img {
+    height: 22px;
+    width: 22px;
+    filter: invert(27%) sepia(98%) saturate(2286%) hue-rotate(201deg) brightness(104%) contrast(107%);
+}
+.rurera-address-details {
+    flex: 0 0 84%;
+    max-width: 84%;
+}
+.rurera-address-details p {
+    margin: 0;
 }
 /* Location Style End */
