@@ -271,6 +271,14 @@
 }
 .rurera-address-details h5 {
     font-size: 1rem;
-    margin: 0 0 5px;
+}
+.rurera-address-details ul,
+.blog-single-post .post-show .rurera-address-details ul{
+    margin: 0;
+    padding: 0;
+}
+.rurera-address-details ul li,
+.blog-single-post .post-show .rurera-address-details ul li{
+    list-style: none;
 }
 /* Location Style End */
