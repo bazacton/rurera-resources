@@ -184,6 +184,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
+                        <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
+                            <div class="blog-grid-detail">
+                                <span class="badge created-at d-flex align-items-center">
+                                <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
+                                <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">19 Sep 2023</span>
+                                </span>
+                                <h2 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
+                                    <a href="/blog/personalized-learning-with-educational-technology-a-game-changer-in-education" itemprop="url" class="text-dark">2 Ways to Boost Learning and SATs Success with Rurera</a>
+                                </h2>
+                            </div>
+                            <div class="blog-grid-image">
+                                <img src="/store/1/default_images/blogs/blog-13.webp" class="img-cover" alt="2 Ways to Boost Learning and SATs Success with Rurera" title="2 Ways to Boost Learning and SATs Success with Rurera" width="1380" height="920" itemprop="image" loading="eager">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
