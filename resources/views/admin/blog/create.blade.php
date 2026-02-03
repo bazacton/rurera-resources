@@ -407,13 +407,16 @@
     }
     .blog-edit-sidebar .form-field label {
         margin: 0;
-        min-width: 80px;
+        flex: 0 0 100px;
+        max-width: 100px;
     }
     .blog-edit-sidebar .form-field input {
-        width: calc(100% - 80px);
+        flex: 0 0 calc(100% - 110px);
+        max-width: calc(100% - 110px);
     }
     .blog-edit-sidebar .select-holder {
-        width: calc(100% - 80px);
+        flex: 0 0 calc(100% - 110px);
+        max-width: calc(100% - 110px);
     }
     /* Blog Single Post Style End */
 </style>
