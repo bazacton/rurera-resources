@@ -312,3 +312,103 @@
     margin-bottom: 0;
 }
 /* Blog Stats Style End */
+
+/* Blog Timeline Style Start */
+.main-heading {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+.main-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #3498db;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+/* Timeline Structure */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #e9ecef;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 45px;
+}
+/* Timeline Dot */
+.timeline-marker {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    font-weight: bold;
+    color: #3498db;
+    z-index: 1;
+    box-shadow: 0 0 0 5px #f8f9fa; /* Mask line behind dot */
+    transition: all 0.3s ease;
+}
+.timeline-item:hover .timeline-marker {
+    background: #3498db;
+    color: #fff;
+    transform: scale(1.1);
+}
+/* Content Card */
+.timeline-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+.timeline-item:hover .timeline-content {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-left-color: #3498db;
+    transform: translateX(5px);
+}
+.step-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.step-description {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.btn-outline-custom {
+    color: #3498db;
+    border: 2px solid #3498db;
+    font-weight: 600;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+.btn-outline-custom:hover {
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+}
+/* Blog Timeline Style End */
