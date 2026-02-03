@@ -1269,9 +1269,9 @@
 
 @push('scripts_bottom')
     <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
+    
     <script>
-
-
+        $(".sidebar-mini").addClass('sidebar-mini');
         var templates_items = {};
 
         @if($cannedTemplates->count() > 0)
