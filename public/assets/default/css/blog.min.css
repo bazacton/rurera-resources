@@ -297,7 +297,10 @@
 .rurera-schools-grid {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px 15px;
+    margin: 0 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px 10px;
 }
 .rurera-school-col {
     flex: 0 0 50%;
