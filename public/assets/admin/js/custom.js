@@ -1269,6 +1269,7 @@
                     removeInlineStyles(tempDiv);
                     removeDirAttribute(tempDiv);
                     unwrapGoogleDocsSpans(tempDiv);
+                    removeInlineStyles(tempDiv);
                     convertBoldToHeading(tempDiv);
                     fixHeadingOverflow(tempDiv);
 
@@ -1276,6 +1277,14 @@
                 }
             }
         });
+
+        function removeInlineStyles(node) {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+                node.removeAttribute('style');
+            }
+
+            Array.from(node.childNodes).forEach(removeInlineStyles);
+        }
 
         function unwrapGoogleDocsSpans(container) {
             container.querySelectorAll('span[id^="docs-internal-guid"]').forEach(span => {
