@@ -539,6 +539,43 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group custom-switches-stacked flex-row">
+                                    <label class="input-label">{{ trans('admin/main.robot') }}:</label>
+                                    <label class="custom-switch pl-0">
+                                        <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
+                                        <input type="hidden" name="seo_robot_access" value="0">
+                                        <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($post) and $post->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                        <span class="custom-switch-indicator"></span>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
+                                    </label>
+                                </div>
+
+                                <div class="form-group custom-switches-stacked flex-row mt-10">
+                                       <label class="input-label">Include In XML:</label>
+                                       <label class="custom-switch pl-0">
+                                           <label class="custom-switch-description mb-0 mr-2">Not Include</label>
+                                           <input type="hidden" name="include_xml" value="0">
+                                           <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($post) and $post->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                           <span class="custom-switch-indicator"></span>
+                                           <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
+                                       </label>
+                                   </div>
+
+                                <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
+                                    <div class="custom-control custom-switch align-items-start">
+                                        <input type="checkbox" name="enable_comment" class="custom-control-input" id="commentsSwitch" {{ (!empty($post) and !$post->enable_comment) ? '' : 'checked' }}>
+                                        <label class="custom-control-label" for="commentsSwitch"></label>
+                                    </div>
+                                    <label for="commentsSwitch" class="mb-0">{{ trans('admin/main.comments_section') }}</label>
+                                </div>
+
+                                <div class="form-group mt-0 d-flex align-items-center cursor-pointer">
+                                    <div class="custom-control custom-switch align-items-start">
+                                        <input type="checkbox" name="status" class="custom-control-input" id="statusSwitch" {{ (!empty($post) and $post->status == 'pending') ? '' : 'checked' }}>
+                                        <label class="custom-control-label" for="statusSwitch"></label>
+                                    </div>
+                                    <label for="statusSwitch" class="mb-0">{{ trans('admin/main.publish') }}</label>
+                                </div>
                                 <div class="row">
                                     <div class="col-lg-8 col-md-8 col-12">
                                         <div class="form-group mt-15">
@@ -869,43 +906,7 @@
                                     @enderror
                                 </div>
 
-                                <div class="form-group custom-switches-stacked flex-row">
-                                    <label class="input-label">{{ trans('admin/main.robot') }}:</label>
-                                    <label class="custom-switch pl-0">
-                                        <label class="custom-switch-description mb-0 mr-2">{{ trans('admin/main.no_follow') }}</label>
-                                        <input type="hidden" name="seo_robot_access" value="0">
-                                        <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($post) and $post->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
-                                        <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer" for="seo_robot_access">{{ trans('admin/main.follow') }}</label>
-                                    </label>
-                                </div>
-
-                                <div class="form-group custom-switches-stacked flex-row mt-10">
-                                       <label class="input-label">Include In XML:</label>
-                                       <label class="custom-switch pl-0">
-                                           <label class="custom-switch-description mb-0 mr-2">Not Include</label>
-                                           <input type="hidden" name="include_xml" value="0">
-                                           <input type="checkbox" name="include_xml" id="include_xml" value="1" {{ (!empty($post) and $post->include_xml) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
-                                           <span class="custom-switch-indicator"></span>
-                                           <label class="custom-switch-description mb-0 cursor-pointer" for="include_xml">Include</label>
-                                       </label>
-                                   </div>
-
-                                <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
-                                    <div class="custom-control custom-switch align-items-start">
-                                        <input type="checkbox" name="enable_comment" class="custom-control-input" id="commentsSwitch" {{ (!empty($post) and !$post->enable_comment) ? '' : 'checked' }}>
-                                        <label class="custom-control-label" for="commentsSwitch"></label>
-                                    </div>
-                                    <label for="commentsSwitch" class="mb-0">{{ trans('admin/main.comments_section') }}</label>
-                                </div>
-
-                                <div class="form-group mt-0 d-flex align-items-center cursor-pointer">
-                                    <div class="custom-control custom-switch align-items-start">
-                                        <input type="checkbox" name="status" class="custom-control-input" id="statusSwitch" {{ (!empty($post) and $post->status == 'pending') ? '' : 'checked' }}>
-                                        <label class="custom-control-label" for="statusSwitch"></label>
-                                    </div>
-                                    <label for="statusSwitch" class="mb-0">{{ trans('admin/main.publish') }}</label>
-                                </div>
+                                
 
                                 <button type="submit" class="btn btn-primary mt-1">{{ trans('admin/main.save_change') }}</button>
                             </form>
