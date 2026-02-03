@@ -412,3 +412,145 @@
     text-decoration: none;
 }
 /* Blog Timeline Style End */
+/* Ofsted Report Styling */
+.rurera-ofsted-section {
+    padding: 60px 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.rurera-ofsted-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 40px;
+}
+.rurera-ofsted-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+.rurera-ofsted-left {
+    flex: 3;
+    min-width: 300px;
+}
+.rurera-ofsted-right {
+    flex: 2;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rurera-rating-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+}
+.rurera-rating-row:last-of-type {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+.rurera-rating-value {
+    font-weight: 600;
+    color: #1e293b;
+}
+.rurera-rating-good {
+    color: #1e293b;
+}
+.rurera-rating-outstanding {
+    color: #1e293b;
+}
+.rurera-rating-requires {
+    color: #1e293b;
+}
+.rurera-view-report-btn {
+    background-color: #2dd4bf;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.rurera-view-report-btn:hover {
+    background-color: #14b8a6;
+    color: #ffffff;
+    text-decoration: none;
+}
+.rurera-big-badge {
+    background-color: #22c55e;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.rurera-inspection-date {
+    color: #64748b;
+}
+.rurera-inspection-date strong {
+    color: #1e293b;
+    display: block;
+    margin-top: 4px;
+}
+/* Summary Styling */
+.rurera-summary-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #e2e8f0;
+}
+.rurera-summary-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1e293b;
+}
+.rurera-summary-item {
+    display: flex;
+    margin-bottom: 24px;
+}
+.rurera-summary-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+.rurera-summary-text h5 {
+    margin-bottom: 4px;
+    color: #1e293b;
+}
+.rurera-summary-text p {
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .rurera-ofsted-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .rurera-ofsted-right {
+        order: 0;
+        border-top: 1px solid #f1f5f9;
+        padding-top: 30px;
+    }
+}
+/* Ofsted Report Styling End */
