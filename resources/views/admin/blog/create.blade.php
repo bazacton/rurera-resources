@@ -317,6 +317,9 @@
         border: 0;
         line-height: normal;
         min-height: auto;
+        position: sticky !important;
+        top: 0;
+        z-index: 1;
     }
     .blog-single-post .card .card-header h5 {
         width: 100%;
@@ -437,6 +440,130 @@
         border-bottom: 2px solid #999;
         border-left: 2px solid #999;
     }
+    /* Location Style Start */
+    .rurera-location-section {
+        border: 1px solid #ddd;
+        margin: 0;
+        border-radius: 5px;
+        padding: 15px 0;
+    }
+    .rurera-badge-pill {
+        background-color: #eef6ff;
+        font-size: .875rem;
+        padding: 8px 15px;
+        border-radius: 25px;
+        display: inline-block;
+        line-height: normal;
+        margin: 0 0 10px;
+        color: #007bff;
+        font-weight: 500;
+    }
+    .rurera-map-wrapper {
+        height: 100%;
+    }
+    .rurera-map-iframe {
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        height: 100%;
+    }
+    .rurera-address-box {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .rurera-address-icon-box {
+        height: 40px;
+        width: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+        margin-top: -8px;
+    }
+    .rurera-address-icon-box img {
+        height: 22px;
+        width: 22px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(107%) contrast(102%);
+    }
+    .rurera-address-details {
+        flex: 0 0 84%;
+        max-width: 84%;
+    }
+    .rurera-address-details p {
+        margin: 0;
+        color: #818894;
+    }
+    .rurera-description-text {
+        margin-bottom: 1.5rem;
+    }
+    .rurera-address-details h5 {
+        font-weight: bold;
+    }
+    .rurera-address-details ul,
+    .blog-single-post .post-show .rurera-address-details ul{
+        margin: 15px 0 0;
+        padding: 0;
+    }
+    .rurera-address-details ul li,
+    .blog-single-post .post-show .rurera-address-details ul li{
+        list-style: none;
+        line-height: normal;
+        color: #6c757d;
+    }
+    .rurera-schools-grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px 5px;
+    }
+    .rurera-school-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0;
+        border-right: 1px solid #ddd;
+    }
+    .rurera-school-item {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: .875rem;
+        color: #352c3e;
+    }
+    .rurera-school-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: calc(100% - 32px);
+    }
+    .rurera-school-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .rurera-school-icon img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .rurera-school-header {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .rurera-school-col:last-child {
+        border-right: 0;
+    }
+    .rurera-school-age {
+        color: #999;
+    }
+    /* Location Style End */
     /* Blog Single Post Style End */
 </style>
 @endpush
@@ -631,502 +758,26 @@
                                     </div>
                                     <label for="statusSwitch" class="mb-0">{{ trans('admin/main.publish') }}</label>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-8 col-12">
-                                        <div class="form-group mt-15">
-                                            <label class="input-label">{{ trans('public.description') }}</label>
-                                            <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
-                                            <textarea id="summernote" name="description" class="summernote-source form-control @error('description')  is-invalid @enderror" placeholder="{{ trans('admin/main.description_placeholder') }}">{!! !empty($post) ? $post->description : old('description')  !!}</textarea>
-                                            @error('description')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
-                                        </div>
-
-                                        <div class="form-group mt-15">
-                                            <label class="input-label">{{ trans('admin/main.content') }}</label>
-                                            <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_content_hint') }}</div>
-                                            <textarea id="contentSummernote" name="content" class="summernote-source form-control @error('content')  is-invalid @enderror" placeholder="{{ trans('admin/main.content_placeholder') }}">{!! !empty($post) ? $post->content : old('content')  !!}</textarea>
-                                            @error('content')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
-                                        </div>
+                                <div class="form-group mt-15">
+                                    <label class="input-label">{{ trans('public.description') }}</label>
+                                    <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
+                                    <textarea id="summernote" name="description" class="summernote-source form-control @error('description')  is-invalid @enderror" placeholder="{{ trans('admin/main.description_placeholder') }}">{!! !empty($post) ? $post->description : old('description')  !!}</textarea>
+                                    @error('description')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-12 blog-edit-sidebar">
-                                        <!-- Blog Stats -->
-                                        <h4>Blog Stats</h4>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="shares">Shares</label>
-                                                    <input type="number" name="school_data[no_of_shares]" class="form-control" id="shares" placeholder="Number of Shares" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please provide shares count.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="views">Views</label>
-                                                    <input type="number" name="school_data[views]" class="form-control" id="views" placeholder="Number of Views" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please provide views count.</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- At a glance -->
-                                        <h4>At a glance</h4>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="schoolName">School Name</label>
-                                                    <input type="text" name="school_data[school_name]" class="form-control" id="schoolName" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">School Name is required.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="localAuthority">Local Authority</label>
-                                                    <input type="text" name="school_data[local_authority]" class="form-control" id="localAuthority" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Local Authority is required.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="assessment">Assessment</label>
-                                                    <input type="text" name="school_data[assessment]" class="form-control" id="assessment" value="FSCE" readonly>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="feesType">Fees Type</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[fees_type]" id="feesType" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Free">Free</option>
-                                                            <option value="Paid">Paid</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please select fees type.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="boarding">Boarding</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[boarding]" id="boarding" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Day school">Day school</option>
-                                                            <option value="Boarding">Boarding</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please select boarding type.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="types">Types</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[boarding_types]" id="types" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Mixed Boys and Girls">Mixed Boys and Girls</option>
-                                                            <option value="Girls only">Girls only</option>
-                                                            <option value="Boys Only">Boys Only</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="invalid-feedback">Please select type.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="placesPerYear">Places per year</label>
-                                                    <input type="number" name="school_data[places_per_year]" class="form-control" id="placesPerYear" value="210" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please enter places per year.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="ofstedRating">Ofsted Rating</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[ofsted_rating]" id="ofstedRating" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please select Ofsted rating.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="competition">Competition</label>
-                                                    <input type="text" name="school_data[competition]" class="form-control" id="competition" placeholder="e.g. 5-6 applicants per place" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please enter competition details.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="examFormat">Exam Format</label>
-                                                    <input type="text" name="school_data[exam_format]" class="form-control" id="examFormat" placeholder="e.g. GL Assessment 11+" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Please enter exam format.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="catchmentArea">Catchment area</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[cathment_area]" id="catchmentArea" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="invalid-feedback">Please select catchment area option.</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Assessment Criteria -->
-                                        <h4>Assessment Criteria</h4>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="english">English</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[criteria_english]" id="english" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="maths">Maths</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[criteria_maths]" id="maths" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="verbalReasoning">Verbal Reasoning</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[criteria_verbal_reasoning]" id="verbalReasoning" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="nonVerbalReasoning">Non-Verbal Reasoning</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[criteria_non_verbal_reasoning]" id="nonVerbalReasoning" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="additional">Additional</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[criteria_additional]" id="additional" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- Location -->
-                                        <h4>Location</h4>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="address">Complete address</label>
-                                                    <input type="text" name="school_data[complete_address]" class="form-control" id="address" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Address is required.</div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="mapLat">Map LAT</label>
-                                                    <input type="text" name="school_data[map_lat]" class="form-control" id="mapLat" required>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="mapLog">Map LOG</label>
-                                                    <input type="text" name="school_data[map_long]" class="form-control" id="mapLog" required>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="phone">Phone number</label>
-                                                    <input type="tel" name="school_data[phone_number]" class="form-control" id="phone" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Phone number is required.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="email">Email</label>
-                                                    <input type="email" name="school_data[email]" class="form-control" id="email" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Valid email is required.</div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="website">Website link</label>
-                                                    <input type="url" name="school_data[website_link]" class="form-control" id="website" required>
-                                                </div>
-
-                                                <div class="invalid-feedback">Valid website URL is required.</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Offset report (Ofsted) -->
-                                        <h4>Ofsted Report</h4>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="qualityEducation">The quality of education</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[quality_of_education]" id="qualityEducation" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="behaviour">Behaviour and attitude</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[behaviour_attitude]" id="behaviour" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="personalDev">Personal development</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[personal_development]" id="personalDev" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="leadership">Leadership and management</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[leadership_management]" id="leadership" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="sixForm">Six form provision</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[six_form_provision]" id="sixForm" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="inspectionDate">Inspection date</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[inspection_date]" class="form-control rureradatepicker rurera-req-field" id="inspectionDate" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="overallRating">Overall rating</label>
-                                                    <div class="select-holder">
-                                                        <select class="form-control" name="school_data[overall_rating]" id="overallRating" required>
-                                                            <option value="">Choose...</option>
-                                                            <option value="Outstanding">Outstanding</option>
-                                                            <option value="Good">Good</option>
-                                                            <option value="Requires Improvement">Requires Improvement</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="reportFile">Ofsted report File</label>
-                                                    <input type="file" name="school_data[ofsted_report_file]" class="form-control-file" id="reportFile">
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- Important Dates -->
-                                        <h4>Important Dates</h4>
-                                        <div class="form-row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="regOpen">Registration opens</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[registration_opens]" class="form-control rureradatepicker rurera-req-field" id="regOpen" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="regClose">Registration Closes</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[registration_closes]" class="form-control rureradatepicker rurera-req-field" id="regClose" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="examDate">11+ Exam Date</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[11_plus_exam_date]" class="form-control rureradatepicker rurera-req-field" id="examDate" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="resultDate">Results date</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[results_date]" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="resultPublished">Results published</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[results_published]" class="form-control rureradatepicker rurera-req-field" id="resultPublished" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="caafDeadline">CAAF applications deadline</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[caaf_applications_deadline]" class="form-control rureradatepicker rurera-req-field" id="caafDeadline" required>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-field">
-                                                    <label for="offerDay">National offer day</label>
-                                                    <div class="datepicker-field">
-                                                        <i class="fa fa-calendar-week"></i>
-                                                        <input type="text" name="school_data[national_offer_day]" class="form-control rureradatepicker rurera-req-field" id="offerDay" required>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <button class="btn btn-primary mt-3" type="submit">Submit form</button>
+                                    @enderror
+                                </div>
+
+                                <div class="form-group mt-15">
+                                    <label class="input-label">{{ trans('admin/main.content') }}</label>
+                                    <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_content_hint') }}</div>
+                                    <textarea id="contentSummernote" name="content" class="summernote-source form-control @error('content')  is-invalid @enderror" placeholder="{{ trans('admin/main.content_placeholder') }}">{!! !empty($post) ? $post->content : old('content')  !!}</textarea>
+                                    @error('content')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
                                     </div>
+                                    @enderror
                                 </div>
 
                                 <button type="submit" class="btn btn-primary mt-1">{{ trans('admin/main.save_change') }}</button>
