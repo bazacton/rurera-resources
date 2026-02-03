@@ -1249,7 +1249,7 @@
                                 .replace(/⇒/g, '=>')
                                 .replace(/[✓✔]/g, 'Yes')
                                 .replace(/[✗✘]/g, 'No')
-                                // ✅ emoji-safe removal
+                                // emoji-safe removal
                                 .replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, '')
                                 .replace(/\s{2,}/g, ' ');
                         } else {
@@ -1257,7 +1257,16 @@
                         }
                     }
 
+                    // 🔥 NEW: remove inline styles ONLY
+                    function removeInlineStyles(node) {
+                        if (node.nodeType === Node.ELEMENT_NODE) {
+                            node.removeAttribute('style');
+                        }
+                        node.childNodes.forEach(removeInlineStyles);
+                    }
+
                     cleanText(tempDiv);
+                    removeInlineStyles(tempDiv);
 
                     document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
@@ -2522,4 +2531,61 @@ $(document).on('click', '.add-more-question', function (e) {
             window.location.href = return_data;
         }
     });
+});
+
+
+function loadGalleryHTML(file_url, input_data){
+    var response_url = '';
+    response_url += '<li>'+input_data+'<img src="'+file_url+'" style="width:80px;"></li>';
+    return response_url;
+}
+
+function loadOptionGallery(file_url, input_data){
+    var response_url = '';
+    if(file_url != ''){
+        response_url += '<li>'+input_data+'<img src="'+file_url+'" style="width:80px;"></li>';
+    }
+    return response_url;
+}
+
+
+$(document).on('click', '#rfp-tab-gallery', function () {
+    $(".gallery-load-form").submit();
+});
+$(document).on('submit', '.gallery-load-form', function () {
+    var loaderDiv = $('.rurera-gallery-grid');
+    rurera_loader(loaderDiv, 'div');
+    var formData = new FormData($(this)[0]);
+    $.ajax({
+        type: "POST",
+        url: '/admin/common/load_gallery_images',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (return_data) {
+            rurera_remove_loader(loaderDiv, 'div');
+            $(".rurera-gallery-grid").html(return_data);
+        }
+    });
+
+});
+
+
+$(document).on('click', '.rurera-file-manager', function () {
+    var image_attr_encoded = $(this).attr('data-image_attr');
+    var image_attr = JSON.parse(decodeURIComponent(image_attr_encoded));
+
+    var gallery_fields_encoded = $(this).attr('data-gallery_fields');
+    var gallery_fields = JSON.parse(decodeURIComponent(gallery_fields_encoded));
+
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/common/rurera_file_manager',
+        data: {'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
+        success: function (return_data) {
+            $(".rurera-file-manager-block").html(return_data);
+            $('.rurera-file-manager-modal').modal('show');
+        },
+    });
+
 });
