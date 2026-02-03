@@ -155,6 +155,9 @@
         padding-left: 45px;
         gap: 10px;
     }
+    .blog-single-post li p {
+        margin-bottom: 0;
+    }
     .single-post-subheader {
         background-color: #fafafa;
         min-height: 400px;
