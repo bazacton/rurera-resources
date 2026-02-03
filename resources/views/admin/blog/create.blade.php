@@ -447,7 +447,7 @@
                                             <input type="hidden" name="locale" value="{{ getDefaultLocale() }}">
                                         @endif
                                         <div class="row">
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label class="input-label d-block">{{ trans('update.author') }}</label>
 
@@ -469,7 +469,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>{{ trans('admin/main.title') }}</label>
                                                     <input type="text" name="title"
@@ -483,7 +483,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>Post URL</label>
                                                     <input type="text" name="slug"
@@ -497,7 +497,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>{{ trans('/admin/main.category') }}</label>
                                                     <div class="select-holder">
@@ -518,7 +518,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label class="input-label">{{ trans('public.cover_image') }}</label>
                                                     <div class="input-group">
