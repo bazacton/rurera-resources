@@ -136,7 +136,7 @@
                             <h2 class="mb-0 font-22">Related posts</h2>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
+                    <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
                         <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                             <div class="blog-grid-detail">
                                 <span class="badge created-at d-flex align-items-center">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
+                    <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
                         <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                             <div class="blog-grid-detail">
                                 <span class="badge created-at d-flex align-items-center">
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 mt-20 mt-lg-0 mb-30">
+                    <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
                         <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                             <div class="blog-grid-detail">
                                 <span class="badge created-at d-flex align-items-center">
