@@ -17,12 +17,6 @@
     .blog-single-post h4 {
         margin-bottom: 10px;
     }
-    .blog-single-post br {
-        display: none;
-    }
-    .blog-single-post p:empty {
-        display: none;
-    }
     .blog-single-post > div {
         line-height: 26px;
     }
