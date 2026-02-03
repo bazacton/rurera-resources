@@ -1104,13 +1104,13 @@
 
                                 <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
                                     <div class="custom-control custom-switch align-items-start">
-                                        <input type="checkbox" name="is_grammer_school" class="custom-control-input" id="is_grammer_school" {{ (isset($post) && $post->is_grammer_school) ? 'checked' : '' }}>
+                                        <input type="checkbox" name="is_grammer_school" class="custom-control-input is_grammer_school" id="is_grammer_school" {{ (isset($post) && $post->is_grammer_school) ? 'checked' : '' }}>
                                         <label class="custom-control-label" for="is_grammer_school"></label>
                                     </div>
                                     <label for="is_grammer_school" class="mb-0">Grammer School</label>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group grammer-school-field rurera-hide">
                                     <label class="input-label">Grammer School</label>
                                     <select name="grammer_school_id" class="form-control grammer_school_id">
                                         <option value="">Select School</option>
@@ -1120,7 +1120,7 @@
                                         @endforeach
                                     </select>
                                 </div>
-                                <div class="grammer-school-block"></div>
+                                <div class="grammer-school-block rurera-hide"></div>
                                 <div class="form-group mt-15">
                                     <label class="input-label">{{ trans('public.description') }}</label>
                                     <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
@@ -1320,6 +1320,20 @@
             });
         });
         $('.grammer_school_id').change();
+
+        $(document).on('change', '.is_grammer_school', function (e) {
+
+            var is_grammer_school = $(this).is(':checked')? true : false;
+
+
+            $(".grammer-school-field").addClass('rurera-hide');
+            $('.grammer-school-block').addClass('rurera-hide');
+            if(is_grammer_school == true){
+                $(".grammer-school-field").removeClass('rurera-hide');
+                $('.grammer-school-block').removeClass('rurera-hide');
+            }
+        });
+        $('.is_grammer_school').change();
 
 
     </script>
