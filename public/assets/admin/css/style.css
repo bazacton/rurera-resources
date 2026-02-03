@@ -1313,6 +1313,9 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 }
 .main-sidebar .sidebar-menu li a .badge {float: right; padding: 5px 10px; margin-top: 2px;}
 .main-sidebar .sidebar-menu li a i { margin-right: 12px; text-align: center;}
+.sidebar-mini .main-sidebar .sidebar-menu li a i {
+    margin: 0;
+}
 .main-sidebar .sidebar-menu li a span img {margin-left: 5px; }
 .main-sidebar .sidebar-menu li img {width: 20px; height: 20px; margin-right: 10px; object-fit: contain; filter: grayscale(100%) brightness(150%) contrast(50%);}
 .sidebar-mini .main-sidebar .sidebar-menu li img {margin-right: 0;}
