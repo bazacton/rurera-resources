@@ -997,7 +997,11 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="inspectionDate">Inspection date</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="inspectionDate" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="inspectionDate" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
@@ -1031,49 +1035,77 @@
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="regOpen">Registration opens</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="regOpen" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="regOpen" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="regClose">Registration Closes</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="regClose" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="regClose" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="examDate">11+ Exam Date</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="examDate" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="examDate" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="resultDate">Results date</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="resultPublished">Results published</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultPublished" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="resultPublished" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="caafDeadline">CAAF applications deadline</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="caafDeadline" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="caafDeadline" required>
+                                                    </div>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-field">
                                                     <label for="offerDay">National offer day</label>
-                                                    <input type="text" class="form-control rureradatepicker rurera-req-field" id="offerDay" required>
+                                                    <div class="datepicker-field">
+                                                        <i class="fa fa-calendar-week"></i>
+                                                        <input type="text" class="form-control rureradatepicker rurera-req-field" id="offerDay" required>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
