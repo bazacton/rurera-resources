@@ -1224,14 +1224,11 @@
 
                     e.preventDefault();
 
-                    // If HTML exists, work on HTML — otherwise fallback to text
                     let content = html || text;
 
-                    // Create temp container
                     let tempDiv = document.createElement('div');
                     tempDiv.innerHTML = content;
 
-                    // Walk through text nodes only
                     function cleanText(node) {
                         if (node.nodeType === Node.TEXT_NODE) {
                             node.nodeValue = node.nodeValue
@@ -1252,7 +1249,8 @@
                                 .replace(/⇒/g, '=>')
                                 .replace(/[✓✔]/g, 'Yes')
                                 .replace(/[✗✘]/g, 'No')
-                                .replace(/[\u{1F300}-\u{1F6FF}]/gu, '')
+                                // ✅ emoji-safe removal
+                                .replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, '')
                                 .replace(/\s{2,}/g, ' ');
                         } else {
                             node.childNodes.forEach(cleanText);
@@ -1261,7 +1259,6 @@
 
                     cleanText(tempDiv);
 
-                    // Insert cleaned HTML back (styles preserved!)
                     document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
