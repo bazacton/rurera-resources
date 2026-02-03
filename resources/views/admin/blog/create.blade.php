@@ -427,7 +427,7 @@
     }
     .datepicker-field i {
         position: absolute;
-        right: 15px;
+        right: 10px;
         top: 50%;
         transform: translateY(-50%);
         pointer-events: none;
