@@ -219,3 +219,20 @@
   letter-spacing:.2px;
 }
 /* Dates-Diary Style End */
+
+/* Location Style Start */
+.rurera-badge-pill {
+    background-color: #eef6ff;
+    font-size: .875rem;
+    padding: 8px 15px;
+    border-radius: 25px;
+    display: inline-block;
+    line-height: normal;
+    margin: 0 0 10px;
+}
+.rurera-map-iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+/* Location Style End */
