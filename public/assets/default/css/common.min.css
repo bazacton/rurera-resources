@@ -15410,8 +15410,8 @@ p {
     align-items:center;
     justify-content:center;
 }
-.btn--fb{ background:#3f5e9a; }
-.btn--x { background:#3a3a3a; }
+.sharebar .btn--fb{ background:#3f5e9a; }
+.sharebar .btn--x { background:#3a3a3a; }
 .sharebar .btn--share{
     min-width: 50px;
     padding: 0;
