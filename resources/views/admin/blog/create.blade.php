@@ -519,7 +519,7 @@
     .blog-single-post .rurera-schools-grid {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 0 15px;
+        margin: 0 -15px 15px;
         border: 0;
         border-radius: 5px;
         padding: 0;
