@@ -911,7 +911,7 @@
     .events-container {
         background-color: #ffffff;
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        border: 1px solid #ddd;
         padding: 30px;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -927,7 +927,7 @@
     }
     .event-row {
         padding: 20px 0;
-        border-bottom: 1px solid #e9ecef;
+        border-bottom: 1px solid #ddd;
         display: flex;
         align-items: center;
     }
@@ -953,10 +953,10 @@
         text-align: center;
     }
     .status-passed {
-        background-color: #8da2b5; /* Greyish blue */
+        background-color: #8da2b5;
     }
     .status-upcoming {
-        background-color: var(--primary); /* Red/Pinkish similar to image */
+        background-color: var(--primary);
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {
