@@ -685,16 +685,7 @@
     /* Timeline Structure */
     .blog-single-post .timeline {
         position: relative;
-        padding-left: 50px;
-    }
-    .blog-single-post .timeline::before {
-        content: '';
-        position: absolute;
-        left: 20px;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: #e9ecef;
+        padding-left: 0;
     }
     .blog-single-post .timeline-item {
         position: relative;
@@ -702,21 +693,7 @@
     }
     /* Timeline Dot */
     .blog-single-post .timeline-marker {
-        position: absolute;
-        left: -50px;
-        top: 0;
-        width: 44px;
-        height: 44px;
-        background: #fff;
-        border: 3px solid #3498db;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 38px;
-        font-weight: bold;
-        color: #3498db;
-        z-index: 1;
-        box-shadow: 0 0 0 5px #f8f9fa; /* Mask line behind dot */
-        transition: all 0.3s ease;
+        display: none;
     }
     .blog-single-post .timeline-item:hover .timeline-marker {
         background: #3498db;
