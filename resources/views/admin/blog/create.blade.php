@@ -429,7 +429,7 @@
     .blog-edit-sidebar .form-field .datepicker-field input {
         max-width: 100%;
     }
-    .datepicker-field i {
+    .blog-single-post .datepicker-field i {
         position: absolute;
         right: 10px;
         top: 50%;
@@ -437,18 +437,19 @@
         pointer-events: none;
         color: #999;
     }
-    .card-body .select-holder:after {
+    .blog-single-post .card-body .select-holder:after {
         border-bottom: 2px solid #999;
         border-left: 2px solid #999;
     }
     /* Location Style Start */
-    .rurera-location-section {
+    .blog-single-post .rurera-location-section {
         border: 0;
         margin: 0 0 30px;
         border-radius: 5px;
         padding: 0;
+        flex-direction: row-reverse;
     }
-    .rurera-badge-pill {
+    .blog-single-post .rurera-badge-pill {
         background-color: #eef6ff;
         font-size: .875rem;
         padding: 8px 15px;
@@ -459,16 +460,16 @@
         color: #007bff;
         font-weight: 500;
     }
-    .rurera-map-wrapper {
+    .blog-single-post .rurera-map-wrapper {
         height: 100%;
     }
-    .rurera-map-iframe {
+    .blog-single-post .rurera-map-iframe {
         width: 100%;
         border: 0;
         border-radius: 5px;
         height: 100%;
     }
-    .rurera-address-box {
+    .blog-single-post .rurera-address-box {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -477,7 +478,7 @@
     .blog-single-post .rurera-location-section h3 {
         margin: 0 0 25px;
     }
-    .rurera-address-icon-box {
+    .blog-single-post .rurera-address-icon-box {
         height: 40px;
         width: 40px;
         display: inline-flex;
@@ -488,37 +489,37 @@
         border: 1px solid rgba(0,0,0,0.1);
         margin-top: -8px;
     }
-    .rurera-address-icon-box img {
+    .blog-single-post .rurera-address-icon-box img {
         height: 22px;
         width: 22px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(107%) contrast(102%);
     }
-    .rurera-address-details {
+    .blog-single-post .rurera-address-details {
         flex: 0 0 84%;
         max-width: 84%;
     }
-    .rurera-address-details p {
+    .blog-single-post .rurera-address-details p {
         margin: 0;
         color: #818894;
     }
-    .rurera-description-text {
+    .blog-single-post .rurera-description-text {
         margin-bottom: 1.5rem;
     }
-    .rurera-address-details h5 {
+    .blog-single-post .rurera-address-details h5 {
         font-weight: bold;
     }
-    .rurera-address-details ul,
+    .blog-single-post .rurera-address-details ul,
     .blog-single-post .post-show .rurera-address-details ul{
         margin: 15px 0 0;
         padding: 0;
     }
-    .rurera-address-details ul li,
+    .blog-single-post .rurera-address-details ul li,
     .blog-single-post .post-show .rurera-address-details ul li{
         list-style: none;
         line-height: normal;
         color: #6c757d;
     }
-    .rurera-schools-grid {
+    .blog-single-post .rurera-schools-grid {
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 15px;
@@ -526,7 +527,7 @@
         border-radius: 5px;
         padding: 0;
     }
-    .rurera-school-col {
+    .blog-single-post .rurera-school-col {
         flex: 0 0 50%;
         max-width: 50%;
         padding: 0 15px;
@@ -535,7 +536,7 @@
         gap: 15px 0;
         border-right: 1px solid #ddd;
     }
-    .rurera-school-item {
+    .blog-single-post .rurera-school-item {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -543,28 +544,28 @@
         font-size: .875rem;
         color: #352c3e;
     }
-    .rurera-school-content {
+    .blog-single-post .rurera-school-content {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         width: calc(100% - 32px);
     }
-    .rurera-school-icon {
+    .blog-single-post .rurera-school-icon {
         width: 20px;
         height: 20px;
     }
-    .rurera-school-icon img {
+    .blog-single-post .rurera-school-icon img {
         max-width: 100%;
         max-height: 100%;
     }
-    .rurera-school-header {
+    .blog-single-post .rurera-school-header {
         flex: 0 0 75%;
         max-width: 75%;
     }
-    .rurera-school-col:last-child {
+    .blog-single-post .rurera-school-col:last-child {
         border-right: 0;
     }
-    .rurera-school-age {
+    .blog-single-post .rurera-school-age {
         color: #999;
     }
     /* Location Style End */
