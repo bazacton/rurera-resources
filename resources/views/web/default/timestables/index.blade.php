@@ -216,31 +216,27 @@
                     <h6 class="font-weight-500 mb-20">Lesson experience</h6>
                     <div class="preferences-switch-list">
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Sound effect</span>
                             <div class="custom-control custom-switch">
-                                <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
-                                <label class="custom-control-label" for="sound"></label>
+                                <input type="checkbox" class="custom-control-input" id="sound" name="sound">
+                                <label class="custom-control-label" for="sound">Sound effect</label>
                             </div>
                         </div>
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Animation</span>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
-                                <label class="custom-control-label" for="animation"></label>
+                                <label class="custom-control-label" for="animation">Animation</label>
                             </div>
                         </div>
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Motivational message</span>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
-                                <label class="custom-control-label" for="motivational"></label>
+                                <label class="custom-control-label" for="motivational">Motivational message</label>
                             </div>
                         </div>
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Listing exercises</span>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
-                                <label class="custom-control-label" for="listing"></label>
+                                <label class="custom-control-label" for="listing">Listing exercises</label>
                             </div>
                         </div>
                     </div>
