@@ -450,15 +450,7 @@
         flex-direction: row-reverse;
     }
     .blog-single-post .rurera-badge-pill {
-        background-color: #eef6ff;
-        font-size: .875rem;
-        padding: 8px 15px;
-        border-radius: 25px;
-        display: inline-block;
-        line-height: normal;
-        margin: 0 0 15px;
-        color: #007bff;
-        font-weight: 500;
+        display: none;
     }
     .blog-single-post .rurera-map-wrapper {
         height: 100%;
