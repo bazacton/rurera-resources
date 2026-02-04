@@ -320,9 +320,12 @@
         border: 0;
         line-height: normal;
         min-height: auto;
+    }
+    .blog-single-post .card .note-editor .card-header {
+        background-color: #fff;
         position: sticky !important;
         top: 0;
-        z-index: 1;
+        z-index: 2;
     }
     .blog-single-post .card .card-header h5 {
         width: 100%;
