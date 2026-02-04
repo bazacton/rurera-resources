@@ -263,11 +263,17 @@
                     </div>
                     <div class="select-language">
                         <div class="language-box">
-                            <input type="radio" name="language" id="one">
-                            <label for="one" data-toggle="modal" data-target="#exampleModalCenter">
-                                <span class="icon-box"></span>
+                            <input type="radio" name="language" id="one" value="romanized">
+                            <label for="one">
                                 <span class="country-lable">Romanized</span>
                             </label>
+                            <button type="button"
+                                    class="info-btn"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalCenter"
+                                    aria-label="Preview Romanized pronunciation">
+                            i
+                            </button>
                         </div>
                         <div class="language-box">
                             <input type="radio" name="language" id="two">
