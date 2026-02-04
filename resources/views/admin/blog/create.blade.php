@@ -872,6 +872,7 @@
     }
     .event-date {
         color: #495057;
+        display: block;
     }
     .status-badge {
         display: inline-block;
