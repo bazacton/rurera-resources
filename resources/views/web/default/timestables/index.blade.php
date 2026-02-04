@@ -690,7 +690,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-content" id="myTabContent2">
+                            <div class="tab-content" id="challengeTabsContent">
                                 <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
                                     <p>No Challenge here..</p>
                                 </div>
