@@ -712,6 +712,7 @@
         line-height: normal;
         height: auto;
         margin-left: 5px;
+        position: relative;
     }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
