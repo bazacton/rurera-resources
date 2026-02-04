@@ -497,6 +497,11 @@
         line-height: normal;
         color: #6c757d;
     }
+    .blog-single-post .rurera-address-details ul li img {
+        height: 18px;
+        width: 18px;
+        margin-right: 8px;
+    }
     .blog-single-post .rurera-schools-grid {
         display: flex;
         flex-wrap: wrap;
@@ -536,6 +541,7 @@
         max-width: 100%;
         max-height: 100%;
     }
+
     .blog-single-post .rurera-school-header {
         flex: 0 0 75%;
         max-width: 75%;
