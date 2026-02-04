@@ -15322,9 +15322,6 @@ p {
     display: inline-block;
     color: var(--primary);
 }
-.blog-single-post .post-show h3 {
-    margin-bottom: 25px;
-}
 .blog-single-post .post-show h4 {
     font-size: 1.125rem;
 }
