@@ -640,7 +640,7 @@
         margin: 0 0 25px;
     }
     .blog-single-post .stat-value {
-        color: var(--primary)
+        color: #007bff;
     }
     .blog-single-post .stat-label {
         color: #666;
