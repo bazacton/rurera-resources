@@ -714,9 +714,6 @@
         transition: all 0.3s ease;
     }
     .blog-single-post .timeline-item .step-title {
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: #2c3e50;
         margin-bottom: 10px;
     }
     .blog-single-post .step-description {
