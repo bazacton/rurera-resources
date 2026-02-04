@@ -472,6 +472,9 @@
         flex-wrap: wrap;
         gap: 15px;
     }
+    .blog-single-post .rurera-address-box:first-child {
+        margin-top: 15px;
+    }
     .blog-single-post .rurera-location-section h3 {
         margin: 0 0 25px;
     }
