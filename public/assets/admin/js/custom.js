@@ -1218,7 +1218,7 @@
             callbacks: {
                 onChange: function (contents, $editable) {
                     sanitizeEditorStyles($editable);
-                    replaceGSShortcodes($editable[0]);
+                    //replaceGSShortcodes($editable[0]);
                 },
                 onPaste: function (e) {
                     let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
