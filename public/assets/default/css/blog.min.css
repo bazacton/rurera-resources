@@ -521,3 +521,62 @@
     }
 }
 /* Ofsted Report Styling End */
+/* Key Events Style Start */
+.event-title {
+    margin-bottom: 10px;
+}
+.event-description {
+    margin-bottom: 30px;
+}
+.event-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+.event-row:last-child {
+    border-bottom: none;
+}
+.event-name {
+    font-weight: 700;
+}
+.event-date {
+    color: #495057;
+}
+.status-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    min-width: 160px;
+    text-align: center;
+}
+.status-badge img {
+    height: 18px;
+    width: 18px;
+    margin: 0 0 0 5px;
+    filter: invert(100%) sepia(15%) saturate(7459%) hue-rotate(292deg) brightness(126%) contrast(108%);
+}
+.status-passed {
+    background-color: #8da2b5;
+}
+.status-upcoming {
+    background-color: var(--primary);
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .event-row {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .col-md-5, .col-md-4, .col-md-3 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+    .status-badge {
+        width: 100%;
+    }
+}
+/* Key Events Style End */
