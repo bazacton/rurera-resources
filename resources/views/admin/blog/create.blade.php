@@ -14,13 +14,15 @@
     }
     .blog-single-post h2,
     .blog-single-post h3,
-    .blog-single-post h4,
-    .blog-single-post h5,
-    .blog-single-post h6 {
+    .blog-single-post h4 {
         margin-bottom: 20px;
     }
     .blog-single-post h3 {
         margin-top: 10px;
+    }
+    .blog-single-post h5,
+    .blog-single-post h6 {
+        margin-bottom: 10px;
     }
     .blog-single-post > div {
         line-height: 26px;
