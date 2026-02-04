@@ -19,7 +19,7 @@
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-md-4 ml-auto">
+                <div class="col-12 col-lg-5 col-md-5 ml-auto">
                     <div class="img-box">
                         <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
                     </div>
