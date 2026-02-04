@@ -8,10 +8,30 @@
                 <h2 class="font-22 mb-0">Time Tables</h2>
             </div>
             <div class="rurera-hide">
-                <ul class="tests-list type-list mb-30">
+                <!-- <ul class="tests-list type-list mb-30">
                     <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt="single"> Single Player</li>
                     <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt="multi"> Multi Player</li>
-                </ul>
+                </ul> -->
+
+                <div class="tests-list type-list mb-30" role="tablist" aria-label="Time table mode">
+                    <button type="button"
+                            class="mode-tab active"
+                            data-type="single-player"
+                            role="tab"
+                            aria-selected="true">
+                        <img src="/assets/default/img/single.png" alt="single" aria-hidden="true"> 
+                        <span>Single Player</span>
+                    </button>
+
+                    <button type="button"
+                            class="mode-tab"
+                            data-type="multi-player"
+                            role="tab"
+                            aria-selected="false">
+                        <img src="/assets/default/img/multi.png" alt="multi" aria-hidden="true">
+                        <span>Multi Player</span>
+                    </button>
+                </div>
             </div>
 
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
