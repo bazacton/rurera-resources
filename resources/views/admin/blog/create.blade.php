@@ -706,18 +706,7 @@
         margin-bottom: 15px;
     }
     .blog-single-post .btn-outline-custom {
-        color: #3498db;
-        border: 2px solid #3498db;
-        font-weight: 600;
-        padding: 6px 18px;
-        border-radius: 30px;
-        font-size: 0.85rem;
-        transition: all 0.3s;
-    }
-    .blog-single-post .btn-outline-custom:hover {
-        background-color: #3498db;
-        color: #fff;
-        text-decoration: none;
+        padding: 0;
     }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
