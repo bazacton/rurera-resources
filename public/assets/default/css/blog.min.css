@@ -336,7 +336,13 @@
 }
 .blog-single-post .timeline-item {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 15px;
+}
+.blog-single-post .timeline-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 /* Timeline Dot */
 .blog-single-post .timeline-marker {
