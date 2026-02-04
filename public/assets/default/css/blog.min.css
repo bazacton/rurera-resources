@@ -400,7 +400,7 @@
 }
 .blog-single-post .rurera-rating-row {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
     align-items: center;
     margin: 0 0 15px;
 }
