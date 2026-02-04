@@ -1218,6 +1218,7 @@
             callbacks: {
                 onChange: function (contents, $editable) {
                     sanitizeEditorStyles($editable);
+                    replaceGSShortcodes($editable[0]);
                 },
                 onPaste: function (e) {
                     let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
@@ -1281,7 +1282,6 @@
                 }
             }
         });
-
         function sanitizeEditorStyles($editor) {
             let el = $editor[0];
 
@@ -1296,6 +1296,86 @@
                 timer = setTimeout(fn, delay);
             };
         }
+
+
+
+
+
+        /*
+        Short Code Convert Start
+         */
+       
+        function replaceGSShortcodes(container) {
+            const walker = document.createTreeWalker(
+                container,
+                NodeFilter.SHOW_TEXT,
+                {
+                    acceptNode(node) {
+                        // ❌ Ignore text inside existing shortcode chips
+                        if (node.parentElement.closest('.shortcode-chip')) {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                }
+            );
+
+            let textNodes = [];
+            while (walker.nextNode()) {
+                textNodes.push(walker.currentNode);
+            }
+
+            textNodes.forEach(textNode => {
+                const regex = /\[GS\s+"([^"]+)"\]/g;
+                let text = textNode.nodeValue;
+                let match;
+
+                if (!regex.test(text)) return;
+
+                regex.lastIndex = 0;
+                let fragment = document.createDocumentFragment();
+                let lastIndex = 0;
+
+                while ((match = regex.exec(text)) !== null) {
+                    const key = match[1];
+                    const value = GS_SHORTCODES[key];
+
+                    // ❌ If no value, leave it untouched
+                    if (!value) continue;
+
+                    // text before shortcode
+                    fragment.appendChild(
+                        document.createTextNode(text.slice(lastIndex, match.index))
+                    );
+
+                    // shortcode chip
+                    const chip = document.createElement('span');
+                    chip.className = 'shortcode-chip';
+                    chip.setAttribute('contenteditable', 'false');
+                    chip.dataset.sc = key;
+
+                    chip.innerHTML = `
+                <span class="sc-label">[GS "${key}"]</span>
+                <span class="sc-value">${value}</span>
+            `;
+
+                    fragment.appendChild(chip);
+                    lastIndex = regex.lastIndex;
+                }
+
+                fragment.appendChild(
+                    document.createTextNode(text.slice(lastIndex))
+                );
+
+                textNode.replaceWith(fragment);
+            });
+        }
+
+
+        /*
+        ShortCode Convert Ends
+         */
+
 
         function removeInlineStyles(node) {
             if (node.nodeType === Node.ELEMENT_NODE) {
