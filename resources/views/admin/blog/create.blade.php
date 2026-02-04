@@ -883,10 +883,9 @@
     }
     .status-badge {
         display: inline-block;
-        padding: 8px 16px;
+        padding: 6px 16px;
         border-radius: 5px;
         color: white;
-        min-width: 160px;
         text-align: center;
     }
     .status-badge img {
