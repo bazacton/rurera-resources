@@ -907,6 +907,74 @@
         }
     }
     /* Ofsted Report Styling End */
+    /* Key Events Style Start */
+    .events-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        padding: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .event-title {
+        color: #0d234b; /* Dark blue similar to image */
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .event-description {
+        color: #6c757d;
+        margin-bottom: 30px;
+    }
+    .event-row {
+        padding: 20px 0;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+    }
+    .event-row:last-child {
+        border-bottom: none;
+    }
+    .event-name {
+        font-weight: 700;
+        color: #0d234b;
+        font-size: 1.1rem;
+    }
+    .event-date {
+        color: #495057;
+    }
+    .status-badge {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: white;
+        min-width: 160px;
+        text-align: center;
+    }
+    .status-passed {
+        background-color: #8da2b5; /* Greyish blue */
+    }
+    .status-upcoming {
+        background-color: #c91f47; /* Red/Pinkish similar to image */
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .event-row {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .col-md-5, .col-md-4, .col-md-3 {
+            width: 100%;
+            margin-bottom: 10px;
+            padding-left: 0;
+        }
+        .status-badge {
+            width: 100%;
+        }
+    }
+    /* Key Events Style End */
     /* Blog Single Post Style End */
 </style>
 @endpush
