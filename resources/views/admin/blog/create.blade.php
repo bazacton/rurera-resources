@@ -755,7 +755,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
-        margin-bottom: 50px;
     }
     .blog-single-post .rurera-ofsted-left {
         flex: 3;
