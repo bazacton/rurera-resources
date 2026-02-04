@@ -420,6 +420,11 @@ Left SideBar-menu End
     z-index: 1;
     overflow: hidden;
 }
+.panel-content .template-grid .text-holder .sr-only {
+    position: initial;
+    margin: 0;
+    overflow: visible;
+}
 .panel-content .grid-card .img-holder {margin-left: auto; position: absolute; right: -22px; bottom: -15px; transform: rotate(-20deg); height: 90px; width: 90px;}
 .panel-content .grid-card .img-holder img {border-radius: 0; object-fit: contain;}
 .panel-content .grid-card .img-holder img[src*="shuttlecock.svg"] {transform: scale(-1) rotate(110deg); position: relative; bottom: -5px;}
