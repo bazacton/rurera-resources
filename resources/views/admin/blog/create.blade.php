@@ -690,7 +690,14 @@
     }
     .blog-single-post .timeline-item {
         position: relative;
-        margin-bottom: 45px;
+        margin-bottom: 15px;
+        padding: 0 0 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .blog-single-post .timeline-item:last-child {
+        margin-bottom: 15px;
+        padding: 0;
+        border-bottom: 0;
     }
     /* Timeline Dot */
     .blog-single-post .timeline-marker {
@@ -704,18 +711,9 @@
     /* Content Card */
     .blog-single-post .timeline-content {
         background: #fff;
-        padding: 25px;
-        border-radius: 6px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        border-left: 4px solid transparent;
         transition: all 0.3s ease;
     }
-    .blog-single-post .timeline-item:hover .timeline-content {
-        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        border-left-color: #3498db;
-        transform: translateX(5px);
-    }
-    .blog-single-post .step-title {
+    .blog-single-post .timeline-item .step-title {
         font-size: 1.2rem;
         font-weight: 600;
         color: #2c3e50;
