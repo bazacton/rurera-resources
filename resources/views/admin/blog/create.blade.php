@@ -299,7 +299,7 @@
         margin: 0 auto;
     }
     .blog-single-post .accordion .card {
-        background-color: #f7f7f7;
+        background-color: inherit;
         box-shadow: none;
         margin: 0 0 5px;
         border: 0;
@@ -327,7 +327,7 @@
     }
     .blog-single-post .card .card-header .btn-link {
         background-color: inherit;
-        padding: 15px;
+        padding: 0 0 15px;
         height: auto;
         font-weight: 700;
         position: relative;
@@ -337,7 +337,7 @@
         border: 0;
     }
     .blog-single-post .card-body {
-        padding: 0 15px 15px;
+        padding: 0 0 15px;
     }
     .blog-single-post .card .card-header .btn-link:after {
         position: absolute;
@@ -443,10 +443,10 @@
     }
     /* Location Style Start */
     .rurera-location-section {
-        border: 1px solid #ddd;
+        border: 0;
         margin: 0 0 30px;
         border-radius: 5px;
-        padding: 15px 0;
+        padding: 0;
     }
     .rurera-badge-pill {
         background-color: #eef6ff;
@@ -522,9 +522,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 15px;
-        border: 1px solid #ddd;
+        border: 0;
         border-radius: 5px;
-        padding: 20px 5px;
+        padding: 0;
     }
     .rurera-school-col {
         flex: 0 0 50%;
@@ -624,9 +624,9 @@
 
     /* Blog Stats Style Start */
     .blog-single-post .stats-grid {
-        border: 1px solid #ddd;
+        border: 0;
         border-radius: 5px;
-        padding: 25px;
+        padding: 0;
         margin: 0 0 30px;
     }
     .blog-single-post .stats-row {
@@ -908,9 +908,9 @@
     .events-container {
         background-color: #ffffff;
         border-radius: 8px;
-        border: 1px solid #ddd;
-        padding: 30px;
-        margin-top: 50px;
+        border: 0;
+        padding: 0;
+        margin-top: 0;
         margin-bottom: 50px;
     }
     .event-title {
