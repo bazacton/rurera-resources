@@ -34,7 +34,12 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal fade" id="exampleModalCenter" 
+                tabindex="-1" 
+                role="dialog" 
+                aria-hidden="true"
+                aria-modal="true"
+                aria-labelledby="exampleModalCenterTitle">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                     <div class="modal-body">
