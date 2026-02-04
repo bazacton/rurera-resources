@@ -148,6 +148,7 @@
     border: 0;
     border-radius: 5px;
     padding: 0;
+    flex-direction: row-reverse;
 }
 .blog-single-post .rurera-location-section.row {
     margin: 0 0 30px;
