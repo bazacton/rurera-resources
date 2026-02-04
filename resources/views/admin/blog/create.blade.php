@@ -682,8 +682,8 @@
     }
     .blog-single-post .timeline-item {
         position: relative;
-        margin-bottom: 15px;
-        padding: 0 0 15px;
+        margin-bottom: 25px;
+        padding: 0 0 25px;
         border-bottom: 1px solid #ddd;
     }
     .blog-single-post .timeline-item:last-child {
