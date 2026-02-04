@@ -873,7 +873,7 @@
         text-align: center;
         border: 1px solid #ddd;
         border-radius: 3px;
-        padding: 5px 10px 8px;
+        padding: 5px 10px 7px;
         line-height: normal;
         margin-top: 5px;
     }
