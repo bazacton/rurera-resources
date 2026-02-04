@@ -17,7 +17,10 @@
     .blog-single-post h4,
     .blog-single-post h5,
     .blog-single-post h6 {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .blog-single-post h3 {
+        margin-top: 10px;
     }
     .blog-single-post > div {
         line-height: 26px;
@@ -505,7 +508,7 @@
     .blog-single-post .rurera-schools-grid {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -15px 15px;
+        margin: 0 -15px 30px;
         border: 0;
         border-radius: 5px;
         padding: 0;
@@ -618,6 +621,8 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 25px;
+        padding-top: 25px;
+        border-top: 1px solid #ddd;
     }
     .blog-single-post .stat-item {
         flex: 0 0 33%;
@@ -638,7 +643,7 @@
         margin: 0 0 25px;
     }
     .blog-single-post .stat-value {
-        color: var(--primary)
+        color: #007bff;
     }
     .blog-single-post .stat-label {
         color: #666;
@@ -784,15 +789,10 @@
     .blog-single-post .rurera-big-badge {
         background-color: #22c55e;
         color: #ffffff;
-        font-size: 24px;
-        font-weight: 700;
-        padding: 12px 40px;
+        padding: 8px 30px;
         border-radius: 50px;
-        margin-bottom: 24px;
+        margin-bottom: 15px;
         display: inline-block;
-    }
-    .blog-single-post .rurera-inspection-date {
-        color: #64748b;
     }
     .blog-single-post .rurera-inspection-date strong {
         display: block;
@@ -853,8 +853,11 @@
     .event-description {
         margin-bottom: 30px;
     }
+    .events-container {
+        margin-bottom: 25px;
+    }
     .event-row {
-        padding: 20px 0;
+        padding: 6px 0;
         display: flex;
         align-items: center;
     }
@@ -869,13 +872,13 @@
         display: block;
     }
     .status-badge {
-        display: inline-block;
         text-align: center;
         border: 1px solid #ddd;
         border-radius: 3px;
         padding: 5px 10px 7px;
         line-height: normal;
         margin-top: 5px;
+        display: none;
     }
     .status-badge img {
         height: 18px;
