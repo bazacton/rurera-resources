@@ -94,9 +94,6 @@
                 <div class="grid-card timestables-mode-data" data-mode_type="powerup-mode">
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
-                            
-                        </h3>
-                        <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/powerup-mode">
                                 <span class="sr-only">Power-up Heatmap</span>
                             </a>
