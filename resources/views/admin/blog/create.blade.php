@@ -952,6 +952,12 @@
         min-width: 160px;
         text-align: center;
     }
+    .status-badge img {
+        height: 20px;
+        width: 20px;
+        margin: 0 0 0 10px;
+        filter: invert(100%) sepia(15%) saturate(7459%) hue-rotate(292deg) brightness(126%) contrast(108%);
+    }
     .status-passed {
         background-color: #8da2b5;
     }
