@@ -618,8 +618,6 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 25px;
-        padding-top: 25px;
-        border-top: 1px solid #ddd;
     }
     .blog-single-post .stat-item {
         flex: 0 0 33%;
@@ -674,8 +672,6 @@
     .blog-single-post .timeline-item {
         position: relative;
         margin-bottom: 25px;
-        padding: 0 0 25px;
-        border-bottom: 1px solid #ddd;
     }
     .blog-single-post .timeline-item:last-child {
         margin-bottom: 15px;
@@ -752,7 +748,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
-        border-bottom: 1px solid #f1f5f9;
         color: #475569;
     }
     .blog-single-post .rurera-rating-row:last-of-type {
@@ -866,7 +861,6 @@
     }
     .event-row {
         padding: 20px 0;
-        border-bottom: 1px solid #ddd;
         display: flex;
         align-items: center;
     }
