@@ -322,7 +322,9 @@
                                             <ul>
                                                 <li>
                                                     <div class="card-btn">
-                                                        <a href="#"><i>&#x207A;</i> Join tournament</a>
+                                                        <button type="button" class="join-btn">
+                                                            <span aria-hidden="true">&#x207A;</span> Join tournament
+                                                        </button>
                                                     </div>
                                                 </li>
                                                 <li>
