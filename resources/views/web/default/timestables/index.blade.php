@@ -95,7 +95,7 @@
                     </div>
                     <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
                 </div>
-                <div class="grid-card timestables-mode-data">
+                <div class="grid-card timestables-mode-data" data-mode_type="treasure-mission">
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/treasure-mission">
@@ -115,7 +115,7 @@
                     <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
 
                 </div>
-                <div class="grid-card timestables-mode-data">
+                <div class="grid-card timestables-mode-data" data-mode_type="showdown-mode">
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/showdown-mode">
@@ -128,33 +128,33 @@
                     </div>
                     <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                 </div>
-                <a href="/timestable/heat-map">
-                    <div class="grid-card timestables-mode-data">
-                        <div class="text-holder">
-                            <h3 class="font-16 font-weight-bold">
-                                Heat Map
-                            </h3>
-                        </div>
-                        <div class="img-holder">
-                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                        </div>
-                        <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
+                <div class="grid-card timestables-mode-data" data-mode_type="heat-map">
+                    <div class="text-holder">
+                        <h3 class="font-16 font-weight-bold">
+                            <a class="stretched-link" href="/timestable/heat-map">
+                                <span class="sr-only">Heat Map</span>
+                            </a>
+                        </h3>
                     </div>
-                </a>
-                <a href="/analytics">
-                    <div class="grid-card timestables-mode-data">
-                        <div class="text-holder">
-                            <h3 class="font-16 font-weight-bold">
-                                Analytics
-                            </h3>
-                        </div>
-                        <div class="img-holder">
-                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                        </div>
-                        <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
+                    <div class="img-holder">
+                        <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                    </div>
+                    <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
+                </div>
+                <div class="grid-card timestables-mode-data" data-mode_type="Analytics">
+                    <div class="text-holder">
+                        <h3 class="font-16 font-weight-bold">
+                            <a class="stretched-link" href="/analytics">
+                                <span class="sr-only">Analytics</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                    </div>
+                    <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
-                    </div>
-                </a>
+                </div>
             </div>
 
             <div class="type-list-data multi-player-data rurera-hide">
