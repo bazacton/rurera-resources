@@ -189,7 +189,6 @@
                                             <div class="form-field">
                                                 <label for="examFormat">Exam Format</label>
                                                 <div class="select-holder">
-
                                                     <select class="form-control " name="exam_format" id="exam_format" required>
                                                         <option value="GL Assessment" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->exam_format === 'GL Assessment') ? 'selected' : '' }}>GL Assessment</option>
                                                         <option value="CEM" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'CEM') ? 'selected' : ''}}>CEM</option>
@@ -201,7 +200,6 @@
 
                                                     </select>
                                                 </div>
-                                                <input type="text" name="exam_format" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->exam_format : ''}}" class="form-control" id="examFormat" placeholder="e.g. GL Assessment 11+" required>
                                             </div>
 
                                             <div class="invalid-feedback">Please enter exam format.</div>
