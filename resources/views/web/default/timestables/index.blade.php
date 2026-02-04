@@ -311,7 +311,7 @@
                                             <div class="deals-card bg-danger">
                                                 <div class="card">
                                                     <div class="card-timer">
-                                                        <p id="timer">60</p>
+                                                        <p id="timer" aria-live="polite" aria-atomic="true">60</p>
                                                     </div>
                                                     <a href="#">
                                                         <h5>Michigan Stadium</h5>
