@@ -460,9 +460,6 @@
     .blog-single-post .rurera-badge-pill {
         display: none;
     }
-    .blog-single-post .rurera-map-wrapper {
-        height: 100%;
-    }
     .blog-single-post .rurera-map-iframe {
         width: 100%;
         border: 0;
