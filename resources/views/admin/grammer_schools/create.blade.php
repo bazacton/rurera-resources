@@ -188,6 +188,19 @@
                                         <div class="col-md-12 mb-3">
                                             <div class="form-field">
                                                 <label for="examFormat">Exam Format</label>
+                                                <div class="select-holder">
+
+                                                    <select class="form-control " name="exam_format" id="exam_format" required>
+                                                        <option value="GL Assessment" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->exam_format === 'GL Assessment') ? 'selected' : '' }}>GL Assessment</option>
+                                                        <option value="CEM" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'CEM') ? 'selected' : ''}}>CEM</option>
+                                                        <option value="CSSE" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'CSSE') ? 'selected' : ''}}>CSSE</option>
+                                                        <option value="Kent Test" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'Kent Test') ? 'selected' : ''}}>Kent Test</option>
+                                                        <option value="Birmingham 11+" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'Birmingham 11+') ? 'selected' : ''}}>Birmingham 11+</option>
+                                                        <option value="ISEB" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'ISEB') ? 'selected' : ''}}>ISEB</option>
+                                                        <option value="School-specific" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'School-specific') ? 'selected' : ''}}>School-specific</option>
+
+                                                    </select>
+                                                </div>
                                                 <input type="text" name="exam_format" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->exam_format : ''}}" class="form-control" id="examFormat" placeholder="e.g. GL Assessment 11+" required>
                                             </div>
 
