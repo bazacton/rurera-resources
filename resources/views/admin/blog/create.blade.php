@@ -707,6 +707,8 @@
     }
     .blog-single-post .btn-outline-custom {
         padding: 0;
+        line-height: normal;
+        height: auto;
     }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
