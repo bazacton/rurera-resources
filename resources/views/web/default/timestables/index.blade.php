@@ -53,7 +53,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
                                 </span>
-                                <span class="current-sound font-22">very</span>
+                                <h2 id="exampleModalCenterTitle" class="current-sound font-22">very</h2>
                             </div>
                             <div class="sound-list">
                                 <h5>adjective</h5>
