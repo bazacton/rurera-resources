@@ -1249,8 +1249,9 @@
                                 .replace(/⇒/g, '=>')
                                 .replace(/[✓✔]/g, 'Yes')
                                 .replace(/[✗✘]/g, 'No')
-                                // emoji-safe removal
-                                .replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, '')
+                                .replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, '') // emoji-safe removal
+                                .replace(/[\u0000-\u001F\u007F-\u009F]/g, '')   // 🚫 control chars
+                                .replace(/[�□◼◻▪▫■▢▣]/g, '')                  // 🚫 weird boxes
                                 .replace(/\s{2,}/g, ' ');
                         } else {
                             node.childNodes.forEach(cleanText);
@@ -1269,6 +1270,7 @@
                     removeInlineStyles(tempDiv);
                     removeDirAttribute(tempDiv);
                     unwrapGoogleDocsSpans(tempDiv);
+                    removeInlineStyles(tempDiv);
                     convertBoldToHeading(tempDiv);
                     fixHeadingOverflow(tempDiv);
 
@@ -1276,6 +1278,14 @@
                 }
             }
         });
+
+        function removeInlineStyles(node) {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+                node.removeAttribute('style');
+            }
+
+            Array.from(node.childNodes).forEach(removeInlineStyles);
+        }
 
         function unwrapGoogleDocsSpans(container) {
             container.querySelectorAll('span[id^="docs-internal-guid"]').forEach(span => {
