@@ -61,7 +61,7 @@
                                         <div class="col-md-12 mb-3">
                                             <div class="form-field">
                                                 <label for="schoolName">School overview</label>
-                                                <input type="text" name="school_overview" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->school_overview : ''}}" class="form-control summernote-editor" id="school_overview" required>
+                                                <input type="text" name="school_overview" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->school_overview : ''}}" class="form-control summernote-editor1" id="school_overview" required>
                                             </div>
 
                                             <div class="invalid-feedback">School Name is required.</div>
@@ -69,7 +69,7 @@
                                         <div class="col-md-12 mb-3">
                                             <div class="form-field">
                                                 <label for="schoolName">About School</label>
-                                                <input type="text" name="about_school" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->about_school : ''}}" class="form-control summernote-editor" id="about_school" required>
+                                                <input type="text" name="about_school" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->about_school : ''}}" class="form-control summernote-editor1" id="about_school" required>
                                             </div>
 
                                             <div class="invalid-feedback">School Name is required.</div>
@@ -77,7 +77,7 @@
                                         <div class="col-md-12 mb-3">
                                             <div class="form-field">
                                                 <label for="schoolName">Ofsted Report summary</label>
-                                                <input type="text" name="ofsted_report_summary" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->ofsted_report_summary : ''}}" class="form-control summernote-editor" id="ofsted_report_summary" required>
+                                                <input type="text" name="ofsted_report_summary" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->ofsted_report_summary : ''}}" class="form-control summernote-editor1" id="ofsted_report_summary" required>
                                             </div>
 
                                             <div class="invalid-feedback">School Name is required.</div>
