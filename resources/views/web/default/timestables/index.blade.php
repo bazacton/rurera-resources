@@ -696,6 +696,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
                                     <table class="simple-table text-left">
+                                        <caption>Sent challenges</caption>
                                         <thead>
                                             <tr>
                                                 <th>When</th>
