@@ -888,6 +888,9 @@
     .status-passed {
         background-color: #8da2b5;
     }
+    .status-upcoming {
+        color: var(--primary);
+    }
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .event-row {
