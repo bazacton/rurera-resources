@@ -292,9 +292,10 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-30">
-                      <a class="back-btn mb-30" href="javascript:;;" style="margin-right: auto;">
-                        <span>←</span>
-                    </a>
+                        <button type="button" class="back-btn mb-30" data-action="go-back">
+                            <span aria-hidden="true">←</span>
+                            <span class="sr-only">Go back</span>
+                        </button>
                         <h1 class="font-50 font-weight-bold mb-0 text-white">Tournament Tropics</h1>
                     </div>
                   </div>
