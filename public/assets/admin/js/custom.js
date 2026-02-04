@@ -30,20 +30,20 @@
 
     $('body').on('click', '.admin-file-manager', function (e) {
         e.preventDefault();
-        var upload_path = $(this).closest('.upload-path-rurera').attr('data-location');
-        var thisObj = $(this);
-        thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
-        thisObj.trigger('click');
-        /*$.ajax({
-            type: "POST",
-            url: '/admin/users/upload_path',
-            data: {'upload_path': upload_path},
-            success: function (return_data) {
-                thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
-                thisObj.trigger('click');  // Manually trigger click after initialization
+		var upload_path = $(this).closest('.upload-path-rurera').attr('data-location');
+		var thisObj = $(this);
+		thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
+		thisObj.trigger('click');
+		/*$.ajax({
+			type: "POST",
+			url: '/admin/users/upload_path',
+			data: {'upload_path': upload_path},
+			success: function (return_data) {
+				thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
+				thisObj.trigger('click');  // Manually trigger click after initialization
 
-            }
-        });*/
+			}
+		});*/
 
     });
 
@@ -238,9 +238,9 @@
             if( $(".rureramultidatespicker").length > 0){
 
                 $('.rureramultidatespicker').datepicker({
-                    multidate: true,
-                    format: 'dd-mm-yyyy'
-                });
+                   multidate: true,
+                   format: 'dd-mm-yyyy'
+               });
             }
         }
     };
@@ -336,84 +336,84 @@
     };
 
     window.handleMultiSelect2 = function (className, path, itemColumn, select_data) {
-        const $el = $('.' + className);
+    const $el = $('.' + className);
 
-        if ($el.length) {
-            // Initialize select2
-            $el.select2({
-                placeholder: $el.attr('data-placeholder'),
-                minimumInputLength: 3,
-                data: select_data,
-                ajax: {
-                    url: path,
-                    dataType: 'json',
-                    type: "POST",
-                    quietMillis: 50,
-                    data: function (params) {
-                        return {
-                            term: params.term,
-                            option: $el.attr('data-search-option'),
-                        };
-                    },
-                    processResults: function (data) {
-                        let results = $.map(data, function (item) {
-                            if ($.isArray(itemColumn)) {
-                                let text_label = [];
-                                $.each(itemColumn, function (index, itemColumnName) {
-                                    if (!DataIsEmpty(item[itemColumnName])) {
-                                        text_label.push(item[itemColumnName]);
-                                    }
-                                });
-                                text_label = text_label.join(' / ');
-                                return {
-                                    text: text_label,
-                                    id: item.id
-                                };
-                            } else {
-                                return {
-                                    text: item[itemColumn],
-                                    id: item.id
-                                };
-                            }
-                        });
-
-                        // Add "Deselect All" option if any options are selected
-                        if ($el.val() && $el.val().length > 0) {
-                            results.unshift({
-                                id: 'deselect-all',
-                                text: 'Deselect All'
+    if ($el.length) {
+        // Initialize select2
+        $el.select2({
+            placeholder: $el.attr('data-placeholder'),
+            minimumInputLength: 3,
+            data: select_data,
+            ajax: {
+                url: path,
+                dataType: 'json',
+                type: "POST",
+                quietMillis: 50,
+                data: function (params) {
+                    return {
+                        term: params.term,
+                        option: $el.attr('data-search-option'),
+                    };
+                },
+                processResults: function (data) {
+                    let results = $.map(data, function (item) {
+                        if ($.isArray(itemColumn)) {
+                            let text_label = [];
+                            $.each(itemColumn, function (index, itemColumnName) {
+                                if (!DataIsEmpty(item[itemColumnName])) {
+                                    text_label.push(item[itemColumnName]);
+                                }
                             });
+                            text_label = text_label.join(' / ');
+                            return {
+                                text: text_label,
+                                id: item.id
+                            };
+                        } else {
+                            return {
+                                text: item[itemColumn],
+                                id: item.id
+                            };
                         }
+                    });
 
-                        return {
-                            results: results
-                        };
+                    // Add "Deselect All" option if any options are selected
+                    if ($el.val() && $el.val().length > 0) {
+                        results.unshift({
+                            id: 'deselect-all',
+                            text: 'Deselect All'
+                        });
                     }
-                }
-            });
 
-            // Always add "Deselect All" when the dropdown is opened
-            $el.on('select2:open', function () {
-                // Get the current selected options
-                if ($el.val() && $el.val().length > 0) {
-                    // Check if "Deselect All" is already in the dropdown
-                    if (!$el.find("option[value='deselect-all']").length) {
-                        // Add "Deselect All" option to the select element
-                        $el.prepend(new Option('Deselect All', 'deselect-all', false, false));
-                        $el.trigger('change'); // Ensure the UI is updated
-                    }
+                    return {
+                        results: results
+                    };
                 }
-            });
+            }
+        });
 
-            // Handle selection of "Deselect All"
-            $el.on('select2:select', function (e) {
-                if (e.params.data.id === 'deselect-all') {
-                    // Clear all selected options
-                    $el.val(null).trigger('change');
+        // Always add "Deselect All" when the dropdown is opened
+        $el.on('select2:open', function () {
+            // Get the current selected options
+            if ($el.val() && $el.val().length > 0) {
+                // Check if "Deselect All" is already in the dropdown
+                if (!$el.find("option[value='deselect-all']").length) {
+                    // Add "Deselect All" option to the select element
+                    $el.prepend(new Option('Deselect All', 'deselect-all', false, false));
+                    $el.trigger('change'); // Ensure the UI is updated
                 }
-            });
-        }
-    };
+            }
+        });
+
+        // Handle selection of "Deselect All"
+        $el.on('select2:select', function (e) {
+            if (e.params.data.id === 'deselect-all') {
+                // Clear all selected options
+                $el.val(null).trigger('change');
+            }
+        });
+    }
+};
 
 
 
@@ -452,39 +452,39 @@
 
 
     window.handleTopicsMultiSelect2 = function (className, path, itemColumn, select_data) {
-        const $el = $('.' + className);
+            const $el = $('.' + className);
 
-        if ($el.length) {
-            $el.select2({
-                placeholder: $el.attr('data-placeholder'),
-                minimumInputLength: 3,
-                //allowClear: true,
-                data: select_data,
-                ajax: {
-                    url: path,
-                    dataType: 'json',
-                    type: "POST",
-                    quietMillis: 50,
-                    data: function (params) {
-                        return {
-                            term: params.term,
-                            option: $el.attr('data-search-option'),
-                        };
-                    },
-                    processResults: function (data) {
-                        return {
-                            results: $.map(data, function (item) {
-                                return {
-                                    text: item['title'],
-                                    id: item.id
-                                };
-                            })
-                        };
+            if ($el.length) {
+                $el.select2({
+                    placeholder: $el.attr('data-placeholder'),
+                    minimumInputLength: 3,
+                    //allowClear: true,
+                    data: select_data,
+                    ajax: {
+                        url: path,
+                        dataType: 'json',
+                        type: "POST",
+                        quietMillis: 50,
+                        data: function (params) {
+                            return {
+                                term: params.term,
+                                option: $el.attr('data-search-option'),
+                            };
+                        },
+                        processResults: function (data) {
+                            return {
+                                results: $.map(data, function (item) {
+                                    return {
+                                        text: item['title'],
+                                        id: item.id
+                                    };
+                                })
+                            };
+                        }
                     }
-                }
-            });
-        }
-    };
+                });
+            }
+        };
 
     window.handleQuizMultiSelect2 = function (className, path, itemColumn, select_data) {
         const $el = $('.' + className);
@@ -614,147 +614,147 @@
 
     if (jQuery().summernote) {
 
-        $(".summernote-editor").summernote({
-            dialogsInBody: true,
-            tabsize: 2,
-            //height: $(".summernote-editor").attr('data-height') ?? 250,
+		$(".summernote-editor").summernote({
+    dialogsInBody: true,
+    tabsize: 2,
+    //height: $(".summernote-editor").attr('data-height') ?? 250,
+    height: null,
+    minHeight: 150,
+    maxHeight: 400,
+    fontNames: [],
+    toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'underline']],
+        ['para', ['paragraph', 'ul', 'ol']],
+        ['table', ['table']],
+        ['insert', ['link']],
+        ['history', ['undo']],
+    ],
+    buttons: {
+        lfm: LFMButton
+    },
+    callbacks: {
+        onPaste: function (e) {
+            e.preventDefault();
+
+            var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+            var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+            // Create a temporary DOM element to parse the HTML
+            var tempDiv = document.createElement('div');
+            tempDiv.innerHTML = pastedData;
+
+            // Remove all tags except <strong> and <table> with children, but retain the text content
+            tempDiv.querySelectorAll("*:not(p):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(ul):not(ol):not(li):not(strong):not(table):not(tbody):not(tr):not(td):not(th)").forEach(node => {
+                // Replace each disallowed element with its text content
+                const textNode = document.createTextNode(node.textContent);
+                node.replaceWith(textNode);
+            });
+
+            // Remove attributes from <table> and its child tags
+            tempDiv.querySelectorAll("table, td, th, tr").forEach(node => {
+                for (let attr of node.attributes) {
+                    node.removeAttribute(attr.name);
+                }
+            });
+
+            // Insert the cleaned HTML into the editor
+			document.execCommand('insertHTML', false, tempDiv.innerHTML);
+        }
+    }
+});
+
+
+
+		$(".summernote").summernote({
+			dialogsInBody: true,
+			tabsize: 2,
+			//height: $(".summernote").attr('data-height') ?? 250,
             height: null,
             minHeight: 150,
             maxHeight: 400,
-            fontNames: [],
-            toolbar: [
-                ['style', ['style']],
-                ['font', ['bold', 'underline']],
-                ['para', ['paragraph', 'ul', 'ol']],
-                ['table', ['table']],
-                ['insert', ['link']],
-                ['history', ['undo']],
-            ],
-            buttons: {
-                lfm: LFMButton
-            },
-            callbacks: {
-                onPaste: function (e) {
-                    e.preventDefault();
+			fontNames: [],
+			toolbar: [
+				['style', ['style']],
+				['font', ['bold', 'underline']],
+				['para', ['paragraph', 'ul', 'ol']],
+				['table', ['table']],
+				['insert', ['link']],
+				['history', ['undo']],
+			],
+			buttons: {
+				lfm: LFMButton
+			},
+			callbacks: {
+				onPaste: function (e) {
+					e.preventDefault();
 
-                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-                    var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+					var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+					var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
 
-                    // Create a temporary DOM element to parse the HTML
-                    var tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = pastedData;
+					// Create a temporary DOM element to parse the HTML
+					var tempDiv = document.createElement('div');
+					tempDiv.innerHTML = pastedData;
 
-                    // Remove all tags except <strong> and <table> with children, but retain the text content
-                    tempDiv.querySelectorAll("*:not(p):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(ul):not(ol):not(li):not(strong):not(table):not(tbody):not(tr):not(td):not(th)").forEach(node => {
-                        // Replace each disallowed element with its text content
-                        const textNode = document.createTextNode(node.textContent);
-                        node.replaceWith(textNode);
-                    });
+					// Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
+					function cleanTags(node) {
+						var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 1) { // Element Node
+								if (!allowedTags.includes(child.nodeName)) {
+									// Replace disallowed tags with their inner content
+									while (child.firstChild) {
+										node.insertBefore(child.firstChild, child);
+									}
+									node.removeChild(child);
+								} else {
+									// Allowed tag: Clean recursively
+									cleanTags(child);
 
-                    // Remove attributes from <table> and its child tags
-                    tempDiv.querySelectorAll("table, td, th, tr").forEach(node => {
-                        for (let attr of node.attributes) {
-                            node.removeAttribute(attr.name);
-                        }
-                    });
+									// Remove all attributes from tables and their children
+									if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
+										while (child.attributes.length > 0) {
+											child.removeAttribute(child.attributes[0].name);
+										}
+									}
+								}
+							} else if (child.nodeType === 3) { // Text Node
+								// Do nothing for text nodes
+							} else {
+								// Remove any other type of node
+								node.removeChild(child);
+							}
+						});
+					}
 
-                    // Insert the cleaned HTML into the editor
-                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
-                }
-            }
-        });
+					// Remove all inline styles
+					var elementsWithStyles = tempDiv.querySelectorAll('[style]');
+					elementsWithStyles.forEach(function (element) {
+						element.removeAttribute('style');
+					});
 
+					// Remove HTML comments
+					function removeComments(node) {
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 8) { // Comment Node
+								node.removeChild(child);
+							} else if (child.nodeType === 1) {
+								removeComments(child);
+							}
+						});
+					}
+					removeComments(tempDiv);
 
+					// Clean unwanted tags
+					cleanTags(tempDiv);
 
-        $(".summernote").summernote({
-            dialogsInBody: true,
-            tabsize: 2,
-            //height: $(".summernote").attr('data-height') ?? 250,
-            height: null,
-            minHeight: 150,
-            maxHeight: 400,
-            fontNames: [],
-            toolbar: [
-                ['style', ['style']],
-                ['font', ['bold', 'underline']],
-                ['para', ['paragraph', 'ul', 'ol']],
-                ['table', ['table']],
-                ['insert', ['link']],
-                ['history', ['undo']],
-            ],
-            buttons: {
-                lfm: LFMButton
-            },
-            callbacks: {
-                onPaste: function (e) {
-                    e.preventDefault();
-
-                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-                    var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
-
-                    // Create a temporary DOM element to parse the HTML
-                    var tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = pastedData;
-
-                    // Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
-                    function cleanTags(node) {
-                        var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
-                        var childNodes = Array.from(node.childNodes);
-                        childNodes.forEach(function(child) {
-                            if (child.nodeType === 1) { // Element Node
-                                if (!allowedTags.includes(child.nodeName)) {
-                                    // Replace disallowed tags with their inner content
-                                    while (child.firstChild) {
-                                        node.insertBefore(child.firstChild, child);
-                                    }
-                                    node.removeChild(child);
-                                } else {
-                                    // Allowed tag: Clean recursively
-                                    cleanTags(child);
-
-                                    // Remove all attributes from tables and their children
-                                    if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
-                                        while (child.attributes.length > 0) {
-                                            child.removeAttribute(child.attributes[0].name);
-                                        }
-                                    }
-                                }
-                            } else if (child.nodeType === 3) { // Text Node
-                                // Do nothing for text nodes
-                            } else {
-                                // Remove any other type of node
-                                node.removeChild(child);
-                            }
-                        });
-                    }
-
-                    // Remove all inline styles
-                    var elementsWithStyles = tempDiv.querySelectorAll('[style]');
-                    elementsWithStyles.forEach(function (element) {
-                        element.removeAttribute('style');
-                    });
-
-                    // Remove HTML comments
-                    function removeComments(node) {
-                        var childNodes = Array.from(node.childNodes);
-                        childNodes.forEach(function(child) {
-                            if (child.nodeType === 8) { // Comment Node
-                                node.removeChild(child);
-                            } else if (child.nodeType === 1) {
-                                removeComments(child);
-                            }
-                        });
-                    }
-                    removeComments(tempDiv);
-
-                    // Clean unwanted tags
-                    cleanTags(tempDiv);
-
-                    // Insert the cleaned content into the editor
-                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
-                }
-            }
-        });
+					// Insert the cleaned content into the editor
+					document.execCommand('insertHTML', false, tempDiv.innerHTML);
+				}
+			}
+		});
 
 
 
@@ -855,6 +855,7 @@
          data-rurera-faq="1"
          data-faq-block-id="${blockId}"
          data-faq-items="${dataAttr}"
+         contenteditable="false"
          itemscope itemtype="https://schema.org/FAQPage">
 
       ${editBar}
@@ -1217,7 +1218,6 @@
             callbacks: {
                 onChange: function (contents, $editable) {
                     sanitizeEditorStyles($editable);
-                    replaceGSShortcodes($editable[0]);
                 },
                 onPaste: function (e) {
                     let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
@@ -1281,6 +1281,7 @@
                 }
             }
         });
+
         function sanitizeEditorStyles($editor) {
             let el = $editor[0];
 
@@ -1295,85 +1296,6 @@
                 timer = setTimeout(fn, delay);
             };
         }
-
-
-
-
-
-        /*
-        Short Code Convert Start
-         */
-
-        function replaceGSShortcodes(container) {
-            const walker = document.createTreeWalker(
-                container,
-                NodeFilter.SHOW_TEXT,
-                {
-                    acceptNode(node) {
-                        // ❌ Ignore text inside existing shortcode chips
-                        if (node.parentElement.closest('.shortcode-chip')) {
-                            return NodeFilter.FILTER_REJECT;
-                        }
-                        return NodeFilter.FILTER_ACCEPT;
-                    }
-                }
-            );
-
-            let textNodes = [];
-            while (walker.nextNode()) {
-                textNodes.push(walker.currentNode);
-            }
-
-            textNodes.forEach(textNode => {
-                const regex = /\[GS\s+"([^"]+)"\]/g;
-                let text = textNode.nodeValue;
-                let match;
-
-                if (!regex.test(text)) return;
-
-                regex.lastIndex = 0;
-                let fragment = document.createDocumentFragment();
-                let lastIndex = 0;
-
-                while ((match = regex.exec(text)) !== null) {
-                    const key = match[1];
-                    const value = GS_SHORTCODES[key];
-
-                    // ❌ If no value, leave it untouched
-                    if (!value) continue;
-
-                    // text before shortcode
-                    fragment.appendChild(
-                        document.createTextNode(text.slice(lastIndex, match.index))
-                    );
-
-                    // shortcode chip
-                    const chip = document.createElement('span');
-                    chip.className = 'shortcode-chip';
-                    chip.dataset.sc = key;
-
-                    chip.innerHTML = `
-                <span class="sc-label">[GS "${key}"]</span>
-                <span class="sc-value">${value}</span>
-            `;
-
-                    fragment.appendChild(chip);
-                    lastIndex = regex.lastIndex;
-                }
-
-                fragment.appendChild(
-                    document.createTextNode(text.slice(lastIndex))
-                );
-
-                textNode.replaceWith(fragment);
-            });
-        }
-
-
-        /*
-        ShortCode Convert Ends
-         */
-
 
         function removeInlineStyles(node) {
             if (node.nodeType === Node.ELEMENT_NODE) {
@@ -1393,10 +1315,6 @@
 
                 span.replaceWith(fragment);
             });
-            container.querySelectorAll('[bis_skin_checked]').forEach(el => {
-                el.removeAttribute('bis_skin_checked');
-            });
-
         }
         function fixHeadingOverflow(container) {
             container.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(heading => {
@@ -1436,7 +1354,6 @@
                 if (node.getAttribute('dir') === 'ltr' || node.getAttribute('dir') === 'rtl') {
                     node.removeAttribute('dir');
                 }
-
             }
             node.childNodes.forEach(removeDirAttribute);
         }
@@ -1601,7 +1518,7 @@
                 }
             }
         });
-    }
+	}
 
 
 
@@ -2081,270 +1998,270 @@ function rurera_check_field_type(thisObj, alert_messages, has_empty) {
 }
 
 $(document).on('click', '.pin-search', function () {
-    var form_id = $(this).attr('data-form_id');
-    var search_type = $(this).attr('data-search_type');
+	var form_id = $(this).attr('data-form_id');
+	var search_type = $(this).attr('data-search_type');
 
-    var formFields = $('#'+form_id).find('input, select, textarea');
+	var formFields = $('#'+form_id).find('input, select, textarea');
 
-    var formData = {};
-    // Iterate over each form field
-    formFields.each(function() {
-        var name = $(this).attr('name');
-        var value = $(this).val();
+	var formData = {};
+	// Iterate over each form field
+	formFields.each(function() {
+		var name = $(this).attr('name');
+		var value = $(this).val();
 
-        if (name) {
-            formData[name] = value;
-        }
-    });
-    var jsonFormData = JSON.stringify(formData);
+		if (name) {
+			formData[name] = value;
+		}
+	});
+	var jsonFormData = JSON.stringify(formData);
 
-    var form_data_encoded  = jsonFormData;
-    $.ajax({
-        type: "POST",
-        url: '/admin/users/pin_search',
-        data: {'seach_type': search_type, 'form_id': form_id, 'form_data_encoded': form_data_encoded},
-        success: function (return_data) {
-            console.log(return_data);
-        }
-    });
+	var form_data_encoded  = jsonFormData;
+	$.ajax({
+		type: "POST",
+		url: '/admin/users/pin_search',
+		data: {'seach_type': search_type, 'form_id': form_id, 'form_data_encoded': form_data_encoded},
+		success: function (return_data) {
+			console.log(return_data);
+		}
+	});
 });
 
 
 $(document).on('click', '.unpin-search', function () {
-    var search_type = $(this).attr('data-search_type');
-    $.ajax({
-        type: "POST",
-        url: '/admin/users/unpin_search',
-        data: {'seach_type': search_type},
-        success: function (return_data) {
-            location.reload();
-        }
-    });
+	var search_type = $(this).attr('data-search_type');
+	$.ajax({
+		type: "POST",
+		url: '/admin/users/unpin_search',
+		data: {'seach_type': search_type},
+		success: function (return_data) {
+			location.reload();
+		}
+	});
 });
 
 $(document).on('click', '.save-template', function () {
-    // Select all form fields inside the div with id "question_properties"
-    $(".template_save_modal").modal('show');
+	// Select all form fields inside the div with id "question_properties"
+	$(".template_save_modal").modal('show');
 
-    var form_id = $(this).attr('data-form_id');
-    var template_type = $(this).attr('data-template_type');
-    var form_data = new FormData($('#' + form_id)[0]);
+	var form_id = $(this).attr('data-form_id');
+	var template_type = $(this).attr('data-template_type');
+	var form_data = new FormData($('#' + form_id)[0]);
 
-    // Create an object to store the name-value pairs
-    var jsonFormData = {};
-    form_data.forEach((value, key) => {
-        jsonFormData[key] = value;
-    });
+	// Create an object to store the name-value pairs
+	var jsonFormData = {};
+	form_data.forEach((value, key) => {
+		jsonFormData[key] = value;
+	});
 
-    jsonFormData['url_params'] = Object.entries(jsonFormData)
-        .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
-        .join('&');
-    console.log(jsonFormData);
+	jsonFormData['url_params'] = Object.entries(jsonFormData)
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+    .join('&');
+	console.log(jsonFormData);
 
-    jsonFormData = JSON.stringify(jsonFormData);
-    $(".form_data_encoded").val(jsonFormData);
-    $(".template_type").val(template_type);
-    $(".form_id").val(form_id);
+	jsonFormData = JSON.stringify(jsonFormData);
+	$(".form_data_encoded").val(jsonFormData);
+	$(".template_type").val(template_type);
+	$(".form_id").val(form_id);
 
 
 });
 
 $(document).on('click', '.save-template-btn', function () {
-    //$(".template_save_modal").modal('hide');
-    $(this).attr('disabled','disabled');
-    var template_name = $('.template_name').val();
-    var template_type = $('.template_type').val();
-    var form_id = $('.form_id').val();
-    var form_data_encoded  = $('.form_data_encoded').val();
-    $.ajax({
-        type: "POST",
-        url: '/admin/users/save_templates',
-        data: {'template_type': template_type, 'template_name': template_name, 'form_data_encoded': form_data_encoded},
-        success: function (return_data) {
-            $("#"+form_id).submit();
-            location.reload();
-            console.log(return_data);
-        }
-    });
+	//$(".template_save_modal").modal('hide');
+	$(this).attr('disabled','disabled');
+	var template_name = $('.template_name').val();
+	var template_type = $('.template_type').val();
+	var form_id = $('.form_id').val();
+	var form_data_encoded  = $('.form_data_encoded').val();
+	$.ajax({
+		type: "POST",
+		url: '/admin/users/save_templates',
+		data: {'template_type': template_type, 'template_name': template_name, 'form_data_encoded': form_data_encoded},
+		success: function (return_data) {
+			$("#"+form_id).submit();
+			location.reload();
+			console.log(return_data);
+		}
+	});
 });
 
 $(document).on('click', '.apply-template-field span', function () {
-    var formDatajson = $(this).closest('.apply-template-field').attr('data-template_data');
-    var formDataObj = JSON.parse(formDatajson);
-    var form_id = $(this).closest('.apply-template-field').attr('data-form_id');
-    var template_type = $(this).closest('.apply-template-field').attr('data-template_type');
+	var formDatajson = $(this).closest('.apply-template-field').attr('data-template_data');
+	var formDataObj = JSON.parse(formDatajson);
+	var form_id = $(this).closest('.apply-template-field').attr('data-form_id');
+	var template_type = $(this).closest('.apply-template-field').attr('data-template_type');
 
-    is_template_active = true;
-    var formFields = $('#'+form_id).find('input, select, textarea');
-    var parentForm = $('#'+form_id);
+	is_template_active = true;
+	var formFields = $('#'+form_id).find('input, select, textarea');
+	var parentForm = $('#'+form_id);
 
 
-    var form_data = new FormData($('#' + form_id)[0]);
-    $('#' + form_id).find('input[type="checkbox"]:not(:checked)').each(function() {
-        form_data.append($(this).attr('name'), ''); // Set value as empty or 'false' as needed
-    });
-    var jsonFormData = {};
-    pre(formDataObj['num_correct_answers'], 'formDataObj');
+	var form_data = new FormData($('#' + form_id)[0]);
+	$('#' + form_id).find('input[type="checkbox"]:not(:checked)').each(function() {
+		form_data.append($(this).attr('name'), ''); // Set value as empty or 'false' as needed
+	});
+	var jsonFormData = {};
+	pre(formDataObj['num_correct_answers'], 'formDataObj');
 
-    form_data.forEach((value, key) => {
-        var name = key;
-        if(name == '_token'){
-            return true;
-        }
+	form_data.forEach((value, key) => {
+    var name = key;
+	if(name == '_token'){
+		return true;
+	}
 
-        var selected_value = formDataObj[name];
+    var selected_value = formDataObj[name];
 
-        // Handle radio and checkbox inputs
-        if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
+    // Handle radio and checkbox inputs
+    if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
 
-            if (name.endsWith('[]')) {
-                // Remove the "[]" from the field name for consistency
-                key_name = name.slice(0, -2);
-                var selected_value = formDataObj[key_name];
-            }
-            if (Array.isArray(selected_value)) {
-                // For checkboxes with multiple values
-                parentForm.find('[name="'+name+'"]').prop('checked', false);
-                selected_value.forEach(val => {
-                    parentForm.find('[name="'+name+'"][value="'+val+'"]').prop('checked', true);
-                });
-            } else {
-                // For single radio or checkbox
-                parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
-            }
-            parentForm.find('[name="'+name+'"]').change();
-        } else if (name.endsWith('[]')) {
-            key_name = name.slice(0, -2);
-            var selected_value = formDataObj[key_name];
-            pre(name, 'name');
-            pre(selected_value, 'selected_value');
-            // Remove the "[]" from the field name for consistency
-            name = name.slice(0, -2);
-            var selected_value = formDataObj[name];
-            if (Array.isArray(selected_value)) {
-                // Handle array of values for inputs with the same base name
-
-                selected_value.forEach((val, idx) => {
-                    // Find and set values for inputs with the modified name
-                    parentForm.find('[name="'+name+'[]"]').eq(idx).val(val);
-                });
-            }
+		if (name.endsWith('[]')) {
+			// Remove the "[]" from the field name for consistency
+			key_name = name.slice(0, -2);
+			var selected_value = formDataObj[key_name];
+		}
+        if (Array.isArray(selected_value)) {
+            // For checkboxes with multiple values
+			parentForm.find('[name="'+name+'"]').prop('checked', false);
+            selected_value.forEach(val => {
+                parentForm.find('[name="'+name+'"][value="'+val+'"]').prop('checked', true);
+            });
         } else {
-            // Handle other input types like text, select, and textarea
-            parentForm.find('[name="'+name+'"]').val(selected_value);
+            // For single radio or checkbox
+            parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
         }
+		parentForm.find('[name="'+name+'"]').change();
+    } else if (name.endsWith('[]')) {
+		key_name = name.slice(0, -2);
+		var selected_value = formDataObj[key_name];
+		pre(name, 'name');
+		pre(selected_value, 'selected_value');
+        // Remove the "[]" from the field name for consistency
+        name = name.slice(0, -2);
+		var selected_value = formDataObj[name];
+        if (Array.isArray(selected_value)) {
+            // Handle array of values for inputs with the same base name
 
-        // Additional handling for specific input types
-        if (parentForm.find('[name="'+name+'"]').is('select')) {
-            var next_index = parentForm.find('[name="'+name+'"]').attr('data-next_index');
-            var next_value = formDataObj[next_index];
-            parentForm.find('[name="'+name+'"]').attr('data-next_value', next_value);
-            parentForm.find('[name="'+name+'"]').change();
+            selected_value.forEach((val, idx) => {
+                // Find and set values for inputs with the modified name
+                parentForm.find('[name="'+name+'[]"]').eq(idx).val(val);
+            });
         }
+    } else {
+        // Handle other input types like text, select, and textarea
+        parentForm.find('[name="'+name+'"]').val(selected_value);
+    }
 
-        if (parentForm.find('[name="'+name+'"]').is('textarea')) {
-            if (parentForm.find('[name="'+name+'"]').hasClass('summernote')) {
-                parentForm.find('[name="'+name+'"]').summernote('code', selected_value);
-            }
+    // Additional handling for specific input types
+    if (parentForm.find('[name="'+name+'"]').is('select')) {
+        var next_index = parentForm.find('[name="'+name+'"]').attr('data-next_index');
+        var next_value = formDataObj[next_index];
+        parentForm.find('[name="'+name+'"]').attr('data-next_value', next_value);
+        parentForm.find('[name="'+name+'"]').change();
+    }
+
+    if (parentForm.find('[name="'+name+'"]').is('textarea')) {
+        if (parentForm.find('[name="'+name+'"]').hasClass('summernote')) {
+            parentForm.find('[name="'+name+'"]').summernote('code', selected_value);
         }
+    }
 
-        if (parentForm.find('[name="'+name+'"]').attr('type') == 'range') {
-            parentForm.find('[name="'+name+'"]').change();
-        }
+    if (parentForm.find('[name="'+name+'"]').attr('type') == 'range') {
+        parentForm.find('[name="'+name+'"]').change();
+    }
 
-        // Store the form data in the JSON object
-        jsonFormData[key] = value;
-    });
+    // Store the form data in the JSON object
+    jsonFormData[key] = value;
+});
 
 });
 
 $(document).on('click', '.remove-template', function () {
-    var template_name = $(this).attr('data-template_name');
-    var template_type = $(this).closest('span').attr('data-template_type');
-    $(this).closest('span').remove();
-    $.ajax({
-        type: "POST",
-        url: '/admin/users/remove_template',
-        data: {'template_type': template_type, 'template_name': template_name},
-        success: function (return_data) {
-            console.log(return_data);
-        }
-    });
+	var template_name = $(this).attr('data-template_name');
+	var template_type = $(this).closest('span').attr('data-template_type');
+	$(this).closest('span').remove();
+	$.ajax({
+		type: "POST",
+		url: '/admin/users/remove_template',
+		data: {'template_type': template_type, 'template_name': template_name},
+		success: function (return_data) {
+			console.log(return_data);
+		}
+	});
 });
 
 
 function pre(output_var, output_label = ''){
-    console.log(output_label+'-start');
-    console.log(output_var);
-    console.log(output_label+'-ends');
+	console.log(output_label+'-start');
+	console.log(output_var);
+	console.log(output_label+'-ends');
 }
 
 $(document).on('click', '.copyable-text', function () {
-    // Get the content inside the <pre> tag
+	// Get the content inside the <pre> tag
 
-    const promptText = $(this).text();
+	const promptText = $(this).text();
 
-    // Create a temporary <textarea> element to copy text from
-    const tempTextarea = document.createElement('textarea');
-    tempTextarea.value = promptText;
-    document.body.appendChild(tempTextarea);
+	// Create a temporary <textarea> element to copy text from
+	const tempTextarea = document.createElement('textarea');
+	tempTextarea.value = promptText;
+	document.body.appendChild(tempTextarea);
 
-    // Select the text and copy it
-    tempTextarea.select();
-    tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+	// Select the text and copy it
+	tempTextarea.select();
+	tempTextarea.setSelectionRange(0, 99999); // For mobile devices
 
-    try {
-        document.execCommand('copy');
+	try {
+		document.execCommand('copy');
 
-    } catch (error) {
-    }
+	} catch (error) {
+	}
 
-    $.toast({
-        heading: 'Success!',
-        text: 'Text Copied',
-        bgColor: 'green',
-        textColor: 'white',
-        hideAfter: 3000,
-        position: 'bottom-right',
-        icon: 'success'
-    });
+	$.toast({
+            heading: 'Success!',
+            text: 'Text Copied',
+            bgColor: 'green',
+            textColor: 'white',
+            hideAfter: 3000,
+            position: 'bottom-right',
+            icon: 'success'
+          });
 
-    // Remove the temporary <textarea> element
-    document.body.removeChild(tempTextarea);
+	// Remove the temporary <textarea> element
+	document.body.removeChild(tempTextarea);
 });
 
 $(document).on('click', '.copy-to-text', function () {
-    // Get the content inside the <pre> tag
-    var copyable_div = $(this).attr('data-copy_to');
-    const promptText = $('.'+copyable_div).text();
+	// Get the content inside the <pre> tag
+	var copyable_div = $(this).attr('data-copy_to');
+	const promptText = $('.'+copyable_div).text();
 
-    // Create a temporary <textarea> element to copy text from
-    const tempTextarea = document.createElement('textarea');
-    tempTextarea.value = promptText;
-    document.body.appendChild(tempTextarea);
+	// Create a temporary <textarea> element to copy text from
+	const tempTextarea = document.createElement('textarea');
+	tempTextarea.value = promptText;
+	document.body.appendChild(tempTextarea);
 
-    // Select the text and copy it
-    tempTextarea.select();
-    tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+	// Select the text and copy it
+	tempTextarea.select();
+	tempTextarea.setSelectionRange(0, 99999); // For mobile devices
 
-    try {
-        document.execCommand('copy');
+	try {
+		document.execCommand('copy');
 
-    } catch (error) {
-    }
+	} catch (error) {
+	}
 
-    $.toast({
-        heading: 'Success!',
-        text: 'Text Copied',
-        bgColor: 'green',
-        textColor: 'white',
-        hideAfter: 3000,
-        position: 'bottom-right',
-        icon: 'success'
-    });
+	$.toast({
+            heading: 'Success!',
+            text: 'Text Copied',
+            bgColor: 'green',
+            textColor: 'white',
+            hideAfter: 3000,
+            position: 'bottom-right',
+            icon: 'success'
+          });
 
-    // Remove the temporary <textarea> element
-    document.body.removeChild(tempTextarea);
+	// Remove the temporary <textarea> element
+	document.body.removeChild(tempTextarea);
 });
 
 
@@ -2682,14 +2599,14 @@ $(document).on('click', '.generate-subtopic-part', function (e) {
     });
 });
 $(document).ready(function () {
-    if (
-        typeof $.fn.select2 !== 'undefined' &&
-        $('.closeOnSelect-false').length
-    ) {
-        $('.closeOnSelect-false').select2({
-            closeOnSelect: false
-        });
-    }
+  if (
+    typeof $.fn.select2 !== 'undefined' &&
+    $('.closeOnSelect-false').length
+  ) {
+    $('.closeOnSelect-false').select2({
+      closeOnSelect: false
+    });
+  }
 });
 
 
