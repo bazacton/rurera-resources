@@ -872,9 +872,6 @@
     }
     .status-badge {
         display: inline-block;
-        padding: 6px 16px;
-        border-radius: 5px;
-        color: white;
         text-align: center;
     }
     .status-badge img {
@@ -887,7 +884,7 @@
         background-color: #8da2b5;
     }
     .status-upcoming {
-        background-color: var(--primary);
+        color: var(--primary);
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {
