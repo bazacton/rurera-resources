@@ -345,7 +345,7 @@
     }
     .blog-single-post .card .card-header .btn-link:after {
         position: absolute;
-        top: 21px;
+        top: 50%;
         right: 15px;
         height: 8px;
         width: 8px;
@@ -354,6 +354,7 @@
         border-bottom: 0;
         border-right: 0;
         transform: rotate(45deg);
+        margin-top: -4px;
     }
     .blog-single-post .card .card-header .btn-link.collapsed:after {
         transform: rotate(-135deg);
