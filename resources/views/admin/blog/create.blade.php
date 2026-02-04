@@ -917,7 +917,7 @@
         margin-bottom: 50px;
     }
     .event-title {
-        color: #0d234b; /* Dark blue similar to image */
+        color: #0d234b;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -956,7 +956,7 @@
         background-color: #8da2b5; /* Greyish blue */
     }
     .status-upcoming {
-        background-color: #c91f47; /* Red/Pinkish similar to image */
+        background-color: var(--primary); /* Red/Pinkish similar to image */
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {
