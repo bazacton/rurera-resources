@@ -15480,7 +15480,7 @@ outline-offset:-3px;
 .blog-single-post .faq-edit-bar {
     display: none;
 }
-.blog-single-post .card {background-color: #f7f7f7;margin: 0 0 5px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
+.blog-single-post .card {background-color: inherit;margin: 0 0 5px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
 .blog-single-post .card .card-header {
     background-color: inherit;
     text-align: left;
@@ -15490,14 +15490,14 @@ outline-offset:-3px;
 .blog-single-post .card .card-header .btn-link {
     background-color: inherit;
     justify-content: flex-start;
-    padding: 15px;
+    padding: 0 0 15px;
     height: auto;
     font-weight: 700;
     position: relative;
     text-decoration: none;
 }
 .blog-single-post .card-body {
-    padding: 0 15px 15px;
+    padding: 0 0 15px;
 }
 .blog-single-post .card .card-header .btn-link:after {
     position: absolute;
