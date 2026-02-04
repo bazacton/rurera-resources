@@ -303,7 +303,7 @@
     .blog-single-post .accordion .card {
         background-color: inherit;
         box-shadow: none;
-        margin: 0 0 5px;
+        margin: 0 0 15px;
         border: 0;
         text-align: left;
         padding: 0;
