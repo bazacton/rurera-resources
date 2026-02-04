@@ -464,6 +464,7 @@
         width: 100%;
         border: 0;
         border-radius: 5px;
+        height: 230px;
     }
     .blog-single-post .rurera-address-box {
         display: flex;
