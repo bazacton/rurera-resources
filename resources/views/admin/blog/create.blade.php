@@ -873,6 +873,11 @@
     .status-badge {
         display: inline-block;
         text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 5px 10px 8px;
+        line-height: normal;
+        margin-top: 5px;
     }
     .status-badge img {
         height: 18px;
@@ -882,9 +887,6 @@
     }
     .status-passed {
         background-color: #8da2b5;
-    }
-    .status-upcoming {
-        color: var(--primary);
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {
