@@ -618,8 +618,6 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 25px;
-        padding-top: 25px;
-        border-top: 1px solid #ddd;
     }
     .blog-single-post .stat-item {
         flex: 0 0 33%;
@@ -674,8 +672,6 @@
     .blog-single-post .timeline-item {
         position: relative;
         margin-bottom: 25px;
-        padding: 0 0 25px;
-        border-bottom: 1px solid #ddd;
     }
     .blog-single-post .timeline-item:last-child {
         margin-bottom: 15px;
@@ -751,9 +747,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px 0;
-        border-bottom: 1px solid #f1f5f9;
-        color: #475569;
+        margin: 0 0 15px;
     }
     .blog-single-post .rurera-rating-row:last-of-type {
         border-bottom: none;
@@ -761,16 +755,6 @@
     }
     .blog-single-post .rurera-rating-value {
         font-weight: 600;
-        color: #1e293b;
-    }
-    .blog-single-post .rurera-rating-good {
-        color: #1e293b;
-    }
-    .blog-single-post .rurera-rating-outstanding {
-        color: #1e293b;
-    }
-    .blog-single-post .rurera-rating-requires {
-        color: #1e293b;
     }
     .blog-single-post .rurera-view-report-btn {
         background-color: var(--primary);
@@ -866,7 +850,6 @@
     }
     .event-row {
         padding: 20px 0;
-        border-bottom: 1px solid #ddd;
         display: flex;
         align-items: center;
     }
@@ -878,6 +861,7 @@
     }
     .event-date {
         color: #495057;
+        display: block;
     }
     .status-badge {
         display: inline-block;
@@ -892,6 +876,7 @@
         height: 18px;
         width: 18px;
         margin: 0 0 0 5px;
+        display: none;
         filter: invert(100%) sepia(15%) saturate(7459%) hue-rotate(292deg) brightness(126%) contrast(108%);
     }
     .status-passed {
