@@ -29,7 +29,7 @@
                                     <!-- Blog Stats -->
                                     <h4>Blog Stats</h4>
                                     <div class="form-row">
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-6 mb-3">
                                             <div class="form-field">
                                                 <label for="shares">Shares</label>
                                                 <input type="number" name="no_of_shares" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->no_of_shares : ''}}" class="form-control" id="shares" placeholder="Number of Shares" required>
@@ -37,7 +37,7 @@
 
                                             <div class="invalid-feedback">Please provide shares count.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-6 mb-3">
                                             <div class="form-field">
                                                 <label for="views">Views</label>
                                                 <input type="number" name="views" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->views : ''}}" class="form-control" id="views" placeholder="Number of Views" required>
@@ -74,15 +74,8 @@
 
                                             <div class="invalid-feedback">School Name is required.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
-                                            <div class="form-field">
-                                                <label for="schoolName">Ofsted Report summary</label>
-                                                <textarea name="ofsted_report_summary" class="form-control summernote-editor" id="ofsted_report_summary">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->ofsted_report_summary : ''}}</textarea>
-                                            </div>
 
-                                            <div class="invalid-feedback">School Name is required.</div>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="localAuthority">Local Authority</label>
                                                 <input type="text" name="local_authority" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->local_authority : ''}}" class="form-control" id="localAuthority" required>
@@ -90,14 +83,14 @@
 
                                             <div class="invalid-feedback">Local Authority is required.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="assessment">Assessment</label>
                                                 <input type="text" name="assessment" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->assessment : ''}}" class="form-control" id="assessment" value="FSCE" readonly>
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="feesType">Fees Type</label>
                                                 <div class="select-holder">
@@ -110,7 +103,7 @@
 
                                             <div class="invalid-feedback">Please select fees type.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="boarding">Boarding</label>
                                                 <div class="select-holder">
@@ -123,7 +116,7 @@
 
                                             <div class="invalid-feedback">Please select boarding type.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="types">Types</label>
                                                 <div class="select-holder">
@@ -139,7 +132,7 @@
                                             <div class="invalid-feedback">Please select type.</div>
                                         </div>
 
-                                        <div class="col-md-12 mb-3 boarding_type_fields boarding_type_mix">
+                                        <div class="col-md-3 mb-3 boarding_type_fields boarding_type_mix">
                                             <div class="form-field">
                                                 <label for="localAuthority">Boys seats</label>
                                                 <input type="number" name="boys_seats" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->boys_seats : ''}}" class="form-control" id="boys_seats" required>
@@ -147,7 +140,7 @@
 
                                             <div class="invalid-feedback">Local Authority is required.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3 boarding_type_fields boarding_type_mix">
+                                        <div class="col-md-3 mb-3 boarding_type_fields boarding_type_mix">
                                             <div class="form-field">
                                                 <label for="localAuthority">Girls seats</label>
                                                 <input type="number" name="girls_seats" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->girls_seats : ''}}" class="form-control" id="girls_seats" required>
@@ -155,7 +148,7 @@
 
                                             <div class="invalid-feedback">Local Authority is required.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="placesPerYear">Places per year</label>
                                                 <input type="number" name="places_per_year" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->places_per_year : ''}}" class="form-control" id="placesPerYear" value="210" required>
@@ -163,7 +156,7 @@
 
                                             <div class="invalid-feedback">Please enter places per year.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="ofstedRating">Ofsted Rating</label>
                                                 <div class="select-holder">
@@ -177,7 +170,7 @@
 
                                             <div class="invalid-feedback">Please select Ofsted rating.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="competition">Competition</label>
                                                 <input type="text" name="competition" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->competition : ''}}" class="form-control" id="competition" placeholder="e.g. 5-6 applicants per place" required>
@@ -185,7 +178,7 @@
 
                                             <div class="invalid-feedback">Please enter competition details.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="examFormat">Exam Format</label>
                                                 <div class="select-holder">
@@ -204,7 +197,7 @@
 
                                             <div class="invalid-feedback">Please enter exam format.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="catchmentArea">Catchment area</label>
                                                 <div class="select-holder">
@@ -220,7 +213,7 @@
                                             <div class="invalid-feedback">Please select catchment area option.</div>
                                         </div>
 
-                                        <div class="col-md-12 mb-3 catchment_area_fields catchment_area_fields_yes">
+                                        <div class="col-md-3 mb-3 catchment_area_fields catchment_area_fields_yes">
                                             <div class="form-field">
                                                 <label for="localAuthority">List of Catchment area’s</label>
                                                 <input type="number" name="list_of_catchment_areas" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->list_of_catchment_areas : ''}}" class="form-control" id="localAuthority" required>
@@ -233,7 +226,7 @@
                                     <!-- Assessment Criteria -->
                                     <h4>Assessment Criteria</h4>
                                     <div class="form-row">
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="english">English</label>
                                                 <div class="select-holder">
@@ -246,7 +239,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="maths">Maths</label>
                                                 <div class="select-holder">
@@ -260,7 +253,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="verbalReasoning">Verbal Reasoning</label>
                                                 <div class="select-holder">
@@ -273,7 +266,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="nonVerbalReasoning">Non-Verbal Reasoning</label>
                                                 <div class="select-holder">
@@ -286,7 +279,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="additional">Additional</label>
                                                 <div class="select-holder">
@@ -304,7 +297,7 @@
                                     <!-- Location -->
                                     <h4>Location</h4>
                                     <div class="form-row">
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="address">Complete address</label>
                                                 <input type="text" name="complete_address" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->complete_address : ''}}" class="form-control" id="address" required>
@@ -314,21 +307,21 @@
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="mapLat">Map LAT</label>
                                                 <input type="text" name="map_lat" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->map_lat : ''}}" class="form-control" id="mapLat" required>
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="mapLog">Map LOG</label>
                                                 <input type="text" name="map_long" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->map_long : ''}}" class="form-control" id="mapLog" required>
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="phone">Phone number</label>
                                                 <input type="tel" name="phone_number" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->phone_number : ''}}" class="form-control" id="phone" required>
@@ -336,7 +329,7 @@
 
                                             <div class="invalid-feedback">Phone number is required.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="email">Email</label>
                                                 <input type="email" name="email" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->email : ''}}" class="form-control" id="email" required>
@@ -344,7 +337,7 @@
 
                                             <div class="invalid-feedback">Valid email is required.</div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="website">Website link</label>
                                                 <input type="url" name="website_link" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->website_link : ''}}" class="form-control" id="website" required>
@@ -357,7 +350,7 @@
                                     <!-- Offset report (Ofsted) -->
                                     <h4>Ofsted Report</h4>
                                     <div class="form-row">
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="qualityEducation">The quality of education</label>
                                                 <div class="select-holder">
@@ -369,7 +362,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="behaviour">Behaviour and attitude</label>
                                                 <div class="select-holder">
@@ -384,7 +377,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="personalDev">Personal development</label>
                                                 <div class="select-holder">
@@ -398,7 +391,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="leadership">Leadership and management</label>
                                                 <div class="select-holder">
@@ -412,7 +405,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="sixForm">Six form provision</label>
                                                 <div class="select-holder">
@@ -426,7 +419,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="inspectionDate">Inspection date</label>
                                                 <div class="datepicker-field">
@@ -437,7 +430,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="overallRating">Overall rating</label>
                                                 <div class="select-holder">
@@ -451,7 +444,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
 
 
                                             <div class="form-field">
@@ -484,12 +477,20 @@
                                             </div>
 
                                         </div>
+                                        <div class="col-md-12 mb-3">
+                                            <div class="form-field">
+                                                <label for="schoolName">Ofsted Report summary</label>
+                                                <textarea name="ofsted_report_summary" class="form-control summernote-editor" id="ofsted_report_summary">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->ofsted_report_summary : ''}}</textarea>
+                                            </div>
+
+                                            <div class="invalid-feedback">School Name is required.</div>
+                                        </div>
                                     </div>
 
                                     <!-- Important Dates -->
                                     <h4>Important Dates</h4>
                                     <div class="form-row">
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="regOpen">Registration opens</label>
                                                 <div class="datepicker-field">
@@ -500,7 +501,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="regClose">Registration Closes</label>
                                                 <div class="datepicker-field">
@@ -511,7 +512,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="examDate">11+ Exam Date</label>
                                                 <div class="datepicker-field">
@@ -522,7 +523,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="resultDate">Results date</label>
                                                 <div class="datepicker-field">
@@ -533,7 +534,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="resultPublished">Results published</label>
                                                 <div class="datepicker-field">
@@ -544,7 +545,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="caafDeadline">CAAF applications deadline</label>
                                                 <div class="datepicker-field">
@@ -555,7 +556,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="offerDay">National offer day</label>
                                                 <div class="datepicker-field">
