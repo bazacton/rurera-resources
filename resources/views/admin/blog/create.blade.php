@@ -298,9 +298,6 @@
         max-width: 862px;
         margin: 0 auto;
     }
-    .blog-single-post .faq-edit-bar {
-        display: none;
-    }
     .blog-single-post .accordion .card {
         background-color: #f7f7f7;
         box-shadow: none;
