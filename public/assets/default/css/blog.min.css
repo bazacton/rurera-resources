@@ -271,10 +271,6 @@
     padding: 0;
     margin: 0 0 25px;
 }
-.blog-single-post .stat-value {
-    color: var(--primary);
-    font-weight: bold;
-}
 .blog-single-post .stat-label {
     color: #666;
 }
