@@ -852,8 +852,11 @@
     .event-description {
         margin-bottom: 30px;
     }
+    .events-container {
+        margin-bottom: 25px;
+    }
     .event-row {
-        padding: 20px 0;
+        padding: 6px 0;
         display: flex;
         align-items: center;
     }
