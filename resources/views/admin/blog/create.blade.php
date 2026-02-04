@@ -639,6 +639,9 @@
         padding: 0;
         margin: 0 0 25px;
     }
+    .blog-single-post .stat-value {
+        color: var(--primary)
+    }
     .blog-single-post .stat-label {
         color: #666;
     }
