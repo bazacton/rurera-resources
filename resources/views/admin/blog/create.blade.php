@@ -787,7 +787,6 @@
         color: #64748b;
     }
     .blog-single-post .rurera-inspection-date strong {
-        color: #1e293b;
         display: block;
         margin-top: 4px;
     }
@@ -801,7 +800,6 @@
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 24px;
-        color: #1e293b;
     }
     .blog-single-post .rurera-summary-item {
         display: flex;
@@ -821,7 +819,6 @@
     }
     .blog-single-post .rurera-summary-text h5 {
         margin-bottom: 4px;
-        color: #1e293b;
     }
     .blog-single-post .rurera-summary-text p {
         color: #64748b;
