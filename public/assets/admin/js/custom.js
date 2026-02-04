@@ -1216,6 +1216,9 @@
                 }
             },
             callbacks: {
+                onChange: function (contents, $editable) {
+                    sanitizeEditorStyles($editable);
+                },
                 onPaste: function (e) {
                     let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
 
@@ -1278,6 +1281,21 @@
                 }
             }
         });
+
+        function sanitizeEditorStyles($editor) {
+            let el = $editor[0];
+
+            el.querySelectorAll('[style]').forEach(node => {
+                node.removeAttribute('style');
+            });
+        }
+        function debounce(fn, delay = 300) {
+            let timer;
+            return function () {
+                clearTimeout(timer);
+                timer = setTimeout(fn, delay);
+            };
+        }
 
         function removeInlineStyles(node) {
             if (node.nodeType === Node.ELEMENT_NODE) {
