@@ -789,11 +789,9 @@
     .blog-single-post .rurera-big-badge {
         background-color: #22c55e;
         color: #ffffff;
-        font-size: 24px;
-        font-weight: 700;
-        padding: 12px 40px;
+        padding: 8px 30px;
         border-radius: 50px;
-        margin-bottom: 24px;
+        margin-bottom: 15px;
         display: inline-block;
     }
     .blog-single-post .rurera-inspection-date strong {
