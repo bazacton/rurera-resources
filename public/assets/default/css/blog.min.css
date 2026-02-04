@@ -41,6 +41,9 @@
 .blog-medium .blog-grid-detail {
     padding: 0 20px;
 }
+.blog-medium .blog-grid-detail .blog-grid-title {
+    margin-bottom: 0;
+}
 .blog-single-post .rurera-blog h2 {
     margin-bottom: 0;
 }
