@@ -502,7 +502,6 @@
     display: block;
 }
 .status-badge {
-    display: inline-block;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 3px;
