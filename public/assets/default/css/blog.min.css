@@ -332,6 +332,8 @@
 }
 .blog-single-post .timeline-content p {
     margin-bottom: 15px;
+    display: inline;
+    vertical-align: middle;
 }
 .blog-single-post .timeline-item .step-title {
     margin-bottom: 10px;
@@ -346,6 +348,7 @@
     padding: 0;
     line-height: normal;
     height: auto;
+    margin-left: 5px;
 }
 /* Blog Timeline Style End */
 /* Ofsted Report Styling */
