@@ -87,9 +87,6 @@
         opacity: 1;
         visibility: visible;
     }
-    .blog-single-post .entry-content > br:first-child {
-        display: none;
-    }
     .blog-single-post .wp-block-list li a {
         color: var(--primary);
     }
