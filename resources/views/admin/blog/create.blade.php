@@ -705,6 +705,9 @@
         background: #fff;
         transition: all 0.3s ease;
     }
+    .blog-single-post .timeline-content p {
+        margin-bottom: 15px;
+    }
     .blog-single-post .timeline-item .step-title {
         margin-bottom: 10px;
     }
