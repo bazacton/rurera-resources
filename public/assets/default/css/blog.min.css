@@ -603,7 +603,7 @@
     background-color: #8da2b5; /* Greyish blue */
 }
 .status-upcoming {
-    background-color: #c91f47; /* Red/Pinkish similar to image */
+    background-color: var(--primary);
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
