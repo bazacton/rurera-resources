@@ -142,9 +142,6 @@
                                                         <i class="fa fa-edit"></i>
                                                     </a>
                                                 @endcan
-                                                @can('admin_blog_delete')
-                                                    @include('admin.includes.delete_button',['url' => getAdminPanelUrl('/blog/'.$post->id.'/delete'),'btnClass' => ''])
-                                                @endcan
 
                                                     <a href="/admin/blog/{{ $post->id }}/duplicate_blog" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Duplicate">
                                                         <i class="fa fa-copy"></i>
