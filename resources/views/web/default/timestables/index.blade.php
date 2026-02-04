@@ -677,7 +677,7 @@
                     </div>
                     <div class="challenge-box-outer">
                         <div class="challenge-box">
-                            <div class="challenge-controls nav" id="myTab2" role="tablist">
+                            <div class="challenge-controls nav" id="challengeTab" role="tablist">
                                 <ul class="nav" id="myTab" role="tablist">
                                     <li class="nav-item">
                                       <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">New</a>
