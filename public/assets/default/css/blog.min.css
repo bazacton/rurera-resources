@@ -255,6 +255,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 25px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
 }
 .blog-single-post .stat-item {
     flex: 0 0 33%;
