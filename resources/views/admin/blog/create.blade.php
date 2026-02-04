@@ -755,16 +755,6 @@
     }
     .blog-single-post .rurera-rating-value {
         font-weight: 600;
-        color: #1e293b;
-    }
-    .blog-single-post .rurera-rating-good {
-        color: #1e293b;
-    }
-    .blog-single-post .rurera-rating-outstanding {
-        color: #1e293b;
-    }
-    .blog-single-post .rurera-rating-requires {
-        color: #1e293b;
     }
     .blog-single-post .rurera-view-report-btn {
         background-color: var(--primary);
