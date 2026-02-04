@@ -943,6 +943,19 @@
         }
     }
     /* Key Events Style End */
+    .shortcode-chip {
+        display: inline-block;
+        padding: .1rem .45rem;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 0, 0, .15);
+        background: #fff;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: .95em;
+        line-height: 1.4;
+        white-space: nowrap;
+        user-select: none;
+        -webkit-user-select: none;
+    }
     /* Blog Single Post Style End */
 </style>
 @endpush
