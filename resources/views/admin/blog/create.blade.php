@@ -1356,19 +1356,21 @@
         $(document).on('change', '.grammer_school_id', function (e) {
             var loadDiv = $('.grammer-school-block');
             var school_id = $(this).val();
-            rurera_loader(loadDiv, 'div');
-            jQuery.ajax({
-                type: "GET",
-                url: '/admin/grammer_schools/get_school_data',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"school_id": school_id},
-                success: function (return_data) {
-                    rurera_remove_loader(loadDiv, 'div');
-                    loadDiv.html(return_data);
-                }
-            });
+            if(school_id > 0){
+                rurera_loader(loadDiv, 'div');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/grammer_schools/get_school_data',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {"school_id": school_id},
+                    success: function (return_data) {
+                        rurera_remove_loader(loadDiv, 'div');
+                        loadDiv.html(return_data);
+                    }
+                });
+            }
         });
         $('.grammer_school_id').change();
 
