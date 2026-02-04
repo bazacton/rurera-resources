@@ -338,7 +338,6 @@
         position: relative;
         text-decoration: none;
         color: #343434;
-        font-size: .875rem;
         border: 0;
     }
     .blog-single-post .card-body {
