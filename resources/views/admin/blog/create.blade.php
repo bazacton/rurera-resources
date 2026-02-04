@@ -873,14 +873,6 @@
     }
     /* Ofsted Report Styling End */
     /* Key Events Style Start */
-    .events-container {
-        background-color: #ffffff;
-        border-radius: 8px;
-        border: 0;
-        padding: 0;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
     .event-title {
         color: #0d234b;
         font-weight: 700;
