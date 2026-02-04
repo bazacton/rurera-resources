@@ -49,6 +49,9 @@
                                         <a href="/admin/grammer_schools/{{ $grammerSchoolObj->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
                                             <i class="fa fa-edit"></i>
                                         </a>
+                                        <a href="/admin/grammer_schools/{{ $grammerSchoolObj->id }}/duplicate_school" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                            <i class="fa fa-copy"></i>
+                                        </a>
                                     </td>
 
                                 </tr>
