@@ -184,6 +184,34 @@
 
 @push('scripts_bottom')
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://example.com/blog/personalized-learning-with-educational-technology-a-game-changer-in-education"
+        },
+        "headline": "2 Ways to Boost Learning and SATs Success with Rurera",
+        "description": "Discover two effective ways Rurera helps students improve learning outcomes and succeed in SATs using personalized educational technology.",
+        "image": "https://example.com/store/1/default_images/blogs/blog-13.webp",
+        "author": {
+            "@type": "Person",
+            "name": "Author Name",
+            "url": "https://example.com/author/author-name"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Site Name",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://example.com/logo.png"
+            }
+        },
+        "datePublished": "2023-09-19T08:00:00+08:00",
+        "dateModified": "2023-09-19T08:00:00+08:00"
+        }
+    </script>
     <script>
         var webinarDemoLang = '{{ trans('webinars.webinar_demo') }}';
         var replyLang = '{{ trans('panel.reply') }}';
