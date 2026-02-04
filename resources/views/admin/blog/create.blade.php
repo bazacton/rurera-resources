@@ -87,9 +87,6 @@
         opacity: 1;
         visibility: visible;
     }
-    .blog-single-post .entry-content > br:first-child {
-        display: none;
-    }
     .blog-single-post .wp-block-list li a {
         color: var(--primary);
     }
@@ -303,7 +300,7 @@
     .blog-single-post .accordion .card {
         background-color: inherit;
         box-shadow: none;
-        margin: 0 0 5px;
+        margin: 0 0 15px;
         border: 0;
         text-align: left;
         padding: 0;
@@ -390,25 +387,6 @@
     }
     /* Table Default Style End */
 
-    /* Blog Single Post Alert Style Start */
-    .blog-single-post .alert {
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        background-color: #fefaf1;
-        border-color: #ffebc4;
-        border-radius: 5px;
-        padding: 25px;
-    }
-    .blog-single-post .alert .info-icon {
-        margin-right: 10px;
-        font-size: 1.5rem;
-        margin-top: 2px;
-    }
-    .blog-single-post .alert .text-box {
-        width: calc(100% - 50px);
-    }
-    /* Blog Single Post Alert Style End */
     .blog-edit-sidebar .form-field {
         display: flex;
         align-items: center;
@@ -460,14 +438,11 @@
     .blog-single-post .rurera-badge-pill {
         display: none;
     }
-    .blog-single-post .rurera-map-wrapper {
-        height: 100%;
-    }
     .blog-single-post .rurera-map-iframe {
         width: 100%;
         border: 0;
         border-radius: 5px;
-        height: 100%;
+        height: 230px;
     }
     .blog-single-post .rurera-address-box {
         display: flex;
@@ -522,6 +497,11 @@
         line-height: normal;
         color: #6c757d;
     }
+    .blog-single-post .rurera-address-details ul li img {
+        height: 18px;
+        width: 18px;
+        margin-right: 8px;
+    }
     .blog-single-post .rurera-schools-grid {
         display: flex;
         flex-wrap: wrap;
@@ -561,6 +541,7 @@
         max-width: 100%;
         max-height: 100%;
     }
+
     .blog-single-post .rurera-school-header {
         flex: 0 0 75%;
         max-width: 75%;
@@ -659,8 +640,7 @@
         margin: 0 0 25px;
     }
     .blog-single-post .stat-value {
-        color: var(--primary);
-        font-weight: bold;
+        color: var(--primary)
     }
     .blog-single-post .stat-label {
         color: #666;
@@ -718,6 +698,8 @@
     }
     .blog-single-post .timeline-content p {
         margin-bottom: 15px;
+        display: inline;
+        vertical-align: middle;
     }
     .blog-single-post .timeline-item .step-title {
         margin-bottom: 10px;
@@ -729,18 +711,11 @@
         margin-bottom: 15px;
     }
     .blog-single-post .btn-outline-custom {
-        color: #3498db;
-        border: 2px solid #3498db;
-        font-weight: 600;
-        padding: 6px 18px;
-        border-radius: 30px;
-        font-size: 0.85rem;
-        transition: all 0.3s;
-    }
-    .blog-single-post .btn-outline-custom:hover {
-        background-color: #3498db;
-        color: #fff;
-        text-decoration: none;
+        padding: 0;
+        line-height: normal;
+        height: auto;
+        margin-left: 5px;
+        position: relative;
     }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
@@ -884,12 +859,9 @@
     /* Ofsted Report Styling End */
     /* Key Events Style Start */
     .event-title {
-        color: #0d234b;
-        font-weight: 700;
         margin-bottom: 10px;
     }
     .event-description {
-        color: #6c757d;
         margin-bottom: 30px;
     }
     .event-row {
@@ -903,21 +875,18 @@
     }
     .event-name {
         font-weight: 700;
-        color: #0d234b;
-        font-size: 1.1rem;
     }
     .event-date {
         color: #495057;
     }
     .status-badge {
         display: inline-block;
-        padding: 8px 16px;
-        border-radius: 5px;
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: white;
-        min-width: 160px;
         text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 5px 10px 8px;
+        line-height: normal;
+        margin-top: 5px;
     }
     .status-badge img {
         height: 18px;
@@ -929,7 +898,7 @@
         background-color: #8da2b5;
     }
     .status-upcoming {
-        background-color: var(--primary);
+        color: var(--primary);
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {

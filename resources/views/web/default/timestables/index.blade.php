@@ -87,15 +87,12 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Freedom mode icon" loading="lazy" title="Engaging Students through Interactive Technologies">
                     </div>
                     <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
                 </div>
                 <div class="grid-card timestables-mode-data" data-mode_type="powerup-mode">
                     <div class="text-holder">
-                        <h3 class="font-16 font-weight-bold">
-                            
-                        </h3>
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/powerup-mode">
                                 <span class="sr-only">Power-up Heatmap</span>
@@ -216,42 +213,37 @@
                     <h6 class="font-weight-500 mb-20">Lesson experience</h6>
                     <div class="preferences-switch-list">
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Sound effect</span>
                             <div class="custom-control custom-switch">
-                                <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
-                                <label class="custom-control-label" for="sound"></label>
+                                <input type="checkbox" class="custom-control-input" id="sound" name="sound">
+                                <label class="custom-control-label" for="sound">Sound effect</label>
                             </div>
                         </div>
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Animation</span>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
-                                <label class="custom-control-label" for="animation"></label>
+                                <label class="custom-control-label" for="animation">Animation</label>
                             </div>
                         </div>
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Motivational message</span>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
-                                <label class="custom-control-label" for="motivational"></label>
+                                <label class="custom-control-label" for="motivational">Motivational message</label>
                             </div>
                         </div>
                         <div class="preferences-switch-box mb-15">
-                            <span class="switch-lable">Listing exercises</span>
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
-                                <label class="custom-control-label" for="listing"></label>
+                                <label class="custom-control-label" for="listing">Listing exercises</label>
                             </div>
                         </div>
                     </div>
                     <h6 class="font-weight-500 mb-20">Appearance</h6>
                     <div class="preferences-select">
-                        <span class="font-weight-500 mb-5 d-block">Dark mode</span>
-                        <select>
-                            <option value="System Default">System Default</option>
-                            <option value="System Default">System Default</option>
-                            <option value="System Default">System Default</option>
-                            <option value="System Default">System Default</option>
+                        <label for="themeSelect" class="font-weight-500 mb-5 d-block">Dark mode</label>
+                        <select id="themeSelect" name="theme">
+                            <option value="system">System default</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
                         </select>
                     </div>
                     <h6 class="font-weight-500 mb-20">Japanese</h6>
@@ -264,11 +256,17 @@
                     </div>
                     <div class="select-language">
                         <div class="language-box">
-                            <input type="radio" name="language" id="one">
-                            <label for="one" data-toggle="modal" data-target="#exampleModalCenter">
-                                <span class="icon-box"></span>
+                            <input type="radio" name="language" id="one" value="romanized">
+                            <label for="one">
                                 <span class="country-lable">Romanized</span>
                             </label>
+                            <button type="button"
+                                    class="info-btn"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalCenter"
+                                    aria-label="Preview Romanized pronunciation">
+                            i
+                            </button>
                         </div>
                         <div class="language-box">
                             <input type="radio" name="language" id="two">
@@ -293,9 +291,10 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-30">
-                      <a class="back-btn mb-30" href="javascript:;;" style="margin-right: auto;">
-                        <span>←</span>
-                    </a>
+                        <button type="button" class="back-btn mb-30" data-action="go-back">
+                            <span aria-hidden="true">←</span>
+                            <span class="sr-only">Go back</span>
+                        </button>
                         <h1 class="font-50 font-weight-bold mb-0 text-white">Tournament Tropics</h1>
                     </div>
                   </div>
@@ -309,7 +308,7 @@
                                             <div class="deals-card bg-danger">
                                                 <div class="card">
                                                     <div class="card-timer">
-                                                        <p id="timer">60</p>
+                                                        <p id="timer" aria-live="polite" aria-atomic="true">60</p>
                                                     </div>
                                                     <a href="#">
                                                         <h5>Michigan Stadium</h5>
@@ -320,7 +319,9 @@
                                             <ul>
                                                 <li>
                                                     <div class="card-btn">
-                                                        <a href="#"><i>&#x207A;</i> Join tournament</a>
+                                                        <button type="button" class="join-btn">
+                                                            <span aria-hidden="true">&#x207A;</span> Join tournament
+                                                        </button>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -675,7 +676,7 @@
                     </div>
                     <div class="challenge-box-outer">
                         <div class="challenge-box">
-                            <div class="challenge-controls nav" id="myTab2" role="tablist">
+                            <div class="challenge-controls nav" id="challengeTab" role="tablist">
                                 <ul class="nav" id="myTab" role="tablist">
                                     <li class="nav-item">
                                       <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">New</a>
@@ -688,12 +689,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-content" id="myTabContent2">
+                            <div class="tab-content" id="challengeTabsContent">
                                 <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
                                     <p>No Challenge here..</p>
                                 </div>
                                 <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
                                     <table class="simple-table text-left">
+                                        <caption>Sent challenges</caption>
                                         <thead>
                                             <tr>
                                                 <th>When</th>
