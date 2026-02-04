@@ -276,10 +276,12 @@
     padding: 0;
     margin: 0 0 25px;
 }
-.blog-single-post .stat-value {
+.blog-single-post .stat-value,
+.blog-single-post .stat-item p {
     color: #007bff;
 }
-.blog-single-post .stat-label {
+.blog-single-post .stat-label,
+.blog-single-post .stat-item p span {
     color: #666;
 }
 .blog-single-post .stats-row:last-child {
