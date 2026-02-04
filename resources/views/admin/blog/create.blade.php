@@ -387,25 +387,6 @@
     }
     /* Table Default Style End */
 
-    /* Blog Single Post Alert Style Start */
-    .blog-single-post .alert {
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        background-color: #fefaf1;
-        border-color: #ffebc4;
-        border-radius: 5px;
-        padding: 25px;
-    }
-    .blog-single-post .alert .info-icon {
-        margin-right: 10px;
-        font-size: 1.5rem;
-        margin-top: 2px;
-    }
-    .blog-single-post .alert .text-box {
-        width: calc(100% - 50px);
-    }
-    /* Blog Single Post Alert Style End */
     .blog-edit-sidebar .form-field {
         display: flex;
         align-items: center;
