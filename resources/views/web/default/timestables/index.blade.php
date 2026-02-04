@@ -246,9 +246,11 @@
                     </div>
                     <h6 class="font-weight-500 mb-20">Appearance</h6>
                     <div class="preferences-select">
-                        <span class="font-weight-500 mb-5 d-block">Dark mode</span>
-                        <select>
-                            <option value="System Default">System Default</option>
+                        <label for="themeSelect" class="font-weight-500 mb-5 d-block">Dark mode</label>
+                        <select id="themeSelect" name="theme">
+                            <option value="system">System default</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
                         </select>
                     </div>
                     <h6 class="font-weight-500 mb-20">Japanese</h6>
