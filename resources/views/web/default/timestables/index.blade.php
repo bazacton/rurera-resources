@@ -87,7 +87,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Freedom mode icon" loading="lazy" title="Engaging Students through Interactive Technologies">
                     </div>
                     <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
                 </div>
