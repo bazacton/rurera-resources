@@ -15199,9 +15199,6 @@ p {
 .blog-single-post h6 {
     margin-bottom: 10px;
 }
-.blog-single-post .post-show br {
-    display: none;
-}
 .blog-single-post .post-show > div {
     line-height: 26px;
 }
