@@ -816,7 +816,7 @@
             var titleHtml = title ? `<h2 class="mb-3">${escapeHtml(title)}</h2>` : "";
 
             var editBar = `
-    <div class="faq-edit-bar mb-2">
+    <div class="faq-edit-bar mb-2" contenteditable="false">
       <a href="javascript:void(0)" class="rurera-faq-edit btn btn-sm btn-outline-primary">
         Edit FAQs
       </a>
@@ -1393,6 +1393,10 @@
 
                 span.replaceWith(fragment);
             });
+            container.querySelectorAll('[bis_skin_checked]').forEach(el => {
+                el.removeAttribute('bis_skin_checked');
+            });
+
         }
         function fixHeadingOverflow(container) {
             container.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(heading => {
