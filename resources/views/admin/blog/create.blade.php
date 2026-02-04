@@ -449,10 +449,12 @@
     /* Location Style Start */
     .blog-single-post .rurera-location-section {
         border: 0;
-        margin: 0 0 30px;
         border-radius: 5px;
         padding: 0;
         flex-direction: row-reverse;
+    }
+    .blog-single-post .rurera-location-section.row {
+        margin-bottom: 30px;
     }
     .blog-single-post .rurera-badge-pill {
         display: none;
