@@ -713,6 +713,14 @@
         margin-left: 5px;
         position: relative;
     }
+    .blog-single-post .btn-outline-custom:after {
+        content: "\2192";
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 0 0 5px;
+        font-size: 1.1rem;
+    }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
     .blog-single-post .rurera-ofsted-section {
@@ -865,7 +873,7 @@
         text-align: center;
         border: 1px solid #ddd;
         border-radius: 3px;
-        padding: 5px 10px 8px;
+        padding: 5px 10px 7px;
         line-height: normal;
         margin-top: 5px;
     }
