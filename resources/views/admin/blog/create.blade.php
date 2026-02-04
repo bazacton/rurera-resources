@@ -321,7 +321,7 @@
         line-height: normal;
         min-height: auto;
     }
-    .blog-single-post .card .note-editor .card-header {
+    .blog-single-post .card .note-editor .note-toolbar {
         background-color: #fff;
         position: sticky !important;
         top: 0;
