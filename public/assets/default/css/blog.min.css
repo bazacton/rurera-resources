@@ -121,6 +121,16 @@
     display: flex;
     flex-direction: column;
 }
+.post-back-btn {
+    color: #007bff;
+}
+.post-back-btn:before {
+    content: "\2190";
+    margin-right: 5px;
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 700;
+}
 /* Location Style Start */
 .blog-single-post .rurera-location-section {
     border: 0;
