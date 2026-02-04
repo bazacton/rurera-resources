@@ -793,9 +793,6 @@
         margin-bottom: 24px;
         display: inline-block;
     }
-    .blog-single-post .rurera-inspection-date {
-        color: #64748b;
-    }
     .blog-single-post .rurera-inspection-date strong {
         display: block;
         margin-top: 4px;
