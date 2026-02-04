@@ -136,43 +136,47 @@
                         <h2 class="mb-0 font-22">Related posts</h2>
                         </div>
                     </div>
-
                     <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
-                        <article class="rurera-blog blog-medium" itemscope itemtype="https://schema.org/NewsArticle">
-                        <link itemprop="mainEntityOfPage" href="/blog/personalized-learning-with-educational-technology-a-game-changer-in-education">
-                        <meta itemprop="datePublished" content="2023-09-19T08:00:00+08:00">
+                        <article class="rurera-blog blog-medium"
+                                itemscope
+                                itemtype="https://schema.org/BlogPosting">
 
-                        <div class="blog-grid-detail">
+                            <link itemprop="mainEntityOfPage"
+                                href="https://example.com/blog/personalized-learning-with-educational-technology-a-game-changer-in-education">
+
+                            <meta itemprop="datePublished" content="2023-09-19T08:00:00+08:00">
+                            <meta itemprop="dateModified" content="2023-09-19T08:00:00+08:00">
+
+                            <div class="blog-grid-detail">
                             <span class="badge created-at d-flex align-items-center">
-                            <i data-feather="calendar" style="height:20px;width:20px;" class="mr-5"></i>
-                            <span>19 Sep 2023</span>
+                                <i data-feather="calendar" style="height:20px;width:20px;" class="mr-5"></i>
+                                <span>19 Sep 2023</span>
                             </span>
 
                             <h3 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
-                            <a href="/blog/personalized-learning-with-educational-technology-a-game-changer-in-education" class="text-dark" itemprop="url">
+                                <a href="/blog/personalized-learning-with-educational-technology-a-game-changer-in-education"
+                                class="text-dark"
+                                itemprop="url">
                                 2 Ways to Boost Learning and SATs Success with Rurera
-                            </a>
+                                </a>
                             </h3>
-                        </div>
+                            </div>
 
-                        <div class="blog-grid-image">
+                            <div class="blog-grid-image">
                             <img
-                            src="/store/1/default_images/blogs/blog-13.webp"
-                            class="img-cover"
-                            alt="2 Ways to Boost Learning and SATs Success with Rurera"
-                            width="1380"
-                            height="920"
-                            itemprop="image"
-                            loading="lazy"
-                            decoding="async"
+                                src="/store/1/default_images/blogs/blog-13.webp"
+                                class="img-cover"
+                                alt="2 Ways to Boost Learning and SATs Success with Rurera"
+                                width="1380"
+                                height="920"
+                                loading="lazy"
+                                decoding="async"
+                                itemprop="image"
                             >
-                        </div>
+                            </div>
                         </article>
                     </div>
-
-                    <!-- Repeat for other posts with correct datePublished and unique URL/title/image -->
-                    </div>
-
+                </div>
             </div>
         </div>
     </section>
