@@ -15202,9 +15202,6 @@ p {
 .blog-single-post .post-show br {
     display: none;
 }
-.post-show p:empty {
-    display: none;
-}
 .blog-single-post .post-show > div {
     line-height: 26px;
 }
