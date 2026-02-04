@@ -85,13 +85,6 @@
                                         </div>
                                         <div class="col-md-3 mb-3">
                                             <div class="form-field">
-                                                <label for="assessment">Assessment</label>
-                                                <input type="text" name="assessment" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->assessment : ''}}" class="form-control" id="assessment" value="FSCE" readonly>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <div class="form-field">
                                                 <label for="feesType">Fees Type</label>
                                                 <div class="select-holder">
                                                     <select class="form-control" name="fees_type" id="feesType" required>
@@ -164,6 +157,7 @@
                                                         <option value="Outstanding" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->ofsted_rating === 'Outstanding') ? 'selected' : '' }}>Outstanding</option>
                                                         <option value="Good" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->ofsted_rating == 'Good') ? 'selected' : ''}}>Good</option>
                                                         <option value="Requires Improvement" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->ofsted_rating == 'Requires Improvement') ? 'selected' : ''}}>Requires Improvement</option>
+                                                        <option value="Inadequate" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->ofsted_rating == 'Inadequate') ? 'selected' : ''}}>Inadequate</option>
                                                     </select>
                                                 </div>
                                             </div>
