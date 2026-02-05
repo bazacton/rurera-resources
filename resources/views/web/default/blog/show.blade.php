@@ -96,7 +96,7 @@
 									<ul>
 										@php $counter = 1; @endphp
 										@foreach( $headings_array as $heading_id => $heading_text)
-											<li><a href="#{{$heading_id}}" class="{{($counter == 1)? 'current' : ''}}">{{$heading_text}}</a></li>
+											<li><a href="#{{$heading_id}}" class="{{($counter == 1)? 'current' : ''}}">{{$thisController->getPostContent($post, $heading_text)}}</a></li>
 											@php $counter++; @endphp
 										@endforeach
 									</ul>
