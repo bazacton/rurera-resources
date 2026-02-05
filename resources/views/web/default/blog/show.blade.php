@@ -158,95 +158,7 @@
         </section>
     </article>
 </main>
-    
 
-    <!-- <section class="mt-15 mb-60 lms-blog blog-single-post mt-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-9 col-md-9">
-                    <div class="post-show pb-0 pr-30">
-                        {!! getBodyContent($post_content) !!}
-
-                    {{-- post Comments --}}
-                    @if($post->enable_comment)
-                        @include('web.default.includes.comments',[
-                            'comments' => $post->comments,
-                            'inputName' => 'blog_id',
-                            'inputValue' => $post->id
-                        ])
-                    @endif
-                    {{-- ./ post Comments --}}
-                    
-                    </div>
-                </div>
-                @if( !empty( $headings_array ) )
-					<div class="col-12 col-lg-3 col-md-3">
-						<div class="blog-sidebar">
-						   <h2 class="mb-10 font-22">Table of content</h2>
-							<div class="single-post-nav mb-0">
-								<nav>
-									<ul>
-										@php $counter = 1; @endphp
-										@foreach( $headings_array as $heading_id => $heading_text)
-											<li><a href="#{{$heading_id}}" class="{{($counter == 1)? 'current' : ''}}">{{$thisController->getPostContent($post, $heading_text)}}</a></li>
-											@php $counter++; @endphp
-										@endforeach
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				@endif
-                <div class="row mb-15 mx-0" aria-label="Related posts">
-                    <div class="col-12">
-                        <div class="section-title mb-15">
-                        <h2 class="mb-0 font-22">Related posts</h2>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
-                        <article class="rurera-blog blog-medium"
-                                itemscope
-                                itemtype="https://schema.org/BlogPosting">
-
-                            <link itemprop="mainEntityOfPage"
-                                href="https://example.com/blog/personalized-learning-with-educational-technology-a-game-changer-in-education">
-
-                            <meta itemprop="datePublished" content="2023-09-19T08:00:00+08:00">
-                            <meta itemprop="dateModified" content="2023-09-19T08:00:00+08:00">
-
-                            <div class="blog-grid-detail">
-                            <span class="badge created-at d-flex align-items-center">
-                                <i data-feather="calendar" style="height:20px;width:20px;" class="mr-5"></i>
-                                <span>19 Sep 2023</span>
-                            </span>
-
-                            <h3 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
-                                <a href="/blog/personalized-learning-with-educational-technology-a-game-changer-in-education"
-                                class="text-dark"
-                                itemprop="url">
-                                2 Ways to Boost Learning and SATs Success with Rurera
-                                </a>
-                            </h3>
-                            </div>
-
-                            <div class="blog-grid-image">
-                            <img
-                                src="/store/1/default_images/blogs/blog-13.webp"
-                                class="img-cover"
-                                alt="2 Ways to Boost Learning and SATs Success with Rurera"
-                                width="1380"
-                                height="920"
-                                loading="lazy"
-                                decoding="async"
-                                itemprop="image"
-                            >
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 @endsection
 
 @push('scripts_bottom')
@@ -257,26 +169,26 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://example.com/blog/personalized-learning-with-educational-technology-a-game-changer-in-education"
+            "@id": "{{url('').'/blog/'.$post->slug}}"
         },
-        "headline": "2 Ways to Boost Learning and SATs Success with Rurera",
-        "description": "Discover two effective ways Rurera helps students improve learning outcomes and succeed in SATs using personalized educational technology.",
-        "image": "https://example.com/store/1/default_images/blogs/blog-13.webp",
+        "headline": "{{$post->title}}",
+        "description": "{{getBodyContent($post_description)}}",
+        "image": "{{{{ $post->image }}}}",
         "author": {
             "@type": "Person",
-            "name": "Author Name",
-            "url": "https://example.com/author/author-name"
+            "name": "{{$post->author->get_full_name()}}",
+            "url": "https://rurera.com"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Site Name",
+            "name": "Rurera",
             "logo": {
             "@type": "ImageObject",
-            "url": "https://example.com/logo.png"
+            "url": "https://rurera.com"
             }
         },
-        "datePublished": "2023-09-19T08:00:00+08:00",
-        "dateModified": "2023-09-19T08:00:00+08:00"
+        "datePublished": "{{dateTimeFormat($post->created_at,'Y-m-d H:i')}}",
+        "dateModified": "{{dateTimeFormat($post->updated_at,'Y-m-d H:i')}}"
         }
     </script>
     <script>
