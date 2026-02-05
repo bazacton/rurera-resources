@@ -36,14 +36,14 @@
 
                         <a class="btn btn--fb" href="#" aria-label="Share on Facebook">
                             <span class="btn__icon" aria-hidden="true" data-network="facebook">
-                                <img src="/assets/default/svgs/facebook2.svg" alt="facebook2">
+                                <img src="/assets/default/svgs/facebook2.svg" alt="" aria-hidden="true">
                             </span>
                             <span class="btn__text">Share on Facebook</span>
                         </a>
 
                         <a class="btn btn--x" href="#" aria-label="Share on Twitter">
                             <span class="btn__icon" aria-hidden="true">
-                                <img src="/assets/default/svgs/twitter-x.svg" alt="twitter-x">
+                                <img src="/assets/default/svgs/twitter-x.svg" alt="" aria-hidden="true">
                             </span>
                             <span class="btn__text">Share on Twitter</span>
                         </a>
@@ -54,7 +54,7 @@
                         </div>
                         <button class="btn btn--share" type="button" aria-label="More share options">
                             <span class="btn__icon" aria-hidden="true">
-                                <img src="/assets/default/svgs/share2.svg" alt="share2">
+                                <img src="/assets/default/svgs/share2.svg" alt="" aria-hidden="true">
                             </span>
                         </button>
                     </div>
