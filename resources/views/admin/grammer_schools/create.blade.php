@@ -184,6 +184,7 @@
                                                         <option value="Birmingham 11+" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'Birmingham 11+') ? 'selected' : ''}}>Birmingham 11+</option>
                                                         <option value="ISEB" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'ISEB') ? 'selected' : ''}}>ISEB</option>
                                                         <option value="School-specific" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'School-specific') ? 'selected' : ''}}>School-specific</option>
+                                                        <option value="FSCH" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'FSCH') ? 'selected' : ''}}>FSCH</option>
 
                                                     </select>
                                                 </div>
