@@ -337,6 +337,7 @@
         padding: 0 30px 0 0;
         margin-bottom: 15px;
         height: auto;
+        font-size: 1rem;
         font-weight: 700;
         position: relative;
         text-decoration: none;
