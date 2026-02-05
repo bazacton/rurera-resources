@@ -224,54 +224,79 @@
                                             <div class="form-field">
                                                 <label for="english">English</label>
                                                 <div class="select-holder">
-                                                    <select class="form-control" name="criteria_english" id="english" required>
-                                                        <option value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_english === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                        <option value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_english == 'No') ? 'selected' : ''}}>No</option>
+                                                    <select class="form-control conditional_field_parent" name="criteria_english" id="english" required>
+                                                        <option data-target_common_class="english_criteria_fields" data-target_field_class="english_details" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_english === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                        <option data-target_common_class="english_criteria_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_english == 'No') ? 'selected' : ''}}>No</option>
                                                     </select>
                                                 </div>
 
                                             </div>
 
                                         </div>
+
+                                        <div class="col-md-3 mb-3 english_criteria_fields english_details">
+                                            <div class="form-field">
+                                                <label for="criteria_english_details">Subject Details</label>
+                                                <input type="text" name="criteria_english_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_english_details : ''}}" class="form-control" id="criteria_english_details">
+                                            </div>
+                                        </div>
+
                                         <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="maths">Maths</label>
                                                 <div class="select-holder">
-                                                    <select class="form-control" name="criteria_maths" id="maths" required>
-                                                        <option value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_maths === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                        <option value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_maths == 'No') ? 'selected' : ''}}>No</option>
+                                                    <select class="form-control conditional_field_parent" name="criteria_maths" id="maths" required>
+                                                        <option data-target_common_class="math_criteria_fields" data-target_field_class="maths_details" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_maths === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                        <option data-target_common_class="math_criteria_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_maths == 'No') ? 'selected' : ''}}>No</option>
 
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3 math_criteria_fields maths_details">
+                                            <div class="form-field">
+                                                <label for="criteria_maths_details">Subject Details</label>
+                                                <input type="text" name="criteria_maths_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_maths_details : ''}}" class="form-control" id="criteria_maths_details">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 mb-3">
+                                            <div class="form-field">
+                                                <label for="verbalReasoning">Verbal Reasoning</label>
+                                                <div class="select-holder">
+                                                    <select class="form-control conditional_field_parent" name="criteria_verbal_reasoning" id="verbalReasoning" required>
+                                                        <option data-target_common_class="vr_criteria_fields" data-target_field_class="vr_details" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_verbal_reasoning === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                        <option data-target_common_class="vr_criteria_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_verbal_reasoning == 'No') ? 'selected' : ''}}>No</option>
                                                     </select>
                                                 </div>
 
                                             </div>
 
                                         </div>
-                                        <div class="col-md-3 mb-3">
+                                        <div class="col-md-3 mb-3 vr_criteria_fields vr_details">
                                             <div class="form-field">
-                                                <label for="verbalReasoning">Verbal Reasoning</label>
-                                                <div class="select-holder">
-                                                    <select class="form-control" name="criteria_verbal_reasoning" id="verbalReasoning" required>
-                                                        <option value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_verbal_reasoning === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                        <option value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_verbal_reasoning == 'No') ? 'selected' : ''}}>No</option>
-                                                    </select>
-                                                </div>
-
+                                                <label for="criteria_verbal_reasoning_details">Subject Details</label>
+                                                <input type="text" name="criteria_verbal_reasoning_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_verbal_reasoning_details : ''}}" class="form-control" id="criteria_verbal_reasoning_details">
                                             </div>
-
                                         </div>
                                         <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="nonVerbalReasoning">Non-Verbal Reasoning</label>
                                                 <div class="select-holder">
-                                                    <select class="form-control" name="criteria_non_verbal_reasoning" id="nonVerbalReasoning" required>
-                                                        <option value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_non_verbal_reasoning === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                        <option value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_non_verbal_reasoning == 'No') ? 'selected' : ''}}>No</option>
+                                                    <select class="form-control conditional_field_parent" name="criteria_non_verbal_reasoning" id="nonVerbalReasoning" required>
+                                                        <option data-target_common_class="nvr_criteria_fields" data-target_field_class="nvr_details" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_non_verbal_reasoning === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                        <option data-target_common_class="nvr_criteria_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_non_verbal_reasoning == 'No') ? 'selected' : ''}}>No</option>
                                                     </select>
                                                 </div>
 
                                             </div>
 
+                                        </div>
+                                        <div class="col-md-3 mb-3 nvr_criteria_fields nvr_details">
+                                            <div class="form-field">
+                                                <label for="criteria_non_verbal_reasoning_details">Subject Details</label>
+                                                <input type="text" name="criteria_non_verbal_reasoning_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_non_verbal_reasoning_details : ''}}" class="form-control" id="criteria_non_verbal_reasoning_details">
+                                            </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
                                             <div class="form-field">
@@ -582,6 +607,7 @@
 
     $(document).ready(function () {
 
+        $(".conditional_field_parent").change();
 		$("body").on("click", ".add-item-modal", function (t) {
 			$("#inputText").val('');
 			$("#sortableTableBody").html('');
@@ -738,6 +764,8 @@
                 row.remove();
             }
         }
+
+
 
 </script>
 @endpush
