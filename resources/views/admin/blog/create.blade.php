@@ -602,50 +602,47 @@
     }
     /* Blog Newsletter Style End */
 
-    /* Blog Stats Style Start */
-    .blog-single-post .stats-grid {
-        border: 0;
+    /* Blog School Facts Style Start */
+    .blog-single-post .facts-grid {
         border-radius: 5px;
         padding: 0;
         margin: 0 0 30px;
     }
-    .blog-single-post .stats-row {
+    .blog-single-post .facts-row {
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 25px;
         padding-top: 25px;
         border-top: 1px solid #ddd;
     }
-    .blog-single-post .stat-item {
+    .blog-single-post .fact {
         flex: 0 0 33%;
         max-width: 33%;
         text-align: center;
         border-right: 1px solid #ddd;
         padding: 25px;
     }
-    .blog-single-post .stat-item:nth-child(3n) {
+    .blog-single-post .fact-item:nth-child(3n) {
         border-right: 0;
     }
-    .stats-row:first-child .stat-item {
+    .blog-single-post .facts-row:first-child .stat-item {
         border-top: 0;
     }
-    .blog-single-post .stats-row:first-child {
+    .blog-single-post .facts-row:first-child {
         border-top: 0;
         padding: 0;
         margin: 0 0 25px;
     }
-    .blog-single-post .stat-value,
-    .blog-single-post .stat-item p {
+    .blog-single-post dd {
         color: #007bff;
     }
-    .blog-single-post .stat-label,
-    .blog-single-post .stat-item p span {
+    .blog-single-post dt {
         color: #666;
     }
-    .blog-single-post .stats-row:last-child {
+    .blog-single-post .facts-row:last-child {
         margin-bottom: 0;
     }
-    /* Blog Stats Style End */
+    /* Blog School Facts Style End */
     /* Blog Timeline Style Start */
     .blog-single-post .main-heading {
         color: #2c3e50;
