@@ -99,7 +99,7 @@
         color: var(--primary);
     }
     .single-post-block {
-        background-color: #dce2f8;
+        background-color: #f8f8f8;
         padding: 25px;
         border-radius: 5px;
         border: 1px solid #d0d2dd;
