@@ -171,6 +171,10 @@
 .blog-single-post .rurera-address-details h5 {
     font-weight: bold;
 }
+.blog-single-post .rurera-address-details ul {
+    margin: 0;
+    padding: 0;
+}
 .blog-single-post .rurera-address-details ul li,
 .blog-single-post .post-show .rurera-address-details ul li{
     list-style: none;
