@@ -160,25 +160,9 @@
 .blog-single-post .rurera-address-box:first-child:has(.rurera-address-icon-box img) {
     margin-top: 8px;
 }
-.blog-single-post .rurera-address-icon-box {
-    height: 40px;
-    width: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-    border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.1);
-    margin-top: -8px;
-}
-.blog-single-post .rurera-address-icon-box img {
-    height: 22px;
-    width: 22px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(107%) contrast(102%);
-}
 .blog-single-post .rurera-address-details {
-    flex: 0 0 84%;
-    max-width: 84%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 .blog-single-post .rurera-address-details p {
     margin: 0;
