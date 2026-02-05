@@ -180,7 +180,6 @@
         width:fit-content;
         border-radius:4px;
         overflow:hidden;
-        background:#fff;
     }
     .sharebar__stats{
         display:flex;
