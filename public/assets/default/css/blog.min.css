@@ -547,6 +547,7 @@
     position: relative;
     border-radius: 5px;
     padding: 15px;
+    margin-bottom: 30px;
 }
 .mockup-container .mockup-floating {
     max-width: 40%;
