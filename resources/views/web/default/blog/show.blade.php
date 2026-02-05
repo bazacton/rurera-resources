@@ -162,6 +162,7 @@
 @endsection
 
 @push('scripts_bottom')
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvfmDCJkjaybRUJxjDTEw2C-3UOFE3yGo"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
     <script type="application/ld+json">
         {
@@ -295,6 +296,35 @@
             btn.addEventListener('click', function () {
             this.closest('.sharebar').classList.toggle('active');
             });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.querySelectorAll('.gs-map').forEach(function (el) {
+
+                const lat = parseFloat(el.dataset.lat);
+                const lng = parseFloat(el.dataset.lng);
+
+                const map = new google.maps.Map(el, {
+                    center: { lat, lng },
+                    zoom: parseInt(el.dataset.zoom),
+                    mapTypeId: el.dataset.maptype,
+                    zoomControl: el.dataset.controls === 'true',
+                    mapTypeControl: false,
+                    streetViewControl: false,
+                    fullscreenControl: false,
+                    scrollwheel: el.dataset.scrollwheel === 'true',
+                    draggable: el.dataset.draggable === 'true'
+                });
+
+                new google.maps.Marker({
+                    position: { lat, lng },
+                    map: map
+                });
+
+            });
+
         });
     </script>
 @endpush
