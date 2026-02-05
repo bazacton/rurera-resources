@@ -622,10 +622,10 @@
         border-right: 1px solid #ddd;
         padding: 25px;
     }
-    .blog-single-post .fact-item:nth-child(3n) {
+    .blog-single-post .fact:nth-child(3n) {
         border-right: 0;
     }
-    .blog-single-post .facts-row:first-child .fact-item {
+    .blog-single-post .facts-row:first-child .fact {
         border-top: 0;
     }
     .blog-single-post .facts-row:first-child {
