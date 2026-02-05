@@ -157,9 +157,6 @@
     flex-wrap: wrap;
     gap: 15px;
 }
-.blog-single-post .rurera-address-box:first-child {
-    margin-top: 15px;
-}
 .blog-single-post .rurera-address-icon-box {
     height: 40px;
     width: 40px;
