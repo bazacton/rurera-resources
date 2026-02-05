@@ -15,8 +15,48 @@
                     <div class="post-excerpt">
                         {!! getBodyContent($post_description) !!}
                     </div>
-                    <div class="post-date">
+                    <div class="post-date rurera-hide">
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
+                    </div>
+                    <!-- Share bar -->
+                    <div class="sharebar mb-0 mt-15" role="group">
+                        <div class="sharebar__stats font-12" aria-label="Engagement stats">
+                            <div class="stat">
+                                <div class="stat__value stat__value--blue font-22">1.2k</div>
+                                <div class="stat__label">SHARES</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat__value font-22">6.4k</div>
+                                <div class="stat__label">VIEWS</div>
+                            </div>
+                        </div>
+
+                        <div class="sharebar__divider" aria-hidden="true"></div>
+
+                        <a class="btn btn--fb" href="#" aria-label="Share on Facebook">
+                            <span class="btn__icon" aria-hidden="true" data-network="facebook">
+                                <img src="/assets/default/svgs/facebook2.svg" alt="facebook2">
+                            </span>
+                            <span class="btn__text">Share on Facebook</span>
+                        </a>
+
+                        <a class="btn btn--x" href="#" aria-label="Share on Twitter">
+                            <span class="btn__icon" aria-hidden="true">
+                                <img src="/assets/default/svgs/twitter-x.svg" alt="twitter-x">
+                            </span>
+                            <span class="btn__text">Share on Twitter</span>
+                        </a>
+                        <div class="share-secondary">
+                            <a href="#" class="btn-pinterest" data-network="pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></a>
+                            <a href="#" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></a>
+                            <a href="#" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                        </div>
+                        <button class="btn btn--share" type="button" aria-label="More share options">
+                            <span class="btn__icon" aria-hidden="true">
+                                <img src="/assets/default/svgs/share2.svg" alt="share2">
+                            </span>
+                        </button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5 ml-auto">
@@ -33,58 +73,6 @@
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
                     <div class="post-show pb-0 pr-30">
-
-                        <!-- ShareThis BEGINS -->
-                        <!-- <div class="sharethis-share-buttons" data-type="inline-share-buttons" data-labels="counts" data-show_total="true" data-size="medium">
-                            <span data-network="facebook"></span>
-                            <span data-network="pinterest"></span>
-                            <span data-network="whatsapp"></span>
-                            <span data-network="email"></span>
-                        </div> -->
-                        <!-- ShareThis ENDS -->
-
-
-                        <!-- Share bar -->
-                        <div class="sharebar" role="group">
-                            <div class="sharebar__stats font-12" aria-label="Engagement stats">
-                                <div class="stat">
-                                    <div class="stat__value stat__value--blue font-22">1.2k</div>
-                                    <div class="stat__label">SHARES</div>
-                                </div>
-
-                                <div class="stat">
-                                    <div class="stat__value font-22">6.4k</div>
-                                    <div class="stat__label">VIEWS</div>
-                                </div>
-                            </div>
-
-                            <div class="sharebar__divider" aria-hidden="true"></div>
-
-                            <a class="btn btn--fb" href="#" aria-label="Share on Facebook">
-                                <span class="btn__icon" aria-hidden="true" data-network="facebook">
-                                    <img src="/assets/default/svgs/facebook2.svg" alt="facebook2">
-                                </span>
-                                <span class="btn__text">Share on Facebook</span>
-                            </a>
-
-                            <a class="btn btn--x" href="#" aria-label="Share on Twitter">
-                                <span class="btn__icon" aria-hidden="true">
-                                    <img src="/assets/default/svgs/twitter-x.svg" alt="twitter-x">
-                                </span>
-                                <span class="btn__text">Share on Twitter</span>
-                            </a>
-                            <div class="share-secondary">
-                                <a href="#" class="btn-pinterest" data-network="pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></a>
-                                <a href="#" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></a>
-                                <a href="#" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
-                            </div>
-                            <button class="btn btn--share" type="button" aria-label="More share options">
-                                <span class="btn__icon" aria-hidden="true">
-                                    <img src="/assets/default/svgs/share2.svg" alt="share2">
-                                </span>
-                            </button>
-                        </div>
-
                         {!! getBodyContent($post_content) !!}
 
                     {{-- post Comments --}}
