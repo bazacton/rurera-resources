@@ -15297,6 +15297,7 @@ p {
     border: 1px solid #d0d2dd;
 }
 .blog-single-post .post-show .order-list {
+    font-size: .875rem;
     gap: 15px;
     display: flex;
     flex-direction: column;
