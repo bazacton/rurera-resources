@@ -19,6 +19,7 @@
                         </div>
 
                     @endforeach
+                    <p>These distances are calculated in a straight line. The actual route and distance may vary.</p>
                 @endif
             </div>
             <div class="rurera-school-col">
