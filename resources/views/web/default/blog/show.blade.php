@@ -91,7 +91,7 @@
                     @if( !empty( $headings_array ) )
                         <div class="col-12 col-lg-3 col-md-3">
                             <div class="blog-sidebar">
-                            <h2 class="mb-10 font-18 font-weight-bold">Table of content</h2>
+                            <h2 class="mb-10 font-16 font-weight-bold">Table of content</h2>
                                 <div class="single-post-nav mb-0">
                                     <nav>
                                         <ul>
