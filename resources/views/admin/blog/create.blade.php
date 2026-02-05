@@ -183,10 +183,10 @@
         overflow:hidden;
     }
     .sharebar__stats{
-        display:flex;
-        align-items:center;
-        padding: 0 15px 0 0;
-        gap:18px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px 0 0;
+        gap: 12px;
     }
     .stat{
         display:flex;
@@ -216,7 +216,7 @@
         justify-content: center;
         gap: 5px;
         padding: 0 10px;
-        min-width: 180px;
+        min-width: 170px;
         height: 38px;
         border: 0;
         color: #fff;
@@ -231,7 +231,7 @@
     .btn--fb{ background:#3f5e9a; }
     .btn--x { background:#3a3a3a; }
     .sharebar .btn--share{
-        min-width: 50px;
+        min-width: 40px;
         padding: 0;
         background: #dcdcdc;
     }
@@ -266,13 +266,13 @@
         gap: 10px;
     }
     .share-secondary img {
-        height: 20px;
-        width: 20px;
+        height: 15px;
+        width: 15px;
         filter: invert(100%) sepia(0%) saturate(886%) hue-rotate(83deg) brightness(120%) contrast(100%);
     }
     .share-secondary a {
         height: 38px;
-        width: 44px;
+        width: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
