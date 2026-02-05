@@ -927,6 +927,25 @@
         -webkit-user-select: none;
     }
     /* Blog Single Post Style End */
+    /* Mockup Style Start */
+    .mockup-container {
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        position: relative;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .mockup-container .mockup-floating {
+        max-width: 40%;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        padding: 15px;
+        position: absolute;
+        left: -80px;
+        bottom: -10px;
+        background-color: #FFF;
+        transform: rotate(-5deg);
+    }
+    /* Mockup Style End */
 </style>
 @endpush
 
