@@ -14,7 +14,7 @@
                                 <div class="rurera-school-header">
                                     <a href="/blog/{{isset($grammerSchoolObj->schoolBlog->slug)? $grammerSchoolObj->schoolBlog->slug : ''}}" class="rurera-school-name" data-e01n2-kon-be-r9ayn1="1">{{$grammerSchoolObj->school_name}}</a>
                                 </div>
-                                <div class="rurera-school-age">{{$grammerSchoolObj->distance}} miles</div>
+                                <div class="rurera-school-age">{{round($grammerSchoolObj->distance)}} miles</div>
                             </div>
                         </div>
 
