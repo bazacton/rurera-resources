@@ -476,16 +476,14 @@
     .blog-single-post .rurera-address-details h5 {
         font-weight: bold;
     }
-    .blog-single-post .rurera-address-details ul,
-    .blog-single-post .post-show .rurera-address-details ul{
-        margin: 15px 0 0;
-        padding: 0;
-    }
     .blog-single-post .rurera-address-details ul li,
     .blog-single-post .post-show .rurera-address-details ul li{
         list-style: none;
         line-height: normal;
         color: #6c757d;
+    }
+    .rurera-address-icon-box {
+        line-height: normal;
     }
     .blog-single-post .rurera-address-details ul li img {
         height: 18px;
