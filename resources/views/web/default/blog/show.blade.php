@@ -8,7 +8,7 @@
 @section('content')
 <main id="main-content">
     <article class="single-post" itemscope itemtype="https://schema.org/BlogPosting">
-        <header class="position-relative single-post-subheader py-70">
+        <header class="position-relative single-post-subheader pt-70 pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7 col-lg-7">
