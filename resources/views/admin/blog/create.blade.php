@@ -660,9 +660,11 @@
     }
     .blog-single-post dd {
         color: #007bff;
+        font-weight: 500;
     }
     .blog-single-post dt {
         color: #666;
+        font-weight: 400;
     }
     .blog-single-post .facts-row:last-child {
         margin-bottom: 0;
