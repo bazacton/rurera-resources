@@ -621,6 +621,9 @@
         text-align: center;
         border-right: 1px solid #ddd;
         padding: 25px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5px;
     }
     .blog-single-post .fact:nth-child(3n) {
         border-right: 0;
