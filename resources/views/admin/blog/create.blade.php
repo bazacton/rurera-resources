@@ -60,6 +60,9 @@
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
         background-color: #ccc;
     }
+    .blog-single-post .single-post-nav ul {
+        margin-bottom: 0;
+    }
     .blog-single-post .single-post-nav li {
         list-style: none;
     }
