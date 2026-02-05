@@ -24,6 +24,15 @@
     .blog-single-post h6 {
         margin-bottom: 10px;
     }
+    .blog-single-post h1,
+    .single-post-subheader h1,
+    .blog-single-post h2,
+    .blog-single-post h3,
+    .blog-single-post h4,
+    .blog-single-post h5,
+    .blog-single-post h6 {
+        color: #000;
+    }
     .blog-single-post > div {
         line-height: 26px;
     }
