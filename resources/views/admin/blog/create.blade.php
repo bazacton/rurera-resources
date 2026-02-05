@@ -479,6 +479,8 @@
     .blog-single-post .rurera-address-details ul {
         margin: 0;
         padding: 0;
+        font-size: .875rem;
+        font-weight: 500;
     }
     .blog-single-post .rurera-address-details ul li,
     .blog-single-post .post-show .rurera-address-details ul li{
