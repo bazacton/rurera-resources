@@ -263,7 +263,7 @@
     }
     .active .share-secondary {
         display: inline-flex;
-        gap: 10px;
+        gap: 8px;
     }
     .share-secondary img {
         height: 15px;
