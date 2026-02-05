@@ -121,12 +121,11 @@
         counter-increment: section;
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 0;
         height: 25px;
         width: 25px;
-        background-color: #f8f8fb;
+        background-color: #fff;
         color: #797770;
-        margin-top: -12px;
         border-radius: 100%;
         content: counter(section);
         text-align: center;
