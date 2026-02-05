@@ -34,23 +34,23 @@
 
                         <div class="sharebar__divider" aria-hidden="true"></div>
 
-                        <a class="btn btn--fb" href="#" aria-label="Share on Facebook">
+                        <button type="button" class="btn btn--fb" aria-label="Share on Facebook">
                             <span class="btn__icon" aria-hidden="true" data-network="facebook">
                                 <img src="/assets/default/svgs/facebook2.svg" alt="" aria-hidden="true">
                             </span>
                             <span class="btn__text">Share on Facebook</span>
-                        </a>
+                        </button>
 
-                        <a class="btn btn--x" href="#" aria-label="Share on Twitter">
+                        <button type="button" class="btn btn--x" aria-label="Share on Twitter">
                             <span class="btn__icon" aria-hidden="true">
                                 <img src="/assets/default/svgs/twitter-x.svg" alt="" aria-hidden="true">
                             </span>
                             <span class="btn__text">Share on Twitter</span>
-                        </a>
+                        </button>
                         <div class="share-secondary">
-                            <a href="#" class="btn-pinterest" data-network="pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></a>
-                            <a href="#" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></a>
-                            <a href="#" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></a>
+                            <button type="button" class="btn-pinterest" data-network="pinterest" aria-label="Pinterest"><img src="/assets/default/svgs/pinterest.svg" alt="pinterest"></button>
+                            <button type="button" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></button>
+                            <button type="button" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></button>
                         </div>
                         <button class="btn btn--share" type="button" aria-label="More share options">
                             <span class="btn__icon" aria-hidden="true">
