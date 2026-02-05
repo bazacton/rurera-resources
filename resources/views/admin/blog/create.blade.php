@@ -625,7 +625,7 @@
     .blog-single-post .fact-item:nth-child(3n) {
         border-right: 0;
     }
-    .blog-single-post .facts-row:first-child .stat-item {
+    .blog-single-post .facts-row:first-child .fact-item {
         border-top: 0;
     }
     .blog-single-post .facts-row:first-child {
