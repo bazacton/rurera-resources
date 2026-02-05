@@ -52,7 +52,7 @@
                             <button type="button" class="btn-whatsapp" data-network="whatsapp" aria-label="Whatsapp"><img src="/assets/default/svgs/whatsapp.svg" alt="whatsapp"></button>
                             <button type="button" class="btn-email" data-network="email" aria-label="Email"><img src="/assets/default/svgs/envelope2.svg" alt="envelope2"></button>
                         </div>
-                        <button class="btn btn--share" type="button" aria-label="More share options">
+                        <button class="btn btn--share" type="button" aria-label="More share options" aria-expanded="false" aria-controls="share-menu">
                             <span class="btn__icon" aria-hidden="true">
                                 <img src="/assets/default/svgs/share2.svg" alt="" aria-hidden="true">
                             </span>
