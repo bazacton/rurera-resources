@@ -506,6 +506,7 @@
         height: 18px;
         width: 18px;
         margin-right: 8px;
+        filter: invert(38%) sepia(55%) saturate(5873%) hue-rotate(201deg) brightness(103%) contrast(111%);
     }
     .blog-single-post .rurera-schools-grid {
         display: flex;
