@@ -132,6 +132,14 @@
     color: var(--primary);
     font-weight: 700;
 }
+.blog-single-post .blog-detail-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: 0;
+    padding: 8px 15px;
+    line-height: normal;
+    border-radius: 3px;
+}
 /* Location Style Start */
 .blog-single-post .rurera-location-section {
     border: 0;
