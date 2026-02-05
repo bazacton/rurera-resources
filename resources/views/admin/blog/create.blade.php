@@ -190,6 +190,12 @@
         line-height: normal;
         border-radius: 3px;
     }
+    .has-bg-element {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 0 30px;
+    }
     /* Social Bar Style Start */
     .sharebar{
         display:flex;
