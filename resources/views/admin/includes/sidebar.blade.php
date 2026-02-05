@@ -109,6 +109,12 @@
             </li>
 			@endcan
 
+            <li class="nav-item {{ (request()->is(getAdminPanelUrl('/shortcodes', false))) ? 'active' : '' }}">
+                <a href="{{ getAdminPanelUrl('/shortcodes') }}" class="nav-link">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Shortcodes</span>
+                </a>
+            </li>
             <li class="nav-item {{ (request()->is(getAdminPanelUrl('/grammer_schools', false))) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/grammer_schools') }}" class="nav-link">
                     <i class="fas fa-chart-pie"></i>
