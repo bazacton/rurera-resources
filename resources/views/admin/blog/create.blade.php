@@ -182,7 +182,14 @@
     .blog-single-post a {
         color: #007bff;
     }
-
+    .blog-single-post .blog-detail-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: 0;
+        padding: 8px 15px;
+        line-height: normal;
+        border-radius: 3px;
+    }
     /* Social Bar Style Start */
     .sharebar{
         display:flex;
