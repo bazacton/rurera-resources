@@ -176,6 +176,7 @@
     .sharebar{
         display:flex;
         align-items:stretch;
+        flex-wrap: wrap;
         gap: 10px;
         width:fit-content;
         border-radius:4px;
