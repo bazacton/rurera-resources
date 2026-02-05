@@ -242,7 +242,7 @@
     color: #999;
 }
 /* Location Style End */
-/* Blog Stats Style Start */
+/* Blog School Facts Style Start */
 .blog-single-post .facts-grid {
     border-radius: 5px;
     padding: 0;
@@ -282,7 +282,7 @@
 .blog-single-post .facts-row:last-child {
     margin-bottom: 0;
 }
-/* Blog Stats Style End */
+/* Blog School Facts Style End */
 
 /* Blog Timeline Style Start */
 .blog-single-post .main-heading {
