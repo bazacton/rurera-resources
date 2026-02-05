@@ -25,6 +25,7 @@
         margin-bottom: 10px;
     }
     .blog-single-post h1,
+    .single-post-subheader h1,
     .blog-single-post h2,
     .blog-single-post h3,
     .blog-single-post h4,
