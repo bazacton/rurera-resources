@@ -79,7 +79,7 @@
         display: block;
         background-color: #fff;
         color: var(--primary);
-        font-size: 14px;
+        font-size: .875rem;
         font-weight: 500;
         position: relative;
         padding: 10px 10px;
