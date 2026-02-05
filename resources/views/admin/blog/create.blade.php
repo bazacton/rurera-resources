@@ -221,7 +221,7 @@
         color:#4b4b4b;
     }
     .stat__value--blue{
-        color:#2a8bdc;
+        color: #007bff;
     }
     .stat__label{
         margin-top:4px;
