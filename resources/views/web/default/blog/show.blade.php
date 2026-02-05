@@ -191,6 +191,94 @@
         "dateModified": "{{dateTimeFormat($post->updated_at,'Y-m-d H:i')}}"
         }
     </script>
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What is the Heckmondwike Grammar School 11+ exam, and what does it test?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 11+ exam (FSCE) assesses children on English comprehension, vocabulary and spelling, Maths based on KS2 topics, and creative writing. It evaluates understanding, problem-solving, and communication skills rather than memorisation of advanced material."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How do I register my child for the Heckmondwike Grammar School 11+ test?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You must register your child during the official registration window (typically May-June). Registration is handled independently from the local authority school application. Check the school's website for the registration link and deadlines."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Does passing the 11+ exam guarantee my child a place in Heckmondwike Grammar School?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Passing the test only makes your child eligible to apply. Places are allocated based on oversubscription rules, catchment area, distance from the school, and other priority criteria if more children meet the standard than there are available places."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Does Heckmondwike Grammar School have a catchment area, and does it affect 11+ chances?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Heckmondwike Grammar School may consider catchment as part of admissions, and living within a catchment area can sometimes improve a child's chances. However, offers are typically based primarily on entrance exam scores. Understanding local policies helps parents plan applications effectively."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How can Rurera help with preparation for the 11+ at Heckmondwike Grammar School?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rurera provides structured study plans, practice papers, and guidance to prepare for the Heckmondwike Grammar School entrance exam. Daily exercises improve comprehension and confidence, helping children approach the 11+ calmly and effectively."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "When is the Heckmondwike Grammar School 11+ exam held, and when are results released?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Heckmondwike Grammar School usually holds the 11+ in September, with results announced before secondary school applications close. Exact dates are confirmed on the school website."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What subjects are tested in the Heckmondwike Grammar School entrance exam?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The entrance exam at Heckmondwike Grammar School includes English, Maths, and reasoning sections. Some schools also assess writing or problem-solving skills. The 11+ is designed to test understanding and application rather than memorisation."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How should my child prepare for the Heckmondwike Grammar School 11+ and entrance exam?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Preparation should include regular mock papers, reading comprehension, and maths revision for the 11+. Balanced routines and rest improve performance. Familiarity with the entrance exam format builds confidence and reduces anxiety."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Can my child retake the entrance exam if they fail the 11+ at Heckmondwike Grammar School?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most schools, including Heckmondwike Grammar School, do not allow retakes of the 11+ exam in the same academic year. Exceptions may occur for illness or special circumstances. Preparing well in advance helps children give their best in the first attempt."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What score is required to pass the Heckmondwike Grammar School 11+ exam?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The pass score varies by year and depends on how the test is standardised and how places are allocated. Check the school’s official admissions or 11+ guidance page for the current qualifying score or eligibility threshold."
+            }
+            }
+        ]
+        }
+        </script>
     <script>
         var webinarDemoLang = '{{ trans('webinars.webinar_demo') }}';
         var replyLang = '{{ trans('panel.reply') }}';
