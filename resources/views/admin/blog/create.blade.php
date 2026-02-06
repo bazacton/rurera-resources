@@ -482,7 +482,6 @@
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 15px;
     }
     .blog-single-post .rurera-address-details {
         flex: 0 0 100%;
