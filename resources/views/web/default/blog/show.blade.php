@@ -164,7 +164,43 @@
 @push('scripts_bottom')
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvfmDCJkjaybRUJxjDTEw2C-3UOFE3yGo"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
-
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{url('').'/blog/'.$post->slug}}"
+        },
+        "headline": "{{$post->title}}",
+        "description": "{{getBodyContent($post_description)}}",
+        "image": "{{ $post->image }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{$post->author->get_full_name()}}",
+            "url": "https://rurera.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rurera",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://rurera.com"
+            }
+        },
+        "datePublished": "{{dateTimeFormat($post->created_at,'Y-m-d H:i')}}",
+        "dateModified": "{{dateTimeFormat($post->updated_at,'Y-m-d H:i')}}"
+        }
+    </script>
+    <script>
+        var webinarDemoLang = '{{ trans('webinars.webinar_demo') }}';
+        var replyLang = '{{ trans('panel.reply') }}';
+        var closeLang = '{{ trans('public.close') }}';
+        var saveLang = '{{ trans('public.save') }}';
+        var reportLang = '{{ trans('panel.report') }}';
+        var reportSuccessLang = '{{ trans('panel.report_success') }}';
+        var messageToReviewerLang = '{{ trans('public.message_to_reviewer') }}';
+    </script>
 
     <script src="/assets/default/js/parts/comment.min.js"></script>
     <script>
