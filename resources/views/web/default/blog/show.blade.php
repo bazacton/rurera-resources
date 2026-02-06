@@ -197,6 +197,8 @@
         {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
+        "@id": "{{url('').'/blog/'.$post->slug}}"
+        "name": "{{$post->title}}",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "{{url('').'/blog/'.$post->slug}}"
