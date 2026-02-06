@@ -962,6 +962,21 @@
         transform: rotate(-5deg);
     }
     /* Mockup Style End */
+    /* Ru-Newsletter Style Start */
+    .ru-newsletter input[type="email"] {
+        width: calc(100% - 115px);
+        display: inline-block;
+        height: 36px;
+        border-radius: 3px;
+        padding: 0 15px;
+        font-size: .875rem;
+        border: 1px solid #ddd;
+    }
+    .ru-newsletter span {
+        display: block;
+        margin-top: 10px;
+    }
+    /* Ru-Newsletter Style End */
 </style>
 @endpush
 
