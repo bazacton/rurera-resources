@@ -93,7 +93,7 @@
                             <div class="blog-sidebar">
                             <h2 class="mb-10 font-16 font-weight-bold">Table of content</h2>
                                 <div class="single-post-nav mb-0">
-                                    <nav>
+                                    <nav aria-label="Table of contents">
                                         <ul>
                                             @php $counter = 1; @endphp
                                             @foreach( $headings_array as $heading_id => $heading_text)
