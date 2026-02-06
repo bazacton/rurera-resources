@@ -603,7 +603,7 @@ article.rurera-school-item:nth-of-type(2n) {
     margin: 0 0 30px;
 }
 .ru-newsletter input[type="email"] {
-    width: calc(100% - 115px);
+    width: 100%;
     display: inline-block;
     height: 36px;
     border-radius: 3px;
