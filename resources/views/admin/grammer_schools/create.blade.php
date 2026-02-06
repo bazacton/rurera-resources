@@ -216,6 +216,21 @@
 
                                             <div class="invalid-feedback">Local Authority is required.</div>
                                         </div>
+
+                                        <div class="col-md-3 mb-3">
+                                            <div class="form-field">
+                                                <label for="school_consortium">Consortium</label>
+                                                <div class="select-holder">
+                                                    <select class="form-control " name="school_consortium" id="school_consortium" required>
+                                                        @if(!empty(consortiums_list()))
+                                                            @foreach(consortiums_list() as $consortium_title)
+                                                                <option value="{{$consortium_title}}" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->school_consortium === $consortium_title) ? 'selected' : '' }}>{{$consortium_title}}</option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <!-- Assessment Criteria -->
