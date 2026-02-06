@@ -615,4 +615,22 @@ article.rurera-school-item:nth-of-type(2n) {
     display: block;
     margin-top: 10px;
 }
+.ru-newsletter .input-holder {
+    position: relative;
+    max-width: 500px;
+    margin: 25px auto 15px;
+}
+.ru-newsletter .input-holder button {
+    position: absolute;
+    right: 3px;
+    height: 30px;
+    padding: 5px 15px;
+    top: 3px;
+}
+.ru-newsletter .newsletter-lable {
+    text-transform: uppercase;
+    display: block;
+    line-height: normal;
+    margin: 0 0 5px;
+}
 /* Ru-Newsletter Style End */
