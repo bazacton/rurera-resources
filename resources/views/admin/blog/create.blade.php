@@ -7,7 +7,7 @@
     /* Blog Single Post Style Start */
     .sharebar,
     .single-post-block,
-    .blog-single-post > p,
+    .blog-single-post p,
     .blog-single-post ul,
     .lms-blog table {
         margin-bottom: 30px;
