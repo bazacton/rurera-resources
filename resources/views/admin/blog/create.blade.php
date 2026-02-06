@@ -484,9 +484,6 @@
         flex-wrap: wrap;
         gap: 15px;
     }
-    .blog-single-post .rurera-location-section h3 {
-        margin: 0 0 25px;
-    }
     .blog-single-post .rurera-address-details {
         flex: 0 0 100%;
         max-width: 100%;
@@ -540,16 +537,21 @@
         border-right: 1px solid #ddd;
     }
     .blog-single-post .rurera-school-item {
-        display: flex;
+        display: inline-flex;
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 10px;
         font-size: .875rem;
         color: #352c3e;
+        margin: 0 0 30px;
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-right: -4px;
     }
     .blog-single-post .rurera-school-content {
         display: flex;
-        align-items: flex-start;
         justify-content: space-between;
         width: calc(100% - 32px);
     }
@@ -561,16 +563,24 @@
         max-width: 100%;
         max-height: 100%;
     }
-
-    .blog-single-post .rurera-school-header {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
     .blog-single-post .rurera-school-col:last-child {
         border-right: 0;
     }
     .blog-single-post .rurera-school-age {
         color: #999;
+    }
+    .blog-single-post .rurera-school-item p {
+        margin: 0;
+    }
+    .blog-single-post .rurera-school-item h3 {
+        margin: 0;
+        font-weight: normal;
+        font-size: inherit;
+    }
+    article.rurera-school-item:nth-of-type(2n) {
+        border-right: 0;
+        padding-left: 15px;
+        padding-right: 0;
     }
     /* Location Style End */
     /* Blog Newsletter Style Start */
