@@ -378,7 +378,7 @@
     .blog-single-post .card .card-header .btn-link:after {
         position: absolute;
         top: 50%;
-        right: 15px;
+        right: 0;
         height: 8px;
         width: 8px;
         border: 2px solid;
