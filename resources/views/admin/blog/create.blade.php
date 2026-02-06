@@ -879,6 +879,7 @@
     }
     .events-list li {
         padding: 6px 0;
+        gap: 15px 30px;
     }
     .events-list li:last-child {
         border-bottom: none;
