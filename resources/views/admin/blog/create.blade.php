@@ -582,6 +582,9 @@
         padding-left: 15px;
         padding-right: 0;
     }
+    .blog-single-post .rurera-school-item:last-of-type {
+        border-right: 0;
+    }
     /* Location Style End */
     /* Blog Newsletter Style Start */
     .blog-newsletter {
