@@ -718,6 +718,108 @@
                 }
             }
         });
+        $(".summernote-editor-minimal").summernote({
+            dialogsInBody: true,
+            tabsize: 2,
+            //height: $(".summernote-source").attr('data-height') ?? 250,
+            height: null,
+            minHeight: 150,
+            fontNames: [],
+            toolbar: [
+                ['font', ['bold', 'underline']],
+                ['para', ['paragraph', 'ul', 'ol']],
+                ['insert', ['link']],
+                ['history', ['undo']],
+                ['view', ['codeview']], // 👈 comma was missing
+                //['custom', ['faqBuilder', 'cannedElements']]
+            ],
+            buttons: {
+                lfm: LFMButton,
+            },
+            callbacks: {
+                onChange: function (contents, $editable) {
+                    cleanSummernoteContent($editable);
+
+                },
+                onPaste: function (e) {
+                    const $editable = $(this);
+
+                    let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+
+                    let html = clipboardData.getData('text/html');
+                    let text = clipboardData.getData('text/plain');
+
+
+
+
+
+                    html = html.replace(/<!--\s*StartFragment\s*-->/gi, '');
+                    html = html.replace(/<!--\s*EndFragment\s*-->/gi, '');
+
+                    // Remove bis_skin_checked
+                    html = html.replace(/\s*bis_skin_checked="1"/gi, '');
+
+                    // Remove empty <p>
+                    html = html.replace(/<p>(\s|&nbsp;|<br\s*\/?>)*<\/p>/gi, '');
+
+                    e.preventDefault();
+
+                    let content = html || text;
+
+                    let tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = content;
+
+                    function cleanText(node) {
+                        if (node.nodeType === Node.TEXT_NODE) {
+                            node.nodeValue = node.nodeValue
+                                .replace(/[–—−]/g, '-')
+                                .replace(/[‘’]/g, "'")
+                                .replace(/[“”]/g, '"')
+                                .replace(/…/g, '...')
+                                .replace(/[•‣▪◦]/g, '-')
+                                .replace(/\u00A0/g, ' ')
+                                .replace(/©/g, '(c)')
+                                .replace(/®/g, '(r)')
+                                .replace(/™/g, 'TM')
+                                .replace(/°/g, 'deg')
+                                .replace(/×/g, 'x')
+                                .replace(/÷/g, '/')
+                                .replace(/→/g, '->')
+                                .replace(/←/g, '<-')
+                                .replace(/⇒/g, '=>')
+                                .replace(/[✓✔]/g, 'Yes')
+                                .replace(/[✗✘]/g, 'No')
+                                .replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, '') // emoji-safe removal
+                                .replace(/[\u0000-\u001F\u007F-\u009F]/g, '')   // 🚫 control chars
+                                .replace(/[�□◼◻▪▫■▢▣]/g, '')                  // 🚫 weird boxes
+                                .replace(/\s{2,}/g, ' ');
+                        } else {
+                            node.childNodes.forEach(cleanText);
+                        }
+                    }
+
+                    // 🔥 NEW: remove inline styles ONLY
+                    function removeInlineStyles(node) {
+                        if (node.nodeType === Node.ELEMENT_NODE) {
+                            node.removeAttribute('style');
+                        }
+                        node.childNodes.forEach(removeInlineStyles);
+                    }
+
+                    cleanText(tempDiv);
+                    removeInlineStyles(tempDiv);
+                    removeDirAttribute(tempDiv);
+                    unwrapGoogleDocsSpans(tempDiv);
+                    removeInlineStyles(tempDiv);
+                    fixHeadingOverflow(tempDiv);
+
+                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
+                    setTimeout(function () {
+                        cleanSummernoteContent($editable);
+                    }, 0);
+                }
+            }
+        });
 
 		$(".summernote-editor").summernote({
     dialogsInBody: true,

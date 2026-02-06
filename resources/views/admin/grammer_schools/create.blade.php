@@ -238,7 +238,7 @@
                                         <div class="col-md-3 mb-3 english_criteria_fields english_details">
                                             <div class="form-field">
                                                 <label for="criteria_english_details">Subject Details</label>
-                                                <input type="text" name="criteria_english_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_english_details : ''}}" class="form-control" id="criteria_english_details">
+                                                <textarea name="criteria_english_details" class="form-control summernote-editor-minimal" id="criteria_english_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_english_details : ''}}</textarea>
                                             </div>
                                         </div>
 
@@ -257,7 +257,7 @@
                                         <div class="col-md-3 mb-3 math_criteria_fields maths_details">
                                             <div class="form-field">
                                                 <label for="criteria_maths_details">Subject Details</label>
-                                                <input type="text" name="criteria_maths_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_maths_details : ''}}" class="form-control" id="criteria_maths_details">
+                                                <textarea name="criteria_maths_details" class="form-control summernote-editor-minimal" id="criteria_maths_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_maths_details : ''}}</textarea>
                                             </div>
                                         </div>
 
@@ -277,7 +277,7 @@
                                         <div class="col-md-3 mb-3 vr_criteria_fields vr_details">
                                             <div class="form-field">
                                                 <label for="criteria_verbal_reasoning_details">Subject Details</label>
-                                                <input type="text" name="criteria_verbal_reasoning_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_verbal_reasoning_details : ''}}" class="form-control" id="criteria_verbal_reasoning_details">
+                                                <textarea name="criteria_verbal_reasoning_details" class="form-control summernote-editor-minimal" id="criteria_verbal_reasoning_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_verbal_reasoning_details : ''}}</textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
@@ -296,21 +296,34 @@
                                         <div class="col-md-3 mb-3 nvr_criteria_fields nvr_details">
                                             <div class="form-field">
                                                 <label for="criteria_non_verbal_reasoning_details">Subject Details</label>
-                                                <input type="text" name="criteria_non_verbal_reasoning_details" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_non_verbal_reasoning_details : ''}}" class="form-control" id="criteria_non_verbal_reasoning_details">
+                                                <textarea name="criteria_non_verbal_reasoning_details" class="form-control summernote-editor-minimal" id="criteria_non_verbal_reasoning_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_non_verbal_reasoning_details : ''}}</textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
                                             <div class="form-field">
                                                 <label for="additional">Additional</label>
                                                 <div class="select-holder">
-                                                    <select class="form-control" name="criteria_additional" id="additional" required>
-                                                        <option value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_additional === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                        <option value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_additional == 'No') ? 'selected' : ''}}>No</option>
+                                                    <select class="form-control conditional_field_parent" name="criteria_additional" id="additional" required>
+                                                        <option data-target_common_class="additional_subject_fields" data-target_field_class="additional_subject" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->criteria_additional === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                        <option data-target_common_class="additional_subject_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->criteria_additional == 'No') ? 'selected' : ''}}>No</option>
                                                     </select>
                                                 </div>
 
                                             </div>
 
+                                        </div>
+
+                                        <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                            <div class="form-field">
+                                                <label for="additional_subject_name">Subject Name</label>
+                                                <input type="text" name="additional_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional_subject_name : ''}}" class="form-control" id="additional_subject_name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                            <div class="form-field">
+                                                <label for="additional_subject_details">Subject Details</label>
+                                                <textarea name="additional_subject_details" class="form-control summernote-editor-minimal" id="additional_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional_subject_details : ''}}</textarea>
+                                            </div>
                                         </div>
                                     </div>
 
