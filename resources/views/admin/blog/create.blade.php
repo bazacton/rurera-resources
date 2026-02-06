@@ -979,12 +979,12 @@
     /* Mockup Style End */
     /* Ru-Newsletter Style Start */
     .ru-newsletter {
-        border: 1px solid #ddd;
-        border-radius: 5px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
         margin: 0 0 30px;
     }
     .ru-newsletter input[type="email"] {
-        width: calc(100% - 115px);
+        width: 100%;
         display: inline-block;
         height: 36px;
         border-radius: 3px;
@@ -995,6 +995,24 @@
     .ru-newsletter span {
         display: block;
         margin-top: 10px;
+    }
+    .ru-newsletter .input-holder {
+        position: relative;
+        max-width: 500px;
+        margin: 25px auto 15px;
+    }
+    .ru-newsletter .input-holder button {
+        position: absolute;
+        right: 3px;
+        height: 30px;
+        padding: 5px 15px;
+        top: 3px;
+    }
+    .ru-newsletter .newsletter-lable {
+        text-transform: uppercase;
+        display: block;
+        line-height: normal;
+        margin: 0 0 5px;
     }
     /* Ru-Newsletter Style End */
 </style>
