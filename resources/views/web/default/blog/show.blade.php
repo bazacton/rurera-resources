@@ -174,7 +174,7 @@
         },
         "headline": "{{$post->title}}",
         "description": "{{getBodyContent($post_description)}}",
-        "image": "{{ url('/').'/'.$post->image }}",
+        "image": "{{ url('/').$post->image }}",
         "author": {
             "@type": "Person",
             "name": "{{$post->author->get_full_name()}}",
