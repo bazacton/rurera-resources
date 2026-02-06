@@ -807,66 +807,6 @@
             return items;
         }
 
-        function buildFaqHtml(title, items, existingBlockId) {
-            var blockId = existingBlockId || uid("rureraFaq");
-            var accId = uid("faqAccordion");
-
-            var dataAttr = escapeHtml(JSON.stringify({ title: title || "", items: items }));
-
-            var titleHtml = title ? `<h2 class="mb-3">${escapeHtml(title)}</h2>` : "";
-
-            var editBar = `
-    <div class="faq-edit-bar mb-2" contenteditable="false">
-      <a href="javascript:void(0)" class="rurera-faq-edit btn btn-sm btn-outline-primary">
-        Edit FAQs
-      </a>
-    </div>
-  `;
-
-            var cardsHtml = items.map(function (it, idx) {
-                var headingId = uid("faqHeading");
-                var collapseId = uid("faqCollapse");
-                var expanded = idx === 0 ? "true" : "false";
-                var show = idx === 0 ? " show" : "";
-                var collapsedBtn = idx === 0 ? "" : " collapsed";
-
-                return `
-      <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-        <div class="card-header" id="${headingId}">
-          <h5 class="mb-0">
-            <button class="btn btn-link text-left w-100${collapsedBtn}" type="button"
-              data-toggle="collapse" data-target="#${collapseId}"
-              aria-expanded="${expanded}" aria-controls="${collapseId}">
-              <span itemprop="name">${escapeHtml(it.q)}</span>
-            </button>
-          </h5>
-        </div>
-        <div id="${collapseId}" class="collapse${show}" aria-labelledby="${headingId}" data-parent="#${accId}">
-          <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-            <div itemprop="text">${escapeHtml(it.a).replace(/\n/g, "<br>")}</div>
-          </div>
-        </div>
-      </div>
-    `;
-            }).join("");
-
-            return `
-    <div class="rurera-faq-block my-3"
-         data-rurera-faq="1"
-         data-faq-block-id="${blockId}"
-         data-faq-items="${dataAttr}"
-         itemscope itemtype="https://schema.org/FAQPage">
-
-      ${editBar}
-      ${titleHtml}
-
-      <div id="${accId}" class="accordion">
-        ${cardsHtml}
-      </div>
-    </div>
-    <p><br></p>
-  `;
-        }
 
         $(document).on("click", ".rurera-faq-edit", function (e) {
             e.preventDefault();
@@ -1382,58 +1322,6 @@
             node.childNodes.forEach(removeDirAttribute);
         }
 
-        function convertBoldToHeading(container) {
-            container.querySelectorAll('p').forEach(p => {
-                let strong = p.querySelector('strong');
-                if (!strong) return;
-
-                // Only convert if strong contains most of the text
-                if (strong.textContent.trim().length < p.textContent.trim().length * 0.6) return;
-
-                let h = document.createElement('h2');
-                h.textContent = strong.textContent.trim();
-
-                p.replaceWith(h);
-            });
-        }
-
-        // --- Modal events ---
-        $(document).on("click", "#faqAddRowBtn", function () {
-            $("#faqRows").append(makeRow("", ""));
-        });
-
-        $(document).on("click", ".faq-remove", function () {
-            $(this).closest(".card").remove();
-        });
-
-        $(document).on("click", "#faqSaveBtn", function () {
-            var context = $("#faqBuilderModal").data("summernote-context");
-            var isEditing = $("#faqBuilderModal").data("editing");
-            var $targetBlock = $("#faqBuilderModal").data("targetBlock");
-
-            var title = $("#faqTitleInput").val().trim();
-            var items = collectRows();
-
-            if (!items.length) {
-                alert("Please add at least one FAQ with both a question and an answer.");
-                return;
-            }
-
-            // Restore selection (important if modal changed focus)
-            context.invoke("editor.restoreRange");
-            context.invoke("editor.focus");
-
-            if (isEditing && $targetBlock && $targetBlock.length) {
-                var existingId = $targetBlock.attr("data-faq-block-id") || uid("rureraFaq");
-                var html = buildFaqHtml(title, items, existingId);
-                $targetBlock[0].outerHTML = html; // replace whole block
-            } else {
-                var htmlNew = buildFaqHtml(title, items);
-                context.invoke("editor.pasteHTML", htmlNew);
-            }
-
-            $("#faqBuilderModal").modal("hide");
-        });
 
         // --- Init: call this on your editor(s) ---
         // Example:
