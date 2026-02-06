@@ -1,6 +1,6 @@
 <section class="rurera-schools-section" aria-labelledby="nearby-schools-title">
     <h2 id="nearby-schools-title">
-        Nearby schools of {{$grammerSchoolsObj->school_name}}
+        Grammar Schools Near {{$grammerSchoolsObj->school_name}}
     </h2>
     @if($nearbySchools->count() > 0)
         @foreach($nearbySchools as $grammerSchoolObj)
