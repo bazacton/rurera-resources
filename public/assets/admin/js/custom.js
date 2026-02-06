@@ -1186,7 +1186,6 @@
                     removeDirAttribute(tempDiv);
                     unwrapGoogleDocsSpans(tempDiv);
                     removeInlineStyles(tempDiv);
-                    convertBoldToHeading(tempDiv);
                     fixHeadingOverflow(tempDiv);
 
                     document.execCommand('insertHTML', false, tempDiv.innerHTML);
