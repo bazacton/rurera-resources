@@ -1,53 +1,36 @@
 <section class="rurera-schools-section" aria-labelledby="nearby-schools-title">
-    <div class="rurera-schools-container">
+    <h2 id="nearby-schools-title" class="visually-hidden">
+        Nearby schools
+    </h2>
+    @if($nearbySchools->count() > 0)
+        @foreach($nearbySchools as $grammerSchoolObj)
+            <article class="rurera-school-item">
+                <figure class="rurera-school-icon">
+                    <img
+                        src="https://rurera.com/assets/default/svgs/blog-schools.svg"
+                        height="64"
+                        width="64"
+                        alt=""
+                        loading="lazy"
+                    >
+                </figure>
 
-        <h2 id="nearby-schools-title" class="visually-hidden">
-            Nearby schools
-        </h2>
+                <div class="rurera-school-content">
+                    <header class="rurera-school-header">
+                        <h3 class="mt-0">
+                            <a href="/blog/{{isset($grammerSchoolObj->schoolBlog->slug)? $grammerSchoolObj->schoolBlog->slug : ''}}" class="rurera-school-name">{{$grammerSchoolObj->school_name}}</a>
+                        </h3>
+                    </header>
 
-        <ul class="rurera-schools-grid">
-            <li class="rurera-school-col">
-
-                @if($nearbySchools->count() > 0)
-                    @foreach($nearbySchools as $grammerSchoolObj)
-
-                        <article class="rurera-school-item">
-                            <figure class="rurera-school-icon">
-                                <img
-                                    src="https://rurera.com/assets/default/svgs/blog-schools.svg"
-                                    height="64"
-                                    width="64"
-                                    alt=""
-                                    loading="lazy"
-                                >
-                            </figure>
-
-                            <div class="rurera-school-content">
-                                <header class="rurera-school-header">
-                                    <h3 class="mt-0">
-                                        <a href="/blog/{{isset($grammerSchoolObj->schoolBlog->slug)? $grammerSchoolObj->schoolBlog->slug : ''}}" class="rurera-school-name" data-e01n2-kon-be-r9ayn1="1">{{$grammerSchoolObj->school_name}}</a>
-                                    </h3>
-                                </header>
-
-                                <p class="rurera-school-age">
-                                    {{round($grammerSchoolObj->distance)}} miles away
-                                </p>
-                            </div>
-                        </article>
-                    @endforeach
-                @endif
-
-                <p class="rurera-school-note">
-                    These distances are calculated in a straight line.
-                    The actual route and distance may vary.
-                </p>
-
-            </li>
-
-            <li class="rurera-school-col">
-                <!-- future school item -->
-            </li>
-        </ul>
-
-    </div>
+                    <p class="rurera-school-age">
+                        {{round($grammerSchoolObj->distance)}} miles away
+                    </p>
+                </div>
+            </article>
+        @endforeach
+        <p class="rurera-school-note">
+            These distances are calculated in a straight line.
+            The actual route and distance may vary.
+        </p>
+    @endif
 </section>
