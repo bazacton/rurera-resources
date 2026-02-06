@@ -169,6 +169,8 @@
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
+          "@id": "{{url('/')}}blog/",
+          "name": "{{$post->title}}",
           "itemListElement": [
             {
               "@type": "ListItem",
