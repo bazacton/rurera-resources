@@ -509,6 +509,13 @@
         line-height: normal;
         color: #6c757d;
     }
+    .blog-single-post .rurera-address-box .list-unstyled {
+        padding: 0;
+        width: 100%;
+    }
+    .blog-single-post .rurera-address-box .list-unstyled li {
+        list-style: none;
+    }
     .rurera-address-icon-box {
         line-height: normal;
     }
