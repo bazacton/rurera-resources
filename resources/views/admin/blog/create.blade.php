@@ -196,6 +196,9 @@
         padding: 20px;
         margin: 0 0 30px;
     }
+    .single-post-block .btn.btn-primary {
+        color: #fff;
+    }
     /* Social Bar Style Start */
     .sharebar{
         display:flex;
