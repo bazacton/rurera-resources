@@ -1,6 +1,6 @@
 <section class="rurera-schools-section" aria-labelledby="consortium-schools-title">
     <h2 id="consortium-schools-title">
-        Grammar schools in the same consortium as {{$grammerSchoolsObj->school_name}}
+        Grammar schools in same consortium
     </h2>
 
     <article class="rurera-school-item">
