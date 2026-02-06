@@ -994,12 +994,11 @@
     }
     .ru-newsletter span {
         display: block;
-        margin-top: 10px;
     }
     .ru-newsletter .input-holder {
         position: relative;
         max-width: 500px;
-        margin: 25px auto 15px;
+        margin: 20px auto 10px;
     }
     .ru-newsletter .input-holder button {
         position: absolute;
