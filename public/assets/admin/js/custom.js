@@ -1073,7 +1073,34 @@
             renderList(null);
         });
 
+        function cleanSummernoteContent($editable) {
+            // Remove StartFragment / EndFragment comments
+            $editable.find('*').contents().each(function () {
+                if (this.nodeType === 8) { // Comment node
+                    if (
+                        this.nodeValue.includes('StartFragment') ||
+                        this.nodeValue.includes('EndFragment')
+                    ) {
+                        this.remove();
+                    }
+                }
+            });
 
+            // Remove bis_skin_checked="1" attributes
+            $editable.find('[bis_skin_checked]').removeAttr('bis_skin_checked');
+
+            // Remove empty <p> tags (including &nbsp; and <br>)
+            $editable.find('p').each(function () {
+                const html = $(this).html()
+                    .replace(/&nbsp;/g, '')
+                    .replace(/<br\s*\/?>/gi, '')
+                    .trim();
+
+                if (html === '') {
+                    $(this).remove();
+                }
+            });
+        }
 
         $(".summernote-source").summernote({
             dialogsInBody: true,
@@ -1099,8 +1126,12 @@
                 onChange: function (contents, $editable) {
                     sanitizeEditorStyles($editable);
                     replaceGSShortcodes($editable[0]);
+                    cleanSummernoteContent($editable);
+
                 },
                 onPaste: function (e) {
+                    const $editable = $(this);
+
                     let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
 
                     let html = clipboardData.getData('text/html');
@@ -1159,6 +1190,9 @@
                     fixHeadingOverflow(tempDiv);
 
                     document.execCommand('insertHTML', false, tempDiv.innerHTML);
+                    setTimeout(function () {
+                        cleanSummernoteContent($editable);
+                    }, 0);
                 }
             }
         });
