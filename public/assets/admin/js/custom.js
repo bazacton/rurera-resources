@@ -855,7 +855,6 @@
          data-rurera-faq="1"
          data-faq-block-id="${blockId}"
          data-faq-items="${dataAttr}"
-         contenteditable="false"
          itemscope itemtype="https://schema.org/FAQPage">
 
       ${editBar}
@@ -1151,73 +1150,15 @@
                 ['insert', ['link', 'picture']],
                 ['history', ['undo']],
                 ['view', ['codeview']], // 👈 comma was missing
-                ['custom', ['faqBuilder', 'cannedElements']]
+                //['custom', ['faqBuilder', 'cannedElements']]
             ],
             buttons: {
                 lfm: LFMButton,
-                cannedElements: cannedElementsButton,
-                faqBuilder: function (context) {
-                    var ui = $.summernote.ui;
-
-                    return ui.button({
-                        contents: '<i class="note-icon-question"></i> FAQs',
-                        tooltip: "Insert / Edit FAQs",
-                        click: function () {
-                            // Save current selection range so we can insert/replace later
-                            context.invoke("editor.saveRange");
-
-                            // Detect if caret is inside an existing FAQ block
-                            var $current = $(context.invoke("editor.getSelectedNode"));
-                            var $faqBlock = $current.closest('[data-rurera-faq="1"]');
-                            var isEditing = $faqBlock.length > 0;
-
-                            console.log(isEditing);
-                            // Fill modal
-                            $("#faqRows").empty();
-                            $("#faqTitleInput").val("");
-                            $("#faqSaveBtn").text(isEditing ? "Update" : "Insert");
-
-                            // Keep references for save
-                            $("#faqBuilderModal").data("summernote-context", context);
-                            $("#faqBuilderModal").data("editing", isEditing);
-                            $("#faqBuilderModal").data("targetBlock", isEditing ? $faqBlock : null);
-
-                            if (isEditing) {
-                                var raw = $faqBlock.attr("data-faq-items") || "";
-                                var parsed = tryParseJSON(raw);
-                                if (!parsed) {
-                                    // if attribute got escaped, try to unescape minimal HTML entities
-                                    var unescaped = raw
-                                        .replace(/&quot;/g, '"')
-                                        .replace(/&#039;/g, "'")
-                                        .replace(/&lt;/g, "<")
-                                        .replace(/&gt;/g, ">")
-                                        .replace(/&amp;/g, "&");
-                                    parsed = tryParseJSON(unescaped);
-                                }
-
-                                if (parsed && parsed.items && parsed.items.length) {
-                                    $("#faqTitleInput").val(parsed.title || "");
-                                    parsed.items.forEach(function (it) {
-                                        $("#faqRows").append(makeRow(it.q, it.a));
-                                    });
-                                } else {
-                                    // fallback: start with one row
-                                    $("#faqRows").append(makeRow("", ""));
-                                }
-                            } else {
-                                // new insert: start with one row
-                                $("#faqRows").append(makeRow("", ""));
-                            }
-
-                            $("#faqBuilderModal").modal("show");
-                        }
-                    }).render();
-                }
             },
             callbacks: {
                 onChange: function (contents, $editable) {
                     sanitizeEditorStyles($editable);
+                    replaceGSShortcodes($editable[0]);
                 },
                 onPaste: function (e) {
                     let clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
@@ -1281,7 +1222,6 @@
                 }
             }
         });
-
         function sanitizeEditorStyles($editor) {
             let el = $editor[0];
 
@@ -1296,6 +1236,85 @@
                 timer = setTimeout(fn, delay);
             };
         }
+
+
+
+
+
+        /*
+        Short Code Convert Start
+         */
+
+        function replaceGSShortcodes(container) {
+            const walker = document.createTreeWalker(
+                container,
+                NodeFilter.SHOW_TEXT,
+                {
+                    acceptNode(node) {
+                        // ❌ Ignore text inside existing shortcode chips
+                        if (node.parentElement.closest('.shortcode-chip')) {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                }
+            );
+
+            let textNodes = [];
+            while (walker.nextNode()) {
+                textNodes.push(walker.currentNode);
+            }
+
+            textNodes.forEach(textNode => {
+                const regex = /\[GS\s+"([^"]+)"\]/g;
+                let text = textNode.nodeValue;
+                let match;
+
+                if (!regex.test(text)) return;
+
+                regex.lastIndex = 0;
+                let fragment = document.createDocumentFragment();
+                let lastIndex = 0;
+
+                while ((match = regex.exec(text)) !== null) {
+                    const key = match[1];
+                    const value = GS_SHORTCODES[key];
+
+                    // ❌ If no value, leave it untouched
+                    if (!value) continue;
+
+                    // text before shortcode
+                    fragment.appendChild(
+                        document.createTextNode(text.slice(lastIndex, match.index))
+                    );
+
+                    // shortcode chip
+                    const chip = document.createElement('span');
+                    chip.className = 'shortcode-chip';
+                    chip.dataset.sc = key;
+
+                    chip.innerHTML = `
+                <span class="sc-label">[GS "${key}"]</span>
+                <span class="sc-value">${value}</span>
+            `;
+
+                    fragment.appendChild(chip);
+                    lastIndex = regex.lastIndex;
+                }
+
+                fragment.appendChild(
+                    document.createTextNode(text.slice(lastIndex))
+                );
+
+                textNode.replaceWith(fragment);
+            });
+        }
+
+
+        /*
+        ShortCode Convert Ends
+         */
+
 
         function removeInlineStyles(node) {
             if (node.nodeType === Node.ELEMENT_NODE) {
@@ -1315,6 +1334,10 @@
 
                 span.replaceWith(fragment);
             });
+            container.querySelectorAll('[bis_skin_checked]').forEach(el => {
+                el.removeAttribute('bis_skin_checked');
+            });
+
         }
         function fixHeadingOverflow(container) {
             container.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(heading => {
@@ -1354,6 +1377,7 @@
                 if (node.getAttribute('dir') === 'ltr' || node.getAttribute('dir') === 'rtl') {
                     node.removeAttribute('dir');
                 }
+
             }
             node.childNodes.forEach(removeDirAttribute);
         }
