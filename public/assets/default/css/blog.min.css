@@ -263,7 +263,7 @@
 }
 .blog-single-post .rurera-school-item h3 {
     margin: 0;
-    font-weight: normal;
+    font-weight: 500;
     font-size: inherit;
 }
 article.rurera-school-item:nth-of-type(2n) {
