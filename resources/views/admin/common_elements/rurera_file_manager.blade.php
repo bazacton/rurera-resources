@@ -308,7 +308,7 @@
         const CONFIG = {
             maxFiles: 20,
             maxFileSizeBytes: 4 * 1024 * 1024,
-            allowedExtensions: ['.pdf', '.docx', '.svg', '.jpg', '.jpeg', '.png'],
+            allowedExtensions: ['.pdf', '.docx', '.svg', '.jpg', '.jpeg', '.png', '.webp'],
             allowedMimeTypes: [
                 'application/pdf',
                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',

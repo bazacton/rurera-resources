@@ -1,6 +1,6 @@
 <section class="rurera-schools-section" aria-labelledby="consortium-schools-title">
     <h2 id="consortium-schools-title">
-        Grammar schools in same consortium
+        Grammar Schools in Same Consortium
     </h2>
 
     @if($consortium_schools->count() > 0)
