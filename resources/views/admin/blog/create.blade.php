@@ -503,8 +503,8 @@
         font-size: .875rem;
         font-weight: 500;
     }
-    .blog-single-post .rurera-address-details ul li,
-    .blog-single-post .post-show .rurera-address-details ul li{
+    .blog-single-post .rurera-address-box .list-unstyled li,
+    .blog-single-post .post-show .list-unstyled li {
         list-style: none;
         line-height: normal;
         color: #6c757d;
@@ -513,13 +513,10 @@
         padding: 0;
         width: 100%;
     }
-    .blog-single-post .rurera-address-box .list-unstyled li {
-        list-style: none;
-    }
     .rurera-address-icon-box {
         line-height: normal;
     }
-    .blog-single-post .rurera-address-details ul li img {
+    .blog-single-post .rurera-address-box .list-unstyled li img {
         height: 18px;
         width: 18px;
         margin-right: 8px;
