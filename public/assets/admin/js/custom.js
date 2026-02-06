@@ -1090,7 +1090,7 @@
             $editable.find('[bis_skin_checked]').removeAttr('bis_skin_checked');
 
             // Remove empty <p> tags (including &nbsp; and <br>)
-            $editable.find('p').each(function () {
+            $editable.find('p,h1,h2,h3,h4,h5,h6,span,div').each(function () {
                 const html = $(this).html()
                     .replace(/&nbsp;/g, '')
                     .replace(/<br\s*\/?>/gi, '')
