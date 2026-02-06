@@ -176,13 +176,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "{{url('/')}}"
+              "item": "{{url('/')}}/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Blog",
-              "item": "{{url('/')}}blog/"
+              "item": "{{url('').'/blog/'}}"
             },
             {
               "@type": "ListItem",
