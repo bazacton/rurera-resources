@@ -1137,6 +1137,19 @@
                     let html = clipboardData.getData('text/html');
                     let text = clipboardData.getData('text/plain');
 
+
+
+
+
+                    html = html.replace(/<!--\s*StartFragment\s*-->/gi, '');
+                    html = html.replace(/<!--\s*EndFragment\s*-->/gi, '');
+
+                    // Remove bis_skin_checked
+                    html = html.replace(/\s*bis_skin_checked="1"/gi, '');
+
+                    // Remove empty <p>
+                    html = html.replace(/<p>(\s|&nbsp;|<br\s*\/?>)*<\/p>/gi, '');
+
                     e.preventDefault();
 
                     let content = html || text;
