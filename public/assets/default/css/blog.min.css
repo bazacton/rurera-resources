@@ -146,6 +146,9 @@
     padding: 20px;
     margin: 0 0 30px;
 }
+.single-post-block .btn.btn-primary {
+    color: #fff;
+}
 /* Location Style Start */
 .blog-single-post .rurera-location-section {
     border: 0;
