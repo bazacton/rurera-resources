@@ -145,12 +145,6 @@
         position: relative;
         color: var(--primary);
     }
-    .blog-single-post .post-back-btn:before {
-        content: "\2190";
-        margin-right: 5px;
-        display: inline-block;
-        color: var(--primary);
-    }
     .blog-single-post h3 {
         font-size: 1.5rem;
     }
