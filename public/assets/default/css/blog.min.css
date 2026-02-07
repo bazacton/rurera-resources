@@ -270,6 +270,9 @@ article.rurera-school-item:nth-of-type(2n) {
 .blog-single-post .rurera-school-item:last-of-type {
     border-right: 0;
 }
+.rurera-location-section .gs-map {
+    max-height: 300px;
+}
 /* Location Style End */
 /* Blog School Facts Style Start */
 .blog-single-post .facts-grid {
