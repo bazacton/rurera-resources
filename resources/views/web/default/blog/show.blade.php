@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7 col-lg-7">
-                        <a href="/blog" class="post-back-btn font-18 font-weight-normal">Back to blog</a>
+                        <a href="/blog" class="post-back-btn font-18 font-weight-normal">&larr; Back to blog</a>
                         <h1 class="font-weight-bold my-20">{{ $post->title }}</h1>
                         <div class="post-excerpt">
                             {!! getBodyContent($post_description) !!}
