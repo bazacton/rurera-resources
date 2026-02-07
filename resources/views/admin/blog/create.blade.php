@@ -581,6 +581,9 @@
     .blog-single-post .rurera-school-item:last-of-type {
         border-right: 0;
     }
+    .rurera-location-section .gs-map {
+        max-height: 300px;
+    }
     /* Location Style End */
     /* Blog Newsletter Style Start */
     .blog-newsletter {
