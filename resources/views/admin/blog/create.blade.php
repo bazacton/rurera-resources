@@ -504,6 +504,7 @@
     }
     .blog-single-post .rurera-address-box .list-unstyled {
         padding: 0;
+        margin-top: 5px;
         width: 100%;
     }
     .rurera-address-icon-box {
