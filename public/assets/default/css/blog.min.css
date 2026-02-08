@@ -675,4 +675,14 @@ article.rurera-school-item:nth-of-type(2n) {
 }
 
 @media (max-width: 576px) {
+    .blog-single-post .fact {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .blog-single-post .rurera-school-item,
+    article.rurera-school-item:nth-of-type(2n) {
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 0;
+    }
 }
