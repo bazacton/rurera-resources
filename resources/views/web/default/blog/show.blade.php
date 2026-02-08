@@ -112,7 +112,7 @@
                             <h2 class="mb-0 font-22">Related posts</h2>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3 col-lg-3 mt-20 mt-lg-0 mb-30">
+                        <div class="col-12 col-md-3 col-lg-3 mb-30">
                             <article class="rurera-blog blog-medium"
                                     itemscope
                                     itemtype="https://schema.org/BlogPosting">
