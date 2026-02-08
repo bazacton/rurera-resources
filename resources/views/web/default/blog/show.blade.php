@@ -73,7 +73,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9 col-md-8">
-                        <div class="post-show pb-0 pr-30">
+                        <div class="post-show pb-0 pr-lg-30">
                             {!! getBodyContent($post_content) !!}
 
                         {{-- post Comments --}}
