@@ -925,21 +925,6 @@
         color: var(--primary);
     }
     /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .event-row {
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-        }
-        .col-md-5, .col-md-4, .col-md-3 {
-            width: 100%;
-            margin-bottom: 10px;
-            padding-left: 0;
-        }
-        .status-badge {
-            width: 100%;
-        }
-    }
     /* Key Events Style End */
     .shortcode-chip {
         display: inline-block;
