@@ -637,6 +637,9 @@ article.rurera-school-item:nth-of-type(2n) {
     .blog-single-post .rurera-school-item h3 {
         font-size: inherit !important;
     }
+    .section-title {
+        text-align: inherit !important;
+    }
     .sharebar__stats {
         width: 100%;
         padding: 0;
