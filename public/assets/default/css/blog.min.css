@@ -620,8 +620,22 @@ article.rurera-school-item:nth-of-type(2n) {
     .mockup-container img {
         max-width: 100%;
     }
+    .mockup-container .mockup-floating {
+        left: 0;
+        bottom: -25px;
+    }
     .single-post h1 {
         font-size: 2rem;
+    }
+    .blog-single-post h2 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+    .blog-single-post h3 {
+        font-size: 1.1rem !important;
+    }
+    .blog-single-post .rurera-school-item h3 {
+        font-size: inherit !important;
     }
     .sharebar__stats {
         width: 100%;
@@ -629,6 +643,22 @@ article.rurera-school-item:nth-of-type(2n) {
     }
     .sharebar__divider {
         display: none;
+    }
+    .blog-single-post .fact {
+        font-size: .875rem;
+        padding: 15px;
+    }
+    .blog-single-post .rurera-location-section.row {
+        gap: 15px;
+    }
+    .rurera-location-section .col-md-6,
+    .has-bg-element .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .blog-single-post .rurera-school-content {
+        flex-direction: column;
+        gap: 10px 0;
     }
 }
 
@@ -638,6 +668,12 @@ article.rurera-school-item:nth-of-type(2n) {
     }
     .sharebar__stats {
         width: auto;
+    }
+    .blog-single-post .rurera-school-item {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0 0 20px;
     }
 }
 
