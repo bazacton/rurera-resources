@@ -924,7 +924,6 @@
     .status-upcoming {
         color: var(--primary);
     }
-    /* Responsive adjustments */
     /* Key Events Style End */
     .shortcode-chip {
         display: inline-block;
