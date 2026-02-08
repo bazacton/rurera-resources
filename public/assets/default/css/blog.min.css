@@ -652,7 +652,7 @@ article.rurera-school-item:nth-of-type(2n) {
         padding: 15px;
     }
     .blog-single-post .rurera-location-section.row {
-        gap: 15px;
+        gap: 25px;
     }
     .rurera-location-section .col-md-6,
     .has-bg-element .col-6 {
