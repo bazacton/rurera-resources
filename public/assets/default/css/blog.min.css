@@ -28,6 +28,10 @@
     justify-content: start;
     height: 100%;
 }
+.blog-single-post .rurera-blog.blog-medium {
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
 .rurera-blog.blog-medium .blog-grid-image {
     width: 100%;
     margin-bottom: 15px;
