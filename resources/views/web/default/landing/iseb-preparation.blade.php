@@ -692,7 +692,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading1">
                                     <h3 class="mb-0">
-                                        <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                                 data-toggle="collapse" data-target="#faqCollapse1"
                                                 aria-expanded="false" aria-controls="faqCollapse1">
                                             <span itemprop="name">What is the Independent Schools Examination Board (ISEB)?</span>
@@ -716,18 +716,22 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading2">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse2"
                                             aria-expanded="false" aria-controls="faqCollapse2">
                                         <span itemprop="name">What is the difference between ISEB exams and independent school exams?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
                                 <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
                                     <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                                    <div itemprop="text">
-                                        ISEB exams are standardized tests used by many UK independent schools, allowing students to apply to multiple schools with the same results. Independent school exams, however, are unique to each school, with varying content and format, and are specific to that school's admission process.
-                                    </div>
+                                        <div itemprop="text">
+                                            ISEB exams are standardized tests used by many UK independent schools, allowing students to apply to multiple schools with the same results. Independent school exams, however, are unique to each school, with varying content and format, and are specific to that school's admission process.
+                                        </div>
                                     </div>
                                 </div>
                                 </div>
@@ -736,18 +740,22 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading3">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse3"
                                             aria-expanded="false" aria-controls="faqCollapse3">
                                         <span itemprop="name">How does Rurera help students prepare for ISEB exams?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
                                 <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
                                     <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                                    <div itemprop="text">
-                                        Rurera offers tailored practice tests, study resources, and expert guidance designed specifically to align with the format and content of ISEB exams. Through structured learning tools and assessments, Rurera helps students strengthen their subject knowledge and exam readiness.
-                                    </div>
+                                        <div itemprop="text">
+                                            Rurera offers tailored practice tests, study resources, and expert guidance designed specifically to align with the format and content of ISEB exams. Through structured learning tools and assessments, Rurera helps students strengthen their subject knowledge and exam readiness.
+                                        </div>
                                     </div>
                                 </div>
                                 </div>
@@ -756,10 +764,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading4">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse4"
                                             aria-expanded="false" aria-controls="faqCollapse4">
                                         <span itemprop="name">What are the Common Entrance exams?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -776,10 +788,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading5">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse5"
                                             aria-expanded="false" aria-controls="faqCollapse5">
                                         <span itemprop="name">Can Rurera track my progress in ISEB preparation?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -796,10 +812,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading6">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse6"
                                             aria-expanded="false" aria-controls="faqCollapse6">
                                         <span itemprop="name">What subjects are tested in ISEB exams?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -816,10 +836,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading7">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse7"
                                             aria-expanded="false" aria-controls="faqCollapse7">
                                         <span itemprop="name">When are ISEB exams held?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -836,10 +860,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading8">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse8"
                                             aria-expanded="false" aria-controls="faqCollapse8">
                                         <span itemprop="name">How do I register my child for the ISEB?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -856,10 +884,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading9">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse9"
                                             aria-expanded="false" aria-controls="faqCollapse9">
                                         <span itemprop="name">Can I take timed practice tests for ISEB on Rurera?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -876,10 +908,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading10">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse10"
                                             aria-expanded="false" aria-controls="faqCollapse10">
                                         <span itemprop="name">How are ISEB exams graded?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -896,10 +932,14 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading11">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse11"
                                             aria-expanded="false" aria-controls="faqCollapse11">
                                         <span itemprop="name">How long does an ISEB (common pre-test) exam take?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
@@ -908,10 +948,10 @@
                                     <div itemprop="text">
                                         The length of each ISEB exam varies depending on the subject.
                                         <ul class="mb-10 mt-20">
-                                        <li class="mb-10"><strong>Math:</strong> 40 minutes.</li>
-                                        <li class="mb-10"><strong>English</strong> (reading and SPaG): 40 minutes.</li>
-                                        <li class="mb-10"><strong>Non-verbal reasoning:</strong> 30 minutes.</li>
-                                        <li><strong>Verbal reasoning:</strong> 25 minutes.</li>
+                                            <li class="mb-10"><strong>Math:</strong> 40 minutes.</li>
+                                            <li class="mb-10"><strong>English</strong> (reading and SPaG): 40 minutes.</li>
+                                            <li class="mb-10"><strong>Non-verbal reasoning:</strong> 30 minutes.</li>
+                                            <li><strong>Verbal reasoning:</strong> 25 minutes.</li>
                                         </ul>
                                     </div>
                                     </div>
