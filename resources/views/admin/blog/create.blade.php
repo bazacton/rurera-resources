@@ -904,6 +904,9 @@
         .events-list li:last-child {
             border-bottom: none;
         }
+        .events-list span {
+            color: #000;
+        }
         .events-list time {
             color: #495057;
             display: block;
