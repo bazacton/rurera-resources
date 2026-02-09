@@ -15080,12 +15080,14 @@ section:has(.trial-steps) .lms-btn-group a small {
     height: 100%;
     border-radius: 10px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transform:translateY(16px);
     max-width: 100%;
 }
 .feature-image.active {
     opacity: 1;
+    animation:in .8s forwards
 }
+@keyframes in{to{opacity:1;transform:none}}
 /* Accordion Slider Style End */
 .footer {
   position: relative;
