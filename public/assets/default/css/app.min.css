@@ -1883,7 +1883,7 @@ nav li {
 .line-shap-holder:after {
   content: "";
   position: absolute;
-  top: 300px;
+  top: 235px;
   height: 60px;
   width: 100%;
   background: rgb(255 255 255 / 0.6);
