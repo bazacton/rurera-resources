@@ -15065,7 +15065,13 @@ section:has(.trial-steps) .lms-btn-group a small {
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 25px;
+    background-color: #eefaf4;
+}
+.image-container .images-holder {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 .feature-image {
     position: absolute;
@@ -15074,9 +15080,9 @@ section:has(.trial-steps) .lms-btn-group a small {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: #f8f9fa;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    max-width: 100%;
 }
 .feature-image.active {
     opacity: 1;
