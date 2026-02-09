@@ -689,4 +689,7 @@ article.rurera-school-item:nth-of-type(2n) {
     .sharebar .btn {
         min-width: auto;
     }
+    .sharebar .btn--share {
+        min-width: 40px;
+    }
 }
