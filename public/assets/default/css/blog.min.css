@@ -262,11 +262,6 @@
 .blog-single-post .rurera-school-item p {
     margin: 0;
 }
-.blog-single-post .rurera-school-item h3 {
-    margin: 0;
-    font-weight: 500;
-    font-size: inherit;
-}
 article.rurera-school-item:nth-of-type(2n) {
     border-right: 0;
     padding-left: 15px;
