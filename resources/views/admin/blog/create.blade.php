@@ -1289,7 +1289,7 @@
                         </button>
                         </p>
                         <div class="collapse" id="grammer-school">
-                            <div class="card card-body">
+                            <div class="card-body">
                                 <div id="grammer-school-block" class="grammer-school-block rurera-hide"></div>
                             </div>
                         </div>
