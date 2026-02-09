@@ -359,6 +359,7 @@
         padding: 0 30px 0 0;
         margin-bottom: 0;
         height: auto;
+        font-weight: inherit;
         position: relative;
         text-decoration: none;
         color: #343434;
