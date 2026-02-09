@@ -203,9 +203,9 @@
         <div class="alert alert-info">
             <strong>Upload rules:</strong>
             <ul class="mb-0">
-                <li>Maximum <strong>5 files</strong> per insert</li>
+                <li>Maximum <strong>20 files</strong> per insert</li>
                 <li>Maximum <strong>4 MB</strong> per file</li>
-                <li>Allowed types: <strong>JPG</strong>, <strong>PDF</strong>, <strong>SVG</strong>, <strong>DOCX</strong></li>
+                <li>Allowed types: <strong>JPG</strong>, , <strong>PNG</strong>, <strong>PDF</strong>, <strong>SVG</strong>, <strong>DOCX</strong>, <strong>WEBP</strong></li>
             </ul>
         </div>
 
@@ -337,7 +337,7 @@
                 'image/webp'
             ],
             storageKey: 'rurera_file_gallery_v2',
-            recentLimit: 30
+            recentLimit: 20
         };
 
         // Elements
@@ -610,7 +610,11 @@
                 const kind = fileKindFromTypeOrExt(f.type, f.name);
                 const thumb = (kind === 'image') ? makePlaceholderThumbSvg('IMG') : (kind === 'pdf' ? makePlaceholderThumbSvg('PDF') : makePlaceholderThumbSvg('DOCX'));
                 const row = document.createElement('div');
-                const file_name = f.name.replace(/\.[^/.]+$/, '');
+                const file_name = f.name
+                    .replace(/\.[^/.]+$/, '')          // remove extension
+                    .toLowerCase()                     // lowercase
+                    .replace(/[^a-z0-9]+/g, '-')       // replace spaces & special chars with -
+                    .replace(/^-+|-+$/g, '');          // trim leading/trailing -
                 const extension = f.name.split('.').pop();
                 row.className = 'rfp-item';
                 row.setAttribute('draggable','true');
