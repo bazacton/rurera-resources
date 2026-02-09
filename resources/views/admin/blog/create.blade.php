@@ -1097,6 +1097,16 @@
                                                 </div>
                                                 <label for="is_grammer_school" class="mb-0">Grammer School</label>
                                             </div>
+                                            <div class="form-group grammer-school-field rurera-hide">
+                                                <label class="input-label">Grammer School</label>
+                                                <select name="grammer_school_id" class="form-control grammer_school_id">
+                                                    <option value="">Select School</option>
+                                                    @foreach($grammerSchools as $grammerSchoolObj)
+                                                        @php $selected = (isset($post->id) && $grammerSchoolObj->id == $post->grammer_school_id)? 'selected' : ''; @endphp
+                                                        <option value="{{ $grammerSchoolObj->id }}" {{$selected}}>{{$grammerSchoolObj->school_name}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>{{ trans('admin/main.title') }}</label>
@@ -1245,16 +1255,7 @@
 
 
 
-                                <div class="form-group grammer-school-field rurera-hide">
-                                    <label class="input-label">Grammer School</label>
-                                    <select name="grammer_school_id" class="form-control grammer_school_id">
-                                        <option value="">Select School</option>
-                                        @foreach($grammerSchools as $grammerSchoolObj)
-                                            @php $selected = (isset($post->id) && $grammerSchoolObj->id == $post->grammer_school_id)? 'selected' : ''; @endphp
-                                            <option value="{{ $grammerSchoolObj->id }}" {{$selected}}>{{$grammerSchoolObj->school_name}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
+
                                 <div class="grammer-school-block rurera-hide"></div>
                                 <div class="form-group mt-15">
                                     <label class="input-label">{{ trans('public.description') }}</label>
