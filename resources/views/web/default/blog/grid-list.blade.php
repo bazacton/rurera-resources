@@ -2,7 +2,7 @@
     <div class="blog-grid-detail">
         <span class="badge created-at d-flex align-items-center">
             <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
-            <span  itemprop="datePublished" content="2023-04-05T08:00:00+08:00">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
+            <span  itemprop="datePublished" content="{{ dateTimeFormat($post->updated_at, 'j M Y H:i:s') }}">{{ dateTimeFormat($post->updated_at, 'j M Y') }}</span>
         </span>
         <h3 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
             <a itemprop="url" href="{{ $post->getUrl() }}">{{ $post->title }}</a>
