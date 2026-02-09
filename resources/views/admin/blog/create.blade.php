@@ -558,6 +558,10 @@
             justify-content: space-between;
             width: calc(100% - 32px);
         }
+        .blog-single-post .rurera-school-content h3 {
+            font-weight: 500;
+            font-size: inherit;
+        }
         .blog-single-post .rurera-school-icon {
             width: 20px;
             height: 20px;
