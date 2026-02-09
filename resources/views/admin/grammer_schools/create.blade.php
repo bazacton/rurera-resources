@@ -88,7 +88,7 @@
                                             <label for="feesType">Fees Type</label>
                                             <div class="select-holder">
                                                 <select class="form-control" name="fees_type" id="feesType" required>
-                                                    <option value="Free" {{ (!isset($grammerSchoolObj->fees_type) || $grammerSchoolObj->fees_type === 'Free') ? 'selected' : '' }}>Free</option>
+                                                    <option value="State-funded" {{ (!isset($grammerSchoolObj->fees_type) || $grammerSchoolObj->fees_type === 'State-funded') ? 'selected' : '' }}>State-funded</option>
                                                     <option value="Paid" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->fees_type == 'Paid') ? 'selected' : ''}}>Paid</option>
                                                 </select>
                                             </div>
@@ -101,7 +101,7 @@
                                             <label for="boarding">Boarding</label>
                                             <div class="select-holder">
                                                 <select class="form-control" name="boarding" id="boarding" required>
-                                                    <option value="Day school" {{ (!isset($grammerSchoolObj->fees_type) || $grammerSchoolObj->fees_type === 'Free') ? 'selected' : '' }}>Day school</option>
+                                                    <option value="Day school" {{ (!isset($grammerSchoolObj->fees_type) || $grammerSchoolObj->fees_type === 'Day school') ? 'selected' : '' }}>Day school</option>
                                                     <option value="Boarding" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->fees_type == 'Boarding') ? 'selected' : ''}}>Boarding</option>
                                                 </select>
                                             </div>
