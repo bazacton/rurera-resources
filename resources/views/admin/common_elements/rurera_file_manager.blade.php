@@ -221,8 +221,27 @@
             </div>
             <div class="font-weight-bold">Drag &amp; drop files here</div>
             <div class="text-muted small">or click to select (max 5 files, 4 MB each)</div>
-            <input id="rfpFileInput" class="rfp-fileinput-hidden" type="file" multiple
-                   accept=".pdf,.docx,.svg,.jpg,.jpeg,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/jpeg,image/svg+xml" />
+            <input
+                id="rfpFileInput"
+                class="rfp-fileinput-hidden"
+                type="file"
+                multiple
+                accept="
+        .pdf,
+        .docx,
+        .svg,
+        .jpg,
+        .jpeg,
+        .png,
+        .webp,
+        application/pdf,
+        application/vnd.openxmlformats-officedocument.wordprocessingml.document,
+        image/jpeg,
+        image/png,
+        image/svg+xml,
+        image/webp
+    "
+            />
             <div class="mt-3">
                 <label class="btn btn-primary rfp-btn mb-0" id="rfpChooseBtn" for="rfpFileInput">Select Files</label>
             </div>
@@ -384,7 +403,7 @@
             }
             for (const f of fileList) {
                 if (!isAllowedFile(f)) {
-                    errors.push(`Not allowed: ${f.name} (only JPG, PDF, SVG, DOCX).`);
+                    errors.push(`Not allowed: ${f.name} (only JPG, PDF, SVG, DOCX, webp).`);
                 }
                 if (f.size > CONFIG.maxFileSizeBytes) {
                     errors.push(`${f.name} is ${bytesToMb(f.size)} MB (max 4.00 MB).`);
@@ -419,10 +438,24 @@
 
         function fileKindFromTypeOrExt(mime, name) {
             const ext = extOf(name);
+
             if (mime === 'application/pdf' || ext === '.pdf') return 'pdf';
-            if (mime === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || ext === '.docx') return 'docx';
-            if (mime === 'image/svg+xml' || ext === '.svg') return 'image';
-            if (mime === 'image/jpeg' || ext === '.jpg' || ext === '.jpeg') return 'image';
+
+            if (
+                mime === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' ||
+                ext === '.docx'
+            ) return 'docx';
+
+            if (
+                mime === 'image/svg+xml' ||
+                mime === 'image/jpeg' ||
+                mime === 'image/webp' ||
+                ext === '.svg' ||
+                ext === '.jpg' ||
+                ext === '.jpeg' ||
+                ext === '.webp'
+            ) return 'image';
+
             return 'other';
         }
 
