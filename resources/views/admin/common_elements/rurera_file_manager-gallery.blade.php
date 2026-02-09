@@ -102,66 +102,62 @@
 <div class="grid-area">
     <div id="rfpGalleryGrid" class="mt-3 rfp-gallery-grid">
 
-        <div id="rfpGalleryGrid" class="mt-3 rfp-gallery-grid">
+        @if(isset($MyRecentGalleryImages) && $MyRecentGalleryImages->count() > 0)
+        <h3>My Recent Uploads</h3>
 
-            @if(isset($MyRecentGalleryImages) && $MyRecentGalleryImages->count() > 0)
-            <h3>My Recent Uploads</h3>
+            @foreach($MyRecentGalleryImages as $GalleryImageObj)
+                <script>
+                    GalleryItems.push({
+                        dataUrl: null,
+                        displayTitle: "",
+                        id: "{{$GalleryImageObj->id}}",
+                        kind: "",
+                        mime: "",
+                        name: "",
+                        size: null,
+                        thumbUrl: "{{$GalleryImageObj->image_path}}",
+                        uploadedAt: Date.now(),
+                        url: "{{$GalleryImageObj->image_path}}"
+                    });
+                </script>
+            <div class="rfp-tile" data-item-id="{{$GalleryImageObj->id}}">
+                <img src="{{$GalleryImageObj->image_path}}" width="200">
+                <div class="rfp-tile-check">✓</div>
+                <div class="rfp-tile-label" title="{{$GalleryImageObj->title}}">{{$GalleryImageObj->title}}</div>
+            </div>
+            @endforeach
 
-                @foreach($MyRecentGalleryImages as $GalleryImageObj)
-                    <script>
-                        GalleryItems.push({
-                            dataUrl: null,
-                            displayTitle: "",
-                            id: "{{$GalleryImageObj->id}}",
-                            kind: "",
-                            mime: "",
-                            name: "",
-                            size: null,
-                            thumbUrl: "{{$GalleryImageObj->image_path}}",
-                            uploadedAt: Date.now(),
-                            url: "{{$GalleryImageObj->image_path}}"
-                        });
-                    </script>
+
+        @endif
+
+
+        @if(isset($GalleryImages) && $GalleryImages->count() > 0)
+            <h3>Related Images</h3>
+
+            @foreach($GalleryImages as $GalleryImageObj)
+                <script>
+                    GalleryItems.push({
+                        dataUrl: null,
+                        displayTitle: "test111 • 2026-02-03 20:58",
+                        id: "{{$GalleryImageObj->id}}",
+                        kind: "other",
+                        mime: "jpg",
+                        name: "test111",
+                        size: null,
+                        thumbUrl: "{{$GalleryImageObj->image_path}}",
+                        uploadedAt: Date.now(),
+                        url: "{{$GalleryImageObj->image_path}}"
+                    });
+                </script>
                 <div class="rfp-tile" data-item-id="{{$GalleryImageObj->id}}">
                     <img src="{{$GalleryImageObj->image_path}}" width="200">
                     <div class="rfp-tile-check">✓</div>
                     <div class="rfp-tile-label" title="{{$GalleryImageObj->title}}">{{$GalleryImageObj->title}}</div>
                 </div>
-                @endforeach
+            @endforeach
 
 
-            @endif
-
-
-            @if(isset($GalleryImages) && $GalleryImages->count() > 0)
-                <h3>Related Images</h3>
-
-                @foreach($GalleryImages as $GalleryImageObj)
-                    <script>
-                        GalleryItems.push({
-                            dataUrl: null,
-                            displayTitle: "test111 • 2026-02-03 20:58",
-                            id: "{{$GalleryImageObj->id}}",
-                            kind: "other",
-                            mime: "jpg",
-                            name: "test111",
-                            size: null,
-                            thumbUrl: "{{$GalleryImageObj->image_path}}",
-                            uploadedAt: Date.now(),
-                            url: "{{$GalleryImageObj->image_path}}"
-                        });
-                    </script>
-                    <div class="rfp-tile" data-item-id="{{$GalleryImageObj->id}}">
-                        <img src="{{$GalleryImageObj->image_path}}" width="200">
-                        <div class="rfp-tile-check">✓</div>
-                        <div class="rfp-tile-label" title="{{$GalleryImageObj->title}}">{{$GalleryImageObj->title}}</div>
-                    </div>
-                @endforeach
-
-
-            @endif
-
-        </div>
+        @endif
 
     </div>
 </div>
