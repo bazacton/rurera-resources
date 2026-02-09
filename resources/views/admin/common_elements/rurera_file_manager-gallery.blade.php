@@ -98,7 +98,7 @@
         <div class="text-muted small">Showing up to <strong>{{isset($MyRecentGalleryImages) ? $MyRecentGalleryImages->count() : 0}}</strong> recent files</div>
     </div>
 </form>
-
+@if($gallery_type == 'question')
 <div class="grid-area">
     <div id="rfpGalleryGrid" class="mt-3 rfp-gallery-grid">
 
@@ -162,6 +162,7 @@
 
     </div>
 </div>
+@endif
 <script>
     $(".ajax-category-courses-filter").change();
 </script>
