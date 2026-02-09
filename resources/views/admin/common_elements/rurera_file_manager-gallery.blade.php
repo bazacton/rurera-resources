@@ -130,34 +130,35 @@
 
         @endif
 
+        <div class="related-images-holder">
+            @if(isset($GalleryImages) && $GalleryImages->count() > 0)
+                <h3>Related Images</h3>
 
-        @if(isset($GalleryImages) && $GalleryImages->count() > 0)
-            <h3>Related Images</h3>
+                @foreach($GalleryImages as $GalleryImageObj)
+                    <script>
+                        GalleryItems.push({
+                            dataUrl: null,
+                            displayTitle: "test111 • 2026-02-03 20:58",
+                            id: "{{$GalleryImageObj->id}}",
+                            kind: "other",
+                            mime: "jpg",
+                            name: "test111",
+                            size: null,
+                            thumbUrl: "{{$GalleryImageObj->image_path}}",
+                            uploadedAt: Date.now(),
+                            url: "{{$GalleryImageObj->image_path}}"
+                        });
+                    </script>
+                    <div class="rfp-tile" data-item-id="{{$GalleryImageObj->id}}">
+                        <img src="{{$GalleryImageObj->image_path}}" width="200">
+                        <div class="rfp-tile-check">✓</div>
+                        <div class="rfp-tile-label" title="{{$GalleryImageObj->title}}">{{$GalleryImageObj->title}}</div>
+                    </div>
+                @endforeach
 
-            @foreach($GalleryImages as $GalleryImageObj)
-                <script>
-                    GalleryItems.push({
-                        dataUrl: null,
-                        displayTitle: "test111 • 2026-02-03 20:58",
-                        id: "{{$GalleryImageObj->id}}",
-                        kind: "other",
-                        mime: "jpg",
-                        name: "test111",
-                        size: null,
-                        thumbUrl: "{{$GalleryImageObj->image_path}}",
-                        uploadedAt: Date.now(),
-                        url: "{{$GalleryImageObj->image_path}}"
-                    });
-                </script>
-                <div class="rfp-tile" data-item-id="{{$GalleryImageObj->id}}">
-                    <img src="{{$GalleryImageObj->image_path}}" width="200">
-                    <div class="rfp-tile-check">✓</div>
-                    <div class="rfp-tile-label" title="{{$GalleryImageObj->title}}">{{$GalleryImageObj->title}}</div>
-                </div>
-            @endforeach
-
-
-        @endif
+            @endif
+        </div>
+        
 
     </div>
 </div>
