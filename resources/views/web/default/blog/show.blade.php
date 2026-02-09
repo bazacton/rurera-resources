@@ -61,8 +61,6 @@
                             </button>
                         </div>
 
-
-                        Posts
                         {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
 
                     </div>
