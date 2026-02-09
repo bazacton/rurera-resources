@@ -896,6 +896,9 @@
         .events-container {
             margin-bottom: 25px;
         }
+        .blog-single-post .events-container .events-list {
+            gap: 0;
+        }
         .events-list li {
             padding: 6px 0;
             flex-wrap: wrap;
