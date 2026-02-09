@@ -168,6 +168,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     transform: translateY(-50%);
     pointer-events: none;
 }
+.glossary_form .rurera-file-manager {
+    height: 35px;
+}
 .form-text {font-size: 12px; line-height: 22px;}
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control-input:checked ~ .custom-control-label::before {background-color: var(--primary) !important;}
