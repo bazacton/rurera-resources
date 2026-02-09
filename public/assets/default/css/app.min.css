@@ -8136,7 +8136,7 @@ body .flipbook-data {
 }
 .lms-faqs .accordion>.card:not(:first-of-type):not(:last-of-type) {
   border-radius: 0;
-  border-bottom: 1px solid #e0dfdf;
+  border-bottom: 2px solid #e0dfdf;
 }
 .lms-faqs .card .card-header {
   background-color: inherit;
