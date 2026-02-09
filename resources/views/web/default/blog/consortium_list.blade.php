@@ -13,7 +13,7 @@
                             {{$consortium_schoolObj->school_name}}
                         </a>
                     </h3>
-                    <div class="address">{{$grammerSchoolObj->complete_address}}</div>
+                    <div class="address">{{$consortium_schoolObj->complete_address}}</div>
                 </header>
             </div>
         </article>
