@@ -561,6 +561,7 @@
         .blog-single-post .rurera-school-content h3 {
             font-weight: 500;
             font-size: inherit;
+            margin-bottom: 5px;
         }
         .blog-single-post .rurera-school-icon {
             width: 20px;
