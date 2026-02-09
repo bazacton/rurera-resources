@@ -493,7 +493,7 @@ nav li {
   list-style: none;
 }
 .top-navbar .navbar-order {
-  margin-left: 10px;
+  margin-left: 0;
 }
 .top-navbar .dropdown-menu.user-profile-dropdown {
   min-width: 250px;
@@ -10382,6 +10382,7 @@ body .flipbook-data {
 }
 .navbar-nav .educator-menu {
   border-right: 1px solid #eaeaea;
+  margin-left: auto;
 }
 .top-navbar .navbar-toggle-content {
   margin-right: 20px !important;
