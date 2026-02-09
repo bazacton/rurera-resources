@@ -26,26 +26,6 @@
                             <form action="/admin/grammer_schools/{{ !empty($grammerSchoolObj) ? $grammerSchoolObj->id.'/store' : 'store' }}"
                                   method="Post" class="glossary_form">
                                 {{ csrf_field() }}
-                                <!-- Blog Stats -->
-                                <h4>Blog Stats</h4>
-                                <div class="form-row">
-                                    <div class="col-md-6 mb-3">
-                                        <div class="form-field">
-                                            <label for="shares">Shares</label>
-                                            <input type="number" name="no_of_shares" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->no_of_shares : ''}}" class="form-control" id="shares" placeholder="Number of Shares" required>
-                                        </div>
-
-                                        <div class="invalid-feedback">Please provide shares count.</div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <div class="form-field">
-                                            <label for="views">Views</label>
-                                            <input type="number" name="views" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->views : ''}}" class="form-control" id="views" placeholder="Number of Views" required>
-                                        </div>
-
-                                        <div class="invalid-feedback">Please provide views count.</div>
-                                    </div>
-                                </div>
 
                                 <!-- At a glance -->
                                 <h4>At a glance</h4>
