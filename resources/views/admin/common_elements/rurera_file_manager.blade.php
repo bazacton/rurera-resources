@@ -129,7 +129,13 @@
         height: 200px;
         position: relative;
     }
-
+    .related-images-holder {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        justify-content: start;
+        gap: 14px;
+    }
     .rurera-filepicker .rfp-tile:hover {
         transform: translateY(-1px);
         box-shadow: 0 6px 18px rgba(0,0,0,.08);
