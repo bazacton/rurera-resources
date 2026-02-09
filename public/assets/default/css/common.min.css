@@ -15504,7 +15504,7 @@ p {
     background-color: inherit;
     justify-content: flex-start;
     padding: 0 30px 0 0;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     height: auto;
     font-size: 1rem;
     font-weight: 700;
@@ -15513,6 +15513,9 @@ p {
 }
 .blog-single-post .card-body {
     padding: 0 0 15px;
+}
+.blog-single-post .accordion .card-body {
+    padding-top: 15px;
 }
 .blog-single-post .card .card-header .btn-link:after {
     position: absolute;
