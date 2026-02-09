@@ -13912,7 +13912,7 @@ span.review-label {
 .try-rurera-btn {
   color: var(--primary);
   font-weight: 600;
-  font-size: 16px;
+  font-size: .875rem;
   border: 1px solid var(--primary);
   padding: 15px 25px;
   border-radius: 8px;
