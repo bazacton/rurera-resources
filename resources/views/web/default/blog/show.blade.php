@@ -111,9 +111,10 @@
                         </div>
                     @endif
                 </div>
+                {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
             </div>
         </section>
-        {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
+
     </article>
 </main>
 
