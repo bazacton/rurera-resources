@@ -1096,6 +1096,7 @@
                                                     <label class="custom-control-label" for="is_grammer_school"></label>
                                                 </div>
                                                 <label for="is_grammer_school" class="mb-0">Grammer School</label>
+                                                <a href="#grammer-school-block">Shortcodes</a>
                                             </div>
                                             <div class="form-group grammer-school-field rurera-hide">
                                                 <label class="input-label">Grammer School</label>
@@ -1256,7 +1257,6 @@
 
 
 
-                                <div class="grammer-school-block rurera-hide"></div>
                                 <div class="form-group mt-15">
                                     <label class="input-label">{{ trans('public.description') }}</label>
                                     <div class="text-muted text-small mb-3">{{ trans('admin/main.create_blog_description_hint') }}</div>
@@ -1281,6 +1281,8 @@
 
                                 <button type="submit" class="btn btn-primary mt-1">{{ trans('admin/main.save_change') }}</button>
                             </form>
+
+                            <div id="grammer-school-block" class="grammer-school-block rurera-hide"></div>
                         </div>
                     </div>
                 </div>
