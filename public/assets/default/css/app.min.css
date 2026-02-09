@@ -2080,6 +2080,7 @@ nav li {
 .blog-newsletter .svg-holder {
   text-align: right;
   margin-top: -14px;
+  margin-bottom: -6px;
 }
 .blog-grid-card.rurera-grid {
   flex-direction: column-reverse;
@@ -2114,6 +2115,7 @@ nav li {
 }
 .lms-newsletter.blog-newsletter {
   background-color: #266df0;
+  overflow: hidden;
 }
 .lms-newsletter strong {
   display: block;
