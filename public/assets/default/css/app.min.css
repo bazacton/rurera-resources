@@ -15041,6 +15041,7 @@ section:has(.trial-steps) .lms-btn-group a small {
     background-color: transparent;
     width: 100%;
     margin-top: 15px;
+    margin-bottom: -15px;
     position: relative;
     overflow: hidden;
     display: none;
