@@ -358,7 +358,7 @@
             margin-top: 0;
         }
         .blog-single-post .accordion {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
         }
         .blog-single-post .accordion .card-body {
             padding-top: 15px;
