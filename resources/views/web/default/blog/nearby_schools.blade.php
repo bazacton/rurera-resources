@@ -20,7 +20,7 @@
                         <h3 class="mt-0">
                             <a href="/blog/{{isset($grammerSchoolObj->schoolBlog->slug)? $grammerSchoolObj->schoolBlog->slug : ''}}" class="rurera-school-name">{{$grammerSchoolObj->school_name}}</a>
                         </h3>
-                        <div class="address">{{$grammerSchoolObj->complete_address}}</div>
+                        <address class="rurera-school-address">{{$grammerSchoolObj->complete_address}}</address>
                     </header>
 
                     <p class="rurera-school-age">
