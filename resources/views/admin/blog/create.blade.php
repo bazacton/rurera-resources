@@ -1022,6 +1022,20 @@
             margin: 0 0 5px;
         }
         /* Ru-Newsletter Style End */
+        .grammer-school-card .short-code-btn {
+            border: 0;
+            height: auto;
+            padding: 0;
+            width: auto;
+            background-color: inherit;
+            color: var(--primary);
+            text-decoration: underline;
+            outline: none;
+            margin-bottom: 15px;
+        }
+        .card.grammer-school-card {
+            display: block;
+        }
     </style>
 @endpush
 
