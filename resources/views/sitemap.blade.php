@@ -9,8 +9,6 @@
 <url>
 	<loc>{{$url}}</loc>
 	<lastmod>{{$params['lastmod']}}</lastmod>
-	<changefreq>{{$params['changefreq']}}</changefreq>
-	<priority>{{$params['priority']}}</priority>
 	@if( isset( $params['images'] ) && !empty( $params['images'] ) )
 		@foreach( $params['images'] as $imageData)
 			@php $imageData = (array) $imageData; @endphp
