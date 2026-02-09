@@ -1283,7 +1283,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card grammer-school-card">
                         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#grammer-school" aria-expanded="false" aria-controls="collapseExample">
                             Grammar School Short code
                         </button>
