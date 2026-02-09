@@ -15040,7 +15040,7 @@ section:has(.trial-steps) .lms-btn-group a small {
 
 /* Progress Bar */
 .progress-bar-container {
-    height: 3px;
+    height: 1px;
     background-color: transparent;
     width: 100%;
     margin-top: 15px;
