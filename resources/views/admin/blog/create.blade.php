@@ -556,7 +556,7 @@
         }
         .blog-single-post .rurera-school-content {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             width: calc(100% - 32px);
         }
         .blog-single-post .rurera-school-content h3 {
@@ -579,9 +579,7 @@
             color: #999;
         }
         .blog-single-post .rurera-school-item p {
-            margin: 0;
-            min-width: 100px;
-            text-align: right;
+            margin: 5px 0 0;
         }
         .blog-single-post .rurera-school-item h3 {
             margin: 0;
