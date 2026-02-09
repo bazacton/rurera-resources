@@ -360,6 +360,10 @@
         .blog-single-post .accordion {
             margin-bottom: 15px;
         }
+        .blog-single-post .accordion .card-body {
+            padding-top: 15px;
+            padding-bottom: 0;
+        }
         .blog-single-post .card .card-header .btn-link {
             background-color: inherit;
             padding: 0 30px 0 0;
