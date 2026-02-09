@@ -362,7 +362,7 @@
                                             <input type="text" name="additional3_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional3_subject_name : ''}}" class="form-control" id="additional3_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
                                             <label for="additional3_subject_details">Subject Details 3</label>
                                             <textarea name="additional3_subject_details" class="form-control summernote-editor-minimal" id="additional3_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional3_subject_details : ''}}</textarea>
@@ -376,7 +376,7 @@
                                             <input type="text" name="additional4_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional4_subject_name : ''}}" class="form-control" id="additional4_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
                                             <label for="additional4_subject_details">Subject Details 4</label>
                                             <textarea name="additional4_subject_details" class="form-control summernote-editor-minimal" id="additional4_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional4_subject_details : ''}}</textarea>
