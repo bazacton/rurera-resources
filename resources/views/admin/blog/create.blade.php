@@ -813,7 +813,8 @@
             border-bottom: none;
             margin-bottom: 20px;
         }
-        .rurera-ofsted-layout strong {
+        .rurera-ofsted-layout strong,
+        .blog-single-post li strong {
             color: #000;
         }
         .blog-single-post .rurera-rating-value {
