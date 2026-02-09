@@ -472,9 +472,9 @@
 }
 .navbar1 .nav-item .nav-link,
 .navbar1 li .nav-link {
-  font-size: 17px;
+  font-size: 1rem;
   text-align: center;
-  color: #343434;
+  color: #000;
   padding: 10px 20px;
   transition: all 0.3s;
 }
