@@ -211,7 +211,7 @@
                                     <div class="col-md-3 mb-3 catchment_area_fields catchment_area_fields_yes">
                                         <div class="form-field">
                                             <label for="localAuthority">List of Catchment area’s</label>
-                                            <input type="number" name="list_of_catchment_areas" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->list_of_catchment_areas : ''}}" class="form-control" id="localAuthority" required>
+                                            <input type="number" name="list_of_catchment_areas" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->list_of_catchment_areas : ''}}" class="form-control" id="localAuthority" >
                                         </div>
 
                                         <div class="invalid-feedback">Local Authority is required.</div>
