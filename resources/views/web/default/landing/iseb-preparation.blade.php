@@ -736,7 +736,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
+    <section class="mt-0 parent-account-section ttt" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7 col-md-7">
