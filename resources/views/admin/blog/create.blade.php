@@ -1090,6 +1090,13 @@
                                                     @enderror
                                                 </div>
                                             </div>
+                                            <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
+                                                <div class="custom-control custom-switch align-items-start">
+                                                    <input type="checkbox" name="is_grammer_school" class="custom-control-input is_grammer_school" id="is_grammer_school" {{ (isset($post) && $post->is_grammer_school) ? 'checked' : '' }}>
+                                                    <label class="custom-control-label" for="is_grammer_school"></label>
+                                                </div>
+                                                <label for="is_grammer_school" class="mb-0">Grammer School</label>
+                                            </div>
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>{{ trans('admin/main.title') }}</label>
@@ -1236,13 +1243,7 @@
                                     <label for="statusSwitch" class="mb-0">{{ trans('admin/main.publish') }}</label>
                                 </div>
 
-                                <div class="form-group mt-15 mb-15 d-flex align-items-center cursor-pointer">
-                                    <div class="custom-control custom-switch align-items-start">
-                                        <input type="checkbox" name="is_grammer_school" class="custom-control-input is_grammer_school" id="is_grammer_school" {{ (isset($post) && $post->is_grammer_school) ? 'checked' : '' }}>
-                                        <label class="custom-control-label" for="is_grammer_school"></label>
-                                    </div>
-                                    <label for="is_grammer_school" class="mb-0">Grammer School</label>
-                                </div>
+
 
                                 <div class="form-group grammer-school-field rurera-hide">
                                     <label class="input-label">Grammer School</label>
