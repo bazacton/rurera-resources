@@ -683,7 +683,7 @@
                         <h2 class="mb-10 mt-0">Frequently asked questions</h2>
                     </div>
                 </div>
-                <div class="col-12 col-lg-12 col-md-12 mx-auto">
+                <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
                         <div class="mt-0 lms-faqs mx-w-100">
                             <div id="faqAccordion" class="accordion">
