@@ -1145,6 +1145,7 @@
                                                             <div class="preview_img-image">
                                                                 @if(isset($post->image) && $post->image != '')
                                                                     <img src="{{$post->image}}" style="width:80px;">
+                                                                    <input type="hidden" name="image" value="{{$post->image}}">
                                                                 @endif
                                                             </div>
                                                         </div>
