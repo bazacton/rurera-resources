@@ -813,6 +813,9 @@
             border-bottom: none;
             margin-bottom: 20px;
         }
+        .rurera-ofsted-layout strong {
+            color: #000;
+        }
         .blog-single-post .rurera-rating-value {
             font-weight: 600;
         }
