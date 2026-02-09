@@ -185,7 +185,7 @@
                             <i class="svg-icon" style="background-color: #5e82d8;"><img alt="Pretest Activities" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Pretest Activities</h3>
+                            <h3 class="mb-15 post-title">Pretest Activities</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Enhance learning with Rurera.</b><br />
                                 Our assessments motivate students to recognize their potential and identify areas for growth. They provide the support needed for continuous improvement, helping students achieve success.
@@ -199,7 +199,7 @@
                             <i class="svg-icon" style="background-color: #46b7e9;"><img alt="100+ ISEB Resources" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">100+ ISEB Resources</h3>
+                            <h3 class="mb-15 post-title">100+ ISEB Resources</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Endless Resources, Endless Improvement</b><br />
                                 Gain access to a wide range of practice resources designed to sharpen your skills. With opportunities to learn and improve, you can build confidence and achieve goals at your own pace.
@@ -213,7 +213,7 @@
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Timed Test Challenges" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Timed Test Challenges</h3>
+                            <h3 class="mb-15 post-title">Timed Test Challenges</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Achieve with Timed Test.</b><br />
                                 Rurera offers custom time limits tailored to the specific requirements of different ISEB exams to sharpen skills under pressure with timed sessions, helping students build confidence for exam day.
@@ -227,7 +227,7 @@
                             <i class="svg-icon" style="background-color: #f87966;"><img alt="Identify and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Identify and Improve</h3>
+                            <h3 class="mb-15 post-title">Identify and Improve</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Conquer Your Weaknesses.</b><br />
                                 Identify your areas for improvement through customized assessments, and targeted practices. Our approach ensures you focus on what matters most, boosting both confidence and performance.
@@ -241,7 +241,7 @@
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Up-to-Date Reports</h3>
+                            <h3 class="mb-15 post-title">Up-to-Date Reports</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Track Progress, Achieve More</b><br />
                                 Keep track of your progress with regular reviews and detailed reports. Our insights help you recognize strengths, pinpoint areas for improvement, and stay on the path to success.
@@ -255,7 +255,7 @@
                             <i class="svg-icon" style="background-color: #46b7e9;"><img alt="Dedicated Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="font-30 mb-15 post-title">Dedicated Support</h3>
+                            <h3 class="mb-15 post-title">Dedicated Support</h3>
                             <p class="font-18 text-dark" itemprop="description">
                                 <b>Dedicated Help, Proven Results</b><br />
                                 Rurera's Professional Support offers expertly designed practice tests and clear guidelines, providing feedback to enhance exam preparation. This ensures students have resources needed to succeed.
