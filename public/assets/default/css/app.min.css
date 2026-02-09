@@ -8147,6 +8147,7 @@ body .flipbook-data {
   text-align: left;
   position: relative;
   transition: none;
+  color: #292a2e;
 }
 .lms-faqs .card .card-header .btn-link h3 {
   font-weight: 400;
