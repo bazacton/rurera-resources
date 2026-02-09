@@ -364,7 +364,8 @@
             padding-top: 15px;
             padding-bottom: 0;
         }
-        .blog-single-post .card .card-header .btn-link {
+        .blog-single-post .card .card-header .btn-link,
+        .grammer-school-card .short-code-btn {
             background-color: inherit;
             padding: 0 30px 0 0;
             margin-bottom: 0;
@@ -379,7 +380,8 @@
         .blog-single-post .card-body {
             padding: 0 0 15px;
         }
-        .blog-single-post .card .card-header .btn-link:after {
+        .blog-single-post .card .card-header .btn-link:after,
+        .grammer-school-card .short-code-btn:after {
             position: absolute;
             top: 50%;
             right: 0;
@@ -392,7 +394,8 @@
             transform: rotate(45deg);
             margin-top: -4px;
         }
-        .blog-single-post .card .card-header .btn-link.collapsed:after {
+        .blog-single-post .card .card-header .btn-link.collapsed:after,
+        .grammer-school-card .short-code-btn.collapsed:after {
             transform: rotate(-135deg);
         }
         /* Single Post Accordions Style End */
@@ -1298,7 +1301,7 @@
                         </div>
                     </div>
                     <div class="card grammer-school-card">
-                        <button class="short-code-btn" type="button" data-toggle="collapse" data-target="#grammer-school" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="short-code-btn collapsed" type="button" data-toggle="collapse" data-target="#grammer-school" aria-expanded="false" aria-controls="collapseExample">
                             Grammar School Short code
                         </button>
                         </p>
