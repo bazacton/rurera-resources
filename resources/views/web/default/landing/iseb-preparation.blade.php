@@ -175,8 +175,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="section-title">
-                        <h2 class="font-40">What Our ISEB Exams Preparation Offers</h2>
-                        <p class="font-16 text-gray">Achieve Success with Our Personalized Prep and Guidance</p>
+                        <h2>What Our ISEB Exams Preparation Offers</h2>
+                        <p class="font-14 text-gray">Achieve Success with Our Personalized Prep and Guidance</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
@@ -271,8 +271,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
-                        <h2 class="mb-10 font-40">Personalized 11 Plus Prep with Rurera</h2>
-                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
+                        <h2 class="mb-10">Personalized 11 Plus Prep with Rurera</h2>
+                        <p class="font-14 text-gray">Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -679,7 +679,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title mb-30 text-center"><h2 class="mb-10 font-40 mt-0">Frequently asked questions</h2></div>
+                    <div class="section-title mb-30 text-center"><h2 class="mb-10 mt-0">Frequently asked questions</h2></div>
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
@@ -883,8 +883,8 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7 col-md-7">
                     <div class="section-title mb-50">
-                        <h2 class="font-40 text-white">Parent account</h2>
-                        <p class="text-white font-16 font-weight-500">We make it easy to be involved in your child’s learning Ability to assign activities</p>
+                        <h2 class="text-white">Parent account</h2>
+                        <p class="text-white font-14 font-weight-500">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
                     <ul>
                         <li><span class="font-18">Real-Time diagnostics</span></li>
@@ -911,8 +911,8 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
-                        <p class="font-19 pt-10">Save more with annual pricing</p>
+                        <h2 class="text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <p class="font-14 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 text-center">
