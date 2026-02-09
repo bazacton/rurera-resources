@@ -24,12 +24,24 @@
                         <div class="sharebar mb-0 mt-15" role="group">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
                                 <div class="stat">
-                                    <div class="stat__value stat__value--blue font-22">1.2k</div>
+                                    @php
+                                    $no_of_shares = $post->no_of_shares;
+                                    $no_of_views = $post->views;
+                                    if ($no_of_shares >= 1000) {
+                                        $no_of_shares = round($no_of_shares / 1000, 1) . 'k';
+                                    }
+
+                                    if ($no_of_views >= 1000) {
+                                        $no_of_views = round($no_of_views / 1000, 1) . 'k';
+                                    }
+
+                                    @endphp
+                                    <div class="stat__value stat__value--blue font-22">{{$no_of_shares}}</div>
                                     <div class="stat__label">SHARES</div>
                                 </div>
 
                                 <div class="stat">
-                                    <div class="stat__value font-22">6.4k</div>
+                                    <div class="stat__value font-22">{{$no_of_views}}</div>
                                     <div class="stat__label">VIEWS</div>
                                 </div>
                             </div>

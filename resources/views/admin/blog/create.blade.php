@@ -1204,6 +1204,24 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-field">
+                                            <label for="shares">Shares</label>
+                                            <input type="number" name="no_of_shares" value="{{isset($post->id)? $post->no_of_shares : 0}}" class="form-control" id="shares" placeholder="Number of Shares" required>
+                                        </div>
+
+                                        <div class="invalid-feedback">Please provide shares count.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-field">
+                                            <label for="views">Views</label>
+                                            <input type="number" name="views" value="{{isset($post->id)? $post->views : 0}}" class="form-control" id="views" placeholder="Number of Views" required>
+                                        </div>
+
+                                        <div class="invalid-feedback">Please provide views count.</div>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <label>SEO Title</label>
                                     <input type="text" name="seo_title"
