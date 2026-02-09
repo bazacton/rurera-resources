@@ -14993,7 +14993,7 @@ section:has(.trial-steps) .lms-btn-group a small {
 /* Feature Items (Left Side) */
 .feature-item {
     padding: 15px 0;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #ddd;
     cursor: pointer;
     position: relative;
     opacity: 0.6;
@@ -15001,7 +15001,6 @@ section:has(.trial-steps) .lms-btn-group a small {
 }
 .feature-item.active {
     opacity: 1;
-    border-bottom: 1px solid #007bff;
 }
 .feature-header {
     display: flex;
