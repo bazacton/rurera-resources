@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
+
             </div>
         </header>
         <section class="mt-15 mb-60 lms-blog blog-single-post mt-lg-80 mt-md-50 mt-30">
@@ -113,6 +113,7 @@
                 </div>
             </div>
         </section>
+        {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
     </article>
 </main>
 
