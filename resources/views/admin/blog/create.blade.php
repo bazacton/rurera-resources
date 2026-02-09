@@ -357,10 +357,8 @@
     .blog-single-post .card .card-header .btn-link {
         background-color: inherit;
         padding: 0 30px 0 0;
-        margin-bottom: 15px;
+        margin-bottom: 0;
         height: auto;
-        font-size: 1rem;
-        font-weight: 700;
         position: relative;
         text-decoration: none;
         color: #343434;
