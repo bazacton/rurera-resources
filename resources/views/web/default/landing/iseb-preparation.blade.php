@@ -675,202 +675,245 @@
         </div>
     </section>
 
-    <section class="py-100" style="background-color: #fff;">
+    <section class="py-100" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title mb-30 text-center"><h2 class="mb-10 mt-0">Frequently asked questions</h2></div>
+                    <div class="section-title mb-30 text-center">
+                        <h2 class="mb-10 mt-0">Frequently asked questions</h2>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div id="accordion">
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingsix">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapsesix" aria-expanded="true" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapsesix" data-toggle="collapse">
-                                                What is the Independent Schools Examination Board (ISEB)?
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapsesix" aria-labelledby="headingsix" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                ISEB provides standardized exams like the Common Entrance and Scholarship Assessments, which are widely used by independent schools in the UK. These exams assess a student's readiness and academic
-                                                abilities for entry into secondary schools at different stages, such as 11+ and 13+.
-                                            </p>
+                        <div class="mt-0 lms-faqs mx-w-100">
+                            <div id="faqAccordion" class="accordion">
+
+                                <!-- FAQ 1 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading1">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse1"
+                                            aria-expanded="false" aria-controls="faqCollapse1">
+                                        <span itemprop="name">What is the Independent Schools Examination Board (ISEB)?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            ISEB provides standardized exams like the Common Entrance and Scholarship Assessments, which are widely used by independent schools in the UK. These exams assess a student's readiness and academic abilities for entry into secondary schools at different stages, such as 11+ and 13+.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingTwo">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapseTwo" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseTwo" data-toggle="collapse">
-                                                What is the difference between ISEB exams and independent school exams?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 2 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading2">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse2"
+                                            aria-expanded="false" aria-controls="faqCollapse2">
+                                        <span itemprop="name">What is the difference between ISEB exams and independent school exams?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        ISEB exams are standardized tests used by many UK independent schools, allowing students to apply to multiple schools with the same results. Independent school exams, however, are unique to each school, with varying content and format, and are specific to that school's admission process.
                                     </div>
-                                    <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                ISEB exams are standardized tests used by many UK independent schools, allowing students to apply to multiple schools with the same results. Independent school exams, however, are unique to each
-                                                school, with varying content and format, and are specific to that school's admission process.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingseven">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapseseven" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseseven" data-toggle="collapse">
-                                                How does Rurera help students prepare for ISEB exams?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 3 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading3">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse3"
+                                            aria-expanded="false" aria-controls="faqCollapse3">
+                                        <span itemprop="name">How does Rurera help students prepare for ISEB exams?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        Rurera offers tailored practice tests, study resources, and expert guidance designed specifically to align with the format and content of ISEB exams. Through structured learning tools and assessments, Rurera helps students strengthen their subject knowledge and exam readiness.
                                     </div>
-                                    <div class="collapse" id="collapseseven" aria-labelledby="headingseven" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Rurera offers tailored practice tests, study resources, and expert guidance designed specifically to align with the format and content of ISEB exams. Through structured learning tools and
-                                                assessments, Rurera helps students strengthen their subject knowledge and exam readiness.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading8">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse8" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse8" data-toggle="collapse">
-                                                What are the Common Entrance exams?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 4 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading4">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse4"
+                                            aria-expanded="false" aria-controls="faqCollapse4">
+                                        <span itemprop="name">What are the Common Entrance exams?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        Common Entrance exams are used by independent schools to evaluate a student's academic abilities before admission. The exams are taken at different age levels, including 11+ and 13+, covering core subjects like English, Maths, and Science. They are a critical part of the admissions process for many schools.
                                     </div>
-                                    <div class="collapse" id="collapse8" aria-labelledby="heading8" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Common Entrance exams are used by independent schools to evaluate a student's academic abilities before admission. The exams are taken at different age levels, including 11+ and 13+, covering core
-                                                subjects like English, Maths, and Science. They are a critical part of the admissions process for many schools.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading9">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse9" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse9" data-toggle="collapse">
-                                                Can Rurera track my progress in ISEB preparation?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 5 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading5">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse5"
+                                            aria-expanded="false" aria-controls="faqCollapse5">
+                                        <span itemprop="name">Can Rurera track my progress in ISEB preparation?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        Rurera includes progress tracking tools that allow students and parents to monitor performance over time. By identifying strengths and weaknesses, students can focus on areas that need improvement, ensuring they are fully prepared for ISEB exams.
                                     </div>
-                                    <div class="collapse" id="collapse9" aria-labelledby="heading9" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Rurera includes progress tracking tools that allow students and parents to monitor performance over time. By identifying strengths and weaknesses, students can focus on areas that need
-                                                improvement, ensuring they are fully prepared for ISEB exams.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading10">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse10" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse10" data-toggle="collapse">
-                                                What subjects are tested in ISEB exams?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 6 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading6">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse6"
+                                            aria-expanded="false" aria-controls="faqCollapse6">
+                                        <span itemprop="name">What subjects are tested in ISEB exams?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        ISEB exams typically cover subjects such as English, Mathematics, Verbal Reasoning, and Non Verbal Reasoning with additional subjects like History, Geography, Religious Studies, and Modern Languages at higher levels.
                                     </div>
-                                    <div class="collapse" id="collapse10" aria-labelledby="heading10" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                ISEB exams typically cover subjects such as English, Mathematics, Verbal Reasoning, and Non Verbal Reasoning with additional subjects like History, Geography, Religious Studies, and Modern
-                                                Languages at higher levels.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading11">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse11" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse11" data-toggle="collapse">When are ISEB exams held?</button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 7 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading7">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse7"
+                                            aria-expanded="false" aria-controls="faqCollapse7">
+                                        <span itemprop="name">When are ISEB exams held?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        ISEB exams are held in the summer and autumn terms, though specific dates may vary by school. Some schools may have multiple exam windows to accommodate their admission schedules. It's important to check with individual schools for exact dates.
                                     </div>
-                                    <div class="collapse" id="collapse11" aria-labelledby="heading11" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                ISEB exams are held in the summer and autumn terms, though specific dates may vary by school. Some schools may have multiple exam windows to accommodate their admission schedules. It's important
-                                                to check with individual schools for exact dates.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading12">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse12" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse12" data-toggle="collapse">
-                                                How do I register my child for the ISEB?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 8 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading8">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse8"
+                                            aria-expanded="false" aria-controls="faqCollapse8">
+                                        <span itemprop="name">How do I register my child for the ISEB?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        After applying to your chosen school(s), they will inform you if your child is required to take the ISEB exam as part of the admissions process. To register your child, you’ll need to do so directly through the ISEB. Registration begins each year in August.
                                     </div>
-                                    <div class="collapse" id="collapse12" aria-labelledby="heading12" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                After applying to your chosen school(s), they will inform you if your child is required to take the ISEB exam as part of the admissions process. To register your child, you’ll need to do so
-                                                directly through the ISEB. Registration begins each year in August.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading13">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse13" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse13" data-toggle="collapse">
-                                                Can I take timed practice tests for ISEB on Rurera?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 9 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading9">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse9"
+                                            aria-expanded="false" aria-controls="faqCollapse9">
+                                        <span itemprop="name">Can I take timed practice tests for ISEB on Rurera?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        Yes, Rurera provides timed practice tests that simulate the real ISEB exam experience. These timed sessions help students develop effective time management skills, crucial for performing well under exam conditions, while building familiarity with the format of the test.
                                     </div>
-                                    <div class="collapse" id="collapse13" aria-labelledby="heading13" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Yes, Rurera provides timed practice tests that simulate the real ISEB exam experience. These timed sessions help students develop effective time management skills, crucial for performing well
-                                                under exam conditions, while building familiarity with the format of the test.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading14">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse14" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse14" data-toggle="collapse">How are ISEB exams graded?</button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 10 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading10">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse10"
+                                            aria-expanded="false" aria-controls="faqCollapse10">
+                                        <span itemprop="name">How are ISEB exams graded?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse10" class="collapse" aria-labelledby="faqHeading10" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        ISEB exams are graded by the independent schools themselves, not centrally by ISEB. Each school sets its own grade requirements for admission, and successful exam results can influence admission decisions and scholarship opportunities.
                                     </div>
-                                    <div class="collapse" id="collapse14" aria-labelledby="heading14" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                ISEB exams are graded by the independent schools themselves, not centrally by ISEB. Each school sets its own grade requirements for admission, and successful exam results can influence admission
-                                                decisions and scholarship opportunities.
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading15">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapse15" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse15" data-toggle="collapse">
-                                                How long does an ISEB (common pre-test)exam take?
-                                            </button>
-                                        </h3>
+                                </div>
+
+                                <!-- FAQ 11 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading11">
+                                    <h3 class="mb-0">
+                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse11"
+                                            aria-expanded="false" aria-controls="faqCollapse11">
+                                        <span itemprop="name">How long does an ISEB (common pre-test) exam take?</span>
+                                    </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse11" class="collapse" aria-labelledby="faqHeading11" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                    <div itemprop="text">
+                                        The length of each ISEB exam varies depending on the subject.
+                                        <ul class="mb-10 mt-20">
+                                        <li class="mb-10"><strong>Math:</strong> 40 minutes.</li>
+                                        <li class="mb-10"><strong>English</strong> (reading and SPaG): 40 minutes.</li>
+                                        <li class="mb-10"><strong>Non-verbal reasoning:</strong> 30 minutes.</li>
+                                        <li><strong>Verbal reasoning:</strong> 25 minutes.</li>
+                                        </ul>
                                     </div>
-                                    <div class="collapse" id="collapse15" aria-labelledby="heading15" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>The length of each ISEB exam varies depending on the subject.</p>
-                                            <ul class="mb-10 mt-20">
-                                                <li class="mb-10"><strong>Math: 40</strong> minutes.</li>
-                                                <li class="mb-10"><strong>English</strong> (reading and SPaG): <strong>40</strong> minutes.</li>
-                                                <li class="mb-10"><strong>Non-verbal reasoning: 30</strong> minutes.</li>
-                                                <li><strong>Verbal reasoning: 25</strong> minutes.</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
