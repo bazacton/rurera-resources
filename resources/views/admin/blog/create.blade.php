@@ -7,31 +7,15 @@
     /* Blog Single Post Style Start */
     .sharebar,
     .single-post-block,
-    .blog-single-post p,
+    .blog-single-post > p,
     .blog-single-post ul,
     .lms-blog table {
         margin-bottom: 30px;
     }
     .blog-single-post h2,
-    .blog-single-post h3{
-        margin-bottom: 20px;
-    }
-    .blog-single-post h3 {
-        margin-top: 10px;
-    }
-    .blog-single-post h4,
-    .blog-single-post h5,
-    .blog-single-post h6 {
-        margin-bottom: 10px;
-    }
-    .blog-single-post h1,
-    .single-post-subheader h1,
-    .blog-single-post h2,
     .blog-single-post h3,
-    .blog-single-post h4,
-    .blog-single-post h5,
-    .blog-single-post h6 {
-        color: #000;
+    .blog-single-post h4 {
+        margin-bottom: 10px;
     }
     .blog-single-post > div {
         line-height: 26px;
@@ -69,9 +53,6 @@
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
         background-color: #ccc;
     }
-    .blog-single-post .single-post-nav ul {
-        margin-bottom: 0;
-    }
     .blog-single-post .single-post-nav li {
         list-style: none;
     }
@@ -79,7 +60,7 @@
         display: block;
         background-color: #fff;
         color: var(--primary);
-        font-size: .875rem;
+        font-size: 14px;
         font-weight: 500;
         position: relative;
         padding: 10px 10px;
@@ -104,11 +85,14 @@
         opacity: 1;
         visibility: visible;
     }
+    .blog-single-post .entry-content > br:first-child {
+        display: none;
+    }
     .blog-single-post .wp-block-list li a {
         color: var(--primary);
     }
     .single-post-block {
-        background-color: #f8f8f8;
+        background-color: #dce2f8;
         padding: 25px;
         border-radius: 5px;
         border: 1px solid #d0d2dd;
@@ -130,11 +114,12 @@
         counter-increment: section;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 50%;
         height: 25px;
         width: 25px;
-        background-color: #fff;
+        background-color: #f8f8fb;
         color: #797770;
+        margin-top: -12px;
         border-radius: 100%;
         content: counter(section);
         text-align: center;
@@ -143,6 +128,12 @@
     .blog-single-post .post-back-btn {
         display: inline-block;
         position: relative;
+        color: var(--primary);
+    }
+    .blog-single-post .post-back-btn:before {
+        content: "\2190";
+        margin-right: 5px;
+        display: inline-block;
         color: var(--primary);
     }
     .blog-single-post h3 {
@@ -176,38 +167,22 @@
     .blog-single-post a {
         color: #007bff;
     }
-    .blog-single-post .blog-detail-btn {
-        background-color: #007bff;
-        color: #fff;
-        border: 0;
-        padding: 8px 15px;
-        line-height: normal;
-        border-radius: 3px;
-    }
-    .has-bg-element {
-        background-color: #f8f8f8;
-        border-radius: 5px;
-        padding: 20px;
-        margin: 0 0 30px;
-    }
-    .single-post-block .btn.btn-primary {
-        color: #fff;
-    }
+
     /* Social Bar Style Start */
     .sharebar{
         display:flex;
         align-items:stretch;
-        flex-wrap: wrap;
         gap: 10px;
         width:fit-content;
         border-radius:4px;
         overflow:hidden;
+        background:#fff;
     }
     .sharebar__stats{
-        display: flex;
-        align-items: center;
-        padding: 0 10px 0 0;
-        gap: 12px;
+        display:flex;
+        align-items:center;
+        padding: 0 15px 0 0;
+        gap:18px;
     }
     .stat{
         display:flex;
@@ -218,7 +193,7 @@
         color:#4b4b4b;
     }
     .stat__value--blue{
-        color: #007bff;
+        color:#2a8bdc;
     }
     .stat__label{
         margin-top:4px;
@@ -237,7 +212,7 @@
         justify-content: center;
         gap: 5px;
         padding: 0 10px;
-        min-width: 170px;
+        min-width: 180px;
         height: 38px;
         border: 0;
         color: #fff;
@@ -252,7 +227,7 @@
     .btn--fb{ background:#3f5e9a; }
     .btn--x { background:#3a3a3a; }
     .sharebar .btn--share{
-        min-width: 40px;
+        min-width: 50px;
         padding: 0;
         background: #dcdcdc;
     }
@@ -284,21 +259,20 @@
     }
     .active .share-secondary {
         display: inline-flex;
-        gap: 8px;
+        gap: 10px;
     }
     .share-secondary img {
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
         filter: invert(100%) sepia(0%) saturate(886%) hue-rotate(83deg) brightness(120%) contrast(100%);
     }
-    .share-secondary button {
+    .share-secondary a {
         height: 38px;
-        width: 35px;
+        width: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 3px;
-        border: 0;
     }
     .btn-pinterest {
         background-color: #cf2830;
@@ -324,10 +298,13 @@
         max-width: 862px;
         margin: 0 auto;
     }
+    .blog-single-post .faq-edit-bar {
+        display: none;
+    }
     .blog-single-post .accordion .card {
-        background-color: inherit;
+        background-color: #f7f7f7;
         box-shadow: none;
-        margin: 0 0 15px;
+        margin: 0 0 5px;
         border: 0;
         text-align: left;
         padding: 0;
@@ -344,35 +321,31 @@
         border: 0;
         line-height: normal;
         min-height: auto;
-    }
-    .blog-single-post .card .note-editor .note-toolbar {
-        background-color: #fff;
         position: sticky !important;
         top: 0;
-        z-index: 2;
+        z-index: 1;
     }
     .blog-single-post .card .card-header h5 {
         width: 100%;
     }
     .blog-single-post .card .card-header .btn-link {
         background-color: inherit;
-        padding: 0 30px 0 0;
-        margin-bottom: 15px;
+        padding: 15px;
         height: auto;
-        font-size: 1rem;
         font-weight: 700;
         position: relative;
         text-decoration: none;
         color: #343434;
+        font-size: .875rem;
         border: 0;
     }
     .blog-single-post .card-body {
-        padding: 0 0 15px;
+        padding: 0 15px 15px;
     }
     .blog-single-post .card .card-header .btn-link:after {
         position: absolute;
-        top: 50%;
-        right: 0;
+        top: 21px;
+        right: 15px;
         height: 8px;
         width: 8px;
         border: 2px solid;
@@ -380,7 +353,6 @@
         border-bottom: 0;
         border-right: 0;
         transform: rotate(45deg);
-        margin-top: -4px;
     }
     .blog-single-post .card .card-header .btn-link.collapsed:after {
         transform: rotate(-135deg);
@@ -415,6 +387,25 @@
     }
     /* Table Default Style End */
 
+    /* Blog Single Post Alert Style Start */
+    .blog-single-post .alert {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: #fefaf1;
+        border-color: #ffebc4;
+        border-radius: 5px;
+        padding: 25px;
+    }
+    .blog-single-post .alert .info-icon {
+        margin-right: 10px;
+        font-size: 1.5rem;
+        margin-top: 2px;
+    }
+    .blog-single-post .alert .text-box {
+        width: calc(100% - 50px);
+    }
+    /* Blog Single Post Alert Style End */
     .blog-edit-sidebar .form-field {
         display: flex;
         align-items: center;
@@ -441,7 +432,7 @@
     .blog-edit-sidebar .form-field .datepicker-field input {
         max-width: 100%;
     }
-    .blog-single-post .datepicker-field i {
+    .datepicker-field i {
         position: absolute;
         right: 10px;
         top: 50%;
@@ -449,82 +440,96 @@
         pointer-events: none;
         color: #999;
     }
-    .blog-single-post .card-body .select-holder:after {
+    .card-body .select-holder:after {
         border-bottom: 2px solid #999;
         border-left: 2px solid #999;
     }
     /* Location Style Start */
-    .blog-single-post .rurera-location-section {
-        border: 0;
+    .rurera-location-section {
+        border: 1px solid #ddd;
+        margin: 0 0 30px;
         border-radius: 5px;
-        padding: 0;
-        flex-direction: row-reverse;
+        padding: 15px 0;
     }
-    .blog-single-post .rurera-location-section.row {
-        margin-bottom: 30px;
+    .rurera-badge-pill {
+        background-color: #eef6ff;
+        font-size: .875rem;
+        padding: 8px 15px;
+        border-radius: 25px;
+        display: inline-block;
+        line-height: normal;
+        margin: 0 0 15px;
+        color: #007bff;
+        font-weight: 500;
     }
-    .blog-single-post .rurera-badge-pill {
-        display: none;
+    .rurera-map-wrapper {
+        height: 100%;
     }
-    .blog-single-post .rurera-map-iframe {
+    .rurera-map-iframe {
         width: 100%;
         border: 0;
         border-radius: 5px;
-        height: 230px;
+        height: 100%;
     }
-    .blog-single-post .rurera-address-box {
+    .rurera-address-box {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
+        gap: 15px;
     }
-    .blog-single-post .rurera-address-details {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .blog-single-post .rurera-location-section h3 {
+        margin: 0 0 25px;
     }
-    .blog-single-post .rurera-address-details p {
+    .rurera-address-icon-box {
+        height: 40px;
+        width: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+        margin-top: -8px;
+    }
+    .rurera-address-icon-box img {
+        height: 22px;
+        width: 22px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(107%) contrast(102%);
+    }
+    .rurera-address-details {
+        flex: 0 0 84%;
+        max-width: 84%;
+    }
+    .rurera-address-details p {
         margin: 0;
+        color: #818894;
     }
-    .blog-single-post .rurera-description-text {
+    .rurera-description-text {
         margin-bottom: 1.5rem;
     }
-    .blog-single-post .rurera-address-details h5 {
+    .rurera-address-details h5 {
         font-weight: bold;
     }
-    .blog-single-post .rurera-address-details ul {
-        margin: 0;
+    .rurera-address-details ul,
+    .blog-single-post .post-show .rurera-address-details ul{
+        margin: 15px 0 0;
         padding: 0;
-        font-size: .875rem;
-        font-weight: 500;
     }
-    .blog-single-post .rurera-address-box .list-unstyled li,
-    .blog-single-post .post-show .list-unstyled li {
+    .rurera-address-details ul li,
+    .blog-single-post .post-show .rurera-address-details ul li{
         list-style: none;
         line-height: normal;
         color: #6c757d;
     }
-    .blog-single-post .rurera-address-box .list-unstyled {
-        padding: 0;
-        margin-top: 5px;
-        width: 100%;
-    }
-    .rurera-address-icon-box {
-        line-height: normal;
-    }
-    .blog-single-post .rurera-address-box .list-unstyled li img {
-        height: 18px;
-        width: 18px;
-        margin-right: 8px;
-        filter: invert(38%) sepia(55%) saturate(5873%) hue-rotate(201deg) brightness(103%) contrast(111%);
-    }
-    .blog-single-post .rurera-schools-grid {
+    .rurera-schools-grid {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -15px 30px;
-        border: 0;
+        margin: 0 0 15px;
+        border: 1px solid #ddd;
         border-radius: 5px;
-        padding: 0;
+        padding: 20px 5px;
     }
-    .blog-single-post .rurera-school-col {
+    .rurera-school-col {
         flex: 0 0 50%;
         max-width: 50%;
         padding: 0 15px;
@@ -533,57 +538,37 @@
         gap: 15px 0;
         border-right: 1px solid #ddd;
     }
-    .blog-single-post .rurera-school-item {
-        display: inline-flex;
+    .rurera-school-item {
+        display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 10px;
         font-size: .875rem;
         color: #352c3e;
-        margin: 0 0 30px;
-        width: 50%;
-        border-right: 1px solid #ddd;
-        padding-right: 15px;
-        box-sizing: border-box;
-        margin-right: -4px;
     }
-    .blog-single-post .rurera-school-content {
+    .rurera-school-content {
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
         width: calc(100% - 32px);
     }
-    .blog-single-post .rurera-school-icon {
+    .rurera-school-icon {
         width: 20px;
         height: 20px;
     }
-    .blog-single-post .rurera-school-icon img {
+    .rurera-school-icon img {
         max-width: 100%;
         max-height: 100%;
     }
-    .blog-single-post .rurera-school-col:last-child {
+    .rurera-school-header {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .rurera-school-col:last-child {
         border-right: 0;
     }
-    .blog-single-post .rurera-school-age {
+    .rurera-school-age {
         color: #999;
-    }
-    .blog-single-post .rurera-school-item p {
-        margin: 0;
-    }
-    .blog-single-post .rurera-school-item h3 {
-        margin: 0;
-        font-weight: 500;
-        font-size: inherit;
-    }
-    article.rurera-school-item:nth-of-type(2n) {
-        border-right: 0;
-        padding-left: 15px;
-        padding-right: 0;
-    }
-    .blog-single-post .rurera-school-item:last-of-type {
-        border-right: 0;
-    }
-    .rurera-location-section .gs-map {
-        max-height: 300px;
     }
     /* Location Style End */
     /* Blog Newsletter Style Start */
@@ -640,52 +625,49 @@
     }
     /* Blog Newsletter Style End */
 
-    /* Blog School Facts Style Start */
-    .blog-single-post .facts-grid {
+    /* Blog Stats Style Start */
+    .blog-single-post .stats-grid {
+        border: 1px solid #ddd;
         border-radius: 5px;
-        padding: 0;
+        padding: 25px;
         margin: 0 0 30px;
     }
-    .blog-single-post .facts-row {
+    .blog-single-post .stats-row {
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 25px;
         padding-top: 25px;
         border-top: 1px solid #ddd;
     }
-    .blog-single-post .fact {
+    .blog-single-post .stat-item {
         flex: 0 0 33%;
         max-width: 33%;
         text-align: center;
         border-right: 1px solid #ddd;
         padding: 25px;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 5px;
     }
-    .blog-single-post .fact:nth-child(3n) {
+    .blog-single-post .stat-item:nth-child(3n) {
         border-right: 0;
     }
-    .blog-single-post .facts-row:first-child .fact {
+    .stats-row:first-child .stat-item {
         border-top: 0;
     }
-    .blog-single-post .facts-row:first-child {
+    .blog-single-post .stats-row:first-child {
         border-top: 0;
         padding: 0;
         margin: 0 0 25px;
     }
-    .blog-single-post dd {
-        color: #007bff;
-        font-weight: 500;
+    .blog-single-post .stat-value {
+        color: var(--primary);
+        font-weight: bold;
     }
-    .blog-single-post dt {
+    .blog-single-post .stat-label {
         color: #666;
-        font-weight: 400;
     }
-    .blog-single-post .facts-row:last-child {
+    .blog-single-post .stats-row:last-child {
         margin-bottom: 0;
     }
-    /* Blog School Facts Style End */
+    /* Blog Stats Style End */
     /* Blog Timeline Style Start */
     .blog-single-post .main-heading {
         color: #2c3e50;
@@ -706,20 +688,38 @@
     /* Timeline Structure */
     .blog-single-post .timeline {
         position: relative;
-        padding-left: 0;
+        padding-left: 50px;
+    }
+    .blog-single-post .timeline::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: #e9ecef;
     }
     .blog-single-post .timeline-item {
         position: relative;
-        margin-bottom: 25px;
-    }
-    .blog-single-post .timeline-item:last-child {
-        margin-bottom: 15px;
-        padding: 0;
-        border-bottom: 0;
+        margin-bottom: 45px;
     }
     /* Timeline Dot */
     .blog-single-post .timeline-marker {
-        display: none;
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 44px;
+        height: 44px;
+        background: #fff;
+        border: 3px solid #3498db;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        color: #3498db;
+        z-index: 1;
+        box-shadow: 0 0 0 5px #f8f9fa; /* Mask line behind dot */
+        transition: all 0.3s ease;
     }
     .blog-single-post .timeline-item:hover .timeline-marker {
         background: #3498db;
@@ -729,14 +729,21 @@
     /* Content Card */
     .blog-single-post .timeline-content {
         background: #fff;
+        padding: 25px;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        border-left: 4px solid transparent;
         transition: all 0.3s ease;
     }
-    .blog-single-post .timeline-content p {
-        margin-bottom: 15px;
-        display: inline;
-        vertical-align: middle;
+    .blog-single-post .timeline-item:hover .timeline-content {
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        border-left-color: #3498db;
+        transform: translateX(5px);
     }
-    .blog-single-post .timeline-item .step-title {
+    .blog-single-post .step-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #2c3e50;
         margin-bottom: 10px;
     }
     .blog-single-post .step-description {
@@ -746,19 +753,18 @@
         margin-bottom: 15px;
     }
     .blog-single-post .btn-outline-custom {
-        padding: 0;
-        line-height: normal;
-        height: auto;
-        margin-left: 5px;
-        position: relative;
+        color: #3498db;
+        border: 2px solid #3498db;
+        font-weight: 600;
+        padding: 6px 18px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        transition: all 0.3s;
     }
-    .blog-single-post .btn-outline-custom:after {
-        content: "\2192";
-        display: inline-block;
-        position: relative;
-        vertical-align: middle;
-        margin: 0 0 0 5px;
-        font-size: 1.1rem;
+    .blog-single-post .btn-outline-custom:hover {
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
     }
     /* Blog Timeline Style End */
     /* Ofsted Report Styling */
@@ -776,6 +782,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
+        margin-bottom: 50px;
     }
     .blog-single-post .rurera-ofsted-left {
         flex: 3;
@@ -792,9 +799,11 @@
     }
     .blog-single-post .rurera-rating-row {
         display: flex;
-        gap: 15px;
+        justify-content: space-between;
         align-items: center;
-        margin: 0 0 15px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f5f9;
+        color: #475569;
     }
     .blog-single-post .rurera-rating-row:last-of-type {
         border-bottom: none;
@@ -802,6 +811,16 @@
     }
     .blog-single-post .rurera-rating-value {
         font-weight: 600;
+        color: #1e293b;
+    }
+    .blog-single-post .rurera-rating-good {
+        color: #1e293b;
+    }
+    .blog-single-post .rurera-rating-outstanding {
+        color: #1e293b;
+    }
+    .blog-single-post .rurera-rating-requires {
+        color: #1e293b;
     }
     .blog-single-post .rurera-view-report-btn {
         background-color: var(--primary);
@@ -823,12 +842,18 @@
     .blog-single-post .rurera-big-badge {
         background-color: #22c55e;
         color: #ffffff;
-        padding: 8px 30px;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 12px 40px;
         border-radius: 50px;
-        margin-bottom: 15px;
+        margin-bottom: 24px;
         display: inline-block;
     }
+    .blog-single-post .rurera-inspection-date {
+        color: #64748b;
+    }
     .blog-single-post .rurera-inspection-date strong {
+        color: #1e293b;
         display: block;
         margin-top: 4px;
     }
@@ -842,6 +867,7 @@
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 24px;
+        color: #1e293b;
     }
     .blog-single-post .rurera-summary-item {
         display: flex;
@@ -861,6 +887,7 @@
     }
     .blog-single-post .rurera-summary-text h5 {
         margin-bottom: 4px;
+        color: #1e293b;
     }
     .blog-single-post .rurera-summary-text p {
         color: #64748b;
@@ -880,122 +907,7 @@
         }
     }
     /* Ofsted Report Styling End */
-    /* Key Events Style Start */
-    .event-title {
-        margin-bottom: 10px;
-    }
-    .event-description {
-        margin-bottom: 30px;
-    }
-    .events-container {
-        margin-bottom: 25px;
-    }
-    .events-list li {
-        padding: 6px 0;
-        flex-wrap: wrap;
-        gap: 15px 30px;
-    }
-    .events-list li:last-child {
-        border-bottom: none;
-    }
-    .events-list time {
-        color: #495057;
-        display: block;
-    }
-    .status-badge {
-        text-align: center;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        padding: 5px 10px 7px;
-        line-height: normal;
-        margin-top: 5px;
-        display: none;
-    }
-    .status-badge img {
-        height: 18px;
-        width: 18px;
-        margin: 0 0 0 5px;
-        display: none;
-        filter: invert(100%) sepia(15%) saturate(7459%) hue-rotate(292deg) brightness(126%) contrast(108%);
-    }
-    .status-passed {
-        background-color: #8da2b5;
-    }
-    .status-upcoming {
-        color: var(--primary);
-    }
-    /* Key Events Style End */
-    .shortcode-chip {
-        display: inline-block;
-        padding: .1rem .45rem;
-        border-radius: 999px;
-        border: 1px solid rgba(0, 0, 0, .15);
-        background: #fff;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        font-size: .95em;
-        line-height: 1.4;
-        white-space: nowrap;
-        user-select: none;
-        -webkit-user-select: none;
-    }
     /* Blog Single Post Style End */
-    /* Mockup Style Start */
-    .mockup-container {
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        position: relative;
-        border-radius: 5px;
-        padding: 15px;
-        margin-bottom: 50px;
-    }
-    .mockup-container .mockup-floating {
-        max-width: 40%;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        border-radius: 5px;
-        padding: 15px;
-        position: absolute;
-        left: -80px;
-        bottom: -10px;
-        background-color: #FFF;
-        transform: rotate(-5deg);
-    }
-    /* Mockup Style End */
-    /* Ru-Newsletter Style Start */
-    .ru-newsletter {
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        margin: 0 0 30px;
-    }
-    .ru-newsletter input[type="email"] {
-        width: 100%;
-        display: inline-block;
-        height: 36px;
-        border-radius: 3px;
-        padding: 0 15px;
-        font-size: .875rem;
-        border: 1px solid #ddd;
-    }
-    .ru-newsletter span {
-        display: block;
-    }
-    .ru-newsletter .input-holder {
-        position: relative;
-        max-width: 500px;
-        margin: 20px auto 10px;
-    }
-    .ru-newsletter .input-holder button {
-        position: absolute;
-        right: 3px;
-        height: 30px;
-        padding: 5px 15px;
-        top: 3px;
-    }
-    .ru-newsletter .newsletter-lable {
-        text-transform: uppercase;
-        display: block;
-        line-height: normal;
-        margin: 0 0 5px;
-    }
-    /* Ru-Newsletter Style End */
 </style>
 @endpush
 
@@ -1118,11 +1030,34 @@
                                                     <label class="input-label">{{ trans('public.cover_image') }}</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
-                                                            <button type="button" class="input-group-text admin-file-manager" data-input="image" data-preview="holder">
-                                                                <i class="fa fa-chevron-up"></i>
+
+
+
+                                                            <button
+                                                                type="button"
+                                                                class="input-group-text rurera-file-manager"
+                                                                data-input="image"
+                                                                data-preview="preview_img-image"
+                                                                data-image_attr='{
+                                                                    "upload_type":"gallery",
+                                                                    "upload_dir":"public",
+                                                                    "upload_path":"/admin_images",
+                                                                    "is_multiple":false,
+                                                                    "preview_div":"preview_img-image",
+                                                                    "hidden_field":"<input name=\"image\" type=\"hidden\" id=\"image\" placeholder=\"Upload Image\">",
+                                                                    "field_name":"ofsted_report_file"
+                                                                }'
+                                                                data-gallery_fields='{"gallery_type":"gallery","folder_name":"admin_images"}'
+                                                            >
+                                                                <i class="fa fa-upload"></i>
                                                             </button>
+                                                            <div class="preview_img-image">
+                                                                @if(isset($post->image) && $post->image != '')
+                                                                    <img src="{{$post->image}}" style="width:80px;">
+                                                                @endif
+                                                            </div>
+
                                                         </div>
-                                                        <input type="text" name="image" id="image" value="{{ (!empty($post)) ? $post->image : old('image') }}" class="form-control @error('image') is-invalid @enderror" placeholder="{{ trans('update.blog_cover_image_placeholder') }}"/>
                                                         @error('image')
                                                         <div class="invalid-feedback">
                                                             {{ $message }}
@@ -1372,6 +1307,8 @@
         $(".sidebar-mini").addClass('sidebar-mini');
         var templates_items = {};
 
+
+
         @if($cannedTemplates->count() > 0)
             @foreach($cannedTemplates as $cannedTemplateObj)
             templates_items[{{ $cannedTemplateObj->id }}] = {
@@ -1393,7 +1330,7 @@
         $(document).on('change', '.grammer_school_id', function (e) {
             var loadDiv = $('.grammer-school-block');
             var school_id = $(this).val();
-            if(school_id > 0){
+            if(school_id > 0) {
                 rurera_loader(loadDiv, 'div');
                 jQuery.ajax({
                     type: "GET",
