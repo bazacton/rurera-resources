@@ -8140,6 +8140,8 @@ body .flipbook-data {
   border: 0;
 }
 .lms-faqs .card .card-header .btn-link {
+  background-color: inherit;
+  border: 0;
   height: auto;
   padding: 0 35px 0 0;
   display: block;
