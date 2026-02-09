@@ -15497,6 +15497,9 @@ p {
 .blog-single-post .accordion h3 {
     margin-top: 0;
 }
+.blog-single-post .accordion {
+    margin-bottom: 15px;
+}
 .blog-single-post .card .card-header .btn-link {
     background-color: inherit;
     justify-content: flex-start;
