@@ -1285,7 +1285,7 @@
                     </div>
                     <div class="card">
                         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#grammer-school" aria-expanded="false" aria-controls="collapseExample">
-                            Button with data-target
+                            Grammar School Short code
                         </button>
                         </p>
                         <div class="collapse" id="grammer-school">
