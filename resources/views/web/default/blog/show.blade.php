@@ -62,7 +62,7 @@
                         </div>
 
 
-                        {{$thisController->render_shortcode('[GS related_posts]')}}
+                        {{$thisController->render_shortcode($post,'[GS related_posts]')}}
                     </div>
                     <div class="col-12 col-lg-5 col-md-5 ml-auto">
                         <div class="img-box">
