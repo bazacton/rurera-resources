@@ -512,6 +512,7 @@
             padding: 0;
             margin-top: 5px;
             width: 100%;
+            gap: 0;
         }
         .rurera-address-icon-box {
             line-height: normal;
