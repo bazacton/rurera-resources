@@ -523,6 +523,9 @@ article.rurera-school-item:nth-of-type(2n) {
 .events-container {
     margin-bottom: 25px;
 }
+.blog-single-post .events-container .events-list {
+    gap: 0;
+}
 .events-list li {
     padding: 6px 0;
     flex-wrap: wrap;
