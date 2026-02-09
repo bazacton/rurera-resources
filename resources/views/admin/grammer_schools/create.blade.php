@@ -616,7 +616,7 @@
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
-                                            <label for="resultDate">Results date</label>
+                                            <label for="resultDate">Kent Test (Out-of-County Schools)</label>
                                             <div class="datepicker-field">
                                                 <i class="fa fa-calendar-week"></i>
                                                 <input type="text" name="results_date" value="{{isset($grammerSchoolObj->id)? dateTimeFormat($grammerSchoolObj->results_date, 'Y-m-d') : ''}}" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
