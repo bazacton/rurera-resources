@@ -8121,7 +8121,8 @@ body .flipbook-data {
   margin: 0 1px;
   flex: 1 1;
 }
-.lms-faqs .card {
+.lms-faqs .card,
+.lms-faqs .accordion>.card {
   background-color: inherit;
   border: 0;
   border-radius: 0;
