@@ -1281,10 +1281,20 @@
 
                                 <button type="submit" class="btn btn-primary mt-1">{{ trans('admin/main.save_change') }}</button>
                             </form>
-
-                            <div id="grammer-school-block" class="grammer-school-block rurera-hide"></div>
                         </div>
                     </div>
+                    <div class="card">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#grammer-school" aria-expanded="false" aria-controls="collapseExample">
+                            Button with data-target
+                        </button>
+                        </p>
+                        <div class="collapse" id="grammer-school">
+                            <div class="card card-body">
+                                <div id="grammer-school-block" class="grammer-school-block rurera-hide"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
