@@ -8183,7 +8183,7 @@ body .flipbook-data {
   color: inherit;
   font-size: inherit;
 }
-.lms-faqs .card .card-header .btn-link:before,
+/* .lms-faqs .card .card-header .btn-link:before,
 .lms-faqs .card .card-header .btn-link:after {
   background-color: var(--primary);
   content: " ";
@@ -8205,7 +8205,7 @@ body .flipbook-data {
 }
 .lms-faqs .card .card-header.active .btn-link:before {
   display: none;
-}
+} */
 .accordion__icon--is-open:before {
   transform: translateY(-50%) rotate(180deg);
 }
