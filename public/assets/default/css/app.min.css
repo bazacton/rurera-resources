@@ -8152,6 +8152,32 @@ body .flipbook-data {
 .lms-faqs .card .card-header .btn-link:hover {
   color: #1558bc;
 }
+.btn-link .icon-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #1558bc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.btn-link .icon-box img {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(310deg) brightness(104%) contrast(101%);
+}
+.btn-link .icon-box .plus-img {
+    opacity: 0;
+    visibility: hidden;
+}
+.btn-link.collapsed .icon-box .plus-img {
+    opacity: 1;
+    visibility: visible;
+}
 .lms-faqs .card .card-header .btn-link h3 {
   font-weight: 400;
   color: inherit;
