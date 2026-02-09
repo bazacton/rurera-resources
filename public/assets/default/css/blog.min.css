@@ -146,6 +146,12 @@
     box-shadow: none;
     border: 1px solid #ddd;
 }
+.blog-single-post [class*="col-"]:has(.blog-sidebar) {
+    order: 1;
+}
+.blog-single-post .col-lg-9 {
+    order: 2;
+}
 /* Location Style Start */
 .blog-single-post .rurera-location-section {
     border: 0;
