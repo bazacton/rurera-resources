@@ -250,7 +250,7 @@
 
                                     </div>
 
-                                    <div class="col-md-3 mb-3 english_criteria_fields english_details">
+                                    <div class="col-md-4 mb-3 english_criteria_fields english_details">
                                         <div class="form-field">
                                             <label for="criteria_english_details">Subject Details</label>
                                             <textarea name="criteria_english_details" class="form-control summernote-editor-minimal" id="criteria_english_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_english_details : ''}}</textarea>
@@ -269,7 +269,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 math_criteria_fields maths_details">
+                                    <div class="col-md-4 mb-3 math_criteria_fields maths_details">
                                         <div class="form-field">
                                             <label for="criteria_maths_details">Subject Details</label>
                                             <textarea name="criteria_maths_details" class="form-control summernote-editor-minimal" id="criteria_maths_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_maths_details : ''}}</textarea>
@@ -289,7 +289,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-md-3 mb-3 vr_criteria_fields vr_details">
+                                    <div class="col-md-4 mb-3 vr_criteria_fields vr_details">
                                         <div class="form-field">
                                             <label for="criteria_verbal_reasoning_details">Subject Details</label>
                                             <textarea name="criteria_verbal_reasoning_details" class="form-control summernote-editor-minimal" id="criteria_verbal_reasoning_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->criteria_verbal_reasoning_details : ''}}</textarea>
@@ -334,7 +334,7 @@
                                             <input type="text" name="additional_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional_subject_name : ''}}" class="form-control" id="additional_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
                                             <label for="additional_subject_details">Subject Details</label>
                                             <textarea name="additional_subject_details" class="form-control summernote-editor-minimal" id="additional_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional_subject_details : ''}}</textarea>
@@ -348,7 +348,7 @@
                                             <input type="text" name="additional2_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional2_subject_name : ''}}" class="form-control" id="additional2_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
                                             <label for="additional2_subject_details">Subject Details 2</label>
                                             <textarea name="additional2_subject_details" class="form-control summernote-editor-minimal" id="additional2_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional2_subject_details : ''}}</textarea>
