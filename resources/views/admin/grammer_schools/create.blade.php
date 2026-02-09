@@ -564,7 +564,8 @@
                                             <div class="preview_img-report_file">
                                                 @if(isset($grammerSchoolObj->ofsted_report_file) && $grammerSchoolObj->ofsted_report_file != '')
                                                     @php
-                                                        $extension = strtolower(pathinfo($grammerSchoolObj->ofsted_report_file, PATHINFO_EXTENSION));
+                                                      $report_file = $grammerSchoolObj->ofsted_report_file;
+                                                        $extension = strtolower(pathinfo($report_file, PATHINFO_EXTENSION));
                                                         $imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
                                                     @endphp
                                                     @if(in_array($extension, $imageExtensions))
