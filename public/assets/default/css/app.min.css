@@ -15034,7 +15034,7 @@ section:has(.trial-steps) .lms-btn-group a small {
     margin-top: 0;
 }
 .feature-item.active .feature-content {
-    max-height: max-content;
+    max-height: 130px;
     margin-top: 10px;
 }
 
