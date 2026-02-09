@@ -24,12 +24,12 @@
                         <div class="sharebar mb-0 mt-15" role="group">
                             <div class="sharebar__stats font-12" aria-label="Engagement stats">
                                 <div class="stat">
-                                    <div class="stat__value stat__value--blue font-22">1.2k</div>
+                                    <div class="stat__value stat__value--blue font-22">{{$post->no_of_shares}}</div>
                                     <div class="stat__label">SHARES</div>
                                 </div>
 
                                 <div class="stat">
-                                    <div class="stat__value font-22">6.4k</div>
+                                    <div class="stat__value font-22">{{$post->views}}</div>
                                     <div class="stat__label">VIEWS</div>
                                 </div>
                             </div>
