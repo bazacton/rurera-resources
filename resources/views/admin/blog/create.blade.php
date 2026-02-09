@@ -579,6 +579,8 @@
         }
         .blog-single-post .rurera-school-item p {
             margin: 0;
+            min-width: 100px;
+            text-align: right;
         }
         .blog-single-post .rurera-school-item h3 {
             margin: 0;
