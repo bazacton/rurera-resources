@@ -692,15 +692,15 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading1">
                                     <h3 class="mb-0">
-                                    <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
-                                            data-toggle="collapse" data-target="#faqCollapse1"
-                                            aria-expanded="false" aria-controls="faqCollapse1">
-                                        <span itemprop="name">What is the Independent Schools Examination Board (ISEB)?</span>
-                                        <span class="icon-box">
-                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
-                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
-                                        </span>
-                                    </button>
+                                        <button class="font-18 btn btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse1"
+                                                aria-expanded="false" aria-controls="faqCollapse1">
+                                            <span itemprop="name">What is the Independent Schools Examination Board (ISEB)?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
                                     </h3>
                                 </div>
                                 <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
