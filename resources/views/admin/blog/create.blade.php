@@ -690,11 +690,11 @@
             padding: 0;
             margin: 0 0 25px;
         }
-        .blog-single-post dd {
+        .blog-single-post dt {
             color: #007bff;
             font-weight: 500;
         }
-        .blog-single-post dt {
+        .blog-single-post dd {
             color: #666;
             font-weight: 400;
         }
