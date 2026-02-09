@@ -61,7 +61,7 @@
                             </button>
                         </div>
 
-                        {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
+
 
                     </div>
                     <div class="col-12 col-lg-5 col-md-5 ml-auto">
@@ -70,6 +70,7 @@
                         </div>
                     </div>
                 </div>
+                {!! $thisController->render_shortcode($post,'[GS related_posts]') !!}
             </div>
         </header>
         <section class="mt-15 mb-60 lms-blog blog-single-post mt-lg-80 mt-md-50 mt-30">
