@@ -537,7 +537,7 @@
             <div class="row">
                 <!-- Left Side: Tabs/Accordion -->
                 <div class="col-md-5">
-                    <div class="section-title mb-4">
+                    <div class="section-title mb-15">
                         <h2>Why choose Rurera <br> assessments ?</h2>
                     </div>
                     
