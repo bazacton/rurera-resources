@@ -560,9 +560,19 @@
                                             >
                                                 <i class="fa fa-upload"></i>
                                             </button>
+
                                             <div class="preview_img-report_file">
                                                 @if(isset($grammerSchoolObj->ofsted_report_file) && $grammerSchoolObj->ofsted_report_file != '')
-                                                    <img src="{{$grammerSchoolObj->ofsted_report_file}}" style="width:80px;"> {{$grammerSchoolObj->ofsted_report_file}}
+                                                    @php
+                                                      $report_file = $grammerSchoolObj->ofsted_report_file;
+                                                        $extension = strtolower(pathinfo($report_file, PATHINFO_EXTENSION));
+                                                        $imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
+                                                    @endphp
+                                                    @if(in_array($extension, $imageExtensions))
+                                                        <img src="{{ $report_file }}" style="width:80px;">
+                                                    @else
+                                                        <a href="{{ $report_file }}" target="_blank">View file</a>
+                                                    @endif
                                                 @endif
                                             </div>
                                         </div>
