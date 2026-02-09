@@ -307,13 +307,15 @@
 
         const CONFIG = {
             maxFiles: 20,
-            maxFileSizeBytes: 4 * 1024 * 1024,
+            maxFileSizeBytes: 4 * 1024 * 1024, // 4MB
             allowedExtensions: ['.pdf', '.docx', '.svg', '.jpg', '.jpeg', '.png', '.webp'],
             allowedMimeTypes: [
                 'application/pdf',
                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
                 'image/jpeg',
-                'image/svg+xml'
+                'image/png',
+                'image/svg+xml',
+                'image/webp'
             ],
             storageKey: 'rurera_file_gallery_v2',
             recentLimit: 30

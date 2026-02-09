@@ -1124,11 +1124,30 @@
                                                     <label class="input-label">{{ trans('public.cover_image') }}</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
-                                                            <button type="button" class="input-group-text admin-file-manager" data-input="image" data-preview="holder">
-                                                                <i class="fa fa-chevron-up"></i>
+                                                            <button
+                                                                    type="button"
+                                                                    class="input-group-text rurera-file-manager"
+                                                                    data-input="image"
+                                                                    data-preview="preview_img-image"
+                                                                    data-image_attr='{
+                                                                    "upload_type":"gallery",
+                                                                    "upload_dir":"public",
+                                                                    "upload_path":"/admin_images",
+                                                                    "is_multiple":false,
+                                                                    "preview_div":"preview_img-image",
+                                                                    "hidden_field":"<input name=\"image\" type=\"hidden\" id=\"image\" placeholder=\"Upload Image\">",
+                                                                    "field_name":"ofsted_report_file"
+                                                                }'
+                                                                    data-gallery_fields='{"gallery_type":"gallery","folder_name":"admin_images"}'
+                                                            >
+                                                                <i class="fa fa-upload"></i>
                                                             </button>
+                                                            <div class="preview_img-image">
+                                                                @if(isset($post->image) && $post->image != '')
+                                                                    <img src="{{$post->image}}" style="width:80px;">
+                                                                @endif
+                                                            </div>
                                                         </div>
-                                                        <input type="text" name="image" id="image" value="{{ (!empty($post)) ? $post->image : old('image') }}" class="form-control @error('image') is-invalid @enderror" placeholder="{{ trans('update.blog_cover_image_placeholder') }}"/>
                                                         @error('image')
                                                         <div class="invalid-feedback">
                                                             {{ $message }}
