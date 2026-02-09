@@ -9,7 +9,7 @@
     <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden" style="min-height: 850px;">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-12 col-md-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".gallery-sub-header" data-aos-offset="100" data-aos-duration="3000">
+                <div class="col-12 col-md-12 col-lg-6">
                     <h1 class="font-72 font-weight-bold">Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
                     <h2 class="mb-15 font-30">Maximize Your Performance: Boost Your SATS Scores.
                     </h2>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="masonry-grid-gallery has-bg simple" data-aos-once="true" data-aos="fade-left" data-aos-anchor=".gallery-sub-header" data-aos-offset="200" data-aos-duration="3000">
+        <div class="masonry-grid-gallery has-bg simple">
             <div class="masonry-grid">
                 <div class="row">
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
@@ -245,7 +245,7 @@
     <section class="lms-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
-                <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".lms-search-services">
+                <div class="col-12">
                     <div class="section-title text-center mb-50">
                         <h2 class="mt-0 mb-10 text-white font-40">Master the SATs with Rurera
                         </h2>
@@ -255,7 +255,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".lms-search-services" data-aos-delay="1000">
+                <div class="col-12">
                     <div class="process-holder">
                         <ul class="process-list d-flex justify-content-center steps-3 has-bg">
                             <li class="process-item"><a href="#" class="text-white">step 1</a></li>
@@ -264,7 +264,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".lms-search-services" data-aos-delay="1000">
+                <div class="col-12">
                     <div class="process-card-holder">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
@@ -321,7 +321,7 @@
     <section class="key-stage-section mt-50">
         <div class="container">
             <div class="row">
-                <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".key-stage-section">
+                <div class="col-12">
                     <div class="section-title text-left mb-40">
                         <h2 class="mb-15 font-40">Endless SATs Resources, Endless Practice Opportunities</h2>
                         <p class="font-19 text-gray">
@@ -329,12 +329,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".key-stage-section" data-aos-delay="1000">
+                <div class="col-12">
                     <div class="element-title has-bg">
                         <h2 class="text-white m-0">Key Stage 1 & Key Stage 2</h2>
                     </div>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".key-stage-section" data-aos-delay="1000">
+                <div class="col-12">
                     <ul class="lms-key-stage-table bg-table mt-30">
                         <li class="lms-key-stage-head">
                             <div class="lms-key-stage keystage-title border-none"></div>
@@ -517,7 +517,7 @@
     <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".exploring-curriculum">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="lms-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
                             <h4 class="mb-10 font-30 align-items-center d-inline-flex text-white">
@@ -538,7 +538,7 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative mt-80">
         <div class="row align-items-center">
-            <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+            <div class="col-12">
                 <div class="section-title text-center mb-50">
                     <h2 class="mt-0 mb-10 font-40"> Conquer the SATs with Confidence
                     </h2>
@@ -548,7 +548,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">
+            <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">KS1 & KS2 SATs Practice</h2>
@@ -558,7 +558,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/learning-practice.jpg" width="400" height="460" class="find-instructor-section-hero" alt="Have a Question? Ask it in forum and get answer" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
@@ -569,14 +569,14 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos-once="true" data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/quiz-sats.jpg" class="find-instructor-section-hero" width="400" height="460" alt="Track Student Progress" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
                     <img src="/assets/default/img/home/dot.png" width="70" height="110" class="find-instructor-section-dots" alt="dots" />
                 </div>
             </div>
-            <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
+            <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Ace SATs with Quizzes & Assessments!
@@ -592,7 +592,7 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">
+            <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Track Individual Progress with Ease</h2>
@@ -603,7 +603,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/individual-performance.jpg" width="400" height="460" class="find-instructor-section-hero" alt="Have a Question? Ask it in forum and get answer" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
@@ -614,14 +614,14 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos-once="true" data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/activity-tracking.jpg" width="400" height="460" class="find-instructor-section-hero" alt="Have a Question? Ask it in forum and get answer" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
                     <img src="/assets/default/img/home/dot.png" width="70" height="110" class="find-instructor-section-dots" alt="dots" />
                 </div>
             </div>
-            <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
+            <div class="col-12 col-lg-6">
                 <div>
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark"> Effortlessly Track Practice</h2>
@@ -633,7 +633,7 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">
+            <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Enhance Learning with SATs Papers</h2>
@@ -644,7 +644,7 @@
                     <div class="flex-grow-1 ml-15"></div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos-once="true" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/lesson-topics.jpg" width="400" height="460" class="find-instructor-section-hero" alt="Have a Question? Ask it in forum and get answer" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
@@ -661,7 +661,7 @@
     <section class="choose-sats choose-sats-section py-80 mt-80 mt-0-sm" style="background-color: #3d358b;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".choose-sats">
+                <div class="col-12">
                     <div class="section-title text-center mb-50">
                         <h2 class="mt-0 mb-10 text-white font-40"> Ignite Your Path to Success with 100+ SATs practices</h2>
                         <p class="font-19 text-white">
