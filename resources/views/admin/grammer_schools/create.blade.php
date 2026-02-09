@@ -217,6 +217,14 @@
                                         <div class="invalid-feedback">Local Authority is required.</div>
                                     </div>
 
+                                    <div class="col-md-3 mb-3 catchment_area_fields catchment_area_fields_yes">
+                                        <div class="form-field">
+                                            <label for="localAuthority">Range (Miles)</label>
+                                            <input type="number" name="catchment_areas_range" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->catchment_areas_range : ''}}" class="form-control" id="catchment_areas_range" placeholder="Range">
+                                        </div>
+
+                                    </div>
+
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
                                             <label for="school_consortium">Consortium</label>
