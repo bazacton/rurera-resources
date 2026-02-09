@@ -8149,6 +8149,9 @@ body .flipbook-data {
   transition: none;
   color: #292a2e;
 }
+.lms-faqs .card .card-header .btn-link:hover {
+  color: #1558bc;
+}
 .lms-faqs .card .card-header .btn-link h3 {
   font-weight: 400;
   color: inherit;
