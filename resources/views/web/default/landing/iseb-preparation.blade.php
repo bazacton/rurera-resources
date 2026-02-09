@@ -696,6 +696,10 @@
                                             data-toggle="collapse" data-target="#faqCollapse1"
                                             aria-expanded="false" aria-controls="faqCollapse1">
                                         <span itemprop="name">What is the Independent Schools Examination Board (ISEB)?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                     </h3>
                                 </div>
