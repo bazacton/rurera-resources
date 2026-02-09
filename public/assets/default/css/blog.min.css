@@ -661,7 +661,7 @@ article.rurera-school-item:nth-of-type(2n) {
     }
     .blog-single-post .rurera-school-content {
         flex-direction: column;
-        gap: 10px 0;
+        gap: 5px 0;
     }
 }
 
