@@ -8127,8 +8127,12 @@ body .flipbook-data {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #e0dfdf;
-  margin: 0 0 15px;
-  padding: 0 0 15px;
+  margin: 0 0 24px;
+  padding: 0 24px 24px;
+}
+.lms-faqs .card:first-child {
+    border-top: 2px solid #e0dfdf;
+    padding-top: 24px;
 }
 .lms-faqs .accordion>.card:not(:first-of-type):not(:last-of-type) {
   border-radius: 0;
