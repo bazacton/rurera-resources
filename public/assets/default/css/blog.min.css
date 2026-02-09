@@ -528,6 +528,9 @@ article.rurera-school-item:nth-of-type(2n) {
 .events-list li:last-child {
     border-bottom: none;
 }
+.events-list span {
+    color: #000;
+}
 .events-list time {
     color: #495057;
     display: block;
