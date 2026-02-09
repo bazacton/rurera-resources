@@ -562,7 +562,7 @@
                                             </button>
                                             <div class="preview_img-report_file">
                                                 @if(isset($grammerSchoolObj->ofsted_report_file) && $grammerSchoolObj->ofsted_report_file != '')
-                                                    <img src="{{$grammerSchoolObj->ofsted_report_file}}" style="width:80px;"> {{$grammerSchoolObj->ofsted_report_file}}
+                                                    <img src="{{$grammerSchoolObj->ofsted_report_file}}" style="width:80px;">
                                                 @endif
                                             </div>
                                         </div>
