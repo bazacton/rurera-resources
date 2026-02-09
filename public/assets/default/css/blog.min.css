@@ -146,6 +146,9 @@
     box-shadow: none;
     border: 1px solid #ddd;
 }
+.disabled-area {
+    pointer-events: none;
+}
 /* Location Style Start */
 .blog-single-post .rurera-location-section {
     border: 0;
