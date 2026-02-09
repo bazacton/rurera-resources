@@ -11,6 +11,7 @@
                     <a href="/blog/{{isset($consortium_schoolObj->schoolBlog->slug)? $consortium_schoolObj->schoolBlog->slug : ''}}" class="font-weight-500">
                         {{$consortium_schoolObj->school_name}}
                     </a>
+                    <address class="rurera-school-address">{{$consortium_schoolObj->complete_address}}</address>
                 </header>
             </div>
         </article>
