@@ -5,7 +5,7 @@
             <span  itemprop="datePublished" content="{{ dateTimeFormat($post->updated_at, 'j M Y H:i:s') }}">{{ dateTimeFormat($post->updated_at, 'j M Y') }}</span>
         </span>
         <h3 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
-            <a itemprop="url" href="{{ $post->getUrl() }}">{{ $post->title }}</a>
+            <a itemprop="url" href="{{ $post->getUrl() }}">{{ $thisController->getPostContent($post, $post->title) }}</a>
         </h3>
         @php
             $meta_description = explode(',', $post->meta_description);
@@ -15,8 +15,7 @@
         @endphp
     </div>
     <div class="blog-grid-image">
-        <!-- <img src="/assets/default/img/buller-img.png" class="img-sm" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager"> -->
-        <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
+        <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $thisController->getPostContent($post, $post->title) }}" title="{{ $thisController->getPostContent($post, $post->title) }}" width="20" height="21" itemprop="image" loading="eager">
     </div>
 
 </div>
