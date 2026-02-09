@@ -6,9 +6,9 @@
             <input type="hidden" name="{{$field_name}}" value="{{$field_value}}">
         @endforeach
     @endif
+        @php  $gallery_type = isset($gallery_fields['gallery_type'])? $gallery_fields['gallery_type'] : 'gallery'; @endphp
 
-
-    <div class="d-flex flex-wrap align-items-end" style="gap:10px;">
+    <div class="{{($gallery_type == 'question')? 'd-flex flex-wrap' : 'rurera-hide'}} align-items-end" style="gap:10px;">
         <select class="form-control form-control-sm rurera-hide" id="rfpFilterType">
             <option value="all">All</option>
             <option value="image">Images (JPG/SVG)</option>
@@ -132,7 +132,7 @@
 
         <div class="related-images-holder">
             @if(isset($GalleryImages) && $GalleryImages->count() > 0)
-                <h3>Related Images</h3>
+                <h3>Uploaded Images</h3>
 
                 @foreach($GalleryImages as $GalleryImageObj)
                     <script>
