@@ -15012,11 +15012,14 @@ section:has(.trial-steps) .lms-btn-group a small {
     margin: 0;
     font-weight: 600;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
-.arrow {
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
+.feature-header img {
+    height: 18px;
+    width: 18px;
 }
 .feature-item.active .arrow {
     opacity: 1;
