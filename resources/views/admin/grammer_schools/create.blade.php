@@ -344,7 +344,7 @@
 
                                     <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
-                                            <label for="additional_subject_name">Subject Name 2</label>
+                                            <label for="additional_subject_name">Additional Subject 2</label>
                                             <input type="text" name="additional2_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional2_subject_name : ''}}" class="form-control" id="additional2_subject_name">
                                         </div>
                                     </div>
@@ -358,7 +358,7 @@
 
                                     <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
-                                            <label for="additional3_subject_name">Subject Name 3</label>
+                                            <label for="additional3_subject_name">Additional Subject 3</label>
                                             <input type="text" name="additional3_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional3_subject_name : ''}}" class="form-control" id="additional3_subject_name">
                                         </div>
                                     </div>
@@ -372,7 +372,7 @@
 
                                     <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
                                         <div class="form-field">
-                                            <label for="additional4_subject_name">Subject Name 4</label>
+                                            <label for="additional4_subject_name">Additional Subject 4</label>
                                             <input type="text" name="additional4_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional4_subject_name : ''}}" class="form-control" id="additional4_subject_name">
                                         </div>
                                     </div>
