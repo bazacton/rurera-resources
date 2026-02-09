@@ -1839,9 +1839,6 @@ nav li {
   transform: none;
   left: 10px;
 }
-.line-shap-holder {
-  position: relative;
-}
 .line-shap-holder:before {
   content: "";
   position: absolute;
