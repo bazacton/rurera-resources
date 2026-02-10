@@ -8,6 +8,7 @@
 
 <url>
 	<loc>{{$url}}</loc>
+    <added>{{$params['added']}}</added>
 	<lastmod>{{$params['lastmod']}}</lastmod>
 	@if( isset( $params['images'] ) && !empty( $params['images'] ) )
 		@foreach( $params['images'] as $imageData)
