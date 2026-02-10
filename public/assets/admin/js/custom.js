@@ -2727,7 +2727,6 @@ function rurera_modal_alert(msg_type, msg_title, confirmButton){
 
 }
 
-
 $('body').on('change', '.conditional_field_parent', function (e) {
     var target_field_class = $(this).attr('data-target_field_class');
     var target_common_class = $(this).attr('data-target_common_class');
@@ -2856,3 +2855,23 @@ $(document).on('click', '.rurera-file-manager', function () {
     });
 
 });
+
+
+$(document).on('click', '.delete-gallery-image', function () {
+    var thisObj = $(this);
+    var gallery_image = $(this).attr('data-gallery_image');
+    if (!confirm("Delete this gallery image?")) return;
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/common/remove_gallery_image',
+        data: {'gallery_image' : gallery_image},
+        success: function (return_data) {
+            thisObj.closest('.rfp-tile').remove();
+            console.log(return_data);
+        },
+    });
+
+});
+
+
+
