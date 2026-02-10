@@ -15091,6 +15091,9 @@ section:has(.trial-steps) .lms-btn-group a small {
     height: 18px;
     width: 18px;
 }
+.feature-item.active .feature-header h5 {
+  color: #000;
+}
 .feature-item.active .arrow {
     opacity: 1;
     transform: translateX(0);
