@@ -15130,6 +15130,9 @@ section:has(.trial-steps) .lms-btn-group a small {
 .slider-section .row {
     align-items: center;
 }
+.feature-tabs-holder {
+  height: 500px;
+}
 /* Right Side Images */
 .image-container {
     position: relative;
