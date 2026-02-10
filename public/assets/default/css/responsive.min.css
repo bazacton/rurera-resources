@@ -1096,7 +1096,7 @@
         visibility: visible;
         display: none;
         width: 90%;
-        left: 20px;
+        left: 0;
         top: 0;
         transition: none;
         padding: 10px 0 5px 10px;
