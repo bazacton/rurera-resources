@@ -4509,7 +4509,7 @@ nav li {
   padding-top: 10px;
 }
 .subscribe-plan.current-plan button.btn {
-  background-color: #596bfd;
+  background-color: var(--primary);
   color: #fff;
 }
 .subscribe-plan .subscribe-price small {
@@ -4518,7 +4518,7 @@ nav li {
   vertical-align: top;
 }
 .subscribe-plan .subscribe-price span {
-  color: #596bfd;
+  color: var(--primary);
   font-weight: 500;
 }
 .subscribe-plan:hover:not(.current-plan) {
