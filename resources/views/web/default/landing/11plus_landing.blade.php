@@ -982,7 +982,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70 pb-60"
+    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70"
         data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
