@@ -15213,13 +15213,14 @@ section:has(.trial-steps) .lms-btn-group a small {
     border-radius: 0 0 24px 24px;
     padding: 24px 24px 0;
     position: relative;
+    overflow: hidden;
 }
 .footer-widgets-area .footer-dots-img {
     position: absolute;
     right: 15px;
     top: 15px;
-    height: 275px;
-    width: 275px;
+    height: 300px;
+    width: 300px;
     z-index: 0;
     pointer-events: none;
 }
