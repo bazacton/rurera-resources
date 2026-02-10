@@ -392,7 +392,7 @@
         background-color: #fff;
         transition: right 0.4s cubic-bezier(0.43, 0.83, 0.54, 1.02), opacity 0.4s linear;
         border-radius: 0;
-        padding: 24px 24px 0;
+        padding: 15px 24px 0;
         overflow: hidden;
         overflow-y: auto;
     }
@@ -736,8 +736,8 @@
         font-weight: 600;
     }
     #navbarClose img {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
     .navbar-nav .nav-item .sidenav-dropdown:before {
         display: none;
@@ -1099,7 +1099,7 @@
     .navbar-toggle-header {
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 15px;
         z-index: 1;
         font-weight: 500;
     }
