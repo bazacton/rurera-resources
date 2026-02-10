@@ -10355,7 +10355,7 @@ body .flipbook-data {
   left: 0;
   top: 38px;
   width: auto;
-  background: #f8f8f8;
+  background: #fff;
   padding: 10px 20px 20px;
   box-shadow: 0 3px 3px 1px rgb(0 0 0 / 0.1);
   border-radius: 0;
@@ -10383,7 +10383,7 @@ body .flipbook-data {
   visibility: visible;
   top: 100%;
 }
-.navbar-nav .nav-item .sidenav-dropdown:before {
+/* .navbar-nav .nav-item .sidenav-dropdown:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -10394,7 +10394,7 @@ body .flipbook-data {
   transform: rotate(45deg);
   background-color: #f8f8f8;
   z-index: -1;
-}
+} */
 .navbar-nav .nav-item .sidenav-dropdown li a {
   font-size: 14px;
   text-align: center;
