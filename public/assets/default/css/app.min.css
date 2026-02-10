@@ -10356,13 +10356,15 @@ body .flipbook-data {
   top: 38px;
   width: auto;
   background: #fff;
-  padding: 10px 20px 20px;
-  box-shadow: 0 3px 3px 1px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 0.1);
   border-radius: 0;
   transition: all 0.3s;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
+  min-width: 264px;
+  border-radius: 15px;
 }
 .navbar-nav .nav-item.book_shelf .sidenav-dropdown {
   position: absolute;
