@@ -10401,15 +10401,16 @@ body .flipbook-data {
     padding: 40px 20px;
 }
 .navbar-nav .nav-item .sidenav-dropdown li a {
-  font-size: 14px;
-  text-align: center;
-  color: #101214;
-  display: block;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
+    font-size: .875rem;
+    text-align: center;
+    color: #101214;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 500;
 }
 .navbar-nav .nav-item:hover .sidenav-dropdown li:last-child a {
   margin-bottom: 0;
