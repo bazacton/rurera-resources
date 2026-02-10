@@ -58,7 +58,7 @@
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
                                             <label for="localAuthority">Local authority / county area</label>
-                                            <select class="form-control " name="local_authority" id="local_authority" required>
+                                            <select class="form-control " name="local_authority" id="local_authority">
                                                 @if(!empty(local_authorities_list()))
                                                     @foreach(local_authorities_list() as $authority_title)
                                                         <option value="{{$authority_title}}" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->local_authority === $authority_title) ? 'selected' : '' }}>{{$authority_title}}</option>
