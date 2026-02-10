@@ -15247,6 +15247,7 @@ section:has(.trial-steps) .lms-btn-group a small {
   background-color: inherit;
   border: 1px solid #5f6567;
   border-radius: 3px;
+  font-size: .875rem;
   width: 100%;
   padding: 0 15px;
   height: 44px;
