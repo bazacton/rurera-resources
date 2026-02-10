@@ -411,7 +411,9 @@
     }
     .mobile-logo {
         display: block;
-        padding: 0 0 18px 0;
+        padding: 0 0 24px 0;
+        border-bottom: 2px dotted #ddd;
+        margin: 0 0 14px;
     }
     .mobile-logo img {
         object-fit: contain;
@@ -1168,14 +1170,14 @@
         color: #1558bc;
     }
     .mobile-login-reg-buttons .mobile-register-btn {
-        background-color: var(--primary);
+        background: #1868db;
         color: #fff;
-        font-size: 16px;
+        border-radius: 40px;
+        font-weight: 500;
         padding: 12px 20px;
-        border-radius: 5px;
-        width: 100%;
         text-align: center;
         font-weight: 500;
+        width: 100%;
     }
     .counter-holder .svg-shapes-bottom {
         left: 142px;
