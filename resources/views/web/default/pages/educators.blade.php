@@ -10,15 +10,15 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-7 col-md-7">
-                    <h1 class="font-weight-bold font-72">Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
-                    <p itemprop="description" class="font-19">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
-                    <ul class="mb-30" itemprop="courses list">
-                        <li class="mb-10 font-19" itemprop="course short info"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Enhance teaching skills</li>
-                        <li class="mb-10 font-19" itemprop="course short info"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Reduced workload</li>
-                        <li class="mb-10 font-19" itemprop="course short info">
+                    <h1>Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
+                    <p itemprop="description" class="font-14">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
+                    <ul class="mb-30">
+                        <li class="mb-10"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Enhance teaching skills</li>
+                        <li class="mb-10"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Reduced workload</li>
+                        <li class="mb-10">
                             <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Fast grading using automated marking
                         </li>
-                        <li class="mb-10 font-19" itemprop="course short info">
+                        <li>
                             <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Homework aligned with national curriculum
                         </li>
                     </ul>
@@ -395,120 +395,181 @@
             </div>
         </div>
     </section>
-    <section class="pb-60">
+    <section class="pb-60" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="text-center section-title mb-50"><h2 class="mb-10 font-40 text-dark-charcoal">Frequently asked questions</h2></div>
+                    <div class="section-title mb-30 text-center">
+                        <h2 class="mb-10 mt-0">Frequently asked questions</h2>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-lg-12 col-md-12 mx-auto">
-                    <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                        <div id="accordion">
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="heading11">
-                                    <button aria-controls="collapse11" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse11" data-toggle="collapse">
-                                        What makes Rurera different from other educational platforms?
-                                    </button>
+
+                <div class="col-12 col-lg-8 col-md-12 mx-auto">
+                    <div class="mt-0 lms-faqs mx-w-100">
+                        <div id="faqAccordion" class="accordion">
+
+                            <!-- FAQ 1 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading1">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                            <span itemprop="name">What makes Rurera different from other educational platforms?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapse11" aria-labelledby="heading11" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">
-                                            Rurera offers a range of adaptive learning tools, teacher-created resources, and real-time performance tracking, designed to enhance both teaching and learning. Our platform focuses on personalized
-                                            learning to meet the unique needs of each student and supports teachers with efficient lesson planning and progress monitoring.
-                                        </p>
+                                <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Rurera offers a range of adaptive learning tools, teacher-created resources, and real-time performance tracking, designed to enhance both teaching and learning. Our platform focuses on personalized learning to meet the unique needs of each student and supports teachers with efficient lesson planning and progress monitoring.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="heading12">
-                                    <button aria-controls="collapse12" aria-expanded="true" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse12" data-toggle="collapse">
-                                        What kind of features does Rurera provide for teachers?
-                                    </button>
+
+                            <!-- FAQ 2 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading2">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                            <span itemprop="name">What kind of features does Rurera provide for teachers?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapse12" aria-labelledby="heading12" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">
-                                            Rurera offers a hub of teacher-created materials, including lesson plans, real-time performance tracking, quizzes, mock tests, and interactive activities. These resources are designed to be flexible
-                                            and easily integrated into your existing curriculum.
-                                        </p>
+                                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Rurera offers a hub of teacher-created materials, including lesson plans, real-time performance tracking, quizzes, mock tests, and interactive activities. These resources are designed to be flexible and easily integrated into your existing curriculum.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="heading">
-                                    <button aria-controls="collapseOne" aria-expanded="true" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapseOne" data-toggle="collapse">
-                                        How can Rurera help reduce educators' workload?
-                                    </button>
+
+                            <!-- FAQ 3 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading3">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                            <span itemprop="name">How can Rurera help reduce educators' workload?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapseOne" aria-labelledby="heading" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">
+                                <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
                                             By offering easy-to-use tools for creating and customizing lessons and homework, as well as automated grading, Rurera streamlines administrative tasks and allows you to focus more on teaching.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="headingThree">
-                                    <button aria-controls="collapseThree" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapseThree" data-toggle="collapse">
-                                        Can Rurera help with student assessments?
-                                    </button>
+
+                            <!-- FAQ 4 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading4">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                            <span itemprop="name">Can Rurera help with student assessments?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">
-                                            Yes, Rurera includes a variety of assessment tools, such as quizzes and mock tests, that helps teachers to evaluate student understanding and track their progress over time. Detailed performance
-                                            reports assist in identifying areas for improvement.
-                                        </p>
+                                <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Yes, Rurera includes a variety of assessment tools, such as quizzes and mock tests, that helps teachers to evaluate student understanding and track their progress over time. Detailed performance reports assist in identifying areas for improvement.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="headingfive">
-                                    <button aria-controls="collapsefive" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapsefive" data-toggle="collapse">
-                                        Are Rurera’s resources aligned with the national curriculum?
-                                    </button>
+
+                            <!-- FAQ 5 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading5">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                            <span itemprop="name">Are Rurera’s resources aligned with the national curriculum?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapsefive" aria-labelledby="headingfive" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">Yes, Rurera’s resources are designed to align with national curriculum standards, ensuring they are relevant and useful for a variety of educational requirements.</p>
+                                <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Yes, Rurera’s resources are designed to align with national curriculum standards, ensuring they are relevant and useful for a variety of educational requirements.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="heading6">
-                                    <button aria-controls="collapse6" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse6" data-toggle="collapse">How can I create quizzes on Rurera?</button>
+
+                            <!-- FAQ 6 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading6">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                                            <span itemprop="name">How can I create quizzes on Rurera?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapse6" aria-labelledby="heading6" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">
-                                            Rurera provides an easy-to-use quiz creation tool where teachers can design custom quizzes to assess student understanding. You can choose from various question formats, set difficulty levels, and
-                                            schedule quizzes according to your teaching plan.
-                                        </p>
+                                <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Rurera provides an easy-to-use quiz creation tool where teachers can design custom quizzes to assess student understanding. You can choose from various question formats, set difficulty levels, and schedule quizzes according to your teaching plan.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="heading7">
-                                    <button aria-controls="collapse7" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse7" data-toggle="collapse">
-                                        Can I get insights into individual student performance?
-                                    </button>
+
+                            <!-- FAQ 7 -->
+                            <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading7">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                                            <span itemprop="name">Can I get insights into individual student performance?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
                                 </div>
-                                <div class="collapse" id="collapse7" aria-labelledby="heading7" data-parent="#accordion">
-                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
-                                        <p itemprop="text">
-                                            Yes, Rurera offers detailed insights into student performance, including breakdowns of quiz results, assignment scores, and overall progress. You can view individual performance data to identify
-                                            strengths and areas for improvement.
-                                        </p>
+                                <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Yes, Rurera offers detailed insights into student performance, including breakdowns of quiz results, assignment scores, and overall progress. You can view individual performance data to identify strengths and areas for improvement.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <section class="mx-w-100 lms-column-section lms-text-section py-70" style="background-color: #f27530;" id="request-demo">
         <div class="container">
             <div class="row">

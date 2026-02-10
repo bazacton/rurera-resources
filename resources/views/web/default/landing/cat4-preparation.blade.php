@@ -505,245 +505,349 @@
             <a href="{{url('/')}}/pricing" class="btn-primary font-16 text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
         </div>
     </section>
-    <section class="py-100" style="background-color: #fff;">
+    <section class="py-100" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title mb-30 text-center"><h2 class="mb-10 font-40 mt-0">Frequently asked questions</h2></div>
+                    <div class="section-title mb-30 text-center">
+                        <h2 class="mb-10 mt-0">Frequently asked questions</h2>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-12 col-md-12 mx-auto">
+
+                <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div id="accordion">
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingsix">
+                        <div class="mt-0 lms-faqs mx-w-100">
+                            <div id="faqAccordion" class="accordion">
+
+                                <!-- FAQ 1 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading1">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapsesix" aria-expanded="true" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapsesix" data-toggle="collapse">
-                                                What is CAT4, and how does it assess a student's cognitive potential?
+                                            <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                                <span itemprop="name">What is CAT4, and how does it assess a student's cognitive potential?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapsesix" aria-labelledby="headingsix" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>CAT4 is a cognitive abilities test set by GL Assessment. It aims to reveal a child’s hidden potential by assessing their reasoning ability. There are CAT4 levels for different age groups.</p>
+                                    <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                CAT4 is a cognitive abilities test set by GL Assessment. It aims to reveal a child’s hidden potential by assessing their reasoning ability. There are CAT4 levels for different age groups.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingTwo">
+
+                                <!-- FAQ 2 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading2">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapseTwo" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseTwo" data-toggle="collapse">
-                                                Why do schools use the CAT4 exam?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                                <span itemprop="name">Why do schools use the CAT4 exam?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Some selective independent schools use CAT4 to shortlist children for places.Many schools – both state and private – use CAT4 in early Year 7 to stream students into sets in core subjects.</p>
+                                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Some selective independent schools use CAT4 to shortlist children for places. Many schools – both state and private – use CAT4 in early Year 7 to stream students into sets in core subjects.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingseven">
+
+                                <!-- FAQ 3 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading3">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapseseven" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseseven" data-toggle="collapse">
-                                                How does Rurera help with CAT4 preparation?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                                <span itemprop="name">How does Rurera help with CAT4 preparation?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapseseven" aria-labelledby="headingseven" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 Rurera offers comprehensive CAT4 preparation through expert-designed mock tests, practice questions, and detailed feedback. Our platform helps identify strengths and areas for improvement,
                                                 providing personalized study plans to enhance your child's performance.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading8">
+
+                                <!-- FAQ 4 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading4">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse8" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse8" data-toggle="collapse">
-                                                When is CAT4 typically taken, and are there common times of year for it?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                                <span itemprop="name">When is CAT4 typically taken, and are there common times of year for it?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse8" aria-labelledby="heading8" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                The CAT4 can be administered at various times throughout the academic year, depending on the school or institution’s schedule but your child will likely take the test in the autumn term or early
-                                                spring term in Year 6 Schools that use CAT4 for setting purposes often administer the test in September in Year 7.
-                                            </p>
+                                    <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                The CAT4 can be administered at various times throughout the academic year, depending on the school or institution’s schedule, but your child will likely take the test in the autumn term or early
+                                                spring term in Year 6. Schools that use CAT4 for setting purposes often administer the test in September in Year 7.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading9">
+
+                                <!-- FAQ 5 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading5">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse9" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse9" data-toggle="collapse">
-                                                How does Rurera keep my child motivated during CAT4 preparation?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                                <span itemprop="name">How does Rurera keep my child motivated during CAT4 preparation?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse9" aria-labelledby="heading9" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 Rurera employs several strategies to keep your child motivated, including interactive and engaging learning modules, gamified practice sessions, and regular progress tracking that highlights
                                                 improvements and milestones.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading10">
+
+                                <!-- FAQ 6 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading6">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse10" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse10" data-toggle="collapse">
-                                                What are the major subjects assessed in CAT4?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                                                <span itemprop="name">What are the major subjects assessed in CAT4?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse10" aria-labelledby="heading10" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 The CAT4 evaluates four essential cognitive areas: Verbal Reasoning, which measures language and comprehension skills; Non-Verbal Reasoning, which assesses problem-solving with visual information;
                                                 Quantitative Reasoning, which tests mathematical and numerical abilities; and Spatial Awareness, which examines understanding of spatial relationships and shapes.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading11">
+
+                                <!-- FAQ 7 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading7">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse11" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse11" data-toggle="collapse">
-                                                What is the format of the CAT4 test, and types of questions?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                                                <span itemprop="name">What is the format of the CAT4 test, and types of questions?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse11" aria-labelledby="heading11" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 CAT4 can be taken online or on paper, although most schools choose to use an online version. It's a non-adaptive test, meaning that all children taking the test at the same time will see the same
                                                 questions.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading12">
+
+                                <!-- FAQ 8 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading8">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse12" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse12" data-toggle="collapse">
-                                                How long does CAT4 take, and does the duration vary by section&nbsp;or&nbsp;format?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+                                                <span itemprop="name">How long does CAT4 take, and does the duration vary by section or format?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse12" aria-labelledby="heading12" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 The test typically takes between 1 to 2 hours to complete, with the exact duration depending on the specific format and the number of sections included. The time required may vary based on the
-                                                complexity of the questions and the depth of each section..
-                                            </p>
+                                                complexity of the questions and the depth of each section.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading13">
+
+                                <!-- FAQ 9 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading9">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse13" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse13" data-toggle="collapse">
-                                                What is the passing score for the CAT4 test, and how is it determined?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+                                                <span itemprop="name">What is the passing score for the CAT4 test, and how is it determined?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse13" aria-labelledby="heading13" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Each school that administers the CAT4 determines its own pass marks. Generally, a score of 100 is viewed as average, 142 is at the very top end, and scores below 85 are considered low.For Year 7
+                                    <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Each school that administers the CAT4 determines its own pass marks. Generally, a score of 100 is viewed as average, 142 is at the very top end, and scores below 85 are considered low. For Year 7
                                                 candidates, many selective schools seek a standardized score of at least 115, and in some cases, even higher.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading14">
+
+                                <!-- FAQ 10 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading10">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse14" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse14" data-toggle="collapse">
-                                                Are there practice tests available for CAT4?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+                                                <span itemprop="name">Are there practice tests available for CAT4?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse14" aria-labelledby="heading14" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse10" class="collapse" aria-labelledby="faqHeading10" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 Yes, practice tests are available at Rurera for the CAT4. These tests are designed to simulate the actual exam conditions and help students familiarize themselves with the types of questions they
                                                 will encounter. They provide valuable practice and can help identify areas for improvement.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading15">
+
+                                <!-- FAQ 11 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading11">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse15" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse15" data-toggle="collapse">
-                                                What are the different elements of the CAT4 test?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse11" aria-expanded="false" aria-controls="faqCollapse11">
+                                                <span itemprop="name">What are the different elements of the CAT4 test?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse15" aria-labelledby="heading15" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                The CAT4 test includes four key elements: <strong>Verbal Reasoning</strong> (understanding and using written concepts), <strong>Non-Verbal Reasoning</strong> (interpreting visual patterns and
-                                                shapes), <strong>Quantitative Reasoning</strong> (solving numerical problems), and <strong>Spatial Awareness</strong> (visualizing and manipulating objects in space).
-                                            </p>
+                                    <div id="faqCollapse11" class="collapse" aria-labelledby="faqHeading11" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                The CAT4 test includes four key elements: <strong>Verbal Reasoning</strong> (understanding and using written concepts),
+                                                <strong>Non-Verbal Reasoning</strong> (interpreting visual patterns and shapes), <strong>Quantitative Reasoning</strong> (solving numerical problems),
+                                                and <strong>Spatial Awareness</strong> (visualizing and manipulating objects in space).
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading16">
+
+                                <!-- FAQ 12 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading12">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse16" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse16" data-toggle="collapse">
-                                                How can you prepare your child to take the test?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse12" aria-expanded="false" aria-controls="faqCollapse12">
+                                                <span itemprop="name">How can you prepare your child to take the test?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse16" aria-labelledby="heading16" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+                                    <div id="faqCollapse12" class="collapse" aria-labelledby="faqHeading12" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 Familiarize your child with the test format, and use practice tests to build confidence. Focus on improving weaker areas, encourage problem-solving skills with puzzles, and maintain a balanced
                                                 routine of study and rest. Provide positive support to keep them calm and motivated.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading17">
+
+                                <!-- FAQ 13 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading13">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse17" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse17" data-toggle="collapse">
-                                                What are the different levels in the CAT4 test?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button" data-toggle="collapse"
+                                                data-target="#faqCollapse13" aria-expanded="false" aria-controls="faqCollapse13">
+                                                <span itemprop="name">What are the different levels in the CAT4 test?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse17" aria-labelledby="heading17" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>The CAT4 test is divided into several levels based on age groups, ranging from A to G:</p>
-                                            <ul class="my-20">
-                                                <li class="mb-10">Group A: For students aged 8 to 9</li>
-                                                <li class="mb-10">Group B: For students aged 9 to 10</li>
-                                                <li class="mb-10">Group C: For students aged 10 to 11</li>
-                                                <li class="mb-10">Group D: For students aged 11 to 12</li>
-                                                <li class="mb-10">Group E: For students aged 12 to 13</li>
-                                                <li class="mb-10">Level F: For students aged 13–15</li>
-                                                <li>Level G:For students aged 15+</li>
-                                            </ul>
-                                            <p>Each group is tailored to the cognitive development appropriate for that age range, ensuring an accurate assessment of a student’s abilities.</p>
+                                    <div id="faqCollapse13" class="collapse" aria-labelledby="faqHeading13" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                The CAT4 test is divided into several levels based on age groups, ranging from A to G:
+                                                <ul class="my-20">
+                                                    <li class="mb-10">Group A: For students aged 8 to 9</li>
+                                                    <li class="mb-10">Group B: For students aged 9 to 10</li>
+                                                    <li class="mb-10">Group C: For students aged 10 to 11</li>
+                                                    <li class="mb-10">Group D: For students aged 11 to 12</li>
+                                                    <li class="mb-10">Group E: For students aged 12 to 13</li>
+                                                    <li class="mb-10">Level F: For students aged 13–15</li>
+                                                    <li>Level G: For students aged 15+</li>
+                                                </ul>
+                                                <p>Each group is tailored to the cognitive development appropriate for that age range, ensuring an accurate assessment of a student’s abilities.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">

@@ -1,7 +1,6 @@
 <div class="blog-grid-card rurera-grid"  itemscope itemtype="https://schema.org/NewsArticle">
     <div class="blog-grid-detail">
         <span class="badge created-at d-flex align-items-center">
-            <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
             <span  itemprop="datePublished" content="2023-04-05T08:00:00+08:00">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
         </span>
 
