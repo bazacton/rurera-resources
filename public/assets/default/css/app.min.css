@@ -15242,6 +15242,10 @@ section:has(.trial-steps) .lms-btn-group a small {
 .footer-widgets-area .widget-title {
     margin-bottom: 20px;
 }
+.footer-newsletter .widget-body {
+    background-color: #fff;
+    padding: 15px;
+}
 .custom-footer h2 {
   margin: 0 0 0.83em;
   font-size: .813rem;
