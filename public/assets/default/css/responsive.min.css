@@ -1156,7 +1156,7 @@
     .mobile-login-reg-buttons {
         display: flex;
         border-top: 2px dotted rgb(0 0 0 / 0.1);
-        padding: 20px;
+        padding: 20px 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
