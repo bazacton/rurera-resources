@@ -713,196 +713,246 @@
         </div>
     </section>
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
-    <section class="py-100" style="background-color: #fff">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title text-center mb-30">
-                        <h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
-                    </div>
+    <section class="py-100" style="background-color: #fff;" itemscope="" itemtype="https://schema.org/FAQPage">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title mb-30 text-center">
+                    <h2 class="mb-10 mt-0">Frequently asked questions</h2>
                 </div>
-                <div class="col-12 col-lg-12 col-md-12 mx-auto">
-                    <div class="mt-0">
-                        <div class="lms-faqs mx-w-100 mt-0" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div id="accordion">
-                                @if( !empty( $faq_items ))
+            </div>
 
-                                @foreach( $faq_items as $itemData)
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading77">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse"
-                                                data-target="#collapsesix" aria-expanded="true"
-                                                aria-controls="collapsesix">{{isset( $itemData['title'])? $itemData['title'] : '' }}</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="heading77"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>{{isset( $itemData['description'])? $itemData['description'] : '' }}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
+            <div class="col-12 col-lg-8 col-md-12 mx-auto">
+                <div class="mt-0">
+                    <div class="mt-0 lms-faqs mx-w-100">
+                        <div id="faqAccordion" class="accordion">
 
-                                @else
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading66">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapsesix" aria-expanded="true"
-                                                aria-controls="collapsesix">What is the 11 Plus exam?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="heading66"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>The 11 plus examination is a selective <a href="https://rurera.com/blog/unlocking-curiosity-the-power-of-online-courses-for-ks1-and-ks2-students">entrance exam</a> used by many grammar schools in the UK. Children take it in Year 6 (when they are 10 or 11 years old) to see if they can get a place at a selective secondary school.
-                                            </p>
+                            <!-- FAQ 1 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading1">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link font-weight-bold collapsed" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false"
+                                            aria-controls="faqCollapse1">
+                                            <span itemprop="name">What is the 11 Plus exam?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            The 11 plus examination is a selective <a href="https://rurera.com/blog/unlocking-curiosity-the-power-of-online-courses-for-ks1-and-ks2-students">entrance exam</a> used by many grammar schools in the UK. Children take it in Year 6 (when they are 10 or 11 years old) to see if they can get a place at a selective secondary school.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingTwo">
-                                        <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">When is the 11 plus exam taken?</button></h3>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>The exams are usually held in September or October of your child’s final primary school year.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingseven">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapseseven"
-                                                aria-expanded="false" aria-controls="collapseseven">How is the 11 plus exam scored?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>After the test, your child will get a standardised score. This score is usually between 70 and
-                                                140. What is the highest 11 plus score? While it can vary, scores above 130 are often considered
-                                                very high. You can look up specific 11 plus results from previous years, like 11 plus results 2024,
-                                                to get an idea of your local schools.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading8">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapse8" aria-expanded="false"
-                                                aria-controls="collapse8">What subjects are covered?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse8" class="collapse" aria-labelledby="heading8"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Our preparation covers all four key areas: Maths, English, Verbal Reasoning, and Non-Verbal Reasoning.
-                                                We have specific 11 plus maths papers and English resources, plus lots of reasoning practice.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading9">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapse9" aria-expanded="false"
-                                                aria-controls="collapse9"> How will Rurera help in preparing for the 11 plus exam?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse9" class="collapse" aria-labelledby="heading9"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p> Rurera is your complete preparation partner! We provide tailored practice tests, an adaptive curriculum, realistic mock exams, and detailed progress tracking. We help build confidence and skill in every subject. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading10">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapse10" aria-expanded="false"
-                                                aria-controls="collapse10"> How do I register my child for the 11 plus exam?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse10" class="collapse" aria-labelledby="heading10"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>You must register directly with the schools you are applying to or through your local council.
-                                                This usually happens in the spring or summer before the exam.
-                                                It’s very important to check the deadlines for your chosen schools!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading11">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapse11" aria-expanded="false"
-                                                aria-controls="collapse11">Do I need to help my child use Rurera?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse11" class="collapse" aria-labelledby="heading11"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Not really! Rurera is designed to be simple and intuitive for children to use on their own,
-                                                which helps build their independence. As a parent, you can use your account to assign activities,
-                                                set learning controls, and easily manage sibling accounts, all with real-time diagnostics.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading12">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                data-toggle="collapse" data-target="#collapse12" aria-expanded="false"
-                                                aria-controls="collapse12">When are the results of the 11 plus exam released?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse12" class="collapse" aria-labelledby="heading12"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p> <b>11 plus results</b> are typically sent out in October or November.
-                                                This gives you time to plan for the next school year.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                    <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                        <div class="card-header" id="heading13">
-                                            <h3 class="mb-0">
-                                                <button class="btn btn-link font-18 font-weight-bold collapsed"
-                                                        data-toggle="collapse" data-target="#collapse13" aria-expanded="false"
-                                                        aria-controls="collapse13">Ready to Start Your Journey?</button>
-                                            </h3>
-                                        </div>
-                                        <div id="collapse13" class="collapse" aria-labelledby="heading13"
-                                             data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p> Don’t just search for <b>“11 plus tuition near me”</b> or <b>“11 plus test online”</b>. Choose the smarter, more engaging way.
-                                                    With Rurera’s <b>personalized 11 plus practice</b> and <b>comprehensive resources</b>, you are giving your child the very best chance
-                                                    to <b>unlock opportunities</b> and succeed.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endif
-
                             </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading2">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false"
+                                            aria-controls="faqCollapse2">
+                                            <span itemprop="name">When is the 11 plus exam taken?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            The exams are usually held in September or October of your child’s final primary school year.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading3">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false"
+                                            aria-controls="faqCollapse3">
+                                            <span itemprop="name">How is the 11 plus exam scored?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            After the test, your child will get a standardised score. This score is usually between 70 and 140. What is the highest 11 plus score? While it can vary, scores above 130 are often considered very high. You can look up specific 11 plus results from previous years, like 11 plus results 2024, to get an idea of your local schools.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading4">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false"
+                                            aria-controls="faqCollapse4">
+                                            <span itemprop="name">What subjects are covered?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Our preparation covers all four key areas: Maths, English, Verbal Reasoning, and Non-Verbal Reasoning. We have specific 11 plus maths papers and English resources, plus lots of reasoning practice.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading5">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false"
+                                            aria-controls="faqCollapse5">
+                                            <span itemprop="name">How will Rurera help in preparing for the 11 plus exam?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Rurera is your complete preparation partner! We provide tailored practice tests, an adaptive curriculum, realistic mock exams, and detailed progress tracking. We help build confidence and skill in every subject.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 6 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading6">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false"
+                                            aria-controls="faqCollapse6">
+                                            <span itemprop="name">How do I register my child for the 11 plus exam?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            You must register directly with the schools you are applying to or through your local council. This usually happens in the spring or summer before the exam. It’s very important to check the deadlines for your chosen schools!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 7 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading7">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false"
+                                            aria-controls="faqCollapse7">
+                                            <span itemprop="name">Do I need to help my child use Rurera?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Not really! Rurera is designed to be simple and intuitive for children to use on their own, which helps build their independence. As a parent, you can use your account to assign activities, set learning controls, and easily manage sibling accounts, all with real-time diagnostics.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 8 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading8">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse8" aria-expanded="false"
+                                            aria-controls="faqCollapse8">
+                                            <span itemprop="name">When are the results of the 11 plus exam released?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            <b>11 plus results</b> are typically sent out in October or November. This gives you time to plan for the next school year.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 9 -->
+                            <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                <div class="card-header" id="faqHeading9">
+                                    <h3 class="mb-0">
+                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                            data-toggle="collapse" data-target="#faqCollapse9" aria-expanded="false"
+                                            aria-controls="faqCollapse9">
+                                            <span itemprop="name">Ready to Start Your Journey?</span>
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                            </span>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                                    <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                        <div itemprop="text">
+                                            Don’t just search for <b>“11 plus tuition near me”</b> or <b>“11 plus test online”</b>. Choose the smarter, more engaging way. With Rurera’s <b>personalized 11 plus practice</b> and <b>comprehensive resources</b>, you are giving your child the very best chance to <b>unlock opportunities</b> and succeed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
-    <section class="parent-account-section mt-0" style="background-color: #0065ff;">
+    </div>
+</section>
+
+<section class="parent-account-section mt-0" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7 col-md-7">
