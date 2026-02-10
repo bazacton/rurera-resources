@@ -10467,8 +10467,7 @@ body .flipbook-data {
   height: 40px;
 }
 .top-navbar .register-btn:hover {
-  background-color: transparent;
-  color: var(--primary);
+  background-color: #123263;
 }
 .top-navbar .navbar-order .ml-md-50 {
   margin-left: 0 !important;
