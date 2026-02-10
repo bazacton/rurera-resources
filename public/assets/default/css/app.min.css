@@ -15299,10 +15299,11 @@ section:has(.trial-steps) .lms-btn-group a small {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 3px;
+  position: relative;
 }
 .custom-footer .form-check-field input[type="checkbox"]:checked {
-  border-color: #e63946;
-  background-color: #e63946;
+  border-color: transparent;
+  background-color: var(--primary);
 }
 
 .custom-footer .form-check-field input[type="checkbox"]:checked::after {
