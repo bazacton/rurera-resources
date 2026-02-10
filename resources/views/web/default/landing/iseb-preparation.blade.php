@@ -661,13 +661,13 @@
                 <div class="col-md-7">
                     <div class="image-container">
                         <div class="images-holder">
-                            <img src="/assets/default/img/adpative-assessment.jpg" alt="Adaptive Assessments Testing" class="feature-image active" id="img-1">
-                            <img src="/assets/default/img/company-quiz.jpg" alt="Quick Results via automated marking" class="feature-image" id="img-2">
-                            <img src="/assets/default/img/all-in-1-platform.jpg" alt="Diverse Question Formats" class="feature-image" id="img-3">
-                            <img src="/assets/default/img/company-sats.jpg" alt="Timely Reporting" class="feature-image" id="img-4">
-                            <img src="/assets/default/img/company-insights.jpg" alt="Breakthrough insights at every level" class="feature-image" id="img-5">
-                            <img src="/assets/default/img/company-performance.jpg" alt="Students Engagement" class="feature-image" id="img-6">
-                            <img src="/assets/default/img/company-rewards.jpg" alt="Reward points" class="feature-image" id="img-7">
+                            <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="builder-cpt" class="feature-image active" id="img-1">
+                            <img src="/assets/default/img/feature-slider/builder-footer.webp" alt="builder-footer" class="feature-image" id="img-2">
+                            <img src="/assets/default/img/feature-slider/builder-header.webp" alt="builder-header" class="feature-image" id="img-3">
+                            <img src="/assets/default/img/feature-slider/builder-popup.webp" alt="builder-popup" class="feature-image" id="img-4">
+                            <img src="/assets/default/img/feature-slider/builder-woo.webp" alt="builder-woo" class="feature-image" id="img-5">
+                            <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="Students Engagement" class="feature-image" id="img-6">
+                            <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="Reward points" class="feature-image" id="img-7">
                         </div>
                     </div>
                 </div>
