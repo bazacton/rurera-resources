@@ -772,9 +772,9 @@
                     var imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
 
                     if ($.inArray(extension, imageExtensions) !== -1) {
-                        image_response_html = '<img src="' + thumb + '" style="width:80px;">';
+                        image_response_html = '<img title="' + thumb + '" src="' + thumb + '" style="width:80px;">';
                     } else {
-                        image_response_html = '<a href="' + thumb + '" target="_blank">View file</a>';
+                        image_response_html = '<a title="' + thumb + '" href="' + thumb + '" target="_blank">View file</a>';
                     }
 
                     //images_response += `<li>${hidden_field.prop('outerHTML')}<img src="${thumb}" style="width:80px;"></li>`;
