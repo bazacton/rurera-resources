@@ -10425,7 +10425,7 @@ body .flipbook-data {
 .navbar-nav .nav-item:hover .sidenav-dropdown li:last-child a {
   margin-bottom: 0;
 }
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item:hover .nav-link {
   color: #1868db;
 }
 .panel-heading .panel-title:before {
