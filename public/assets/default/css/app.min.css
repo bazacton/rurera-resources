@@ -15127,6 +15127,9 @@ section:has(.trial-steps) .lms-btn-group a small {
     background-color: #007bff;
     width: 0%;
 }
+.slider-section {
+  height: 650px;
+}
 .slider-section .row {
     align-items: center;
 }
