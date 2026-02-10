@@ -24,7 +24,7 @@
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Treasure Hunt</h2>
-                                    <p class="text-white font-16">Transform learning times tables into an adventurous treasure hunt with our engaging time tables games.</p>
+                                    <p class="text-white font-14">Transform learning times tables into an adventurous treasure hunt with our engaging time tables games.</p>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block"> Division Tables Magic</h2>
-                                    <p class="text-white font-16">Bring division and multiplication table magic to life by turning it into a storytelling experience.</p>
+                                    <p class="text-white font-14">Bring division and multiplication table magic to life by turning it into a storytelling experience.</p>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Multiplication Challenges</h2>
-                                    <p class="text-white font-16">Offering interactive challenges specifically designed for earning bonus points.Offering interactive multiplication times table games specifically designed for earning bonus points.
+                                    <p class="text-white font-14">Offering interactive challenges specifically designed for earning bonus points.Offering interactive multiplication times table games specifically designed for earning bonus points.
                             </div>
                         </div>
                     </div>
