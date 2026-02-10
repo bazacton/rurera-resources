@@ -42,7 +42,7 @@
                                 @foreach($grammerSchools as $grammerSchoolObj)
                                 <tr class="listing-data-row">
                                     <td>
-                                        <span>{{ $grammerSchoolObj->school_name }}</span>
+                                        <span>{{ $grammerSchoolObj->school_name }} ({{$grammerSchoolObj->id}})</span>
                                     </td>
                                     <td class="text-left">{{ dateTimeFormat($grammerSchoolObj->created_at, 'j M y | H:i') }}</td>
                                     <td>
