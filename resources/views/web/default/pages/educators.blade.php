@@ -10,15 +10,15 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-7 col-md-7">
-                    <h1 class="font-weight-bold font-72">Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
-                    <p itemprop="description" class="font-19">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
-                    <ul class="mb-30" itemprop="courses list">
-                        <li class="mb-10 font-19" itemprop="course short info"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Enhance teaching skills</li>
-                        <li class="mb-10 font-19" itemprop="course short info"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Reduced workload</li>
-                        <li class="mb-10 font-19" itemprop="course short info">
+                    <h1>Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
+                    <p itemprop="description" class="font-14">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
+                    <ul class="mb-30">
+                        <li class="mb-10"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Enhance teaching skills</li>
+                        <li class="mb-10"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Reduced workload</li>
+                        <li class="mb-10">
                             <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Fast grading using automated marking
                         </li>
-                        <li class="mb-10 font-19" itemprop="course short info">
+                        <li>
                             <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Homework aligned with national curriculum
                         </li>
                     </ul>
