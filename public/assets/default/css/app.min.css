@@ -15231,7 +15231,8 @@ section:has(.trial-steps) .lms-btn-group a small {
   color: #101214;
 }
 .custom-footer .widget-links a:hover,
-.custom-footer .widget-location a:hover {
+.custom-footer .widget-location a:hover,
+.footer-navs a:hover {
   opacity: .5;
   text-decoration: underline;
 }
