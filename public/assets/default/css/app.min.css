@@ -15211,15 +15211,15 @@ section:has(.trial-steps) .lms-btn-group a small {
 .footer-widgets-area {
     background-color: #f8f8f8;
     border-radius: 0 0 24px 24px;
-    padding: 24px;
+    padding: 24px 24px 0;
     position: relative;
 }
 .footer-widgets-area .footer-dots-img {
     position: absolute;
-    right: 20px;
-    top: 20px;
-    height: 300px;
-    width: 300px;
+    right: 15px;
+    top: 15px;
+    height: 275px;
+    width: 275px;
     z-index: 0;
     pointer-events: none;
 }
