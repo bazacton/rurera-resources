@@ -46,7 +46,7 @@
                             <img src="/assets/default/svgs/close.svg" alt="close">
                         </button>
                     </div>
-                    <div class="mobile-login-reg-buttons">
+                    <div class="mobile-search-area">
                         <a class="mobile-register-btn" href="/register-as">Try for free</a>
                     </div>
 
