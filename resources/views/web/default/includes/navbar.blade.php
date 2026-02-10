@@ -242,7 +242,7 @@
                         </div>
                         @else
                         <div class="d-flex align-items-center ml-md-50">
-                            <a href="/login" class="py-5 px-15 mr-10 text-dark-blue font-16 login-btn">Log in</a>
+                            <a href="/login" class="py-5 px-15 mr-10 text-dark-blue font-16 login-btn">Sign in</a>
                             <a href="/register-as" class="py-5 px-15 text-dark-blue font-16 register-btn">Try for free</a>
                         </div>
                         @endif
