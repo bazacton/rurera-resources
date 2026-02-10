@@ -37,131 +37,250 @@
             </div>
         </div>
     </section>
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="section-title text-center mb-50">
-                    <h2 class="font-40 text-dark-charcoal mb-10">Frequently asked questions</h2>
-                    <p class="font-19">Asking the right questions is indeed a skill that requires careful consideration.</p>
+    <section style="background-color: #fff;" itemscope="" itemtype="https://schema.org/FAQPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-30 text-center">
+                        <h2 class="mb-10 mt-0">Frequently asked questions</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-12 col-md-12">
-                <div class="mt-0">
-                    <div class="lms-faqs mx-w-100 mt-0">
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header" id="headingsix">
-                                    <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What payment methods do you accept?</button>
-                                </div>
-                                <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>We accept a variety of payment methods to make it convenient for you, including all major credit and debit cards, PayPal, Skrill and other secure online payment options. This flexibility ensures that you can choose the payment method that works best for you.</p>
+
+                <div class="col-12 col-lg-8 col-md-12 mx-auto">
+                    <div class="mt-0">
+                        <div class="mt-0 lms-faqs mx-w-100">
+                            <div id="faqAccordion" class="accordion">
+
+                                <!-- FAQ 1 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading1">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link font-weight-bold collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false"
+                                                aria-controls="faqCollapse1">
+                                                <span itemprop="name">What payment methods do you accept?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                We accept a variety of payment methods to make it convenient for you, including all major credit and debit cards, PayPal, Skrill and other secure online payment options. This flexibility ensures that you can choose the payment method that works best for you.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Is there a free trial available?
-                                    </button>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Yes, we offer a free trial period of five days that allows you to explore all the features and resources available on Rurera. During this trial, you can experience the full functionality of our platform and determine if it's the right fit for your child's educational needs before making any commitment.</p>
+
+                                <!-- FAQ 2 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading2">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false"
+                                                aria-controls="faqCollapse2">
+                                                <span itemprop="name">Is there a free trial available?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Yes, we offer a free trial period of five days that allows you to explore all the features and resources available on Rurera. During this trial, you can experience the full functionality of our platform and determine if it's the right fit for your child's educational needs before making any commitment.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingseven">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                                        How much does a Rurera subscription cost?
-                                    </button>
-                                </div>
-                                <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Rurera offers three subscription options:
-                                    English, Maths, and Science: £39.99 per month, or £383.90 if paid annually.
-                                    Exam Prep: £59.99 per month, or £575.90 if paid annually.
-                                    Exam Prep Plus: £69.99 per month, or £671.90 if paid annually.</p>
+
+                                <!-- FAQ 3 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading3">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false"
+                                                aria-controls="faqCollapse3">
+                                                <span itemprop="name">How much does a Rurera subscription cost?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Rurera offers three subscription options:
+                                                <ul>
+                                                    <li><strong>English, Maths, and Science:</strong> £39.99 per month, or £383.90 if paid annually.</li>
+                                                    <li><strong>Exam Prep:</strong> £59.99 per month, or £575.90 if paid annually.</li>
+                                                    <li><strong>Exam Prep Plus:</strong> £69.99 per month, or £671.90 if paid annually.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="heading8">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">What is your cancellation policy?</button>
-                                </div>
-                                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>You can cancel your Rurera subscription at any time through your Parent account. Even after cancellation, you'll retain full access to all features until the end of your current billing cycle, right up to the day before your subscription is set to renew.</p>
+
+                                <!-- FAQ 4 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading4">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false"
+                                                aria-controls="faqCollapse4">
+                                                <span itemprop="name">What is your cancellation policy?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                You can cancel your Rurera subscription at any time through your Parent account. Even after cancellation, you'll retain full access to all features until the end of your current billing cycle, right up to the day before your subscription is set to renew.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="heading9">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                        Are there any additional fees or hidden charges?
-                                    </button>
-                                </div>
-                                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>No, with Rurera, the price you see is the price you pay. There are no hidden fees, surprise charges, or additional costs. We believe in transparent pricing so you can budget confidently without worrying about unexpected expenses.</p>
+
+                                <!-- FAQ 5 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading5">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false"
+                                                aria-controls="faqCollapse5">
+                                                <span itemprop="name">Are there any additional fees or hidden charges?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                No, with Rurera, the price you see is the price you pay. There are no hidden fees, surprise charges, or additional costs. We believe in transparent pricing so you can budget confidently without worrying about unexpected expenses.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="heading10">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                        Can I have two children on one subscription, or do they need separate accounts?
-                                    </button>
-                                </div>
-                                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Each child needs their own subscription to ensure that the content is appropriately tailored to their individual learning needs. However, you can easily manage multiple students under one parent portal by signing in and clicking the "+" icon to add another child. If you require more than one subscription, feel free to contact us, and we’ll provide you with a sibling discount code to help with the cost.</p>
+
+                                <!-- FAQ 6 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading6">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false"
+                                                aria-controls="faqCollapse6">
+                                                <span itemprop="name">Can I have two children on one subscription, or do they need separate accounts?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Each child needs their own subscription to ensure that the content is appropriately tailored to their individual learning needs. However, you can easily manage multiple students under one parent portal by signing in and clicking the "+" icon to add another child. If you require more than one subscription, feel free to contact us, and we’ll provide you with a sibling discount code to help with the cost.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="heading11">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                        Can I upgrade or downgrade my plan?
-                                    </button>
-                                </div>
-                                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>es, we understand that your needs may change over time. That’s why we make it easy to upgrade or downgrade your plan whenever you need. Simply go to your account settings, and you can adjust your subscription to better fit your current requirements.</p>
+
+                                <!-- FAQ 7 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading7">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false"
+                                                aria-controls="faqCollapse7">
+                                                <span itemprop="name">Can I upgrade or downgrade my plan?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Yes, we understand that your needs may change over time. That’s why we make it easy to upgrade or downgrade your plan whenever you need. Simply go to your account settings, and you can adjust your subscription to better fit your current requirements.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="heading12">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                        Which devices are compatible with Rurera?
-                                    </button>
-                                </div>
-                                <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Rurera is compatible with a wide range of modern devices and browsers, both in the UK and internationally. Whether using a desktop, laptop, Chromebook, or iPad, your child can easily access Rurera's features and resources on any of these platforms for a smooth learning experience.</p>
+
+                                <!-- FAQ 8 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading8">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse8" aria-expanded="false"
+                                                aria-controls="faqCollapse8">
+                                                <span itemprop="name">Which devices are compatible with Rurera?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Rurera is compatible with a wide range of modern devices and browsers, both in the UK and internationally. Whether using a desktop, laptop, Chromebook, or iPad, your child can easily access Rurera's features and resources on any of these platforms for a smooth learning experience.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="heading13">
-                                    <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                        Can I switch from a monthly to an annual plan?
-                                    </button>
-                                </div>
-                                <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Yes, you can switch from a monthly to an annual plan at any time. This option allows you to take advantage of the discounted annual rate, providing you with substantial savings over the course of the year. You can make this change through your account settings, and the new plan will take effect immediately or at the end of your current billing cycle, depending on your preference.</p>
+
+                                <!-- FAQ 9 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading9">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse9" aria-expanded="false"
+                                                aria-controls="faqCollapse9">
+                                                <span itemprop="name">Can I switch from a monthly to an annual plan?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Yes, you can switch from a monthly to an annual plan at any time. This option allows you to take advantage of the discounted annual rate, providing you with substantial savings over the course of the year. You can make this change through your account settings, and the new plan will take effect immediately or at the end of your current billing cycle, depending on your preference.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
   
     <section class="lms-have-question pt-70 pb-70 mt-50" style="background-color: #f3f6ff;">
         <div class="container">
