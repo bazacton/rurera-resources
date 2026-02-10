@@ -143,9 +143,11 @@
                                                     </a>
                                                 @endcan
 
-                                                    <a href="/admin/blog/{{ $post->id }}/duplicate_blog" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Duplicate">
-                                                        <i class="fa fa-copy"></i>
-                                                    </a>
+                                                <a href="/admin/blog/{{ $post->id }}/duplicate_blog" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Duplicate">
+                                                    <i class="fa fa-copy"></i>
+                                                </a>
+                                                    @include('admin.includes.delete_button',['url' => getAdminPanelUrl('/blog/'. $post->id .'/delete'), 'btnClass' => ''])
+
                                             </td>
                                         </tr>
                                     @endforeach
