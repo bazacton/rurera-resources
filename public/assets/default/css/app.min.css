@@ -15214,10 +15214,10 @@ section:has(.trial-steps) .lms-btn-group a small {
     padding: 24px;
 }
 .footer-logo {
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
     display: inline-block;
-    margin: 0 0 30px;
+    margin: 0 0 25px;
 }
 .footer-widgets-area .widget-title {
     margin-bottom: 30px;
