@@ -761,16 +761,31 @@
             var images_response = '';
             selected.forEach((item, idx) => {
                 const thumb = item.url;
+                var image_response_html = '';
                 hidden_field.val(thumb);
                 hidden_field.attr('value', thumb);
                 attachQuestionImage(question_id, item.id);
                 if(hidden_field.length > 0){
-                    images_response += `<li>${hidden_field.prop('outerHTML')}<img src="${thumb}" style="width:80px;"></li>`;
+
+
+                    var extension = thumb.split('.').pop().toLowerCase();
+                    var imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
+
+                    if ($.inArray(extension, imageExtensions) !== -1) {
+                        image_response_html = '<img src="' + thumb + '" style="width:80px;">';
+                    } else {
+                        image_response_html = '<a href="' + thumb + '" target="_blank">View file</a>';
+                    }
+
+                    //images_response += `<li>${hidden_field.prop('outerHTML')}<img src="${thumb}" style="width:80px;"></li>`;
+                    images_response += `<li>${hidden_field.prop('outerHTML')}${image_response_html}</li>`;
                 }else{
-                    images_response += `<img src="${thumb}" style="width:80px;">`;
-                    $("." + preview_div).find('img').attr('src', thumb);
+
+                    //images_response += `<img src="${thumb}" style="width:80px;">`;
+                    /*$("." + preview_div).find('img').attr('src', thumb);
                     $("." + preview_div).find('.'+field_name).attr('value', thumb);
-                    $("." + preview_div).find('.'+field_name).val(thumb);
+                    $("." + preview_div).find('.'+field_name).val(thumb);*/
+                    images_response += item.name;
                 }
 
             });
