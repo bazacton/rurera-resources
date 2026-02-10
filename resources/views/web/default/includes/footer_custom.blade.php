@@ -7,7 +7,7 @@
 					<div class="row align-items-center">
 						<div class="col-12">
 							<div class="row">
-								<div class="col-12 col-md-6 col-lg-4">
+								<div class="col-12 col-md-6 col-lg-3">
 									<div class="widget widget-links">
 										<div class="widget-title"><h2>Company</h2></div>
 										<div class="widget-body">
@@ -21,7 +21,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md-6 col-lg-4">
+								<div class="col-12 col-md-6 col-lg-3">
 									<div class="widget widget-location">
 										<div class="widget-title"><h2>What We Offer</h2></div>
 										<div class="widget-body">
@@ -34,7 +34,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md-6 col-lg-4">
+								<div class="col-12 col-md-6 col-lg-3">
 									<div class="widget widget-location">
 										<div class="widget-title"><h2>Resources</h2></div>
 										<div class="widget-body">
@@ -47,7 +47,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md-6 col-lg-4">
+								<div class="col-12 col-md-6 col-lg-3">
 									<div class="footer-newsletter">
 										<div class="widget-title"><h2>Newsletter</h2></div>
 										<div class="widget-body">
