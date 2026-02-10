@@ -129,7 +129,7 @@
                                             <td>
                                                 <a href="{{ $post->getUrl() }}" target="_blank">{{ $post->comments_count }}</a>
                                             </td>
-                                            <td>{{ dateTimeFormat($post->created_at, 'j M Y | H:i') }}</td>
+                                            <td>{{ dateTimeFormat($post->updated_at, 'j M Y | H:i') }}</td>
                                             <td>
                                                 <span class="text-{{ ($post->status == 'pending') ? 'warning' : 'success' }}">
                                                     {{ ($post->status == 'pending') ? trans('admin/main.pending') : trans('admin/main.published') }}
