@@ -15148,6 +15148,27 @@ section:has(.trial-steps) .lms-btn-group a small {
     align-items: center;
     justify-content: center;
 }
+.image-container:has(#img-1.active) {
+    background-color: #ddebdf;
+}
+.image-container:has(#img-2.active) {
+    background-color: #f9e9e9;
+}
+.image-container:has(#img-3.active) {
+    background-color: #873eff ;
+}
+.image-container:has(#img-4.active) {
+    background-color: #dcdfea;
+}
+.image-container:has(#img-5.active) {
+    background-color: #ddebdf;
+}
+.image-container:has(#img-6.active) {
+    background-color: #ddebdf;
+}
+.image-container:has(#img-7.active) {
+    background-color: #ddebdf;
+}
 .image-container .images-holder {
     position: relative;
     height: 100%;
