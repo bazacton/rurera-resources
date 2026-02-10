@@ -446,7 +446,7 @@
   width: 100%;
 }
 .mobile-login-reg-buttons,
-.mobile-logo {
+.mobile-logo, .mobile-search-area {
   display: none;
 }
 .navbar1.sticky {
