@@ -741,7 +741,8 @@
     .navbar-expand-lg .navbar-toggler .navbar-toggler-icon {
         background-image: none;
     }
-    #navbarClose img {
+    #navbarClose img,
+    .navbar-toggler-icon img {
         height: 30px;
         width: 30px;
     }
