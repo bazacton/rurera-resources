@@ -1169,6 +1169,9 @@
         font-weight: 500;
         color: #1558bc;
     }
+    .mobile-search-area {
+        padding: 15px 24px 15px;
+    }
     .mobile-login-reg-buttons .mobile-register-btn,
     .mobile-search-area .mobile-register-btn {
         background: #1868db;
@@ -1177,8 +1180,8 @@
         font-weight: 500;
         padding: 12px 20px;
         text-align: center;
-        font-weight: 500;
         width: 100%;
+        display: block;
     }
     .counter-holder .svg-shapes-bottom {
         left: 142px;
