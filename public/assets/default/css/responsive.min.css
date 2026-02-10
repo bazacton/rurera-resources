@@ -1174,6 +1174,7 @@
     }
     .mobile-search-area {
         padding: 15px 24px 15px;
+        display: block;
     }
     .mobile-login-reg-buttons .mobile-register-btn,
     .mobile-search-area .mobile-register-btn {
