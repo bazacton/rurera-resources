@@ -1204,6 +1204,15 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-field">
+                                            <label for="shares">Updated Date</label>
+                                            <input type="text" name="updated_at" value="{{isset($post->id)? formatDateYMD($post->updated_at) : ''}}" class="form-control rureradatepicker" id="updated_at" placeholder="Updated at" required>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <div class="form-field">
