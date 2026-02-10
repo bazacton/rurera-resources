@@ -2861,6 +2861,7 @@ $(document).on('click', '.delete-gallery-image', function () {
     var thisObj = $(this);
     var gallery_image = $(this).attr('data-gallery_image');
     if (!confirm("Delete this gallery image?")) return;
+    thisObj.closest('.rfp-tile').remove();
     jQuery.ajax({
         type: "GET",
         url: '/admin/common/remove_gallery_image',
