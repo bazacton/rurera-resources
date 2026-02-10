@@ -10,22 +10,22 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6">
-                    <h1 class="font-72 font-weight-bold">Inspiring <span class="text-scribble mr-10">Kids</span> to Love Words and Spelling!</h1>
-                    <h2 class="mb-15 font-30">Discover a fun and simple way to Master English spelling!</h2>
-                    <p class="font-19">
+                    <h1>Inspiring <span class="text-scribble mr-10">Kids</span> to Love Words and Spelling!</h1>
+                    <h2 class="mb-15 font-18 font-weight-bold">Discover a fun and simple way to Master English spelling!</h2>
+                    <p class="font-14">
                         We help kids build a strong foundation in spelling and vocabulary with engaging, interactive lessons based on British English. Our fun approach makes learning spelling and word usage enjoyable and effective.
                     </p>
                     <ul class="mb-0 p-0">
-                        <li class="mb-10 font-19">
+                        <li class="mb-10">
                             <img src="/assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Curriculum Word Lists: According to Curriculum word sets.
                         </li>
-                        <li class="mb-10 font-19">
+                        <li class="mb-10">
                             <img src="/assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Spelling Quizzes: Fun and interactive quizzes.
                         </li>
-                        <li class="mb-10 font-19">
+                        <li class="mb-10">
                             <img src="/assets/default/svgs/graphic-design.svg" width="25" height="25" alt="graphic-design">Win Rewards: Earn rewards for milestones.
                         </li>
-                        <li class="font-19">
+                        <li>
                             <img src="/assets/default/svgs/book-opend.svg" width="25" height="25" alt="book-opend">Progress Tracking: Easy monitoring.
                         </li>
                     </ul>
