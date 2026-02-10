@@ -1059,7 +1059,7 @@
     .navbar-nav .nav-item:has(.lms-mega-menu) > a:before {
         content: "";
         position: absolute;
-        right: 20px;
+        right: 0;
         top: 50%;
         height: 10px;
         width: 10px;
@@ -1069,7 +1069,6 @@
         margin-top: -5px;
         transition: all 0.3s;
     }
-    .navbar-nav .nav-item:has(.sidenav-dropdown) > .nav-link.collapsed:after,
     .navbar-nav .nav-item:has(.lms-mega-menu) > .nav-link.collapsed:before {
         border-bottom: 1px solid #ccc;
         border-top: 0;
