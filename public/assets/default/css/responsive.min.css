@@ -82,7 +82,6 @@
     nav.top-navbar .login-btn,
     nav .register-btn {
         white-space: nowrap;
-        font-size: 14px !important;
     }
     .lms-mega-menu {
         width: 100%;
