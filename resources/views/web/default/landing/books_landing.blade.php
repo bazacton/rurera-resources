@@ -94,7 +94,7 @@
                 <img src="/assets/default/svgs/book2.svg" alt="support" title="support" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 class="font-24 mb-10">Book Chapter Quizzes</h2>
+                <h2 class="font-20 font-weight-bold mb-10">Book Chapter Quizzes</h2>
                 <p itemprop="description" class="text-dark-charcoal">Your ultimate resource for resolving quizzes and practices tied directly to the stories your child loves.These quizzes reinforce comprehension and retention of key concepts from each book.</p>
               </div>
             </div>
@@ -107,7 +107,7 @@
                 <img src="/assets/default/svgs/analysis.svg" alt="knowledge" title="knowledge" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 class="font-24 mb-10">Assessments &amp; Tests</h2>
+                <h2 class="font-20 font-weight-bold mb-10">Assessments &amp; Tests</h2>
                 <p itemprop="description" class="text-dark-charcoal">Get reading books for kids online assessments tailored to your child's interests and reading level.Assessments track progress across reading fluency, vocabulary, and comprehension.</p>
               </div>
             </div>
@@ -120,7 +120,7 @@
                 <img src="/assets/default/svgs/coins-money.svg" alt="technical" title="technical" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
-                <h2 class="font-24 mb-10">Earn Reading Rewards</h2>
+                <h2 class="font-20 font-weight-bold mb-10">Earn Reading Rewards</h2>
                 <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards. Rewards motivate consistent reading and celebrate milestones in literacy development. </p>
               </div>
             </div>
