@@ -499,6 +499,9 @@ nav li {
 .top-navbar .navbar-order {
   margin-left: 0;
 }
+.top-navbar .navbar-brand img {
+    max-width: 89px;
+}
 .top-navbar .dropdown-menu.user-profile-dropdown {
   min-width: 250px;
   border: 1px solid #e1e1e1;
