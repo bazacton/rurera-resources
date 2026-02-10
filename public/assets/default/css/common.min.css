@@ -15487,8 +15487,6 @@ p {
 .blog-single-post .faq-edit-bar {
     display: none;
 }
-.blog-single-post .card {background-color: inherit;margin: 0 0 15px;border: 0;text-align: left;padding: 0;border-radius: 5px;overflow: hidden;}
-
 .blog-single-post .accordion h3 {
     margin-top: 0;
 }
@@ -15498,9 +15496,6 @@ p {
 .blog-single-post .card .card-header .btn-link {
     font-size: 1rem;
     font-weight: 700;
-}
-.blog-single-post .card-body {
-    padding: 0 0 15px;
 }
 /* Single Post Accordions Style End */
 
