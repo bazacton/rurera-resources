@@ -57,11 +57,15 @@
 
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
-                                            <label for="localAuthority">Local Authority</label>
-                                            <input type="text" name="local_authority" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->local_authority : ''}}" class="form-control" id="localAuthority" required>
+                                            <label for="localAuthority">Local authority / county area</label>
+                                            <select class="form-control " name="local_authority" id="local_authority" required>
+                                                @if(!empty(local_authorities_list()))
+                                                    @foreach(local_authorities_list() as $authority_title)
+                                                        <option value="{{$authority_title}}" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->local_authority === $authority_title) ? 'selected' : '' }}>{{$authority_title}}</option>
+                                                    @endforeach
+                                                @endif
+                                            </select>
                                         </div>
-
-                                        <div class="invalid-feedback">Local Authority is required.</div>
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
@@ -617,7 +621,7 @@
                                             <label for="resultDate">Kent Test (Out-of-County Schools)</label>
                                             <div class="datepicker-field">
                                                 <i class="fa fa-calendar-week"></i>
-                                                <input type="text" name="results_date" value="{{isset($grammerSchoolObj->id)? dateTimeFormat($grammerSchoolObj->results_date, 'Y-m-d') : ''}}" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
+                                                <input type="text" name="results_date" value="{{isset($grammerSchoolObj->id)? dateTimeFormat($grammerSchoolObj->results_date, 'Y-m-d') : ''}}" class="form-control rureradatepicker rurera-req-field" id="resultDate">
                                             </div>
 
                                         </div>
