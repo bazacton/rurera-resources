@@ -57,11 +57,15 @@
 
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
-                                            <label for="localAuthority">Local Authority</label>
-                                            <input type="text" name="local_authority" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->local_authority : ''}}" class="form-control" id="localAuthority" required>
+                                            <label for="localAuthority">Local authority / county area</label>
+                                            <select class="form-control " name="local_authority" id="local_authority">
+                                                @if(!empty(local_authorities_list()))
+                                                    @foreach(local_authorities_list() as $authority_title)
+                                                        <option value="{{$authority_title}}" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->local_authority === $authority_title) ? 'selected' : '' }}>{{$authority_title}}</option>
+                                                    @endforeach
+                                                @endif
+                                            </select>
                                         </div>
-
-                                        <div class="invalid-feedback">Local Authority is required.</div>
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
@@ -93,33 +97,16 @@
                                         <div class="form-field">
                                             <label for="types">Types</label>
                                             <div class="select-holder">
-                                                <select class="form-control conditional_field_parent" name="boarding_types" id="types" required>
-                                                    <option data-target_common_class="boarding_type_fields" data-target_field_class="boarding_type_mix" value="Mixed Boys and Girls" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->boarding_types === 'Mixed Boys and Girls') ? 'selected' : '' }}>Mixed Boys and Girls</option>
-                                                    <option data-target_common_class="boarding_type_fields" data-target_field_class="" value="Girls only" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->boarding_types == 'Girls only') ? 'selected' : ''}}>Girls only</option>
-                                                    <option data-target_common_class="boarding_type_fields" data-target_field_class="" value="Boys Only" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->boarding_types == 'Boys Only') ? 'selected' : ''}}>Boys Only</option>
+                                                <select class="form-control " name="boarding_types" id="types" required>
+                                                    <option  value="Mixed Boys and Girls" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->boarding_types === 'Mixed Boys and Girls') ? 'selected' : '' }}>Mixed Boys and Girls</option>
+                                                    <option  value="Girls only" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->boarding_types == 'Girls only') ? 'selected' : ''}}>Girls only</option>
+                                                    <option  value="Boys Only" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->boarding_types == 'Boys Only') ? 'selected' : ''}}>Boys Only</option>
                                                 </select>
                                             </div>
 
                                         </div>
 
                                         <div class="invalid-feedback">Please select type.</div>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3 boarding_type_fields boarding_type_mix">
-                                        <div class="form-field">
-                                            <label for="localAuthority">Boys seats</label>
-                                            <input type="number" name="boys_seats" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->boys_seats : ''}}" class="form-control" id="boys_seats" required>
-                                        </div>
-
-                                        <div class="invalid-feedback">Local Authority is required.</div>
-                                    </div>
-                                    <div class="col-md-3 mb-3 boarding_type_fields boarding_type_mix">
-                                        <div class="form-field">
-                                            <label for="localAuthority">Girls seats</label>
-                                            <input type="number" name="girls_seats" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->girls_seats : ''}}" class="form-control" id="girls_seats" required>
-                                        </div>
-
-                                        <div class="invalid-feedback">Local Authority is required.</div>
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
@@ -617,7 +604,7 @@
                                             <label for="resultDate">Kent Test (Out-of-County Schools)</label>
                                             <div class="datepicker-field">
                                                 <i class="fa fa-calendar-week"></i>
-                                                <input type="text" name="results_date" value="{{isset($grammerSchoolObj->id)? dateTimeFormat($grammerSchoolObj->results_date, 'Y-m-d') : ''}}" class="form-control rureradatepicker rurera-req-field" id="resultDate" required>
+                                                <input type="text" name="results_date" value="{{isset($grammerSchoolObj->id)? dateTimeFormat($grammerSchoolObj->results_date, 'Y-m-d') : ''}}" class="form-control rureradatepicker rurera-req-field" id="resultDate">
                                             </div>
 
                                         </div>

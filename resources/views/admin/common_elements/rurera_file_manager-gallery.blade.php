@@ -98,7 +98,6 @@
         <div class="text-muted small">Showing up to <strong>{{isset($MyRecentGalleryImages) ? $MyRecentGalleryImages->count() : 0}}</strong> recent files</div>
     </div>
 </form>
-
 <div class="grid-area">
     <div id="rfpGalleryGrid" class="mt-3 rfp-gallery-grid">
 
@@ -130,6 +129,7 @@
 
         @endif
 
+            @if($gallery_type == 'question')
         <div class="related-images-holder">
             @if(isset($GalleryImages) && $GalleryImages->count() > 0)
                 <h3>Uploaded Images</h3>
@@ -158,6 +158,7 @@
 
             @endif
         </div>
+        @endif
         
 
     </div>
