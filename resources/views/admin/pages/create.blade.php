@@ -57,6 +57,15 @@
                                             <div class="text-muted text-small mt-1">{{ trans('admin/main.new_page_link_hint') }}</div>
                                         </div>
 
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-field">
+                                                    <label for="shares">Updated Date</label>
+                                                    <input type="text" name="updated_at" value="{{isset($page->id)? formatDateYMD($page->updated_at) : ''}}" class="form-control rureradatepicker" id="updated_at" placeholder="Updated at" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
 
                                         <div class="form-group">
                                             <label>Page Title (Browser Title)</label>
