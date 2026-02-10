@@ -8,10 +8,9 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-12 col-md-12 col-lg-7">
-          <h1 class="font-72 font-weight-bold">Dive into the World of <span class="text-scribble">Books!</span>
-          </h1>
-          <strong class="d-block font-36">Read Anywhere, Anytime!</strong>
-          <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day. Rurera’s Books Shelf offers curated reading collections for children aged 4–11, aligned with literacy development goals and reading levels. </p>
+          <h1>Dive into the World of <span class="text-scribble">Books!</span></h1>
+          <strong class="d-block font-18">Read Anywhere, Anytime!</strong>
+          <p itemprop="description" class="lms-subtitle font-14 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day. Rurera’s Books Shelf offers curated reading collections for children aged 4–11, aligned with literacy development goals and reading levels. </p>
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
         </div>
       </div>
