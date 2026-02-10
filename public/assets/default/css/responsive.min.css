@@ -1080,11 +1080,11 @@
         transform: rotate(-45deg);
     }
     .navbar-nav .nav-item:has(.sidenav-dropdown) > a:after {
-        border-top: 0 !important;
-        border-left: 0 !important;
+        border-top: 0;
+        border-left: 0;
         margin-top: -4px;
         right: 5px;
-        transform: rotate(45deg) !important;
+        transform: rotate(-45deg);
     }
     .navbar-nav .nav-item .sidenav-dropdown {
         position: relative;
