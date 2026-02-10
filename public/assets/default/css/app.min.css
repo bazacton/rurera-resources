@@ -15080,8 +15080,8 @@ section:has(.trial-steps) .lms-btn-group a small {
 }
 .feature-header h5 {
     margin: 0;
-    font-weight: 600;
-    font-size: 1rem;
+    line-height: 1.2;
+    color: #B3B5CA;
     display: flex;
     align-items: center;
     justify-content: space-between;
