@@ -516,7 +516,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pb-50" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="lms-setup-progress-section lms-membership-section mb-0" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
