@@ -34,7 +34,7 @@
                 </a>
 
                 <button class="navbar-toggler navbar-order" type="button" aria-label="navbar toggler" id="navbarToggle">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"><img src="/assets/default/svgs/menu-burger.svg" height="64" width="64" alt="menu-burger"></span>
                 </button>
 
                 <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
