@@ -559,12 +559,12 @@
                         <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
                     <ul>
-                        <li><span class="font-18">Real-Time diagnostics</span></li>
-                        <li><span class="font-18">Track Child’s Learning</span></li>
-                        <li><span class="font-18">Assign Goals for your Child</span></li>
-                        <li><span class="font-18">Regular Notifications on Activities.</span></li>
-                        <li><span class="font-18">learning controls</span></li>
-                        <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
+                        <li><span>Real-Time diagnostics</span></li>
+                        <li><span>Track Child’s Learning</span></li>
+                        <li><span>Assign Goals for your Child</span></li>
+                        <li><span>Regular Notifications on Activities.</span></li>
+                        <li><span>learning controls</span></li>
+                        <li><span>Easy to Manage Sibling Accounts</span></li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5">
