@@ -120,10 +120,16 @@
                     });
                 </script>
             <div class="rfp-tile" data-item-id="{{$GalleryImageObj->id}}">
+                @php $assigned_details = isset($GalleryImageObj->assigned_details)? json_decode($GalleryImageObj->assigned_details, true): array(); @endphp
+                @if(empty($assigned_details))
+                    <a href="javascript:;" class="delete-gallery-image" data-gallery_image="{{$GalleryImageObj->id}}">Delete</a>
+                @endif
                 <img src="{{$GalleryImageObj->image_path}}" width="200">
                 <div class="rfp-tile-check">✓</div>
                 <div class="rfp-tile-label" title="{{$GalleryImageObj->title}}">{{$GalleryImageObj->title}}</div>
+
             </div>
+
             @endforeach
 
 
@@ -159,7 +165,7 @@
             @endif
         </div>
         @endif
-        
+
 
     </div>
 </div>
