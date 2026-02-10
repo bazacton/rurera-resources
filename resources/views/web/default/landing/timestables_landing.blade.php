@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 class="mt-0 mb-10 font-40">How times tables work</h2>
+                        <h2 class="mt-0 mb-10">How times tables work</h2>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
@@ -172,8 +172,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
-                        <h2 class="mb-10 font-40">Discover the Core Features of Rurera!</h2>
-                        <p class="font-16 text-gray">Rurera provides powerful resources that align with student's specific interests and learning goals.</p>
+                        <h2 class="mb-10">Discover the Core Features of Rurera!</h2>
+                        <p class="font-14 text-gray">Rurera provides powerful resources that align with student's specific interests and learning goals.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -286,7 +286,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-35 text-center">
-                        <h2 class="font-40">Why choose Rurera assessments ?</h2>
+                        <h2>Why choose Rurera assessments ?</h2>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
