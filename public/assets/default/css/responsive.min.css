@@ -390,11 +390,9 @@
         display: flex !important;
         flex-direction: column;
         background-color: #fff;
-        transition:
-            right 0.4s cubic-bezier(0.43, 0.83, 0.54, 1.02),
-            opacity 0.4s linear;
+        transition: right 0.4s cubic-bezier(0.43, 0.83, 0.54, 1.02), opacity 0.4s linear;
         border-radius: 0;
-        padding: 20px 0 0;
+        padding: 24px 24px 0;
         overflow: hidden;
         overflow-y: auto;
     }
@@ -1164,14 +1162,11 @@
         margin-top: 15px;
     }
     .mobile-login-reg-buttons .mobile-login-btn {
-        border: 1px solid var(--primary);
-        padding: 12px 15px;
-        border-radius: 5px;
-        font-weight: 500;
-        color: var(--primary);
+        padding: 12px 0;
         width: 100%;
         text-align: center;
-        font-size: 16px;
+        font-weight: 500;
+        color: #1558bc;
     }
     .mobile-login-reg-buttons .mobile-register-btn {
         background-color: var(--primary);
