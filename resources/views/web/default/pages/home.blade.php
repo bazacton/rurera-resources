@@ -26,25 +26,25 @@
                 <div class="col-12 col-md-12 col-lg-12 text-center mx-auto">
                     <h1 class="top-text font-72 font-weight-bold text-white">One Stop for Fun Learning</h1>
                     <h2 class="font-50 font-weight-bold text-white"><span id="change"><span class="old">Exam Prep 11 Plus , CAT-4 . ISEB</span></span> </h2>
-                    <p class="font-19 pt-15 text-white pb-30" data-aos-once="true" data-aos="fade-down" data-aos-anchor=".slider-hero-section" data-aos-offset="100" data-aos-duration="1000">Rurera is a transformative learning platform featuring a subscription model that delivers over 10,000 practice exercises for Key Stage 1 and Key Stage 2, along with resources for Times Tables, Books, SATs, and 11+ exams, empowering success.</p>
+                    <p class="font-19 pt-15 text-white pb-30">Rurera is a transformative learning platform featuring a subscription model that delivers over 10,000 practice exercises for Key Stage 1 and Key Stage 2, along with resources for Times Tables, Books, SATs, and 11+ exams, empowering success.</p>
                     <div class="choose-sats mt-90">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos-offset="100" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
+                                <div class="sats-box justify-content: center">
                                     <img src="/store/1/default_images/home_sections_banners/dialogue.webp" height="300" width="300" alt="practice papers">
                                     <span class="mb-10" style="color: #3d358b;">Practice papers</span>
                                     <p>Ace every exam with tailored practice papers for KS1, KS2, SATs, 11 Plus, and more.</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
+                                <div class="sats-box justify-content: center">
                                     <img src="/store/1/default_images/home_sections_banners/cactus.webp" width="300" height="300" alt="cactus image">
                                     <span class="mb-10" style="color: #c67309;">Interactive questions</span>
                                     <p>Conquer exams with 5,000+ interactive questions designed for success.</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor=".slider-hero-section">
+                                <div class="sats-box justify-content: center">
                                     <img src="/store/1/default_images/home_sections_banners/rocket-ship.webp" width="280" height="280" alt="rocket-ship image">
                                     <span class="mb-10" style="color: #7679ee;">Strong Foundation</span>
                                     <p>Build a powerful foundation that shapes every aspect of future success.</p>
@@ -73,28 +73,28 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 blue-filter" src="../assets/default/svgs/student-user.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">National Curriculum</h3>
                         <p class="pt-10">Explore wide range of learning resources available including for Years 1-6 and Functional Skills courses.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 yellow-filter" src="../assets/default/svgs/graphic-design.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Quick assessments</h3>
                         <p class="pt-10">Real-time marking data helps identify students who need extra support or more challenges quickly.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 orange-filter" src="../assets/default/svgs/sav-time.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Real time diagnostics</h3>
                         <p class="pt-10">It helps find students' learning gaps, strengths, and suggests the best study path for faster progress.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 blue-light-filter" src="../assets/default/svgs/support-white.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Get Rewards</h3>
                         <p class="pt-10">Have fun learning with Reward Coins, earn rewards, and make lasting memories.</p>
@@ -109,7 +109,7 @@
                 <div class="reward-program-section">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <div class="position-relative reward-program-section-hero-card" data-aos-once="true" data-aos="fade-up" data-aos-anchor=".reward-program-section" data-aos-offset="100" data-aos-duration="3000"> 
+                            <div class="position-relative reward-program-section-hero-card"> 
                                 <img src="/store/1/default_images/home_sections_banners/club_points_banner.webp" class="reward-program-section-hero" alt="You earned 50 points!" height="390" width="570">
                                 <div class="example-reward-card bg-white rounded-sm shadow-lg p-5 p-md-15 d-flex align-items-center">
                                     <div class="example-reward-card-medal"> 
@@ -123,7 +123,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 mt-20 mb-40 mt-lg-0 mb-lg-0">
-                            <div class="column-text" data-aos-once="true" data-aos="fade-up" data-aos-anchor=".reward-program-section" data-aos-offset="200" data-aos-duration="3000">
+                            <div class="column-text">
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
                                 <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting rewards! Learn progress, and earn coin points that increase your chances of winning. amazing rewards. Jump into the fun and start collecting coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
