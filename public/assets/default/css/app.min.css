@@ -10412,6 +10412,9 @@ body .flipbook-data {
     white-space: nowrap;
     font-weight: 500;
 }
+.navbar-nav .nav-item .sidenav-dropdown li a:hover {
+  color: #1868db;
+}
 .navbar-nav .nav-item:hover .sidenav-dropdown li:last-child a {
   margin-bottom: 0;
 }
