@@ -1099,9 +1099,12 @@
         left: 20px;
         top: 0;
         transition: none;
-        padding: 10px 0 5px 20px;
+        padding: 10px 0 5px 10px;
         background-color: inherit;
         box-shadow: none;
+    }
+    .sidenav-dropdown .sidenav-item-collapse {
+        padding: 0;
     }
     .navbar-toggle-header {
         position: absolute;
