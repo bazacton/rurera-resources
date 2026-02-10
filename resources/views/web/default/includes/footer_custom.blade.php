@@ -11,6 +11,9 @@
 									<div class="widget widget-links">
 										<div class="widget-title"><h2>Company</h2></div>
 										<div class="widget-body">
+											<a href="#">
+												<img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" loading="eager">
+											</a>
 											<ul class="font-weight-bold">
 												<li><a href="/about-us">About Us</a></li>
 												<li><a href="/blog">Blog</a></li>
