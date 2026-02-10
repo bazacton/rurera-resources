@@ -15270,7 +15270,6 @@ section:has(.trial-steps) .lms-btn-group a small {
   vertical-align: middle;
 }
 .custom-footer .footer-newsletter input[type="text"] {
-  background-color: inherit;
   border: 1px solid #5f6567;
   border-radius: 3px;
   font-size: .875rem;
