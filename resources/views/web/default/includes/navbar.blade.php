@@ -46,9 +46,6 @@
                             <img src="/assets/default/svgs/close.svg" alt="close">
                         </button>
                     </div>
-                    <div class="mobile-search-area">
-                        <a class="mobile-register-btn" href="/register-as">Try for free</a>
-                    </div>
 
                     <ul class="navbar-nav mr-auto d-flex align-items-center">
                         @if(!empty($navbarPages) and count($navbarPages))
@@ -188,7 +185,10 @@
                         @endif
                     </ul>
                     <div class="mobile-login-reg-buttons">
-                        <a class="mobile-login-btn" href="/login">Sign in</a>
+                        <div class="buttons-inner">
+                            <a class="mobile-register-btn" href="/register-as">Try for free</a>
+                            <a class="mobile-login-btn" href="/login">Sign in</a>
+                        </div>
                     </div>
                 </div>
                 @if(isset( $authUser ))
