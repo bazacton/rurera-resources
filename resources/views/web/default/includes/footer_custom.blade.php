@@ -77,9 +77,9 @@
 								</div> 
 							</div>-->
 						</div>
-					</div>
-					<div class="footer-dots-img">
-						<figure><img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure>
+						<div class="footer-dots-img">
+							<figure><img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure>
+						</div>
 					</div>
 				</div>
 			</div>
