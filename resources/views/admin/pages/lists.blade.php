@@ -34,7 +34,7 @@
                                         <th>{{ trans('admin/main.link') }}</th>
                                         <th class="text-center">{{ trans('admin/main.robot') }}</th>
                                         <th class="text-center">{{ trans('admin/main.status') }}</th>
-                                        <th>{{ trans('admin/main.created_at') }}</th>
+                                        <th>Last Updated</th>
                                         <th>{{ trans('admin/main.action') }}</th>
                                     </tr>
                                     @foreach($pages as $page)
@@ -56,7 +56,7 @@
                                                     <span class="text-warning">{{ trans('admin/main.is_draft') }}</span>
                                                 @endif
                                             </td>
-                                            <td>{{ dateTimeFormat($page->created_at, 'j M Y | H:i') }}</td>
+                                            <td>{{ dateTimeFormat($page->updated_at, 'j M Y | H:i') }}</td>
                                             <td width="150px">
 
                                                 @can('admin_pages_edit')
