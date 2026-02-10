@@ -316,28 +316,55 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-field">
+                                            <label for="additional_subject2">Additional Subject 2</label>
+                                            <div class="select-holder">
+                                                <select class="form-control conditional_field_parent" name="additional_subject2" id="additional_subject2" required>
+                                                    <option data-target_common_class="additional_subject2_fields" data-target_field_class="additional_subject2" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->additional_subject2 === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                    <option data-target_common_class="additional_subject2_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject2 == 'No') ? 'selected' : ''}}>No</option>
+                                                </select>
+                                            </div>
 
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3 mb-3 additional_subject2_fields additional_subject2">
                                         <div class="form-field">
                                             <label for="additional_subject_name">Additional Subject 2</label>
                                             <input type="text" name="additional2_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional2_subject_name : ''}}" class="form-control" id="additional2_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject2_fields additional_subject2">
                                         <div class="form-field">
                                             <label for="additional2_subject_details">Subject Details 2</label>
                                             <textarea name="additional2_subject_details" class="form-control summernote-editor-minimal" id="additional2_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional2_subject_details : ''}}</textarea>
                                         </div>
                                     </div>
 
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-field">
+                                            <label for="additional_subject2">Additional Subject 3</label>
+                                            <div class="select-holder">
+                                                <select class="form-control conditional_field_parent" name="additional_subject3" id="additional_subject3" required>
+                                                    <option data-target_common_class="additional_subject3_fields" data-target_field_class="additional_subject3" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->additional_subject3 === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                    <option data-target_common_class="additional_subject3_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject3 == 'No') ? 'selected' : ''}}>No</option>
+                                                </select>
+                                            </div>
 
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-md-3 mb-3 additional_subject3_fields additional_subject3">
                                         <div class="form-field">
                                             <label for="additional3_subject_name">Additional Subject 3</label>
                                             <input type="text" name="additional3_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional3_subject_name : ''}}" class="form-control" id="additional3_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject3_fields additional_subject3">
                                         <div class="form-field">
                                             <label for="additional3_subject_details">Subject Details 3</label>
                                             <textarea name="additional3_subject_details" class="form-control summernote-editor-minimal" id="additional3_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional3_subject_details : ''}}</textarea>
@@ -345,13 +372,26 @@
                                     </div>
 
 
-                                    <div class="col-md-3 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-field">
+                                            <label for="additional_subject2">Additional Subject 4</label>
+                                            <div class="select-holder">
+                                                <select class="form-control conditional_field_parent" name="additional_subject4" id="additional_subject4" required>
+                                                    <option data-target_common_class="additional_subject4_fields" data-target_field_class="additional_subject4" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->additional_subject4 === 'Yes') ? 'selected' : '' }}>Yes</option>
+                                                    <option data-target_common_class="additional_subject4_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject4 == 'No') ? 'selected' : ''}}>No</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 mb-3 additional_subject4_fields additional_subject4">
                                         <div class="form-field">
                                             <label for="additional4_subject_name">Additional Subject 4</label>
                                             <input type="text" name="additional4_subject_name" value="{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional4_subject_name : ''}}" class="form-control" id="additional4_subject_name">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3 additional_subject_fields additional_subject">
+                                    <div class="col-md-4 mb-3 additional_subject4_fields additional_subject4">
                                         <div class="form-field">
                                             <label for="additional4_subject_details">Subject Details 4</label>
                                             <textarea name="additional4_subject_details" class="form-control summernote-editor-minimal" id="additional4_subject_details">{{isset($grammerSchoolObj->id)? $grammerSchoolObj->additional4_subject_details : ''}}</textarea>
