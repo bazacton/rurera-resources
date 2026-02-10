@@ -1112,10 +1112,9 @@
     }
     .navbar-toggle-header {
         position: absolute;
-        right: 20px;
-        top: 15px;
+        right: 35px;
+        top: 17px;
         z-index: 1;
-        font-weight: 500;
     }
     .navbar-toggle-header svg {
         height: 25px;
