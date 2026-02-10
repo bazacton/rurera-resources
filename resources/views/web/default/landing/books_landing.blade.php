@@ -83,8 +83,8 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title text-center mb-50">
-            <h2 class="mt-0 mb-10 font-40">Activities for enhancing Reading skills.</h2>
-            <p class="font-19 pt-5 text-dark-charcoal">Curriculum aligned all major literacy strands. <br > Reading helps you think better, understand more, and solve problems more easily.including phonics, comprehension, vocabulary, and grammar skills. </p>
+            <h2 class="mt-0 mb-10">Activities for enhancing Reading skills.</h2>
+            <p class="font-14 pt-5 text-dark-charcoal">Curriculum aligned all major literacy strands. <br > Reading helps you think better, understand more, and solve problems more easily.including phonics, comprehension, vocabulary, and grammar skills. </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -121,8 +121,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-24 mb-10">Earn Reading Rewards</h2>
-                <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards. Rewards motivate consistent reading and celebrate milestones in literacy development. 
-</p>
+                <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards. Rewards motivate consistent reading and celebrate milestones in literacy development. </p>
               </div>
             </div>
           </div>
@@ -184,8 +183,8 @@
       <div class="row">
         <div class="col-12 col-lg-12">
           <div class="section-title mb-50">
-            <h2 class="text-dark-charcoal text-white font-40">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
-            <p class="font-19 pt-10 text-white"> Discover ebooks, fiction books, board books, kids' stories, and reading books for kids 5 year and reading books for kids 6 year old collections from the Rurera bookshelf.</p>
+            <h2 class="text-dark-charcoal text-white">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
+            <p class="font-14 pt-10 text-white"> Discover ebooks, fiction books, board books, kids' stories, and reading books for kids 5 year and reading books for kids 6 year old collections from the Rurera bookshelf.</p>
           </div>
         </div>
         <div class="col-12 col-lg-12">
@@ -297,7 +296,7 @@
       <div class="row">
           <div class="col-12">
             <div class="section-title text-center mb-30">
-                <h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
+                <h2 class="mt-0 mb-10">Frequently asked questions</h2>
             </div>
           </div>
           <div class="col-12 col-lg-12 col-md-12 mx-auto">
@@ -395,8 +394,8 @@
            <section class="home-sections container pb-60 mt-60">
                <div class="d-flex justify-content-between">
                    <div class="section-title">
-                       <h2 class="mt-0 mb-10 font-40">{{ trans('home.blog') }}</h2>
-                       <p class="section-hint">Uncover the Latest News and Trends!</p>
+                       <h2 class="mt-0 mb-10">{{ trans('home.blog') }}</h2>
+                       <p class="section-hint font-14">Uncover the Latest News and Trends!</p>
                    </div>
                    <a href="/blog" class="btn btn-border-white">{{ trans('home.all_blog') }}</a>
                </div>
@@ -423,8 +422,8 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
-                        <p class="font-19 pt-10">Save more with annual pricing</p>
+                        <h2 class="text-dark-charcoal mb-0">Choose the right plan for you</h2>
+                        <p class="font-14 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 text-center">
