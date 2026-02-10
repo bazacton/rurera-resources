@@ -15283,7 +15283,7 @@ section:has(.trial-steps) .lms-btn-group a small {
 }
 .custom-footer .form-check-field {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 5px;
   margin: 0 0 20px;
   flex-wrap: wrap;
