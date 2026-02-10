@@ -10,10 +10,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-11 mx-auto">
-                    <h1 class="font-72 font-weight-bold text-white mb-30">Master TimesTables with Fun <span class="text-scribble">Tricks!</span></h1>
-                    <p class="text-white font-19 mb-20">
-                        Fun Techniques-Learning Made Exciting and Rewarding! <br />
-                        A brilliant way to learn times tables multiplication and division. With these smart practices, recalling maths times tables will be an enjoyable journey filled with excitement and rewards. <br />
+                    <h1 class="text-white mb-20">Master TimesTables with Fun <span class="text-scribble">Tricks!</span></h1>
+                    <p class="text-white font-14 mb-20">
+                        Fun Techniques-Learning Made Exciting and Rewarding!
+                        A brilliant way to learn times tables multiplication and division. With these smart practices, recalling maths times tables will be an enjoyable journey filled with excitement and rewards.
                         recalling maths times tables will be an enjoyable journey filled with excitement and rewards.
                     </p>
                     <div class="row">
