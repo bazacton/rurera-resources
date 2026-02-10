@@ -734,9 +734,8 @@
     .navbar-expand-lg .navbar-toggler,
     .navbar1 .navbar-toggler {
         display: block;
-        font-size: 15px;
-        color: #000;
-        font-weight: 600;
+        height: 30px;
+        width: 30px;
     }
     .navbar-expand-lg .navbar-toggler .navbar-toggler-icon {
         background-image: none;
@@ -1340,8 +1339,8 @@
         display: none;
     }
     .navbar-toggler-icon {
-        width: 1.6em;
-        height: 1.5em;
+        width: 30px;
+        height: 30px;
     }
     .user-profile-icons .dropdown-menu-right {
         left: 0;
