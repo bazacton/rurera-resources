@@ -15213,6 +15213,12 @@ section:has(.trial-steps) .lms-btn-group a small {
     border-radius: 0 0 24px 24px;
     padding: 24px;
 }
+.footer-logo {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin: 0 0 30px;
+}
 .footer-widgets-area .widget-title {
     margin-bottom: 30px;
 }
