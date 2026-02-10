@@ -2,7 +2,6 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';"/>
-<link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css" media="print" onload="this.onload=null;this.media='all';"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -140,7 +139,7 @@
     <section class="parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="col-12 col-lg-7 col-md-7">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
                         <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
@@ -154,7 +153,7 @@
                         <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+                <div class="col-12 col-lg-5 col-md-5">
                     <div class="imb-box">
                         <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
                     </div>
@@ -166,12 +165,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title text-center mb-0" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".testimonials-container">
+                    <div class="section-title text-center mb-0">
                         <h2 class="mt-0 mb-10 font-40">Hear from Those Who Believe in Us!</h2>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="swiper-container testimonials-swiper px-10" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".testimonials-container" data-aos-delay="1000">
+                    <div class="swiper-container testimonials-swiper px-10">
                         <div class="swiper-wrapper mb-50">
                             <div class="swiper-slide">
                                 <div class="testimonials-card position-relative py-15 py-lg-30 px-10 px-lg-20 rounded-sm shadow bg-white text-center mt-80">
@@ -221,10 +220,6 @@
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
-<script src="/assets/default/vendors/scroll-animation/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 <script>
     function setupWordChange(timeout, animationTimeout = 300) {
     const container = document.getElementById("change");
