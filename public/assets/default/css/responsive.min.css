@@ -413,7 +413,7 @@
         display: block;
         padding: 0 0 24px 0;
         border-bottom: 2px dotted #ddd;
-        margin: 0 0 14px;
+        margin: 0 0 10px;
     }
     .mobile-logo img {
         object-fit: contain;
