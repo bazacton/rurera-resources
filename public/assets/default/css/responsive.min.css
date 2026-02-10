@@ -1169,7 +1169,8 @@
         font-weight: 500;
         color: #1558bc;
     }
-    .mobile-login-reg-buttons .mobile-register-btn {
+    .mobile-login-reg-buttons .mobile-register-btn,
+    .mobile-search-area .mobile-register-btn {
         background: #1868db;
         color: #fff;
         border-radius: 40px;
