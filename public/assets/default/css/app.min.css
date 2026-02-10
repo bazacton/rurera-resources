@@ -15231,7 +15231,7 @@ section:has(.trial-steps) .lms-btn-group a small {
     height: 28px;
     width: 28px;
     display: inline-block;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
 }
 .custom-footer .widget-links .footer-logo:hover {
   opacity: 1;
@@ -15240,7 +15240,7 @@ section:has(.trial-steps) .lms-btn-group a small {
   filter: invert(29%) sepia(60%) saturate(1069%) hue-rotate(189deg) brightness(91%) contrast(99%);
 }
 .footer-widgets-area .widget-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .custom-footer h2 {
   margin: 0 0 0.83em;
