@@ -401,6 +401,9 @@
         right: 0;
         margin-right: 0 !important;
     }
+    .navbar1 .navbar-nav {
+        padding: 0 15px;
+    }
     .navbar1 .navbar-nav > li {
         width: 100%;
         padding: 0;
