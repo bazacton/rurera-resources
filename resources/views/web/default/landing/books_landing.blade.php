@@ -95,7 +95,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-20 font-weight-bold mb-10">Book Chapter Quizzes</h2>
-                <p itemprop="description" class="text-dark-charcoal">Your ultimate resource for resolving quizzes and practices tied directly to the stories your child loves.These quizzes reinforce comprehension and retention of key concepts from each book.</p>
+                <p itemprop="description" class="text-dark-charcoal font-14">Your ultimate resource for resolving quizzes and practices tied directly to the stories your child loves.These quizzes reinforce comprehension and retention of key concepts from each book.</p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-20 font-weight-bold mb-10">Assessments &amp; Tests</h2>
-                <p itemprop="description" class="text-dark-charcoal">Get reading books for kids online assessments tailored to your child's interests and reading level.Assessments track progress across reading fluency, vocabulary, and comprehension.</p>
+                <p itemprop="description" class="text-dark-charcoal font-14">Get reading books for kids online assessments tailored to your child's interests and reading level.Assessments track progress across reading fluency, vocabulary, and comprehension.</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
               </figure>
               <div class="services-text mt-20">
                 <h2 class="font-20 font-weight-bold mb-10">Earn Reading Rewards</h2>
-                <p itemprop="description" class="text-dark-charcoal">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards. Rewards motivate consistent reading and celebrate milestones in literacy development. </p>
+                <p itemprop="description" class="text-dark-charcoal font-14">The more you read on our books reading website, the more you'll earn Coin Points, unlocking exciting rewards. Rewards motivate consistent reading and celebrate milestones in literacy development. </p>
               </div>
             </div>
           </div>
