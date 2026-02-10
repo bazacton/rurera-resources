@@ -4509,7 +4509,7 @@ nav li {
   padding-top: 10px;
 }
 .subscribe-plan.current-plan button.btn {
-  background-color: #596bfd;
+  background-color: var(--primary);
   color: #fff;
 }
 .subscribe-plan .subscribe-price small {
@@ -4518,7 +4518,7 @@ nav li {
   vertical-align: top;
 }
 .subscribe-plan .subscribe-price span {
-  color: #596bfd;
+  color: var(--primary);
   font-weight: 500;
 }
 .subscribe-plan:hover:not(.current-plan) {
@@ -15211,16 +15211,40 @@ section:has(.trial-steps) .lms-btn-group a small {
 .footer-widgets-area {
     background-color: #f8f8f8;
     border-radius: 0 0 24px 24px;
-    padding: 24px;
+    padding: 24px 24px 0;
+    position: relative;
+}
+.footer-widgets-area .footer-dots-img {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 275px;
+    width: 275px;
+    z-index: 0;
+    pointer-events: none;
+}
+.footer-widgets-area .row {
+    position: relative;
+    z-index: 1;
 }
 .footer-logo {
     height: 28px;
     width: 28px;
     display: inline-block;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
+}
+.custom-footer .widget-links .footer-logo:hover {
+  opacity: 1;
+}
+.footer-logo img {
+  filter: invert(29%) sepia(60%) saturate(1069%) hue-rotate(189deg) brightness(91%) contrast(99%);
 }
 .footer-widgets-area .widget-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.footer-newsletter .widget-body {
+    background-color: #fff;
+    padding: 15px;
 }
 .custom-footer h2 {
   margin: 0 0 0.83em;
@@ -15250,7 +15274,6 @@ section:has(.trial-steps) .lms-btn-group a small {
   vertical-align: middle;
 }
 .custom-footer .footer-newsletter input[type="text"] {
-  background-color: inherit;
   border: 1px solid #5f6567;
   border-radius: 3px;
   font-size: .875rem;
@@ -15263,7 +15286,7 @@ section:has(.trial-steps) .lms-btn-group a small {
 }
 .custom-footer .form-check-field {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 5px;
   margin: 0 0 20px;
   flex-wrap: wrap;
