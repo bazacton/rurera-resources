@@ -11,7 +11,7 @@
 									<div class="widget widget-links">
 										<div class="widget-title"><h2>Company</h2></div>
 										<div class="widget-body">
-											<ul>
+											<ul class="font-weight-bold">
 												<li><a href="/about-us">About Us</a></li>
 												<li><a href="/blog">Blog</a></li>
 												<li><a href="/careers">Careers</a></li>
