@@ -9,14 +9,14 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
-                    <h1 class="font-weight-bold font-72"><span class="mr-10 text-scribble">Independent</span>Schools Entrance Exams</h1>
-                    <h2 class="font-30 mb-15">Unlock your Dreams: Master Entrance Exams</h2>
-                    <p class="font-19">Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</p>
-                    <ul class="mb-30 p-0">
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Fun, targeted sessions to build your skills.</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Smart strategies for every type of exam question.</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: We are committed to your improved performance</li>
-                        <li class="font-19"><img alt="#" height="25" src="/assets/default/svgs/book-opend.svg" width="25" />Proven Success: A method that really works.</li>
+                    <h1><span class="mr-10 text-scribble">Independent</span>Schools Entrance Exams</h1>
+                    <h2 class="font-18 font-weight-bold mb-10">Unlock your Dreams: Master Entrance Exams</h2>
+                    <p class="font-14">Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</p>
+                    <ul class="mb-30 p-0 font-14">
+                        <li class="mb-10"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Fun, targeted sessions to build your skills.</li>
+                        <li class="mb-10"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Smart strategies for every type of exam question.</li>
+                        <li class="mb-10"><img alt="#" height="25" src="/assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: We are committed to your improved performance</li>
+                        <li><img alt="#" height="25" src="/assets/default/svgs/book-opend.svg" width="25" />Proven Success: A method that really works.</li>
                     </ul>
                     <a href="https://rurera.com/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                 </div>
@@ -554,155 +554,254 @@
             <a href="{{url('/')}}/pricing" class="btn-primary font-16 text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
         </div>
     </section>
-    <section class="py-100" style="background-color: #fff;">
+    <section class="py-100" style="background-color: #fff;" itemscope="" itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title mb-30 text-center"><h2 class="mb-10 font-40 mt-0">Frequently asked questions</h2></div>
+                    <div class="section-title mb-30 text-center">
+                        <h2 class="mb-10 mt-0">Frequently asked questions</h2>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-12 col-md-12 mx-auto">
-                    <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div id="accordion">
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingsix">
-                                        <h3 class="mb-0">
-                                            <button aria-controls="collapsesix" aria-expanded="true" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapsesix" data-toggle="collapse">
-                                                What is an independent medical exam?
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapsesix" aria-labelledby="headingsix" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                (Note: This is a different type of exam, but we’ll clarify!) An independent medical exam is usually a health check by a doctor not chosen by your usual doctor.
-                                                How long does an independent medical exam take? It often takes about 30 minutes to an hour.
-                                                Rurera focuses on academic entrance exams for independent schools.
 
-                                            </p>
+                <div class="col-12 col-lg-8 col-md-12 mx-auto">
+                    <div class="mt-0">
+                        <div class="mt-0 lms-faqs mx-w-100">
+                            <div id="faqAccordion" class="accordion">
+
+                                <!-- FAQ 1 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading1">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link font-weight-bold collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false"
+                                                aria-controls="faqCollapse1">
+                                                <span itemprop="name">What is an independent medical exam?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+
+                                    <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                (Note: This is a different type of exam, but we’ll clarify!) An independent medical exam is usually a health check by a doctor not chosen by your usual doctor. How long does an independent medical exam take? It often takes about 30 minutes to an hour. Rurera focuses on academic entrance exams for independent schools.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingTwo">
+
+                                <!-- FAQ 2 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading2">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapseTwo" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseTwo" data-toggle="collapse">
-                                                How do I find the best independent exam centres in London?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false"
+                                                aria-controls="faqCollapse2">
+                                                <span itemprop="name">How do I find the best independent exam centres in London?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body"><p>For school entrance exams, you usually take them at the school you are applying to. For other qualifications, like an independent A Level exam centre, you would need to research certified centres. Rurera prepares you for the test itself.</p></div>
+
+                                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                For school entrance exams, you usually take them at the school you are applying to. For other qualifications, like an independent A Level exam centre, you would need to research certified centres. Rurera prepares you for the test itself.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingseven">
+
+                                <!-- FAQ 3 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading3">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapseseven" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseseven" data-toggle="collapse">
-                                                Where can I find past papers?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false"
+                                                aria-controls="faqCollapse3">
+                                                <span itemprop="name">Where can I find past papers?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapseseven" aria-labelledby="headingseven" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+
+                                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 Right here! Rurera provides access to entrance exam papers for independent schools and independent school entrance exam papers as part of our practice resources library.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading8">
+
+                                <!-- FAQ 4 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading4">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse8" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse8" data-toggle="collapse">
-                                                Does this help with the 11 plus for private schools?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false"
+                                                aria-controls="faqCollapse4">
+                                                <span itemprop="name">Does this help with the 11 plus for private schools?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse8" aria-labelledby="heading8" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
+
+                                    <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
                                                 Absolutely! Many independent schools use a similar format to the 11 plus exam. Our preparation is perfect for the <a href="https://rurera.com/11-plus">11 plus exam</a> independent schools use, covering all the same key subjects and skills.
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading9">
+
+                                <!-- FAQ 5 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading5">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse9" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse9" data-toggle="collapse">
-                                                How do the Play and Learn Quizzes work?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false"
+                                                aria-controls="faqCollapse5">
+                                                <span itemprop="name">How do the Play and Learn Quizzes work?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse9" aria-labelledby="heading9" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Our Play and Learn Quizzes turn vocabulary and spelling practice into engaging games. Kids complete interactive challenges that reinforce their learning in a fun and motivating way.</p>
+
+                                    <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Our Play and Learn Quizzes turn vocabulary and spelling practice into engaging games. Kids complete interactive challenges that reinforce their learning in a fun and motivating way.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading10">
+
+                                <!-- FAQ 6 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading6">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse10" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse10" data-toggle="collapse">
-                                                How can Progress Rewards benefit my child?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false"
+                                                aria-controls="faqCollapse6">
+                                                <span itemprop="name">How can Progress Rewards benefit my child?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse10" aria-labelledby="heading10" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Progress Rewards provide tangible recognition for your child’s achievements. Earning rewards for milestones and improvements helps keep them motivated and engaged in their learning journey.</p>
+
+                                    <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Progress Rewards provide tangible recognition for your child’s achievements. Earning rewards for milestones and improvements helps keep them motivated and engaged in their learning journey.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading11">
+
+                                <!-- FAQ 7 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading7">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse11" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse11" data-toggle="collapse">
-                                                Why should I choose Rurera for my child’s vocabulary and spelling practice?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false"
+                                                aria-controls="faqCollapse7">
+                                                <span itemprop="name">Why should I choose Rurera for my child’s vocabulary and spelling practice?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse11" aria-labelledby="heading11" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Rurera stands out with its engaging features, personalized learning tools, and a fun, interactive approach. We provide a comprehensive platform that makes vocabulary and spelling practice both
-                                                effective and enjoyable for kids.
-                                            </p>
+
+                                    <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Rurera stands out with its engaging features, personalized learning tools, and a fun, interactive approach. We provide a comprehensive platform that makes vocabulary and spelling practice both effective and enjoyable for kids.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading12">
+
+                                <!-- FAQ 8 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading8">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse12" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse12" data-toggle="collapse">
-                                                How can I find new vocabulary words to learn on Rurera?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse8" aria-expanded="false"
+                                                aria-controls="faqCollapse8">
+                                                <span itemprop="name">How can I find new vocabulary words to learn on Rurera?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse12" aria-labelledby="heading12" data-parent="#accordion">
-                                        <div class="card-body"><p>Explore Rurera’s word lists, daily vocabulary features, and spelling bee vocabulary sets to discover new words to learn.</p></div>
+
+                                    <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Explore Rurera’s word lists, daily vocabulary features, and spelling bee vocabulary sets to discover new words to learn.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading13">
+
+                                <!-- FAQ 9 -->
+                                <div class="card" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading9">
                                         <h3 class="mb-0">
-                                            <button aria-controls="collapse13" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse13" data-toggle="collapse">
-                                                How often should I practice spelling on Rurera to improve?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse9" aria-expanded="false"
+                                                aria-controls="faqCollapse9">
+                                                <span itemprop="name">How often should I practice spelling on Rurera to improve?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div class="collapse" id="collapse13" aria-labelledby="heading13" data-parent="#accordion">
-                                        <div class="card-body"><p>For the best results, practice regularly aim for a few times a week. Consistent practice helps reinforce your spelling skills and improve over time.</p></div>
+
+                                    <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                For the best results, practice regularly aim for a few times a week. Consistent practice helps reinforce your spelling skills and improve over time.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
