@@ -990,168 +990,250 @@
         </div>
     </section>
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
-    <section class="py-100" style="background-color: #fff">
+    <section class="py-100" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title text-center mb-30">
-                        <h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
+                    <div class="section-title mb-30 text-center">
+                        <h2 class="mb-10 mt-0">Frequently asked questions</h2>
                     </div>
                 </div>
-                <div class="col-12 col-lg-12 col-md-12 mx-auto">
+
+                <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="lms-faqs mx-w-100 mt-0" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div id="accordion">
-                                @if( !empty( $faq_items ))
+                        <div class="mt-0 lms-faqs mx-w-100">
+                            <div id="faqAccordion" class="accordion">
 
-                                @foreach( $faq_items as $itemData)
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                <!-- FAQ 1 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading1">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">{{isset( $itemData['title'])? $itemData['title'] : '' }}</button>
+                                            <button class="font-20 btn-link font-weight-bold collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false"
+                                                aria-controls="faqCollapse1">
+                                                <span itemprop="name">Where can I find free SATs papers?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>{{isset( $itemData['description'])? $itemData['description'] : '' }}</p>
+                                    <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                While some previous SATs papers are available on government websites, they typically don't include answer sheets or explanations.
+                                                <br>Rurera offers both past papers and comprehensive support materials through our subscription platform.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach
 
-                                @else
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading7">
+                                <!-- FAQ 2 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading2">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">Where can I find free SATs papers?</button>
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false"
+                                                aria-controls="faqCollapse2">
+                                                <span itemprop="name">Are SATs results important for secondary school?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
                                         </h3>
                                     </div>
-                                    <div id="collapse7" class="collapse" aria-labelledby="heading7">
-                                        <div class="card-body">
-                                            <p>While some previous SATs papers are available on government websites, they typically don't include answer sheets or explanations. <br>Rurera offers both past papers and comprehensive support materials through our subscription platform. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingTwo">
-                                        <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo"> Are SATs results important for secondary school?</button></h3>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Secondary schools receive SATs results but most conduct their own assessments for setting purposes. 
+                                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Secondary schools receive SATs results but most conduct their own assessments for setting purposes.
                                                 However, strong SATs performance indicates good foundational knowledge for GCSE subjects years later.
-                                            </p>
-                                            
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingseven">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> How much should my child practice for SATs?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p> We recommend short, regular sessions (20-30 minutes, 3-4 times weekly) rather than long cramming sessions. Quality of practice matters more than quantity.
 
-                                            </p>
-                                        
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading8">
+                                <!-- FAQ 3 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading3">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">What's the difference between KS1 and KS2 SATs?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>KS1 SATs papers are generally shorter, teacher-administered, and marked in schools. Key Stage 2 SATs papers are externally set, taken under formal conditions, and externally marked (except writing).<br> and externally marked (except writing).
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading9">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">When will 2025 SATs results be released?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false"
+                                                aria-controls="faqCollapse3">
+                                                <span itemprop="name">How much should my child practice for SATs?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>SATs results 2025 will be released to schools in early July 2025, with parents receiving their child's results before the end of the summer term.</p>
-                                            
+                                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                We recommend short, regular sessions (20-30 minutes, 3-4 times weekly) rather than long cramming sessions.
+                                                Quality of practice matters more than quantity.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading10">
+
+                                <!-- FAQ 4 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading4">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">How can I help my child with SATs anxiety?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Maintain perspective (they're snapshots, not destiny), establish consistent routines, celebrate effort not just results, and use our wellbeing resources designed specifically for SATs preparation.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading11">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">How does Rurera boost and sustain my child's motivation?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                Along with exciting features like coins to collect and worlds to explore, our algorithm is busy working in the background. Rurera constantly adjusts the difficulty level to match your child's learning style and pace, ensuring they stay challenged without losing motivation. <br>There are plenty of interactive resources to help your child deepen their understanding of each topic, such as helpsheets.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading12">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">What support and resources does Rurera offer for my child's learning?</button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                No other platform combines adaptive learning, teacher-crafted content, and expert guidance all in one package! We're available to assist you by phone or email whenever you need support.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading13">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">Will my child need my help to use Rurera, or can they manage it independently?
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false"
+                                                aria-controls="faqCollapse4">
+                                                <span itemprop="name">What's the difference between KS1 and KS2 SATs?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
                                             </button>
                                         </h3>
                                     </div>
-                                    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Not at all, we've crafted Rurera to be enjoyable and simple for your child to use independently. With helpsheets, they can build new knowledge and gain confidence in learning on their own.
-
-                                            </p>
+                                    <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                KS1 SATs papers are generally shorter, teacher-administered, and marked in schools.
+                                                Key Stage 2 SATs papers are externally set, taken under formal conditions, and externally marked (except writing).
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                @endif
+
+                                <!-- FAQ 5 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading5">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false"
+                                                aria-controls="faqCollapse5">
+                                                <span itemprop="name">When will 2025 SATs results be released?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                SATs results 2025 will be released to schools in early July 2025, with parents receiving their child's results before the end of the summer term.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ 6 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading6">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false"
+                                                aria-controls="faqCollapse6">
+                                                <span itemprop="name">How can I help my child with SATs anxiety?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Maintain perspective (they're snapshots, not destiny), establish consistent routines, celebrate effort not just results,
+                                                and use our wellbeing resources designed specifically for SATs preparation.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ 7 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading7">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false"
+                                                aria-controls="faqCollapse7">
+                                                <span itemprop="name">How does Rurera boost and sustain my child's motivation?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Along with exciting features like coins to collect and worlds to explore, our algorithm is busy working in the background.
+                                                Rurera constantly adjusts the difficulty level to match your child's learning style and pace, ensuring they stay challenged without losing motivation.
+                                                <br>There are plenty of interactive resources to help your child deepen their understanding of each topic, such as helpsheets.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ 8 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading8">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse8" aria-expanded="false"
+                                                aria-controls="faqCollapse8">
+                                                <span itemprop="name">What support and resources does Rurera offer for my child's learning?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                No other platform combines adaptive learning, teacher-crafted content, and expert guidance all in one package!
+                                                We're available to assist you by phone or email whenever you need support.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ 9 -->
+                                <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="faqHeading9">
+                                        <h3 class="mb-0">
+                                            <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                                data-toggle="collapse" data-target="#faqCollapse9" aria-expanded="false"
+                                                aria-controls="faqCollapse9">
+                                                <span itemprop="name">Will my child need my help to use Rurera, or can they manage it independently?</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                                    <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                                </span>
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                                        <div class="card-body" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                                            <div itemprop="text">
+                                                Not at all, we've crafted Rurera to be enjoyable and simple for your child to use independently.
+                                                With helpsheets, they can build new knowledge and gain confidence in learning on their own.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
