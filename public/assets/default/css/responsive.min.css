@@ -414,14 +414,13 @@
     }
     .mobile-logo {
         display: block;
-        padding: 0 0 24px 0;
+        padding: 0 0 15px 0;
         border-bottom: 2px dotted #ddd;
         margin: 0 0 10px;
     }
     .mobile-logo img {
         object-fit: contain;
-        max-width: 89px;
-        max-height: 21px;
+        max-width: 130px;
     }
     .navbar-brand {
         margin-right: 0;
@@ -1162,13 +1161,21 @@
     }
     .mobile-login-reg-buttons {
         display: flex;
-        border-top: 2px dotted rgb(0 0 0 / 0.1);
-        padding: 20px 0;
+        padding: 0 15px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 15px;
         margin-top: 24px;
+    }
+    .buttons-inner {
+        border-top: 2px dotted rgb(0 0 0 / 0.1);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 0 15px;
     }
     .mobile-login-reg-buttons .mobile-login-btn {
         padding: 12px 0;
