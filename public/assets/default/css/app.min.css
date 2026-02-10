@@ -15295,12 +15295,29 @@ section:has(.trial-steps) .lms-btn-group a small {
   margin: 4px 0 0;
   height: 18px;
   width: 18px;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+}
+.custom-footer .form-check-field input[type="checkbox"]:checked {
+  border-color: #e63946;
+  background-color: #e63946;
+}
+
+.custom-footer .form-check-field input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #fff;
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  font-size: 14px;
 }
 .custom-footer .form-check-field label {
   margin: 0;
   font-size: .875rem;
   width: calc(100% - 25px);
-  color: #101214;
+  color: #ccc;
 }
 .footer .footer-subscribe strong {
   font-size: 30px;
