@@ -675,7 +675,7 @@
         </div>
     </section>
 
-    <section class="py-100" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
+    <section class="pb-70" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
