@@ -717,8 +717,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title mb-30 text-center">
-                    <h2 class="mb-10 mt-0">Frequently asked questions</h2>
+                <div class="section-title mb-50 text-center">
+                    <h2 class="mb-10 mt-0 font-40">Frequently asked questions</h2>
                 </div>
             </div>
 
