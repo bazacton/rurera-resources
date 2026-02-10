@@ -478,6 +478,9 @@
   padding: 10px 20px;
   transition: all 0.3s;
 }
+.navbar1 li .nav-link:hover {
+  color: #1868db;
+}
 .register-btn {
   background: #1868db;
   color: #fff;
