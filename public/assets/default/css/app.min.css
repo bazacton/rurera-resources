@@ -10414,7 +10414,6 @@ body .flipbook-data {
 .navbar-nav .nav-item .nav-link:hover {
   color: #1868db;
 }
-.navbar-nav .nav-item .sidenav-dropdown li a:before,
 .panel-heading .panel-title:before {
   content: "";
   position: absolute;
