@@ -738,6 +738,9 @@
         color: #000;
         font-weight: 600;
     }
+    .navbar-expand-lg .navbar-toggler .navbar-toggler-icon {
+        background-image: none;
+    }
     #navbarClose img {
         height: 30px;
         width: 30px;
