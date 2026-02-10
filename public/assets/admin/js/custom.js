@@ -2739,7 +2739,9 @@ $('body').on('change', '.conditional_field_parent', function (e) {
     console.log(target_field_class);
     console.log(target_common_class);
     $('.'+target_common_class).addClass('rurera-hide');
-    $('.'+target_field_class).removeClass('rurera-hide');
+    if(target_field_class != '') {
+        $('.' + target_field_class).removeClass('rurera-hide');
+    }
 });
 if($(".conditional_field_parent").length > 0){
     $(".conditional_field_parent:checked").change();

@@ -322,7 +322,7 @@
                                             <div class="select-holder">
                                                 <select class="form-control conditional_field_parent" name="additional_subject2" id="additional_subject2" required>
                                                     <option data-target_common_class="additional_subject2_fields" data-target_field_class="additional_subject2" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->additional_subject2 === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                    <option data-target_common_class="additional_subject2_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject2 == 'No') ? 'selected' : ''}}>No</option>
+                                                    <option data-target_common_class="additional_subject2_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject2 == 'No') || !isset($grammerSchoolObj->id) ? 'selected' : ''}}>No</option>
                                                 </select>
                                             </div>
 
@@ -345,11 +345,11 @@
 
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
-                                            <label for="additional_subject2">Additional Subject 3</label>
+                                            <label for="additional_subject3">Additional Subject 3</label>
                                             <div class="select-holder">
                                                 <select class="form-control conditional_field_parent" name="additional_subject3" id="additional_subject3" required>
                                                     <option data-target_common_class="additional_subject3_fields" data-target_field_class="additional_subject3" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->additional_subject3 === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                    <option data-target_common_class="additional_subject3_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject3 == 'No') ? 'selected' : ''}}>No</option>
+                                                    <option data-target_common_class="additional_subject3_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject3 == 'No') || !isset($grammerSchoolObj->id) ? 'selected' : ''}}>No</option>
                                                 </select>
                                             </div>
 
@@ -374,11 +374,11 @@
 
                                     <div class="col-md-3 mb-3">
                                         <div class="form-field">
-                                            <label for="additional_subject2">Additional Subject 4</label>
+                                            <label for="additional_subject4">Additional Subject 4</label>
                                             <div class="select-holder">
                                                 <select class="form-control conditional_field_parent" name="additional_subject4" id="additional_subject4" required>
                                                     <option data-target_common_class="additional_subject4_fields" data-target_field_class="additional_subject4" value="Yes" {{ (!isset($grammerSchoolObj->id) || $grammerSchoolObj->additional_subject4 === 'Yes') ? 'selected' : '' }}>Yes</option>
-                                                    <option data-target_common_class="additional_subject4_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject4 == 'No') ? 'selected' : ''}}>No</option>
+                                                    <option data-target_common_class="additional_subject4_fields" data-target_field_class="" value="No" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->additional_subject4 == 'No') || !isset($grammerSchoolObj->id) ? 'selected' : ''}}>No</option>
                                                 </select>
                                             </div>
 
