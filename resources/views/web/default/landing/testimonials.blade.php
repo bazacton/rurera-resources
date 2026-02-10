@@ -181,7 +181,7 @@
         </div>
     </div>
 </section>
-<section class="lms-testimonial-tabs pt-50 pb-50">
+<section class="lms-testimonial-tabs pt-50">
   <div class="container">
     <div class="lms-testimonials row">
       <div class="col-12 mb-20">
