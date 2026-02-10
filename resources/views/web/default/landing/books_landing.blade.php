@@ -183,7 +183,7 @@
       <div class="row">
         <div class="col-12 col-lg-12">
           <div class="section-title mb-50">
-            <h2 class="text-dark-charcoal text-white">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
+            <h2 class="text-white">Ignite Every Student’s Passion for Reading and <br /> Let Their Brilliance Shine!</h2>
             <p class="font-14 pt-10 text-white"> Discover ebooks, fiction books, board books, kids' stories, and reading books for kids 5 year and reading books for kids 6 year old collections from the Rurera bookshelf.</p>
           </div>
         </div>
