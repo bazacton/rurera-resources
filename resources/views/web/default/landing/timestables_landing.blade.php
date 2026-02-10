@@ -86,7 +86,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="lms-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
-                            <h3 class="mb-10 font-30 d-flex text-white">
+                            <h3 class="mb-10 d-flex text-white">
                                 <span class="icon-svg mr-15 mt-5">
                                     <img src="/assets/default/svgs/bulb-white.svg" alt="#" height="35" width="35" />
                                 </span> Boost Your Child's Multiplication and Division Skills with a Splash of Fun!
