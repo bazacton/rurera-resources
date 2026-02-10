@@ -185,7 +185,7 @@
                         @endif
                     </ul>
                     <div class="mobile-login-reg-buttons">
-                        <a class="mobile-login-btn" href="/login">Log in</a>
+                        <a class="mobile-login-btn" href="/login">Sign in</a>
                         <a class="mobile-register-btn" href="/register-as">Try for free</a>
                     </div>
                 </div>
