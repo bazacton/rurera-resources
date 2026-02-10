@@ -10397,10 +10397,13 @@ body .flipbook-data {
   background-color: #f8f8f8;
   z-index: -1;
 } */
+ .sidenav-dropdown .sidenav-item-collapse {
+    padding: 40px 20px;
+}
 .navbar-nav .nav-item .sidenav-dropdown li a {
   font-size: 14px;
   text-align: center;
-  color: #171347;
+  color: #101214;
   display: block;
   margin-bottom: 20px;
   padding-left: 10px;
