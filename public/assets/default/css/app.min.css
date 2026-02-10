@@ -8160,7 +8160,7 @@ body .flipbook-data {
   text-align: left;
   position: relative;
   transition: none;
-  color: #292a2e;
+  color: #000;
 }
 .lms-faqs .card .card-header .btn-link:hover {
   color: var(--primary);
