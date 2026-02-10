@@ -1,5 +1,5 @@
 
-<section class="custom-footer pt-80 pb-50" style="background-color:#000">
+<section class="custom-footer pb-50">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -55,17 +55,17 @@
 								<div class="footer-dots-img">
 									<figure><img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure>
 								</div>
-								<div class="footer-logo-box">
+								<!-- <div class="footer-logo-box">
 									<img src="/store/1/logo.png" width="185" height="38" alt="footer logo image">
 									<a href="/contact-us" class="mt-20"><span>Schedule Consultation</span></a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-12">
-				<div class="footer-bottom pt-50">
+				<div class="footer-bottom">
 					<div class="footer-nav-holder pt-50">
 						<div class="footer-nav-box">
 							<div class="footer-navs">
