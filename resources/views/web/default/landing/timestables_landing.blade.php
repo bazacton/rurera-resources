@@ -65,12 +65,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 text-center">
-                    <h2 class="d-block font-40 mb-10">Rurera</h2>
-                    <p class="font-16 text-gray mb-30">
+                    <h2 class="mb-10">Rurera</h2>
+                    <p class="font-14 text-gray mb-30">
                     <a href="https://rurera.com/">Rurera</a>provides awesome and interactive ways for students to learn times tables while having fun. Immediate feedback helps identify and correct mistakes during times table practice.
                     </p>
                     <strong class="font-18 mb-20 d-block">Memorize times tables, Multiply with Ease!</strong>
-                    <p class="font-16 text-gray">
+                    <p class="font-14 text-gray">
                         Our personalized approach allows students to focus on specific times tables they find challenging, spending more time practice times tables on those facts until they are confidently memorized.
                     </p>
                     <div class="d-flex align-items-center justify-content-center pt-30">
