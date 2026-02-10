@@ -1085,6 +1085,8 @@
         margin-top: -4px;
         right: 5px;
         transform: rotate(-45deg);
+        height: 8px;
+        width: 8px;
     }
     .navbar-nav .nav-item .sidenav-dropdown {
         position: relative;
