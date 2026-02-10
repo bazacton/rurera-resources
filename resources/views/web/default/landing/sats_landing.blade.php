@@ -10,26 +10,26 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6">
-                    <h1 class="font-72 font-weight-bold">Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
-                    <h2 class="mb-15 font-30">Maximize Your Performance: Boost Your SATS Scores.
+                    <h1>Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
+                    <h2 class="mb-15 font-18 font-weight-bold">Maximize Your Performance: Boost Your SATS Scores.
                     </h2>
-                    <p class="font-19">
+                    <p class="font-14">
                         Don't leave your SATs performance to chance! Join us to unlock your full potential and excel on the sats exams. Transform your test preparation with our expert guidance and practice sats papers achieve the scores you’ve always dreamed of!
 
                     </p>
                     <ul class="mb-0 p-0">
-                        <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Top Performance: Engaging Quizzes & SAT Assessment Test Prep
+                        <li class="mb-10">
+                            <img src="/assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Top Performance: Engaging Quizzes & SAT Assessment Test Prep
                         </li>
-                        <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Comprehensive Exam Prep: Tools & Strategies
+                        <li class="mb-10">
+                            <img src="/assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Comprehensive Exam Prep: Tools & Strategies
 
                         </li>
-                        <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="graphic-design">Score Guarantee: Achieve Your Best
+                        <li class="mb-10">
+                            <img src="/assets/default/svgs/graphic-design.svg" width="25" height="25" alt="graphic-design">Score Guarantee: Achieve Your Best
                         </li>
-                        <li class="font-19">
-                            <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="book-opend">Proven Resources: 100% Success Results
+                        <li>
+                            <img src="/assets/default/svgs/book-opend.svg" width="25" height="25" alt="book-opend">Proven Resources: 100% Success Results
                         </li>
                     </ul>
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
