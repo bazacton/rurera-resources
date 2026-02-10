@@ -15,7 +15,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(10, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="20" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -29,7 +29,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(2, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="200" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/entrance-exams.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -43,7 +43,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(3, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/sats-home-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -57,7 +57,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(9, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/timetables-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -71,7 +71,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(8, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/book-shelf-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -85,7 +85,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(15, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/teacher-empowerment-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -99,7 +99,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(17, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/rewards-features.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -113,7 +113,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(5, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/quick-assesments.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -127,7 +127,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(6, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/feature-automated-marking.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -141,7 +141,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(11, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/performance-monitering.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -155,7 +155,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(7, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/insights-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -169,7 +169,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(16, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/protection-feature.webp" alt="feature image" height="143" width="276">
                     </figure>
@@ -184,7 +184,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(1, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
@@ -199,7 +199,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(4, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
@@ -214,7 +214,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(12, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/progress-tracking.jpg" alt="feature image" height="143" width="276">
                     </figure>
@@ -228,7 +228,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(13, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/skill-plans-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
@@ -242,7 +242,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(14, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/advance-learning-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
@@ -257,7 +257,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(18, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
                     </figure>
@@ -271,7 +271,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @if( in_array(19, $items))
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="feature-grid text-center mb-40" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
+                <div class="feature-grid text-center mb-40">
                     <figure class="mb-20">
                         <img src="../assets/default/img/gamified-learning.png" alt="feature image" height="143" width="276">
                     </figure>
