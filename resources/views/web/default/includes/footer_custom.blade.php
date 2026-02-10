@@ -56,7 +56,7 @@
 											</div>
 											<div class="form-check-field">
 												<input type="checkbox" id="privacy-policy">
-												<label for="privacy-policy">I agree to the Privacy Policy and give my permission to process my personal data for the purposes specified in the Privacy Policy.</label>
+												<label for="privacy-policy">I agree to the Privacy Policy</label>
 											</div>
 											<div class="form-btn-field"><button type="submit">Send</button></div>
 										</div>
