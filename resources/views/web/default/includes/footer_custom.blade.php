@@ -12,7 +12,7 @@
 										<a href="#" class="footer-logo">
 											<img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" loading="eager">
 										</a>
-										<div class="widget-title"><h2>Company</h2></div>
+										<div class="widget-title mb-15"><h2>Company</h2></div>
 										<div class="widget-body">
 											<ul class="font-weight-bold">
 												<li><a href="/about-us">About Us</a></li>
@@ -77,6 +77,9 @@
 								</div> 
 							</div>-->
 						</div>
+					</div>
+					<div class="footer-dots-img">
+						<figure><img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure>
 					</div>
 				</div>
 			</div>
