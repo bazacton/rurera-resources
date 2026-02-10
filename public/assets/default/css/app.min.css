@@ -10384,6 +10384,12 @@ body .flipbook-data {
   opacity: 1;
   visibility: visible;
   top: 100%;
+} 
+.navbar-nav .nav-item:has(.sidenav-dropdown):hover>a:after {
+  transform: rotate(45deg) scale(-1);
+  border: 2px solid #1868db;
+  border-top: 0;
+  border-left: 0;
 }
 /* .navbar-nav .nav-item .sidenav-dropdown:before {
   content: "";
