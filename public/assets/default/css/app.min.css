@@ -10390,6 +10390,7 @@ body .flipbook-data {
   border: 2px solid #1868db;
   border-top: 0;
   border-left: 0;
+  margin-top: 0;
 }
 /* .navbar-nav .nav-item .sidenav-dropdown:before {
   content: "";
