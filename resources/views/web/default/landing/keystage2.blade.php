@@ -418,12 +418,12 @@
             </div>
         </div>
     </section>
-    <section class="pb-70 pt-50">
+    <section class="pt-50">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="font-40 mb-10">KS2 Expert Resources</h2>
+                        <h2 class="mb-10">KS2 Expert Resources</h2>
                         <p>
                             Our resources are crafted by teachers who understand the KS2 curriculum. Each KS2 quiz and piece of practice material, from ks2 sats papers revision to topic-specific assessments, is designed to meet
                             National Curriculum requirements. We provide the essential tools, including sats papers ks2, to ensure thorough preparation.
