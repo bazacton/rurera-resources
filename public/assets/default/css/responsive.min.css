@@ -1103,6 +1103,10 @@
         background-color: inherit;
         box-shadow: none;
     }
+    .navbar-nav .nav-item:has(.sidenav-dropdown):hover>a:after {
+        transform: rotate(-45deg);
+        margin-top: -4px;
+    }
     .sidenav-dropdown .sidenav-item-collapse {
         padding: 0;
     }
