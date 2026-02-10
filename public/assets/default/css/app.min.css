@@ -10456,7 +10456,7 @@ body .flipbook-data {
   padding: 0 10px !important;
   border-radius: 3px;
   font-weight: 500;
-  color: #1558bc;
+  color: var(--primary);
   font-size: 1rem;
   line-height: 2.28571em;
   height: 2.28571em;
