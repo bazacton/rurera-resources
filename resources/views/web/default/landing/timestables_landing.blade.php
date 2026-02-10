@@ -104,7 +104,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title text-center mb-50">
+                    <div class="section-title text-center mb-30">
                         <h2 class="mt-0 mb-10">How times tables work</h2>
                     </div>
                 </div>
