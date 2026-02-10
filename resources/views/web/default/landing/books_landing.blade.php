@@ -310,6 +310,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold" type="button" data-toggle="collapse" data-target="#faqCollapse1">
                                         <span itemprop="name">How does Rurera’s bookshelf work?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -328,6 +332,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2">
                                         <span itemprop="name">Can I read books offline?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -346,6 +354,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3">
                                         <span itemprop="name">How do I find books for my child's age?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -364,6 +376,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse4">
                                         <span itemprop="name">How do book chapter quizzes work?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -382,6 +398,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse5">
                                         <span itemprop="name">How do I earn Coin Points?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -400,6 +420,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse6">
                                         <span itemprop="name">What are the main benefits of reading for my child?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -418,6 +442,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse7">
                                         <span itemprop="name">Can reading help with school?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
@@ -436,6 +464,10 @@
                                 <h3 class="mb-0">
                                     <button class="font-20 btn-link font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse8">
                                         <span itemprop="name">How does reading improve language skills?</span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/plus-alt.svg" alt="plus-alt" class="plus-img">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus" class="minus-img">
+                                        </span>
                                     </button>
                                 </h3>
                             </div>
