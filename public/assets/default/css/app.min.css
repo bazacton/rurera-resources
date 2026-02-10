@@ -15233,6 +15233,9 @@ section:has(.trial-steps) .lms-btn-group a small {
     display: inline-block;
     margin: 0 0 30px;
 }
+.custom-footer .widget-links .footer-logo:hover {
+  opacity: 1;
+}
 .footer-logo img {
   filter: invert(29%) sepia(60%) saturate(1069%) hue-rotate(189deg) brightness(91%) contrast(99%);
 }
