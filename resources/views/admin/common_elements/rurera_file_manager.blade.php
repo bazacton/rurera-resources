@@ -782,9 +782,9 @@
                 }else{
 
                     //images_response += `<img src="${thumb}" style="width:80px;">`;
-                    /*$("." + preview_div).find('img').attr('src', thumb);
+                    $("." + preview_div).find('img').attr('src', thumb);
                     $("." + preview_div).find('.'+field_name).attr('value', thumb);
-                    $("." + preview_div).find('.'+field_name).val(thumb);*/
+                    $("." + preview_div).find('.'+field_name).val(thumb);
                     images_response += item.name;
                 }
 
