@@ -715,31 +715,7 @@
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
 {!! parseShortcode('[SC_11-plus-faqs-f]') !!}
 
-<section class="parent-account-section mt-0" style="background-color: #0065ff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                    <div class="section-title mb-50">
-                        <h2 class="font-40 text-white">Parent account</h2>
-                        <p class="font-16 font-weight-500 text-white">Take control of your child's 11 plus journey with our dedicated parent hub.</p>
-                    </div>
-                    <ul>
-                        <li><span class="font-18">Ability to assign specific 11 plus tests and activities</span></li>
-                        <li><span class="font-18">Real-Time diagnostics and performance alerts</span></li>
-                        <li><span class="font-18">Track Child’s Learning progress across all subjects</span></li>
-                        <li><span class="font-18">Assign and monitor personalised Goals for your Child</span></li>
-                        <li><span class="font-18">Personalised learning controls and content filters</span></li>
-                        <li><span class="font-18">Easy to Manage Sibling Accounts from one dashboard</span></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5">
-                    <div class="imb-box">
-                        <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{!! parseShortcode('[SC_iseb-parent-account-section-f-end]') !!}
 
     @php
     $packages_only = isset( $packages )? $packages : array();
