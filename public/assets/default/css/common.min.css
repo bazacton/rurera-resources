@@ -320,8 +320,8 @@ html {
     --gray: #6c757d;
     --gray-dark: #343a40;
     --panel-bg: #fbfbfd;
-    --old-primary: #1c2444 !important;
-    --primary: #596bfd !important;
+    --old-primary: #1c2444;
+    --primary: #3269D4;
     --secondary: #0272b6;
     --success: #e7f4f0;
     --info: #ebf7ff;
