@@ -15050,7 +15050,6 @@ section:has(.trial-steps) .rurera-btn-group a small {
     border-bottom: 1px solid #ddd;
     cursor: pointer;
     position: relative;
-    opacity: 0.6;
     transition: opacity 0.3s ease;
 }
 .feature-item.active {
@@ -15073,7 +15072,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     width: 18px;
 }
 .feature-item.active .feature-header h3 {
-  color: #000;
+  color: var(--primary);
 }
 /* controls */
 .controls{
