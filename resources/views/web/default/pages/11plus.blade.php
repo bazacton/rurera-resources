@@ -35,22 +35,21 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <h1 class="font-72 font-weight-bold"><span class="text-scribble mr-10">11 Plus</span> and Entrance Exams</h1>
-                    <h2 class="mb-15 font-30">Unlocking Opportunities: Ace the 11 Plus Exam and Secure Your Future!</h2>
-                    <p class="font-19">Assessing a student's academic ability and determining their eligibility for admission to selective
+                    <h1><span class="text-scribble mr-10">11 Plus</span> and Entrance Exams</h1>
+                    <h2 class="mb-15 font-18">Unlocking Opportunities: Ace the 11 Plus Exam and Secure Your Future!</h2>
+                    <p>Assessing a student's academic ability and determining their eligibility for admission to selective
                     secondary schools or grammar schools.</p>
-                    <ul class="mb-30 p-0">
-                        <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" alt="mobile" title="mobile" width="25" height="25" itemprop="image" loading="eager">11+ Learning practice
+                    <ul class="mb-30 p-0 font-14 categories-option">
+                        <li class="mb-10">
+                            11+ Learning practice
                         </li>
-                        <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/preparation.svg" alt="preparation" title="preparation" width="25" height="25" itemprop="image" loading="eager">11+  Assessment & 11+ Tests
+                        <li class="mb-10">
+                            11+  Assessment & 11+ Tests
                         </li>
-                        <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/graphic-design.svg" alt="graphic-design" title="graphic-design" width="25" height="25" itemprop="image" loading="eager">11+ Quizzes & Exam practices
+                        <li class="mb-10">
+                            11+ Quizzes & Exam practices
                         </li>
-                        <li class="font-19">
-                            <img src="../assets/default/svgs/book-opend.svg" alt="book-opend" title="book-opend" width="25" height="25" itemprop="image" loading="eager">Score guarantee - 100% Results</li>
+                        <li>Score guarantee - 100% Results</li>
                     </ul>
                     <div class="d-flex align-items-center">
                         <a href="{{url('/')}}/11plus" class="btn-primary rounded-pill">11 plus exams</a>
