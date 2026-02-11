@@ -10,10 +10,10 @@
                     <h2 class="font-18 font-weight-bold mb-10">Your ISEB Success Story Starts Here With Rurera!</h2>
                     <p>Rurera provides targeted practice, expert guidance, and essential resources for ISEB success, helping students build confidence and improve their skills.</p>
                     <ul class="mb-30 p-0 font-14">
-                        <li class="mb-10"><img alt="#" height="25" src="../assets/default/svgs/mobile.svg" width="25" />Learning practice</li>
-                        <li class="mb-10"><img alt="#" height="25" src="../assets/default/svgs/preparation.svg" width="25" />Test preparation</li>
-                        <li class="mb-10"><img alt="#" height="25" src="../assets/default/svgs/graphic-design.svg" width="25" />Score guarantee</li>
-                        <li><img alt="#" height="25" src="../assets/default/svgs/book-opend.svg" width="25" />100% results</li>
+                        <li class="mb-10">Learning practice</li>
+                        <li class="mb-10">Test preparation</li>
+                        <li class="mb-10">Score guarantee</li>
+                        <li>100% results</li>
                     </ul>
                     <a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
                 </div>
