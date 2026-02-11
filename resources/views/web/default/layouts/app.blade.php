@@ -110,15 +110,5 @@
 
     <script src="/assets/default/js/parts/navbar.min.js?ver={{$rand_no}}"></script>
     <script src="/assets/default/js/parts/main.min.js?ver={{$rand_no}}"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZCMFMHVM0"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YZCMFMHVM0');
-    </script>
 </body>
 </html>
