@@ -15276,7 +15276,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     margin-bottom: 20px;
 }
 .footer-newsletter .widget-body {
-    background-color: #fff;
+    background-color: #dee0ffb5;
     padding: 15px;
 }
 .custom-footer h2 {
@@ -15351,7 +15351,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
   margin: 0;
   font-size: .875rem;
   width: calc(100% - 25px);
-  color: #ccc;
+  color: #999;
   cursor: pointer;
 }
 .footer .footer-subscribe strong {
