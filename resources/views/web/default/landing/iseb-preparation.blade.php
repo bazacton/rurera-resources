@@ -830,15 +830,7 @@
         </div>
     </section>
     
-    <section>
-        <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-8 mx-auto">
-                {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
-            </div>
-        </div>
-        </div>
-    </section>
+    {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
     <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
