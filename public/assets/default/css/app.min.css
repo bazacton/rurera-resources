@@ -10466,7 +10466,7 @@ body .flipbook-data {
 }
 .top-navbar .register-btn {
   border: 1px solid var(--primary);
-  padding: 7px 20px !important;
+  padding: 7px 20px;
   height: 40px;
 }
 .top-navbar .register-btn:hover {
