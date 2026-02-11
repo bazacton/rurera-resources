@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="gallery-sub-header mb-70 page-sub-header pb-0 position-relative">
+    <section class="gallery-sub-header mb-80 page-sub-header pb-0 position-relative">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -166,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="rurera-features-section">
+    <section class="rurera-features-section mb-80">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
@@ -256,7 +256,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-80">
+    <section class="mb-80">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -367,7 +367,7 @@
             </div>
         </div>
     </section>    
-    <section class="slider-section py-60">
+    <section class="slider-section mb-80">
         <div class="container">
             <div class="row">
                 <!-- Left Side: Tabs/Accordion -->
@@ -479,7 +479,7 @@
         </div>
     </section>
 
-    <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
+    <section class="parent-account-section mb-80" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7 col-md-7">
@@ -506,7 +506,7 @@
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70"
+    <section class="rurera-setup-progress-section rurera-membership-section mb-80"
              data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
@@ -540,7 +540,7 @@
             </div>
         </div>
     </section>
-    <section class="pb-70" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
+    <section class="mb-80" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -858,97 +858,68 @@
 
 @push('scripts_bottom')
 <script>
-   $(document).ready(function () {
+    $(document).ready(function() {
+        const $items = $('.feature-item');
+        const $images = $('.feature-image');
+        let currentIndex = 0;
+        const duration = 5000; // 5 seconds per slide
+        let isPaused = false;
 
-    const $items = $('.feature-item');
-    const $images = $('.feature-image');
-    let currentIndex = $items.index($('.feature-item.active'));
-    const duration = 5000;
-    let isAutoplayOn = true;
-    let isTransitioning = false;
+        function startProgress() {
+            // Reset all progress bars
+            $('.progress-bar-fill').css({
+                'width': '0%',
+                'transition': 'none'
+            });
 
-    if (currentIndex < 0) currentIndex = 0;
+            // Get current active progress bar
+            const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
 
-    /* -----------------------------
-       Start Progress Animation
-    ----------------------------- */
-    function startProgress() {
+            // Force reflow to ensure the reset takes effect before starting animation
+            $currentBar[0].offsetHeight; 
 
-        $('.progress-bar-fill').css({
-            width: '0%',
-            transition: 'none'
-        });
-
-        if (!isAutoplayOn || isTransitioning) return;
-
-        const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
-
-        if (!$currentBar.length) return;
-
-        // Force reflow
-        $currentBar[0].offsetHeight;
-
-        $currentBar.css({
-            width: '100%',
-            transition: `width ${duration}ms linear`
-        });
-    }
-
-    /* -----------------------------
-       Activate Slide
-    ----------------------------- */
-    function setActive(index) {
-
-        if (isTransitioning) return;
-        isTransitioning = true;
-
-        const $newItem = $items.eq(index);
-        const targetId = $newItem.data('target');
-
-        // Remove active states
-        $items.removeClass('active');
-        $images.removeClass('active');
-
-        // Activate new
-        $newItem.addClass('active');
-        $('#' + targetId).addClass('active');
-
-        currentIndex = index;
-
-        setTimeout(function () {
-            isTransitioning = false;
-        }, 400);
-
-        startProgress();
-    }
-
-    /* -----------------------------
-       Auto Next on Progress End
-    ----------------------------- */
-    $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function (e) {
-
-        if (!isAutoplayOn) return;
-        if (e.originalEvent.propertyName !== 'width') return;
-
-        if ($(this).closest('.feature-item').hasClass('active')) {
-            let nextIndex = (currentIndex + 1) % $items.length;
-            setActive(nextIndex);
+            // Start animation
+            $currentBar.css({
+                'width': '100%',
+                'transition': `width ${duration}ms linear`
+            });
         }
+
+        function setActive(index) {
+            // Update Classes
+            $items.removeClass('active');
+            $images.removeClass('active');
+
+            $items.eq(index).addClass('active');
+            $images.eq(index).addClass('active'); // Simply use index since images map 1:1
+
+            currentIndex = index;
+            startProgress();
+        }
+
+        // Initialize first slide
+        setActive(0);
+
+        // Listen for transition end to trigger next slide
+        $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function(e) {
+            // Ensure it's the width transition of the active item's bar
+            if (e.originalEvent.propertyName !== 'width') return;
+            
+            // Check if this is the bar of the currently active item
+            if ($(this).closest('.feature-item').hasClass('active')) {
+                let nextIndex = (currentIndex + 1) % $items.length;
+                setActive(nextIndex);
+            }
+        });
+
+        // Click handler
+        $items.on('click', function() {
+            const index = $(this).index();
+            // If clicking the same item, maybe just restart timer? 
+            // Or if different, switch to it.
+            // Let's just switch/restart.
+            setActive(index);
+        });
     });
-
-    /* -----------------------------
-       Manual Click
-    ----------------------------- */
-    $items.on('click', function () {
-        let index = $items.index(this);
-        setActive(index);
-    });
-
-    /* -----------------------------
-       Initialize
-    ----------------------------- */
-    setActive(currentIndex);
-});
-
 </script>
 @endpush
