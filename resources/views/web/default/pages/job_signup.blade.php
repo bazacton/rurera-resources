@@ -5,8 +5,8 @@
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-12 col-md-12 col-lg-6">
-                <h1 class="font-72 font-weight-bold"><span class="text-scribble mr-10">Job</span>Opportunities at Rurera</h1>
-                <p itemprop="description">We are a dynamic and innovative company, constantly striving for excellence in everything we do. Joining our team <br> means joining a diverse and inclusive learning environment where collaboration and creativity are valued.</p>
+                <h1><span class="text-scribble mr-10">Job</span>Opportunities at Rurera</h1>
+                <p>We are a dynamic and innovative company, constantly striving for excellence in everything we do. Joining our team <br> means joining a diverse and inclusive learning environment where collaboration and creativity are valued.</p>
                 <a itemprop="url" href="#job-options" class="btn-primary rounded-pill">Find new positions</a>
             </div>
         </div>
