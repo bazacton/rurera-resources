@@ -17,16 +17,16 @@
                     taken in Year 6. It assesses English, Maths, and reasoning skills under timed conditions. </p>
                     <ul class="mb-30 p-0">
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" alt="mobile" title="mobile" width="25" height="25" itemprop="image" loading="eager">11 plus practice papers & learning modules
+                            11 plus practice papers & learning modules
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/preparation.svg" alt="preparation" title="preparation" width="25" height="25" itemprop="image" loading="eager">11 plus assessment & standardised 11 plus tests
+                            11 plus assessment & standardised 11 plus tests
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/graphic-design.svg" alt="graphic-design" title="graphic-design" width="25" height="25" itemprop="image" loading="eager">11 plus quizzes & strategic exam prep
+                            11 plus quizzes & strategic exam prep
                         </li>
                         <li class="font-19">
-                            <img src="../assets/default/svgs/book-opend.svg" alt="book-opend" title="book-opend" width="25" height="25" itemprop="image" loading="eager">Focused results and progress guarantees
+                            Focused results and progress guarantees
                         </li>
                     </ul>
                     <a href="{{url('/')}}/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
