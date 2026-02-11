@@ -656,8 +656,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-40">
-                        <h2 class="font-40 text-dark-charcoal mb-0">Ideal Tuition for Your Child</h2>
-                        <p class="font-16 pt-10" itemprop="description">For Exceptional Value: Choose Our Pre-Selected Package for Maximum Savings! </p>
+                        <h2 class="mb-0">Ideal Tuition for Your Child</h2>
+                        <p class="pt-10" itemprop="description">For Exceptional Value: Choose Our Pre-Selected Package for Maximum Savings! </p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 text-center">
@@ -678,7 +678,7 @@
                             <div class="subscribe-plan current-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 class="font-weight-500 text-left">School Entrance Exams</h3>
+                                    <h3 class="text-left">School Entrance Exams</h3>
                                     <ul class="plan-feature">
                                         <li class="mt-10">Grammar Schools</li>
                                         <li class="mt-10">Independent Schools</li>
