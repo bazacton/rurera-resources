@@ -15175,7 +15175,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 }
 .image-container .images-holder {
     position: relative;
-    height: 500px;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15192,7 +15192,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-image.active {
     opacity: 1;
     animation:in .8s forwards;
-    height: 500px;
+    height: 400px;
 }
 @keyframes in{to{opacity:1;transform:none}}
 /* Accordion Slider Style End */
