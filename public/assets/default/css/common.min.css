@@ -15019,7 +15019,7 @@ html.html-modal-open {
 }
 
 p {
-    line-height: 1.5
+    line-height: 1.5rem;
 }
 
 .text-hover-primary:hover {
