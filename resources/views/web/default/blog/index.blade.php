@@ -6,7 +6,7 @@
 @endpush
 
 @section('content')
-<section class="blog-sub-header lms-call-to-action position-relative page-sub-header pt-70 pb-70 overflow-hidden">
+<section class="blog-sub-header rurera-call-to-action position-relative page-sub-header pt-70 pb-70 overflow-hidden">
         <div class="container">
             <div class="line-shap-holder h-100">
                 <div class="line-shap-svg">
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <section class="lms-categories-section pt-0">
+    <section class="rurera-categories-section pt-0">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6">
@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <section class="container mt-50 mt-md-50 lms-blog">
+    <section class="container mt-50 mt-md-50 rurera-blog">
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="section-title mb-15">
@@ -112,7 +112,7 @@
         {{ $blog->appends(request()->input())->links('vendor.pagination.panel') }}
 
     </section>
-    <section class="lms-newsletter blog-newsletter mt-70">
+    <section class="rurera-newsletter blog-newsletter mt-70">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -122,7 +122,7 @@
                                 <h2 class="mb-15 text-white font-40">Ready to start learning <br /> using Rurera</h2>
                                 <p class="mb-0 text-white">Determine what skills or knowledge you want to acquire or improve upon selecting the appropriate learning platform.</p>
                             </div>
-                        <div class="lms-btn-group mt-30 "><a href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white">Signup</a></div>
+                        <div class="rurera-btn-group mt-30 "><a href="{{url('/')}}/register" class="rurera-btn rounded-pill text-white border-white">Signup</a></div>
                         </div>
                         <div class="col-12 col-lg-7 col-md-7">
                             <div class="svg-holder">
