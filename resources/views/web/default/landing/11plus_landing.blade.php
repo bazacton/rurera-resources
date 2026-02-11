@@ -713,10 +713,9 @@
         </div>
     </section>
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
-{!! parseShortcode('[SC_11-plus-faqs-f]') !!}
 
 {!! parseShortcode('[SC_iseb-parent-account-section-f-end]') !!}
-{!! parseShortcode('[SC_Rurera-Help-Section]') !!}
+
     @php
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
@@ -772,6 +771,7 @@
 
 </section>
 {!! parseShortcode('[SC_11-plus-faqs-f]') !!}
+{!! parseShortcode('[SC_Rurera-Help-Section]') !!}
 @endsection
 
 @push('scripts_bottom')
