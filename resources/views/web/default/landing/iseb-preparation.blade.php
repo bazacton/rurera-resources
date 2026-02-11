@@ -546,10 +546,10 @@
                             <!-- Item 1 -->
                             <div class="feature-item" data-target="img-1">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Adaptive Assessments Testing
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Track progress with personalized adaptive assessments, adjusting difficulty levels for each student.</p>
@@ -562,10 +562,10 @@
                             <!-- Item 2 -->
                             <div class="feature-item" data-target="img-2">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Quick Results via Automated Marking
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Instant feedback and data for faster support and personalized learning.</p>
@@ -578,10 +578,10 @@
                             <!-- Item 3 -->
                             <div class="feature-item active" data-target="img-3">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Diverse Question Formats
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Assess student knowledge with a range of question types for comprehensive evaluation.</p>
@@ -594,10 +594,10 @@
                             <!-- Item 4 -->
                             <div class="feature-item" data-target="img-4">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Timely Reporting
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Real-time reporting enables prompt interventions and support for both students and teachers.</p>
@@ -610,10 +610,10 @@
                             <!-- Item 5 -->
                             <div class="feature-item" data-target="img-5">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Breakthrough Insights at Every Level
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Gain insights into strengths and improvement areas with a live progress dashboard for students and parents.</p>
@@ -626,10 +626,10 @@
                             <!-- Item 6 -->
                             <div class="feature-item" data-target="img-6">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Students Engagement
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Engage students through interactive challenges, test practices, and rewards to spark their passion for learning.</p>
@@ -642,10 +642,10 @@
                             <!-- Item 7 -->
                             <div class="feature-item" data-target="img-7">
                                 <div class="feature-header">
-                                    <h5>
+                                    <h3 class="font-20 font-weight-bold">
                                         Reward Points
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
+                                    </h3>
                                 </div>
                                 <div class="feature-content">
                                     <p>Unlock exciting rewards like toys through continuous learning and improvement.</p>
