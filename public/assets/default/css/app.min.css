@@ -4492,11 +4492,6 @@ nav li {
   height: 50px;
   object-fit: contain;
 }
-.subscribe-plan h3 {
-  text-align: center;
-  color: #5a5865;
-  line-height: normal;
-}
 .subscribe-plan .subscribe-price {
   justify-content: center;
   flex-direction: column;
