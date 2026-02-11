@@ -220,7 +220,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
+    <section class="rurera-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -295,11 +295,11 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-0 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
+    <section class="rurera-column-section rurera-text-section exploring-curriculum mx-w-100 mt-0 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="lms-text-holder d-flex justify-content-between">
+                    <div class="rurera-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
                             <h4 class="mb-10 font-30 align-items-center d-inline-flex text-white">
                                 <span class="icon-svg mr-15">
@@ -309,8 +309,8 @@
                             </h4>
                             <p class="font-16 text-white"> Unlock the power of words with our engaging resources. Build essential skills to excel and open doors to your future achievements.</p>
                         </div>
-                        <div class="lms-btn-group justify-content-center">
-                            <a href="{{url('/')}}/register-as" class="lms-btn rounded-pill text-white border-white">Try for free</a>
+                        <div class="rurera-btn-group justify-content-center">
+                            <a href="{{url('/')}}/register-as" class="rurera-btn rounded-pill text-white border-white">Try for free</a>
                         </div>
                     </div>
                 </div>
@@ -438,7 +438,7 @@
     </section>
 	{{do_shortcode('redefining_personalized_learning', array('heading' => "Achieve Success with Rurera’s Key Features.", 'description' => "Rurera provides powerful resources that align with student’s specific interests and learning goals.", 'items' => array(10,6,15,17,19)))}}
     
-    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="rurera-column-section rurera-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -447,7 +447,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
+                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion rurera-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
@@ -462,7 +462,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg" alt="company sats" title="company sats" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -479,7 +479,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -496,7 +496,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg" alt="company rewards" title="company rewards" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -511,7 +511,7 @@
                                     <p itemprop="description" class="font-16 font-weight-normal">Online platforms often provide real-time reporting to both students and teachers, allowing for prompt interventions and support.</p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -529,7 +529,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg" alt="company quiz" title="company quiz" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -547,7 +547,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -565,7 +565,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -590,7 +590,7 @@
 
                 <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100">
+                        <div class="mt-0 rurera-faqs mx-w-100">
                             <div id="faqAccordion" class="accordion">
 
                                 <!-- FAQ 1 -->
@@ -848,7 +848,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -877,7 +877,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
