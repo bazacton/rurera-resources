@@ -185,7 +185,7 @@
             </div>
         </div>
     </section>
-    <section class="pb-60 lms-testimonials mt-50 testimonials-fancy">
+    <section class="pb-60 rurera-testimonials mt-50 testimonials-fancy">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
@@ -242,7 +242,7 @@
             </div>
         </div>
     </section>
-    <section class="pb-50 find-instructor-section lms-search-services mb-70 parent-account-section pt-70 mt-0" style="background-color: #7679ee;" id="assessments">
+    <section class="pb-50 find-instructor-section rurera-search-services mb-70 parent-account-section pt-70 mt-0" style="background-color: #7679ee;" id="assessments">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -261,14 +261,14 @@
             </div>
         </div>
     </section>
-    <section class="w-100 lms-accordion-section lms-column-section pb-60" style="max-width: 100%;">
+    <section class="w-100 rurera-accordion-section rurera-column-section pb-60" style="max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="text-center section-title mb-0"><h2 class="font-40">Why choose Rurera assessments ?</h2></div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
-                    <div class="accordion lms-accordion-modern" id="accordion-modern" itemscope="" itemtype="https://schema.org/accordion">
+                    <div class="accordion rurera-accordion-modern" id="accordion-modern" itemscope="" itemtype="https://schema.org/accordion">
                         <div class="card active">
                             <div class="card-header" id="heading-1">
                                 <button aria-controls="collapse-1" aria-expanded="false" class="btn btn-link collapsed btn-block text-left" data-target="#collapse-1" data-toggle="collapse" type="button">
@@ -283,7 +283,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company sats" height="401" src="../assets/default/img/adpative-assessment.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company sats" /></figure>
                             </div>
                         </div>
@@ -300,7 +300,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company performance" height="401" src="/assets/default/img/company-quiz.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company performance" /></figure>
                             </div>
                         </div>
@@ -317,7 +317,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company rewards" height="401" src="../assets/default/img/all-in-1-platform.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company rewards" /></figure>
                             </div>
                         </div>
@@ -332,7 +332,7 @@
                                     <p itemprop="description" class="font-16 font-weight-normal">Online platforms often provide real-time reporting to both students and teachers, allowing for prompt interventions and support.</p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company insights" height="401" src="../assets/default/img/company-sats.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company insights" /></figure>
                             </div>
                         </div>
@@ -350,7 +350,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company quiz" height="401" src="../assets/default/img/company-insights.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company quiz" /></figure>
                             </div>
                         </div>
@@ -368,7 +368,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company curriculum" height="401" src="../assets/default/img/company-performance.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company curriculum" /></figure>
                             </div>
                         </div>
@@ -386,7 +386,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img alt="company curriculum" height="401" src="../assets/default/img/company-rewards.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company curriculum" /></figure>
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                 </div>
 
                 <div class="col-12 col-lg-8 col-md-12 mx-auto">
-                    <div class="mt-0 lms-faqs mx-w-100">
+                    <div class="mt-0 rurera-faqs mx-w-100">
                         <div id="faqAccordion" class="accordion">
 
                             <!-- FAQ 1 -->
@@ -570,18 +570,18 @@
         </div>
     </section>
 
-    <section class="mx-w-100 lms-column-section lms-text-section py-70" style="background-color: #f27530;" id="request-demo">
+    <section class="mx-w-100 rurera-column-section rurera-text-section py-70" style="background-color: #f27530;" id="request-demo">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8 col-md-8">
-                    <div class="d-flex flex-column lms-text-holder">
+                    <div class="d-flex flex-column rurera-text-holder">
                         <div class="col-12 col-lg-12 col-md-12">
                             <h2 class="text-white font-40 mb-20">Explore Rurera: Schedule Your Demo</h2>
                             <p itemprop="description" class="font-16 mb-0 text-white">
                                 Interested in how Rurera assessments can benefit your school? Schedule a meeting with our team to explore how our solutions can integrate with your educational approach. Click the button below to book a demo
                                 today!
                             </p>
-                            <div class="lms-btn-group mt-30"><a class="text-white border-white lms-btn rounded-pill" href="https://rurera.com/request-a-demo" itemprop="url">Request a demo</a></div>
+                            <div class="rurera-btn-group mt-30"><a class="text-white border-white rurera-btn rounded-pill" href="https://rurera.com/request-a-demo" itemprop="url">Request a demo</a></div>
                         </div>
                     </div>
                 </div>
