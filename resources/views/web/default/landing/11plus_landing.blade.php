@@ -183,7 +183,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-features-section mx-w-100 mt-20">
+    <section class="rurera-features-section mx-w-100 mt-20">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -194,13 +194,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon bg-blue" style="background-color: #3d358b;">
                                <img src="/assets/default/svgs/feature-mock.svg" height="24" width="24" alt="Mock Exams"> 
                             </i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="post-title font-30 mb-15">Mock Exams</h3>
                             <p itemprop="description" class="font-18 text-dark">Mock exams mirror real 11 Plus papers, helping children manage time, understand question 
                             patterns, and reduce exam-day anxiety. </p>
@@ -208,13 +208,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon bg-yellow" style="background-color: #f6b801;">
                                 <img src="/assets/default/svgs/feature-time.svg" height="24" width="24" alt="Timed Practices"> 
                             </i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="post-title font-30 mb-15">Timed Practices</h3>
                             <p itemprop="description" class="font-18 text-dark">Timed practice sessions train children to work accurately under pressure, improving pacing 
                             and decision-making so they can complete every section of the 11 Plus confidently.</p>
@@ -222,13 +222,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon bg-deepyellow" style="background-color: #f18700;">
                                 <img src="/assets/default/svgs/feature-target.svg" height="24" width="24" alt="Target Identification">
                             </i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="post-title font-30 mb-15">Target Identification</h3>
                             <p itemprop="description" class="font-18 text-dark">Smart analysis highlights weaker topics from each 11 Plus paper, allowing children to 
                             practise the right areas instead of repeating content they already understand.</p>
@@ -236,13 +236,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon bg-lightblue" style="background-color: #7679ee;">
                                 <img src="/assets/default/svgs/feature-exam.svg" height="24" width="24" alt="Exam Practice Resources">
                             </i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="post-title font-30 mb-15">Exam Practice Resources</h3>
                             <p itemprop="description" class="font-18 text-dark">A wide range of 11 Plus papers and interactive tools help children build exam stamina, 
                             reinforce core concepts, and practise consistently across all key subjects. </p>
@@ -250,13 +250,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon bg-orange" style="background-color: #f35b05;">
                                 <img src="/assets/default/svgs/feature-progress.svg" height="24" width="24" alt="Progress Reports">
                             </i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="post-title font-30 mb-15">Progress Reports</h3>
                             <p itemprop="description" class="font-18 text-dark">Detailed reports show how your child is improving across 11 Plus maths, English, and 
                             reasoning, helping parents support learning with clarity and confidence. </p>
@@ -264,13 +264,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon bg-deepskyblue" style="background-color: #46b7e9;">
                                 <img src="/assets/default/svgs/feature-Professional.svg" height="24" width="24" alt="Professional Support">
                             </i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="post-title font-30 mb-15">Professional Support</h3>
                             <p itemprop="description" class="font-18 text-dark">Professional feedback on 11 Plus mock exams helps refine exam technique, correct 
                             mistakes early, and build confidence through structured improvement.</p>
@@ -363,7 +363,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-counter-section pb-10 bg-counter">
+    <section class="rurera-counter-section pb-10 bg-counter">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -376,7 +376,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="counter-holder row mt-100">
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30 position-relative">
-                            <div class="lms-counter-card counter-purple-bg text-white">
+                            <div class="rurera-counter-card counter-purple-bg text-white">
                                 <strong itemprop="size" class="custom-counter" data-count="100"></strong><span class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">
                                     11+ practices
@@ -389,7 +389,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
-                            <div class="lms-counter-card counter-yellow-bg text-white">
+                            <div class="rurera-counter-card counter-yellow-bg text-white">
                                 <strong itemprop="size" class="custom-counter" data-count="5000"></strong><span
                                     class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">Questions</p>
@@ -401,7 +401,7 @@
                                     <img src="/assets/default/svgs/shapes-bottom.svg" width="64" height="64" alt="shapes-bottom svg">
                                 </span>
                             </div>
-                            <div class="lms-counter-card counter-orange-bg text-white">
+                            <div class="rurera-counter-card counter-orange-bg text-white">
                                 <strong itemprop="size" class="custom-counter" data-count="60"></strong><span class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">
                                     Cities
@@ -534,7 +534,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="rurera-column-section rurera-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -543,7 +543,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemscope itemtype="https://schema.org/FAQPage" class="accordion lms-accordion-modern" id="accordion-modern">
+                    <div itemscope itemtype="https://schema.org/FAQPage" class="accordion rurera-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
@@ -560,7 +560,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg"
                                         alt="company sats" title="company sats" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
@@ -583,7 +583,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg"
                                         alt="company performance" title="company performance" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
@@ -605,7 +605,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg"
                                         alt="company rewards" title="company rewards" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
@@ -626,7 +626,7 @@
                                         interventions and support.</p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg"
                                         alt="company insights" title="company insights" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
@@ -650,7 +650,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg"
                                         alt="company quiz" title="company quiz" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
@@ -674,7 +674,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg"
                                         alt="company curriculum" width="652" height="401" title="company curriculum"
                                         itemprop="image" loading="eager" /></figure>
@@ -698,7 +698,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg"
                                         alt="company curriculum" width="652" height="401" title="company curriculum"
                                         itemprop="image" loading="eager" /></figure>
@@ -724,7 +724,7 @@
 
             <div class="col-12 col-lg-8 col-md-12 mx-auto">
                 <div class="mt-0">
-                    <div class="mt-0 lms-faqs mx-w-100">
+                    <div class="mt-0 rurera-faqs mx-w-100">
                         <div id="faqAccordion" class="accordion">
 
                             <!-- FAQ 1 -->
@@ -982,7 +982,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70"
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70"
         data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
@@ -1018,7 +1018,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
