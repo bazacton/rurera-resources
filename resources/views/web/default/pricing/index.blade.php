@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 class="mb-10">Choose the right plan for you</h2>
+                        <h1 class="mb-10">Choose the right plan for you</h1>
                         <p>Save more with annual pricing</p>
                     </div>
                 </div>
