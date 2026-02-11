@@ -710,7 +710,7 @@
                             <div class="subscribe-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 class="font-weight-500 text-left">SATs Exam Preparation</h3>
+                                    <h3 class="text-left">SATs Exam Preparation</h3>
                                     <ul class="plan-feature">
                                         <li class="mt-10">Key Stage 1(year-2)</li>
                                         <li class="mt-10">Key Stage 2(year-6)</li>
@@ -740,7 +740,7 @@
                             <div class="subscribe-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 class="font-weight-500 text-left">Maths and English Tuition</h3>
+                                    <h3 class="text-left">Maths and English Tuition</h3>
                                     <ul class="plan-feature">
                                         <li class="mt-10">Math Arithmetic</li>
                                         <li class="mt-10">Math Reasoning</li>
