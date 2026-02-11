@@ -15140,17 +15140,17 @@ section:has(.trial-steps) .lms-btn-group a small {
     width: 0%;
 }
 .slider-section {
-  height: 780px;
+  height: 750px;
 }
 .feature-tabs-holder {
-  height: 500px;
+  height: 400px;
 }
 /* Right Side Images */
 .image-container {
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: 600px;
+    height: 630px;
     overflow: hidden;
     border-radius: 10px;
     padding: 25px;
