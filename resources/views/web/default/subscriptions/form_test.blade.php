@@ -6,8 +6,8 @@
 @endpush
 
 @section('content')
-<div class="lms-membership-section">
-    <section class="lms-setup-progress-section mb-0 pt-70 pb-60" style="background-color: #fff;">
+<div class="rurera-membership-section">
+    <section class="rurera-setup-progress-section mb-0 pt-70 pb-60" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
