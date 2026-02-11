@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css" media="print" onload="this.onload=null;this.media='all';">
     <link rel="stylesheet" href="/assets/default/css/responsive.min.css?ver={{$rand_no}}">
 
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" defer></script>
 
     <link rel="canonical" href="{{url()->current()}}">
