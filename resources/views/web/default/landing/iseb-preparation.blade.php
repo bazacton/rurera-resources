@@ -377,7 +377,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -531,7 +531,7 @@
         <div class="d-flex align-items-center justify-content-center pt-50">
             <a href="{{url('/')}}/pricing" class="btn-primary font-16 text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
         </div>
-    </section> -->
+    </section>
     <section class="slider-section py-60">
         <div class="container">
             <div class="row">
