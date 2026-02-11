@@ -32,7 +32,7 @@
                             <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="#">Proven Resources: 100% Success Results
                         </li>
                     </ul>
-                    <a href="/register-as" class="py-5 px-15 text-dark-blue font-16 register-btn">Try for free</a>
+                    <a href="/register-as" class="font-16 register-btn">Try for free</a>
                     <!-- <div class="d-flex align-items-center">
                         <a href="{{url('/')}}/register" class="btn-primary rounded-pill">KS1-year2 SATs</a>
                         <a href="{{url('/')}}/register" class="btn-primary rounded-pill ml-15">KS2-year6 SATs</a>
