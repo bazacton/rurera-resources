@@ -15052,7 +15052,6 @@ section:has(.trial-steps) .rurera-btn-group a small {
     border-bottom: 1px solid #ddd;
     cursor: pointer;
     position: relative;
-    transition: opacity 0.3s ease-out;
 }
 .feature-item.active {
     opacity: 1;
@@ -15095,7 +15094,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.5s ease;
     font-size: 0.95rem;
     color: #6c757d;
     margin-top: 0;
