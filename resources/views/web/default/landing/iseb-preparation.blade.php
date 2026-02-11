@@ -777,7 +777,7 @@
                         <h2 class="text-white">Parent account</h2>
                         <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
-                    <ul class="font-14">
+                    <ul class="font-14 ">
                         <li><span>Real-Time diagnostics</span></li>
                         <li><span>Track Child’s Learning</span></li>
                         <li><span>Assign Goals for your Child</span></li>
@@ -852,7 +852,7 @@
         const $items = $('.feature-item');
         const $images = $('.feature-image');
         let currentIndex = 0;
-        const duration = 3000; // 5 seconds per slide
+        const duration = 5000; // 5 seconds per slide
         let isPaused = false;
 
         function startProgress() {
