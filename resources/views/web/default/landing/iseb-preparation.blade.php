@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
+    <section class="gallery-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
