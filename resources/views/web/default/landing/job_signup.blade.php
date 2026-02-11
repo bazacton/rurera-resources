@@ -80,8 +80,8 @@
         </div>
     </div>
 </section>
-<div class="lms-job-search">
-    <section class="lms-search-services mb-0 pt-60 has-no-bg">
+<div class="rurera-job-search">
+    <section class="rurera-search-services mb-0 pt-60 has-no-bg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -247,7 +247,7 @@
             </div>
         </div>
     </div>
-    <section id="job-options" class="lms-accordion-job-section pt-50 pb-70">
+    <section id="job-options" class="rurera-accordion-job-section pt-50 pb-70">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
@@ -255,7 +255,7 @@
                         <h2 class="mb-10 font-40">Open Positions</h2>
                         <p itemprop="description">We are always seeking talented individuals to join our team and contribute <br /> to our success. Explore some new positions:</p>
                     </div>
-                    <div class="lms-accordion-job accordion" id="accordionExample">
+                    <div class="rurera-accordion-job accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="heading_1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">Senior Software Developer
@@ -267,7 +267,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Senior Software Developer to join our dynamic team. As a Senior Software Developer, you will be responsible for designing, developing, and implementing high-quality software solutions. You will collaborate with cross-functional teams to analyze user requirements, create technical specifications, and deliver robust software applications.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Design, develop, and maintain efficient and scalable software solutions in accordance with project requirements and coding standards.</li>
                                         <li>Collaborate with product managers, business analysts, and software engineers to gather and analyze user requirements and translate them into technical specifications.</li>
                                         <li>Develop high-quality, clean, and reusable code using industry best practices and modern software development methodologies.</li>
@@ -277,7 +277,7 @@
                                         <li>Collaborate with quality assurance teams to ensure software meets quality standards and is thoroughly tested.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.</li>
                                         <li>Proven work experience as a Senior Software Developer or similar role.</li>
                                         <li>Strong proficiency in multiple programming languages (e.g., Java, C++, Python) and software development frameworks.</li>
@@ -293,8 +293,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -311,7 +311,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Database Administrator to join our team. As a Database Administrator, you will be responsible for the performance, integrity, and security of our databases. You will work closely with software developers, system administrators, and other stakeholders to ensure the efficient operation of our database systems.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Install, configure, and maintain database management systems (DBMS) to ensure optimal performance, availability, and security.</li>
                                         <li>Design and implement database structures, schemas, and tables based on application requirements and best practices.</li>
                                         <li>Monitor database systems to identify and resolve performance issues, capacity bottlenecks, and other problems.</li>
@@ -324,7 +324,7 @@
                                         <li>Document database configurations, procedures, and troubleshooting steps for reference and knowledge sharing.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's degree in Computer Science, Information Technology, or a related field.</li>
                                         <li>Proven work experience as a Database Administrator or in a similar role.</li>
                                         <li>In-depth knowledge of database management systems (e.g., Oracle, MySQL, SQL Server) and their associated tools.</li>
@@ -340,8 +340,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -358,7 +358,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Math Assessment Specialist to join our team. As a Math Assessment Specialist, you will play a crucial role in developing and implementing effective math assessment strategies and materials. You will work closely with curriculum developers, educators, and other stakeholders to ensure high-quality math assessments that align with educational standards.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Design and develop math assessment materials, including test items, rubrics, scoring guides, and performance tasks.</li>
                                         <li>Collaborate with curriculum developers to align assessments with educational standards and learning objectives.</li>
                                         <li>Conduct research and stay updated on best practices in math assessment design and implementation.</li>
@@ -371,7 +371,7 @@
                                         <li>Generate reports and visualizations to communicate assessment findings to educators, administrators, and other stakeholders.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's or Master's degree in Mathematics, Education, or a related field.</li>
                                         <li>Strong knowledge of mathematics curriculum, instructional practices, and educational standards.</li>
                                         <li>Experience in designing and developing math assessments, including item writing, test specifications, and scoring rubrics.</li>
@@ -387,8 +387,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Math Curriculum Designer to join our education team. As a Math Curriculum Designer, you will play a key role in developing and designing a comprehensive and effective math curriculum that aligns with educational standards and meets the needs of students and educators. You will collaborate with subject matter experts, instructional designers, and educators to create engaging and rigorous math curricula that promote conceptual understanding and support student learning.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Design and develop a standards-based math curriculum for specific grade levels or courses.</li>
                                         <li>Create detailed curriculum maps, scope and sequence documents, and lesson plans that outline learning objectives, instructional strategies, and assessments.</li>
                                         <li>Incorporate best practices in math education, pedagogy, and research-based approaches into the curriculum design.</li>
@@ -418,7 +418,7 @@
                                         <li>Design and align assessments with learning objectives and curriculum content to measure student mastery of math concepts and skills.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's or Master's degree in Mathematics, Education, or a related field.</li>
                                         <li>Strong knowledge of math education principles, curriculum development, and educational standards.</li>
                                         <li>Experience in designing and developing math curricula for specific grade levels or courses.</li>
@@ -433,8 +433,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -451,7 +451,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking an Associate Digital Designer to join our creative team. As an Associate Digital Designer, you will support the design and production of digital assets for various digital platforms. Your role will involve collaborating with the design team to create visually appealing and engaging digital materials that effectively communicate our brand's message and enhance user experience.</p>  
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Assist in the creation and execution of digital designs, including website graphics, social media assets, email templates, banners, and display ads.</li>
                                         <li>Follow brand guidelines and design principles to ensure consistency and alignment with the brand identity.</li>
                                         <li>Collaborate with the design team to brainstorm ideas and concepts for digital projects.</li>
@@ -464,7 +464,7 @@
                                         <li>Communicate design ideas effectively and present work to internal teams for feedback and review.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's degree in Graphic Design, Digital Design, or a related field (or equivalent experience).</li>
                                         <li>Strong portfolio showcasing digital design skills and proficiency in design software such as Adobe Creative Suite (Photoshop, Illustrator, InDesign).</li>
                                         <li>Understanding of design principles, composition, typography, and color theory.</li>
@@ -478,8 +478,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -496,7 +496,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Science Curriculum Designer to join our education team. As a Science Curriculum Designer, you will play a critical role in developing and designing a comprehensive and engaging science curriculum that aligns with educational standards and promotes inquiry-based learning. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster scientific understanding, critical thinking, and hands-on exploration.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Design and develop a standards-based science curriculum for specific grade levels or courses.</li>
                                         <li>Create detailed curriculum maps, scope and sequence documents, and lesson plans that outline learning objectives, instructional strategies, and assessments.</li>
                                         <li>Incorporate inquiry-based learning approaches, hands-on activities, and real-world applications into the curriculum design.</li>
@@ -509,7 +509,7 @@
                                         <li>Design and align assessments with learning objectives and curriculum content to measure student mastery of science concepts and skills.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's or Master's degree in Science Education, Biology, Chemistry, Physics, or a related field.</li>
                                         <li>Strong knowledge of science education principles, curriculum development, and educational standards.</li>
                                         <li>Experience in designing and developing science curricula for specific grade levels or courses.</li>
@@ -524,8 +524,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -542,7 +542,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a talented and detail-oriented Content Production Specialist to join our team. As a Content Production Specialist, you will be responsible for creating, editing, and managing various types of content across multiple platforms. Your role will involve working closely with the content team to ensure the production of high-quality and engaging content that meets our brand standards and resonates with our target audience.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Create original content, including articles, blog posts, social media posts, videos, and other multimedia materials.</li>
                                         <li>Edit and proofread content for grammar, clarity, style, and adherence to brand guidelines.</li>
                                         <li>Collaborate with subject matter experts and stakeholders to gather information and ensure content accuracy and relevance.</li>
@@ -556,7 +556,7 @@
                                         <li>Generate reports and provide insights to guide content strategy and optimization efforts.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's degree in Communications, Journalism, Marketing, or a related field (or equivalent experience).</li>
                                         <li>Proven experience in content creation, writing, editing, or related roles.</li>
                                         <li>Excellent writing, editing, and proofreading skills with a keen eye for detail.</li>
@@ -572,8 +572,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -590,7 +590,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Language Arts Curriculum Designer to join our education team. As a Language Arts Curriculum Designer, you will play a crucial role in developing and designing a comprehensive and engaging language arts curriculum that aligns with educational standards and promotes literacy and language development. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster reading, writing, communication, and critical thinking skills.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Design and develop a standards-based language arts curriculum for specific grade levels or courses.</li>
                                         <li>Create detailed curriculum maps, scope and sequence documents, and lesson plans that outline learning objectives, instructional strategies, and assessments.</li>
                                         <li>Incorporate a variety of literacy experiences, including reading, writing, speaking, listening, and language development, into the curriculum design.</li>
@@ -604,7 +604,7 @@
                                         <li>Generate reports and provide insights to guide content strategy and optimization efforts.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's or Master's degree in Education, English, or a related field.</li>
                                         <li>Strong knowledge of language arts education principles, curriculum development, and educational standards.</li>
                                         <li>Experience in designing and developing language arts curricula for specific grade levels or courses.</li>
@@ -620,8 +620,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -638,7 +638,7 @@
                                     <h3 class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and detail-oriented QA Analyst to join our quality assurance team. As a QA Analyst, you will be responsible for ensuring the quality and reliability of our software products through rigorous testing and defect identification. Your role will involve designing and executing test plans, conducting functional and regression testing, and collaborating with cross-functional teams to deliver high-quality software solutions.</p>
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Collaborate with product managers, business analysts, and developers to understand project requirements and define test objectives.</li>
                                         <li>Develop comprehensive test plans, test cases, and test scripts based on functional specifications and user stories.</li>
                                         <li>Identify and prioritize test cases based on risk assessment and business impact.</li>
@@ -652,7 +652,7 @@
                                         <li>Collaborate with developers to reproduce and debug defects, ensuring accurate and thorough defect information is communicated.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's degree in Computer Science, Information Technology, or a related field.</li>
                                         <li>Proven experience as a QA Analyst or in a similar quality assurance role.</li>
                                         <li>Solid understanding of software development life cycle (SDLC) and testing methodologies.</li>
@@ -668,8 +668,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -688,7 +688,7 @@
                                     <p itemprop="description">We are seeking a highly skilled and experienced Senior UI/UX Designer to join our design team. As a Senior UI/UX Designer, you will be responsible for creating intuitive and visually appealing user interfaces and seamless user experiences across various digital platforms. Your role will involve leading the UI/UX design process, collaborating with cross-functional teams, and ensuring the delivery of exceptional design solutions that meet user needs and business objectives.</p>
                                     
                                     <h3 class="font-24">Responsibilities</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Lead the end-to-end UI/UX design process, from conceptualization to execution, for digital products and experiences.</li>
                                         <li>Create wireframes, interactive prototypes, and high-fidelity designs that effectively communicate user flows, interactions, and visual designs.</li>
                                         <li>Conduct user research, usability testing, and gather user feedback to inform design decisions and optimize user experiences.</li>
@@ -702,7 +702,7 @@
                                         <li>Iteratively refine UI/UX designs based on user feedback, usability findings, and analytics data.</li>
                                     </ul>
                                     <h3 class="font-24">Requirements</h3>
-                                    <ul class="lms-disc-list">
+                                    <ul class="rurera-disc-list">
                                         <li>Bachelor's or Master's degree in Design, Human-Computer Interaction, or a related field.</li>
                                         <li>Extensive experience in UI/UX design, including wireframing, prototyping, and visual design.</li>
                                         <li>Proficiency in design tools such as Sketch, Figma, Adobe XD, or similar.</li>
@@ -717,8 +717,8 @@
                                     <h3 class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
                                     <p itemprop="description" class="accordion-controls">
-                                        <a href="#" class="lms-apply-btn">Apply for this position</a>
-                                        <a href="#" class="lms-contact-btn">Contact us</a>
+                                        <a href="#" class="rurera-apply-btn">Apply for this position</a>
+                                        <a href="#" class="rurera-contact-btn">Contact us</a>
                                     </p>
                                 </div>
                             </div>
@@ -728,7 +728,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-testimonial-slider py-50">
+    <section class="rurera-testimonial-slider py-50">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -788,7 +788,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-counter-section pb-60">
+    <section class="rurera-counter-section pb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -798,25 +798,25 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong itemprop="number" class="custom-counter">100</strong><span class="plus-icons">+</span>
                         <p itemprop="description" class="font-16 font-weight-normal">Sats Practices</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong itemprop="number" class="custom-counter">60</strong><span class="plus-icons">+</span>
                         <p itemprop="description" class="font-16 font-weight-normal">Cities</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong itemprop="number" class="custom-counter">5000</strong><span class="plus-icons">+</span>
                         <p itemprop="description" class="font-16 font-weight-normal">Questions</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong itemprop="number" class="custom-counter">100</strong><span class="plus-icons">+</span>
                         <p itemprop="description" class="font-16 font-weight-normal">Books</p>
                     </div>
@@ -824,15 +824,15 @@
             </div>
         </div>
     </section>
-    <section class="lms-jobsform-section mb-0 pt-80 pb-90" style="background: url(../assets/default/svgs/diagonal-lines.svg) #f8f8f8;">
+    <section class="rurera-jobsform-section mb-0 pt-80 pb-90" style="background: url(../assets/default/svgs/diagonal-lines.svg) #f8f8f8;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="section-title text-center mb-40">
                         <h2 class="mt-0 font-40">Application Form</h2>
                     </div>
-                    <div class="lms-jobs-form">
-                        <div class="lms-jobs-form-body">
+                    <div class="rurera-jobs-form">
+                        <div class="rurera-jobs-form-body">
                             <div class="accordion" id="accordionExample2">
                                 <div class="card">
                                     <div class="card-header active" id="headingOne">
@@ -853,7 +853,7 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                    <div class="lms-form-description">
+                                                    <div class="rurera-form-description">
                                                         <b itemprop="description">Thanks for your interest in joining Team Rurera.</b>
                                                         <p itemprop="description">Please complete the form below to give us as much information as possible to help
                                                             move to the next step. Once you
@@ -866,7 +866,7 @@
                                                     <div class="form-group">
                                                         <label class="input-label">Position applying for</label>
                                                         <div class="input-field select-arrow">
-                                                            <select class="lms-jobs-select">
+                                                            <select class="rurera-jobs-select">
                                                                 <option value="" selected="selected">Content Creator/Instructional Designer
                                                                 </option>
                                                                 <option value="Subject Matter Expert (SME)">Subject Matter Expert (SME)</option>
@@ -894,7 +894,7 @@
                                                     <div class="form-group">
                                                         <label class="input-label">Training experience</label>
                                                         <div class="input-field select-arrow">
-                                                            <select class="lms-jobs-select">
+                                                            <select class="rurera-jobs-select">
                                                                 <option value="" selected="selected">1</option>
                                                                 <option value="2">2</option>
                                                                 <option value="3">3</option>
@@ -1038,19 +1038,19 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section py-70 mx-w-100" style="background-color: var(--primary);">
+    <section class="rurera-column-section rurera-text-section py-70 mx-w-100" style="background-color: var(--primary);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="lms-text-holder">
+                    <div class="rurera-text-holder">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
                                 <h2 class="mb-20 text-white font-40">Ready to start learning?</h2>
                                 <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
-                                <div class="lms-btn-group">
-                                    <a itemprop="url" href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white ml-auto">Join Rurera Today</a>
+                                <div class="rurera-btn-group">
+                                    <a itemprop="url" href="{{url('/')}}/register" class="rurera-btn rounded-pill text-white border-white ml-auto">Join Rurera Today</a>
                                 </div>
                             </div>
                         </div>
