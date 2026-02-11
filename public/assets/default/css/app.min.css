@@ -14963,6 +14963,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     padding: 50px 0 30px 30px;
 }
 .rurera-help-section h3 {
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .rurera-help-section .rurera-help-text {
