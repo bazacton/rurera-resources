@@ -479,6 +479,67 @@
         </div>
     </section>
 
+    <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7 col-md-7">
+                    <div class="section-title mb-30">
+                        <h2 class="text-white">Parent account</h2>
+                        <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
+                    </div>
+                    <ul class="font-14 feature-list">
+                        <li>Real-Time diagnostics</li>
+                        <li>Track Child’s Learning</li>
+                        <li>Assign Goals for your Child</li>
+                        <li>Regular Notifications on Activities.</li>
+                        <li>learning controls</li>
+                        <li>Easy to Manage Sibling Accounts</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5 col-md-5">
+                    <div class="imb-box"><img alt="banner-home image" height="570" src="/assets/default/img/banner-home.webp" width="548" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @php
+        $packages_only = isset( $packages )? $packages : array();
+        $show_details = isset( $show_details )? $show_details : true;
+    @endphp
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70"
+             data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="section-title text-center mb-40">
+                        <h2 class="mb-10">Choose the right plan for you</h2>
+                        <p>Save more with annual pricing</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="plan-switch-holder">
+                        <div class="plan-switch-option">
+                            <span class="switch-label">Pay Monthly</span>
+                            <div class="plan-switch">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" value="12" id="iNotAvailable" />
+                                    <label class="custom-control-label" for="iNotAvailable"></label>
+                                </div>
+                            </div>
+                            <span class="switch-label">Pay Yearly</span>
+                        </div>
+                        <div class="save-plan"><span>Save 25%</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 mx-auto">
+                    <div class="row">
+                        @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' =>
+                        $packages_only, 'show_details' => false])
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="pb-70" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
@@ -769,67 +830,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                    <div class="section-title mb-30">
-                        <h2 class="text-white">Parent account</h2>
-                        <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
-                    </div>
-                    <ul class="font-14 feature-list">
-                        <li>Real-Time diagnostics</li>
-                        <li>Track Child’s Learning</li>
-                        <li>Assign Goals for your Child</li>
-                        <li>Regular Notifications on Activities.</li>
-                        <li>learning controls</li>
-                        <li>Easy to Manage Sibling Accounts</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5">
-                    <div class="imb-box"><img alt="banner-home image" height="570" src="/assets/default/img/banner-home.webp" width="548" /></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    @php
-        $packages_only = isset( $packages )? $packages : array();
-        $show_details = isset( $show_details )? $show_details : true;
-    @endphp
-    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70"
-             data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12 text-center">
-                    <div class="section-title text-center mb-40">
-                        <h2 class="mb-10">Choose the right plan for you</h2>
-                        <p>Save more with annual pricing</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-12 text-center">
-                    <div class="plan-switch-holder">
-                        <div class="plan-switch-option">
-                            <span class="switch-label">Pay Monthly</span>
-                            <div class="plan-switch">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" value="12" id="iNotAvailable" />
-                                    <label class="custom-control-label" for="iNotAvailable"></label>
-                                </div>
-                            </div>
-                            <span class="switch-label">Pay Yearly</span>
-                        </div>
-                        <div class="save-plan"><span>Save 25%</span></div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-12 mx-auto">
-                    <div class="row">
-                        @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' =>
-                        $packages_only, 'show_details' => false])
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
     <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
