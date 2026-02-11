@@ -166,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-features-section">
+    <section class="rurera-features-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
@@ -176,11 +176,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon" style="background-color: #5e82d8;"><img alt="Pretest Activities" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Pretest Activities</h3>
                             <p>
                                 <b class="d-block mb-10">Enhance learning with Rurera.</b>
@@ -190,11 +190,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon" style="background-color: #46b7e9;"><img alt="100+ ISEB Resources" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">100+ ISEB Resources</h3>
                             <p>
                                 <b class="d-block mb-10">Endless Resources, Endless Improvement</b>
@@ -204,11 +204,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Timed Test Challenges" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Timed Test Challenges</h3>
                             <p>
                                 <b class="d-block mb-10">Achieve with Timed Test.</b>
@@ -218,11 +218,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon" style="background-color: #f87966;"><img alt="Identify and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Identify and Improve</h3>
                             <p>
                                 <b class="d-block mb-10">Conquer Your Weaknesses.</b>
@@ -232,11 +232,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Up-to-Date Reports</h3>
                             <p>
                                 <b class="d-block mb-10">Track Progress, Achieve More</b>
@@ -246,11 +246,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="lms-feature-card mt-50">
+                    <div class="rurera-feature-card mt-50">
                         <figure>
                             <i class="svg-icon" style="background-color: #46b7e9;"><img alt="Dedicated Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
-                        <div class="lms-text-holder">
+                        <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Dedicated Support</h3>
                             <p>
                                 <b class="d-block mb-10">Dedicated Help, Proven Results</b>
@@ -529,7 +529,7 @@
                 </div>
                 <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100">
+                        <div class="mt-0 rurera-faqs mx-w-100">
                             <div id="faqAccordion" class="accordion">
 
                                 <!-- FAQ 1 -->
@@ -836,7 +836,7 @@
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70"
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70"
              data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
@@ -870,7 +870,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
