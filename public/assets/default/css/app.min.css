@@ -15094,6 +15094,11 @@ section:has(.trial-steps) .lms-btn-group a small {
 .feature-item.active .feature-header h5 {
   color: #000;
 }
+/* controls */
+.controls{position:absolute;left:32px;bottom:16px;display:flex;gap:12px}
+.dot{width:8px;height:8px;border-radius:50%;background:#bbb;cursor:pointer}
+.dot.active{background:var(--accent);width:22px;border-radius:6px}
+.auto-btn{border-radius:999px;font-weight:700}
 .feature-item.active .arrow {
     opacity: 1;
     transform: translateX(0);
