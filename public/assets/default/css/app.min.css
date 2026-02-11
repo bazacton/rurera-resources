@@ -15052,7 +15052,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     border-bottom: 1px solid #ddd;
     cursor: pointer;
     position: relative;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-out;
 }
 .feature-item.active {
     opacity: 1;
