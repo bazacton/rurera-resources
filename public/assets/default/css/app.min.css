@@ -15047,14 +15047,12 @@ section:has(.trial-steps) .rurera-btn-group a small {
 /* Accordion Slider Style Start */
 
 /* Feature Items (Left Side) */
-.slider-section .row {
-    align-items: flex-start;
-}
 .feature-item {
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
     position: relative;
+    transition: opacity 0.3s ease-out;
 }
 .feature-item.active {
     opacity: 1;
@@ -15127,14 +15125,12 @@ section:has(.trial-steps) .rurera-btn-group a small {
     width: 0%;
 }
 .slider-section {
-  height: 800px;
-  overflow: hidden;
+  height: 750px;
 }
 .feature-tabs-holder {
   display: flex;
   flex-direction: column;
   height: 600px;
-  overflow: hidden;
 }
 .feature-tabs {
   margin-top: auto;
@@ -15177,7 +15173,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 }
 .image-container .images-holder {
     position: relative;
-    height: 400px;
+    height: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15194,7 +15190,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-image.active {
     opacity: 1;
     animation:in .8s forwards;
-    height: 400px;
+    height: 500px;
 }
 @keyframes in{to{opacity:1;transform:none}}
 /* Accordion Slider Style End */
