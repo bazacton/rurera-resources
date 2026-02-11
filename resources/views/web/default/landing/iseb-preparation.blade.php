@@ -280,7 +280,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Game-Based Learning
                         </h3>
                         <p>Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
@@ -291,7 +291,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Essential Mock Exams
                         </h3>
                         <p>Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
@@ -302,7 +302,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Parental Insights
                         </h3>
                         <p>Monitor progress with detailed insights to support your child’s academic success.</p>
@@ -313,7 +313,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Ultimate 11 Plus Practice Toolkit
                         </h3>
                         <p>Encourage continuous improvement with self-assessment tools and progress tracking.</p>
@@ -324,7 +324,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Top-Tier Study Materials
                         </h3>
                         <p>Access all-encompassing resources to thoroughly prepare for every aspect of the 11+ exam.</p>
@@ -335,7 +335,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Smart Exam Tactics
                         </h3>
                         <p>Learn effective tips for time management, stress reduction, and question strategies.</p>
@@ -346,7 +346,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Adaptive Curriculum
                         </h3>
                         <p>Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
@@ -357,7 +357,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Personalised Practice
                         </h3>
                         <p>Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
@@ -368,7 +368,7 @@
                         <figure class="mb-20">
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             Elevate 11 Plus Preparation
                         </h3>
                         <p>Achieve exam success with tailored practice and confidence-building resources.</p>
