@@ -379,7 +379,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-80 lms-counter-section">
+    <section class="pt-80 rurera-counter-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12">
@@ -392,25 +392,25 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong class="custom-counter" itemprop="number">100</strong><span class="plus-icons">+</span>
                         <p class="font-16 font-weight-normal" itemprop="description">Sats Practices</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong class="custom-counter" itemprop="number">60</strong><span class="plus-icons">+</span>
                         <p class="font-16 font-weight-normal" itemprop="description">Cities</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong class="custom-counter" itemprop="number">5000</strong><span class="plus-icons">+</span>
                         <p class="font-16 font-weight-normal" itemprop="description">Questions</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
-                    <div class="lms-counter-card">
+                    <div class="rurera-counter-card">
                         <strong class="custom-counter" itemprop="number">100</strong><span class="plus-icons">+</span>
                         <p class="font-16 font-weight-normal" itemprop="description">Books</p>
                     </div>

@@ -242,7 +242,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
+    <section class="rurera-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -335,176 +335,176 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <ul class="lms-key-stage-table bg-table mt-30">
-                        <li class="lms-key-stage-head">
-                            <div class="lms-key-stage keystage-title border-none"></div>
-                            <div class="lms-key-stage">
+                    <ul class="rurera-key-stage-table bg-table mt-30">
+                        <li class="rurera-key-stage-head">
+                            <div class="rurera-key-stage keystage-title border-none"></div>
+                            <div class="rurera-key-stage">
                                 <h3>English - Reading</h3>
                             </div>
-                            <div class="lms-key-stage">
+                            <div class="rurera-key-stage">
                                 <h3>English - SPaG</h3>
                             </div>
-                            <div class="lms-key-stage">
+                            <div class="rurera-key-stage">
                                 <h3>Math - Arithmetic</h3>
                             </div>
-                            <div class="lms-key-stage">
+                            <div class="rurera-key-stage">
                                 <h3>Math - Reasoning</h3>
                             </div>
                         </li>
-                        <li class="lms-key-stage-des">
-                            <div class="lms-key-stage text-center"><strong>2022</strong></div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                        <li class="rurera-key-stage-des">
+                            <div class="rurera-key-stage text-center"><strong>2022</strong></div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img">
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img">
                                         <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img">
-                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lms-key-stage-des">
-                            <div class="lms-key-stage text-center"><strong>2019</strong></div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lms-key-stage-des">
-                            <div class="lms-key-stage text-center"><strong>2018</strong></div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img">
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img">
                                         <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="lms-key-stage-des">
-                            <div class="lms-key-stage text-center"><strong>2017</strong></div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                        <li class="rurera-key-stage-des">
+                            <div class="rurera-key-stage text-center"><strong>2019</strong></div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="lms-key-stage-des">
-                            <div class="lms-key-stage text-center"><strong>2016</strong></div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                        <li class="rurera-key-stage-des">
+                            <div class="rurera-key-stage text-center"><strong>2018</strong></div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
                                     </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
                                     </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="lms-key-stage">
-                                <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img">
+                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rurera-key-stage-des">
+                            <div class="rurera-key-stage text-center"><strong>2017</strong></div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rurera-key-stage-des">
+                            <div class="rurera-key-stage text-center"><strong>2016</strong></div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
@@ -514,11 +514,11 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
+    <section class="rurera-column-section rurera-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="lms-text-holder d-flex justify-content-between">
+                    <div class="rurera-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
                             <h4 class="mb-10 font-30 align-items-center d-inline-flex text-white">
                                 <span class="icon-svg mr-15">
@@ -528,7 +528,7 @@
                             </h4>
                             <p class="font-16 text-white"> Let us help you achieve the score you deserve and unlock <br>doors to your future academic success.</p>
                         </div>
-                        <div class="lms-btn-group justify-content-center">
+                        <div class="rurera-btn-group justify-content-center">
                             <a href="{{url('/')}}/register-as" class="try-rurera-btn btn-primary text-dark-blue font-16 register-btn py-15 px-30">Try Rurera for free</a>
                         </div>
                     </div>
@@ -850,7 +850,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="rurera-column-section rurera-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -859,7 +859,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion rurera-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
@@ -874,7 +874,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg" alt="company sats" title="company sats" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -891,7 +891,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -908,7 +908,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg" alt="company rewards" title="company rewards" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -923,7 +923,7 @@
                                     <p itemprop="description" class="font-16 font-weight-normal">Online platforms often provide real-time reporting to both students and teachers, allowing for prompt interventions and support.</p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -941,7 +941,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg" alt="company quiz" title="company quiz" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -959,7 +959,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -977,7 +977,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -1001,7 +1001,7 @@
 
                 <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100">
+                        <div class="mt-0 rurera-faqs mx-w-100">
                             <div id="faqAccordion" class="accordion">
 
                                 <!-- FAQ 1 -->
@@ -1268,7 +1268,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -1299,7 +1299,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModal" aria-hidden="true">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
