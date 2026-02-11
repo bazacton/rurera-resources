@@ -487,7 +487,7 @@
                         <h2 class="text-white">Parent account</h2>
                         <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
-                    <ul class="font-14 feature-list">
+                    <ul class="feature-list">
                         <li>Real-Time diagnostics</li>
                         <li>Track Child’s Learning</li>
                         <li>Assign Goals for your Child</li>
