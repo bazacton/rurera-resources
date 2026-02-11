@@ -989,7 +989,7 @@
             // Pause the current progress bar at its current position
             const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
             const currentWidth = $currentBar.width();
-            $currentBar.css({
+            currentBar.css({
                 'width': currentWidth + 'px',
                 'transition': 'none'
             });
