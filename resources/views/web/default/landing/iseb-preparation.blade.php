@@ -537,124 +537,117 @@
             <div class="row">
                 <!-- Left Side: Tabs/Accordion -->
                 <div class="col-md-5">
-                    <div class="feature-tabs-holder">
-                        <div class="section-title mb-15">
-                            <h2>Why choose Rurera <br> assessments ?</h2>
+                    <div class="feature-tabs">
+                        <!-- Item 1 -->
+                        <div class="feature-item" data-target="img-1">
+                            <div class="feature-header">
+                                <h5>
+                                    Adaptive Assessments Testing
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
+                            </div>
+                            <div class="feature-content">
+                                <p>Track progress with personalized adaptive assessments, adjusting difficulty levels for each student.</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
+                            </div>
                         </div>
-                        
-                        <div class="feature-tabs">
-                            <!-- Item 1 -->
-                            <div class="feature-item active" data-target="img-1">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Adaptive Assessments Testing
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>It helps schools to offer adaptive assessments that adjust the difficulty of questions as below, emerging, expected, exceeding and challenge which is based on a student's previous responses, history, reports and performance providing a more tailored learning experience.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
-                            </div>
 
-                            <!-- Item 2 -->
-                            <div class="feature-item" data-target="img-2">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Quick Results via automated marking
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Real-time marking data allows for quick identification of students who may require additional support or challenges. Students receive instant personalized feedback for every question and learning nugget.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
+                        <!-- Item 2 -->
+                        <div class="feature-item" data-target="img-2">
+                            <div class="feature-header">
+                                <h5>
+                                    Quick Results via Automated Marking
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
                             </div>
-
-                            <!-- Item 3 -->
-                            <div class="feature-item" data-target="img-3">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Diverse Question Formats
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Online assessments can include a variety of question types, from multiple choice to audio types offering a more comprehensive evaluation of student knowledge.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
+                            <div class="feature-content">
+                                <p>Instant feedback and data for faster support and personalized learning.</p>
                             </div>
-
-                            <!-- Item 4 -->
-                            <div class="feature-item" data-target="img-4">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Timely Reporting
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Online platforms often provide real-time reporting to both students and teachers, allowing for prompt interventions and support.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
                             </div>
+                        </div>
 
-                            <!-- Item 5 -->
-                            <div class="feature-item" data-target="img-5">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Breakthrough insights at every level
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Students and their parents can access a dashboard that displays their live progress in various subjects. It allows them to identify their strengths and areas needing improvement. Parents can monitor completed work, track their child's progress, and view assigned tasks.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
+                        <!-- Item 3 -->
+                        <div class="feature-item active" data-target="img-3">
+                            <div class="feature-header">
+                                <h5>
+                                    Diverse Question Formats
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
                             </div>
-
-                            <!-- Item 6 -->
-                            <div class="feature-item" data-target="img-6">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Students Engagement
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Ignite student’s passion more to join your school. A fantastic learning experience is possible using interactive challenges, Online Test practices, Entrance Exams preparations and rewarding them with trending toys.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
+                            <div class="feature-content">
+                                <p>Assess student knowledge with a range of question types for comprehensive evaluation.</p>
                             </div>
-
-                            <!-- Item 7 -->
-                            <div class="feature-item" data-target="img-7">
-                                <div class="feature-header">
-                                    <h5 class="font-20 font-weight-500">
-                                        Reward points
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h5>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Unlock Knowledge and Reward Yourself with Exciting Toys. It implies through continuous learning and improvement, students can increase their chances of winning playful toys. We believe in recognizing and appreciating your loyalty and engagement.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill"></div>
-                                </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 100%; transition: width 5000ms linear;"></div>
                             </div>
+                        </div>
 
+                        <!-- Item 4 -->
+                        <div class="feature-item" data-target="img-4">
+                            <div class="feature-header">
+                                <h5>
+                                    Timely Reporting
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
+                            </div>
+                            <div class="feature-content">
+                                <p>Real-time reporting enables prompt interventions and support for both students and teachers.</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="feature-item" data-target="img-5">
+                            <div class="feature-header">
+                                <h5>
+                                    Breakthrough Insights at Every Level
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
+                            </div>
+                            <div class="feature-content">
+                                <p>Gain insights into strengths and improvement areas with a live progress dashboard for students and parents.</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="feature-item" data-target="img-6">
+                            <div class="feature-header">
+                                <h5>
+                                    Students Engagement
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
+                            </div>
+                            <div class="feature-content">
+                                <p>Engage students through interactive challenges, test practices, and rewards to spark their passion for learning.</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Item 7 -->
+                        <div class="feature-item" data-target="img-7">
+                            <div class="feature-header">
+                                <h5>
+                                    Reward Points
+                                    <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
+                                </h5>
+                            </div>
+                            <div class="feature-content">
+                                <p>Unlock exciting rewards like toys through continuous learning and improvement.</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
+                            </div>
                         </div>
                     </div>
                     
