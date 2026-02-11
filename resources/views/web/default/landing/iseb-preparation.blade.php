@@ -381,7 +381,7 @@
                             <!-- Item 1 -->
                             <div class="feature-item" data-target="img-1">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Adaptive Assessments Testing
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -397,7 +397,7 @@
                             <!-- Item 2 -->
                             <div class="feature-item" data-target="img-2">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Quick Results via Automated Marking
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -413,7 +413,7 @@
                             <!-- Item 3 -->
                             <div class="feature-item active" data-target="img-3">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Diverse Question Formats
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -429,7 +429,7 @@
                             <!-- Item 4 -->
                             <div class="feature-item" data-target="img-4">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Timely Reporting
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -445,7 +445,7 @@
                             <!-- Item 5 -->
                             <div class="feature-item" data-target="img-5">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Breakthrough Insights at Every Level
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -461,7 +461,7 @@
                             <!-- Item 6 -->
                             <div class="feature-item" data-target="img-6">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Students Engagement
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -477,7 +477,7 @@
                             <!-- Item 7 -->
                             <div class="feature-item" data-target="img-7">
                                 <div class="feature-header">
-                                    <h3>
+                                    <h3 class="font-18 font-weight-500">
                                         Reward Points
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
