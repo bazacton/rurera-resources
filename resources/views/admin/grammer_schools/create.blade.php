@@ -578,6 +578,7 @@
 
                                             <div class="preview_img-report_file">
                                                 @if(isset($grammerSchoolObj->ofsted_report_file) && $grammerSchoolObj->ofsted_report_file != '')
+                                                    <input type="hidden" name="ofsted_report_file" value="{{$grammerSchoolObj->ofsted_report_file}}">
                                                     @php
                                                       $report_file = $grammerSchoolObj->ofsted_report_file;
                                                         $extension = strtolower(pathinfo($report_file, PATHINFO_EXTENSION));
