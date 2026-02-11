@@ -15133,6 +15133,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
   display: flex;
   flex-direction: column;
   height: 600px;
+  overflow: hidden;
 }
 .feature-tabs {
   margin-top: auto;
