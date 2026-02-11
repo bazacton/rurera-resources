@@ -15232,8 +15232,11 @@ section:has(.trial-steps) .rurera-btn-group a small {
   transform: translateY(16px);
   max-width: 100%;
   object-fit: contain;
+  display: none;
+  transition: opacity 0.4s ease;
 }
 .feature-image.active {
+    display: block;
     opacity: 1;
     animation:in .8s forwards;
     height: 500px;
