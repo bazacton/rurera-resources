@@ -125,7 +125,7 @@
       <div class="col-12 col-lg-6 mb-30">
         <div class="position-relative">
           <div class="vidio-holder">
-            <img src="../assets/default/img/testimonial-2.jpg" class="find-instructor-section-hero" alt="Find the best instructor" title="Find the best instructor" width="435" height="245" itemprop="image" loading="eager" />
+            <img src="../store/1/default_images/home_video_section.png" class="find-instructor-section-hero" alt="Find the best instructor" title="Find the best instructor" width="435" height="245" itemprop="image" loading="eager" />
           </div>
         </div>
       </div>
