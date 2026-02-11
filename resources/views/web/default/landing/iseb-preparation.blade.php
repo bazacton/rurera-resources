@@ -815,7 +815,7 @@
                 <div class="col-12 col-lg-7 col-md-7">
                     <div class="section-title mb-30">
                         <h2 class="text-white">Parent account</h2>
-                        <p class="text-white font-14 font-weight-500">We make it easy to be involved in your child’s learning Ability to assign activities</p>
+                        <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
                     <ul class="font-14">
                         <li><span>Real-Time diagnostics</span></li>
