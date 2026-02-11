@@ -7,8 +7,8 @@
 
 @section('content')
 
-<div class="lms-membership-section" data-currency_sign="{{getCurrencySign()}}">
-    <section class="lms-setup-progress-section mb-0 pt-60 pb-30" style="background-color: #fff;">
+<div class="rurera-membership-section" data-currency_sign="{{getCurrencySign()}}">
+    <section class="rurera-setup-progress-section mb-0 pt-60 pb-30" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -48,7 +48,7 @@
 
                 <div class="col-12 col-lg-8 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100">
+                        <div class="mt-0 rurera-faqs mx-w-100">
                             <div id="faqAccordion" class="accordion">
 
                                 <!-- FAQ 1 -->
@@ -282,7 +282,7 @@
     </section>
 
   
-    <section class="lms-have-question pt-70 pb-70 mt-50" style="background-color: #f3f6ff;">
+    <section class="rurera-have-question pt-70 pb-70 mt-50" style="background-color: #f3f6ff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-12 mx-auto">
@@ -303,7 +303,7 @@
         </div>
     </section>
 </div>
-<div class="modal fade lms-choose-membership" id="exampleModal">
+<div class="modal fade rurera-choose-membership" id="exampleModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -553,7 +553,7 @@
 </div>
 
 
-<div class="modal fade lms-choose-membership" id="subscriptionModal">
+<div class="modal fade rurera-choose-membership" id="subscriptionModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-toggle="modal" data-target="#leave-option-modal"><span aria-hidden="true">×</span></button>
