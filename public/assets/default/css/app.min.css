@@ -9833,7 +9833,7 @@ body .flipbook-data {
 }
 .masonry-grid-gallery.has-bg {
   background-color: #bae5f7;
-  padding: 90px 25px 0 25px;
+  padding: 50px 25px;
 }
 .masonry-grid-gallery.has-bg:before {
   content: "";
