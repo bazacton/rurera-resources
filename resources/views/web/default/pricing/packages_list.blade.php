@@ -113,7 +113,7 @@ $show_details = isset( $show_details )? $show_details : true;
             package_month = 12;
             package_discount = 25;
         }
-        var currency_sign = $(".lms-membership-section").attr('data-currency_sign');
+        var currency_sign = $(".rurera-membership-section").attr('data-currency_sign');
 		$('.subscribe-plan').find('.package-selection').removeClass('disabled-style');
 		$('.subscribe-plan').find('.package-selection').removeClass('disabled-div');
         $(".packages-prices").each(function(){
