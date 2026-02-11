@@ -9787,6 +9787,8 @@ body .flipbook-data {
 }
 .masonry-grid {
   margin-left: auto;
+  position: relative;
+  z-index: 2;
 }
 .masonry-grid-gallery .find-instructor-section-circle {
   position: absolute;
@@ -9810,9 +9812,6 @@ body .flipbook-data {
 .gallery-sub-header .masonry-grid .grid-item {
   margin-bottom: 0;
   padding: 0 5px;
-  /* width: auto;
-    flex: auto;
-    max-width: fit-content; */
 }
 .gallery-sub-header .masonry-grid figure {
   margin-bottom: 10px;
