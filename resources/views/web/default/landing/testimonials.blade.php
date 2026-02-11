@@ -122,17 +122,11 @@
           <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">As a parent, I want to share my incredible experience that has made a significant impact on my child's education. Rurera has truly transformed the way my child learns and engages with educational content. Recommended!</p>
         </div>
       </div>
-      <div class="col-12 col-lg-6 mt-20 mt-lg-0">
-        <div class="video-box d-flex flex-column align-items-center justify-content-center position-relative">
-            <a href="javascript:;" id="play-vidio" class="home-video-play-button d-flex align-items-center justify-content-center position-relative">
-                <img id="poster-img" src="/store/1/default_images/home_video_section.png" alt="home video section" title="home video section" width="1140" height="533" itemprop="image" loading="eager">
-                <span class="play-btn-holder">
-                    <img src="/assets/default/svgs/video-play-btn.svg" alt="video-play-btn">
-                </span>
-            </a>
-            <video id="video" preload="metadata" poster="/store/1/default_images/home_video_section.png">
-                <source src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
-            </video>
+      <div class="col-12 col-lg-6 mb-30">
+        <div class="position-relative">
+          <div class="vidio-holder">
+            <img src="../assets/default/img/testimonial-2.jpg" class="find-instructor-section-hero" alt="Find the best instructor" title="Find the best instructor" width="435" height="245" itemprop="image" loading="eager" />
+          </div>
         </div>
       </div>
     </div>
