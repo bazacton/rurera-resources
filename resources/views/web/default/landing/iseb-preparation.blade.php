@@ -859,55 +859,54 @@
 @push('scripts_bottom')
 <script>
    $(document).ready(function() {
+
     const $items = $('.feature-item');
     const $images = $('.feature-image');
     const $autoplayBtn = $('#autoplayBtn');
     let currentIndex = 0;
     const duration = 5000; // 5 seconds per slide
     let isAutoplayOn = true;
-    let isTransitioning = false; // Prevents overlapping transitions
+    let isTransitioning = false;
 
     /**
-     * Resets and starts the progress bar animation for the current active item.
+     * Resets and starts the progress bar animation
      */
     function startProgress() {
-        // Reset all progress bars immediately
+
+        // Reset all progress bars
         $('.progress-bar-fill').css({
-            'width': '0%',
-            'transition': 'none'
+            width: '0%',
+            transition: 'none'
         });
 
-        // Do not start animation if autoplay is off or we are in the middle of a transition
         if (!isAutoplayOn || isTransitioning) return;
 
-        // Get the progress bar of the current active item
         const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
 
-        // Force a reflow to ensure the CSS reset is applied before starting the new transition
-        $currentBar[0].offsetHeight; 
+        if (!$currentBar.length) return;
 
-        // Start the progress bar width animation
+        // Force reflow
+        $currentBar[0].offsetHeight;
+
+        // Start animation (FIXED LINE)
         $currentBar.css({
-            'width': '100%',
-            'transition': width ${duration}ms linear
+            width: '100%',
+            transition: `width ${duration}ms linear`
         });
     }
 
     /**
-     * Handles the sequential transition: Close Previous -> Wait 500ms -> Open Next.
-     * @param {number} index - The index of the item to activate.
-     * @param {boolean} isImmediate - If true, skips the wait/close sequence (used for initial load).
+     * Slide change handler
      */
     function setActive(index, isImmediate = false) {
+
         if (isTransitioning) return;
-        
-        // If clicking the same already active item, just restart the progress timer
+
         if (index === currentIndex && $items.eq(index).hasClass('active')) {
             if (isAutoplayOn) startProgress();
             return;
         }
 
-        // For initial load: set active immediately without the close-wait-open sequence
         if (isImmediate) {
             $items.eq(index).addClass('active');
             $images.eq(index).addClass('active');
@@ -918,48 +917,42 @@
 
         isTransitioning = true;
 
-        // STEP 1: Close the Previous (current) tab and hide its image
+        // Remove active
         $items.removeClass('active');
         $images.removeClass('active');
-        
-        // Reset progress bar state for everyone
+
         $('.progress-bar-fill').css({
-            'width': '0%',
-            'transition': 'none'
+            width: '0%',
+            transition: 'none'
         });
 
-        // STEP 2: Wait for 500 MS (allows the closing animation to finish)
         setTimeout(function() {
-            // STEP 3: Open the Next tab and show its image
+
             $items.eq(index).addClass('active');
             $images.eq(index).addClass('active');
-
             currentIndex = index;
-            
-            // Allow new transitions after the opening animation has started (500ms)
+
             setTimeout(function() {
                 isTransitioning = false;
             }, 500);
 
-            // Restart progress bar for the new active item
             startProgress();
-        }, 500); 
+
+        }, 500);
     }
 
-    // Initialize the first slide immediately on page load
+    // Initialize first slide
     setActive(0, true);
 
     /**
-     * Event listener for the progress bar transition.
-     * When it finishes, it automatically triggers the next slide if autoplay is enabled.
+     * Progress bar transition end → go next
      */
     $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function(e) {
+
         if (!isAutoplayOn) return;
-        
-        // Ensure we only react to the 'width' transition
+
         if (e.originalEvent.propertyName !== 'width') return;
-        
-        // Only trigger if this bar belongs to the currently active item
+
         if ($(this).closest('.feature-item').hasClass('active')) {
             let nextIndex = (currentIndex + 1) % $items.length;
             setActive(nextIndex);
@@ -967,7 +960,7 @@
     });
 
     /**
-     * Click handler for the feature tabs/items.
+     * Manual click
      */
     $items.on('click', function() {
         const index = $(this).index();
@@ -975,26 +968,28 @@
     });
 
     /**
-     * Click handler for the Autoplay Toggle button.
+     * Autoplay toggle
      */
     $autoplayBtn.on('click', function() {
+
         isAutoplayOn = !isAutoplayOn;
+
         $(this).toggleClass('paused', !isAutoplayOn);
         $('.feature-tabs').toggleClass('autoplay-disabled', !isAutoplayOn);
 
         if (isAutoplayOn) {
-            // Restart progress if turned back on
             startProgress();
         } else {
-            // Pause the current progress bar at its current position
             const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
             const currentWidth = $currentBar.width();
+
             $currentBar.css({
-                'width': currentWidth + 'px',
-                'transition': 'none'
+                width: currentWidth + 'px',
+                transition: 'none'
             });
         }
     });
+
 });
 </script>
 @endpush
