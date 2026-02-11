@@ -15128,9 +15128,9 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-tabs-holder {
   display: flex;
   flex-direction: column;
+  height: 600px;
 }
 .feature-tabs {
-  height: 500px;
   margin-top: auto;
 }
 /* Right Side Images */
