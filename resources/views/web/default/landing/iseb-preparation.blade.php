@@ -457,38 +457,6 @@
                                     <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
                                 </div>
                             </div>
-
-                            <!-- Item 6 -->
-                            <div class="feature-item" data-target="img-6">
-                                <div class="feature-header">
-                                    <h3 class="font-18 font-weight-bold">
-                                        Students Engagement
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Engage students through interactive challenges, test practices, and rewards to spark their passion for learning.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
-                                </div>
-                            </div>
-
-                            <!-- Item 7 -->
-                            <div class="feature-item" data-target="img-7">
-                                <div class="feature-header">
-                                    <h3 class="font-18 font-weight-bold">
-                                        Reward Points
-                                        <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
-                                    </h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p>Unlock exciting rewards like toys through continuous learning and improvement.</p>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill" style="width: 0%; transition: none;"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     
@@ -503,8 +471,6 @@
                             <img src="/assets/default/img/feature-slider/builder-header.webp" alt="builder-header" class="feature-image" id="img-3">
                             <img src="/assets/default/img/feature-slider/builder-popup.webp" alt="builder-popup" class="feature-image" id="img-4">
                             <img src="/assets/default/img/feature-slider/builder-woo.webp" alt="builder-woo" class="feature-image" id="img-5">
-                            <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="Students Engagement" class="feature-image" id="img-6">
-                            <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="Reward points" class="feature-image" id="img-7">
                         </div>
                         
                     </div>
