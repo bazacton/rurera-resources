@@ -15,7 +15,7 @@
                     </h2>
                     <p class="font-19">The 11 Plus is a selective entrance exam for grammar and independent schools in England, 
                     taken in Year 6. It assesses English, Maths, and reasoning skills under timed conditions. </p>
-                    <ul class="mb-30 p-0">
+                    <ul class="mb-30 p-0 categories-option">
                         <li class="mb-10 font-19">
                             11 plus practice papers & learning modules
                         </li>
