@@ -10465,6 +10465,7 @@ body .flipbook-data {
   background-color: #091E420F;
 }
 .top-navbar .register-btn {
+  background-color: var(--primary);
   border: 1px solid var(--primary);
   padding: 7px 20px;
   height: 40px;
