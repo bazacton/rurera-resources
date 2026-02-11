@@ -14943,7 +14943,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     background-color: #f8f8f8;
     border-radius: 5px;
     padding: 20px;
-    margin: 0 0 30px;
+    margin-bottom: 30px;
 }
 .rurera-help-container {
     display: flex;
