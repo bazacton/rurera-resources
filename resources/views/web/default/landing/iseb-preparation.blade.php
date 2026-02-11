@@ -777,13 +777,13 @@
                         <h2 class="text-white">Parent account</h2>
                         <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
-                    <ul class="font-14 ">
-                        <li><span>Real-Time diagnostics</span></li>
-                        <li><span>Track Child’s Learning</span></li>
-                        <li><span>Assign Goals for your Child</span></li>
-                        <li><span>Regular Notifications on Activities.</span></li>
-                        <li><span>learning controls</span></li>
-                        <li><span>Easy to Manage Sibling Accounts</span></li>
+                    <ul class="font-14 feature-list">
+                        <li>Real-Time diagnostics</li>
+                        <li>Track Child’s Learning</li>
+                        <li>Assign Goals for your Child</li>
+                        <li>Regular Notifications on Activities.</li>
+                        <li>learning controls</li>
+                        <li>Easy to Manage Sibling Accounts</li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5">
