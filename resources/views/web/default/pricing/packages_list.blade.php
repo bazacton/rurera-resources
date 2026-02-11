@@ -37,7 +37,7 @@ $show_details = isset( $show_details )? $show_details : true;
 
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
             <span class="font-20 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
-                    class="yearly-price">
+                    class="yearly-price font-14">
 
                 @if($subscribe->price > 0)
                 {{ addCurrencyToPrice($subscribe->price) }} / month
