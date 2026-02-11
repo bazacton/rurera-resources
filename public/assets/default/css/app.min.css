@@ -15047,6 +15047,9 @@ section:has(.trial-steps) .rurera-btn-group a small {
 /* Accordion Slider Style Start */
 
 /* Feature Items (Left Side) */
+.slider-section .row {
+    align-items: flex-start;
+}
 .feature-item {
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
