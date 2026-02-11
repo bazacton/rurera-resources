@@ -44,7 +44,7 @@
 
 </head>
 
-<body class="menu-closed @if($isRtl) rtl @endif">
+<body class="@if($isRtl) rtl @endif">
     <div id="app">
         @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
             @if(!isset($appHeader))
