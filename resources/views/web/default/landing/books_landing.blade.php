@@ -10,7 +10,7 @@
         <div class="col-12 col-md-12 col-lg-7">
           <h1>Dive into the World of <span class="text-scribble">Books!</span></h1>
           <strong class="d-block font-18">Read Anywhere, Anytime!</strong>
-          <p itemprop="description" class="lms-subtitle font-14 pt-10 mb-0">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day. Rurera’s Books Shelf offers curated reading collections for children aged 4–11, aligned with literacy development goals and reading levels. </p>
+          <p itemprop="description" class="rurera-subtitle font-14 pt-10 mb-0">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading books for kids grow every day. Rurera’s Books Shelf offers curated reading collections for children aged 4–11, aligned with literacy development goals and reading levels. </p>
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
         </div>
       </div>
@@ -78,7 +78,7 @@
       </div>
     </div>
   </section>
-  <section class="lms-services lms-contact-info mx-w-100 pt-80 pb-50 mb-80 lms-wave-shape-top" style="background-color: #f6b801;">
+  <section class="rurera-services rurera-contact-info mx-w-100 pt-80 pb-50 mb-80 rurera-wave-shape-top" style="background-color: #f6b801;">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -178,7 +178,7 @@
     </div>
   </section>
 
-  <section class="lms-blog lms-blog-grid books-blog mx-w-100 pt-80 pb-50 mb-80" style="background-color:#7679ee;">
+  <section class="rurera-blog rurera-blog-grid books-blog mx-w-100 pt-80 pb-50 mb-80" style="background-color:#7679ee;">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12">
@@ -301,7 +301,7 @@
             </div>
 
             <div class="col-12 col-lg-8 col-md-12 mx-auto">
-                <div class="lms-faqs mx-w-100">
+                <div class="rurera-faqs mx-w-100">
                     <div id="faqAccordion" class="accordion">
 
                         <!-- FAQ 1 -->
@@ -516,7 +516,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -545,7 +545,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModal" aria-hidden="true">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -555,7 +555,7 @@
             </div>
         </div>
     </div>
-  <div class="modal fade lms-choose-membership" id="exampleModal">
+  <div class="modal fade rurera-choose-membership" id="exampleModal">
     <div class="modal-dialog">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
