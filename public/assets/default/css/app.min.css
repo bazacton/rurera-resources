@@ -9742,7 +9742,7 @@ body .flipbook-data {
 .job-singup-sub-header,
 .page-sub-header {
   background-color: #fff;
-  padding: 50px;
+  padding: 40px 0;
   margin: 0;
   display: flex;
   overflow: hidden;
