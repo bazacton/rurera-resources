@@ -15132,7 +15132,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-tabs-holder {
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 600px;
 }
 .feature-tabs {
   margin-top: auto;
