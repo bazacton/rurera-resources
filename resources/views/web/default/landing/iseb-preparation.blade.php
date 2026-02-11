@@ -875,36 +875,16 @@
             });
         }
 
-        function setActive(index, isImmediate = false) {
-            if (isTransitioning) return;
-            
-            if (isImmediate) {
-                $items.eq(index).addClass('active');
-                $images.eq(index).addClass('active');
-                currentIndex = index;
-                startProgress();
-                return;
-            }
-
-            isTransitioning = true;
-
+        function setActive(index) {
+            // Update Classes
             $items.removeClass('active');
             $images.removeClass('active');
-            
-            $('.progress-bar-fill').css({'width': '0%', 'transition': 'none'});
 
-            setTimeout(function() {
-                $items.eq(index).addClass('active');
-                $images.eq(index).addClass('active');
+            $items.eq(index).addClass('active');
+            $images.eq(index).addClass('active'); // Simply use index since images map 1:1
 
-                currentIndex = index;
-                
-                setTimeout(function() {
-                    isTransitioning = false;
-                }, 500);
-
-                startProgress();
-            }, 500); 
+            currentIndex = index;
+            startProgress();
         }
 
         // Initialize first slide
