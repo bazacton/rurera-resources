@@ -429,7 +429,7 @@
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Game-Based Learning</span>
+                            Game-Based Learning
                         </h3>
                         <p itemprop="description">Interactive games make 11 Plus practice enjoyable, helping children master skills while 
                         staying motivated and building confidence.</p>
@@ -441,7 +441,7 @@
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Essential Mock Exams</span>
+                            Essential Mock Exams
                         </h3>
                         <p itemprop="description">Full-length mock exams simulate real tests, teaching timing, question patterns, and 
                         strategies while reducing exam-day stress.</p>
@@ -453,7 +453,7 @@
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Parental Insights</span>
+                            Parental Insights
                         </h3>
                         <p itemprop="description">Parents can track completion, strengths, and areas for improvement to guide their child’s 
                         learning effectively and confidently.</p>
@@ -465,7 +465,7 @@
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal"> Ultimate 11 Plus Practice Toolkit</span>
+                            Ultimate 11 Plus Practice Toolkit
                         </h3>
                         <p itemprop="description">A complete set of practice modules and progress tracking tools helps children improve skills independently and steadily.</p>
                     </div>
@@ -479,7 +479,7 @@
 
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Top-Tier Study Materials</span>
+                            Top-Tier Study Materials
                         </h3>
                         <p itemprop="description">High-quality materials cover English, Maths, and reasoning, reinforcing core skills and preparing children for real 11 Plus exams.</p>
                     </div>
@@ -490,7 +490,7 @@
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Smart Exam Tactics</span>
+                            Smart Exam Tactics
                         </h3>
                         <p itemprop="description">Children learn pacing, question strategies, and stress management to tackle each 11 Plus paper efficiently and confidently.</p>
                     </div>
@@ -504,7 +504,7 @@
 
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Adaptive Curriculum</span>
+                            Adaptive Curriculum
                         </h3>
                         <p itemprop="description">The curriculum adapts in real time to each child’s strengths and weaknesses, focusing practice where it is needed most.</p>
                     </div>
