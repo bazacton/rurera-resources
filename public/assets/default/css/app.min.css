@@ -14938,6 +14938,35 @@ section:has(.trial-steps) .rurera-btn-group a small {
   border: 1px solid #ddd;
 }
 /* Cookie Modal Style End */
+/* Rurera-Help Style Start */
+.rurera-help-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.rurera-help-visual {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 50px 0 30px;
+}
+.rurera-help-visual img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.rurera-help-content {
+    width: calc(100% - 250px);
+    padding: 50px 0 30px 30px;
+}
+.rurera-help-section.has-bg-element {
+    clip-path: polygon(
+    0 15%,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/* Rurera-Help Style End */
 /* Bootstrap Full Screen Modal Style Start */
 @media (max-width: 575.98px) {
   .modal-fullscreen {
