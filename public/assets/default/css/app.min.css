@@ -14129,20 +14129,20 @@ section.parent-account-section {
   margin-top: 80px;
   background-color: var(--primary) !important;
 }
-.parent-account-section ul {
+.feature-list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.parent-account-section ul li {
+.feature-list li {
   list-style: none;
   color: #fff;
   position: relative;
   padding: 0 0 0 30px;
 }
-.parent-account-section ul li:before {
+.feature-list li:before {
   content: "";
   position: absolute;
   left: 0;
