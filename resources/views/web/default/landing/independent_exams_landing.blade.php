@@ -12,11 +12,11 @@
                     <h1><span class="mr-10 text-scribble">Independent</span>Schools Entrance Exams</h1>
                     <h2 class="font-18 font-weight-bold mb-10">Unlock your Dreams: Master Entrance Exams</h2>
                     <p class="font-14">Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</p>
-                    <ul class="mb-30 p-0 font-14">
-                        <li class="mb-10"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Fun, targeted sessions to build your skills.</li>
-                        <li class="mb-10"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Smart strategies for every type of exam question.</li>
-                        <li class="mb-10"><img alt="#" height="25" src="/assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: We are committed to your improved performance</li>
-                        <li><img alt="#" height="25" src="/assets/default/svgs/book-opend.svg" width="25" />Proven Success: A method that really works.</li>
+                    <ul class="mb-30 p-0 font-14 categories-option">
+                        <li class="mb-10">Learning Practice: Fun, targeted sessions to build your skills.</li>
+                        <li class="mb-10">Test Preparation: Smart strategies for every type of exam question.</li>
+                        <li class="mb-10">Score Guarantee: We are committed to your improved performance</li>
+                        <li>Proven Success: A method that really works.</li>
                     </ul>
                     <a href="https://rurera.com/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                 </div>
