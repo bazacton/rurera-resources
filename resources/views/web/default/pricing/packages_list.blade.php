@@ -31,7 +31,7 @@ $show_details = isset( $show_details )? $show_details : true;
         <div class="plan-header">
 			<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="128" width="128" alt="Box image"/></span>
 			<div class="subscribe-title text-left">
-				<h3 class="font-20 font-weight-bold text-left">{{ $subscribe->title }}</h3>
+				<h3 class="text-left">{{ $subscribe->title }}</h3>
 			</div>
 		</div>
 
