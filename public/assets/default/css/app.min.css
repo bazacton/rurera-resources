@@ -9833,21 +9833,20 @@ body .flipbook-data {
   width: 690px;
 }
 .masonry-grid-gallery.has-bg {
+  background-color: #bae5f7;
   padding: 90px 25px 0 25px;
 }
 .masonry-grid-gallery.has-bg:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: -260px;
-  height: 800px;
-  width: 900px;
-  border-bottom-left-radius: 64px;
-  -webkit-transform: rotate(-17deg);
-  -moz-transform: rotate(-17deg);
-  -ms-transform: rotate(-17deg);
-  transform: rotate(-17deg);
-  background-color: #bae5f7;
+  left: -140px;
+  top: -40px;
+  width: 260px;
+  height: calc(100% + 80px);
+  background: #fff;
+  transform: skewX(-14deg);
+  z-index: 1;
+  box-shadow: 18px 0 26px rgba(0, 0, 0, .03);
 }
 .gallery-sub-header .simple .masonry-grid figure {
   margin-bottom: 10px;
