@@ -5,7 +5,7 @@
   <div class="container h-100">
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
-        <p itemprop="sub title" class="lms-subtitle">How we've helped others</p>
+        <p itemprop="sub title" class="rurera-subtitle">How we've helped others</p>
         <h1 class="font-72 font-weight-bold mb-15">
           Stories of Trust and <span class="text-scribble">Triumph!</span>
         </h1>
@@ -16,7 +16,7 @@
     </div>
   </div>
 </section>
-<section class="lms-testimonials testimonials-fancy">
+<section class="rurera-testimonials testimonials-fancy">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3 col-md-6 col-sm-12">
@@ -83,14 +83,14 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="lms-text-section">
-            <div class="lms-text-holder text-center">
+          <div class="rurera-text-section">
+            <div class="rurera-text-holder text-center">
               <small itemprop="best work">Shape your success story with </small><b>Rurera</b>
               <p itemprop="description" class="mt-10">
                 Discover everything you need to guide learners toward success!
               </p>
-              <div class="lms-btn-group mt-30">
-                <a href="{{url('/')}}/register" class="lms-btn rounded-pill"
+              <div class="rurera-btn-group mt-30">
+                <a href="{{url('/')}}/register" class="rurera-btn rounded-pill"
                   >Get Started<span class="svg-icon"><img src="/assets/default/svgs/btn-right-arrow.svg" height="15" width="15" alt="btn-right-arrow"></span
                 ></a>
               </div>
@@ -115,7 +115,7 @@
       <div class="col-12 col-lg-6">
         <div class="position-relative left">
           <div class="find-instructor-circle">
-            <span itemprop="number" class="lms-serial-no">#1</span>
+            <span itemprop="number" class="rurera-serial-no">#1</span>
           </div>
           <p itemprop="datePublished" content="2023-06-05">Happy parent / 4 June 2023</p>
           <h3 class="font-36 font-weight-bold text-dark">Cristian Miller</h3>
@@ -145,7 +145,7 @@
       <div class="col-12 col-lg-6">
         <div class="position-relative right">
           <div class="find-instructor-circle">
-            <span itemprop="number" class="lms-serial-no">#2</span>
+            <span itemprop="number" class="rurera-serial-no">#2</span>
           </div>
           <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
           <h3 class="font-36 font-weight-bold text-dark">Peter J.</h3>
@@ -155,29 +155,29 @@
     </div>
   </div>
 </section>
-<section class="lms-column-section lms-text-section container-w mt-50 mb-0 pt-30 pb-30 pr-30 pl-30"
+<section class="rurera-column-section rurera-text-section container-w mt-50 mb-0 pt-30 pb-30 pr-30 pl-30"
     style="background-color: #eaf7f0;">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="lms-text-holder d-flex justify-content-between">
+                <div class="rurera-text-holder d-flex justify-content-between">
                     <div class="d-flex flex-column">
                         <h3 class="mb-10 font-24 align-items-center d-flex"> <span class="icon-svg mr-20">
                             <img src="/assets/default/svgs/column-text-bulb.svg" height="30" width="30" alt="column-text-bulb">
                             </span>Step into Success—Join the Rurera Family Today!</h3>
                         <p itemprop="description" class="font-16">Be part of a thriving community where learners excel—experience the support and inspiration that can transform your journey today!</p>
                     </div>
-                    <div class="lms-btn-group justify-content-center">
-                      <a href="{{url('/')}}/pricing" class="lms-btn rounded-pill">Get Started</a>
+                    <div class="rurera-btn-group justify-content-center">
+                      <a href="{{url('/')}}/pricing" class="rurera-btn rounded-pill">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="lms-testimonial-tabs pt-50">
+<section class="rurera-testimonial-tabs pt-50">
   <div class="container">
-    <div class="lms-testimonials row">
+    <div class="rurera-testimonials row">
       <div class="col-12 mb-20">
         <div class="section-title">
           <h2 class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal">Discover What Makes Rurera Loved!</h2>
@@ -195,7 +195,7 @@
             <li><a href="javascript:;" class="filter-btn" data-filter=".teacher">Teacher</a></li>
           </ul>
         </div>
-        <div class="lms-masonry">
+        <div class="rurera-masonry">
           <div class="masonry-grid row">
              @foreach($testimonials as $testimonial)
                 <div class="grid-item col-lg-4 col-md-4 col-sm-6 student">
