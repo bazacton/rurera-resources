@@ -512,10 +512,7 @@
                             <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="Students Engagement" class="feature-image" id="img-6">
                             <img src="/assets/default/img/feature-slider/builder-cpt.webp" alt="Reward points" class="feature-image" id="img-7">
                         </div>
-                        <div class="controls">
-                            <div class="dots"></div>
-                            <button class="btn btn-sm btn-outline-primary auto-btn">Autoplay</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
