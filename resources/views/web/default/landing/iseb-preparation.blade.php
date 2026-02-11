@@ -8,7 +8,7 @@
                 <div class="col-12 col-lg-6 col-md-6">
                     <h1><span class="mr-10 text-scribble">ISEB</span>Prep: The Easy Way</h1>
                     <h2 class="font-18 font-weight-bold mb-10">Your ISEB Success Story Starts Here With Rurera!</h2>
-                    <p class="font-14">Rurera provides targeted practice, expert guidance, and essential resources for ISEB success, helping students build confidence and improve their skills.</p>
+                    <p>Rurera provides targeted practice, expert guidance, and essential resources for ISEB success, helping students build confidence and improve their skills.</p>
                     <ul class="mb-30 p-0 font-14">
                         <li class="mb-10"><img alt="#" height="25" src="../assets/default/svgs/mobile.svg" width="25" />Learning practice</li>
                         <li class="mb-10"><img alt="#" height="25" src="../assets/default/svgs/preparation.svg" width="25" />Test preparation</li>
