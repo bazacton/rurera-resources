@@ -771,6 +771,7 @@
     </div>
 
 </section>
+{!! parseShortcode('[SC_11-plus-faqs-f]') !!}
 @endsection
 
 @push('scripts_bottom')
