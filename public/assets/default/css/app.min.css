@@ -4505,6 +4505,8 @@ nav li {
 .subscribe-plan.current-plan button.btn {
   background-color: var(--primary);
   color: #fff;
+  max-width: fit-content;
+  border-radius: 20px;
 }
 .subscribe-plan .subscribe-price small {
   font-size: 18px;
