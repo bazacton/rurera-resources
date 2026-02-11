@@ -852,7 +852,7 @@
                             </div>
                             <span class="switch-label">Pay Yearly</span>
                         </div>
-                        <div class="save-plan"><span class="font-18 font-weight-500">Save 25%</span></div>
+                        <div class="save-plan"><span>Save 25%</span></div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
