@@ -13963,6 +13963,7 @@ span.review-label {
   border-radius: 5px;
   color: #fff;
   font-weight: 500;
+  border-radius: 20px;
 }
 .listing-card .read-btn,
 .book-btn,
