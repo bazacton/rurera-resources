@@ -858,22 +858,22 @@
 
 @push('scripts_bottom')
 <script>
-   $(document).ready(function() {
+   $(document).ready(function () {
 
     const $items = $('.feature-item');
     const $images = $('.feature-image');
-    const $autoplayBtn = $('#autoplayBtn');
-    let currentIndex = 0;
-    const duration = 5000; // 5 seconds per slide
+    let currentIndex = $items.index($('.feature-item.active'));
+    const duration = 5000;
     let isAutoplayOn = true;
     let isTransitioning = false;
 
-    /**
-     * Resets and starts the progress bar animation
-     */
+    if (currentIndex < 0) currentIndex = 0;
+
+    /* -----------------------------
+       Start Progress Animation
+    ----------------------------- */
     function startProgress() {
 
-        // Reset all progress bars
         $('.progress-bar-fill').css({
             width: '0%',
             transition: 'none'
@@ -888,69 +888,46 @@
         // Force reflow
         $currentBar[0].offsetHeight;
 
-        // Start animation (FIXED LINE)
         $currentBar.css({
             width: '100%',
             transition: `width ${duration}ms linear`
         });
     }
 
-    /**
-     * Slide change handler
-     */
-    function setActive(index, isImmediate = false) {
+    /* -----------------------------
+       Activate Slide
+    ----------------------------- */
+    function setActive(index) {
 
         if (isTransitioning) return;
-
-        if (index === currentIndex && $items.eq(index).hasClass('active')) {
-            if (isAutoplayOn) startProgress();
-            return;
-        }
-
-        if (isImmediate) {
-            $items.eq(index).addClass('active');
-            $images.eq(index).addClass('active');
-            currentIndex = index;
-            startProgress();
-            return;
-        }
-
         isTransitioning = true;
 
-        // Remove active
+        const $newItem = $items.eq(index);
+        const targetId = $newItem.data('target');
+
+        // Remove active states
         $items.removeClass('active');
         $images.removeClass('active');
 
-        $('.progress-bar-fill').css({
-            width: '0%',
-            transition: 'none'
-        });
+        // Activate new
+        $newItem.addClass('active');
+        $('#' + targetId).addClass('active');
 
-        setTimeout(function() {
+        currentIndex = index;
 
-            $items.eq(index).addClass('active');
-            $images.eq(index).addClass('active');
-            currentIndex = index;
+        setTimeout(function () {
+            isTransitioning = false;
+        }, 400);
 
-            setTimeout(function() {
-                isTransitioning = false;
-            }, 500);
-
-            startProgress();
-
-        }, 500);
+        startProgress();
     }
 
-    // Initialize first slide
-    setActive(0, true);
-
-    /**
-     * Progress bar transition end → go next
-     */
-    $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function(e) {
+    /* -----------------------------
+       Auto Next on Progress End
+    ----------------------------- */
+    $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function (e) {
 
         if (!isAutoplayOn) return;
-
         if (e.originalEvent.propertyName !== 'width') return;
 
         if ($(this).closest('.feature-item').hasClass('active')) {
@@ -959,37 +936,19 @@
         }
     });
 
-    /**
-     * Manual click
-     */
-    $items.on('click', function() {
-        const index = $(this).index();
+    /* -----------------------------
+       Manual Click
+    ----------------------------- */
+    $items.on('click', function () {
+        let index = $items.index(this);
         setActive(index);
     });
 
-    /**
-     * Autoplay toggle
-     */
-    $autoplayBtn.on('click', function() {
-
-        isAutoplayOn = !isAutoplayOn;
-
-        $(this).toggleClass('paused', !isAutoplayOn);
-        $('.feature-tabs').toggleClass('autoplay-disabled', !isAutoplayOn);
-
-        if (isAutoplayOn) {
-            startProgress();
-        } else {
-            const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
-            const currentWidth = $currentBar.width();
-
-            $currentBar.css({
-                width: currentWidth + 'px',
-                transition: 'none'
-            });
-        }
-    });
-
+    /* -----------------------------
+       Initialize
+    ----------------------------- */
+    setActive(currentIndex);
 });
+
 </script>
 @endpush
