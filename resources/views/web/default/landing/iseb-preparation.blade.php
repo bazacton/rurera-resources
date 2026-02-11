@@ -185,7 +185,7 @@
                             <i class="svg-icon" style="background-color: #5e82d8;"><img alt="Pretest Activities" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="mb-10 post-title font-20 font-weight-bold">Pretest Activities</h3>
+                            <h3 class="mb-10 post-title">Pretest Activities</h3>
                             <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Enhance learning with Rurera.</b>
                                 Our assessments motivate students to recognize their potential and identify areas for growth. They provide the support needed for continuous improvement, helping students achieve success.
@@ -199,7 +199,7 @@
                             <i class="svg-icon" style="background-color: #46b7e9;"><img alt="100+ ISEB Resources" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="mb-10 post-title font-20 font-weight-bold">100+ ISEB Resources</h3>
+                            <h3 class="mb-10 post-title">100+ ISEB Resources</h3>
                             <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Endless Resources, Endless Improvement</b>
                                 Gain access to a wide range of practice resources designed to sharpen your skills. With opportunities to learn and improve, you can build confidence and achieve goals at your own pace.
@@ -213,7 +213,7 @@
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Timed Test Challenges" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="mb-10 post-title font-20 font-weight-bold">Timed Test Challenges</h3>
+                            <h3 class="mb-10 post-title">Timed Test Challenges</h3>
                             <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Achieve with Timed Test.</b>
                                 Rurera offers custom time limits tailored to the specific requirements of different ISEB exams to sharpen skills under pressure with timed sessions, helping students build confidence for exam day.
@@ -227,7 +227,7 @@
                             <i class="svg-icon" style="background-color: #f87966;"><img alt="Identify and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="mb-10 post-title font-20 font-weight-bold">Identify and Improve</h3>
+                            <h3 class="mb-10 post-title">Identify and Improve</h3>
                             <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Conquer Your Weaknesses.</b>
                                 Identify your areas for improvement through customized assessments, and targeted practices. Our approach ensures you focus on what matters most, boosting both confidence and performance.
@@ -241,7 +241,7 @@
                             <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="mb-10 post-title font-20 font-weight-bold">Up-to-Date Reports</h3>
+                            <h3 class="mb-10 post-title">Up-to-Date Reports</h3>
                             <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Track Progress, Achieve More</b>
                                 Keep track of your progress with regular reviews and detailed reports. Our insights help you recognize strengths, pinpoint areas for improvement, and stay on the path to success.
@@ -255,7 +255,7 @@
                             <i class="svg-icon" style="background-color: #46b7e9;"><img alt="Dedicated Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
-                            <h3 class="mb-10 post-title font-20 font-weight-bold">Dedicated Support</h3>
+                            <h3 class="mb-10 post-title">Dedicated Support</h3>
                             <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Dedicated Help, Proven Results</b>
                                 Rurera's Professional Support offers expertly designed practice tests and clear guidelines, providing feedback to enhance exam preparation. This ensures students have resources needed to succeed.
@@ -391,7 +391,7 @@
                             <!-- Item 1 -->
                             <div class="feature-item" data-target="img-1">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Adaptive Assessments Testing
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -407,7 +407,7 @@
                             <!-- Item 2 -->
                             <div class="feature-item" data-target="img-2">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Quick Results via Automated Marking
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -423,7 +423,7 @@
                             <!-- Item 3 -->
                             <div class="feature-item active" data-target="img-3">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Diverse Question Formats
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -439,7 +439,7 @@
                             <!-- Item 4 -->
                             <div class="feature-item" data-target="img-4">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Timely Reporting
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -455,7 +455,7 @@
                             <!-- Item 5 -->
                             <div class="feature-item" data-target="img-5">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Breakthrough Insights at Every Level
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -471,7 +471,7 @@
                             <!-- Item 6 -->
                             <div class="feature-item" data-target="img-6">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Students Engagement
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -487,7 +487,7 @@
                             <!-- Item 7 -->
                             <div class="feature-item" data-target="img-7">
                                 <div class="feature-header">
-                                    <h3 class="font-20">
+                                    <h3>
                                         Reward Points
                                         <img src="/assets/default/svgs/arrow-right-line.svg" heigh="64" width="64" alt="arrow-right-line">
                                     </h3>
@@ -543,7 +543,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading1">
                                     <h3 class="mb-0">
-                                        <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                        <button class="btn-link collapsed font-weight-bold" type="button"
                                                 data-toggle="collapse" data-target="#faqCollapse1"
                                                 aria-expanded="false" aria-controls="faqCollapse1">
                                             <span itemprop="name">What is the Independent Schools Examination Board (ISEB)?</span>
@@ -567,7 +567,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading2">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse2"
                                             aria-expanded="false" aria-controls="faqCollapse2">
                                         <span itemprop="name">What is the difference between ISEB exams and independent school exams?</span>
@@ -591,7 +591,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading3">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse3"
                                             aria-expanded="false" aria-controls="faqCollapse3">
                                         <span itemprop="name">How does Rurera help students prepare for ISEB exams?</span>
@@ -615,7 +615,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading4">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse4"
                                             aria-expanded="false" aria-controls="faqCollapse4">
                                         <span itemprop="name">What are the Common Entrance exams?</span>
@@ -639,7 +639,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading5">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse5"
                                             aria-expanded="false" aria-controls="faqCollapse5">
                                         <span itemprop="name">Can Rurera track my progress in ISEB preparation?</span>
@@ -663,7 +663,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading6">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse6"
                                             aria-expanded="false" aria-controls="faqCollapse6">
                                         <span itemprop="name">What subjects are tested in ISEB exams?</span>
@@ -687,7 +687,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading7">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse7"
                                             aria-expanded="false" aria-controls="faqCollapse7">
                                         <span itemprop="name">When are ISEB exams held?</span>
@@ -711,7 +711,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading8">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse8"
                                             aria-expanded="false" aria-controls="faqCollapse8">
                                         <span itemprop="name">How do I register my child for the ISEB?</span>
@@ -735,7 +735,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading9">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse9"
                                             aria-expanded="false" aria-controls="faqCollapse9">
                                         <span itemprop="name">Can I take timed practice tests for ISEB on Rurera?</span>
@@ -759,7 +759,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading10">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse10"
                                             aria-expanded="false" aria-controls="faqCollapse10">
                                         <span itemprop="name">How are ISEB exams graded?</span>
@@ -783,7 +783,7 @@
                                 <div class="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
                                 <div class="card-header" id="faqHeading11">
                                     <h3 class="mb-0">
-                                    <button class="font-20 btn-link collapsed font-weight-bold" type="button"
+                                    <button class="btn-link collapsed font-weight-bold" type="button"
                                             data-toggle="collapse" data-target="#faqCollapse11"
                                             aria-expanded="false" aria-controls="faqCollapse11">
                                         <span itemprop="name">How long does an ISEB (common pre-test) exam take?</span>
