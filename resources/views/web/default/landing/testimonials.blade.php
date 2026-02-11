@@ -37,7 +37,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client1.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
+              <img src="../assets/default/img/home_video_section.png" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
