@@ -332,7 +332,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40">
+                    <div class="feature-grid text-center">
                         <figure class="mb-20">
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -343,7 +343,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40">
+                    <div class="feature-grid text-center">
                         <figure class="mb-20">
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
@@ -354,7 +354,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40">
+                    <div class="feature-grid text-center">
                         <figure class="mb-20">
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
