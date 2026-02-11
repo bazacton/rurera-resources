@@ -894,9 +894,6 @@
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
-<script src="/assets/default/vendors/scroll-animation/wow.js"></script>
-
 <script>
     $(document).ready(function() {
         const $items = $('.feature-item');
