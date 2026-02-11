@@ -9857,7 +9857,7 @@ body .flipbook-data {
 .gallery-sub-header .simple .masonry-grid [class*="col-"] {
   padding: 0 5px;
 }
-.categories-option li {
+.benefits-list li {
   font-weight: 500;
   position: relative;
   padding-left: 30px;
@@ -9867,7 +9867,7 @@ body .flipbook-data {
   width: 100%;
   position: initial;
 }
-.categories-option li:before {
+.benefits-list li:before {
   content: "";
   position: absolute;
   left: 0;
@@ -9878,7 +9878,7 @@ body .flipbook-data {
   background: url(/assets/default/svgs/arrow-right.svg) no-repeat left center;
   background-size: 100%;
 }
-.categories-option li .img-sm {
+.benefits-list li .img-sm {
   max-width: 18px;
   margin: 0 5px 0 0;
 }
