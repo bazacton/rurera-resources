@@ -14968,6 +14968,9 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .rurera-help-section .rurera-help-text {
     margin-bottom: 30px;
 }
+.rurera-help-link {
+  color: var(--primary);
+}
 .rurera-help-section.has-bg-element {
     clip-path: polygon(
     0 15%,
