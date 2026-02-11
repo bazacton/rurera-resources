@@ -54,7 +54,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-search-services find-instructor-section mt-60 pt-80 pb-70">
+    <section class="rurera-search-services find-instructor-section mt-60 pt-80 pb-70">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -80,11 +80,11 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section mx-w-100 py-50 pr-30 pl-30" style="background-color: #7679ee;">
+    <section class="rurera-column-section rurera-text-section mx-w-100 py-50 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="lms-text-holder d-flex justify-content-between">
+                    <div class="rurera-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
                             <h3 class="mb-10 d-flex text-white">
                                 <span class="icon-svg mr-15 mt-5">
@@ -92,8 +92,8 @@
                                 </span> Boost Your Child's Multiplication and Division Skills with a Splash of Fun!
                             </h3>
                         </div>
-                        <div class="lms-btn-group justify-content-center">
-                            <a href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white">Find more</a>
+                        <div class="rurera-btn-group justify-content-center">
+                            <a href="{{url('/')}}/register" class="rurera-btn rounded-pill text-white border-white">Find more</a>
                         </div>
                     </div>
                 </div>
@@ -281,7 +281,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-accordion-section w-100 pb-80 pt-80" style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="rurera-column-section rurera-accordion-section w-100 pb-80 pt-80" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -290,7 +290,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
+                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion rurera-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button class="btn btn-link btn-block text-left collapsed" 
@@ -309,7 +309,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg" alt="company sats" title="company sats" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -326,7 +326,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -343,7 +343,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg" alt="company rewards" title="company rewards" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -358,7 +358,7 @@
                                     <p itemprop="description" class="font-16 font-weight-normal">Online platforms often provide real-time reporting to both students and teachers, allowing for prompt interventions and support.</p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -376,7 +376,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg" alt="company quiz" title="company quiz" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -394,7 +394,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -412,7 +412,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="lms-img-holder">
+                            <div class="rurera-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -436,7 +436,7 @@
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="lms-faqs mx-w-100 mt-0" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="rurera-faqs mx-w-100 mt-0" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
                                 @if( !empty( $faq_items ))
 
@@ -579,7 +579,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -608,7 +608,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
