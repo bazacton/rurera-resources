@@ -4500,7 +4500,7 @@ nav li {
 .subscribe-plan .subscribe-price .yearly-price {
   display: block;
   color: #aeaeb0;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .subscribe-plan.current-plan button.btn {
   background-color: var(--primary);
