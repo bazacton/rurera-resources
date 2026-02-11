@@ -211,9 +211,6 @@
     .masonry-grid {
         margin-left: 0;
     }
-    .masonry-grid-gallery.has-bg:before {
-        left: -50px;
-    }
     .navbar1 {
         padding-left: 0;
         padding-right: 0;
@@ -854,12 +851,6 @@
     }
     .gallery-sub-header .simple .masonry-grid [class*="col-"] {
         width: 33.333%;
-    }
-    .masonry-grid-gallery.has-bg:before {
-        top: 0;
-        height: 100%;
-        width: 100%;
-        transform: none;
     }
     .choose-sats .sats-box {
         margin-bottom: 15px;
