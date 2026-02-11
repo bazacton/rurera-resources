@@ -14939,6 +14939,12 @@ section:has(.trial-steps) .rurera-btn-group a small {
 }
 /* Cookie Modal Style End */
 /* Rurera-Help Style Start */
+.has-bg-element {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 0 30px;
+}
 .rurera-help-container {
     display: flex;
     flex-wrap: wrap;
