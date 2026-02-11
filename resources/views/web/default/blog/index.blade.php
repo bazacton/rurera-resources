@@ -8,7 +8,7 @@
 @section('content')
 <section class="blog-sub-header rurera-call-to-action position-relative page-sub-header pt-70 pb-70 overflow-hidden">
         <div class="container">
-            <div class="line-shap-holder h-100">
+            <div class="line-shap-holder">
                 <div class="line-shap-svg">
                 </div>
             </div>
