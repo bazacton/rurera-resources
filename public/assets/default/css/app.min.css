@@ -9875,11 +9875,6 @@ body .flipbook-data {
   background: url(/assets/default/svgs/arrow-right.svg) no-repeat left center;
   background-size: 100%;
 }
-.job-singup-sub-header li img {
-  max-width: 25px;
-  margin: 0 15px 0 0;
-  display: none;
-}
 .job-singup-sub-header li .img-sm {
   max-width: 18px;
   margin: 0 5px 0 0;
