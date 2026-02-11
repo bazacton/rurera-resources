@@ -15126,7 +15126,12 @@ section:has(.trial-steps) .rurera-btn-group a small {
   height: 750px;
 }
 .feature-tabs-holder {
+  display: flex;
+  flex-direction: column;
+}
+.feature-tabs {
   height: 500px;
+  margin-top: auto;
 }
 /* Right Side Images */
 .image-container {
