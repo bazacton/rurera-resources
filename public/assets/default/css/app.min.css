@@ -9854,7 +9854,7 @@ body .flipbook-data {
 .gallery-sub-header .simple .masonry-grid [class*="col-"] {
   padding: 0 5px;
 }
-.job-singup-sub-header li {
+.categories-list li {
   font-weight: 500;
   position: relative;
   padding-left: 30px;
@@ -9864,7 +9864,7 @@ body .flipbook-data {
   width: 100%;
   position: initial;
 }
-.job-singup-sub-header li:before {
+.categories-list li:before {
   content: "";
   position: absolute;
   left: 0;
@@ -9875,7 +9875,7 @@ body .flipbook-data {
   background: url(/assets/default/svgs/arrow-right.svg) no-repeat left center;
   background-size: 100%;
 }
-.job-singup-sub-header li .img-sm {
+.categories-list li .img-sm {
   max-width: 18px;
   margin: 0 5px 0 0;
 }
