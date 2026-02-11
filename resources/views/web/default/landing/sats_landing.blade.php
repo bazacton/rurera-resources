@@ -17,19 +17,18 @@
                         Don't leave your SATs performance to chance! Join us to unlock your full potential and excel on the sats exams. Transform your test preparation with our expert guidance and practice sats papers achieve the scores you’ve always dreamed of!
 
                     </p>
-                    <ul class="mb-0 p-0">
+                    <ul class="mb-0 p-0 font-14 categories-option">
                         <li class="mb-10">
-                            <img src="/assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Top Performance: Engaging Quizzes & SAT Assessment Test Prep
+                            Top Performance: Engaging Quizzes & SAT Assessment Test Prep
                         </li>
                         <li class="mb-10">
-                            <img src="/assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Comprehensive Exam Prep: Tools & Strategies
-
+                            Comprehensive Exam Prep: Tools & Strategies
                         </li>
                         <li class="mb-10">
-                            <img src="/assets/default/svgs/graphic-design.svg" width="25" height="25" alt="graphic-design">Score Guarantee: Achieve Your Best
+                            Score Guarantee: Achieve Your Best
                         </li>
                         <li>
-                            <img src="/assets/default/svgs/book-opend.svg" width="25" height="25" alt="book-opend">Proven Resources: 100% Success Results
+                            Proven Resources: 100% Success Results
                         </li>
                     </ul>
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
