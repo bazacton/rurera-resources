@@ -9,7 +9,7 @@
                     <h1><span class="mr-10 text-scribble">ISEB</span>Prep: The Easy Way</h1>
                     <h2 class="font-18 font-weight-bold mb-10">Your ISEB Success Story Starts Here With Rurera!</h2>
                     <p>Rurera provides targeted practice, expert guidance, and essential resources for ISEB success, helping students build confidence and improve their skills.</p>
-                    <ul class="mb-30 p-0 font-14 categories-option">
+                    <ul class="mb-30 p-0 benefits-list">
                         <li class="mb-10">Learning practice</li>
                         <li class="mb-10">Test preparation</li>
                         <li class="mb-10">Score guarantee</li>
