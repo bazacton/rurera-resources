@@ -9739,7 +9739,8 @@ body .flipbook-data {
   margin-top: 5px;
   color: #363636;
 }
-.job-singup-sub-header {
+.job-singup-sub-header,
+.page-sub-header {
   background-color: #fff;
   padding: 60px 0 60px;
   margin: 0;
@@ -9747,13 +9748,16 @@ body .flipbook-data {
   display: flex;
   overflow: hidden;
 }
-.job-singup-sub-header h1 {
+.job-singup-sub-header h1,
+.page-sub-header h1 {
   margin: 0 0 10px;
 }
-.job-singup-sub-header p {
+.job-singup-sub-header p,
+.page-sub-header p {
   margin: 0 0 25px;
 }
-.job-singup-sub-header .btn-primary {
+.job-singup-sub-header .btn-primary,
+.page-sub-header .btn-primary {
   padding: 18px 40px;
   display: inline-block;
   line-height: normal;
@@ -9770,7 +9774,8 @@ body .flipbook-data {
   transform: translateX(85.30184569647683px) rotate(-16deg);
   width: 850px;
 }
-.job-singup-sub-header h3 {
+.job-singup-sub-header h3,
+.page-sub-header h3 {
   margin: 0 0 25px;
 }
 .slider-hero-section .masonry-grid-gallery {
