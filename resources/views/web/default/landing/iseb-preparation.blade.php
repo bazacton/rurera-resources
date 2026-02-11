@@ -268,7 +268,7 @@
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
                         <h2 class="mb-10">Personalized 11 Plus Prep with Rurera</h2>
-                        <p class="font-14 text-gray">Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
+                        <p>Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
