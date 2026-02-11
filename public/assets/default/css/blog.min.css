@@ -149,6 +149,9 @@
 .disabled-area {
     pointer-events: none;
 }
+.blog-single-post .btn-link .icon-box {
+    background-color: #007bff;
+}
 /* Location Style Start */
 .blog-single-post .rurera-location-section {
     border: 0;
