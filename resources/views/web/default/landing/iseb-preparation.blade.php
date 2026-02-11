@@ -380,7 +380,7 @@
                 <div class="col-md-5">
                     <div class="feature-tabs-holder">
                         <div class="section-title mb-15">
-                            <h2>Why choose Rurera <br> assessments ?</h2>
+                            <h2>Why choose Rurera assessments ?</h2>
                         </div>
                         
                         <div class="feature-tabs">
