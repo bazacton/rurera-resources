@@ -1,9 +1,5 @@
 @extends(getTemplate().'.layouts.app')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/scroll-animation/animate.css">
-@endpush
-
 @section('content')
 <section class="content-section">
     <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
