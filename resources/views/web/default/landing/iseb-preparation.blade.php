@@ -186,7 +186,7 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="mb-10 post-title font-20 font-weight-bold">Pretest Activities</h3>
-                            <p class="font-14 text-dark" itemprop="description">
+                            <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Enhance learning with Rurera.</b>
                                 Our assessments motivate students to recognize their potential and identify areas for growth. They provide the support needed for continuous improvement, helping students achieve success.
                             </p>
@@ -200,7 +200,7 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="mb-10 post-title font-20 font-weight-bold">100+ ISEB Resources</h3>
-                            <p class="font-14 text-dark" itemprop="description">
+                            <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Endless Resources, Endless Improvement</b>
                                 Gain access to a wide range of practice resources designed to sharpen your skills. With opportunities to learn and improve, you can build confidence and achieve goals at your own pace.
                             </p>
@@ -214,7 +214,7 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="mb-10 post-title font-20 font-weight-bold">Timed Test Challenges</h3>
-                            <p class="font-14 text-dark" itemprop="description">
+                            <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Achieve with Timed Test.</b>
                                 Rurera offers custom time limits tailored to the specific requirements of different ISEB exams to sharpen skills under pressure with timed sessions, helping students build confidence for exam day.
                             </p>
@@ -228,7 +228,7 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="mb-10 post-title font-20 font-weight-bold">Identify and Improve</h3>
-                            <p class="font-14 text-dark" itemprop="description">
+                            <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Conquer Your Weaknesses.</b>
                                 Identify your areas for improvement through customized assessments, and targeted practices. Our approach ensures you focus on what matters most, boosting both confidence and performance.
                             </p>
@@ -242,7 +242,7 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="mb-10 post-title font-20 font-weight-bold">Up-to-Date Reports</h3>
-                            <p class="font-14 text-dark" itemprop="description">
+                            <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Track Progress, Achieve More</b>
                                 Keep track of your progress with regular reviews and detailed reports. Our insights help you recognize strengths, pinpoint areas for improvement, and stay on the path to success.
                             </p>
@@ -256,7 +256,7 @@
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="mb-10 post-title font-20 font-weight-bold">Dedicated Support</h3>
-                            <p class="font-14 text-dark" itemprop="description">
+                            <p class="font-14 text-dark">
                                 <b class="d-block mb-10">Dedicated Help, Proven Results</b>
                                 Rurera's Professional Support offers expertly designed practice tests and clear guidelines, providing feedback to enhance exam preparation. This ensures students have resources needed to succeed.
                             </p>
@@ -281,9 +281,9 @@
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Game-Based Learning</span>
+                            Game-Based Learning
                         </h3>
-                        <p itemprop="description">Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
+                        <p>Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -292,9 +292,9 @@
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Essential Mock Exams</span>
+                            Essential Mock Exams
                         </h3>
-                        <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
+                        <p>Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -303,9 +303,9 @@
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Parental Insights</span>
+                            Parental Insights
                         </h3>
-                        <p itemprop="description">Monitor progress with detailed insights to support your child’s academic success.</p>
+                        <p>Monitor progress with detailed insights to support your child’s academic success.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -314,9 +314,9 @@
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
+                            Ultimate 11 Plus Practice Toolkit
                         </h3>
-                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and progress tracking.</p>
+                        <p>Encourage continuous improvement with self-assessment tools and progress tracking.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -325,9 +325,9 @@
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Top-Tier Study Materials</span>
+                            Top-Tier Study Materials
                         </h3>
-                        <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every aspect of the 11+ exam.</p>
+                        <p>Access all-encompassing resources to thoroughly prepare for every aspect of the 11+ exam.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -336,9 +336,9 @@
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Smart Exam Tactics</span>
+                            Smart Exam Tactics
                         </h3>
-                        <p itemprop="description">Learn effective tips for time management, stress reduction, and question strategies.</p>
+                        <p>Learn effective tips for time management, stress reduction, and question strategies.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -347,9 +347,9 @@
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Adaptive Curriculum</span>
+                            Adaptive Curriculum
                         </h3>
-                        <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
+                        <p>Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -358,9 +358,9 @@
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Personalised Practice</span>
+                            Personalised Practice
                         </h3>
-                        <p itemprop="description">Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
+                        <p>Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -369,9 +369,9 @@
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
-                            <span class="text-dark-charcoal">Elevate 11 Plus Preparation</span>
+                            Elevate 11 Plus Preparation
                         </h3>
-                        <p itemprop="description">Achieve exam success with tailored practice and confidence-building resources.</p>
+                        <p>Achieve exam success with tailored practice and confidence-building resources.</p>
                     </div>
                 </div>
             </div>
