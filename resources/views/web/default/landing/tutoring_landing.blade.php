@@ -701,7 +701,7 @@
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
-                                    <button type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                    <button type="submit" class="subscription-modal btn w-50 mx-auto">Get Started</button>
                                 </div>
                             </div>
                         </div>
@@ -731,7 +731,7 @@
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
-                                    <button type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                    <button type="submit" class="subscription-modal btn w-50 mx-auto">Get Started</button>
                                 </div>
                             </div>
                         </div>
@@ -763,7 +763,7 @@
                                     </label>
                                 </div>
                                 <div class="plan-btn-holder">
-                                    <button type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                    <button type="submit" class="subscription-modal btn w-50 mx-auto">Get Started</button>
                                 </div>
                             </div>
                         </div>
