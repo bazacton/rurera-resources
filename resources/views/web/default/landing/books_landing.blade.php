@@ -521,8 +521,8 @@
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
                     <div class="section-title text-center mb-40">
-                        <h2 class="text-dark-charcoal mb-0">Choose the right plan for you</h2>
-                        <p class="font-14 pt-10">Save more with annual pricing</p>
+                        <h2 class="mb-10">Choose the right plan for you</h2>
+                        <p>Save more with annual pricing</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 text-center">
