@@ -6,20 +6,20 @@
 
 @section('content')
 <section class="content-section">
-    <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
+    <section class="gallery-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
-                    <h1 class="font-weight-bold font-72"><span class="mr-10 text-scribble">CAT 4</span> Prep Simplified!</h1>
-                    <h2 class="font-30 mb-15">Personalised Tests to Boost Your Child’s Success.</h2>
-                    <p class="font-19">
+                    <h1><span class="mr-10 text-scribble">CAT 4</span> Prep Simplified!</h1>
+                    <h2 class="font-18 font-weight-bold mb-15">Personalised Tests to Boost Your Child’s Success.</h2>
+                    <p>
                         At Rurera, our CAT4 assessments identify your child’s strengths in verbal, non-verbal, quantitative, and spatial reasoning. With clear insights, we can tailor strategies to improve their learning and confidence.
                     </p>
-                    <ul class="mb-30 p-0">
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/mobile.svg" width="25" />100+ Mock Tests</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/preparation.svg" width="25" />Custom Learning Paths</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/graphic-design.svg" width="25" />Endless CAT4 Resources</li>
-                        <li class="font-19"><img alt="#" height="25" src="../assets/default/svgs/book-opend.svg" width="25" />Personalized Progress Reports</li>
+                    <ul class="mb-30 p-0 categories-option">
+                        <li class="mb-10">100+ Mock Tests</li>
+                        <li class="mb-10">Custom Learning Paths</li>
+                        <li class="mb-10">Endless CAT4 Resources</li>
+                        <li>Personalized Progress Reports</li>
                     </ul>
                     <a href="https://rurera.com/pricing" class="text-white bg-primary justify-content-center register-btn try-rurera-btn mt-0">Try Rurera for free</a>
                 </div>
