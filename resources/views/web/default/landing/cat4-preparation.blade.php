@@ -15,7 +15,7 @@
                     <p>
                         At Rurera, our CAT4 assessments identify your child’s strengths in verbal, non-verbal, quantitative, and spatial reasoning. With clear insights, we can tailor strategies to improve their learning and confidence.
                     </p>
-                    <ul class="mb-30 p-0 categories-option">
+                    <ul class="mb-30 p-0 font-14 categories-option">
                         <li class="mb-10">100+ Mock Tests</li>
                         <li class="mb-10">Custom Learning Paths</li>
                         <li class="mb-10">Endless CAT4 Resources</li>
