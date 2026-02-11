@@ -852,7 +852,7 @@
         const $items = $('.feature-item');
         const $images = $('.feature-image');
         let currentIndex = 0;
-        const duration = 2000; // 5 seconds per slide
+        const duration = 3000; // 5 seconds per slide
         let isPaused = false;
 
         function startProgress() {
