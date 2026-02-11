@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/default/css/common.min.css?ver={{$rand_no}}">
     <link rel="stylesheet" href="/assets/default/css/app.min.css?ver={{$rand_no}}">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" media="print" onload="this.onload=null;this.media='all';">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css" media="print" onload="this.onload=null;this.media='all';">
     <link rel="stylesheet" href="/assets/default/css/responsive.min.css?ver={{$rand_no}}">
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
