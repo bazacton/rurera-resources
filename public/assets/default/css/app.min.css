@@ -15178,7 +15178,7 @@ section:has(.trial-steps) .lms-btn-group a small {
 }
 .image-container .images-holder {
     position: relative;
-    height: 100%;
+    height: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
