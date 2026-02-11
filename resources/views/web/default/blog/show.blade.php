@@ -85,7 +85,7 @@
 
             </div>
         </header>
-        <section class="mt-15 mb-60 lms-blog blog-single-post mt-lg-80 mt-md-50 mt-30">
+        <section class="mt-15 mb-60 rurera-blog blog-single-post mt-lg-80 mt-md-50 mt-30">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9 col-md-8">
