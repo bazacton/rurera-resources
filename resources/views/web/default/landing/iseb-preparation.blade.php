@@ -183,7 +183,6 @@
                         <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Pretest Activities</h3>
                             <p>
-                                <b class="d-block mb-10">Enhance learning with Rurera.</b>
                                 Our assessments motivate students to recognize their potential and identify areas for growth. They provide the support needed for continuous improvement, helping students achieve success.
                             </p>
                         </div>
@@ -197,7 +196,6 @@
                         <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">100+ ISEB Resources</h3>
                             <p>
-                                <b class="d-block mb-10">Endless Resources, Endless Improvement</b>
                                 Gain access to a wide range of practice resources designed to sharpen your skills. With opportunities to learn and improve, you can build confidence and achieve goals at your own pace.
                             </p>
                         </div>
@@ -211,7 +209,6 @@
                         <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Timed Test Challenges</h3>
                             <p>
-                                <b class="d-block mb-10">Achieve with Timed Test.</b>
                                 Rurera offers custom time limits tailored to the specific requirements of different ISEB exams to sharpen skills under pressure with timed sessions, helping students build confidence for exam day.
                             </p>
                         </div>
@@ -225,7 +222,6 @@
                         <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Identify and Improve</h3>
                             <p>
-                                <b class="d-block mb-10">Conquer Your Weaknesses.</b>
                                 Identify your areas for improvement through customized assessments, and targeted practices. Our approach ensures you focus on what matters most, boosting both confidence and performance.
                             </p>
                         </div>
@@ -239,7 +235,6 @@
                         <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Up-to-Date Reports</h3>
                             <p>
-                                <b class="d-block mb-10">Track Progress, Achieve More</b>
                                 Keep track of your progress with regular reviews and detailed reports. Our insights help you recognize strengths, pinpoint areas for improvement, and stay on the path to success.
                             </p>
                         </div>
@@ -253,7 +248,6 @@
                         <div class="rurera-text-holder">
                             <h3 class="mb-10 post-title">Dedicated Support</h3>
                             <p>
-                                <b class="d-block mb-10">Dedicated Help, Proven Results</b>
                                 Rurera's Professional Support offers expertly designed practice tests and clear guidelines, providing feedback to enhance exam preparation. This ensures students have resources needed to succeed.
                             </p>
                         </div>
