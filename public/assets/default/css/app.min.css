@@ -15172,6 +15172,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
 }
 .slider-section {
   height: 600px;
+  overflow: hidden;
 }
 .slider-section .row {
   align-items: flex-start;
