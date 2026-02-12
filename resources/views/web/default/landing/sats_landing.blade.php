@@ -533,7 +533,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mt-0 mb-60">
+    <section class="home-sections container find-instructor-section mb-60 mt-0">
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="section-title text-center mb-50">
@@ -564,7 +564,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first mb-60">
+    <section class="home-sections container find-instructor-section mb-60 mt-0">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
@@ -587,7 +587,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mb-60">
+    <section class="home-sections container find-instructor-section mb-60 mt-0">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div class="">
@@ -609,7 +609,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first mb-60">
+    <section class="home-sections container find-instructor-section mb-60 mt-0">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
@@ -628,7 +628,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mb-60">
+    <section class="home-sections container find-instructor-section mb-60 mt-0">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div>
