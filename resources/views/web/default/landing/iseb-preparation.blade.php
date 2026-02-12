@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="gallery-sub-header mb-80 page-sub-header pb-0 position-relative">
+    <section class="gallery-sub-header mb-60 page-sub-header pb-0 position-relative">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -166,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="rurera-features-section mb-80">
+    <section class="rurera-features-section mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
@@ -256,7 +256,7 @@
             </div>
         </div>
     </section>
-    <section class="mb-80">
+    <section class="mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -367,7 +367,7 @@
             </div>
         </div>
     </section>    
-    <section class="slider-section mb-80">
+    <section class="slider-section mb-60">
         <div class="container">
             <div class="row">
                 <!-- Left Side: Tabs/Accordion -->
@@ -479,7 +479,7 @@
         </div>
     </section>
 
-    <section class="parent-account-section mb-80" style="background-color: #0065ff;">
+    <section class="parent-account-section mb-60" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7 col-md-7">
@@ -506,7 +506,7 @@
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="rurera-setup-progress-section rurera-membership-section mb-80" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section mb-60" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -539,7 +539,7 @@
             </div>
         </div>
     </section>
-    <section class="mb-80" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
+    <section class="mb-60" style="background-color: #fff;" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="row">
                 <div class="col-12">
