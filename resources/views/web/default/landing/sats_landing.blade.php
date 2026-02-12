@@ -622,7 +622,7 @@
                 <div>
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark"> Effortlessly Track Practice</h2>
-                        <p class="font-16 text-gray mt-10">Easily monitor SATs practice with detailed logs and performance insights, helping you keep track of progress and pinpoint areas needing improvement.</p>
+                        <p class="mt-10">Easily monitor SATs practice with detailed logs and performance insights, helping you keep track of progress and pinpoint areas needing improvement.</p>
                     </div>
                 </div>
             </div>
@@ -634,7 +634,7 @@
                 <div>
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Enhance Learning with SATs Papers</h2>
-                        <p class="font-16 text-gray mt-10">
+                        <p class="mt-10">
                             Enhance learning by using sats papers, which provide targeted practice and familiarize students with exam formats. These sat exam past papers help reinforce key concepts and build confidence.
                         </p>
                     </div>
