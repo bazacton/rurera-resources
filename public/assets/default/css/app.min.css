@@ -15171,7 +15171,10 @@ section:has(.trial-steps) .rurera-btn-group a small {
     width: 0%;
 }
 .slider-section {
-  height: 600px;
+  height: 700px;
+}
+.slider-section .row {
+  align-items: flex-start;
 }
 .feature-tabs-holder {
   display: flex;
