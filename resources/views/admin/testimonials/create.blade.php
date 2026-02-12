@@ -234,7 +234,6 @@
 
                             <div class="form-group custom-switches-stacked">
                                 <label class="custom-switch pl-0">
-                                    <input type="hidden" name="shortlisted" value="0">
                                     <input type="checkbox" name="shortlisted" id="shortlisted" value="1" {{ (!empty($testimonial) and $testimonial->shortlisted == 1) ? 'checked="checked"' : ''
                                     }} class="custom-switch-input"/>
                                     <span class="custom-switch-indicator"></span>
