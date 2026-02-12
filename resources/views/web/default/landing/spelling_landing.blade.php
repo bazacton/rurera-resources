@@ -15,7 +15,7 @@
                     <p class="font-14">
                         We help kids build a strong foundation in spelling and vocabulary with engaging, interactive lessons based on British English. Our fun approach makes learning spelling and word usage enjoyable and effective.
                     </p>
-                    <ul class="mb-0 p-0 font-14 categories-option">
+                    <ul class="mb-0 p-0 benefits-list">
                         <li class="mb-10">
                             Curriculum Word Lists: According to Curriculum word sets.
                         </li>
