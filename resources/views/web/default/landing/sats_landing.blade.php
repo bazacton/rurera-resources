@@ -736,10 +736,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Key to Effective Learning</span>
                         </h3>
-                        <p itemprop="description"> Build knowledge through SATs quizzes, SATs tests, and SATs assessments with immediate feedback.
+                        <p> Build knowledge through SATs quizzes, SATs tests, and SATs assessments with immediate feedback.
                         </p>
                     </div>
                 </div>
@@ -748,10 +748,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">SATs 100s online Assessments</span>
                         </h3>
-                        <p itemprop="description"> Unlock 100+ Online SATs Quizzes and Assessments for high achievers, including preparation for year six sats test papers.</p>
+                        <p> Unlock 100+ Online SATs Quizzes and Assessments for high achievers, including preparation for year six sats test papers.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -759,10 +759,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Past SATs Papers</span>
                         </h3>
-                        <p itemprop="description"> Access sats year 6 past papers and resources to boost learning and master key concepts for advanced problem-solving.
+                        <p> Access sats year 6 past papers and resources to boost learning and master key concepts for advanced problem-solving.
                         </p>
                     </div>
                 </div>
@@ -771,10 +771,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Learn, Play & Win</span>
                         </h3>
-                        <p itemprop="description">Enhance your skills, earn rewards, and win toys through continuous learning and SATs practice.
+                        <p>Enhance your skills, earn rewards, and win toys through continuous learning and SATs practice.
 
                         </p>
                     </div>
@@ -784,10 +784,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Student Engagement</span>
                         </h3>
-                        <p itemprop="description"> Engage students with challenges, practice sats, and rewards like toys and collectibles.
+                        <p> Engage students with challenges, practice sats, and rewards like toys and collectibles.
                         </p>
                     </div>
                 </div>
@@ -796,10 +796,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Activity Monitoring</span>
                         </h3>
-                        <p itemprop="description"> Track progress and support your child's achievements with key learning insights from their work on sats papers.
+                        <p> Track progress and support your child's achievements with key learning insights from their work on sats papers.
                         </p>
                     </div>
                 </div>
@@ -808,10 +808,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
-                        <p itemprop="description"> Track progress and support your child's achievements with key learning insights.
+                        <p> Track progress and support your child's achievements with key learning insights.
 
                         </p>
                     </div>
@@ -822,10 +822,10 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Interactive Learning</span>
                         </h3>
-                        <p itemprop="description">
+                        <p>
                            Explore activities that make mastering year six sats topics fun and effective.
                         </p>
                     </div>
@@ -840,7 +840,7 @@
                         <h3 class="mb-5">
                             <span class="text-dark-charcoal">Adaptive Assessments</span>
                         </h3>
-                        <p itemprop="description">Explore activities that make mastering year six sats topics fun and effective.
+                        <p>Explore activities that make mastering year six sats topics fun and effective.
                         </p>
                     </div>
                 </div>
