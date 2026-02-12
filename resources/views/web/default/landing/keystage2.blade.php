@@ -333,27 +333,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title text-center mb-50"><h2 class="text-white font-40 mb-10">Parent’s Role!</h2></div>
+                    <div class="section-title text-center mb-50"><h2 class="text-white mb-10">Parent’s Role!</h2></div>
                 </div>
                 <div class="col-12">
                     <ul class="row circle-icon-list">
-                        <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
+                        <li class="text-white col-lg-6 col-md-6 pl-50 position-relative mb-20">
                             <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Check progress regularly using our KS2 assessments and trackers.
                         </li>
-                        <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
+                        <li class="text-white col-lg-6 col-md-6 pl-50 position-relative mb-20">
                             <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Offer guidance on using sats past papers and managing study time effectively.
                         </li>
-                        <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
+                        <li class="text-white col-lg-6 col-md-6 pl-50 position-relative mb-20">
                             <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Break down revision of year 6 maths questions into manageable tasks.
                         </li>
-                        <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
+                        <li class="text-white col-lg-6 col-md-6 pl-50 position-relative mb-20">
                             <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Stay informed about the curriculum and your child's use of KS2 practice resources.
                             guidelines.
                         </li>
-                        <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative">
+                        <li class="text-white col-lg-6 col-md-6 pl-50 position-relative">
                             <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Provide a quiet, organized space for tackling sats maths papers or sats english test papers.
                         </li>
-                        <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative">
+                        <li class="text-white col-lg-6 col-md-6 pl-50 position-relative">
                             <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Celebrate efforts and milestones in their KS2 learning journey.
                         </li>
                     </ul>
