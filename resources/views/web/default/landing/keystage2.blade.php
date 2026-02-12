@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="categories-element-title">
-                        <h2 class="font-40"><span>ks2 - Year 4</span></h2>
+                        <h2><span>ks2 - Year 4</span></h2>
                         <p>Advance your learning in Year 4 with our comprehensive KS2 practices and resources 
                         designed to deepen understanding and apply concepts across Science, History, and foundation subjects. </p>
                     </div>
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <div class="categories-element-title">
-                        <h2 class="font-40"><span>ks2 - Year 5</span></h2>
+                        <h2><span>ks2 - Year 5</span></h2>
                         <p>Excel in Year 5 with targeted preparation, including practice that mirrors sats papers to build confidence and ability.This stage strengthens reasoning and exam-style problem solving ahead of Year 6. </p>
                     </div>
                     <div class="row">
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                     <div class="categories-element-title">
-                        <h2 class="font-40"><span>ks2 - Year 6</span></h2>
+                        <h2><span>ks2 - Year 6</span></h2>
                         <p>Ensure success in Year 6 and beyond with our ultimate preparation tools. Access<a href="https://rurera.com/sats-preparation">year 6 sats papers</a>sats past papers, and full sats mock papers for complete readiness.These assessments measure national expectations and prepare pupils for secondary school.
                         </p>
                     </div>
@@ -312,16 +312,16 @@
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 text-center">
                     <div class="section-title">
-                        <h2 class="font-40 d-block mb-20">Best Part about KS2?</h2>
-                        <p class="font-16 font-weight-normal text-gray mb-30">
+                        <h2 class="mb-20">Best Part about KS2?</h2>
+                        <p class="mb-30">
                             Experience a new way of revising with our teacher-written KS2 quizzes designed for Years 3, 4, 5, and 6. Success in the KS2 curriculum is within reach. 
                             We bring education to life with Key Stage 2 Resources, KS2 quizzes, KS2 practices, KS2 assessments, and KS2 Tests.
                             All content follows the UK National Curriculum and is written by experienced teachers.
                         </p>
                     </div>
                     <div class="section-title">
-                        <h3 class="font-40 d-block mb-20">The best part about KS2 quizzes?</h3>
-                        <p class="font-16 font-weight-normal text-gray">
+                        <h3 class=" mb-20">The best part about KS2 quizzes?</h3>
+                        <p>
                         They're enjoyable! We make mastering maths sats papers and sats english papers engaging. We help students discover how rewarding learning can be while preparing for key milestones.
                     </div>
                     <div class="align-items-center d-flex justify-content-center pt-30"><a href="/pricing" class="btn btn-primary rounded-pill">View all courses</a></div>
