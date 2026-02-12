@@ -6,7 +6,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="text-center page-sub-header py-80" style="background-color: var(--primary);">
+    <section class="text-center page-sub-header py-80 mb-60" style="background-color: var(--primary);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -21,7 +21,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-80">
+    <section class="mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-12">
                     <div class="categories-element-title">
-                        <h2 class="font-40"><span>ks2 - Year 3</span></h2>
+                        <h2><span>ks2 - Year 3</span></h2>
                         <p>Master the foundational curriculum for Year 3 with engaging KS2 quizzes and practice materials. Build essential skills early.through introductory Science, History, and creative subjects.</p>
                     </div>
                     <div class="row">
@@ -300,7 +300,7 @@
             </div>
         </div>
     </section>
-    <section class="find-instructor-section pt-100">
+    <section class="find-instructor-section mb-60">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -329,7 +329,7 @@
             </div>
         </div>
     </section>
-    <section class="py-80 mt-90" style="background-color: #f18700;">
+    <section class="py-80 mb-60" style="background-color: #f18700;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -361,7 +361,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-80">
+    <section class="mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -379,7 +379,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-80 rurera-counter-section">
+    <section class="mb-60 rurera-counter-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12">
@@ -418,7 +418,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-50">
+    <section class="mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
