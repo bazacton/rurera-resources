@@ -15176,7 +15176,8 @@ section:has(.trial-steps) .rurera-btn-group a small {
   height: 600px;
 }
 .feature-tabs {
-  min-height: 400px;
+  min-height: 350px;
+  margin-top: auto;
 }
 .feature-item,
 .feature-content,
