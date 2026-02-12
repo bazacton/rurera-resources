@@ -15242,7 +15242,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     display: block;
     opacity: 1;
     animation:in .8s forwards;
-    height: 500px;
+    height: 450px;
 }
 @keyframes in{to{opacity:1;transform:none}}
 /* Accordion Slider Style End */
