@@ -497,7 +497,7 @@
         </div>
     </div>
 </section>
- {!! parseShortcode([SC_times-table-faqs-section-f]') !!}
+{!! parseShortcode([SC_times-table-faqs-section-f]') !!}
 {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
 
 @endsection
