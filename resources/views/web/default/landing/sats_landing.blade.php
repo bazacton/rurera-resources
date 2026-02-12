@@ -17,7 +17,7 @@
                         Don't leave your SATs performance to chance! Join us to unlock your full potential and excel on the sats exams. Transform your test preparation with our expert guidance and practice sats papers achieve the scores you’ve always dreamed of!
 
                     </p>
-                    <ul class="mb-0 p-0 font-14 categories-option">
+                    <ul class="mb-0 p-0 benefits-list">
                         <li class="mb-10">
                             Top Performance: Engaging Quizzes & SAT Assessment Test Prep
                         </li>
