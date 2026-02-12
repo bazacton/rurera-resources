@@ -11,11 +11,9 @@
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6">
                     <h1>Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
-                    <h2 class="mb-15 font-18 font-weight-bold">Maximize Your Performance: Boost Your SATS Scores.
-                    </h2>
-                    <p class="font-14">
+                    <hstron class="mb-15 font-18 font-weight-bold d-block">Maximize Your Performance: Boost Your SATS Scores.</stron>
+                    <p>
                         Don't leave your SATs performance to chance! Join us to unlock your full potential and excel on the sats exams. Transform your test preparation with our expert guidance and practice sats papers achieve the scores you’ve always dreamed of!
-
                     </p>
                     <ul class="mb-0 p-0 benefits-list">
                         <li class="mb-10">
