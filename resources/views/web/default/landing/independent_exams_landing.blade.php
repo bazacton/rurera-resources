@@ -603,6 +603,7 @@
         </div>
     </div>
     </section>
+    {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
 @endsection
 
 @push('scripts_bottom')
