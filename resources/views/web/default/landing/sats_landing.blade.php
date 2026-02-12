@@ -6,9 +6,9 @@
 
 @section('content')
 <section class="content-section">
-    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden" style="min-height: 850px;">
-        <div class="container h-100">
-            <div class="row h-100">
+    <section class="position-relative gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden">
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-md-12 col-lg-6">
                     <h1>Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
                     <strong class="mb-15 font-18 font-weight-bold d-block">Maximize Your Performance: Boost Your SATS Scores.</strong>
