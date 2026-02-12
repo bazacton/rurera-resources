@@ -537,7 +537,7 @@
     {!! parseShortcode('[SC_accordion-slider-section-f]') !!}
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
 
-{!! parseShortcode('[SC_iseb-parent-account-section-f]') !!}
+  {!! parseShortcode('[SC_11-plus-parent-account-section-f]') !!}
 
     @php
     $packages_only = isset( $packages )? $packages : array();
