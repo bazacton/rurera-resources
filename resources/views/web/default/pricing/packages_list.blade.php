@@ -27,7 +27,7 @@ $element_class = ($packages_count < 2)? 'col-lg-12 col-md-12 col-sm-12' : $eleme
 $show_details = isset( $show_details )? $show_details : true;
 @endphp
 <div class="{{$element_class}}">
-    <div class="subscribe-plan {{(isset( $selected_package ) && $selected_package == $subscribe->id)? 'active' : ''}} current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-25 px-20 mb-30">
+    <div class="subscribe-plan {{(isset( $selected_package ) && $selected_package == $subscribe->id)? 'active' : ''}} current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-25 px-20">
         <div class="plan-header">
 			<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="128" width="128" alt="Box image"/></span>
 			<div class="subscribe-title text-left">
