@@ -15122,18 +15122,6 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-item.active .feature-header h3 {
   color: var(--primary);
 }
-/* controls */
-.controls{
-  display: flex;
-  gap: 12px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  margin-top: 25px;
-}
-.dot{width:8px;height:8px;border-radius:50%;background:#bbb;cursor:pointer}
-.dot.active{background:var(--accent);width:22px;border-radius:6px}
-.auto-btn{border-radius:999px;font-weight:700}
 .feature-item.active .arrow {
     opacity: 1;
     transform: translateX(0);
