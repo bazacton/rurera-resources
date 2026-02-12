@@ -6,7 +6,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="position-relative gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden">
+    <section class="position-relative gallery-sub-header page-sub-header pb-0 pt-80 mb-60 overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-6">
@@ -15,7 +15,7 @@
                     <p>
                         Don't leave your SATs performance to chance! Join us to unlock your full potential and excel on the sats exams. Transform your test preparation with our expert guidance and practice sats papers achieve the scores you’ve always dreamed of!
                     </p>
-                    <ul class="mb-0 p-0 benefits-list">
+                    <ul class="mb-30 p-0 benefits-list">
                         <li class="mb-10">
                             Top Performance: Engaging Quizzes & SAT Assessment Test Prep
                         </li>
@@ -239,7 +239,7 @@
             </div>
         </div>
     </section>
-    <section class="rurera-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
+    <section class="rurera-search-services mb-60 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -315,7 +315,7 @@
             </div>
         </div>
     </section>
-    <section class="key-stage-section mt-50">
+    <section class="key-stage-section mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -511,7 +511,7 @@
             </div>
         </div>
     </section>
-    <section class="rurera-column-section rurera-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
+    <section class="rurera-column-section rurera-text-section exploring-curriculum py-70 mb-60" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -533,7 +533,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mt-80">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mb-60">
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="section-title text-center mb-50">
@@ -564,7 +564,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first mb-60">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
@@ -587,7 +587,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mb-60">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div class="">
@@ -609,7 +609,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative instructor-img-first mb-60">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative img-holder">
@@ -628,7 +628,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mb-60">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div>
@@ -655,7 +655,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-sats choose-sats-section py-80 mt-80 mt-0-sm" style="background-color: #3d358b;">
+    <section class="choose-sats choose-sats-section py-80 mb-60" style="background-color: #3d358b;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
@@ -722,7 +722,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-80">
+    <section class="mb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -857,7 +857,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
