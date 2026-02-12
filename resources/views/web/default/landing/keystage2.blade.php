@@ -366,7 +366,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="font-40 mb-10">The Importance of KS2</h2>
+                        <h2 class="mb-10">The Importance of KS2</h2>
                         <p>
                             Years 3 to 6 are crucial stages. While KS1 lays the foundation, KS2 is where students set the tone for their future academic journey. 
                         </p>
@@ -384,8 +384,8 @@
             <div class="row">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="section-title text-center mb-40">
-                        <h2 class="font-40 mb-10 mt-0">Our impact</h2>
-                        <p itemprop="description">
+                        <h2 class="mb-10 mt-0">Our impact</h2>
+                        <p>
                             We truly Understand the challenges and limitations faced by educators and learners<br />
                             in the current system.
                         </p>
@@ -393,26 +393,26 @@
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
                     <div class="rurera-counter-card">
-                        <strong class="custom-counter" itemprop="number">100</strong><span class="plus-icons">+</span>
-                        <p class="font-16 font-weight-normal" itemprop="description">Sats Practices</p>
+                        <strong class="custom-counter">100</strong><span class="plus-icons">+</span>
+                        <p>Sats Practices</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
                     <div class="rurera-counter-card">
-                        <strong class="custom-counter" itemprop="number">60</strong><span class="plus-icons">+</span>
-                        <p class="font-16 font-weight-normal" itemprop="description">Cities</p>
+                        <strong class="custom-counter">60</strong><span class="plus-icons">+</span>
+                        <p>Cities</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
                     <div class="rurera-counter-card">
-                        <strong class="custom-counter" itemprop="number">5000</strong><span class="plus-icons">+</span>
-                        <p class="font-16 font-weight-normal" itemprop="description">Questions</p>
+                        <strong class="custom-counter">5000</strong><span class="plus-icons">+</span>
+                        <p>Questions</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-30">
                     <div class="rurera-counter-card">
-                        <strong class="custom-counter" itemprop="number">100</strong><span class="plus-icons">+</span>
-                        <p class="font-16 font-weight-normal" itemprop="description">Books</p>
+                        <strong class="custom-counter">100</strong><span class="plus-icons">+</span>
+                        <p>Books</p>
                     </div>
                 </div>
             </div>
