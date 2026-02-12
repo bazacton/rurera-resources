@@ -43,12 +43,14 @@
                                     @if(!empty(getGeneralSettings('content_translate')))
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('auth.language') }}</label>
-                                        <select name="locale" class="form-control {{ !empty($testimonial) ? 'js-edit-content-locale' : '' }}">
-                                            @foreach($userLanguages as $lang => $language)
-                                            <option value="{{ $lang }}" @if(mb_strtolower(request()->get('locale', app()->getLocale())) == mb_strtolower($lang)) selected @endif>{{ $language }}
-                                            </option>
-                                            @endforeach
-                                        </select>
+                                        <div class="select-holder">
+                                            <select name="locale" class="form-control {{ !empty($testimonial) ? 'js-edit-content-locale' : '' }}">
+                                                @foreach($userLanguages as $lang => $language)
+                                                <option value="{{ $lang }}" @if(mb_strtolower(request()->get('locale', app()->getLocale())) == mb_strtolower($lang)) selected @endif>{{ $language }}
+                                                </option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                         @error('locale')
                                         <div class="invalid-feedback">
                                             {{ $message }}
