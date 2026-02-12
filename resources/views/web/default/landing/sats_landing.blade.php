@@ -511,7 +511,7 @@
             </div>
         </div>
     </section>
-    <section class="rurera-column-section rurera-text-section exploring-curriculum py-70 mb-60" style="background-color: #7679ee;">
+    <section class="exploring-curriculum py-70 mb-60" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
