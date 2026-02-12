@@ -239,7 +239,7 @@
             </div>
         </div>
     </section>
-    <section class="rurera-search-services mb-60 pb-60" style="background-color: #f27530;">
+    <section class="rurera-search-services mb-60 py-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
