@@ -554,7 +554,7 @@
             <a href="{{url('/')}}/pricing" class="btn-primary font-16 text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
         </div>
     </section>
-    {!! parseShortcode('[SC_independent-exams-faqs-f]') !!}
+   
     {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
 
     
@@ -603,7 +603,7 @@
         </div>
     </div>
     </section>
-    
+     {!! parseShortcode('[SC_independent-exams-faqs-f]') !!}
     {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
 @endsection
 
