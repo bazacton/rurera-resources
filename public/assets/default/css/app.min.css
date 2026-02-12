@@ -15673,6 +15673,84 @@ footer.footer-home {
 .footer-bottom .footer-nav-holder {
   border-top: 1px solid rgb(255 255 255 / 0.2);
 }
+/* testimonials card css  */
+ .rurera-feature-rev-card {
+    background-color: #FFFFFFA6;
+    border-radius: 24px;
+    padding: 28px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .rurera-features-element {
+    margin: 0 0 30px;
+  }
+  .rurera-feature-rev-card .big {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 10px;
+  }
+  .rurera-feature-rev-card strong {
+    display: block;
+    color: #000;
+  }
+  .rurera-feature-rev-card h3 {
+    color: #60606B;
+    margin: 0 0 10px;
+  }
+  .rurera-feature-rev-card p {
+    margin-top: auto;
+  }
+  .rurera-feature-rev-card .icon-circle {
+    background-color: #00000080;
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px;
+  }
+  .rurera-feature-rev-card .icon-circle img {
+    height: 22px;
+    width: 22px;
+  }
+  .rurera-feature-rev-card .arrow-btn button {
+    background-color: inherit;
+    border: 1px solid #161518;
+    border-radius: 42px;
+    height: 38px;
+    width: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rurera-feature-rev-card .arrow-btn {
+    margin-top: auto;
+  }
+  .rurera-feature-rev-card .arrow-btn button img {
+    height: 18px;
+    width: 18px;
+  }
+  .rurera-feature-rev-card.card--highlight {
+    background-image: url(/assets/default/img/elite_author_pattern.webp);
+    background-size: cover;
+    background-position: center center;
+    background-color: #E4C9FF;
+  }
+  .rurera-feature-rev-card .avatars {
+    margin-top: auto;
+  }
+  .rurera-feature-rev-card .avatars img {
+    max-width: 90px;
+    max-height: 30px;
+    object-fit: contain;
+  }
+  .rurera-feature-rev-card .icon-circle.light {
+    background-color: #88888929;
+  }
+
 
 /* ================================
    RURERA CSS FOR ISEB PAGe SECTION
