@@ -533,7 +533,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mb-60">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative mt-0 mb-60">
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="section-title text-center mb-50">
