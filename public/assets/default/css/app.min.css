@@ -15778,12 +15778,6 @@ footer.footer-home {
     margin-left: 0;
 }
 
-/* Hover effect to reveal avatar */
-.rev-avatar:hover {
-    transform: translateY(-5px);
-    z-index: 10;
-}
-
 /* Avatar Image */
 .rev-avatar img {
     width: 100%;
