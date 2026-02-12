@@ -244,9 +244,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 class="mt-0 mb-10 text-white font-40">Master the SATs with Rurera
+                        <h2 class="mt-0 mb-10 text-white">Master the SATs with Rurera
                         </h2>
-                        <p class="text-white font-19">
+                        <p class="text-white">
                             Work through a variety of SATs practice and SATs quizzes to improve your skills and become familiar with the<br />
                             types of questions you'll encounter on the year 6 sats exam.
                         </p>
@@ -320,8 +320,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-left mb-40">
-                        <h2 class="mb-15 font-40">Endless SATs Resources, Endless Practice Opportunities</h2>
-                        <p class="font-19 text-gray">
+                        <h2 class="mb-15">Endless SATs Resources, Endless Practice Opportunities</h2>
+                        <p>
                             Monitor your improvement and pinpoint areas for further development using detailed analytics from our SATs practice platform.
                         </p>
                     </div>
@@ -352,28 +352,28 @@
                             <div class="rurera-key-stage text-center"><strong>2022</strong></div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
                                     <div class="rurera-img">
-                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                        <img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
                                     <div class="rurera-img">
-                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                        <img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
@@ -382,26 +382,26 @@
                             <div class="rurera-key-stage text-center"><strong>2019</strong></div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
@@ -410,32 +410,32 @@
                             <div class="rurera-key-stage text-center"><strong>2018</strong></div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
                                     </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
                                     </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rurera-key-stage">
-                                <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
                                     <div class="rurera-img">
-                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                        <img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
@@ -444,31 +444,31 @@
                             <div class="rurera-key-stage text-center"><strong>2017</strong></div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
                                     </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
                                     </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rurera-key-stage">
-                                <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
@@ -477,31 +477,31 @@
                             <div class="rurera-key-stage text-center"><strong>2016</strong></div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
                                     </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" />
                                     </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rurera-key-stage">
-                                <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
-                                    </div>
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" />
+                                    </div>
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" />
                                     </div>
                                 </div>
                             </div>
                             <div class="rurera-key-stage">
                                 <div class="rurera-img-holder">
-                                    <div class="rurera-img"><img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rurera-key-stage">
+                                <div class="rurera-img-holder">
+                                    <div class="rurera-img"><img src="/assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="rurera-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
-                            <h4 class="mb-10 font-30 align-items-center d-inline-flex text-white">
+                            <h4 class="mb-10align-items-center d-inline-flex text-white">
                                 <span class="icon-svg mr-15">
                                     <img src="/assets/default/svgs/bulb-white.svg" height="30" width="30" alt="bulb-white">
                                 </span>
@@ -537,9 +537,9 @@
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="section-title text-center mb-50">
-                    <h2 class="mt-0 mb-10 font-40"> Conquer the SATs with Confidence
+                    <h2 class="mt-0 mb-10"> Conquer the SATs with Confidence
                     </h2>
-                    <p class="font-19 text-gray">
+                    <p>
                         Rurera offers the capability to track onscreen activity and analyze performance against each topic,<br />
                         ensuring focused revision for the sats uk assessments.
                     </p>
@@ -548,8 +548,8 @@
             <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
-                        <h2 class="font-40 text-dark">KS1 & KS2 SATs Practice</h2>
-                        <p class="font-16 text-gray mt-10">
+                        <h2 class="text-dark">KS1 & KS2 SATs Practice</h2>
+                        <p class="mt-10">
                             Rurera offers comprehensive KS1 sats papers and KS2 SATs practice, providing interactive exercises and personalized feedback. This helps young learners build confidence for their sats exams, including ks1 sats test papers.
                         </p>
                     </div>
@@ -576,9 +576,9 @@
             <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
-                        <h2 class="font-40 text-dark">Ace SATs with Quizzes & Assessments!
+                        <h2 class="text-dark">Ace SATs with Quizzes & Assessments!
                         </h2>
-                        <p class="font-16 text-gray mt-10">
+                        <p class="mt-10">
                             Our SATs quizzes and assessments cover key subjects like English and Maths. They are ideal for effective SATs exam practice, helping students tackle year six sats questions with confidence.
 
                         </p>
@@ -592,8 +592,8 @@
             <div class="col-12 col-lg-6">
                 <div class="">
                     <div class="section-title section-inner-title">
-                        <h2 class="font-40 text-dark">Track Individual Progress with Ease</h2>
-                        <p class="font-16 text-gray mt-10">
+                        <h2>Track Individual Progress with Ease</h2>
+                        <p class="mt-10">
                         Rurera makes it simple to track individual progress by offering detailed insights into each student's performance on year 6 sats practice papers pdf and other resources.
 
                         </p>
@@ -631,7 +631,7 @@
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
-                <div class="">
+                <div>
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Enhance Learning with SATs Papers</h2>
                         <p class="font-16 text-gray mt-10">
@@ -660,8 +660,8 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 class="mt-0 mb-10 text-white font-40"> Ignite Your Path to Success with 100+ SATs practices</h2>
-                        <p class="font-19 text-white">
+                        <h2 class="mt-0 mb-10 text-white"> Ignite Your Path to Success with 100+ SATs practices</h2>
+                        <p class="text-white">
                             With engaging learning experiences and proven SATs resources, you'll be well-prepared to achieve your best scores
                             on the SATs exams.
                         </p>
@@ -671,49 +671,49 @@
                     <div class="row">
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/exam-multiple-white.svg" width="50" height="50" alt="exam-multiple-white" />
+                                <img src="/assets/default/svgs/exam-multiple-white.svg" width="50" height="50" alt="exam-multiple-white" />
                                 <span class="text-white">100+ SATs practices</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/lessons-white.svg" width="50" height="50" alt="lessons-white" />
+                                <img src="/assets/default/svgs/lessons-white.svg" width="50" height="50" alt="lessons-white" />
                                 <span class="text-white">SATs Resources</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/impact-white.svg" width="50" height="50" alt="impact-white" />
+                                <img src="/assets/default/svgs/impact-white.svg" width="50" height="50" alt="impact-white" />
                                 <span class="text-white">SATs Assesments</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/sav-time-white.svg" width="50" height="50" alt="sav-time-white" />
+                                <img src="/assets/default/svgs/sav-time-white.svg" width="50" height="50" alt="sav-time-white" />
                                 <span class="text-white">SATs Quizzes</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/study-white.svg" width="50" height="50" alt="study-white" />
+                                <img src="/assets/default/svgs/study-white.svg" width="50" height="50" alt="study-white" />
                                 <span class="text-white">SATs Tests</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/flexibility-white.svg" width="50" height="50" alt="flexibility-white" />
+                                <img src="/assets/default/svgs/flexibility-white.svg" width="50" height="50" alt="flexibility-white" />
                                 <span class="text-white">SATs papers</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/logic-white.svg" width="50" height="50" alt="logic-white" />
+                                <img src="/assets/default/svgs/logic-white.svg" width="50" height="50" alt="logic-white" />
                                 <span class="text-white">SATs exam</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/support-white.svg" width="50" height="50" alt="support-white" />
+                                <img src="/assets/default/svgs/support-white.svg" width="50" height="50" alt="support-white" />
                                 <span class="text-white">Friendly support</span>
                             </div>
                         </div>
@@ -727,14 +727,14 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
-                        <h2 class="mb-10 font-40">Personalized SATs Prep with Rurera</h2>
-                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored SATs practice and assessments that meet their unique needs.</p>
+                        <h2 class="mb-10">Personalized SATs Prep with Rurera</h2>
+                        <p>Empower your child’s learning journey with tailored SATs practice and assessments that meet their unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Key to Effective Learning</span>
@@ -746,7 +746,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">SATs 100s online Assessments</span>
@@ -757,7 +757,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Past SATs Papers</span>
@@ -769,7 +769,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Learn, Play & Win</span>
@@ -782,7 +782,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Student Engagement</span>
@@ -794,7 +794,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Activity Monitoring</span>
@@ -806,7 +806,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Parental Insights</span>
@@ -820,7 +820,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
-                            <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold">
                             <span class="text-dark-charcoal">Interactive Learning</span>
@@ -834,10 +834,10 @@
                     <div class="feature-grid text-center mb-40">
                         <figure class="mb-20">
 
-                            <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
+                            <img src="/assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold">
+                        <h3 class="mb-5">
                             <span class="text-dark-charcoal">Adaptive Assessments</span>
                         </h3>
                         <p itemprop="description">Explore activities that make mastering year six sats topics fun and effective.
