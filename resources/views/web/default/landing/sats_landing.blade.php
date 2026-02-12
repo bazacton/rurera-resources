@@ -6,7 +6,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="position-relative gallery-sub-header page-sub-header pb-0 pt-80 mb-60 overflow-hidden">
+    <section class="position-relative gallery-sub-header page-sub-header pb-0 mb-60 overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-6">
