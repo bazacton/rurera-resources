@@ -10,8 +10,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-white font-50 font-weight-bold mb-15">Key Stage 2 Learning<span class="text-scribble">(KS2)</span></h1>
-                    <p class="text-white font-19 mb-0">
+                    <h1 class="text-white mb-15">Key Stage 2 Learning<span class="text-scribble">(KS2)</span></h1>
+                    <p class="text-white">
                         If you are aged between 7 and 11, then have fun and learn with 5k+ KS2 quizzes and interactive<br />
                         resources written especially for you. Dive into our targeted KS2 tests and assessments.
                         Key Stage 2 (KS2) is part of the UK National Curriculum for Years 3–6, covering Maths, 
