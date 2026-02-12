@@ -320,7 +320,7 @@
                         </p>
                     </div>
                     <div class="section-title">
-                        <h3 class=" mb-20">The best part about KS2 quizzes?</h3>
+                        <h2 class=" mb-20">The best part about KS2 quizzes?</h2>
                         <p>
                         They're enjoyable! We make mastering maths sats papers and sats english papers engaging. We help students discover how rewarding learning can be while preparing for key milestones.
                     </div>
