@@ -15173,10 +15173,10 @@ section:has(.trial-steps) .rurera-btn-group a small {
 .feature-tabs-holder {
   display: flex;
   flex-direction: column;
-  min-height: 400px;
+  height: 600px;
 }
 .feature-tabs {
-  margin-top: auto;
+  min-height: 400px;
 }
 .feature-item,
 .feature-content,
