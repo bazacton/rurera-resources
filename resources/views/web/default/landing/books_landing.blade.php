@@ -494,7 +494,7 @@
                <div class="d-flex justify-content-between">
                    <div class="section-title">
                        <h2 class="mt-0 mb-10">{{ trans('home.blog') }}</h2>
-                       <p class="section-hint font-14">Uncover the Latest News and Trends!</p>
+                       <p>Uncover the Latest News and Trends!</p>
                    </div>
                    <a href="/blog" class="btn btn-border-white">{{ trans('home.all_blog') }}</a>
                </div>
