@@ -87,11 +87,13 @@
 
                                     <div class="form-group">
                                         <label class="input-label d-block">Testimonial By</label>
-                                        <select name="testimonial_by" class="form-control" data-placeholder="Select Testimonial By">
-                                            <option value="teacher" {{ (!empty($testimonial) and $testimonial->testimonial_by == 'teacher') ? 'selected' : '' }}>Teacher</option>
-                                            <option value="student" {{ (!empty($testimonial) and $testimonial->testimonial_by == 'student') ? 'selected' : '' }}>Student</option>
-                                            <option value="parent" {{ (!empty($testimonial) and $testimonial->testimonial_by == 'parent') ? 'selected' : '' }}>Parent</option>
-                                        </select>
+                                        <div class="select-holder">
+                                            <select name="testimonial_by" class="form-control" data-placeholder="Select Testimonial By">
+                                                <option value="teacher" {{ (!empty($testimonial) and $testimonial->testimonial_by == 'teacher') ? 'selected' : '' }}>Teacher</option>
+                                                <option value="student" {{ (!empty($testimonial) and $testimonial->testimonial_by == 'student') ? 'selected' : '' }}>Student</option>
+                                                <option value="parent" {{ (!empty($testimonial) and $testimonial->testimonial_by == 'parent') ? 'selected' : '' }}>Parent</option>
+                                            </select>
+                                        </div>
                                     </div>
 
 
@@ -126,12 +128,13 @@
 
                                     <div class="form-group">
                                         <label>Country</label>
-
-                                        <select name="country" class="form-control" data-placeholder="Select Country">
-                                            @foreach($contries_list as $country_name)
-                                            <option value="{{$country_name}}" {{ (!empty($testimonial) and $testimonial->country == $country_name) ? 'selected' : '' }}>{{$country_name}}</option>
-                                            @endforeach
-                                        </select>
+                                        <div class="select-holder">
+                                            <select name="country" class="form-control" data-placeholder="Select Country">
+                                                @foreach($contries_list as $country_name)
+                                                <option value="{{$country_name}}" {{ (!empty($testimonial) and $testimonial->country == $country_name) ? 'selected' : '' }}>{{$country_name}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
 
                                     <div class="form-group">
@@ -147,11 +150,13 @@
 
                                     <div class="form-group">
                                         <label class="input-label d-block">Testimonial Type</label>
-                                        <select name="testimonial_type" class="form-control testimonial-type" data-placeholder="Select Testimonial Type">
-                                            <option value="text" {{ (!empty($testimonial) and $testimonial->testimonial_type == 'text') ? 'selected' : '' }}>Text</option>
-                                            <option value="image" {{ (!empty($testimonial) and $testimonial->testimonial_type == 'image') ? 'selected' : '' }}>Image</option>
-                                            <option value="video" {{ (!empty($testimonial) and $testimonial->testimonial_type == 'video') ? 'selected' : '' }}>Video</option>
-                                        </select>
+                                        <div class="select-holder">
+                                            <select name="testimonial_type" class="form-control testimonial-type" data-placeholder="Select Testimonial Type">
+                                                <option value="text" {{ (!empty($testimonial) and $testimonial->testimonial_type == 'text') ? 'selected' : '' }}>Text</option>
+                                                <option value="image" {{ (!empty($testimonial) and $testimonial->testimonial_type == 'image') ? 'selected' : '' }}>Image</option>
+                                                <option value="video" {{ (!empty($testimonial) and $testimonial->testimonial_type == 'video') ? 'selected' : '' }}>Video</option>
+                                            </select>
+                                        </div>
                                     </div>
 
 
