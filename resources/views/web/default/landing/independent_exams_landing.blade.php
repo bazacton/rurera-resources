@@ -555,6 +555,7 @@
         </div>
     </section>
     {!! parseShortcode('[SC_independent-exams-faqs-f]') !!}
+    {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
 
     <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
         <div class="container">
