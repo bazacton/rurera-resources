@@ -655,7 +655,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-sats choose-sats-section py-80 mb-60" style="background-color: #3d358b;">
+    <section class="choose-sats py-80 mb-60" style="background-color: #3d358b;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
