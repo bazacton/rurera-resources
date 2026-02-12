@@ -7,8 +7,8 @@ $show_details = isset( $show_details )? $show_details : true;
 		<div class="row">
 			<div class="col-12 col-lg-12 text-center">
 				<div class="section-title text-center mb-40">
-					<h2 class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
-					<p class="font-19 pt-10">Save more with annual pricing</p>
+					<h2 class="mb-0">Choose the right plan for you</h2>
+					<p class="pt-10">Save more with annual pricing</p>
 				</div>
 			</div>
 			<div class="col-12 col-lg-12 text-center">
