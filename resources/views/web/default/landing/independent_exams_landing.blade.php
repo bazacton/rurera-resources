@@ -557,29 +557,7 @@
     {!! parseShortcode('[SC_independent-exams-faqs-f]') !!}
     {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
 
-    <section class="mt-0 parent-account-section" style="background-color: #0065ff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                    <div class="section-title mb-50">
-                        <h2 class="text-white font-40">Parent account</h2>
-                        <p class="text-white font-16 font-weight-500">We make it easy to be involved in your child’s learning Ability to assign activities</p>
-                    </div>
-                    <ul>
-                        <li><span class="font-18">Real-Time diagnostics</span></li>
-                        <li><span class="font-18">Track Child’s Learning</span></li>
-                        <li><span class="font-18">Assign Goals for your Child</span></li>
-                        <li><span class="font-18">Regular Notifications on Activities.</span></li>
-                        <li><span class="font-18">learning controls</span></li>
-                        <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5">
-                    <div class="imb-box"><img alt="banner-home image" height="570" src="/assets/default/img/banner-home.webp" width="548" /></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     @php
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
