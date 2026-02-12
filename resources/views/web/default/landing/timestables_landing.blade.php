@@ -427,31 +427,8 @@
 
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
    
-    <section class="parent-account-section mt-0" style="background-color: #0065ff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                    <div class="section-title mb-50">
-                        <h2 class="font-40 text-white">Parent account</h2>
-                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
-                    </div>
-                    <ul>
-                        <li><span>Real-Time diagnostics</span></li>
-                        <li><span>Track Child’s Learning</span></li>
-                        <li><span>Assign Goals for your Child</span></li>
-                        <li><span>Regular Notifications on Activities.</span></li>
-                        <li><span>learning controls</span></li>
-                        <li><span>Easy to Manage Sibling Accounts</span></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5">
-                    <div class="imb-box">
-                        <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
+    
     @php
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
