@@ -808,9 +808,7 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5">
-                            <span class="text-dark-charcoal">Parental Insights</span>
-                        </h3>
+                        <h3 class="mb-5">Parental Insights</h3>
                         <p> Track progress and support your child's achievements with key learning insights.
 
                         </p>
@@ -822,9 +820,7 @@
                         <figure class="mb-20">
                             <img src="/assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
-                        <h3 class="mb-5">
-                            <span class="text-dark-charcoal">Interactive Learning</span>
-                        </h3>
+                        <h3 class="mb-5">Interactive Learning</h3>
                         <p>
                            Explore activities that make mastering year six sats topics fun and effective.
                         </p>
@@ -837,9 +833,7 @@
                             <img src="/assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
 
                         </figure>
-                        <h3 class="mb-5">
-                            <span class="text-dark-charcoal">Adaptive Assessments</span>
-                        </h3>
+                        <h3 class="mb-5">Adaptive Assessments</h3>
                         <p>Explore activities that make mastering year six sats topics fun and effective.
                         </p>
                     </div>
