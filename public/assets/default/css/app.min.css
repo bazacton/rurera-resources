@@ -15678,22 +15678,22 @@ footer.footer-home {
    RURERA CSS FOR ISEB PAGe SECTION
    
 ================================ */
- .rurera-feature-section {
+ .rurera-prep-section {
             padding: 80px 0;
         }
-        .rurera-feature-section h2 {
+        .rurera-prep-section h2 {
             font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 1rem;
             font-size: 2.5rem;
         }
-        .rurera-feature-section p {
+        .rurera-prep-section p {
             color: #6c757d;
             font-size: 1.1rem;
             max-width: 600px;
             margin: 0 auto 3rem;
         }
-        .rurera-feature-card {
+        .rurera-prep-feature {
             border: none;
             border-radius: var(--rurera-card-radius);
             padding: 2rem;
@@ -15703,21 +15703,20 @@ footer.footer-home {
             display: flex;
             flex-direction: column;
             position: relative;
+            background-color: white; /* Default background */
         }
-        .rurera-feature-card:hover {
+        .rurera-prep-feature:hover {
             transform: translateY(-5px);
         }
-        .rurera-feature-card h3 {
+        .rurera-prep-feature h3 {
             font-weight: 700;
             font-size: 1.25rem;
             margin-bottom: 0.75rem;
-            color: inherit;
         }
-        .rurera-feature-card p {
+        .rurera-prep-feature p {
             font-size: 0.9rem;
             color: rgba(0,0,0,0.6);
             margin-bottom: 2rem;
-            max-width: 100%;
         }
         
         /* Card Variants */
@@ -15734,14 +15733,13 @@ footer.footer-home {
             border-radius: 16px 16px 0 0;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-top: auto;
-            margin-bottom: -2.1rem; /* Pull it down to bleed out slightly */
+            margin-bottom: -2.1rem;
             width: 100%;
         }
         .rurera-img-frame img {
             width: 100%;
             height: auto;
             display: block;
-            object-fit: contain;
         }
         .rurera-img-frame-wide {
             max-width: 500px;
