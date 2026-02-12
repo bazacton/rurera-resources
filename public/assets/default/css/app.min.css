@@ -15750,7 +15750,55 @@ footer.footer-home {
   .rurera-feature-rev-card .icon-circle.light {
     background-color: #88888929;
   }
+/*testimonials  Avatar Group Container */
+.rev-avatar-group {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
 
+/* Individual Avatar Circle */
+.rev-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -12px; /* Overlapping effect */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* First avatar should not have negative margin */
+.rev-avatar:first-child {
+    margin-left: 0;
+}
+
+/* Hover effect to reveal avatar */
+.rev-avatar:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+/* Avatar Image */
+.rev-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Plus Icon Avatar */
+.rev-avatar.plus-avatar {
+    background-color: #c8e6c9; /* Light green */
+    color: #2e7d32; /* Dark green */
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: default;
+}
 
 /* ================================
    RURERA CSS FOR ISEB PAGe SECTION
