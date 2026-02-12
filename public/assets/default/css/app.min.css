@@ -10468,52 +10468,49 @@ body .flipbook-data {
   position: relative;
 }
 .navbar-nav .nav-item:has(.sidenav-dropdown)>a:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 4px;
-    height: 7px;
-    width: 7px;
-    border: 2px solid #000;
-    border-top: 0;
-    border-left: 0;
-    transform: rotate(45deg);
-    margin-top: -4px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  height: 7px;
+  width: 7px;
+  border: 2px solid #000;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+.rurera-testimonial-tabs {
+  background-color: #F1E3FF;
 }
 .rurera-testimonial-tabs h1 {
   font-size: 2.5rem;
-}
-.rurera-testimonial-tabs .rurera-masonry {
-  padding: 30px 0 0;
 }
 .rurera-testimonial-tabs .testimonial-filters~.rurera-masonry {
   padding-top: 50px;
 }
 .grid-item {
   margin-bottom: 30px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 24px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  max-width: 100%;
 }
 .rurera-masonry .testimonial-card {
-  border-radius: 5px;
+  background-color: #FFFFFFA6;
+  border: 1px solid #ddd;
+  border-radius: 24px;
   padding: 20px 20px 25px;
   position: relative;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 3px 15px 0 rgb(0 0 0 / 0.1) !important;
 }
 .rurera-testimonials .masonry-grid {
-  width: 100% !important;
-}
-.testimonial-card:before {
-  position: absolute;
-  bottom: 0;
-  background-image: linear-gradient(270deg, #9effc1, var(--primary));
-  content: "";
-  left: 0;
-  height: 11px;
-  width: 100%;
-}
-.rurera-testimonial-slider .testimonial-card:before {
-  display: none;
+  display: block;
+  column-count: 3;
+  column-gap: 0;
 }
 .testimonial-card .vidio-holder {
   margin: 0;
@@ -10713,10 +10710,7 @@ body {
   overflow-x: hidden;
 }
 .testimonial-card p {
-  color: #818894;
   margin: 0 0 15px;
-  font-size: 17px;
-  padding: 0;
 }
 .testimonial-card .rurera-rating-star {
   margin: 0 0 10px;
