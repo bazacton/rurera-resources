@@ -502,6 +502,7 @@
             </div>
         </div>
     </section>
+    {!! parseShortcode('[SC_features-section-f]') !!}
     @php
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
