@@ -10481,6 +10481,16 @@ body .flipbook-data {
 }
 .rurera-testimonial-tabs {
   background-color: #f6f6f6;
+  position: relative;
+}
+.rurera-testimonial-tabs:after {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    content: "";
+    background-color: #fff0;
+    background-image: linear-gradient(180deg, #0E0E1000 0%, #ffff 70%);
 }
 .rurera-testimonial-tabs h1 {
   font-size: 2.5rem;
