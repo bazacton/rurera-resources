@@ -16061,7 +16061,48 @@ footer.footer-home {
     z-index: 4;
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
 }
+/* Swiper Container */
+.swiper-container {
+    width: 100%;
+    height: 500px; /* Fixed Height */
+    border-radius: 20px;
+    overflow: hidden;
+}
 
+/* Individual Slides */
+.rurera-feature-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Slide Inner Wrapper */
+.rurera-swiper-slide-inner {
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Active Slide Zoom Effect */
+.rurera-feature-slider .swiper-slide-active .rurera-swiper-slide-inner {
+    transform: scale(1.05);
+}
+
+/* Slide Images */
+.rurera-feature-slider .swiper-slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .rurera-feature-slider .swiper-container { height: 300px; }
+  .rurera-feature-slider .swiper-slide img { height: 250px; }
+}
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
     .ru-stickyhero-visual-container {
