@@ -16077,7 +16077,7 @@ footer.footer-home {
 
 .ru-stickyhero-visual-container .rurera-cart-review {
     position: absolute;
-    width: 25%;
+    width: 200px;
     right: -2rem;
     top: -44px;
     z-index: 4;
@@ -16113,10 +16113,6 @@ footer.footer-home {
     .ru-stickyhero-visual-container .rurera-desktop-mockup {
         width: 85%;
         right: 0;
-    }
-    .ru-stickyhero-visual-container .rurera-cart-review {
-        width: 35%;
-        top: 10%;
     }
     .rurera-feature-slider .swiper-slide-active .rurera-swiper-slide-inner {
       transform: scale(1);
