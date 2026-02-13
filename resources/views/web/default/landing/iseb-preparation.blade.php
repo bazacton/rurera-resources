@@ -918,43 +918,48 @@
     });
 </script>
 <script>
-    $(document).ready(function() {
-        // Slider Images Data
-        const sliderImages = [
-            '\assets\default\demo-imgs\slider-img-01.webp',
-            '\assets\default\demo-imgs\slider-img-04.webp',
-            '\assets\default\demo-imgs\slider-img-01.webp',
-            '\assets\default\demo-imgs\slider-img-01.webp'
-        ];
-
-        // Initialize Swiper
-        const swiper = new Swiper('#featureSwiper', {
-            loop: true,
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            spaceBetween: 20,
-            virtual: {
-                slides: (function () {
-                    const slides = [];
-                    for (var i = 0; i < sliderImages.length; i++) {
-                        slides.push(<div class="rurera-swiper-slide-inner"><img src="${sliderImages[i]}" class="img-fluid rounded"></div>);
-                    }
-                    return slides;
-                })(),
+$(document).ready(function() {
+    // First Swiper Initialization
+    const swiper1 = new Swiper('#featureSwiper', {
+        loop: true,
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '#featureSwiperNext',
+            prevEl: '#featureSwiperPrev',
+        },
+        on: {
+            init: function() {
+                const totalSlides = this.slides.filter(slide => !slide.classList.contains('swiper-slide-duplicate')).length;
+                $('#totalSlides').text(totalSlides);
             },
-            navigation: {
-                nextEl: '#featureSwiperNext',
-                prevEl: '#featureSwiperPrev',
+            slideChange: function () {
+                $('#currentSlide').text(this.realIndex + 1);
             },
-            on: {
-                init: function() {
-                    document.getElementById('totalSlides').innerText = sliderImages.length;
-                },
-                slideChange: function () {
-                    document.getElementById('currentSlide').innerText = this.realIndex + 1;
-                },
-            },
-        });
+        },
     });
+
+    // Second Swiper Initialization
+    const swiper2 = new Swiper('#featureSwiperReversed', {
+        loop: true,
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '#featureSwiperReversedNext',
+            prevEl: '#featureSwiperReversedPrev',
+        },
+        on: {
+            init: function() {
+                const totalSlides = this.slides.filter(slide => !slide.classList.contains('swiper-slide-duplicate')).length;
+                $('#totalSlidesReversed').text(totalSlides);
+            },
+            slideChange: function () {
+                $('#currentSlideReversed').text(this.realIndex + 1);
+            },
+        },
+    });
+});
 </script>
 @endpush
