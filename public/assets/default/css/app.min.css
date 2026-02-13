@@ -16062,27 +16062,29 @@ footer.footer-home {
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
 }
 
+/* Remove container side cutting */
 #featureSwiper {
-    overflow: hidden;
+    overflow: visible;
 }
 
-#featureSwiper .swiper-wrapper {
-    align-items: stretch;
-}
-
+/* Each slide custom width */
 #featureSwiper .swiper-slide {
-    height: auto;
+    width: 420px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-#featureSwiper .rurera-swiper-slide-inner {
-    height: 100%;
+/* Center active slide bigger */
+#featureSwiper .swiper-slide-active {
+    transform: scale(1.05);
+    z-index: 2;
 }
 
-#featureSwiper img {
-    width: 100%;
-    display: block;
+/* Side slides smaller */
+#featureSwiper .swiper-slide-prev,
+#featureSwiper .swiper-slide-next {
+    transform: scale(0.92);
+    opacity: 0.7;
 }
-
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
     .ru-stickyhero-visual-container {
