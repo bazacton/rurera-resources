@@ -15875,8 +15875,8 @@ footer.footer-home {
 }
 /* General Section Styling */
 .ru-feature-showcase {
-    background-color: #fdf2f8; /* Light pink/lavender background */
-    padding: 80px 80px;
+    background-color: #fdf2f8;
+    padding: 80px 0 80px 80px;
     min-height: 100vh;
     margin-top: -100px;
     position: relative;
@@ -15886,7 +15886,7 @@ footer.footer-home {
 /* Left Sticky Section */
 .rurera-feature-wrapper {
     position: sticky;
-    top: 150px; /* Adjust based on desired offset from top */
+    top: 150px;
     padding-right: 30px;
 }
 
