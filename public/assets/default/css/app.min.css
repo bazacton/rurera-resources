@@ -15673,3 +15673,195 @@ footer.footer-home {
 .footer-bottom .footer-nav-holder {
   border-top: 1px solid rgb(255 255 255 / 0.2);
 }
+/* testimonials card css  */
+ .rurera-feature-rev-card {
+    background-color: #FFFFFFA6;
+    border-radius: 24px;
+    padding: 28px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .rurera-features-element {
+    margin: 0 0 30px;
+  }
+  .rurera-feature-rev-card .big {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 10px;
+  }
+  .rurera-feature-rev-card strong {
+    display: block;
+    color: #000;
+  }
+  .rurera-feature-rev-card h3 {
+    color: #60606B;
+    margin: 0 0 10px;
+  }
+  .rurera-feature-rev-card p {
+    margin-top: auto;
+  }
+  .rurera-feature-rev-card .icon-circle {
+    background-color: #00000080;
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px;
+  }
+  .rurera-feature-rev-card .icon-circle img {
+    height: 22px;
+    width: 22px;
+  }
+  .rurera-feature-rev-card .arrow-btn button {
+    background-color: inherit;
+    border: 1px solid #161518;
+    border-radius: 42px;
+    height: 38px;
+    width: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rurera-feature-rev-card .arrow-btn {
+    margin-top: auto;
+  }
+  .rurera-feature-rev-card .arrow-btn button img {
+    height: 18px;
+    width: 18px;
+  }
+  .rurera-feature-rev-card.card--highlight {
+    background-size: cover;
+    background-position: center center;
+    background-color: #dee0ff;
+  }
+  .rurera-feature-rev-card .avatars {
+    margin-top: auto;
+  }
+  .rurera-feature-rev-card .avatars img {
+    max-width: 90px;
+    max-height: 30px;
+    object-fit: contain;
+  }
+  .rurera-feature-rev-card .icon-circle.light {
+    background-color: #88888929;
+  }
+/*testimonials  Avatar Group Container */
+.rev-avatar-group {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* Individual Avatar Circle */
+.rev-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -12px; /* Overlapping effect */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* First avatar should not have negative margin */
+.rev-avatar:first-child {
+    margin-left: 0;
+}
+
+/* Avatar Image */
+.rev-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Plus Icon Avatar */
+.rev-avatar.plus-avatar {
+    background-color: #c8e6c9; /* Light green */
+    color: #2e7d32; /* Dark green */
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* ================================
+   RURERA CSS FOR ISEB PAGe SECTION
+   
+================================ */
+ .rurera-prep-section {
+            padding: 80px 0;
+        }
+        .rurera-prep-section h2 {
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .rurera-prep-section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+        .rurera-prep-feature {
+            border: none;
+            border-radius: var(--rurera-card-radius);
+            padding: 2rem;
+            height: 100%;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: white; /* Default background */
+        }
+        .rurera-prep-feature:hover {
+            transform: translateY(-5px);
+        }
+        .rurera-prep-feature h3 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        .rurera-prep-feature p {
+            font-size: 0.9rem;
+            color: rgba(0,0,0,0.6);
+            margin-bottom: 2rem;
+        }
+        
+        /* Card Variants */
+        .rurera-card-purple { background-color: #dcd6ff; }
+        .rurera-card-yellow { background-color: #fff9d6; }
+        .rurera-card-green { background-color: #d5f5e3; }
+        .rurera-card-peach { background-color: #ffe8e0; }
+        .rurera-card-primary { background-color: var(--rurera-primary); color: white; }
+        .rurera-card-primary p { color: rgba(255,255,255,0.8); }
+
+        .rurera-img-frame {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px 16px 0 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-top: auto;
+            margin-bottom: -2.1rem;
+            width: 100%;
+        }
+        .rurera-img-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .rurera-img-frame-wide {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
