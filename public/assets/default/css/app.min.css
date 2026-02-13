@@ -15928,17 +15928,11 @@ footer.footer-home {
 
 /* Typography for feature grid - NO CLASSES ON P TAGS */
 .rurera-feature-item h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #111;
     margin-bottom: 12px;
-    letter-spacing: -0.01em;
 }
 
 .rurera-feature-item p {
-    font-size: 1.05rem;
     color: #555;
-    line-height: 1.6;
 }
 
 /* Slider Section Styling */
