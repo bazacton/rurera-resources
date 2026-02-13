@@ -15797,71 +15797,68 @@ footer.footer-home {
    
 ================================ */
  .rurera-prep-section {
-            padding: 80px 0;
-        }
-        .rurera-prep-section h2 {
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 1rem;
-            font-size: 2.5rem;
-        }
-        .rurera-prep-section p {
-            color: #6c757d;
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 3rem;
-        }
-        .rurera-prep-feature {
-            border: none;
-            border-radius: var(--rurera-card-radius);
-            padding: 2rem;
-            height: 100%;
-            transition: transform 0.3s ease;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            background-color: white; /* Default background */
-        }
-        .rurera-prep-feature:hover {
-            transform: translateY(-5px);
-        }
-        .rurera-prep-feature h3 {
-            margin-bottom: 0.75rem;
-        }
-        .rurera-prep-feature p {
-            font-size: 0.9rem;
-            color: rgba(0,0,0,0.6);
-            margin-bottom: 2rem;
-        }
-        
-        /* Card Variants */
-        .rurera-card-purple { background-color: #dcd6ff; }
-        .rurera-card-yellow { background-color: #fff9d6; }
-        .rurera-card-green { background-color: #d5f5e3; }
-        .rurera-card-peach { background-color: #ffe8e0; }
-        .rurera-card-primary { background-color: var(--rurera-primary); color: white; }
-        .rurera-card-primary p { color: rgba(255,255,255,0.8); }
+    padding: 80px 0;
+}
+.rurera-prep-section h2 {
+    margin-bottom: 1rem;
+}
+.rurera-prep-section p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+.rurera-prep-feature {
+    border: none;
+    border-radius: var(--rurera-card-radius);
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white; /* Default background */
+}
+.rurera-prep-feature:hover {
+    transform: translateY(-5px);
+}
+.rurera-prep-feature h3 {
+    margin-bottom: 0.75rem;
+}
+.rurera-prep-feature p {
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 2rem;
+}
 
-        .rurera-img-frame {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 16px 16px 0 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-top: auto;
-            margin-bottom: -2.1rem;
-            width: 100%;
-        }
-        .rurera-img-frame img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .rurera-img-frame-wide {
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+/* Card Variants */
+.rurera-card-purple { background-color: #dcd6ff; }
+.rurera-card-yellow { background-color: #fff9d6; }
+.rurera-card-green { background-color: #d5f5e3; }
+.rurera-card-peach { background-color: #ffe8e0; }
+.rurera-card-primary { background-color: var(--rurera-primary); color: white; }
+.rurera-card-primary p { color: rgba(255,255,255,0.8); }
+
+.rurera-img-frame {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-top: auto;
+    margin-bottom: -2.1rem;
+    width: 100%;
+}
+.rurera-img-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.rurera-img-frame-wide {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* General Section Styling */
 .ru-feature-showcase {
     background-color: #fdf2f8; /* Light pink/lavender background */
