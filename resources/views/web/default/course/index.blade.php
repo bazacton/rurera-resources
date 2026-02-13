@@ -196,13 +196,13 @@
 
                                                     @php $total_completion = rand(0,100); @endphp
 
-                                                    <!-- <div class="percent-holder">
+                                                    <div class="percent-holder rurera-hide">
                                                         <div class="chapter_percent circle-blue {{$completion_class}}" data-percent="{{$total_completion}}">
                                                             <div class="circle_inner">
                                                                 <div class="round_per"></div>
                                                             </div>
                                                         </div>
-                                                    </div> -->
+                                                    </div>
                                                     <div class="seg-progress" id="segBar" aria-label="Progress">
                                                         <div class="seg"><div class="seg-fill bg-primary" style="width: 100%;"></div></div>
                                                         <div class="seg"><div class="seg-fill bg-primary" style="width: 100%;"></div></div>
