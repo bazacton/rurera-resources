@@ -10486,7 +10486,7 @@ body .flipbook-data {
 .rurera-testimonial-tabs:after {
     position: absolute;
     bottom: 0;
-    height: 50%;
+    height: 80%;
     width: 100%;
     content: "";
     z-index: 2;
