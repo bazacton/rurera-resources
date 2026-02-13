@@ -273,13 +273,13 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
   content: "";
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
+  background-image: repeating-linear-gradient(
     to right,
     transparent 0%,
     transparent 18%,
-    #fff 18%,
-    #fff 20%
-  );
+    #ffffff 18%,
+    #ffffff 20%
+    );
   z-index: 2;
   pointer-events: none;
 }
