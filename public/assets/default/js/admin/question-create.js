@@ -2366,6 +2366,7 @@ function _rureraform_properties_prepare(_object) {
     if(jQuery('select[name="rureraform-label_type"]').length > 0){
         jQuery('select[name="rureraform-label_type"]').each(function () {
             console.log('-----------------------3333333333');
+             var label_type = $(this).val();
             var thisBlock = $(this).closest('.rureraform-tab-content');
             thisBlock.find(".label_type-depend").addClass('rurera-hide');
             thisBlock.find("."+label_type+'_fields').addClass('rurera-hide');
