@@ -2361,10 +2361,15 @@ function _rureraform_properties_prepare(_object) {
     if(jQuery('select[name="rureraform-have_images"]').length > 0){
         have_images_function();
     }
-    if(jQuery('select[name="rureraform-label_type"]').length > 0){
-        console.log('auto load-----');
-        console.log(jQuery('select[name="rureraform-label_type"]').val());
-        jQuery('select[name="rureraform-label_type"]').change();
+
+
+    if(jQuery('select[name="rureraform-label_type"]').val() > 0){
+        jQuery('select[name="rureraform-label_type"]').each(function () {
+            var thisBlock = $(this).closest('.rureraform-tab-content');
+            thisBlock.find(".label_type-depend").addClass('rurera-hide');
+            thisBlock.find("."+label_type+'_fields').addClass('rurera-hide');
+
+        });
     }
 
     if(jQuery('select[name="rureraform-no_of_options"]').val() > 0){
@@ -2945,15 +2950,15 @@ function rureraform_properties_open(_object) {
     setTimeout(function () {
         _rureraform_properties_prepare(_object);
         jQuery("#rureraform-element-properties .rureraform-admin-popup-loading").hide();
-        if($('select[name="rureraform-label_type"]').length > 0){
+        /*if($('select[name="rureraform-label_type"]').length > 0){
             $('select[name="rureraform-label_type"]').change();
-        }
+        }*/
     }, 500);
 
 
-    if($('select[name="rureraform-label_type"]').length > 0){
+    /*if($('select[name="rureraform-label_type"]').length > 0){
         $('select[name="rureraform-label_type"]').change();
-    }
+    }*/
     return false;
 }
 
