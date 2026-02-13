@@ -2362,6 +2362,7 @@ function _rureraform_properties_prepare(_object) {
         have_images_function();
     }
     if(jQuery('select[name="rureraform-label_type"]').length > 0){
+        console.log('auto load-----');
         jQuery('select[name="rureraform-label_type"]').change();
     }
 
