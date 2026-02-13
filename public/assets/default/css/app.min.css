@@ -15860,7 +15860,7 @@ footer.footer-home {
 /* General Section Styling */
 .ru-feature-showcase {
     background-color: #fdf2f8; /* Light pink/lavender background */
-    padding: 80px 0;
+    padding: 80px 80px;
     min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -16074,7 +16074,7 @@ footer.footer-home {
 /* Reversed Section Styling */
 .ru-feature-showcase-reversed {
     background-color: #e8e0d7; /* Specified beige/taupe background */
-    padding: 80px 80px;
+    padding: 80px 0;
     min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
