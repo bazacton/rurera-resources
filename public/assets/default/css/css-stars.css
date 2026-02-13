@@ -167,6 +167,9 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.total-sub-topics {
+    font-weight: normal;
+}
 .topic-accuracy {
     position: relative;
     top: -3px;
