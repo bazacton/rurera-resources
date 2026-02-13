@@ -16071,16 +16071,11 @@ footer.footer-home {
 
 /* Each slide custom width */
 #featureSwiper .swiper-slide {
-    width: 300px;
+    width: auto;
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 #featureSwiper .swiper-slide img {
   max-width: 100%;
-}
-/* Center active slide bigger */
-#featureSwiper .swiper-slide-active {
-    transform: scale(1.05);
-    z-index: 2;
 }
 
 /* Side slides smaller */
