@@ -832,6 +832,7 @@
             </div>
         </div>
     </section>
+    {!! parseShortcode('[SC_get-the-rurera-app]') !!}
     
     {!! parseShortcode('[SC_Rurera-Help-Section]') !!}
     <div class="modal fade rurera-choose-membership" id="subscriptionModal">
