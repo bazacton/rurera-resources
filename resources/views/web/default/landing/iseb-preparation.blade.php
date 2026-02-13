@@ -1,4 +1,7 @@
 @extends(getTemplate().'.layouts.app')
+@push('styles_top')
+<link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" media="print" onload="this.onload=null;this.media='all';"/>
+@endpush
 
 @section('content')
 <section class="content-section">
@@ -852,6 +855,7 @@
 @endsection
 
 @push('scripts_bottom')
+<script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 <script>
     $(document).ready(function() {
         const $items = $('.feature-item');
