@@ -116,6 +116,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {
     border-bottom: 1px solid #ddd;
     list-style: none;
     margin-bottom: 0;
+    position: relative;
 }
 .chapter-card:last-child {
     border-bottom: 0;
@@ -156,7 +157,6 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     top: 50%;
     margin-top: -20px;
     height: 40px;
-    display: none;
 }
 .lms-chapter-ul-outer .chapter_percent {
     font-size: 40px;
