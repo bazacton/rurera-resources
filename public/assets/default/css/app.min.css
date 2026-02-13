@@ -15882,7 +15882,7 @@ footer.footer-home {
 /* Left Sticky Section */
 .rurera-feature-wrapper {
     position: sticky;
-    top: 150px;
+    top: 50%;
     padding-right: 30px;
 }
 
@@ -15912,7 +15912,7 @@ footer.footer-home {
     letter-spacing: -0.02em;
 }
 .rurera-feature-wrapper h2 {
-    margin: 0 0 30px;
+    margin: 0 0 5px;
 }
 /* Right Content Section */
 .rurera-scroll-content {
