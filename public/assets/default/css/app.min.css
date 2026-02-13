@@ -16144,7 +16144,12 @@ footer.footer-home {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 3px;
 }
 .read-reviews-box .read-btn {
     height: auto;
