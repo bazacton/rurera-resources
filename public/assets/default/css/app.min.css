@@ -16128,8 +16128,6 @@ footer.footer-home {
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    filter: blur(2px);
-    opacity: .8;
 }
 .read-reviews-box:hover {
   opacity: 1;
