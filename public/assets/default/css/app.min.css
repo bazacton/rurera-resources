@@ -9787,7 +9787,6 @@ body .flipbook-data {
   transform: translateY(-50%);
 }
 .masonry-grid {
-  margin-left: auto;
   position: relative;
   z-index: 2;
 }
