@@ -269,7 +269,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 /* Seg-progress style start */
 .seg-progress { display: flex; gap: 12px; }
 .seg { width: 64px; height: 16px; border-radius: 12px; background: #e9ecef; overflow: hidden; }
-.seg-fill { height: 100%; width: 0%; border-radius: 12px; }
+.seg-fill { height: 100%; width: 0%; border-radius: 12px; background-color: var(--primary); }
 /* Seg-progress style end */
 .subchapter-notes-modal {
     background-color: #fff;
