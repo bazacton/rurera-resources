@@ -161,6 +161,12 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 .lms-chapter-ul-outer .chapter_percent {
     font-size: 40px;
 }
+.lms-chapter-ul h3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .topic-accuracy {
     position: relative;
     top: -3px;
