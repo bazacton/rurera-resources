@@ -15878,10 +15878,16 @@ footer.footer-home {
     position: relative;
     z-index: 2;
 }
+.ru-stickyhero-visual-outer {
+  padding-right: calc((100vw - 1480px) / 2);
+}
 @media screen and (min-width: 1181px) {
   .ru-feature-showcase {
     padding-left: calc((100vw - 88vw) / 2);
-}
+  }
+  .ru-stickyhero-visual-outer {
+    padding-right: calc((100vw - 88vw) / 2);
+  }
 }
 /* Left Sticky Section */
 .rurera-feature-wrapper {
@@ -16026,9 +16032,6 @@ footer.footer-home {
 }
 
 /* Overlapping Hero Layout */
-.ru-stickyhero-visual-outer {
-    padding-right: 100px;
-}
 .ru-stickyhero-visual-container {
     position: relative;
     width: 100%;
