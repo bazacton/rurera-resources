@@ -16037,7 +16037,7 @@ footer.footer-home {
 .ru-stickyhero-visual-container .rurera-mobile-mockup {
     position: absolute;
     width: 28%; /* Increased size for better prominence */
-    left: 5%;   /* Adjusted position to overlap better */
+    left: -5%;   /* Adjusted position to overlap better */
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
