@@ -919,16 +919,41 @@
 </script>
 <script>
     $(document).ready(function() {
-        // First slider logic
-        $('#featureCarousel').on('slid.bs.carousel', function () {
-            var currentIndex = $('#featureCarousel .carousel-item.active').index() + 1;
-            $('#currentSlide').text(currentIndex);
-        });
+        // Slider Images Data
+        const sliderImages = [
+            '\assets\default\demo-imgs\slider-img-01.webp',
+            '\assets\default\demo-imgs\slider-img-04.webp',
+            '\assets\default\demo-imgs\slider-img-01.webp',
+            '\assets\default\demo-imgs\slider-img-01.webp'
+        ];
 
-        // Second (reversed) slider logic
-        $('#featureCarouselReversed').on('slid.bs.carousel', function () {
-            var currentIndex = $('#featureCarouselReversed .carousel-item.active').index() + 1;
-            $('#currentSlideReversed').text(currentIndex);
+        // Initialize Swiper
+        const swiper = new Swiper('#featureSwiper', {
+            loop: true,
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 20,
+            virtual: {
+                slides: (function () {
+                    const slides = [];
+                    for (var i = 0; i < sliderImages.length; i++) {
+                        slides.push(<div class="rurera-swiper-slide-inner"><img src="${sliderImages[i]}" class="img-fluid rounded"></div>);
+                    }
+                    return slides;
+                })(),
+            },
+            navigation: {
+                nextEl: '#featureSwiperNext',
+                prevEl: '#featureSwiperPrev',
+            },
+            on: {
+                init: function() {
+                    document.getElementById('totalSlides').innerText = sliderImages.length;
+                },
+                slideChange: function () {
+                    document.getElementById('currentSlide').innerText = this.realIndex + 1;
+                },
+            },
         });
     });
 </script>
