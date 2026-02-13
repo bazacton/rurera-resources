@@ -203,12 +203,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="seg-progress" id="segBar" aria-label="Progress">
-                                                        <div class="seg"><div class="seg-fill" style="width: 100%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill" style="width: 100%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill" style="width: 100%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill" style="width: 30%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill" style="width: 0%;"></div></div>
+                                                    <div class="seg-progress">
+                                                        <div class="seg-fill" style="width: 60%;"></div>
                                                     </div>
                                                 </div>
                                             @endforeach
