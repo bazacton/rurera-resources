@@ -194,7 +194,14 @@
                                                         </ul>
                                                     </div>
 
-                                                    @php $total_completion = rand(0,100); @endphp
+                                                    @php $total_completion = rand(0,100);
+
+                                                    $completion_class = 'accuracy-not-started';
+                                                    $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
+                                                    $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
+                                                    $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
+                                                    $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
+                                                    @endphp
 
                                                     <div class="percent-holder rurera-hide">
                                                         <div class="chapter_percent circle-blue {{$completion_class}}" data-percent="{{$total_completion}}">
@@ -204,7 +211,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="seg-progress">
-                                                        <div class="seg-fill" title="Smart Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
+                                                        <div class="seg-fill {{$completion_class}}" title="Smart Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
                                                     </div>
                                                 </div>
                                             @endforeach
