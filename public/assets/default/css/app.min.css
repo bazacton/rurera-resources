@@ -15864,3 +15864,276 @@ footer.footer-home {
             margin-left: auto;
             margin-right: auto;
         }
+/* General Section Styling */
+.ru-feature-showcase {
+    background-color: #fdf2f8; /* Light pink/lavender background */
+    padding: 80px 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Left Sticky Section */
+.rurera-feature-wrapper {
+    position: sticky;
+    top: 80px; /* Adjust based on desired offset from top */
+    padding-right: 30px;
+}
+
+.rurera-content-box {
+    max-width: 400px;
+}
+
+.rurera-category-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #e9d5ff;
+    color: #4b2c6d;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    border: 1px solid rgba(75, 44, 109, 0.2);
+}
+
+/* Typography - NO CLASSES ON P TAGS */
+.rurera-content-box .rurera-sticky-left-txt {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.rurera-content-box p {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Right Content Section */
+.rurera-scroll-content {
+    padding-left: 20px;
+}
+
+/* Feature Grid Styling */
+.rurera-feature-item {
+    padding: 0;
+}
+
+.rurera-icon-box {
+    width: 60px;
+    height: 60px;
+    background: #e9d5ff; /* Match the tag background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #4b2c6d;
+}
+
+/* Typography for feature grid - NO CLASSES ON P TAGS */
+.rurera-feature-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+
+.rurera-feature-item p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Slider Section Styling */
+.rurera-feature-slider {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.rurera-slider-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.rurera-slider-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Slider Controls Styling */
+.rurera-slider-controls {
+    padding: 20px 0 0 0;
+}
+
+.rurera-pagination {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.rurera-pagination span {
+    margin: 0 5px;
+}
+
+.rurera-arrows .btn {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: transparent;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+}
+
+.rurera-arrows .btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: #111;
+    text-decoration: none;
+}
+
+.rurera-arrows .btn[data-slide="next"] {
+    background: rgba(0, 0, 0, 0.05); /* Slight background for one arrow as per screenshot */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .rurera-feature-wrapper {
+        position: static;
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+    
+    .rurera-content-box .rurera-sticky-left-txt {
+        font-size: 2.5rem;
+    }
+    
+    .rurera-scroll-content {
+        padding-left: 0;
+    }
+}
+
+/* Overlapping Hero Layout */
+.ru-stickyhero-visual-container {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ru-stickyhero-visual-container .rurera-bg-chart {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.ru-stickyhero-visual-container .rurera-mobile-mockup {
+    position: absolute;
+    width: 28%; /* Increased size for better prominence */
+    left: 5%;   /* Adjusted position to overlap better */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+}
+
+.ru-stickyhero-visual-container .rurera-desktop-mockup {
+    position: absolute;
+    width: 70%; /* Slightly adjusted size */
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.ru-stickyhero-visual-container .rurera-cart-review {
+    position: absolute;
+    width: 25%;
+    right: 0;
+    top: 20%;
+    z-index: 4;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
+}
+
+/* Responsive Overlap Adjustments */
+@media (max-width: 767.98px) {
+    .ru-stickyhero-visual-container {
+        min-height: 300px;
+    }
+    .ru-stickyhero-visual-container .rurera-mobile-mockup {
+        width: 45%; /* Larger size on mobile screens */
+        left: 0;
+    }
+    .ru-stickyhero-visual-container .rurera-desktop-mockup {
+        width: 85%;
+        right: 0;
+    }
+    .ru-stickyhero-visual-container .rurera-cart-review {
+        width: 35%;
+        top: 10%;
+    }
+}
+
+/* Visual containers for placeholders and slider */
+.rurera-visual-container, .carousel-inner {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Reversed Section Styling */
+.ru-feature-showcase-reversed {
+    background-color: #e8e0d7; /* Specified beige/taupe background */
+    padding: 80px 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.rurera-feature-wrapper-reversed {
+    position: sticky;
+    top: 80px;
+    padding-left: 30px; /* Padding on left because text is on right */
+}
+
+.rurera-scroll-content-reversed {
+    padding-right: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .rurera-feature-wrapper-reversed {
+        position: static;
+        margin-bottom: 50px;
+        padding-left: 0;
+    }
+    
+    .rurera-scroll-content-reversed {
+        padding-right: 0;
+    }
+}
+
+.carousel-item img {
+    transition: transform 0.6s ease-in-out;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+}
