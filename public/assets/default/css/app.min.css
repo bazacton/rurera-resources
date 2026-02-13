@@ -15873,12 +15873,16 @@ footer.footer-home {
 /* General Section Styling */
 .ru-feature-showcase {
     background-color: #fdf2f8;
-    padding: 60px 0 80px 80px;
+    padding: 60px 0 80px calc((100vw - 1480px) / 2);
     min-height: 100vh;
     position: relative;
     z-index: 2;
 }
-
+@media screen and (min-width: 1181px) {
+  .ru-feature-showcase {
+    padding-left: calc((100vw - 88vw) / 2);
+}
+}
 /* Left Sticky Section */
 .rurera-feature-wrapper {
     position: sticky;
