@@ -2363,7 +2363,7 @@ function _rureraform_properties_prepare(_object) {
     }
 
 
-    if(jQuery('select[name="rureraform-label_type"]').val() > 0){
+    if(jQuery('select[name="rureraform-label_type"]').length > 0){
         jQuery('select[name="rureraform-label_type"]').each(function () {
             console.log('-----------------------3333333333');
             var thisBlock = $(this).closest('.rureraform-tab-content');
