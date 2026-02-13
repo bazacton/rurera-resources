@@ -16042,8 +16042,10 @@ footer.footer-home {
 }
 
 .ru-stickyhero-visual-container .rurera-bg-chart {
+    height: 100%;
     width: 100%;
     opacity: 0.8;
+    position: absolute;
 }
 
 .ru-stickyhero-visual-container .rurera-mobile-mockup {
