@@ -916,4 +916,19 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function() {
+        // First slider logic
+        $('#featureCarousel').on('slid.bs.carousel', function () {
+            var currentIndex = $('#featureCarousel .carousel-item.active').index() + 1;
+            $('#currentSlide').text(currentIndex);
+        });
+
+        // Second (reversed) slider logic
+        $('#featureCarouselReversed').on('slid.bs.carousel', function () {
+            var currentIndex = $('#featureCarouselReversed .carousel-item.active').index() + 1;
+            $('#currentSlideReversed').text(currentIndex);
+        });
+    });
+</script>
 @endpush
