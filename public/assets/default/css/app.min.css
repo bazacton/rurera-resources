@@ -16016,6 +16016,9 @@ footer.footer-home {
 }
 
 /* Overlapping Hero Layout */
+.ru-stickyhero-visual-outer {
+    padding-right: 100px;
+}
 .ru-stickyhero-visual-container {
     position: relative;
     width: 100%;
