@@ -208,9 +208,6 @@
         height: auto;
         overflow: visible;
     }
-    .masonry-grid {
-        margin-left: 0;
-    }
     .navbar1 {
         padding-left: 0;
         padding-right: 0;
@@ -841,10 +838,6 @@
         transform: none;
         margin-bottom: 30px;
         margin-top: 30px;
-    }
-    .gallery-sub-header .masonry-grid {
-        margin-left: 0;
-        width: 100% !important;
     }
     .gallery-sub-header .img-holder {
         text-align: center;
@@ -3398,9 +3391,6 @@
     }
     .price-controls .control-btn {
         width: 100%;
-    }
-    .masonry-grid {
-        margin-left: 0;
     }
     .jobsform-qoute .author-info {
         flex-direction: column;
