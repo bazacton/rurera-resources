@@ -169,10 +169,11 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 }
 .total-sub-topics {
     font-weight: normal;
+    font-size: .9rem;
 }
 .total-sub-topics em {
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 .topic-accuracy {
