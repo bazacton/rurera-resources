@@ -196,11 +196,11 @@
 
                                                     @php $total_completion = rand(0,100);
 
-                                                    $completion_class = 'accuracy-not-started';
-                                                    $completion_class = ($total_completion > 0)? 'accuracy-practice-needed' : $completion_class;
-                                                    $completion_class = ($total_completion > 39)? 'accuracy-good' : $completion_class;
-                                                    $completion_class = ($total_completion > 59)? 'accuracy-very-good' : $completion_class;
-                                                    $completion_class = ($total_completion > 79)? 'accuracy-excellent' : $completion_class;
+                                                    $completion_class = 'smartscore-not-started';
+                                                    $completion_class = ($total_completion > 0)? 'smartscore-practice-needed' : $completion_class;
+                                                    $completion_class = ($total_completion > 39)? 'smartscore-good' : $completion_class;
+                                                    $completion_class = ($total_completion > 59)? 'smartscore-very-good' : $completion_class;
+                                                    $completion_class = ($total_completion > 79)? 'smartscore-excellent' : $completion_class;
                                                     @endphp
 
                                                     <div class="percent-holder rurera-hide">
