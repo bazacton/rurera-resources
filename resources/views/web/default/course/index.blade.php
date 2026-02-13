@@ -197,7 +197,7 @@
                                                     @php $total_completion = rand(0,100); @endphp
 
                                                     <div class="percent-holder">
-                                                        <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+                                                        <div class="chapter_percent circle-blue {{$completion_class}}" data-percent="{{$total_completion}}">
                                                             <div class="circle_inner">
                                                                 <div class="round_per"></div>
                                                             </div>
