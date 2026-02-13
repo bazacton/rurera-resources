@@ -15897,13 +15897,9 @@ footer.footer-home {
     margin-bottom: 24px;
     letter-spacing: -0.02em;
 }
-
-.rurera-content-box p {
-    font-size: 1.25rem;
-    color: #555;
-    line-height: 1.6;
+.rurera-feature-wrapper h2 {
+    margin: 0 0 30px;
 }
-
 /* Right Content Section */
 .rurera-scroll-content {
     padding-left: 20px;
