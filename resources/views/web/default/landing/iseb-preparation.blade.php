@@ -508,6 +508,7 @@
         $show_details = isset( $show_details )? $show_details : true;
     @endphp
    {!! parseShortcode('[SC_testimonials-section-f]') !!}
+   {!! parseShortcode('[SC_times-table-features-section-f]') !!}
     <section class="rurera-setup-progress-section rurera-membership-section mb-60" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
