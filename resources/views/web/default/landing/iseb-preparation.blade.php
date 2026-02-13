@@ -923,10 +923,9 @@
 </script>
 <script>
 $(document).ready(function() {
-
     const swiper1 = new Swiper('#featureSwiper', {
         loop: true,
-        slidesPerView: "auto",
+        slidesPerView: 3,
         spaceBetween: 20,
         centeredSlides: false,
         navigation: {
@@ -942,18 +941,11 @@ $(document).ready(function() {
             },
         },
         breakpoints: {
-            992: {
-                slidesPerView: 3
-            },
-            768: {
-                slidesPerView: 2
-            },
-            0: {
-                slidesPerView: 1
-            }
+            1200: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            0: { slidesPerView: 1 }
         }
     });
-
 });
 
 </script>
