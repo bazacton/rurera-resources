@@ -2451,11 +2451,11 @@ function _rureraform_properties_prepare(_object) {
             blockquoteBreakingLevel: 2,
             toolbar: [
                 ['style', ['style']],
-                ['font', ['bold', 'underline']],
+                ['font', ['bold', 'underline', 'color']],
                 ['para', ['paragraph', 'ul', 'ol']],
                 ['table', ['table']],
                 ['insert', ['link', 'equation', 'picture']],
-                ['history', ['undo']],
+                ['history', ['undo', 'redo']],
             ],
             buttons: {
                 equation: EquationButton // 👈 register button
