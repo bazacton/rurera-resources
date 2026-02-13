@@ -16066,7 +16066,7 @@ footer.footer-home {
 /* Remove container side cutting */
 #featureSwiper {
     overflow: visible;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 /* Each slide custom width */
