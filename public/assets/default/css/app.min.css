@@ -16035,11 +16035,9 @@ footer.footer-home {
 .ru-stickyhero-visual-container {
     position: relative;
     width: 100%;
-    min-height: 500px;
-    margin-bottom: 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ru-stickyhero-visual-container .rurera-bg-chart {
@@ -16048,26 +16046,21 @@ footer.footer-home {
 }
 
 .ru-stickyhero-visual-container .rurera-mobile-mockup {
-    position: absolute;
-    width: 28%; /* Increased size for better prominence */
-    left: -5%;   /* Adjusted position to overlap better */
-    top: 50%;
-    transform: translateY(-50%);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+    position: relative;
     z-index: 3;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+    flex: 0 0 24%;
+    max-width: 24%;
 }
 .rurera-feature-outer {
     padding: 8% 100px 0 0;
 }
 .ru-stickyhero-visual-container .rurera-desktop-mockup {
-    position: absolute;
-    width: 70%; /* Slightly adjusted size */
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 2;
-    border-radius: 15px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    flex: 0 0 76%;
+    max-width: 76%;
+    position: relative;
 }
 
 .ru-stickyhero-visual-container .rurera-cart-review {
