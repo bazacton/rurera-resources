@@ -15868,7 +15868,7 @@ footer.footer-home {
 /* Left Sticky Section */
 .rurera-feature-wrapper {
     position: sticky;
-    top: 80px; /* Adjust based on desired offset from top */
+    top: 150px; /* Adjust based on desired offset from top */
     padding-right: 30px;
 }
 
