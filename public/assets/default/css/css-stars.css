@@ -267,7 +267,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     color: #ffac33;
 }
 /* Seg-progress style start */
-.seg-progress {position: absolute;top: 50%;transform: translateY(-50%);right: 15px;width: 180px;height: 10px;background: #e5e7eb;border-radius: 20px;overflow: hidden;}
+.seg-progress {position: absolute;top: 50%;transform: translateY(-50%);right: 15px;width: 110px;height: 8px;background: #e5e7eb;border-radius: 20px;overflow: hidden;}
 /* Background segments */
 .seg-progress::before {
   content: "";
