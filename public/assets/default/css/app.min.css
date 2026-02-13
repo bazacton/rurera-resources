@@ -16043,7 +16043,9 @@ footer.footer-home {
     z-index: 3;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
 }
-
+.rurera-feature-outer {
+    padding: 100px 100px 0 0;
+}
 .ru-stickyhero-visual-container .rurera-desktop-mockup {
     position: absolute;
     width: 70%; /* Slightly adjusted size */
