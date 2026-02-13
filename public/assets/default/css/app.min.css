@@ -16158,6 +16158,10 @@ footer.footer-home {
     filter: blur(2px);
     opacity: .8;
 }
+.read-reviews-box:hover {
+  opacity: 1;
+  filter: blur(0);
+}
 .read-reviews-box .read-btn {
     height: auto;
     padding: 8px 15px;
