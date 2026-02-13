@@ -926,7 +926,7 @@ $(document).ready(function() {
 
     const swiper1 = new Swiper('#featureSwiper', {
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: "auto",
         spaceBetween: 20,
         centeredSlides: false,
         navigation: {
