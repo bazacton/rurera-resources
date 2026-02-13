@@ -165,6 +165,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    color: #000;
     justify-content: space-between;
 }
 .total-sub-topics {
