@@ -10501,7 +10501,7 @@ body .flipbook-data {
 }
 .rurera-masonry .testimonial-card {
   background-color: #FFFFFFA6;
-  border: 1px solid #ddd;
+  border: 0;
   border-radius: 24px;
   padding: 20px 20px 25px;
   position: relative;
