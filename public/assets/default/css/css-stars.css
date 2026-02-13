@@ -167,10 +167,12 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     flex-wrap: wrap;
     color: #000;
     justify-content: space-between;
+    text-transform: uppercase;
 }
 .total-sub-topics {
     font-weight: normal;
     font-size: .9rem;
+    text-transform: capitalize;
 }
 .total-sub-topics em {
     font-style: normal;
