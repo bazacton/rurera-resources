@@ -2361,6 +2361,9 @@ function _rureraform_properties_prepare(_object) {
     if(jQuery('select[name="rureraform-have_images"]').length > 0){
         have_images_function();
     }
+    if(jQuery('select[name="rureraform-label_type"]').length > 0){
+        jQuery('select[name="rureraform-label_type"]').change();
+    }
 
     if(jQuery('select[name="rureraform-no_of_options"]').val() > 0){
         jQuery('select[name="rureraform-no_of_options"]').each(function () {
