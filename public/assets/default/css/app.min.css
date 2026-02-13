@@ -15752,7 +15752,7 @@ footer.footer-home {
 .rev-avatar-group {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: auto;
 }
 
 /* Individual Avatar Circle */
