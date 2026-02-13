@@ -15920,6 +15920,7 @@ footer.footer-home {
 }
 .rurera-feature-wrapper h2 {
     margin: 0 0 5px;
+    font-size: clamp(24px, 5vw, 40px);
 }
 /* Right Content Section */
 .rurera-scroll-content {
