@@ -16065,13 +16065,14 @@ footer.footer-home {
 }
 
 .ru-stickyhero-visual-container .rurera-cart-review {
-       position: absolute;
+    position: absolute;
     width: 25%;
-    right: 0;
-    top: 15%;
+    right: -2rem;
+    top: -44px;
     z-index: 4;
     filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.12));
     border-radius: 20px;
+    overflow: hidden;
 }
 
 /* Remove container side cutting */
