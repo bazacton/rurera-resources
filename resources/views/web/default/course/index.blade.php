@@ -113,7 +113,7 @@
                         <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
                             @foreach($course->chapters as $chapter)
                                 <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}">
-                                    <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }} <span class="total-sub-topics">{{$chapter->ChapterYearTopicParts->count()}} Topics</span></h3>
+                                    <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">{{ $chapter->title }} <span class="total-sub-topics"><em>{{$chapter->ChapterYearTopicParts->count()}}</em> Topics</span></h3>
                                     @if($chapter->ChapterYearTopicParts->count() > 0)
                                         <div class="lms-chapter-ul-outer">
                                             @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
