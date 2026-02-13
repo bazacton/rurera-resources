@@ -2442,7 +2442,7 @@ function _rureraform_properties_prepare(_object) {
                 ['font', ['bold', 'underline']],
                 ['para', ['paragraph', 'ul', 'ol']],
                 ['table', ['table']],
-                ['insert', ['link', 'equation']],
+                ['insert', ['link', 'equation', 'image']],
                 ['history', ['undo']],
             ],
             buttons: {
