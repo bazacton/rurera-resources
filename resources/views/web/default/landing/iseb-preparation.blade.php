@@ -923,47 +923,38 @@
 </script>
 <script>
 $(document).ready(function() {
-    // First Swiper Initialization
+
     const swiper1 = new Swiper('#featureSwiper', {
         loop: true,
-        slidesPerView: 1.2,
-        centeredSlides: true,
+        slidesPerView: 3,
         spaceBetween: 20,
+        centeredSlides: false,
         navigation: {
             nextEl: '#featureSwiperNext',
             prevEl: '#featureSwiperPrev',
         },
         on: {
             init: function() {
-                const totalSlides = this.slides.filter(slide => !slide.classList.contains('swiper-slide-duplicate')).length;
-                $('#totalSlides').text(totalSlides);
+                $('#totalSlides').text(this.slides.length - this.loopedSlides * 2);
             },
             slideChange: function () {
                 $('#currentSlide').text(this.realIndex + 1);
             },
         },
+        breakpoints: {
+            992: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 2
+            },
+            0: {
+                slidesPerView: 1
+            }
+        }
     });
 
-    // Second Swiper Initialization
-    const swiper2 = new Swiper('#featureSwiperReversed', {
-        loop: true,
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        spaceBetween: 20,
-        navigation: {
-            nextEl: '#featureSwiperReversedNext',
-            prevEl: '#featureSwiperReversedPrev',
-        },
-        on: {
-            init: function() {
-                const totalSlides = this.slides.filter(slide => !slide.classList.contains('swiper-slide-duplicate')).length;
-                $('#totalSlidesReversed').text(totalSlides);
-            },
-            slideChange: function () {
-                $('#currentSlideReversed').text(this.realIndex + 1);
-            },
-        },
-    });
 });
+
 </script>
 @endpush
