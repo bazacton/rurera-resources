@@ -267,7 +267,15 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     color: #ffac33;
 }
 /* Seg-progress style start */
-.seg-progress { display: flex; gap: 12px; }
+.seg-progress {
+    display: flex;
+    gap: 8px;
+    max-width: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
 .seg { width: 64px; height: 16px; border-radius: 12px; background: #e9ecef; overflow: hidden; }
 .seg-fill { height: 100%; width: 0%; border-radius: 12px; background-color: var(--primary); }
 /* Seg-progress style end */
