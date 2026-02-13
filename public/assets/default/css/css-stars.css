@@ -276,7 +276,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     transform: translateY(-50%);
     right: 15px;
 }
-.seg { width: 64px; height: 16px; border-radius: 12px; background: #e9ecef; overflow: hidden; }
+.seg { width: 64px; height: 10px; border-radius: 12px; background: #e9ecef; overflow: hidden; }
 .seg-fill { height: 100%; width: 0%; border-radius: 12px; background-color: var(--primary); }
 /* Seg-progress style end */
 .subchapter-notes-modal {
