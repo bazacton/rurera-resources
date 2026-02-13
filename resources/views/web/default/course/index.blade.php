@@ -204,7 +204,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="seg-progress">
-                                                        <div class="seg-fill" title="Smar Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
+                                                        <div class="seg-fill" title="Smart Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
                                                     </div>
                                                 </div>
                                             @endforeach
