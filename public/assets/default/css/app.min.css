@@ -16119,7 +16119,7 @@ footer.footer-home {
     flex-direction: column;
     position: absolute;
     left: 50%;
-    bottom: -80px;
+    bottom: -50px;
     transform: translateX(-50%);
     z-index: 2;
     border-radius: 3px;
