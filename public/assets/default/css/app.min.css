@@ -16077,7 +16077,6 @@ footer.footer-home {
 }
 .feature-slider-outer {
     overflow: hidden;
-    height: 400px;
 }
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
