@@ -15889,11 +15889,9 @@ footer.footer-home {
     top: 50%;
     padding-right: 30px;
 }
-
 .rurera-content-box {
     max-width: 400px;
 }
-
 .rurera-category-tag {
     display: inline-block;
     padding: 6px 16px;
@@ -15905,7 +15903,6 @@ footer.footer-home {
     margin-bottom: 24px;
     border: 1px solid rgba(75, 44, 109, 0.2);
 }
-
 /* Typography - NO CLASSES ON P TAGS */
 .rurera-content-box .rurera-sticky-left-txt {
     font-size: 3.5rem;
@@ -15927,7 +15924,6 @@ footer.footer-home {
 .rurera-feature-item {
     padding: 0;
 }
-
 .rurera-icon-box {
     width: 40px;
     height: 40px;
@@ -15939,16 +15935,13 @@ footer.footer-home {
     margin-bottom: 10px;
     color: #4b2c6d;
 }
-
 /* Typography for feature grid - NO CLASSES ON P TAGS */
 .rurera-feature-item h3 {
     margin-bottom: 12px;
 }
-
 .rurera-feature-item p {
     color: #555;
 }
-
 /* Slider Section Styling */
 .rurera-feature-slider {
     background: #90919C14;
@@ -15966,17 +15959,14 @@ footer.footer-home {
 .rurera-slider-controls {
     padding: 20px 40px;
 }
-
 .rurera-pagination {
     font-size: 1.1rem;
     font-weight: 500;
     color: #111;
 }
-
 .rurera-pagination span {
     margin: 0 5px;
 }
-
 .rurera-arrows .btn {
     width: 45px;
     height: 45px;
@@ -15991,17 +15981,33 @@ footer.footer-home {
     justify-content: center;
     color: #111;
 }
-
 .rurera-arrows .btn:hover {
     background: rgba(0, 0, 0, 0.05);
     border-color: #111;
     text-decoration: none;
 }
-
 .rurera-arrows .btn[data-slide="next"] {
-    background: rgba(0, 0, 0, 0.05); /* Slight background for one arrow as per screenshot */
+    background: rgba(0, 0, 0, 0.05);
 }
-
+.bg-circle-box {
+    position: relative;
+}
+.circle-outer {
+    height: 880px;
+    width: 880px;
+    background-color: #FFFFFF24;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-circle {
+    background-color: #FFF3;
+    height: 630px;
+    width: 630px;
+    border-radius: 50%;
+}
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
     .rurera-feature-wrapper {
