@@ -926,8 +926,9 @@ $(document).ready(function() {
     const swiper1 = new Swiper('#featureSwiper', {
         loop: true,
         slidesPerView: "auto",
-        centeredSlides: false,
-        spaceBetween: 20,
+        centeredSlides: true,
+        spaceBetween: 30,
+        grabCursor: true,
         navigation: {
             nextEl: '#featureSwiperNext',
             prevEl: '#featureSwiperPrev',
@@ -939,13 +940,9 @@ $(document).ready(function() {
             slideChange: function () {
                 $('#currentSlide').text(this.realIndex + 1);
             },
-        },
-        breakpoints: {
-            1200: { slidesPerView: 3 },
-            768: { slidesPerView: 2 },
-            0: { slidesPerView: 1 }
         }
     });
+
 });
 
 </script>
