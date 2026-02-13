@@ -15927,14 +15927,14 @@ footer.footer-home {
 }
 
 .rurera-icon-box {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: #e9d5ff; /* Match the tag background */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #4b2c6d;
 }
 
