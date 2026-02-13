@@ -16098,7 +16098,7 @@ footer.footer-home {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 #featureSwiper .swiper-slide {
-    width: calc((100% - 40px) / 3); /* 3 slides with 20px gap */
+    width: calc((100% - 40px) / 3) !important; /* 3 slides with 20px gap */
 }
 /* Mobile Responsive */
 @media (max-width: 767.98px) {
