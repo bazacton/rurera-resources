@@ -267,23 +267,32 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     color: #ffac33;
 }
 /* Seg-progress style start */
-.seg-progress {
-    display: flex;
-    gap: 2px;
-    max-width: 250px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
+.seg-progress::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 18%,
+    #fff 18%,
+    #fff 20%
+  );
+  z-index: 2;
+  pointer-events: none;
 }
-.seg {
-    width: 20px;
-    height: 5px;
-    border-radius: 12px;
-    background: #e9ecef;
-    overflow: hidden;
+
+.seg-fill {
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  transition: width 0.4s ease;
 }
-.seg-fill { height: 100%; width: 0%; border-radius: 12px; background-color: var(--primary); }
 /* Seg-progress style end */
 .subchapter-notes-modal {
     background-color: #fff;
