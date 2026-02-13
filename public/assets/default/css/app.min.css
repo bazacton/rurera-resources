@@ -16146,7 +16146,7 @@ footer.footer-home {
     flex-direction: column;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -80px;
     transform: translateX(-50%);
     z-index: 2;
     border-radius: 3px;
