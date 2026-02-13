@@ -16150,6 +16150,8 @@ footer.footer-home {
     transform: translate(-50%, -50%);
     z-index: 2;
     border-radius: 3px;
+    justify-content: center;
+    align-items: center;
 }
 .read-reviews-box .read-btn {
     height: auto;
