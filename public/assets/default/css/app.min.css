@@ -15949,8 +15949,8 @@ footer.footer-home {
 .rurera-feature-slider {
     background: #90919C14;
     padding: 40px 0;
-    border-radius: 30px;
-    margin-top: 30px;
+    border-radius: 30px 0 0 30px;
+    margin-top: 8%;
 }
 .rurera-slider-header h2 {
     margin-bottom: 8px;
