@@ -204,10 +204,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="seg-progress" id="segBar" aria-label="Progress">
-                                                        <div class="seg"><div class="seg-fill bg-primary" style="width: 100%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill bg-primary" style="width: 100%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill bg-primary" style="width: 100%;"></div></div>
-                                                        <div class="seg"><div class="seg-fill bg-primary" style="width: 30%;"></div></div>
+                                                        <div class="seg"><div class="seg-fill" style="width: 100%;"></div></div>
+                                                        <div class="seg"><div class="seg-fill" style="width: 100%;"></div></div>
+                                                        <div class="seg"><div class="seg-fill" style="width: 100%;"></div></div>
+                                                        <div class="seg"><div class="seg-fill" style="width: 30%;"></div></div>
                                                         <div class="seg"><div class="seg-fill" style="width: 0%;"></div></div>
                                                     </div>
                                                 </div>
