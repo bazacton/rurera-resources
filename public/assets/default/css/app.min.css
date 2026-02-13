@@ -16173,3 +16173,10 @@ footer.footer-home {
     filter: invert(100%) sepia(3%) saturate(1151%) hue-rotate(195deg) brightness(122%) contrast(100%);
     margin-right: 10px;
 }
+.read-logo img {
+    width: 100px;
+    object-fit: contain;
+}
+.read-logo {
+    margin: 0 0 10px;
+}
