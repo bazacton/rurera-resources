@@ -16137,3 +16137,32 @@ footer.footer-home {
     height: auto;
     display: block;
 }
+
+.read-reviews-box {
+    background-color: #fff0;
+    background-image: linear-gradient(90deg,#F1E3FF -50%,#F4E6FFD9 150%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: ;
+}
+.read-reviews-box .read-btn {
+    height: auto;
+    padding: 8px 15px;
+    border: 0;
+    max-width: fit-content;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: .875rem;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+}
+.read-reviews-box .read-btn img {
+    height: 18px;
+    width: 18px;
+    filter: invert(100%) sepia(3%) saturate(1151%) hue-rotate(195deg) brightness(122%) contrast(100%);
+    margin-right: 10px;
+}
