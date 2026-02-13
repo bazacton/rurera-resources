@@ -16070,10 +16070,12 @@ footer.footer-home {
 
 /* Each slide custom width */
 #featureSwiper .swiper-slide {
-    width: auto;
+    width: 300px;
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
-
+#featureSwiper .swiper-slide img {
+  max-width: 100%;
+}
 /* Center active slide bigger */
 #featureSwiper .swiper-slide-active {
     transform: scale(1.05);
