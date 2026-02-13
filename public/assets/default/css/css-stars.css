@@ -269,7 +269,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 /* Seg-progress style start */
 .seg-progress {
     display: flex;
-    gap: 8px;
+    gap: 2px;
     max-width: 250px;
     position: absolute;
     top: 50%;
@@ -278,7 +278,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 }
 .seg {
     width: 20px;
-    height: 10px;
+    height: 5px;
     border-radius: 12px;
     background: #e9ecef;
     overflow: hidden;
