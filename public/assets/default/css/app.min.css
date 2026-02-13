@@ -16076,6 +16076,9 @@ footer.footer-home {
 #featureSwiper .swiper-slide img {
   max-width: 100%;
 }
+.feature-slider-outer {
+    padding: 0 0 0 50px;
+}
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
     .ru-stickyhero-visual-container {
