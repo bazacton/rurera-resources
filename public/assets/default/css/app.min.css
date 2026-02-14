@@ -16094,6 +16094,12 @@ footer.footer-home {
 /* Each slide custom width */
 #featureSwiper .swiper-slide {
     width: auto;
+    flex: 0 0 72%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 #featureSwiper .swiper-slide img {
