@@ -16090,7 +16090,9 @@ footer.footer-home {
 #featureSwiper {
     overflow: visible;
 }
-
+.feature-slider-outer {
+    overflow: hidden;
+}
 /* Each slide custom width */
 #featureSwiper .swiper-wrapper {
     display: flex;
@@ -16099,15 +16101,15 @@ footer.footer-home {
 
 /* KEY PART */
 #featureSwiper .swiper-slide {
-    flex: 0 0 auto;   /* 👈 DO NOT allow growing */
-    width: auto;      /* width comes from content */
+    flex: 0 0 auto;
+    width: auto;
 }
 
 /* image controls slide width */
 #featureSwiper .swiper-slide img {
     display: block;
-    width: auto;      /* use natural image width */
-    max-width: 100%;  /* responsive safety */
+    width: auto;
+    max-width: 100%;
 }
 @media (min-width: 860px){
 
