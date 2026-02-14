@@ -16095,7 +16095,7 @@ footer.footer-home {
 #featureSwiper .swiper-slide {
     width: auto;
     flex: 0 0 72%;
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -16108,6 +16108,9 @@ footer.footer-home {
 }
 .feature-slider-outer {
     overflow: hidden;
+}
+@media (min-width: 860px){
+  #featureSwiper .swiper-slide { flex-basis: 62%; }
 }
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
