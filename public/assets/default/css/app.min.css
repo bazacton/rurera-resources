@@ -16103,6 +16103,7 @@ footer.footer-home {
 #featureSwiper .swiper-slide {
     flex: 0 0 auto;
     width: auto;
+    max-width: 50%;
 }
 
 /* image controls slide width */
