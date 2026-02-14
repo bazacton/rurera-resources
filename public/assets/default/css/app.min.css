@@ -16105,12 +16105,17 @@ footer.footer-home {
     width: auto;
     max-width: 50%;
 }
-
 /* image controls slide width */
+.rurera-swiper-slide-inner {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  height: 330px;
+}
 #featureSwiper .swiper-slide img {
-    display: block;
-    width: auto;
-    max-width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
 }
 @media (min-width: 860px){
 
