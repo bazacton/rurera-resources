@@ -16105,6 +16105,7 @@ footer.footer-home {
 #featureSwiper .swiper-slide img {
   max-width: 100%;
   border-radius: 32px;
+  width: auto;
 }
 .feature-slider-outer {
     overflow: hidden;
