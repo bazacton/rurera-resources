@@ -16092,26 +16092,25 @@ footer.footer-home {
 }
 
 /* Each slide custom width */
-#featureSwiper .swiper-slide {
-    width: auto;
-    flex: 0 0 72%;
+#featureSwiper .swiper-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    align-items: stretch;
 }
+
+/* KEY PART */
+#featureSwiper .swiper-slide {
+    flex: 0 0 auto;   /* 👈 DO NOT allow growing */
+    width: auto;      /* width comes from content */
+}
+
+/* image controls slide width */
 #featureSwiper .swiper-slide img {
-  max-width: 100%;
-  border-radius: 32px;
-  width: auto;
-}
-.feature-slider-outer {
-    overflow: hidden;
+    display: block;
+    width: auto;      /* use natural image width */
+    max-width: 100%;  /* responsive safety */
 }
 @media (min-width: 860px){
-  #featureSwiper .swiper-slide { flex-basis: 62%; }
+
 }
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
