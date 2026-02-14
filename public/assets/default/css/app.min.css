@@ -16110,6 +16110,7 @@ footer.footer-home {
   border-radius: 1.25rem;
   overflow: hidden;
   height: 330px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 5px 0px;
 }
 #featureSwiper .swiper-slide img {
   display: block;
