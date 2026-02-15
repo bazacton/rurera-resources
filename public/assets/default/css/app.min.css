@@ -15808,6 +15808,10 @@ footer.footer-home {
 /* ================================
    RURERA CSS FOR ISEB PAGe SECTION
 ================================ */
+ .rurera-prep-section {
+    padding: 0;
+    margin-bottom: 60px;
+}
 .rurera-prep-section h2 {
     margin-bottom: 1rem;
 }
