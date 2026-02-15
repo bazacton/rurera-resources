@@ -2440,46 +2440,57 @@ function _rureraform_properties_prepare(_object) {
                 }
             }).render();
         };
-
+        var question_id = $(".question-builder-area.active").attr('data-question_id');
         var imageButton = function (context) {
+
             var ui = $.summernote.ui;
 
+            var imageAttr = {
+                upload_type: "question",
+                upload_dir: 'storage',
+                upload_path: '/media/'+question_id,
+                is_multiple: false,
+                preview_div: "preview_img-image",
+                field_name: "ofsted_report_file",
+                is_editor: "yes"
+            };
+
+            var galleryFields = {
+                gallery_type: "question",
+                question_id: question_id,
+            };
+
             return ui.button({
+
                 contents: `
-        <i
-            type="button"
-            class="note-icon-picture rurera-file-manager"
-            data-input="image"
-            data-preview="preview_img-image"
-            data-image_attr='{
-                "upload_type":"gallery",
-                "upload_dir":"public",
-                "upload_path":"/admin_images",
-                "is_multiple":false,
-                "preview_div":"preview_img-image",
-                "field_name":"ofsted_report_file",
-                "is_editor":"yes"
-            }'
-            data-gallery_fields='{"gallery_type":"gallery","folder_name":"admin_images"}'
-        ></i>
-    `,
+            <i
+                class="note-icon-picture rurera-file-manager"
+                data-input="image"
+                data-preview="preview_img-image"
+                data-image_attr='${JSON.stringify(imageAttr)}'
+                data-gallery_fields='${JSON.stringify(galleryFields)}'
+            ></i>
+        `,
+
                 tooltip: 'Insert Image',
+
                 click: function () {
 
                     // ✅ Save cursor position
                     context.invoke('editor.saveRange');
 
-                    // ✅ Attach context safely
-                    var $btn = $(this).find('.rurera-file-manager');
-                    $btn.data('summernoteContext', context);
+                    var $icon = $(this).find('.rurera-file-manager');
+
+                    // ✅ Attach context
+                    $icon.data('summernoteContext', context);
 
                     var editorId = $(context.layoutInfo.note).attr('id');
-                    console.log('-----editorId-------');
-                    console.log(editorId);
-                    $btn.data('editorId', editorId);
+                    $icon.data('editorId', editorId);
 
-                    $btn.trigger('click');
+                    // ✅ Trigger your file manager
+                    $icon.trigger('click');
                 }
+
             }).render();
         };
         $('.summernote-editor').summernote({
