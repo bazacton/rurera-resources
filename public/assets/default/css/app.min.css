@@ -16132,15 +16132,10 @@ footer.footer-home {
     padding-top: 50px;
   }
   .ru-stickyhero-visual-container {
-      padding: 0 0 30px;
+    padding: 0 0 30px;
   }
   .ru-stickyhero-visual-container .rurera-mobile-mockup {
-      width: 45%;
-      left: 0;
-  }
-  .ru-stickyhero-visual-container .rurera-desktop-mockup {
-      width: 85%;
-      right: 0;
+    margin-top: 0;
   }
   .bg-circle-box, .ru-stickyhero-visual-container .rurera-cart-review,
   .ru-stickyhero-visual-container .rurera-bg-chart {
