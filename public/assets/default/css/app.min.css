@@ -16250,18 +16250,19 @@ footer.footer-home {
 }
 .read-reviews-box .read-btn,
 .rurera-content-box .shop-demo {
-    height: auto;
-    padding: 8px 15px;
-    border: 0;
-    max-width: fit-content;
-    margin-top: 10px;
-    background-color: #000;
-    color: #fff;
-    font-weight: 400;
-    font-size: .875rem;
-    border-radius: 3px;
-    display: inline-flex;
-    align-items: center;
+  height: 44px;
+  padding: 0 16px;
+  border: 0;
+  max-width: fit-content;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: .95rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .read-reviews-box .read-btn img,
 .rurera-content-box .shop-demo img {
