@@ -16097,6 +16097,8 @@ footer.footer-home {
 #featureSwiper .swiper-wrapper {
     display: flex;
     align-items: stretch;
+    will-change: transform;
+    transition-timing-function: cubic-bezier(.645, .045, .355, 1);
 }
 
 /* KEY PART */
