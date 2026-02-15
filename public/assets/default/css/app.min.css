@@ -16134,8 +16134,10 @@ footer.footer-home {
   .ru-stickyhero-visual-container {
     padding: 0 0 30px;
   }
-  .ru-stickyhero-visual-container .rurera-mobile-mockup {
+  .ru-stickyhero-visual-container .rurera-mobile-mockup,
+  .ru-stickyhero-visual-container .rurera-desktop-mockup {
     margin-top: 0;
+    box-shadow: none;
   }
   .bg-circle-box, .ru-stickyhero-visual-container .rurera-cart-review,
   .ru-stickyhero-visual-container .rurera-bg-chart {
