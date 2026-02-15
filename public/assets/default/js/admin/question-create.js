@@ -2441,6 +2441,47 @@ function _rureraform_properties_prepare(_object) {
             }).render();
         };
 
+        var imageButton = function (context) {
+            var ui = $.summernote.ui;
+
+            return ui.button({
+                contents: `
+        <i
+            type="button"
+            class="note-icon-picture rurera-file-manager"
+            data-input="image"
+            data-preview="preview_img-image"
+            data-image_attr='{
+                "upload_type":"gallery",
+                "upload_dir":"public",
+                "upload_path":"/admin_images",
+                "is_multiple":false,
+                "preview_div":"preview_img-image",
+                "field_name":"ofsted_report_file",
+                "is_editor":"yes"
+            }'
+            data-gallery_fields='{"gallery_type":"gallery","folder_name":"admin_images"}'
+        ></i>
+    `,
+                tooltip: 'Insert Image',
+                click: function () {
+
+                    // ✅ Save cursor position
+                    context.invoke('editor.saveRange');
+
+                    // ✅ Attach context safely
+                    var $btn = $(this).find('.rurera-file-manager');
+                    $btn.data('summernoteContext', context);
+
+                    var editorId = $(context.layoutInfo.note).attr('id');
+                    console.log('-----editorId-------');
+                    console.log(editorId);
+                    $btn.data('editorId', editorId);
+
+                    $btn.trigger('click');
+                }
+            }).render();
+        };
         $('.summernote-editor').summernote({
             tabsize: 2,
             height: null,
@@ -2454,11 +2495,12 @@ function _rureraform_properties_prepare(_object) {
                 ['font', ['bold', 'underline', 'color']],
                 ['para', ['paragraph', 'ul', 'ol']],
                 ['table', ['table']],
-                ['insert', ['link', 'equation', 'picture']],
+                ['insert', ['link', 'equation', 'insert_image']],
                 ['history', ['undo', 'redo']],
             ],
             buttons: {
-                equation: EquationButton // 👈 register button
+                equation: EquationButton, // 👈 register button
+                insert_image: imageButton // 👈 register button
             },
             popover: {
                 table: [
@@ -7558,8 +7600,6 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
 
                     }else{
-
-
                         var label_data = "<div class='question-label " + label_type + "'><span>" + label_type_heading + "<svgdata class='"+class_id+"'>"+svgContent + "</svgdata></span></div>";
                         if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
                             var label_data = "<" + label_type + ">" + rureraform_form_elements[i]["content"] + "</" + label_type + ">";
@@ -11910,7 +11950,9 @@ $(document).ready(function() {
 
 
 
-$(document).on('click', '.rurera-file-manager', function () {
+$(document).on('click', '.rurera-file-manager11', function () {
+    var context = $(this).data('summernoteContext');
+    context.invoke('editor.pasteHTML', '<strong>Hello World</strong>');
     var image_attr_encoded = $(this).attr('data-image_attr');
     var image_attr = JSON.parse(decodeURIComponent(image_attr_encoded));
 
@@ -11920,7 +11962,7 @@ $(document).on('click', '.rurera-file-manager', function () {
     jQuery.ajax({
         type: "GET",
         url: '/admin/common/rurera_file_manager',
-        data: {'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
+        data: {'context': context, 'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
         success: function (return_data) {
             $(".rurera-file-manager-block").html(return_data);
             $('.rurera-file-manager-modal').modal('show');

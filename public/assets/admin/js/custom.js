@@ -2838,6 +2838,8 @@ $(document).on('submit', '.gallery-load-form', function () {
 
 
 $(document).on('click', '.rurera-file-manager', function () {
+    var context = $(this).data('summernoteContext');
+    var editorId = $(this).data('editorId');
     var image_attr_encoded = $(this).attr('data-image_attr');
     var image_attr = JSON.parse(decodeURIComponent(image_attr_encoded));
 
@@ -2847,7 +2849,7 @@ $(document).on('click', '.rurera-file-manager', function () {
     jQuery.ajax({
         type: "GET",
         url: '/admin/common/rurera_file_manager',
-        data: {'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
+        data: {'editor_id': editorId,'image_attr' : image_attr, 'gallery_fields' : gallery_fields},
         success: function (return_data) {
             $(".rurera-file-manager-block").html(return_data);
             $('.rurera-file-manager-modal').modal('show');
@@ -2861,7 +2863,6 @@ $(document).on('click', '.delete-gallery-image', function () {
     var thisObj = $(this);
     var gallery_image = $(this).attr('data-gallery_image');
     if (!confirm("Delete this gallery image?")) return;
-    thisObj.closest('.rfp-tile').remove();
     jQuery.ajax({
         type: "GET",
         url: '/admin/common/remove_gallery_image',
