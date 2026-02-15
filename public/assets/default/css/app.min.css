@@ -16122,6 +16122,12 @@ footer.footer-home {
 }
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
+  .rurera-features-element .row {
+    gap: 25px;
+  }
+  .rurera-testimonials .masonry-grid {
+    column-count: 2;
+  }
   .ru-feature-showcase {
     padding-top: 50px;
   }
@@ -16139,6 +16145,11 @@ footer.footer-home {
   }
   .bg-circle-box, .ru-stickyhero-visual-container .rurera-cart-review {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .rurera-testimonials .masonry-grid {
+    column-count: 1;
   }
 }
 
