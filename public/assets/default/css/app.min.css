@@ -15914,6 +15914,9 @@ footer.footer-home {
     margin-bottom: 24px;
     border: 1px solid rgba(75, 44, 109, 0.2);
 }
+.rurera-content-box p {
+  margin: 0 0 15px;
+}
 /* Typography - NO CLASSES ON P TAGS */
 .rurera-content-box .rurera-sticky-left-txt {
     font-size: 3.5rem;
@@ -16233,7 +16236,8 @@ footer.footer-home {
   opacity: 1;
   filter: blur(0);
 }
-.read-reviews-box .read-btn {
+.read-reviews-box .read-btn,
+.rurera-content-box .shop-demo {
     height: auto;
     padding: 8px 15px;
     border: 0;
@@ -16246,6 +16250,9 @@ footer.footer-home {
     border-radius: 3px;
     display: inline-flex;
     align-items: center;
+}
+.rurera-content-box .shop-demo {
+  margin-top: 0;
 }
 .read-reviews-box .read-btn img {
     height: 18px;
