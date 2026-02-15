@@ -16091,9 +16091,11 @@ footer.footer-home {
   display: block;
   position: absolute;
   border-radius: 28px;
+  pointer-events: none;
 }
 .ru-stickyhero-visual-container .rurera-desktop-mockup img {
   border-radius: 20px;
+  position: relative;
 }
 .ru-stickyhero-visual-container .rurera-cart-review {
   position: absolute;
