@@ -15892,9 +15892,13 @@ footer.footer-home {
 }
 /* Left Sticky Section */
 .rurera-feature-wrapper {
-    position: sticky;
-    top: 50%;
-    padding-right: 30px;
+  position: sticky;
+  top: 0;
+  padding-right: 30px;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .rurera-content-box {
     max-width: 400px;
