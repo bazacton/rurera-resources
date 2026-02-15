@@ -16173,6 +16173,9 @@ footer.footer-home {
   .ru-stickyhero-visual-container .rurera-bg-chart {
     display: none;
   }
+  #featureSwiper .swiper-slide {
+    max-width: fit-content;
+  }
 }
 @media (max-width: 480px) {
   .rurera-testimonials .masonry-grid {
