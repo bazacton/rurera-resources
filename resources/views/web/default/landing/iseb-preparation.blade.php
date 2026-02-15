@@ -927,7 +927,7 @@ $(document).ready(function() {
         loop: true,
         slidesPerView: "auto",
         centeredSlides: true,
-        spaceBetween: 30,
+        spaceBetween: 25,
         grabCursor: true,
         navigation: {
             nextEl: '#featureSwiperNext',
