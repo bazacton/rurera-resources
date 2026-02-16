@@ -10479,7 +10479,7 @@ body .flipbook-data {
   transform: rotate(45deg);
   margin-top: -4px;
 }
-.inner-testimonial {
+.rurera-testimonial-tabs {
   background-color: #f6f6f6;
   position: relative;
 }
@@ -10509,6 +10509,8 @@ body .flipbook-data {
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
+}
+.inner-testimonial .grid-item {
   max-width: 100%;
 }
 .rurera-masonry .testimonial-card {
