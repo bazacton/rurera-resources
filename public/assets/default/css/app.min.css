@@ -15879,7 +15879,6 @@ footer.footer-home {
     z-index: 2;
 }
 .ru-stickyhero-visual-outer {
-  padding-right: calc((100vw - 1480px) / 2);
   position: relative;
   min-height: 100vh;
   display: flex;
