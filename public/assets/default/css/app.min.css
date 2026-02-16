@@ -15899,6 +15899,7 @@ footer.footer-home {
   z-index: 3;
   flex: 0 0 24%;
   max-width: 24%;
+  margin-top: 8%;
 }
 .rurera-feature-outer {
   padding: 2% calc((100vw - 1480px) / 2) 8% 0;
