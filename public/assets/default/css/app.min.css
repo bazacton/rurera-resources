@@ -15943,6 +15943,7 @@ footer.footer-home {
 /* Right Content Section */
 .rurera-scroll-content {
   padding-left: 20px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16092,7 +16093,7 @@ footer.footer-home {
   margin-top: 5%;
 }
 .rurera-feature-outer {
-  padding: 8% 0 0 0;
+  padding: 8% 0 8% 0;
 }
 .ru-stickyhero-visual-container .rurera-desktop-mockup {
   z-index: 2;
