@@ -923,7 +923,7 @@
 </script>
 <script>
 $('#totalSlides').text(4);
-$('#currentSlide').text(4);
+$('#currentSlide').text(1);
 
 const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
