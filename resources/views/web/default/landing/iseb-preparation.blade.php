@@ -922,12 +922,17 @@
     });
 </script>
 <script>
-const swiper1 = new Swiper('#featureSwiper', {
+<script>
+  const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: false,
-    centeredSlidesBounds: true,
-    spaceBetween: 24,
+    spaceBetween: 30,
+
+    slidesOffsetBefore: 0,
+    slidesOffsetAfter: 140,
+
+    loopAdditionalSlides: 2,
 
     preloadImages: false,
     lazy: true,
@@ -935,29 +940,31 @@ const swiper1 = new Swiper('#featureSwiper', {
     observeParents: true,
 
     navigation: {
-        nextEl: '#featureSwiperNext',
-        prevEl: '#featureSwiperPrev',
+      nextEl: '#featureSwiperNext',
+      prevEl: '#featureSwiperPrev',
     },
 
     on: {
-        init: function () {
-            // Force first real slide
-            this.slideToLoop(0, 0, false);
-            updateCounter(this);
-        },
-        slideChange: function () {
-            updateCounter(this);
-        }
+      init: function () {
+        // Force first real slide
+        this.slideToLoop(0, 0, false);
+        updateCounter(this);
+      },
+      slideChange: function () {
+        updateCounter(this);
+      },
+      resize: function () {
+        this.update();
+      }
     }
-});
+  });
 
-function updateCounter(swiper) {
-    const totalSlides = swiper.slides.length - (swiper.loopedSlides * 2);
+  function updateCounter(swiper) {
+    const totalSlides = swiper.slidesEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
     const currentSlide = swiper.realIndex + 1;
 
     $('#totalSlides').text(totalSlides);
     $('#currentSlide').text(currentSlide);
-}
-
+  }
 </script>
 @endpush
