@@ -938,6 +938,14 @@ const swiper1 = new Swiper('#featureSwiper', {
         nextEl: '#featureSwiperNext',
         prevEl: '#featureSwiperPrev',
     },
+    on: {
+        init: function() {
+            $('#totalSlides').text(this.slides.length - this.loopedSlides * 2);
+        },
+        slideChange: function () {
+            $('#currentSlide').text(this.realIndex + 1);
+        },
+    }
 });
 
 window.addEventListener('load', function () {
