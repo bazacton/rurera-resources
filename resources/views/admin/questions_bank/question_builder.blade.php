@@ -58,6 +58,18 @@ $rand_id = rand(999,99999);
 
 										</div>
 										@endif
+                                        @if(isset($questionObj->id) && $questionObj->question_difficulty_level == 'Learn')
+                                        <div class="col-lg-12 col-md-12 col-12">
+
+                                            <div class="form-group">
+                                                <label class="input-label">Slide Type</label>
+                                                <select name="question_slide_type" class=" custom-select">
+                                                    <option value="Question" {{(isset($questionObj->id) && $questionObj->question_slide_type == 'Question')? 'selected' : ''}}>Question</option>
+                                                    <option value="Slide" {{(isset($questionObj->id) && $questionObj->question_slide_type == 'Slide')? 'selected' : ''}}>Slide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        @endif
 										<div class="col-lg-12 col-md-12 col-12">
 											<div class="form-group">
 												<label class="input-label">Question Title</label>
@@ -1402,5 +1414,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   timeline.after(toggleBtn);
+
+
 });
+$(document).on("change", 'select[name="question_slide_type"]', function () {
+    var question_slide_type = $(this).val();
+    if(question_slide_type == 'Slide'){
+        $(".no-silde-question").addClass('rurera-hide');
+    }else{
+        $(".no-silde-question").removeClass('rurera-hide');
+    }
+});
+$('select[name="question_slide_type"]').change();
+
+
 </script>
