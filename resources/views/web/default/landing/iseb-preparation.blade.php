@@ -922,9 +922,6 @@
     });
 </script>
 <script>
-$('#totalSlides').text(4);
-$('#currentSlide').text(4);
-
 const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
     slidesPerView: "auto",
@@ -954,7 +951,7 @@ const swiper1 = new Swiper('#featureSwiper', {
 });
 
 function updateCounter(swiper) {
-    const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
+    const totalSlides = swiper.el.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
     const currentSlide = swiper.realIndex + 1;
 
     $('#totalSlides').text(totalSlides);
