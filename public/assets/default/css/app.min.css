@@ -16077,7 +16077,7 @@ footer.footer-home {
   flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 8%;
-  padding-right: calc((100vw - 88vw) / 2);
+  padding-right: 0 0 0 calc((100vw - 1480px) / 2);
 }
 
 .ru-stickyhero-visual-container .rurera-bg-chart {
