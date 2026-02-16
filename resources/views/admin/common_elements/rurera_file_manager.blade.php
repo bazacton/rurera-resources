@@ -186,8 +186,128 @@
     .rurera-filepicker .rfp-tile.rfp-selected .rfp-tile-check { opacity: 1; }
 
 
+
+
+
 </style>
 
+<style>
+    .rurera-directory-selector {
+        position: relative;
+        max-width: 380px;
+        font-size: 14px;
+        color: #2e5aac;
+    }
+
+    .rurera-directory-selector .rds-toggle {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #2e5aac;
+        padding: 6px 10px;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .rurera-directory-selector .rds-toggle::after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #2e5aac;
+    }
+
+    .rurera-directory-selector.open .rds-toggle::after {
+        border-top: none;
+        border-bottom: 6px solid #2e5aac;
+    }
+
+    .rurera-directory-selector .rds-panel {
+        display: none;
+        border: 1px solid #2e5aac;
+        padding: 10px;
+        margin-top: 6px;
+        background: #fff;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .rurera-directory-selector.open .rds-panel {
+        display: block;
+    }
+
+    .rurera-directory-selector .rds-toolbar {
+        margin-bottom: 8px;
+    }
+
+    .rurera-directory-selector .rds-new-folder-btn {
+        background: #2e5aac;
+        color: #fff;
+        border: none;
+        padding: 4px 8px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .rurera-directory-selector ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 0;
+    }
+
+    .rurera-directory-selector .rds-node {
+        margin: 3px 0;
+    }
+
+    .rurera-directory-selector .rds-row {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 2px 4px;
+    }
+
+    .rurera-directory-selector .rds-row:hover {
+        background: #eef3ff;
+    }
+
+    .rurera-directory-selector .rds-node.selected > .rds-row {
+        background: #dbe6ff;
+    }
+
+    .rurera-directory-selector .rds-folder {
+        width: 16px;
+        height: 12px;
+        background: #2e5aac;
+        margin-right: 6px;
+        display: inline-block;
+        clip-path: polygon(0 30%, 30% 30%, 40% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .rurera-directory-selector .rds-arrow {
+        width: 14px;
+        margin-right: 4px;
+    }
+
+    .rurera-directory-selector .rds-node > .rds-row .rds-arrow::before {
+        content: "▸";
+    }
+
+    .rurera-directory-selector .rds-node.open > .rds-row .rds-arrow::before {
+        content: "▾";
+    }
+
+    .rurera-directory-selector .rds-node > ul {
+        display: none;
+    }
+
+    .rurera-directory-selector .rds-node.open > ul {
+        display: block;
+    }
+
+</style>
 <!-- Tabs -->
 <ul class="nav nav-tabs" id="rfpTabs" role="tablist">
     <li class="nav-item">
@@ -213,6 +333,29 @@
                 <li>Maximum <strong>4 MB</strong> per file</li>
                 <li>Allowed types: <strong>JPG</strong>, , <strong>PNG</strong>, <strong>PDF</strong>, <strong>SVG</strong>, <strong>DOCX</strong>, <strong>WEBP</strong></li>
             </ul>
+        </div>
+
+
+        <div class="rurera-directory-selector" data-base="uploads">
+
+            <input type="hidden" name="upload_directory" class="rds-selected-input upload_directory" value="{{$upload_path}}">
+
+            <label>Upload Directory: </label>
+            <button type="button" class="rds-toggle">
+                <span class="rds-selected-label">{{$upload_path}}</span>
+            </button>
+
+            <div class="rds-panel">
+
+                <div class="rds-toolbar">
+                    <button type="button" class="rds-new-folder-btn">+ New Folder</button>
+                </div>
+
+                <ul class="rds-tree">
+                    {!! renderFolderTree($folderTree) !!}
+                </ul>
+
+            </div>
         </div>
 
         <div class="rfp-dropzone" id="rfpDropzone">
@@ -287,7 +430,106 @@
 
 </div>
 
+<script>
+    document.querySelectorAll('.rurera-directory-selector').forEach(wrapper => {
 
+        const toggle = wrapper.querySelector('.rds-toggle');
+        const panel = wrapper.querySelector('.rds-panel');
+        const hiddenInput = wrapper.querySelector('.rds-selected-input');
+        const selectedLabel = wrapper.querySelector('.rds-selected-label');
+        const newFolderBtn = wrapper.querySelector('.rds-new-folder-btn');
+
+        toggle.addEventListener('click', () => {
+            wrapper.classList.toggle('open');
+        });
+
+        document.addEventListener('click', e => {
+            if (!wrapper.contains(e.target)) {
+                wrapper.classList.remove('open');
+            }
+        });
+
+        wrapper.querySelectorAll('.rds-node > .rds-row').forEach(row => {
+
+            row.addEventListener('click', e => {
+
+                const node = row.parentElement;
+
+                // Expand / collapse
+                if (node.querySelector('ul')) {
+                    node.classList.toggle('open');
+                }
+
+                // Select folder
+                wrapper.querySelectorAll('.rds-node').forEach(n => n.classList.remove('selected'));
+                node.classList.add('selected');
+
+                const path = node.dataset.path;
+                hiddenInput.value = path;
+                selectedLabel.textContent = path;
+
+            });
+
+        });
+
+        // Create new folder
+        newFolderBtn.addEventListener('click', () => {
+
+            const selected = wrapper.querySelector('.rds-node.selected');
+            if (!selected) {
+                alert('Select a parent folder first');
+                return;
+            }
+
+            let name = prompt('Folder name (letters, numbers, - only):');
+            if (!name) return;
+
+            // Replace spaces with dash
+            name = name.trim().replace(/\s+/g, '-');
+
+            // Remove special characters (allow only letters, numbers, dash, underscore)
+            name = name.replace(/[^a-zA-Z0-9-_]/g, '');
+
+            if (!name) {
+                alert('Invalid folder name. Use only letters, numbers, dash (-) or underscore (_).');
+                return;
+            }
+
+            const parentPath = selected.dataset.path;
+            const newPath = parentPath + '/' + name;
+
+            const li = document.createElement('li');
+            li.className = 'rds-node';
+            li.dataset.path = newPath;
+
+            li.innerHTML = `
+        <div class="rds-row">
+            <span class="rds-folder"></span>
+            <span class="rds-name">${name}</span>
+        </div>
+    `;
+
+            let ul = selected.querySelector('ul');
+            if (!ul) {
+                ul = document.createElement('ul');
+                selected.appendChild(ul);
+            }
+
+            ul.appendChild(li);
+            selected.classList.add('open');
+
+            // Add click event for the new folder
+            li.querySelector('.rds-row').addEventListener('click', function(){
+                wrapper.querySelectorAll('.rds-node').forEach(n => n.classList.remove('selected'));
+                li.classList.add('selected');
+                hiddenInput.value = newPath;
+                selectedLabel.textContent = newPath;
+            });
+
+        });
+
+    });
+</script>
 <script>
 
 
@@ -753,12 +995,16 @@
             var preview_div = getAttr('data-preview_div');
             var field_name  = getAttr('data-field_name');
             var is_multiple = getAttr('data-is_multiple');
+            var context = getAttr('data-context');
+            var editor_id = getAttr('data-editor_id');
+            var is_editor = getAttr('data-is_editor');
 
             var hidden_field = $(".hidden-field-data").find('input').first().clone();
 
 
 
             var images_response = '';
+            var images_html = '';
             selected.forEach((item, idx) => {
                 const thumb = item.url;
                 var image_response_html = '';
@@ -781,14 +1027,32 @@
                     images_response += `<li>${hidden_field.prop('outerHTML')}${image_response_html}</li>`;
                 }else{
 
+                    if(is_editor == 'yes') {
+                        images_html = '<img style="width:100%" src="' + thumb + '">';
+                    }
+
+
+
                     //images_response += `<img src="${thumb}" style="width:80px;">`;
                     $("." + preview_div).find('img').attr('src', thumb);
                     $("." + preview_div).find('.'+field_name).attr('value', thumb);
                     $("." + preview_div).find('.'+field_name).val(thumb);
                     images_response += item.name;
+
+
+
+
+
                 }
 
             });
+
+            if(is_editor == 'yes') {
+                var $editor = $('#' + editor_id);
+                $editor.summernote('restoreRange');   // 🔥 restore cursor
+                $editor.summernote('focus');          // optional but recommended
+                $editor.summernote('pasteHTML', images_html);
+            }
 
             if(hidden_field.length > 0) {
                 $("." + preview_div).html(images_response);
@@ -914,6 +1178,7 @@
             var preview_div = getAttr('data-preview_div');
             var field_name  = getAttr('data-field_name');
             var is_multiple = getAttr('data-is_multiple');
+            var upload_directory = $(".upload_directory").val();
 
             fd.append('upload_type', upload_type);
             fd.append('question_id', question_id);
@@ -923,6 +1188,7 @@
             fd.append('preview_div', preview_div);
             fd.append('field_name', field_name);
             fd.append('is_multiple', is_multiple);
+            fd.append('upload_directory', upload_directory);
 
             $('input[name="upload_files_names[]"]').each(function (index) {
                 fd.append('upload_files_names[]', $(this).val());
