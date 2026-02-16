@@ -15984,7 +15984,6 @@ footer.footer-home {
     background: #90919C14;
     padding: 40px 0;
     border-radius: 30px 0 0 30px;
-    margin-top: 8%;
 }
 .rurera-slider-header h2 {
     margin-bottom: 8px;
@@ -16093,7 +16092,7 @@ footer.footer-home {
   margin-top: 5%;
 }
 .rurera-feature-outer {
-  padding: 8% calc((100vw - 88vw) / 2) 0 0;
+  padding: 8% 0 0 0;
 }
 .ru-stickyhero-visual-container .rurera-desktop-mockup {
   z-index: 2;
