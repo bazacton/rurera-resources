@@ -15961,8 +15961,7 @@ footer.footer-home {
 .rurera-feature-wrapper {
   position: sticky;
   top: 0;
-  padding-right: 30px;
-  padding-top: 150px;
+  padding: 150px 30px 150px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16171,6 +16170,10 @@ footer.footer-home {
 }
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
+  .rurera-feature-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .rurera-features-element .row {
     gap: 25px;
   }
