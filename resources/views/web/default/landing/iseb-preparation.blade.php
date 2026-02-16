@@ -928,7 +928,6 @@ const swiper1 = new Swiper('#featureSwiper', {
     centeredSlides: true,
     centeredSlidesBounds: true,
     spaceBetween: 30,
-    initialSlide: 3,
 
     preloadImages: false,
     lazy: true,
@@ -949,19 +948,13 @@ const swiper1 = new Swiper('#featureSwiper', {
         }
     }
 });
-
 function updateCounter(swiper) {
-    const totalSlides = swiper.el.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
+    const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
     const currentSlide = swiper.realIndex + 1;
 
     $('#totalSlides').text(totalSlides);
     $('#currentSlide').text(currentSlide);
 }
-
-window.addEventListener('load', function () {
-    swiper1.update();
-    swiper1.slideToLoop(3, 0);
-});
 
 </script>
 @endpush
