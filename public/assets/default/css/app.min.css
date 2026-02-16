@@ -16033,7 +16033,7 @@ footer.footer-home {
 .rurera-icon-box {
     width: 40px;
     height: 40px;
-    background: #e9d5ff; /* Match the tag background */
+    background: rgba(0,0,0,0.08);
     border-radius: 50%;
     display: flex;
     align-items: center;
