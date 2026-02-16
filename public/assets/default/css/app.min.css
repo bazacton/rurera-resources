@@ -16140,6 +16140,7 @@ footer.footer-home {
 #featureSwiper .swiper-wrapper {
   display: flex;
   align-items: stretch;
+  justify-content: center;
   will-change: transform;
   transition-timing-function: cubic-bezier(.645, .045, .355, 1);
 }

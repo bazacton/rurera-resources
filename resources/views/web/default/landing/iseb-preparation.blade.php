@@ -922,27 +922,20 @@
     });
 </script>
 <script>
-$(document).ready(function() {
-    const swiper1 = new Swiper('#featureSwiper', {
-        loop: true,
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 25,
-        grabCursor: true,
-        navigation: {
-            nextEl: '#featureSwiperNext',
-            prevEl: '#featureSwiperPrev',
-        },
-        on: {
-            init: function() {
-                $('#totalSlides').text(this.slides.length - this.loopedSlides * 2);
-            },
-            slideChange: function () {
-                $('#currentSlide').text(this.realIndex + 1);
-            },
-        }
-    });
+const swiper1 = new Swiper('#featureSwiper', {
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '#featureSwiperNext',
+        prevEl: '#featureSwiperPrev',
+    }
+});
 
+$(window).on('load', function () {
+    swiper1.update();
 });
 
 </script>
