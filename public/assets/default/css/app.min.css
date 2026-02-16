@@ -16329,21 +16329,14 @@ footer.footer-home {
 }
 
 .rurera-activation-cta h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    color: var(--text-dark);
     margin-bottom: 20px;
-    letter-spacing: -1px;
 }
 
 .rurera-activation-cta p {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 40px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Buttons */
