@@ -65,7 +65,7 @@
   
 
 {!! parseShortcode('[SC_accordion-slider-section-f]') !!}
-
+{!! parseShortcode('[SC_testimonials-section-f]') !!}
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
    
     {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
