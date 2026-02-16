@@ -945,7 +945,7 @@ const swiper1 = new Swiper('#featureSwiper', {
             updateCounter(this);
         },
 
-        slideChange: function () {
+        slideChangeTransitionEnd: function () {
             updateCounter(this);
         }
     }
