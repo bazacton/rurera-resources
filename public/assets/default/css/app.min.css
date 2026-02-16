@@ -15877,9 +15877,11 @@ footer.footer-home {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 220px;
-  padding-bottom: 8%;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-right: calc((100vw - 1480px) / 2);
+  min-height: 100vh;
+  align-items: center;
 }
 
 .ru-stickyhero-visual-container .rurera-bg-chart {
@@ -15943,10 +15945,6 @@ footer.footer-home {
 }
 .ru-stickyhero-visual-outer {
   position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 @media screen and (min-width: 1181px) {
   .ru-feature-showcase {
@@ -16011,10 +16009,6 @@ footer.footer-home {
 .rurera-scroll-content {
   padding-left: 20px;
   padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
 }
 
 /* Feature Grid Styling */
