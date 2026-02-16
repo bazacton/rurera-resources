@@ -510,6 +510,7 @@
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
     @endphp
+    {!! parseShortcode('[SC_feature-grid-with-vactor-f]') !!}
     {!! parseShortcode('[SC_app-section-f]') !!}
     {!! parseShortcode('[SC_rurera-activation-cta]') !!}
    {!! parseShortcode('[SC_testimonials-section-f]') !!}
