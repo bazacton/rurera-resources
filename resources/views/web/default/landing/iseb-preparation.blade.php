@@ -929,6 +929,8 @@ const swiper1 = new Swiper('#featureSwiper', {
     centeredSlidesBounds: true,
     spaceBetween: 30,
 
+    initialSlide: 3,
+
     preloadImages: false,
     lazy: true,
     observer: true,
@@ -959,7 +961,7 @@ function updateCounter(swiper) {
 
 window.addEventListener('load', function () {
     swiper1.update();
-    updateCounter(swiper1);
+    swiper1.slideToLoop(3, 0);
 });
 
 </script>
