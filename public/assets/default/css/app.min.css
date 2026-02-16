@@ -15965,6 +15965,7 @@ footer.footer-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
 }
 .rurera-content-box {
     max-width: 400px;
