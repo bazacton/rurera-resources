@@ -15852,8 +15852,6 @@ footer.footer-home {
 .rurera-card-primary p { color: rgba(255,255,255,0.8); }
 
 .rurera-img-frame {
-    background: white;
-    padding: 1.5rem;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin-top: auto;
