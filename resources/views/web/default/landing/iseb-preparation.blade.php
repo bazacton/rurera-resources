@@ -961,5 +961,10 @@ function updateCounter(swiper) {
     $('#currentSlide').text(currentSlide);
 }
 
+window.addEventListener('load', function () {
+    swiper1.update();
+    swiper1.slideToLoop(3, 0);
+});
+
 </script>
 @endpush
