@@ -949,11 +949,8 @@ const swiper1 = new Swiper('#featureSwiper', {
     }
 });
 function updateCounter(swiper) {
-    const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
-    const currentSlide = swiper.realIndex + 1;
-
-    $('#totalSlides').text(totalSlides);
-    $('#currentSlide').text(currentSlide);
+    $('#totalSlides').text(swiper.slides.length - swiper.loopedSlides * 2);
+    $('#currentSlide').text(swiper.realIndex + 1);
 }
 
 </script>
