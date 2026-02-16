@@ -929,6 +929,11 @@ const swiper1 = new Swiper('#featureSwiper', {
     centeredSlidesBounds: true,
     spaceBetween: 30,
 
+    preloadImages: false,
+    lazy: true,
+    observer: true,
+    observeParents: true,
+
     navigation: {
         nextEl: '#featureSwiperNext',
         prevEl: '#featureSwiperPrev',
@@ -945,13 +950,16 @@ const swiper1 = new Swiper('#featureSwiper', {
 });
 
 function updateCounter(swiper) {
-    const current = swiper.realIndex + 1;
-    const total = swiper.slides.length - swiper.loopedSlides * 2;
-    document.querySelector('#counter').innerHTML = `${current} — ${total}`;
+    const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
+    const currentSlide = swiper.realIndex + 1;
+
+    $('#totalSlides').text(totalSlides);
+    $('#currentSlide').text(currentSlide);
 }
 
 window.addEventListener('load', function () {
     swiper1.update();
+    updateCounter(swiper1);
 });
 
 </script>
