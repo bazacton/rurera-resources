@@ -15873,7 +15873,7 @@ footer.footer-home {
 /* General Section Styling */
 .ru-feature-showcase {
     background-color: #F9E3FC;
-    padding: 0 0 80px calc((100vw - 1480px) / 2);
+    padding: 0 0 0 calc((100vw - 1480px) / 2);
     min-height: 100vh;
     position: relative;
     z-index: 2;
