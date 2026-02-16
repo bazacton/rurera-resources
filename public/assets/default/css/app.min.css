@@ -16129,25 +16129,20 @@ footer.footer-home {
         padding-left: 0;
     }
 }
-/* Remove container side cutting */
 #featureSwiper {
   overflow: visible;
 }
 .feature-slider-outer {
     overflow: hidden;
 }
-/* Each slide custom width */
 #featureSwiper .swiper-wrapper {
   display: flex;
   align-items: center;
 }
-
-/* KEY PART */
 #featureSwiper .swiper-slide {
   flex: 0 0 auto;
   width: auto;
 }
-/* image controls slide width */
 .rurera-swiper-slide-inner {
   border-radius: 1.25rem;
   overflow: hidden;
