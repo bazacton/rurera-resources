@@ -5,6 +5,7 @@
 @endpush
 
 @section('content')
+{!! parseShortcode('[SC_times-table-features-section-f]') !!}
 <section class="content-section">
     <section class="time-tables-sub-header pt-70 pb-80 text-center" style="background-color: #333399;">
         <div class="container">
@@ -54,7 +55,7 @@
             </div>
         </div>
     </section>
-    {!! parseShortcode('[SC_times-table-features-section-f]') !!}
+
     <section class="rurera-search-services find-instructor-section mt-60 pt-80 pb-70">
         <div class="container">
             <div class="row">
