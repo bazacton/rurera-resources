@@ -15963,7 +15963,7 @@ footer.footer-home {
   position: sticky;
   top: 0;
   padding-right: 30px;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
