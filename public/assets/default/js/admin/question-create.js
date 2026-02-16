@@ -346,6 +346,7 @@ function rureraform_builder_save(_object, question_status) {
     }
 
     var question_title = $("[name=question_title]").val();
+    var question_slide_type = $("[name=question_slide_type]").val();
     var question_id = $("[name=question_id]").val();
 
 
@@ -397,6 +398,7 @@ function rureraform_builder_save(_object, question_status) {
         "form-pages": post_pages,
         "form-elements": post_elements,
         "question_layout": question_layout,
+        "question_slide_type": question_slide_type,
     };
 
     console.log(post_data);
@@ -1358,7 +1360,7 @@ function _rureraform_properties_prepare(_object) {
                         upload_type: 'question',
                         question_id: question_id,
                         upload_dir: 'storage',
-                        upload_path: 'media/'+question_id,
+                        upload_path: '/media/'+question_id,
                         is_multiple: false,
                         preview_div: 'preview-images-block-'+random_id,
                         hidden_field: '',
@@ -7618,6 +7620,14 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+label_data+"</div>";
                     }
                     break;
+
+
+                case "continue_slide_btn":
+
+                    var button_title = rureraform_form_elements[i]["content"];
+                    content_data = button_title;
+                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'>"+content_data+"</div>";
+                break;
 
 
                 case "whole_modal_builder":
