@@ -79,372 +79,185 @@
                                 
                             @include(getTemplate(). '.panel.includes.user_top_bar')
                             <div class="sidebar-inner-elements">
-                                @if(auth()->user()->isUser())
-                                        <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
-                                            <ul>
-                                                <li>
-                                                    <div class="store-item">
-                                                        <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                        <h3 class="item-label font-16 font-weight-bold">
-                                                            Current Balance
-                                                            <span class="iteme-numbers font-14 font-weight-500">{{$authUser->getRewardPoints()}}</span>
-                                                        </h3>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    @endif
 
-                                    @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                                    <div class="panel-rightside-menu mb-30">
-                                        <div class="user-info">
-                                            <a href="#">
-                                                <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="User Avatar" loading="eager" title="User Avatar">
-                                                <span>
-                                                    <strong>{{ $authUser->get_full_name() }}</strong>
-                                                    <span>View Your Profile</span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <ul class="font-14">
-                                            <li>
-                                                <a href="/panel/setting"><span class="nav-icon">
-                                                    <img src="/assets/default/svgs/account-nav.svg" alt="account-nav"></span>
-                                                    <span class="menu-text">Account Setting</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/panel/rewards">
-                                                    <span class="nav-icon">
-                                                        <img src="/assets/default/svgs/reward-nav2.svg" alt="reward-nav2">
-                                                    </span>
-                                                    <span class="menu-text">Reward Points</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/panel/store/purchases">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/shop-nav.svg" alt="shop-nav"></span>
-                                                    <span class="menu-text">Shop Orders</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/panel/notifications">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/notifications-nav.svg" alt="notifications-nav"></span>
-                                                    <span class="menu-text">Notification</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/school-nav.svg" alt="school-nav"></span>
-                                                    <span class="menu-text">School link</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/panel/support/tickets">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/support-nav.svg" alt="support-nav"></span>
-                                                    <span class="menu-text">Support Desk</span>
-                                                </a>
-                                            </li>
-                                            @if(auth()->user()->isParent())
-                                            <li>
-                                                <a href="/panel/billing">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/shop-nav.svg" alt="shop-nav"></span>
-                                                    <span class="menu-text">Billing</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/panel/change_password">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/account-nav.svg" alt="account-nav"></span>
-                                                    <span class="menu-text">Change Password</span>
-                                                </a>
-                                            </li>
-                                            @endif
-                                        </ul>
+                                <!-- Overall performance (semi gauge) -->
+                                <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
+                                    <div>
+                                    <h3 class="font-16 font-weight-bold mb-0">Overall performance</h3>
+                                    <div class="font-12 text-muted mt-1">Course completion rate</div>
                                     </div>
-                                    @endif
-                                
-                                
-                                    @if(auth()->user()->isUser())
-                                    @if(request()->is('panel'))
-                                        <div class="getting-start panel-border bg-white rounded-sm p-20 mb-30">
-                                            <h3 class="font-16 font-weight-bold">Getting Start</h3>
-                                            <div class="levels-progress horizontal mb-20 mt-5">
-                                                <span class="progress-count" style="width: 0%;"></span>
-                                            </div>
-                                            <ul>
-                                                <li>
-                                                    <div class="start-item">
-                                                        <div class="icon-box">
-                                                            <img src="/assets/default/img/types/practice.svg" alt="practice">
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <h5 class="font-14 font-weight-500">Track Your Progress</h5>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="start-item">
-                                                        <div class="icon-box">
-                                                            <img src="/assets/default/img/types/practice.svg" alt="practice">
-                                                        </div>
-                                                        <div class="item-text">
-                                                            <h5 class="font-14 font-weight-500">Earn first 10 coins</h5>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    @endif
-                                    
-                                    @endif
 
-                                    @if(request()->is('panel/marketing/affiliates') || auth()->user()->isParent() || auth()->user()->isTutor())
+                                    <div class="d-flex align-items-center justify-content-center mt-15">
+                                    <!-- Change --p to your percentage (0–100) -->
+                                    <div class="overall-gauge" style="--p:80;">
+                                        <svg viewBox="0 0 200 120" class="w-100 d-block" style="max-width:260px;">
+                                        <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="18" stroke-linecap="round"></path>
 
-                                    @if( !empty( $profile_navs ) )
-                                    <div class="sidebar-students-list db-members mb-30">
-                                        <div class="card p-15">
-                                            <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
-                                                Switch Accounts
-                                                <a href="/panel/students" class="view-all font-weight-bold font-16">View All</a>
-                                            </h3>
-                                
-                                            @foreach( $profile_navs as $profile_nav)
-                                                @php $childObj = $profile_nav->user; 
-                                                if( !isset( $childObj->id)){
-                                                    continue;
-                                                }@endphp
-                                                @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $childObj->get_full_name(); @endphp
-                                            <div class="row align-items-center students-list-item">
-                                                <a href="javascript:;" class="col-auto">
-                                                    <img src="{{ $childObj->getAvatar() }}" alt="{{$full_name}}" class="avatar rounded-circle" width="40">
-                                                </a>
+                                        <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#2fbf71" stroke-width="18" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
+                                        </svg>
 
-                                                <a href="javascript:;" class="col-auto  ms-2">
-                                                    <h6 class="font-14 font-weight-500">{{$full_name}}</h6>
-                                                </a>
-                                                <a href="javascript:;" class="col-auto  ms-2">
-                                                    <a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-btn.svg" alt="" width="40"></span></a>
-                                                </a>
-                                            </div>
-                                            @endforeach
+                                        <div class="overall-gauge-center text-center">
+                                        <div class="font-24 font-weight-bold mb-0">80%</div>
+                                        <div class="font-12 text-muted text-uppercase" style="letter-spacing:.06em;">Pro learner</div>
                                         </div>
                                     </div>
-                                    @endif
-                        
-                                    <!-- <div class="col-12 col-lg-12 mt-30">
-                                        <div class="spell-widget">
-                                            <div id="accordion">
-                                                <div class="panel-shadow panel-border rounded-sm pb-10 pt-15" style="background-color: #ddd;">
-                                                    <div class="spell-item mb-10">
-                                                        <div class="spell-heading" id="heading1">
-                                                            <button class="btn btn-link font-16 font-weight-bold" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                                <span class="day-date">Word of the Day</span>
-                                                            </button>
-                                                        </div>
-                                                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-                                                            <div class="spell-top">
-                                                                <strong class="spell-word">assimilate <span class="icon-box"><img src="/assets/default/svgs/sound-filled.svg" alt=""></span></strong>
-                                                            </div>
-                                                            <div class="spell-text">
-                                                                <span class="spell-lable mb-5">Definition</span>
-                                                                <p class="mb-20 font-15">Piece together several different bites of information to learn something new with a depeer understanding</p>
-                                                                <span class="spell-lable">Example Usage</span>
-                                                                <p class="font-15">the detective assimilated the evidence to work out what happend</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            
-                                                    <div class="spell-item">
-                                                        <div class="spell-heading" id="heading2">
-                                                            <button class="btn btn-link font-16 font-weight-bold" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                                                Pungent
-                                                                <span class="prev-date font-15 font-weight-500">Yesterday</span>
-                                                                <span class="font-15 font-weight-normal">a particularly strong taste or scent</span>
-                                                            </button>
-                                                        </div>
-                                                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                                                            <div class="spell-text mt-15">
-                                                                <span class="spell-lable">Definition</span>
-                                                                <p class="mb-20 font-15">Piece together several different bites of information to learn something new with a depeer understanding</p>
-                                                                <span class="spell-lable">Example Usage</span>
-                                                                <p class="font-15">the detective assimilated the evidence to work out what happend</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    
-                                    <div class="referrals panel-border panel-shadow rounded-sm mb-30">
-                                        <div class="referral-card">
-                                            <h3 class="font-19 font-weight-bold">Link your students and <br /> start earning!</h3>
-                                            <p>
-                                                To link your clients, enter their email below. <br />
-                                                If they don't yet use Atom, they'll get 10% <br />
-                                                off their first month, and <strong>you will earn 15% <br /> of their subscription payment every month. </strong>
-                                            </p>
-                                            <div class="referral-form">
-                                                <form>
-                                                    <label>Parent's email</label>
-                                                    <div class="form-feild">
-                                                        <input type="text" placeholder="parent@mail.com">
-                                                        <button type="submit">Invite</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="referral-invites">
-                                                <div class="heading">
-                                                    <h3 class="font-19 font-weight-bold">Track your invites</h3>
-                                                    <a href="#">See all <span>&#8594;</span></a>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <strong>0</strong>
-                                                        <span>Total users earning</span>
-                                                    </li>
-                                                    <li>
-                                                        <strong>1</strong>
-                                                        <span>Pending invites</span>
-                                                    </li>
-                                                </ul>
-                                                </div>
-                                                <div class="referral-payment">
-                                                    <div class="heading">
-                                                        <h3 class="font-19 font-weight-bold">Your wallet</h3>
-                                                        <a href="https://rurera.com/parent/marketing/affiliates">Go to referrals <span>&#8594;</span></a>
-                                                    </div>
-                                                    <p>
-                                                        <span class="icon-box">
-                                                            <img src="/assets/default/svgs/wallet.svg" alt="">
-                                                        </span>
-                                                        <strong>
-                                                            £0.00
-                                                            <em>Pending payment</em>
-                                                        </strong>
-                                                    </p>
-                                                </div>
-                                            </div>
                                     </div>
-                                    @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                                    <div class="user-pocket mb-30">
-                                        <div class="pocket-card panel-shadow panel-border rounded-sm">
-                                            <div class="card-header d-flex align-items-center justify-content-between p-0">
-                                                <a href="#" class="author-info d-inline-flex align-items-center flex-wrap">
-                                                    <img src="/avatar/svgA5311352175689545.png" alt="pocket image">
-                                                    <span class="author-text font-19 font-weight-bold">
-                                                        Jonh Smith
-                                                        <span class="d-block font-16 font-weight-normal">Administrator</span>
-                                                    </span>
-                                                </a>
-                                                <a href="#" class="pocket-btn btn-link collapsed d-inline-flex flex-column justify-content-center align-items-center" data-toggle="collapse" data-target="#pocket-menu" aria-expanded="false" aria-controls="pocket-menu">
-                                                    <span class="line-lg"></span>
-                                                    <span class="line-md"></span>
-                                                    <span class="line-sm"></span>
-                                                </a>
-                                            </div>
-                                            <div id="pocket-menu" class="pocket-menu collapse pt-10" aria-labelledby="pocket-menu">
-                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-account.svg" alt="user-account"></span>My Account</a>
-                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-setting.svg" alt="user-setting"></span>Settings</a>
-                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/lock-closed.svg" alt="lock-closed"></span>Lock Screen</a>
-                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-logout.svg" alt="user-logout"></span>Logout</a>
-                                            </div>
+                                </div>
+
+                                <!-- UX Overview (gradient card like screenshot) -->
+                                <div class="panel-border rounded-sm p-20 mb-30 w-100" style="background: linear-gradient(135deg, #f7e7d6 0%, #f4c2a1 55%, #ef8b5e 100%);">
+                                    <h3 class="font-20 font-weight-bold mb-10">UX Overview</h3>
+                                    <p class="font-13 mb-20" style="opacity:.85;">
+                                    We put the power in your hands with easy-to-use APIs that you can use to mesmerize.
+                                    </p>
+
+                                    <div class="panel-border bg-white rounded-sm p-15 mb-15">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                        <div class="font-14 font-weight-bold mb-5">Transfer Flow</div>
+                                        <span class="badge badge-success font-12" style="border-radius:999px; padding:.35rem .6rem;">Good</span>
+                                        </div>
+                                        <div class="font-28 font-weight-bold">87%</div>
+                                    </div>
+                                    </div>
+
+                                    <div class="panel-border bg-white rounded-sm p-15">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                        <div class="font-14 font-weight-bold mb-5">Transfer Flow</div>
+                                        <span class="badge badge-warning font-12" style="border-radius:999px; padding:.35rem .6rem;">Attention</span>
+                                        </div>
+                                        <div class="font-28 font-weight-bold">48%</div>
+                                    </div>
+
+                                    <hr class="my-15">
+
+                                    <div class="d-flex align-items-start">
+                                        <div class="mr-10" style="line-height:1;">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="rgba(0,0,0,.35)" stroke-width="2"></path>
+                                            <path d="M12 10v7" stroke="rgba(0,0,0,.35)" stroke-width="2" stroke-linecap="round"></path>
+                                            <path d="M12 7h.01" stroke="rgba(0,0,0,.35)" stroke-width="3" stroke-linecap="round"></path>
+                                        </svg>
+                                        </div>
+                                        <div class="font-12" style="opacity:.8;">
+                                        QR code requesting fund is valid for only 1 minute
                                         </div>
                                     </div>
-                                    @endif
-                                        @endif
-                                    @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                                    <div class="bg-white noticeboard rounded-sm panel-shadow panel-border py-10 py-md-20 px-15 px-md-30 mb-30 rurera-hide">
-                                        <h3 class="font-19 font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
-
-                                        @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
-                                            <div class="noticeboard-item py-15">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <div>
-                                                        <h4 class="js-noticeboard-title font-weight-500">{!! truncate($getUnreadNoticeboard->title,150) !!}</h4>
-                                                        <div class="font-12 text-gray mt-5">
-                                                            <span class="mr-5">{{ trans('public.created_by') }} {{ $getUnreadNoticeboard->sender }}</span>
-                                                            |
-                                                            <span class="js-noticeboard-time ml-5">{{ dateTimeFormat($getUnreadNoticeboard->created_at,'j M Y') }}</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div>
-                                                        <button type="button" data-id="{{ $getUnreadNoticeboard->id }}" class="js-noticeboard-info btn btn-sm btn-border-white">{{ trans('panel.more_info') }}</button>
-                                                        <input type="hidden" class="js-noticeboard-message" value="{{ $getUnreadNoticeboard->message }}">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        @endforeach
-
                                     </div>
-                                    @endif
-                                    @if(auth()->user()->isUser() && !request()->is('quests'))
+                                </div>
 
-                                    @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
-                                        <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
-                                            <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
-                                                Daily Quests
-                                                <a href="/quests" class="view-all font-weight-bold font-14">View All</a>
-                                            </h3>
-                                            <ul>
-                                                @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
-                                                    @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
-
-                                                    $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
-                                                    $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
-                                                    @endphp
-                                                    <li>
-                                                        <div class="quests-item">
-                                                            <div class="icon-box">
-                                                                <img src="{{$quest_icon}}" alt="quests image">
-                                                            </div>
-                                                            <div class="item-text">
-                                                                <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
-                                                                <div class="levels-progress horizontal">
-                                                                    <span class="progress-box">
-                                                                        <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
-                                                                    </span>
-                                                                    <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
-                                                                </div>
-                                                                <span class="progress-icon">
-                                                                    <img src="/assets/default/img/quests-coin.png" alt="">
-                                                                    +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    @endif	
-                                @endif	
-    
-                                @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
-                                    
-                                @if(request()->is('shop'))
-                                    <div class="product-card medium panel-border bg-white rounded-sm p-20 mb-30">
-                                        <div class="product-controls nav" id="myTab" role="tablist">
-                                            <a href="#trending" class="active font-16 font-weight-bold" id="trending-tab" data-toggle="tab" href="#trending" role="tab" aria-controls="trending" aria-selected="true">Trending Toys</a>
-                                            <a href="#shortlisted" class="font-16 font-weight-bold" id="shortlisted-tab" data-toggle="tab" href="#shortlisted" role="tab" aria-controls="shortlisted" aria-selected="false">Shortlisted</a>
-                                        </div>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="trending" role="tabpanel" aria-labelledby="trending-tab">
-                                                @if( isset( $trending_toys ) && $trending_toys->count() > 0)
-                                                    @foreach( $trending_toys as $product)
-                                                        @include('web.default.products.includes.sidebar_card')
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <div class="tab-pane fade" id="shortlisted" role="tabpanel" aria-labelledby="shortlisted-tab">
-                                                @if( isset( $shortlisted_toys ) && $shortlisted_toys->count() > 0)
-                                                @foreach( $shortlisted_toys as $product)
-                                                    @include('web.default.products.includes.sidebar_card')
-                                                @endforeach
-                                            @endif
-                                            </div>
-                                        </div>
+                                <!-- Learned skills (table) -->
+                                <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap mb-15">
+                                    <h3 class="font-16 font-weight-bold mb-0">You have learned the following skills</h3>
                                     </div>
+
+                                    <div class="table-responsive">
+                                    <table class="table table-sm mb-0 learned-skills-table">
+                                        <thead>
+                                        <tr>
+                                            <th class="font-12 text-muted font-weight-bold">Subject</th>
+                                            <th class="font-12 text-muted font-weight-bold">Skill</th>
+                                            <th class="font-12 text-muted font-weight-bold text-right">Last practised</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13">
+                                            <a href="#" class="text-decoration-none">Prime or composite</a>
+                                            </td>
+                                            <td class="font-13 text-right text-muted">11 February</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Identify factors</a></td>
+                                            <td class="font-13 text-right text-muted">11 February</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Multiplicative inverses</a></td>
+                                            <td class="font-13 text-right text-muted">7 February</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Use Venn diagrams to solve problems</a></td>
+                                            <td class="font-13 text-right text-muted">16 January</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Area of parallelograms</a></td>
+                                            <td class="font-13 text-right text-muted">21 November</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between mt-15">
+                                    <a href="#" class="font-13 font-weight-bold">See all 33 skills</a>
+                                    <div class="font-12 text-muted">
+                                        <span class="mr-10">23 Mastered</span>
+                                        <span>33 Proficient</span>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- Areas to focus on (table) -->
+                                <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
+                                    <h3 class="font-16 font-weight-bold mb-10">Your areas to focus on</h3>
+                                    <div class="d-flex align-items-start mb-15">
+                                    <div class="mr-10" style="line-height:1;">
+                                        <!-- lightbulb -->
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M9 21h6" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linecap="round"></path>
+                                        <path d="M10 17h4" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linecap="round"></path>
+                                        <path d="M12 2a7 7 0 0 0-4 12c.7.6 1 1.2 1 2h6c0-.8.3-1.4 1-2A7 7 0 0 0 12 2Z" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="font-13 text-muted">You could use extra support on these skills:</div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                    <table class="table table-sm mb-0 focus-table">
+                                        <thead>
+                                        <tr>
+                                            <th class="font-12 text-muted font-weight-bold">Subject</th>
+                                            <th class="font-12 text-muted font-weight-bold">Skill</th>
+                                            <th class="font-12 text-muted font-weight-bold text-right">Questions missed</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions: word problems</a></td>
+                                            <td class="font-13 text-right font-weight-bold">4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Lines, line segments and rays</a></td>
+                                            <td class="font-13 text-right font-weight-bold">4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions</a></td>
+                                            <td class="font-13 text-right font-weight-bold">3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-13">Maths</td>
+                                            <td class="font-13"><a href="#" class="text-decoration-none">Understanding area of a parallelogram</a></td>
+                                            <td class="font-13 text-right font-weight-bold">3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                    <div class="mt-15">
+                                    <a href="#" class="font-13 font-weight-bold">See all 9 skills</a>
+                                    </div>
+                                </div>
+
+                                </div>
                                 @endif
                             @endif
 
