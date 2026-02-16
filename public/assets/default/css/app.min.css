@@ -16039,7 +16039,7 @@ footer.footer-home {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    color: #4b2c6d;
+    color: var(--primary);
 }
 /* Typography for feature grid - NO CLASSES ON P TAGS */
 .rurera-feature-item h3 {
