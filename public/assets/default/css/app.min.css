@@ -10479,11 +10479,11 @@ body .flipbook-data {
   transform: rotate(45deg);
   margin-top: -4px;
 }
-.rurera-testimonial-tabs {
+.inner-testimonial {
   background-color: #f6f6f6;
   position: relative;
 }
-.rurera-testimonial-tabs:after {
+.inner-testimonial:after {
     position: absolute;
     bottom: 0;
     height: 40%;
@@ -10494,7 +10494,7 @@ body .flipbook-data {
     background-color: #f6f6f64f;
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.8) 40%, rgb(255 255 255 / 0%) 100%);
 }
-.rurera-masonry {
+.inner-testimonial .rurera-masonry {
     height: 530px;
     overflow: hidden;
 }
@@ -10519,7 +10519,7 @@ body .flipbook-data {
   position: relative;
   overflow: hidden;
 }
-.rurera-testimonials .masonry-grid {
+.inner-testimonial .masonry-grid {
   display: block;
   column-count: 4;
   column-gap: 0;
