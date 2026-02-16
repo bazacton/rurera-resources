@@ -922,8 +922,8 @@
     });
 </script>
 <script>
-$('#totalSlides').text(1);
-$('#currentSlide').text(1);
+$('#totalSlides').text(4);
+$('#currentSlide').text(4);
 
 const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
@@ -960,11 +960,6 @@ function updateCounter(swiper) {
     $('#totalSlides').text(totalSlides);
     $('#currentSlide').text(currentSlide);
 }
-
-window.addEventListener('load', function () {
-    swiper1.update();
-    swiper1.slideToLoop(3, 0);
-});
 
 </script>
 @endpush
