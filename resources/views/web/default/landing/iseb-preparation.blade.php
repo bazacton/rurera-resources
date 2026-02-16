@@ -858,6 +858,58 @@
 @push('scripts_bottom')
 <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 <script>
+const section = document.querySelector('.rurera-activation-cta');
+const triggerElement = document.querySelector('.rurera-activation-cta h2');
+let lastScrollY = window.scrollY;
+let scrollDir = 'down';
+window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    scrollDir = y > lastScrollY ? 'down' : 'up';
+    lastScrollY = y;
+}, { passive: true });
+let buttonsIntersecting = false;
+
+const options = {
+    root: null, // use the viewport
+    threshold: 0.1 // trigger when at least 10% of the h2 is visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            section.classList.add('visible');
+        } else {
+            if (scrollDir === 'up' && !buttonsIntersecting) {
+                section.classList.remove('visible');
+            }
+        }
+    });
+}, options);
+
+if (triggerElement) {
+    observer.observe(triggerElement);
+}
+
+const buttons = document.querySelector('.rurera-activation-cta .btn-group-custom');
+if (buttons) {
+    const buttonsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                buttonsIntersecting = true;
+                section.classList.add('icons-visible');
+                section.classList.add('visible');
+            } else {
+                buttonsIntersecting = false;
+                if (scrollDir === 'down') {
+                    section.classList.remove('icons-visible');
+                }
+            }
+        });
+    }, { root: null, threshold: 0 });
+    buttonsObserver.observe(buttons);
+}
+</script>
+<script>
     $(document).ready(function() {
         const $items = $('.feature-item');
         const $images = $('.feature-image');
