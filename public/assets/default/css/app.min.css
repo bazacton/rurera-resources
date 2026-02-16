@@ -10502,13 +10502,7 @@ body .flipbook-data {
   padding-top: 50px;
 }
 .grid-item {
-  margin-bottom: 30px;
-  width: 100%;
-  display: inline-block;
   margin-bottom: 24px;
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
   max-width: 100%;
 }
 .rurera-masonry .testimonial-card {
