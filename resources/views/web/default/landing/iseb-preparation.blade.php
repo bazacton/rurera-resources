@@ -940,12 +940,8 @@ const swiper1 = new Swiper('#featureSwiper', {
     },
 
     on: {
-        init: function () {
-            // Force first real slide
+        afterInit: function () {
             this.slideToLoop(0, 0, false);
-            updateCounter(this);
-        },
-        slideChange: function () {
             updateCounter(this);
         }
     }
