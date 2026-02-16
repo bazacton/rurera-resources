@@ -54,6 +54,7 @@
             </div>
         </div>
     </section>
+    {!! parseShortcode('[SC_times-table-features-section-f]') !!}
     <section class="rurera-search-services find-instructor-section mt-60 pt-80 pb-70">
         <div class="container">
             <div class="row">
