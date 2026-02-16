@@ -922,13 +922,15 @@
     });
 </script>
 <script>
+$('#totalSlides').text(4);
+$('#currentSlide').text(4);
+
 const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
     centeredSlidesBounds: true,
     spaceBetween: 30,
-
     initialSlide: 3,
 
     preloadImages: false,
