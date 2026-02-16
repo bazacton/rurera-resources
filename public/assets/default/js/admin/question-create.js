@@ -1358,7 +1358,7 @@ function _rureraform_properties_prepare(_object) {
                         upload_type: 'question',
                         question_id: question_id,
                         upload_dir: 'storage',
-                        upload_path: '/media/'+question_id,
+                        upload_path: 'media/'+question_id,
                         is_multiple: false,
                         preview_div: 'preview-images-block-'+random_id,
                         hidden_field: '',
