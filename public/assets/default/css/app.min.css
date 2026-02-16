@@ -15877,7 +15877,7 @@ footer.footer-home {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 8%;
   padding-right: calc((100vw - 1480px) / 2);
 }
