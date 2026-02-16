@@ -15936,7 +15936,7 @@ footer.footer-home {
 }
 /* General Section Styling */
 .ru-feature-showcase {
-    background-color: #F9E3FC;
+    background-color: #9cbeff;
     padding: 0 0 0 calc((100vw - 1480px) / 2);
     min-height: 100vh;
     position: relative;
@@ -15963,7 +15963,7 @@ footer.footer-home {
   position: sticky;
   top: 0;
   padding-right: 30px;
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
