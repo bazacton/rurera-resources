@@ -15852,8 +15852,6 @@ footer.footer-home {
 .rurera-card-primary p { color: rgba(255,255,255,0.8); }
 
 .rurera-img-frame {
-    background: white;
-    padding: 1.5rem;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin-top: auto;
@@ -15877,9 +15875,11 @@ footer.footer-home {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 8%;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-right: calc((100vw - 1480px) / 2);
+  min-height: 100vh;
+  align-items: center;
 }
 
 .ru-stickyhero-visual-container .rurera-bg-chart {
@@ -15897,10 +15897,10 @@ footer.footer-home {
   z-index: 3;
   flex: 0 0 24%;
   max-width: 24%;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 .rurera-feature-outer {
-  padding: 8% calc((100vw - 1480px) / 2) 8% 0;
+  padding: 2% calc((100vw - 1480px) / 2) 5% 0;
 }
 .ru-stickyhero-visual-container .rurera-desktop-mockup {
   z-index: 2;
@@ -15936,7 +15936,7 @@ footer.footer-home {
 }
 /* General Section Styling */
 .ru-feature-showcase {
-    background-color: #9cbeff;
+    background-color: #b2ccff;
     padding: 0 0 0 calc((100vw - 1480px) / 2);
     min-height: 100vh;
     position: relative;
@@ -15944,10 +15944,6 @@ footer.footer-home {
 }
 .ru-stickyhero-visual-outer {
   position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 @media screen and (min-width: 1181px) {
   .ru-feature-showcase {
@@ -15961,12 +15957,12 @@ footer.footer-home {
 /* Left Sticky Section */
 .rurera-feature-wrapper {
   position: sticky;
-  top: 0;
-  padding-right: 30px;
-  min-height: 100vh;
+  top: 55px;
+  padding: 0 30px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
 }
 .rurera-content-box {
     max-width: 400px;
@@ -15977,7 +15973,7 @@ footer.footer-home {
   border: 1px solid #888889AD;
   font-size: .9rem;
   padding: .25rem .75rem;
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   display: inline-block;
   line-height: normal;
 }
@@ -16012,10 +16008,6 @@ footer.footer-home {
 .rurera-scroll-content {
   padding-left: 20px;
   padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
 }
 
 /* Feature Grid Styling */
@@ -16147,9 +16139,7 @@ footer.footer-home {
 /* Each slide custom width */
 #featureSwiper .swiper-wrapper {
   display: flex;
-  align-items: stretch;
-  will-change: transform;
-  transition-timing-function: cubic-bezier(.645, .045, .355, 1);
+  align-items: center;
 }
 
 /* KEY PART */
@@ -16172,6 +16162,10 @@ footer.footer-home {
 }
 /* Responsive Overlap Adjustments */
 @media (max-width: 767.98px) {
+  .rurera-feature-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .rurera-features-element .row {
     gap: 25px;
   }

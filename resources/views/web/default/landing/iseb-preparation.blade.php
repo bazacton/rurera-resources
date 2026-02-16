@@ -922,28 +922,44 @@
     });
 </script>
 <script>
-$(document).ready(function() {
-    const swiper1 = new Swiper('#featureSwiper', {
-        loop: true,
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 25,
-        grabCursor: true,
-        navigation: {
-            nextEl: '#featureSwiperNext',
-            prevEl: '#featureSwiperPrev',
-        },
-        on: {
-            init: function() {
-                $('#totalSlides').text(this.slides.length - this.loopedSlides * 2);
-            },
-            slideChange: function () {
-                $('#currentSlide').text(this.realIndex + 1);
-            },
-        }
-    });
+$('#totalSlides').text(4);
+$('#currentSlide').text(4);
 
+const swiper1 = new Swiper('#featureSwiper', {
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    spaceBetween: 30,
+    initialSlide: 3,
+
+    preloadImages: false,
+    lazy: true,
+    observer: true,
+    observeParents: true,
+
+    navigation: {
+        nextEl: '#featureSwiperNext',
+        prevEl: '#featureSwiperPrev',
+    },
+
+    on: {
+        init: function () {
+            updateCounter(this);
+        },
+        slideChange: function () {
+            updateCounter(this);
+        }
+    }
 });
+
+function updateCounter(swiper) {
+    const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
+    const currentSlide = swiper.realIndex + 1;
+
+    $('#totalSlides').text(totalSlides);
+    $('#currentSlide').text(currentSlide);
+}
 
 </script>
 @endpush
