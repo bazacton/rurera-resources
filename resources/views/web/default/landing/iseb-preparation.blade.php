@@ -922,8 +922,7 @@
     });
 </script>
 <script>
-<script>
-  const swiper1 = new Swiper('#featureSwiper', {
+const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: false,
@@ -931,7 +930,6 @@
 
     slidesOffsetBefore: 0,
     slidesOffsetAfter: 140,
-
     loopAdditionalSlides: 2,
 
     preloadImages: false,
@@ -946,7 +944,6 @@
 
     on: {
       init: function () {
-        // Force first real slide
         this.slideToLoop(0, 0, false);
         updateCounter(this);
       },
@@ -957,14 +954,16 @@
         this.update();
       }
     }
-  });
+});
 
   function updateCounter(swiper) {
+    // real slides count (loop mode safe)
     const totalSlides = swiper.slidesEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
     const currentSlide = swiper.realIndex + 1;
 
     $('#totalSlides').text(totalSlides);
     $('#currentSlide').text(currentSlide);
   }
+
 </script>
 @endpush
