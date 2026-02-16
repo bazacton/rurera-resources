@@ -167,7 +167,7 @@
                                                     <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
                                                         <ul class="chapter-tags">
                                                             <li>
-                                                                <a href="" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
+                                                                <a href="javascript:;" data-topic_part_id="{{$topicPartObj->id}}" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
                                                             </li>
                                                             <li>
                                                                 <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/practice-skills" class="course-practice-btn">Practice Skills</a>
@@ -345,76 +345,9 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
-                <div class="modal-body">
-                    <div class="subchapter-slider">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap1.jpeg" alt="chap1">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap2.jpeg" alt="chap2">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap3.jpeg" alt="chap3">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap4.jpeg" alt="chap4">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap1.jpeg" alt="chap1">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap2.jpeg" alt="chap2">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap3.jpeg" alt="chap3">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="subchapter-img-block">
-                                        <img src="/assets/default/img/chap4.jpeg" alt="chap4">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-controls">
-                            <div class="swiper-button-next">
-                                <img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right" height="800" width="800">
-                            </div>
-                            <div class="swiper-button-prev">
-                                <img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left" height="800" width="800">
-                            </div>
-                        </div>
+                <div class="modal-body learn-concept-data">
 
-                    </div>
-                    <div class="subchapter-footer">
-                        <div class="swiper-progress">
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <span class="learn-lable">Learn</span>
-                        <div class="subchapter-compare">
-                            <h4>Order and Compare</h4>
-                            <div class="compare-right">
-                                <span><em class="icon-box q-icon"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></em> 8 questions</span>
-                                <span> <em class="icon-box clock-icon"><img src="/assets/default/svgs/clock.svg" alt="clock"></em> No limit</span>
-                                <a href="#" class="start-btn">Start practicing</a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -521,53 +454,67 @@
     <script>
         let subchapterSwiper;
 
-        $('#subchapter-notes-modal').on('shown.bs.modal', function () {
-
-            if (!subchapterSwiper) {
-                subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
-                    centeredSlides: true,
-                    slideToClickedSlide: true,
-                    loop: false,
-                    slidesPerView: 3,
-                    spaceBetween: 0,
-
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    },
-
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'progressbar'
-                    },
-
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 1,
-                            spaceBetween: 0,
-                            centeredSlides: true
-                        },
-                        480: {
-                            slidesPerView: 1,
-                            spaceBetween: 0,
-                            centeredSlides: true
-                        },
-                        640: {
-                            slidesPerView: 3,
-                            spaceBetween: 0,
-                            centeredSlides: true
-                        }
-                    }
-                });
-            } else {
-                subchapterSwiper.update();
-            }
-
-        });
-
         $(document).on('click', '.debug-details-btn', function (e) {
             $(this).closest('li').find('.debug-details').toggleClass('rurera-hide');
         });
+
+        $(document).on('click', '.course-learn-btn', function (e) {
+            var topic_part_id = $(this).attr('data-topic_part_id');
+            var loaderDiv = $('.learn-concept-data');
+            rurera_loader(loaderDiv, 'button');
+            $.ajax({
+                type: "GET",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: '/learn/get_topic_part_learn_concepts',
+                data: {'topic_part_id': topic_part_id},
+                success: function (return_data) {
+                    rurera_remove_loader(loaderDiv, 'button');
+                    $(".learn-concept-data").html(return_data);
+                        subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
+                            centeredSlides: true,
+                            slideToClickedSlide: true,
+                            loop: false,
+                            slidesPerView: 3,
+                            spaceBetween: 0,
+
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev'
+                            },
+
+                            pagination: {
+                                el: '.swiper-pagination',
+                                type: 'progressbar'
+                            },
+
+                            breakpoints: {
+                                320: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 0,
+                                    centeredSlides: true
+                                },
+                                480: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 0,
+                                    centeredSlides: true
+                                },
+                                640: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 0,
+                                    centeredSlides: true
+                                }
+                            }
+                        });
+
+                }
+            });
+        });
+
+
+
+
 
     </script>
 
