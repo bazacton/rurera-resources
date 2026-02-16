@@ -929,24 +929,26 @@ const swiper1 = new Swiper('#featureSwiper', {
     centeredSlidesBounds: true,
     spaceBetween: 30,
 
-    preloadImages: false,
-    lazy: true,
-    observer: true,
-    observeParents: true,
-
     navigation: {
         nextEl: '#featureSwiperNext',
         prevEl: '#featureSwiperPrev',
     },
+
     on: {
-        init: function() {
-            $('#totalSlides').text(this.slides.length - this.loopedSlides * 2);
+        init: function () {
+            updateCounter(this);
         },
         slideChange: function () {
-            $('#currentSlide').text(this.realIndex + 1);
-        },
+            updateCounter(this);
+        }
     }
 });
+
+function updateCounter(swiper) {
+    const current = swiper.realIndex + 1;
+    const total = swiper.slides.length - swiper.loopedSlides * 2;
+    document.querySelector('#counter').innerHTML = `${current} — ${total}`;
+}
 
 window.addEventListener('load', function () {
     swiper1.update();
