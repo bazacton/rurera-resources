@@ -15942,7 +15942,11 @@ footer.footer-home {
 }
 /* Right Content Section */
 .rurera-scroll-content {
-    padding-left: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* Feature Grid Styling */
@@ -16060,7 +16064,7 @@ footer.footer-home {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 8%;
 }
 
 .ru-stickyhero-visual-container .rurera-bg-chart {
