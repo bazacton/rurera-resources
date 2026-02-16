@@ -926,7 +926,7 @@ const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 30,
-    centeredSlides: false,
+    centeredSlides: true,
     observer: true,
     observeParents: true,
     updateOnImagesReady: true,
