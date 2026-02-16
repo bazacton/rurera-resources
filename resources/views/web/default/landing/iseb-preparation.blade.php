@@ -925,16 +925,24 @@
 const swiper1 = new Swiper('#featureSwiper', {
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 30,
     centeredSlides: true,
+    spaceBetween: 30,
+    speed: 600,
+
+    preloadImages: true,
+    updateOnImagesReady: true,
     observer: true,
     observeParents: true,
-    updateOnImagesReady: true,
-    preloadImages: true,
-    watchSlidesProgress: true,
+
     navigation: {
         nextEl: '#featureSwiperNext',
         prevEl: '#featureSwiperPrev',
+    },
+
+    on: {
+        init: function () {
+            this.update();   // force recalculation
+        }
     }
 });
 
