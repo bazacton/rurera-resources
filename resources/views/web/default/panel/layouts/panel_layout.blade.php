@@ -79,7 +79,23 @@
                             
                             @include(getTemplate(). '.panel.includes.user_top_bar')
                             <div class="sidebar-inner-elements">
-                                <!-- Overall performance (semi gauge) -->
+                                @if(auth()->user()->isUser())
+                                        <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
+                                            <ul>
+                                                <li>
+                                                    <div class="store-item">
+                                                        <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
+                                                        <h3 class="item-label font-16 font-weight-bold">
+                                                            Current Balance
+                                                            <span class="iteme-numbers font-14 font-weight-500">{{$authUser->getRewardPoints()}}</span>
+                                                        </h3>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    @endif
+
+                                    <!-- Overall performance (semi gauge) -->
                                 <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                     <div>
                                     <h3 class="font-16 font-weight-bold mb-0">Overall performance</h3>
@@ -151,21 +167,6 @@
                                     <a href="#" class="font-13 font-weight-bold">See all 9 skills</a>
                                     </div>
                                 </div>
-                                @if(auth()->user()->isUser())
-                                        <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
-                                            <ul>
-                                                <li>
-                                                    <div class="store-item">
-                                                        <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                        <h3 class="item-label font-16 font-weight-bold">
-                                                            Current Balance
-                                                            <span class="iteme-numbers font-14 font-weight-500">{{$authUser->getRewardPoints()}}</span>
-                                                        </h3>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    @endif
 
                                     @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
                                     <div class="panel-rightside-menu mb-30">
