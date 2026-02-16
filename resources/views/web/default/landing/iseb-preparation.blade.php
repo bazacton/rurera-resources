@@ -928,13 +928,19 @@ const swiper1 = new Swiper('#featureSwiper', {
     centeredSlides: true,
     centeredSlidesBounds: true,
     spaceBetween: 30,
+
+    preloadImages: false,
+    lazy: true,
+    observer: true,
+    observeParents: true,
+
     navigation: {
         nextEl: '#featureSwiperNext',
         prevEl: '#featureSwiperPrev',
-    }
+    },
 });
 
-$(window).on('load', function () {
+window.addEventListener('load', function () {
     swiper1.update();
 });
 
