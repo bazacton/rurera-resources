@@ -15406,9 +15406,10 @@ section:has(.trial-steps) .rurera-btn-group a small {
   content: "✓";
   color: #fff;
   position: absolute;
-  top: -3px;
+  top: -2px;
   left: 3px;
-  font-size: 14px;
+  font-size: .9rem;
+  line-height: 20px;
 }
 .custom-footer .form-check-field label {
   margin: 0;
