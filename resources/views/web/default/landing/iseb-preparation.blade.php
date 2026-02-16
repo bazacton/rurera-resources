@@ -927,7 +927,7 @@ const swiper1 = new Swiper('#featureSwiper', {
     slidesPerView: "auto",
     centeredSlides: true,
     centeredSlidesBounds: true,
-    spaceBetween: 24,
+    spaceBetween: 30,
 
     preloadImages: false,
     lazy: true,
@@ -940,11 +940,11 @@ const swiper1 = new Swiper('#featureSwiper', {
     },
 
     on: {
-        init: function () {
-            // Force first real slide
+        afterInit: function () {
             this.slideToLoop(0, 0, false);
             updateCounter(this);
         },
+
         slideChange: function () {
             updateCounter(this);
         }
