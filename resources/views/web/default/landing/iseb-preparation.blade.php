@@ -930,6 +930,8 @@ const swiper1 = new Swiper('#featureSwiper', {
     observer: true,
     observeParents: true,
     updateOnImagesReady: true,
+    preloadImages: true,
+    watchSlidesProgress: true,
     navigation: {
         nextEl: '#featureSwiperNext',
         prevEl: '#featureSwiperPrev',
