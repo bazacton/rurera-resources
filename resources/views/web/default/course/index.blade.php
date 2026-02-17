@@ -7,48 +7,68 @@
 @endpush
 
 <style>
-    /* Wrapper */
+
     .rurera-topics-search {
         position: relative;
         max-width: 400px;
-        margin-bottom: 40px;
     }
-
-    .rurera-topics-search .rurera-search-field {
-        width: 100%;
+    .rurera-topics-search .search-field {
         padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
         border: 1px solid #ccc;
         border-radius: 4px;
     }
 
-    .rurera-topics-search .rurera-search-results {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        max-height: 200px;
+    .rurera-topics-search .search-results {
+        max-height: 150px;
         overflow-y: auto;
-        background: #fff;
-        border: 1px solid #ddd;
-        border-top: 0;
-        z-index: 999;
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: none; /* Hide initially */
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
     }
 
-    .rurera-topics-search .rurera-search-results div {
-        padding: 8px 10px;
+    .rurera-topics-search .search-results a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ddd;
         cursor: pointer;
-        border-bottom: 1px solid #f1f1f1;
     }
 
-    .rurera-topics-search .rurera-search-results div:hover {
-        background: #f5f5f5;
+    .rurera-topics-search .search-results a:hover {
+        background-color: #ddd;
     }
 
-    .rurera-highlight {
-        background: #fff3cd;
-        transition: 0.3s;
+    .rurera-topics-search .result-title {
+        font-weight: bold;
     }
+
+    .rurera-topics-search .result-description {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .rurera-topics-search .expand-icon {
+        float: right;
+        cursor: pointer;
+    }
+    .rurera-topics-search .highlight {
+        background-color: yellow; /* Highlight color */
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.5s ease-in-out;
+    }
+
 </style>
 @section('content')
     <div class="post-show" style="overflow:hidden;">
@@ -154,145 +174,204 @@
                 </div>--}}
 
 
+
                 <div class="rurera-topics-search">
-                    <input type="text" class="rurera-search-field" placeholder="Search topics (min 3 letters)">
-                    <div class="rurera-search-results"></div>
+                    <input type="text" id="search" placeholder="Search..." class="search-field">
+                    <div class="search-results" id="search-results"></div>
+
+                    <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
+                        <li id="subject_202">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Changes to materials</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse476" aria-expanded="true">
+                                        Simple chemical reactions
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse491" aria-expanded="true">
+                                        Detecting chemical reactions
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse492" aria-expanded="true">
+                                        Neutralisation
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Added random 40 subtopics -->
+                        <li id="subject_203">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Electricity</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse485" aria-expanded="true">
+                                        Flow of electricity
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse487" aria-expanded="true">
+                                        Electrical circuits
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse488" aria-expanded="true">
+                                        Measuring the flow of current
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Random additional subtopics -->
+                        <li id="subject_204">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Physics</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse501" aria-expanded="true">
+                                        Forces and motion
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse502" aria-expanded="true">
+                                        Energy transfer
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse503" aria-expanded="true">
+                                        Waves and sound
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- More Random Subtopics -->
+                        <!-- You can continue adding more as required for testing -->
+                        <li id="subject_205">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse504" aria-expanded="true">
+                                        Planets and stars
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse505" aria-expanded="true">
+                                        Solar system exploration
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse506" aria-expanded="true">
+                                        Space-time and black holes
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="subject_205">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5042" aria-expanded="true">
+                                        Planets and stars
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5052" aria-expanded="true">
+                                        Solar system exploration
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5062" aria-expanded="true">
+                                        Space-time and black holes
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="subject_25">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50413" aria-expanded="true">
+                                        Planets and stars
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50513" aria-expanded="true">
+                                        Solar system exploration
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50613" aria-expanded="true">
+                                        Space-time and black holes
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="subject_2051">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5041" aria-expanded="true">
+                                        Planets and stars
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5051" aria-expanded="true">
+                                        Solar system exploration
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5061" aria-expanded="true">
+                                        Space-time and black holes
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="subject_20555">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50415" aria-expanded="true">
+                                        Planets and stars
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50515" aria-expanded="true">
+                                        Solar system exploration
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50615" aria-expanded="true">
+                                        Space-time and black holes
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="subject_20533">
+                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
+                            <div class="lms-chapter-ul-outer">
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50416" aria-expanded="true">
+                                        Planets and stars
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50516" aria-expanded="true">
+                                        Solar system exploration
+                                    </a>
+                                </div>
+                                <div class="chapter-card">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50616" aria-expanded="true">
+                                        Space-time and black holes
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Add more subtopics until 40+ as needed -->
+                    </ul>
                 </div>
-
-
-                <ul id="accordion">
-                    <li id="subject_1">
-                        <h3>Electricity</h3>
-                        <div class="chapter-card"><a data-target="#sub1">Flow of electricity</a></div>
-                        <div class="chapter-card"><a data-target="#sub2">Electrical circuits</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
-                    </li>
-
-                    <li id="subject_2">
-                        <h3>Astronomy</h3>
-                        <div class="chapter-card"><a data-target="#sub22">Planets11 and stars</a></div>
-                        <div class="chapter-card"><a data-target="#sub33">Black holes</a></div>
-                    </li>
-                </ul>
 
                 <div class="chapter-views chapters-short-view">
                     <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
@@ -703,85 +782,81 @@
 
 
     </script>
-
     <script>
-        $(function () {
+        $(function() {
+            var $parent = $('.rurera-topics-search');
+            var $searchInput = $parent.find('#search');
+            var $searchResultsDiv = $parent.find('#search-results');
+            var $accordionList = $parent.find('#accordion');
 
-            const $wrapper  = $('.rurera-topics-search');
-            const $input    = $wrapper.find('.rurera-search-field');
-            const $results  = $wrapper.find('.rurera-search-results');
-            const $topics   = $('#accordion li');
+            $searchInput.on('input', function() {
+                var query = ($searchInput.val() || '').toLowerCase();
+                if (query.length >= 3) {
+                    var results = [];
+                    $accordionList.find('li').each(function() {
+                        var $chapter = $(this);
+                        var title = ($chapter.find('h3').text() || '').toLowerCase();
+                        var $cards = $chapter.find('.chapter-card a');
 
-            let searchable = [];
+                        if (title.indexOf(query) !== -1) {
+                            results.push({
+                                name: title,
+                                description: 'Main Topic: ' + title,
+                                target: '#' + $chapter.attr('id')
+                            });
+                        }
 
-            $topics.each(function () {
-                const $li = $(this);
-                const title = $li.find('h3').first();
-                const subjectId = $li.attr('id');
-
-                searchable.push({
-                    text: title.text().trim(),
-                    target: '#' + subjectId
-                });
-
-                $li.find('.chapter-card a').each(function () {
-                    searchable.push({
-                        text: $(this).text().trim(),
-                        target: $(this).data('target')
+                        $cards.each(function() {
+                            var $card = $(this);
+                            var cardText = ($card.text() || '').toLowerCase();
+                            if (cardText.indexOf(query) !== -1) {
+                                results.push({
+                                    name: cardText,
+                                    description: 'Sub Topic under ' + title,
+                                    target: $card.attr('data-target')
+                                });
+                            }
+                        });
                     });
-                });
-            });
-
-            $input.on('input', function () {
-
-                let val = $(this).val().toLowerCase().trim();
-
-                if (val.length < 3) {
-                    $results.hide().empty();
-                    return;
-                }
-
-                let matched = searchable.filter(item =>
-                    item.text.toLowerCase().includes(val)
-                );
-
-                if (!matched.length) {
-                    $results.html('<div>No results found</div>').show();
-                    return;
-                }
-
-                $results.html(
-                    matched.map(m =>
-                        '<div data-target="' + m.target + '">' + m.text + '</div>'
-                    ).join('')
-                ).show();
-            });
-
-            $results.on('click', 'div', function () {
-
-                const target = $(this).data('target');
-                const $target = $(target);
-                $target.html('testing');
-                $('.rurera-highlight').removeClass('rurera-highlight');
-                if ($target.length) {
-                    $('html,body').animate({
-                        scrollTop: $target.offset().top - 50
-                    }, 300);
-
-                    $target.addClass('rurera-highlight');
-                }
-
-                $input.val('');
-                $results.hide().empty();
-            });
-
-            $(document).on('click', function (e) {
-                if (!$(e.target).closest('.rurera-topics-search').length) {
-                    $results.hide();
+                    displayResults(results);
+                } else {
+                    $searchResultsDiv.empty().hide();
                 }
             });
 
+            function displayResults(results) {
+                $searchResultsDiv.empty();
+                if (results.length > 0) {
+                    $searchResultsDiv.show();
+                    results.forEach(function(result) {
+                        var $resultElement = $('<a/>', { href: result.target });
+                        var $resultTitle = $('<div/>', { class: 'result-title', text: result.name });
+                        var $resultDescription = $('<div/>', { class: 'result-description', text: result.description });
+                        var $expandIcon = $('<span/>', { class: 'expand-icon', text: '▼' });
+
+                        $resultElement.append($resultTitle, $resultDescription, $expandIcon);
+                        $resultElement.on('click', function(e) {
+                            e.preventDefault();
+                            var $previouslyHighlighted = $parent.find('.highlight');
+                            if ($previouslyHighlighted.length) {
+                                $previouslyHighlighted.removeClass('highlight');
+                            }
+                            var $targetSection = $(result.target);
+                            if ($targetSection.length) {
+                                $('html, body').animate({ scrollTop: $targetSection.offset().top }, 400);
+                                $targetSection.addClass('highlight');
+                            }
+                            $searchInput.val('');
+                            $searchResultsDiv.empty().hide();
+                        });
+                        $searchResultsDiv.append($resultElement);
+                    });
+                } else {
+                    $searchResultsDiv.html('<p>No results found</p>');
+                }
+            }
         });
     </script>
+
 @endpush
 
