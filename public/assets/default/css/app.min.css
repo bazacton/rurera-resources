@@ -16034,29 +16034,29 @@ footer.footer-home {
 }
 
 .rurera-icon-box {
-    width: 40px;
-    height: 40px;
-    background: rgba(0,0,0,0.08);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    color: var(--primary);
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: var(--primary);
 }
 /* Typography for feature grid - NO CLASSES ON P TAGS */
 .rurera-feature-item h3 {
     margin-bottom: 12px;
 }
 .rurera-feature-item p {
-    color: #555;
+  color: #555;
 }
 /* Slider Section Styling */
 .rurera-feature-slider {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .feature-slider-inner {
   background: #90919C14;
@@ -16064,81 +16064,81 @@ footer.footer-home {
   border-radius: 30px 0 0 30px;
 }
 .rurera-slider-header h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 .rurera-slider-header {
-    padding: 0 40px;
+  padding: 0 40px;
 }
 /* Slider Controls Styling */
 .rurera-slider-controls {
-    padding: 20px 40px;
+  padding: 20px 40px;
 }
 .rurera-pagination {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #111;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111;
 }
 .rurera-pagination span {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 .rurera-arrows .btn {
-    width: 45px;
-    height: 45px;
-    padding: 0;
-    margin-left: 10px;
-    border-radius: 50%;
-    border: 1px solid rgba(0,0,0,0.08);
-    background: transparent;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #111;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: transparent;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
 }
 .rurera-arrows .btn:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: #111;
-    text-decoration: none;
+  background: rgba(0, 0, 0, 0.05);
+  border-color: #111;
+  text-decoration: none;
 }
 .rurera-arrows .btn[data-slide="next"] {
-    background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 .bg-circle-box {
-      position: absolute;
-    top: 50%;
-    left: 41%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  transform: translate(-50%, -50%);
 }
 .circle-outer {
   height: 880px;
-    width: 880px;
-    background-color: #FFFFFF24;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 880px;
+  background-color: #FFFFFF24;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .inner-circle {
-    background-color: #FFF3;
-    height: 630px;
-    width: 630px;
-    border-radius: 50%;
+  background-color: #FFF3;
+  height: 630px;
+  width: 630px;
+  border-radius: 50%;
 }
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
-    .rurera-feature-wrapper {
-        position: static;
-        margin-bottom: 50px;
-        padding-right: 0;
-    }
-    
-    .rurera-content-box .rurera-sticky-left-txt {
-        font-size: 2.5rem;
-    }
-    
-    .rurera-scroll-content {
-        padding-left: 0;
-    }
+  .rurera-feature-wrapper {
+      position: static;
+      margin-bottom: 50px;
+      padding-right: 0;
+  }
+  
+  .rurera-content-box .rurera-sticky-left-txt {
+      font-size: 2.5rem;
+  }
+  
+  .rurera-scroll-content {
+      padding-left: 0;
+  }
 }
 #featureSwiper {
   overflow: visible;
