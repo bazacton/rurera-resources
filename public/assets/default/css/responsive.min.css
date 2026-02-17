@@ -1948,14 +1948,13 @@
     .rurera-get-app .rurera-help-container {
         padding: 30px;
     }
-    .rurera-help-container .store-badges {
-        margin-top: 15px;
+    .store-badges {
         gap: 15px;
     }
     .rurera-get-app .rurera-help-content {
         width: 60%;
     }
-    .rurera-help-container .store-badges .store-badge-link {
+    .store-badges .store-badge-link {
         width: 44%;
     }
     .rurera-get-app .rurera-help-visual {
