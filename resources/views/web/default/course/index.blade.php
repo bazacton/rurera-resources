@@ -10,7 +10,6 @@
 
     .rurera-topics-search {
         position: relative;
-        max-width: 400px;
     }
     .rurera-topics-search .search-field {
         padding: 10px;
@@ -487,7 +486,6 @@
                         </ul>
                     </div>
                 </div>
-
                 </div>
                 <div class="chapter-views chapters-detail-view rurera-hide">
                     <div class="current-topics-detail bg-white mb-30 mt-15">
