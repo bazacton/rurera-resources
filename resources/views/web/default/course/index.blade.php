@@ -88,6 +88,12 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="chapter-search">
+                            <div class="form-group">
+                                <input type="text" name="search" class="form-control border-0 font-14" value="" placeholder="Search">
+                                <button type="submit" class="btn btn-primary rounded-pill">Search</button>
+                            </div>
+                        </div>
                     </div>
                     <ul class="font-14 font-weight-500">
                         @foreach($course->chapters as $chapter)
