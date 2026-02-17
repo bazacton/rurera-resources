@@ -43,6 +43,9 @@
 .blog-medium .blog-grid-detail .blog-grid-title {
     margin-bottom: 0;
 }
+.blog-medium .blog-grid-detail .blog-grid-title a:hover {
+    color: var(--primary);
+}
 .blog-single-post .rurera-blog h2 {
     margin-bottom: 0;
 }
