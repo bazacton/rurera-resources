@@ -233,9 +233,9 @@
                     <form method="post" action="/switch-user" class="mt-35 switch_user_login">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">
-                        <label class="input-label" for="email">Password:</label>
+                        <label class="input-label" for="password">Password:</label>
                         <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password"
-                               aria-describedby="emailHelp">
+                               aria-describedby="passwordHelp">
                         <input type="hidden" name="user_id" value="{{isset($parent_id)? $parent_id : 0}}">
                     </div>
 
