@@ -16443,6 +16443,7 @@ section.feature-grid {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    height: 100%;
 }
 .feature-icon {
     height: 30px;
