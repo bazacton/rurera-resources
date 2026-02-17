@@ -16466,3 +16466,31 @@ section.feature-grid {
     font-weight: normal;
 }
 /* modules-card style end */
+/* rurera-get-app section style start */
+.rurera-get-app {
+    background-color: var(--primary);
+    margin: 100px 0;
+}
+.rurera-get-app .rurera-help-container {
+    background-color: inherit;
+    color: #fff;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.rurera-get-app h3 {
+    margin: 0 0 15px;
+}
+.rurera-get-app .rurera-help-visual {
+    max-width: none;
+    max-height: none;
+    padding: 0;
+    margin: -50px 0;
+}
+.rurera-get-app .rurera-help-content {
+    width: auto;
+    padding: 0;
+}
+/* rurera-get-app section style end */
