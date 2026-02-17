@@ -16531,6 +16531,9 @@ section.feature-grid {
 .rurera-learning-app .badge {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
 }
+.rurera-learning-app .store-badges {
+  justify-content: center;
+}
 .rurera-partners {
   display: flex;
   align-items: center;
