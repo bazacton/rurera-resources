@@ -371,7 +371,6 @@
                         </li>
                         <!-- Add more subtopics until 40+ as needed -->
                     </ul>
-                </div>
 
                 <div class="chapter-views chapters-short-view">
                     <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
@@ -487,6 +486,8 @@
                             @endforeach
                         </ul>
                     </div>
+                </div>
+
                 </div>
                 <div class="chapter-views chapters-detail-view rurera-hide">
                     <div class="current-topics-detail bg-white mb-30 mt-15">
