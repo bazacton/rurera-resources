@@ -769,7 +769,7 @@ Right SideBar Style Start
 }
 .user-profile-icons .dropdown > a > img,
 .user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
-.user-profile-icons li strong {display: inline-flex; align-items: center; gap: 5px; position: relative;}
+.user-profile-icons li .dropdown-toggle-btn {display: inline-flex; align-items: center; gap: 5px; position: relative; border: 0; padding: 0; background-color: inherit;}
 .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
 .user-profile-icons .dropdown-menu:after, 
 .user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
