@@ -14974,8 +14974,7 @@ section:has(.trial-steps) .rurera-btn-group a small {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.rurera-help-container .store-badges {
-    margin-top: 25px;
+.store-badges {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -16521,7 +16520,7 @@ section.feature-grid {
 .app-img-holder img {
     max-width: 100%;
 }
-.rurera-help-container .store-badges .store-badge-link img {
+.store-badges .store-badge-link img {
     max-width: 100%;
     object-fit: contain;
     max-height: fit-content;
