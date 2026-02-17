@@ -16449,7 +16449,7 @@ section.feature-grid {
     width: 30px;
 }
 .feature-text {max-width: calc(100% - 30px);flex: 0 0 calc(100% - 30px);padding-left: 15px;}
-.feature-text h3 {
+.feature-text h3,.feature-text p {
     margin: 0 0 15px;
 }
 .feature-link {
