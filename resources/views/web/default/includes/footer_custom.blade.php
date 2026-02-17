@@ -84,7 +84,7 @@
 			</div>
 			<div class="col-12">
 				<div class="footer-bottom">
-					<div class="footer-nav-holder pt-50">
+					<div class="footer-nav-holder pt-0">
 						<div class="footer-nav-box">
 							<div class="footer-navs">
 								<ul>
