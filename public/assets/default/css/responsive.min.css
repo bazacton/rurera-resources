@@ -1962,6 +1962,10 @@
         margin: 0;
         width: 40%;
     }
+    .rurera-get-app .rurera-help-visual img {
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
 @media screen and (min-width: 767px) and (max-width: 1600px) {
     .db-members .list-group:has(.rurera-tables-list) {
