@@ -178,314 +178,123 @@
                     <input type="text" id="search" placeholder="Search..." class="search-field">
                     <div class="search-results" id="search-results"></div>
 
-                    <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
-                        <li id="subject_202">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Changes to materials</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse476" aria-expanded="true">
-                                        Simple chemical reactions
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse491" aria-expanded="true">
-                                        Detecting chemical reactions
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse492" aria-expanded="true">
-                                        Neutralisation
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
 
-                        <!-- Added random 40 subtopics -->
-                        <li id="subject_203">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Electricity</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse485" aria-expanded="true">
-                                        Flow of electricity
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse487" aria-expanded="true">
-                                        Electrical circuits
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse488" aria-expanded="true">
-                                        Measuring the flow of current
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
+                    <div class="chapter-views chapters-short-view">
+                        <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
+                            <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
+                                @foreach($course->chapters as $chapter)
 
-                        <!-- Random additional subtopics -->
-                        <li id="subject_204">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Physics</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse501" aria-expanded="true">
-                                        Forces and motion
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse502" aria-expanded="true">
-                                        Energy transfer
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse503" aria-expanded="true">
-                                        Waves and sound
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
+                                    <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}">
+                                        <h3 class="mb-10 font-16 font-weight-bold">{{ $chapter->title }} <span class="total-sub-topics"><em>{{$chapter->ChapterYearTopicParts->count()}}</em> Topics</span></h3>
+                                        @if($chapter->ChapterYearTopicParts->count() > 0)
+                                            <div class="lms-chapter-ul-outer">
+                                                @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
 
-                        <!-- More Random Subtopics -->
-                        <!-- You can continue adding more as required for testing -->
-                        <li id="subject_205">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse504" aria-expanded="true">
-                                        Planets and stars
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse505" aria-expanded="true">
-                                        Solar system exploration
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse506" aria-expanded="true">
-                                        Space-time and black holes
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="subject_205">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5042" aria-expanded="true">
-                                        Planets and stars
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5052" aria-expanded="true">
-                                        Solar system exploration
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5062" aria-expanded="true">
-                                        Space-time and black holes
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="subject_25">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50413" aria-expanded="true">
-                                        Planets and stars
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50513" aria-expanded="true">
-                                        Solar system exploration
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50613" aria-expanded="true">
-                                        Space-time and black holes
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="subject_2051">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5041" aria-expanded="true">
-                                        Planets and stars
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5051" aria-expanded="true">
-                                        Solar system exploration
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5061" aria-expanded="true">
-                                        Space-time and black holes
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
+                                                    @php
 
-                        <li id="subject_20555">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50415" aria-expanded="true">
-                                        Planets and stars
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50515" aria-expanded="true">
-                                        Solar system exploration
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50615" aria-expanded="true">
-                                        Space-time and black holes
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
+                                                        $total_completion = 0;
+                                                        $chapter_slug = $chapter->chapter_slug;
+                                                        $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
 
-                        <li id="subject_20533">
-                            <h3 class="mb-10 font-16 font-weight-bold text-dark-charcoal">Astronomy2</h3>
-                            <div class="lms-chapter-ul-outer">
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50416" aria-expanded="true">
-                                        Planets and stars
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50516" aria-expanded="true">
-                                        Solar system exploration
-                                    </a>
-                                </div>
-                                <div class="chapter-card">
-                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse50616" aria-expanded="true">
-                                        Space-time and black holes
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Add more subtopics until 40+ as needed -->
-                    </ul>
+                                                        $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
+                                                        $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
+                                                        $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
 
-                <div class="chapter-views chapters-short-view">
-                    <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
-                        <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
-                            @foreach($course->chapters as $chapter)
-                                <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}">
-                                    <h3 class="mb-10 font-16 font-weight-bold">{{ $chapter->title }} <span class="total-sub-topics"><em>{{$chapter->ChapterYearTopicParts->count()}}</em> Topics</span></h3>
-                                    @if($chapter->ChapterYearTopicParts->count() > 0)
-                                        <div class="lms-chapter-ul-outer">
-                                            @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
-
-                                            @php
-
-                                            $total_completion = 0;
-                                            $chapter_slug = $chapter->chapter_slug;
-                                            $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
-
-                                            $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
-                                            $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
-                                            $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
-
-                                            $sas_score = isset($topicPerformData['sas_score'])? $topicPerformData['sas_score'] : 0;
-                                            $sas_accuracy = isset($topicPerformData['sas_accuracy'])? $topicPerformData['sas_accuracy'] : 0;
-                                            $smart_score = isset($topicPerformData['smart_score'])? $topicPerformData['smart_score'] : 0;
+                                                        $sas_score = isset($topicPerformData['sas_score'])? $topicPerformData['sas_score'] : 0;
+                                                        $sas_accuracy = isset($topicPerformData['sas_accuracy'])? $topicPerformData['sas_accuracy'] : 0;
+                                                        $smart_score = isset($topicPerformData['smart_score'])? $topicPerformData['smart_score'] : 0;
 
 
-                                            $tier1_incorrects = isset($topicPerformData['tier1_incorrects'])? $topicPerformData['tier1_incorrects'] : 0;
-                                            $tier2_incorrects = isset($topicPerformData['tier2_incorrects'])? $topicPerformData['tier2_incorrects'] : 0;
-                                            $tier3_incorrects = isset($topicPerformData['tier3_incorrects'])? $topicPerformData['tier3_incorrects'] : 0;
+                                                        $tier1_incorrects = isset($topicPerformData['tier1_incorrects'])? $topicPerformData['tier1_incorrects'] : 0;
+                                                        $tier2_incorrects = isset($topicPerformData['tier2_incorrects'])? $topicPerformData['tier2_incorrects'] : 0;
+                                                        $tier3_incorrects = isset($topicPerformData['tier3_incorrects'])? $topicPerformData['tier3_incorrects'] : 0;
 
-                                            $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
+                                                        $user_difficulty_level = isset($topicPerformData['user_difficulty_level'])? $topicPerformData['user_difficulty_level'] : '';
 
-                                            $completion_class = 'accuracy-not-started';
-                                            $completion_class = ($smart_score > 0)? 'accuracy-practice-needed' : $completion_class;
-                                            $completion_class = ($smart_score > 39)? 'accuracy-good' : $completion_class;
-                                            $completion_class = ($smart_score > 59)? 'accuracy-very-good' : $completion_class;
-                                            $completion_class = ($smart_score > 79)? 'accuracy-excellent' : $completion_class;
-
-
-                                            $completion_title = 'Not Started';
-                                            $completion_title = ($smart_score > 0)? 'Practice Needed' : $completion_title;
-                                            $completion_title = ($smart_score > 39)? 'Good' : $completion_title;
-                                            $completion_title = ($smart_score > 59)? 'Very Good' : $completion_title;
-                                            $completion_title = ($smart_score > 79)? 'Excellent' : $completion_title;
+                                                        $completion_class = 'accuracy-not-started';
+                                                        $completion_class = ($smart_score > 0)? 'accuracy-practice-needed' : $completion_class;
+                                                        $completion_class = ($smart_score > 39)? 'accuracy-good' : $completion_class;
+                                                        $completion_class = ($smart_score > 59)? 'accuracy-very-good' : $completion_class;
+                                                        $completion_class = ($smart_score > 79)? 'accuracy-excellent' : $completion_class;
 
 
-                                            $completion_icon = 'above_0';
-                                            $completion_icon = ($smart_score > 0)? 'above_25' : $completion_icon;
-                                            $completion_icon = ($smart_score > 39)? 'above_50' : $completion_icon;
-                                            $completion_icon = ($smart_score > 59)? 'above_80' : $completion_icon;
-                                            $completion_icon = ($smart_score > 79)? 'above_80' : $completion_icon;
+                                                        $completion_title = 'Not Started';
+                                                        $completion_title = ($smart_score > 0)? 'Practice Needed' : $completion_title;
+                                                        $completion_title = ($smart_score > 39)? 'Good' : $completion_title;
+                                                        $completion_title = ($smart_score > 59)? 'Very Good' : $completion_title;
+                                                        $completion_title = ($smart_score > 79)? 'Excellent' : $completion_title;
 
-                                            //$total_completion = 40;
-                                                @endphp
-                                                <div class="chapter-card">
-                                                    <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} {{($smart_score > 0)? '('.$smart_score.')' : ''}}
-                                                    <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
-                                                    <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
-                                                        <ul class="chapter-tags">
-                                                            <li>
-                                                                <a href="javascript:;" data-topic_part_id="{{$topicPartObj->id}}" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/practice-skills" class="course-practice-btn">Practice Skills</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="javascript:;" class="debug-details-btn">Debug Details</a>
-                                                                <div class="debug-details rurera-hide">
-                                                                    <span class="debug-detail-item">Part ID: <span>{{$topicPartObj->id}}</span></span>
-                                                                    <span class="debug-detail-item">Quiz ID: <span>{{$quizObj->id}}</span></span>
-                                                                    <span class="debug-detail-item">Difficulty Level: <span>{{$user_difficulty_level}}</span></span>
-                                                                    <span class="debug-detail-item">Accuracy: <span>{{$topic_accuracy}}</span></span>
-                                                                    <span class="debug-detail-item">Completion: <span>{{$total_completion}}</span></span>
-                                                                    <span class="debug-detail-item">SAS Score: <span>{{$sas_score}}</span></span>
-                                                                    <span class="debug-detail-item">SAS Accuracy: <span>{{$sas_accuracy}}%</span></span>
-                                                                    <span class="debug-detail-item">Smart Score: <span>{{$smart_score}}</span></span>
-                                                                    <span class="debug-detail-item">Tier 1 Incorrects: <span>{{$tier1_incorrects}}</span></span>
-                                                                    <span class="debug-detail-item">Tier 2 Incorrects: <span>{{$tier2_incorrects}}</span></span>
-                                                                    <span class="debug-detail-item">Tier 3 Incorrects: <span>{{$tier3_incorrects}}</span></span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
 
-                                                    @php $total_completion = rand(0,100);
+                                                        $completion_icon = 'above_0';
+                                                        $completion_icon = ($smart_score > 0)? 'above_25' : $completion_icon;
+                                                        $completion_icon = ($smart_score > 39)? 'above_50' : $completion_icon;
+                                                        $completion_icon = ($smart_score > 59)? 'above_80' : $completion_icon;
+                                                        $completion_icon = ($smart_score > 79)? 'above_80' : $completion_icon;
+
+                                                        //$total_completion = 40;
+                                                    @endphp
+                                                    <div class="chapter-card">
+                                                        <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} {{($smart_score > 0)? '('.$smart_score.')' : ''}}
+                                                            <span class="topic-accuracy {{$completion_class}}" data-title="{{$completion_title}}"><img src="/assets/default/svgs/{{$completion_icon}}.svg"></span>                                                                                </a>
+                                                        <div id="collapse{{$topicPartObj->id}}" class="collapse" data-parent="#accordion">
+                                                            <ul class="chapter-tags">
+                                                                <li>
+                                                                    <a href="javascript:;" data-topic_part_id="{{$topicPartObj->id}}" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/practice-skills" class="course-practice-btn">Practice Skills</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="debug-details-btn">Debug Details</a>
+                                                                    <div class="debug-details rurera-hide">
+                                                                        <span class="debug-detail-item">Part ID: <span>{{$topicPartObj->id}}</span></span>
+                                                                        <span class="debug-detail-item">Quiz ID: <span>{{$quizObj->id}}</span></span>
+                                                                        <span class="debug-detail-item">Difficulty Level: <span>{{$user_difficulty_level}}</span></span>
+                                                                        <span class="debug-detail-item">Accuracy: <span>{{$topic_accuracy}}</span></span>
+                                                                        <span class="debug-detail-item">Completion: <span>{{$total_completion}}</span></span>
+                                                                        <span class="debug-detail-item">SAS Score: <span>{{$sas_score}}</span></span>
+                                                                        <span class="debug-detail-item">SAS Accuracy: <span>{{$sas_accuracy}}%</span></span>
+                                                                        <span class="debug-detail-item">Smart Score: <span>{{$smart_score}}</span></span>
+                                                                        <span class="debug-detail-item">Tier 1 Incorrects: <span>{{$tier1_incorrects}}</span></span>
+                                                                        <span class="debug-detail-item">Tier 2 Incorrects: <span>{{$tier2_incorrects}}</span></span>
+                                                                        <span class="debug-detail-item">Tier 3 Incorrects: <span>{{$tier3_incorrects}}</span></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        @php $total_completion = rand(0,100);
 
                                                     $completion_class = 'smartscore-not-started';
                                                     $completion_class = ($total_completion > 0)? 'smartscore-practice-needed' : $completion_class;
                                                     $completion_class = ($total_completion > 39)? 'smartscore-good' : $completion_class;
                                                     $completion_class = ($total_completion > 59)? 'smartscore-very-good' : $completion_class;
                                                     $completion_class = ($total_completion > 79)? 'smartscore-excellent' : $completion_class;
-                                                    @endphp
+                                                        @endphp
 
-                                                    <div class="percent-holder rurera-hide">
-                                                        <div class="chapter_percent circle-blue {{$completion_class}}" data-percent="{{$total_completion}}">
-                                                            <div class="circle_inner">
-                                                                <div class="round_per"></div>
+                                                        <div class="percent-holder rurera-hide">
+                                                            <div class="chapter_percent circle-blue {{$completion_class}}" data-percent="{{$total_completion}}">
+                                                                <div class="circle_inner">
+                                                                    <div class="round_per"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="seg-progress">
+                                                            <div class="seg-fill {{$completion_class}}" title="Smart Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
+                                                        </div>
                                                     </div>
-                                                    <div class="seg-progress">
-                                                        <div class="seg-fill {{$completion_class}}" title="Smart Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                        </div>
+                                                @endforeach
+                                            </div>
 
                                         @endif
-                                </li>
-                            @endforeach
-                        </ul>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="chapter-views chapters-detail-view rurera-hide">
                     <div class="current-topics-detail bg-white mb-30 mt-15">
@@ -736,41 +545,41 @@
                 success: function (return_data) {
                     rurera_remove_loader(loaderDiv, 'button');
                     $(".learn-concept-data").html(return_data);
-                        subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
-                            centeredSlides: true,
-                            slideToClickedSlide: true,
-                            loop: false,
-                            slidesPerView: 3,
-                            spaceBetween: 0,
+                    subchapterSwiper = new Swiper('.subchapter-slider .swiper-container', {
+                        centeredSlides: true,
+                        slideToClickedSlide: true,
+                        loop: false,
+                        slidesPerView: 3,
+                        spaceBetween: 0,
 
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev'
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'progressbar'
+                        },
+
+                        breakpoints: {
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                centeredSlides: true
                             },
-
-                            pagination: {
-                                el: '.swiper-pagination',
-                                type: 'progressbar'
+                            480: {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                centeredSlides: true
                             },
-
-                            breakpoints: {
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 0,
-                                    centeredSlides: true
-                                },
-                                480: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 0,
-                                    centeredSlides: true
-                                },
-                                640: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 0,
-                                    centeredSlides: true
-                                }
+                            640: {
+                                slidesPerView: 3,
+                                spaceBetween: 0,
+                                centeredSlides: true
                             }
-                        });
+                        }
+                    });
 
                 }
             });
