@@ -7,7 +7,7 @@
             </a>
         </li>
         <li class="streak-dropdown">
-            <button type="button" class="streak-icon">
+            <button type="button" class="streak-icon" aria-expanded="false" aria-controls="streakMenu">
                 <img src="/assets/default/svgs/streak-fire.svg" height="64" width="64" alt="streak-fire"> 1
             </button>
             <div class="streak-dropdown-content font-16">
