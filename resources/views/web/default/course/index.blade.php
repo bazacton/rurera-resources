@@ -114,6 +114,13 @@
                     </a>
                     </div>
                 </div>--}}
+
+
+                <div class="rurera-topics-search">
+                    <input type="text" class="rurera-search-field" placeholder="Search topics (min 3 letters)">
+                    <div class="rurera-search-results"></div>
+                </div>
+                
                 <div class="chapter-views chapters-short-view">
                     <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                         <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">

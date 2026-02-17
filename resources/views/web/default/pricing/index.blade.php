@@ -282,26 +282,6 @@
     </section>
 
   
-    <section class="rurera-have-question pt-70 pb-70 mt-50" style="background-color: #f3f6ff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12 mx-auto">
-                    <div class="have-question-card">
-                        <div class="media-holder">
-                            <figure><img src="/assets/default/img/About-Us-CTA-Image.jpg" alt="" /> <img class="attachment-img" src="/assets/default/img/hero-ornament.png" alt="" /></figure>
-                        </div>
-                        <div class="text-box">
-                            <div class="section-title">
-                            <h2 class="font-40 mb-20 font-weight-500">Got Questions? Our team is here to help reach out and let us assist you!</h2>
-                            <span>Need help? Rurera's customer support team is here to assist with subscriptions, features, or technical issues. Contact us for quick and friendly support to ensure you get the most from your Rurera experience.</span>
-                            </div>
-                            <div class="contact-info"><a href="/contact-us" class="contact-btn">Contact Us</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
 <div class="modal fade rurera-choose-membership" id="exampleModal">
     <div class="modal-dialog">
