@@ -31,7 +31,7 @@
                                 <div class="levels-progress horizontal">
                                     <span class="progress-numbers">{{$subject_percentage['skills_attempted']}}/{{$subject_percentage['total_skils']}} Lessons</span>
                                     <span class="progress-box">
-                                        <span class="progress-count" style="width: {{$subject_percentage['percentage']}}%;"></span>
+                                        <span class="progress-count width_{{$subject_percentage['percentage']}}"></span>
                                     </span>
                                 </div>
                             @else
@@ -46,7 +46,7 @@
                                 aria-valuetext="0% complete"
                                 aria-labelledby="science-title">
                                 <span class="progress-box">
-                                    <span class="progress-count" style="width: 0%;"></span>
+                                    <span class="progress-count width_0"></span>
                                 </span>
                                 <span class="progress-numbers" aria-hidden="true">0%</span>
                             </div>
