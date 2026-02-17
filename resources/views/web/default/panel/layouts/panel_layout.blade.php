@@ -75,47 +75,47 @@
                         </div>
                         <!-- Panel Content End -->
                         <!-- Panel Right Sidebar Start -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-15 panel-right-sidebar">
+                        <aside class="col-12 col-sm-12 col-md-12 col-lg-4 pl-15 panel-right-sidebar" aria-label="User dashboard sidebar">
                             
                             @include(getTemplate(). '.panel.includes.user_top_bar')
                             <div class="sidebar-inner-elements">
                                 @if(auth()->user()->isUser())
-                                        <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
-                                            <ul>
-                                                <li>
-                                                    <div class="store-item">
-                                                        <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                        <h3 class="item-label font-16 font-weight-bold">
-                                                            Current Balance
-                                                            <span class="iteme-numbers font-14 font-weight-500">{{$authUser->getRewardPoints()}}</span>
-                                                        </h3>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    @endif
+                                    <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
+                                        <ul>
+                                            <li>
+                                                <div class="store-item">
+                                                    <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
+                                                    <h3 class="item-label font-16 font-weight-bold">
+                                                        Current Balance
+                                                        <span class="iteme-numbers font-14 font-weight-500">{{$authUser->getRewardPoints()}}</span>
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                @endif
 
                                     <!-- Overall performance (semi gauge) -->
                                 <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                     <div>
-                                    <h3 class="font-16 font-weight-bold mb-0">Overall performance</h3>
-                                    <div class="font-12 text-muted mt-1">Course completion rate</div>
+                                        <h3 class="font-16 font-weight-bold mb-0">Overall performance</h3>
+                                        <div class="font-12 text-muted mt-1">Course completion rate</div>
                                     </div>
 
                                     <div class="d-flex align-items-center justify-content-center mt-15">
-                                    <!-- Change --p to your percentage (0–100) -->
-                                    <div class="overall-gauge" style="--p:80;" role="img" aria-label="Overall performance 80 percent. Pro learner level">
-                                        <svg viewBox="0 0 200 120" class="w-100 d-block" style="max-width:260px;">
-                                        <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="18" stroke-linecap="round"></path>
+                                        <!-- Change --p to your percentage (0–100) -->
+                                        <div class="overall-gauge" style="--p:80;" role="img" aria-label="Overall performance 80 percent. Pro learner level">
+                                            <svg viewBox="0 0 200 120" class="w-100 d-block" style="max-width:260px;">
+                                            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="18" stroke-linecap="round"></path>
 
-                                        <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#2fbf71" stroke-width="18" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
-                                        </svg>
+                                            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#2fbf71" stroke-width="18" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
+                                            </svg>
 
-                                        <div class="overall-gauge-center text-center">
-                                        <div class="font-24 font-weight-bold mb-0">80%</div>
-                                        <div class="font-12 text-muted text-uppercase" style="letter-spacing:.06em;">Pro learner</div>
+                                            <div class="overall-gauge-center text-center">
+                                                <div class="font-24 font-weight-bold mb-0">80%</div>
+                                                <div class="font-12 text-muted text-uppercase" style="letter-spacing:.06em;">Pro learner</div>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
 
@@ -123,44 +123,44 @@
                                 <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                     <h3 class="font-16 font-weight-bold mb-10">Your areas to focus on</h3>
                                     <div class="d-flex align-items-start mb-15">
-                                    <div class="mr-10" style="line-height:1;">
-                                        <!-- lightbulb -->
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                        <path d="M9 21h6" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M10 17h4" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M12 2a7 7 0 0 0-4 12c.7.6 1 1.2 1 2h6c0-.8.3-1.4 1-2A7 7 0 0 0 12 2Z" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="font-13 text-muted">You could use extra support on these skills:</div>
+                                        <div class="mr-10" style="line-height:1;">
+                                            <!-- lightbulb -->
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                            <path d="M9 21h6" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linecap="round"></path>
+                                            <path d="M10 17h4" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linecap="round"></path>
+                                            <path d="M12 2a7 7 0 0 0-4 12c.7.6 1 1.2 1 2h6c0-.8.3-1.4 1-2A7 7 0 0 0 12 2Z" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="font-13 text-muted">You could use extra support on these skills:</div>
                                     </div>
 
                                     <div class="table-responsive">
-                                    <table class="table table-sm mb-0 focus-table">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col" class="font-12 text-muted font-weight-bold text-left">Skill</th>
-                                            <th scope="col" class="font-12 text-muted font-weight-bold text-right">Questions missed</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions: word problems</a></td>
-                                            <td class="font-13 text-right font-weight-bold">4</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-13"><a href="#" class="text-decoration-none">Lines, line segments and rays</a></td>
-                                            <td class="font-13 text-right font-weight-bold">4</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions</a></td>
-                                            <td class="font-13 text-right font-weight-bold">3</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-13"><a href="#" class="text-decoration-none">Understanding area of a parallelogram</a></td>
-                                            <td class="font-13 text-right font-weight-bold">3</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                        <table class="table table-sm mb-0 focus-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="font-12 text-muted font-weight-bold text-left">Skill</th>
+                                                    <th scope="col" class="font-12 text-muted font-weight-bold text-right">Questions missed</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions: word problems</a></td>
+                                                    <td class="font-13 text-right font-weight-bold">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-13"><a href="#" class="text-decoration-none">Lines, line segments and rays</a></td>
+                                                    <td class="font-13 text-right font-weight-bold">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions</a></td>
+                                                    <td class="font-13 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-13"><a href="#" class="text-decoration-none">Understanding area of a parallelogram</a></td>
+                                                    <td class="font-13 text-right font-weight-bold">3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
 
                                     <div class="mt-15">
@@ -971,9 +971,9 @@
                                 @include('web.default.includes.footer')
                             </div>
                             @endif
-                            </div>
+                        </aside>
                                     
-                        <!-- Panel Right Sidebar Start -->
+                        <!-- Panel Right Sidebar End -->
                     </div>
                 </div>
             </div>
