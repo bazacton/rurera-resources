@@ -16471,26 +16471,30 @@ section.feature-grid {
     margin: 100px 0;
 }
 .rurera-get-app .rurera-help-container {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 0 80px;
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    border-radius: 20px;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0 80px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 20px;
 }
-.rurera-get-app h3 {
+.rurera-get-app h2 {
     margin: 0 0 15px;
+    font-weight: 500;
 }
 .rurera-get-app .rurera-help-visual {
     max-width: none;
     max-height: none;
     padding: 0;
     margin: -50px 0;
+    width: 50%;
+    text-align: right;
 }
+
 .rurera-get-app .rurera-help-content {
-    width: auto;
+    width: 50%;
     padding: 0;
 }
 /* rurera-get-app section style end */
