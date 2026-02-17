@@ -10486,7 +10486,7 @@ body .flipbook-data {
 .inner-testimonial:after {
     position: absolute;
     bottom: 0;
-    height: 40%;
+    height: 18%;
     width: 100%;
     content: "";
     z-index: 2;
@@ -10495,7 +10495,7 @@ body .flipbook-data {
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.8) 40%, rgb(255 255 255 / 0%) 100%);
 }
 .inner-testimonial .rurera-masonry {
-    height: 530px;
+    height: 1200px;
     overflow: hidden;
 }
 .rurera-testimonial-tabs .testimonial-filters~.rurera-masonry {
