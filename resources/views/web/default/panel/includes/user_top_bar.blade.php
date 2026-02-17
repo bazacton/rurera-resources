@@ -7,9 +7,9 @@
             </a>
         </li>
         <li class="streak-dropdown">
-            <a href="#" class="streak-icon">
+            <button type="button" class="streak-icon">
                 <img src="/assets/default/svgs/fire-stroke.svg" height="800" width="800" alt="fire-stroke"> 1
-            </a>
+            </button>
             <div class="streak-dropdown-content font-16">
                 <div class="streak-days">
                     <div class="streak-day-head">
