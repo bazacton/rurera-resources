@@ -138,12 +138,12 @@
 
         <li class="dropdown dropdown-list-toggle">
             <strong>
-                <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
+                <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                 {{$authUser->getRewardPoints()}}
             </strong>
             <div class="dropdown-menu user-coins-menu dropdown-list dropdown-menu-right">
                 <div class="dropdown-header">
-                    <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
+                    <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                     <div class="coins-text">
                         Coins
                         <span>You have {{$authUser->getRewardPoints()}} Coins <a href="/shop">Go to Shop</a></span>
