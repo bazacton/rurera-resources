@@ -16503,12 +16503,13 @@ section.feature-grid {
     width: 50%;
     text-align: right;
 }
-
 .rurera-get-app .rurera-help-content {
     width: 50%;
     padding: 0;
 }
-
+.rurera-get-app p {
+    color: rgba(255, 255, 255, 0.5);
+}
 /* rurera-get-app section style end */
 /* rurera-partners style start */
 .rurera-learning-app .badge {
