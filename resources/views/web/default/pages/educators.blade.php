@@ -264,30 +264,6 @@
    {!! parseShortcode('[SC_accordion-slider-section-f]') !!}
    {!! parseShortcode('[SC_educator-faqs-section-f]') !!}
 
-    <section class="mx-w-100 rurera-column-section rurera-text-section py-70" style="background-color: #f27530;" id="request-demo">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8 col-md-8">
-                    <div class="d-flex flex-column rurera-text-holder">
-                        <div class="col-12 col-lg-12 col-md-12">
-                            <h2 class="text-white font-40 mb-20">Explore Rurera: Schedule Your Demo</h2>
-                            <p itemprop="description" class="font-16 mb-0 text-white">
-                                Interested in how Rurera assessments can benefit your school? Schedule a meeting with our team to explore how our solutions can integrate with your educational approach. Click the button below to book a demo
-                                today!
-                            </p>
-                            <div class="rurera-btn-group mt-30"><a class="text-white border-white rurera-btn rounded-pill" href="https://rurera.com/request-a-demo" itemprop="url">Request a demo</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 col-md-4">
-                    <div class="position-relative"><img alt="#" height="270" src="../assets/default/img/request-a-demo.png" width="375" /></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
 </section>
 
 @endsection
