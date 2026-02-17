@@ -199,7 +199,7 @@
           <div class="masonry-grid row">
              @foreach($testimonials as $testimonial)
                 <div class="grid-item col-lg-3 col-md-4 col-sm-6 student">
-                    <div class="testimonial-card mb-20">
+                    <div class="testimonial-card mb-10">
                         <div class="testimonial-body">
                           <p itemprop="description">{!! nl2br($testimonial->comment) !!}</p>
                           <div itemprop="author" class="author-name">
