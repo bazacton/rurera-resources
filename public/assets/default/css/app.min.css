@@ -16468,17 +16468,19 @@ section.feature-grid {
 /* modules-card style end */
 /* rurera-get-app section style start */
 .rurera-get-app {
-    margin: 100px 0;
+    margin: 0 0 60px;
+    overflow: hidden;
+    padding-top: 50px;
 }
 .rurera-get-app .rurera-help-container {
-  background-color: var(--primary);
-  color: #fff;
-  padding: 0 80px;
-  margin: 0 auto;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  border-radius: 20px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0 80px;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 20px;
 }
 .rurera-get-app h2 {
     margin: 0 0 15px;
@@ -16488,7 +16490,7 @@ section.feature-grid {
     max-width: none;
     max-height: none;
     padding: 0;
-    margin: -50px 0;
+    margin: -50px 0 -5px;
     width: 50%;
     text-align: right;
 }
@@ -16497,4 +16499,5 @@ section.feature-grid {
     width: 50%;
     padding: 0;
 }
+
 /* rurera-get-app section style end */
