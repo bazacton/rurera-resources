@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="btn-holder">
-                    <button type="button" class="view-btn">VIEW MORE</button>
+                    <button type="button" class="view-btn">View more</button>
                 </div>
 
             </div>
