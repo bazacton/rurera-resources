@@ -118,8 +118,8 @@
             <span itemprop="number" class="rurera-serial-no">#1</span>
           </div>
           <p itemprop="datePublished" content="2023-06-05">Happy parent / 4 June 2023</p>
-          <h3 class="font-36 font-weight-bold text-dark">Cristian Miller</h3>
-          <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">As a parent, I want to share my incredible experience that has made a significant impact on my child's education. Rurera has truly transformed the way my child learns and engages with educational content. Recommended!</p>
+          <h3>Cristian Miller</h3>
+          <p itemprop="description" class="mt-10">As a parent, I want to share my incredible experience that has made a significant impact on my child's education. Rurera has truly transformed the way my child learns and engages with educational content. Recommended!</p>
         </div>
       </div>
       <div class="col-12 col-lg-6 mb-30">
@@ -148,8 +148,8 @@
             <span itemprop="number" class="rurera-serial-no">#2</span>
           </div>
           <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
-          <h3 class="font-36 font-weight-bold text-dark">Peter J.</h3>
-          <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
+          <h3>Peter J.</h3>
+          <p itemprop="description" class="mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
         </div>
       </div>
     </div>
