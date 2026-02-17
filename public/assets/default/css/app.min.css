@@ -16521,6 +16521,11 @@ section.feature-grid {
 .app-img-holder img {
     max-width: 100%;
 }
+.rurera-help-container .store-badges .store-badge-link img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: fit-content;
+}
 /* rurera-get-app section style end */
 /* rurera-partners style start */
 .rurera-learning-app .badge {
