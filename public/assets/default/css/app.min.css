@@ -16176,7 +16176,7 @@ footer.footer-home {
     min-height: auto;
   }
   .rurera-features-element .row {
-    gap: 25px;
+    gap: 25px 0;
   }
   .rurera-testimonials .masonry-grid {
     column-count: 2;
