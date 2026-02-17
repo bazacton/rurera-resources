@@ -8,7 +8,7 @@
         </li>
         <li class="streak-dropdown">
             <button type="button" class="streak-icon">
-                <img src="/assets/default/svgs/fire-stroke.svg" height="800" width="800" alt="fire-stroke"> 1
+                <img src="/assets/default/svgs/streak-fire.svg" height="64" width="64" alt="streak-fire"> 1
             </button>
             <div class="streak-dropdown-content font-16">
                 <div class="streak-days">
@@ -18,7 +18,7 @@
                             <p class="sub">You've earned your longest streak ever!</p>
                         </div>
                         <div class="icon-box">
-                            <img src="/assets/default/svgs/fire-stroke.svg" height="800" width="800" alt="fire-stroke">
+                            <img src="/assets/default/svgs/streak-fire.svg" height="64" width="64" alt="streak-fire">
                         </div>
                     </div>
                     <div class="days-list">
