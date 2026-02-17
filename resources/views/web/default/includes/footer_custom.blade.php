@@ -1,5 +1,5 @@
 
-<section class="custom-footer pb-50 pt-60">
+<section class="custom-footer pt-60">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
