@@ -4144,8 +4144,16 @@
         margin-top: 15px;
         gap: 15px;
     }
+    .rurera-get-app .rurera-help-content {
+        width: 60%;
+    }
     .rurera-help-container .store-badges .store-badge-link {
         width: 44%;
+    }
+    .rurera-get-app .rurera-help-visual {
+        padding: 0 0 0 20px;
+        margin: 0;
+        width: 40%;
     }
 }
 @media screen and (max-width: 640px) {
