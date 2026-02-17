@@ -116,7 +116,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row align-items-center">
                         <div class="col-12 col-lg-5 col-md-7">
                             <div class="section-title">
                                 <h2 class="mb-15 text-white font-40">Ready to start learning <br /> using Rurera</h2>
