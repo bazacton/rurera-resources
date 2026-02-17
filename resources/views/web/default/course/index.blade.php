@@ -88,12 +88,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="chapter-search">
-                            <div class="form-group">
-                                <input type="text" name="search" class="form-control border-0 font-14" value="" placeholder="Search">
-                                <button type="submit" class="btn btn-primary rounded-pill">Search</button>
-                            </div>
-                        </div>
                     </div>
                     <ul class="font-14 font-weight-500">
                         @foreach($course->chapters as $chapter)
@@ -114,13 +108,6 @@
                     </a>
                     </div>
                 </div>--}}
-
-
-                <div class="rurera-topics-search">
-                    <input type="text" class="rurera-search-field" placeholder="Search topics (min 3 letters)">
-                    <div class="rurera-search-results"></div>
-                </div>
-                
                 <div class="chapter-views chapters-short-view">
                     <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                         <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
