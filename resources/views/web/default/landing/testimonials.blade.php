@@ -29,7 +29,7 @@
           <div class="testimonial-body">
             <h2 class="post-title">Cristian Miller</h2>
             <span class="sub-title">Teacher</span>
-            <p itemprop="description">Rurera is an advance emerging learning platform. Love it!</p>
+            <p>Rurera is an advance emerging learning platform. Love it!</p>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
           <div class="testimonial-body">
             <h2 class="post-title">Peter J.</h2>
             <span class="sub-title">Student</span>
-            <p itemprop="description">
+            <p>
               My first choice is Rurera when it comes to pro level learning.
             </p>
           </div>
@@ -59,7 +59,7 @@
           <div class="testimonial-body">
             <h2 class="post-title">Fiona Thompson</h2>
             <span class="sub-title">Parent</span>
-            <p itemprop="description">Rurera has recognized itself a great platform. Recommmended</p>
+            <p>Rurera has recognized itself a great platform. Recommmended</p>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
           <div class="testimonial-body">
             <h2 class="post-title">Kyle Matt</h2>
             <span class="sub-title">Teacher</span>
-            <p itemprop="description">As a teacher i would encourage to follow Rurera for sure.</p>
+            <p>As a teacher i would encourage to follow Rurera for sure.</p>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
           <div class="rurera-text-section">
             <div class="rurera-text-holder text-center">
               <small itemprop="best work">Shape your success story with </small><b>Rurera</b>
-              <p itemprop="description" class="mt-10">
+              <p class="mt-10">
                 Discover everything you need to guide learners toward success!
               </p>
               <div class="rurera-btn-group mt-30">
@@ -107,7 +107,7 @@
       <div class="col-12 col-lg-12 mb-50">
         <div class="section-title text-center">
           <h2  class="mb-15">Trusted by Many, Loved by All</h2>
-          <p itemprop="description"  class="text-center mb-10">
+          <p  class="text-center mb-10">
             Hear heartfelt stories from students, teachers, <br> and parents about their experiences.
           </p>
         </div>
@@ -119,7 +119,7 @@
           </div>
           <p itemprop="datePublished" content="2023-06-05">Happy parent / 4 June 2023</p>
           <h3>Cristian Miller</h3>
-          <p itemprop="description" class="mt-10">As a parent, I want to share my incredible experience that has made a significant impact on my child's education. Rurera has truly transformed the way my child learns and engages with educational content. Recommended!</p>
+          <p class="mt-10">As a parent, I want to share my incredible experience that has made a significant impact on my child's education. Rurera has truly transformed the way my child learns and engages with educational content. Recommended!</p>
         </div>
       </div>
       <div class="col-12 col-lg-6 mb-30">
@@ -149,7 +149,7 @@
           </div>
           <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
           <h3>Peter J.</h3>
-          <p itemprop="description" class="mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
+          <p class="mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
         </div>
       </div>
     </div>
@@ -162,10 +162,10 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="rurera-text-holder d-flex justify-content-between">
                     <div class="d-flex flex-column">
-                        <h3 class="mb-10 font-24 align-items-center d-flex"> <span class="icon-svg mr-20">
+                        <h3 class="mb-10 align-items-center d-flex"> <span class="icon-svg mr-20">
                             <img src="/assets/default/svgs/column-text-bulb.svg" height="30" width="30" alt="column-text-bulb">
                             </span>Step into Success—Join the Rurera Family Today!</h3>
-                        <p itemprop="description" class="font-16">Be part of a thriving community where learners excel—experience the support and inspiration that can transform your journey today!</p>
+                        <p>Be part of a thriving community where learners excel—experience the support and inspiration that can transform your journey today!</p>
                     </div>
                     <div class="rurera-btn-group justify-content-center">
                       <a href="{{url('/')}}/pricing" class="rurera-btn rounded-pill">Get Started</a>
@@ -181,7 +181,7 @@
       <div class="col-12 mb-20">
         <div class="section-title">
           <h2 class="text-center w-100 mb-10 pt-0">Discover What Makes Rurera Loved!</h2>
-          <p itemprop="description" class="mb-25 text-center">
+          <p class="mb-25 text-center">
             Read heartfelt testimonials from our community and see how Rurera has <br > transformed their learning experiences.
           </p>
         </div>
@@ -201,7 +201,7 @@
                 <div class="grid-item col-lg-3 col-md-4 col-sm-6 student mb-0">
                     <div class="testimonial-card mb-25">
                         <div class="testimonial-body">
-                          <p itemprop="description">{!! nl2br($testimonial->comment) !!}</p>
+                          <p>{!! nl2br($testimonial->comment) !!}</p>
                           <div itemprop="author" class="author-name">
                             <span>{{ $testimonial->user_name }}</span><small><em>|</em>{{ $testimonial->testimonial_by }}</small>
                           </div>
