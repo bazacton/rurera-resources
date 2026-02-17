@@ -2084,9 +2084,9 @@ nav li {
   height: 380px;
 }
 .blog-newsletter .svg-holder {
-  text-align: right;
-  margin-top: -14px;
-  margin-bottom: -6px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .blog-grid-card.rurera-grid {
   flex-direction: column-reverse;
