@@ -26,19 +26,19 @@
                             <li class="frozen-streak">
                                 <span class="day">M</span>
                                 <span class="day-circle">
-                                    <img src="/assets/default/svgs/snowflake-cold.svg" height="64" width="64" alt="snowflake-cold">
+                                    <img src="/assets/default/svgs/snowflake-cold.svg" height="64" width="64" alt="" aria-hidden="true">
                                 </span>
                             </li>
                             <li class="active-streak">
                                 <span class="day">T</span>
                                 <span class="day-circle">
-                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire">
+                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="" aria-hidden="true">
                                 </span>
                             </li>
                             <li class="active-streak">
                                 <span class="day">W</span>
                                 <span class="day-circle">
-                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire2">
+                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="" aria-hidden="true">
                                 </span>
                             </li>
                             <li class="broken-streak">
@@ -50,19 +50,19 @@
                             <li class="active-streak">
                                 <span class="day">F</span>
                                 <span class="day-circle">
-                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="fire2">
+                                    <img src="/assets/default/svgs/fire2.svg" height="64" width="64" alt="" aria-hidden="true">
                                 </span>
                             </li>
                             <li class="not-started">
                                 <span class="day">S</span>
                                 <span class="day-circle">
-                                    <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
+                                    <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="" aria-hidden="true">
                                 </span>
                             </li>
                             <li class="not-started">
                                 <span class="day">S</span>
                                 <span class="day-circle">
-                                    <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="red-circle">
+                                    <img src="/assets/default/svgs/red-circle.svg" height="64" width="64" alt="" aria-hidden="true">
                                 </span>
                             </li>
                         </ul>
