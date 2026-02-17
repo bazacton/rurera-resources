@@ -283,7 +283,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="seg-progress">
-                                                            <div class="seg-fill {{$completion_class}}" title="Smart Score: {{$total_completion}}" style="width: {{$total_completion}}%;"></div>
+                                                            <div class="seg-fill {{$completion_class}} width_{{$total_completion}}" title="Smart Score: {{$total_completion}}"></div>
                                                         </div>
                                                     </div>
                                                 @endforeach
@@ -344,7 +344,7 @@
                                                         <span>
                                                         @if( $topic_percentage > 0)
                                                                 <div class="rurera-progress-bar">
-                                                                <span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
+                                                                <span class="progress-inner width_{{$topic_percentage}}" ></span>
                                                             </div>
                                                             @else
                                                                 -
