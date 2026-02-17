@@ -1,5 +1,5 @@
 
-<section class="custom-footer pt-60">
+<section class="custom-footer pb-50 pt-60">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -84,7 +84,7 @@
 			</div>
 			<div class="col-12">
 				<div class="footer-bottom">
-					<div class="footer-nav-holder pt-0">
+					<div class="footer-nav-holder pt-15">
 						<div class="footer-nav-box">
 							<div class="footer-navs">
 								<ul>
@@ -105,7 +105,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="rurera-name">Rurera</div>
 		</div>
 	</div>
 	
