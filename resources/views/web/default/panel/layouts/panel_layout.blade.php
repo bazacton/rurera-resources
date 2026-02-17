@@ -460,7 +460,7 @@
                                                 Daily Quests
                                                 <a href="/quests" class="view-all font-weight-bold font-14">View All</a>
                                             </h3>
-                                            <ul>
+                                            <ul aria-label="Daily quests">
                                                 @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
                                                     @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
 
