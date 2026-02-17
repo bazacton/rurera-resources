@@ -124,17 +124,15 @@
                             </div>
                         <div class="rurera-btn-group mt-30 "><a href="{{url('/')}}/register" class="rurera-btn rounded-pill text-white border-white">Signup</a></div>
                         </div>
-                        <div class="col-12 col-lg-7 col-md-7">
-                            <div class="svg-holder">
-                                <span class="icon-svg">
-                                    <img class="w-100" src="../assets/default/svgs/blog-newsletter.svg" alt="default newsletter" title="default newsletter" width="689" height="463" loading="eager" />
-                                </span>
-                            </div>
-                        </div>
                     </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="svg-holder">
+            <span class="icon-svg">
+                <img class="w-100" src="/assets/default/svgs/blog-newsletter.svg" alt="default newsletter" title="default newsletter" width="689" height="463" loading="eager" />
+            </span>
         </div>
     </section>
 @endsection
