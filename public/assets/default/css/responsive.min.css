@@ -1953,6 +1953,7 @@
     }
     .rurera-get-app .rurera-help-content {
         width: 60%;
+        padding-bottom: 0;
     }
     .store-badges .store-badge-link {
         width: 44%;
