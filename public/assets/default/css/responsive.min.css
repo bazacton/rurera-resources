@@ -4140,6 +4140,13 @@
     .blog-sidebar {
         margin-top: 25px;
     }
+    .rurera-help-container .store-badges {
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .rurera-help-container .store-badges .store-badge-link {
+        width: 44%;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
