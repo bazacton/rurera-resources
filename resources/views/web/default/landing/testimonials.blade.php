@@ -106,7 +106,7 @@
     <div class="row align-items-center">
       <div class="col-12 col-lg-12 mb-50">
         <div class="section-title text-center">
-          <h2  class="font-40 font-weight-bold mb-15">Trusted by Many, Loved by All</h2>
+          <h2  class="mb-15">Trusted by Many, Loved by All</h2>
           <p itemprop="description"  class="text-center mb-10">
             Hear heartfelt stories from students, teachers, <br> and parents about their experiences.
           </p>
