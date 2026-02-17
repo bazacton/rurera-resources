@@ -88,7 +88,7 @@
         @if(auth()->check() && (auth()->user()->isUser()))
         <li class="dropdown dropdown-list-toggle">
             <strong>
-                <img src="/assets/default/img/panel-sidebar/1.png" alt="1">
+                <img src="/assets/default/img/panel-sidebar/1.png" alt="Notifications icon">
                 @if(!empty($unReadNotifications) and count($unReadNotifications))
                 {{ count($unReadNotifications) }}
                 @else
