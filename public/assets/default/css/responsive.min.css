@@ -4160,6 +4160,10 @@
     .blog-sidebar {
         margin-top: 25px;
     }
+    .partner-logo {
+        padding: 0 15px;
+        width: 33%;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
