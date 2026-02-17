@@ -171,7 +171,7 @@
                              alt="rounded circle" loading="eager" title="rounded circle">
                     </a>
 
-                    <div class="dropdown-menu user-profile-dropdown" aria-labelledby="dropdownMenuButton">
+                    <div id="userProfileDropdown" class="dropdown-menu user-profile-dropdown" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown-item user-nav-detail">
                             <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                  alt="rounded circle" loading="eager" title="rounded circle">
