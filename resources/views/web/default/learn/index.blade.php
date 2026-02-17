@@ -47,7 +47,8 @@
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                                 aria-valuenow="0"
-                                aria-label="Course progress">
+                                aria-valuetext="0% complete"
+                                aria-labelledby="science-title">
                                 <span class="progress-box">
                                     <span class="progress-count" style="width: 0%;"></span>
                                 </span>
