@@ -16516,6 +16516,9 @@ section.feature-grid {
 .rurera-get-app p {
     color: rgba(255, 255, 255, 0.5);
 }
+.app-img-holder img {
+    max-width: 100%;
+}
 /* rurera-get-app section style end */
 /* rurera-partners style start */
 .rurera-learning-app .badge {
