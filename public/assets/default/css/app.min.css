@@ -14976,6 +14976,12 @@ section:has(.trial-steps) .rurera-btn-group a small {
 }
 .rurera-help-container .store-badges {
     margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 .rurera-help-section .rurera-help-text {
     margin-bottom: 30px;
