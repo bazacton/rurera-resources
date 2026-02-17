@@ -16543,5 +16543,6 @@ section.feature-grid {
     height: auto;
     object-fit: contain;
     max-width: 100%;
+    filter: invert(78%) sepia(63%) saturate(20%) hue-rotate(45deg) brightness(89%) contrast(81%);
 }
 /* rurera-partners style end */
