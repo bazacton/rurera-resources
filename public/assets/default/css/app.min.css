@@ -16538,4 +16538,10 @@ section.feature-grid {
 .partner-logo:last-child {
     padding-right: 0;
 }
+.partner-logo img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
 /* rurera-partners style end */
