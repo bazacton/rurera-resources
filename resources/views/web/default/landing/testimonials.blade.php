@@ -5,11 +5,11 @@
   <div class="container h-100">
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
-        <p itemprop="sub title" class="rurera-subtitle">How we've helped others</p>
+        <p class="rurera-subtitle">How we've helped others</p>
         <h1 class="mb-10">
           Stories of Trust and <span class="text-scribble">Triumph!</span>
         </h1>
-        <p itemprop="description">
+        <p class="mb-10">
           Rurera has earned the trust of parents, educators, and students by delivering personalized, engaging, and effective learning. From SATs prep to fun rewards, discover why so many confidently choose Rurera to enhance their learning journeys.
         </p>
       </div>
@@ -28,7 +28,7 @@
           </div>
           <div class="testimonial-body">
             <h2 class="post-title">Cristian Miller</h2>
-            <span itemprop="sub title" class="sub-title">Teacher</span>
+            <span class="sub-title">Teacher</span>
             <p itemprop="description">Rurera is an advance emerging learning platform. Love it!</p>
           </div>
         </div>
@@ -42,7 +42,7 @@
           </div>
           <div class="testimonial-body">
             <h2 class="post-title">Peter J.</h2>
-            <span itemprop="sub title" class="sub-title">Student</span>
+            <span class="sub-title">Student</span>
             <p itemprop="description">
               My first choice is Rurera when it comes to pro level learning.
             </p>
@@ -58,7 +58,7 @@
           </div>
           <div class="testimonial-body">
             <h2 class="post-title">Fiona Thompson</h2>
-            <span itemprop="sub title" class="sub-title">Parent</span>
+            <span class="sub-title">Parent</span>
             <p itemprop="description">Rurera has recognized itself a great platform. Recommmended</p>
           </div>
         </div>
@@ -72,7 +72,7 @@
           </div>
           <div class="testimonial-body">
             <h2 class="post-title">Kyle Matt</h2>
-            <span itemprop="sub title" class="sub-title">Teacher</span>
+            <span class="sub-title">Teacher</span>
             <p itemprop="description">As a teacher i would encourage to follow Rurera for sure.</p>
           </div>
         </div>
