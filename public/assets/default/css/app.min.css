@@ -16504,30 +16504,29 @@ section.feature-grid {
 /* rurera-get-app section style end */
 /* rurera-partners style start */
 .rurera-partners {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .partner-logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    position: relative;
-    width: 20%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+  width: 20%;
 }
 .partner-logo:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    height: 15px;
-    width: 2px;
-    transform: translateY(-50%);
-    border-left: 2px solid #ddd;
-    border-radius: 5px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 15px;
+  width: 2px;
+  transform: translateY(-50%);
+  border-left: 2px solid #ddd;
+  border-radius: 5px;
 }
 .partner-logo:last-child:after {
     opacity: 0;
