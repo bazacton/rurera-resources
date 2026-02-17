@@ -6,10 +6,10 @@
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
         <p itemprop="sub title" class="rurera-subtitle">How we've helped others</p>
-        <h1 class="font-72 font-weight-bold mb-15">
+        <h1 class="mb-10">
           Stories of Trust and <span class="text-scribble">Triumph!</span>
         </h1>
-        <p itemprop="description" class="font-19">
+        <p itemprop="description">
           Rurera has earned the trust of parents, educators, and students by delivering personalized, engaging, and effective learning. From SATs prep to fun rewards, discover why so many confidently choose Rurera to enhance their learning journeys.
         </p>
       </div>
