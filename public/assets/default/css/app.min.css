@@ -16534,12 +16534,6 @@ section.feature-grid {
 .partner-logo:last-child:after {
     opacity: 0;
 }
-.partner-logo:first-child {
-    padding-left: 0;
-}
-.partner-logo:last-child {
-    padding-right: 0;
-}
 .partner-logo img {
     width: auto;
     height: auto;
