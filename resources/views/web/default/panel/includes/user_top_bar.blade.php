@@ -222,7 +222,12 @@
     </ul>
 </div>
 
-<div class="modal fade switch_user_modal" id="switch_user_modal" tabindex="-1" role="dialog" aria-labelledby="switchUserModalTitle" aria-hidden="true">
+<div class="modal fade switch_user_modal" 
+    id="switch_user_modal" 
+    tabindex="-1" 
+    role="dialog" 
+    aria-labelledby="switchUserModalTitle"
+    aria-modal="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
