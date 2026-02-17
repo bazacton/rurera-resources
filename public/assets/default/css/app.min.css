@@ -16436,6 +16436,9 @@ footer.footer-home {
 /* rurera-activation-cta style end */
 
 /* modules-card style start */
+section.feature-grid {
+    background-color: #f4f5f7;
+}
 .modules-card {
     display: flex;
     align-items: flex-start;
