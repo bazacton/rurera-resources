@@ -138,8 +138,8 @@
                                     <table class="table table-sm mb-0 focus-table">
                                         <thead>
                                         <tr>
-                                            <th class="font-12 text-muted font-weight-bold text-left">Skill</th>
-                                            <th class="font-12 text-muted font-weight-bold text-right">Questions missed</th>
+                                            <th scope="col" class="font-12 text-muted font-weight-bold text-left">Skill</th>
+                                            <th scope="col" class="font-12 text-muted font-weight-bold text-right">Questions missed</th>
                                         </tr>
                                         </thead>
                                         <tbody>
