@@ -482,29 +482,7 @@
         </div>
     </section>
 
-    <section class="parent-account-section mb-60" style="background-color: #0065ff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                    <div class="section-title mb-30">
-                        <h2 class="text-white">Parent account</h2>
-                        <p class="text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
-                    </div>
-                    <ul class="feature-list text-white">
-                        <li>Real-Time diagnostics</li>
-                        <li>Track Child’s Learning</li>
-                        <li>Assign Goals for your Child</li>
-                        <li>Regular Notifications on Activities.</li>
-                        <li>learning controls</li>
-                        <li>Easy to Manage Sibling Accounts</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5">
-                    <div class="imb-box"><img alt="banner-home image" height="570" src="/assets/default/img/banner-home.webp" width="548" /></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
     {!! parseShortcode('[SC_features-section-f]') !!}
     @php
         $packages_only = isset( $packages )? $packages : array();
