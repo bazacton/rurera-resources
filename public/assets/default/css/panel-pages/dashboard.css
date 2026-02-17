@@ -850,6 +850,7 @@ Right SideBar Style Start
     padding: 0;
     height: auto;
     border: 0;
+    gap: 5px;
     background-color: inherit;
 }
 .streak-dropdown {
