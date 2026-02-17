@@ -87,16 +87,16 @@
         </li>
         @if(auth()->check() && (auth()->user()->isUser()))
         <li class="dropdown dropdown-list-toggle">
-            <strong>
+            <button type="button" class="dropdown-toggle-btn" aria-expanded="false" aria-controls="notificationsMenu">
                 <img src="/assets/default/img/panel-sidebar/1.png" alt="Notifications icon">
                 @if(!empty($unReadNotifications) and count($unReadNotifications))
                 {{ count($unReadNotifications) }}
                 @else
                 0
                 @endif
-            </strong>
+            </button>
 
-            <div class="dropdown-menu dropdown-list dropdown-menu-right font-14">
+            <div id="notificationsMenu" class="dropdown-menu dropdown-list dropdown-menu-right font-14">
                 <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
