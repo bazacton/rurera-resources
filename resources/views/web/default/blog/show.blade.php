@@ -78,7 +78,10 @@
                     </div>
                     <div class="col-12 col-lg-5 col-md-5 ml-auto">
                         <div class="img-box">
+
+                            @if($post->image != '')
                             <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
+                            @endif
                         </div>
                     </div>
                 </div>

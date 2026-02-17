@@ -15,7 +15,9 @@
         @endphp
     </div>
     <div class="blog-grid-image">
+        @if($post->image != '')
         <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $thisController->getPostContent($post, $post->title) }}" title="{{ $thisController->getPostContent($post, $post->title) }}" width="20" height="21" itemprop="image" loading="eager">
+        @endif
     </div>
 
 </div>
