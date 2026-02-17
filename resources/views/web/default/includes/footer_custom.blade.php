@@ -80,7 +80,6 @@
 							<figure><img src="/assets/default/svgs/footer-dots.svg" width="502" height="502" alt="footer dots image"></figure>
 						</div>
 					</div>
-					<div class="rurera-name">Rurera</div>
 				</div>
 			</div>
 			<div class="col-12">
@@ -106,6 +105,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="rurera-name">Rurera</div>
 		</div>
 	</div>
 	
