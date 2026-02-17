@@ -230,7 +230,7 @@
                     <div class="modal-title">
                         <h3 id="switchUserModalTitle">Enter the Password</h3>
                     </div>
-                    <form method="post" action="javascript:;" class="mt-35 switch_user_login">
+                    <form method="post" action="/switch-user" class="mt-35 switch_user_login">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">
                         <label class="input-label" for="email">Password:</label>
