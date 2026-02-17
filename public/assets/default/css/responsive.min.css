@@ -4659,6 +4659,7 @@
     }
     .subscribe-plan {
         min-height: auto;
+        margin-bottom: 25px;
     }
     .team-section .section-title {
         flex-direction: column;
