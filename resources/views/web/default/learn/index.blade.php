@@ -78,7 +78,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="modalDescription">
         Are you sure you want to leave this page?
       </div>
       <div class="modal-footer">
