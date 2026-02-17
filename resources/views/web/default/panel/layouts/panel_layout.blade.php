@@ -104,7 +104,7 @@
 
                                     <div class="d-flex align-items-center justify-content-center mt-15">
                                     <!-- Change --p to your percentage (0–100) -->
-                                    <div class="overall-gauge" style="--p:80;">
+                                    <div class="overall-gauge" style="--p:80;" role="img" aria-label="Overall performance 80 percent. Pro learner level">
                                         <svg viewBox="0 0 200 120" class="w-100 d-block" style="max-width:260px;">
                                         <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="18" stroke-linecap="round"></path>
 
