@@ -15696,6 +15696,19 @@ footer.footer-home {
 .footer-bottom .footer-nav-holder {
   border-top: 1px solid rgb(255 255 255 / 0.2);
 }
+.custom-footer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 250px;
+}
+.rurera-name {
+  text-align: center;
+  font-size: 410px;
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  height: 200px;
+}
 /* testimonials card css  */
  .rurera-feature-rev-card {
     background-color: #FFFFFFA6;
