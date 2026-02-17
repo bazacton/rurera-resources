@@ -10,7 +10,7 @@
             <button type="button" class="streak-icon" aria-expanded="false" aria-controls="streakMenu">
                 <img src="/assets/default/svgs/streak-fire.svg" height="64" width="64" alt="streak-fire"> 1
             </button>
-            <div class="streak-dropdown-content font-16">
+            <div id="streakMenu" class="streak-dropdown-content font-16">
                 <div class="streak-days">
                     <div class="streak-day-head">
                         <div class="text-box">
