@@ -16516,6 +16516,7 @@ section.feature-grid {
 }
 .rurera-get-app p {
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
 }
 .app-img-holder img {
     max-width: 100%;
