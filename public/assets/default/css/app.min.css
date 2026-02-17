@@ -16408,8 +16408,8 @@ footer.footer-home {
 .icon-right-3 { right: 10%; top: 70%; transform: translateX(100px) rotate(45deg); }
 
 .rurera-activation-cta.icons-visible .floating-icon {
-    opacity: 1;
-    transform: translateX(0) rotate(0);
+  opacity: 1;
+  transform: translateX(0) rotate(0);
 }
 
 /* Staggered delay for icons */
@@ -16422,8 +16422,8 @@ footer.footer-home {
 
 /* SVG Icons colors/styles */
 .icon-svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 768px) {
@@ -16431,24 +16431,24 @@ footer.footer-home {
     .floating-icon { width: 45px; height: 45px; }
     .icon-left-1, .icon-left-2, .icon-left-3,
     .icon-right-1, .icon-right-2, .icon-right-3 {
-        display: none; /* Hide icons on small mobile for better UX or reposition them */
+        display: none;
     }
 }
 /* rurera-activation-cta style end */
 
 /* modules-card style start */
 section.feature-grid {
-    background-color: #f4f5f7;
+  background-color: #f4f5f7;
 }
 .modules-card {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
 }
 .feature-icon {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 .feature-text {
   max-width: calc(100% - 30px);
@@ -16459,71 +16459,71 @@ section.feature-grid {
   height: 100%;
 }
 .feature-text h3,.feature-text p {
-    margin: 0 0 15px;
+  margin: 0 0 15px;
 }
 .feature-link {
-    display: inline-block;
-    position: relative;
-    line-height: normal;
-    color: var(--primary);
-    font-size: .9rem;
-    font-weight: 500;
-    margin-top: auto;
+  display: inline-block;
+  position: relative;
+  line-height: normal;
+  color: var(--primary);
+  font-size: .9rem;
+  font-weight: 500;
+  margin-top: auto;
 }
 .feature-link .arrow {
-    position: initial;
-    margin-left: 2px;
-    font-weight: normal;
+  position: initial;
+  margin-left: 2px;
+  font-weight: normal;
 }
 /* modules-card style end */
 /* rurera-get-app section style start */
 .rurera-get-app {
-    margin: 0 0 60px;
-    overflow: hidden;
-    padding-top: 90px;
+  margin: 0 0 60px;
+  overflow: hidden;
+  padding-top: 90px;
 }
 .rurera-get-app .rurera-help-container {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 0 80px;
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    border-radius: 20px;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0 80px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 20px;
 }
 .rurera-get-app h2 {
-    margin: 0 0 15px;
-    font-weight: 500;
+  margin: 0 0 15px;
+  font-weight: 500;
 }
 .rurera-get-app .rurera-help-visual {
-    max-width: none;
-    max-height: none;
-    padding: 0;
-    margin: -90px 0 -90px;
-    width: 50%;
-    text-align: right;
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  margin: -90px 0 -90px;
+  width: 50%;
+  text-align: right;
 }
 .rurera-get-app .rurera-help-content {
-    width: 50%;
-    padding: 0;
+  width: 50%;
+  padding: 0;
 }
 .rurera-get-app p {
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 25px;
 }
 .app-img-holder img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .store-badges .store-badge-link img {
-    max-width: 100%;
-    object-fit: contain;
-    max-height: fit-content;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: fit-content;
 }
 /* rurera-get-app section style end */
 /* rurera-partners style start */
 .rurera-learning-app .badge {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
 }
 .rurera-learning-app .store-badges {
   justify-content: center;
