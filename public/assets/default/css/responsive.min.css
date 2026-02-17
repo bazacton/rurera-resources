@@ -4143,6 +4143,9 @@
     .rurera-get-app {
         padding-top: 0;
     }
+    .rurera-get-app .rurera-help-container {
+        padding: 30px;
+    }
     .rurera-help-container .store-badges {
         margin-top: 15px;
         gap: 15px;
