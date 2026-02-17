@@ -6,6 +6,50 @@
     <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css"/>
 @endpush
 
+<style>
+    /* Wrapper */
+    .rurera-topics-search {
+        position: relative;
+        max-width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .rurera-topics-search .rurera-search-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .rurera-topics-search .rurera-search-results {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 200px;
+        overflow-y: auto;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-top: 0;
+        z-index: 999;
+    }
+
+    .rurera-topics-search .rurera-search-results div {
+        padding: 8px 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    .rurera-topics-search .rurera-search-results div:hover {
+        background: #f5f5f5;
+    }
+
+    .rurera-highlight {
+        background: #fff3cd;
+        transition: 0.3s;
+    }
+</style>
 @section('content')
     <div class="post-show" style="overflow:hidden;">
         <section class="count-number-wrapp" style="display:none">
@@ -114,7 +158,142 @@
                     <input type="text" class="rurera-search-field" placeholder="Search topics (min 3 letters)">
                     <div class="rurera-search-results"></div>
                 </div>
-                
+
+
+                <ul id="accordion">
+                    <li id="subject_1">
+                        <h3>Electricity</h3>
+                        <div class="chapter-card"><a data-target="#sub1">Flow of electricity</a></div>
+                        <div class="chapter-card"><a data-target="#sub2">Electrical circuits</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub3">Planets and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub4">Black holes</a></div>
+                    </li>
+
+                    <li id="subject_2">
+                        <h3>Astronomy</h3>
+                        <div class="chapter-card"><a data-target="#sub22">Planets11 and stars</a></div>
+                        <div class="chapter-card"><a data-target="#sub33">Black holes</a></div>
+                    </li>
+                </ul>
+
                 <div class="chapter-views chapters-short-view">
                     <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                         <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
@@ -525,4 +704,84 @@
 
     </script>
 
+    <script>
+        $(function () {
+
+            const $wrapper  = $('.rurera-topics-search');
+            const $input    = $wrapper.find('.rurera-search-field');
+            const $results  = $wrapper.find('.rurera-search-results');
+            const $topics   = $('#accordion li');
+
+            let searchable = [];
+
+            $topics.each(function () {
+                const $li = $(this);
+                const title = $li.find('h3').first();
+                const subjectId = $li.attr('id');
+
+                searchable.push({
+                    text: title.text().trim(),
+                    target: '#' + subjectId
+                });
+
+                $li.find('.chapter-card a').each(function () {
+                    searchable.push({
+                        text: $(this).text().trim(),
+                        target: $(this).data('target')
+                    });
+                });
+            });
+
+            $input.on('input', function () {
+
+                let val = $(this).val().toLowerCase().trim();
+
+                if (val.length < 3) {
+                    $results.hide().empty();
+                    return;
+                }
+
+                let matched = searchable.filter(item =>
+                    item.text.toLowerCase().includes(val)
+                );
+
+                if (!matched.length) {
+                    $results.html('<div>No results found</div>').show();
+                    return;
+                }
+
+                $results.html(
+                    matched.map(m =>
+                        '<div data-target="' + m.target + '">' + m.text + '</div>'
+                    ).join('')
+                ).show();
+            });
+
+            $results.on('click', 'div', function () {
+
+                const target = $(this).data('target');
+                const $target = $(target);
+                $target.html('testing');
+                $('.rurera-highlight').removeClass('rurera-highlight');
+                if ($target.length) {
+                    $('html,body').animate({
+                        scrollTop: $target.offset().top - 50
+                    }, 300);
+
+                    $target.addClass('rurera-highlight');
+                }
+
+                $input.val('');
+                $results.hide().empty();
+            });
+
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('.rurera-topics-search').length) {
+                    $results.hide();
+                }
+            });
+
+        });
+    </script>
 @endpush
+
