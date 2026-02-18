@@ -140,7 +140,7 @@
                             </label>
                             <input type="hidden" class="year_id_field" name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]" value="0">
                         </div>
-                        <div class="invalid-feedback"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -236,7 +236,7 @@
                             </span>
                         </label>--}}
                     </div>
-                    <div class="invalid-feedback"></div>
+                    
                 </fieldset>
                 <fieldset class="form-group rurera_common_hide_field test_types_field">
                     <legend class="input-label">Test Type</legend>
@@ -289,7 +289,7 @@
                             </span>
                         </label>
                     </div>
-                    <div class="invalid-feedback"></div>
+                    
                 </fieldset>
 
 
@@ -779,7 +779,7 @@
                                 <div class="form-group">
                                     <label class="input-label">No of Stages</label>
 
-                                    <div class="invalid-feedback"></div>
+                                    
                                     <div class="range-slider">
                                         <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
                                         <div class="range-slider_line">
@@ -826,7 +826,7 @@
                         name="ajax[new][description]"
                         class="form-control summernote-editor-mintool"
                         placeholder="" rows="20"></textarea>
-                    <div class="invalid-feedback"></div>
+                    
                 </div>
 
                 <div class="form-section rurera-hide">
@@ -887,7 +887,7 @@
                                         value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_review_due_date, 'Y-m-d', false) : old('assignment_review_due_date') }}"
                                         class="form-control reviewer-date rureradatepicker" min="{{date('Y-m-d')}}"
                                         placeholder=""/>
-                                <div class="invalid-feedback"></div>
+                                
                             </div>
                         </div>
                     </div>
@@ -948,7 +948,7 @@
                         <div class="form-group">
                             <label class="input-label">No of Questions</label>
 
-                            <div class="invalid-feedback"></div>
+                            
                             <div class="range-slider">
                                 <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
@@ -968,7 +968,7 @@
                         <div class="form-group">
                             <label class="input-label">No of Attempts</label>
 
-                            <div class="invalid-feedback"></div>
+                            
                             <div class="range-slider">
                                 <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
@@ -986,7 +986,7 @@
                         <div class="form-group rurera_common_hide_field percentage_answer_field">
                             <label class="input-label">Percentage of Correct Answers</label>
 
-                            <div class="invalid-feedback"></div>
+                            
                             <div class="range-slider">
                                 <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
@@ -1017,7 +1017,7 @@
                                         class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
                                         placeholder=""/>
                             </div>
-                            <div class="invalid-feedback"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1085,7 +1085,7 @@
                             </label>
                         </div>
 
-                        <div class="invalid-feedback"></div>
+                        
                     </div>
                 </div>
 
@@ -1102,7 +1102,7 @@
                                 class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
                                 placeholder=""/>
                     </div>
-                    <div class="invalid-feedback"></div>
+                    
                 </div>
 
                 <div class="form-group duration_type_fields per_question_fields">
@@ -1120,7 +1120,7 @@
                                 placeholder=""/>
                     </div>
 
-                    <div class="invalid-feedback"></div>
+                    
                 </div>
 
 
@@ -1136,7 +1136,7 @@
                                 @endforeach
                             @endif
                         </select>
-                        <div class="invalid-feedback"></div>
+                        
                     </div>
                 </div>
 
