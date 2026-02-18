@@ -179,7 +179,7 @@
                     <legend class="input-label">Practice Type</legend>
                         <div class="radio-buttons">
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="practice" checked>
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="practice" checked>
                                 <span class="radio-btn"><i class="las la-check"></i>
                                     <div class="card-icon">
                                         <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
@@ -188,7 +188,7 @@
                                 </span>
                             </label>
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="tests">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="tests">
                                 <span class="radio-btn"><i class="las la-check"></i>
                                     <div class="card-icon">
                                         <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
