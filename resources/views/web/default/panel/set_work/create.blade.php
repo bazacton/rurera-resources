@@ -789,7 +789,7 @@
                                                 name="ajax[new][no_of_stages]"
                                                 value="0"
                                                 class="js-ajax-title form-control no_of_stages range-slider-field"
-                                                placeholder="" min="1" max="10"/>
+                                                min="1" max="10"/>
                                     </div>
                                 </div>
                             </div>
@@ -959,7 +959,7 @@
                                         step="10"
                                         id="no_of_questions"
                                         class="js-ajax-title form-control no_of_questions range-slider-field"
-                                        placeholder="" min="10" max="30"/>
+                                        min="10" max="30"/>
                             </div>
                         </div>
                     </div>
@@ -978,7 +978,7 @@
                                         name="ajax[new][no_of_attempts]"
                                         value="1"
                                         class="js-ajax-title form-control no_of_attempts range-slider-field"
-                                        placeholder="" min="1" max="10"/>
+                                        min="1" max="10"/>
                             </div>
                         </div>
                     </div>
@@ -996,7 +996,7 @@
                                         name="ajax[new][target_percentage]"
                                         value="0" data-label="%"
                                         class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
-                                        placeholder=""/>
+                                        />
                             </div>
 
 
@@ -1015,7 +1015,7 @@
                                         name="ajax[new][target_average_time]"
                                         value="0"
                                         class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
-                                        placeholder=""/>
+                                        />
                             </div>
                             
                         </div>
@@ -1100,7 +1100,7 @@
                                 name="ajax[new][practice_time]"
                                 value="0"
                                 class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
-                                placeholder=""/>
+                                />
                     </div>
                     
                 </div>
@@ -1117,7 +1117,7 @@
                                 name="ajax[new][time_interval]"
                                 value="0"
                                 class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
-                                placeholder=""/>
+                                />
                     </div>
 
                     
