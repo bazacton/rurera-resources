@@ -636,7 +636,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="row test@@">
+                                            <div class="row">
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                                     <div class="form-group assignment_method_check_fields target_improvements_fields">
                                                         <label class="input-label">Percentage of Correct Answers</label>
