@@ -512,10 +512,7 @@ span.learn-lable {
     position: relative;
 }
 .topic-search-area {
-    border: 1px solid #ddd;
-    border-radius: 10px;
     padding: 25px 25px 12px;
-    margin: 0 0 25px;
 }
 .rurera-topics-search .search-field {
     padding: 0 10px;
