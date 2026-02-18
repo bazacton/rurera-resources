@@ -836,12 +836,13 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                         <div class="form-group">
-                            <label class="input-label">Practice Start Date</label>
+                            <label class="input-label" for="assignment_start_date">Practice Start Date</label>
                             <div class="input-group">
                                 <div class="input-holder">
                                     <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
                                     <input type="text" autocomplete="off"
                                             name="ajax[new][assignment_start_date]"
+                                            id="assignment_start_date"
                                             value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
                                             class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
                                             min="{{date('Y-m-d')}}"
