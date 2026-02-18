@@ -118,7 +118,7 @@
                                     @foreach($blog as $post)
                                         <tr class="{{ ($post->is_indexed == 1)? 'indexed_blog_row' : ''}}">
                                             <td>
-                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ $post->title }}</a>
+                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ $WebBlogController->getPostContent($post, $post->title) }}</a>
                                             </td>
                                             <td>{{ $post->category->title }}</td>
                                             @if(!empty($post->author->get_full_name()))
