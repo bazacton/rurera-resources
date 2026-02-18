@@ -506,4 +506,59 @@ span.learn-lable {
 }
 
 /* Lms Chapter Holder Style End */
+/* rurera-topics-search Style start */
+.rurera-topics-search {
+    position: relative;
+}
+.rurera-topics-search .search-field {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+.rurera-topics-search .search-results {
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none; /* Hide initially */
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+.rurera-topics-search .search-results a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.rurera-topics-search .search-results a:hover {
+    background-color: #ddd;
+}
+.rurera-topics-search .result-title {
+    font-weight: bold;
+}
+.rurera-topics-search .result-description {
+    font-size: 12px;
+    color: #777;
+}
+.rurera-topics-search .expand-icon {
+    float: right;
+    cursor: pointer;
+}
+.rurera-topics-search .highlight {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-in-out;
+}
+/* rurera-topics-search Style End */
