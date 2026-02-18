@@ -183,7 +183,7 @@
                                 <span class="radio-btn">
                                     <div class="card-icon">
                                         <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
-                                        <span class="card-title">Courses</span>
+                                        <strong class="card-title">Courses</strong>
                                     </div>
                                 </span>
                             </label>
@@ -192,7 +192,7 @@
                                 <span class="radio-btn">
                                     <div class="card-icon">
                                         <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
-                                        <span class="card-title">Tests</span>
+                                        <strong class="card-title">Tests</strong>
                                     </div>
                                 </span>
                             </label>
@@ -202,7 +202,7 @@
                                 <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="" aria-hidden="true">
-                                    <span class="card-title">Vocabulary</span>
+                                    <strong class="card-title">Vocabulary</strong>
                                 </div>
                                 </span>
                             </label>
@@ -212,7 +212,7 @@
                                 <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/timestables.png" alt="" aria-hidden="true">
-                                    <span class="card-title">Timestables</span>
+                                    <strong class="card-title">Timestables</strong>
                                 </div>
                                 </span>
                             </label>
@@ -222,7 +222,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/books.png" alt="" aria-hidden="true">
-                                    <span class="card-title">Book</span>
+                                    <strong class="card-title">Book</strong>
                                 </div>
                             </span>
                         </label>
@@ -231,7 +231,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/practice.png" alt="" aria-hidden="true">
-                                    <span class="card-title">Custom Assignment</span>
+                                    <strong class="card-title">Custom Assignment</strong>
                                 </div>
                             </span>
                         </label>--}}
@@ -246,7 +246,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/sats.png" alt="" aria-hidden="true">
-                                    <span class="card-title">SATs</span>
+                                    <strong class="card-title">SATs</strong>
                                 </div>
                             </span>
                         </label>
@@ -255,7 +255,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus">
-                                    <span class="card-title">11 Plus</span>
+                                    <strong class="card-title">11 Plus</strong>
                                 </div>
                             </span>
                         </label>
@@ -264,7 +264,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/independent-exams.png" alt="independent-exams">
-                                    <span class="card-title">Independent Exams</span>
+                                    <strong class="card-title">Independent Exams</strong>
                                 </div>
                             </span>
                         </label>
@@ -274,7 +274,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb">
-                                    <span class="card-title">Iseb</span>
+                                    <strong class="card-title">Iseb</strong>
                                 </div>
                             </span>
                         </label>
@@ -284,7 +284,7 @@
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4">
-                                    <span class="card-title">Cat 4</span>
+                                    <strong class="card-title">Cat 4</strong>
                                 </div>
                             </span>
                         </label>
