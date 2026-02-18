@@ -598,7 +598,7 @@ span.learn-lable {
 .rurera-topics-search .expand-icon {
     cursor: pointer;
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     font-size: .8rem;
