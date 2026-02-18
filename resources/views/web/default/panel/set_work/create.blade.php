@@ -848,7 +848,7 @@
                                             value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
                                             class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
                                             min="{{date('Y-m-d')}}"
-                                            placeholder=""/>
+                                            placeholder="YYYY-MM-DD"/>
                                 </div>
 
                             </div>
@@ -867,7 +867,7 @@
                                             id="assignment_end_date"
                                             value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
                                             class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
-                                            placeholder=""/>
+                                            placeholder="YYYY-MM-DD"/>
                                 </div>
 
                             </div>
