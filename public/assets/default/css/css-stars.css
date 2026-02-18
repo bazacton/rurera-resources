@@ -569,7 +569,7 @@ span.learn-lable {
 .rurera-topics-search .search-results::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: none;
-	background-color: #555;
+	background-color: #ddd;
 }
 .rurera-topics-search .search-results a {
     display: block;
