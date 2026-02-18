@@ -1406,7 +1406,7 @@
                     });
 
                     var $expandIcon = $('<span/>', {
-                        class: 'expand-icon',
+                        class: 'expand-icon d-none',
                         text: '✕'
                     });
 
