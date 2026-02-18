@@ -1023,33 +1023,33 @@
                 <div class="form-group rurera-hide">
                     <label class="input-label">Assignment Settings</label>
                     <div class="option-field-item mt-20 mb-20">
-                        <label class="custom-switch pl-0">
-                            <input type="checkbox" name="ajax[new][shuffle_questions]" id="shuffle_questions" value="1" class="custom-switch-input">
-                            <span class="custom-switch-indicator"></span>
-                            <label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
-                        </label>
+                        <div class="custom-switch pl-0">
+                            <input type="checkbox" id="shuffle_questions">
+                            <label for="shuffle_questions" class="custom-switch-description">
+                                <span class="custom-switch-indicator"></span>
+                                Shuffle Questions
+                            </label>
+                        </div>
                     </div>
                     <div class="option-field-item mt-20 mb-20">
-                        <label class="custom-switch pl-0">
+                        <div class="custom-switch pl-0">
                             <input type="checkbox" name="ajax[new][correct_answer_explaination]" id="correct_answer_explaination" value="1" class="custom-switch-input">
                             <span class="custom-switch-indicator"></span>
                             <label class="custom-switch-description mb-0 cursor-pointer" for="correct_answer_explaination">Correct Answer Explanation</label>
-                        </label>
+                        </div>
                     </div>
                     <div class="option-field-item mt-20 mb-20">
-                        <label class="custom-switch pl-0">
+                        <div class="custom-switch pl-0">
                             <input type="checkbox" name="ajax[new][incorrect_answer_explaination]" id="incorrect_answer_explaination" value="1" class="custom-switch-input">
                             <span class="custom-switch-indicator"></span>
                             <label class="custom-switch-description mb-0 cursor-pointer" for="incorrect_answer_explaination">Incorrect Answer Explanation</label>
-                        </label>
+                        </div>
                     </div>
                 </div>
 
                 <div class="rurera-hide rurera_js_hide_field1 form-group ">
                     <label class="input-label">Duration Type</label>
                     <div class="input-group">
-
-
                         <div class="radio-buttons">
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][duration_type]"
