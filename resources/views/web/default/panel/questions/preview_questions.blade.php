@@ -155,6 +155,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                                     <li>Subject: <span>{{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}}</span></li>
                                                                     <li>Chapter: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->chapter->getTitleAttribute() : ''}}</span></li>
                                                                     <li>Part Item: <span>{{isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->title : ''}}</span></li>
+                                                                    <li>Part Details: <span>{!! isset($questionObj->topicPartItem->id)? $questionObj->topicPartItem->description : '' !!}</span></li>
                                                                     <li>Status: <span class="question_status_label question_status_{{$questionObj->id}}">{{$questionObj->question_status}}</span></li>
                                                                 </ul>
                                                             </div>
