@@ -966,7 +966,7 @@
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field no_of_attemptes_field assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
                         <div class="form-group">
-                            <label class="input-label">No of Attempts</label>
+                            <label class="input-label">Number of Attempts</label>
 
                             
                             <div class="range-slider">
