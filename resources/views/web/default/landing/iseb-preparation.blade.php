@@ -481,7 +481,7 @@
             </div>
         </div>
     </section>
-
+    {!! parseShortcode('[SC_rurera-work-process]') !!}
     {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
     {!! parseShortcode('[SC_features-section-f]') !!}
     @php
