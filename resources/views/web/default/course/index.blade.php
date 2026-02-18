@@ -795,7 +795,7 @@
                     <span class="seg"></span>
                     </div>
                 </div>
-                <div class="swiper">
+                <div class="swiper-container">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="p-4">
@@ -1399,7 +1399,7 @@
     </script>
 
     <script>
-        var swiper = new Swiper('.slider-shell .swiper', {
+        var swiper = new Swiper('.slider-shell .swiper-container', {
         slidesPerView: 1,
         navigation: {
             nextEl: '.swiper-button-next',
