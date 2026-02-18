@@ -527,13 +527,22 @@ span.learn-lable {
     position: relative;
     margin: 0 0 12px;
 }
-.topic-search-area .input-field img {
+.topic-search-area .input-field img,
+.topic-search-area .search-clear {
     position: absolute;
     height: 20px;
     width: 20px;
     top: 50%;
     margin-top: -10px;
     margin-left: 10px;
+}
+.topic-search-area .search-clear {
+    right: 8px;
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 .rurera-topics-search .input-field:has(img) .search-field {
     padding-left: 35px;
@@ -568,13 +577,11 @@ span.learn-lable {
 	border-radius: 10px;
 	background-color: #fff;
 }
-
 .rurera-topics-search .search-results::-webkit-scrollbar
 {
 	width: 8px;
 	background-color: #fff;
 }
-
 .rurera-topics-search .search-results::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: none;
