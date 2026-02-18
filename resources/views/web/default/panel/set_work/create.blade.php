@@ -856,12 +856,13 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                         <div class="form-group">
-                            <label class="input-label">Practice Due Date</label>
+                            <label class="input-label" for="assignment_end_date">Practice Due Date</label>
                             <div class="input-group">
                                 <div class="input-holder">
                                     <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
                                     <input type="text" autocomplete="off"
                                             name="ajax[new][assignment_end_date]"
+                                            id="assignment_end_date"
                                             value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
                                             class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
                                             placeholder=""/>
