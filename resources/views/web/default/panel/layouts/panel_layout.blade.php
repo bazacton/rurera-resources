@@ -80,6 +80,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
 
                             @include(getTemplate(). '.panel.includes.user_top_bar')
                             <div class="sidebar-inner-elements">
+                                @if($is_subject_page == false)
                                 @if(auth()->user()->isUser())
                                     <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                         <ul>
@@ -94,6 +95,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                             </li>
                                         </ul>
                                     </div>
+                                @endif
                                 @endif
 
                                 @if($is_subject_page == true)
@@ -463,6 +465,8 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
 
                                     </div>
                                     @endif
+
+                                    @if($is_subject_page == false)
                                     @if(auth()->user()->isUser() && !request()->is('quests'))
 
                                     @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
@@ -503,6 +507,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                         </div>
                                     @endif
                                 @endif
+                                    @endif
 
                                 @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
 
