@@ -118,7 +118,7 @@
                                     @foreach($blog as $post)
                                         <tr>
                                             <td>
-                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ parseShortcode($post->category->title) }}</a>
+                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ $WebBlogController->getPostContent($post, $post->title) }}</a>
                                             </td>
                                             <td>{{ $post->category->title }}</td>
                                             @if(!empty($post->author->get_full_name()))
