@@ -63,41 +63,30 @@
         </section>
         <section class="lms-chapter-section">
             <div class="lms-chapter-area">
-                <div class="chapter-nav mb-30 mt-15">
-
-                    <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
-                        <div class="stats-user">
-                            <h2 class="font-22 mb-0 text-uppercase">{{ $course->title }}</h2>
-                        </div>
-                        @if(isset( $course->learn_icon ) && $course->learn_icon != '')
-                            <div class="course-icon"><img src="{{$course->learn_icon}}" alt="course-icon" width="150" height="150"></div>
-                        @endif
-                        <div class="stats-list">
-                            <ul>
-                                <li>
-                                    <div class="list-box">
-                                        <strong class="font-19 font-weight-bold">{{$course->chapters->count()}}</strong>
-                                        <span class="font-14">Units</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list-box">
-                                        <strong class="font-19 font-weight-bold">{{$course->webinar_sub_chapters->count()}}</strong>
-                                        <span class="font-14">Lessons</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="panel-stats" style="background:{{(isset( $course->learn_background_color ) && $course->learn_background_color != '')? $course->learn_background_color : '#ffff'}}">
+                    <div class="stats-user">
+                        <h2 class="font-22 mb-0 text-uppercase">{{ $course->title }}</h2>
                     </div>
-                    <ul class="font-14 font-weight-500">
-                        @foreach($course->chapters as $chapter)
-                            @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-                                <li><a href="#subject_{{$chapter->id}}">{{ $chapter->title}}</a></li>
-                            @endif
-                        @endforeach
-                    </ul>
+                    @if(isset( $course->learn_icon ) && $course->learn_icon != '')
+                        <div class="course-icon"><img src="{{$course->learn_icon}}" alt="course-icon" width="150" height="150"></div>
+                    @endif
+                    <div class="stats-list">
+                        <ul>
+                            <li>
+                                <div class="list-box">
+                                    <strong class="font-19 font-weight-bold">{{$course->chapters->count()}}</strong>
+                                    <span class="font-14">Units</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-box">
+                                    <strong class="font-19 font-weight-bold">{{$course->webinar_sub_chapters->count()}}</strong>
+                                    <span class="font-14">Lessons</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
                 {{--<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
                     <div class="sorting-filter">
                         <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
@@ -112,9 +101,19 @@
 
 
                 <div class="rurera-topics-search">
-                    <input type="text" id="search" placeholder="Search..." class="search-field">
-                    <div class="search-results" id="search-results"></div>
-
+                    <div class="topic-search-area">
+                        <input type="text" id="search" placeholder="Search..." class="search-field">
+                        <div class="search-results" id="search-results"></div>
+                        <div class="chapter-nav mb-30 mt-15">
+                            <ul class="font-14 font-weight-500">
+                                @foreach($course->chapters as $chapter)
+                                    @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+                                        <li><a href="#subject_{{$chapter->id}}">{{ $chapter->title}}</a></li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
 
                     <div class="chapter-views chapters-short-view">
                         <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
