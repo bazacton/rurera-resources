@@ -538,20 +538,22 @@ span.learn-lable {
 .rurera-topics-search .input-field:has(img) .search-field {
     padding-left: 35px;
 }
+.rurera-topics-search .search-results-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 .rurera-topics-search .search-results {
     max-height: 150px;
     overflow: hidden;
     overflow-y: auto;
     background-color: #fff;
-    padding: 20px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
     display: none;
     position: relative;
     z-index: 1000;
     width: 100%;
-    margin-bottom: 10px;
 }
 .rurera-topics-search .search-results::-webkit-scrollbar-track
 {
