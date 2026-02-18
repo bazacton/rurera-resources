@@ -102,7 +102,10 @@
 
                 <div class="rurera-topics-search">
                     <div class="topic-search-area">
-                        <input type="text" id="search" placeholder="Search..." class="search-field">
+                        <div class="input-field">
+                            <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
+                            <input type="text" id="search" placeholder="Search..." class="search-field">
+                        </div>
                         <div class="search-results" id="search-results"></div>
                         <div class="chapter-nav mb-0">
                             <ul class="font-14 font-weight-500">
