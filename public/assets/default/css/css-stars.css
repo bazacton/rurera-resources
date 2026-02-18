@@ -539,14 +539,13 @@ span.learn-lable {
 .topic-search-area .search-clear {
     right: 8px;
     font-size: 25px;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     display: none;
 }
 .topic-search-area .search-clear.active {
-    display: block;
+    display: flex;
 }
 .rurera-topics-search .input-field:has(img) .search-field {
     padding-left: 35px;
