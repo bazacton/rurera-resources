@@ -198,7 +198,7 @@
                             </label>
 
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="vocabulary">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="vocabulary">
                                 <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="" aria-hidden="true">
@@ -208,7 +208,7 @@
                             </label>
 
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="timestables">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="timestables">
                                 <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/timestables.png" alt="" aria-hidden="true">
@@ -218,7 +218,7 @@
                             </label>
 
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="book">
+                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="book">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/books.png" alt="" aria-hidden="true">
@@ -227,7 +227,7 @@
                             </span>
                         </label>
                         {{--<label class="card-radio rurera-hide">
-                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="assignment">
+                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="assignment">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/practice.png" alt="" aria-hidden="true">
