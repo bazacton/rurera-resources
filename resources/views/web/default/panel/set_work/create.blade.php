@@ -842,6 +842,8 @@
                                     <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
                                     <input type="text" autocomplete="off"
                                             name="ajax[new][assignment_start_date]"
+                                            inputmode="numeric"
+                                            aria-describedby="start-date-format"
                                             id="assignment_start_date"
                                             value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
                                             class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
