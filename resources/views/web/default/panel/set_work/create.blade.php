@@ -198,7 +198,7 @@
                             </label>
 
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="vocabulary">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="vocabulary">
                                 <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="" aria-hidden="true">
@@ -208,7 +208,7 @@
                             </label>
 
                             <label class="card-radio">
-                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="timestables">
+                                <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="timestables">
                                 <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/timestables.png" alt="" aria-hidden="true">
@@ -218,7 +218,7 @@
                             </label>
 
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="book">
+                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="book">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/books.png" alt="" aria-hidden="true">
@@ -227,7 +227,7 @@
                             </span>
                         </label>
                         {{--<label class="card-radio rurera-hide">
-                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="assignment">
+                            <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="assignment">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/practice.png" alt="" aria-hidden="true">
@@ -242,7 +242,7 @@
                     <legend class="input-label">Test Type</legend>
                     <div class="radio-buttons" aria-label="Test Type">
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" checked>
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test-types-selection" value="sats" checked>
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/sats.png" alt="" aria-hidden="true">
@@ -251,7 +251,7 @@
                             </span>
                         </label>
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="11plus">
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test-types-selection" value="11plus">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus">
@@ -260,7 +260,7 @@
                             </span>
                         </label>
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="independent_exams">
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test-types-selection" value="independent_exams">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/independent-exams.png" alt="independent-exams">
@@ -270,7 +270,7 @@
                         </label>
 
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="iseb">
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test-types-selection" value="iseb">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb">
@@ -280,7 +280,7 @@
                         </label>
 
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="cat4">
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test-types-selection" value="cat4">
                             <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4">
@@ -1548,7 +1548,7 @@
             var user_id = $(".assignment-user-class:checked").val();
             var quiz_type = $(".assignemnet_types_selection:checked").val();
             if(quiz_type == 'tests'){
-                var quiz_type = $(".test_types_selection:checked").val();
+                var quiz_type = $(".test-types-selection:checked").val();
             }
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
@@ -1920,7 +1920,7 @@
         $(".year_quiz_ajax_select").change();
     });
 
-    $('body').on('change', '.test_types_selection', function (e) {
+    $('body').on('change', '.test-types-selection', function (e) {
         $(".year_quiz_ajax_select").change();
     });
 
