@@ -544,6 +544,10 @@ span.learn-lable {
     margin-top: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: none;
+}
+.rurera-topics-search .search-results-box:has(.search-results.active) {
+    display: block;
 }
 .rurera-topics-search .search-results {
     max-height: 150px;
@@ -554,6 +558,9 @@ span.learn-lable {
     position: relative;
     z-index: 1000;
     width: 100%;
+}
+.rurera-topics-search .search-results.active {
+    display: block;
 }
 .rurera-topics-search .search-results::-webkit-scrollbar-track
 {
