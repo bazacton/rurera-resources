@@ -520,7 +520,6 @@ span.learn-lable {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 .rurera-topics-search .search-results {
     max-height: 150px;
     overflow-y: auto;
@@ -529,7 +528,7 @@ span.learn-lable {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    display: none; /* Hide initially */
+    display: none;
     position: absolute;
     z-index: 1000;
     width: 100%;
