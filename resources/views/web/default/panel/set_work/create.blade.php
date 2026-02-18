@@ -860,7 +860,7 @@
                             <div class="input-group">
                                 <div class="input-holder">
                                     <img src="/assets/default/svgs/calendar-days.svg" height="24" width="24" alt="" aria-hidden="true">
-                                    <input type="text" autocomplete="off"
+                                    <input type="date" autocomplete="off"
                                             name="ajax[new][assignment_end_date]"
                                             inputmode="numeric"
                                             aria-describedby="end-date-format"
