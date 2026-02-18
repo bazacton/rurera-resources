@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <form action="{{ getAdminPanelUrl() }}/blog" method="get" class="mb-0">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="input-label">{{ trans('admin/main.search') }}</label>
                                     <input name="title" type="text" class="form-control" value="{{ request()->get('title') }}">
