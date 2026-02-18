@@ -144,19 +144,19 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions: word problems</a></td>
+                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Write variable expressions: word problems</a></td>
                                                     <td class="font-13 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13"><a href="#" class="text-decoration-none">Lines, line segments and rays</a></td>
+                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Lines, line segments and rays</a></td>
                                                     <td class="font-13 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13"><a href="#" class="text-decoration-none">Write variable expressions</a></td>
+                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Write variable expressions</a></td>
                                                     <td class="font-13 text-right font-weight-bold">3</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13"><a href="#" class="text-decoration-none">Understanding area of a parallelogram</a></td>
+                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Understanding area of a parallelogram</a></td>
                                                     <td class="font-13 text-right font-weight-bold">3</td>
                                                 </tr>
                                             </tbody>
@@ -470,7 +470,7 @@
                                                     <li>
                                                         <div class="quests-item">
                                                             <div class="icon-box">
-                                                                <img src="{{$quest_icon}}" alt="quests image">
+                                                                <img src="{{$quest_icon}}" alt="quests image" loading="lazy">
                                                             </div>
                                                             <div class="item-text">
                                                                 <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
@@ -481,7 +481,7 @@
                                                                     <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
                                                                 </div>
                                                                 <span class="progress-icon">
-                                                                    <img src="/assets/default/img/quests-coin.png" alt="">
+                                                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin" loading="lazy">
                                                                     +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
                                                                 </span>
                                                             </div>
