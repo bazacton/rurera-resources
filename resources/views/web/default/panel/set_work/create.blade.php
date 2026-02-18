@@ -976,7 +976,7 @@
                                 </div>
                                 <input type="range"
                                         name="ajax[new][no_of_attempts]"
-                                        value="0"
+                                        value="1"
                                         class="js-ajax-title form-control no_of_attempts range-slider-field"
                                         placeholder="" min="1" max="10"/>
                             </div>
