@@ -77,6 +77,17 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Indexed</label>
+                                    <select name="is_indexed" data-plugin-selectTwo class="form-control populate">
+                                        <option value="">{{ trans('admin/main.all_status') }}</option>
+                                        <option value="" @if(request()->get('is_indexed') == '') selected @endif>All</option>
+                                        <option value="0" @if(request()->get('is_indexed') == '0') selected @endif>No</option>
+                                        <option value="1" @if(request()->get('is_indexed') == '1') selected @endif>Yes</option>
+                                    </select>
+                                </div>
+                            </div>
 
 
                             <div class="col-md-3">
@@ -116,17 +127,17 @@
                                         <th>{{ trans('admin/main.action') }}</th>
                                     </tr>
                                     @foreach($blog as $post)
-                                        <tr class="{{ ($post->is_indexed == 1)? 'indexed_blog_row' : ''}}">
+                                        <tr class="{{ ($post->is_indexed == 1)? 'indexed_blog_row' : 'noindexed_blog_row'}}">
                                             <td>
                                                 <a href="{{ $post->getUrl() }}" target="_blank">{{ $WebBlogController->getPostContent($post, $post->title) }}</a>
                                             </td>
                                             <td>{{ $post->category->title }}</td>
                                             @if(!empty($post->author->get_full_name()))
-                                            <td>{{ $post->author->get_full_name() }}</td>
+                                                <td>{{ $post->author->get_full_name() }}</td>
                                             @else
-                                            <td class="text-danger">Deleted</td>
+                                                <td class="text-danger">Deleted</td>
                                             @endif
-                                            <td class="{{ ($post->is_indexed == 1)? 'indexed_blog_col' : ''}}">
+                                            <td class="{{ ($post->is_indexed == 1)? 'indexed_blog_col' : 'noindexed_blog_col'}}">
                                                 {{ ($post->is_indexed == 1)? 'Yes' : 'No'  }}
                                             </td>
                                             <td>{{ dateTimeFormat($post->updated_at, 'j M Y | H:i') }}</td>
@@ -146,7 +157,7 @@
                                                 <a href="/admin/blog/{{ $post->id }}/duplicate_blog" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Duplicate">
                                                     <i class="fa fa-copy"></i>
                                                 </a>
-                                                    @include('admin.includes.delete_button',['url' => getAdminPanelUrl('/blog/'. $post->id .'/delete'), 'btnClass' => ''])
+                                                @include('admin.includes.delete_button',['url' => getAdminPanelUrl('/blog/'. $post->id .'/delete'), 'btnClass' => ''])
 
                                             </td>
                                         </tr>
