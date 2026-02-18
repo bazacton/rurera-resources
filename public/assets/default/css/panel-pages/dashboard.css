@@ -1029,6 +1029,7 @@ button.view-btn {
     background-color: inherit;
     padding: 0;
     color: var(--primary);
+    text-align: left;
 }
 /* Right Sidebar Focus-Table Style End */
 
