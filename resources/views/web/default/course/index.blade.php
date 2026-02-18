@@ -1369,7 +1369,8 @@
             function displayResults(results) {
                 $searchResultsDiv.empty();
                 if (results.length > 0) {
-                    $searchResultsDiv.show();
+                    $searchResultsDiv.empty().addClass('active');
+
                     results.forEach(function(result) {
                         var $resultElement = $('<a/>', { href: result.target });
                         var $resultTitle = $('<div/>', { class: 'result-title', text: result.name });
@@ -1377,24 +1378,32 @@
                         var $expandIcon = $('<span/>', { class: 'expand-icon', text: '✕' });
 
                         $resultElement.append($resultTitle, $resultDescription, $expandIcon);
+
                         $resultElement.on('click', function(e) {
                             e.preventDefault();
-                            var $previouslyHighlighted = $parent.find('.highlight');
-                            if ($previouslyHighlighted.length) {
-                                $previouslyHighlighted.removeClass('highlight');
-                            }
+
+                            $parent.find('.highlight').removeClass('highlight');
+
                             var $targetSection = $(result.target);
                             if ($targetSection.length) {
-                                $('html, body').animate({ scrollTop: $targetSection.offset().top }, 400);
+                                $('html, body').animate({
+                                    scrollTop: $targetSection.offset().top
+                                }, 400);
+
                                 $targetSection.addClass('highlight');
                             }
+
                             $searchInput.val('');
-                            $searchResultsDiv.empty().hide();
+                            $searchResultsDiv.empty().removeClass('active');
                         });
+
                         $searchResultsDiv.append($resultElement);
                     });
+
                 } else {
-                    $searchResultsDiv.html('<p>No results found</p>');
+                    $searchResultsDiv
+                        .html('<p>No results found</p>')
+                        .addClass('active');
                 }
             }
         });
