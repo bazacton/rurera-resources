@@ -839,7 +839,7 @@
                             <label class="input-label" for="assignment_start_date">Practice Start Date</label>
                             <div class="input-group">
                                 <div class="input-holder">
-                                    <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
+                                    <img src="/assets/default/svgs/calendar-days.svg" height="24" width="24" alt="" aria-hidden="true">
                                     <input type="text" autocomplete="off"
                                             name="ajax[new][assignment_start_date]"
                                             inputmode="numeric"
@@ -859,7 +859,7 @@
                             <label class="input-label" for="assignment_end_date">Practice Due Date</label>
                             <div class="input-group">
                                 <div class="input-holder">
-                                    <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
+                                    <img src="/assets/default/svgs/calendar-days.svg" height="24" width="24" alt="" aria-hidden="true">
                                     <input type="text" autocomplete="off"
                                             name="ajax[new][assignment_end_date]"
                                             inputmode="numeric"
