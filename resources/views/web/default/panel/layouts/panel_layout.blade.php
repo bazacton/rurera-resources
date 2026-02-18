@@ -144,19 +144,27 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Write variable expressions: word problems</a></td>
+                                                    <td class="font-13">
+                                                        <button type="button">Write variable expressions: word problems</button>
+                                                    </td>
                                                     <td class="font-13 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Lines, line segments and rays</a></td>
+                                                    <td class="font-13">
+                                                        <button type="button">Lines, line segments and rays</button>
+                                                    </td>
                                                     <td class="font-13 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Write variable expressions</a></td>
+                                                    <td class="font-13">
+                                                        <button type="button">Write variable expressions</button>
+                                                    </td>
                                                     <td class="font-13 text-right font-weight-bold">3</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13"><a href="/skill/variable-expressions" class="text-decoration-none">Understanding area of a parallelogram</a></td>
+                                                    <td class="font-13">
+                                                        <button type="button">Understanding area of a parallelogram</button>
+                                                    </td>
                                                     <td class="font-13 text-right font-weight-bold">3</td>
                                                 </tr>
                                             </tbody>
