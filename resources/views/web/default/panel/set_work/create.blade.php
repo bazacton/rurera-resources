@@ -862,6 +862,8 @@
                                     <img src="/assets/default/svgs/calendar-days.svg" height="64" width="64" alt="calendar-days">
                                     <input type="text" autocomplete="off"
                                             name="ajax[new][assignment_end_date]"
+                                            inputmode="numeric"
+                                            aria-describedby="end-date-format"
                                             id="assignment_end_date"
                                             value="{{ !empty($assignmentObj) ? dateTimeFormat($assignmentObj->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
                                             class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
