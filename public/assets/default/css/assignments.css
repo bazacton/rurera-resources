@@ -21,7 +21,7 @@
 .card-radio input {display: none;}
 .card-radio input:checked + .radio-btn {background-color: #fff; border-color: var(--primary);}
 .radio-btn .card-icon h3,
-.radio-btn .card-icon .card-title {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0; overflow: hidden;}
+.radio-btn .card-icon .card-title {color: #555; font-size: .875rem; display: block; font-weight: 500; margin-bottom: 0; overflow: hidden;}
 .populated-data .input-label {font-size: .875rem; color: #666; font-weight: 500;}
 .populated-data .ui-widget.ui-widget-content {margin-top: 15px;}
 .populated-data .heatmap-range-slider .ui-slider.ui-widget-content {margin-top: 0; flex-basis: 82%; width: 82%;}
