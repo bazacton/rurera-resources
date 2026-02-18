@@ -353,7 +353,7 @@
 
 
 
-    <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
+    <!-- <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" aria-labelledby="subchapter-notes-modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
@@ -767,6 +767,428 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <button type="button" class="btn btn-danger center-modal-btn" data-toggle="modal" data-target="#fullscreenModal">Open Fullscreen Modal</button>
+    <div class="modal fade" id="fullscreenModal" tabindex="-1" role="dialog" aria-labelledby="fullscreenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-4" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="fullscreenLabel">Full Screen Modal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <div class="container py-4">
+                <div class="slider-shell">
+                <div class="top-track d-flex align-items-center">
+                    <div class="track w-100 d-flex">
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    <span class="seg"></span>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-4 mb-md-0">
+                            <div class="media-card">
+                                <img class="img-fluid" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="slide visual">
+                            </div>
+                            </div>
+                            <div class="col-md-7">
+                            <h2 class="title mb-3">Understanding Workplace Conflict</h2>
+                            <p class="lead-desc mb-5">Conflict is inevitable, but it doesn’t have to be destructive! Explore the nature of workplace conflict. Learn to recognize different types of conflict and understand their potential impact on team dynamics and productivity. See conflict not as a roadblock, but as a chance for innovation!</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button class="btn btn-primary continue-btn-intro">Next Slide</button>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="swiper-button-prev nav-btn"></div>
+                                <div class="swiper-button-next nav-btn ml-2"></div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-4">Common Sources of Conflict</h2>
+                            <div id="conflictAccordion" class="accordion">
+                            <div class="card item">
+                            <div class="card-header p-0" id="h1">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c1" aria-expanded="false" aria-controls="c1">
+                                    <span class="plus">+</span>
+                                    <span>Differences in Work Styles</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c1" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">People approach tasks differently, which can cause friction.</div>
+                            </div>
+                            </div>
+                            <div class="card item">
+                            <div class="card-header p-0" id="h2">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c2" aria-expanded="false" aria-controls="c2">
+                                    <span class="plus">+</span>
+                                    <span>Disagreements on Tasks or Priorities</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c2" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">Unclear ownership and changing priorities can trigger disputes.</div>
+                            </div>
+                            </div>
+                            <div class="card item">
+                            <div class="card-header p-0" id="h3">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="c3">
+                                    <span class="plus">+</span>
+                                    <span>Organizational Change</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c3" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">New processes, tools, or roles can create uncertainty.</div>
+                            </div>
+                            </div>
+                            <div class="card item">
+                            <div class="card-header p-0" id="h4">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c4" aria-expanded="false" aria-controls="c4">
+                                    <span class="plus">+</span>
+                                    <span>Lack of Support or Recognition</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c4" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">Insufficient feedback or recognition can reduce morale.</div>
+                            </div>
+                            </div>
+                            <div class="card item">
+                            <div class="card-header p-0" id="h5">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c5" aria-expanded="false" aria-controls="c5">
+                                    <span class="plus">+</span>
+                                    <span>Competition</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c5" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">Scarcity of opportunities can lead to unhelpful rivalry.</div>
+                            </div>
+                            </div>
+                            <div class="card item">
+                            <div class="card-header p-0" id="h6">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c6" aria-expanded="false" aria-controls="c6">
+                                    <span class="plus">+</span>
+                                    <span>Communication Gaps</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c6" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">Missing context or assumptions often create misunderstandings.</div>
+                            </div>
+                            </div>
+                            <div class="card item">
+                            <div class="card-header p-0" id="h7">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-block text-left item-btn" data-toggle="collapse" data-target="#c7" aria-expanded="false" aria-controls="c7">
+                                    <span class="plus">+</span>
+                                    <span>Resource Constraints</span>
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="c7" class="collapse" data-parent="#conflictAccordion">
+                                <div class="card-body">Limited time or budget can heighten tensions between teams.</div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-acc">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="countDisplay">0/7</span>
+                            <span class="divider"></span>
+                            <button class="pill-next" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-acc d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-4">Your Conflict Resolution Style</h2>
+                            <div class="flash-deck">
+                            <div class="flash-card active">
+                            <div class="flash-body">Do you Confront or Avoid?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            <div class="flash-card">
+                            <div class="flash-body">Do you engage directly to find a solution, or do you avoid conflict?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            <div class="flash-card">
+                            <div class="flash-body">How do you respond when deadlines create pressure?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            <div class="flash-card">
+                            <div class="flash-body">Do you prefer collaboration or independent decision-making?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            <div class="flash-card">
+                            <div class="flash-body">What do you value more: speed or consensus?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            <div class="flash-card">
+                            <div class="flash-body">Do you seek feedback proactively or wait for it?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            <div class="flash-card">
+                            <div class="flash-body">How do you de-escalate when emotions rise?</div>
+                            <button class="flip-btn" type="button">↻</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-flash">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev pill-prev-flash" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="flashCount">0/7</span>
+                            <span class="divider"></span>
+                            <button class="pill-next pill-next-flash" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-flash d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-4">Action Plan for Conflict Resolution</h2>
+                            <ul class="plan-list list-unstyled">
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Identify potential conflicts early to address them proactively. Take action now! This will make resolution easier. Act today!</span></li>
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Actively listen to all perspectives involved in the conflict. Hear the other side! You never know when they might surprise you.</span></li>
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Practice empathy to understand the emotions and needs of others. Put yourself in their shoes to see another perspective.</span></li>
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Use “I” statements to communicate your feelings and needs constructively. Be respectful of everyone. Your feelings matter!</span></li>
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Brainstorm solutions collaboratively, seeking win-win outcomes. Everyone deserves to win in the end! Work together to make sure everyone wins.</span></li>
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Implement the agreed-upon solution and monitor its effectiveness. Follow up often! Stay flexible and change the plan if necessary.</span></li>
+                            <li class="plan-item"><span class="chk"></span><span class="txt">Regularly assess team dynamics, offering support and encouragement. Support each other. Growth is a key aspect of a healthy work environment.</span></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-plan">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev pill-prev-plan" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="planCount">0/7</span>
+                            <span class="divider"></span>
+                            <button class="pill-next pill-next-plan" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-plan d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-4">Which actions contribute to an inclusive workplace?</h2>
+                            <p class="lead-desc mb-3">(Select all that apply)</p>
+                            <ul class="select-list list-unstyled">
+                            <li class="select-item"><span class="chk"></span><span class="txt">Promoting stereotypes.</span></li>
+                            <li class="select-item"><span class="chk"></span><span class="txt">Ignoring microaggressions.</span></li>
+                            <li class="select-item"><span class="chk"></span><span class="txt">Actively listening to diverse perspectives.</span></li>
+                            <li class="select-item"><span class="chk"></span><span class="txt">Advocating for equitable policies.</span></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-select" disabled>Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <span id="selectCount">0/4</span>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-select d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-4">Reveal Sections Sequentially</h2>
+                            <ul class="reveal-list list-unstyled">
+                            <li class="reveal-item"><div class="box">Step 1: Introduction to policy.</div></li>
+                            <li class="reveal-item"><div class="box">Step 2: Key responsibilities.</div></li>
+                            <li class="reveal-item"><div class="box">Step 3: Escalation process.</div></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-reveal">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev pill-prev-reveal" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="revealCount">0/3</span>
+                            <span class="divider"></span>
+                            <button class="pill-next pill-next-reveal" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-reveal d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-2">Question</h2>
+                            <p class="lead-desc mb-3">How should a team handle recurring delays? (Reveal points one by one)</p>
+                            <ul class="reveal-list reveal-qa list-unstyled">
+                            <li class="reveal-item"><div class="box">A) Identify root causes with a blameless retrospective.</div></li>
+                            <li class="reveal-item"><div class="box">B) Re-align priorities and remove blockers transparently.</div></li>
+                            <li class="reveal-item"><div class="box">C) Set clear ownership and track outcomes.</div></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-revealq">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev pill-prev-revealq" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="revealQCount">0/3</span>
+                            <span class="divider"></span>
+                            <button class="pill-next pill-next-revealq" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-revealq d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide fib-slide">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-2">Fill in the Blanks</h2>
+                            <p class="lead-desc mb-3">Next press par pehle Question reveal hoga, phir neeche second question, aur phir fields sequentially fill hongi.</p>
+                            <div class="fib-list">
+                            <div class="fib-item">
+                                <div class="q mb-2">Team should ____ blockers and ____ priorities.</div>
+                                <div class="inputs d-flex">
+                                <input class="form-control fib-input mr-2" data-answer="address" placeholder="_______" />
+                                <input class="form-control fib-input" data-answer="reprioritize" placeholder="_______" />
+                                </div>
+                            </div>
+                            <div class="fib-item">
+                                <div class="q mb-2">Retrospective helps ____ causes and ____ actions.</div>
+                                <div class="inputs d-flex">
+                                <input class="form-control fib-input mr-2" data-answer="identify" placeholder="_______" />
+                                <input class="form-control fib-input" data-answer="commit" placeholder="_______" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-fib">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev pill-prev-fib" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="fibCount">0/6</span>
+                            <span class="divider"></span>
+                            <button class="pill-next pill-next-fib" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-fib d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide frame-slide" data-initial="5" data-increments="2,2">
+                        <div class="p-4">
+                        <div class="slide-scroll">
+                            <h2 class="title mb-2">Bar models can be used with 10s frames.</h2>
+                            <div class="row">
+                            <div class="col-md-6">
+                                <div class="frame-text">
+                                <p class="oneline t1 d-none"><strong>First</strong> there were<br>5 frogs on a log.</p>
+                                <p class="oneline t2 d-none"><strong>Then</strong> 2 more<br>frogs jump on.</p>
+                                <p class="oneline t3 d-none"><strong>Then</strong> 2 more<br>frogs jump on.</p>
+                                <p class="oneline tNow d-none"><strong>Now</strong> there are<br>9 frogs on the log.</p>
+                                </div>
+                                <div class="ten-frame">
+                                <div class="cell"><span class="dot blue d-none"></span></div>
+                                <div class="cell"><span class="dot blue d-none"></span></div>
+                                <div class="cell"><span class="dot blue d-none"></span></div>
+                                <div class="cell"><span class="dot blue d-none"></span></div>
+                                <div class="cell"><span class="dot blue d-none"></span></div>
+                                <div class="cell"><span class="dot red d-none"></span></div>
+                                <div class="cell"><span class="dot red d-none"></span></div>
+                                <div class="cell"><span class="dot green d-none"></span></div>
+                                <div class="cell"><span class="dot green d-none"></span></div>
+                                <div class="cell"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bar-model">
+                                <div class="bar-top"><span class="num num-total d-none">9</span></div>
+                                <div class="bar-bottom">
+                                    <div class="seg seg-left"><span class="num d-none">5</span></div>
+                                    <div class="seg seg-mid"><span class="num d-none">2</span></div>
+                                    <div class="seg seg-right"><span class="num d-none">2</span></div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary continue-btn-frame">Continue</button>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center mt-4">
+                            <div class="swiper-button-prev nav-btn prev-only"></div>
+                            <div class="step-pill ml-2">
+                            <button class="pill-prev pill-prev-frame" type="button" aria-label="Previous">‹</button>
+                            <span class="divider"></span>
+                            <span id="frameCount">0/5</span>
+                            <span class="divider"></span>
+                            <button class="pill-next pill-next-frame" type="button" aria-label="Next">›</button>
+                            </div>
+                            <div class="swiper-button-next nav-btn ml-2 main-next-frame d-none"></div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
 @endsection
 
@@ -985,7 +1407,7 @@
         },
         speed: 500
         });
-        $('#subchapter-notes-modal').on('shown.bs.modal', function () {
+        $('#fullscreenModal').on('shown.bs.modal', function () {
         if (swiper && typeof swiper.update === 'function') {
             swiper.update();
         }
