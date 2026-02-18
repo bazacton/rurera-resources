@@ -177,7 +177,7 @@
             <div class="years-group populated-data">
                 <fieldset class="form-group">
                     <legend class="input-label">Practice Type</legend>
-                        <div class="radio-buttons" aria-label="Practice Type">
+                        <div class="radio-buttons">
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="practice" checked>
                                 <span class="radio-btn"><i class="las la-check"></i>
