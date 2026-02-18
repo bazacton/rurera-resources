@@ -110,15 +110,15 @@
                                         <th>{{ trans('admin/main.title') }}</th>
                                         <th>{{ trans('admin/main.category') }}</th>
                                         <th>{{ trans('admin/main.author') }}</th>
-                                        <th>{{ trans('admin/main.comments') }}</th>
+                                        <th>Indexed</th>
                                         <th>{{ trans('public.date') }}</th>
                                         <th>{{ trans('admin/main.status') }}</th>
                                         <th>{{ trans('admin/main.action') }}</th>
                                     </tr>
                                     @foreach($blog as $post)
-                                        <tr>
+                                        <tr class="{{ ($post->is_indexed == 1)? 'indexed_blog_row' : ''}}">
                                             <td>
-                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ $WebBlogController->getPostContent($post, $post->title) }}</a>
+                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ $post->title }}</a>
                                             </td>
                                             <td>{{ $post->category->title }}</td>
                                             @if(!empty($post->author->get_full_name()))
@@ -126,8 +126,8 @@
                                             @else
                                             <td class="text-danger">Deleted</td>
                                             @endif
-                                            <td>
-                                                <a href="{{ $post->getUrl() }}" target="_blank">{{ $post->comments_count }}</a>
+                                            <td class="{{ ($post->is_indexed == 1)? 'indexed_blog_col' : ''}}">
+                                                {{ ($post->is_indexed == 1)? 'Yes' : 'No'  }}
                                             </td>
                                             <td>{{ dateTimeFormat($post->updated_at, 'j M Y | H:i') }}</td>
                                             <td>

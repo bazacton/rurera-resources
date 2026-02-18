@@ -1163,6 +1163,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
+
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label class="input-label">{{ trans('public.cover_image') }}</label>
@@ -1253,7 +1254,17 @@
                                     </div>
                                     @enderror
                                 </div>
+
                                 <div class="form-group custom-switches-stacked flex-row">
+                                    <label class="custom-switch pl-0">
+                                        <input type="hidden" name="is_indexed" value="0">
+                                        <input type="checkbox" name="is_indexed" id="is_indexed" value="1" {{ (!empty($post) and $post->is_indexed) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
+                                        <span class="custom-switch-indicator"></span>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="is_indexed">Indexed</label>
+                                    </label>
+                                </div>
+
+                                <div class="form-group custom-switches-stacked flex-row mt-10">
                                     <label class="custom-switch pl-0">
                                         <input type="hidden" name="seo_robot_access" value="0">
                                         <input type="checkbox" name="seo_robot_access" id="seo_robot_access" value="1" {{ (!empty($post) and $post->seo_robot_access) ? 'checked="checked"' : '' }} class="custom-switch-input"/>
