@@ -1031,6 +1031,10 @@ button.view-btn {
     color: var(--primary);
     text-align: left;
 }
+.focus-table td {
+    padding: .8rem .3rem;
+    vertical-align: middle;
+}
 /* Right Sidebar Focus-Table Style End */
 
 /* Quests-List Style Start */
