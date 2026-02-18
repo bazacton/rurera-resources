@@ -878,8 +878,8 @@
                             <label class="input-label">Review Due Date</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <button type="button" class="input-group-text " data-input="logo" data-preview="holder">
-                                        <i class="fa fa-calendar-week"></i>
+                                    <button type="button" class="input-group-text " data-input="logo" data-preview="holder" aria-label="Open review due date calendar">
+                                        <i class="fa fa-calendar-week" aria-hidden="true"></i>
                                     </button>
                                 </div>
                                 <input type="text" autocomplete="off"
