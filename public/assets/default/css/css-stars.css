@@ -518,12 +518,13 @@ span.learn-lable {
     margin: 0 0 25px;
 }
 .rurera-topics-search .search-field {
-    padding: 10px;
+    padding: 0 10px;
     font-size: 14px;
     width: 100%;
     margin-bottom: 0;
     border: 1px solid #ddd;
     border-radius: 10px;
+    height: 44px;
 }
 .topic-search-area .input-field {
     position: relative;
