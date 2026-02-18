@@ -946,9 +946,8 @@
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field no_of_questions_field">
                         <div class="form-group">
-                            <label class="input-label">No of Questions</label>
+                            <label class="input-label" for="no_of_questions">Number of Questions</label>
 
-                            
                             <div class="range-slider">
                                 <div id="slider_thumb2" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
@@ -958,6 +957,7 @@
                                         name="ajax[new][no_of_questions]"
                                         value="10"
                                         step="10"
+                                        id="no_of_questions"
                                         class="js-ajax-title form-control no_of_questions range-slider-field"
                                         placeholder="" min="10" max="30"/>
                             </div>
