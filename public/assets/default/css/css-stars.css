@@ -529,20 +529,26 @@ span.learn-lable {
     border: 1px solid #ccc;
     border-radius: 4px;
     display: none;
-    position: absolute;
+    position: relative;
     z-index: 1000;
     width: 100%;
 }
 .rurera-topics-search .search-results a {
     display: block;
-    padding: 8px;
+    padding: 0 0 10px;
     text-decoration: none;
     color: #333;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
+    position: relative;
+    margin: 0 0 10px;
 }
-.rurera-topics-search .search-results a:hover {
-    background-color: #ddd;
+.rurera-topics-search .search-results a:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.rurera-topics-search .search-results a:hover .result-title {
+    color: var(--primary);
 }
 .rurera-topics-search .result-title {
     font-weight: bold;
