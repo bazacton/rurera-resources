@@ -540,6 +540,7 @@ span.learn-lable {
 }
 .rurera-topics-search .search-results {
     max-height: 150px;
+    overflow: hidden;
     overflow-y: auto;
     background-color: #fff;
     padding: 20px;
