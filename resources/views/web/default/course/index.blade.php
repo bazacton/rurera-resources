@@ -1332,81 +1332,113 @@
             var $accordionList = $parent.find('#accordion');
 
             $searchInput.on('input', function() {
-                var query = ($searchInput.val() || '').toLowerCase();
-                if (query.length >= 3) {
-                    var results = [];
-                    $accordionList.find('li').each(function() {
-                        var $chapter = $(this);
-                        var title = ($chapter.find('h3').text() || '').toLowerCase();
-                        var $cards = $chapter.find('.chapter-card a');
+                var query = ($searchInput.val() || '').toLowerCase().trim();
 
-                        if (title.indexOf(query) !== -1) {
+                // Hide if less than 3 characters
+                if (query.length < 3) {
+                    $searchResultsDiv.removeClass('active').empty();
+                    return;
+                }
+
+                var results = [];
+
+                $accordionList.find('li').each(function() {
+                    var $chapter = $(this);
+                    var title = ($chapter.find('h3').text() || '').toLowerCase();
+                    var $cards = $chapter.find('.chapter-card a');
+
+                    // Match main topic
+                    if (title.indexOf(query) !== -1) {
+                        results.push({
+                            name: $chapter.find('h3').text(),
+                            description: 'Main Topic: ' + $chapter.find('h3').text(),
+                            target: '#' + $chapter.attr('id')
+                        });
+                    }
+
+                    // Match sub topics
+                    $cards.each(function() {
+                        var $card = $(this);
+                        var cardText = ($card.text() || '').toLowerCase();
+
+                        if (cardText.indexOf(query) !== -1) {
                             results.push({
-                                name: title,
-                                description: 'Main Topic: ' + title,
-                                target: '#' + $chapter.attr('id')
+                                name: $card.text(),
+                                description: 'Sub Topic under ' + $chapter.find('h3').text(),
+                                target: $card.attr('data-target')
                             });
                         }
-
-                        $cards.each(function() {
-                            var $card = $(this);
-                            var cardText = ($card.text() || '').toLowerCase();
-                            if (cardText.indexOf(query) !== -1) {
-                                results.push({
-                                    name: cardText,
-                                    description: 'Sub Topic under ' + title,
-                                    target: $card.attr('data-target')
-                                });
-                            }
-                        });
                     });
-                    displayResults(results);
-                } else {
-                    $searchResultsDiv.empty().hide();
-                }
+                });
+
+                displayResults(results);
             });
 
+
             function displayResults(results) {
+
                 $searchResultsDiv.empty();
-                if (results.length > 0) {
-                    $searchResultsDiv.empty().addClass('active');
 
-                    results.forEach(function(result) {
-                        var $resultElement = $('<a/>', { href: result.target });
-                        var $resultTitle = $('<div/>', { class: 'result-title', text: result.name });
-                        var $resultDescription = $('<div/>', { class: 'result-description', text: result.description });
-                        var $expandIcon = $('<span/>', { class: 'expand-icon', text: '✕' });
+                if (results.length === 0) {
+                    $searchResultsDiv
+                        .html('<p class="no-results">No results found</p>')
+                        .addClass('active');
+                    return;
+                }
 
-                        $resultElement.append($resultTitle, $resultDescription, $expandIcon);
+                $searchResultsDiv.addClass('active');
 
-                        $resultElement.on('click', function(e) {
-                            e.preventDefault();
+                results.forEach(function(result) {
 
-                            $parent.find('.highlight').removeClass('highlight');
-
-                            var $targetSection = $(result.target);
-                            if ($targetSection.length) {
-                                $('html, body').animate({
-                                    scrollTop: $targetSection.offset().top
-                                }, 400);
-
-                                $targetSection.addClass('highlight');
-                            }
-
-                            $searchInput.val('');
-                            $searchResultsDiv.empty().removeClass('active');
-                        });
-
-                        $searchResultsDiv.append($resultElement);
+                    var $resultElement = $('<a/>', {
+                        href: result.target,
+                        class: 'search-result-item'
                     });
 
-                } else {
-                    $searchResultsDiv
-                        .html('<p>No results found</p>')
-                        .addClass('active');
-                }
+                    var $resultTitle = $('<div/>', {
+                        class: 'result-title',
+                        text: result.name
+                    });
+
+                    var $resultDescription = $('<div/>', {
+                        class: 'result-description',
+                        text: result.description
+                    });
+
+                    var $expandIcon = $('<span/>', {
+                        class: 'expand-icon',
+                        text: '✕'
+                    });
+
+                    $resultElement.append($resultTitle, $resultDescription, $expandIcon);
+
+                    $resultElement.on('click', function(e) {
+                        e.preventDefault();
+
+                        // Remove old highlight
+                        $parent.find('.highlight').removeClass('highlight');
+
+                        var $targetSection = $(result.target);
+
+                        if ($targetSection.length) {
+                            $('html, body').animate({
+                                scrollTop: $targetSection.offset().top
+                            }, 400);
+
+                            $targetSection.addClass('highlight');
+                        }
+
+                        // Reset input + hide results
+                        $searchInput.val('');
+                        $searchResultsDiv.removeClass('active').empty();
+                    });
+
+                    $searchResultsDiv.append($resultElement);
+                });
             }
+
         });
+
     </script>
 
     <script>
