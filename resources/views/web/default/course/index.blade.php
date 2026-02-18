@@ -104,7 +104,7 @@
                     <div class="topic-search-area">
                         <input type="text" id="search" placeholder="Search..." class="search-field">
                         <div class="search-results" id="search-results"></div>
-                        <div class="chapter-nav mb-30 mt-15">
+                        <div class="chapter-nav mb-0">
                             <ul class="font-14 font-weight-500">
                                 @foreach($course->chapters as $chapter)
                                     @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
