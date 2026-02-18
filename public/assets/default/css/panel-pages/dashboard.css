@@ -1023,6 +1023,14 @@ button.view-btn {
 .panel-right-sidebar .store-stats li .store-item {gap: 0;}
 /* Store Stats Style End */
 
+/* Right Sidebar Focus-Table Style Start */
+.focus-table td button {
+    border: 0;
+    background-color: inherit;
+    padding: 0;
+}
+/* Right Sidebar Focus-Table Style End */
+
 /* Quests-List Style Start */
 .quests-list h3 {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 0 0 25px; }
 .quests-list li {margin-bottom: 35px;}
