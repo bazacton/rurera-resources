@@ -201,7 +201,7 @@
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="vocabulary">
                                 <span class="radio-btn">
                                 <div class="card-icon">
-                                    <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
+                                    <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="" aria-hidden="true">
                                     <h3>Vocabulary</h3>
                                 </div>
                                 </span>
@@ -211,7 +211,7 @@
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="timestables">
                                 <span class="radio-btn">
                                 <div class="card-icon">
-                                    <img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables">
+                                    <img src="/assets/default/img/assignment-logo/timestables.png" alt="" aria-hidden="true">
                                     <h3>Timestables</h3>
                                 </div>
                                 </span>
@@ -221,7 +221,7 @@
                             <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="book">
                             <span class="radio-btn">
                                 <div class="card-icon">
-                                    <img src="/assets/default/img/assignment-logo/books.png" alt="books">
+                                    <img src="/assets/default/img/assignment-logo/books.png" alt="" aria-hidden="true">
                                     <h3>Book</h3>
                                 </div>
                             </span>
@@ -230,7 +230,7 @@
                             <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="assignment">
                             <span class="radio-btn">
                                 <div class="card-icon">
-                                    <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
+                                    <img src="/assets/default/img/assignment-logo/practice.png" alt="" aria-hidden="true">
                                     <h3>Custom Assignment</h3>
                                 </div>
                             </span>
@@ -245,7 +245,7 @@
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" checked>
                             <span class="radio-btn">
                                 <div class="card-icon">
-                                    <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
+                                    <img src="/assets/default/img/assignment-logo/sats.png" alt="" aria-hidden="true">
                                     <h3>SATs</h3>
                                 </div>
                             </span>
