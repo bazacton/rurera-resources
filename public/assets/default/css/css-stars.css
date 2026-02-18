@@ -521,9 +521,24 @@ span.learn-lable {
     padding: 10px;
     font-size: 14px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     border: 1px solid #ddd;
     border-radius: 10px;
+}
+.topic-search-area .input-field {
+    position: relative;
+    margin: 0 0 12px;
+}
+.topic-search-area .input-field img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.rurera-topics-search .input-field:has(img) .search-field {
+    padding-left: 35px;
 }
 .rurera-topics-search .search-results {
     max-height: 150px;
