@@ -101,7 +101,7 @@
 
 
                 <div class="rurera-topics-search">
-                    <div class="topic-search-area">
+                    <div class="topic-search-area panel-border bg-white rounded-sm">
                         <div class="input-field">
                             <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
                             <input type="text" id="search" placeholder="Search..." class="search-field">
