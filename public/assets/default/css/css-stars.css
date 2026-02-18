@@ -293,11 +293,12 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
   position: relative;
   z-index: 1;
   transition: width 0.4s ease;
+  opacity: .8;
 }
-.seg-fill.smartscore-practice-needed {background-color: #1dcbd7;}
+/* .seg-fill.smartscore-practice-needed {background-color: #1dcbd7;}
 .seg-fill.smartscore-good {background-color: #3ef976;}
 .seg-fill.smartscore-very-good {background-color: #ffac33;}
-.seg-fill.smartscore-excellent {background-color: #ffac33;}
+.seg-fill.smartscore-excellent {background-color: #ffac33;} */
 
 
 /* Seg-progress style end */ 
