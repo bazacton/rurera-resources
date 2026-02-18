@@ -572,7 +572,9 @@ span.learn-lable {
 	background-color: #ddd;
 }
 .rurera-topics-search .search-results a {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 0 0 10px;
     text-decoration: none;
     color: #333;
