@@ -53,7 +53,7 @@
                     <label class="card-radio">
                         <input type="radio" data-timestables_no="{{$childObj->timestables_no}}" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
                                 value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
-                        <span class="radio-btn"><i class="las la-check"></i>
+                        <span class="radio-btn">
                                     <div class="card-icon">
                                     <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
                                         <h3>{{$childObj->get_full_name()}}</h3>
@@ -62,7 +62,7 @@
                     </label>
                 @else
                     <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{isset($childObj->id)? $childObj->id : 0}}">
-                            <span class="radio-btn disabled-style"><i class="las la-check"></i>
+                            <span class="radio-btn disabled-style">
                                 <div class="card-icon">
                                 <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
                                     <h3>{{$childObj->get_full_name()}}</h3>
@@ -108,7 +108,7 @@
                                             <label class="card-radio">
                                                 <input type="radio" data-timestables_no="{{$childObj->timestables_no}}" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
                                                         value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
-                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                <span class="radio-btn">
                                                     <div class="card-icon">
                                                     <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
                                                         <h3>{{$childObj->get_full_name()}}</h3>
@@ -117,7 +117,7 @@
                                             </label>
                                         @else
                                         <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{isset($childObj->id)? $childObj->id : 0}}">
-                                            <span class="radio-btn disabled-style"><i class="las la-check"></i>
+                                            <span class="radio-btn disabled-style">
                                                 <div class="card-icon">
                                                 <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
                                                     <h3>{{$childObj->get_full_name()}}</h3>
@@ -130,7 +130,7 @@
                             @endif
                             <label class="card-radio add-student-btn rurera-hide remove-pending">
                                 <a href="javascript:;" class="subscription-modal add-student-modal" data-type="child_register" data-id="0" >
-                                    <span class="radio-btn"><i class="las la-check"></i>
+                                    <span class="radio-btn">
                                         <div class="card-icon">
                                             <img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800">
                                             <h3>Student</h3>
@@ -155,7 +155,7 @@
                         <label class="card-radio">
                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
                                 class="assignment_type_check" value="practice_test" data-tag_title="Set Practice" checked>
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <h3>Set Practice</h3>
                                 </div>
@@ -164,7 +164,7 @@
                         <label class="card-radio">
                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
                                 class="assignment_type_check" value="mock_test" data-tag_title="Set Mock Test">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <h3>Set Mock Test</h3>
                                 </div>
@@ -180,7 +180,7 @@
                         <div class="radio-buttons">
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="practice" checked>
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                     <div class="card-icon">
                                         <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
                                         <h3>Courses</h3>
@@ -189,7 +189,7 @@
                             </label>
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet-types-selection" value="tests">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                     <div class="card-icon">
                                         <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
                                         <h3>Tests</h3>
@@ -199,7 +199,7 @@
 
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="vocabulary">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
                                     <h3>Vocabulary</h3>
@@ -209,7 +209,7 @@
 
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="timestables">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/timestables.png" alt="timestables">
                                     <h3>Timestables</h3>
@@ -219,7 +219,7 @@
 
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="book">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/books.png" alt="books">
                                     <h3>Book</h3>
@@ -228,7 +228,7 @@
                         </label>
                         {{--<label class="card-radio rurera-hide">
                             <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="assignment">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
                                     <h3>Custom Assignment</h3>
@@ -243,7 +243,7 @@
                     <div class="radio-buttons" aria-label="Test Type">
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" checked>
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
                                     <h3>SATs</h3>
@@ -252,7 +252,7 @@
                         </label>
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="11plus">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus">
                                     <h3>11 Plus</h3>
@@ -261,7 +261,7 @@
                         </label>
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="independent_exams">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/independent-exams.png" alt="independent-exams">
                                     <h3>Independent Exams</h3>
@@ -271,7 +271,7 @@
 
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="iseb">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb">
                                     <h3>ISEB</h3>
@@ -281,7 +281,7 @@
 
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="cat4">
-                            <span class="radio-btn"><i class="las la-check"></i>
+                            <span class="radio-btn">
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4">
                                     <h3>CAT 4</h3>
@@ -374,7 +374,7 @@
                                 <div class="radio-buttons" role="radiogroup" aria-label="Practice Type">
                                     <label class="card-radio">
                                         <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                             <div class="card-icon">
                                                 <h3>Word Lists</h3>
                                             </div>
@@ -382,7 +382,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Spelling Bee">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                             <div class="card-icon">
                                                 <h3>Spelling Bee</h3>
                                             </div>
@@ -390,7 +390,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Syllabus">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                             <div class="card-icon">
                                                 <h3>Syllabus</h3>
                                             </div>
@@ -427,7 +427,7 @@
                                             <label class="card-radio">
                                                 <input type="radio" name="ajax[new][spell_practice_type]" value="{{$spell_mode_key}}"
                                                     {{$is_checked}}>
-                                                <span class="radio-btn"><i class="las la-check"></i>
+                                                <span class="radio-btn">
                                                                     <div class="card-icon">
                                                                         <h3>{{$spell_mode_value}}</h3>
                                                                     </div>
@@ -448,7 +448,7 @@
 
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][show_words]" value="words" checked>
-                                            <span class="radio-btn"><i class="las la-check"></i>
+                                            <span class="radio-btn">
                                                                 <div class="card-icon">
                                                                     <h3>Just Words</h3>
                                                                 </div>
@@ -457,7 +457,7 @@
                                         </label>
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][show_words]" value="words_sentences">
-                                            <span class="radio-btn"><i class="las la-check"></i>
+                                            <span class="radio-btn">
                                                                 <div class="card-icon">
                                                                     <h3>Words with Sentences</h3>
                                                                 </div>
@@ -500,7 +500,7 @@
 
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][subject]" value="English">
-                                            <span class="radio-btn"><i class="las la-check"></i>
+                                            <span class="radio-btn">
                                                 <div class="card-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
                                                     <h3>English</h3>
@@ -509,7 +509,7 @@
                                         </label>
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][subject]" value="Math">
-                                            <span class="radio-btn"><i class="las la-check"></i>
+                                            <span class="radio-btn">
                                                 <div class="card-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 191.836 191.836" xml:space="preserve" style=""><path d="M70.806,0.975H17.313C7.767,0.975,0,8.741,0,18.288V71.78c0,9.547,7.767,17.314,17.313,17.314h53.492  c9.547,0,17.313-7.767,17.313-17.314V18.288C88.119,8.741,80.353,0.975,70.806,0.975z M61.365,50.034H49.06v12.305  c0,2.761-2.239,5-5,5s-5-2.239-5-5V50.034H26.754c-2.761,0-5-2.239-5-5s2.239-5,5-5H39.06V27.729c0-2.761,2.239-5,5-5s5,2.239,5,5  v12.305h12.305c2.761,0,5,2.239,5,5S64.126,50.034,61.365,50.034z M70.806,102.742H17.313C7.767,102.742,0,110.509,0,120.056v53.492  c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314v-53.492  C88.119,110.509,80.353,102.742,70.806,102.742z M61.365,151.802h-34.61c-2.761,0-5-2.239-5-5s2.239-5,5-5h34.61  c2.761,0,5,2.239,5,5S64.126,151.802,61.365,151.802z M174.523,0.975H121.03c-9.547,0-17.313,7.767-17.313,17.313V71.78  c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314V18.288C191.836,8.741,184.069,0.975,174.523,0.975z   M163.548,53.735c1.953,1.953,1.953,5.119,0,7.071c-0.977,0.976-2.256,1.464-3.536,1.464s-2.559-0.488-3.536-1.464l-8.701-8.701  l-8.701,8.701c-0.977,0.976-2.256,1.464-3.536,1.464s-2.559-0.488-3.536-1.464c-1.953-1.953-1.953-5.119,0-7.071l8.701-8.701  l-8.701-8.701c-1.953-1.953-1.953-5.119,0-7.071c1.953-1.952,5.118-1.952,7.071,0l8.701,8.701l8.701-8.701  c1.953-1.952,5.118-1.952,7.071,0c1.953,1.953,1.953,5.119,0,7.071l-8.701,8.701L163.548,53.735z M174.523,102.742H121.03  c-9.547,0-17.313,7.767-17.313,17.314v53.492c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314  v-53.492C191.836,110.509,184.069,102.742,174.523,102.742z M147.776,123.906c2.807,0,5.083,2.276,5.083,5.083  c0,2.808-2.276,5.083-5.083,5.083c-2.807,0-5.083-2.276-5.083-5.083C142.693,126.182,144.969,123.906,147.776,123.906z   M147.776,169.697c-2.807,0-5.083-2.276-5.083-5.083c0-2.807,2.276-5.083,5.083-5.083c2.807,0,5.083,2.276,5.083,5.083  C152.86,167.422,150.584,169.697,147.776,169.697z M165.082,151.802h-34.61c-2.761,0-5-2.239-5-5s2.239-5,5-5h34.61  c2.761,0,5,2.239,5,5S167.843,151.802,165.082,151.802z"></path></svg>
                                                     <h3>Math</h3>
@@ -518,7 +518,7 @@
                                         </label>
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][subject]" value="Non-Verbal Reasoning">
-                                            <span class="radio-btn"><i class="las la-check"></i>
+                                            <span class="radio-btn">
                                                 <div class="card-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
                                                     <h3>Non-Verbal Reasoning</h3>
@@ -527,7 +527,7 @@
                                         </label>
                                         <label class="card-radio">
                                             <input type="radio" name="ajax[new][subject]" value="Verbal Reasoning">
-                                            <span class="radio-btn"><i class="las la-check"></i>
+                                            <span class="radio-btn">
                                                 <div class="card-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
                                                     <h3>Verbal Reasoning</h3>
@@ -560,7 +560,7 @@
 
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="freedom_mode" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Freedom Mode</h3>
                                                                         </div>
@@ -568,7 +568,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="powerup_mode">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Powerup Mode</h3>
                                                                         </div>
@@ -576,7 +576,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="trophy_mode">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Trophy Mode</h3>
                                                                         </div>
@@ -584,7 +584,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="treasure_mission">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Treasure Mission Mode</h3>
                                                                         </div>
@@ -592,7 +592,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="showdown_mode">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Showdown Mode</h3>
                                                                         </div>
@@ -608,7 +608,7 @@
                                 <div class="radio-buttons">
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication_division">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Multiplication and Division</h3>
                                                                         </div>
@@ -616,7 +616,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Multiplication only</h3>
                                                                         </div>
@@ -624,7 +624,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][arthmetic_operations]" value="division">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>Division only</h3>
                                                                         </div>
@@ -689,7 +689,7 @@
                                 <div class="radio-buttons">
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][table_group]" value="1">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1-3</h3>
                                                                         </div>
@@ -697,7 +697,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][table_group]" value="2" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1-6</h3>
                                                                         </div>
@@ -705,7 +705,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][table_group]" value="3">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1-9</h3>
                                                                         </div>
@@ -713,7 +713,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][table_group]" value="4">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1-12</h3>
                                                                         </div>
@@ -721,7 +721,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][table_group]" value="5">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1-15</h3>
                                                                         </div>
@@ -729,7 +729,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][table_group]" value="6">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1-18</h3>
                                                                         </div>
@@ -746,7 +746,7 @@
                                 <div class="radio-buttons">
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][powerup_practice_duration]" value="1" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>1 Minute</h3>
                                                                         </div>
@@ -754,7 +754,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][powerup_practice_duration]" value="3" >
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>3 Minutes</h3>
                                                                         </div>
@@ -762,7 +762,7 @@
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[new][powerup_practice_duration]" value="5">
-                                        <span class="radio-btn"><i class="las la-check"></i>
+                                        <span class="radio-btn">
                                                                         <div class="card-icon">
                                                                             <h3>5 Minutes</h3>
                                                                         </div>
@@ -896,7 +896,7 @@
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_method]"
                                         class="assignment_method_check" value="practice" checked>
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                                             <div class="card-icon">
                                                                 <h3>Practice</h3>
                                                             </div>
@@ -906,7 +906,7 @@
                             <label class="card-radio assignment_topic_type_fields practice_fields timestables_fields assignment_fields">
                                 <input type="radio" name="ajax[new][assignment_method]"
                                         class="assignment_method_check" value="target_improvements">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                                             <div class="card-icon">
                                                                 <h3>Target / Improvements</h3>
                                                             </div>
@@ -916,7 +916,7 @@
                             <label class="card-radio assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
                                 <input type="radio" name="ajax[new][assignment_method]"
                                         class="assignment_method_check" value="mock_exam">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                                             <div class="card-icon">
                                                                 <h3>Mock Exam</h3>
                                                             </div>
@@ -1050,7 +1050,7 @@
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][duration_type]"
                                         class="duration_conditional_check" value="no_time_limit" checked>
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                                     <div class="card-icon">
                                                         <h3>No Time Limit</h3>
                                                     </div>
@@ -1060,7 +1060,7 @@
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][duration_type]"
                                         class="duration_conditional_check" value="total_practice">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                                     <div class="card-icon">
                                                         <h3>Total Practice</h3>
                                                     </div>
@@ -1070,7 +1070,7 @@
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][duration_type]"
                                         class="duration_conditional_check" value="per_question">
-                                <span class="radio-btn"><i class="las la-check"></i>
+                                <span class="radio-btn">
                                                     <div class="card-icon">
                                                         <h3>Per Question</h3>
                                                     </div>
