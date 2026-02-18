@@ -20,7 +20,8 @@
 .populated-data .timestables_fields .radio-btn {border-radius: 5px; min-height: 80px; padding: 10px;}
 .card-radio input {display: none;}
 .card-radio input:checked + .radio-btn {background-color: #fff; border-color: var(--primary);}
-.radio-btn .card-icon h3 {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0; overflow: hidden;}
+.radio-btn .card-icon h3,
+.radio-btn .card-icon .card-title {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0; overflow: hidden;}
 .populated-data .input-label {font-size: .875rem; color: #666; font-weight: 500;}
 .populated-data .ui-widget.ui-widget-content {margin-top: 15px;}
 .populated-data .heatmap-range-slider .ui-slider.ui-widget-content {margin-top: 0; flex-basis: 82%; width: 82%;}
@@ -74,7 +75,8 @@
 .set-work-container form {background-color: #fff; padding: 20px 30px 0; border-bottom: 1px solid #ddd; margin-bottom: 30px; border-radius: 10px 10px 0 0;}
 .set-work-container .lms-choose-membership.modal form {background-color: inherit; border: 0; padding: 0; margin: 0;}
 .wizard-steps .card-radio:has(input:checked) {border-color: var(--primary);}
-.wizard-steps .card-radio input:checked + .radio-btn h3 {color: var(--primary);}
+.wizard-steps .card-radio input:checked + .radio-btn h3,
+.wizard-steps .card-radio input:checked + .radio-btn .card-title {color: var(--primary);}
 .courses_fields .radio-buttons .card-radio .radio-btn {height: 100%;}
 .set-work-container .input-holder {position: relative; width: 100%;}
 .set-work-container .input-holder img,
