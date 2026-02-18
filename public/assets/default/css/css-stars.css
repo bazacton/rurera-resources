@@ -543,6 +543,10 @@ span.learn-lable {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    display: none;
+}
+.topic-search-area .search-clear.active {
+    display: block;
 }
 .rurera-topics-search .input-field:has(img) .search-field {
     padding-left: 35px;
