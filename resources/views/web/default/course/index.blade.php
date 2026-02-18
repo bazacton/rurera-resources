@@ -1374,7 +1374,7 @@
                         var $resultElement = $('<a/>', { href: result.target });
                         var $resultTitle = $('<div/>', { class: 'result-title', text: result.name });
                         var $resultDescription = $('<div/>', { class: 'result-description', text: result.description });
-                        var $expandIcon = $('<span/>', { class: 'expand-icon', text: '&#10005;' });
+                        var $expandIcon = $('<span/>', { class: 'expand-icon', text: '✕' });
 
                         $resultElement.append($resultTitle, $resultDescription, $expandIcon);
                         $resultElement.on('click', function(e) {
