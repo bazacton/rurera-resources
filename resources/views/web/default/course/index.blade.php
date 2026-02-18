@@ -984,7 +984,7 @@
         },
         speed: 500
         });
-        $('#fullscreenModal').on('shown.bs.modal', function () {
+        $('#subchapter-notes-modal').on('shown.bs.modal', function () {
         if (swiper && typeof swiper.update === 'function') {
             swiper.update();
         }
