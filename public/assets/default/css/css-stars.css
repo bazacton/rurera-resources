@@ -558,8 +558,12 @@ span.learn-lable {
     color: #777;
 }
 .rurera-topics-search .expand-icon {
-    float: right;
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .8rem;
 }
 .rurera-topics-search .highlight {
     background-color: yellow;
