@@ -1048,3 +1048,76 @@ $(document).ready(function() {
 
 });
 
+
+$(document).on('change', '.year_group_chapters', function (e) {
+    var year_id = $(this).val();
+    var subject_id = $(this).attr('data-subject_id');
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/common/year_group_chapters',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"year_id": year_id, "subject_id": subject_id},
+        success: function (return_data) {
+
+            $(".subject-chapters-block").html(return_data);
+            console.log(return_data);
+        }
+    });
+});
+$(document).on('click', '.topic-form-submit', function (e) {
+    var parentObj = $(this).closest('.modal-body');
+    var topic_part_id = parentObj.find('input[name="topic_part_id"]').val();
+    var year_id = parentObj.find('input[name="year_id"]').val();
+    var subject_id = parentObj.find('input[name="subject_id"]').val();
+    var topic_part_name = parentObj.find('input[name="topic_part_name"]').val();
+    var topic_part_slug = parentObj.find('input[name="topic_part_slug"]').val();
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/topics_parts/update_topic_part',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType: 'json',
+        data: {"topic_part_id": topic_part_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
+        success: function (return_data) {
+            parentObj.closest('.sub-topic-modal').modal('hide');
+            parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
+            rurera_modal_alert(
+                return_data.status,
+                return_data.msg,
+                false, //confirmButton
+            );
+            console.log(return_data);
+        }
+    });
+});
+
+
+$(document).on('click', '.topic-add-form-submit', function (e) {
+    var parentObj = $(this).closest('.modal-body');
+    var chapter_id = parentObj.find('input[name="chapter_id"]').val();
+    var year_id = parentObj.find('input[name="year_id"]').val();
+    var subject_id = parentObj.find('input[name="subject_id"]').val();
+    var topic_part_name = parentObj.find('input[name="topic_part_name"]').val();
+    var topic_part_slug = parentObj.find('input[name="topic_part_slug"]').val();
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/topics_parts/add_topic_part',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType: 'json',
+        data: {"chapter_id": chapter_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
+        success: function (return_data) {
+            parentObj.closest('.sub-topic-modal').modal('hide');
+            parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
+            rurera_modal_alert(
+                return_data.status,
+                return_data.msg,
+                false, //confirmButton
+            );
+        }
+    });
+});

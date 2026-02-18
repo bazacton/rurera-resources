@@ -1184,4 +1184,8 @@
     <script src="/assets/default/js/admin/quiz.min.js"></script>
     <script src="/assets/admin/js/webinar.min.js"></script>
     <script src="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+
+    <script>
+        $(".year_group_chapters").change();
+    </script>
 @endpush
