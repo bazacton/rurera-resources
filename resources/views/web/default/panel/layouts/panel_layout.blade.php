@@ -108,7 +108,7 @@
                                             <svg viewBox="0 0 200 120" class="w-100 d-block" style="max-width:260px;">
                                             <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="18" stroke-linecap="round"></path>
 
-                                            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#2fbf71" stroke-width="18" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
+                                            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="var(--primary)" stroke-width="18" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
                                             </svg>
 
                                             <div class="overall-gauge-center text-center">
