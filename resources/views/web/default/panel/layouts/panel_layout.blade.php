@@ -133,7 +133,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                             <path d="M12 2a7 7 0 0 0-4 12c.7.6 1 1.2 1 2h6c0-.8.3-1.4 1-2A7 7 0 0 0 12 2Z" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linejoin="round"></path>
                                             </svg>
                                         </div>
-                                        <div class="font-13 text-muted">You could use extra support on these skills:</div>
+                                        <div class="font-12 text-muted">You could use extra support on these skills:</div>
                                     </div>
 
                                     <div class="table-responsive">
@@ -146,35 +146,35 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-12">
                                                         <button type="button">Write variable expressions: word problems</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">4</td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-12">
                                                         <button type="button">Lines, line segments and rays</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">4</td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-12">
                                                         <button type="button">Write variable expressions</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">3</td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-12">
                                                         <button type="button">Understanding area of a parallelogram</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">3</td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <div class="mt-15">
-                                    <a href="#" class="font-13 font-weight-bold">See all 9 skills</a>
+                                    <a href="#" class="font-12 font-weight-bold">See all 9 skills</a>
                                     </div>
                                 </div>
                                     @endif
