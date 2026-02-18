@@ -1031,12 +1031,12 @@ button.view-btn {
     color: var(--primary);
     text-align: left;
 }
-.focus-table th,
-.focus-table td {
+.panel-right-sidebar .focus-table th,
+.panel-right-sidebar .focus-table td {
     padding: .8rem .3rem;
     vertical-align: middle;
 }
-.focus-table td:first-child {
+.panel-right-sidebar .focus-table td:first-child {
     width: 65%;
 }
 /* Right Sidebar Focus-Table Style End */
