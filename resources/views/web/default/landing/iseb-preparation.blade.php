@@ -601,69 +601,79 @@ if (buttons) {
 }
 </script>
 <script>
-    $(document).ready(function() {
-        const $items = $('.feature-item');
-        const $images = $('.feature-image');
-        let currentIndex = 0;
-        const duration = 5000; // 5 seconds per slide
-        let isPaused = false;
+    $(document).ready(function () {
 
-        function startProgress() {
-            // Reset all progress bars
-            $('.progress-bar-fill').css({
-                'width': '0%',
-                'transition': 'none'
-            });
+    const $items = $('.feature-item');
+    const $images = $('.feature-image');
 
-            // Get current active progress bar
-            const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
+    if (!$items.length || !$images.length) {
+        return;
+    }
 
-            // Force reflow to ensure the reset takes effect before starting animation
-            $currentBar[0].offsetHeight; 
+    let currentIndex = 0;
+    const duration = 5000; // 5 seconds per slide
+    let totalItems = $items.length;
 
-            // Start animation
-            $currentBar.css({
-                'width': '100%',
-                'transition': `width ${duration}ms linear`
-            });
-        }
+    function startProgress() {
 
-        function setActive(index) {
-            // Update Classes
-            $items.removeClass('active');
-            $images.removeClass('active');
+        // Reset all progress bars
+        $('.progress-bar-fill').css({
+            'width': '0%',
+            'transition': 'none'
+        });
 
-            $items.eq(index).addClass('active');
-            $images.eq(index).addClass('active'); // Simply use index since images map 1:1
+        const $currentBar = $items.eq(currentIndex).find('.progress-bar-fill');
 
-            currentIndex = index;
-            startProgress();
-        }
+        // Safety check
+        if (!$currentBar.length) return;
 
-        // Initialize first slide
+        // Force reflow
+        $currentBar[0].offsetHeight;
+
+        // Start animation
+        $currentBar.css({
+            'width': '100%',
+            'transition': `width ${duration}ms linear`
+        });
+    }
+
+    function setActive(index) {
+
+        if (index >= totalItems) index = 0;
+        if (index < 0) index = totalItems - 1;
+
+        $items.removeClass('active');
+        $images.removeClass('active');
+
+        $items.eq(index).addClass('active');
+        $images.eq(index).addClass('active');
+
+        currentIndex = index;
+        startProgress();
+    }
+
+    // Initialize only if items exist
+    if (totalItems > 0) {
         setActive(0);
+    }
 
-        // Listen for transition end to trigger next slide
-        $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function(e) {
-            // Ensure it's the width transition of the active item's bar
-            if (e.originalEvent.propertyName !== 'width') return;
-            
-            // Check if this is the bar of the currently active item
-            if ($(this).closest('.feature-item').hasClass('active')) {
-                let nextIndex = (currentIndex + 1) % $items.length;
-                setActive(nextIndex);
-            }
-        });
+    $('.progress-bar-fill').on('transitionend webkitTransitionEnd oTransitionEnd', function (e) {
 
-        // Click handler
-        $items.on('click', function() {
-            const index = $(this).index();
-            // If clicking the same item, maybe just restart timer? 
-            // Or if different, switch to it.
-            // Let's just switch/restart.
-            setActive(index);
-        });
+        if (e.originalEvent.propertyName !== 'width') return;
+
+        if ($(this).closest('.feature-item').hasClass('active')) {
+            let nextIndex = (currentIndex + 1) % totalItems;
+            setActive(nextIndex);
+        }
     });
+
+    $items.on('click', function () {
+        const index = $(this).index();
+        setActive(index);
+    });
+
+});
+
 </script>
 <script>
 const swiper1 = new Swiper('#featureSwiper', {
