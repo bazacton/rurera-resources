@@ -950,9 +950,9 @@
 
                             
                             <div class="range-slider">
-                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div id="slider_thumb2" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
-                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                    <div id="slider_line2" class="range-slider_line-fill" style="width: 0%;"></div>
                                 </div>
                                 <input type="range"
                                         name="ajax[new][no_of_questions]"
@@ -970,9 +970,9 @@
 
                             
                             <div class="range-slider">
-                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div id="slider_thumb3" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
-                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                    <div id="slider_line3" class="range-slider_line-fill" style="width: 0%;"></div>
                                 </div>
                                 <input type="range"
                                         name="ajax[new][no_of_attempts]"
@@ -988,9 +988,9 @@
 
                             
                             <div class="range-slider">
-                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div id="slider_thumb4" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
-                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                    <div id="slider_line4" class="range-slider_line-fill" style="width: 0%;"></div>
                                 </div>
                                 <input type="range"
                                         name="ajax[new][target_percentage]"
@@ -1007,9 +1007,9 @@
                             <label class="input-label">Average Time of Correct Answers (Seconds)</label>
 
                             <div class="range-slider">
-                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div id="slider_thumb5" class="range-slider_thumb" style="left: 0px;">0</div>
                                 <div class="range-slider_line">
-                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                    <div id="slider_line5" class="range-slider_line-fill" style="width: 0%;"></div>
                                 </div>
                                 <input type="range"
                                         name="ajax[new][target_average_time]"
@@ -1092,9 +1092,9 @@
                 <div class="form-group duration_type_fields total_practice_fields">
                     <label class="input-label">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
                     <div class="range-slider">
-                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                        <div id="slider_thumb6" class="range-slider_thumb" style="left: 0px;">0</div>
                         <div class="range-slider_line">
-                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                            <div id="slider_line6" class="range-slider_line-fill" style="width: 0%;"></div>
                         </div>
                         <input type="range"
                                 name="ajax[new][practice_time]"
@@ -1109,9 +1109,9 @@
                     <label class="input-label">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
 
                     <div class="range-slider">
-                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                        <div id="slider_thumb7" class="range-slider_thumb" style="left: 0px;">0</div>
                         <div class="range-slider_line">
-                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                            <div id="slider_line7" class="range-slider_line-fill" style="width: 0%;"></div>
                         </div>
                         <input type="range"
                                 name="ajax[new][time_interval]"
