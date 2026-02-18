@@ -553,6 +553,24 @@ span.learn-lable {
     width: 100%;
     margin-bottom: 10px;
 }
+.rurera-topics-search .search-results::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: none;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.rurera-topics-search .search-results::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #fff;
+}
+
+.rurera-topics-search .search-results::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: none;
+	background-color: #555;
+}
 .rurera-topics-search .search-results a {
     display: block;
     padding: 0 0 10px;
