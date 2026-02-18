@@ -541,8 +541,8 @@ span.learn-lable {
 .rurera-topics-search .search-results {
     max-height: 150px;
     overflow-y: auto;
-    background-color: #fdfdfd;
-    padding: 10px;
+    background-color: #fff;
+    padding: 20px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -557,7 +557,6 @@ span.learn-lable {
     padding: 0 0 10px;
     text-decoration: none;
     color: #333;
-    border-bottom: 1px solid #ddd;
     cursor: pointer;
     position: relative;
     margin: 0 0 10px;
@@ -568,9 +567,6 @@ span.learn-lable {
 }
 .rurera-topics-search .search-results a:hover .result-title {
     color: var(--primary);
-}
-.rurera-topics-search .result-title {
-    font-weight: bold;
 }
 .rurera-topics-search .result-description {
     font-size: 12px;
