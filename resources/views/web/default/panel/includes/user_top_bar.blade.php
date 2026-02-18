@@ -167,7 +167,7 @@
                 <div class="dropdown">
                     <a href="#!" class="navbar-user d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-controls="userProfileDropdown" aria-expanded="false">
                         <img src="{{ $authUser->getAvatar() }}" class="rounded-circle"
-                             alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
+                             alt="{{ $authUser->get_full_name() }}" width="40" height="40" itemprop="image"
                              alt="rounded circle" loading="eager" title="rounded circle">
                     </a>
 
