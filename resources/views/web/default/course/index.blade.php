@@ -1399,6 +1399,7 @@
     </script>
 
     <script>
+        $(document).ready(function () {
         var swiper = new Swiper('.slider-shell .swiper-container', {
         slidesPerView: 1,
         navigation: {
@@ -2602,7 +2603,7 @@
         });
         updateContinueBtnF();
         }
-
+});
     </script>
 
 @endpush
