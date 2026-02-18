@@ -104,6 +104,7 @@
                     <div class="topic-search-area panel-border bg-white rounded-sm mb-25">
                         <div class="input-field">
                             <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
+                            <span class="search-clear">&times;</span>
                             <input type="text" id="search" placeholder="Search..." class="search-field">
                         </div>
                         <div class="search-results-box">
@@ -1330,11 +1331,23 @@
             var $searchInput = $parent.find('#search');
             var $searchResultsDiv = $parent.find('#search-results');
             var $accordionList = $parent.find('#accordion');
+            var $clearBtn = $parent.find('.search-clear');
 
+            // INPUT EVENT
             $searchInput.on('input', function() {
+
                 var query = ($searchInput.val() || '').toLowerCase().trim();
 
-                // Hide if less than 3 characters
+                // Toggle clear button
+                if (query.length > 0) {
+                    $clearBtn.addClass('active');
+                } else {
+                    $clearBtn.removeClass('active');
+                    $searchResultsDiv.removeClass('active').empty();
+                    return;
+                }
+
+                // Hide results if less than 3 characters
                 if (query.length < 3) {
                     $searchResultsDiv.removeClass('active').empty();
                     return;
@@ -1344,27 +1357,29 @@
 
                 $accordionList.find('li').each(function() {
                     var $chapter = $(this);
-                    var title = ($chapter.find('h3').text() || '').toLowerCase();
+                    var titleText = $chapter.find('h3').text();
+                    var title = (titleText || '').toLowerCase();
                     var $cards = $chapter.find('.chapter-card a');
 
-                    // Match main topic
+                    // Main topic match
                     if (title.indexOf(query) !== -1) {
                         results.push({
-                            name: $chapter.find('h3').text(),
-                            description: 'Main Topic: ' + $chapter.find('h3').text(),
+                            name: titleText,
+                            description: 'Main Topic: ' + titleText,
                             target: '#' + $chapter.attr('id')
                         });
                     }
 
-                    // Match sub topics
+                    // Sub topic match
                     $cards.each(function() {
                         var $card = $(this);
-                        var cardText = ($card.text() || '').toLowerCase();
+                        var cardTextOriginal = $card.text();
+                        var cardText = (cardTextOriginal || '').toLowerCase();
 
                         if (cardText.indexOf(query) !== -1) {
                             results.push({
-                                name: $card.text(),
-                                description: 'Sub Topic under ' + $chapter.find('h3').text(),
+                                name: cardTextOriginal,
+                                description: 'Sub Topic under ' + titleText,
                                 target: $card.attr('data-target')
                             });
                         }
@@ -1372,6 +1387,14 @@
                 });
 
                 displayResults(results);
+            });
+
+
+            // CLEAR BUTTON CLICK
+            $clearBtn.on('click', function() {
+                $searchInput.val('').focus();
+                $clearBtn.removeClass('active');
+                $searchResultsDiv.removeClass('active').empty();
             });
 
 
@@ -1406,7 +1429,7 @@
                     });
 
                     var $expandIcon = $('<span/>', {
-                        class: 'expand-icon d-none',
+                        class: 'expand-icon',
                         text: '✕'
                     });
 
@@ -1415,7 +1438,6 @@
                     $resultElement.on('click', function(e) {
                         e.preventDefault();
 
-                        // Remove old highlight
                         $parent.find('.highlight').removeClass('highlight');
 
                         var $targetSection = $(result.target);
@@ -1428,8 +1450,8 @@
                             $targetSection.addClass('highlight');
                         }
 
-                        // Reset input + hide results
                         $searchInput.val('');
+                        $clearBtn.removeClass('active');
                         $searchResultsDiv.removeClass('active').empty();
                     });
 
