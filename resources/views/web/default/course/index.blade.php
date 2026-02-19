@@ -773,8 +773,8 @@
         </div>
     </div> -->
     
-    <div class="modal fade" id="subchapter-notes-modal" tabindex="-1" role="dialog" aria-labelledby="fullscreenLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-4" role="document">
+    <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" role="dialog" aria-labelledby="fullscreenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="fullscreenLabel">Full Screen Modal</h5>
