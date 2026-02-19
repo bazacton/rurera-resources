@@ -602,9 +602,14 @@ span.learn-lable {
     margin: 0 0 10px;
     gap: 10px;
 }
-.rurera-topics-search .search-results a:last-child {
-    border-bottom: 0;
-    margin-bottom: 0;
+.rurera-topics-search .search-results a:before {
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background: url(/assets/default/svgs/document.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .rurera-topics-search .search-results a:hover .result-title {
     color: var(--primary);
