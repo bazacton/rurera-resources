@@ -96,7 +96,7 @@
                                 <span>Login Pin:</span>
                                 {{$studentObj->login_pin}}
                             </li>
-                            <li>
+                            <li id="imoji">
                                 <span>Emoji:</span>
                                 <div class="emoji-icons"> {!! $emoji_response !!}</div>
                             </li>
