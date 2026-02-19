@@ -242,7 +242,7 @@ if( !empty( $emojisArray ) ){
                                 </div>
                                 <div class="edit-profile-body">
                                     <div class="edit-profile-image mb-30">
-                                        <div class="profile-image">
+                                        <div class="profile-image test@@">
                                             <figure class="d-inline-flex position-relative">
                                                 <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="edit-profile-image">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex justify-content-center font-14 flex-column">
