@@ -32,12 +32,11 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                             <div class="edit-info-list">
                                 <h4 class="font-15 font-weight-500 pb-5 d-flex align-items-center">
                                     About you
-                                    <a href="javascript:;" class="edit-profile-btn" role="button"> 
+                                    <button type="button" class="edit-profile-btn">
                                         <span class="edit-icon d-inline-flex align-items-center">
-                                            <!-- <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18"> -->
                                             <em class="font-weight-500">Edit</em>
                                         </span>
-                                    </a>
+                                    </button>
                                 </h4>
                                 <ul>
                                     <li>
