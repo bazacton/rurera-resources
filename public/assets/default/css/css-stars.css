@@ -557,6 +557,12 @@ span.learn-lable {
     border-radius: 10px;
     margin-bottom: 10px;
     display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
 }
 .rurera-topics-search .search-results-box:has(.search-results.active) {
     display: block;
