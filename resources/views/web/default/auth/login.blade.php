@@ -378,7 +378,7 @@
                             <div class="emoji-icons">
                                 @if( !empty( emojisList() ))
                                     @foreach(emojisList() as $emojiRow)
-                                        <a id="{{$emojiRow}}" href="javascript:;" class="emoji-icon 1">
+                                        <a id="{{$emojiRow}}" href="javascript:;" class="emoji-icon">
                                             <img src="/assets/default/svgs/emojis/{{$emojiRow}}.svg?ver={{$rand_no}}" alt="{{$emojiRow}}">
                                         </a>
                                     @endforeach
