@@ -541,7 +541,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</li>
 								<li>
 									<span>Emoji:</span>
-									<div id="test" class="emoji-icons"> {!! $emoji_response !!}</div>
+									<div class="emoji-icons"> {!! $emoji_response !!}</div>
 								</li>
 								<li>
 									<span>Website:</span>
