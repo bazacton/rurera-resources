@@ -1197,7 +1197,7 @@
 @endsection
 
 @push('scripts_bottom')
-    <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
         var webinarDemoLang = '{{ trans('webinars.webinar_demo') }}';
