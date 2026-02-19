@@ -1030,6 +1030,7 @@ button.view-btn {
     padding: 0;
     color: var(--primary);
     text-align: left;
+    font-weight: 500;
 }
 .panel-right-sidebar .focus-table th,
 .panel-right-sidebar .focus-table td {
