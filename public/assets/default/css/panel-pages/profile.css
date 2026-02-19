@@ -223,7 +223,8 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .info-text span {color: #64748b;}
 .profile-view-data {margin: 0 -5px;}
 .profile-view-data > li {width: 50%; display: inline-block; margin-right: -4px; padding: 0 5px;}
-.edit-info-list li > a {border-bottom: 1px solid #ddd; flex-wrap: wrap;}
+.edit-info-list li > a,
+.edit-info-list li > button {background-color: #fff; border: 0; border-bottom: 1px solid #ddd; flex-wrap: wrap;}
 .edit-info-list li:last-child > a {
     border-bottom: 0;
 }
