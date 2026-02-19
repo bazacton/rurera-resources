@@ -217,7 +217,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                 <div class="edit-profile">
                                     <div class="row">
                                         <div class="col-lg-3 col-md-4 col-12 rurera-hide">
-                                            <div class="edit-profile-sidebar">
+                                            <div class="edit-profile-sidebar 3">
                                                 <div class="user-info d-flex align-items-center flex-wrap mb-30">
                                                     <span class="info-text d-inline-flex flex-column font-weight-500">
                                                         {{$user->get_full_name()}}
