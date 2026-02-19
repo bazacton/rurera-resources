@@ -107,9 +107,9 @@
                             <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
                             <span class="search-clear">&times;</span>
                             <input type="text" id="search" placeholder="Search..." class="search-field">
-                        </div>
-                        <div class="search-results-box">
-                            <div class="search-results" id="search-results"></div>
+                            <div class="search-results-box">
+                                <div class="search-results" id="search-results"></div>
+                            </div>
                         </div>
                         <div class="chapter-nav mb-0">
                             <ul class="font-14 font-weight-500">
