@@ -15859,7 +15859,7 @@ footer.footer-home {
 }
 
 /* Card Variants */
-.rurera-card-purple { background-color: #dcd6ff; }
+.rurera-card-purple .rurera-prep-feature { background-color: #dcd6ff; }
 .rurera-card-yellow { background-color: #fff9d6; }
 .rurera-card-green { background-color: #d5f5e3; }
 .rurera-card-peach { background-color: #ffe8e0; }
