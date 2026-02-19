@@ -4,6 +4,7 @@
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/css-stars.css">
     <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 @endpush
 
 @section('content')
@@ -1196,7 +1197,6 @@
 @endsection
 
 @push('scripts_bottom')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
 
     <script>
