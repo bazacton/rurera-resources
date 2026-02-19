@@ -16567,11 +16567,13 @@ section.feature-grid {
 /* rurera-partners style end */
 
 /* rurera-process-style start */
+    .rurera-process-card {padding-right: 50px;}
+    .row.how-steps {margin-right: -50px;}
     .rurera-process-card .card { border: 0; border-radius: .75rem; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); height: 100%; }
     .rurera-process-card .card-body { padding: 1.5rem; }
     .rurera-process-card .icon-placeholder { width: 100%; height: 180px; background: #f8f9fa; border-radius: .5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #adb5bd; }
     .how-steps .col-md-3 { position: relative; }
-      .hiw-arrow { position: absolute; right: -24px; top: 50%; transform: translateY(-50%) rotate(90deg); width: 26px; opacity: .75; filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); pointer-events: none; z-index: 2; }
+      .hiw-arrow { position: absolute; right: -24px; top: 50%; transform: translateY(-50%) rotate(-20deg); width: 26px; opacity: .75; filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); pointer-events: none; z-index: 2; }
     @media (max-width: 767.98px) {
       .how-steps .icon-placeholder { height: 140px; }
     }
