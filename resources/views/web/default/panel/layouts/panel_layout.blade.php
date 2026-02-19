@@ -160,7 +160,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                     <td class="font-12 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-12">
+                                                    <td class="font-14 font-weight-500">
                                                         <button type="button">Write variable expressions</button>
                                                     </td>
                                                     <td class="font-12 text-right font-weight-bold">3</td>
