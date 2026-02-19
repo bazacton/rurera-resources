@@ -1062,7 +1062,6 @@ $(document).on('change', '.year_group_chapters', function (e) {
         success: function (return_data) {
 
             $(".subject-chapters-block").html(return_data);
-            console.log(return_data);
         }
     });
 });
@@ -1089,7 +1088,6 @@ $(document).on('click', '.topic-form-submit', function (e) {
                 return_data.msg,
                 false, //confirmButton
             );
-            console.log(return_data);
         }
     });
 });
