@@ -624,6 +624,11 @@ span.learn-lable {
     flex-direction: column;
     position: relative;
 }
+.rurera-topics-search .no-results:before {
+    margin: 0 auto 10px;
+    height: 50px;
+    width: 50px;
+}
 .rurera-topics-search .search-results a:hover .result-title {
     color: var(--primary);
 }
