@@ -894,7 +894,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     <span>Login Pin:</span>
                                     <b class="login-pin-ajax">{{$user->login_pin}}</b>
                                 </li>
-                                <li id="imoji">
+                                <li>
                                     <span>Emoji:</span>
                                     <div class="emoji-icons"> {!! $emoji_response !!}</div>
                                 </li>
