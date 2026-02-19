@@ -58,7 +58,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                             <div class="user-edit-profile rurera-hide">
                                 <div class="edit-profile">
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-4 col-12 rurera-hide test2">
+                                        <div class="col-lg-3 col-md-4 col-12 rurera-hide">
                                             <div class="edit-profile-sidebar">
                                                 <div class="user-info d-flex align-items-center flex-wrap mb-30">
                                                     <span class="info-text d-inline-flex flex-column font-weight-500">
@@ -213,7 +213,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 
                                 </ul>
                             </div>
-                            <div class="user-edit-login rurera-hide 3">
+                            <div class="user-edit-login rurera-hide">
                                 <div class="edit-profile">
                                     <div class="row">
                                         <div class="col-lg-3 col-md-4 col-12 rurera-hide">
