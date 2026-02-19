@@ -608,7 +608,8 @@ span.learn-lable {
     margin: 0 0 10px;
     gap: 10px;
 }
-.rurera-topics-search .search-results a:before {
+.rurera-topics-search .search-results a:before,
+.rurera-topics-search .no-results:before {
     content: "";
     display: inline-block;
     height: 18px;
@@ -616,6 +617,12 @@ span.learn-lable {
     background: url(/assets/default/svgs/document.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+.rurera-topics-search .no-results {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .rurera-topics-search .search-results a:hover .result-title {
     color: var(--primary);
