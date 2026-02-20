@@ -16006,6 +16006,7 @@ footer.footer-home {
   .rurera-feature-outer,
   .ru-stickyhero-visual-container {
     padding-right: calc((100vw - 88vw) / 2);
+    min-height: auto;
   }
 }
 /* Left Sticky Section */
