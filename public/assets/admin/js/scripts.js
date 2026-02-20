@@ -1096,8 +1096,9 @@ $(document).on('click', '.topic-form-submit', function (e) {
 $(document).on('click', '.topic-add-form-submit', function (e) {
     var parentObj = $(this).closest('.modal-body');
     var chapter_id = parentObj.find('input[name="chapter_id"]').val();
-    var year_id = parentObj.find('input[name="year_id"]').val();
+    var year_id = parentObj.find('select[name="year_group_id"]').val();
     var subject_id = parentObj.find('input[name="subject_id"]').val();
+    var sub_chapter_id = parentObj.find('input[name="sub_chapter_id"]').val();
     var topic_part_name = parentObj.find('input[name="topic_part_name"]').val();
     var topic_part_slug = parentObj.find('input[name="topic_part_slug"]').val();
     jQuery.ajax({
@@ -1107,10 +1108,8 @@ $(document).on('click', '.topic-add-form-submit', function (e) {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         dataType: 'json',
-        data: {"chapter_id": chapter_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
+        data: {"sub_chapter_id": sub_chapter_id, "chapter_id": chapter_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
         success: function (return_data) {
-            parentObj.closest('.sub-topic-modal').modal('hide');
-            parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
             rurera_modal_alert(
                 return_data.status,
                 return_data.msg,
