@@ -1118,7 +1118,9 @@ $(document).on('click', '.topic-add-form-submit', function (e) {
                 return_data.msg,
                 false, //confirmButton
             );
-            location.reload();
+            if(return_data.status == 'success') {
+                location.reload();
+            }
         }
     });
 });
@@ -1143,7 +1145,9 @@ $(document).on('click', '.subchapter-add-form-submit', function (e) {
                 return_data.msg,
                 false, //confirmButton
             );
-            location.reload();
+            if(return_data.status == 'success') {
+                location.reload();
+            }
         }
     });
 });
