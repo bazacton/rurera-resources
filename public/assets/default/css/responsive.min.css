@@ -4740,6 +4740,12 @@
     .spells-quiz-from .rurera-in-row .form-field {
         width: 48.555%;
     }
+    .chapter-card > a {
+        padding-right: 110px;
+    }
+    .seg-progress {
+        right: 15px;
+    }
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {
