@@ -168,7 +168,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    color: #000;
+    color: #777;
     justify-content: space-between;
     text-transform: uppercase;
 }
