@@ -1456,11 +1456,23 @@
                                 setTimeout(function() {
 
                                     if ($chapterParent.length) {
+
                                         $('html, body').animate({
                                             scrollTop: $chapterParent.offset().top - 100
                                         }, 400);
 
+                                        // Add highlight
                                         $chapterParent.addClass('highlight');
+
+                                        // Clear old timer if exists
+                                        clearTimeout($chapterParent.data('highlightTimer'));
+
+                                        // Remove highlight after 2 seconds
+                                        var timer = setTimeout(function() {
+                                            $chapterParent.removeClass('highlight');
+                                        }, 2000);
+
+                                        $chapterParent.data('highlightTimer', timer);
                                     }
 
                                 }, 300);
@@ -1468,11 +1480,23 @@
                             } else {
 
                                 if ($chapterParent.length) {
+
                                     $('html, body').animate({
                                         scrollTop: $chapterParent.offset().top - 100
                                     }, 400);
 
+                                    // Add highlight
                                     $chapterParent.addClass('highlight');
+
+                                    // Clear old timer if exists
+                                    clearTimeout($chapterParent.data('highlightTimer'));
+
+                                    // Remove highlight after 2 seconds
+                                    var timer = setTimeout(function() {
+                                        $chapterParent.removeClass('highlight');
+                                    }, 2000);
+
+                                    $chapterParent.data('highlightTimer', timer);
                                 }
                             }
                         }
@@ -1482,6 +1506,7 @@
                         $clearBtn.removeClass('active');
                         $searchResultsDiv.removeClass('active').empty();
                     });
+
 
                     $searchResultsDiv.append($resultElement);
                 });
