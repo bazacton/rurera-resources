@@ -1440,16 +1440,37 @@
 
                         $parent.find('.highlight').removeClass('highlight');
 
-                        var $targetSection = $(result.target);
+                        var targetSelector = result.target;
+                        var $targetSection = $(targetSelector);
 
                         if ($targetSection.length) {
-                            $('html, body').animate({
-                                scrollTop: $targetSection.offset().top
-                            }, 400);
 
-                            $targetSection.addClass('highlight');
+                            // If it's inside Bootstrap collapse
+                            if ($targetSection.hasClass('collapse')) {
+
+                                // Open collapse
+                                $targetSection.collapse('show');
+
+                                // Scroll after small delay (wait for animation)
+                                setTimeout(function() {
+                                    $('html, body').animate({
+                                        scrollTop: $targetSection.offset().top - 100
+                                    }, 400);
+
+                                    $targetSection.addClass('highlight');
+                                }, 300);
+
+                            } else {
+
+                                $('html, body').animate({
+                                    scrollTop: $targetSection.offset().top - 100
+                                }, 400);
+
+                                $targetSection.addClass('highlight');
+                            }
                         }
 
+                        // Clear search
                         $searchInput.val('');
                         $clearBtn.removeClass('active');
                         $searchResultsDiv.removeClass('active').empty();
