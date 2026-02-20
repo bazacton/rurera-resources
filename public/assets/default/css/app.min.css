@@ -1399,7 +1399,8 @@ nav li {
   gap: 10px;
 }
 
-.login-pad-icons a {
+.login-pad-icons a,
+.login-with-pin .login-pad-icons button {
   display: flex;
   align-items: center;
   padding: 10px 15px;
@@ -1412,7 +1413,8 @@ nav li {
   font-weight: 900;
   color: #c4c4c4;
 }
-.login-with-pin .login-pad-icons a {
+.login-with-pin .login-pad-icons a,
+.login-with-pin .login-pad-icons button {
   background-color: #f9fafb;
   padding: 0 15px;
   height: 56px;
