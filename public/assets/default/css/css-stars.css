@@ -271,8 +271,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 /* Seg-progress style start */
 .seg-progress {
 position: absolute;
-top: 50%;
-transform: translateY(-50%);
+top: 22px;
 right: 30px;
 width: 90px;
 height: 5px;
