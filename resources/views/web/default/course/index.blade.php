@@ -1441,36 +1441,43 @@
                         $parent.find('.highlight').removeClass('highlight');
 
                         var targetSelector = result.target;
-                        var $targetSection = $(targetSelector);
+                        var $target = $(targetSelector);
 
-                        if ($targetSection.length) {
+                        if ($target.length) {
 
-                            // If it's inside Bootstrap collapse
-                            if ($targetSection.hasClass('collapse')) {
+                            // Find parent chapter wrapper
+                            var $chapterParent = $target.closest('.lms-chapter-ul-outer');
 
-                                // Open collapse
-                                $targetSection.collapse('show');
+                            // If inside collapse, open it first
+                            if ($target.hasClass('collapse')) {
 
-                                // Scroll after small delay (wait for animation)
+                                $target.collapse('show');
+
                                 setTimeout(function() {
-                                    $('html, body').animate({
-                                        scrollTop: $targetSection.offset().top - 100
-                                    }, 400);
 
-                                    $targetSection.addClass('highlight');
+                                    if ($chapterParent.length) {
+                                        $('html, body').animate({
+                                            scrollTop: $chapterParent.offset().top - 100
+                                        }, 400);
+
+                                        $chapterParent.addClass('highlight');
+                                    }
+
                                 }, 300);
 
                             } else {
 
-                                $('html, body').animate({
-                                    scrollTop: $targetSection.offset().top - 100
-                                }, 400);
+                                if ($chapterParent.length) {
+                                    $('html, body').animate({
+                                        scrollTop: $chapterParent.offset().top - 100
+                                    }, 400);
 
-                                $targetSection.addClass('highlight');
+                                    $chapterParent.addClass('highlight');
+                                }
                             }
                         }
 
-                        // Clear search
+                        // Clear search UI
                         $searchInput.val('');
                         $clearBtn.removeClass('active');
                         $searchResultsDiv.removeClass('active').empty();
