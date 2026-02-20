@@ -1967,6 +1967,9 @@
         max-width: 100%;
         max-height: 100%;
     }
+    .footer-widgets-area .footer-dots-img {
+        display: none;
+    }
 }
 @media screen and (min-width: 767px) and (max-width: 1600px) {
     .db-members .list-group:has(.rurera-tables-list) {
