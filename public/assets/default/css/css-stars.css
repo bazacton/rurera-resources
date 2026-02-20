@@ -622,6 +622,11 @@ span.learn-lable {
     margin: 0 0 10px;
     gap: 10px;
 }
+.rurera-topics-search .search-results a .result-title {
+    color: #999;
+    font-size: .875rem;
+    font-weight: 500;
+}
 .rurera-topics-search .search-results a:before,
 .rurera-topics-search .no-results:before {
     content: "";
