@@ -275,13 +275,15 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
   content: "";
   position: absolute;
   inset: 0;
+  padding-right: 4px; /* prevents cutting right edge */
   background-image: repeating-linear-gradient(
     to right,
     transparent 0%,
     transparent 18%,
     #ffffff 18%,
     #ffffff 20%
-    );
+  );
+  background-clip: content-box;
   z-index: 2;
   pointer-events: none;
 }
