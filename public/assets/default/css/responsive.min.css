@@ -5378,6 +5378,7 @@
     }
     .login-pad-icons a {
         padding: 8px 8px;
+        max-width: 88px;
     }
     .login-pad-icons a img {
         width: 25px;
