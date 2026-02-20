@@ -1072,6 +1072,9 @@ $(document).on('click', '.topic-form-submit', function (e) {
     var subject_id = parentObj.find('input[name="subject_id"]').val();
     var topic_part_name = parentObj.find('input[name="topic_part_name"]').val();
     var topic_part_slug = parentObj.find('input[name="topic_part_slug"]').val();
+    var topic_part_status = parentObj
+        .find('input[name="topic_part_active"]')
+        .is(':checked') ? 'active' : 'inactive';
     jQuery.ajax({
         type: "POST",
         url: '/admin/topics_parts/update_topic_part',
@@ -1079,7 +1082,7 @@ $(document).on('click', '.topic-form-submit', function (e) {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         dataType: 'json',
-        data: {"topic_part_id": topic_part_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
+        data: {"topic_part_status": topic_part_status, "topic_part_id": topic_part_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
         success: function (return_data) {
             parentObj.closest('.sub-topic-modal').modal('hide');
             parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
@@ -1115,6 +1118,34 @@ $(document).on('click', '.topic-add-form-submit', function (e) {
                 return_data.msg,
                 false, //confirmButton
             );
+            location.reload();
         }
     });
 });
+
+$(document).on('click', '.subchapter-add-form-submit', function (e) {
+    var parentObj = $(this).closest('.modal-body');
+    var chapter_id = parentObj.find('input[name="chapter_id"]').val();
+    var year_id = parentObj.find('select[name="year_group_id"]').val();
+    var subject_id = parentObj.find('input[name="subject_id"]').val();
+    var sub_chapter_name = parentObj.find('input[name="sub_chapter_name"]').val();
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/topics_parts/add_sub_chapter',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType: 'json',
+        data: {"chapter_id": chapter_id, "year_id": year_id, "subject_id": subject_id, "sub_chapter_name": sub_chapter_name},
+        success: function (return_data) {
+            rurera_modal_alert(
+                return_data.status,
+                return_data.msg,
+                false, //confirmButton
+            );
+            location.reload();
+        }
+    });
+});
+
+
