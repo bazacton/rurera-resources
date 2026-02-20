@@ -305,7 +305,7 @@
                         <div class="login-password text-center">
                             <form class="mb-10">
                                 <div class="form-group d-inline-flex align-items-center justify-content-center flex-column flex-wrap">
-                                    <h2 class="text-center font-24 font-weight-bold mb-15">
+                                    <h2 class="text-center font-24 font-weight-bold mb-30">
                                         Enter Pin Code
                                         <span class="d-block font-14 font-weight-normal pt-5">If your teacher has given you a PIN code to access Rurera Go, enter <br> it in the form below..</span>
                                     </h2>
@@ -322,35 +322,37 @@
                             </form>
                             <div class="login-pad-icons">
                                 <a id="pad-1" href="javascript:;" class="loginpad-icon">
-                                     <span>1</span><!--<img src="/assets/default/svgs/login_pin/1.svg?ver={{$rand_no}}" alt="1"> -->
+                                     <span>1</span>
                                 </a>
                                 <a id="pad-2" href="javascript:;" class="loginpad-icon">
-                                     <span>2</span><!--<img src="/assets/default/svgs/login_pin/2.svg?ver={{$rand_no}}" alt="2"> -->
+                                     <span>2</span>
                                 </a>
                                 <a id="pad-3" href="javascript:;" class="loginpad-icon">
-                                     <span>3</span><!--<img src="/assets/default/svgs/login_pin/3.svg?ver={{$rand_no}}" alt="3"> -->
+                                     <span>3</span>
                                 </a>
                                 <a id="pad-4" href="javascript:;" class="loginpad-icon">
-                                     <span>4</span><!--<img src="/assets/default/svgs/login_pin/4.svg?ver={{$rand_no}}" alt="4"> -->
+                                     <span>4</span>
                                 </a>
                                 <a id="pad-5" href="javascript:;" class="loginpad-icon">
-                                     <span>5</span><!--<img src="/assets/default/svgs/login_pin/5.svg?ver={{$rand_no}}" alt="5"> -->
+                                     <span>5</span>
                                 </a>
                                 <a id="pad-6" href="javascript:;" class="loginpad-icon">
-                                     <span>6</span><!--<img src="/assets/default/svgs/login_pin/6.svg?ver={{$rand_no}}" alt="6"> -->
+                                     <span>6</span>
                                 </a>
                                 <a id="pad-7" href="javascript:;" class="loginpad-icon">
-                                     <span>7</span><!--<img src="/assets/default/svgs/login_pin/7.svg?ver={{$rand_no}}" alt="7"> -->
+                                     <span>7</span>
                                 </a>
                                 <a id="pad-8" href="javascript:;" class="loginpad-icon">
-                                     <span>8</span><!--<img src="/assets/default/svgs/login_pin/8.svg?ver={{$rand_no}}" alt="8"> -->
+                                     <span>8</span>
                                 </a>
                                 <a id="pad-9" href="javascript:;" class="loginpad-icon">
-                                     <span>9</span><!--<img src="/assets/default/svgs/login_pin/9.svg?ver={{$rand_no}}" alt="9"> -->
+                                     <span>9</span>
                                 </a>
+                                <button class="key-back" data-action="back">⌫</button>
                                 <a id="pad-0" href="javascript:;" class="loginpad-icon">
-                                     <span>0</span><!--<img src="/assets/default/svgs/login_pin/0.svg?ver={{$rand_no}}" alt="0"> -->
+                                     <span>0</span>
                                 </a>
+                                <button class="key-enter" data-action="submit">Enter</button>
                             </div>
                         </div>
                     </div>

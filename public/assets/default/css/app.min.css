@@ -1370,20 +1370,20 @@ nav li {
     width: 100%;
 }
 .login-password .form-group input.login_pin {
-    background-color: #fafafa;
-    margin-bottom: 5px !important;
-    padding: 0 5px;
-    text-align: center;
-    vertical-align: top;
-    height: 64px;
-    border-radius: 12px !important;
-    min-width: 56px;
+  background-color: #fafafa;
+  margin-bottom: 5px !important;
+  padding: 0 5px;
+  text-align: center;
+  vertical-align: top;
+  height: 64px;
+  border-radius: 12px !important;
+  min-width: 56px;
 }
 .login-password .form-group input.login_pin:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, .15);
-    background: #fff;
-    transform: translateY(-1px);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, .15);
+  background: #fff;
+  transform: translateY(-1px);
 }
 .login-password .form-group input.login_pin[type=number]::-webkit-inner-spin-button, 
 .login-password .form-group input.login_pin[type=number]::-webkit-outer-spin-button { 
@@ -1399,7 +1399,8 @@ nav li {
   gap: 10px;
 }
 
-.login-pad-icons a {
+.login-pad-icons a,
+.login-with-pin .login-pad-icons button {
   display: flex;
   align-items: center;
   padding: 10px 15px;
@@ -1411,8 +1412,10 @@ nav li {
   font-size: 48px;
   font-weight: 900;
   color: #c4c4c4;
+  max-width: 88px;
 }
-.login-with-pin .login-pad-icons a {
+.login-with-pin .login-pad-icons a,
+.login-with-pin .login-pad-icons button {
   background-color: #f9fafb;
   padding: 0 15px;
   height: 56px;
@@ -1422,6 +1425,11 @@ nav li {
   border-color: #e4e7ec;
   border-radius: 14px;
   font-size: 18px;
+}
+.login-with-pin .login-pad-icons .key-enter {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
 }
 .login-pad-icons a:hover {
   color: #777;

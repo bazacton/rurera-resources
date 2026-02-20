@@ -5367,12 +5367,10 @@
         font-size: 30px;
         max-height: 35px;
         width: 15% !important;
+        min-width: auto;
     }
     .login-pad-icons a {
         padding: 8px 8px;
-        font-size: 24px;
-        flex-basis: 20%;
-        justify-content: center;
     }
     .login-pad-icons a img {
         width: 25px;
@@ -5380,6 +5378,10 @@
     }
     .login-pad-icons {
         padding-bottom: 25px;
+    }
+    .login-with-pin .login-pad-icons {
+        gap: 5px;
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 480px) {
