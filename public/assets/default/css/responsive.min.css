@@ -5382,6 +5382,10 @@
     .login-pad-icons {
         padding-bottom: 25px;
     }
+    .login-with-pin .login-pad-icons {
+        gap: 5px;
+        padding-bottom: 0;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {
