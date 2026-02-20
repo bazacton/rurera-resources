@@ -1028,7 +1028,7 @@ button.view-btn {
     border: 0;
     background-color: inherit;
     padding: 0;
-    color: var(--primary);
+    color: #999;
     text-align: left;
     font-weight: 500;
 }
