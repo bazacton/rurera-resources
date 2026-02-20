@@ -171,12 +171,48 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                     </td>
                                                     <td class="font-12 text-right font-weight-bold">3</td>
                                                 </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Lines, line segments and rays</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Write variable expressions</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Understanding area of a parallelogram</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Lines, line segments and rays</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Write variable expressions</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Understanding area of a parallelogram</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <div class="mt-15">
-                                    <a href="#" class="font-12 font-weight-bold">See all 9 skills</a>
+                                        <a href="#" class="font-12 font-weight-bold show-skills-btn">See all 9 skills</a>
                                     </div>
                                 </div>
                                     @endif
