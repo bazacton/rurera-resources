@@ -175,6 +175,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
 .total-sub-topics {
     font-weight: normal;
     font-size: .9rem;
+    color: #000;
     text-transform: capitalize;
 }
 .total-sub-topics em {
