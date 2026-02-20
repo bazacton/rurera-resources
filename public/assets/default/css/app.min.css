@@ -16247,6 +16247,9 @@ footer.footer-home {
   .rurera-testimonials .masonry-grid {
     column-count: 1;
   }
+  .rurera-swiper-slide-inner {
+    height: 200px;
+  }
 }
 
 /* Visual containers for placeholders and slider */
