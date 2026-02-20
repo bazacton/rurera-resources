@@ -1699,6 +1699,10 @@
         display: none;
         padding-bottom: 25px;
     }
+    .custom-footer .widget-links .widget-body {
+        display: block;
+        padding-bottom: 0;
+    }
     .custom-footer .widget-links li,
     .custom-footer .widget-location li {
         margin-bottom: 10px;
