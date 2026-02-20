@@ -1456,7 +1456,7 @@
 
                             setTimeout(function() {
                                 scrollAndHighlight($chapterParent);
-                            }, 300);
+                            }, 3000);
 
                         }
                         // CASE 2: If clicked result is a main chapter (li with id like subject_203)
