@@ -1425,6 +1425,11 @@ nav li {
   border-radius: 14px;
   font-size: 18px;
 }
+.login-with-pin .login-pad-icons .key-enter {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
 .login-pad-icons a:hover {
   color: #777;
   box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
