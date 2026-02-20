@@ -307,7 +307,7 @@
                                 <div class="form-group d-inline-flex align-items-center justify-content-center flex-column flex-wrap">
                                     <h2 class="text-center font-24 font-weight-bold mb-15">
                                         Enter Pin Code
-                                        <span class="d-block font-16 font-weight-normal pt-5">If your teacher has given you a PIN code to access Rurera Go, enter <br> it in the form below..</span>
+                                        <span class="d-block font-14 font-weight-normal pt-5">If your teacher has given you a PIN code to access Rurera Go, enter <br> it in the form below..</span>
                                     </h2>
                                     <div class="password-fields">
                                         <input type="hidden" class="login_pin_final" value="">
