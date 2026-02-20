@@ -322,34 +322,34 @@
                             </form>
                             <div class="login-pad-icons">
                                 <a id="pad-1" href="javascript:;" class="loginpad-icon">
-                                     <span>1</span><!--<img src="/assets/default/svgs/login_pin/1.svg?ver={{$rand_no}}" alt="1"> -->
+                                     <span>1</span>
                                 </a>
                                 <a id="pad-2" href="javascript:;" class="loginpad-icon">
-                                     <span>2</span><!--<img src="/assets/default/svgs/login_pin/2.svg?ver={{$rand_no}}" alt="2"> -->
+                                     <span>2</span>
                                 </a>
                                 <a id="pad-3" href="javascript:;" class="loginpad-icon">
-                                     <span>3</span><!--<img src="/assets/default/svgs/login_pin/3.svg?ver={{$rand_no}}" alt="3"> -->
+                                     <span>3</span>
                                 </a>
                                 <a id="pad-4" href="javascript:;" class="loginpad-icon">
-                                     <span>4</span><!--<img src="/assets/default/svgs/login_pin/4.svg?ver={{$rand_no}}" alt="4"> -->
+                                     <span>4</span>
                                 </a>
                                 <a id="pad-5" href="javascript:;" class="loginpad-icon">
-                                     <span>5</span><!--<img src="/assets/default/svgs/login_pin/5.svg?ver={{$rand_no}}" alt="5"> -->
+                                     <span>5</span>
                                 </a>
                                 <a id="pad-6" href="javascript:;" class="loginpad-icon">
-                                     <span>6</span><!--<img src="/assets/default/svgs/login_pin/6.svg?ver={{$rand_no}}" alt="6"> -->
+                                     <span>6</span>
                                 </a>
                                 <a id="pad-7" href="javascript:;" class="loginpad-icon">
-                                     <span>7</span><!--<img src="/assets/default/svgs/login_pin/7.svg?ver={{$rand_no}}" alt="7"> -->
+                                     <span>7</span>
                                 </a>
                                 <a id="pad-8" href="javascript:;" class="loginpad-icon">
-                                     <span>8</span><!--<img src="/assets/default/svgs/login_pin/8.svg?ver={{$rand_no}}" alt="8"> -->
+                                     <span>8</span>
                                 </a>
                                 <a id="pad-9" href="javascript:;" class="loginpad-icon">
-                                     <span>9</span><!--<img src="/assets/default/svgs/login_pin/9.svg?ver={{$rand_no}}" alt="9"> -->
+                                     <span>9</span>
                                 </a>
                                 <a id="pad-0" href="javascript:;" class="loginpad-icon">
-                                     <span>0</span><!--<img src="/assets/default/svgs/login_pin/0.svg?ver={{$rand_no}}" alt="0"> -->
+                                     <span>0</span>
                                 </a>
                             </div>
                         </div>
