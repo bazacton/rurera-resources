@@ -1394,6 +1394,9 @@ nav li {
   font-weight: 900;
   color: #c4c4c4;
 }
+.login-with-pin .login-pad-icons a {
+    padding: 25px 15px;
+}
 .login-pad-icons a:hover {
   color: #777;
   box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
