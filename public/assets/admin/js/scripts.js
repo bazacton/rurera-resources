@@ -1084,8 +1084,10 @@ $(document).on('click', '.topic-form-submit', function (e) {
         dataType: 'json',
         data: {"topic_part_status": topic_part_status, "topic_part_id": topic_part_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
         success: function (return_data) {
-            parentObj.closest('.sub-topic-modal').modal('hide');
-            parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
+            if(return_data.status == 'success') {
+                parentObj.closest('.sub-topic-modal').modal('hide');
+                parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
+            }
             rurera_modal_alert(
                 return_data.status,
                 return_data.msg,
