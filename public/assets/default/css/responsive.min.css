@@ -4371,6 +4371,7 @@
     .process-holder .section-title.text-left {
         text-align: center !important;
     }
+    .process-card {flex: auto; padding-left: 16px;}
     .process-holder .row > [class*="col-"] > .row > [class*="col-"]:nth-child(2) .process-card-body,
     .process-holder .row > [class*="col-"] > .row > [class*="col-"]:nth-child(4) .process-card-body {
         flex-direction: column-reverse;
