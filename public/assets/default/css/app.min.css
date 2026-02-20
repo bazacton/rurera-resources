@@ -1355,6 +1355,11 @@ nav li {
   justify-content: center;
   flex-direction: column;
 }
+.login-with-pin .login-holder {
+    min-width: auto;
+    max-width: 640px;
+    border-radius: 12px;
+}
 .password-fields {
     display: flex;
     align-items: center;
@@ -1363,10 +1368,19 @@ nav li {
     width: 100%;
 }
 .login-password .form-group input.login_pin {
+  background-color: #fafafa;
   margin-bottom: 5px !important;
   padding: 0 5px;
   text-align: center;
   vertical-align: top;
+  height: 64px;
+  border-radius: 12px !important;
+}
+.login-password .form-group input.login_pin:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, .15);
+    background: #fff;
+    transform: translateY(-1px);
 }
 .login-password .form-group input.login_pin[type=number]::-webkit-inner-spin-button, 
 .login-password .form-group input.login_pin[type=number]::-webkit-outer-spin-button { 
