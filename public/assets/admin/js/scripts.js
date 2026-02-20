@@ -1087,6 +1087,7 @@ $(document).on('click', '.topic-form-submit', function (e) {
             if(return_data.status == 'success') {
                 parentObj.closest('.sub-topic-modal').modal('hide');
                 parentObj.closest('li').find('.topic-part-title').html(topic_part_name);
+                $(".year_group_chapters").change();
             }
             rurera_modal_alert(
                 return_data.status,
@@ -1121,7 +1122,7 @@ $(document).on('click', '.topic-add-form-submit', function (e) {
                 false, //confirmButton
             );
             if(return_data.status == 'success') {
-                location.reload();
+                $(".year_group_chapters").change();
             }
         }
     });
@@ -1148,7 +1149,7 @@ $(document).on('click', '.subchapter-add-form-submit', function (e) {
                 false, //confirmButton
             );
             if(return_data.status == 'success') {
-                location.reload();
+                $(".year_group_chapters").change();
             }
         }
     });
