@@ -7975,6 +7975,7 @@ body .flipbook-data {
   text-align: right;
 }
 .pages-sub-header.about-sub-header {
+  background-color: var(--primary);
   min-height: 400px;
   max-height: inherit;
 }
