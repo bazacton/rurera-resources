@@ -11230,7 +11230,7 @@ body {
 .rurera-categories-section.has-bg,
 .rurera-our-mission-section.has-bg {
   max-width: 1570px;
-  background: url(../../default/img/categories-section-bg.svg) center top no-repeat;
+  background: url(/assets/default/img/categories-section-bg.svg) center top no-repeat;
   min-height: 615px;
   margin: 160px auto 70px auto;
   padding-top: 100px;
