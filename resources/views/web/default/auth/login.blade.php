@@ -345,10 +345,10 @@
                                 <a id="pad-8" href="javascript:;" class="loginpad-icon">
                                      <span>8</span>
                                 </a>
-                                <button class="key-back" data-action="back">⌫</button>
                                 <a id="pad-9" href="javascript:;" class="loginpad-icon">
                                      <span>9</span>
                                 </a>
+                                <button class="key-back" data-action="back">⌫</button>
                                 <a id="pad-0" href="javascript:;" class="loginpad-icon">
                                      <span>0</span>
                                 </a>
