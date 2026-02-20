@@ -1443,69 +1443,65 @@
                         var targetSelector = result.target;
                         var $target = $(targetSelector);
 
-                        if ($target.length) {
+                        if (!$target.length) return;
 
-                            // Find parent chapter wrapper
-                            var $chapterParent = $target.closest('.lms-chapter-ul-outer');
+                        var $chapterParent;
 
-                            // If inside collapse, open it first
-                            if ($target.hasClass('collapse')) {
+                        // CASE 1: If clicked result is a collapse item
+                        if ($target.hasClass('collapse')) {
 
-                                $target.collapse('show');
+                            $chapterParent = $target.closest('.lms-chapter-ul-outer');
 
-                                setTimeout(function() {
+                            $target.collapse('show');
 
-                                    if ($chapterParent.length) {
+                            setTimeout(function() {
+                                scrollAndHighlight($chapterParent);
+                            }, 300);
 
-                                        $('html, body').animate({
-                                            scrollTop: $chapterParent.offset().top - 100
-                                        }, 400);
+                        }
+                        // CASE 2: If clicked result is a main chapter (li with id like subject_203)
+                        else if ($target.is('li')) {
 
-                                        // Add highlight
-                                        $chapterParent.addClass('highlight');
+                            $chapterParent = $target.find('.lms-chapter-ul-outer');
 
-                                        // Clear old timer if exists
-                                        clearTimeout($chapterParent.data('highlightTimer'));
+                            scrollAndHighlight($chapterParent);
+                        }
+                        // CASE 3: fallback
+                        else {
 
-                                        // Remove highlight after 2 seconds
-                                        var timer = setTimeout(function() {
-                                            $chapterParent.removeClass('highlight');
-                                        }, 2000);
+                            $chapterParent = $target.closest('.lms-chapter-ul-outer');
 
-                                        $chapterParent.data('highlightTimer', timer);
-                                    }
-
-                                }, 300);
-
-                            } else {
-
-                                if ($chapterParent.length) {
-
-                                    $('html, body').animate({
-                                        scrollTop: $chapterParent.offset().top - 100
-                                    }, 400);
-
-                                    // Add highlight
-                                    $chapterParent.addClass('highlight');
-
-                                    // Clear old timer if exists
-                                    clearTimeout($chapterParent.data('highlightTimer'));
-
-                                    // Remove highlight after 2 seconds
-                                    var timer = setTimeout(function() {
-                                        $chapterParent.removeClass('highlight');
-                                    }, 2000);
-
-                                    $chapterParent.data('highlightTimer', timer);
-                                }
-                            }
+                            scrollAndHighlight($chapterParent);
                         }
 
                         // Clear search UI
                         $searchInput.val('');
                         $clearBtn.removeClass('active');
                         $searchResultsDiv.removeClass('active').empty();
+
+
+                        // Shared function
+                        function scrollAndHighlight($el) {
+
+                            if (!$el || !$el.length) return;
+
+                            $('html, body').animate({
+                                scrollTop: $el.offset().top - 100
+                            }, 400);
+
+                            $el.addClass('highlight');
+
+                            clearTimeout($el.data('highlightTimer'));
+
+                            var timer = setTimeout(function() {
+                                $el.removeClass('highlight');
+                            }, 2000);
+
+                            $el.data('highlightTimer', timer);
+                        }
+
                     });
+
 
 
                     $searchResultsDiv.append($resultElement);
