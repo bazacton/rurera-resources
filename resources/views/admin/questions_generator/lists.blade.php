@@ -19,47 +19,6 @@
 		.save-template {
 			float: right;
 		}
-
-
-		/* Customizing jQuery UI Slider to match Bootstrap/Purple Theme */
-		/* Using class .rurera-slider-ui instead of ID */
-		.rurera-slider-ui {
-			height: 8px;
-			background: #e9ecef; /* Bootstrap light gray */
-			border: none;
-			border-radius: 10px;
-		}
-
-		/* The colored bar between handles */
-		.rurera-slider-ui .ui-slider-range {
-			background: #5a67d8; /* Custom Purple/Blue */
-			border-radius: 10px;
-		}
-
-		/* The handles (circles) */
-		.rurera-slider-ui .ui-slider-handle {
-			width: 22px;
-			height: 22px;
-			border-radius: 50%;
-			background: #ffffff;
-			border: 3px solid #5a67d8;
-			top: -8px; /* Center vertically */
-			cursor: pointer;
-			outline: none;
-			box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
-			transition: transform 0.2s, background-color 0.2s;
-			position:relative;
-		}
-
-		.rurera-slider-ui .ui-slider-handle:hover {
-			transform: scale(1.15);
-		}
-
-		.rurera-slider-ui .ui-slider-handle:active {
-			background: #5a67d8;
-			border-color: #fff;
-			transform: scale(1.2);
-		}
 	</style>
 	<style>
 		.table-container { margin-top: 20px; }
@@ -346,7 +305,7 @@
 
 
 	<div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
-		<div class="modal-dialog modal-xl">
+		<div class="modal-dialog">
 			<div class="modal-content edit-quest-modal-div">
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -363,18 +322,17 @@
 											<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
 										</div>
 										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Auto Generated Questions</label>
-												<select name="mock_type"
-														class="form-control conditional_field_parent" data-placeholder="Select Type">
-													<option data-target_common_class="practice_type_fields" data-target_field_class="mock_practice_fields" value="mock_practice">Yes</option>
-													<option data-target_common_class="practice_type_fields" data-target_field_class="" value="mock_exam">No</option>
+											<div class="form-group">
+												<label class="input-label">Type</label>
+												<select name="list_type" data-plugin-selectTwo class="form-control populate list_type conditional-field">
+													<option value="Course" data-child="Course-fields">Course</option>
+													<option value="Mock Exam" data-child="mock-exam-fields">Mock Exam</option>
 												</select>
 											</div>
 										</div>
-										<div class="col-md-12 col-lg-12">
+										<div class="col-md-12 col-lg-12 conditional-child-fields mock-exam-fields">
 											<div class="form-group">
-												<label class="input-label">Exam Category</label>
+												<label class="input-label">Exam Type</label>
 												<select name="list_sub_type" data-plugin-selectTwo class="form-control populate list_sub_type ">
 													<option value="sats">Sats</option>
 													<option value="11plus">11plus</option>
@@ -384,7 +342,18 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-md-12 col-lg-12 ">
+										<div class="col-md-12 col-lg-12 conditional-child-fields mock-exam-fields quiz-list">
+											<div class="form-group">
+												<label class="input-label">Examination Quiz</label>
+												<select name="quiz_id" data-plugin-selectTwo class="form-control populate quiz_id">
+													<option value="">Select Quiz</option>
+													@foreach($quiz_list as $quiz_id => $quiz_title)
+														<option value="{{$quiz_id}}">{{$quiz_title}}</option>
+													@endforeach
+												</select>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
 											<div class="form-group">
 												<label class="input-label">{{trans('admin/main.category')}}</label>
 												<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
@@ -403,603 +372,372 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
-
-										</div>
-
-
-										<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
-
-
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Quiz Title</label>
-												<input type="text" name="quiz_title" class="form-control rurera-req-field">
-											</div>
-										</div>
-
-										<div class="col-md-12 col-lg-12">
+										<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
 											<div class="form-group">
-												<label class="input-label">Quiz Image</label>
-												<div class="input-group">
-													<div class="input-group-prepend">
-														<button
-																type="button"
-																class="input-group-text rurera-file-manager"
-																data-input="image"
-																data-preview="preview_img-image"
-																data-image_attr='{
-                                                                    "upload_type":"gallery",
-                                                                    "upload_dir":"public",
-                                                                    "upload_path":"/quiz",
-                                                                    "is_multiple":false,
-                                                                    "preview_div":"preview_img-image",
-                                                                    "hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
-                                                                    "field_name":"quiz_image"
-                                                                }'
-																data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-														>
-															<i class="fa fa-upload"></i>
-														</button>
-														<div class="preview_img-image">
-														</div>
-													</div>
+												<label class="input-label">Subjects</label>
+												<select data-chapter_id="" id="subject_id"
+														class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+														name="subject_id" data-next_index="chapter_id" data-next_value="">
+													<option value="">Please select year, subject</option>
+												</select>
+												@error('subject_id')
+												<div class="invalid-feedback">
+													{{ $message }}
 												</div>
-											</div>
-										</div>
-
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Quiz Slug</label>
-												<input type="text" name="quiz_slug" class="form-control">
-											</div>
-										</div>
-
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Total Time (Minutes)</label>
-												<input type="number" name="total_time" class="form-control rurera-req-field">
-											</div>
-										</div>
-
-										<div class="col-md-12 col-lg-12 no_of_questions_field">
-											<div class="form-group mt-15">
-
-												<div class="question-range-info text-muted mb-1"></div>
-
-												<label class="input-label d-block">No of Questions</label>
-												<input type="number" name="no_of_questions" class="form-control rurera-req-field">
-
-												<div class="question-error text-danger mt-1" style="display:none;"></div>
+												@enderror
 
 											</div>
 										</div>
+										<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
+											<div class="form-group">
+												<label class="input-label">Topic</label>
+												<select data-sub_chapter_id="" id="chapter_id"
+														class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+														name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+													<option value="">Please select year, subject</option>
+												</select>
+												@error('chapter_id')
+												<div class="invalid-feedback">
+													{{ $message }}
+												</div>
+												@enderror
+
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
+											<div class="form-group">
+												<label class="input-label">Sub Topic</label>
+												<select id="sub_chapter_id"
+														class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+														name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+													<option value="">Please select year, subject, Topic</option>
+												</select>
+												@error('sub_chapter_id')
+												<div class="invalid-feedback">
+													{{ $message }}
+												</div>
+												@enderror
+
+											</div>
+										</div>
+
 									</div>
 								</div>
-								<div class="inactivity-controls">
-									<button type="submit" class="submit-btn mt-0">Generate List</button>
-									<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
-								</div>
-								<form>
 							</div>
+							<div class="inactivity-controls">
+								<button type="submit" class="submit-btn mt-0">Generate List</button>
+								<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+							</div>
+							<form>
 					</div>
 				</div>
 			</div>
 		</div>
-		@endsection
+	</div>
+@endsection
 
-		@push('scripts_bottom')
+@push('scripts_bottom')
 
 
-			<script>
-				$(document).ready(function () {
+	<script>
+		$(document).ready(function () {
 
-					$(document).on('change', '.mock-practice-data', function () {
-						var course_id = $(this).val();
-						var chapter_id = $(this).attr('data-chapter_id');
-						var category_id = $(".ajax-category-courses").val();
-						var quiz_id = 0;
+			$(document).on('submit', '.generate-bulk-list-form', function() {
+				var thisForm = $(this);
+				var quiz_id = $(".quiz_id").val();
+				console.log(quiz_id);
+				if(quiz_id > 0){
+					return true;
+				}else{
+					returnType = rurera_validation_process(thisForm);
+					if (returnType == false) {
+						return false;
+					}
+				}
+				return true;
 
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/mock_practice_data',
-							data: {'subject_id': course_id, 'category_id': category_id, 'quiz_id': quiz_id},
-							success: function (return_data) {
-								$(".mock-practice-data-block").html(return_data);
-							}
-						});
+			});
+
+			const defaultColumns = [
+				{ id: 'category', text: 'Category', visible: true },
+				{ id: 'list_type', text: 'Type', visible: true },
+				{ id: 'generated_questions', text: 'Generated / Waiting / Rejected', visible: true },
+				{ id: 'user', text: 'Added by', visible: true },
+				{ id: 'created_at', text: 'Added Date', visible: true },
+				{ id: 'action', text: 'Action', visible: true }
+			];
+
+			let columns = $.extend(true, [], defaultColumns); // Deep copy of default columns
+			const $shownAttributes = $('#shownAttributes');
+			const $hiddenAttributes = $('#hiddenAttributes');
+			const $tableHeader = $('#tableHeader');
+			const $searchInput = $('#searchInput');
+			let currentOrder = columns.map(col => col.id);
+
+			function renderTableHeaders() {
+				$tableHeader.empty();
+				columns.forEach(col => {
+					const $th = $('<th>').text(col.text).data('id', col.id);
+					$th.toggleClass('hidden-column', !col.visible);
+					$tableHeader.append($th);
+				});
+
+				$('#myTable tbody tr').each(function () {
+					$(this).children().each(function (index) {
+						$(this).toggleClass('hidden-column', !columns[index].visible);
 					});
+				});
+			}
 
+			function renderColumnLists() {
+				$shownAttributes.empty();
+				$hiddenAttributes.empty();
 
-					$(document).on('input change', '.rurera-req-field', function() {
-						var thisForm = $('.generate-bulk-list-form');
-						rurera_validation_process(thisForm);
-					});
-					$(document).on('submit', '.generate-bulk-list-form', function() {
-						var thisForm = $(this);
-						returnType = rurera_validation_process(thisForm);
-						if (returnType == false) {
-							return false;
-						}
+				columns.forEach(col => {
+					const $li = $('<li>').addClass('toggle-switch').data('id', col.id).attr('draggable', true);
+					const $label = $('<span>').text(col.text);
+					const $toggle = $('<input>').attr('type', 'checkbox').prop('checked', col.visible);
+					const $dragHandle = $('<span>').text('☰').addClass('drag-handle');
 
+					$toggle.change(() => toggleColumnVisibility(col.id));
+					$li.append($dragHandle, $label, $toggle);
 
-						var quiz_id = $(".quiz_id").val();
-						console.log(quiz_id);
-						if(quiz_id > 0){
-							return true;
-						}else{
-							returnType = rurera_validation_process(thisForm);
-							if (returnType == false) {
-								return false;
-							}
-						}
-						return true;
-
-					});
-
-					const defaultColumns = [
-						{ id: 'category', text: 'Category', visible: true },
-						{ id: 'list_type', text: 'Type', visible: true },
-						{ id: 'generated_questions', text: 'Generated / Waiting / Rejected', visible: true },
-						{ id: 'user', text: 'Added by', visible: true },
-						{ id: 'created_at', text: 'Added Date', visible: true },
-						{ id: 'action', text: 'Action', visible: true }
-					];
-
-					let columns = $.extend(true, [], defaultColumns); // Deep copy of default columns
-					const $shownAttributes = $('#shownAttributes');
-					const $hiddenAttributes = $('#hiddenAttributes');
-					const $tableHeader = $('#tableHeader');
-					const $searchInput = $('#searchInput');
-					let currentOrder = columns.map(col => col.id);
-
-					function renderTableHeaders() {
-						$tableHeader.empty();
-						columns.forEach(col => {
-							const $th = $('<th>').text(col.text).data('id', col.id);
-							$th.toggleClass('hidden-column', !col.visible);
-							$tableHeader.append($th);
-						});
-
-						$('#myTable tbody tr').each(function () {
-							$(this).children().each(function (index) {
-								$(this).toggleClass('hidden-column', !columns[index].visible);
-							});
-						});
+					if (col.visible) {
+						$shownAttributes.append($li);
+					} else {
+						$hiddenAttributes.append($li);
 					}
 
-					function renderColumnLists() {
-						$shownAttributes.empty();
-						$hiddenAttributes.empty();
+					$li.on('dragstart', handleDragStart)
+							.on('dragover', handleDragOver)
+							.on('drop', handleDrop)
+							.on('dragend', handleDragEnd);
+				});
+			}
 
-						columns.forEach(col => {
-							const $li = $('<li>').addClass('toggle-switch').data('id', col.id).attr('draggable', true);
-							const $label = $('<span>').text(col.text);
-							const $toggle = $('<input>').attr('type', 'checkbox').prop('checked', col.visible);
-							const $dragHandle = $('<span>').text('☰').addClass('drag-handle');
+			let draggedItem = null;
 
-							$toggle.change(() => toggleColumnVisibility(col.id));
-							$li.append($dragHandle, $label, $toggle);
+			function handleDragStart(event) {
+				draggedItem = $(event.target);
+				event.originalEvent.dataTransfer.effectAllowed = 'move';
+				setTimeout(() => draggedItem.addClass('dragging'), 0);
+			}
 
-							if (col.visible) {
-								$shownAttributes.append($li);
-							} else {
-								$hiddenAttributes.append($li);
-							}
-
-							$li.on('dragstart', handleDragStart)
-									.on('dragover', handleDragOver)
-									.on('drop', handleDrop)
-									.on('dragend', handleDragEnd);
-						});
+			function handleDragOver(event) {
+				event.preventDefault();
+				const $target = $(event.target).closest('li');
+				if ($target.length && $target[0] !== draggedItem[0]) {
+					const bounding = $target[0].getBoundingClientRect();
+					const offset = event.originalEvent.clientY - bounding.top;
+					if (offset > bounding.height / 2) {
+						$target.after(draggedItem);
+					} else {
+						$target.before(draggedItem);
 					}
+				}
+			}
 
-					let draggedItem = null;
+			function handleDrop(event) {
+				event.preventDefault();
+				draggedItem.removeClass('dragging');
+				updateCurrentOrder();
+				renderTableHeaders();
+			}
 
-					function handleDragStart(event) {
-						draggedItem = $(event.target);
-						event.originalEvent.dataTransfer.effectAllowed = 'move';
-						setTimeout(() => draggedItem.addClass('dragging'), 0);
+			function handleDragEnd() {
+				draggedItem = null;
+			}
+
+			function toggleColumnVisibility(id) {
+				const col = columns.find(col => col.id === id);
+				col.visible = !col.visible;
+				renderTableHeaders();
+				renderColumnLists();
+			}
+
+			function updateCurrentOrder() {
+				currentOrder = $shownAttributes.children('li').map((_, li) => $(li).data('id')).get();
+				columns.sort((a, b) => currentOrder.indexOf(a.id) - currentOrder.indexOf(b.id));
+			}
+
+			function filterColumns() {
+				const filter = $searchInput.val().toLowerCase();
+				columns.forEach(col => {
+					const $li = $(`li[data-id="${col.id}"]`);
+					if (col.text.toLowerCase().includes(filter)) {
+						$li.show();
+					} else {
+						$li.hide();
 					}
+				});
+			}
 
-					function handleDragOver(event) {
-						event.preventDefault();
-						const $target = $(event.target).closest('li');
-						if ($target.length && $target[0] !== draggedItem[0]) {
-							const bounding = $target[0].getBoundingClientRect();
-							const offset = event.originalEvent.clientY - bounding.top;
-							if (offset > bounding.height / 2) {
-								$target.after(draggedItem);
-							} else {
-								$target.before(draggedItem);
-							}
-						}
-					}
+			function restoreDefault() {
+				columns = $.extend(true, [], defaultColumns); // Reset to default columns
+				currentOrder = defaultColumns.map(col => col.id); // Reset to default order
+				renderTableHeaders();
+				renderColumnLists();
 
-					function handleDrop(event) {
-						event.preventDefault();
-						draggedItem.removeClass('dragging');
-						updateCurrentOrder();
-						renderTableHeaders();
-					}
-
-					function handleDragEnd() {
-						draggedItem = null;
-					}
-
-					function toggleColumnVisibility(id) {
-						const col = columns.find(col => col.id === id);
-						col.visible = !col.visible;
-						renderTableHeaders();
-						renderColumnLists();
-					}
-
-					function updateCurrentOrder() {
-						currentOrder = $shownAttributes.children('li').map((_, li) => $(li).data('id')).get();
-						columns.sort((a, b) => currentOrder.indexOf(a.id) - currentOrder.indexOf(b.id));
-					}
-
-					function filterColumns() {
-						const filter = $searchInput.val().toLowerCase();
-						columns.forEach(col => {
-							const $li = $(`li[data-id="${col.id}"]`);
-							if (col.text.toLowerCase().includes(filter)) {
-								$li.show();
-							} else {
-								$li.hide();
-							}
-						});
-					}
-
-					function restoreDefault() {
-						columns = $.extend(true, [], defaultColumns); // Reset to default columns
-						currentOrder = defaultColumns.map(col => col.id); // Reset to default order
-						renderTableHeaders();
-						renderColumnLists();
-
-						const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
-						const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
-						$('#output').html(`
+				const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
+				const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
+				$('#output').html(`
 				<p>Visible Columns (Default): ${visibleColumns.join(', ')}</p>
 				<p>Hidden Columns (Default): ${hiddenColumns.join(', ')}</p>
 				<p>Current Order (Default): ${currentOrder.join(', ')}</p>
 			`);
-					}
+			}
 
-					function saveChanges() {
-						const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
-						const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
-						$('#output').html(`
+			function saveChanges() {
+				const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
+				const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
+				$('#output').html(`
 				<p>Visible Columns: ${visibleColumns.join(', ')}</p>
 				<p>Hidden Columns: ${hiddenColumns.join(', ')}</p>
 				<p>Current Order: ${currentOrder.join(', ')}</p>
 			`);
+			}
+
+			$searchInput.on('input', filterColumns);
+			$('#restoreDefault').on('click', restoreDefault);
+			$('#saveChanges').on('click', saveChanges);
+
+			renderTableHeaders();
+			renderColumnLists();
+		});
+
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+
+
+
+			$(document).on('click', '.create-questions-bulk-list-btn', function () {
+				$(".questions_bulk_list").modal('show');
+			});
+
+			$(document).on('change', '.ajax-category-courses', function () {
+				var category_id = $(this).val();
+				var course_id = $(this).attr('data-course_id');
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/courses_by_categories',
+					data: {'category_id': category_id, 'course_id': course_id},
+					success: function (return_data) {
+						$(".ajax-courses-dropdown").html(return_data);
+						$(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
+						$('.ajax-courses-dropdown').change();
 					}
-
-					$searchInput.on('input', filterColumns);
-					$('#restoreDefault').on('click', restoreDefault);
-					$('#saveChanges').on('click', saveChanges);
-
-					renderTableHeaders();
-					renderColumnLists();
-
-
-
-
-
-
-					function calculateTotalRange() {
-						let totalMin = 0;
-						let totalMax = 0;
-
-						$('.mock_practice_questions').each(function () {
-							let value = $(this).val().trim();
-
-							if (value !== '') {
-
-								if (value.indexOf('-') !== -1) {
-									let parts = value.split('-');
-									let min = parseInt(parts[0]) || 0;
-									let max = parseInt(parts[1]) || 0;
-
-									totalMin += min;
-									totalMax += max;
-								} else {
-									let number = parseInt(value) || 0;
-									totalMin += number;
-									totalMax += number;
-								}
-							}
-						});
-
-						return { min: totalMin, max: totalMax };
-					}
-
-
-// Show min/max info dynamically
-					function updateRangeInfo() {
-						let totals = calculateTotalRange();
-
-						$('.question-range-info').html(
-								"Allowed range: <strong>" + totals.min + "</strong> to <strong>" + totals.max + "</strong> questions"
-						);
-					}
-
-
-// Validate only on blur (NOT while typing)
-					$('input[name="no_of_questions"]').on('blur', function () {
-
-						let totals = calculateTotalRange();
-						let enteredValue = parseInt($(this).val());
-
-						$('.question-error').hide();
-
-						if (!enteredValue) return;
-
-						if (enteredValue < totals.min) {
-							$('.question-error')
-									.text("Minimum allowed questions is " + totals.min)
-									.show();
-						}
-
-						if (enteredValue > totals.max) {
-							$('.question-error')
-									.text("Maximum allowed questions is " + totals.max)
-									.show();
-						}
-					});
-
 				});
+			});
 
-			</script>
-			<script type="text/javascript">
+			$(document).on('change', '.ajax-courses-dropdown', function () {
+				var course_id = $(this).val();
+				var chapter_id = $(this).attr('data-chapter_id');
 
-				$(document).ready(function () {
-
-
-
-					$(document).on('click', '.create-questions-bulk-list-btn', function () {
-						$(".questions_bulk_list").modal('show');
-					});
-
-					$(document).on('change', '.ajax-category-courses', function () {
-						var category_id = $(this).val();
-						var course_id = $(this).attr('data-course_id');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/courses_by_categories_list',
-							data: {'category_id': category_id, 'course_id': course_id},
-							success: function (return_data) {
-								$(".subjects-listing-data").html(return_data);
-							}
-						});
-					});
-
-					$('body').on('change', '.assignment_subject_check', function (e) {
-						var subject_id = $(this).val();
-						var category_id = $('.ajax-category-courses').val();
-						var thisObj = $(this);
-						rurera_loader($(".practice-quiz-topics-list"), 'div');
-						jQuery.ajax({
-							type: "GET",
-							url: '/admin/common/topics_subtopics_by_subject',
-							headers: {
-								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-							},
-							data: {"subject_id": subject_id, 'category_id': category_id},
-							success: function (return_data) {
-								rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
-								$(".practice-quiz-topics-list").html(return_data);
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-courses-dropdown', function () {
-						var course_id = $(this).val();
-						var chapter_id = $(this).attr('data-chapter_id');
-
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/chapters_by_course',
-							data: {'course_id': course_id, 'chapter_id': chapter_id},
-							success: function (return_data) {
-								$(".ajax-chapter-dropdown").html(return_data);
-								$('.ajax-chapter-dropdown').change();
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-chapter-dropdown', function () {
-						var chapter_id = $(this).val();
-						var sub_chapter_id = $(this).attr('data-sub_chapter_id');
-						var disabled_items = $(this).attr('data-disabled');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/sub_chapters_by_chapter',
-							data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
-							success: function (return_data) {
-								$(".ajax-subchapter-dropdown").html(return_data);
-							}
-						});
-					});
-					$(".ajax-category-courses").change();
-
-
-					//Filters
-
-					$(document).on('change', '.ajax-category-courses-filter', function () {
-						var category_id = $(this).val();
-						var course_id = $(this).attr('data-course_id');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/courses_by_categories',
-							data: {'category_id': category_id, 'course_id': course_id},
-							success: function (return_data) {
-								$(".ajax-courses-dropdown-filter").html(return_data);
-								$(".ajax-chapter-dropdown-filter").html('<option value="">Please select year, subject</option>');
-								$('.ajax-courses-dropdown-filter').change();
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-courses-dropdown-filter', function () {
-						var course_id = $(this).val();
-						var chapter_id = $(this).attr('data-chapter_id');
-
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/chapters_by_course',
-							data: {'course_id': course_id, 'chapter_id': chapter_id},
-							success: function (return_data) {
-								$(".ajax-chapter-dropdown-filter").html(return_data);
-								$('.ajax-chapter-dropdown-filter').change();
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-chapter-dropdown-filter', function () {
-						var chapter_id = $(this).val();
-						var sub_chapter_id = $(this).attr('data-sub_chapter_id');
-						var disabled_items = $(this).attr('data-disabled');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/sub_chapters_by_chapter',
-							data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
-							success: function (return_data) {
-								$(".ajax-subchapter-dropdown-filter").html(return_data);
-							}
-						});
-					});
-					$(".ajax-category-courses-filter").change();
-
-
-					$(document).on('change', '.conditional-field', function () {
-						$(".conditional-child-fields").hide();
-						var child_value = $(this).val();
-						var selectedOption = $(this).find('option:selected');
-						var child_class = selectedOption.attr('data-child');
-						$('.'+child_class).show();
-					});
-
-					$(".list_type").change();
-					$(document).on('change', '.list_sub_type', function () {
-						var quiz_type = $(this).val();
-						var list_type = $(".list_type").val();
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/get_quiz_by_type',
-							data: {'quiz_type': quiz_type, 'list_type': list_type},
-							success: function (return_data) {
-								$(".quiz-list").html(return_data);
-							}
-						});
-					});
-					$(".list_sub_type").change();
-
-					function applyRangeSlider(context) {
-
-						$(context).find(".rurera-range-selector").each(function () {
-
-							var $input = $(this);
-
-							// ⛔ prevent double init
-							if ($input.data("slider-initialized")) return;
-							$input.data("slider-initialized", true);
-
-							var minRange = parseInt($input.data("min")) || 0;
-							var maxRange = parseInt($input.data("max")) || 100;
-
-							var currentVal = $input.val() || "";
-							var parts = currentVal.split(/[\s-]+/).filter(Boolean);
-
-							var initialMin = parts.length ? parseInt(parts[0]) : minRange;
-							var initialMax = parts.length > 1 ? parseInt(parts[1]) : maxRange;
-
-							var $slider = $("<div>").addClass("rurera-slider-ui mb-3 mt-4");
-							$input.after($slider);
-
-							$slider.slider({
-								range: true,
-								min: minRange,
-								max: maxRange,
-								values: [initialMin, initialMax],
-								slide: function (e, ui) {
-									$input.val(ui.values[0] + " - " + ui.values[1]);
-								}
-							});
-
-							$input.on("change", function () {
-								var parts = $(this).val().split(/[\s-]+/).filter(Boolean);
-
-								if (parts.length === 2) {
-									var v1 = parseInt(parts[0]);
-									var v2 = parseInt(parts[1]);
-
-									if (!isNaN(v1) && !isNaN(v2)) {
-										v1 = Math.max(minRange, v1);
-										v2 = Math.min(maxRange, v2);
-										if (v1 > v2) [v1, v2] = [v2, v1];
-
-										$slider.slider("values", [v1, v2]);
-										$(this).val(v1 + " - " + v2);
-										return;
-									}
-								}
-
-								var cur = $slider.slider("values");
-								$(this).val(cur[0] + " - " + cur[1]);
-							});
-						});
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/chapters_by_course',
+					data: {'course_id': course_id, 'chapter_id': chapter_id},
+					success: function (return_data) {
+						$(".ajax-chapter-dropdown").html(return_data);
+						$('.ajax-chapter-dropdown').change();
 					}
-
-					// 👉 Initial load
-					applyRangeSlider(document);
-
-					// 👉 After ANY ajax completes
-					$(document).ajaxComplete(function (event, xhr, settings) {
-						applyRangeSlider(document);
-					});
-
 				});
+			});
 
-
-			</script>
-
-
-			<script>
-
-				$(document).on('click', '.parent-filters', function () {
-					$('.parent-filters').removeClass('active');
-					$('.parent-filters').find('.active-tick').remove();
-					$(this).addClass('active');
-					var filter_html = $(this).html();
-					$(this).html('<span class="active-tick">✓</span> '+filter_html);
-
-					var selectedLevel = $('.performance-level-selection').val();
-					var id = $(this).attr('data-id');
-
-					$('.listing-data-row').each(function () {
-						var rowLevel = $(this).data('level_type');
-						var parent_id = $(this).attr('data-parent_id');
-
-						// Show all if "all" selected
-						if (selectedLevel === 'all' && (id == 'all' || id == parent_id)) {
-							$(this).removeClass('rurera-hide');
-						}
-						// Match selected level
-						else if (rowLevel === selectedLevel && (id == 'all' || id == parent_id)) {
-							$(this).removeClass('rurera-hide');
-						}
-						// Hide others
-						else {
-							$(this).addClass('rurera-hide');
-						}
-					});
-
-
-
-
-
+			$(document).on('change', '.ajax-chapter-dropdown', function () {
+				var chapter_id = $(this).val();
+				var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+				var disabled_items = $(this).attr('data-disabled');
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/sub_chapters_by_chapter',
+					data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+					success: function (return_data) {
+						$(".ajax-subchapter-dropdown").html(return_data);
+					}
 				});
-			</script>
-	@endpush
+			});
+			$(".ajax-category-courses").change();
+
+
+			//Filters
+
+			$(document).on('change', '.ajax-category-courses-filter', function () {
+				var category_id = $(this).val();
+				var course_id = $(this).attr('data-course_id');
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/courses_by_categories',
+					data: {'category_id': category_id, 'course_id': course_id},
+					success: function (return_data) {
+						$(".ajax-courses-dropdown-filter").html(return_data);
+						$(".ajax-chapter-dropdown-filter").html('<option value="">Please select year, subject</option>');
+						$('.ajax-courses-dropdown-filter').change();
+					}
+				});
+			});
+
+			$(document).on('change', '.ajax-courses-dropdown-filter', function () {
+				var course_id = $(this).val();
+				var chapter_id = $(this).attr('data-chapter_id');
+
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/chapters_by_course',
+					data: {'course_id': course_id, 'chapter_id': chapter_id},
+					success: function (return_data) {
+						$(".ajax-chapter-dropdown-filter").html(return_data);
+						$('.ajax-chapter-dropdown-filter').change();
+					}
+				});
+			});
+
+			$(document).on('change', '.ajax-chapter-dropdown-filter', function () {
+				var chapter_id = $(this).val();
+				var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+				var disabled_items = $(this).attr('data-disabled');
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/sub_chapters_by_chapter',
+					data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+					success: function (return_data) {
+						$(".ajax-subchapter-dropdown-filter").html(return_data);
+					}
+				});
+			});
+			$(".ajax-category-courses-filter").change();
+
+
+			$(document).on('change', '.conditional-field', function () {
+				$(".conditional-child-fields").hide();
+				var child_value = $(this).val();
+				var selectedOption = $(this).find('option:selected');
+				var child_class = selectedOption.attr('data-child');
+				$('.'+child_class).show();
+			});
+
+			$(".list_type").change();
+			$(document).on('change', '.list_sub_type', function () {
+				var quiz_type = $(this).val();
+				var list_type = $(".list_type").val();
+				$.ajax({
+					type: "GET",
+					url: '/admin/webinars/get_quiz_by_type',
+					data: {'quiz_type': quiz_type, 'list_type': list_type},
+					success: function (return_data) {
+						$(".quiz-list").html(return_data);
+					}
+				});
+			});
+			$(".list_sub_type").change();
+
+
+
+		});
+
+
+	</script>
+
+@endpush
