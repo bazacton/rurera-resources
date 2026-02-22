@@ -1,3 +1,158 @@
+<style>
+
+    .range-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .range-container .input-group {
+        display: flex;
+        gap: 0;
+        background: #D1D2E8;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .range-container .input-wrapper {
+        position: relative;
+        flex: 1;
+    }
+
+    .range-container .input-group::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: #333;
+        transform: translateX(-50%);
+    }
+
+    .range-container .range-input-text {
+        width: 180px;
+        height: 50px;
+        border: none;
+        background: transparent;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        color: #1D1E27;
+        outline: none;
+        padding: 0 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .range-container .range-input-text::-webkit-outer-spin-button,
+    .range-container .range-input-text::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .range-container .range-input-text::placeholder {
+        color: #666;
+    }
+
+    .range-container .unit-label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: #666;
+        font-weight: 300;
+        pointer-events: none;
+        right: 10px;
+    }
+
+    .range-container .thumbs {
+        display: grid;
+    }
+
+    .range-container .range {
+        --range-track-top: 10px;
+        --min-thumb-percent: 0;
+        --max-thumb-percent: 75;
+        --range-progress-w: calc(
+            (var(--max-thumb-percent) - var(--min-thumb-percent)) * 1%
+        );
+        --range-progress-left: calc(var(--min-thumb-percent) * 1%);
+
+        position: relative;
+        display: grid;
+        width: 400px;
+    }
+
+    .range-container .range-input {
+        width: 100%;
+        height: 30px;
+        grid-area: 1 / 1;
+        border-radius: 10px;
+        appearance: none;
+        background: none;
+        pointer-events: none;
+    }
+
+    .range-container .range-input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+        background-color: white;
+        transition: 300ms;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .range-container .range-input::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+        background-color: white;
+        transition: 300ms;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .range-container .range-input:hover::-webkit-slider-thumb,
+    .range-container .range-input:hover::-moz-range-thumb {
+        transform: scale(1.1);
+    }
+
+    .range-container .range-input:focus-visible,
+    .range-container .range-input:focus-visible::-webkit-slider-thumb,
+    .range-container .range-input:focus-visible::-moz-range-thumb {
+        outline-offset: 7px;
+        outline: 1px solid #c56fff;
+    }
+
+    .range-container .track {
+        position: absolute;
+        top: var(--range-track-top);
+        width: 100%;
+        height: 8px;
+        border-radius: 10px;
+        background-color: #ababab;
+        z-index: -1;
+    }
+
+    .progress {
+        position: absolute;
+        top: var(--range-track-top);
+        left: var(--range-progress-left);
+        width: var(--range-progress-w);
+        height: 8px;
+        border-radius: 10px;
+        background-color: white;
+        z-index: -1;
+    }
+</style>
 <div class="select-topics col-md-12 col-lg-12 ">
     <h3 class="font-16 font-weight-bold">Select Topics</h3>
     <div class="selected-topics rurera-hide" id="selectedTopics">
@@ -54,7 +209,71 @@
                         @endphp
                         <tr class="listing-data-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
                             <td data-th="Topic"> {{$parentObj->id}} <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label></td>
-                            <td><input class="form-control rurera-range-selector mock_practice_questions" type="text" readonly name="mock_practice_questions[{{$listingObj->id}}]" id="topics_parts-{{$listingObj->id}}" value="0">
+                            <td>
+
+                                <div class="range-container">
+                                    <div class="input-group">
+                                        <div class="input-wrapper">
+                                            <input
+                                                type="text"
+                                                class="range-input-text"
+                                                id="input-min-value"
+                                                pattern="[0-9]*"
+                                                inputmode="numeric"
+                                                value="0"
+                                                placeholder="0"
+                                            />
+                                            <span class="unit-label">FROM</span>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input
+                                                type="text"
+                                                class="range-input-text"
+                                                id="input-max-value"
+                                                pattern="[0-9]*"
+                                                inputmode="numeric"
+                                                value="0"
+                                                placeholder="0"
+                                            />
+                                            <span class="unit-label">TO</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="range">
+                                        <div class="track"></div>
+                                        <div class="progress"></div>
+                                        <div class="thumbs">
+                                            <input
+                                                class="range-input"
+                                                id="range-min-value"
+                                                name="mock_practice_questions[{{$listingObj->id}}][min]"
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                value="0"
+                                                step="1"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                                aria-orientation="horizontal"
+                                            />
+
+                                            <input
+                                                class="range-input"
+                                                id="range-max-value"
+                                                name="mock_practice_questions[{{$listingObj->id}}][max]"
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                value="0"
+                                                step="1"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                                aria-orientation="horizontal"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
                             </td>
                         </tr>
                     @endforeach

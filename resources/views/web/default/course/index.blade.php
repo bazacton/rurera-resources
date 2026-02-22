@@ -139,6 +139,8 @@
                                                         $chapter_slug = $chapter->chapter_slug;
                                                         $quizObj = isset($topicPartObj->partQuiz)? $topicPartObj->partQuiz : (object) array();
 
+                                                        $slug = isset($topicPartObj->slug)? $topicPartObj->slug : '';
+
                                                         $topicPerformData = Quiz::getQuizPercentage($quizObj->id, true);
                                                         $total_completion = isset($topicPerformData['topic_completion'])? $topicPerformData['topic_completion'] : 0;
                                                         $topic_accuracy = isset($topicPerformData['topic_accuracy'])? $topicPerformData['topic_accuracy'] : 0;
@@ -185,10 +187,10 @@
                                                                     <a href="javascript:;" data-topic_part_id="{{$topicPartObj->id}}" class="course-learn-btn" data-toggle="modal" data-target="#subchapter-notes-modal">Learn Concepts</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/practice-skills" class="course-practice-btn">Practice Skills</a>
+                                                                    <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$slug}}/practice-skills" class="course-practice-btn">Practice Skills</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$quizObj->quiz_slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
+                                                                    <a href="/{{$course->slug}}/{{$category_slug}}/{{$chapter_slug}}/{{$slug}}/skill-summary" class="course-progress-btn">Skill Summary</a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="javascript:;" class="debug-details-btn">Debug Details</a>
@@ -772,7 +774,7 @@
             </div>
         </div>
     </div> -->
-    
+
     <div class="modal fade subchapter-notes-modal" id="subchapter-notes-modal" tabindex="-1" role="dialog" aria-labelledby="fullscreenLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
