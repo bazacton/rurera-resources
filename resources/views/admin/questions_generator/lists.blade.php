@@ -19,6 +19,47 @@
 		.save-template {
 			float: right;
 		}
+
+
+		/* Customizing jQuery UI Slider to match Bootstrap/Purple Theme */
+		/* Using class .rurera-slider-ui instead of ID */
+		.rurera-slider-ui {
+			height: 8px;
+			background: #e9ecef; /* Bootstrap light gray */
+			border: none;
+			border-radius: 10px;
+		}
+
+		/* The colored bar between handles */
+		.rurera-slider-ui .ui-slider-range {
+			background: #5a67d8; /* Custom Purple/Blue */
+			border-radius: 10px;
+		}
+
+		/* The handles (circles) */
+		.rurera-slider-ui .ui-slider-handle {
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: #ffffff;
+			border: 3px solid #5a67d8;
+			top: -8px; /* Center vertically */
+			cursor: pointer;
+			outline: none;
+			box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+			transition: transform 0.2s, background-color 0.2s;
+			position:relative;
+		}
+
+		.rurera-slider-ui .ui-slider-handle:hover {
+			transform: scale(1.15);
+		}
+
+		.rurera-slider-ui .ui-slider-handle:active {
+			background: #5a67d8;
+			border-color: #fff;
+			transform: scale(1.2);
+		}
 	</style>
 	<style>
 		.table-container { margin-top: 20px; }
