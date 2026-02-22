@@ -2,433 +2,433 @@
 @extends('admin.layouts.app')
 
 @push('libraries_top')
-	<style>
-		.hide {
-			display: none;
-		}
+<style>
+    .hide {
+        display: none;
+    }
 
-		.defined-searches {
-			background: #efefef;
-			padding: 10px;
-		}
-		.defined-searches .apply-template-field {
-			margin-right: 10px;
-			display: inline-block;
-		}
+	.defined-searches {
+		background: #efefef;
+		padding: 10px;
+	}
+	.defined-searches .apply-template-field {
+		margin-right: 10px;
+		display: inline-block;
+	}
 
-		.save-template {
-			float: right;
-		}
+	.save-template {
+		float: right;
+	}
 
 
-		/* Customizing jQuery UI Slider to match Bootstrap/Purple Theme */
-		/* Using class .rurera-slider-ui instead of ID */
-		.rurera-slider-ui {
-			height: 8px;
-			background: #e9ecef; /* Bootstrap light gray */
-			border: none;
-			border-radius: 10px;
-		}
+    /* Customizing jQuery UI Slider to match Bootstrap/Purple Theme */
+    /* Using class .rurera-slider-ui instead of ID */
+    .rurera-slider-ui {
+        height: 8px;
+        background: #e9ecef; /* Bootstrap light gray */
+        border: none;
+        border-radius: 10px;
+    }
 
-		/* The colored bar between handles */
-		.rurera-slider-ui .ui-slider-range {
-			background: #5a67d8; /* Custom Purple/Blue */
-			border-radius: 10px;
-		}
+    /* The colored bar between handles */
+    .rurera-slider-ui .ui-slider-range {
+        background: #5a67d8; /* Custom Purple/Blue */
+        border-radius: 10px;
+    }
 
-		/* The handles (circles) */
-		.rurera-slider-ui .ui-slider-handle {
-			width: 22px;
-			height: 22px;
-			border-radius: 50%;
-			background: #ffffff;
-			border: 3px solid #5a67d8;
-			top: -8px; /* Center vertically */
-			cursor: pointer;
-			outline: none;
-			box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
-			transition: transform 0.2s, background-color 0.2s;
-			position:relative;
-		}
+    /* The handles (circles) */
+    .rurera-slider-ui .ui-slider-handle {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 3px solid #5a67d8;
+        top: -8px; /* Center vertically */
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s, background-color 0.2s;
+        position:relative;
+    }
 
-		.rurera-slider-ui .ui-slider-handle:hover {
-			transform: scale(1.15);
-		}
+    .rurera-slider-ui .ui-slider-handle:hover {
+        transform: scale(1.15);
+    }
 
-		.rurera-slider-ui .ui-slider-handle:active {
-			background: #5a67d8;
-			border-color: #fff;
-			transform: scale(1.2);
-		}
-	</style>
-	<style>
-		.table-container { margin-top: 20px; }
-		.dropdown-menu { padding: 15px; width: 300px; max-height: 400px; overflow-y: auto; }
-		.dropdown-menu h5 { margin-top: 10px; font-weight: bold; }
-		.search-input { width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
-		.toggle-switch { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-		.drag-handle { cursor: move; padding: 0 5px; color: #007bff; font-weight: bold; margin-right: 10px; }
-		.dropdown-toggle { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
-		.hidden-column { display: none; }
+    .rurera-slider-ui .ui-slider-handle:active {
+        background: #5a67d8;
+        border-color: #fff;
+        transform: scale(1.2);
+    }
+</style>
+<style>
+        .table-container { margin-top: 20px; }
+        .dropdown-menu { padding: 15px; width: 300px; max-height: 400px; overflow-y: auto; }
+        .dropdown-menu h5 { margin-top: 10px; font-weight: bold; }
+        .search-input { width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        .toggle-switch { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+        .drag-handle { cursor: move; padding: 0 5px; color: #007bff; font-weight: bold; margin-right: 10px; }
+        .dropdown-toggle { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .hidden-column { display: none; }
 		.conditional-child-fields{display:none;}
-	</style>
+    </style>
 @endpush
 
 @section('content')
-	<section class="section">
-		<div class="section-header">
-			<div class="heading-holder">
-				<h1>AI prompt</h1>
-				<div class="section-header-breadcrumb">
-					<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
-					</div>
-					<div class="breadcrumb-item">AI prompt</div>
+<section class="section">
+    <div class="section-header">
+        <div class="heading-holder">
+			<h1>AI prompt</h1>
+			<div class="section-header-breadcrumb">
+				<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
 				</div>
+				<div class="breadcrumb-item">AI prompt</div>
 			</div>
 		</div>
+    </div>
 
 
-		<div class="section-body">
+    <div class="section-body">
 
-			<section class="card">
-				<div class="card-body">
-					<form action="/admin/questions-generator" id="topic_parts_search_form" method="get" class="row mb-0">
+        <section class="card">
+            <div class="card-body">
+                <form action="/admin/questions-generator" id="topic_parts_search_form" method="get" class="row mb-0">
 
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="input-label">{{trans('admin/main.category')}}</label>
-								<div class="select-holder">
-									<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses-filter form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
-										<option value="">{{trans('admin/main.all_categories')}}</option>
-										@foreach($categories as $category)
-											@if(!empty($category->subCategories) and count($category->subCategories))
-												<optgroup label="{{  $category->title }}">
-													@foreach($category->subCategories as $subCategory)
-														<option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-													@endforeach
-												</optgroup>
-											@else
-												<option value="{{ $category->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-											@endif
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="input-label">{{trans('admin/main.category')}}</label>
+							<div class="select-holder">
+								<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses-filter form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
+									<option value="">{{trans('admin/main.all_categories')}}</option>
+									@foreach($categories as $category)
+									@if(!empty($category->subCategories) and count($category->subCategories))
+									<optgroup label="{{  $category->title }}">
+										@foreach($category->subCategories as $subCategory)
+										<option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
 										@endforeach
-									</select>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label>Subjects</label>
-								<select data-return_type="option"
-										data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'bulk_list_search')}}"
-										class="ajax-courses-dropdown-filter year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-										id="subject_id" name="subject_id">
-									<option disabled selected>Subject</option>
+									</optgroup>
+									@else
+									<option value="{{ $category->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+									@endif
+									@endforeach
 								</select>
-								@error('subject_id')
-								<div class="invalid-feedback">
-									{{ $message }}
-								</div>
-								@enderror
 							</div>
+
+                        </div>
+                    </div>
+
+					<div class="col-md-4">
+					<div class="form-group">
+						<label>Subjects</label>
+						<select data-return_type="option"
+								data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'bulk_list_search')}}"
+								class="ajax-courses-dropdown-filter year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+								id="subject_id" name="subject_id">
+							<option disabled selected>Subject</option>
+						</select>
+						@error('subject_id')
+						<div class="invalid-feedback">
+							{{ $message }}
+						</div>
+						@enderror
+					</div>
+					</div>
+
+
+					<div class="col-md-4">
+					<div class="form-group">
+						<label class="input-label">Topic</label>
+						<div class="select-holder">
+							<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'bulk_list_search')}}" id="chapter_id"
+									class="form-control populate ajax-chapter-dropdown-filter @error('chapter_id') is-invalid @enderror"
+									name="chapter_id">
+								<option value="">Please select year, subject</option>
+							</select>
 						</div>
 
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="input-label">Topic</label>
-								<div class="select-holder">
-									<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'bulk_list_search')}}" id="chapter_id"
-											class="form-control populate ajax-chapter-dropdown-filter @error('chapter_id') is-invalid @enderror"
-											name="chapter_id">
-										<option value="">Please select year, subject</option>
-									</select>
-								</div>
-
-								@error('chapter_id')
-								<div class="invalid-feedback">
-									{{ $message }}
-								</div>
-								@enderror
-
-							</div>
+						@error('chapter_id')
+						<div class="invalid-feedback">
+							{{ $message }}
 						</div>
+						@enderror
+
+					</div>
+					</div>
 
 
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="input-label">Sub Topic</label>
-								<div class="select-holder">
-									<select id="chapter_id"
-											class="form-control populate ajax-subchapter-dropdown-filter @error('sub_chapter_id') is-invalid @enderror"
-											name="sub_chapter_id">
-										<option value="">Please select year, subject, Topic</option>
-									</select>
-								</div>
-
-								@error('sub_chapter_id')
-								<div class="invalid-feedback">
-									{{ $message }}
-								</div>
-								@enderror
-
-
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="input-label">Sub Topic</label>
+							<div class="select-holder">
+								<select id="chapter_id"
+									class="form-control populate ajax-subchapter-dropdown-filter @error('sub_chapter_id') is-invalid @enderror"
+									name="sub_chapter_id">
+									<option value="">Please select year, subject, Topic</option>
+								</select>
 							</div>
-						</div>
 
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="input-label">Author</label>
-								<div class="select-holder">
-									<select name="user_id" data-search-option="display_name" class="form-control "
-											data-placeholder="Search author">
+						@error('sub_chapter_id')
+						<div class="invalid-feedback">
+							{{ $message }}
+						</div>
+						@enderror
+
+
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="input-label">Author</label>
+							<div class="select-holder">
+								<select name="user_id" data-search-option="display_name" class="form-control "
+										data-placeholder="Search author">
 
 										<option value="">Select Author</option>
-										@if(!empty($users_list) and $users_list->count() > 0)
-											@foreach($users_list as $userObj)
-												@php $checked = (get_filter_request('user_id', 'bulk_list_search') == $userObj->id)? 'selected' : ''; @endphp
-												<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
-											@endforeach
-										@endif
-									</select>
-								</div>
-
+									@if(!empty($users_list) and $users_list->count() > 0)
+										@foreach($users_list as $userObj)
+											@php $checked = (get_filter_request('user_id', 'bulk_list_search') == $userObj->id)? 'selected' : ''; @endphp
+											<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
+										@endforeach
+									@endif
+								</select>
 							</div>
-						</div>
-
-
-						<div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-							<button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
 
 						</div>
-					</form>
-				</div>
-				@php $saved_templates = $user->saved_templates;
+					</div>
+
+
+                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                        <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
+
+                    </div>
+                </form>
+            </div>
+			@php $saved_templates = $user->saved_templates;
 			$saved_templates = json_decode( $saved_templates );
 			$saved_templates = isset( $saved_templates->bulk_list_search )? $saved_templates->bulk_list_search : array();
-				@endphp
-				<div class="defined-searches mt-20" style="display:none">
-					<span><strong>Defined Searches:</strong></span>
-					@if( !empty( $saved_templates ) )
-						@foreach( $saved_templates  as $template_name => $template_data)
-							@php $template_array = json_decode($template_data);
+			@endphp
+			<div class="defined-searches mt-20" style="display:none">
+			<span><strong>Defined Searches:</strong></span>
+				@if( !empty( $saved_templates ) )
+					@foreach( $saved_templates  as $template_name => $template_data)
+						@php $template_array = json_decode($template_data);
 						$url_params = '<span>'.$template_name.'</span>';
 						if( isset( $template_array->url_params )){
 							$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
 						}
-							@endphp
-							<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
-						@endforeach
-					@endif
-					<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
-				</div>
-			</section>
+						@endphp
+						<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
+					@endforeach
+				@endif
+				<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
+			</div>
+        </section>
 
-			<div class="row">
-				<div class="col-12 col-md-12">
-					<div class="card">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="card">
 
-						<div class="card-header">
-							<div class="columns-settings">
-								<div class="dropdown">
-									<button class="dropdown-toggle" type="button" data-toggle="dropdown">
-										<img src="/assets/default/svgs/grid-plus.svg">
-									</button>
-									<div class="dropdown-menu">
-										<input type="text" class="search-input" id="searchInput" placeholder="Search by item..." onkeyup="filterColumns()">
+					<div class="card-header">
+						<div class="columns-settings">
+							<div class="dropdown">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+									<img src="/assets/default/svgs/grid-plus.svg">
+								</button>
+								<div class="dropdown-menu">
+									<input type="text" class="search-input" id="searchInput" placeholder="Search by item..." onkeyup="filterColumns()">
 
-										<h5>Shown Attributes</h5>
-										<ul id="shownAttributes" class="column-list"></ul>
+									<h5>Shown Attributes</h5>
+									<ul id="shownAttributes" class="column-list"></ul>
 
-										<h5>Hidden Attributes</h5>
-										<ul id="hiddenAttributes" class="column-list"></ul>
+									<h5>Hidden Attributes</h5>
+									<ul id="hiddenAttributes" class="column-list"></ul>
 
-										<button class="btn btn-secondary w-100 mt-3" onclick="restoreDefault()">Restore Default</button>
-										<button class="btn btn-primary w-100 mt-2" onclick="saveChanges()">Save Changes</button>
-									</div>
+									<button class="btn btn-secondary w-100 mt-3" onclick="restoreDefault()">Restore Default</button>
+									<button class="btn btn-primary w-100 mt-2" onclick="saveChanges()">Save Changes</button>
 								</div>
-
 							</div>
-							@can('admin_topic_parts_create')
-								<div class="text-right">
-									<a href="javascript:;" class="create-questions-bulk-list-btn btn btn-primary">Create Question Bulk List</a>
-								</div>
-							@endcan
+
 						</div>
+						@can('admin_topic_parts_create')
+							<div class="text-right">
+								<a href="javascript:;" class="create-questions-bulk-list-btn btn btn-primary">Create Question Bulk List</a>
+							</div>
+						@endcan
+                    </div>
 
-						<div class="card-body">
-							<div class="table-responsive">
-								<table class="table table-striped font-14" id="myTable">
-									<tr id="tableHeader">
-										<th class="text-left">Category</th>
-										<th class="text-left">Type</th>
-										<th class="text-left">Generated / Waiting / Rejected</th>
-										<th class="text-left">Added by</th>
-										<th class="text-left">Added Date</th>
-										<th>{{ trans('admin/main.actions') }}</th>
-									</tr>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped font-14" id="myTable">
+                                <tr id="tableHeader">
+                                    <th class="text-left">Category</th>
+                                    <th class="text-left">Type</th>
+									<th class="text-left">Generated / Waiting / Rejected</th>
+                                    <th class="text-left">Added by</th>
+                                    <th class="text-left">Added Date</th>
+                                    <th>{{ trans('admin/main.actions') }}</th>
+                                </tr>
 
-									@foreach($QuestionsBulkLists as $QuestionsBulkListObj)
+                                @foreach($QuestionsBulkLists as $QuestionsBulkListObj)
 
-										<tr>
-											<td data-id="category" class="text-left">{{ (isset($QuestionsBulkListObj->category->id))? $QuestionsBulkListObj->category->getTitleAttribute() : '-' }}
-												<br>
-												<small>
-													{{ (isset($QuestionsBulkListObj->subject->id))? $QuestionsBulkListObj->subject->getTitleAttribute() : '-' }} /
-													{{ (isset($QuestionsBulkListObj->chapter->id))? $QuestionsBulkListObj->chapter->getTitleAttribute() : '-' }} /
-													{{ (isset($QuestionsBulkListObj->subChapter->id))? $QuestionsBulkListObj->subChapter->sub_chapter_title : '-' }}
-												</small>
-											</td>
-											<td class="text-left" data-id="list_type">{{ $QuestionsBulkListObj->list_type }}</td>
-											<td class="text-left" data-id="generated_questions">{{ $QuestionsBulkListObj->generated_questions }} / {{ $QuestionsBulkListObj->waiting_questions }} / {{ $QuestionsBulkListObj->rejected_questions }}</td>
-											<td class="text-left" data-id="user">{{ $QuestionsBulkListObj->user->get_full_name() }}</td>
-											<td class="text-left" data-id="created_at">{{ dateTimeFormat($QuestionsBulkListObj->created_at, 'j M y | H:i') }}</td>
-											<td data-id="action">
-												@can('admin_topic_parts_edit')
-													@if($QuestionsBulkListObj->status == 'active')
+                                <tr>
+									<td data-id="category" class="text-left">{{ (isset($QuestionsBulkListObj->category->id))? $QuestionsBulkListObj->category->getTitleAttribute() : '-' }}
+									<br>
+										<small>
+										{{ (isset($QuestionsBulkListObj->subject->id))? $QuestionsBulkListObj->subject->getTitleAttribute() : '-' }} /
+										{{ (isset($QuestionsBulkListObj->chapter->id))? $QuestionsBulkListObj->chapter->getTitleAttribute() : '-' }} /
+										{{ (isset($QuestionsBulkListObj->subChapter->id))? $QuestionsBulkListObj->subChapter->sub_chapter_title : '-' }}
+										</small>
+									</td>
+									<td class="text-left" data-id="list_type">{{ $QuestionsBulkListObj->list_type }}</td>
+									<td class="text-left" data-id="generated_questions">{{ $QuestionsBulkListObj->generated_questions }} / {{ $QuestionsBulkListObj->waiting_questions }} / {{ $QuestionsBulkListObj->rejected_questions }}</td>
+                                    <td class="text-left" data-id="user">{{ $QuestionsBulkListObj->user->get_full_name() }}</td>
+                                    <td class="text-left" data-id="created_at">{{ dateTimeFormat($QuestionsBulkListObj->created_at, 'j M y | H:i') }}</td>
+                                    <td data-id="action">
+                                        @can('admin_topic_parts_edit')
+										@if($QuestionsBulkListObj->status == 'active')
 
-														<a href="/admin/questions-generator/add-prompt/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Prompt">
-															<i class="fas fa-plus-circle"></i>
-														</a>&nbsp;&nbsp;&nbsp;
-														<a href="/admin/questions-generator/add-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Import Questions">
-															<i class="fas fa-download"></i>
-														</a>&nbsp;&nbsp;&nbsp;
+											<a href="/admin/questions-generator/add-prompt/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Prompt">
+												<i class="fas fa-plus-circle"></i>
+											</a>&nbsp;&nbsp;&nbsp;
+											<a href="/admin/questions-generator/add-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Import Questions">
+												<i class="fas fa-download"></i>
+											</a>&nbsp;&nbsp;&nbsp;
 
-														<a href="/admin/questions-generator/view-api-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Questions List">
-															<i class="fas fa-sitemap"></i>
-														</a>
+												<a href="/admin/questions-generator/view-api-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Questions List">
+													<i class="fas fa-sitemap"></i>
+												</a>
 
-													@endif
-												@endcan
-											</td>
-										</tr>
+										@endif
+                                        @endcan
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        {{ $QuestionsBulkLists->links() }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="template_save_modal" class="template_save_modal modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content edit-quest-modal-div">
+            <div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			  <div class="modal-box">
+				<h3 class="font-20 font-weight-bold text-dark mb-10">Save Form</h3>
+				<p class="mb-15 font-16">
+					<input type="text" name="template_name" class="template_name form-control">
+				</p>
+				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
+				<input type="hidden" name="template_type" class="template_type">
+				<input type="hidden" name="form_id" class="form_id">
+
+				<div class="inactivity-controls">
+					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Form</a>
+					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+				</div>
+			  </div>
+			</div>
+        </div>
+    </div>
+</div>
+
+
+<div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content edit-quest-modal-div">
+            <div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			  <div class="modal-box">
+			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
+				@csrf
+
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+					<div class="row">
+						<div class="col-md-12 col-lg-12">
+							<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
+						</div>
+						<div class="col-md-12 col-lg-12">
+                            <div class="form-group mt-15 ">
+                                <label class="input-label d-block">Auto Generated Questions</label>
+                                <select name="mock_type"
+                                        class="form-control conditional_field_parent" data-placeholder="Select Type">
+                                    <option data-target_common_class="practice_type_fields" data-target_field_class="mock_practice_fields" value="mock_practice">Yes</option>
+                                    <option data-target_common_class="practice_type_fields" data-target_field_class="" value="mock_exam">No</option>
+                                </select>
+                            </div>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Exam Category</label>
+								<select name="list_sub_type" data-plugin-selectTwo class="form-control populate list_sub_type ">
+									<option value="sats">Sats</option>
+									<option value="11plus">11plus</option>
+									<option value="independent_exams">Independent Exams</option>
+									<option value="iseb">Iseb</option>
+									<option value="cat4">Cat 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12 ">
+							<div class="form-group">
+								<label class="input-label">{{trans('admin/main.category')}}</label>
+								<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+									<option value="">{{trans('admin/main.all_categories')}}</option>
+									@foreach($categories as $category)
+									@if(!empty($category->subCategories) and count($category->subCategories))
+									<optgroup label="{{  $category->title }}">
+										@foreach($category->subCategories as $subCategory)
+										<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+										@endforeach
+									</optgroup>
+									@else
+									<option value="{{ $category->id }}">{{ $category->title }}</option>
+									@endif
 									@endforeach
-
-								</table>
+								</select>
 							</div>
 						</div>
+                        <div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
 
-						<div class="card-footer text-center">
-							{{ $QuestionsBulkLists->links() }}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div id="template_save_modal" class="template_save_modal modal fade" role="dialog" data-backdrop="static">
-		<div class="modal-dialog">
-			<div class="modal-content edit-quest-modal-div">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<div class="modal-box">
-						<h3 class="font-20 font-weight-bold text-dark mb-10">Save Form</h3>
-						<p class="mb-15 font-16">
-							<input type="text" name="template_name" class="template_name form-control">
-						</p>
-						<input type="hidden" name="form_data_encoded" class="form_data_encoded">
-						<input type="hidden" name="template_type" class="template_type">
-						<input type="hidden" name="form_id" class="form_id">
-
-						<div class="inactivity-controls">
-							<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Form</a>
-							<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        </div>
 
 
-	<div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
-		<div class="modal-dialog modal-xl">
-			<div class="modal-content edit-quest-modal-div">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<div class="modal-box">
-						<form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
-							@csrf
-
-							<div class="row">
-								<div class="col-md-12 col-lg-12">
-									<div class="row">
-										<div class="col-md-12 col-lg-12">
-											<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
-										</div>
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Auto Generated Questions</label>
-												<select name="mock_type"
-														class="form-control conditional_field_parent" data-placeholder="Select Type">
-													<option data-target_common_class="practice_type_fields" data-target_field_class="mock_practice_fields" value="mock_practice">Yes</option>
-													<option data-target_common_class="practice_type_fields" data-target_field_class="" value="mock_exam">No</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group">
-												<label class="input-label">Exam Category</label>
-												<select name="list_sub_type" data-plugin-selectTwo class="form-control populate list_sub_type ">
-													<option value="sats">Sats</option>
-													<option value="11plus">11plus</option>
-													<option value="independent_exams">Independent Exams</option>
-													<option value="iseb">Iseb</option>
-													<option value="cat4">Cat 4</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-12 col-lg-12 ">
-											<div class="form-group">
-												<label class="input-label">{{trans('admin/main.category')}}</label>
-												<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-													<option value="">{{trans('admin/main.all_categories')}}</option>
-													@foreach($categories as $category)
-														@if(!empty($category->subCategories) and count($category->subCategories))
-															<optgroup label="{{  $category->title }}">
-																@foreach($category->subCategories as $subCategory)
-																	<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-																@endforeach
-															</optgroup>
-														@else
-															<option value="{{ $category->id }}">{{ $category->title }}</option>
-														@endif
-													@endforeach
-												</select>
-											</div>
-										</div>
-										<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
-
-										</div>
+                        <div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
 
 
-										<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="form-group mt-15 ">
+                                <label class="input-label d-block">Quiz Title</label>
+                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
+                            </div>
+                        </div>
 
-
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Quiz Title</label>
-												<input type="text" name="quiz_title" class="form-control rurera-req-field">
-											</div>
-										</div>
-
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group">
-												<label class="input-label">Quiz Image</label>
-												<div class="input-group">
-													<div class="input-group-prepend">
-														<button
-																type="button"
-																class="input-group-text rurera-file-manager"
-																data-input="image"
-																data-preview="preview_img-image"
-																data-image_attr='{
+                        <div class="col-md-12 col-lg-12">
+                        <div class="form-group">
+                            <label class="input-label">Quiz Image</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button
+                                        type="button"
+                                        class="input-group-text rurera-file-manager"
+                                        data-input="image"
+                                        data-preview="preview_img-image"
+                                        data-image_attr='{
                                                                     "upload_type":"gallery",
                                                                     "upload_dir":"public",
                                                                     "upload_path":"/quiz",
@@ -437,569 +437,691 @@
                                                                     "hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
                                                                     "field_name":"quiz_image"
                                                                 }'
-																data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-														>
-															<i class="fa fa-upload"></i>
-														</button>
-														<div class="preview_img-image">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+                                        data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+                                    >
+                                        <i class="fa fa-upload"></i>
+                                    </button>
+                                    <div class="preview_img-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
 
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Quiz Slug</label>
-												<input type="text" name="quiz_slug" class="form-control">
-											</div>
-										</div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="form-group mt-15 ">
+                                <label class="input-label d-block">Quiz Slug</label>
+                                <input type="text" name="quiz_slug" class="form-control">
+                            </div>
+                        </div>
 
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group mt-15 ">
-												<label class="input-label d-block">Total Time (Minutes)</label>
-												<input type="number" name="total_time" class="form-control rurera-req-field">
-											</div>
-										</div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="form-group mt-15 ">
+                                <label class="input-label d-block">Total Time (Minutes)</label>
+                                <input type="number" name="total_time" class="form-control rurera-req-field">
+                            </div>
+                        </div>
 
-										<div class="col-md-12 col-lg-12 no_of_questions_field">
-											<div class="form-group mt-15">
+                        <div class="col-md-12 col-lg-12 no_of_questions_field">
+                            <div class="form-group mt-15">
 
-												<div class="question-range-info text-muted mb-1"></div>
+                                <div class="question-range-info text-muted mb-1"></div>
 
-												<label class="input-label d-block">No of Questions</label>
-												<input type="number" name="no_of_questions" class="form-control rurera-req-field">
+                                <label class="input-label d-block">No of Questions</label>
+                                <input type="number" name="no_of_questions" class="form-control rurera-req-field">
 
-												<div class="question-error text-danger mt-1" style="display:none;"></div>
+                                <div class="question-error text-danger mt-1" style="display:none;"></div>
 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="inactivity-controls">
-									<button type="submit" class="submit-btn mt-0">Generate List</button>
-									<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
-								</div>
-								<form>
-							</div>
+                            </div>
+                        </div>
 					</div>
 				</div>
+				<div class="inactivity-controls">
+					<button type="submit" class="submit-btn mt-0">Generate List</button>
+					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+				</div>
+				<form>
+			  </div>
 			</div>
-		</div>
-		@endsection
+        </div>
+    </div>
+</div>
+@endsection
 
-		@push('scripts_bottom')
-
-
-			<script>
-				$(document).ready(function () {
-
-					$(document).on('change', '.mock-practice-data', function () {
-						var course_id = $(this).val();
-						var chapter_id = $(this).attr('data-chapter_id');
-						var category_id = $(".ajax-category-courses").val();
-						var quiz_id = 0;
-
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/mock_practice_data',
-							data: {'subject_id': course_id, 'category_id': category_id, 'quiz_id': quiz_id},
-							success: function (return_data) {
-								$(".mock-practice-data-block").html(return_data);
-							}
-						});
-					});
+@push('scripts_bottom')
 
 
-					$(document).on('input change', '.rurera-req-field', function() {
-						var thisForm = $('.generate-bulk-list-form');
-						rurera_validation_process(thisForm);
-					});
-					$(document).on('submit', '.generate-bulk-list-form', function() {
-						var thisForm = $(this);
-						returnType = rurera_validation_process(thisForm);
-						if (returnType == false) {
-							return false;
-						}
+<script>
+	$(document).ready(function () {
+
+        $(document).on('change', '.mock-practice-data', function () {
+            var course_id = $(this).val();
+            var chapter_id = $(this).attr('data-chapter_id');
+            var category_id = $(".ajax-category-courses").val();
+            var quiz_id = 0;
+
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/mock_practice_data',
+                data: {'subject_id': course_id, 'category_id': category_id, 'quiz_id': quiz_id},
+                success: function (return_data) {
+                    $(".mock-practice-data-block").html(return_data);
+                }
+            });
+        });
 
 
-						var quiz_id = $(".quiz_id").val();
-						console.log(quiz_id);
-						if(quiz_id > 0){
-							return true;
-						}else{
-							returnType = rurera_validation_process(thisForm);
-							if (returnType == false) {
-								return false;
-							}
-						}
-						return true;
+        $(document).on('input change', '.rurera-req-field1', function() {
+            var thisForm = $('.generate-bulk-list-form');
+            rurera_validation_process(thisForm);
+        });
+		$(document).on('submit', '.generate-bulk-list-form', function() {
+			var thisForm = $(this);
+            returnType = rurera_validation_process(thisForm);
+            if (returnType == false) {
+                return false;
+            }
 
-					});
 
-					const defaultColumns = [
-						{ id: 'category', text: 'Category', visible: true },
-						{ id: 'list_type', text: 'Type', visible: true },
-						{ id: 'generated_questions', text: 'Generated / Waiting / Rejected', visible: true },
-						{ id: 'user', text: 'Added by', visible: true },
-						{ id: 'created_at', text: 'Added Date', visible: true },
-						{ id: 'action', text: 'Action', visible: true }
-					];
+			var quiz_id = $(".quiz_id").val();
+			console.log(quiz_id);
+			if(quiz_id > 0){
+				return true;
+			}else{
+				returnType = rurera_validation_process(thisForm);
+				if (returnType == false) {
+					return false;
+				}
+			}
+			return true;
 
-					let columns = $.extend(true, [], defaultColumns); // Deep copy of default columns
-					const $shownAttributes = $('#shownAttributes');
-					const $hiddenAttributes = $('#hiddenAttributes');
-					const $tableHeader = $('#tableHeader');
-					const $searchInput = $('#searchInput');
-					let currentOrder = columns.map(col => col.id);
+		});
 
-					function renderTableHeaders() {
-						$tableHeader.empty();
-						columns.forEach(col => {
-							const $th = $('<th>').text(col.text).data('id', col.id);
-							$th.toggleClass('hidden-column', !col.visible);
-							$tableHeader.append($th);
-						});
+		const defaultColumns = [
+			{ id: 'category', text: 'Category', visible: true },
+			{ id: 'list_type', text: 'Type', visible: true },
+			{ id: 'generated_questions', text: 'Generated / Waiting / Rejected', visible: true },
+			{ id: 'user', text: 'Added by', visible: true },
+			{ id: 'created_at', text: 'Added Date', visible: true },
+			{ id: 'action', text: 'Action', visible: true }
+		];
 
-						$('#myTable tbody tr').each(function () {
-							$(this).children().each(function (index) {
-								$(this).toggleClass('hidden-column', !columns[index].visible);
-							});
-						});
-					}
+		let columns = $.extend(true, [], defaultColumns); // Deep copy of default columns
+		const $shownAttributes = $('#shownAttributes');
+		const $hiddenAttributes = $('#hiddenAttributes');
+		const $tableHeader = $('#tableHeader');
+		const $searchInput = $('#searchInput');
+		let currentOrder = columns.map(col => col.id);
 
-					function renderColumnLists() {
-						$shownAttributes.empty();
-						$hiddenAttributes.empty();
+		function renderTableHeaders() {
+			$tableHeader.empty();
+			columns.forEach(col => {
+				const $th = $('<th>').text(col.text).data('id', col.id);
+				$th.toggleClass('hidden-column', !col.visible);
+				$tableHeader.append($th);
+			});
 
-						columns.forEach(col => {
-							const $li = $('<li>').addClass('toggle-switch').data('id', col.id).attr('draggable', true);
-							const $label = $('<span>').text(col.text);
-							const $toggle = $('<input>').attr('type', 'checkbox').prop('checked', col.visible);
-							const $dragHandle = $('<span>').text('☰').addClass('drag-handle');
+			$('#myTable tbody tr').each(function () {
+				$(this).children().each(function (index) {
+					$(this).toggleClass('hidden-column', !columns[index].visible);
+				});
+			});
+		}
 
-							$toggle.change(() => toggleColumnVisibility(col.id));
-							$li.append($dragHandle, $label, $toggle);
+		function renderColumnLists() {
+			$shownAttributes.empty();
+			$hiddenAttributes.empty();
 
-							if (col.visible) {
-								$shownAttributes.append($li);
-							} else {
-								$hiddenAttributes.append($li);
-							}
+			columns.forEach(col => {
+				const $li = $('<li>').addClass('toggle-switch').data('id', col.id).attr('draggable', true);
+				const $label = $('<span>').text(col.text);
+				const $toggle = $('<input>').attr('type', 'checkbox').prop('checked', col.visible);
+				const $dragHandle = $('<span>').text('☰').addClass('drag-handle');
 
-							$li.on('dragstart', handleDragStart)
-									.on('dragover', handleDragOver)
-									.on('drop', handleDrop)
-									.on('dragend', handleDragEnd);
-						});
-					}
+				$toggle.change(() => toggleColumnVisibility(col.id));
+				$li.append($dragHandle, $label, $toggle);
 
-					let draggedItem = null;
+				if (col.visible) {
+					$shownAttributes.append($li);
+				} else {
+					$hiddenAttributes.append($li);
+				}
 
-					function handleDragStart(event) {
-						draggedItem = $(event.target);
-						event.originalEvent.dataTransfer.effectAllowed = 'move';
-						setTimeout(() => draggedItem.addClass('dragging'), 0);
-					}
+				$li.on('dragstart', handleDragStart)
+					.on('dragover', handleDragOver)
+					.on('drop', handleDrop)
+					.on('dragend', handleDragEnd);
+			});
+		}
 
-					function handleDragOver(event) {
-						event.preventDefault();
-						const $target = $(event.target).closest('li');
-						if ($target.length && $target[0] !== draggedItem[0]) {
-							const bounding = $target[0].getBoundingClientRect();
-							const offset = event.originalEvent.clientY - bounding.top;
-							if (offset > bounding.height / 2) {
-								$target.after(draggedItem);
-							} else {
-								$target.before(draggedItem);
-							}
-						}
-					}
+		let draggedItem = null;
 
-					function handleDrop(event) {
-						event.preventDefault();
-						draggedItem.removeClass('dragging');
-						updateCurrentOrder();
-						renderTableHeaders();
-					}
+		function handleDragStart(event) {
+			draggedItem = $(event.target);
+			event.originalEvent.dataTransfer.effectAllowed = 'move';
+			setTimeout(() => draggedItem.addClass('dragging'), 0);
+		}
 
-					function handleDragEnd() {
-						draggedItem = null;
-					}
+		function handleDragOver(event) {
+			event.preventDefault();
+			const $target = $(event.target).closest('li');
+			if ($target.length && $target[0] !== draggedItem[0]) {
+				const bounding = $target[0].getBoundingClientRect();
+				const offset = event.originalEvent.clientY - bounding.top;
+				if (offset > bounding.height / 2) {
+					$target.after(draggedItem);
+				} else {
+					$target.before(draggedItem);
+				}
+			}
+		}
 
-					function toggleColumnVisibility(id) {
-						const col = columns.find(col => col.id === id);
-						col.visible = !col.visible;
-						renderTableHeaders();
-						renderColumnLists();
-					}
+		function handleDrop(event) {
+			event.preventDefault();
+			draggedItem.removeClass('dragging');
+			updateCurrentOrder();
+			renderTableHeaders();
+		}
 
-					function updateCurrentOrder() {
-						currentOrder = $shownAttributes.children('li').map((_, li) => $(li).data('id')).get();
-						columns.sort((a, b) => currentOrder.indexOf(a.id) - currentOrder.indexOf(b.id));
-					}
+		function handleDragEnd() {
+			draggedItem = null;
+		}
 
-					function filterColumns() {
-						const filter = $searchInput.val().toLowerCase();
-						columns.forEach(col => {
-							const $li = $(`li[data-id="${col.id}"]`);
-							if (col.text.toLowerCase().includes(filter)) {
-								$li.show();
-							} else {
-								$li.hide();
-							}
-						});
-					}
+		function toggleColumnVisibility(id) {
+			const col = columns.find(col => col.id === id);
+			col.visible = !col.visible;
+			renderTableHeaders();
+			renderColumnLists();
+		}
 
-					function restoreDefault() {
-						columns = $.extend(true, [], defaultColumns); // Reset to default columns
-						currentOrder = defaultColumns.map(col => col.id); // Reset to default order
-						renderTableHeaders();
-						renderColumnLists();
+		function updateCurrentOrder() {
+			currentOrder = $shownAttributes.children('li').map((_, li) => $(li).data('id')).get();
+			columns.sort((a, b) => currentOrder.indexOf(a.id) - currentOrder.indexOf(b.id));
+		}
 
-						const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
-						const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
-						$('#output').html(`
+		function filterColumns() {
+			const filter = $searchInput.val().toLowerCase();
+			columns.forEach(col => {
+				const $li = $(`li[data-id="${col.id}"]`);
+				if (col.text.toLowerCase().includes(filter)) {
+					$li.show();
+				} else {
+					$li.hide();
+				}
+			});
+		}
+
+		function restoreDefault() {
+			columns = $.extend(true, [], defaultColumns); // Reset to default columns
+			currentOrder = defaultColumns.map(col => col.id); // Reset to default order
+			renderTableHeaders();
+			renderColumnLists();
+
+			const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
+			const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
+			$('#output').html(`
 				<p>Visible Columns (Default): ${visibleColumns.join(', ')}</p>
 				<p>Hidden Columns (Default): ${hiddenColumns.join(', ')}</p>
 				<p>Current Order (Default): ${currentOrder.join(', ')}</p>
 			`);
-					}
+		}
 
-					function saveChanges() {
-						const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
-						const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
-						$('#output').html(`
+		function saveChanges() {
+			const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
+			const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
+			$('#output').html(`
 				<p>Visible Columns: ${visibleColumns.join(', ')}</p>
 				<p>Hidden Columns: ${hiddenColumns.join(', ')}</p>
 				<p>Current Order: ${currentOrder.join(', ')}</p>
 			`);
-					}
+		}
 
-					$searchInput.on('input', filterColumns);
-					$('#restoreDefault').on('click', restoreDefault);
-					$('#saveChanges').on('click', saveChanges);
+		$searchInput.on('input', filterColumns);
+		$('#restoreDefault').on('click', restoreDefault);
+		$('#saveChanges').on('click', saveChanges);
 
-					renderTableHeaders();
-					renderColumnLists();
-
-
+		renderTableHeaders();
+		renderColumnLists();
 
 
 
 
-					function calculateTotalRange() {
-						let totalMin = 0;
-						let totalMax = 0;
 
-						$('.mock_practice_questions').each(function () {
-							let value = $(this).val().trim();
 
-							if (value !== '') {
+        function calculateTotalRange() {
+            let totalMin = 0;
+            let totalMax = 0;
 
-								if (value.indexOf('-') !== -1) {
-									let parts = value.split('-');
-									let min = parseInt(parts[0]) || 0;
-									let max = parseInt(parts[1]) || 0;
+            $('.mock_practice_questions').each(function () {
+                let value = $(this).val().trim();
 
-									totalMin += min;
-									totalMax += max;
-								} else {
-									let number = parseInt(value) || 0;
-									totalMin += number;
-									totalMax += number;
-								}
-							}
-						});
+                if (value !== '') {
 
-						return { min: totalMin, max: totalMax };
-					}
+                    if (value.indexOf('-') !== -1) {
+                        let parts = value.split('-');
+                        let min = parseInt(parts[0]) || 0;
+                        let max = parseInt(parts[1]) || 0;
+
+                        totalMin += min;
+                        totalMax += max;
+                    } else {
+                        let number = parseInt(value) || 0;
+                        totalMin += number;
+                        totalMax += number;
+                    }
+                }
+            });
+
+            return { min: totalMin, max: totalMax };
+        }
 
 
 // Show min/max info dynamically
-					function updateRangeInfo() {
-						let totals = calculateTotalRange();
+        function updateRangeInfo() {
+            let totals = calculateTotalRange();
 
-						$('.question-range-info').html(
-								"Allowed range: <strong>" + totals.min + "</strong> to <strong>" + totals.max + "</strong> questions"
-						);
-					}
+            $('.question-range-info').html(
+                "Allowed range: <strong>" + totals.min + "</strong> to <strong>" + totals.max + "</strong> questions"
+            );
+        }
 
 
 // Validate only on blur (NOT while typing)
-					$('input[name="no_of_questions"]').on('blur', function () {
+        $('input[name="no_of_questions"]').on('blur', function () {
 
-						let totals = calculateTotalRange();
-						let enteredValue = parseInt($(this).val());
+            let totals = calculateTotalRange();
+            let enteredValue = parseInt($(this).val());
 
-						$('.question-error').hide();
+            $('.question-error').hide();
 
-						if (!enteredValue) return;
+            if (!enteredValue) return;
 
-						if (enteredValue < totals.min) {
-							$('.question-error')
-									.text("Minimum allowed questions is " + totals.min)
-									.show();
-						}
+            if (enteredValue < totals.min) {
+                $('.question-error')
+                    .text("Minimum allowed questions is " + totals.min)
+                    .show();
+            }
 
-						if (enteredValue > totals.max) {
-							$('.question-error')
-									.text("Maximum allowed questions is " + totals.max)
-									.show();
-						}
-					});
+            if (enteredValue > totals.max) {
+                $('.question-error')
+                    .text("Maximum allowed questions is " + totals.max)
+                    .show();
+            }
+        });
 
-				});
+	});
 
-			</script>
-			<script type="text/javascript">
+</script>
+<script type="text/javascript">
 
-				$(document).ready(function () {
-
-
-
-					$(document).on('click', '.create-questions-bulk-list-btn', function () {
-						$(".questions_bulk_list").modal('show');
-					});
-
-					$(document).on('change', '.ajax-category-courses', function () {
-						var category_id = $(this).val();
-						var course_id = $(this).attr('data-course_id');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/courses_by_categories_list',
-							data: {'category_id': category_id, 'course_id': course_id},
-							success: function (return_data) {
-								$(".subjects-listing-data").html(return_data);
-							}
-						});
-					});
-
-					$('body').on('change', '.assignment_subject_check', function (e) {
-						var subject_id = $(this).val();
-						var category_id = $('.ajax-category-courses').val();
-						var thisObj = $(this);
-						rurera_loader($(".practice-quiz-topics-list"), 'div');
-						jQuery.ajax({
-							type: "GET",
-							url: '/admin/common/topics_subtopics_by_subject',
-							headers: {
-								'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-							},
-							data: {"subject_id": subject_id, 'category_id': category_id},
-							success: function (return_data) {
-								rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
-								$(".practice-quiz-topics-list").html(return_data);
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-courses-dropdown', function () {
-						var course_id = $(this).val();
-						var chapter_id = $(this).attr('data-chapter_id');
-
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/chapters_by_course',
-							data: {'course_id': course_id, 'chapter_id': chapter_id},
-							success: function (return_data) {
-								$(".ajax-chapter-dropdown").html(return_data);
-								$('.ajax-chapter-dropdown').change();
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-chapter-dropdown', function () {
-						var chapter_id = $(this).val();
-						var sub_chapter_id = $(this).attr('data-sub_chapter_id');
-						var disabled_items = $(this).attr('data-disabled');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/sub_chapters_by_chapter',
-							data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
-							success: function (return_data) {
-								$(".ajax-subchapter-dropdown").html(return_data);
-							}
-						});
-					});
-					$(".ajax-category-courses").change();
-
-
-					//Filters
-
-					$(document).on('change', '.ajax-category-courses-filter', function () {
-						var category_id = $(this).val();
-						var course_id = $(this).attr('data-course_id');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/courses_by_categories',
-							data: {'category_id': category_id, 'course_id': course_id},
-							success: function (return_data) {
-								$(".ajax-courses-dropdown-filter").html(return_data);
-								$(".ajax-chapter-dropdown-filter").html('<option value="">Please select year, subject</option>');
-								$('.ajax-courses-dropdown-filter').change();
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-courses-dropdown-filter', function () {
-						var course_id = $(this).val();
-						var chapter_id = $(this).attr('data-chapter_id');
-
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/chapters_by_course',
-							data: {'course_id': course_id, 'chapter_id': chapter_id},
-							success: function (return_data) {
-								$(".ajax-chapter-dropdown-filter").html(return_data);
-								$('.ajax-chapter-dropdown-filter').change();
-							}
-						});
-					});
-
-					$(document).on('change', '.ajax-chapter-dropdown-filter', function () {
-						var chapter_id = $(this).val();
-						var sub_chapter_id = $(this).attr('data-sub_chapter_id');
-						var disabled_items = $(this).attr('data-disabled');
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/sub_chapters_by_chapter',
-							data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
-							success: function (return_data) {
-								$(".ajax-subchapter-dropdown-filter").html(return_data);
-							}
-						});
-					});
-					$(".ajax-category-courses-filter").change();
-
-
-					$(document).on('change', '.conditional-field', function () {
-						$(".conditional-child-fields").hide();
-						var child_value = $(this).val();
-						var selectedOption = $(this).find('option:selected');
-						var child_class = selectedOption.attr('data-child');
-						$('.'+child_class).show();
-					});
-
-					$(".list_type").change();
-					$(document).on('change', '.list_sub_type', function () {
-						var quiz_type = $(this).val();
-						var list_type = $(".list_type").val();
-						$.ajax({
-							type: "GET",
-							url: '/admin/webinars/get_quiz_by_type',
-							data: {'quiz_type': quiz_type, 'list_type': list_type},
-							success: function (return_data) {
-								$(".quiz-list").html(return_data);
-							}
-						});
-					});
-					$(".list_sub_type").change();
-
-					function applyRangeSlider(context) {
-
-						$(context).find(".rurera-range-selector").each(function () {
-
-							var $input = $(this);
-
-							// ⛔ prevent double init
-							if ($input.data("slider-initialized")) return;
-							$input.data("slider-initialized", true);
-
-							var minRange = parseInt($input.data("min")) || 0;
-							var maxRange = parseInt($input.data("max")) || 100;
-
-							var currentVal = $input.val() || "";
-							var parts = currentVal.split(/[\s-]+/).filter(Boolean);
-
-							var initialMin = parts.length ? parseInt(parts[0]) : minRange;
-							var initialMax = parts.length > 1 ? parseInt(parts[1]) : maxRange;
-
-							var $slider = $("<div>").addClass("rurera-slider-ui mb-3 mt-4");
-							$input.after($slider);
-
-							$slider.slider({
-								range: true,
-								min: minRange,
-								max: maxRange,
-								values: [initialMin, initialMax],
-								slide: function (e, ui) {
-									$input.val(ui.values[0] + " - " + ui.values[1]);
-								}
-							});
-
-							$input.on("change", function () {
-								var parts = $(this).val().split(/[\s-]+/).filter(Boolean);
-
-								if (parts.length === 2) {
-									var v1 = parseInt(parts[0]);
-									var v2 = parseInt(parts[1]);
-
-									if (!isNaN(v1) && !isNaN(v2)) {
-										v1 = Math.max(minRange, v1);
-										v2 = Math.min(maxRange, v2);
-										if (v1 > v2) [v1, v2] = [v2, v1];
-
-										$slider.slider("values", [v1, v2]);
-										$(this).val(v1 + " - " + v2);
-										return;
-									}
-								}
-
-								var cur = $slider.slider("values");
-								$(this).val(cur[0] + " - " + cur[1]);
-							});
-						});
-					}
-
-					// 👉 Initial load
-					applyRangeSlider(document);
-
-					// 👉 After ANY ajax completes
-					$(document).ajaxComplete(function (event, xhr, settings) {
-						applyRangeSlider(document);
-					});
-
-				});
-
-
-			</script>
-
-
-			<script>
-
-				$(document).on('click', '.parent-filters', function () {
-					$('.parent-filters').removeClass('active');
-					$('.parent-filters').find('.active-tick').remove();
-					$(this).addClass('active');
-					var filter_html = $(this).html();
-					$(this).html('<span class="active-tick">✓</span> '+filter_html);
-
-					var selectedLevel = $('.performance-level-selection').val();
-					var id = $(this).attr('data-id');
-
-					$('.listing-data-row').each(function () {
-						var rowLevel = $(this).data('level_type');
-						var parent_id = $(this).attr('data-parent_id');
-
-						// Show all if "all" selected
-						if (selectedLevel === 'all' && (id == 'all' || id == parent_id)) {
-							$(this).removeClass('rurera-hide');
-						}
-						// Match selected level
-						else if (rowLevel === selectedLevel && (id == 'all' || id == parent_id)) {
-							$(this).removeClass('rurera-hide');
-						}
-						// Hide others
-						else {
-							$(this).addClass('rurera-hide');
-						}
-					});
+    $(document).ready(function () {
 
 
 
+		$(document).on('click', '.create-questions-bulk-list-btn', function () {
+			$(".questions_bulk_list").modal('show');
+		});
+
+		$(document).on('change', '.ajax-category-courses', function () {
+			var category_id = $(this).val();
+			var course_id = $(this).attr('data-course_id');
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/courses_by_categories_list',
+				data: {'category_id': category_id, 'course_id': course_id},
+				success: function (return_data) {
+					$(".subjects-listing-data").html(return_data);
+				}
+			});
+		});
+
+        $('body').on('change', '.assignment_subject_check', function (e) {
+            var subject_id = $(this).val();
+            var category_id = $('.ajax-category-courses').val();
+            var thisObj = $(this);
+            rurera_loader($(".practice-quiz-topics-list"), 'div');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/common/topics_subtopics_by_subject',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"subject_id": subject_id, 'category_id': category_id},
+                success: function (return_data) {
+                    rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
+                    $(".practice-quiz-topics-list").html(return_data);
+
+                    document.querySelectorAll('.range-container').forEach((container) => {
+                        const rangeMinValue = container.querySelector('.range-input#range-min-value');
+                        const rangeMaxValue = container.querySelector('.range-input#range-max-value');
+                        const inputMinValue = container.querySelector('.range-input-text#input-min-value');
+                        const inputMaxValue = container.querySelector('.range-input-text#input-max-value');
+                        const rangeElement = container.querySelector('.range');
+
+                        const MIN_VALUE = 0;
+                        const MAX_VALUE = 100;
+
+                        function valueToPercentage(value) {
+                            return (value / MAX_VALUE) * 100;
+                        }
+
+                        function percentageToValue(percentage) {
+                            return Math.round((percentage / 100) * MAX_VALUE);
+                        }
+
+                        function setThumbPosition(thumbType, percentage) {
+                            const cssVar =
+                                thumbType === 'min' ? '--min-thumb-percent' : '--max-thumb-percent';
+                            rangeElement.style.setProperty(cssVar, percentage);
+                        }
+
+                        function getThumbPosition(thumbType) {
+                            const cssVar =
+                                thumbType === 'min' ? '--min-thumb-percent' : '--max-thumb-percent';
+                            return rangeElement.style.getPropertyValue(cssVar);
+                        }
+
+                        function validateAndSetValue(input, value, minValue, maxValue) {
+                            if (value < minValue) {
+                                input.value = minValue;
+                            } else if (value > maxValue) {
+                                input.value = maxValue;
+                            }
+                            return parseInt(input.value);
+                        }
+
+                        function sanitizeInputValue(input) {
+                            if (!/^\d+$/.test(input.value)) {
+                                input.value = input.value.replace(/[^0-9]/g, '');
+                            }
+                        }
+
+                        inputMinValue.addEventListener('input', function () {
+                            sanitizeInputValue(this);
+
+                            const maxValue = parseInt(inputMaxValue.value) || MAX_VALUE;
+                            const value = validateAndSetValue(
+                                this,
+                                parseInt(this.value) || MIN_VALUE,
+                                MIN_VALUE,
+                                MAX_VALUE
+                            );
+
+                            if (value >= maxValue) {
+                                this.value = maxValue - 1;
+                            }
+
+                            const percentage = valueToPercentage(parseInt(this.value));
+
+                            if (!isNaN(value)) {
+                                rangeMinValue.value = percentage;
+                                setThumbPosition('min', percentage);
+                            }
+                        });
+
+                        inputMaxValue.addEventListener('input', function () {
+                            sanitizeInputValue(this);
+
+                            const minValue = parseInt(inputMinValue.value) || MIN_VALUE;
+                            const value = validateAndSetValue(
+                                this,
+                                parseInt(this.value),
+                                minValue + 1,
+                                MAX_VALUE
+                            );
+                            const percentage = valueToPercentage(parseInt(this.value));
+
+                            if (!isNaN(value)) {
+                                rangeMaxValue.value = percentage;
+                                setThumbPosition('max', percentage);
+                            }
+                        });
+
+                        rangeMinValue.addEventListener('input', function () {
+                            const maxThumbPercent = getThumbPosition('max');
+
+                            if (parseInt(this.value) >= parseInt(maxThumbPercent)) {
+                                this.value = maxThumbPercent;
+                            }
+
+                            const percentage = parseInt(this.value);
+                            const value = percentageToValue(percentage);
+
+                            inputMinValue.value = value;
+                            setThumbPosition('min', percentage);
+                        });
+
+                        rangeMaxValue.addEventListener('input', function () {
+                            const minThumbPercent = getThumbPosition('min');
+
+                            if (parseInt(this.value) <= parseInt(minThumbPercent)) {
+                                this.value = minThumbPercent;
+                            }
+
+                            const percentage = parseInt(this.value);
+                            const value = percentageToValue(percentage);
+
+                            inputMaxValue.value = value;
+                            setThumbPosition('max', percentage);
+                        });
+
+                        // Initialize positions
+                        rangeMinValue.dispatchEvent(new Event('input'));
+                        rangeMaxValue.dispatchEvent(new Event('input'));
+                    });
 
 
-				});
-			</script>
-	@endpush
+
+                }
+            });
+        });
+
+		$(document).on('change', '.ajax-courses-dropdown', function () {
+			var course_id = $(this).val();
+			var chapter_id = $(this).attr('data-chapter_id');
+
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/chapters_by_course',
+				data: {'course_id': course_id, 'chapter_id': chapter_id},
+				success: function (return_data) {
+					$(".ajax-chapter-dropdown").html(return_data);
+					$('.ajax-chapter-dropdown').change();
+				}
+			});
+		});
+
+		$(document).on('change', '.ajax-chapter-dropdown', function () {
+			var chapter_id = $(this).val();
+			var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+			var disabled_items = $(this).attr('data-disabled');
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/sub_chapters_by_chapter',
+				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+				success: function (return_data) {
+					$(".ajax-subchapter-dropdown").html(return_data);
+				}
+			});
+		});
+        $(".ajax-category-courses").change();
+
+
+        //Filters
+
+        $(document).on('change', '.ajax-category-courses-filter', function () {
+            var category_id = $(this).val();
+            var course_id = $(this).attr('data-course_id');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/courses_by_categories',
+                data: {'category_id': category_id, 'course_id': course_id},
+                success: function (return_data) {
+                    $(".ajax-courses-dropdown-filter").html(return_data);
+                    $(".ajax-chapter-dropdown-filter").html('<option value="">Please select year, subject</option>');
+                    $('.ajax-courses-dropdown-filter').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-courses-dropdown-filter', function () {
+            var course_id = $(this).val();
+            var chapter_id = $(this).attr('data-chapter_id');
+
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/chapters_by_course',
+                data: {'course_id': course_id, 'chapter_id': chapter_id},
+                success: function (return_data) {
+                    $(".ajax-chapter-dropdown-filter").html(return_data);
+                    $('.ajax-chapter-dropdown-filter').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-chapter-dropdown-filter', function () {
+            var chapter_id = $(this).val();
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            var disabled_items = $(this).attr('data-disabled');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/sub_chapters_by_chapter',
+                data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+                success: function (return_data) {
+                    $(".ajax-subchapter-dropdown-filter").html(return_data);
+                }
+            });
+        });
+        $(".ajax-category-courses-filter").change();
+
+
+		$(document).on('change', '.conditional-field', function () {
+			$(".conditional-child-fields").hide();
+			var child_value = $(this).val();
+			var selectedOption = $(this).find('option:selected');
+			var child_class = selectedOption.attr('data-child');
+			$('.'+child_class).show();
+		});
+
+        $(".list_type").change();
+		$(document).on('change', '.list_sub_type', function () {
+			var quiz_type = $(this).val();
+			var list_type = $(".list_type").val();
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/get_quiz_by_type',
+				data: {'quiz_type': quiz_type, 'list_type': list_type},
+				success: function (return_data) {
+					$(".quiz-list").html(return_data);
+				}
+			});
+		});
+        $(".list_sub_type").change();
+
+        function applyRangeSlider(context) {
+
+            $(context).find(".rurera-range-selector").each(function () {
+
+                var $input = $(this);
+
+                // ⛔ prevent double init
+                if ($input.data("slider-initialized")) return;
+                $input.data("slider-initialized", true);
+
+                var minRange = parseInt($input.data("min")) || 0;
+                var maxRange = parseInt($input.data("max")) || 100;
+
+                var currentVal = $input.val() || "";
+                var parts = currentVal.split(/[\s-]+/).filter(Boolean);
+
+                var initialMin = parts.length ? parseInt(parts[0]) : minRange;
+                var initialMax = parts.length > 1 ? parseInt(parts[1]) : maxRange;
+
+                var $slider = $("<div>").addClass("rurera-slider-ui mb-3 mt-4");
+                $input.after($slider);
+
+                $slider.slider({
+                    range: true,
+                    min: minRange,
+                    max: maxRange,
+                    values: [initialMin, initialMax],
+                    slide: function (e, ui) {
+                        $input.val(ui.values[0] + " - " + ui.values[1]);
+                    }
+                });
+
+                $input.on("change", function () {
+                    var parts = $(this).val().split(/[\s-]+/).filter(Boolean);
+
+                    if (parts.length === 2) {
+                        var v1 = parseInt(parts[0]);
+                        var v2 = parseInt(parts[1]);
+
+                        if (!isNaN(v1) && !isNaN(v2)) {
+                            v1 = Math.max(minRange, v1);
+                            v2 = Math.min(maxRange, v2);
+                            if (v1 > v2) [v1, v2] = [v2, v1];
+
+                            $slider.slider("values", [v1, v2]);
+                            $(this).val(v1 + " - " + v2);
+                            return;
+                        }
+                    }
+
+                    var cur = $slider.slider("values");
+                    $(this).val(cur[0] + " - " + cur[1]);
+                });
+            });
+        }
+
+        // 👉 Initial load
+        applyRangeSlider(document);
+
+        // 👉 After ANY ajax completes
+        $(document).ajaxComplete(function (event, xhr, settings) {
+            applyRangeSlider(document);
+        });
+
+    });
+
+
+</script>
+
+
+    <script>
+
+        $(document).on('click', '.parent-filters', function () {
+            $('.parent-filters').removeClass('active');
+            $('.parent-filters').find('.active-tick').remove();
+            $(this).addClass('active');
+            var filter_html = $(this).html();
+            $(this).html('<span class="active-tick">✓</span> '+filter_html);
+
+            var selectedLevel = $('.performance-level-selection').val();
+            var id = $(this).attr('data-id');
+
+            $('.listing-data-row').each(function () {
+                var rowLevel = $(this).data('level_type');
+                var parent_id = $(this).attr('data-parent_id');
+
+                // Show all if "all" selected
+                if (selectedLevel === 'all' && (id == 'all' || id == parent_id)) {
+                    $(this).removeClass('rurera-hide');
+                }
+                // Match selected level
+                else if (rowLevel === selectedLevel && (id == 'all' || id == parent_id)) {
+                    $(this).removeClass('rurera-hide');
+                }
+                // Hide others
+                else {
+                    $(this).addClass('rurera-hide');
+                }
+            });
+
+
+
+
+
+        });
+    </script>
+@endpush
