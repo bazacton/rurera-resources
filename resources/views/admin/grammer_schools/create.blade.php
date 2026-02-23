@@ -153,6 +153,7 @@
                                                     <option value="School-specific" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'School-specific') ? 'selected' : ''}}>School-specific</option>
                                                     <option value="FSCH" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'FSCH') ? 'selected' : ''}}>FSCH</option>
                                                     <option value="SET 11 Plus" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'SET 11 Plus') ? 'selected' : ''}}>SET 11 Plus</option>
+                                                    <option value="FSCE" {{(isset($grammerSchoolObj->id) && $grammerSchoolObj->exam_format == 'FSCE') ? 'selected' : ''}}>FSCE</option>
 
                                                 </select>
                                             </div>
