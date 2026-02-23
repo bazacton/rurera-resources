@@ -16790,16 +16790,10 @@ section.feature-grid {
   animation: scroll 40s linear infinite;
 }
 .logo-track img {
-  filter: grayscale(100%);
-  opacity: 0.8;
   transition: 0.3s;
   width: 130px;
   height: 73px;
   object-fit: contain;
-}
-.logo-track img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
 }
 /* Infinite Scroll */
 @keyframes scroll {
