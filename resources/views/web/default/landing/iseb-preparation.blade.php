@@ -539,24 +539,27 @@
         </div>
         <div class="logo-track">
           <!-- Repeat logos twice for infinite effect -->
-          <img src="/assets/default/img/carousel-imgs/Brand_Auckland.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Boston.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClients-mt.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/logoClients2.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Fordham.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Florida_uni.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
+          
 
           <!-- Duplicate -->
-          <img src="/assets/default/img/carousel-imgs/Brand_Auckland.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Boston.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClients-mt.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/logoClients2.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Fordham.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Florida_uni.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
         </div>
         <div class="logo-track">
           <!-- Repeat logos twice for infinite effect -->
