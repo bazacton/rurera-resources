@@ -16665,6 +16665,7 @@ section.feature-grid {
   align-items: center;
   gap: 6px;
   z-index: 1;
+  flex: 0 0 20%;
 }
 
 .process-nav .step .dot {
