@@ -1866,6 +1866,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .spell-levels li {align-items: flex-start;}
     .spell-levels li > a:before {height: 100%; margin-top: 14px;}
     .panel-content .template-grid .text-holder a {display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 5px;}
+    .panel-content .template-grid .text-holder .stretched-link {display: block;}
     .panel-content .grid-card .title-label, .login-options .coming-soon {margin: 0;}
     .school-zone-students [class*="col-"] {padding: 0 5px;}
     .userthumb .userthumb-text, .student-block-text {padding: 10px 5px 5px;}
