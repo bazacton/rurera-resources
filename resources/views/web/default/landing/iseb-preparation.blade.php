@@ -563,23 +563,23 @@
         </div>
         <div class="logo-track">
           <!-- Repeat logos twice for infinite effect -->
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Clemson.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Stanford.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/LogoClients.svg" alt="">
 
           <!-- Duplicate -->
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Clemson.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Stanford.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/LogoClients.svg" alt="">
         </div>
       </div>
