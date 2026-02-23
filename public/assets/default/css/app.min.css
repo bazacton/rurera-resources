@@ -16787,7 +16787,6 @@ section.feature-grid {
   gap: 80px;
   width: max-content;
   will-change: transform;
-  transform: translate3d(0,0,0);
   animation: scroll 40s linear infinite;
 }
 .logo-track img {
