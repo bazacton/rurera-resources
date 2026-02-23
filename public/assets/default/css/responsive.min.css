@@ -4185,6 +4185,10 @@
     .rurera-help-content {
         width: 100%;
     }
+    .hiw-arrow {display: none;}
+    .row.how-steps {
+        margin-right: -15px;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
