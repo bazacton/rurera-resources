@@ -739,7 +739,6 @@ function updateCounter(swiper) {
     paused = !paused;
 
     tracks.forEach(track => {
-      track.style.animationPlayState = paused ? 'paused' : 'running';
       track.innerHTML += track.innerHTML;
     });
 
