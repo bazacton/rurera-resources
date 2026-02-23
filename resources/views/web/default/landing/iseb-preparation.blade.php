@@ -513,23 +513,29 @@
         <div class="logo-track">
           <!-- Repeat logos twice for infinite effect -->
           <img src="/assets/default/img/carousel-imgs/brand_asu.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_florida.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/logoClients.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Southern2.svg" alt="">
+          
+          
+          
+          
 
           <!-- Duplicate -->
           <img src="/assets/default/img/carousel-imgs/brand_asu.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_florida.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/logoClients.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Southern2.svg" alt="">
         </div>
         <div class="logo-track">
           <!-- Repeat logos twice for infinite effect -->
