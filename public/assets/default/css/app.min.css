@@ -16546,9 +16546,8 @@ section.feature-grid {
   text-align: right;
 }
 .rurera-get-app .rurera-help-visual img {
-    max-width: 60%;
-    max-height: 60%;
     object-fit: contain;
+    max-width: 100%;
 }
 .rurera-get-app .rurera-help-content {
   width: 50%;
