@@ -516,7 +516,7 @@
           <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/logoClients.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
