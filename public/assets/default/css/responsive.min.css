@@ -4189,8 +4189,8 @@
     .row.how-steps {
         margin-right: -15px;
     }
-    .feature-tabs-holder,
-    .image-container {
+    .slider-section, .feature-tabs-holder,
+    .image-container, .image-container .images-holder {
         height: auto;
     }
     .image-container {
