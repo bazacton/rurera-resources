@@ -424,6 +424,8 @@ Left SideBar-menu End
     position: initial;
     margin: 0;
     overflow: visible;
+    width: auto;
+    height: auto;
 }
 .panel-content .grid-card .img-holder {margin-left: auto; position: absolute; right: -22px; bottom: -15px; transform: rotate(-20deg); height: 90px; width: 90px;}
 .panel-content .grid-card .img-holder img {border-radius: 0; object-fit: contain;}
