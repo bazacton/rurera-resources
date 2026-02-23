@@ -12355,6 +12355,18 @@ button.bg-gray200:hover {
     .py-lg-50 {
         padding-top: 50px !important
     }
+    .pt-lg-60,
+    .py-lg-60 {
+        padding-top: 60px !important
+    }
+    .pt-lg-70,
+    .py-lg-70 {
+        padding-top: 70px !important
+    }
+    .pt-lg-80,
+    .py-lg-80 {
+        padding-top: 80px !important
+    }
     .pr-lg-50,
     .px-lg-50 {
         padding-right: 50px !important
