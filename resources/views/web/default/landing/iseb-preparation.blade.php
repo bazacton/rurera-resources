@@ -725,19 +725,20 @@ function updateCounter(swiper) {
 
 </script>
 <script>
+  const slider = document.querySelector('.logo-track');
   const toggleBtn = document.getElementById('sliderToggle');
-  const track = document.getElementById('logoTrack');
 
-  let paused = false;
+  let isPaused = false;
 
   toggleBtn.addEventListener('click', function () {
-
-    paused = !paused;
-
-    track.style.animationPlayState = paused ? 'paused' : 'running';
-
-    toggleBtn.textContent = paused ? '▶' : '❚❚';
-
+    if (isPaused) {
+      slider.style.animationPlayState = 'running';
+      toggleBtn.textContent = '❚❚';
+    } else {
+      slider.style.animationPlayState = 'paused';
+      toggleBtn.textContent = '▶';
+    }
+    isPaused = !isPaused;
   });
 </script>
 @endpush
