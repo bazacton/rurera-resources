@@ -8211,6 +8211,9 @@ body .flipbook-data {
     justify-content: center;
     border-radius: 100%;
 }
+.btn-link .icon-box::selection {
+  background-color: inherit;
+}
 .btn-link .icon-box img {
     height: 22px;
     width: 22px;
