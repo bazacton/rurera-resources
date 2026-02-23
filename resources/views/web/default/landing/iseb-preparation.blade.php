@@ -740,6 +740,7 @@ function updateCounter(swiper) {
 
     tracks.forEach(track => {
       track.style.animationPlayState = paused ? 'paused' : 'running';
+      track.innerHTML += track.innerHTML;
     });
 
     toggleBtn.textContent = paused ? '▶' : '❚❚';
