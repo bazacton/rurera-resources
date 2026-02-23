@@ -8,63 +8,6 @@
 {!! parseShortcode('[SC_times-table-features-section-f]') !!}
 {!! parseShortcode('[SC_rurera-work-process]') !!}
 
-    <section class="rurera-column-section rurera-text-section mx-w-100 py-50 pr-30 pl-30" style="background-color: #7679ee;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="rurera-text-holder d-flex justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h3 class="mb-10 d-flex text-white">
-                                <span class="icon-svg mr-15 mt-5">
-                                    <img src="/assets/default/svgs/bulb-white.svg" alt="#" height="35" width="35" />
-                                </span> Boost Your Child's Multiplication and Division Skills with a Splash of Fun!
-                            </h3>
-                        </div>
-                        <div class="rurera-btn-group justify-content-center">
-                            <a href="{{url('/')}}/register" class="rurera-btn rounded-pill text-white border-white">Find more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="choose-sats pt-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title text-center mb-30">
-                        <h2 class="mt-0 mb-10">How times tables work</h2>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="/assets/default/svgs/exam-multiple.svg" alt="#" height="50" width="50" /> <span class="font-18">Register / login</span>
-                        <p class="pt-10 font-14 text-dark">Register today via our website and access tools to learn times tables.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="/assets/default/svgs/lessons.svg" alt="#" height="50" width="50" /> <span class="font-18">Create Accounts</span>
-                        <p class="pt-10 font-14 text-dark">Easily setup accounts for parents, students and teachers to benefit from our timetables online game platform.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="/assets/default/svgs/impact.svg" alt="#" height="50" width="50" /> <span class="font-18">Learn &amp; Play</span>
-                        <p class="pt-10 font-14 text-dark">Students will have access to both single and multiplayer tables games interfaces.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="/assets/default/svgs/sav-time.svg" alt="#" height="50" width="50" /> <span class="font-18">Progress Tracking</span>
-                        <p class="pt-10 font-14 text-dark">Use the stats to keep track of your child's math times tables practice and celebrate their success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-
 {!! parseShortcode('[SC_accordion-slider-section-f]') !!}
 {!! parseShortcode('[SC_testimonials-section-f]') !!}
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
