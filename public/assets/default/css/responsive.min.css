@@ -4189,6 +4189,9 @@
     .row.how-steps {
         margin-right: -15px;
     }
+    .feature-tabs-holder {
+        height: auto;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
