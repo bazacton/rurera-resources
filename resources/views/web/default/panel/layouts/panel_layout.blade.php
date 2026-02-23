@@ -7,6 +7,7 @@
     $isRtl = ((in_array(mb_strtoupper(app()->getLocale()), $rtlLanguages)) or (!empty($generalSettings['rtl_layout']) and $generalSettings['rtl_layout'] == 1));
         $rand_no = rand(99,9999);
     $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
+$is_subject_page = isset($is_subject_page)? $is_subject_page : false
 @endphp
 <head>
     <title>{{ $pageTitle ?? '' }}{{ !empty($generalSettings['site_name']) ? (' | '.$generalSettings['site_name']) : '' }}</title>
@@ -24,7 +25,7 @@
 	@if(auth()->check() && auth()->user()->isParent())
 		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
 	@endif
-	
+
 	@if (isset( $cssFiles ) && !empty($cssFiles))
         @foreach ($cssFiles as $cssFile)
             <link rel="stylesheet" href="{{ asset($cssFile) }}">
@@ -76,9 +77,10 @@
                         <!-- Panel Content End -->
                         <!-- Panel Right Sidebar Start -->
                         <aside class="col-12 col-sm-12 col-md-12 col-lg-4 pl-15 panel-right-sidebar" aria-label="User dashboard sidebar">
-                            
+
                             @include(getTemplate(). '.panel.includes.user_top_bar')
                             <div class="sidebar-inner-elements">
+                                @if($is_subject_page == false)
                                 @if(auth()->user()->isUser())
                                     <div class="store-stats panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                         <ul>
@@ -94,7 +96,9 @@
                                         </ul>
                                     </div>
                                 @endif
+                                @endif
 
+                                @if($is_subject_page == true)
                                     <!-- Overall performance (semi gauge) -->
                                 <div class="panel-border bg-white rounded-sm p-20 mb-30 w-100">
                                     <div>
@@ -106,9 +110,9 @@
                                         <!-- Change --p to your percentage (0–100) -->
                                         <div class="overall-gauge" style="--p:80;" role="img" aria-label="Overall performance 80 percent. Pro learner level">
                                             <svg viewBox="0 0 200 120" class="w-100 d-block" style="max-width:260px;">
-                                            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="18" stroke-linecap="round"></path>
+                                                <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#e9ecef" stroke-width="10" stroke-linecap="round"></path>
 
-                                            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="var(--primary)" stroke-width="18" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
+                                                <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="var(--primary)" stroke-width="10" stroke-linecap="round" style="stroke-dasharray:252;stroke-dashoffset:calc(252 - (252 * var(--p) / 100));"></path>
                                             </svg>
 
                                             <div class="overall-gauge-center text-center">
@@ -131,7 +135,7 @@
                                             <path d="M12 2a7 7 0 0 0-4 12c.7.6 1 1.2 1 2h6c0-.8.3-1.4 1-2A7 7 0 0 0 12 2Z" stroke="rgba(0,0,0,.45)" stroke-width="2" stroke-linejoin="round"></path>
                                             </svg>
                                         </div>
-                                        <div class="font-13 text-muted">You could use extra support on these skills:</div>
+                                        <div class="font-12 text-muted">You could use extra support on these skills:</div>
                                     </div>
 
                                     <div class="table-responsive">
@@ -144,37 +148,74 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-14 font-weight-500">
                                                         <button type="button">Write variable expressions: word problems</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">4</td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-14 font-weight-500">
                                                         <button type="button">Lines, line segments and rays</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">4</td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-14 font-weight-500">
                                                         <button type="button">Write variable expressions</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">3</td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-13">
+                                                    <td class="font-14 font-weight-500">
                                                         <button type="button">Understanding area of a parallelogram</button>
                                                     </td>
-                                                    <td class="font-13 text-right font-weight-bold">3</td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Lines, line segments and rays</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Write variable expressions</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Understanding area of a parallelogram</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Lines, line segments and rays</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Write variable expressions</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-14 font-weight-500">
+                                                        <button type="button">Understanding area of a parallelogram</button>
+                                                    </td>
+                                                    <td class="font-12 text-right font-weight-bold">3</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <div class="mt-15">
-                                    <a href="#" class="font-13 font-weight-bold">See all 9 skills</a>
+                                        <a href="#" class="font-12 font-weight-bold show-skills-btn">See all 9 skills</a>
                                     </div>
                                 </div>
+                                    @endif
 
                                     @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
                                     <div class="panel-rightside-menu mb-30">
@@ -243,8 +284,8 @@
                                         </ul>
                                     </div>
                                     @endif
-                                
-                                
+
+
                                     @if(auth()->user()->isUser())
                                     @if(request()->is('panel'))
                                         <div class="getting-start panel-border bg-white rounded-sm p-20 mb-30">
@@ -276,7 +317,7 @@
                                             </ul>
                                         </div>
                                     @endif
-                                    
+
                                     @endif
 
                                     @if(request()->is('panel/marketing/affiliates') || auth()->user()->isParent() || auth()->user()->isTutor())
@@ -288,9 +329,9 @@
                                                 Switch Accounts
                                                 <a href="/panel/students" class="view-all font-weight-bold font-16">View All</a>
                                             </h3>
-                                
+
                                             @foreach( $profile_navs as $profile_nav)
-                                                @php $childObj = $profile_nav->user; 
+                                                @php $childObj = $profile_nav->user;
                                                 if( !isset( $childObj->id)){
                                                     continue;
                                                 }@endphp
@@ -311,7 +352,7 @@
                                         </div>
                                     </div>
                                     @endif
-                        
+
                                     <!-- <div class="col-12 col-lg-12 mt-30">
                                         <div class="spell-widget">
                                             <div id="accordion">
@@ -334,7 +375,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                            
+
                                                     <div class="spell-item">
                                                         <div class="spell-heading" id="heading2">
                                                             <button class="btn btn-link font-16 font-weight-bold" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
@@ -356,7 +397,7 @@
                                             </div>
                                         </div>
                                     </div> -->
-                                    
+
                                     <div class="referrals panel-border panel-shadow rounded-sm mb-30">
                                         <div class="referral-card">
                                             <h3 class="font-19 font-weight-bold">Link your students and <br /> start earning!</h3>
@@ -460,6 +501,8 @@
 
                                     </div>
                                     @endif
+
+                                    @if($is_subject_page == false)
                                     @if(auth()->user()->isUser() && !request()->is('quests'))
 
                                     @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
@@ -498,11 +541,12 @@
                                                 @endforeach
                                             </ul>
                                         </div>
-                                    @endif	
-                                @endif	
-    
+                                    @endif
+                                @endif
+                                    @endif
+
                                 @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
-                                    
+
                                 @if(request()->is('shop'))
                                     <div class="product-card medium panel-border bg-white rounded-sm p-20 mb-30">
                                         <div class="product-controls nav" id="myTab" role="tablist">
@@ -980,7 +1024,7 @@
                             </div>
                             @endif
                         </aside>
-                                    
+
                         <!-- Panel Right Sidebar End -->
                     </div>
                 </div>
@@ -1227,6 +1271,34 @@ function makeStatisticsChart(canvasId, chartVar, label, labels, data) {
         }
     });
 }
+</script>
+<script>
+    $(document).ready(function () {
+
+    const $rows = $('.focus-table tbody tr');
+    const visibleCount = 4;
+    const $toggleBtn = $('.show-skills-btn');
+
+    // Hide rows after first 4
+    $rows.slice(visibleCount).hide();
+
+    $toggleBtn.on('click', function (e) {
+        e.preventDefault();
+
+        const isExpanded = $(this).data('expanded') || false;
+
+        if (!isExpanded) {
+        $rows.slice(visibleCount).slideDown(200);
+        $(this).text('Show less');
+        } else {
+        $rows.slice(visibleCount).slideUp(200);
+        $(this).text(`See all ${$rows.length} skills`);
+        }
+
+        $(this).data('expanded', !isExpanded);
+    });
+
+    });
 </script>
 
 </body>

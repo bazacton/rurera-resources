@@ -1038,6 +1038,7 @@ nav li {
   margin: 120px 0 70px;
   border-radius: 15px;
   border: 0;
+  width: 100%;
 }
 .login-container img {
   border-radius: 10px 0 0 10px;
@@ -1355,6 +1356,12 @@ nav li {
   justify-content: center;
   flex-direction: column;
 }
+.login-with-pin .login-holder {
+    min-width: auto;
+    max-width: 640px;
+    border-radius: 12px;
+    margin: 0 auto;
+}
 .password-fields {
     display: flex;
     align-items: center;
@@ -1363,10 +1370,20 @@ nav li {
     width: 100%;
 }
 .login-password .form-group input.login_pin {
+  background-color: #fafafa;
   margin-bottom: 5px !important;
   padding: 0 5px;
   text-align: center;
   vertical-align: top;
+  height: 64px;
+  border-radius: 12px !important;
+  min-width: 56px;
+}
+.login-password .form-group input.login_pin:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, .15);
+  background: #fff;
+  transform: translateY(-1px);
 }
 .login-password .form-group input.login_pin[type=number]::-webkit-inner-spin-button, 
 .login-password .form-group input.login_pin[type=number]::-webkit-outer-spin-button { 
@@ -1381,7 +1398,9 @@ nav li {
   flex-wrap: wrap;
   gap: 10px;
 }
-.login-pad-icons a {
+
+.login-pad-icons a,
+.login-with-pin .login-pad-icons button {
   display: flex;
   align-items: center;
   padding: 10px 15px;
@@ -1394,10 +1413,28 @@ nav li {
   font-weight: 900;
   color: #c4c4c4;
 }
+.login-with-pin .login-pad-icons a,
+.login-with-pin .login-pad-icons button {
+  background-color: #f9fafb;
+  padding: 0 15px;
+  height: 56px;
+  text-align: center;
+  justify-content: center;
+  color: #101828;
+  border-color: #e4e7ec;
+  border-radius: 14px;
+  font-size: 18px;
+}
+.login-with-pin .login-pad-icons .key-enter {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
 .login-pad-icons a:hover {
   color: #777;
   box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
 }
+
 .login-pad-icons a img {
   border-radius: 0;
   width: 60px;
@@ -7975,6 +8012,7 @@ body .flipbook-data {
   text-align: right;
 }
 .pages-sub-header.about-sub-header {
+  background-color: var(--primary);
   min-height: 400px;
   max-height: inherit;
 }
@@ -8172,6 +8210,9 @@ body .flipbook-data {
     align-items: center;
     justify-content: center;
     border-radius: 100%;
+}
+.btn-link .icon-box::selection {
+  background-color: inherit;
 }
 .btn-link .icon-box img {
     height: 22px;
@@ -11229,7 +11270,7 @@ body {
 .rurera-categories-section.has-bg,
 .rurera-our-mission-section.has-bg {
   max-width: 1570px;
-  background: url(../../default/img/categories-section-bg.svg) center top no-repeat;
+  background: url(/assets/default/img/categories-section-bg.svg) center top no-repeat;
   min-height: 615px;
   margin: 160px auto 70px auto;
   padding-top: 100px;
@@ -15859,7 +15900,7 @@ footer.footer-home {
 }
 
 /* Card Variants */
-.rurera-card-purple { background-color: #dcd6ff; }
+.rurera-card-purple .rurera-prep-feature { background-color: #dcd6ff; }
 .rurera-card-yellow { background-color: #fff9d6; }
 .rurera-card-green { background-color: #d5f5e3; }
 .rurera-card-peach { background-color: #ffe8e0; }
@@ -15967,6 +16008,7 @@ footer.footer-home {
   .rurera-feature-outer,
   .ru-stickyhero-visual-container {
     padding-right: calc((100vw - 88vw) / 2);
+    min-height: auto;
   }
 }
 /* Left Sticky Section */
@@ -16206,6 +16248,9 @@ footer.footer-home {
 @media (max-width: 480px) {
   .rurera-testimonials .masonry-grid {
     column-count: 1;
+  }
+  .rurera-swiper-slide-inner {
+    height: 200px;
   }
 }
 
@@ -16496,7 +16541,7 @@ section.feature-grid {
   max-width: none;
   max-height: none;
   padding: 0;
-  margin: -60px 0 -60px;
+  margin: -60px 0 0;
   width: 50%;
   text-align: right;
 }
@@ -16567,11 +16612,13 @@ section.feature-grid {
 /* rurera-partners style end */
 
 /* rurera-process-style start */
+    .rurera-process-card {padding-right: 50px;}
+    .row.how-steps {margin-right: -50px;}
     .rurera-process-card .card { border: 0; border-radius: .75rem; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); height: 100%; }
     .rurera-process-card .card-body { padding: 1.5rem; }
     .rurera-process-card .icon-placeholder { width: 100%; height: 180px; background: #f8f9fa; border-radius: .5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #adb5bd; }
     .how-steps .col-md-3 { position: relative; }
-      .hiw-arrow { position: absolute; right: -24px; top: 50%; transform: translateY(-50%) rotate(90deg); width: 26px; opacity: .75; filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); pointer-events: none; z-index: 2; }
+      .hiw-arrow { position: absolute; right: -24px; top: 50%; transform: translateY(-50%) rotate(-40deg); width: 26px; opacity: .75; filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); pointer-events: none; z-index: 2; }
     @media (max-width: 767.98px) {
       .how-steps .icon-placeholder { height: 140px; }
     }
@@ -16704,3 +16751,86 @@ section.feature-grid {
   }
 }
 /* rurera-process-setups-style end */
+
+
+/* Trusted Section Style Start */
+.trusted-section {
+  background: #f6f7f8;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.trusted-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.trusted-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #0f172a;
+}
+/* Slider Wrapper */
+.logo-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+/* Slider */
+.logo-slider {
+  overflow: hidden;
+}
+.logo-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  will-change: transform;
+  animation: scroll 40s linear infinite;
+}
+.logo-track img {
+  transition: 0.3s;
+  width: 130px;
+  height: 73px;
+  object-fit: contain;
+}
+/* Infinite Scroll */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+/* Fade effect */
+.fade-left,
+.fade-right {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #f6f7f8 0%, transparent 100%);
+}
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #f6f7f8 0%, transparent 100%);
+}
+/* Pause button */
+.slider-toggle {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #4d536e;
+  color: #4d536e;
+  background: white;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+}
+/* Trusted Section Style End */

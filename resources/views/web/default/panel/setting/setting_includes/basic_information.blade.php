@@ -197,7 +197,7 @@ if( !empty( $emojisArray ) ){
         <div class="col-12 user-edit-profile">
             <div class="edit-profile mb-50">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12 rurera-hide">
+                    <div class="col-lg-3 col-md-4 col-12 rurera-hide test@@">
                         <div class="edit-profile-sidebar">
                             <div class="user-info d-flex align-items-center flex-wrap mb-30">
                                 <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="edit-profile image" height="48" width="48">
@@ -242,7 +242,7 @@ if( !empty( $emojisArray ) ){
                                 </div>
                                 <div class="edit-profile-body">
                                     <div class="edit-profile-image mb-30">
-                                        <div class="profile-image">
+                                        <div class="profile-image test@@">
                                             <figure class="d-inline-flex position-relative">
                                                 <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="edit-profile-image">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex justify-content-center font-14 flex-column">

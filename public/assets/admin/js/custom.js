@@ -821,55 +821,59 @@
             }
         });
 
-		$(".summernote-editor").summernote({
-    dialogsInBody: true,
-    tabsize: 2,
-    //height: $(".summernote-editor").attr('data-height') ?? 250,
-    height: null,
-    minHeight: 150,
-    maxHeight: 400,
-    fontNames: [],
-    toolbar: [
-        ['style', ['style']],
-        ['font', ['bold', 'underline']],
-        ['para', ['paragraph', 'ul', 'ol']],
-        ['table', ['table']],
-        ['insert', ['link']],
-        ['history', ['undo']],
-    ],
-    buttons: {
-        lfm: LFMButton
-    },
-    callbacks: {
-        onPaste: function (e) {
-            e.preventDefault();
 
-            var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
-            var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+        function summernote_editor_init(){
+            $(".summernote-editor").summernote({
+                dialogsInBody: true,
+                tabsize: 2,
+                //height: $(".summernote-editor").attr('data-height') ?? 250,
+                height: null,
+                minHeight: 150,
+                maxHeight: 400,
+                fontNames: [],
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline']],
+                    ['para', ['paragraph', 'ul', 'ol']],
+                    ['table', ['table']],
+                    ['insert', ['link']],
+                    ['history', ['undo']],
+                ],
+                buttons: {
+                    lfm: LFMButton
+                },
+                callbacks: {
+                    onPaste: function (e) {
+                        e.preventDefault();
 
-            // Create a temporary DOM element to parse the HTML
-            var tempDiv = document.createElement('div');
-            tempDiv.innerHTML = pastedData;
+                        var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+                        var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
 
-            // Remove all tags except <strong> and <table> with children, but retain the text content
-            tempDiv.querySelectorAll("*:not(p):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(ul):not(ol):not(li):not(strong):not(table):not(tbody):not(tr):not(td):not(th)").forEach(node => {
-                // Replace each disallowed element with its text content
-                const textNode = document.createTextNode(node.textContent);
-                node.replaceWith(textNode);
-            });
+                        // Create a temporary DOM element to parse the HTML
+                        var tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = pastedData;
 
-            // Remove attributes from <table> and its child tags
-            tempDiv.querySelectorAll("table, td, th, tr").forEach(node => {
-                for (let attr of node.attributes) {
-                    node.removeAttribute(attr.name);
+                        // Remove all tags except <strong> and <table> with children, but retain the text content
+                        tempDiv.querySelectorAll("*:not(p):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(ul):not(ol):not(li):not(strong):not(table):not(tbody):not(tr):not(td):not(th)").forEach(node => {
+                            // Replace each disallowed element with its text content
+                            const textNode = document.createTextNode(node.textContent);
+                            node.replaceWith(textNode);
+                        });
+
+                        // Remove attributes from <table> and its child tags
+                        tempDiv.querySelectorAll("table, td, th, tr").forEach(node => {
+                            for (let attr of node.attributes) {
+                                node.removeAttribute(attr.name);
+                            }
+                        });
+
+                        // Insert the cleaned HTML into the editor
+                        document.execCommand('insertHTML', false, tempDiv.innerHTML);
+                    }
                 }
             });
-
-            // Insert the cleaned HTML into the editor
-			document.execCommand('insertHTML', false, tempDiv.innerHTML);
         }
-    }
-});
+        summernote_editor_init();
 
 
 
@@ -2853,6 +2857,31 @@ $(document).on('click', '.rurera-file-manager', function () {
         success: function (return_data) {
             $(".rurera-file-manager-block").html(return_data);
             $('.rurera-file-manager-modal').modal('show');
+
+
+            $('.rfp-dropzone').attr('tabindex', 0);
+
+            // Listen for paste
+            $(document).on('paste', function (e) {
+
+                var clipboard = e.originalEvent.clipboardData;
+                if (!clipboard) return;
+
+                var items = clipboard.items;
+
+                for (var i = 0; i < items.length; i++) {
+
+                    if (items[i].type.indexOf('image') !== -1) {
+
+                        var file = items[i].getAsFile();
+
+                        if (file) {
+                            simulateDrop(file);
+                        }
+                    }
+                }
+            });
+
         },
     });
 
@@ -2877,3 +2906,18 @@ $(document).on('click', '.delete-gallery-image', function () {
 
 
 
+function simulateDrop(file) {
+
+    var dropzone = document.querySelector('.rfp-dropzone');
+
+    var dataTransfer = new DataTransfer();
+    dataTransfer.items.add(file);
+
+    var dropEvent = new DragEvent('drop', {
+        bubbles: true,
+        cancelable: true,
+        dataTransfer: dataTransfer
+    });
+
+    dropzone.dispatchEvent(dropEvent);
+}

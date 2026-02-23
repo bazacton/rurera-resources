@@ -1699,6 +1699,10 @@
         display: none;
         padding-bottom: 25px;
     }
+    .custom-footer .widget-links .widget-body {
+        display: block;
+        padding-bottom: 0;
+    }
     .custom-footer .widget-links li,
     .custom-footer .widget-location li {
         margin-bottom: 10px;
@@ -1966,6 +1970,9 @@
     .rurera-get-app .rurera-help-visual img {
         max-width: 100%;
         max-height: 100%;
+    }
+    .footer-widgets-area .footer-dots-img {
+        display: none;
     }
 }
 @media screen and (min-width: 767px) and (max-width: 1600px) {
@@ -4364,6 +4371,7 @@
     .process-holder .section-title.text-left {
         text-align: center !important;
     }
+    .process-card {flex: auto; padding-left: 16px;}
     .process-holder .row > [class*="col-"] > .row > [class*="col-"]:nth-child(2) .process-card-body,
     .process-holder .row > [class*="col-"] > .row > [class*="col-"]:nth-child(4) .process-card-body {
         flex-direction: column-reverse;
@@ -4732,6 +4740,12 @@
     .spells-quiz-from .rurera-in-row .field-holder,
     .spells-quiz-from .rurera-in-row .form-field {
         width: 48.555%;
+    }
+    .chapter-card > a {
+        padding-right: 110px;
+    }
+    .seg-progress {
+        right: 15px;
     }
 }
 @media screen and (max-width: 575px) {
@@ -5360,12 +5374,11 @@
         font-size: 30px;
         max-height: 35px;
         width: 15% !important;
+        min-width: auto;
     }
     .login-pad-icons a {
         padding: 8px 8px;
-        font-size: 24px;
-        flex-basis: 20%;
-        justify-content: center;
+        max-width: 88px;
     }
     .login-pad-icons a img {
         width: 25px;
@@ -5373,6 +5386,10 @@
     }
     .login-pad-icons {
         padding-bottom: 25px;
+    }
+    .login-with-pin .login-pad-icons {
+        gap: 5px;
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 480px) {
