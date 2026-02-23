@@ -5472,6 +5472,9 @@
         align-items: center;
         margin-bottom: 5px;
     }
+    .panel-content .template-grid .text-holder .stretched-link {
+        display: block;
+    }
     .panel-content .grid-card .title-label,
     .login-options .coming-soon {
         margin: 0;
