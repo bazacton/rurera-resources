@@ -505,6 +505,9 @@
       <div class="fade-left"></div>
       <div class="fade-right"></div>
 
+      <!-- Pause Button -->
+      <button class="slider-toggle" id="sliderToggle">❚❚</button>
+
       <!-- Slider -->
       <div class="logo-slider" id="logoSlider">
         <div class="logo-track">
@@ -572,8 +575,6 @@
         </div>
       </div>
     </div>
-    <!-- Pause Button -->
-    <button class="slider-toggle" id="sliderToggle">❚❚</button>
   </div>
 </section>
     <section class="rurera-setup-progress-section rurera-membership-section mb-60" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
