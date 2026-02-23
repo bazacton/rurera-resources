@@ -575,7 +575,7 @@
           <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
-          <img src="/assets/default/img/carousel-imgs/LogoClients.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClients-st.svg" alt="">
         </div>
       </div>
     </div>
