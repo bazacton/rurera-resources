@@ -16232,13 +16232,17 @@ footer.footer-home {
     padding: 0 0 30px;
     min-height: auto;
   }
+  .ru-stickyhero-visual-container .rurera-desktop-mockup {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .ru-stickyhero-visual-container .rurera-mobile-mockup,
   .ru-stickyhero-visual-container .rurera-desktop-mockup {
     margin-top: 0;
     box-shadow: none;
   }
   .bg-circle-box, .ru-stickyhero-visual-container .rurera-cart-review,
-  .ru-stickyhero-visual-container .rurera-bg-chart {
+  .ru-stickyhero-visual-container .rurera-bg-chart, .ru-stickyhero-visual-container .rurera-mobile-mockup {
     display: none;
   }
   #featureSwiper .swiper-slide {
