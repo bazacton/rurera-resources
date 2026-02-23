@@ -493,6 +493,90 @@
     {!! parseShortcode('[SC_rurera-activation-cta]') !!}
    {!! parseShortcode('[SC_testimonials-section-f]') !!}
    {!! parseShortcode('[SC_times-table-features-section-f]') !!}
+   <section class="trusted-section">
+  <div class="trusted-container">
+    <h2 class="trusted-title">
+      Trusted by over 3,000 institutions
+    </h2>
+
+    <div class="logo-slider-wrapper">
+      
+      <!-- Fade overlays -->
+      <div class="fade-left"></div>
+      <div class="fade-right"></div>
+
+      <!-- Pause Button -->
+      <button class="slider-toggle" id="sliderToggle">❚❚</button>
+
+      <!-- Slider -->
+      <div class="logo-slider" id="logoSlider">
+        <div class="logo-track">
+          <!-- Repeat logos twice for infinite effect -->
+          <img src="/assets/default/img/carousel-imgs/brand_asu.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_florida.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/logoClients.svg" alt="">
+
+          <!-- Duplicate -->
+          <img src="/assets/default/img/carousel-imgs/brand_asu.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_chapman.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_florida.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_rice.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_uic.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/logoClients.svg" alt="">
+        </div>
+        <div class="logo-track">
+          <!-- Repeat logos twice for infinite effect -->
+          <img src="/assets/default/img/carousel-imgs/Brand_Auckland.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Boston.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/logoClients2.svg" alt="">
+
+          <!-- Duplicate -->
+          <img src="/assets/default/img/carousel-imgs/Brand_Auckland.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Boston.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/logoClients2.svg" alt="">
+        </div>
+        <div class="logo-track">
+          <!-- Repeat logos twice for infinite effect -->
+          <img src="/assets/default/img/carousel-imgs/Brand_Clemson.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Stanford.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClients.svg" alt="">
+
+          <!-- Duplicate -->
+          <img src="/assets/default/img/carousel-imgs/Brand_Clemson.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Dallas.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Stanford.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClient-1.svg" alt="">
+          <img src="/assets/default/img/carousel-imgs/LogoClients.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <section class="rurera-setup-progress-section rurera-membership-section mb-60" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
