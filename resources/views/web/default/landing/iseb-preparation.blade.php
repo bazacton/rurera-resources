@@ -640,4 +640,21 @@ function updateCounter(swiper) {
 }
 
 </script>
+<script>
+  const slider = document.querySelector('.logo-track');
+  const toggleBtn = document.getElementById('sliderToggle');
+
+  let isPaused = false;
+
+  toggleBtn.addEventListener('click', function () {
+    if (isPaused) {
+      slider.style.animationPlayState = 'running';
+      toggleBtn.textContent = '❚❚';
+    } else {
+      slider.style.animationPlayState = 'paused';
+      toggleBtn.textContent = '▶';
+    }
+    isPaused = !isPaused;
+  });
+</script>
 @endpush
