@@ -16788,8 +16788,7 @@ section.feature-grid {
 }
 .logo-track {
   display: flex;
-  gap: 80px;
-  width: max-content;
+  gap: 15px 24px;
   will-change: transform;
   animation: scroll 40s linear infinite;
 }
