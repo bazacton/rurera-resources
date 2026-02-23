@@ -4189,8 +4189,12 @@
     .row.how-steps {
         margin-right: -15px;
     }
-    .feature-tabs-holder {
+    .feature-tabs-holder,
+    .image-container {
         height: auto;
+    }
+    .image-container {
+        margin-top: 25px;
     }
 }
 @media screen and (max-width: 640px) {
