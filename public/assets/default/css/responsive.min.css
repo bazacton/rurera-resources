@@ -4182,6 +4182,9 @@
     .rurera-process-card {
         padding-right: 15px;
     }
+    .rurera-help-content {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
