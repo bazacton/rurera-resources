@@ -494,7 +494,7 @@
    {!! parseShortcode('[SC_testimonials-section-f]') !!}
    {!! parseShortcode('[SC_times-table-features-section-f]') !!}
    <section class="trusted-section">
-  <div class="trusted-container">
+    <div class="trusted-container">
     <h2 class="trusted-title">
       Trusted by over 3,000 institutions
     </h2>
@@ -522,10 +522,6 @@
           <img src="/assets/default/img/carousel-imgs/brand_Iowa.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Southern2.svg" alt="">
           
-          
-          
-          
-
           <!-- Duplicate -->
           <img src="/assets/default/img/carousel-imgs/brand_asu.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/brand_utah.svg" alt="">
@@ -549,7 +545,6 @@
           <img src="/assets/default/img/carousel-imgs/Brand_Florida_uni.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_University2.svg" alt="">
           
-
           <!-- Duplicate -->
           <img src="/assets/default/img/carousel-imgs/Brand_Boston.svg" alt="">
           <img src="/assets/default/img/carousel-imgs/Brand_Southern.svg" alt="">
@@ -734,20 +729,21 @@ function updateCounter(swiper) {
 
 </script>
 <script>
-  const slider = document.querySelector('.logo-track');
   const toggleBtn = document.getElementById('sliderToggle');
+  const tracks = document.querySelectorAll('.logo-track');
 
-  let isPaused = false;
+  let paused = false;
 
   toggleBtn.addEventListener('click', function () {
-    if (isPaused) {
-      slider.style.animationPlayState = 'running';
-      toggleBtn.textContent = '❚❚';
-    } else {
-      slider.style.animationPlayState = 'paused';
-      toggleBtn.textContent = '▶';
-    }
-    isPaused = !isPaused;
+
+    paused = !paused;
+
+    tracks.forEach(track => {
+      track.style.animationPlayState = paused ? 'paused' : 'running';
+    });
+
+    toggleBtn.textContent = paused ? '▶' : '❚❚';
+
   });
 </script>
 @endpush
