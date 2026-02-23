@@ -6,6 +6,7 @@
 
 @section('content')
 {!! parseShortcode('[SC_times-table-features-section-f]') !!}
+{!! parseShortcode('[SC_rurera-work-process]') !!}
 
     <section class="rurera-column-section rurera-text-section mx-w-100 py-50 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
