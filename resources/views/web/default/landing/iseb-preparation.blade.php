@@ -734,16 +734,14 @@ function updateCounter(swiper) {
 
   let paused = false;
 
-  toggleBtn.addEventListener('click', function () {
-
+  toggleBtn.addEventListener('click', () => {
     paused = !paused;
 
     tracks.forEach(track => {
-      track.innerHTML += track.innerHTML;
+      track.style.animationPlayState = paused ? 'paused' : 'running';
     });
 
     toggleBtn.textContent = paused ? '▶' : '❚❚';
-
   });
 </script>
 @endpush
