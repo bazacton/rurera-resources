@@ -690,45 +690,6 @@ if (buttons) {
 </script>
 
 <script>
-const swiper1 = new Swiper('#featureSwiper', {
-    loop: true,
-    slidesPerView: "auto",
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    spaceBetween: 30,
-
-    preloadImages: false,
-    lazy: true,
-    observer: true,
-    observeParents: true,
-
-    navigation: {
-        nextEl: '#featureSwiperNext',
-        prevEl: '#featureSwiperPrev',
-    },
-
-    on: {
-        afterInit: function () {
-            this.slideToLoop(0, 0, false);
-            updateCounter(this);
-        },
-
-        slideChangeTransitionEnd: function () {
-            updateCounter(this);
-        }
-    }
-});
-
-function updateCounter(swiper) {
-    const totalSlides = swiper.slides.length - (swiper.loopedSlides * 2);
-    const currentSlide = swiper.realIndex + 1;
-
-    $('#totalSlides').text(totalSlides);
-    $('#currentSlide').text(currentSlide);
-}
-
-</script>
-<script>
   const toggleBtn = document.getElementById('sliderToggle');
   const tracks = document.querySelectorAll('.logo-track');
 
