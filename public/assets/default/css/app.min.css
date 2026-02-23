@@ -16785,8 +16785,10 @@ section.feature-grid {
 .logo-track {
   display: flex;
   gap: 80px;
-  align-items: center;
-  animation: scroll 30s linear infinite;
+  width: max-content;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+  animation: scroll 40s linear infinite;
 }
 .logo-track img {
   filter: grayscale(100%);
@@ -16802,12 +16804,8 @@ section.feature-grid {
 }
 /* Infinite Scroll */
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 /* Fade effect */
 .fade-left,
