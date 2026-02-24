@@ -2512,9 +2512,8 @@ Admin Questions Generator Page Style End
 .draggable-lists-chapter button svg {stroke: #6c757d;}
 .draggable-content-lists li.sub-chapter-parent {background-color: inherit !important; color: currentColor;}
 .draggable-content-lists li.sub-chapter-parent:first-child {margin-top: 0 !important;}
-.draggable-content-lists button {outline: none;}
+.draggable-content-lists button {outline: none;margin-bottom: 0 !important;}
 .draggable-lists-chapter .sub-topic-modal-btn {
-    margin-bottom: 0 !important;
     background-color: #c6f2d6;
     height: 28px;
     width: 28px;
