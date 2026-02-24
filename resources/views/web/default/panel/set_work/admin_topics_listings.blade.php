@@ -82,6 +82,7 @@
     background: #e5e5e5;
     position: absolute;
     pointer-events: none;
+    padding: 0;
 }
 .thumbs .range-input::-webkit-slider-runnable-track {
     height: 4px;
