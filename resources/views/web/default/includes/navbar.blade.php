@@ -20,7 +20,7 @@
     $navbarPages = isset( $navData['navbarPages'] )? $navData['navbarPages'] : array();
     $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
 
-    $no_menu_array = array('dashboard','learn', 'timestable', 'spells', 'books','tests','quests','analytics','marketing','setting');
+    $no_menu_array = array('dashboard','learn', 'timestable', 'spells', 'books','tests','quests','analytics','marketing','setting', 'set-work');
     $patterns = [];
 
     foreach ($no_menu_array as $item) {
