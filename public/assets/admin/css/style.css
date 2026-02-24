@@ -2529,6 +2529,9 @@ Admin Questions Generator Page Style End
     height: 16px;
     width: 16px;
 }
+.accordion-row .collapse-chevron-icon {
+    cursor: pointer;
+}
 .form-group select.questions_types.custom-select {height: calc(2.25rem + 2px);}
 .webinar-form .form-group textarea.form-control {max-height: 38px;}
 .webinar-form .form-group .select2-container--default .select2-selection--multiple {padding-bottom: 0; min-height: 38px;}
