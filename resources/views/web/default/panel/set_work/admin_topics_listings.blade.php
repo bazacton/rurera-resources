@@ -97,13 +97,55 @@
         pointer-events: none;
     }
     /*Range Slider Style Start*/
-    .range {position: relative; width: 100%;	height: auto; min-height: 80px;}
-    .range-container .range-input {width: 100%; position: absolute; top: 50%; z-index: 3; transform: translateY(-50%); -webkit-appearance: none; appearance: none; width: 100%; height: 4px; opacity: 0; margin: 0; }
-    .range-container .range-input::-webkit-slider-thumb {-webkit-appearance: none; appearance: none; width: 60px; height: 60px; cursor: pointer; border-radius: 50%;opacity: 0;}
-    .range-container .range-input::-moz-range-thumb {width: 60px; height: 60px;cursor: pointer; border-radius: 50%; opacity: 0;}
-    .range-slider_thumb {width: 50px; height: 50px;	border: 3px solid var(--primary);	border-radius: 50%;	position: absolute;	left: 0; top: 50%; transform: translateY(-50%);	background-color: #f4f4f4;	display: flex;justify-content: center;align-items: center;font-weight: 700;font-size: 14px;color: var(--primary);z-index: 2; margin-left: 2px;}
-    .range-slider_line {height: 0.5vmin; width: 99.777%; background-color: #e1e1e1; top: 50%; transform: translateY(-50%); left: 0; position: absolute; z-index: 1;}
-    .range-slider_line-fill {position: absolute;height: 0.5vmin;width: 0;background-color: var(--primary);}
+    .thumbs {
+    position: relative;
+    width: 100%;
+    }
+    .range-input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    outline: none;
+    background: #e5e5e5;
+    position: absolute;
+    pointer-events: none;
+    }
+
+    .range-input::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 4px;
+    }
+
+    .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #4f6df5;
+    cursor: pointer;
+    margin-top: -14px;
+    pointer-events: auto;
+    position: relative;
+    z-index: 2;
+    }
+
+    .range-input::-moz-range-track {
+    height: 4px;
+    background: #e5e5e5;
+    border-radius: 4px;
+    }
+
+    .range-input::-moz-range-thumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #4f6df5;
+    cursor: pointer;
+    pointer-events: auto;
+    }
     /*Range Slider Style End*/
     .range-container .track {
         position: absolute;
