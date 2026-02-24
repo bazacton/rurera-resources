@@ -71,6 +71,7 @@
 }
 /* Range Slider Style Start */
 .thumbs {
+    display: grid;
     position: relative;
     width: 100%;
 }
