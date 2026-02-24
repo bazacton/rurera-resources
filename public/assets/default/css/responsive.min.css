@@ -4196,6 +4196,9 @@
     .image-container {
         margin-top: 25px;
     }
+    .rurera-feature-slider {
+        min-height: auto;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
