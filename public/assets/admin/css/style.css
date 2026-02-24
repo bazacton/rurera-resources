@@ -1784,7 +1784,13 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .card-radio input:checked + .radio-btn .card-title {color: var(--primary);}
 .radio-buttons .card-radio .radio-btn {height: 100%;}
 .years-group .card-icon img {max-width: 100%;}
-.radio-btn .card-icon h3 {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0;}
+.radio-buttons .card-icon img {
+    border-radius: 3px;
+    width: 65px;
+    height: 45px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
 .populated-data .input-label,
 .assignment-create-modal .input-label {font-size: 14px; color: #666; font-weight: 400;}
 .rurera-notes {background-color: #edf3fa; border-left: 5px solid var(--blue); padding: 25px 15px; margin: 0 0 20px; line-height: 26px;}
