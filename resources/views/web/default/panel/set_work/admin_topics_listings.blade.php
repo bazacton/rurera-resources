@@ -164,7 +164,7 @@
 
 
     <!-- Subject filters -->
-    <div class="subject-filters col-md-12 col-lg-12 ">
+    <div class="subject-filters">
 
         @if(!empty( $parentData))
             <button type="button" class="chip parent-filters active" data-id="all"><span class="active-tick">✓</span> All</button>
