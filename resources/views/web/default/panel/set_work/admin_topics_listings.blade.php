@@ -2,8 +2,9 @@
 .range-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 22px;
     align-items: center;
+    margin: 0 0 25px;
 }
 .range-container .input-group {
     display: flex;
