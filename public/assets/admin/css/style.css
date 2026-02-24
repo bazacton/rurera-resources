@@ -2513,23 +2513,6 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li.sub-chapter-parent {background-color: inherit !important; color: currentColor;}
 .draggable-content-lists li.sub-chapter-parent:first-child {margin-top: 0 !important;}
 .draggable-content-lists button {outline: none;}
-.draggable-lists-chapter button {
-    margin-bottom: 0 !important;
-    background-color: #c6f2d6;
-    height: 28px;
-    width: 28px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-}
-.draggable-lists-chapter .sub-topic-modal-btn {
-    margin: 0 10px 0 0;
-}
-.draggable-lists-chapter button svg {
-    height: 20px;
-    width: 20px;
-}
 .form-group select.questions_types.custom-select {height: calc(2.25rem + 2px);}
 .webinar-form .form-group textarea.form-control {max-height: 38px;}
 .webinar-form .form-group .select2-container--default .select2-selection--multiple {padding-bottom: 0; min-height: 38px;}
