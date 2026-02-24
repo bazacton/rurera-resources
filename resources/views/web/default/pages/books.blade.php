@@ -32,6 +32,7 @@
                     </div>
                 </div>
             </div>
+             {!! parseShortcode('[SC_books-slider-student]') !!}
             @if( !empty( $books ))
             @foreach( $books as $book_category => $category_books)
             <div class="col-lg-12">
