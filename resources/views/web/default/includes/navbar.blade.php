@@ -231,7 +231,9 @@
                                             @foreach( $profile_navs as $profile_nav)
                                                 @php $profile_nav = $profile_nav->user;
 
-                                                pre($profile_nav);
+                                                if(!isset($profile_nav['id'])){
+                                                    continue;
+                                                }
                                                 @endphp
                                                 <a class="dropdown-item " href="/panel/switch_user/{{$profile_nav['id']}}">
                                                     <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
