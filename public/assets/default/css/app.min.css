@@ -16023,6 +16023,13 @@ footer.footer-home {
 .rurera-content-box {
     max-width: 400px;
 }
+.ru-feature-showcase aside {
+    flex: 0 0 auto;
+    max-width: fit-content;
+}
+.ru-feature-showcase .row {
+    justify-content: center;
+}
 .feature-badge {
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 10px;
