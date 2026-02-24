@@ -45,7 +45,7 @@
                                 <div class="rurera-webinar-tabs">
                                     <ul class="nav" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="mock-test-tab" data-toggle="tab" data-target="#mock-test" type="button" role="tab" aria-controls="mock-test" aria-selected="true">Mock Test Settings</button>
+                                            <button class="nav-link active" id="mock-test-tab" data-toggle="tab" data-target="#mock-test" type="button" role="tab" aria-controls="mock-test" aria-selected="true">Subject Settings</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link" id="sections-tab" data-toggle="tab" data-target="#sections" type="button" role="tab" aria-controls="sections" aria-selected="false">Topics/Sub-Topics</button>

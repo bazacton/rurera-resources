@@ -1,6 +1,6 @@
 <div id="chapterModalHtml" class="d-none">
     <div class="custom-modal-body">
-        <h2 class="section-title after-line">{{ trans('public.new_chapter') }}</h2>
+        <h2 class="section-title after-line">New Chapter</h2>
 
         <div class="js-content-form chapter-form mt-20" data-action="{{ getAdminPanelUrl() }}/chapters/store">
 
@@ -29,7 +29,7 @@
 
 
             <div class="form-group">
-                <label class="input-label">{{ trans('public.chapter_title') }}</label>
+                <label class="input-label">Chapter Title</label>
                 <input type="text" name="ajax[chapter][title]" class="form-control js-ajax-title" value=""/>
                 <span class="invalid-feedback"></span>
             </div>
