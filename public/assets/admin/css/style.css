@@ -1791,6 +1791,111 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     margin-bottom: 15px;
     object-fit: contain;
 }
+/* Subject Filter Style Start */
+.subject-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.subject-filters .chip {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+.subject-filters .chip.active {
+    border-color: #2b6ef3;
+    color: #2b6ef3;
+}
+.subject-filters .select-holder {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-right: 25px;
+    margin-left: auto;
+}
+.lms-choose-membership .subject-filters .select-holder:after {
+    border-color: #666;
+    height: 8px;
+    width: 8px;
+    margin-top: -5px;
+}
+.subject-filters .select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 0;
+    background-color: inherit;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.select-topics .topics-table-holder {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.select-topics .topics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.select-topics .topics-table thead {position: sticky;top: 48px;z-index: 2;}
+.select-topics:has(.selected-topics.rurera-hide) .topics-table thead {
+    top: 0;
+}
+.select-topics .topics-table th,
+.select-topics .topics-table td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    position: relative;
+}
+.select-topics .topics-table th {
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+}
+.select-topics .topics-table th:first-child {
+    border-radius: .625rem 0 0 0;
+}
+.select-topics .topics-table th:last-child {
+    border-radius: 0 .625rem 0 0;
+}
+.select-topics .topics-table tbody tr:hover {
+    background: #f9fbff;
+}
+.select-topics .topics-table input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: center;
+}
+.select-topics .topics-table input[type=checkbox]:checked {
+    border-color: transparent;
+    background-color: var(--primary);
+}
+.select-topics .topics-table input[type=checkbox]:checked:before {
+    content: "✔";
+    color: #fff;
+}
+.select-topics .muted {
+    color: #999;
+}
+/* Subject Filter Style End */
+
 .populated-data .input-label,
 .assignment-create-modal .input-label {font-size: 14px; color: #666; font-weight: 400;}
 .rurera-notes {background-color: #edf3fa; border-left: 5px solid var(--blue); padding: 25px 15px; margin: 0 0 20px; line-height: 26px;}
