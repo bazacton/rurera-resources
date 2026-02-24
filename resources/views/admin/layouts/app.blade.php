@@ -428,11 +428,6 @@
             });
         });
         /*Quiz Data Slide Function End*/
-        $(document).on('shown.bs.modal', function () {
-            if ($('.modal.show').length > 1) {
-                $('body').addClass('modal-open');
-            }
-        });
     </script>
 </body>
 </html>
