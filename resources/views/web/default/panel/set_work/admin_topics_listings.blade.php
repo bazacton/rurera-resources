@@ -57,7 +57,20 @@
     .range-container .range-input-text::placeholder {
         color: #666;
     }
-
+    .range-container .range-input::-webkit-slider-runnable-track {
+        background: #ccc;
+        height: 6px;
+        border-radius: 5px;
+    }
+    .range-container .range-input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        margin-top: -5px;
+        background-color: #434343;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+    }
     .range-container .unit-label {
         position: absolute;
         top: 50%;
