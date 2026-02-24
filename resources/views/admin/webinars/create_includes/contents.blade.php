@@ -9,9 +9,9 @@
             <label class="input-label d-block">Yeear Group</label>
             <select name="year_group_chapters" class="year_group_chapters custom-select" data-subject_id="{{$webinar->id}}">
                 @if(isset($webinarCategories) && $webinarCategories->count() > 0)
-                    <option value="all" selected="">All</option>
+                    <option value="all" selected="selected">All</option>
                     @foreach($webinarCategories as $categoryObj)
-                        <option value="{{$categoryObj->id}}" selected="">{{$categoryObj->getTitleAttribute()}}</option>
+                        <option value="{{$categoryObj->id}}">{{$categoryObj->getTitleAttribute()}}</option>
                     @endforeach
                 @endif
             </select>
