@@ -1124,4 +1124,11 @@
 
         });
     </script>
+	<script>
+		$(document).on('shown.bs.modal', function () {
+			if ($('.modal.show').length > 1) {
+				$('body').addClass('modal-open');
+			}
+		});
+	</script>
 @endpush
