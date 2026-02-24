@@ -2525,6 +2525,9 @@ Admin Questions Generator Page Style End
     border-radius: 100%;
     margin: 0 10px 0 0;
 }
+.draggable-lists-chapter .bulk-list-link i {
+    color: #6c757d;
+}
 .draggable-lists-chapter .sub-topic-modal-btn svg {
     height: 16px;
     width: 16px;
