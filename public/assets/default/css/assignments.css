@@ -339,6 +339,8 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 .select-topics .topics-table input[type=checkbox]:checked {
     border-color: transparent;
@@ -350,6 +352,9 @@
 }
 .select-topics .muted {
     color: #999;
+}
+.select-topics .topics-table td label {
+    margin: 0;
 }
 /* Progress bar */
 .select-topics .progress {
