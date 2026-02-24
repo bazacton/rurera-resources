@@ -1065,6 +1065,64 @@ $(document).on('change', '.year_group_chapters', function (e) {
         }
     });
 });
+
+
+
+$(document).on('click', '.chapter-form-submit', function (e) {
+    var parentObj = $(this).closest('.modal-body');
+    var chapter_id = parentObj.find('input[name="chapter_id"]').val();
+    var subject_id = parentObj.find('input[name="subject_id"]').val();
+    var chapter_name = parentObj.find('input[name="chapter_name"]').val();
+
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/topics_parts/update_chapter',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType: 'json',
+        data: {"chapter_id": chapter_id, "subject_id": subject_id, "chapter_name": chapter_name},
+        success: function (return_data) {
+            rurera_modal_alert(
+                return_data.status,
+                return_data.msg,
+                false, //confirmButton
+            );
+            if(return_data.status == 'success') {
+                parentObj.closest('.chapter-modal').modal('hide');
+                $(".year_group_chapters").change();
+            }
+        }
+    });
+});
+
+$(document).on('click', '.subchapter-form-submit', function (e) {
+    var parentObj = $(this).closest('.modal-body');
+    var sub_chapter_id = parentObj.find('input[name="sub_chapter_id"]').val();
+    var subject_id = parentObj.find('input[name="subject_id"]').val();
+    var sub_chapter_name = parentObj.find('input[name="sub_chapter_name"]').val();
+
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/topics_parts/update_sub_chapter',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType: 'json',
+        data: {"sub_chapter_id": sub_chapter_id, "subject_id": subject_id, "sub_chapter_name": sub_chapter_name},
+        success: function (return_data) {
+            rurera_modal_alert(
+                return_data.status,
+                return_data.msg,
+                false, //confirmButton
+            );
+            if(return_data.status == 'success') {
+                parentObj.closest('.subchapter-modal').modal('hide');
+                $(".year_group_chapters").change();
+            }
+        }
+    });
+});
 $(document).on('click', '.topic-form-submit', function (e) {
     var parentObj = $(this).closest('.modal-body');
     var topic_part_id = parentObj.find('input[name="topic_part_id"]').val();
