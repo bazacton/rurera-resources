@@ -101,7 +101,7 @@
     position: relative;
     width: 100%;
     }
-    .range-input {
+    .thumbs .range-input {
     -webkit-appearance: none;
     width: 100%;
     height: 4px;
@@ -112,12 +112,12 @@
     pointer-events: none;
     }
 
-    .range-input::-webkit-slider-runnable-track {
+    .thumbs .range-input::-webkit-slider-runnable-track {
     height: 4px;
     border-radius: 4px;
     }
 
-    .range-input::-webkit-slider-thumb {
+    .thumbs .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 32px;
     height: 32px;
@@ -131,13 +131,13 @@
     z-index: 2;
     }
 
-    .range-input::-moz-range-track {
+    .thumbs .range-input::-moz-range-track {
     height: 4px;
     background: #e5e5e5;
     border-radius: 4px;
     }
 
-    .range-input::-moz-range-thumb {
+    .thumbs .range-input::-moz-range-thumb {
     width: 32px;
     height: 32px;
     border-radius: 50%;
