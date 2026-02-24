@@ -1073,6 +1073,7 @@ $(document).on('click', '.chapter-form-submit', function (e) {
     var chapter_id = parentObj.find('input[name="chapter_id"]').val();
     var subject_id = parentObj.find('input[name="subject_id"]').val();
     var chapter_name = parentObj.find('input[name="chapter_name"]').val();
+    var chapter_slug = parentObj.find('input[name="chapter_slug"]').val();
 
     jQuery.ajax({
         type: "POST",
@@ -1081,7 +1082,7 @@ $(document).on('click', '.chapter-form-submit', function (e) {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         dataType: 'json',
-        data: {"chapter_id": chapter_id, "subject_id": subject_id, "chapter_name": chapter_name},
+        data: {"chapter_id": chapter_id, "chapter_slug": chapter_slug, "subject_id": subject_id, "chapter_name": chapter_name},
         success: function (return_data) {
             rurera_modal_alert(
                 return_data.status,
