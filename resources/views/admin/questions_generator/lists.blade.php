@@ -363,7 +363,7 @@
 							<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
 						</div>
 						<div class="col-md-4 col-lg-4">
-                            <div class="form-group mt-15 ">
+                            <div class="form-group ">
                                 <label class="input-label d-block">Auto Generated Questions</label>
                                 <select name="mock_type"
                                         class="form-control conditional_field_parent" data-placeholder="Select Type">
