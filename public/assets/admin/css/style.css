@@ -1835,6 +1835,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     font-size: 14px;
     color: #666;
     font-weight: 500;
+    outline: none;
 }
 
 .select-topics .topics-table-holder {
