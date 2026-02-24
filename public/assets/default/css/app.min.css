@@ -9687,7 +9687,7 @@ body .flipbook-data {
   height: 40px;
   width: 40px;
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 .products-filter .sub-header-iconlist li {
   width: 16%;
