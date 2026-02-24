@@ -1779,6 +1779,10 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .radio-btn .card-icon h3,
 .radio-btn .card-icon .card-title {color: #555; font-size: .875rem; display: block; font-weight: 500; margin-bottom: 0; overflow: hidden;}
 .radio-buttons .card-radio .radio-btn {border: 0; min-height: auto; box-shadow: none; padding: 0;}
+.card-radio:has(input:checked) {border-color: var(--primary);}
+.card-radio input:checked + .radio-btn h3,
+.card-radio input:checked + .radio-btn .card-title {color: var(--primary);}
+.radio-buttons .card-radio .radio-btn {height: 100%;}
 .years-group .card-icon img {max-width: 100%;}
 .radio-btn .card-icon h3 {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0;}
 .populated-data .input-label,
