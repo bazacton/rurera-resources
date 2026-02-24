@@ -57,20 +57,7 @@
     .range-container .range-input-text::placeholder {
         color: #666;
     }
-    .range-container .range-input::-webkit-slider-runnable-track {
-        background: #ccc;
-        height: 6px;
-        border-radius: 5px;
-    }
-    .range-container .range-input::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        margin-top: -5px;
-        background-color: #434343;
-        height: 16px;
-        width: 16px;
-        border-radius: 50%;
-    }
+
     .range-container .unit-label {
         position: absolute;
         top: 50%;
@@ -116,7 +103,7 @@
         height: 30px;
         border: none;
         border-radius: 4px;
-        background-color: white;
+        background-color: var(--primary);
         transition: 300ms;
         pointer-events: auto;
         cursor: pointer;
