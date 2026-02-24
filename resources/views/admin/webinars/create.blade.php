@@ -1054,11 +1054,360 @@
             </div>
         </div>
     </section>
+
+    <div class="modal sub-topic-modal fade" id="movetopicPart" tabindex="-1" role="dialog" aria-labelledby="movetopicPart" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <form method="post" action="javascript:;" id="moveTopicForm" class="moveTopicForm">
+                    {{ csrf_field() }}
+                <div class="modal-body">
+                    <input type="hidden" name="sub_chapter_id" class="sub_chapter_id" value="0">
+                    <input type="hidden" name="current_year_id" class="move_topic_category_id" value="0">
+                    <input type="hidden" name="current_subject_id" value="{{$webinar->id}}">
+                    <div aria-labelledby="movetopicPart" role="tabpanel" style="">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="panel-collapse text-gray">
+                            <div class="js-content-form quiz-form webinar-form">
+                                <section>
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="">
+                                                    <h2 class="section-title">Move Topic Part</h2>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="input-label">{{trans('admin/main.category')}}</label>
+                                                    <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses">
+                                                        <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                        @foreach($categories as $category)
+                                                            @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                <optgroup label="{{  $category->title }}">
+                                                                    @foreach($category->subCategories as $subCategory)
+                                                                        <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'glossary_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                                    @endforeach
+                                                                </optgroup>
+                                                            @else
+                                                                <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'glossary_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                            @endif
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Subjects</label>
+                                                    <select data-return_type="option"
+                                                            class="ajax-courses-dropdown year_subjects form-control select2"
+                                                            id="subject_id" name="subject_id">
+                                                        <option disabled selected>Subject</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="input-label">Topic</label>
+                                                    <select id="chapter_id"
+                                                            class="form-control populate ajax-chapter-dropdown "
+                                                            name="chapter_id">
+                                                        <option value="">Please select year, subject</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="input-label">Sub Topic</label>
+                                                    <select id="chapter_id"
+                                                            class="form-control populate ajax-subchapter-dropdown "
+                                                            name="sub_chapter_id">
+                                                        <option value="">Please select year, subject, Topic</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="mt-20 mb-20">
+                                    <button type="submit" class="topic-move-form-submit btn btn-sm btn-primary">Move</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal sub-topic-modal fade" id="movesubTopic" tabindex="-1" role="dialog" aria-labelledby="movesubTopic" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <form method="post" action="javascript:;" id="moveSubChapterForm" class="moveSubChapterForm">
+                    {{ csrf_field() }}
+                    <div class="modal-body">
+                        <input type="hidden" name="sub_chapter_id" class="sub_chapter_id" value="0">
+                        <input type="hidden" name="current_subject_id" value="{{$webinar->id}}">
+                        <div aria-labelledby="movesubTopic" role="tabpanel" style="">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <div class="panel-collapse text-gray">
+                                <div class="js-content-form quiz-form webinar-form">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="">
+                                                        <h2 class="section-title">Move Sub Chapter</h2>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">{{trans('admin/main.category')}}</label>
+                                                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses">
+                                                            <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                            @foreach($categories as $category)
+                                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                    <optgroup label="{{  $category->title }}">
+                                                                        @foreach($category->subCategories as $subCategory)
+                                                                            <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'glossary_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                                        @endforeach
+                                                                    </optgroup>
+                                                                @else
+                                                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'glossary_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                                @endif
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Subjects</label>
+                                                        <select data-return_type="option"
+                                                                class="ajax-courses-dropdown year_subjects form-control select2"
+                                                                id="subject_id" name="subject_id">
+                                                            <option disabled selected>Subject</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Topic</label>
+                                                        <select id="chapter_id"
+                                                                class="form-control populate ajax-chapter-dropdown "
+                                                                name="chapter_id">
+                                                            <option value="">Please select year, subject</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div class="mt-20 mb-20">
+                                        <button type="submit" class="subchapter-move-form-submit btn btn-sm btn-primary">Move</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal chapter-modal fade" id="moveChapter" tabindex="-1" role="dialog" aria-labelledby="moveChapter" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <form method="post" action="javascript:;" id="moveChapterForm" class="moveChapterForm">
+                    {{ csrf_field() }}
+                    <div class="modal-body">
+                        <input type="hidden" name="chapter_id" class="chapter_id_chapter" value="0">
+                        <input type="hidden" name="current_subject_id" value="{{$webinar->id}}">
+                        <div aria-labelledby="moveChapter" role="tabpanel" style="">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <div class="panel-collapse text-gray">
+                                <div class="js-content-form quiz-form webinar-form">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="">
+                                                        <h2 class="section-title">Move Chapter</h2>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">{{trans('admin/main.category')}}</label>
+                                                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses">
+                                                            <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                            @foreach($categories as $category)
+                                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                    <optgroup label="{{  $category->title }}">
+                                                                        @foreach($category->subCategories as $subCategory)
+                                                                            <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'glossary_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                                        @endforeach
+                                                                    </optgroup>
+                                                                @else
+                                                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'glossary_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                                @endif
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Subjects</label>
+                                                        <select data-return_type="option"
+                                                                class="ajax-courses-dropdown year_subjects form-control select2"
+                                                                id="subject_id" name="subject_id">
+                                                            <option disabled selected>Subject</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div class="mt-20 mb-20">
+                                        <button type="submit" class="subchapter-move-form-submit btn btn-sm btn-primary">Move</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
     <script>
+        $(document).on('submit', '.moveTopicForm', function () {
+            var loaderDiv = $('.moveTopicForm');
+            rurera_loader(loaderDiv, 'div');
+            var formData = new FormData($(this)[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/webinars/move_topic_part',
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $("#movetopicPart").modal('hide');
+                    rurera_modal_alert(
+                        return_data.status,
+                        return_data.msg,
+                        false, //confirmButton
+                    );
+                    $(".year_group_chapters").change();
+                    rurera_remove_loader(loaderDiv, 'div');
+                }
+            });
 
+        });
+
+        $(document).on('click', '.move-subtopic-part-btn', function () {
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            $(".sub_chapter_id").val(sub_chapter_id);
+        });
+        $(document).on('submit', '.moveSubChapterForm', function () {
+            var loaderDiv = $('.moveSubChapterForm');
+            rurera_loader(loaderDiv, 'div');
+            var formData = new FormData($(this)[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/webinars/move_sub_chapter',
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $("#movetopicPart").modal('hide');
+                    rurera_modal_alert(
+                        return_data.status,
+                        return_data.msg,
+                        false, //confirmButton
+                    );
+                    rurera_remove_loader(loaderDiv, 'div');
+                    $(".year_group_chapters").change();
+                }
+            });
+
+        });
+
+
+        $(document).on('click', '.move-chapter-btn', function () {
+            var chapter_id = $(this).attr('data-chapter_id');
+            $(".chapter_id_chapter").val(chapter_id);
+        });
+        $(document).on('submit', '.moveChapterForm', function () {
+            var loaderDiv = $('.moveChapterForm');
+            rurera_loader(loaderDiv, 'div');
+            var formData = new FormData($(this)[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/webinars/move_chapter',
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $("#moveChapter").modal('hide');
+                    rurera_modal_alert(
+                        return_data.status,
+                        return_data.msg,
+                        false, //confirmButton
+                    );
+                    $(".year_group_chapters").change();
+                    rurera_remove_loader(loaderDiv, 'div');
+
+                }
+            });
+
+        });
 
         $("body").on("change", ".webinar_practice_type", function (e) {
             var webinar_practice_type = $(this).val();
@@ -1138,6 +1487,56 @@
                 // Update previous selection for next check
                 $select.data('previous', currentValues.slice());
             });
+        });
+
+        $(document).on('change', '.ajax-category-courses', function () {
+            var category_id = $(this).val();
+            var course_id = $(this).attr('data-course_id');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/courses_by_categories',
+                data: {'category_id': category_id, 'course_id': course_id},
+                success: function (return_data) {
+                    $(".ajax-courses-dropdown").html(return_data);
+                    $(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
+                    $('.ajax-courses-dropdown').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-courses-dropdown', function () {
+            var course_id = $(this).val();
+            var chapter_id = $(this).attr('data-chapter_id');
+
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/chapters_by_course',
+                data: {'course_id': course_id, 'chapter_id': chapter_id},
+                success: function (return_data) {
+                    $(".ajax-chapter-dropdown").html(return_data);
+                    $('.ajax-chapter-dropdown').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-chapter-dropdown', function () {
+            var chapter_id = $(this).val();
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/sub_chapters_by_chapter',
+                data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
+                success: function (return_data) {
+                    $(".ajax-subchapter-dropdown").html(return_data);
+                }
+            });
+        });
+
+        $(document).on('click', '.move-topic-part-btn', function () {
+            var topic_part_id = $(this).attr('data-topic_part_id');
+            var year_id = $(this).attr('data-year_id');
+            $(".topic_part_id").val(topic_part_id);
+            $(".move_topic_category_id").val(year_id);
         });
 
 
