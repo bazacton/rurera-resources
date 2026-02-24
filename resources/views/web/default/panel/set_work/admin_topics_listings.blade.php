@@ -1,107 +1,79 @@
 <style>
-
-    .range-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-
-    .range-container .input-group {
-        display: flex;
-        gap: 0;
-        background: #D1D2E8;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .range-container .input-wrapper {
-        position: relative;
-        flex: 1;
-    }
-
-    .range-container .input-group::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        background: #333;
-        transform: translateX(-50%);
-    }
-
-    .range-container .range-input-text {
-        width: 180px;
-        height: 50px;
-        border: none;
-        background: transparent;
-        font-size: 18px;
-        font-weight: 700;
-        text-align: center;
-        color: #1D1E27;
-        outline: none;
-        padding: 0 10px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-
-    .range-container .range-input-text::-webkit-outer-spin-button,
-    .range-container .range-input-text::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    .range-container .range-input-text::placeholder {
-        color: #666;
-    }
-
-    .range-container .unit-label {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 14px;
-        color: #666;
-        font-weight: 300;
-        pointer-events: none;
-        right: 10px;
-    }
-
-    .range-container .thumbs {
-        display: grid;
-    }
-
-    .range-container .range {
-        --range-track-top: 10px;
-        --min-thumb-percent: 0;
-        --max-thumb-percent: 75;
-        --range-progress-w: calc(
-            (var(--max-thumb-percent) - var(--min-thumb-percent)) * 1%
-        );
-        --range-progress-left: calc(var(--min-thumb-percent) * 1%);
-
-        position: relative;
-        display: grid;
-        width: 400px;
-    }
-
-    .range-container .range-input {
-        width: 100%;
-        height: 30px;
-        grid-area: 1 / 1;
-        border-radius: 10px;
-        appearance: none;
-        background: none;
-        pointer-events: none;
-    }
-    /*Range Slider Style Start*/
-    .thumbs {
+.range-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.range-container .input-group {
+    display: flex;
+    gap: 0;
+    background: #D1D2E8;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.range-container .input-wrapper {
+    position: relative;
+    flex: 1;
+}
+.range-container .input-group::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #333;
+    transform: translateX(-50%);
+}
+.range-container .range-input-text {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #1D1E27;
+    outline: none;
+    padding: 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.range-container .range-input-text::placeholder {
+    color: #666;
+}
+.range-container .unit-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #666;
+    font-weight: 300;
+    pointer-events: none;
+    right: 10px;
+}
+.range-container .range {
+    position: relative;
+    width: 400px;
+}
+.range-container .range-input {
+    width: 100%;
+    height: 10px;
+    grid-area: 1 / 1;
+    border-radius: 10px;
+    appearance: none;
+    background: none;
+    pointer-events: none;
+}
+/* Range Slider Style Start */
+.thumbs {
     position: relative;
     width: 100%;
-    }
-    .thumbs .range-input {
+}
+.thumbs .range-input {
     -webkit-appearance: none;
     width: 100%;
     height: 4px;
@@ -110,14 +82,12 @@
     background: #e5e5e5;
     position: absolute;
     pointer-events: none;
-    }
-
-    .thumbs .range-input::-webkit-slider-runnable-track {
+}
+.thumbs .range-input::-webkit-slider-runnable-track {
     height: 4px;
     border-radius: 4px;
-    }
-
-    .thumbs .range-input::-webkit-slider-thumb {
+}
+.thumbs .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 32px;
     height: 32px;
@@ -129,15 +99,13 @@
     pointer-events: auto;
     position: relative;
     z-index: 2;
-    }
-
-    .thumbs .range-input::-moz-range-track {
+}
+.thumbs .range-input::-moz-range-track {
     height: 4px;
     background: #e5e5e5;
     border-radius: 4px;
-    }
-
-    .thumbs .range-input::-moz-range-thumb {
+}
+.thumbs .range-input::-moz-range-thumb {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -145,28 +113,27 @@
     border: 3px solid #4f6df5;
     cursor: pointer;
     pointer-events: auto;
-    }
-    /*Range Slider Style End*/
-    .range-container .track {
-        position: absolute;
-        top: var(--range-track-top);
-        width: 100%;
-        height: 8px;
-        border-radius: 10px;
-        background-color: #ababab;
-        z-index: -1;
-    }
-
-    .progress {
-        position: absolute;
-        top: var(--range-track-top);
-        left: var(--range-progress-left);
-        width: var(--range-progress-w);
-        height: 8px;
-        border-radius: 10px;
-        background-color: white;
-        z-index: -1;
-    }
+}
+/* Range Slider Style End */
+.range-container .track {
+    position: absolute;
+    top: var(--range-track-top);
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #ababab;
+    z-index: -1;
+}
+.progress {
+    position: absolute;
+    top: var(--range-track-top);
+    left: var(--range-progress-left);
+    width: var(--range-progress-w);
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+    z-index: -1;
+}
 </style>
 <div class="select-topics col-md-12 col-lg-12 ">
     <h3 class="font-16 font-weight-bold">Select Topics</h3>
