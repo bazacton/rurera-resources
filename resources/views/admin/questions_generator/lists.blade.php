@@ -362,7 +362,7 @@
 						<div class="col-md-12 col-lg-12">
 							<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
 						</div>
-						<div class="col-md-12 col-lg-12">
+						<div class="col-md-4 col-lg-4">
                             <div class="form-group mt-15 ">
                                 <label class="input-label d-block">Auto Generated Questions</label>
                                 <select name="mock_type"
@@ -372,7 +372,7 @@
                                 </select>
                             </div>
 						</div>
-						<div class="col-md-12 col-lg-12">
+						<div class="col-md-4 col-lg-4">
 							<div class="form-group">
 								<label class="input-label">Exam Category</label>
 								<select name="list_sub_type" data-plugin-selectTwo class="form-control populate list_sub_type ">
@@ -384,7 +384,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-12 ">
+						<div class="col-md-4 col-lg-4 ">
 							<div class="form-group">
 								<label class="input-label">{{trans('admin/main.category')}}</label>
 								<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
@@ -409,26 +409,17 @@
 
 
                         <div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
-
-
-                        <div class="col-md-12 col-lg-12">
-                            <div class="form-group mt-15 ">
-                                <label class="input-label d-block">Quiz Title</label>
-                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-12">
-                        <div class="form-group">
-                            <label class="input-label">Quiz Image</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button
-                                        type="button"
-                                        class="input-group-text rurera-file-manager"
-                                        data-input="image"
-                                        data-preview="preview_img-image"
-                                        data-image_attr='{
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Quiz Image</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<button
+												type="button"
+												class="input-group-text rurera-file-manager"
+												data-input="image"
+												data-preview="preview_img-image"
+												data-image_attr='{
                                                                     "upload_type":"gallery",
                                                                     "upload_dir":"public",
                                                                     "upload_path":"/quiz",
@@ -437,32 +428,41 @@
                                                                     "hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
                                                                     "field_name":"quiz_image"
                                                                 }'
-                                        data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-                                    >
-                                        <i class="fa fa-upload"></i>
-                                    </button>
-                                    <div class="preview_img-image">
-                                    </div>
-                                </div>
+												data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+										>
+											<i class="fa fa-upload"></i>
+										</button>
+										<div class="preview_img-image">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-md-3 col-lg-3">
+                            <div class="form-group mt-15 ">
+                                <label class="input-label d-block">Quiz Title</label>
+                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
                             </div>
                         </div>
-                        </div>
 
-                        <div class="col-md-12 col-lg-12">
+
+
+                        <div class="col-md-3 col-lg-3">
                             <div class="form-group mt-15 ">
                                 <label class="input-label d-block">Quiz Slug</label>
                                 <input type="text" name="quiz_slug" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-md-12 col-lg-12">
+                        <div class="col-md-3 col-lg-3">
                             <div class="form-group mt-15 ">
                                 <label class="input-label d-block">Total Time (Minutes)</label>
                                 <input type="number" name="total_time" class="form-control rurera-req-field">
                             </div>
                         </div>
 
-                        <div class="col-md-12 col-lg-12 no_of_questions_field">
+                        <div class="col-md-3 col-lg-3 no_of_questions_field">
                             <div class="form-group mt-15">
 
                                 <div class="question-range-info text-muted mb-1"></div>
