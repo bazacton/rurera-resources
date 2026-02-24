@@ -1977,7 +1977,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 }
 /*Select Topic Style End*/
 /*Range Slider Style Start*/
-.range-slider {position: relative; width: 100%;	height: auto; min-height: 80px;}
+.range {position: relative; width: 100%;	height: auto; min-height: 80px;}
 .range-slider-field {width: 100%; position: absolute; top: 50%; z-index: 3; transform: translateY(-50%); -webkit-appearance: none; appearance: none; width: 100%; height: 4px; opacity: 0; margin: 0; }
 .range-slider-field::-webkit-slider-thumb {-webkit-appearance: none; appearance: none; width: 60px; height: 60px; cursor: pointer; border-radius: 50%;opacity: 0;}
 .range-slider-field::-moz-range-thumb {width: 60px; height: 60px;cursor: pointer; border-radius: 50%; opacity: 0;}
