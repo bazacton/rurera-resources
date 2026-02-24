@@ -1125,8 +1125,8 @@
         });
     </script>
 	<script>
-		$(document).on('shown.bs.modal', function () {
-			if ($('.modal.show').length > 1) {
+		$(document).on('hidden.bs.modal', function () {
+			if ($('.modal.show').length > 0) {
 				$('body').addClass('modal-open');
 			}
 		});
