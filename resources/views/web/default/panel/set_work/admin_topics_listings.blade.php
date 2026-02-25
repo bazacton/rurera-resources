@@ -13,6 +13,7 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    max-width: 250px;
 }
 .range-container .input-wrapper {
     position: relative;
@@ -29,12 +30,10 @@
     transform: translateX(-50%);
 }
 .range-container .range-input-text {
-    width: 180px;
-    height: 50px;
+    width: 100px;
+    height: 36px;
     border: none;
     background: transparent;
-    font-size: 18px;
-    font-weight: 700;
     text-align: center;
     color: #1D1E27;
     outline: none;
