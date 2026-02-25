@@ -163,6 +163,184 @@ Sub Pages Style
 .sound-list {margin-bottom: 25px;}
 .sound-card .close {position: absolute; right: -12px; top: -30px;}
 /*Books Sound Card Style End*/
+.book-section{
+background:#fff;
+border-radius:16px;
+box-shadow:0 6px 18px rgba(0,0,0,.06);
+overflow:hidden;
+}
+.book-details{
+width:480px;
+max-width:480px;
+flex:0 0 480px;
+border-right:1px solid #eee;
+}
+.book-cover-lg{
+width:130px;
+height:184px;
+object-fit:cover;
+border-radius:8px;
+}
+.rating-pill{
+display:inline-flex;
+align-items:center;
+padding:.25rem .5rem;
+border-radius:12px;
+background:#fff4c2;
+color:#c59200;
+font-weight:700;
+}
+.meta small{color:#6c757d}
+.progress{height:6px;border-radius:999px;background:#f1f3f5}
+.progress-bar{background:#ffd166}
+.book-title{
+font-weight:700;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.reading-slider > h5{margin-bottom:1rem}
+.book-details h6{
+font-weight:700;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+margin-bottom:.25rem;
+}
+.book-author{color:#6c757d}
+.meta-box{
+background:#fff;
+border:1px solid #eceff1;
+border-radius:14px;
+padding:1rem 1.1rem;
+box-shadow:0 1px 2px rgba(0,0,0,.03);
+}
+.meta-value{
+color:#c59200;
+font-weight:700;
+font-size:1rem;
+line-height:1.4;
+}
+.meta-label{
+color:#6c757d;
+font-size:.9rem;
+line-height:1.4;
+}
+
+.track-wrap{
+position:relative;
+flex:1 1 auto;
+min-width:0;
+}
+.book-track{
+display:flex;
+align-items:flex-start;
+overflow-x:auto;
+overflow-y:hidden;
+scroll-behavior:smooth;
+padding:24px 56px 24px 56px;
+scroll-snap-type:x mandatory;
+}
+.book-track::-webkit-scrollbar{display:none}
+.book-track{ -ms-overflow-style:none; scrollbar-width:none }
+.book-card{
+flex:0 0 auto;
+width:120px;
+margin-right:16px;
+scroll-snap-align:start;
+transform:translateZ(0);
+transition:transform .2s ease, box-shadow .2s ease;
+}
+.book-card img{
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:8px;
+display:block;
+}
+.book-card.active{
+transform:scale(1.03);
+box-shadow:0 12px 24px rgba(0,0,0,.12);
+}
+.fade-right{
+position:absolute;
+top:0;
+right:0;
+width:80px;
+height:100%;
+pointer-events:none;
+background:linear-gradient(90deg, rgba(255,255,255,0) 0%, #fff 70%);
+}
+.dots{
+position:absolute;
+left:50%;
+bottom:10px;
+transform:translateX(-50%);
+display:flex;
+align-items:center;
+padding:4px 8px;
+border-radius:999px;
+background:rgba(255,255,255,.8);
+}
+.dot{
+width:7px;
+height:7px;
+border-radius:999px;
+background:#d7dbe0;
+border:0;
+margin:0 3px;
+padding:0;
+outline:0;
+transition:all .2s ease;
+}
+.dot.active{
+width:18px;
+background:#ffc107;
+}
+.arrow-right{
+position:absolute;
+right:8px;
+top:50%;
+transform:translateY(-50%);
+z-index:5;
+border-radius:999px;
+width:40px;height:40px;
+display:flex;align-items:center;justify-content:center;
+box-shadow:0 4px 10px rgba(0,0,0,.12);
+}
+.arrow-right[disabled]{
+opacity:.35;
+pointer-events:none;
+}
+.arrow-left{
+position:absolute;
+left:8px;
+top:50%;
+transform:translateY(-50%);
+z-index:5;
+border-radius:999px;
+width:40px;height:40px;
+display:flex;align-items:center;justify-content:center;
+box-shadow:0 4px 10px rgba(0,0,0,.12);
+}
+.arrow-left[disabled]{
+opacity:.35;
+pointer-events:none;
+}
+.stat-card svg{display:block}
+.stat-card path.fill{opacity:.15}
+.stat-card.green .stroke{stroke:#4caf50}
+.stat-card.green .fill{fill:#4caf50}
+.stat-card.red .stroke{stroke:#f44336}
+.stat-card.red .fill{fill:#f44336}
+.stat-card.blue .stroke{stroke:#2196f3}
+.stat-card.blue .fill{fill:#2196f3}
+@media (max-width: 767.98px){
+.book-details{width:100%;max-width:100%;flex:0 0 100%;border-right:0;border-bottom:1px solid #eee}
+.book-cover-lg{width:96px;height:140px}
+.book-card{width:96px}
+.book-track{padding:16px 56px 16px 16px}
+}
 
 /*****************************
 Books Page | Student Panel Style End
