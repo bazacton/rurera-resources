@@ -81,6 +81,7 @@
             </div>
         </div>
     </section>
+    {!! parseShortcode('[SC_testimonials-section-f]') !!}
     <section class="rurera-column-section rurera-text-section exploring-curriculum mx-w-100 mt-0 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
