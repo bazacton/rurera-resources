@@ -486,8 +486,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .table {color: inherit;}
 .table td, .table:not(.table-bordered) th {border-top: none;}
 .table:not(.table-sm):not(.table-md):not(.dataTable) td,
-.table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 15px; height: 60px; vertical-align: middle; text-align: left !important; color: #1d293d;}
-.table:not(.table-sm):not(.table-md):not(.dataTable) th {text-transform: uppercase; padding: 10px 15px; font-size: 14px;}
+.table:not(.table-sm):not(.table-md):not(.dataTable) th {text-transform: uppercase; padding: 10px; height: 60px; vertical-align: middle; text-align: left !important; color: #1d293d;}
 .table:not(.table-sm) tr th {border-bottom: none; background-color: rgba(0, 0, 0, 0.01); color: #666; padding-top: 15px; padding-bottom: 15px;}
 .table.table-md th,
 .table.table-md td {padding: 10px 15px;}
