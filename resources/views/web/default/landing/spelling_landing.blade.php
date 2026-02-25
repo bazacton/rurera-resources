@@ -104,12 +104,11 @@
             </div>
         </div>
     </section>
-   {!! parseShortcode('[SC_accordion-slider-spelling-section-f]') !!}
+ 
     
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
     
-
-    {!! parseShortcode('[SC_accordion-slider-section-f]') !!}
+    {!! parseShortcode('[SC_accordion-slider-spelling-section-f]') !!}
     {!! parseShortcode('[SC_ISEB-parent-account-section-f]') !!}
 
     @php
