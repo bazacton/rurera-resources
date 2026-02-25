@@ -689,6 +689,13 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .btn:active:focus {box-shadow: none !important; outline: none;}
 .btn.btn-icon-split i, .dropdown-item.has-icon i {text-align: center; width: 15px; font-size: 15px; float: left; margin-right: 10px;}
 .btn {font-weight: 600; font-size: 12px; line-height: 24px; padding: .3rem .8rem; letter-spacing: .5px;}
+.upload-btn.rurera-file-manager {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.upload-btn.rurera-file-manager i {
+    margin-right: 5px;
+}
 .btn.btn-icon-split {position: relative; }
 .btn.btn-icon-split i {position: absolute; left: 0; top: 0; height: 100%; width: 45px; border-radius: 3px 0 0 3px; line-height: 32px; }
 .btn.btn-icon-split div {margin-left: 40px; }
