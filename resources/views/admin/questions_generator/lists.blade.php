@@ -421,7 +421,9 @@
 															<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
 
 															</div>
-															<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
+															<div class="col-12">
+																<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
+															</div>
 															<div class="col-md-12 col-lg-12">
 																<div class="form-group quiz-image-group">
 																	<label class="input-label d-block mb-3">Quiz Image</label>
