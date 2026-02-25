@@ -694,6 +694,8 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
     color: var(--primary);
 }
 .upload-btn.rurera-file-manager:hover,
+.upload-btn.btn:not(.btn-social):not(.btn-social-icon):active, 
+.upload-btn.btn:not(.btn-social):not(.btn-social-icon):focus, 
 .upload-btn.btn:not(.btn-social):not(.btn-social-icon):hover {
     border-color: var(--primary);
 }
