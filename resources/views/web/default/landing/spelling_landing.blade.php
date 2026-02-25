@@ -275,6 +275,7 @@
         </div>
     </div>
 </section>
+{!! parseShortcode('[SC_trusted-partner-section-f]') !!}
 {!! parseShortcode('[SC_spelling-page-faqs-f]') !!}
 {!! parseShortcode('[SC_spelling-help-section-f]') !!}
 @endsection
