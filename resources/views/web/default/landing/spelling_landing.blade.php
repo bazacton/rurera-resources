@@ -6,7 +6,81 @@
 
 @section('content')
 {!! parseShortcode('[SC_spelling-page-feature-section-f]') !!}
-{!! parseShortcode('[SC_wordlist-work-process]') !!}    
+<section class="rurera-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-50">
+                        <h2 class="mt-0 mb-10 text-white font-40">Improve your Spelling and Vocabulary with Rurera
+                        </h2>
+                        <p class="text-white font-19">
+                            See how Rurera helps you master spelling and vocabulary with easy-to-use tools and personalized support.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="process-holder">
+                        <ul class="process-list d-flex justify-content-center steps-3 has-bg">
+                            <li class="process-item"><a href="#" class="text-white">step 1</a></li>
+                            <li class="process-item"><a href="#" class="text-white">step 2</a></li>
+                            <li class="process-item"><a href="#" class="text-white">step 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="process-card-holder">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                <div class="process-card mt-40 mb-30 text-center">
+                                    <div class="process-step-number">
+                                        <span>Step 1</span>
+                                    </div>
+                                    <div class="process-card-body">
+                                        <div class="text-holder">
+                                            <h3 class="post-title text-white">Custom Word Lists</h3>
+                                            <p class="mt-15 text-white">
+                                                Use personalized lists to focus on the words you need to learn.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                <div class="process-card mt-40 mb-30 text-center">
+                                    <div class="process-step-number">
+                                        <span>Step 2</span>
+                                    </div>
+                                    <div class="process-card-body">
+                                        <div class="text-holder">
+                                            <h3 class="post-title text-white"> Fun Learning Quizzes</h3>
+                                            <p class="mt-15 text-white">
+                                                Enjoy interactive activities that make spelling and vocabulary practice exciting.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                <div class="process-card mt-40 mb-30 text-center">
+                                    <div class="process-step-number">
+                                        <span>Step 3</span>
+                                    </div>
+                                    <div class="process-card-body">
+                                        <div class="text-holder">
+                                            <h3 class="post-title text-white">Easy Progress Tracking</h3>
+                                            <p class="mt-15 text-white">
+                                                See how you’re improving with simple reports and feedback.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="rurera-column-section rurera-text-section exploring-curriculum mx-w-100 mt-0 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
