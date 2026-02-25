@@ -15992,7 +15992,6 @@ footer.footer-home {
 /* General Section Styling */
 .ru-feature-showcase {
     background-color: #b2ccff;
-    padding: 0 0 0 calc((100vw - 1480px) / 2);
     min-height: 100vh;
     position: relative;
     z-index: 2;
@@ -16001,12 +16000,8 @@ footer.footer-home {
   position: relative;
 }
 @media screen and (min-width: 1181px) {
-  .ru-feature-showcase {
-    padding-left: calc((100vw - 88vw) / 2);
-  }
   .rurera-feature-outer,
   .ru-stickyhero-visual-container {
-    padding-right: calc((100vw - 88vw) / 2);
     min-height: auto;
   }
 }
