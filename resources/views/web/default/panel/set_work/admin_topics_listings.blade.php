@@ -49,7 +49,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: .800rem;
     color: #666;
     font-weight: 300;
     pointer-events: none;
