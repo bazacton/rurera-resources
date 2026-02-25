@@ -37,8 +37,8 @@
                                     </div>
                                     <div class="process-card-body">
                                         <div class="text-holder">
-                                            <h3 class="post-title text-white">Custom Word Lists</h3>
-                                            <p class="mt-15 text-white">
+                                            <h3 class="post-title">Custom Word Lists</h3>
+                                            <p class="mt-15">
                                                 Use personalized lists to focus on the words you need to learn.
                                             </p>
                                         </div>
@@ -52,8 +52,8 @@
                                     </div>
                                     <div class="process-card-body">
                                         <div class="text-holder">
-                                            <h3 class="post-title text-white"> Fun Learning Quizzes</h3>
-                                            <p class="mt-15 text-white">
+                                            <h3 class="post-title"> Fun Learning Quizzes</h3>
+                                            <p class="mt-15">
                                                 Enjoy interactive activities that make spelling and vocabulary practice exciting.
                                             </p>
                                         </div>
@@ -67,8 +67,8 @@
                                     </div>
                                     <div class="process-card-body">
                                         <div class="text-holder">
-                                            <h3 class="post-title text-white">Easy Progress Tracking</h3>
-                                            <p class="mt-15 text-white">
+                                            <h3 class="post-title">Easy Progress Tracking</h3>
+                                            <p class="mt-15">
                                                 See how you’re improving with simple reports and feedback.
                                             </p>
                                         </div>
