@@ -235,7 +235,7 @@
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="rurera-setup-progress-section rurera-membership-section mb-0 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="rurera-setup-progress-section rurera-membership-section mb-60 pt-70" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -264,7 +264,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade rurera-choose-membership mb-60" id="subscriptionModal">
+    <div class="modal fade rurera-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
