@@ -72,6 +72,9 @@
     .select-topics .topics-table td {
         padding: 10px 10px;
     }
+    .select-topics .topics-table th:first-child {
+        padding-left: 0;
+    }
     /* Range Slider Style Start */
     .thumbs {
         display: flex;
