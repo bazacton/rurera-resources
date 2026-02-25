@@ -441,6 +441,9 @@
 
                                                     <!-- Remove Button -->
 
+                                                    <button type="button" class="btn remove-btn" id="remove-quiz-image">
+                                                        <i class="fa fa-trash me-2"></i> Remove
+                                                    </button>
                                                 </div>
 
                                                 <!-- Preview -->

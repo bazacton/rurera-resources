@@ -689,6 +689,19 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .btn:active:focus {box-shadow: none !important; outline: none;}
 .btn.btn-icon-split i, .dropdown-item.has-icon i {text-align: center; width: 15px; font-size: 15px; float: left; margin-right: 10px;}
 .btn {font-weight: 600; font-size: 12px; line-height: 24px; padding: .3rem .8rem; letter-spacing: .5px;}
+.upload-btn.rurera-file-manager {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.upload-btn.rurera-file-manager:hover,
+.upload-btn.btn:not(.btn-social):not(.btn-social-icon):active, 
+.upload-btn.btn:not(.btn-social):not(.btn-social-icon):focus, 
+.upload-btn.btn:not(.btn-social):not(.btn-social-icon):hover {
+    border-color: var(--primary);
+}
+.upload-btn.rurera-file-manager i {
+    margin-right: 5px;
+}
 .btn.btn-icon-split {position: relative; }
 .btn.btn-icon-split i {position: absolute; left: 0; top: 0; height: 100%; width: 45px; border-radius: 3px 0 0 3px; line-height: 32px; }
 .btn.btn-icon-split div {margin-left: 40px; }
@@ -696,7 +709,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .btn.btn-icon-noflo-splitat i {float: none; margin: 0; display: table-cell; vertical-align: middle; width: 30%;}
 .btn.btn-icon-noflo-splitat div {display: table-cell; vertical-align: middle; width: 70%; text-align: left; padding-left: 10px;}
 .btn:not(.btn-social):not(.btn-social-icon):active, .btn:not(.btn-social):not(.btn-social-icon):focus, 
-.btn:not(.btn-social):not(.btn-social-icon):hover {border-color: transparent !important; background-color: white;}
+.btn:not(.btn-social):not(.btn-social-icon):hover {border-color: transparent; background-color: white;}
 .btn > i {margin-left: 0 !important; }
 .btn.btn-lg {padding: .55rem 1.5rem; font-size: 12px;}
 .btn.btn-lg.btn-icon-split i {line-height: 42px;}
