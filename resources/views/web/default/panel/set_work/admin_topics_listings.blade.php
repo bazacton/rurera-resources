@@ -26,7 +26,7 @@
         top: 0;
         bottom: 0;
         width: 1px;
-        background: #333;
+        background: rgba(0,0,0,.1);
         transform: translateX(-50%);
     }
     .range-container .range-input-text {
