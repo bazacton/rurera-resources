@@ -70,7 +70,7 @@
     }
     .select-topics .topics-table th,
     .select-topics .topics-table td {
-        padding: 18px 20px;
+        padding: 10px 10px;
     }
     /* Range Slider Style Start */
     .thumbs {
