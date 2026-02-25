@@ -162,19 +162,6 @@
                 <button type="button" class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
             @endforeach
         @endif
-
-        @if(!empty( $parentData))
-            <div class="select-holder">
-                <select class="select performance-level-selection">
-                    <option value="all">All performance levels</option>
-                    <option value="Not Started">Not Started</option>
-                    <option value="Practice Needed">Practice Needed</option>
-                    <option value="Good">Good</option>
-                    <option value="Very Good">Very Good</option>
-                    <option value="Excellent">Excellent</option>
-                </select>
-            </div>
-        @endif
     </div>
     <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm col-md-12 col-lg-12 ">
         <table class="topics-table mt-0 col-md-12 col-lg-12 ">
@@ -198,7 +185,7 @@
                             @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
                             @endphp
                             <tr class="listing-data-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
-                                <td data-th="Topic"> {{$parentObj->id}} <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label></td>
+                                <td data-th="Topic"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label></td>
                                 <td>
 
                                     <div class="range-container">
