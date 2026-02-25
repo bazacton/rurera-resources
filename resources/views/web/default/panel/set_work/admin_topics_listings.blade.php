@@ -1,7 +1,7 @@
 <style>
 .range-container {
     display: flex;
-    gap: 22px;
+    gap: 35px;
     align-items: center;
     margin: 0;
     max-width: 430px;
@@ -34,10 +34,10 @@
     height: 34px;
     border: none;
     background: transparent;
-    text-align: center;
+    text-align: left;
     color: #1D1E27;
     outline: none;
-    padding: 0 10px;
+    padding: 0 15px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
