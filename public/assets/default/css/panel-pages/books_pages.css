@@ -170,9 +170,9 @@ box-shadow:0 6px 18px rgba(0,0,0,.06);
 overflow:hidden;
 }
 .book-details{
-width:480px;
-max-width:480px;
-flex:0 0 480px;
+width:420px;
+max-width:420px;
+flex:0 0 420px;
 border-right:1px solid #eee;
 }
 .book-cover-lg{
