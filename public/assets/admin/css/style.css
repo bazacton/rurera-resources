@@ -692,6 +692,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .upload-btn.rurera-file-manager {
     border: 1px solid var(--primary);
     color: var(--primary);
+    margin-right: 10px;
 }
 .upload-btn.rurera-file-manager:hover,
 .upload-btn.btn:not(.btn-social):not(.btn-social-icon):active, 
@@ -2132,6 +2133,9 @@ table#outputTable thead th {padding-bottom: 15px;}
 .question_status_action_modal #question_status_action_form button {border: 1px solid var(--blue); background-color: inherit; color: var(--blue); padding: 5px 10px; border-radius: 3px; outline: none;}
 .question_status_action_modal #question_status_action_form table#outputTable {margin-top: 15px;}
 .remove-btn {background-color: #ffe1e1; border: 1px solid #e60909; box-shadow: none; color: #e60909; padding: .3rem .8rem; border-radius: 3px;}
+.remove-btn i {
+    margin-right: 5px;
+}
 .remove-btn.btn:not(.btn-social):not(.btn-social-icon):active, 
 .remove-btn.btn:not(.btn-social):not(.btn-social-icon):focus, 
 .remove-btn.btn:not(.btn-social):not(.btn-social-icon):hover {
