@@ -158,7 +158,7 @@
         z-index: -1;
     }
 </style>
-<div class="select-topics col-md-12 col-lg-12 backend-topic-selection ">
+<div class="select-topics backend-topic-selection">
     <h3 class="font-16 font-weight-bold">Select Topics</h3>
     <div class="selected-topics rurera-hide" id="selectedTopics">
         <span class="count selected-topics-count"><span>0</span> topics selected</span>
