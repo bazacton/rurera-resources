@@ -1809,10 +1809,12 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     font-size: .875rem;
     font-weight: 500;
     color: #666;
+    outline: none;
 }
 .questions_bulk_list .subject-filters .chip.active {
     border-color: #2b6ef3;
     color: #2b6ef3;
+    display: none;
 }
 .subject-filters .select-holder {
     background-color: #fff;
