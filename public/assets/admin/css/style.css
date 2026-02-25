@@ -2227,7 +2227,7 @@ Admin Questions Generator Page Style Start
 .list-group input[type="checkbox"]:checked + label {border-color: var(--primary);}
 .range-output {display: flex; align-items: center; gap: 10px;}
 input[type="range"], input[type="number"] {width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;}
-button.submit-btn {width: 100%; padding: 8px 18px; background-color: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px;}
+button.submit-btn {width: 100%; padding: .3rem .8rem; background-color: var(--primary); color: white; border: none; border-radius: 4px; font-size: .75rem; margin-top: 20px;}
 .js-percentage-inputs input[type="range"], .js-percentage-inputs input[type="number"] {margin-top: 0;}
 .glossary_form input[type="number"] {margin-top: 0;}
 /* Added this CSS for the range slider styling */
