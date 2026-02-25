@@ -275,8 +275,7 @@
     </div>
 </section>
 {!! parseShortcode('[SC_spelling-page-faqs-f]') !!}
-
-{!! parseShortcode('[SC_Rurera-Help-Section]') !!}
+{!! parseShortcode('[SC_spelling-help-section-f]') !!}
 @endsection
 
 @push('scripts_bottom')
