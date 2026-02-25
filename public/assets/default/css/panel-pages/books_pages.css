@@ -227,7 +227,6 @@ color:#6c757d;
 font-size:.9rem;
 line-height:1.4;
 }
-
 .ru-book-slider .track-wrap{
 position:relative;
 flex:1 1 auto;
@@ -327,6 +326,12 @@ box-shadow:0 4px 10px rgba(0,0,0,.12);
 .ru-book-slider .arrow-left[disabled]{
 opacity:.35;
 pointer-events:none;
+}
+.ru-book-slider .stat-card {
+    max-width: 31.555%;
+}
+.ru-book-slider .flex-md-row {
+    flex-wrap: wrap;
 }
 .ru-book-slider .stat-card svg{display:block}
 .ru-book-slider .stat-card path.fill{opacity:.15}
