@@ -405,147 +405,146 @@
                                                 </select>
                                             </div>
                                         </div>
-										<div class="questions_bulk_list-tabs">
-											<ul class="nav nav-tabs" id="myTab" role="tablist">
-												<li class="nav-item" role="presentation">
-													<button class="nav-link active" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button class="nav-link" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Questions bulk Tab 2</button>
-												</li>
-											</ul>
-											<div class="tab-content" id="myTabContent">
-												<div class="tab-pane fade show active" id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
-													<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
+										<div class="col-12">
+											<div class="questions_bulk_list-tabs">
+												<ul class="nav nav-tabs" id="myTab" role="tablist">
+													<li class="nav-item" role="presentation">
+														<button class="nav-link active" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Questions bulk Tab 2</button>
+													</li>
+												</ul>
+												<div class="tab-content" id="myTabContent">
+													<div class="tab-pane fade show active" id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
+														<div class="row">
+															<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
 
-													</div>
-													<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
-													<div class="col-md-12 col-lg-12">
-														<div class="form-group quiz-image-group">
-															<label class="input-label d-block mb-3">Quiz Image</label>
+															</div>
+															<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
+															<div class="col-md-12 col-lg-12">
+																<div class="form-group quiz-image-group">
+																	<label class="input-label d-block mb-3">Quiz Image</label>
 
-															<div class="d-flex align-items-center gap-3">
+																	<div class="d-flex align-items-center gap-3">
 
 
-																<!-- Upload Button (Your Existing Button) -->
-																<button
-																	type="button"
-																	class="btn upload-btn rurera-file-manager"
-																	data-input="image"
-																	data-preview="preview_img-image"
-																	data-image_attr='{
-																			"upload_type":"gallery",
-																			"upload_dir":"public",
-																			"upload_path":"/quiz",
-																			"is_multiple":false,
-																			"preview_div":"preview_img-image",
-																			"hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
-																			"field_name":"quiz_image"
-																		}'
-																	data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-																>
-																	<i class="fa fa-upload me-2"></i> Upload Image
-																</button>
+																		<!-- Upload Button (Your Existing Button) -->
+																		<button
+																			type="button"
+																			class="btn upload-btn rurera-file-manager"
+																			data-input="image"
+																			data-preview="preview_img-image"
+																			data-image_attr='{
+																					"upload_type":"gallery",
+																					"upload_dir":"public",
+																					"upload_path":"/quiz",
+																					"is_multiple":false,
+																					"preview_div":"preview_img-image",
+																					"hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
+																					"field_name":"quiz_image"
+																				}'
+																			data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+																		>
+																			<i class="fa fa-upload me-2"></i> Upload Image
+																		</button>
 
-																<!-- Remove Button -->
+																		<!-- Remove Button -->
 
-																<button type="button" class="btn remove-btn" id="remove-quiz-image">
-																	<i class="fa fa-trash me-2"></i> Remove
-																</button>
+																		<button type="button" class="btn remove-btn" id="remove-quiz-image">
+																			<i class="fa fa-trash me-2"></i> Remove
+																		</button>
+																	</div>
+
+																	<!-- Preview -->
+																	<div class="preview_img-image mt-3"></div>
+
+																	<!-- Hidden Field -->
+																	<input name="quiz_image" type="hidden" id="quiz_image">
+
+																	<!-- Support Text -->
+																	<small class="text-muted d-block mt-2">
+																		Supports Only: PNG, JPEG, JPG (Under 500KB)
+																	</small>
+																</div>
+
+
+																<div class="form-group rurera-hide">
+																	<label class="input-label">Quiz Image</label>
+																	<div class="input-group">
+																		<div class="input-group-prepend">
+																			<button
+																				type="button"
+																				class="input-group-text rurera-file-manager"
+																				data-input="image"
+																				data-preview="preview_img-image"
+																				data-image_attr='{
+																						"upload_type":"gallery",
+																						"upload_dir":"public",
+																						"upload_path":"/quiz",
+																						"is_multiple":false,
+																						"preview_div":"preview_img-image",
+																						"hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
+																						"field_name":"quiz_image"
+																					}'
+																				data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+																			>
+																				<i class="fa fa-upload"></i>
+																			</button>
+																			<div class="preview_img-image">
+																			</div>
+																		</div>
+																	</div>
+																</div>
 															</div>
 
-															<!-- Preview -->
-															<div class="preview_img-image mt-3"></div>
-
-															<!-- Hidden Field -->
-															<input name="quiz_image" type="hidden" id="quiz_image">
-
-															<!-- Support Text -->
-															<small class="text-muted d-block mt-2">
-																Supports Only: PNG, JPEG, JPG (Under 500KB)
-															</small>
-														</div>
+															<div class="col-md-3 col-lg-3">
+																<div class="form-group mt-15 ">
+																	<label class="input-label d-block">Quiz Title</label>
+																	<input type="text" name="quiz_title" class="form-control rurera-req-field">
+																</div>
+															</div>
 
 
-														<div class="form-group rurera-hide">
-															<label class="input-label">Quiz Image</label>
-															<div class="input-group">
-																<div class="input-group-prepend">
-																	<button
-																		type="button"
-																		class="input-group-text rurera-file-manager"
-																		data-input="image"
-																		data-preview="preview_img-image"
-																		data-image_attr='{
-																				"upload_type":"gallery",
-																				"upload_dir":"public",
-																				"upload_path":"/quiz",
-																				"is_multiple":false,
-																				"preview_div":"preview_img-image",
-																				"hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
-																				"field_name":"quiz_image"
-																			}'
-																		data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-																	>
-																		<i class="fa fa-upload"></i>
-																	</button>
-																	<div class="preview_img-image">
-																	</div>
+
+															<div class="col-md-3 col-lg-3">
+																<div class="form-group mt-15 ">
+																	<label class="input-label d-block">Quiz Slug</label>
+																	<input type="text" name="quiz_slug" class="form-control">
+																</div>
+															</div>
+
+															<div class="col-md-3 col-lg-3">
+																<div class="form-group mt-15 ">
+																	<label class="input-label d-block">Total Time (Minutes)</label>
+																	<input type="number" name="total_time" class="form-control rurera-req-field">
+																</div>
+															</div>
+
+															<div class="col-md-3 col-lg-3 no_of_questions_field">
+																<div class="form-group mt-15">
+
+																	<div class="question-range-info text-muted mb-1"></div>
+
+																	<label class="input-label d-block">No of Questions</label>
+																	<input type="number" name="no_of_questions" class="form-control rurera-req-field">
+
+																	<div class="question-error text-danger mt-1" style="display:none;"></div>
+
+																</div>
+															</div>
+															<div class="col-md-12 col-lg-12">
+																<div class="form-group mt-15 ">
+																	<label class="input-label d-block">Quiz Instructions</label>
+																	<textarea name="quiz_instructions" class="summernote-editor"></textarea>
 																</div>
 															</div>
 														</div>
 													</div>
-
-													<div class="col-md-3 col-lg-3">
-														<div class="form-group mt-15 ">
-															<label class="input-label d-block">Quiz Title</label>
-															<input type="text" name="quiz_title" class="form-control rurera-req-field">
-														</div>
-													</div>
-
-
-
-													<div class="col-md-3 col-lg-3">
-														<div class="form-group mt-15 ">
-															<label class="input-label d-block">Quiz Slug</label>
-															<input type="text" name="quiz_slug" class="form-control">
-														</div>
-													</div>
-
-													<div class="col-md-3 col-lg-3">
-														<div class="form-group mt-15 ">
-															<label class="input-label d-block">Total Time (Minutes)</label>
-															<input type="number" name="total_time" class="form-control rurera-req-field">
-														</div>
-													</div>
-
-													<div class="col-md-3 col-lg-3 no_of_questions_field">
-														<div class="form-group mt-15">
-
-															<div class="question-range-info text-muted mb-1"></div>
-
-															<label class="input-label d-block">No of Questions</label>
-															<input type="number" name="no_of_questions" class="form-control rurera-req-field">
-
-															<div class="question-error text-danger mt-1" style="display:none;"></div>
-
-														</div>
-													</div>
-													<div class="col-md-12 col-lg-12">
-														<div class="form-group mt-15 ">
-															<label class="input-label d-block">Quiz Instructions</label>
-															<textarea name="quiz_instructions" class="summernote-editor"></textarea>
-														</div>
-													</div>
+													<div class="tab-pane fade" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">...</div>
 												</div>
-												<div class="tab-pane fade" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">...</div>
 											</div>
 										</div>
-                                        
-
-
-                                        
-                                        
                                     </div>
                                 </div>
                                 <div class="inactivity-controls">
