@@ -15955,7 +15955,7 @@ footer.footer-home {
   margin-top: 8%;
 }
 .rurera-feature-outer {
-  padding: 2% calc((100vw - 1480px) / 2) 5% 0;
+  padding: 2% 0 5% 0;
 }
 .ru-stickyhero-visual-container .rurera-desktop-mockup {
   z-index: 2;
