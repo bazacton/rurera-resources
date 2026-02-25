@@ -1900,17 +1900,10 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     color: #999;
 }
 /* Subject Filter Style End */
-.select-topics .topics-table-holder {
-    background-color: #fff;
-    margin-bottom: 30px;
-}
 .select-topics .topics-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-}
-.select-topics:has(.selected-topics.rurera-hide) .topics-table thead {
-    top: 0;
 }
 .select-topics .topics-table th,
 .select-topics .topics-table td {
