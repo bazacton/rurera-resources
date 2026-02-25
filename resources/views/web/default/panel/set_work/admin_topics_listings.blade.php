@@ -5,6 +5,7 @@
         align-items: center;
         margin: 0;
         max-width: 430px;
+        margin-left: auto;
     }
     .range-container .input-group {
         display: flex;
@@ -57,7 +58,8 @@
     }
     .range-container .range {
         position: relative;
-        width: 400px;
+        max-width: 400px;
+        width: 110px;
     }
     .range-container .range-input {
         width: 100%;
