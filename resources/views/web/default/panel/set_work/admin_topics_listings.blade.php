@@ -31,7 +31,7 @@
 }
 .range-container .range-input-text {
     width: 100px;
-    height: 36px;
+    height: 34px;
     border: none;
     background: transparent;
     text-align: center;
