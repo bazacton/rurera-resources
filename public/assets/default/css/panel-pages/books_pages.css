@@ -333,7 +333,11 @@ pointer-events:none;
 .ru-book-slider .stat-card {
     max-width: 31.555%;
 }
-.ru-book-slider .stat-card svg{display:block}
+.ru-book-slider .stat-card .flex-grow-1 {
+    flex: 0 0 calc(100% - 100px);
+    max-width: calc(100% - 100px);
+}
+.ru-book-slider .stat-card svg{display:block; max-width: 100px;}
 .ru-book-slider .stat-card path.fill{opacity:.15}
 .ru-book-slider .stat-card.green .stroke{stroke:#4caf50}
 .ru-book-slider .stat-card.green .fill{fill:#4caf50}
