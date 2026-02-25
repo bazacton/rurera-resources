@@ -281,7 +281,8 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card .card-header {border-bottom-color: #f9f9f9; line-height: 30px; -ms-grid-row-align: center; align-self: center; width: 100%; min-height: 70px; padding: 15px 25px; display: flex; align-items: center; gap: 5px;}
 .card .card-header .btn {margin-top: 1px; padding: 2px 15px;}
 .card .card-header .btn:not(.note-btn) {border-radius: 30px;}
-.card .card-body select.form-control {
+.card .card-body select.form-control,
+.admin_role select.form-control {
     height: 35px; 
     cursor: pointer;
     appearance: none;
