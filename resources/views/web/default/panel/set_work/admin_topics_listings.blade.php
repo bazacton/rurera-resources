@@ -37,7 +37,7 @@
         text-align: left;
         color: #1D1E27;
         outline: none;
-        padding: 0 15px;
+        padding: 0 15px 0 10px;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
