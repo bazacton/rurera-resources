@@ -1047,8 +1047,42 @@ $(document).ready(function() {
     });
 
 });
+function updateToDatabase(table, idString) {
+    $.post(adminPanelPrefix + '/webinars/order-items', {
+        table: table,
+        items: idString
+    }, function (result) {
+        if (result && result.title && result.msg) {
+            rurera_modal_alert(
+                'success',
+                result.msg,
+                false, //confirmButton
+            );
+        }
+    });
+}
+function setSortable(target) {
+    if (target.length) {
+        target.sortable({
+            group: 'no-drop',
+            handle: '.move-icon',
+            axis: "y",
+            update: function (e, ui) {
 
+                var $this = $(this); // <-- IMPORTANT
 
+                var sortData = $this.sortable('toArray', {
+                    attribute: 'data-id'
+                });
+
+                var table = $this.attr('data-order-table');
+
+                console.log(sortData.join(','));
+                updateToDatabase(table, sortData.join(','));
+            }
+        });
+    }
+}
 $(document).on('change', '.year_group_chapters', function (e) {
     var year_id = $(this).val();
     var subject_id = $(this).attr('data-subject_id');
@@ -1062,6 +1096,7 @@ $(document).on('change', '.year_group_chapters', function (e) {
         success: function (return_data) {
 
             $(".subject-chapters-block").html(return_data);
+            setSortable($('.draggable-content-lists'));
         }
     });
 });

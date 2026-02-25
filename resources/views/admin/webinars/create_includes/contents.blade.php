@@ -1,24 +1,24 @@
 <section class="mt-50">
     <div class="">
-        <h2 class="section-title after-line">{{ trans('public.chapters') }} ({{ trans('public.optional') }})</h2>
+        <h2 class="section-title after-line">Chapters</h2>
     </div>
 
     <div class="col-12 col-md-4 col-lg-4">
         <div class="form-group">
 
-            <label class="input-label d-block">Yeear Group</label>
+            <label class="input-label d-block">Year Group</label>
             <select name="year_group_chapters" class="year_group_chapters custom-select" data-subject_id="{{$webinar->id}}">
                 @if(isset($webinarCategories) && $webinarCategories->count() > 0)
-                    <option value="all" selected="">All</option>
+                    <option value="all" selected="selected">All</option>
                     @foreach($webinarCategories as $categoryObj)
-                        <option value="{{$categoryObj->id}}" selected="">{{$categoryObj->getTitleAttribute()}}</option>
+                        <option value="{{$categoryObj->id}}" >{{$categoryObj->getTitleAttribute()}}</option>
                     @endforeach
                 @endif
             </select>
         </div>
     </div>
 
-    <button type="button" class="js-add-chapter btn btn-primary btn-sm mt-15" data-webinar-id="{{ $webinar->id }}">{{ trans('public.new_chapter') }}</button>
+    <button type="button" class="js-add-chapter btn btn-primary btn-sm mt-15" data-webinar-id="{{ $webinar->id }}">Add Chapter</button>
 
     @include('admin.webinars.create_includes.accordions.chapter')
 </section>
