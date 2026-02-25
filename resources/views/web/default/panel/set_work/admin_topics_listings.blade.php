@@ -68,6 +68,9 @@
         background: none;
         pointer-events: none;
     }
+    .listing-data-row.topic-row {
+        background-color: #f1f1f1;
+    }
     .select-topics .topics-table th,
     .select-topics .topics-table td {
         padding: 10px 10px;
