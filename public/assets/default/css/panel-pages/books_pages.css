@@ -310,6 +310,7 @@ border-radius:999px;
 width:40px;height:40px;
 display:flex;align-items:center;justify-content:center;
 box-shadow:0 4px 10px rgba(0,0,0,.12);
+padding: 0;
 }
 .ru-book-slider .arrow-right[disabled]{
 opacity:.35;
@@ -325,6 +326,7 @@ border-radius:999px;
 width:40px;height:40px;
 display:flex;align-items:center;justify-content:center;
 box-shadow:0 4px 10px rgba(0,0,0,.12);
+padding: 0;
 }
 .ru-book-slider .arrow-left[disabled]{
 opacity:.35;
