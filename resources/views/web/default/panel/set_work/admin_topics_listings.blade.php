@@ -1,10 +1,10 @@
 <style>
 .range-container {
     display: flex;
-    flex-direction: column;
     gap: 22px;
     align-items: center;
-    margin: 0 0 25px;
+    margin: 0;
+    max-width: 430px;
 }
 .range-container .input-group {
     display: flex;
@@ -68,11 +68,17 @@
     background: none;
     pointer-events: none;
 }
+.select-topics .topics-table th, 
+.select-topics .topics-table td {
+    padding: 18px 20px;
+}
 /* Range Slider Style Start */
 .thumbs {
-    display: grid;
+    display: flex;
     position: relative;
     width: 100%;
+    min-height: 35px;
+    align-items: center;
 }
 .thumbs .range-input {
     -webkit-appearance: none;
