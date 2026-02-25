@@ -91,6 +91,9 @@
         pointer-events: none;
         padding: 0;
     }
+    .thumbs .range-input#range-max-value {
+        left: 40px;
+    }
     .thumbs .range-input::-webkit-slider-runnable-track {
         height: 4px;
         border-radius: 4px;
