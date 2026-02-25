@@ -412,7 +412,51 @@
 
                                         <div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
                                         <div class="col-md-12 col-lg-12">
-                                            <div class="form-group">
+
+                                            <div class="form-group quiz-image-group">
+                                                <label class="input-label d-block mb-3">Quiz Image</label>
+
+                                                <div class="d-flex align-items-center gap-3">
+
+
+                                                    <!-- Upload Button (Your Existing Button) -->
+                                                    <button
+                                                        type="button"
+                                                        class="btn upload-btn rurera-file-manager"
+                                                        data-input="image"
+                                                        data-preview="preview_img-image"
+                                                        data-image_attr='{
+                "upload_type":"gallery",
+                "upload_dir":"public",
+                "upload_path":"/quiz",
+                "is_multiple":false,
+                "preview_div":"preview_img-image",
+                "hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
+                "field_name":"quiz_image"
+            }'
+                                                        data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+                                                    >
+                                                        <i class="fa fa-upload me-2"></i> Upload Image
+                                                    </button>
+
+                                                    <!-- Remove Button -->
+
+                                                </div>
+
+                                                <!-- Preview -->
+                                                <div class="preview_img-image mt-3"></div>
+
+                                                <!-- Hidden Field -->
+                                                <input name="quiz_image" type="hidden" id="quiz_image">
+
+                                                <!-- Support Text -->
+                                                <small class="text-muted d-block mt-2">
+                                                    Supports Only: PNG, JPEG, JPG (Under 500KB)
+                                                </small>
+                                            </div>
+
+
+                                            <div class="form-group rurera-hide">
                                                 <label class="input-label">Quiz Image</label>
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">

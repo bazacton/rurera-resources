@@ -180,7 +180,7 @@
                 @foreach( $parentData as $parentObj)
                     @php $listingDataArray = isset($listingData[$parentObj->id])? $listingData[$parentObj->id] : [];
                     @endphp
-                    <tr class="listing-data-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
+                    <tr class="listing-data-row topic-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
                         <td data-th="Topic" colspan="3"><b>{{isset($parentObj->title)? $parentObj->title : ''}}</b></td>
                     </tr>
                     @if(!empty($listingDataArray))
