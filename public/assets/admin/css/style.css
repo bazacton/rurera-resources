@@ -1815,6 +1815,9 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     border-color: #2b6ef3;
     color: #2b6ef3;
 }
+.questions_bulk_list .active-tick {
+    display: none;
+}
 .subject-filters .select-holder {
     background-color: #fff;
     border: 1px solid #ccc;
