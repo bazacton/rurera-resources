@@ -222,8 +222,7 @@
             </div>
         </div>
     </section>
-	{{do_shortcode('redefining_personalized_learning', array('heading' => "Achieve Success with Rurera’s Key Features.", 'description' => "Rurera provides powerful resources that align with student’s specific interests and learning goals.", 'items' => array(10,6,15,17,19)))}}
-    
+	
     
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
     
