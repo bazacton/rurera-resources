@@ -330,9 +330,6 @@ pointer-events:none;
 .ru-book-slider .stat-card {
     max-width: 31.555%;
 }
-.ru-book-slider .flex-md-row {
-    flex-wrap: wrap;
-}
 .ru-book-slider .stat-card svg{display:block}
 .ru-book-slider .stat-card path.fill{opacity:.15}
 .ru-book-slider .stat-card.green .stroke{stroke:#4caf50}
