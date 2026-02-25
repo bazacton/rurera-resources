@@ -68,7 +68,8 @@
         background: none;
         pointer-events: none;
     }
-    .listing-data-row.topic-row {
+    .listing-data-row.topic-row,
+    .select-topics .topics-table tbody .listing-data-row.topic-row:hover {
         background-color: #f1f1f1;
     }
     .select-topics .topics-table th,
