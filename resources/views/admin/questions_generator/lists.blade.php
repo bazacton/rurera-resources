@@ -114,9 +114,8 @@
         .mock-exam .mock-exam-empty-note { font-size: 13px; color:#6c757d; }
 
         /* Small nested modal */
-        .mock-exam-modal.modal-sm2 .modal-dialog { max-width: 720px; }
+		.mock-exam-modal {background-color: #fff;}
         .mock-exam-modal .note-editor.note-frame { border-radius: .25rem; }
-
         .mock-exam .mock-exam-btn-remove-main { border-color:#f1c6cc; color:#dc3545; }
         .mock-exam .mock-exam-btn-remove-main:hover { background:#dc3545; color:#fff; }
         .mock-exam .mock-exam-btn-disabled { opacity:.55; cursor:not-allowed; }
