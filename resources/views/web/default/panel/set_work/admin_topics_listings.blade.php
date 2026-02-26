@@ -286,24 +286,27 @@
 </div>
 @push('scripts_bottom')
 <script>
-    function updateStickyOffset() {
-    const selectedTopics = document.querySelector('.selected-topics');
-    const root = document.documentElement;
+    document.addEventListener("DOMContentLoaded", function () {
 
-    if (selectedTopics) {
+    const selectedTopics = document.querySelector('.selected-topics');
+
+    if (!selectedTopics) return;
+
+    function updateOffset(height) {
+        document.documentElement.style
+        .setProperty('--sticky-offset', height + 'px');
+    }
+
+    // Initial set
+    updateOffset(selectedTopics.offsetHeight);
+
+    // Watch for height changes (dynamic content)
     const observer = new ResizeObserver(entries => {
         const height = entries[0].contentRect.height;
-        document.documentElement.style.setProperty('--sticky-offset', height + 'px');
+        updateOffset(height);
     });
 
     observer.observe(selectedTopics);
-    }
-    }
-
-    // Run on load
-    updateStickyOffset();
-
-    // Run on resize (important if responsive)
-    window.addEventListener('resize', updateStickyOffset);
+    });
 </script>
 @endpush
