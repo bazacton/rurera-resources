@@ -165,6 +165,7 @@ Sub Pages Style
 /*Books Sound Card Style End*/
 .ru-book-slider .book-section{
 background:#fff;
+border: 1px solid #ddd;
 border-radius:16px;
 overflow:hidden;
 }
@@ -329,6 +330,7 @@ pointer-events:none;
 }
 .ru-book-slider .stat-card {
     max-width: 31.555%;
+    border: 1px solid #ddd;
 }
 .ru-book-slider .stat-card .flex-grow-1 {
     flex: 0 0 calc(100% - 100px);
