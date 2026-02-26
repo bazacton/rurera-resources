@@ -1927,6 +1927,19 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .select-topics .muted {
     color: #999;
 }
+.mock-exam-section-table td:has(.mockExam-tpl-section-instr) {
+    width: 50%;
+}
+.mock-exam-section-table td, .mock-exam-section-table th {
+    padding: .75rem;
+    font-size: .875rem;
+    vertical-align: top;
+}
+.mock-exam-section-table th {
+    font-size: 1rem;
+    color: #333;
+    padding-bottom: 0;
+}
 /* Subject Filter Style End */
 .select-topics .topics-table {
     width: 100%;
