@@ -16713,9 +16713,8 @@ section.feature-grid {
   padding-bottom: 0;
 }
 
-.process-card {
+.rurera-process-section .process-card {
   flex: 0 0 240px;
-  background: #ffffff;
   border: 1px solid #eef0f5;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);

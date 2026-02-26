@@ -331,7 +331,7 @@
 @endif
 @if(auth()->user()->isUser())
 
-    <div class="dashboard-students-holder mt-30">
+    <div class="dashboard-students-holder mt-30 rurera-hide">
         <div class="member-card-header mb-15">
             <div class="section-title text-left">
                 <h2 class="font-22 font-weight-bold">Set Work</h2>
@@ -405,7 +405,7 @@
 	</div>
 @endif
 
-<div class="quests-list quests-learning mt-30">
+<div class="quests-list quests-learning mt-30 rurera-hide">
 	@if( $quests->count() > 0)
     <div class="section-title text-left mb-10">
         <h2 class="font-16 font-weight-bold">Weekly Learning Journeys</h2>

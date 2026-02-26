@@ -32,7 +32,7 @@
         @endif
     </div>
     <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm">
-        <table class="topics-table mt-0">
+        <table class="topics-table mt-0 test@@">
             <thead>
             <tr>
                 <th>Topic</th>
@@ -90,3 +90,22 @@
     </div>
 
 </div>
+@push('scripts_bottom')
+<script>
+    function updateStickyOffset() {
+        const selectedTopics = document.querySelector('.selected-topics');
+        const root = document.documentElement;
+
+        if (selectedTopics) {
+            const height = selectedTopics.offsetHeight;
+            root.style.setProperty('--sticky-offset', height + 'px');
+        }
+        }
+
+        // Run on load
+        updateStickyOffset();
+
+        // Run on resize (important if responsive)
+        window.addEventListener('resize', updateStickyOffset);
+</script>
+@endpush

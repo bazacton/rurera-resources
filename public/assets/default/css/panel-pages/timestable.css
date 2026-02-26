@@ -262,7 +262,7 @@ Sub Pages Style
 .levels-grouping .levels-progress.circle .progress-count {background: #0ebe73;}
 
 .panel-content .lms-text-section {padding: 25px !important;}
-.panel-content .spell-levels .panel-subheader {padding-right: 155px; margin-bottom: 100px;}
+.panel-content .spell-levels .panel-subheader {padding-right: 150px; margin-bottom: 100px;}
 .panel-subheader {background: url(/assets/default/img/subheader-bg1.png) no-repeat right bottom #ebf3fe; background-position: 95% 100%; padding: 20px 20px; border-radius: 5px; margin: 0 0 25px; position: relative;}
 .panel-subheader h2 { margin: 0 0 5px;}
 .panel-subheader .title {margin: 0 0 25px;}
@@ -343,8 +343,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .spell-levels.levels-grouping li > a {background-color: inherit; height: 80px; width: 80px; box-shadow: none; padding: 0; }
 .spell-levels.levels-grouping {background-color: inherit;}
 .spell-levels.levels-grouping ul {justify-content: flex-start; flex-direction: column; align-items: flex-start;}
-.spell-levels li {display: flex; flex-wrap: wrap; padding: 0; margin: 0 0 58px; position: relative; width: 100%;}
-.spell-levels li:last-child {margin-bottom: 15px;}
+.spell-levels li {display: flex; flex-wrap: wrap; padding: 0; margin: 0 0 58px; position: relative; width: 100%; flex: 0 0 30%; max-width: 30%;}
 .spell-levels li .spell-tooltip {position: relative; width: calc(100% - 80px); padding: 0 0 0 25px;}
 .spell-levels.levels-grouping li > a:after {content: "\2713"; position: absolute; bottom: -15px; left: 50%; height: 24px; width: 24px; background-color: #15bc76; border-radius: 100%; margin-left: -12px; color: #fff; font-size: 14px; line-height: 24px; box-shadow: 0 0 0 3px #fff; text-align: center; z-index: 3; }
 .spell-levels.levels-grouping li:last-child a:before,

@@ -307,7 +307,11 @@ body .daterangepicker td.active:hover {
     border-collapse: collapse;
     margin-top: 20px;
 }
-.select-topics .topics-table thead {position: sticky;top: 48px;z-index: 2;}
+.select-topics .topics-table thead {
+    position: sticky;
+    top: var(--sticky-offset, 0px);
+    z-index: 2;
+}
 .select-topics:has(.selected-topics.rurera-hide) .topics-table thead {
     top: 0;
 }

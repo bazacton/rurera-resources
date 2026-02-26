@@ -486,7 +486,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .table {color: inherit;}
 .table td, .table:not(.table-bordered) th {border-top: none;}
 .table:not(.table-sm):not(.table-md):not(.dataTable) td,
-.table:not(.table-sm):not(.table-md):not(.dataTable) th {text-transform: uppercase; padding: 10px; height: 60px; vertical-align: middle; text-align: left !important; color: #1d293d;}
+.table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 10px; height: 60px; vertical-align: middle; text-align: left !important; color: #1d293d;}
 .table:not(.table-sm) tr th {border-bottom: none; background-color: rgba(0, 0, 0, 0.01); color: #666; padding-top: 15px; padding-bottom: 15px;}
 .table.table-md th,
 .table.table-md td {padding: 10px 15px;}
@@ -1805,9 +1805,17 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     margin-bottom: 15px;
     object-fit: contain;
 }
+.questions_bulk_list {
+    background-color: #fff;
+}
 .questions_bulk_list .modal-dialog {
     max-width: 100%;
     margin: 0;
+}
+.questions_bulk_list .edit-quest-modal-div,
+.questions_bulk_list.modal.show .modal-content {
+    box-shadow: none;
+    height: 100%;
 }
 /* Subject Filter Style Start */
 .questions_bulk_list .subject-filters {
