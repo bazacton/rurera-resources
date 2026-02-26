@@ -284,6 +284,4 @@
     </div>
 
 </div>
-@push('scripts_bottom')
 
-@endpush
