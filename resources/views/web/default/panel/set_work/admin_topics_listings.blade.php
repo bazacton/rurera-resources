@@ -3,9 +3,9 @@
         display: flex;
         gap: 35px;
         align-items: center;
-        margin: 0;
+        margin: 0 auto;
         max-width: 430px;
-        margin-left: auto;
+        justify-content: center;
     }
     .range-container .input-group {
         display: flex;
