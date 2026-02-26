@@ -71,10 +71,6 @@
         .dropdown-toggle { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
         .hidden-column { display: none; }
         .conditional-child-fields{display:none;}
-
-        .range {
-            display: none;
-        }
     </style>
 
 
@@ -119,7 +115,9 @@
 
         /* Small nested modal */
 		.mock-exam-modal {background-color: #fff;}
+        .mock-exam-modal.modal-sm2 .modal-dialog { max-width: 720px; margin: 15px auto; border: 1px solid #e9ecef; border-radius: 8px; overflow: hidden; }
         .mock-exam-modal .note-editor.note-frame { border-radius: .25rem; }
+
         .mock-exam .mock-exam-btn-remove-main { border-color:#f1c6cc; color:#dc3545; }
         .mock-exam .mock-exam-btn-remove-main:hover { background:#dc3545; color:#fff; }
         .mock-exam .mock-exam-btn-disabled { opacity:.55; cursor:not-allowed; }
@@ -403,8 +401,8 @@
 
 
     <div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
-        <div class="modal-dialog">
-            <div class="modal-content edit-quest-modal-div container">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content edit-quest-modal-div">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -418,21 +416,6 @@
                                     <div class="row">
                                         <div class="col-md-12 col-lg-12">
                                             <h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
-                                        </div>
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group ">
-                                                <label class="input-label d-block">Quiz Title</label>
-                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group ">
-                                                <label class="input-label d-block">Quiz Slug</label>
-                                                <input type="text" name="quiz_slug" class="form-control">
-                                            </div>
                                         </div>
                                         <div class="col-md-3 col-lg-3">
                                             <div class="form-group ">
@@ -458,7 +441,21 @@
                                         </div>
 
 
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group ">
+                                                <label class="input-label d-block">Quiz Title</label>
+                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
+                                            </div>
+                                        </div>
 
+
+
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group ">
+                                                <label class="input-label d-block">Quiz Slug</label>
+                                                <input type="text" name="quiz_slug" class="form-control">
+                                            </div>
+                                        </div>
 
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group quiz-image-group">
@@ -597,7 +594,7 @@
                                                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                                                             <div class="mb-2">
 
-                                                                <button type="button" class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
+                                                                <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
                                                                     + Add Section
                                                                 </button>
                                                             </div>
