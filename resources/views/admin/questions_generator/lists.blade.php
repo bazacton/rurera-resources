@@ -719,13 +719,13 @@
 																				<div class="mb-2 mockExam-tpl-section-t"></div>
 																				</td>
 																				<td>
-																				<div class="d-flex align-items-center justify-content-between">
+																				<div class="d-flex align-items-center justify-content-between rurera-hide">
 																					<div>
 																						<div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
 																					</div>
 																					<span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
 																				</div>
-																				<div class="mt-2 mockExam-tpl-section-items"></div>
+																				<div class="mockExam-tpl-section-items"></div>
 																				</td>
 																			</tr>
 																			</tbody>
