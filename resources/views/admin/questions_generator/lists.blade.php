@@ -613,16 +613,23 @@
 
                                                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                                                             <div class="mb-2">
+                                                               
                                                                 <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
                                                                     + Add Section
                                                                 </button>
                                                             </div>
-
                                                         </div>
 
 
 
+                                                        <div class="mt-3">
 
+                                                            <div id="mockExam-sectionsContainer"></div>
+
+                                                            <div id="mockExam-noSectionsNote" class="mock-exam-empty-note mt-3" style="display:none;">
+                                                                No sections yet. Click <b>Create multiple shortlist Sections</b> or <b>+ Add Section</b>.
+                                                            </div>
+                                                        </div>
 
 
 
