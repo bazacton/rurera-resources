@@ -1335,6 +1335,25 @@
             var $accordionList = $parent.find('#accordion');
             var $clearBtn = $parent.find('.search-clear');
 
+            // Shared function
+            function scrollAndHighlight($el) {
+
+                if (!$el || !$el.length) return;
+
+                $('html, body').animate({
+                    scrollTop: $el.offset().top - 100
+                }, 400);
+
+                $el.addClass('highlight');
+
+                clearTimeout($el.data('highlightTimer'));
+
+                var timer = setTimeout(function() {
+                    $el.removeClass('highlight');
+                }, 2000);
+
+                $el.data('highlightTimer', timer);
+            }
             // INPUT EVENT
             $searchInput.on('input', function() {
 
@@ -1480,27 +1499,6 @@
                         $searchInput.val('');
                         $clearBtn.removeClass('active');
                         $searchResultsDiv.removeClass('active').empty();
-
-
-                        // Shared function
-                        function scrollAndHighlight($el) {
-
-                            if (!$el || !$el.length) return;
-
-                            $('html, body').animate({
-                                scrollTop: $el.offset().top - 100
-                            }, 400);
-
-                            $el.addClass('highlight');
-
-                            clearTimeout($el.data('highlightTimer'));
-
-                            var timer = setTimeout(function() {
-                                $el.removeClass('highlight');
-                            }, 2000);
-
-                            $el.data('highlightTimer', timer);
-                        }
 
                     });
 
