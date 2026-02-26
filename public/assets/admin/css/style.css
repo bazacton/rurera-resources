@@ -1815,7 +1815,6 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .questions_bulk_list .edit-quest-modal-div,
 .questions_bulk_list.modal.show .modal-content {
     box-shadow: none;
-    height: 100%;
 }
 /* Subject Filter Style Start */
 .questions_bulk_list .subject-filters {
