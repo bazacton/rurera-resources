@@ -649,7 +649,7 @@
                                                                 </div>
 
                                                                 <div class="card-body">
-                                                                    <div class="row">
+                                                                    <div class="row rurera-hide">
                                                                         <div class="col-md-6">
                                                                             <div class="mock-exam-small-help mb-1">Name</div>
                                                                             <div class="mb-2 mockExam-tpl-section-name"></div>
@@ -683,6 +683,54 @@
                                                                             <div class="mt-2 mockExam-tpl-section-items"></div>
                                                                         </div>
                                                                     </div>
+																	<div class="mock-exam-section-table">
+																		<table>
+																			<thead>
+																			<tr>
+																				<th>
+																				<div class="mock-exam-small-help mb-1">Name</div>
+																				</th>
+																				<th>
+																				<div class="mock-exam-small-help mb-1">Instructions</div>
+																				</th>
+																				<th>
+																				<div class="mock-exam-small-help mb-1">No. of questions</div>
+																				</th>
+																				<th>
+																				<div class="mock-exam-small-help mb-1">Time (mins)</div>
+																				</th>
+																				<th>
+																				<div class="mock-exam-small-help mb-1">Items in this section</div>
+																				</th>
+																			</tr>
+																			</thead>
+																			<tbody>
+																			<tr>
+																				<td>
+																				<div class="mb-2 mockExam-tpl-section-name"></div>
+																				</td>
+																				<td>
+																				<div class="mb-2 mockExam-tpl-section-instr"></div>
+																				</td>
+																				<td>
+																				<div class="mb-2 mockExam-tpl-section-q"></div>
+																				</td>
+																				<td>
+																				<div class="mb-2 mockExam-tpl-section-t"></div>
+																				</td>
+																				<td>
+																				<div class="d-flex align-items-center justify-content-between">
+																					<div>
+																						<div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
+																					</div>
+																					<span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
+																				</div>
+																				<div class="mt-2 mockExam-tpl-section-items"></div>
+																				</td>
+																			</tr>
+																			</tbody>
+																		</table>
+																	</div>
                                                                 </div>
                                                             </div>
 
