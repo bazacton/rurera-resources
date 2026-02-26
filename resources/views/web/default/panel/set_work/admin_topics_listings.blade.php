@@ -291,8 +291,12 @@
     const root = document.documentElement;
 
     if (selectedTopics) {
-        const height = selectedTopics.offsetHeight;
-        root.style.setProperty('--sticky-offset', height + 'px');
+    const observer = new ResizeObserver(entries => {
+        const height = entries[0].contentRect.height;
+        document.documentElement.style.setProperty('--sticky-offset', height + 'px');
+    });
+
+    observer.observe(selectedTopics);
     }
     }
 
