@@ -1458,7 +1458,7 @@
 
                             setTimeout(function() {
                                 scrollAndHighlight($chapterParent);
-                            }, 3000);
+                            }, 300);
 
                         }
                         // CASE 2: If clicked result is a main chapter (li with id like subject_203)
@@ -1509,7 +1509,50 @@
                     $searchResultsDiv.append($resultElement);
                 });
             }
+            /* =========================
+            CHAPTER NAV CLICK
+            ========================= */
 
+            $('.chapter-nav li a').on('click', function(e) {
+
+                e.preventDefault();
+
+                $parent.find('.highlight').removeClass('highlight');
+
+                var targetSelector = $(this).attr('href');
+                var $target = $(targetSelector);
+
+                if (!$target.length) return;
+
+                var $chapterParent;
+
+                // CASE 1: If target is collapse
+                if ($target.hasClass('collapse')) {
+
+                    $chapterParent = $target.closest('.lms-chapter-ul-outer');
+
+                    $target.collapse('show');
+
+                    setTimeout(function() {
+                        scrollAndHighlight($chapterParent);
+                    }, 300);
+
+                }
+                // CASE 2: If target is main chapter (li like #subject_203)
+                else if ($target.is('li')) {
+
+                    $chapterParent = $target.find('.lms-chapter-ul-outer');
+                    scrollAndHighlight($chapterParent);
+
+                }
+                // CASE 3: fallback
+                else {
+
+                    $chapterParent = $target.closest('.lms-chapter-ul-outer');
+                    scrollAndHighlight($chapterParent);
+                }
+
+            });
         });
 
     </script>
