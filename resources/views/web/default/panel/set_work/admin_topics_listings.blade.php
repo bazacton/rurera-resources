@@ -184,6 +184,7 @@
             <tr>
                 <th>Title</th>
                 <th>No of Questions</th>
+                <th>Action</th>
             </tr>
             </thead>
             <tbody>
@@ -231,7 +232,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="range">
+                                        <div class="range rurera-hide">
                                             <div class="track"></div>
                                             <div class="progress"></div>
                                             <div class="thumbs">
@@ -265,6 +266,8 @@
                                             </div>
                                         </div>
                                     </div>
+                                </td>
+                                <td>
                                     <div class="d-flex align-items-center">
                                         <button type="button" class="btn btn-outline-primary mock-exam-icon-btn" data-mockexam-action="assign" title="Shortlist (assign to section)">+</button>
                                         <button type="button" class="btn btn-outline-danger mock-exam-icon-btn ml-2 mock-exam-btn-remove-main d-none" data-mockexam-action="unassign" title="Remove from section (unassign)">×</button>
