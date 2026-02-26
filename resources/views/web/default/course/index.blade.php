@@ -1328,190 +1328,203 @@
 
     </script>
     <script>
-        $(function() {
-            var $parent = $('.rurera-topics-search');
-            var $searchInput = $parent.find('#search');
-            var $searchResultsDiv = $parent.find('#search-results');
-            var $accordionList = $parent.find('#accordion');
-            var $clearBtn = $parent.find('.search-clear');
+        function handleNavigation(targetSelector) {
 
-            // INPUT EVENT
-            $searchInput.on('input', function() {
+            $parent.find('.highlight').removeClass('highlight');
 
-                var query = ($searchInput.val() || '').toLowerCase().trim();
+            var $target = $(targetSelector);
+            if (!$target.length) return;
 
-                // Toggle clear button
-                if (query.length > 0) {
-                    $clearBtn.addClass('active');
-                } else {
-                    $clearBtn.removeClass('active');
-                    $searchResultsDiv.removeClass('active').empty();
-                    return;
-                }
+            var $chapterParent;
 
-                // Hide results if less than 3 characters
-                if (query.length < 3) {
-                    $searchResultsDiv.removeClass('active').empty();
-                    return;
-                }
+            // If target is collapse
+            if ($target.hasClass('collapse')) {
 
-                var results = [];
+                $chapterParent = $target.closest('.lms-chapter-ul-outer');
 
-                $accordionList.find('li').each(function() {
-                    var $chapter = $(this);
-                    var titleText = $chapter.find('h3').text();
-                    var title = (titleText || '').toLowerCase();
-                    var $cards = $chapter.find('.chapter-card a');
+                $target.collapse('show');
 
-                    // Main topic match
-                    if (title.indexOf(query) !== -1) {
-                        results.push({
-                            name: titleText,
-                            description: 'Main Topic: ' + titleText,
-                            target: '#' + $chapter.attr('id')
-                        });
-                    }
+                setTimeout(function () {
+                    scrollAndHighlight($chapterParent);
+                }, 300);
 
-                    // Sub topic match
-                    $cards.each(function() {
-                        var $card = $(this);
-                        var cardTextOriginal = $card.text();
-                        var cardText = (cardTextOriginal || '').toLowerCase();
+            }
+            // If target is main chapter <li>
+            else if ($target.is('li')) {
 
-                        if (cardText.indexOf(query) !== -1) {
-                            results.push({
-                                name: cardTextOriginal,
-                                description: 'Sub Topic under ' + titleText,
-                                target: $card.attr('data-target')
-                            });
-                        }
-                    });
-                });
+                $chapterParent = $target.find('.lms-chapter-ul-outer');
+                scrollAndHighlight($chapterParent);
 
-                displayResults(results);
-            });
+            }
+            // Fallback
+            else {
+
+                $chapterParent = $target.closest('.lms-chapter-ul-outer');
+                scrollAndHighlight($chapterParent);
+            }
+        }
+
+        function scrollAndHighlight($el) {
+
+            if (!$el || !$el.length) return;
+
+            $('html, body').animate({
+                scrollTop: $el.offset().top - 100
+            }, 400);
+
+            $el.addClass('highlight');
+
+            clearTimeout($el.data('highlightTimer'));
+
+            var timer = setTimeout(function () {
+                $el.removeClass('highlight');
+            }, 2000);
+
+            $el.data('highlightTimer', timer);
+        }
 
 
-            // CLEAR BUTTON CLICK
-            $clearBtn.on('click', function() {
-                $searchInput.val('').focus();
+        /* =========================
+        SEARCH INPUT
+        ========================== */
+
+        $searchInput.on('input', function() {
+
+            var query = ($searchInput.val() || '').toLowerCase().trim();
+
+            if (query.length > 0) {
+                $clearBtn.addClass('active');
+            } else {
                 $clearBtn.removeClass('active');
                 $searchResultsDiv.removeClass('active').empty();
-            });
-
-
-            function displayResults(results) {
-
-                $searchResultsDiv.empty();
-
-                if (results.length === 0) {
-                    $searchResultsDiv
-                        .html('<p class="no-results">No results found</p>')
-                        .addClass('active');
-                    return;
-                }
-
-                $searchResultsDiv.addClass('active');
-
-                results.forEach(function(result) {
-
-                    var $resultElement = $('<a/>', {
-                        href: result.target,
-                        class: 'search-result-item'
-                    });
-
-                    var $resultTitle = $('<div/>', {
-                        class: 'result-title',
-                        text: result.name
-                    });
-
-                    var $resultDescription = $('<div/>', {
-                        class: 'result-description',
-                        text: result.description
-                    });
-
-                    var $expandIcon = $('<span/>', {
-                        class: 'expand-icon',
-                        text: '✕'
-                    });
-
-                    $resultElement.append($resultTitle, $resultDescription, $expandIcon);
-
-                    $resultElement.on('click', function(e) {
-                        e.preventDefault();
-
-                        $parent.find('.highlight').removeClass('highlight');
-
-                        var targetSelector = result.target;
-                        var $target = $(targetSelector);
-
-                        if (!$target.length) return;
-
-                        var $chapterParent;
-
-                        // CASE 1: If clicked result is a collapse item
-                        if ($target.hasClass('collapse')) {
-
-                            $chapterParent = $target.closest('.lms-chapter-ul-outer');
-
-                            $target.collapse('show');
-
-                            setTimeout(function() {
-                                scrollAndHighlight($chapterParent);
-                            }, 3000);
-
-                        }
-                        // CASE 2: If clicked result is a main chapter (li with id like subject_203)
-                        else if ($target.is('li')) {
-
-                            $chapterParent = $target.find('.lms-chapter-ul-outer');
-
-                            scrollAndHighlight($chapterParent);
-                        }
-                        // CASE 3: fallback
-                        else {
-
-                            $chapterParent = $target.closest('.lms-chapter-ul-outer');
-
-                            scrollAndHighlight($chapterParent);
-                        }
-
-                        // Clear search UI
-                        $searchInput.val('');
-                        $clearBtn.removeClass('active');
-                        $searchResultsDiv.removeClass('active').empty();
-
-
-                        // Shared function
-                        function scrollAndHighlight($el) {
-
-                            if (!$el || !$el.length) return;
-
-                            $('html, body').animate({
-                                scrollTop: $el.offset().top - 100
-                            }, 400);
-
-                            $el.addClass('highlight');
-
-                            clearTimeout($el.data('highlightTimer'));
-
-                            var timer = setTimeout(function() {
-                                $el.removeClass('highlight');
-                            }, 2000);
-
-                            $el.data('highlightTimer', timer);
-                        }
-
-                    });
-
-
-
-                    $searchResultsDiv.append($resultElement);
-                });
+                return;
             }
 
+            if (query.length < 3) {
+                $searchResultsDiv.removeClass('active').empty();
+                return;
+            }
+
+            var results = [];
+
+            $accordionList.find('li').each(function() {
+
+                var $chapter = $(this);
+                var titleText = $chapter.find('h3').text();
+                var title = (titleText || '').toLowerCase();
+                var $cards = $chapter.find('.chapter-card a');
+
+                // Main topic match
+                if (title.indexOf(query) !== -1) {
+                    results.push({
+                        name: titleText,
+                        description: 'Main Topic: ' + titleText,
+                        target: '#' + $chapter.attr('id')
+                    });
+                }
+
+                // Sub topic match
+                $cards.each(function() {
+
+                    var $card = $(this);
+                    var cardTextOriginal = $card.text();
+                    var cardText = (cardTextOriginal || '').toLowerCase();
+
+                    if (cardText.indexOf(query) !== -1) {
+                        results.push({
+                            name: cardTextOriginal,
+                            description: 'Sub Topic under ' + titleText,
+                            target: $card.attr('data-target')
+                        });
+                    }
+                });
+            });
+
+            displayResults(results);
         });
 
+
+        /* =========================
+        CLEAR BUTTON
+        ========================== */
+
+        $clearBtn.on('click', function() {
+            $searchInput.val('').focus();
+            $clearBtn.removeClass('active');
+            $searchResultsDiv.removeClass('active').empty();
+        });
+
+
+        /* =========================
+        CHAPTER NAV CLICK (Outside Search)
+        ========================== */
+
+        $('.chapter-nav a').on('click', function(e) {
+            e.preventDefault();
+
+            var target = $(this).attr('href');
+            handleNavigation(target);
+        });
+
+
+        /* =========================
+        DISPLAY SEARCH RESULTS
+        ========================== */
+
+        function displayResults(results) {
+
+            $searchResultsDiv.empty();
+
+            if (results.length === 0) {
+                $searchResultsDiv
+                    .html('<p class="no-results">No results found</p>')
+                    .addClass('active');
+                return;
+            }
+
+            $searchResultsDiv.addClass('active');
+
+            results.forEach(function(result) {
+
+                var $resultElement = $('<a/>', {
+                    href: result.target,
+                    class: 'search-result-item'
+                });
+
+                var $resultTitle = $('<div/>', {
+                    class: 'result-title',
+                    text: result.name
+                });
+
+                var $resultDescription = $('<div/>', {
+                    class: 'result-description',
+                    text: result.description
+                });
+
+                var $expandIcon = $('<span/>', {
+                    class: 'expand-icon',
+                    text: '✕'
+                });
+
+                $resultElement.append(
+                    $resultTitle,
+                    $resultDescription,
+                    $expandIcon
+                );
+
+                $resultElement.on('click', function(e) {
+                    e.preventDefault();
+
+                    handleNavigation(result.target);
+
+                    $searchInput.val('');
+                    $clearBtn.removeClass('active');
+                    $searchResultsDiv.removeClass('active').empty();
+                });
+
+                $searchResultsDiv.append($resultElement);
+            });
+        }
     </script>
 
     <script>
