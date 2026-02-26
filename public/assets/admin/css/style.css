@@ -1940,6 +1940,20 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     color: #333;
     padding-bottom: 0;
 }
+.mock-exam-assigned-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 3px 8px;
+    line-height: normal;
+}
+.mockExam-tpl-assigned-remove {
+    color: #dc3545;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
 /* Subject Filter Style End */
 .select-topics .topics-table {
     width: 100%;
