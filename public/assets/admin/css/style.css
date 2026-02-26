@@ -1945,14 +1945,18 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     justify-content: space-between;
     border: 1px dashed #ccc;
     border-radius: 5px;
-    padding: 3px 8px;
+    padding: 3px 20px 3px 8px;
     line-height: normal;
+    position: relative;
 }
 .mockExam-tpl-assigned-remove {
     color: #dc3545;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+    position: absolute;
+    right: 8px;
+    margin-top: -2px;
 }
 /* Subject Filter Style End */
 .select-topics .topics-table {
