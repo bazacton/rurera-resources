@@ -613,33 +613,16 @@
 
                                                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                                                             <div class="mb-2">
-                                                                <button class="btn btn-outline-primary btn-sm" id="mockExam-addMultipleBtn">
-                                                                    Create multiple shortlist Sections
-                                                                </button>
                                                                 <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
                                                                     + Add Section
                                                                 </button>
                                                             </div>
-                                                            <div class="mb-2">
-                                                                <button class="btn btn-outline-secondary btn-sm" id="mockExam-newListBtn">
-                                                                    Create new list (reset)
-                                                                </button>
-                                                            </div>
+
                                                         </div>
 
 
 
-                                                        <div class="mt-3">
-                                                            <div class="mock-exam-small-help mb-2">
-                                                                Drag sections by the <b>≡</b> handle to reorder. Labels auto-update like <b>Section 2/5</b>.
-                                                            </div>
 
-                                                            <div id="mockExam-sectionsContainer"></div>
-
-                                                            <div id="mockExam-noSectionsNote" class="mock-exam-empty-note mt-3" style="display:none;">
-                                                                No sections yet. Click <b>Create multiple shortlist Sections</b> or <b>+ Add Section</b>.
-                                                            </div>
-                                                        </div>
 
 
 
