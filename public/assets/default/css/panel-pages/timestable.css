@@ -262,7 +262,7 @@ Sub Pages Style
 .levels-grouping .levels-progress.circle .progress-count {background: #0ebe73;}
 
 .panel-content .lms-text-section {padding: 25px !important;}
-.panel-content .spell-levels .panel-subheader {padding-right: 155px; margin-bottom: 100px;}
+.panel-content .spell-levels .panel-subheader {padding-right: 150px; margin-bottom: 100px;}
 .panel-subheader {background: url(/assets/default/img/subheader-bg1.png) no-repeat right bottom #ebf3fe; background-position: 95% 100%; padding: 20px 20px; border-radius: 5px; margin: 0 0 25px; position: relative;}
 .panel-subheader h2 { margin: 0 0 5px;}
 .panel-subheader .title {margin: 0 0 25px;}
