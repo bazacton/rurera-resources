@@ -163,21 +163,16 @@ Sub Pages Style
 .sound-list {margin-bottom: 25px;}
 .sound-card .close {position: absolute; right: -12px; top: -30px;}
 /*Books Sound Card Style End*/
-.ru-book-slider-inner {
-    background-color: #f6f6f7;
-    padding: 15px;
-}
 .ru-book-slider .book-section{
 background:#fff;
 border-radius:16px;
-box-shadow:0 6px 18px rgba(0,0,0,.06);
 overflow:hidden;
 }
 .ru-book-slider .book-details{
 width:420px;
 max-width:420px;
 flex:0 0 420px;
-border-right:1px solid #eee;
+border-right:1px solid #ddd;
 }
 .ru-book-slider .book-cover-lg{
 width:130px;
