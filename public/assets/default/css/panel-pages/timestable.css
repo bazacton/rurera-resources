@@ -31,7 +31,7 @@ Sub Pages Style
 .panel-content .questions-select-option li {margin-right: -1px;}
 .panel-content .questions-select-option li:last-child {margin-right: 0;}
 .panel-content .questions-submit-btn {background-color: #fff; color: #343434;}
-.panel-content .questions-submit-btn:hover {color: var(--primary);}
+.panel-content .questions-submit-btn:hover {color: #fff; border-color: var(--primary); background-color: var(--primary);}
 .panel-content .questions-submit-btn:before,
 .panel-content .questions-submit-btn:after {border: 1px solid #ddd; background: inherit; }
 .panel-content .questions-submit-btn:hover:before,
