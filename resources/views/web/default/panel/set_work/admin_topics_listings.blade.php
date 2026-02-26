@@ -284,3 +284,22 @@
     </div>
 
 </div>
+@push('scripts_bottom')
+<script>
+    function updateStickyOffset() {
+    const selectedTopics = document.querySelector('.selected-topics');
+    const root = document.documentElement;
+
+    if (selectedTopics) {
+        const height = selectedTopics.offsetHeight;
+        root.style.setProperty('--sticky-offset', height + 'px');
+    }
+    }
+
+    // Run on load
+    updateStickyOffset();
+
+    // Run on resize (important if responsive)
+    window.addEventListener('resize', updateStickyOffset);
+</script>
+@endpush
