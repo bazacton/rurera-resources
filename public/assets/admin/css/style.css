@@ -1805,6 +1805,9 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     margin-bottom: 15px;
     object-fit: contain;
 }
+.questions_bulk_list {
+    background-color: #fff;
+}
 .questions_bulk_list .modal-dialog {
     max-width: 100%;
     margin: 0;
