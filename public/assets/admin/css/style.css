@@ -1812,7 +1812,8 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     max-width: 100%;
     margin: 0;
 }
-.questions_bulk_list .edit-quest-modal-div {
+.questions_bulk_list .edit-quest-modal-div,
+.questions_bulk_list.modal.show .modal-content {
     box-shadow: none;
     height: 100%;
 }
