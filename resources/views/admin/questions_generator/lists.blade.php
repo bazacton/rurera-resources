@@ -812,7 +812,7 @@
                     </div>
 
                     <div class="modal-body">
-                        <div class="d-flex align-items-start justify-content-between flex-wrap rurera-hide">
+                        <div class="align-items-start justify-content-between flex-wrap rurera-hide">
                             <div class="mb-2">
                                 <div class="mock-exam-muted">Selected item</div>
                                 <h5 id="mockExam-selectedItemTitle" class="mb-1">None</h5>
