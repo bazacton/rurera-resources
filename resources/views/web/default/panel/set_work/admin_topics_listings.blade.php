@@ -268,7 +268,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center">
+                                    <div class="mock-exam-btn-holder">
                                         <button type="button" class="btn btn-outline-primary mock-exam-icon-btn" data-mockexam-action="assign" title="Shortlist (assign to section)">+</button>
                                         <button type="button" class="btn btn-outline-danger mock-exam-icon-btn ml-2 mock-exam-btn-remove-main d-none" data-mockexam-action="unassign" title="Remove from section (unassign)">×</button>
                                     </div>
