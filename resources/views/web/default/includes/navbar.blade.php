@@ -20,15 +20,19 @@
     $navbarPages = isset( $navData['navbarPages'] )? $navData['navbarPages'] : array();
     $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
 
-    $no_menu_array = array('dashboard','learn', 'timestable', 'spells', 'books','tests','quests','analytics','marketing','setting', 'set-work');
+    $no_menu_array = array(
+            'dashboard','learn', 'timestable', 'spells', 'books','tests','quests','analytics','marketing','setting', 'set-work'
+        );
     $patterns = [];
 
     foreach ($no_menu_array as $item) {
         $patterns[] = $item;
         $patterns[] = $item . '/*';
     }
+    $show_nav = isset($show_nav)? $show_nav : false;
+    if( !isset( $authUser )){ $show_nav = true; }
 @endphp
-@if (!request()->is($patterns))
+@if ($show_nav == true)
     <div id="navbarVacuum"></div>
 
     <nav id="navbar" class="navbar1 navbar-expand-lg navbar-light top-navbar">
