@@ -812,7 +812,19 @@
                     </div>
 
                     <div class="modal-body">
-                        
+                        <div class="d-flex align-items-start justify-content-between flex-wrap rurera-hide">
+                            <div class="mb-2">
+                                <div class="mock-exam-muted">Selected item</div>
+                                <h5 id="mockExam-selectedItemTitle" class="mb-1">None</h5>
+                                <div id="mockExam-selectedItemAssignedNote" class="mock-exam-small-help" style="display:none;"></div>
+                            </div>
+                            <div class="mb-2">
+                                <span class="mock-exam-pill">Total sections: <span id="mockExam-assignSectionsCount">0</span></span>
+                            </div>
+                        </div>
+
+                        <hr class="rurera-hide">
+
                         <div id="mockExam-assignSectionsList"></div>
 
                         <div id="mockExam-assignNoSections" class="mock-exam-empty-note mt-3" style="display:none;">
