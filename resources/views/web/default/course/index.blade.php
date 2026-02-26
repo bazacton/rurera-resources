@@ -1328,221 +1328,190 @@
 
     </script>
     <script>
-        function handleNavigation(targetSelector) {
+        $(function() {
             var $parent = $('.rurera-topics-search');
+            var $searchInput = $parent.find('#search');
+            var $searchResultsDiv = $parent.find('#search-results');
+            var $accordionList = $parent.find('#accordion');
+            var $clearBtn = $parent.find('.search-clear');
 
-            $parent.find('.highlight').removeClass('highlight');
+            // INPUT EVENT
+            $searchInput.on('input', function() {
 
-            var $target = $(targetSelector);
-            if (!$target.length) return;
+                var query = ($searchInput.val() || '').toLowerCase().trim();
 
-            var $chapterParent;
-
-            if ($target.hasClass('collapse')) {
-
-                $chapterParent = $target.closest('.lms-chapter-ul-outer');
-
-                $target.collapse('show');
-
-                setTimeout(function () {
-                    scrollAndHighlight($chapterParent);
-                }, 300);
-
-            } else if ($target.is('li')) {
-
-                $chapterParent = $target.find('.lms-chapter-ul-outer');
-                scrollAndHighlight($chapterParent);
-
-            } else {
-
-                $chapterParent = $target.closest('.lms-chapter-ul-outer');
-                scrollAndHighlight($chapterParent);
-            }
-        }
-
-        function scrollAndHighlight($el) {
-
-            if (!$el || !$el.length) return;
-
-            $('html, body').animate({
-                scrollTop: $el.offset().top - 100
-            }, 400);
-
-            $el.addClass('highlight');
-
-            clearTimeout($el.data('highlightTimer'));
-
-            var timer = setTimeout(function () {
-                $el.removeClass('highlight');
-            }, 2000);
-
-            $el.data('highlightTimer', timer);
-        }
-
-        function scrollAndHighlight($el) {
-
-            if (!$el || !$el.length) return;
-
-            $('html, body').animate({
-                scrollTop: $el.offset().top - 100
-            }, 400);
-
-            $el.addClass('highlight');
-
-            clearTimeout($el.data('highlightTimer'));
-
-            var timer = setTimeout(function () {
-                $el.removeClass('highlight');
-            }, 2000);
-
-            $el.data('highlightTimer', timer);
-        }
-
-
-        /* =========================
-        SEARCH INPUT
-        ========================== */
-
-        $searchInput.on('input', function() {
-
-            var query = ($searchInput.val() || '').toLowerCase().trim();
-
-            if (query.length > 0) {
-                $clearBtn.addClass('active');
-            } else {
-                $clearBtn.removeClass('active');
-                $searchResultsDiv.removeClass('active').empty();
-                return;
-            }
-
-            if (query.length < 3) {
-                $searchResultsDiv.removeClass('active').empty();
-                return;
-            }
-
-            var results = [];
-
-            $accordionList.find('li').each(function() {
-
-                var $chapter = $(this);
-                var titleText = $chapter.find('h3').text();
-                var title = (titleText || '').toLowerCase();
-                var $cards = $chapter.find('.chapter-card a');
-
-                // Main topic match
-                if (title.indexOf(query) !== -1) {
-                    results.push({
-                        name: titleText,
-                        description: 'Main Topic: ' + titleText,
-                        target: '#' + $chapter.attr('id')
-                    });
+                // Toggle clear button
+                if (query.length > 0) {
+                    $clearBtn.addClass('active');
+                } else {
+                    $clearBtn.removeClass('active');
+                    $searchResultsDiv.removeClass('active').empty();
+                    return;
                 }
 
-                // Sub topic match
-                $cards.each(function() {
+                // Hide results if less than 3 characters
+                if (query.length < 3) {
+                    $searchResultsDiv.removeClass('active').empty();
+                    return;
+                }
 
-                    var $card = $(this);
-                    var cardTextOriginal = $card.text();
-                    var cardText = (cardTextOriginal || '').toLowerCase();
+                var results = [];
 
-                    if (cardText.indexOf(query) !== -1) {
+                $accordionList.find('li').each(function() {
+                    var $chapter = $(this);
+                    var titleText = $chapter.find('h3').text();
+                    var title = (titleText || '').toLowerCase();
+                    var $cards = $chapter.find('.chapter-card a');
+
+                    // Main topic match
+                    if (title.indexOf(query) !== -1) {
                         results.push({
-                            name: cardTextOriginal,
-                            description: 'Sub Topic under ' + titleText,
-                            target: $card.attr('data-target')
+                            name: titleText,
+                            description: 'Main Topic: ' + titleText,
+                            target: '#' + $chapter.attr('id')
                         });
                     }
+
+                    // Sub topic match
+                    $cards.each(function() {
+                        var $card = $(this);
+                        var cardTextOriginal = $card.text();
+                        var cardText = (cardTextOriginal || '').toLowerCase();
+
+                        if (cardText.indexOf(query) !== -1) {
+                            results.push({
+                                name: cardTextOriginal,
+                                description: 'Sub Topic under ' + titleText,
+                                target: $card.attr('data-target')
+                            });
+                        }
+                    });
                 });
+
+                displayResults(results);
             });
 
-            displayResults(results);
-        });
+
+            // CLEAR BUTTON CLICK
+            $clearBtn.on('click', function() {
+                $searchInput.val('').focus();
+                $clearBtn.removeClass('active');
+                $searchResultsDiv.removeClass('active').empty();
+            });
 
 
-        /* =========================
-        CLEAR BUTTON
-        ========================== */
+            function displayResults(results) {
 
-        $clearBtn.on('click', function() {
-            $searchInput.val('').focus();
-            $clearBtn.removeClass('active');
-            $searchResultsDiv.removeClass('active').empty();
-        });
+                $searchResultsDiv.empty();
+
+                if (results.length === 0) {
+                    $searchResultsDiv
+                        .html('<p class="no-results">No results found</p>')
+                        .addClass('active');
+                    return;
+                }
+
+                $searchResultsDiv.addClass('active');
+
+                results.forEach(function(result) {
+
+                    var $resultElement = $('<a/>', {
+                        href: result.target,
+                        class: 'search-result-item'
+                    });
+
+                    var $resultTitle = $('<div/>', {
+                        class: 'result-title',
+                        text: result.name
+                    });
+
+                    var $resultDescription = $('<div/>', {
+                        class: 'result-description',
+                        text: result.description
+                    });
+
+                    var $expandIcon = $('<span/>', {
+                        class: 'expand-icon',
+                        text: '✕'
+                    });
+
+                    $resultElement.append($resultTitle, $resultDescription, $expandIcon);
+
+                    $resultElement.on('click', function(e) {
+                        e.preventDefault();
+
+                        $parent.find('.highlight').removeClass('highlight');
+
+                        var targetSelector = result.target;
+                        var $target = $(targetSelector);
+
+                        if (!$target.length) return;
+
+                        var $chapterParent;
+
+                        // CASE 1: If clicked result is a collapse item
+                        if ($target.hasClass('collapse')) {
+
+                            $chapterParent = $target.closest('.lms-chapter-ul-outer');
+
+                            $target.collapse('show');
+
+                            setTimeout(function() {
+                                scrollAndHighlight($chapterParent);
+                            }, 3000);
+
+                        }
+                        // CASE 2: If clicked result is a main chapter (li with id like subject_203)
+                        else if ($target.is('li')) {
+
+                            $chapterParent = $target.find('.lms-chapter-ul-outer');
+
+                            scrollAndHighlight($chapterParent);
+                        }
+                        // CASE 3: fallback
+                        else {
+
+                            $chapterParent = $target.closest('.lms-chapter-ul-outer');
+
+                            scrollAndHighlight($chapterParent);
+                        }
+
+                        // Clear search UI
+                        $searchInput.val('');
+                        $clearBtn.removeClass('active');
+                        $searchResultsDiv.removeClass('active').empty();
 
 
-        /* =========================
-        CHAPTER NAV CLICK (Outside Search)
-        ========================== */
+                        // Shared function
+                        function scrollAndHighlight($el) {
 
-        $('.chapter-nav a').on('click', function(e) {
-            e.preventDefault();
+                            if (!$el || !$el.length) return;
 
-            var target = $(this).attr('href');
-            handleNavigation(target);
-        });
+                            $('html, body').animate({
+                                scrollTop: $el.offset().top - 100
+                            }, 400);
+
+                            $el.addClass('highlight');
+
+                            clearTimeout($el.data('highlightTimer'));
+
+                            var timer = setTimeout(function() {
+                                $el.removeClass('highlight');
+                            }, 2000);
+
+                            $el.data('highlightTimer', timer);
+                        }
+
+                    });
 
 
-        /* =========================
-        DISPLAY SEARCH RESULTS
-        ========================== */
 
-        function displayResults(results) {
-
-            $searchResultsDiv.empty();
-
-            if (results.length === 0) {
-                $searchResultsDiv
-                    .html('<p class="no-results">No results found</p>')
-                    .addClass('active');
-                return;
+                    $searchResultsDiv.append($resultElement);
+                });
             }
 
-            $searchResultsDiv.addClass('active');
+        });
 
-            results.forEach(function(result) {
-
-                var $resultElement = $('<a/>', {
-                    href: result.target,
-                    class: 'search-result-item'
-                });
-
-                var $resultTitle = $('<div/>', {
-                    class: 'result-title',
-                    text: result.name
-                });
-
-                var $resultDescription = $('<div/>', {
-                    class: 'result-description',
-                    text: result.description
-                });
-
-                var $expandIcon = $('<span/>', {
-                    class: 'expand-icon',
-                    text: '✕'
-                });
-
-                $resultElement.append(
-                    $resultTitle,
-                    $resultDescription,
-                    $expandIcon
-                );
-
-                $resultElement.on('click', function(e) {
-                    e.preventDefault();
-
-                    handleNavigation(result.target);
-
-                    // Safe clear
-                    $('.rurera-topics-search #search').val('');
-                    $('.rurera-topics-search .search-clear').removeClass('active');
-                    $('.rurera-topics-search #search-results')
-                        .removeClass('active')
-                        .empty();
-                });
-
-                $searchResultsDiv.append($resultElement);
-            });
-        }
     </script>
 
     <script>
