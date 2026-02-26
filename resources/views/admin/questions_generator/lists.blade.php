@@ -441,7 +441,7 @@
 
 
                                         <div class="col-md-3 col-lg-3">
-                                            <div class="form-group mt-15 ">
+                                            <div class="form-group ">
                                                 <label class="input-label d-block">Quiz Title</label>
                                                 <input type="text" name="quiz_title" class="form-control rurera-req-field">
                                             </div>
@@ -450,7 +450,7 @@
 
 
                                         <div class="col-md-3 col-lg-3">
-                                            <div class="form-group mt-15 ">
+                                            <div class="form-group ">
                                                 <label class="input-label d-block">Quiz Slug</label>
                                                 <input type="text" name="quiz_slug" class="form-control">
                                             </div>
