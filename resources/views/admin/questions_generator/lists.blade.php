@@ -422,6 +422,21 @@
                                         </div>
                                         <div class="col-md-3 col-lg-3">
                                             <div class="form-group ">
+                                                <label class="input-label d-block">Quiz Title</label>
+                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group ">
+                                                <label class="input-label d-block">Quiz Slug</label>
+                                                <input type="text" name="quiz_slug" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group ">
                                                 <label class="input-label d-block">Auto Generated Questions</label>
                                                 <select name="mock_type"
                                                         class="form-control conditional_field_parent" data-placeholder="Select Type">
@@ -444,21 +459,7 @@
                                         </div>
 
 
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group ">
-                                                <label class="input-label d-block">Quiz Title</label>
-                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
-                                            </div>
-                                        </div>
 
-
-
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group ">
-                                                <label class="input-label d-block">Quiz Slug</label>
-                                                <input type="text" name="quiz_slug" class="form-control">
-                                            </div>
-                                        </div>
 
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group quiz-image-group">
@@ -597,7 +598,7 @@
                                                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                                                             <div class="mb-2">
 
-                                                                <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
+                                                                <button type="button" class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
                                                                     + Add Section
                                                                 </button>
                                                             </div>
