@@ -416,7 +416,7 @@
                                         <div class="col-md-12 col-lg-12">
                                             <h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
                                         </div>
-                                        <div class="col-md-4 col-lg-4">
+                                        <div class="col-md-3 col-lg-3">
                                             <div class="form-group ">
                                                 <label class="input-label d-block">Auto Generated Questions</label>
                                                 <select name="mock_type"
@@ -426,7 +426,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-lg-4">
+                                        <div class="col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="input-label">Exam Category</label>
                                                 <select name="list_sub_type" data-plugin-selectTwo class="form-control populate list_sub_type ">
@@ -438,25 +438,24 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-lg-4 ">
-                                            <div class="form-group">
-                                                <label class="input-label">{{trans('admin/main.category')}}</label>
-                                                <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-                                                    <option value="">{{trans('admin/main.all_categories')}}</option>
-                                                    @foreach($categories as $category)
-                                                        @if(!empty($category->subCategories) and count($category->subCategories))
-                                                            <optgroup label="{{  $category->title }}">
-                                                                @foreach($category->subCategories as $subCategory)
-                                                                    <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-                                                                @endforeach
-                                                            </optgroup>
-                                                        @else
-                                                            <option value="{{ $category->id }}">{{ $category->title }}</option>
-                                                        @endif
-                                                    @endforeach
-                                                </select>
+
+
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group mt-15 ">
+                                                <label class="input-label d-block">Quiz Title</label>
+                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
                                             </div>
                                         </div>
+
+
+
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group mt-15 ">
+                                                <label class="input-label d-block">Quiz Slug</label>
+                                                <input type="text" name="quiz_slug" class="form-control">
+                                            </div>
+                                        </div>
+
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group quiz-image-group">
                                                 <label class="input-label d-block mb-3">Quiz Image</label>
@@ -533,66 +532,46 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group mt-15 ">
-                                                <label class="input-label d-block">Quiz Title</label>
-                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group mt-15 ">
-                                                <label class="input-label d-block">Quiz Slug</label>
-                                                <input type="text" name="quiz_slug" class="form-control">
-                                            </div>
-                                        </div>
                                         <div class="col-12">
                                             <div class="questions_bulk_list-tabs">
                                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                                     <li class="nav-item" role="presentation">
-                                                        <button class="nav-link active" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
+                                                        <button class="nav-link active" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Sections</button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Sections</button>
+                                                        <button class="nav-link" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
                                                     </li>
+
                                                 </ul>
                                                 <div class="tab-content" id="myTabContent">
-                                                    <div class="tab-pane fade show active" id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
+                                                    <div class="tab-pane fade " id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
                                                         <div class="row">
+
+                                                            <div class="col-md-4 col-lg-4 ">
+                                                                <div class="form-group">
+                                                                    <label class="input-label">{{trans('admin/main.category')}}</label>
+                                                                    <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+                                                                        <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                                        @foreach($categories as $category)
+                                                                            @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                                <optgroup label="{{  $category->title }}">
+                                                                                    @foreach($category->subCategories as $subCategory)
+                                                                                        <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                                                                    @endforeach
+                                                                                </optgroup>
+                                                                            @else
+                                                                                <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                                                            @endif
+                                                                        @endforeach
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
                                                             <div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
 
                                                             </div>
                                                             <div class="col-12">
                                                                 <div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
-                                                            </div>
-
-
-                                                            <div class="col-md-3 col-lg-3">
-                                                                <div class="form-group mt-15 ">
-                                                                    <label class="input-label d-block">Total Time (Minutes)</label>
-                                                                    <input type="number" name="total_time" class="form-control rurera-req-field">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3 col-lg-3 no_of_questions_field">
-                                                                <div class="form-group mt-15">
-
-                                                                    <div class="question-range-info text-muted mb-1"></div>
-
-                                                                    <label class="input-label d-block">No of Questions</label>
-                                                                    <input type="number" name="no_of_questions" class="form-control rurera-req-field">
-
-                                                                    <div class="question-error text-danger mt-1" style="display:none;"></div>
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12 col-lg-12">
-                                                                <div class="form-group mt-15 ">
-                                                                    <label class="input-label d-block">Quiz Instructions</label>
-                                                                    <textarea name="quiz_instructions" class="summernote-editor"></textarea>
-                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -607,13 +586,13 @@
 
 
                                                     </div>
-                                                    <div class="tab-pane fade" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <div class="tab-pane fade show active" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">
 
 
 
                                                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                                                             <div class="mb-2">
-                                                               
+
                                                                 <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
                                                                     + Add Section
                                                                 </button>
