@@ -1329,6 +1329,7 @@
     </script>
     <script>
         function handleNavigation(targetSelector) {
+            var $parent = $('.rurera-topics-search');
 
             $parent.find('.highlight').removeClass('highlight');
 
@@ -1337,7 +1338,6 @@
 
             var $chapterParent;
 
-            // If target is collapse
             if ($target.hasClass('collapse')) {
 
                 $chapterParent = $target.closest('.lms-chapter-ul-outer');
@@ -1348,20 +1348,35 @@
                     scrollAndHighlight($chapterParent);
                 }, 300);
 
-            }
-            // If target is main chapter <li>
-            else if ($target.is('li')) {
+            } else if ($target.is('li')) {
 
                 $chapterParent = $target.find('.lms-chapter-ul-outer');
                 scrollAndHighlight($chapterParent);
 
-            }
-            // Fallback
-            else {
+            } else {
 
                 $chapterParent = $target.closest('.lms-chapter-ul-outer');
                 scrollAndHighlight($chapterParent);
             }
+        }
+
+        function scrollAndHighlight($el) {
+
+            if (!$el || !$el.length) return;
+
+            $('html, body').animate({
+                scrollTop: $el.offset().top - 100
+            }, 400);
+
+            $el.addClass('highlight');
+
+            clearTimeout($el.data('highlightTimer'));
+
+            var timer = setTimeout(function () {
+                $el.removeClass('highlight');
+            }, 2000);
+
+            $el.data('highlightTimer', timer);
         }
 
         function scrollAndHighlight($el) {
@@ -1517,9 +1532,12 @@
 
                     handleNavigation(result.target);
 
-                    $searchInput.val('');
-                    $clearBtn.removeClass('active');
-                    $searchResultsDiv.removeClass('active').empty();
+                    // Safe clear
+                    $('.rurera-topics-search #search').val('');
+                    $('.rurera-topics-search .search-clear').removeClass('active');
+                    $('.rurera-topics-search #search-results')
+                        .removeClass('active')
+                        .empty();
                 });
 
                 $searchResultsDiv.append($resultElement);
