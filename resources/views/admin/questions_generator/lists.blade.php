@@ -73,6 +73,58 @@
         .conditional-child-fields{display:none;}
     </style>
 
+
+    <style>
+        /* =========================
+           Scoped CSS (prefixed)
+           ========================= */
+        .mock-exam { background:#f5f7fb; min-height:100vh; }
+        .mock-exam .mock-exam-page-wrap { padding: 28px 0; }
+
+        /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
+        .mock-exam-modal.modal-fullwidth .modal-dialog {
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+            height: 100%;
+        }
+        .mock-exam-modal.modal-fullwidth .modal-content {
+            height: 100vh;
+            border-radius: 0;
+            border: 0;
+        }
+        .mock-exam-modal.modal-fullwidth .modal-header { border-bottom: 1px solid #e9ecef; }
+        .mock-exam-modal.modal-fullwidth .modal-body { overflow: auto; }
+        .mock-exam-modal .modal-footer { border-top: 1px solid #e9ecef; }
+
+        .mock-exam .mock-exam-section-card { border: 1px solid #e9ecef; border-radius: .5rem; background:#fff; }
+        .mock-exam .mock-exam-section-card .card-header { background: #fff; border-bottom: 1px solid #f1f3f5; }
+        .mock-exam .mock-exam-drag-handle { cursor: grab; user-select: none; }
+        .mock-exam .mock-exam-section-label-badge { font-weight: 600; }
+        .mock-exam .mock-exam-muted { color: #6c757d; }
+        .mock-exam .mock-exam-small-help { font-size: 12px; color:#6c757d; }
+
+        .mock-exam .mock-exam-item-row { background: #fff; border:1px solid #e9ecef; border-radius: .5rem; padding: 12px 14px; }
+        .mock-exam .mock-exam-item-row + .mock-exam-item-row { margin-top: 10px; }
+        .mock-exam .mock-exam-icon-btn { width: 34px; height: 34px; border-radius: 999px; display:inline-flex; align-items:center; justify-content:center; }
+        .mock-exam .mock-exam-pill { border:1px solid #e9ecef; border-radius: 999px; padding: 2px 10px; font-size: 12px; background:#fff; }
+        .mock-exam .mock-exam-assigned-item { display:flex; align-items:center; justify-content:space-between; padding:6px 8px; border:1px dashed #e9ecef; border-radius:.4rem; margin-top:6px; }
+        .mock-exam .mock-exam-assigned-item:first-child { margin-top:0; }
+        .mock-exam .mock-exam-assigned-item .mock-exam-rm { cursor:pointer; color:#dc3545; font-weight:600; padding:0 6px; }
+        .mock-exam .mock-exam-empty-note { font-size: 13px; color:#6c757d; }
+
+        /* Small nested modal */
+        .mock-exam-modal.modal-sm2 .modal-dialog { max-width: 720px; }
+        .mock-exam-modal .note-editor.note-frame { border-radius: .25rem; }
+
+        .mock-exam .mock-exam-btn-remove-main { border-color:#f1c6cc; color:#dc3545; }
+        .mock-exam .mock-exam-btn-remove-main:hover { background:#dc3545; color:#fff; }
+        .mock-exam .mock-exam-btn-disabled { opacity:.55; cursor:not-allowed; }
+
+        /* template container is hidden */
+        #mockExam-templates { display:none !important; }
+    </style>
+
     <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 @endpush
 
@@ -405,39 +457,20 @@
                                                 </select>
                                             </div>
                                         </div>
-										<div class="col-12">
-											<div class="questions_bulk_list-tabs">
-												<ul class="nav nav-tabs" id="myTab" role="tablist">
-													<li class="nav-item" role="presentation">
-														<button class="nav-link active" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
-													</li>
-													<li class="nav-item" role="presentation">
-														<button class="nav-link" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Questions bulk Tab 2</button>
-													</li>
-												</ul>
-												<div class="tab-content" id="myTabContent">
-													<div class="tab-pane fade show active" id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
-														<div class="row">
-															<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="form-group quiz-image-group">
+                                                <label class="input-label d-block mb-3">Quiz Image</label>
 
-															</div>
-															<div class="col-12">
-																<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
-															</div>
-															<div class="col-md-12 col-lg-12">
-																<div class="form-group quiz-image-group">
-																	<label class="input-label d-block mb-3">Quiz Image</label>
-
-																	<div class="d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-3">
 
 
-																		<!-- Upload Button (Your Existing Button) -->
-																		<button
-																			type="button"
-																			class="btn upload-btn rurera-file-manager"
-																			data-input="image"
-																			data-preview="preview_img-image"
-																			data-image_attr='{
+                                                    <!-- Upload Button (Your Existing Button) -->
+                                                    <button
+                                                        type="button"
+                                                        class="btn upload-btn rurera-file-manager"
+                                                        data-input="image"
+                                                        data-preview="preview_img-image"
+                                                        data-image_attr='{
 																					"upload_type":"gallery",
 																					"upload_dir":"public",
 																					"upload_path":"/quiz",
@@ -446,41 +479,41 @@
 																					"hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
 																					"field_name":"quiz_image"
 																				}'
-																			data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-																		>
-																			<i class="fa fa-upload me-2"></i> Upload Image
-																		</button>
+                                                        data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+                                                    >
+                                                        <i class="fa fa-upload me-2"></i> Upload Image
+                                                    </button>
 
-																		<!-- Remove Button -->
+                                                    <!-- Remove Button -->
 
-																		<button type="button" class="btn remove-btn" id="remove-quiz-image">
-																			<i class="fa fa-trash me-2"></i> Remove
-																		</button>
-																	</div>
+                                                    <button type="button" class="btn remove-btn" id="remove-quiz-image">
+                                                        <i class="fa fa-trash me-2"></i> Remove
+                                                    </button>
+                                                </div>
 
-																	<!-- Preview -->
-																	<div class="preview_img-image mt-3"></div>
+                                                <!-- Preview -->
+                                                <div class="preview_img-image mt-3"></div>
 
-																	<!-- Hidden Field -->
-																	<input name="quiz_image" type="hidden" id="quiz_image">
+                                                <!-- Hidden Field -->
+                                                <input name="quiz_image" type="hidden" id="quiz_image">
 
-																	<!-- Support Text -->
-																	<small class="text-muted d-block mt-2">
-																		Supports Only: PNG, JPEG, JPG (Under 500KB)
-																	</small>
-																</div>
+                                                <!-- Support Text -->
+                                                <small class="text-muted d-block mt-2">
+                                                    Supports Only: PNG, JPEG, JPG (Under 500KB)
+                                                </small>
+                                            </div>
 
 
-																<div class="form-group rurera-hide">
-																	<label class="input-label">Quiz Image</label>
-																	<div class="input-group">
-																		<div class="input-group-prepend">
-																			<button
-																				type="button"
-																				class="input-group-text rurera-file-manager"
-																				data-input="image"
-																				data-preview="preview_img-image"
-																				data-image_attr='{
+                                            <div class="form-group rurera-hide">
+                                                <label class="input-label">Quiz Image</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <button
+                                                            type="button"
+                                                            class="input-group-text rurera-file-manager"
+                                                            data-input="image"
+                                                            data-preview="preview_img-image"
+                                                            data-image_attr='{
 																						"upload_type":"gallery",
 																						"upload_dir":"public",
 																						"upload_path":"/quiz",
@@ -489,64 +522,262 @@
 																						"hidden_field":"<input name=\"quiz_image\" type=\"hidden\" id=\"quiz_image\" placeholder=\"Upload Image\">",
 																						"field_name":"quiz_image"
 																					}'
-																				data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
-																			>
-																				<i class="fa fa-upload"></i>
-																			</button>
-																			<div class="preview_img-image">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
+                                                            data-gallery_fields='{"gallery_type":"gallery","folder_name":"quiz"}'
+                                                        >
+                                                            <i class="fa fa-upload"></i>
+                                                        </button>
+                                                        <div class="preview_img-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-															<div class="col-md-3 col-lg-3">
-																<div class="form-group mt-15 ">
-																	<label class="input-label d-block">Quiz Title</label>
-																	<input type="text" name="quiz_title" class="form-control rurera-req-field">
-																</div>
-															</div>
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group mt-15 ">
+                                                <label class="input-label d-block">Quiz Title</label>
+                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
+                                            </div>
+                                        </div>
 
 
 
-															<div class="col-md-3 col-lg-3">
-																<div class="form-group mt-15 ">
-																	<label class="input-label d-block">Quiz Slug</label>
-																	<input type="text" name="quiz_slug" class="form-control">
-																</div>
-															</div>
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group mt-15 ">
+                                                <label class="input-label d-block">Quiz Slug</label>
+                                                <input type="text" name="quiz_slug" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="questions_bulk_list-tabs">
+                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Sections</button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
 
-															<div class="col-md-3 col-lg-3">
-																<div class="form-group mt-15 ">
-																	<label class="input-label d-block">Total Time (Minutes)</label>
-																	<input type="number" name="total_time" class="form-control rurera-req-field">
-																</div>
-															</div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
+                                                            </div>
 
-															<div class="col-md-3 col-lg-3 no_of_questions_field">
-																<div class="form-group mt-15">
 
-																	<div class="question-range-info text-muted mb-1"></div>
+                                                            <div class="col-md-3 col-lg-3">
+                                                                <div class="form-group mt-15 ">
+                                                                    <label class="input-label d-block">Total Time (Minutes)</label>
+                                                                    <input type="number" name="total_time" class="form-control rurera-req-field">
+                                                                </div>
+                                                            </div>
 
-																	<label class="input-label d-block">No of Questions</label>
-																	<input type="number" name="no_of_questions" class="form-control rurera-req-field">
+                                                            <div class="col-md-3 col-lg-3 no_of_questions_field">
+                                                                <div class="form-group mt-15">
 
-																	<div class="question-error text-danger mt-1" style="display:none;"></div>
+                                                                    <div class="question-range-info text-muted mb-1"></div>
 
-																</div>
-															</div>
-															<div class="col-md-12 col-lg-12">
-																<div class="form-group mt-15 ">
-																	<label class="input-label d-block">Quiz Instructions</label>
-																	<textarea name="quiz_instructions" class="summernote-editor"></textarea>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="tab-pane fade" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">...</div>
-												</div>
-											</div>
-										</div>
+                                                                    <label class="input-label d-block">No of Questions</label>
+                                                                    <input type="number" name="no_of_questions" class="form-control rurera-req-field">
+
+                                                                    <div class="question-error text-danger mt-1" style="display:none;"></div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12">
+                                                                <div class="form-group mt-15 ">
+                                                                    <label class="input-label d-block">Quiz Instructions</label>
+                                                                    <textarea name="quiz_instructions" class="summernote-editor"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">
+
+
+
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-outline-primary btn-sm" id="mockExam-addMultipleBtn">
+                                                                    Create multiple shortlist Sections
+                                                                </button>
+                                                                <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
+                                                                    + Add Section
+                                                                </button>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-outline-secondary btn-sm" id="mockExam-newListBtn">
+                                                                    Create new list (reset)
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="mt-3">
+                                                            <div class="mock-exam-small-help mb-2">
+                                                                Drag sections by the <b>≡</b> handle to reorder. Labels auto-update like <b>Section 2/5</b>.
+                                                            </div>
+
+                                                            <div id="mockExam-sectionsContainer"></div>
+
+                                                            <div id="mockExam-noSectionsNote" class="mock-exam-empty-note mt-3" style="display:none;">
+                                                                No sections yet. Click <b>Create multiple shortlist Sections</b> or <b>+ Add Section</b>.
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <!-- =========================
+                                                             HTML TEMPLATES (CLONE)
+                                                             ========================= -->
+                                                        <div id="mockExam-templates">
+                                                            <!-- Item row template -->
+                                                            <div class="mockExam-tpl-item-row mock-exam-item-row d-flex align-items-center justify-content-between">
+                                                                <div>
+                                                                    <div class="font-weight-600 mockExam-tpl-item-title"></div>
+                                                                    <div class="mock-exam-small-help mockExam-tpl-item-meta"></div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mockExam-tpl-item-actions">
+                                                                    <button type="button" class="btn btn-outline-primary mock-exam-icon-btn mockExam-tpl-plus-btn">+</button>
+                                                                    <button type="button" class="btn btn-outline-danger mock-exam-icon-btn ml-2 mock-exam-btn-remove-main mockExam-tpl-remove-btn">×</button>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Assigned item template -->
+                                                            <div class="mockExam-tpl-assigned-item mock-exam-assigned-item">
+                                                                <div class="mockExam-tpl-assigned-title"></div>
+                                                                <div class="mock-exam-rm mockExam-tpl-assigned-remove" title="Remove">×</div>
+                                                            </div>
+
+                                                            <!-- Section card template (builder modal + sections list) -->
+                                                            <div class="mockExam-tpl-section-card mock-exam-section-card mb-3" data-section-id="">
+                                                                <div class="card-header d-flex align-items-center justify-content-between">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="mock-exam-drag-handle mr-2 text-muted" title="Drag to reorder">≡</span>
+                                                                        <span class="badge badge-light mock-exam-section-label-badge mr-2 mockExam-tpl-section-label"></span>
+                                                                        <span class="font-weight-600 mockExam-tpl-section-title"></span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button class="btn btn-sm btn-outline-secondary mr-2 mockExam-tpl-section-edit" type="button">Edit</button>
+                                                                        <button class="btn btn-sm btn-outline-danger mockExam-tpl-section-delete" type="button">Delete</button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="mock-exam-small-help mb-1">Name</div>
+                                                                            <div class="mb-2 mockExam-tpl-section-name"></div>
+
+                                                                            <div class="mock-exam-small-help mb-1">Instructions</div>
+                                                                            <div class="mb-2 mockExam-tpl-section-instr"></div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="d-flex">
+                                                                                <div class="mr-3">
+                                                                                    <div class="mock-exam-small-help mb-1">No. of questions</div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-q"></div>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="mock-exam-small-help mb-1">Time (mins)</div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-t"></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <hr class="my-2">
+
+                                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                                <div>
+                                                                                    <div class="mock-exam-small-help mb-1">Items in this section</div>
+                                                                                    <div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
+                                                                                </div>
+                                                                                <span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
+                                                                            </div>
+
+                                                                            <div class="mt-2 mockExam-tpl-section-items"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Assign modal section card template -->
+                                                            <div class="mockExam-tpl-assign-section mock-exam-section-card mb-3" data-section-id="">
+                                                                <div class="card-header d-flex align-items-center justify-content-between">
+                                                                    <div>
+                                                                        <span class="badge badge-light mock-exam-section-label-badge mr-2 mockExam-tpl-assign-label"></span>
+                                                                        <span class="font-weight-600 mockExam-tpl-assign-title"></span>
+                                                                        <span class="mock-exam-pill ml-2"><span class="mockExam-tpl-assign-count"></span> items</span>
+                                                                    </div>
+                                                                    <button class="btn btn-sm mockExam-tpl-assign-btn" type="button">Add selected item</button>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="mock-exam-small-help mb-2 mockExam-tpl-assign-instr"></div>
+                                                                    <div class="mock-exam-small-help mb-2 mockExam-tpl-assign-meta"></div>
+                                                                    <div class="mockExam-tpl-assign-items"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="inactivity-controls">
@@ -555,6 +786,251 @@
                                 </div>
                                 <form>
                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL 1: Sections Builder (FULL WIDTH) -->
+        <div class="modal fade modal-fullwidth mock-exam-modal" id="mockExam-builderModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-builderModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3">
+              <span class="mock-exam-icon-btn bg-light text-primary" style="border:1px solid #e9ecef;">
+                <span style="font-size:20px; line-height:1;">+</span>
+              </span>
+                            </div>
+                            <div>
+                                <h5 class="modal-title mb-0" id="mockExam-builderModalTitle">Create new list</h5>
+                                <div class="mock-exam-small-help">Create sections, sort them, edit/delete. Assign items from the main page.</div>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" id="mockExam-saveAndCloseBtn">Done</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 2: Assign Items (FULL WIDTH) -->
+        <div class="modal fade modal-fullwidth mock-exam-modal" id="mockExam-assignModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-assignModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title mb-0" id="mockExam-assignModalTitle">Assign item to a section</h5>
+                            <div class="mock-exam-small-help">Choose a section to add the selected item. Items can only belong to one section at a time.</div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="d-flex align-items-start justify-content-between flex-wrap">
+                            <div class="mb-2">
+                                <div class="mock-exam-muted">Selected item</div>
+                                <h5 id="mockExam-selectedItemTitle" class="mb-1">None</h5>
+                                <div id="mockExam-selectedItemAssignedNote" class="mock-exam-small-help" style="display:none;"></div>
+                            </div>
+                            <div class="mb-2">
+                                <span class="mock-exam-pill">Total sections: <span id="mockExam-assignSectionsCount">0</span></span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div id="mockExam-assignSectionsList"></div>
+
+                        <div id="mockExam-assignNoSections" class="mock-exam-empty-note mt-3" style="display:none;">
+                            No sections created yet. Open <b>List Builder</b> and create sections first.
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" id="mockExam-assignDoneBtn">Done</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 3: Add/Edit Section (SMALL NESTED MODAL) -->
+        <div class="modal fade modal-sm2 mock-exam-modal" id="mockExam-sectionFormModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-sectionFormTitle" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mockExam-sectionFormTitle">Add Section</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Single mode -->
+                        <div id="mockExam-singleModeFields">
+                            <div class="form-group">
+                                <label>Section name</label>
+                                <input type="text" class="form-control" id="mockExam-secName" placeholder="Enter section name">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-secInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Bulk mode -->
+                        <div id="mockExam-bulkModeFields" style="display:none;">
+                            <div class="alert alert-info small mb-3">
+                                This will create multiple sections at once. Names will be generated like: <b>Prefix 1</b>, <b>Prefix 2</b>, ...
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label>How many?</label>
+                                    <input type="number" min="1" class="form-control" id="mockExam-bulkCount" value="3">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label>Name prefix</label>
+                                    <input type="text" class="form-control" id="mockExam-bulkPrefix" placeholder="e.g. Section" value="Section">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-bulkInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="mockExam-formError" class="text-danger small" style="display:none;"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" id="mockExam-formSaveBtn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 3: Add/Edit Section (SMALL NESTED MODAL) -->
+        <div class="modal fade modal-sm2 mock-exam-modal" id="mockExam-sectionFormModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-sectionFormTitle" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mockExam-sectionFormTitle">Add Section</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Single mode -->
+                        <div id="mockExam-singleModeFields">
+                            <div class="form-group">
+                                <label>Section name</label>
+                                <input type="text" class="form-control" id="mockExam-secName" placeholder="Enter section name">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-secInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Bulk mode -->
+                        <div id="mockExam-bulkModeFields" style="display:none;">
+                            <div class="alert alert-info small mb-3">
+                                This will create multiple sections at once. Names will be generated like: <b>Prefix 1</b>, <b>Prefix 2</b>, ...
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label>How many?</label>
+                                    <input type="number" min="1" class="form-control" id="mockExam-bulkCount" value="3">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label>Name prefix</label>
+                                    <input type="text" class="form-control" id="mockExam-bulkPrefix" placeholder="e.g. Section" value="Section">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-bulkInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="mockExam-formError" class="text-danger small" style="display:none;"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" id="mockExam-formSaveBtn">Save</button>
                     </div>
                 </div>
             </div>
@@ -1256,4 +1732,9 @@
                     }
                 });
             </script>
+
+
+
+
+
     @endpush
