@@ -41,12 +41,7 @@
                         <div class="mb-20"><h4>No of Questions </h4></div>
 
                         <ul class="mb-20 d-flex align-items-center">
-                            <li>
-                                <input checked type="radio" id="ten-questions" value="2" name="no_of_questions" />
-                                <label for="ten-questions" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>2 questions</strong>
-                                </label>
-                            </li>
+                            
                             <li>
                                 <input checked type="radio" id="ten-questions" value="10" name="no_of_questions" />
                                 <label for="ten-questions" class="d-inline-flex flex-column justify-content-center">
