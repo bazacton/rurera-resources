@@ -285,28 +285,5 @@
 
 </div>
 @push('scripts_bottom')
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
 
-    const selectedTopics = document.querySelector('.selected-topics');
-
-    if (!selectedTopics) return;
-
-    function updateOffset(height) {
-        document.documentElement.style
-        .setProperty('--sticky-offset', height + 'px');
-    }
-
-    // Initial set
-    updateOffset(selectedTopics.offsetHeight);
-
-    // Watch for height changes (dynamic content)
-    const observer = new ResizeObserver(entries => {
-        const height = entries[0].contentRect.height;
-        updateOffset(height);
-    });
-
-    observer.observe(selectedTopics);
-    });
-</script>
 @endpush
