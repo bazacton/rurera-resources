@@ -897,7 +897,6 @@ Right SideBar Style Start
     background-color: #ff9600;
     padding: 20px;
 }
-
 .streak-day-head {
     display: flex;
     align-items: center;
@@ -905,30 +904,24 @@ Right SideBar Style Start
     gap: 15px;
     margin: 0 0 25px;
 }
-
 .streak-day-head .icon-box {
     width: 50px;
 }
-
 .streak-day-head .text-box {
     width: calc(100% - 70px);
 }
-
 .streak-day-head .icon-box img {
     height: 100%;
     width: 100%;
 }
-
 .streak-day-head h4 {
     color: #fff;
     margin: 0 0 8px;
 }
-
 .streak-day-head .sub {
     color: #fff;
     line-height: normal;
 }
-
 .days-list {
     background-color: #fff;
     border-radius: 6px;
@@ -939,7 +932,6 @@ Right SideBar Style Start
     justify-content: space-between;
     gap: 10px;
 }
-
 .days-list ul li {
     display: inline-flex;
     vertical-align: middle;
@@ -1006,6 +998,14 @@ button.view-btn {
     box-shadow: 0 4px 0px rgba(42,166,255,.3);
 }
 /* Streak-dropdown style End */
+/* Overall-gauge style start */
+.panel-right-sidebar .overall-gauge .overall-gauge-center {
+    margin-top: -80px;
+}
+.panel-right-sidebar .overall-gauge {
+    margin-bottom: 15px;
+}
+/* Overall-gauge style End */
 /* Store Stats Style Start */
 .store-stats ul {margin: 0; padding: 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 15px;}
 .store-stats ul li {margin-bottom: 5px;}
