@@ -405,7 +405,7 @@
 
     <div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
         <div class="modal-dialog">
-            <div class="modal-content edit-quest-modal-div">
+            <div class="modal-content edit-quest-modal-div container">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
