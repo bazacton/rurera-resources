@@ -1816,6 +1816,9 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .questions_bulk_list.modal.show .modal-content {
     box-shadow: none;
 }
+.questions_bulk_list:has(.modal.show) > .modal-dialog {
+    filter: blur(2px);
+}
 /* Subject Filter Style Start */
 .questions_bulk_list .subject-filters {
     display: flex;
