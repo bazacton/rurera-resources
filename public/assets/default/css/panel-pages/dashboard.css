@@ -864,27 +864,22 @@ Right SideBar Style Start
 .streak-dropdown-content {
     position: absolute;
     top: 100%;
-    z-index: 1;
+    left: 50%;
     width: 350px;
     background-color: #fff;
     border-radius: 5px;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(10px);
     opacity: 0;
     visibility: hidden;
-    margin-top: 15px;
-    margin-left: -8px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    margin-top: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    will-change: opacity, transform;
     filter: drop-shadow(0px 0px 1px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd) drop-shadow(0px 0px 0px #ddd);
 }
 .streak-dropdown:hover .streak-dropdown-content {
     opacity: 1;
     visibility: visible;
-    margin-top: 0;
+    transform: translateX(-50%) translateY(0);
 }
 .streak-dropdown-content:before {
     content: "";
