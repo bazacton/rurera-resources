@@ -1823,7 +1823,7 @@
                             if (assigned) {
                                 $assignBtn.prop("disabled", true).addClass("mock-exam-btn-disabled").attr("title", "Already assigned (remove first)");
                                 $unassignBtn.removeClass("d-none");
-                                $meta.html(`${base} • <span class="badge badge-success">Assigned</span> <span class="ml-1">${label}</span>`);
+                                $meta.html(`${base} <span class="badge badge-success">• Assigned</span> <span class="ml-1">${label}</span>`);
                             } else {
                                 $assignBtn.prop("disabled", false).removeClass("mock-exam-btn-disabled").attr("title", "Shortlist (assign to section)");
                                 $unassignBtn.addClass("d-none");
