@@ -432,7 +432,7 @@
                                                 <input type="text" name="quiz_slug" class="form-control">
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-md-3 col-lg-3">
                                             <div class="form-group ">
                                                 <label class="input-label d-block">Auto Generated Questions</label>
@@ -542,13 +542,13 @@
                                                         <button class="nav-link active" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Sections</button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="questions_bulk1-tab" data-toggle="tab" data-target="#questions_bulk1" type="button" role="tab" aria-controls="questions_bulk1" aria-selected="true">Questions bulk Tab 1</button>
+                                                        <button class="nav-link" id="topic_parts-tab" data-toggle="tab" data-target="#topic_parts" type="button" role="tab" aria-controls="topic_parts" aria-selected="true">Topic Parts</button>
                                                     </li>
 
                                                 </ul>
                                                 <div class="tab-content" id="myTabContent">
 													<div class="container">
-														<div class="tab-pane fade " id="questions_bulk1" role="tabpanel" aria-labelledby="questions_bulk1-tab">
+														<div class="tab-pane fade " id="topic_parts" role="tabpanel" aria-labelledby="topic_parts-tab">
 															<div class="row">
 																<div class="col-md-4 col-lg-4 ">
 																	<div class="form-group">
