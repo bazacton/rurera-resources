@@ -1958,7 +1958,8 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     right: 8px;
     margin-top: -2px;
 }
-.mockExam-tpl-assign-items {
+.mockExam-tpl-assign-items,
+.mockExam-tpl-section-items {
     display: flex;
     flex-direction: column;
     gap: 10px;
