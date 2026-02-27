@@ -1928,7 +1928,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     color: #999;
 }
 .mock-exam-section-table td:has(.mockExam-tpl-section-instr) {
-    width: 50%;
+    width: 33%;
 }
 .mock-exam-section-table td, .mock-exam-section-table th {
     padding: .75rem;
