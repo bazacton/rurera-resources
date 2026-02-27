@@ -82,8 +82,14 @@
         padding-left: 0;
         width: 33.333%;
     }
+    .select-topics .topics-table th:last-child {
+        text-align: right !important;
+    }
     .select-topics .topics-table .listing-data-row label {
         margin-bottom: 0;
+    }
+    .mock-exam-btn-holder {
+        text-align: right;
     }
     /* Range Slider Style Start */
     .thumbs {
