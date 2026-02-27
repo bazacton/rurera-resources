@@ -158,6 +158,20 @@
         background-color: white;
         z-index: -1;
     }
+    .mockExam-item-meta .badge.badge-success {
+        background-color: inherit;
+        color: #47c363;
+        border-color: #47c363;
+    }
+    .mockExam-item-meta span {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 7px 12px;
+        line-height: normal;
+        display: inline-block;
+        font-size: .75rem;
+        font-weight: 600;
+    }
 </style>
 <div class="select-topics backend-topic-selection">
     <h3 class="font-16 font-weight-bold">Select Topics</h3>
