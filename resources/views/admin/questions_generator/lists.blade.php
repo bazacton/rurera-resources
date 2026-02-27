@@ -118,7 +118,8 @@
         .mock-exam .mock-exam-empty-note { font-size: 13px; color:#6c757d; }
 
         /* Small nested modal */
-        .mock-exam-modal.modal-sm2 .modal-dialog { max-width: 720px; margin: 15px auto; border: 1px solid #e9ecef; border-radius: 8px; overflow: hidden; }
+        .mock-exam-modal.modal-sm2 .modal-dialog {max-width: 720px;}
+        .mock-exam-modal.modal-sm2 .modal-dialog .modal-content { border: 1px solid #e9ecef; border-radius: 8px; overflow: hidden; }
         .mock-exam-modal .note-editor.note-frame { border-radius: .25rem; }
 
         .mock-exam .mock-exam-btn-remove-main { border-color:#f1c6cc; color:#dc3545; }
@@ -847,7 +848,7 @@
 
         <!-- MODAL 3: Add/Edit Section (SMALL NESTED MODAL) -->
         <div class="modal fade modal-sm2 mock-exam-modal" id="mockExam-sectionFormModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-sectionFormTitle" aria-hidden="true" data-backdrop="static">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
