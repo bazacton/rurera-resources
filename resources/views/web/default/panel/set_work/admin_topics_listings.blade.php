@@ -202,7 +202,7 @@
                             @endphp
                             <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}">
                                 <td data-th="Topic"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label>
-                                    <div class="mock-exam-small-help mockExam-item-meta"></div>
+                                    <div class="mock-exam-small-help mockExam-item-meta mt-10"></div>
                                 </td>
                                 <td>
 
