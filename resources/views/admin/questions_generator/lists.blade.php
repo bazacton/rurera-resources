@@ -118,7 +118,7 @@
         .mock-exam .mock-exam-empty-note { font-size: 13px; color:#6c757d; }
 
         /* Small nested modal */
-        .mock-exam-modal.modal-sm2 .modal-dialog {max-width: 720px; margin: 0 auto;}
+        .mock-exam-modal.modal-sm2 .modal-dialog {max-width: 720px; margin: 1.75rem auto;}
         .mock-exam-modal.modal-sm2 .modal-dialog .modal-content { border: 1px solid #e9ecef; border-radius: 8px; overflow: hidden; }
         .mock-exam-modal .note-editor.note-frame { border-radius: .25rem; }
 
