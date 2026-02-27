@@ -168,6 +168,7 @@
 
                         <div class="card-footer text-center">
                             {{ $blog->appends(request()->input())->links() }}
+                            Records Found : {{$total_records}}
                         </div>
 
                     </div>
