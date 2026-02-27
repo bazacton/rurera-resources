@@ -87,15 +87,13 @@
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
         .mock-exam-modal.modal-fullwidth .modal-dialog {
             max-width: 720px;
-            margin: 15px auto;
+            margin: 1.75rem auto;
+        }
+        .mock-exam-modal.modal-fullwidth .modal-content {
+            max-width: 720px;
             border: 1px solid #e9ecef;
             border-radius: 8px;
             overflow: hidden;
-        }
-        .mock-exam-modal.modal-fullwidth .modal-content {
-            height: 100vh;
-            border-radius: 0;
-            border: 0;
         }
         .mock-exam-modal.modal-fullwidth .modal-header { border-bottom: 1px solid #e9ecef; }
         .mock-exam-modal.modal-fullwidth .modal-body { overflow: auto; }
