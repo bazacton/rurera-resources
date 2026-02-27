@@ -1968,7 +1968,11 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     background-color: #f9fafc;
     padding: 10px 15px;
     border-radius: 5px;
+    color: #5b626b;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+.mockExam-tpl-assign-meta b {
+    color: #333;
 }
 /* Subject Filter Style End */
 .select-topics .topics-table {
