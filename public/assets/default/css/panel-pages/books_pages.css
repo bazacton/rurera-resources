@@ -335,9 +335,13 @@ pointer-events:none;
     max-width: 31.555%;
     border: 1px solid #ddd;
 }
-.ru-book-slider .stat-card .flex-grow-1 {
-    flex: 0 0 calc(100% - 100px);
-    max-width: calc(100% - 100px);
+.stat-card .graph-box {
+    width: 100px;
+}
+.stat-card .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .ru-book-slider .stat-card svg{display:block; max-width: 100px;}
 .ru-book-slider .stat-card path.fill{opacity:.15}
