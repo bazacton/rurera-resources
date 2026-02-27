@@ -1958,6 +1958,11 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     right: 8px;
     margin-top: -2px;
 }
+.mockExam-tpl-assign-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* Subject Filter Style End */
 .select-topics .topics-table {
     width: 100%;
