@@ -768,7 +768,7 @@
 
         <!-- MODAL 1: Sections Builder (FULL WIDTH) -->
         <div class="modal fade modal-fullwidth mock-exam-modal" id="mockExam-builderModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-builderModalTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
