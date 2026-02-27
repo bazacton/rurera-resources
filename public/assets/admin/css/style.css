@@ -1981,6 +1981,20 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     gap: 15px;
     line-height: normal;
 }
+.mock-meta-list li {
+    display: inline-flex;
+    align-items: center;
+}
+.mock-meta-list .icon-box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.mock-meta-list .icon-box img {
+    max-width: 100%;
+    filter: invert(77%) sepia(0%) saturate(895%) hue-rotate(172deg) brightness(80%) contrast(84%);
+}
 .mockExam-tpl-assign-meta b {
     color: #333;
 }
