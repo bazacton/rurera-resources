@@ -2645,7 +2645,7 @@ Admin Questions Generator Page Style End
 .sub-topic-modal .js-switch-parent .js-switch {margin: 0;}
 .rurera-webinar-tabs .nav {gap: 0 30px; border-bottom: 2px solid #f6f6f6;}
 .rurera-webinar-tabs .nav-link {font-size: 15px; border: 0; padding: 0 0 12px; background-color: inherit; color: #6c6b71; font-weight: 600; line-height: normal; border-bottom: 2px solid transparent; margin-bottom: -2px; outline: none;}
-.rurera-webinar-tabs .nav-link.active {color: var(--blue); border-bottom-color: var(--blue);}
+.rurera-webinar-tabs .nav-link.active {color: var(--primary); border-bottom-color: var(--primary);}
 .rurera-webinar-tabs section[class*="mt-"] {margin-top: 30px !important;}
 .rurera-webinar-tabs .tab-pane {padding: 0;}
 /* Admin Webinars Topics Accrdions Style End */
