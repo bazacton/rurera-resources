@@ -410,7 +410,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-box">
+                    <div class="modal-box container">
                         <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
                             @csrf
 
@@ -551,205 +551,203 @@
 
                                                 </ul>
                                                 <div class="tab-content" id="myTabContent">
-													<div class="container">
-														<div class="tab-pane fade " id="topic_parts" role="tabpanel" aria-labelledby="topic_parts-tab">
-															<div class="row">
-																<div class="col-md-4 col-lg-4 ">
-																	<div class="form-group">
-																		<label class="input-label">{{trans('admin/main.category')}}</label>
-																		<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-																			<option value="">{{trans('admin/main.all_categories')}}</option>
-																			@foreach($categories as $category)
-																				@if(!empty($category->subCategories) and count($category->subCategories))
-																					<optgroup label="{{  $category->title }}">
-																						@foreach($category->subCategories as $subCategory)
-																							<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-																						@endforeach
-																					</optgroup>
-																				@else
-																					<option value="{{ $category->id }}">{{ $category->title }}</option>
-																				@endif
-																			@endforeach
-																		</select>
-																	</div>
-																</div>
+													<div class="tab-pane fade " id="topic_parts" role="tabpanel" aria-labelledby="topic_parts-tab">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 ">
+                                                                <div class="form-group">
+                                                                    <label class="input-label">{{trans('admin/main.category')}}</label>
+                                                                    <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+                                                                        <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                                        @foreach($categories as $category)
+                                                                            @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                                <optgroup label="{{  $category->title }}">
+                                                                                    @foreach($category->subCategories as $subCategory)
+                                                                                        <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                                                                    @endforeach
+                                                                                </optgroup>
+                                                                            @else
+                                                                                <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                                                            @endif
+                                                                        @endforeach
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
-																<div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
+                                                            <div class="col-md-12 col-lg-12 subjects-listing-data practice_type_fields mock_practice_fields">
 
-																</div>
-																<div class="col-12">
-																	<div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
-																</div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="practice-quiz-topics-list practice_type_fields mock_practice_fields"></div>
+                                                            </div>
 
-															</div>
-														</div>
-														<div class="tab-pane fade show active" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">
-
-
-
-															<div class="d-flex flex-wrap align-items-center justify-content-between">
-																<div class="mb-2">
-
-																	<button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
-																		+ Add Section
-																	</button>
-																</div>
-															</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade show active" id="questions_bulk2" role="tabpanel" aria-labelledby="profile-tab">
 
 
 
-															<div class="mt-3">
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <div class="mb-2">
 
-																<div id="mockExam-sectionsContainer"></div>
-
-																<div id="mockExam-noSectionsNote" class="mock-exam-empty-note mt-3" style="display:none;">
-																	No sections yet. Click <b>Create multiple shortlist Sections</b> or <b>+ Add Section</b>.
-																</div>
-															</div>
-
+                                                                <button class="btn btn-primary btn-sm ml-2" id="mockExam-addOneBtn">
+                                                                    + Add Section
+                                                                </button>
+                                                            </div>
+                                                        </div>
 
 
-															<!-- =========================
-																HTML TEMPLATES (CLONE)
-																========================= -->
-															<div id="mockExam-templates">
-																<!-- Item row template -->
-																<div class="mockExam-tpl-item-row mock-exam-item-row d-flex align-items-center justify-content-between">
-																	<div>
-																		<div class="font-weight-600 mockExam-tpl-item-title"></div>
-																		<div class="mock-exam-small-help mockExam-tpl-item-meta"></div>
-																	</div>
-																	<div class="d-flex align-items-center mockExam-tpl-item-actions">
-																		<button type="button" class="btn btn-outline-primary mock-exam-icon-btn mockExam-tpl-plus-btn">+</button>
-																		<button type="button" class="btn btn-outline-danger mock-exam-icon-btn ml-2 mock-exam-btn-remove-main mockExam-tpl-remove-btn">×</button>
-																	</div>
-																</div>
 
-																<!-- Assigned item template -->
-																<div class="mockExam-tpl-assigned-item mock-exam-assigned-item">
-																	<div class="mockExam-tpl-assigned-title"></div>
-																	<div class="mock-exam-rm mockExam-tpl-assigned-remove" title="Remove">×</div>
-																</div>
+                                                        <div class="mt-3">
 
-																<!-- Section card template (builder modal + sections list) -->
-																<div class="mockExam-tpl-section-card mock-exam-section-card mb-3" data-section-id="">
-																	<div class="card-header d-flex align-items-center justify-content-between">
-																		<div class="d-flex align-items-center">
-																			<span class="mock-exam-drag-handle mr-2 text-muted" title="Drag to reorder">≡</span>
-																			<span class="badge badge-light mock-exam-section-label-badge mr-2 mockExam-tpl-section-label"></span>
-																			<span class="font-weight-600 mockExam-tpl-section-title"></span>
-																		</div>
-																		<div>
-																			<button class="btn btn-sm btn-outline-secondary mr-2 mockExam-tpl-section-edit" type="button">Edit</button>
-																			<button class="btn btn-sm btn-outline-danger mockExam-tpl-section-delete" type="button">Delete</button>
-																		</div>
-																	</div>
+                                                            <div id="mockExam-sectionsContainer"></div>
 
-																	<div class="card-body">
-																		<div class="row rurera-hide">
-																			<div class="col-md-6">
-																				<div class="mock-exam-small-help mb-1">Name</div>
-																				<div class="mb-2 mockExam-tpl-section-name"></div>
+                                                            <div id="mockExam-noSectionsNote" class="mock-exam-empty-note mt-3" style="display:none;">
+                                                                No sections yet. Click <b>Create multiple shortlist Sections</b> or <b>+ Add Section</b>.
+                                                            </div>
+                                                        </div>
 
-																				<div class="mock-exam-small-help mb-1">Instructions</div>
-																				<div class="mb-2 mockExam-tpl-section-instr"></div>
-																			</div>
 
-																			<div class="col-md-6">
-																				<div class="d-flex">
-																					<div class="mr-3">
-																						<div class="mock-exam-small-help mb-1">No. of questions</div>
-																						<div class="mb-2 mockExam-tpl-section-q"></div>
-																					</div>
-																					<div>
-																						<div class="mock-exam-small-help mb-1">Time (mins)</div>
-																						<div class="mb-2 mockExam-tpl-section-t"></div>
-																					</div>
-																				</div>
 
-																				<hr class="my-2">
+                                                        <!-- =========================
+                                                            HTML TEMPLATES (CLONE)
+                                                            ========================= -->
+                                                        <div id="mockExam-templates">
+                                                            <!-- Item row template -->
+                                                            <div class="mockExam-tpl-item-row mock-exam-item-row d-flex align-items-center justify-content-between">
+                                                                <div>
+                                                                    <div class="font-weight-600 mockExam-tpl-item-title"></div>
+                                                                    <div class="mock-exam-small-help mockExam-tpl-item-meta"></div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mockExam-tpl-item-actions">
+                                                                    <button type="button" class="btn btn-outline-primary mock-exam-icon-btn mockExam-tpl-plus-btn">+</button>
+                                                                    <button type="button" class="btn btn-outline-danger mock-exam-icon-btn ml-2 mock-exam-btn-remove-main mockExam-tpl-remove-btn">×</button>
+                                                                </div>
+                                                            </div>
 
-																				<div class="d-flex align-items-center justify-content-between">
-																					<div>
-																						<div class="mock-exam-small-help mb-1">Items in this section</div>
-																						<div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
-																					</div>
-																					<span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
-																				</div>
+                                                            <!-- Assigned item template -->
+                                                            <div class="mockExam-tpl-assigned-item mock-exam-assigned-item">
+                                                                <div class="mockExam-tpl-assigned-title"></div>
+                                                                <div class="mock-exam-rm mockExam-tpl-assigned-remove" title="Remove">×</div>
+                                                            </div>
 
-																				<div class="mt-2 mockExam-tpl-section-items"></div>
-																			</div>
-																		</div>
-																		<div class="mock-exam-section-table">
-																			<table>
-																				<thead>
-																				<tr>
-																					<th>
-																					<div class="mock-exam-small-help mb-1">Name</div>
-																					</th>
-																					<th>
-																					<div class="mock-exam-small-help mb-1">Instructions</div>
-																					</th>
-																					<th>
-																					<div class="mock-exam-small-help mb-1">No. of questions</div>
-																					</th>
-																					<th>
-																					<div class="mock-exam-small-help mb-1">Time (mins)</div>
-																					</th>
-																					<th>
-																					<div class="mock-exam-small-help mb-1">Items in this section</div>
-																					</th>
-																				</tr>
-																				</thead>
-																				<tbody>
-																				<tr>
-																					<td>
-																					<div class="mb-2 mockExam-tpl-section-name"></div>
-																					</td>
-																					<td>
-																					<div class="mb-2 mockExam-tpl-section-instr"></div>
-																					</td>
-																					<td>
-																					<div class="mb-2 mockExam-tpl-section-q"></div>
-																					</td>
-																					<td>
-																					<div class="mb-2 mockExam-tpl-section-t"></div>
-																					</td>
-																					<td>
-																					<div class="align-items-center justify-content-between rurera-hide">
-																						<div>
-																							<div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
-																						</div>
-																						<span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
-																					</div>
-																					<div class="mockExam-tpl-section-items"></div>
-																					</td>
-																				</tr>
-																				</tbody>
-																			</table>
-																		</div>
-																	</div>
-																</div>
+                                                            <!-- Section card template (builder modal + sections list) -->
+                                                            <div class="mockExam-tpl-section-card mock-exam-section-card mb-3" data-section-id="">
+                                                                <div class="card-header d-flex align-items-center justify-content-between">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="mock-exam-drag-handle mr-2 text-muted" title="Drag to reorder">≡</span>
+                                                                        <span class="badge badge-light mock-exam-section-label-badge mr-2 mockExam-tpl-section-label"></span>
+                                                                        <span class="font-weight-600 mockExam-tpl-section-title"></span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button class="btn btn-sm btn-outline-secondary mr-2 mockExam-tpl-section-edit" type="button">Edit</button>
+                                                                        <button class="btn btn-sm btn-outline-danger mockExam-tpl-section-delete" type="button">Delete</button>
+                                                                    </div>
+                                                                </div>
 
-																<!-- Assign modal section card template -->
-																<div class="mockExam-tpl-assign-section mock-exam-section-card mb-3" data-section-id="">
-																	<div class="card-header d-flex align-items-center justify-content-between">
-																		<div>
-																			<span class="badge badge-light mock-exam-section-label-badge mr-2 mockExam-tpl-assign-label"></span>
-																			<span class="font-weight-600 mockExam-tpl-assign-title"></span>
-																			<span class="mock-exam-pill ml-2"><span class="mockExam-tpl-assign-count"></span> items</span>
-																		</div>
-																		<button class="btn btn-sm mockExam-tpl-assign-btn" type="button">Add selected item</button>
-																	</div>
-																	<div class="card-body">
-																		<div class="mock-exam-small-help mb-2 mockExam-tpl-assign-instr"></div>
-																		<div class="mock-exam-small-help mb-2 mockExam-tpl-assign-meta"></div>
-																		<div class="mockExam-tpl-assign-items"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
+                                                                <div class="card-body">
+                                                                    <div class="row rurera-hide">
+                                                                        <div class="col-md-6">
+                                                                            <div class="mock-exam-small-help mb-1">Name</div>
+                                                                            <div class="mb-2 mockExam-tpl-section-name"></div>
+
+                                                                            <div class="mock-exam-small-help mb-1">Instructions</div>
+                                                                            <div class="mb-2 mockExam-tpl-section-instr"></div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="d-flex">
+                                                                                <div class="mr-3">
+                                                                                    <div class="mock-exam-small-help mb-1">No. of questions</div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-q"></div>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="mock-exam-small-help mb-1">Time (mins)</div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-t"></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <hr class="my-2">
+
+                                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                                <div>
+                                                                                    <div class="mock-exam-small-help mb-1">Items in this section</div>
+                                                                                    <div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
+                                                                                </div>
+                                                                                <span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
+                                                                            </div>
+
+                                                                            <div class="mt-2 mockExam-tpl-section-items"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mock-exam-section-table">
+                                                                        <table>
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>
+                                                                                <div class="mock-exam-small-help mb-1">Name</div>
+                                                                                </th>
+                                                                                <th>
+                                                                                <div class="mock-exam-small-help mb-1">Instructions</div>
+                                                                                </th>
+                                                                                <th>
+                                                                                <div class="mock-exam-small-help mb-1">No. of questions</div>
+                                                                                </th>
+                                                                                <th>
+                                                                                <div class="mock-exam-small-help mb-1">Time (mins)</div>
+                                                                                </th>
+                                                                                <th>
+                                                                                <div class="mock-exam-small-help mb-1">Items in this section</div>
+                                                                                </th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                <div class="mb-2 mockExam-tpl-section-name"></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                <div class="mb-2 mockExam-tpl-section-instr"></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                <div class="mb-2 mockExam-tpl-section-q"></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                <div class="mb-2 mockExam-tpl-section-t"></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                <div class="align-items-center justify-content-between rurera-hide">
+                                                                                    <div>
+                                                                                        <div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
+                                                                                    </div>
+                                                                                    <span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
+                                                                                </div>
+                                                                                <div class="mockExam-tpl-section-items"></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Assign modal section card template -->
+                                                            <div class="mockExam-tpl-assign-section mock-exam-section-card mb-3" data-section-id="">
+                                                                <div class="card-header d-flex align-items-center justify-content-between">
+                                                                    <div>
+                                                                        <span class="badge badge-light mock-exam-section-label-badge mr-2 mockExam-tpl-assign-label"></span>
+                                                                        <span class="font-weight-600 mockExam-tpl-assign-title"></span>
+                                                                        <span class="mock-exam-pill ml-2"><span class="mockExam-tpl-assign-count"></span> items</span>
+                                                                    </div>
+                                                                    <button class="btn btn-sm mockExam-tpl-assign-btn" type="button">Add selected item</button>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="mock-exam-small-help mb-2 mockExam-tpl-assign-instr"></div>
+                                                                    <div class="mock-exam-small-help mb-2 mockExam-tpl-assign-meta"></div>
+                                                                    <div class="mockExam-tpl-assign-items"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
