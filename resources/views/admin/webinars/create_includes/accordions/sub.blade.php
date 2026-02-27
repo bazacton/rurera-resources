@@ -91,7 +91,7 @@ $chapter  = isset( $chapter )? $chapter : '';
                aria-controls="collapseQuiz{{ !empty($subChapterInfo) ? $subChapterInfo->id :'record' }}"
                data-parent="#chapterContentAccordion{{ !empty($chapter) ? $chapter->id :'' }}" role="button"
                data-toggle="collapse" aria-expanded="true"></i> -->
-            <button type="button" class="sub-topic-modal-btn" data-toggle="modal" data-target="#exampleModalCenter">
+            <button type="button" class="sub-topic-modal-btn test@@" data-toggle="modal" data-target="#exampleModalCenter">
                 <i data-feather="edit-3" class="cursor-pointer" height="20"></i>
             </button>
         </div>
