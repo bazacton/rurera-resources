@@ -80,6 +80,7 @@
     }
     .select-topics .topics-table th:first-child {
         padding-left: 0;
+        width: 33.333%;
     }
     .select-topics .topics-table .listing-data-row label {
         margin-bottom: 0;
