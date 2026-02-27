@@ -1974,6 +1974,13 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     color: #5b626b;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
+.mockExam-tpl-assign-meta .mock-meta-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    line-height: normal;
+}
 .mockExam-tpl-assign-meta b {
     color: #333;
 }
