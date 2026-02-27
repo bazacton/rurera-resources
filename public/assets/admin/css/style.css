@@ -2617,9 +2617,11 @@ Admin Questions Generator Page Style End
 .draggable-lists-chapter button svg {stroke: #6c757d;}
 .draggable-content-lists li.sub-chapter-parent {background-color: inherit !important; color: currentColor;}
 .draggable-content-lists li.sub-chapter-parent:first-child {margin-top: 0 !important;}
+.draggable-lists-chapter .table-actions {align-items: center;}
 .draggable-content-lists button {outline: none;}
 .draggable-lists-chapter .sub-topic-modal-btn,
-.draggable-lists-chapter .bulk-list-link {
+.draggable-lists-chapter .bulk-list-link,
+.draggable-lists-chapter .table-actions .feather-move {
     background-color: #c6f2d6;
     height: 28px;
     width: 28px;
@@ -2628,6 +2630,9 @@ Admin Questions Generator Page Style End
     align-items: center;
     border-radius: 100%;
     margin: 0 10px 0 0;
+}
+.draggable-lists-chapter .table-actions .feather-move {
+    padding: 6px;
 }
 .draggable-lists-chapter .bulk-list-link i {
     color: #6c757d;
