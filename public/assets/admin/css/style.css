@@ -1930,6 +1930,9 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .mock-exam-section-table td:has(.mockExam-tpl-section-instr) {
     width: 33%;
 }
+.mock-exam-section-table table {
+    width: 100%;
+}
 .mock-exam-section-table td, .mock-exam-section-table th {
     padding: .75rem;
     font-size: .875rem;
