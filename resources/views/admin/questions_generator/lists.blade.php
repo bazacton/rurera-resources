@@ -539,7 +539,7 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <div class="questions_bulk_list-tabs">
+                                            <div class="questions_bulk_list-tabs rurera-webinar-tabs">
                                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                                     <li class="nav-item" role="presentation">
                                                         <button class="nav-link active" id="questions_bulk2-tab" data-toggle="tab" data-target="#questions_bulk2" type="button" role="tab" aria-controls="questions_bulk2" aria-selected="false">Sections</button>
