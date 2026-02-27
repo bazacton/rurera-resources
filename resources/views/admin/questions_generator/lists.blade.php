@@ -75,6 +75,9 @@
 
 
     <style>
+        .questions_bulk_list-tabs .tab-content {
+            padding-top: 25px;
+        }
         /* =========================
            Scoped CSS (prefixed)
            ========================= */
