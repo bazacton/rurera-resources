@@ -170,10 +170,13 @@ border-radius:16px;
 overflow:hidden;
 }
 .ru-book-slider .book-details{
+background-color: #fff;
 width:420px;
 max-width:420px;
 flex:0 0 420px;
 border-right:1px solid #ddd;
+position: relative;
+z-index: 1;
 }
 .ru-book-slider .book-cover-lg{
 width:130px;
