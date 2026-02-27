@@ -163,7 +163,7 @@ Sub Pages Style
 .sound-list {margin-bottom: 25px;}
 .sound-card .close {position: absolute; right: -12px; top: -30px;}
 /*Books Sound Card Style End*/
-.ru-book-slider .book-section{
+      .ru-book-slider .book-section{
 background:#fff;
 border: 1px solid #ddd;
 border-radius:16px;
@@ -237,11 +237,7 @@ min-width:0;
 .ru-book-slider .book-track{
 display:flex;
 align-items:flex-start;
-overflow-x:auto;
-overflow-y:hidden;
-scroll-behavior:smooth;
 padding:24px 56px 24px 56px;
-scroll-snap-type:x mandatory;
 }
 .ru-book-slider .book-track::-webkit-scrollbar{display:none}
 .ru-book-slider .book-track{ -ms-overflow-style:none; scrollbar-width:none }
@@ -284,18 +280,18 @@ padding:4px 8px;
 border-radius:999px;
 background:rgba(255,255,255,.8);
 }
-.ru-book-slider .dot{
+.ru-book-slider .dots .swiper-pagination-bullet{
 width:7px;
 height:7px;
 border-radius:999px;
 background:#d7dbe0;
-border:0;
+opacity:1;
 margin:0 3px;
 padding:0;
 outline:0;
 transition:all .2s ease;
 }
-.ru-book-slider .dot.active{
+.ru-book-slider .dots .swiper-pagination-bullet-active{
 width:18px;
 background:#ffc107;
 }
@@ -331,6 +327,10 @@ padding: 0;
 opacity:.35;
 pointer-events:none;
 }
+.ru-book-slider .swiper-button-next::after,
+.ru-book-slider .swiper-button-prev::after{
+  display:none;
+}
 .ru-book-slider .stat-card {
     max-width: 31.555%;
     border: 1px solid #ddd;
@@ -352,6 +352,25 @@ pointer-events:none;
 .ru-book-slider .book-cover-lg{width:96px;height:140px}
 .ru-book-slider .book-card{width:96px}
 .ru-book-slider .book-track{padding:16px 56px 16px 16px}
+}
+.ru-book-slider .ru-read-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  border:1px solid #ddd;
+  color:#6c757d;
+  background:#fff;
+  border-radius:10px;
+  padding:.45rem .9rem;
+  text-decoration:none;
+}
+.ru-book-slider .ru-read-btn:hover{
+  color:#495057;
+  border-color:#ccc;
+  background:#fff;
+}
+.ru-book-slider .ru-read-btn svg{
+  width:18px;height:18px;display:block;
 }
 
 /*****************************
