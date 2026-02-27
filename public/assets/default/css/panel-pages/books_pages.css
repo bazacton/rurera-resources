@@ -340,7 +340,7 @@ pointer-events:none;
 }
 .stat-card .card-top {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 .ru-book-slider .stat-card svg{display:block; max-width: 100px;}
