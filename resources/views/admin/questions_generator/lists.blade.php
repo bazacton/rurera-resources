@@ -1920,9 +1920,12 @@
                             $wrap.find(".mockExam-tpl-assign-title").text(sec.name || "Untitled section");
                             $wrap.find(".mockExam-tpl-assign-count").text(String(sec.items.length));
                             $wrap.find(".mockExam-tpl-assign-instr").text(stripHtml(sec.instructions || "") || "No instructions");
-                            $wrap.find(".mockExam-tpl-assign-meta").html(
-                                `Questions: <b>${String(sec.numQuestions ?? "-")}</b> • Time: <b>${String(sec.timeMins ?? "-")}</b> mins`
-                            );
+                            $wrap.find(".mockExam-tpl-assign-meta").html(`
+                                <ul class="mock-meta-list">
+                                    <li>Questions: <b>${String(sec.numQuestions ?? "-")}</b></li>
+                                    <li>Time: <b>${String(sec.timeMins ?? "-")}</b> mins</li>
+                                </ul>
+                            `);
 
                             const $btn = $wrap.find(".mockExam-tpl-assign-btn");
                             $btn.off("click.mockExam").removeClass("btn-success btn-primary");
