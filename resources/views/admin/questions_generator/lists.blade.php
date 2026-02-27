@@ -401,7 +401,7 @@
 
     <div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content edit-quest-modal-div">
+            <div class="modal-content edit-quest-modal-div container">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -416,6 +416,23 @@
                                         <div class="col-md-12 col-lg-12">
                                             <h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
                                         </div>
+
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group ">
+                                                <label class="input-label d-block">Quiz Title</label>
+                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-3 col-lg-3">
+                                            <div class="form-group ">
+                                                <label class="input-label d-block">Quiz Slug</label>
+                                                <input type="text" name="quiz_slug" class="form-control">
+                                            </div>
+                                        </div>
+                                        
                                         <div class="col-md-3 col-lg-3">
                                             <div class="form-group ">
                                                 <label class="input-label d-block">Auto Generated Questions</label>
@@ -440,21 +457,7 @@
                                         </div>
 
 
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group ">
-                                                <label class="input-label d-block">Quiz Title</label>
-                                                <input type="text" name="quiz_title" class="form-control rurera-req-field">
-                                            </div>
-                                        </div>
 
-
-
-                                        <div class="col-md-3 col-lg-3">
-                                            <div class="form-group ">
-                                                <label class="input-label d-block">Quiz Slug</label>
-                                                <input type="text" name="quiz_slug" class="form-control">
-                                            </div>
-                                        </div>
 
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group quiz-image-group">
