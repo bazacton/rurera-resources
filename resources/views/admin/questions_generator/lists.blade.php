@@ -83,10 +83,11 @@
 
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
         .mock-exam-modal.modal-fullwidth .modal-dialog {
-            max-width: 100%;
-            width: 100%;
-            margin: 0;
-            height: 100%;
+            max-width: 720px;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
         }
         .mock-exam-modal.modal-fullwidth .modal-content {
             height: 100vh;
