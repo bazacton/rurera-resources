@@ -343,7 +343,7 @@ pointer-events:none;
     align-items: baseline;
     justify-content: space-between;
 }
-.ru-book-slider .stat-card svg{display:block; max-width: 100px;}
+.ru-book-slider .stat-card svg{display:block; max-width: 100%;}
 .ru-book-slider .stat-card path.fill{opacity:.15}
 .ru-book-slider .stat-card.green .stroke{stroke:#4caf50}
 .ru-book-slider .stat-card.green .fill{fill:#4caf50}
