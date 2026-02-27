@@ -1922,8 +1922,8 @@
                             $wrap.find(".mockExam-tpl-assign-instr").text(stripHtml(sec.instructions || "") || "No instructions");
                             $wrap.find(".mockExam-tpl-assign-meta").html(`
                                 <ul class="mock-meta-list">
-                                    <li>Questions: <b>${String(sec.numQuestions ?? "-")}</b></li>
-                                    <li>Time: <b>${String(sec.timeMins ?? "-")}</b> mins</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>Questions: <b>${String(sec.numQuestions ?? "-")}</b></li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/clock.svg" alt="clock"></span>Time: <b>${String(sec.timeMins ?? "-")}</b> mins</li>
                                 </ul>
                             `);
 
