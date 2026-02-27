@@ -159,14 +159,10 @@
         z-index: -1;
     }
     .mockExam-item-meta .badge.badge-success {
-        background-color: inherit;
+        background-color: #b9f9c7;
         color: #47c363;
-        border-color: #47c363;
     }
     .mockExam-item-meta span {
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        padding: 7px 12px;
         line-height: normal;
         display: inline-block;
         font-size: .75rem;
