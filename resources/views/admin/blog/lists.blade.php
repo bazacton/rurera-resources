@@ -164,11 +164,13 @@
                                     @endforeach
                                 </table>
                             </div>
+                            <div class="text-right">
+                                Records found: <b>{{$total_records}}</b>
+                            </div>
                         </div>
 
                         <div class="card-footer text-center">
                             {{ $blog->appends(request()->input())->links() }}
-                            Records Found : {{$total_records}}
                         </div>
 
                     </div>
