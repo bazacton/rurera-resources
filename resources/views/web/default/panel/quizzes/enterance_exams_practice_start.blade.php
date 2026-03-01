@@ -76,35 +76,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         @endif
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-            <div class="quiz-status-bar mb-md-50 mt-15">
-                <div class="questions-bar-box">
-                    <div class="quiz-questions-bar-holder">
-                        <div class="quiz-questions-bar">
-                            <span class="value-lable progress-bar-counter" data-title="No of Questions" style="left:0%"><span class="no-questions-value">0</span></span>
-                            <span class="bar-fill progress-bar-fill" data-title="" style="width: 0%;"></span>
-                        </div>
-                        <span class="coin-numbers">
-                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                            <span class="total-earned-coins">0</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="quiz-time-bar">
-                    <div class="timer-wrap">
-                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-                        <div class="quiz-timer-counter" data-time_counter="{{($timer_counter)}}">
-                            <div class="time-box" id="hh">00</div>
-                            <span class="colon">:</span>
-                            <div class="time-box" id="mm">00</div>
-                            <span class="colon">:</span>
-                            <div class="time-box" id="ss">00</div>
-                        </div>
-                    </div>
-                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                        <img src="/assets/default/svgs/setting.svg" alt="setting">
-                    </button>
-                </div>
-            </div>
+
 
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
@@ -117,97 +89,142 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <a href="javascript:;" class="load-more-questions rurera-hide">Load More Questions</a>
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
-                            <div class="question-inner-step-area">
-                                <div class="question-layout-block">
 
-                                    <div class="left-content has-bg">
-                                        <div class="questions-lists-block">
 
-                                            @if( is_array( $question ))
-                                                @php $question_no = 1; @endphp
 
-                                                @foreach( $question as $questionObj)
-                                                    @include('web.default.panel.questions.question_layout',[
-                                                    'question'=> $questionObj,
-                                                    'prev_question' => 0,
-                                                    'next_question' => 0,
-                                                    'question_no' => $question_no,
-                                                    'total_questions' => $total_questions,
-                                                    'quizAttempt' => $quizAttempt,
-                                                    'newQuestionResult' => $newQuestionResult,
-                                                    'quizResultObj' => $newQuizStart
-                                                    ])
-                                                    @php $question_no++; @endphp
-                                                @endforeach
-                                            @else
+                            @if(!empty($questions_sections_layout))
 
-                                                @if( !empty( $questions_layout  ) )
-                                                    @php $question_counter  = 1; @endphp
-                                                    @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                        @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                            $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
-                                                            $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
-                                                        @endphp
-                                                        <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
-                                                             data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
-                                                             data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
-                                                             data-question_no="{{$question_counter}}"
-                                                             data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
+                                @php $section_counter = 1; @endphp
+                                @foreach($questions_sections_layout as $section_id => $questions_section_data)
 
-                                                            {!! $questionLayout !!}
+                                    @php $section_layout = isset($questions_section_data['layout'])? $questions_section_data['layout'] : '';
+                                        $section_data = isset($questions_section_data['section_data'])? $questions_section_data['section_data'] : (object) array();
 
-                                                        </div>
+                                        $section_time = isset($section_data->time)? $section_data->time : 0;
+                                        $section_time = ($section_time*60);
+                                    @endphp
 
-                                                        @php $question_counter++; @endphp
-                                                    @endforeach
-                                                @endif
 
-                                            @endif
-                                        </div>
-                                        <div class="show-notifications" data-show_message="yes"></div>
-                                        <div id="scroll-controls" class="page-prev-next-controls pr-0">
-                                            <div class="controls-inner">
-                                                <!-- Top State: Scroll Down Button -->
-                                                <button id="btn-top" class="btn-top scroll-btn pill btn-hidden">
-                                                    Scroll down <i class="arrow down"></i>
-                                                </button>
+                                    <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
 
-                                                <!-- Bottom State: Scroll Up Button -->
-                                                <button id="btn-bottom" class="scroll-btn pill btn-hidden">
-                                                    Scroll up <i class="arrow up"></i>
+
+                                        <div class="quiz-status-bar mb-md-50 mt-15">
+                                            <div class="questions-bar-box">
+                                                <div class="quiz-questions-bar-holder">
+                                                    <div class="quiz-questions-bar">
+                                                        <span class="value-lable progress-bar-counter" data-title="No of Questions" style="left:0%"><span class="no-questions-value">0</span></span>
+                                                        <span class="bar-fill progress-bar-fill" data-title="" style="width: 0%;"></span>
+                                                    </div>
+                                                    <span class="coin-numbers">
+                                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
+                                                            <span class="total-earned-coins">0</span>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="quiz-time-bar">
+                                                <div class="timer-wrap">
+                                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+                                                    <div class="quiz-timer-counter" data-time_counter="{{($section_time)}}">
+                                                        <div class="time-box" id="hh">00</div>
+                                                        <span class="colon">:</span>
+                                                        <div class="time-box" id="mm">00</div>
+                                                        <span class="colon">:</span>
+                                                        <div class="time-box" id="ss">00</div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-md-0" data-target="#review_submit">
-                                                Finish
-                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                            </a>
-                                            <button type="button" class="report-btn mr-md-auto"
-                                                    data-toggle="tooltip"
-                                                    title="Report this question"
-                                                    data-target="#reportModal"
-                                                    data-toggle2="modal">
-                                                Report
-                                            </button>
-                                            <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
-                                                Next
-                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                            </a>
-                                            <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
-                                                prev
-                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                            </a>
-                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                mark answer
-                                            </a>
-                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                                Next
-                                            </a>
+
+
+
+                                    {!! $section_layout !!}
+
+                                        <div class="quiz-section-questions rurera-hide">
+
+                                            <div class="question-inner-step-area">
+                                                <div class="question-layout-block">
+
+                                                    <div class="left-content has-bg">
+                                                        <div class="questions-lists-block">
+                                                            @if( !empty( $questions_layout  ) )
+                                                                @php $question_counter  = 1; @endphp
+                                                                @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                            $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                                            $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
+                                                                    @endphp
+                                                                    <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                                         data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
+                                                                         data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
+                                                                         data-question_no="{{$question_counter}}"
+                                                                         data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
+
+                                                                        {!! $questionLayout !!}
+
+                                                                    </div>
+
+                                                                    @php $question_counter++; @endphp
+                                                                @endforeach
+                                                            @endif
+                                                        </div>
+                                                        <div class="show-notifications" data-show_message="yes"></div>
+                                                        <div id="scroll-controls" class="page-prev-next-controls pr-0">
+                                                            <div class="controls-inner">
+                                                                <!-- Top State: Scroll Down Button -->
+                                                                <button id="btn-top" class="btn-top scroll-btn pill btn-hidden">
+                                                                    Scroll down <i class="arrow down"></i>
+                                                                </button>
+
+                                                                <!-- Bottom State: Scroll Up Button -->
+                                                                <button id="btn-bottom" class="scroll-btn pill btn-hidden">
+                                                                    Scroll up <i class="arrow up"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-md-0" data-target="#review_submit">
+                                                                Finish
+                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                            </a>
+                                                            <button type="button" class="report-btn mr-md-auto"
+                                                                    data-toggle="tooltip"
+                                                                    title="Report this question"
+                                                                    data-target="#reportModal"
+                                                                    data-toggle2="modal">
+                                                                Report
+                                                            </button>
+                                                            <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
+                                                                Next
+                                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                            </a>
+                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
+                                                                prev
+                                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                            </a>
+                                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                                                mark answer
+                                                            </a>
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                                                Next
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                    @php $section_counter++; @endphp
+                                @endforeach
+                            @endif
+
+
+
+
+
                         </div>
                     </div>
                     <div class="question-area-temp hide"></div>
@@ -483,18 +500,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         Quizintervals = setInterval(function () {
+            var parentObj = $(".quiz-section-data.active");
             if( TimerActive == true){
-                var quiz_timer_counter = $('.quiz-timer-counter').attr('data-time_counter');
+                var quiz_timer_counter = $(".quiz-section-data.active").find(".quiz-timer-counter").attr('data-time_counter');
                 if (duration_type == 'no_time_limit') {
                     quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
                 } else {
                     quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
                 }
-                $('.quiz-timer-counter').html(getTime(quiz_timer_counter));
-                if ($('.nub-of-sec').length > 0) {
-                    $('.nub-of-sec').html(getTime(quiz_timer_counter));
+                $(".quiz-section-data.active").find(".quiz-timer-counter").html(getTime(quiz_timer_counter));
+                if (parentObj.find('.nub-of-sec').length > 0) {
+                    parentObj.find('.nub-of-sec').html(getTime(quiz_timer_counter));
                 }
-                $('.quiz-timer-counter').attr('data-time_counter', quiz_timer_counter);
+                $(".quiz-section-data.active").find(".quiz-timer-counter").attr('data-time_counter', quiz_timer_counter);
                 if (duration_type == 'per_question') {
                     if (parseInt(quiz_timer_counter) == 0) {
                         clearInterval(Quizintervals);
@@ -653,9 +671,28 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         focusIntervalCount = 240;
         focusInterval = null;
         if (duration_type == 'per_question') {
-            $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
+            $(".quiz-section-data.active").find(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
         }
+    }
+
+
+    function afterNoNextQuestion(){
+        console.log('afterNoNextQuestionafterNoNextQuestionafterNoNextQuestion');
+        const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
+        const $next = $active.next('.quiz-section-data');
+        if ($next.length > 0) {
+            $active.addClass('rurera-hide');
+            $active.removeClass('active');
+
+            $next.addClass('active');
+            $next.removeClass('rurera-hide');
+
+            $('.rurera-question-block.active').removeClass('active');
+
+            $next.find('.rurera-question-block').first().addClass('active');
+        }
+
     }
 
 
@@ -730,6 +767,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
         if (evt.key === 'ArrowRight') {
+
+
+
             $('#next-btn')[0].click();
         }
     });
@@ -832,5 +872,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var thisForm = thisBlock.find('form');
         returnType = rurera_validation_process(thisForm, 'quiz_page');
     });
+
+    $(document).on("click", ".section-start-quiz", function (e) {
+        $('.quiz-section-questions').addClass('rurera-hide');
+        $(this).closest('.quiz-section-data').find('.quiz-section-questions').removeClass('rurera-hide');
+    });
+
+
+    var selected_section = '{{isset($selected_section)? $selected_section : 1}}';
+
+    $('.quiz-section-data[data-section_counter="'+selected_section+'"]').addClass('active');
+    $('.quiz-section-data[data-section_counter="'+selected_section+'"]').removeClass('rurera-hide');
+
+
+
 
 </script>

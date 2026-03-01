@@ -550,7 +550,7 @@
 
                                                 </ul>
                                                 <div class="tab-content" id="myTabContent">
-													<div class="tab-pane fade " id="topic_parts" role="tabpanel" aria-labelledby="topic_parts-tab">
+                                                    <div class="tab-pane fade " id="topic_parts" role="tabpanel" aria-labelledby="topic_parts-tab">
                                                         <div class="row">
                                                             <div class="col-md-4 col-lg-4 ">
                                                                 <div class="form-group">
@@ -683,44 +683,44 @@
                                                                             <thead>
                                                                             <tr>
                                                                                 <th>
-                                                                                <div class="mock-exam-small-help mb-1">Name</div>
+                                                                                    <div class="mock-exam-small-help mb-1">Name</div>
                                                                                 </th>
                                                                                 <th>
-                                                                                <div class="mock-exam-small-help mb-1">Instructions</div>
+                                                                                    <div class="mock-exam-small-help mb-1">Instructions</div>
                                                                                 </th>
                                                                                 <th>
-                                                                                <div class="mock-exam-small-help mb-1">No. of questions</div>
+                                                                                    <div class="mock-exam-small-help mb-1">No. of questions</div>
                                                                                 </th>
                                                                                 <th>
-                                                                                <div class="mock-exam-small-help mb-1">Time (mins)</div>
+                                                                                    <div class="mock-exam-small-help mb-1">Time (mins)</div>
                                                                                 </th>
                                                                                 <th>
-                                                                                <div class="mock-exam-small-help mb-1">Items in this section</div>
+                                                                                    <div class="mock-exam-small-help mb-1">Items in this section</div>
                                                                                 </th>
                                                                             </tr>
                                                                             </thead>
                                                                             <tbody>
                                                                             <tr>
                                                                                 <td>
-                                                                                <div class="mb-2 mockExam-tpl-section-name"></div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-name"></div>
                                                                                 </td>
                                                                                 <td>
-                                                                                <div class="mb-2 mockExam-tpl-section-instr"></div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-instr"></div>
                                                                                 </td>
                                                                                 <td>
-                                                                                <div class="mb-2 mockExam-tpl-section-q"></div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-q"></div>
                                                                                 </td>
                                                                                 <td>
-                                                                                <div class="mb-2 mockExam-tpl-section-t"></div>
+                                                                                    <div class="mb-2 mockExam-tpl-section-t"></div>
                                                                                 </td>
                                                                                 <td>
-                                                                                <div class="align-items-center justify-content-between rurera-hide">
-                                                                                    <div>
-                                                                                        <div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
+                                                                                    <div class="align-items-center justify-content-between rurera-hide">
+                                                                                        <div>
+                                                                                            <div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
+                                                                                        </div>
+                                                                                        <span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
                                                                                     </div>
-                                                                                    <span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
-                                                                                </div>
-                                                                                <div class="mockExam-tpl-section-items"></div>
+                                                                                    <div class="mockExam-tpl-section-items"></div>
                                                                                 </td>
                                                                             </tr>
                                                                             </tbody>
@@ -1821,9 +1821,12 @@
                             const base = ``;
 
                             if (assigned) {
+                                var section_id = assigned.sectionId;
+                                var assigned_response = '<input type="text" name="sections['+section_id+'][topic_parts][]" value="'+itemId+'">'
                                 $assignBtn.prop("disabled", true).addClass("mock-exam-btn-disabled").attr("title", "Already assigned (remove first)");
                                 $unassignBtn.removeClass("d-none");
-                                $meta.html(`${base} <span class="badge badge-success">• Assigned</span> <span class="ml-1">${label}</span>`);
+                                $meta.html(`${base} • <span class="badge badge-success">Assigned</span> <span class="ml-1">${label}</span>`);
+                                $meta.append(assigned_response);
                             } else {
                                 $assignBtn.prop("disabled", false).removeClass("mock-exam-btn-disabled").attr("title", "Shortlist (assign to section)");
                                 $unassignBtn.addClass("d-none");
@@ -1847,6 +1850,7 @@
                             const $card = $tpl.sectionCard.clone(false, false);
                             $card.attr("data-section-id", sec.id);
                             $card.attr("data-mockexam-section-id", sec.id);
+                            var section_id = sec.id;
 
                             const label = sectionLabel(idx, total);
                             const instructionsPlain = stripHtml(sec.instructions || "");
@@ -1854,6 +1858,20 @@
                             $card.find(".mockExam-tpl-section-label").text(label);
                             $card.find(".mockExam-tpl-section-title").text(sec.name || "Untitled section");
                             $card.find(".mockExam-tpl-section-name").text(sec.name || "-");
+                            var section_name = sec.name || "-";
+                            var instr = sec.instructions || "-";
+                            var no_of_questions = sec.numQuestions || "-";
+                            var time = sec.timeMins || "-";
+
+                            var fields_response = '<span class="rurera-hide1">' +
+                                '<input type="text" name="sections['+section_id+'][section_id]" value="'+section_id+'">' +
+                                '<input type="text" name="sections['+section_id+'][name]" value="'+section_name+'">' +
+                                '<input type="text" name="sections['+section_id+'][instr]" value="'+instr+'">' +
+                                '<input type="text" name="sections['+section_id+'][no_of_questions]" value="'+no_of_questions+'">' +
+                                '<input type="text" name="sections['+section_id+'][time]" value="'+time+'">' +
+                                '</span>';
+
+                            $card.find(".mockExam-tpl-section-title").append(fields_response);
                             $card.find(".mockExam-tpl-section-instr").text(instructionsPlain || "-");
                             $card.find(".mockExam-tpl-section-q").text(String(sec.numQuestions ?? "-"));
                             $card.find(".mockExam-tpl-section-t").text(String(sec.timeMins ?? "-"));
@@ -1920,12 +1938,9 @@
                             $wrap.find(".mockExam-tpl-assign-title").text(sec.name || "Untitled section");
                             $wrap.find(".mockExam-tpl-assign-count").text(String(sec.items.length));
                             $wrap.find(".mockExam-tpl-assign-instr").text(stripHtml(sec.instructions || "") || "No instructions");
-                            $wrap.find(".mockExam-tpl-assign-meta").html(`
-                                <ul class="mock-meta-list">
-                                    <li><span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>Questions: <b>${String(sec.numQuestions ?? "-")}</b></li>
-                                    <li><span class="icon-box"><img src="/assets/default/svgs/clock.svg" alt="clock"></span>Time: <b>${String(sec.timeMins ?? "-")}</b> mins</li>
-                                </ul>
-                            `);
+                            $wrap.find(".mockExam-tpl-assign-meta").html(
+                                `Questions: <b>${String(sec.numQuestions ?? "-")}</b> • Time: <b>${String(sec.timeMins ?? "-")}</b> mins`
+                            );
 
                             const $btn = $wrap.find(".mockExam-tpl-assign-btn");
                             $btn.off("click.mockExam").removeClass("btn-success btn-primary");
@@ -2078,6 +2093,8 @@
                             timeMins: (t === "" ? "" : Number(t)),
                             instructions: instr || ""
                         };
+                        pre(payload);
+
 
                         if (state.sectionFormMode === "edit") {
                             const sec = state.sections.find(s => s.id === state.editingSectionId);
@@ -2086,6 +2103,7 @@
                             sec.numQuestions = payload.numQuestions;
                             sec.timeMins = payload.timeMins;
                             sec.instructions = payload.instructions;
+
                         } else {
                             state.sections.push({ id: uid(), ...payload, items: [] });
                         }

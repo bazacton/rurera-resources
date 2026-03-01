@@ -723,6 +723,10 @@ function init_question_functions() {
             if (typeof afterNextQuestion === "function") {
                 afterNextQuestion();
             }
+        }else{
+            if (typeof afterNoNextQuestion === "function") {
+                afterNoNextQuestion();
+            }
         }
     });
 
