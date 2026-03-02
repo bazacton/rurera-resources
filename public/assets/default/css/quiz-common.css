@@ -1434,10 +1434,8 @@ body mjx-container[display] {
 }
 .value-lable .no-questions-lable {
     position: absolute;
-    content: attr(data-title);
     height: 26px;
     background-color: #000;
-    color: white;
     border-radius: 3px;
     top: -25px;
     margin-top: 0;
@@ -1453,8 +1451,9 @@ body mjx-container[display] {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    left: 0;
+    left: 50%;
     white-space: nowrap;
+    transform: translateX(-50%);
 }
 .value-lable .no-questions-lable:before {
     content: "";
