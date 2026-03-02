@@ -93,7 +93,7 @@
 @push('scripts_bottom')
 <script>
     function updateStickyOffset() {
-        const selectedTopics = document.querySelector('.selected-topics');
+        const selectedTopics = document.querySelector('.select-topics');
         const root = document.documentElement;
 
         if (!selectedTopics) return;
@@ -104,7 +104,7 @@
 
     // Observe DOM changes
     const observer = new MutationObserver(() => {
-        if (document.querySelector('.selected-topics')) {
+        if (document.querySelector('.select-topics')) {
             updateStickyOffset();
         }
     });
