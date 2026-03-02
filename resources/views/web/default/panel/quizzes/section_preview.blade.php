@@ -1,8 +1,8 @@
 
 <div class="test-section panel-border bg-white rounded-sm mb-25 p-20">
-    <h1 class="mb-10">
+    <h2 class="mb-10">
         {{isset($section_data->name)? $section_data->name : ''}}
-    </h1>
+    </h2>
     <p class="section-lable font-18">Reading Comprehension <span class="font-14 d-block">Section 2 of 5</span></p>
     <div class="section-bottom">
         <div class="section-no-of-questions">
@@ -26,7 +26,7 @@
     </div>
 </div>
 <div class="quiz_section_instructions mb-15">
-    <h2>{!! isset($section_data->instr)? $section_data->instr : '' !!}</h2>
+    <h3>{!! isset($section_data->instr)? $section_data->instr : '' !!}</h3>
     <p>Answer as many of these Reading Comprehension questions as you can in the 5 minutes provided. You can move on to the next section when the 5 minutes have passed, or if you have finished all of the questions in this section. Try your best, and good luck!</p>
 </div>
 
