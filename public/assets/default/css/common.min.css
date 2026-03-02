@@ -14943,10 +14943,11 @@ a.badge-circle-gray200:focus {
     z-index: 511;
     border: unset;
     top: 100%;
-    transition: all 0.5s;
     overflow: visible !important;
     visibility: hidden;
     opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    will-change: opacity, transform;
     margin-top: -15px;
     display: block
 }
