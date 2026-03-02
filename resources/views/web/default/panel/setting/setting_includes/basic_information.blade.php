@@ -37,7 +37,7 @@ if( !empty( $emojisArray ) ){
     .student-info ul {margin: 0; padding: 0;}
     .student-info ul li {list-style: none; margin-bottom: 8px; display: flex; align-items: center; gap: 15px; color: #343434; font-weight: 600; font-size: 14px;}
     .student-info ul li:last-child {margin-bottom: 0;}
-    .student-info ul li.user-name {color: #7750f9;}
+    .student-info ul li.user-name {color: var(--primary);}
     .student-info ul li.user-name span {color: #343434;}
     .student-info ul li > a {color: #343434; text-decoration: none;}
     .student-info ul li > span {min-width: 78px; max-width: 78px;}
