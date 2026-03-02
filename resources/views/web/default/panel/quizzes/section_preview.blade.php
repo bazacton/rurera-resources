@@ -25,10 +25,10 @@
         </div>
     </div>
 </div>
-<div class="quiz_section_instructions mb-25">
+<div class="quiz_section_instructions mb-15">
     <h2>{!! isset($section_data->instr)? $section_data->instr : '' !!}</h2>
     <p>Answer as many of these Reading Comprehension questions as you can in the 5 minutes provided. You can move on to the next section when the 5 minutes have passed, or if you have finished all of the questions in this section. Try your best, and good luck!</p>
 </div>
 
 
-<button type="button" class="section-start-quiz mb-15">Continue</button>
+<button type="button" class="section-start-quiz mb-25">Continue</button>
