@@ -1432,7 +1432,7 @@ body mjx-container[display] {
     font-size: 13px;
     white-space: nowrap;
 }
-.quiz-questions-bar-holder .value-lable:after {
+.value-lable .no-questions-lable {
     position: absolute;
     content: attr(data-title);
     height: 26px;
@@ -1456,23 +1456,16 @@ body mjx-container[display] {
     left: 0;
     white-space: nowrap;
 }
-.quiz-questions-bar-holder .value-lable:before {
+.value-lable .no-questions-lable:before {
     content: "";
     position: absolute;
-    top: -18px;
-    margin-top: 0;
+    top: 100%;
     height: 8px;
     width: 8px;
     background-color: #000;
-    left: 15px;
-    transform: rotate(45deg);
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
     margin-right: 0;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
 }
 .quiz-questions-bar:hover .value-lable:before,
 .quiz-questions-bar:hover .value-lable:after {opacity: 1; visibility: visible; top: -13px;}
