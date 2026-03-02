@@ -1,5 +1,5 @@
 
-<div class="panel-border bg-white rounded-sm mb-25">
+<div class="panel-border bg-white rounded-sm mb-25 p-20">
     <h1>
         {{isset($section_data->name)? $section_data->name : ''}}
     </h1>
