@@ -41,9 +41,7 @@
 
                 <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 {{ (empty($navBtnUrl) and empty($navBtnText)) ? 'ml-auto' : '' }}" href="{{url('/')}}/" itemprop="url">
                     @if(!empty($generalSettings['logo']))
-                        <!-- <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="eager"> -->
-                         <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
-                        <span class="logo-text font-22 font-weight-bold ml-10">Rurera</span>
+                        <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="eager">
                     @endif
                 </a>
 
