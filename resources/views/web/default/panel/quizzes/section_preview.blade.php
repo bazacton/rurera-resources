@@ -31,4 +31,4 @@
 </div>
 
 
-<button type="button" class="section-start-quiz">Continue</button>
+<button type="button" class="section-start-quiz mb-15">Continue</button>
