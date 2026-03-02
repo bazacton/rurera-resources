@@ -1429,7 +1429,6 @@ body mjx-container[display] {
 }
 .quiz-questions-bar-holder .value-lable span {
     color: #fff;
-    font-size: 13px;
     white-space: nowrap;
 }
 .value-lable .no-questions-lable {
